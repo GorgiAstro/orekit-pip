@@ -1,0 +1,11 @@
+# pyproject.toml
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orekit"
+version = "12.0"
+dependencies = [
+    "install-jdk",
+]
