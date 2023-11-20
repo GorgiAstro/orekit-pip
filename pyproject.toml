@@ -9,3 +9,9 @@ version = "12.0"
 dependencies = [
     "install-jdk",
 ]
+
+[tool.setuptools]
+packages = ["orekit"]
+
+[tool.setuptools.package-dir]
+orekit = "build/orekit"
