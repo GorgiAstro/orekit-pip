@@ -1,29 +1,145 @@
 #!/usr/bin/env python
 # This setup is was created with Apache JCC 3.13 on 2023-11-26 17:08:56
 from setuptools import setup, Extension
-setup(
-name='orekit',
-packages=['orekit'],
-package_dir={'orekit': 'build/orekit'},
-package_data={'orekit': ['orekit-12.0.jar', 'hipparchus-core-3.0.jar', 'hipparchus-fitting-3.0.jar', 'hipparchus-filtering-3.0.jar', 'hipparchus-geometry-3.0.jar', 'hipparchus-ode-3.0.jar', 'hipparchus-optim-3.0.jar', 'hipparchus-stat-3.0.jar', 'rugged-3.0.jar']},
-ext_modules=[
-    Extension(
-        py_limited_api=False,
-        name='orekit._orekit',
-        sources=['build/_orekit/functions.cpp', 'build/_orekit/JArray.cpp', 'build/_orekit/jcc.cpp', 'build/_orekit/JCCEnv.cpp', 'build/_orekit/JObject.cpp', 'build/_orekit/orekit.cpp', 'build/_orekit/types.cpp', 'build/_orekit/__init__.cpp', 'build/_orekit/__wrap01__.cpp', 'build/_orekit/__wrap02__.cpp', 'build/_orekit/__wrap03__.cpp', 'build/_orekit/__wrap04__.cpp', 'build/_orekit/__wrap05__.cpp', 'build/_orekit/__wrap06__.cpp', 'build/_orekit/__wrap07__.cpp', 'build/_orekit/__wrap08__.cpp', 'build/_orekit/__wrap09__.cpp', 'build/_orekit/__wrap100__.cpp', 'build/_orekit/__wrap101__.cpp', 'build/_orekit/__wrap10__.cpp', 'build/_orekit/__wrap11__.cpp', 'build/_orekit/__wrap12__.cpp', 'build/_orekit/__wrap13__.cpp', 'build/_orekit/__wrap14__.cpp', 'build/_orekit/__wrap15__.cpp', 'build/_orekit/__wrap16__.cpp', 'build/_orekit/__wrap18__.cpp', 'build/_orekit/__wrap19__.cpp', 'build/_orekit/__wrap20__.cpp', 'build/_orekit/__wrap21__.cpp', 'build/_orekit/__wrap22__.cpp', 'build/_orekit/__wrap23__.cpp', 'build/_orekit/__wrap24__.cpp', 'build/_orekit/__wrap25__.cpp', 'build/_orekit/__wrap26__.cpp', 'build/_orekit/__wrap27__.cpp', 'build/_orekit/__wrap28__.cpp', 'build/_orekit/__wrap29__.cpp', 'build/_orekit/__wrap30__.cpp', 'build/_orekit/__wrap31__.cpp', 'build/_orekit/__wrap32__.cpp', 'build/_orekit/__wrap33__.cpp', 'build/_orekit/__wrap34__.cpp', 'build/_orekit/__wrap36__.cpp', 'build/_orekit/__wrap37__.cpp', 'build/_orekit/__wrap38__.cpp', 'build/_orekit/__wrap39__.cpp', 'build/_orekit/__wrap40__.cpp', 'build/_orekit/__wrap41__.cpp', 'build/_orekit/__wrap42__.cpp', 'build/_orekit/__wrap43__.cpp', 'build/_orekit/__wrap44__.cpp', 'build/_orekit/__wrap45__.cpp', 'build/_orekit/__wrap46__.cpp', 'build/_orekit/__wrap47__.cpp', 'build/_orekit/__wrap48__.cpp', 'build/_orekit/__wrap49__.cpp', 'build/_orekit/__wrap50__.cpp', 'build/_orekit/__wrap51__.cpp', 'build/_orekit/__wrap52__.cpp', 'build/_orekit/__wrap54__.cpp', 'build/_orekit/__wrap55__.cpp', 'build/_orekit/__wrap56__.cpp', 'build/_orekit/__wrap57__.cpp', 'build/_orekit/__wrap58__.cpp', 'build/_orekit/__wrap59__.cpp', 'build/_orekit/__wrap60__.cpp', 'build/_orekit/__wrap61__.cpp', 'build/_orekit/__wrap62__.cpp', 'build/_orekit/__wrap63__.cpp', 'build/_orekit/__wrap64__.cpp', 'build/_orekit/__wrap65__.cpp', 'build/_orekit/__wrap66__.cpp', 'build/_orekit/__wrap67__.cpp', 'build/_orekit/__wrap68__.cpp', 'build/_orekit/__wrap69__.cpp', 'build/_orekit/__wrap70__.cpp', 'build/_orekit/__wrap17__.cpp', 'build/_orekit/__wrap35__.cpp', 'build/_orekit/__wrap53__.cpp', 'build/_orekit/__wrap71__.cpp', 'build/_orekit/__wrap72__.cpp', 'build/_orekit/__wrap73__.cpp', 'build/_orekit/__wrap74__.cpp', 'build/_orekit/__wrap75__.cpp', 'build/_orekit/__wrap76__.cpp', 'build/_orekit/__wrap77__.cpp', 'build/_orekit/__wrap78__.cpp', 'build/_orekit/__wrap79__.cpp', 'build/_orekit/__wrap80__.cpp', 'build/_orekit/__wrap81__.cpp', 'build/_orekit/__wrap82__.cpp', 'build/_orekit/__wrap83__.cpp', 'build/_orekit/__wrap84__.cpp', 'build/_orekit/__wrap85__.cpp', 'build/_orekit/__wrap86__.cpp', 'build/_orekit/__wrap87__.cpp', 'build/_orekit/__wrap88__.cpp', 'build/_orekit/__wrap89__.cpp', 'build/_orekit/__wrap90__.cpp', 'build/_orekit/__wrap91__.cpp', 'build/_orekit/__wrap92__.cpp', 'build/_orekit/__wrap93__.cpp', 'build/_orekit/__wrap94__.cpp', 'build/_orekit/__wrap95__.cpp', 'build/_orekit/__wrap96__.cpp', 'build/_orekit/__wrap97__.cpp', 'build/_orekit/__wrap98__.cpp', 'build/_orekit/__wrap99__.cpp'],
-        include_dirs=['/home/yzokras/.jdk/jdk-8/include', '/home/yzokras/.jdk/jdk-8/include/linux', 'build/_orekit', '/home/yzokras/miniforge3/envs/tubix20/lib/python3.12/site-packages/jcc/sources'],
-        define_macros=[('PYTHON', None), ('JCC_VER', '"3.13"'), ('_java_generics', None)],
-        undef_macros=[],
-        library_dirs=[],
-        libraries=[],
-        runtime_library_dirs=[],
-        extra_objects=[],
-        extra_compile_args=['-fno-strict-aliasing', '-Wno-write-strings'],
-        extra_link_args=['-L/home/yzokras/.jdk/jdk-8/jre/lib/amd64', '-ljava', '-L/home/yzokras/.jdk/jdk-8/jre/lib/amd64/server', '-ljvm', '-Wl,-rpath=/home/yzokras/.jdk/jdk-8/jre/lib/amd64:/home/yzokras/.jdk/jdk-8/jre/lib/amd64/server', '-Wl,-S'],
-        export_symbols=[],
-        swig_opts=[],
-        depends=[],
-        language=None,
-        optional=None
-)],
-)
+
+
+import jdk
+from pathlib import Path
+import os
+
+def search_jdk_tools_jar(jdk_dir: str):
+    """
+    Checks that the folder exists and that it contains tools.jar
+    """
+    if os.path.exists(jdk_dir):
+        for path in Path(jdk_dir).rglob('*.jar'):
+            if path.name == 'tools.jar':
+                return path
+    return None
+
+_USER_DIR = os.path.expanduser("~")
+jdk_root_dir = os.path.join(_USER_DIR, ".jdk")
+
+def locate_or_download_jdk_tools():
+    """
+    With search for a JDK folder in $HOME/.jdk containing tools.jar.
+    If it is not found, it will download JDK 8 in this folder.
+    :return: str, path to tools.jar if successful, None otherwise.
+    """
+    jdk_version = '8'
+
+    jdk_dir = os.path.join(jdk_root_dir, f'jdk-{jdk_version}')
+    # Look for tools.jar
+    tools_jar_path = search_jdk_tools_jar(jdk_dir=jdk_dir)
+
+    if tools_jar_path is not None:
+        print(f'Successfully found {tools_jar_path}')
+    else:
+        print(f'the file tools.jar was not found in JDK directory {jdk_dir}, or the JDK directory does not exist yet, downloading')
+        jdk_dir = jdk.install(jdk_version)
+        tools_jar_path = search_jdk_tools_jar(jdk_dir=jdk_dir)
+
+    if tools_jar_path is None:
+        print(f'the file tools.jar was still not found in JDK directory {jdk_dir}, exiting')
+
+    return tools_jar_path.absolute().as_posix()
+
+tools_jar_path = locate_or_download_jdk_tools()
+
+import os
+import jcc
+
+orekit_version = '12.0'
+jar_folder = '/media/ssd/git/orekit_python_artifacts'
+hipparchus_version = '3.0'
+rugged_version = '3.0'
+py_src_dir = '/media/ssd/git/orekit_python_artifacts' # pure Python additions, for instance pyhelpers.py
+n_cpp_files_split = '99' # Number (in string representation) of C++ files to split. Alternatively 'separate' will create a C++ file for each Java class, can be a lot.
+
+hipparchus_modules = ['core', 'fitting', 'filtering', 'geometry', 'ode', 'optim', 'stat']
+packages = ['java.io', 'java.util', 'java.text', 'org.orekit', 'org.orekit.rugged']
+vanilla_java_classes = [
+    'java.io.BufferedReader',
+    'java.io.FileInputStream',
+    'java.io.FileOutputStream',
+    'java.io.InputStream',
+    'java.io.InputStreamReader',
+    'java.io.ObjectInputStream',
+    'java.io.ObjectOutputStream',
+    'java.io.PrintStream',
+    'java.io.StringReader',
+    'java.io.StringWriter',
+    'java.lang.System',
+    'java.text.DecimalFormat',
+    'java.text.DecimalFormatSymbols',
+    'java.util.ArrayDeque',
+    'java.util.ArrayList',
+    'java.util.Arrays',
+    'java.util.Collection',
+    'java.util.Collections',
+    'java.util.Date',
+    'java.util.HashMap',
+    'java.util.HashSet',
+    'java.util.List',
+    'java.util.Locale',
+    'java.util.Map',
+    'java.util.Set',
+    'java.util.TreeSet',
+    'java.util.stream.Collectors',
+    'java.util.stream.Stream',
+    'java.util.stream.DoubleStream',
+    'java.util.function.LongConsumer',
+    'java.util.function.IntConsumer',
+    'java.util.function.DoubleConsumer',
+    'java.util.function.Supplier',
+]
+py_src_files = ['pyhelpers.py']
+reserved_keywords = ['INFINITE', 'ERROR', 'OVERFLOW', 'NO_DATA', 'NAN', 'min', 'max', 'mean', 'SNAN','get']
+classpath = [tools_jar_path]
+classes_exclude = ['org.hipparchus.util.RosenNumberPartitionIterator']
+
+args = [
+    jcc.__file__,
+    '--use_full_names',
+    '--python', 'orekit',
+    '--version', orekit_version,
+    '--wheel'
+]
+
+args.extend(['--jar', os.path.join(jar_folder, f'orekit-{orekit_version}.jar')])
+
+for hipparchus_module in hipparchus_modules:
+    args.extend(['--jar', os.path.join(jar_folder, f'hipparchus-{hipparchus_module}-{hipparchus_version}.jar')])
+
+args.extend(['--jar', os.path.join(jar_folder, f'rugged-{rugged_version}.jar')])
+
+for package in packages:
+    args.extend(['--package', package])
+
+for java_class in vanilla_java_classes:
+    args.append(java_class)
+
+for py_src_file in py_src_files:
+    args.extend(['--module', os.path.join(py_src_dir, py_src_file)])
+
+for keyword in reserved_keywords:
+    args.extend(['--reserved', keyword])
+
+for class_to_exclude in classes_exclude:
+    args.extend(['--exclude', class_to_exclude])
+
+for jar in classpath:
+    args.extend(['--classpath', jar])
+
+args.extend([
+    '--extra-setup-arg', 'sdist',
+    '--files', n_cpp_files_split,
+    '--build',
+    '--install'
+])
+
+from jcc import cpp
+setup_args = cpp.jcc(args)
+print(setup_args)
+
+setup(setup_args)

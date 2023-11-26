@@ -1,6 +1,11 @@
 # pyproject.toml
 [build-system]
-requires = ["setuptools"]
+requires = [
+    "setuptools",
+    "wheel",
+    "install-jdk",
+    "jcc"
+]
 build-backend = "setuptools.build_meta"
 
 [project]
