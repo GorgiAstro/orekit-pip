@@ -4,7 +4,7 @@ requires = [
     "setuptools",
     "wheel",
     "install-jdk",
-    "jcc"
+    "jcc @ git+https://github.com/GorgiAstro/jcc/"
 ]
 build-backend = "setuptools.build_meta"
 
