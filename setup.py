@@ -135,11 +135,11 @@ args.extend([
     '--extra-setup-arg', 'sdist',
     '--files', n_cpp_files_split,
     '--build',
-    '--install'
+    '--egg-info'
 ])
 
 from jcc import cpp
 setup_args = cpp.jcc(args)
 print(setup_args)
 
-setup(setup_args)
+setup(**setup_args)
