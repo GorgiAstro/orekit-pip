@@ -10,3 +10,7 @@ This is an attempt at providing the [Orekit Python Wrapper](https://gitlab.oreki
 ## Installation
 
 Local installation: `pip install .`
+
+## Limitations
+
+* The `org.orekit.compiler.plugin.DefaultDataContextPlugin` class is excluded, because it requires `JAVA_HOME/../lib/tools.jar`, which is not always available: https://www.orekit.org/site-orekit-development/apidocs/org/orekit/compiler/plugin/DefaultDataContextPlugin.html
