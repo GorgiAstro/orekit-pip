@@ -3,7 +3,7 @@
 requires = [
     "setuptools",
     "wheel",
-    "install-jdk",
+    "jdk4py @ git+https://github.com/GorgiAstro/jdk4py/",
     "jcc @ git+https://github.com/GorgiAstro/jcc/"
 ]
 build-backend = "setuptools.build_meta"
@@ -12,5 +12,5 @@ build-backend = "setuptools.build_meta"
 name = "orekit"
 version = "12.0"
 dependencies = [
-    "install-jdk",
+    "jdk4py @ git+https://github.com/GorgiAstro/jdk4py/",
 ]
