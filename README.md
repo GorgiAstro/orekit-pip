@@ -19,4 +19,4 @@ This calls `jcc` to generate Orekit's C++ bindings and the `setup.py` script whi
 
 ## Limitations
 
-* The `org.orekit.compiler.plugin.DefaultDataContextPlugin` class is excluded, because it requires `JAVA_HOME/../lib/tools.jar`, which is not always available: https://www.orekit.org/site-orekit-development/apidocs/org/orekit/compiler/plugin/DefaultDataContextPlugin.html
+* The `org.orekit.compiler.plugin.DefaultDataContextPlugin` class is excluded, because it requires `JAVA_HOME/../lib/tools.jar`, which is not always available. But this plugin should not be needed by Orekit Python users: https://www.orekit.org/site-orekit-development/apidocs/org/orekit/compiler/plugin/DefaultDataContextPlugin.html
