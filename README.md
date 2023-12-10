@@ -15,7 +15,11 @@ Local installation: `pip install .`. This can take a couple of minutes because i
 
 This doesn't need to be done by the normal user, it is mostly done by the package publishers when a new version of Orekit is available for example.
 
-This calls `jcc` to generate Orekit's C++ bindings and the `setup.py` script which configures the compilation of the Orekit C++ extension.
+This does the following:
+
+* Copies the Orekit JARs and some Python additions (from https://github.com/petrushy/orekit_python_artifacts) to the `build/orekit` folder
+* Calls `jcc` to generate Orekit's C++ bindings in the `build/_orekit` folder
+    * `jcc` also generates the `setup.py` script which configures the compilation of the Orekit C++ extension. This script will then be called by `setuptools` (together with the definitions in `pyproject.toml`) when running `pip install`
 
 ## Limitations
 

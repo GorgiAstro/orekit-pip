@@ -1,0 +1,141 @@
+#ifndef org_orekit_files_ccsds_ndm_adm_PythonAdmParser_H
+#define org_orekit_files_ccsds_ndm_adm_PythonAdmParser_H
+
+#include "org/orekit/files/ccsds/ndm/adm/AdmParser.h"
+
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+    class Object;
+    class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace data {
+      class DataContext;
+    }
+    namespace utils {
+      class IERSConventions;
+    }
+    namespace files {
+      namespace ccsds {
+        namespace utils {
+          class FileFormat;
+        }
+        namespace ndm {
+          class NdmConstituent;
+          namespace adm {
+            class AdmHeader;
+          }
+          class ParsedUnitsBehavior;
+        }
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
+}
+template<class T> class JArray;
+
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace ccsds {
+        namespace ndm {
+          namespace adm {
+
+            class PythonAdmParser : public ::org::orekit::files::ccsds::ndm::adm::AdmParser {
+             public:
+              enum {
+                mid_build_3d5ffc54bfa065da,
+                mid_finalize_7ae3461a92a43152,
+                mid_finalizeData_e470b6d9e0d979db,
+                mid_finalizeHeader_e470b6d9e0d979db,
+                mid_finalizeMetadata_e470b6d9e0d979db,
+                mid_getHeader_c489cac8f838b2e9,
+                mid_inData_e470b6d9e0d979db,
+                mid_inHeader_e470b6d9e0d979db,
+                mid_inMetadata_e470b6d9e0d979db,
+                mid_prepareData_e470b6d9e0d979db,
+                mid_prepareHeader_e470b6d9e0d979db,
+                mid_prepareMetadata_e470b6d9e0d979db,
+                mid_pythonDecRef_7ae3461a92a43152,
+                mid_pythonExtension_a27fc9afd27e559d,
+                mid_pythonExtension_fefb08975c10f0a1,
+                mid_reset_052c3a3464b50355,
+                max_mid
+              };
+
+              static ::java::lang::Class *class$;
+              static jmethodID *mids$;
+              static bool live$;
+              static jclass initializeClass(bool);
+
+              explicit PythonAdmParser(jobject obj) : ::org::orekit::files::ccsds::ndm::adm::AdmParser(obj) {
+                if (obj != NULL && mids$ == NULL)
+                  env->getClass(initializeClass);
+              }
+              PythonAdmParser(const PythonAdmParser& obj) : ::org::orekit::files::ccsds::ndm::adm::AdmParser(obj) {}
+
+              ::org::orekit::files::ccsds::ndm::NdmConstituent build() const;
+              void finalize() const;
+              jboolean finalizeData() const;
+              jboolean finalizeHeader() const;
+              jboolean finalizeMetadata() const;
+              ::org::orekit::files::ccsds::ndm::adm::AdmHeader getHeader() const;
+              jboolean inData() const;
+              jboolean inHeader() const;
+              jboolean inMetadata() const;
+              jboolean prepareData() const;
+              jboolean prepareHeader() const;
+              jboolean prepareMetadata() const;
+              void pythonDecRef() const;
+              jlong pythonExtension() const;
+              void pythonExtension(jlong) const;
+              void reset(const ::org::orekit::files::ccsds::utils::FileFormat &) const;
+            };
+          }
+        }
+      }
+    }
+  }
+}
+
+#include <Python.h>
+
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace ccsds {
+        namespace ndm {
+          namespace adm {
+            extern PyType_Def PY_TYPE_DEF(PythonAdmParser);
+            extern PyTypeObject *PY_TYPE(PythonAdmParser);
+
+            class t_PythonAdmParser {
+            public:
+              PyObject_HEAD
+              PythonAdmParser object;
+              PyTypeObject *parameters[2];
+              static PyTypeObject **parameters_(t_PythonAdmParser *self)
+              {
+                return (PyTypeObject **) &(self->parameters);
+              }
+              static PyObject *wrap_Object(const PythonAdmParser&);
+              static PyObject *wrap_jobject(const jobject&);
+              static PyObject *wrap_Object(const PythonAdmParser&, PyTypeObject *, PyTypeObject *);
+              static PyObject *wrap_jobject(const jobject&, PyTypeObject *, PyTypeObject *);
+              static void install(PyObject *module);
+              static void initialize(PyObject *module);
+            };
+          }
+        }
+      }
+    }
+  }
+}
+
+#endif

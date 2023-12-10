@@ -1,0 +1,81 @@
+#ifndef org_hipparchus_linear_RRQRDecomposition_H
+#define org_hipparchus_linear_RRQRDecomposition_H
+
+#include "org/hipparchus/linear/QRDecomposition.h"
+
+namespace org {
+  namespace hipparchus {
+    namespace linear {
+      class DecompositionSolver;
+      class RealMatrix;
+    }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
+template<class T> class JArray;
+
+namespace org {
+  namespace hipparchus {
+    namespace linear {
+
+      class RRQRDecomposition : public ::org::hipparchus::linear::QRDecomposition {
+       public:
+        enum {
+          mid_init$_30aa151fd03f3096,
+          mid_init$_27ff5cf8ba76b4fe,
+          mid_getP_7116bbecdd8ceb21,
+          mid_getRank_12ebab281ee35c98,
+          mid_getSolver_73ddb95911119e87,
+          mid_decompose_d660c7a97bf55272,
+          mid_performHouseholderReflection_d2ec2a370d571745,
+          max_mid
+        };
+
+        static ::java::lang::Class *class$;
+        static jmethodID *mids$;
+        static bool live$;
+        static jclass initializeClass(bool);
+
+        explicit RRQRDecomposition(jobject obj) : ::org::hipparchus::linear::QRDecomposition(obj) {
+          if (obj != NULL && mids$ == NULL)
+            env->getClass(initializeClass);
+        }
+        RRQRDecomposition(const RRQRDecomposition& obj) : ::org::hipparchus::linear::QRDecomposition(obj) {}
+
+        RRQRDecomposition(const ::org::hipparchus::linear::RealMatrix &);
+        RRQRDecomposition(const ::org::hipparchus::linear::RealMatrix &, jdouble);
+
+        ::org::hipparchus::linear::RealMatrix getP() const;
+        jint getRank(jdouble) const;
+        ::org::hipparchus::linear::DecompositionSolver getSolver() const;
+      };
+    }
+  }
+}
+
+#include <Python.h>
+
+namespace org {
+  namespace hipparchus {
+    namespace linear {
+      extern PyType_Def PY_TYPE_DEF(RRQRDecomposition);
+      extern PyTypeObject *PY_TYPE(RRQRDecomposition);
+
+      class t_RRQRDecomposition {
+      public:
+        PyObject_HEAD
+        RRQRDecomposition object;
+        static PyObject *wrap_Object(const RRQRDecomposition&);
+        static PyObject *wrap_jobject(const jobject&);
+        static void install(PyObject *module);
+        static void initialize(PyObject *module);
+      };
+    }
+  }
+}
+
+#endif

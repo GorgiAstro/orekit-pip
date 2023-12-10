@@ -1,0 +1,91 @@
+#ifndef org_hipparchus_analysis_differentiation_FieldDerivative_H
+#define org_hipparchus_analysis_differentiation_FieldDerivative_H
+
+#include "org/hipparchus/CalculusFieldElement.h"
+
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+    namespace analysis {
+      namespace differentiation {
+        class FieldDerivative;
+      }
+    }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
+template<class T> class JArray;
+
+namespace org {
+  namespace hipparchus {
+    namespace analysis {
+      namespace differentiation {
+
+        class FieldDerivative : public ::org::hipparchus::CalculusFieldElement {
+         public:
+          enum {
+            mid_getFreeParameters_f2f64475e4580546,
+            mid_getOrder_f2f64475e4580546,
+            mid_getPartialDerivative_f622835d869c0081,
+            mid_getValue_e6d4d3215c30992a,
+            max_mid
+          };
+
+          static ::java::lang::Class *class$;
+          static jmethodID *mids$;
+          static bool live$;
+          static jclass initializeClass(bool);
+
+          explicit FieldDerivative(jobject obj) : ::org::hipparchus::CalculusFieldElement(obj) {
+            if (obj != NULL && mids$ == NULL)
+              env->getClass(initializeClass);
+          }
+          FieldDerivative(const FieldDerivative& obj) : ::org::hipparchus::CalculusFieldElement(obj) {}
+
+          jint getFreeParameters() const;
+          jint getOrder() const;
+          ::org::hipparchus::CalculusFieldElement getPartialDerivative(const JArray< jint > &) const;
+          ::org::hipparchus::CalculusFieldElement getValue() const;
+        };
+      }
+    }
+  }
+}
+
+#include <Python.h>
+
+namespace org {
+  namespace hipparchus {
+    namespace analysis {
+      namespace differentiation {
+        extern PyType_Def PY_TYPE_DEF(FieldDerivative);
+        extern PyTypeObject *PY_TYPE(FieldDerivative);
+
+        class t_FieldDerivative {
+        public:
+          PyObject_HEAD
+          FieldDerivative object;
+          PyTypeObject *parameters[2];
+          static PyTypeObject **parameters_(t_FieldDerivative *self)
+          {
+            return (PyTypeObject **) &(self->parameters);
+          }
+          static PyObject *wrap_Object(const FieldDerivative&);
+          static PyObject *wrap_jobject(const jobject&);
+          static PyObject *wrap_Object(const FieldDerivative&, PyTypeObject *, PyTypeObject *);
+          static PyObject *wrap_jobject(const jobject&, PyTypeObject *, PyTypeObject *);
+          static void install(PyObject *module);
+          static void initialize(PyObject *module);
+        };
+      }
+    }
+  }
+}
+
+#endif
