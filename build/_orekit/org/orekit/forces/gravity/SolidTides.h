@@ -5,38 +5,35 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
     class Field;
-    class CalculusFieldElement;
   }
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
-    namespace time {
-      class UT1Scale;
-    }
     namespace propagation {
       namespace events {
-        class FieldEventDetector;
         class EventDetector;
+        class FieldEventDetector;
       }
-      class SpacecraftState;
       class FieldSpacecraftState;
+      class SpacecraftState;
     }
     namespace utils {
       class IERSConventions;
       class ParameterDriver;
     }
-    namespace bodies {
-      class CelestialBody;
+    namespace frames {
+      class Frame;
+    }
+    namespace time {
+      class UT1Scale;
     }
     namespace forces {
       class ForceModel;
@@ -46,14 +43,17 @@ namespace org {
         }
       }
     }
+    namespace bodies {
+      class CelestialBody;
+    }
   }
 }
 namespace java {
   namespace util {
-    class List;
     namespace stream {
       class Stream;
     }
+    class List;
   }
   namespace lang {
     class Class;
@@ -69,14 +69,14 @@ namespace org {
         class SolidTides : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_b016086181b32719,
-            mid_init$_34b273274ee3b9aa,
-            mid_acceleration_78989e44b99f7cc2,
-            mid_acceleration_00aba28d3abe9a8c,
-            mid_dependsOnPositionOnly_e470b6d9e0d979db,
-            mid_getEventDetectors_a68a17dd093f796d,
-            mid_getFieldEventDetectors_1328ddb491531a35,
-            mid_getParametersDrivers_a6156df500549a58,
+            mid_init$_65d48fb0e0a62b88,
+            mid_init$_86cb61f7db6d3e91,
+            mid_acceleration_b42ac4b5bfb80fab,
+            mid_acceleration_8954761face5e1a7,
+            mid_dependsOnPositionOnly_b108b35ef48e27bd,
+            mid_getEventDetectors_20f6d2b462aaef4b,
+            mid_getFieldEventDetectors_361313cd1a9c693a,
+            mid_getParametersDrivers_2afa36052df4765d,
             max_mid
           };
 

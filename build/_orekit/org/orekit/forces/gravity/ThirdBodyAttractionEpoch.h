@@ -3,19 +3,19 @@
 
 #include "org/orekit/forces/gravity/ThirdBodyAttraction.h"
 
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      class SpacecraftState;
-    }
-    namespace bodies {
-      class CelestialBody;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace bodies {
+      class CelestialBody;
+    }
+    namespace propagation {
+      class SpacecraftState;
+    }
   }
 }
 template<class T> class JArray;
@@ -28,8 +28,8 @@ namespace org {
         class ThirdBodyAttractionEpoch : public ::org::orekit::forces::gravity::ThirdBodyAttraction {
          public:
           enum {
-            mid_init$_245df9da6b035d3e,
-            mid_getDerivativesToEpoch_61fa92292630f739,
+            mid_init$_6a22a7b4e14949e4,
+            mid_getDerivativesToEpoch_bfa7a0d11c0ebcbf,
             max_mid
           };
 

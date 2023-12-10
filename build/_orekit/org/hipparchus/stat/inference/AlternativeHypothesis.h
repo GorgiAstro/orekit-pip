@@ -28,8 +28,8 @@ namespace org {
         class AlternativeHypothesis : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_48d44e32d373ac66,
-            mid_values_4891acb11876446e,
+            mid_valueOf_e2d55acad813d3ed,
+            mid_values_0912def2ad2ee561,
             max_mid
           };
 

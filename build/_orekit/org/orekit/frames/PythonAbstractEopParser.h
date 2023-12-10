@@ -3,6 +3,20 @@
 
 #include "org/orekit/frames/AbstractEopParser.h"
 
+namespace org {
+  namespace orekit {
+    namespace frames {
+      class EOPEntry;
+      class ItrfVersionProvider;
+    }
+    namespace utils {
+      class IERSConventions$NutationCorrectionConverter;
+    }
+    namespace time {
+      class TimeScale;
+    }
+  }
+}
 namespace java {
   namespace io {
     class IOException;
@@ -17,20 +31,6 @@ namespace java {
     class Collection;
   }
 }
-namespace org {
-  namespace orekit {
-    namespace time {
-      class TimeScale;
-    }
-    namespace frames {
-      class ItrfVersionProvider;
-      class EOPEntry;
-    }
-    namespace utils {
-      class IERSConventions$NutationCorrectionConverter;
-    }
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -40,12 +40,12 @@ namespace org {
       class PythonAbstractEopParser : public ::org::orekit::frames::AbstractEopParser {
        public:
         enum {
-          mid_init$_57dc7c227406b02a,
-          mid_finalize_7ae3461a92a43152,
-          mid_parse_c09602b54bab1317,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
+          mid_init$_15263d7ae605a6b6,
+          mid_finalize_0fa09c18fee449d5,
+          mid_parse_0fd0d48912c66ce3,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
           max_mid
         };
 

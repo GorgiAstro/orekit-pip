@@ -20,9 +20,9 @@ namespace org {
           class HexadecimalSequenceEncodedMessage : public ::org::orekit::gnss::metric::parser::AbstractEncodedMessage {
            public:
             enum {
-              mid_init$_d77f10dac029c69d,
-              mid_start_7ae3461a92a43152,
-              mid_fetchByte_f2f64475e4580546,
+              mid_init$_5e688138ffe60231,
+              mid_start_0fa09c18fee449d5,
+              mid_fetchByte_570ce0828f81a2c1,
               max_mid
             };
 

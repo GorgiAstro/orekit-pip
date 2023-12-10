@@ -30,10 +30,10 @@ namespace org {
       class KthSelector : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_init$_9e8828a4c3553c5c,
-          mid_getPivotingStrategy_2b26bc6a688cfe7a,
-          mid_select_b041aeb6eaabe37b,
+          mid_init$_0fa09c18fee449d5,
+          mid_init$_7ed4e51422b10f61,
+          mid_getPivotingStrategy_d098c6797f63b37e,
+          mid_select_32766843ea06b4a3,
           max_mid
         };
 

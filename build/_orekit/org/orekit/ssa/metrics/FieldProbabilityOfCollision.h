@@ -24,14 +24,14 @@ namespace org {
         class FieldProbabilityOfCollision : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_6325a14c826373f5,
-            mid_init$_9a35f8d38d86978e,
-            mid_init$_1aee98120e32b8d3,
-            mid_getLowerLimit_e6d4d3215c30992a,
-            mid_getProbabilityOfCollisionMethodName_0090f7797e403f43,
-            mid_getUpperLimit_e6d4d3215c30992a,
-            mid_getValue_e6d4d3215c30992a,
-            mid_isMaxProbability_e470b6d9e0d979db,
+            mid_init$_7fc09ec54f0c2c65,
+            mid_init$_93f03c613a5bd189,
+            mid_init$_edb30f98cbc69717,
+            mid_getLowerLimit_eba8e72a22c984ac,
+            mid_getProbabilityOfCollisionMethodName_11b109bd155ca898,
+            mid_getUpperLimit_eba8e72a22c984ac,
+            mid_getValue_eba8e72a22c984ac,
+            mid_isMaxProbability_b108b35ef48e27bd,
             max_mid
           };
 

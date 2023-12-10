@@ -3,6 +3,27 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace exception {
+      class MathIllegalStateException;
+      class MathIllegalArgumentException;
+    }
+    namespace ode {
+      class FieldODEStateAndDerivative;
+      namespace sampling {
+        class FieldODEStepHandler;
+      }
+      class FieldODEState;
+      namespace events {
+        class FieldODEEventDetector;
+        class FieldODEStepEndHandler;
+      }
+      class FieldExpandableODE;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,27 +31,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
-    }
-    namespace ode {
-      class FieldODEStateAndDerivative;
-      class FieldExpandableODE;
-      class FieldODEState;
-      namespace events {
-        class FieldODEEventDetector;
-        class FieldODEStepEndHandler;
-      }
-      namespace sampling {
-        class FieldODEStepHandler;
-      }
-    }
-    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -42,22 +42,22 @@ namespace org {
       class FieldODEIntegrator : public ::java::lang::Object {
        public:
         enum {
-          mid_addEventDetector_51c8f19515e56fc6,
-          mid_addStepEndHandler_08e1e17c6db119ef,
-          mid_addStepHandler_d88adba4c2bf364d,
-          mid_clearEventDetectors_7ae3461a92a43152,
-          mid_clearStepEndHandlers_7ae3461a92a43152,
-          mid_clearStepHandlers_7ae3461a92a43152,
-          mid_getCurrentSignedStepsize_e6d4d3215c30992a,
-          mid_getEvaluations_f2f64475e4580546,
-          mid_getEventDetectors_a6156df500549a58,
-          mid_getMaxEvaluations_f2f64475e4580546,
-          mid_getName_0090f7797e403f43,
-          mid_getStepEndHandlers_a6156df500549a58,
-          mid_getStepHandlers_a6156df500549a58,
-          mid_getStepStart_f1f1c5e26e98a1d9,
-          mid_integrate_668e072c435ebb6b,
-          mid_setMaxEvaluations_0a2a1ac2721c0336,
+          mid_addEventDetector_cdac85baa1ddabb0,
+          mid_addStepEndHandler_9ddb55dbce73d9f2,
+          mid_addStepHandler_a947dba38eed8683,
+          mid_clearEventDetectors_0fa09c18fee449d5,
+          mid_clearStepEndHandlers_0fa09c18fee449d5,
+          mid_clearStepHandlers_0fa09c18fee449d5,
+          mid_getCurrentSignedStepsize_eba8e72a22c984ac,
+          mid_getEvaluations_570ce0828f81a2c1,
+          mid_getEventDetectors_2afa36052df4765d,
+          mid_getMaxEvaluations_570ce0828f81a2c1,
+          mid_getName_11b109bd155ca898,
+          mid_getStepEndHandlers_2afa36052df4765d,
+          mid_getStepHandlers_2afa36052df4765d,
+          mid_getStepStart_7194dd3ba3cbc7e8,
+          mid_integrate_d8a6319aba9a7b17,
+          mid_setMaxEvaluations_99803b0791f320ff,
           max_mid
         };
 

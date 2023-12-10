@@ -31,9 +31,9 @@ namespace org {
           class CarrierPhase : public ::java::lang::Enum {
            public:
             enum {
-              mid_getCarrierPhase_26ed4a0a0da925b9,
-              mid_valueOf_26ed4a0a0da925b9,
-              mid_values_8e19ff084f4d0649,
+              mid_getCarrierPhase_6c8f44ae7eea9423,
+              mid_valueOf_6c8f44ae7eea9423,
+              mid_values_1e8a8730db16e81d,
               max_mid
             };
 

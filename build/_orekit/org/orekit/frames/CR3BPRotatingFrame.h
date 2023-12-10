@@ -24,7 +24,7 @@ namespace org {
       class CR3BPRotatingFrame : public ::org::orekit::frames::Frame {
        public:
         enum {
-          mid_init$_5be1eb0283facc23,
+          mid_init$_33e77487918af638,
           max_mid
         };
 

@@ -8,8 +8,8 @@ namespace org {
     namespace files {
       namespace ccsds {
         namespace definitions {
-          class OdMethodType;
           class OdMethodFacade;
+          class OdMethodType;
         }
       }
     }
@@ -32,11 +32,11 @@ namespace org {
           class OdMethodFacade : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_5ca2d90996f645ae,
-              mid_getName_0090f7797e403f43,
-              mid_getTool_0090f7797e403f43,
-              mid_getType_2b10baa745d272af,
-              mid_parse_a7a24fb4f58a4d57,
+              mid_init$_a9066cd006332f67,
+              mid_getName_11b109bd155ca898,
+              mid_getTool_11b109bd155ca898,
+              mid_getType_f917694ced0b63a6,
+              mid_parse_6553900895312cc7,
               max_mid
             };
 

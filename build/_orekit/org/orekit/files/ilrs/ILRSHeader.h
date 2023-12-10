@@ -3,18 +3,18 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace time {
+      class DateComponents;
+      class AbsoluteDate;
+    }
+  }
+}
 namespace java {
   namespace lang {
     class String;
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-      class DateComponents;
-    }
   }
 }
 template<class T> class JArray;
@@ -27,33 +27,33 @@ namespace org {
         class ILRSHeader : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_getEndEpoch_aaa854c403487cf3,
-            mid_getFormat_0090f7797e403f43,
-            mid_getIlrsSatelliteId_0090f7797e403f43,
-            mid_getName_0090f7797e403f43,
-            mid_getNoradId_0090f7797e403f43,
-            mid_getProductionEpoch_d592c1a2c355eb35,
-            mid_getProductionHour_f2f64475e4580546,
-            mid_getSequenceNumber_f2f64475e4580546,
-            mid_getSic_0090f7797e403f43,
-            mid_getStartEpoch_aaa854c403487cf3,
-            mid_getTargetClass_f2f64475e4580546,
-            mid_getTargetLocation_f2f64475e4580546,
-            mid_getVersion_f2f64475e4580546,
-            mid_setEndEpoch_e82d68cd9f886886,
-            mid_setFormat_e939c6558ae8d313,
-            mid_setIlrsSatelliteId_e939c6558ae8d313,
-            mid_setName_e939c6558ae8d313,
-            mid_setNoradId_e939c6558ae8d313,
-            mid_setProductionEpoch_cd567be04bee4d03,
-            mid_setProductionHour_0a2a1ac2721c0336,
-            mid_setSequenceNumber_0a2a1ac2721c0336,
-            mid_setSic_e939c6558ae8d313,
-            mid_setStartEpoch_e82d68cd9f886886,
-            mid_setTargetClass_0a2a1ac2721c0336,
-            mid_setTargetLocation_0a2a1ac2721c0336,
-            mid_setVersion_0a2a1ac2721c0336,
+            mid_init$_0fa09c18fee449d5,
+            mid_getEndEpoch_85703d13e302437e,
+            mid_getFormat_11b109bd155ca898,
+            mid_getIlrsSatelliteId_11b109bd155ca898,
+            mid_getName_11b109bd155ca898,
+            mid_getNoradId_11b109bd155ca898,
+            mid_getProductionEpoch_06e6477664d37caa,
+            mid_getProductionHour_570ce0828f81a2c1,
+            mid_getSequenceNumber_570ce0828f81a2c1,
+            mid_getSic_11b109bd155ca898,
+            mid_getStartEpoch_85703d13e302437e,
+            mid_getTargetClass_570ce0828f81a2c1,
+            mid_getTargetLocation_570ce0828f81a2c1,
+            mid_getVersion_570ce0828f81a2c1,
+            mid_setEndEpoch_600a2a61652bc473,
+            mid_setFormat_d0bc48d5b00dc40c,
+            mid_setIlrsSatelliteId_d0bc48d5b00dc40c,
+            mid_setName_d0bc48d5b00dc40c,
+            mid_setNoradId_d0bc48d5b00dc40c,
+            mid_setProductionEpoch_56dc33c3871b1cb7,
+            mid_setProductionHour_99803b0791f320ff,
+            mid_setSequenceNumber_99803b0791f320ff,
+            mid_setSic_d0bc48d5b00dc40c,
+            mid_setStartEpoch_600a2a61652bc473,
+            mid_setTargetClass_99803b0791f320ff,
+            mid_setTargetLocation_99803b0791f320ff,
+            mid_setVersion_99803b0791f320ff,
             max_mid
           };
 

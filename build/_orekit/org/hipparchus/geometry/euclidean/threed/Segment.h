@@ -3,21 +3,21 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Line;
           class Vector3D;
+          class Line;
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,10 +31,10 @@ namespace org {
           class Segment : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_910fe4ada3e1910b,
-              mid_getEnd_17a952530a808943,
-              mid_getLine_927626ac26078f4f,
-              mid_getStart_17a952530a808943,
+              mid_init$_38903000df91ad6d,
+              mid_getEnd_d52645e0d4c07563,
+              mid_getLine_9fb9cdc35bfe2f74,
+              mid_getStart_d52645e0d4c07563,
               max_mid
             };
 

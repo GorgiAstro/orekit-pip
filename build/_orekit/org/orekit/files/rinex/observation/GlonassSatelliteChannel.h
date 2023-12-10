@@ -26,9 +26,9 @@ namespace org {
           class GlonassSatelliteChannel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0863c744a4ea688e,
-              mid_getK_f2f64475e4580546,
-              mid_getSatellite_2d9e00e3b80c70c8,
+              mid_init$_07ee2f395c5cfb36,
+              mid_getK_570ce0828f81a2c1,
+              mid_getSatellite_7c0ce8c834d2e72b,
               max_mid
             };
 

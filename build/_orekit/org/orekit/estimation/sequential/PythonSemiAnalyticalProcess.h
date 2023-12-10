@@ -3,6 +3,12 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace estimation {
@@ -26,12 +32,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -42,17 +42,17 @@ namespace org {
         class PythonSemiAnalyticalProcess : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_finalize_7ae3461a92a43152,
-            mid_finalizeEstimation_7cf22bbe05cd26dc,
-            mid_finalizeOperationsObservationGrid_7ae3461a92a43152,
-            mid_getObserver_c42c64cc17e34100,
-            mid_initializeShortPeriodicTerms_2b88003f931f70a7,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
-            mid_updateNominalSpacecraftState_2b88003f931f70a7,
-            mid_updateShortPeriods_2b88003f931f70a7,
+            mid_init$_0fa09c18fee449d5,
+            mid_finalize_0fa09c18fee449d5,
+            mid_finalizeEstimation_da0919b7ae9816a3,
+            mid_finalizeOperationsObservationGrid_0fa09c18fee449d5,
+            mid_getObserver_fc89aee73878aefd,
+            mid_initializeShortPeriodicTerms_0ee5c56004643a2e,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
+            mid_updateNominalSpacecraftState_0ee5c56004643a2e,
+            mid_updateShortPeriods_0ee5c56004643a2e,
             max_mid
           };
 

@@ -4,6 +4,9 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace models {
       namespace earth {
@@ -14,21 +17,18 @@ namespace org {
       }
     }
     namespace time {
-      class TimeScale;
       class FieldAbsoluteDate;
       class AbsoluteDate;
-    }
-    namespace utils {
-      class ParameterDriver;
-      class TimeSpanMap$Span;
+      class TimeScale;
     }
     namespace bodies {
-      class GeodeticPoint;
       class FieldGeodeticPoint;
+      class GeodeticPoint;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
+    namespace utils {
+      class TimeSpanMap$Span;
+      class ParameterDriver;
+    }
   }
 }
 namespace java {
@@ -51,17 +51,17 @@ namespace org {
           class TimeSpanEstimatedTroposphericModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_c6fb7ef4a979e235,
-              mid_init$_f8b676ef258f695c,
-              mid_addTroposphericModelValidAfter_7c58a07aee9727ab,
-              mid_addTroposphericModelValidBefore_7c58a07aee9727ab,
-              mid_extractParameters_d7d552e275320f67,
-              mid_extractParameters_8b177eb25e4eb468,
-              mid_getFirstSpan_39a1e35b17737f60,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_getTroposphericModel_56bce35cef2cb913,
-              mid_pathDelay_af133f80cdba1dc2,
-              mid_pathDelay_0326270bf0e8ed17,
+              mid_init$_51e24b7792379eec,
+              mid_init$_0117665e923ce303,
+              mid_addTroposphericModelValidAfter_a5a1634f5bfcf1ab,
+              mid_addTroposphericModelValidBefore_a5a1634f5bfcf1ab,
+              mid_extractParameters_020d17bb8c285475,
+              mid_extractParameters_547c908eaeea187e,
+              mid_getFirstSpan_971209c2bf2033e7,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_getTroposphericModel_2e0f060ffdeb7f2a,
+              mid_pathDelay_ff7a895eb6f0af2e,
+              mid_pathDelay_fe3b5c46874ab115,
               max_mid
             };
 
@@ -89,8 +89,8 @@ namespace org {
             ::org::orekit::utils::TimeSpanMap$Span getFirstSpan() const;
             ::java::util::List getParametersDrivers() const;
             ::org::orekit::models::earth::troposphere::EstimatedTroposphericModel getTroposphericModel(const ::org::orekit::time::AbsoluteDate &) const;
-            jdouble pathDelay(jdouble, const ::org::orekit::bodies::GeodeticPoint &, const JArray< jdouble > &, const ::org::orekit::time::AbsoluteDate &) const;
             ::org::hipparchus::CalculusFieldElement pathDelay(const ::org::hipparchus::CalculusFieldElement &, const ::org::orekit::bodies::FieldGeodeticPoint &, const JArray< ::org::hipparchus::CalculusFieldElement > &, const ::org::orekit::time::FieldAbsoluteDate &) const;
+            jdouble pathDelay(jdouble, const ::org::orekit::bodies::GeodeticPoint &, const JArray< jdouble > &, const ::org::orekit::time::AbsoluteDate &) const;
           };
         }
       }

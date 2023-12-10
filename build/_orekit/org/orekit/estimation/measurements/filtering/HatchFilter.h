@@ -23,18 +23,18 @@ namespace org {
           class HatchFilter : public ::java::lang::Object {
            public:
             enum {
-              mid_addToCodeHistory_77e0f9a1f260e2e5,
-              mid_addToSmoothedCodeHistory_77e0f9a1f260e2e5,
-              mid_getCodeHistory_5e75cfe55d40f4c7,
-              mid_getSmoothedCodeHistory_5e75cfe55d40f4c7,
-              mid_getThreshold_456d9a2f64d6b28d,
-              mid_resetFilterNext_77e0f9a1f260e2e5,
-              mid_updatePreviousSmoothedCode_77e0f9a1f260e2e5,
-              mid_updatePreviousSmoothingValue_77e0f9a1f260e2e5,
-              mid_resetNextBoolean_7ae3461a92a43152,
-              mid_smoothedCode_824133ce4aec3505,
-              mid_resetK_7ae3461a92a43152,
-              mid_checkValidData_a7623f4e7fdb704f,
+              mid_addToCodeHistory_17db3a65980d3441,
+              mid_addToSmoothedCodeHistory_17db3a65980d3441,
+              mid_getCodeHistory_d91fa6c7b6ddeaae,
+              mid_getSmoothedCodeHistory_d91fa6c7b6ddeaae,
+              mid_getThreshold_dff5885c2c873297,
+              mid_resetFilterNext_17db3a65980d3441,
+              mid_updatePreviousSmoothedCode_17db3a65980d3441,
+              mid_updatePreviousSmoothingValue_17db3a65980d3441,
+              mid_smoothedCode_86ffecc08a63eff0,
+              mid_checkValidData_9df09399397f756e,
+              mid_resetNextBoolean_0fa09c18fee449d5,
+              mid_resetK_0fa09c18fee449d5,
               max_mid
             };
 

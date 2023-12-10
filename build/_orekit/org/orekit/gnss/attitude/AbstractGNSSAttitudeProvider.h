@@ -5,25 +5,25 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
     namespace attitudes {
       class Attitude;
       class FieldAttitude;
     }
-    namespace gnss {
-      namespace attitude {
-        class GNSSAttitudeProvider;
-      }
+    namespace frames {
+      class Frame;
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
     }
     namespace time {
       class AbsoluteDate;
       class FieldAbsoluteDate;
     }
-    namespace utils {
-      class FieldPVCoordinatesProvider;
-      class PVCoordinatesProvider;
+    namespace gnss {
+      namespace attitude {
+        class GNSSAttitudeProvider;
+      }
     }
   }
 }
@@ -42,14 +42,14 @@ namespace org {
         class AbstractGNSSAttitudeProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_getAttitude_5341a8481841f90c,
-            mid_getAttitude_455b5c75f9292826,
-            mid_validityEnd_aaa854c403487cf3,
-            mid_validityStart_aaa854c403487cf3,
-            mid_getSun_488529e6bae70b9b,
-            mid_getInertialFrame_c8fe21bcdac65bf6,
-            mid_correctedYaw_70e28bc10c6688c2,
-            mid_correctedYaw_89a7d6ae4e1f14a2,
+            mid_getAttitude_d2b70935d932b5c5,
+            mid_getAttitude_4e541876ea7d5bd0,
+            mid_validityEnd_85703d13e302437e,
+            mid_validityStart_85703d13e302437e,
+            mid_getSun_6c6c680f468e3316,
+            mid_getInertialFrame_b86f9f61d97a7244,
+            mid_correctedYaw_dbb16eda5c9f6b1d,
+            mid_correctedYaw_64e3133ed57cb807,
             max_mid
           };
 

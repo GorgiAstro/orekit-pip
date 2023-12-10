@@ -37,9 +37,9 @@ namespace org {
             class LnsCoefficients : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_3e3512f53e474a8c,
-                mid_getLns_a84e4ee1da3f1ab8,
-                mid_getdLnsdGamma_a84e4ee1da3f1ab8,
+                mid_init$_b122398eeda7067f,
+                mid_getLns_dbbe5f05149dbf73,
+                mid_getdLnsdGamma_dbbe5f05149dbf73,
                 max_mid
               };
 

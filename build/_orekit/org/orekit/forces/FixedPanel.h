@@ -8,16 +8,16 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
   }
   namespace orekit {
     namespace propagation {
-      class SpacecraftState;
       class FieldSpacecraftState;
+      class SpacecraftState;
     }
   }
 }
@@ -35,9 +35,9 @@ namespace org {
       class FixedPanel : public ::org::orekit::forces::Panel {
        public:
         enum {
-          mid_init$_b0869c2e0e4bff25,
-          mid_getNormal_665eae343e14b9ea,
-          mid_getNormal_78226ca7935182ea,
+          mid_init$_20df62fee79e6615,
+          mid_getNormal_e6f00ace1decd27c,
+          mid_getNormal_abc43395638fd218,
           max_mid
         };
 

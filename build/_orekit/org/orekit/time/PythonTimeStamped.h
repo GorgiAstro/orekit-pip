@@ -6,15 +6,15 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class TimeStamped;
       class AbsoluteDate;
+      class TimeStamped;
     }
   }
 }
 namespace java {
   namespace lang {
-    class Class;
     class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,12 +26,12 @@ namespace org {
       class PythonTimeStamped : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_finalize_7ae3461a92a43152,
-          mid_getDate_aaa854c403487cf3,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
+          mid_init$_0fa09c18fee449d5,
+          mid_finalize_0fa09c18fee449d5,
+          mid_getDate_85703d13e302437e,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
           max_mid
         };
 

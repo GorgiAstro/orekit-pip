@@ -31,8 +31,8 @@ namespace org {
           class DutyCycleType : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_fe6e46dcc52821bc,
-              mid_values_09b0e278b3413024,
+              mid_valueOf_7ea013155df57eb2,
+              mid_values_4db47a5e4978af5c,
               max_mid
             };
 

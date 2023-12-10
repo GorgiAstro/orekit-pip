@@ -20,8 +20,8 @@ namespace java {
     class Iterable : public ::java::lang::Object {
      public:
       enum {
-        mid_iterator_035c6167e6569aac,
-        mid_spliterator_df0341cda53d4d48,
+        mid_iterator_4d23511a9f0db098,
+        mid_spliterator_ef1070394b413a84,
         max_mid
       };
 

@@ -4,6 +4,11 @@
 #include "org/orekit/utils/TimeStampedPVCoordinates.h"
 
 namespace org {
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -11,11 +16,6 @@ namespace org {
           class Vector3D;
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -34,9 +34,9 @@ namespace org {
         class CPF$CPFCoordinate : public ::org::orekit::utils::TimeStampedPVCoordinates {
          public:
           enum {
-            mid_init$_3914e545b9566de4,
-            mid_init$_3390f6f213a62927,
-            mid_getLeap_f2f64475e4580546,
+            mid_init$_58c0d6ad5aca569e,
+            mid_init$_b1253fc8f46fe144,
+            mid_getLeap_570ce0828f81a2c1,
             max_mid
           };
 

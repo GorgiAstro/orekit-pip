@@ -7,8 +7,8 @@ namespace org {
   namespace hipparchus {
     class FieldElement;
     namespace linear {
-      class FieldDecompositionSolver;
       class FieldMatrix;
+      class FieldDecompositionSolver;
     }
   }
 }
@@ -26,13 +26,13 @@ namespace org {
       class FieldLUDecomposition : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_3e03971cd3efa337,
-          mid_getDeterminant_7e89936bdf79375b,
-          mid_getL_cc77900a647586cf,
-          mid_getP_cc77900a647586cf,
-          mid_getPivot_d8ead0d90ce828b0,
-          mid_getSolver_60ebb8b71a188d47,
-          mid_getU_cc77900a647586cf,
+          mid_init$_3c6edf548344b9f0,
+          mid_getDeterminant_99097cb60cf2d774,
+          mid_getL_c992983685c753c5,
+          mid_getP_c992983685c753c5,
+          mid_getPivot_d0635cea09dc178c,
+          mid_getSolver_6147c09efa4fa494,
+          mid_getU_c992983685c753c5,
           max_mid
         };
 

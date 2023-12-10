@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    class Field;
-    class CalculusFieldElement;
     namespace analysis {
       class CalculusFieldMultivariateMatrixFunction;
     }
+    class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -26,8 +26,8 @@ namespace org {
       class FieldMultivariateMatrixFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_toCalculusFieldMultivariateMatrixFunction_e76b0d29386a6c4d,
-          mid_value_f77247e6b79358da,
+          mid_toCalculusFieldMultivariateMatrixFunction_40afd9ffa9ccb71a,
+          mid_value_93e380e776ff0d58,
           max_mid
         };
 

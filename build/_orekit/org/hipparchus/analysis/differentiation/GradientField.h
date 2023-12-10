@@ -7,8 +7,8 @@ namespace org {
   namespace hipparchus {
     namespace analysis {
       namespace differentiation {
-        class Gradient;
         class GradientField;
+        class Gradient;
       }
     }
     class Field;
@@ -29,12 +29,12 @@ namespace org {
         class GradientField : public ::java::lang::Object {
          public:
           enum {
-            mid_equals_229c87223f486349,
-            mid_getField_d5aa7f1acb4ecb5d,
-            mid_getOne_4ed8e234724fadba,
-            mid_getRuntimeClass_8f66acc08d2a174c,
-            mid_getZero_4ed8e234724fadba,
-            mid_hashCode_f2f64475e4580546,
+            mid_equals_65c7d273e80d497a,
+            mid_getField_981218e64b7680f0,
+            mid_getOne_cc2f4e0a456f51de,
+            mid_getRuntimeClass_7c16c5008b34b3db,
+            mid_getZero_cc2f4e0a456f51de,
+            mid_hashCode_570ce0828f81a2c1,
             max_mid
           };
 

@@ -5,12 +5,12 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class DoubleArrayDictionary;
-    }
     namespace orbits {
       class PositionAngleType;
       class OrbitType;
+    }
+    namespace utils {
+      class DoubleArrayDictionary;
     }
   }
   namespace hipparchus {
@@ -38,15 +38,15 @@ namespace org {
       class PythonAbstractMatricesHarvester : public ::org::orekit::propagation::AbstractMatricesHarvester {
        public:
         enum {
-          mid_init$_a6f986e64780e110,
-          mid_finalize_7ae3461a92a43152,
-          mid_freezeColumnsNames_7ae3461a92a43152,
-          mid_getJacobiansColumnsNames_a6156df500549a58,
-          mid_getOrbitType_63ea5cd020bf7bf1,
-          mid_getPositionAngleType_2571e8fe1cede425,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
+          mid_init$_4eed9f37096d374b,
+          mid_finalize_0fa09c18fee449d5,
+          mid_freezeColumnsNames_0fa09c18fee449d5,
+          mid_getJacobiansColumnsNames_2afa36052df4765d,
+          mid_getOrbitType_e29360d311dc0e20,
+          mid_getPositionAngleType_8f17e83e5a86217c,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
           max_mid
         };
 

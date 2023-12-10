@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeScales;
-      class TimeStamped;
-      class AbsoluteDate;
-      class DateComponents;
-    }
     namespace gnss {
       class SatelliteSystem;
+    }
+    namespace time {
+      class TimeScales;
+      class AbsoluteDate;
+      class TimeStamped;
+      class DateComponents;
     }
   }
 }
@@ -33,17 +33,17 @@ namespace org {
       class GNSSDate : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_c8e9851122b2cc76,
-          mid_init$_991740cf003bee22,
-          mid_init$_939d3b583033478d,
-          mid_init$_8f630f653a46ac47,
-          mid_init$_54cbeb883a9840f5,
-          mid_getDate_aaa854c403487cf3,
-          mid_getMilliInWeek_456d9a2f64d6b28d,
-          mid_getRolloverReference_d592c1a2c355eb35,
-          mid_getSecondsInWeek_456d9a2f64d6b28d,
-          mid_getWeekNumber_f2f64475e4580546,
-          mid_setRolloverReference_cd567be04bee4d03,
+          mid_init$_b9cc2ac718a579c4,
+          mid_init$_48a5f9e9ad2c84e7,
+          mid_init$_dc5b21d86cac5eb8,
+          mid_init$_754add1b388c7d4c,
+          mid_init$_48bb1b17002bbd73,
+          mid_getDate_85703d13e302437e,
+          mid_getMilliInWeek_dff5885c2c873297,
+          mid_getRolloverReference_06e6477664d37caa,
+          mid_getSecondsInWeek_dff5885c2c873297,
+          mid_getWeekNumber_570ce0828f81a2c1,
+          mid_setRolloverReference_56dc33c3871b1cb7,
           max_mid
         };
 

@@ -3,12 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace forces {
@@ -18,6 +12,12 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,9 +31,9 @@ namespace org {
           class OceanLoadDeformationCoefficients : public ::java::lang::Enum {
            public:
             enum {
-              mid_getCoefficients_7cdc325af0834901,
-              mid_valueOf_b05ac29bf3fe556e,
-              mid_values_c2a660f935c29a1b,
+              mid_getCoefficients_60c7040667a7dc5c,
+              mid_valueOf_815c15baced2232a,
+              mid_values_1052e2990c2c19df,
               max_mid
             };
 

@@ -3,6 +3,33 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+  }
+  namespace orekit {
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace forces {
+      namespace drag {
+        class DragSensitive;
+      }
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,33 +37,6 @@ namespace java {
   namespace lang {
     class Throwable;
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-    class CalculusFieldElement;
-  }
-  namespace orekit {
-    namespace forces {
-      namespace drag {
-        class DragSensitive;
-      }
-    }
-    namespace propagation {
-      class SpacecraftState;
-      class FieldSpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
   }
 }
 template<class T> class JArray;
@@ -49,14 +49,14 @@ namespace org {
         class PythonDragSensitive : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_dragAcceleration_72c100be3e679e5e,
-            mid_dragAcceleration_3061f9a13979e9fa,
-            mid_finalize_7ae3461a92a43152,
-            mid_getDragParametersDrivers_a6156df500549a58,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
+            mid_init$_0fa09c18fee449d5,
+            mid_dragAcceleration_6cbf0b5d7046f26b,
+            mid_dragAcceleration_fc130a15f669db38,
+            mid_finalize_0fa09c18fee449d5,
+            mid_getDragParametersDrivers_2afa36052df4765d,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
             max_mid
           };
 

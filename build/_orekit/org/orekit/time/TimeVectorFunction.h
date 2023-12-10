@@ -28,8 +28,8 @@ namespace org {
       class TimeVectorFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_value_e586dea4c0bad69b,
-          mid_value_263b2fd0cf81fe4d,
+          mid_value_2b9aa40de0a696a4,
+          mid_value_1d12c7a27955163b,
           max_mid
         };
 

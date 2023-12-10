@@ -4,13 +4,6 @@
 #include "org/orekit/estimation/leastsquares/BatchLSEstimator.h"
 
 namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace conversion {
-        class PropagatorBuilder;
-      }
-    }
-  }
   namespace hipparchus {
     namespace optim {
       namespace nonlinear {
@@ -19,6 +12,13 @@ namespace org {
             class SequentialGaussNewtonOptimizer;
           }
         }
+      }
+    }
+  }
+  namespace orekit {
+    namespace propagation {
+      namespace conversion {
+        class PropagatorBuilder;
       }
     }
   }
@@ -38,7 +38,7 @@ namespace org {
         class SequentialBatchLSEstimator : public ::org::orekit::estimation::leastsquares::BatchLSEstimator {
          public:
           enum {
-            mid_init$_6ead81aeb676be96,
+            mid_init$_1b4891c95e09500c,
             max_mid
           };
 

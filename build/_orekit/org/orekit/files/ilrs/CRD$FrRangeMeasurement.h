@@ -3,17 +3,17 @@
 
 #include "org/orekit/files/ilrs/CRD$RangeMeasurement.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,14 +26,14 @@ namespace org {
         class CRD$FrRangeMeasurement : public ::org::orekit::files::ilrs::CRD$RangeMeasurement {
          public:
           enum {
-            mid_init$_6317ca48aa013d0b,
-            mid_getDetectorChannel_f2f64475e4580546,
-            mid_getFilterFlag_f2f64475e4580546,
-            mid_getReceiveAmplitude_f2f64475e4580546,
-            mid_getStopNumber_f2f64475e4580546,
-            mid_getTransmitAmplitude_f2f64475e4580546,
-            mid_toCrdString_0090f7797e403f43,
-            mid_toString_0090f7797e403f43,
+            mid_init$_0f40c5eb9988d498,
+            mid_getDetectorChannel_570ce0828f81a2c1,
+            mid_getFilterFlag_570ce0828f81a2c1,
+            mid_getReceiveAmplitude_570ce0828f81a2c1,
+            mid_getStopNumber_570ce0828f81a2c1,
+            mid_getTransmitAmplitude_570ce0828f81a2c1,
+            mid_toCrdString_11b109bd155ca898,
+            mid_toString_11b109bd155ca898,
             max_mid
           };
 

@@ -6,13 +6,13 @@
 namespace org {
   namespace orekit {
     namespace rugged {
-      namespace raster {
-        class TileFactory;
-      }
       namespace intersection {
         namespace duvenhage {
           class MinMaxTreeTile;
         }
+      }
+      namespace raster {
+        class TileFactory;
       }
     }
   }
@@ -33,8 +33,8 @@ namespace org {
           class MinMaxTreeTileFactory : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_createTile_17d307bdea6bd18b,
+              mid_init$_0fa09c18fee449d5,
+              mid_createTile_ce69f237ff82efce,
               max_mid
             };
 

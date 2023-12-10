@@ -7,9 +7,9 @@ namespace org {
   namespace hipparchus {
     namespace geometry {
       namespace partitioning {
+        class SubHyperplane;
         class Region;
         class Hyperplane;
-        class SubHyperplane;
       }
       class Point;
     }
@@ -30,14 +30,14 @@ namespace org {
         class Hyperplane : public ::java::lang::Object {
          public:
           enum {
-            mid_copySelf_e829aeefe0096202,
-            mid_emptyHyperplane_a66e04f05d5608cc,
-            mid_getOffset_726dc963fac3505e,
-            mid_getTolerance_456d9a2f64d6b28d,
-            mid_project_ac445dfe898b403a,
-            mid_sameOrientationAs_b99f508aafd89c77,
-            mid_wholeHyperplane_a66e04f05d5608cc,
-            mid_wholeSpace_9552c312bc09a7e5,
+            mid_copySelf_a9ae8c67d757c80a,
+            mid_emptyHyperplane_6e34449919366687,
+            mid_getOffset_07bb97c2794cf6b1,
+            mid_getTolerance_dff5885c2c873297,
+            mid_project_c48805c2dda937c6,
+            mid_sameOrientationAs_5bc340c02d9ac484,
+            mid_wholeHyperplane_6e34449919366687,
+            mid_wholeSpace_b72f8ac992e26582,
             max_mid
           };
 

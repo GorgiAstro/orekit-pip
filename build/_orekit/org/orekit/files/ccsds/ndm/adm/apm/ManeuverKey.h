@@ -10,16 +10,16 @@ namespace org {
         namespace ndm {
           namespace adm {
             namespace apm {
-              class Maneuver;
               class ManeuverKey;
+              class Maneuver;
             }
           }
         }
         namespace utils {
-          class ContextBinding;
           namespace lexical {
             class ParseToken;
           }
+          class ContextBinding;
         }
       }
     }
@@ -44,9 +44,9 @@ namespace org {
               class ManeuverKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_5922716aa3b7b948,
-                  mid_valueOf_cff6263b4bf313a7,
-                  mid_values_b70e7e7adfb6ca6d,
+                  mid_process_3ee4734b1b4313c8,
+                  mid_valueOf_51ad987b41424b4a,
+                  mid_values_08691f21f25d0ed7,
                   max_mid
                 };
 

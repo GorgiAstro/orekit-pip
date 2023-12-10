@@ -33,12 +33,12 @@ namespace org {
         class PythonAttitudeEphemerisFileWriter : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_finalize_7ae3461a92a43152,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
-            mid_write_3e82c67d69401a38,
+            mid_init$_0fa09c18fee449d5,
+            mid_finalize_0fa09c18fee449d5,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
+            mid_write_9b09ecef0da8f461,
             max_mid
           };
 

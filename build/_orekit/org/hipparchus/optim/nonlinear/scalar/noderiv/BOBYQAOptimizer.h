@@ -27,9 +27,9 @@ namespace org {
             class BOBYQAOptimizer : public ::org::hipparchus::optim::nonlinear::scalar::MultivariateOptimizer {
              public:
               enum {
-                mid_init$_0a2a1ac2721c0336,
-                mid_init$_13f7a72902bf1e20,
-                mid_doOptimize_f3368328259a5468,
+                mid_init$_99803b0791f320ff,
+                mid_init$_07bf81310115068c,
+                mid_doOptimize_4ae915e35f441d39,
                 max_mid
               };
 

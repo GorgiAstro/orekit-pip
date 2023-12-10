@@ -5,13 +5,13 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
     namespace geometry {
       namespace fov {
         class FieldOfView;
       }
+    }
+    namespace frames {
+      class Frame;
     }
     namespace propagation {
       namespace events {
@@ -36,11 +36,11 @@ namespace org {
         class GroundFieldOfViewDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_6822b9024f20c5bc,
-            mid_g_66a2f071e6ed0c06,
-            mid_getFOV_f51bf66c035a133c,
-            mid_getFrame_c8fe21bcdac65bf6,
-            mid_create_2eeb23542013db81,
+            mid_init$_1159ffe950bd889c,
+            mid_g_432f3d328c15ec82,
+            mid_getFOV_8e0c5ec4b28dcc17,
+            mid_getFrame_b86f9f61d97a7244,
+            mid_create_ca163c3511aa8748,
             max_mid
           };
 

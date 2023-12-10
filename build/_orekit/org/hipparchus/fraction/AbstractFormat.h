@@ -4,12 +4,12 @@
 #include "java/text/NumberFormat.h"
 
 namespace java {
-  namespace lang {
-    class StringBuffer;
-    class Class;
-  }
   namespace text {
     class FieldPosition;
+  }
+  namespace lang {
+    class Class;
+    class StringBuffer;
   }
 }
 template<class T> class JArray;
@@ -21,14 +21,14 @@ namespace org {
       class AbstractFormat : public ::java::text::NumberFormat {
        public:
         enum {
-          mid_format_c6faa545a7a768dc,
-          mid_format_ad0b55b296497605,
-          mid_getDenominatorFormat_d34e2e8dd35583a0,
-          mid_getNumeratorFormat_d34e2e8dd35583a0,
-          mid_getDefaultNumberFormat_41d4a73d4466d8a8,
-          mid_getDefaultNumberFormat_d34e2e8dd35583a0,
-          mid_parseAndIgnoreWhitespace_3f781e1d901a0f96,
-          mid_parseNextCharacter_4aabc917f367b3fd,
+          mid_format_71cdbf949acd3c79,
+          mid_format_1ad97cb6c82be27f,
+          mid_getDenominatorFormat_24f83dea4a8657b1,
+          mid_getNumeratorFormat_24f83dea4a8657b1,
+          mid_getDefaultNumberFormat_09db48c8af63ef24,
+          mid_getDefaultNumberFormat_24f83dea4a8657b1,
+          mid_parseAndIgnoreWhitespace_e097ee22c3f6fd45,
+          mid_parseNextCharacter_3867dd0052a198da,
           max_mid
         };
 

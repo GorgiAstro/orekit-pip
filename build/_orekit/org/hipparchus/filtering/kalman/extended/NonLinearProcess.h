@@ -5,17 +5,17 @@
 
 namespace org {
   namespace hipparchus {
-    namespace linear {
-      class RealVector;
-      class RealMatrix;
-    }
     namespace filtering {
       namespace kalman {
-        class Measurement;
         namespace extended {
           class NonLinearEvolution;
         }
+        class Measurement;
       }
+    }
+    namespace linear {
+      class RealMatrix;
+      class RealVector;
     }
   }
 }
@@ -35,8 +35,8 @@ namespace org {
           class NonLinearProcess : public ::java::lang::Object {
            public:
             enum {
-              mid_getEvolution_45951e8f5aa99d9f,
-              mid_getInnovation_e7c98fc90efeccad,
+              mid_getEvolution_892f202f3cb65eb1,
+              mid_getInnovation_b7c667ec5a07ed5f,
               max_mid
             };
 

@@ -34,9 +34,9 @@ namespace org {
           class RinexObservation : public ::org::orekit::files::rinex::RinexFile {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_addObservationDataSet_a74883e6a7063961,
-              mid_getObservationDataSets_a6156df500549a58,
+              mid_init$_0fa09c18fee449d5,
+              mid_addObservationDataSet_5e249044f63168db,
+              mid_getObservationDataSets_2afa36052df4765d,
               max_mid
             };
 

@@ -22,21 +22,21 @@ namespace java {
     class InputStream : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_7ae3461a92a43152,
-        mid_available_f2f64475e4580546,
-        mid_close_7ae3461a92a43152,
-        mid_mark_0a2a1ac2721c0336,
-        mid_markSupported_e470b6d9e0d979db,
-        mid_nullInputStream_eafcb03912e8859c,
-        mid_read_f2f64475e4580546,
-        mid_read_11d417f25cf33664,
-        mid_read_4e993e185759f10d,
-        mid_readAllBytes_89bfc9a589d9cd37,
-        mid_readNBytes_9c355bc6c14d28b2,
-        mid_readNBytes_4e993e185759f10d,
-        mid_reset_7ae3461a92a43152,
-        mid_skip_955f7541fca701ab,
-        mid_transferTo_a1eddf469bd9ecf5,
+        mid_init$_0fa09c18fee449d5,
+        mid_available_570ce0828f81a2c1,
+        mid_close_0fa09c18fee449d5,
+        mid_mark_99803b0791f320ff,
+        mid_markSupported_b108b35ef48e27bd,
+        mid_nullInputStream_51fdc45647b8e866,
+        mid_read_570ce0828f81a2c1,
+        mid_read_5702323b606d072b,
+        mid_read_619434785725cc72,
+        mid_readAllBytes_d1c0cd497c1897cd,
+        mid_readNBytes_7f79e47f12cfba98,
+        mid_readNBytes_619434785725cc72,
+        mid_reset_0fa09c18fee449d5,
+        mid_skip_02b241598e254a3f,
+        mid_transferTo_f60a6bdc9571a688,
         max_mid
       };
 

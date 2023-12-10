@@ -14,17 +14,17 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace estimation {
-      namespace leastsquares {
-        class ModelObserver;
-      }
-      namespace measurements {
-        class ObservedMeasurement;
-      }
-    }
     namespace propagation {
       namespace conversion {
         class PropagatorBuilder;
+      }
+    }
+    namespace estimation {
+      namespace measurements {
+        class ObservedMeasurement;
+      }
+      namespace leastsquares {
+        class ModelObserver;
       }
     }
     namespace utils {
@@ -42,9 +42,9 @@ namespace org {
         class BatchLSModel : public ::org::orekit::estimation::leastsquares::AbstractBatchLSModel {
          public:
           enum {
-            mid_init$_cea2a98fe3ea59d1,
-            mid_configureHarvester_f80d2a02173b5959,
-            mid_configureOrbits_9e53ad80ae898100,
+            mid_init$_013b9b75e2d29096,
+            mid_configureHarvester_e80966db3f120c01,
+            mid_configureOrbits_e5faaf40266e83a3,
             max_mid
           };
 

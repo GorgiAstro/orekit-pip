@@ -5,18 +5,18 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalStateException;
+      class NullArgumentException;
+      class MathIllegalArgumentException;
+    }
+    namespace complex {
+      class Complex;
+    }
     namespace analysis {
       namespace polynomials {
         class PolynomialFunction;
       }
-    }
-    namespace exception {
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
-      class NullArgumentException;
-    }
-    namespace complex {
-      class Complex;
     }
   }
 }
@@ -35,13 +35,13 @@ namespace org {
         class LaguerreSolver : public ::org::hipparchus::analysis::solvers::AbstractPolynomialSolver {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_init$_77e0f9a1f260e2e5,
-            mid_init$_1d715fa3b7b756e1,
-            mid_init$_d0d6094fbd7015c5,
-            mid_doSolve_456d9a2f64d6b28d,
-            mid_solveAllComplex_d2645552bb1aff58,
-            mid_solveComplex_68a904a4b68e072c,
+            mid_init$_0fa09c18fee449d5,
+            mid_init$_17db3a65980d3441,
+            mid_init$_8f2e782d5278b131,
+            mid_init$_2c56b6dd4d4b1dec,
+            mid_doSolve_dff5885c2c873297,
+            mid_solveAllComplex_43a66e19accb9584,
+            mid_solveComplex_41cae59f37a8d706,
             max_mid
           };
 

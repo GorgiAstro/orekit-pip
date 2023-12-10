@@ -4,6 +4,27 @@
 #include "org/orekit/attitudes/GroundPointing.h"
 
 namespace org {
+  namespace orekit {
+    namespace frames {
+      class Frame;
+    }
+    namespace attitudes {
+      class Attitude;
+      class FieldAttitude;
+      class AttitudeProvider;
+      class AttitudeProviderModifier;
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
+      class TimeStampedPVCoordinates;
+      class TimeStampedFieldPVCoordinates;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -11,27 +32,6 @@ namespace org {
           class Vector3D;
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace frames {
-      class Frame;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-      class Attitude;
-      class FieldAttitude;
-      class AttitudeProviderModifier;
-    }
-    namespace utils {
-      class TimeStampedFieldPVCoordinates;
-      class FieldPVCoordinatesProvider;
-      class TimeStampedPVCoordinates;
-      class PVCoordinatesProvider;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
     }
   }
 }
@@ -49,14 +49,14 @@ namespace org {
       class YawSteering : public ::org::orekit::attitudes::GroundPointing {
        public:
         enum {
-          mid_init$_2aaf2e11b5dbdf5a,
-          mid_getAttitude_5341a8481841f90c,
-          mid_getAttitude_455b5c75f9292826,
-          mid_getBaseState_5341a8481841f90c,
-          mid_getBaseState_455b5c75f9292826,
-          mid_getTargetPV_ab0341569f219f18,
-          mid_getTargetPV_99b96e260ceb5fe3,
-          mid_getUnderlyingAttitudeProvider_5cce95036ae870ba,
+          mid_init$_f9f34c850e6edf41,
+          mid_getAttitude_d2b70935d932b5c5,
+          mid_getAttitude_4e541876ea7d5bd0,
+          mid_getBaseState_d2b70935d932b5c5,
+          mid_getBaseState_4e541876ea7d5bd0,
+          mid_getTargetPV_ad3e02e6f0d115f2,
+          mid_getTargetPV_129d59e5c897146f,
+          mid_getUnderlyingAttitudeProvider_a904f3d015a354a0,
           max_mid
         };
 

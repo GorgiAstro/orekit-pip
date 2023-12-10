@@ -16,25 +16,25 @@ namespace org {
     namespace frames {
       class Frame;
     }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
     namespace files {
-      namespace sp3 {
-        class SP3Coordinate;
-      }
       namespace general {
         class EphemerisFile$EphemerisSegment;
       }
+      namespace sp3 {
+        class SP3Coordinate;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
     }
     namespace utils {
       class CartesianDerivativesFilter;
     }
     namespace propagation {
       class BoundedPropagator;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -48,17 +48,17 @@ namespace org {
         class SP3Segment : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_9301fbf0c29669d0,
-            mid_addCoordinate_c9ef6fa09f2e2d36,
-            mid_getAvailableDerivatives_237181d932324188,
-            mid_getCoordinates_a6156df500549a58,
-            mid_getFrame_c8fe21bcdac65bf6,
-            mid_getInterpolationSamples_f2f64475e4580546,
-            mid_getMu_456d9a2f64d6b28d,
-            mid_getPropagator_e29a1189b47e1aad,
-            mid_getPropagator_ecec515dedcdf4ce,
-            mid_getStart_aaa854c403487cf3,
-            mid_getStop_aaa854c403487cf3,
+            mid_init$_cf0a3e7ed2ee4790,
+            mid_addCoordinate_f3f24d19500877ea,
+            mid_getAvailableDerivatives_16e9a7b5414faf2d,
+            mid_getCoordinates_2afa36052df4765d,
+            mid_getFrame_b86f9f61d97a7244,
+            mid_getInterpolationSamples_570ce0828f81a2c1,
+            mid_getMu_dff5885c2c873297,
+            mid_getPropagator_08b52de56e2dfa9a,
+            mid_getPropagator_ac89b644d37ed0fc,
+            mid_getStart_85703d13e302437e,
+            mid_getStop_85703d13e302437e,
             max_mid
           };
 

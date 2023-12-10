@@ -34,8 +34,8 @@ namespace org {
             class BeidouSatelliteType : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_8541da0c959162b5,
-                mid_values_a3c53759a8492c00,
+                mid_valueOf_d513f8b0a135b0af,
+                mid_values_31fd2a947ff6ef21,
                 max_mid
               };
 

@@ -3,35 +3,35 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace attitudes {
-      class BoundedAttitudeProvider;
-      class Attitude;
-      class FieldAttitude;
-    }
-    namespace frames {
-      class Frame;
-      class LOF;
-    }
-    namespace utils {
-      class AngularDerivativesFilter;
-      class PVCoordinatesProvider;
-      class FieldPVCoordinatesProvider;
-      class TimeStampedAngularCoordinates;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace utils {
+      class TimeStampedAngularCoordinates;
+      class AngularDerivativesFilter;
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
+    }
+    namespace attitudes {
+      class Attitude;
+      class FieldAttitude;
+      class BoundedAttitudeProvider;
+    }
+    namespace frames {
+      class Frame;
+      class LOF;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
   }
 }
 template<class T> class JArray;
@@ -43,13 +43,13 @@ namespace org {
       class TabulatedLofOffset : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_6e02fb16dd7a6ff1,
-          mid_init$_2b1f5df11f43165a,
-          mid_getAttitude_455b5c75f9292826,
-          mid_getAttitude_5341a8481841f90c,
-          mid_getMaxDate_aaa854c403487cf3,
-          mid_getMinDate_aaa854c403487cf3,
-          mid_getTable_a6156df500549a58,
+          mid_init$_24c7aef3047138c4,
+          mid_init$_b38f64f0bbbd8f11,
+          mid_getAttitude_4e541876ea7d5bd0,
+          mid_getAttitude_d2b70935d932b5c5,
+          mid_getMaxDate_85703d13e302437e,
+          mid_getMinDate_85703d13e302437e,
+          mid_getTable_2afa36052df4765d,
           max_mid
         };
 

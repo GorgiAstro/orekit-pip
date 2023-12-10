@@ -3,16 +3,6 @@
 
 #include "org/hipparchus/distribution/multivariate/AbstractMultivariateRealDistribution.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace random {
-      class RandomGenerator;
-    }
-    namespace util {
-      class Pair;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -20,6 +10,16 @@ namespace java {
   namespace lang {
     class Double;
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace util {
+      class Pair;
+    }
+    namespace random {
+      class RandomGenerator;
+    }
   }
 }
 template<class T> class JArray;
@@ -32,12 +32,12 @@ namespace org {
         class MixtureMultivariateRealDistribution : public ::org::hipparchus::distribution::multivariate::AbstractMultivariateRealDistribution {
          public:
           enum {
-            mid_init$_65de9727799c5641,
-            mid_init$_feee9201706f7cee,
-            mid_density_f05cb8c6dfd5e0b9,
-            mid_getComponents_a6156df500549a58,
-            mid_reseedRandomGenerator_fefb08975c10f0a1,
-            mid_sample_7cdc325af0834901,
+            mid_init$_de3e021e7266b71e,
+            mid_init$_a3d6463b27f37fbe,
+            mid_density_9dc1ec0bcc0a9a29,
+            mid_getComponents_2afa36052df4765d,
+            mid_reseedRandomGenerator_3a8e7649f31fdb20,
+            mid_sample_60c7040667a7dc5c,
             max_mid
           };
 

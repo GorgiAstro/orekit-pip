@@ -3,11 +3,6 @@
 
 #include "org/hipparchus/optim/nonlinear/vector/leastsquares/LeastSquaresProblem$Evaluation.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace optim {
@@ -19,6 +14,11 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -33,9 +33,9 @@ namespace org {
             class LeastSquaresOptimizer$Optimum : public ::org::hipparchus::optim::nonlinear::vector::leastsquares::LeastSquaresProblem$Evaluation {
              public:
               enum {
-                mid_getEvaluations_f2f64475e4580546,
-                mid_getIterations_f2f64475e4580546,
-                mid_of_6e212a68efb771cd,
+                mid_getEvaluations_570ce0828f81a2c1,
+                mid_getIterations_570ce0828f81a2c1,
+                mid_of_797df3682bfee0e5,
                 max_mid
               };
 

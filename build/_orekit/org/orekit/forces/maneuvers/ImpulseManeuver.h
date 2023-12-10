@@ -4,16 +4,16 @@
 #include "org/orekit/propagation/events/AbstractDetector.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-    }
-  }
   namespace orekit {
+    namespace propagation {
+      namespace events {
+        class EventDetector;
+      }
+      class SpacecraftState;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace attitudes {
       class AttitudeProvider;
     }
@@ -23,14 +23,14 @@ namespace org {
         class ImpulseManeuver;
       }
     }
-    namespace propagation {
-      class SpacecraftState;
-      namespace events {
-        class EventDetector;
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -49,17 +49,17 @@ namespace org {
         class ImpulseManeuver : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_cf7d4e015d41ac43,
-            mid_init$_2ac32a31b9007a99,
-            mid_init$_381dc84b05429e3b,
-            mid_g_66a2f071e6ed0c06,
-            mid_getAttitudeOverride_5cce95036ae870ba,
-            mid_getControl3DVectorCostType_9fb96072e0d6dbf0,
-            mid_getDeltaVSat_17a952530a808943,
-            mid_getIsp_456d9a2f64d6b28d,
-            mid_getTrigger_27b528e7858202ed,
-            mid_init_3d13474d79f5e7bc,
-            mid_create_a1dca21c41aedd19,
+            mid_init$_33ff2531f6afe54b,
+            mid_init$_6e35dd1e707d55ce,
+            mid_init$_d5a1eb9188b4db60,
+            mid_g_432f3d328c15ec82,
+            mid_getAttitudeOverride_a904f3d015a354a0,
+            mid_getControl3DVectorCostType_67739b20d9566a8c,
+            mid_getDeltaVSat_d52645e0d4c07563,
+            mid_getIsp_dff5885c2c873297,
+            mid_getTrigger_d73bb985ffde4156,
+            mid_init_826b4eda94da4e78,
+            mid_create_6b5d818a71042d92,
             max_mid
           };
 

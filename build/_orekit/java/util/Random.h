@@ -4,13 +4,13 @@
 #include "java/lang/Object.h"
 
 namespace java {
+  namespace lang {
+    class Class;
+  }
   namespace util {
     namespace stream {
       class DoubleStream;
     }
-  }
-  namespace lang {
-    class Class;
   }
   namespace io {
     class Serializable;
@@ -24,22 +24,22 @@ namespace java {
     class Random : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_7ae3461a92a43152,
-        mid_init$_fefb08975c10f0a1,
-        mid_doubles_2c8690a58875e3ae,
-        mid_doubles_19dd39eae6a70cf7,
-        mid_doubles_253831d37af3b2cf,
-        mid_doubles_ff691104e83f6c94,
-        mid_nextBoolean_e470b6d9e0d979db,
-        mid_nextBytes_9c4b35f0a6dc87f3,
-        mid_nextDouble_456d9a2f64d6b28d,
-        mid_nextFloat_966c782d3223854d,
-        mid_nextGaussian_456d9a2f64d6b28d,
-        mid_nextInt_f2f64475e4580546,
-        mid_nextInt_38565d58479aa24a,
-        mid_nextLong_a27fc9afd27e559d,
-        mid_setSeed_fefb08975c10f0a1,
-        mid_next_38565d58479aa24a,
+        mid_init$_0fa09c18fee449d5,
+        mid_init$_3a8e7649f31fdb20,
+        mid_doubles_0636ae0567d24d63,
+        mid_doubles_b87abe13a25ee77e,
+        mid_doubles_68977be6cce7f15f,
+        mid_doubles_233d23af63f8a935,
+        mid_nextBoolean_b108b35ef48e27bd,
+        mid_nextBytes_20012b3010a39c05,
+        mid_nextDouble_dff5885c2c873297,
+        mid_nextFloat_5adccb493ada08e8,
+        mid_nextGaussian_dff5885c2c873297,
+        mid_nextInt_570ce0828f81a2c1,
+        mid_nextInt_2235cd056f5a882b,
+        mid_nextLong_492808a339bfa35f,
+        mid_setSeed_3a8e7649f31fdb20,
+        mid_next_2235cd056f5a882b,
         max_mid
       };
 

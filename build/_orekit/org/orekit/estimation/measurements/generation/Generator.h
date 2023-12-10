@@ -7,11 +7,11 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class ObservableSatellite;
         namespace generation {
           class Scheduler;
           class GeneratedMeasurementSubscriber;
         }
+        class ObservableSatellite;
       }
     }
     namespace propagation {
@@ -38,12 +38,12 @@ namespace org {
           class Generator : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_addPropagator_d9786022257b6cc4,
-              mid_addScheduler_9bc1d7f21ff11af8,
-              mid_addSubscriber_91c817ce1de8728a,
-              mid_generate_d958a9bfde45c759,
-              mid_getPropagator_e0d66209caa97f6d,
+              mid_init$_0fa09c18fee449d5,
+              mid_addPropagator_6b3027443757e400,
+              mid_addScheduler_f2ce6ed50b446901,
+              mid_addSubscriber_8cb70f19f7145a16,
+              mid_generate_a9e71d848b81c8f8,
+              mid_getPropagator_0b01f316a88c3e09,
               max_mid
             };
 

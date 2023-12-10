@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace linear {
@@ -18,6 +13,11 @@ namespace org {
     namespace propagation {
       class SpacecraftState;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,7 +31,7 @@ namespace org {
           class DSSTStateTransitionMatrixGenerator$DSSTPartialsObserver : public ::java::lang::Object {
            public:
             enum {
-              mid_partialsComputed_e0569d03317baf3a,
+              mid_partialsComputed_5c23c9e194727670,
               max_mid
             };
 

@@ -3,20 +3,20 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
+    namespace util {
+      class Incrementor;
+    }
     namespace optim {
       class OptimizationProblem;
       class ConvergenceChecker;
     }
-    namespace util {
-      class Incrementor;
-    }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,9 +28,9 @@ namespace org {
       class AbstractOptimizationProblem : public ::java::lang::Object {
        public:
         enum {
-          mid_getConvergenceChecker_100e81b1c0752b49,
-          mid_getEvaluationCounter_745ef02916e2d8db,
-          mid_getIterationCounter_745ef02916e2d8db,
+          mid_getConvergenceChecker_c0e8b85b3220641b,
+          mid_getEvaluationCounter_b6dd60d8c3af0cf7,
+          mid_getIterationCounter_b6dd60d8c3af0cf7,
           max_mid
         };
 

@@ -4,22 +4,22 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace events {
+        class EventDetector;
+      }
+      class SpacecraftState;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
   namespace hipparchus {
     namespace ode {
       namespace events {
         class Action;
       }
-    }
-  }
-  namespace orekit {
-    namespace propagation {
-      class SpacecraftState;
-      namespace events {
-        class EventDetector;
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -39,9 +39,9 @@ namespace org {
           class EventHandler : public ::java::lang::Object {
            public:
             enum {
-              mid_eventOccurred_66531e3c1769dca9,
-              mid_init_9678bba57553faaf,
-              mid_resetState_7c4cfc7ac2bc3a77,
+              mid_eventOccurred_abc543fa9701720f,
+              mid_init_2e343080aa0c9516,
+              mid_resetState_7a28fd3585a5b57c,
               max_mid
             };
 

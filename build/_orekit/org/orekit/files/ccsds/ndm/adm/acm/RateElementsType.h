@@ -3,23 +3,22 @@
 
 #include "java/lang/Enum.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Rotation;
-          class RotationOrder;
-        }
-      }
-    }
+namespace java {
+  namespace util {
+    class List;
   }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
+namespace org {
   namespace orekit {
     namespace utils {
+      class TimeStampedAngularCoordinates;
       namespace units {
         class Unit;
       }
-      class TimeStampedAngularCoordinates;
     }
     namespace files {
       namespace ccsds {
@@ -36,14 +35,15 @@ namespace org {
       class AbsoluteDate;
     }
   }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Rotation;
+          class RotationOrder;
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -59,11 +59,11 @@ namespace org {
               class RateElementsType : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_getUnits_a6156df500549a58,
-                  mid_toAngular_8d80b15b51b04d84,
-                  mid_toString_0090f7797e403f43,
-                  mid_valueOf_ade7a79fe881422f,
-                  mid_values_553073a1d30f05d4,
+                  mid_getUnits_2afa36052df4765d,
+                  mid_toAngular_d7352954ca2ee5a0,
+                  mid_toString_11b109bd155ca898,
+                  mid_valueOf_c1643f89878104a0,
+                  mid_values_35785bce553ea733,
                   max_mid
                 };
 

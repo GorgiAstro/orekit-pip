@@ -31,13 +31,13 @@ namespace org {
         class StreamingStatistics$StreamingStatisticsBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_build_cdee09d4729ad8fd,
-            mid_extrema_2fa0b82810c56fd8,
-            mid_moments_2fa0b82810c56fd8,
-            mid_percentiles_6bcab1bdf48141c3,
-            mid_sumOfLogs_2fa0b82810c56fd8,
-            mid_sumOfSquares_2fa0b82810c56fd8,
+            mid_init$_0fa09c18fee449d5,
+            mid_build_28f0324196bf3cb7,
+            mid_extrema_41e9afe9c540b74b,
+            mid_moments_41e9afe9c540b74b,
+            mid_percentiles_a4f2780f270a815f,
+            mid_sumOfLogs_41e9afe9c540b74b,
+            mid_sumOfSquares_41e9afe9c540b74b,
             max_mid
           };
 

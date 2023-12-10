@@ -7,18 +7,18 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace utils {
+          namespace lexical {
+            class ParseToken;
+          }
+          class ContextBinding;
+        }
         namespace ndm {
           namespace adm {
             namespace apm {
-              class Euler;
               class EulerKey;
+              class Euler;
             }
-          }
-        }
-        namespace utils {
-          class ContextBinding;
-          namespace lexical {
-            class ParseToken;
           }
         }
       }
@@ -44,9 +44,9 @@ namespace org {
               class EulerKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_0202372339b249f1,
-                  mid_valueOf_8cc2391abce132fe,
-                  mid_values_bb4b2a948aea09f3,
+                  mid_process_9453d27e5cecf83d,
+                  mid_valueOf_a6d5a41a7735a934,
+                  mid_values_c65f11637145adfb,
                   max_mid
                 };
 

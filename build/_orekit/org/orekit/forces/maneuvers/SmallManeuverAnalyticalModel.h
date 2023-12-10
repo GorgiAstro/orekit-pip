@@ -4,19 +4,7 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-    }
-  }
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
     namespace propagation {
       namespace analytical {
         class AdapterPropagator$DifferentialEffect;
@@ -24,11 +12,23 @@ namespace org {
       class SpacecraftState;
     }
     namespace orbits {
-      class Orbit;
       class PositionAngleType;
+      class Orbit;
+    }
+    namespace frames {
+      class Frame;
     }
     namespace time {
       class AbsoluteDate;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
     }
   }
 }
@@ -47,15 +47,15 @@ namespace org {
         class SmallManeuverAnalyticalModel : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a311bc6b3c1a3e96,
-            mid_init$_4efcb1680a960148,
-            mid_apply_4500563ec80cd676,
-            mid_apply_81fc6fb6078d2aa7,
-            mid_getDate_aaa854c403487cf3,
-            mid_getInertialDV_17a952530a808943,
-            mid_getInertialFrame_c8fe21bcdac65bf6,
-            mid_getJacobian_4388c4770d004546,
-            mid_updateMass_0ba5fed9597b693e,
+            mid_init$_2a6db53d6def3a34,
+            mid_init$_665410d4e1a3356f,
+            mid_apply_58efaeb159657907,
+            mid_apply_f43130c50e9fafeb,
+            mid_getDate_85703d13e302437e,
+            mid_getInertialDV_d52645e0d4c07563,
+            mid_getInertialFrame_b86f9f61d97a7244,
+            mid_getJacobian_0743f2f4f7f34cc1,
+            mid_updateMass_dcbc7ce2902fa136,
             max_mid
           };
 

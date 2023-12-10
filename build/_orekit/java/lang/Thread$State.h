@@ -5,8 +5,8 @@
 
 namespace java {
   namespace lang {
-    class Thread$State;
     class String;
+    class Thread$State;
     class Class;
   }
 }
@@ -18,8 +18,8 @@ namespace java {
     class Thread$State : public ::java::lang::Enum {
      public:
       enum {
-        mid_valueOf_04c27c97710f5d4f,
-        mid_values_75eec4d7239bbbb2,
+        mid_valueOf_a21fae21a6a35b05,
+        mid_values_063ea36041ceb7fd,
         max_mid
       };
 

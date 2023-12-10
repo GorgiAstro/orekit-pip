@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace optim {
-      class OptimizationData;
-    }
     namespace random {
       class RandomVectorGenerator;
+    }
+    namespace optim {
+      class OptimizationData;
     }
   }
 }
@@ -28,13 +28,13 @@ namespace org {
       class BaseMultiStartMultivariateOptimizer : public ::org::hipparchus::optim::BaseMultivariateOptimizer {
        public:
         enum {
-          mid_init$_fcc7d9e4c37aff65,
-          mid_getEvaluations_f2f64475e4580546,
-          mid_getOptima_e81d7907eea7e008,
-          mid_optimize_2543bc354d0aa7ca,
-          mid_doOptimize_dfd7647d9110ac9f,
-          mid_clear_7ae3461a92a43152,
-          mid_store_7ca0d9438822cb0b,
+          mid_init$_21803bda49e8e21c,
+          mid_getEvaluations_570ce0828f81a2c1,
+          mid_getOptima_b93c730013ce64c6,
+          mid_optimize_19319236ce3fd082,
+          mid_doOptimize_4d26fd885228c716,
+          mid_clear_0fa09c18fee449d5,
+          mid_store_2990946c992aafed,
           max_mid
         };
 

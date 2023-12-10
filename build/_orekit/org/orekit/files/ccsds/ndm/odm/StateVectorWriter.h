@@ -37,8 +37,8 @@ namespace org {
             class StateVectorWriter : public ::org::orekit::files::ccsds::section::AbstractWriter {
              public:
               enum {
-                mid_init$_f48479c2fcc7550c,
-                mid_writeContent_fb36c2e4ae059ab9,
+                mid_init$_efcfd9fdf03af9a9,
+                mid_writeContent_6d745cf7b26e9f5d,
                 max_mid
               };
 

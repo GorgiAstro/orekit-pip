@@ -3,6 +3,37 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
+  namespace orekit {
+    namespace propagation {
+      class FieldBoundedPropagator;
+      namespace sampling {
+        class FieldStepHandlerMultiplexer;
+      }
+      class FieldSpacecraftState;
+      class FieldEphemerisGenerator;
+      class FieldAdditionalStateProvider;
+      namespace events {
+        class FieldEventDetector;
+      }
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+    }
+    namespace utils {
+      class TimeStampedFieldPVCoordinates;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -14,37 +45,6 @@ namespace java {
     class String;
   }
 }
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace sampling {
-        class FieldStepHandlerMultiplexer;
-      }
-      class FieldBoundedPropagator;
-      namespace events {
-        class FieldEventDetector;
-      }
-      class FieldEphemerisGenerator;
-      class FieldSpacecraftState;
-      class FieldAdditionalStateProvider;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-    namespace utils {
-      class TimeStampedFieldPVCoordinates;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -54,30 +54,30 @@ namespace org {
       class PythonFieldBoundedPropagator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_addAdditionalStateProvider_a97b38ef37f9ad9f,
-          mid_addEventDetector_1843b26af41f9c8e,
-          mid_clearEventsDetectors_7ae3461a92a43152,
-          mid_finalize_7ae3461a92a43152,
-          mid_getAdditionalStateProviders_a6156df500549a58,
-          mid_getAttitudeProvider_5cce95036ae870ba,
-          mid_getEphemerisGenerator_a9ea70419e870eb4,
-          mid_getEventsDetectors_cfcfd130f9013e3e,
-          mid_getFrame_c8fe21bcdac65bf6,
-          mid_getInitialState_a553824829fc2514,
-          mid_getManagedAdditionalStates_0f62ccf08eef5924,
-          mid_getMaxDate_09b0a926600dfc14,
-          mid_getMinDate_09b0a926600dfc14,
-          mid_getMultiplexer_e40bff2c3349a3fd,
-          mid_getPVCoordinates_0e277b7d6a64b75a,
-          mid_isAdditionalStateManaged_6b161f495ea569b8,
-          mid_propagate_85b5a3e9101d7c1f,
-          mid_propagate_195e701ebc75aca3,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
-          mid_resetInitialState_52154b94d63e10ed,
-          mid_setAttitudeProvider_8109c1a27d4471d3,
+          mid_init$_0fa09c18fee449d5,
+          mid_addAdditionalStateProvider_2c8cec257f03501f,
+          mid_addEventDetector_f929ebd2a84dbfe7,
+          mid_clearEventsDetectors_0fa09c18fee449d5,
+          mid_finalize_0fa09c18fee449d5,
+          mid_getAdditionalStateProviders_2afa36052df4765d,
+          mid_getAttitudeProvider_a904f3d015a354a0,
+          mid_getEphemerisGenerator_54ac43f1e933cf20,
+          mid_getEventsDetectors_37528d110cff6b74,
+          mid_getFrame_b86f9f61d97a7244,
+          mid_getInitialState_02cea343d9f71933,
+          mid_getManagedAdditionalStates_692f4257baa8d3c3,
+          mid_getMaxDate_51da00d5b8a3b5df,
+          mid_getMinDate_51da00d5b8a3b5df,
+          mid_getMultiplexer_805c1ec2ab9b09dd,
+          mid_getPVCoordinates_2cdae1c350dc3e9a,
+          mid_isAdditionalStateManaged_7edad2c2f64f4d68,
+          mid_propagate_f6f1ea8aef3019eb,
+          mid_propagate_fc770c29e3468de8,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
+          mid_resetInitialState_1463d3d0d52f94dd,
+          mid_setAttitudeProvider_3cff7c75ea06698c,
           max_mid
         };
 

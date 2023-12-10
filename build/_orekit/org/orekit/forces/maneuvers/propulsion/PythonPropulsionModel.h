@@ -4,7 +4,26 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
+    namespace attitudes {
+      class Attitude;
+      class FieldAttitude;
+    }
     namespace forces {
       namespace maneuvers {
         namespace propulsion {
@@ -13,31 +32,12 @@ namespace org {
         class Control3DVectorCostType;
       }
     }
-    namespace attitudes {
-      class Attitude;
-      class FieldAttitude;
+    namespace time {
+      class AbsoluteDate;
     }
     namespace utils {
       class ParameterDriver;
     }
-    namespace propagation {
-      class SpacecraftState;
-      class FieldSpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -61,19 +61,19 @@ namespace org {
           class PythonPropulsionModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_finalize_7ae3461a92a43152,
-              mid_getAcceleration_be3781a72bd4ba13,
-              mid_getAcceleration_64acd703c3b3c863,
-              mid_getControl3DVectorCostType_9fb96072e0d6dbf0,
-              mid_getMassDerivatives_4368a5d862927c08,
-              mid_getMassDerivatives_79518d097c897d26,
-              mid_getName_0090f7797e403f43,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_init_3d13474d79f5e7bc,
-              mid_pythonDecRef_7ae3461a92a43152,
-              mid_pythonExtension_a27fc9afd27e559d,
-              mid_pythonExtension_fefb08975c10f0a1,
+              mid_init$_0fa09c18fee449d5,
+              mid_finalize_0fa09c18fee449d5,
+              mid_getAcceleration_a6c71e83efaf48d0,
+              mid_getAcceleration_19f36cd1a0a8b9bf,
+              mid_getControl3DVectorCostType_67739b20d9566a8c,
+              mid_getMassDerivatives_0b7191d207b9680f,
+              mid_getMassDerivatives_8bdf60d5551eceaf,
+              mid_getName_11b109bd155ca898,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_init_826b4eda94da4e78,
+              mid_pythonDecRef_0fa09c18fee449d5,
+              mid_pythonExtension_492808a339bfa35f,
+              mid_pythonExtension_3a8e7649f31fdb20,
               max_mid
             };
 
@@ -91,8 +91,8 @@ namespace org {
             PythonPropulsionModel();
 
             void finalize() const;
-            ::org::hipparchus::geometry::euclidean::threed::FieldVector3D getAcceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::attitudes::FieldAttitude &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
             ::org::hipparchus::geometry::euclidean::threed::Vector3D getAcceleration(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::attitudes::Attitude &, const JArray< jdouble > &) const;
+            ::org::hipparchus::geometry::euclidean::threed::FieldVector3D getAcceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::attitudes::FieldAttitude &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
             ::org::orekit::forces::maneuvers::Control3DVectorCostType getControl3DVectorCostType() const;
             jdouble getMassDerivatives(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
             ::org::hipparchus::CalculusFieldElement getMassDerivatives(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;

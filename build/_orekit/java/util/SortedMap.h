@@ -5,9 +5,9 @@
 
 namespace java {
   namespace util {
-    class SortedMap;
     class Map$Entry;
     class Comparator;
+    class SortedMap;
     class Collection;
     class Set;
   }
@@ -24,15 +24,15 @@ namespace java {
     class SortedMap : public ::java::util::Map {
      public:
       enum {
-        mid_comparator_838794f9a43cf98e,
-        mid_entrySet_e9e1a6780fe94297,
-        mid_firstKey_dfd7647d9110ac9f,
-        mid_headMap_bdec4bc419d678c0,
-        mid_keySet_e9e1a6780fe94297,
-        mid_lastKey_dfd7647d9110ac9f,
-        mid_subMap_a46755e50d8df53f,
-        mid_tailMap_bdec4bc419d678c0,
-        mid_values_cfcfd130f9013e3e,
+        mid_comparator_96e45e3694fbbb22,
+        mid_entrySet_015730311a5bacdc,
+        mid_firstKey_4d26fd885228c716,
+        mid_headMap_ee1ff50116f0ffac,
+        mid_keySet_015730311a5bacdc,
+        mid_lastKey_4d26fd885228c716,
+        mid_subMap_3d23d8a4bccdf58a,
+        mid_tailMap_ee1ff50116f0ffac,
+        mid_values_37528d110cff6b74,
         max_mid
       };
 

@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
-    namespace util {
-      class Incrementor$MaxCountExceededCallback;
-      class IterationListener;
-      class IterationEvent;
-    }
     namespace exception {
       class MathIllegalStateException;
+    }
+    namespace util {
+      class IterationListener;
+      class IterationEvent;
+      class Incrementor$MaxCountExceededCallback;
     }
   }
 }
@@ -29,18 +29,18 @@ namespace org {
       class IterationManager : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0a2a1ac2721c0336,
-          mid_init$_929833d91a321b2f,
-          mid_addIterationListener_fed7170d694f54c3,
-          mid_fireInitializationEvent_71cb46270a31ceff,
-          mid_fireIterationPerformedEvent_71cb46270a31ceff,
-          mid_fireIterationStartedEvent_71cb46270a31ceff,
-          mid_fireTerminationEvent_71cb46270a31ceff,
-          mid_getIterations_f2f64475e4580546,
-          mid_getMaxIterations_f2f64475e4580546,
-          mid_incrementIterationCount_7ae3461a92a43152,
-          mid_removeIterationListener_fed7170d694f54c3,
-          mid_resetIterationCount_7ae3461a92a43152,
+          mid_init$_99803b0791f320ff,
+          mid_init$_64a8f945b6007642,
+          mid_addIterationListener_ec6f037c8dacda1d,
+          mid_fireInitializationEvent_5d333913f82828b1,
+          mid_fireIterationPerformedEvent_5d333913f82828b1,
+          mid_fireIterationStartedEvent_5d333913f82828b1,
+          mid_fireTerminationEvent_5d333913f82828b1,
+          mid_getIterations_570ce0828f81a2c1,
+          mid_getMaxIterations_570ce0828f81a2c1,
+          mid_incrementIterationCount_0fa09c18fee449d5,
+          mid_removeIterationListener_ec6f037c8dacda1d,
+          mid_resetIterationCount_0fa09c18fee449d5,
           max_mid
         };
 

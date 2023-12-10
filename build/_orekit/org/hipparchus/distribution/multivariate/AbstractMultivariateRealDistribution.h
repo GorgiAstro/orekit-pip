@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace distribution {
       class MultivariateRealDistribution;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,10 +25,10 @@ namespace org {
         class AbstractMultivariateRealDistribution : public ::java::lang::Object {
          public:
           enum {
-            mid_getDimension_f2f64475e4580546,
-            mid_reseedRandomGenerator_fefb08975c10f0a1,
-            mid_sample_7cdc325af0834901,
-            mid_sample_01d6404243df74a0,
+            mid_getDimension_570ce0828f81a2c1,
+            mid_reseedRandomGenerator_3a8e7649f31fdb20,
+            mid_sample_60c7040667a7dc5c,
+            mid_sample_d3e8f395184a4338,
             max_mid
           };
 

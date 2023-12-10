@@ -3,34 +3,22 @@
 
 #include "org/orekit/propagation/conversion/AbstractPropagatorBuilder.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class Object;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace forces {
-      namespace gravity {
-        namespace potential {
-          class UnnormalizedSphericalHarmonicsProvider;
-          class TideSystem;
-        }
-      }
+    namespace orbits {
+      class PositionAngleType;
+      class Orbit;
+      class OrbitType;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
     }
     namespace propagation {
-      class Propagator;
       namespace conversion {
         class PropagatorBuilder;
         class EcksteinHechlerPropagatorBuilder;
       }
-    }
-    namespace attitudes {
-      class AttitudeProvider;
+      class Propagator;
     }
     namespace estimation {
       namespace leastsquares {
@@ -41,14 +29,26 @@ namespace org {
         class ObservedMeasurement;
       }
     }
-    namespace orbits {
-      class Orbit;
-      class PositionAngleType;
-      class OrbitType;
+    namespace forces {
+      namespace gravity {
+        namespace potential {
+          class UnnormalizedSphericalHarmonicsProvider;
+          class TideSystem;
+        }
+      }
     }
     namespace utils {
       class ParameterDriversList;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class Object;
   }
 }
 template<class T> class JArray;
@@ -61,12 +61,12 @@ namespace org {
         class EcksteinHechlerPropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_e3f3e7754a5968a8,
-            mid_init$_65bc834f2dce0071,
-            mid_init$_fee8ba5a875e46f1,
-            mid_buildLeastSquaresModel_31c4fcde5bc19fc3,
-            mid_buildPropagator_d397e255f9fb16e6,
-            mid_copy_a3a1c2f8eec725a0,
+            mid_init$_79d33b712eca09e6,
+            mid_init$_8c697f63edb41aec,
+            mid_init$_a9fd3db9acd028e4,
+            mid_buildLeastSquaresModel_2eb3122719704f90,
+            mid_buildPropagator_0c183831cad84280,
+            mid_copy_d4cfcf1c00a12618,
             max_mid
           };
 

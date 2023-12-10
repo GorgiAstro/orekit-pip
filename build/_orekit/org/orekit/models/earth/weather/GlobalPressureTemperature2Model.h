@@ -5,20 +5,20 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeScale;
-      class AbsoluteDate;
-    }
     namespace models {
       namespace earth {
-        class Geoid;
         namespace weather {
           class WeatherModel;
         }
+        class Geoid;
       }
     }
     namespace data {
       class DataProvidersManager;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeScale;
     }
   }
 }
@@ -39,14 +39,14 @@ namespace org {
           class GlobalPressureTemperature2Model : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_59b52385712e2119,
-              mid_init$_e6884b0e87afb0fe,
-              mid_init$_8ad78bbe55a6bdaf,
-              mid_getA_7cdc325af0834901,
-              mid_getPressure_456d9a2f64d6b28d,
-              mid_getTemperature_456d9a2f64d6b28d,
-              mid_getWaterVaporPressure_456d9a2f64d6b28d,
-              mid_weatherParameters_82dcc83e88ee1b1f,
+              mid_init$_19e8fabe7fac9f6f,
+              mid_init$_b0686cbcd452eabf,
+              mid_init$_9192b414c25d017b,
+              mid_getA_60c7040667a7dc5c,
+              mid_getPressure_dff5885c2c873297,
+              mid_getTemperature_dff5885c2c873297,
+              mid_getWaterVaporPressure_dff5885c2c873297,
+              mid_weatherParameters_a7786d9d355d3792,
               max_mid
             };
 

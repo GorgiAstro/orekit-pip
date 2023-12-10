@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathIllegalArgumentException;
       class NullArgumentException;
+      class MathIllegalArgumentException;
     }
     namespace analysis {
       class MultivariateFunction;
@@ -29,7 +29,7 @@ namespace org {
         class MultivariateInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_interpolate_ca62b9640059ffa6,
+            mid_interpolate_ade864ba8b3d9956,
             max_mid
           };
 

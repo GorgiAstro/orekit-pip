@@ -21,10 +21,10 @@ namespace org {
               class HansenTesseralLinear : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_863ad0cd78e98df4,
-                  mid_computeInitValues_d0d6094fbd7015c5,
-                  mid_getDerivative_31332242d1624d2c,
-                  mid_getValue_31332242d1624d2c,
+                  mid_init$_602d537927d23d46,
+                  mid_computeInitValues_2c56b6dd4d4b1dec,
+                  mid_getDerivative_60d7624725a52590,
+                  mid_getValue_60d7624725a52590,
                   max_mid
                 };
 

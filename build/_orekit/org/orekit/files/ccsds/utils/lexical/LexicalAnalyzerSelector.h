@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace data {
@@ -27,6 +19,14 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace io {
+    class IOException;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -39,7 +39,7 @@ namespace org {
             class LexicalAnalyzerSelector : public ::java::lang::Object {
              public:
               enum {
-                mid_select_a2c53fc310942aa2,
+                mid_select_7d53572d5e02d65f,
                 max_mid
               };
 

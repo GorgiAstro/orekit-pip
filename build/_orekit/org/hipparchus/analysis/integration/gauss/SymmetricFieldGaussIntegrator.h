@@ -5,15 +5,15 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
+    namespace util {
+      class Pair;
+    }
     namespace exception {
       class MathIllegalArgumentException;
     }
-    class CalculusFieldElement;
     namespace analysis {
       class CalculusFieldUnivariateFunction;
-    }
-    namespace util {
-      class Pair;
     }
   }
 }
@@ -33,9 +33,9 @@ namespace org {
           class SymmetricFieldGaussIntegrator : public ::org::hipparchus::analysis::integration::gauss::FieldGaussIntegrator {
            public:
             enum {
-              mid_init$_832c28cb3cc4d660,
-              mid_init$_44f58eee1ec38a36,
-              mid_integrate_b58480964e3d2510,
+              mid_init$_3fca46bb93fd3e69,
+              mid_init$_cbc98e7d0c0477db,
+              mid_integrate_d4d4f68a6723feee,
               max_mid
             };
 

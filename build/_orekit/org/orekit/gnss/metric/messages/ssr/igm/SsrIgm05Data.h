@@ -38,12 +38,12 @@ namespace org {
               class SsrIgm05Data : public ::org::orekit::gnss::metric::messages::ssr::igm::SsrIgmData {
                public:
                 enum {
-                  mid_init$_7ae3461a92a43152,
-                  mid_addCodeBias_1701d66fba3cf0af,
-                  mid_getCodeBias_70d8f10d6f500de3,
-                  mid_getCodeBiases_d6753b7055940a54,
-                  mid_getNumberOfBiasesProcessed_f2f64475e4580546,
-                  mid_setNumberOfBiasesProcessed_0a2a1ac2721c0336,
+                  mid_init$_0fa09c18fee449d5,
+                  mid_addCodeBias_9c9697fec23db7de,
+                  mid_getCodeBias_017463b439db258e,
+                  mid_getCodeBiases_6f5a75ccd8c04465,
+                  mid_getNumberOfBiasesProcessed_570ce0828f81a2c1,
+                  mid_setNumberOfBiasesProcessed_99803b0791f320ff,
                   max_mid
                 };
 

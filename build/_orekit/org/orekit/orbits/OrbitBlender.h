@@ -4,6 +4,13 @@
 #include "org/orekit/orbits/AbstractOrbitInterpolator.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace analysis {
+      namespace polynomials {
+        class SmoothStepFactory$SmoothStepFunction;
+      }
+    }
+  }
   namespace orekit {
     namespace frames {
       class Frame;
@@ -13,13 +20,6 @@ namespace org {
     }
     namespace orbits {
       class Orbit;
-    }
-  }
-  namespace hipparchus {
-    namespace analysis {
-      namespace polynomials {
-        class SmoothStepFactory$SmoothStepFunction;
-      }
     }
   }
 }
@@ -37,8 +37,8 @@ namespace org {
       class OrbitBlender : public ::org::orekit::orbits::AbstractOrbitInterpolator {
        public:
         enum {
-          mid_init$_545844d9d4fdc0a8,
-          mid_interpolate_8f43113475f73463,
+          mid_init$_6c77d9d7589928e2,
+          mid_interpolate_1274df0c3ddd4327,
           max_mid
         };
 

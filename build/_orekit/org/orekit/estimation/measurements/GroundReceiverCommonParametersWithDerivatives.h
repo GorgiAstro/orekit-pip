@@ -3,6 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class Map;
+  }
+  namespace lang {
+    class Integer;
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace analysis {
@@ -12,25 +22,15 @@ namespace org {
     }
   }
   namespace orekit {
+    namespace frames {
+      class FieldTransform;
+    }
     namespace utils {
       class TimeStampedFieldPVCoordinates;
     }
     namespace propagation {
       class SpacecraftState;
     }
-    namespace frames {
-      class FieldTransform;
-    }
-  }
-}
-namespace java {
-  namespace util {
-    class Map;
-  }
-  namespace lang {
-    class Integer;
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -43,14 +43,14 @@ namespace org {
         class GroundReceiverCommonParametersWithDerivatives : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_c9c35894bdb8cda2,
-            mid_getIndices_d6753b7055940a54,
-            mid_getOffsetToInertialDownlink_b8bdad2f73e0bf7c,
-            mid_getState_dd3e4a8d51055f1f,
-            mid_getStationDownlink_26447a781aafdb9e,
-            mid_getTauD_4ed8e234724fadba,
-            mid_getTransitPV_26447a781aafdb9e,
-            mid_getTransitState_dd3e4a8d51055f1f,
+            mid_init$_cb17d21f7c118e74,
+            mid_getIndices_6f5a75ccd8c04465,
+            mid_getOffsetToInertialDownlink_8c35d0b6fdd377c3,
+            mid_getState_c6311115fea01a34,
+            mid_getStationDownlink_f89522ff77904397,
+            mid_getTauD_cc2f4e0a456f51de,
+            mid_getTransitPV_f89522ff77904397,
+            mid_getTransitState_c6311115fea01a34,
             max_mid
           };
 

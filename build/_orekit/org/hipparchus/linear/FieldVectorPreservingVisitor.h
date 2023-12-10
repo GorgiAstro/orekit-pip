@@ -22,9 +22,9 @@ namespace org {
       class FieldVectorPreservingVisitor : public ::java::lang::Object {
        public:
         enum {
-          mid_end_7e89936bdf79375b,
-          mid_start_c80ec2f7d8b5fe87,
-          mid_visit_9dd724c9bf212c41,
+          mid_end_99097cb60cf2d774,
+          mid_start_8336200ef3dde36b,
+          mid_visit_2c97e4718ab5a1ad,
           max_mid
         };
 

@@ -16,25 +16,25 @@ namespace org {
     class Field;
   }
   namespace orekit {
-    namespace utils {
-      class PVCoordinates;
-      class FieldPVCoordinates;
-    }
     namespace frames {
-      class LOF;
-      class Transform;
       class FieldTransform;
+      class Transform;
+      class LOF;
     }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
+    namespace utils {
+      class FieldPVCoordinates;
+      class PVCoordinates;
     }
   }
 }
 namespace java {
   namespace lang {
-    class String;
     class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -46,20 +46,20 @@ namespace org {
       class LOF : public ::java::lang::Object {
        public:
         enum {
-          mid_getName_0090f7797e403f43,
-          mid_isQuasiInertial_e470b6d9e0d979db,
-          mid_rotationFromInertial_95b12e29918a648c,
-          mid_rotationFromInertial_346e8a02c9c839ea,
-          mid_rotationFromLOF_2ec698306e9b37ca,
-          mid_rotationFromLOF_4b952147e4e318b8,
-          mid_rotationFromLOFInToLOFOut_8ea5b3a117471cdf,
-          mid_rotationFromLOFInToLOFOut_9dd87494b0f9e748,
-          mid_transformFromInertial_5297631fe491fbbb,
-          mid_transformFromInertial_a489f9a3310608b1,
-          mid_transformFromLOF_d5579a18e868b96d,
-          mid_transformFromLOF_a9cbf0255b770c0c,
-          mid_transformFromLOFInToLOFOut_1a57e4ecea717a7f,
-          mid_transformFromLOFInToLOFOut_f733aa0af86dce16,
+          mid_getName_11b109bd155ca898,
+          mid_isQuasiInertial_b108b35ef48e27bd,
+          mid_rotationFromInertial_475182fd71c6851b,
+          mid_rotationFromInertial_076f35c1feeb36b3,
+          mid_rotationFromLOF_19113ef4e598287b,
+          mid_rotationFromLOF_8088d480809c18c4,
+          mid_rotationFromLOFInToLOFOut_42ccf97cd80cbf07,
+          mid_rotationFromLOFInToLOFOut_0e21e2ef6cf8e3e4,
+          mid_transformFromInertial_2f33e71311570caf,
+          mid_transformFromInertial_ebe03c8ec9572105,
+          mid_transformFromLOF_0bcf38086fabd19a,
+          mid_transformFromLOF_66098893b8c09c76,
+          mid_transformFromLOFInToLOFOut_8e8b5e9a81637430,
+          mid_transformFromLOFInToLOFOut_9504937c4fb78046,
           max_mid
         };
 
@@ -84,10 +84,10 @@ namespace org {
         static ::org::hipparchus::geometry::euclidean::threed::FieldRotation rotationFromLOFInToLOFOut(const ::org::hipparchus::Field &, const LOF &, const LOF &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::utils::FieldPVCoordinates &);
         ::org::orekit::frames::Transform transformFromInertial(const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::utils::PVCoordinates &) const;
         ::org::orekit::frames::FieldTransform transformFromInertial(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::utils::FieldPVCoordinates &) const;
-        ::org::orekit::frames::Transform transformFromLOF(const LOF &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::utils::PVCoordinates &) const;
         ::org::orekit::frames::FieldTransform transformFromLOF(const LOF &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::utils::FieldPVCoordinates &) const;
-        static ::org::orekit::frames::FieldTransform transformFromLOFInToLOFOut(const LOF &, const LOF &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::utils::FieldPVCoordinates &);
+        ::org::orekit::frames::Transform transformFromLOF(const LOF &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::utils::PVCoordinates &) const;
         static ::org::orekit::frames::Transform transformFromLOFInToLOFOut(const LOF &, const LOF &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::utils::PVCoordinates &);
+        static ::org::orekit::frames::FieldTransform transformFromLOFInToLOFOut(const LOF &, const LOF &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::utils::FieldPVCoordinates &);
       };
     }
   }

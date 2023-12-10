@@ -4,36 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace time {
-      class FieldTimeStamped;
-      class FieldAbsoluteDate;
-      class FieldTimeShiftable;
-    }
-    namespace frames {
-      class FieldStaticTransform;
-      class Frame;
-      class FieldTransform;
-    }
-    namespace propagation {
-      class SpacecraftState;
-      class FieldSpacecraftState;
-    }
-    namespace attitudes {
-      class FieldAttitude;
-    }
-    namespace utils {
-      class TimeStampedFieldPVCoordinates;
-      class FieldArrayDictionary;
-      class FieldAbsolutePVCoordinates;
-    }
-    namespace orbits {
-      class FieldOrbit;
-    }
-    namespace errors {
-      class OrekitIllegalStateException;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -42,11 +12,41 @@ namespace org {
         }
       }
     }
+    class Field;
     namespace exception {
       class MathIllegalArgumentException;
     }
     class CalculusFieldElement;
-    class Field;
+  }
+  namespace orekit {
+    namespace time {
+      class FieldTimeShiftable;
+      class FieldTimeStamped;
+      class FieldAbsoluteDate;
+    }
+    namespace orbits {
+      class FieldOrbit;
+    }
+    namespace utils {
+      class FieldAbsolutePVCoordinates;
+      class FieldArrayDictionary;
+      class TimeStampedFieldPVCoordinates;
+    }
+    namespace propagation {
+      class SpacecraftState;
+      class FieldSpacecraftState;
+    }
+    namespace frames {
+      class FieldStaticTransform;
+      class FieldTransform;
+      class Frame;
+    }
+    namespace errors {
+      class OrekitIllegalStateException;
+    }
+    namespace attitudes {
+      class FieldAttitude;
+    }
   }
 }
 namespace java {
@@ -65,64 +65,64 @@ namespace org {
       class FieldSpacecraftState : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_207b94fac60a45a2,
-          mid_init$_b6fb4d19a77f9888,
-          mid_init$_a95776d1a327f352,
-          mid_init$_340b44ce3adcd347,
-          mid_init$_b580df984d5f7410,
-          mid_init$_db9faae4419851ef,
-          mid_init$_4a70c10463d10a80,
-          mid_init$_adb1719b0dda6ffc,
-          mid_init$_0ff01d32a7a845d7,
-          mid_init$_3675c39f0608ea8e,
-          mid_init$_5ba0288050718eff,
-          mid_init$_73725e657fc73da1,
-          mid_init$_4084a3223f2fadcf,
-          mid_init$_de4e72437e35c7c1,
-          mid_init$_b021bd77c3e69cd3,
-          mid_init$_c0b61e00e60f33ed,
-          mid_init$_15521286cb6a5a8f,
-          mid_init$_0e01f87f8415d2b6,
-          mid_init$_110be372c3208494,
-          mid_addAdditionalState_446c7fca4b71946c,
-          mid_addAdditionalStateDerivative_446c7fca4b71946c,
-          mid_ensureCompatibleAdditionalStates_52154b94d63e10ed,
-          mid_getA_e6d4d3215c30992a,
-          mid_getAbsPVA_e4b6a56989293962,
-          mid_getAdditionalState_7ff62b68d24a340b,
-          mid_getAdditionalStateDerivative_7ff62b68d24a340b,
-          mid_getAdditionalStatesDerivatives_a517063e6ce1cd85,
-          mid_getAdditionalStatesValues_a517063e6ce1cd85,
-          mid_getAttitude_f68321fa097ad8b5,
-          mid_getDate_09b0a926600dfc14,
-          mid_getE_e6d4d3215c30992a,
-          mid_getEquinoctialEx_e6d4d3215c30992a,
-          mid_getEquinoctialEy_e6d4d3215c30992a,
-          mid_getFrame_c8fe21bcdac65bf6,
-          mid_getHx_e6d4d3215c30992a,
-          mid_getHy_e6d4d3215c30992a,
-          mid_getI_e6d4d3215c30992a,
-          mid_getKeplerianMeanMotion_e6d4d3215c30992a,
-          mid_getKeplerianPeriod_e6d4d3215c30992a,
-          mid_getLE_e6d4d3215c30992a,
-          mid_getLM_e6d4d3215c30992a,
-          mid_getLv_e6d4d3215c30992a,
-          mid_getMass_e6d4d3215c30992a,
-          mid_getMu_e6d4d3215c30992a,
-          mid_getOrbit_2f26cad5f478f007,
-          mid_getPVCoordinates_26447a781aafdb9e,
-          mid_getPVCoordinates_485af6605091d545,
-          mid_getPosition_5791f80683b5227e,
-          mid_getPosition_863ec0d27d7d92bb,
-          mid_hasAdditionalState_6b161f495ea569b8,
-          mid_hasAdditionalStateDerivative_6b161f495ea569b8,
-          mid_isOrbitDefined_e470b6d9e0d979db,
-          mid_shiftedBy_474d49dada1799a5,
-          mid_shiftedBy_5f6943b547152f7d,
-          mid_toSpacecraftState_dd3e4a8d51055f1f,
-          mid_toStaticTransform_dd9256b23dabf6f6,
-          mid_toString_0090f7797e403f43,
-          mid_toTransform_b8bdad2f73e0bf7c,
+          mid_init$_8d21b6d6b6f8eddf,
+          mid_init$_1cbcb2601e7d1334,
+          mid_init$_c3d565e121a0fb47,
+          mid_init$_91582abfdd07b6a5,
+          mid_init$_e589ef57ecd550ef,
+          mid_init$_f9bebdb3c1000d13,
+          mid_init$_ae9dd7ac354b319f,
+          mid_init$_a3effa3dd188af62,
+          mid_init$_a724b159b42485f4,
+          mid_init$_cd823ed5229c0e49,
+          mid_init$_9ab7c84f99dca0e0,
+          mid_init$_f3aab0fb0829e4be,
+          mid_init$_116d360f2fab10d0,
+          mid_init$_462284fa79787ed0,
+          mid_init$_8c4ee5c10c5a1e32,
+          mid_init$_ae8b51e11cc27769,
+          mid_init$_6ddffbbe0d99a34d,
+          mid_init$_01c7dbb41f56cf2e,
+          mid_init$_3dd0dab955533973,
+          mid_addAdditionalState_ade1146235ecc059,
+          mid_addAdditionalStateDerivative_ade1146235ecc059,
+          mid_ensureCompatibleAdditionalStates_1463d3d0d52f94dd,
+          mid_getA_eba8e72a22c984ac,
+          mid_getAbsPVA_88db1a55f8ad67a5,
+          mid_getAdditionalState_f1183f1b2d548100,
+          mid_getAdditionalStateDerivative_f1183f1b2d548100,
+          mid_getAdditionalStatesDerivatives_a7763b9cf85435a1,
+          mid_getAdditionalStatesValues_a7763b9cf85435a1,
+          mid_getAttitude_710d0a4d1c9c9313,
+          mid_getDate_51da00d5b8a3b5df,
+          mid_getE_eba8e72a22c984ac,
+          mid_getEquinoctialEx_eba8e72a22c984ac,
+          mid_getEquinoctialEy_eba8e72a22c984ac,
+          mid_getFrame_b86f9f61d97a7244,
+          mid_getHx_eba8e72a22c984ac,
+          mid_getHy_eba8e72a22c984ac,
+          mid_getI_eba8e72a22c984ac,
+          mid_getKeplerianMeanMotion_eba8e72a22c984ac,
+          mid_getKeplerianPeriod_eba8e72a22c984ac,
+          mid_getLE_eba8e72a22c984ac,
+          mid_getLM_eba8e72a22c984ac,
+          mid_getLv_eba8e72a22c984ac,
+          mid_getMass_eba8e72a22c984ac,
+          mid_getMu_eba8e72a22c984ac,
+          mid_getOrbit_71338e41eb93eedd,
+          mid_getPVCoordinates_f89522ff77904397,
+          mid_getPVCoordinates_f7bcbf2fe13428b6,
+          mid_getPosition_716f50c86ffc8da7,
+          mid_getPosition_f336610fe073f215,
+          mid_hasAdditionalState_7edad2c2f64f4d68,
+          mid_hasAdditionalStateDerivative_7edad2c2f64f4d68,
+          mid_isOrbitDefined_b108b35ef48e27bd,
+          mid_shiftedBy_7712f88e5d66acc0,
+          mid_shiftedBy_8963827f6b4701f6,
+          mid_toSpacecraftState_c6311115fea01a34,
+          mid_toStaticTransform_b4e9bd069b43219a,
+          mid_toString_11b109bd155ca898,
+          mid_toTransform_8c35d0b6fdd377c3,
           max_mid
         };
 
@@ -144,8 +144,8 @@ namespace org {
         FieldSpacecraftState(const ::org::orekit::utils::FieldAbsolutePVCoordinates &, const ::org::hipparchus::CalculusFieldElement &);
         FieldSpacecraftState(const ::org::orekit::orbits::FieldOrbit &, const ::org::orekit::attitudes::FieldAttitude &);
         FieldSpacecraftState(const ::org::orekit::orbits::FieldOrbit &, const ::org::orekit::utils::FieldArrayDictionary &);
-        FieldSpacecraftState(const ::org::orekit::orbits::FieldOrbit &, const ::org::hipparchus::CalculusFieldElement &);
         FieldSpacecraftState(const ::org::hipparchus::Field &, const ::org::orekit::propagation::SpacecraftState &);
+        FieldSpacecraftState(const ::org::orekit::orbits::FieldOrbit &, const ::org::hipparchus::CalculusFieldElement &);
         FieldSpacecraftState(const ::org::orekit::utils::FieldAbsolutePVCoordinates &, const ::org::orekit::attitudes::FieldAttitude &, const ::org::orekit::utils::FieldArrayDictionary &);
         FieldSpacecraftState(const ::org::orekit::utils::FieldAbsolutePVCoordinates &, const ::org::orekit::attitudes::FieldAttitude &, const ::org::hipparchus::CalculusFieldElement &);
         FieldSpacecraftState(const ::org::orekit::utils::FieldAbsolutePVCoordinates &, const ::org::hipparchus::CalculusFieldElement &, const ::org::orekit::utils::FieldArrayDictionary &);

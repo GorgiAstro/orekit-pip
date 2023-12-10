@@ -21,7 +21,7 @@ namespace org {
       class DataSource$StreamOpener : public ::java::lang::Object {
        public:
         enum {
-          mid_openOnce_eafcb03912e8859c,
+          mid_openOnce_51fdc45647b8e866,
           max_mid
         };
 

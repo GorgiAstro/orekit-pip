@@ -13,32 +13,27 @@ namespace org {
         }
       }
     }
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
   namespace orekit {
-    namespace utils {
-      class TimeSpanMap;
-      class TimeSpanMap$Span;
-      class ParameterDriver;
-    }
-    namespace forces {
-      namespace drag {
-        class DragSensitive;
-      }
-    }
-    namespace propagation {
-      class SpacecraftState;
-      class FieldSpacecraftState;
-      namespace events {
-        class EventDetector;
-        class FieldEventDetector;
-      }
-    }
     namespace time {
       class AbsoluteDate;
       class FieldAbsoluteDate;
       class TimeScale;
+    }
+    namespace propagation {
+      namespace events {
+        class FieldEventDetector;
+        class EventDetector;
+      }
+      class SpacecraftState;
+      class FieldSpacecraftState;
+    }
+    namespace utils {
+      class TimeSpanMap$Span;
+      class ParameterDriver;
+      class TimeSpanMap;
     }
     namespace models {
       namespace earth {
@@ -47,18 +42,23 @@ namespace org {
         }
       }
     }
+    namespace forces {
+      namespace drag {
+        class DragSensitive;
+      }
+    }
   }
 }
 namespace java {
+  namespace lang {
+    class Class;
+    class String;
+  }
   namespace util {
     namespace stream {
       class Stream;
     }
     class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -71,21 +71,21 @@ namespace org {
         class TimeSpanDragForce : public ::org::orekit::forces::drag::AbstractDragForceModel {
          public:
           enum {
-            mid_init$_9d49a06389f1e886,
-            mid_init$_bea16ae8e365aa2e,
-            mid_acceleration_78989e44b99f7cc2,
-            mid_acceleration_00aba28d3abe9a8c,
-            mid_addDragSensitiveValidAfter_463b27ff4d36a75d,
-            mid_addDragSensitiveValidBefore_463b27ff4d36a75d,
-            mid_extractDragSensitiveRange_df7496d2771de2ea,
-            mid_extractParameters_d7d552e275320f67,
-            mid_extractParameters_8b177eb25e4eb468,
-            mid_getDragSensitive_6eefaebd1c71d9b8,
-            mid_getDragSensitiveSpan_e815c41e031d3908,
-            mid_getEventDetectors_a68a17dd093f796d,
-            mid_getFieldEventDetectors_1328ddb491531a35,
-            mid_getFirstSpan_39a1e35b17737f60,
-            mid_getParametersDrivers_a6156df500549a58,
+            mid_init$_47c8c3109a8b7c41,
+            mid_init$_55ce961c64ea54a7,
+            mid_acceleration_b42ac4b5bfb80fab,
+            mid_acceleration_8954761face5e1a7,
+            mid_addDragSensitiveValidAfter_4d838ef2b1c30430,
+            mid_addDragSensitiveValidBefore_4d838ef2b1c30430,
+            mid_extractDragSensitiveRange_56889532bb31616d,
+            mid_extractParameters_020d17bb8c285475,
+            mid_extractParameters_547c908eaeea187e,
+            mid_getDragSensitive_7254da19cc7a4040,
+            mid_getDragSensitiveSpan_561a18a65c5f000d,
+            mid_getEventDetectors_20f6d2b462aaef4b,
+            mid_getFieldEventDetectors_361313cd1a9c693a,
+            mid_getFirstSpan_971209c2bf2033e7,
+            mid_getParametersDrivers_2afa36052df4765d,
             max_mid
           };
 

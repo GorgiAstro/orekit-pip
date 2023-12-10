@@ -12,8 +12,8 @@ namespace org {
       class SpacecraftState;
     }
     namespace utils {
-      class PVCoordinates;
       class PVCoordinatesProvider;
+      class PVCoordinates;
     }
   }
 }
@@ -32,11 +32,11 @@ namespace org {
         class ExtremumApproachDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_16cee8786fe06864,
-            mid_computeDeltaPV_56b67c5aaa68aa03,
-            mid_g_66a2f071e6ed0c06,
-            mid_getSecondaryPVProvider_7044cb1966c8a481,
-            mid_create_d388bbc46e51cfc3,
+            mid_init$_36de6b722535732f,
+            mid_computeDeltaPV_dc9882cd5637079b,
+            mid_g_432f3d328c15ec82,
+            mid_getSecondaryPVProvider_903aca6bb4523e29,
+            mid_create_14bbdf1253de117f,
             max_mid
           };
 

@@ -3,25 +3,25 @@
 
 #include "org/orekit/time/AbstractTimeInterpolator.h"
 
-namespace org {
-  namespace orekit {
-    namespace frames {
-      class Frame;
-    }
-    namespace orbits {
-      class Orbit;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class Collection;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace frames {
+      class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace orbits {
+      class Orbit;
+    }
   }
 }
 template<class T> class JArray;
@@ -33,10 +33,10 @@ namespace org {
       class AbstractOrbitInterpolator : public ::org::orekit::time::AbstractTimeInterpolator {
        public:
         enum {
-          mid_init$_544055afce312742,
-          mid_checkOrbitsConsistency_26b3669ec54017ce,
-          mid_getOutputInertialFrame_c8fe21bcdac65bf6,
-          mid_interpolate_efb413e9abb8e0a2,
+          mid_init$_2ee482a4c6f42d96,
+          mid_checkOrbitsConsistency_f72f53318f80c525,
+          mid_getOutputInertialFrame_b86f9f61d97a7244,
+          mid_interpolate_df64ba85d4130bf6,
           max_mid
         };
 

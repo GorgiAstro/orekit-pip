@@ -3,11 +3,6 @@
 
 #include "org/hipparchus/analysis/integration/gauss/AbstractRuleFactory.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace analysis {
@@ -17,6 +12,11 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -30,8 +30,8 @@ namespace org {
           class ConvertingRuleFactory : public ::org::hipparchus::analysis::integration::gauss::AbstractRuleFactory {
            public:
             enum {
-              mid_init$_b58fecf01070c2b0,
-              mid_computeRule_086dd68d091255ed,
+              mid_init$_0b43fca6e1f0e767,
+              mid_computeRule_e670405dd33862ee,
               max_mid
             };
 

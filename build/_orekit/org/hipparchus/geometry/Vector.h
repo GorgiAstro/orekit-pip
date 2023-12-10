@@ -5,26 +5,26 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-      class MathRuntimeException;
-    }
-    namespace util {
-      class Blendable;
-    }
     namespace geometry {
       class Vector;
       class Space;
     }
+    namespace util {
+      class Blendable;
+    }
+    namespace exception {
+      class MathRuntimeException;
+      class MathIllegalArgumentException;
+    }
   }
 }
 namespace java {
+  namespace text {
+    class NumberFormat;
+  }
   namespace lang {
     class Class;
     class String;
-  }
-  namespace text {
-    class NumberFormat;
   }
 }
 template<class T> class JArray;
@@ -36,25 +36,25 @@ namespace org {
       class Vector : public ::org::hipparchus::geometry::Point {
        public:
         enum {
-          mid_add_a4e9d5f25d954f5d,
-          mid_add_d5eedea4a7ae5c23,
-          mid_blendArithmeticallyWith_dddc3b09788b0767,
-          mid_distance1_05fa5f52db18503d,
-          mid_distanceInf_05fa5f52db18503d,
-          mid_distanceSq_05fa5f52db18503d,
-          mid_dotProduct_05fa5f52db18503d,
-          mid_getNorm_456d9a2f64d6b28d,
-          mid_getNorm1_456d9a2f64d6b28d,
-          mid_getNormInf_456d9a2f64d6b28d,
-          mid_getNormSq_456d9a2f64d6b28d,
-          mid_getZero_d4a8fa15ffc65842,
-          mid_isInfinite_e470b6d9e0d979db,
-          mid_negate_d4a8fa15ffc65842,
-          mid_normalize_d4a8fa15ffc65842,
-          mid_scalarMultiply_8c76e50884ebab3b,
-          mid_subtract_a4e9d5f25d954f5d,
-          mid_subtract_d5eedea4a7ae5c23,
-          mid_toString_aed149be89fb33b9,
+          mid_add_9ced07f072dfcaa7,
+          mid_add_64eba3c66e57a4a3,
+          mid_blendArithmeticallyWith_645b75c05542df02,
+          mid_distance1_b4822d5266bca26e,
+          mid_distanceInf_b4822d5266bca26e,
+          mid_distanceSq_b4822d5266bca26e,
+          mid_dotProduct_b4822d5266bca26e,
+          mid_getNorm_dff5885c2c873297,
+          mid_getNorm1_dff5885c2c873297,
+          mid_getNormInf_dff5885c2c873297,
+          mid_getNormSq_dff5885c2c873297,
+          mid_getZero_2bc1acacbc156182,
+          mid_isInfinite_b108b35ef48e27bd,
+          mid_negate_2bc1acacbc156182,
+          mid_normalize_2bc1acacbc156182,
+          mid_scalarMultiply_a2f435d4493cecfc,
+          mid_subtract_9ced07f072dfcaa7,
+          mid_subtract_64eba3c66e57a4a3,
+          mid_toString_7b429db583278c20,
           max_mid
         };
 

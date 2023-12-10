@@ -3,12 +3,6 @@
 
 #include "org/orekit/time/TimeStamped.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-    class Comparable;
-  }
-}
 namespace org {
   namespace orekit {
     namespace estimation {
@@ -16,6 +10,12 @@ namespace org {
         class ComparableMeasurement;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
+    class Comparable;
   }
 }
 template<class T> class JArray;
@@ -28,8 +28,8 @@ namespace org {
         class ComparableMeasurement : public ::org::orekit::time::TimeStamped {
          public:
           enum {
-            mid_compareTo_5d68114462a4e82e,
-            mid_getObservedValue_7cdc325af0834901,
+            mid_compareTo_aa79741dc73b1207,
+            mid_getObservedValue_60c7040667a7dc5c,
             max_mid
           };
 

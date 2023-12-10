@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace ode {
       class ODEStateAndDerivative;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -30,11 +30,11 @@ namespace org {
       class EquationsMapper : public ::java::lang::Object {
        public:
         enum {
-          mid_extractEquationData_80b30eca57d4b68d,
-          mid_getNumberOfEquations_f2f64475e4580546,
-          mid_getTotalDimension_f2f64475e4580546,
-          mid_insertEquationData_36eab4ec72c89a55,
-          mid_mapStateAndDerivative_e891eead609e86c7,
+          mid_extractEquationData_a0c637c3f718550b,
+          mid_getNumberOfEquations_570ce0828f81a2c1,
+          mid_getTotalDimension_570ce0828f81a2c1,
+          mid_insertEquationData_adb6d52e6b8167e8,
+          mid_mapStateAndDerivative_6af71e5b97cf897b,
           max_mid
         };
 

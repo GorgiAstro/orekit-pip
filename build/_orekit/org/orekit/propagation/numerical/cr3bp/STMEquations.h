@@ -39,12 +39,12 @@ namespace org {
           class STMEquations : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_b154ccffb790db99,
-              mid_combinedDerivatives_32bde69742c0babb,
-              mid_getDimension_f2f64475e4580546,
-              mid_getName_0090f7797e403f43,
-              mid_getStateTransitionMatrix_63aee3ce1e412e46,
-              mid_setInitialPhi_81fc6fb6078d2aa7,
+              mid_init$_ec35a1651f7b6401,
+              mid_combinedDerivatives_4fc0958a0539e1d3,
+              mid_getDimension_570ce0828f81a2c1,
+              mid_getName_11b109bd155ca898,
+              mid_getStateTransitionMatrix_9483b2ac438718ce,
+              mid_setInitialPhi_f43130c50e9fafeb,
               max_mid
             };
 

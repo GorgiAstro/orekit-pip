@@ -4,21 +4,21 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace propagation {
       namespace sampling {
+        class FieldOrekitStepInterpolator;
         class FieldOrekitFixedStepHandler;
         class FieldOrekitStepHandler;
-        class FieldOrekitStepInterpolator;
       }
       class FieldSpacecraftState;
     }
     namespace time {
       class FieldAbsoluteDate;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -36,13 +36,13 @@ namespace org {
         class FieldOrekitStepNormalizer : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_d41b45a1d6944ab5,
-            mid_finish_52154b94d63e10ed,
-            mid_getFixedStepHandler_550251c6089b1a99,
-            mid_getFixedTimeStep_e6d4d3215c30992a,
-            mid_handleStep_9eedcf3b856fcc75,
-            mid_init_acdd8180a5dc1a8d,
-            mid_requiresDenseOutput_e470b6d9e0d979db,
+            mid_init$_465bcdb67e0beb29,
+            mid_finish_1463d3d0d52f94dd,
+            mid_getFixedStepHandler_59748327a655db59,
+            mid_getFixedTimeStep_eba8e72a22c984ac,
+            mid_handleStep_edb529c141e8d4a9,
+            mid_init_8e8de2be1664674a,
+            mid_requiresDenseOutput_b108b35ef48e27bd,
             max_mid
           };
 

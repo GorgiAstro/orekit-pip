@@ -5,10 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class AngularDerivativesFilter;
-      class CartesianDerivativesFilter;
-    }
     namespace frames {
       class TransformProvider;
       class FieldTransform;
@@ -17,6 +13,10 @@ namespace org {
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
+    }
+    namespace utils {
+      class AngularDerivativesFilter;
+      class CartesianDerivativesFilter;
     }
   }
 }
@@ -34,12 +34,12 @@ namespace org {
       class InterpolatingTransformProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7257d660d04722f8,
-          mid_getGridPoints_f2f64475e4580546,
-          mid_getRawProvider_9b4010550f8e9669,
-          mid_getStep_456d9a2f64d6b28d,
-          mid_getTransform_d55545a64ea4a9a7,
-          mid_getTransform_0b4f24249033b631,
+          mid_init$_720281015ac47b21,
+          mid_getGridPoints_570ce0828f81a2c1,
+          mid_getRawProvider_b22bdbe9f9cd12d5,
+          mid_getStep_dff5885c2c873297,
+          mid_getTransform_687985c59478d29c,
+          mid_getTransform_f7bf3269025b86c3,
           max_mid
         };
 

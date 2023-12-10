@@ -3,19 +3,13 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
-    class Field;
+    class CalculusFieldElement;
     namespace ode {
       class AbstractFieldIntegrator;
     }
-    class CalculusFieldElement;
+    class Field;
   }
   namespace orekit {
     namespace propagation {
@@ -30,6 +24,12 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -40,13 +40,13 @@ namespace org {
         class PythonFieldODEIntegratorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_buildIntegrator_071d3edeab1fa823,
-            mid_buildIntegrator_79616f78bb6df44f,
-            mid_finalize_7ae3461a92a43152,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
+            mid_init$_0fa09c18fee449d5,
+            mid_buildIntegrator_c6b1aa22e8585e91,
+            mid_buildIntegrator_048f7039a7622a2b,
+            mid_finalize_0fa09c18fee449d5,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
             max_mid
           };
 

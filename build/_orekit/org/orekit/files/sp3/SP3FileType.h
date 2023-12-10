@@ -28,10 +28,10 @@ namespace org {
         class SP3FileType : public ::java::lang::Enum {
          public:
           enum {
-            mid_getKey_0090f7797e403f43,
-            mid_parse_974354508add9316,
-            mid_valueOf_974354508add9316,
-            mid_values_7f4ea422c67401ce,
+            mid_getKey_11b109bd155ca898,
+            mid_parse_f8b642c646b141dd,
+            mid_valueOf_f8b642c646b141dd,
+            mid_values_0e6c1ea630c62684,
             max_mid
           };
 

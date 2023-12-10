@@ -38,11 +38,11 @@ namespace org {
           class RangeRateIonosphericDelayModifier : public ::org::orekit::estimation::measurements::modifiers::BaseRangeRateIonosphericDelayModifier {
            public:
             enum {
-              mid_init$_284d4a3af96a95d2,
-              mid_modify_a5896dbcbe782924,
-              mid_modifyWithoutDerivatives_811f96960c94c1de,
-              mid_rangeRateErrorIonosphericModel_452a588415b00924,
-              mid_rangeRateErrorIonosphericModel_79833a4daf329f8b,
+              mid_init$_c6707a208a39c405,
+              mid_modify_e4935e9a55e01fd8,
+              mid_modifyWithoutDerivatives_d1815d998cba71e9,
+              mid_rangeRateErrorIonosphericModel_03cd5a2e88a0f0f6,
+              mid_rangeRateErrorIonosphericModel_08d2a35aee39232b,
               max_mid
             };
 

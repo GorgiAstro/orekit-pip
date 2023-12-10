@@ -28,10 +28,10 @@ namespace org {
           class Duration : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_de8316969b81209c,
-              mid_getAdditionalState_137d7db4f3f987f7,
-              mid_getName_0090f7797e403f43,
-              mid_yields_97634138963fb58a,
+              mid_init$_3c57e287341c9288,
+              mid_getAdditionalState_cb44069ef445f941,
+              mid_getName_11b109bd155ca898,
+              mid_yields_680f8463a473c3cb,
               max_mid
             };
 

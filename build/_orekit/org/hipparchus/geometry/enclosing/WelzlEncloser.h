@@ -3,23 +3,23 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace enclosing {
-        class EnclosingBall;
-        class Encloser;
-        class SupportBallGenerator;
-      }
-      class Point;
-      class Space;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class Iterable;
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      class Point;
+      namespace enclosing {
+        class EnclosingBall;
+        class SupportBallGenerator;
+        class Encloser;
+      }
+      class Space;
+    }
   }
 }
 template<class T> class JArray;
@@ -32,9 +32,9 @@ namespace org {
         class WelzlEncloser : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_fb4c8f91478026fb,
-            mid_enclose_bae9cdfb16288f0e,
-            mid_selectFarthest_6a8e2f3846b1eb2d,
+            mid_init$_841d99db1dc71c2b,
+            mid_enclose_ab52cd1d30fd41e7,
+            mid_selectFarthest_8c9a589af2afc739,
             max_mid
           };
 

@@ -4,25 +4,25 @@
 #include "java/lang/Object.h"
 
 namespace java {
+  namespace util {
+    class Locale;
+  }
+  namespace text {
+    class NumberFormat;
+    class ParsePosition;
+    class FieldPosition;
+  }
   namespace lang {
     class StringBuffer;
     class Class;
     class String;
   }
-  namespace util {
-    class Locale;
-  }
-  namespace text {
-    class FieldPosition;
-    class ParsePosition;
-    class NumberFormat;
-  }
 }
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class RealMatrixFormat;
       class RealMatrix;
+      class RealMatrixFormat;
     }
   }
 }
@@ -35,24 +35,24 @@ namespace org {
       class RealMatrixFormat : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_init$_695a782f9c7823f6,
-          mid_init$_0ed06339391372ae,
-          mid_init$_2538090b505fb359,
-          mid_format_9b0089f0864a6e3c,
-          mid_format_30eab4431b0ccc57,
-          mid_getAvailableLocales_81e8fdf65840780c,
-          mid_getColumnSeparator_0090f7797e403f43,
-          mid_getFormat_d34e2e8dd35583a0,
-          mid_getPrefix_0090f7797e403f43,
-          mid_getRealMatrixFormat_781980547e5b377f,
-          mid_getRealMatrixFormat_5cf1d305e0489d9f,
-          mid_getRowPrefix_0090f7797e403f43,
-          mid_getRowSeparator_0090f7797e403f43,
-          mid_getRowSuffix_0090f7797e403f43,
-          mid_getSuffix_0090f7797e403f43,
-          mid_parse_9e86325e5f106865,
-          mid_parse_26cc2d1eb4cf3e9c,
+          mid_init$_0fa09c18fee449d5,
+          mid_init$_256f36a22c0d0f55,
+          mid_init$_0be9bb25c5e386d0,
+          mid_init$_57c74c547ec2ab35,
+          mid_format_e7aa5a6f1a34a6d6,
+          mid_format_6f7ed89c6879f780,
+          mid_getAvailableLocales_c5ed07ebd55821bb,
+          mid_getColumnSeparator_11b109bd155ca898,
+          mid_getFormat_24f83dea4a8657b1,
+          mid_getPrefix_11b109bd155ca898,
+          mid_getRealMatrixFormat_840dbe7816392c76,
+          mid_getRealMatrixFormat_f75c44444261c69a,
+          mid_getRowPrefix_11b109bd155ca898,
+          mid_getRowSeparator_11b109bd155ca898,
+          mid_getRowSuffix_11b109bd155ca898,
+          mid_getSuffix_11b109bd155ca898,
+          mid_parse_953cb7e531a567df,
+          mid_parse_9142c3e00ceede7e,
           max_mid
         };
 

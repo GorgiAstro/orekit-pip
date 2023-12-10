@@ -3,19 +3,19 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace utils {
       class ParameterDriver;
     }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,7 +27,7 @@ namespace org {
       class ParameterFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_value_01060f5a87e1d6cd,
+          mid_value_68971d186049f4f1,
           max_mid
         };
 

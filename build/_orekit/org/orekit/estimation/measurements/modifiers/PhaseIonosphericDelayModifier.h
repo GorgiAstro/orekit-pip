@@ -15,15 +15,15 @@ namespace org {
         class EstimationModifier;
       }
     }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace models {
       namespace earth {
         namespace ionosphere {
           class IonosphericModel;
         }
       }
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
 }
@@ -46,10 +46,10 @@ namespace org {
           class PhaseIonosphericDelayModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_70ec985998eac326,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_modify_a5896dbcbe782924,
-              mid_modifyWithoutDerivatives_811f96960c94c1de,
+              mid_init$_88af61602f29e4c4,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_modify_e4935e9a55e01fd8,
+              mid_modifyWithoutDerivatives_d1815d998cba71e9,
               max_mid
             };
 

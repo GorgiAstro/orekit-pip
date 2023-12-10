@@ -20,8 +20,8 @@ namespace java {
     class Locale$Category : public ::java::lang::Enum {
      public:
       enum {
-        mid_valueOf_41b22a2b1c930420,
-        mid_values_27b29be8fc0310e5,
+        mid_valueOf_3db19f5a3536e745,
+        mid_values_76952ad37d4f11e3,
         max_mid
       };
 

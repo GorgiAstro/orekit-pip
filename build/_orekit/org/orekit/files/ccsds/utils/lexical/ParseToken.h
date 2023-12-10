@@ -9,32 +9,32 @@ namespace org {
       namespace ccsds {
         namespace utils {
           namespace lexical {
-            class ParseToken$IndexedDoubleArrayConsumer;
-            class ParseToken$CenterListConsumer;
-            class ParseToken$LabeledDoubleConsumer;
-            class ParseToken$IntConsumer;
-            class ParseToken$ManeuvrableConsumer;
             class ParseToken$DoublyIndexedDoubleConsumer;
-            class ParseToken$IndexedIntConsumer;
-            class ParseToken$RotationOrderConsumer;
-            class ParseToken$CenterConsumer;
-            class ParseToken$TimeSystemConsumer;
-            class ParseToken$DoubleArrayConsumer;
-            class ParseToken$IndexedStringConsumer;
-            class ParseToken$StringConsumer;
-            class ParseToken$DoubleConsumer;
-            class ParseToken$EnumListConsumer;
-            class ParseToken$DateConsumer;
-            class ParseToken$IntegerArrayConsumer;
-            class ParseToken$FrameConsumer;
-            class ParseToken$StringListConsumer;
-            class ParseToken$EnumConsumer;
-            class ParseToken$CharConsumer;
-            class ParseToken$IndexedDoubleConsumer;
+            class ParseToken$IntConsumer;
             class ParseToken$VectorConsumer;
-            class ParseToken$BooleanConsumer;
             class ParseToken$UnitListConsumer;
             class TokenType;
+            class ParseToken$DateConsumer;
+            class ParseToken$RotationOrderConsumer;
+            class ParseToken$StringConsumer;
+            class ParseToken$IntegerArrayConsumer;
+            class ParseToken$TimeSystemConsumer;
+            class ParseToken$CenterConsumer;
+            class ParseToken$CenterListConsumer;
+            class ParseToken$ManeuvrableConsumer;
+            class ParseToken$IndexedStringConsumer;
+            class ParseToken$IndexedDoubleConsumer;
+            class ParseToken$EnumConsumer;
+            class ParseToken$StringListConsumer;
+            class ParseToken$EnumListConsumer;
+            class ParseToken$DoubleConsumer;
+            class ParseToken$DoubleArrayConsumer;
+            class ParseToken$IndexedIntConsumer;
+            class ParseToken$CharConsumer;
+            class ParseToken$BooleanConsumer;
+            class ParseToken$FrameConsumer;
+            class ParseToken$IndexedDoubleArrayConsumer;
+            class ParseToken$LabeledDoubleConsumer;
           }
           class ContextBinding;
         }
@@ -43,11 +43,11 @@ namespace org {
         }
       }
     }
-    namespace errors {
-      class OrekitException;
-    }
     namespace bodies {
       class CelestialBodies;
+    }
+    namespace errors {
+      class OrekitException;
     }
     namespace utils {
       namespace units {
@@ -88,57 +88,57 @@ namespace org {
             class ParseToken : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_2664145c2f93a295,
-                mid_generateException_13c04dd3f735d81a,
-                mid_getContentAsBoolean_e470b6d9e0d979db,
-                mid_getContentAsDouble_456d9a2f64d6b28d,
-                mid_getContentAsEnum_b8da8b286eb9770c,
-                mid_getContentAsEnumList_d43d3f945a8de36f,
-                mid_getContentAsFreeTextList_a6156df500549a58,
-                mid_getContentAsInt_f2f64475e4580546,
-                mid_getContentAsNormalizedList_a6156df500549a58,
-                mid_getContentAsNormalizedString_0090f7797e403f43,
-                mid_getContentAsUppercaseCharacter_29e026b9d068f1c7,
-                mid_getContentAsUppercaseList_a6156df500549a58,
-                mid_getContentAsUppercaseString_0090f7797e403f43,
-                mid_getContentAsVector_17a952530a808943,
-                mid_getFileName_0090f7797e403f43,
-                mid_getLineNumber_f2f64475e4580546,
-                mid_getName_0090f7797e403f43,
-                mid_getRawContent_0090f7797e403f43,
-                mid_getType_a288b82527ddd2de,
-                mid_getUnits_196b004fd4585106,
-                mid_processAsBoolean_15e3c92b59d60e20,
-                mid_processAsCenter_4b3fc7dc27a085ce,
-                mid_processAsCenterList_42e5d18386cfa025,
-                mid_processAsDate_c531de3c386ab684,
-                mid_processAsDouble_0cc02a116ac8c243,
-                mid_processAsDoubleArray_614ded53782c6336,
-                mid_processAsDoublyIndexedDouble_260d1494eea93a24,
-                mid_processAsEnum_d8a3ec2e7453cbca,
-                mid_processAsEnumsList_34e4b46279e3b834,
-                mid_processAsFrame_c70f6f373d5ea624,
-                mid_processAsFreeTextList_20dbcf5ca848e6b5,
-                mid_processAsFreeTextString_974496867228e5d2,
-                mid_processAsIndexedDouble_0252974c60172882,
-                mid_processAsIndexedDoubleArray_6b5a9e66ea49b585,
-                mid_processAsIndexedInteger_a0b75e58313e981b,
-                mid_processAsIndexedNormalizedString_62517abf6f494077,
-                mid_processAsIndexedUppercaseString_62517abf6f494077,
-                mid_processAsInteger_2328198f978a2786,
-                mid_processAsIntegerArray_c4b7278debc335e6,
-                mid_processAsIntegerArrayNoSpace_c4b7278debc335e6,
-                mid_processAsLabeledDouble_e0c1fada55cd206b,
-                mid_processAsManeuvrableEnum_a5401db6566584fc,
-                mid_processAsNormalizedCharacter_e84975a52a49ada8,
-                mid_processAsNormalizedList_20dbcf5ca848e6b5,
-                mid_processAsNormalizedString_974496867228e5d2,
-                mid_processAsRotationOrder_d9bf1bd440a4c4ed,
-                mid_processAsTimeSystem_2051b0414bb5b9fc,
-                mid_processAsUnitList_6169013488c8f5d8,
-                mid_processAsUppercaseList_20dbcf5ca848e6b5,
-                mid_processAsUppercaseString_974496867228e5d2,
-                mid_processAsVector_dfdac999eabaf91b,
+                mid_init$_d6bac7905c736ea0,
+                mid_generateException_d052fc9cf6f5844b,
+                mid_getContentAsBoolean_b108b35ef48e27bd,
+                mid_getContentAsDouble_dff5885c2c873297,
+                mid_getContentAsEnum_89daf5756b979a3f,
+                mid_getContentAsEnumList_401ab1d38e454dea,
+                mid_getContentAsFreeTextList_2afa36052df4765d,
+                mid_getContentAsInt_570ce0828f81a2c1,
+                mid_getContentAsNormalizedList_2afa36052df4765d,
+                mid_getContentAsNormalizedString_11b109bd155ca898,
+                mid_getContentAsUppercaseCharacter_7818f5b58320cd1f,
+                mid_getContentAsUppercaseList_2afa36052df4765d,
+                mid_getContentAsUppercaseString_11b109bd155ca898,
+                mid_getContentAsVector_d52645e0d4c07563,
+                mid_getFileName_11b109bd155ca898,
+                mid_getLineNumber_570ce0828f81a2c1,
+                mid_getName_11b109bd155ca898,
+                mid_getRawContent_11b109bd155ca898,
+                mid_getType_84d7c9fbe413a208,
+                mid_getUnits_de9b417ee3c58e2e,
+                mid_processAsBoolean_c2c10107b59698d5,
+                mid_processAsCenter_352f4165a1e45953,
+                mid_processAsCenterList_a2dd64d160e0f13e,
+                mid_processAsDate_76d464c871c16041,
+                mid_processAsDouble_201f9d905574e3a2,
+                mid_processAsDoubleArray_012305b3ff51003c,
+                mid_processAsDoublyIndexedDouble_78a4e84495ab71c3,
+                mid_processAsEnum_9b51427b2a1ad0a2,
+                mid_processAsEnumsList_45bd0996d10efd47,
+                mid_processAsFrame_7569c8bd7ef6fdc7,
+                mid_processAsFreeTextList_a4664731e55cc9af,
+                mid_processAsFreeTextString_d8110a3cc7ddda8f,
+                mid_processAsIndexedDouble_479c08756527d591,
+                mid_processAsIndexedDoubleArray_19480f93fda2b359,
+                mid_processAsIndexedInteger_4b846c49ebb63cb4,
+                mid_processAsIndexedNormalizedString_45ac2a2650da570c,
+                mid_processAsIndexedUppercaseString_45ac2a2650da570c,
+                mid_processAsInteger_bbe476ce7115f272,
+                mid_processAsIntegerArray_b7a107ccd4f2c011,
+                mid_processAsIntegerArrayNoSpace_b7a107ccd4f2c011,
+                mid_processAsLabeledDouble_aeee2cf6113b76da,
+                mid_processAsManeuvrableEnum_32fd44666c823152,
+                mid_processAsNormalizedCharacter_29e78e5a30fb3f2a,
+                mid_processAsNormalizedList_a4664731e55cc9af,
+                mid_processAsNormalizedString_d8110a3cc7ddda8f,
+                mid_processAsRotationOrder_861ca68cd0c7f23b,
+                mid_processAsTimeSystem_51c4604197116207,
+                mid_processAsUnitList_bd5fce894855dad0,
+                mid_processAsUppercaseList_a4664731e55cc9af,
+                mid_processAsUppercaseString_d8110a3cc7ddda8f,
+                mid_processAsVector_793c8cdd146b2013,
                 max_mid
               };
 

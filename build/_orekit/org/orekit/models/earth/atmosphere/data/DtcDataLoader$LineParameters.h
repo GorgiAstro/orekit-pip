@@ -3,20 +3,20 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace time {
-      class TimeStamped;
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
+  namespace io {
+    class Serializable;
+  }
   namespace lang {
     class Class;
   }
-  namespace io {
-    class Serializable;
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+      class TimeStamped;
+    }
   }
 }
 template<class T> class JArray;
@@ -31,9 +31,9 @@ namespace org {
             class DtcDataLoader$LineParameters : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_076f09dda44638d8,
-                mid_getDSTDTC_456d9a2f64d6b28d,
-                mid_getDate_aaa854c403487cf3,
+                mid_init$_fdc72bfdba154d74,
+                mid_getDSTDTC_dff5885c2c873297,
+                mid_getDate_85703d13e302437e,
                 max_mid
               };
 

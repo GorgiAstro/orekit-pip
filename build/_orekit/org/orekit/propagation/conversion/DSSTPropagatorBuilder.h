@@ -22,22 +22,22 @@ namespace org {
       class PropagationType;
     }
     namespace estimation {
-      namespace leastsquares {
-        class DSSTBatchLSModel;
-        class ModelObserver;
-      }
       namespace measurements {
         class ObservedMeasurement;
       }
+      namespace leastsquares {
+        class ModelObserver;
+        class DSSTBatchLSModel;
+      }
+    }
+    namespace orbits {
+      class Orbit;
     }
     namespace attitudes {
       class AttitudeProvider;
     }
     namespace utils {
       class ParameterDriversList;
-    }
-    namespace orbits {
-      class Orbit;
     }
   }
 }
@@ -60,19 +60,19 @@ namespace org {
         class DSSTPropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_721a71466591879d,
-            mid_init$_3ce276d088f69fd4,
-            mid_addForceModel_868bb92ba9b91af7,
-            mid_buildLeastSquaresModel_97549aab335354c0,
-            mid_buildPropagator_45be81d8f3d0b476,
-            mid_copy_39e7c31de2b3474f,
-            mid_getAllForceModels_a6156df500549a58,
-            mid_getIntegratorBuilder_0a8021b0a6e4c616,
-            mid_getMass_456d9a2f64d6b28d,
-            mid_getPropagationType_cb6f177f3e3f8613,
-            mid_getStateType_cb6f177f3e3f8613,
-            mid_resetOrbit_730ccdf0a47896e3,
-            mid_setMass_77e0f9a1f260e2e5,
+            mid_init$_b17cc766bb3e3ee2,
+            mid_init$_1db0b5ff88efb90c,
+            mid_addForceModel_8788ca485d7d47e4,
+            mid_buildLeastSquaresModel_28349e2e3cb4a78d,
+            mid_buildPropagator_046b5d73cd1b922e,
+            mid_copy_2b55c3a3e2597738,
+            mid_getAllForceModels_2afa36052df4765d,
+            mid_getIntegratorBuilder_3a8c061b6472f9df,
+            mid_getMass_dff5885c2c873297,
+            mid_getPropagationType_b2e499d9c793fc25,
+            mid_getStateType_b2e499d9c793fc25,
+            mid_resetOrbit_e1aab2b52626053e,
+            mid_setMass_17db3a65980d3441,
             max_mid
           };
 

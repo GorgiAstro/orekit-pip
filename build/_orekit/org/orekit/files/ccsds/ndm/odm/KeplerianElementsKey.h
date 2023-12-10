@@ -14,10 +14,10 @@ namespace org {
           }
         }
         namespace utils {
-          class ContextBinding;
           namespace lexical {
             class ParseToken;
           }
+          class ContextBinding;
         }
       }
     }
@@ -41,9 +41,9 @@ namespace org {
             class KeplerianElementsKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_204b232a067f0da2,
-                mid_valueOf_5ebea0bbc011f95b,
-                mid_values_8be06236407d0236,
+                mid_process_653ce425526d59e5,
+                mid_valueOf_384ec00c7080971c,
+                mid_values_b203c16db82c2cf7,
                 max_mid
               };
 

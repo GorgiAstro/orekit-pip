@@ -4,12 +4,15 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace conversion {
-        class DSSTPropagatorBuilder;
-      }
+  namespace hipparchus {
+    namespace util {
+      class UnscentedTransformProvider;
     }
+    namespace linear {
+      class MatrixDecomposer;
+    }
+  }
+  namespace orekit {
     namespace estimation {
       namespace sequential {
         class SemiAnalyticalUnscentedKalmanEstimatorBuilder;
@@ -17,16 +20,13 @@ namespace org {
         class CovarianceMatrixProvider;
       }
     }
+    namespace propagation {
+      namespace conversion {
+        class DSSTPropagatorBuilder;
+      }
+    }
     namespace utils {
       class ParameterDriversList;
-    }
-  }
-  namespace hipparchus {
-    namespace linear {
-      class MatrixDecomposer;
-    }
-    namespace util {
-      class UnscentedTransformProvider;
     }
   }
 }
@@ -45,12 +45,12 @@ namespace org {
         class SemiAnalyticalUnscentedKalmanEstimatorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_addPropagationConfiguration_3594980528b155c7,
-            mid_build_f0cefcb1f788b672,
-            mid_decomposer_15ac1308d97524be,
-            mid_estimatedMeasurementsParameters_2e69654da345a1e3,
-            mid_unscentedTransformProvider_aedddb46d6dfe2a9,
+            mid_init$_0fa09c18fee449d5,
+            mid_addPropagationConfiguration_86329c5f4a01e02e,
+            mid_build_2ad50f34092a6263,
+            mid_decomposer_2672ee664c9ea093,
+            mid_estimatedMeasurementsParameters_5f8d73a0acd88fd1,
+            mid_unscentedTransformProvider_05ab9b440dd924ef,
             max_mid
           };
 

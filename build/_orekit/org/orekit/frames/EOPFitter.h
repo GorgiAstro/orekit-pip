@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace frames {
@@ -18,6 +10,14 @@ namespace org {
       class EOPHistory;
       class SingleParameterFitter;
     }
+  }
+}
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -29,8 +29,8 @@ namespace org {
       class EOPFitter : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_e1d68203223e692f,
-          mid_fit_33e783273de11a73,
+          mid_init$_9d9d8b033335b2a2,
+          mid_fit_d67ac77b872f998f,
           max_mid
         };
 

@@ -4,19 +4,19 @@
 #include "org/orekit/geometry/fov/SmoothFieldOfView.h"
 
 namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace events {
+        class VisibilityTrigger;
+      }
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
           class Vector3D;
         }
-      }
-    }
-  }
-  namespace orekit {
-    namespace propagation {
-      namespace events {
-        class VisibilityTrigger;
       }
     }
   }
@@ -36,14 +36,14 @@ namespace org {
         class EllipticalFieldOfView : public ::org::orekit::geometry::fov::SmoothFieldOfView {
          public:
           enum {
-            mid_init$_16c53ea5015820c2,
-            mid_getFocus1_17a952530a808943,
-            mid_getFocus2_17a952530a808943,
-            mid_getHalfApertureAlongX_456d9a2f64d6b28d,
-            mid_getHalfApertureAlongY_456d9a2f64d6b28d,
-            mid_offsetFromBoundary_9e70aa9759fb6e3e,
-            mid_projectToBoundary_afd63a09f6d01e4c,
-            mid_directionAt_5f993a721a1d8c59,
+            mid_init$_3b428f774cad46a6,
+            mid_getFocus1_d52645e0d4c07563,
+            mid_getFocus2_d52645e0d4c07563,
+            mid_getHalfApertureAlongX_dff5885c2c873297,
+            mid_getHalfApertureAlongY_dff5885c2c873297,
+            mid_offsetFromBoundary_92bc6ba59ebf6937,
+            mid_projectToBoundary_d0fe714ef34714f7,
+            mid_directionAt_9137bba253a33d9c,
             max_mid
           };
 

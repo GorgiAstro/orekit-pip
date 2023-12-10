@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Iterable;
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class NullArgumentException;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Iterable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,9 +26,9 @@ namespace org {
         class AggregatableStatistic : public ::java::lang::Object {
          public:
           enum {
-            mid_aggregate_776481ea23945f99,
-            mid_aggregate_187af74f6ed91738,
-            mid_aggregate_7ca0d9438822cb0b,
+            mid_aggregate_c87c65058a9c47e3,
+            mid_aggregate_616dc59fbc71e214,
+            mid_aggregate_2990946c992aafed,
             max_mid
           };
 

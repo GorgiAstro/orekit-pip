@@ -3,21 +3,18 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace propagation {
       namespace events {
-        class FieldEventDetector;
         namespace handlers {
           class FieldEventHandler;
         }
         class FieldAdaptableInterval;
+        class FieldEventDetector;
       }
       class FieldSpacecraftState;
     }
@@ -25,8 +22,11 @@ namespace org {
       class FieldAbsoluteDate;
     }
   }
-  namespace hipparchus {
-    class CalculusFieldElement;
+}
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -39,17 +39,17 @@ namespace org {
         class PythonFieldEventDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_finalize_7ae3461a92a43152,
-            mid_g_cc79c2733879de35,
-            mid_getHandler_fa8b0a49dc8c921f,
-            mid_getMaxCheckInterval_a33ee6d38a1d69f9,
-            mid_getMaxIterationCount_f2f64475e4580546,
-            mid_getThreshold_e6d4d3215c30992a,
-            mid_init_acdd8180a5dc1a8d,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
+            mid_init$_0fa09c18fee449d5,
+            mid_finalize_0fa09c18fee449d5,
+            mid_g_41a008afe53da855,
+            mid_getHandler_48965f0f9fa2ddf9,
+            mid_getMaxCheckInterval_69f9ee3154bea730,
+            mid_getMaxIterationCount_570ce0828f81a2c1,
+            mid_getThreshold_eba8e72a22c984ac,
+            mid_init_8e8de2be1664674a,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
             max_mid
           };
 

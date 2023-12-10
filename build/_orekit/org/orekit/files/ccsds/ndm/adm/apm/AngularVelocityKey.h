@@ -7,18 +7,18 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace utils {
+          namespace lexical {
+            class ParseToken;
+          }
+          class ContextBinding;
+        }
         namespace ndm {
           namespace adm {
             namespace apm {
               class AngularVelocityKey;
               class AngularVelocity;
             }
-          }
-        }
-        namespace utils {
-          class ContextBinding;
-          namespace lexical {
-            class ParseToken;
           }
         }
       }
@@ -44,9 +44,9 @@ namespace org {
               class AngularVelocityKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_9030911c22185a80,
-                  mid_valueOf_60d36d7f6493b886,
-                  mid_values_b8389e2612a4b7de,
+                  mid_process_2d34aa8a2c0fdf6a,
+                  mid_valueOf_aa3ff05e0636580c,
+                  mid_values_ceb94f79f7dbea70,
                   max_mid
                 };
 

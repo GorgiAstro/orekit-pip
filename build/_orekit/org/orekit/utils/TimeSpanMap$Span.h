@@ -5,12 +5,12 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class TimeSpanMap$Transition;
-      class TimeSpanMap$Span;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace utils {
+      class TimeSpanMap$Span;
+      class TimeSpanMap$Transition;
     }
   }
 }
@@ -28,13 +28,13 @@ namespace org {
       class TimeSpanMap$Span : public ::java::lang::Object {
        public:
         enum {
-          mid_getData_dfd7647d9110ac9f,
-          mid_getEnd_aaa854c403487cf3,
-          mid_getEndTransition_bfa1ec341cbef3d2,
-          mid_getStart_aaa854c403487cf3,
-          mid_getStartTransition_bfa1ec341cbef3d2,
-          mid_next_39a1e35b17737f60,
-          mid_previous_39a1e35b17737f60,
+          mid_getData_4d26fd885228c716,
+          mid_getEnd_85703d13e302437e,
+          mid_getEndTransition_75c9888155918ff9,
+          mid_getStart_85703d13e302437e,
+          mid_getStartTransition_75c9888155918ff9,
+          mid_next_971209c2bf2033e7,
+          mid_previous_971209c2bf2033e7,
           max_mid
         };
 

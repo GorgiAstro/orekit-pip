@@ -7,18 +7,18 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class ObservableSatellite;
-        class GroundStation;
         class AngularAzEl;
+        class GroundStation;
+        class ObservableSatellite;
       }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace propagation {
       namespace sampling {
         class OrekitStepInterpolator;
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -46,8 +46,8 @@ namespace org {
           class AngularAzElBuilder : public ::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder {
            public:
             enum {
-              mid_init$_b645aa450891a294,
-              mid_build_810d1032ddc90bec,
+              mid_init$_bde81e75abb0ff5f,
+              mid_build_77690dd682a12885,
               max_mid
             };
 

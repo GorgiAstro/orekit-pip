@@ -4,15 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-    }
-  }
   namespace orekit {
     namespace rugged {
       namespace utils {
@@ -24,6 +15,15 @@ namespace org {
       }
       namespace intersection {
         class IntersectionAlgorithm;
+      }
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
       }
     }
   }
@@ -43,11 +43,11 @@ namespace org {
         class IgnoreDEMAlgorithm : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_getAlgorithmId_41b1271dfac9173f,
-            mid_getElevation_824133ce4aec3505,
-            mid_intersection_465c95e4cb53bef3,
-            mid_refineIntersection_0b100883a4ceff82,
+            mid_init$_0fa09c18fee449d5,
+            mid_getAlgorithmId_da9f33328b8f3962,
+            mid_getElevation_86ffecc08a63eff0,
+            mid_intersection_943aab8456e3784b,
+            mid_refineIntersection_860353a3ab3d03aa,
             max_mid
           };
 

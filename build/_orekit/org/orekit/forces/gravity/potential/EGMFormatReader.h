@@ -4,6 +4,9 @@
 #include "org/orekit/forces/gravity/potential/PotentialCoefficientsReader.h"
 
 namespace java {
+  namespace text {
+    class ParseException;
+  }
   namespace io {
     class IOException;
     class InputStream;
@@ -12,21 +15,18 @@ namespace java {
     class Class;
     class String;
   }
-  namespace text {
-    class ParseException;
-  }
 }
 namespace org {
   namespace orekit {
-    namespace errors {
-      class OrekitException;
-    }
     namespace forces {
       namespace gravity {
         namespace potential {
           class RawSphericalHarmonicsProvider;
         }
       }
+    }
+    namespace errors {
+      class OrekitException;
     }
   }
 }
@@ -41,10 +41,10 @@ namespace org {
           class EGMFormatReader : public ::org::orekit::forces::gravity::potential::PotentialCoefficientsReader {
            public:
             enum {
-              mid_init$_d1dd1bdcf55f8f80,
-              mid_init$_2cdfa26b3936b24f,
-              mid_getProvider_086897fc27688c23,
-              mid_loadData_ec60cb5f4b3de555,
+              mid_init$_d6df10f4e35ef1e8,
+              mid_init$_718db1cacd303261,
+              mid_getProvider_fc0a96c558346426,
+              mid_loadData_1815f85c118161ad,
               max_mid
             };
 

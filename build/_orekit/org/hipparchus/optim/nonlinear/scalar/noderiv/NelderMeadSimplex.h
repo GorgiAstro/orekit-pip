@@ -33,15 +33,15 @@ namespace org {
             class NelderMeadSimplex : public ::org::hipparchus::optim::nonlinear::scalar::noderiv::AbstractSimplex {
              public:
               enum {
-                mid_init$_ebc26dcaf4761286,
-                mid_init$_d660c7a97bf55272,
-                mid_init$_0a2a1ac2721c0336,
-                mid_init$_987a5fb872043b12,
-                mid_init$_cf3af9f78157f32b,
-                mid_init$_db09204907d49615,
-                mid_init$_cc4784be32cd9c15,
-                mid_init$_159fc5189923452d,
-                mid_iterate_cd2534a55381d07e,
+                mid_init$_fa9d415d19f69361,
+                mid_init$_a0befc7f3dc19e41,
+                mid_init$_99803b0791f320ff,
+                mid_init$_bb79ca80d85d0a66,
+                mid_init$_bbd94d386660acaa,
+                mid_init$_6e30b20e45c3cf51,
+                mid_init$_383392bb694f45fb,
+                mid_init$_ae09a068540f250e,
+                mid_iterate_eb88542b81649386,
                 max_mid
               };
 

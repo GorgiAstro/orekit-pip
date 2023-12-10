@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
-    namespace optim {
-      class OptimizationData;
-      class ConvergenceChecker;
-    }
     namespace exception {
       class MathIllegalStateException;
+    }
+    namespace optim {
+      class ConvergenceChecker;
+      class OptimizationData;
     }
   }
 }
@@ -28,17 +28,17 @@ namespace org {
       class BaseOptimizer : public ::java::lang::Object {
        public:
         enum {
-          mid_getConvergenceChecker_100e81b1c0752b49,
-          mid_getEvaluations_f2f64475e4580546,
-          mid_getIterations_f2f64475e4580546,
-          mid_getMaxEvaluations_f2f64475e4580546,
-          mid_getMaxIterations_f2f64475e4580546,
-          mid_optimize_dfd7647d9110ac9f,
-          mid_optimize_2543bc354d0aa7ca,
-          mid_doOptimize_dfd7647d9110ac9f,
-          mid_parseOptimizationData_a5cd04a701a45f77,
-          mid_incrementEvaluationCount_7ae3461a92a43152,
-          mid_incrementIterationCount_7ae3461a92a43152,
+          mid_getConvergenceChecker_c0e8b85b3220641b,
+          mid_getEvaluations_570ce0828f81a2c1,
+          mid_getIterations_570ce0828f81a2c1,
+          mid_getMaxEvaluations_570ce0828f81a2c1,
+          mid_getMaxIterations_570ce0828f81a2c1,
+          mid_optimize_4d26fd885228c716,
+          mid_optimize_19319236ce3fd082,
+          mid_parseOptimizationData_3d26e9f3a1d7e833,
+          mid_doOptimize_4d26fd885228c716,
+          mid_incrementEvaluationCount_0fa09c18fee449d5,
+          mid_incrementIterationCount_0fa09c18fee449d5,
           max_mid
         };
 

@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
@@ -16,6 +11,11 @@ namespace org {
     namespace propagation {
       class SpacecraftState;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,8 +28,8 @@ namespace org {
         class AbstractIntegratedPropagator$MainStateEquations : public ::java::lang::Object {
          public:
           enum {
-            mid_computeDerivatives_137d7db4f3f987f7,
-            mid_init_3d13474d79f5e7bc,
+            mid_computeDerivatives_cb44069ef445f941,
+            mid_init_826b4eda94da4e78,
             max_mid
           };
 

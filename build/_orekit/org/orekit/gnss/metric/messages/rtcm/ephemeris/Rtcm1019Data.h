@@ -37,18 +37,18 @@ namespace org {
               class Rtcm1019Data : public ::org::orekit::gnss::metric::messages::rtcm::ephemeris::RtcmEphemerisData {
                public:
                 enum {
-                  mid_init$_7ae3461a92a43152,
-                  mid_getGpsCodeOnL2_f2f64475e4580546,
-                  mid_getGpsFitInterval_f2f64475e4580546,
-                  mid_getGpsL2PDataFlag_e470b6d9e0d979db,
-                  mid_getGpsNavigationMessage_5dc75ceaa4fde100,
-                  mid_getGpsNavigationMessage_d94d6f9929872471,
-                  mid_getGpsToc_456d9a2f64d6b28d,
-                  mid_setGpsCodeOnL2_0a2a1ac2721c0336,
-                  mid_setGpsFitInterval_0a2a1ac2721c0336,
-                  mid_setGpsL2PDataFlag_50a2e0b139e80a58,
-                  mid_setGpsNavigationMessage_5e4004300df49c74,
-                  mid_setGpsToc_77e0f9a1f260e2e5,
+                  mid_init$_0fa09c18fee449d5,
+                  mid_getGpsCodeOnL2_570ce0828f81a2c1,
+                  mid_getGpsFitInterval_570ce0828f81a2c1,
+                  mid_getGpsL2PDataFlag_b108b35ef48e27bd,
+                  mid_getGpsNavigationMessage_1dc0f2491ce745f8,
+                  mid_getGpsNavigationMessage_4910099d75fee3ff,
+                  mid_getGpsToc_dff5885c2c873297,
+                  mid_setGpsCodeOnL2_99803b0791f320ff,
+                  mid_setGpsFitInterval_99803b0791f320ff,
+                  mid_setGpsL2PDataFlag_bd04c9335fb9e4cf,
+                  mid_setGpsNavigationMessage_16aa3ee67a4aead2,
+                  mid_setGpsToc_17db3a65980d3441,
                   max_mid
                 };
 

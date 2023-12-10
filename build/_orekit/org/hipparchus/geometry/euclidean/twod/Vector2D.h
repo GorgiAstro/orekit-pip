@@ -6,29 +6,29 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      class Space;
+      class Vector;
+      class Point;
       namespace euclidean {
         namespace twod {
-          class Vector2D;
           class Euclidean2D;
+          class Vector2D;
         }
       }
-      class Point;
-      class Vector;
+      class Space;
     }
     namespace exception {
-      class MathIllegalArgumentException;
       class MathRuntimeException;
+      class MathIllegalArgumentException;
     }
   }
 }
 namespace java {
+  namespace text {
+    class NumberFormat;
+  }
   namespace lang {
     class Class;
     class String;
-  }
-  namespace text {
-    class NumberFormat;
   }
 }
 template<class T> class JArray;
@@ -42,46 +42,46 @@ namespace org {
           class Vector2D : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_ebc26dcaf4761286,
-              mid_init$_f99c97f1de58893e,
-              mid_init$_1d715fa3b7b756e1,
-              mid_init$_260f828910f0d217,
-              mid_init$_1eb5059c70d52300,
-              mid_init$_0ad7d4e3605105c3,
-              mid_add_6698e195f6e5dfff,
-              mid_add_f4ada383aea98827,
-              mid_angle_0fbdabd0a8745d93,
-              mid_crossProduct_0fbdabd0a8745d93,
-              mid_distance_726dc963fac3505e,
-              mid_distance_0fbdabd0a8745d93,
-              mid_distance1_05fa5f52db18503d,
-              mid_distance1_0fbdabd0a8745d93,
-              mid_distanceInf_05fa5f52db18503d,
-              mid_distanceInf_0fbdabd0a8745d93,
-              mid_distanceSq_05fa5f52db18503d,
-              mid_distanceSq_0fbdabd0a8745d93,
-              mid_dotProduct_05fa5f52db18503d,
-              mid_equals_229c87223f486349,
-              mid_equalsIeee754_229c87223f486349,
-              mid_getNorm_456d9a2f64d6b28d,
-              mid_getNorm1_456d9a2f64d6b28d,
-              mid_getNormInf_456d9a2f64d6b28d,
-              mid_getNormSq_456d9a2f64d6b28d,
-              mid_getSpace_0438ef5f9a5edb53,
-              mid_getX_456d9a2f64d6b28d,
-              mid_getY_456d9a2f64d6b28d,
-              mid_getZero_6d781af269bebe5e,
-              mid_hashCode_f2f64475e4580546,
-              mid_isInfinite_e470b6d9e0d979db,
-              mid_isNaN_e470b6d9e0d979db,
-              mid_negate_6d781af269bebe5e,
-              mid_orientation_065804d1672f0d09,
-              mid_scalarMultiply_395c0d14fc31fa5e,
-              mid_subtract_6698e195f6e5dfff,
-              mid_subtract_f4ada383aea98827,
-              mid_toArray_7cdc325af0834901,
-              mid_toString_0090f7797e403f43,
-              mid_toString_aed149be89fb33b9,
+              mid_init$_fa9d415d19f69361,
+              mid_init$_43c9ba22c547cbd5,
+              mid_init$_8f2e782d5278b131,
+              mid_init$_168dc3d77e3245ed,
+              mid_init$_46062026ee9fbbf5,
+              mid_init$_2d0bba3ca271f687,
+              mid_add_8144ab28b67d94ff,
+              mid_add_33b3b958740706ea,
+              mid_angle_7e41f0ef8aa2109d,
+              mid_crossProduct_7e41f0ef8aa2109d,
+              mid_distance_07bb97c2794cf6b1,
+              mid_distance_7e41f0ef8aa2109d,
+              mid_distance1_b4822d5266bca26e,
+              mid_distance1_7e41f0ef8aa2109d,
+              mid_distanceInf_b4822d5266bca26e,
+              mid_distanceInf_7e41f0ef8aa2109d,
+              mid_distanceSq_b4822d5266bca26e,
+              mid_distanceSq_7e41f0ef8aa2109d,
+              mid_dotProduct_b4822d5266bca26e,
+              mid_equals_65c7d273e80d497a,
+              mid_equalsIeee754_65c7d273e80d497a,
+              mid_getNorm_dff5885c2c873297,
+              mid_getNorm1_dff5885c2c873297,
+              mid_getNormInf_dff5885c2c873297,
+              mid_getNormSq_dff5885c2c873297,
+              mid_getSpace_ebbd6b2d39ab0e4f,
+              mid_getX_dff5885c2c873297,
+              mid_getY_dff5885c2c873297,
+              mid_getZero_73f627838730c264,
+              mid_hashCode_570ce0828f81a2c1,
+              mid_isInfinite_b108b35ef48e27bd,
+              mid_isNaN_b108b35ef48e27bd,
+              mid_negate_73f627838730c264,
+              mid_orientation_86e6d5e84ec305f0,
+              mid_scalarMultiply_1d94587a4ec1fe0f,
+              mid_subtract_8144ab28b67d94ff,
+              mid_subtract_33b3b958740706ea,
+              mid_toArray_60c7040667a7dc5c,
+              mid_toString_11b109bd155ca898,
+              mid_toString_7b429db583278c20,
               max_mid
             };
 

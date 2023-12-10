@@ -3,7 +3,23 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
+  namespace orekit {
+    namespace frames {
+      class Frame;
+    }
+    namespace utils {
+      class TimeStampedPVCoordinates;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -16,22 +32,6 @@ namespace org {
       }
     }
   }
-  namespace orekit {
-    namespace frames {
-      class Frame;
-    }
-    namespace utils {
-      class TimeStampedPVCoordinates;
-    }
-  }
-}
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-  }
 }
 template<class T> class JArray;
 
@@ -42,19 +42,19 @@ namespace org {
       class Ellipse : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ce5a6e6d64bae5a,
-          mid_getA_456d9a2f64d6b28d,
-          mid_getB_456d9a2f64d6b28d,
-          mid_getCenter_17a952530a808943,
-          mid_getCenterOfCurvature_91634fa69e69124f,
-          mid_getFrame_c8fe21bcdac65bf6,
-          mid_getU_17a952530a808943,
-          mid_getV_17a952530a808943,
-          mid_pointAt_5f993a721a1d8c59,
-          mid_projectToEllipse_95abb8abb7f5aee0,
-          mid_projectToEllipse_91634fa69e69124f,
-          mid_toPlane_e74bef55b3143874,
-          mid_toSpace_8c454111e739388f,
+          mid_init$_a454bb4a34264e48,
+          mid_getA_dff5885c2c873297,
+          mid_getB_dff5885c2c873297,
+          mid_getCenter_d52645e0d4c07563,
+          mid_getCenterOfCurvature_943908560e598858,
+          mid_getFrame_b86f9f61d97a7244,
+          mid_getU_d52645e0d4c07563,
+          mid_getV_d52645e0d4c07563,
+          mid_pointAt_9137bba253a33d9c,
+          mid_projectToEllipse_fe87e6eba6ef42f9,
+          mid_projectToEllipse_943908560e598858,
+          mid_toPlane_6888ee2da1e4e6ff,
+          mid_toSpace_de1c0a3cb97333a9,
           max_mid
         };
 

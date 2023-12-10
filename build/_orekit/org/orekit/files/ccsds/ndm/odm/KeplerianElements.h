@@ -12,12 +12,12 @@ namespace org {
         }
       }
     }
+    namespace orbits {
+      class PositionAngleType;
+      class KeplerianOrbit;
+    }
     namespace frames {
       class Frame;
-    }
-    namespace orbits {
-      class KeplerianOrbit;
-      class PositionAngleType;
     }
     namespace time {
       class AbsoluteDate;
@@ -41,29 +41,29 @@ namespace org {
             class KeplerianElements : public ::org::orekit::files::ccsds::section::CommentsContainer {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_generateKeplerianOrbit_0666bdaaaf07ecac,
-                mid_getA_456d9a2f64d6b28d,
-                mid_getAnomaly_456d9a2f64d6b28d,
-                mid_getAnomalyType_2571e8fe1cede425,
-                mid_getE_456d9a2f64d6b28d,
-                mid_getEpoch_aaa854c403487cf3,
-                mid_getI_456d9a2f64d6b28d,
-                mid_getMeanMotion_456d9a2f64d6b28d,
-                mid_getMu_456d9a2f64d6b28d,
-                mid_getPa_456d9a2f64d6b28d,
-                mid_getRaan_456d9a2f64d6b28d,
-                mid_setA_77e0f9a1f260e2e5,
-                mid_setAnomaly_77e0f9a1f260e2e5,
-                mid_setAnomalyType_07350e8db766ef51,
-                mid_setE_77e0f9a1f260e2e5,
-                mid_setEpoch_e82d68cd9f886886,
-                mid_setI_77e0f9a1f260e2e5,
-                mid_setMeanMotion_77e0f9a1f260e2e5,
-                mid_setMu_77e0f9a1f260e2e5,
-                mid_setPa_77e0f9a1f260e2e5,
-                mid_setRaan_77e0f9a1f260e2e5,
-                mid_validate_77e0f9a1f260e2e5,
+                mid_init$_0fa09c18fee449d5,
+                mid_generateKeplerianOrbit_e3485a84a747fc7f,
+                mid_getA_dff5885c2c873297,
+                mid_getAnomaly_dff5885c2c873297,
+                mid_getAnomalyType_8f17e83e5a86217c,
+                mid_getE_dff5885c2c873297,
+                mid_getEpoch_85703d13e302437e,
+                mid_getI_dff5885c2c873297,
+                mid_getMeanMotion_dff5885c2c873297,
+                mid_getMu_dff5885c2c873297,
+                mid_getPa_dff5885c2c873297,
+                mid_getRaan_dff5885c2c873297,
+                mid_setA_17db3a65980d3441,
+                mid_setAnomaly_17db3a65980d3441,
+                mid_setAnomalyType_4ca1644ed7c72fe3,
+                mid_setE_17db3a65980d3441,
+                mid_setEpoch_600a2a61652bc473,
+                mid_setI_17db3a65980d3441,
+                mid_setMeanMotion_17db3a65980d3441,
+                mid_setMu_17db3a65980d3441,
+                mid_setPa_17db3a65980d3441,
+                mid_setRaan_17db3a65980d3441,
+                mid_validate_17db3a65980d3441,
                 max_mid
               };
 

@@ -25,14 +25,14 @@ namespace org {
         class UniformIntegerDistribution : public ::org::hipparchus::distribution::discrete::AbstractIntegerDistribution {
          public:
           enum {
-            mid_init$_8dbc1129a3c2557a,
-            mid_cumulativeProbability_b772323fc98b7293,
-            mid_getNumericalMean_456d9a2f64d6b28d,
-            mid_getNumericalVariance_456d9a2f64d6b28d,
-            mid_getSupportLowerBound_f2f64475e4580546,
-            mid_getSupportUpperBound_f2f64475e4580546,
-            mid_isSupportConnected_e470b6d9e0d979db,
-            mid_probability_b772323fc98b7293,
+            mid_init$_6f37635c3285dbdf,
+            mid_cumulativeProbability_46f85b53d9aedd96,
+            mid_getNumericalMean_dff5885c2c873297,
+            mid_getNumericalVariance_dff5885c2c873297,
+            mid_getSupportLowerBound_570ce0828f81a2c1,
+            mid_getSupportUpperBound_570ce0828f81a2c1,
+            mid_isSupportConnected_b108b35ef48e27bd,
+            mid_probability_46f85b53d9aedd96,
             max_mid
           };
 

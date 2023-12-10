@@ -36,12 +36,12 @@ namespace org {
           class SensorToGroundMapping : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_e939c6558ae8d313,
-              mid_init$_96073c87872b7a97,
-              mid_addMapping_0a00c01ab4d2ca50,
-              mid_getMapping_e9e1a6780fe94297,
-              mid_getRuggedName_0090f7797e403f43,
-              mid_getSensorName_0090f7797e403f43,
+              mid_init$_d0bc48d5b00dc40c,
+              mid_init$_6a2001eff0605f71,
+              mid_addMapping_03574314a06b257a,
+              mid_getMapping_015730311a5bacdc,
+              mid_getRuggedName_11b109bd155ca898,
+              mid_getSensorName_11b109bd155ca898,
               max_mid
             };
 

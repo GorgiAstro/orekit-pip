@@ -5,19 +5,19 @@
 
 namespace org {
   namespace hipparchus {
-    class Field;
+    class CalculusFieldElement;
     namespace exception {
       class MathIllegalStateException;
-      class MathIllegalArgumentException;
       class NullArgumentException;
+      class MathIllegalArgumentException;
     }
-    class CalculusFieldElement;
     namespace analysis {
-      class CalculusFieldUnivariateFunction;
       namespace integration {
         class FieldUnivariateIntegrator;
       }
+      class CalculusFieldUnivariateFunction;
     }
+    class Field;
   }
 }
 namespace java {
@@ -35,19 +35,19 @@ namespace org {
         class BaseAbstractFieldUnivariateIntegrator : public ::java::lang::Object {
          public:
           enum {
-            mid_getAbsoluteAccuracy_456d9a2f64d6b28d,
-            mid_getEvaluations_f2f64475e4580546,
-            mid_getField_70b4bbd3fa378d6b,
-            mid_getIterations_f2f64475e4580546,
-            mid_getMaximalIterationCount_f2f64475e4580546,
-            mid_getMinimalIterationCount_f2f64475e4580546,
-            mid_getRelativeAccuracy_456d9a2f64d6b28d,
-            mid_integrate_cffdd7e74469af96,
-            mid_doIntegrate_e6d4d3215c30992a,
-            mid_getMax_e6d4d3215c30992a,
-            mid_getMin_e6d4d3215c30992a,
-            mid_computeObjectiveValue_d3398190482814dc,
-            mid_setup_5d7218df37276b12,
+            mid_getAbsoluteAccuracy_dff5885c2c873297,
+            mid_getEvaluations_570ce0828f81a2c1,
+            mid_getField_5b28be2d3632a5dc,
+            mid_getIterations_570ce0828f81a2c1,
+            mid_getMaximalIterationCount_570ce0828f81a2c1,
+            mid_getMinimalIterationCount_570ce0828f81a2c1,
+            mid_getRelativeAccuracy_dff5885c2c873297,
+            mid_integrate_9be354262fab8bf3,
+            mid_doIntegrate_eba8e72a22c984ac,
+            mid_getMin_eba8e72a22c984ac,
+            mid_getMax_eba8e72a22c984ac,
+            mid_computeObjectiveValue_a4b1871f4d29e58b,
+            mid_setup_056be52d6b5c3df2,
             max_mid
           };
 

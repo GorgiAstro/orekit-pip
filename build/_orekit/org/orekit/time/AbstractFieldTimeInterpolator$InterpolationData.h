@@ -3,18 +3,10 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
-    class Field;
     class CalculusFieldElement;
+    class Field;
   }
   namespace orekit {
     namespace utils {
@@ -23,6 +15,14 @@ namespace org {
     namespace time {
       class FieldAbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,13 +34,13 @@ namespace org {
       class AbstractFieldTimeInterpolator$InterpolationData : public ::java::lang::Object {
        public:
         enum {
-          mid_getCachedSamples_b21cbcef82b413d5,
-          mid_getField_70b4bbd3fa378d6b,
-          mid_getInterpolationDate_09b0a926600dfc14,
-          mid_getNeighborList_a6156df500549a58,
-          mid_getOne_e6d4d3215c30992a,
-          mid_getZero_e6d4d3215c30992a,
-          mid_getCentralDate_7c63cdf8a96923c3,
+          mid_getCachedSamples_821d9d6a73dea7a9,
+          mid_getField_5b28be2d3632a5dc,
+          mid_getInterpolationDate_51da00d5b8a3b5df,
+          mid_getNeighborList_2afa36052df4765d,
+          mid_getOne_eba8e72a22c984ac,
+          mid_getZero_eba8e72a22c984ac,
+          mid_getCentralDate_c75237029429ec51,
           max_mid
         };
 

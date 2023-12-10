@@ -15,14 +15,14 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeScale;
-    }
     namespace files {
       namespace ilrs {
-        class CPFHeader;
         class StreamingCpfWriter$HeaderLineWriter;
+        class CPFHeader;
       }
+    }
+    namespace time {
+      class TimeScale;
     }
   }
 }
@@ -36,10 +36,10 @@ namespace org {
         class StreamingCpfWriter$HeaderLineWriter : public ::java::lang::Enum {
          public:
           enum {
-            mid_getIdentifier_0090f7797e403f43,
-            mid_valueOf_1f85c44552666353,
-            mid_values_bfaf4dbeaa804633,
-            mid_write_b524ba023c473843,
+            mid_getIdentifier_11b109bd155ca898,
+            mid_valueOf_c1c1c1cefb07ad13,
+            mid_values_86ce42271e03c949,
+            mid_write_5ea53a4031a3df60,
             max_mid
           };
 

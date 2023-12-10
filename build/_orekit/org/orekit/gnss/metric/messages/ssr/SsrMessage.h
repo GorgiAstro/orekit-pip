@@ -36,9 +36,9 @@ namespace org {
             class SsrMessage : public ::org::orekit::gnss::metric::messages::ParsedMessage {
              public:
               enum {
-                mid_init$_8523fc65a54deefc,
-                mid_getData_a6156df500549a58,
-                mid_getHeader_7f684bfcebe2080f,
+                mid_init$_27c89de82255b30a,
+                mid_getData_2afa36052df4765d,
+                mid_getHeader_708fd611322f89cf,
                 max_mid
               };
 

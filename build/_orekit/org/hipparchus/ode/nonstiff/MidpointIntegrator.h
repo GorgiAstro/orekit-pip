@@ -18,11 +18,11 @@ namespace org {
         class MidpointIntegrator : public ::org::hipparchus::ode::nonstiff::RungeKuttaIntegrator {
          public:
           enum {
-            mid_init$_77e0f9a1f260e2e5,
-            mid_getA_43de1192439efa92,
-            mid_getB_7cdc325af0834901,
-            mid_getC_7cdc325af0834901,
-            mid_createInterpolator_3dd29d7d6a173aa7,
+            mid_init$_17db3a65980d3441,
+            mid_getA_0358d8ea02f2cdb1,
+            mid_getB_60c7040667a7dc5c,
+            mid_getC_60c7040667a7dc5c,
+            mid_createInterpolator_2d871a79348db26a,
             max_mid
           };
 

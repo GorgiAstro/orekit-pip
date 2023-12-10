@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace gnss {
       namespace antenna {
-        class FrequencyPattern;
         class PhaseCenterVariationFunction;
+        class FrequencyPattern;
       }
     }
   }
@@ -37,10 +37,10 @@ namespace org {
         class FrequencyPattern : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_3c7311ce76e74007,
-            mid_getEccentricities_17a952530a808943,
-            mid_getPhaseCenterVariation_80b2470b9511edd1,
-            mid_getPhaseCenterVariationFunction_c31e4831a8342524,
+            mid_init$_0f76d53776f1b12d,
+            mid_getEccentricities_d52645e0d4c07563,
+            mid_getPhaseCenterVariation_bf473e7c74e5ce2b,
+            mid_getPhaseCenterVariationFunction_5e79c1f042c16192,
             max_mid
           };
 

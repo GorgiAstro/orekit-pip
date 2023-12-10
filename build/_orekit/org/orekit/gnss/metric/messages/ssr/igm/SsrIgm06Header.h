@@ -21,11 +21,11 @@ namespace org {
               class SsrIgm06Header : public ::org::orekit::gnss::metric::messages::ssr::igm::SsrIgmHeader {
                public:
                 enum {
-                  mid_init$_7ae3461a92a43152,
-                  mid_isConsistencyMaintained_e470b6d9e0d979db,
-                  mid_isMelbourneWubbenaConsistencyMaintained_e470b6d9e0d979db,
-                  mid_setIsConsistencyMaintained_50a2e0b139e80a58,
-                  mid_setIsMelbourneWubbenaConsistencyMaintained_50a2e0b139e80a58,
+                  mid_init$_0fa09c18fee449d5,
+                  mid_isConsistencyMaintained_b108b35ef48e27bd,
+                  mid_isMelbourneWubbenaConsistencyMaintained_b108b35ef48e27bd,
+                  mid_setIsConsistencyMaintained_bd04c9335fb9e4cf,
+                  mid_setIsMelbourneWubbenaConsistencyMaintained_bd04c9335fb9e4cf,
                   max_mid
                 };
 

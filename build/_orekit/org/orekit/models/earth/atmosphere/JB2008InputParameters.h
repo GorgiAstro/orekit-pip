@@ -3,16 +3,16 @@
 
 #include "java/io/Serializable.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,17 +26,17 @@ namespace org {
           class JB2008InputParameters : public ::java::io::Serializable {
            public:
             enum {
-              mid_getDSTDTC_e912d21057defe63,
-              mid_getF10_e912d21057defe63,
-              mid_getF10B_e912d21057defe63,
-              mid_getMaxDate_aaa854c403487cf3,
-              mid_getMinDate_aaa854c403487cf3,
-              mid_getS10_e912d21057defe63,
-              mid_getS10B_e912d21057defe63,
-              mid_getXM10_e912d21057defe63,
-              mid_getXM10B_e912d21057defe63,
-              mid_getY10_e912d21057defe63,
-              mid_getY10B_e912d21057defe63,
+              mid_getDSTDTC_bf1d7732f1acb697,
+              mid_getF10_bf1d7732f1acb697,
+              mid_getF10B_bf1d7732f1acb697,
+              mid_getMaxDate_85703d13e302437e,
+              mid_getMinDate_85703d13e302437e,
+              mid_getS10_bf1d7732f1acb697,
+              mid_getS10B_bf1d7732f1acb697,
+              mid_getXM10_bf1d7732f1acb697,
+              mid_getXM10B_bf1d7732f1acb697,
+              mid_getY10_bf1d7732f1acb697,
+              mid_getY10B_bf1d7732f1acb697,
               max_mid
             };
 

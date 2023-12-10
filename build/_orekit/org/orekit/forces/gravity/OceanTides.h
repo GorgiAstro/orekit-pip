@@ -5,52 +5,52 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
     class Field;
-    class CalculusFieldElement;
   }
   namespace orekit {
+    namespace forces {
+      namespace gravity {
+        namespace potential {
+          class GravityFields;
+        }
+      }
+      class ForceModel;
+    }
+    namespace propagation {
+      namespace events {
+        class EventDetector;
+        class FieldEventDetector;
+      }
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
+    namespace utils {
+      class IERSConventions;
+      class ParameterDriver;
+    }
     namespace frames {
       class Frame;
     }
     namespace time {
       class UT1Scale;
     }
-    namespace propagation {
-      namespace events {
-        class FieldEventDetector;
-        class EventDetector;
-      }
-      class SpacecraftState;
-      class FieldSpacecraftState;
-    }
-    namespace utils {
-      class IERSConventions;
-      class ParameterDriver;
-    }
-    namespace forces {
-      class ForceModel;
-      namespace gravity {
-        namespace potential {
-          class GravityFields;
-        }
-      }
-    }
   }
 }
 namespace java {
   namespace util {
-    class List;
     namespace stream {
       class Stream;
     }
+    class List;
   }
   namespace lang {
     class Class;
@@ -66,15 +66,15 @@ namespace org {
         class OceanTides : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7c496bbae0cbf081,
-            mid_init$_e9264073f6526404,
-            mid_init$_ab7510ef7b894b24,
-            mid_acceleration_00aba28d3abe9a8c,
-            mid_acceleration_78989e44b99f7cc2,
-            mid_dependsOnPositionOnly_e470b6d9e0d979db,
-            mid_getEventDetectors_a68a17dd093f796d,
-            mid_getFieldEventDetectors_1328ddb491531a35,
-            mid_getParametersDrivers_a6156df500549a58,
+            mid_init$_78c4483a058b3c31,
+            mid_init$_be0c289fb279b5c9,
+            mid_init$_f041363185b10634,
+            mid_acceleration_b42ac4b5bfb80fab,
+            mid_acceleration_8954761face5e1a7,
+            mid_dependsOnPositionOnly_b108b35ef48e27bd,
+            mid_getEventDetectors_20f6d2b462aaef4b,
+            mid_getFieldEventDetectors_361313cd1a9c693a,
+            mid_getParametersDrivers_2afa36052df4765d,
             max_mid
           };
 
@@ -96,8 +96,8 @@ namespace org {
           OceanTides(const ::org::orekit::frames::Frame &, jdouble, jdouble, jboolean, jdouble, jint, jint, jint, const ::org::orekit::utils::IERSConventions &, const ::org::orekit::time::UT1Scale &);
           OceanTides(const ::org::orekit::frames::Frame &, jdouble, jdouble, jboolean, jdouble, jint, jint, jint, const ::org::orekit::utils::IERSConventions &, const ::org::orekit::time::UT1Scale &, const ::org::orekit::forces::gravity::potential::GravityFields &);
 
-          ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
           ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
+          ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
           jboolean dependsOnPositionOnly() const;
           ::java::util::stream::Stream getEventDetectors() const;
           ::java::util::stream::Stream getFieldEventDetectors(const ::org::hipparchus::Field &) const;

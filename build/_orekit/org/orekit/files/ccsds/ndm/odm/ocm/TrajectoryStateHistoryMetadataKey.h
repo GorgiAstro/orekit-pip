@@ -10,16 +10,16 @@ namespace org {
         namespace ndm {
           namespace odm {
             namespace ocm {
-              class TrajectoryStateHistoryMetadata;
               class TrajectoryStateHistoryMetadataKey;
+              class TrajectoryStateHistoryMetadata;
             }
           }
         }
         namespace utils {
-          class ContextBinding;
           namespace lexical {
             class ParseToken;
           }
+          class ContextBinding;
         }
       }
     }
@@ -44,9 +44,9 @@ namespace org {
               class TrajectoryStateHistoryMetadataKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_1a4e967fd5970cec,
-                  mid_valueOf_7e337a3aad87db2c,
-                  mid_values_495e76d512ec8283,
+                  mid_process_b6af25ec97c9e2be,
+                  mid_valueOf_b8480e569bae6ced,
+                  mid_values_0e526f44ce4016ba,
                   max_mid
                 };
 

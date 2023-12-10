@@ -5,25 +5,25 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeStamped;
-      class TimeScale;
-      class AbsoluteDate;
+    namespace utils {
+      class ParameterDriversProvider;
+      class ParameterDriver;
     }
     namespace propagation {
       namespace analytical {
         namespace tle {
-          class TLE;
           namespace generation {
             class TleGenerationAlgorithm;
           }
+          class TLE;
         }
       }
       class SpacecraftState;
     }
-    namespace utils {
-      class ParameterDriversProvider;
-      class ParameterDriver;
+    namespace time {
+      class AbsoluteDate;
+      class TimeStamped;
+      class TimeScale;
     }
   }
 }
@@ -50,38 +50,38 @@ namespace org {
           class TLE : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_96073c87872b7a97,
-              mid_init$_d189310f42422232,
-              mid_init$_fec22c4b07c3c8c9,
-              mid_init$_139971ec8507b5f6,
-              mid_equals_229c87223f486349,
-              mid_getBStar_456d9a2f64d6b28d,
-              mid_getBStar_e912d21057defe63,
-              mid_getClassification_29e026b9d068f1c7,
-              mid_getDate_aaa854c403487cf3,
-              mid_getE_456d9a2f64d6b28d,
-              mid_getElementNumber_f2f64475e4580546,
-              mid_getEphemerisType_f2f64475e4580546,
-              mid_getI_456d9a2f64d6b28d,
-              mid_getLaunchNumber_f2f64475e4580546,
-              mid_getLaunchPiece_0090f7797e403f43,
-              mid_getLaunchYear_f2f64475e4580546,
-              mid_getLine1_0090f7797e403f43,
-              mid_getLine2_0090f7797e403f43,
-              mid_getMeanAnomaly_456d9a2f64d6b28d,
-              mid_getMeanMotion_456d9a2f64d6b28d,
-              mid_getMeanMotionFirstDerivative_456d9a2f64d6b28d,
-              mid_getMeanMotionSecondDerivative_456d9a2f64d6b28d,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_getPerigeeArgument_456d9a2f64d6b28d,
-              mid_getRaan_456d9a2f64d6b28d,
-              mid_getRevolutionNumberAtEpoch_f2f64475e4580546,
-              mid_getSatelliteNumber_f2f64475e4580546,
-              mid_getUtc_63ac10047983bd43,
-              mid_hashCode_f2f64475e4580546,
-              mid_isFormatOK_5e4279f3952110c4,
-              mid_stateToTLE_fbd75895746d88af,
-              mid_toString_0090f7797e403f43,
+              mid_init$_6a2001eff0605f71,
+              mid_init$_6de69b758d25049e,
+              mid_init$_26f3d55884b29b3a,
+              mid_init$_ddb6b020cef25251,
+              mid_equals_65c7d273e80d497a,
+              mid_getBStar_dff5885c2c873297,
+              mid_getBStar_bf1d7732f1acb697,
+              mid_getClassification_7818f5b58320cd1f,
+              mid_getDate_85703d13e302437e,
+              mid_getE_dff5885c2c873297,
+              mid_getElementNumber_570ce0828f81a2c1,
+              mid_getEphemerisType_570ce0828f81a2c1,
+              mid_getI_dff5885c2c873297,
+              mid_getLaunchNumber_570ce0828f81a2c1,
+              mid_getLaunchPiece_11b109bd155ca898,
+              mid_getLaunchYear_570ce0828f81a2c1,
+              mid_getLine1_11b109bd155ca898,
+              mid_getLine2_11b109bd155ca898,
+              mid_getMeanAnomaly_dff5885c2c873297,
+              mid_getMeanMotion_dff5885c2c873297,
+              mid_getMeanMotionFirstDerivative_dff5885c2c873297,
+              mid_getMeanMotionSecondDerivative_dff5885c2c873297,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_getPerigeeArgument_dff5885c2c873297,
+              mid_getRaan_dff5885c2c873297,
+              mid_getRevolutionNumberAtEpoch_570ce0828f81a2c1,
+              mid_getSatelliteNumber_570ce0828f81a2c1,
+              mid_getUtc_c39031284193adbe,
+              mid_hashCode_570ce0828f81a2c1,
+              mid_isFormatOK_9365555b1308b94c,
+              mid_stateToTLE_343a1afa95f9e6f7,
+              mid_toString_11b109bd155ca898,
               max_mid
             };
 

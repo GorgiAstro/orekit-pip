@@ -26,15 +26,15 @@ namespace org {
       class FieldQRDecomposition : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_3e03971cd3efa337,
-          mid_init$_d13044a02bfe3981,
-          mid_getH_cc77900a647586cf,
-          mid_getQ_cc77900a647586cf,
-          mid_getQT_cc77900a647586cf,
-          mid_getR_cc77900a647586cf,
-          mid_getSolver_60ebb8b71a188d47,
-          mid_decompose_c1d86efdeccfe621,
-          mid_performHouseholderReflection_387aca903344205d,
+          mid_init$_3c6edf548344b9f0,
+          mid_init$_259fc70ca4230674,
+          mid_getH_c992983685c753c5,
+          mid_getQ_c992983685c753c5,
+          mid_getQT_c992983685c753c5,
+          mid_getR_c992983685c753c5,
+          mid_getSolver_6147c09efa4fa494,
+          mid_decompose_4f34067490db6cc7,
+          mid_performHouseholderReflection_e79767523e4cac0d,
           max_mid
         };
 

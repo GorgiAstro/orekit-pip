@@ -7,8 +7,8 @@ namespace org {
   namespace hipparchus {
     namespace analysis {
       namespace differentiation {
-        class UnivariateDifferentiableVectorFunction;
         class Derivative;
+        class UnivariateDifferentiableVectorFunction;
       }
       namespace polynomials {
         class PolynomialFunction;
@@ -16,8 +16,8 @@ namespace org {
     }
     namespace exception {
       class NullArgumentException;
-      class MathIllegalArgumentException;
       class MathRuntimeException;
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -36,12 +36,12 @@ namespace org {
         class HermiteInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_addSamplePoint_5be24d2f20fd4252,
-            mid_derivatives_7582829a03f4b5f9,
-            mid_getPolynomials_4abf9ec9946ee32d,
-            mid_value_e6753bb90e47a158,
-            mid_value_8db78ffbf68761e3,
+            mid_init$_0fa09c18fee449d5,
+            mid_addSamplePoint_4908d66a94509f65,
+            mid_derivatives_1f43101c22428bd8,
+            mid_getPolynomials_02eeb9e6c0dfd60f,
+            mid_value_cd41055053027787,
+            mid_value_75b23942a40a3816,
             max_mid
           };
 

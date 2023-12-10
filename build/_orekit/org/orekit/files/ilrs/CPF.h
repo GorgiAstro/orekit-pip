@@ -8,18 +8,18 @@ namespace org {
     namespace files {
       namespace ilrs {
         class CPF$CPFCoordinate;
-        class CPFHeader;
         class CPF$CPFEphemeris;
+        class CPFHeader;
       }
       namespace general {
         class EphemerisFile;
       }
     }
-    namespace time {
-      class TimeScale;
-    }
     namespace utils {
       class CartesianDerivativesFilter;
+    }
+    namespace time {
+      class TimeScale;
     }
   }
   namespace hipparchus {
@@ -52,18 +52,18 @@ namespace org {
         class CPF : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_addSatelliteCoordinate_c3cd3ea9a0404274,
-            mid_addSatelliteCoordinates_6ea6ec8379c9f4a5,
-            mid_addSatelliteVelocityToCPFCoordinate_ff42c417021079b7,
-            mid_getComments_a6156df500549a58,
-            mid_getHeader_79ac7ef6978f6ee0,
-            mid_getSatellites_d6753b7055940a54,
-            mid_getTimeScale_63ac10047983bd43,
-            mid_setFilter_8aadfa247de709c5,
-            mid_setInterpolationSample_0a2a1ac2721c0336,
-            mid_setMu_77e0f9a1f260e2e5,
-            mid_setTimeScale_6d73d536a2f24dd5,
+            mid_init$_0fa09c18fee449d5,
+            mid_addSatelliteCoordinate_2121cf57a15dacdf,
+            mid_addSatelliteCoordinates_91fd4e71827f714e,
+            mid_addSatelliteVelocityToCPFCoordinate_898ecd5be95da09c,
+            mid_getComments_2afa36052df4765d,
+            mid_getHeader_2291408dbd033b0e,
+            mid_getSatellites_6f5a75ccd8c04465,
+            mid_getTimeScale_c39031284193adbe,
+            mid_setFilter_10d93bbae9f06624,
+            mid_setInterpolationSample_99803b0791f320ff,
+            mid_setMu_17db3a65980d3441,
+            mid_setTimeScale_e93d77ad761aa1f2,
             max_mid
           };
 

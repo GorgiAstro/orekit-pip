@@ -8,24 +8,24 @@ namespace org {
     namespace models {
       namespace earth {
         namespace troposphere {
-          class DiscreteTroposphericModel;
           class FixedTroposphericDelay;
+          class DiscreteTroposphericModel;
         }
       }
     }
     namespace data {
       class DataProvidersManager;
     }
-    namespace bodies {
-      class GeodeticPoint;
-      class FieldGeodeticPoint;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
+    }
+    namespace bodies {
+      class FieldGeodeticPoint;
+      class GeodeticPoint;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
   namespace hipparchus {
@@ -52,13 +52,13 @@ namespace org {
           class FixedTroposphericDelay : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_e939c6558ae8d313,
-              mid_init$_2a9119a84e92f14a,
-              mid_init$_748b42918a92f2d4,
-              mid_getDefaultModel_17d59345a9bde8da,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_pathDelay_0326270bf0e8ed17,
-              mid_pathDelay_af133f80cdba1dc2,
+              mid_init$_d0bc48d5b00dc40c,
+              mid_init$_63232a42a5419b09,
+              mid_init$_2656072909750fef,
+              mid_getDefaultModel_fb351a86def9fdc1,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_pathDelay_ff7a895eb6f0af2e,
+              mid_pathDelay_fe3b5c46874ab115,
               max_mid
             };
 

@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathIllegalArgumentException;
       class MathRuntimeException;
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -25,23 +25,23 @@ namespace org {
       class ArithmeticUtils : public ::java::lang::Object {
        public:
         enum {
-          mid_addAndCheck_d9790ac9eecfe931,
-          mid_addAndCheck_8f974216cbe53aea,
-          mid_divideUnsigned_d9790ac9eecfe931,
-          mid_divideUnsigned_8f974216cbe53aea,
-          mid_gcd_d9790ac9eecfe931,
-          mid_gcd_8f974216cbe53aea,
-          mid_isPowerOfTwo_9560f1672fe5dd29,
-          mid_lcm_d9790ac9eecfe931,
-          mid_lcm_8f974216cbe53aea,
-          mid_mulAndCheck_d9790ac9eecfe931,
-          mid_mulAndCheck_8f974216cbe53aea,
-          mid_pow_d9790ac9eecfe931,
-          mid_pow_1672c32325bd5d4a,
-          mid_remainderUnsigned_d9790ac9eecfe931,
-          mid_remainderUnsigned_8f974216cbe53aea,
-          mid_subAndCheck_d9790ac9eecfe931,
-          mid_subAndCheck_8f974216cbe53aea,
+          mid_addAndCheck_819f91eddf220c5b,
+          mid_addAndCheck_fe4804b67425641b,
+          mid_divideUnsigned_819f91eddf220c5b,
+          mid_divideUnsigned_fe4804b67425641b,
+          mid_gcd_819f91eddf220c5b,
+          mid_gcd_fe4804b67425641b,
+          mid_isPowerOfTwo_31b8f662f1e63743,
+          mid_lcm_819f91eddf220c5b,
+          mid_lcm_fe4804b67425641b,
+          mid_mulAndCheck_819f91eddf220c5b,
+          mid_mulAndCheck_fe4804b67425641b,
+          mid_pow_819f91eddf220c5b,
+          mid_pow_559895cd752223b6,
+          mid_remainderUnsigned_819f91eddf220c5b,
+          mid_remainderUnsigned_fe4804b67425641b,
+          mid_subAndCheck_819f91eddf220c5b,
+          mid_subAndCheck_fe4804b67425641b,
           max_mid
         };
 

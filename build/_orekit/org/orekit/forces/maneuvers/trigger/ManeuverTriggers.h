@@ -8,26 +8,26 @@ namespace org {
     namespace forces {
       namespace maneuvers {
         namespace trigger {
-          class ManeuverTriggersResetter;
           class FieldManeuverTriggersResetter;
+          class ManeuverTriggersResetter;
         }
       }
     }
     namespace propagation {
-      class SpacecraftState;
       namespace events {
         class EventDetectorsProvider;
       }
       class FieldSpacecraftState;
+      class SpacecraftState;
     }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
   }
   namespace hipparchus {
-    class Field;
     class CalculusFieldElement;
+    class Field;
   }
 }
 namespace java {
@@ -47,13 +47,13 @@ namespace org {
           class ManeuverTriggers : public ::org::orekit::utils::ParameterDriversProvider {
            public:
             enum {
-              mid_addResetter_c5c7f3f3d4c4bba2,
-              mid_addResetter_17ab38b8d22d6651,
-              mid_getName_0090f7797e403f43,
-              mid_init_3d13474d79f5e7bc,
-              mid_init_acdd8180a5dc1a8d,
-              mid_isFiring_b230552293273e68,
-              mid_isFiring_80ee6edc2471fed7,
+              mid_addResetter_a16797fae59e88ec,
+              mid_addResetter_e53773d2404dc858,
+              mid_getName_11b109bd155ca898,
+              mid_init_826b4eda94da4e78,
+              mid_init_8e8de2be1664674a,
+              mid_isFiring_785ace4124d89120,
+              mid_isFiring_89b940ef53c9a82d,
               max_mid
             };
 

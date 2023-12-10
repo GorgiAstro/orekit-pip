@@ -4,9 +4,25 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace frames {
       class Frame;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+    }
+    namespace orbits {
+      class FieldOrbit;
     }
     namespace propagation {
       namespace semianalytical {
@@ -17,22 +33,6 @@ namespace org {
         }
       }
     }
-    namespace orbits {
-      class FieldOrbit;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class FieldVector3D;
-        }
-      }
-    }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -52,31 +52,31 @@ namespace org {
             class FieldAuxiliaryElements : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_9dc2a3e0d8e9fa60,
-                mid_getAlpha_e6d4d3215c30992a,
-                mid_getB_e6d4d3215c30992a,
-                mid_getBeta_e6d4d3215c30992a,
-                mid_getC_e6d4d3215c30992a,
-                mid_getDate_09b0a926600dfc14,
-                mid_getEcc_e6d4d3215c30992a,
-                mid_getFrame_c8fe21bcdac65bf6,
-                mid_getGamma_e6d4d3215c30992a,
-                mid_getH_e6d4d3215c30992a,
-                mid_getK_e6d4d3215c30992a,
-                mid_getKeplerianPeriod_e6d4d3215c30992a,
-                mid_getLM_e6d4d3215c30992a,
-                mid_getLe_e6d4d3215c30992a,
-                mid_getLv_e6d4d3215c30992a,
-                mid_getMeanMotion_e6d4d3215c30992a,
-                mid_getOrbit_2f26cad5f478f007,
-                mid_getP_e6d4d3215c30992a,
-                mid_getQ_e6d4d3215c30992a,
-                mid_getRetrogradeFactor_f2f64475e4580546,
-                mid_getSma_e6d4d3215c30992a,
-                mid_getVectorF_5791f80683b5227e,
-                mid_getVectorG_5791f80683b5227e,
-                mid_getVectorW_5791f80683b5227e,
-                mid_toAuxiliaryElements_24ab54193b574fe5,
+                mid_init$_46c34a14776a1e1e,
+                mid_getAlpha_eba8e72a22c984ac,
+                mid_getB_eba8e72a22c984ac,
+                mid_getBeta_eba8e72a22c984ac,
+                mid_getC_eba8e72a22c984ac,
+                mid_getDate_51da00d5b8a3b5df,
+                mid_getEcc_eba8e72a22c984ac,
+                mid_getFrame_b86f9f61d97a7244,
+                mid_getGamma_eba8e72a22c984ac,
+                mid_getH_eba8e72a22c984ac,
+                mid_getK_eba8e72a22c984ac,
+                mid_getKeplerianPeriod_eba8e72a22c984ac,
+                mid_getLM_eba8e72a22c984ac,
+                mid_getLe_eba8e72a22c984ac,
+                mid_getLv_eba8e72a22c984ac,
+                mid_getMeanMotion_eba8e72a22c984ac,
+                mid_getOrbit_71338e41eb93eedd,
+                mid_getP_eba8e72a22c984ac,
+                mid_getQ_eba8e72a22c984ac,
+                mid_getRetrogradeFactor_570ce0828f81a2c1,
+                mid_getSma_eba8e72a22c984ac,
+                mid_getVectorF_716f50c86ffc8da7,
+                mid_getVectorG_716f50c86ffc8da7,
+                mid_getVectorW_716f50c86ffc8da7,
+                mid_toAuxiliaryElements_3e39de583cb99320,
                 max_mid
               };
 

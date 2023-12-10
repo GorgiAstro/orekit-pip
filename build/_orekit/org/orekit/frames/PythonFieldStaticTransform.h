@@ -3,14 +3,9 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -19,7 +14,6 @@ namespace org {
         }
       }
     }
-    class CalculusFieldElement;
   }
   namespace orekit {
     namespace frames {
@@ -28,6 +22,12 @@ namespace org {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -39,15 +39,15 @@ namespace org {
       class PythonFieldStaticTransform : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_finalize_7ae3461a92a43152,
-          mid_getDate_aaa854c403487cf3,
-          mid_getInverse_dd9256b23dabf6f6,
-          mid_getRotation_ac4489fdef1c3aef,
-          mid_getTranslation_5791f80683b5227e,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
+          mid_init$_0fa09c18fee449d5,
+          mid_finalize_0fa09c18fee449d5,
+          mid_getDate_85703d13e302437e,
+          mid_getInverse_b4e9bd069b43219a,
+          mid_getRotation_1d339a2ee3a3323a,
+          mid_getTranslation_716f50c86ffc8da7,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
           max_mid
         };
 

@@ -20,13 +20,13 @@ namespace org {
         class Range;
       }
     }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace gnss {
       namespace antenna {
         class FrequencyPattern;
       }
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
 }
@@ -41,9 +41,9 @@ namespace org {
           class PhaseCentersRangeModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_55b30db589ada038,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_modifyWithoutDerivatives_811f96960c94c1de,
+              mid_init$_a2ed374ecf8bf34a,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_modifyWithoutDerivatives_d1815d998cba71e9,
               max_mid
             };
 

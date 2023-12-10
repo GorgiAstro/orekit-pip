@@ -3,12 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace optim {
@@ -20,6 +14,12 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,8 +34,8 @@ namespace org {
             class NonLinearConjugateGradientOptimizer$Formula : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_d9a48b717c65a27d,
-                mid_values_74f2a7feca07041f,
+                mid_valueOf_ae25b8b4e8d7c84a,
+                mid_values_f6e3985d7fdc4051,
                 max_mid
               };
 

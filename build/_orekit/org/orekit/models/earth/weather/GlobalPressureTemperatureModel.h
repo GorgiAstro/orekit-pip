@@ -5,18 +5,18 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
-    namespace data {
-      class DataContext;
-    }
     namespace models {
       namespace earth {
         namespace weather {
           class WeatherModel;
         }
       }
+    }
+    namespace data {
+      class DataContext;
+    }
+    namespace frames {
+      class Frame;
     }
     namespace time {
       class AbsoluteDate;
@@ -39,11 +39,11 @@ namespace org {
           class GlobalPressureTemperatureModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_67a8caec77669819,
-              mid_init$_5e3f3f16cd8961b3,
-              mid_getPressure_456d9a2f64d6b28d,
-              mid_getTemperature_456d9a2f64d6b28d,
-              mid_weatherParameters_82dcc83e88ee1b1f,
+              mid_init$_b0fb2e2980abbca2,
+              mid_init$_9bb7aba3503e2aef,
+              mid_getPressure_dff5885c2c873297,
+              mid_getTemperature_dff5885c2c873297,
+              mid_weatherParameters_a7786d9d355d3792,
               max_mid
             };
 

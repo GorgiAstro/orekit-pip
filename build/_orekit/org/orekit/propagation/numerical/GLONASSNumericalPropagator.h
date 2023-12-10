@@ -5,11 +5,14 @@
 
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataContext;
+    }
     namespace frames {
       class Frame;
     }
-    namespace data {
-      class DataContext;
+    namespace time {
+      class AbsoluteDate;
     }
     namespace attitudes {
       class AttitudeProvider;
@@ -23,9 +26,6 @@ namespace org {
         }
       }
       class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -51,11 +51,11 @@ namespace org {
         class GLONASSNumericalPropagator : public ::org::orekit::propagation::integration::AbstractIntegratedPropagator {
          public:
           enum {
-            mid_init$_d6c6075679c991b2,
-            mid_getGLONASSOrbitalElements_bf10fc365bc8e89d,
-            mid_propagate_889031abe87f3b14,
-            mid_createMapper_083e2bc1612e9def,
-            mid_getMainStateEquations_9c7da9606951e4f0,
+            mid_init$_bcc36abbe353bf79,
+            mid_getGLONASSOrbitalElements_44dc208271d1b6f9,
+            mid_propagate_fbff2ff5554d95e1,
+            mid_createMapper_2bea84b26b1efc07,
+            mid_getMainStateEquations_e1fa3ce287fe2655,
             max_mid
           };
 

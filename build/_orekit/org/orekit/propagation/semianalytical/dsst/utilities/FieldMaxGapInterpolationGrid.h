@@ -37,8 +37,8 @@ namespace org {
             class FieldMaxGapInterpolationGrid : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_15e7459be7ec40d8,
-                mid_getGridPoints_492e97ecdce43bb1,
+                mid_init$_79b17d518528c1b2,
+                mid_getGridPoints_04b33bd8d7b2bde1,
                 max_mid
               };
 

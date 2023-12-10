@@ -8,8 +8,8 @@ namespace org {
     namespace estimation {
       namespace measurements {
         namespace gnss {
-          class CombinedObservationDataSet;
           class MeasurementCombination;
+          class CombinedObservationDataSet;
         }
       }
     }
@@ -39,8 +39,8 @@ namespace org {
           class MelbourneWubbenaCombination : public ::java::lang::Object {
            public:
             enum {
-              mid_combine_d8c8276403544c3f,
-              mid_getName_0090f7797e403f43,
+              mid_combine_38fa214a925f8e7a,
+              mid_getName_11b109bd155ca898,
               max_mid
             };
 

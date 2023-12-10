@@ -28,11 +28,11 @@ namespace org {
         class GridAxis : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_204d8fef8522b316,
-            mid_getN_f2f64475e4580546,
-            mid_interpolationIndex_12ebab281ee35c98,
-            mid_node_b772323fc98b7293,
-            mid_size_f2f64475e4580546,
+            mid_init$_338593130772139f,
+            mid_getN_570ce0828f81a2c1,
+            mid_interpolationIndex_4508852644846c83,
+            mid_node_46f85b53d9aedd96,
+            mid_size_570ce0828f81a2c1,
             max_mid
           };
 

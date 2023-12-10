@@ -4,6 +4,9 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace models {
       namespace earth {
@@ -16,20 +19,17 @@ namespace org {
     namespace data {
       class DataProvidersManager;
     }
-    namespace bodies {
-      class GeodeticPoint;
-      class FieldGeodeticPoint;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
+    namespace bodies {
+      class FieldGeodeticPoint;
+      class GeodeticPoint;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
   }
 }
 namespace java {
@@ -52,15 +52,15 @@ namespace org {
           class SaastamoinenModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_d0d6094fbd7015c5,
-              mid_init$_cfec5599e7a5e79d,
-              mid_init$_90f6d74ff6e11b16,
-              mid_getLowElevationThreshold_456d9a2f64d6b28d,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_getStandardModel_f7dd8a663f4b9798,
-              mid_pathDelay_0326270bf0e8ed17,
-              mid_pathDelay_af133f80cdba1dc2,
-              mid_setLowElevationThreshold_77e0f9a1f260e2e5,
+              mid_init$_2c56b6dd4d4b1dec,
+              mid_init$_67f6ec33b4d0bffd,
+              mid_init$_08597647738b99f8,
+              mid_getLowElevationThreshold_dff5885c2c873297,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_getStandardModel_7e2e0f949f78c931,
+              mid_pathDelay_ff7a895eb6f0af2e,
+              mid_pathDelay_fe3b5c46874ab115,
+              mid_setLowElevationThreshold_17db3a65980d3441,
               max_mid
             };
 

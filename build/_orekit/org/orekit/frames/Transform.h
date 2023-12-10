@@ -4,6 +4,25 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace utils {
+      class AngularCoordinates;
+      class PVCoordinates;
+      class AngularDerivativesFilter;
+      class FieldPVCoordinates;
+      class CartesianDerivativesFilter;
+      class TimeStampedPVCoordinates;
+      class TimeStampedFieldPVCoordinates;
+    }
+    namespace frames {
+      class Transform;
+      class StaticTransform;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeShiftable;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -14,35 +33,16 @@ namespace org {
       }
     }
   }
-  namespace orekit {
-    namespace time {
-      class TimeShiftable;
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class PVCoordinates;
-      class AngularDerivativesFilter;
-      class TimeStampedFieldPVCoordinates;
-      class CartesianDerivativesFilter;
-      class TimeStampedPVCoordinates;
-      class AngularCoordinates;
-      class FieldPVCoordinates;
-    }
-    namespace frames {
-      class StaticTransform;
-      class Transform;
-    }
-  }
 }
 namespace java {
-  namespace io {
-    class Serializable;
-  }
   namespace util {
-    class Collection;
     namespace stream {
       class Stream;
     }
+    class Collection;
+  }
+  namespace io {
+    class Serializable;
   }
   namespace lang {
     class Class;
@@ -57,37 +57,37 @@ namespace org {
       class Transform : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_f3775f4d7e276e33,
-          mid_init$_4fd2c20d73afc943,
-          mid_init$_481a03094e80c723,
-          mid_init$_941d8dc495969cee,
-          mid_init$_de98e3d58f8ed0c5,
-          mid_init$_1f308a96dce4eb31,
-          mid_init$_ed94cc52ace0cf72,
-          mid_init$_bab3b5654d32da50,
-          mid_init$_8b0e1234e87551c9,
-          mid_init$_fcb73ff3ac48befe,
-          mid_freeze_631c2f99a847a383,
-          mid_getAcceleration_17a952530a808943,
-          mid_getAngular_eb0542756098e24f,
-          mid_getCartesian_6761e3f334368d44,
-          mid_getDate_aaa854c403487cf3,
-          mid_getInverse_631c2f99a847a383,
-          mid_getJacobian_a54172134b551e3f,
-          mid_getRotation_24d2e432e376f9a0,
-          mid_getRotationAcceleration_17a952530a808943,
-          mid_getRotationRate_17a952530a808943,
-          mid_getTranslation_17a952530a808943,
-          mid_getVelocity_17a952530a808943,
-          mid_interpolate_72322215d0d9acc8,
-          mid_interpolate_3856d795689bca1e,
-          mid_shiftedBy_82b944f63bb69f35,
-          mid_staticShiftedBy_52c1706ea4ef71ef,
-          mid_toStaticTransform_85643104a022b593,
-          mid_transformPVCoordinates_dc7eea29a4d4ad51,
-          mid_transformPVCoordinates_95abb8abb7f5aee0,
-          mid_transformPVCoordinates_32f08c76ddea4935,
-          mid_transformPVCoordinates_21828419b7bbfc20,
+          mid_init$_22bdf1805e44a194,
+          mid_init$_3d7cc17d4ec11a9f,
+          mid_init$_9769af8992f7d7c2,
+          mid_init$_db8760ebddf85268,
+          mid_init$_a2dd53dc024aec2d,
+          mid_init$_d039183b82af87d6,
+          mid_init$_b94b4993c5720e0b,
+          mid_init$_f151b980508072a7,
+          mid_init$_bc95563ddeee02cc,
+          mid_init$_1c345cf73262affe,
+          mid_freeze_09afc11266121652,
+          mid_getAcceleration_d52645e0d4c07563,
+          mid_getAngular_8a604053f4d4c39e,
+          mid_getCartesian_9b7c658c14883c84,
+          mid_getDate_85703d13e302437e,
+          mid_getInverse_09afc11266121652,
+          mid_getJacobian_162d7740b4935bd5,
+          mid_getRotation_de86c7efc42eac14,
+          mid_getRotationAcceleration_d52645e0d4c07563,
+          mid_getRotationRate_d52645e0d4c07563,
+          mid_getTranslation_d52645e0d4c07563,
+          mid_getVelocity_d52645e0d4c07563,
+          mid_interpolate_017020b36f2073a7,
+          mid_interpolate_4e9cc70946705b1a,
+          mid_shiftedBy_4f5cde3777cd20a7,
+          mid_staticShiftedBy_1862d3e05bd21533,
+          mid_toStaticTransform_892837e768e813bc,
+          mid_transformPVCoordinates_2c604bfeb0a28a2f,
+          mid_transformPVCoordinates_fe87e6eba6ef42f9,
+          mid_transformPVCoordinates_f76646e67e6a0632,
+          mid_transformPVCoordinates_44abf30654d86934,
           max_mid
         };
 

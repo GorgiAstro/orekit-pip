@@ -3,6 +3,12 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace stat {
@@ -10,12 +16,6 @@ namespace org {
         class NaNStrategy;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,8 +28,8 @@ namespace org {
         class NaNStrategy : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_fb3d0e097119eac2,
-            mid_values_a5af87edf0a7e54f,
+            mid_valueOf_b30c8b7ab921ffea,
+            mid_values_f32bd31c01ca497a,
             max_mid
           };
 

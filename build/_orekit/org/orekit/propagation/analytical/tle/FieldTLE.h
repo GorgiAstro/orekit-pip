@@ -4,32 +4,32 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    class Field;
+  }
   namespace orekit {
-    namespace propagation {
-      namespace analytical {
-        namespace tle {
-          class FieldTLE;
-          class TLE;
-          namespace generation {
-            class TleGenerationAlgorithm;
-          }
-        }
-      }
-      class FieldSpacecraftState;
-    }
-    namespace time {
-      class TimeScale;
-      class FieldTimeStamped;
-      class FieldAbsoluteDate;
-    }
     namespace utils {
       class ParameterDriversProvider;
       class ParameterDriver;
     }
-  }
-  namespace hipparchus {
-    class Field;
-    class CalculusFieldElement;
+    namespace propagation {
+      class FieldSpacecraftState;
+      namespace analytical {
+        namespace tle {
+          namespace generation {
+            class TleGenerationAlgorithm;
+          }
+          class FieldTLE;
+          class TLE;
+        }
+      }
+    }
+    namespace time {
+      class FieldTimeStamped;
+      class FieldAbsoluteDate;
+      class TimeScale;
+    }
   }
 }
 namespace java {
@@ -55,37 +55,37 @@ namespace org {
           class FieldTLE : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_aa4622cb6d5137d4,
-              mid_init$_91e14236df002fd6,
-              mid_init$_77334416a19ff5a0,
-              mid_init$_1d424f52c08f21e2,
-              mid_equals_229c87223f486349,
-              mid_getBStar_456d9a2f64d6b28d,
-              mid_getClassification_29e026b9d068f1c7,
-              mid_getDate_09b0a926600dfc14,
-              mid_getE_e6d4d3215c30992a,
-              mid_getElementNumber_f2f64475e4580546,
-              mid_getEphemerisType_f2f64475e4580546,
-              mid_getI_e6d4d3215c30992a,
-              mid_getLaunchNumber_f2f64475e4580546,
-              mid_getLaunchPiece_0090f7797e403f43,
-              mid_getLaunchYear_f2f64475e4580546,
-              mid_getLine1_0090f7797e403f43,
-              mid_getLine2_0090f7797e403f43,
-              mid_getMeanAnomaly_e6d4d3215c30992a,
-              mid_getMeanMotion_e6d4d3215c30992a,
-              mid_getMeanMotionFirstDerivative_e6d4d3215c30992a,
-              mid_getMeanMotionSecondDerivative_e6d4d3215c30992a,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_getPerigeeArgument_e6d4d3215c30992a,
-              mid_getRaan_e6d4d3215c30992a,
-              mid_getRevolutionNumberAtEpoch_f2f64475e4580546,
-              mid_getSatelliteNumber_f2f64475e4580546,
-              mid_hashCode_f2f64475e4580546,
-              mid_isFormatOK_5e4279f3952110c4,
-              mid_stateToTLE_b3cd93b70cce68fe,
-              mid_toString_0090f7797e403f43,
-              mid_toTLE_32ddbfc0b67883b1,
+              mid_init$_964fa3751c176051,
+              mid_init$_f6ecc8aad0bdcb24,
+              mid_init$_5a5a5ec4c232c23e,
+              mid_init$_9047e07f6401a189,
+              mid_equals_65c7d273e80d497a,
+              mid_getBStar_dff5885c2c873297,
+              mid_getClassification_7818f5b58320cd1f,
+              mid_getDate_51da00d5b8a3b5df,
+              mid_getE_eba8e72a22c984ac,
+              mid_getElementNumber_570ce0828f81a2c1,
+              mid_getEphemerisType_570ce0828f81a2c1,
+              mid_getI_eba8e72a22c984ac,
+              mid_getLaunchNumber_570ce0828f81a2c1,
+              mid_getLaunchPiece_11b109bd155ca898,
+              mid_getLaunchYear_570ce0828f81a2c1,
+              mid_getLine1_11b109bd155ca898,
+              mid_getLine2_11b109bd155ca898,
+              mid_getMeanAnomaly_eba8e72a22c984ac,
+              mid_getMeanMotion_eba8e72a22c984ac,
+              mid_getMeanMotionFirstDerivative_eba8e72a22c984ac,
+              mid_getMeanMotionSecondDerivative_eba8e72a22c984ac,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_getPerigeeArgument_eba8e72a22c984ac,
+              mid_getRaan_eba8e72a22c984ac,
+              mid_getRevolutionNumberAtEpoch_570ce0828f81a2c1,
+              mid_getSatelliteNumber_570ce0828f81a2c1,
+              mid_hashCode_570ce0828f81a2c1,
+              mid_isFormatOK_9365555b1308b94c,
+              mid_stateToTLE_1e78a1437043d7f8,
+              mid_toString_11b109bd155ca898,
+              mid_toTLE_e993eceec98c738b,
               max_mid
             };
 

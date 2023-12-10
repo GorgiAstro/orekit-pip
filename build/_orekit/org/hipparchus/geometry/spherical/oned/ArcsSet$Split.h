@@ -34,9 +34,9 @@ namespace org {
           class ArcsSet$Split : public ::java::lang::Object {
            public:
             enum {
-              mid_getMinus_5473122695b414ae,
-              mid_getPlus_5473122695b414ae,
-              mid_getSide_930ceaef64a5a9be,
+              mid_getMinus_9a4d6a36c117a959,
+              mid_getPlus_9a4d6a36c117a959,
+              mid_getSide_f8858a4ff9f9675f,
               max_mid
             };
 

@@ -17,9 +17,9 @@ namespace org {
       class RealVectorPreservingVisitor : public ::java::lang::Object {
        public:
         enum {
-          mid_end_456d9a2f64d6b28d,
-          mid_start_c80ec2f7d8b5fe87,
-          mid_visit_987a5fb872043b12,
+          mid_end_dff5885c2c873297,
+          mid_start_8336200ef3dde36b,
+          mid_visit_bb79ca80d85d0a66,
           max_mid
         };
 

@@ -3,14 +3,22 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeStamped;
-      class AbsoluteDate;
-    }
     namespace gnss {
       class SatelliteSystem;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeStamped;
     }
     namespace estimation {
       namespace measurements {
@@ -19,14 +27,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -40,12 +40,12 @@ namespace org {
           class CombinedObservationDataSet : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0c28318670149d72,
-              mid_getDate_aaa854c403487cf3,
-              mid_getObservationData_a6156df500549a58,
-              mid_getPrnNumber_f2f64475e4580546,
-              mid_getRcvrClkOffset_456d9a2f64d6b28d,
-              mid_getSatelliteSystem_1b72fcc8f550bfc7,
+              mid_init$_78879f88aa7807cd,
+              mid_getDate_85703d13e302437e,
+              mid_getObservationData_2afa36052df4765d,
+              mid_getPrnNumber_570ce0828f81a2c1,
+              mid_getRcvrClkOffset_dff5885c2c873297,
+              mid_getSatelliteSystem_01acae5c1a253b8e,
               max_mid
             };
 

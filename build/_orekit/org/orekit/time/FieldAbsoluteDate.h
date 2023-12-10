@@ -3,36 +3,36 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace time {
-      class FieldTimeStamped;
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-      class TimeScales;
-      class FieldTimeShiftable;
-      class DateTimeComponents;
-      class DateComponents;
-      class Month;
-      class TimeScale;
-      class TimeComponents;
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
-    class Field;
-  }
-}
 namespace java {
+  namespace util {
+    class TimeZone;
+    class Date;
+  }
   namespace lang {
     class IllegalArgumentException;
     class Class;
     class String;
     class Comparable;
   }
-  namespace util {
-    class TimeZone;
-    class Date;
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class TimeScales;
+      class AbsoluteDate;
+      class FieldTimeShiftable;
+      class Month;
+      class DateComponents;
+      class FieldTimeStamped;
+      class DateTimeComponents;
+      class TimeComponents;
+      class FieldAbsoluteDate;
+      class TimeScale;
+    }
+  }
+  namespace hipparchus {
+    class Field;
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -44,79 +44,79 @@ namespace org {
       class FieldAbsoluteDate : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_205c34b8e33cf33f,
-          mid_init$_4755a82757aa97d9,
-          mid_init$_ec524e87348c3a08,
-          mid_init$_80058f185a6b4b35,
-          mid_init$_2e02d11b2b84552b,
-          mid_init$_d91841320b4d4f87,
-          mid_init$_720ad314d22b945b,
-          mid_init$_3d19303ecb965f91,
-          mid_init$_9840df2f97486f45,
-          mid_init$_bd22b120bed2ad7b,
-          mid_init$_c09a15c281545dfb,
-          mid_init$_dc1a59fc6ff312b6,
-          mid_init$_6eca69ab117c5598,
-          mid_init$_b45cd2005cdf72ee,
-          mid_init$_232d890b1a0eab17,
-          mid_compareTo_90583a249f651dc5,
-          mid_createBesselianEpoch_b179475577cb34cc,
-          mid_createBesselianEpoch_4fec374212b3e123,
-          mid_createGPSDate_be9d571ff63cfdfb,
-          mid_createGPSDate_65a00228a8497170,
-          mid_createJDDate_65a00228a8497170,
-          mid_createJulianEpoch_b179475577cb34cc,
-          mid_createJulianEpoch_4fec374212b3e123,
-          mid_createMJDDate_65a00228a8497170,
-          mid_durationFrom_6d1712f09a3dbe55,
-          mid_durationFrom_7bc0fd76ee915b72,
-          mid_equals_229c87223f486349,
-          mid_getArbitraryEpoch_f5242eafca7336d1,
-          mid_getCCSDSEpoch_f5242eafca7336d1,
-          mid_getComponents_35b9f69c73993da4,
-          mid_getComponents_9f0387d3e8c4d9e9,
-          mid_getComponents_cc66809e3a6a3d13,
-          mid_getComponents_2c20491308df7588,
-          mid_getComponents_bf941b87708f3b2b,
-          mid_getDate_09b0a926600dfc14,
-          mid_getField_70b4bbd3fa378d6b,
-          mid_getFiftiesEpoch_f5242eafca7336d1,
-          mid_getFutureInfinity_f5242eafca7336d1,
-          mid_getGPSEpoch_f5242eafca7336d1,
-          mid_getGalileoEpoch_f5242eafca7336d1,
-          mid_getJ2000Epoch_f5242eafca7336d1,
-          mid_getJavaEpoch_f5242eafca7336d1,
-          mid_getJulianEpoch_f5242eafca7336d1,
-          mid_getModifiedJulianEpoch_f5242eafca7336d1,
-          mid_getPastInfinity_f5242eafca7336d1,
-          mid_hasZeroField_e470b6d9e0d979db,
-          mid_hashCode_f2f64475e4580546,
-          mid_isAfter_99ba459ed031421b,
-          mid_isAfterOrEqualTo_99ba459ed031421b,
-          mid_isBefore_99ba459ed031421b,
-          mid_isBeforeOrEqualTo_99ba459ed031421b,
-          mid_isBetween_28a93535a0abcc76,
-          mid_isBetweenOrEqualTo_28a93535a0abcc76,
-          mid_isCloseTo_8549b0b631079127,
-          mid_isEqualTo_99ba459ed031421b,
-          mid_offsetFrom_56380e3faf4084f4,
-          mid_parseCCSDSCalendarSegmentedTimeCode_96f4bfec3e132622,
-          mid_parseCCSDSCalendarSegmentedTimeCode_76898e769dc3d563,
-          mid_parseCCSDSDaySegmentedTimeCode_5b8f932902581419,
-          mid_parseCCSDSDaySegmentedTimeCode_89b4cc857d22de7a,
-          mid_parseCCSDSUnsegmentedTimeCode_49f89ce3b3385442,
-          mid_parseCCSDSUnsegmentedTimeCode_7f8f89704ead9684,
-          mid_shiftedBy_d47015dfb61dc025,
-          mid_shiftedBy_b179475577cb34cc,
-          mid_timeScalesOffset_a09629a2ff24a390,
-          mid_toAbsoluteDate_aaa854c403487cf3,
-          mid_toDate_f64dbfcfe4c641a8,
-          mid_toString_0090f7797e403f43,
-          mid_toString_498d3d20a2b4a836,
-          mid_toString_90cbcc0b7a5ddae9,
-          mid_toString_44577b71ebe5fefb,
-          mid_toString_57a8fe1fee44b5a2,
-          mid_toString_6c05df8a55d4fe6c,
+          mid_init$_484998d88974267b,
+          mid_init$_c6316b0aa0f1cff4,
+          mid_init$_253621a7278b3102,
+          mid_init$_560bb100a19ff026,
+          mid_init$_15dd6ecec3fa3822,
+          mid_init$_1ee41df68a12de0d,
+          mid_init$_4c401f76448cafd8,
+          mid_init$_b1985c50995fed88,
+          mid_init$_accca367fd2836e4,
+          mid_init$_2b0f3313fc1f1d56,
+          mid_init$_71f13a000c355cd6,
+          mid_init$_a169c1d292e93a11,
+          mid_init$_0efcb67a9580bba2,
+          mid_init$_3bf19cbbb4abec10,
+          mid_init$_004c165304442a0a,
+          mid_compareTo_1e7a6890919ea8bb,
+          mid_createBesselianEpoch_1975a0ad09e731d5,
+          mid_createBesselianEpoch_ffb0d14929bb0e7b,
+          mid_createGPSDate_c7287fc8652e4072,
+          mid_createGPSDate_e08712afe0e9127d,
+          mid_createJDDate_e08712afe0e9127d,
+          mid_createJulianEpoch_1975a0ad09e731d5,
+          mid_createJulianEpoch_ffb0d14929bb0e7b,
+          mid_createMJDDate_e08712afe0e9127d,
+          mid_durationFrom_b48e5e8236744aca,
+          mid_durationFrom_2a5f05be83ff251d,
+          mid_equals_65c7d273e80d497a,
+          mid_getArbitraryEpoch_5db4a75a42bc8059,
+          mid_getCCSDSEpoch_5db4a75a42bc8059,
+          mid_getComponents_d6544458f233293b,
+          mid_getComponents_f3a5c409801be8e9,
+          mid_getComponents_b889282ad7e843b0,
+          mid_getComponents_279a1fb73805d842,
+          mid_getComponents_b4e48014e875ddbb,
+          mid_getDate_51da00d5b8a3b5df,
+          mid_getField_5b28be2d3632a5dc,
+          mid_getFiftiesEpoch_5db4a75a42bc8059,
+          mid_getFutureInfinity_5db4a75a42bc8059,
+          mid_getGPSEpoch_5db4a75a42bc8059,
+          mid_getGalileoEpoch_5db4a75a42bc8059,
+          mid_getJ2000Epoch_5db4a75a42bc8059,
+          mid_getJavaEpoch_5db4a75a42bc8059,
+          mid_getJulianEpoch_5db4a75a42bc8059,
+          mid_getModifiedJulianEpoch_5db4a75a42bc8059,
+          mid_getPastInfinity_5db4a75a42bc8059,
+          mid_hasZeroField_b108b35ef48e27bd,
+          mid_hashCode_570ce0828f81a2c1,
+          mid_isAfter_d4d0cc6198150b12,
+          mid_isAfterOrEqualTo_d4d0cc6198150b12,
+          mid_isBefore_d4d0cc6198150b12,
+          mid_isBeforeOrEqualTo_d4d0cc6198150b12,
+          mid_isBetween_ffe1f3825a966e21,
+          mid_isBetweenOrEqualTo_ffe1f3825a966e21,
+          mid_isCloseTo_6942757036a60841,
+          mid_isEqualTo_d4d0cc6198150b12,
+          mid_offsetFrom_832c907dd0da9d67,
+          mid_parseCCSDSCalendarSegmentedTimeCode_b27024900e752374,
+          mid_parseCCSDSCalendarSegmentedTimeCode_33b9e0348f37f80d,
+          mid_parseCCSDSDaySegmentedTimeCode_1e7a276cb7b92ed5,
+          mid_parseCCSDSDaySegmentedTimeCode_113287b76ca39b11,
+          mid_parseCCSDSUnsegmentedTimeCode_9bdef614b74efa9f,
+          mid_parseCCSDSUnsegmentedTimeCode_19ff818b316ddad5,
+          mid_shiftedBy_f9285ecfac057f19,
+          mid_shiftedBy_1975a0ad09e731d5,
+          mid_timeScalesOffset_c5a72d70ad4b89a5,
+          mid_toAbsoluteDate_85703d13e302437e,
+          mid_toDate_dc536aab1e2c5013,
+          mid_toString_11b109bd155ca898,
+          mid_toString_54668190d292adde,
+          mid_toString_8cc8a10236476f23,
+          mid_toString_e3ec59f6a2ed4d7c,
+          mid_toString_b931e891aeceaf16,
+          mid_toString_ed4d62dceac38f41,
           max_mid
         };
 

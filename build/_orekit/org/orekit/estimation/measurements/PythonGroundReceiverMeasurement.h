@@ -7,17 +7,17 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class ObservableSatellite;
         class EstimatedMeasurement;
-        class EstimatedMeasurementBase;
         class GroundStation;
+        class EstimatedMeasurementBase;
+        class ObservableSatellite;
       }
-    }
-    namespace propagation {
-      class SpacecraftState;
     }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace propagation {
+      class SpacecraftState;
     }
   }
 }
@@ -37,13 +37,13 @@ namespace org {
         class PythonGroundReceiverMeasurement : public ::org::orekit::estimation::measurements::GroundReceiverMeasurement {
          public:
           enum {
-            mid_init$_0922b0dcca6e1f60,
-            mid_finalize_7ae3461a92a43152,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
-            mid_theoreticalEvaluation_9d5a7270ffb14a9e,
-            mid_theoreticalEvaluationWithoutDerivatives_c188a3b50efa39a5,
+            mid_init$_d61b0753fbc5ddd9,
+            mid_finalize_0fa09c18fee449d5,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
+            mid_theoreticalEvaluation_27ef5cc84ad0852b,
+            mid_theoreticalEvaluationWithoutDerivatives_e32883476b3d9b22,
             max_mid
           };
 

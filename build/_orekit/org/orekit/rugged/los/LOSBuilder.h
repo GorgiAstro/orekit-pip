@@ -4,22 +4,22 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace rugged {
+      namespace los {
+        class LOSBuilder;
+        class TimeDependentLOS;
+        class LOSTransform;
+        class TimeIndependentLOSTransform;
+      }
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
           class Vector3D;
         }
-      }
-    }
-  }
-  namespace orekit {
-    namespace rugged {
-      namespace los {
-        class LOSBuilder;
-        class TimeIndependentLOSTransform;
-        class LOSTransform;
-        class TimeDependentLOS;
       }
     }
   }
@@ -42,10 +42,10 @@ namespace org {
         class LOSBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_65de9727799c5641,
-            mid_addTransform_f58a6a5347aa00ee,
-            mid_addTransform_dfab487c660c16fb,
-            mid_build_8a21357b2bb198c8,
+            mid_init$_de3e021e7266b71e,
+            mid_addTransform_cd61dd8248b3f5f8,
+            mid_addTransform_3fca5e167b9283bf,
+            mid_build_49fd8d1afbb96641,
             max_mid
           };
 

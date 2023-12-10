@@ -25,7 +25,7 @@ namespace org {
         class AdapterPropagator$DifferentialEffect : public ::java::lang::Object {
          public:
           enum {
-            mid_apply_81fc6fb6078d2aa7,
+            mid_apply_f43130c50e9fafeb,
             max_mid
           };
 

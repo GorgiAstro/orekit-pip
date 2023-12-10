@@ -12,11 +12,11 @@ namespace org {
       }
       class CalculusFieldUnivariateFunction;
     }
+    class CalculusFieldElement;
     namespace exception {
       class MathIllegalStateException;
       class MathIllegalArgumentException;
     }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -34,15 +34,15 @@ namespace org {
         class BracketedRealFieldUnivariateSolver : public ::java::lang::Object {
          public:
           enum {
-            mid_getAbsoluteAccuracy_e6d4d3215c30992a,
-            mid_getEvaluations_f2f64475e4580546,
-            mid_getFunctionValueAccuracy_e6d4d3215c30992a,
-            mid_getMaxEvaluations_f2f64475e4580546,
-            mid_getRelativeAccuracy_e6d4d3215c30992a,
-            mid_solve_5c3995ef461ab33a,
-            mid_solve_bd9fc31bb28b152c,
-            mid_solveInterval_5fff218b4cf3ea84,
-            mid_solveInterval_a9462a1ad9e05468,
+            mid_getAbsoluteAccuracy_eba8e72a22c984ac,
+            mid_getEvaluations_570ce0828f81a2c1,
+            mid_getFunctionValueAccuracy_eba8e72a22c984ac,
+            mid_getMaxEvaluations_570ce0828f81a2c1,
+            mid_getRelativeAccuracy_eba8e72a22c984ac,
+            mid_solve_6172cc3975e8c981,
+            mid_solve_2641ca05b8af2367,
+            mid_solveInterval_22f2fd692c77ef20,
+            mid_solveInterval_6c3f0bd7fafc24ed,
             max_mid
           };
 

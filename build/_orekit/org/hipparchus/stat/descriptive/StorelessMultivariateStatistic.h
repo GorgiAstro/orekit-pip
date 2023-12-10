@@ -18,11 +18,11 @@ namespace org {
         class StorelessMultivariateStatistic : public ::java::lang::Object {
          public:
           enum {
-            mid_clear_7ae3461a92a43152,
-            mid_getDimension_f2f64475e4580546,
-            mid_getN_a27fc9afd27e559d,
-            mid_getResult_7cdc325af0834901,
-            mid_increment_ebc26dcaf4761286,
+            mid_clear_0fa09c18fee449d5,
+            mid_getDimension_570ce0828f81a2c1,
+            mid_getN_492808a339bfa35f,
+            mid_getResult_60c7040667a7dc5c,
+            mid_increment_fa9d415d19f69361,
             max_mid
           };
 

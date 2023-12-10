@@ -4,32 +4,32 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace forces {
       namespace maneuvers {
-        class Control3DVectorCostType;
         namespace propulsion {
           class ThrustPropulsionModel;
         }
+        class Control3DVectorCostType;
       }
-    }
-    namespace propagation {
-      class SpacecraftState;
-      class FieldSpacecraftState;
     }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
     }
   }
 }
@@ -50,32 +50,32 @@ namespace org {
           class AbstractConstantThrustPropulsionModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0f1efbd8efdc5b6d,
-              mid_init$_341fcef9a4126498,
-              mid_getControl3DVectorCostType_9fb96072e0d6dbf0,
-              mid_getDirection_17a952530a808943,
-              mid_getDirection_71c51b45829333ce,
-              mid_getFlowRate_456d9a2f64d6b28d,
-              mid_getFlowRate_f05cb8c6dfd5e0b9,
-              mid_getFlowRate_05c598bf3375e090,
-              mid_getFlowRate_66a2f071e6ed0c06,
-              mid_getFlowRate_e912d21057defe63,
-              mid_getFlowRate_79518d097c897d26,
-              mid_getFlowRate_4368a5d862927c08,
-              mid_getIsp_456d9a2f64d6b28d,
-              mid_getIsp_e912d21057defe63,
-              mid_getName_0090f7797e403f43,
-              mid_getThrustMagnitude_456d9a2f64d6b28d,
-              mid_getThrustMagnitude_e912d21057defe63,
-              mid_getThrustVector_17a952530a808943,
-              mid_getThrustVector_0afb6e76c9566061,
-              mid_getThrustVector_31ec2b6903b76c9e,
-              mid_getThrustVector_78226ca7935182ea,
-              mid_getThrustVector_71c51b45829333ce,
-              mid_getThrustVector_78989e44b99f7cc2,
-              mid_getThrustVector_00aba28d3abe9a8c,
-              mid_getInitialThrustVector_17a952530a808943,
-              mid_getInitialFlowRate_456d9a2f64d6b28d,
+              mid_init$_06e1ed88b8b36bf6,
+              mid_init$_bd301e65f74781e6,
+              mid_getControl3DVectorCostType_67739b20d9566a8c,
+              mid_getDirection_d52645e0d4c07563,
+              mid_getDirection_24461752d0eea1e3,
+              mid_getFlowRate_dff5885c2c873297,
+              mid_getFlowRate_9dc1ec0bcc0a9a29,
+              mid_getFlowRate_f2dc4f0d2f87d390,
+              mid_getFlowRate_432f3d328c15ec82,
+              mid_getFlowRate_bf1d7732f1acb697,
+              mid_getFlowRate_0b7191d207b9680f,
+              mid_getFlowRate_8bdf60d5551eceaf,
+              mid_getIsp_dff5885c2c873297,
+              mid_getIsp_bf1d7732f1acb697,
+              mid_getName_11b109bd155ca898,
+              mid_getThrustMagnitude_dff5885c2c873297,
+              mid_getThrustMagnitude_bf1d7732f1acb697,
+              mid_getThrustVector_d52645e0d4c07563,
+              mid_getThrustVector_36619a55dd67cb97,
+              mid_getThrustVector_3cf6594f36d3d60d,
+              mid_getThrustVector_abc43395638fd218,
+              mid_getThrustVector_24461752d0eea1e3,
+              mid_getThrustVector_b42ac4b5bfb80fab,
+              mid_getThrustVector_8954761face5e1a7,
+              mid_getInitialThrustVector_d52645e0d4c07563,
+              mid_getInitialFlowRate_dff5885c2c873297,
               max_mid
             };
 
@@ -101,8 +101,8 @@ namespace org {
             ::org::hipparchus::CalculusFieldElement getFlowRate(const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
             jdouble getFlowRate(const ::org::orekit::propagation::SpacecraftState &) const;
             jdouble getFlowRate(const ::org::orekit::time::AbsoluteDate &) const;
-            ::org::hipparchus::CalculusFieldElement getFlowRate(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
             jdouble getFlowRate(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
+            ::org::hipparchus::CalculusFieldElement getFlowRate(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
             jdouble getIsp() const;
             jdouble getIsp(const ::org::orekit::time::AbsoluteDate &) const;
             ::java::lang::String getName() const;

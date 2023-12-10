@@ -5,21 +5,30 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
-    class CalculusFieldElement;
   }
   namespace orekit {
+    namespace frames {
+      class Frame;
+    }
+    namespace bodies {
+      class BodyShape;
+    }
     namespace time {
       class TimeScale;
       class AbsoluteDate;
       class FieldAbsoluteDate;
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
     }
     namespace models {
       namespace earth {
@@ -28,15 +37,6 @@ namespace org {
           class Atmosphere;
         }
       }
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace bodies {
-      class BodyShape;
-    }
-    namespace utils {
-      class PVCoordinatesProvider;
     }
   }
 }
@@ -56,13 +56,13 @@ namespace org {
           class JB2008 : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_659e747bd3adf751,
-              mid_init$_bb07b2e79fbd40d8,
-              mid_getDensity_ee5ac6667b0d4b90,
-              mid_getDensity_e3f5c4474b151066,
-              mid_getDensity_10897b7932924806,
-              mid_getDensity_415ce2e049156dda,
-              mid_getFrame_c8fe21bcdac65bf6,
+              mid_init$_938553a282dca92f,
+              mid_init$_1be121049dfb39fb,
+              mid_getDensity_b79d75c1a8af7374,
+              mid_getDensity_f7d7785230311c38,
+              mid_getDensity_8f9ca6bae567f561,
+              mid_getDensity_5801af748a6e81b4,
+              mid_getFrame_b86f9f61d97a7244,
               max_mid
             };
 
@@ -80,8 +80,8 @@ namespace org {
             JB2008(const ::org::orekit::models::earth::atmosphere::JB2008InputParameters &, const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::bodies::BodyShape &);
             JB2008(const ::org::orekit::models::earth::atmosphere::JB2008InputParameters &, const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::bodies::BodyShape &, const ::org::orekit::time::TimeScale &);
 
-            jdouble getDensity(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &) const;
             ::org::hipparchus::CalculusFieldElement getDensity(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &) const;
+            jdouble getDensity(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &) const;
             jdouble getDensity(jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble) const;
             ::org::hipparchus::CalculusFieldElement getDensity(const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::CalculusFieldElement &, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble) const;
             ::org::orekit::frames::Frame getFrame() const;

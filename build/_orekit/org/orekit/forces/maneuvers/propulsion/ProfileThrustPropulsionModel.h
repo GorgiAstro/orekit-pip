@@ -3,53 +3,53 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-    namespace stream {
-      class Stream;
-    }
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
+  namespace orekit {
+    namespace forces {
+      namespace maneuvers {
+        namespace propulsion {
+          class ThrustPropulsionModel;
+          class PolynomialThrustSegment;
         }
+        class Control3DVectorCostType;
       }
     }
-    class Field;
-    class CalculusFieldElement;
-  }
-  namespace orekit {
+    namespace propagation {
+      namespace events {
+        class EventDetector;
+        class FieldEventDetector;
+      }
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
     namespace utils {
       class TimeSpanMap;
       class ParameterDriver;
     }
-    namespace propagation {
-      namespace events {
-        class FieldEventDetector;
-        class EventDetector;
-      }
-      class SpacecraftState;
-      class FieldSpacecraftState;
-    }
-    namespace forces {
-      namespace maneuvers {
-        class Control3DVectorCostType;
-        namespace propulsion {
-          class PolynomialThrustSegment;
-          class ThrustPropulsionModel;
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
         }
       }
     }
+    class Field;
+  }
+}
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -63,18 +63,18 @@ namespace org {
           class ProfileThrustPropulsionModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_4d6da41a5acbac84,
-              mid_getControl3DVectorCostType_9fb96072e0d6dbf0,
-              mid_getEventDetectors_a68a17dd093f796d,
-              mid_getFieldEventDetectors_1328ddb491531a35,
-              mid_getFlowRate_66a2f071e6ed0c06,
-              mid_getFlowRate_79518d097c897d26,
-              mid_getFlowRate_4368a5d862927c08,
-              mid_getName_0090f7797e403f43,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_getThrustVector_78226ca7935182ea,
-              mid_getThrustVector_00aba28d3abe9a8c,
-              mid_getThrustVector_78989e44b99f7cc2,
+              mid_init$_f818c95c4dc4720b,
+              mid_getControl3DVectorCostType_67739b20d9566a8c,
+              mid_getEventDetectors_20f6d2b462aaef4b,
+              mid_getFieldEventDetectors_361313cd1a9c693a,
+              mid_getFlowRate_432f3d328c15ec82,
+              mid_getFlowRate_8bdf60d5551eceaf,
+              mid_getFlowRate_0b7191d207b9680f,
+              mid_getName_11b109bd155ca898,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_getThrustVector_abc43395638fd218,
+              mid_getThrustVector_8954761face5e1a7,
+              mid_getThrustVector_b42ac4b5bfb80fab,
               max_mid
             };
 

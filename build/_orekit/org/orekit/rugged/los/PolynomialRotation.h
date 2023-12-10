@@ -3,39 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace rugged {
-      namespace utils {
-        class DerivativeGenerator;
-      }
-      namespace los {
-        class LOSTransform;
-      }
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-    namespace analysis {
-      namespace polynomials {
-        class PolynomialFunction;
-      }
-    }
-  }
-}
 namespace java {
   namespace util {
     namespace stream {
@@ -45,6 +12,39 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+    namespace analysis {
+      namespace polynomials {
+        class PolynomialFunction;
+      }
+    }
+  }
+  namespace orekit {
+    namespace rugged {
+      namespace utils {
+        class DerivativeGenerator;
+      }
+      namespace los {
+        class LOSTransform;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
   }
 }
 template<class T> class JArray;
@@ -57,11 +57,11 @@ namespace org {
         class PolynomialRotation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_f3ddfbc8d7d5f3f3,
-            mid_init$_d0946bec099eed6a,
-            mid_getParametersDrivers_a68a17dd093f796d,
-            mid_transformLOS_074444dab4c2f526,
-            mid_transformLOS_c7e6a6851bf74340,
+            mid_init$_2b5df60ab5fcc3a1,
+            mid_init$_8a73e3626e76fc00,
+            mid_getParametersDrivers_20f6d2b462aaef4b,
+            mid_transformLOS_5bf59b7055ded983,
+            mid_transformLOS_ff297ae5ca0c9136,
             max_mid
           };
 

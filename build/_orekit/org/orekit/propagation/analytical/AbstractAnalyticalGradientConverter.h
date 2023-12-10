@@ -4,22 +4,22 @@
 #include "org/orekit/propagation/integration/AbstractGradientConverter.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace analysis {
-      namespace differentiation {
-        class Gradient;
-      }
-    }
-  }
   namespace orekit {
+    namespace utils {
+      class ParameterDriversProvider;
+    }
     namespace propagation {
       namespace analytical {
         class FieldAbstractAnalyticalPropagator;
       }
       class FieldSpacecraftState;
     }
-    namespace utils {
-      class ParameterDriversProvider;
+  }
+  namespace hipparchus {
+    namespace analysis {
+      namespace differentiation {
+        class Gradient;
+      }
     }
   }
 }
@@ -38,8 +38,8 @@ namespace org {
         class AbstractAnalyticalGradientConverter : public ::org::orekit::propagation::integration::AbstractGradientConverter {
          public:
           enum {
-            mid_getPropagator_6bbe2f82089c1fee,
-            mid_getState_a553824829fc2514,
+            mid_getPropagator_bfdeffa87b393212,
+            mid_getState_02cea343d9f71933,
             max_mid
           };
 

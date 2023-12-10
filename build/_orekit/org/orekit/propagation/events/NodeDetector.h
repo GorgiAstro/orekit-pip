@@ -34,12 +34,12 @@ namespace org {
         class NodeDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_b1992bd1bb70f476,
-            mid_init$_77b9fd425e59f30f,
-            mid_init$_b2b811ab68527504,
-            mid_g_66a2f071e6ed0c06,
-            mid_getFrame_c8fe21bcdac65bf6,
-            mid_create_06df47ed7751533d,
+            mid_init$_b5680f5c30eede66,
+            mid_init$_4e10a74243c36dbb,
+            mid_init$_361a443c800ec596,
+            mid_g_432f3d328c15ec82,
+            mid_getFrame_b86f9f61d97a7244,
+            mid_create_c0eff52c5752eb86,
             max_mid
           };
 

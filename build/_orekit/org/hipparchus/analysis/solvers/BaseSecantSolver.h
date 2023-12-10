@@ -8,8 +8,8 @@ namespace org {
     namespace analysis {
       namespace solvers {
         class BracketedUnivariateSolver$Interval;
-        class AllowedSolution;
         class BracketedUnivariateSolver;
+        class AllowedSolution;
       }
       class UnivariateFunction;
     }
@@ -34,12 +34,12 @@ namespace org {
         class BaseSecantSolver : public ::org::hipparchus::analysis::solvers::AbstractUnivariateSolver {
          public:
           enum {
-            mid_solve_0c4af17577847ef5,
-            mid_solve_5ec58f5d7d8b216f,
-            mid_solve_d096fb40d6053e92,
-            mid_solveInterval_f22794092f257ec3,
-            mid_doSolve_456d9a2f64d6b28d,
-            mid_doSolveInterval_315a1f5b2b06e1be,
+            mid_solve_ba3e208e0ba870dd,
+            mid_solve_136fe8df860928b8,
+            mid_solve_89bba4a49543a54f,
+            mid_solveInterval_fff76e1052c58572,
+            mid_doSolve_dff5885c2c873297,
+            mid_doSolveInterval_6f179d7662d75715,
             max_mid
           };
 

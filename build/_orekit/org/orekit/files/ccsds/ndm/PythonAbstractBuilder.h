@@ -3,20 +3,8 @@
 
 #include "org/orekit/files/ccsds/ndm/AbstractBuilder.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataContext;
-    }
-    namespace utils {
-      class IERSConventions;
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -26,9 +14,21 @@ namespace org {
         }
       }
     }
+    namespace data {
+      class DataContext;
+    }
+    namespace utils {
+      class IERSConventions;
+    }
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -42,12 +42,12 @@ namespace org {
           class PythonAbstractBuilder : public ::org::orekit::files::ccsds::ndm::AbstractBuilder {
            public:
             enum {
-              mid_init$_67016aa168f68e87,
-              mid_create_a463538f9bac0ff7,
-              mid_finalize_7ae3461a92a43152,
-              mid_pythonDecRef_7ae3461a92a43152,
-              mid_pythonExtension_a27fc9afd27e559d,
-              mid_pythonExtension_fefb08975c10f0a1,
+              mid_init$_d1492e6ffa3d6576,
+              mid_create_56bdb47287753acf,
+              mid_finalize_0fa09c18fee449d5,
+              mid_pythonDecRef_0fa09c18fee449d5,
+              mid_pythonExtension_492808a339bfa35f,
+              mid_pythonExtension_3a8e7649f31fdb20,
               max_mid
             };
 

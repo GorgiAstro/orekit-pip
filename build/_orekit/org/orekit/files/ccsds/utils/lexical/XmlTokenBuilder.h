@@ -3,16 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class Map;
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -24,6 +14,16 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace util {
+    class Map;
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -38,7 +38,7 @@ namespace org {
             class XmlTokenBuilder : public ::java::lang::Object {
              public:
               enum {
-                mid_buildTokens_9b67b2bd574b1d70,
+                mid_buildTokens_e5e9154f880f1aad,
                 max_mid
               };
 

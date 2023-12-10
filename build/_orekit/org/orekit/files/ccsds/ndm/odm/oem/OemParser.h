@@ -5,6 +5,13 @@
 
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataContext;
+      class DataSource;
+    }
+    namespace utils {
+      class IERSConventions;
+    }
     namespace files {
       namespace general {
         class EphemerisFileParser;
@@ -24,13 +31,6 @@ namespace org {
           class FileFormat;
         }
       }
-    }
-    namespace data {
-      class DataSource;
-      class DataContext;
-    }
-    namespace utils {
-      class IERSConventions;
     }
     namespace time {
       class AbsoluteDate;
@@ -55,19 +55,19 @@ namespace org {
               class OemParser : public ::org::orekit::files::ccsds::ndm::odm::OdmParser {
                public:
                 enum {
-                  mid_build_6d486fddb64861be,
-                  mid_finalizeData_e470b6d9e0d979db,
-                  mid_finalizeHeader_e470b6d9e0d979db,
-                  mid_finalizeMetadata_e470b6d9e0d979db,
-                  mid_getHeader_720b26b998d380f3,
-                  mid_inData_e470b6d9e0d979db,
-                  mid_inHeader_e470b6d9e0d979db,
-                  mid_inMetadata_e470b6d9e0d979db,
-                  mid_parse_cd6052b624eba070,
-                  mid_prepareData_e470b6d9e0d979db,
-                  mid_prepareHeader_e470b6d9e0d979db,
-                  mid_prepareMetadata_e470b6d9e0d979db,
-                  mid_reset_052c3a3464b50355,
+                  mid_build_41dbf5f5dbc535bb,
+                  mid_finalizeData_b108b35ef48e27bd,
+                  mid_finalizeHeader_b108b35ef48e27bd,
+                  mid_finalizeMetadata_b108b35ef48e27bd,
+                  mid_getHeader_3423aca890fca0cd,
+                  mid_inData_b108b35ef48e27bd,
+                  mid_inHeader_b108b35ef48e27bd,
+                  mid_inMetadata_b108b35ef48e27bd,
+                  mid_parse_6aaadb6771c9dc74,
+                  mid_prepareData_b108b35ef48e27bd,
+                  mid_prepareHeader_b108b35ef48e27bd,
+                  mid_prepareMetadata_b108b35ef48e27bd,
+                  mid_reset_e250621f009e45db,
                   max_mid
                 };
 

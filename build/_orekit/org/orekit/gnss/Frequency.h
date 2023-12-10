@@ -26,13 +26,13 @@ namespace org {
       class Frequency : public ::java::lang::Enum {
        public:
         enum {
-          mid_getMHzFrequency_456d9a2f64d6b28d,
-          mid_getName_0090f7797e403f43,
-          mid_getRatio_456d9a2f64d6b28d,
-          mid_getSatelliteSystem_1b72fcc8f550bfc7,
-          mid_getWavelength_456d9a2f64d6b28d,
-          mid_valueOf_59da85d6220c7837,
-          mid_values_5156f52fac3e4acd,
+          mid_getMHzFrequency_dff5885c2c873297,
+          mid_getName_11b109bd155ca898,
+          mid_getRatio_dff5885c2c873297,
+          mid_getSatelliteSystem_01acae5c1a253b8e,
+          mid_getWavelength_dff5885c2c873297,
+          mid_valueOf_2192d0dab4622314,
+          mid_values_8c105a5d2fb680c7,
           max_mid
         };
 

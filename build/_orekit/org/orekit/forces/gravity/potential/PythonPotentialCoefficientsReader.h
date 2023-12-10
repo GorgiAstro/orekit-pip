@@ -4,6 +4,9 @@
 #include "org/orekit/forces/gravity/potential/PotentialCoefficientsReader.h"
 
 namespace java {
+  namespace text {
+    class ParseException;
+  }
   namespace io {
     class IOException;
     class InputStream;
@@ -13,24 +16,21 @@ namespace java {
     class Class;
     class String;
   }
-  namespace text {
-    class ParseException;
-  }
 }
 namespace org {
   namespace orekit {
-    namespace errors {
-      class OrekitException;
-    }
-    namespace time {
-      class TimeScale;
-    }
     namespace forces {
       namespace gravity {
         namespace potential {
           class RawSphericalHarmonicsProvider;
         }
       }
+    }
+    namespace errors {
+      class OrekitException;
+    }
+    namespace time {
+      class TimeScale;
     }
   }
 }
@@ -45,14 +45,14 @@ namespace org {
           class PythonPotentialCoefficientsReader : public ::org::orekit::forces::gravity::potential::PotentialCoefficientsReader {
            public:
             enum {
-              mid_init$_d1dd1bdcf55f8f80,
-              mid_init$_ead6ed0365e2cf97,
-              mid_finalize_7ae3461a92a43152,
-              mid_getProvider_086897fc27688c23,
-              mid_loadData_ec60cb5f4b3de555,
-              mid_pythonDecRef_7ae3461a92a43152,
-              mid_pythonExtension_a27fc9afd27e559d,
-              mid_pythonExtension_fefb08975c10f0a1,
+              mid_init$_d6df10f4e35ef1e8,
+              mid_init$_b0bdaadf6311e767,
+              mid_finalize_0fa09c18fee449d5,
+              mid_getProvider_fc0a96c558346426,
+              mid_loadData_1815f85c118161ad,
+              mid_pythonDecRef_0fa09c18fee449d5,
+              mid_pythonExtension_492808a339bfa35f,
+              mid_pythonExtension_3a8e7649f31fdb20,
               max_mid
             };
 

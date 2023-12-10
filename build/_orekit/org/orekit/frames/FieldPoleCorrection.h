@@ -22,9 +22,9 @@ namespace org {
       class FieldPoleCorrection : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_46c20bc1304e9cc4,
-          mid_getXp_e6d4d3215c30992a,
-          mid_getYp_e6d4d3215c30992a,
+          mid_init$_eee0c82b0b9e16e9,
+          mid_getXp_eba8e72a22c984ac,
+          mid_getYp_eba8e72a22c984ac,
           max_mid
         };
 

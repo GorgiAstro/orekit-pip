@@ -27,7 +27,7 @@ namespace org {
       class DirectoryCrawler : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_46e66c77c82c9a6b,
+          mid_init$_0613af62f2ba5dba,
           max_mid
         };
 

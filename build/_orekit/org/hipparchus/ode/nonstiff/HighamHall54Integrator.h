@@ -18,14 +18,14 @@ namespace org {
         class HighamHall54Integrator : public ::org::hipparchus::ode::nonstiff::EmbeddedRungeKuttaIntegrator {
          public:
           enum {
-            mid_init$_e5787c5177784e12,
-            mid_init$_667a7965403ed91a,
-            mid_getA_43de1192439efa92,
-            mid_getB_7cdc325af0834901,
-            mid_getC_7cdc325af0834901,
-            mid_getOrder_f2f64475e4580546,
-            mid_createInterpolator_b25e5cc9fd980192,
-            mid_estimateError_8ae23a975a0e5320,
+            mid_init$_36e977212374ff6b,
+            mid_init$_b0a935b68e41d65a,
+            mid_getA_0358d8ea02f2cdb1,
+            mid_getB_60c7040667a7dc5c,
+            mid_getC_60c7040667a7dc5c,
+            mid_getOrder_570ce0828f81a2c1,
+            mid_createInterpolator_9f516095b43771c0,
+            mid_estimateError_c892cfaf07a4634f,
             max_mid
           };
 

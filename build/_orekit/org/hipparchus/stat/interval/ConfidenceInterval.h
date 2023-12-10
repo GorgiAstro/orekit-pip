@@ -19,11 +19,11 @@ namespace org {
         class ConfidenceInterval : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_d0d6094fbd7015c5,
-            mid_getConfidenceLevel_456d9a2f64d6b28d,
-            mid_getLowerBound_456d9a2f64d6b28d,
-            mid_getUpperBound_456d9a2f64d6b28d,
-            mid_toString_0090f7797e403f43,
+            mid_init$_2c56b6dd4d4b1dec,
+            mid_getConfidenceLevel_dff5885c2c873297,
+            mid_getLowerBound_dff5885c2c873297,
+            mid_getUpperBound_dff5885c2c873297,
+            mid_toString_11b109bd155ca898,
             max_mid
           };
 

@@ -23,11 +23,11 @@ namespace java {
     class AttributedCharacterIterator$Attribute : public ::java::lang::Object {
      public:
       enum {
-        mid_equals_229c87223f486349,
-        mid_hashCode_f2f64475e4580546,
-        mid_toString_0090f7797e403f43,
-        mid_getName_0090f7797e403f43,
-        mid_readResolve_dfd7647d9110ac9f,
+        mid_equals_65c7d273e80d497a,
+        mid_hashCode_570ce0828f81a2c1,
+        mid_toString_11b109bd155ca898,
+        mid_getName_11b109bd155ca898,
+        mid_readResolve_4d26fd885228c716,
         max_mid
       };
 

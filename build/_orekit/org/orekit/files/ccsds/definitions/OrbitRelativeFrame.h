@@ -34,10 +34,10 @@ namespace org {
           class OrbitRelativeFrame : public ::java::lang::Enum {
            public:
             enum {
-              mid_getLofType_c33b33ba21325973,
-              mid_isQuasiInertial_e470b6d9e0d979db,
-              mid_valueOf_6f0e325aceb8b595,
-              mid_values_0fcde4b3cf6bd14d,
+              mid_getLofType_91870b5ccc8bfe11,
+              mid_isQuasiInertial_b108b35ef48e27bd,
+              mid_valueOf_7860784f720f632e,
+              mid_values_69adb65e1dcea51d,
               max_mid
             };
 

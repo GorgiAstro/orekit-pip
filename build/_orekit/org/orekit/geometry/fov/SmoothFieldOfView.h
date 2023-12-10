@@ -12,15 +12,6 @@ namespace java {
   }
 }
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-    }
-  }
   namespace orekit {
     namespace bodies {
       class OneAxisEllipsoid;
@@ -28,6 +19,15 @@ namespace org {
     }
     namespace frames {
       class Transform;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
     }
   }
 }
@@ -41,12 +41,12 @@ namespace org {
         class SmoothFieldOfView : public ::org::orekit::geometry::fov::AbstractFieldOfView {
          public:
           enum {
-            mid_getCenter_17a952530a808943,
-            mid_getFootprint_260aa711ad5a5b78,
-            mid_getX_17a952530a808943,
-            mid_getY_17a952530a808943,
-            mid_getZ_17a952530a808943,
-            mid_directionAt_5f993a721a1d8c59,
+            mid_getCenter_d52645e0d4c07563,
+            mid_getFootprint_d179f90e70a637c1,
+            mid_getX_d52645e0d4c07563,
+            mid_getY_d52645e0d4c07563,
+            mid_getZ_d52645e0d4c07563,
+            mid_directionAt_9137bba253a33d9c,
             max_mid
           };
 

@@ -17,22 +17,22 @@ namespace org {
   }
   namespace orekit {
     namespace frames {
-      class LocalMagneticFieldFrame$LOFBuilderVector;
       class Frame;
       class LOF;
+      class LocalMagneticFieldFrame$LOFBuilderVector;
     }
     namespace models {
       namespace earth {
         class GeoMagneticField;
       }
     }
-    namespace utils {
-      class PVCoordinates;
-      class FieldPVCoordinates;
-    }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
+    namespace utils {
+      class FieldPVCoordinates;
+      class PVCoordinates;
     }
   }
 }
@@ -51,13 +51,13 @@ namespace org {
       class LocalMagneticFieldFrame : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_e10339a361902022,
-          mid_init$_d350d92215d291fa,
-          mid_getInertialFrame_c8fe21bcdac65bf6,
-          mid_getMagneticField_b16f46e2ba1f1c67,
-          mid_getName_0090f7797e403f43,
-          mid_rotationFromInertial_95b12e29918a648c,
-          mid_rotationFromInertial_346e8a02c9c839ea,
+          mid_init$_b0f7c520931e76f7,
+          mid_init$_9a03926a6d1be3ee,
+          mid_getInertialFrame_b86f9f61d97a7244,
+          mid_getMagneticField_ce929c60ccd126d8,
+          mid_getName_11b109bd155ca898,
+          mid_rotationFromInertial_475182fd71c6851b,
+          mid_rotationFromInertial_076f35c1feeb36b3,
           max_mid
         };
 

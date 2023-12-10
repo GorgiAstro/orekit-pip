@@ -38,9 +38,9 @@ namespace org {
         class STKEphemerisFile : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7bfd6f81d2d9c987,
-            mid_getSTKVersion_0090f7797e403f43,
-            mid_getSatellites_d6753b7055940a54,
+            mid_init$_82d6648e75220ef9,
+            mid_getSTKVersion_11b109bd155ca898,
+            mid_getSatellites_6f5a75ccd8c04465,
             max_mid
           };
 

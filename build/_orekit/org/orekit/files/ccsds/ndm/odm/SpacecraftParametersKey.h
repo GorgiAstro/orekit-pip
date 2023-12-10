@@ -9,15 +9,15 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace odm {
-            class SpacecraftParametersKey;
             class SpacecraftParameters;
+            class SpacecraftParametersKey;
           }
         }
         namespace utils {
-          class ContextBinding;
           namespace lexical {
             class ParseToken;
           }
+          class ContextBinding;
         }
       }
     }
@@ -41,9 +41,9 @@ namespace org {
             class SpacecraftParametersKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_2af9cb2c7a28b83c,
-                mid_valueOf_69f702e734d2f199,
-                mid_values_00864d635520c9f3,
+                mid_process_d213af3eb9d365fb,
+                mid_valueOf_e7dc05c51a8d3f1d,
+                mid_values_ef310c9d00ed9809,
                 max_mid
               };
 

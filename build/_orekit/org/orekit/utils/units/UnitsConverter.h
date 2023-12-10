@@ -29,11 +29,11 @@ namespace org {
         class UnitsConverter : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_74efa9420cae4dd5,
-            mid_convert_0ba5fed9597b693e,
-            mid_getFrom_196b004fd4585106,
-            mid_getTo_196b004fd4585106,
-            mid_toString_0090f7797e403f43,
+            mid_init$_41b87a6cf64869ff,
+            mid_convert_dcbc7ce2902fa136,
+            mid_getFrom_de9b417ee3c58e2e,
+            mid_getTo_de9b417ee3c58e2e,
+            mid_toString_11b109bd155ca898,
             max_mid
           };
 

@@ -5,6 +5,7 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace special {
       namespace elliptic {
         namespace jacobi {
@@ -12,7 +13,6 @@ namespace org {
         }
       }
     }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -31,9 +31,9 @@ namespace org {
           class FieldJacobiTheta : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_03a16642f77779e7,
-              mid_getQ_e6d4d3215c30992a,
-              mid_values_712c0545ee634cb2,
+              mid_init$_072c8635f2164db9,
+              mid_getQ_eba8e72a22c984ac,
+              mid_values_2f1d8d2235142141,
               max_mid
             };
 

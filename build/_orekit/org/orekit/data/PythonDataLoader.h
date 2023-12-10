@@ -4,6 +4,9 @@
 #include "java/lang/Object.h"
 
 namespace java {
+  namespace text {
+    class ParseException;
+  }
   namespace io {
     class IOException;
     class InputStream;
@@ -12,9 +15,6 @@ namespace java {
     class Throwable;
     class Class;
     class String;
-  }
-  namespace text {
-    class ParseException;
   }
 }
 namespace org {
@@ -33,13 +33,13 @@ namespace org {
       class PythonDataLoader : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_finalize_7ae3461a92a43152,
-          mid_loadData_ec60cb5f4b3de555,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
-          mid_stillAcceptsData_e470b6d9e0d979db,
+          mid_init$_0fa09c18fee449d5,
+          mid_finalize_0fa09c18fee449d5,
+          mid_loadData_1815f85c118161ad,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
+          mid_stillAcceptsData_b108b35ef48e27bd,
           max_mid
         };
 

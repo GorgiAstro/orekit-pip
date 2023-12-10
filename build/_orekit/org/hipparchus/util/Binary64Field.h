@@ -3,6 +3,14 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace util {
@@ -10,14 +18,6 @@ namespace org {
       class Binary64Field;
     }
     class Field;
-  }
-}
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -29,12 +29,12 @@ namespace org {
       class Binary64Field : public ::java::lang::Object {
        public:
         enum {
-          mid_equals_229c87223f486349,
-          mid_getInstance_8494a3ac3be399fe,
-          mid_getOne_cd1f6a49ec3a1b51,
-          mid_getRuntimeClass_8f66acc08d2a174c,
-          mid_getZero_cd1f6a49ec3a1b51,
-          mid_hashCode_f2f64475e4580546,
+          mid_equals_65c7d273e80d497a,
+          mid_getInstance_14507bc75861defc,
+          mid_getOne_b1b326d1f24984aa,
+          mid_getRuntimeClass_7c16c5008b34b3db,
+          mid_getZero_b1b326d1f24984aa,
+          mid_hashCode_570ce0828f81a2c1,
           max_mid
         };
 

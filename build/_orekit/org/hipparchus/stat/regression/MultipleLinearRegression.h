@@ -18,11 +18,11 @@ namespace org {
         class MultipleLinearRegression : public ::java::lang::Object {
          public:
           enum {
-            mid_estimateRegressandVariance_456d9a2f64d6b28d,
-            mid_estimateRegressionParameters_7cdc325af0834901,
-            mid_estimateRegressionParametersStandardErrors_7cdc325af0834901,
-            mid_estimateRegressionParametersVariance_43de1192439efa92,
-            mid_estimateResiduals_7cdc325af0834901,
+            mid_estimateRegressandVariance_dff5885c2c873297,
+            mid_estimateRegressionParameters_60c7040667a7dc5c,
+            mid_estimateRegressionParametersStandardErrors_60c7040667a7dc5c,
+            mid_estimateRegressionParametersVariance_0358d8ea02f2cdb1,
+            mid_estimateResiduals_60c7040667a7dc5c,
             max_mid
           };
 

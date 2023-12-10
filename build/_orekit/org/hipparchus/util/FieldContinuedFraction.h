@@ -25,12 +25,12 @@ namespace org {
       class FieldContinuedFraction : public ::java::lang::Object {
        public:
         enum {
-          mid_evaluate_d3398190482814dc,
-          mid_evaluate_e6afc264a8ab5469,
-          mid_evaluate_fe52a10392d0b9c8,
-          mid_evaluate_f287dd1a2b476f59,
-          mid_getA_ee7db4b2ec7048ce,
-          mid_getB_ee7db4b2ec7048ce,
+          mid_evaluate_a4b1871f4d29e58b,
+          mid_evaluate_40cfe74535da4622,
+          mid_evaluate_7fc015d41da5fb84,
+          mid_evaluate_76ee700af6f4010d,
+          mid_getA_e2b464e41c9ba627,
+          mid_getB_e2b464e41c9ba627,
           max_mid
         };
 

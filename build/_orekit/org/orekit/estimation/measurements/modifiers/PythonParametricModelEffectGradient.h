@@ -3,14 +3,13 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace analysis {
-      namespace differentiation {
-        class Gradient;
-      }
-    }
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
   }
+}
+namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
@@ -21,11 +20,12 @@ namespace org {
       class FieldSpacecraftState;
     }
   }
-}
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
+  namespace hipparchus {
+    namespace analysis {
+      namespace differentiation {
+        class Gradient;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -39,12 +39,12 @@ namespace org {
           class PythonParametricModelEffectGradient : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_evaluate_ad7e9246d8119323,
-              mid_finalize_7ae3461a92a43152,
-              mid_pythonDecRef_7ae3461a92a43152,
-              mid_pythonExtension_a27fc9afd27e559d,
-              mid_pythonExtension_fefb08975c10f0a1,
+              mid_init$_0fa09c18fee449d5,
+              mid_evaluate_7c87c759b9f2948c,
+              mid_finalize_0fa09c18fee449d5,
+              mid_pythonDecRef_0fa09c18fee449d5,
+              mid_pythonExtension_492808a339bfa35f,
+              mid_pythonExtension_3a8e7649f31fdb20,
               max_mid
             };
 

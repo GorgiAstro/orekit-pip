@@ -25,11 +25,11 @@ namespace org {
       class BaseMultivariateOptimizer : public ::org::hipparchus::optim::BaseOptimizer {
        public:
         enum {
-          mid_getLowerBound_7cdc325af0834901,
-          mid_getStartPoint_7cdc325af0834901,
-          mid_getUpperBound_7cdc325af0834901,
-          mid_optimize_2543bc354d0aa7ca,
-          mid_parseOptimizationData_a5cd04a701a45f77,
+          mid_getLowerBound_60c7040667a7dc5c,
+          mid_getStartPoint_60c7040667a7dc5c,
+          mid_getUpperBound_60c7040667a7dc5c,
+          mid_optimize_19319236ce3fd082,
+          mid_parseOptimizationData_3d26e9f3a1d7e833,
           max_mid
         };
 

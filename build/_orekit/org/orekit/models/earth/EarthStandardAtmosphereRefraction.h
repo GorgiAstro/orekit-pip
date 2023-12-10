@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace models {
       class AtmosphericRefractionModel;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,13 +25,13 @@ namespace org {
         class EarthStandardAtmosphereRefraction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_init$_1d715fa3b7b756e1,
-            mid_getPressure_456d9a2f64d6b28d,
-            mid_getRefraction_0ba5fed9597b693e,
-            mid_getTemperature_456d9a2f64d6b28d,
-            mid_setPressure_77e0f9a1f260e2e5,
-            mid_setTemperature_77e0f9a1f260e2e5,
+            mid_init$_0fa09c18fee449d5,
+            mid_init$_8f2e782d5278b131,
+            mid_getPressure_dff5885c2c873297,
+            mid_getRefraction_dcbc7ce2902fa136,
+            mid_getTemperature_dff5885c2c873297,
+            mid_setPressure_17db3a65980d3441,
+            mid_setTemperature_17db3a65980d3441,
             max_mid
           };
 

@@ -34,8 +34,8 @@ namespace org {
             class DataQuality : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_57b262c05e83cf48,
-                mid_values_7fed206b06543ff4,
+                mid_valueOf_dd253ef20b2e73bc,
+                mid_values_401fb777498c930f,
                 max_mid
               };
 

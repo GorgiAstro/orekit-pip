@@ -3,6 +3,39 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace forces {
+      namespace maneuvers {
+        namespace propulsion {
+          class ThrustPropulsionModel;
+        }
+        class Control3DVectorCostType;
+      }
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,39 +43,6 @@ namespace java {
   namespace lang {
     class Throwable;
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-    class CalculusFieldElement;
-  }
-  namespace orekit {
-    namespace forces {
-      namespace maneuvers {
-        class Control3DVectorCostType;
-        namespace propulsion {
-          class ThrustPropulsionModel;
-        }
-      }
-    }
-    namespace propagation {
-      class SpacecraftState;
-      class FieldSpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
   }
 }
 template<class T> class JArray;
@@ -56,20 +56,20 @@ namespace org {
           class PythonThrustPropulsionModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_finalize_7ae3461a92a43152,
-              mid_getControl3DVectorCostType_9fb96072e0d6dbf0,
-              mid_getFlowRate_66a2f071e6ed0c06,
-              mid_getFlowRate_79518d097c897d26,
-              mid_getFlowRate_4368a5d862927c08,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_getThrustVector_78226ca7935182ea,
-              mid_getThrustVector_00aba28d3abe9a8c,
-              mid_getThrustVector_78989e44b99f7cc2,
-              mid_init_3d13474d79f5e7bc,
-              mid_pythonDecRef_7ae3461a92a43152,
-              mid_pythonExtension_a27fc9afd27e559d,
-              mid_pythonExtension_fefb08975c10f0a1,
+              mid_init$_0fa09c18fee449d5,
+              mid_finalize_0fa09c18fee449d5,
+              mid_getControl3DVectorCostType_67739b20d9566a8c,
+              mid_getFlowRate_432f3d328c15ec82,
+              mid_getFlowRate_8bdf60d5551eceaf,
+              mid_getFlowRate_0b7191d207b9680f,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_getThrustVector_abc43395638fd218,
+              mid_getThrustVector_b42ac4b5bfb80fab,
+              mid_getThrustVector_8954761face5e1a7,
+              mid_init_826b4eda94da4e78,
+              mid_pythonDecRef_0fa09c18fee449d5,
+              mid_pythonExtension_492808a339bfa35f,
+              mid_pythonExtension_3a8e7649f31fdb20,
               max_mid
             };
 
@@ -93,8 +93,8 @@ namespace org {
             jdouble getFlowRate(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
             ::java::util::List getParametersDrivers() const;
             ::org::hipparchus::geometry::euclidean::threed::Vector3D getThrustVector(const ::org::orekit::propagation::SpacecraftState &) const;
-            ::org::hipparchus::geometry::euclidean::threed::Vector3D getThrustVector(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
             ::org::hipparchus::geometry::euclidean::threed::FieldVector3D getThrustVector(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
+            ::org::hipparchus::geometry::euclidean::threed::Vector3D getThrustVector(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
             void init(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::time::AbsoluteDate &) const;
             void pythonDecRef() const;
             jlong pythonExtension() const;

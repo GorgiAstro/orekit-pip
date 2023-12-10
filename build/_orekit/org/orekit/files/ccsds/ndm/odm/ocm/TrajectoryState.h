@@ -5,20 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeStamped;
-      class AbsoluteDate;
-    }
-    namespace bodies {
-      class OneAxisEllipsoid;
-    }
-    namespace utils {
-      namespace units {
-        class Unit;
-      }
-      class CartesianDerivativesFilter;
-      class TimeStampedPVCoordinates;
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -29,6 +15,20 @@ namespace org {
           }
         }
       }
+    }
+    namespace utils {
+      namespace units {
+        class Unit;
+      }
+      class CartesianDerivativesFilter;
+      class TimeStampedPVCoordinates;
+    }
+    namespace bodies {
+      class OneAxisEllipsoid;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeStamped;
     }
   }
 }
@@ -54,13 +54,13 @@ namespace org {
               class TrajectoryState : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_555a8c2f3364fe15,
-                  mid_init$_05ae99dd5376ef2f,
-                  mid_getAvailableDerivatives_237181d932324188,
-                  mid_getDate_aaa854c403487cf3,
-                  mid_getElements_7cdc325af0834901,
-                  mid_getType_89f4b16f0349faa4,
-                  mid_toCartesian_933d5fd77d5f8558,
+                  mid_init$_0d3cc9d72a4f2928,
+                  mid_init$_43d47814b78412bd,
+                  mid_getAvailableDerivatives_16e9a7b5414faf2d,
+                  mid_getDate_85703d13e302437e,
+                  mid_getElements_60c7040667a7dc5c,
+                  mid_getType_f6a584069fbe1b12,
+                  mid_toCartesian_e4aeebae5229dc38,
                   max_mid
                 };
 

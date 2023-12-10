@@ -32,8 +32,8 @@ namespace org {
           class IgsSsrDataField : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_ae9fa00729b31d7a,
-              mid_values_b54889a9109650f6,
+              mid_valueOf_7a2bfdb291445824,
+              mid_values_953a8768ccab919f,
               max_mid
             };
 

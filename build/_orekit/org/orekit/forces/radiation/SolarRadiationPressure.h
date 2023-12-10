@@ -4,6 +4,17 @@
 #include "org/orekit/forces/radiation/AbstractRadiationForceModel.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace forces {
       namespace radiation {
@@ -21,17 +32,6 @@ namespace org {
       class ParameterDriver;
       class ExtendedPVCoordinatesProvider;
     }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -52,13 +52,13 @@ namespace org {
         class SolarRadiationPressure : public ::org::orekit::forces::radiation::AbstractRadiationForceModel {
          public:
           enum {
-            mid_init$_7df9bc8521d0f47a,
-            mid_init$_8d693bdc6a4d68ef,
-            mid_acceleration_78989e44b99f7cc2,
-            mid_acceleration_00aba28d3abe9a8c,
-            mid_getLightingRatio_cc79c2733879de35,
-            mid_getLightingRatio_66a2f071e6ed0c06,
-            mid_getParametersDrivers_a6156df500549a58,
+            mid_init$_eb8e6d3dab9933fd,
+            mid_init$_a14707e8e69d92fb,
+            mid_acceleration_b42ac4b5bfb80fab,
+            mid_acceleration_8954761face5e1a7,
+            mid_getLightingRatio_41a008afe53da855,
+            mid_getLightingRatio_432f3d328c15ec82,
+            mid_getParametersDrivers_2afa36052df4765d,
             max_mid
           };
 

@@ -6,13 +6,13 @@
 namespace org {
   namespace orekit {
     namespace propagation {
-      namespace events {
-        class FieldEventDetector;
-        class FieldEventState$EventOccurrence;
-      }
-      class FieldSpacecraftState;
       namespace sampling {
         class FieldOrekitStepInterpolator;
+      }
+      class FieldSpacecraftState;
+      namespace events {
+        class FieldEventState$EventOccurrence;
+        class FieldEventDetector;
       }
     }
     namespace time {
@@ -40,15 +40,15 @@ namespace org {
         class FieldEventState : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_1843b26af41f9c8e,
-            mid_doEvent_712613581bbc2369,
-            mid_evaluateStep_9bee9e614071a5f1,
-            mid_getEventDate_09b0a926600dfc14,
-            mid_getEventDetector_9afb3f6694da2222,
-            mid_getPendingEvent_e470b6d9e0d979db,
-            mid_init_acdd8180a5dc1a8d,
-            mid_reinitializeBegin_9eedcf3b856fcc75,
-            mid_tryAdvance_d8b60a0d4cf666c7,
+            mid_init$_f929ebd2a84dbfe7,
+            mid_doEvent_64e3f7fbad9633b0,
+            mid_evaluateStep_9e297a99a072e460,
+            mid_getEventDate_51da00d5b8a3b5df,
+            mid_getEventDetector_4fe06ecc019ea51d,
+            mid_getPendingEvent_b108b35ef48e27bd,
+            mid_init_8e8de2be1664674a,
+            mid_reinitializeBegin_edb529c141e8d4a9,
+            mid_tryAdvance_0c4e1f72634cc9b1,
             max_mid
           };
 

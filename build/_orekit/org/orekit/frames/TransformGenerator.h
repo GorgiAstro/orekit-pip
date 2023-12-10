@@ -34,8 +34,8 @@ namespace org {
       class TransformGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7d82f57afcc5208d,
-          mid_generate_b7149ea6787a6f3c,
+          mid_init$_db9023fa4795e93d,
+          mid_generate_8060cef9318d72e3,
           max_mid
         };
 

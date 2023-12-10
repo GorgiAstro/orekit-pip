@@ -25,17 +25,17 @@ namespace org {
         class GeometricDistribution : public ::org::hipparchus::distribution::discrete::AbstractIntegerDistribution {
          public:
           enum {
-            mid_init$_77e0f9a1f260e2e5,
-            mid_cumulativeProbability_b772323fc98b7293,
-            mid_getNumericalMean_456d9a2f64d6b28d,
-            mid_getNumericalVariance_456d9a2f64d6b28d,
-            mid_getProbabilityOfSuccess_456d9a2f64d6b28d,
-            mid_getSupportLowerBound_f2f64475e4580546,
-            mid_getSupportUpperBound_f2f64475e4580546,
-            mid_inverseCumulativeProbability_12ebab281ee35c98,
-            mid_isSupportConnected_e470b6d9e0d979db,
-            mid_logProbability_b772323fc98b7293,
-            mid_probability_b772323fc98b7293,
+            mid_init$_17db3a65980d3441,
+            mid_cumulativeProbability_46f85b53d9aedd96,
+            mid_getNumericalMean_dff5885c2c873297,
+            mid_getNumericalVariance_dff5885c2c873297,
+            mid_getProbabilityOfSuccess_dff5885c2c873297,
+            mid_getSupportLowerBound_570ce0828f81a2c1,
+            mid_getSupportUpperBound_570ce0828f81a2c1,
+            mid_inverseCumulativeProbability_4508852644846c83,
+            mid_isSupportConnected_b108b35ef48e27bd,
+            mid_logProbability_46f85b53d9aedd96,
+            mid_probability_46f85b53d9aedd96,
             max_mid
           };
 

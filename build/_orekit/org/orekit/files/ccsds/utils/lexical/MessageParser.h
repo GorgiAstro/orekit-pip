@@ -9,8 +9,8 @@ namespace org {
       namespace ccsds {
         namespace utils {
           namespace lexical {
-            class XmlTokenBuilder;
             class ParseToken;
+            class XmlTokenBuilder;
           }
           class FileFormat;
         }
@@ -42,13 +42,13 @@ namespace org {
             class MessageParser : public ::java::lang::Object {
              public:
               enum {
-                mid_build_dfd7647d9110ac9f,
-                mid_getFileFormat_b51f613f857a5e84,
-                mid_getFormatVersionKey_0090f7797e403f43,
-                mid_getSpecialXmlElementsBuilders_d6753b7055940a54,
-                mid_parseMessage_691778b38b11996d,
-                mid_process_9b91a684064d0956,
-                mid_reset_052c3a3464b50355,
+                mid_build_4d26fd885228c716,
+                mid_getFileFormat_66298c6188053be6,
+                mid_getFormatVersionKey_11b109bd155ca898,
+                mid_getSpecialXmlElementsBuilders_6f5a75ccd8c04465,
+                mid_parseMessage_455adfd4ae4ab630,
+                mid_process_60c6e06c33a7585b,
+                mid_reset_e250621f009e45db,
                 max_mid
               };
 

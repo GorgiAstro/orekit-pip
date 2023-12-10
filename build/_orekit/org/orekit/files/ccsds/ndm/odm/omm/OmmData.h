@@ -9,12 +9,12 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace odm {
+            class SpacecraftParameters;
             class KeplerianElements;
-            class UserDefined;
             namespace omm {
               class OmmTle;
             }
-            class SpacecraftParameters;
+            class UserDefined;
             class CartesianCovariance;
           }
         }
@@ -43,14 +43,14 @@ namespace org {
               class OmmData : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_f549949310db6566,
-                  mid_getCovarianceBlock_5a3868cb67b566ca,
-                  mid_getKeplerianElementsBlock_5ef7d45a76a827d2,
-                  mid_getMass_456d9a2f64d6b28d,
-                  mid_getSpacecraftParametersBlock_df8be17b569173ba,
-                  mid_getTLEBlock_34d881eec65a98f7,
-                  mid_getUserDefinedBlock_dc0ba09fd1c52b52,
-                  mid_validate_77e0f9a1f260e2e5,
+                  mid_init$_0a0bd3ea612b410b,
+                  mid_getCovarianceBlock_cf101600575330c7,
+                  mid_getKeplerianElementsBlock_c379fe2f6979132e,
+                  mid_getMass_dff5885c2c873297,
+                  mid_getSpacecraftParametersBlock_60188820d73f1019,
+                  mid_getTLEBlock_e5c2ae68d23414ce,
+                  mid_getUserDefinedBlock_8d3e5fabdafb8483,
+                  mid_validate_17db3a65980d3441,
                   max_mid
                 };
 

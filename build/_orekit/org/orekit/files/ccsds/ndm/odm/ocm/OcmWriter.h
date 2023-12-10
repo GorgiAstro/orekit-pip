@@ -8,20 +8,20 @@ namespace org {
     namespace data {
       class DataContext;
     }
+    namespace utils {
+      class IERSConventions;
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
           namespace odm {
-            class OdmHeader;
             namespace ocm {
               class Ocm;
             }
+            class OdmHeader;
           }
         }
       }
-    }
-    namespace utils {
-      class IERSConventions;
     }
   }
 }
@@ -43,10 +43,10 @@ namespace org {
               class OcmWriter : public ::org::orekit::files::ccsds::utils::generation::AbstractMessageWriter {
                public:
                 enum {
-                  mid_init$_9d1c41cc4d1bd153,
-                  mid_getEquatorialRadius_456d9a2f64d6b28d,
-                  mid_getFlattening_456d9a2f64d6b28d,
-                  mid_writeSegmentContent_17bd99da1e106002,
+                  mid_init$_076e559209c6d5a4,
+                  mid_getEquatorialRadius_dff5885c2c873297,
+                  mid_getFlattening_dff5885c2c873297,
+                  mid_writeSegmentContent_a4679b5cde76d825,
                   max_mid
                 };
 

@@ -25,11 +25,11 @@ namespace org {
       class PolynomialNutation : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_ebc26dcaf4761286,
-          mid_derivative_0ba5fed9597b693e,
-          mid_derivative_d3398190482814dc,
-          mid_value_0ba5fed9597b693e,
-          mid_value_d3398190482814dc,
+          mid_init$_fa9d415d19f69361,
+          mid_derivative_dcbc7ce2902fa136,
+          mid_derivative_a4b1871f4d29e58b,
+          mid_value_dcbc7ce2902fa136,
+          mid_value_a4b1871f4d29e58b,
           max_mid
         };
 

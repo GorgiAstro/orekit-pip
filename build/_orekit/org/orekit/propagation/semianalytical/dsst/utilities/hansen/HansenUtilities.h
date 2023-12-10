@@ -43,10 +43,10 @@ namespace org {
               class HansenUtilities : public ::java::lang::Object {
                public:
                 enum {
-                  mid_buildIdentityMatrix2_6e6d1d93619046bf,
-                  mid_buildIdentityMatrix4_6e6d1d93619046bf,
-                  mid_buildZeroMatrix2_6e6d1d93619046bf,
-                  mid_buildZeroMatrix4_6e6d1d93619046bf,
+                  mid_buildIdentityMatrix2_4e10566f7fc4170b,
+                  mid_buildIdentityMatrix4_4e10566f7fc4170b,
+                  mid_buildZeroMatrix2_4e10566f7fc4170b,
+                  mid_buildZeroMatrix4_4e10566f7fc4170b,
                   max_mid
                 };
 

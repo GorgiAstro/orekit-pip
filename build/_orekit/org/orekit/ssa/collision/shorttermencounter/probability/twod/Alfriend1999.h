@@ -3,6 +3,11 @@
 
 #include "org/orekit/ssa/collision/shorttermencounter/probability/twod/AbstractAlfriend1999.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace ssa {
@@ -18,11 +23,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -36,9 +36,9 @@ namespace org {
               class Alfriend1999 : public ::org::orekit::ssa::collision::shorttermencounter::probability::twod::AbstractAlfriend1999 {
                public:
                 enum {
-                  mid_init$_7ae3461a92a43152,
-                  mid_getType_830fb81b25fc6619,
-                  mid_isAMaximumProbabilityOfCollisionMethod_e470b6d9e0d979db,
+                  mid_init$_0fa09c18fee449d5,
+                  mid_getType_5d7ecb27bb5e3bc3,
+                  mid_isAMaximumProbabilityOfCollisionMethod_b108b35ef48e27bd,
                   max_mid
                 };
 

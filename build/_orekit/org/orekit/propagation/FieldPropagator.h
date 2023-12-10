@@ -3,17 +3,10 @@
 
 #include "org/orekit/utils/FieldPVCoordinatesProvider.h"
 
-namespace java {
-  namespace util {
-    class List;
-    class Collection;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace propagation {
       namespace sampling {
@@ -21,12 +14,12 @@ namespace org {
         class FieldOrekitFixedStepHandler;
         class FieldOrekitStepHandler;
       }
-      namespace events {
-        class FieldEventDetector;
-      }
       class FieldEphemerisGenerator;
       class FieldSpacecraftState;
       class FieldAdditionalStateProvider;
+      namespace events {
+        class FieldEventDetector;
+      }
     }
     namespace frames {
       class Frame;
@@ -38,8 +31,15 @@ namespace org {
       class FieldAbsoluteDate;
     }
   }
-  namespace hipparchus {
-    class CalculusFieldElement;
+}
+namespace java {
+  namespace util {
+    class List;
+    class Collection;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -51,25 +51,25 @@ namespace org {
       class FieldPropagator : public ::org::orekit::utils::FieldPVCoordinatesProvider {
        public:
         enum {
-          mid_addAdditionalStateProvider_a97b38ef37f9ad9f,
-          mid_addEventDetector_1843b26af41f9c8e,
-          mid_clearEventsDetectors_7ae3461a92a43152,
-          mid_clearStepHandlers_7ae3461a92a43152,
-          mid_getAdditionalStateProviders_a6156df500549a58,
-          mid_getAttitudeProvider_5cce95036ae870ba,
-          mid_getEphemerisGenerator_a9ea70419e870eb4,
-          mid_getEventsDetectors_cfcfd130f9013e3e,
-          mid_getFrame_c8fe21bcdac65bf6,
-          mid_getInitialState_a553824829fc2514,
-          mid_getManagedAdditionalStates_0f62ccf08eef5924,
-          mid_getMultiplexer_e40bff2c3349a3fd,
-          mid_isAdditionalStateManaged_6b161f495ea569b8,
-          mid_propagate_85b5a3e9101d7c1f,
-          mid_propagate_195e701ebc75aca3,
-          mid_resetInitialState_52154b94d63e10ed,
-          mid_setAttitudeProvider_8109c1a27d4471d3,
-          mid_setStepHandler_94968e6ff3f0c115,
-          mid_setStepHandler_d41b45a1d6944ab5,
+          mid_addAdditionalStateProvider_2c8cec257f03501f,
+          mid_addEventDetector_f929ebd2a84dbfe7,
+          mid_clearEventsDetectors_0fa09c18fee449d5,
+          mid_clearStepHandlers_0fa09c18fee449d5,
+          mid_getAdditionalStateProviders_2afa36052df4765d,
+          mid_getAttitudeProvider_a904f3d015a354a0,
+          mid_getEphemerisGenerator_54ac43f1e933cf20,
+          mid_getEventsDetectors_37528d110cff6b74,
+          mid_getFrame_b86f9f61d97a7244,
+          mid_getInitialState_02cea343d9f71933,
+          mid_getManagedAdditionalStates_692f4257baa8d3c3,
+          mid_getMultiplexer_805c1ec2ab9b09dd,
+          mid_isAdditionalStateManaged_7edad2c2f64f4d68,
+          mid_propagate_f6f1ea8aef3019eb,
+          mid_propagate_fc770c29e3468de8,
+          mid_resetInitialState_1463d3d0d52f94dd,
+          mid_setAttitudeProvider_3cff7c75ea06698c,
+          mid_setStepHandler_16d47a327666f5ff,
+          mid_setStepHandler_465bcdb67e0beb29,
           max_mid
         };
 

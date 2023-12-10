@@ -8,8 +8,8 @@ namespace org {
     namespace models {
       namespace earth {
         class GeoMagneticFieldFactory$FieldModel;
-        class LazyLoadedGeoMagneticFields;
         class GeoMagneticField;
+        class LazyLoadedGeoMagneticFields;
       }
     }
   }
@@ -29,10 +29,10 @@ namespace org {
         class GeoMagneticFieldFactory : public ::java::lang::Object {
          public:
           enum {
-            mid_getField_391592e224573f6b,
-            mid_getGeoMagneticFields_2e55f41473500ba6,
-            mid_getIGRF_e74dfaa8c09512d5,
-            mid_getWMM_e74dfaa8c09512d5,
+            mid_getField_4aeee65bc3c68b0b,
+            mid_getGeoMagneticFields_df53e62f422caa08,
+            mid_getIGRF_11ad1d91265636f7,
+            mid_getWMM_11ad1d91265636f7,
             max_mid
           };
 

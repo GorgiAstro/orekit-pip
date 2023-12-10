@@ -9,29 +9,29 @@ namespace org {
       namespace euclidean {
         namespace threed {
           class Rotation;
-          class Vector3D;
           class FieldRotation;
+          class Vector3D;
         }
       }
     }
   }
   namespace orekit {
+    namespace attitudes {
+      class Attitude;
+      class FieldAttitude;
+      class AttitudeProvider;
+    }
     namespace frames {
       class Frame;
     }
-    namespace attitudes {
-      class AttitudeProvider;
-      class Attitude;
-      class FieldAttitude;
-    }
-    namespace utils {
-      class TimeStampedFieldPVCoordinates;
-      class TimeStampedPVCoordinates;
-      class FieldPVCoordinatesProvider;
-      class PVCoordinatesProvider;
-    }
     namespace bodies {
       class BodyShape;
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
+      class TimeStampedPVCoordinates;
+      class TimeStampedFieldPVCoordinates;
     }
     namespace time {
       class AbsoluteDate;
@@ -53,13 +53,13 @@ namespace org {
       class LofOffsetPointing : public ::org::orekit::attitudes::GroundPointing {
        public:
         enum {
-          mid_init$_d0d2c3c0a71896e1,
-          mid_getAttitude_455b5c75f9292826,
-          mid_getAttitude_5341a8481841f90c,
-          mid_getAttitudeRotation_969253bc78d7a272,
-          mid_getAttitudeRotation_01363f58d35f60d4,
-          mid_getTargetPV_ab0341569f219f18,
-          mid_getTargetPV_99b96e260ceb5fe3,
+          mid_init$_0178a01d39650a2f,
+          mid_getAttitude_4e541876ea7d5bd0,
+          mid_getAttitude_d2b70935d932b5c5,
+          mid_getAttitudeRotation_53a81d4d17b13463,
+          mid_getAttitudeRotation_29422c22de775b74,
+          mid_getTargetPV_ad3e02e6f0d115f2,
+          mid_getTargetPV_129d59e5c897146f,
           max_mid
         };
 

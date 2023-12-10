@@ -16,9 +16,9 @@ namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
-        class BooleanDetector;
         class EventDetector;
         class NegateDetector;
+        class BooleanDetector;
       }
       class SpacecraftState;
     }
@@ -37,15 +37,15 @@ namespace org {
         class BooleanDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_andCombine_3b5251c30061a389,
-            mid_andCombine_aafdea58edae91a2,
-            mid_g_66a2f071e6ed0c06,
-            mid_getDetectors_a6156df500549a58,
-            mid_init_3d13474d79f5e7bc,
-            mid_notCombine_1a0c1817f5f3b165,
-            mid_orCombine_3b5251c30061a389,
-            mid_orCombine_aafdea58edae91a2,
-            mid_create_cf5ebd5d94c498e8,
+            mid_andCombine_b15d84f0a93d6582,
+            mid_andCombine_3ba49cb77100f442,
+            mid_g_432f3d328c15ec82,
+            mid_getDetectors_2afa36052df4765d,
+            mid_init_826b4eda94da4e78,
+            mid_notCombine_c3d38f1c3023fb5c,
+            mid_orCombine_b15d84f0a93d6582,
+            mid_orCombine_3ba49cb77100f442,
+            mid_create_6836ef893f7e495f,
             max_mid
           };
 

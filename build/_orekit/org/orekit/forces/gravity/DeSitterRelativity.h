@@ -5,29 +5,29 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
-    class CalculusFieldElement;
   }
   namespace orekit {
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
+    namespace forces {
+      class ForceModel;
+    }
     namespace utils {
       class ParameterDriver;
     }
     namespace bodies {
       class CelestialBody;
-    }
-    namespace forces {
-      class ForceModel;
-    }
-    namespace propagation {
-      class SpacecraftState;
-      class FieldSpacecraftState;
     }
   }
 }
@@ -50,14 +50,14 @@ namespace org {
         class DeSitterRelativity : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_init$_43ec4ee4a0809dae,
-            mid_acceleration_78989e44b99f7cc2,
-            mid_acceleration_00aba28d3abe9a8c,
-            mid_dependsOnPositionOnly_e470b6d9e0d979db,
-            mid_getEarth_798caa59db6076aa,
-            mid_getParametersDrivers_a6156df500549a58,
-            mid_getSun_798caa59db6076aa,
+            mid_init$_0fa09c18fee449d5,
+            mid_init$_628ee7a3e714b75c,
+            mid_acceleration_8954761face5e1a7,
+            mid_acceleration_b42ac4b5bfb80fab,
+            mid_dependsOnPositionOnly_b108b35ef48e27bd,
+            mid_getEarth_624686a38a6b107c,
+            mid_getParametersDrivers_2afa36052df4765d,
+            mid_getSun_624686a38a6b107c,
             max_mid
           };
 
@@ -77,8 +77,8 @@ namespace org {
           DeSitterRelativity();
           DeSitterRelativity(const ::org::orekit::bodies::CelestialBody &, const ::org::orekit::bodies::CelestialBody &);
 
-          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
+          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           jboolean dependsOnPositionOnly() const;
           ::org::orekit::bodies::CelestialBody getEarth() const;
           ::java::util::List getParametersDrivers() const;

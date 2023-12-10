@@ -4,13 +4,13 @@
 #include "org/orekit/propagation/FieldPropagator.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace time {
       class FieldAbsoluteDate;
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -27,8 +27,8 @@ namespace org {
       class FieldBoundedPropagator : public ::org::orekit::propagation::FieldPropagator {
        public:
         enum {
-          mid_getMaxDate_09b0a926600dfc14,
-          mid_getMinDate_09b0a926600dfc14,
+          mid_getMaxDate_51da00d5b8a3b5df,
+          mid_getMinDate_51da00d5b8a3b5df,
           max_mid
         };
 

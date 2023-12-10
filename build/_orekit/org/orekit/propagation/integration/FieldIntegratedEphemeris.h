@@ -3,6 +3,36 @@
 
 #include "org/orekit/propagation/analytical/FieldAbstractAnalyticalPropagator.h"
 
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace ode {
+      class FieldDenseOutputModel;
+    }
+  }
+  namespace orekit {
+    namespace propagation {
+      class FieldBoundedPropagator;
+      namespace integration {
+        class FieldStateMapper;
+      }
+      class FieldSpacecraftState;
+      class PropagationType;
+      class FieldAdditionalStateProvider;
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace utils {
+      class ParameterDriver;
+      class FieldArrayDictionary;
+      class TimeStampedFieldPVCoordinates;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,36 +40,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace integration {
-        class FieldStateMapper;
-      }
-      class FieldBoundedPropagator;
-      class PropagationType;
-      class FieldSpacecraftState;
-      class FieldAdditionalStateProvider;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace utils {
-      class TimeStampedFieldPVCoordinates;
-      class FieldArrayDictionary;
-      class ParameterDriver;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
-    namespace ode {
-      class FieldDenseOutputModel;
-    }
   }
 }
 template<class T> class JArray;
@@ -52,19 +52,19 @@ namespace org {
         class FieldIntegratedEphemeris : public ::org::orekit::propagation::analytical::FieldAbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_17e9d8e90cccc843,
-            mid_getFrame_c8fe21bcdac65bf6,
-            mid_getInitialState_a553824829fc2514,
-            mid_getMaxDate_09b0a926600dfc14,
-            mid_getMinDate_09b0a926600dfc14,
-            mid_getPVCoordinates_0e277b7d6a64b75a,
-            mid_getParametersDrivers_a6156df500549a58,
-            mid_resetInitialState_52154b94d63e10ed,
-            mid_getMass_7bc0fd76ee915b72,
-            mid_resetIntermediateState_c76342d42407aa3d,
-            mid_propagateOrbit_edf76d94987be4ff,
-            mid_basicPropagate_85b5a3e9101d7c1f,
-            mid_updateAdditionalStates_db7b9ef879f5b135,
+            mid_init$_f22820b10b676d9e,
+            mid_getFrame_b86f9f61d97a7244,
+            mid_getInitialState_02cea343d9f71933,
+            mid_getMaxDate_51da00d5b8a3b5df,
+            mid_getMinDate_51da00d5b8a3b5df,
+            mid_getPVCoordinates_2cdae1c350dc3e9a,
+            mid_getParametersDrivers_2afa36052df4765d,
+            mid_resetInitialState_1463d3d0d52f94dd,
+            mid_propagateOrbit_3de5e0312fd3e848,
+            mid_getMass_2a5f05be83ff251d,
+            mid_resetIntermediateState_33f1c56ea7775d4e,
+            mid_updateAdditionalStates_25e81e971666cba6,
+            mid_basicPropagate_f6f1ea8aef3019eb,
             max_mid
           };
 

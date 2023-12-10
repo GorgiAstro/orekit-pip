@@ -4,15 +4,17 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace propagation {
-      class FieldSpacecraftState;
       namespace semianalytical {
         namespace dsst {
           namespace forces {
+            class DSSTForceModel;
             class ShortPeriodTerms;
             class FieldShortPeriodTerms;
-            class DSSTForceModel;
           }
           namespace utilities {
             class AuxiliaryElements;
@@ -20,8 +22,9 @@ namespace org {
           }
         }
       }
-      class SpacecraftState;
+      class FieldSpacecraftState;
       class PropagationType;
+      class SpacecraftState;
     }
     namespace attitudes {
       class AttitudeProvider;
@@ -29,9 +32,6 @@ namespace org {
     namespace utils {
       class ParameterDriver;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -55,19 +55,19 @@ namespace org {
             class PythonDSSTForceModel : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_finalize_7ae3461a92a43152,
-                mid_getMeanElementRate_3b4b4fe187ad73ff,
-                mid_getMeanElementRate_5265bce9e9da3506,
-                mid_getParametersDrivers_a6156df500549a58,
-                mid_initializeShortPeriodTerms_74f227e9e3e51225,
-                mid_initializeShortPeriodTerms_46b1d1d9daf3396d,
-                mid_pythonDecRef_7ae3461a92a43152,
-                mid_pythonExtension_a27fc9afd27e559d,
-                mid_pythonExtension_fefb08975c10f0a1,
-                mid_registerAttitudeProvider_8109c1a27d4471d3,
-                mid_updateShortPeriodTerms_6839803ab3ef216d,
-                mid_updateShortPeriodTerms_8df221610d0cb785,
+                mid_init$_0fa09c18fee449d5,
+                mid_finalize_0fa09c18fee449d5,
+                mid_getMeanElementRate_5dbca2d049b16b82,
+                mid_getMeanElementRate_c0df8831049775b0,
+                mid_getParametersDrivers_2afa36052df4765d,
+                mid_initializeShortPeriodTerms_cd6a8183d9477030,
+                mid_initializeShortPeriodTerms_c7d75d32fd67f743,
+                mid_pythonDecRef_0fa09c18fee449d5,
+                mid_pythonExtension_492808a339bfa35f,
+                mid_pythonExtension_3a8e7649f31fdb20,
+                mid_registerAttitudeProvider_3cff7c75ea06698c,
+                mid_updateShortPeriodTerms_a9748e634dd1c969,
+                mid_updateShortPeriodTerms_120865f9c5cc3bda,
                 max_mid
               };
 

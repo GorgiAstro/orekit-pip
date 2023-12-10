@@ -9,9 +9,9 @@ namespace org {
       namespace nonstiff {
         class ButcherArrayProvider;
       }
+      class ODEState;
       class ExpandableODE;
       class OrdinaryDifferentialEquation;
-      class ODEState;
       class ODEStateAndDerivative;
     }
     namespace exception {
@@ -35,10 +35,10 @@ namespace org {
         class RungeKuttaIntegrator : public ::org::hipparchus::ode::AbstractIntegrator {
          public:
           enum {
-            mid_getDefaultStep_456d9a2f64d6b28d,
-            mid_integrate_7efcd57267e426c3,
-            mid_singleStep_eafa4a11995bfc56,
-            mid_createInterpolator_34096714306c5ce7,
+            mid_getDefaultStep_dff5885c2c873297,
+            mid_integrate_3c1cc820e563e3e9,
+            mid_singleStep_ab3ac540cd7660e4,
+            mid_createInterpolator_3c3452116c60fd90,
             max_mid
           };
 

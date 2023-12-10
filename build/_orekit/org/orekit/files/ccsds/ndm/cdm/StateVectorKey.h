@@ -7,16 +7,16 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace utils {
+          namespace lexical {
+            class ParseToken;
+          }
+          class ContextBinding;
+        }
         namespace ndm {
           namespace cdm {
             class StateVectorKey;
             class StateVector;
-          }
-        }
-        namespace utils {
-          class ContextBinding;
-          namespace lexical {
-            class ParseToken;
           }
         }
       }
@@ -41,9 +41,9 @@ namespace org {
             class StateVectorKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_f14cb17eabe77de8,
-                mid_valueOf_f5a9d2543c537b87,
-                mid_values_4bf250de44d625ca,
+                mid_process_f8f7a567969e7515,
+                mid_valueOf_ba97dfc4480c4cda,
+                mid_values_3fc4437687e2c37f,
                 max_mid
               };
 

@@ -22,9 +22,9 @@ namespace org {
       class FieldMatrixChangingVisitor : public ::java::lang::Object {
        public:
         enum {
-          mid_end_7e89936bdf79375b,
-          mid_start_47d591670cfcc314,
-          mid_visit_ad4e446b355be785,
+          mid_end_99097cb60cf2d774,
+          mid_start_5aa4d40be6f39408,
+          mid_visit_67d71003e110b686,
           max_mid
         };
 

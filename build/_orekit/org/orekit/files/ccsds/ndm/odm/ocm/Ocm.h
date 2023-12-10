@@ -3,38 +3,6 @@
 
 #include "org/orekit/files/ccsds/ndm/NdmConstituent.h"
 
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ccsds {
-        namespace section {
-          class Segment;
-        }
-        namespace ndm {
-          namespace odm {
-            namespace ocm {
-              class OcmSatelliteEphemeris;
-              class OcmData;
-              class TrajectoryStateHistory;
-              class OcmMetadata;
-            }
-            class OdmHeader;
-          }
-        }
-      }
-      namespace general {
-        class EphemerisFile;
-      }
-    }
-    namespace data {
-      class DataContext;
-    }
-    namespace utils {
-      class IERSConventions;
-      class TimeStampedPVCoordinates;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -43,6 +11,38 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace data {
+      class DataContext;
+    }
+    namespace utils {
+      class IERSConventions;
+      class TimeStampedPVCoordinates;
+    }
+    namespace files {
+      namespace ccsds {
+        namespace ndm {
+          namespace odm {
+            namespace ocm {
+              class OcmSatelliteEphemeris;
+              class TrajectoryStateHistory;
+              class OcmData;
+              class OcmMetadata;
+            }
+            class OdmHeader;
+          }
+        }
+        namespace section {
+          class Segment;
+        }
+      }
+      namespace general {
+        class EphemerisFile;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -58,10 +58,10 @@ namespace org {
               class Ocm : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
                public:
                 enum {
-                  mid_init$_c312acee610c8d08,
-                  mid_getData_aee447d86b4306bb,
-                  mid_getMetadata_a76147a70c173790,
-                  mid_getSatellites_d6753b7055940a54,
+                  mid_init$_2b261aaf5054b0fb,
+                  mid_getData_881b04544853ed71,
+                  mid_getMetadata_ad80b8a9eaa21be5,
+                  mid_getSatellites_6f5a75ccd8c04465,
                   max_mid
                 };
 

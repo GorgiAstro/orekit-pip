@@ -14,13 +14,13 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace files {
       namespace ilrs {
         class CRD$MeteorologicalMeasurement;
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -34,9 +34,9 @@ namespace org {
         class CRD$Meteo : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a0cbc2e5c81cd156,
-            mid_getData_a6156df500549a58,
-            mid_getMeteo_5b3f917bfd70ec40,
+            mid_init$_5794fd067b349f51,
+            mid_getData_2afa36052df4765d,
+            mid_getMeteo_09bf2b6fa95d5f91,
             max_mid
           };
 

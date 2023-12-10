@@ -19,8 +19,8 @@ namespace org {
           class LegendreRuleFactory : public ::org::hipparchus::analysis::integration::gauss::AbstractRuleFactory {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_computeRule_086dd68d091255ed,
+              mid_init$_0fa09c18fee449d5,
+              mid_computeRule_e670405dd33862ee,
               max_mid
             };
 

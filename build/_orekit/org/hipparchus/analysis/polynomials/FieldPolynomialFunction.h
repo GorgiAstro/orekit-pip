@@ -5,18 +5,18 @@
 
 namespace org {
   namespace hipparchus {
-    class Field;
+    namespace analysis {
+      namespace polynomials {
+        class FieldPolynomialFunction;
+      }
+      class CalculusFieldUnivariateFunction;
+    }
+    class CalculusFieldElement;
     namespace exception {
       class NullArgumentException;
       class MathIllegalArgumentException;
     }
-    class CalculusFieldElement;
-    namespace analysis {
-      class CalculusFieldUnivariateFunction;
-      namespace polynomials {
-        class FieldPolynomialFunction;
-      }
-    }
+    class Field;
   }
 }
 namespace java {
@@ -34,22 +34,22 @@ namespace org {
         class FieldPolynomialFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_4c337e4c1ec6f647,
-            mid_add_32f3b75a8b9571d6,
-            mid_antiDerivative_26bb6c8ddaa2c385,
-            mid_degree_f2f64475e4580546,
-            mid_getCoefficients_01c7d10e96d5cf94,
-            mid_getField_70b4bbd3fa378d6b,
-            mid_integrate_df565f90ecf8d53c,
-            mid_integrate_75c7ce7d33e7324b,
-            mid_multiply_32f3b75a8b9571d6,
-            mid_negate_26bb6c8ddaa2c385,
-            mid_polynomialDerivative_26bb6c8ddaa2c385,
-            mid_subtract_32f3b75a8b9571d6,
-            mid_value_cc0a3d6abf820939,
-            mid_value_d3398190482814dc,
-            mid_evaluate_068ef23bc9763e86,
-            mid_differentiate_45349640cfb1ab66,
+            mid_init$_72479ee08453ef97,
+            mid_add_4aedbc69798b856a,
+            mid_antiDerivative_720ebd8423470629,
+            mid_degree_570ce0828f81a2c1,
+            mid_getCoefficients_226a0b2040b1d2e1,
+            mid_getField_5b28be2d3632a5dc,
+            mid_integrate_50936f84b69df8dc,
+            mid_integrate_6746cc1cd9210d54,
+            mid_multiply_4aedbc69798b856a,
+            mid_negate_720ebd8423470629,
+            mid_polynomialDerivative_720ebd8423470629,
+            mid_subtract_4aedbc69798b856a,
+            mid_value_616c74807d7607b4,
+            mid_value_a4b1871f4d29e58b,
+            mid_evaluate_beb0e1dee0021bcf,
+            mid_differentiate_401cf8a1b53fb909,
             max_mid
           };
 

@@ -5,26 +5,26 @@
 
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataSource;
-    }
-    namespace time {
-      class TimeScale;
-      class AbsoluteDate;
-    }
     namespace models {
       namespace earth {
         namespace atmosphere {
-          class NRLMSISE00InputParameters;
+          class DTM2000InputParameters;
           namespace data {
             class AbstractSolarActivityDataLoader;
           }
-          class DTM2000InputParameters;
+          class NRLMSISE00InputParameters;
         }
       }
     }
+    namespace data {
+      class DataSource;
+    }
     namespace utils {
       class GenericTimeStampedCache;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeScale;
     }
   }
 }
@@ -46,14 +46,14 @@ namespace org {
             class AbstractSolarActivityData : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a50d29c52c558493,
-                mid_getCache_46988589dce382bb,
-                mid_getMaxDate_aaa854c403487cf3,
-                mid_getMinDate_aaa854c403487cf3,
-                mid_getSupportedNames_0090f7797e403f43,
-                mid_getUTC_63ac10047983bd43,
-                mid_getLinearInterpolation_78b9b84952a70e2a,
-                mid_getLinearInterpolation_335e665ed012e281,
+                mid_init$_95385b40b770812b,
+                mid_getCache_222ebc0312d0c79f,
+                mid_getMaxDate_85703d13e302437e,
+                mid_getMinDate_85703d13e302437e,
+                mid_getSupportedNames_11b109bd155ca898,
+                mid_getUTC_c39031284193adbe,
+                mid_getLinearInterpolation_2bcc607c23873da3,
+                mid_getLinearInterpolation_9828589d31627fd3,
                 max_mid
               };
 

@@ -4,23 +4,20 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
-    namespace data {
-      class DataSource;
-      class DataProvidersManager;
-    }
-    namespace time {
-      class TimeScale;
-    }
     namespace frames {
       class TopocentricFrame;
     }
-    namespace propagation {
-      class SpacecraftState;
-      class FieldSpacecraftState;
+    namespace data {
+      class DataProvidersManager;
+      class DataSource;
     }
-    namespace utils {
-      class ParameterDriver;
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
     }
     namespace models {
       namespace earth {
@@ -29,9 +26,12 @@ namespace org {
         }
       }
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace time {
+      class TimeScale;
+    }
   }
 }
 namespace java {
@@ -54,12 +54,12 @@ namespace org {
           class GlobalIonosphereMapModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_e939c6558ae8d313,
-              mid_init$_657d44af0e952733,
-              mid_init$_c3298cacdeeaf7cf,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_pathDelay_78d4f8498e981bf5,
-              mid_pathDelay_c824fdb3e595a2ae,
+              mid_init$_d0bc48d5b00dc40c,
+              mid_init$_f7987dfd5a1a9569,
+              mid_init$_c9696a3ab5455033,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_pathDelay_bea489d08473aa2e,
+              mid_pathDelay_28325ab4dabb069a,
               max_mid
             };
 
@@ -79,8 +79,8 @@ namespace org {
             GlobalIonosphereMapModel(const ::java::lang::String &, const ::org::orekit::data::DataProvidersManager &, const ::org::orekit::time::TimeScale &);
 
             ::java::util::List getParametersDrivers() const;
-            ::org::hipparchus::CalculusFieldElement pathDelay(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::frames::TopocentricFrame &, jdouble, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
             jdouble pathDelay(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::frames::TopocentricFrame &, jdouble, const JArray< jdouble > &) const;
+            ::org::hipparchus::CalculusFieldElement pathDelay(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::frames::TopocentricFrame &, jdouble, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           };
         }
       }

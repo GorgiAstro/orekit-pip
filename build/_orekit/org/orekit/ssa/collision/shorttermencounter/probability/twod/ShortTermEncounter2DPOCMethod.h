@@ -14,16 +14,16 @@ namespace org {
         namespace shorttermencounter {
           namespace probability {
             namespace twod {
-              class ShortTermEncounter2DPOCMethodType;
-              class FieldShortTermEncounter2DDefinition;
               class ShortTermEncounter2DDefinition;
+              class FieldShortTermEncounter2DDefinition;
+              class ShortTermEncounter2DPOCMethodType;
             }
           }
         }
       }
       namespace metrics {
-        class ProbabilityOfCollision;
         class FieldProbabilityOfCollision;
+        class ProbabilityOfCollision;
       }
     }
     namespace files {
@@ -63,26 +63,26 @@ namespace org {
               class ShortTermEncounter2DPOCMethod : public ::java::lang::Object {
                public:
                 enum {
-                  mid_compute_ebc171d08f1d7fba,
-                  mid_compute_d55bd73b302e5c1d,
-                  mid_compute_4c5fe0d13c4a2327,
-                  mid_compute_89657d3eec4c0847,
-                  mid_compute_a4d7e214295a00c5,
-                  mid_compute_a50e19d883e35f53,
-                  mid_compute_8a0e10c1a658e7e9,
-                  mid_compute_4f61fc1ea038da56,
-                  mid_compute_3bcb77a97ea3d0dc,
-                  mid_compute_56248789276af3a9,
-                  mid_compute_7267010ee6098c01,
-                  mid_compute_23211d1e26c9c2c1,
-                  mid_compute_f7ffb3ec4f2d0056,
-                  mid_compute_c51dae52f7f8ac4e,
-                  mid_compute_870697ec3831405a,
-                  mid_compute_1b10fae37738440c,
-                  mid_compute_97c5e8233a686699,
-                  mid_getName_0090f7797e403f43,
-                  mid_getType_830fb81b25fc6619,
-                  mid_isAMaximumProbabilityOfCollisionMethod_e470b6d9e0d979db,
+                  mid_compute_2664b980701fb17f,
+                  mid_compute_1c0b9804a37c5224,
+                  mid_compute_7ed362902ba10174,
+                  mid_compute_163599a09fd03091,
+                  mid_compute_4d249761aa92e117,
+                  mid_compute_091f0943f3979390,
+                  mid_compute_0de76eb60c6db62c,
+                  mid_compute_44d723598fb6a077,
+                  mid_compute_76485a46079dea66,
+                  mid_compute_2dd8f4edd2a65fcf,
+                  mid_compute_08528402ae0ec62a,
+                  mid_compute_184c2f4ec5889c74,
+                  mid_compute_0ed38e7bbee7fafc,
+                  mid_compute_77dbe9f2fcda2496,
+                  mid_compute_dc121e1e9d39c98c,
+                  mid_compute_ac385b194fca344b,
+                  mid_compute_1c26d4a5b9c10569,
+                  mid_getName_11b109bd155ca898,
+                  mid_getType_5d7ecb27bb5e3bc3,
+                  mid_isAMaximumProbabilityOfCollisionMethod_b108b35ef48e27bd,
                   max_mid
                 };
 

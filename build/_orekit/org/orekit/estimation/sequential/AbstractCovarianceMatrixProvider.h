@@ -4,6 +4,11 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
+    }
+  }
   namespace orekit {
     namespace estimation {
       namespace sequential {
@@ -12,11 +17,6 @@ namespace org {
     }
     namespace propagation {
       class SpacecraftState;
-    }
-  }
-  namespace hipparchus {
-    namespace linear {
-      class RealMatrix;
     }
   }
 }
@@ -35,7 +35,7 @@ namespace org {
         class AbstractCovarianceMatrixProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_getInitialCovarianceMatrix_63aee3ce1e412e46,
+            mid_getInitialCovarianceMatrix_9483b2ac438718ce,
             max_mid
           };
 

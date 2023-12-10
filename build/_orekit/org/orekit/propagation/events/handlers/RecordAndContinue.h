@@ -3,33 +3,33 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace ode {
-      namespace events {
-        class Action;
-      }
-    }
-  }
-  namespace orekit {
-    namespace propagation {
-      namespace events {
-        namespace handlers {
-          class EventHandler;
-          class RecordAndContinue$Event;
-        }
-        class EventDetector;
-      }
-      class SpacecraftState;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace events {
+        class EventDetector;
+        namespace handlers {
+          class EventHandler;
+          class RecordAndContinue$Event;
+        }
+      }
+      class SpacecraftState;
+    }
+  }
+  namespace hipparchus {
+    namespace ode {
+      namespace events {
+        class Action;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -43,11 +43,11 @@ namespace org {
           class RecordAndContinue : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_init$_65de9727799c5641,
-              mid_clear_7ae3461a92a43152,
-              mid_eventOccurred_66531e3c1769dca9,
-              mid_getEvents_a6156df500549a58,
+              mid_init$_0fa09c18fee449d5,
+              mid_init$_de3e021e7266b71e,
+              mid_clear_0fa09c18fee449d5,
+              mid_eventOccurred_abc543fa9701720f,
+              mid_getEvents_2afa36052df4765d,
               max_mid
             };
 

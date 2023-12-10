@@ -3,27 +3,27 @@
 
 #include "org/orekit/attitudes/GroundPointing.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace frames {
       class Frame;
     }
     namespace utils {
-      class TimeStampedFieldPVCoordinates;
-      class TimeStampedPVCoordinates;
-      class FieldPVCoordinatesProvider;
       class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
+      class TimeStampedPVCoordinates;
+      class TimeStampedFieldPVCoordinates;
     }
     namespace time {
       class AbsoluteDate;
       class FieldAbsoluteDate;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -35,13 +35,13 @@ namespace org {
       class PythonGroundPointing : public ::org::orekit::attitudes::GroundPointing {
        public:
         enum {
-          mid_init$_ff759ca5658b74c4,
-          mid_finalize_7ae3461a92a43152,
-          mid_getTargetPV_ab0341569f219f18,
-          mid_getTargetPV_99b96e260ceb5fe3,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
+          mid_init$_48e1525249177158,
+          mid_finalize_0fa09c18fee449d5,
+          mid_getTargetPV_ad3e02e6f0d115f2,
+          mid_getTargetPV_129d59e5c897146f,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
           max_mid
         };
 

@@ -17,13 +17,13 @@ namespace org {
     namespace data {
       class DataSource;
     }
-    namespace time {
-      class TimeScale;
-    }
     namespace files {
       namespace ilrs {
         class CRD;
       }
+    }
+    namespace time {
+      class TimeScale;
     }
   }
 }
@@ -37,10 +37,10 @@ namespace org {
         class CRDParser : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_init$_6d73d536a2f24dd5,
-            mid_getTimeScale_63ac10047983bd43,
-            mid_parse_24546ef0d7d92801,
+            mid_init$_0fa09c18fee449d5,
+            mid_init$_e93d77ad761aa1f2,
+            mid_getTimeScale_c39031284193adbe,
+            mid_parse_7379f847dad0aeed,
             max_mid
           };
 

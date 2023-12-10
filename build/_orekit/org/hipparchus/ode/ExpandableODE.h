@@ -10,10 +10,10 @@ namespace org {
       class MathIllegalArgumentException;
     }
     namespace ode {
-      class OrdinaryDifferentialEquation;
-      class EquationsMapper;
-      class SecondaryODE;
       class ODEState;
+      class EquationsMapper;
+      class OrdinaryDifferentialEquation;
+      class SecondaryODE;
     }
   }
 }
@@ -31,12 +31,12 @@ namespace org {
       class ExpandableODE : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_3fd05eb85385c75b,
-          mid_addSecondaryEquations_4d3a805d476f8a0d,
-          mid_computeDerivatives_7b8ea6f669f90156,
-          mid_getMapper_c85ebb7ac50d94ef,
-          mid_getPrimary_fa145b7a16039fac,
-          mid_init_d60bc5812a8e442c,
+          mid_init$_0b79d008bdba5ce0,
+          mid_addSecondaryEquations_231f49c6b5a21e64,
+          mid_computeDerivatives_125ce48de7dbfde5,
+          mid_getMapper_b352b1a7f73df8de,
+          mid_getPrimary_af746d446210838e,
+          mid_init_9a885fd893969c04,
           max_mid
         };
 

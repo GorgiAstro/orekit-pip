@@ -4,15 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-    }
-  }
   namespace orekit {
     namespace rugged {
       namespace utils {
@@ -21,6 +12,15 @@ namespace org {
       }
       namespace api {
         class AlgorithmId;
+      }
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
       }
     }
   }
@@ -40,10 +40,10 @@ namespace org {
         class IntersectionAlgorithm : public ::java::lang::Object {
          public:
           enum {
-            mid_getAlgorithmId_41b1271dfac9173f,
-            mid_getElevation_824133ce4aec3505,
-            mid_intersection_465c95e4cb53bef3,
-            mid_refineIntersection_0b100883a4ceff82,
+            mid_getAlgorithmId_da9f33328b8f3962,
+            mid_getElevation_86ffecc08a63eff0,
+            mid_intersection_943aab8456e3784b,
+            mid_refineIntersection_860353a3ab3d03aa,
             max_mid
           };
 

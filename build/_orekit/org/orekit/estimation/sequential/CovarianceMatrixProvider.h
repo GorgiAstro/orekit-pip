@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace linear {
@@ -20,6 +15,11 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -30,8 +30,8 @@ namespace org {
         class CovarianceMatrixProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_getInitialCovarianceMatrix_63aee3ce1e412e46,
-            mid_getProcessNoiseMatrix_dc7483997a2e9c4d,
+            mid_getInitialCovarianceMatrix_9483b2ac438718ce,
+            mid_getProcessNoiseMatrix_26148f4ae87f73a3,
             max_mid
           };
 

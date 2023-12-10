@@ -8,20 +8,20 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
   }
   namespace orekit {
-    namespace utils {
-      class PVCoordinates;
-      class FieldPVCoordinates;
-    }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
+    namespace utils {
+      class FieldPVCoordinates;
+      class PVCoordinates;
     }
   }
 }
@@ -39,10 +39,10 @@ namespace org {
       class JPLEphemeridesLoader$RawPVProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getRawPV_72289093b5ce53a7,
-          mid_getRawPV_f415cd919df1e5a6,
-          mid_getRawPosition_71c51b45829333ce,
-          mid_getRawPosition_11a4be79061d1fe3,
+          mid_getRawPV_38efe74c9e3a1286,
+          mid_getRawPV_04c31977feea432f,
+          mid_getRawPosition_24461752d0eea1e3,
+          mid_getRawPosition_e81fa067750860a1,
           max_mid
         };
 

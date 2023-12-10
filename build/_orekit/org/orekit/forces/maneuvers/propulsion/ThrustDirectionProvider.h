@@ -4,15 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-    }
-  }
   namespace orekit {
     namespace frames {
       class Frame;
@@ -22,6 +13,15 @@ namespace org {
     }
     namespace time {
       class AbsoluteDate;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
     }
   }
 }
@@ -41,7 +41,7 @@ namespace org {
           class ThrustDirectionProvider : public ::java::lang::Object {
            public:
             enum {
-              mid_computeThrustDirection_00b397d023000862,
+              mid_computeThrustDirection_35628cd92ea82231,
               max_mid
             };
 

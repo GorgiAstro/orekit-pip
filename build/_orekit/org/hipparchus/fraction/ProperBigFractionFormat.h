@@ -3,23 +3,23 @@
 
 #include "org/hipparchus/fraction/BigFractionFormat.h"
 
-namespace java {
-  namespace lang {
-    class StringBuffer;
-    class Class;
-    class String;
-  }
-  namespace text {
-    class FieldPosition;
-    class ParsePosition;
-    class NumberFormat;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace fraction {
       class BigFraction;
     }
+  }
+}
+namespace java {
+  namespace text {
+    class NumberFormat;
+    class ParsePosition;
+    class FieldPosition;
+  }
+  namespace lang {
+    class StringBuffer;
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -31,12 +31,12 @@ namespace org {
       class ProperBigFractionFormat : public ::org::hipparchus::fraction::BigFractionFormat {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_init$_695a782f9c7823f6,
-          mid_init$_0d88283ed770bf4b,
-          mid_format_42dd4f61513ad308,
-          mid_getWholeFormat_d34e2e8dd35583a0,
-          mid_parse_3123fd67840e701b,
+          mid_init$_0fa09c18fee449d5,
+          mid_init$_256f36a22c0d0f55,
+          mid_init$_2af517d7a6ef01c6,
+          mid_format_848518009c5606f2,
+          mid_getWholeFormat_24f83dea4a8657b1,
+          mid_parse_7ca853134336de7b,
           max_mid
         };
 

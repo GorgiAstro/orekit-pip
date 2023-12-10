@@ -4,6 +4,9 @@
 #include "java/lang/Object.h"
 
 namespace java {
+  namespace text {
+    class ParseException;
+  }
   namespace io {
     class IOException;
     class InputStream;
@@ -11,9 +14,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-  namespace text {
-    class ParseException;
   }
 }
 template<class T> class JArray;
@@ -25,8 +25,8 @@ namespace org {
       class DataLoader : public ::java::lang::Object {
        public:
         enum {
-          mid_loadData_ec60cb5f4b3de555,
-          mid_stillAcceptsData_e470b6d9e0d979db,
+          mid_loadData_1815f85c118161ad,
+          mid_stillAcceptsData_b108b35ef48e27bd,
           max_mid
         };
 

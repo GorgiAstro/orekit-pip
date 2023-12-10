@@ -13,9 +13,6 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace stat {
       namespace descriptive {
         class AggregatableStatistic;
@@ -24,6 +21,9 @@ namespace org {
         }
         class WeightedEvaluation;
       }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -38,15 +38,15 @@ namespace org {
           class Product : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_aggregate_fbee47346230313b,
-              mid_clear_7ae3461a92a43152,
-              mid_copy_14204d7f8c951f8b,
-              mid_evaluate_0a7ff474793a505a,
-              mid_evaluate_5d62632feda90f27,
-              mid_getN_a27fc9afd27e559d,
-              mid_getResult_456d9a2f64d6b28d,
-              mid_increment_77e0f9a1f260e2e5,
+              mid_init$_0fa09c18fee449d5,
+              mid_aggregate_2142388604881136,
+              mid_clear_0fa09c18fee449d5,
+              mid_copy_2710c30fb5f7bb06,
+              mid_evaluate_556bede10daac330,
+              mid_evaluate_2634be61548fc62b,
+              mid_getN_492808a339bfa35f,
+              mid_getResult_dff5885c2c873297,
+              mid_increment_17db3a65980d3441,
               max_mid
             };
 

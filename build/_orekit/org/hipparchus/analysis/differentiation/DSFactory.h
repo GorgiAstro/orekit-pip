@@ -3,26 +3,26 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace analysis {
-      namespace differentiation {
-        class DSCompiler;
-        class DerivativeStructure;
-        class DSFactory$DSField;
-      }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
-  }
-}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace analysis {
+      namespace differentiation {
+        class DerivativeStructure;
+        class DSFactory$DSField;
+        class DSCompiler;
+      }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
   }
 }
 template<class T> class JArray;
@@ -35,12 +35,12 @@ namespace org {
         class DSFactory : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_8dbc1129a3c2557a,
-            mid_build_a99895f2c956a8f6,
-            mid_constant_c8b983f259312c1e,
-            mid_getCompiler_b0ae8cc686efdcbe,
-            mid_getDerivativeField_82fd98fd27d2098b,
-            mid_variable_d59d7a8c1b43c3a7,
+            mid_init$_6f37635c3285dbdf,
+            mid_build_b45548a69087af0a,
+            mid_constant_b3ed376bfd09e93b,
+            mid_getCompiler_ae6f9f9cc48aac48,
+            mid_getDerivativeField_6a64b248da400b8f,
+            mid_variable_b75c7fa4df018e3b,
             max_mid
           };
 

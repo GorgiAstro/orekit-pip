@@ -5,8 +5,8 @@
 
 namespace org {
   namespace hipparchus {
-    class Field;
     class CalculusFieldElement;
+    class Field;
   }
 }
 namespace java {
@@ -26,9 +26,9 @@ namespace org {
             class FieldGammaMnsFunction : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_057062eab7827a87,
-                mid_getDerivative_02688424bbdad522,
-                mid_getValue_02688424bbdad522,
+                mid_init$_3a2e186de3b94400,
+                mid_getDerivative_4f221dcfbd8744de,
+                mid_getValue_4f221dcfbd8744de,
                 max_mid
               };
 

@@ -4,16 +4,16 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class Field;
-  }
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace utils {
       class FieldTimeSpanMap$Transition;
     }
+    namespace time {
+      class FieldAbsoluteDate;
+    }
+  }
+  namespace hipparchus {
+    class Field;
   }
 }
 namespace java {
@@ -33,11 +33,11 @@ namespace org {
       class FieldTimeSpanMap : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_43a02e2a81afd51c,
-          mid_addValidAfter_27ddae2d23e99183,
-          mid_addValidBefore_27ddae2d23e99183,
-          mid_get_7684025eb484b969,
-          mid_getTransitions_d01a04ddab6c7194,
+          mid_init$_5436e976103f5935,
+          mid_addValidAfter_9609c002ae1fab35,
+          mid_addValidBefore_9609c002ae1fab35,
+          mid_get_ba0f15400f4e0189,
+          mid_getTransitions_917725130bbb61f1,
           max_mid
         };
 

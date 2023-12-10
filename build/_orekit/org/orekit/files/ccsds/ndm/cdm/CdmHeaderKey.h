@@ -7,16 +7,16 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace ndm {
-          namespace cdm {
-            class CdmHeader;
-            class CdmHeaderKey;
-          }
-        }
         namespace utils {
-          class ContextBinding;
           namespace lexical {
             class ParseToken;
+          }
+          class ContextBinding;
+        }
+        namespace ndm {
+          namespace cdm {
+            class CdmHeaderKey;
+            class CdmHeader;
           }
         }
       }
@@ -41,9 +41,9 @@ namespace org {
             class CdmHeaderKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_7adab898f9141a10,
-                mid_valueOf_a54df87f83f2bcbe,
-                mid_values_03c9116c9e9e8c01,
+                mid_process_d68f29b6625dfb3d,
+                mid_valueOf_76e52a4fe1b52773,
+                mid_values_81cb1bda75735010,
                 max_mid
               };
 

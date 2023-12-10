@@ -5,20 +5,20 @@
 
 namespace org {
   namespace orekit {
+    namespace orbits {
+      class PositionAngleType;
+      class CartesianOrbit;
+      class OrbitType;
+    }
     namespace frames {
       class Frame;
     }
-    namespace utils {
-      class PVCoordinates;
-      class TimeStampedPVCoordinates;
-    }
-    namespace orbits {
-      class CartesianOrbit;
-      class PositionAngleType;
-      class OrbitType;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace utils {
+      class TimeStampedPVCoordinates;
+      class PVCoordinates;
     }
   }
 }
@@ -38,39 +38,39 @@ namespace org {
       class CartesianOrbit : public ::org::orekit::orbits::Orbit {
        public:
         enum {
-          mid_init$_e5b8a6a44355183e,
-          mid_init$_c42dca2c1e36096d,
-          mid_init$_e115ec145d0ee229,
-          mid_addKeplerContribution_c8fa6ba58ef7126b,
-          mid_getA_456d9a2f64d6b28d,
-          mid_getADot_456d9a2f64d6b28d,
-          mid_getE_456d9a2f64d6b28d,
-          mid_getEDot_456d9a2f64d6b28d,
-          mid_getEquinoctialEx_456d9a2f64d6b28d,
-          mid_getEquinoctialExDot_456d9a2f64d6b28d,
-          mid_getEquinoctialEy_456d9a2f64d6b28d,
-          mid_getEquinoctialEyDot_456d9a2f64d6b28d,
-          mid_getHx_456d9a2f64d6b28d,
-          mid_getHxDot_456d9a2f64d6b28d,
-          mid_getHy_456d9a2f64d6b28d,
-          mid_getHyDot_456d9a2f64d6b28d,
-          mid_getI_456d9a2f64d6b28d,
-          mid_getIDot_456d9a2f64d6b28d,
-          mid_getLE_456d9a2f64d6b28d,
-          mid_getLEDot_456d9a2f64d6b28d,
-          mid_getLM_456d9a2f64d6b28d,
-          mid_getLMDot_456d9a2f64d6b28d,
-          mid_getLv_456d9a2f64d6b28d,
-          mid_getLvDot_456d9a2f64d6b28d,
-          mid_getType_63ea5cd020bf7bf1,
-          mid_hasDerivatives_e470b6d9e0d979db,
-          mid_shiftedBy_3712bdf29907e736,
-          mid_toString_0090f7797e403f43,
-          mid_initPosition_17a952530a808943,
-          mid_initPVCoordinates_6890805957bea2cd,
-          mid_computeJacobianMeanWrtCartesian_43de1192439efa92,
-          mid_computeJacobianEccentricWrtCartesian_43de1192439efa92,
-          mid_computeJacobianTrueWrtCartesian_43de1192439efa92,
+          mid_init$_6219f6b430651d68,
+          mid_init$_7753eee512deef45,
+          mid_init$_17efd10b0f16bc37,
+          mid_addKeplerContribution_f2365c7dd61a1cda,
+          mid_getA_dff5885c2c873297,
+          mid_getADot_dff5885c2c873297,
+          mid_getE_dff5885c2c873297,
+          mid_getEDot_dff5885c2c873297,
+          mid_getEquinoctialEx_dff5885c2c873297,
+          mid_getEquinoctialExDot_dff5885c2c873297,
+          mid_getEquinoctialEy_dff5885c2c873297,
+          mid_getEquinoctialEyDot_dff5885c2c873297,
+          mid_getHx_dff5885c2c873297,
+          mid_getHxDot_dff5885c2c873297,
+          mid_getHy_dff5885c2c873297,
+          mid_getHyDot_dff5885c2c873297,
+          mid_getI_dff5885c2c873297,
+          mid_getIDot_dff5885c2c873297,
+          mid_getLE_dff5885c2c873297,
+          mid_getLEDot_dff5885c2c873297,
+          mid_getLM_dff5885c2c873297,
+          mid_getLMDot_dff5885c2c873297,
+          mid_getLv_dff5885c2c873297,
+          mid_getLvDot_dff5885c2c873297,
+          mid_getType_e29360d311dc0e20,
+          mid_hasDerivatives_b108b35ef48e27bd,
+          mid_shiftedBy_c23f2d16290b9786,
+          mid_toString_11b109bd155ca898,
+          mid_initPVCoordinates_c204436deca11d94,
+          mid_initPosition_d52645e0d4c07563,
+          mid_computeJacobianMeanWrtCartesian_0358d8ea02f2cdb1,
+          mid_computeJacobianEccentricWrtCartesian_0358d8ea02f2cdb1,
+          mid_computeJacobianTrueWrtCartesian_0358d8ea02f2cdb1,
           max_mid
         };
 

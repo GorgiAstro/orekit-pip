@@ -7,19 +7,19 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
+        class EstimatedMeasurementBase$Status;
         class ComparableMeasurement;
         class ObservedMeasurement;
-        class EstimatedMeasurementBase$Status;
       }
     }
-    namespace propagation {
-      class SpacecraftState;
+    namespace time {
+      class AbsoluteDate;
     }
     namespace utils {
       class TimeStampedPVCoordinates;
     }
-    namespace time {
-      class AbsoluteDate;
+    namespace propagation {
+      class SpacecraftState;
     }
   }
 }
@@ -38,19 +38,19 @@ namespace org {
         class EstimatedMeasurementBase : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_928a9f4df476de65,
-            mid_getCount_f2f64475e4580546,
-            mid_getDate_aaa854c403487cf3,
-            mid_getEstimatedValue_7cdc325af0834901,
-            mid_getIteration_f2f64475e4580546,
-            mid_getObservedMeasurement_cad4d6aea977e795,
-            mid_getObservedValue_7cdc325af0834901,
-            mid_getParticipants_4e88474af2ad6bb8,
-            mid_getStates_a4eb258dd7a1e164,
-            mid_getStatus_0136d00f07a6d9f8,
-            mid_getTimeOffset_456d9a2f64d6b28d,
-            mid_setEstimatedValue_ebc26dcaf4761286,
-            mid_setStatus_4406454e8781a429,
+            mid_init$_d1c2fb63ea99e1e6,
+            mid_getCount_570ce0828f81a2c1,
+            mid_getDate_85703d13e302437e,
+            mid_getEstimatedValue_60c7040667a7dc5c,
+            mid_getIteration_570ce0828f81a2c1,
+            mid_getObservedMeasurement_744f33e0abf11bf9,
+            mid_getObservedValue_60c7040667a7dc5c,
+            mid_getParticipants_2c08433c0c18552f,
+            mid_getStates_fa9cea0faefb9a31,
+            mid_getStatus_7c948ae3415a4366,
+            mid_getTimeOffset_dff5885c2c873297,
+            mid_setEstimatedValue_fa9d415d19f69361,
+            mid_setStatus_6b1c7f370d471bab,
             max_mid
           };
 

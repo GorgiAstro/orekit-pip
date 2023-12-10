@@ -3,37 +3,26 @@
 
 #include "org/orekit/propagation/conversion/AbstractPropagatorBuilder.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class Object;
-  }
-}
 namespace org {
   namespace orekit {
+    namespace orbits {
+      class PositionAngleType;
+      class Orbit;
+    }
     namespace propagation {
+      namespace conversion {
+        class PropagatorBuilder;
+        class ODEIntegratorBuilder;
+        class NumericalPropagatorBuilder;
+      }
       namespace numerical {
         class NumericalPropagator;
       }
-      namespace conversion {
-        class NumericalPropagatorBuilder;
-        class PropagatorBuilder;
-        class ODEIntegratorBuilder;
-      }
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-    namespace utils {
-      class ParameterDriversList;
     }
     namespace estimation {
       namespace leastsquares {
-        class ModelObserver;
         class BatchLSModel;
+        class ModelObserver;
       }
       namespace measurements {
         class ObservedMeasurement;
@@ -42,10 +31,21 @@ namespace org {
     namespace forces {
       class ForceModel;
     }
-    namespace orbits {
-      class Orbit;
-      class PositionAngleType;
+    namespace attitudes {
+      class AttitudeProvider;
     }
+    namespace utils {
+      class ParameterDriversList;
+    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class Object;
   }
 }
 template<class T> class JArray;
@@ -58,16 +58,16 @@ namespace org {
         class NumericalPropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_3147ac08187e555f,
-            mid_init$_7d26bc01a48dedcb,
-            mid_addForceModel_beaeb16a38eea9d3,
-            mid_buildLeastSquaresModel_68d6ca4c6bdc7fbf,
-            mid_buildPropagator_45704d5aa045e6a2,
-            mid_copy_7cb146e8b35a9163,
-            mid_getAllForceModels_a6156df500549a58,
-            mid_getIntegratorBuilder_0a8021b0a6e4c616,
-            mid_getMass_456d9a2f64d6b28d,
-            mid_setMass_77e0f9a1f260e2e5,
+            mid_init$_085e8b3a8f1ba22d,
+            mid_init$_f94892e562eb0a93,
+            mid_addForceModel_690f9b27ef4d22fe,
+            mid_buildLeastSquaresModel_a4f338c74a508dcf,
+            mid_buildPropagator_6e4510a485a49af8,
+            mid_copy_de1b712c7ea0d951,
+            mid_getAllForceModels_2afa36052df4765d,
+            mid_getIntegratorBuilder_3a8c061b6472f9df,
+            mid_getMass_dff5885c2c873297,
+            mid_setMass_17db3a65980d3441,
             max_mid
           };
 

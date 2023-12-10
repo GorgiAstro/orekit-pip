@@ -14,7 +14,13 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace utils {
+      class TimeStampedAngularCoordinates;
+    }
     namespace files {
+      namespace general {
+        class AttitudeEphemerisFile$SatelliteAttitudeEphemeris;
+      }
       namespace ccsds {
         namespace ndm {
           namespace adm {
@@ -24,12 +30,6 @@ namespace org {
           }
         }
       }
-      namespace general {
-        class AttitudeEphemerisFile$SatelliteAttitudeEphemeris;
-      }
-    }
-    namespace utils {
-      class TimeStampedAngularCoordinates;
     }
     namespace time {
       class AbsoluteDate;
@@ -49,11 +49,11 @@ namespace org {
               class AcmSatelliteEphemeris : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_6ea6ec8379c9f4a5,
-                  mid_getId_0090f7797e403f43,
-                  mid_getSegments_a6156df500549a58,
-                  mid_getStart_aaa854c403487cf3,
-                  mid_getStop_aaa854c403487cf3,
+                  mid_init$_91fd4e71827f714e,
+                  mid_getId_11b109bd155ca898,
+                  mid_getSegments_2afa36052df4765d,
+                  mid_getStart_85703d13e302437e,
+                  mid_getStop_85703d13e302437e,
                   max_mid
                 };
 

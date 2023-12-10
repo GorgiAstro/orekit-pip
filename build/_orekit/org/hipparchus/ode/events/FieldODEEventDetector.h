@@ -5,11 +5,7 @@
 
 namespace org {
   namespace hipparchus {
-    namespace analysis {
-      namespace solvers {
-        class BracketedRealFieldUnivariateSolver;
-      }
-    }
+    class CalculusFieldElement;
     namespace ode {
       namespace events {
         class FieldODEEventHandler;
@@ -17,7 +13,11 @@ namespace org {
       }
       class FieldODEStateAndDerivative;
     }
-    class CalculusFieldElement;
+    namespace analysis {
+      namespace solvers {
+        class BracketedRealFieldUnivariateSolver;
+      }
+    }
   }
 }
 namespace java {
@@ -35,12 +35,12 @@ namespace org {
         class FieldODEEventDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_g_ca2be72fa188dbd5,
-            mid_getHandler_332eb628084a1f92,
-            mid_getMaxCheckInterval_d83e6e399e248e87,
-            mid_getMaxIterationCount_f2f64475e4580546,
-            mid_getSolver_b14b3849019061d8,
-            mid_init_e6d23212b178b64e,
+            mid_g_2fe24792561bd145,
+            mid_getHandler_6becb2360697f07b,
+            mid_getMaxCheckInterval_3c82d31ec337b8be,
+            mid_getMaxIterationCount_570ce0828f81a2c1,
+            mid_getSolver_818bdb7f8312a2dd,
+            mid_init_81b5dd1fb920fdc1,
             max_mid
           };
 

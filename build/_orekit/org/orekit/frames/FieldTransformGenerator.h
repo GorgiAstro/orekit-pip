@@ -12,9 +12,6 @@ namespace java {
   }
 }
 namespace org {
-  namespace hipparchus {
-    class Field;
-  }
   namespace orekit {
     namespace utils {
       class TimeStampedGenerator;
@@ -27,6 +24,9 @@ namespace org {
       class AbsoluteDate;
     }
   }
+  namespace hipparchus {
+    class Field;
+  }
 }
 template<class T> class JArray;
 
@@ -37,8 +37,8 @@ namespace org {
       class FieldTransformGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_220e84d724c5b9fb,
-          mid_generate_b7149ea6787a6f3c,
+          mid_init$_eb095e3b5ebe5444,
+          mid_generate_8060cef9318d72e3,
           max_mid
         };
 

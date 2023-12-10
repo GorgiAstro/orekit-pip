@@ -4,6 +4,23 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace frames {
+      class Frame;
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
+      class TimeStampedPVCoordinates;
+      class PVCoordinates;
+    }
+    namespace bodies {
+      class OneAxisEllipsoid;
+      class GeodeticPoint;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -11,23 +28,6 @@ namespace org {
           class Vector3D;
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace bodies {
-      class OneAxisEllipsoid;
-      class GeodeticPoint;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace utils {
-      class PVCoordinates;
-      class TimeStampedPVCoordinates;
-      class PVCoordinatesProvider;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -45,11 +45,11 @@ namespace org {
       class ConstantPVCoordinatesProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_30037ff50b846ddc,
-          mid_init$_464cb214412d37c4,
-          mid_init$_b286378e8b3b0b08,
-          mid_getPVCoordinates_20557c175f7cd899,
-          mid_getPosition_5343d34e5fbffcdd,
+          mid_init$_daec801f3b74e98f,
+          mid_init$_5cacd6aaf020b118,
+          mid_init$_233a3bb131db24ed,
+          mid_getPVCoordinates_cfeec55f7c63ec64,
+          mid_getPosition_41a826780212dfea,
           max_mid
         };
 

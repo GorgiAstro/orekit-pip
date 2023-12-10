@@ -3,16 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace attitudes {
-      class BoundedAttitudeProvider;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -20,6 +10,16 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace attitudes {
+      class BoundedAttitudeProvider;
+    }
   }
 }
 template<class T> class JArray;
@@ -32,11 +32,11 @@ namespace org {
         class AttitudeEphemerisFile$SatelliteAttitudeEphemeris : public ::java::lang::Object {
          public:
           enum {
-            mid_getAttitudeProvider_05a2839e8fecde67,
-            mid_getId_0090f7797e403f43,
-            mid_getSegments_a6156df500549a58,
-            mid_getStart_aaa854c403487cf3,
-            mid_getStop_aaa854c403487cf3,
+            mid_getAttitudeProvider_f95b60a986adb964,
+            mid_getId_11b109bd155ca898,
+            mid_getSegments_2afa36052df4765d,
+            mid_getStart_85703d13e302437e,
+            mid_getStop_85703d13e302437e,
             max_mid
           };
 

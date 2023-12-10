@@ -8,11 +8,11 @@ namespace org {
     class CalculusFieldElement;
   }
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace propagation {
       class FieldSpacecraftState;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
     }
   }
 }
@@ -31,10 +31,10 @@ namespace org {
       class FieldAdditionalStateProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getAdditionalState_360c953f14ed07de,
-          mid_getName_0090f7797e403f43,
-          mid_init_acdd8180a5dc1a8d,
-          mid_yields_91c945ca7903e8ac,
+          mid_getAdditionalState_567ea49d447f98c8,
+          mid_getName_11b109bd155ca898,
+          mid_init_8e8de2be1664674a,
+          mid_yields_1b0abd4f90ebd0eb,
           max_mid
         };
 

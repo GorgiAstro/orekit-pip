@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,11 +27,11 @@ namespace org {
           class TimeSystemCorrection : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_f7ef28a3bc2d7df3,
-              mid_getReferenceDate_aaa854c403487cf3,
-              mid_getTimeSystemCorrectionA0_456d9a2f64d6b28d,
-              mid_getTimeSystemCorrectionA1_456d9a2f64d6b28d,
-              mid_getTimeSystemCorrectionType_0090f7797e403f43,
+              mid_init$_9f5c2240387841bc,
+              mid_getReferenceDate_85703d13e302437e,
+              mid_getTimeSystemCorrectionA0_dff5885c2c873297,
+              mid_getTimeSystemCorrectionA1_dff5885c2c873297,
+              mid_getTimeSystemCorrectionType_11b109bd155ca898,
               max_mid
             };
 

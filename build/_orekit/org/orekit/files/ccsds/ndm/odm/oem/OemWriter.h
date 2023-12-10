@@ -48,8 +48,8 @@ namespace org {
               class OemWriter : public ::org::orekit::files::ccsds::utils::generation::AbstractMessageWriter {
                public:
                 enum {
-                  mid_init$_7cae0d769c2d9ccc,
-                  mid_writeSegmentContent_a14d189c8b6dc4c8,
+                  mid_init$_6f30abb95e05bcdd,
+                  mid_writeSegmentContent_23075babb40e611c,
                   max_mid
                 };
 

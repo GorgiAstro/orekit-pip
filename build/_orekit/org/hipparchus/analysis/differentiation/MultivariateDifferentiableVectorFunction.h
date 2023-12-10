@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace analysis {
       namespace differentiation {
         class DerivativeStructure;
       }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -30,7 +30,7 @@ namespace org {
         class MultivariateDifferentiableVectorFunction : public ::org::hipparchus::analysis::MultivariateVectorFunction {
          public:
           enum {
-            mid_value_2d2b2e0a03dbe908,
+            mid_value_e00d2ee1b93800b0,
             max_mid
           };
 

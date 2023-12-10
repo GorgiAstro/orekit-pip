@@ -28,8 +28,8 @@ namespace org {
         class AlgorithmId : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_c1f6e6651cab9726,
-            mid_values_786683000205d5bb,
+            mid_valueOf_8db6f61ecceab082,
+            mid_values_1fb04805027a7535,
             max_mid
           };
 

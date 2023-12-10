@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace analysis {
-      class TrivariateFunction;
-    }
     namespace exception {
       class MathIllegalArgumentException;
+    }
+    namespace analysis {
+      class TrivariateFunction;
     }
   }
 }
@@ -28,9 +28,9 @@ namespace org {
         class TricubicInterpolatingFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_8584523d218827f9,
-            mid_isValidPoint_15ea3a7b52896f96,
-            mid_value_c564d6ace53a5934,
+            mid_init$_8679b497b578747a,
+            mid_isValidPoint_01c0c8b0c5f55ddf,
+            mid_value_8c19bdea212fe058,
             max_mid
           };
 

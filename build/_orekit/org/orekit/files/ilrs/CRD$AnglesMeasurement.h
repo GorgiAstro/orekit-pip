@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class TimeStamped;
       class AbsoluteDate;
+      class TimeStamped;
     }
   }
 }
@@ -27,17 +27,17 @@ namespace org {
         class CRD$AnglesMeasurement : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_630e84c09ee04cf2,
-            mid_getAzimuth_456d9a2f64d6b28d,
-            mid_getAzimuthRate_456d9a2f64d6b28d,
-            mid_getDate_aaa854c403487cf3,
-            mid_getDirectionFlag_f2f64475e4580546,
-            mid_getElevation_456d9a2f64d6b28d,
-            mid_getElevationRate_456d9a2f64d6b28d,
-            mid_getOriginIndicator_f2f64475e4580546,
-            mid_isRefractionCorrected_e470b6d9e0d979db,
-            mid_toCrdString_0090f7797e403f43,
-            mid_toString_0090f7797e403f43,
+            mid_init$_40fb827d152567d2,
+            mid_getAzimuth_dff5885c2c873297,
+            mid_getAzimuthRate_dff5885c2c873297,
+            mid_getDate_85703d13e302437e,
+            mid_getDirectionFlag_570ce0828f81a2c1,
+            mid_getElevation_dff5885c2c873297,
+            mid_getElevationRate_dff5885c2c873297,
+            mid_getOriginIndicator_570ce0828f81a2c1,
+            mid_isRefractionCorrected_b108b35ef48e27bd,
+            mid_toCrdString_11b109bd155ca898,
+            mid_toString_11b109bd155ca898,
             max_mid
           };
 

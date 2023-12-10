@@ -24,7 +24,7 @@ namespace org {
       class Blendable : public ::java::lang::Object {
        public:
         enum {
-          mid_blendArithmeticallyWith_fd54668d5a0959d8,
+          mid_blendArithmeticallyWith_6fddec41dc8667ed,
           max_mid
         };
 

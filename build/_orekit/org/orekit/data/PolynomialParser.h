@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace data {
       class PolynomialParser$Unit;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,8 +25,8 @@ namespace org {
       class PolynomialParser : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_028b46dcfde98587,
-          mid_parse_5fc57a69c973af17,
+          mid_init$_8e95c0449cdf4a7e,
+          mid_parse_f87e5f45128c2827,
           max_mid
         };
 

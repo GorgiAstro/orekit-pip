@@ -5,49 +5,49 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
-    class CalculusFieldElement;
     class Field;
   }
   namespace orekit {
     namespace attitudes {
       class AttitudeProvider;
     }
+    namespace propagation {
+      namespace events {
+        class EventDetector;
+        class FieldEventDetector;
+      }
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
     namespace forces {
+      class ForceModel;
       namespace empirical {
         class AccelerationModel;
       }
-      class ForceModel;
-    }
-    namespace propagation {
-      namespace events {
-        class FieldEventDetector;
-        class EventDetector;
-      }
-      class SpacecraftState;
-      class FieldSpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
     }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
 }
 namespace java {
   namespace util {
-    class List;
     namespace stream {
       class Stream;
     }
+    class List;
   }
   namespace lang {
     class Class;
@@ -63,15 +63,15 @@ namespace org {
         class ParametricAcceleration : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_fe8be0364ca74ee2,
-            mid_init$_0de0371c7296ad8d,
-            mid_acceleration_00aba28d3abe9a8c,
-            mid_acceleration_78989e44b99f7cc2,
-            mid_dependsOnPositionOnly_e470b6d9e0d979db,
-            mid_getEventDetectors_a68a17dd093f796d,
-            mid_getFieldEventDetectors_1328ddb491531a35,
-            mid_getParametersDrivers_a6156df500549a58,
-            mid_init_3d13474d79f5e7bc,
+            mid_init$_043e9efe19e3b3cd,
+            mid_init$_292f4a8302d10a85,
+            mid_acceleration_b42ac4b5bfb80fab,
+            mid_acceleration_8954761face5e1a7,
+            mid_dependsOnPositionOnly_b108b35ef48e27bd,
+            mid_getEventDetectors_20f6d2b462aaef4b,
+            mid_getFieldEventDetectors_361313cd1a9c693a,
+            mid_getParametersDrivers_2afa36052df4765d,
+            mid_init_826b4eda94da4e78,
             max_mid
           };
 
@@ -89,8 +89,8 @@ namespace org {
           ParametricAcceleration(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, jboolean, const ::org::orekit::forces::empirical::AccelerationModel &);
           ParametricAcceleration(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::attitudes::AttitudeProvider &, const ::org::orekit::forces::empirical::AccelerationModel &);
 
-          ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
           ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
+          ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
           jboolean dependsOnPositionOnly() const;
           ::java::util::stream::Stream getEventDetectors() const;
           ::java::util::stream::Stream getFieldEventDetectors(const ::org::hipparchus::Field &) const;

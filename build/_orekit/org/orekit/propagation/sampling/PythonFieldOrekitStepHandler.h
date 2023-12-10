@@ -3,12 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
@@ -16,14 +10,20 @@ namespace org {
   namespace orekit {
     namespace propagation {
       namespace sampling {
-        class FieldOrekitStepHandler;
         class FieldOrekitStepInterpolator;
+        class FieldOrekitStepHandler;
       }
       class FieldSpacecraftState;
     }
     namespace time {
       class FieldAbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -36,14 +36,14 @@ namespace org {
         class PythonFieldOrekitStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_finalize_7ae3461a92a43152,
-            mid_finish_52154b94d63e10ed,
-            mid_handleStep_9eedcf3b856fcc75,
-            mid_init_acdd8180a5dc1a8d,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
+            mid_init$_0fa09c18fee449d5,
+            mid_finalize_0fa09c18fee449d5,
+            mid_finish_1463d3d0d52f94dd,
+            mid_handleStep_edb529c141e8d4a9,
+            mid_init_8e8de2be1664674a,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
             max_mid
           };
 

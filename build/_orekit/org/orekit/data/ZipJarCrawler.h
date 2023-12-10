@@ -32,10 +32,10 @@ namespace org {
       class ZipJarCrawler : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_46e66c77c82c9a6b,
-          mid_init$_e939c6558ae8d313,
-          mid_init$_466101f788d70aca,
-          mid_init$_c66945ecc28a98ae,
+          mid_init$_0613af62f2ba5dba,
+          mid_init$_d0bc48d5b00dc40c,
+          mid_init$_fe56d648976a8dcb,
+          mid_init$_9a6e053ada5ce237,
           max_mid
         };
 

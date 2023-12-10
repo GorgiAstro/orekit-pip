@@ -8,17 +8,17 @@ namespace org {
     namespace propagation {
       namespace analytical {
         namespace gnss {
-          class SBASPropagatorBuilder;
-          class SBASPropagator;
           namespace data {
             class SBASOrbitalElements;
           }
+          class SBASPropagator;
+          class SBASPropagatorBuilder;
         }
       }
     }
     namespace frames {
-      class Frames;
       class Frame;
+      class Frames;
     }
     namespace attitudes {
       class AttitudeProvider;
@@ -41,14 +41,14 @@ namespace org {
           class SBASPropagatorBuilder : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7bd6f9e81a7105f8,
-              mid_init$_945420a0972f4b1f,
-              mid_attitudeProvider_0952149c61182d46,
-              mid_build_70869a450ee7c848,
-              mid_ecef_2b14ec5f74b35e8d,
-              mid_eci_2b14ec5f74b35e8d,
-              mid_mass_d0414e7e79d1c862,
-              mid_mu_d0414e7e79d1c862,
+              mid_init$_7d9236b5f915634d,
+              mid_init$_ecd9971eb173b1e6,
+              mid_attitudeProvider_ceb94e6a435ccfe4,
+              mid_build_9dcd848e51dbc12c,
+              mid_ecef_4281a789e39824cd,
+              mid_eci_4281a789e39824cd,
+              mid_mass_3d6615b27cea640d,
+              mid_mu_3d6615b27cea640d,
               max_mid
             };
 

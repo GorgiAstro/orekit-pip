@@ -3,11 +3,6 @@
 
 #include "org/orekit/estimation/sequential/AbstractCovarianceMatrixProvider.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace linear {
@@ -20,6 +15,11 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -30,9 +30,9 @@ namespace org {
         class ConstantProcessNoise : public ::org::orekit::estimation::sequential::AbstractCovarianceMatrixProvider {
          public:
           enum {
-            mid_init$_30aa151fd03f3096,
-            mid_init$_02010c9812f2009b,
-            mid_getProcessNoiseMatrix_dc7483997a2e9c4d,
+            mid_init$_c67473bd6cfaa69b,
+            mid_init$_f09dcac15bdcc9db,
+            mid_getProcessNoiseMatrix_26148f4ae87f73a3,
             max_mid
           };
 

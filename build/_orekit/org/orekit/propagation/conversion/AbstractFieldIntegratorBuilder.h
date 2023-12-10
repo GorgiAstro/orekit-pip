@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    class Field;
+    class CalculusFieldElement;
     namespace ode {
       class AbstractFieldIntegrator;
     }
-    class CalculusFieldElement;
+    class Field;
   }
   namespace orekit {
     namespace propagation {
@@ -39,9 +39,9 @@ namespace org {
         class AbstractFieldIntegratorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_buildIntegrator_071d3edeab1fa823,
-            mid_buildIntegrator_79616f78bb6df44f,
+            mid_init$_0fa09c18fee449d5,
+            mid_buildIntegrator_c6b1aa22e8585e91,
+            mid_buildIntegrator_048f7039a7622a2b,
             max_mid
           };
 

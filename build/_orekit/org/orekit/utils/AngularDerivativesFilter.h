@@ -5,9 +5,9 @@
 
 namespace java {
   namespace lang {
+    class IllegalArgumentException;
     class String;
     class Class;
-    class IllegalArgumentException;
   }
 }
 namespace org {
@@ -26,10 +26,10 @@ namespace org {
       class AngularDerivativesFilter : public ::java::lang::Enum {
        public:
         enum {
-          mid_getFilter_6b4b72dbe46ae1d2,
-          mid_getMaxOrder_f2f64475e4580546,
-          mid_valueOf_6e06abfdcdffc262,
-          mid_values_7bb60d04961b1572,
+          mid_getFilter_83a5754f370d3085,
+          mid_getMaxOrder_570ce0828f81a2c1,
+          mid_valueOf_a81edba1c6afa987,
+          mid_values_8d6457b4af8f2941,
           max_mid
         };
 

@@ -5,15 +5,15 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
-    class CalculusFieldElement;
   }
   namespace orekit {
     namespace frames {
@@ -23,8 +23,8 @@ namespace org {
       class BodyShape;
     }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
     namespace models {
       namespace earth {
@@ -51,10 +51,10 @@ namespace org {
           class SimpleExponentialAtmosphere : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_1c805b0fec425e92,
-              mid_getDensity_ee5ac6667b0d4b90,
-              mid_getDensity_e3f5c4474b151066,
-              mid_getFrame_c8fe21bcdac65bf6,
+              mid_init$_d4e71ef1b50c73de,
+              mid_getDensity_f7d7785230311c38,
+              mid_getDensity_b79d75c1a8af7374,
+              mid_getFrame_b86f9f61d97a7244,
               max_mid
             };
 

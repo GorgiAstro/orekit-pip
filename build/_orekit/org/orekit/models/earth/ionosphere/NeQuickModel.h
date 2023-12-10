@@ -3,34 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
-    namespace time {
-      class TimeScale;
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
     namespace frames {
       class TopocentricFrame;
     }
-    namespace bodies {
-      class GeodeticPoint;
-      class FieldGeodeticPoint;
-    }
     namespace propagation {
-      class SpacecraftState;
       class FieldSpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
+      class SpacecraftState;
     }
     namespace models {
       namespace earth {
@@ -39,9 +22,26 @@ namespace org {
         }
       }
     }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+      class TimeScale;
+    }
+    namespace bodies {
+      class FieldGeodeticPoint;
+      class GeodeticPoint;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
   }
-  namespace hipparchus {
-    class CalculusFieldElement;
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -55,13 +55,13 @@ namespace org {
           class NeQuickModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_ebc26dcaf4761286,
-              mid_init$_2ae226802b046a42,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_pathDelay_c824fdb3e595a2ae,
-              mid_pathDelay_78d4f8498e981bf5,
-              mid_stec_48aa5255a3f91d82,
-              mid_stec_954bb2cd32818988,
+              mid_init$_fa9d415d19f69361,
+              mid_init$_544c95b15198d0bf,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_pathDelay_bea489d08473aa2e,
+              mid_pathDelay_28325ab4dabb069a,
+              mid_stec_d290e0e343b87314,
+              mid_stec_1bddb8d30c8be0d0,
               max_mid
             };
 
@@ -82,8 +82,8 @@ namespace org {
             ::java::util::List getParametersDrivers() const;
             jdouble pathDelay(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::frames::TopocentricFrame &, jdouble, const JArray< jdouble > &) const;
             ::org::hipparchus::CalculusFieldElement pathDelay(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::frames::TopocentricFrame &, jdouble, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
-            jdouble stec(const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::bodies::GeodeticPoint &, const ::org::orekit::bodies::GeodeticPoint &) const;
             ::org::hipparchus::CalculusFieldElement stec(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::bodies::FieldGeodeticPoint &, const ::org::orekit::bodies::FieldGeodeticPoint &) const;
+            jdouble stec(const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::bodies::GeodeticPoint &, const ::org::orekit::bodies::GeodeticPoint &) const;
           };
         }
       }

@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace util {
       class Pair;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -29,7 +29,7 @@ namespace org {
           class RuleFactory : public ::java::lang::Object {
            public:
             enum {
-              mid_getRule_086dd68d091255ed,
+              mid_getRule_e670405dd33862ee,
               max_mid
             };
 

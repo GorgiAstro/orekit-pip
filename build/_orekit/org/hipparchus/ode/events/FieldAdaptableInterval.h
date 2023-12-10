@@ -25,7 +25,7 @@ namespace org {
         class FieldAdaptableInterval : public ::java::lang::Object {
          public:
           enum {
-            mid_currentInterval_5cf151a4e561f8d6,
+            mid_currentInterval_486b6766706296b3,
             max_mid
           };
 

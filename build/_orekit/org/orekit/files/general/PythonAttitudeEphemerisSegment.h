@@ -3,28 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace attitudes {
-      class BoundedAttitudeProvider;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace utils {
-      class AngularDerivativesFilter;
-      class TimeStampedAngularCoordinates;
-    }
-    namespace files {
-      namespace general {
-        class AttitudeEphemerisFile$AttitudeEphemerisSegment;
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -33,6 +11,28 @@ namespace java {
     class Throwable;
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace utils {
+      class TimeStampedAngularCoordinates;
+      class AngularDerivativesFilter;
+    }
+    namespace files {
+      namespace general {
+        class AttitudeEphemerisFile$AttitudeEphemerisSegment;
+      }
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace attitudes {
+      class BoundedAttitudeProvider;
+    }
   }
 }
 template<class T> class JArray;
@@ -45,19 +45,19 @@ namespace org {
         class PythonAttitudeEphemerisSegment : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_finalize_7ae3461a92a43152,
-            mid_getAngularCoordinates_a6156df500549a58,
-            mid_getAttitudeProvider_05a2839e8fecde67,
-            mid_getAvailableDerivatives_c14c1c09874639c8,
-            mid_getInterpolationMethod_0090f7797e403f43,
-            mid_getInterpolationSamples_f2f64475e4580546,
-            mid_getReferenceFrame_c8fe21bcdac65bf6,
-            mid_getStart_aaa854c403487cf3,
-            mid_getStop_aaa854c403487cf3,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
+            mid_init$_0fa09c18fee449d5,
+            mid_finalize_0fa09c18fee449d5,
+            mid_getAngularCoordinates_2afa36052df4765d,
+            mid_getAttitudeProvider_f95b60a986adb964,
+            mid_getAvailableDerivatives_3d53ef1ca7ad5f8c,
+            mid_getInterpolationMethod_11b109bd155ca898,
+            mid_getInterpolationSamples_570ce0828f81a2c1,
+            mid_getReferenceFrame_b86f9f61d97a7244,
+            mid_getStart_85703d13e302437e,
+            mid_getStop_85703d13e302437e,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
             max_mid
           };
 

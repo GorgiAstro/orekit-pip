@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace linear {
       class FieldMatrix;
       class FieldVector;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,12 +25,12 @@ namespace org {
       class FieldDecompositionSolver : public ::java::lang::Object {
        public:
         enum {
-          mid_getColumnDimension_f2f64475e4580546,
-          mid_getInverse_cc77900a647586cf,
-          mid_getRowDimension_f2f64475e4580546,
-          mid_isNonSingular_e470b6d9e0d979db,
-          mid_solve_311c21c57522a65c,
-          mid_solve_585261c47f8bb8c7,
+          mid_getColumnDimension_570ce0828f81a2c1,
+          mid_getInverse_c992983685c753c5,
+          mid_getRowDimension_570ce0828f81a2c1,
+          mid_isNonSingular_b108b35ef48e27bd,
+          mid_solve_1409f31dc074a11f,
+          mid_solve_a657ce460dba8c79,
           max_mid
         };
 

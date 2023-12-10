@@ -22,13 +22,13 @@ namespace java {
     class OutputStream : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_7ae3461a92a43152,
-        mid_close_7ae3461a92a43152,
-        mid_flush_7ae3461a92a43152,
-        mid_nullOutputStream_c7146c0d9553864e,
-        mid_write_9c4b35f0a6dc87f3,
-        mid_write_0a2a1ac2721c0336,
-        mid_write_125b1e9f043b29f8,
+        mid_init$_0fa09c18fee449d5,
+        mid_close_0fa09c18fee449d5,
+        mid_flush_0fa09c18fee449d5,
+        mid_nullOutputStream_59cd2bc5cbe06e4d,
+        mid_write_20012b3010a39c05,
+        mid_write_99803b0791f320ff,
+        mid_write_d7af9aedcdd3845b,
         max_mid
       };
 

@@ -19,8 +19,8 @@ namespace org {
           class RawSphericalHarmonicsProvider$RawSphericalHarmonics : public ::org::orekit::time::TimeStamped {
            public:
             enum {
-              mid_getRawCnm_a84e4ee1da3f1ab8,
-              mid_getRawSnm_a84e4ee1da3f1ab8,
+              mid_getRawCnm_dbbe5f05149dbf73,
+              mid_getRawSnm_dbbe5f05149dbf73,
               max_mid
             };
 

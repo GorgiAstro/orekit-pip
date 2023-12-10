@@ -5,15 +5,15 @@
 
 namespace org {
   namespace hipparchus {
-    class Field;
     class CalculusFieldElement;
+    class Field;
   }
   namespace orekit {
     namespace propagation {
-      class FieldSpacecraftState;
       namespace events {
         class FieldFunctionalDetector;
       }
+      class FieldSpacecraftState;
     }
   }
 }
@@ -32,9 +32,9 @@ namespace org {
         class FieldFunctionalDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_205c34b8e33cf33f,
-            mid_g_cc79c2733879de35,
-            mid_create_c769ae7d904ec085,
+            mid_init$_484998d88974267b,
+            mid_g_41a008afe53da855,
+            mid_create_d4d3c083af51acc5,
             max_mid
           };
 

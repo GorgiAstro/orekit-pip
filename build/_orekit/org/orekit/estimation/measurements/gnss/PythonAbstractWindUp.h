@@ -16,10 +16,10 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
+        class EstimatedMeasurementBase;
         namespace gnss {
           class Dipole;
         }
-        class EstimatedMeasurementBase;
       }
     }
   }
@@ -41,13 +41,13 @@ namespace org {
           class PythonAbstractWindUp : public ::org::orekit::estimation::measurements::gnss::AbstractWindUp {
            public:
             enum {
-              mid_init$_0afbc95553157507,
-              mid_emitterToInert_fd1bf64855bd2d79,
-              mid_finalize_7ae3461a92a43152,
-              mid_pythonDecRef_7ae3461a92a43152,
-              mid_pythonExtension_a27fc9afd27e559d,
-              mid_pythonExtension_fefb08975c10f0a1,
-              mid_receiverToInert_fd1bf64855bd2d79,
+              mid_init$_31441980502696f4,
+              mid_emitterToInert_e7f87679ee42d076,
+              mid_finalize_0fa09c18fee449d5,
+              mid_pythonDecRef_0fa09c18fee449d5,
+              mid_pythonExtension_492808a339bfa35f,
+              mid_pythonExtension_3a8e7649f31fdb20,
+              mid_receiverToInert_e7f87679ee42d076,
               max_mid
             };
 

@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
-        class EventShifter;
         class EventDetector;
+        class EventShifter;
       }
       class SpacecraftState;
     }
@@ -32,13 +32,13 @@ namespace org {
         class EventShifter : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_ea7e9d30b96a7240,
-            mid_g_66a2f071e6ed0c06,
-            mid_getDecreasingTimeShift_456d9a2f64d6b28d,
-            mid_getDetector_27b528e7858202ed,
-            mid_getIncreasingTimeShift_456d9a2f64d6b28d,
-            mid_init_3d13474d79f5e7bc,
-            mid_create_e0e8c1fb7008da06,
+            mid_init$_0effb5e72d82753d,
+            mid_g_432f3d328c15ec82,
+            mid_getDecreasingTimeShift_dff5885c2c873297,
+            mid_getDetector_d73bb985ffde4156,
+            mid_getIncreasingTimeShift_dff5885c2c873297,
+            mid_init_826b4eda94da4e78,
+            mid_create_97557250afb4ac9e,
             max_mid
           };
 

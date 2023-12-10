@@ -5,29 +5,29 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
-    class CalculusFieldElement;
   }
   namespace orekit {
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
     namespace frames {
       class Frame;
-    }
-    namespace utils {
-      class ParameterDriver;
     }
     namespace forces {
       class ForceModel;
     }
-    namespace propagation {
-      class SpacecraftState;
-      class FieldSpacecraftState;
+    namespace utils {
+      class ParameterDriver;
     }
   }
 }
@@ -49,11 +49,11 @@ namespace org {
         class LenseThirringRelativity : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_3469fac3d9918fac,
-            mid_acceleration_78989e44b99f7cc2,
-            mid_acceleration_00aba28d3abe9a8c,
-            mid_dependsOnPositionOnly_e470b6d9e0d979db,
-            mid_getParametersDrivers_a6156df500549a58,
+            mid_init$_d31b3f5aafa248e3,
+            mid_acceleration_8954761face5e1a7,
+            mid_acceleration_b42ac4b5bfb80fab,
+            mid_dependsOnPositionOnly_b108b35ef48e27bd,
+            mid_getParametersDrivers_2afa36052df4765d,
             max_mid
           };
 
@@ -70,8 +70,8 @@ namespace org {
 
           LenseThirringRelativity(jdouble, const ::org::orekit::frames::Frame &);
 
-          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
+          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           jboolean dependsOnPositionOnly() const;
           ::java::util::List getParametersDrivers() const;
         };

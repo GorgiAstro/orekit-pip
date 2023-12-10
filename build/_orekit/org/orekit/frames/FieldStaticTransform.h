@@ -4,20 +4,6 @@
 #include "org/orekit/time/TimeStamped.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-          class FieldLine;
-          class Line;
-          class FieldRotation;
-        }
-      }
-    }
-    class Field;
-  }
   namespace orekit {
     namespace frames {
       class FieldStaticTransform;
@@ -26,6 +12,20 @@ namespace org {
     namespace time {
       class FieldAbsoluteDate;
     }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldLine;
+          class FieldVector3D;
+          class Line;
+          class FieldRotation;
+          class Vector3D;
+        }
+      }
+    }
+    class Field;
   }
 }
 namespace java {
@@ -42,23 +42,23 @@ namespace org {
       class FieldStaticTransform : public ::org::orekit::time::TimeStamped {
        public:
         enum {
-          mid_compose_d5bdc0c8fd5f2279,
-          mid_compositeRotation_d19ca496962484e6,
-          mid_compositeTranslation_08f366667a037862,
-          mid_getIdentity_d18340e2e2a53d56,
-          mid_getInverse_dd9256b23dabf6f6,
-          mid_getRotation_ac4489fdef1c3aef,
-          mid_getTranslation_5791f80683b5227e,
-          mid_of_15d6b0d0037f2e50,
-          mid_of_def843b29e44d147,
-          mid_of_cd804267ea95b63a,
-          mid_of_d6fd7734a1a942ba,
-          mid_transformLine_9988662f7c6f1b6c,
-          mid_transformLine_14caeddcfca8ca0c,
-          mid_transformPosition_8ff2edc0ecba4b6e,
-          mid_transformPosition_89718cf054290f11,
-          mid_transformVector_8ff2edc0ecba4b6e,
-          mid_transformVector_89718cf054290f11,
+          mid_compose_e718ef15d9487dde,
+          mid_compositeRotation_63d03d752aea77b3,
+          mid_compositeTranslation_e78a51049c739df6,
+          mid_getIdentity_47701bd9c773f171,
+          mid_getInverse_b4e9bd069b43219a,
+          mid_getRotation_1d339a2ee3a3323a,
+          mid_getTranslation_716f50c86ffc8da7,
+          mid_of_ccf560e3672a239e,
+          mid_of_c4eae0c7e1e1b864,
+          mid_of_06614a63a9481c60,
+          mid_of_1817b764fbb99071,
+          mid_transformLine_98e8513ff63d3587,
+          mid_transformLine_1542cd68fd018a55,
+          mid_transformPosition_a173408e2b1f78b2,
+          mid_transformPosition_7a9aa2e8b906f1a5,
+          mid_transformVector_a173408e2b1f78b2,
+          mid_transformVector_7a9aa2e8b906f1a5,
           max_mid
         };
 

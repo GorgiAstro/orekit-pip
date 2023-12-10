@@ -16,6 +16,12 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace orbits {
+      class Orbit;
+    }
     namespace propagation {
       namespace semianalytical {
         namespace dsst {
@@ -24,12 +30,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace orbits {
-      class Orbit;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -45,14 +45,14 @@ namespace org {
             class PythonShortPeriodTerms : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_finalize_7ae3461a92a43152,
-                mid_getCoefficients_f2bf54770645c00d,
-                mid_getCoefficientsKeyPrefix_0090f7797e403f43,
-                mid_pythonDecRef_7ae3461a92a43152,
-                mid_pythonExtension_a27fc9afd27e559d,
-                mid_pythonExtension_fefb08975c10f0a1,
-                mid_value_bae9521eacc13195,
+                mid_init$_0fa09c18fee449d5,
+                mid_finalize_0fa09c18fee449d5,
+                mid_getCoefficients_64003844027bb6c4,
+                mid_getCoefficientsKeyPrefix_11b109bd155ca898,
+                mid_pythonDecRef_0fa09c18fee449d5,
+                mid_pythonExtension_492808a339bfa35f,
+                mid_pythonExtension_3a8e7649f31fdb20,
+                mid_value_2ab179738ea066bf,
                 max_mid
               };
 

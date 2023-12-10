@@ -3,27 +3,27 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Euclidean3D;
-          class Vector3D;
-        }
-        namespace twod {
-          class Euclidean2D;
-        }
-      }
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+          class Euclidean3D;
+        }
+        namespace twod {
+          class Euclidean2D;
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -37,9 +37,9 @@ namespace org {
           class PolyhedronsSet$BRep : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_694ad53d6db8f702,
-              mid_getFacets_a6156df500549a58,
-              mid_getVertices_a6156df500549a58,
+              mid_init$_6701c064a13f8d2f,
+              mid_getFacets_2afa36052df4765d,
+              mid_getVertices_2afa36052df4765d,
               max_mid
             };
 

@@ -3,6 +3,11 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -14,11 +19,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -33,8 +33,8 @@ namespace org {
             class SignalInSpaceAccuracy : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0a2a1ac2721c0336,
-                mid_getAccuracy_456d9a2f64d6b28d,
+                mid_init$_99803b0791f320ff,
+                mid_getAccuracy_dff5885c2c873297,
                 max_mid
               };
 

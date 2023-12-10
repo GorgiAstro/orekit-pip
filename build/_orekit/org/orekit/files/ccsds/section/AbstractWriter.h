@@ -35,11 +35,11 @@ namespace org {
           class AbstractWriter : public ::java::lang::Object {
            public:
             enum {
-              mid_enterSection_fb36c2e4ae059ab9,
-              mid_exitSection_fb36c2e4ae059ab9,
-              mid_write_fb36c2e4ae059ab9,
-              mid_writeContent_fb36c2e4ae059ab9,
-              mid_intArrayToString_e3f5ec408434fab9,
+              mid_enterSection_6d745cf7b26e9f5d,
+              mid_exitSection_6d745cf7b26e9f5d,
+              mid_write_6d745cf7b26e9f5d,
+              mid_writeContent_6d745cf7b26e9f5d,
+              mid_intArrayToString_73683ad393ccda19,
               max_mid
             };
 

@@ -3,21 +3,12 @@
 
 #include "org/orekit/forces/maneuvers/trigger/IntervalEventTrigger.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
-        class FieldAbstractDetector;
         class AbstractDetector;
+        class FieldAbstractDetector;
       }
     }
     namespace utils {
@@ -26,6 +17,15 @@ namespace org {
   }
   namespace hipparchus {
     class Field;
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -39,13 +39,13 @@ namespace org {
           class PythonIntervalEventTrigger : public ::org::orekit::forces::maneuvers::trigger::IntervalEventTrigger {
            public:
             enum {
-              mid_init$_d0c14729fef158d0,
-              mid_convertIntervalDetector_695049796b8b09bd,
-              mid_finalize_7ae3461a92a43152,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_pythonDecRef_7ae3461a92a43152,
-              mid_pythonExtension_a27fc9afd27e559d,
-              mid_pythonExtension_fefb08975c10f0a1,
+              mid_init$_958f8a74aa6ccd6d,
+              mid_convertIntervalDetector_904dccaacafa0db1,
+              mid_finalize_0fa09c18fee449d5,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_pythonDecRef_0fa09c18fee449d5,
+              mid_pythonExtension_492808a339bfa35f,
+              mid_pythonExtension_3a8e7649f31fdb20,
               max_mid
             };
 

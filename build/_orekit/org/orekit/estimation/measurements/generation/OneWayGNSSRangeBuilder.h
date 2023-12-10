@@ -4,6 +4,11 @@
 #include "org/orekit/estimation/measurements/generation/AbstractMeasurementBuilder.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace random {
+      class CorrelatedRandomVectorGenerator;
+    }
+  }
   namespace orekit {
     namespace estimation {
       namespace measurements {
@@ -13,18 +18,13 @@ namespace org {
         }
       }
     }
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace propagation {
       namespace sampling {
         class OrekitStepInterpolator;
       }
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    namespace random {
-      class CorrelatedRandomVectorGenerator;
     }
   }
 }
@@ -47,7 +47,7 @@ namespace org {
           class OneWayGNSSRangeBuilder : public ::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder {
            public:
             enum {
-              mid_build_fded91c16db00082,
+              mid_build_e19ea6cda69364bb,
               max_mid
             };
 

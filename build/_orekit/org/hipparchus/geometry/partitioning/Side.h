@@ -28,8 +28,8 @@ namespace org {
         class Side : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_39e8b5ae99e73699,
-            mid_values_71cf5da689c4a3d8,
+            mid_valueOf_ba28e458d4b57b62,
+            mid_values_1792e4847edb7075,
             max_mid
           };
 

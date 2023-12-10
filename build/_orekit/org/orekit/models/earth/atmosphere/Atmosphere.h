@@ -5,23 +5,23 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
-    class CalculusFieldElement;
   }
   namespace orekit {
     namespace frames {
       class Frame;
     }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
   }
 }
@@ -41,11 +41,11 @@ namespace org {
           class Atmosphere : public ::java::io::Serializable {
            public:
             enum {
-              mid_getDensity_e3f5c4474b151066,
-              mid_getDensity_ee5ac6667b0d4b90,
-              mid_getFrame_c8fe21bcdac65bf6,
-              mid_getVelocity_4aa5ce694a02c205,
-              mid_getVelocity_8f4e8542665c98ee,
+              mid_getDensity_b79d75c1a8af7374,
+              mid_getDensity_f7d7785230311c38,
+              mid_getFrame_b86f9f61d97a7244,
+              mid_getVelocity_417ea3d5e6de26e5,
+              mid_getVelocity_b4b015cfdb3a2ead,
               max_mid
             };
 
@@ -63,8 +63,8 @@ namespace org {
             ::org::hipparchus::CalculusFieldElement getDensity(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &) const;
             jdouble getDensity(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &) const;
             ::org::orekit::frames::Frame getFrame() const;
-            ::org::hipparchus::geometry::euclidean::threed::Vector3D getVelocity(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &) const;
             ::org::hipparchus::geometry::euclidean::threed::FieldVector3D getVelocity(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &) const;
+            ::org::hipparchus::geometry::euclidean::threed::Vector3D getVelocity(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &) const;
           };
         }
       }

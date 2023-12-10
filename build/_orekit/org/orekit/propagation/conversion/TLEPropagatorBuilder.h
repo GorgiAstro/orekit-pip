@@ -3,34 +3,28 @@
 
 #include "org/orekit/propagation/conversion/AbstractPropagatorBuilder.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class Object;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataContext;
+    namespace orbits {
+      class PositionAngleType;
     }
     namespace propagation {
+      namespace conversion {
+        class TLEPropagatorBuilder;
+        class PropagatorBuilder;
+      }
       namespace analytical {
         namespace tle {
           class TLEPropagator;
-          class TLE;
           namespace generation {
             class TleGenerationAlgorithm;
           }
+          class TLE;
         }
       }
-      namespace conversion {
-        class PropagatorBuilder;
-        class TLEPropagatorBuilder;
-      }
+    }
+    namespace data {
+      class DataContext;
     }
     namespace estimation {
       namespace leastsquares {
@@ -41,12 +35,18 @@ namespace org {
         class ObservedMeasurement;
       }
     }
-    namespace orbits {
-      class PositionAngleType;
-    }
     namespace utils {
       class ParameterDriversList;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class Object;
   }
 }
 template<class T> class JArray;
@@ -59,12 +59,12 @@ namespace org {
         class TLEPropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_a62c74463f877056,
-            mid_init$_321a504eebdd5b34,
-            mid_buildLeastSquaresModel_31c4fcde5bc19fc3,
-            mid_buildPropagator_6af7ded75f6f8b1c,
-            mid_copy_213db2109b338194,
-            mid_getTemplateTLE_32ddbfc0b67883b1,
+            mid_init$_74fe3f418af898ed,
+            mid_init$_5805b462d88cb3bd,
+            mid_buildLeastSquaresModel_2eb3122719704f90,
+            mid_buildPropagator_9ad7da531a683a90,
+            mid_copy_009a67d896739747,
+            mid_getTemplateTLE_e993eceec98c738b,
             max_mid
           };
 

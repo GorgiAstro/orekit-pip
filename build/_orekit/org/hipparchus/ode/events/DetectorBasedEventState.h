@@ -7,14 +7,14 @@ namespace org {
   namespace hipparchus {
     namespace ode {
       namespace events {
-        class EventState;
         class EventOccurrence;
+        class EventState;
         class ODEEventDetector;
       }
+      class ODEStateAndDerivative;
       namespace sampling {
         class ODEStateInterpolator;
       }
-      class ODEStateAndDerivative;
     }
     namespace exception {
       class MathIllegalStateException;
@@ -37,14 +37,14 @@ namespace org {
         class DetectorBasedEventState : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_95ad63d6e12b665a,
-            mid_doEvent_786b2ff82ce4b0ff,
-            mid_evaluateStep_31e05790c4db57cc,
-            mid_getEventDetector_8a6f4259e80e096f,
-            mid_getEventTime_456d9a2f64d6b28d,
-            mid_init_85808f3d6374b436,
-            mid_reinitializeBegin_7f7ea329b6669cd2,
-            mid_tryAdvance_6a90482ad4740a55,
+            mid_init$_1acd9de872b3c9bd,
+            mid_doEvent_f67305c017c9762e,
+            mid_evaluateStep_37ca30d971b4fe79,
+            mid_getEventDetector_d3000cf67fb1b23b,
+            mid_getEventTime_dff5885c2c873297,
+            mid_init_5aaadc62bce8a394,
+            mid_reinitializeBegin_8c00288d760ba078,
+            mid_tryAdvance_094255e133ccdcf3,
             max_mid
           };
 

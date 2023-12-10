@@ -3,24 +3,24 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
         namespace utils {
           namespace lexical {
-            class MessageParser;
             class LexicalAnalyzer;
+            class MessageParser;
           }
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -35,12 +35,12 @@ namespace org {
             class PythonLexicalAnalyzer : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_accept_b8fbb626a8a68048,
-                mid_finalize_7ae3461a92a43152,
-                mid_pythonDecRef_7ae3461a92a43152,
-                mid_pythonExtension_a27fc9afd27e559d,
-                mid_pythonExtension_fefb08975c10f0a1,
+                mid_init$_0fa09c18fee449d5,
+                mid_accept_94f8bc3acabdf0ba,
+                mid_finalize_0fa09c18fee449d5,
+                mid_pythonDecRef_0fa09c18fee449d5,
+                mid_pythonExtension_492808a339bfa35f,
+                mid_pythonExtension_3a8e7649f31fdb20,
                 max_mid
               };
 

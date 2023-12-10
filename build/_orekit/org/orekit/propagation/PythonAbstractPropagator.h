@@ -6,10 +6,10 @@
 namespace org {
   namespace orekit {
     namespace propagation {
-      class EphemerisGenerator;
       namespace events {
         class EventDetector;
       }
+      class EphemerisGenerator;
       class SpacecraftState;
     }
     namespace time {
@@ -35,16 +35,16 @@ namespace org {
       class PythonAbstractPropagator : public ::org::orekit::propagation::AbstractPropagator {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_addEventDetector_8ef30a2ad40caceb,
-          mid_clearEventsDetectors_7ae3461a92a43152,
-          mid_finalize_7ae3461a92a43152,
-          mid_getEphemerisGenerator_dd0e78d2be8aaf34,
-          mid_getEventsDetectors_cfcfd130f9013e3e,
-          mid_propagate_afc18c81ed763a96,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
+          mid_init$_0fa09c18fee449d5,
+          mid_addEventDetector_efb7003d866d4523,
+          mid_clearEventsDetectors_0fa09c18fee449d5,
+          mid_finalize_0fa09c18fee449d5,
+          mid_getEphemerisGenerator_18d439b26e70ccd0,
+          mid_getEventsDetectors_37528d110cff6b74,
+          mid_propagate_a69ef29c3ea1e1fa,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
           max_mid
         };
 

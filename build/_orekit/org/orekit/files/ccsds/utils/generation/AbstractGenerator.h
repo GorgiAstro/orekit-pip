@@ -3,29 +3,8 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class CharSequence;
-    class Double;
-    class Enum;
-    class Appendable;
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace utils {
-      namespace units {
-        class Unit;
-      }
-    }
     namespace files {
       namespace ccsds {
         namespace utils {
@@ -38,9 +17,30 @@ namespace org {
         }
       }
     }
+    namespace utils {
+      namespace units {
+        class Unit;
+      }
+    }
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class CharSequence;
+    class Double;
+    class Enum;
+    class Appendable;
+    class Class;
+    class String;
+  }
+  namespace io {
+    class IOException;
   }
 }
 template<class T> class JArray;
@@ -55,29 +55,29 @@ namespace org {
             class AbstractGenerator : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a89f5039559ee5f9,
-                mid_close_7ae3461a92a43152,
-                mid_dateToCalendarString_e9166ff038580198,
-                mid_dateToString_e9166ff038580198,
-                mid_dateToString_5f1e8067dcf848fb,
-                mid_doubleToString_085bbc49599fa163,
-                mid_enterSection_e939c6558ae8d313,
-                mid_exitSection_0090f7797e403f43,
-                mid_getOutputName_0090f7797e403f43,
-                mid_newLine_7ae3461a92a43152,
-                mid_siToCcsdsName_43625fc1c3d86afe,
-                mid_unitsListToString_7df61b71f083fbd6,
-                mid_writeEntry_c0315b1049063d00,
-                mid_writeEntry_8ef0818590b472f3,
-                mid_writeEntry_0a2534765e753ec9,
-                mid_writeEntry_a1392c2233da957d,
-                mid_writeEntry_fd7b1fd8e935b456,
-                mid_writeEntry_b458f0406720c03f,
-                mid_writeEntry_20cfd7e2288cf462,
-                mid_writeRawData_be0046d7f7239695,
-                mid_writeRawData_d77f10dac029c69d,
-                mid_writeUnits_f6642efa67a69233,
-                mid_complain_d1dd1bdcf55f8f80,
+                mid_init$_421e10c76f266368,
+                mid_close_0fa09c18fee449d5,
+                mid_dateToCalendarString_40338d1d67048bfb,
+                mid_dateToString_40338d1d67048bfb,
+                mid_dateToString_b3e3531a0f06efb9,
+                mid_doubleToString_e8f51f84167aafbd,
+                mid_enterSection_d0bc48d5b00dc40c,
+                mid_exitSection_11b109bd155ca898,
+                mid_getOutputName_11b109bd155ca898,
+                mid_newLine_0fa09c18fee449d5,
+                mid_siToCcsdsName_92807efd57acb082,
+                mid_unitsListToString_34ebc3df083d2284,
+                mid_writeEntry_ebeb70e5f85f1dc9,
+                mid_writeEntry_8e27d18ccaeb99ba,
+                mid_writeEntry_f12777dd1821e86a,
+                mid_writeEntry_d298f8af5ad811ef,
+                mid_writeEntry_b4657dba79ed747b,
+                mid_writeEntry_95abad989fa63d1a,
+                mid_writeEntry_182383f649d6a00c,
+                mid_writeRawData_636c0bbb96cab723,
+                mid_writeRawData_5e688138ffe60231,
+                mid_writeUnits_43de8ce72aa2edad,
+                mid_complain_d6df10f4e35ef1e8,
                 max_mid
               };
 

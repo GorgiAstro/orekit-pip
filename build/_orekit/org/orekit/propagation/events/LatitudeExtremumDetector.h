@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace bodies {
-      class OneAxisEllipsoid;
       class BodyShape;
+      class OneAxisEllipsoid;
     }
     namespace propagation {
       namespace events {
@@ -32,11 +32,11 @@ namespace org {
         class LatitudeExtremumDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_6d5ed18afc9cd8ba,
-            mid_init$_1b8515f578ac1f69,
-            mid_g_66a2f071e6ed0c06,
-            mid_getBody_883d26889ee03ca8,
-            mid_create_c6346e6c9a3721a6,
+            mid_init$_7c502fc601af6f77,
+            mid_init$_b67b42078e2e878c,
+            mid_g_432f3d328c15ec82,
+            mid_getBody_6f78da94fd048d9d,
+            mid_create_4905953214205b97,
             max_mid
           };
 

@@ -4,6 +4,9 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace models {
       namespace earth {
@@ -13,20 +16,17 @@ namespace org {
         }
       }
     }
-    namespace bodies {
-      class GeodeticPoint;
-      class FieldGeodeticPoint;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
+    namespace bodies {
+      class FieldGeodeticPoint;
+      class GeodeticPoint;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
   }
 }
 namespace java {
@@ -49,11 +49,11 @@ namespace org {
           class EstimatedTroposphericModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_e85e84d04ee812ca,
-              mid_init$_307e5370cf51797c,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_pathDelay_0326270bf0e8ed17,
-              mid_pathDelay_af133f80cdba1dc2,
+              mid_init$_73d05fd29ef2005b,
+              mid_init$_63fe71cad1f79f0a,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_pathDelay_ff7a895eb6f0af2e,
+              mid_pathDelay_fe3b5c46874ab115,
               max_mid
             };
 

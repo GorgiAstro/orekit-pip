@@ -36,11 +36,11 @@ namespace org {
           class OutlierFilter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_987a5fb872043b12,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_modifyWithoutDerivatives_811f96960c94c1de,
-              mid_getWarmup_f2f64475e4580546,
-              mid_getMaxSigma_456d9a2f64d6b28d,
+              mid_init$_bb79ca80d85d0a66,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_modifyWithoutDerivatives_d1815d998cba71e9,
+              mid_getWarmup_570ce0828f81a2c1,
+              mid_getMaxSigma_dff5885c2c873297,
               max_mid
             };
 

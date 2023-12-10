@@ -3,12 +3,6 @@
 
 #include "org/orekit/files/ilrs/ILRSHeader.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -16,6 +10,12 @@ namespace org {
         class CRDHeader$RangeType;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,52 +28,52 @@ namespace org {
         class CRDHeader : public ::org::orekit::files::ilrs::ILRSHeader {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_getDataReleaseFlag_f2f64475e4580546,
-            mid_getDataType_f2f64475e4580546,
-            mid_getDateAndTime_0090f7797e403f43,
-            mid_getEpochIdentifier_f2f64475e4580546,
-            mid_getH1CrdString_0090f7797e403f43,
-            mid_getH2CrdString_0090f7797e403f43,
-            mid_getH3CrdString_0090f7797e403f43,
-            mid_getH4CrdString_0090f7797e403f43,
-            mid_getH5CrdString_0090f7797e403f43,
-            mid_getPredictionProvider_0090f7797e403f43,
-            mid_getPredictionType_f2f64475e4580546,
-            mid_getQualityIndicator_f2f64475e4580546,
-            mid_getRangeType_45572137f73e2f07,
-            mid_getSpacecraftEpochTimeScale_f2f64475e4580546,
-            mid_getStationName_0090f7797e403f43,
-            mid_getStationNetword_0090f7797e403f43,
-            mid_getSystemIdentifier_f2f64475e4580546,
-            mid_getSystemNumber_f2f64475e4580546,
-            mid_getSystemOccupancy_f2f64475e4580546,
-            mid_getYearOfCentury_f2f64475e4580546,
-            mid_isCenterOfMassCorrectionApplied_e470b6d9e0d979db,
-            mid_isReceiveAmplitudeCorrectionApplied_e470b6d9e0d979db,
-            mid_isStationSystemDelayApplied_e470b6d9e0d979db,
-            mid_isTransponderDelayApplied_e470b6d9e0d979db,
-            mid_isTroposphericRefractionApplied_e470b6d9e0d979db,
-            mid_setDataReleaseFlag_0a2a1ac2721c0336,
-            mid_setDataType_0a2a1ac2721c0336,
-            mid_setDateAndTime_e939c6558ae8d313,
-            mid_setEpochIdentifier_0a2a1ac2721c0336,
-            mid_setIsCenterOfMassCorrectionApplied_50a2e0b139e80a58,
-            mid_setIsReceiveAmplitudeCorrectionApplied_50a2e0b139e80a58,
-            mid_setIsStationSystemDelayApplied_50a2e0b139e80a58,
-            mid_setIsTransponderDelayApplied_50a2e0b139e80a58,
-            mid_setIsTroposphericRefractionApplied_50a2e0b139e80a58,
-            mid_setPredictionProvider_e939c6558ae8d313,
-            mid_setPredictionType_0a2a1ac2721c0336,
-            mid_setQualityIndicator_0a2a1ac2721c0336,
-            mid_setRangeType_0a2a1ac2721c0336,
-            mid_setSpacecraftEpochTimeScale_0a2a1ac2721c0336,
-            mid_setStationName_e939c6558ae8d313,
-            mid_setStationNetword_e939c6558ae8d313,
-            mid_setSystemIdentifier_0a2a1ac2721c0336,
-            mid_setSystemNumber_0a2a1ac2721c0336,
-            mid_setSystemOccupancy_0a2a1ac2721c0336,
-            mid_setYearOfCentury_0a2a1ac2721c0336,
+            mid_init$_0fa09c18fee449d5,
+            mid_getDataReleaseFlag_570ce0828f81a2c1,
+            mid_getDataType_570ce0828f81a2c1,
+            mid_getDateAndTime_11b109bd155ca898,
+            mid_getEpochIdentifier_570ce0828f81a2c1,
+            mid_getH1CrdString_11b109bd155ca898,
+            mid_getH2CrdString_11b109bd155ca898,
+            mid_getH3CrdString_11b109bd155ca898,
+            mid_getH4CrdString_11b109bd155ca898,
+            mid_getH5CrdString_11b109bd155ca898,
+            mid_getPredictionProvider_11b109bd155ca898,
+            mid_getPredictionType_570ce0828f81a2c1,
+            mid_getQualityIndicator_570ce0828f81a2c1,
+            mid_getRangeType_a6440c37074837d9,
+            mid_getSpacecraftEpochTimeScale_570ce0828f81a2c1,
+            mid_getStationName_11b109bd155ca898,
+            mid_getStationNetword_11b109bd155ca898,
+            mid_getSystemIdentifier_570ce0828f81a2c1,
+            mid_getSystemNumber_570ce0828f81a2c1,
+            mid_getSystemOccupancy_570ce0828f81a2c1,
+            mid_getYearOfCentury_570ce0828f81a2c1,
+            mid_isCenterOfMassCorrectionApplied_b108b35ef48e27bd,
+            mid_isReceiveAmplitudeCorrectionApplied_b108b35ef48e27bd,
+            mid_isStationSystemDelayApplied_b108b35ef48e27bd,
+            mid_isTransponderDelayApplied_b108b35ef48e27bd,
+            mid_isTroposphericRefractionApplied_b108b35ef48e27bd,
+            mid_setDataReleaseFlag_99803b0791f320ff,
+            mid_setDataType_99803b0791f320ff,
+            mid_setDateAndTime_d0bc48d5b00dc40c,
+            mid_setEpochIdentifier_99803b0791f320ff,
+            mid_setIsCenterOfMassCorrectionApplied_bd04c9335fb9e4cf,
+            mid_setIsReceiveAmplitudeCorrectionApplied_bd04c9335fb9e4cf,
+            mid_setIsStationSystemDelayApplied_bd04c9335fb9e4cf,
+            mid_setIsTransponderDelayApplied_bd04c9335fb9e4cf,
+            mid_setIsTroposphericRefractionApplied_bd04c9335fb9e4cf,
+            mid_setPredictionProvider_d0bc48d5b00dc40c,
+            mid_setPredictionType_99803b0791f320ff,
+            mid_setQualityIndicator_99803b0791f320ff,
+            mid_setRangeType_99803b0791f320ff,
+            mid_setSpacecraftEpochTimeScale_99803b0791f320ff,
+            mid_setStationName_d0bc48d5b00dc40c,
+            mid_setStationNetword_d0bc48d5b00dc40c,
+            mid_setSystemIdentifier_99803b0791f320ff,
+            mid_setSystemNumber_99803b0791f320ff,
+            mid_setSystemOccupancy_99803b0791f320ff,
+            mid_setYearOfCentury_99803b0791f320ff,
             max_mid
           };
 

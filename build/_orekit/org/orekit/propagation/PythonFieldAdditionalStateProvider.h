@@ -3,25 +3,25 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
   }
   namespace orekit {
+    namespace propagation {
+      class FieldAdditionalStateProvider;
+      class FieldSpacecraftState;
+    }
     namespace time {
       class FieldAbsoluteDate;
     }
-    namespace propagation {
-      class FieldSpacecraftState;
-      class FieldAdditionalStateProvider;
-    }
+  }
+}
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -33,16 +33,16 @@ namespace org {
       class PythonFieldAdditionalStateProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_finalize_7ae3461a92a43152,
-          mid_getAdditionalState_360c953f14ed07de,
-          mid_getName_0090f7797e403f43,
-          mid_init_acdd8180a5dc1a8d,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
-          mid_yield_91c945ca7903e8ac,
-          mid_yield__91c945ca7903e8ac,
+          mid_init$_0fa09c18fee449d5,
+          mid_finalize_0fa09c18fee449d5,
+          mid_getAdditionalState_567ea49d447f98c8,
+          mid_getName_11b109bd155ca898,
+          mid_init_8e8de2be1664674a,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
+          mid_yield_1b0abd4f90ebd0eb,
+          mid_yield__1b0abd4f90ebd0eb,
           max_mid
         };
 

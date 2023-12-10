@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class RealVector;
       class RealMatrix;
+      class RealVector;
     }
   }
 }
@@ -28,15 +28,15 @@ namespace org {
             class LeastSquaresProblem$Evaluation : public ::java::lang::Object {
              public:
               enum {
-                mid_getChiSquare_456d9a2f64d6b28d,
-                mid_getCost_456d9a2f64d6b28d,
-                mid_getCovariances_2461b653ab91779b,
-                mid_getJacobian_7116bbecdd8ceb21,
-                mid_getPoint_6d9adf1d5b463928,
-                mid_getRMS_456d9a2f64d6b28d,
-                mid_getReducedChiSquare_b772323fc98b7293,
-                mid_getResiduals_6d9adf1d5b463928,
-                mid_getSigma_247afd2de476d613,
+                mid_getChiSquare_dff5885c2c873297,
+                mid_getCost_dff5885c2c873297,
+                mid_getCovariances_f21dcd9464c6e3c5,
+                mid_getJacobian_688b496048ff947b,
+                mid_getPoint_aab4fbf77867daa8,
+                mid_getRMS_dff5885c2c873297,
+                mid_getReducedChiSquare_46f85b53d9aedd96,
+                mid_getResiduals_aab4fbf77867daa8,
+                mid_getSigma_5df18376713b9c4f,
                 max_mid
               };
 

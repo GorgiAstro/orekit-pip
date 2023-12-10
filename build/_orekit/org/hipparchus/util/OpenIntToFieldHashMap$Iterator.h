@@ -3,18 +3,18 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class FieldElement;
-  }
-}
 namespace java {
   namespace util {
-    class ConcurrentModificationException;
     class NoSuchElementException;
+    class ConcurrentModificationException;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    class FieldElement;
   }
 }
 template<class T> class JArray;
@@ -26,10 +26,10 @@ namespace org {
       class OpenIntToFieldHashMap$Iterator : public ::java::lang::Object {
        public:
         enum {
-          mid_advance_7ae3461a92a43152,
-          mid_hasNext_e470b6d9e0d979db,
-          mid_key_f2f64475e4580546,
-          mid_value_7e89936bdf79375b,
+          mid_advance_0fa09c18fee449d5,
+          mid_hasNext_b108b35ef48e27bd,
+          mid_key_570ce0828f81a2c1,
+          mid_value_99097cb60cf2d774,
           max_mid
         };
 

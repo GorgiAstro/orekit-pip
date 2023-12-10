@@ -20,7 +20,7 @@ namespace org {
             class TdmHeader : public ::org::orekit::files::ccsds::section::Header {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
+                mid_init$_0fa09c18fee449d5,
                 max_mid
               };
 

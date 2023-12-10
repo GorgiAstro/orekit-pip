@@ -6,25 +6,25 @@
 namespace org {
   namespace orekit {
     namespace time {
+      class TCBScale;
+      class TDBScale;
       class UTCScale;
-      class GPSScale;
+      class UT1Scale;
+      class GalileoScale;
       class QZSSScale;
       class GLONASSScale;
-      class TCBScale;
-      class UT1Scale;
-      class TCGScale;
       class TTScale;
-      class TAIScale;
-      class GalileoScale;
-      class TDBScale;
       class IRNSSScale;
+      class TAIScale;
       class BDTScale;
-    }
-    namespace utils {
-      class IERSConventions;
+      class GPSScale;
+      class TCGScale;
     }
     namespace frames {
       class EOPHistory;
+    }
+    namespace utils {
+      class IERSConventions;
     }
   }
 }
@@ -43,25 +43,25 @@ namespace org {
       class PythonAbstractTimeScales : public ::org::orekit::time::AbstractTimeScales {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_finalize_7ae3461a92a43152,
-          mid_getBDT_deaa012966748070,
-          mid_getEopHistory_7544a283da003d74,
-          mid_getGLONASS_c91e99b6d55c6edd,
-          mid_getGPS_c3529b957726f144,
-          mid_getGST_11ee1ca64364e897,
-          mid_getIRNSS_ec0466e710e3daab,
-          mid_getQZSS_7f540f12419eda56,
-          mid_getTAI_9316322b62b6b656,
-          mid_getTCB_2460e78d331af28f,
-          mid_getTCG_30aeac15cc80b3c1,
-          mid_getTDB_0bcc4110bc5be1d2,
-          mid_getTT_9be074c5a298fe1e,
-          mid_getUT1_7b22e00b4ab08eba,
-          mid_getUTC_ed870393143e8ecb,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
+          mid_init$_0fa09c18fee449d5,
+          mid_finalize_0fa09c18fee449d5,
+          mid_getBDT_fc0e10255fdb9359,
+          mid_getEopHistory_f7b9f8d7c24d861d,
+          mid_getGLONASS_2b4079449103a541,
+          mid_getGPS_9e1c13089038a5fa,
+          mid_getGST_0569916ae20da9e6,
+          mid_getIRNSS_acc0c9657c1b3fab,
+          mid_getQZSS_b61358961d42527b,
+          mid_getTAI_542013db907f5b2d,
+          mid_getTCB_a36a736c24a84bc8,
+          mid_getTCG_bc03267fa6cc0068,
+          mid_getTDB_01a9b50b4c9899e0,
+          mid_getTT_1cee2d27f65b3e44,
+          mid_getUT1_9806ff584bac5289,
+          mid_getUTC_4611f4f4ac7b3711,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
           max_mid
         };
 

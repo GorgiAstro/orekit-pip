@@ -3,17 +3,18 @@
 
 #include "org/orekit/propagation/analytical/FieldAbstractAnalyticalPropagator.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    class Field;
+  }
   namespace orekit {
+    namespace propagation {
+      class FieldSpacecraftState;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+    }
     namespace attitudes {
       class AttitudeProvider;
     }
@@ -23,16 +24,15 @@ namespace org {
     namespace orbits {
       class FieldOrbit;
     }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
-    namespace propagation {
-      class FieldSpacecraftState;
-    }
   }
-  namespace hipparchus {
-    class Field;
-    class CalculusFieldElement;
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -45,15 +45,15 @@ namespace org {
         class PythonFieldAbstractAnalyticalPropagator : public ::org::orekit::propagation::analytical::FieldAbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_b33e815fa9eacfc8,
-            mid_finalize_7ae3461a92a43152,
-            mid_getMass_7bc0fd76ee915b72,
-            mid_getParametersDrivers_a6156df500549a58,
-            mid_propagateOrbit_edf76d94987be4ff,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
-            mid_resetIntermediateState_c76342d42407aa3d,
+            mid_init$_38ba1f88f1fedcab,
+            mid_finalize_0fa09c18fee449d5,
+            mid_getMass_2a5f05be83ff251d,
+            mid_getParametersDrivers_2afa36052df4765d,
+            mid_propagateOrbit_3de5e0312fd3e848,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
+            mid_resetIntermediateState_33f1c56ea7775d4e,
             max_mid
           };
 

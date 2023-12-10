@@ -18,10 +18,10 @@ namespace java {
     class ReflectiveOperationException : public ::java::lang::Exception {
      public:
       enum {
-        mid_init$_7ae3461a92a43152,
-        mid_init$_e939c6558ae8d313,
-        mid_init$_ea7f4d04e27238a7,
-        mid_init$_fd4c96defa578a22,
+        mid_init$_0fa09c18fee449d5,
+        mid_init$_d0bc48d5b00dc40c,
+        mid_init$_98504698e8b85a67,
+        mid_init$_884e3b5778514e73,
         max_mid
       };
 

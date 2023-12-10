@@ -4,26 +4,8 @@
 #include "org/orekit/propagation/events/FieldAbstractDetector.h"
 
 namespace org {
-  namespace orekit {
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-    namespace propagation {
-      namespace events {
-        class FieldEventDetector;
-      }
-      class FieldSpacecraftState;
-    }
-    namespace forces {
-      namespace maneuvers {
-        class Control3DVectorCostType;
-      }
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
-  }
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -31,7 +13,25 @@ namespace org {
         }
       }
     }
-    class CalculusFieldElement;
+  }
+  namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+      namespace events {
+        class FieldEventDetector;
+      }
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+    }
+    namespace forces {
+      namespace maneuvers {
+        class Control3DVectorCostType;
+      }
+    }
   }
 }
 namespace java {
@@ -49,17 +49,17 @@ namespace org {
         class FieldImpulseManeuver : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_51c66098ffd41132,
-            mid_init$_7217c2ed7ac326fe,
-            mid_init$_e08909fdaee52ce1,
-            mid_g_cc79c2733879de35,
-            mid_getAttitudeOverride_5cce95036ae870ba,
-            mid_getControl3DVectorCostType_9fb96072e0d6dbf0,
-            mid_getDeltaVSat_5791f80683b5227e,
-            mid_getIsp_e6d4d3215c30992a,
-            mid_getTrigger_9afb3f6694da2222,
-            mid_init_acdd8180a5dc1a8d,
-            mid_create_8c3de04b2e5d0bcb,
+            mid_init$_9fd07713d88b584d,
+            mid_init$_2e00d63537056507,
+            mid_init$_d7504c83b8d83efa,
+            mid_g_41a008afe53da855,
+            mid_getAttitudeOverride_a904f3d015a354a0,
+            mid_getControl3DVectorCostType_67739b20d9566a8c,
+            mid_getDeltaVSat_716f50c86ffc8da7,
+            mid_getIsp_eba8e72a22c984ac,
+            mid_getTrigger_4fe06ecc019ea51d,
+            mid_init_8e8de2be1664674a,
+            mid_create_fb23fbb396cac7fb,
             max_mid
           };
 

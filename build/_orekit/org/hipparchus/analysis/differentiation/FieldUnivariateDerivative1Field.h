@@ -7,8 +7,8 @@ namespace org {
   namespace hipparchus {
     namespace analysis {
       namespace differentiation {
-        class FieldUnivariateDerivative1;
         class FieldUnivariateDerivative1Field;
+        class FieldUnivariateDerivative1;
       }
     }
     class Field;
@@ -29,12 +29,12 @@ namespace org {
         class FieldUnivariateDerivative1Field : public ::java::lang::Object {
          public:
           enum {
-            mid_equals_229c87223f486349,
-            mid_getOne_a84d235aa48b245c,
-            mid_getRuntimeClass_8f66acc08d2a174c,
-            mid_getUnivariateDerivative1Field_efb96448b31b3d1c,
-            mid_getZero_a84d235aa48b245c,
-            mid_hashCode_f2f64475e4580546,
+            mid_equals_65c7d273e80d497a,
+            mid_getOne_faf9f622bb313f1d,
+            mid_getRuntimeClass_7c16c5008b34b3db,
+            mid_getUnivariateDerivative1Field_a0ad4c68e30cad98,
+            mid_getZero_faf9f622bb313f1d,
+            mid_hashCode_570ce0828f81a2c1,
             max_mid
           };
 

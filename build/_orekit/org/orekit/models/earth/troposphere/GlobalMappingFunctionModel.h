@@ -4,12 +4,10 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
-    namespace time {
-      class TimeScale;
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
     namespace bodies {
       class GeodeticPoint;
       class FieldGeodeticPoint;
@@ -21,9 +19,11 @@ namespace org {
         }
       }
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+      class TimeScale;
+    }
   }
 }
 namespace java {
@@ -42,10 +42,10 @@ namespace org {
           class GlobalMappingFunctionModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_init$_6d73d536a2f24dd5,
-              mid_mappingFactors_6def5a87906f3de8,
-              mid_mappingFactors_67294ed37389436d,
+              mid_init$_0fa09c18fee449d5,
+              mid_init$_e93d77ad761aa1f2,
+              mid_mappingFactors_6f55c0ac27817ed2,
+              mid_mappingFactors_7ef12dc9276409e6,
               max_mid
             };
 

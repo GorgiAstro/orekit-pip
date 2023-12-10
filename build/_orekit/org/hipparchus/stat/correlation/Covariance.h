@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace linear {
       class RealMatrix;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -28,19 +28,19 @@ namespace org {
         class Covariance : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_init$_d660c7a97bf55272,
-            mid_init$_30aa151fd03f3096,
-            mid_init$_7911f39d20980098,
-            mid_init$_ac2ccfc5e69fe598,
-            mid_covariance_1ce76fb6ff382da9,
-            mid_covariance_6379f5334de861c2,
-            mid_getCovarianceMatrix_7116bbecdd8ceb21,
-            mid_getN_f2f64475e4580546,
-            mid_computeCovarianceMatrix_e00cd33aedcc5bd0,
-            mid_computeCovarianceMatrix_12b5b63b950f79d6,
-            mid_computeCovarianceMatrix_d983e368b64b23a3,
-            mid_computeCovarianceMatrix_c3d4a5038e1551c4,
+            mid_init$_0fa09c18fee449d5,
+            mid_init$_a0befc7f3dc19e41,
+            mid_init$_c67473bd6cfaa69b,
+            mid_init$_eade0e830cb99555,
+            mid_init$_a95dc6fea74c2d0e,
+            mid_covariance_b561c6892e9976f8,
+            mid_covariance_c98cc76e0ea0aa4c,
+            mid_getCovarianceMatrix_688b496048ff947b,
+            mid_getN_570ce0828f81a2c1,
+            mid_computeCovarianceMatrix_e9b72403ad502221,
+            mid_computeCovarianceMatrix_dddf4310e653828d,
+            mid_computeCovarianceMatrix_62c0bfb50b5dacc0,
+            mid_computeCovarianceMatrix_08333a1161303d01,
             max_mid
           };
 

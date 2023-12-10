@@ -22,16 +22,16 @@ namespace org {
       class Erf : public ::java::lang::Object {
        public:
         enum {
-          mid_erf_0ba5fed9597b693e,
-          mid_erf_d3398190482814dc,
-          mid_erf_824133ce4aec3505,
-          mid_erf_75c7ce7d33e7324b,
-          mid_erfInv_0ba5fed9597b693e,
-          mid_erfInv_d3398190482814dc,
-          mid_erfc_0ba5fed9597b693e,
-          mid_erfc_d3398190482814dc,
-          mid_erfcInv_0ba5fed9597b693e,
-          mid_erfcInv_d3398190482814dc,
+          mid_erf_dcbc7ce2902fa136,
+          mid_erf_a4b1871f4d29e58b,
+          mid_erf_86ffecc08a63eff0,
+          mid_erf_6746cc1cd9210d54,
+          mid_erfInv_dcbc7ce2902fa136,
+          mid_erfInv_a4b1871f4d29e58b,
+          mid_erfc_dcbc7ce2902fa136,
+          mid_erfc_a4b1871f4d29e58b,
+          mid_erfcInv_dcbc7ce2902fa136,
+          mid_erfcInv_a4b1871f4d29e58b,
           max_mid
         };
 

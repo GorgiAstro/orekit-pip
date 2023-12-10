@@ -6,14 +6,14 @@
 namespace org {
   namespace orekit {
     namespace orbits {
-      class RichardsonExpansion;
       class LibrationOrbitFamily;
-    }
-    namespace utils {
-      class PVCoordinates;
+      class RichardsonExpansion;
     }
     namespace bodies {
       class CR3BPSystem;
+    }
+    namespace utils {
+      class PVCoordinates;
     }
   }
 }
@@ -31,9 +31,9 @@ namespace org {
       class HaloOrbit : public ::org::orekit::orbits::LibrationOrbit {
        public:
         enum {
-          mid_init$_939971c9f89cad62,
-          mid_init$_76483bf6754c478b,
-          mid_applyCorrectionOnPV_b7336fc2717b0a2c,
+          mid_init$_075542267323df55,
+          mid_init$_6ca73a52ae88cb29,
+          mid_applyCorrectionOnPV_e2324264d8e2d238,
           max_mid
         };
 

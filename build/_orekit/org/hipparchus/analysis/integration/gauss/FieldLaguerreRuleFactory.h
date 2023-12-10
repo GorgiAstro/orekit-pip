@@ -5,14 +5,14 @@
 
 namespace org {
   namespace hipparchus {
-    class Field;
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     class CalculusFieldElement;
     namespace util {
       class Pair;
     }
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+    class Field;
   }
 }
 namespace java {
@@ -31,8 +31,8 @@ namespace org {
           class FieldLaguerreRuleFactory : public ::org::hipparchus::analysis::integration::gauss::FieldAbstractRuleFactory {
            public:
             enum {
-              mid_init$_205c34b8e33cf33f,
-              mid_computeRule_086dd68d091255ed,
+              mid_init$_484998d88974267b,
+              mid_computeRule_e670405dd33862ee,
               max_mid
             };
 

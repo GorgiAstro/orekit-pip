@@ -13,18 +13,18 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataContext;
+    }
+    namespace utils {
+      class IERSConventions;
+    }
     namespace files {
       namespace ccsds {
         namespace section {
           class Header;
         }
       }
-    }
-    namespace data {
-      class DataContext;
-    }
-    namespace utils {
-      class IERSConventions;
     }
   }
 }
@@ -39,13 +39,13 @@ namespace org {
           class NdmConstituent : public ::java::lang::Object {
            public:
             enum {
-              mid_getConventions_f657aa17e72227da,
-              mid_getDataContext_fc8fc85e38e59042,
-              mid_getHeader_2764986a35b07524,
-              mid_getSegments_a6156df500549a58,
-              mid_setHeader_10e3029ffe650b4e,
-              mid_setSegments_65de9727799c5641,
-              mid_validate_7ae3461a92a43152,
+              mid_getConventions_60f9ded87ab7ca4c,
+              mid_getDataContext_0b7cf48ee6a922ee,
+              mid_getHeader_0e1b4a5061fb71d6,
+              mid_getSegments_2afa36052df4765d,
+              mid_setHeader_023fa04bd3c493a9,
+              mid_setSegments_de3e021e7266b71e,
+              mid_validate_0fa09c18fee449d5,
               max_mid
             };
 

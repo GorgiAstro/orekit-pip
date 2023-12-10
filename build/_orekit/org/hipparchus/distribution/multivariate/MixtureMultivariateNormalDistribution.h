@@ -3,8 +3,23 @@
 
 #include "org/hipparchus/distribution/multivariate/MixtureMultivariateRealDistribution.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Double;
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
+    namespace util {
+      class Pair;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
     namespace random {
       class RandomGenerator;
     }
@@ -13,21 +28,6 @@ namespace org {
         class MultivariateNormalDistribution;
       }
     }
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
-    namespace util {
-      class Pair;
-    }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Double;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -40,9 +40,9 @@ namespace org {
         class MixtureMultivariateNormalDistribution : public ::org::hipparchus::distribution::multivariate::MixtureMultivariateRealDistribution {
          public:
           enum {
-            mid_init$_65de9727799c5641,
-            mid_init$_feee9201706f7cee,
-            mid_init$_dde7489d9653e5fb,
+            mid_init$_de3e021e7266b71e,
+            mid_init$_a3d6463b27f37fbe,
+            mid_init$_e0a095fa97bddc94,
             max_mid
           };
 

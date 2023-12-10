@@ -3,6 +3,19 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace general {
+        class AttitudeEphemerisFileParser;
+        class AttitudeEphemerisFile;
+      }
+    }
+    namespace data {
+      class DataSource;
+    }
+  }
+}
 namespace java {
   namespace io {
     class IOException;
@@ -12,19 +25,6 @@ namespace java {
     class Throwable;
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace data {
-      class DataSource;
-    }
-    namespace files {
-      namespace general {
-        class AttitudeEphemerisFile;
-        class AttitudeEphemerisFileParser;
-      }
-    }
   }
 }
 template<class T> class JArray;
@@ -37,13 +37,13 @@ namespace org {
         class PythonAttitudeEphemerisFileParser : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_finalize_7ae3461a92a43152,
-            mid_parse_11e1f1b4855d92ec,
-            mid_parse_BS_d9aa408f4354d186,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
+            mid_init$_0fa09c18fee449d5,
+            mid_finalize_0fa09c18fee449d5,
+            mid_parse_538d2753c07b807c,
+            mid_parse_BS_c6fdc4c2324606fe,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
             max_mid
           };
 

@@ -4,20 +4,8 @@
 #include "org/orekit/utils/FieldPVCoordinates.h"
 
 namespace org {
-  namespace orekit {
-    namespace time {
-      class TimeScale;
-      class FieldTimeStamped;
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class PVCoordinates;
-      class TimeStampedFieldPVCoordinates;
-      class TimeStampedPVCoordinates;
-    }
-  }
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -25,8 +13,20 @@ namespace org {
         }
       }
     }
-    class CalculusFieldElement;
     class Field;
+  }
+  namespace orekit {
+    namespace time {
+      class FieldTimeStamped;
+      class TimeScale;
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
+    namespace utils {
+      class TimeStampedFieldPVCoordinates;
+      class TimeStampedPVCoordinates;
+      class PVCoordinates;
+    }
   }
 }
 namespace java {
@@ -44,44 +44,44 @@ namespace org {
       class TimeStampedFieldPVCoordinates : public ::org::orekit::utils::FieldPVCoordinates {
        public:
         enum {
-          mid_init$_b1c8d3cf31a209c8,
-          mid_init$_9d73fcce6fcf904f,
-          mid_init$_ee45717687c334a1,
-          mid_init$_29687ccd72f81db7,
-          mid_init$_bc0c5d85c500b363,
-          mid_init$_b3e0cf3f2bef484f,
-          mid_init$_a7c3f2b802f2db19,
-          mid_init$_6260e7f6da29fe75,
-          mid_init$_d0c1b0d49789b04e,
-          mid_init$_2d474ab088998677,
-          mid_init$_ab467c578aeb0695,
-          mid_init$_9e18b273511ec44d,
-          mid_init$_41aed52df58da4c8,
-          mid_init$_c04c30a2fab87285,
-          mid_init$_d08eb949e98d2dc4,
-          mid_init$_84c0e286a125f2e2,
-          mid_init$_4be426556130efe9,
-          mid_init$_67ea9f8ae6111d1a,
-          mid_init$_a7f2bbdda4dc1b16,
-          mid_init$_048bd8b32a48640f,
-          mid_init$_cabf2962353e1085,
-          mid_init$_6a27dde5ab963807,
-          mid_init$_7e283ae1c4bc5ea8,
-          mid_init$_6bb89ff51f7530c3,
-          mid_init$_4dd6274a018a92b8,
-          mid_init$_7902f1a23e6aac2c,
-          mid_init$_60fadd4075574780,
-          mid_init$_f27684a4091d505a,
-          mid_init$_f4fc8f4b85ea4711,
-          mid_init$_8231b6d93a7177ae,
-          mid_init$_5768bd432ddf045c,
-          mid_init$_4ef6f716d4feba44,
-          mid_getDate_09b0a926600dfc14,
-          mid_shiftedBy_2a8ded55216f7b91,
-          mid_shiftedBy_ebe9b9ae8b056235,
-          mid_toString_0090f7797e403f43,
-          mid_toString_44577b71ebe5fefb,
-          mid_toTimeStampedPVCoordinates_6890805957bea2cd,
+          mid_init$_dce00f1bb2a9b447,
+          mid_init$_fdb43bfa6d43366f,
+          mid_init$_468ba0bc6c5bf070,
+          mid_init$_ffeb9db3a56160f3,
+          mid_init$_714680d7f2f36231,
+          mid_init$_dad60168652e571f,
+          mid_init$_94e86b986601fe86,
+          mid_init$_9ff58311d7400e04,
+          mid_init$_ce537fff2eb7dd83,
+          mid_init$_5b99a056028b24a3,
+          mid_init$_a77b68499c2a150f,
+          mid_init$_988f6932842e45aa,
+          mid_init$_fc453dab701d245e,
+          mid_init$_22c42e194d2f9e41,
+          mid_init$_5dbf64d84deeb0bb,
+          mid_init$_46f6fdcb314b59b0,
+          mid_init$_8b9453b84e578c27,
+          mid_init$_b21aea609d95b4cb,
+          mid_init$_85f69d1090230023,
+          mid_init$_4d38f0699df00596,
+          mid_init$_8c6df58dbf1792d4,
+          mid_init$_4d3d873e2f48d623,
+          mid_init$_80c668a1a390999a,
+          mid_init$_d6e3c4b90386d014,
+          mid_init$_1e4eb190a274ece1,
+          mid_init$_413cfd58be4a8f36,
+          mid_init$_e9cecda3f72174e4,
+          mid_init$_2f69f97ab801d697,
+          mid_init$_54db1fbb29425a19,
+          mid_init$_f43979ec1613a752,
+          mid_init$_d2d95c9364c6998f,
+          mid_init$_8904b988a7471757,
+          mid_getDate_51da00d5b8a3b5df,
+          mid_shiftedBy_357c4c67143fefb2,
+          mid_shiftedBy_653eb1a4934a2f6b,
+          mid_toString_11b109bd155ca898,
+          mid_toString_e3ec59f6a2ed4d7c,
+          mid_toTimeStampedPVCoordinates_c204436deca11d94,
           max_mid
         };
 

@@ -6,12 +6,8 @@
 namespace org {
   namespace orekit {
     namespace data {
-      class DataSource;
       class DataProvidersManager;
-    }
-    namespace time {
-      class TimeScale;
-      class AbsoluteDate;
+      class DataSource;
     }
     namespace models {
       namespace earth {
@@ -19,6 +15,10 @@ namespace org {
           class JB2008InputParameters;
         }
       }
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeScale;
     }
   }
 }
@@ -40,21 +40,21 @@ namespace org {
             class JB2008SpaceEnvironmentData : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_96073c87872b7a97,
-                mid_init$_498ee4b75b278ed0,
-                mid_init$_0bc27bef3edc7b78,
-                mid_init$_f885c2dfdd559b81,
-                mid_getDSTDTC_e912d21057defe63,
-                mid_getF10_e912d21057defe63,
-                mid_getF10B_e912d21057defe63,
-                mid_getMaxDate_aaa854c403487cf3,
-                mid_getMinDate_aaa854c403487cf3,
-                mid_getS10_e912d21057defe63,
-                mid_getS10B_e912d21057defe63,
-                mid_getXM10_e912d21057defe63,
-                mid_getXM10B_e912d21057defe63,
-                mid_getY10_e912d21057defe63,
-                mid_getY10B_e912d21057defe63,
+                mid_init$_6a2001eff0605f71,
+                mid_init$_d48a82716818091c,
+                mid_init$_f59dcd76f648116b,
+                mid_init$_f3b8e7d9e7dfe4ec,
+                mid_getDSTDTC_bf1d7732f1acb697,
+                mid_getF10_bf1d7732f1acb697,
+                mid_getF10B_bf1d7732f1acb697,
+                mid_getMaxDate_85703d13e302437e,
+                mid_getMinDate_85703d13e302437e,
+                mid_getS10_bf1d7732f1acb697,
+                mid_getS10B_bf1d7732f1acb697,
+                mid_getXM10_bf1d7732f1acb697,
+                mid_getXM10B_bf1d7732f1acb697,
+                mid_getY10_bf1d7732f1acb697,
+                mid_getY10B_bf1d7732f1acb697,
                 max_mid
               };
 

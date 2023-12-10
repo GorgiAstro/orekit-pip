@@ -31,12 +31,12 @@ namespace org {
         class ElevationExtremumDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_f9eb40be2920d1a6,
-            mid_init$_b7c2f9e5ae29d132,
-            mid_g_66a2f071e6ed0c06,
-            mid_getElevation_66a2f071e6ed0c06,
-            mid_getTopocentricFrame_52fc31c455206160,
-            mid_create_f905d37d7398ed09,
+            mid_init$_359d9aed85301acb,
+            mid_init$_0f402cc32c5bccb2,
+            mid_g_432f3d328c15ec82,
+            mid_getElevation_432f3d328c15ec82,
+            mid_getTopocentricFrame_e17d4157ae504252,
+            mid_create_4d12cf9fa078dc58,
             max_mid
           };
 

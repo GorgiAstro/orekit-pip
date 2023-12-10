@@ -3,23 +3,8 @@
 
 #include "org/orekit/gnss/metric/messages/ssr/SsrMessage.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace models {
-      namespace earth {
-        namespace ionosphere {
-          class SsrVtecIonosphericModel;
-        }
-      }
-    }
     namespace gnss {
       namespace metric {
         namespace messages {
@@ -32,6 +17,21 @@ namespace org {
         }
       }
     }
+    namespace models {
+      namespace earth {
+        namespace ionosphere {
+          class SsrVtecIonosphericModel;
+        }
+      }
+    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -47,8 +47,8 @@ namespace org {
               class SsrIm201 : public ::org::orekit::gnss::metric::messages::ssr::SsrMessage {
                public:
                 enum {
-                  mid_init$_b402bb3b3428ecac,
-                  mid_getIonosphericModel_0a56129c55d05ad7,
+                  mid_init$_0c734337c05d710d,
+                  mid_getIonosphericModel_b0b95b21d6f179e3,
                   max_mid
                 };
 

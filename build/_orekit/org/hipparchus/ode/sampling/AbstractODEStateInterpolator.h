@@ -29,18 +29,18 @@ namespace org {
         class AbstractODEStateInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_getCurrentState_ced1effea9e5e5d4,
-            mid_getGlobalCurrentState_ced1effea9e5e5d4,
-            mid_getGlobalPreviousState_ced1effea9e5e5d4,
-            mid_getInterpolatedState_05e60c2c1f1796ae,
-            mid_getPreviousState_ced1effea9e5e5d4,
-            mid_isCurrentStateInterpolated_e470b6d9e0d979db,
-            mid_isForward_e470b6d9e0d979db,
-            mid_isPreviousStateInterpolated_e470b6d9e0d979db,
-            mid_restrictStep_8d50e0f2e9084026,
-            mid_getMapper_c85ebb7ac50d94ef,
-            mid_computeInterpolatedStateAndDerivatives_6016dab239580c85,
-            mid_create_5812ee4c35ceca71,
+            mid_getCurrentState_72cfc96c3e58d15e,
+            mid_getGlobalCurrentState_72cfc96c3e58d15e,
+            mid_getGlobalPreviousState_72cfc96c3e58d15e,
+            mid_getInterpolatedState_f01efdb3ab1bad7f,
+            mid_getPreviousState_72cfc96c3e58d15e,
+            mid_isCurrentStateInterpolated_b108b35ef48e27bd,
+            mid_isForward_b108b35ef48e27bd,
+            mid_isPreviousStateInterpolated_b108b35ef48e27bd,
+            mid_restrictStep_7be5f5a0bf70adb5,
+            mid_getMapper_b352b1a7f73df8de,
+            mid_computeInterpolatedStateAndDerivatives_43408383ccb9423d,
+            mid_create_512799c2e2de4970,
             max_mid
           };
 

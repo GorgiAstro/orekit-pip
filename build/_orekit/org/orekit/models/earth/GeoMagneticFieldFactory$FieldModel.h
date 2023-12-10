@@ -3,6 +3,12 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace models {
@@ -10,12 +16,6 @@ namespace org {
         class GeoMagneticFieldFactory$FieldModel;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,8 +28,8 @@ namespace org {
         class GeoMagneticFieldFactory$FieldModel : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_481e459ccd75559f,
-            mid_values_18f4f6baaf80b114,
+            mid_valueOf_09e2bb4d1bc9a210,
+            mid_values_0a4386cf1222649e,
             max_mid
           };
 

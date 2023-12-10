@@ -20,14 +20,14 @@ namespace org {
             class AbstractGaussianContributionContext : public ::org::orekit::propagation::semianalytical::dsst::forces::ForceModelContext {
              public:
               enum {
-                mid_getCo2AB_456d9a2f64d6b28d,
-                mid_getMeanMotion_456d9a2f64d6b28d,
-                mid_getMu_456d9a2f64d6b28d,
-                mid_getOOA_456d9a2f64d6b28d,
-                mid_getOOAB_456d9a2f64d6b28d,
-                mid_getOoBpo_456d9a2f64d6b28d,
-                mid_getOoMU_456d9a2f64d6b28d,
-                mid_getTon2a_456d9a2f64d6b28d,
+                mid_getCo2AB_dff5885c2c873297,
+                mid_getMeanMotion_dff5885c2c873297,
+                mid_getMu_dff5885c2c873297,
+                mid_getOOA_dff5885c2c873297,
+                mid_getOOAB_dff5885c2c873297,
+                mid_getOoBpo_dff5885c2c873297,
+                mid_getOoMU_dff5885c2c873297,
+                mid_getTon2a_dff5885c2c873297,
                 max_mid
               };
 

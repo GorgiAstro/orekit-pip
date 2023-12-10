@@ -3,17 +3,17 @@
 
 #include "org/orekit/files/ilrs/CRD$Calibration.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,8 +26,8 @@ namespace org {
         class CRD$CalibrationDetail : public ::org::orekit::files::ilrs::CRD$Calibration {
          public:
           enum {
-            mid_init$_89dd5677feda5af6,
-            mid_toCrdString_0090f7797e403f43,
+            mid_init$_8911ec2fe4f4cc28,
+            mid_toCrdString_11b109bd155ca898,
             max_mid
           };
 

@@ -4,15 +4,6 @@
 #include "java/util/Hashtable.h"
 
 namespace java {
-  namespace io {
-    class IOException;
-    class InputStream;
-    class OutputStream;
-    class PrintStream;
-    class PrintWriter;
-    class Writer;
-    class Reader;
-  }
   namespace util {
     class Map$Entry;
     class Map;
@@ -20,6 +11,15 @@ namespace java {
     class Set;
     class Enumeration;
     class InvalidPropertiesFormatException;
+  }
+  namespace io {
+    class Reader;
+    class IOException;
+    class InputStream;
+    class OutputStream;
+    class PrintWriter;
+    class Writer;
+    class PrintStream;
   }
   namespace lang {
     class Class;
@@ -35,48 +35,48 @@ namespace java {
     class Properties : public ::java::util::Hashtable {
      public:
       enum {
-        mid_init$_7ae3461a92a43152,
-        mid_init$_0a2a1ac2721c0336,
-        mid_clear_7ae3461a92a43152,
-        mid_clone_dfd7647d9110ac9f,
-        mid_contains_229c87223f486349,
-        mid_containsKey_229c87223f486349,
-        mid_containsValue_229c87223f486349,
-        mid_elements_44964b2b3d187632,
-        mid_entrySet_e9e1a6780fe94297,
-        mid_equals_229c87223f486349,
-        mid_get_ed50a8b49b8274dc,
-        mid_getOrDefault_286de79696ab0806,
-        mid_getProperty_43625fc1c3d86afe,
-        mid_getProperty_01d87ea922ecee51,
-        mid_hashCode_f2f64475e4580546,
-        mid_isEmpty_e470b6d9e0d979db,
-        mid_keySet_e9e1a6780fe94297,
-        mid_keys_44964b2b3d187632,
-        mid_list_97a189d81f6ca857,
-        mid_list_6f85f82c503eab85,
-        mid_load_a51aa99816400fdd,
-        mid_load_a1c6153fa427d8a7,
-        mid_loadFromXML_a51aa99816400fdd,
-        mid_propertyNames_44964b2b3d187632,
-        mid_put_286de79696ab0806,
-        mid_putAll_8b4e3987d7532731,
-        mid_putIfAbsent_286de79696ab0806,
-        mid_remove_ed50a8b49b8274dc,
-        mid_remove_f8c930c8a53ce61d,
-        mid_replace_286de79696ab0806,
-        mid_replace_9f7c677a07c1445a,
-        mid_save_5c4f71d269199e10,
-        mid_setProperty_9bef492a1e67d8cc,
-        mid_size_f2f64475e4580546,
-        mid_store_5c4f71d269199e10,
-        mid_store_7a07216b63c74a11,
-        mid_storeToXML_5c4f71d269199e10,
-        mid_storeToXML_d898b329cc2135e8,
-        mid_stringPropertyNames_e9e1a6780fe94297,
-        mid_toString_0090f7797e403f43,
-        mid_values_cfcfd130f9013e3e,
-        mid_rehash_7ae3461a92a43152,
+        mid_init$_0fa09c18fee449d5,
+        mid_init$_99803b0791f320ff,
+        mid_clear_0fa09c18fee449d5,
+        mid_clone_4d26fd885228c716,
+        mid_contains_65c7d273e80d497a,
+        mid_containsKey_65c7d273e80d497a,
+        mid_containsValue_65c7d273e80d497a,
+        mid_elements_0dc02dfa0be4cd25,
+        mid_entrySet_015730311a5bacdc,
+        mid_equals_65c7d273e80d497a,
+        mid_get_9facd1449e0950d3,
+        mid_getOrDefault_af8aa32ee9c1f184,
+        mid_getProperty_92807efd57acb082,
+        mid_getProperty_d3f6016a3bf93dcd,
+        mid_hashCode_570ce0828f81a2c1,
+        mid_isEmpty_b108b35ef48e27bd,
+        mid_keySet_015730311a5bacdc,
+        mid_keys_0dc02dfa0be4cd25,
+        mid_list_d7059445128d3e18,
+        mid_list_4999b5b1f2d8269b,
+        mid_load_42871fcf824ad25f,
+        mid_load_6bec8244898df009,
+        mid_loadFromXML_42871fcf824ad25f,
+        mid_propertyNames_0dc02dfa0be4cd25,
+        mid_put_af8aa32ee9c1f184,
+        mid_putAll_db8de8bc54857165,
+        mid_putIfAbsent_af8aa32ee9c1f184,
+        mid_remove_9facd1449e0950d3,
+        mid_remove_83750138b7b51bf4,
+        mid_replace_af8aa32ee9c1f184,
+        mid_replace_25e3a1e437d39751,
+        mid_save_c55dfb0939e8fb48,
+        mid_setProperty_117fa3e1caf1236b,
+        mid_size_570ce0828f81a2c1,
+        mid_store_c55dfb0939e8fb48,
+        mid_store_aace611d43734887,
+        mid_storeToXML_c55dfb0939e8fb48,
+        mid_storeToXML_78f8716e1ece5bfa,
+        mid_stringPropertyNames_015730311a5bacdc,
+        mid_toString_11b109bd155ca898,
+        mid_values_37528d110cff6b74,
+        mid_rehash_0fa09c18fee449d5,
         max_mid
       };
 

@@ -3,17 +3,17 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace gnss {
       class MeasurementType;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,8 +25,8 @@ namespace org {
       class MeasurementType : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_0aee3529d78e4b18,
-          mid_values_e316541010d6444a,
+          mid_valueOf_058c92e2fb537a5e,
+          mid_values_7b73cd10cc5686d6,
           max_mid
         };
 

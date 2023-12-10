@@ -17,8 +17,8 @@ namespace org {
     }
     namespace files {
       namespace sinex {
-        class Dcb;
         class DcbDescription;
+        class Dcb;
       }
     }
   }
@@ -33,13 +33,13 @@ namespace org {
         class DcbStation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_e939c6558ae8d313,
-            mid_addDcb_8d19eb512b93a6c6,
-            mid_getAvailableSatelliteSystems_fa141f4fca81e737,
-            mid_getDcbData_c1a9a5094c4575eb,
-            mid_getDescription_d11de623496594e3,
-            mid_getSiteCode_0090f7797e403f43,
-            mid_setDescription_8b883f3a6778fd13,
+            mid_init$_d0bc48d5b00dc40c,
+            mid_addDcb_9240f9c21af74bfa,
+            mid_getAvailableSatelliteSystems_3bed2e1062489236,
+            mid_getDcbData_39258d6e17eda633,
+            mid_getDescription_b66783625d13e607,
+            mid_getSiteCode_11b109bd155ca898,
+            mid_setDescription_c7a638e3ab0f92d6,
             max_mid
           };
 

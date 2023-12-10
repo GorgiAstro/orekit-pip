@@ -3,29 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class ObservableSatellite;
-        namespace generation {
-          class Scheduler;
-          class MeasurementBuilder;
-        }
-        class ObservedMeasurement;
-      }
-    }
-    namespace time {
-      class DatesSelector;
-      class AbsoluteDate;
-    }
-    namespace propagation {
-      namespace sampling {
-        class OrekitStepInterpolator;
-      }
-    }
-  }
-}
 namespace java {
   namespace util {
     class Map;
@@ -33,6 +10,29 @@ namespace java {
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        namespace generation {
+          class MeasurementBuilder;
+          class Scheduler;
+        }
+        class ObservedMeasurement;
+        class ObservableSatellite;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+      class DatesSelector;
+    }
+    namespace propagation {
+      namespace sampling {
+        class OrekitStepInterpolator;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -46,11 +46,11 @@ namespace org {
           class AbstractScheduler : public ::java::lang::Object {
            public:
             enum {
-              mid_generate_22733af3de6e4c17,
-              mid_getBuilder_f2ad316b33dc9e1f,
-              mid_getSelector_3b7c5bc809d41a49,
-              mid_init_d958a9bfde45c759,
-              mid_measurementIsFeasible_ee2067c5768b6768,
+              mid_generate_e61f6829e4c9c5f5,
+              mid_getBuilder_63a5a16953d5c5b8,
+              mid_getSelector_3bc688e0bfd96a7f,
+              mid_init_a9e71d848b81c8f8,
+              mid_measurementIsFeasible_db6d81809797ddaa,
               max_mid
             };
 

@@ -34,12 +34,12 @@ namespace org {
             class CoefficientsFactory$NSKey : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_8dbc1129a3c2557a,
-                mid_compareTo_6f65cf61e1ec1253,
-                mid_equals_229c87223f486349,
-                mid_getN_f2f64475e4580546,
-                mid_getS_f2f64475e4580546,
-                mid_hashCode_f2f64475e4580546,
+                mid_init$_6f37635c3285dbdf,
+                mid_compareTo_7f564367d2213478,
+                mid_equals_65c7d273e80d497a,
+                mid_getN_570ce0828f81a2c1,
+                mid_getS_570ce0828f81a2c1,
+                mid_hashCode_570ce0828f81a2c1,
                 max_mid
               };
 

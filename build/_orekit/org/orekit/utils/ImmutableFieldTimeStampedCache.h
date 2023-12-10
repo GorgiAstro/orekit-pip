@@ -4,28 +4,28 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    class Field;
+  }
   namespace orekit {
-    namespace utils {
-      class ImmutableFieldTimeStampedCache;
-      class FieldTimeStampedCache;
-    }
     namespace time {
       class FieldTimeStamped;
       class FieldAbsoluteDate;
     }
-  }
-  namespace hipparchus {
-    class Field;
-    class CalculusFieldElement;
+    namespace utils {
+      class FieldTimeStampedCache;
+      class ImmutableFieldTimeStampedCache;
+    }
   }
 }
 namespace java {
   namespace util {
-    class List;
-    class Collection;
     namespace stream {
       class Stream;
     }
+    class List;
+    class Collection;
   }
   namespace lang {
     class Class;
@@ -41,14 +41,14 @@ namespace org {
       class ImmutableFieldTimeStampedCache : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_23703d999b776f91,
-          mid_emptyCache_c50aa02b5080c185,
-          mid_getAll_a6156df500549a58,
-          mid_getEarliest_2ac58ed946476d4e,
-          mid_getLatest_2ac58ed946476d4e,
-          mid_getNeighbors_a39ee104977ad16b,
-          mid_getNeighborsSize_f2f64475e4580546,
-          mid_toString_0090f7797e403f43,
+          mid_init$_11390acb87dd159d,
+          mid_emptyCache_5028f5f041777e9b,
+          mid_getAll_2afa36052df4765d,
+          mid_getEarliest_f8d8d28f6791aa76,
+          mid_getLatest_f8d8d28f6791aa76,
+          mid_getNeighbors_92d676459a63dcda,
+          mid_getNeighborsSize_570ce0828f81a2c1,
+          mid_toString_11b109bd155ca898,
           max_mid
         };
 

@@ -16,10 +16,10 @@ namespace org {
           }
         }
         namespace utils {
-          class ContextBinding;
           namespace lexical {
             class ParseToken;
           }
+          class ContextBinding;
         }
       }
     }
@@ -44,9 +44,9 @@ namespace org {
               class OrbitDeterminationKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_4d903bf3fd8e3c6b,
-                  mid_valueOf_fcfab511db1738f1,
-                  mid_values_c1734e9d2e69597d,
+                  mid_process_af88e34bdbb80401,
+                  mid_valueOf_c728483d7f27e3f7,
+                  mid_values_3032bd8d88ce90de,
                   max_mid
                 };
 

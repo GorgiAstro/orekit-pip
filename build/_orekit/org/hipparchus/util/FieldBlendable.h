@@ -25,7 +25,7 @@ namespace org {
       class FieldBlendable : public ::java::lang::Object {
        public:
         enum {
-          mid_blendArithmeticallyWith_c81fec308763ae01,
+          mid_blendArithmeticallyWith_491e757e542a2378,
           max_mid
         };
 

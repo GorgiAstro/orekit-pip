@@ -6,8 +6,8 @@
 namespace java {
   namespace util {
     class Map$Entry;
-    class NavigableSet;
     class NavigableMap;
+    class NavigableSet;
   }
   namespace lang {
     class Class;
@@ -22,27 +22,27 @@ namespace java {
     class NavigableMap : public ::java::util::SortedMap {
      public:
       enum {
-        mid_ceilingEntry_f13324cfba0ff636,
-        mid_ceilingKey_ed50a8b49b8274dc,
-        mid_descendingKeySet_edb7b61b9a16f086,
-        mid_descendingMap_08b23a9584a26070,
-        mid_firstEntry_8b1a9307898662e1,
-        mid_floorEntry_f13324cfba0ff636,
-        mid_floorKey_ed50a8b49b8274dc,
-        mid_headMap_bdec4bc419d678c0,
-        mid_headMap_ad6b06c127162ebe,
-        mid_higherEntry_f13324cfba0ff636,
-        mid_higherKey_ed50a8b49b8274dc,
-        mid_lastEntry_8b1a9307898662e1,
-        mid_lowerEntry_f13324cfba0ff636,
-        mid_lowerKey_ed50a8b49b8274dc,
-        mid_navigableKeySet_edb7b61b9a16f086,
-        mid_pollFirstEntry_8b1a9307898662e1,
-        mid_pollLastEntry_8b1a9307898662e1,
-        mid_subMap_a46755e50d8df53f,
-        mid_subMap_151412da5847cc34,
-        mid_tailMap_bdec4bc419d678c0,
-        mid_tailMap_ad6b06c127162ebe,
+        mid_ceilingEntry_da79efd09d67f8b2,
+        mid_ceilingKey_9facd1449e0950d3,
+        mid_descendingKeySet_024b2fed0d07125f,
+        mid_descendingMap_d71603ad1730c5c7,
+        mid_firstEntry_42bc55cedc6db0ee,
+        mid_floorEntry_da79efd09d67f8b2,
+        mid_floorKey_9facd1449e0950d3,
+        mid_headMap_ee1ff50116f0ffac,
+        mid_headMap_7b1032670f57ee23,
+        mid_higherEntry_da79efd09d67f8b2,
+        mid_higherKey_9facd1449e0950d3,
+        mid_lastEntry_42bc55cedc6db0ee,
+        mid_lowerEntry_da79efd09d67f8b2,
+        mid_lowerKey_9facd1449e0950d3,
+        mid_navigableKeySet_024b2fed0d07125f,
+        mid_pollFirstEntry_42bc55cedc6db0ee,
+        mid_pollLastEntry_42bc55cedc6db0ee,
+        mid_subMap_3d23d8a4bccdf58a,
+        mid_subMap_0fcb4d861896163a,
+        mid_tailMap_ee1ff50116f0ffac,
+        mid_tailMap_7b1032670f57ee23,
         max_mid
       };
 

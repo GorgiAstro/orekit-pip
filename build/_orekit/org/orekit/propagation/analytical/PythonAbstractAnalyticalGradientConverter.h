@@ -3,6 +3,15 @@
 
 #include "org/orekit/propagation/analytical/AbstractAnalyticalGradientConverter.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace analysis {
@@ -24,15 +33,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -43,13 +43,13 @@ namespace org {
         class PythonAbstractAnalyticalGradientConverter : public ::org::orekit::propagation::analytical::AbstractAnalyticalGradientConverter {
          public:
           enum {
-            mid_init$_a3a64c0d17b70ee3,
-            mid_finalize_7ae3461a92a43152,
-            mid_getParametersDrivers_a6156df500549a58,
-            mid_getPropagator_6bbe2f82089c1fee,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
+            mid_init$_29f61eb85403b118,
+            mid_finalize_0fa09c18fee449d5,
+            mid_getParametersDrivers_2afa36052df4765d,
+            mid_getPropagator_bfdeffa87b393212,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
             max_mid
           };
 

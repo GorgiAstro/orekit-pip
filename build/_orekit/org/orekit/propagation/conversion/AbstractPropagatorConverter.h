@@ -3,6 +3,17 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace conversion {
+        class PropagatorConverter;
+      }
+      class Propagator;
+      class SpacecraftState;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -11,17 +22,6 @@ namespace java {
     class Class;
     class IllegalArgumentException;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      class Propagator;
-      namespace conversion {
-        class PropagatorConverter;
-      }
-      class SpacecraftState;
-    }
   }
 }
 template<class T> class JArray;
@@ -34,19 +34,19 @@ namespace org {
         class AbstractPropagatorConverter : public ::java::lang::Object {
          public:
           enum {
-            mid_convert_b26c78fdb005126c,
-            mid_convert_392814b1b1bbdd34,
-            mid_convert_979b6b07281c1e27,
-            mid_convert_b641a72d0c9694a7,
-            mid_getAdaptedPropagator_46f8fd1706005d71,
-            mid_getEvaluations_f2f64475e4580546,
-            mid_getRMS_456d9a2f64d6b28d,
-            mid_getFrame_c8fe21bcdac65bf6,
-            mid_getObjectiveFunction_aaef55ff59f9c00e,
-            mid_getModel_b196da25fd980476,
-            mid_getTargetSize_f2f64475e4580546,
-            mid_isOnlyPosition_e470b6d9e0d979db,
-            mid_getSample_a6156df500549a58,
+            mid_convert_a2b4413ea9476c3c,
+            mid_convert_4513d66a76c09bcc,
+            mid_convert_e744c80c7015525e,
+            mid_convert_47fabeaccf7f6a1b,
+            mid_getAdaptedPropagator_8afbda2d6a487743,
+            mid_getEvaluations_570ce0828f81a2c1,
+            mid_getRMS_dff5885c2c873297,
+            mid_getFrame_b86f9f61d97a7244,
+            mid_getModel_9751b2e3b68b45ea,
+            mid_getObjectiveFunction_18d8e6aab2238577,
+            mid_getTargetSize_570ce0828f81a2c1,
+            mid_isOnlyPosition_b108b35ef48e27bd,
+            mid_getSample_2afa36052df4765d,
             max_mid
           };
 

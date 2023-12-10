@@ -4,22 +4,22 @@
 #include "java/text/Format.h"
 
 namespace java {
-  namespace lang {
-    class StringBuffer;
-    class Number;
-    class Class;
-    class Object;
-    class String;
-  }
   namespace util {
     class Locale;
     class Currency;
   }
   namespace text {
-    class FieldPosition;
-    class ParsePosition;
-    class ParseException;
     class NumberFormat;
+    class ParseException;
+    class ParsePosition;
+    class FieldPosition;
+  }
+  namespace lang {
+    class Number;
+    class StringBuffer;
+    class Class;
+    class Object;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -30,42 +30,42 @@ namespace java {
     class NumberFormat : public ::java::text::Format {
      public:
       enum {
-        mid_clone_dfd7647d9110ac9f,
-        mid_equals_229c87223f486349,
-        mid_format_085bbc49599fa163,
-        mid_format_8da367bd62adf91c,
-        mid_format_c6faa545a7a768dc,
-        mid_format_e231795b026d93db,
-        mid_format_ad0b55b296497605,
-        mid_getAvailableLocales_81e8fdf65840780c,
-        mid_getCurrency_6c7b9765863c0754,
-        mid_getCurrencyInstance_d34e2e8dd35583a0,
-        mid_getCurrencyInstance_41d4a73d4466d8a8,
-        mid_getInstance_d34e2e8dd35583a0,
-        mid_getInstance_41d4a73d4466d8a8,
-        mid_getIntegerInstance_d34e2e8dd35583a0,
-        mid_getIntegerInstance_41d4a73d4466d8a8,
-        mid_getMaximumFractionDigits_f2f64475e4580546,
-        mid_getMaximumIntegerDigits_f2f64475e4580546,
-        mid_getMinimumFractionDigits_f2f64475e4580546,
-        mid_getMinimumIntegerDigits_f2f64475e4580546,
-        mid_getNumberInstance_d34e2e8dd35583a0,
-        mid_getNumberInstance_41d4a73d4466d8a8,
-        mid_getPercentInstance_d34e2e8dd35583a0,
-        mid_getPercentInstance_41d4a73d4466d8a8,
-        mid_hashCode_f2f64475e4580546,
-        mid_isGroupingUsed_e470b6d9e0d979db,
-        mid_isParseIntegerOnly_e470b6d9e0d979db,
-        mid_parse_07ea3e4926abb9ca,
-        mid_parse_3cf9d8b930b756db,
-        mid_parseObject_04377a8fddc7cede,
-        mid_setCurrency_4f90b9143eba41de,
-        mid_setGroupingUsed_50a2e0b139e80a58,
-        mid_setMaximumFractionDigits_0a2a1ac2721c0336,
-        mid_setMaximumIntegerDigits_0a2a1ac2721c0336,
-        mid_setMinimumFractionDigits_0a2a1ac2721c0336,
-        mid_setMinimumIntegerDigits_0a2a1ac2721c0336,
-        mid_setParseIntegerOnly_50a2e0b139e80a58,
+        mid_clone_4d26fd885228c716,
+        mid_equals_65c7d273e80d497a,
+        mid_format_e8f51f84167aafbd,
+        mid_format_b42814811762ffb5,
+        mid_format_71cdbf949acd3c79,
+        mid_format_f5c3717ad7292c63,
+        mid_format_1ad97cb6c82be27f,
+        mid_getAvailableLocales_c5ed07ebd55821bb,
+        mid_getCurrency_7ca0ce948a4de82c,
+        mid_getCurrencyInstance_24f83dea4a8657b1,
+        mid_getCurrencyInstance_09db48c8af63ef24,
+        mid_getInstance_24f83dea4a8657b1,
+        mid_getInstance_09db48c8af63ef24,
+        mid_getIntegerInstance_24f83dea4a8657b1,
+        mid_getIntegerInstance_09db48c8af63ef24,
+        mid_getMaximumFractionDigits_570ce0828f81a2c1,
+        mid_getMaximumIntegerDigits_570ce0828f81a2c1,
+        mid_getMinimumFractionDigits_570ce0828f81a2c1,
+        mid_getMinimumIntegerDigits_570ce0828f81a2c1,
+        mid_getNumberInstance_24f83dea4a8657b1,
+        mid_getNumberInstance_09db48c8af63ef24,
+        mid_getPercentInstance_24f83dea4a8657b1,
+        mid_getPercentInstance_09db48c8af63ef24,
+        mid_hashCode_570ce0828f81a2c1,
+        mid_isGroupingUsed_b108b35ef48e27bd,
+        mid_isParseIntegerOnly_b108b35ef48e27bd,
+        mid_parse_098c234707b1d7e0,
+        mid_parse_0f2d9a00e2ec1df8,
+        mid_parseObject_621466ec4567b9e0,
+        mid_setCurrency_7f42074111826307,
+        mid_setGroupingUsed_bd04c9335fb9e4cf,
+        mid_setMaximumFractionDigits_99803b0791f320ff,
+        mid_setMaximumIntegerDigits_99803b0791f320ff,
+        mid_setMinimumFractionDigits_99803b0791f320ff,
+        mid_setMinimumIntegerDigits_99803b0791f320ff,
+        mid_setParseIntegerOnly_bd04c9335fb9e4cf,
         max_mid
       };
 

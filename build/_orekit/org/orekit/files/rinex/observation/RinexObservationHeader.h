@@ -5,21 +5,21 @@
 
 namespace org {
   namespace orekit {
-    namespace gnss {
-      class SatInSystem;
-      class ObservationType;
-      class SatelliteSystem;
-    }
     namespace files {
       namespace rinex {
+        namespace observation {
+          class ScaleFactorCorrection;
+          class PhaseShiftCorrection;
+          class GlonassSatelliteChannel;
+        }
         class AppliedPCVS;
         class AppliedDCBS;
-        namespace observation {
-          class GlonassSatelliteChannel;
-          class PhaseShiftCorrection;
-          class ScaleFactorCorrection;
-        }
       }
+    }
+    namespace gnss {
+      class SatInSystem;
+      class SatelliteSystem;
+      class ObservationType;
     }
     namespace time {
       class AbsoluteDate;
@@ -40,8 +40,8 @@ namespace org {
 }
 namespace java {
   namespace util {
-    class Map;
     class List;
+    class Map;
   }
   namespace lang {
     class Integer;
@@ -60,91 +60,91 @@ namespace org {
           class RinexObservationHeader : public ::org::orekit::files::rinex::section::RinexBaseHeader {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_addAppliedDCBS_ff0e7309079f40cf,
-              mid_addAppliedPCVS_53fc7a51ceba7c31,
-              mid_addGlonassChannel_70e9e40c5d576285,
-              mid_addPhaseShiftCorrection_9cf1aa1004e8e5bd,
-              mid_addScaleFactorCorrection_a1d4795e2dd1188b,
-              mid_getAgencyName_0090f7797e403f43,
-              mid_getAntennaAzimuth_456d9a2f64d6b28d,
-              mid_getAntennaBSight_17a952530a808943,
-              mid_getAntennaHeight_456d9a2f64d6b28d,
-              mid_getAntennaNumber_0090f7797e403f43,
-              mid_getAntennaPhaseCenter_17a952530a808943,
-              mid_getAntennaReferencePoint_17a952530a808943,
-              mid_getAntennaType_0090f7797e403f43,
-              mid_getAntennaZeroDirection_17a952530a808943,
-              mid_getApproxPos_17a952530a808943,
-              mid_getC1cCodePhaseBias_456d9a2f64d6b28d,
-              mid_getC1pCodePhaseBias_456d9a2f64d6b28d,
-              mid_getC2cCodePhaseBias_456d9a2f64d6b28d,
-              mid_getC2pCodePhaseBias_456d9a2f64d6b28d,
-              mid_getCenterMass_17a952530a808943,
-              mid_getClkOffset_f2f64475e4580546,
-              mid_getEccentricities_6d781af269bebe5e,
-              mid_getGlonassChannels_a6156df500549a58,
-              mid_getInterval_456d9a2f64d6b28d,
-              mid_getLeapSeconds_f2f64475e4580546,
-              mid_getLeapSecondsDayNum_f2f64475e4580546,
-              mid_getLeapSecondsFuture_f2f64475e4580546,
-              mid_getLeapSecondsWeekNum_f2f64475e4580546,
-              mid_getListAppliedDCBS_a6156df500549a58,
-              mid_getListAppliedPCVS_a6156df500549a58,
-              mid_getMarkerName_0090f7797e403f43,
-              mid_getMarkerNumber_0090f7797e403f43,
-              mid_getMarkerType_0090f7797e403f43,
-              mid_getNbObsPerSat_d6753b7055940a54,
-              mid_getNbSat_f2f64475e4580546,
-              mid_getObservationCode_0090f7797e403f43,
-              mid_getObserverName_0090f7797e403f43,
-              mid_getPhaseCenterSystem_1b72fcc8f550bfc7,
-              mid_getPhaseShiftCorrections_a6156df500549a58,
-              mid_getReceiverNumber_0090f7797e403f43,
-              mid_getReceiverType_0090f7797e403f43,
-              mid_getReceiverVersion_0090f7797e403f43,
-              mid_getScaleFactorCorrections_31d4a1bf5da85458,
-              mid_getSignalStrengthUnit_0090f7797e403f43,
-              mid_getTFirstObs_aaa854c403487cf3,
-              mid_getTLastObs_aaa854c403487cf3,
-              mid_getTypeObs_d6753b7055940a54,
-              mid_setAgencyName_e939c6558ae8d313,
-              mid_setAntennaAzimuth_77e0f9a1f260e2e5,
-              mid_setAntennaBSight_a94622407b723689,
-              mid_setAntennaHeight_77e0f9a1f260e2e5,
-              mid_setAntennaNumber_e939c6558ae8d313,
-              mid_setAntennaPhaseCenter_a94622407b723689,
-              mid_setAntennaReferencePoint_a94622407b723689,
-              mid_setAntennaType_e939c6558ae8d313,
-              mid_setAntennaZeroDirection_a94622407b723689,
-              mid_setApproxPos_a94622407b723689,
-              mid_setC1cCodePhaseBias_77e0f9a1f260e2e5,
-              mid_setC1pCodePhaseBias_77e0f9a1f260e2e5,
-              mid_setC2cCodePhaseBias_77e0f9a1f260e2e5,
-              mid_setC2pCodePhaseBias_77e0f9a1f260e2e5,
-              mid_setCenterMass_a94622407b723689,
-              mid_setClkOffset_0a2a1ac2721c0336,
-              mid_setEccentricities_6b877e75654b72f2,
-              mid_setInterval_77e0f9a1f260e2e5,
-              mid_setLeapSeconds_0a2a1ac2721c0336,
-              mid_setLeapSecondsDayNum_0a2a1ac2721c0336,
-              mid_setLeapSecondsFuture_0a2a1ac2721c0336,
-              mid_setLeapSecondsWeekNum_0a2a1ac2721c0336,
-              mid_setMarkerName_e939c6558ae8d313,
-              mid_setMarkerNumber_e939c6558ae8d313,
-              mid_setMarkerType_e939c6558ae8d313,
-              mid_setNbObsPerSatellite_a41e1305960ee8b3,
-              mid_setNbSat_0a2a1ac2721c0336,
-              mid_setObservationCode_e939c6558ae8d313,
-              mid_setObserverName_e939c6558ae8d313,
-              mid_setPhaseCenterSystem_a9204a81fe55aebe,
-              mid_setReceiverNumber_e939c6558ae8d313,
-              mid_setReceiverType_e939c6558ae8d313,
-              mid_setReceiverVersion_e939c6558ae8d313,
-              mid_setSignalStrengthUnit_e939c6558ae8d313,
-              mid_setTFirstObs_e82d68cd9f886886,
-              mid_setTLastObs_e82d68cd9f886886,
-              mid_setTypeObs_e302854832599b59,
+              mid_init$_0fa09c18fee449d5,
+              mid_addAppliedDCBS_924dc948b3328b0a,
+              mid_addAppliedPCVS_6ae122bae3989b66,
+              mid_addGlonassChannel_229e08939b0b6df7,
+              mid_addPhaseShiftCorrection_16a4824169a35abe,
+              mid_addScaleFactorCorrection_4b56a58268a38e26,
+              mid_getAgencyName_11b109bd155ca898,
+              mid_getAntennaAzimuth_dff5885c2c873297,
+              mid_getAntennaBSight_d52645e0d4c07563,
+              mid_getAntennaHeight_dff5885c2c873297,
+              mid_getAntennaNumber_11b109bd155ca898,
+              mid_getAntennaPhaseCenter_d52645e0d4c07563,
+              mid_getAntennaReferencePoint_d52645e0d4c07563,
+              mid_getAntennaType_11b109bd155ca898,
+              mid_getAntennaZeroDirection_d52645e0d4c07563,
+              mid_getApproxPos_d52645e0d4c07563,
+              mid_getC1cCodePhaseBias_dff5885c2c873297,
+              mid_getC1pCodePhaseBias_dff5885c2c873297,
+              mid_getC2cCodePhaseBias_dff5885c2c873297,
+              mid_getC2pCodePhaseBias_dff5885c2c873297,
+              mid_getCenterMass_d52645e0d4c07563,
+              mid_getClkOffset_570ce0828f81a2c1,
+              mid_getEccentricities_73f627838730c264,
+              mid_getGlonassChannels_2afa36052df4765d,
+              mid_getInterval_dff5885c2c873297,
+              mid_getLeapSeconds_570ce0828f81a2c1,
+              mid_getLeapSecondsDayNum_570ce0828f81a2c1,
+              mid_getLeapSecondsFuture_570ce0828f81a2c1,
+              mid_getLeapSecondsWeekNum_570ce0828f81a2c1,
+              mid_getListAppliedDCBS_2afa36052df4765d,
+              mid_getListAppliedPCVS_2afa36052df4765d,
+              mid_getMarkerName_11b109bd155ca898,
+              mid_getMarkerNumber_11b109bd155ca898,
+              mid_getMarkerType_11b109bd155ca898,
+              mid_getNbObsPerSat_6f5a75ccd8c04465,
+              mid_getNbSat_570ce0828f81a2c1,
+              mid_getObservationCode_11b109bd155ca898,
+              mid_getObserverName_11b109bd155ca898,
+              mid_getPhaseCenterSystem_01acae5c1a253b8e,
+              mid_getPhaseShiftCorrections_2afa36052df4765d,
+              mid_getReceiverNumber_11b109bd155ca898,
+              mid_getReceiverType_11b109bd155ca898,
+              mid_getReceiverVersion_11b109bd155ca898,
+              mid_getScaleFactorCorrections_a32fd2dc2b4dc37a,
+              mid_getSignalStrengthUnit_11b109bd155ca898,
+              mid_getTFirstObs_85703d13e302437e,
+              mid_getTLastObs_85703d13e302437e,
+              mid_getTypeObs_6f5a75ccd8c04465,
+              mid_setAgencyName_d0bc48d5b00dc40c,
+              mid_setAntennaAzimuth_17db3a65980d3441,
+              mid_setAntennaBSight_029ff0cbf68ea054,
+              mid_setAntennaHeight_17db3a65980d3441,
+              mid_setAntennaNumber_d0bc48d5b00dc40c,
+              mid_setAntennaPhaseCenter_029ff0cbf68ea054,
+              mid_setAntennaReferencePoint_029ff0cbf68ea054,
+              mid_setAntennaType_d0bc48d5b00dc40c,
+              mid_setAntennaZeroDirection_029ff0cbf68ea054,
+              mid_setApproxPos_029ff0cbf68ea054,
+              mid_setC1cCodePhaseBias_17db3a65980d3441,
+              mid_setC1pCodePhaseBias_17db3a65980d3441,
+              mid_setC2cCodePhaseBias_17db3a65980d3441,
+              mid_setC2pCodePhaseBias_17db3a65980d3441,
+              mid_setCenterMass_029ff0cbf68ea054,
+              mid_setClkOffset_99803b0791f320ff,
+              mid_setEccentricities_6008d3447ce702ca,
+              mid_setInterval_17db3a65980d3441,
+              mid_setLeapSeconds_99803b0791f320ff,
+              mid_setLeapSecondsDayNum_99803b0791f320ff,
+              mid_setLeapSecondsFuture_99803b0791f320ff,
+              mid_setLeapSecondsWeekNum_99803b0791f320ff,
+              mid_setMarkerName_d0bc48d5b00dc40c,
+              mid_setMarkerNumber_d0bc48d5b00dc40c,
+              mid_setMarkerType_d0bc48d5b00dc40c,
+              mid_setNbObsPerSatellite_5704e79955ccac22,
+              mid_setNbSat_99803b0791f320ff,
+              mid_setObservationCode_d0bc48d5b00dc40c,
+              mid_setObserverName_d0bc48d5b00dc40c,
+              mid_setPhaseCenterSystem_10d44f5686b1d39e,
+              mid_setReceiverNumber_d0bc48d5b00dc40c,
+              mid_setReceiverType_d0bc48d5b00dc40c,
+              mid_setReceiverVersion_d0bc48d5b00dc40c,
+              mid_setSignalStrengthUnit_d0bc48d5b00dc40c,
+              mid_setTFirstObs_600a2a61652bc473,
+              mid_setTLastObs_600a2a61652bc473,
+              mid_setTypeObs_9814758cc9231e7c,
               max_mid
             };
 

@@ -3,7 +3,27 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace rugged {
       namespace utils {
@@ -13,26 +33,6 @@ namespace org {
     namespace utils {
       class ParameterDriver;
     }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-  }
-}
-namespace java {
-  namespace util {
-    namespace stream {
-      class Stream;
-    }
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -45,9 +45,9 @@ namespace org {
         class TimeIndependentLOSTransform : public ::java::lang::Object {
          public:
           enum {
-            mid_getParametersDrivers_a68a17dd093f796d,
-            mid_transformLOS_5b56f31df08e1557,
-            mid_transformLOS_e434856d6b086dd4,
+            mid_getParametersDrivers_20f6d2b462aaef4b,
+            mid_transformLOS_c5b4a35f45a6f61e,
+            mid_transformLOS_43c702ec4c12ce7d,
             max_mid
           };
 

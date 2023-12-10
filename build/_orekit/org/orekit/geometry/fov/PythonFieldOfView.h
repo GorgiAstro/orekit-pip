@@ -3,16 +3,26 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace events {
+        class VisibilityTrigger;
+      }
+    }
+    namespace geometry {
+      namespace fov {
+        class FieldOfView;
+      }
+    }
+    namespace bodies {
+      class OneAxisEllipsoid;
+      class GeodeticPoint;
+    }
+    namespace frames {
+      class Transform;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -22,24 +32,14 @@ namespace org {
       }
     }
   }
-  namespace orekit {
-    namespace bodies {
-      class OneAxisEllipsoid;
-      class GeodeticPoint;
-    }
-    namespace geometry {
-      namespace fov {
-        class FieldOfView;
-      }
-    }
-    namespace propagation {
-      namespace events {
-        class VisibilityTrigger;
-      }
-    }
-    namespace frames {
-      class Transform;
-    }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -52,15 +52,15 @@ namespace org {
         class PythonFieldOfView : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_finalize_7ae3461a92a43152,
-            mid_getFootprint_260aa711ad5a5b78,
-            mid_getMargin_456d9a2f64d6b28d,
-            mid_offsetFromBoundary_9e70aa9759fb6e3e,
-            mid_projectToBoundary_afd63a09f6d01e4c,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
+            mid_init$_0fa09c18fee449d5,
+            mid_finalize_0fa09c18fee449d5,
+            mid_getFootprint_d179f90e70a637c1,
+            mid_getMargin_dff5885c2c873297,
+            mid_offsetFromBoundary_92bc6ba59ebf6937,
+            mid_projectToBoundary_d0fe714ef34714f7,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
             max_mid
           };
 

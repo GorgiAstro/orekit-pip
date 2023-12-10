@@ -7,17 +7,17 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace utils {
+          namespace lexical {
+            class ParseToken;
+          }
+        }
         namespace ndm {
           namespace adm {
             namespace acm {
               class AcmParser;
               class AcmDataSubStructureKey;
             }
-          }
-        }
-        namespace utils {
-          namespace lexical {
-            class ParseToken;
           }
         }
       }
@@ -43,9 +43,9 @@ namespace org {
               class AcmDataSubStructureKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_fbaf0d209c4ad042,
-                  mid_valueOf_8768fcaf767e62f1,
-                  mid_values_17552994656f8b79,
+                  mid_process_3c68c849d0a293e9,
+                  mid_valueOf_f37fca85579f67e0,
+                  mid_values_5ef48a5bbc8d8ce7,
                   max_mid
                 };
 

@@ -28,8 +28,8 @@ namespace org {
             class ValueAndJacobianFunction : public ::org::hipparchus::optim::nonlinear::vector::leastsquares::MultivariateJacobianFunction {
              public:
               enum {
-                mid_computeJacobian_70265c1b8bef83aa,
-                mid_computeValue_8cf27fb7e5ba736a,
+                mid_computeJacobian_1c14cec8544f26fc,
+                mid_computeValue_a740f7f012972b3a,
                 max_mid
               };
 

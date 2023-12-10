@@ -24,7 +24,7 @@ namespace org {
       class TwoBodiesBaryFrame : public ::org::orekit::frames::Frame {
        public:
         enum {
-          mid_init$_43ec4ee4a0809dae,
+          mid_init$_628ee7a3e714b75c,
           max_mid
         };
 

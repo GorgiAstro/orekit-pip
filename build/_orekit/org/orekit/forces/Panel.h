@@ -8,16 +8,16 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
   }
   namespace orekit {
     namespace propagation {
-      class SpacecraftState;
       class FieldSpacecraftState;
+      class SpacecraftState;
     }
   }
 }
@@ -35,14 +35,14 @@ namespace org {
       class Panel : public ::java::lang::Object {
        public:
         enum {
-          mid_getAbsorption_456d9a2f64d6b28d,
-          mid_getArea_456d9a2f64d6b28d,
-          mid_getDrag_456d9a2f64d6b28d,
-          mid_getLiftRatio_456d9a2f64d6b28d,
-          mid_getNormal_665eae343e14b9ea,
-          mid_getNormal_78226ca7935182ea,
-          mid_getReflection_456d9a2f64d6b28d,
-          mid_isDoubleSided_e470b6d9e0d979db,
+          mid_getAbsorption_dff5885c2c873297,
+          mid_getArea_dff5885c2c873297,
+          mid_getDrag_dff5885c2c873297,
+          mid_getLiftRatio_dff5885c2c873297,
+          mid_getNormal_e6f00ace1decd27c,
+          mid_getNormal_abc43395638fd218,
+          mid_getReflection_dff5885c2c873297,
+          mid_isDoubleSided_b108b35ef48e27bd,
           max_mid
         };
 

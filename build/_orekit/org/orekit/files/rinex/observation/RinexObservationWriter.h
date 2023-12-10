@@ -3,34 +3,34 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class IOException;
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace rinex {
+        namespace section {
+          class RinexComment;
+        }
+        namespace observation {
+          class RinexObservation;
+          class ObservationDataSet;
+          class RinexObservationHeader;
+        }
+      }
+    }
   }
+}
+namespace java {
   namespace util {
     class List;
+  }
+  namespace io {
+    class IOException;
   }
   namespace lang {
     class AutoCloseable;
     class Appendable;
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace rinex {
-        namespace observation {
-          class RinexObservation;
-          class RinexObservationHeader;
-          class ObservationDataSet;
-        }
-        namespace section {
-          class RinexComment;
-        }
-      }
-    }
   }
 }
 template<class T> class JArray;
@@ -44,14 +44,14 @@ namespace org {
           class RinexObservationWriter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_e39e830a0f55c9db,
-              mid_close_7ae3461a92a43152,
-              mid_prepareComments_65de9727799c5641,
-              mid_writeCompleteFile_31f7edc5a6aad656,
-              mid_writeHeader_581bd9eb401a3c81,
-              mid_writeObservationDataSet_a74883e6a7063961,
-              mid_writePendingRinex2Observations_7ae3461a92a43152,
-              mid_writePendingRinex34Observations_7ae3461a92a43152,
+              mid_init$_580b43eb7b580d53,
+              mid_close_0fa09c18fee449d5,
+              mid_prepareComments_de3e021e7266b71e,
+              mid_writeCompleteFile_f5988098843867b2,
+              mid_writeHeader_2b1813bb25ab1e9c,
+              mid_writeObservationDataSet_5e249044f63168db,
+              mid_writePendingRinex2Observations_0fa09c18fee449d5,
+              mid_writePendingRinex34Observations_0fa09c18fee449d5,
               max_mid
             };
 

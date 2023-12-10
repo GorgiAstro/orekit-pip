@@ -3,14 +3,6 @@
 
 #include "org/orekit/estimation/measurements/modifiers/AbstractRelativisticClockModifier.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace estimation {
@@ -25,6 +17,14 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -36,9 +36,9 @@ namespace org {
           class RelativisticClockInterSatellitesRangeModifier : public ::org::orekit::estimation::measurements::modifiers::AbstractRelativisticClockModifier {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_modifyWithoutDerivatives_811f96960c94c1de,
+              mid_init$_0fa09c18fee449d5,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_modifyWithoutDerivatives_d1815d998cba71e9,
               max_mid
             };
 

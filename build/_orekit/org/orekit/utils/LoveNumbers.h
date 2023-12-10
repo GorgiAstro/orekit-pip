@@ -20,11 +20,11 @@ namespace org {
       class LoveNumbers : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_bff1d17d989bb322,
-          mid_getImaginary_a84e4ee1da3f1ab8,
-          mid_getPlus_a84e4ee1da3f1ab8,
-          mid_getReal_a84e4ee1da3f1ab8,
-          mid_getSize_f2f64475e4580546,
+          mid_init$_2360647b29ef3c7d,
+          mid_getImaginary_dbbe5f05149dbf73,
+          mid_getPlus_dbbe5f05149dbf73,
+          mid_getReal_dbbe5f05149dbf73,
+          mid_getSize_570ce0828f81a2c1,
           max_mid
         };
 

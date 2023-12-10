@@ -5,13 +5,13 @@
 
 namespace org {
   namespace orekit {
+    namespace utils {
+      class TimeStampedAngularCoordinates;
+      class TimeStampedFieldAngularCoordinates;
+      class ExtendedPVCoordinatesProvider;
+    }
     namespace frames {
       class Frame;
-    }
-    namespace utils {
-      class TimeStampedFieldAngularCoordinates;
-      class TimeStampedAngularCoordinates;
-      class ExtendedPVCoordinatesProvider;
     }
     namespace time {
       class AbsoluteDate;
@@ -34,11 +34,11 @@ namespace org {
         class PythonAbstractGNSSAttitudeProvider : public ::org::orekit::gnss::attitude::AbstractGNSSAttitudeProvider {
          public:
           enum {
-            mid_init$_65fb710ff0be7da1,
-            mid_finalize_7ae3461a92a43152,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
+            mid_init$_be6476273154a2ce,
+            mid_finalize_0fa09c18fee449d5,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
             max_mid
           };
 

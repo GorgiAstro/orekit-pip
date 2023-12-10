@@ -9,14 +9,14 @@ namespace org {
       namespace ccsds {
         namespace utils {
           namespace lexical {
+            class ParseToken;
             class XmlTokenBuilder;
             class MessageParser;
-            class ParseToken;
           }
-          class FileFormat;
           namespace parsing {
             class ProcessingState;
           }
+          class FileFormat;
         }
       }
     }
@@ -46,17 +46,17 @@ namespace org {
             class AbstractMessageParser : public ::java::lang::Object {
              public:
               enum {
-                mid_anticipateNext_fcf5bfd61f1ca2c0,
-                mid_getCurrent_50840dac38b5c0f6,
-                mid_getFileFormat_b51f613f857a5e84,
-                mid_getFormatVersionKey_0090f7797e403f43,
-                mid_getSpecialXmlElementsBuilders_d6753b7055940a54,
-                mid_parseMessage_691778b38b11996d,
-                mid_process_9b91a684064d0956,
-                mid_setEndTagSeen_50a2e0b139e80a58,
-                mid_setFallback_fcf5bfd61f1ca2c0,
-                mid_wasEndTagSeen_e470b6d9e0d979db,
-                mid_reset_5d01efeee494ec15,
+                mid_anticipateNext_30e3b8a372059ddf,
+                mid_getCurrent_1dbed63d6789950e,
+                mid_getFileFormat_66298c6188053be6,
+                mid_getFormatVersionKey_11b109bd155ca898,
+                mid_getSpecialXmlElementsBuilders_6f5a75ccd8c04465,
+                mid_parseMessage_455adfd4ae4ab630,
+                mid_process_60c6e06c33a7585b,
+                mid_setEndTagSeen_bd04c9335fb9e4cf,
+                mid_setFallback_30e3b8a372059ddf,
+                mid_wasEndTagSeen_b108b35ef48e27bd,
+                mid_reset_b2bb54cd2f7ebe7d,
                 max_mid
               };
 

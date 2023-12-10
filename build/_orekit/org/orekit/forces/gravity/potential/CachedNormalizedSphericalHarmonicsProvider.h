@@ -8,8 +8,8 @@ namespace org {
     namespace forces {
       namespace gravity {
         namespace potential {
-          class NormalizedSphericalHarmonicsProvider$NormalizedSphericalHarmonics;
           class NormalizedSphericalHarmonicsProvider;
+          class NormalizedSphericalHarmonicsProvider$NormalizedSphericalHarmonics;
           class TideSystem;
         }
       }
@@ -35,14 +35,14 @@ namespace org {
           class CachedNormalizedSphericalHarmonicsProvider : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_118e177f3e704967,
-              mid_getAe_456d9a2f64d6b28d,
-              mid_getMaxDegree_f2f64475e4580546,
-              mid_getMaxOrder_f2f64475e4580546,
-              mid_getMu_456d9a2f64d6b28d,
-              mid_getReferenceDate_aaa854c403487cf3,
-              mid_getTideSystem_b3b39360f3c8a6ac,
-              mid_onDate_5d593e1d60308d01,
+              mid_init$_b7e79a1d0b13bbb3,
+              mid_getAe_dff5885c2c873297,
+              mid_getMaxDegree_570ce0828f81a2c1,
+              mid_getMaxOrder_570ce0828f81a2c1,
+              mid_getMu_dff5885c2c873297,
+              mid_getReferenceDate_85703d13e302437e,
+              mid_getTideSystem_c68abf1ca1fc273e,
+              mid_onDate_58c777cdeb3bd479,
               max_mid
             };
 

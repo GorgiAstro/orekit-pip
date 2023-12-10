@@ -3,6 +3,12 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace geometry {
@@ -10,12 +16,6 @@ namespace org {
         class PolygonalFieldOfView$DefiningConeType;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,10 +28,10 @@ namespace org {
         class PolygonalFieldOfView$DefiningConeType : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_c24b17e2e4ff38b2,
-            mid_values_e3d0bc04428a5ff9,
-            mid_verticesRadius_bcad94b64f1e2dd8,
-            mid_createVertex_a247ba58761abda9,
+            mid_valueOf_a4000e9917488440,
+            mid_values_a3253f5ff3568304,
+            mid_verticesRadius_948617e69b66e15d,
+            mid_createVertex_5c226f3c91080757,
             max_mid
           };
 

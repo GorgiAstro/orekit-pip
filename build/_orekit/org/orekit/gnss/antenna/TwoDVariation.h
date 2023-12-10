@@ -27,8 +27,8 @@ namespace org {
         class TwoDVariation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_744e97af41a6f7ed,
-            mid_value_824133ce4aec3505,
+            mid_init$_767b7bd01dce10cd,
+            mid_value_86ffecc08a63eff0,
             max_mid
           };
 

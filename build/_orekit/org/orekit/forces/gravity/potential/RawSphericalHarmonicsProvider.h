@@ -33,7 +33,7 @@ namespace org {
           class RawSphericalHarmonicsProvider : public ::org::orekit::forces::gravity::potential::SphericalHarmonicsProvider {
            public:
             enum {
-              mid_onDate_e337a8de1b487ef8,
+              mid_onDate_25793e429590ca38,
               max_mid
             };
 

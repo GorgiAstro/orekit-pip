@@ -4,6 +4,9 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace propagation {
       namespace semianalytical {
@@ -16,9 +19,6 @@ namespace org {
         }
       }
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -38,11 +38,11 @@ namespace org {
             class ZeisModel : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_computeC2Z_d2aba67d7a20690f,
-                mid_computeC2Z_d0f3fc732fcd5929,
-                mid_computeMeanEquinoctialSecondOrderTerms_e32239e65f2894b6,
-                mid_computeMeanEquinoctialSecondOrderTerms_567add3558894c9e,
+                mid_init$_0fa09c18fee449d5,
+                mid_computeC2Z_88b57c541cd2b921,
+                mid_computeC2Z_8493f9d5b8291733,
+                mid_computeMeanEquinoctialSecondOrderTerms_03e8bdfa525c3779,
+                mid_computeMeanEquinoctialSecondOrderTerms_1a8550c5c09a5c40,
                 max_mid
               };
 

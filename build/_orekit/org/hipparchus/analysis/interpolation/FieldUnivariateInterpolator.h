@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
+    namespace analysis {
+      class CalculusFieldUnivariateFunction;
+    }
     namespace exception {
       class MathIllegalArgumentException;
     }
     class CalculusFieldElement;
-    namespace analysis {
-      class CalculusFieldUnivariateFunction;
-    }
   }
 }
 namespace java {
@@ -29,7 +29,7 @@ namespace org {
         class FieldUnivariateInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_interpolate_eab3fa0cc9bfd33f,
+            mid_interpolate_2a0316cf5108925d,
             max_mid
           };
 

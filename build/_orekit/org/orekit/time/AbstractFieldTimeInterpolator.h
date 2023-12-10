@@ -3,28 +3,28 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-    class Collection;
-    namespace stream {
-      class Stream;
-    }
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
-      class FieldTimeStamped;
       class FieldTimeInterpolator;
+      class FieldTimeStamped;
       class FieldAbsoluteDate;
     }
   }
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+    class List;
+    class Collection;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -36,16 +36,16 @@ namespace org {
       class AbstractFieldTimeInterpolator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_987a5fb872043b12,
-          mid_checkInterpolatorCompatibilityWithSampleSize_6ed33a86b884cfa4,
-          mid_getExtrapolationThreshold_456d9a2f64d6b28d,
-          mid_getNbInterpolationPoints_f2f64475e4580546,
-          mid_getSubInterpolators_a6156df500549a58,
-          mid_interpolate_d78a42ee414691f7,
-          mid_interpolate_ad7e298cf9f2b0c8,
-          mid_interpolate_f183a108779aaab8,
-          mid_addOptionalSubInterpolatorIfDefined_7c4e08321b466f75,
-          mid_getTimeParameter_ab8669e24b09b830,
+          mid_init$_bb79ca80d85d0a66,
+          mid_checkInterpolatorCompatibilityWithSampleSize_7825dbda7c77ee33,
+          mid_getExtrapolationThreshold_dff5885c2c873297,
+          mid_getNbInterpolationPoints_570ce0828f81a2c1,
+          mid_getSubInterpolators_2afa36052df4765d,
+          mid_interpolate_557eb4540302b61a,
+          mid_interpolate_0b262a74531436b2,
+          mid_interpolate_e846d67ab348970f,
+          mid_addOptionalSubInterpolatorIfDefined_c6a8415fd6d0ffe5,
+          mid_getTimeParameter_70f315842c002eb8,
           max_mid
         };
 

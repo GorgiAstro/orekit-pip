@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
@@ -21,8 +21,8 @@ namespace org {
   }
   namespace orekit {
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
   }
 }
@@ -42,9 +42,9 @@ namespace org {
           class PolynomialThrustSegment : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_e21e77cc42229f60,
-              mid_getThrustVector_71c51b45829333ce,
-              mid_getThrustVector_11a4be79061d1fe3,
+              mid_init$_9369cf81176a0f42,
+              mid_getThrustVector_24461752d0eea1e3,
+              mid_getThrustVector_e81fa067750860a1,
               max_mid
             };
 

@@ -22,20 +22,20 @@ namespace java {
     class Package : public ::java::lang::NamedPackage {
      public:
       enum {
-        mid_getImplementationTitle_0090f7797e403f43,
-        mid_getImplementationVendor_0090f7797e403f43,
-        mid_getImplementationVersion_0090f7797e403f43,
-        mid_getName_0090f7797e403f43,
-        mid_getPackage_f7c808f242d7007d,
-        mid_getPackages_24dcadba5c7fd8f6,
-        mid_getSpecificationTitle_0090f7797e403f43,
-        mid_getSpecificationVendor_0090f7797e403f43,
-        mid_getSpecificationVersion_0090f7797e403f43,
-        mid_hashCode_f2f64475e4580546,
-        mid_isCompatibleWith_6b161f495ea569b8,
-        mid_isSealed_e470b6d9e0d979db,
-        mid_isSealed_44e8a9d7e85e19cd,
-        mid_toString_0090f7797e403f43,
+        mid_getImplementationTitle_11b109bd155ca898,
+        mid_getImplementationVendor_11b109bd155ca898,
+        mid_getImplementationVersion_11b109bd155ca898,
+        mid_getName_11b109bd155ca898,
+        mid_getPackage_2ebccdeed255784a,
+        mid_getPackages_23df86f75843b87b,
+        mid_getSpecificationTitle_11b109bd155ca898,
+        mid_getSpecificationVendor_11b109bd155ca898,
+        mid_getSpecificationVersion_11b109bd155ca898,
+        mid_hashCode_570ce0828f81a2c1,
+        mid_isCompatibleWith_7edad2c2f64f4d68,
+        mid_isSealed_b108b35ef48e27bd,
+        mid_isSealed_c31132c160c2df88,
+        mid_toString_11b109bd155ca898,
         max_mid
       };
 

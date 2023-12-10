@@ -32,12 +32,12 @@ namespace org {
       class TimeStampedCacheException : public ::org::orekit::errors::OrekitException {
        public:
         enum {
-          mid_init$_2171b09f9faab92f,
-          mid_init$_ab3e19f36ee9b26f,
-          mid_init$_3d6784947cb48668,
-          mid_init$_ca997976b075d32c,
-          mid_unwrap_ee714fe96be7f1d9,
-          mid_unwrap_cd6f351421ae331c,
+          mid_init$_b82e021312358546,
+          mid_init$_224a394c2fd91cdf,
+          mid_init$_d0cf82c16a7e8751,
+          mid_init$_6ecc3fd6067c266c,
+          mid_unwrap_98ab925763c8c570,
+          mid_unwrap_3e62516228911b5b,
           max_mid
         };
 

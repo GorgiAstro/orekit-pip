@@ -3,21 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace gnss {
-      class ObservationType;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    namespace util {
-      class Pair;
-    }
-  }
-}
 namespace java {
   namespace util {
     class HashSet;
@@ -25,6 +10,21 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace util {
+      class Pair;
+    }
+  }
+  namespace orekit {
+    namespace gnss {
+      class ObservationType;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
   }
 }
 template<class T> class JArray;
@@ -37,15 +37,15 @@ namespace org {
         class Dcb : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_addDcbLine_0c5b45c2d14b8033,
-            mid_getAvailableObservationPairs_22daa3e0ba65a6b7,
-            mid_getDcb_17a39db9f850590b,
-            mid_getDcb_81cde50cf4f9dfd5,
-            mid_getMaximumValidDateForObservationPair_26e5de0fefb7beed,
-            mid_getMaximumValidDateForObservationPair_011c5e51b9c14cac,
-            mid_getMinimumValidDateForObservationPair_26e5de0fefb7beed,
-            mid_getMinimumValidDateForObservationPair_011c5e51b9c14cac,
+            mid_init$_0fa09c18fee449d5,
+            mid_addDcbLine_4f8497a13a203241,
+            mid_getAvailableObservationPairs_f7c51ce9ecdd2548,
+            mid_getDcb_f49da90729a92c95,
+            mid_getDcb_a2371a506507114c,
+            mid_getMaximumValidDateForObservationPair_28607228106a09f1,
+            mid_getMaximumValidDateForObservationPair_359e633219ef4315,
+            mid_getMinimumValidDateForObservationPair_28607228106a09f1,
+            mid_getMinimumValidDateForObservationPair_359e633219ef4315,
             max_mid
           };
 

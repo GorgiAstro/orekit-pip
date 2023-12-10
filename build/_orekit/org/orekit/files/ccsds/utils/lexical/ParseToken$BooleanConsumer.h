@@ -20,7 +20,7 @@ namespace org {
             class ParseToken$BooleanConsumer : public ::java::lang::Object {
              public:
               enum {
-                mid_accept_50a2e0b139e80a58,
+                mid_accept_bd04c9335fb9e4cf,
                 max_mid
               };
 

@@ -48,8 +48,8 @@ namespace org {
           class ConstantThrustDirectionProvider : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a94622407b723689,
-              mid_computeThrustDirection_00b397d023000862,
+              mid_init$_029ff0cbf68ea054,
+              mid_computeThrustDirection_35628cd92ea82231,
               max_mid
             };
 

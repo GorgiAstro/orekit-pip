@@ -3,19 +3,19 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace data {
+      class DataSource;
+    }
+  }
+}
 namespace java {
   namespace io {
     class IOException;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace data {
-      class DataSource;
-    }
   }
 }
 template<class T> class JArray;
@@ -27,7 +27,7 @@ namespace org {
       class DataFilter : public ::java::lang::Object {
        public:
         enum {
-          mid_filter_446488bfc679a21b,
+          mid_filter_716adf7a6da8b4d7,
           max_mid
         };
 

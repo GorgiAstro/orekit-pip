@@ -28,9 +28,9 @@ namespace org {
         class BSPTreeVisitor : public ::java::lang::Object {
          public:
           enum {
-            mid_visitInternalNode_d174f4dc4d22a6b4,
-            mid_visitLeafNode_d174f4dc4d22a6b4,
-            mid_visitOrder_73f7b6c4b9295dd0,
+            mid_visitInternalNode_083ba3410c8af631,
+            mid_visitLeafNode_083ba3410c8af631,
+            mid_visitOrder_c5e9b148bf3d895c,
             max_mid
           };
 

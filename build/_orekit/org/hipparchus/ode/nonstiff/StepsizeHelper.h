@@ -26,20 +26,20 @@ namespace org {
         class StepsizeHelper : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_e5787c5177784e12,
-            mid_init$_667a7965403ed91a,
-            mid_filterStep_73d783f530b6a963,
-            mid_filterStep_15e00e789d917dd7,
-            mid_getDummyStepsize_456d9a2f64d6b28d,
-            mid_getInitialStep_456d9a2f64d6b28d,
-            mid_getMainSetDimension_f2f64475e4580546,
-            mid_getMaxStep_456d9a2f64d6b28d,
-            mid_getMinStep_456d9a2f64d6b28d,
-            mid_getRelativeTolerance_b772323fc98b7293,
-            mid_getTolerance_31332242d1624d2c,
-            mid_getTolerance_ee7db4b2ec7048ce,
-            mid_setInitialStepSize_77e0f9a1f260e2e5,
-            mid_setMainSetDimension_0a2a1ac2721c0336,
+            mid_init$_36e977212374ff6b,
+            mid_init$_b0a935b68e41d65a,
+            mid_filterStep_16d3313994f1bf12,
+            mid_filterStep_364c6dc6097b328f,
+            mid_getDummyStepsize_dff5885c2c873297,
+            mid_getInitialStep_dff5885c2c873297,
+            mid_getMainSetDimension_570ce0828f81a2c1,
+            mid_getMaxStep_dff5885c2c873297,
+            mid_getMinStep_dff5885c2c873297,
+            mid_getRelativeTolerance_46f85b53d9aedd96,
+            mid_getTolerance_60d7624725a52590,
+            mid_getTolerance_e2b464e41c9ba627,
+            mid_setInitialStepSize_17db3a65980d3441,
+            mid_setMainSetDimension_99803b0791f320ff,
             max_mid
           };
 

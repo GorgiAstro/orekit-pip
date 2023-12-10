@@ -4,6 +4,16 @@
 #include "org/orekit/utils/TimeStampedFieldPVCoordinates.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace frames {
       class Frame;
@@ -17,16 +27,6 @@ namespace org {
     namespace time {
       class FieldAbsoluteDate;
     }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class FieldVector3D;
-        }
-      }
-    }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -43,25 +43,25 @@ namespace org {
       class FieldAbsolutePVCoordinates : public ::org::orekit::utils::TimeStampedFieldPVCoordinates {
        public:
         enum {
-          mid_init$_df81e043e926a013,
-          mid_init$_43f93b28b797951a,
-          mid_init$_380e3285128bd3ab,
-          mid_init$_6915f38f9d73a4da,
-          mid_init$_84e2abc75a0ef1a2,
-          mid_init$_a332af9e0c5473c5,
-          mid_init$_13df4cca0dae3be7,
-          mid_init$_8ee2135f18ca0852,
-          mid_init$_10206186abe24235,
-          mid_init$_316d0b5400379728,
-          mid_getFrame_c8fe21bcdac65bf6,
-          mid_getPVCoordinates_26447a781aafdb9e,
-          mid_getPVCoordinates_485af6605091d545,
-          mid_getPVCoordinates_0e277b7d6a64b75a,
-          mid_getPosition_863ec0d27d7d92bb,
-          mid_shiftedBy_65569f14a206711d,
-          mid_shiftedBy_b506c770a1be56c1,
-          mid_toAbsolutePVCoordinates_821da029915a6e75,
-          mid_toTaylorProvider_d265659654cb169e,
+          mid_init$_74ead997d56fb57d,
+          mid_init$_7fbe60a14a017b36,
+          mid_init$_3968685f3cfde387,
+          mid_init$_157e0412941b659e,
+          mid_init$_d8a2a240753d0d6b,
+          mid_init$_c20373b9658fec77,
+          mid_init$_be3f7fa2cc96b877,
+          mid_init$_950d0e907b47dcae,
+          mid_init$_d2fe6d0d922f371d,
+          mid_init$_f0f2f7e8c4812fcf,
+          mid_getFrame_b86f9f61d97a7244,
+          mid_getPVCoordinates_f89522ff77904397,
+          mid_getPVCoordinates_f7bcbf2fe13428b6,
+          mid_getPVCoordinates_2cdae1c350dc3e9a,
+          mid_getPosition_f336610fe073f215,
+          mid_shiftedBy_1e9400b30e4a1955,
+          mid_shiftedBy_5fb9177ede99debe,
+          mid_toAbsolutePVCoordinates_3484f681e5893171,
+          mid_toTaylorProvider_d973c40fc0211a5b,
           max_mid
         };
 

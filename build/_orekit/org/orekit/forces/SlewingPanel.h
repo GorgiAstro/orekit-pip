@@ -8,19 +8,19 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
   }
   namespace orekit {
-    namespace propagation {
-      class SpacecraftState;
-      class FieldSpacecraftState;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
     }
   }
 }
@@ -38,9 +38,9 @@ namespace org {
       class SlewingPanel : public ::org::orekit::forces::Panel {
        public:
         enum {
-          mid_init$_50acda441e2341fa,
-          mid_getNormal_665eae343e14b9ea,
-          mid_getNormal_78226ca7935182ea,
+          mid_init$_1a125af387d435b2,
+          mid_getNormal_e6f00ace1decd27c,
+          mid_getNormal_abc43395638fd218,
           max_mid
         };
 

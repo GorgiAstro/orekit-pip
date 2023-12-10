@@ -9,8 +9,8 @@ namespace org {
       namespace semianalytical {
         namespace dsst {
           namespace forces {
-            class DSSTJ2SquaredClosedFormContext;
             class FieldDSSTJ2SquaredClosedFormContext;
+            class DSSTJ2SquaredClosedFormContext;
           }
         }
       }
@@ -37,8 +37,8 @@ namespace org {
             class J2SquaredModel : public ::java::lang::Object {
              public:
               enum {
-                mid_computeMeanEquinoctialSecondOrderTerms_e32239e65f2894b6,
-                mid_computeMeanEquinoctialSecondOrderTerms_567add3558894c9e,
+                mid_computeMeanEquinoctialSecondOrderTerms_03e8bdfa525c3779,
+                mid_computeMeanEquinoctialSecondOrderTerms_1a8550c5c09a5c40,
                 max_mid
               };
 

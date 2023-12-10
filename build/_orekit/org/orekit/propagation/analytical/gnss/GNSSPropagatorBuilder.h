@@ -5,20 +5,20 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frames;
-      class Frame;
-    }
     namespace propagation {
       namespace analytical {
         namespace gnss {
-          class GNSSPropagator;
           class GNSSPropagatorBuilder;
           namespace data {
             class GNSSOrbitalElements;
           }
+          class GNSSPropagator;
         }
       }
+    }
+    namespace frames {
+      class Frame;
+      class Frames;
     }
     namespace attitudes {
       class AttitudeProvider;
@@ -41,13 +41,13 @@ namespace org {
           class GNSSPropagatorBuilder : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_fc1b969978b6e6ec,
-              mid_init$_c7786e7433bcd943,
-              mid_attitudeProvider_dc98c08fd74760c1,
-              mid_build_9bde3ac5a964eae4,
-              mid_ecef_05e6acb69712cca5,
-              mid_eci_05e6acb69712cca5,
-              mid_mass_a9c822d0d5a394d3,
+              mid_init$_95c068f7789f9f41,
+              mid_init$_37da3277b080f0fa,
+              mid_attitudeProvider_6eb1a8219a109e62,
+              mid_build_6d7baa04e9d5997e,
+              mid_ecef_ed557929d63f77b1,
+              mid_eci_ed557929d63f77b1,
+              mid_mass_6ac915d03a72089c,
               max_mid
             };
 

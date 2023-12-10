@@ -7,13 +7,13 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace definitions {
-          class TimeConverter;
-        }
         namespace ndm {
           namespace odm {
             class OdmCommonMetadata;
           }
+        }
+        namespace definitions {
+          class TimeConverter;
         }
       }
     }
@@ -36,8 +36,8 @@ namespace org {
             class CommonMetadataWriter : public ::org::orekit::files::ccsds::section::AbstractWriter {
              public:
               enum {
-                mid_init$_4fae69f3aa5b4208,
-                mid_writeContent_fb36c2e4ae059ab9,
+                mid_init$_7aefdb802b7d7e19,
+                mid_writeContent_6d745cf7b26e9f5d,
                 max_mid
               };
 

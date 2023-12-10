@@ -20,18 +20,18 @@ namespace java {
     class FieldPosition : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_fc614ca28d5c4727,
-        mid_init$_0a2a1ac2721c0336,
-        mid_init$_1fb84685894eb9b6,
-        mid_equals_229c87223f486349,
-        mid_getBeginIndex_f2f64475e4580546,
-        mid_getEndIndex_f2f64475e4580546,
-        mid_getField_f2f64475e4580546,
-        mid_getFieldAttribute_79c8167006688aa7,
-        mid_hashCode_f2f64475e4580546,
-        mid_setBeginIndex_0a2a1ac2721c0336,
-        mid_setEndIndex_0a2a1ac2721c0336,
-        mid_toString_0090f7797e403f43,
+        mid_init$_4dcd4db55447f521,
+        mid_init$_99803b0791f320ff,
+        mid_init$_0e5e8e3c6fdb72c5,
+        mid_equals_65c7d273e80d497a,
+        mid_getBeginIndex_570ce0828f81a2c1,
+        mid_getEndIndex_570ce0828f81a2c1,
+        mid_getField_570ce0828f81a2c1,
+        mid_getFieldAttribute_ed7f324d12ac0e45,
+        mid_hashCode_570ce0828f81a2c1,
+        mid_setBeginIndex_99803b0791f320ff,
+        mid_setEndIndex_99803b0791f320ff,
+        mid_toString_11b109bd155ca898,
         max_mid
       };
 

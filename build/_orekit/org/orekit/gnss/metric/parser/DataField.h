@@ -31,10 +31,10 @@ namespace org {
           class DataField : public ::java::lang::Object {
            public:
             enum {
-              mid_booleanValue_5de456094fe2b4d8,
-              mid_doubleValue_f141c67192392788,
-              mid_intValue_7153406e72d9cdb3,
-              mid_stringValue_c4460699103faaeb,
+              mid_booleanValue_d49bc9d47765325e,
+              mid_doubleValue_da56bd267e07cff8,
+              mid_intValue_4c406d8a749d0c0c,
+              mid_stringValue_b40431a8be22e156,
               max_mid
             };
 

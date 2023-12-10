@@ -33,8 +33,8 @@ namespace org {
           class SingleFrequencyHatchFilter : public ::org::orekit::estimation::measurements::filtering::HatchFilter {
            public:
             enum {
-              mid_init$_e71f6ca0953b0461,
-              mid_filterData_0381c088adee2e17,
+              mid_init$_d015ddafa5420cad,
+              mid_filterData_274c8bdbc6f49717,
               max_mid
             };
 

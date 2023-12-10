@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace bodies {
-      class CelestialBodyLoader;
       class LazyLoadedCelestialBodies;
+      class CelestialBodyLoader;
       class CelestialBody;
     }
   }
@@ -27,28 +27,28 @@ namespace org {
       class CelestialBodyFactory : public ::java::lang::Object {
        public:
         enum {
-          mid_addCelestialBodyLoader_6d7aad336ec9f802,
-          mid_addDefaultCelestialBodyLoader_e939c6558ae8d313,
-          mid_addDefaultCelestialBodyLoader_96073c87872b7a97,
-          mid_clearCelestialBodyCache_7ae3461a92a43152,
-          mid_clearCelestialBodyCache_e939c6558ae8d313,
-          mid_clearCelestialBodyLoaders_7ae3461a92a43152,
-          mid_clearCelestialBodyLoaders_e939c6558ae8d313,
-          mid_getBody_29f199e59c05cc68,
-          mid_getCelestialBodies_f685d2a163f9f12b,
-          mid_getEarth_798caa59db6076aa,
-          mid_getEarthMoonBarycenter_798caa59db6076aa,
-          mid_getJupiter_798caa59db6076aa,
-          mid_getMars_798caa59db6076aa,
-          mid_getMercury_798caa59db6076aa,
-          mid_getMoon_798caa59db6076aa,
-          mid_getNeptune_798caa59db6076aa,
-          mid_getPluto_798caa59db6076aa,
-          mid_getSaturn_798caa59db6076aa,
-          mid_getSolarSystemBarycenter_798caa59db6076aa,
-          mid_getSun_798caa59db6076aa,
-          mid_getUranus_798caa59db6076aa,
-          mid_getVenus_798caa59db6076aa,
+          mid_addCelestialBodyLoader_eeafd0d01c10e9d5,
+          mid_addDefaultCelestialBodyLoader_d0bc48d5b00dc40c,
+          mid_addDefaultCelestialBodyLoader_6a2001eff0605f71,
+          mid_clearCelestialBodyCache_0fa09c18fee449d5,
+          mid_clearCelestialBodyCache_d0bc48d5b00dc40c,
+          mid_clearCelestialBodyLoaders_0fa09c18fee449d5,
+          mid_clearCelestialBodyLoaders_d0bc48d5b00dc40c,
+          mid_getBody_68e48076ef831536,
+          mid_getCelestialBodies_fc81056d907ed286,
+          mid_getEarth_624686a38a6b107c,
+          mid_getEarthMoonBarycenter_624686a38a6b107c,
+          mid_getJupiter_624686a38a6b107c,
+          mid_getMars_624686a38a6b107c,
+          mid_getMercury_624686a38a6b107c,
+          mid_getMoon_624686a38a6b107c,
+          mid_getNeptune_624686a38a6b107c,
+          mid_getPluto_624686a38a6b107c,
+          mid_getSaturn_624686a38a6b107c,
+          mid_getSolarSystemBarycenter_624686a38a6b107c,
+          mid_getSun_624686a38a6b107c,
+          mid_getUranus_624686a38a6b107c,
+          mid_getVenus_624686a38a6b107c,
           max_mid
         };
 

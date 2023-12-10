@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class PVCoordinates;
-    }
     namespace propagation {
       class SpacecraftState;
+    }
+    namespace utils {
+      class PVCoordinates;
     }
   }
 }
@@ -27,11 +27,11 @@ namespace org {
       class LibrationOrbit : public ::java::lang::Object {
        public:
         enum {
-          mid_applyDifferentialCorrection_7ae3461a92a43152,
-          mid_getInitialPV_6761e3f334368d44,
-          mid_getManifolds_37bb16b2b1d99da6,
-          mid_getOrbitalPeriod_456d9a2f64d6b28d,
-          mid_applyCorrectionOnPV_b7336fc2717b0a2c,
+          mid_applyDifferentialCorrection_0fa09c18fee449d5,
+          mid_getInitialPV_9b7c658c14883c84,
+          mid_getManifolds_9136566038bfc19a,
+          mid_getOrbitalPeriod_dff5885c2c873297,
+          mid_applyCorrectionOnPV_e2324264d8e2d238,
           max_mid
         };
 

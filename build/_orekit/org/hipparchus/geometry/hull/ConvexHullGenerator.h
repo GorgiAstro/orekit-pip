@@ -3,24 +3,24 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace hull {
-        class ConvexHull;
-      }
-    }
-    namespace exception {
-      class MathIllegalStateException;
-    }
-  }
-}
 namespace java {
   namespace util {
     class Collection;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class MathIllegalStateException;
+    }
+    namespace geometry {
+      namespace hull {
+        class ConvexHull;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -33,7 +33,7 @@ namespace org {
         class ConvexHullGenerator : public ::java::lang::Object {
          public:
           enum {
-            mid_generate_74156a60b00a4a08,
+            mid_generate_260317b8afde2c5b,
             max_mid
           };
 

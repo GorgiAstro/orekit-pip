@@ -3,19 +3,15 @@
 
 #include "org/orekit/estimation/measurements/gnss/AbstractCycleSlipDetector.h"
 
-namespace java {
-  namespace util {
-    class Map;
-    class List;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        namespace gnss {
+          class CycleSlipDetectorResults;
+        }
+      }
+    }
     namespace gnss {
       class SatelliteSystem;
       class Frequency;
@@ -27,16 +23,20 @@ namespace org {
         }
       }
     }
-    namespace estimation {
-      namespace measurements {
-        namespace gnss {
-          class CycleSlipDetectorResults;
-        }
-      }
-    }
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class Map;
+    class List;
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -50,16 +50,16 @@ namespace org {
           class PythonAbstractCycleSlipDetector : public ::org::orekit::estimation::measurements::gnss::AbstractCycleSlipDetector {
            public:
             enum {
-              mid_cycleSlipDataSet_caa451652427585a,
-              mid_finalize_7ae3461a92a43152,
-              mid_getMaxTimeBeetween2Measurement_456d9a2f64d6b28d,
-              mid_getMinMeasurementNumber_f2f64475e4580546,
-              mid_getResults_a6156df500549a58,
-              mid_manageData_a74883e6a7063961,
-              mid_pythonDecRef_7ae3461a92a43152,
-              mid_pythonExtension_a27fc9afd27e559d,
-              mid_pythonExtension_fefb08975c10f0a1,
-              mid_setName_7d9ccf00009ef79e,
+              mid_cycleSlipDataSet_37ef30963779752d,
+              mid_finalize_0fa09c18fee449d5,
+              mid_getMaxTimeBeetween2Measurement_dff5885c2c873297,
+              mid_getMinMeasurementNumber_570ce0828f81a2c1,
+              mid_getResults_2afa36052df4765d,
+              mid_manageData_5e249044f63168db,
+              mid_pythonDecRef_0fa09c18fee449d5,
+              mid_pythonExtension_492808a339bfa35f,
+              mid_pythonExtension_3a8e7649f31fdb20,
+              mid_setName_571eb7cd9a331044,
               max_mid
             };
 

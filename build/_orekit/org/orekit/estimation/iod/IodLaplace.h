@@ -4,6 +4,26 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class AngularAzEl;
+        class AngularRaDec;
+      }
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace orbits {
+      class Orbit;
+    }
+    namespace utils {
+      class PVCoordinates;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -11,26 +31,6 @@ namespace org {
           class Vector3D;
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace frames {
-      class Frame;
-    }
-    namespace utils {
-      class PVCoordinates;
-    }
-    namespace orbits {
-      class Orbit;
-    }
-    namespace estimation {
-      namespace measurements {
-        class AngularRaDec;
-        class AngularAzEl;
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -49,10 +49,10 @@ namespace org {
         class IodLaplace : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_77e0f9a1f260e2e5,
-            mid_estimate_a883c21ba904ff29,
-            mid_estimate_304f33cbf7512082,
-            mid_estimate_a3bf1578f9a86bfd,
+            mid_init$_17db3a65980d3441,
+            mid_estimate_12719eba39e9d7d3,
+            mid_estimate_e5fb064d6de252af,
+            mid_estimate_24be0461599c9b60,
             max_mid
           };
 

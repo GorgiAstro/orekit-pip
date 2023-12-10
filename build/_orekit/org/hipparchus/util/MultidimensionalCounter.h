@@ -13,11 +13,11 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace util {
-      class MultidimensionalCounter$Iterator;
-    }
     namespace exception {
       class MathIllegalArgumentException;
+    }
+    namespace util {
+      class MultidimensionalCounter$Iterator;
     }
   }
 }
@@ -30,14 +30,14 @@ namespace org {
       class MultidimensionalCounter : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_3b603738d1eb3233,
-          mid_getCount_5c5c9df37b0af581,
-          mid_getCounts_d7f52bcc4a12ae58,
-          mid_getDimension_f2f64475e4580546,
-          mid_getSize_f2f64475e4580546,
-          mid_getSizes_d8ead0d90ce828b0,
-          mid_iterator_2fe36aa334da25e7,
-          mid_toString_0090f7797e403f43,
+          mid_init$_d147d7ce001e2d45,
+          mid_getCount_5741cb0fe93805c9,
+          mid_getCounts_10b428b076a044c1,
+          mid_getDimension_570ce0828f81a2c1,
+          mid_getSize_570ce0828f81a2c1,
+          mid_getSizes_d0635cea09dc178c,
+          mid_iterator_4e94d3b41fa0685f,
+          mid_toString_11b109bd155ca898,
           max_mid
         };
 

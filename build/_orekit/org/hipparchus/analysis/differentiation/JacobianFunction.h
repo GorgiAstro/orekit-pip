@@ -6,10 +6,10 @@
 namespace org {
   namespace hipparchus {
     namespace analysis {
-      class MultivariateMatrixFunction;
       namespace differentiation {
         class MultivariateDifferentiableVectorFunction;
       }
+      class MultivariateMatrixFunction;
     }
   }
 }
@@ -28,8 +28,8 @@ namespace org {
         class JacobianFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_3b8a45b2303a80ba,
-            mid_value_ac05399a8b81d1af,
+            mid_init$_d80e9781b70fee9a,
+            mid_value_49e7a3c5d62c95c4,
             max_mid
           };
 

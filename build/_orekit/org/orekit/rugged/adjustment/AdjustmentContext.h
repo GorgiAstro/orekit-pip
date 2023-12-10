@@ -3,26 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class Collection;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace rugged {
-      namespace api {
-        class Rugged;
-      }
       namespace adjustment {
-        class OptimizerId;
         namespace measurements {
           class Observables;
         }
+        class OptimizerId;
+      }
+      namespace api {
+        class Rugged;
       }
     }
   }
@@ -38,6 +29,15 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class Collection;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -48,9 +48,9 @@ namespace org {
         class AdjustmentContext : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_fc035e109332928e,
-            mid_estimateFreeParameters_052b675d648919f4,
-            mid_setOptimizer_a666ad31260df77e,
+            mid_init$_53a0040bd172c677,
+            mid_estimateFreeParameters_f579bcabd6fa2037,
+            mid_setOptimizer_63f13867ea40ee93,
             max_mid
           };
 

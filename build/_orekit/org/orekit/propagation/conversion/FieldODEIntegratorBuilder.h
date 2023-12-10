@@ -5,10 +5,10 @@
 
 namespace org {
   namespace hipparchus {
-    class Field;
     namespace ode {
       class AbstractFieldIntegrator;
     }
+    class Field;
   }
   namespace orekit {
     namespace orbits {
@@ -33,8 +33,8 @@ namespace org {
         class FieldODEIntegratorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_buildIntegrator_071d3edeab1fa823,
-            mid_buildIntegrator_79616f78bb6df44f,
+            mid_buildIntegrator_c6b1aa22e8585e91,
+            mid_buildIntegrator_048f7039a7622a2b,
             max_mid
           };
 

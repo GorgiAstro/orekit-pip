@@ -34,8 +34,8 @@ namespace org {
             class TrackingMode : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_8eec83b82f67b6c5,
-                mid_values_d89b79b666f64522,
+                mid_valueOf_a92e85cc7e37f990,
+                mid_values_13759770a5cdb28d,
                 max_mid
               };
 

@@ -3,16 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace lang {
-    class Appendable;
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -37,6 +27,16 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace io {
+    class IOException;
+  }
+  namespace lang {
+    class Appendable;
+    class Class;
+    class String;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -50,8 +50,8 @@ namespace org {
               class AttitudeWriter : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_017ab6921b418bb6,
-                  mid_write_3e82c67d69401a38,
+                  mid_init$_7ab38667c66f9189,
+                  mid_write_9b09ecef0da8f461,
                   max_mid
                 };
 

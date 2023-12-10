@@ -9,15 +9,15 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace cdm {
-            class AdditionalParametersKey;
             class AdditionalParameters;
+            class AdditionalParametersKey;
           }
         }
         namespace utils {
-          class ContextBinding;
           namespace lexical {
             class ParseToken;
           }
+          class ContextBinding;
         }
       }
     }
@@ -41,9 +41,9 @@ namespace org {
             class AdditionalParametersKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_6bfa854779e03a3e,
-                mid_valueOf_e49ad1dccc98520f,
-                mid_values_572dcfc1ed283fa7,
+                mid_process_09b7f0115d6b12b9,
+                mid_valueOf_f32bcbc2d591ad53,
+                mid_values_a6324c8893c479eb,
                 max_mid
               };
 

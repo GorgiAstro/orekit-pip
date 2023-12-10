@@ -28,10 +28,10 @@ namespace org {
         class SubHyperplane$SplitSubHyperplane : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_2399a333b492915e,
-            mid_getMinus_a66e04f05d5608cc,
-            mid_getPlus_a66e04f05d5608cc,
-            mid_getSide_930ceaef64a5a9be,
+            mid_init$_f72ac8c2b00fe7cd,
+            mid_getMinus_6e34449919366687,
+            mid_getPlus_6e34449919366687,
+            mid_getSide_f8858a4ff9f9675f,
             max_mid
           };
 

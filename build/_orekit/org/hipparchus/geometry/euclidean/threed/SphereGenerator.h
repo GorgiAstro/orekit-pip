@@ -3,28 +3,28 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Euclidean3D;
-          class Vector3D;
-        }
-      }
-      namespace enclosing {
-        class EnclosingBall;
-        class SupportBallGenerator;
-      }
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace enclosing {
+        class EnclosingBall;
+        class SupportBallGenerator;
+      }
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+          class Euclidean3D;
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -38,8 +38,8 @@ namespace org {
           class SphereGenerator : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_ballOnSupport_5189031e8a0790ca,
+              mid_init$_0fa09c18fee449d5,
+              mid_ballOnSupport_8eaea97b2dcfeb64,
               max_mid
             };
 

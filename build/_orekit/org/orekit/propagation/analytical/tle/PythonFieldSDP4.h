@@ -4,7 +4,16 @@
 #include "org/orekit/propagation/analytical/tle/FieldSDP4.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
+    namespace frames {
+      class Frame;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
+    }
     namespace propagation {
       namespace analytical {
         namespace tle {
@@ -12,15 +21,6 @@ namespace org {
         }
       }
     }
-    namespace frames {
-      class Frame;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -40,14 +40,14 @@ namespace org {
           class PythonFieldSDP4 : public ::org::orekit::propagation::analytical::tle::FieldSDP4 {
            public:
             enum {
-              mid_init$_8f2042251d084a47,
-              mid_deepPeriodicEffects_03a16642f77779e7,
-              mid_deepSecularEffects_03a16642f77779e7,
-              mid_finalize_7ae3461a92a43152,
-              mid_luniSolarTermsComputation_7ae3461a92a43152,
-              mid_pythonDecRef_7ae3461a92a43152,
-              mid_pythonExtension_a27fc9afd27e559d,
-              mid_pythonExtension_fefb08975c10f0a1,
+              mid_init$_5151ab0d47c2b93c,
+              mid_deepPeriodicEffects_072c8635f2164db9,
+              mid_deepSecularEffects_072c8635f2164db9,
+              mid_finalize_0fa09c18fee449d5,
+              mid_luniSolarTermsComputation_0fa09c18fee449d5,
+              mid_pythonDecRef_0fa09c18fee449d5,
+              mid_pythonExtension_492808a339bfa35f,
+              mid_pythonExtension_3a8e7649f31fdb20,
               max_mid
             };
 

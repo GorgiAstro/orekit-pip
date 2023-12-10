@@ -1,58 +1,44 @@
 #include <jni.h>
 #include "JCCEnv.h"
-#include "org/hipparchus/random/RandomDataGenerator.h"
-#include "org/hipparchus/distribution/RealDistribution.h"
-#include "org/hipparchus/random/RandomDataGenerator.h"
-#include "org/hipparchus/random/RandomGenerator.h"
-#include "org/hipparchus/distribution/IntegerDistribution.h"
-#include "java/io/Serializable.h"
+#include "org/orekit/time/PythonFieldTimeInterpolator.h"
+#include "org/orekit/time/FieldTimeInterpolator.h"
+#include "org/hipparchus/CalculusFieldElement.h"
+#include "java/util/stream/Stream.h"
+#include "java/util/List.h"
+#include "java/lang/Throwable.h"
 #include "java/util/Collection.h"
-#include "org/hipparchus/exception/MathIllegalArgumentException.h"
+#include "org/orekit/time/FieldTimeStamped.h"
 #include "java/lang/Class.h"
-#include "java/lang/Object.h"
-#include "java/lang/String.h"
+#include "org/orekit/time/FieldAbsoluteDate.h"
 #include "JArray.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace random {
+  namespace orekit {
+    namespace time {
 
-      ::java::lang::Class *RandomDataGenerator::class$ = NULL;
-      jmethodID *RandomDataGenerator::mids$ = NULL;
-      bool RandomDataGenerator::live$ = false;
+      ::java::lang::Class *PythonFieldTimeInterpolator::class$ = NULL;
+      jmethodID *PythonFieldTimeInterpolator::mids$ = NULL;
+      bool PythonFieldTimeInterpolator::live$ = false;
 
-      jclass RandomDataGenerator::initializeClass(bool getOnly)
+      jclass PythonFieldTimeInterpolator::initializeClass(bool getOnly)
       {
         if (getOnly)
           return (jclass) (live$ ? class$->this$ : NULL);
         if (class$ == NULL)
         {
-          jclass cls = (jclass) env->findClass("org/hipparchus/random/RandomDataGenerator");
+          jclass cls = (jclass) env->findClass("org/orekit/time/PythonFieldTimeInterpolator");
 
           mids$ = new jmethodID[max_mid];
-          mids$[mid_init$_7ae3461a92a43152] = env->getMethodID(cls, "<init>", "()V");
-          mids$[mid_init$_fefb08975c10f0a1] = env->getMethodID(cls, "<init>", "(J)V");
-          mids$[mid_nextBeta_824133ce4aec3505] = env->getMethodID(cls, "nextBeta", "(DD)D");
-          mids$[mid_nextDeviate_afbd426079cae25d] = env->getMethodID(cls, "nextDeviate", "(Lorg/hipparchus/distribution/IntegerDistribution;)I");
-          mids$[mid_nextDeviate_3487d38469c40eef] = env->getMethodID(cls, "nextDeviate", "(Lorg/hipparchus/distribution/RealDistribution;)D");
-          mids$[mid_nextDeviates_d85d974124d06712] = env->getMethodID(cls, "nextDeviates", "(Lorg/hipparchus/distribution/IntegerDistribution;I)[I");
-          mids$[mid_nextDeviates_68de39df7386884d] = env->getMethodID(cls, "nextDeviates", "(Lorg/hipparchus/distribution/RealDistribution;I)[D");
-          mids$[mid_nextExponential_0ba5fed9597b693e] = env->getMethodID(cls, "nextExponential", "(D)D");
-          mids$[mid_nextGamma_824133ce4aec3505] = env->getMethodID(cls, "nextGamma", "(DD)D");
-          mids$[mid_nextHexString_90cbcc0b7a5ddae9] = env->getMethodID(cls, "nextHexString", "(I)Ljava/lang/String;");
-          mids$[mid_nextInt_d9790ac9eecfe931] = env->getMethodID(cls, "nextInt", "(II)I");
-          mids$[mid_nextLogNormal_824133ce4aec3505] = env->getMethodID(cls, "nextLogNormal", "(DD)D");
-          mids$[mid_nextLong_8f974216cbe53aea] = env->getMethodID(cls, "nextLong", "(JJ)J");
-          mids$[mid_nextNormal_824133ce4aec3505] = env->getMethodID(cls, "nextNormal", "(DD)D");
-          mids$[mid_nextPermutation_686233a2ff23e62d] = env->getMethodID(cls, "nextPermutation", "(II)[I");
-          mids$[mid_nextPoisson_12ebab281ee35c98] = env->getMethodID(cls, "nextPoisson", "(D)I");
-          mids$[mid_nextSample_fd1288d34222cfa8] = env->getMethodID(cls, "nextSample", "([DI)[D");
-          mids$[mid_nextSample_434ba4f195d5bc3c] = env->getMethodID(cls, "nextSample", "(Ljava/util/Collection;I)[Ljava/lang/Object;");
-          mids$[mid_nextSampleWithReplacement_d16d332e214cc670] = env->getMethodID(cls, "nextSampleWithReplacement", "(I[D)[I");
-          mids$[mid_nextUniform_824133ce4aec3505] = env->getMethodID(cls, "nextUniform", "(DD)D");
-          mids$[mid_nextZipf_5051ffc90ba47361] = env->getMethodID(cls, "nextZipf", "(ID)I");
-          mids$[mid_of_ad4c3467956fdea8] = env->getStaticMethodID(cls, "of", "(Lorg/hipparchus/random/RandomGenerator;)Lorg/hipparchus/random/RandomDataGenerator;");
-          mids$[mid_delegate_6c5b70fd21e949cf] = env->getMethodID(cls, "delegate", "()Lorg/hipparchus/random/RandomGenerator;");
+          mids$[mid_init$_0fa09c18fee449d5] = env->getMethodID(cls, "<init>", "()V");
+          mids$[mid_finalize_0fa09c18fee449d5] = env->getMethodID(cls, "finalize", "()V");
+          mids$[mid_getExtrapolationThreshold_dff5885c2c873297] = env->getMethodID(cls, "getExtrapolationThreshold", "()D");
+          mids$[mid_getNbInterpolationPoints_570ce0828f81a2c1] = env->getMethodID(cls, "getNbInterpolationPoints", "()I");
+          mids$[mid_getSubInterpolators_2afa36052df4765d] = env->getMethodID(cls, "getSubInterpolators", "()Ljava/util/List;");
+          mids$[mid_interpolate_66eecc2273162e9b] = env->getMethodID(cls, "interpolate", "(Lorg/orekit/time/FieldAbsoluteDate;Ljava/util/Collection;)Lorg/orekit/time/FieldTimeInterpolator;");
+          mids$[mid_interpolate_ba43d53651adbb8f] = env->getMethodID(cls, "interpolate", "(Lorg/orekit/time/FieldAbsoluteDate;Ljava/util/stream/Stream;)Lorg/orekit/time/FieldTimeInterpolator;");
+          mids$[mid_pythonDecRef_0fa09c18fee449d5] = env->getMethodID(cls, "pythonDecRef", "()V");
+          mids$[mid_pythonExtension_492808a339bfa35f] = env->getMethodID(cls, "pythonExtension", "()J");
+          mids$[mid_pythonExtension_3a8e7649f31fdb20] = env->getMethodID(cls, "pythonExtension", "(J)V");
 
           class$ = new ::java::lang::Class(cls);
           live$ = true;
@@ -60,757 +46,21 @@ namespace org {
         return (jclass) class$->this$;
       }
 
-      RandomDataGenerator::RandomDataGenerator() : ::org::hipparchus::random::ForwardingRandomGenerator(env->newObject(initializeClass, &mids$, mid_init$_7ae3461a92a43152)) {}
+      PythonFieldTimeInterpolator::PythonFieldTimeInterpolator() : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_0fa09c18fee449d5)) {}
 
-      RandomDataGenerator::RandomDataGenerator(jlong a0) : ::org::hipparchus::random::ForwardingRandomGenerator(env->newObject(initializeClass, &mids$, mid_init$_fefb08975c10f0a1, a0)) {}
-
-      jdouble RandomDataGenerator::nextBeta(jdouble a0, jdouble a1) const
+      void PythonFieldTimeInterpolator::finalize() const
       {
-        return env->callDoubleMethod(this$, mids$[mid_nextBeta_824133ce4aec3505], a0, a1);
+        env->callVoidMethod(this$, mids$[mid_finalize_0fa09c18fee449d5]);
       }
 
-      jint RandomDataGenerator::nextDeviate(const ::org::hipparchus::distribution::IntegerDistribution & a0) const
+      jlong PythonFieldTimeInterpolator::pythonExtension() const
       {
-        return env->callIntMethod(this$, mids$[mid_nextDeviate_afbd426079cae25d], a0.this$);
+        return env->callLongMethod(this$, mids$[mid_pythonExtension_492808a339bfa35f]);
       }
 
-      jdouble RandomDataGenerator::nextDeviate(const ::org::hipparchus::distribution::RealDistribution & a0) const
+      void PythonFieldTimeInterpolator::pythonExtension(jlong a0) const
       {
-        return env->callDoubleMethod(this$, mids$[mid_nextDeviate_3487d38469c40eef], a0.this$);
-      }
-
-      JArray< jint > RandomDataGenerator::nextDeviates(const ::org::hipparchus::distribution::IntegerDistribution & a0, jint a1) const
-      {
-        return JArray< jint >(env->callObjectMethod(this$, mids$[mid_nextDeviates_d85d974124d06712], a0.this$, a1));
-      }
-
-      JArray< jdouble > RandomDataGenerator::nextDeviates(const ::org::hipparchus::distribution::RealDistribution & a0, jint a1) const
-      {
-        return JArray< jdouble >(env->callObjectMethod(this$, mids$[mid_nextDeviates_68de39df7386884d], a0.this$, a1));
-      }
-
-      jdouble RandomDataGenerator::nextExponential(jdouble a0) const
-      {
-        return env->callDoubleMethod(this$, mids$[mid_nextExponential_0ba5fed9597b693e], a0);
-      }
-
-      jdouble RandomDataGenerator::nextGamma(jdouble a0, jdouble a1) const
-      {
-        return env->callDoubleMethod(this$, mids$[mid_nextGamma_824133ce4aec3505], a0, a1);
-      }
-
-      ::java::lang::String RandomDataGenerator::nextHexString(jint a0) const
-      {
-        return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_nextHexString_90cbcc0b7a5ddae9], a0));
-      }
-
-      jint RandomDataGenerator::nextInt(jint a0, jint a1) const
-      {
-        return env->callIntMethod(this$, mids$[mid_nextInt_d9790ac9eecfe931], a0, a1);
-      }
-
-      jdouble RandomDataGenerator::nextLogNormal(jdouble a0, jdouble a1) const
-      {
-        return env->callDoubleMethod(this$, mids$[mid_nextLogNormal_824133ce4aec3505], a0, a1);
-      }
-
-      jlong RandomDataGenerator::nextLong(jlong a0, jlong a1) const
-      {
-        return env->callLongMethod(this$, mids$[mid_nextLong_8f974216cbe53aea], a0, a1);
-      }
-
-      jdouble RandomDataGenerator::nextNormal(jdouble a0, jdouble a1) const
-      {
-        return env->callDoubleMethod(this$, mids$[mid_nextNormal_824133ce4aec3505], a0, a1);
-      }
-
-      JArray< jint > RandomDataGenerator::nextPermutation(jint a0, jint a1) const
-      {
-        return JArray< jint >(env->callObjectMethod(this$, mids$[mid_nextPermutation_686233a2ff23e62d], a0, a1));
-      }
-
-      jint RandomDataGenerator::nextPoisson(jdouble a0) const
-      {
-        return env->callIntMethod(this$, mids$[mid_nextPoisson_12ebab281ee35c98], a0);
-      }
-
-      JArray< jdouble > RandomDataGenerator::nextSample(const JArray< jdouble > & a0, jint a1) const
-      {
-        return JArray< jdouble >(env->callObjectMethod(this$, mids$[mid_nextSample_fd1288d34222cfa8], a0.this$, a1));
-      }
-
-      JArray< ::java::lang::Object > RandomDataGenerator::nextSample(const ::java::util::Collection & a0, jint a1) const
-      {
-        return JArray< ::java::lang::Object >(env->callObjectMethod(this$, mids$[mid_nextSample_434ba4f195d5bc3c], a0.this$, a1));
-      }
-
-      JArray< jint > RandomDataGenerator::nextSampleWithReplacement(jint a0, const JArray< jdouble > & a1) const
-      {
-        return JArray< jint >(env->callObjectMethod(this$, mids$[mid_nextSampleWithReplacement_d16d332e214cc670], a0, a1.this$));
-      }
-
-      jdouble RandomDataGenerator::nextUniform(jdouble a0, jdouble a1) const
-      {
-        return env->callDoubleMethod(this$, mids$[mid_nextUniform_824133ce4aec3505], a0, a1);
-      }
-
-      jint RandomDataGenerator::nextZipf(jint a0, jdouble a1) const
-      {
-        return env->callIntMethod(this$, mids$[mid_nextZipf_5051ffc90ba47361], a0, a1);
-      }
-
-      RandomDataGenerator RandomDataGenerator::of(const ::org::hipparchus::random::RandomGenerator & a0)
-      {
-        jclass cls = env->getClass(initializeClass);
-        return RandomDataGenerator(env->callStaticObjectMethod(cls, mids$[mid_of_ad4c3467956fdea8], a0.this$));
-      }
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace org {
-  namespace hipparchus {
-    namespace random {
-      static PyObject *t_RandomDataGenerator_cast_(PyTypeObject *type, PyObject *arg);
-      static PyObject *t_RandomDataGenerator_instance_(PyTypeObject *type, PyObject *arg);
-      static int t_RandomDataGenerator_init_(t_RandomDataGenerator *self, PyObject *args, PyObject *kwds);
-      static PyObject *t_RandomDataGenerator_nextBeta(t_RandomDataGenerator *self, PyObject *args);
-      static PyObject *t_RandomDataGenerator_nextDeviate(t_RandomDataGenerator *self, PyObject *args);
-      static PyObject *t_RandomDataGenerator_nextDeviates(t_RandomDataGenerator *self, PyObject *args);
-      static PyObject *t_RandomDataGenerator_nextExponential(t_RandomDataGenerator *self, PyObject *arg);
-      static PyObject *t_RandomDataGenerator_nextGamma(t_RandomDataGenerator *self, PyObject *args);
-      static PyObject *t_RandomDataGenerator_nextHexString(t_RandomDataGenerator *self, PyObject *arg);
-      static PyObject *t_RandomDataGenerator_nextInt(t_RandomDataGenerator *self, PyObject *args);
-      static PyObject *t_RandomDataGenerator_nextLogNormal(t_RandomDataGenerator *self, PyObject *args);
-      static PyObject *t_RandomDataGenerator_nextLong(t_RandomDataGenerator *self, PyObject *args);
-      static PyObject *t_RandomDataGenerator_nextNormal(t_RandomDataGenerator *self, PyObject *args);
-      static PyObject *t_RandomDataGenerator_nextPermutation(t_RandomDataGenerator *self, PyObject *args);
-      static PyObject *t_RandomDataGenerator_nextPoisson(t_RandomDataGenerator *self, PyObject *arg);
-      static PyObject *t_RandomDataGenerator_nextSample(t_RandomDataGenerator *self, PyObject *args);
-      static PyObject *t_RandomDataGenerator_nextSampleWithReplacement(t_RandomDataGenerator *self, PyObject *args);
-      static PyObject *t_RandomDataGenerator_nextUniform(t_RandomDataGenerator *self, PyObject *args);
-      static PyObject *t_RandomDataGenerator_nextZipf(t_RandomDataGenerator *self, PyObject *args);
-      static PyObject *t_RandomDataGenerator_of(PyTypeObject *type, PyObject *arg);
-
-      static PyMethodDef t_RandomDataGenerator__methods_[] = {
-        DECLARE_METHOD(t_RandomDataGenerator, cast_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_RandomDataGenerator, instance_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_RandomDataGenerator, nextBeta, METH_VARARGS),
-        DECLARE_METHOD(t_RandomDataGenerator, nextDeviate, METH_VARARGS),
-        DECLARE_METHOD(t_RandomDataGenerator, nextDeviates, METH_VARARGS),
-        DECLARE_METHOD(t_RandomDataGenerator, nextExponential, METH_O),
-        DECLARE_METHOD(t_RandomDataGenerator, nextGamma, METH_VARARGS),
-        DECLARE_METHOD(t_RandomDataGenerator, nextHexString, METH_O),
-        DECLARE_METHOD(t_RandomDataGenerator, nextInt, METH_VARARGS),
-        DECLARE_METHOD(t_RandomDataGenerator, nextLogNormal, METH_VARARGS),
-        DECLARE_METHOD(t_RandomDataGenerator, nextLong, METH_VARARGS),
-        DECLARE_METHOD(t_RandomDataGenerator, nextNormal, METH_VARARGS),
-        DECLARE_METHOD(t_RandomDataGenerator, nextPermutation, METH_VARARGS),
-        DECLARE_METHOD(t_RandomDataGenerator, nextPoisson, METH_O),
-        DECLARE_METHOD(t_RandomDataGenerator, nextSample, METH_VARARGS),
-        DECLARE_METHOD(t_RandomDataGenerator, nextSampleWithReplacement, METH_VARARGS),
-        DECLARE_METHOD(t_RandomDataGenerator, nextUniform, METH_VARARGS),
-        DECLARE_METHOD(t_RandomDataGenerator, nextZipf, METH_VARARGS),
-        DECLARE_METHOD(t_RandomDataGenerator, of, METH_O | METH_CLASS),
-        { NULL, NULL, 0, NULL }
-      };
-
-      static PyType_Slot PY_TYPE_SLOTS(RandomDataGenerator)[] = {
-        { Py_tp_methods, t_RandomDataGenerator__methods_ },
-        { Py_tp_init, (void *) t_RandomDataGenerator_init_ },
-        { 0, NULL }
-      };
-
-      static PyType_Def *PY_TYPE_BASES(RandomDataGenerator)[] = {
-        &PY_TYPE_DEF(::org::hipparchus::random::ForwardingRandomGenerator),
-        NULL
-      };
-
-      DEFINE_TYPE(RandomDataGenerator, t_RandomDataGenerator, RandomDataGenerator);
-
-      void t_RandomDataGenerator::install(PyObject *module)
-      {
-        installType(&PY_TYPE(RandomDataGenerator), &PY_TYPE_DEF(RandomDataGenerator), module, "RandomDataGenerator", 0);
-      }
-
-      void t_RandomDataGenerator::initialize(PyObject *module)
-      {
-        PyObject_SetAttrString((PyObject *) PY_TYPE(RandomDataGenerator), "class_", make_descriptor(RandomDataGenerator::initializeClass, 1));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(RandomDataGenerator), "wrapfn_", make_descriptor(t_RandomDataGenerator::wrap_jobject));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(RandomDataGenerator), "boxfn_", make_descriptor(boxObject));
-      }
-
-      static PyObject *t_RandomDataGenerator_cast_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!(arg = castCheck(arg, RandomDataGenerator::initializeClass, 1)))
-          return NULL;
-        return t_RandomDataGenerator::wrap_Object(RandomDataGenerator(((t_RandomDataGenerator *) arg)->object.this$));
-      }
-      static PyObject *t_RandomDataGenerator_instance_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!castCheck(arg, RandomDataGenerator::initializeClass, 0))
-          Py_RETURN_FALSE;
-        Py_RETURN_TRUE;
-      }
-
-      static int t_RandomDataGenerator_init_(t_RandomDataGenerator *self, PyObject *args, PyObject *kwds)
-      {
-        switch (PyTuple_GET_SIZE(args)) {
-         case 0:
-          {
-            RandomDataGenerator object((jobject) NULL);
-
-            INT_CALL(object = RandomDataGenerator());
-            self->object = object;
-            break;
-          }
-         case 1:
-          {
-            jlong a0;
-            RandomDataGenerator object((jobject) NULL);
-
-            if (!parseArgs(args, "J", &a0))
-            {
-              INT_CALL(object = RandomDataGenerator(a0));
-              self->object = object;
-              break;
-            }
-          }
-         default:
-          PyErr_SetArgsError((PyObject *) self, "__init__", args);
-          return -1;
-        }
-
-        return 0;
-      }
-
-      static PyObject *t_RandomDataGenerator_nextBeta(t_RandomDataGenerator *self, PyObject *args)
-      {
-        jdouble a0;
-        jdouble a1;
-        jdouble result;
-
-        if (!parseArgs(args, "DD", &a0, &a1))
-        {
-          OBJ_CALL(result = self->object.nextBeta(a0, a1));
-          return PyFloat_FromDouble((double) result);
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "nextBeta", args);
-        return NULL;
-      }
-
-      static PyObject *t_RandomDataGenerator_nextDeviate(t_RandomDataGenerator *self, PyObject *args)
-      {
-        switch (PyTuple_GET_SIZE(args)) {
-         case 1:
-          {
-            ::org::hipparchus::distribution::IntegerDistribution a0((jobject) NULL);
-            jint result;
-
-            if (!parseArgs(args, "k", ::org::hipparchus::distribution::IntegerDistribution::initializeClass, &a0))
-            {
-              OBJ_CALL(result = self->object.nextDeviate(a0));
-              return PyLong_FromLong((long) result);
-            }
-          }
-          {
-            ::org::hipparchus::distribution::RealDistribution a0((jobject) NULL);
-            jdouble result;
-
-            if (!parseArgs(args, "k", ::org::hipparchus::distribution::RealDistribution::initializeClass, &a0))
-            {
-              OBJ_CALL(result = self->object.nextDeviate(a0));
-              return PyFloat_FromDouble((double) result);
-            }
-          }
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "nextDeviate", args);
-        return NULL;
-      }
-
-      static PyObject *t_RandomDataGenerator_nextDeviates(t_RandomDataGenerator *self, PyObject *args)
-      {
-        switch (PyTuple_GET_SIZE(args)) {
-         case 2:
-          {
-            ::org::hipparchus::distribution::IntegerDistribution a0((jobject) NULL);
-            jint a1;
-            JArray< jint > result((jobject) NULL);
-
-            if (!parseArgs(args, "kI", ::org::hipparchus::distribution::IntegerDistribution::initializeClass, &a0, &a1))
-            {
-              OBJ_CALL(result = self->object.nextDeviates(a0, a1));
-              return result.wrap();
-            }
-          }
-          {
-            ::org::hipparchus::distribution::RealDistribution a0((jobject) NULL);
-            jint a1;
-            JArray< jdouble > result((jobject) NULL);
-
-            if (!parseArgs(args, "kI", ::org::hipparchus::distribution::RealDistribution::initializeClass, &a0, &a1))
-            {
-              OBJ_CALL(result = self->object.nextDeviates(a0, a1));
-              return result.wrap();
-            }
-          }
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "nextDeviates", args);
-        return NULL;
-      }
-
-      static PyObject *t_RandomDataGenerator_nextExponential(t_RandomDataGenerator *self, PyObject *arg)
-      {
-        jdouble a0;
-        jdouble result;
-
-        if (!parseArg(arg, "D", &a0))
-        {
-          OBJ_CALL(result = self->object.nextExponential(a0));
-          return PyFloat_FromDouble((double) result);
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "nextExponential", arg);
-        return NULL;
-      }
-
-      static PyObject *t_RandomDataGenerator_nextGamma(t_RandomDataGenerator *self, PyObject *args)
-      {
-        jdouble a0;
-        jdouble a1;
-        jdouble result;
-
-        if (!parseArgs(args, "DD", &a0, &a1))
-        {
-          OBJ_CALL(result = self->object.nextGamma(a0, a1));
-          return PyFloat_FromDouble((double) result);
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "nextGamma", args);
-        return NULL;
-      }
-
-      static PyObject *t_RandomDataGenerator_nextHexString(t_RandomDataGenerator *self, PyObject *arg)
-      {
-        jint a0;
-        ::java::lang::String result((jobject) NULL);
-
-        if (!parseArg(arg, "I", &a0))
-        {
-          OBJ_CALL(result = self->object.nextHexString(a0));
-          return j2p(result);
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "nextHexString", arg);
-        return NULL;
-      }
-
-      static PyObject *t_RandomDataGenerator_nextInt(t_RandomDataGenerator *self, PyObject *args)
-      {
-        jint a0;
-        jint a1;
-        jint result;
-
-        if (!parseArgs(args, "II", &a0, &a1))
-        {
-          OBJ_CALL(result = self->object.nextInt(a0, a1));
-          return PyLong_FromLong((long) result);
-        }
-
-        return callSuper(PY_TYPE(RandomDataGenerator), (PyObject *) self, "nextInt", args, 2);
-      }
-
-      static PyObject *t_RandomDataGenerator_nextLogNormal(t_RandomDataGenerator *self, PyObject *args)
-      {
-        jdouble a0;
-        jdouble a1;
-        jdouble result;
-
-        if (!parseArgs(args, "DD", &a0, &a1))
-        {
-          OBJ_CALL(result = self->object.nextLogNormal(a0, a1));
-          return PyFloat_FromDouble((double) result);
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "nextLogNormal", args);
-        return NULL;
-      }
-
-      static PyObject *t_RandomDataGenerator_nextLong(t_RandomDataGenerator *self, PyObject *args)
-      {
-        jlong a0;
-        jlong a1;
-        jlong result;
-
-        if (!parseArgs(args, "JJ", &a0, &a1))
-        {
-          OBJ_CALL(result = self->object.nextLong(a0, a1));
-          return PyLong_FromLongLong((PY_LONG_LONG) result);
-        }
-
-        return callSuper(PY_TYPE(RandomDataGenerator), (PyObject *) self, "nextLong", args, 2);
-      }
-
-      static PyObject *t_RandomDataGenerator_nextNormal(t_RandomDataGenerator *self, PyObject *args)
-      {
-        jdouble a0;
-        jdouble a1;
-        jdouble result;
-
-        if (!parseArgs(args, "DD", &a0, &a1))
-        {
-          OBJ_CALL(result = self->object.nextNormal(a0, a1));
-          return PyFloat_FromDouble((double) result);
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "nextNormal", args);
-        return NULL;
-      }
-
-      static PyObject *t_RandomDataGenerator_nextPermutation(t_RandomDataGenerator *self, PyObject *args)
-      {
-        jint a0;
-        jint a1;
-        JArray< jint > result((jobject) NULL);
-
-        if (!parseArgs(args, "II", &a0, &a1))
-        {
-          OBJ_CALL(result = self->object.nextPermutation(a0, a1));
-          return result.wrap();
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "nextPermutation", args);
-        return NULL;
-      }
-
-      static PyObject *t_RandomDataGenerator_nextPoisson(t_RandomDataGenerator *self, PyObject *arg)
-      {
-        jdouble a0;
-        jint result;
-
-        if (!parseArg(arg, "D", &a0))
-        {
-          OBJ_CALL(result = self->object.nextPoisson(a0));
-          return PyLong_FromLong((long) result);
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "nextPoisson", arg);
-        return NULL;
-      }
-
-      static PyObject *t_RandomDataGenerator_nextSample(t_RandomDataGenerator *self, PyObject *args)
-      {
-        switch (PyTuple_GET_SIZE(args)) {
-         case 2:
-          {
-            JArray< jdouble > a0((jobject) NULL);
-            jint a1;
-            JArray< jdouble > result((jobject) NULL);
-
-            if (!parseArgs(args, "[DI", &a0, &a1))
-            {
-              OBJ_CALL(result = self->object.nextSample(a0, a1));
-              return result.wrap();
-            }
-          }
-          {
-            ::java::util::Collection a0((jobject) NULL);
-            PyTypeObject **p0;
-            jint a1;
-            JArray< ::java::lang::Object > result((jobject) NULL);
-
-            if (!parseArgs(args, "KI", ::java::util::Collection::initializeClass, &a0, &p0, ::java::util::t_Collection::parameters_, &a1))
-            {
-              OBJ_CALL(result = self->object.nextSample(a0, a1));
-              return JArray<jobject>(result.this$).wrap(::java::lang::t_Object::wrap_jobject);
-            }
-          }
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "nextSample", args);
-        return NULL;
-      }
-
-      static PyObject *t_RandomDataGenerator_nextSampleWithReplacement(t_RandomDataGenerator *self, PyObject *args)
-      {
-        jint a0;
-        JArray< jdouble > a1((jobject) NULL);
-        JArray< jint > result((jobject) NULL);
-
-        if (!parseArgs(args, "I[D", &a0, &a1))
-        {
-          OBJ_CALL(result = self->object.nextSampleWithReplacement(a0, a1));
-          return result.wrap();
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "nextSampleWithReplacement", args);
-        return NULL;
-      }
-
-      static PyObject *t_RandomDataGenerator_nextUniform(t_RandomDataGenerator *self, PyObject *args)
-      {
-        jdouble a0;
-        jdouble a1;
-        jdouble result;
-
-        if (!parseArgs(args, "DD", &a0, &a1))
-        {
-          OBJ_CALL(result = self->object.nextUniform(a0, a1));
-          return PyFloat_FromDouble((double) result);
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "nextUniform", args);
-        return NULL;
-      }
-
-      static PyObject *t_RandomDataGenerator_nextZipf(t_RandomDataGenerator *self, PyObject *args)
-      {
-        jint a0;
-        jdouble a1;
-        jint result;
-
-        if (!parseArgs(args, "ID", &a0, &a1))
-        {
-          OBJ_CALL(result = self->object.nextZipf(a0, a1));
-          return PyLong_FromLong((long) result);
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "nextZipf", args);
-        return NULL;
-      }
-
-      static PyObject *t_RandomDataGenerator_of(PyTypeObject *type, PyObject *arg)
-      {
-        ::org::hipparchus::random::RandomGenerator a0((jobject) NULL);
-        RandomDataGenerator result((jobject) NULL);
-
-        if (!parseArg(arg, "k", ::org::hipparchus::random::RandomGenerator::initializeClass, &a0))
-        {
-          OBJ_CALL(result = ::org::hipparchus::random::RandomDataGenerator::of(a0));
-          return t_RandomDataGenerator::wrap_Object(result);
-        }
-
-        PyErr_SetArgsError(type, "of", arg);
-        return NULL;
-      }
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "org/orekit/utils/Constants.h"
-#include "java/lang/Class.h"
-#include "JArray.h"
-
-namespace org {
-  namespace orekit {
-    namespace utils {
-
-      ::java::lang::Class *Constants::class$ = NULL;
-      jmethodID *Constants::mids$ = NULL;
-      bool Constants::live$ = false;
-      jdouble Constants::ARC_SECONDS_TO_RADIANS = (jdouble) 0;
-      jdouble Constants::BESSELIAN_YEAR = (jdouble) 0;
-      jdouble Constants::EGM96_EARTH_C20 = (jdouble) 0;
-      jdouble Constants::EGM96_EARTH_C30 = (jdouble) 0;
-      jdouble Constants::EGM96_EARTH_C40 = (jdouble) 0;
-      jdouble Constants::EGM96_EARTH_C50 = (jdouble) 0;
-      jdouble Constants::EGM96_EARTH_C60 = (jdouble) 0;
-      jdouble Constants::EGM96_EARTH_EQUATORIAL_RADIUS = (jdouble) 0;
-      jdouble Constants::EGM96_EARTH_MU = (jdouble) 0;
-      jdouble Constants::EIGEN5C_EARTH_C20 = (jdouble) 0;
-      jdouble Constants::EIGEN5C_EARTH_C30 = (jdouble) 0;
-      jdouble Constants::EIGEN5C_EARTH_C40 = (jdouble) 0;
-      jdouble Constants::EIGEN5C_EARTH_C50 = (jdouble) 0;
-      jdouble Constants::EIGEN5C_EARTH_C60 = (jdouble) 0;
-      jdouble Constants::EIGEN5C_EARTH_EQUATORIAL_RADIUS = (jdouble) 0;
-      jdouble Constants::EIGEN5C_EARTH_MU = (jdouble) 0;
-      jdouble Constants::G0_STANDARD_GRAVITY = (jdouble) 0;
-      jdouble Constants::GRIM5C1_EARTH_ANGULAR_VELOCITY = (jdouble) 0;
-      jdouble Constants::GRIM5C1_EARTH_C20 = (jdouble) 0;
-      jdouble Constants::GRIM5C1_EARTH_C30 = (jdouble) 0;
-      jdouble Constants::GRIM5C1_EARTH_C40 = (jdouble) 0;
-      jdouble Constants::GRIM5C1_EARTH_C50 = (jdouble) 0;
-      jdouble Constants::GRIM5C1_EARTH_C60 = (jdouble) 0;
-      jdouble Constants::GRIM5C1_EARTH_EQUATORIAL_RADIUS = (jdouble) 0;
-      jdouble Constants::GRIM5C1_EARTH_FLATTENING = (jdouble) 0;
-      jdouble Constants::GRIM5C1_EARTH_MU = (jdouble) 0;
-      jdouble Constants::GRS80_EARTH_ANGULAR_VELOCITY = (jdouble) 0;
-      jdouble Constants::GRS80_EARTH_C20 = (jdouble) 0;
-      jdouble Constants::GRS80_EARTH_EQUATORIAL_RADIUS = (jdouble) 0;
-      jdouble Constants::GRS80_EARTH_FLATTENING = (jdouble) 0;
-      jdouble Constants::GRS80_EARTH_MU = (jdouble) 0;
-      jdouble Constants::IAU_2012_ASTRONOMICAL_UNIT = (jdouble) 0;
-      jdouble Constants::IAU_2015_NOMINAL_EARTH_EQUATORIAL_RADIUS = (jdouble) 0;
-      jdouble Constants::IAU_2015_NOMINAL_EARTH_GM = (jdouble) 0;
-      jdouble Constants::IAU_2015_NOMINAL_EARTH_POLAR_RADIUS = (jdouble) 0;
-      jdouble Constants::IAU_2015_NOMINAL_JUPITER_EQUATORIAL_RADIUS = (jdouble) 0;
-      jdouble Constants::IAU_2015_NOMINAL_JUPITER_GM = (jdouble) 0;
-      jdouble Constants::IAU_2015_NOMINAL_JUPITER_POLAR_RADIUS = (jdouble) 0;
-      jdouble Constants::IAU_2015_NOMINAL_SOLAR_RADIUS = (jdouble) 0;
-      jdouble Constants::IAU_2015_NOMINAL_SUN_GM = (jdouble) 0;
-      jdouble Constants::IERS2003_EARTH_ANGULAR_VELOCITY = (jdouble) 0;
-      jdouble Constants::IERS2003_EARTH_C20 = (jdouble) 0;
-      jdouble Constants::IERS2003_EARTH_EQUATORIAL_RADIUS = (jdouble) 0;
-      jdouble Constants::IERS2003_EARTH_FLATTENING = (jdouble) 0;
-      jdouble Constants::IERS2003_EARTH_MU = (jdouble) 0;
-      jdouble Constants::IERS2010_EARTH_ANGULAR_VELOCITY = (jdouble) 0;
-      jdouble Constants::IERS2010_EARTH_C20 = (jdouble) 0;
-      jdouble Constants::IERS2010_EARTH_EQUATORIAL_RADIUS = (jdouble) 0;
-      jdouble Constants::IERS2010_EARTH_FLATTENING = (jdouble) 0;
-      jdouble Constants::IERS2010_EARTH_MU = (jdouble) 0;
-      jdouble Constants::IERS96_EARTH_ANGULAR_VELOCITY = (jdouble) 0;
-      jdouble Constants::IERS96_EARTH_C20 = (jdouble) 0;
-      jdouble Constants::IERS96_EARTH_EQUATORIAL_RADIUS = (jdouble) 0;
-      jdouble Constants::IERS96_EARTH_FLATTENING = (jdouble) 0;
-      jdouble Constants::IERS96_EARTH_MU = (jdouble) 0;
-      jdouble Constants::JPL_SSD_ASTRONOMICAL_UNIT = (jdouble) 0;
-      jdouble Constants::JPL_SSD_EARTH_GM = (jdouble) 0;
-      jdouble Constants::JPL_SSD_EARTH_MOON_MASS_RATIO = (jdouble) 0;
-      jdouble Constants::JPL_SSD_EARTH_PLUS_MOON_GM = (jdouble) 0;
-      jdouble Constants::JPL_SSD_GAUSSIAN_GRAVITATIONAL_CONSTANT = (jdouble) 0;
-      jdouble Constants::JPL_SSD_JUPITER_SYSTEM_GM = (jdouble) 0;
-      jdouble Constants::JPL_SSD_MARS_SYSTEM_GM = (jdouble) 0;
-      jdouble Constants::JPL_SSD_MERCURY_GM = (jdouble) 0;
-      jdouble Constants::JPL_SSD_MOON_GM = (jdouble) 0;
-      jdouble Constants::JPL_SSD_NEPTUNE_SYSTEM_GM = (jdouble) 0;
-      jdouble Constants::JPL_SSD_PLUTO_SYSTEM_GM = (jdouble) 0;
-      jdouble Constants::JPL_SSD_SATURN_SYSTEM_GM = (jdouble) 0;
-      jdouble Constants::JPL_SSD_SUN_EARTH_PLUS_MOON_MASS_RATIO = (jdouble) 0;
-      jdouble Constants::JPL_SSD_SUN_GM = (jdouble) 0;
-      jdouble Constants::JPL_SSD_SUN_JUPITER_SYSTEM_MASS_RATIO = (jdouble) 0;
-      jdouble Constants::JPL_SSD_SUN_MARS_SYSTEM_MASS_RATIO = (jdouble) 0;
-      jdouble Constants::JPL_SSD_SUN_MERCURY_MASS_RATIO = (jdouble) 0;
-      jdouble Constants::JPL_SSD_SUN_NEPTUNE_SYSTEM_MASS_RATIO = (jdouble) 0;
-      jdouble Constants::JPL_SSD_SUN_PLUTO_SYSTEM_MASS_RATIO = (jdouble) 0;
-      jdouble Constants::JPL_SSD_SUN_SATURN_SYSTEM_MASS_RATIO = (jdouble) 0;
-      jdouble Constants::JPL_SSD_SUN_URANUS_SYSTEM_MASS_RATIO = (jdouble) 0;
-      jdouble Constants::JPL_SSD_SUN_VENUS_MASS_RATIO = (jdouble) 0;
-      jdouble Constants::JPL_SSD_URANUS_SYSTEM_GM = (jdouble) 0;
-      jdouble Constants::JPL_SSD_VENUS_GM = (jdouble) 0;
-      jdouble Constants::JULIAN_CENTURY = (jdouble) 0;
-      jdouble Constants::JULIAN_DAY = (jdouble) 0;
-      jdouble Constants::JULIAN_YEAR = (jdouble) 0;
-      jdouble Constants::MOON_EQUATORIAL_RADIUS = (jdouble) 0;
-      jdouble Constants::SPEED_OF_LIGHT = (jdouble) 0;
-      jdouble Constants::SUN_RADIUS = (jdouble) 0;
-      jdouble Constants::WGS84_EARTH_ANGULAR_VELOCITY = (jdouble) 0;
-      jdouble Constants::WGS84_EARTH_C20 = (jdouble) 0;
-      jdouble Constants::WGS84_EARTH_EQUATORIAL_RADIUS = (jdouble) 0;
-      jdouble Constants::WGS84_EARTH_FLATTENING = (jdouble) 0;
-      jdouble Constants::WGS84_EARTH_MU = (jdouble) 0;
-
-      jclass Constants::initializeClass(bool getOnly)
-      {
-        if (getOnly)
-          return (jclass) (live$ ? class$->this$ : NULL);
-        if (class$ == NULL)
-        {
-          jclass cls = (jclass) env->findClass("org/orekit/utils/Constants");
-
-          class$ = new ::java::lang::Class(cls);
-          cls = (jclass) class$->this$;
-
-          ARC_SECONDS_TO_RADIANS = env->getStaticDoubleField(cls, "ARC_SECONDS_TO_RADIANS");
-          BESSELIAN_YEAR = env->getStaticDoubleField(cls, "BESSELIAN_YEAR");
-          EGM96_EARTH_C20 = env->getStaticDoubleField(cls, "EGM96_EARTH_C20");
-          EGM96_EARTH_C30 = env->getStaticDoubleField(cls, "EGM96_EARTH_C30");
-          EGM96_EARTH_C40 = env->getStaticDoubleField(cls, "EGM96_EARTH_C40");
-          EGM96_EARTH_C50 = env->getStaticDoubleField(cls, "EGM96_EARTH_C50");
-          EGM96_EARTH_C60 = env->getStaticDoubleField(cls, "EGM96_EARTH_C60");
-          EGM96_EARTH_EQUATORIAL_RADIUS = env->getStaticDoubleField(cls, "EGM96_EARTH_EQUATORIAL_RADIUS");
-          EGM96_EARTH_MU = env->getStaticDoubleField(cls, "EGM96_EARTH_MU");
-          EIGEN5C_EARTH_C20 = env->getStaticDoubleField(cls, "EIGEN5C_EARTH_C20");
-          EIGEN5C_EARTH_C30 = env->getStaticDoubleField(cls, "EIGEN5C_EARTH_C30");
-          EIGEN5C_EARTH_C40 = env->getStaticDoubleField(cls, "EIGEN5C_EARTH_C40");
-          EIGEN5C_EARTH_C50 = env->getStaticDoubleField(cls, "EIGEN5C_EARTH_C50");
-          EIGEN5C_EARTH_C60 = env->getStaticDoubleField(cls, "EIGEN5C_EARTH_C60");
-          EIGEN5C_EARTH_EQUATORIAL_RADIUS = env->getStaticDoubleField(cls, "EIGEN5C_EARTH_EQUATORIAL_RADIUS");
-          EIGEN5C_EARTH_MU = env->getStaticDoubleField(cls, "EIGEN5C_EARTH_MU");
-          G0_STANDARD_GRAVITY = env->getStaticDoubleField(cls, "G0_STANDARD_GRAVITY");
-          GRIM5C1_EARTH_ANGULAR_VELOCITY = env->getStaticDoubleField(cls, "GRIM5C1_EARTH_ANGULAR_VELOCITY");
-          GRIM5C1_EARTH_C20 = env->getStaticDoubleField(cls, "GRIM5C1_EARTH_C20");
-          GRIM5C1_EARTH_C30 = env->getStaticDoubleField(cls, "GRIM5C1_EARTH_C30");
-          GRIM5C1_EARTH_C40 = env->getStaticDoubleField(cls, "GRIM5C1_EARTH_C40");
-          GRIM5C1_EARTH_C50 = env->getStaticDoubleField(cls, "GRIM5C1_EARTH_C50");
-          GRIM5C1_EARTH_C60 = env->getStaticDoubleField(cls, "GRIM5C1_EARTH_C60");
-          GRIM5C1_EARTH_EQUATORIAL_RADIUS = env->getStaticDoubleField(cls, "GRIM5C1_EARTH_EQUATORIAL_RADIUS");
-          GRIM5C1_EARTH_FLATTENING = env->getStaticDoubleField(cls, "GRIM5C1_EARTH_FLATTENING");
-          GRIM5C1_EARTH_MU = env->getStaticDoubleField(cls, "GRIM5C1_EARTH_MU");
-          GRS80_EARTH_ANGULAR_VELOCITY = env->getStaticDoubleField(cls, "GRS80_EARTH_ANGULAR_VELOCITY");
-          GRS80_EARTH_C20 = env->getStaticDoubleField(cls, "GRS80_EARTH_C20");
-          GRS80_EARTH_EQUATORIAL_RADIUS = env->getStaticDoubleField(cls, "GRS80_EARTH_EQUATORIAL_RADIUS");
-          GRS80_EARTH_FLATTENING = env->getStaticDoubleField(cls, "GRS80_EARTH_FLATTENING");
-          GRS80_EARTH_MU = env->getStaticDoubleField(cls, "GRS80_EARTH_MU");
-          IAU_2012_ASTRONOMICAL_UNIT = env->getStaticDoubleField(cls, "IAU_2012_ASTRONOMICAL_UNIT");
-          IAU_2015_NOMINAL_EARTH_EQUATORIAL_RADIUS = env->getStaticDoubleField(cls, "IAU_2015_NOMINAL_EARTH_EQUATORIAL_RADIUS");
-          IAU_2015_NOMINAL_EARTH_GM = env->getStaticDoubleField(cls, "IAU_2015_NOMINAL_EARTH_GM");
-          IAU_2015_NOMINAL_EARTH_POLAR_RADIUS = env->getStaticDoubleField(cls, "IAU_2015_NOMINAL_EARTH_POLAR_RADIUS");
-          IAU_2015_NOMINAL_JUPITER_EQUATORIAL_RADIUS = env->getStaticDoubleField(cls, "IAU_2015_NOMINAL_JUPITER_EQUATORIAL_RADIUS");
-          IAU_2015_NOMINAL_JUPITER_GM = env->getStaticDoubleField(cls, "IAU_2015_NOMINAL_JUPITER_GM");
-          IAU_2015_NOMINAL_JUPITER_POLAR_RADIUS = env->getStaticDoubleField(cls, "IAU_2015_NOMINAL_JUPITER_POLAR_RADIUS");
-          IAU_2015_NOMINAL_SOLAR_RADIUS = env->getStaticDoubleField(cls, "IAU_2015_NOMINAL_SOLAR_RADIUS");
-          IAU_2015_NOMINAL_SUN_GM = env->getStaticDoubleField(cls, "IAU_2015_NOMINAL_SUN_GM");
-          IERS2003_EARTH_ANGULAR_VELOCITY = env->getStaticDoubleField(cls, "IERS2003_EARTH_ANGULAR_VELOCITY");
-          IERS2003_EARTH_C20 = env->getStaticDoubleField(cls, "IERS2003_EARTH_C20");
-          IERS2003_EARTH_EQUATORIAL_RADIUS = env->getStaticDoubleField(cls, "IERS2003_EARTH_EQUATORIAL_RADIUS");
-          IERS2003_EARTH_FLATTENING = env->getStaticDoubleField(cls, "IERS2003_EARTH_FLATTENING");
-          IERS2003_EARTH_MU = env->getStaticDoubleField(cls, "IERS2003_EARTH_MU");
-          IERS2010_EARTH_ANGULAR_VELOCITY = env->getStaticDoubleField(cls, "IERS2010_EARTH_ANGULAR_VELOCITY");
-          IERS2010_EARTH_C20 = env->getStaticDoubleField(cls, "IERS2010_EARTH_C20");
-          IERS2010_EARTH_EQUATORIAL_RADIUS = env->getStaticDoubleField(cls, "IERS2010_EARTH_EQUATORIAL_RADIUS");
-          IERS2010_EARTH_FLATTENING = env->getStaticDoubleField(cls, "IERS2010_EARTH_FLATTENING");
-          IERS2010_EARTH_MU = env->getStaticDoubleField(cls, "IERS2010_EARTH_MU");
-          IERS96_EARTH_ANGULAR_VELOCITY = env->getStaticDoubleField(cls, "IERS96_EARTH_ANGULAR_VELOCITY");
-          IERS96_EARTH_C20 = env->getStaticDoubleField(cls, "IERS96_EARTH_C20");
-          IERS96_EARTH_EQUATORIAL_RADIUS = env->getStaticDoubleField(cls, "IERS96_EARTH_EQUATORIAL_RADIUS");
-          IERS96_EARTH_FLATTENING = env->getStaticDoubleField(cls, "IERS96_EARTH_FLATTENING");
-          IERS96_EARTH_MU = env->getStaticDoubleField(cls, "IERS96_EARTH_MU");
-          JPL_SSD_ASTRONOMICAL_UNIT = env->getStaticDoubleField(cls, "JPL_SSD_ASTRONOMICAL_UNIT");
-          JPL_SSD_EARTH_GM = env->getStaticDoubleField(cls, "JPL_SSD_EARTH_GM");
-          JPL_SSD_EARTH_MOON_MASS_RATIO = env->getStaticDoubleField(cls, "JPL_SSD_EARTH_MOON_MASS_RATIO");
-          JPL_SSD_EARTH_PLUS_MOON_GM = env->getStaticDoubleField(cls, "JPL_SSD_EARTH_PLUS_MOON_GM");
-          JPL_SSD_GAUSSIAN_GRAVITATIONAL_CONSTANT = env->getStaticDoubleField(cls, "JPL_SSD_GAUSSIAN_GRAVITATIONAL_CONSTANT");
-          JPL_SSD_JUPITER_SYSTEM_GM = env->getStaticDoubleField(cls, "JPL_SSD_JUPITER_SYSTEM_GM");
-          JPL_SSD_MARS_SYSTEM_GM = env->getStaticDoubleField(cls, "JPL_SSD_MARS_SYSTEM_GM");
-          JPL_SSD_MERCURY_GM = env->getStaticDoubleField(cls, "JPL_SSD_MERCURY_GM");
-          JPL_SSD_MOON_GM = env->getStaticDoubleField(cls, "JPL_SSD_MOON_GM");
-          JPL_SSD_NEPTUNE_SYSTEM_GM = env->getStaticDoubleField(cls, "JPL_SSD_NEPTUNE_SYSTEM_GM");
-          JPL_SSD_PLUTO_SYSTEM_GM = env->getStaticDoubleField(cls, "JPL_SSD_PLUTO_SYSTEM_GM");
-          JPL_SSD_SATURN_SYSTEM_GM = env->getStaticDoubleField(cls, "JPL_SSD_SATURN_SYSTEM_GM");
-          JPL_SSD_SUN_EARTH_PLUS_MOON_MASS_RATIO = env->getStaticDoubleField(cls, "JPL_SSD_SUN_EARTH_PLUS_MOON_MASS_RATIO");
-          JPL_SSD_SUN_GM = env->getStaticDoubleField(cls, "JPL_SSD_SUN_GM");
-          JPL_SSD_SUN_JUPITER_SYSTEM_MASS_RATIO = env->getStaticDoubleField(cls, "JPL_SSD_SUN_JUPITER_SYSTEM_MASS_RATIO");
-          JPL_SSD_SUN_MARS_SYSTEM_MASS_RATIO = env->getStaticDoubleField(cls, "JPL_SSD_SUN_MARS_SYSTEM_MASS_RATIO");
-          JPL_SSD_SUN_MERCURY_MASS_RATIO = env->getStaticDoubleField(cls, "JPL_SSD_SUN_MERCURY_MASS_RATIO");
-          JPL_SSD_SUN_NEPTUNE_SYSTEM_MASS_RATIO = env->getStaticDoubleField(cls, "JPL_SSD_SUN_NEPTUNE_SYSTEM_MASS_RATIO");
-          JPL_SSD_SUN_PLUTO_SYSTEM_MASS_RATIO = env->getStaticDoubleField(cls, "JPL_SSD_SUN_PLUTO_SYSTEM_MASS_RATIO");
-          JPL_SSD_SUN_SATURN_SYSTEM_MASS_RATIO = env->getStaticDoubleField(cls, "JPL_SSD_SUN_SATURN_SYSTEM_MASS_RATIO");
-          JPL_SSD_SUN_URANUS_SYSTEM_MASS_RATIO = env->getStaticDoubleField(cls, "JPL_SSD_SUN_URANUS_SYSTEM_MASS_RATIO");
-          JPL_SSD_SUN_VENUS_MASS_RATIO = env->getStaticDoubleField(cls, "JPL_SSD_SUN_VENUS_MASS_RATIO");
-          JPL_SSD_URANUS_SYSTEM_GM = env->getStaticDoubleField(cls, "JPL_SSD_URANUS_SYSTEM_GM");
-          JPL_SSD_VENUS_GM = env->getStaticDoubleField(cls, "JPL_SSD_VENUS_GM");
-          JULIAN_CENTURY = env->getStaticDoubleField(cls, "JULIAN_CENTURY");
-          JULIAN_DAY = env->getStaticDoubleField(cls, "JULIAN_DAY");
-          JULIAN_YEAR = env->getStaticDoubleField(cls, "JULIAN_YEAR");
-          MOON_EQUATORIAL_RADIUS = env->getStaticDoubleField(cls, "MOON_EQUATORIAL_RADIUS");
-          SPEED_OF_LIGHT = env->getStaticDoubleField(cls, "SPEED_OF_LIGHT");
-          SUN_RADIUS = env->getStaticDoubleField(cls, "SUN_RADIUS");
-          WGS84_EARTH_ANGULAR_VELOCITY = env->getStaticDoubleField(cls, "WGS84_EARTH_ANGULAR_VELOCITY");
-          WGS84_EARTH_C20 = env->getStaticDoubleField(cls, "WGS84_EARTH_C20");
-          WGS84_EARTH_EQUATORIAL_RADIUS = env->getStaticDoubleField(cls, "WGS84_EARTH_EQUATORIAL_RADIUS");
-          WGS84_EARTH_FLATTENING = env->getStaticDoubleField(cls, "WGS84_EARTH_FLATTENING");
-          WGS84_EARTH_MU = env->getStaticDoubleField(cls, "WGS84_EARTH_MU");
-          live$ = true;
-        }
-        return (jclass) class$->this$;
+        env->callVoidMethod(this$, mids$[mid_pythonExtension_3a8e7649f31fdb20], a0);
       }
     }
   }
@@ -822,201 +72,900 @@ namespace org {
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      static PyObject *t_Constants_cast_(PyTypeObject *type, PyObject *arg);
-      static PyObject *t_Constants_instance_(PyTypeObject *type, PyObject *arg);
+    namespace time {
+      static PyObject *t_PythonFieldTimeInterpolator_cast_(PyTypeObject *type, PyObject *arg);
+      static PyObject *t_PythonFieldTimeInterpolator_instance_(PyTypeObject *type, PyObject *arg);
+      static PyObject *t_PythonFieldTimeInterpolator_of_(t_PythonFieldTimeInterpolator *self, PyObject *args);
+      static int t_PythonFieldTimeInterpolator_init_(t_PythonFieldTimeInterpolator *self, PyObject *args, PyObject *kwds);
+      static PyObject *t_PythonFieldTimeInterpolator_finalize(t_PythonFieldTimeInterpolator *self);
+      static PyObject *t_PythonFieldTimeInterpolator_pythonExtension(t_PythonFieldTimeInterpolator *self, PyObject *args);
+      static jdouble JNICALL t_PythonFieldTimeInterpolator_getExtrapolationThreshold0(JNIEnv *jenv, jobject jobj);
+      static jint JNICALL t_PythonFieldTimeInterpolator_getNbInterpolationPoints1(JNIEnv *jenv, jobject jobj);
+      static jobject JNICALL t_PythonFieldTimeInterpolator_getSubInterpolators2(JNIEnv *jenv, jobject jobj);
+      static jobject JNICALL t_PythonFieldTimeInterpolator_interpolate3(JNIEnv *jenv, jobject jobj, jobject a0, jobject a1);
+      static jobject JNICALL t_PythonFieldTimeInterpolator_interpolate4(JNIEnv *jenv, jobject jobj, jobject a0, jobject a1);
+      static void JNICALL t_PythonFieldTimeInterpolator_pythonDecRef5(JNIEnv *jenv, jobject jobj);
+      static PyObject *t_PythonFieldTimeInterpolator_get__self(t_PythonFieldTimeInterpolator *self, void *data);
+      static PyObject *t_PythonFieldTimeInterpolator_get__parameters_(t_PythonFieldTimeInterpolator *self, void *data);
+      static PyGetSetDef t_PythonFieldTimeInterpolator__fields_[] = {
+        DECLARE_GET_FIELD(t_PythonFieldTimeInterpolator, self),
+        DECLARE_GET_FIELD(t_PythonFieldTimeInterpolator, parameters_),
+        { NULL, NULL, NULL, NULL, NULL }
+      };
 
-      static PyMethodDef t_Constants__methods_[] = {
-        DECLARE_METHOD(t_Constants, cast_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_Constants, instance_, METH_O | METH_CLASS),
+      static PyMethodDef t_PythonFieldTimeInterpolator__methods_[] = {
+        DECLARE_METHOD(t_PythonFieldTimeInterpolator, cast_, METH_O | METH_CLASS),
+        DECLARE_METHOD(t_PythonFieldTimeInterpolator, instance_, METH_O | METH_CLASS),
+        DECLARE_METHOD(t_PythonFieldTimeInterpolator, of_, METH_VARARGS),
+        DECLARE_METHOD(t_PythonFieldTimeInterpolator, finalize, METH_NOARGS),
+        DECLARE_METHOD(t_PythonFieldTimeInterpolator, pythonExtension, METH_VARARGS),
         { NULL, NULL, 0, NULL }
       };
 
-      static PyType_Slot PY_TYPE_SLOTS(Constants)[] = {
-        { Py_tp_methods, t_Constants__methods_ },
-        { Py_tp_init, (void *) abstract_init },
+      static PyType_Slot PY_TYPE_SLOTS(PythonFieldTimeInterpolator)[] = {
+        { Py_tp_methods, t_PythonFieldTimeInterpolator__methods_ },
+        { Py_tp_init, (void *) t_PythonFieldTimeInterpolator_init_ },
+        { Py_tp_getset, t_PythonFieldTimeInterpolator__fields_ },
         { 0, NULL }
       };
 
-      static PyType_Def *PY_TYPE_BASES(Constants)[] = {
+      static PyType_Def *PY_TYPE_BASES(PythonFieldTimeInterpolator)[] = {
         &PY_TYPE_DEF(::java::lang::Object),
         NULL
       };
 
-      DEFINE_TYPE(Constants, t_Constants, Constants);
-
-      void t_Constants::install(PyObject *module)
+      DEFINE_TYPE(PythonFieldTimeInterpolator, t_PythonFieldTimeInterpolator, PythonFieldTimeInterpolator);
+      PyObject *t_PythonFieldTimeInterpolator::wrap_Object(const PythonFieldTimeInterpolator& object, PyTypeObject *p0, PyTypeObject *p1)
       {
-        installType(&PY_TYPE(Constants), &PY_TYPE_DEF(Constants), module, "Constants", 0);
+        PyObject *obj = t_PythonFieldTimeInterpolator::wrap_Object(object);
+        if (obj != NULL && obj != Py_None)
+        {
+          t_PythonFieldTimeInterpolator *self = (t_PythonFieldTimeInterpolator *) obj;
+          self->parameters[0] = p0;
+          self->parameters[1] = p1;
+        }
+        return obj;
       }
 
-      void t_Constants::initialize(PyObject *module)
+      PyObject *t_PythonFieldTimeInterpolator::wrap_jobject(const jobject& object, PyTypeObject *p0, PyTypeObject *p1)
       {
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "class_", make_descriptor(Constants::initializeClass, 1));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "wrapfn_", make_descriptor(t_Constants::wrap_jobject));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "boxfn_", make_descriptor(boxObject));
-        env->getClass(Constants::initializeClass);
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "ARC_SECONDS_TO_RADIANS", make_descriptor(Constants::ARC_SECONDS_TO_RADIANS));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "BESSELIAN_YEAR", make_descriptor(Constants::BESSELIAN_YEAR));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "EGM96_EARTH_C20", make_descriptor(Constants::EGM96_EARTH_C20));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "EGM96_EARTH_C30", make_descriptor(Constants::EGM96_EARTH_C30));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "EGM96_EARTH_C40", make_descriptor(Constants::EGM96_EARTH_C40));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "EGM96_EARTH_C50", make_descriptor(Constants::EGM96_EARTH_C50));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "EGM96_EARTH_C60", make_descriptor(Constants::EGM96_EARTH_C60));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "EGM96_EARTH_EQUATORIAL_RADIUS", make_descriptor(Constants::EGM96_EARTH_EQUATORIAL_RADIUS));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "EGM96_EARTH_MU", make_descriptor(Constants::EGM96_EARTH_MU));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "EIGEN5C_EARTH_C20", make_descriptor(Constants::EIGEN5C_EARTH_C20));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "EIGEN5C_EARTH_C30", make_descriptor(Constants::EIGEN5C_EARTH_C30));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "EIGEN5C_EARTH_C40", make_descriptor(Constants::EIGEN5C_EARTH_C40));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "EIGEN5C_EARTH_C50", make_descriptor(Constants::EIGEN5C_EARTH_C50));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "EIGEN5C_EARTH_C60", make_descriptor(Constants::EIGEN5C_EARTH_C60));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "EIGEN5C_EARTH_EQUATORIAL_RADIUS", make_descriptor(Constants::EIGEN5C_EARTH_EQUATORIAL_RADIUS));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "EIGEN5C_EARTH_MU", make_descriptor(Constants::EIGEN5C_EARTH_MU));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "G0_STANDARD_GRAVITY", make_descriptor(Constants::G0_STANDARD_GRAVITY));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "GRIM5C1_EARTH_ANGULAR_VELOCITY", make_descriptor(Constants::GRIM5C1_EARTH_ANGULAR_VELOCITY));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "GRIM5C1_EARTH_C20", make_descriptor(Constants::GRIM5C1_EARTH_C20));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "GRIM5C1_EARTH_C30", make_descriptor(Constants::GRIM5C1_EARTH_C30));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "GRIM5C1_EARTH_C40", make_descriptor(Constants::GRIM5C1_EARTH_C40));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "GRIM5C1_EARTH_C50", make_descriptor(Constants::GRIM5C1_EARTH_C50));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "GRIM5C1_EARTH_C60", make_descriptor(Constants::GRIM5C1_EARTH_C60));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "GRIM5C1_EARTH_EQUATORIAL_RADIUS", make_descriptor(Constants::GRIM5C1_EARTH_EQUATORIAL_RADIUS));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "GRIM5C1_EARTH_FLATTENING", make_descriptor(Constants::GRIM5C1_EARTH_FLATTENING));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "GRIM5C1_EARTH_MU", make_descriptor(Constants::GRIM5C1_EARTH_MU));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "GRS80_EARTH_ANGULAR_VELOCITY", make_descriptor(Constants::GRS80_EARTH_ANGULAR_VELOCITY));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "GRS80_EARTH_C20", make_descriptor(Constants::GRS80_EARTH_C20));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "GRS80_EARTH_EQUATORIAL_RADIUS", make_descriptor(Constants::GRS80_EARTH_EQUATORIAL_RADIUS));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "GRS80_EARTH_FLATTENING", make_descriptor(Constants::GRS80_EARTH_FLATTENING));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "GRS80_EARTH_MU", make_descriptor(Constants::GRS80_EARTH_MU));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IAU_2012_ASTRONOMICAL_UNIT", make_descriptor(Constants::IAU_2012_ASTRONOMICAL_UNIT));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IAU_2015_NOMINAL_EARTH_EQUATORIAL_RADIUS", make_descriptor(Constants::IAU_2015_NOMINAL_EARTH_EQUATORIAL_RADIUS));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IAU_2015_NOMINAL_EARTH_GM", make_descriptor(Constants::IAU_2015_NOMINAL_EARTH_GM));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IAU_2015_NOMINAL_EARTH_POLAR_RADIUS", make_descriptor(Constants::IAU_2015_NOMINAL_EARTH_POLAR_RADIUS));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IAU_2015_NOMINAL_JUPITER_EQUATORIAL_RADIUS", make_descriptor(Constants::IAU_2015_NOMINAL_JUPITER_EQUATORIAL_RADIUS));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IAU_2015_NOMINAL_JUPITER_GM", make_descriptor(Constants::IAU_2015_NOMINAL_JUPITER_GM));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IAU_2015_NOMINAL_JUPITER_POLAR_RADIUS", make_descriptor(Constants::IAU_2015_NOMINAL_JUPITER_POLAR_RADIUS));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IAU_2015_NOMINAL_SOLAR_RADIUS", make_descriptor(Constants::IAU_2015_NOMINAL_SOLAR_RADIUS));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IAU_2015_NOMINAL_SUN_GM", make_descriptor(Constants::IAU_2015_NOMINAL_SUN_GM));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IERS2003_EARTH_ANGULAR_VELOCITY", make_descriptor(Constants::IERS2003_EARTH_ANGULAR_VELOCITY));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IERS2003_EARTH_C20", make_descriptor(Constants::IERS2003_EARTH_C20));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IERS2003_EARTH_EQUATORIAL_RADIUS", make_descriptor(Constants::IERS2003_EARTH_EQUATORIAL_RADIUS));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IERS2003_EARTH_FLATTENING", make_descriptor(Constants::IERS2003_EARTH_FLATTENING));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IERS2003_EARTH_MU", make_descriptor(Constants::IERS2003_EARTH_MU));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IERS2010_EARTH_ANGULAR_VELOCITY", make_descriptor(Constants::IERS2010_EARTH_ANGULAR_VELOCITY));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IERS2010_EARTH_C20", make_descriptor(Constants::IERS2010_EARTH_C20));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IERS2010_EARTH_EQUATORIAL_RADIUS", make_descriptor(Constants::IERS2010_EARTH_EQUATORIAL_RADIUS));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IERS2010_EARTH_FLATTENING", make_descriptor(Constants::IERS2010_EARTH_FLATTENING));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IERS2010_EARTH_MU", make_descriptor(Constants::IERS2010_EARTH_MU));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IERS96_EARTH_ANGULAR_VELOCITY", make_descriptor(Constants::IERS96_EARTH_ANGULAR_VELOCITY));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IERS96_EARTH_C20", make_descriptor(Constants::IERS96_EARTH_C20));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IERS96_EARTH_EQUATORIAL_RADIUS", make_descriptor(Constants::IERS96_EARTH_EQUATORIAL_RADIUS));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IERS96_EARTH_FLATTENING", make_descriptor(Constants::IERS96_EARTH_FLATTENING));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "IERS96_EARTH_MU", make_descriptor(Constants::IERS96_EARTH_MU));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_ASTRONOMICAL_UNIT", make_descriptor(Constants::JPL_SSD_ASTRONOMICAL_UNIT));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_EARTH_GM", make_descriptor(Constants::JPL_SSD_EARTH_GM));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_EARTH_MOON_MASS_RATIO", make_descriptor(Constants::JPL_SSD_EARTH_MOON_MASS_RATIO));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_EARTH_PLUS_MOON_GM", make_descriptor(Constants::JPL_SSD_EARTH_PLUS_MOON_GM));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_GAUSSIAN_GRAVITATIONAL_CONSTANT", make_descriptor(Constants::JPL_SSD_GAUSSIAN_GRAVITATIONAL_CONSTANT));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_JUPITER_SYSTEM_GM", make_descriptor(Constants::JPL_SSD_JUPITER_SYSTEM_GM));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_MARS_SYSTEM_GM", make_descriptor(Constants::JPL_SSD_MARS_SYSTEM_GM));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_MERCURY_GM", make_descriptor(Constants::JPL_SSD_MERCURY_GM));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_MOON_GM", make_descriptor(Constants::JPL_SSD_MOON_GM));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_NEPTUNE_SYSTEM_GM", make_descriptor(Constants::JPL_SSD_NEPTUNE_SYSTEM_GM));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_PLUTO_SYSTEM_GM", make_descriptor(Constants::JPL_SSD_PLUTO_SYSTEM_GM));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_SATURN_SYSTEM_GM", make_descriptor(Constants::JPL_SSD_SATURN_SYSTEM_GM));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_SUN_EARTH_PLUS_MOON_MASS_RATIO", make_descriptor(Constants::JPL_SSD_SUN_EARTH_PLUS_MOON_MASS_RATIO));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_SUN_GM", make_descriptor(Constants::JPL_SSD_SUN_GM));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_SUN_JUPITER_SYSTEM_MASS_RATIO", make_descriptor(Constants::JPL_SSD_SUN_JUPITER_SYSTEM_MASS_RATIO));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_SUN_MARS_SYSTEM_MASS_RATIO", make_descriptor(Constants::JPL_SSD_SUN_MARS_SYSTEM_MASS_RATIO));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_SUN_MERCURY_MASS_RATIO", make_descriptor(Constants::JPL_SSD_SUN_MERCURY_MASS_RATIO));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_SUN_NEPTUNE_SYSTEM_MASS_RATIO", make_descriptor(Constants::JPL_SSD_SUN_NEPTUNE_SYSTEM_MASS_RATIO));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_SUN_PLUTO_SYSTEM_MASS_RATIO", make_descriptor(Constants::JPL_SSD_SUN_PLUTO_SYSTEM_MASS_RATIO));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_SUN_SATURN_SYSTEM_MASS_RATIO", make_descriptor(Constants::JPL_SSD_SUN_SATURN_SYSTEM_MASS_RATIO));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_SUN_URANUS_SYSTEM_MASS_RATIO", make_descriptor(Constants::JPL_SSD_SUN_URANUS_SYSTEM_MASS_RATIO));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_SUN_VENUS_MASS_RATIO", make_descriptor(Constants::JPL_SSD_SUN_VENUS_MASS_RATIO));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_URANUS_SYSTEM_GM", make_descriptor(Constants::JPL_SSD_URANUS_SYSTEM_GM));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JPL_SSD_VENUS_GM", make_descriptor(Constants::JPL_SSD_VENUS_GM));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JULIAN_CENTURY", make_descriptor(Constants::JULIAN_CENTURY));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JULIAN_DAY", make_descriptor(Constants::JULIAN_DAY));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "JULIAN_YEAR", make_descriptor(Constants::JULIAN_YEAR));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "MOON_EQUATORIAL_RADIUS", make_descriptor(Constants::MOON_EQUATORIAL_RADIUS));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "SPEED_OF_LIGHT", make_descriptor(Constants::SPEED_OF_LIGHT));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "SUN_RADIUS", make_descriptor(Constants::SUN_RADIUS));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "WGS84_EARTH_ANGULAR_VELOCITY", make_descriptor(Constants::WGS84_EARTH_ANGULAR_VELOCITY));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "WGS84_EARTH_C20", make_descriptor(Constants::WGS84_EARTH_C20));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "WGS84_EARTH_EQUATORIAL_RADIUS", make_descriptor(Constants::WGS84_EARTH_EQUATORIAL_RADIUS));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "WGS84_EARTH_FLATTENING", make_descriptor(Constants::WGS84_EARTH_FLATTENING));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(Constants), "WGS84_EARTH_MU", make_descriptor(Constants::WGS84_EARTH_MU));
+        PyObject *obj = t_PythonFieldTimeInterpolator::wrap_jobject(object);
+        if (obj != NULL && obj != Py_None)
+        {
+          t_PythonFieldTimeInterpolator *self = (t_PythonFieldTimeInterpolator *) obj;
+          self->parameters[0] = p0;
+          self->parameters[1] = p1;
+        }
+        return obj;
       }
 
-      static PyObject *t_Constants_cast_(PyTypeObject *type, PyObject *arg)
+      void t_PythonFieldTimeInterpolator::install(PyObject *module)
       {
-        if (!(arg = castCheck(arg, Constants::initializeClass, 1)))
+        installType(&PY_TYPE(PythonFieldTimeInterpolator), &PY_TYPE_DEF(PythonFieldTimeInterpolator), module, "PythonFieldTimeInterpolator", 1);
+      }
+
+      void t_PythonFieldTimeInterpolator::initialize(PyObject *module)
+      {
+        PyObject_SetAttrString((PyObject *) PY_TYPE(PythonFieldTimeInterpolator), "class_", make_descriptor(PythonFieldTimeInterpolator::initializeClass, 1));
+        PyObject_SetAttrString((PyObject *) PY_TYPE(PythonFieldTimeInterpolator), "wrapfn_", make_descriptor(t_PythonFieldTimeInterpolator::wrap_jobject));
+        PyObject_SetAttrString((PyObject *) PY_TYPE(PythonFieldTimeInterpolator), "boxfn_", make_descriptor(boxObject));
+        jclass cls = env->getClass(PythonFieldTimeInterpolator::initializeClass);
+        JNINativeMethod methods[] = {
+          { "getExtrapolationThreshold", "()D", (void *) t_PythonFieldTimeInterpolator_getExtrapolationThreshold0 },
+          { "getNbInterpolationPoints", "()I", (void *) t_PythonFieldTimeInterpolator_getNbInterpolationPoints1 },
+          { "getSubInterpolators", "()Ljava/util/List;", (void *) t_PythonFieldTimeInterpolator_getSubInterpolators2 },
+          { "interpolate", "(Lorg/orekit/time/FieldAbsoluteDate;Ljava/util/Collection;)Lorg/orekit/time/FieldTimeInterpolator;", (void *) t_PythonFieldTimeInterpolator_interpolate3 },
+          { "interpolate", "(Lorg/orekit/time/FieldAbsoluteDate;Ljava/util/stream/Stream;)Lorg/orekit/time/FieldTimeInterpolator;", (void *) t_PythonFieldTimeInterpolator_interpolate4 },
+          { "pythonDecRef", "()V", (void *) t_PythonFieldTimeInterpolator_pythonDecRef5 },
+        };
+        env->registerNatives(cls, methods, 6);
+      }
+
+      static PyObject *t_PythonFieldTimeInterpolator_cast_(PyTypeObject *type, PyObject *arg)
+      {
+        if (!(arg = castCheck(arg, PythonFieldTimeInterpolator::initializeClass, 1)))
           return NULL;
-        return t_Constants::wrap_Object(Constants(((t_Constants *) arg)->object.this$));
+        return t_PythonFieldTimeInterpolator::wrap_Object(PythonFieldTimeInterpolator(((t_PythonFieldTimeInterpolator *) arg)->object.this$));
       }
-      static PyObject *t_Constants_instance_(PyTypeObject *type, PyObject *arg)
+      static PyObject *t_PythonFieldTimeInterpolator_instance_(PyTypeObject *type, PyObject *arg)
       {
-        if (!castCheck(arg, Constants::initializeClass, 0))
+        if (!castCheck(arg, PythonFieldTimeInterpolator::initializeClass, 0))
           Py_RETURN_FALSE;
         Py_RETURN_TRUE;
+      }
+
+      static PyObject *t_PythonFieldTimeInterpolator_of_(t_PythonFieldTimeInterpolator *self, PyObject *args)
+      {
+        if (!parseArg(args, "T", 2, &(self->parameters)))
+          Py_RETURN_SELF;
+        return PyErr_SetArgsError((PyObject *) self, "of_", args);
+      }
+
+      static int t_PythonFieldTimeInterpolator_init_(t_PythonFieldTimeInterpolator *self, PyObject *args, PyObject *kwds)
+      {
+        PythonFieldTimeInterpolator object((jobject) NULL);
+
+        INT_CALL(object = PythonFieldTimeInterpolator());
+        self->object = object;
+
+        Py_INCREF((PyObject *) self);
+        self->object.pythonExtension((jlong) (Py_intptr_t) (void *) self);
+
+        return 0;
+      }
+
+      static PyObject *t_PythonFieldTimeInterpolator_finalize(t_PythonFieldTimeInterpolator *self)
+      {
+        OBJ_CALL(self->object.finalize());
+        Py_RETURN_NONE;
+      }
+
+      static PyObject *t_PythonFieldTimeInterpolator_pythonExtension(t_PythonFieldTimeInterpolator *self, PyObject *args)
+      {
+        switch (PyTuple_GET_SIZE(args)) {
+         case 0:
+          {
+            jlong result;
+            OBJ_CALL(result = self->object.pythonExtension());
+            return PyLong_FromLongLong((PY_LONG_LONG) result);
+          }
+          break;
+         case 1:
+          {
+            jlong a0;
+
+            if (!parseArgs(args, "J", &a0))
+            {
+              OBJ_CALL(self->object.pythonExtension(a0));
+              Py_RETURN_NONE;
+            }
+          }
+        }
+
+        PyErr_SetArgsError((PyObject *) self, "pythonExtension", args);
+        return NULL;
+      }
+
+      static jdouble JNICALL t_PythonFieldTimeInterpolator_getExtrapolationThreshold0(JNIEnv *jenv, jobject jobj)
+      {
+        jlong ptr = jenv->CallLongMethod(jobj, PythonFieldTimeInterpolator::mids$[PythonFieldTimeInterpolator::mid_pythonExtension_492808a339bfa35f]);
+        PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+        PythonGIL gil(jenv);
+        jdouble value;
+        PyObject *result = PyObject_CallMethod(obj, "getExtrapolationThreshold", "");
+        if (!result)
+          throwPythonError();
+        else if (parseArg(result, "D", &value))
+        {
+          throwTypeError("getExtrapolationThreshold", result);
+          Py_DECREF(result);
+        }
+        else
+        {
+          Py_DECREF(result);
+          return value;
+        }
+
+        return (jdouble) 0;
+      }
+
+      static jint JNICALL t_PythonFieldTimeInterpolator_getNbInterpolationPoints1(JNIEnv *jenv, jobject jobj)
+      {
+        jlong ptr = jenv->CallLongMethod(jobj, PythonFieldTimeInterpolator::mids$[PythonFieldTimeInterpolator::mid_pythonExtension_492808a339bfa35f]);
+        PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+        PythonGIL gil(jenv);
+        jint value;
+        PyObject *result = PyObject_CallMethod(obj, "getNbInterpolationPoints", "");
+        if (!result)
+          throwPythonError();
+        else if (parseArg(result, "I", &value))
+        {
+          throwTypeError("getNbInterpolationPoints", result);
+          Py_DECREF(result);
+        }
+        else
+        {
+          Py_DECREF(result);
+          return value;
+        }
+
+        return (jint) 0;
+      }
+
+      static jobject JNICALL t_PythonFieldTimeInterpolator_getSubInterpolators2(JNIEnv *jenv, jobject jobj)
+      {
+        jlong ptr = jenv->CallLongMethod(jobj, PythonFieldTimeInterpolator::mids$[PythonFieldTimeInterpolator::mid_pythonExtension_492808a339bfa35f]);
+        PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+        PythonGIL gil(jenv);
+        ::java::util::List value((jobject) NULL);
+        PyObject *result = PyObject_CallMethod(obj, "getSubInterpolators", "");
+        if (!result)
+          throwPythonError();
+        else if (parseArg(result, "k", ::java::util::List::initializeClass, &value))
+        {
+          throwTypeError("getSubInterpolators", result);
+          Py_DECREF(result);
+        }
+        else
+        {
+          jobj = jenv->NewLocalRef(value.this$);
+          Py_DECREF(result);
+          return jobj;
+        }
+
+        return (jobject) NULL;
+      }
+
+      static jobject JNICALL t_PythonFieldTimeInterpolator_interpolate3(JNIEnv *jenv, jobject jobj, jobject a0, jobject a1)
+      {
+        jlong ptr = jenv->CallLongMethod(jobj, PythonFieldTimeInterpolator::mids$[PythonFieldTimeInterpolator::mid_pythonExtension_492808a339bfa35f]);
+        PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+        PythonGIL gil(jenv);
+        ::org::orekit::time::FieldTimeInterpolator value((jobject) NULL);
+        PyObject *o0 = ::org::orekit::time::t_FieldAbsoluteDate::wrap_Object(::org::orekit::time::FieldAbsoluteDate(a0));
+        PyObject *o1 = ::java::util::t_Collection::wrap_Object(::java::util::Collection(a1));
+        PyObject *result = PyObject_CallMethod(obj, "interpolate", "OO", o0, o1);
+        Py_DECREF(o0);
+        Py_DECREF(o1);
+        if (!result)
+          throwPythonError();
+        else if (parseArg(result, "k", ::org::orekit::time::FieldTimeInterpolator::initializeClass, &value))
+        {
+          throwTypeError("interpolate", result);
+          Py_DECREF(result);
+        }
+        else
+        {
+          jobj = jenv->NewLocalRef(value.this$);
+          Py_DECREF(result);
+          return jobj;
+        }
+
+        return (jobject) NULL;
+      }
+
+      static jobject JNICALL t_PythonFieldTimeInterpolator_interpolate4(JNIEnv *jenv, jobject jobj, jobject a0, jobject a1)
+      {
+        jlong ptr = jenv->CallLongMethod(jobj, PythonFieldTimeInterpolator::mids$[PythonFieldTimeInterpolator::mid_pythonExtension_492808a339bfa35f]);
+        PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+        PythonGIL gil(jenv);
+        ::org::orekit::time::FieldTimeInterpolator value((jobject) NULL);
+        PyObject *o0 = ::org::orekit::time::t_FieldAbsoluteDate::wrap_Object(::org::orekit::time::FieldAbsoluteDate(a0));
+        PyObject *o1 = ::java::util::stream::t_Stream::wrap_Object(::java::util::stream::Stream(a1));
+        PyObject *result = PyObject_CallMethod(obj, "interpolate", "OO", o0, o1);
+        Py_DECREF(o0);
+        Py_DECREF(o1);
+        if (!result)
+          throwPythonError();
+        else if (parseArg(result, "k", ::org::orekit::time::FieldTimeInterpolator::initializeClass, &value))
+        {
+          throwTypeError("interpolate", result);
+          Py_DECREF(result);
+        }
+        else
+        {
+          jobj = jenv->NewLocalRef(value.this$);
+          Py_DECREF(result);
+          return jobj;
+        }
+
+        return (jobject) NULL;
+      }
+
+      static void JNICALL t_PythonFieldTimeInterpolator_pythonDecRef5(JNIEnv *jenv, jobject jobj)
+      {
+        jlong ptr = jenv->CallLongMethod(jobj, PythonFieldTimeInterpolator::mids$[PythonFieldTimeInterpolator::mid_pythonExtension_492808a339bfa35f]);
+        PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+
+        if (obj != NULL)
+        {
+          jenv->CallVoidMethod(jobj, PythonFieldTimeInterpolator::mids$[PythonFieldTimeInterpolator::mid_pythonExtension_3a8e7649f31fdb20], (jlong) 0);
+          env->finalizeObject(jenv, obj);
+        }
+      }
+
+      static PyObject *t_PythonFieldTimeInterpolator_get__self(t_PythonFieldTimeInterpolator *self, void *data)
+      {
+        jlong ptr;
+        OBJ_CALL(ptr = self->object.pythonExtension());
+        PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+
+        if (obj != NULL)
+        {
+          Py_INCREF(obj);
+          return obj;
+        }
+        else
+          Py_RETURN_NONE;
+      }
+      static PyObject *t_PythonFieldTimeInterpolator_get__parameters_(t_PythonFieldTimeInterpolator *self, void *data)
+      {
+        return typeParameters(self->parameters, sizeof(self->parameters));
       }
     }
   }
 }
 #include <jni.h>
 #include "JCCEnv.h"
-#include "org/hipparchus/optim/univariate/SearchInterval.h"
-#include "org/hipparchus/optim/OptimizationData.h"
+#include "org/orekit/forces/maneuvers/trigger/DateBasedManeuverTriggers.h"
+#include "java/util/List.h"
+#include "org/orekit/time/AbsoluteDate.h"
 #include "java/lang/Class.h"
+#include "org/orekit/utils/ParameterDriver.h"
+#include "java/lang/String.h"
+#include "org/orekit/propagation/events/ParameterDrivenDateIntervalDetector.h"
+#include "JArray.h"
+
+namespace org {
+  namespace orekit {
+    namespace forces {
+      namespace maneuvers {
+        namespace trigger {
+
+          ::java::lang::Class *DateBasedManeuverTriggers::class$ = NULL;
+          jmethodID *DateBasedManeuverTriggers::mids$ = NULL;
+          bool DateBasedManeuverTriggers::live$ = false;
+          ::java::lang::String *DateBasedManeuverTriggers::DEFAULT_NAME = NULL;
+
+          jclass DateBasedManeuverTriggers::initializeClass(bool getOnly)
+          {
+            if (getOnly)
+              return (jclass) (live$ ? class$->this$ : NULL);
+            if (class$ == NULL)
+            {
+              jclass cls = (jclass) env->findClass("org/orekit/forces/maneuvers/trigger/DateBasedManeuverTriggers");
+
+              mids$ = new jmethodID[max_mid];
+              mids$[mid_init$_fdc72bfdba154d74] = env->getMethodID(cls, "<init>", "(Lorg/orekit/time/AbsoluteDate;D)V");
+              mids$[mid_init$_7d29df8e1e987e68] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;Lorg/orekit/time/AbsoluteDate;D)V");
+              mids$[mid_getDuration_dff5885c2c873297] = env->getMethodID(cls, "getDuration", "()D");
+              mids$[mid_getEndDate_85703d13e302437e] = env->getMethodID(cls, "getEndDate", "()Lorg/orekit/time/AbsoluteDate;");
+              mids$[mid_getName_11b109bd155ca898] = env->getMethodID(cls, "getName", "()Ljava/lang/String;");
+              mids$[mid_getParametersDrivers_2afa36052df4765d] = env->getMethodID(cls, "getParametersDrivers", "()Ljava/util/List;");
+              mids$[mid_getStartDate_85703d13e302437e] = env->getMethodID(cls, "getStartDate", "()Lorg/orekit/time/AbsoluteDate;");
+              mids$[mid_convertIntervalDetector_6d5643096d51e9e8] = env->getMethodID(cls, "convertIntervalDetector", "(Lorg/hipparchus/Field;Lorg/orekit/propagation/events/ParameterDrivenDateIntervalDetector;)Lorg/orekit/propagation/events/FieldAbstractDetector;");
+
+              class$ = new ::java::lang::Class(cls);
+              cls = (jclass) class$->this$;
+
+              DEFAULT_NAME = new ::java::lang::String(env->getStaticObjectField(cls, "DEFAULT_NAME", "Ljava/lang/String;"));
+              live$ = true;
+            }
+            return (jclass) class$->this$;
+          }
+
+          DateBasedManeuverTriggers::DateBasedManeuverTriggers(const ::org::orekit::time::AbsoluteDate & a0, jdouble a1) : ::org::orekit::forces::maneuvers::trigger::IntervalEventTrigger(env->newObject(initializeClass, &mids$, mid_init$_fdc72bfdba154d74, a0.this$, a1)) {}
+
+          DateBasedManeuverTriggers::DateBasedManeuverTriggers(const ::java::lang::String & a0, const ::org::orekit::time::AbsoluteDate & a1, jdouble a2) : ::org::orekit::forces::maneuvers::trigger::IntervalEventTrigger(env->newObject(initializeClass, &mids$, mid_init$_7d29df8e1e987e68, a0.this$, a1.this$, a2)) {}
+
+          jdouble DateBasedManeuverTriggers::getDuration() const
+          {
+            return env->callDoubleMethod(this$, mids$[mid_getDuration_dff5885c2c873297]);
+          }
+
+          ::org::orekit::time::AbsoluteDate DateBasedManeuverTriggers::getEndDate() const
+          {
+            return ::org::orekit::time::AbsoluteDate(env->callObjectMethod(this$, mids$[mid_getEndDate_85703d13e302437e]));
+          }
+
+          ::java::lang::String DateBasedManeuverTriggers::getName() const
+          {
+            return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getName_11b109bd155ca898]));
+          }
+
+          ::java::util::List DateBasedManeuverTriggers::getParametersDrivers() const
+          {
+            return ::java::util::List(env->callObjectMethod(this$, mids$[mid_getParametersDrivers_2afa36052df4765d]));
+          }
+
+          ::org::orekit::time::AbsoluteDate DateBasedManeuverTriggers::getStartDate() const
+          {
+            return ::org::orekit::time::AbsoluteDate(env->callObjectMethod(this$, mids$[mid_getStartDate_85703d13e302437e]));
+          }
+        }
+      }
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace org {
+  namespace orekit {
+    namespace forces {
+      namespace maneuvers {
+        namespace trigger {
+          static PyObject *t_DateBasedManeuverTriggers_cast_(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_DateBasedManeuverTriggers_instance_(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_DateBasedManeuverTriggers_of_(t_DateBasedManeuverTriggers *self, PyObject *args);
+          static int t_DateBasedManeuverTriggers_init_(t_DateBasedManeuverTriggers *self, PyObject *args, PyObject *kwds);
+          static PyObject *t_DateBasedManeuverTriggers_getDuration(t_DateBasedManeuverTriggers *self);
+          static PyObject *t_DateBasedManeuverTriggers_getEndDate(t_DateBasedManeuverTriggers *self);
+          static PyObject *t_DateBasedManeuverTriggers_getName(t_DateBasedManeuverTriggers *self, PyObject *args);
+          static PyObject *t_DateBasedManeuverTriggers_getParametersDrivers(t_DateBasedManeuverTriggers *self, PyObject *args);
+          static PyObject *t_DateBasedManeuverTriggers_getStartDate(t_DateBasedManeuverTriggers *self);
+          static PyObject *t_DateBasedManeuverTriggers_get__duration(t_DateBasedManeuverTriggers *self, void *data);
+          static PyObject *t_DateBasedManeuverTriggers_get__endDate(t_DateBasedManeuverTriggers *self, void *data);
+          static PyObject *t_DateBasedManeuverTriggers_get__name(t_DateBasedManeuverTriggers *self, void *data);
+          static PyObject *t_DateBasedManeuverTriggers_get__parametersDrivers(t_DateBasedManeuverTriggers *self, void *data);
+          static PyObject *t_DateBasedManeuverTriggers_get__startDate(t_DateBasedManeuverTriggers *self, void *data);
+          static PyObject *t_DateBasedManeuverTriggers_get__parameters_(t_DateBasedManeuverTriggers *self, void *data);
+          static PyGetSetDef t_DateBasedManeuverTriggers__fields_[] = {
+            DECLARE_GET_FIELD(t_DateBasedManeuverTriggers, duration),
+            DECLARE_GET_FIELD(t_DateBasedManeuverTriggers, endDate),
+            DECLARE_GET_FIELD(t_DateBasedManeuverTriggers, name),
+            DECLARE_GET_FIELD(t_DateBasedManeuverTriggers, parametersDrivers),
+            DECLARE_GET_FIELD(t_DateBasedManeuverTriggers, startDate),
+            DECLARE_GET_FIELD(t_DateBasedManeuverTriggers, parameters_),
+            { NULL, NULL, NULL, NULL, NULL }
+          };
+
+          static PyMethodDef t_DateBasedManeuverTriggers__methods_[] = {
+            DECLARE_METHOD(t_DateBasedManeuverTriggers, cast_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_DateBasedManeuverTriggers, instance_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_DateBasedManeuverTriggers, of_, METH_VARARGS),
+            DECLARE_METHOD(t_DateBasedManeuverTriggers, getDuration, METH_NOARGS),
+            DECLARE_METHOD(t_DateBasedManeuverTriggers, getEndDate, METH_NOARGS),
+            DECLARE_METHOD(t_DateBasedManeuverTriggers, getName, METH_VARARGS),
+            DECLARE_METHOD(t_DateBasedManeuverTriggers, getParametersDrivers, METH_VARARGS),
+            DECLARE_METHOD(t_DateBasedManeuverTriggers, getStartDate, METH_NOARGS),
+            { NULL, NULL, 0, NULL }
+          };
+
+          static PyType_Slot PY_TYPE_SLOTS(DateBasedManeuverTriggers)[] = {
+            { Py_tp_methods, t_DateBasedManeuverTriggers__methods_ },
+            { Py_tp_init, (void *) t_DateBasedManeuverTriggers_init_ },
+            { Py_tp_getset, t_DateBasedManeuverTriggers__fields_ },
+            { 0, NULL }
+          };
+
+          static PyType_Def *PY_TYPE_BASES(DateBasedManeuverTriggers)[] = {
+            &PY_TYPE_DEF(::org::orekit::forces::maneuvers::trigger::IntervalEventTrigger),
+            NULL
+          };
+
+          DEFINE_TYPE(DateBasedManeuverTriggers, t_DateBasedManeuverTriggers, DateBasedManeuverTriggers);
+          PyObject *t_DateBasedManeuverTriggers::wrap_Object(const DateBasedManeuverTriggers& object, PyTypeObject *p0)
+          {
+            PyObject *obj = t_DateBasedManeuverTriggers::wrap_Object(object);
+            if (obj != NULL && obj != Py_None)
+            {
+              t_DateBasedManeuverTriggers *self = (t_DateBasedManeuverTriggers *) obj;
+              self->parameters[0] = p0;
+            }
+            return obj;
+          }
+
+          PyObject *t_DateBasedManeuverTriggers::wrap_jobject(const jobject& object, PyTypeObject *p0)
+          {
+            PyObject *obj = t_DateBasedManeuverTriggers::wrap_jobject(object);
+            if (obj != NULL && obj != Py_None)
+            {
+              t_DateBasedManeuverTriggers *self = (t_DateBasedManeuverTriggers *) obj;
+              self->parameters[0] = p0;
+            }
+            return obj;
+          }
+
+          void t_DateBasedManeuverTriggers::install(PyObject *module)
+          {
+            installType(&PY_TYPE(DateBasedManeuverTriggers), &PY_TYPE_DEF(DateBasedManeuverTriggers), module, "DateBasedManeuverTriggers", 0);
+          }
+
+          void t_DateBasedManeuverTriggers::initialize(PyObject *module)
+          {
+            PyObject_SetAttrString((PyObject *) PY_TYPE(DateBasedManeuverTriggers), "class_", make_descriptor(DateBasedManeuverTriggers::initializeClass, 1));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(DateBasedManeuverTriggers), "wrapfn_", make_descriptor(t_DateBasedManeuverTriggers::wrap_jobject));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(DateBasedManeuverTriggers), "boxfn_", make_descriptor(boxObject));
+            env->getClass(DateBasedManeuverTriggers::initializeClass);
+            PyObject_SetAttrString((PyObject *) PY_TYPE(DateBasedManeuverTriggers), "DEFAULT_NAME", make_descriptor(j2p(*DateBasedManeuverTriggers::DEFAULT_NAME)));
+          }
+
+          static PyObject *t_DateBasedManeuverTriggers_cast_(PyTypeObject *type, PyObject *arg)
+          {
+            if (!(arg = castCheck(arg, DateBasedManeuverTriggers::initializeClass, 1)))
+              return NULL;
+            return t_DateBasedManeuverTriggers::wrap_Object(DateBasedManeuverTriggers(((t_DateBasedManeuverTriggers *) arg)->object.this$));
+          }
+          static PyObject *t_DateBasedManeuverTriggers_instance_(PyTypeObject *type, PyObject *arg)
+          {
+            if (!castCheck(arg, DateBasedManeuverTriggers::initializeClass, 0))
+              Py_RETURN_FALSE;
+            Py_RETURN_TRUE;
+          }
+
+          static PyObject *t_DateBasedManeuverTriggers_of_(t_DateBasedManeuverTriggers *self, PyObject *args)
+          {
+            if (!parseArg(args, "T", 1, &(self->parameters)))
+              Py_RETURN_SELF;
+            return PyErr_SetArgsError((PyObject *) self, "of_", args);
+          }
+
+          static int t_DateBasedManeuverTriggers_init_(t_DateBasedManeuverTriggers *self, PyObject *args, PyObject *kwds)
+          {
+            switch (PyTuple_GET_SIZE(args)) {
+             case 2:
+              {
+                ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
+                jdouble a1;
+                DateBasedManeuverTriggers object((jobject) NULL);
+
+                if (!parseArgs(args, "kD", ::org::orekit::time::AbsoluteDate::initializeClass, &a0, &a1))
+                {
+                  INT_CALL(object = DateBasedManeuverTriggers(a0, a1));
+                  self->object = object;
+                  self->parameters[0] = ::org::orekit::propagation::events::PY_TYPE(ParameterDrivenDateIntervalDetector);
+                  break;
+                }
+              }
+              goto err;
+             case 3:
+              {
+                ::java::lang::String a0((jobject) NULL);
+                ::org::orekit::time::AbsoluteDate a1((jobject) NULL);
+                jdouble a2;
+                DateBasedManeuverTriggers object((jobject) NULL);
+
+                if (!parseArgs(args, "skD", ::org::orekit::time::AbsoluteDate::initializeClass, &a0, &a1, &a2))
+                {
+                  INT_CALL(object = DateBasedManeuverTriggers(a0, a1, a2));
+                  self->object = object;
+                  self->parameters[0] = ::org::orekit::propagation::events::PY_TYPE(ParameterDrivenDateIntervalDetector);
+                  break;
+                }
+              }
+             default:
+             err:
+              PyErr_SetArgsError((PyObject *) self, "__init__", args);
+              return -1;
+            }
+
+            return 0;
+          }
+
+          static PyObject *t_DateBasedManeuverTriggers_getDuration(t_DateBasedManeuverTriggers *self)
+          {
+            jdouble result;
+            OBJ_CALL(result = self->object.getDuration());
+            return PyFloat_FromDouble((double) result);
+          }
+
+          static PyObject *t_DateBasedManeuverTriggers_getEndDate(t_DateBasedManeuverTriggers *self)
+          {
+            ::org::orekit::time::AbsoluteDate result((jobject) NULL);
+            OBJ_CALL(result = self->object.getEndDate());
+            return ::org::orekit::time::t_AbsoluteDate::wrap_Object(result);
+          }
+
+          static PyObject *t_DateBasedManeuverTriggers_getName(t_DateBasedManeuverTriggers *self, PyObject *args)
+          {
+            ::java::lang::String result((jobject) NULL);
+
+            if (!parseArgs(args, ""))
+            {
+              OBJ_CALL(result = self->object.getName());
+              return j2p(result);
+            }
+
+            return callSuper(PY_TYPE(DateBasedManeuverTriggers), (PyObject *) self, "getName", args, 2);
+          }
+
+          static PyObject *t_DateBasedManeuverTriggers_getParametersDrivers(t_DateBasedManeuverTriggers *self, PyObject *args)
+          {
+            ::java::util::List result((jobject) NULL);
+
+            if (!parseArgs(args, ""))
+            {
+              OBJ_CALL(result = self->object.getParametersDrivers());
+              return ::java::util::t_List::wrap_Object(result, ::org::orekit::utils::PY_TYPE(ParameterDriver));
+            }
+
+            return callSuper(PY_TYPE(DateBasedManeuverTriggers), (PyObject *) self, "getParametersDrivers", args, 2);
+          }
+
+          static PyObject *t_DateBasedManeuverTriggers_getStartDate(t_DateBasedManeuverTriggers *self)
+          {
+            ::org::orekit::time::AbsoluteDate result((jobject) NULL);
+            OBJ_CALL(result = self->object.getStartDate());
+            return ::org::orekit::time::t_AbsoluteDate::wrap_Object(result);
+          }
+          static PyObject *t_DateBasedManeuverTriggers_get__parameters_(t_DateBasedManeuverTriggers *self, void *data)
+          {
+            return typeParameters(self->parameters, sizeof(self->parameters));
+          }
+
+          static PyObject *t_DateBasedManeuverTriggers_get__duration(t_DateBasedManeuverTriggers *self, void *data)
+          {
+            jdouble value;
+            OBJ_CALL(value = self->object.getDuration());
+            return PyFloat_FromDouble((double) value);
+          }
+
+          static PyObject *t_DateBasedManeuverTriggers_get__endDate(t_DateBasedManeuverTriggers *self, void *data)
+          {
+            ::org::orekit::time::AbsoluteDate value((jobject) NULL);
+            OBJ_CALL(value = self->object.getEndDate());
+            return ::org::orekit::time::t_AbsoluteDate::wrap_Object(value);
+          }
+
+          static PyObject *t_DateBasedManeuverTriggers_get__name(t_DateBasedManeuverTriggers *self, void *data)
+          {
+            ::java::lang::String value((jobject) NULL);
+            OBJ_CALL(value = self->object.getName());
+            return j2p(value);
+          }
+
+          static PyObject *t_DateBasedManeuverTriggers_get__parametersDrivers(t_DateBasedManeuverTriggers *self, void *data)
+          {
+            ::java::util::List value((jobject) NULL);
+            OBJ_CALL(value = self->object.getParametersDrivers());
+            return ::java::util::t_List::wrap_Object(value);
+          }
+
+          static PyObject *t_DateBasedManeuverTriggers_get__startDate(t_DateBasedManeuverTriggers *self, void *data)
+          {
+            ::org::orekit::time::AbsoluteDate value((jobject) NULL);
+            OBJ_CALL(value = self->object.getStartDate());
+            return ::org::orekit::time::t_AbsoluteDate::wrap_Object(value);
+          }
+        }
+      }
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "org/orekit/estimation/measurements/generation/RangeBuilder.h"
+#include "org/hipparchus/random/CorrelatedRandomVectorGenerator.h"
+#include "java/util/Map.h"
+#include "org/orekit/estimation/measurements/GroundStation.h"
+#include "org/orekit/time/AbsoluteDate.h"
+#include "java/lang/Class.h"
+#include "org/orekit/estimation/measurements/ObservableSatellite.h"
+#include "org/orekit/estimation/measurements/Range.h"
+#include "org/orekit/propagation/sampling/OrekitStepInterpolator.h"
+#include "JArray.h"
+
+namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        namespace generation {
+
+          ::java::lang::Class *RangeBuilder::class$ = NULL;
+          jmethodID *RangeBuilder::mids$ = NULL;
+          bool RangeBuilder::live$ = false;
+
+          jclass RangeBuilder::initializeClass(bool getOnly)
+          {
+            if (getOnly)
+              return (jclass) (live$ ? class$->this$ : NULL);
+            if (class$ == NULL)
+            {
+              jclass cls = (jclass) env->findClass("org/orekit/estimation/measurements/generation/RangeBuilder");
+
+              mids$ = new jmethodID[max_mid];
+              mids$[mid_init$_cde18597fb8b008b] = env->getMethodID(cls, "<init>", "(Lorg/hipparchus/random/CorrelatedRandomVectorGenerator;Lorg/orekit/estimation/measurements/GroundStation;ZDDLorg/orekit/estimation/measurements/ObservableSatellite;)V");
+              mids$[mid_build_3ea6986c2d4922f7] = env->getMethodID(cls, "build", "(Lorg/orekit/time/AbsoluteDate;Ljava/util/Map;)Lorg/orekit/estimation/measurements/Range;");
+
+              class$ = new ::java::lang::Class(cls);
+              live$ = true;
+            }
+            return (jclass) class$->this$;
+          }
+
+          RangeBuilder::RangeBuilder(const ::org::hipparchus::random::CorrelatedRandomVectorGenerator & a0, const ::org::orekit::estimation::measurements::GroundStation & a1, jboolean a2, jdouble a3, jdouble a4, const ::org::orekit::estimation::measurements::ObservableSatellite & a5) : ::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder(env->newObject(initializeClass, &mids$, mid_init$_cde18597fb8b008b, a0.this$, a1.this$, a2, a3, a4, a5.this$)) {}
+
+          ::org::orekit::estimation::measurements::Range RangeBuilder::build(const ::org::orekit::time::AbsoluteDate & a0, const ::java::util::Map & a1) const
+          {
+            return ::org::orekit::estimation::measurements::Range(env->callObjectMethod(this$, mids$[mid_build_3ea6986c2d4922f7], a0.this$, a1.this$));
+          }
+        }
+      }
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        namespace generation {
+          static PyObject *t_RangeBuilder_cast_(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_RangeBuilder_instance_(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_RangeBuilder_of_(t_RangeBuilder *self, PyObject *args);
+          static int t_RangeBuilder_init_(t_RangeBuilder *self, PyObject *args, PyObject *kwds);
+          static PyObject *t_RangeBuilder_build(t_RangeBuilder *self, PyObject *args);
+          static PyObject *t_RangeBuilder_get__parameters_(t_RangeBuilder *self, void *data);
+          static PyGetSetDef t_RangeBuilder__fields_[] = {
+            DECLARE_GET_FIELD(t_RangeBuilder, parameters_),
+            { NULL, NULL, NULL, NULL, NULL }
+          };
+
+          static PyMethodDef t_RangeBuilder__methods_[] = {
+            DECLARE_METHOD(t_RangeBuilder, cast_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_RangeBuilder, instance_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_RangeBuilder, of_, METH_VARARGS),
+            DECLARE_METHOD(t_RangeBuilder, build, METH_VARARGS),
+            { NULL, NULL, 0, NULL }
+          };
+
+          static PyType_Slot PY_TYPE_SLOTS(RangeBuilder)[] = {
+            { Py_tp_methods, t_RangeBuilder__methods_ },
+            { Py_tp_init, (void *) t_RangeBuilder_init_ },
+            { Py_tp_getset, t_RangeBuilder__fields_ },
+            { 0, NULL }
+          };
+
+          static PyType_Def *PY_TYPE_BASES(RangeBuilder)[] = {
+            &PY_TYPE_DEF(::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder),
+            NULL
+          };
+
+          DEFINE_TYPE(RangeBuilder, t_RangeBuilder, RangeBuilder);
+          PyObject *t_RangeBuilder::wrap_Object(const RangeBuilder& object, PyTypeObject *p0)
+          {
+            PyObject *obj = t_RangeBuilder::wrap_Object(object);
+            if (obj != NULL && obj != Py_None)
+            {
+              t_RangeBuilder *self = (t_RangeBuilder *) obj;
+              self->parameters[0] = p0;
+            }
+            return obj;
+          }
+
+          PyObject *t_RangeBuilder::wrap_jobject(const jobject& object, PyTypeObject *p0)
+          {
+            PyObject *obj = t_RangeBuilder::wrap_jobject(object);
+            if (obj != NULL && obj != Py_None)
+            {
+              t_RangeBuilder *self = (t_RangeBuilder *) obj;
+              self->parameters[0] = p0;
+            }
+            return obj;
+          }
+
+          void t_RangeBuilder::install(PyObject *module)
+          {
+            installType(&PY_TYPE(RangeBuilder), &PY_TYPE_DEF(RangeBuilder), module, "RangeBuilder", 0);
+          }
+
+          void t_RangeBuilder::initialize(PyObject *module)
+          {
+            PyObject_SetAttrString((PyObject *) PY_TYPE(RangeBuilder), "class_", make_descriptor(RangeBuilder::initializeClass, 1));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(RangeBuilder), "wrapfn_", make_descriptor(t_RangeBuilder::wrap_jobject));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(RangeBuilder), "boxfn_", make_descriptor(boxObject));
+          }
+
+          static PyObject *t_RangeBuilder_cast_(PyTypeObject *type, PyObject *arg)
+          {
+            if (!(arg = castCheck(arg, RangeBuilder::initializeClass, 1)))
+              return NULL;
+            return t_RangeBuilder::wrap_Object(RangeBuilder(((t_RangeBuilder *) arg)->object.this$));
+          }
+          static PyObject *t_RangeBuilder_instance_(PyTypeObject *type, PyObject *arg)
+          {
+            if (!castCheck(arg, RangeBuilder::initializeClass, 0))
+              Py_RETURN_FALSE;
+            Py_RETURN_TRUE;
+          }
+
+          static PyObject *t_RangeBuilder_of_(t_RangeBuilder *self, PyObject *args)
+          {
+            if (!parseArg(args, "T", 1, &(self->parameters)))
+              Py_RETURN_SELF;
+            return PyErr_SetArgsError((PyObject *) self, "of_", args);
+          }
+
+          static int t_RangeBuilder_init_(t_RangeBuilder *self, PyObject *args, PyObject *kwds)
+          {
+            ::org::hipparchus::random::CorrelatedRandomVectorGenerator a0((jobject) NULL);
+            ::org::orekit::estimation::measurements::GroundStation a1((jobject) NULL);
+            jboolean a2;
+            jdouble a3;
+            jdouble a4;
+            ::org::orekit::estimation::measurements::ObservableSatellite a5((jobject) NULL);
+            RangeBuilder object((jobject) NULL);
+
+            if (!parseArgs(args, "kkZDDk", ::org::hipparchus::random::CorrelatedRandomVectorGenerator::initializeClass, ::org::orekit::estimation::measurements::GroundStation::initializeClass, ::org::orekit::estimation::measurements::ObservableSatellite::initializeClass, &a0, &a1, &a2, &a3, &a4, &a5))
+            {
+              INT_CALL(object = RangeBuilder(a0, a1, a2, a3, a4, a5));
+              self->object = object;
+              self->parameters[0] = ::org::orekit::estimation::measurements::PY_TYPE(Range);
+            }
+            else
+            {
+              PyErr_SetArgsError((PyObject *) self, "__init__", args);
+              return -1;
+            }
+
+            return 0;
+          }
+
+          static PyObject *t_RangeBuilder_build(t_RangeBuilder *self, PyObject *args)
+          {
+            ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
+            ::java::util::Map a1((jobject) NULL);
+            PyTypeObject **p1;
+            ::org::orekit::estimation::measurements::Range result((jobject) NULL);
+
+            if (!parseArgs(args, "kK", ::org::orekit::time::AbsoluteDate::initializeClass, ::java::util::Map::initializeClass, &a0, &a1, &p1, ::java::util::t_Map::parameters_))
+            {
+              OBJ_CALL(result = self->object.build(a0, a1));
+              return ::org::orekit::estimation::measurements::t_Range::wrap_Object(result);
+            }
+
+            return callSuper(PY_TYPE(RangeBuilder), (PyObject *) self, "build", args, 2);
+          }
+          static PyObject *t_RangeBuilder_get__parameters_(t_RangeBuilder *self, void *data)
+          {
+            return typeParameters(self->parameters, sizeof(self->parameters));
+          }
+        }
+      }
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "org/hipparchus/geometry/euclidean/threed/Segment.h"
+#include "java/lang/Class.h"
+#include "org/hipparchus/geometry/euclidean/threed/Vector3D.h"
+#include "org/hipparchus/geometry/euclidean/threed/Line.h"
 #include "JArray.h"
 
 namespace org {
   namespace hipparchus {
-    namespace optim {
-      namespace univariate {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
 
-        ::java::lang::Class *SearchInterval::class$ = NULL;
-        jmethodID *SearchInterval::mids$ = NULL;
-        bool SearchInterval::live$ = false;
+          ::java::lang::Class *Segment::class$ = NULL;
+          jmethodID *Segment::mids$ = NULL;
+          bool Segment::live$ = false;
 
-        jclass SearchInterval::initializeClass(bool getOnly)
-        {
-          if (getOnly)
-            return (jclass) (live$ ? class$->this$ : NULL);
-          if (class$ == NULL)
+          jclass Segment::initializeClass(bool getOnly)
           {
-            jclass cls = (jclass) env->findClass("org/hipparchus/optim/univariate/SearchInterval");
+            if (getOnly)
+              return (jclass) (live$ ? class$->this$ : NULL);
+            if (class$ == NULL)
+            {
+              jclass cls = (jclass) env->findClass("org/hipparchus/geometry/euclidean/threed/Segment");
 
-            mids$ = new jmethodID[max_mid];
-            mids$[mid_init$_1d715fa3b7b756e1] = env->getMethodID(cls, "<init>", "(DD)V");
-            mids$[mid_init$_d0d6094fbd7015c5] = env->getMethodID(cls, "<init>", "(DDD)V");
-            mids$[mid_getMax_456d9a2f64d6b28d] = env->getMethodID(cls, "getMax", "()D");
-            mids$[mid_getMin_456d9a2f64d6b28d] = env->getMethodID(cls, "getMin", "()D");
-            mids$[mid_getStartValue_456d9a2f64d6b28d] = env->getMethodID(cls, "getStartValue", "()D");
+              mids$ = new jmethodID[max_mid];
+              mids$[mid_init$_38903000df91ad6d] = env->getMethodID(cls, "<init>", "(Lorg/hipparchus/geometry/euclidean/threed/Vector3D;Lorg/hipparchus/geometry/euclidean/threed/Vector3D;Lorg/hipparchus/geometry/euclidean/threed/Line;)V");
+              mids$[mid_getEnd_d52645e0d4c07563] = env->getMethodID(cls, "getEnd", "()Lorg/hipparchus/geometry/euclidean/threed/Vector3D;");
+              mids$[mid_getLine_9fb9cdc35bfe2f74] = env->getMethodID(cls, "getLine", "()Lorg/hipparchus/geometry/euclidean/threed/Line;");
+              mids$[mid_getStart_d52645e0d4c07563] = env->getMethodID(cls, "getStart", "()Lorg/hipparchus/geometry/euclidean/threed/Vector3D;");
 
-            class$ = new ::java::lang::Class(cls);
-            live$ = true;
+              class$ = new ::java::lang::Class(cls);
+              live$ = true;
+            }
+            return (jclass) class$->this$;
           }
-          return (jclass) class$->this$;
-        }
 
-        SearchInterval::SearchInterval(jdouble a0, jdouble a1) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_1d715fa3b7b756e1, a0, a1)) {}
+          Segment::Segment(const ::org::hipparchus::geometry::euclidean::threed::Vector3D & a0, const ::org::hipparchus::geometry::euclidean::threed::Vector3D & a1, const ::org::hipparchus::geometry::euclidean::threed::Line & a2) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_38903000df91ad6d, a0.this$, a1.this$, a2.this$)) {}
 
-        SearchInterval::SearchInterval(jdouble a0, jdouble a1, jdouble a2) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_d0d6094fbd7015c5, a0, a1, a2)) {}
+          ::org::hipparchus::geometry::euclidean::threed::Vector3D Segment::getEnd() const
+          {
+            return ::org::hipparchus::geometry::euclidean::threed::Vector3D(env->callObjectMethod(this$, mids$[mid_getEnd_d52645e0d4c07563]));
+          }
 
-        jdouble SearchInterval::getMax() const
-        {
-          return env->callDoubleMethod(this$, mids$[mid_getMax_456d9a2f64d6b28d]);
-        }
+          ::org::hipparchus::geometry::euclidean::threed::Line Segment::getLine() const
+          {
+            return ::org::hipparchus::geometry::euclidean::threed::Line(env->callObjectMethod(this$, mids$[mid_getLine_9fb9cdc35bfe2f74]));
+          }
 
-        jdouble SearchInterval::getMin() const
-        {
-          return env->callDoubleMethod(this$, mids$[mid_getMin_456d9a2f64d6b28d]);
-        }
-
-        jdouble SearchInterval::getStartValue() const
-        {
-          return env->callDoubleMethod(this$, mids$[mid_getStartValue_456d9a2f64d6b28d]);
+          ::org::hipparchus::geometry::euclidean::threed::Vector3D Segment::getStart() const
+          {
+            return ::org::hipparchus::geometry::euclidean::threed::Vector3D(env->callObjectMethod(this$, mids$[mid_getStart_d52645e0d4c07563]));
+          }
         }
       }
     }
@@ -1029,152 +978,135 @@ namespace org {
 
 namespace org {
   namespace hipparchus {
-    namespace optim {
-      namespace univariate {
-        static PyObject *t_SearchInterval_cast_(PyTypeObject *type, PyObject *arg);
-        static PyObject *t_SearchInterval_instance_(PyTypeObject *type, PyObject *arg);
-        static int t_SearchInterval_init_(t_SearchInterval *self, PyObject *args, PyObject *kwds);
-        static PyObject *t_SearchInterval_getMax(t_SearchInterval *self);
-        static PyObject *t_SearchInterval_getMin(t_SearchInterval *self);
-        static PyObject *t_SearchInterval_getStartValue(t_SearchInterval *self);
-        static PyObject *t_SearchInterval_get__max(t_SearchInterval *self, void *data);
-        static PyObject *t_SearchInterval_get__min(t_SearchInterval *self, void *data);
-        static PyObject *t_SearchInterval_get__startValue(t_SearchInterval *self, void *data);
-        static PyGetSetDef t_SearchInterval__fields_[] = {
-          DECLARE_GET_FIELD(t_SearchInterval, max),
-          DECLARE_GET_FIELD(t_SearchInterval, min),
-          DECLARE_GET_FIELD(t_SearchInterval, startValue),
-          { NULL, NULL, NULL, NULL, NULL }
-        };
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          static PyObject *t_Segment_cast_(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_Segment_instance_(PyTypeObject *type, PyObject *arg);
+          static int t_Segment_init_(t_Segment *self, PyObject *args, PyObject *kwds);
+          static PyObject *t_Segment_getEnd(t_Segment *self);
+          static PyObject *t_Segment_getLine(t_Segment *self);
+          static PyObject *t_Segment_getStart(t_Segment *self);
+          static PyObject *t_Segment_get__end(t_Segment *self, void *data);
+          static PyObject *t_Segment_get__line(t_Segment *self, void *data);
+          static PyObject *t_Segment_get__start(t_Segment *self, void *data);
+          static PyGetSetDef t_Segment__fields_[] = {
+            DECLARE_GET_FIELD(t_Segment, end),
+            DECLARE_GET_FIELD(t_Segment, line),
+            DECLARE_GET_FIELD(t_Segment, start),
+            { NULL, NULL, NULL, NULL, NULL }
+          };
 
-        static PyMethodDef t_SearchInterval__methods_[] = {
-          DECLARE_METHOD(t_SearchInterval, cast_, METH_O | METH_CLASS),
-          DECLARE_METHOD(t_SearchInterval, instance_, METH_O | METH_CLASS),
-          DECLARE_METHOD(t_SearchInterval, getMax, METH_NOARGS),
-          DECLARE_METHOD(t_SearchInterval, getMin, METH_NOARGS),
-          DECLARE_METHOD(t_SearchInterval, getStartValue, METH_NOARGS),
-          { NULL, NULL, 0, NULL }
-        };
+          static PyMethodDef t_Segment__methods_[] = {
+            DECLARE_METHOD(t_Segment, cast_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_Segment, instance_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_Segment, getEnd, METH_NOARGS),
+            DECLARE_METHOD(t_Segment, getLine, METH_NOARGS),
+            DECLARE_METHOD(t_Segment, getStart, METH_NOARGS),
+            { NULL, NULL, 0, NULL }
+          };
 
-        static PyType_Slot PY_TYPE_SLOTS(SearchInterval)[] = {
-          { Py_tp_methods, t_SearchInterval__methods_ },
-          { Py_tp_init, (void *) t_SearchInterval_init_ },
-          { Py_tp_getset, t_SearchInterval__fields_ },
-          { 0, NULL }
-        };
+          static PyType_Slot PY_TYPE_SLOTS(Segment)[] = {
+            { Py_tp_methods, t_Segment__methods_ },
+            { Py_tp_init, (void *) t_Segment_init_ },
+            { Py_tp_getset, t_Segment__fields_ },
+            { 0, NULL }
+          };
 
-        static PyType_Def *PY_TYPE_BASES(SearchInterval)[] = {
-          &PY_TYPE_DEF(::java::lang::Object),
-          NULL
-        };
+          static PyType_Def *PY_TYPE_BASES(Segment)[] = {
+            &PY_TYPE_DEF(::java::lang::Object),
+            NULL
+          };
 
-        DEFINE_TYPE(SearchInterval, t_SearchInterval, SearchInterval);
+          DEFINE_TYPE(Segment, t_Segment, Segment);
 
-        void t_SearchInterval::install(PyObject *module)
-        {
-          installType(&PY_TYPE(SearchInterval), &PY_TYPE_DEF(SearchInterval), module, "SearchInterval", 0);
-        }
-
-        void t_SearchInterval::initialize(PyObject *module)
-        {
-          PyObject_SetAttrString((PyObject *) PY_TYPE(SearchInterval), "class_", make_descriptor(SearchInterval::initializeClass, 1));
-          PyObject_SetAttrString((PyObject *) PY_TYPE(SearchInterval), "wrapfn_", make_descriptor(t_SearchInterval::wrap_jobject));
-          PyObject_SetAttrString((PyObject *) PY_TYPE(SearchInterval), "boxfn_", make_descriptor(boxObject));
-        }
-
-        static PyObject *t_SearchInterval_cast_(PyTypeObject *type, PyObject *arg)
-        {
-          if (!(arg = castCheck(arg, SearchInterval::initializeClass, 1)))
-            return NULL;
-          return t_SearchInterval::wrap_Object(SearchInterval(((t_SearchInterval *) arg)->object.this$));
-        }
-        static PyObject *t_SearchInterval_instance_(PyTypeObject *type, PyObject *arg)
-        {
-          if (!castCheck(arg, SearchInterval::initializeClass, 0))
-            Py_RETURN_FALSE;
-          Py_RETURN_TRUE;
-        }
-
-        static int t_SearchInterval_init_(t_SearchInterval *self, PyObject *args, PyObject *kwds)
-        {
-          switch (PyTuple_GET_SIZE(args)) {
-           case 2:
-            {
-              jdouble a0;
-              jdouble a1;
-              SearchInterval object((jobject) NULL);
-
-              if (!parseArgs(args, "DD", &a0, &a1))
-              {
-                INT_CALL(object = SearchInterval(a0, a1));
-                self->object = object;
-                break;
-              }
-            }
-            goto err;
-           case 3:
-            {
-              jdouble a0;
-              jdouble a1;
-              jdouble a2;
-              SearchInterval object((jobject) NULL);
-
-              if (!parseArgs(args, "DDD", &a0, &a1, &a2))
-              {
-                INT_CALL(object = SearchInterval(a0, a1, a2));
-                self->object = object;
-                break;
-              }
-            }
-           default:
-           err:
-            PyErr_SetArgsError((PyObject *) self, "__init__", args);
-            return -1;
+          void t_Segment::install(PyObject *module)
+          {
+            installType(&PY_TYPE(Segment), &PY_TYPE_DEF(Segment), module, "Segment", 0);
           }
 
-          return 0;
-        }
+          void t_Segment::initialize(PyObject *module)
+          {
+            PyObject_SetAttrString((PyObject *) PY_TYPE(Segment), "class_", make_descriptor(Segment::initializeClass, 1));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(Segment), "wrapfn_", make_descriptor(t_Segment::wrap_jobject));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(Segment), "boxfn_", make_descriptor(boxObject));
+          }
 
-        static PyObject *t_SearchInterval_getMax(t_SearchInterval *self)
-        {
-          jdouble result;
-          OBJ_CALL(result = self->object.getMax());
-          return PyFloat_FromDouble((double) result);
-        }
+          static PyObject *t_Segment_cast_(PyTypeObject *type, PyObject *arg)
+          {
+            if (!(arg = castCheck(arg, Segment::initializeClass, 1)))
+              return NULL;
+            return t_Segment::wrap_Object(Segment(((t_Segment *) arg)->object.this$));
+          }
+          static PyObject *t_Segment_instance_(PyTypeObject *type, PyObject *arg)
+          {
+            if (!castCheck(arg, Segment::initializeClass, 0))
+              Py_RETURN_FALSE;
+            Py_RETURN_TRUE;
+          }
 
-        static PyObject *t_SearchInterval_getMin(t_SearchInterval *self)
-        {
-          jdouble result;
-          OBJ_CALL(result = self->object.getMin());
-          return PyFloat_FromDouble((double) result);
-        }
+          static int t_Segment_init_(t_Segment *self, PyObject *args, PyObject *kwds)
+          {
+            ::org::hipparchus::geometry::euclidean::threed::Vector3D a0((jobject) NULL);
+            ::org::hipparchus::geometry::euclidean::threed::Vector3D a1((jobject) NULL);
+            ::org::hipparchus::geometry::euclidean::threed::Line a2((jobject) NULL);
+            Segment object((jobject) NULL);
 
-        static PyObject *t_SearchInterval_getStartValue(t_SearchInterval *self)
-        {
-          jdouble result;
-          OBJ_CALL(result = self->object.getStartValue());
-          return PyFloat_FromDouble((double) result);
-        }
+            if (!parseArgs(args, "kkk", ::org::hipparchus::geometry::euclidean::threed::Vector3D::initializeClass, ::org::hipparchus::geometry::euclidean::threed::Vector3D::initializeClass, ::org::hipparchus::geometry::euclidean::threed::Line::initializeClass, &a0, &a1, &a2))
+            {
+              INT_CALL(object = Segment(a0, a1, a2));
+              self->object = object;
+            }
+            else
+            {
+              PyErr_SetArgsError((PyObject *) self, "__init__", args);
+              return -1;
+            }
 
-        static PyObject *t_SearchInterval_get__max(t_SearchInterval *self, void *data)
-        {
-          jdouble value;
-          OBJ_CALL(value = self->object.getMax());
-          return PyFloat_FromDouble((double) value);
-        }
+            return 0;
+          }
 
-        static PyObject *t_SearchInterval_get__min(t_SearchInterval *self, void *data)
-        {
-          jdouble value;
-          OBJ_CALL(value = self->object.getMin());
-          return PyFloat_FromDouble((double) value);
-        }
+          static PyObject *t_Segment_getEnd(t_Segment *self)
+          {
+            ::org::hipparchus::geometry::euclidean::threed::Vector3D result((jobject) NULL);
+            OBJ_CALL(result = self->object.getEnd());
+            return ::org::hipparchus::geometry::euclidean::threed::t_Vector3D::wrap_Object(result);
+          }
 
-        static PyObject *t_SearchInterval_get__startValue(t_SearchInterval *self, void *data)
-        {
-          jdouble value;
-          OBJ_CALL(value = self->object.getStartValue());
-          return PyFloat_FromDouble((double) value);
+          static PyObject *t_Segment_getLine(t_Segment *self)
+          {
+            ::org::hipparchus::geometry::euclidean::threed::Line result((jobject) NULL);
+            OBJ_CALL(result = self->object.getLine());
+            return ::org::hipparchus::geometry::euclidean::threed::t_Line::wrap_Object(result);
+          }
+
+          static PyObject *t_Segment_getStart(t_Segment *self)
+          {
+            ::org::hipparchus::geometry::euclidean::threed::Vector3D result((jobject) NULL);
+            OBJ_CALL(result = self->object.getStart());
+            return ::org::hipparchus::geometry::euclidean::threed::t_Vector3D::wrap_Object(result);
+          }
+
+          static PyObject *t_Segment_get__end(t_Segment *self, void *data)
+          {
+            ::org::hipparchus::geometry::euclidean::threed::Vector3D value((jobject) NULL);
+            OBJ_CALL(value = self->object.getEnd());
+            return ::org::hipparchus::geometry::euclidean::threed::t_Vector3D::wrap_Object(value);
+          }
+
+          static PyObject *t_Segment_get__line(t_Segment *self, void *data)
+          {
+            ::org::hipparchus::geometry::euclidean::threed::Line value((jobject) NULL);
+            OBJ_CALL(value = self->object.getLine());
+            return ::org::hipparchus::geometry::euclidean::threed::t_Line::wrap_Object(value);
+          }
+
+          static PyObject *t_Segment_get__start(t_Segment *self, void *data)
+          {
+            ::org::hipparchus::geometry::euclidean::threed::Vector3D value((jobject) NULL);
+            OBJ_CALL(value = self->object.getStart());
+            return ::org::hipparchus::geometry::euclidean::threed::t_Vector3D::wrap_Object(value);
+          }
         }
       }
     }
@@ -1182,33 +1114,43 @@ namespace org {
 }
 #include <jni.h>
 #include "JCCEnv.h"
-#include "org/orekit/gnss/metric/messages/rtcm/ephemeris/Rtcm1045.h"
-#include "org/orekit/gnss/metric/messages/rtcm/ephemeris/Rtcm1045Data.h"
+#include "org/orekit/files/ccsds/ndm/odm/ocm/OcmSatelliteEphemeris.h"
+#include "java/util/List.h"
+#include "org/orekit/files/general/EphemerisFile$SatelliteEphemeris.h"
+#include "org/orekit/files/ccsds/ndm/odm/ocm/TrajectoryStateHistory.h"
+#include "org/orekit/time/AbsoluteDate.h"
 #include "java/lang/Class.h"
+#include "java/lang/String.h"
+#include "org/orekit/utils/TimeStampedPVCoordinates.h"
 #include "JArray.h"
 
 namespace org {
   namespace orekit {
-    namespace gnss {
-      namespace metric {
-        namespace messages {
-          namespace rtcm {
-            namespace ephemeris {
+    namespace files {
+      namespace ccsds {
+        namespace ndm {
+          namespace odm {
+            namespace ocm {
 
-              ::java::lang::Class *Rtcm1045::class$ = NULL;
-              jmethodID *Rtcm1045::mids$ = NULL;
-              bool Rtcm1045::live$ = false;
+              ::java::lang::Class *OcmSatelliteEphemeris::class$ = NULL;
+              jmethodID *OcmSatelliteEphemeris::mids$ = NULL;
+              bool OcmSatelliteEphemeris::live$ = false;
 
-              jclass Rtcm1045::initializeClass(bool getOnly)
+              jclass OcmSatelliteEphemeris::initializeClass(bool getOnly)
               {
                 if (getOnly)
                   return (jclass) (live$ ? class$->this$ : NULL);
                 if (class$ == NULL)
                 {
-                  jclass cls = (jclass) env->findClass("org/orekit/gnss/metric/messages/rtcm/ephemeris/Rtcm1045");
+                  jclass cls = (jclass) env->findClass("org/orekit/files/ccsds/ndm/odm/ocm/OcmSatelliteEphemeris");
 
                   mids$ = new jmethodID[max_mid];
-                  mids$[mid_init$_63d7ebd94899370e] = env->getMethodID(cls, "<init>", "(ILorg/orekit/gnss/metric/messages/rtcm/ephemeris/Rtcm1045Data;)V");
+                  mids$[mid_init$_659ce81fb27f7feb] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;DLjava/util/List;)V");
+                  mids$[mid_getId_11b109bd155ca898] = env->getMethodID(cls, "getId", "()Ljava/lang/String;");
+                  mids$[mid_getMu_dff5885c2c873297] = env->getMethodID(cls, "getMu", "()D");
+                  mids$[mid_getSegments_2afa36052df4765d] = env->getMethodID(cls, "getSegments", "()Ljava/util/List;");
+                  mids$[mid_getStart_85703d13e302437e] = env->getMethodID(cls, "getStart", "()Lorg/orekit/time/AbsoluteDate;");
+                  mids$[mid_getStop_85703d13e302437e] = env->getMethodID(cls, "getStop", "()Lorg/orekit/time/AbsoluteDate;");
 
                   class$ = new ::java::lang::Class(cls);
                   live$ = true;
@@ -1216,7 +1158,32 @@ namespace org {
                 return (jclass) class$->this$;
               }
 
-              Rtcm1045::Rtcm1045(jint a0, const ::org::orekit::gnss::metric::messages::rtcm::ephemeris::Rtcm1045Data & a1) : ::org::orekit::gnss::metric::messages::rtcm::ephemeris::RtcmEphemerisMessage(env->newObject(initializeClass, &mids$, mid_init$_63d7ebd94899370e, a0, a1.this$)) {}
+              OcmSatelliteEphemeris::OcmSatelliteEphemeris(const ::java::lang::String & a0, jdouble a1, const ::java::util::List & a2) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_659ce81fb27f7feb, a0.this$, a1, a2.this$)) {}
+
+              ::java::lang::String OcmSatelliteEphemeris::getId() const
+              {
+                return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getId_11b109bd155ca898]));
+              }
+
+              jdouble OcmSatelliteEphemeris::getMu() const
+              {
+                return env->callDoubleMethod(this$, mids$[mid_getMu_dff5885c2c873297]);
+              }
+
+              ::java::util::List OcmSatelliteEphemeris::getSegments() const
+              {
+                return ::java::util::List(env->callObjectMethod(this$, mids$[mid_getSegments_2afa36052df4765d]));
+              }
+
+              ::org::orekit::time::AbsoluteDate OcmSatelliteEphemeris::getStart() const
+              {
+                return ::org::orekit::time::AbsoluteDate(env->callObjectMethod(this$, mids$[mid_getStart_85703d13e302437e]));
+              }
+
+              ::org::orekit::time::AbsoluteDate OcmSatelliteEphemeris::getStop() const
+              {
+                return ::org::orekit::time::AbsoluteDate(env->callObjectMethod(this$, mids$[mid_getStop_85703d13e302437e]));
+              }
             }
           }
         }
@@ -1231,106 +1198,95 @@ namespace org {
 
 namespace org {
   namespace orekit {
-    namespace gnss {
-      namespace metric {
-        namespace messages {
-          namespace rtcm {
-            namespace ephemeris {
-              static PyObject *t_Rtcm1045_cast_(PyTypeObject *type, PyObject *arg);
-              static PyObject *t_Rtcm1045_instance_(PyTypeObject *type, PyObject *arg);
-              static PyObject *t_Rtcm1045_of_(t_Rtcm1045 *self, PyObject *args);
-              static int t_Rtcm1045_init_(t_Rtcm1045 *self, PyObject *args, PyObject *kwds);
-              static PyObject *t_Rtcm1045_get__parameters_(t_Rtcm1045 *self, void *data);
-              static PyGetSetDef t_Rtcm1045__fields_[] = {
-                DECLARE_GET_FIELD(t_Rtcm1045, parameters_),
+    namespace files {
+      namespace ccsds {
+        namespace ndm {
+          namespace odm {
+            namespace ocm {
+              static PyObject *t_OcmSatelliteEphemeris_cast_(PyTypeObject *type, PyObject *arg);
+              static PyObject *t_OcmSatelliteEphemeris_instance_(PyTypeObject *type, PyObject *arg);
+              static int t_OcmSatelliteEphemeris_init_(t_OcmSatelliteEphemeris *self, PyObject *args, PyObject *kwds);
+              static PyObject *t_OcmSatelliteEphemeris_getId(t_OcmSatelliteEphemeris *self);
+              static PyObject *t_OcmSatelliteEphemeris_getMu(t_OcmSatelliteEphemeris *self);
+              static PyObject *t_OcmSatelliteEphemeris_getSegments(t_OcmSatelliteEphemeris *self);
+              static PyObject *t_OcmSatelliteEphemeris_getStart(t_OcmSatelliteEphemeris *self);
+              static PyObject *t_OcmSatelliteEphemeris_getStop(t_OcmSatelliteEphemeris *self);
+              static PyObject *t_OcmSatelliteEphemeris_get__id(t_OcmSatelliteEphemeris *self, void *data);
+              static PyObject *t_OcmSatelliteEphemeris_get__mu(t_OcmSatelliteEphemeris *self, void *data);
+              static PyObject *t_OcmSatelliteEphemeris_get__segments(t_OcmSatelliteEphemeris *self, void *data);
+              static PyObject *t_OcmSatelliteEphemeris_get__start(t_OcmSatelliteEphemeris *self, void *data);
+              static PyObject *t_OcmSatelliteEphemeris_get__stop(t_OcmSatelliteEphemeris *self, void *data);
+              static PyGetSetDef t_OcmSatelliteEphemeris__fields_[] = {
+                DECLARE_GET_FIELD(t_OcmSatelliteEphemeris, id),
+                DECLARE_GET_FIELD(t_OcmSatelliteEphemeris, mu),
+                DECLARE_GET_FIELD(t_OcmSatelliteEphemeris, segments),
+                DECLARE_GET_FIELD(t_OcmSatelliteEphemeris, start),
+                DECLARE_GET_FIELD(t_OcmSatelliteEphemeris, stop),
                 { NULL, NULL, NULL, NULL, NULL }
               };
 
-              static PyMethodDef t_Rtcm1045__methods_[] = {
-                DECLARE_METHOD(t_Rtcm1045, cast_, METH_O | METH_CLASS),
-                DECLARE_METHOD(t_Rtcm1045, instance_, METH_O | METH_CLASS),
-                DECLARE_METHOD(t_Rtcm1045, of_, METH_VARARGS),
+              static PyMethodDef t_OcmSatelliteEphemeris__methods_[] = {
+                DECLARE_METHOD(t_OcmSatelliteEphemeris, cast_, METH_O | METH_CLASS),
+                DECLARE_METHOD(t_OcmSatelliteEphemeris, instance_, METH_O | METH_CLASS),
+                DECLARE_METHOD(t_OcmSatelliteEphemeris, getId, METH_NOARGS),
+                DECLARE_METHOD(t_OcmSatelliteEphemeris, getMu, METH_NOARGS),
+                DECLARE_METHOD(t_OcmSatelliteEphemeris, getSegments, METH_NOARGS),
+                DECLARE_METHOD(t_OcmSatelliteEphemeris, getStart, METH_NOARGS),
+                DECLARE_METHOD(t_OcmSatelliteEphemeris, getStop, METH_NOARGS),
                 { NULL, NULL, 0, NULL }
               };
 
-              static PyType_Slot PY_TYPE_SLOTS(Rtcm1045)[] = {
-                { Py_tp_methods, t_Rtcm1045__methods_ },
-                { Py_tp_init, (void *) t_Rtcm1045_init_ },
-                { Py_tp_getset, t_Rtcm1045__fields_ },
+              static PyType_Slot PY_TYPE_SLOTS(OcmSatelliteEphemeris)[] = {
+                { Py_tp_methods, t_OcmSatelliteEphemeris__methods_ },
+                { Py_tp_init, (void *) t_OcmSatelliteEphemeris_init_ },
+                { Py_tp_getset, t_OcmSatelliteEphemeris__fields_ },
                 { 0, NULL }
               };
 
-              static PyType_Def *PY_TYPE_BASES(Rtcm1045)[] = {
-                &PY_TYPE_DEF(::org::orekit::gnss::metric::messages::rtcm::ephemeris::RtcmEphemerisMessage),
+              static PyType_Def *PY_TYPE_BASES(OcmSatelliteEphemeris)[] = {
+                &PY_TYPE_DEF(::java::lang::Object),
                 NULL
               };
 
-              DEFINE_TYPE(Rtcm1045, t_Rtcm1045, Rtcm1045);
-              PyObject *t_Rtcm1045::wrap_Object(const Rtcm1045& object, PyTypeObject *p0)
+              DEFINE_TYPE(OcmSatelliteEphemeris, t_OcmSatelliteEphemeris, OcmSatelliteEphemeris);
+
+              void t_OcmSatelliteEphemeris::install(PyObject *module)
               {
-                PyObject *obj = t_Rtcm1045::wrap_Object(object);
-                if (obj != NULL && obj != Py_None)
-                {
-                  t_Rtcm1045 *self = (t_Rtcm1045 *) obj;
-                  self->parameters[0] = p0;
-                }
-                return obj;
+                installType(&PY_TYPE(OcmSatelliteEphemeris), &PY_TYPE_DEF(OcmSatelliteEphemeris), module, "OcmSatelliteEphemeris", 0);
               }
 
-              PyObject *t_Rtcm1045::wrap_jobject(const jobject& object, PyTypeObject *p0)
+              void t_OcmSatelliteEphemeris::initialize(PyObject *module)
               {
-                PyObject *obj = t_Rtcm1045::wrap_jobject(object);
-                if (obj != NULL && obj != Py_None)
-                {
-                  t_Rtcm1045 *self = (t_Rtcm1045 *) obj;
-                  self->parameters[0] = p0;
-                }
-                return obj;
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OcmSatelliteEphemeris), "class_", make_descriptor(OcmSatelliteEphemeris::initializeClass, 1));
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OcmSatelliteEphemeris), "wrapfn_", make_descriptor(t_OcmSatelliteEphemeris::wrap_jobject));
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OcmSatelliteEphemeris), "boxfn_", make_descriptor(boxObject));
               }
 
-              void t_Rtcm1045::install(PyObject *module)
+              static PyObject *t_OcmSatelliteEphemeris_cast_(PyTypeObject *type, PyObject *arg)
               {
-                installType(&PY_TYPE(Rtcm1045), &PY_TYPE_DEF(Rtcm1045), module, "Rtcm1045", 0);
-              }
-
-              void t_Rtcm1045::initialize(PyObject *module)
-              {
-                PyObject_SetAttrString((PyObject *) PY_TYPE(Rtcm1045), "class_", make_descriptor(Rtcm1045::initializeClass, 1));
-                PyObject_SetAttrString((PyObject *) PY_TYPE(Rtcm1045), "wrapfn_", make_descriptor(t_Rtcm1045::wrap_jobject));
-                PyObject_SetAttrString((PyObject *) PY_TYPE(Rtcm1045), "boxfn_", make_descriptor(boxObject));
-              }
-
-              static PyObject *t_Rtcm1045_cast_(PyTypeObject *type, PyObject *arg)
-              {
-                if (!(arg = castCheck(arg, Rtcm1045::initializeClass, 1)))
+                if (!(arg = castCheck(arg, OcmSatelliteEphemeris::initializeClass, 1)))
                   return NULL;
-                return t_Rtcm1045::wrap_Object(Rtcm1045(((t_Rtcm1045 *) arg)->object.this$));
+                return t_OcmSatelliteEphemeris::wrap_Object(OcmSatelliteEphemeris(((t_OcmSatelliteEphemeris *) arg)->object.this$));
               }
-              static PyObject *t_Rtcm1045_instance_(PyTypeObject *type, PyObject *arg)
+              static PyObject *t_OcmSatelliteEphemeris_instance_(PyTypeObject *type, PyObject *arg)
               {
-                if (!castCheck(arg, Rtcm1045::initializeClass, 0))
+                if (!castCheck(arg, OcmSatelliteEphemeris::initializeClass, 0))
                   Py_RETURN_FALSE;
                 Py_RETURN_TRUE;
               }
 
-              static PyObject *t_Rtcm1045_of_(t_Rtcm1045 *self, PyObject *args)
+              static int t_OcmSatelliteEphemeris_init_(t_OcmSatelliteEphemeris *self, PyObject *args, PyObject *kwds)
               {
-                if (!parseArg(args, "T", 1, &(self->parameters)))
-                  Py_RETURN_SELF;
-                return PyErr_SetArgsError((PyObject *) self, "of_", args);
-              }
+                ::java::lang::String a0((jobject) NULL);
+                jdouble a1;
+                ::java::util::List a2((jobject) NULL);
+                PyTypeObject **p2;
+                OcmSatelliteEphemeris object((jobject) NULL);
 
-              static int t_Rtcm1045_init_(t_Rtcm1045 *self, PyObject *args, PyObject *kwds)
-              {
-                jint a0;
-                ::org::orekit::gnss::metric::messages::rtcm::ephemeris::Rtcm1045Data a1((jobject) NULL);
-                Rtcm1045 object((jobject) NULL);
-
-                if (!parseArgs(args, "Ik", ::org::orekit::gnss::metric::messages::rtcm::ephemeris::Rtcm1045Data::initializeClass, &a0, &a1))
+                if (!parseArgs(args, "sDK", ::java::util::List::initializeClass, &a0, &a1, &a2, &p2, ::java::util::t_List::parameters_))
                 {
-                  INT_CALL(object = Rtcm1045(a0, a1));
+                  INT_CALL(object = OcmSatelliteEphemeris(a0, a1, a2));
                   self->object = object;
-                  self->parameters[0] = ::org::orekit::gnss::metric::messages::rtcm::ephemeris::PY_TYPE(Rtcm1045Data);
                 }
                 else
                 {
@@ -1340,9 +1296,75 @@ namespace org {
 
                 return 0;
               }
-              static PyObject *t_Rtcm1045_get__parameters_(t_Rtcm1045 *self, void *data)
+
+              static PyObject *t_OcmSatelliteEphemeris_getId(t_OcmSatelliteEphemeris *self)
               {
-                return typeParameters(self->parameters, sizeof(self->parameters));
+                ::java::lang::String result((jobject) NULL);
+                OBJ_CALL(result = self->object.getId());
+                return j2p(result);
+              }
+
+              static PyObject *t_OcmSatelliteEphemeris_getMu(t_OcmSatelliteEphemeris *self)
+              {
+                jdouble result;
+                OBJ_CALL(result = self->object.getMu());
+                return PyFloat_FromDouble((double) result);
+              }
+
+              static PyObject *t_OcmSatelliteEphemeris_getSegments(t_OcmSatelliteEphemeris *self)
+              {
+                ::java::util::List result((jobject) NULL);
+                OBJ_CALL(result = self->object.getSegments());
+                return ::java::util::t_List::wrap_Object(result, ::org::orekit::files::ccsds::ndm::odm::ocm::PY_TYPE(TrajectoryStateHistory));
+              }
+
+              static PyObject *t_OcmSatelliteEphemeris_getStart(t_OcmSatelliteEphemeris *self)
+              {
+                ::org::orekit::time::AbsoluteDate result((jobject) NULL);
+                OBJ_CALL(result = self->object.getStart());
+                return ::org::orekit::time::t_AbsoluteDate::wrap_Object(result);
+              }
+
+              static PyObject *t_OcmSatelliteEphemeris_getStop(t_OcmSatelliteEphemeris *self)
+              {
+                ::org::orekit::time::AbsoluteDate result((jobject) NULL);
+                OBJ_CALL(result = self->object.getStop());
+                return ::org::orekit::time::t_AbsoluteDate::wrap_Object(result);
+              }
+
+              static PyObject *t_OcmSatelliteEphemeris_get__id(t_OcmSatelliteEphemeris *self, void *data)
+              {
+                ::java::lang::String value((jobject) NULL);
+                OBJ_CALL(value = self->object.getId());
+                return j2p(value);
+              }
+
+              static PyObject *t_OcmSatelliteEphemeris_get__mu(t_OcmSatelliteEphemeris *self, void *data)
+              {
+                jdouble value;
+                OBJ_CALL(value = self->object.getMu());
+                return PyFloat_FromDouble((double) value);
+              }
+
+              static PyObject *t_OcmSatelliteEphemeris_get__segments(t_OcmSatelliteEphemeris *self, void *data)
+              {
+                ::java::util::List value((jobject) NULL);
+                OBJ_CALL(value = self->object.getSegments());
+                return ::java::util::t_List::wrap_Object(value);
+              }
+
+              static PyObject *t_OcmSatelliteEphemeris_get__start(t_OcmSatelliteEphemeris *self, void *data)
+              {
+                ::org::orekit::time::AbsoluteDate value((jobject) NULL);
+                OBJ_CALL(value = self->object.getStart());
+                return ::org::orekit::time::t_AbsoluteDate::wrap_Object(value);
+              }
+
+              static PyObject *t_OcmSatelliteEphemeris_get__stop(t_OcmSatelliteEphemeris *self, void *data)
+              {
+                ::org::orekit::time::AbsoluteDate value((jobject) NULL);
+                OBJ_CALL(value = self->object.getStop());
+                return ::org::orekit::time::t_AbsoluteDate::wrap_Object(value);
               }
             }
           }
@@ -1353,52 +1375,73 @@ namespace org {
 }
 #include <jni.h>
 #include "JCCEnv.h"
-#include "org/orekit/utils/TimeStampedFieldAngularCoordinatesHermiteInterpolator.h"
-#include "org/orekit/utils/AngularDerivativesFilter.h"
+#include "org/orekit/files/ccsds/definitions/TimeConverter.h"
+#include "org/orekit/time/DateTimeComponents.h"
+#include "org/orekit/time/AbsoluteDate.h"
 #include "java/lang/Class.h"
+#include "java/lang/String.h"
+#include "org/orekit/time/TimeScale.h"
 #include "JArray.h"
 
 namespace org {
   namespace orekit {
-    namespace utils {
+    namespace files {
+      namespace ccsds {
+        namespace definitions {
 
-      ::java::lang::Class *TimeStampedFieldAngularCoordinatesHermiteInterpolator::class$ = NULL;
-      jmethodID *TimeStampedFieldAngularCoordinatesHermiteInterpolator::mids$ = NULL;
-      bool TimeStampedFieldAngularCoordinatesHermiteInterpolator::live$ = false;
+          ::java::lang::Class *TimeConverter::class$ = NULL;
+          jmethodID *TimeConverter::mids$ = NULL;
+          bool TimeConverter::live$ = false;
 
-      jclass TimeStampedFieldAngularCoordinatesHermiteInterpolator::initializeClass(bool getOnly)
-      {
-        if (getOnly)
-          return (jclass) (live$ ? class$->this$ : NULL);
-        if (class$ == NULL)
-        {
-          jclass cls = (jclass) env->findClass("org/orekit/utils/TimeStampedFieldAngularCoordinatesHermiteInterpolator");
+          jclass TimeConverter::initializeClass(bool getOnly)
+          {
+            if (getOnly)
+              return (jclass) (live$ ? class$->this$ : NULL);
+            if (class$ == NULL)
+            {
+              jclass cls = (jclass) env->findClass("org/orekit/files/ccsds/definitions/TimeConverter");
 
-          mids$ = new jmethodID[max_mid];
-          mids$[mid_init$_7ae3461a92a43152] = env->getMethodID(cls, "<init>", "()V");
-          mids$[mid_init$_0a2a1ac2721c0336] = env->getMethodID(cls, "<init>", "(I)V");
-          mids$[mid_init$_2d511f7455dd3ab4] = env->getMethodID(cls, "<init>", "(ILorg/orekit/utils/AngularDerivativesFilter;)V");
-          mids$[mid_init$_0fefe87a84aeb22a] = env->getMethodID(cls, "<init>", "(IDLorg/orekit/utils/AngularDerivativesFilter;)V");
-          mids$[mid_getFilter_c14c1c09874639c8] = env->getMethodID(cls, "getFilter", "()Lorg/orekit/utils/AngularDerivativesFilter;");
-          mids$[mid_interpolate_a14f9d7f9be0a1ab] = env->getMethodID(cls, "interpolate", "(Lorg/orekit/time/AbstractFieldTimeInterpolator$InterpolationData;)Lorg/orekit/utils/TimeStampedFieldAngularCoordinates;");
+              mids$ = new jmethodID[max_mid];
+              mids$[mid_init$_b853b844e7592d04] = env->getMethodID(cls, "<init>", "(Lorg/orekit/time/TimeScale;Lorg/orekit/time/AbsoluteDate;)V");
+              mids$[mid_components_5983e23690eb425a] = env->getMethodID(cls, "components", "(Lorg/orekit/time/AbsoluteDate;)Lorg/orekit/time/DateTimeComponents;");
+              mids$[mid_getReferenceDate_85703d13e302437e] = env->getMethodID(cls, "getReferenceDate", "()Lorg/orekit/time/AbsoluteDate;");
+              mids$[mid_getTimeScale_c39031284193adbe] = env->getMethodID(cls, "getTimeScale", "()Lorg/orekit/time/TimeScale;");
+              mids$[mid_offset_bf1d7732f1acb697] = env->getMethodID(cls, "offset", "(Lorg/orekit/time/AbsoluteDate;)D");
+              mids$[mid_parse_c366629d892ff755] = env->getMethodID(cls, "parse", "(Ljava/lang/String;)Lorg/orekit/time/AbsoluteDate;");
 
-          class$ = new ::java::lang::Class(cls);
-          live$ = true;
+              class$ = new ::java::lang::Class(cls);
+              live$ = true;
+            }
+            return (jclass) class$->this$;
+          }
+
+          TimeConverter::TimeConverter(const ::org::orekit::time::TimeScale & a0, const ::org::orekit::time::AbsoluteDate & a1) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_b853b844e7592d04, a0.this$, a1.this$)) {}
+
+          ::org::orekit::time::DateTimeComponents TimeConverter::components(const ::org::orekit::time::AbsoluteDate & a0) const
+          {
+            return ::org::orekit::time::DateTimeComponents(env->callObjectMethod(this$, mids$[mid_components_5983e23690eb425a], a0.this$));
+          }
+
+          ::org::orekit::time::AbsoluteDate TimeConverter::getReferenceDate() const
+          {
+            return ::org::orekit::time::AbsoluteDate(env->callObjectMethod(this$, mids$[mid_getReferenceDate_85703d13e302437e]));
+          }
+
+          ::org::orekit::time::TimeScale TimeConverter::getTimeScale() const
+          {
+            return ::org::orekit::time::TimeScale(env->callObjectMethod(this$, mids$[mid_getTimeScale_c39031284193adbe]));
+          }
+
+          jdouble TimeConverter::offset(const ::org::orekit::time::AbsoluteDate & a0) const
+          {
+            return env->callDoubleMethod(this$, mids$[mid_offset_bf1d7732f1acb697], a0.this$);
+          }
+
+          ::org::orekit::time::AbsoluteDate TimeConverter::parse(const ::java::lang::String & a0) const
+          {
+            return ::org::orekit::time::AbsoluteDate(env->callObjectMethod(this$, mids$[mid_parse_c366629d892ff755], a0.this$));
+          }
         }
-        return (jclass) class$->this$;
-      }
-
-      TimeStampedFieldAngularCoordinatesHermiteInterpolator::TimeStampedFieldAngularCoordinatesHermiteInterpolator() : ::org::orekit::time::AbstractFieldTimeInterpolator(env->newObject(initializeClass, &mids$, mid_init$_7ae3461a92a43152)) {}
-
-      TimeStampedFieldAngularCoordinatesHermiteInterpolator::TimeStampedFieldAngularCoordinatesHermiteInterpolator(jint a0) : ::org::orekit::time::AbstractFieldTimeInterpolator(env->newObject(initializeClass, &mids$, mid_init$_0a2a1ac2721c0336, a0)) {}
-
-      TimeStampedFieldAngularCoordinatesHermiteInterpolator::TimeStampedFieldAngularCoordinatesHermiteInterpolator(jint a0, const ::org::orekit::utils::AngularDerivativesFilter & a1) : ::org::orekit::time::AbstractFieldTimeInterpolator(env->newObject(initializeClass, &mids$, mid_init$_2d511f7455dd3ab4, a0, a1.this$)) {}
-
-      TimeStampedFieldAngularCoordinatesHermiteInterpolator::TimeStampedFieldAngularCoordinatesHermiteInterpolator(jint a0, jdouble a1, const ::org::orekit::utils::AngularDerivativesFilter & a2) : ::org::orekit::time::AbstractFieldTimeInterpolator(env->newObject(initializeClass, &mids$, mid_init$_0fefe87a84aeb22a, a0, a1, a2.this$)) {}
-
-      ::org::orekit::utils::AngularDerivativesFilter TimeStampedFieldAngularCoordinatesHermiteInterpolator::getFilter() const
-      {
-        return ::org::orekit::utils::AngularDerivativesFilter(env->callObjectMethod(this$, mids$[mid_getFilter_c14c1c09874639c8]));
       }
     }
   }
@@ -1410,277 +1453,257 @@ namespace org {
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      static PyObject *t_TimeStampedFieldAngularCoordinatesHermiteInterpolator_cast_(PyTypeObject *type, PyObject *arg);
-      static PyObject *t_TimeStampedFieldAngularCoordinatesHermiteInterpolator_instance_(PyTypeObject *type, PyObject *arg);
-      static PyObject *t_TimeStampedFieldAngularCoordinatesHermiteInterpolator_of_(t_TimeStampedFieldAngularCoordinatesHermiteInterpolator *self, PyObject *args);
-      static int t_TimeStampedFieldAngularCoordinatesHermiteInterpolator_init_(t_TimeStampedFieldAngularCoordinatesHermiteInterpolator *self, PyObject *args, PyObject *kwds);
-      static PyObject *t_TimeStampedFieldAngularCoordinatesHermiteInterpolator_getFilter(t_TimeStampedFieldAngularCoordinatesHermiteInterpolator *self);
-      static PyObject *t_TimeStampedFieldAngularCoordinatesHermiteInterpolator_get__filter(t_TimeStampedFieldAngularCoordinatesHermiteInterpolator *self, void *data);
-      static PyObject *t_TimeStampedFieldAngularCoordinatesHermiteInterpolator_get__parameters_(t_TimeStampedFieldAngularCoordinatesHermiteInterpolator *self, void *data);
-      static PyGetSetDef t_TimeStampedFieldAngularCoordinatesHermiteInterpolator__fields_[] = {
-        DECLARE_GET_FIELD(t_TimeStampedFieldAngularCoordinatesHermiteInterpolator, filter),
-        DECLARE_GET_FIELD(t_TimeStampedFieldAngularCoordinatesHermiteInterpolator, parameters_),
-        { NULL, NULL, NULL, NULL, NULL }
-      };
+    namespace files {
+      namespace ccsds {
+        namespace definitions {
+          static PyObject *t_TimeConverter_cast_(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_TimeConverter_instance_(PyTypeObject *type, PyObject *arg);
+          static int t_TimeConverter_init_(t_TimeConverter *self, PyObject *args, PyObject *kwds);
+          static PyObject *t_TimeConverter_components(t_TimeConverter *self, PyObject *arg);
+          static PyObject *t_TimeConverter_getReferenceDate(t_TimeConverter *self);
+          static PyObject *t_TimeConverter_getTimeScale(t_TimeConverter *self);
+          static PyObject *t_TimeConverter_offset(t_TimeConverter *self, PyObject *arg);
+          static PyObject *t_TimeConverter_parse(t_TimeConverter *self, PyObject *arg);
+          static PyObject *t_TimeConverter_get__referenceDate(t_TimeConverter *self, void *data);
+          static PyObject *t_TimeConverter_get__timeScale(t_TimeConverter *self, void *data);
+          static PyGetSetDef t_TimeConverter__fields_[] = {
+            DECLARE_GET_FIELD(t_TimeConverter, referenceDate),
+            DECLARE_GET_FIELD(t_TimeConverter, timeScale),
+            { NULL, NULL, NULL, NULL, NULL }
+          };
 
-      static PyMethodDef t_TimeStampedFieldAngularCoordinatesHermiteInterpolator__methods_[] = {
-        DECLARE_METHOD(t_TimeStampedFieldAngularCoordinatesHermiteInterpolator, cast_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_TimeStampedFieldAngularCoordinatesHermiteInterpolator, instance_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_TimeStampedFieldAngularCoordinatesHermiteInterpolator, of_, METH_VARARGS),
-        DECLARE_METHOD(t_TimeStampedFieldAngularCoordinatesHermiteInterpolator, getFilter, METH_NOARGS),
-        { NULL, NULL, 0, NULL }
-      };
+          static PyMethodDef t_TimeConverter__methods_[] = {
+            DECLARE_METHOD(t_TimeConverter, cast_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_TimeConverter, instance_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_TimeConverter, components, METH_O),
+            DECLARE_METHOD(t_TimeConverter, getReferenceDate, METH_NOARGS),
+            DECLARE_METHOD(t_TimeConverter, getTimeScale, METH_NOARGS),
+            DECLARE_METHOD(t_TimeConverter, offset, METH_O),
+            DECLARE_METHOD(t_TimeConverter, parse, METH_O),
+            { NULL, NULL, 0, NULL }
+          };
 
-      static PyType_Slot PY_TYPE_SLOTS(TimeStampedFieldAngularCoordinatesHermiteInterpolator)[] = {
-        { Py_tp_methods, t_TimeStampedFieldAngularCoordinatesHermiteInterpolator__methods_ },
-        { Py_tp_init, (void *) t_TimeStampedFieldAngularCoordinatesHermiteInterpolator_init_ },
-        { Py_tp_getset, t_TimeStampedFieldAngularCoordinatesHermiteInterpolator__fields_ },
-        { 0, NULL }
-      };
+          static PyType_Slot PY_TYPE_SLOTS(TimeConverter)[] = {
+            { Py_tp_methods, t_TimeConverter__methods_ },
+            { Py_tp_init, (void *) t_TimeConverter_init_ },
+            { Py_tp_getset, t_TimeConverter__fields_ },
+            { 0, NULL }
+          };
 
-      static PyType_Def *PY_TYPE_BASES(TimeStampedFieldAngularCoordinatesHermiteInterpolator)[] = {
-        &PY_TYPE_DEF(::org::orekit::time::AbstractFieldTimeInterpolator),
-        NULL
-      };
+          static PyType_Def *PY_TYPE_BASES(TimeConverter)[] = {
+            &PY_TYPE_DEF(::java::lang::Object),
+            NULL
+          };
 
-      DEFINE_TYPE(TimeStampedFieldAngularCoordinatesHermiteInterpolator, t_TimeStampedFieldAngularCoordinatesHermiteInterpolator, TimeStampedFieldAngularCoordinatesHermiteInterpolator);
-      PyObject *t_TimeStampedFieldAngularCoordinatesHermiteInterpolator::wrap_Object(const TimeStampedFieldAngularCoordinatesHermiteInterpolator& object, PyTypeObject *p0)
-      {
-        PyObject *obj = t_TimeStampedFieldAngularCoordinatesHermiteInterpolator::wrap_Object(object);
-        if (obj != NULL && obj != Py_None)
-        {
-          t_TimeStampedFieldAngularCoordinatesHermiteInterpolator *self = (t_TimeStampedFieldAngularCoordinatesHermiteInterpolator *) obj;
-          self->parameters[0] = p0;
-        }
-        return obj;
-      }
+          DEFINE_TYPE(TimeConverter, t_TimeConverter, TimeConverter);
 
-      PyObject *t_TimeStampedFieldAngularCoordinatesHermiteInterpolator::wrap_jobject(const jobject& object, PyTypeObject *p0)
-      {
-        PyObject *obj = t_TimeStampedFieldAngularCoordinatesHermiteInterpolator::wrap_jobject(object);
-        if (obj != NULL && obj != Py_None)
-        {
-          t_TimeStampedFieldAngularCoordinatesHermiteInterpolator *self = (t_TimeStampedFieldAngularCoordinatesHermiteInterpolator *) obj;
-          self->parameters[0] = p0;
-        }
-        return obj;
-      }
-
-      void t_TimeStampedFieldAngularCoordinatesHermiteInterpolator::install(PyObject *module)
-      {
-        installType(&PY_TYPE(TimeStampedFieldAngularCoordinatesHermiteInterpolator), &PY_TYPE_DEF(TimeStampedFieldAngularCoordinatesHermiteInterpolator), module, "TimeStampedFieldAngularCoordinatesHermiteInterpolator", 0);
-      }
-
-      void t_TimeStampedFieldAngularCoordinatesHermiteInterpolator::initialize(PyObject *module)
-      {
-        PyObject_SetAttrString((PyObject *) PY_TYPE(TimeStampedFieldAngularCoordinatesHermiteInterpolator), "class_", make_descriptor(TimeStampedFieldAngularCoordinatesHermiteInterpolator::initializeClass, 1));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(TimeStampedFieldAngularCoordinatesHermiteInterpolator), "wrapfn_", make_descriptor(t_TimeStampedFieldAngularCoordinatesHermiteInterpolator::wrap_jobject));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(TimeStampedFieldAngularCoordinatesHermiteInterpolator), "boxfn_", make_descriptor(boxObject));
-      }
-
-      static PyObject *t_TimeStampedFieldAngularCoordinatesHermiteInterpolator_cast_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!(arg = castCheck(arg, TimeStampedFieldAngularCoordinatesHermiteInterpolator::initializeClass, 1)))
-          return NULL;
-        return t_TimeStampedFieldAngularCoordinatesHermiteInterpolator::wrap_Object(TimeStampedFieldAngularCoordinatesHermiteInterpolator(((t_TimeStampedFieldAngularCoordinatesHermiteInterpolator *) arg)->object.this$));
-      }
-      static PyObject *t_TimeStampedFieldAngularCoordinatesHermiteInterpolator_instance_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!castCheck(arg, TimeStampedFieldAngularCoordinatesHermiteInterpolator::initializeClass, 0))
-          Py_RETURN_FALSE;
-        Py_RETURN_TRUE;
-      }
-
-      static PyObject *t_TimeStampedFieldAngularCoordinatesHermiteInterpolator_of_(t_TimeStampedFieldAngularCoordinatesHermiteInterpolator *self, PyObject *args)
-      {
-        if (!parseArg(args, "T", 1, &(self->parameters)))
-          Py_RETURN_SELF;
-        return PyErr_SetArgsError((PyObject *) self, "of_", args);
-      }
-
-      static int t_TimeStampedFieldAngularCoordinatesHermiteInterpolator_init_(t_TimeStampedFieldAngularCoordinatesHermiteInterpolator *self, PyObject *args, PyObject *kwds)
-      {
-        switch (PyTuple_GET_SIZE(args)) {
-         case 0:
+          void t_TimeConverter::install(PyObject *module)
           {
-            TimeStampedFieldAngularCoordinatesHermiteInterpolator object((jobject) NULL);
-
-            INT_CALL(object = TimeStampedFieldAngularCoordinatesHermiteInterpolator());
-            self->object = object;
-            break;
+            installType(&PY_TYPE(TimeConverter), &PY_TYPE_DEF(TimeConverter), module, "TimeConverter", 0);
           }
-         case 1:
-          {
-            jint a0;
-            TimeStampedFieldAngularCoordinatesHermiteInterpolator object((jobject) NULL);
 
-            if (!parseArgs(args, "I", &a0))
+          void t_TimeConverter::initialize(PyObject *module)
+          {
+            PyObject_SetAttrString((PyObject *) PY_TYPE(TimeConverter), "class_", make_descriptor(TimeConverter::initializeClass, 1));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(TimeConverter), "wrapfn_", make_descriptor(t_TimeConverter::wrap_jobject));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(TimeConverter), "boxfn_", make_descriptor(boxObject));
+          }
+
+          static PyObject *t_TimeConverter_cast_(PyTypeObject *type, PyObject *arg)
+          {
+            if (!(arg = castCheck(arg, TimeConverter::initializeClass, 1)))
+              return NULL;
+            return t_TimeConverter::wrap_Object(TimeConverter(((t_TimeConverter *) arg)->object.this$));
+          }
+          static PyObject *t_TimeConverter_instance_(PyTypeObject *type, PyObject *arg)
+          {
+            if (!castCheck(arg, TimeConverter::initializeClass, 0))
+              Py_RETURN_FALSE;
+            Py_RETURN_TRUE;
+          }
+
+          static int t_TimeConverter_init_(t_TimeConverter *self, PyObject *args, PyObject *kwds)
+          {
+            ::org::orekit::time::TimeScale a0((jobject) NULL);
+            ::org::orekit::time::AbsoluteDate a1((jobject) NULL);
+            TimeConverter object((jobject) NULL);
+
+            if (!parseArgs(args, "kk", ::org::orekit::time::TimeScale::initializeClass, ::org::orekit::time::AbsoluteDate::initializeClass, &a0, &a1))
             {
-              INT_CALL(object = TimeStampedFieldAngularCoordinatesHermiteInterpolator(a0));
+              INT_CALL(object = TimeConverter(a0, a1));
               self->object = object;
-              break;
             }
-          }
-          goto err;
-         case 2:
-          {
-            jint a0;
-            ::org::orekit::utils::AngularDerivativesFilter a1((jobject) NULL);
-            PyTypeObject **p1;
-            TimeStampedFieldAngularCoordinatesHermiteInterpolator object((jobject) NULL);
-
-            if (!parseArgs(args, "IK", ::org::orekit::utils::AngularDerivativesFilter::initializeClass, &a0, &a1, &p1, ::org::orekit::utils::t_AngularDerivativesFilter::parameters_))
+            else
             {
-              INT_CALL(object = TimeStampedFieldAngularCoordinatesHermiteInterpolator(a0, a1));
-              self->object = object;
-              break;
+              PyErr_SetArgsError((PyObject *) self, "__init__", args);
+              return -1;
             }
-          }
-          goto err;
-         case 3:
-          {
-            jint a0;
-            jdouble a1;
-            ::org::orekit::utils::AngularDerivativesFilter a2((jobject) NULL);
-            PyTypeObject **p2;
-            TimeStampedFieldAngularCoordinatesHermiteInterpolator object((jobject) NULL);
 
-            if (!parseArgs(args, "IDK", ::org::orekit::utils::AngularDerivativesFilter::initializeClass, &a0, &a1, &a2, &p2, ::org::orekit::utils::t_AngularDerivativesFilter::parameters_))
-            {
-              INT_CALL(object = TimeStampedFieldAngularCoordinatesHermiteInterpolator(a0, a1, a2));
-              self->object = object;
-              break;
-            }
+            return 0;
           }
-         default:
-         err:
-          PyErr_SetArgsError((PyObject *) self, "__init__", args);
-          return -1;
+
+          static PyObject *t_TimeConverter_components(t_TimeConverter *self, PyObject *arg)
+          {
+            ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
+            ::org::orekit::time::DateTimeComponents result((jobject) NULL);
+
+            if (!parseArg(arg, "k", ::org::orekit::time::AbsoluteDate::initializeClass, &a0))
+            {
+              OBJ_CALL(result = self->object.components(a0));
+              return ::org::orekit::time::t_DateTimeComponents::wrap_Object(result);
+            }
+
+            PyErr_SetArgsError((PyObject *) self, "components", arg);
+            return NULL;
+          }
+
+          static PyObject *t_TimeConverter_getReferenceDate(t_TimeConverter *self)
+          {
+            ::org::orekit::time::AbsoluteDate result((jobject) NULL);
+            OBJ_CALL(result = self->object.getReferenceDate());
+            return ::org::orekit::time::t_AbsoluteDate::wrap_Object(result);
+          }
+
+          static PyObject *t_TimeConverter_getTimeScale(t_TimeConverter *self)
+          {
+            ::org::orekit::time::TimeScale result((jobject) NULL);
+            OBJ_CALL(result = self->object.getTimeScale());
+            return ::org::orekit::time::t_TimeScale::wrap_Object(result);
+          }
+
+          static PyObject *t_TimeConverter_offset(t_TimeConverter *self, PyObject *arg)
+          {
+            ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
+            jdouble result;
+
+            if (!parseArg(arg, "k", ::org::orekit::time::AbsoluteDate::initializeClass, &a0))
+            {
+              OBJ_CALL(result = self->object.offset(a0));
+              return PyFloat_FromDouble((double) result);
+            }
+
+            PyErr_SetArgsError((PyObject *) self, "offset", arg);
+            return NULL;
+          }
+
+          static PyObject *t_TimeConverter_parse(t_TimeConverter *self, PyObject *arg)
+          {
+            ::java::lang::String a0((jobject) NULL);
+            ::org::orekit::time::AbsoluteDate result((jobject) NULL);
+
+            if (!parseArg(arg, "s", &a0))
+            {
+              OBJ_CALL(result = self->object.parse(a0));
+              return ::org::orekit::time::t_AbsoluteDate::wrap_Object(result);
+            }
+
+            PyErr_SetArgsError((PyObject *) self, "parse", arg);
+            return NULL;
+          }
+
+          static PyObject *t_TimeConverter_get__referenceDate(t_TimeConverter *self, void *data)
+          {
+            ::org::orekit::time::AbsoluteDate value((jobject) NULL);
+            OBJ_CALL(value = self->object.getReferenceDate());
+            return ::org::orekit::time::t_AbsoluteDate::wrap_Object(value);
+          }
+
+          static PyObject *t_TimeConverter_get__timeScale(t_TimeConverter *self, void *data)
+          {
+            ::org::orekit::time::TimeScale value((jobject) NULL);
+            OBJ_CALL(value = self->object.getTimeScale());
+            return ::org::orekit::time::t_TimeScale::wrap_Object(value);
+          }
         }
-
-        return 0;
-      }
-
-      static PyObject *t_TimeStampedFieldAngularCoordinatesHermiteInterpolator_getFilter(t_TimeStampedFieldAngularCoordinatesHermiteInterpolator *self)
-      {
-        ::org::orekit::utils::AngularDerivativesFilter result((jobject) NULL);
-        OBJ_CALL(result = self->object.getFilter());
-        return ::org::orekit::utils::t_AngularDerivativesFilter::wrap_Object(result);
-      }
-      static PyObject *t_TimeStampedFieldAngularCoordinatesHermiteInterpolator_get__parameters_(t_TimeStampedFieldAngularCoordinatesHermiteInterpolator *self, void *data)
-      {
-        return typeParameters(self->parameters, sizeof(self->parameters));
-      }
-
-      static PyObject *t_TimeStampedFieldAngularCoordinatesHermiteInterpolator_get__filter(t_TimeStampedFieldAngularCoordinatesHermiteInterpolator *self, void *data)
-      {
-        ::org::orekit::utils::AngularDerivativesFilter value((jobject) NULL);
-        OBJ_CALL(value = self->object.getFilter());
-        return ::org::orekit::utils::t_AngularDerivativesFilter::wrap_Object(value);
       }
     }
   }
 }
 #include <jni.h>
 #include "JCCEnv.h"
-#include "org/orekit/files/general/OrekitEphemerisFile$OrekitSatelliteEphemeris.h"
-#include "java/util/List.h"
-#include "org/orekit/time/TimeScale.h"
-#include "org/orekit/files/general/EphemerisFile$SatelliteEphemeris.h"
-#include "org/orekit/files/general/OrekitEphemerisFile$OrekitEphemerisSegment.h"
-#include "org/orekit/bodies/CelestialBody.h"
+#include "org/orekit/estimation/measurements/filtering/HatchFilter.h"
+#include "java/util/ArrayList.h"
 #include "java/lang/Class.h"
-#include "org/orekit/propagation/SpacecraftState.h"
-#include "org/orekit/utils/TimeStampedPVCoordinates.h"
-#include "java/lang/String.h"
-#include "org/orekit/time/AbsoluteDate.h"
+#include "java/lang/Double.h"
 #include "JArray.h"
 
 namespace org {
   namespace orekit {
-    namespace files {
-      namespace general {
+    namespace estimation {
+      namespace measurements {
+        namespace filtering {
 
-        ::java::lang::Class *OrekitEphemerisFile$OrekitSatelliteEphemeris::class$ = NULL;
-        jmethodID *OrekitEphemerisFile$OrekitSatelliteEphemeris::mids$ = NULL;
-        bool OrekitEphemerisFile$OrekitSatelliteEphemeris::live$ = false;
-        jint OrekitEphemerisFile$OrekitSatelliteEphemeris::DEFAULT_INTERPOLATION_SIZE = (jint) 0;
+          ::java::lang::Class *HatchFilter::class$ = NULL;
+          jmethodID *HatchFilter::mids$ = NULL;
+          bool HatchFilter::live$ = false;
 
-        jclass OrekitEphemerisFile$OrekitSatelliteEphemeris::initializeClass(bool getOnly)
-        {
-          if (getOnly)
-            return (jclass) (live$ ? class$->this$ : NULL);
-          if (class$ == NULL)
+          jclass HatchFilter::initializeClass(bool getOnly)
           {
-            jclass cls = (jclass) env->findClass("org/orekit/files/general/OrekitEphemerisFile$OrekitSatelliteEphemeris");
+            if (getOnly)
+              return (jclass) (live$ ? class$->this$ : NULL);
+            if (class$ == NULL)
+            {
+              jclass cls = (jclass) env->findClass("org/orekit/estimation/measurements/filtering/HatchFilter");
 
-            mids$ = new jmethodID[max_mid];
-            mids$[mid_init$_e939c6558ae8d313] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;)V");
-            mids$[mid_addNewSegment_6ea0d7acda887729] = env->getMethodID(cls, "addNewSegment", "(Ljava/util/List;)Lorg/orekit/files/general/OrekitEphemerisFile$OrekitEphemerisSegment;");
-            mids$[mid_addNewSegment_5411a944a514c8a7] = env->getMethodID(cls, "addNewSegment", "(Ljava/util/List;I)Lorg/orekit/files/general/OrekitEphemerisFile$OrekitEphemerisSegment;");
-            mids$[mid_addNewSegment_3f2b61cfa6d81b14] = env->getMethodID(cls, "addNewSegment", "(Ljava/util/List;Lorg/orekit/bodies/CelestialBody;I)Lorg/orekit/files/general/OrekitEphemerisFile$OrekitEphemerisSegment;");
-            mids$[mid_addNewSegment_37e60940d601d085] = env->getMethodID(cls, "addNewSegment", "(Ljava/util/List;Lorg/orekit/bodies/CelestialBody;ILorg/orekit/time/TimeScale;)Lorg/orekit/files/general/OrekitEphemerisFile$OrekitEphemerisSegment;");
-            mids$[mid_getId_0090f7797e403f43] = env->getMethodID(cls, "getId", "()Ljava/lang/String;");
-            mids$[mid_getMu_456d9a2f64d6b28d] = env->getMethodID(cls, "getMu", "()D");
-            mids$[mid_getSegments_a6156df500549a58] = env->getMethodID(cls, "getSegments", "()Ljava/util/List;");
-            mids$[mid_getStart_aaa854c403487cf3] = env->getMethodID(cls, "getStart", "()Lorg/orekit/time/AbsoluteDate;");
-            mids$[mid_getStop_aaa854c403487cf3] = env->getMethodID(cls, "getStop", "()Lorg/orekit/time/AbsoluteDate;");
+              mids$ = new jmethodID[max_mid];
+              mids$[mid_addToCodeHistory_17db3a65980d3441] = env->getMethodID(cls, "addToCodeHistory", "(D)V");
+              mids$[mid_addToSmoothedCodeHistory_17db3a65980d3441] = env->getMethodID(cls, "addToSmoothedCodeHistory", "(D)V");
+              mids$[mid_getCodeHistory_d91fa6c7b6ddeaae] = env->getMethodID(cls, "getCodeHistory", "()Ljava/util/ArrayList;");
+              mids$[mid_getSmoothedCodeHistory_d91fa6c7b6ddeaae] = env->getMethodID(cls, "getSmoothedCodeHistory", "()Ljava/util/ArrayList;");
+              mids$[mid_getThreshold_dff5885c2c873297] = env->getMethodID(cls, "getThreshold", "()D");
+              mids$[mid_resetFilterNext_17db3a65980d3441] = env->getMethodID(cls, "resetFilterNext", "(D)V");
+              mids$[mid_updatePreviousSmoothedCode_17db3a65980d3441] = env->getMethodID(cls, "updatePreviousSmoothedCode", "(D)V");
+              mids$[mid_updatePreviousSmoothingValue_17db3a65980d3441] = env->getMethodID(cls, "updatePreviousSmoothingValue", "(D)V");
+              mids$[mid_smoothedCode_86ffecc08a63eff0] = env->getMethodID(cls, "smoothedCode", "(DD)D");
+              mids$[mid_checkValidData_9df09399397f756e] = env->getMethodID(cls, "checkValidData", "(DDZ)D");
+              mids$[mid_resetNextBoolean_0fa09c18fee449d5] = env->getMethodID(cls, "resetNextBoolean", "()V");
+              mids$[mid_resetK_0fa09c18fee449d5] = env->getMethodID(cls, "resetK", "()V");
 
-            class$ = new ::java::lang::Class(cls);
-            cls = (jclass) class$->this$;
-
-            DEFAULT_INTERPOLATION_SIZE = env->getStaticIntField(cls, "DEFAULT_INTERPOLATION_SIZE");
-            live$ = true;
+              class$ = new ::java::lang::Class(cls);
+              live$ = true;
+            }
+            return (jclass) class$->this$;
           }
-          return (jclass) class$->this$;
-        }
 
-        OrekitEphemerisFile$OrekitSatelliteEphemeris::OrekitEphemerisFile$OrekitSatelliteEphemeris(const ::java::lang::String & a0) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_e939c6558ae8d313, a0.this$)) {}
+          void HatchFilter::addToCodeHistory(jdouble a0) const
+          {
+            env->callVoidMethod(this$, mids$[mid_addToCodeHistory_17db3a65980d3441], a0);
+          }
 
-        ::org::orekit::files::general::OrekitEphemerisFile$OrekitEphemerisSegment OrekitEphemerisFile$OrekitSatelliteEphemeris::addNewSegment(const ::java::util::List & a0) const
-        {
-          return ::org::orekit::files::general::OrekitEphemerisFile$OrekitEphemerisSegment(env->callObjectMethod(this$, mids$[mid_addNewSegment_6ea0d7acda887729], a0.this$));
-        }
+          void HatchFilter::addToSmoothedCodeHistory(jdouble a0) const
+          {
+            env->callVoidMethod(this$, mids$[mid_addToSmoothedCodeHistory_17db3a65980d3441], a0);
+          }
 
-        ::org::orekit::files::general::OrekitEphemerisFile$OrekitEphemerisSegment OrekitEphemerisFile$OrekitSatelliteEphemeris::addNewSegment(const ::java::util::List & a0, jint a1) const
-        {
-          return ::org::orekit::files::general::OrekitEphemerisFile$OrekitEphemerisSegment(env->callObjectMethod(this$, mids$[mid_addNewSegment_5411a944a514c8a7], a0.this$, a1));
-        }
+          ::java::util::ArrayList HatchFilter::getCodeHistory() const
+          {
+            return ::java::util::ArrayList(env->callObjectMethod(this$, mids$[mid_getCodeHistory_d91fa6c7b6ddeaae]));
+          }
 
-        ::org::orekit::files::general::OrekitEphemerisFile$OrekitEphemerisSegment OrekitEphemerisFile$OrekitSatelliteEphemeris::addNewSegment(const ::java::util::List & a0, const ::org::orekit::bodies::CelestialBody & a1, jint a2) const
-        {
-          return ::org::orekit::files::general::OrekitEphemerisFile$OrekitEphemerisSegment(env->callObjectMethod(this$, mids$[mid_addNewSegment_3f2b61cfa6d81b14], a0.this$, a1.this$, a2));
-        }
+          ::java::util::ArrayList HatchFilter::getSmoothedCodeHistory() const
+          {
+            return ::java::util::ArrayList(env->callObjectMethod(this$, mids$[mid_getSmoothedCodeHistory_d91fa6c7b6ddeaae]));
+          }
 
-        ::org::orekit::files::general::OrekitEphemerisFile$OrekitEphemerisSegment OrekitEphemerisFile$OrekitSatelliteEphemeris::addNewSegment(const ::java::util::List & a0, const ::org::orekit::bodies::CelestialBody & a1, jint a2, const ::org::orekit::time::TimeScale & a3) const
-        {
-          return ::org::orekit::files::general::OrekitEphemerisFile$OrekitEphemerisSegment(env->callObjectMethod(this$, mids$[mid_addNewSegment_37e60940d601d085], a0.this$, a1.this$, a2, a3.this$));
-        }
+          jdouble HatchFilter::getThreshold() const
+          {
+            return env->callDoubleMethod(this$, mids$[mid_getThreshold_dff5885c2c873297]);
+          }
 
-        ::java::lang::String OrekitEphemerisFile$OrekitSatelliteEphemeris::getId() const
-        {
-          return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getId_0090f7797e403f43]));
-        }
+          void HatchFilter::resetFilterNext(jdouble a0) const
+          {
+            env->callVoidMethod(this$, mids$[mid_resetFilterNext_17db3a65980d3441], a0);
+          }
 
-        jdouble OrekitEphemerisFile$OrekitSatelliteEphemeris::getMu() const
-        {
-          return env->callDoubleMethod(this$, mids$[mid_getMu_456d9a2f64d6b28d]);
-        }
+          void HatchFilter::updatePreviousSmoothedCode(jdouble a0) const
+          {
+            env->callVoidMethod(this$, mids$[mid_updatePreviousSmoothedCode_17db3a65980d3441], a0);
+          }
 
-        ::java::util::List OrekitEphemerisFile$OrekitSatelliteEphemeris::getSegments() const
-        {
-          return ::java::util::List(env->callObjectMethod(this$, mids$[mid_getSegments_a6156df500549a58]));
-        }
-
-        ::org::orekit::time::AbsoluteDate OrekitEphemerisFile$OrekitSatelliteEphemeris::getStart() const
-        {
-          return ::org::orekit::time::AbsoluteDate(env->callObjectMethod(this$, mids$[mid_getStart_aaa854c403487cf3]));
-        }
-
-        ::org::orekit::time::AbsoluteDate OrekitEphemerisFile$OrekitSatelliteEphemeris::getStop() const
-        {
-          return ::org::orekit::time::AbsoluteDate(env->callObjectMethod(this$, mids$[mid_getStop_aaa854c403487cf3]));
+          void HatchFilter::updatePreviousSmoothingValue(jdouble a0) const
+          {
+            env->callVoidMethod(this$, mids$[mid_updatePreviousSmoothingValue_17db3a65980d3441], a0);
+          }
         }
       }
     }
@@ -1693,96 +1716,348 @@ namespace org {
 
 namespace org {
   namespace orekit {
-    namespace files {
-      namespace general {
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_cast_(PyTypeObject *type, PyObject *arg);
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_instance_(PyTypeObject *type, PyObject *arg);
-        static int t_OrekitEphemerisFile$OrekitSatelliteEphemeris_init_(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self, PyObject *args, PyObject *kwds);
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_addNewSegment(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self, PyObject *args);
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_getId(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self);
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_getMu(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self);
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_getSegments(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self);
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_getStart(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self);
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_getStop(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self);
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_get__id(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self, void *data);
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_get__mu(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self, void *data);
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_get__segments(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self, void *data);
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_get__start(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self, void *data);
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_get__stop(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self, void *data);
-        static PyGetSetDef t_OrekitEphemerisFile$OrekitSatelliteEphemeris__fields_[] = {
-          DECLARE_GET_FIELD(t_OrekitEphemerisFile$OrekitSatelliteEphemeris, id),
-          DECLARE_GET_FIELD(t_OrekitEphemerisFile$OrekitSatelliteEphemeris, mu),
-          DECLARE_GET_FIELD(t_OrekitEphemerisFile$OrekitSatelliteEphemeris, segments),
-          DECLARE_GET_FIELD(t_OrekitEphemerisFile$OrekitSatelliteEphemeris, start),
-          DECLARE_GET_FIELD(t_OrekitEphemerisFile$OrekitSatelliteEphemeris, stop),
-          { NULL, NULL, NULL, NULL, NULL }
-        };
+    namespace estimation {
+      namespace measurements {
+        namespace filtering {
+          static PyObject *t_HatchFilter_cast_(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_HatchFilter_instance_(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_HatchFilter_addToCodeHistory(t_HatchFilter *self, PyObject *arg);
+          static PyObject *t_HatchFilter_addToSmoothedCodeHistory(t_HatchFilter *self, PyObject *arg);
+          static PyObject *t_HatchFilter_getCodeHistory(t_HatchFilter *self);
+          static PyObject *t_HatchFilter_getSmoothedCodeHistory(t_HatchFilter *self);
+          static PyObject *t_HatchFilter_getThreshold(t_HatchFilter *self);
+          static PyObject *t_HatchFilter_resetFilterNext(t_HatchFilter *self, PyObject *arg);
+          static PyObject *t_HatchFilter_updatePreviousSmoothedCode(t_HatchFilter *self, PyObject *arg);
+          static PyObject *t_HatchFilter_updatePreviousSmoothingValue(t_HatchFilter *self, PyObject *arg);
+          static PyObject *t_HatchFilter_get__codeHistory(t_HatchFilter *self, void *data);
+          static PyObject *t_HatchFilter_get__smoothedCodeHistory(t_HatchFilter *self, void *data);
+          static PyObject *t_HatchFilter_get__threshold(t_HatchFilter *self, void *data);
+          static PyGetSetDef t_HatchFilter__fields_[] = {
+            DECLARE_GET_FIELD(t_HatchFilter, codeHistory),
+            DECLARE_GET_FIELD(t_HatchFilter, smoothedCodeHistory),
+            DECLARE_GET_FIELD(t_HatchFilter, threshold),
+            { NULL, NULL, NULL, NULL, NULL }
+          };
 
-        static PyMethodDef t_OrekitEphemerisFile$OrekitSatelliteEphemeris__methods_[] = {
-          DECLARE_METHOD(t_OrekitEphemerisFile$OrekitSatelliteEphemeris, cast_, METH_O | METH_CLASS),
-          DECLARE_METHOD(t_OrekitEphemerisFile$OrekitSatelliteEphemeris, instance_, METH_O | METH_CLASS),
-          DECLARE_METHOD(t_OrekitEphemerisFile$OrekitSatelliteEphemeris, addNewSegment, METH_VARARGS),
-          DECLARE_METHOD(t_OrekitEphemerisFile$OrekitSatelliteEphemeris, getId, METH_NOARGS),
-          DECLARE_METHOD(t_OrekitEphemerisFile$OrekitSatelliteEphemeris, getMu, METH_NOARGS),
-          DECLARE_METHOD(t_OrekitEphemerisFile$OrekitSatelliteEphemeris, getSegments, METH_NOARGS),
-          DECLARE_METHOD(t_OrekitEphemerisFile$OrekitSatelliteEphemeris, getStart, METH_NOARGS),
-          DECLARE_METHOD(t_OrekitEphemerisFile$OrekitSatelliteEphemeris, getStop, METH_NOARGS),
+          static PyMethodDef t_HatchFilter__methods_[] = {
+            DECLARE_METHOD(t_HatchFilter, cast_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_HatchFilter, instance_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_HatchFilter, addToCodeHistory, METH_O),
+            DECLARE_METHOD(t_HatchFilter, addToSmoothedCodeHistory, METH_O),
+            DECLARE_METHOD(t_HatchFilter, getCodeHistory, METH_NOARGS),
+            DECLARE_METHOD(t_HatchFilter, getSmoothedCodeHistory, METH_NOARGS),
+            DECLARE_METHOD(t_HatchFilter, getThreshold, METH_NOARGS),
+            DECLARE_METHOD(t_HatchFilter, resetFilterNext, METH_O),
+            DECLARE_METHOD(t_HatchFilter, updatePreviousSmoothedCode, METH_O),
+            DECLARE_METHOD(t_HatchFilter, updatePreviousSmoothingValue, METH_O),
+            { NULL, NULL, 0, NULL }
+          };
+
+          static PyType_Slot PY_TYPE_SLOTS(HatchFilter)[] = {
+            { Py_tp_methods, t_HatchFilter__methods_ },
+            { Py_tp_init, (void *) abstract_init },
+            { Py_tp_getset, t_HatchFilter__fields_ },
+            { 0, NULL }
+          };
+
+          static PyType_Def *PY_TYPE_BASES(HatchFilter)[] = {
+            &PY_TYPE_DEF(::java::lang::Object),
+            NULL
+          };
+
+          DEFINE_TYPE(HatchFilter, t_HatchFilter, HatchFilter);
+
+          void t_HatchFilter::install(PyObject *module)
+          {
+            installType(&PY_TYPE(HatchFilter), &PY_TYPE_DEF(HatchFilter), module, "HatchFilter", 0);
+          }
+
+          void t_HatchFilter::initialize(PyObject *module)
+          {
+            PyObject_SetAttrString((PyObject *) PY_TYPE(HatchFilter), "class_", make_descriptor(HatchFilter::initializeClass, 1));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(HatchFilter), "wrapfn_", make_descriptor(t_HatchFilter::wrap_jobject));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(HatchFilter), "boxfn_", make_descriptor(boxObject));
+          }
+
+          static PyObject *t_HatchFilter_cast_(PyTypeObject *type, PyObject *arg)
+          {
+            if (!(arg = castCheck(arg, HatchFilter::initializeClass, 1)))
+              return NULL;
+            return t_HatchFilter::wrap_Object(HatchFilter(((t_HatchFilter *) arg)->object.this$));
+          }
+          static PyObject *t_HatchFilter_instance_(PyTypeObject *type, PyObject *arg)
+          {
+            if (!castCheck(arg, HatchFilter::initializeClass, 0))
+              Py_RETURN_FALSE;
+            Py_RETURN_TRUE;
+          }
+
+          static PyObject *t_HatchFilter_addToCodeHistory(t_HatchFilter *self, PyObject *arg)
+          {
+            jdouble a0;
+
+            if (!parseArg(arg, "D", &a0))
+            {
+              OBJ_CALL(self->object.addToCodeHistory(a0));
+              Py_RETURN_NONE;
+            }
+
+            PyErr_SetArgsError((PyObject *) self, "addToCodeHistory", arg);
+            return NULL;
+          }
+
+          static PyObject *t_HatchFilter_addToSmoothedCodeHistory(t_HatchFilter *self, PyObject *arg)
+          {
+            jdouble a0;
+
+            if (!parseArg(arg, "D", &a0))
+            {
+              OBJ_CALL(self->object.addToSmoothedCodeHistory(a0));
+              Py_RETURN_NONE;
+            }
+
+            PyErr_SetArgsError((PyObject *) self, "addToSmoothedCodeHistory", arg);
+            return NULL;
+          }
+
+          static PyObject *t_HatchFilter_getCodeHistory(t_HatchFilter *self)
+          {
+            ::java::util::ArrayList result((jobject) NULL);
+            OBJ_CALL(result = self->object.getCodeHistory());
+            return ::java::util::t_ArrayList::wrap_Object(result, ::java::lang::PY_TYPE(Double));
+          }
+
+          static PyObject *t_HatchFilter_getSmoothedCodeHistory(t_HatchFilter *self)
+          {
+            ::java::util::ArrayList result((jobject) NULL);
+            OBJ_CALL(result = self->object.getSmoothedCodeHistory());
+            return ::java::util::t_ArrayList::wrap_Object(result, ::java::lang::PY_TYPE(Double));
+          }
+
+          static PyObject *t_HatchFilter_getThreshold(t_HatchFilter *self)
+          {
+            jdouble result;
+            OBJ_CALL(result = self->object.getThreshold());
+            return PyFloat_FromDouble((double) result);
+          }
+
+          static PyObject *t_HatchFilter_resetFilterNext(t_HatchFilter *self, PyObject *arg)
+          {
+            jdouble a0;
+
+            if (!parseArg(arg, "D", &a0))
+            {
+              OBJ_CALL(self->object.resetFilterNext(a0));
+              Py_RETURN_NONE;
+            }
+
+            PyErr_SetArgsError((PyObject *) self, "resetFilterNext", arg);
+            return NULL;
+          }
+
+          static PyObject *t_HatchFilter_updatePreviousSmoothedCode(t_HatchFilter *self, PyObject *arg)
+          {
+            jdouble a0;
+
+            if (!parseArg(arg, "D", &a0))
+            {
+              OBJ_CALL(self->object.updatePreviousSmoothedCode(a0));
+              Py_RETURN_NONE;
+            }
+
+            PyErr_SetArgsError((PyObject *) self, "updatePreviousSmoothedCode", arg);
+            return NULL;
+          }
+
+          static PyObject *t_HatchFilter_updatePreviousSmoothingValue(t_HatchFilter *self, PyObject *arg)
+          {
+            jdouble a0;
+
+            if (!parseArg(arg, "D", &a0))
+            {
+              OBJ_CALL(self->object.updatePreviousSmoothingValue(a0));
+              Py_RETURN_NONE;
+            }
+
+            PyErr_SetArgsError((PyObject *) self, "updatePreviousSmoothingValue", arg);
+            return NULL;
+          }
+
+          static PyObject *t_HatchFilter_get__codeHistory(t_HatchFilter *self, void *data)
+          {
+            ::java::util::ArrayList value((jobject) NULL);
+            OBJ_CALL(value = self->object.getCodeHistory());
+            return ::java::util::t_ArrayList::wrap_Object(value);
+          }
+
+          static PyObject *t_HatchFilter_get__smoothedCodeHistory(t_HatchFilter *self, void *data)
+          {
+            ::java::util::ArrayList value((jobject) NULL);
+            OBJ_CALL(value = self->object.getSmoothedCodeHistory());
+            return ::java::util::t_ArrayList::wrap_Object(value);
+          }
+
+          static PyObject *t_HatchFilter_get__threshold(t_HatchFilter *self, void *data)
+          {
+            jdouble value;
+            OBJ_CALL(value = self->object.getThreshold());
+            return PyFloat_FromDouble((double) value);
+          }
+        }
+      }
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "org/hipparchus/stat/inference/MannWhitneyUTest.h"
+#include "org/hipparchus/exception/NullArgumentException.h"
+#include "org/hipparchus/exception/MathIllegalArgumentException.h"
+#include "org/hipparchus/stat/ranking/NaNStrategy.h"
+#include "java/lang/Class.h"
+#include "org/hipparchus/stat/ranking/TiesStrategy.h"
+#include "JArray.h"
+
+namespace org {
+  namespace hipparchus {
+    namespace stat {
+      namespace inference {
+
+        ::java::lang::Class *MannWhitneyUTest::class$ = NULL;
+        jmethodID *MannWhitneyUTest::mids$ = NULL;
+        bool MannWhitneyUTest::live$ = false;
+
+        jclass MannWhitneyUTest::initializeClass(bool getOnly)
+        {
+          if (getOnly)
+            return (jclass) (live$ ? class$->this$ : NULL);
+          if (class$ == NULL)
+          {
+            jclass cls = (jclass) env->findClass("org/hipparchus/stat/inference/MannWhitneyUTest");
+
+            mids$ = new jmethodID[max_mid];
+            mids$[mid_init$_0fa09c18fee449d5] = env->getMethodID(cls, "<init>", "()V");
+            mids$[mid_init$_ed87323846b88129] = env->getMethodID(cls, "<init>", "(Lorg/hipparchus/stat/ranking/NaNStrategy;Lorg/hipparchus/stat/ranking/TiesStrategy;)V");
+            mids$[mid_mannWhitneyU_b561c6892e9976f8] = env->getMethodID(cls, "mannWhitneyU", "([D[D)D");
+            mids$[mid_mannWhitneyUTest_b561c6892e9976f8] = env->getMethodID(cls, "mannWhitneyUTest", "([D[D)D");
+            mids$[mid_mannWhitneyUTest_c98cc76e0ea0aa4c] = env->getMethodID(cls, "mannWhitneyUTest", "([D[DZ)D");
+
+            class$ = new ::java::lang::Class(cls);
+            live$ = true;
+          }
+          return (jclass) class$->this$;
+        }
+
+        MannWhitneyUTest::MannWhitneyUTest() : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_0fa09c18fee449d5)) {}
+
+        MannWhitneyUTest::MannWhitneyUTest(const ::org::hipparchus::stat::ranking::NaNStrategy & a0, const ::org::hipparchus::stat::ranking::TiesStrategy & a1) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_ed87323846b88129, a0.this$, a1.this$)) {}
+
+        jdouble MannWhitneyUTest::mannWhitneyU(const JArray< jdouble > & a0, const JArray< jdouble > & a1) const
+        {
+          return env->callDoubleMethod(this$, mids$[mid_mannWhitneyU_b561c6892e9976f8], a0.this$, a1.this$);
+        }
+
+        jdouble MannWhitneyUTest::mannWhitneyUTest(const JArray< jdouble > & a0, const JArray< jdouble > & a1) const
+        {
+          return env->callDoubleMethod(this$, mids$[mid_mannWhitneyUTest_b561c6892e9976f8], a0.this$, a1.this$);
+        }
+
+        jdouble MannWhitneyUTest::mannWhitneyUTest(const JArray< jdouble > & a0, const JArray< jdouble > & a1, jboolean a2) const
+        {
+          return env->callDoubleMethod(this$, mids$[mid_mannWhitneyUTest_c98cc76e0ea0aa4c], a0.this$, a1.this$, a2);
+        }
+      }
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace org {
+  namespace hipparchus {
+    namespace stat {
+      namespace inference {
+        static PyObject *t_MannWhitneyUTest_cast_(PyTypeObject *type, PyObject *arg);
+        static PyObject *t_MannWhitneyUTest_instance_(PyTypeObject *type, PyObject *arg);
+        static int t_MannWhitneyUTest_init_(t_MannWhitneyUTest *self, PyObject *args, PyObject *kwds);
+        static PyObject *t_MannWhitneyUTest_mannWhitneyU(t_MannWhitneyUTest *self, PyObject *args);
+        static PyObject *t_MannWhitneyUTest_mannWhitneyUTest(t_MannWhitneyUTest *self, PyObject *args);
+
+        static PyMethodDef t_MannWhitneyUTest__methods_[] = {
+          DECLARE_METHOD(t_MannWhitneyUTest, cast_, METH_O | METH_CLASS),
+          DECLARE_METHOD(t_MannWhitneyUTest, instance_, METH_O | METH_CLASS),
+          DECLARE_METHOD(t_MannWhitneyUTest, mannWhitneyU, METH_VARARGS),
+          DECLARE_METHOD(t_MannWhitneyUTest, mannWhitneyUTest, METH_VARARGS),
           { NULL, NULL, 0, NULL }
         };
 
-        static PyType_Slot PY_TYPE_SLOTS(OrekitEphemerisFile$OrekitSatelliteEphemeris)[] = {
-          { Py_tp_methods, t_OrekitEphemerisFile$OrekitSatelliteEphemeris__methods_ },
-          { Py_tp_init, (void *) t_OrekitEphemerisFile$OrekitSatelliteEphemeris_init_ },
-          { Py_tp_getset, t_OrekitEphemerisFile$OrekitSatelliteEphemeris__fields_ },
+        static PyType_Slot PY_TYPE_SLOTS(MannWhitneyUTest)[] = {
+          { Py_tp_methods, t_MannWhitneyUTest__methods_ },
+          { Py_tp_init, (void *) t_MannWhitneyUTest_init_ },
           { 0, NULL }
         };
 
-        static PyType_Def *PY_TYPE_BASES(OrekitEphemerisFile$OrekitSatelliteEphemeris)[] = {
+        static PyType_Def *PY_TYPE_BASES(MannWhitneyUTest)[] = {
           &PY_TYPE_DEF(::java::lang::Object),
           NULL
         };
 
-        DEFINE_TYPE(OrekitEphemerisFile$OrekitSatelliteEphemeris, t_OrekitEphemerisFile$OrekitSatelliteEphemeris, OrekitEphemerisFile$OrekitSatelliteEphemeris);
+        DEFINE_TYPE(MannWhitneyUTest, t_MannWhitneyUTest, MannWhitneyUTest);
 
-        void t_OrekitEphemerisFile$OrekitSatelliteEphemeris::install(PyObject *module)
+        void t_MannWhitneyUTest::install(PyObject *module)
         {
-          installType(&PY_TYPE(OrekitEphemerisFile$OrekitSatelliteEphemeris), &PY_TYPE_DEF(OrekitEphemerisFile$OrekitSatelliteEphemeris), module, "OrekitEphemerisFile$OrekitSatelliteEphemeris", 0);
+          installType(&PY_TYPE(MannWhitneyUTest), &PY_TYPE_DEF(MannWhitneyUTest), module, "MannWhitneyUTest", 0);
         }
 
-        void t_OrekitEphemerisFile$OrekitSatelliteEphemeris::initialize(PyObject *module)
+        void t_MannWhitneyUTest::initialize(PyObject *module)
         {
-          PyObject_SetAttrString((PyObject *) PY_TYPE(OrekitEphemerisFile$OrekitSatelliteEphemeris), "class_", make_descriptor(OrekitEphemerisFile$OrekitSatelliteEphemeris::initializeClass, 1));
-          PyObject_SetAttrString((PyObject *) PY_TYPE(OrekitEphemerisFile$OrekitSatelliteEphemeris), "wrapfn_", make_descriptor(t_OrekitEphemerisFile$OrekitSatelliteEphemeris::wrap_jobject));
-          PyObject_SetAttrString((PyObject *) PY_TYPE(OrekitEphemerisFile$OrekitSatelliteEphemeris), "boxfn_", make_descriptor(boxObject));
-          env->getClass(OrekitEphemerisFile$OrekitSatelliteEphemeris::initializeClass);
-          PyObject_SetAttrString((PyObject *) PY_TYPE(OrekitEphemerisFile$OrekitSatelliteEphemeris), "DEFAULT_INTERPOLATION_SIZE", make_descriptor(OrekitEphemerisFile$OrekitSatelliteEphemeris::DEFAULT_INTERPOLATION_SIZE));
+          PyObject_SetAttrString((PyObject *) PY_TYPE(MannWhitneyUTest), "class_", make_descriptor(MannWhitneyUTest::initializeClass, 1));
+          PyObject_SetAttrString((PyObject *) PY_TYPE(MannWhitneyUTest), "wrapfn_", make_descriptor(t_MannWhitneyUTest::wrap_jobject));
+          PyObject_SetAttrString((PyObject *) PY_TYPE(MannWhitneyUTest), "boxfn_", make_descriptor(boxObject));
         }
 
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_cast_(PyTypeObject *type, PyObject *arg)
+        static PyObject *t_MannWhitneyUTest_cast_(PyTypeObject *type, PyObject *arg)
         {
-          if (!(arg = castCheck(arg, OrekitEphemerisFile$OrekitSatelliteEphemeris::initializeClass, 1)))
+          if (!(arg = castCheck(arg, MannWhitneyUTest::initializeClass, 1)))
             return NULL;
-          return t_OrekitEphemerisFile$OrekitSatelliteEphemeris::wrap_Object(OrekitEphemerisFile$OrekitSatelliteEphemeris(((t_OrekitEphemerisFile$OrekitSatelliteEphemeris *) arg)->object.this$));
+          return t_MannWhitneyUTest::wrap_Object(MannWhitneyUTest(((t_MannWhitneyUTest *) arg)->object.this$));
         }
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_instance_(PyTypeObject *type, PyObject *arg)
+        static PyObject *t_MannWhitneyUTest_instance_(PyTypeObject *type, PyObject *arg)
         {
-          if (!castCheck(arg, OrekitEphemerisFile$OrekitSatelliteEphemeris::initializeClass, 0))
+          if (!castCheck(arg, MannWhitneyUTest::initializeClass, 0))
             Py_RETURN_FALSE;
           Py_RETURN_TRUE;
         }
 
-        static int t_OrekitEphemerisFile$OrekitSatelliteEphemeris_init_(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self, PyObject *args, PyObject *kwds)
+        static int t_MannWhitneyUTest_init_(t_MannWhitneyUTest *self, PyObject *args, PyObject *kwds)
         {
-          ::java::lang::String a0((jobject) NULL);
-          OrekitEphemerisFile$OrekitSatelliteEphemeris object((jobject) NULL);
+          switch (PyTuple_GET_SIZE(args)) {
+           case 0:
+            {
+              MannWhitneyUTest object((jobject) NULL);
 
-          if (!parseArgs(args, "s", &a0))
-          {
-            INT_CALL(object = OrekitEphemerisFile$OrekitSatelliteEphemeris(a0));
-            self->object = object;
-          }
-          else
-          {
+              INT_CALL(object = MannWhitneyUTest());
+              self->object = object;
+              break;
+            }
+           case 2:
+            {
+              ::org::hipparchus::stat::ranking::NaNStrategy a0((jobject) NULL);
+              PyTypeObject **p0;
+              ::org::hipparchus::stat::ranking::TiesStrategy a1((jobject) NULL);
+              PyTypeObject **p1;
+              MannWhitneyUTest object((jobject) NULL);
+
+              if (!parseArgs(args, "KK", ::org::hipparchus::stat::ranking::NaNStrategy::initializeClass, ::org::hipparchus::stat::ranking::TiesStrategy::initializeClass, &a0, &p0, ::org::hipparchus::stat::ranking::t_NaNStrategy::parameters_, &a1, &p1, ::org::hipparchus::stat::ranking::t_TiesStrategy::parameters_))
+              {
+                INT_CALL(object = MannWhitneyUTest(a0, a1));
+                self->object = object;
+                break;
+              }
+            }
+           default:
             PyErr_SetArgsError((PyObject *) self, "__init__", args);
             return -1;
           }
@@ -1790,140 +2065,55 @@ namespace org {
           return 0;
         }
 
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_addNewSegment(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self, PyObject *args)
+        static PyObject *t_MannWhitneyUTest_mannWhitneyU(t_MannWhitneyUTest *self, PyObject *args)
+        {
+          JArray< jdouble > a0((jobject) NULL);
+          JArray< jdouble > a1((jobject) NULL);
+          jdouble result;
+
+          if (!parseArgs(args, "[D[D", &a0, &a1))
+          {
+            OBJ_CALL(result = self->object.mannWhitneyU(a0, a1));
+            return PyFloat_FromDouble((double) result);
+          }
+
+          PyErr_SetArgsError((PyObject *) self, "mannWhitneyU", args);
+          return NULL;
+        }
+
+        static PyObject *t_MannWhitneyUTest_mannWhitneyUTest(t_MannWhitneyUTest *self, PyObject *args)
         {
           switch (PyTuple_GET_SIZE(args)) {
-           case 1:
-            {
-              ::java::util::List a0((jobject) NULL);
-              PyTypeObject **p0;
-              ::org::orekit::files::general::OrekitEphemerisFile$OrekitEphemerisSegment result((jobject) NULL);
-
-              if (!parseArgs(args, "K", ::java::util::List::initializeClass, &a0, &p0, ::java::util::t_List::parameters_))
-              {
-                OBJ_CALL(result = self->object.addNewSegment(a0));
-                return ::org::orekit::files::general::t_OrekitEphemerisFile$OrekitEphemerisSegment::wrap_Object(result);
-              }
-            }
-            break;
            case 2:
             {
-              ::java::util::List a0((jobject) NULL);
-              PyTypeObject **p0;
-              jint a1;
-              ::org::orekit::files::general::OrekitEphemerisFile$OrekitEphemerisSegment result((jobject) NULL);
+              JArray< jdouble > a0((jobject) NULL);
+              JArray< jdouble > a1((jobject) NULL);
+              jdouble result;
 
-              if (!parseArgs(args, "KI", ::java::util::List::initializeClass, &a0, &p0, ::java::util::t_List::parameters_, &a1))
+              if (!parseArgs(args, "[D[D", &a0, &a1))
               {
-                OBJ_CALL(result = self->object.addNewSegment(a0, a1));
-                return ::org::orekit::files::general::t_OrekitEphemerisFile$OrekitEphemerisSegment::wrap_Object(result);
+                OBJ_CALL(result = self->object.mannWhitneyUTest(a0, a1));
+                return PyFloat_FromDouble((double) result);
               }
             }
             break;
            case 3:
             {
-              ::java::util::List a0((jobject) NULL);
-              PyTypeObject **p0;
-              ::org::orekit::bodies::CelestialBody a1((jobject) NULL);
-              jint a2;
-              ::org::orekit::files::general::OrekitEphemerisFile$OrekitEphemerisSegment result((jobject) NULL);
+              JArray< jdouble > a0((jobject) NULL);
+              JArray< jdouble > a1((jobject) NULL);
+              jboolean a2;
+              jdouble result;
 
-              if (!parseArgs(args, "KkI", ::java::util::List::initializeClass, ::org::orekit::bodies::CelestialBody::initializeClass, &a0, &p0, ::java::util::t_List::parameters_, &a1, &a2))
+              if (!parseArgs(args, "[D[DZ", &a0, &a1, &a2))
               {
-                OBJ_CALL(result = self->object.addNewSegment(a0, a1, a2));
-                return ::org::orekit::files::general::t_OrekitEphemerisFile$OrekitEphemerisSegment::wrap_Object(result);
-              }
-            }
-            break;
-           case 4:
-            {
-              ::java::util::List a0((jobject) NULL);
-              PyTypeObject **p0;
-              ::org::orekit::bodies::CelestialBody a1((jobject) NULL);
-              jint a2;
-              ::org::orekit::time::TimeScale a3((jobject) NULL);
-              ::org::orekit::files::general::OrekitEphemerisFile$OrekitEphemerisSegment result((jobject) NULL);
-
-              if (!parseArgs(args, "KkIk", ::java::util::List::initializeClass, ::org::orekit::bodies::CelestialBody::initializeClass, ::org::orekit::time::TimeScale::initializeClass, &a0, &p0, ::java::util::t_List::parameters_, &a1, &a2, &a3))
-              {
-                OBJ_CALL(result = self->object.addNewSegment(a0, a1, a2, a3));
-                return ::org::orekit::files::general::t_OrekitEphemerisFile$OrekitEphemerisSegment::wrap_Object(result);
+                OBJ_CALL(result = self->object.mannWhitneyUTest(a0, a1, a2));
+                return PyFloat_FromDouble((double) result);
               }
             }
           }
 
-          PyErr_SetArgsError((PyObject *) self, "addNewSegment", args);
+          PyErr_SetArgsError((PyObject *) self, "mannWhitneyUTest", args);
           return NULL;
-        }
-
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_getId(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self)
-        {
-          ::java::lang::String result((jobject) NULL);
-          OBJ_CALL(result = self->object.getId());
-          return j2p(result);
-        }
-
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_getMu(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self)
-        {
-          jdouble result;
-          OBJ_CALL(result = self->object.getMu());
-          return PyFloat_FromDouble((double) result);
-        }
-
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_getSegments(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self)
-        {
-          ::java::util::List result((jobject) NULL);
-          OBJ_CALL(result = self->object.getSegments());
-          return ::java::util::t_List::wrap_Object(result, ::org::orekit::files::general::PY_TYPE(OrekitEphemerisFile$OrekitEphemerisSegment));
-        }
-
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_getStart(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self)
-        {
-          ::org::orekit::time::AbsoluteDate result((jobject) NULL);
-          OBJ_CALL(result = self->object.getStart());
-          return ::org::orekit::time::t_AbsoluteDate::wrap_Object(result);
-        }
-
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_getStop(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self)
-        {
-          ::org::orekit::time::AbsoluteDate result((jobject) NULL);
-          OBJ_CALL(result = self->object.getStop());
-          return ::org::orekit::time::t_AbsoluteDate::wrap_Object(result);
-        }
-
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_get__id(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self, void *data)
-        {
-          ::java::lang::String value((jobject) NULL);
-          OBJ_CALL(value = self->object.getId());
-          return j2p(value);
-        }
-
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_get__mu(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self, void *data)
-        {
-          jdouble value;
-          OBJ_CALL(value = self->object.getMu());
-          return PyFloat_FromDouble((double) value);
-        }
-
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_get__segments(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self, void *data)
-        {
-          ::java::util::List value((jobject) NULL);
-          OBJ_CALL(value = self->object.getSegments());
-          return ::java::util::t_List::wrap_Object(value);
-        }
-
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_get__start(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self, void *data)
-        {
-          ::org::orekit::time::AbsoluteDate value((jobject) NULL);
-          OBJ_CALL(value = self->object.getStart());
-          return ::org::orekit::time::t_AbsoluteDate::wrap_Object(value);
-        }
-
-        static PyObject *t_OrekitEphemerisFile$OrekitSatelliteEphemeris_get__stop(t_OrekitEphemerisFile$OrekitSatelliteEphemeris *self, void *data)
-        {
-          ::org::orekit::time::AbsoluteDate value((jobject) NULL);
-          OBJ_CALL(value = self->object.getStop());
-          return ::org::orekit::time::t_AbsoluteDate::wrap_Object(value);
         }
       }
     }
@@ -1931,42 +2121,66 @@ namespace org {
 }
 #include <jni.h>
 #include "JCCEnv.h"
-#include "org/orekit/data/ClasspathCrawler.h"
-#include "org/orekit/data/DataProvider.h"
-#include "java/lang/String.h"
+#include "org/orekit/models/earth/GeoMagneticFieldFactory.h"
+#include "org/orekit/models/earth/GeoMagneticFieldFactory$FieldModel.h"
+#include "org/orekit/models/earth/GeoMagneticField.h"
 #include "java/lang/Class.h"
-#include "java/lang/ClassLoader.h"
+#include "org/orekit/models/earth/LazyLoadedGeoMagneticFields.h"
 #include "JArray.h"
 
 namespace org {
   namespace orekit {
-    namespace data {
+    namespace models {
+      namespace earth {
 
-      ::java::lang::Class *ClasspathCrawler::class$ = NULL;
-      jmethodID *ClasspathCrawler::mids$ = NULL;
-      bool ClasspathCrawler::live$ = false;
+        ::java::lang::Class *GeoMagneticFieldFactory::class$ = NULL;
+        jmethodID *GeoMagneticFieldFactory::mids$ = NULL;
+        bool GeoMagneticFieldFactory::live$ = false;
 
-      jclass ClasspathCrawler::initializeClass(bool getOnly)
-      {
-        if (getOnly)
-          return (jclass) (live$ ? class$->this$ : NULL);
-        if (class$ == NULL)
+        jclass GeoMagneticFieldFactory::initializeClass(bool getOnly)
         {
-          jclass cls = (jclass) env->findClass("org/orekit/data/ClasspathCrawler");
+          if (getOnly)
+            return (jclass) (live$ ? class$->this$ : NULL);
+          if (class$ == NULL)
+          {
+            jclass cls = (jclass) env->findClass("org/orekit/models/earth/GeoMagneticFieldFactory");
 
-          mids$ = new jmethodID[max_mid];
-          mids$[mid_init$_5712fb35729cb71f] = env->getMethodID(cls, "<init>", "([Ljava/lang/String;)V");
-          mids$[mid_init$_5ca111ce7ec4f53d] = env->getMethodID(cls, "<init>", "(Ljava/lang/ClassLoader;[Ljava/lang/String;)V");
+            mids$ = new jmethodID[max_mid];
+            mids$[mid_getField_4aeee65bc3c68b0b] = env->getStaticMethodID(cls, "getField", "(Lorg/orekit/models/earth/GeoMagneticFieldFactory$FieldModel;D)Lorg/orekit/models/earth/GeoMagneticField;");
+            mids$[mid_getGeoMagneticFields_df53e62f422caa08] = env->getStaticMethodID(cls, "getGeoMagneticFields", "()Lorg/orekit/models/earth/LazyLoadedGeoMagneticFields;");
+            mids$[mid_getIGRF_11ad1d91265636f7] = env->getStaticMethodID(cls, "getIGRF", "(D)Lorg/orekit/models/earth/GeoMagneticField;");
+            mids$[mid_getWMM_11ad1d91265636f7] = env->getStaticMethodID(cls, "getWMM", "(D)Lorg/orekit/models/earth/GeoMagneticField;");
 
-          class$ = new ::java::lang::Class(cls);
-          live$ = true;
+            class$ = new ::java::lang::Class(cls);
+            live$ = true;
+          }
+          return (jclass) class$->this$;
         }
-        return (jclass) class$->this$;
+
+        ::org::orekit::models::earth::GeoMagneticField GeoMagneticFieldFactory::getField(const ::org::orekit::models::earth::GeoMagneticFieldFactory$FieldModel & a0, jdouble a1)
+        {
+          jclass cls = env->getClass(initializeClass);
+          return ::org::orekit::models::earth::GeoMagneticField(env->callStaticObjectMethod(cls, mids$[mid_getField_4aeee65bc3c68b0b], a0.this$, a1));
+        }
+
+        ::org::orekit::models::earth::LazyLoadedGeoMagneticFields GeoMagneticFieldFactory::getGeoMagneticFields()
+        {
+          jclass cls = env->getClass(initializeClass);
+          return ::org::orekit::models::earth::LazyLoadedGeoMagneticFields(env->callStaticObjectMethod(cls, mids$[mid_getGeoMagneticFields_df53e62f422caa08]));
+        }
+
+        ::org::orekit::models::earth::GeoMagneticField GeoMagneticFieldFactory::getIGRF(jdouble a0)
+        {
+          jclass cls = env->getClass(initializeClass);
+          return ::org::orekit::models::earth::GeoMagneticField(env->callStaticObjectMethod(cls, mids$[mid_getIGRF_11ad1d91265636f7], a0));
+        }
+
+        ::org::orekit::models::earth::GeoMagneticField GeoMagneticFieldFactory::getWMM(jdouble a0)
+        {
+          jclass cls = env->getClass(initializeClass);
+          return ::org::orekit::models::earth::GeoMagneticField(env->callStaticObjectMethod(cls, mids$[mid_getWMM_11ad1d91265636f7], a0));
+        }
       }
-
-      ClasspathCrawler::ClasspathCrawler(const JArray< ::java::lang::String > & a0) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_5712fb35729cb71f, a0.this$)) {}
-
-      ClasspathCrawler::ClasspathCrawler(const ::java::lang::ClassLoader & a0, const JArray< ::java::lang::String > & a1) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_5ca111ce7ec4f53d, a0.this$, a1.this$)) {}
     }
   }
 }
@@ -1977,245 +2191,201 @@ namespace org {
 
 namespace org {
   namespace orekit {
-    namespace data {
-      static PyObject *t_ClasspathCrawler_cast_(PyTypeObject *type, PyObject *arg);
-      static PyObject *t_ClasspathCrawler_instance_(PyTypeObject *type, PyObject *arg);
-      static int t_ClasspathCrawler_init_(t_ClasspathCrawler *self, PyObject *args, PyObject *kwds);
+    namespace models {
+      namespace earth {
+        static PyObject *t_GeoMagneticFieldFactory_cast_(PyTypeObject *type, PyObject *arg);
+        static PyObject *t_GeoMagneticFieldFactory_instance_(PyTypeObject *type, PyObject *arg);
+        static PyObject *t_GeoMagneticFieldFactory_getField(PyTypeObject *type, PyObject *args);
+        static PyObject *t_GeoMagneticFieldFactory_getGeoMagneticFields(PyTypeObject *type);
+        static PyObject *t_GeoMagneticFieldFactory_getIGRF(PyTypeObject *type, PyObject *arg);
+        static PyObject *t_GeoMagneticFieldFactory_getWMM(PyTypeObject *type, PyObject *arg);
+        static PyObject *t_GeoMagneticFieldFactory_get__geoMagneticFields(t_GeoMagneticFieldFactory *self, void *data);
+        static PyGetSetDef t_GeoMagneticFieldFactory__fields_[] = {
+          DECLARE_GET_FIELD(t_GeoMagneticFieldFactory, geoMagneticFields),
+          { NULL, NULL, NULL, NULL, NULL }
+        };
 
-      static PyMethodDef t_ClasspathCrawler__methods_[] = {
-        DECLARE_METHOD(t_ClasspathCrawler, cast_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_ClasspathCrawler, instance_, METH_O | METH_CLASS),
-        { NULL, NULL, 0, NULL }
-      };
+        static PyMethodDef t_GeoMagneticFieldFactory__methods_[] = {
+          DECLARE_METHOD(t_GeoMagneticFieldFactory, cast_, METH_O | METH_CLASS),
+          DECLARE_METHOD(t_GeoMagneticFieldFactory, instance_, METH_O | METH_CLASS),
+          DECLARE_METHOD(t_GeoMagneticFieldFactory, getField, METH_VARARGS | METH_CLASS),
+          DECLARE_METHOD(t_GeoMagneticFieldFactory, getGeoMagneticFields, METH_NOARGS | METH_CLASS),
+          DECLARE_METHOD(t_GeoMagneticFieldFactory, getIGRF, METH_O | METH_CLASS),
+          DECLARE_METHOD(t_GeoMagneticFieldFactory, getWMM, METH_O | METH_CLASS),
+          { NULL, NULL, 0, NULL }
+        };
 
-      static PyType_Slot PY_TYPE_SLOTS(ClasspathCrawler)[] = {
-        { Py_tp_methods, t_ClasspathCrawler__methods_ },
-        { Py_tp_init, (void *) t_ClasspathCrawler_init_ },
-        { 0, NULL }
-      };
+        static PyType_Slot PY_TYPE_SLOTS(GeoMagneticFieldFactory)[] = {
+          { Py_tp_methods, t_GeoMagneticFieldFactory__methods_ },
+          { Py_tp_init, (void *) abstract_init },
+          { Py_tp_getset, t_GeoMagneticFieldFactory__fields_ },
+          { 0, NULL }
+        };
 
-      static PyType_Def *PY_TYPE_BASES(ClasspathCrawler)[] = {
-        &PY_TYPE_DEF(::java::lang::Object),
-        NULL
-      };
+        static PyType_Def *PY_TYPE_BASES(GeoMagneticFieldFactory)[] = {
+          &PY_TYPE_DEF(::java::lang::Object),
+          NULL
+        };
 
-      DEFINE_TYPE(ClasspathCrawler, t_ClasspathCrawler, ClasspathCrawler);
+        DEFINE_TYPE(GeoMagneticFieldFactory, t_GeoMagneticFieldFactory, GeoMagneticFieldFactory);
 
-      void t_ClasspathCrawler::install(PyObject *module)
-      {
-        installType(&PY_TYPE(ClasspathCrawler), &PY_TYPE_DEF(ClasspathCrawler), module, "ClasspathCrawler", 0);
-      }
-
-      void t_ClasspathCrawler::initialize(PyObject *module)
-      {
-        PyObject_SetAttrString((PyObject *) PY_TYPE(ClasspathCrawler), "class_", make_descriptor(ClasspathCrawler::initializeClass, 1));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(ClasspathCrawler), "wrapfn_", make_descriptor(t_ClasspathCrawler::wrap_jobject));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(ClasspathCrawler), "boxfn_", make_descriptor(boxObject));
-      }
-
-      static PyObject *t_ClasspathCrawler_cast_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!(arg = castCheck(arg, ClasspathCrawler::initializeClass, 1)))
-          return NULL;
-        return t_ClasspathCrawler::wrap_Object(ClasspathCrawler(((t_ClasspathCrawler *) arg)->object.this$));
-      }
-      static PyObject *t_ClasspathCrawler_instance_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!castCheck(arg, ClasspathCrawler::initializeClass, 0))
-          Py_RETURN_FALSE;
-        Py_RETURN_TRUE;
-      }
-
-      static int t_ClasspathCrawler_init_(t_ClasspathCrawler *self, PyObject *args, PyObject *kwds)
-      {
-        switch (PyTuple_GET_SIZE(args)) {
-         case 1:
-          {
-            JArray< ::java::lang::String > a0((jobject) NULL);
-            ClasspathCrawler object((jobject) NULL);
-
-            if (!parseArgs(args, "[s", &a0))
-            {
-              INT_CALL(object = ClasspathCrawler(a0));
-              self->object = object;
-              break;
-            }
-          }
-          goto err;
-         case 2:
-          {
-            ::java::lang::ClassLoader a0((jobject) NULL);
-            JArray< ::java::lang::String > a1((jobject) NULL);
-            ClasspathCrawler object((jobject) NULL);
-
-            if (!parseArgs(args, "k[s", ::java::lang::ClassLoader::initializeClass, &a0, &a1))
-            {
-              INT_CALL(object = ClasspathCrawler(a0, a1));
-              self->object = object;
-              break;
-            }
-          }
-         default:
-         err:
-          PyErr_SetArgsError((PyObject *) self, "__init__", args);
-          return -1;
+        void t_GeoMagneticFieldFactory::install(PyObject *module)
+        {
+          installType(&PY_TYPE(GeoMagneticFieldFactory), &PY_TYPE_DEF(GeoMagneticFieldFactory), module, "GeoMagneticFieldFactory", 0);
+          PyObject_SetAttrString((PyObject *) PY_TYPE(GeoMagneticFieldFactory), "FieldModel", make_descriptor(&PY_TYPE_DEF(GeoMagneticFieldFactory$FieldModel)));
         }
 
-        return 0;
+        void t_GeoMagneticFieldFactory::initialize(PyObject *module)
+        {
+          PyObject_SetAttrString((PyObject *) PY_TYPE(GeoMagneticFieldFactory), "class_", make_descriptor(GeoMagneticFieldFactory::initializeClass, 1));
+          PyObject_SetAttrString((PyObject *) PY_TYPE(GeoMagneticFieldFactory), "wrapfn_", make_descriptor(t_GeoMagneticFieldFactory::wrap_jobject));
+          PyObject_SetAttrString((PyObject *) PY_TYPE(GeoMagneticFieldFactory), "boxfn_", make_descriptor(boxObject));
+        }
+
+        static PyObject *t_GeoMagneticFieldFactory_cast_(PyTypeObject *type, PyObject *arg)
+        {
+          if (!(arg = castCheck(arg, GeoMagneticFieldFactory::initializeClass, 1)))
+            return NULL;
+          return t_GeoMagneticFieldFactory::wrap_Object(GeoMagneticFieldFactory(((t_GeoMagneticFieldFactory *) arg)->object.this$));
+        }
+        static PyObject *t_GeoMagneticFieldFactory_instance_(PyTypeObject *type, PyObject *arg)
+        {
+          if (!castCheck(arg, GeoMagneticFieldFactory::initializeClass, 0))
+            Py_RETURN_FALSE;
+          Py_RETURN_TRUE;
+        }
+
+        static PyObject *t_GeoMagneticFieldFactory_getField(PyTypeObject *type, PyObject *args)
+        {
+          ::org::orekit::models::earth::GeoMagneticFieldFactory$FieldModel a0((jobject) NULL);
+          PyTypeObject **p0;
+          jdouble a1;
+          ::org::orekit::models::earth::GeoMagneticField result((jobject) NULL);
+
+          if (!parseArgs(args, "KD", ::org::orekit::models::earth::GeoMagneticFieldFactory$FieldModel::initializeClass, &a0, &p0, ::org::orekit::models::earth::t_GeoMagneticFieldFactory$FieldModel::parameters_, &a1))
+          {
+            OBJ_CALL(result = ::org::orekit::models::earth::GeoMagneticFieldFactory::getField(a0, a1));
+            return ::org::orekit::models::earth::t_GeoMagneticField::wrap_Object(result);
+          }
+
+          PyErr_SetArgsError(type, "getField", args);
+          return NULL;
+        }
+
+        static PyObject *t_GeoMagneticFieldFactory_getGeoMagneticFields(PyTypeObject *type)
+        {
+          ::org::orekit::models::earth::LazyLoadedGeoMagneticFields result((jobject) NULL);
+          OBJ_CALL(result = ::org::orekit::models::earth::GeoMagneticFieldFactory::getGeoMagneticFields());
+          return ::org::orekit::models::earth::t_LazyLoadedGeoMagneticFields::wrap_Object(result);
+        }
+
+        static PyObject *t_GeoMagneticFieldFactory_getIGRF(PyTypeObject *type, PyObject *arg)
+        {
+          jdouble a0;
+          ::org::orekit::models::earth::GeoMagneticField result((jobject) NULL);
+
+          if (!parseArg(arg, "D", &a0))
+          {
+            OBJ_CALL(result = ::org::orekit::models::earth::GeoMagneticFieldFactory::getIGRF(a0));
+            return ::org::orekit::models::earth::t_GeoMagneticField::wrap_Object(result);
+          }
+
+          PyErr_SetArgsError(type, "getIGRF", arg);
+          return NULL;
+        }
+
+        static PyObject *t_GeoMagneticFieldFactory_getWMM(PyTypeObject *type, PyObject *arg)
+        {
+          jdouble a0;
+          ::org::orekit::models::earth::GeoMagneticField result((jobject) NULL);
+
+          if (!parseArg(arg, "D", &a0))
+          {
+            OBJ_CALL(result = ::org::orekit::models::earth::GeoMagneticFieldFactory::getWMM(a0));
+            return ::org::orekit::models::earth::t_GeoMagneticField::wrap_Object(result);
+          }
+
+          PyErr_SetArgsError(type, "getWMM", arg);
+          return NULL;
+        }
+
+        static PyObject *t_GeoMagneticFieldFactory_get__geoMagneticFields(t_GeoMagneticFieldFactory *self, void *data)
+        {
+          ::org::orekit::models::earth::LazyLoadedGeoMagneticFields value((jobject) NULL);
+          OBJ_CALL(value = self->object.getGeoMagneticFields());
+          return ::org::orekit::models::earth::t_LazyLoadedGeoMagneticFields::wrap_Object(value);
+        }
       }
     }
   }
 }
 #include <jni.h>
 #include "JCCEnv.h"
-#include "org/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey.h"
-#include "org/orekit/files/ccsds/utils/ContextBinding.h"
+#include "org/orekit/files/ccsds/utils/generation/PythonMessageWriter.h"
+#include "org/orekit/files/ccsds/ndm/NdmConstituent.h"
+#include "org/orekit/files/ccsds/utils/generation/Generator.h"
+#include "java/io/IOException.h"
+#include "java/lang/Throwable.h"
 #include "java/lang/Class.h"
-#include "org/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey.h"
+#include "org/orekit/files/ccsds/section/Header.h"
+#include "org/orekit/files/ccsds/section/Segment.h"
 #include "java/lang/String.h"
-#include "org/orekit/files/ccsds/ndm/cdm/RTNCovariance.h"
-#include "org/orekit/files/ccsds/utils/lexical/ParseToken.h"
+#include "org/orekit/files/ccsds/utils/generation/MessageWriter.h"
 #include "JArray.h"
 
 namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace ndm {
-          namespace cdm {
+        namespace utils {
+          namespace generation {
 
-            ::java::lang::Class *RTNCovarianceKey::class$ = NULL;
-            jmethodID *RTNCovarianceKey::mids$ = NULL;
-            bool RTNCovarianceKey::live$ = false;
-            RTNCovarianceKey *RTNCovarianceKey::CDRG_DRG = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CDRG_N = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CDRG_NDOT = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CDRG_R = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CDRG_RDOT = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CDRG_T = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CDRG_TDOT = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CNDOT_N = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CNDOT_NDOT = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CNDOT_R = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CNDOT_RDOT = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CNDOT_T = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CNDOT_TDOT = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CN_N = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CN_R = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CN_T = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::COMMENT = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CRDOT_N = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CRDOT_R = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CRDOT_RDOT = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CRDOT_T = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CR_R = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CSRP_DRG = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CSRP_N = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CSRP_NDOT = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CSRP_R = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CSRP_RDOT = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CSRP_SRP = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CSRP_T = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CSRP_TDOT = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CTDOT_N = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CTDOT_R = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CTDOT_RDOT = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CTDOT_T = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CTDOT_TDOT = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CTHR_DRG = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CTHR_N = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CTHR_NDOT = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CTHR_R = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CTHR_RDOT = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CTHR_SRP = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CTHR_T = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CTHR_TDOT = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CTHR_THR = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CT_R = NULL;
-            RTNCovarianceKey *RTNCovarianceKey::CT_T = NULL;
+            ::java::lang::Class *PythonMessageWriter::class$ = NULL;
+            jmethodID *PythonMessageWriter::mids$ = NULL;
+            bool PythonMessageWriter::live$ = false;
 
-            jclass RTNCovarianceKey::initializeClass(bool getOnly)
+            jclass PythonMessageWriter::initializeClass(bool getOnly)
             {
               if (getOnly)
                 return (jclass) (live$ ? class$->this$ : NULL);
               if (class$ == NULL)
               {
-                jclass cls = (jclass) env->findClass("org/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey");
+                jclass cls = (jclass) env->findClass("org/orekit/files/ccsds/utils/generation/PythonMessageWriter");
 
                 mids$ = new jmethodID[max_mid];
-                mids$[mid_process_b65959e79196ae69] = env->getMethodID(cls, "process", "(Lorg/orekit/files/ccsds/utils/lexical/ParseToken;Lorg/orekit/files/ccsds/utils/ContextBinding;Lorg/orekit/files/ccsds/ndm/cdm/RTNCovariance;)Z");
-                mids$[mid_valueOf_d124415d6a021d92] = env->getStaticMethodID(cls, "valueOf", "(Ljava/lang/String;)Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;");
-                mids$[mid_values_31cf7058aeff5824] = env->getStaticMethodID(cls, "values", "()[Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;");
+                mids$[mid_init$_0fa09c18fee449d5] = env->getMethodID(cls, "<init>", "()V");
+                mids$[mid_finalize_0fa09c18fee449d5] = env->getMethodID(cls, "finalize", "()V");
+                mids$[mid_getFormatVersionKey_11b109bd155ca898] = env->getMethodID(cls, "getFormatVersionKey", "()Ljava/lang/String;");
+                mids$[mid_getRoot_11b109bd155ca898] = env->getMethodID(cls, "getRoot", "()Ljava/lang/String;");
+                mids$[mid_getVersion_dff5885c2c873297] = env->getMethodID(cls, "getVersion", "()D");
+                mids$[mid_pythonDecRef_0fa09c18fee449d5] = env->getMethodID(cls, "pythonDecRef", "()V");
+                mids$[mid_pythonExtension_492808a339bfa35f] = env->getMethodID(cls, "pythonExtension", "()J");
+                mids$[mid_pythonExtension_3a8e7649f31fdb20] = env->getMethodID(cls, "pythonExtension", "(J)V");
+                mids$[mid_writeFooter_6d745cf7b26e9f5d] = env->getMethodID(cls, "writeFooter", "(Lorg/orekit/files/ccsds/utils/generation/Generator;)V");
+                mids$[mid_writeHeader_48090222d5fb583c] = env->getMethodID(cls, "writeHeader", "(Lorg/orekit/files/ccsds/utils/generation/Generator;Lorg/orekit/files/ccsds/section/Header;)V");
+                mids$[mid_writeSegment_6a1f0a7164a88e0a] = env->getMethodID(cls, "writeSegment", "(Lorg/orekit/files/ccsds/utils/generation/Generator;Lorg/orekit/files/ccsds/section/Segment;)V");
 
                 class$ = new ::java::lang::Class(cls);
-                cls = (jclass) class$->this$;
-
-                CDRG_DRG = new RTNCovarianceKey(env->getStaticObjectField(cls, "CDRG_DRG", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CDRG_N = new RTNCovarianceKey(env->getStaticObjectField(cls, "CDRG_N", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CDRG_NDOT = new RTNCovarianceKey(env->getStaticObjectField(cls, "CDRG_NDOT", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CDRG_R = new RTNCovarianceKey(env->getStaticObjectField(cls, "CDRG_R", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CDRG_RDOT = new RTNCovarianceKey(env->getStaticObjectField(cls, "CDRG_RDOT", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CDRG_T = new RTNCovarianceKey(env->getStaticObjectField(cls, "CDRG_T", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CDRG_TDOT = new RTNCovarianceKey(env->getStaticObjectField(cls, "CDRG_TDOT", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CNDOT_N = new RTNCovarianceKey(env->getStaticObjectField(cls, "CNDOT_N", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CNDOT_NDOT = new RTNCovarianceKey(env->getStaticObjectField(cls, "CNDOT_NDOT", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CNDOT_R = new RTNCovarianceKey(env->getStaticObjectField(cls, "CNDOT_R", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CNDOT_RDOT = new RTNCovarianceKey(env->getStaticObjectField(cls, "CNDOT_RDOT", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CNDOT_T = new RTNCovarianceKey(env->getStaticObjectField(cls, "CNDOT_T", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CNDOT_TDOT = new RTNCovarianceKey(env->getStaticObjectField(cls, "CNDOT_TDOT", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CN_N = new RTNCovarianceKey(env->getStaticObjectField(cls, "CN_N", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CN_R = new RTNCovarianceKey(env->getStaticObjectField(cls, "CN_R", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CN_T = new RTNCovarianceKey(env->getStaticObjectField(cls, "CN_T", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                COMMENT = new RTNCovarianceKey(env->getStaticObjectField(cls, "COMMENT", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CRDOT_N = new RTNCovarianceKey(env->getStaticObjectField(cls, "CRDOT_N", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CRDOT_R = new RTNCovarianceKey(env->getStaticObjectField(cls, "CRDOT_R", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CRDOT_RDOT = new RTNCovarianceKey(env->getStaticObjectField(cls, "CRDOT_RDOT", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CRDOT_T = new RTNCovarianceKey(env->getStaticObjectField(cls, "CRDOT_T", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CR_R = new RTNCovarianceKey(env->getStaticObjectField(cls, "CR_R", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CSRP_DRG = new RTNCovarianceKey(env->getStaticObjectField(cls, "CSRP_DRG", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CSRP_N = new RTNCovarianceKey(env->getStaticObjectField(cls, "CSRP_N", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CSRP_NDOT = new RTNCovarianceKey(env->getStaticObjectField(cls, "CSRP_NDOT", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CSRP_R = new RTNCovarianceKey(env->getStaticObjectField(cls, "CSRP_R", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CSRP_RDOT = new RTNCovarianceKey(env->getStaticObjectField(cls, "CSRP_RDOT", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CSRP_SRP = new RTNCovarianceKey(env->getStaticObjectField(cls, "CSRP_SRP", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CSRP_T = new RTNCovarianceKey(env->getStaticObjectField(cls, "CSRP_T", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CSRP_TDOT = new RTNCovarianceKey(env->getStaticObjectField(cls, "CSRP_TDOT", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CTDOT_N = new RTNCovarianceKey(env->getStaticObjectField(cls, "CTDOT_N", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CTDOT_R = new RTNCovarianceKey(env->getStaticObjectField(cls, "CTDOT_R", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CTDOT_RDOT = new RTNCovarianceKey(env->getStaticObjectField(cls, "CTDOT_RDOT", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CTDOT_T = new RTNCovarianceKey(env->getStaticObjectField(cls, "CTDOT_T", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CTDOT_TDOT = new RTNCovarianceKey(env->getStaticObjectField(cls, "CTDOT_TDOT", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CTHR_DRG = new RTNCovarianceKey(env->getStaticObjectField(cls, "CTHR_DRG", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CTHR_N = new RTNCovarianceKey(env->getStaticObjectField(cls, "CTHR_N", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CTHR_NDOT = new RTNCovarianceKey(env->getStaticObjectField(cls, "CTHR_NDOT", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CTHR_R = new RTNCovarianceKey(env->getStaticObjectField(cls, "CTHR_R", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CTHR_RDOT = new RTNCovarianceKey(env->getStaticObjectField(cls, "CTHR_RDOT", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CTHR_SRP = new RTNCovarianceKey(env->getStaticObjectField(cls, "CTHR_SRP", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CTHR_T = new RTNCovarianceKey(env->getStaticObjectField(cls, "CTHR_T", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CTHR_TDOT = new RTNCovarianceKey(env->getStaticObjectField(cls, "CTHR_TDOT", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CTHR_THR = new RTNCovarianceKey(env->getStaticObjectField(cls, "CTHR_THR", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CT_R = new RTNCovarianceKey(env->getStaticObjectField(cls, "CT_R", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
-                CT_T = new RTNCovarianceKey(env->getStaticObjectField(cls, "CT_T", "Lorg/orekit/files/ccsds/ndm/cdm/RTNCovarianceKey;"));
                 live$ = true;
               }
               return (jclass) class$->this$;
             }
 
-            jboolean RTNCovarianceKey::process(const ::org::orekit::files::ccsds::utils::lexical::ParseToken & a0, const ::org::orekit::files::ccsds::utils::ContextBinding & a1, const ::org::orekit::files::ccsds::ndm::cdm::RTNCovariance & a2) const
+            PythonMessageWriter::PythonMessageWriter() : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_0fa09c18fee449d5)) {}
+
+            void PythonMessageWriter::finalize() const
             {
-              return env->callBooleanMethod(this$, mids$[mid_process_b65959e79196ae69], a0.this$, a1.this$, a2.this$);
+              env->callVoidMethod(this$, mids$[mid_finalize_0fa09c18fee449d5]);
             }
 
-            RTNCovarianceKey RTNCovarianceKey::valueOf(const ::java::lang::String & a0)
+            jlong PythonMessageWriter::pythonExtension() const
             {
-              jclass cls = env->getClass(initializeClass);
-              return RTNCovarianceKey(env->callStaticObjectMethod(cls, mids$[mid_valueOf_d124415d6a021d92], a0.this$));
+              return env->callLongMethod(this$, mids$[mid_pythonExtension_492808a339bfa35f]);
             }
 
-            JArray< RTNCovarianceKey > RTNCovarianceKey::values()
+            void PythonMessageWriter::pythonExtension(jlong a0) const
             {
-              jclass cls = env->getClass(initializeClass);
-              return JArray< RTNCovarianceKey >(env->callStaticObjectMethod(cls, mids$[mid_values_31cf7058aeff5824]));
+              env->callVoidMethod(this$, mids$[mid_pythonExtension_3a8e7649f31fdb20], a0);
             }
           }
         }
@@ -2232,182 +2402,309 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace ndm {
-          namespace cdm {
-            static PyObject *t_RTNCovarianceKey_cast_(PyTypeObject *type, PyObject *arg);
-            static PyObject *t_RTNCovarianceKey_instance_(PyTypeObject *type, PyObject *arg);
-            static PyObject *t_RTNCovarianceKey_of_(t_RTNCovarianceKey *self, PyObject *args);
-            static PyObject *t_RTNCovarianceKey_process(t_RTNCovarianceKey *self, PyObject *args);
-            static PyObject *t_RTNCovarianceKey_valueOf(PyTypeObject *type, PyObject *args);
-            static PyObject *t_RTNCovarianceKey_values(PyTypeObject *type);
-            static PyObject *t_RTNCovarianceKey_get__parameters_(t_RTNCovarianceKey *self, void *data);
-            static PyGetSetDef t_RTNCovarianceKey__fields_[] = {
-              DECLARE_GET_FIELD(t_RTNCovarianceKey, parameters_),
+        namespace utils {
+          namespace generation {
+            static PyObject *t_PythonMessageWriter_cast_(PyTypeObject *type, PyObject *arg);
+            static PyObject *t_PythonMessageWriter_instance_(PyTypeObject *type, PyObject *arg);
+            static PyObject *t_PythonMessageWriter_of_(t_PythonMessageWriter *self, PyObject *args);
+            static int t_PythonMessageWriter_init_(t_PythonMessageWriter *self, PyObject *args, PyObject *kwds);
+            static PyObject *t_PythonMessageWriter_finalize(t_PythonMessageWriter *self);
+            static PyObject *t_PythonMessageWriter_pythonExtension(t_PythonMessageWriter *self, PyObject *args);
+            static jobject JNICALL t_PythonMessageWriter_getFormatVersionKey0(JNIEnv *jenv, jobject jobj);
+            static jobject JNICALL t_PythonMessageWriter_getRoot1(JNIEnv *jenv, jobject jobj);
+            static jdouble JNICALL t_PythonMessageWriter_getVersion2(JNIEnv *jenv, jobject jobj);
+            static void JNICALL t_PythonMessageWriter_pythonDecRef3(JNIEnv *jenv, jobject jobj);
+            static void JNICALL t_PythonMessageWriter_writeFooter4(JNIEnv *jenv, jobject jobj, jobject a0);
+            static void JNICALL t_PythonMessageWriter_writeHeader5(JNIEnv *jenv, jobject jobj, jobject a0, jobject a1);
+            static void JNICALL t_PythonMessageWriter_writeSegment6(JNIEnv *jenv, jobject jobj, jobject a0, jobject a1);
+            static PyObject *t_PythonMessageWriter_get__self(t_PythonMessageWriter *self, void *data);
+            static PyObject *t_PythonMessageWriter_get__parameters_(t_PythonMessageWriter *self, void *data);
+            static PyGetSetDef t_PythonMessageWriter__fields_[] = {
+              DECLARE_GET_FIELD(t_PythonMessageWriter, self),
+              DECLARE_GET_FIELD(t_PythonMessageWriter, parameters_),
               { NULL, NULL, NULL, NULL, NULL }
             };
 
-            static PyMethodDef t_RTNCovarianceKey__methods_[] = {
-              DECLARE_METHOD(t_RTNCovarianceKey, cast_, METH_O | METH_CLASS),
-              DECLARE_METHOD(t_RTNCovarianceKey, instance_, METH_O | METH_CLASS),
-              DECLARE_METHOD(t_RTNCovarianceKey, of_, METH_VARARGS),
-              DECLARE_METHOD(t_RTNCovarianceKey, process, METH_VARARGS),
-              DECLARE_METHOD(t_RTNCovarianceKey, valueOf, METH_VARARGS | METH_CLASS),
-              DECLARE_METHOD(t_RTNCovarianceKey, values, METH_NOARGS | METH_CLASS),
+            static PyMethodDef t_PythonMessageWriter__methods_[] = {
+              DECLARE_METHOD(t_PythonMessageWriter, cast_, METH_O | METH_CLASS),
+              DECLARE_METHOD(t_PythonMessageWriter, instance_, METH_O | METH_CLASS),
+              DECLARE_METHOD(t_PythonMessageWriter, of_, METH_VARARGS),
+              DECLARE_METHOD(t_PythonMessageWriter, finalize, METH_NOARGS),
+              DECLARE_METHOD(t_PythonMessageWriter, pythonExtension, METH_VARARGS),
               { NULL, NULL, 0, NULL }
             };
 
-            static PyType_Slot PY_TYPE_SLOTS(RTNCovarianceKey)[] = {
-              { Py_tp_methods, t_RTNCovarianceKey__methods_ },
-              { Py_tp_init, (void *) abstract_init },
-              { Py_tp_getset, t_RTNCovarianceKey__fields_ },
+            static PyType_Slot PY_TYPE_SLOTS(PythonMessageWriter)[] = {
+              { Py_tp_methods, t_PythonMessageWriter__methods_ },
+              { Py_tp_init, (void *) t_PythonMessageWriter_init_ },
+              { Py_tp_getset, t_PythonMessageWriter__fields_ },
               { 0, NULL }
             };
 
-            static PyType_Def *PY_TYPE_BASES(RTNCovarianceKey)[] = {
-              &PY_TYPE_DEF(::java::lang::Enum),
+            static PyType_Def *PY_TYPE_BASES(PythonMessageWriter)[] = {
+              &PY_TYPE_DEF(::java::lang::Object),
               NULL
             };
 
-            DEFINE_TYPE(RTNCovarianceKey, t_RTNCovarianceKey, RTNCovarianceKey);
-            PyObject *t_RTNCovarianceKey::wrap_Object(const RTNCovarianceKey& object, PyTypeObject *p0)
+            DEFINE_TYPE(PythonMessageWriter, t_PythonMessageWriter, PythonMessageWriter);
+            PyObject *t_PythonMessageWriter::wrap_Object(const PythonMessageWriter& object, PyTypeObject *p0, PyTypeObject *p1, PyTypeObject *p2)
             {
-              PyObject *obj = t_RTNCovarianceKey::wrap_Object(object);
+              PyObject *obj = t_PythonMessageWriter::wrap_Object(object);
               if (obj != NULL && obj != Py_None)
               {
-                t_RTNCovarianceKey *self = (t_RTNCovarianceKey *) obj;
+                t_PythonMessageWriter *self = (t_PythonMessageWriter *) obj;
                 self->parameters[0] = p0;
+                self->parameters[1] = p1;
+                self->parameters[2] = p2;
               }
               return obj;
             }
 
-            PyObject *t_RTNCovarianceKey::wrap_jobject(const jobject& object, PyTypeObject *p0)
+            PyObject *t_PythonMessageWriter::wrap_jobject(const jobject& object, PyTypeObject *p0, PyTypeObject *p1, PyTypeObject *p2)
             {
-              PyObject *obj = t_RTNCovarianceKey::wrap_jobject(object);
+              PyObject *obj = t_PythonMessageWriter::wrap_jobject(object);
               if (obj != NULL && obj != Py_None)
               {
-                t_RTNCovarianceKey *self = (t_RTNCovarianceKey *) obj;
+                t_PythonMessageWriter *self = (t_PythonMessageWriter *) obj;
                 self->parameters[0] = p0;
+                self->parameters[1] = p1;
+                self->parameters[2] = p2;
               }
               return obj;
             }
 
-            void t_RTNCovarianceKey::install(PyObject *module)
+            void t_PythonMessageWriter::install(PyObject *module)
             {
-              installType(&PY_TYPE(RTNCovarianceKey), &PY_TYPE_DEF(RTNCovarianceKey), module, "RTNCovarianceKey", 0);
+              installType(&PY_TYPE(PythonMessageWriter), &PY_TYPE_DEF(PythonMessageWriter), module, "PythonMessageWriter", 1);
             }
 
-            void t_RTNCovarianceKey::initialize(PyObject *module)
+            void t_PythonMessageWriter::initialize(PyObject *module)
             {
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "class_", make_descriptor(RTNCovarianceKey::initializeClass, 1));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "wrapfn_", make_descriptor(t_RTNCovarianceKey::wrap_jobject));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "boxfn_", make_descriptor(boxObject));
-              env->getClass(RTNCovarianceKey::initializeClass);
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CDRG_DRG", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CDRG_DRG)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CDRG_N", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CDRG_N)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CDRG_NDOT", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CDRG_NDOT)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CDRG_R", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CDRG_R)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CDRG_RDOT", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CDRG_RDOT)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CDRG_T", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CDRG_T)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CDRG_TDOT", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CDRG_TDOT)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CNDOT_N", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CNDOT_N)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CNDOT_NDOT", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CNDOT_NDOT)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CNDOT_R", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CNDOT_R)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CNDOT_RDOT", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CNDOT_RDOT)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CNDOT_T", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CNDOT_T)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CNDOT_TDOT", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CNDOT_TDOT)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CN_N", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CN_N)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CN_R", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CN_R)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CN_T", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CN_T)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "COMMENT", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::COMMENT)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CRDOT_N", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CRDOT_N)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CRDOT_R", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CRDOT_R)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CRDOT_RDOT", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CRDOT_RDOT)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CRDOT_T", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CRDOT_T)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CR_R", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CR_R)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CSRP_DRG", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CSRP_DRG)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CSRP_N", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CSRP_N)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CSRP_NDOT", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CSRP_NDOT)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CSRP_R", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CSRP_R)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CSRP_RDOT", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CSRP_RDOT)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CSRP_SRP", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CSRP_SRP)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CSRP_T", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CSRP_T)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CSRP_TDOT", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CSRP_TDOT)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CTDOT_N", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CTDOT_N)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CTDOT_R", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CTDOT_R)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CTDOT_RDOT", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CTDOT_RDOT)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CTDOT_T", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CTDOT_T)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CTDOT_TDOT", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CTDOT_TDOT)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CTHR_DRG", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CTHR_DRG)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CTHR_N", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CTHR_N)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CTHR_NDOT", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CTHR_NDOT)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CTHR_R", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CTHR_R)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CTHR_RDOT", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CTHR_RDOT)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CTHR_SRP", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CTHR_SRP)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CTHR_T", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CTHR_T)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CTHR_TDOT", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CTHR_TDOT)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CTHR_THR", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CTHR_THR)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CT_R", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CT_R)));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(RTNCovarianceKey), "CT_T", make_descriptor(t_RTNCovarianceKey::wrap_Object(*RTNCovarianceKey::CT_T)));
+              PyObject_SetAttrString((PyObject *) PY_TYPE(PythonMessageWriter), "class_", make_descriptor(PythonMessageWriter::initializeClass, 1));
+              PyObject_SetAttrString((PyObject *) PY_TYPE(PythonMessageWriter), "wrapfn_", make_descriptor(t_PythonMessageWriter::wrap_jobject));
+              PyObject_SetAttrString((PyObject *) PY_TYPE(PythonMessageWriter), "boxfn_", make_descriptor(boxObject));
+              jclass cls = env->getClass(PythonMessageWriter::initializeClass);
+              JNINativeMethod methods[] = {
+                { "getFormatVersionKey", "()Ljava/lang/String;", (void *) t_PythonMessageWriter_getFormatVersionKey0 },
+                { "getRoot", "()Ljava/lang/String;", (void *) t_PythonMessageWriter_getRoot1 },
+                { "getVersion", "()D", (void *) t_PythonMessageWriter_getVersion2 },
+                { "pythonDecRef", "()V", (void *) t_PythonMessageWriter_pythonDecRef3 },
+                { "writeFooter", "(Lorg/orekit/files/ccsds/utils/generation/Generator;)V", (void *) t_PythonMessageWriter_writeFooter4 },
+                { "writeHeader", "(Lorg/orekit/files/ccsds/utils/generation/Generator;Lorg/orekit/files/ccsds/section/Header;)V", (void *) t_PythonMessageWriter_writeHeader5 },
+                { "writeSegment", "(Lorg/orekit/files/ccsds/utils/generation/Generator;Lorg/orekit/files/ccsds/section/Segment;)V", (void *) t_PythonMessageWriter_writeSegment6 },
+              };
+              env->registerNatives(cls, methods, 7);
             }
 
-            static PyObject *t_RTNCovarianceKey_cast_(PyTypeObject *type, PyObject *arg)
+            static PyObject *t_PythonMessageWriter_cast_(PyTypeObject *type, PyObject *arg)
             {
-              if (!(arg = castCheck(arg, RTNCovarianceKey::initializeClass, 1)))
+              if (!(arg = castCheck(arg, PythonMessageWriter::initializeClass, 1)))
                 return NULL;
-              return t_RTNCovarianceKey::wrap_Object(RTNCovarianceKey(((t_RTNCovarianceKey *) arg)->object.this$));
+              return t_PythonMessageWriter::wrap_Object(PythonMessageWriter(((t_PythonMessageWriter *) arg)->object.this$));
             }
-            static PyObject *t_RTNCovarianceKey_instance_(PyTypeObject *type, PyObject *arg)
+            static PyObject *t_PythonMessageWriter_instance_(PyTypeObject *type, PyObject *arg)
             {
-              if (!castCheck(arg, RTNCovarianceKey::initializeClass, 0))
+              if (!castCheck(arg, PythonMessageWriter::initializeClass, 0))
                 Py_RETURN_FALSE;
               Py_RETURN_TRUE;
             }
 
-            static PyObject *t_RTNCovarianceKey_of_(t_RTNCovarianceKey *self, PyObject *args)
+            static PyObject *t_PythonMessageWriter_of_(t_PythonMessageWriter *self, PyObject *args)
             {
-              if (!parseArg(args, "T", 1, &(self->parameters)))
+              if (!parseArg(args, "T", 3, &(self->parameters)))
                 Py_RETURN_SELF;
               return PyErr_SetArgsError((PyObject *) self, "of_", args);
             }
 
-            static PyObject *t_RTNCovarianceKey_process(t_RTNCovarianceKey *self, PyObject *args)
+            static int t_PythonMessageWriter_init_(t_PythonMessageWriter *self, PyObject *args, PyObject *kwds)
             {
-              ::org::orekit::files::ccsds::utils::lexical::ParseToken a0((jobject) NULL);
-              ::org::orekit::files::ccsds::utils::ContextBinding a1((jobject) NULL);
-              ::org::orekit::files::ccsds::ndm::cdm::RTNCovariance a2((jobject) NULL);
-              jboolean result;
+              PythonMessageWriter object((jobject) NULL);
 
-              if (!parseArgs(args, "kkk", ::org::orekit::files::ccsds::utils::lexical::ParseToken::initializeClass, ::org::orekit::files::ccsds::utils::ContextBinding::initializeClass, ::org::orekit::files::ccsds::ndm::cdm::RTNCovariance::initializeClass, &a0, &a1, &a2))
-              {
-                OBJ_CALL(result = self->object.process(a0, a1, a2));
-                Py_RETURN_BOOL(result);
+              INT_CALL(object = PythonMessageWriter());
+              self->object = object;
+
+              Py_INCREF((PyObject *) self);
+              self->object.pythonExtension((jlong) (Py_intptr_t) (void *) self);
+
+              return 0;
+            }
+
+            static PyObject *t_PythonMessageWriter_finalize(t_PythonMessageWriter *self)
+            {
+              OBJ_CALL(self->object.finalize());
+              Py_RETURN_NONE;
+            }
+
+            static PyObject *t_PythonMessageWriter_pythonExtension(t_PythonMessageWriter *self, PyObject *args)
+            {
+              switch (PyTuple_GET_SIZE(args)) {
+               case 0:
+                {
+                  jlong result;
+                  OBJ_CALL(result = self->object.pythonExtension());
+                  return PyLong_FromLongLong((PY_LONG_LONG) result);
+                }
+                break;
+               case 1:
+                {
+                  jlong a0;
+
+                  if (!parseArgs(args, "J", &a0))
+                  {
+                    OBJ_CALL(self->object.pythonExtension(a0));
+                    Py_RETURN_NONE;
+                  }
+                }
               }
 
-              PyErr_SetArgsError((PyObject *) self, "process", args);
+              PyErr_SetArgsError((PyObject *) self, "pythonExtension", args);
               return NULL;
             }
 
-            static PyObject *t_RTNCovarianceKey_valueOf(PyTypeObject *type, PyObject *args)
+            static jobject JNICALL t_PythonMessageWriter_getFormatVersionKey0(JNIEnv *jenv, jobject jobj)
             {
-              ::java::lang::String a0((jobject) NULL);
-              RTNCovarianceKey result((jobject) NULL);
-
-              if (!parseArgs(args, "s", &a0))
+              jlong ptr = jenv->CallLongMethod(jobj, PythonMessageWriter::mids$[PythonMessageWriter::mid_pythonExtension_492808a339bfa35f]);
+              PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+              PythonGIL gil(jenv);
+              ::java::lang::String value((jobject) NULL);
+              PyObject *result = PyObject_CallMethod(obj, "getFormatVersionKey", "");
+              if (!result)
+                throwPythonError();
+              else if (parseArg(result, "s", &value))
               {
-                OBJ_CALL(result = ::org::orekit::files::ccsds::ndm::cdm::RTNCovarianceKey::valueOf(a0));
-                return t_RTNCovarianceKey::wrap_Object(result);
+                throwTypeError("getFormatVersionKey", result);
+                Py_DECREF(result);
+              }
+              else
+              {
+                jobj = jenv->NewLocalRef(value.this$);
+                Py_DECREF(result);
+                return jobj;
               }
 
-              return callSuper(type, "valueOf", args, 2);
+              return (jobject) NULL;
             }
 
-            static PyObject *t_RTNCovarianceKey_values(PyTypeObject *type)
+            static jobject JNICALL t_PythonMessageWriter_getRoot1(JNIEnv *jenv, jobject jobj)
             {
-              JArray< RTNCovarianceKey > result((jobject) NULL);
-              OBJ_CALL(result = ::org::orekit::files::ccsds::ndm::cdm::RTNCovarianceKey::values());
-              return JArray<jobject>(result.this$).wrap(t_RTNCovarianceKey::wrap_jobject);
+              jlong ptr = jenv->CallLongMethod(jobj, PythonMessageWriter::mids$[PythonMessageWriter::mid_pythonExtension_492808a339bfa35f]);
+              PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+              PythonGIL gil(jenv);
+              ::java::lang::String value((jobject) NULL);
+              PyObject *result = PyObject_CallMethod(obj, "getRoot", "");
+              if (!result)
+                throwPythonError();
+              else if (parseArg(result, "s", &value))
+              {
+                throwTypeError("getRoot", result);
+                Py_DECREF(result);
+              }
+              else
+              {
+                jobj = jenv->NewLocalRef(value.this$);
+                Py_DECREF(result);
+                return jobj;
+              }
+
+              return (jobject) NULL;
             }
-            static PyObject *t_RTNCovarianceKey_get__parameters_(t_RTNCovarianceKey *self, void *data)
+
+            static jdouble JNICALL t_PythonMessageWriter_getVersion2(JNIEnv *jenv, jobject jobj)
+            {
+              jlong ptr = jenv->CallLongMethod(jobj, PythonMessageWriter::mids$[PythonMessageWriter::mid_pythonExtension_492808a339bfa35f]);
+              PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+              PythonGIL gil(jenv);
+              jdouble value;
+              PyObject *result = PyObject_CallMethod(obj, "getVersion", "");
+              if (!result)
+                throwPythonError();
+              else if (parseArg(result, "D", &value))
+              {
+                throwTypeError("getVersion", result);
+                Py_DECREF(result);
+              }
+              else
+              {
+                Py_DECREF(result);
+                return value;
+              }
+
+              return (jdouble) 0;
+            }
+
+            static void JNICALL t_PythonMessageWriter_pythonDecRef3(JNIEnv *jenv, jobject jobj)
+            {
+              jlong ptr = jenv->CallLongMethod(jobj, PythonMessageWriter::mids$[PythonMessageWriter::mid_pythonExtension_492808a339bfa35f]);
+              PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+
+              if (obj != NULL)
+              {
+                jenv->CallVoidMethod(jobj, PythonMessageWriter::mids$[PythonMessageWriter::mid_pythonExtension_3a8e7649f31fdb20], (jlong) 0);
+                env->finalizeObject(jenv, obj);
+              }
+            }
+
+            static void JNICALL t_PythonMessageWriter_writeFooter4(JNIEnv *jenv, jobject jobj, jobject a0)
+            {
+              jlong ptr = jenv->CallLongMethod(jobj, PythonMessageWriter::mids$[PythonMessageWriter::mid_pythonExtension_492808a339bfa35f]);
+              PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+              PythonGIL gil(jenv);
+              PyObject *o0 = ::org::orekit::files::ccsds::utils::generation::t_Generator::wrap_Object(::org::orekit::files::ccsds::utils::generation::Generator(a0));
+              PyObject *result = PyObject_CallMethod(obj, "writeFooter", "O", o0);
+              Py_DECREF(o0);
+              if (!result)
+                throwPythonError();
+              else
+                Py_DECREF(result);
+            }
+
+            static void JNICALL t_PythonMessageWriter_writeHeader5(JNIEnv *jenv, jobject jobj, jobject a0, jobject a1)
+            {
+              jlong ptr = jenv->CallLongMethod(jobj, PythonMessageWriter::mids$[PythonMessageWriter::mid_pythonExtension_492808a339bfa35f]);
+              PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+              PythonGIL gil(jenv);
+              PyObject *o0 = ::org::orekit::files::ccsds::utils::generation::t_Generator::wrap_Object(::org::orekit::files::ccsds::utils::generation::Generator(a0));
+              PyObject *o1 = ::org::orekit::files::ccsds::section::t_Header::wrap_Object(::org::orekit::files::ccsds::section::Header(a1));
+              PyObject *result = PyObject_CallMethod(obj, "writeHeader", "OO", o0, o1);
+              Py_DECREF(o0);
+              Py_DECREF(o1);
+              if (!result)
+                throwPythonError();
+              else
+                Py_DECREF(result);
+            }
+
+            static void JNICALL t_PythonMessageWriter_writeSegment6(JNIEnv *jenv, jobject jobj, jobject a0, jobject a1)
+            {
+              jlong ptr = jenv->CallLongMethod(jobj, PythonMessageWriter::mids$[PythonMessageWriter::mid_pythonExtension_492808a339bfa35f]);
+              PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+              PythonGIL gil(jenv);
+              PyObject *o0 = ::org::orekit::files::ccsds::utils::generation::t_Generator::wrap_Object(::org::orekit::files::ccsds::utils::generation::Generator(a0));
+              PyObject *o1 = ::org::orekit::files::ccsds::section::t_Segment::wrap_Object(::org::orekit::files::ccsds::section::Segment(a1));
+              PyObject *result = PyObject_CallMethod(obj, "writeSegment", "OO", o0, o1);
+              Py_DECREF(o0);
+              Py_DECREF(o1);
+              if (!result)
+                throwPythonError();
+              else
+                Py_DECREF(result);
+            }
+
+            static PyObject *t_PythonMessageWriter_get__self(t_PythonMessageWriter *self, void *data)
+            {
+              jlong ptr;
+              OBJ_CALL(ptr = self->object.pythonExtension());
+              PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+
+              if (obj != NULL)
+              {
+                Py_INCREF(obj);
+                return obj;
+              }
+              else
+                Py_RETURN_NONE;
+            }
+            static PyObject *t_PythonMessageWriter_get__parameters_(t_PythonMessageWriter *self, void *data)
             {
               return typeParameters(self->parameters, sizeof(self->parameters));
             }
@@ -2419,189 +2716,32 @@ namespace org {
 }
 #include <jni.h>
 #include "JCCEnv.h"
-#include "org/orekit/data/SimpleTimeStampedTableParser$RowConverter.h"
-#include "org/orekit/time/TimeStamped.h"
+#include "org/orekit/estimation/measurements/gnss/AmbiguityAcceptance.h"
+#include "org/orekit/estimation/measurements/gnss/IntegerLeastSquareSolution.h"
 #include "java/lang/Class.h"
 #include "JArray.h"
 
 namespace org {
   namespace orekit {
-    namespace data {
+    namespace estimation {
+      namespace measurements {
+        namespace gnss {
 
-      ::java::lang::Class *SimpleTimeStampedTableParser$RowConverter::class$ = NULL;
-      jmethodID *SimpleTimeStampedTableParser$RowConverter::mids$ = NULL;
-      bool SimpleTimeStampedTableParser$RowConverter::live$ = false;
+          ::java::lang::Class *AmbiguityAcceptance::class$ = NULL;
+          jmethodID *AmbiguityAcceptance::mids$ = NULL;
+          bool AmbiguityAcceptance::live$ = false;
 
-      jclass SimpleTimeStampedTableParser$RowConverter::initializeClass(bool getOnly)
-      {
-        if (getOnly)
-          return (jclass) (live$ ? class$->this$ : NULL);
-        if (class$ == NULL)
-        {
-          jclass cls = (jclass) env->findClass("org/orekit/data/SimpleTimeStampedTableParser$RowConverter");
-
-          mids$ = new jmethodID[max_mid];
-          mids$[mid_convert_3dba3090800d9e72] = env->getMethodID(cls, "convert", "([D)Lorg/orekit/time/TimeStamped;");
-
-          class$ = new ::java::lang::Class(cls);
-          live$ = true;
-        }
-        return (jclass) class$->this$;
-      }
-
-      ::org::orekit::time::TimeStamped SimpleTimeStampedTableParser$RowConverter::convert(const JArray< jdouble > & a0) const
-      {
-        return ::org::orekit::time::TimeStamped(env->callObjectMethod(this$, mids$[mid_convert_3dba3090800d9e72], a0.this$));
-      }
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace org {
-  namespace orekit {
-    namespace data {
-      static PyObject *t_SimpleTimeStampedTableParser$RowConverter_cast_(PyTypeObject *type, PyObject *arg);
-      static PyObject *t_SimpleTimeStampedTableParser$RowConverter_instance_(PyTypeObject *type, PyObject *arg);
-      static PyObject *t_SimpleTimeStampedTableParser$RowConverter_of_(t_SimpleTimeStampedTableParser$RowConverter *self, PyObject *args);
-      static PyObject *t_SimpleTimeStampedTableParser$RowConverter_convert(t_SimpleTimeStampedTableParser$RowConverter *self, PyObject *arg);
-      static PyObject *t_SimpleTimeStampedTableParser$RowConverter_get__parameters_(t_SimpleTimeStampedTableParser$RowConverter *self, void *data);
-      static PyGetSetDef t_SimpleTimeStampedTableParser$RowConverter__fields_[] = {
-        DECLARE_GET_FIELD(t_SimpleTimeStampedTableParser$RowConverter, parameters_),
-        { NULL, NULL, NULL, NULL, NULL }
-      };
-
-      static PyMethodDef t_SimpleTimeStampedTableParser$RowConverter__methods_[] = {
-        DECLARE_METHOD(t_SimpleTimeStampedTableParser$RowConverter, cast_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_SimpleTimeStampedTableParser$RowConverter, instance_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_SimpleTimeStampedTableParser$RowConverter, of_, METH_VARARGS),
-        DECLARE_METHOD(t_SimpleTimeStampedTableParser$RowConverter, convert, METH_O),
-        { NULL, NULL, 0, NULL }
-      };
-
-      static PyType_Slot PY_TYPE_SLOTS(SimpleTimeStampedTableParser$RowConverter)[] = {
-        { Py_tp_methods, t_SimpleTimeStampedTableParser$RowConverter__methods_ },
-        { Py_tp_init, (void *) abstract_init },
-        { Py_tp_getset, t_SimpleTimeStampedTableParser$RowConverter__fields_ },
-        { 0, NULL }
-      };
-
-      static PyType_Def *PY_TYPE_BASES(SimpleTimeStampedTableParser$RowConverter)[] = {
-        &PY_TYPE_DEF(::java::lang::Object),
-        NULL
-      };
-
-      DEFINE_TYPE(SimpleTimeStampedTableParser$RowConverter, t_SimpleTimeStampedTableParser$RowConverter, SimpleTimeStampedTableParser$RowConverter);
-      PyObject *t_SimpleTimeStampedTableParser$RowConverter::wrap_Object(const SimpleTimeStampedTableParser$RowConverter& object, PyTypeObject *p0)
-      {
-        PyObject *obj = t_SimpleTimeStampedTableParser$RowConverter::wrap_Object(object);
-        if (obj != NULL && obj != Py_None)
-        {
-          t_SimpleTimeStampedTableParser$RowConverter *self = (t_SimpleTimeStampedTableParser$RowConverter *) obj;
-          self->parameters[0] = p0;
-        }
-        return obj;
-      }
-
-      PyObject *t_SimpleTimeStampedTableParser$RowConverter::wrap_jobject(const jobject& object, PyTypeObject *p0)
-      {
-        PyObject *obj = t_SimpleTimeStampedTableParser$RowConverter::wrap_jobject(object);
-        if (obj != NULL && obj != Py_None)
-        {
-          t_SimpleTimeStampedTableParser$RowConverter *self = (t_SimpleTimeStampedTableParser$RowConverter *) obj;
-          self->parameters[0] = p0;
-        }
-        return obj;
-      }
-
-      void t_SimpleTimeStampedTableParser$RowConverter::install(PyObject *module)
-      {
-        installType(&PY_TYPE(SimpleTimeStampedTableParser$RowConverter), &PY_TYPE_DEF(SimpleTimeStampedTableParser$RowConverter), module, "SimpleTimeStampedTableParser$RowConverter", 0);
-      }
-
-      void t_SimpleTimeStampedTableParser$RowConverter::initialize(PyObject *module)
-      {
-        PyObject_SetAttrString((PyObject *) PY_TYPE(SimpleTimeStampedTableParser$RowConverter), "class_", make_descriptor(SimpleTimeStampedTableParser$RowConverter::initializeClass, 1));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(SimpleTimeStampedTableParser$RowConverter), "wrapfn_", make_descriptor(t_SimpleTimeStampedTableParser$RowConverter::wrap_jobject));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(SimpleTimeStampedTableParser$RowConverter), "boxfn_", make_descriptor(boxObject));
-      }
-
-      static PyObject *t_SimpleTimeStampedTableParser$RowConverter_cast_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!(arg = castCheck(arg, SimpleTimeStampedTableParser$RowConverter::initializeClass, 1)))
-          return NULL;
-        return t_SimpleTimeStampedTableParser$RowConverter::wrap_Object(SimpleTimeStampedTableParser$RowConverter(((t_SimpleTimeStampedTableParser$RowConverter *) arg)->object.this$));
-      }
-      static PyObject *t_SimpleTimeStampedTableParser$RowConverter_instance_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!castCheck(arg, SimpleTimeStampedTableParser$RowConverter::initializeClass, 0))
-          Py_RETURN_FALSE;
-        Py_RETURN_TRUE;
-      }
-
-      static PyObject *t_SimpleTimeStampedTableParser$RowConverter_of_(t_SimpleTimeStampedTableParser$RowConverter *self, PyObject *args)
-      {
-        if (!parseArg(args, "T", 1, &(self->parameters)))
-          Py_RETURN_SELF;
-        return PyErr_SetArgsError((PyObject *) self, "of_", args);
-      }
-
-      static PyObject *t_SimpleTimeStampedTableParser$RowConverter_convert(t_SimpleTimeStampedTableParser$RowConverter *self, PyObject *arg)
-      {
-        JArray< jdouble > a0((jobject) NULL);
-        ::org::orekit::time::TimeStamped result((jobject) NULL);
-
-        if (!parseArg(arg, "[D", &a0))
-        {
-          OBJ_CALL(result = self->object.convert(a0));
-          return self->parameters[0] != NULL ? wrapType(self->parameters[0], result.this$) : ::org::orekit::time::t_TimeStamped::wrap_Object(result);
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "convert", arg);
-        return NULL;
-      }
-      static PyObject *t_SimpleTimeStampedTableParser$RowConverter_get__parameters_(t_SimpleTimeStampedTableParser$RowConverter *self, void *data)
-      {
-        return typeParameters(self->parameters, sizeof(self->parameters));
-      }
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "org/orekit/models/earth/atmosphere/DTM2000InputParameters.h"
-#include "java/lang/Class.h"
-#include "org/orekit/time/AbsoluteDate.h"
-#include "JArray.h"
-
-namespace org {
-  namespace orekit {
-    namespace models {
-      namespace earth {
-        namespace atmosphere {
-
-          ::java::lang::Class *DTM2000InputParameters::class$ = NULL;
-          jmethodID *DTM2000InputParameters::mids$ = NULL;
-          bool DTM2000InputParameters::live$ = false;
-
-          jclass DTM2000InputParameters::initializeClass(bool getOnly)
+          jclass AmbiguityAcceptance::initializeClass(bool getOnly)
           {
             if (getOnly)
               return (jclass) (live$ ? class$->this$ : NULL);
             if (class$ == NULL)
             {
-              jclass cls = (jclass) env->findClass("org/orekit/models/earth/atmosphere/DTM2000InputParameters");
+              jclass cls = (jclass) env->findClass("org/orekit/estimation/measurements/gnss/AmbiguityAcceptance");
 
               mids$ = new jmethodID[max_mid];
-              mids$[mid_get24HoursKp_e912d21057defe63] = env->getMethodID(cls, "get24HoursKp", "(Lorg/orekit/time/AbsoluteDate;)D");
-              mids$[mid_getInstantFlux_e912d21057defe63] = env->getMethodID(cls, "getInstantFlux", "(Lorg/orekit/time/AbsoluteDate;)D");
-              mids$[mid_getMaxDate_aaa854c403487cf3] = env->getMethodID(cls, "getMaxDate", "()Lorg/orekit/time/AbsoluteDate;");
-              mids$[mid_getMeanFlux_e912d21057defe63] = env->getMethodID(cls, "getMeanFlux", "(Lorg/orekit/time/AbsoluteDate;)D");
-              mids$[mid_getMinDate_aaa854c403487cf3] = env->getMethodID(cls, "getMinDate", "()Lorg/orekit/time/AbsoluteDate;");
-              mids$[mid_getThreeHourlyKP_e912d21057defe63] = env->getMethodID(cls, "getThreeHourlyKP", "(Lorg/orekit/time/AbsoluteDate;)D");
+              mids$[mid_accept_9b257df6a366a6ba] = env->getMethodID(cls, "accept", "([Lorg/orekit/estimation/measurements/gnss/IntegerLeastSquareSolution;)Lorg/orekit/estimation/measurements/gnss/IntegerLeastSquareSolution;");
+              mids$[mid_numberOfCandidates_570ce0828f81a2c1] = env->getMethodID(cls, "numberOfCandidates", "()I");
 
               class$ = new ::java::lang::Class(cls);
               live$ = true;
@@ -2609,34 +2749,1755 @@ namespace org {
             return (jclass) class$->this$;
           }
 
-          jdouble DTM2000InputParameters::get24HoursKp(const ::org::orekit::time::AbsoluteDate & a0) const
+          ::org::orekit::estimation::measurements::gnss::IntegerLeastSquareSolution AmbiguityAcceptance::accept(const JArray< ::org::orekit::estimation::measurements::gnss::IntegerLeastSquareSolution > & a0) const
           {
-            return env->callDoubleMethod(this$, mids$[mid_get24HoursKp_e912d21057defe63], a0.this$);
+            return ::org::orekit::estimation::measurements::gnss::IntegerLeastSquareSolution(env->callObjectMethod(this$, mids$[mid_accept_9b257df6a366a6ba], a0.this$));
           }
 
-          jdouble DTM2000InputParameters::getInstantFlux(const ::org::orekit::time::AbsoluteDate & a0) const
+          jint AmbiguityAcceptance::numberOfCandidates() const
           {
-            return env->callDoubleMethod(this$, mids$[mid_getInstantFlux_e912d21057defe63], a0.this$);
+            return env->callIntMethod(this$, mids$[mid_numberOfCandidates_570ce0828f81a2c1]);
+          }
+        }
+      }
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        namespace gnss {
+          static PyObject *t_AmbiguityAcceptance_cast_(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_AmbiguityAcceptance_instance_(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_AmbiguityAcceptance_accept(t_AmbiguityAcceptance *self, PyObject *arg);
+          static PyObject *t_AmbiguityAcceptance_numberOfCandidates(t_AmbiguityAcceptance *self);
+
+          static PyMethodDef t_AmbiguityAcceptance__methods_[] = {
+            DECLARE_METHOD(t_AmbiguityAcceptance, cast_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_AmbiguityAcceptance, instance_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_AmbiguityAcceptance, accept, METH_O),
+            DECLARE_METHOD(t_AmbiguityAcceptance, numberOfCandidates, METH_NOARGS),
+            { NULL, NULL, 0, NULL }
+          };
+
+          static PyType_Slot PY_TYPE_SLOTS(AmbiguityAcceptance)[] = {
+            { Py_tp_methods, t_AmbiguityAcceptance__methods_ },
+            { Py_tp_init, (void *) abstract_init },
+            { 0, NULL }
+          };
+
+          static PyType_Def *PY_TYPE_BASES(AmbiguityAcceptance)[] = {
+            &PY_TYPE_DEF(::java::lang::Object),
+            NULL
+          };
+
+          DEFINE_TYPE(AmbiguityAcceptance, t_AmbiguityAcceptance, AmbiguityAcceptance);
+
+          void t_AmbiguityAcceptance::install(PyObject *module)
+          {
+            installType(&PY_TYPE(AmbiguityAcceptance), &PY_TYPE_DEF(AmbiguityAcceptance), module, "AmbiguityAcceptance", 0);
           }
 
-          ::org::orekit::time::AbsoluteDate DTM2000InputParameters::getMaxDate() const
+          void t_AmbiguityAcceptance::initialize(PyObject *module)
           {
-            return ::org::orekit::time::AbsoluteDate(env->callObjectMethod(this$, mids$[mid_getMaxDate_aaa854c403487cf3]));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(AmbiguityAcceptance), "class_", make_descriptor(AmbiguityAcceptance::initializeClass, 1));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(AmbiguityAcceptance), "wrapfn_", make_descriptor(t_AmbiguityAcceptance::wrap_jobject));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(AmbiguityAcceptance), "boxfn_", make_descriptor(boxObject));
           }
 
-          jdouble DTM2000InputParameters::getMeanFlux(const ::org::orekit::time::AbsoluteDate & a0) const
+          static PyObject *t_AmbiguityAcceptance_cast_(PyTypeObject *type, PyObject *arg)
           {
-            return env->callDoubleMethod(this$, mids$[mid_getMeanFlux_e912d21057defe63], a0.this$);
+            if (!(arg = castCheck(arg, AmbiguityAcceptance::initializeClass, 1)))
+              return NULL;
+            return t_AmbiguityAcceptance::wrap_Object(AmbiguityAcceptance(((t_AmbiguityAcceptance *) arg)->object.this$));
+          }
+          static PyObject *t_AmbiguityAcceptance_instance_(PyTypeObject *type, PyObject *arg)
+          {
+            if (!castCheck(arg, AmbiguityAcceptance::initializeClass, 0))
+              Py_RETURN_FALSE;
+            Py_RETURN_TRUE;
           }
 
-          ::org::orekit::time::AbsoluteDate DTM2000InputParameters::getMinDate() const
+          static PyObject *t_AmbiguityAcceptance_accept(t_AmbiguityAcceptance *self, PyObject *arg)
           {
-            return ::org::orekit::time::AbsoluteDate(env->callObjectMethod(this$, mids$[mid_getMinDate_aaa854c403487cf3]));
+            JArray< ::org::orekit::estimation::measurements::gnss::IntegerLeastSquareSolution > a0((jobject) NULL);
+            ::org::orekit::estimation::measurements::gnss::IntegerLeastSquareSolution result((jobject) NULL);
+
+            if (!parseArg(arg, "[k", ::org::orekit::estimation::measurements::gnss::IntegerLeastSquareSolution::initializeClass, &a0))
+            {
+              OBJ_CALL(result = self->object.accept(a0));
+              return ::org::orekit::estimation::measurements::gnss::t_IntegerLeastSquareSolution::wrap_Object(result);
+            }
+
+            PyErr_SetArgsError((PyObject *) self, "accept", arg);
+            return NULL;
           }
 
-          jdouble DTM2000InputParameters::getThreeHourlyKP(const ::org::orekit::time::AbsoluteDate & a0) const
+          static PyObject *t_AmbiguityAcceptance_numberOfCandidates(t_AmbiguityAcceptance *self)
           {
-            return env->callDoubleMethod(this$, mids$[mid_getThreeHourlyKP_e912d21057defe63], a0.this$);
+            jint result;
+            OBJ_CALL(result = self->object.numberOfCandidates());
+            return PyLong_FromLong((long) result);
+          }
+        }
+      }
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "org/hipparchus/ode/ComplexODEState.h"
+#include "org/hipparchus/complex/Complex.h"
+#include "java/lang/Class.h"
+#include "java/io/Serializable.h"
+#include "JArray.h"
+
+namespace org {
+  namespace hipparchus {
+    namespace ode {
+
+      ::java::lang::Class *ComplexODEState::class$ = NULL;
+      jmethodID *ComplexODEState::mids$ = NULL;
+      bool ComplexODEState::live$ = false;
+
+      jclass ComplexODEState::initializeClass(bool getOnly)
+      {
+        if (getOnly)
+          return (jclass) (live$ ? class$->this$ : NULL);
+        if (class$ == NULL)
+        {
+          jclass cls = (jclass) env->findClass("org/hipparchus/ode/ComplexODEState");
+
+          mids$ = new jmethodID[max_mid];
+          mids$[mid_init$_218aa60ac719f855] = env->getMethodID(cls, "<init>", "(D[Lorg/hipparchus/complex/Complex;)V");
+          mids$[mid_init$_0320e82fa6ccb5a8] = env->getMethodID(cls, "<init>", "(D[Lorg/hipparchus/complex/Complex;[[Lorg/hipparchus/complex/Complex;)V");
+          mids$[mid_getCompleteState_8a0770025abeda5b] = env->getMethodID(cls, "getCompleteState", "()[Lorg/hipparchus/complex/Complex;");
+          mids$[mid_getCompleteStateDimension_570ce0828f81a2c1] = env->getMethodID(cls, "getCompleteStateDimension", "()I");
+          mids$[mid_getNumberOfSecondaryStates_570ce0828f81a2c1] = env->getMethodID(cls, "getNumberOfSecondaryStates", "()I");
+          mids$[mid_getPrimaryState_8a0770025abeda5b] = env->getMethodID(cls, "getPrimaryState", "()[Lorg/hipparchus/complex/Complex;");
+          mids$[mid_getPrimaryStateDimension_570ce0828f81a2c1] = env->getMethodID(cls, "getPrimaryStateDimension", "()I");
+          mids$[mid_getSecondaryState_8b297114c93ecf96] = env->getMethodID(cls, "getSecondaryState", "(I)[Lorg/hipparchus/complex/Complex;");
+          mids$[mid_getSecondaryStateDimension_2235cd056f5a882b] = env->getMethodID(cls, "getSecondaryStateDimension", "(I)I");
+          mids$[mid_getTime_dff5885c2c873297] = env->getMethodID(cls, "getTime", "()D");
+          mids$[mid_copy_4b54973ff9f93de0] = env->getMethodID(cls, "copy", "([[Lorg/hipparchus/complex/Complex;)[[Lorg/hipparchus/complex/Complex;");
+
+          class$ = new ::java::lang::Class(cls);
+          live$ = true;
+        }
+        return (jclass) class$->this$;
+      }
+
+      ComplexODEState::ComplexODEState(jdouble a0, const JArray< ::org::hipparchus::complex::Complex > & a1) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_218aa60ac719f855, a0, a1.this$)) {}
+
+      ComplexODEState::ComplexODEState(jdouble a0, const JArray< ::org::hipparchus::complex::Complex > & a1, const JArray< JArray< ::org::hipparchus::complex::Complex > > & a2) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_0320e82fa6ccb5a8, a0, a1.this$, a2.this$)) {}
+
+      JArray< ::org::hipparchus::complex::Complex > ComplexODEState::getCompleteState() const
+      {
+        return JArray< ::org::hipparchus::complex::Complex >(env->callObjectMethod(this$, mids$[mid_getCompleteState_8a0770025abeda5b]));
+      }
+
+      jint ComplexODEState::getCompleteStateDimension() const
+      {
+        return env->callIntMethod(this$, mids$[mid_getCompleteStateDimension_570ce0828f81a2c1]);
+      }
+
+      jint ComplexODEState::getNumberOfSecondaryStates() const
+      {
+        return env->callIntMethod(this$, mids$[mid_getNumberOfSecondaryStates_570ce0828f81a2c1]);
+      }
+
+      JArray< ::org::hipparchus::complex::Complex > ComplexODEState::getPrimaryState() const
+      {
+        return JArray< ::org::hipparchus::complex::Complex >(env->callObjectMethod(this$, mids$[mid_getPrimaryState_8a0770025abeda5b]));
+      }
+
+      jint ComplexODEState::getPrimaryStateDimension() const
+      {
+        return env->callIntMethod(this$, mids$[mid_getPrimaryStateDimension_570ce0828f81a2c1]);
+      }
+
+      JArray< ::org::hipparchus::complex::Complex > ComplexODEState::getSecondaryState(jint a0) const
+      {
+        return JArray< ::org::hipparchus::complex::Complex >(env->callObjectMethod(this$, mids$[mid_getSecondaryState_8b297114c93ecf96], a0));
+      }
+
+      jint ComplexODEState::getSecondaryStateDimension(jint a0) const
+      {
+        return env->callIntMethod(this$, mids$[mid_getSecondaryStateDimension_2235cd056f5a882b], a0);
+      }
+
+      jdouble ComplexODEState::getTime() const
+      {
+        return env->callDoubleMethod(this$, mids$[mid_getTime_dff5885c2c873297]);
+      }
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace org {
+  namespace hipparchus {
+    namespace ode {
+      static PyObject *t_ComplexODEState_cast_(PyTypeObject *type, PyObject *arg);
+      static PyObject *t_ComplexODEState_instance_(PyTypeObject *type, PyObject *arg);
+      static int t_ComplexODEState_init_(t_ComplexODEState *self, PyObject *args, PyObject *kwds);
+      static PyObject *t_ComplexODEState_getCompleteState(t_ComplexODEState *self);
+      static PyObject *t_ComplexODEState_getCompleteStateDimension(t_ComplexODEState *self);
+      static PyObject *t_ComplexODEState_getNumberOfSecondaryStates(t_ComplexODEState *self);
+      static PyObject *t_ComplexODEState_getPrimaryState(t_ComplexODEState *self);
+      static PyObject *t_ComplexODEState_getPrimaryStateDimension(t_ComplexODEState *self);
+      static PyObject *t_ComplexODEState_getSecondaryState(t_ComplexODEState *self, PyObject *arg);
+      static PyObject *t_ComplexODEState_getSecondaryStateDimension(t_ComplexODEState *self, PyObject *arg);
+      static PyObject *t_ComplexODEState_getTime(t_ComplexODEState *self);
+      static PyObject *t_ComplexODEState_get__completeState(t_ComplexODEState *self, void *data);
+      static PyObject *t_ComplexODEState_get__completeStateDimension(t_ComplexODEState *self, void *data);
+      static PyObject *t_ComplexODEState_get__numberOfSecondaryStates(t_ComplexODEState *self, void *data);
+      static PyObject *t_ComplexODEState_get__primaryState(t_ComplexODEState *self, void *data);
+      static PyObject *t_ComplexODEState_get__primaryStateDimension(t_ComplexODEState *self, void *data);
+      static PyObject *t_ComplexODEState_get__time(t_ComplexODEState *self, void *data);
+      static PyGetSetDef t_ComplexODEState__fields_[] = {
+        DECLARE_GET_FIELD(t_ComplexODEState, completeState),
+        DECLARE_GET_FIELD(t_ComplexODEState, completeStateDimension),
+        DECLARE_GET_FIELD(t_ComplexODEState, numberOfSecondaryStates),
+        DECLARE_GET_FIELD(t_ComplexODEState, primaryState),
+        DECLARE_GET_FIELD(t_ComplexODEState, primaryStateDimension),
+        DECLARE_GET_FIELD(t_ComplexODEState, time),
+        { NULL, NULL, NULL, NULL, NULL }
+      };
+
+      static PyMethodDef t_ComplexODEState__methods_[] = {
+        DECLARE_METHOD(t_ComplexODEState, cast_, METH_O | METH_CLASS),
+        DECLARE_METHOD(t_ComplexODEState, instance_, METH_O | METH_CLASS),
+        DECLARE_METHOD(t_ComplexODEState, getCompleteState, METH_NOARGS),
+        DECLARE_METHOD(t_ComplexODEState, getCompleteStateDimension, METH_NOARGS),
+        DECLARE_METHOD(t_ComplexODEState, getNumberOfSecondaryStates, METH_NOARGS),
+        DECLARE_METHOD(t_ComplexODEState, getPrimaryState, METH_NOARGS),
+        DECLARE_METHOD(t_ComplexODEState, getPrimaryStateDimension, METH_NOARGS),
+        DECLARE_METHOD(t_ComplexODEState, getSecondaryState, METH_O),
+        DECLARE_METHOD(t_ComplexODEState, getSecondaryStateDimension, METH_O),
+        DECLARE_METHOD(t_ComplexODEState, getTime, METH_NOARGS),
+        { NULL, NULL, 0, NULL }
+      };
+
+      static PyType_Slot PY_TYPE_SLOTS(ComplexODEState)[] = {
+        { Py_tp_methods, t_ComplexODEState__methods_ },
+        { Py_tp_init, (void *) t_ComplexODEState_init_ },
+        { Py_tp_getset, t_ComplexODEState__fields_ },
+        { 0, NULL }
+      };
+
+      static PyType_Def *PY_TYPE_BASES(ComplexODEState)[] = {
+        &PY_TYPE_DEF(::java::lang::Object),
+        NULL
+      };
+
+      DEFINE_TYPE(ComplexODEState, t_ComplexODEState, ComplexODEState);
+
+      void t_ComplexODEState::install(PyObject *module)
+      {
+        installType(&PY_TYPE(ComplexODEState), &PY_TYPE_DEF(ComplexODEState), module, "ComplexODEState", 0);
+      }
+
+      void t_ComplexODEState::initialize(PyObject *module)
+      {
+        PyObject_SetAttrString((PyObject *) PY_TYPE(ComplexODEState), "class_", make_descriptor(ComplexODEState::initializeClass, 1));
+        PyObject_SetAttrString((PyObject *) PY_TYPE(ComplexODEState), "wrapfn_", make_descriptor(t_ComplexODEState::wrap_jobject));
+        PyObject_SetAttrString((PyObject *) PY_TYPE(ComplexODEState), "boxfn_", make_descriptor(boxObject));
+      }
+
+      static PyObject *t_ComplexODEState_cast_(PyTypeObject *type, PyObject *arg)
+      {
+        if (!(arg = castCheck(arg, ComplexODEState::initializeClass, 1)))
+          return NULL;
+        return t_ComplexODEState::wrap_Object(ComplexODEState(((t_ComplexODEState *) arg)->object.this$));
+      }
+      static PyObject *t_ComplexODEState_instance_(PyTypeObject *type, PyObject *arg)
+      {
+        if (!castCheck(arg, ComplexODEState::initializeClass, 0))
+          Py_RETURN_FALSE;
+        Py_RETURN_TRUE;
+      }
+
+      static int t_ComplexODEState_init_(t_ComplexODEState *self, PyObject *args, PyObject *kwds)
+      {
+        switch (PyTuple_GET_SIZE(args)) {
+         case 2:
+          {
+            jdouble a0;
+            JArray< ::org::hipparchus::complex::Complex > a1((jobject) NULL);
+            ComplexODEState object((jobject) NULL);
+
+            if (!parseArgs(args, "D[k", ::org::hipparchus::complex::Complex::initializeClass, &a0, &a1))
+            {
+              INT_CALL(object = ComplexODEState(a0, a1));
+              self->object = object;
+              break;
+            }
+          }
+          goto err;
+         case 3:
+          {
+            jdouble a0;
+            JArray< ::org::hipparchus::complex::Complex > a1((jobject) NULL);
+            JArray< JArray< ::org::hipparchus::complex::Complex > > a2((jobject) NULL);
+            ComplexODEState object((jobject) NULL);
+
+            if (!parseArgs(args, "D[k[[k", ::org::hipparchus::complex::Complex::initializeClass, ::org::hipparchus::complex::Complex::initializeClass, &a0, &a1, &a2))
+            {
+              INT_CALL(object = ComplexODEState(a0, a1, a2));
+              self->object = object;
+              break;
+            }
+          }
+         default:
+         err:
+          PyErr_SetArgsError((PyObject *) self, "__init__", args);
+          return -1;
+        }
+
+        return 0;
+      }
+
+      static PyObject *t_ComplexODEState_getCompleteState(t_ComplexODEState *self)
+      {
+        JArray< ::org::hipparchus::complex::Complex > result((jobject) NULL);
+        OBJ_CALL(result = self->object.getCompleteState());
+        return JArray<jobject>(result.this$).wrap(::org::hipparchus::complex::t_Complex::wrap_jobject);
+      }
+
+      static PyObject *t_ComplexODEState_getCompleteStateDimension(t_ComplexODEState *self)
+      {
+        jint result;
+        OBJ_CALL(result = self->object.getCompleteStateDimension());
+        return PyLong_FromLong((long) result);
+      }
+
+      static PyObject *t_ComplexODEState_getNumberOfSecondaryStates(t_ComplexODEState *self)
+      {
+        jint result;
+        OBJ_CALL(result = self->object.getNumberOfSecondaryStates());
+        return PyLong_FromLong((long) result);
+      }
+
+      static PyObject *t_ComplexODEState_getPrimaryState(t_ComplexODEState *self)
+      {
+        JArray< ::org::hipparchus::complex::Complex > result((jobject) NULL);
+        OBJ_CALL(result = self->object.getPrimaryState());
+        return JArray<jobject>(result.this$).wrap(::org::hipparchus::complex::t_Complex::wrap_jobject);
+      }
+
+      static PyObject *t_ComplexODEState_getPrimaryStateDimension(t_ComplexODEState *self)
+      {
+        jint result;
+        OBJ_CALL(result = self->object.getPrimaryStateDimension());
+        return PyLong_FromLong((long) result);
+      }
+
+      static PyObject *t_ComplexODEState_getSecondaryState(t_ComplexODEState *self, PyObject *arg)
+      {
+        jint a0;
+        JArray< ::org::hipparchus::complex::Complex > result((jobject) NULL);
+
+        if (!parseArg(arg, "I", &a0))
+        {
+          OBJ_CALL(result = self->object.getSecondaryState(a0));
+          return JArray<jobject>(result.this$).wrap(::org::hipparchus::complex::t_Complex::wrap_jobject);
+        }
+
+        PyErr_SetArgsError((PyObject *) self, "getSecondaryState", arg);
+        return NULL;
+      }
+
+      static PyObject *t_ComplexODEState_getSecondaryStateDimension(t_ComplexODEState *self, PyObject *arg)
+      {
+        jint a0;
+        jint result;
+
+        if (!parseArg(arg, "I", &a0))
+        {
+          OBJ_CALL(result = self->object.getSecondaryStateDimension(a0));
+          return PyLong_FromLong((long) result);
+        }
+
+        PyErr_SetArgsError((PyObject *) self, "getSecondaryStateDimension", arg);
+        return NULL;
+      }
+
+      static PyObject *t_ComplexODEState_getTime(t_ComplexODEState *self)
+      {
+        jdouble result;
+        OBJ_CALL(result = self->object.getTime());
+        return PyFloat_FromDouble((double) result);
+      }
+
+      static PyObject *t_ComplexODEState_get__completeState(t_ComplexODEState *self, void *data)
+      {
+        JArray< ::org::hipparchus::complex::Complex > value((jobject) NULL);
+        OBJ_CALL(value = self->object.getCompleteState());
+        return JArray<jobject>(value.this$).wrap(::org::hipparchus::complex::t_Complex::wrap_jobject);
+      }
+
+      static PyObject *t_ComplexODEState_get__completeStateDimension(t_ComplexODEState *self, void *data)
+      {
+        jint value;
+        OBJ_CALL(value = self->object.getCompleteStateDimension());
+        return PyLong_FromLong((long) value);
+      }
+
+      static PyObject *t_ComplexODEState_get__numberOfSecondaryStates(t_ComplexODEState *self, void *data)
+      {
+        jint value;
+        OBJ_CALL(value = self->object.getNumberOfSecondaryStates());
+        return PyLong_FromLong((long) value);
+      }
+
+      static PyObject *t_ComplexODEState_get__primaryState(t_ComplexODEState *self, void *data)
+      {
+        JArray< ::org::hipparchus::complex::Complex > value((jobject) NULL);
+        OBJ_CALL(value = self->object.getPrimaryState());
+        return JArray<jobject>(value.this$).wrap(::org::hipparchus::complex::t_Complex::wrap_jobject);
+      }
+
+      static PyObject *t_ComplexODEState_get__primaryStateDimension(t_ComplexODEState *self, void *data)
+      {
+        jint value;
+        OBJ_CALL(value = self->object.getPrimaryStateDimension());
+        return PyLong_FromLong((long) value);
+      }
+
+      static PyObject *t_ComplexODEState_get__time(t_ComplexODEState *self, void *data)
+      {
+        jdouble value;
+        OBJ_CALL(value = self->object.getTime());
+        return PyFloat_FromDouble((double) value);
+      }
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "org/hipparchus/geometry/spherical/twod/Sphere2D.h"
+#include "java/io/Serializable.h"
+#include "org/hipparchus/exception/MathIllegalArgumentException.h"
+#include "java/lang/Class.h"
+#include "org/hipparchus/geometry/Space.h"
+#include "org/hipparchus/geometry/spherical/oned/Sphere1D.h"
+#include "org/hipparchus/geometry/spherical/twod/Sphere2D.h"
+#include "JArray.h"
+
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace spherical {
+        namespace twod {
+
+          ::java::lang::Class *Sphere2D::class$ = NULL;
+          jmethodID *Sphere2D::mids$ = NULL;
+          bool Sphere2D::live$ = false;
+          jdouble Sphere2D::SMALLEST_TOLERANCE = (jdouble) 0;
+
+          jclass Sphere2D::initializeClass(bool getOnly)
+          {
+            if (getOnly)
+              return (jclass) (live$ ? class$->this$ : NULL);
+            if (class$ == NULL)
+            {
+              jclass cls = (jclass) env->findClass("org/hipparchus/geometry/spherical/twod/Sphere2D");
+
+              mids$ = new jmethodID[max_mid];
+              mids$[mid_checkTolerance_17db3a65980d3441] = env->getStaticMethodID(cls, "checkTolerance", "(D)V");
+              mids$[mid_getDimension_570ce0828f81a2c1] = env->getMethodID(cls, "getDimension", "()I");
+              mids$[mid_getInstance_89597fd2befc9ecf] = env->getStaticMethodID(cls, "getInstance", "()Lorg/hipparchus/geometry/spherical/twod/Sphere2D;");
+              mids$[mid_getSubSpace_1bd6b4665a0d1abd] = env->getMethodID(cls, "getSubSpace", "()Lorg/hipparchus/geometry/spherical/oned/Sphere1D;");
+
+              class$ = new ::java::lang::Class(cls);
+              cls = (jclass) class$->this$;
+
+              SMALLEST_TOLERANCE = env->getStaticDoubleField(cls, "SMALLEST_TOLERANCE");
+              live$ = true;
+            }
+            return (jclass) class$->this$;
+          }
+
+          void Sphere2D::checkTolerance(jdouble a0)
+          {
+            jclass cls = env->getClass(initializeClass);
+            env->callStaticVoidMethod(cls, mids$[mid_checkTolerance_17db3a65980d3441], a0);
+          }
+
+          jint Sphere2D::getDimension() const
+          {
+            return env->callIntMethod(this$, mids$[mid_getDimension_570ce0828f81a2c1]);
+          }
+
+          Sphere2D Sphere2D::getInstance()
+          {
+            jclass cls = env->getClass(initializeClass);
+            return Sphere2D(env->callStaticObjectMethod(cls, mids$[mid_getInstance_89597fd2befc9ecf]));
+          }
+
+          ::org::hipparchus::geometry::spherical::oned::Sphere1D Sphere2D::getSubSpace() const
+          {
+            return ::org::hipparchus::geometry::spherical::oned::Sphere1D(env->callObjectMethod(this$, mids$[mid_getSubSpace_1bd6b4665a0d1abd]));
+          }
+        }
+      }
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace spherical {
+        namespace twod {
+          static PyObject *t_Sphere2D_cast_(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_Sphere2D_instance_(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_Sphere2D_checkTolerance(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_Sphere2D_getDimension(t_Sphere2D *self);
+          static PyObject *t_Sphere2D_getInstance(PyTypeObject *type);
+          static PyObject *t_Sphere2D_getSubSpace(t_Sphere2D *self);
+          static PyObject *t_Sphere2D_get__dimension(t_Sphere2D *self, void *data);
+          static PyObject *t_Sphere2D_get__instance(t_Sphere2D *self, void *data);
+          static PyObject *t_Sphere2D_get__subSpace(t_Sphere2D *self, void *data);
+          static PyGetSetDef t_Sphere2D__fields_[] = {
+            DECLARE_GET_FIELD(t_Sphere2D, dimension),
+            DECLARE_GET_FIELD(t_Sphere2D, instance),
+            DECLARE_GET_FIELD(t_Sphere2D, subSpace),
+            { NULL, NULL, NULL, NULL, NULL }
+          };
+
+          static PyMethodDef t_Sphere2D__methods_[] = {
+            DECLARE_METHOD(t_Sphere2D, cast_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_Sphere2D, instance_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_Sphere2D, checkTolerance, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_Sphere2D, getDimension, METH_NOARGS),
+            DECLARE_METHOD(t_Sphere2D, getInstance, METH_NOARGS | METH_CLASS),
+            DECLARE_METHOD(t_Sphere2D, getSubSpace, METH_NOARGS),
+            { NULL, NULL, 0, NULL }
+          };
+
+          static PyType_Slot PY_TYPE_SLOTS(Sphere2D)[] = {
+            { Py_tp_methods, t_Sphere2D__methods_ },
+            { Py_tp_init, (void *) abstract_init },
+            { Py_tp_getset, t_Sphere2D__fields_ },
+            { 0, NULL }
+          };
+
+          static PyType_Def *PY_TYPE_BASES(Sphere2D)[] = {
+            &PY_TYPE_DEF(::java::lang::Object),
+            NULL
+          };
+
+          DEFINE_TYPE(Sphere2D, t_Sphere2D, Sphere2D);
+
+          void t_Sphere2D::install(PyObject *module)
+          {
+            installType(&PY_TYPE(Sphere2D), &PY_TYPE_DEF(Sphere2D), module, "Sphere2D", 0);
+          }
+
+          void t_Sphere2D::initialize(PyObject *module)
+          {
+            PyObject_SetAttrString((PyObject *) PY_TYPE(Sphere2D), "class_", make_descriptor(Sphere2D::initializeClass, 1));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(Sphere2D), "wrapfn_", make_descriptor(t_Sphere2D::wrap_jobject));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(Sphere2D), "boxfn_", make_descriptor(boxObject));
+            env->getClass(Sphere2D::initializeClass);
+            PyObject_SetAttrString((PyObject *) PY_TYPE(Sphere2D), "SMALLEST_TOLERANCE", make_descriptor(Sphere2D::SMALLEST_TOLERANCE));
+          }
+
+          static PyObject *t_Sphere2D_cast_(PyTypeObject *type, PyObject *arg)
+          {
+            if (!(arg = castCheck(arg, Sphere2D::initializeClass, 1)))
+              return NULL;
+            return t_Sphere2D::wrap_Object(Sphere2D(((t_Sphere2D *) arg)->object.this$));
+          }
+          static PyObject *t_Sphere2D_instance_(PyTypeObject *type, PyObject *arg)
+          {
+            if (!castCheck(arg, Sphere2D::initializeClass, 0))
+              Py_RETURN_FALSE;
+            Py_RETURN_TRUE;
+          }
+
+          static PyObject *t_Sphere2D_checkTolerance(PyTypeObject *type, PyObject *arg)
+          {
+            jdouble a0;
+
+            if (!parseArg(arg, "D", &a0))
+            {
+              OBJ_CALL(::org::hipparchus::geometry::spherical::twod::Sphere2D::checkTolerance(a0));
+              Py_RETURN_NONE;
+            }
+
+            PyErr_SetArgsError(type, "checkTolerance", arg);
+            return NULL;
+          }
+
+          static PyObject *t_Sphere2D_getDimension(t_Sphere2D *self)
+          {
+            jint result;
+            OBJ_CALL(result = self->object.getDimension());
+            return PyLong_FromLong((long) result);
+          }
+
+          static PyObject *t_Sphere2D_getInstance(PyTypeObject *type)
+          {
+            Sphere2D result((jobject) NULL);
+            OBJ_CALL(result = ::org::hipparchus::geometry::spherical::twod::Sphere2D::getInstance());
+            return t_Sphere2D::wrap_Object(result);
+          }
+
+          static PyObject *t_Sphere2D_getSubSpace(t_Sphere2D *self)
+          {
+            ::org::hipparchus::geometry::spherical::oned::Sphere1D result((jobject) NULL);
+            OBJ_CALL(result = self->object.getSubSpace());
+            return ::org::hipparchus::geometry::spherical::oned::t_Sphere1D::wrap_Object(result);
+          }
+
+          static PyObject *t_Sphere2D_get__dimension(t_Sphere2D *self, void *data)
+          {
+            jint value;
+            OBJ_CALL(value = self->object.getDimension());
+            return PyLong_FromLong((long) value);
+          }
+
+          static PyObject *t_Sphere2D_get__instance(t_Sphere2D *self, void *data)
+          {
+            Sphere2D value((jobject) NULL);
+            OBJ_CALL(value = self->object.getInstance());
+            return t_Sphere2D::wrap_Object(value);
+          }
+
+          static PyObject *t_Sphere2D_get__subSpace(t_Sphere2D *self, void *data)
+          {
+            ::org::hipparchus::geometry::spherical::oned::Sphere1D value((jobject) NULL);
+            OBJ_CALL(value = self->object.getSubSpace());
+            return ::org::hipparchus::geometry::spherical::oned::t_Sphere1D::wrap_Object(value);
+          }
+        }
+      }
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "org/orekit/models/earth/weather/GlobalPressureTemperature2Model.h"
+#include "org/orekit/models/earth/weather/WeatherModel.h"
+#include "org/orekit/models/earth/Geoid.h"
+#include "org/orekit/data/DataProvidersManager.h"
+#include "org/orekit/time/AbsoluteDate.h"
+#include "java/lang/Class.h"
+#include "java/lang/String.h"
+#include "org/orekit/time/TimeScale.h"
+#include "JArray.h"
+
+namespace org {
+  namespace orekit {
+    namespace models {
+      namespace earth {
+        namespace weather {
+
+          ::java::lang::Class *GlobalPressureTemperature2Model::class$ = NULL;
+          jmethodID *GlobalPressureTemperature2Model::mids$ = NULL;
+          bool GlobalPressureTemperature2Model::live$ = false;
+          ::java::lang::String *GlobalPressureTemperature2Model::DEFAULT_SUPPORTED_NAMES = NULL;
+
+          jclass GlobalPressureTemperature2Model::initializeClass(bool getOnly)
+          {
+            if (getOnly)
+              return (jclass) (live$ ? class$->this$ : NULL);
+            if (class$ == NULL)
+            {
+              jclass cls = (jclass) env->findClass("org/orekit/models/earth/weather/GlobalPressureTemperature2Model");
+
+              mids$ = new jmethodID[max_mid];
+              mids$[mid_init$_19e8fabe7fac9f6f] = env->getMethodID(cls, "<init>", "(DDLorg/orekit/models/earth/Geoid;)V");
+              mids$[mid_init$_b0686cbcd452eabf] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;DDLorg/orekit/models/earth/Geoid;)V");
+              mids$[mid_init$_9192b414c25d017b] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;DDLorg/orekit/models/earth/Geoid;Lorg/orekit/data/DataProvidersManager;Lorg/orekit/time/TimeScale;)V");
+              mids$[mid_getA_60c7040667a7dc5c] = env->getMethodID(cls, "getA", "()[D");
+              mids$[mid_getPressure_dff5885c2c873297] = env->getMethodID(cls, "getPressure", "()D");
+              mids$[mid_getTemperature_dff5885c2c873297] = env->getMethodID(cls, "getTemperature", "()D");
+              mids$[mid_getWaterVaporPressure_dff5885c2c873297] = env->getMethodID(cls, "getWaterVaporPressure", "()D");
+              mids$[mid_weatherParameters_a7786d9d355d3792] = env->getMethodID(cls, "weatherParameters", "(DLorg/orekit/time/AbsoluteDate;)V");
+
+              class$ = new ::java::lang::Class(cls);
+              cls = (jclass) class$->this$;
+
+              DEFAULT_SUPPORTED_NAMES = new ::java::lang::String(env->getStaticObjectField(cls, "DEFAULT_SUPPORTED_NAMES", "Ljava/lang/String;"));
+              live$ = true;
+            }
+            return (jclass) class$->this$;
+          }
+
+          GlobalPressureTemperature2Model::GlobalPressureTemperature2Model(jdouble a0, jdouble a1, const ::org::orekit::models::earth::Geoid & a2) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_19e8fabe7fac9f6f, a0, a1, a2.this$)) {}
+
+          GlobalPressureTemperature2Model::GlobalPressureTemperature2Model(const ::java::lang::String & a0, jdouble a1, jdouble a2, const ::org::orekit::models::earth::Geoid & a3) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_b0686cbcd452eabf, a0.this$, a1, a2, a3.this$)) {}
+
+          GlobalPressureTemperature2Model::GlobalPressureTemperature2Model(const ::java::lang::String & a0, jdouble a1, jdouble a2, const ::org::orekit::models::earth::Geoid & a3, const ::org::orekit::data::DataProvidersManager & a4, const ::org::orekit::time::TimeScale & a5) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_9192b414c25d017b, a0.this$, a1, a2, a3.this$, a4.this$, a5.this$)) {}
+
+          JArray< jdouble > GlobalPressureTemperature2Model::getA() const
+          {
+            return JArray< jdouble >(env->callObjectMethod(this$, mids$[mid_getA_60c7040667a7dc5c]));
+          }
+
+          jdouble GlobalPressureTemperature2Model::getPressure() const
+          {
+            return env->callDoubleMethod(this$, mids$[mid_getPressure_dff5885c2c873297]);
+          }
+
+          jdouble GlobalPressureTemperature2Model::getTemperature() const
+          {
+            return env->callDoubleMethod(this$, mids$[mid_getTemperature_dff5885c2c873297]);
+          }
+
+          jdouble GlobalPressureTemperature2Model::getWaterVaporPressure() const
+          {
+            return env->callDoubleMethod(this$, mids$[mid_getWaterVaporPressure_dff5885c2c873297]);
+          }
+
+          void GlobalPressureTemperature2Model::weatherParameters(jdouble a0, const ::org::orekit::time::AbsoluteDate & a1) const
+          {
+            env->callVoidMethod(this$, mids$[mid_weatherParameters_a7786d9d355d3792], a0, a1.this$);
+          }
+        }
+      }
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace org {
+  namespace orekit {
+    namespace models {
+      namespace earth {
+        namespace weather {
+          static PyObject *t_GlobalPressureTemperature2Model_cast_(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_GlobalPressureTemperature2Model_instance_(PyTypeObject *type, PyObject *arg);
+          static int t_GlobalPressureTemperature2Model_init_(t_GlobalPressureTemperature2Model *self, PyObject *args, PyObject *kwds);
+          static PyObject *t_GlobalPressureTemperature2Model_getA(t_GlobalPressureTemperature2Model *self);
+          static PyObject *t_GlobalPressureTemperature2Model_getPressure(t_GlobalPressureTemperature2Model *self);
+          static PyObject *t_GlobalPressureTemperature2Model_getTemperature(t_GlobalPressureTemperature2Model *self);
+          static PyObject *t_GlobalPressureTemperature2Model_getWaterVaporPressure(t_GlobalPressureTemperature2Model *self);
+          static PyObject *t_GlobalPressureTemperature2Model_weatherParameters(t_GlobalPressureTemperature2Model *self, PyObject *args);
+          static PyObject *t_GlobalPressureTemperature2Model_get__a(t_GlobalPressureTemperature2Model *self, void *data);
+          static PyObject *t_GlobalPressureTemperature2Model_get__pressure(t_GlobalPressureTemperature2Model *self, void *data);
+          static PyObject *t_GlobalPressureTemperature2Model_get__temperature(t_GlobalPressureTemperature2Model *self, void *data);
+          static PyObject *t_GlobalPressureTemperature2Model_get__waterVaporPressure(t_GlobalPressureTemperature2Model *self, void *data);
+          static PyGetSetDef t_GlobalPressureTemperature2Model__fields_[] = {
+            DECLARE_GET_FIELD(t_GlobalPressureTemperature2Model, a),
+            DECLARE_GET_FIELD(t_GlobalPressureTemperature2Model, pressure),
+            DECLARE_GET_FIELD(t_GlobalPressureTemperature2Model, temperature),
+            DECLARE_GET_FIELD(t_GlobalPressureTemperature2Model, waterVaporPressure),
+            { NULL, NULL, NULL, NULL, NULL }
+          };
+
+          static PyMethodDef t_GlobalPressureTemperature2Model__methods_[] = {
+            DECLARE_METHOD(t_GlobalPressureTemperature2Model, cast_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_GlobalPressureTemperature2Model, instance_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_GlobalPressureTemperature2Model, getA, METH_NOARGS),
+            DECLARE_METHOD(t_GlobalPressureTemperature2Model, getPressure, METH_NOARGS),
+            DECLARE_METHOD(t_GlobalPressureTemperature2Model, getTemperature, METH_NOARGS),
+            DECLARE_METHOD(t_GlobalPressureTemperature2Model, getWaterVaporPressure, METH_NOARGS),
+            DECLARE_METHOD(t_GlobalPressureTemperature2Model, weatherParameters, METH_VARARGS),
+            { NULL, NULL, 0, NULL }
+          };
+
+          static PyType_Slot PY_TYPE_SLOTS(GlobalPressureTemperature2Model)[] = {
+            { Py_tp_methods, t_GlobalPressureTemperature2Model__methods_ },
+            { Py_tp_init, (void *) t_GlobalPressureTemperature2Model_init_ },
+            { Py_tp_getset, t_GlobalPressureTemperature2Model__fields_ },
+            { 0, NULL }
+          };
+
+          static PyType_Def *PY_TYPE_BASES(GlobalPressureTemperature2Model)[] = {
+            &PY_TYPE_DEF(::java::lang::Object),
+            NULL
+          };
+
+          DEFINE_TYPE(GlobalPressureTemperature2Model, t_GlobalPressureTemperature2Model, GlobalPressureTemperature2Model);
+
+          void t_GlobalPressureTemperature2Model::install(PyObject *module)
+          {
+            installType(&PY_TYPE(GlobalPressureTemperature2Model), &PY_TYPE_DEF(GlobalPressureTemperature2Model), module, "GlobalPressureTemperature2Model", 0);
+          }
+
+          void t_GlobalPressureTemperature2Model::initialize(PyObject *module)
+          {
+            PyObject_SetAttrString((PyObject *) PY_TYPE(GlobalPressureTemperature2Model), "class_", make_descriptor(GlobalPressureTemperature2Model::initializeClass, 1));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(GlobalPressureTemperature2Model), "wrapfn_", make_descriptor(t_GlobalPressureTemperature2Model::wrap_jobject));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(GlobalPressureTemperature2Model), "boxfn_", make_descriptor(boxObject));
+            env->getClass(GlobalPressureTemperature2Model::initializeClass);
+            PyObject_SetAttrString((PyObject *) PY_TYPE(GlobalPressureTemperature2Model), "DEFAULT_SUPPORTED_NAMES", make_descriptor(j2p(*GlobalPressureTemperature2Model::DEFAULT_SUPPORTED_NAMES)));
+          }
+
+          static PyObject *t_GlobalPressureTemperature2Model_cast_(PyTypeObject *type, PyObject *arg)
+          {
+            if (!(arg = castCheck(arg, GlobalPressureTemperature2Model::initializeClass, 1)))
+              return NULL;
+            return t_GlobalPressureTemperature2Model::wrap_Object(GlobalPressureTemperature2Model(((t_GlobalPressureTemperature2Model *) arg)->object.this$));
+          }
+          static PyObject *t_GlobalPressureTemperature2Model_instance_(PyTypeObject *type, PyObject *arg)
+          {
+            if (!castCheck(arg, GlobalPressureTemperature2Model::initializeClass, 0))
+              Py_RETURN_FALSE;
+            Py_RETURN_TRUE;
+          }
+
+          static int t_GlobalPressureTemperature2Model_init_(t_GlobalPressureTemperature2Model *self, PyObject *args, PyObject *kwds)
+          {
+            switch (PyTuple_GET_SIZE(args)) {
+             case 3:
+              {
+                jdouble a0;
+                jdouble a1;
+                ::org::orekit::models::earth::Geoid a2((jobject) NULL);
+                GlobalPressureTemperature2Model object((jobject) NULL);
+
+                if (!parseArgs(args, "DDk", ::org::orekit::models::earth::Geoid::initializeClass, &a0, &a1, &a2))
+                {
+                  INT_CALL(object = GlobalPressureTemperature2Model(a0, a1, a2));
+                  self->object = object;
+                  break;
+                }
+              }
+              goto err;
+             case 4:
+              {
+                ::java::lang::String a0((jobject) NULL);
+                jdouble a1;
+                jdouble a2;
+                ::org::orekit::models::earth::Geoid a3((jobject) NULL);
+                GlobalPressureTemperature2Model object((jobject) NULL);
+
+                if (!parseArgs(args, "sDDk", ::org::orekit::models::earth::Geoid::initializeClass, &a0, &a1, &a2, &a3))
+                {
+                  INT_CALL(object = GlobalPressureTemperature2Model(a0, a1, a2, a3));
+                  self->object = object;
+                  break;
+                }
+              }
+              goto err;
+             case 6:
+              {
+                ::java::lang::String a0((jobject) NULL);
+                jdouble a1;
+                jdouble a2;
+                ::org::orekit::models::earth::Geoid a3((jobject) NULL);
+                ::org::orekit::data::DataProvidersManager a4((jobject) NULL);
+                ::org::orekit::time::TimeScale a5((jobject) NULL);
+                GlobalPressureTemperature2Model object((jobject) NULL);
+
+                if (!parseArgs(args, "sDDkkk", ::org::orekit::models::earth::Geoid::initializeClass, ::org::orekit::data::DataProvidersManager::initializeClass, ::org::orekit::time::TimeScale::initializeClass, &a0, &a1, &a2, &a3, &a4, &a5))
+                {
+                  INT_CALL(object = GlobalPressureTemperature2Model(a0, a1, a2, a3, a4, a5));
+                  self->object = object;
+                  break;
+                }
+              }
+             default:
+             err:
+              PyErr_SetArgsError((PyObject *) self, "__init__", args);
+              return -1;
+            }
+
+            return 0;
+          }
+
+          static PyObject *t_GlobalPressureTemperature2Model_getA(t_GlobalPressureTemperature2Model *self)
+          {
+            JArray< jdouble > result((jobject) NULL);
+            OBJ_CALL(result = self->object.getA());
+            return result.wrap();
+          }
+
+          static PyObject *t_GlobalPressureTemperature2Model_getPressure(t_GlobalPressureTemperature2Model *self)
+          {
+            jdouble result;
+            OBJ_CALL(result = self->object.getPressure());
+            return PyFloat_FromDouble((double) result);
+          }
+
+          static PyObject *t_GlobalPressureTemperature2Model_getTemperature(t_GlobalPressureTemperature2Model *self)
+          {
+            jdouble result;
+            OBJ_CALL(result = self->object.getTemperature());
+            return PyFloat_FromDouble((double) result);
+          }
+
+          static PyObject *t_GlobalPressureTemperature2Model_getWaterVaporPressure(t_GlobalPressureTemperature2Model *self)
+          {
+            jdouble result;
+            OBJ_CALL(result = self->object.getWaterVaporPressure());
+            return PyFloat_FromDouble((double) result);
+          }
+
+          static PyObject *t_GlobalPressureTemperature2Model_weatherParameters(t_GlobalPressureTemperature2Model *self, PyObject *args)
+          {
+            jdouble a0;
+            ::org::orekit::time::AbsoluteDate a1((jobject) NULL);
+
+            if (!parseArgs(args, "Dk", ::org::orekit::time::AbsoluteDate::initializeClass, &a0, &a1))
+            {
+              OBJ_CALL(self->object.weatherParameters(a0, a1));
+              Py_RETURN_NONE;
+            }
+
+            PyErr_SetArgsError((PyObject *) self, "weatherParameters", args);
+            return NULL;
+          }
+
+          static PyObject *t_GlobalPressureTemperature2Model_get__a(t_GlobalPressureTemperature2Model *self, void *data)
+          {
+            JArray< jdouble > value((jobject) NULL);
+            OBJ_CALL(value = self->object.getA());
+            return value.wrap();
+          }
+
+          static PyObject *t_GlobalPressureTemperature2Model_get__pressure(t_GlobalPressureTemperature2Model *self, void *data)
+          {
+            jdouble value;
+            OBJ_CALL(value = self->object.getPressure());
+            return PyFloat_FromDouble((double) value);
+          }
+
+          static PyObject *t_GlobalPressureTemperature2Model_get__temperature(t_GlobalPressureTemperature2Model *self, void *data)
+          {
+            jdouble value;
+            OBJ_CALL(value = self->object.getTemperature());
+            return PyFloat_FromDouble((double) value);
+          }
+
+          static PyObject *t_GlobalPressureTemperature2Model_get__waterVaporPressure(t_GlobalPressureTemperature2Model *self, void *data)
+          {
+            jdouble value;
+            OBJ_CALL(value = self->object.getWaterVaporPressure());
+            return PyFloat_FromDouble((double) value);
+          }
+        }
+      }
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "org/hipparchus/analysis/function/Atan2.h"
+#include "org/hipparchus/analysis/BivariateFunction.h"
+#include "java/lang/Class.h"
+#include "JArray.h"
+
+namespace org {
+  namespace hipparchus {
+    namespace analysis {
+      namespace function {
+
+        ::java::lang::Class *Atan2::class$ = NULL;
+        jmethodID *Atan2::mids$ = NULL;
+        bool Atan2::live$ = false;
+
+        jclass Atan2::initializeClass(bool getOnly)
+        {
+          if (getOnly)
+            return (jclass) (live$ ? class$->this$ : NULL);
+          if (class$ == NULL)
+          {
+            jclass cls = (jclass) env->findClass("org/hipparchus/analysis/function/Atan2");
+
+            mids$ = new jmethodID[max_mid];
+            mids$[mid_init$_0fa09c18fee449d5] = env->getMethodID(cls, "<init>", "()V");
+            mids$[mid_value_86ffecc08a63eff0] = env->getMethodID(cls, "value", "(DD)D");
+
+            class$ = new ::java::lang::Class(cls);
+            live$ = true;
+          }
+          return (jclass) class$->this$;
+        }
+
+        Atan2::Atan2() : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_0fa09c18fee449d5)) {}
+
+        jdouble Atan2::value(jdouble a0, jdouble a1) const
+        {
+          return env->callDoubleMethod(this$, mids$[mid_value_86ffecc08a63eff0], a0, a1);
+        }
+      }
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace org {
+  namespace hipparchus {
+    namespace analysis {
+      namespace function {
+        static PyObject *t_Atan2_cast_(PyTypeObject *type, PyObject *arg);
+        static PyObject *t_Atan2_instance_(PyTypeObject *type, PyObject *arg);
+        static int t_Atan2_init_(t_Atan2 *self, PyObject *args, PyObject *kwds);
+        static PyObject *t_Atan2_value(t_Atan2 *self, PyObject *args);
+
+        static PyMethodDef t_Atan2__methods_[] = {
+          DECLARE_METHOD(t_Atan2, cast_, METH_O | METH_CLASS),
+          DECLARE_METHOD(t_Atan2, instance_, METH_O | METH_CLASS),
+          DECLARE_METHOD(t_Atan2, value, METH_VARARGS),
+          { NULL, NULL, 0, NULL }
+        };
+
+        static PyType_Slot PY_TYPE_SLOTS(Atan2)[] = {
+          { Py_tp_methods, t_Atan2__methods_ },
+          { Py_tp_init, (void *) t_Atan2_init_ },
+          { 0, NULL }
+        };
+
+        static PyType_Def *PY_TYPE_BASES(Atan2)[] = {
+          &PY_TYPE_DEF(::java::lang::Object),
+          NULL
+        };
+
+        DEFINE_TYPE(Atan2, t_Atan2, Atan2);
+
+        void t_Atan2::install(PyObject *module)
+        {
+          installType(&PY_TYPE(Atan2), &PY_TYPE_DEF(Atan2), module, "Atan2", 0);
+        }
+
+        void t_Atan2::initialize(PyObject *module)
+        {
+          PyObject_SetAttrString((PyObject *) PY_TYPE(Atan2), "class_", make_descriptor(Atan2::initializeClass, 1));
+          PyObject_SetAttrString((PyObject *) PY_TYPE(Atan2), "wrapfn_", make_descriptor(t_Atan2::wrap_jobject));
+          PyObject_SetAttrString((PyObject *) PY_TYPE(Atan2), "boxfn_", make_descriptor(boxObject));
+        }
+
+        static PyObject *t_Atan2_cast_(PyTypeObject *type, PyObject *arg)
+        {
+          if (!(arg = castCheck(arg, Atan2::initializeClass, 1)))
+            return NULL;
+          return t_Atan2::wrap_Object(Atan2(((t_Atan2 *) arg)->object.this$));
+        }
+        static PyObject *t_Atan2_instance_(PyTypeObject *type, PyObject *arg)
+        {
+          if (!castCheck(arg, Atan2::initializeClass, 0))
+            Py_RETURN_FALSE;
+          Py_RETURN_TRUE;
+        }
+
+        static int t_Atan2_init_(t_Atan2 *self, PyObject *args, PyObject *kwds)
+        {
+          Atan2 object((jobject) NULL);
+
+          INT_CALL(object = Atan2());
+          self->object = object;
+
+          return 0;
+        }
+
+        static PyObject *t_Atan2_value(t_Atan2 *self, PyObject *args)
+        {
+          jdouble a0;
+          jdouble a1;
+          jdouble result;
+
+          if (!parseArgs(args, "DD", &a0, &a1))
+          {
+            OBJ_CALL(result = self->object.value(a0, a1));
+            return PyFloat_FromDouble((double) result);
+          }
+
+          PyErr_SetArgsError((PyObject *) self, "value", args);
+          return NULL;
+        }
+      }
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "org/orekit/propagation/semianalytical/dsst/forces/PythonFieldShortPeriodTerms.h"
+#include "org/hipparchus/CalculusFieldElement.h"
+#include "java/util/Map.h"
+#include "java/lang/Throwable.h"
+#include "org/orekit/time/FieldAbsoluteDate.h"
+#include "org/orekit/orbits/FieldOrbit.h"
+#include "java/util/Set.h"
+#include "java/lang/Class.h"
+#include "org/orekit/propagation/semianalytical/dsst/forces/FieldShortPeriodTerms.h"
+#include "java/lang/String.h"
+#include "JArray.h"
+
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace semianalytical {
+        namespace dsst {
+          namespace forces {
+
+            ::java::lang::Class *PythonFieldShortPeriodTerms::class$ = NULL;
+            jmethodID *PythonFieldShortPeriodTerms::mids$ = NULL;
+            bool PythonFieldShortPeriodTerms::live$ = false;
+
+            jclass PythonFieldShortPeriodTerms::initializeClass(bool getOnly)
+            {
+              if (getOnly)
+                return (jclass) (live$ ? class$->this$ : NULL);
+              if (class$ == NULL)
+              {
+                jclass cls = (jclass) env->findClass("org/orekit/propagation/semianalytical/dsst/forces/PythonFieldShortPeriodTerms");
+
+                mids$ = new jmethodID[max_mid];
+                mids$[mid_init$_0fa09c18fee449d5] = env->getMethodID(cls, "<init>", "()V");
+                mids$[mid_finalize_0fa09c18fee449d5] = env->getMethodID(cls, "finalize", "()V");
+                mids$[mid_getCoefficients_8ceaa814d240672e] = env->getMethodID(cls, "getCoefficients", "(Lorg/orekit/time/FieldAbsoluteDate;Ljava/util/Set;)Ljava/util/Map;");
+                mids$[mid_getCoefficientsKeyPrefix_11b109bd155ca898] = env->getMethodID(cls, "getCoefficientsKeyPrefix", "()Ljava/lang/String;");
+                mids$[mid_pythonDecRef_0fa09c18fee449d5] = env->getMethodID(cls, "pythonDecRef", "()V");
+                mids$[mid_pythonExtension_492808a339bfa35f] = env->getMethodID(cls, "pythonExtension", "()J");
+                mids$[mid_pythonExtension_3a8e7649f31fdb20] = env->getMethodID(cls, "pythonExtension", "(J)V");
+                mids$[mid_value_32514bc2dbb6aee5] = env->getMethodID(cls, "value", "(Lorg/orekit/orbits/FieldOrbit;)[Lorg/hipparchus/CalculusFieldElement;");
+
+                class$ = new ::java::lang::Class(cls);
+                live$ = true;
+              }
+              return (jclass) class$->this$;
+            }
+
+            PythonFieldShortPeriodTerms::PythonFieldShortPeriodTerms() : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_0fa09c18fee449d5)) {}
+
+            void PythonFieldShortPeriodTerms::finalize() const
+            {
+              env->callVoidMethod(this$, mids$[mid_finalize_0fa09c18fee449d5]);
+            }
+
+            jlong PythonFieldShortPeriodTerms::pythonExtension() const
+            {
+              return env->callLongMethod(this$, mids$[mid_pythonExtension_492808a339bfa35f]);
+            }
+
+            void PythonFieldShortPeriodTerms::pythonExtension(jlong a0) const
+            {
+              env->callVoidMethod(this$, mids$[mid_pythonExtension_3a8e7649f31fdb20], a0);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace semianalytical {
+        namespace dsst {
+          namespace forces {
+            static PyObject *t_PythonFieldShortPeriodTerms_cast_(PyTypeObject *type, PyObject *arg);
+            static PyObject *t_PythonFieldShortPeriodTerms_instance_(PyTypeObject *type, PyObject *arg);
+            static PyObject *t_PythonFieldShortPeriodTerms_of_(t_PythonFieldShortPeriodTerms *self, PyObject *args);
+            static int t_PythonFieldShortPeriodTerms_init_(t_PythonFieldShortPeriodTerms *self, PyObject *args, PyObject *kwds);
+            static PyObject *t_PythonFieldShortPeriodTerms_finalize(t_PythonFieldShortPeriodTerms *self);
+            static PyObject *t_PythonFieldShortPeriodTerms_pythonExtension(t_PythonFieldShortPeriodTerms *self, PyObject *args);
+            static jobject JNICALL t_PythonFieldShortPeriodTerms_getCoefficients0(JNIEnv *jenv, jobject jobj, jobject a0, jobject a1);
+            static jobject JNICALL t_PythonFieldShortPeriodTerms_getCoefficientsKeyPrefix1(JNIEnv *jenv, jobject jobj);
+            static void JNICALL t_PythonFieldShortPeriodTerms_pythonDecRef2(JNIEnv *jenv, jobject jobj);
+            static jobject JNICALL t_PythonFieldShortPeriodTerms_value3(JNIEnv *jenv, jobject jobj, jobject a0);
+            static PyObject *t_PythonFieldShortPeriodTerms_get__self(t_PythonFieldShortPeriodTerms *self, void *data);
+            static PyObject *t_PythonFieldShortPeriodTerms_get__parameters_(t_PythonFieldShortPeriodTerms *self, void *data);
+            static PyGetSetDef t_PythonFieldShortPeriodTerms__fields_[] = {
+              DECLARE_GET_FIELD(t_PythonFieldShortPeriodTerms, self),
+              DECLARE_GET_FIELD(t_PythonFieldShortPeriodTerms, parameters_),
+              { NULL, NULL, NULL, NULL, NULL }
+            };
+
+            static PyMethodDef t_PythonFieldShortPeriodTerms__methods_[] = {
+              DECLARE_METHOD(t_PythonFieldShortPeriodTerms, cast_, METH_O | METH_CLASS),
+              DECLARE_METHOD(t_PythonFieldShortPeriodTerms, instance_, METH_O | METH_CLASS),
+              DECLARE_METHOD(t_PythonFieldShortPeriodTerms, of_, METH_VARARGS),
+              DECLARE_METHOD(t_PythonFieldShortPeriodTerms, finalize, METH_NOARGS),
+              DECLARE_METHOD(t_PythonFieldShortPeriodTerms, pythonExtension, METH_VARARGS),
+              { NULL, NULL, 0, NULL }
+            };
+
+            static PyType_Slot PY_TYPE_SLOTS(PythonFieldShortPeriodTerms)[] = {
+              { Py_tp_methods, t_PythonFieldShortPeriodTerms__methods_ },
+              { Py_tp_init, (void *) t_PythonFieldShortPeriodTerms_init_ },
+              { Py_tp_getset, t_PythonFieldShortPeriodTerms__fields_ },
+              { 0, NULL }
+            };
+
+            static PyType_Def *PY_TYPE_BASES(PythonFieldShortPeriodTerms)[] = {
+              &PY_TYPE_DEF(::java::lang::Object),
+              NULL
+            };
+
+            DEFINE_TYPE(PythonFieldShortPeriodTerms, t_PythonFieldShortPeriodTerms, PythonFieldShortPeriodTerms);
+            PyObject *t_PythonFieldShortPeriodTerms::wrap_Object(const PythonFieldShortPeriodTerms& object, PyTypeObject *p0)
+            {
+              PyObject *obj = t_PythonFieldShortPeriodTerms::wrap_Object(object);
+              if (obj != NULL && obj != Py_None)
+              {
+                t_PythonFieldShortPeriodTerms *self = (t_PythonFieldShortPeriodTerms *) obj;
+                self->parameters[0] = p0;
+              }
+              return obj;
+            }
+
+            PyObject *t_PythonFieldShortPeriodTerms::wrap_jobject(const jobject& object, PyTypeObject *p0)
+            {
+              PyObject *obj = t_PythonFieldShortPeriodTerms::wrap_jobject(object);
+              if (obj != NULL && obj != Py_None)
+              {
+                t_PythonFieldShortPeriodTerms *self = (t_PythonFieldShortPeriodTerms *) obj;
+                self->parameters[0] = p0;
+              }
+              return obj;
+            }
+
+            void t_PythonFieldShortPeriodTerms::install(PyObject *module)
+            {
+              installType(&PY_TYPE(PythonFieldShortPeriodTerms), &PY_TYPE_DEF(PythonFieldShortPeriodTerms), module, "PythonFieldShortPeriodTerms", 1);
+            }
+
+            void t_PythonFieldShortPeriodTerms::initialize(PyObject *module)
+            {
+              PyObject_SetAttrString((PyObject *) PY_TYPE(PythonFieldShortPeriodTerms), "class_", make_descriptor(PythonFieldShortPeriodTerms::initializeClass, 1));
+              PyObject_SetAttrString((PyObject *) PY_TYPE(PythonFieldShortPeriodTerms), "wrapfn_", make_descriptor(t_PythonFieldShortPeriodTerms::wrap_jobject));
+              PyObject_SetAttrString((PyObject *) PY_TYPE(PythonFieldShortPeriodTerms), "boxfn_", make_descriptor(boxObject));
+              jclass cls = env->getClass(PythonFieldShortPeriodTerms::initializeClass);
+              JNINativeMethod methods[] = {
+                { "getCoefficients", "(Lorg/orekit/time/FieldAbsoluteDate;Ljava/util/Set;)Ljava/util/Map;", (void *) t_PythonFieldShortPeriodTerms_getCoefficients0 },
+                { "getCoefficientsKeyPrefix", "()Ljava/lang/String;", (void *) t_PythonFieldShortPeriodTerms_getCoefficientsKeyPrefix1 },
+                { "pythonDecRef", "()V", (void *) t_PythonFieldShortPeriodTerms_pythonDecRef2 },
+                { "value", "(Lorg/orekit/orbits/FieldOrbit;)[Lorg/hipparchus/CalculusFieldElement;", (void *) t_PythonFieldShortPeriodTerms_value3 },
+              };
+              env->registerNatives(cls, methods, 4);
+            }
+
+            static PyObject *t_PythonFieldShortPeriodTerms_cast_(PyTypeObject *type, PyObject *arg)
+            {
+              if (!(arg = castCheck(arg, PythonFieldShortPeriodTerms::initializeClass, 1)))
+                return NULL;
+              return t_PythonFieldShortPeriodTerms::wrap_Object(PythonFieldShortPeriodTerms(((t_PythonFieldShortPeriodTerms *) arg)->object.this$));
+            }
+            static PyObject *t_PythonFieldShortPeriodTerms_instance_(PyTypeObject *type, PyObject *arg)
+            {
+              if (!castCheck(arg, PythonFieldShortPeriodTerms::initializeClass, 0))
+                Py_RETURN_FALSE;
+              Py_RETURN_TRUE;
+            }
+
+            static PyObject *t_PythonFieldShortPeriodTerms_of_(t_PythonFieldShortPeriodTerms *self, PyObject *args)
+            {
+              if (!parseArg(args, "T", 1, &(self->parameters)))
+                Py_RETURN_SELF;
+              return PyErr_SetArgsError((PyObject *) self, "of_", args);
+            }
+
+            static int t_PythonFieldShortPeriodTerms_init_(t_PythonFieldShortPeriodTerms *self, PyObject *args, PyObject *kwds)
+            {
+              PythonFieldShortPeriodTerms object((jobject) NULL);
+
+              INT_CALL(object = PythonFieldShortPeriodTerms());
+              self->object = object;
+
+              Py_INCREF((PyObject *) self);
+              self->object.pythonExtension((jlong) (Py_intptr_t) (void *) self);
+
+              return 0;
+            }
+
+            static PyObject *t_PythonFieldShortPeriodTerms_finalize(t_PythonFieldShortPeriodTerms *self)
+            {
+              OBJ_CALL(self->object.finalize());
+              Py_RETURN_NONE;
+            }
+
+            static PyObject *t_PythonFieldShortPeriodTerms_pythonExtension(t_PythonFieldShortPeriodTerms *self, PyObject *args)
+            {
+              switch (PyTuple_GET_SIZE(args)) {
+               case 0:
+                {
+                  jlong result;
+                  OBJ_CALL(result = self->object.pythonExtension());
+                  return PyLong_FromLongLong((PY_LONG_LONG) result);
+                }
+                break;
+               case 1:
+                {
+                  jlong a0;
+
+                  if (!parseArgs(args, "J", &a0))
+                  {
+                    OBJ_CALL(self->object.pythonExtension(a0));
+                    Py_RETURN_NONE;
+                  }
+                }
+              }
+
+              PyErr_SetArgsError((PyObject *) self, "pythonExtension", args);
+              return NULL;
+            }
+
+            static jobject JNICALL t_PythonFieldShortPeriodTerms_getCoefficients0(JNIEnv *jenv, jobject jobj, jobject a0, jobject a1)
+            {
+              jlong ptr = jenv->CallLongMethod(jobj, PythonFieldShortPeriodTerms::mids$[PythonFieldShortPeriodTerms::mid_pythonExtension_492808a339bfa35f]);
+              PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+              PythonGIL gil(jenv);
+              ::java::util::Map value((jobject) NULL);
+              PyObject *o0 = ::org::orekit::time::t_FieldAbsoluteDate::wrap_Object(::org::orekit::time::FieldAbsoluteDate(a0));
+              PyObject *o1 = ::java::util::t_Set::wrap_Object(::java::util::Set(a1));
+              PyObject *result = PyObject_CallMethod(obj, "getCoefficients", "OO", o0, o1);
+              Py_DECREF(o0);
+              Py_DECREF(o1);
+              if (!result)
+                throwPythonError();
+              else if (parseArg(result, "k", ::java::util::Map::initializeClass, &value))
+              {
+                throwTypeError("getCoefficients", result);
+                Py_DECREF(result);
+              }
+              else
+              {
+                jobj = jenv->NewLocalRef(value.this$);
+                Py_DECREF(result);
+                return jobj;
+              }
+
+              return (jobject) NULL;
+            }
+
+            static jobject JNICALL t_PythonFieldShortPeriodTerms_getCoefficientsKeyPrefix1(JNIEnv *jenv, jobject jobj)
+            {
+              jlong ptr = jenv->CallLongMethod(jobj, PythonFieldShortPeriodTerms::mids$[PythonFieldShortPeriodTerms::mid_pythonExtension_492808a339bfa35f]);
+              PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+              PythonGIL gil(jenv);
+              ::java::lang::String value((jobject) NULL);
+              PyObject *result = PyObject_CallMethod(obj, "getCoefficientsKeyPrefix", "");
+              if (!result)
+                throwPythonError();
+              else if (parseArg(result, "s", &value))
+              {
+                throwTypeError("getCoefficientsKeyPrefix", result);
+                Py_DECREF(result);
+              }
+              else
+              {
+                jobj = jenv->NewLocalRef(value.this$);
+                Py_DECREF(result);
+                return jobj;
+              }
+
+              return (jobject) NULL;
+            }
+
+            static void JNICALL t_PythonFieldShortPeriodTerms_pythonDecRef2(JNIEnv *jenv, jobject jobj)
+            {
+              jlong ptr = jenv->CallLongMethod(jobj, PythonFieldShortPeriodTerms::mids$[PythonFieldShortPeriodTerms::mid_pythonExtension_492808a339bfa35f]);
+              PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+
+              if (obj != NULL)
+              {
+                jenv->CallVoidMethod(jobj, PythonFieldShortPeriodTerms::mids$[PythonFieldShortPeriodTerms::mid_pythonExtension_3a8e7649f31fdb20], (jlong) 0);
+                env->finalizeObject(jenv, obj);
+              }
+            }
+
+            static jobject JNICALL t_PythonFieldShortPeriodTerms_value3(JNIEnv *jenv, jobject jobj, jobject a0)
+            {
+              jlong ptr = jenv->CallLongMethod(jobj, PythonFieldShortPeriodTerms::mids$[PythonFieldShortPeriodTerms::mid_pythonExtension_492808a339bfa35f]);
+              PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+              PythonGIL gil(jenv);
+              JArray< ::org::hipparchus::CalculusFieldElement > value((jobject) NULL);
+              PyObject *o0 = ::org::orekit::orbits::t_FieldOrbit::wrap_Object(::org::orekit::orbits::FieldOrbit(a0));
+              PyObject *result = PyObject_CallMethod(obj, "value", "O", o0);
+              Py_DECREF(o0);
+              if (!result)
+                throwPythonError();
+              else if (parseArg(result, "[k", ::org::hipparchus::CalculusFieldElement::initializeClass, &value))
+              {
+                throwTypeError("value", result);
+                Py_DECREF(result);
+              }
+              else
+              {
+                jobj = jenv->NewLocalRef(value.this$);
+                Py_DECREF(result);
+                return jobj;
+              }
+
+              return (jobject) NULL;
+            }
+
+            static PyObject *t_PythonFieldShortPeriodTerms_get__self(t_PythonFieldShortPeriodTerms *self, void *data)
+            {
+              jlong ptr;
+              OBJ_CALL(ptr = self->object.pythonExtension());
+              PyObject *obj = (PyObject *) (Py_intptr_t) ptr;
+
+              if (obj != NULL)
+              {
+                Py_INCREF(obj);
+                return obj;
+              }
+              else
+                Py_RETURN_NONE;
+            }
+            static PyObject *t_PythonFieldShortPeriodTerms_get__parameters_(t_PythonFieldShortPeriodTerms *self, void *data)
+            {
+              return typeParameters(self->parameters, sizeof(self->parameters));
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "org/orekit/propagation/events/FieldNegateDetector.h"
+#include "org/hipparchus/CalculusFieldElement.h"
+#include "java/lang/Class.h"
+#include "org/orekit/propagation/FieldSpacecraftState.h"
+#include "org/orekit/time/FieldAbsoluteDate.h"
+#include "org/orekit/propagation/events/FieldEventDetector.h"
+#include "JArray.h"
+
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace events {
+
+        ::java::lang::Class *FieldNegateDetector::class$ = NULL;
+        jmethodID *FieldNegateDetector::mids$ = NULL;
+        bool FieldNegateDetector::live$ = false;
+
+        jclass FieldNegateDetector::initializeClass(bool getOnly)
+        {
+          if (getOnly)
+            return (jclass) (live$ ? class$->this$ : NULL);
+          if (class$ == NULL)
+          {
+            jclass cls = (jclass) env->findClass("org/orekit/propagation/events/FieldNegateDetector");
+
+            mids$ = new jmethodID[max_mid];
+            mids$[mid_init$_f929ebd2a84dbfe7] = env->getMethodID(cls, "<init>", "(Lorg/orekit/propagation/events/FieldEventDetector;)V");
+            mids$[mid_g_41a008afe53da855] = env->getMethodID(cls, "g", "(Lorg/orekit/propagation/FieldSpacecraftState;)Lorg/hipparchus/CalculusFieldElement;");
+            mids$[mid_getOriginal_4fe06ecc019ea51d] = env->getMethodID(cls, "getOriginal", "()Lorg/orekit/propagation/events/FieldEventDetector;");
+            mids$[mid_init_8e8de2be1664674a] = env->getMethodID(cls, "init", "(Lorg/orekit/propagation/FieldSpacecraftState;Lorg/orekit/time/FieldAbsoluteDate;)V");
+            mids$[mid_create_34fe31f8a0a646b6] = env->getMethodID(cls, "create", "(Lorg/orekit/propagation/events/FieldAdaptableInterval;Lorg/hipparchus/CalculusFieldElement;ILorg/orekit/propagation/events/handlers/FieldEventHandler;)Lorg/orekit/propagation/events/FieldNegateDetector;");
+
+            class$ = new ::java::lang::Class(cls);
+            live$ = true;
+          }
+          return (jclass) class$->this$;
+        }
+
+        FieldNegateDetector::FieldNegateDetector(const ::org::orekit::propagation::events::FieldEventDetector & a0) : ::org::orekit::propagation::events::FieldAbstractDetector(env->newObject(initializeClass, &mids$, mid_init$_f929ebd2a84dbfe7, a0.this$)) {}
+
+        ::org::hipparchus::CalculusFieldElement FieldNegateDetector::g(const ::org::orekit::propagation::FieldSpacecraftState & a0) const
+        {
+          return ::org::hipparchus::CalculusFieldElement(env->callObjectMethod(this$, mids$[mid_g_41a008afe53da855], a0.this$));
+        }
+
+        ::org::orekit::propagation::events::FieldEventDetector FieldNegateDetector::getOriginal() const
+        {
+          return ::org::orekit::propagation::events::FieldEventDetector(env->callObjectMethod(this$, mids$[mid_getOriginal_4fe06ecc019ea51d]));
+        }
+
+        void FieldNegateDetector::init(const ::org::orekit::propagation::FieldSpacecraftState & a0, const ::org::orekit::time::FieldAbsoluteDate & a1) const
+        {
+          env->callVoidMethod(this$, mids$[mid_init_8e8de2be1664674a], a0.this$, a1.this$);
+        }
+      }
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace events {
+        static PyObject *t_FieldNegateDetector_cast_(PyTypeObject *type, PyObject *arg);
+        static PyObject *t_FieldNegateDetector_instance_(PyTypeObject *type, PyObject *arg);
+        static PyObject *t_FieldNegateDetector_of_(t_FieldNegateDetector *self, PyObject *args);
+        static int t_FieldNegateDetector_init_(t_FieldNegateDetector *self, PyObject *args, PyObject *kwds);
+        static PyObject *t_FieldNegateDetector_g(t_FieldNegateDetector *self, PyObject *args);
+        static PyObject *t_FieldNegateDetector_getOriginal(t_FieldNegateDetector *self);
+        static PyObject *t_FieldNegateDetector_init(t_FieldNegateDetector *self, PyObject *args);
+        static PyObject *t_FieldNegateDetector_get__original(t_FieldNegateDetector *self, void *data);
+        static PyObject *t_FieldNegateDetector_get__parameters_(t_FieldNegateDetector *self, void *data);
+        static PyGetSetDef t_FieldNegateDetector__fields_[] = {
+          DECLARE_GET_FIELD(t_FieldNegateDetector, original),
+          DECLARE_GET_FIELD(t_FieldNegateDetector, parameters_),
+          { NULL, NULL, NULL, NULL, NULL }
+        };
+
+        static PyMethodDef t_FieldNegateDetector__methods_[] = {
+          DECLARE_METHOD(t_FieldNegateDetector, cast_, METH_O | METH_CLASS),
+          DECLARE_METHOD(t_FieldNegateDetector, instance_, METH_O | METH_CLASS),
+          DECLARE_METHOD(t_FieldNegateDetector, of_, METH_VARARGS),
+          DECLARE_METHOD(t_FieldNegateDetector, g, METH_VARARGS),
+          DECLARE_METHOD(t_FieldNegateDetector, getOriginal, METH_NOARGS),
+          DECLARE_METHOD(t_FieldNegateDetector, init, METH_VARARGS),
+          { NULL, NULL, 0, NULL }
+        };
+
+        static PyType_Slot PY_TYPE_SLOTS(FieldNegateDetector)[] = {
+          { Py_tp_methods, t_FieldNegateDetector__methods_ },
+          { Py_tp_init, (void *) t_FieldNegateDetector_init_ },
+          { Py_tp_getset, t_FieldNegateDetector__fields_ },
+          { 0, NULL }
+        };
+
+        static PyType_Def *PY_TYPE_BASES(FieldNegateDetector)[] = {
+          &PY_TYPE_DEF(::org::orekit::propagation::events::FieldAbstractDetector),
+          NULL
+        };
+
+        DEFINE_TYPE(FieldNegateDetector, t_FieldNegateDetector, FieldNegateDetector);
+        PyObject *t_FieldNegateDetector::wrap_Object(const FieldNegateDetector& object, PyTypeObject *p0)
+        {
+          PyObject *obj = t_FieldNegateDetector::wrap_Object(object);
+          if (obj != NULL && obj != Py_None)
+          {
+            t_FieldNegateDetector *self = (t_FieldNegateDetector *) obj;
+            self->parameters[0] = p0;
+          }
+          return obj;
+        }
+
+        PyObject *t_FieldNegateDetector::wrap_jobject(const jobject& object, PyTypeObject *p0)
+        {
+          PyObject *obj = t_FieldNegateDetector::wrap_jobject(object);
+          if (obj != NULL && obj != Py_None)
+          {
+            t_FieldNegateDetector *self = (t_FieldNegateDetector *) obj;
+            self->parameters[0] = p0;
+          }
+          return obj;
+        }
+
+        void t_FieldNegateDetector::install(PyObject *module)
+        {
+          installType(&PY_TYPE(FieldNegateDetector), &PY_TYPE_DEF(FieldNegateDetector), module, "FieldNegateDetector", 0);
+        }
+
+        void t_FieldNegateDetector::initialize(PyObject *module)
+        {
+          PyObject_SetAttrString((PyObject *) PY_TYPE(FieldNegateDetector), "class_", make_descriptor(FieldNegateDetector::initializeClass, 1));
+          PyObject_SetAttrString((PyObject *) PY_TYPE(FieldNegateDetector), "wrapfn_", make_descriptor(t_FieldNegateDetector::wrap_jobject));
+          PyObject_SetAttrString((PyObject *) PY_TYPE(FieldNegateDetector), "boxfn_", make_descriptor(boxObject));
+        }
+
+        static PyObject *t_FieldNegateDetector_cast_(PyTypeObject *type, PyObject *arg)
+        {
+          if (!(arg = castCheck(arg, FieldNegateDetector::initializeClass, 1)))
+            return NULL;
+          return t_FieldNegateDetector::wrap_Object(FieldNegateDetector(((t_FieldNegateDetector *) arg)->object.this$));
+        }
+        static PyObject *t_FieldNegateDetector_instance_(PyTypeObject *type, PyObject *arg)
+        {
+          if (!castCheck(arg, FieldNegateDetector::initializeClass, 0))
+            Py_RETURN_FALSE;
+          Py_RETURN_TRUE;
+        }
+
+        static PyObject *t_FieldNegateDetector_of_(t_FieldNegateDetector *self, PyObject *args)
+        {
+          if (!parseArg(args, "T", 1, &(self->parameters)))
+            Py_RETURN_SELF;
+          return PyErr_SetArgsError((PyObject *) self, "of_", args);
+        }
+
+        static int t_FieldNegateDetector_init_(t_FieldNegateDetector *self, PyObject *args, PyObject *kwds)
+        {
+          ::org::orekit::propagation::events::FieldEventDetector a0((jobject) NULL);
+          PyTypeObject **p0;
+          FieldNegateDetector object((jobject) NULL);
+
+          if (!parseArgs(args, "K", ::org::orekit::propagation::events::FieldEventDetector::initializeClass, &a0, &p0, ::org::orekit::propagation::events::t_FieldEventDetector::parameters_))
+          {
+            INT_CALL(object = FieldNegateDetector(a0));
+            self->object = object;
+          }
+          else
+          {
+            PyErr_SetArgsError((PyObject *) self, "__init__", args);
+            return -1;
+          }
+
+          return 0;
+        }
+
+        static PyObject *t_FieldNegateDetector_g(t_FieldNegateDetector *self, PyObject *args)
+        {
+          ::org::orekit::propagation::FieldSpacecraftState a0((jobject) NULL);
+          PyTypeObject **p0;
+          ::org::hipparchus::CalculusFieldElement result((jobject) NULL);
+
+          if (!parseArgs(args, "K", ::org::orekit::propagation::FieldSpacecraftState::initializeClass, &a0, &p0, ::org::orekit::propagation::t_FieldSpacecraftState::parameters_))
+          {
+            OBJ_CALL(result = self->object.g(a0));
+            return self->parameters[0] != NULL ? wrapType(self->parameters[0], result.this$) : ::org::hipparchus::t_CalculusFieldElement::wrap_Object(result);
+          }
+
+          return callSuper(PY_TYPE(FieldNegateDetector), (PyObject *) self, "g", args, 2);
+        }
+
+        static PyObject *t_FieldNegateDetector_getOriginal(t_FieldNegateDetector *self)
+        {
+          ::org::orekit::propagation::events::FieldEventDetector result((jobject) NULL);
+          OBJ_CALL(result = self->object.getOriginal());
+          return ::org::orekit::propagation::events::t_FieldEventDetector::wrap_Object(result, self->parameters[0]);
+        }
+
+        static PyObject *t_FieldNegateDetector_init(t_FieldNegateDetector *self, PyObject *args)
+        {
+          ::org::orekit::propagation::FieldSpacecraftState a0((jobject) NULL);
+          PyTypeObject **p0;
+          ::org::orekit::time::FieldAbsoluteDate a1((jobject) NULL);
+          PyTypeObject **p1;
+
+          if (!parseArgs(args, "KK", ::org::orekit::propagation::FieldSpacecraftState::initializeClass, ::org::orekit::time::FieldAbsoluteDate::initializeClass, &a0, &p0, ::org::orekit::propagation::t_FieldSpacecraftState::parameters_, &a1, &p1, ::org::orekit::time::t_FieldAbsoluteDate::parameters_))
+          {
+            OBJ_CALL(self->object.init(a0, a1));
+            Py_RETURN_NONE;
+          }
+
+          return callSuper(PY_TYPE(FieldNegateDetector), (PyObject *) self, "init", args, 2);
+        }
+        static PyObject *t_FieldNegateDetector_get__parameters_(t_FieldNegateDetector *self, void *data)
+        {
+          return typeParameters(self->parameters, sizeof(self->parameters));
+        }
+
+        static PyObject *t_FieldNegateDetector_get__original(t_FieldNegateDetector *self, void *data)
+        {
+          ::org::orekit::propagation::events::FieldEventDetector value((jobject) NULL);
+          OBJ_CALL(value = self->object.getOriginal());
+          return ::org::orekit::propagation::events::t_FieldEventDetector::wrap_Object(value);
+        }
+      }
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "org/orekit/models/earth/atmosphere/JB2008InputParameters.h"
+#include "org/orekit/time/AbsoluteDate.h"
+#include "java/lang/Class.h"
+#include "JArray.h"
+
+namespace org {
+  namespace orekit {
+    namespace models {
+      namespace earth {
+        namespace atmosphere {
+
+          ::java::lang::Class *JB2008InputParameters::class$ = NULL;
+          jmethodID *JB2008InputParameters::mids$ = NULL;
+          bool JB2008InputParameters::live$ = false;
+
+          jclass JB2008InputParameters::initializeClass(bool getOnly)
+          {
+            if (getOnly)
+              return (jclass) (live$ ? class$->this$ : NULL);
+            if (class$ == NULL)
+            {
+              jclass cls = (jclass) env->findClass("org/orekit/models/earth/atmosphere/JB2008InputParameters");
+
+              mids$ = new jmethodID[max_mid];
+              mids$[mid_getDSTDTC_bf1d7732f1acb697] = env->getMethodID(cls, "getDSTDTC", "(Lorg/orekit/time/AbsoluteDate;)D");
+              mids$[mid_getF10_bf1d7732f1acb697] = env->getMethodID(cls, "getF10", "(Lorg/orekit/time/AbsoluteDate;)D");
+              mids$[mid_getF10B_bf1d7732f1acb697] = env->getMethodID(cls, "getF10B", "(Lorg/orekit/time/AbsoluteDate;)D");
+              mids$[mid_getMaxDate_85703d13e302437e] = env->getMethodID(cls, "getMaxDate", "()Lorg/orekit/time/AbsoluteDate;");
+              mids$[mid_getMinDate_85703d13e302437e] = env->getMethodID(cls, "getMinDate", "()Lorg/orekit/time/AbsoluteDate;");
+              mids$[mid_getS10_bf1d7732f1acb697] = env->getMethodID(cls, "getS10", "(Lorg/orekit/time/AbsoluteDate;)D");
+              mids$[mid_getS10B_bf1d7732f1acb697] = env->getMethodID(cls, "getS10B", "(Lorg/orekit/time/AbsoluteDate;)D");
+              mids$[mid_getXM10_bf1d7732f1acb697] = env->getMethodID(cls, "getXM10", "(Lorg/orekit/time/AbsoluteDate;)D");
+              mids$[mid_getXM10B_bf1d7732f1acb697] = env->getMethodID(cls, "getXM10B", "(Lorg/orekit/time/AbsoluteDate;)D");
+              mids$[mid_getY10_bf1d7732f1acb697] = env->getMethodID(cls, "getY10", "(Lorg/orekit/time/AbsoluteDate;)D");
+              mids$[mid_getY10B_bf1d7732f1acb697] = env->getMethodID(cls, "getY10B", "(Lorg/orekit/time/AbsoluteDate;)D");
+
+              class$ = new ::java::lang::Class(cls);
+              live$ = true;
+            }
+            return (jclass) class$->this$;
+          }
+
+          jdouble JB2008InputParameters::getDSTDTC(const ::org::orekit::time::AbsoluteDate & a0) const
+          {
+            return env->callDoubleMethod(this$, mids$[mid_getDSTDTC_bf1d7732f1acb697], a0.this$);
+          }
+
+          jdouble JB2008InputParameters::getF10(const ::org::orekit::time::AbsoluteDate & a0) const
+          {
+            return env->callDoubleMethod(this$, mids$[mid_getF10_bf1d7732f1acb697], a0.this$);
+          }
+
+          jdouble JB2008InputParameters::getF10B(const ::org::orekit::time::AbsoluteDate & a0) const
+          {
+            return env->callDoubleMethod(this$, mids$[mid_getF10B_bf1d7732f1acb697], a0.this$);
+          }
+
+          ::org::orekit::time::AbsoluteDate JB2008InputParameters::getMaxDate() const
+          {
+            return ::org::orekit::time::AbsoluteDate(env->callObjectMethod(this$, mids$[mid_getMaxDate_85703d13e302437e]));
+          }
+
+          ::org::orekit::time::AbsoluteDate JB2008InputParameters::getMinDate() const
+          {
+            return ::org::orekit::time::AbsoluteDate(env->callObjectMethod(this$, mids$[mid_getMinDate_85703d13e302437e]));
+          }
+
+          jdouble JB2008InputParameters::getS10(const ::org::orekit::time::AbsoluteDate & a0) const
+          {
+            return env->callDoubleMethod(this$, mids$[mid_getS10_bf1d7732f1acb697], a0.this$);
+          }
+
+          jdouble JB2008InputParameters::getS10B(const ::org::orekit::time::AbsoluteDate & a0) const
+          {
+            return env->callDoubleMethod(this$, mids$[mid_getS10B_bf1d7732f1acb697], a0.this$);
+          }
+
+          jdouble JB2008InputParameters::getXM10(const ::org::orekit::time::AbsoluteDate & a0) const
+          {
+            return env->callDoubleMethod(this$, mids$[mid_getXM10_bf1d7732f1acb697], a0.this$);
+          }
+
+          jdouble JB2008InputParameters::getXM10B(const ::org::orekit::time::AbsoluteDate & a0) const
+          {
+            return env->callDoubleMethod(this$, mids$[mid_getXM10B_bf1d7732f1acb697], a0.this$);
+          }
+
+          jdouble JB2008InputParameters::getY10(const ::org::orekit::time::AbsoluteDate & a0) const
+          {
+            return env->callDoubleMethod(this$, mids$[mid_getY10_bf1d7732f1acb697], a0.this$);
+          }
+
+          jdouble JB2008InputParameters::getY10B(const ::org::orekit::time::AbsoluteDate & a0) const
+          {
+            return env->callDoubleMethod(this$, mids$[mid_getY10B_bf1d7732f1acb697], a0.this$);
           }
         }
       }
@@ -2653,155 +4514,240 @@ namespace org {
     namespace models {
       namespace earth {
         namespace atmosphere {
-          static PyObject *t_DTM2000InputParameters_cast_(PyTypeObject *type, PyObject *arg);
-          static PyObject *t_DTM2000InputParameters_instance_(PyTypeObject *type, PyObject *arg);
-          static PyObject *t_DTM2000InputParameters_get24HoursKp(t_DTM2000InputParameters *self, PyObject *arg);
-          static PyObject *t_DTM2000InputParameters_getInstantFlux(t_DTM2000InputParameters *self, PyObject *arg);
-          static PyObject *t_DTM2000InputParameters_getMaxDate(t_DTM2000InputParameters *self);
-          static PyObject *t_DTM2000InputParameters_getMeanFlux(t_DTM2000InputParameters *self, PyObject *arg);
-          static PyObject *t_DTM2000InputParameters_getMinDate(t_DTM2000InputParameters *self);
-          static PyObject *t_DTM2000InputParameters_getThreeHourlyKP(t_DTM2000InputParameters *self, PyObject *arg);
-          static PyObject *t_DTM2000InputParameters_get__maxDate(t_DTM2000InputParameters *self, void *data);
-          static PyObject *t_DTM2000InputParameters_get__minDate(t_DTM2000InputParameters *self, void *data);
-          static PyGetSetDef t_DTM2000InputParameters__fields_[] = {
-            DECLARE_GET_FIELD(t_DTM2000InputParameters, maxDate),
-            DECLARE_GET_FIELD(t_DTM2000InputParameters, minDate),
+          static PyObject *t_JB2008InputParameters_cast_(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_JB2008InputParameters_instance_(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_JB2008InputParameters_getDSTDTC(t_JB2008InputParameters *self, PyObject *arg);
+          static PyObject *t_JB2008InputParameters_getF10(t_JB2008InputParameters *self, PyObject *arg);
+          static PyObject *t_JB2008InputParameters_getF10B(t_JB2008InputParameters *self, PyObject *arg);
+          static PyObject *t_JB2008InputParameters_getMaxDate(t_JB2008InputParameters *self);
+          static PyObject *t_JB2008InputParameters_getMinDate(t_JB2008InputParameters *self);
+          static PyObject *t_JB2008InputParameters_getS10(t_JB2008InputParameters *self, PyObject *arg);
+          static PyObject *t_JB2008InputParameters_getS10B(t_JB2008InputParameters *self, PyObject *arg);
+          static PyObject *t_JB2008InputParameters_getXM10(t_JB2008InputParameters *self, PyObject *arg);
+          static PyObject *t_JB2008InputParameters_getXM10B(t_JB2008InputParameters *self, PyObject *arg);
+          static PyObject *t_JB2008InputParameters_getY10(t_JB2008InputParameters *self, PyObject *arg);
+          static PyObject *t_JB2008InputParameters_getY10B(t_JB2008InputParameters *self, PyObject *arg);
+          static PyObject *t_JB2008InputParameters_get__maxDate(t_JB2008InputParameters *self, void *data);
+          static PyObject *t_JB2008InputParameters_get__minDate(t_JB2008InputParameters *self, void *data);
+          static PyGetSetDef t_JB2008InputParameters__fields_[] = {
+            DECLARE_GET_FIELD(t_JB2008InputParameters, maxDate),
+            DECLARE_GET_FIELD(t_JB2008InputParameters, minDate),
             { NULL, NULL, NULL, NULL, NULL }
           };
 
-          static PyMethodDef t_DTM2000InputParameters__methods_[] = {
-            DECLARE_METHOD(t_DTM2000InputParameters, cast_, METH_O | METH_CLASS),
-            DECLARE_METHOD(t_DTM2000InputParameters, instance_, METH_O | METH_CLASS),
-            DECLARE_METHOD(t_DTM2000InputParameters, get24HoursKp, METH_O),
-            DECLARE_METHOD(t_DTM2000InputParameters, getInstantFlux, METH_O),
-            DECLARE_METHOD(t_DTM2000InputParameters, getMaxDate, METH_NOARGS),
-            DECLARE_METHOD(t_DTM2000InputParameters, getMeanFlux, METH_O),
-            DECLARE_METHOD(t_DTM2000InputParameters, getMinDate, METH_NOARGS),
-            DECLARE_METHOD(t_DTM2000InputParameters, getThreeHourlyKP, METH_O),
+          static PyMethodDef t_JB2008InputParameters__methods_[] = {
+            DECLARE_METHOD(t_JB2008InputParameters, cast_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_JB2008InputParameters, instance_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_JB2008InputParameters, getDSTDTC, METH_O),
+            DECLARE_METHOD(t_JB2008InputParameters, getF10, METH_O),
+            DECLARE_METHOD(t_JB2008InputParameters, getF10B, METH_O),
+            DECLARE_METHOD(t_JB2008InputParameters, getMaxDate, METH_NOARGS),
+            DECLARE_METHOD(t_JB2008InputParameters, getMinDate, METH_NOARGS),
+            DECLARE_METHOD(t_JB2008InputParameters, getS10, METH_O),
+            DECLARE_METHOD(t_JB2008InputParameters, getS10B, METH_O),
+            DECLARE_METHOD(t_JB2008InputParameters, getXM10, METH_O),
+            DECLARE_METHOD(t_JB2008InputParameters, getXM10B, METH_O),
+            DECLARE_METHOD(t_JB2008InputParameters, getY10, METH_O),
+            DECLARE_METHOD(t_JB2008InputParameters, getY10B, METH_O),
             { NULL, NULL, 0, NULL }
           };
 
-          static PyType_Slot PY_TYPE_SLOTS(DTM2000InputParameters)[] = {
-            { Py_tp_methods, t_DTM2000InputParameters__methods_ },
+          static PyType_Slot PY_TYPE_SLOTS(JB2008InputParameters)[] = {
+            { Py_tp_methods, t_JB2008InputParameters__methods_ },
             { Py_tp_init, (void *) abstract_init },
-            { Py_tp_getset, t_DTM2000InputParameters__fields_ },
+            { Py_tp_getset, t_JB2008InputParameters__fields_ },
             { 0, NULL }
           };
 
-          static PyType_Def *PY_TYPE_BASES(DTM2000InputParameters)[] = {
+          static PyType_Def *PY_TYPE_BASES(JB2008InputParameters)[] = {
             &PY_TYPE_DEF(::java::io::Serializable),
             NULL
           };
 
-          DEFINE_TYPE(DTM2000InputParameters, t_DTM2000InputParameters, DTM2000InputParameters);
+          DEFINE_TYPE(JB2008InputParameters, t_JB2008InputParameters, JB2008InputParameters);
 
-          void t_DTM2000InputParameters::install(PyObject *module)
+          void t_JB2008InputParameters::install(PyObject *module)
           {
-            installType(&PY_TYPE(DTM2000InputParameters), &PY_TYPE_DEF(DTM2000InputParameters), module, "DTM2000InputParameters", 0);
+            installType(&PY_TYPE(JB2008InputParameters), &PY_TYPE_DEF(JB2008InputParameters), module, "JB2008InputParameters", 0);
           }
 
-          void t_DTM2000InputParameters::initialize(PyObject *module)
+          void t_JB2008InputParameters::initialize(PyObject *module)
           {
-            PyObject_SetAttrString((PyObject *) PY_TYPE(DTM2000InputParameters), "class_", make_descriptor(DTM2000InputParameters::initializeClass, 1));
-            PyObject_SetAttrString((PyObject *) PY_TYPE(DTM2000InputParameters), "wrapfn_", make_descriptor(t_DTM2000InputParameters::wrap_jobject));
-            PyObject_SetAttrString((PyObject *) PY_TYPE(DTM2000InputParameters), "boxfn_", make_descriptor(boxObject));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(JB2008InputParameters), "class_", make_descriptor(JB2008InputParameters::initializeClass, 1));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(JB2008InputParameters), "wrapfn_", make_descriptor(t_JB2008InputParameters::wrap_jobject));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(JB2008InputParameters), "boxfn_", make_descriptor(boxObject));
           }
 
-          static PyObject *t_DTM2000InputParameters_cast_(PyTypeObject *type, PyObject *arg)
+          static PyObject *t_JB2008InputParameters_cast_(PyTypeObject *type, PyObject *arg)
           {
-            if (!(arg = castCheck(arg, DTM2000InputParameters::initializeClass, 1)))
+            if (!(arg = castCheck(arg, JB2008InputParameters::initializeClass, 1)))
               return NULL;
-            return t_DTM2000InputParameters::wrap_Object(DTM2000InputParameters(((t_DTM2000InputParameters *) arg)->object.this$));
+            return t_JB2008InputParameters::wrap_Object(JB2008InputParameters(((t_JB2008InputParameters *) arg)->object.this$));
           }
-          static PyObject *t_DTM2000InputParameters_instance_(PyTypeObject *type, PyObject *arg)
+          static PyObject *t_JB2008InputParameters_instance_(PyTypeObject *type, PyObject *arg)
           {
-            if (!castCheck(arg, DTM2000InputParameters::initializeClass, 0))
+            if (!castCheck(arg, JB2008InputParameters::initializeClass, 0))
               Py_RETURN_FALSE;
             Py_RETURN_TRUE;
           }
 
-          static PyObject *t_DTM2000InputParameters_get24HoursKp(t_DTM2000InputParameters *self, PyObject *arg)
+          static PyObject *t_JB2008InputParameters_getDSTDTC(t_JB2008InputParameters *self, PyObject *arg)
           {
             ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
             jdouble result;
 
             if (!parseArg(arg, "k", ::org::orekit::time::AbsoluteDate::initializeClass, &a0))
             {
-              OBJ_CALL(result = self->object.get24HoursKp(a0));
+              OBJ_CALL(result = self->object.getDSTDTC(a0));
               return PyFloat_FromDouble((double) result);
             }
 
-            PyErr_SetArgsError((PyObject *) self, "get24HoursKp", arg);
+            PyErr_SetArgsError((PyObject *) self, "getDSTDTC", arg);
             return NULL;
           }
 
-          static PyObject *t_DTM2000InputParameters_getInstantFlux(t_DTM2000InputParameters *self, PyObject *arg)
+          static PyObject *t_JB2008InputParameters_getF10(t_JB2008InputParameters *self, PyObject *arg)
           {
             ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
             jdouble result;
 
             if (!parseArg(arg, "k", ::org::orekit::time::AbsoluteDate::initializeClass, &a0))
             {
-              OBJ_CALL(result = self->object.getInstantFlux(a0));
+              OBJ_CALL(result = self->object.getF10(a0));
               return PyFloat_FromDouble((double) result);
             }
 
-            PyErr_SetArgsError((PyObject *) self, "getInstantFlux", arg);
+            PyErr_SetArgsError((PyObject *) self, "getF10", arg);
             return NULL;
           }
 
-          static PyObject *t_DTM2000InputParameters_getMaxDate(t_DTM2000InputParameters *self)
+          static PyObject *t_JB2008InputParameters_getF10B(t_JB2008InputParameters *self, PyObject *arg)
+          {
+            ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
+            jdouble result;
+
+            if (!parseArg(arg, "k", ::org::orekit::time::AbsoluteDate::initializeClass, &a0))
+            {
+              OBJ_CALL(result = self->object.getF10B(a0));
+              return PyFloat_FromDouble((double) result);
+            }
+
+            PyErr_SetArgsError((PyObject *) self, "getF10B", arg);
+            return NULL;
+          }
+
+          static PyObject *t_JB2008InputParameters_getMaxDate(t_JB2008InputParameters *self)
           {
             ::org::orekit::time::AbsoluteDate result((jobject) NULL);
             OBJ_CALL(result = self->object.getMaxDate());
             return ::org::orekit::time::t_AbsoluteDate::wrap_Object(result);
           }
 
-          static PyObject *t_DTM2000InputParameters_getMeanFlux(t_DTM2000InputParameters *self, PyObject *arg)
-          {
-            ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
-            jdouble result;
-
-            if (!parseArg(arg, "k", ::org::orekit::time::AbsoluteDate::initializeClass, &a0))
-            {
-              OBJ_CALL(result = self->object.getMeanFlux(a0));
-              return PyFloat_FromDouble((double) result);
-            }
-
-            PyErr_SetArgsError((PyObject *) self, "getMeanFlux", arg);
-            return NULL;
-          }
-
-          static PyObject *t_DTM2000InputParameters_getMinDate(t_DTM2000InputParameters *self)
+          static PyObject *t_JB2008InputParameters_getMinDate(t_JB2008InputParameters *self)
           {
             ::org::orekit::time::AbsoluteDate result((jobject) NULL);
             OBJ_CALL(result = self->object.getMinDate());
             return ::org::orekit::time::t_AbsoluteDate::wrap_Object(result);
           }
 
-          static PyObject *t_DTM2000InputParameters_getThreeHourlyKP(t_DTM2000InputParameters *self, PyObject *arg)
+          static PyObject *t_JB2008InputParameters_getS10(t_JB2008InputParameters *self, PyObject *arg)
           {
             ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
             jdouble result;
 
             if (!parseArg(arg, "k", ::org::orekit::time::AbsoluteDate::initializeClass, &a0))
             {
-              OBJ_CALL(result = self->object.getThreeHourlyKP(a0));
+              OBJ_CALL(result = self->object.getS10(a0));
               return PyFloat_FromDouble((double) result);
             }
 
-            PyErr_SetArgsError((PyObject *) self, "getThreeHourlyKP", arg);
+            PyErr_SetArgsError((PyObject *) self, "getS10", arg);
             return NULL;
           }
 
-          static PyObject *t_DTM2000InputParameters_get__maxDate(t_DTM2000InputParameters *self, void *data)
+          static PyObject *t_JB2008InputParameters_getS10B(t_JB2008InputParameters *self, PyObject *arg)
+          {
+            ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
+            jdouble result;
+
+            if (!parseArg(arg, "k", ::org::orekit::time::AbsoluteDate::initializeClass, &a0))
+            {
+              OBJ_CALL(result = self->object.getS10B(a0));
+              return PyFloat_FromDouble((double) result);
+            }
+
+            PyErr_SetArgsError((PyObject *) self, "getS10B", arg);
+            return NULL;
+          }
+
+          static PyObject *t_JB2008InputParameters_getXM10(t_JB2008InputParameters *self, PyObject *arg)
+          {
+            ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
+            jdouble result;
+
+            if (!parseArg(arg, "k", ::org::orekit::time::AbsoluteDate::initializeClass, &a0))
+            {
+              OBJ_CALL(result = self->object.getXM10(a0));
+              return PyFloat_FromDouble((double) result);
+            }
+
+            PyErr_SetArgsError((PyObject *) self, "getXM10", arg);
+            return NULL;
+          }
+
+          static PyObject *t_JB2008InputParameters_getXM10B(t_JB2008InputParameters *self, PyObject *arg)
+          {
+            ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
+            jdouble result;
+
+            if (!parseArg(arg, "k", ::org::orekit::time::AbsoluteDate::initializeClass, &a0))
+            {
+              OBJ_CALL(result = self->object.getXM10B(a0));
+              return PyFloat_FromDouble((double) result);
+            }
+
+            PyErr_SetArgsError((PyObject *) self, "getXM10B", arg);
+            return NULL;
+          }
+
+          static PyObject *t_JB2008InputParameters_getY10(t_JB2008InputParameters *self, PyObject *arg)
+          {
+            ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
+            jdouble result;
+
+            if (!parseArg(arg, "k", ::org::orekit::time::AbsoluteDate::initializeClass, &a0))
+            {
+              OBJ_CALL(result = self->object.getY10(a0));
+              return PyFloat_FromDouble((double) result);
+            }
+
+            PyErr_SetArgsError((PyObject *) self, "getY10", arg);
+            return NULL;
+          }
+
+          static PyObject *t_JB2008InputParameters_getY10B(t_JB2008InputParameters *self, PyObject *arg)
+          {
+            ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
+            jdouble result;
+
+            if (!parseArg(arg, "k", ::org::orekit::time::AbsoluteDate::initializeClass, &a0))
+            {
+              OBJ_CALL(result = self->object.getY10B(a0));
+              return PyFloat_FromDouble((double) result);
+            }
+
+            PyErr_SetArgsError((PyObject *) self, "getY10B", arg);
+            return NULL;
+          }
+
+          static PyObject *t_JB2008InputParameters_get__maxDate(t_JB2008InputParameters *self, void *data)
           {
             ::org::orekit::time::AbsoluteDate value((jobject) NULL);
             OBJ_CALL(value = self->object.getMaxDate());
             return ::org::orekit::time::t_AbsoluteDate::wrap_Object(value);
           }
 
-          static PyObject *t_DTM2000InputParameters_get__minDate(t_DTM2000InputParameters *self, void *data)
+          static PyObject *t_JB2008InputParameters_get__minDate(t_JB2008InputParameters *self, void *data)
           {
             ::org::orekit::time::AbsoluteDate value((jobject) NULL);
             OBJ_CALL(value = self->object.getMinDate());
@@ -2814,2025 +4760,33 @@ namespace org {
 }
 #include <jni.h>
 #include "JCCEnv.h"
-#include "org/hipparchus/distribution/RealDistribution.h"
-#include "org/hipparchus/exception/MathIllegalArgumentException.h"
-#include "java/lang/Class.h"
-#include "JArray.h"
-
-namespace org {
-  namespace hipparchus {
-    namespace distribution {
-
-      ::java::lang::Class *RealDistribution::class$ = NULL;
-      jmethodID *RealDistribution::mids$ = NULL;
-      bool RealDistribution::live$ = false;
-
-      jclass RealDistribution::initializeClass(bool getOnly)
-      {
-        if (getOnly)
-          return (jclass) (live$ ? class$->this$ : NULL);
-        if (class$ == NULL)
-        {
-          jclass cls = (jclass) env->findClass("org/hipparchus/distribution/RealDistribution");
-
-          mids$ = new jmethodID[max_mid];
-          mids$[mid_cumulativeProbability_0ba5fed9597b693e] = env->getMethodID(cls, "cumulativeProbability", "(D)D");
-          mids$[mid_density_0ba5fed9597b693e] = env->getMethodID(cls, "density", "(D)D");
-          mids$[mid_getNumericalMean_456d9a2f64d6b28d] = env->getMethodID(cls, "getNumericalMean", "()D");
-          mids$[mid_getNumericalVariance_456d9a2f64d6b28d] = env->getMethodID(cls, "getNumericalVariance", "()D");
-          mids$[mid_getSupportLowerBound_456d9a2f64d6b28d] = env->getMethodID(cls, "getSupportLowerBound", "()D");
-          mids$[mid_getSupportUpperBound_456d9a2f64d6b28d] = env->getMethodID(cls, "getSupportUpperBound", "()D");
-          mids$[mid_inverseCumulativeProbability_0ba5fed9597b693e] = env->getMethodID(cls, "inverseCumulativeProbability", "(D)D");
-          mids$[mid_isSupportConnected_e470b6d9e0d979db] = env->getMethodID(cls, "isSupportConnected", "()Z");
-          mids$[mid_logDensity_0ba5fed9597b693e] = env->getMethodID(cls, "logDensity", "(D)D");
-          mids$[mid_probability_824133ce4aec3505] = env->getMethodID(cls, "probability", "(DD)D");
-
-          class$ = new ::java::lang::Class(cls);
-          live$ = true;
-        }
-        return (jclass) class$->this$;
-      }
-
-      jdouble RealDistribution::cumulativeProbability(jdouble a0) const
-      {
-        return env->callDoubleMethod(this$, mids$[mid_cumulativeProbability_0ba5fed9597b693e], a0);
-      }
-
-      jdouble RealDistribution::density(jdouble a0) const
-      {
-        return env->callDoubleMethod(this$, mids$[mid_density_0ba5fed9597b693e], a0);
-      }
-
-      jdouble RealDistribution::getNumericalMean() const
-      {
-        return env->callDoubleMethod(this$, mids$[mid_getNumericalMean_456d9a2f64d6b28d]);
-      }
-
-      jdouble RealDistribution::getNumericalVariance() const
-      {
-        return env->callDoubleMethod(this$, mids$[mid_getNumericalVariance_456d9a2f64d6b28d]);
-      }
-
-      jdouble RealDistribution::getSupportLowerBound() const
-      {
-        return env->callDoubleMethod(this$, mids$[mid_getSupportLowerBound_456d9a2f64d6b28d]);
-      }
-
-      jdouble RealDistribution::getSupportUpperBound() const
-      {
-        return env->callDoubleMethod(this$, mids$[mid_getSupportUpperBound_456d9a2f64d6b28d]);
-      }
-
-      jdouble RealDistribution::inverseCumulativeProbability(jdouble a0) const
-      {
-        return env->callDoubleMethod(this$, mids$[mid_inverseCumulativeProbability_0ba5fed9597b693e], a0);
-      }
-
-      jboolean RealDistribution::isSupportConnected() const
-      {
-        return env->callBooleanMethod(this$, mids$[mid_isSupportConnected_e470b6d9e0d979db]);
-      }
-
-      jdouble RealDistribution::logDensity(jdouble a0) const
-      {
-        return env->callDoubleMethod(this$, mids$[mid_logDensity_0ba5fed9597b693e], a0);
-      }
-
-      jdouble RealDistribution::probability(jdouble a0, jdouble a1) const
-      {
-        return env->callDoubleMethod(this$, mids$[mid_probability_824133ce4aec3505], a0, a1);
-      }
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace org {
-  namespace hipparchus {
-    namespace distribution {
-      static PyObject *t_RealDistribution_cast_(PyTypeObject *type, PyObject *arg);
-      static PyObject *t_RealDistribution_instance_(PyTypeObject *type, PyObject *arg);
-      static PyObject *t_RealDistribution_cumulativeProbability(t_RealDistribution *self, PyObject *arg);
-      static PyObject *t_RealDistribution_density(t_RealDistribution *self, PyObject *arg);
-      static PyObject *t_RealDistribution_getNumericalMean(t_RealDistribution *self);
-      static PyObject *t_RealDistribution_getNumericalVariance(t_RealDistribution *self);
-      static PyObject *t_RealDistribution_getSupportLowerBound(t_RealDistribution *self);
-      static PyObject *t_RealDistribution_getSupportUpperBound(t_RealDistribution *self);
-      static PyObject *t_RealDistribution_inverseCumulativeProbability(t_RealDistribution *self, PyObject *arg);
-      static PyObject *t_RealDistribution_isSupportConnected(t_RealDistribution *self);
-      static PyObject *t_RealDistribution_logDensity(t_RealDistribution *self, PyObject *arg);
-      static PyObject *t_RealDistribution_probability(t_RealDistribution *self, PyObject *args);
-      static PyObject *t_RealDistribution_get__numericalMean(t_RealDistribution *self, void *data);
-      static PyObject *t_RealDistribution_get__numericalVariance(t_RealDistribution *self, void *data);
-      static PyObject *t_RealDistribution_get__supportConnected(t_RealDistribution *self, void *data);
-      static PyObject *t_RealDistribution_get__supportLowerBound(t_RealDistribution *self, void *data);
-      static PyObject *t_RealDistribution_get__supportUpperBound(t_RealDistribution *self, void *data);
-      static PyGetSetDef t_RealDistribution__fields_[] = {
-        DECLARE_GET_FIELD(t_RealDistribution, numericalMean),
-        DECLARE_GET_FIELD(t_RealDistribution, numericalVariance),
-        DECLARE_GET_FIELD(t_RealDistribution, supportConnected),
-        DECLARE_GET_FIELD(t_RealDistribution, supportLowerBound),
-        DECLARE_GET_FIELD(t_RealDistribution, supportUpperBound),
-        { NULL, NULL, NULL, NULL, NULL }
-      };
-
-      static PyMethodDef t_RealDistribution__methods_[] = {
-        DECLARE_METHOD(t_RealDistribution, cast_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_RealDistribution, instance_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_RealDistribution, cumulativeProbability, METH_O),
-        DECLARE_METHOD(t_RealDistribution, density, METH_O),
-        DECLARE_METHOD(t_RealDistribution, getNumericalMean, METH_NOARGS),
-        DECLARE_METHOD(t_RealDistribution, getNumericalVariance, METH_NOARGS),
-        DECLARE_METHOD(t_RealDistribution, getSupportLowerBound, METH_NOARGS),
-        DECLARE_METHOD(t_RealDistribution, getSupportUpperBound, METH_NOARGS),
-        DECLARE_METHOD(t_RealDistribution, inverseCumulativeProbability, METH_O),
-        DECLARE_METHOD(t_RealDistribution, isSupportConnected, METH_NOARGS),
-        DECLARE_METHOD(t_RealDistribution, logDensity, METH_O),
-        DECLARE_METHOD(t_RealDistribution, probability, METH_VARARGS),
-        { NULL, NULL, 0, NULL }
-      };
-
-      static PyType_Slot PY_TYPE_SLOTS(RealDistribution)[] = {
-        { Py_tp_methods, t_RealDistribution__methods_ },
-        { Py_tp_init, (void *) abstract_init },
-        { Py_tp_getset, t_RealDistribution__fields_ },
-        { 0, NULL }
-      };
-
-      static PyType_Def *PY_TYPE_BASES(RealDistribution)[] = {
-        &PY_TYPE_DEF(::java::lang::Object),
-        NULL
-      };
-
-      DEFINE_TYPE(RealDistribution, t_RealDistribution, RealDistribution);
-
-      void t_RealDistribution::install(PyObject *module)
-      {
-        installType(&PY_TYPE(RealDistribution), &PY_TYPE_DEF(RealDistribution), module, "RealDistribution", 0);
-      }
-
-      void t_RealDistribution::initialize(PyObject *module)
-      {
-        PyObject_SetAttrString((PyObject *) PY_TYPE(RealDistribution), "class_", make_descriptor(RealDistribution::initializeClass, 1));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(RealDistribution), "wrapfn_", make_descriptor(t_RealDistribution::wrap_jobject));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(RealDistribution), "boxfn_", make_descriptor(boxObject));
-      }
-
-      static PyObject *t_RealDistribution_cast_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!(arg = castCheck(arg, RealDistribution::initializeClass, 1)))
-          return NULL;
-        return t_RealDistribution::wrap_Object(RealDistribution(((t_RealDistribution *) arg)->object.this$));
-      }
-      static PyObject *t_RealDistribution_instance_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!castCheck(arg, RealDistribution::initializeClass, 0))
-          Py_RETURN_FALSE;
-        Py_RETURN_TRUE;
-      }
-
-      static PyObject *t_RealDistribution_cumulativeProbability(t_RealDistribution *self, PyObject *arg)
-      {
-        jdouble a0;
-        jdouble result;
-
-        if (!parseArg(arg, "D", &a0))
-        {
-          OBJ_CALL(result = self->object.cumulativeProbability(a0));
-          return PyFloat_FromDouble((double) result);
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "cumulativeProbability", arg);
-        return NULL;
-      }
-
-      static PyObject *t_RealDistribution_density(t_RealDistribution *self, PyObject *arg)
-      {
-        jdouble a0;
-        jdouble result;
-
-        if (!parseArg(arg, "D", &a0))
-        {
-          OBJ_CALL(result = self->object.density(a0));
-          return PyFloat_FromDouble((double) result);
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "density", arg);
-        return NULL;
-      }
-
-      static PyObject *t_RealDistribution_getNumericalMean(t_RealDistribution *self)
-      {
-        jdouble result;
-        OBJ_CALL(result = self->object.getNumericalMean());
-        return PyFloat_FromDouble((double) result);
-      }
-
-      static PyObject *t_RealDistribution_getNumericalVariance(t_RealDistribution *self)
-      {
-        jdouble result;
-        OBJ_CALL(result = self->object.getNumericalVariance());
-        return PyFloat_FromDouble((double) result);
-      }
-
-      static PyObject *t_RealDistribution_getSupportLowerBound(t_RealDistribution *self)
-      {
-        jdouble result;
-        OBJ_CALL(result = self->object.getSupportLowerBound());
-        return PyFloat_FromDouble((double) result);
-      }
-
-      static PyObject *t_RealDistribution_getSupportUpperBound(t_RealDistribution *self)
-      {
-        jdouble result;
-        OBJ_CALL(result = self->object.getSupportUpperBound());
-        return PyFloat_FromDouble((double) result);
-      }
-
-      static PyObject *t_RealDistribution_inverseCumulativeProbability(t_RealDistribution *self, PyObject *arg)
-      {
-        jdouble a0;
-        jdouble result;
-
-        if (!parseArg(arg, "D", &a0))
-        {
-          OBJ_CALL(result = self->object.inverseCumulativeProbability(a0));
-          return PyFloat_FromDouble((double) result);
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "inverseCumulativeProbability", arg);
-        return NULL;
-      }
-
-      static PyObject *t_RealDistribution_isSupportConnected(t_RealDistribution *self)
-      {
-        jboolean result;
-        OBJ_CALL(result = self->object.isSupportConnected());
-        Py_RETURN_BOOL(result);
-      }
-
-      static PyObject *t_RealDistribution_logDensity(t_RealDistribution *self, PyObject *arg)
-      {
-        jdouble a0;
-        jdouble result;
-
-        if (!parseArg(arg, "D", &a0))
-        {
-          OBJ_CALL(result = self->object.logDensity(a0));
-          return PyFloat_FromDouble((double) result);
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "logDensity", arg);
-        return NULL;
-      }
-
-      static PyObject *t_RealDistribution_probability(t_RealDistribution *self, PyObject *args)
-      {
-        jdouble a0;
-        jdouble a1;
-        jdouble result;
-
-        if (!parseArgs(args, "DD", &a0, &a1))
-        {
-          OBJ_CALL(result = self->object.probability(a0, a1));
-          return PyFloat_FromDouble((double) result);
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "probability", args);
-        return NULL;
-      }
-
-      static PyObject *t_RealDistribution_get__numericalMean(t_RealDistribution *self, void *data)
-      {
-        jdouble value;
-        OBJ_CALL(value = self->object.getNumericalMean());
-        return PyFloat_FromDouble((double) value);
-      }
-
-      static PyObject *t_RealDistribution_get__numericalVariance(t_RealDistribution *self, void *data)
-      {
-        jdouble value;
-        OBJ_CALL(value = self->object.getNumericalVariance());
-        return PyFloat_FromDouble((double) value);
-      }
-
-      static PyObject *t_RealDistribution_get__supportConnected(t_RealDistribution *self, void *data)
-      {
-        jboolean value;
-        OBJ_CALL(value = self->object.isSupportConnected());
-        Py_RETURN_BOOL(value);
-      }
-
-      static PyObject *t_RealDistribution_get__supportLowerBound(t_RealDistribution *self, void *data)
-      {
-        jdouble value;
-        OBJ_CALL(value = self->object.getSupportLowerBound());
-        return PyFloat_FromDouble((double) value);
-      }
-
-      static PyObject *t_RealDistribution_get__supportUpperBound(t_RealDistribution *self, void *data)
-      {
-        jdouble value;
-        OBJ_CALL(value = self->object.getSupportUpperBound());
-        return PyFloat_FromDouble((double) value);
-      }
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "org/orekit/forces/maneuvers/Maneuver.h"
-#include "org/hipparchus/geometry/euclidean/threed/FieldVector3D.h"
-#include "org/orekit/forces/ForceModel.h"
-#include "org/orekit/propagation/SpacecraftState.h"
-#include "org/orekit/propagation/numerical/TimeDerivativesEquations.h"
-#include "org/orekit/propagation/FieldSpacecraftState.h"
-#include "org/orekit/time/AbsoluteDate.h"
-#include "java/util/stream/Stream.h"
-#include "org/hipparchus/CalculusFieldElement.h"
-#include "org/orekit/utils/ParameterDriver.h"
-#include "org/orekit/time/FieldAbsoluteDate.h"
-#include "org/orekit/forces/maneuvers/propulsion/PropulsionModel.h"
-#include "org/orekit/propagation/numerical/FieldTimeDerivativesEquations.h"
-#include "org/orekit/forces/maneuvers/trigger/ManeuverTriggers.h"
-#include "org/orekit/attitudes/AttitudeProvider.h"
-#include "org/hipparchus/Field.h"
-#include "org/orekit/forces/maneuvers/Control3DVectorCostType.h"
-#include "java/lang/Class.h"
-#include "org/orekit/propagation/events/EventDetector.h"
-#include "java/lang/String.h"
-#include "org/hipparchus/geometry/euclidean/threed/Vector3D.h"
-#include "java/util/List.h"
-#include "org/orekit/propagation/events/FieldEventDetector.h"
-#include "JArray.h"
-
-namespace org {
-  namespace orekit {
-    namespace forces {
-      namespace maneuvers {
-
-        ::java::lang::Class *Maneuver::class$ = NULL;
-        jmethodID *Maneuver::mids$ = NULL;
-        bool Maneuver::live$ = false;
-
-        jclass Maneuver::initializeClass(bool getOnly)
-        {
-          if (getOnly)
-            return (jclass) (live$ ? class$->this$ : NULL);
-          if (class$ == NULL)
-          {
-            jclass cls = (jclass) env->findClass("org/orekit/forces/maneuvers/Maneuver");
-
-            mids$ = new jmethodID[max_mid];
-            mids$[mid_init$_ab0f45ba20f8bea2] = env->getMethodID(cls, "<init>", "(Lorg/orekit/attitudes/AttitudeProvider;Lorg/orekit/forces/maneuvers/trigger/ManeuverTriggers;Lorg/orekit/forces/maneuvers/propulsion/PropulsionModel;)V");
-            mids$[mid_acceleration_00aba28d3abe9a8c] = env->getMethodID(cls, "acceleration", "(Lorg/orekit/propagation/SpacecraftState;[D)Lorg/hipparchus/geometry/euclidean/threed/Vector3D;");
-            mids$[mid_acceleration_78989e44b99f7cc2] = env->getMethodID(cls, "acceleration", "(Lorg/orekit/propagation/FieldSpacecraftState;[Lorg/hipparchus/CalculusFieldElement;)Lorg/hipparchus/geometry/euclidean/threed/FieldVector3D;");
-            mids$[mid_addContribution_3ae28f2cc7cbb00b] = env->getMethodID(cls, "addContribution", "(Lorg/orekit/propagation/FieldSpacecraftState;Lorg/orekit/propagation/numerical/FieldTimeDerivativesEquations;)V");
-            mids$[mid_addContribution_170c8a5902f676b2] = env->getMethodID(cls, "addContribution", "(Lorg/orekit/propagation/SpacecraftState;Lorg/orekit/propagation/numerical/TimeDerivativesEquations;)V");
-            mids$[mid_dependsOnPositionOnly_e470b6d9e0d979db] = env->getMethodID(cls, "dependsOnPositionOnly", "()Z");
-            mids$[mid_getAttitudeOverride_5cce95036ae870ba] = env->getMethodID(cls, "getAttitudeOverride", "()Lorg/orekit/attitudes/AttitudeProvider;");
-            mids$[mid_getControl3DVectorCostType_9fb96072e0d6dbf0] = env->getMethodID(cls, "getControl3DVectorCostType", "()Lorg/orekit/forces/maneuvers/Control3DVectorCostType;");
-            mids$[mid_getEventDetectors_a68a17dd093f796d] = env->getMethodID(cls, "getEventDetectors", "()Ljava/util/stream/Stream;");
-            mids$[mid_getFieldEventDetectors_1328ddb491531a35] = env->getMethodID(cls, "getFieldEventDetectors", "(Lorg/hipparchus/Field;)Ljava/util/stream/Stream;");
-            mids$[mid_getManeuverTriggers_b6afe6b9afe270c6] = env->getMethodID(cls, "getManeuverTriggers", "()Lorg/orekit/forces/maneuvers/trigger/ManeuverTriggers;");
-            mids$[mid_getName_0090f7797e403f43] = env->getMethodID(cls, "getName", "()Ljava/lang/String;");
-            mids$[mid_getParametersDrivers_a6156df500549a58] = env->getMethodID(cls, "getParametersDrivers", "()Ljava/util/List;");
-            mids$[mid_getPropulsionModel_5d177cae411efd0d] = env->getMethodID(cls, "getPropulsionModel", "()Lorg/orekit/forces/maneuvers/propulsion/PropulsionModel;");
-            mids$[mid_init_3d13474d79f5e7bc] = env->getMethodID(cls, "init", "(Lorg/orekit/propagation/SpacecraftState;Lorg/orekit/time/AbsoluteDate;)V");
-            mids$[mid_init_acdd8180a5dc1a8d] = env->getMethodID(cls, "init", "(Lorg/orekit/propagation/FieldSpacecraftState;Lorg/orekit/time/FieldAbsoluteDate;)V");
-
-            class$ = new ::java::lang::Class(cls);
-            live$ = true;
-          }
-          return (jclass) class$->this$;
-        }
-
-        Maneuver::Maneuver(const ::org::orekit::attitudes::AttitudeProvider & a0, const ::org::orekit::forces::maneuvers::trigger::ManeuverTriggers & a1, const ::org::orekit::forces::maneuvers::propulsion::PropulsionModel & a2) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_ab0f45ba20f8bea2, a0.this$, a1.this$, a2.this$)) {}
-
-        ::org::hipparchus::geometry::euclidean::threed::Vector3D Maneuver::acceleration(const ::org::orekit::propagation::SpacecraftState & a0, const JArray< jdouble > & a1) const
-        {
-          return ::org::hipparchus::geometry::euclidean::threed::Vector3D(env->callObjectMethod(this$, mids$[mid_acceleration_00aba28d3abe9a8c], a0.this$, a1.this$));
-        }
-
-        ::org::hipparchus::geometry::euclidean::threed::FieldVector3D Maneuver::acceleration(const ::org::orekit::propagation::FieldSpacecraftState & a0, const JArray< ::org::hipparchus::CalculusFieldElement > & a1) const
-        {
-          return ::org::hipparchus::geometry::euclidean::threed::FieldVector3D(env->callObjectMethod(this$, mids$[mid_acceleration_78989e44b99f7cc2], a0.this$, a1.this$));
-        }
-
-        void Maneuver::addContribution(const ::org::orekit::propagation::FieldSpacecraftState & a0, const ::org::orekit::propagation::numerical::FieldTimeDerivativesEquations & a1) const
-        {
-          env->callVoidMethod(this$, mids$[mid_addContribution_3ae28f2cc7cbb00b], a0.this$, a1.this$);
-        }
-
-        void Maneuver::addContribution(const ::org::orekit::propagation::SpacecraftState & a0, const ::org::orekit::propagation::numerical::TimeDerivativesEquations & a1) const
-        {
-          env->callVoidMethod(this$, mids$[mid_addContribution_170c8a5902f676b2], a0.this$, a1.this$);
-        }
-
-        jboolean Maneuver::dependsOnPositionOnly() const
-        {
-          return env->callBooleanMethod(this$, mids$[mid_dependsOnPositionOnly_e470b6d9e0d979db]);
-        }
-
-        ::org::orekit::attitudes::AttitudeProvider Maneuver::getAttitudeOverride() const
-        {
-          return ::org::orekit::attitudes::AttitudeProvider(env->callObjectMethod(this$, mids$[mid_getAttitudeOverride_5cce95036ae870ba]));
-        }
-
-        ::org::orekit::forces::maneuvers::Control3DVectorCostType Maneuver::getControl3DVectorCostType() const
-        {
-          return ::org::orekit::forces::maneuvers::Control3DVectorCostType(env->callObjectMethod(this$, mids$[mid_getControl3DVectorCostType_9fb96072e0d6dbf0]));
-        }
-
-        ::java::util::stream::Stream Maneuver::getEventDetectors() const
-        {
-          return ::java::util::stream::Stream(env->callObjectMethod(this$, mids$[mid_getEventDetectors_a68a17dd093f796d]));
-        }
-
-        ::java::util::stream::Stream Maneuver::getFieldEventDetectors(const ::org::hipparchus::Field & a0) const
-        {
-          return ::java::util::stream::Stream(env->callObjectMethod(this$, mids$[mid_getFieldEventDetectors_1328ddb491531a35], a0.this$));
-        }
-
-        ::org::orekit::forces::maneuvers::trigger::ManeuverTriggers Maneuver::getManeuverTriggers() const
-        {
-          return ::org::orekit::forces::maneuvers::trigger::ManeuverTriggers(env->callObjectMethod(this$, mids$[mid_getManeuverTriggers_b6afe6b9afe270c6]));
-        }
-
-        ::java::lang::String Maneuver::getName() const
-        {
-          return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getName_0090f7797e403f43]));
-        }
-
-        ::java::util::List Maneuver::getParametersDrivers() const
-        {
-          return ::java::util::List(env->callObjectMethod(this$, mids$[mid_getParametersDrivers_a6156df500549a58]));
-        }
-
-        ::org::orekit::forces::maneuvers::propulsion::PropulsionModel Maneuver::getPropulsionModel() const
-        {
-          return ::org::orekit::forces::maneuvers::propulsion::PropulsionModel(env->callObjectMethod(this$, mids$[mid_getPropulsionModel_5d177cae411efd0d]));
-        }
-
-        void Maneuver::init(const ::org::orekit::propagation::SpacecraftState & a0, const ::org::orekit::time::AbsoluteDate & a1) const
-        {
-          env->callVoidMethod(this$, mids$[mid_init_3d13474d79f5e7bc], a0.this$, a1.this$);
-        }
-
-        void Maneuver::init(const ::org::orekit::propagation::FieldSpacecraftState & a0, const ::org::orekit::time::FieldAbsoluteDate & a1) const
-        {
-          env->callVoidMethod(this$, mids$[mid_init_acdd8180a5dc1a8d], a0.this$, a1.this$);
-        }
-      }
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace org {
-  namespace orekit {
-    namespace forces {
-      namespace maneuvers {
-        static PyObject *t_Maneuver_cast_(PyTypeObject *type, PyObject *arg);
-        static PyObject *t_Maneuver_instance_(PyTypeObject *type, PyObject *arg);
-        static int t_Maneuver_init_(t_Maneuver *self, PyObject *args, PyObject *kwds);
-        static PyObject *t_Maneuver_acceleration(t_Maneuver *self, PyObject *args);
-        static PyObject *t_Maneuver_addContribution(t_Maneuver *self, PyObject *args);
-        static PyObject *t_Maneuver_dependsOnPositionOnly(t_Maneuver *self);
-        static PyObject *t_Maneuver_getAttitudeOverride(t_Maneuver *self);
-        static PyObject *t_Maneuver_getControl3DVectorCostType(t_Maneuver *self);
-        static PyObject *t_Maneuver_getEventDetectors(t_Maneuver *self);
-        static PyObject *t_Maneuver_getFieldEventDetectors(t_Maneuver *self, PyObject *arg);
-        static PyObject *t_Maneuver_getManeuverTriggers(t_Maneuver *self);
-        static PyObject *t_Maneuver_getName(t_Maneuver *self);
-        static PyObject *t_Maneuver_getParametersDrivers(t_Maneuver *self);
-        static PyObject *t_Maneuver_getPropulsionModel(t_Maneuver *self);
-        static PyObject *t_Maneuver_init(t_Maneuver *self, PyObject *args);
-        static PyObject *t_Maneuver_get__attitudeOverride(t_Maneuver *self, void *data);
-        static PyObject *t_Maneuver_get__control3DVectorCostType(t_Maneuver *self, void *data);
-        static PyObject *t_Maneuver_get__eventDetectors(t_Maneuver *self, void *data);
-        static PyObject *t_Maneuver_get__maneuverTriggers(t_Maneuver *self, void *data);
-        static PyObject *t_Maneuver_get__name(t_Maneuver *self, void *data);
-        static PyObject *t_Maneuver_get__parametersDrivers(t_Maneuver *self, void *data);
-        static PyObject *t_Maneuver_get__propulsionModel(t_Maneuver *self, void *data);
-        static PyGetSetDef t_Maneuver__fields_[] = {
-          DECLARE_GET_FIELD(t_Maneuver, attitudeOverride),
-          DECLARE_GET_FIELD(t_Maneuver, control3DVectorCostType),
-          DECLARE_GET_FIELD(t_Maneuver, eventDetectors),
-          DECLARE_GET_FIELD(t_Maneuver, maneuverTriggers),
-          DECLARE_GET_FIELD(t_Maneuver, name),
-          DECLARE_GET_FIELD(t_Maneuver, parametersDrivers),
-          DECLARE_GET_FIELD(t_Maneuver, propulsionModel),
-          { NULL, NULL, NULL, NULL, NULL }
-        };
-
-        static PyMethodDef t_Maneuver__methods_[] = {
-          DECLARE_METHOD(t_Maneuver, cast_, METH_O | METH_CLASS),
-          DECLARE_METHOD(t_Maneuver, instance_, METH_O | METH_CLASS),
-          DECLARE_METHOD(t_Maneuver, acceleration, METH_VARARGS),
-          DECLARE_METHOD(t_Maneuver, addContribution, METH_VARARGS),
-          DECLARE_METHOD(t_Maneuver, dependsOnPositionOnly, METH_NOARGS),
-          DECLARE_METHOD(t_Maneuver, getAttitudeOverride, METH_NOARGS),
-          DECLARE_METHOD(t_Maneuver, getControl3DVectorCostType, METH_NOARGS),
-          DECLARE_METHOD(t_Maneuver, getEventDetectors, METH_NOARGS),
-          DECLARE_METHOD(t_Maneuver, getFieldEventDetectors, METH_O),
-          DECLARE_METHOD(t_Maneuver, getManeuverTriggers, METH_NOARGS),
-          DECLARE_METHOD(t_Maneuver, getName, METH_NOARGS),
-          DECLARE_METHOD(t_Maneuver, getParametersDrivers, METH_NOARGS),
-          DECLARE_METHOD(t_Maneuver, getPropulsionModel, METH_NOARGS),
-          DECLARE_METHOD(t_Maneuver, init, METH_VARARGS),
-          { NULL, NULL, 0, NULL }
-        };
-
-        static PyType_Slot PY_TYPE_SLOTS(Maneuver)[] = {
-          { Py_tp_methods, t_Maneuver__methods_ },
-          { Py_tp_init, (void *) t_Maneuver_init_ },
-          { Py_tp_getset, t_Maneuver__fields_ },
-          { 0, NULL }
-        };
-
-        static PyType_Def *PY_TYPE_BASES(Maneuver)[] = {
-          &PY_TYPE_DEF(::java::lang::Object),
-          NULL
-        };
-
-        DEFINE_TYPE(Maneuver, t_Maneuver, Maneuver);
-
-        void t_Maneuver::install(PyObject *module)
-        {
-          installType(&PY_TYPE(Maneuver), &PY_TYPE_DEF(Maneuver), module, "Maneuver", 0);
-        }
-
-        void t_Maneuver::initialize(PyObject *module)
-        {
-          PyObject_SetAttrString((PyObject *) PY_TYPE(Maneuver), "class_", make_descriptor(Maneuver::initializeClass, 1));
-          PyObject_SetAttrString((PyObject *) PY_TYPE(Maneuver), "wrapfn_", make_descriptor(t_Maneuver::wrap_jobject));
-          PyObject_SetAttrString((PyObject *) PY_TYPE(Maneuver), "boxfn_", make_descriptor(boxObject));
-        }
-
-        static PyObject *t_Maneuver_cast_(PyTypeObject *type, PyObject *arg)
-        {
-          if (!(arg = castCheck(arg, Maneuver::initializeClass, 1)))
-            return NULL;
-          return t_Maneuver::wrap_Object(Maneuver(((t_Maneuver *) arg)->object.this$));
-        }
-        static PyObject *t_Maneuver_instance_(PyTypeObject *type, PyObject *arg)
-        {
-          if (!castCheck(arg, Maneuver::initializeClass, 0))
-            Py_RETURN_FALSE;
-          Py_RETURN_TRUE;
-        }
-
-        static int t_Maneuver_init_(t_Maneuver *self, PyObject *args, PyObject *kwds)
-        {
-          ::org::orekit::attitudes::AttitudeProvider a0((jobject) NULL);
-          ::org::orekit::forces::maneuvers::trigger::ManeuverTriggers a1((jobject) NULL);
-          ::org::orekit::forces::maneuvers::propulsion::PropulsionModel a2((jobject) NULL);
-          Maneuver object((jobject) NULL);
-
-          if (!parseArgs(args, "kkk", ::org::orekit::attitudes::AttitudeProvider::initializeClass, ::org::orekit::forces::maneuvers::trigger::ManeuverTriggers::initializeClass, ::org::orekit::forces::maneuvers::propulsion::PropulsionModel::initializeClass, &a0, &a1, &a2))
-          {
-            INT_CALL(object = Maneuver(a0, a1, a2));
-            self->object = object;
-          }
-          else
-          {
-            PyErr_SetArgsError((PyObject *) self, "__init__", args);
-            return -1;
-          }
-
-          return 0;
-        }
-
-        static PyObject *t_Maneuver_acceleration(t_Maneuver *self, PyObject *args)
-        {
-          switch (PyTuple_GET_SIZE(args)) {
-           case 2:
-            {
-              ::org::orekit::propagation::FieldSpacecraftState a0((jobject) NULL);
-              PyTypeObject **p0;
-              JArray< ::org::hipparchus::CalculusFieldElement > a1((jobject) NULL);
-              PyTypeObject **p1;
-              ::org::hipparchus::geometry::euclidean::threed::FieldVector3D result((jobject) NULL);
-
-              if (!parseArgs(args, "K[K", ::org::orekit::propagation::FieldSpacecraftState::initializeClass, ::org::hipparchus::CalculusFieldElement::initializeClass, &a0, &p0, ::org::orekit::propagation::t_FieldSpacecraftState::parameters_, &a1, &p1, ::org::hipparchus::t_CalculusFieldElement::parameters_))
-              {
-                OBJ_CALL(result = self->object.acceleration(a0, a1));
-                return ::org::hipparchus::geometry::euclidean::threed::t_FieldVector3D::wrap_Object(result);
-              }
-            }
-            {
-              ::org::orekit::propagation::SpacecraftState a0((jobject) NULL);
-              JArray< jdouble > a1((jobject) NULL);
-              ::org::hipparchus::geometry::euclidean::threed::Vector3D result((jobject) NULL);
-
-              if (!parseArgs(args, "k[D", ::org::orekit::propagation::SpacecraftState::initializeClass, &a0, &a1))
-              {
-                OBJ_CALL(result = self->object.acceleration(a0, a1));
-                return ::org::hipparchus::geometry::euclidean::threed::t_Vector3D::wrap_Object(result);
-              }
-            }
-          }
-
-          PyErr_SetArgsError((PyObject *) self, "acceleration", args);
-          return NULL;
-        }
-
-        static PyObject *t_Maneuver_addContribution(t_Maneuver *self, PyObject *args)
-        {
-          switch (PyTuple_GET_SIZE(args)) {
-           case 2:
-            {
-              ::org::orekit::propagation::FieldSpacecraftState a0((jobject) NULL);
-              PyTypeObject **p0;
-              ::org::orekit::propagation::numerical::FieldTimeDerivativesEquations a1((jobject) NULL);
-              PyTypeObject **p1;
-
-              if (!parseArgs(args, "KK", ::org::orekit::propagation::FieldSpacecraftState::initializeClass, ::org::orekit::propagation::numerical::FieldTimeDerivativesEquations::initializeClass, &a0, &p0, ::org::orekit::propagation::t_FieldSpacecraftState::parameters_, &a1, &p1, ::org::orekit::propagation::numerical::t_FieldTimeDerivativesEquations::parameters_))
-              {
-                OBJ_CALL(self->object.addContribution(a0, a1));
-                Py_RETURN_NONE;
-              }
-            }
-            {
-              ::org::orekit::propagation::SpacecraftState a0((jobject) NULL);
-              ::org::orekit::propagation::numerical::TimeDerivativesEquations a1((jobject) NULL);
-
-              if (!parseArgs(args, "kk", ::org::orekit::propagation::SpacecraftState::initializeClass, ::org::orekit::propagation::numerical::TimeDerivativesEquations::initializeClass, &a0, &a1))
-              {
-                OBJ_CALL(self->object.addContribution(a0, a1));
-                Py_RETURN_NONE;
-              }
-            }
-          }
-
-          PyErr_SetArgsError((PyObject *) self, "addContribution", args);
-          return NULL;
-        }
-
-        static PyObject *t_Maneuver_dependsOnPositionOnly(t_Maneuver *self)
-        {
-          jboolean result;
-          OBJ_CALL(result = self->object.dependsOnPositionOnly());
-          Py_RETURN_BOOL(result);
-        }
-
-        static PyObject *t_Maneuver_getAttitudeOverride(t_Maneuver *self)
-        {
-          ::org::orekit::attitudes::AttitudeProvider result((jobject) NULL);
-          OBJ_CALL(result = self->object.getAttitudeOverride());
-          return ::org::orekit::attitudes::t_AttitudeProvider::wrap_Object(result);
-        }
-
-        static PyObject *t_Maneuver_getControl3DVectorCostType(t_Maneuver *self)
-        {
-          ::org::orekit::forces::maneuvers::Control3DVectorCostType result((jobject) NULL);
-          OBJ_CALL(result = self->object.getControl3DVectorCostType());
-          return ::org::orekit::forces::maneuvers::t_Control3DVectorCostType::wrap_Object(result);
-        }
-
-        static PyObject *t_Maneuver_getEventDetectors(t_Maneuver *self)
-        {
-          ::java::util::stream::Stream result((jobject) NULL);
-          OBJ_CALL(result = self->object.getEventDetectors());
-          return ::java::util::stream::t_Stream::wrap_Object(result, ::org::orekit::propagation::events::PY_TYPE(EventDetector));
-        }
-
-        static PyObject *t_Maneuver_getFieldEventDetectors(t_Maneuver *self, PyObject *arg)
-        {
-          ::org::hipparchus::Field a0((jobject) NULL);
-          PyTypeObject **p0;
-          ::java::util::stream::Stream result((jobject) NULL);
-
-          if (!parseArg(arg, "K", ::org::hipparchus::Field::initializeClass, &a0, &p0, ::org::hipparchus::t_Field::parameters_))
-          {
-            OBJ_CALL(result = self->object.getFieldEventDetectors(a0));
-            return ::java::util::stream::t_Stream::wrap_Object(result);
-          }
-
-          PyErr_SetArgsError((PyObject *) self, "getFieldEventDetectors", arg);
-          return NULL;
-        }
-
-        static PyObject *t_Maneuver_getManeuverTriggers(t_Maneuver *self)
-        {
-          ::org::orekit::forces::maneuvers::trigger::ManeuverTriggers result((jobject) NULL);
-          OBJ_CALL(result = self->object.getManeuverTriggers());
-          return ::org::orekit::forces::maneuvers::trigger::t_ManeuverTriggers::wrap_Object(result);
-        }
-
-        static PyObject *t_Maneuver_getName(t_Maneuver *self)
-        {
-          ::java::lang::String result((jobject) NULL);
-          OBJ_CALL(result = self->object.getName());
-          return j2p(result);
-        }
-
-        static PyObject *t_Maneuver_getParametersDrivers(t_Maneuver *self)
-        {
-          ::java::util::List result((jobject) NULL);
-          OBJ_CALL(result = self->object.getParametersDrivers());
-          return ::java::util::t_List::wrap_Object(result, ::org::orekit::utils::PY_TYPE(ParameterDriver));
-        }
-
-        static PyObject *t_Maneuver_getPropulsionModel(t_Maneuver *self)
-        {
-          ::org::orekit::forces::maneuvers::propulsion::PropulsionModel result((jobject) NULL);
-          OBJ_CALL(result = self->object.getPropulsionModel());
-          return ::org::orekit::forces::maneuvers::propulsion::t_PropulsionModel::wrap_Object(result);
-        }
-
-        static PyObject *t_Maneuver_init(t_Maneuver *self, PyObject *args)
-        {
-          switch (PyTuple_GET_SIZE(args)) {
-           case 2:
-            {
-              ::org::orekit::propagation::FieldSpacecraftState a0((jobject) NULL);
-              PyTypeObject **p0;
-              ::org::orekit::time::FieldAbsoluteDate a1((jobject) NULL);
-              PyTypeObject **p1;
-
-              if (!parseArgs(args, "KK", ::org::orekit::propagation::FieldSpacecraftState::initializeClass, ::org::orekit::time::FieldAbsoluteDate::initializeClass, &a0, &p0, ::org::orekit::propagation::t_FieldSpacecraftState::parameters_, &a1, &p1, ::org::orekit::time::t_FieldAbsoluteDate::parameters_))
-              {
-                OBJ_CALL(self->object.init(a0, a1));
-                Py_RETURN_NONE;
-              }
-            }
-            {
-              ::org::orekit::propagation::SpacecraftState a0((jobject) NULL);
-              ::org::orekit::time::AbsoluteDate a1((jobject) NULL);
-
-              if (!parseArgs(args, "kk", ::org::orekit::propagation::SpacecraftState::initializeClass, ::org::orekit::time::AbsoluteDate::initializeClass, &a0, &a1))
-              {
-                OBJ_CALL(self->object.init(a0, a1));
-                Py_RETURN_NONE;
-              }
-            }
-          }
-
-          PyErr_SetArgsError((PyObject *) self, "init", args);
-          return NULL;
-        }
-
-        static PyObject *t_Maneuver_get__attitudeOverride(t_Maneuver *self, void *data)
-        {
-          ::org::orekit::attitudes::AttitudeProvider value((jobject) NULL);
-          OBJ_CALL(value = self->object.getAttitudeOverride());
-          return ::org::orekit::attitudes::t_AttitudeProvider::wrap_Object(value);
-        }
-
-        static PyObject *t_Maneuver_get__control3DVectorCostType(t_Maneuver *self, void *data)
-        {
-          ::org::orekit::forces::maneuvers::Control3DVectorCostType value((jobject) NULL);
-          OBJ_CALL(value = self->object.getControl3DVectorCostType());
-          return ::org::orekit::forces::maneuvers::t_Control3DVectorCostType::wrap_Object(value);
-        }
-
-        static PyObject *t_Maneuver_get__eventDetectors(t_Maneuver *self, void *data)
-        {
-          ::java::util::stream::Stream value((jobject) NULL);
-          OBJ_CALL(value = self->object.getEventDetectors());
-          return ::java::util::stream::t_Stream::wrap_Object(value);
-        }
-
-        static PyObject *t_Maneuver_get__maneuverTriggers(t_Maneuver *self, void *data)
-        {
-          ::org::orekit::forces::maneuvers::trigger::ManeuverTriggers value((jobject) NULL);
-          OBJ_CALL(value = self->object.getManeuverTriggers());
-          return ::org::orekit::forces::maneuvers::trigger::t_ManeuverTriggers::wrap_Object(value);
-        }
-
-        static PyObject *t_Maneuver_get__name(t_Maneuver *self, void *data)
-        {
-          ::java::lang::String value((jobject) NULL);
-          OBJ_CALL(value = self->object.getName());
-          return j2p(value);
-        }
-
-        static PyObject *t_Maneuver_get__parametersDrivers(t_Maneuver *self, void *data)
-        {
-          ::java::util::List value((jobject) NULL);
-          OBJ_CALL(value = self->object.getParametersDrivers());
-          return ::java::util::t_List::wrap_Object(value);
-        }
-
-        static PyObject *t_Maneuver_get__propulsionModel(t_Maneuver *self, void *data)
-        {
-          ::org::orekit::forces::maneuvers::propulsion::PropulsionModel value((jobject) NULL);
-          OBJ_CALL(value = self->object.getPropulsionModel());
-          return ::org::orekit::forces::maneuvers::propulsion::t_PropulsionModel::wrap_Object(value);
-        }
-      }
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "org/hipparchus/util/SinCos.h"
-#include "org/hipparchus/util/SinCos.h"
-#include "java/lang/Class.h"
-#include "JArray.h"
-
-namespace org {
-  namespace hipparchus {
-    namespace util {
-
-      ::java::lang::Class *SinCos::class$ = NULL;
-      jmethodID *SinCos::mids$ = NULL;
-      bool SinCos::live$ = false;
-
-      jclass SinCos::initializeClass(bool getOnly)
-      {
-        if (getOnly)
-          return (jclass) (live$ ? class$->this$ : NULL);
-        if (class$ == NULL)
-        {
-          jclass cls = (jclass) env->findClass("org/hipparchus/util/SinCos");
-
-          mids$ = new jmethodID[max_mid];
-          mids$[mid_cos_456d9a2f64d6b28d] = env->getMethodID(cls, "cos", "()D");
-          mids$[mid_difference_0a9a7935f82730c0] = env->getStaticMethodID(cls, "difference", "(Lorg/hipparchus/util/SinCos;Lorg/hipparchus/util/SinCos;)Lorg/hipparchus/util/SinCos;");
-          mids$[mid_sin_456d9a2f64d6b28d] = env->getMethodID(cls, "sin", "()D");
-          mids$[mid_sum_0a9a7935f82730c0] = env->getStaticMethodID(cls, "sum", "(Lorg/hipparchus/util/SinCos;Lorg/hipparchus/util/SinCos;)Lorg/hipparchus/util/SinCos;");
-
-          class$ = new ::java::lang::Class(cls);
-          live$ = true;
-        }
-        return (jclass) class$->this$;
-      }
-
-      jdouble SinCos::cos() const
-      {
-        return env->callDoubleMethod(this$, mids$[mid_cos_456d9a2f64d6b28d]);
-      }
-
-      SinCos SinCos::difference(const SinCos & a0, const SinCos & a1)
-      {
-        jclass cls = env->getClass(initializeClass);
-        return SinCos(env->callStaticObjectMethod(cls, mids$[mid_difference_0a9a7935f82730c0], a0.this$, a1.this$));
-      }
-
-      jdouble SinCos::sin() const
-      {
-        return env->callDoubleMethod(this$, mids$[mid_sin_456d9a2f64d6b28d]);
-      }
-
-      SinCos SinCos::sum(const SinCos & a0, const SinCos & a1)
-      {
-        jclass cls = env->getClass(initializeClass);
-        return SinCos(env->callStaticObjectMethod(cls, mids$[mid_sum_0a9a7935f82730c0], a0.this$, a1.this$));
-      }
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace org {
-  namespace hipparchus {
-    namespace util {
-      static PyObject *t_SinCos_cast_(PyTypeObject *type, PyObject *arg);
-      static PyObject *t_SinCos_instance_(PyTypeObject *type, PyObject *arg);
-      static PyObject *t_SinCos_cos(t_SinCos *self);
-      static PyObject *t_SinCos_difference(PyTypeObject *type, PyObject *args);
-      static PyObject *t_SinCos_sin(t_SinCos *self);
-      static PyObject *t_SinCos_sum(PyTypeObject *type, PyObject *args);
-
-      static PyMethodDef t_SinCos__methods_[] = {
-        DECLARE_METHOD(t_SinCos, cast_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_SinCos, instance_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_SinCos, cos, METH_NOARGS),
-        DECLARE_METHOD(t_SinCos, difference, METH_VARARGS | METH_CLASS),
-        DECLARE_METHOD(t_SinCos, sin, METH_NOARGS),
-        DECLARE_METHOD(t_SinCos, sum, METH_VARARGS | METH_CLASS),
-        { NULL, NULL, 0, NULL }
-      };
-
-      static PyType_Slot PY_TYPE_SLOTS(SinCos)[] = {
-        { Py_tp_methods, t_SinCos__methods_ },
-        { Py_tp_init, (void *) abstract_init },
-        { 0, NULL }
-      };
-
-      static PyType_Def *PY_TYPE_BASES(SinCos)[] = {
-        &PY_TYPE_DEF(::java::lang::Object),
-        NULL
-      };
-
-      DEFINE_TYPE(SinCos, t_SinCos, SinCos);
-
-      void t_SinCos::install(PyObject *module)
-      {
-        installType(&PY_TYPE(SinCos), &PY_TYPE_DEF(SinCos), module, "SinCos", 0);
-      }
-
-      void t_SinCos::initialize(PyObject *module)
-      {
-        PyObject_SetAttrString((PyObject *) PY_TYPE(SinCos), "class_", make_descriptor(SinCos::initializeClass, 1));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(SinCos), "wrapfn_", make_descriptor(t_SinCos::wrap_jobject));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(SinCos), "boxfn_", make_descriptor(boxObject));
-      }
-
-      static PyObject *t_SinCos_cast_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!(arg = castCheck(arg, SinCos::initializeClass, 1)))
-          return NULL;
-        return t_SinCos::wrap_Object(SinCos(((t_SinCos *) arg)->object.this$));
-      }
-      static PyObject *t_SinCos_instance_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!castCheck(arg, SinCos::initializeClass, 0))
-          Py_RETURN_FALSE;
-        Py_RETURN_TRUE;
-      }
-
-      static PyObject *t_SinCos_cos(t_SinCos *self)
-      {
-        jdouble result;
-        OBJ_CALL(result = self->object.cos());
-        return PyFloat_FromDouble((double) result);
-      }
-
-      static PyObject *t_SinCos_difference(PyTypeObject *type, PyObject *args)
-      {
-        SinCos a0((jobject) NULL);
-        SinCos a1((jobject) NULL);
-        SinCos result((jobject) NULL);
-
-        if (!parseArgs(args, "kk", SinCos::initializeClass, SinCos::initializeClass, &a0, &a1))
-        {
-          OBJ_CALL(result = ::org::hipparchus::util::SinCos::difference(a0, a1));
-          return t_SinCos::wrap_Object(result);
-        }
-
-        PyErr_SetArgsError(type, "difference", args);
-        return NULL;
-      }
-
-      static PyObject *t_SinCos_sin(t_SinCos *self)
-      {
-        jdouble result;
-        OBJ_CALL(result = self->object.sin());
-        return PyFloat_FromDouble((double) result);
-      }
-
-      static PyObject *t_SinCos_sum(PyTypeObject *type, PyObject *args)
-      {
-        SinCos a0((jobject) NULL);
-        SinCos a1((jobject) NULL);
-        SinCos result((jobject) NULL);
-
-        if (!parseArgs(args, "kk", SinCos::initializeClass, SinCos::initializeClass, &a0, &a1))
-        {
-          OBJ_CALL(result = ::org::hipparchus::util::SinCos::sum(a0, a1));
-          return t_SinCos::wrap_Object(result);
-        }
-
-        PyErr_SetArgsError(type, "sum", args);
-        return NULL;
-      }
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "org/orekit/rugged/intersection/IntersectionAlgorithm.h"
-#include "org/hipparchus/geometry/euclidean/threed/Vector3D.h"
-#include "org/orekit/rugged/utils/ExtendedEllipsoid.h"
-#include "org/orekit/rugged/api/AlgorithmId.h"
-#include "org/orekit/rugged/utils/NormalizedGeodeticPoint.h"
+#include "org/orekit/files/rinex/observation/GlonassSatelliteChannel.h"
+#include "org/orekit/gnss/SatInSystem.h"
 #include "java/lang/Class.h"
 #include "JArray.h"
 
 namespace org {
   namespace orekit {
-    namespace rugged {
-      namespace intersection {
-
-        ::java::lang::Class *IntersectionAlgorithm::class$ = NULL;
-        jmethodID *IntersectionAlgorithm::mids$ = NULL;
-        bool IntersectionAlgorithm::live$ = false;
-
-        jclass IntersectionAlgorithm::initializeClass(bool getOnly)
-        {
-          if (getOnly)
-            return (jclass) (live$ ? class$->this$ : NULL);
-          if (class$ == NULL)
-          {
-            jclass cls = (jclass) env->findClass("org/orekit/rugged/intersection/IntersectionAlgorithm");
-
-            mids$ = new jmethodID[max_mid];
-            mids$[mid_getAlgorithmId_41b1271dfac9173f] = env->getMethodID(cls, "getAlgorithmId", "()Lorg/orekit/rugged/api/AlgorithmId;");
-            mids$[mid_getElevation_824133ce4aec3505] = env->getMethodID(cls, "getElevation", "(DD)D");
-            mids$[mid_intersection_465c95e4cb53bef3] = env->getMethodID(cls, "intersection", "(Lorg/orekit/rugged/utils/ExtendedEllipsoid;Lorg/hipparchus/geometry/euclidean/threed/Vector3D;Lorg/hipparchus/geometry/euclidean/threed/Vector3D;)Lorg/orekit/rugged/utils/NormalizedGeodeticPoint;");
-            mids$[mid_refineIntersection_0b100883a4ceff82] = env->getMethodID(cls, "refineIntersection", "(Lorg/orekit/rugged/utils/ExtendedEllipsoid;Lorg/hipparchus/geometry/euclidean/threed/Vector3D;Lorg/hipparchus/geometry/euclidean/threed/Vector3D;Lorg/orekit/rugged/utils/NormalizedGeodeticPoint;)Lorg/orekit/rugged/utils/NormalizedGeodeticPoint;");
-
-            class$ = new ::java::lang::Class(cls);
-            live$ = true;
-          }
-          return (jclass) class$->this$;
-        }
-
-        ::org::orekit::rugged::api::AlgorithmId IntersectionAlgorithm::getAlgorithmId() const
-        {
-          return ::org::orekit::rugged::api::AlgorithmId(env->callObjectMethod(this$, mids$[mid_getAlgorithmId_41b1271dfac9173f]));
-        }
-
-        jdouble IntersectionAlgorithm::getElevation(jdouble a0, jdouble a1) const
-        {
-          return env->callDoubleMethod(this$, mids$[mid_getElevation_824133ce4aec3505], a0, a1);
-        }
-
-        ::org::orekit::rugged::utils::NormalizedGeodeticPoint IntersectionAlgorithm::intersection(const ::org::orekit::rugged::utils::ExtendedEllipsoid & a0, const ::org::hipparchus::geometry::euclidean::threed::Vector3D & a1, const ::org::hipparchus::geometry::euclidean::threed::Vector3D & a2) const
-        {
-          return ::org::orekit::rugged::utils::NormalizedGeodeticPoint(env->callObjectMethod(this$, mids$[mid_intersection_465c95e4cb53bef3], a0.this$, a1.this$, a2.this$));
-        }
-
-        ::org::orekit::rugged::utils::NormalizedGeodeticPoint IntersectionAlgorithm::refineIntersection(const ::org::orekit::rugged::utils::ExtendedEllipsoid & a0, const ::org::hipparchus::geometry::euclidean::threed::Vector3D & a1, const ::org::hipparchus::geometry::euclidean::threed::Vector3D & a2, const ::org::orekit::rugged::utils::NormalizedGeodeticPoint & a3) const
-        {
-          return ::org::orekit::rugged::utils::NormalizedGeodeticPoint(env->callObjectMethod(this$, mids$[mid_refineIntersection_0b100883a4ceff82], a0.this$, a1.this$, a2.this$, a3.this$));
-        }
-      }
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace org {
-  namespace orekit {
-    namespace rugged {
-      namespace intersection {
-        static PyObject *t_IntersectionAlgorithm_cast_(PyTypeObject *type, PyObject *arg);
-        static PyObject *t_IntersectionAlgorithm_instance_(PyTypeObject *type, PyObject *arg);
-        static PyObject *t_IntersectionAlgorithm_getAlgorithmId(t_IntersectionAlgorithm *self);
-        static PyObject *t_IntersectionAlgorithm_getElevation(t_IntersectionAlgorithm *self, PyObject *args);
-        static PyObject *t_IntersectionAlgorithm_intersection(t_IntersectionAlgorithm *self, PyObject *args);
-        static PyObject *t_IntersectionAlgorithm_refineIntersection(t_IntersectionAlgorithm *self, PyObject *args);
-        static PyObject *t_IntersectionAlgorithm_get__algorithmId(t_IntersectionAlgorithm *self, void *data);
-        static PyGetSetDef t_IntersectionAlgorithm__fields_[] = {
-          DECLARE_GET_FIELD(t_IntersectionAlgorithm, algorithmId),
-          { NULL, NULL, NULL, NULL, NULL }
-        };
-
-        static PyMethodDef t_IntersectionAlgorithm__methods_[] = {
-          DECLARE_METHOD(t_IntersectionAlgorithm, cast_, METH_O | METH_CLASS),
-          DECLARE_METHOD(t_IntersectionAlgorithm, instance_, METH_O | METH_CLASS),
-          DECLARE_METHOD(t_IntersectionAlgorithm, getAlgorithmId, METH_NOARGS),
-          DECLARE_METHOD(t_IntersectionAlgorithm, getElevation, METH_VARARGS),
-          DECLARE_METHOD(t_IntersectionAlgorithm, intersection, METH_VARARGS),
-          DECLARE_METHOD(t_IntersectionAlgorithm, refineIntersection, METH_VARARGS),
-          { NULL, NULL, 0, NULL }
-        };
-
-        static PyType_Slot PY_TYPE_SLOTS(IntersectionAlgorithm)[] = {
-          { Py_tp_methods, t_IntersectionAlgorithm__methods_ },
-          { Py_tp_init, (void *) abstract_init },
-          { Py_tp_getset, t_IntersectionAlgorithm__fields_ },
-          { 0, NULL }
-        };
-
-        static PyType_Def *PY_TYPE_BASES(IntersectionAlgorithm)[] = {
-          &PY_TYPE_DEF(::java::lang::Object),
-          NULL
-        };
-
-        DEFINE_TYPE(IntersectionAlgorithm, t_IntersectionAlgorithm, IntersectionAlgorithm);
-
-        void t_IntersectionAlgorithm::install(PyObject *module)
-        {
-          installType(&PY_TYPE(IntersectionAlgorithm), &PY_TYPE_DEF(IntersectionAlgorithm), module, "IntersectionAlgorithm", 0);
-        }
-
-        void t_IntersectionAlgorithm::initialize(PyObject *module)
-        {
-          PyObject_SetAttrString((PyObject *) PY_TYPE(IntersectionAlgorithm), "class_", make_descriptor(IntersectionAlgorithm::initializeClass, 1));
-          PyObject_SetAttrString((PyObject *) PY_TYPE(IntersectionAlgorithm), "wrapfn_", make_descriptor(t_IntersectionAlgorithm::wrap_jobject));
-          PyObject_SetAttrString((PyObject *) PY_TYPE(IntersectionAlgorithm), "boxfn_", make_descriptor(boxObject));
-        }
-
-        static PyObject *t_IntersectionAlgorithm_cast_(PyTypeObject *type, PyObject *arg)
-        {
-          if (!(arg = castCheck(arg, IntersectionAlgorithm::initializeClass, 1)))
-            return NULL;
-          return t_IntersectionAlgorithm::wrap_Object(IntersectionAlgorithm(((t_IntersectionAlgorithm *) arg)->object.this$));
-        }
-        static PyObject *t_IntersectionAlgorithm_instance_(PyTypeObject *type, PyObject *arg)
-        {
-          if (!castCheck(arg, IntersectionAlgorithm::initializeClass, 0))
-            Py_RETURN_FALSE;
-          Py_RETURN_TRUE;
-        }
-
-        static PyObject *t_IntersectionAlgorithm_getAlgorithmId(t_IntersectionAlgorithm *self)
-        {
-          ::org::orekit::rugged::api::AlgorithmId result((jobject) NULL);
-          OBJ_CALL(result = self->object.getAlgorithmId());
-          return ::org::orekit::rugged::api::t_AlgorithmId::wrap_Object(result);
-        }
-
-        static PyObject *t_IntersectionAlgorithm_getElevation(t_IntersectionAlgorithm *self, PyObject *args)
-        {
-          jdouble a0;
-          jdouble a1;
-          jdouble result;
-
-          if (!parseArgs(args, "DD", &a0, &a1))
-          {
-            OBJ_CALL(result = self->object.getElevation(a0, a1));
-            return PyFloat_FromDouble((double) result);
-          }
-
-          PyErr_SetArgsError((PyObject *) self, "getElevation", args);
-          return NULL;
-        }
-
-        static PyObject *t_IntersectionAlgorithm_intersection(t_IntersectionAlgorithm *self, PyObject *args)
-        {
-          ::org::orekit::rugged::utils::ExtendedEllipsoid a0((jobject) NULL);
-          ::org::hipparchus::geometry::euclidean::threed::Vector3D a1((jobject) NULL);
-          ::org::hipparchus::geometry::euclidean::threed::Vector3D a2((jobject) NULL);
-          ::org::orekit::rugged::utils::NormalizedGeodeticPoint result((jobject) NULL);
-
-          if (!parseArgs(args, "kkk", ::org::orekit::rugged::utils::ExtendedEllipsoid::initializeClass, ::org::hipparchus::geometry::euclidean::threed::Vector3D::initializeClass, ::org::hipparchus::geometry::euclidean::threed::Vector3D::initializeClass, &a0, &a1, &a2))
-          {
-            OBJ_CALL(result = self->object.intersection(a0, a1, a2));
-            return ::org::orekit::rugged::utils::t_NormalizedGeodeticPoint::wrap_Object(result);
-          }
-
-          PyErr_SetArgsError((PyObject *) self, "intersection", args);
-          return NULL;
-        }
-
-        static PyObject *t_IntersectionAlgorithm_refineIntersection(t_IntersectionAlgorithm *self, PyObject *args)
-        {
-          ::org::orekit::rugged::utils::ExtendedEllipsoid a0((jobject) NULL);
-          ::org::hipparchus::geometry::euclidean::threed::Vector3D a1((jobject) NULL);
-          ::org::hipparchus::geometry::euclidean::threed::Vector3D a2((jobject) NULL);
-          ::org::orekit::rugged::utils::NormalizedGeodeticPoint a3((jobject) NULL);
-          ::org::orekit::rugged::utils::NormalizedGeodeticPoint result((jobject) NULL);
-
-          if (!parseArgs(args, "kkkk", ::org::orekit::rugged::utils::ExtendedEllipsoid::initializeClass, ::org::hipparchus::geometry::euclidean::threed::Vector3D::initializeClass, ::org::hipparchus::geometry::euclidean::threed::Vector3D::initializeClass, ::org::orekit::rugged::utils::NormalizedGeodeticPoint::initializeClass, &a0, &a1, &a2, &a3))
-          {
-            OBJ_CALL(result = self->object.refineIntersection(a0, a1, a2, a3));
-            return ::org::orekit::rugged::utils::t_NormalizedGeodeticPoint::wrap_Object(result);
-          }
-
-          PyErr_SetArgsError((PyObject *) self, "refineIntersection", args);
-          return NULL;
-        }
-
-        static PyObject *t_IntersectionAlgorithm_get__algorithmId(t_IntersectionAlgorithm *self, void *data)
-        {
-          ::org::orekit::rugged::api::AlgorithmId value((jobject) NULL);
-          OBJ_CALL(value = self->object.getAlgorithmId());
-          return ::org::orekit::rugged::api::t_AlgorithmId::wrap_Object(value);
-        }
-      }
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "org/orekit/models/earth/atmosphere/data/CssiSpaceWeatherData.h"
-#include "org/orekit/data/DataSource.h"
-#include "org/orekit/time/TimeScale.h"
-#include "org/orekit/data/DataProvidersManager.h"
-#include "org/orekit/models/earth/atmosphere/data/CssiSpaceWeatherDataLoader$LineParameters.h"
-#include "org/orekit/models/earth/atmosphere/data/CssiSpaceWeatherDataLoader.h"
-#include "java/lang/Class.h"
-#include "java/lang/String.h"
-#include "org/orekit/time/AbsoluteDate.h"
-#include "JArray.h"
-
-namespace org {
-  namespace orekit {
-    namespace models {
-      namespace earth {
-        namespace atmosphere {
-          namespace data {
-
-            ::java::lang::Class *CssiSpaceWeatherData::class$ = NULL;
-            jmethodID *CssiSpaceWeatherData::mids$ = NULL;
-            bool CssiSpaceWeatherData::live$ = false;
-            ::java::lang::String *CssiSpaceWeatherData::DEFAULT_SUPPORTED_NAMES = NULL;
-
-            jclass CssiSpaceWeatherData::initializeClass(bool getOnly)
-            {
-              if (getOnly)
-                return (jclass) (live$ ? class$->this$ : NULL);
-              if (class$ == NULL)
-              {
-                jclass cls = (jclass) env->findClass("org/orekit/models/earth/atmosphere/data/CssiSpaceWeatherData");
-
-                mids$ = new jmethodID[max_mid];
-                mids$[mid_init$_e939c6558ae8d313] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;)V");
-                mids$[mid_init$_178426610ec237d4] = env->getMethodID(cls, "<init>", "(Lorg/orekit/data/DataSource;)V");
-                mids$[mid_init$_b4e6e392672e7dfd] = env->getMethodID(cls, "<init>", "(Lorg/orekit/data/DataSource;Lorg/orekit/time/TimeScale;)V");
-                mids$[mid_init$_4782a728e14f2f6e] = env->getMethodID(cls, "<init>", "(Lorg/orekit/data/DataSource;Lorg/orekit/models/earth/atmosphere/data/CssiSpaceWeatherDataLoader;Lorg/orekit/time/TimeScale;)V");
-                mids$[mid_init$_c3298cacdeeaf7cf] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;Lorg/orekit/data/DataProvidersManager;Lorg/orekit/time/TimeScale;)V");
-                mids$[mid_init$_0cdfbdc326d8269d] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;Lorg/orekit/models/earth/atmosphere/data/CssiSpaceWeatherDataLoader;Lorg/orekit/data/DataProvidersManager;Lorg/orekit/time/TimeScale;)V");
-                mids$[mid_init$_5801c42bbd9a703a] = env->getMethodID(cls, "<init>", "(Lorg/orekit/data/DataSource;Lorg/orekit/models/earth/atmosphere/data/CssiSpaceWeatherDataLoader;Lorg/orekit/time/TimeScale;IDD)V");
-                mids$[mid_init$_cadc3689caf920c4] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;Lorg/orekit/models/earth/atmosphere/data/CssiSpaceWeatherDataLoader;Lorg/orekit/data/DataProvidersManager;Lorg/orekit/time/TimeScale;IDD)V");
-                mids$[mid_get24HoursKp_e912d21057defe63] = env->getMethodID(cls, "get24HoursKp", "(Lorg/orekit/time/AbsoluteDate;)D");
-                mids$[mid_getAp_e586dea4c0bad69b] = env->getMethodID(cls, "getAp", "(Lorg/orekit/time/AbsoluteDate;)[D");
-                mids$[mid_getAverageFlux_e912d21057defe63] = env->getMethodID(cls, "getAverageFlux", "(Lorg/orekit/time/AbsoluteDate;)D");
-                mids$[mid_getDailyFlux_e912d21057defe63] = env->getMethodID(cls, "getDailyFlux", "(Lorg/orekit/time/AbsoluteDate;)D");
-                mids$[mid_getInstantFlux_e912d21057defe63] = env->getMethodID(cls, "getInstantFlux", "(Lorg/orekit/time/AbsoluteDate;)D");
-                mids$[mid_getMeanFlux_e912d21057defe63] = env->getMethodID(cls, "getMeanFlux", "(Lorg/orekit/time/AbsoluteDate;)D");
-                mids$[mid_getThreeHourlyKP_e912d21057defe63] = env->getMethodID(cls, "getThreeHourlyKP", "(Lorg/orekit/time/AbsoluteDate;)D");
-
-                class$ = new ::java::lang::Class(cls);
-                cls = (jclass) class$->this$;
-
-                DEFAULT_SUPPORTED_NAMES = new ::java::lang::String(env->getStaticObjectField(cls, "DEFAULT_SUPPORTED_NAMES", "Ljava/lang/String;"));
-                live$ = true;
-              }
-              return (jclass) class$->this$;
-            }
-
-            CssiSpaceWeatherData::CssiSpaceWeatherData(const ::java::lang::String & a0) : ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityData(env->newObject(initializeClass, &mids$, mid_init$_e939c6558ae8d313, a0.this$)) {}
-
-            CssiSpaceWeatherData::CssiSpaceWeatherData(const ::org::orekit::data::DataSource & a0) : ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityData(env->newObject(initializeClass, &mids$, mid_init$_178426610ec237d4, a0.this$)) {}
-
-            CssiSpaceWeatherData::CssiSpaceWeatherData(const ::org::orekit::data::DataSource & a0, const ::org::orekit::time::TimeScale & a1) : ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityData(env->newObject(initializeClass, &mids$, mid_init$_b4e6e392672e7dfd, a0.this$, a1.this$)) {}
-
-            CssiSpaceWeatherData::CssiSpaceWeatherData(const ::org::orekit::data::DataSource & a0, const ::org::orekit::models::earth::atmosphere::data::CssiSpaceWeatherDataLoader & a1, const ::org::orekit::time::TimeScale & a2) : ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityData(env->newObject(initializeClass, &mids$, mid_init$_4782a728e14f2f6e, a0.this$, a1.this$, a2.this$)) {}
-
-            CssiSpaceWeatherData::CssiSpaceWeatherData(const ::java::lang::String & a0, const ::org::orekit::data::DataProvidersManager & a1, const ::org::orekit::time::TimeScale & a2) : ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityData(env->newObject(initializeClass, &mids$, mid_init$_c3298cacdeeaf7cf, a0.this$, a1.this$, a2.this$)) {}
-
-            CssiSpaceWeatherData::CssiSpaceWeatherData(const ::java::lang::String & a0, const ::org::orekit::models::earth::atmosphere::data::CssiSpaceWeatherDataLoader & a1, const ::org::orekit::data::DataProvidersManager & a2, const ::org::orekit::time::TimeScale & a3) : ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityData(env->newObject(initializeClass, &mids$, mid_init$_0cdfbdc326d8269d, a0.this$, a1.this$, a2.this$, a3.this$)) {}
-
-            CssiSpaceWeatherData::CssiSpaceWeatherData(const ::org::orekit::data::DataSource & a0, const ::org::orekit::models::earth::atmosphere::data::CssiSpaceWeatherDataLoader & a1, const ::org::orekit::time::TimeScale & a2, jint a3, jdouble a4, jdouble a5) : ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityData(env->newObject(initializeClass, &mids$, mid_init$_5801c42bbd9a703a, a0.this$, a1.this$, a2.this$, a3, a4, a5)) {}
-
-            CssiSpaceWeatherData::CssiSpaceWeatherData(const ::java::lang::String & a0, const ::org::orekit::models::earth::atmosphere::data::CssiSpaceWeatherDataLoader & a1, const ::org::orekit::data::DataProvidersManager & a2, const ::org::orekit::time::TimeScale & a3, jint a4, jdouble a5, jdouble a6) : ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityData(env->newObject(initializeClass, &mids$, mid_init$_cadc3689caf920c4, a0.this$, a1.this$, a2.this$, a3.this$, a4, a5, a6)) {}
-
-            jdouble CssiSpaceWeatherData::get24HoursKp(const ::org::orekit::time::AbsoluteDate & a0) const
-            {
-              return env->callDoubleMethod(this$, mids$[mid_get24HoursKp_e912d21057defe63], a0.this$);
-            }
-
-            JArray< jdouble > CssiSpaceWeatherData::getAp(const ::org::orekit::time::AbsoluteDate & a0) const
-            {
-              return JArray< jdouble >(env->callObjectMethod(this$, mids$[mid_getAp_e586dea4c0bad69b], a0.this$));
-            }
-
-            jdouble CssiSpaceWeatherData::getAverageFlux(const ::org::orekit::time::AbsoluteDate & a0) const
-            {
-              return env->callDoubleMethod(this$, mids$[mid_getAverageFlux_e912d21057defe63], a0.this$);
-            }
-
-            jdouble CssiSpaceWeatherData::getDailyFlux(const ::org::orekit::time::AbsoluteDate & a0) const
-            {
-              return env->callDoubleMethod(this$, mids$[mid_getDailyFlux_e912d21057defe63], a0.this$);
-            }
-
-            jdouble CssiSpaceWeatherData::getInstantFlux(const ::org::orekit::time::AbsoluteDate & a0) const
-            {
-              return env->callDoubleMethod(this$, mids$[mid_getInstantFlux_e912d21057defe63], a0.this$);
-            }
-
-            jdouble CssiSpaceWeatherData::getMeanFlux(const ::org::orekit::time::AbsoluteDate & a0) const
-            {
-              return env->callDoubleMethod(this$, mids$[mid_getMeanFlux_e912d21057defe63], a0.this$);
-            }
-
-            jdouble CssiSpaceWeatherData::getThreeHourlyKP(const ::org::orekit::time::AbsoluteDate & a0) const
-            {
-              return env->callDoubleMethod(this$, mids$[mid_getThreeHourlyKP_e912d21057defe63], a0.this$);
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace org {
-  namespace orekit {
-    namespace models {
-      namespace earth {
-        namespace atmosphere {
-          namespace data {
-            static PyObject *t_CssiSpaceWeatherData_cast_(PyTypeObject *type, PyObject *arg);
-            static PyObject *t_CssiSpaceWeatherData_instance_(PyTypeObject *type, PyObject *arg);
-            static PyObject *t_CssiSpaceWeatherData_of_(t_CssiSpaceWeatherData *self, PyObject *args);
-            static int t_CssiSpaceWeatherData_init_(t_CssiSpaceWeatherData *self, PyObject *args, PyObject *kwds);
-            static PyObject *t_CssiSpaceWeatherData_get24HoursKp(t_CssiSpaceWeatherData *self, PyObject *args);
-            static PyObject *t_CssiSpaceWeatherData_getAp(t_CssiSpaceWeatherData *self, PyObject *args);
-            static PyObject *t_CssiSpaceWeatherData_getAverageFlux(t_CssiSpaceWeatherData *self, PyObject *args);
-            static PyObject *t_CssiSpaceWeatherData_getDailyFlux(t_CssiSpaceWeatherData *self, PyObject *args);
-            static PyObject *t_CssiSpaceWeatherData_getInstantFlux(t_CssiSpaceWeatherData *self, PyObject *args);
-            static PyObject *t_CssiSpaceWeatherData_getMeanFlux(t_CssiSpaceWeatherData *self, PyObject *args);
-            static PyObject *t_CssiSpaceWeatherData_getThreeHourlyKP(t_CssiSpaceWeatherData *self, PyObject *args);
-            static PyObject *t_CssiSpaceWeatherData_get__parameters_(t_CssiSpaceWeatherData *self, void *data);
-            static PyGetSetDef t_CssiSpaceWeatherData__fields_[] = {
-              DECLARE_GET_FIELD(t_CssiSpaceWeatherData, parameters_),
-              { NULL, NULL, NULL, NULL, NULL }
-            };
-
-            static PyMethodDef t_CssiSpaceWeatherData__methods_[] = {
-              DECLARE_METHOD(t_CssiSpaceWeatherData, cast_, METH_O | METH_CLASS),
-              DECLARE_METHOD(t_CssiSpaceWeatherData, instance_, METH_O | METH_CLASS),
-              DECLARE_METHOD(t_CssiSpaceWeatherData, of_, METH_VARARGS),
-              DECLARE_METHOD(t_CssiSpaceWeatherData, get24HoursKp, METH_VARARGS),
-              DECLARE_METHOD(t_CssiSpaceWeatherData, getAp, METH_VARARGS),
-              DECLARE_METHOD(t_CssiSpaceWeatherData, getAverageFlux, METH_VARARGS),
-              DECLARE_METHOD(t_CssiSpaceWeatherData, getDailyFlux, METH_VARARGS),
-              DECLARE_METHOD(t_CssiSpaceWeatherData, getInstantFlux, METH_VARARGS),
-              DECLARE_METHOD(t_CssiSpaceWeatherData, getMeanFlux, METH_VARARGS),
-              DECLARE_METHOD(t_CssiSpaceWeatherData, getThreeHourlyKP, METH_VARARGS),
-              { NULL, NULL, 0, NULL }
-            };
-
-            static PyType_Slot PY_TYPE_SLOTS(CssiSpaceWeatherData)[] = {
-              { Py_tp_methods, t_CssiSpaceWeatherData__methods_ },
-              { Py_tp_init, (void *) t_CssiSpaceWeatherData_init_ },
-              { Py_tp_getset, t_CssiSpaceWeatherData__fields_ },
-              { 0, NULL }
-            };
-
-            static PyType_Def *PY_TYPE_BASES(CssiSpaceWeatherData)[] = {
-              &PY_TYPE_DEF(::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityData),
-              NULL
-            };
-
-            DEFINE_TYPE(CssiSpaceWeatherData, t_CssiSpaceWeatherData, CssiSpaceWeatherData);
-            PyObject *t_CssiSpaceWeatherData::wrap_Object(const CssiSpaceWeatherData& object, PyTypeObject *p0, PyTypeObject *p1)
-            {
-              PyObject *obj = t_CssiSpaceWeatherData::wrap_Object(object);
-              if (obj != NULL && obj != Py_None)
-              {
-                t_CssiSpaceWeatherData *self = (t_CssiSpaceWeatherData *) obj;
-                self->parameters[0] = p0;
-                self->parameters[1] = p1;
-              }
-              return obj;
-            }
-
-            PyObject *t_CssiSpaceWeatherData::wrap_jobject(const jobject& object, PyTypeObject *p0, PyTypeObject *p1)
-            {
-              PyObject *obj = t_CssiSpaceWeatherData::wrap_jobject(object);
-              if (obj != NULL && obj != Py_None)
-              {
-                t_CssiSpaceWeatherData *self = (t_CssiSpaceWeatherData *) obj;
-                self->parameters[0] = p0;
-                self->parameters[1] = p1;
-              }
-              return obj;
-            }
-
-            void t_CssiSpaceWeatherData::install(PyObject *module)
-            {
-              installType(&PY_TYPE(CssiSpaceWeatherData), &PY_TYPE_DEF(CssiSpaceWeatherData), module, "CssiSpaceWeatherData", 0);
-            }
-
-            void t_CssiSpaceWeatherData::initialize(PyObject *module)
-            {
-              PyObject_SetAttrString((PyObject *) PY_TYPE(CssiSpaceWeatherData), "class_", make_descriptor(CssiSpaceWeatherData::initializeClass, 1));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(CssiSpaceWeatherData), "wrapfn_", make_descriptor(t_CssiSpaceWeatherData::wrap_jobject));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(CssiSpaceWeatherData), "boxfn_", make_descriptor(boxObject));
-              env->getClass(CssiSpaceWeatherData::initializeClass);
-              PyObject_SetAttrString((PyObject *) PY_TYPE(CssiSpaceWeatherData), "DEFAULT_SUPPORTED_NAMES", make_descriptor(j2p(*CssiSpaceWeatherData::DEFAULT_SUPPORTED_NAMES)));
-            }
-
-            static PyObject *t_CssiSpaceWeatherData_cast_(PyTypeObject *type, PyObject *arg)
-            {
-              if (!(arg = castCheck(arg, CssiSpaceWeatherData::initializeClass, 1)))
-                return NULL;
-              return t_CssiSpaceWeatherData::wrap_Object(CssiSpaceWeatherData(((t_CssiSpaceWeatherData *) arg)->object.this$));
-            }
-            static PyObject *t_CssiSpaceWeatherData_instance_(PyTypeObject *type, PyObject *arg)
-            {
-              if (!castCheck(arg, CssiSpaceWeatherData::initializeClass, 0))
-                Py_RETURN_FALSE;
-              Py_RETURN_TRUE;
-            }
-
-            static PyObject *t_CssiSpaceWeatherData_of_(t_CssiSpaceWeatherData *self, PyObject *args)
-            {
-              if (!parseArg(args, "T", 2, &(self->parameters)))
-                Py_RETURN_SELF;
-              return PyErr_SetArgsError((PyObject *) self, "of_", args);
-            }
-
-            static int t_CssiSpaceWeatherData_init_(t_CssiSpaceWeatherData *self, PyObject *args, PyObject *kwds)
-            {
-              switch (PyTuple_GET_SIZE(args)) {
-               case 1:
-                {
-                  ::java::lang::String a0((jobject) NULL);
-                  CssiSpaceWeatherData object((jobject) NULL);
-
-                  if (!parseArgs(args, "s", &a0))
-                  {
-                    INT_CALL(object = CssiSpaceWeatherData(a0));
-                    self->object = object;
-                    self->parameters[0] = ::org::orekit::models::earth::atmosphere::data::PY_TYPE(CssiSpaceWeatherDataLoader$LineParameters);
-                    self->parameters[1] = ::org::orekit::models::earth::atmosphere::data::PY_TYPE(CssiSpaceWeatherDataLoader);
-                    break;
-                  }
-                }
-                {
-                  ::org::orekit::data::DataSource a0((jobject) NULL);
-                  CssiSpaceWeatherData object((jobject) NULL);
-
-                  if (!parseArgs(args, "k", ::org::orekit::data::DataSource::initializeClass, &a0))
-                  {
-                    INT_CALL(object = CssiSpaceWeatherData(a0));
-                    self->object = object;
-                    self->parameters[0] = ::org::orekit::models::earth::atmosphere::data::PY_TYPE(CssiSpaceWeatherDataLoader$LineParameters);
-                    self->parameters[1] = ::org::orekit::models::earth::atmosphere::data::PY_TYPE(CssiSpaceWeatherDataLoader);
-                    break;
-                  }
-                }
-                goto err;
-               case 2:
-                {
-                  ::org::orekit::data::DataSource a0((jobject) NULL);
-                  ::org::orekit::time::TimeScale a1((jobject) NULL);
-                  CssiSpaceWeatherData object((jobject) NULL);
-
-                  if (!parseArgs(args, "kk", ::org::orekit::data::DataSource::initializeClass, ::org::orekit::time::TimeScale::initializeClass, &a0, &a1))
-                  {
-                    INT_CALL(object = CssiSpaceWeatherData(a0, a1));
-                    self->object = object;
-                    self->parameters[0] = ::org::orekit::models::earth::atmosphere::data::PY_TYPE(CssiSpaceWeatherDataLoader$LineParameters);
-                    self->parameters[1] = ::org::orekit::models::earth::atmosphere::data::PY_TYPE(CssiSpaceWeatherDataLoader);
-                    break;
-                  }
-                }
-                goto err;
-               case 3:
-                {
-                  ::org::orekit::data::DataSource a0((jobject) NULL);
-                  ::org::orekit::models::earth::atmosphere::data::CssiSpaceWeatherDataLoader a1((jobject) NULL);
-                  PyTypeObject **p1;
-                  ::org::orekit::time::TimeScale a2((jobject) NULL);
-                  CssiSpaceWeatherData object((jobject) NULL);
-
-                  if (!parseArgs(args, "kKk", ::org::orekit::data::DataSource::initializeClass, ::org::orekit::models::earth::atmosphere::data::CssiSpaceWeatherDataLoader::initializeClass, ::org::orekit::time::TimeScale::initializeClass, &a0, &a1, &p1, ::org::orekit::models::earth::atmosphere::data::t_CssiSpaceWeatherDataLoader::parameters_, &a2))
-                  {
-                    INT_CALL(object = CssiSpaceWeatherData(a0, a1, a2));
-                    self->object = object;
-                    self->parameters[0] = ::org::orekit::models::earth::atmosphere::data::PY_TYPE(CssiSpaceWeatherDataLoader$LineParameters);
-                    self->parameters[1] = ::org::orekit::models::earth::atmosphere::data::PY_TYPE(CssiSpaceWeatherDataLoader);
-                    break;
-                  }
-                }
-                {
-                  ::java::lang::String a0((jobject) NULL);
-                  ::org::orekit::data::DataProvidersManager a1((jobject) NULL);
-                  ::org::orekit::time::TimeScale a2((jobject) NULL);
-                  CssiSpaceWeatherData object((jobject) NULL);
-
-                  if (!parseArgs(args, "skk", ::org::orekit::data::DataProvidersManager::initializeClass, ::org::orekit::time::TimeScale::initializeClass, &a0, &a1, &a2))
-                  {
-                    INT_CALL(object = CssiSpaceWeatherData(a0, a1, a2));
-                    self->object = object;
-                    self->parameters[0] = ::org::orekit::models::earth::atmosphere::data::PY_TYPE(CssiSpaceWeatherDataLoader$LineParameters);
-                    self->parameters[1] = ::org::orekit::models::earth::atmosphere::data::PY_TYPE(CssiSpaceWeatherDataLoader);
-                    break;
-                  }
-                }
-                goto err;
-               case 4:
-                {
-                  ::java::lang::String a0((jobject) NULL);
-                  ::org::orekit::models::earth::atmosphere::data::CssiSpaceWeatherDataLoader a1((jobject) NULL);
-                  PyTypeObject **p1;
-                  ::org::orekit::data::DataProvidersManager a2((jobject) NULL);
-                  ::org::orekit::time::TimeScale a3((jobject) NULL);
-                  CssiSpaceWeatherData object((jobject) NULL);
-
-                  if (!parseArgs(args, "sKkk", ::org::orekit::models::earth::atmosphere::data::CssiSpaceWeatherDataLoader::initializeClass, ::org::orekit::data::DataProvidersManager::initializeClass, ::org::orekit::time::TimeScale::initializeClass, &a0, &a1, &p1, ::org::orekit::models::earth::atmosphere::data::t_CssiSpaceWeatherDataLoader::parameters_, &a2, &a3))
-                  {
-                    INT_CALL(object = CssiSpaceWeatherData(a0, a1, a2, a3));
-                    self->object = object;
-                    self->parameters[0] = ::org::orekit::models::earth::atmosphere::data::PY_TYPE(CssiSpaceWeatherDataLoader$LineParameters);
-                    self->parameters[1] = ::org::orekit::models::earth::atmosphere::data::PY_TYPE(CssiSpaceWeatherDataLoader);
-                    break;
-                  }
-                }
-                goto err;
-               case 6:
-                {
-                  ::org::orekit::data::DataSource a0((jobject) NULL);
-                  ::org::orekit::models::earth::atmosphere::data::CssiSpaceWeatherDataLoader a1((jobject) NULL);
-                  PyTypeObject **p1;
-                  ::org::orekit::time::TimeScale a2((jobject) NULL);
-                  jint a3;
-                  jdouble a4;
-                  jdouble a5;
-                  CssiSpaceWeatherData object((jobject) NULL);
-
-                  if (!parseArgs(args, "kKkIDD", ::org::orekit::data::DataSource::initializeClass, ::org::orekit::models::earth::atmosphere::data::CssiSpaceWeatherDataLoader::initializeClass, ::org::orekit::time::TimeScale::initializeClass, &a0, &a1, &p1, ::org::orekit::models::earth::atmosphere::data::t_CssiSpaceWeatherDataLoader::parameters_, &a2, &a3, &a4, &a5))
-                  {
-                    INT_CALL(object = CssiSpaceWeatherData(a0, a1, a2, a3, a4, a5));
-                    self->object = object;
-                    self->parameters[0] = ::org::orekit::models::earth::atmosphere::data::PY_TYPE(CssiSpaceWeatherDataLoader$LineParameters);
-                    self->parameters[1] = ::org::orekit::models::earth::atmosphere::data::PY_TYPE(CssiSpaceWeatherDataLoader);
-                    break;
-                  }
-                }
-                goto err;
-               case 7:
-                {
-                  ::java::lang::String a0((jobject) NULL);
-                  ::org::orekit::models::earth::atmosphere::data::CssiSpaceWeatherDataLoader a1((jobject) NULL);
-                  PyTypeObject **p1;
-                  ::org::orekit::data::DataProvidersManager a2((jobject) NULL);
-                  ::org::orekit::time::TimeScale a3((jobject) NULL);
-                  jint a4;
-                  jdouble a5;
-                  jdouble a6;
-                  CssiSpaceWeatherData object((jobject) NULL);
-
-                  if (!parseArgs(args, "sKkkIDD", ::org::orekit::models::earth::atmosphere::data::CssiSpaceWeatherDataLoader::initializeClass, ::org::orekit::data::DataProvidersManager::initializeClass, ::org::orekit::time::TimeScale::initializeClass, &a0, &a1, &p1, ::org::orekit::models::earth::atmosphere::data::t_CssiSpaceWeatherDataLoader::parameters_, &a2, &a3, &a4, &a5, &a6))
-                  {
-                    INT_CALL(object = CssiSpaceWeatherData(a0, a1, a2, a3, a4, a5, a6));
-                    self->object = object;
-                    self->parameters[0] = ::org::orekit::models::earth::atmosphere::data::PY_TYPE(CssiSpaceWeatherDataLoader$LineParameters);
-                    self->parameters[1] = ::org::orekit::models::earth::atmosphere::data::PY_TYPE(CssiSpaceWeatherDataLoader);
-                    break;
-                  }
-                }
-               default:
-               err:
-                PyErr_SetArgsError((PyObject *) self, "__init__", args);
-                return -1;
-              }
-
-              return 0;
-            }
-
-            static PyObject *t_CssiSpaceWeatherData_get24HoursKp(t_CssiSpaceWeatherData *self, PyObject *args)
-            {
-              ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
-              jdouble result;
-
-              if (!parseArgs(args, "k", ::org::orekit::time::AbsoluteDate::initializeClass, &a0))
-              {
-                OBJ_CALL(result = self->object.get24HoursKp(a0));
-                return PyFloat_FromDouble((double) result);
-              }
-
-              return callSuper(PY_TYPE(CssiSpaceWeatherData), (PyObject *) self, "get24HoursKp", args, 2);
-            }
-
-            static PyObject *t_CssiSpaceWeatherData_getAp(t_CssiSpaceWeatherData *self, PyObject *args)
-            {
-              ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
-              JArray< jdouble > result((jobject) NULL);
-
-              if (!parseArgs(args, "k", ::org::orekit::time::AbsoluteDate::initializeClass, &a0))
-              {
-                OBJ_CALL(result = self->object.getAp(a0));
-                return result.wrap();
-              }
-
-              return callSuper(PY_TYPE(CssiSpaceWeatherData), (PyObject *) self, "getAp", args, 2);
-            }
-
-            static PyObject *t_CssiSpaceWeatherData_getAverageFlux(t_CssiSpaceWeatherData *self, PyObject *args)
-            {
-              ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
-              jdouble result;
-
-              if (!parseArgs(args, "k", ::org::orekit::time::AbsoluteDate::initializeClass, &a0))
-              {
-                OBJ_CALL(result = self->object.getAverageFlux(a0));
-                return PyFloat_FromDouble((double) result);
-              }
-
-              return callSuper(PY_TYPE(CssiSpaceWeatherData), (PyObject *) self, "getAverageFlux", args, 2);
-            }
-
-            static PyObject *t_CssiSpaceWeatherData_getDailyFlux(t_CssiSpaceWeatherData *self, PyObject *args)
-            {
-              ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
-              jdouble result;
-
-              if (!parseArgs(args, "k", ::org::orekit::time::AbsoluteDate::initializeClass, &a0))
-              {
-                OBJ_CALL(result = self->object.getDailyFlux(a0));
-                return PyFloat_FromDouble((double) result);
-              }
-
-              return callSuper(PY_TYPE(CssiSpaceWeatherData), (PyObject *) self, "getDailyFlux", args, 2);
-            }
-
-            static PyObject *t_CssiSpaceWeatherData_getInstantFlux(t_CssiSpaceWeatherData *self, PyObject *args)
-            {
-              ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
-              jdouble result;
-
-              if (!parseArgs(args, "k", ::org::orekit::time::AbsoluteDate::initializeClass, &a0))
-              {
-                OBJ_CALL(result = self->object.getInstantFlux(a0));
-                return PyFloat_FromDouble((double) result);
-              }
-
-              return callSuper(PY_TYPE(CssiSpaceWeatherData), (PyObject *) self, "getInstantFlux", args, 2);
-            }
-
-            static PyObject *t_CssiSpaceWeatherData_getMeanFlux(t_CssiSpaceWeatherData *self, PyObject *args)
-            {
-              ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
-              jdouble result;
-
-              if (!parseArgs(args, "k", ::org::orekit::time::AbsoluteDate::initializeClass, &a0))
-              {
-                OBJ_CALL(result = self->object.getMeanFlux(a0));
-                return PyFloat_FromDouble((double) result);
-              }
-
-              return callSuper(PY_TYPE(CssiSpaceWeatherData), (PyObject *) self, "getMeanFlux", args, 2);
-            }
-
-            static PyObject *t_CssiSpaceWeatherData_getThreeHourlyKP(t_CssiSpaceWeatherData *self, PyObject *args)
-            {
-              ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
-              jdouble result;
-
-              if (!parseArgs(args, "k", ::org::orekit::time::AbsoluteDate::initializeClass, &a0))
-              {
-                OBJ_CALL(result = self->object.getThreeHourlyKP(a0));
-                return PyFloat_FromDouble((double) result);
-              }
-
-              return callSuper(PY_TYPE(CssiSpaceWeatherData), (PyObject *) self, "getThreeHourlyKP", args, 2);
-            }
-            static PyObject *t_CssiSpaceWeatherData_get__parameters_(t_CssiSpaceWeatherData *self, void *data)
-            {
-              return typeParameters(self->parameters, sizeof(self->parameters));
-            }
-          }
-        }
-      }
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "org/hipparchus/random/SobolSequenceGenerator.h"
-#include "java/io/IOException.h"
-#include "java/io/InputStream.h"
-#include "org/hipparchus/exception/MathIllegalStateException.h"
-#include "org/hipparchus/exception/MathIllegalArgumentException.h"
-#include "org/hipparchus/random/RandomVectorGenerator.h"
-#include "java/lang/Class.h"
-#include "JArray.h"
-
-namespace org {
-  namespace hipparchus {
-    namespace random {
-
-      ::java::lang::Class *SobolSequenceGenerator::class$ = NULL;
-      jmethodID *SobolSequenceGenerator::mids$ = NULL;
-      bool SobolSequenceGenerator::live$ = false;
-
-      jclass SobolSequenceGenerator::initializeClass(bool getOnly)
-      {
-        if (getOnly)
-          return (jclass) (live$ ? class$->this$ : NULL);
-        if (class$ == NULL)
-        {
-          jclass cls = (jclass) env->findClass("org/hipparchus/random/SobolSequenceGenerator");
-
-          mids$ = new jmethodID[max_mid];
-          mids$[mid_init$_0a2a1ac2721c0336] = env->getMethodID(cls, "<init>", "(I)V");
-          mids$[mid_init$_c5ff11979485c1ac] = env->getMethodID(cls, "<init>", "(ILjava/io/InputStream;)V");
-          mids$[mid_getNextIndex_f2f64475e4580546] = env->getMethodID(cls, "getNextIndex", "()I");
-          mids$[mid_nextVector_7cdc325af0834901] = env->getMethodID(cls, "nextVector", "()[D");
-          mids$[mid_skipTo_eb9cceadce1b2217] = env->getMethodID(cls, "skipTo", "(I)[D");
-
-          class$ = new ::java::lang::Class(cls);
-          live$ = true;
-        }
-        return (jclass) class$->this$;
-      }
-
-      SobolSequenceGenerator::SobolSequenceGenerator(jint a0) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_0a2a1ac2721c0336, a0)) {}
-
-      SobolSequenceGenerator::SobolSequenceGenerator(jint a0, const ::java::io::InputStream & a1) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_c5ff11979485c1ac, a0, a1.this$)) {}
-
-      jint SobolSequenceGenerator::getNextIndex() const
-      {
-        return env->callIntMethod(this$, mids$[mid_getNextIndex_f2f64475e4580546]);
-      }
-
-      JArray< jdouble > SobolSequenceGenerator::nextVector() const
-      {
-        return JArray< jdouble >(env->callObjectMethod(this$, mids$[mid_nextVector_7cdc325af0834901]));
-      }
-
-      JArray< jdouble > SobolSequenceGenerator::skipTo(jint a0) const
-      {
-        return JArray< jdouble >(env->callObjectMethod(this$, mids$[mid_skipTo_eb9cceadce1b2217], a0));
-      }
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace org {
-  namespace hipparchus {
-    namespace random {
-      static PyObject *t_SobolSequenceGenerator_cast_(PyTypeObject *type, PyObject *arg);
-      static PyObject *t_SobolSequenceGenerator_instance_(PyTypeObject *type, PyObject *arg);
-      static int t_SobolSequenceGenerator_init_(t_SobolSequenceGenerator *self, PyObject *args, PyObject *kwds);
-      static PyObject *t_SobolSequenceGenerator_getNextIndex(t_SobolSequenceGenerator *self);
-      static PyObject *t_SobolSequenceGenerator_nextVector(t_SobolSequenceGenerator *self);
-      static PyObject *t_SobolSequenceGenerator_skipTo(t_SobolSequenceGenerator *self, PyObject *arg);
-      static PyObject *t_SobolSequenceGenerator_get__nextIndex(t_SobolSequenceGenerator *self, void *data);
-      static PyGetSetDef t_SobolSequenceGenerator__fields_[] = {
-        DECLARE_GET_FIELD(t_SobolSequenceGenerator, nextIndex),
-        { NULL, NULL, NULL, NULL, NULL }
-      };
-
-      static PyMethodDef t_SobolSequenceGenerator__methods_[] = {
-        DECLARE_METHOD(t_SobolSequenceGenerator, cast_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_SobolSequenceGenerator, instance_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_SobolSequenceGenerator, getNextIndex, METH_NOARGS),
-        DECLARE_METHOD(t_SobolSequenceGenerator, nextVector, METH_NOARGS),
-        DECLARE_METHOD(t_SobolSequenceGenerator, skipTo, METH_O),
-        { NULL, NULL, 0, NULL }
-      };
-
-      static PyType_Slot PY_TYPE_SLOTS(SobolSequenceGenerator)[] = {
-        { Py_tp_methods, t_SobolSequenceGenerator__methods_ },
-        { Py_tp_init, (void *) t_SobolSequenceGenerator_init_ },
-        { Py_tp_getset, t_SobolSequenceGenerator__fields_ },
-        { 0, NULL }
-      };
-
-      static PyType_Def *PY_TYPE_BASES(SobolSequenceGenerator)[] = {
-        &PY_TYPE_DEF(::java::lang::Object),
-        NULL
-      };
-
-      DEFINE_TYPE(SobolSequenceGenerator, t_SobolSequenceGenerator, SobolSequenceGenerator);
-
-      void t_SobolSequenceGenerator::install(PyObject *module)
-      {
-        installType(&PY_TYPE(SobolSequenceGenerator), &PY_TYPE_DEF(SobolSequenceGenerator), module, "SobolSequenceGenerator", 0);
-      }
-
-      void t_SobolSequenceGenerator::initialize(PyObject *module)
-      {
-        PyObject_SetAttrString((PyObject *) PY_TYPE(SobolSequenceGenerator), "class_", make_descriptor(SobolSequenceGenerator::initializeClass, 1));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(SobolSequenceGenerator), "wrapfn_", make_descriptor(t_SobolSequenceGenerator::wrap_jobject));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(SobolSequenceGenerator), "boxfn_", make_descriptor(boxObject));
-      }
-
-      static PyObject *t_SobolSequenceGenerator_cast_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!(arg = castCheck(arg, SobolSequenceGenerator::initializeClass, 1)))
-          return NULL;
-        return t_SobolSequenceGenerator::wrap_Object(SobolSequenceGenerator(((t_SobolSequenceGenerator *) arg)->object.this$));
-      }
-      static PyObject *t_SobolSequenceGenerator_instance_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!castCheck(arg, SobolSequenceGenerator::initializeClass, 0))
-          Py_RETURN_FALSE;
-        Py_RETURN_TRUE;
-      }
-
-      static int t_SobolSequenceGenerator_init_(t_SobolSequenceGenerator *self, PyObject *args, PyObject *kwds)
-      {
-        switch (PyTuple_GET_SIZE(args)) {
-         case 1:
-          {
-            jint a0;
-            SobolSequenceGenerator object((jobject) NULL);
-
-            if (!parseArgs(args, "I", &a0))
-            {
-              INT_CALL(object = SobolSequenceGenerator(a0));
-              self->object = object;
-              break;
-            }
-          }
-          goto err;
-         case 2:
-          {
-            jint a0;
-            ::java::io::InputStream a1((jobject) NULL);
-            SobolSequenceGenerator object((jobject) NULL);
-
-            if (!parseArgs(args, "Ik", ::java::io::InputStream::initializeClass, &a0, &a1))
-            {
-              INT_CALL(object = SobolSequenceGenerator(a0, a1));
-              self->object = object;
-              break;
-            }
-          }
-         default:
-         err:
-          PyErr_SetArgsError((PyObject *) self, "__init__", args);
-          return -1;
-        }
-
-        return 0;
-      }
-
-      static PyObject *t_SobolSequenceGenerator_getNextIndex(t_SobolSequenceGenerator *self)
-      {
-        jint result;
-        OBJ_CALL(result = self->object.getNextIndex());
-        return PyLong_FromLong((long) result);
-      }
-
-      static PyObject *t_SobolSequenceGenerator_nextVector(t_SobolSequenceGenerator *self)
-      {
-        JArray< jdouble > result((jobject) NULL);
-        OBJ_CALL(result = self->object.nextVector());
-        return result.wrap();
-      }
-
-      static PyObject *t_SobolSequenceGenerator_skipTo(t_SobolSequenceGenerator *self, PyObject *arg)
-      {
-        jint a0;
-        JArray< jdouble > result((jobject) NULL);
-
-        if (!parseArg(arg, "I", &a0))
-        {
-          OBJ_CALL(result = self->object.skipTo(a0));
-          return result.wrap();
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "skipTo", arg);
-        return NULL;
-      }
-
-      static PyObject *t_SobolSequenceGenerator_get__nextIndex(t_SobolSequenceGenerator *self, void *data)
-      {
-        jint value;
-        OBJ_CALL(value = self->object.getNextIndex());
-        return PyLong_FromLong((long) value);
-      }
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "org/hipparchus/analysis/TrivariateFunction.h"
-#include "java/lang/Class.h"
-#include "JArray.h"
-
-namespace org {
-  namespace hipparchus {
-    namespace analysis {
-
-      ::java::lang::Class *TrivariateFunction::class$ = NULL;
-      jmethodID *TrivariateFunction::mids$ = NULL;
-      bool TrivariateFunction::live$ = false;
-
-      jclass TrivariateFunction::initializeClass(bool getOnly)
-      {
-        if (getOnly)
-          return (jclass) (live$ ? class$->this$ : NULL);
-        if (class$ == NULL)
-        {
-          jclass cls = (jclass) env->findClass("org/hipparchus/analysis/TrivariateFunction");
-
-          mids$ = new jmethodID[max_mid];
-          mids$[mid_value_c564d6ace53a5934] = env->getMethodID(cls, "value", "(DDD)D");
-
-          class$ = new ::java::lang::Class(cls);
-          live$ = true;
-        }
-        return (jclass) class$->this$;
-      }
-
-      jdouble TrivariateFunction::value(jdouble a0, jdouble a1, jdouble a2) const
-      {
-        return env->callDoubleMethod(this$, mids$[mid_value_c564d6ace53a5934], a0, a1, a2);
-      }
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace org {
-  namespace hipparchus {
-    namespace analysis {
-      static PyObject *t_TrivariateFunction_cast_(PyTypeObject *type, PyObject *arg);
-      static PyObject *t_TrivariateFunction_instance_(PyTypeObject *type, PyObject *arg);
-      static PyObject *t_TrivariateFunction_value(t_TrivariateFunction *self, PyObject *args);
-
-      static PyMethodDef t_TrivariateFunction__methods_[] = {
-        DECLARE_METHOD(t_TrivariateFunction, cast_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_TrivariateFunction, instance_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_TrivariateFunction, value, METH_VARARGS),
-        { NULL, NULL, 0, NULL }
-      };
-
-      static PyType_Slot PY_TYPE_SLOTS(TrivariateFunction)[] = {
-        { Py_tp_methods, t_TrivariateFunction__methods_ },
-        { Py_tp_init, (void *) abstract_init },
-        { 0, NULL }
-      };
-
-      static PyType_Def *PY_TYPE_BASES(TrivariateFunction)[] = {
-        &PY_TYPE_DEF(::java::lang::Object),
-        NULL
-      };
-
-      DEFINE_TYPE(TrivariateFunction, t_TrivariateFunction, TrivariateFunction);
-
-      void t_TrivariateFunction::install(PyObject *module)
-      {
-        installType(&PY_TYPE(TrivariateFunction), &PY_TYPE_DEF(TrivariateFunction), module, "TrivariateFunction", 0);
-      }
-
-      void t_TrivariateFunction::initialize(PyObject *module)
-      {
-        PyObject_SetAttrString((PyObject *) PY_TYPE(TrivariateFunction), "class_", make_descriptor(TrivariateFunction::initializeClass, 1));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(TrivariateFunction), "wrapfn_", make_descriptor(t_TrivariateFunction::wrap_jobject));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(TrivariateFunction), "boxfn_", make_descriptor(boxObject));
-      }
-
-      static PyObject *t_TrivariateFunction_cast_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!(arg = castCheck(arg, TrivariateFunction::initializeClass, 1)))
-          return NULL;
-        return t_TrivariateFunction::wrap_Object(TrivariateFunction(((t_TrivariateFunction *) arg)->object.this$));
-      }
-      static PyObject *t_TrivariateFunction_instance_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!castCheck(arg, TrivariateFunction::initializeClass, 0))
-          Py_RETURN_FALSE;
-        Py_RETURN_TRUE;
-      }
-
-      static PyObject *t_TrivariateFunction_value(t_TrivariateFunction *self, PyObject *args)
-      {
-        jdouble a0;
-        jdouble a1;
-        jdouble a2;
-        jdouble result;
-
-        if (!parseArgs(args, "DDD", &a0, &a1, &a2))
-        {
-          OBJ_CALL(result = self->object.value(a0, a1, a2));
-          return PyFloat_FromDouble((double) result);
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "value", args);
-        return NULL;
-      }
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "org/orekit/estimation/measurements/gnss/GeometryFreeCycleSlipDetector.h"
-#include "java/lang/Class.h"
-#include "JArray.h"
-
-namespace org {
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        namespace gnss {
-
-          ::java::lang::Class *GeometryFreeCycleSlipDetector::class$ = NULL;
-          jmethodID *GeometryFreeCycleSlipDetector::mids$ = NULL;
-          bool GeometryFreeCycleSlipDetector::live$ = false;
-
-          jclass GeometryFreeCycleSlipDetector::initializeClass(bool getOnly)
+    namespace files {
+      namespace rinex {
+        namespace observation {
+
+          ::java::lang::Class *GlonassSatelliteChannel::class$ = NULL;
+          jmethodID *GlonassSatelliteChannel::mids$ = NULL;
+          bool GlonassSatelliteChannel::live$ = false;
+
+          jclass GlonassSatelliteChannel::initializeClass(bool getOnly)
           {
             if (getOnly)
               return (jclass) (live$ ? class$->this$ : NULL);
             if (class$ == NULL)
             {
-              jclass cls = (jclass) env->findClass("org/orekit/estimation/measurements/gnss/GeometryFreeCycleSlipDetector");
+              jclass cls = (jclass) env->findClass("org/orekit/files/rinex/observation/GlonassSatelliteChannel");
 
               mids$ = new jmethodID[max_mid];
-              mids$[mid_init$_b05c288d5068eccb] = env->getMethodID(cls, "<init>", "(DDI)V");
-              mids$[mid_manageData_a74883e6a7063961] = env->getMethodID(cls, "manageData", "(Lorg/orekit/files/rinex/observation/ObservationDataSet;)V");
+              mids$[mid_init$_07ee2f395c5cfb36] = env->getMethodID(cls, "<init>", "(Lorg/orekit/gnss/SatInSystem;I)V");
+              mids$[mid_getK_570ce0828f81a2c1] = env->getMethodID(cls, "getK", "()I");
+              mids$[mid_getSatellite_7c0ce8c834d2e72b] = env->getMethodID(cls, "getSatellite", "()Lorg/orekit/gnss/SatInSystem;");
 
               class$ = new ::java::lang::Class(cls);
               live$ = true;
@@ -4840,7 +4794,17 @@ namespace org {
             return (jclass) class$->this$;
           }
 
-          GeometryFreeCycleSlipDetector::GeometryFreeCycleSlipDetector(jdouble a0, jdouble a1, jint a2) : ::org::orekit::estimation::measurements::gnss::AbstractCycleSlipDetector(env->newObject(initializeClass, &mids$, mid_init$_b05c288d5068eccb, a0, a1, a2)) {}
+          GlonassSatelliteChannel::GlonassSatelliteChannel(const ::org::orekit::gnss::SatInSystem & a0, jint a1) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_07ee2f395c5cfb36, a0.this$, a1)) {}
+
+          jint GlonassSatelliteChannel::getK() const
+          {
+            return env->callIntMethod(this$, mids$[mid_getK_570ce0828f81a2c1]);
+          }
+
+          ::org::orekit::gnss::SatInSystem GlonassSatelliteChannel::getSatellite() const
+          {
+            return ::org::orekit::gnss::SatInSystem(env->callObjectMethod(this$, mids$[mid_getSatellite_7c0ce8c834d2e72b]));
+          }
         }
       }
     }
@@ -4853,67 +4817,78 @@ namespace org {
 
 namespace org {
   namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        namespace gnss {
-          static PyObject *t_GeometryFreeCycleSlipDetector_cast_(PyTypeObject *type, PyObject *arg);
-          static PyObject *t_GeometryFreeCycleSlipDetector_instance_(PyTypeObject *type, PyObject *arg);
-          static int t_GeometryFreeCycleSlipDetector_init_(t_GeometryFreeCycleSlipDetector *self, PyObject *args, PyObject *kwds);
+    namespace files {
+      namespace rinex {
+        namespace observation {
+          static PyObject *t_GlonassSatelliteChannel_cast_(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_GlonassSatelliteChannel_instance_(PyTypeObject *type, PyObject *arg);
+          static int t_GlonassSatelliteChannel_init_(t_GlonassSatelliteChannel *self, PyObject *args, PyObject *kwds);
+          static PyObject *t_GlonassSatelliteChannel_getK(t_GlonassSatelliteChannel *self);
+          static PyObject *t_GlonassSatelliteChannel_getSatellite(t_GlonassSatelliteChannel *self);
+          static PyObject *t_GlonassSatelliteChannel_get__k(t_GlonassSatelliteChannel *self, void *data);
+          static PyObject *t_GlonassSatelliteChannel_get__satellite(t_GlonassSatelliteChannel *self, void *data);
+          static PyGetSetDef t_GlonassSatelliteChannel__fields_[] = {
+            DECLARE_GET_FIELD(t_GlonassSatelliteChannel, k),
+            DECLARE_GET_FIELD(t_GlonassSatelliteChannel, satellite),
+            { NULL, NULL, NULL, NULL, NULL }
+          };
 
-          static PyMethodDef t_GeometryFreeCycleSlipDetector__methods_[] = {
-            DECLARE_METHOD(t_GeometryFreeCycleSlipDetector, cast_, METH_O | METH_CLASS),
-            DECLARE_METHOD(t_GeometryFreeCycleSlipDetector, instance_, METH_O | METH_CLASS),
+          static PyMethodDef t_GlonassSatelliteChannel__methods_[] = {
+            DECLARE_METHOD(t_GlonassSatelliteChannel, cast_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_GlonassSatelliteChannel, instance_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_GlonassSatelliteChannel, getK, METH_NOARGS),
+            DECLARE_METHOD(t_GlonassSatelliteChannel, getSatellite, METH_NOARGS),
             { NULL, NULL, 0, NULL }
           };
 
-          static PyType_Slot PY_TYPE_SLOTS(GeometryFreeCycleSlipDetector)[] = {
-            { Py_tp_methods, t_GeometryFreeCycleSlipDetector__methods_ },
-            { Py_tp_init, (void *) t_GeometryFreeCycleSlipDetector_init_ },
+          static PyType_Slot PY_TYPE_SLOTS(GlonassSatelliteChannel)[] = {
+            { Py_tp_methods, t_GlonassSatelliteChannel__methods_ },
+            { Py_tp_init, (void *) t_GlonassSatelliteChannel_init_ },
+            { Py_tp_getset, t_GlonassSatelliteChannel__fields_ },
             { 0, NULL }
           };
 
-          static PyType_Def *PY_TYPE_BASES(GeometryFreeCycleSlipDetector)[] = {
-            &PY_TYPE_DEF(::org::orekit::estimation::measurements::gnss::AbstractCycleSlipDetector),
+          static PyType_Def *PY_TYPE_BASES(GlonassSatelliteChannel)[] = {
+            &PY_TYPE_DEF(::java::lang::Object),
             NULL
           };
 
-          DEFINE_TYPE(GeometryFreeCycleSlipDetector, t_GeometryFreeCycleSlipDetector, GeometryFreeCycleSlipDetector);
+          DEFINE_TYPE(GlonassSatelliteChannel, t_GlonassSatelliteChannel, GlonassSatelliteChannel);
 
-          void t_GeometryFreeCycleSlipDetector::install(PyObject *module)
+          void t_GlonassSatelliteChannel::install(PyObject *module)
           {
-            installType(&PY_TYPE(GeometryFreeCycleSlipDetector), &PY_TYPE_DEF(GeometryFreeCycleSlipDetector), module, "GeometryFreeCycleSlipDetector", 0);
+            installType(&PY_TYPE(GlonassSatelliteChannel), &PY_TYPE_DEF(GlonassSatelliteChannel), module, "GlonassSatelliteChannel", 0);
           }
 
-          void t_GeometryFreeCycleSlipDetector::initialize(PyObject *module)
+          void t_GlonassSatelliteChannel::initialize(PyObject *module)
           {
-            PyObject_SetAttrString((PyObject *) PY_TYPE(GeometryFreeCycleSlipDetector), "class_", make_descriptor(GeometryFreeCycleSlipDetector::initializeClass, 1));
-            PyObject_SetAttrString((PyObject *) PY_TYPE(GeometryFreeCycleSlipDetector), "wrapfn_", make_descriptor(t_GeometryFreeCycleSlipDetector::wrap_jobject));
-            PyObject_SetAttrString((PyObject *) PY_TYPE(GeometryFreeCycleSlipDetector), "boxfn_", make_descriptor(boxObject));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(GlonassSatelliteChannel), "class_", make_descriptor(GlonassSatelliteChannel::initializeClass, 1));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(GlonassSatelliteChannel), "wrapfn_", make_descriptor(t_GlonassSatelliteChannel::wrap_jobject));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(GlonassSatelliteChannel), "boxfn_", make_descriptor(boxObject));
           }
 
-          static PyObject *t_GeometryFreeCycleSlipDetector_cast_(PyTypeObject *type, PyObject *arg)
+          static PyObject *t_GlonassSatelliteChannel_cast_(PyTypeObject *type, PyObject *arg)
           {
-            if (!(arg = castCheck(arg, GeometryFreeCycleSlipDetector::initializeClass, 1)))
+            if (!(arg = castCheck(arg, GlonassSatelliteChannel::initializeClass, 1)))
               return NULL;
-            return t_GeometryFreeCycleSlipDetector::wrap_Object(GeometryFreeCycleSlipDetector(((t_GeometryFreeCycleSlipDetector *) arg)->object.this$));
+            return t_GlonassSatelliteChannel::wrap_Object(GlonassSatelliteChannel(((t_GlonassSatelliteChannel *) arg)->object.this$));
           }
-          static PyObject *t_GeometryFreeCycleSlipDetector_instance_(PyTypeObject *type, PyObject *arg)
+          static PyObject *t_GlonassSatelliteChannel_instance_(PyTypeObject *type, PyObject *arg)
           {
-            if (!castCheck(arg, GeometryFreeCycleSlipDetector::initializeClass, 0))
+            if (!castCheck(arg, GlonassSatelliteChannel::initializeClass, 0))
               Py_RETURN_FALSE;
             Py_RETURN_TRUE;
           }
 
-          static int t_GeometryFreeCycleSlipDetector_init_(t_GeometryFreeCycleSlipDetector *self, PyObject *args, PyObject *kwds)
+          static int t_GlonassSatelliteChannel_init_(t_GlonassSatelliteChannel *self, PyObject *args, PyObject *kwds)
           {
-            jdouble a0;
-            jdouble a1;
-            jint a2;
-            GeometryFreeCycleSlipDetector object((jobject) NULL);
+            ::org::orekit::gnss::SatInSystem a0((jobject) NULL);
+            jint a1;
+            GlonassSatelliteChannel object((jobject) NULL);
 
-            if (!parseArgs(args, "DDI", &a0, &a1, &a2))
+            if (!parseArgs(args, "kI", ::org::orekit::gnss::SatInSystem::initializeClass, &a0, &a1))
             {
-              INT_CALL(object = GeometryFreeCycleSlipDetector(a0, a1, a2));
+              INT_CALL(object = GlonassSatelliteChannel(a0, a1));
               self->object = object;
             }
             else
@@ -4924,6 +4899,34 @@ namespace org {
 
             return 0;
           }
+
+          static PyObject *t_GlonassSatelliteChannel_getK(t_GlonassSatelliteChannel *self)
+          {
+            jint result;
+            OBJ_CALL(result = self->object.getK());
+            return PyLong_FromLong((long) result);
+          }
+
+          static PyObject *t_GlonassSatelliteChannel_getSatellite(t_GlonassSatelliteChannel *self)
+          {
+            ::org::orekit::gnss::SatInSystem result((jobject) NULL);
+            OBJ_CALL(result = self->object.getSatellite());
+            return ::org::orekit::gnss::t_SatInSystem::wrap_Object(result);
+          }
+
+          static PyObject *t_GlonassSatelliteChannel_get__k(t_GlonassSatelliteChannel *self, void *data)
+          {
+            jint value;
+            OBJ_CALL(value = self->object.getK());
+            return PyLong_FromLong((long) value);
+          }
+
+          static PyObject *t_GlonassSatelliteChannel_get__satellite(t_GlonassSatelliteChannel *self, void *data)
+          {
+            ::org::orekit::gnss::SatInSystem value((jobject) NULL);
+            OBJ_CALL(value = self->object.getSatellite());
+            return ::org::orekit::gnss::t_SatInSystem::wrap_Object(value);
+          }
         }
       }
     }
@@ -4931,46 +4934,43 @@ namespace org {
 }
 #include <jni.h>
 #include "JCCEnv.h"
-#include "org/orekit/propagation/conversion/HighamHall54IntegratorBuilder.h"
+#include "org/orekit/files/ccsds/utils/lexical/ParseToken$BooleanConsumer.h"
 #include "java/lang/Class.h"
-#include "org/orekit/orbits/Orbit.h"
-#include "org/hipparchus/ode/AbstractIntegrator.h"
-#include "org/orekit/propagation/conversion/ODEIntegratorBuilder.h"
-#include "org/orekit/orbits/OrbitType.h"
 #include "JArray.h"
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      namespace conversion {
+    namespace files {
+      namespace ccsds {
+        namespace utils {
+          namespace lexical {
 
-        ::java::lang::Class *HighamHall54IntegratorBuilder::class$ = NULL;
-        jmethodID *HighamHall54IntegratorBuilder::mids$ = NULL;
-        bool HighamHall54IntegratorBuilder::live$ = false;
+            ::java::lang::Class *ParseToken$BooleanConsumer::class$ = NULL;
+            jmethodID *ParseToken$BooleanConsumer::mids$ = NULL;
+            bool ParseToken$BooleanConsumer::live$ = false;
 
-        jclass HighamHall54IntegratorBuilder::initializeClass(bool getOnly)
-        {
-          if (getOnly)
-            return (jclass) (live$ ? class$->this$ : NULL);
-          if (class$ == NULL)
-          {
-            jclass cls = (jclass) env->findClass("org/orekit/propagation/conversion/HighamHall54IntegratorBuilder");
+            jclass ParseToken$BooleanConsumer::initializeClass(bool getOnly)
+            {
+              if (getOnly)
+                return (jclass) (live$ ? class$->this$ : NULL);
+              if (class$ == NULL)
+              {
+                jclass cls = (jclass) env->findClass("org/orekit/files/ccsds/utils/lexical/ParseToken$BooleanConsumer");
 
-            mids$ = new jmethodID[max_mid];
-            mids$[mid_init$_d0d6094fbd7015c5] = env->getMethodID(cls, "<init>", "(DDD)V");
-            mids$[mid_buildIntegrator_501b0015ccc7d54e] = env->getMethodID(cls, "buildIntegrator", "(Lorg/orekit/orbits/Orbit;Lorg/orekit/orbits/OrbitType;)Lorg/hipparchus/ode/AbstractIntegrator;");
+                mids$ = new jmethodID[max_mid];
+                mids$[mid_accept_bd04c9335fb9e4cf] = env->getMethodID(cls, "accept", "(Z)V");
 
-            class$ = new ::java::lang::Class(cls);
-            live$ = true;
+                class$ = new ::java::lang::Class(cls);
+                live$ = true;
+              }
+              return (jclass) class$->this$;
+            }
+
+            void ParseToken$BooleanConsumer::accept(jboolean a0) const
+            {
+              env->callVoidMethod(this$, mids$[mid_accept_bd04c9335fb9e4cf], a0);
+            }
           }
-          return (jclass) class$->this$;
-        }
-
-        HighamHall54IntegratorBuilder::HighamHall54IntegratorBuilder(jdouble a0, jdouble a1, jdouble a2) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_d0d6094fbd7015c5, a0, a1, a2)) {}
-
-        ::org::hipparchus::ode::AbstractIntegrator HighamHall54IntegratorBuilder::buildIntegrator(const ::org::orekit::orbits::Orbit & a0, const ::org::orekit::orbits::OrbitType & a1) const
-        {
-          return ::org::hipparchus::ode::AbstractIntegrator(env->callObjectMethod(this$, mids$[mid_buildIntegrator_501b0015ccc7d54e], a0.this$, a1.this$));
         }
       }
     }
@@ -4983,94 +4983,73 @@ namespace org {
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      namespace conversion {
-        static PyObject *t_HighamHall54IntegratorBuilder_cast_(PyTypeObject *type, PyObject *arg);
-        static PyObject *t_HighamHall54IntegratorBuilder_instance_(PyTypeObject *type, PyObject *arg);
-        static int t_HighamHall54IntegratorBuilder_init_(t_HighamHall54IntegratorBuilder *self, PyObject *args, PyObject *kwds);
-        static PyObject *t_HighamHall54IntegratorBuilder_buildIntegrator(t_HighamHall54IntegratorBuilder *self, PyObject *args);
+    namespace files {
+      namespace ccsds {
+        namespace utils {
+          namespace lexical {
+            static PyObject *t_ParseToken$BooleanConsumer_cast_(PyTypeObject *type, PyObject *arg);
+            static PyObject *t_ParseToken$BooleanConsumer_instance_(PyTypeObject *type, PyObject *arg);
+            static PyObject *t_ParseToken$BooleanConsumer_accept(t_ParseToken$BooleanConsumer *self, PyObject *arg);
 
-        static PyMethodDef t_HighamHall54IntegratorBuilder__methods_[] = {
-          DECLARE_METHOD(t_HighamHall54IntegratorBuilder, cast_, METH_O | METH_CLASS),
-          DECLARE_METHOD(t_HighamHall54IntegratorBuilder, instance_, METH_O | METH_CLASS),
-          DECLARE_METHOD(t_HighamHall54IntegratorBuilder, buildIntegrator, METH_VARARGS),
-          { NULL, NULL, 0, NULL }
-        };
+            static PyMethodDef t_ParseToken$BooleanConsumer__methods_[] = {
+              DECLARE_METHOD(t_ParseToken$BooleanConsumer, cast_, METH_O | METH_CLASS),
+              DECLARE_METHOD(t_ParseToken$BooleanConsumer, instance_, METH_O | METH_CLASS),
+              DECLARE_METHOD(t_ParseToken$BooleanConsumer, accept, METH_O),
+              { NULL, NULL, 0, NULL }
+            };
 
-        static PyType_Slot PY_TYPE_SLOTS(HighamHall54IntegratorBuilder)[] = {
-          { Py_tp_methods, t_HighamHall54IntegratorBuilder__methods_ },
-          { Py_tp_init, (void *) t_HighamHall54IntegratorBuilder_init_ },
-          { 0, NULL }
-        };
+            static PyType_Slot PY_TYPE_SLOTS(ParseToken$BooleanConsumer)[] = {
+              { Py_tp_methods, t_ParseToken$BooleanConsumer__methods_ },
+              { Py_tp_init, (void *) abstract_init },
+              { 0, NULL }
+            };
 
-        static PyType_Def *PY_TYPE_BASES(HighamHall54IntegratorBuilder)[] = {
-          &PY_TYPE_DEF(::java::lang::Object),
-          NULL
-        };
+            static PyType_Def *PY_TYPE_BASES(ParseToken$BooleanConsumer)[] = {
+              &PY_TYPE_DEF(::java::lang::Object),
+              NULL
+            };
 
-        DEFINE_TYPE(HighamHall54IntegratorBuilder, t_HighamHall54IntegratorBuilder, HighamHall54IntegratorBuilder);
+            DEFINE_TYPE(ParseToken$BooleanConsumer, t_ParseToken$BooleanConsumer, ParseToken$BooleanConsumer);
 
-        void t_HighamHall54IntegratorBuilder::install(PyObject *module)
-        {
-          installType(&PY_TYPE(HighamHall54IntegratorBuilder), &PY_TYPE_DEF(HighamHall54IntegratorBuilder), module, "HighamHall54IntegratorBuilder", 0);
-        }
+            void t_ParseToken$BooleanConsumer::install(PyObject *module)
+            {
+              installType(&PY_TYPE(ParseToken$BooleanConsumer), &PY_TYPE_DEF(ParseToken$BooleanConsumer), module, "ParseToken$BooleanConsumer", 0);
+            }
 
-        void t_HighamHall54IntegratorBuilder::initialize(PyObject *module)
-        {
-          PyObject_SetAttrString((PyObject *) PY_TYPE(HighamHall54IntegratorBuilder), "class_", make_descriptor(HighamHall54IntegratorBuilder::initializeClass, 1));
-          PyObject_SetAttrString((PyObject *) PY_TYPE(HighamHall54IntegratorBuilder), "wrapfn_", make_descriptor(t_HighamHall54IntegratorBuilder::wrap_jobject));
-          PyObject_SetAttrString((PyObject *) PY_TYPE(HighamHall54IntegratorBuilder), "boxfn_", make_descriptor(boxObject));
-        }
+            void t_ParseToken$BooleanConsumer::initialize(PyObject *module)
+            {
+              PyObject_SetAttrString((PyObject *) PY_TYPE(ParseToken$BooleanConsumer), "class_", make_descriptor(ParseToken$BooleanConsumer::initializeClass, 1));
+              PyObject_SetAttrString((PyObject *) PY_TYPE(ParseToken$BooleanConsumer), "wrapfn_", make_descriptor(t_ParseToken$BooleanConsumer::wrap_jobject));
+              PyObject_SetAttrString((PyObject *) PY_TYPE(ParseToken$BooleanConsumer), "boxfn_", make_descriptor(boxObject));
+            }
 
-        static PyObject *t_HighamHall54IntegratorBuilder_cast_(PyTypeObject *type, PyObject *arg)
-        {
-          if (!(arg = castCheck(arg, HighamHall54IntegratorBuilder::initializeClass, 1)))
-            return NULL;
-          return t_HighamHall54IntegratorBuilder::wrap_Object(HighamHall54IntegratorBuilder(((t_HighamHall54IntegratorBuilder *) arg)->object.this$));
-        }
-        static PyObject *t_HighamHall54IntegratorBuilder_instance_(PyTypeObject *type, PyObject *arg)
-        {
-          if (!castCheck(arg, HighamHall54IntegratorBuilder::initializeClass, 0))
-            Py_RETURN_FALSE;
-          Py_RETURN_TRUE;
-        }
+            static PyObject *t_ParseToken$BooleanConsumer_cast_(PyTypeObject *type, PyObject *arg)
+            {
+              if (!(arg = castCheck(arg, ParseToken$BooleanConsumer::initializeClass, 1)))
+                return NULL;
+              return t_ParseToken$BooleanConsumer::wrap_Object(ParseToken$BooleanConsumer(((t_ParseToken$BooleanConsumer *) arg)->object.this$));
+            }
+            static PyObject *t_ParseToken$BooleanConsumer_instance_(PyTypeObject *type, PyObject *arg)
+            {
+              if (!castCheck(arg, ParseToken$BooleanConsumer::initializeClass, 0))
+                Py_RETURN_FALSE;
+              Py_RETURN_TRUE;
+            }
 
-        static int t_HighamHall54IntegratorBuilder_init_(t_HighamHall54IntegratorBuilder *self, PyObject *args, PyObject *kwds)
-        {
-          jdouble a0;
-          jdouble a1;
-          jdouble a2;
-          HighamHall54IntegratorBuilder object((jobject) NULL);
+            static PyObject *t_ParseToken$BooleanConsumer_accept(t_ParseToken$BooleanConsumer *self, PyObject *arg)
+            {
+              jboolean a0;
 
-          if (!parseArgs(args, "DDD", &a0, &a1, &a2))
-          {
-            INT_CALL(object = HighamHall54IntegratorBuilder(a0, a1, a2));
-            self->object = object;
+              if (!parseArg(arg, "Z", &a0))
+              {
+                OBJ_CALL(self->object.accept(a0));
+                Py_RETURN_NONE;
+              }
+
+              PyErr_SetArgsError((PyObject *) self, "accept", arg);
+              return NULL;
+            }
           }
-          else
-          {
-            PyErr_SetArgsError((PyObject *) self, "__init__", args);
-            return -1;
-          }
-
-          return 0;
-        }
-
-        static PyObject *t_HighamHall54IntegratorBuilder_buildIntegrator(t_HighamHall54IntegratorBuilder *self, PyObject *args)
-        {
-          ::org::orekit::orbits::Orbit a0((jobject) NULL);
-          ::org::orekit::orbits::OrbitType a1((jobject) NULL);
-          PyTypeObject **p1;
-          ::org::hipparchus::ode::AbstractIntegrator result((jobject) NULL);
-
-          if (!parseArgs(args, "kK", ::org::orekit::orbits::Orbit::initializeClass, ::org::orekit::orbits::OrbitType::initializeClass, &a0, &a1, &p1, ::org::orekit::orbits::t_OrbitType::parameters_))
-          {
-            OBJ_CALL(result = self->object.buildIntegrator(a0, a1));
-            return ::org::hipparchus::ode::t_AbstractIntegrator::wrap_Object(result);
-          }
-
-          PyErr_SetArgsError((PyObject *) self, "buildIntegrator", args);
-          return NULL;
         }
       }
     }
@@ -5078,51 +5057,33 @@ namespace org {
 }
 #include <jni.h>
 #include "JCCEnv.h"
-#include "org/hipparchus/linear/RealVectorFormat.h"
-#include "org/hipparchus/linear/RealVector.h"
-#include "java/lang/StringBuffer.h"
-#include "java/util/Locale.h"
+#include "org/orekit/utils/AggregatedPVCoordinatesProvider$InvalidPVProvider.h"
+#include "org/orekit/frames/Frame.h"
+#include "org/orekit/utils/PVCoordinatesProvider.h"
+#include "org/orekit/time/AbsoluteDate.h"
 #include "java/lang/Class.h"
-#include "java/text/FieldPosition.h"
-#include "java/text/ParsePosition.h"
-#include "org/hipparchus/linear/RealVectorFormat.h"
-#include "java/lang/String.h"
-#include "java/text/NumberFormat.h"
-#include "org/hipparchus/linear/ArrayRealVector.h"
+#include "org/orekit/utils/TimeStampedPVCoordinates.h"
 #include "JArray.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace linear {
+  namespace orekit {
+    namespace utils {
 
-      ::java::lang::Class *RealVectorFormat::class$ = NULL;
-      jmethodID *RealVectorFormat::mids$ = NULL;
-      bool RealVectorFormat::live$ = false;
+      ::java::lang::Class *AggregatedPVCoordinatesProvider$InvalidPVProvider::class$ = NULL;
+      jmethodID *AggregatedPVCoordinatesProvider$InvalidPVProvider::mids$ = NULL;
+      bool AggregatedPVCoordinatesProvider$InvalidPVProvider::live$ = false;
 
-      jclass RealVectorFormat::initializeClass(bool getOnly)
+      jclass AggregatedPVCoordinatesProvider$InvalidPVProvider::initializeClass(bool getOnly)
       {
         if (getOnly)
           return (jclass) (live$ ? class$->this$ : NULL);
         if (class$ == NULL)
         {
-          jclass cls = (jclass) env->findClass("org/hipparchus/linear/RealVectorFormat");
+          jclass cls = (jclass) env->findClass("org/orekit/utils/AggregatedPVCoordinatesProvider$InvalidPVProvider");
 
           mids$ = new jmethodID[max_mid];
-          mids$[mid_init$_7ae3461a92a43152] = env->getMethodID(cls, "<init>", "()V");
-          mids$[mid_init$_695a782f9c7823f6] = env->getMethodID(cls, "<init>", "(Ljava/text/NumberFormat;)V");
-          mids$[mid_init$_de8316969b81209c] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V");
-          mids$[mid_init$_3420ce131d6f9e7d] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/text/NumberFormat;)V");
-          mids$[mid_format_459b23c8344eb314] = env->getMethodID(cls, "format", "(Lorg/hipparchus/linear/RealVector;)Ljava/lang/String;");
-          mids$[mid_format_bf0c14f894c2e4a2] = env->getMethodID(cls, "format", "(Lorg/hipparchus/linear/RealVector;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;");
-          mids$[mid_getAvailableLocales_81e8fdf65840780c] = env->getStaticMethodID(cls, "getAvailableLocales", "()[Ljava/util/Locale;");
-          mids$[mid_getFormat_d34e2e8dd35583a0] = env->getMethodID(cls, "getFormat", "()Ljava/text/NumberFormat;");
-          mids$[mid_getPrefix_0090f7797e403f43] = env->getMethodID(cls, "getPrefix", "()Ljava/lang/String;");
-          mids$[mid_getRealVectorFormat_6c214984d05c94b5] = env->getStaticMethodID(cls, "getRealVectorFormat", "()Lorg/hipparchus/linear/RealVectorFormat;");
-          mids$[mid_getRealVectorFormat_adc9672f20fe85f0] = env->getStaticMethodID(cls, "getRealVectorFormat", "(Ljava/util/Locale;)Lorg/hipparchus/linear/RealVectorFormat;");
-          mids$[mid_getSeparator_0090f7797e403f43] = env->getMethodID(cls, "getSeparator", "()Ljava/lang/String;");
-          mids$[mid_getSuffix_0090f7797e403f43] = env->getMethodID(cls, "getSuffix", "()Ljava/lang/String;");
-          mids$[mid_parse_10d2a9948714ddd3] = env->getMethodID(cls, "parse", "(Ljava/lang/String;)Lorg/hipparchus/linear/ArrayRealVector;");
-          mids$[mid_parse_7861297daafe2b42] = env->getMethodID(cls, "parse", "(Ljava/lang/String;Ljava/text/ParsePosition;)Lorg/hipparchus/linear/ArrayRealVector;");
+          mids$[mid_init$_0fa09c18fee449d5] = env->getMethodID(cls, "<init>", "()V");
+          mids$[mid_getPVCoordinates_cfeec55f7c63ec64] = env->getMethodID(cls, "getPVCoordinates", "(Lorg/orekit/time/AbsoluteDate;Lorg/orekit/frames/Frame;)Lorg/orekit/utils/TimeStampedPVCoordinates;");
 
           class$ = new ::java::lang::Class(cls);
           live$ = true;
@@ -5130,70 +5091,823 @@ namespace org {
         return (jclass) class$->this$;
       }
 
-      RealVectorFormat::RealVectorFormat() : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_7ae3461a92a43152)) {}
+      AggregatedPVCoordinatesProvider$InvalidPVProvider::AggregatedPVCoordinatesProvider$InvalidPVProvider() : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_0fa09c18fee449d5)) {}
 
-      RealVectorFormat::RealVectorFormat(const ::java::text::NumberFormat & a0) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_695a782f9c7823f6, a0.this$)) {}
-
-      RealVectorFormat::RealVectorFormat(const ::java::lang::String & a0, const ::java::lang::String & a1, const ::java::lang::String & a2) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_de8316969b81209c, a0.this$, a1.this$, a2.this$)) {}
-
-      RealVectorFormat::RealVectorFormat(const ::java::lang::String & a0, const ::java::lang::String & a1, const ::java::lang::String & a2, const ::java::text::NumberFormat & a3) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_3420ce131d6f9e7d, a0.this$, a1.this$, a2.this$, a3.this$)) {}
-
-      ::java::lang::String RealVectorFormat::format(const ::org::hipparchus::linear::RealVector & a0) const
+      ::org::orekit::utils::TimeStampedPVCoordinates AggregatedPVCoordinatesProvider$InvalidPVProvider::getPVCoordinates(const ::org::orekit::time::AbsoluteDate & a0, const ::org::orekit::frames::Frame & a1) const
       {
-        return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_format_459b23c8344eb314], a0.this$));
+        return ::org::orekit::utils::TimeStampedPVCoordinates(env->callObjectMethod(this$, mids$[mid_getPVCoordinates_cfeec55f7c63ec64], a0.this$, a1.this$));
+      }
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace org {
+  namespace orekit {
+    namespace utils {
+      static PyObject *t_AggregatedPVCoordinatesProvider$InvalidPVProvider_cast_(PyTypeObject *type, PyObject *arg);
+      static PyObject *t_AggregatedPVCoordinatesProvider$InvalidPVProvider_instance_(PyTypeObject *type, PyObject *arg);
+      static int t_AggregatedPVCoordinatesProvider$InvalidPVProvider_init_(t_AggregatedPVCoordinatesProvider$InvalidPVProvider *self, PyObject *args, PyObject *kwds);
+      static PyObject *t_AggregatedPVCoordinatesProvider$InvalidPVProvider_getPVCoordinates(t_AggregatedPVCoordinatesProvider$InvalidPVProvider *self, PyObject *args);
+
+      static PyMethodDef t_AggregatedPVCoordinatesProvider$InvalidPVProvider__methods_[] = {
+        DECLARE_METHOD(t_AggregatedPVCoordinatesProvider$InvalidPVProvider, cast_, METH_O | METH_CLASS),
+        DECLARE_METHOD(t_AggregatedPVCoordinatesProvider$InvalidPVProvider, instance_, METH_O | METH_CLASS),
+        DECLARE_METHOD(t_AggregatedPVCoordinatesProvider$InvalidPVProvider, getPVCoordinates, METH_VARARGS),
+        { NULL, NULL, 0, NULL }
+      };
+
+      static PyType_Slot PY_TYPE_SLOTS(AggregatedPVCoordinatesProvider$InvalidPVProvider)[] = {
+        { Py_tp_methods, t_AggregatedPVCoordinatesProvider$InvalidPVProvider__methods_ },
+        { Py_tp_init, (void *) t_AggregatedPVCoordinatesProvider$InvalidPVProvider_init_ },
+        { 0, NULL }
+      };
+
+      static PyType_Def *PY_TYPE_BASES(AggregatedPVCoordinatesProvider$InvalidPVProvider)[] = {
+        &PY_TYPE_DEF(::java::lang::Object),
+        NULL
+      };
+
+      DEFINE_TYPE(AggregatedPVCoordinatesProvider$InvalidPVProvider, t_AggregatedPVCoordinatesProvider$InvalidPVProvider, AggregatedPVCoordinatesProvider$InvalidPVProvider);
+
+      void t_AggregatedPVCoordinatesProvider$InvalidPVProvider::install(PyObject *module)
+      {
+        installType(&PY_TYPE(AggregatedPVCoordinatesProvider$InvalidPVProvider), &PY_TYPE_DEF(AggregatedPVCoordinatesProvider$InvalidPVProvider), module, "AggregatedPVCoordinatesProvider$InvalidPVProvider", 0);
       }
 
-      ::java::lang::StringBuffer RealVectorFormat::format(const ::org::hipparchus::linear::RealVector & a0, const ::java::lang::StringBuffer & a1, const ::java::text::FieldPosition & a2) const
+      void t_AggregatedPVCoordinatesProvider$InvalidPVProvider::initialize(PyObject *module)
       {
-        return ::java::lang::StringBuffer(env->callObjectMethod(this$, mids$[mid_format_bf0c14f894c2e4a2], a0.this$, a1.this$, a2.this$));
+        PyObject_SetAttrString((PyObject *) PY_TYPE(AggregatedPVCoordinatesProvider$InvalidPVProvider), "class_", make_descriptor(AggregatedPVCoordinatesProvider$InvalidPVProvider::initializeClass, 1));
+        PyObject_SetAttrString((PyObject *) PY_TYPE(AggregatedPVCoordinatesProvider$InvalidPVProvider), "wrapfn_", make_descriptor(t_AggregatedPVCoordinatesProvider$InvalidPVProvider::wrap_jobject));
+        PyObject_SetAttrString((PyObject *) PY_TYPE(AggregatedPVCoordinatesProvider$InvalidPVProvider), "boxfn_", make_descriptor(boxObject));
       }
 
-      JArray< ::java::util::Locale > RealVectorFormat::getAvailableLocales()
+      static PyObject *t_AggregatedPVCoordinatesProvider$InvalidPVProvider_cast_(PyTypeObject *type, PyObject *arg)
       {
-        jclass cls = env->getClass(initializeClass);
-        return JArray< ::java::util::Locale >(env->callStaticObjectMethod(cls, mids$[mid_getAvailableLocales_81e8fdf65840780c]));
+        if (!(arg = castCheck(arg, AggregatedPVCoordinatesProvider$InvalidPVProvider::initializeClass, 1)))
+          return NULL;
+        return t_AggregatedPVCoordinatesProvider$InvalidPVProvider::wrap_Object(AggregatedPVCoordinatesProvider$InvalidPVProvider(((t_AggregatedPVCoordinatesProvider$InvalidPVProvider *) arg)->object.this$));
+      }
+      static PyObject *t_AggregatedPVCoordinatesProvider$InvalidPVProvider_instance_(PyTypeObject *type, PyObject *arg)
+      {
+        if (!castCheck(arg, AggregatedPVCoordinatesProvider$InvalidPVProvider::initializeClass, 0))
+          Py_RETURN_FALSE;
+        Py_RETURN_TRUE;
       }
 
-      ::java::text::NumberFormat RealVectorFormat::getFormat() const
+      static int t_AggregatedPVCoordinatesProvider$InvalidPVProvider_init_(t_AggregatedPVCoordinatesProvider$InvalidPVProvider *self, PyObject *args, PyObject *kwds)
       {
-        return ::java::text::NumberFormat(env->callObjectMethod(this$, mids$[mid_getFormat_d34e2e8dd35583a0]));
+        AggregatedPVCoordinatesProvider$InvalidPVProvider object((jobject) NULL);
+
+        INT_CALL(object = AggregatedPVCoordinatesProvider$InvalidPVProvider());
+        self->object = object;
+
+        return 0;
       }
 
-      ::java::lang::String RealVectorFormat::getPrefix() const
+      static PyObject *t_AggregatedPVCoordinatesProvider$InvalidPVProvider_getPVCoordinates(t_AggregatedPVCoordinatesProvider$InvalidPVProvider *self, PyObject *args)
       {
-        return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getPrefix_0090f7797e403f43]));
+        ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
+        ::org::orekit::frames::Frame a1((jobject) NULL);
+        ::org::orekit::utils::TimeStampedPVCoordinates result((jobject) NULL);
+
+        if (!parseArgs(args, "kk", ::org::orekit::time::AbsoluteDate::initializeClass, ::org::orekit::frames::Frame::initializeClass, &a0, &a1))
+        {
+          OBJ_CALL(result = self->object.getPVCoordinates(a0, a1));
+          return ::org::orekit::utils::t_TimeStampedPVCoordinates::wrap_Object(result);
+        }
+
+        PyErr_SetArgsError((PyObject *) self, "getPVCoordinates", args);
+        return NULL;
+      }
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "org/orekit/bodies/GeodeticPoint.h"
+#include "java/io/Serializable.h"
+#include "java/lang/Class.h"
+#include "org/hipparchus/geometry/euclidean/threed/Vector3D.h"
+#include "org/orekit/bodies/GeodeticPoint.h"
+#include "java/lang/String.h"
+#include "JArray.h"
+
+namespace org {
+  namespace orekit {
+    namespace bodies {
+
+      ::java::lang::Class *GeodeticPoint::class$ = NULL;
+      jmethodID *GeodeticPoint::mids$ = NULL;
+      bool GeodeticPoint::live$ = false;
+      GeodeticPoint *GeodeticPoint::NORTH_POLE = NULL;
+      GeodeticPoint *GeodeticPoint::SOUTH_POLE = NULL;
+
+      jclass GeodeticPoint::initializeClass(bool getOnly)
+      {
+        if (getOnly)
+          return (jclass) (live$ ? class$->this$ : NULL);
+        if (class$ == NULL)
+        {
+          jclass cls = (jclass) env->findClass("org/orekit/bodies/GeodeticPoint");
+
+          mids$ = new jmethodID[max_mid];
+          mids$[mid_init$_2c56b6dd4d4b1dec] = env->getMethodID(cls, "<init>", "(DDD)V");
+          mids$[mid_equals_65c7d273e80d497a] = env->getMethodID(cls, "equals", "(Ljava/lang/Object;)Z");
+          mids$[mid_getAltitude_dff5885c2c873297] = env->getMethodID(cls, "getAltitude", "()D");
+          mids$[mid_getEast_d52645e0d4c07563] = env->getMethodID(cls, "getEast", "()Lorg/hipparchus/geometry/euclidean/threed/Vector3D;");
+          mids$[mid_getLatitude_dff5885c2c873297] = env->getMethodID(cls, "getLatitude", "()D");
+          mids$[mid_getLongitude_dff5885c2c873297] = env->getMethodID(cls, "getLongitude", "()D");
+          mids$[mid_getNadir_d52645e0d4c07563] = env->getMethodID(cls, "getNadir", "()Lorg/hipparchus/geometry/euclidean/threed/Vector3D;");
+          mids$[mid_getNorth_d52645e0d4c07563] = env->getMethodID(cls, "getNorth", "()Lorg/hipparchus/geometry/euclidean/threed/Vector3D;");
+          mids$[mid_getSouth_d52645e0d4c07563] = env->getMethodID(cls, "getSouth", "()Lorg/hipparchus/geometry/euclidean/threed/Vector3D;");
+          mids$[mid_getWest_d52645e0d4c07563] = env->getMethodID(cls, "getWest", "()Lorg/hipparchus/geometry/euclidean/threed/Vector3D;");
+          mids$[mid_getZenith_d52645e0d4c07563] = env->getMethodID(cls, "getZenith", "()Lorg/hipparchus/geometry/euclidean/threed/Vector3D;");
+          mids$[mid_hashCode_570ce0828f81a2c1] = env->getMethodID(cls, "hashCode", "()I");
+          mids$[mid_toString_11b109bd155ca898] = env->getMethodID(cls, "toString", "()Ljava/lang/String;");
+
+          class$ = new ::java::lang::Class(cls);
+          cls = (jclass) class$->this$;
+
+          NORTH_POLE = new GeodeticPoint(env->getStaticObjectField(cls, "NORTH_POLE", "Lorg/orekit/bodies/GeodeticPoint;"));
+          SOUTH_POLE = new GeodeticPoint(env->getStaticObjectField(cls, "SOUTH_POLE", "Lorg/orekit/bodies/GeodeticPoint;"));
+          live$ = true;
+        }
+        return (jclass) class$->this$;
       }
 
-      RealVectorFormat RealVectorFormat::getRealVectorFormat()
+      GeodeticPoint::GeodeticPoint(jdouble a0, jdouble a1, jdouble a2) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_2c56b6dd4d4b1dec, a0, a1, a2)) {}
+
+      jboolean GeodeticPoint::equals(const ::java::lang::Object & a0) const
       {
-        jclass cls = env->getClass(initializeClass);
-        return RealVectorFormat(env->callStaticObjectMethod(cls, mids$[mid_getRealVectorFormat_6c214984d05c94b5]));
+        return env->callBooleanMethod(this$, mids$[mid_equals_65c7d273e80d497a], a0.this$);
       }
 
-      RealVectorFormat RealVectorFormat::getRealVectorFormat(const ::java::util::Locale & a0)
+      jdouble GeodeticPoint::getAltitude() const
       {
-        jclass cls = env->getClass(initializeClass);
-        return RealVectorFormat(env->callStaticObjectMethod(cls, mids$[mid_getRealVectorFormat_adc9672f20fe85f0], a0.this$));
+        return env->callDoubleMethod(this$, mids$[mid_getAltitude_dff5885c2c873297]);
       }
 
-      ::java::lang::String RealVectorFormat::getSeparator() const
+      ::org::hipparchus::geometry::euclidean::threed::Vector3D GeodeticPoint::getEast() const
       {
-        return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getSeparator_0090f7797e403f43]));
+        return ::org::hipparchus::geometry::euclidean::threed::Vector3D(env->callObjectMethod(this$, mids$[mid_getEast_d52645e0d4c07563]));
       }
 
-      ::java::lang::String RealVectorFormat::getSuffix() const
+      jdouble GeodeticPoint::getLatitude() const
       {
-        return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getSuffix_0090f7797e403f43]));
+        return env->callDoubleMethod(this$, mids$[mid_getLatitude_dff5885c2c873297]);
       }
 
-      ::org::hipparchus::linear::ArrayRealVector RealVectorFormat::parse(const ::java::lang::String & a0) const
+      jdouble GeodeticPoint::getLongitude() const
       {
-        return ::org::hipparchus::linear::ArrayRealVector(env->callObjectMethod(this$, mids$[mid_parse_10d2a9948714ddd3], a0.this$));
+        return env->callDoubleMethod(this$, mids$[mid_getLongitude_dff5885c2c873297]);
       }
 
-      ::org::hipparchus::linear::ArrayRealVector RealVectorFormat::parse(const ::java::lang::String & a0, const ::java::text::ParsePosition & a1) const
+      ::org::hipparchus::geometry::euclidean::threed::Vector3D GeodeticPoint::getNadir() const
       {
-        return ::org::hipparchus::linear::ArrayRealVector(env->callObjectMethod(this$, mids$[mid_parse_7861297daafe2b42], a0.this$, a1.this$));
+        return ::org::hipparchus::geometry::euclidean::threed::Vector3D(env->callObjectMethod(this$, mids$[mid_getNadir_d52645e0d4c07563]));
+      }
+
+      ::org::hipparchus::geometry::euclidean::threed::Vector3D GeodeticPoint::getNorth() const
+      {
+        return ::org::hipparchus::geometry::euclidean::threed::Vector3D(env->callObjectMethod(this$, mids$[mid_getNorth_d52645e0d4c07563]));
+      }
+
+      ::org::hipparchus::geometry::euclidean::threed::Vector3D GeodeticPoint::getSouth() const
+      {
+        return ::org::hipparchus::geometry::euclidean::threed::Vector3D(env->callObjectMethod(this$, mids$[mid_getSouth_d52645e0d4c07563]));
+      }
+
+      ::org::hipparchus::geometry::euclidean::threed::Vector3D GeodeticPoint::getWest() const
+      {
+        return ::org::hipparchus::geometry::euclidean::threed::Vector3D(env->callObjectMethod(this$, mids$[mid_getWest_d52645e0d4c07563]));
+      }
+
+      ::org::hipparchus::geometry::euclidean::threed::Vector3D GeodeticPoint::getZenith() const
+      {
+        return ::org::hipparchus::geometry::euclidean::threed::Vector3D(env->callObjectMethod(this$, mids$[mid_getZenith_d52645e0d4c07563]));
+      }
+
+      jint GeodeticPoint::hashCode() const
+      {
+        return env->callIntMethod(this$, mids$[mid_hashCode_570ce0828f81a2c1]);
+      }
+
+      ::java::lang::String GeodeticPoint::toString() const
+      {
+        return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_toString_11b109bd155ca898]));
+      }
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace org {
+  namespace orekit {
+    namespace bodies {
+      static PyObject *t_GeodeticPoint_cast_(PyTypeObject *type, PyObject *arg);
+      static PyObject *t_GeodeticPoint_instance_(PyTypeObject *type, PyObject *arg);
+      static int t_GeodeticPoint_init_(t_GeodeticPoint *self, PyObject *args, PyObject *kwds);
+      static PyObject *t_GeodeticPoint_equals(t_GeodeticPoint *self, PyObject *args);
+      static PyObject *t_GeodeticPoint_getAltitude(t_GeodeticPoint *self);
+      static PyObject *t_GeodeticPoint_getEast(t_GeodeticPoint *self);
+      static PyObject *t_GeodeticPoint_getLatitude(t_GeodeticPoint *self);
+      static PyObject *t_GeodeticPoint_getLongitude(t_GeodeticPoint *self);
+      static PyObject *t_GeodeticPoint_getNadir(t_GeodeticPoint *self);
+      static PyObject *t_GeodeticPoint_getNorth(t_GeodeticPoint *self);
+      static PyObject *t_GeodeticPoint_getSouth(t_GeodeticPoint *self);
+      static PyObject *t_GeodeticPoint_getWest(t_GeodeticPoint *self);
+      static PyObject *t_GeodeticPoint_getZenith(t_GeodeticPoint *self);
+      static PyObject *t_GeodeticPoint_hashCode(t_GeodeticPoint *self, PyObject *args);
+      static PyObject *t_GeodeticPoint_toString(t_GeodeticPoint *self, PyObject *args);
+      static PyObject *t_GeodeticPoint_get__altitude(t_GeodeticPoint *self, void *data);
+      static PyObject *t_GeodeticPoint_get__east(t_GeodeticPoint *self, void *data);
+      static PyObject *t_GeodeticPoint_get__latitude(t_GeodeticPoint *self, void *data);
+      static PyObject *t_GeodeticPoint_get__longitude(t_GeodeticPoint *self, void *data);
+      static PyObject *t_GeodeticPoint_get__nadir(t_GeodeticPoint *self, void *data);
+      static PyObject *t_GeodeticPoint_get__north(t_GeodeticPoint *self, void *data);
+      static PyObject *t_GeodeticPoint_get__south(t_GeodeticPoint *self, void *data);
+      static PyObject *t_GeodeticPoint_get__west(t_GeodeticPoint *self, void *data);
+      static PyObject *t_GeodeticPoint_get__zenith(t_GeodeticPoint *self, void *data);
+      static PyGetSetDef t_GeodeticPoint__fields_[] = {
+        DECLARE_GET_FIELD(t_GeodeticPoint, altitude),
+        DECLARE_GET_FIELD(t_GeodeticPoint, east),
+        DECLARE_GET_FIELD(t_GeodeticPoint, latitude),
+        DECLARE_GET_FIELD(t_GeodeticPoint, longitude),
+        DECLARE_GET_FIELD(t_GeodeticPoint, nadir),
+        DECLARE_GET_FIELD(t_GeodeticPoint, north),
+        DECLARE_GET_FIELD(t_GeodeticPoint, south),
+        DECLARE_GET_FIELD(t_GeodeticPoint, west),
+        DECLARE_GET_FIELD(t_GeodeticPoint, zenith),
+        { NULL, NULL, NULL, NULL, NULL }
+      };
+
+      static PyMethodDef t_GeodeticPoint__methods_[] = {
+        DECLARE_METHOD(t_GeodeticPoint, cast_, METH_O | METH_CLASS),
+        DECLARE_METHOD(t_GeodeticPoint, instance_, METH_O | METH_CLASS),
+        DECLARE_METHOD(t_GeodeticPoint, equals, METH_VARARGS),
+        DECLARE_METHOD(t_GeodeticPoint, getAltitude, METH_NOARGS),
+        DECLARE_METHOD(t_GeodeticPoint, getEast, METH_NOARGS),
+        DECLARE_METHOD(t_GeodeticPoint, getLatitude, METH_NOARGS),
+        DECLARE_METHOD(t_GeodeticPoint, getLongitude, METH_NOARGS),
+        DECLARE_METHOD(t_GeodeticPoint, getNadir, METH_NOARGS),
+        DECLARE_METHOD(t_GeodeticPoint, getNorth, METH_NOARGS),
+        DECLARE_METHOD(t_GeodeticPoint, getSouth, METH_NOARGS),
+        DECLARE_METHOD(t_GeodeticPoint, getWest, METH_NOARGS),
+        DECLARE_METHOD(t_GeodeticPoint, getZenith, METH_NOARGS),
+        DECLARE_METHOD(t_GeodeticPoint, hashCode, METH_VARARGS),
+        DECLARE_METHOD(t_GeodeticPoint, toString, METH_VARARGS),
+        { NULL, NULL, 0, NULL }
+      };
+
+      static PyType_Slot PY_TYPE_SLOTS(GeodeticPoint)[] = {
+        { Py_tp_methods, t_GeodeticPoint__methods_ },
+        { Py_tp_init, (void *) t_GeodeticPoint_init_ },
+        { Py_tp_getset, t_GeodeticPoint__fields_ },
+        { 0, NULL }
+      };
+
+      static PyType_Def *PY_TYPE_BASES(GeodeticPoint)[] = {
+        &PY_TYPE_DEF(::java::lang::Object),
+        NULL
+      };
+
+      DEFINE_TYPE(GeodeticPoint, t_GeodeticPoint, GeodeticPoint);
+
+      void t_GeodeticPoint::install(PyObject *module)
+      {
+        installType(&PY_TYPE(GeodeticPoint), &PY_TYPE_DEF(GeodeticPoint), module, "GeodeticPoint", 0);
+      }
+
+      void t_GeodeticPoint::initialize(PyObject *module)
+      {
+        PyObject_SetAttrString((PyObject *) PY_TYPE(GeodeticPoint), "class_", make_descriptor(GeodeticPoint::initializeClass, 1));
+        PyObject_SetAttrString((PyObject *) PY_TYPE(GeodeticPoint), "wrapfn_", make_descriptor(t_GeodeticPoint::wrap_jobject));
+        PyObject_SetAttrString((PyObject *) PY_TYPE(GeodeticPoint), "boxfn_", make_descriptor(boxObject));
+        env->getClass(GeodeticPoint::initializeClass);
+        PyObject_SetAttrString((PyObject *) PY_TYPE(GeodeticPoint), "NORTH_POLE", make_descriptor(t_GeodeticPoint::wrap_Object(*GeodeticPoint::NORTH_POLE)));
+        PyObject_SetAttrString((PyObject *) PY_TYPE(GeodeticPoint), "SOUTH_POLE", make_descriptor(t_GeodeticPoint::wrap_Object(*GeodeticPoint::SOUTH_POLE)));
+      }
+
+      static PyObject *t_GeodeticPoint_cast_(PyTypeObject *type, PyObject *arg)
+      {
+        if (!(arg = castCheck(arg, GeodeticPoint::initializeClass, 1)))
+          return NULL;
+        return t_GeodeticPoint::wrap_Object(GeodeticPoint(((t_GeodeticPoint *) arg)->object.this$));
+      }
+      static PyObject *t_GeodeticPoint_instance_(PyTypeObject *type, PyObject *arg)
+      {
+        if (!castCheck(arg, GeodeticPoint::initializeClass, 0))
+          Py_RETURN_FALSE;
+        Py_RETURN_TRUE;
+      }
+
+      static int t_GeodeticPoint_init_(t_GeodeticPoint *self, PyObject *args, PyObject *kwds)
+      {
+        jdouble a0;
+        jdouble a1;
+        jdouble a2;
+        GeodeticPoint object((jobject) NULL);
+
+        if (!parseArgs(args, "DDD", &a0, &a1, &a2))
+        {
+          INT_CALL(object = GeodeticPoint(a0, a1, a2));
+          self->object = object;
+        }
+        else
+        {
+          PyErr_SetArgsError((PyObject *) self, "__init__", args);
+          return -1;
+        }
+
+        return 0;
+      }
+
+      static PyObject *t_GeodeticPoint_equals(t_GeodeticPoint *self, PyObject *args)
+      {
+        ::java::lang::Object a0((jobject) NULL);
+        jboolean result;
+
+        if (!parseArgs(args, "o", &a0))
+        {
+          OBJ_CALL(result = self->object.equals(a0));
+          Py_RETURN_BOOL(result);
+        }
+
+        return callSuper(PY_TYPE(GeodeticPoint), (PyObject *) self, "equals", args, 2);
+      }
+
+      static PyObject *t_GeodeticPoint_getAltitude(t_GeodeticPoint *self)
+      {
+        jdouble result;
+        OBJ_CALL(result = self->object.getAltitude());
+        return PyFloat_FromDouble((double) result);
+      }
+
+      static PyObject *t_GeodeticPoint_getEast(t_GeodeticPoint *self)
+      {
+        ::org::hipparchus::geometry::euclidean::threed::Vector3D result((jobject) NULL);
+        OBJ_CALL(result = self->object.getEast());
+        return ::org::hipparchus::geometry::euclidean::threed::t_Vector3D::wrap_Object(result);
+      }
+
+      static PyObject *t_GeodeticPoint_getLatitude(t_GeodeticPoint *self)
+      {
+        jdouble result;
+        OBJ_CALL(result = self->object.getLatitude());
+        return PyFloat_FromDouble((double) result);
+      }
+
+      static PyObject *t_GeodeticPoint_getLongitude(t_GeodeticPoint *self)
+      {
+        jdouble result;
+        OBJ_CALL(result = self->object.getLongitude());
+        return PyFloat_FromDouble((double) result);
+      }
+
+      static PyObject *t_GeodeticPoint_getNadir(t_GeodeticPoint *self)
+      {
+        ::org::hipparchus::geometry::euclidean::threed::Vector3D result((jobject) NULL);
+        OBJ_CALL(result = self->object.getNadir());
+        return ::org::hipparchus::geometry::euclidean::threed::t_Vector3D::wrap_Object(result);
+      }
+
+      static PyObject *t_GeodeticPoint_getNorth(t_GeodeticPoint *self)
+      {
+        ::org::hipparchus::geometry::euclidean::threed::Vector3D result((jobject) NULL);
+        OBJ_CALL(result = self->object.getNorth());
+        return ::org::hipparchus::geometry::euclidean::threed::t_Vector3D::wrap_Object(result);
+      }
+
+      static PyObject *t_GeodeticPoint_getSouth(t_GeodeticPoint *self)
+      {
+        ::org::hipparchus::geometry::euclidean::threed::Vector3D result((jobject) NULL);
+        OBJ_CALL(result = self->object.getSouth());
+        return ::org::hipparchus::geometry::euclidean::threed::t_Vector3D::wrap_Object(result);
+      }
+
+      static PyObject *t_GeodeticPoint_getWest(t_GeodeticPoint *self)
+      {
+        ::org::hipparchus::geometry::euclidean::threed::Vector3D result((jobject) NULL);
+        OBJ_CALL(result = self->object.getWest());
+        return ::org::hipparchus::geometry::euclidean::threed::t_Vector3D::wrap_Object(result);
+      }
+
+      static PyObject *t_GeodeticPoint_getZenith(t_GeodeticPoint *self)
+      {
+        ::org::hipparchus::geometry::euclidean::threed::Vector3D result((jobject) NULL);
+        OBJ_CALL(result = self->object.getZenith());
+        return ::org::hipparchus::geometry::euclidean::threed::t_Vector3D::wrap_Object(result);
+      }
+
+      static PyObject *t_GeodeticPoint_hashCode(t_GeodeticPoint *self, PyObject *args)
+      {
+        jint result;
+
+        if (!parseArgs(args, ""))
+        {
+          OBJ_CALL(result = self->object.hashCode());
+          return PyLong_FromLong((long) result);
+        }
+
+        return callSuper(PY_TYPE(GeodeticPoint), (PyObject *) self, "hashCode", args, 2);
+      }
+
+      static PyObject *t_GeodeticPoint_toString(t_GeodeticPoint *self, PyObject *args)
+      {
+        ::java::lang::String result((jobject) NULL);
+
+        if (!parseArgs(args, ""))
+        {
+          OBJ_CALL(result = self->object.toString());
+          return j2p(result);
+        }
+
+        return callSuper(PY_TYPE(GeodeticPoint), (PyObject *) self, "toString", args, 2);
+      }
+
+      static PyObject *t_GeodeticPoint_get__altitude(t_GeodeticPoint *self, void *data)
+      {
+        jdouble value;
+        OBJ_CALL(value = self->object.getAltitude());
+        return PyFloat_FromDouble((double) value);
+      }
+
+      static PyObject *t_GeodeticPoint_get__east(t_GeodeticPoint *self, void *data)
+      {
+        ::org::hipparchus::geometry::euclidean::threed::Vector3D value((jobject) NULL);
+        OBJ_CALL(value = self->object.getEast());
+        return ::org::hipparchus::geometry::euclidean::threed::t_Vector3D::wrap_Object(value);
+      }
+
+      static PyObject *t_GeodeticPoint_get__latitude(t_GeodeticPoint *self, void *data)
+      {
+        jdouble value;
+        OBJ_CALL(value = self->object.getLatitude());
+        return PyFloat_FromDouble((double) value);
+      }
+
+      static PyObject *t_GeodeticPoint_get__longitude(t_GeodeticPoint *self, void *data)
+      {
+        jdouble value;
+        OBJ_CALL(value = self->object.getLongitude());
+        return PyFloat_FromDouble((double) value);
+      }
+
+      static PyObject *t_GeodeticPoint_get__nadir(t_GeodeticPoint *self, void *data)
+      {
+        ::org::hipparchus::geometry::euclidean::threed::Vector3D value((jobject) NULL);
+        OBJ_CALL(value = self->object.getNadir());
+        return ::org::hipparchus::geometry::euclidean::threed::t_Vector3D::wrap_Object(value);
+      }
+
+      static PyObject *t_GeodeticPoint_get__north(t_GeodeticPoint *self, void *data)
+      {
+        ::org::hipparchus::geometry::euclidean::threed::Vector3D value((jobject) NULL);
+        OBJ_CALL(value = self->object.getNorth());
+        return ::org::hipparchus::geometry::euclidean::threed::t_Vector3D::wrap_Object(value);
+      }
+
+      static PyObject *t_GeodeticPoint_get__south(t_GeodeticPoint *self, void *data)
+      {
+        ::org::hipparchus::geometry::euclidean::threed::Vector3D value((jobject) NULL);
+        OBJ_CALL(value = self->object.getSouth());
+        return ::org::hipparchus::geometry::euclidean::threed::t_Vector3D::wrap_Object(value);
+      }
+
+      static PyObject *t_GeodeticPoint_get__west(t_GeodeticPoint *self, void *data)
+      {
+        ::org::hipparchus::geometry::euclidean::threed::Vector3D value((jobject) NULL);
+        OBJ_CALL(value = self->object.getWest());
+        return ::org::hipparchus::geometry::euclidean::threed::t_Vector3D::wrap_Object(value);
+      }
+
+      static PyObject *t_GeodeticPoint_get__zenith(t_GeodeticPoint *self, void *data)
+      {
+        ::org::hipparchus::geometry::euclidean::threed::Vector3D value((jobject) NULL);
+        OBJ_CALL(value = self->object.getZenith());
+        return ::org::hipparchus::geometry::euclidean::threed::t_Vector3D::wrap_Object(value);
+      }
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "org/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadataKey.h"
+#include "org/orekit/files/ccsds/utils/lexical/ParseToken.h"
+#include "org/orekit/files/ccsds/utils/ContextBinding.h"
+#include "org/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadata.h"
+#include "java/lang/Class.h"
+#include "org/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadataKey.h"
+#include "java/lang/String.h"
+#include "JArray.h"
+
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace ccsds {
+        namespace ndm {
+          namespace odm {
+            namespace ocm {
+
+              ::java::lang::Class *OrbitCovarianceHistoryMetadataKey::class$ = NULL;
+              jmethodID *OrbitCovarianceHistoryMetadataKey::mids$ = NULL;
+              bool OrbitCovarianceHistoryMetadataKey::live$ = false;
+              OrbitCovarianceHistoryMetadataKey *OrbitCovarianceHistoryMetadataKey::COMMENT = NULL;
+              OrbitCovarianceHistoryMetadataKey *OrbitCovarianceHistoryMetadataKey::COV_BASIS = NULL;
+              OrbitCovarianceHistoryMetadataKey *OrbitCovarianceHistoryMetadataKey::COV_BASIS_ID = NULL;
+              OrbitCovarianceHistoryMetadataKey *OrbitCovarianceHistoryMetadataKey::COV_CONFIDENCE = NULL;
+              OrbitCovarianceHistoryMetadataKey *OrbitCovarianceHistoryMetadataKey::COV_FRAME_EPOCH = NULL;
+              OrbitCovarianceHistoryMetadataKey *OrbitCovarianceHistoryMetadataKey::COV_ID = NULL;
+              OrbitCovarianceHistoryMetadataKey *OrbitCovarianceHistoryMetadataKey::COV_NEXT_ID = NULL;
+              OrbitCovarianceHistoryMetadataKey *OrbitCovarianceHistoryMetadataKey::COV_ORDERING = NULL;
+              OrbitCovarianceHistoryMetadataKey *OrbitCovarianceHistoryMetadataKey::COV_PREV_ID = NULL;
+              OrbitCovarianceHistoryMetadataKey *OrbitCovarianceHistoryMetadataKey::COV_REF_FRAME = NULL;
+              OrbitCovarianceHistoryMetadataKey *OrbitCovarianceHistoryMetadataKey::COV_SCALE_MAX = NULL;
+              OrbitCovarianceHistoryMetadataKey *OrbitCovarianceHistoryMetadataKey::COV_SCALE_MIN = NULL;
+              OrbitCovarianceHistoryMetadataKey *OrbitCovarianceHistoryMetadataKey::COV_TYPE = NULL;
+              OrbitCovarianceHistoryMetadataKey *OrbitCovarianceHistoryMetadataKey::COV_UNITS = NULL;
+
+              jclass OrbitCovarianceHistoryMetadataKey::initializeClass(bool getOnly)
+              {
+                if (getOnly)
+                  return (jclass) (live$ ? class$->this$ : NULL);
+                if (class$ == NULL)
+                {
+                  jclass cls = (jclass) env->findClass("org/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadataKey");
+
+                  mids$ = new jmethodID[max_mid];
+                  mids$[mid_process_138c68d2746c1c8e] = env->getMethodID(cls, "process", "(Lorg/orekit/files/ccsds/utils/lexical/ParseToken;Lorg/orekit/files/ccsds/utils/ContextBinding;Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadata;)Z");
+                  mids$[mid_valueOf_45008e387ae525fc] = env->getStaticMethodID(cls, "valueOf", "(Ljava/lang/String;)Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadataKey;");
+                  mids$[mid_values_279f60f4984908a7] = env->getStaticMethodID(cls, "values", "()[Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadataKey;");
+
+                  class$ = new ::java::lang::Class(cls);
+                  cls = (jclass) class$->this$;
+
+                  COMMENT = new OrbitCovarianceHistoryMetadataKey(env->getStaticObjectField(cls, "COMMENT", "Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadataKey;"));
+                  COV_BASIS = new OrbitCovarianceHistoryMetadataKey(env->getStaticObjectField(cls, "COV_BASIS", "Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadataKey;"));
+                  COV_BASIS_ID = new OrbitCovarianceHistoryMetadataKey(env->getStaticObjectField(cls, "COV_BASIS_ID", "Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadataKey;"));
+                  COV_CONFIDENCE = new OrbitCovarianceHistoryMetadataKey(env->getStaticObjectField(cls, "COV_CONFIDENCE", "Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadataKey;"));
+                  COV_FRAME_EPOCH = new OrbitCovarianceHistoryMetadataKey(env->getStaticObjectField(cls, "COV_FRAME_EPOCH", "Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadataKey;"));
+                  COV_ID = new OrbitCovarianceHistoryMetadataKey(env->getStaticObjectField(cls, "COV_ID", "Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadataKey;"));
+                  COV_NEXT_ID = new OrbitCovarianceHistoryMetadataKey(env->getStaticObjectField(cls, "COV_NEXT_ID", "Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadataKey;"));
+                  COV_ORDERING = new OrbitCovarianceHistoryMetadataKey(env->getStaticObjectField(cls, "COV_ORDERING", "Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadataKey;"));
+                  COV_PREV_ID = new OrbitCovarianceHistoryMetadataKey(env->getStaticObjectField(cls, "COV_PREV_ID", "Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadataKey;"));
+                  COV_REF_FRAME = new OrbitCovarianceHistoryMetadataKey(env->getStaticObjectField(cls, "COV_REF_FRAME", "Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadataKey;"));
+                  COV_SCALE_MAX = new OrbitCovarianceHistoryMetadataKey(env->getStaticObjectField(cls, "COV_SCALE_MAX", "Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadataKey;"));
+                  COV_SCALE_MIN = new OrbitCovarianceHistoryMetadataKey(env->getStaticObjectField(cls, "COV_SCALE_MIN", "Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadataKey;"));
+                  COV_TYPE = new OrbitCovarianceHistoryMetadataKey(env->getStaticObjectField(cls, "COV_TYPE", "Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadataKey;"));
+                  COV_UNITS = new OrbitCovarianceHistoryMetadataKey(env->getStaticObjectField(cls, "COV_UNITS", "Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitCovarianceHistoryMetadataKey;"));
+                  live$ = true;
+                }
+                return (jclass) class$->this$;
+              }
+
+              jboolean OrbitCovarianceHistoryMetadataKey::process(const ::org::orekit::files::ccsds::utils::lexical::ParseToken & a0, const ::org::orekit::files::ccsds::utils::ContextBinding & a1, const ::org::orekit::files::ccsds::ndm::odm::ocm::OrbitCovarianceHistoryMetadata & a2) const
+              {
+                return env->callBooleanMethod(this$, mids$[mid_process_138c68d2746c1c8e], a0.this$, a1.this$, a2.this$);
+              }
+
+              OrbitCovarianceHistoryMetadataKey OrbitCovarianceHistoryMetadataKey::valueOf(const ::java::lang::String & a0)
+              {
+                jclass cls = env->getClass(initializeClass);
+                return OrbitCovarianceHistoryMetadataKey(env->callStaticObjectMethod(cls, mids$[mid_valueOf_45008e387ae525fc], a0.this$));
+              }
+
+              JArray< OrbitCovarianceHistoryMetadataKey > OrbitCovarianceHistoryMetadataKey::values()
+              {
+                jclass cls = env->getClass(initializeClass);
+                return JArray< OrbitCovarianceHistoryMetadataKey >(env->callStaticObjectMethod(cls, mids$[mid_values_279f60f4984908a7]));
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace ccsds {
+        namespace ndm {
+          namespace odm {
+            namespace ocm {
+              static PyObject *t_OrbitCovarianceHistoryMetadataKey_cast_(PyTypeObject *type, PyObject *arg);
+              static PyObject *t_OrbitCovarianceHistoryMetadataKey_instance_(PyTypeObject *type, PyObject *arg);
+              static PyObject *t_OrbitCovarianceHistoryMetadataKey_of_(t_OrbitCovarianceHistoryMetadataKey *self, PyObject *args);
+              static PyObject *t_OrbitCovarianceHistoryMetadataKey_process(t_OrbitCovarianceHistoryMetadataKey *self, PyObject *args);
+              static PyObject *t_OrbitCovarianceHistoryMetadataKey_valueOf(PyTypeObject *type, PyObject *args);
+              static PyObject *t_OrbitCovarianceHistoryMetadataKey_values(PyTypeObject *type);
+              static PyObject *t_OrbitCovarianceHistoryMetadataKey_get__parameters_(t_OrbitCovarianceHistoryMetadataKey *self, void *data);
+              static PyGetSetDef t_OrbitCovarianceHistoryMetadataKey__fields_[] = {
+                DECLARE_GET_FIELD(t_OrbitCovarianceHistoryMetadataKey, parameters_),
+                { NULL, NULL, NULL, NULL, NULL }
+              };
+
+              static PyMethodDef t_OrbitCovarianceHistoryMetadataKey__methods_[] = {
+                DECLARE_METHOD(t_OrbitCovarianceHistoryMetadataKey, cast_, METH_O | METH_CLASS),
+                DECLARE_METHOD(t_OrbitCovarianceHistoryMetadataKey, instance_, METH_O | METH_CLASS),
+                DECLARE_METHOD(t_OrbitCovarianceHistoryMetadataKey, of_, METH_VARARGS),
+                DECLARE_METHOD(t_OrbitCovarianceHistoryMetadataKey, process, METH_VARARGS),
+                DECLARE_METHOD(t_OrbitCovarianceHistoryMetadataKey, valueOf, METH_VARARGS | METH_CLASS),
+                DECLARE_METHOD(t_OrbitCovarianceHistoryMetadataKey, values, METH_NOARGS | METH_CLASS),
+                { NULL, NULL, 0, NULL }
+              };
+
+              static PyType_Slot PY_TYPE_SLOTS(OrbitCovarianceHistoryMetadataKey)[] = {
+                { Py_tp_methods, t_OrbitCovarianceHistoryMetadataKey__methods_ },
+                { Py_tp_init, (void *) abstract_init },
+                { Py_tp_getset, t_OrbitCovarianceHistoryMetadataKey__fields_ },
+                { 0, NULL }
+              };
+
+              static PyType_Def *PY_TYPE_BASES(OrbitCovarianceHistoryMetadataKey)[] = {
+                &PY_TYPE_DEF(::java::lang::Enum),
+                NULL
+              };
+
+              DEFINE_TYPE(OrbitCovarianceHistoryMetadataKey, t_OrbitCovarianceHistoryMetadataKey, OrbitCovarianceHistoryMetadataKey);
+              PyObject *t_OrbitCovarianceHistoryMetadataKey::wrap_Object(const OrbitCovarianceHistoryMetadataKey& object, PyTypeObject *p0)
+              {
+                PyObject *obj = t_OrbitCovarianceHistoryMetadataKey::wrap_Object(object);
+                if (obj != NULL && obj != Py_None)
+                {
+                  t_OrbitCovarianceHistoryMetadataKey *self = (t_OrbitCovarianceHistoryMetadataKey *) obj;
+                  self->parameters[0] = p0;
+                }
+                return obj;
+              }
+
+              PyObject *t_OrbitCovarianceHistoryMetadataKey::wrap_jobject(const jobject& object, PyTypeObject *p0)
+              {
+                PyObject *obj = t_OrbitCovarianceHistoryMetadataKey::wrap_jobject(object);
+                if (obj != NULL && obj != Py_None)
+                {
+                  t_OrbitCovarianceHistoryMetadataKey *self = (t_OrbitCovarianceHistoryMetadataKey *) obj;
+                  self->parameters[0] = p0;
+                }
+                return obj;
+              }
+
+              void t_OrbitCovarianceHistoryMetadataKey::install(PyObject *module)
+              {
+                installType(&PY_TYPE(OrbitCovarianceHistoryMetadataKey), &PY_TYPE_DEF(OrbitCovarianceHistoryMetadataKey), module, "OrbitCovarianceHistoryMetadataKey", 0);
+              }
+
+              void t_OrbitCovarianceHistoryMetadataKey::initialize(PyObject *module)
+              {
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OrbitCovarianceHistoryMetadataKey), "class_", make_descriptor(OrbitCovarianceHistoryMetadataKey::initializeClass, 1));
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OrbitCovarianceHistoryMetadataKey), "wrapfn_", make_descriptor(t_OrbitCovarianceHistoryMetadataKey::wrap_jobject));
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OrbitCovarianceHistoryMetadataKey), "boxfn_", make_descriptor(boxObject));
+                env->getClass(OrbitCovarianceHistoryMetadataKey::initializeClass);
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OrbitCovarianceHistoryMetadataKey), "COMMENT", make_descriptor(t_OrbitCovarianceHistoryMetadataKey::wrap_Object(*OrbitCovarianceHistoryMetadataKey::COMMENT)));
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OrbitCovarianceHistoryMetadataKey), "COV_BASIS", make_descriptor(t_OrbitCovarianceHistoryMetadataKey::wrap_Object(*OrbitCovarianceHistoryMetadataKey::COV_BASIS)));
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OrbitCovarianceHistoryMetadataKey), "COV_BASIS_ID", make_descriptor(t_OrbitCovarianceHistoryMetadataKey::wrap_Object(*OrbitCovarianceHistoryMetadataKey::COV_BASIS_ID)));
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OrbitCovarianceHistoryMetadataKey), "COV_CONFIDENCE", make_descriptor(t_OrbitCovarianceHistoryMetadataKey::wrap_Object(*OrbitCovarianceHistoryMetadataKey::COV_CONFIDENCE)));
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OrbitCovarianceHistoryMetadataKey), "COV_FRAME_EPOCH", make_descriptor(t_OrbitCovarianceHistoryMetadataKey::wrap_Object(*OrbitCovarianceHistoryMetadataKey::COV_FRAME_EPOCH)));
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OrbitCovarianceHistoryMetadataKey), "COV_ID", make_descriptor(t_OrbitCovarianceHistoryMetadataKey::wrap_Object(*OrbitCovarianceHistoryMetadataKey::COV_ID)));
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OrbitCovarianceHistoryMetadataKey), "COV_NEXT_ID", make_descriptor(t_OrbitCovarianceHistoryMetadataKey::wrap_Object(*OrbitCovarianceHistoryMetadataKey::COV_NEXT_ID)));
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OrbitCovarianceHistoryMetadataKey), "COV_ORDERING", make_descriptor(t_OrbitCovarianceHistoryMetadataKey::wrap_Object(*OrbitCovarianceHistoryMetadataKey::COV_ORDERING)));
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OrbitCovarianceHistoryMetadataKey), "COV_PREV_ID", make_descriptor(t_OrbitCovarianceHistoryMetadataKey::wrap_Object(*OrbitCovarianceHistoryMetadataKey::COV_PREV_ID)));
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OrbitCovarianceHistoryMetadataKey), "COV_REF_FRAME", make_descriptor(t_OrbitCovarianceHistoryMetadataKey::wrap_Object(*OrbitCovarianceHistoryMetadataKey::COV_REF_FRAME)));
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OrbitCovarianceHistoryMetadataKey), "COV_SCALE_MAX", make_descriptor(t_OrbitCovarianceHistoryMetadataKey::wrap_Object(*OrbitCovarianceHistoryMetadataKey::COV_SCALE_MAX)));
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OrbitCovarianceHistoryMetadataKey), "COV_SCALE_MIN", make_descriptor(t_OrbitCovarianceHistoryMetadataKey::wrap_Object(*OrbitCovarianceHistoryMetadataKey::COV_SCALE_MIN)));
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OrbitCovarianceHistoryMetadataKey), "COV_TYPE", make_descriptor(t_OrbitCovarianceHistoryMetadataKey::wrap_Object(*OrbitCovarianceHistoryMetadataKey::COV_TYPE)));
+                PyObject_SetAttrString((PyObject *) PY_TYPE(OrbitCovarianceHistoryMetadataKey), "COV_UNITS", make_descriptor(t_OrbitCovarianceHistoryMetadataKey::wrap_Object(*OrbitCovarianceHistoryMetadataKey::COV_UNITS)));
+              }
+
+              static PyObject *t_OrbitCovarianceHistoryMetadataKey_cast_(PyTypeObject *type, PyObject *arg)
+              {
+                if (!(arg = castCheck(arg, OrbitCovarianceHistoryMetadataKey::initializeClass, 1)))
+                  return NULL;
+                return t_OrbitCovarianceHistoryMetadataKey::wrap_Object(OrbitCovarianceHistoryMetadataKey(((t_OrbitCovarianceHistoryMetadataKey *) arg)->object.this$));
+              }
+              static PyObject *t_OrbitCovarianceHistoryMetadataKey_instance_(PyTypeObject *type, PyObject *arg)
+              {
+                if (!castCheck(arg, OrbitCovarianceHistoryMetadataKey::initializeClass, 0))
+                  Py_RETURN_FALSE;
+                Py_RETURN_TRUE;
+              }
+
+              static PyObject *t_OrbitCovarianceHistoryMetadataKey_of_(t_OrbitCovarianceHistoryMetadataKey *self, PyObject *args)
+              {
+                if (!parseArg(args, "T", 1, &(self->parameters)))
+                  Py_RETURN_SELF;
+                return PyErr_SetArgsError((PyObject *) self, "of_", args);
+              }
+
+              static PyObject *t_OrbitCovarianceHistoryMetadataKey_process(t_OrbitCovarianceHistoryMetadataKey *self, PyObject *args)
+              {
+                ::org::orekit::files::ccsds::utils::lexical::ParseToken a0((jobject) NULL);
+                ::org::orekit::files::ccsds::utils::ContextBinding a1((jobject) NULL);
+                ::org::orekit::files::ccsds::ndm::odm::ocm::OrbitCovarianceHistoryMetadata a2((jobject) NULL);
+                jboolean result;
+
+                if (!parseArgs(args, "kkk", ::org::orekit::files::ccsds::utils::lexical::ParseToken::initializeClass, ::org::orekit::files::ccsds::utils::ContextBinding::initializeClass, ::org::orekit::files::ccsds::ndm::odm::ocm::OrbitCovarianceHistoryMetadata::initializeClass, &a0, &a1, &a2))
+                {
+                  OBJ_CALL(result = self->object.process(a0, a1, a2));
+                  Py_RETURN_BOOL(result);
+                }
+
+                PyErr_SetArgsError((PyObject *) self, "process", args);
+                return NULL;
+              }
+
+              static PyObject *t_OrbitCovarianceHistoryMetadataKey_valueOf(PyTypeObject *type, PyObject *args)
+              {
+                ::java::lang::String a0((jobject) NULL);
+                OrbitCovarianceHistoryMetadataKey result((jobject) NULL);
+
+                if (!parseArgs(args, "s", &a0))
+                {
+                  OBJ_CALL(result = ::org::orekit::files::ccsds::ndm::odm::ocm::OrbitCovarianceHistoryMetadataKey::valueOf(a0));
+                  return t_OrbitCovarianceHistoryMetadataKey::wrap_Object(result);
+                }
+
+                return callSuper(type, "valueOf", args, 2);
+              }
+
+              static PyObject *t_OrbitCovarianceHistoryMetadataKey_values(PyTypeObject *type)
+              {
+                JArray< OrbitCovarianceHistoryMetadataKey > result((jobject) NULL);
+                OBJ_CALL(result = ::org::orekit::files::ccsds::ndm::odm::ocm::OrbitCovarianceHistoryMetadataKey::values());
+                return JArray<jobject>(result.this$).wrap(t_OrbitCovarianceHistoryMetadataKey::wrap_jobject);
+              }
+              static PyObject *t_OrbitCovarianceHistoryMetadataKey_get__parameters_(t_OrbitCovarianceHistoryMetadataKey *self, void *data)
+              {
+                return typeParameters(self->parameters, sizeof(self->parameters));
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "org/hipparchus/distribution/continuous/AbstractRealDistribution.h"
+#include "java/io/Serializable.h"
+#include "org/hipparchus/exception/MathIllegalArgumentException.h"
+#include "java/lang/Class.h"
+#include "org/hipparchus/distribution/RealDistribution.h"
+#include "JArray.h"
+
+namespace org {
+  namespace hipparchus {
+    namespace distribution {
+      namespace continuous {
+
+        ::java::lang::Class *AbstractRealDistribution::class$ = NULL;
+        jmethodID *AbstractRealDistribution::mids$ = NULL;
+        bool AbstractRealDistribution::live$ = false;
+
+        jclass AbstractRealDistribution::initializeClass(bool getOnly)
+        {
+          if (getOnly)
+            return (jclass) (live$ ? class$->this$ : NULL);
+          if (class$ == NULL)
+          {
+            jclass cls = (jclass) env->findClass("org/hipparchus/distribution/continuous/AbstractRealDistribution");
+
+            mids$ = new jmethodID[max_mid];
+            mids$[mid_inverseCumulativeProbability_dcbc7ce2902fa136] = env->getMethodID(cls, "inverseCumulativeProbability", "(D)D");
+            mids$[mid_logDensity_dcbc7ce2902fa136] = env->getMethodID(cls, "logDensity", "(D)D");
+            mids$[mid_probability_86ffecc08a63eff0] = env->getMethodID(cls, "probability", "(DD)D");
+            mids$[mid_getSolverAbsoluteAccuracy_dff5885c2c873297] = env->getMethodID(cls, "getSolverAbsoluteAccuracy", "()D");
+
+            class$ = new ::java::lang::Class(cls);
+            live$ = true;
+          }
+          return (jclass) class$->this$;
+        }
+
+        jdouble AbstractRealDistribution::inverseCumulativeProbability(jdouble a0) const
+        {
+          return env->callDoubleMethod(this$, mids$[mid_inverseCumulativeProbability_dcbc7ce2902fa136], a0);
+        }
+
+        jdouble AbstractRealDistribution::logDensity(jdouble a0) const
+        {
+          return env->callDoubleMethod(this$, mids$[mid_logDensity_dcbc7ce2902fa136], a0);
+        }
+
+        jdouble AbstractRealDistribution::probability(jdouble a0, jdouble a1) const
+        {
+          return env->callDoubleMethod(this$, mids$[mid_probability_86ffecc08a63eff0], a0, a1);
+        }
       }
     }
   }
@@ -5205,135 +5919,888 @@ namespace org {
 
 namespace org {
   namespace hipparchus {
-    namespace linear {
-      static PyObject *t_RealVectorFormat_cast_(PyTypeObject *type, PyObject *arg);
-      static PyObject *t_RealVectorFormat_instance_(PyTypeObject *type, PyObject *arg);
-      static int t_RealVectorFormat_init_(t_RealVectorFormat *self, PyObject *args, PyObject *kwds);
-      static PyObject *t_RealVectorFormat_format(t_RealVectorFormat *self, PyObject *args);
-      static PyObject *t_RealVectorFormat_getAvailableLocales(PyTypeObject *type);
-      static PyObject *t_RealVectorFormat_getFormat(t_RealVectorFormat *self);
-      static PyObject *t_RealVectorFormat_getPrefix(t_RealVectorFormat *self);
-      static PyObject *t_RealVectorFormat_getRealVectorFormat(PyTypeObject *type, PyObject *args);
-      static PyObject *t_RealVectorFormat_getSeparator(t_RealVectorFormat *self);
-      static PyObject *t_RealVectorFormat_getSuffix(t_RealVectorFormat *self);
-      static PyObject *t_RealVectorFormat_parse(t_RealVectorFormat *self, PyObject *args);
-      static PyObject *t_RealVectorFormat_get__availableLocales(t_RealVectorFormat *self, void *data);
-      static PyObject *t_RealVectorFormat_get__prefix(t_RealVectorFormat *self, void *data);
-      static PyObject *t_RealVectorFormat_get__realVectorFormat(t_RealVectorFormat *self, void *data);
-      static PyObject *t_RealVectorFormat_get__separator(t_RealVectorFormat *self, void *data);
-      static PyObject *t_RealVectorFormat_get__suffix(t_RealVectorFormat *self, void *data);
-      static PyGetSetDef t_RealVectorFormat__fields_[] = {
-        DECLARE_GET_FIELD(t_RealVectorFormat, availableLocales),
-        DECLARE_GET_FIELD(t_RealVectorFormat, prefix),
-        DECLARE_GET_FIELD(t_RealVectorFormat, realVectorFormat),
-        DECLARE_GET_FIELD(t_RealVectorFormat, separator),
-        DECLARE_GET_FIELD(t_RealVectorFormat, suffix),
+    namespace distribution {
+      namespace continuous {
+        static PyObject *t_AbstractRealDistribution_cast_(PyTypeObject *type, PyObject *arg);
+        static PyObject *t_AbstractRealDistribution_instance_(PyTypeObject *type, PyObject *arg);
+        static PyObject *t_AbstractRealDistribution_inverseCumulativeProbability(t_AbstractRealDistribution *self, PyObject *arg);
+        static PyObject *t_AbstractRealDistribution_logDensity(t_AbstractRealDistribution *self, PyObject *arg);
+        static PyObject *t_AbstractRealDistribution_probability(t_AbstractRealDistribution *self, PyObject *args);
+
+        static PyMethodDef t_AbstractRealDistribution__methods_[] = {
+          DECLARE_METHOD(t_AbstractRealDistribution, cast_, METH_O | METH_CLASS),
+          DECLARE_METHOD(t_AbstractRealDistribution, instance_, METH_O | METH_CLASS),
+          DECLARE_METHOD(t_AbstractRealDistribution, inverseCumulativeProbability, METH_O),
+          DECLARE_METHOD(t_AbstractRealDistribution, logDensity, METH_O),
+          DECLARE_METHOD(t_AbstractRealDistribution, probability, METH_VARARGS),
+          { NULL, NULL, 0, NULL }
+        };
+
+        static PyType_Slot PY_TYPE_SLOTS(AbstractRealDistribution)[] = {
+          { Py_tp_methods, t_AbstractRealDistribution__methods_ },
+          { Py_tp_init, (void *) abstract_init },
+          { 0, NULL }
+        };
+
+        static PyType_Def *PY_TYPE_BASES(AbstractRealDistribution)[] = {
+          &PY_TYPE_DEF(::java::lang::Object),
+          NULL
+        };
+
+        DEFINE_TYPE(AbstractRealDistribution, t_AbstractRealDistribution, AbstractRealDistribution);
+
+        void t_AbstractRealDistribution::install(PyObject *module)
+        {
+          installType(&PY_TYPE(AbstractRealDistribution), &PY_TYPE_DEF(AbstractRealDistribution), module, "AbstractRealDistribution", 0);
+        }
+
+        void t_AbstractRealDistribution::initialize(PyObject *module)
+        {
+          PyObject_SetAttrString((PyObject *) PY_TYPE(AbstractRealDistribution), "class_", make_descriptor(AbstractRealDistribution::initializeClass, 1));
+          PyObject_SetAttrString((PyObject *) PY_TYPE(AbstractRealDistribution), "wrapfn_", make_descriptor(t_AbstractRealDistribution::wrap_jobject));
+          PyObject_SetAttrString((PyObject *) PY_TYPE(AbstractRealDistribution), "boxfn_", make_descriptor(boxObject));
+        }
+
+        static PyObject *t_AbstractRealDistribution_cast_(PyTypeObject *type, PyObject *arg)
+        {
+          if (!(arg = castCheck(arg, AbstractRealDistribution::initializeClass, 1)))
+            return NULL;
+          return t_AbstractRealDistribution::wrap_Object(AbstractRealDistribution(((t_AbstractRealDistribution *) arg)->object.this$));
+        }
+        static PyObject *t_AbstractRealDistribution_instance_(PyTypeObject *type, PyObject *arg)
+        {
+          if (!castCheck(arg, AbstractRealDistribution::initializeClass, 0))
+            Py_RETURN_FALSE;
+          Py_RETURN_TRUE;
+        }
+
+        static PyObject *t_AbstractRealDistribution_inverseCumulativeProbability(t_AbstractRealDistribution *self, PyObject *arg)
+        {
+          jdouble a0;
+          jdouble result;
+
+          if (!parseArg(arg, "D", &a0))
+          {
+            OBJ_CALL(result = self->object.inverseCumulativeProbability(a0));
+            return PyFloat_FromDouble((double) result);
+          }
+
+          PyErr_SetArgsError((PyObject *) self, "inverseCumulativeProbability", arg);
+          return NULL;
+        }
+
+        static PyObject *t_AbstractRealDistribution_logDensity(t_AbstractRealDistribution *self, PyObject *arg)
+        {
+          jdouble a0;
+          jdouble result;
+
+          if (!parseArg(arg, "D", &a0))
+          {
+            OBJ_CALL(result = self->object.logDensity(a0));
+            return PyFloat_FromDouble((double) result);
+          }
+
+          PyErr_SetArgsError((PyObject *) self, "logDensity", arg);
+          return NULL;
+        }
+
+        static PyObject *t_AbstractRealDistribution_probability(t_AbstractRealDistribution *self, PyObject *args)
+        {
+          jdouble a0;
+          jdouble a1;
+          jdouble result;
+
+          if (!parseArgs(args, "DD", &a0, &a1))
+          {
+            OBJ_CALL(result = self->object.probability(a0, a1));
+            return PyFloat_FromDouble((double) result);
+          }
+
+          PyErr_SetArgsError((PyObject *) self, "probability", args);
+          return NULL;
+        }
+      }
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "org/orekit/gnss/metric/messages/rtcm/ephemeris/Rtcm1020.h"
+#include "org/orekit/gnss/metric/messages/rtcm/ephemeris/Rtcm1020Data.h"
+#include "java/lang/Class.h"
+#include "JArray.h"
+
+namespace org {
+  namespace orekit {
+    namespace gnss {
+      namespace metric {
+        namespace messages {
+          namespace rtcm {
+            namespace ephemeris {
+
+              ::java::lang::Class *Rtcm1020::class$ = NULL;
+              jmethodID *Rtcm1020::mids$ = NULL;
+              bool Rtcm1020::live$ = false;
+
+              jclass Rtcm1020::initializeClass(bool getOnly)
+              {
+                if (getOnly)
+                  return (jclass) (live$ ? class$->this$ : NULL);
+                if (class$ == NULL)
+                {
+                  jclass cls = (jclass) env->findClass("org/orekit/gnss/metric/messages/rtcm/ephemeris/Rtcm1020");
+
+                  mids$ = new jmethodID[max_mid];
+                  mids$[mid_init$_cf1a49b727a5b318] = env->getMethodID(cls, "<init>", "(ILorg/orekit/gnss/metric/messages/rtcm/ephemeris/Rtcm1020Data;)V");
+
+                  class$ = new ::java::lang::Class(cls);
+                  live$ = true;
+                }
+                return (jclass) class$->this$;
+              }
+
+              Rtcm1020::Rtcm1020(jint a0, const ::org::orekit::gnss::metric::messages::rtcm::ephemeris::Rtcm1020Data & a1) : ::org::orekit::gnss::metric::messages::rtcm::ephemeris::RtcmEphemerisMessage(env->newObject(initializeClass, &mids$, mid_init$_cf1a49b727a5b318, a0, a1.this$)) {}
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace org {
+  namespace orekit {
+    namespace gnss {
+      namespace metric {
+        namespace messages {
+          namespace rtcm {
+            namespace ephemeris {
+              static PyObject *t_Rtcm1020_cast_(PyTypeObject *type, PyObject *arg);
+              static PyObject *t_Rtcm1020_instance_(PyTypeObject *type, PyObject *arg);
+              static PyObject *t_Rtcm1020_of_(t_Rtcm1020 *self, PyObject *args);
+              static int t_Rtcm1020_init_(t_Rtcm1020 *self, PyObject *args, PyObject *kwds);
+              static PyObject *t_Rtcm1020_get__parameters_(t_Rtcm1020 *self, void *data);
+              static PyGetSetDef t_Rtcm1020__fields_[] = {
+                DECLARE_GET_FIELD(t_Rtcm1020, parameters_),
+                { NULL, NULL, NULL, NULL, NULL }
+              };
+
+              static PyMethodDef t_Rtcm1020__methods_[] = {
+                DECLARE_METHOD(t_Rtcm1020, cast_, METH_O | METH_CLASS),
+                DECLARE_METHOD(t_Rtcm1020, instance_, METH_O | METH_CLASS),
+                DECLARE_METHOD(t_Rtcm1020, of_, METH_VARARGS),
+                { NULL, NULL, 0, NULL }
+              };
+
+              static PyType_Slot PY_TYPE_SLOTS(Rtcm1020)[] = {
+                { Py_tp_methods, t_Rtcm1020__methods_ },
+                { Py_tp_init, (void *) t_Rtcm1020_init_ },
+                { Py_tp_getset, t_Rtcm1020__fields_ },
+                { 0, NULL }
+              };
+
+              static PyType_Def *PY_TYPE_BASES(Rtcm1020)[] = {
+                &PY_TYPE_DEF(::org::orekit::gnss::metric::messages::rtcm::ephemeris::RtcmEphemerisMessage),
+                NULL
+              };
+
+              DEFINE_TYPE(Rtcm1020, t_Rtcm1020, Rtcm1020);
+              PyObject *t_Rtcm1020::wrap_Object(const Rtcm1020& object, PyTypeObject *p0)
+              {
+                PyObject *obj = t_Rtcm1020::wrap_Object(object);
+                if (obj != NULL && obj != Py_None)
+                {
+                  t_Rtcm1020 *self = (t_Rtcm1020 *) obj;
+                  self->parameters[0] = p0;
+                }
+                return obj;
+              }
+
+              PyObject *t_Rtcm1020::wrap_jobject(const jobject& object, PyTypeObject *p0)
+              {
+                PyObject *obj = t_Rtcm1020::wrap_jobject(object);
+                if (obj != NULL && obj != Py_None)
+                {
+                  t_Rtcm1020 *self = (t_Rtcm1020 *) obj;
+                  self->parameters[0] = p0;
+                }
+                return obj;
+              }
+
+              void t_Rtcm1020::install(PyObject *module)
+              {
+                installType(&PY_TYPE(Rtcm1020), &PY_TYPE_DEF(Rtcm1020), module, "Rtcm1020", 0);
+              }
+
+              void t_Rtcm1020::initialize(PyObject *module)
+              {
+                PyObject_SetAttrString((PyObject *) PY_TYPE(Rtcm1020), "class_", make_descriptor(Rtcm1020::initializeClass, 1));
+                PyObject_SetAttrString((PyObject *) PY_TYPE(Rtcm1020), "wrapfn_", make_descriptor(t_Rtcm1020::wrap_jobject));
+                PyObject_SetAttrString((PyObject *) PY_TYPE(Rtcm1020), "boxfn_", make_descriptor(boxObject));
+              }
+
+              static PyObject *t_Rtcm1020_cast_(PyTypeObject *type, PyObject *arg)
+              {
+                if (!(arg = castCheck(arg, Rtcm1020::initializeClass, 1)))
+                  return NULL;
+                return t_Rtcm1020::wrap_Object(Rtcm1020(((t_Rtcm1020 *) arg)->object.this$));
+              }
+              static PyObject *t_Rtcm1020_instance_(PyTypeObject *type, PyObject *arg)
+              {
+                if (!castCheck(arg, Rtcm1020::initializeClass, 0))
+                  Py_RETURN_FALSE;
+                Py_RETURN_TRUE;
+              }
+
+              static PyObject *t_Rtcm1020_of_(t_Rtcm1020 *self, PyObject *args)
+              {
+                if (!parseArg(args, "T", 1, &(self->parameters)))
+                  Py_RETURN_SELF;
+                return PyErr_SetArgsError((PyObject *) self, "of_", args);
+              }
+
+              static int t_Rtcm1020_init_(t_Rtcm1020 *self, PyObject *args, PyObject *kwds)
+              {
+                jint a0;
+                ::org::orekit::gnss::metric::messages::rtcm::ephemeris::Rtcm1020Data a1((jobject) NULL);
+                Rtcm1020 object((jobject) NULL);
+
+                if (!parseArgs(args, "Ik", ::org::orekit::gnss::metric::messages::rtcm::ephemeris::Rtcm1020Data::initializeClass, &a0, &a1))
+                {
+                  INT_CALL(object = Rtcm1020(a0, a1));
+                  self->object = object;
+                  self->parameters[0] = ::org::orekit::gnss::metric::messages::rtcm::ephemeris::PY_TYPE(Rtcm1020Data);
+                }
+                else
+                {
+                  PyErr_SetArgsError((PyObject *) self, "__init__", args);
+                  return -1;
+                }
+
+                return 0;
+              }
+              static PyObject *t_Rtcm1020_get__parameters_(t_Rtcm1020 *self, void *data)
+              {
+                return typeParameters(self->parameters, sizeof(self->parameters));
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "org/orekit/files/rinex/navigation/SbasId.h"
+#include "org/orekit/files/rinex/navigation/SbasId.h"
+#include "java/lang/String.h"
+#include "java/lang/Class.h"
+#include "JArray.h"
+
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace rinex {
+        namespace navigation {
+
+          ::java::lang::Class *SbasId::class$ = NULL;
+          jmethodID *SbasId::mids$ = NULL;
+          bool SbasId::live$ = false;
+          SbasId *SbasId::A_SBAS = NULL;
+          SbasId *SbasId::BDSBAS = NULL;
+          SbasId *SbasId::EGNOS = NULL;
+          SbasId *SbasId::GAGAN = NULL;
+          SbasId *SbasId::KASS = NULL;
+          SbasId *SbasId::MSAS = NULL;
+          SbasId *SbasId::SACCSA = NULL;
+          SbasId *SbasId::SDCM = NULL;
+          SbasId *SbasId::SPAN = NULL;
+          SbasId *SbasId::WAAS = NULL;
+
+          jclass SbasId::initializeClass(bool getOnly)
+          {
+            if (getOnly)
+              return (jclass) (live$ ? class$->this$ : NULL);
+            if (class$ == NULL)
+            {
+              jclass cls = (jclass) env->findClass("org/orekit/files/rinex/navigation/SbasId");
+
+              mids$ = new jmethodID[max_mid];
+              mids$[mid_valueOf_4a103ce40e3e1eb1] = env->getStaticMethodID(cls, "valueOf", "(Ljava/lang/String;)Lorg/orekit/files/rinex/navigation/SbasId;");
+              mids$[mid_values_3e8f18767058fcea] = env->getStaticMethodID(cls, "values", "()[Lorg/orekit/files/rinex/navigation/SbasId;");
+
+              class$ = new ::java::lang::Class(cls);
+              cls = (jclass) class$->this$;
+
+              A_SBAS = new SbasId(env->getStaticObjectField(cls, "A_SBAS", "Lorg/orekit/files/rinex/navigation/SbasId;"));
+              BDSBAS = new SbasId(env->getStaticObjectField(cls, "BDSBAS", "Lorg/orekit/files/rinex/navigation/SbasId;"));
+              EGNOS = new SbasId(env->getStaticObjectField(cls, "EGNOS", "Lorg/orekit/files/rinex/navigation/SbasId;"));
+              GAGAN = new SbasId(env->getStaticObjectField(cls, "GAGAN", "Lorg/orekit/files/rinex/navigation/SbasId;"));
+              KASS = new SbasId(env->getStaticObjectField(cls, "KASS", "Lorg/orekit/files/rinex/navigation/SbasId;"));
+              MSAS = new SbasId(env->getStaticObjectField(cls, "MSAS", "Lorg/orekit/files/rinex/navigation/SbasId;"));
+              SACCSA = new SbasId(env->getStaticObjectField(cls, "SACCSA", "Lorg/orekit/files/rinex/navigation/SbasId;"));
+              SDCM = new SbasId(env->getStaticObjectField(cls, "SDCM", "Lorg/orekit/files/rinex/navigation/SbasId;"));
+              SPAN = new SbasId(env->getStaticObjectField(cls, "SPAN", "Lorg/orekit/files/rinex/navigation/SbasId;"));
+              WAAS = new SbasId(env->getStaticObjectField(cls, "WAAS", "Lorg/orekit/files/rinex/navigation/SbasId;"));
+              live$ = true;
+            }
+            return (jclass) class$->this$;
+          }
+
+          SbasId SbasId::valueOf(const ::java::lang::String & a0)
+          {
+            jclass cls = env->getClass(initializeClass);
+            return SbasId(env->callStaticObjectMethod(cls, mids$[mid_valueOf_4a103ce40e3e1eb1], a0.this$));
+          }
+
+          JArray< SbasId > SbasId::values()
+          {
+            jclass cls = env->getClass(initializeClass);
+            return JArray< SbasId >(env->callStaticObjectMethod(cls, mids$[mid_values_3e8f18767058fcea]));
+          }
+        }
+      }
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace rinex {
+        namespace navigation {
+          static PyObject *t_SbasId_cast_(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_SbasId_instance_(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_SbasId_of_(t_SbasId *self, PyObject *args);
+          static PyObject *t_SbasId_valueOf(PyTypeObject *type, PyObject *args);
+          static PyObject *t_SbasId_values(PyTypeObject *type);
+          static PyObject *t_SbasId_get__parameters_(t_SbasId *self, void *data);
+          static PyGetSetDef t_SbasId__fields_[] = {
+            DECLARE_GET_FIELD(t_SbasId, parameters_),
+            { NULL, NULL, NULL, NULL, NULL }
+          };
+
+          static PyMethodDef t_SbasId__methods_[] = {
+            DECLARE_METHOD(t_SbasId, cast_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_SbasId, instance_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_SbasId, of_, METH_VARARGS),
+            DECLARE_METHOD(t_SbasId, valueOf, METH_VARARGS | METH_CLASS),
+            DECLARE_METHOD(t_SbasId, values, METH_NOARGS | METH_CLASS),
+            { NULL, NULL, 0, NULL }
+          };
+
+          static PyType_Slot PY_TYPE_SLOTS(SbasId)[] = {
+            { Py_tp_methods, t_SbasId__methods_ },
+            { Py_tp_init, (void *) abstract_init },
+            { Py_tp_getset, t_SbasId__fields_ },
+            { 0, NULL }
+          };
+
+          static PyType_Def *PY_TYPE_BASES(SbasId)[] = {
+            &PY_TYPE_DEF(::java::lang::Enum),
+            NULL
+          };
+
+          DEFINE_TYPE(SbasId, t_SbasId, SbasId);
+          PyObject *t_SbasId::wrap_Object(const SbasId& object, PyTypeObject *p0)
+          {
+            PyObject *obj = t_SbasId::wrap_Object(object);
+            if (obj != NULL && obj != Py_None)
+            {
+              t_SbasId *self = (t_SbasId *) obj;
+              self->parameters[0] = p0;
+            }
+            return obj;
+          }
+
+          PyObject *t_SbasId::wrap_jobject(const jobject& object, PyTypeObject *p0)
+          {
+            PyObject *obj = t_SbasId::wrap_jobject(object);
+            if (obj != NULL && obj != Py_None)
+            {
+              t_SbasId *self = (t_SbasId *) obj;
+              self->parameters[0] = p0;
+            }
+            return obj;
+          }
+
+          void t_SbasId::install(PyObject *module)
+          {
+            installType(&PY_TYPE(SbasId), &PY_TYPE_DEF(SbasId), module, "SbasId", 0);
+          }
+
+          void t_SbasId::initialize(PyObject *module)
+          {
+            PyObject_SetAttrString((PyObject *) PY_TYPE(SbasId), "class_", make_descriptor(SbasId::initializeClass, 1));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(SbasId), "wrapfn_", make_descriptor(t_SbasId::wrap_jobject));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(SbasId), "boxfn_", make_descriptor(boxObject));
+            env->getClass(SbasId::initializeClass);
+            PyObject_SetAttrString((PyObject *) PY_TYPE(SbasId), "A_SBAS", make_descriptor(t_SbasId::wrap_Object(*SbasId::A_SBAS)));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(SbasId), "BDSBAS", make_descriptor(t_SbasId::wrap_Object(*SbasId::BDSBAS)));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(SbasId), "EGNOS", make_descriptor(t_SbasId::wrap_Object(*SbasId::EGNOS)));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(SbasId), "GAGAN", make_descriptor(t_SbasId::wrap_Object(*SbasId::GAGAN)));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(SbasId), "KASS", make_descriptor(t_SbasId::wrap_Object(*SbasId::KASS)));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(SbasId), "MSAS", make_descriptor(t_SbasId::wrap_Object(*SbasId::MSAS)));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(SbasId), "SACCSA", make_descriptor(t_SbasId::wrap_Object(*SbasId::SACCSA)));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(SbasId), "SDCM", make_descriptor(t_SbasId::wrap_Object(*SbasId::SDCM)));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(SbasId), "SPAN", make_descriptor(t_SbasId::wrap_Object(*SbasId::SPAN)));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(SbasId), "WAAS", make_descriptor(t_SbasId::wrap_Object(*SbasId::WAAS)));
+          }
+
+          static PyObject *t_SbasId_cast_(PyTypeObject *type, PyObject *arg)
+          {
+            if (!(arg = castCheck(arg, SbasId::initializeClass, 1)))
+              return NULL;
+            return t_SbasId::wrap_Object(SbasId(((t_SbasId *) arg)->object.this$));
+          }
+          static PyObject *t_SbasId_instance_(PyTypeObject *type, PyObject *arg)
+          {
+            if (!castCheck(arg, SbasId::initializeClass, 0))
+              Py_RETURN_FALSE;
+            Py_RETURN_TRUE;
+          }
+
+          static PyObject *t_SbasId_of_(t_SbasId *self, PyObject *args)
+          {
+            if (!parseArg(args, "T", 1, &(self->parameters)))
+              Py_RETURN_SELF;
+            return PyErr_SetArgsError((PyObject *) self, "of_", args);
+          }
+
+          static PyObject *t_SbasId_valueOf(PyTypeObject *type, PyObject *args)
+          {
+            ::java::lang::String a0((jobject) NULL);
+            SbasId result((jobject) NULL);
+
+            if (!parseArgs(args, "s", &a0))
+            {
+              OBJ_CALL(result = ::org::orekit::files::rinex::navigation::SbasId::valueOf(a0));
+              return t_SbasId::wrap_Object(result);
+            }
+
+            return callSuper(type, "valueOf", args, 2);
+          }
+
+          static PyObject *t_SbasId_values(PyTypeObject *type)
+          {
+            JArray< SbasId > result((jobject) NULL);
+            OBJ_CALL(result = ::org::orekit::files::rinex::navigation::SbasId::values());
+            return JArray<jobject>(result.this$).wrap(t_SbasId::wrap_jobject);
+          }
+          static PyObject *t_SbasId_get__parameters_(t_SbasId *self, void *data)
+          {
+            return typeParameters(self->parameters, sizeof(self->parameters));
+          }
+        }
+      }
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "org/hipparchus/geometry/Space.h"
+#include "org/hipparchus/geometry/Space.h"
+#include "org/hipparchus/exception/MathRuntimeException.h"
+#include "java/lang/Class.h"
+#include "JArray.h"
+
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+
+      ::java::lang::Class *Space::class$ = NULL;
+      jmethodID *Space::mids$ = NULL;
+      bool Space::live$ = false;
+
+      jclass Space::initializeClass(bool getOnly)
+      {
+        if (getOnly)
+          return (jclass) (live$ ? class$->this$ : NULL);
+        if (class$ == NULL)
+        {
+          jclass cls = (jclass) env->findClass("org/hipparchus/geometry/Space");
+
+          mids$ = new jmethodID[max_mid];
+          mids$[mid_getDimension_570ce0828f81a2c1] = env->getMethodID(cls, "getDimension", "()I");
+          mids$[mid_getSubSpace_ebbd6b2d39ab0e4f] = env->getMethodID(cls, "getSubSpace", "()Lorg/hipparchus/geometry/Space;");
+
+          class$ = new ::java::lang::Class(cls);
+          live$ = true;
+        }
+        return (jclass) class$->this$;
+      }
+
+      jint Space::getDimension() const
+      {
+        return env->callIntMethod(this$, mids$[mid_getDimension_570ce0828f81a2c1]);
+      }
+
+      Space Space::getSubSpace() const
+      {
+        return Space(env->callObjectMethod(this$, mids$[mid_getSubSpace_ebbd6b2d39ab0e4f]));
+      }
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      static PyObject *t_Space_cast_(PyTypeObject *type, PyObject *arg);
+      static PyObject *t_Space_instance_(PyTypeObject *type, PyObject *arg);
+      static PyObject *t_Space_getDimension(t_Space *self);
+      static PyObject *t_Space_getSubSpace(t_Space *self);
+      static PyObject *t_Space_get__dimension(t_Space *self, void *data);
+      static PyObject *t_Space_get__subSpace(t_Space *self, void *data);
+      static PyGetSetDef t_Space__fields_[] = {
+        DECLARE_GET_FIELD(t_Space, dimension),
+        DECLARE_GET_FIELD(t_Space, subSpace),
         { NULL, NULL, NULL, NULL, NULL }
       };
 
-      static PyMethodDef t_RealVectorFormat__methods_[] = {
-        DECLARE_METHOD(t_RealVectorFormat, cast_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_RealVectorFormat, instance_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_RealVectorFormat, format, METH_VARARGS),
-        DECLARE_METHOD(t_RealVectorFormat, getAvailableLocales, METH_NOARGS | METH_CLASS),
-        DECLARE_METHOD(t_RealVectorFormat, getFormat, METH_NOARGS),
-        DECLARE_METHOD(t_RealVectorFormat, getPrefix, METH_NOARGS),
-        DECLARE_METHOD(t_RealVectorFormat, getRealVectorFormat, METH_VARARGS | METH_CLASS),
-        DECLARE_METHOD(t_RealVectorFormat, getSeparator, METH_NOARGS),
-        DECLARE_METHOD(t_RealVectorFormat, getSuffix, METH_NOARGS),
-        DECLARE_METHOD(t_RealVectorFormat, parse, METH_VARARGS),
+      static PyMethodDef t_Space__methods_[] = {
+        DECLARE_METHOD(t_Space, cast_, METH_O | METH_CLASS),
+        DECLARE_METHOD(t_Space, instance_, METH_O | METH_CLASS),
+        DECLARE_METHOD(t_Space, getDimension, METH_NOARGS),
+        DECLARE_METHOD(t_Space, getSubSpace, METH_NOARGS),
         { NULL, NULL, 0, NULL }
       };
 
-      static PyType_Slot PY_TYPE_SLOTS(RealVectorFormat)[] = {
-        { Py_tp_methods, t_RealVectorFormat__methods_ },
-        { Py_tp_init, (void *) t_RealVectorFormat_init_ },
-        { Py_tp_getset, t_RealVectorFormat__fields_ },
+      static PyType_Slot PY_TYPE_SLOTS(Space)[] = {
+        { Py_tp_methods, t_Space__methods_ },
+        { Py_tp_init, (void *) abstract_init },
+        { Py_tp_getset, t_Space__fields_ },
         { 0, NULL }
       };
 
-      static PyType_Def *PY_TYPE_BASES(RealVectorFormat)[] = {
-        &PY_TYPE_DEF(::java::lang::Object),
+      static PyType_Def *PY_TYPE_BASES(Space)[] = {
+        &PY_TYPE_DEF(::java::io::Serializable),
         NULL
       };
 
-      DEFINE_TYPE(RealVectorFormat, t_RealVectorFormat, RealVectorFormat);
+      DEFINE_TYPE(Space, t_Space, Space);
 
-      void t_RealVectorFormat::install(PyObject *module)
+      void t_Space::install(PyObject *module)
       {
-        installType(&PY_TYPE(RealVectorFormat), &PY_TYPE_DEF(RealVectorFormat), module, "RealVectorFormat", 0);
+        installType(&PY_TYPE(Space), &PY_TYPE_DEF(Space), module, "Space", 0);
       }
 
-      void t_RealVectorFormat::initialize(PyObject *module)
+      void t_Space::initialize(PyObject *module)
       {
-        PyObject_SetAttrString((PyObject *) PY_TYPE(RealVectorFormat), "class_", make_descriptor(RealVectorFormat::initializeClass, 1));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(RealVectorFormat), "wrapfn_", make_descriptor(t_RealVectorFormat::wrap_jobject));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(RealVectorFormat), "boxfn_", make_descriptor(boxObject));
+        PyObject_SetAttrString((PyObject *) PY_TYPE(Space), "class_", make_descriptor(Space::initializeClass, 1));
+        PyObject_SetAttrString((PyObject *) PY_TYPE(Space), "wrapfn_", make_descriptor(t_Space::wrap_jobject));
+        PyObject_SetAttrString((PyObject *) PY_TYPE(Space), "boxfn_", make_descriptor(boxObject));
       }
 
-      static PyObject *t_RealVectorFormat_cast_(PyTypeObject *type, PyObject *arg)
+      static PyObject *t_Space_cast_(PyTypeObject *type, PyObject *arg)
       {
-        if (!(arg = castCheck(arg, RealVectorFormat::initializeClass, 1)))
+        if (!(arg = castCheck(arg, Space::initializeClass, 1)))
           return NULL;
-        return t_RealVectorFormat::wrap_Object(RealVectorFormat(((t_RealVectorFormat *) arg)->object.this$));
+        return t_Space::wrap_Object(Space(((t_Space *) arg)->object.this$));
       }
-      static PyObject *t_RealVectorFormat_instance_(PyTypeObject *type, PyObject *arg)
+      static PyObject *t_Space_instance_(PyTypeObject *type, PyObject *arg)
       {
-        if (!castCheck(arg, RealVectorFormat::initializeClass, 0))
+        if (!castCheck(arg, Space::initializeClass, 0))
           Py_RETURN_FALSE;
         Py_RETURN_TRUE;
       }
 
-      static int t_RealVectorFormat_init_(t_RealVectorFormat *self, PyObject *args, PyObject *kwds)
+      static PyObject *t_Space_getDimension(t_Space *self)
+      {
+        jint result;
+        OBJ_CALL(result = self->object.getDimension());
+        return PyLong_FromLong((long) result);
+      }
+
+      static PyObject *t_Space_getSubSpace(t_Space *self)
+      {
+        Space result((jobject) NULL);
+        OBJ_CALL(result = self->object.getSubSpace());
+        return t_Space::wrap_Object(result);
+      }
+
+      static PyObject *t_Space_get__dimension(t_Space *self, void *data)
+      {
+        jint value;
+        OBJ_CALL(value = self->object.getDimension());
+        return PyLong_FromLong((long) value);
+      }
+
+      static PyObject *t_Space_get__subSpace(t_Space *self, void *data)
+      {
+        Space value((jobject) NULL);
+        OBJ_CALL(value = self->object.getSubSpace());
+        return t_Space::wrap_Object(value);
+      }
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "org/orekit/propagation/StateCovariance.h"
+#include "org/orekit/propagation/StateCovariance.h"
+#include "org/orekit/orbits/PositionAngleType.h"
+#include "org/orekit/frames/Frame.h"
+#include "org/orekit/frames/LOF.h"
+#include "org/orekit/time/AbsoluteDate.h"
+#include "org/hipparchus/linear/RealMatrix.h"
+#include "java/lang/Class.h"
+#include "org/orekit/time/TimeStamped.h"
+#include "org/orekit/orbits/Orbit.h"
+#include "org/orekit/orbits/OrbitType.h"
+#include "JArray.h"
+
+namespace org {
+  namespace orekit {
+    namespace propagation {
+
+      ::java::lang::Class *StateCovariance::class$ = NULL;
+      jmethodID *StateCovariance::mids$ = NULL;
+      bool StateCovariance::live$ = false;
+      jint StateCovariance::STATE_DIMENSION = (jint) 0;
+
+      jclass StateCovariance::initializeClass(bool getOnly)
+      {
+        if (getOnly)
+          return (jclass) (live$ ? class$->this$ : NULL);
+        if (class$ == NULL)
+        {
+          jclass cls = (jclass) env->findClass("org/orekit/propagation/StateCovariance");
+
+          mids$ = new jmethodID[max_mid];
+          mids$[mid_init$_adcc3987ecb59f2f] = env->getMethodID(cls, "<init>", "(Lorg/hipparchus/linear/RealMatrix;Lorg/orekit/time/AbsoluteDate;Lorg/orekit/frames/LOF;)V");
+          mids$[mid_init$_8c76bcc3b3703cd4] = env->getMethodID(cls, "<init>", "(Lorg/hipparchus/linear/RealMatrix;Lorg/orekit/time/AbsoluteDate;Lorg/orekit/frames/Frame;Lorg/orekit/orbits/OrbitType;Lorg/orekit/orbits/PositionAngleType;)V");
+          mids$[mid_changeCovarianceFrame_182573aae0235221] = env->getMethodID(cls, "changeCovarianceFrame", "(Lorg/orekit/orbits/Orbit;Lorg/orekit/frames/Frame;)Lorg/orekit/propagation/StateCovariance;");
+          mids$[mid_changeCovarianceFrame_4b28d150e65f081d] = env->getMethodID(cls, "changeCovarianceFrame", "(Lorg/orekit/orbits/Orbit;Lorg/orekit/frames/LOF;)Lorg/orekit/propagation/StateCovariance;");
+          mids$[mid_changeCovarianceType_e0215de50e31f8fc] = env->getMethodID(cls, "changeCovarianceType", "(Lorg/orekit/orbits/Orbit;Lorg/orekit/orbits/OrbitType;Lorg/orekit/orbits/PositionAngleType;)Lorg/orekit/propagation/StateCovariance;");
+          mids$[mid_checkFrameAndOrbitTypeConsistency_45530030cb08ed48] = env->getStaticMethodID(cls, "checkFrameAndOrbitTypeConsistency", "(Lorg/orekit/frames/Frame;Lorg/orekit/orbits/OrbitType;)V");
+          mids$[mid_getDate_85703d13e302437e] = env->getMethodID(cls, "getDate", "()Lorg/orekit/time/AbsoluteDate;");
+          mids$[mid_getFrame_b86f9f61d97a7244] = env->getMethodID(cls, "getFrame", "()Lorg/orekit/frames/Frame;");
+          mids$[mid_getLOF_d1997b828913f65f] = env->getMethodID(cls, "getLOF", "()Lorg/orekit/frames/LOF;");
+          mids$[mid_getMatrix_688b496048ff947b] = env->getMethodID(cls, "getMatrix", "()Lorg/hipparchus/linear/RealMatrix;");
+          mids$[mid_getOrbitType_e29360d311dc0e20] = env->getMethodID(cls, "getOrbitType", "()Lorg/orekit/orbits/OrbitType;");
+          mids$[mid_getPositionAngleType_8f17e83e5a86217c] = env->getMethodID(cls, "getPositionAngleType", "()Lorg/orekit/orbits/PositionAngleType;");
+          mids$[mid_getStm_f193dd9736942df6] = env->getStaticMethodID(cls, "getStm", "(Lorg/orekit/orbits/Orbit;D)Lorg/hipparchus/linear/RealMatrix;");
+          mids$[mid_shiftedBy_5f863ee3bdf9af16] = env->getMethodID(cls, "shiftedBy", "(Lorg/orekit/orbits/Orbit;D)Lorg/orekit/propagation/StateCovariance;");
+
+          class$ = new ::java::lang::Class(cls);
+          cls = (jclass) class$->this$;
+
+          STATE_DIMENSION = env->getStaticIntField(cls, "STATE_DIMENSION");
+          live$ = true;
+        }
+        return (jclass) class$->this$;
+      }
+
+      StateCovariance::StateCovariance(const ::org::hipparchus::linear::RealMatrix & a0, const ::org::orekit::time::AbsoluteDate & a1, const ::org::orekit::frames::LOF & a2) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_adcc3987ecb59f2f, a0.this$, a1.this$, a2.this$)) {}
+
+      StateCovariance::StateCovariance(const ::org::hipparchus::linear::RealMatrix & a0, const ::org::orekit::time::AbsoluteDate & a1, const ::org::orekit::frames::Frame & a2, const ::org::orekit::orbits::OrbitType & a3, const ::org::orekit::orbits::PositionAngleType & a4) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_8c76bcc3b3703cd4, a0.this$, a1.this$, a2.this$, a3.this$, a4.this$)) {}
+
+      StateCovariance StateCovariance::changeCovarianceFrame(const ::org::orekit::orbits::Orbit & a0, const ::org::orekit::frames::Frame & a1) const
+      {
+        return StateCovariance(env->callObjectMethod(this$, mids$[mid_changeCovarianceFrame_182573aae0235221], a0.this$, a1.this$));
+      }
+
+      StateCovariance StateCovariance::changeCovarianceFrame(const ::org::orekit::orbits::Orbit & a0, const ::org::orekit::frames::LOF & a1) const
+      {
+        return StateCovariance(env->callObjectMethod(this$, mids$[mid_changeCovarianceFrame_4b28d150e65f081d], a0.this$, a1.this$));
+      }
+
+      StateCovariance StateCovariance::changeCovarianceType(const ::org::orekit::orbits::Orbit & a0, const ::org::orekit::orbits::OrbitType & a1, const ::org::orekit::orbits::PositionAngleType & a2) const
+      {
+        return StateCovariance(env->callObjectMethod(this$, mids$[mid_changeCovarianceType_e0215de50e31f8fc], a0.this$, a1.this$, a2.this$));
+      }
+
+      void StateCovariance::checkFrameAndOrbitTypeConsistency(const ::org::orekit::frames::Frame & a0, const ::org::orekit::orbits::OrbitType & a1)
+      {
+        jclass cls = env->getClass(initializeClass);
+        env->callStaticVoidMethod(cls, mids$[mid_checkFrameAndOrbitTypeConsistency_45530030cb08ed48], a0.this$, a1.this$);
+      }
+
+      ::org::orekit::time::AbsoluteDate StateCovariance::getDate() const
+      {
+        return ::org::orekit::time::AbsoluteDate(env->callObjectMethod(this$, mids$[mid_getDate_85703d13e302437e]));
+      }
+
+      ::org::orekit::frames::Frame StateCovariance::getFrame() const
+      {
+        return ::org::orekit::frames::Frame(env->callObjectMethod(this$, mids$[mid_getFrame_b86f9f61d97a7244]));
+      }
+
+      ::org::orekit::frames::LOF StateCovariance::getLOF() const
+      {
+        return ::org::orekit::frames::LOF(env->callObjectMethod(this$, mids$[mid_getLOF_d1997b828913f65f]));
+      }
+
+      ::org::hipparchus::linear::RealMatrix StateCovariance::getMatrix() const
+      {
+        return ::org::hipparchus::linear::RealMatrix(env->callObjectMethod(this$, mids$[mid_getMatrix_688b496048ff947b]));
+      }
+
+      ::org::orekit::orbits::OrbitType StateCovariance::getOrbitType() const
+      {
+        return ::org::orekit::orbits::OrbitType(env->callObjectMethod(this$, mids$[mid_getOrbitType_e29360d311dc0e20]));
+      }
+
+      ::org::orekit::orbits::PositionAngleType StateCovariance::getPositionAngleType() const
+      {
+        return ::org::orekit::orbits::PositionAngleType(env->callObjectMethod(this$, mids$[mid_getPositionAngleType_8f17e83e5a86217c]));
+      }
+
+      ::org::hipparchus::linear::RealMatrix StateCovariance::getStm(const ::org::orekit::orbits::Orbit & a0, jdouble a1)
+      {
+        jclass cls = env->getClass(initializeClass);
+        return ::org::hipparchus::linear::RealMatrix(env->callStaticObjectMethod(cls, mids$[mid_getStm_f193dd9736942df6], a0.this$, a1));
+      }
+
+      StateCovariance StateCovariance::shiftedBy(const ::org::orekit::orbits::Orbit & a0, jdouble a1) const
+      {
+        return StateCovariance(env->callObjectMethod(this$, mids$[mid_shiftedBy_5f863ee3bdf9af16], a0.this$, a1));
+      }
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      static PyObject *t_StateCovariance_cast_(PyTypeObject *type, PyObject *arg);
+      static PyObject *t_StateCovariance_instance_(PyTypeObject *type, PyObject *arg);
+      static int t_StateCovariance_init_(t_StateCovariance *self, PyObject *args, PyObject *kwds);
+      static PyObject *t_StateCovariance_changeCovarianceFrame(t_StateCovariance *self, PyObject *args);
+      static PyObject *t_StateCovariance_changeCovarianceType(t_StateCovariance *self, PyObject *args);
+      static PyObject *t_StateCovariance_checkFrameAndOrbitTypeConsistency(PyTypeObject *type, PyObject *args);
+      static PyObject *t_StateCovariance_getDate(t_StateCovariance *self);
+      static PyObject *t_StateCovariance_getFrame(t_StateCovariance *self);
+      static PyObject *t_StateCovariance_getLOF(t_StateCovariance *self);
+      static PyObject *t_StateCovariance_getMatrix(t_StateCovariance *self);
+      static PyObject *t_StateCovariance_getOrbitType(t_StateCovariance *self);
+      static PyObject *t_StateCovariance_getPositionAngleType(t_StateCovariance *self);
+      static PyObject *t_StateCovariance_getStm(PyTypeObject *type, PyObject *args);
+      static PyObject *t_StateCovariance_shiftedBy(t_StateCovariance *self, PyObject *args);
+      static PyObject *t_StateCovariance_get__date(t_StateCovariance *self, void *data);
+      static PyObject *t_StateCovariance_get__frame(t_StateCovariance *self, void *data);
+      static PyObject *t_StateCovariance_get__lOF(t_StateCovariance *self, void *data);
+      static PyObject *t_StateCovariance_get__matrix(t_StateCovariance *self, void *data);
+      static PyObject *t_StateCovariance_get__orbitType(t_StateCovariance *self, void *data);
+      static PyObject *t_StateCovariance_get__positionAngleType(t_StateCovariance *self, void *data);
+      static PyGetSetDef t_StateCovariance__fields_[] = {
+        DECLARE_GET_FIELD(t_StateCovariance, date),
+        DECLARE_GET_FIELD(t_StateCovariance, frame),
+        DECLARE_GET_FIELD(t_StateCovariance, lOF),
+        DECLARE_GET_FIELD(t_StateCovariance, matrix),
+        DECLARE_GET_FIELD(t_StateCovariance, orbitType),
+        DECLARE_GET_FIELD(t_StateCovariance, positionAngleType),
+        { NULL, NULL, NULL, NULL, NULL }
+      };
+
+      static PyMethodDef t_StateCovariance__methods_[] = {
+        DECLARE_METHOD(t_StateCovariance, cast_, METH_O | METH_CLASS),
+        DECLARE_METHOD(t_StateCovariance, instance_, METH_O | METH_CLASS),
+        DECLARE_METHOD(t_StateCovariance, changeCovarianceFrame, METH_VARARGS),
+        DECLARE_METHOD(t_StateCovariance, changeCovarianceType, METH_VARARGS),
+        DECLARE_METHOD(t_StateCovariance, checkFrameAndOrbitTypeConsistency, METH_VARARGS | METH_CLASS),
+        DECLARE_METHOD(t_StateCovariance, getDate, METH_NOARGS),
+        DECLARE_METHOD(t_StateCovariance, getFrame, METH_NOARGS),
+        DECLARE_METHOD(t_StateCovariance, getLOF, METH_NOARGS),
+        DECLARE_METHOD(t_StateCovariance, getMatrix, METH_NOARGS),
+        DECLARE_METHOD(t_StateCovariance, getOrbitType, METH_NOARGS),
+        DECLARE_METHOD(t_StateCovariance, getPositionAngleType, METH_NOARGS),
+        DECLARE_METHOD(t_StateCovariance, getStm, METH_VARARGS | METH_CLASS),
+        DECLARE_METHOD(t_StateCovariance, shiftedBy, METH_VARARGS),
+        { NULL, NULL, 0, NULL }
+      };
+
+      static PyType_Slot PY_TYPE_SLOTS(StateCovariance)[] = {
+        { Py_tp_methods, t_StateCovariance__methods_ },
+        { Py_tp_init, (void *) t_StateCovariance_init_ },
+        { Py_tp_getset, t_StateCovariance__fields_ },
+        { 0, NULL }
+      };
+
+      static PyType_Def *PY_TYPE_BASES(StateCovariance)[] = {
+        &PY_TYPE_DEF(::java::lang::Object),
+        NULL
+      };
+
+      DEFINE_TYPE(StateCovariance, t_StateCovariance, StateCovariance);
+
+      void t_StateCovariance::install(PyObject *module)
+      {
+        installType(&PY_TYPE(StateCovariance), &PY_TYPE_DEF(StateCovariance), module, "StateCovariance", 0);
+      }
+
+      void t_StateCovariance::initialize(PyObject *module)
+      {
+        PyObject_SetAttrString((PyObject *) PY_TYPE(StateCovariance), "class_", make_descriptor(StateCovariance::initializeClass, 1));
+        PyObject_SetAttrString((PyObject *) PY_TYPE(StateCovariance), "wrapfn_", make_descriptor(t_StateCovariance::wrap_jobject));
+        PyObject_SetAttrString((PyObject *) PY_TYPE(StateCovariance), "boxfn_", make_descriptor(boxObject));
+        env->getClass(StateCovariance::initializeClass);
+        PyObject_SetAttrString((PyObject *) PY_TYPE(StateCovariance), "STATE_DIMENSION", make_descriptor(StateCovariance::STATE_DIMENSION));
+      }
+
+      static PyObject *t_StateCovariance_cast_(PyTypeObject *type, PyObject *arg)
+      {
+        if (!(arg = castCheck(arg, StateCovariance::initializeClass, 1)))
+          return NULL;
+        return t_StateCovariance::wrap_Object(StateCovariance(((t_StateCovariance *) arg)->object.this$));
+      }
+      static PyObject *t_StateCovariance_instance_(PyTypeObject *type, PyObject *arg)
+      {
+        if (!castCheck(arg, StateCovariance::initializeClass, 0))
+          Py_RETURN_FALSE;
+        Py_RETURN_TRUE;
+      }
+
+      static int t_StateCovariance_init_(t_StateCovariance *self, PyObject *args, PyObject *kwds)
       {
         switch (PyTuple_GET_SIZE(args)) {
-         case 0:
-          {
-            RealVectorFormat object((jobject) NULL);
-
-            INT_CALL(object = RealVectorFormat());
-            self->object = object;
-            break;
-          }
-         case 1:
-          {
-            ::java::text::NumberFormat a0((jobject) NULL);
-            RealVectorFormat object((jobject) NULL);
-
-            if (!parseArgs(args, "k", ::java::text::NumberFormat::initializeClass, &a0))
-            {
-              INT_CALL(object = RealVectorFormat(a0));
-              self->object = object;
-              break;
-            }
-          }
-          goto err;
          case 3:
           {
-            ::java::lang::String a0((jobject) NULL);
-            ::java::lang::String a1((jobject) NULL);
-            ::java::lang::String a2((jobject) NULL);
-            RealVectorFormat object((jobject) NULL);
+            ::org::hipparchus::linear::RealMatrix a0((jobject) NULL);
+            ::org::orekit::time::AbsoluteDate a1((jobject) NULL);
+            ::org::orekit::frames::LOF a2((jobject) NULL);
+            StateCovariance object((jobject) NULL);
 
-            if (!parseArgs(args, "sss", &a0, &a1, &a2))
+            if (!parseArgs(args, "kkk", ::org::hipparchus::linear::RealMatrix::initializeClass, ::org::orekit::time::AbsoluteDate::initializeClass, ::org::orekit::frames::LOF::initializeClass, &a0, &a1, &a2))
             {
-              INT_CALL(object = RealVectorFormat(a0, a1, a2));
+              INT_CALL(object = StateCovariance(a0, a1, a2));
               self->object = object;
               break;
             }
           }
           goto err;
-         case 4:
+         case 5:
           {
-            ::java::lang::String a0((jobject) NULL);
-            ::java::lang::String a1((jobject) NULL);
-            ::java::lang::String a2((jobject) NULL);
-            ::java::text::NumberFormat a3((jobject) NULL);
-            RealVectorFormat object((jobject) NULL);
+            ::org::hipparchus::linear::RealMatrix a0((jobject) NULL);
+            ::org::orekit::time::AbsoluteDate a1((jobject) NULL);
+            ::org::orekit::frames::Frame a2((jobject) NULL);
+            ::org::orekit::orbits::OrbitType a3((jobject) NULL);
+            PyTypeObject **p3;
+            ::org::orekit::orbits::PositionAngleType a4((jobject) NULL);
+            PyTypeObject **p4;
+            StateCovariance object((jobject) NULL);
 
-            if (!parseArgs(args, "sssk", ::java::text::NumberFormat::initializeClass, &a0, &a1, &a2, &a3))
+            if (!parseArgs(args, "kkkKK", ::org::hipparchus::linear::RealMatrix::initializeClass, ::org::orekit::time::AbsoluteDate::initializeClass, ::org::orekit::frames::Frame::initializeClass, ::org::orekit::orbits::OrbitType::initializeClass, ::org::orekit::orbits::PositionAngleType::initializeClass, &a0, &a1, &a2, &a3, &p3, ::org::orekit::orbits::t_OrbitType::parameters_, &a4, &p4, ::org::orekit::orbits::t_PositionAngleType::parameters_))
             {
-              INT_CALL(object = RealVectorFormat(a0, a1, a2, a3));
+              INT_CALL(object = StateCovariance(a0, a1, a2, a3, a4));
               self->object = object;
               break;
             }
@@ -5347,2134 +6814,235 @@ namespace org {
         return 0;
       }
 
-      static PyObject *t_RealVectorFormat_format(t_RealVectorFormat *self, PyObject *args)
+      static PyObject *t_StateCovariance_changeCovarianceFrame(t_StateCovariance *self, PyObject *args)
       {
         switch (PyTuple_GET_SIZE(args)) {
-         case 1:
-          {
-            ::org::hipparchus::linear::RealVector a0((jobject) NULL);
-            ::java::lang::String result((jobject) NULL);
-
-            if (!parseArgs(args, "k", ::org::hipparchus::linear::RealVector::initializeClass, &a0))
-            {
-              OBJ_CALL(result = self->object.format(a0));
-              return j2p(result);
-            }
-          }
-          break;
-         case 3:
-          {
-            ::org::hipparchus::linear::RealVector a0((jobject) NULL);
-            ::java::lang::StringBuffer a1((jobject) NULL);
-            ::java::text::FieldPosition a2((jobject) NULL);
-            ::java::lang::StringBuffer result((jobject) NULL);
-
-            if (!parseArgs(args, "kkk", ::org::hipparchus::linear::RealVector::initializeClass, ::java::lang::StringBuffer::initializeClass, ::java::text::FieldPosition::initializeClass, &a0, &a1, &a2))
-            {
-              OBJ_CALL(result = self->object.format(a0, a1, a2));
-              return ::java::lang::t_StringBuffer::wrap_Object(result);
-            }
-          }
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "format", args);
-        return NULL;
-      }
-
-      static PyObject *t_RealVectorFormat_getAvailableLocales(PyTypeObject *type)
-      {
-        JArray< ::java::util::Locale > result((jobject) NULL);
-        OBJ_CALL(result = ::org::hipparchus::linear::RealVectorFormat::getAvailableLocales());
-        return JArray<jobject>(result.this$).wrap(::java::util::t_Locale::wrap_jobject);
-      }
-
-      static PyObject *t_RealVectorFormat_getFormat(t_RealVectorFormat *self)
-      {
-        ::java::text::NumberFormat result((jobject) NULL);
-        OBJ_CALL(result = self->object.getFormat());
-        return ::java::text::t_NumberFormat::wrap_Object(result);
-      }
-
-      static PyObject *t_RealVectorFormat_getPrefix(t_RealVectorFormat *self)
-      {
-        ::java::lang::String result((jobject) NULL);
-        OBJ_CALL(result = self->object.getPrefix());
-        return j2p(result);
-      }
-
-      static PyObject *t_RealVectorFormat_getRealVectorFormat(PyTypeObject *type, PyObject *args)
-      {
-        switch (PyTuple_GET_SIZE(args)) {
-         case 0:
-          {
-            RealVectorFormat result((jobject) NULL);
-            OBJ_CALL(result = ::org::hipparchus::linear::RealVectorFormat::getRealVectorFormat());
-            return t_RealVectorFormat::wrap_Object(result);
-          }
-          break;
-         case 1:
-          {
-            ::java::util::Locale a0((jobject) NULL);
-            RealVectorFormat result((jobject) NULL);
-
-            if (!parseArgs(args, "k", ::java::util::Locale::initializeClass, &a0))
-            {
-              OBJ_CALL(result = ::org::hipparchus::linear::RealVectorFormat::getRealVectorFormat(a0));
-              return t_RealVectorFormat::wrap_Object(result);
-            }
-          }
-        }
-
-        PyErr_SetArgsError(type, "getRealVectorFormat", args);
-        return NULL;
-      }
-
-      static PyObject *t_RealVectorFormat_getSeparator(t_RealVectorFormat *self)
-      {
-        ::java::lang::String result((jobject) NULL);
-        OBJ_CALL(result = self->object.getSeparator());
-        return j2p(result);
-      }
-
-      static PyObject *t_RealVectorFormat_getSuffix(t_RealVectorFormat *self)
-      {
-        ::java::lang::String result((jobject) NULL);
-        OBJ_CALL(result = self->object.getSuffix());
-        return j2p(result);
-      }
-
-      static PyObject *t_RealVectorFormat_parse(t_RealVectorFormat *self, PyObject *args)
-      {
-        switch (PyTuple_GET_SIZE(args)) {
-         case 1:
-          {
-            ::java::lang::String a0((jobject) NULL);
-            ::org::hipparchus::linear::ArrayRealVector result((jobject) NULL);
-
-            if (!parseArgs(args, "s", &a0))
-            {
-              OBJ_CALL(result = self->object.parse(a0));
-              return ::org::hipparchus::linear::t_ArrayRealVector::wrap_Object(result);
-            }
-          }
-          break;
          case 2:
           {
-            ::java::lang::String a0((jobject) NULL);
-            ::java::text::ParsePosition a1((jobject) NULL);
-            ::org::hipparchus::linear::ArrayRealVector result((jobject) NULL);
+            ::org::orekit::orbits::Orbit a0((jobject) NULL);
+            ::org::orekit::frames::Frame a1((jobject) NULL);
+            StateCovariance result((jobject) NULL);
 
-            if (!parseArgs(args, "sk", ::java::text::ParsePosition::initializeClass, &a0, &a1))
+            if (!parseArgs(args, "kk", ::org::orekit::orbits::Orbit::initializeClass, ::org::orekit::frames::Frame::initializeClass, &a0, &a1))
             {
-              OBJ_CALL(result = self->object.parse(a0, a1));
-              return ::org::hipparchus::linear::t_ArrayRealVector::wrap_Object(result);
+              OBJ_CALL(result = self->object.changeCovarianceFrame(a0, a1));
+              return t_StateCovariance::wrap_Object(result);
+            }
+          }
+          {
+            ::org::orekit::orbits::Orbit a0((jobject) NULL);
+            ::org::orekit::frames::LOF a1((jobject) NULL);
+            StateCovariance result((jobject) NULL);
+
+            if (!parseArgs(args, "kk", ::org::orekit::orbits::Orbit::initializeClass, ::org::orekit::frames::LOF::initializeClass, &a0, &a1))
+            {
+              OBJ_CALL(result = self->object.changeCovarianceFrame(a0, a1));
+              return t_StateCovariance::wrap_Object(result);
             }
           }
         }
 
-        PyErr_SetArgsError((PyObject *) self, "parse", args);
+        PyErr_SetArgsError((PyObject *) self, "changeCovarianceFrame", args);
         return NULL;
       }
 
-      static PyObject *t_RealVectorFormat_get__availableLocales(t_RealVectorFormat *self, void *data)
+      static PyObject *t_StateCovariance_changeCovarianceType(t_StateCovariance *self, PyObject *args)
       {
-        JArray< ::java::util::Locale > value((jobject) NULL);
-        OBJ_CALL(value = self->object.getAvailableLocales());
-        return JArray<jobject>(value.this$).wrap(::java::util::t_Locale::wrap_jobject);
+        ::org::orekit::orbits::Orbit a0((jobject) NULL);
+        ::org::orekit::orbits::OrbitType a1((jobject) NULL);
+        PyTypeObject **p1;
+        ::org::orekit::orbits::PositionAngleType a2((jobject) NULL);
+        PyTypeObject **p2;
+        StateCovariance result((jobject) NULL);
+
+        if (!parseArgs(args, "kKK", ::org::orekit::orbits::Orbit::initializeClass, ::org::orekit::orbits::OrbitType::initializeClass, ::org::orekit::orbits::PositionAngleType::initializeClass, &a0, &a1, &p1, ::org::orekit::orbits::t_OrbitType::parameters_, &a2, &p2, ::org::orekit::orbits::t_PositionAngleType::parameters_))
+        {
+          OBJ_CALL(result = self->object.changeCovarianceType(a0, a1, a2));
+          return t_StateCovariance::wrap_Object(result);
+        }
+
+        PyErr_SetArgsError((PyObject *) self, "changeCovarianceType", args);
+        return NULL;
       }
 
-      static PyObject *t_RealVectorFormat_get__prefix(t_RealVectorFormat *self, void *data)
+      static PyObject *t_StateCovariance_checkFrameAndOrbitTypeConsistency(PyTypeObject *type, PyObject *args)
       {
-        ::java::lang::String value((jobject) NULL);
-        OBJ_CALL(value = self->object.getPrefix());
-        return j2p(value);
+        ::org::orekit::frames::Frame a0((jobject) NULL);
+        ::org::orekit::orbits::OrbitType a1((jobject) NULL);
+        PyTypeObject **p1;
+
+        if (!parseArgs(args, "kK", ::org::orekit::frames::Frame::initializeClass, ::org::orekit::orbits::OrbitType::initializeClass, &a0, &a1, &p1, ::org::orekit::orbits::t_OrbitType::parameters_))
+        {
+          OBJ_CALL(::org::orekit::propagation::StateCovariance::checkFrameAndOrbitTypeConsistency(a0, a1));
+          Py_RETURN_NONE;
+        }
+
+        PyErr_SetArgsError(type, "checkFrameAndOrbitTypeConsistency", args);
+        return NULL;
       }
 
-      static PyObject *t_RealVectorFormat_get__realVectorFormat(t_RealVectorFormat *self, void *data)
+      static PyObject *t_StateCovariance_getDate(t_StateCovariance *self)
       {
-        RealVectorFormat value((jobject) NULL);
-        OBJ_CALL(value = self->object.getRealVectorFormat());
-        return t_RealVectorFormat::wrap_Object(value);
+        ::org::orekit::time::AbsoluteDate result((jobject) NULL);
+        OBJ_CALL(result = self->object.getDate());
+        return ::org::orekit::time::t_AbsoluteDate::wrap_Object(result);
       }
 
-      static PyObject *t_RealVectorFormat_get__separator(t_RealVectorFormat *self, void *data)
+      static PyObject *t_StateCovariance_getFrame(t_StateCovariance *self)
       {
-        ::java::lang::String value((jobject) NULL);
-        OBJ_CALL(value = self->object.getSeparator());
-        return j2p(value);
+        ::org::orekit::frames::Frame result((jobject) NULL);
+        OBJ_CALL(result = self->object.getFrame());
+        return ::org::orekit::frames::t_Frame::wrap_Object(result);
       }
 
-      static PyObject *t_RealVectorFormat_get__suffix(t_RealVectorFormat *self, void *data)
+      static PyObject *t_StateCovariance_getLOF(t_StateCovariance *self)
       {
-        ::java::lang::String value((jobject) NULL);
-        OBJ_CALL(value = self->object.getSuffix());
-        return j2p(value);
+        ::org::orekit::frames::LOF result((jobject) NULL);
+        OBJ_CALL(result = self->object.getLOF());
+        return ::org::orekit::frames::t_LOF::wrap_Object(result);
+      }
+
+      static PyObject *t_StateCovariance_getMatrix(t_StateCovariance *self)
+      {
+        ::org::hipparchus::linear::RealMatrix result((jobject) NULL);
+        OBJ_CALL(result = self->object.getMatrix());
+        return ::org::hipparchus::linear::t_RealMatrix::wrap_Object(result);
+      }
+
+      static PyObject *t_StateCovariance_getOrbitType(t_StateCovariance *self)
+      {
+        ::org::orekit::orbits::OrbitType result((jobject) NULL);
+        OBJ_CALL(result = self->object.getOrbitType());
+        return ::org::orekit::orbits::t_OrbitType::wrap_Object(result);
+      }
+
+      static PyObject *t_StateCovariance_getPositionAngleType(t_StateCovariance *self)
+      {
+        ::org::orekit::orbits::PositionAngleType result((jobject) NULL);
+        OBJ_CALL(result = self->object.getPositionAngleType());
+        return ::org::orekit::orbits::t_PositionAngleType::wrap_Object(result);
+      }
+
+      static PyObject *t_StateCovariance_getStm(PyTypeObject *type, PyObject *args)
+      {
+        ::org::orekit::orbits::Orbit a0((jobject) NULL);
+        jdouble a1;
+        ::org::hipparchus::linear::RealMatrix result((jobject) NULL);
+
+        if (!parseArgs(args, "kD", ::org::orekit::orbits::Orbit::initializeClass, &a0, &a1))
+        {
+          OBJ_CALL(result = ::org::orekit::propagation::StateCovariance::getStm(a0, a1));
+          return ::org::hipparchus::linear::t_RealMatrix::wrap_Object(result);
+        }
+
+        PyErr_SetArgsError(type, "getStm", args);
+        return NULL;
+      }
+
+      static PyObject *t_StateCovariance_shiftedBy(t_StateCovariance *self, PyObject *args)
+      {
+        ::org::orekit::orbits::Orbit a0((jobject) NULL);
+        jdouble a1;
+        StateCovariance result((jobject) NULL);
+
+        if (!parseArgs(args, "kD", ::org::orekit::orbits::Orbit::initializeClass, &a0, &a1))
+        {
+          OBJ_CALL(result = self->object.shiftedBy(a0, a1));
+          return t_StateCovariance::wrap_Object(result);
+        }
+
+        PyErr_SetArgsError((PyObject *) self, "shiftedBy", args);
+        return NULL;
+      }
+
+      static PyObject *t_StateCovariance_get__date(t_StateCovariance *self, void *data)
+      {
+        ::org::orekit::time::AbsoluteDate value((jobject) NULL);
+        OBJ_CALL(value = self->object.getDate());
+        return ::org::orekit::time::t_AbsoluteDate::wrap_Object(value);
+      }
+
+      static PyObject *t_StateCovariance_get__frame(t_StateCovariance *self, void *data)
+      {
+        ::org::orekit::frames::Frame value((jobject) NULL);
+        OBJ_CALL(value = self->object.getFrame());
+        return ::org::orekit::frames::t_Frame::wrap_Object(value);
+      }
+
+      static PyObject *t_StateCovariance_get__lOF(t_StateCovariance *self, void *data)
+      {
+        ::org::orekit::frames::LOF value((jobject) NULL);
+        OBJ_CALL(value = self->object.getLOF());
+        return ::org::orekit::frames::t_LOF::wrap_Object(value);
+      }
+
+      static PyObject *t_StateCovariance_get__matrix(t_StateCovariance *self, void *data)
+      {
+        ::org::hipparchus::linear::RealMatrix value((jobject) NULL);
+        OBJ_CALL(value = self->object.getMatrix());
+        return ::org::hipparchus::linear::t_RealMatrix::wrap_Object(value);
+      }
+
+      static PyObject *t_StateCovariance_get__orbitType(t_StateCovariance *self, void *data)
+      {
+        ::org::orekit::orbits::OrbitType value((jobject) NULL);
+        OBJ_CALL(value = self->object.getOrbitType());
+        return ::org::orekit::orbits::t_OrbitType::wrap_Object(value);
+      }
+
+      static PyObject *t_StateCovariance_get__positionAngleType(t_StateCovariance *self, void *data)
+      {
+        ::org::orekit::orbits::PositionAngleType value((jobject) NULL);
+        OBJ_CALL(value = self->object.getPositionAngleType());
+        return ::org::orekit::orbits::t_PositionAngleType::wrap_Object(value);
       }
     }
   }
 }
 #include <jni.h>
 #include "JCCEnv.h"
-#include "org/orekit/files/ccsds/ndm/adm/acm/AttitudeDetermination.h"
+#include "org/orekit/models/earth/ionosphere/KlobucharIonoModel.h"
+#include "org/hipparchus/CalculusFieldElement.h"
+#include "org/orekit/frames/TopocentricFrame.h"
 #include "java/util/List.h"
-#include "org/hipparchus/geometry/euclidean/threed/RotationOrder.h"
-#include "org/orekit/files/ccsds/ndm/adm/acm/AttitudeElementsType.h"
-#include "org/orekit/files/ccsds/ndm/adm/acm/RateElementsType.h"
-#include "org/orekit/files/ccsds/definitions/AdMethodType.h"
-#include "java/lang/Class.h"
-#include "org/orekit/files/ccsds/ndm/adm/AttitudeEndpoints.h"
-#include "java/lang/String.h"
-#include "org/orekit/files/ccsds/ndm/adm/acm/AttitudeDeterminationSensor.h"
-#include "org/orekit/files/ccsds/ndm/adm/acm/AttitudeCovarianceType.h"
-#include "JArray.h"
-
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ccsds {
-        namespace ndm {
-          namespace adm {
-            namespace acm {
-
-              ::java::lang::Class *AttitudeDetermination::class$ = NULL;
-              jmethodID *AttitudeDetermination::mids$ = NULL;
-              bool AttitudeDetermination::live$ = false;
-
-              jclass AttitudeDetermination::initializeClass(bool getOnly)
-              {
-                if (getOnly)
-                  return (jclass) (live$ ? class$->this$ : NULL);
-                if (class$ == NULL)
-                {
-                  jclass cls = (jclass) env->findClass("org/orekit/files/ccsds/ndm/adm/acm/AttitudeDetermination");
-
-                  mids$ = new jmethodID[max_mid];
-                  mids$[mid_init$_7ae3461a92a43152] = env->getMethodID(cls, "<init>", "()V");
-                  mids$[mid_addSensor_4d8be7cfc38a825b] = env->getMethodID(cls, "addSensor", "(Lorg/orekit/files/ccsds/ndm/adm/acm/AttitudeDeterminationSensor;)V");
-                  mids$[mid_getAttitudeStates_ec3c84a694477494] = env->getMethodID(cls, "getAttitudeStates", "()Lorg/orekit/files/ccsds/ndm/adm/acm/AttitudeElementsType;");
-                  mids$[mid_getCovarianceType_10ff8ccfa18eb164] = env->getMethodID(cls, "getCovarianceType", "()Lorg/orekit/files/ccsds/ndm/adm/acm/AttitudeCovarianceType;");
-                  mids$[mid_getEndpoints_160aadf35481229b] = env->getMethodID(cls, "getEndpoints", "()Lorg/orekit/files/ccsds/ndm/adm/AttitudeEndpoints;");
-                  mids$[mid_getEulerRotSeq_425debac8563c8f4] = env->getMethodID(cls, "getEulerRotSeq", "()Lorg/hipparchus/geometry/euclidean/threed/RotationOrder;");
-                  mids$[mid_getId_0090f7797e403f43] = env->getMethodID(cls, "getId", "()Ljava/lang/String;");
-                  mids$[mid_getMethod_c8f5f28322e29d95] = env->getMethodID(cls, "getMethod", "()Lorg/orekit/files/ccsds/definitions/AdMethodType;");
-                  mids$[mid_getNbStates_f2f64475e4580546] = env->getMethodID(cls, "getNbStates", "()I");
-                  mids$[mid_getPrevId_0090f7797e403f43] = env->getMethodID(cls, "getPrevId", "()Ljava/lang/String;");
-                  mids$[mid_getRateProcessNoiseStdDev_456d9a2f64d6b28d] = env->getMethodID(cls, "getRateProcessNoiseStdDev", "()D");
-                  mids$[mid_getRateStates_6a98691d179a0a11] = env->getMethodID(cls, "getRateStates", "()Lorg/orekit/files/ccsds/ndm/adm/acm/RateElementsType;");
-                  mids$[mid_getSensorsUsed_a6156df500549a58] = env->getMethodID(cls, "getSensorsUsed", "()Ljava/util/List;");
-                  mids$[mid_getSigmaU_456d9a2f64d6b28d] = env->getMethodID(cls, "getSigmaU", "()D");
-                  mids$[mid_getSigmaV_456d9a2f64d6b28d] = env->getMethodID(cls, "getSigmaV", "()D");
-                  mids$[mid_getSource_0090f7797e403f43] = env->getMethodID(cls, "getSource", "()Ljava/lang/String;");
-                  mids$[mid_setAttitudeStates_3a0e4c42559abb2e] = env->getMethodID(cls, "setAttitudeStates", "(Lorg/orekit/files/ccsds/ndm/adm/acm/AttitudeElementsType;)V");
-                  mids$[mid_setCovarianceType_f40cd56ce69cda26] = env->getMethodID(cls, "setCovarianceType", "(Lorg/orekit/files/ccsds/ndm/adm/acm/AttitudeCovarianceType;)V");
-                  mids$[mid_setEulerRotSeq_3c290f1c2c08ff0e] = env->getMethodID(cls, "setEulerRotSeq", "(Lorg/hipparchus/geometry/euclidean/threed/RotationOrder;)V");
-                  mids$[mid_setId_e939c6558ae8d313] = env->getMethodID(cls, "setId", "(Ljava/lang/String;)V");
-                  mids$[mid_setMethod_01ed0efdbc98924d] = env->getMethodID(cls, "setMethod", "(Lorg/orekit/files/ccsds/definitions/AdMethodType;)V");
-                  mids$[mid_setNbStates_0a2a1ac2721c0336] = env->getMethodID(cls, "setNbStates", "(I)V");
-                  mids$[mid_setPrevId_e939c6558ae8d313] = env->getMethodID(cls, "setPrevId", "(Ljava/lang/String;)V");
-                  mids$[mid_setRateProcessNoiseStdDev_77e0f9a1f260e2e5] = env->getMethodID(cls, "setRateProcessNoiseStdDev", "(D)V");
-                  mids$[mid_setRateStates_153f0895a658f894] = env->getMethodID(cls, "setRateStates", "(Lorg/orekit/files/ccsds/ndm/adm/acm/RateElementsType;)V");
-                  mids$[mid_setSigmaU_77e0f9a1f260e2e5] = env->getMethodID(cls, "setSigmaU", "(D)V");
-                  mids$[mid_setSigmaV_77e0f9a1f260e2e5] = env->getMethodID(cls, "setSigmaV", "(D)V");
-                  mids$[mid_setSource_e939c6558ae8d313] = env->getMethodID(cls, "setSource", "(Ljava/lang/String;)V");
-                  mids$[mid_validate_77e0f9a1f260e2e5] = env->getMethodID(cls, "validate", "(D)V");
-
-                  class$ = new ::java::lang::Class(cls);
-                  live$ = true;
-                }
-                return (jclass) class$->this$;
-              }
-
-              AttitudeDetermination::AttitudeDetermination() : ::org::orekit::files::ccsds::section::CommentsContainer(env->newObject(initializeClass, &mids$, mid_init$_7ae3461a92a43152)) {}
-
-              void AttitudeDetermination::addSensor(const ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeDeterminationSensor & a0) const
-              {
-                env->callVoidMethod(this$, mids$[mid_addSensor_4d8be7cfc38a825b], a0.this$);
-              }
-
-              ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeElementsType AttitudeDetermination::getAttitudeStates() const
-              {
-                return ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeElementsType(env->callObjectMethod(this$, mids$[mid_getAttitudeStates_ec3c84a694477494]));
-              }
-
-              ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeCovarianceType AttitudeDetermination::getCovarianceType() const
-              {
-                return ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeCovarianceType(env->callObjectMethod(this$, mids$[mid_getCovarianceType_10ff8ccfa18eb164]));
-              }
-
-              ::org::orekit::files::ccsds::ndm::adm::AttitudeEndpoints AttitudeDetermination::getEndpoints() const
-              {
-                return ::org::orekit::files::ccsds::ndm::adm::AttitudeEndpoints(env->callObjectMethod(this$, mids$[mid_getEndpoints_160aadf35481229b]));
-              }
-
-              ::org::hipparchus::geometry::euclidean::threed::RotationOrder AttitudeDetermination::getEulerRotSeq() const
-              {
-                return ::org::hipparchus::geometry::euclidean::threed::RotationOrder(env->callObjectMethod(this$, mids$[mid_getEulerRotSeq_425debac8563c8f4]));
-              }
-
-              ::java::lang::String AttitudeDetermination::getId() const
-              {
-                return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getId_0090f7797e403f43]));
-              }
-
-              ::org::orekit::files::ccsds::definitions::AdMethodType AttitudeDetermination::getMethod() const
-              {
-                return ::org::orekit::files::ccsds::definitions::AdMethodType(env->callObjectMethod(this$, mids$[mid_getMethod_c8f5f28322e29d95]));
-              }
-
-              jint AttitudeDetermination::getNbStates() const
-              {
-                return env->callIntMethod(this$, mids$[mid_getNbStates_f2f64475e4580546]);
-              }
-
-              ::java::lang::String AttitudeDetermination::getPrevId() const
-              {
-                return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getPrevId_0090f7797e403f43]));
-              }
-
-              jdouble AttitudeDetermination::getRateProcessNoiseStdDev() const
-              {
-                return env->callDoubleMethod(this$, mids$[mid_getRateProcessNoiseStdDev_456d9a2f64d6b28d]);
-              }
-
-              ::org::orekit::files::ccsds::ndm::adm::acm::RateElementsType AttitudeDetermination::getRateStates() const
-              {
-                return ::org::orekit::files::ccsds::ndm::adm::acm::RateElementsType(env->callObjectMethod(this$, mids$[mid_getRateStates_6a98691d179a0a11]));
-              }
-
-              ::java::util::List AttitudeDetermination::getSensorsUsed() const
-              {
-                return ::java::util::List(env->callObjectMethod(this$, mids$[mid_getSensorsUsed_a6156df500549a58]));
-              }
-
-              jdouble AttitudeDetermination::getSigmaU() const
-              {
-                return env->callDoubleMethod(this$, mids$[mid_getSigmaU_456d9a2f64d6b28d]);
-              }
-
-              jdouble AttitudeDetermination::getSigmaV() const
-              {
-                return env->callDoubleMethod(this$, mids$[mid_getSigmaV_456d9a2f64d6b28d]);
-              }
-
-              ::java::lang::String AttitudeDetermination::getSource() const
-              {
-                return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getSource_0090f7797e403f43]));
-              }
-
-              void AttitudeDetermination::setAttitudeStates(const ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeElementsType & a0) const
-              {
-                env->callVoidMethod(this$, mids$[mid_setAttitudeStates_3a0e4c42559abb2e], a0.this$);
-              }
-
-              void AttitudeDetermination::setCovarianceType(const ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeCovarianceType & a0) const
-              {
-                env->callVoidMethod(this$, mids$[mid_setCovarianceType_f40cd56ce69cda26], a0.this$);
-              }
-
-              void AttitudeDetermination::setEulerRotSeq(const ::org::hipparchus::geometry::euclidean::threed::RotationOrder & a0) const
-              {
-                env->callVoidMethod(this$, mids$[mid_setEulerRotSeq_3c290f1c2c08ff0e], a0.this$);
-              }
-
-              void AttitudeDetermination::setId(const ::java::lang::String & a0) const
-              {
-                env->callVoidMethod(this$, mids$[mid_setId_e939c6558ae8d313], a0.this$);
-              }
-
-              void AttitudeDetermination::setMethod(const ::org::orekit::files::ccsds::definitions::AdMethodType & a0) const
-              {
-                env->callVoidMethod(this$, mids$[mid_setMethod_01ed0efdbc98924d], a0.this$);
-              }
-
-              void AttitudeDetermination::setNbStates(jint a0) const
-              {
-                env->callVoidMethod(this$, mids$[mid_setNbStates_0a2a1ac2721c0336], a0);
-              }
-
-              void AttitudeDetermination::setPrevId(const ::java::lang::String & a0) const
-              {
-                env->callVoidMethod(this$, mids$[mid_setPrevId_e939c6558ae8d313], a0.this$);
-              }
-
-              void AttitudeDetermination::setRateProcessNoiseStdDev(jdouble a0) const
-              {
-                env->callVoidMethod(this$, mids$[mid_setRateProcessNoiseStdDev_77e0f9a1f260e2e5], a0);
-              }
-
-              void AttitudeDetermination::setRateStates(const ::org::orekit::files::ccsds::ndm::adm::acm::RateElementsType & a0) const
-              {
-                env->callVoidMethod(this$, mids$[mid_setRateStates_153f0895a658f894], a0.this$);
-              }
-
-              void AttitudeDetermination::setSigmaU(jdouble a0) const
-              {
-                env->callVoidMethod(this$, mids$[mid_setSigmaU_77e0f9a1f260e2e5], a0);
-              }
-
-              void AttitudeDetermination::setSigmaV(jdouble a0) const
-              {
-                env->callVoidMethod(this$, mids$[mid_setSigmaV_77e0f9a1f260e2e5], a0);
-              }
-
-              void AttitudeDetermination::setSource(const ::java::lang::String & a0) const
-              {
-                env->callVoidMethod(this$, mids$[mid_setSource_e939c6558ae8d313], a0.this$);
-              }
-
-              void AttitudeDetermination::validate(jdouble a0) const
-              {
-                env->callVoidMethod(this$, mids$[mid_validate_77e0f9a1f260e2e5], a0);
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ccsds {
-        namespace ndm {
-          namespace adm {
-            namespace acm {
-              static PyObject *t_AttitudeDetermination_cast_(PyTypeObject *type, PyObject *arg);
-              static PyObject *t_AttitudeDetermination_instance_(PyTypeObject *type, PyObject *arg);
-              static int t_AttitudeDetermination_init_(t_AttitudeDetermination *self, PyObject *args, PyObject *kwds);
-              static PyObject *t_AttitudeDetermination_addSensor(t_AttitudeDetermination *self, PyObject *arg);
-              static PyObject *t_AttitudeDetermination_getAttitudeStates(t_AttitudeDetermination *self);
-              static PyObject *t_AttitudeDetermination_getCovarianceType(t_AttitudeDetermination *self);
-              static PyObject *t_AttitudeDetermination_getEndpoints(t_AttitudeDetermination *self);
-              static PyObject *t_AttitudeDetermination_getEulerRotSeq(t_AttitudeDetermination *self);
-              static PyObject *t_AttitudeDetermination_getId(t_AttitudeDetermination *self);
-              static PyObject *t_AttitudeDetermination_getMethod(t_AttitudeDetermination *self);
-              static PyObject *t_AttitudeDetermination_getNbStates(t_AttitudeDetermination *self);
-              static PyObject *t_AttitudeDetermination_getPrevId(t_AttitudeDetermination *self);
-              static PyObject *t_AttitudeDetermination_getRateProcessNoiseStdDev(t_AttitudeDetermination *self);
-              static PyObject *t_AttitudeDetermination_getRateStates(t_AttitudeDetermination *self);
-              static PyObject *t_AttitudeDetermination_getSensorsUsed(t_AttitudeDetermination *self);
-              static PyObject *t_AttitudeDetermination_getSigmaU(t_AttitudeDetermination *self);
-              static PyObject *t_AttitudeDetermination_getSigmaV(t_AttitudeDetermination *self);
-              static PyObject *t_AttitudeDetermination_getSource(t_AttitudeDetermination *self);
-              static PyObject *t_AttitudeDetermination_setAttitudeStates(t_AttitudeDetermination *self, PyObject *arg);
-              static PyObject *t_AttitudeDetermination_setCovarianceType(t_AttitudeDetermination *self, PyObject *arg);
-              static PyObject *t_AttitudeDetermination_setEulerRotSeq(t_AttitudeDetermination *self, PyObject *arg);
-              static PyObject *t_AttitudeDetermination_setId(t_AttitudeDetermination *self, PyObject *arg);
-              static PyObject *t_AttitudeDetermination_setMethod(t_AttitudeDetermination *self, PyObject *arg);
-              static PyObject *t_AttitudeDetermination_setNbStates(t_AttitudeDetermination *self, PyObject *arg);
-              static PyObject *t_AttitudeDetermination_setPrevId(t_AttitudeDetermination *self, PyObject *arg);
-              static PyObject *t_AttitudeDetermination_setRateProcessNoiseStdDev(t_AttitudeDetermination *self, PyObject *arg);
-              static PyObject *t_AttitudeDetermination_setRateStates(t_AttitudeDetermination *self, PyObject *arg);
-              static PyObject *t_AttitudeDetermination_setSigmaU(t_AttitudeDetermination *self, PyObject *arg);
-              static PyObject *t_AttitudeDetermination_setSigmaV(t_AttitudeDetermination *self, PyObject *arg);
-              static PyObject *t_AttitudeDetermination_setSource(t_AttitudeDetermination *self, PyObject *arg);
-              static PyObject *t_AttitudeDetermination_validate(t_AttitudeDetermination *self, PyObject *args);
-              static PyObject *t_AttitudeDetermination_get__attitudeStates(t_AttitudeDetermination *self, void *data);
-              static int t_AttitudeDetermination_set__attitudeStates(t_AttitudeDetermination *self, PyObject *arg, void *data);
-              static PyObject *t_AttitudeDetermination_get__covarianceType(t_AttitudeDetermination *self, void *data);
-              static int t_AttitudeDetermination_set__covarianceType(t_AttitudeDetermination *self, PyObject *arg, void *data);
-              static PyObject *t_AttitudeDetermination_get__endpoints(t_AttitudeDetermination *self, void *data);
-              static PyObject *t_AttitudeDetermination_get__eulerRotSeq(t_AttitudeDetermination *self, void *data);
-              static int t_AttitudeDetermination_set__eulerRotSeq(t_AttitudeDetermination *self, PyObject *arg, void *data);
-              static PyObject *t_AttitudeDetermination_get__id(t_AttitudeDetermination *self, void *data);
-              static int t_AttitudeDetermination_set__id(t_AttitudeDetermination *self, PyObject *arg, void *data);
-              static PyObject *t_AttitudeDetermination_get__method(t_AttitudeDetermination *self, void *data);
-              static int t_AttitudeDetermination_set__method(t_AttitudeDetermination *self, PyObject *arg, void *data);
-              static PyObject *t_AttitudeDetermination_get__nbStates(t_AttitudeDetermination *self, void *data);
-              static int t_AttitudeDetermination_set__nbStates(t_AttitudeDetermination *self, PyObject *arg, void *data);
-              static PyObject *t_AttitudeDetermination_get__prevId(t_AttitudeDetermination *self, void *data);
-              static int t_AttitudeDetermination_set__prevId(t_AttitudeDetermination *self, PyObject *arg, void *data);
-              static PyObject *t_AttitudeDetermination_get__rateProcessNoiseStdDev(t_AttitudeDetermination *self, void *data);
-              static int t_AttitudeDetermination_set__rateProcessNoiseStdDev(t_AttitudeDetermination *self, PyObject *arg, void *data);
-              static PyObject *t_AttitudeDetermination_get__rateStates(t_AttitudeDetermination *self, void *data);
-              static int t_AttitudeDetermination_set__rateStates(t_AttitudeDetermination *self, PyObject *arg, void *data);
-              static PyObject *t_AttitudeDetermination_get__sensorsUsed(t_AttitudeDetermination *self, void *data);
-              static PyObject *t_AttitudeDetermination_get__sigmaU(t_AttitudeDetermination *self, void *data);
-              static int t_AttitudeDetermination_set__sigmaU(t_AttitudeDetermination *self, PyObject *arg, void *data);
-              static PyObject *t_AttitudeDetermination_get__sigmaV(t_AttitudeDetermination *self, void *data);
-              static int t_AttitudeDetermination_set__sigmaV(t_AttitudeDetermination *self, PyObject *arg, void *data);
-              static PyObject *t_AttitudeDetermination_get__source(t_AttitudeDetermination *self, void *data);
-              static int t_AttitudeDetermination_set__source(t_AttitudeDetermination *self, PyObject *arg, void *data);
-              static PyGetSetDef t_AttitudeDetermination__fields_[] = {
-                DECLARE_GETSET_FIELD(t_AttitudeDetermination, attitudeStates),
-                DECLARE_GETSET_FIELD(t_AttitudeDetermination, covarianceType),
-                DECLARE_GET_FIELD(t_AttitudeDetermination, endpoints),
-                DECLARE_GETSET_FIELD(t_AttitudeDetermination, eulerRotSeq),
-                DECLARE_GETSET_FIELD(t_AttitudeDetermination, id),
-                DECLARE_GETSET_FIELD(t_AttitudeDetermination, method),
-                DECLARE_GETSET_FIELD(t_AttitudeDetermination, nbStates),
-                DECLARE_GETSET_FIELD(t_AttitudeDetermination, prevId),
-                DECLARE_GETSET_FIELD(t_AttitudeDetermination, rateProcessNoiseStdDev),
-                DECLARE_GETSET_FIELD(t_AttitudeDetermination, rateStates),
-                DECLARE_GET_FIELD(t_AttitudeDetermination, sensorsUsed),
-                DECLARE_GETSET_FIELD(t_AttitudeDetermination, sigmaU),
-                DECLARE_GETSET_FIELD(t_AttitudeDetermination, sigmaV),
-                DECLARE_GETSET_FIELD(t_AttitudeDetermination, source),
-                { NULL, NULL, NULL, NULL, NULL }
-              };
-
-              static PyMethodDef t_AttitudeDetermination__methods_[] = {
-                DECLARE_METHOD(t_AttitudeDetermination, cast_, METH_O | METH_CLASS),
-                DECLARE_METHOD(t_AttitudeDetermination, instance_, METH_O | METH_CLASS),
-                DECLARE_METHOD(t_AttitudeDetermination, addSensor, METH_O),
-                DECLARE_METHOD(t_AttitudeDetermination, getAttitudeStates, METH_NOARGS),
-                DECLARE_METHOD(t_AttitudeDetermination, getCovarianceType, METH_NOARGS),
-                DECLARE_METHOD(t_AttitudeDetermination, getEndpoints, METH_NOARGS),
-                DECLARE_METHOD(t_AttitudeDetermination, getEulerRotSeq, METH_NOARGS),
-                DECLARE_METHOD(t_AttitudeDetermination, getId, METH_NOARGS),
-                DECLARE_METHOD(t_AttitudeDetermination, getMethod, METH_NOARGS),
-                DECLARE_METHOD(t_AttitudeDetermination, getNbStates, METH_NOARGS),
-                DECLARE_METHOD(t_AttitudeDetermination, getPrevId, METH_NOARGS),
-                DECLARE_METHOD(t_AttitudeDetermination, getRateProcessNoiseStdDev, METH_NOARGS),
-                DECLARE_METHOD(t_AttitudeDetermination, getRateStates, METH_NOARGS),
-                DECLARE_METHOD(t_AttitudeDetermination, getSensorsUsed, METH_NOARGS),
-                DECLARE_METHOD(t_AttitudeDetermination, getSigmaU, METH_NOARGS),
-                DECLARE_METHOD(t_AttitudeDetermination, getSigmaV, METH_NOARGS),
-                DECLARE_METHOD(t_AttitudeDetermination, getSource, METH_NOARGS),
-                DECLARE_METHOD(t_AttitudeDetermination, setAttitudeStates, METH_O),
-                DECLARE_METHOD(t_AttitudeDetermination, setCovarianceType, METH_O),
-                DECLARE_METHOD(t_AttitudeDetermination, setEulerRotSeq, METH_O),
-                DECLARE_METHOD(t_AttitudeDetermination, setId, METH_O),
-                DECLARE_METHOD(t_AttitudeDetermination, setMethod, METH_O),
-                DECLARE_METHOD(t_AttitudeDetermination, setNbStates, METH_O),
-                DECLARE_METHOD(t_AttitudeDetermination, setPrevId, METH_O),
-                DECLARE_METHOD(t_AttitudeDetermination, setRateProcessNoiseStdDev, METH_O),
-                DECLARE_METHOD(t_AttitudeDetermination, setRateStates, METH_O),
-                DECLARE_METHOD(t_AttitudeDetermination, setSigmaU, METH_O),
-                DECLARE_METHOD(t_AttitudeDetermination, setSigmaV, METH_O),
-                DECLARE_METHOD(t_AttitudeDetermination, setSource, METH_O),
-                DECLARE_METHOD(t_AttitudeDetermination, validate, METH_VARARGS),
-                { NULL, NULL, 0, NULL }
-              };
-
-              static PyType_Slot PY_TYPE_SLOTS(AttitudeDetermination)[] = {
-                { Py_tp_methods, t_AttitudeDetermination__methods_ },
-                { Py_tp_init, (void *) t_AttitudeDetermination_init_ },
-                { Py_tp_getset, t_AttitudeDetermination__fields_ },
-                { 0, NULL }
-              };
-
-              static PyType_Def *PY_TYPE_BASES(AttitudeDetermination)[] = {
-                &PY_TYPE_DEF(::org::orekit::files::ccsds::section::CommentsContainer),
-                NULL
-              };
-
-              DEFINE_TYPE(AttitudeDetermination, t_AttitudeDetermination, AttitudeDetermination);
-
-              void t_AttitudeDetermination::install(PyObject *module)
-              {
-                installType(&PY_TYPE(AttitudeDetermination), &PY_TYPE_DEF(AttitudeDetermination), module, "AttitudeDetermination", 0);
-              }
-
-              void t_AttitudeDetermination::initialize(PyObject *module)
-              {
-                PyObject_SetAttrString((PyObject *) PY_TYPE(AttitudeDetermination), "class_", make_descriptor(AttitudeDetermination::initializeClass, 1));
-                PyObject_SetAttrString((PyObject *) PY_TYPE(AttitudeDetermination), "wrapfn_", make_descriptor(t_AttitudeDetermination::wrap_jobject));
-                PyObject_SetAttrString((PyObject *) PY_TYPE(AttitudeDetermination), "boxfn_", make_descriptor(boxObject));
-              }
-
-              static PyObject *t_AttitudeDetermination_cast_(PyTypeObject *type, PyObject *arg)
-              {
-                if (!(arg = castCheck(arg, AttitudeDetermination::initializeClass, 1)))
-                  return NULL;
-                return t_AttitudeDetermination::wrap_Object(AttitudeDetermination(((t_AttitudeDetermination *) arg)->object.this$));
-              }
-              static PyObject *t_AttitudeDetermination_instance_(PyTypeObject *type, PyObject *arg)
-              {
-                if (!castCheck(arg, AttitudeDetermination::initializeClass, 0))
-                  Py_RETURN_FALSE;
-                Py_RETURN_TRUE;
-              }
-
-              static int t_AttitudeDetermination_init_(t_AttitudeDetermination *self, PyObject *args, PyObject *kwds)
-              {
-                AttitudeDetermination object((jobject) NULL);
-
-                INT_CALL(object = AttitudeDetermination());
-                self->object = object;
-
-                return 0;
-              }
-
-              static PyObject *t_AttitudeDetermination_addSensor(t_AttitudeDetermination *self, PyObject *arg)
-              {
-                ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeDeterminationSensor a0((jobject) NULL);
-
-                if (!parseArg(arg, "k", ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeDeterminationSensor::initializeClass, &a0))
-                {
-                  OBJ_CALL(self->object.addSensor(a0));
-                  Py_RETURN_NONE;
-                }
-
-                PyErr_SetArgsError((PyObject *) self, "addSensor", arg);
-                return NULL;
-              }
-
-              static PyObject *t_AttitudeDetermination_getAttitudeStates(t_AttitudeDetermination *self)
-              {
-                ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeElementsType result((jobject) NULL);
-                OBJ_CALL(result = self->object.getAttitudeStates());
-                return ::org::orekit::files::ccsds::ndm::adm::acm::t_AttitudeElementsType::wrap_Object(result);
-              }
-
-              static PyObject *t_AttitudeDetermination_getCovarianceType(t_AttitudeDetermination *self)
-              {
-                ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeCovarianceType result((jobject) NULL);
-                OBJ_CALL(result = self->object.getCovarianceType());
-                return ::org::orekit::files::ccsds::ndm::adm::acm::t_AttitudeCovarianceType::wrap_Object(result);
-              }
-
-              static PyObject *t_AttitudeDetermination_getEndpoints(t_AttitudeDetermination *self)
-              {
-                ::org::orekit::files::ccsds::ndm::adm::AttitudeEndpoints result((jobject) NULL);
-                OBJ_CALL(result = self->object.getEndpoints());
-                return ::org::orekit::files::ccsds::ndm::adm::t_AttitudeEndpoints::wrap_Object(result);
-              }
-
-              static PyObject *t_AttitudeDetermination_getEulerRotSeq(t_AttitudeDetermination *self)
-              {
-                ::org::hipparchus::geometry::euclidean::threed::RotationOrder result((jobject) NULL);
-                OBJ_CALL(result = self->object.getEulerRotSeq());
-                return ::org::hipparchus::geometry::euclidean::threed::t_RotationOrder::wrap_Object(result);
-              }
-
-              static PyObject *t_AttitudeDetermination_getId(t_AttitudeDetermination *self)
-              {
-                ::java::lang::String result((jobject) NULL);
-                OBJ_CALL(result = self->object.getId());
-                return j2p(result);
-              }
-
-              static PyObject *t_AttitudeDetermination_getMethod(t_AttitudeDetermination *self)
-              {
-                ::org::orekit::files::ccsds::definitions::AdMethodType result((jobject) NULL);
-                OBJ_CALL(result = self->object.getMethod());
-                return ::org::orekit::files::ccsds::definitions::t_AdMethodType::wrap_Object(result);
-              }
-
-              static PyObject *t_AttitudeDetermination_getNbStates(t_AttitudeDetermination *self)
-              {
-                jint result;
-                OBJ_CALL(result = self->object.getNbStates());
-                return PyLong_FromLong((long) result);
-              }
-
-              static PyObject *t_AttitudeDetermination_getPrevId(t_AttitudeDetermination *self)
-              {
-                ::java::lang::String result((jobject) NULL);
-                OBJ_CALL(result = self->object.getPrevId());
-                return j2p(result);
-              }
-
-              static PyObject *t_AttitudeDetermination_getRateProcessNoiseStdDev(t_AttitudeDetermination *self)
-              {
-                jdouble result;
-                OBJ_CALL(result = self->object.getRateProcessNoiseStdDev());
-                return PyFloat_FromDouble((double) result);
-              }
-
-              static PyObject *t_AttitudeDetermination_getRateStates(t_AttitudeDetermination *self)
-              {
-                ::org::orekit::files::ccsds::ndm::adm::acm::RateElementsType result((jobject) NULL);
-                OBJ_CALL(result = self->object.getRateStates());
-                return ::org::orekit::files::ccsds::ndm::adm::acm::t_RateElementsType::wrap_Object(result);
-              }
-
-              static PyObject *t_AttitudeDetermination_getSensorsUsed(t_AttitudeDetermination *self)
-              {
-                ::java::util::List result((jobject) NULL);
-                OBJ_CALL(result = self->object.getSensorsUsed());
-                return ::java::util::t_List::wrap_Object(result, ::org::orekit::files::ccsds::ndm::adm::acm::PY_TYPE(AttitudeDeterminationSensor));
-              }
-
-              static PyObject *t_AttitudeDetermination_getSigmaU(t_AttitudeDetermination *self)
-              {
-                jdouble result;
-                OBJ_CALL(result = self->object.getSigmaU());
-                return PyFloat_FromDouble((double) result);
-              }
-
-              static PyObject *t_AttitudeDetermination_getSigmaV(t_AttitudeDetermination *self)
-              {
-                jdouble result;
-                OBJ_CALL(result = self->object.getSigmaV());
-                return PyFloat_FromDouble((double) result);
-              }
-
-              static PyObject *t_AttitudeDetermination_getSource(t_AttitudeDetermination *self)
-              {
-                ::java::lang::String result((jobject) NULL);
-                OBJ_CALL(result = self->object.getSource());
-                return j2p(result);
-              }
-
-              static PyObject *t_AttitudeDetermination_setAttitudeStates(t_AttitudeDetermination *self, PyObject *arg)
-              {
-                ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeElementsType a0((jobject) NULL);
-                PyTypeObject **p0;
-
-                if (!parseArg(arg, "K", ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeElementsType::initializeClass, &a0, &p0, ::org::orekit::files::ccsds::ndm::adm::acm::t_AttitudeElementsType::parameters_))
-                {
-                  OBJ_CALL(self->object.setAttitudeStates(a0));
-                  Py_RETURN_NONE;
-                }
-
-                PyErr_SetArgsError((PyObject *) self, "setAttitudeStates", arg);
-                return NULL;
-              }
-
-              static PyObject *t_AttitudeDetermination_setCovarianceType(t_AttitudeDetermination *self, PyObject *arg)
-              {
-                ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeCovarianceType a0((jobject) NULL);
-                PyTypeObject **p0;
-
-                if (!parseArg(arg, "K", ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeCovarianceType::initializeClass, &a0, &p0, ::org::orekit::files::ccsds::ndm::adm::acm::t_AttitudeCovarianceType::parameters_))
-                {
-                  OBJ_CALL(self->object.setCovarianceType(a0));
-                  Py_RETURN_NONE;
-                }
-
-                PyErr_SetArgsError((PyObject *) self, "setCovarianceType", arg);
-                return NULL;
-              }
-
-              static PyObject *t_AttitudeDetermination_setEulerRotSeq(t_AttitudeDetermination *self, PyObject *arg)
-              {
-                ::org::hipparchus::geometry::euclidean::threed::RotationOrder a0((jobject) NULL);
-                PyTypeObject **p0;
-
-                if (!parseArg(arg, "K", ::org::hipparchus::geometry::euclidean::threed::RotationOrder::initializeClass, &a0, &p0, ::org::hipparchus::geometry::euclidean::threed::t_RotationOrder::parameters_))
-                {
-                  OBJ_CALL(self->object.setEulerRotSeq(a0));
-                  Py_RETURN_NONE;
-                }
-
-                PyErr_SetArgsError((PyObject *) self, "setEulerRotSeq", arg);
-                return NULL;
-              }
-
-              static PyObject *t_AttitudeDetermination_setId(t_AttitudeDetermination *self, PyObject *arg)
-              {
-                ::java::lang::String a0((jobject) NULL);
-
-                if (!parseArg(arg, "s", &a0))
-                {
-                  OBJ_CALL(self->object.setId(a0));
-                  Py_RETURN_NONE;
-                }
-
-                PyErr_SetArgsError((PyObject *) self, "setId", arg);
-                return NULL;
-              }
-
-              static PyObject *t_AttitudeDetermination_setMethod(t_AttitudeDetermination *self, PyObject *arg)
-              {
-                ::org::orekit::files::ccsds::definitions::AdMethodType a0((jobject) NULL);
-                PyTypeObject **p0;
-
-                if (!parseArg(arg, "K", ::org::orekit::files::ccsds::definitions::AdMethodType::initializeClass, &a0, &p0, ::org::orekit::files::ccsds::definitions::t_AdMethodType::parameters_))
-                {
-                  OBJ_CALL(self->object.setMethod(a0));
-                  Py_RETURN_NONE;
-                }
-
-                PyErr_SetArgsError((PyObject *) self, "setMethod", arg);
-                return NULL;
-              }
-
-              static PyObject *t_AttitudeDetermination_setNbStates(t_AttitudeDetermination *self, PyObject *arg)
-              {
-                jint a0;
-
-                if (!parseArg(arg, "I", &a0))
-                {
-                  OBJ_CALL(self->object.setNbStates(a0));
-                  Py_RETURN_NONE;
-                }
-
-                PyErr_SetArgsError((PyObject *) self, "setNbStates", arg);
-                return NULL;
-              }
-
-              static PyObject *t_AttitudeDetermination_setPrevId(t_AttitudeDetermination *self, PyObject *arg)
-              {
-                ::java::lang::String a0((jobject) NULL);
-
-                if (!parseArg(arg, "s", &a0))
-                {
-                  OBJ_CALL(self->object.setPrevId(a0));
-                  Py_RETURN_NONE;
-                }
-
-                PyErr_SetArgsError((PyObject *) self, "setPrevId", arg);
-                return NULL;
-              }
-
-              static PyObject *t_AttitudeDetermination_setRateProcessNoiseStdDev(t_AttitudeDetermination *self, PyObject *arg)
-              {
-                jdouble a0;
-
-                if (!parseArg(arg, "D", &a0))
-                {
-                  OBJ_CALL(self->object.setRateProcessNoiseStdDev(a0));
-                  Py_RETURN_NONE;
-                }
-
-                PyErr_SetArgsError((PyObject *) self, "setRateProcessNoiseStdDev", arg);
-                return NULL;
-              }
-
-              static PyObject *t_AttitudeDetermination_setRateStates(t_AttitudeDetermination *self, PyObject *arg)
-              {
-                ::org::orekit::files::ccsds::ndm::adm::acm::RateElementsType a0((jobject) NULL);
-                PyTypeObject **p0;
-
-                if (!parseArg(arg, "K", ::org::orekit::files::ccsds::ndm::adm::acm::RateElementsType::initializeClass, &a0, &p0, ::org::orekit::files::ccsds::ndm::adm::acm::t_RateElementsType::parameters_))
-                {
-                  OBJ_CALL(self->object.setRateStates(a0));
-                  Py_RETURN_NONE;
-                }
-
-                PyErr_SetArgsError((PyObject *) self, "setRateStates", arg);
-                return NULL;
-              }
-
-              static PyObject *t_AttitudeDetermination_setSigmaU(t_AttitudeDetermination *self, PyObject *arg)
-              {
-                jdouble a0;
-
-                if (!parseArg(arg, "D", &a0))
-                {
-                  OBJ_CALL(self->object.setSigmaU(a0));
-                  Py_RETURN_NONE;
-                }
-
-                PyErr_SetArgsError((PyObject *) self, "setSigmaU", arg);
-                return NULL;
-              }
-
-              static PyObject *t_AttitudeDetermination_setSigmaV(t_AttitudeDetermination *self, PyObject *arg)
-              {
-                jdouble a0;
-
-                if (!parseArg(arg, "D", &a0))
-                {
-                  OBJ_CALL(self->object.setSigmaV(a0));
-                  Py_RETURN_NONE;
-                }
-
-                PyErr_SetArgsError((PyObject *) self, "setSigmaV", arg);
-                return NULL;
-              }
-
-              static PyObject *t_AttitudeDetermination_setSource(t_AttitudeDetermination *self, PyObject *arg)
-              {
-                ::java::lang::String a0((jobject) NULL);
-
-                if (!parseArg(arg, "s", &a0))
-                {
-                  OBJ_CALL(self->object.setSource(a0));
-                  Py_RETURN_NONE;
-                }
-
-                PyErr_SetArgsError((PyObject *) self, "setSource", arg);
-                return NULL;
-              }
-
-              static PyObject *t_AttitudeDetermination_validate(t_AttitudeDetermination *self, PyObject *args)
-              {
-                jdouble a0;
-
-                if (!parseArgs(args, "D", &a0))
-                {
-                  OBJ_CALL(self->object.validate(a0));
-                  Py_RETURN_NONE;
-                }
-
-                return callSuper(PY_TYPE(AttitudeDetermination), (PyObject *) self, "validate", args, 2);
-              }
-
-              static PyObject *t_AttitudeDetermination_get__attitudeStates(t_AttitudeDetermination *self, void *data)
-              {
-                ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeElementsType value((jobject) NULL);
-                OBJ_CALL(value = self->object.getAttitudeStates());
-                return ::org::orekit::files::ccsds::ndm::adm::acm::t_AttitudeElementsType::wrap_Object(value);
-              }
-              static int t_AttitudeDetermination_set__attitudeStates(t_AttitudeDetermination *self, PyObject *arg, void *data)
-              {
-                {
-                  ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeElementsType value((jobject) NULL);
-                  if (!parseArg(arg, "k", ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeElementsType::initializeClass, &value))
-                  {
-                    INT_CALL(self->object.setAttitudeStates(value));
-                    return 0;
-                  }
-                }
-                PyErr_SetArgsError((PyObject *) self, "attitudeStates", arg);
-                return -1;
-              }
-
-              static PyObject *t_AttitudeDetermination_get__covarianceType(t_AttitudeDetermination *self, void *data)
-              {
-                ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeCovarianceType value((jobject) NULL);
-                OBJ_CALL(value = self->object.getCovarianceType());
-                return ::org::orekit::files::ccsds::ndm::adm::acm::t_AttitudeCovarianceType::wrap_Object(value);
-              }
-              static int t_AttitudeDetermination_set__covarianceType(t_AttitudeDetermination *self, PyObject *arg, void *data)
-              {
-                {
-                  ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeCovarianceType value((jobject) NULL);
-                  if (!parseArg(arg, "k", ::org::orekit::files::ccsds::ndm::adm::acm::AttitudeCovarianceType::initializeClass, &value))
-                  {
-                    INT_CALL(self->object.setCovarianceType(value));
-                    return 0;
-                  }
-                }
-                PyErr_SetArgsError((PyObject *) self, "covarianceType", arg);
-                return -1;
-              }
-
-              static PyObject *t_AttitudeDetermination_get__endpoints(t_AttitudeDetermination *self, void *data)
-              {
-                ::org::orekit::files::ccsds::ndm::adm::AttitudeEndpoints value((jobject) NULL);
-                OBJ_CALL(value = self->object.getEndpoints());
-                return ::org::orekit::files::ccsds::ndm::adm::t_AttitudeEndpoints::wrap_Object(value);
-              }
-
-              static PyObject *t_AttitudeDetermination_get__eulerRotSeq(t_AttitudeDetermination *self, void *data)
-              {
-                ::org::hipparchus::geometry::euclidean::threed::RotationOrder value((jobject) NULL);
-                OBJ_CALL(value = self->object.getEulerRotSeq());
-                return ::org::hipparchus::geometry::euclidean::threed::t_RotationOrder::wrap_Object(value);
-              }
-              static int t_AttitudeDetermination_set__eulerRotSeq(t_AttitudeDetermination *self, PyObject *arg, void *data)
-              {
-                {
-                  ::org::hipparchus::geometry::euclidean::threed::RotationOrder value((jobject) NULL);
-                  if (!parseArg(arg, "k", ::org::hipparchus::geometry::euclidean::threed::RotationOrder::initializeClass, &value))
-                  {
-                    INT_CALL(self->object.setEulerRotSeq(value));
-                    return 0;
-                  }
-                }
-                PyErr_SetArgsError((PyObject *) self, "eulerRotSeq", arg);
-                return -1;
-              }
-
-              static PyObject *t_AttitudeDetermination_get__id(t_AttitudeDetermination *self, void *data)
-              {
-                ::java::lang::String value((jobject) NULL);
-                OBJ_CALL(value = self->object.getId());
-                return j2p(value);
-              }
-              static int t_AttitudeDetermination_set__id(t_AttitudeDetermination *self, PyObject *arg, void *data)
-              {
-                {
-                  ::java::lang::String value((jobject) NULL);
-                  if (!parseArg(arg, "s", &value))
-                  {
-                    INT_CALL(self->object.setId(value));
-                    return 0;
-                  }
-                }
-                PyErr_SetArgsError((PyObject *) self, "id", arg);
-                return -1;
-              }
-
-              static PyObject *t_AttitudeDetermination_get__method(t_AttitudeDetermination *self, void *data)
-              {
-                ::org::orekit::files::ccsds::definitions::AdMethodType value((jobject) NULL);
-                OBJ_CALL(value = self->object.getMethod());
-                return ::org::orekit::files::ccsds::definitions::t_AdMethodType::wrap_Object(value);
-              }
-              static int t_AttitudeDetermination_set__method(t_AttitudeDetermination *self, PyObject *arg, void *data)
-              {
-                {
-                  ::org::orekit::files::ccsds::definitions::AdMethodType value((jobject) NULL);
-                  if (!parseArg(arg, "k", ::org::orekit::files::ccsds::definitions::AdMethodType::initializeClass, &value))
-                  {
-                    INT_CALL(self->object.setMethod(value));
-                    return 0;
-                  }
-                }
-                PyErr_SetArgsError((PyObject *) self, "method", arg);
-                return -1;
-              }
-
-              static PyObject *t_AttitudeDetermination_get__nbStates(t_AttitudeDetermination *self, void *data)
-              {
-                jint value;
-                OBJ_CALL(value = self->object.getNbStates());
-                return PyLong_FromLong((long) value);
-              }
-              static int t_AttitudeDetermination_set__nbStates(t_AttitudeDetermination *self, PyObject *arg, void *data)
-              {
-                {
-                  jint value;
-                  if (!parseArg(arg, "I", &value))
-                  {
-                    INT_CALL(self->object.setNbStates(value));
-                    return 0;
-                  }
-                }
-                PyErr_SetArgsError((PyObject *) self, "nbStates", arg);
-                return -1;
-              }
-
-              static PyObject *t_AttitudeDetermination_get__prevId(t_AttitudeDetermination *self, void *data)
-              {
-                ::java::lang::String value((jobject) NULL);
-                OBJ_CALL(value = self->object.getPrevId());
-                return j2p(value);
-              }
-              static int t_AttitudeDetermination_set__prevId(t_AttitudeDetermination *self, PyObject *arg, void *data)
-              {
-                {
-                  ::java::lang::String value((jobject) NULL);
-                  if (!parseArg(arg, "s", &value))
-                  {
-                    INT_CALL(self->object.setPrevId(value));
-                    return 0;
-                  }
-                }
-                PyErr_SetArgsError((PyObject *) self, "prevId", arg);
-                return -1;
-              }
-
-              static PyObject *t_AttitudeDetermination_get__rateProcessNoiseStdDev(t_AttitudeDetermination *self, void *data)
-              {
-                jdouble value;
-                OBJ_CALL(value = self->object.getRateProcessNoiseStdDev());
-                return PyFloat_FromDouble((double) value);
-              }
-              static int t_AttitudeDetermination_set__rateProcessNoiseStdDev(t_AttitudeDetermination *self, PyObject *arg, void *data)
-              {
-                {
-                  jdouble value;
-                  if (!parseArg(arg, "D", &value))
-                  {
-                    INT_CALL(self->object.setRateProcessNoiseStdDev(value));
-                    return 0;
-                  }
-                }
-                PyErr_SetArgsError((PyObject *) self, "rateProcessNoiseStdDev", arg);
-                return -1;
-              }
-
-              static PyObject *t_AttitudeDetermination_get__rateStates(t_AttitudeDetermination *self, void *data)
-              {
-                ::org::orekit::files::ccsds::ndm::adm::acm::RateElementsType value((jobject) NULL);
-                OBJ_CALL(value = self->object.getRateStates());
-                return ::org::orekit::files::ccsds::ndm::adm::acm::t_RateElementsType::wrap_Object(value);
-              }
-              static int t_AttitudeDetermination_set__rateStates(t_AttitudeDetermination *self, PyObject *arg, void *data)
-              {
-                {
-                  ::org::orekit::files::ccsds::ndm::adm::acm::RateElementsType value((jobject) NULL);
-                  if (!parseArg(arg, "k", ::org::orekit::files::ccsds::ndm::adm::acm::RateElementsType::initializeClass, &value))
-                  {
-                    INT_CALL(self->object.setRateStates(value));
-                    return 0;
-                  }
-                }
-                PyErr_SetArgsError((PyObject *) self, "rateStates", arg);
-                return -1;
-              }
-
-              static PyObject *t_AttitudeDetermination_get__sensorsUsed(t_AttitudeDetermination *self, void *data)
-              {
-                ::java::util::List value((jobject) NULL);
-                OBJ_CALL(value = self->object.getSensorsUsed());
-                return ::java::util::t_List::wrap_Object(value);
-              }
-
-              static PyObject *t_AttitudeDetermination_get__sigmaU(t_AttitudeDetermination *self, void *data)
-              {
-                jdouble value;
-                OBJ_CALL(value = self->object.getSigmaU());
-                return PyFloat_FromDouble((double) value);
-              }
-              static int t_AttitudeDetermination_set__sigmaU(t_AttitudeDetermination *self, PyObject *arg, void *data)
-              {
-                {
-                  jdouble value;
-                  if (!parseArg(arg, "D", &value))
-                  {
-                    INT_CALL(self->object.setSigmaU(value));
-                    return 0;
-                  }
-                }
-                PyErr_SetArgsError((PyObject *) self, "sigmaU", arg);
-                return -1;
-              }
-
-              static PyObject *t_AttitudeDetermination_get__sigmaV(t_AttitudeDetermination *self, void *data)
-              {
-                jdouble value;
-                OBJ_CALL(value = self->object.getSigmaV());
-                return PyFloat_FromDouble((double) value);
-              }
-              static int t_AttitudeDetermination_set__sigmaV(t_AttitudeDetermination *self, PyObject *arg, void *data)
-              {
-                {
-                  jdouble value;
-                  if (!parseArg(arg, "D", &value))
-                  {
-                    INT_CALL(self->object.setSigmaV(value));
-                    return 0;
-                  }
-                }
-                PyErr_SetArgsError((PyObject *) self, "sigmaV", arg);
-                return -1;
-              }
-
-              static PyObject *t_AttitudeDetermination_get__source(t_AttitudeDetermination *self, void *data)
-              {
-                ::java::lang::String value((jobject) NULL);
-                OBJ_CALL(value = self->object.getSource());
-                return j2p(value);
-              }
-              static int t_AttitudeDetermination_set__source(t_AttitudeDetermination *self, PyObject *arg, void *data)
-              {
-                {
-                  ::java::lang::String value((jobject) NULL);
-                  if (!parseArg(arg, "s", &value))
-                  {
-                    INT_CALL(self->object.setSource(value));
-                    return 0;
-                  }
-                }
-                PyErr_SetArgsError((PyObject *) self, "source", arg);
-                return -1;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "org/orekit/frames/LOFType.h"
-#include "org/hipparchus/geometry/euclidean/threed/Rotation.h"
-#include "org/orekit/frames/LOFType.h"
-#include "org/orekit/files/ccsds/definitions/OrbitRelativeFrame.h"
-#include "org/hipparchus/Field.h"
-#include "org/orekit/utils/PVCoordinates.h"
-#include "org/orekit/frames/LOF.h"
-#include "java/lang/Class.h"
-#include "org/orekit/time/FieldAbsoluteDate.h"
-#include "java/lang/String.h"
-#include "org/orekit/utils/FieldPVCoordinates.h"
+#include "org/orekit/bodies/GeodeticPoint.h"
+#include "org/orekit/propagation/FieldSpacecraftState.h"
+#include "org/orekit/models/earth/ionosphere/IonosphericModel.h"
+#include "org/orekit/bodies/FieldGeodeticPoint.h"
 #include "org/orekit/time/AbsoluteDate.h"
-#include "org/hipparchus/geometry/euclidean/threed/FieldRotation.h"
-#include "JArray.h"
-
-namespace org {
-  namespace orekit {
-    namespace frames {
-
-      ::java::lang::Class *LOFType::class$ = NULL;
-      jmethodID *LOFType::mids$ = NULL;
-      bool LOFType::live$ = false;
-      LOFType *LOFType::EQW = NULL;
-      LOFType *LOFType::LVLH = NULL;
-      LOFType *LOFType::LVLH_CCSDS = NULL;
-      LOFType *LOFType::LVLH_CCSDS_INERTIAL = NULL;
-      LOFType *LOFType::LVLH_INERTIAL = NULL;
-      LOFType *LOFType::NTW = NULL;
-      LOFType *LOFType::NTW_INERTIAL = NULL;
-      LOFType *LOFType::QSW = NULL;
-      LOFType *LOFType::QSW_INERTIAL = NULL;
-      LOFType *LOFType::TNW = NULL;
-      LOFType *LOFType::TNW_INERTIAL = NULL;
-      LOFType *LOFType::VNC = NULL;
-      LOFType *LOFType::VNC_INERTIAL = NULL;
-      LOFType *LOFType::VVLH = NULL;
-      LOFType *LOFType::VVLH_INERTIAL = NULL;
-
-      jclass LOFType::initializeClass(bool getOnly)
-      {
-        if (getOnly)
-          return (jclass) (live$ ? class$->this$ : NULL);
-        if (class$ == NULL)
-        {
-          jclass cls = (jclass) env->findClass("org/orekit/frames/LOFType");
-
-          mids$ = new jmethodID[max_mid];
-          mids$[mid_getName_0090f7797e403f43] = env->getMethodID(cls, "getName", "()Ljava/lang/String;");
-          mids$[mid_rotationFromInertial_9a23f79cd11b74e7] = env->getMethodID(cls, "rotationFromInertial", "(Lorg/orekit/utils/PVCoordinates;)Lorg/hipparchus/geometry/euclidean/threed/Rotation;");
-          mids$[mid_rotationFromInertial_95b12e29918a648c] = env->getMethodID(cls, "rotationFromInertial", "(Lorg/orekit/time/AbsoluteDate;Lorg/orekit/utils/PVCoordinates;)Lorg/hipparchus/geometry/euclidean/threed/Rotation;");
-          mids$[mid_rotationFromInertial_f3b8fc53bbbd7a0a] = env->getMethodID(cls, "rotationFromInertial", "(Lorg/hipparchus/Field;Lorg/orekit/utils/FieldPVCoordinates;)Lorg/hipparchus/geometry/euclidean/threed/FieldRotation;");
-          mids$[mid_rotationFromInertial_346e8a02c9c839ea] = env->getMethodID(cls, "rotationFromInertial", "(Lorg/hipparchus/Field;Lorg/orekit/time/FieldAbsoluteDate;Lorg/orekit/utils/FieldPVCoordinates;)Lorg/hipparchus/geometry/euclidean/threed/FieldRotation;");
-          mids$[mid_rotationFromLOF_72077ab30cf19a5b] = env->getMethodID(cls, "rotationFromLOF", "(Lorg/orekit/frames/LOFType;Lorg/orekit/utils/PVCoordinates;)Lorg/hipparchus/geometry/euclidean/threed/Rotation;");
-          mids$[mid_rotationFromLOF_35680e58f06f0cf2] = env->getMethodID(cls, "rotationFromLOF", "(Lorg/hipparchus/Field;Lorg/orekit/frames/LOFType;Lorg/orekit/utils/FieldPVCoordinates;)Lorg/hipparchus/geometry/euclidean/threed/FieldRotation;");
-          mids$[mid_toOrbitRelativeFrame_e2b586b2f9e79328] = env->getMethodID(cls, "toOrbitRelativeFrame", "()Lorg/orekit/files/ccsds/definitions/OrbitRelativeFrame;");
-          mids$[mid_valueOf_636332e1f4b06249] = env->getStaticMethodID(cls, "valueOf", "(Ljava/lang/String;)Lorg/orekit/frames/LOFType;");
-          mids$[mid_values_9d808571dd8d739b] = env->getStaticMethodID(cls, "values", "()[Lorg/orekit/frames/LOFType;");
-
-          class$ = new ::java::lang::Class(cls);
-          cls = (jclass) class$->this$;
-
-          EQW = new LOFType(env->getStaticObjectField(cls, "EQW", "Lorg/orekit/frames/LOFType;"));
-          LVLH = new LOFType(env->getStaticObjectField(cls, "LVLH", "Lorg/orekit/frames/LOFType;"));
-          LVLH_CCSDS = new LOFType(env->getStaticObjectField(cls, "LVLH_CCSDS", "Lorg/orekit/frames/LOFType;"));
-          LVLH_CCSDS_INERTIAL = new LOFType(env->getStaticObjectField(cls, "LVLH_CCSDS_INERTIAL", "Lorg/orekit/frames/LOFType;"));
-          LVLH_INERTIAL = new LOFType(env->getStaticObjectField(cls, "LVLH_INERTIAL", "Lorg/orekit/frames/LOFType;"));
-          NTW = new LOFType(env->getStaticObjectField(cls, "NTW", "Lorg/orekit/frames/LOFType;"));
-          NTW_INERTIAL = new LOFType(env->getStaticObjectField(cls, "NTW_INERTIAL", "Lorg/orekit/frames/LOFType;"));
-          QSW = new LOFType(env->getStaticObjectField(cls, "QSW", "Lorg/orekit/frames/LOFType;"));
-          QSW_INERTIAL = new LOFType(env->getStaticObjectField(cls, "QSW_INERTIAL", "Lorg/orekit/frames/LOFType;"));
-          TNW = new LOFType(env->getStaticObjectField(cls, "TNW", "Lorg/orekit/frames/LOFType;"));
-          TNW_INERTIAL = new LOFType(env->getStaticObjectField(cls, "TNW_INERTIAL", "Lorg/orekit/frames/LOFType;"));
-          VNC = new LOFType(env->getStaticObjectField(cls, "VNC", "Lorg/orekit/frames/LOFType;"));
-          VNC_INERTIAL = new LOFType(env->getStaticObjectField(cls, "VNC_INERTIAL", "Lorg/orekit/frames/LOFType;"));
-          VVLH = new LOFType(env->getStaticObjectField(cls, "VVLH", "Lorg/orekit/frames/LOFType;"));
-          VVLH_INERTIAL = new LOFType(env->getStaticObjectField(cls, "VVLH_INERTIAL", "Lorg/orekit/frames/LOFType;"));
-          live$ = true;
-        }
-        return (jclass) class$->this$;
-      }
-
-      ::java::lang::String LOFType::getName() const
-      {
-        return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getName_0090f7797e403f43]));
-      }
-
-      ::org::hipparchus::geometry::euclidean::threed::Rotation LOFType::rotationFromInertial(const ::org::orekit::utils::PVCoordinates & a0) const
-      {
-        return ::org::hipparchus::geometry::euclidean::threed::Rotation(env->callObjectMethod(this$, mids$[mid_rotationFromInertial_9a23f79cd11b74e7], a0.this$));
-      }
-
-      ::org::hipparchus::geometry::euclidean::threed::Rotation LOFType::rotationFromInertial(const ::org::orekit::time::AbsoluteDate & a0, const ::org::orekit::utils::PVCoordinates & a1) const
-      {
-        return ::org::hipparchus::geometry::euclidean::threed::Rotation(env->callObjectMethod(this$, mids$[mid_rotationFromInertial_95b12e29918a648c], a0.this$, a1.this$));
-      }
-
-      ::org::hipparchus::geometry::euclidean::threed::FieldRotation LOFType::rotationFromInertial(const ::org::hipparchus::Field & a0, const ::org::orekit::utils::FieldPVCoordinates & a1) const
-      {
-        return ::org::hipparchus::geometry::euclidean::threed::FieldRotation(env->callObjectMethod(this$, mids$[mid_rotationFromInertial_f3b8fc53bbbd7a0a], a0.this$, a1.this$));
-      }
-
-      ::org::hipparchus::geometry::euclidean::threed::FieldRotation LOFType::rotationFromInertial(const ::org::hipparchus::Field & a0, const ::org::orekit::time::FieldAbsoluteDate & a1, const ::org::orekit::utils::FieldPVCoordinates & a2) const
-      {
-        return ::org::hipparchus::geometry::euclidean::threed::FieldRotation(env->callObjectMethod(this$, mids$[mid_rotationFromInertial_346e8a02c9c839ea], a0.this$, a1.this$, a2.this$));
-      }
-
-      ::org::hipparchus::geometry::euclidean::threed::Rotation LOFType::rotationFromLOF(const LOFType & a0, const ::org::orekit::utils::PVCoordinates & a1) const
-      {
-        return ::org::hipparchus::geometry::euclidean::threed::Rotation(env->callObjectMethod(this$, mids$[mid_rotationFromLOF_72077ab30cf19a5b], a0.this$, a1.this$));
-      }
-
-      ::org::hipparchus::geometry::euclidean::threed::FieldRotation LOFType::rotationFromLOF(const ::org::hipparchus::Field & a0, const LOFType & a1, const ::org::orekit::utils::FieldPVCoordinates & a2) const
-      {
-        return ::org::hipparchus::geometry::euclidean::threed::FieldRotation(env->callObjectMethod(this$, mids$[mid_rotationFromLOF_35680e58f06f0cf2], a0.this$, a1.this$, a2.this$));
-      }
-
-      ::org::orekit::files::ccsds::definitions::OrbitRelativeFrame LOFType::toOrbitRelativeFrame() const
-      {
-        return ::org::orekit::files::ccsds::definitions::OrbitRelativeFrame(env->callObjectMethod(this$, mids$[mid_toOrbitRelativeFrame_e2b586b2f9e79328]));
-      }
-
-      LOFType LOFType::valueOf(const ::java::lang::String & a0)
-      {
-        jclass cls = env->getClass(initializeClass);
-        return LOFType(env->callStaticObjectMethod(cls, mids$[mid_valueOf_636332e1f4b06249], a0.this$));
-      }
-
-      JArray< LOFType > LOFType::values()
-      {
-        jclass cls = env->getClass(initializeClass);
-        return JArray< LOFType >(env->callStaticObjectMethod(cls, mids$[mid_values_9d808571dd8d739b]));
-      }
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace org {
-  namespace orekit {
-    namespace frames {
-      static PyObject *t_LOFType_cast_(PyTypeObject *type, PyObject *arg);
-      static PyObject *t_LOFType_instance_(PyTypeObject *type, PyObject *arg);
-      static PyObject *t_LOFType_of_(t_LOFType *self, PyObject *args);
-      static PyObject *t_LOFType_getName(t_LOFType *self);
-      static PyObject *t_LOFType_rotationFromInertial(t_LOFType *self, PyObject *args);
-      static PyObject *t_LOFType_rotationFromLOF(t_LOFType *self, PyObject *args);
-      static PyObject *t_LOFType_toOrbitRelativeFrame(t_LOFType *self);
-      static PyObject *t_LOFType_valueOf(PyTypeObject *type, PyObject *args);
-      static PyObject *t_LOFType_values(PyTypeObject *type);
-      static PyObject *t_LOFType_get__name(t_LOFType *self, void *data);
-      static PyObject *t_LOFType_get__parameters_(t_LOFType *self, void *data);
-      static PyGetSetDef t_LOFType__fields_[] = {
-        DECLARE_GET_FIELD(t_LOFType, name),
-        DECLARE_GET_FIELD(t_LOFType, parameters_),
-        { NULL, NULL, NULL, NULL, NULL }
-      };
-
-      static PyMethodDef t_LOFType__methods_[] = {
-        DECLARE_METHOD(t_LOFType, cast_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_LOFType, instance_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_LOFType, of_, METH_VARARGS),
-        DECLARE_METHOD(t_LOFType, getName, METH_NOARGS),
-        DECLARE_METHOD(t_LOFType, rotationFromInertial, METH_VARARGS),
-        DECLARE_METHOD(t_LOFType, rotationFromLOF, METH_VARARGS),
-        DECLARE_METHOD(t_LOFType, toOrbitRelativeFrame, METH_NOARGS),
-        DECLARE_METHOD(t_LOFType, valueOf, METH_VARARGS | METH_CLASS),
-        DECLARE_METHOD(t_LOFType, values, METH_NOARGS | METH_CLASS),
-        { NULL, NULL, 0, NULL }
-      };
-
-      static PyType_Slot PY_TYPE_SLOTS(LOFType)[] = {
-        { Py_tp_methods, t_LOFType__methods_ },
-        { Py_tp_init, (void *) abstract_init },
-        { Py_tp_getset, t_LOFType__fields_ },
-        { 0, NULL }
-      };
-
-      static PyType_Def *PY_TYPE_BASES(LOFType)[] = {
-        &PY_TYPE_DEF(::java::lang::Enum),
-        NULL
-      };
-
-      DEFINE_TYPE(LOFType, t_LOFType, LOFType);
-      PyObject *t_LOFType::wrap_Object(const LOFType& object, PyTypeObject *p0)
-      {
-        PyObject *obj = t_LOFType::wrap_Object(object);
-        if (obj != NULL && obj != Py_None)
-        {
-          t_LOFType *self = (t_LOFType *) obj;
-          self->parameters[0] = p0;
-        }
-        return obj;
-      }
-
-      PyObject *t_LOFType::wrap_jobject(const jobject& object, PyTypeObject *p0)
-      {
-        PyObject *obj = t_LOFType::wrap_jobject(object);
-        if (obj != NULL && obj != Py_None)
-        {
-          t_LOFType *self = (t_LOFType *) obj;
-          self->parameters[0] = p0;
-        }
-        return obj;
-      }
-
-      void t_LOFType::install(PyObject *module)
-      {
-        installType(&PY_TYPE(LOFType), &PY_TYPE_DEF(LOFType), module, "LOFType", 0);
-      }
-
-      void t_LOFType::initialize(PyObject *module)
-      {
-        PyObject_SetAttrString((PyObject *) PY_TYPE(LOFType), "class_", make_descriptor(LOFType::initializeClass, 1));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(LOFType), "wrapfn_", make_descriptor(t_LOFType::wrap_jobject));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(LOFType), "boxfn_", make_descriptor(boxObject));
-        env->getClass(LOFType::initializeClass);
-        PyObject_SetAttrString((PyObject *) PY_TYPE(LOFType), "EQW", make_descriptor(t_LOFType::wrap_Object(*LOFType::EQW)));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(LOFType), "LVLH", make_descriptor(t_LOFType::wrap_Object(*LOFType::LVLH)));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(LOFType), "LVLH_CCSDS", make_descriptor(t_LOFType::wrap_Object(*LOFType::LVLH_CCSDS)));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(LOFType), "LVLH_CCSDS_INERTIAL", make_descriptor(t_LOFType::wrap_Object(*LOFType::LVLH_CCSDS_INERTIAL)));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(LOFType), "LVLH_INERTIAL", make_descriptor(t_LOFType::wrap_Object(*LOFType::LVLH_INERTIAL)));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(LOFType), "NTW", make_descriptor(t_LOFType::wrap_Object(*LOFType::NTW)));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(LOFType), "NTW_INERTIAL", make_descriptor(t_LOFType::wrap_Object(*LOFType::NTW_INERTIAL)));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(LOFType), "QSW", make_descriptor(t_LOFType::wrap_Object(*LOFType::QSW)));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(LOFType), "QSW_INERTIAL", make_descriptor(t_LOFType::wrap_Object(*LOFType::QSW_INERTIAL)));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(LOFType), "TNW", make_descriptor(t_LOFType::wrap_Object(*LOFType::TNW)));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(LOFType), "TNW_INERTIAL", make_descriptor(t_LOFType::wrap_Object(*LOFType::TNW_INERTIAL)));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(LOFType), "VNC", make_descriptor(t_LOFType::wrap_Object(*LOFType::VNC)));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(LOFType), "VNC_INERTIAL", make_descriptor(t_LOFType::wrap_Object(*LOFType::VNC_INERTIAL)));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(LOFType), "VVLH", make_descriptor(t_LOFType::wrap_Object(*LOFType::VVLH)));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(LOFType), "VVLH_INERTIAL", make_descriptor(t_LOFType::wrap_Object(*LOFType::VVLH_INERTIAL)));
-      }
-
-      static PyObject *t_LOFType_cast_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!(arg = castCheck(arg, LOFType::initializeClass, 1)))
-          return NULL;
-        return t_LOFType::wrap_Object(LOFType(((t_LOFType *) arg)->object.this$));
-      }
-      static PyObject *t_LOFType_instance_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!castCheck(arg, LOFType::initializeClass, 0))
-          Py_RETURN_FALSE;
-        Py_RETURN_TRUE;
-      }
-
-      static PyObject *t_LOFType_of_(t_LOFType *self, PyObject *args)
-      {
-        if (!parseArg(args, "T", 1, &(self->parameters)))
-          Py_RETURN_SELF;
-        return PyErr_SetArgsError((PyObject *) self, "of_", args);
-      }
-
-      static PyObject *t_LOFType_getName(t_LOFType *self)
-      {
-        ::java::lang::String result((jobject) NULL);
-        OBJ_CALL(result = self->object.getName());
-        return j2p(result);
-      }
-
-      static PyObject *t_LOFType_rotationFromInertial(t_LOFType *self, PyObject *args)
-      {
-        switch (PyTuple_GET_SIZE(args)) {
-         case 1:
-          {
-            ::org::orekit::utils::PVCoordinates a0((jobject) NULL);
-            ::org::hipparchus::geometry::euclidean::threed::Rotation result((jobject) NULL);
-
-            if (!parseArgs(args, "k", ::org::orekit::utils::PVCoordinates::initializeClass, &a0))
-            {
-              OBJ_CALL(result = self->object.rotationFromInertial(a0));
-              return ::org::hipparchus::geometry::euclidean::threed::t_Rotation::wrap_Object(result);
-            }
-          }
-          break;
-         case 2:
-          {
-            ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
-            ::org::orekit::utils::PVCoordinates a1((jobject) NULL);
-            ::org::hipparchus::geometry::euclidean::threed::Rotation result((jobject) NULL);
-
-            if (!parseArgs(args, "kk", ::org::orekit::time::AbsoluteDate::initializeClass, ::org::orekit::utils::PVCoordinates::initializeClass, &a0, &a1))
-            {
-              OBJ_CALL(result = self->object.rotationFromInertial(a0, a1));
-              return ::org::hipparchus::geometry::euclidean::threed::t_Rotation::wrap_Object(result);
-            }
-          }
-          {
-            ::org::hipparchus::Field a0((jobject) NULL);
-            PyTypeObject **p0;
-            ::org::orekit::utils::FieldPVCoordinates a1((jobject) NULL);
-            PyTypeObject **p1;
-            ::org::hipparchus::geometry::euclidean::threed::FieldRotation result((jobject) NULL);
-
-            if (!parseArgs(args, "KK", ::org::hipparchus::Field::initializeClass, ::org::orekit::utils::FieldPVCoordinates::initializeClass, &a0, &p0, ::org::hipparchus::t_Field::parameters_, &a1, &p1, ::org::orekit::utils::t_FieldPVCoordinates::parameters_))
-            {
-              OBJ_CALL(result = self->object.rotationFromInertial(a0, a1));
-              return ::org::hipparchus::geometry::euclidean::threed::t_FieldRotation::wrap_Object(result);
-            }
-          }
-          break;
-         case 3:
-          {
-            ::org::hipparchus::Field a0((jobject) NULL);
-            PyTypeObject **p0;
-            ::org::orekit::time::FieldAbsoluteDate a1((jobject) NULL);
-            PyTypeObject **p1;
-            ::org::orekit::utils::FieldPVCoordinates a2((jobject) NULL);
-            PyTypeObject **p2;
-            ::org::hipparchus::geometry::euclidean::threed::FieldRotation result((jobject) NULL);
-
-            if (!parseArgs(args, "KKK", ::org::hipparchus::Field::initializeClass, ::org::orekit::time::FieldAbsoluteDate::initializeClass, ::org::orekit::utils::FieldPVCoordinates::initializeClass, &a0, &p0, ::org::hipparchus::t_Field::parameters_, &a1, &p1, ::org::orekit::time::t_FieldAbsoluteDate::parameters_, &a2, &p2, ::org::orekit::utils::t_FieldPVCoordinates::parameters_))
-            {
-              OBJ_CALL(result = self->object.rotationFromInertial(a0, a1, a2));
-              return ::org::hipparchus::geometry::euclidean::threed::t_FieldRotation::wrap_Object(result);
-            }
-          }
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "rotationFromInertial", args);
-        return NULL;
-      }
-
-      static PyObject *t_LOFType_rotationFromLOF(t_LOFType *self, PyObject *args)
-      {
-        switch (PyTuple_GET_SIZE(args)) {
-         case 2:
-          {
-            LOFType a0((jobject) NULL);
-            PyTypeObject **p0;
-            ::org::orekit::utils::PVCoordinates a1((jobject) NULL);
-            ::org::hipparchus::geometry::euclidean::threed::Rotation result((jobject) NULL);
-
-            if (!parseArgs(args, "Kk", LOFType::initializeClass, ::org::orekit::utils::PVCoordinates::initializeClass, &a0, &p0, t_LOFType::parameters_, &a1))
-            {
-              OBJ_CALL(result = self->object.rotationFromLOF(a0, a1));
-              return ::org::hipparchus::geometry::euclidean::threed::t_Rotation::wrap_Object(result);
-            }
-          }
-          break;
-         case 3:
-          {
-            ::org::hipparchus::Field a0((jobject) NULL);
-            PyTypeObject **p0;
-            LOFType a1((jobject) NULL);
-            PyTypeObject **p1;
-            ::org::orekit::utils::FieldPVCoordinates a2((jobject) NULL);
-            PyTypeObject **p2;
-            ::org::hipparchus::geometry::euclidean::threed::FieldRotation result((jobject) NULL);
-
-            if (!parseArgs(args, "KKK", ::org::hipparchus::Field::initializeClass, LOFType::initializeClass, ::org::orekit::utils::FieldPVCoordinates::initializeClass, &a0, &p0, ::org::hipparchus::t_Field::parameters_, &a1, &p1, t_LOFType::parameters_, &a2, &p2, ::org::orekit::utils::t_FieldPVCoordinates::parameters_))
-            {
-              OBJ_CALL(result = self->object.rotationFromLOF(a0, a1, a2));
-              return ::org::hipparchus::geometry::euclidean::threed::t_FieldRotation::wrap_Object(result);
-            }
-          }
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "rotationFromLOF", args);
-        return NULL;
-      }
-
-      static PyObject *t_LOFType_toOrbitRelativeFrame(t_LOFType *self)
-      {
-        ::org::orekit::files::ccsds::definitions::OrbitRelativeFrame result((jobject) NULL);
-        OBJ_CALL(result = self->object.toOrbitRelativeFrame());
-        return ::org::orekit::files::ccsds::definitions::t_OrbitRelativeFrame::wrap_Object(result);
-      }
-
-      static PyObject *t_LOFType_valueOf(PyTypeObject *type, PyObject *args)
-      {
-        ::java::lang::String a0((jobject) NULL);
-        LOFType result((jobject) NULL);
-
-        if (!parseArgs(args, "s", &a0))
-        {
-          OBJ_CALL(result = ::org::orekit::frames::LOFType::valueOf(a0));
-          return t_LOFType::wrap_Object(result);
-        }
-
-        return callSuper(type, "valueOf", args, 2);
-      }
-
-      static PyObject *t_LOFType_values(PyTypeObject *type)
-      {
-        JArray< LOFType > result((jobject) NULL);
-        OBJ_CALL(result = ::org::orekit::frames::LOFType::values());
-        return JArray<jobject>(result.this$).wrap(t_LOFType::wrap_jobject);
-      }
-      static PyObject *t_LOFType_get__parameters_(t_LOFType *self, void *data)
-      {
-        return typeParameters(self->parameters, sizeof(self->parameters));
-      }
-
-      static PyObject *t_LOFType_get__name(t_LOFType *self, void *data)
-      {
-        ::java::lang::String value((jobject) NULL);
-        OBJ_CALL(value = self->object.getName());
-        return j2p(value);
-      }
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "org/orekit/propagation/semianalytical/dsst/forces/DSSTJ2SquaredClosedFormContext.h"
-#include "org/orekit/forces/gravity/potential/UnnormalizedSphericalHarmonicsProvider.h"
-#include "java/lang/Class.h"
-#include "org/orekit/propagation/semianalytical/dsst/utilities/AuxiliaryElements.h"
-#include "JArray.h"
-
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace semianalytical {
-        namespace dsst {
-          namespace forces {
-
-            ::java::lang::Class *DSSTJ2SquaredClosedFormContext::class$ = NULL;
-            jmethodID *DSSTJ2SquaredClosedFormContext::mids$ = NULL;
-            bool DSSTJ2SquaredClosedFormContext::live$ = false;
-
-            jclass DSSTJ2SquaredClosedFormContext::initializeClass(bool getOnly)
-            {
-              if (getOnly)
-                return (jclass) (live$ ? class$->this$ : NULL);
-              if (class$ == NULL)
-              {
-                jclass cls = (jclass) env->findClass("org/orekit/propagation/semianalytical/dsst/forces/DSSTJ2SquaredClosedFormContext");
-
-                mids$ = new jmethodID[max_mid];
-                mids$[mid_init$_c806627826c0aecb] = env->getMethodID(cls, "<init>", "(Lorg/orekit/propagation/semianalytical/dsst/utilities/AuxiliaryElements;Lorg/orekit/forces/gravity/potential/UnnormalizedSphericalHarmonicsProvider;)V");
-                mids$[mid_getA4_456d9a2f64d6b28d] = env->getMethodID(cls, "getA4", "()D");
-                mids$[mid_getAlpha4_456d9a2f64d6b28d] = env->getMethodID(cls, "getAlpha4", "()D");
-                mids$[mid_getC_456d9a2f64d6b28d] = env->getMethodID(cls, "getC", "()D");
-                mids$[mid_getEta_456d9a2f64d6b28d] = env->getMethodID(cls, "getEta", "()D");
-                mids$[mid_getS2_456d9a2f64d6b28d] = env->getMethodID(cls, "getS2", "()D");
-
-                class$ = new ::java::lang::Class(cls);
-                live$ = true;
-              }
-              return (jclass) class$->this$;
-            }
-
-            DSSTJ2SquaredClosedFormContext::DSSTJ2SquaredClosedFormContext(const ::org::orekit::propagation::semianalytical::dsst::utilities::AuxiliaryElements & a0, const ::org::orekit::forces::gravity::potential::UnnormalizedSphericalHarmonicsProvider & a1) : ::org::orekit::propagation::semianalytical::dsst::forces::ForceModelContext(env->newObject(initializeClass, &mids$, mid_init$_c806627826c0aecb, a0.this$, a1.this$)) {}
-
-            jdouble DSSTJ2SquaredClosedFormContext::getA4() const
-            {
-              return env->callDoubleMethod(this$, mids$[mid_getA4_456d9a2f64d6b28d]);
-            }
-
-            jdouble DSSTJ2SquaredClosedFormContext::getAlpha4() const
-            {
-              return env->callDoubleMethod(this$, mids$[mid_getAlpha4_456d9a2f64d6b28d]);
-            }
-
-            jdouble DSSTJ2SquaredClosedFormContext::getC() const
-            {
-              return env->callDoubleMethod(this$, mids$[mid_getC_456d9a2f64d6b28d]);
-            }
-
-            jdouble DSSTJ2SquaredClosedFormContext::getEta() const
-            {
-              return env->callDoubleMethod(this$, mids$[mid_getEta_456d9a2f64d6b28d]);
-            }
-
-            jdouble DSSTJ2SquaredClosedFormContext::getS2() const
-            {
-              return env->callDoubleMethod(this$, mids$[mid_getS2_456d9a2f64d6b28d]);
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace semianalytical {
-        namespace dsst {
-          namespace forces {
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_cast_(PyTypeObject *type, PyObject *arg);
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_instance_(PyTypeObject *type, PyObject *arg);
-            static int t_DSSTJ2SquaredClosedFormContext_init_(t_DSSTJ2SquaredClosedFormContext *self, PyObject *args, PyObject *kwds);
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_getA4(t_DSSTJ2SquaredClosedFormContext *self);
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_getAlpha4(t_DSSTJ2SquaredClosedFormContext *self);
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_getC(t_DSSTJ2SquaredClosedFormContext *self);
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_getEta(t_DSSTJ2SquaredClosedFormContext *self);
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_getS2(t_DSSTJ2SquaredClosedFormContext *self);
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_get__a4(t_DSSTJ2SquaredClosedFormContext *self, void *data);
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_get__alpha4(t_DSSTJ2SquaredClosedFormContext *self, void *data);
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_get__c(t_DSSTJ2SquaredClosedFormContext *self, void *data);
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_get__eta(t_DSSTJ2SquaredClosedFormContext *self, void *data);
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_get__s2(t_DSSTJ2SquaredClosedFormContext *self, void *data);
-            static PyGetSetDef t_DSSTJ2SquaredClosedFormContext__fields_[] = {
-              DECLARE_GET_FIELD(t_DSSTJ2SquaredClosedFormContext, a4),
-              DECLARE_GET_FIELD(t_DSSTJ2SquaredClosedFormContext, alpha4),
-              DECLARE_GET_FIELD(t_DSSTJ2SquaredClosedFormContext, c),
-              DECLARE_GET_FIELD(t_DSSTJ2SquaredClosedFormContext, eta),
-              DECLARE_GET_FIELD(t_DSSTJ2SquaredClosedFormContext, s2),
-              { NULL, NULL, NULL, NULL, NULL }
-            };
-
-            static PyMethodDef t_DSSTJ2SquaredClosedFormContext__methods_[] = {
-              DECLARE_METHOD(t_DSSTJ2SquaredClosedFormContext, cast_, METH_O | METH_CLASS),
-              DECLARE_METHOD(t_DSSTJ2SquaredClosedFormContext, instance_, METH_O | METH_CLASS),
-              DECLARE_METHOD(t_DSSTJ2SquaredClosedFormContext, getA4, METH_NOARGS),
-              DECLARE_METHOD(t_DSSTJ2SquaredClosedFormContext, getAlpha4, METH_NOARGS),
-              DECLARE_METHOD(t_DSSTJ2SquaredClosedFormContext, getC, METH_NOARGS),
-              DECLARE_METHOD(t_DSSTJ2SquaredClosedFormContext, getEta, METH_NOARGS),
-              DECLARE_METHOD(t_DSSTJ2SquaredClosedFormContext, getS2, METH_NOARGS),
-              { NULL, NULL, 0, NULL }
-            };
-
-            static PyType_Slot PY_TYPE_SLOTS(DSSTJ2SquaredClosedFormContext)[] = {
-              { Py_tp_methods, t_DSSTJ2SquaredClosedFormContext__methods_ },
-              { Py_tp_init, (void *) t_DSSTJ2SquaredClosedFormContext_init_ },
-              { Py_tp_getset, t_DSSTJ2SquaredClosedFormContext__fields_ },
-              { 0, NULL }
-            };
-
-            static PyType_Def *PY_TYPE_BASES(DSSTJ2SquaredClosedFormContext)[] = {
-              &PY_TYPE_DEF(::org::orekit::propagation::semianalytical::dsst::forces::ForceModelContext),
-              NULL
-            };
-
-            DEFINE_TYPE(DSSTJ2SquaredClosedFormContext, t_DSSTJ2SquaredClosedFormContext, DSSTJ2SquaredClosedFormContext);
-
-            void t_DSSTJ2SquaredClosedFormContext::install(PyObject *module)
-            {
-              installType(&PY_TYPE(DSSTJ2SquaredClosedFormContext), &PY_TYPE_DEF(DSSTJ2SquaredClosedFormContext), module, "DSSTJ2SquaredClosedFormContext", 0);
-            }
-
-            void t_DSSTJ2SquaredClosedFormContext::initialize(PyObject *module)
-            {
-              PyObject_SetAttrString((PyObject *) PY_TYPE(DSSTJ2SquaredClosedFormContext), "class_", make_descriptor(DSSTJ2SquaredClosedFormContext::initializeClass, 1));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(DSSTJ2SquaredClosedFormContext), "wrapfn_", make_descriptor(t_DSSTJ2SquaredClosedFormContext::wrap_jobject));
-              PyObject_SetAttrString((PyObject *) PY_TYPE(DSSTJ2SquaredClosedFormContext), "boxfn_", make_descriptor(boxObject));
-            }
-
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_cast_(PyTypeObject *type, PyObject *arg)
-            {
-              if (!(arg = castCheck(arg, DSSTJ2SquaredClosedFormContext::initializeClass, 1)))
-                return NULL;
-              return t_DSSTJ2SquaredClosedFormContext::wrap_Object(DSSTJ2SquaredClosedFormContext(((t_DSSTJ2SquaredClosedFormContext *) arg)->object.this$));
-            }
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_instance_(PyTypeObject *type, PyObject *arg)
-            {
-              if (!castCheck(arg, DSSTJ2SquaredClosedFormContext::initializeClass, 0))
-                Py_RETURN_FALSE;
-              Py_RETURN_TRUE;
-            }
-
-            static int t_DSSTJ2SquaredClosedFormContext_init_(t_DSSTJ2SquaredClosedFormContext *self, PyObject *args, PyObject *kwds)
-            {
-              ::org::orekit::propagation::semianalytical::dsst::utilities::AuxiliaryElements a0((jobject) NULL);
-              ::org::orekit::forces::gravity::potential::UnnormalizedSphericalHarmonicsProvider a1((jobject) NULL);
-              DSSTJ2SquaredClosedFormContext object((jobject) NULL);
-
-              if (!parseArgs(args, "kk", ::org::orekit::propagation::semianalytical::dsst::utilities::AuxiliaryElements::initializeClass, ::org::orekit::forces::gravity::potential::UnnormalizedSphericalHarmonicsProvider::initializeClass, &a0, &a1))
-              {
-                INT_CALL(object = DSSTJ2SquaredClosedFormContext(a0, a1));
-                self->object = object;
-              }
-              else
-              {
-                PyErr_SetArgsError((PyObject *) self, "__init__", args);
-                return -1;
-              }
-
-              return 0;
-            }
-
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_getA4(t_DSSTJ2SquaredClosedFormContext *self)
-            {
-              jdouble result;
-              OBJ_CALL(result = self->object.getA4());
-              return PyFloat_FromDouble((double) result);
-            }
-
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_getAlpha4(t_DSSTJ2SquaredClosedFormContext *self)
-            {
-              jdouble result;
-              OBJ_CALL(result = self->object.getAlpha4());
-              return PyFloat_FromDouble((double) result);
-            }
-
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_getC(t_DSSTJ2SquaredClosedFormContext *self)
-            {
-              jdouble result;
-              OBJ_CALL(result = self->object.getC());
-              return PyFloat_FromDouble((double) result);
-            }
-
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_getEta(t_DSSTJ2SquaredClosedFormContext *self)
-            {
-              jdouble result;
-              OBJ_CALL(result = self->object.getEta());
-              return PyFloat_FromDouble((double) result);
-            }
-
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_getS2(t_DSSTJ2SquaredClosedFormContext *self)
-            {
-              jdouble result;
-              OBJ_CALL(result = self->object.getS2());
-              return PyFloat_FromDouble((double) result);
-            }
-
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_get__a4(t_DSSTJ2SquaredClosedFormContext *self, void *data)
-            {
-              jdouble value;
-              OBJ_CALL(value = self->object.getA4());
-              return PyFloat_FromDouble((double) value);
-            }
-
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_get__alpha4(t_DSSTJ2SquaredClosedFormContext *self, void *data)
-            {
-              jdouble value;
-              OBJ_CALL(value = self->object.getAlpha4());
-              return PyFloat_FromDouble((double) value);
-            }
-
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_get__c(t_DSSTJ2SquaredClosedFormContext *self, void *data)
-            {
-              jdouble value;
-              OBJ_CALL(value = self->object.getC());
-              return PyFloat_FromDouble((double) value);
-            }
-
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_get__eta(t_DSSTJ2SquaredClosedFormContext *self, void *data)
-            {
-              jdouble value;
-              OBJ_CALL(value = self->object.getEta());
-              return PyFloat_FromDouble((double) value);
-            }
-
-            static PyObject *t_DSSTJ2SquaredClosedFormContext_get__s2(t_DSSTJ2SquaredClosedFormContext *self, void *data)
-            {
-              jdouble value;
-              OBJ_CALL(value = self->object.getS2());
-              return PyFloat_FromDouble((double) value);
-            }
-          }
-        }
-      }
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "org/hipparchus/complex/ComplexComparator.h"
-#include "java/io/Serializable.h"
-#include "java/util/Comparator.h"
-#include "java/lang/Class.h"
-#include "org/hipparchus/complex/Complex.h"
-#include "JArray.h"
-
-namespace org {
-  namespace hipparchus {
-    namespace complex {
-
-      ::java::lang::Class *ComplexComparator::class$ = NULL;
-      jmethodID *ComplexComparator::mids$ = NULL;
-      bool ComplexComparator::live$ = false;
-
-      jclass ComplexComparator::initializeClass(bool getOnly)
-      {
-        if (getOnly)
-          return (jclass) (live$ ? class$->this$ : NULL);
-        if (class$ == NULL)
-        {
-          jclass cls = (jclass) env->findClass("org/hipparchus/complex/ComplexComparator");
-
-          mids$ = new jmethodID[max_mid];
-          mids$[mid_init$_7ae3461a92a43152] = env->getMethodID(cls, "<init>", "()V");
-          mids$[mid_compare_98b795d52300754d] = env->getMethodID(cls, "compare", "(Lorg/hipparchus/complex/Complex;Lorg/hipparchus/complex/Complex;)I");
-
-          class$ = new ::java::lang::Class(cls);
-          live$ = true;
-        }
-        return (jclass) class$->this$;
-      }
-
-      ComplexComparator::ComplexComparator() : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_7ae3461a92a43152)) {}
-
-      jint ComplexComparator::compare(const ::org::hipparchus::complex::Complex & a0, const ::org::hipparchus::complex::Complex & a1) const
-      {
-        return env->callIntMethod(this$, mids$[mid_compare_98b795d52300754d], a0.this$, a1.this$);
-      }
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace org {
-  namespace hipparchus {
-    namespace complex {
-      static PyObject *t_ComplexComparator_cast_(PyTypeObject *type, PyObject *arg);
-      static PyObject *t_ComplexComparator_instance_(PyTypeObject *type, PyObject *arg);
-      static int t_ComplexComparator_init_(t_ComplexComparator *self, PyObject *args, PyObject *kwds);
-      static PyObject *t_ComplexComparator_compare(t_ComplexComparator *self, PyObject *args);
-
-      static PyMethodDef t_ComplexComparator__methods_[] = {
-        DECLARE_METHOD(t_ComplexComparator, cast_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_ComplexComparator, instance_, METH_O | METH_CLASS),
-        DECLARE_METHOD(t_ComplexComparator, compare, METH_VARARGS),
-        { NULL, NULL, 0, NULL }
-      };
-
-      static PyType_Slot PY_TYPE_SLOTS(ComplexComparator)[] = {
-        { Py_tp_methods, t_ComplexComparator__methods_ },
-        { Py_tp_init, (void *) t_ComplexComparator_init_ },
-        { 0, NULL }
-      };
-
-      static PyType_Def *PY_TYPE_BASES(ComplexComparator)[] = {
-        &PY_TYPE_DEF(::java::lang::Object),
-        NULL
-      };
-
-      DEFINE_TYPE(ComplexComparator, t_ComplexComparator, ComplexComparator);
-
-      void t_ComplexComparator::install(PyObject *module)
-      {
-        installType(&PY_TYPE(ComplexComparator), &PY_TYPE_DEF(ComplexComparator), module, "ComplexComparator", 0);
-      }
-
-      void t_ComplexComparator::initialize(PyObject *module)
-      {
-        PyObject_SetAttrString((PyObject *) PY_TYPE(ComplexComparator), "class_", make_descriptor(ComplexComparator::initializeClass, 1));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(ComplexComparator), "wrapfn_", make_descriptor(t_ComplexComparator::wrap_jobject));
-        PyObject_SetAttrString((PyObject *) PY_TYPE(ComplexComparator), "boxfn_", make_descriptor(boxObject));
-      }
-
-      static PyObject *t_ComplexComparator_cast_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!(arg = castCheck(arg, ComplexComparator::initializeClass, 1)))
-          return NULL;
-        return t_ComplexComparator::wrap_Object(ComplexComparator(((t_ComplexComparator *) arg)->object.this$));
-      }
-      static PyObject *t_ComplexComparator_instance_(PyTypeObject *type, PyObject *arg)
-      {
-        if (!castCheck(arg, ComplexComparator::initializeClass, 0))
-          Py_RETURN_FALSE;
-        Py_RETURN_TRUE;
-      }
-
-      static int t_ComplexComparator_init_(t_ComplexComparator *self, PyObject *args, PyObject *kwds)
-      {
-        ComplexComparator object((jobject) NULL);
-
-        INT_CALL(object = ComplexComparator());
-        self->object = object;
-
-        return 0;
-      }
-
-      static PyObject *t_ComplexComparator_compare(t_ComplexComparator *self, PyObject *args)
-      {
-        ::org::hipparchus::complex::Complex a0((jobject) NULL);
-        ::org::hipparchus::complex::Complex a1((jobject) NULL);
-        jint result;
-
-        if (!parseArgs(args, "kk", ::org::hipparchus::complex::Complex::initializeClass, ::org::hipparchus::complex::Complex::initializeClass, &a0, &a1))
-        {
-          OBJ_CALL(result = self->object.compare(a0, a1));
-          return PyLong_FromLong((long) result);
-        }
-
-        PyErr_SetArgsError((PyObject *) self, "compare", args);
-        return NULL;
-      }
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "org/hipparchus/stat/ranking/NaNStrategy.h"
-#include "org/hipparchus/stat/ranking/NaNStrategy.h"
-#include "java/lang/String.h"
-#include "java/lang/Class.h"
-#include "JArray.h"
-
-namespace org {
-  namespace hipparchus {
-    namespace stat {
-      namespace ranking {
-
-        ::java::lang::Class *NaNStrategy::class$ = NULL;
-        jmethodID *NaNStrategy::mids$ = NULL;
-        bool NaNStrategy::live$ = false;
-        NaNStrategy *NaNStrategy::FAILED = NULL;
-        NaNStrategy *NaNStrategy::FIXED = NULL;
-        NaNStrategy *NaNStrategy::MAXIMAL = NULL;
-        NaNStrategy *NaNStrategy::MINIMAL = NULL;
-        NaNStrategy *NaNStrategy::REMOVED = NULL;
-
-        jclass NaNStrategy::initializeClass(bool getOnly)
-        {
-          if (getOnly)
-            return (jclass) (live$ ? class$->this$ : NULL);
-          if (class$ == NULL)
-          {
-            jclass cls = (jclass) env->findClass("org/hipparchus/stat/ranking/NaNStrategy");
-
-            mids$ = new jmethodID[max_mid];
-            mids$[mid_valueOf_fb3d0e097119eac2] = env->getStaticMethodID(cls, "valueOf", "(Ljava/lang/String;)Lorg/hipparchus/stat/ranking/NaNStrategy;");
-            mids$[mid_values_a5af87edf0a7e54f] = env->getStaticMethodID(cls, "values", "()[Lorg/hipparchus/stat/ranking/NaNStrategy;");
-
-            class$ = new ::java::lang::Class(cls);
-            cls = (jclass) class$->this$;
-
-            FAILED = new NaNStrategy(env->getStaticObjectField(cls, "FAILED", "Lorg/hipparchus/stat/ranking/NaNStrategy;"));
-            FIXED = new NaNStrategy(env->getStaticObjectField(cls, "FIXED", "Lorg/hipparchus/stat/ranking/NaNStrategy;"));
-            MAXIMAL = new NaNStrategy(env->getStaticObjectField(cls, "MAXIMAL", "Lorg/hipparchus/stat/ranking/NaNStrategy;"));
-            MINIMAL = new NaNStrategy(env->getStaticObjectField(cls, "MINIMAL", "Lorg/hipparchus/stat/ranking/NaNStrategy;"));
-            REMOVED = new NaNStrategy(env->getStaticObjectField(cls, "REMOVED", "Lorg/hipparchus/stat/ranking/NaNStrategy;"));
-            live$ = true;
-          }
-          return (jclass) class$->this$;
-        }
-
-        NaNStrategy NaNStrategy::valueOf(const ::java::lang::String & a0)
-        {
-          jclass cls = env->getClass(initializeClass);
-          return NaNStrategy(env->callStaticObjectMethod(cls, mids$[mid_valueOf_fb3d0e097119eac2], a0.this$));
-        }
-
-        JArray< NaNStrategy > NaNStrategy::values()
-        {
-          jclass cls = env->getClass(initializeClass);
-          return JArray< NaNStrategy >(env->callStaticObjectMethod(cls, mids$[mid_values_a5af87edf0a7e54f]));
-        }
-      }
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace org {
-  namespace hipparchus {
-    namespace stat {
-      namespace ranking {
-        static PyObject *t_NaNStrategy_cast_(PyTypeObject *type, PyObject *arg);
-        static PyObject *t_NaNStrategy_instance_(PyTypeObject *type, PyObject *arg);
-        static PyObject *t_NaNStrategy_of_(t_NaNStrategy *self, PyObject *args);
-        static PyObject *t_NaNStrategy_valueOf(PyTypeObject *type, PyObject *args);
-        static PyObject *t_NaNStrategy_values(PyTypeObject *type);
-        static PyObject *t_NaNStrategy_get__parameters_(t_NaNStrategy *self, void *data);
-        static PyGetSetDef t_NaNStrategy__fields_[] = {
-          DECLARE_GET_FIELD(t_NaNStrategy, parameters_),
-          { NULL, NULL, NULL, NULL, NULL }
-        };
-
-        static PyMethodDef t_NaNStrategy__methods_[] = {
-          DECLARE_METHOD(t_NaNStrategy, cast_, METH_O | METH_CLASS),
-          DECLARE_METHOD(t_NaNStrategy, instance_, METH_O | METH_CLASS),
-          DECLARE_METHOD(t_NaNStrategy, of_, METH_VARARGS),
-          DECLARE_METHOD(t_NaNStrategy, valueOf, METH_VARARGS | METH_CLASS),
-          DECLARE_METHOD(t_NaNStrategy, values, METH_NOARGS | METH_CLASS),
-          { NULL, NULL, 0, NULL }
-        };
-
-        static PyType_Slot PY_TYPE_SLOTS(NaNStrategy)[] = {
-          { Py_tp_methods, t_NaNStrategy__methods_ },
-          { Py_tp_init, (void *) abstract_init },
-          { Py_tp_getset, t_NaNStrategy__fields_ },
-          { 0, NULL }
-        };
-
-        static PyType_Def *PY_TYPE_BASES(NaNStrategy)[] = {
-          &PY_TYPE_DEF(::java::lang::Enum),
-          NULL
-        };
-
-        DEFINE_TYPE(NaNStrategy, t_NaNStrategy, NaNStrategy);
-        PyObject *t_NaNStrategy::wrap_Object(const NaNStrategy& object, PyTypeObject *p0)
-        {
-          PyObject *obj = t_NaNStrategy::wrap_Object(object);
-          if (obj != NULL && obj != Py_None)
-          {
-            t_NaNStrategy *self = (t_NaNStrategy *) obj;
-            self->parameters[0] = p0;
-          }
-          return obj;
-        }
-
-        PyObject *t_NaNStrategy::wrap_jobject(const jobject& object, PyTypeObject *p0)
-        {
-          PyObject *obj = t_NaNStrategy::wrap_jobject(object);
-          if (obj != NULL && obj != Py_None)
-          {
-            t_NaNStrategy *self = (t_NaNStrategy *) obj;
-            self->parameters[0] = p0;
-          }
-          return obj;
-        }
-
-        void t_NaNStrategy::install(PyObject *module)
-        {
-          installType(&PY_TYPE(NaNStrategy), &PY_TYPE_DEF(NaNStrategy), module, "NaNStrategy", 0);
-        }
-
-        void t_NaNStrategy::initialize(PyObject *module)
-        {
-          PyObject_SetAttrString((PyObject *) PY_TYPE(NaNStrategy), "class_", make_descriptor(NaNStrategy::initializeClass, 1));
-          PyObject_SetAttrString((PyObject *) PY_TYPE(NaNStrategy), "wrapfn_", make_descriptor(t_NaNStrategy::wrap_jobject));
-          PyObject_SetAttrString((PyObject *) PY_TYPE(NaNStrategy), "boxfn_", make_descriptor(boxObject));
-          env->getClass(NaNStrategy::initializeClass);
-          PyObject_SetAttrString((PyObject *) PY_TYPE(NaNStrategy), "FAILED", make_descriptor(t_NaNStrategy::wrap_Object(*NaNStrategy::FAILED)));
-          PyObject_SetAttrString((PyObject *) PY_TYPE(NaNStrategy), "FIXED", make_descriptor(t_NaNStrategy::wrap_Object(*NaNStrategy::FIXED)));
-          PyObject_SetAttrString((PyObject *) PY_TYPE(NaNStrategy), "MAXIMAL", make_descriptor(t_NaNStrategy::wrap_Object(*NaNStrategy::MAXIMAL)));
-          PyObject_SetAttrString((PyObject *) PY_TYPE(NaNStrategy), "MINIMAL", make_descriptor(t_NaNStrategy::wrap_Object(*NaNStrategy::MINIMAL)));
-          PyObject_SetAttrString((PyObject *) PY_TYPE(NaNStrategy), "REMOVED", make_descriptor(t_NaNStrategy::wrap_Object(*NaNStrategy::REMOVED)));
-        }
-
-        static PyObject *t_NaNStrategy_cast_(PyTypeObject *type, PyObject *arg)
-        {
-          if (!(arg = castCheck(arg, NaNStrategy::initializeClass, 1)))
-            return NULL;
-          return t_NaNStrategy::wrap_Object(NaNStrategy(((t_NaNStrategy *) arg)->object.this$));
-        }
-        static PyObject *t_NaNStrategy_instance_(PyTypeObject *type, PyObject *arg)
-        {
-          if (!castCheck(arg, NaNStrategy::initializeClass, 0))
-            Py_RETURN_FALSE;
-          Py_RETURN_TRUE;
-        }
-
-        static PyObject *t_NaNStrategy_of_(t_NaNStrategy *self, PyObject *args)
-        {
-          if (!parseArg(args, "T", 1, &(self->parameters)))
-            Py_RETURN_SELF;
-          return PyErr_SetArgsError((PyObject *) self, "of_", args);
-        }
-
-        static PyObject *t_NaNStrategy_valueOf(PyTypeObject *type, PyObject *args)
-        {
-          ::java::lang::String a0((jobject) NULL);
-          NaNStrategy result((jobject) NULL);
-
-          if (!parseArgs(args, "s", &a0))
-          {
-            OBJ_CALL(result = ::org::hipparchus::stat::ranking::NaNStrategy::valueOf(a0));
-            return t_NaNStrategy::wrap_Object(result);
-          }
-
-          return callSuper(type, "valueOf", args, 2);
-        }
-
-        static PyObject *t_NaNStrategy_values(PyTypeObject *type)
-        {
-          JArray< NaNStrategy > result((jobject) NULL);
-          OBJ_CALL(result = ::org::hipparchus::stat::ranking::NaNStrategy::values());
-          return JArray<jobject>(result.this$).wrap(t_NaNStrategy::wrap_jobject);
-        }
-        static PyObject *t_NaNStrategy_get__parameters_(t_NaNStrategy *self, void *data)
-        {
-          return typeParameters(self->parameters, sizeof(self->parameters));
-        }
-      }
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "org/orekit/estimation/measurements/modifiers/RelativisticClockInterSatellitesPhaseModifier.h"
-#include "java/util/List.h"
-#include "org/orekit/estimation/measurements/gnss/InterSatellitesPhase.h"
-#include "org/orekit/estimation/measurements/EstimatedMeasurementBase.h"
 #include "java/lang/Class.h"
 #include "org/orekit/utils/ParameterDriver.h"
-#include "org/orekit/estimation/measurements/EstimationModifier.h"
+#include "org/orekit/time/FieldAbsoluteDate.h"
+#include "org/orekit/time/TimeScale.h"
+#include "org/orekit/propagation/SpacecraftState.h"
 #include "JArray.h"
 
 namespace org {
   namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        namespace modifiers {
+    namespace models {
+      namespace earth {
+        namespace ionosphere {
 
-          ::java::lang::Class *RelativisticClockInterSatellitesPhaseModifier::class$ = NULL;
-          jmethodID *RelativisticClockInterSatellitesPhaseModifier::mids$ = NULL;
-          bool RelativisticClockInterSatellitesPhaseModifier::live$ = false;
+          ::java::lang::Class *KlobucharIonoModel::class$ = NULL;
+          jmethodID *KlobucharIonoModel::mids$ = NULL;
+          bool KlobucharIonoModel::live$ = false;
 
-          jclass RelativisticClockInterSatellitesPhaseModifier::initializeClass(bool getOnly)
+          jclass KlobucharIonoModel::initializeClass(bool getOnly)
           {
             if (getOnly)
               return (jclass) (live$ ? class$->this$ : NULL);
             if (class$ == NULL)
             {
-              jclass cls = (jclass) env->findClass("org/orekit/estimation/measurements/modifiers/RelativisticClockInterSatellitesPhaseModifier");
+              jclass cls = (jclass) env->findClass("org/orekit/models/earth/ionosphere/KlobucharIonoModel");
 
               mids$ = new jmethodID[max_mid];
-              mids$[mid_init$_7ae3461a92a43152] = env->getMethodID(cls, "<init>", "()V");
-              mids$[mid_getParametersDrivers_a6156df500549a58] = env->getMethodID(cls, "getParametersDrivers", "()Ljava/util/List;");
-              mids$[mid_modifyWithoutDerivatives_811f96960c94c1de] = env->getMethodID(cls, "modifyWithoutDerivatives", "(Lorg/orekit/estimation/measurements/EstimatedMeasurementBase;)V");
+              mids$[mid_init$_e1f4b15468f5564a] = env->getMethodID(cls, "<init>", "([D[D)V");
+              mids$[mid_init$_c9965c971ad94126] = env->getMethodID(cls, "<init>", "([D[DLorg/orekit/time/TimeScale;)V");
+              mids$[mid_getParametersDrivers_2afa36052df4765d] = env->getMethodID(cls, "getParametersDrivers", "()Ljava/util/List;");
+              mids$[mid_pathDelay_28325ab4dabb069a] = env->getMethodID(cls, "pathDelay", "(Lorg/orekit/propagation/FieldSpacecraftState;Lorg/orekit/frames/TopocentricFrame;D[Lorg/hipparchus/CalculusFieldElement;)Lorg/hipparchus/CalculusFieldElement;");
+              mids$[mid_pathDelay_bea489d08473aa2e] = env->getMethodID(cls, "pathDelay", "(Lorg/orekit/propagation/SpacecraftState;Lorg/orekit/frames/TopocentricFrame;D[D)D");
+              mids$[mid_pathDelay_9d8059e615e4302f] = env->getMethodID(cls, "pathDelay", "(Lorg/orekit/time/AbsoluteDate;Lorg/orekit/bodies/GeodeticPoint;DDD[D)D");
+              mids$[mid_pathDelay_2787d703045bd2bf] = env->getMethodID(cls, "pathDelay", "(Lorg/orekit/time/FieldAbsoluteDate;Lorg/orekit/bodies/FieldGeodeticPoint;Lorg/hipparchus/CalculusFieldElement;Lorg/hipparchus/CalculusFieldElement;D[Lorg/hipparchus/CalculusFieldElement;)Lorg/hipparchus/CalculusFieldElement;");
 
               class$ = new ::java::lang::Class(cls);
               live$ = true;
@@ -7482,16 +7050,33 @@ namespace org {
             return (jclass) class$->this$;
           }
 
-          RelativisticClockInterSatellitesPhaseModifier::RelativisticClockInterSatellitesPhaseModifier() : ::org::orekit::estimation::measurements::modifiers::AbstractRelativisticClockModifier(env->newObject(initializeClass, &mids$, mid_init$_7ae3461a92a43152)) {}
+          KlobucharIonoModel::KlobucharIonoModel(const JArray< jdouble > & a0, const JArray< jdouble > & a1) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_e1f4b15468f5564a, a0.this$, a1.this$)) {}
 
-          ::java::util::List RelativisticClockInterSatellitesPhaseModifier::getParametersDrivers() const
+          KlobucharIonoModel::KlobucharIonoModel(const JArray< jdouble > & a0, const JArray< jdouble > & a1, const ::org::orekit::time::TimeScale & a2) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_c9965c971ad94126, a0.this$, a1.this$, a2.this$)) {}
+
+          ::java::util::List KlobucharIonoModel::getParametersDrivers() const
           {
-            return ::java::util::List(env->callObjectMethod(this$, mids$[mid_getParametersDrivers_a6156df500549a58]));
+            return ::java::util::List(env->callObjectMethod(this$, mids$[mid_getParametersDrivers_2afa36052df4765d]));
           }
 
-          void RelativisticClockInterSatellitesPhaseModifier::modifyWithoutDerivatives(const ::org::orekit::estimation::measurements::EstimatedMeasurementBase & a0) const
+          ::org::hipparchus::CalculusFieldElement KlobucharIonoModel::pathDelay(const ::org::orekit::propagation::FieldSpacecraftState & a0, const ::org::orekit::frames::TopocentricFrame & a1, jdouble a2, const JArray< ::org::hipparchus::CalculusFieldElement > & a3) const
           {
-            env->callVoidMethod(this$, mids$[mid_modifyWithoutDerivatives_811f96960c94c1de], a0.this$);
+            return ::org::hipparchus::CalculusFieldElement(env->callObjectMethod(this$, mids$[mid_pathDelay_28325ab4dabb069a], a0.this$, a1.this$, a2, a3.this$));
+          }
+
+          jdouble KlobucharIonoModel::pathDelay(const ::org::orekit::propagation::SpacecraftState & a0, const ::org::orekit::frames::TopocentricFrame & a1, jdouble a2, const JArray< jdouble > & a3) const
+          {
+            return env->callDoubleMethod(this$, mids$[mid_pathDelay_bea489d08473aa2e], a0.this$, a1.this$, a2, a3.this$);
+          }
+
+          jdouble KlobucharIonoModel::pathDelay(const ::org::orekit::time::AbsoluteDate & a0, const ::org::orekit::bodies::GeodeticPoint & a1, jdouble a2, jdouble a3, jdouble a4, const JArray< jdouble > & a5) const
+          {
+            return env->callDoubleMethod(this$, mids$[mid_pathDelay_9d8059e615e4302f], a0.this$, a1.this$, a2, a3, a4, a5.this$);
+          }
+
+          ::org::hipparchus::CalculusFieldElement KlobucharIonoModel::pathDelay(const ::org::orekit::time::FieldAbsoluteDate & a0, const ::org::orekit::bodies::FieldGeodeticPoint & a1, const ::org::hipparchus::CalculusFieldElement & a2, const ::org::hipparchus::CalculusFieldElement & a3, jdouble a4, const JArray< ::org::hipparchus::CalculusFieldElement > & a5) const
+          {
+            return ::org::hipparchus::CalculusFieldElement(env->callObjectMethod(this$, mids$[mid_pathDelay_2787d703045bd2bf], a0.this$, a1.this$, a2.this$, a3.this$, a4, a5.this$));
           }
         }
       }
@@ -7505,942 +7090,195 @@ namespace org {
 
 namespace org {
   namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        namespace modifiers {
-          static PyObject *t_RelativisticClockInterSatellitesPhaseModifier_cast_(PyTypeObject *type, PyObject *arg);
-          static PyObject *t_RelativisticClockInterSatellitesPhaseModifier_instance_(PyTypeObject *type, PyObject *arg);
-          static int t_RelativisticClockInterSatellitesPhaseModifier_init_(t_RelativisticClockInterSatellitesPhaseModifier *self, PyObject *args, PyObject *kwds);
-          static PyObject *t_RelativisticClockInterSatellitesPhaseModifier_getParametersDrivers(t_RelativisticClockInterSatellitesPhaseModifier *self);
-          static PyObject *t_RelativisticClockInterSatellitesPhaseModifier_modifyWithoutDerivatives(t_RelativisticClockInterSatellitesPhaseModifier *self, PyObject *arg);
-          static PyObject *t_RelativisticClockInterSatellitesPhaseModifier_get__parametersDrivers(t_RelativisticClockInterSatellitesPhaseModifier *self, void *data);
-          static PyGetSetDef t_RelativisticClockInterSatellitesPhaseModifier__fields_[] = {
-            DECLARE_GET_FIELD(t_RelativisticClockInterSatellitesPhaseModifier, parametersDrivers),
+    namespace models {
+      namespace earth {
+        namespace ionosphere {
+          static PyObject *t_KlobucharIonoModel_cast_(PyTypeObject *type, PyObject *arg);
+          static PyObject *t_KlobucharIonoModel_instance_(PyTypeObject *type, PyObject *arg);
+          static int t_KlobucharIonoModel_init_(t_KlobucharIonoModel *self, PyObject *args, PyObject *kwds);
+          static PyObject *t_KlobucharIonoModel_getParametersDrivers(t_KlobucharIonoModel *self);
+          static PyObject *t_KlobucharIonoModel_pathDelay(t_KlobucharIonoModel *self, PyObject *args);
+          static PyObject *t_KlobucharIonoModel_get__parametersDrivers(t_KlobucharIonoModel *self, void *data);
+          static PyGetSetDef t_KlobucharIonoModel__fields_[] = {
+            DECLARE_GET_FIELD(t_KlobucharIonoModel, parametersDrivers),
             { NULL, NULL, NULL, NULL, NULL }
           };
 
-          static PyMethodDef t_RelativisticClockInterSatellitesPhaseModifier__methods_[] = {
-            DECLARE_METHOD(t_RelativisticClockInterSatellitesPhaseModifier, cast_, METH_O | METH_CLASS),
-            DECLARE_METHOD(t_RelativisticClockInterSatellitesPhaseModifier, instance_, METH_O | METH_CLASS),
-            DECLARE_METHOD(t_RelativisticClockInterSatellitesPhaseModifier, getParametersDrivers, METH_NOARGS),
-            DECLARE_METHOD(t_RelativisticClockInterSatellitesPhaseModifier, modifyWithoutDerivatives, METH_O),
+          static PyMethodDef t_KlobucharIonoModel__methods_[] = {
+            DECLARE_METHOD(t_KlobucharIonoModel, cast_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_KlobucharIonoModel, instance_, METH_O | METH_CLASS),
+            DECLARE_METHOD(t_KlobucharIonoModel, getParametersDrivers, METH_NOARGS),
+            DECLARE_METHOD(t_KlobucharIonoModel, pathDelay, METH_VARARGS),
             { NULL, NULL, 0, NULL }
           };
 
-          static PyType_Slot PY_TYPE_SLOTS(RelativisticClockInterSatellitesPhaseModifier)[] = {
-            { Py_tp_methods, t_RelativisticClockInterSatellitesPhaseModifier__methods_ },
-            { Py_tp_init, (void *) t_RelativisticClockInterSatellitesPhaseModifier_init_ },
-            { Py_tp_getset, t_RelativisticClockInterSatellitesPhaseModifier__fields_ },
+          static PyType_Slot PY_TYPE_SLOTS(KlobucharIonoModel)[] = {
+            { Py_tp_methods, t_KlobucharIonoModel__methods_ },
+            { Py_tp_init, (void *) t_KlobucharIonoModel_init_ },
+            { Py_tp_getset, t_KlobucharIonoModel__fields_ },
             { 0, NULL }
           };
 
-          static PyType_Def *PY_TYPE_BASES(RelativisticClockInterSatellitesPhaseModifier)[] = {
-            &PY_TYPE_DEF(::org::orekit::estimation::measurements::modifiers::AbstractRelativisticClockModifier),
+          static PyType_Def *PY_TYPE_BASES(KlobucharIonoModel)[] = {
+            &PY_TYPE_DEF(::java::lang::Object),
             NULL
           };
 
-          DEFINE_TYPE(RelativisticClockInterSatellitesPhaseModifier, t_RelativisticClockInterSatellitesPhaseModifier, RelativisticClockInterSatellitesPhaseModifier);
+          DEFINE_TYPE(KlobucharIonoModel, t_KlobucharIonoModel, KlobucharIonoModel);
 
-          void t_RelativisticClockInterSatellitesPhaseModifier::install(PyObject *module)
+          void t_KlobucharIonoModel::install(PyObject *module)
           {
-            installType(&PY_TYPE(RelativisticClockInterSatellitesPhaseModifier), &PY_TYPE_DEF(RelativisticClockInterSatellitesPhaseModifier), module, "RelativisticClockInterSatellitesPhaseModifier", 0);
+            installType(&PY_TYPE(KlobucharIonoModel), &PY_TYPE_DEF(KlobucharIonoModel), module, "KlobucharIonoModel", 0);
           }
 
-          void t_RelativisticClockInterSatellitesPhaseModifier::initialize(PyObject *module)
+          void t_KlobucharIonoModel::initialize(PyObject *module)
           {
-            PyObject_SetAttrString((PyObject *) PY_TYPE(RelativisticClockInterSatellitesPhaseModifier), "class_", make_descriptor(RelativisticClockInterSatellitesPhaseModifier::initializeClass, 1));
-            PyObject_SetAttrString((PyObject *) PY_TYPE(RelativisticClockInterSatellitesPhaseModifier), "wrapfn_", make_descriptor(t_RelativisticClockInterSatellitesPhaseModifier::wrap_jobject));
-            PyObject_SetAttrString((PyObject *) PY_TYPE(RelativisticClockInterSatellitesPhaseModifier), "boxfn_", make_descriptor(boxObject));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(KlobucharIonoModel), "class_", make_descriptor(KlobucharIonoModel::initializeClass, 1));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(KlobucharIonoModel), "wrapfn_", make_descriptor(t_KlobucharIonoModel::wrap_jobject));
+            PyObject_SetAttrString((PyObject *) PY_TYPE(KlobucharIonoModel), "boxfn_", make_descriptor(boxObject));
           }
 
-          static PyObject *t_RelativisticClockInterSatellitesPhaseModifier_cast_(PyTypeObject *type, PyObject *arg)
+          static PyObject *t_KlobucharIonoModel_cast_(PyTypeObject *type, PyObject *arg)
           {
-            if (!(arg = castCheck(arg, RelativisticClockInterSatellitesPhaseModifier::initializeClass, 1)))
+            if (!(arg = castCheck(arg, KlobucharIonoModel::initializeClass, 1)))
               return NULL;
-            return t_RelativisticClockInterSatellitesPhaseModifier::wrap_Object(RelativisticClockInterSatellitesPhaseModifier(((t_RelativisticClockInterSatellitesPhaseModifier *) arg)->object.this$));
+            return t_KlobucharIonoModel::wrap_Object(KlobucharIonoModel(((t_KlobucharIonoModel *) arg)->object.this$));
           }
-          static PyObject *t_RelativisticClockInterSatellitesPhaseModifier_instance_(PyTypeObject *type, PyObject *arg)
+          static PyObject *t_KlobucharIonoModel_instance_(PyTypeObject *type, PyObject *arg)
           {
-            if (!castCheck(arg, RelativisticClockInterSatellitesPhaseModifier::initializeClass, 0))
+            if (!castCheck(arg, KlobucharIonoModel::initializeClass, 0))
               Py_RETURN_FALSE;
             Py_RETURN_TRUE;
           }
 
-          static int t_RelativisticClockInterSatellitesPhaseModifier_init_(t_RelativisticClockInterSatellitesPhaseModifier *self, PyObject *args, PyObject *kwds)
+          static int t_KlobucharIonoModel_init_(t_KlobucharIonoModel *self, PyObject *args, PyObject *kwds)
           {
-            RelativisticClockInterSatellitesPhaseModifier object((jobject) NULL);
+            switch (PyTuple_GET_SIZE(args)) {
+             case 2:
+              {
+                JArray< jdouble > a0((jobject) NULL);
+                JArray< jdouble > a1((jobject) NULL);
+                KlobucharIonoModel object((jobject) NULL);
 
-            INT_CALL(object = RelativisticClockInterSatellitesPhaseModifier());
-            self->object = object;
+                if (!parseArgs(args, "[D[D", &a0, &a1))
+                {
+                  INT_CALL(object = KlobucharIonoModel(a0, a1));
+                  self->object = object;
+                  break;
+                }
+              }
+              goto err;
+             case 3:
+              {
+                JArray< jdouble > a0((jobject) NULL);
+                JArray< jdouble > a1((jobject) NULL);
+                ::org::orekit::time::TimeScale a2((jobject) NULL);
+                KlobucharIonoModel object((jobject) NULL);
+
+                if (!parseArgs(args, "[D[Dk", ::org::orekit::time::TimeScale::initializeClass, &a0, &a1, &a2))
+                {
+                  INT_CALL(object = KlobucharIonoModel(a0, a1, a2));
+                  self->object = object;
+                  break;
+                }
+              }
+             default:
+             err:
+              PyErr_SetArgsError((PyObject *) self, "__init__", args);
+              return -1;
+            }
 
             return 0;
           }
 
-          static PyObject *t_RelativisticClockInterSatellitesPhaseModifier_getParametersDrivers(t_RelativisticClockInterSatellitesPhaseModifier *self)
+          static PyObject *t_KlobucharIonoModel_getParametersDrivers(t_KlobucharIonoModel *self)
           {
             ::java::util::List result((jobject) NULL);
             OBJ_CALL(result = self->object.getParametersDrivers());
             return ::java::util::t_List::wrap_Object(result, ::org::orekit::utils::PY_TYPE(ParameterDriver));
           }
 
-          static PyObject *t_RelativisticClockInterSatellitesPhaseModifier_modifyWithoutDerivatives(t_RelativisticClockInterSatellitesPhaseModifier *self, PyObject *arg)
-          {
-            ::org::orekit::estimation::measurements::EstimatedMeasurementBase a0((jobject) NULL);
-            PyTypeObject **p0;
-
-            if (!parseArg(arg, "K", ::org::orekit::estimation::measurements::EstimatedMeasurementBase::initializeClass, &a0, &p0, ::org::orekit::estimation::measurements::t_EstimatedMeasurementBase::parameters_))
-            {
-              OBJ_CALL(self->object.modifyWithoutDerivatives(a0));
-              Py_RETURN_NONE;
-            }
-
-            PyErr_SetArgsError((PyObject *) self, "modifyWithoutDerivatives", arg);
-            return NULL;
-          }
-
-          static PyObject *t_RelativisticClockInterSatellitesPhaseModifier_get__parametersDrivers(t_RelativisticClockInterSatellitesPhaseModifier *self, void *data)
-          {
-            ::java::util::List value((jobject) NULL);
-            OBJ_CALL(value = self->object.getParametersDrivers());
-            return ::java::util::t_List::wrap_Object(value);
-          }
-        }
-      }
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "org/orekit/forces/maneuvers/trigger/AbstractManeuverTriggers.h"
-#include "org/orekit/forces/maneuvers/trigger/FieldManeuverTriggersResetter.h"
-#include "org/orekit/forces/maneuvers/trigger/ManeuverTriggersResetter.h"
-#include "org/orekit/forces/maneuvers/trigger/ManeuverTriggers.h"
-#include "org/orekit/utils/TimeSpanMap.h"
-#include "org/hipparchus/Field.h"
-#include "org/hipparchus/CalculusFieldElement.h"
-#include "org/orekit/propagation/SpacecraftState.h"
-#include "java/lang/Class.h"
-#include "java/lang/Boolean.h"
-#include "org/orekit/time/FieldAbsoluteDate.h"
-#include "org/orekit/propagation/FieldSpacecraftState.h"
-#include "org/orekit/time/AbsoluteDate.h"
-#include "JArray.h"
-
-namespace org {
-  namespace orekit {
-    namespace forces {
-      namespace maneuvers {
-        namespace trigger {
-
-          ::java::lang::Class *AbstractManeuverTriggers::class$ = NULL;
-          jmethodID *AbstractManeuverTriggers::mids$ = NULL;
-          bool AbstractManeuverTriggers::live$ = false;
-
-          jclass AbstractManeuverTriggers::initializeClass(bool getOnly)
-          {
-            if (getOnly)
-              return (jclass) (live$ ? class$->this$ : NULL);
-            if (class$ == NULL)
-            {
-              jclass cls = (jclass) env->findClass("org/orekit/forces/maneuvers/trigger/AbstractManeuverTriggers");
-
-              mids$ = new jmethodID[max_mid];
-              mids$[mid_addResetter_c5c7f3f3d4c4bba2] = env->getMethodID(cls, "addResetter", "(Lorg/orekit/forces/maneuvers/trigger/ManeuverTriggersResetter;)V");
-              mids$[mid_addResetter_17ab38b8d22d6651] = env->getMethodID(cls, "addResetter", "(Lorg/hipparchus/Field;Lorg/orekit/forces/maneuvers/trigger/FieldManeuverTriggersResetter;)V");
-              mids$[mid_getFirings_afbf756dd3c251fe] = env->getMethodID(cls, "getFirings", "()Lorg/orekit/utils/TimeSpanMap;");
-              mids$[mid_init_acdd8180a5dc1a8d] = env->getMethodID(cls, "init", "(Lorg/orekit/propagation/FieldSpacecraftState;Lorg/orekit/time/FieldAbsoluteDate;)V");
-              mids$[mid_init_3d13474d79f5e7bc] = env->getMethodID(cls, "init", "(Lorg/orekit/propagation/SpacecraftState;Lorg/orekit/time/AbsoluteDate;)V");
-              mids$[mid_isFiring_b230552293273e68] = env->getMethodID(cls, "isFiring", "(Lorg/orekit/time/AbsoluteDate;[D)Z");
-              mids$[mid_isFiring_80ee6edc2471fed7] = env->getMethodID(cls, "isFiring", "(Lorg/orekit/time/FieldAbsoluteDate;[Lorg/hipparchus/CalculusFieldElement;)Z");
-              mids$[mid_initializeResetters_3d13474d79f5e7bc] = env->getMethodID(cls, "initializeResetters", "(Lorg/orekit/propagation/SpacecraftState;Lorg/orekit/time/AbsoluteDate;)V");
-              mids$[mid_initializeResetters_acdd8180a5dc1a8d] = env->getMethodID(cls, "initializeResetters", "(Lorg/orekit/propagation/FieldSpacecraftState;Lorg/orekit/time/FieldAbsoluteDate;)V");
-              mids$[mid_notifyResetters_c76342d42407aa3d] = env->getMethodID(cls, "notifyResetters", "(Lorg/orekit/propagation/FieldSpacecraftState;Z)V");
-              mids$[mid_notifyResetters_9658cf3eaef14ef5] = env->getMethodID(cls, "notifyResetters", "(Lorg/orekit/propagation/SpacecraftState;Z)V");
-              mids$[mid_applyResetters_81fc6fb6078d2aa7] = env->getMethodID(cls, "applyResetters", "(Lorg/orekit/propagation/SpacecraftState;)Lorg/orekit/propagation/SpacecraftState;");
-              mids$[mid_applyResetters_db7b9ef879f5b135] = env->getMethodID(cls, "applyResetters", "(Lorg/orekit/propagation/FieldSpacecraftState;)Lorg/orekit/propagation/FieldSpacecraftState;");
-              mids$[mid_isFiringOnInitialState_795d7e54d4c58d83] = env->getMethodID(cls, "isFiringOnInitialState", "(Lorg/orekit/propagation/SpacecraftState;Z)Z");
-
-              class$ = new ::java::lang::Class(cls);
-              live$ = true;
-            }
-            return (jclass) class$->this$;
-          }
-
-          void AbstractManeuverTriggers::addResetter(const ::org::orekit::forces::maneuvers::trigger::ManeuverTriggersResetter & a0) const
-          {
-            env->callVoidMethod(this$, mids$[mid_addResetter_c5c7f3f3d4c4bba2], a0.this$);
-          }
-
-          void AbstractManeuverTriggers::addResetter(const ::org::hipparchus::Field & a0, const ::org::orekit::forces::maneuvers::trigger::FieldManeuverTriggersResetter & a1) const
-          {
-            env->callVoidMethod(this$, mids$[mid_addResetter_17ab38b8d22d6651], a0.this$, a1.this$);
-          }
-
-          ::org::orekit::utils::TimeSpanMap AbstractManeuverTriggers::getFirings() const
-          {
-            return ::org::orekit::utils::TimeSpanMap(env->callObjectMethod(this$, mids$[mid_getFirings_afbf756dd3c251fe]));
-          }
-
-          void AbstractManeuverTriggers::init(const ::org::orekit::propagation::FieldSpacecraftState & a0, const ::org::orekit::time::FieldAbsoluteDate & a1) const
-          {
-            env->callVoidMethod(this$, mids$[mid_init_acdd8180a5dc1a8d], a0.this$, a1.this$);
-          }
-
-          void AbstractManeuverTriggers::init(const ::org::orekit::propagation::SpacecraftState & a0, const ::org::orekit::time::AbsoluteDate & a1) const
-          {
-            env->callVoidMethod(this$, mids$[mid_init_3d13474d79f5e7bc], a0.this$, a1.this$);
-          }
-
-          jboolean AbstractManeuverTriggers::isFiring(const ::org::orekit::time::AbsoluteDate & a0, const JArray< jdouble > & a1) const
-          {
-            return env->callBooleanMethod(this$, mids$[mid_isFiring_b230552293273e68], a0.this$, a1.this$);
-          }
-
-          jboolean AbstractManeuverTriggers::isFiring(const ::org::orekit::time::FieldAbsoluteDate & a0, const JArray< ::org::hipparchus::CalculusFieldElement > & a1) const
-          {
-            return env->callBooleanMethod(this$, mids$[mid_isFiring_80ee6edc2471fed7], a0.this$, a1.this$);
-          }
-        }
-      }
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace org {
-  namespace orekit {
-    namespace forces {
-      namespace maneuvers {
-        namespace trigger {
-          static PyObject *t_AbstractManeuverTriggers_cast_(PyTypeObject *type, PyObject *arg);
-          static PyObject *t_AbstractManeuverTriggers_instance_(PyTypeObject *type, PyObject *arg);
-          static PyObject *t_AbstractManeuverTriggers_addResetter(t_AbstractManeuverTriggers *self, PyObject *args);
-          static PyObject *t_AbstractManeuverTriggers_getFirings(t_AbstractManeuverTriggers *self);
-          static PyObject *t_AbstractManeuverTriggers_init(t_AbstractManeuverTriggers *self, PyObject *args);
-          static PyObject *t_AbstractManeuverTriggers_isFiring(t_AbstractManeuverTriggers *self, PyObject *args);
-          static PyObject *t_AbstractManeuverTriggers_get__firings(t_AbstractManeuverTriggers *self, void *data);
-          static PyGetSetDef t_AbstractManeuverTriggers__fields_[] = {
-            DECLARE_GET_FIELD(t_AbstractManeuverTriggers, firings),
-            { NULL, NULL, NULL, NULL, NULL }
-          };
-
-          static PyMethodDef t_AbstractManeuverTriggers__methods_[] = {
-            DECLARE_METHOD(t_AbstractManeuverTriggers, cast_, METH_O | METH_CLASS),
-            DECLARE_METHOD(t_AbstractManeuverTriggers, instance_, METH_O | METH_CLASS),
-            DECLARE_METHOD(t_AbstractManeuverTriggers, addResetter, METH_VARARGS),
-            DECLARE_METHOD(t_AbstractManeuverTriggers, getFirings, METH_NOARGS),
-            DECLARE_METHOD(t_AbstractManeuverTriggers, init, METH_VARARGS),
-            DECLARE_METHOD(t_AbstractManeuverTriggers, isFiring, METH_VARARGS),
-            { NULL, NULL, 0, NULL }
-          };
-
-          static PyType_Slot PY_TYPE_SLOTS(AbstractManeuverTriggers)[] = {
-            { Py_tp_methods, t_AbstractManeuverTriggers__methods_ },
-            { Py_tp_init, (void *) abstract_init },
-            { Py_tp_getset, t_AbstractManeuverTriggers__fields_ },
-            { 0, NULL }
-          };
-
-          static PyType_Def *PY_TYPE_BASES(AbstractManeuverTriggers)[] = {
-            &PY_TYPE_DEF(::java::lang::Object),
-            NULL
-          };
-
-          DEFINE_TYPE(AbstractManeuverTriggers, t_AbstractManeuverTriggers, AbstractManeuverTriggers);
-
-          void t_AbstractManeuverTriggers::install(PyObject *module)
-          {
-            installType(&PY_TYPE(AbstractManeuverTriggers), &PY_TYPE_DEF(AbstractManeuverTriggers), module, "AbstractManeuverTriggers", 0);
-          }
-
-          void t_AbstractManeuverTriggers::initialize(PyObject *module)
-          {
-            PyObject_SetAttrString((PyObject *) PY_TYPE(AbstractManeuverTriggers), "class_", make_descriptor(AbstractManeuverTriggers::initializeClass, 1));
-            PyObject_SetAttrString((PyObject *) PY_TYPE(AbstractManeuverTriggers), "wrapfn_", make_descriptor(t_AbstractManeuverTriggers::wrap_jobject));
-            PyObject_SetAttrString((PyObject *) PY_TYPE(AbstractManeuverTriggers), "boxfn_", make_descriptor(boxObject));
-          }
-
-          static PyObject *t_AbstractManeuverTriggers_cast_(PyTypeObject *type, PyObject *arg)
-          {
-            if (!(arg = castCheck(arg, AbstractManeuverTriggers::initializeClass, 1)))
-              return NULL;
-            return t_AbstractManeuverTriggers::wrap_Object(AbstractManeuverTriggers(((t_AbstractManeuverTriggers *) arg)->object.this$));
-          }
-          static PyObject *t_AbstractManeuverTriggers_instance_(PyTypeObject *type, PyObject *arg)
-          {
-            if (!castCheck(arg, AbstractManeuverTriggers::initializeClass, 0))
-              Py_RETURN_FALSE;
-            Py_RETURN_TRUE;
-          }
-
-          static PyObject *t_AbstractManeuverTriggers_addResetter(t_AbstractManeuverTriggers *self, PyObject *args)
+          static PyObject *t_KlobucharIonoModel_pathDelay(t_KlobucharIonoModel *self, PyObject *args)
           {
             switch (PyTuple_GET_SIZE(args)) {
-             case 1:
-              {
-                ::org::orekit::forces::maneuvers::trigger::ManeuverTriggersResetter a0((jobject) NULL);
-
-                if (!parseArgs(args, "k", ::org::orekit::forces::maneuvers::trigger::ManeuverTriggersResetter::initializeClass, &a0))
-                {
-                  OBJ_CALL(self->object.addResetter(a0));
-                  Py_RETURN_NONE;
-                }
-              }
-              break;
-             case 2:
-              {
-                ::org::hipparchus::Field a0((jobject) NULL);
-                PyTypeObject **p0;
-                ::org::orekit::forces::maneuvers::trigger::FieldManeuverTriggersResetter a1((jobject) NULL);
-                PyTypeObject **p1;
-
-                if (!parseArgs(args, "KK", ::org::hipparchus::Field::initializeClass, ::org::orekit::forces::maneuvers::trigger::FieldManeuverTriggersResetter::initializeClass, &a0, &p0, ::org::hipparchus::t_Field::parameters_, &a1, &p1, ::org::orekit::forces::maneuvers::trigger::t_FieldManeuverTriggersResetter::parameters_))
-                {
-                  OBJ_CALL(self->object.addResetter(a0, a1));
-                  Py_RETURN_NONE;
-                }
-              }
-            }
-
-            PyErr_SetArgsError((PyObject *) self, "addResetter", args);
-            return NULL;
-          }
-
-          static PyObject *t_AbstractManeuverTriggers_getFirings(t_AbstractManeuverTriggers *self)
-          {
-            ::org::orekit::utils::TimeSpanMap result((jobject) NULL);
-            OBJ_CALL(result = self->object.getFirings());
-            return ::org::orekit::utils::t_TimeSpanMap::wrap_Object(result, ::java::lang::PY_TYPE(Boolean));
-          }
-
-          static PyObject *t_AbstractManeuverTriggers_init(t_AbstractManeuverTriggers *self, PyObject *args)
-          {
-            switch (PyTuple_GET_SIZE(args)) {
-             case 2:
+             case 4:
               {
                 ::org::orekit::propagation::SpacecraftState a0((jobject) NULL);
-                ::org::orekit::time::AbsoluteDate a1((jobject) NULL);
+                ::org::orekit::frames::TopocentricFrame a1((jobject) NULL);
+                jdouble a2;
+                JArray< jdouble > a3((jobject) NULL);
+                jdouble result;
 
-                if (!parseArgs(args, "kk", ::org::orekit::propagation::SpacecraftState::initializeClass, ::org::orekit::time::AbsoluteDate::initializeClass, &a0, &a1))
+                if (!parseArgs(args, "kkD[D", ::org::orekit::propagation::SpacecraftState::initializeClass, ::org::orekit::frames::TopocentricFrame::initializeClass, &a0, &a1, &a2, &a3))
                 {
-                  OBJ_CALL(self->object.init(a0, a1));
-                  Py_RETURN_NONE;
+                  OBJ_CALL(result = self->object.pathDelay(a0, a1, a2, a3));
+                  return PyFloat_FromDouble((double) result);
                 }
               }
               {
                 ::org::orekit::propagation::FieldSpacecraftState a0((jobject) NULL);
                 PyTypeObject **p0;
-                ::org::orekit::time::FieldAbsoluteDate a1((jobject) NULL);
-                PyTypeObject **p1;
+                ::org::orekit::frames::TopocentricFrame a1((jobject) NULL);
+                jdouble a2;
+                JArray< ::org::hipparchus::CalculusFieldElement > a3((jobject) NULL);
+                PyTypeObject **p3;
+                ::org::hipparchus::CalculusFieldElement result((jobject) NULL);
 
-                if (!parseArgs(args, "KK", ::org::orekit::propagation::FieldSpacecraftState::initializeClass, ::org::orekit::time::FieldAbsoluteDate::initializeClass, &a0, &p0, ::org::orekit::propagation::t_FieldSpacecraftState::parameters_, &a1, &p1, ::org::orekit::time::t_FieldAbsoluteDate::parameters_))
+                if (!parseArgs(args, "KkD[K", ::org::orekit::propagation::FieldSpacecraftState::initializeClass, ::org::orekit::frames::TopocentricFrame::initializeClass, ::org::hipparchus::CalculusFieldElement::initializeClass, &a0, &p0, ::org::orekit::propagation::t_FieldSpacecraftState::parameters_, &a1, &a2, &a3, &p3, ::org::hipparchus::t_CalculusFieldElement::parameters_))
                 {
-                  OBJ_CALL(self->object.init(a0, a1));
-                  Py_RETURN_NONE;
+                  OBJ_CALL(result = self->object.pathDelay(a0, a1, a2, a3));
+                  return p0 != NULL && p0[0] != NULL ? wrapType(p0[0], result.this$) : ::org::hipparchus::t_CalculusFieldElement::wrap_Object(result);
                 }
               }
-            }
-
-            PyErr_SetArgsError((PyObject *) self, "init", args);
-            return NULL;
-          }
-
-          static PyObject *t_AbstractManeuverTriggers_isFiring(t_AbstractManeuverTriggers *self, PyObject *args)
-          {
-            switch (PyTuple_GET_SIZE(args)) {
-             case 2:
-              {
-                ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
-                JArray< jdouble > a1((jobject) NULL);
-                jboolean result;
-
-                if (!parseArgs(args, "k[D", ::org::orekit::time::AbsoluteDate::initializeClass, &a0, &a1))
-                {
-                  OBJ_CALL(result = self->object.isFiring(a0, a1));
-                  Py_RETURN_BOOL(result);
-                }
-              }
+              break;
+             case 6:
               {
                 ::org::orekit::time::FieldAbsoluteDate a0((jobject) NULL);
                 PyTypeObject **p0;
-                JArray< ::org::hipparchus::CalculusFieldElement > a1((jobject) NULL);
+                ::org::orekit::bodies::FieldGeodeticPoint a1((jobject) NULL);
                 PyTypeObject **p1;
-                jboolean result;
+                ::org::hipparchus::CalculusFieldElement a2((jobject) NULL);
+                PyTypeObject **p2;
+                ::org::hipparchus::CalculusFieldElement a3((jobject) NULL);
+                PyTypeObject **p3;
+                jdouble a4;
+                JArray< ::org::hipparchus::CalculusFieldElement > a5((jobject) NULL);
+                PyTypeObject **p5;
+                ::org::hipparchus::CalculusFieldElement result((jobject) NULL);
 
-                if (!parseArgs(args, "K[K", ::org::orekit::time::FieldAbsoluteDate::initializeClass, ::org::hipparchus::CalculusFieldElement::initializeClass, &a0, &p0, ::org::orekit::time::t_FieldAbsoluteDate::parameters_, &a1, &p1, ::org::hipparchus::t_CalculusFieldElement::parameters_))
+                if (!parseArgs(args, "KKKKD[K", ::org::orekit::time::FieldAbsoluteDate::initializeClass, ::org::orekit::bodies::FieldGeodeticPoint::initializeClass, ::org::hipparchus::CalculusFieldElement::initializeClass, ::org::hipparchus::CalculusFieldElement::initializeClass, ::org::hipparchus::CalculusFieldElement::initializeClass, &a0, &p0, ::org::orekit::time::t_FieldAbsoluteDate::parameters_, &a1, &p1, ::org::orekit::bodies::t_FieldGeodeticPoint::parameters_, &a2, &p2, ::org::hipparchus::t_CalculusFieldElement::parameters_, &a3, &p3, ::org::hipparchus::t_CalculusFieldElement::parameters_, &a4, &a5, &p5, ::org::hipparchus::t_CalculusFieldElement::parameters_))
                 {
-                  OBJ_CALL(result = self->object.isFiring(a0, a1));
-                  Py_RETURN_BOOL(result);
+                  OBJ_CALL(result = self->object.pathDelay(a0, a1, a2, a3, a4, a5));
+                  return p0 != NULL && p0[0] != NULL ? wrapType(p0[0], result.this$) : ::org::hipparchus::t_CalculusFieldElement::wrap_Object(result);
+                }
+              }
+              {
+                ::org::orekit::time::AbsoluteDate a0((jobject) NULL);
+                ::org::orekit::bodies::GeodeticPoint a1((jobject) NULL);
+                jdouble a2;
+                jdouble a3;
+                jdouble a4;
+                JArray< jdouble > a5((jobject) NULL);
+                jdouble result;
+
+                if (!parseArgs(args, "kkDDD[D", ::org::orekit::time::AbsoluteDate::initializeClass, ::org::orekit::bodies::GeodeticPoint::initializeClass, &a0, &a1, &a2, &a3, &a4, &a5))
+                {
+                  OBJ_CALL(result = self->object.pathDelay(a0, a1, a2, a3, a4, a5));
+                  return PyFloat_FromDouble((double) result);
                 }
               }
             }
 
-            PyErr_SetArgsError((PyObject *) self, "isFiring", args);
+            PyErr_SetArgsError((PyObject *) self, "pathDelay", args);
             return NULL;
           }
 
-          static PyObject *t_AbstractManeuverTriggers_get__firings(t_AbstractManeuverTriggers *self, void *data)
+          static PyObject *t_KlobucharIonoModel_get__parametersDrivers(t_KlobucharIonoModel *self, void *data)
           {
-            ::org::orekit::utils::TimeSpanMap value((jobject) NULL);
-            OBJ_CALL(value = self->object.getFirings());
-            return ::org::orekit::utils::t_TimeSpanMap::wrap_Object(value);
+            ::java::util::List value((jobject) NULL);
+            OBJ_CALL(value = self->object.getParametersDrivers());
+            return ::java::util::t_List::wrap_Object(value);
           }
-        }
-      }
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "org/orekit/files/ccsds/ndm/odm/ocm/TrajectoryState.h"
-#include "org/orekit/time/TimeStamped.h"
-#include "java/util/List.h"
-#include "org/orekit/bodies/OneAxisEllipsoid.h"
-#include "org/orekit/utils/units/Unit.h"
-#include "org/orekit/files/ccsds/ndm/odm/ocm/OrbitElementsType.h"
-#include "org/orekit/utils/CartesianDerivativesFilter.h"
-#include "java/lang/Class.h"
-#include "org/orekit/utils/TimeStampedPVCoordinates.h"
-#include "java/lang/String.h"
-#include "org/orekit/time/AbsoluteDate.h"
-#include "JArray.h"
-
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ccsds {
-        namespace ndm {
-          namespace odm {
-            namespace ocm {
-
-              ::java::lang::Class *TrajectoryState::class$ = NULL;
-              jmethodID *TrajectoryState::mids$ = NULL;
-              bool TrajectoryState::live$ = false;
-
-              jclass TrajectoryState::initializeClass(bool getOnly)
-              {
-                if (getOnly)
-                  return (jclass) (live$ ? class$->this$ : NULL);
-                if (class$ == NULL)
-                {
-                  jclass cls = (jclass) env->findClass("org/orekit/files/ccsds/ndm/odm/ocm/TrajectoryState");
-
-                  mids$ = new jmethodID[max_mid];
-                  mids$[mid_init$_555a8c2f3364fe15] = env->getMethodID(cls, "<init>", "(Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitElementsType;Lorg/orekit/time/AbsoluteDate;[D)V");
-                  mids$[mid_init$_05ae99dd5376ef2f] = env->getMethodID(cls, "<init>", "(Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitElementsType;Lorg/orekit/time/AbsoluteDate;[Ljava/lang/String;ILjava/util/List;)V");
-                  mids$[mid_getAvailableDerivatives_237181d932324188] = env->getMethodID(cls, "getAvailableDerivatives", "()Lorg/orekit/utils/CartesianDerivativesFilter;");
-                  mids$[mid_getDate_aaa854c403487cf3] = env->getMethodID(cls, "getDate", "()Lorg/orekit/time/AbsoluteDate;");
-                  mids$[mid_getElements_7cdc325af0834901] = env->getMethodID(cls, "getElements", "()[D");
-                  mids$[mid_getType_89f4b16f0349faa4] = env->getMethodID(cls, "getType", "()Lorg/orekit/files/ccsds/ndm/odm/ocm/OrbitElementsType;");
-                  mids$[mid_toCartesian_933d5fd77d5f8558] = env->getMethodID(cls, "toCartesian", "(Lorg/orekit/bodies/OneAxisEllipsoid;D)Lorg/orekit/utils/TimeStampedPVCoordinates;");
-
-                  class$ = new ::java::lang::Class(cls);
-                  live$ = true;
-                }
-                return (jclass) class$->this$;
-              }
-
-              TrajectoryState::TrajectoryState(const ::org::orekit::files::ccsds::ndm::odm::ocm::OrbitElementsType & a0, const ::org::orekit::time::AbsoluteDate & a1, const JArray< jdouble > & a2) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_555a8c2f3364fe15, a0.this$, a1.this$, a2.this$)) {}
-
-              TrajectoryState::TrajectoryState(const ::org::orekit::files::ccsds::ndm::odm::ocm::OrbitElementsType & a0, const ::org::orekit::time::AbsoluteDate & a1, const JArray< ::java::lang::String > & a2, jint a3, const ::java::util::List & a4) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_05ae99dd5376ef2f, a0.this$, a1.this$, a2.this$, a3, a4.this$)) {}
-
-              ::org::orekit::utils::CartesianDerivativesFilter TrajectoryState::getAvailableDerivatives() const
-              {
-                return ::org::orekit::utils::CartesianDerivativesFilter(env->callObjectMethod(this$, mids$[mid_getAvailableDerivatives_237181d932324188]));
-              }
-
-              ::org::orekit::time::AbsoluteDate TrajectoryState::getDate() const
-              {
-                return ::org::orekit::time::AbsoluteDate(env->callObjectMethod(this$, mids$[mid_getDate_aaa854c403487cf3]));
-              }
-
-              JArray< jdouble > TrajectoryState::getElements() const
-              {
-                return JArray< jdouble >(env->callObjectMethod(this$, mids$[mid_getElements_7cdc325af0834901]));
-              }
-
-              ::org::orekit::files::ccsds::ndm::odm::ocm::OrbitElementsType TrajectoryState::getType() const
-              {
-                return ::org::orekit::files::ccsds::ndm::odm::ocm::OrbitElementsType(env->callObjectMethod(this$, mids$[mid_getType_89f4b16f0349faa4]));
-              }
-
-              ::org::orekit::utils::TimeStampedPVCoordinates TrajectoryState::toCartesian(const ::org::orekit::bodies::OneAxisEllipsoid & a0, jdouble a1) const
-              {
-                return ::org::orekit::utils::TimeStampedPVCoordinates(env->callObjectMethod(this$, mids$[mid_toCartesian_933d5fd77d5f8558], a0.this$, a1));
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ccsds {
-        namespace ndm {
-          namespace odm {
-            namespace ocm {
-              static PyObject *t_TrajectoryState_cast_(PyTypeObject *type, PyObject *arg);
-              static PyObject *t_TrajectoryState_instance_(PyTypeObject *type, PyObject *arg);
-              static int t_TrajectoryState_init_(t_TrajectoryState *self, PyObject *args, PyObject *kwds);
-              static PyObject *t_TrajectoryState_getAvailableDerivatives(t_TrajectoryState *self);
-              static PyObject *t_TrajectoryState_getDate(t_TrajectoryState *self);
-              static PyObject *t_TrajectoryState_getElements(t_TrajectoryState *self);
-              static PyObject *t_TrajectoryState_getType(t_TrajectoryState *self);
-              static PyObject *t_TrajectoryState_toCartesian(t_TrajectoryState *self, PyObject *args);
-              static PyObject *t_TrajectoryState_get__availableDerivatives(t_TrajectoryState *self, void *data);
-              static PyObject *t_TrajectoryState_get__date(t_TrajectoryState *self, void *data);
-              static PyObject *t_TrajectoryState_get__elements(t_TrajectoryState *self, void *data);
-              static PyObject *t_TrajectoryState_get__type(t_TrajectoryState *self, void *data);
-              static PyGetSetDef t_TrajectoryState__fields_[] = {
-                DECLARE_GET_FIELD(t_TrajectoryState, availableDerivatives),
-                DECLARE_GET_FIELD(t_TrajectoryState, date),
-                DECLARE_GET_FIELD(t_TrajectoryState, elements),
-                DECLARE_GET_FIELD(t_TrajectoryState, type),
-                { NULL, NULL, NULL, NULL, NULL }
-              };
-
-              static PyMethodDef t_TrajectoryState__methods_[] = {
-                DECLARE_METHOD(t_TrajectoryState, cast_, METH_O | METH_CLASS),
-                DECLARE_METHOD(t_TrajectoryState, instance_, METH_O | METH_CLASS),
-                DECLARE_METHOD(t_TrajectoryState, getAvailableDerivatives, METH_NOARGS),
-                DECLARE_METHOD(t_TrajectoryState, getDate, METH_NOARGS),
-                DECLARE_METHOD(t_TrajectoryState, getElements, METH_NOARGS),
-                DECLARE_METHOD(t_TrajectoryState, getType, METH_NOARGS),
-                DECLARE_METHOD(t_TrajectoryState, toCartesian, METH_VARARGS),
-                { NULL, NULL, 0, NULL }
-              };
-
-              static PyType_Slot PY_TYPE_SLOTS(TrajectoryState)[] = {
-                { Py_tp_methods, t_TrajectoryState__methods_ },
-                { Py_tp_init, (void *) t_TrajectoryState_init_ },
-                { Py_tp_getset, t_TrajectoryState__fields_ },
-                { 0, NULL }
-              };
-
-              static PyType_Def *PY_TYPE_BASES(TrajectoryState)[] = {
-                &PY_TYPE_DEF(::java::lang::Object),
-                NULL
-              };
-
-              DEFINE_TYPE(TrajectoryState, t_TrajectoryState, TrajectoryState);
-
-              void t_TrajectoryState::install(PyObject *module)
-              {
-                installType(&PY_TYPE(TrajectoryState), &PY_TYPE_DEF(TrajectoryState), module, "TrajectoryState", 0);
-              }
-
-              void t_TrajectoryState::initialize(PyObject *module)
-              {
-                PyObject_SetAttrString((PyObject *) PY_TYPE(TrajectoryState), "class_", make_descriptor(TrajectoryState::initializeClass, 1));
-                PyObject_SetAttrString((PyObject *) PY_TYPE(TrajectoryState), "wrapfn_", make_descriptor(t_TrajectoryState::wrap_jobject));
-                PyObject_SetAttrString((PyObject *) PY_TYPE(TrajectoryState), "boxfn_", make_descriptor(boxObject));
-              }
-
-              static PyObject *t_TrajectoryState_cast_(PyTypeObject *type, PyObject *arg)
-              {
-                if (!(arg = castCheck(arg, TrajectoryState::initializeClass, 1)))
-                  return NULL;
-                return t_TrajectoryState::wrap_Object(TrajectoryState(((t_TrajectoryState *) arg)->object.this$));
-              }
-              static PyObject *t_TrajectoryState_instance_(PyTypeObject *type, PyObject *arg)
-              {
-                if (!castCheck(arg, TrajectoryState::initializeClass, 0))
-                  Py_RETURN_FALSE;
-                Py_RETURN_TRUE;
-              }
-
-              static int t_TrajectoryState_init_(t_TrajectoryState *self, PyObject *args, PyObject *kwds)
-              {
-                switch (PyTuple_GET_SIZE(args)) {
-                 case 3:
-                  {
-                    ::org::orekit::files::ccsds::ndm::odm::ocm::OrbitElementsType a0((jobject) NULL);
-                    PyTypeObject **p0;
-                    ::org::orekit::time::AbsoluteDate a1((jobject) NULL);
-                    JArray< jdouble > a2((jobject) NULL);
-                    TrajectoryState object((jobject) NULL);
-
-                    if (!parseArgs(args, "Kk[D", ::org::orekit::files::ccsds::ndm::odm::ocm::OrbitElementsType::initializeClass, ::org::orekit::time::AbsoluteDate::initializeClass, &a0, &p0, ::org::orekit::files::ccsds::ndm::odm::ocm::t_OrbitElementsType::parameters_, &a1, &a2))
-                    {
-                      INT_CALL(object = TrajectoryState(a0, a1, a2));
-                      self->object = object;
-                      break;
-                    }
-                  }
-                  goto err;
-                 case 5:
-                  {
-                    ::org::orekit::files::ccsds::ndm::odm::ocm::OrbitElementsType a0((jobject) NULL);
-                    PyTypeObject **p0;
-                    ::org::orekit::time::AbsoluteDate a1((jobject) NULL);
-                    JArray< ::java::lang::String > a2((jobject) NULL);
-                    jint a3;
-                    ::java::util::List a4((jobject) NULL);
-                    PyTypeObject **p4;
-                    TrajectoryState object((jobject) NULL);
-
-                    if (!parseArgs(args, "Kk[sIK", ::org::orekit::files::ccsds::ndm::odm::ocm::OrbitElementsType::initializeClass, ::org::orekit::time::AbsoluteDate::initializeClass, ::java::util::List::initializeClass, &a0, &p0, ::org::orekit::files::ccsds::ndm::odm::ocm::t_OrbitElementsType::parameters_, &a1, &a2, &a3, &a4, &p4, ::java::util::t_List::parameters_))
-                    {
-                      INT_CALL(object = TrajectoryState(a0, a1, a2, a3, a4));
-                      self->object = object;
-                      break;
-                    }
-                  }
-                 default:
-                 err:
-                  PyErr_SetArgsError((PyObject *) self, "__init__", args);
-                  return -1;
-                }
-
-                return 0;
-              }
-
-              static PyObject *t_TrajectoryState_getAvailableDerivatives(t_TrajectoryState *self)
-              {
-                ::org::orekit::utils::CartesianDerivativesFilter result((jobject) NULL);
-                OBJ_CALL(result = self->object.getAvailableDerivatives());
-                return ::org::orekit::utils::t_CartesianDerivativesFilter::wrap_Object(result);
-              }
-
-              static PyObject *t_TrajectoryState_getDate(t_TrajectoryState *self)
-              {
-                ::org::orekit::time::AbsoluteDate result((jobject) NULL);
-                OBJ_CALL(result = self->object.getDate());
-                return ::org::orekit::time::t_AbsoluteDate::wrap_Object(result);
-              }
-
-              static PyObject *t_TrajectoryState_getElements(t_TrajectoryState *self)
-              {
-                JArray< jdouble > result((jobject) NULL);
-                OBJ_CALL(result = self->object.getElements());
-                return result.wrap();
-              }
-
-              static PyObject *t_TrajectoryState_getType(t_TrajectoryState *self)
-              {
-                ::org::orekit::files::ccsds::ndm::odm::ocm::OrbitElementsType result((jobject) NULL);
-                OBJ_CALL(result = self->object.getType());
-                return ::org::orekit::files::ccsds::ndm::odm::ocm::t_OrbitElementsType::wrap_Object(result);
-              }
-
-              static PyObject *t_TrajectoryState_toCartesian(t_TrajectoryState *self, PyObject *args)
-              {
-                ::org::orekit::bodies::OneAxisEllipsoid a0((jobject) NULL);
-                jdouble a1;
-                ::org::orekit::utils::TimeStampedPVCoordinates result((jobject) NULL);
-
-                if (!parseArgs(args, "kD", ::org::orekit::bodies::OneAxisEllipsoid::initializeClass, &a0, &a1))
-                {
-                  OBJ_CALL(result = self->object.toCartesian(a0, a1));
-                  return ::org::orekit::utils::t_TimeStampedPVCoordinates::wrap_Object(result);
-                }
-
-                PyErr_SetArgsError((PyObject *) self, "toCartesian", args);
-                return NULL;
-              }
-
-              static PyObject *t_TrajectoryState_get__availableDerivatives(t_TrajectoryState *self, void *data)
-              {
-                ::org::orekit::utils::CartesianDerivativesFilter value((jobject) NULL);
-                OBJ_CALL(value = self->object.getAvailableDerivatives());
-                return ::org::orekit::utils::t_CartesianDerivativesFilter::wrap_Object(value);
-              }
-
-              static PyObject *t_TrajectoryState_get__date(t_TrajectoryState *self, void *data)
-              {
-                ::org::orekit::time::AbsoluteDate value((jobject) NULL);
-                OBJ_CALL(value = self->object.getDate());
-                return ::org::orekit::time::t_AbsoluteDate::wrap_Object(value);
-              }
-
-              static PyObject *t_TrajectoryState_get__elements(t_TrajectoryState *self, void *data)
-              {
-                JArray< jdouble > value((jobject) NULL);
-                OBJ_CALL(value = self->object.getElements());
-                return value.wrap();
-              }
-
-              static PyObject *t_TrajectoryState_get__type(t_TrajectoryState *self, void *data)
-              {
-                ::org::orekit::files::ccsds::ndm::odm::ocm::OrbitElementsType value((jobject) NULL);
-                OBJ_CALL(value = self->object.getType());
-                return ::org::orekit::files::ccsds::ndm::odm::ocm::t_OrbitElementsType::wrap_Object(value);
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "org/orekit/propagation/events/FootprintOverlapDetector.h"
-#include "org/orekit/bodies/OneAxisEllipsoid.h"
-#include "org/orekit/geometry/fov/FieldOfView.h"
-#include "org/hipparchus/geometry/spherical/twod/SphericalPolygonsSet.h"
-#include "org/orekit/propagation/events/FootprintOverlapDetector.h"
-#include "org/orekit/bodies/BodyShape.h"
-#include "java/lang/Class.h"
-#include "org/orekit/propagation/SpacecraftState.h"
-#include "JArray.h"
-
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace events {
-
-        ::java::lang::Class *FootprintOverlapDetector::class$ = NULL;
-        jmethodID *FootprintOverlapDetector::mids$ = NULL;
-        bool FootprintOverlapDetector::live$ = false;
-
-        jclass FootprintOverlapDetector::initializeClass(bool getOnly)
-        {
-          if (getOnly)
-            return (jclass) (live$ ? class$->this$ : NULL);
-          if (class$ == NULL)
-          {
-            jclass cls = (jclass) env->findClass("org/orekit/propagation/events/FootprintOverlapDetector");
-
-            mids$ = new jmethodID[max_mid];
-            mids$[mid_init$_244c55273fe6bb9d] = env->getMethodID(cls, "<init>", "(Lorg/orekit/geometry/fov/FieldOfView;Lorg/orekit/bodies/OneAxisEllipsoid;Lorg/hipparchus/geometry/spherical/twod/SphericalPolygonsSet;D)V");
-            mids$[mid_g_66a2f071e6ed0c06] = env->getMethodID(cls, "g", "(Lorg/orekit/propagation/SpacecraftState;)D");
-            mids$[mid_getBody_883d26889ee03ca8] = env->getMethodID(cls, "getBody", "()Lorg/orekit/bodies/BodyShape;");
-            mids$[mid_getFOV_f51bf66c035a133c] = env->getMethodID(cls, "getFOV", "()Lorg/orekit/geometry/fov/FieldOfView;");
-            mids$[mid_getZone_b554ba4417ec0cb0] = env->getMethodID(cls, "getZone", "()Lorg/hipparchus/geometry/spherical/twod/SphericalPolygonsSet;");
-            mids$[mid_create_77e4d91b625a79d6] = env->getMethodID(cls, "create", "(Lorg/orekit/propagation/events/AdaptableInterval;DILorg/orekit/propagation/events/handlers/EventHandler;)Lorg/orekit/propagation/events/FootprintOverlapDetector;");
-
-            class$ = new ::java::lang::Class(cls);
-            live$ = true;
-          }
-          return (jclass) class$->this$;
-        }
-
-        FootprintOverlapDetector::FootprintOverlapDetector(const ::org::orekit::geometry::fov::FieldOfView & a0, const ::org::orekit::bodies::OneAxisEllipsoid & a1, const ::org::hipparchus::geometry::spherical::twod::SphericalPolygonsSet & a2, jdouble a3) : ::org::orekit::propagation::events::AbstractDetector(env->newObject(initializeClass, &mids$, mid_init$_244c55273fe6bb9d, a0.this$, a1.this$, a2.this$, a3)) {}
-
-        jdouble FootprintOverlapDetector::g(const ::org::orekit::propagation::SpacecraftState & a0) const
-        {
-          return env->callDoubleMethod(this$, mids$[mid_g_66a2f071e6ed0c06], a0.this$);
-        }
-
-        ::org::orekit::bodies::BodyShape FootprintOverlapDetector::getBody() const
-        {
-          return ::org::orekit::bodies::BodyShape(env->callObjectMethod(this$, mids$[mid_getBody_883d26889ee03ca8]));
-        }
-
-        ::org::orekit::geometry::fov::FieldOfView FootprintOverlapDetector::getFOV() const
-        {
-          return ::org::orekit::geometry::fov::FieldOfView(env->callObjectMethod(this$, mids$[mid_getFOV_f51bf66c035a133c]));
-        }
-
-        ::org::hipparchus::geometry::spherical::twod::SphericalPolygonsSet FootprintOverlapDetector::getZone() const
-        {
-          return ::org::hipparchus::geometry::spherical::twod::SphericalPolygonsSet(env->callObjectMethod(this$, mids$[mid_getZone_b554ba4417ec0cb0]));
-        }
-      }
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace events {
-        static PyObject *t_FootprintOverlapDetector_cast_(PyTypeObject *type, PyObject *arg);
-        static PyObject *t_FootprintOverlapDetector_instance_(PyTypeObject *type, PyObject *arg);
-        static PyObject *t_FootprintOverlapDetector_of_(t_FootprintOverlapDetector *self, PyObject *args);
-        static int t_FootprintOverlapDetector_init_(t_FootprintOverlapDetector *self, PyObject *args, PyObject *kwds);
-        static PyObject *t_FootprintOverlapDetector_g(t_FootprintOverlapDetector *self, PyObject *args);
-        static PyObject *t_FootprintOverlapDetector_getBody(t_FootprintOverlapDetector *self);
-        static PyObject *t_FootprintOverlapDetector_getFOV(t_FootprintOverlapDetector *self);
-        static PyObject *t_FootprintOverlapDetector_getZone(t_FootprintOverlapDetector *self);
-        static PyObject *t_FootprintOverlapDetector_get__body(t_FootprintOverlapDetector *self, void *data);
-        static PyObject *t_FootprintOverlapDetector_get__fOV(t_FootprintOverlapDetector *self, void *data);
-        static PyObject *t_FootprintOverlapDetector_get__zone(t_FootprintOverlapDetector *self, void *data);
-        static PyObject *t_FootprintOverlapDetector_get__parameters_(t_FootprintOverlapDetector *self, void *data);
-        static PyGetSetDef t_FootprintOverlapDetector__fields_[] = {
-          DECLARE_GET_FIELD(t_FootprintOverlapDetector, body),
-          DECLARE_GET_FIELD(t_FootprintOverlapDetector, fOV),
-          DECLARE_GET_FIELD(t_FootprintOverlapDetector, zone),
-          DECLARE_GET_FIELD(t_FootprintOverlapDetector, parameters_),
-          { NULL, NULL, NULL, NULL, NULL }
-        };
-
-        static PyMethodDef t_FootprintOverlapDetector__methods_[] = {
-          DECLARE_METHOD(t_FootprintOverlapDetector, cast_, METH_O | METH_CLASS),
-          DECLARE_METHOD(t_FootprintOverlapDetector, instance_, METH_O | METH_CLASS),
-          DECLARE_METHOD(t_FootprintOverlapDetector, of_, METH_VARARGS),
-          DECLARE_METHOD(t_FootprintOverlapDetector, g, METH_VARARGS),
-          DECLARE_METHOD(t_FootprintOverlapDetector, getBody, METH_NOARGS),
-          DECLARE_METHOD(t_FootprintOverlapDetector, getFOV, METH_NOARGS),
-          DECLARE_METHOD(t_FootprintOverlapDetector, getZone, METH_NOARGS),
-          { NULL, NULL, 0, NULL }
-        };
-
-        static PyType_Slot PY_TYPE_SLOTS(FootprintOverlapDetector)[] = {
-          { Py_tp_methods, t_FootprintOverlapDetector__methods_ },
-          { Py_tp_init, (void *) t_FootprintOverlapDetector_init_ },
-          { Py_tp_getset, t_FootprintOverlapDetector__fields_ },
-          { 0, NULL }
-        };
-
-        static PyType_Def *PY_TYPE_BASES(FootprintOverlapDetector)[] = {
-          &PY_TYPE_DEF(::org::orekit::propagation::events::AbstractDetector),
-          NULL
-        };
-
-        DEFINE_TYPE(FootprintOverlapDetector, t_FootprintOverlapDetector, FootprintOverlapDetector);
-        PyObject *t_FootprintOverlapDetector::wrap_Object(const FootprintOverlapDetector& object, PyTypeObject *p0)
-        {
-          PyObject *obj = t_FootprintOverlapDetector::wrap_Object(object);
-          if (obj != NULL && obj != Py_None)
-          {
-            t_FootprintOverlapDetector *self = (t_FootprintOverlapDetector *) obj;
-            self->parameters[0] = p0;
-          }
-          return obj;
-        }
-
-        PyObject *t_FootprintOverlapDetector::wrap_jobject(const jobject& object, PyTypeObject *p0)
-        {
-          PyObject *obj = t_FootprintOverlapDetector::wrap_jobject(object);
-          if (obj != NULL && obj != Py_None)
-          {
-            t_FootprintOverlapDetector *self = (t_FootprintOverlapDetector *) obj;
-            self->parameters[0] = p0;
-          }
-          return obj;
-        }
-
-        void t_FootprintOverlapDetector::install(PyObject *module)
-        {
-          installType(&PY_TYPE(FootprintOverlapDetector), &PY_TYPE_DEF(FootprintOverlapDetector), module, "FootprintOverlapDetector", 0);
-        }
-
-        void t_FootprintOverlapDetector::initialize(PyObject *module)
-        {
-          PyObject_SetAttrString((PyObject *) PY_TYPE(FootprintOverlapDetector), "class_", make_descriptor(FootprintOverlapDetector::initializeClass, 1));
-          PyObject_SetAttrString((PyObject *) PY_TYPE(FootprintOverlapDetector), "wrapfn_", make_descriptor(t_FootprintOverlapDetector::wrap_jobject));
-          PyObject_SetAttrString((PyObject *) PY_TYPE(FootprintOverlapDetector), "boxfn_", make_descriptor(boxObject));
-        }
-
-        static PyObject *t_FootprintOverlapDetector_cast_(PyTypeObject *type, PyObject *arg)
-        {
-          if (!(arg = castCheck(arg, FootprintOverlapDetector::initializeClass, 1)))
-            return NULL;
-          return t_FootprintOverlapDetector::wrap_Object(FootprintOverlapDetector(((t_FootprintOverlapDetector *) arg)->object.this$));
-        }
-        static PyObject *t_FootprintOverlapDetector_instance_(PyTypeObject *type, PyObject *arg)
-        {
-          if (!castCheck(arg, FootprintOverlapDetector::initializeClass, 0))
-            Py_RETURN_FALSE;
-          Py_RETURN_TRUE;
-        }
-
-        static PyObject *t_FootprintOverlapDetector_of_(t_FootprintOverlapDetector *self, PyObject *args)
-        {
-          if (!parseArg(args, "T", 1, &(self->parameters)))
-            Py_RETURN_SELF;
-          return PyErr_SetArgsError((PyObject *) self, "of_", args);
-        }
-
-        static int t_FootprintOverlapDetector_init_(t_FootprintOverlapDetector *self, PyObject *args, PyObject *kwds)
-        {
-          ::org::orekit::geometry::fov::FieldOfView a0((jobject) NULL);
-          ::org::orekit::bodies::OneAxisEllipsoid a1((jobject) NULL);
-          ::org::hipparchus::geometry::spherical::twod::SphericalPolygonsSet a2((jobject) NULL);
-          PyTypeObject **p2;
-          jdouble a3;
-          FootprintOverlapDetector object((jobject) NULL);
-
-          if (!parseArgs(args, "kkKD", ::org::orekit::geometry::fov::FieldOfView::initializeClass, ::org::orekit::bodies::OneAxisEllipsoid::initializeClass, ::org::hipparchus::geometry::spherical::twod::SphericalPolygonsSet::initializeClass, &a0, &a1, &a2, &p2, ::org::hipparchus::geometry::spherical::twod::t_SphericalPolygonsSet::parameters_, &a3))
-          {
-            INT_CALL(object = FootprintOverlapDetector(a0, a1, a2, a3));
-            self->object = object;
-            self->parameters[0] = ::org::orekit::propagation::events::PY_TYPE(FootprintOverlapDetector);
-          }
-          else
-          {
-            PyErr_SetArgsError((PyObject *) self, "__init__", args);
-            return -1;
-          }
-
-          return 0;
-        }
-
-        static PyObject *t_FootprintOverlapDetector_g(t_FootprintOverlapDetector *self, PyObject *args)
-        {
-          ::org::orekit::propagation::SpacecraftState a0((jobject) NULL);
-          jdouble result;
-
-          if (!parseArgs(args, "k", ::org::orekit::propagation::SpacecraftState::initializeClass, &a0))
-          {
-            OBJ_CALL(result = self->object.g(a0));
-            return PyFloat_FromDouble((double) result);
-          }
-
-          return callSuper(PY_TYPE(FootprintOverlapDetector), (PyObject *) self, "g", args, 2);
-        }
-
-        static PyObject *t_FootprintOverlapDetector_getBody(t_FootprintOverlapDetector *self)
-        {
-          ::org::orekit::bodies::BodyShape result((jobject) NULL);
-          OBJ_CALL(result = self->object.getBody());
-          return ::org::orekit::bodies::t_BodyShape::wrap_Object(result);
-        }
-
-        static PyObject *t_FootprintOverlapDetector_getFOV(t_FootprintOverlapDetector *self)
-        {
-          ::org::orekit::geometry::fov::FieldOfView result((jobject) NULL);
-          OBJ_CALL(result = self->object.getFOV());
-          return ::org::orekit::geometry::fov::t_FieldOfView::wrap_Object(result);
-        }
-
-        static PyObject *t_FootprintOverlapDetector_getZone(t_FootprintOverlapDetector *self)
-        {
-          ::org::hipparchus::geometry::spherical::twod::SphericalPolygonsSet result((jobject) NULL);
-          OBJ_CALL(result = self->object.getZone());
-          return ::org::hipparchus::geometry::spherical::twod::t_SphericalPolygonsSet::wrap_Object(result);
-        }
-        static PyObject *t_FootprintOverlapDetector_get__parameters_(t_FootprintOverlapDetector *self, void *data)
-        {
-          return typeParameters(self->parameters, sizeof(self->parameters));
-        }
-
-        static PyObject *t_FootprintOverlapDetector_get__body(t_FootprintOverlapDetector *self, void *data)
-        {
-          ::org::orekit::bodies::BodyShape value((jobject) NULL);
-          OBJ_CALL(value = self->object.getBody());
-          return ::org::orekit::bodies::t_BodyShape::wrap_Object(value);
-        }
-
-        static PyObject *t_FootprintOverlapDetector_get__fOV(t_FootprintOverlapDetector *self, void *data)
-        {
-          ::org::orekit::geometry::fov::FieldOfView value((jobject) NULL);
-          OBJ_CALL(value = self->object.getFOV());
-          return ::org::orekit::geometry::fov::t_FieldOfView::wrap_Object(value);
-        }
-
-        static PyObject *t_FootprintOverlapDetector_get__zone(t_FootprintOverlapDetector *self, void *data)
-        {
-          ::org::hipparchus::geometry::spherical::twod::SphericalPolygonsSet value((jobject) NULL);
-          OBJ_CALL(value = self->object.getZone());
-          return ::org::hipparchus::geometry::spherical::twod::t_SphericalPolygonsSet::wrap_Object(value);
         }
       }
     }

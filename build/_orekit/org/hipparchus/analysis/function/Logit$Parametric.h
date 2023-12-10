@@ -29,9 +29,9 @@ namespace org {
         class Logit$Parametric : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_gradient_7b8ea6f669f90156,
-            mid_value_618a40a0b95154fa,
+            mid_init$_0fa09c18fee449d5,
+            mid_gradient_125ce48de7dbfde5,
+            mid_value_19285de97bbc7eea,
             max_mid
           };
 

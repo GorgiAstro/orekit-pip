@@ -3,23 +3,17 @@
 
 #include "org/orekit/propagation/conversion/AbstractPropagatorBuilder.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-    class Object;
-  }
-}
 namespace org {
   namespace orekit {
+    namespace orbits {
+      class PositionAngleType;
+      class Orbit;
+    }
     namespace propagation {
-      class Propagator;
       namespace conversion {
         class PropagatorBuilder;
       }
+      class Propagator;
     }
     namespace estimation {
       namespace leastsquares {
@@ -30,13 +24,19 @@ namespace org {
         class ObservedMeasurement;
       }
     }
-    namespace orbits {
-      class Orbit;
-      class PositionAngleType;
-    }
     namespace utils {
       class ParameterDriversList;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
+    class Object;
   }
 }
 template<class T> class JArray;
@@ -49,14 +49,14 @@ namespace org {
         class PythonAbstractPropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_43cbb53e6718eeb2,
-            mid_buildLeastSquaresModel_31c4fcde5bc19fc3,
-            mid_buildPropagator_d397e255f9fb16e6,
-            mid_copy_6e20699935a1c88e,
-            mid_finalize_7ae3461a92a43152,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
+            mid_init$_1af1d7ef33c5abdd,
+            mid_buildLeastSquaresModel_2eb3122719704f90,
+            mid_buildPropagator_0c183831cad84280,
+            mid_copy_7c39c5f4719b16a0,
+            mid_finalize_0fa09c18fee449d5,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
             max_mid
           };
 

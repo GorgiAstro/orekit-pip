@@ -28,8 +28,8 @@ namespace org {
         class StepNormalizerMode : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_582fe1e7e7ab4d53,
-            mid_values_c855f4e7f5f94038,
+            mid_valueOf_7d0ff73f91aa4c0f,
+            mid_values_6ff80e8074cf2904,
             max_mid
           };
 

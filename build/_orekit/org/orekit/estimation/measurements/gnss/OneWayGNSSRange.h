@@ -38,9 +38,9 @@ namespace org {
           class OneWayGNSSRange : public ::org::orekit::estimation::measurements::AbstractMeasurement {
            public:
             enum {
-              mid_init$_f49423698f256876,
-              mid_theoreticalEvaluationWithoutDerivatives_c188a3b50efa39a5,
-              mid_theoreticalEvaluation_9d5a7270ffb14a9e,
+              mid_init$_4975124a74fd1245,
+              mid_theoreticalEvaluationWithoutDerivatives_e32883476b3d9b22,
+              mid_theoreticalEvaluation_27ef5cc84ad0852b,
               max_mid
             };
 

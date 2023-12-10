@@ -20,7 +20,7 @@ namespace java {
     class FilenameFilter : public ::java::lang::Object {
      public:
       enum {
-        mid_accept_43071cb6948a14d8,
+        mid_accept_aa17b1bcad537066,
         max_mid
       };
 

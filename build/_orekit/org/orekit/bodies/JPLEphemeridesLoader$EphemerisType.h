@@ -3,17 +3,17 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace bodies {
       class JPLEphemeridesLoader$EphemerisType;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,8 +25,8 @@ namespace org {
       class JPLEphemeridesLoader$EphemerisType : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_1542733145ccab2d,
-          mid_values_a157249db2aaf61a,
+          mid_valueOf_0a842ec1813aae26,
+          mid_values_a18035ea5d2488c5,
           max_mid
         };
 

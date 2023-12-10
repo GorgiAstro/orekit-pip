@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
@@ -16,6 +11,11 @@ namespace org {
     namespace propagation {
       class SpacecraftState;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -29,9 +29,9 @@ namespace org {
           class ManeuverTriggersResetter : public ::java::lang::Object {
            public:
             enum {
-              mid_init_3d13474d79f5e7bc,
-              mid_maneuverTriggered_9658cf3eaef14ef5,
-              mid_resetState_81fc6fb6078d2aa7,
+              mid_init_826b4eda94da4e78,
+              mid_maneuverTriggered_33f4696e4edaa03c,
+              mid_resetState_f43130c50e9fafeb,
               max_mid
             };
 

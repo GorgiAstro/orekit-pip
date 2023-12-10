@@ -3,13 +3,21 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace models {
       namespace earth {
         namespace tessellation {
-          class Tile;
           class TileAiming;
+          class Tile;
         }
       }
     }
@@ -28,14 +36,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -47,12 +47,12 @@ namespace org {
           class EllipsoidTessellator : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_e1d72ce5b6214517,
-              mid_buildSimpleZone_972ad3b145fbdad3,
-              mid_buildSimpleZone_193b19c7bc9b5658,
-              mid_sample_691d391c003bb406,
-              mid_tessellate_8f4fe2c71cdb9b48,
-              mid_toGeodetic_762a43dc39ec9e40,
+              mid_init$_77f1a5dfde5d9334,
+              mid_buildSimpleZone_e0cdac0f8844a597,
+              mid_buildSimpleZone_90b26b8ccdda699d,
+              mid_sample_8281c4d2cd40ce62,
+              mid_tessellate_23b10122fe29aea8,
+              mid_toGeodetic_1b240fc4f889c389,
               max_mid
             };
 

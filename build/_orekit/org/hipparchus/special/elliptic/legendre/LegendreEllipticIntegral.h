@@ -6,10 +6,10 @@
 namespace org {
   namespace hipparchus {
     namespace complex {
-      class ComplexUnivariateIntegrator;
-      class FieldComplexUnivariateIntegrator;
-      class Complex;
       class FieldComplex;
+      class Complex;
+      class FieldComplexUnivariateIntegrator;
+      class ComplexUnivariateIntegrator;
     }
     class CalculusFieldElement;
   }
@@ -30,50 +30,50 @@ namespace org {
           class LegendreEllipticIntegral : public ::java::lang::Object {
            public:
             enum {
-              mid_bigD_b074c62aaddfbbb2,
-              mid_bigD_e335ffa535ec807c,
-              mid_bigD_0ba5fed9597b693e,
-              mid_bigD_d3398190482814dc,
-              mid_bigD_b90fd2ae3b76ce9e,
-              mid_bigD_85c7af728c9b8762,
-              mid_bigD_824133ce4aec3505,
-              mid_bigD_75c7ce7d33e7324b,
-              mid_bigE_b074c62aaddfbbb2,
-              mid_bigE_e335ffa535ec807c,
-              mid_bigE_0ba5fed9597b693e,
-              mid_bigE_d3398190482814dc,
-              mid_bigE_b90fd2ae3b76ce9e,
-              mid_bigE_85c7af728c9b8762,
-              mid_bigE_824133ce4aec3505,
-              mid_bigE_75c7ce7d33e7324b,
-              mid_bigE_0376628ef9b6ae64,
-              mid_bigE_77a479c0e43a7d9d,
-              mid_bigF_b90fd2ae3b76ce9e,
-              mid_bigF_85c7af728c9b8762,
-              mid_bigF_824133ce4aec3505,
-              mid_bigF_75c7ce7d33e7324b,
-              mid_bigF_0376628ef9b6ae64,
-              mid_bigF_77a479c0e43a7d9d,
-              mid_bigK_b074c62aaddfbbb2,
-              mid_bigK_e335ffa535ec807c,
-              mid_bigK_0ba5fed9597b693e,
-              mid_bigK_d3398190482814dc,
-              mid_bigKPrime_b074c62aaddfbbb2,
-              mid_bigKPrime_e335ffa535ec807c,
-              mid_bigKPrime_0ba5fed9597b693e,
-              mid_bigKPrime_d3398190482814dc,
-              mid_bigPi_b90fd2ae3b76ce9e,
-              mid_bigPi_85c7af728c9b8762,
-              mid_bigPi_824133ce4aec3505,
-              mid_bigPi_75c7ce7d33e7324b,
-              mid_bigPi_8713168363f00e29,
-              mid_bigPi_391473110206afe5,
-              mid_bigPi_c564d6ace53a5934,
-              mid_bigPi_f56548599899c286,
-              mid_bigPi_6f222436ba8518b8,
-              mid_bigPi_0fa1f139db9bfc8a,
-              mid_nome_0ba5fed9597b693e,
-              mid_nome_d3398190482814dc,
+              mid_bigD_db05c4121ab4cf9b,
+              mid_bigD_324fe1e1d007a3ed,
+              mid_bigD_dcbc7ce2902fa136,
+              mid_bigD_a4b1871f4d29e58b,
+              mid_bigD_6e0cdbc797c242a1,
+              mid_bigD_a3c292738a9833b6,
+              mid_bigD_86ffecc08a63eff0,
+              mid_bigD_6746cc1cd9210d54,
+              mid_bigE_db05c4121ab4cf9b,
+              mid_bigE_324fe1e1d007a3ed,
+              mid_bigE_dcbc7ce2902fa136,
+              mid_bigE_a4b1871f4d29e58b,
+              mid_bigE_6e0cdbc797c242a1,
+              mid_bigE_a3c292738a9833b6,
+              mid_bigE_86ffecc08a63eff0,
+              mid_bigE_6746cc1cd9210d54,
+              mid_bigE_61cc8be847c55fb3,
+              mid_bigE_59d9c2f758348fb7,
+              mid_bigF_6e0cdbc797c242a1,
+              mid_bigF_a3c292738a9833b6,
+              mid_bigF_86ffecc08a63eff0,
+              mid_bigF_6746cc1cd9210d54,
+              mid_bigF_61cc8be847c55fb3,
+              mid_bigF_59d9c2f758348fb7,
+              mid_bigK_db05c4121ab4cf9b,
+              mid_bigK_324fe1e1d007a3ed,
+              mid_bigK_dcbc7ce2902fa136,
+              mid_bigK_a4b1871f4d29e58b,
+              mid_bigKPrime_db05c4121ab4cf9b,
+              mid_bigKPrime_324fe1e1d007a3ed,
+              mid_bigKPrime_dcbc7ce2902fa136,
+              mid_bigKPrime_a4b1871f4d29e58b,
+              mid_bigPi_6e0cdbc797c242a1,
+              mid_bigPi_a3c292738a9833b6,
+              mid_bigPi_86ffecc08a63eff0,
+              mid_bigPi_6746cc1cd9210d54,
+              mid_bigPi_f8bf5c113fa9cbc9,
+              mid_bigPi_d361fa1b878f879c,
+              mid_bigPi_8c19bdea212fe058,
+              mid_bigPi_ff4594b9dc2244a3,
+              mid_bigPi_6fd50c02e5b79ed3,
+              mid_bigPi_55db7eefcb28a55c,
+              mid_nome_dcbc7ce2902fa136,
+              mid_nome_a4b1871f4d29e58b,
               max_mid
             };
 

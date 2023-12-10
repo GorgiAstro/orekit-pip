@@ -8,8 +8,8 @@ namespace org {
     namespace estimation {
       namespace measurements {
         class EstimatedMeasurement;
-        class BistaticRange;
         class EstimatedMeasurementBase;
+        class BistaticRange;
         class EstimationModifier;
       }
     }
@@ -38,9 +38,9 @@ namespace org {
           class BistaticRangeIonosphericDelayModifier : public ::org::orekit::estimation::measurements::modifiers::BaseRangeIonosphericDelayModifier {
            public:
             enum {
-              mid_init$_70ec985998eac326,
-              mid_modify_a5896dbcbe782924,
-              mid_modifyWithoutDerivatives_811f96960c94c1de,
+              mid_init$_88af61602f29e4c4,
+              mid_modify_e4935e9a55e01fd8,
+              mid_modifyWithoutDerivatives_d1815d998cba71e9,
               max_mid
             };
 

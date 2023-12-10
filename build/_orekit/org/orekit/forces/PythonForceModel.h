@@ -4,17 +4,26 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+    class Field;
+  }
   namespace orekit {
     namespace propagation {
+      class FieldSpacecraftState;
       namespace numerical {
         class FieldTimeDerivativesEquations;
         class TimeDerivativesEquations;
       }
       class SpacecraftState;
-      class FieldSpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
     }
     namespace forces {
       class ForceModel;
@@ -22,18 +31,9 @@ namespace org {
     namespace time {
       class AbsoluteDate;
     }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
+    namespace utils {
+      class ParameterDriver;
     }
-    class Field;
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -55,22 +55,22 @@ namespace org {
       class PythonForceModel : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_acceleration_00aba28d3abe9a8c,
-          mid_acceleration_78989e44b99f7cc2,
-          mid_addContribution_3ae28f2cc7cbb00b,
-          mid_addContribution_170c8a5902f676b2,
-          mid_dependsOnPositionOnly_e470b6d9e0d979db,
-          mid_finalize_7ae3461a92a43152,
-          mid_getParameterDriver_d5ba0ef5703f4c62,
-          mid_getParameters_7cdc325af0834901,
-          mid_getParameters_62f3dd52a41b90da,
-          mid_getParametersDrivers_a6156df500549a58,
-          mid_init_3d13474d79f5e7bc,
-          mid_isSupported_6b161f495ea569b8,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
+          mid_init$_0fa09c18fee449d5,
+          mid_acceleration_b42ac4b5bfb80fab,
+          mid_acceleration_8954761face5e1a7,
+          mid_addContribution_5852b6ea0a71dcb4,
+          mid_addContribution_9d1574df69c5f1ff,
+          mid_dependsOnPositionOnly_b108b35ef48e27bd,
+          mid_finalize_0fa09c18fee449d5,
+          mid_getParameterDriver_32a37bc1292372ac,
+          mid_getParameters_60c7040667a7dc5c,
+          mid_getParameters_f040a403cffae196,
+          mid_getParametersDrivers_2afa36052df4765d,
+          mid_init_826b4eda94da4e78,
+          mid_isSupported_7edad2c2f64f4d68,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
           max_mid
         };
 
@@ -87,8 +87,8 @@ namespace org {
 
         PythonForceModel();
 
-        ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
         ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
+        ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
         void addContribution(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::propagation::numerical::FieldTimeDerivativesEquations &) const;
         void addContribution(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::propagation::numerical::TimeDerivativesEquations &) const;
         jboolean dependsOnPositionOnly() const;

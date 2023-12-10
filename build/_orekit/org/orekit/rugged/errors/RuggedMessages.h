@@ -36,10 +36,10 @@ namespace org {
         class RuggedMessages : public ::java::lang::Enum {
          public:
           enum {
-            mid_getLocalizedString_bab3be9b232acc5a,
-            mid_getSourceString_0090f7797e403f43,
-            mid_valueOf_f64d3eb28b165176,
-            mid_values_09671380335c3a24,
+            mid_getLocalizedString_3cd873bfb132c4fd,
+            mid_getSourceString_11b109bd155ca898,
+            mid_valueOf_a7864dfe63639cf2,
+            mid_values_f9cb3fdbb5e76b2f,
             max_mid
           };
 

@@ -5,9 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace bodies {
-      class CelestialBody;
-    }
     namespace propagation {
       namespace semianalytical {
         namespace dsst {
@@ -16,6 +13,9 @@ namespace org {
           }
         }
       }
+    }
+    namespace bodies {
+      class CelestialBody;
     }
   }
 }
@@ -36,26 +36,26 @@ namespace org {
             class DSSTThirdBodyDynamicContext : public ::org::orekit::propagation::semianalytical::dsst::forces::ForceModelContext {
              public:
               enum {
-                mid_init$_55c5b6aea8221227,
-                mid_getA_456d9a2f64d6b28d,
-                mid_getAlpha_456d9a2f64d6b28d,
-                mid_getBB_456d9a2f64d6b28d,
-                mid_getBBB_456d9a2f64d6b28d,
-                mid_getBeta_456d9a2f64d6b28d,
-                mid_getBoA_456d9a2f64d6b28d,
-                mid_getBoABpo_456d9a2f64d6b28d,
-                mid_getGamma_456d9a2f64d6b28d,
-                mid_getHXXX_456d9a2f64d6b28d,
-                mid_getKXXX_456d9a2f64d6b28d,
-                mid_getM2aoA_456d9a2f64d6b28d,
-                mid_getMCo2AB_456d9a2f64d6b28d,
-                mid_getMeanMotion_456d9a2f64d6b28d,
-                mid_getMuoR3_456d9a2f64d6b28d,
-                mid_getOoAB_456d9a2f64d6b28d,
-                mid_getR3_456d9a2f64d6b28d,
-                mid_getX_456d9a2f64d6b28d,
-                mid_getXX_456d9a2f64d6b28d,
-                mid_getb_456d9a2f64d6b28d,
+                mid_init$_9d38b0d93ab4e317,
+                mid_getA_dff5885c2c873297,
+                mid_getAlpha_dff5885c2c873297,
+                mid_getBB_dff5885c2c873297,
+                mid_getBBB_dff5885c2c873297,
+                mid_getBeta_dff5885c2c873297,
+                mid_getBoA_dff5885c2c873297,
+                mid_getBoABpo_dff5885c2c873297,
+                mid_getGamma_dff5885c2c873297,
+                mid_getHXXX_dff5885c2c873297,
+                mid_getKXXX_dff5885c2c873297,
+                mid_getM2aoA_dff5885c2c873297,
+                mid_getMCo2AB_dff5885c2c873297,
+                mid_getMeanMotion_dff5885c2c873297,
+                mid_getMuoR3_dff5885c2c873297,
+                mid_getOoAB_dff5885c2c873297,
+                mid_getR3_dff5885c2c873297,
+                mid_getX_dff5885c2c873297,
+                mid_getXX_dff5885c2c873297,
+                mid_getb_dff5885c2c873297,
                 max_mid
               };
 

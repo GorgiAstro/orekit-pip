@@ -3,16 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Integer;
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -27,6 +17,16 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Integer;
+    class Class;
+    class String;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -38,9 +38,9 @@ namespace org {
           class Type : public ::java::lang::Enum {
            public:
             enum {
-              mid_getParser_09ac26d591138915,
-              mid_valueOf_f4c0e1b44bda57b4,
-              mid_values_329c4a6079522b88,
+              mid_getParser_09a99897ac758d1a,
+              mid_valueOf_5f7adf9f2fff01b3,
+              mid_values_3893020d89c71aeb,
               max_mid
             };
 

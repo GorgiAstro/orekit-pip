@@ -3,19 +3,6 @@
 
 #include "org/hipparchus/linear/SparseRealVector.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace linear {
-      class RealVector;
-      class RealVector$Entry;
-      class OpenMapRealVector;
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-      class MathRuntimeException;
-    }
-  }
-}
 namespace java {
   namespace util {
     class Iterator;
@@ -29,6 +16,19 @@ namespace java {
     class Object;
   }
 }
+namespace org {
+  namespace hipparchus {
+    namespace linear {
+      class OpenMapRealVector;
+      class RealVector;
+      class RealVector$Entry;
+    }
+    namespace exception {
+      class MathRuntimeException;
+      class MathIllegalArgumentException;
+    }
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -38,49 +38,49 @@ namespace org {
       class OpenMapRealVector : public ::org::hipparchus::linear::SparseRealVector {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_init$_ebc26dcaf4761286,
-          mid_init$_6d211d0550baef5d,
-          mid_init$_df4ee11a06094b55,
-          mid_init$_0a2a1ac2721c0336,
-          mid_init$_caadaecfce5fba2f,
-          mid_init$_b6f037ff44710d52,
-          mid_init$_987a5fb872043b12,
-          mid_init$_8dbc1129a3c2557a,
-          mid_init$_78e41e7b5124a628,
-          mid_add_3df4c0786bb92f4f,
-          mid_add_a3e626dfa1abd779,
-          mid_append_3df4c0786bb92f4f,
-          mid_append_1b8432fd9839ffe9,
-          mid_append_61b3fd82e8e8c17c,
-          mid_copy_886c441ddd7b236c,
-          mid_ebeDivide_1b8432fd9839ffe9,
-          mid_ebeMultiply_1b8432fd9839ffe9,
-          mid_equals_229c87223f486349,
-          mid_getDimension_f2f64475e4580546,
-          mid_getDistance_7f9114d371c3209e,
-          mid_getDistance_5ed80776077f2bda,
-          mid_getEntry_b772323fc98b7293,
-          mid_getL1Distance_7f9114d371c3209e,
-          mid_getL1Distance_5ed80776077f2bda,
-          mid_getLInfDistance_5ed80776077f2bda,
-          mid_getSparsity_456d9a2f64d6b28d,
-          mid_getSubVector_5a91de7afba9af1f,
-          mid_hashCode_f2f64475e4580546,
-          mid_isInfinite_e470b6d9e0d979db,
-          mid_isNaN_e470b6d9e0d979db,
-          mid_mapAdd_61b3fd82e8e8c17c,
-          mid_mapAddToSelf_61b3fd82e8e8c17c,
-          mid_set_77e0f9a1f260e2e5,
-          mid_setEntry_987a5fb872043b12,
-          mid_setSubVector_dcd0f7fda5e9451c,
-          mid_sparseIterator_035c6167e6569aac,
-          mid_subtract_3df4c0786bb92f4f,
-          mid_subtract_a3e626dfa1abd779,
-          mid_toArray_7cdc325af0834901,
-          mid_unitVector_886c441ddd7b236c,
-          mid_unitize_7ae3461a92a43152,
-          mid_isDefaultValue_e18fb1101b70dcca,
+          mid_init$_0fa09c18fee449d5,
+          mid_init$_fa9d415d19f69361,
+          mid_init$_dffaee884eb24974,
+          mid_init$_bdf205176b90cff1,
+          mid_init$_99803b0791f320ff,
+          mid_init$_bc1ff02eb3693128,
+          mid_init$_ce8c8b53c2138baa,
+          mid_init$_bb79ca80d85d0a66,
+          mid_init$_6f37635c3285dbdf,
+          mid_init$_1506189166690b5e,
+          mid_add_f41b4392c3b0cbe8,
+          mid_add_613347e28dd909cd,
+          mid_append_f41b4392c3b0cbe8,
+          mid_append_bca8e4820c9cabf8,
+          mid_append_09df6803b1c624a1,
+          mid_copy_8ab6f9d2c3b24e14,
+          mid_ebeDivide_bca8e4820c9cabf8,
+          mid_ebeMultiply_bca8e4820c9cabf8,
+          mid_equals_65c7d273e80d497a,
+          mid_getDimension_570ce0828f81a2c1,
+          mid_getDistance_bd316bc7df5386b7,
+          mid_getDistance_c579a73494d20c67,
+          mid_getEntry_46f85b53d9aedd96,
+          mid_getL1Distance_bd316bc7df5386b7,
+          mid_getL1Distance_c579a73494d20c67,
+          mid_getLInfDistance_c579a73494d20c67,
+          mid_getSparsity_dff5885c2c873297,
+          mid_getSubVector_583c2e0c30920a31,
+          mid_hashCode_570ce0828f81a2c1,
+          mid_isInfinite_b108b35ef48e27bd,
+          mid_isNaN_b108b35ef48e27bd,
+          mid_mapAdd_09df6803b1c624a1,
+          mid_mapAddToSelf_09df6803b1c624a1,
+          mid_set_17db3a65980d3441,
+          mid_setEntry_bb79ca80d85d0a66,
+          mid_setSubVector_18388821294f273e,
+          mid_sparseIterator_4d23511a9f0db098,
+          mid_subtract_f41b4392c3b0cbe8,
+          mid_subtract_613347e28dd909cd,
+          mid_toArray_60c7040667a7dc5c,
+          mid_unitVector_8ab6f9d2c3b24e14,
+          mid_unitize_0fa09c18fee449d5,
+          mid_isDefaultValue_2e401133981893e4,
           max_mid
         };
 

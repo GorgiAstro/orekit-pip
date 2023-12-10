@@ -20,9 +20,9 @@ namespace java {
     class Spliterator$OfPrimitive : public ::java::util::Spliterator {
      public:
       enum {
-        mid_forEachRemaining_7ca0d9438822cb0b,
-        mid_tryAdvance_229c87223f486349,
-        mid_trySplit_95c423487f2915e1,
+        mid_forEachRemaining_2990946c992aafed,
+        mid_tryAdvance_65c7d273e80d497a,
+        mid_trySplit_f73d1b28f655f500,
         max_mid
       };
 

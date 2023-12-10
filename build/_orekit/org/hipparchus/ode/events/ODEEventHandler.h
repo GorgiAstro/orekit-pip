@@ -30,9 +30,9 @@ namespace org {
         class ODEEventHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_eventOccurred_b44a5bd8164db790,
-            mid_init_b04fdf194c7cd3ab,
-            mid_resetState_77c214d3969e685d,
+            mid_eventOccurred_8eae28001ad776dd,
+            mid_init_8c7db74dc121e7b9,
+            mid_resetState_0cb5f574380f6dc4,
             max_mid
           };
 

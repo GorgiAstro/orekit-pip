@@ -4,17 +4,17 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace time {
-      class TimeStamped;
-      class TimeComponents;
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-      class DateComponents;
-    }
-  }
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+  namespace orekit {
+    namespace time {
+      class DateComponents;
+      class AbsoluteDate;
+      class TimeComponents;
+      class TimeStamped;
+      class FieldAbsoluteDate;
+    }
   }
 }
 namespace java {
@@ -34,13 +34,13 @@ namespace org {
       class UTCTAIOffset : public ::java::lang::Object {
        public:
         enum {
-          mid_getDate_aaa854c403487cf3,
-          mid_getLeap_456d9a2f64d6b28d,
-          mid_getMJD_f2f64475e4580546,
-          mid_getOffset_e912d21057defe63,
-          mid_getOffset_7bc0fd76ee915b72,
-          mid_getOffset_ceb6ee9e1c4bbdb1,
-          mid_getValidityStart_aaa854c403487cf3,
+          mid_getDate_85703d13e302437e,
+          mid_getLeap_dff5885c2c873297,
+          mid_getMJD_570ce0828f81a2c1,
+          mid_getOffset_bf1d7732f1acb697,
+          mid_getOffset_2a5f05be83ff251d,
+          mid_getOffset_56358b00ba005b52,
+          mid_getValidityStart_85703d13e302437e,
           max_mid
         };
 

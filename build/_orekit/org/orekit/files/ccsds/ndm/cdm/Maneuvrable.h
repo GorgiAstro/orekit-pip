@@ -34,11 +34,11 @@ namespace org {
             class Maneuvrable : public ::java::lang::Enum {
              public:
               enum {
-                mid_getEnum_40263e8d06abaefc,
-                mid_getValue_0090f7797e403f43,
-                mid_toString_0090f7797e403f43,
-                mid_valueOf_40263e8d06abaefc,
-                mid_values_593b45927b42658a,
+                mid_getEnum_2dc0bddd82534f22,
+                mid_getValue_11b109bd155ca898,
+                mid_toString_11b109bd155ca898,
+                mid_valueOf_2dc0bddd82534f22,
+                mid_values_2965c3863ae8e0f6,
                 max_mid
               };
 

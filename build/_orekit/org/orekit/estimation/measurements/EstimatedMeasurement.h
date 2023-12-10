@@ -3,6 +3,16 @@
 
 #include "org/orekit/estimation/measurements/EstimatedMeasurementBase.h"
 
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace errors {
@@ -18,22 +28,12 @@ namespace org {
         class ObservedMeasurement;
       }
     }
-    namespace propagation {
-      class SpacecraftState;
-    }
     namespace time {
       class AbsoluteDate;
     }
-  }
-}
-namespace java {
-  namespace util {
-    namespace stream {
-      class Stream;
+    namespace propagation {
+      class SpacecraftState;
     }
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -46,15 +46,15 @@ namespace org {
         class EstimatedMeasurement : public ::org::orekit::estimation::measurements::EstimatedMeasurementBase {
          public:
           enum {
-            mid_init$_928a9f4df476de65,
-            mid_getDerivativesDrivers_a68a17dd093f796d,
-            mid_getParameterDerivatives_6363ab2c73fe360a,
-            mid_getParameterDerivatives_401862141dab4c49,
-            mid_getStateDerivatives_01d6404243df74a0,
-            mid_getStateSize_f2f64475e4580546,
-            mid_setParameterDerivatives_24fd0e1bfa4da802,
-            mid_setParameterDerivatives_0748e18bcfe2efe9,
-            mid_setStateDerivatives_d2ec2a370d571745,
+            mid_init$_d1c2fb63ea99e1e6,
+            mid_getDerivativesDrivers_20f6d2b462aaef4b,
+            mid_getParameterDerivatives_5386fd8e2da103f7,
+            mid_getParameterDerivatives_3a00431c3e905a8f,
+            mid_getStateDerivatives_d3e8f395184a4338,
+            mid_getStateSize_570ce0828f81a2c1,
+            mid_setParameterDerivatives_ff7a5e31add3f53c,
+            mid_setParameterDerivatives_39ef7d36cf7f5331,
+            mid_setStateDerivatives_3ca2bf5de9b54389,
             max_mid
           };
 

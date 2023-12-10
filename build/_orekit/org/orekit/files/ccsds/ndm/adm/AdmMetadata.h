@@ -32,18 +32,18 @@ namespace org {
             class AdmMetadata : public ::org::orekit::files::ccsds::section::Metadata {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_getCenter_78375ee64056f203,
-                mid_getHasCreatableBody_e470b6d9e0d979db,
-                mid_getLaunchNumber_f2f64475e4580546,
-                mid_getLaunchPiece_0090f7797e403f43,
-                mid_getLaunchYear_f2f64475e4580546,
-                mid_getObjectID_0090f7797e403f43,
-                mid_getObjectName_0090f7797e403f43,
-                mid_setCenter_4937bc9292f008b1,
-                mid_setObjectID_e939c6558ae8d313,
-                mid_setObjectName_e939c6558ae8d313,
-                mid_validate_77e0f9a1f260e2e5,
+                mid_init$_0fa09c18fee449d5,
+                mid_getCenter_23d31d5db0bee8e9,
+                mid_getHasCreatableBody_b108b35ef48e27bd,
+                mid_getLaunchNumber_570ce0828f81a2c1,
+                mid_getLaunchPiece_11b109bd155ca898,
+                mid_getLaunchYear_570ce0828f81a2c1,
+                mid_getObjectID_11b109bd155ca898,
+                mid_getObjectName_11b109bd155ca898,
+                mid_setCenter_32e120c3a0353f27,
+                mid_setObjectID_d0bc48d5b00dc40c,
+                mid_setObjectName_d0bc48d5b00dc40c,
+                mid_validate_17db3a65980d3441,
                 max_mid
               };
 

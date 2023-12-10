@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -16,6 +11,11 @@ namespace org {
       }
       class SpacecraftState;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,7 +28,7 @@ namespace org {
         class EnablingPredicate : public ::java::lang::Object {
          public:
           enum {
-            mid_eventIsEnabled_8c5eb47902e17a6d,
+            mid_eventIsEnabled_9da0e57d64f11841,
             max_mid
           };
 

@@ -25,8 +25,8 @@ namespace org {
         class SmoothStepFactory$QuadraticSmoothStepFunction : public ::org::hipparchus::analysis::polynomials::SmoothStepFactory$SmoothStepFunction {
          public:
           enum {
-            mid_value_0ba5fed9597b693e,
-            mid_value_c564d6ace53a5934,
+            mid_value_dcbc7ce2902fa136,
+            mid_value_8c19bdea212fe058,
             max_mid
           };
 

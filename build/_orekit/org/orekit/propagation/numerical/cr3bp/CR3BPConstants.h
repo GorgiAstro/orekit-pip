@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class TimeScale;
       class AbsoluteDate;
+      class TimeScale;
     }
   }
 }
@@ -27,9 +27,9 @@ namespace org {
           class CR3BPConstants : public ::java::lang::Object {
            public:
             enum {
-              mid_getEarthMoonBarycenterSemiMajorAxis_8be30d4a50bd5048,
-              mid_getJupiterSemiMajorAxis_8be30d4a50bd5048,
-              mid_getMoonSemiMajorAxis_456d9a2f64d6b28d,
+              mid_getEarthMoonBarycenterSemiMajorAxis_3ee179c6abb41546,
+              mid_getJupiterSemiMajorAxis_3ee179c6abb41546,
+              mid_getMoonSemiMajorAxis_dff5885c2c873297,
               max_mid
             };
 

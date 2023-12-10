@@ -4,29 +4,32 @@
 #include "java/lang/Object.h"
 
 namespace java {
+  namespace text {
+    class ParseException;
+  }
   namespace io {
     class IOException;
     class InputStream;
-  }
-  namespace util {
-    class SortedSet;
   }
   namespace lang {
     class Class;
     class String;
   }
-  namespace text {
-    class ParseException;
+  namespace util {
+    class SortedSet;
   }
 }
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataLoader;
+    }
     namespace errors {
       class OrekitException;
     }
     namespace time {
-      class TimeScale;
       class AbsoluteDate;
+      class TimeScale;
     }
     namespace models {
       namespace earth {
@@ -36,9 +39,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace data {
-      class DataLoader;
     }
   }
 }
@@ -54,12 +54,12 @@ namespace org {
             class DtcDataLoader : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_6d73d536a2f24dd5,
-                mid_getDataSet_d01a04ddab6c7194,
-                mid_getMaxDate_aaa854c403487cf3,
-                mid_getMinDate_aaa854c403487cf3,
-                mid_loadData_ec60cb5f4b3de555,
-                mid_stillAcceptsData_e470b6d9e0d979db,
+                mid_init$_e93d77ad761aa1f2,
+                mid_getDataSet_917725130bbb61f1,
+                mid_getMaxDate_85703d13e302437e,
+                mid_getMinDate_85703d13e302437e,
+                mid_loadData_1815f85c118161ad,
+                mid_stillAcceptsData_b108b35ef48e27bd,
                 max_mid
               };
 

@@ -29,9 +29,9 @@ namespace org {
           class FieldManeuverTriggersResetter : public ::java::lang::Object {
            public:
             enum {
-              mid_init_acdd8180a5dc1a8d,
-              mid_maneuverTriggered_c76342d42407aa3d,
-              mid_resetState_db7b9ef879f5b135,
+              mid_init_8e8de2be1664674a,
+              mid_maneuverTriggered_33f1c56ea7775d4e,
+              mid_resetState_25e81e971666cba6,
               max_mid
             };
 

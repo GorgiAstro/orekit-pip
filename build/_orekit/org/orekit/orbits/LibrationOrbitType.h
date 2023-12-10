@@ -3,17 +3,17 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace orbits {
       class LibrationOrbitType;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,8 +25,8 @@ namespace org {
       class LibrationOrbitType : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_325577e8d76d51a9,
-          mid_values_4d547f0f9c296451,
+          mid_valueOf_ec46fa3740e95c41,
+          mid_values_25a0d0b26c84a19a,
           max_mid
         };
 

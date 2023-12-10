@@ -32,9 +32,9 @@ namespace org {
           class RtcmMessageType : public ::java::lang::Enum {
            public:
             enum {
-              mid_getMessageType_17061eea11f24b03,
-              mid_valueOf_17061eea11f24b03,
-              mid_values_0da16c5abdfcee5f,
+              mid_getMessageType_88060bd9903e0c36,
+              mid_valueOf_88060bd9903e0c36,
+              mid_values_a33f89df78560247,
               max_mid
             };
 

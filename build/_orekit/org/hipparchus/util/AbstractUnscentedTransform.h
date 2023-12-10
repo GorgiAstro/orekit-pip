@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
-    namespace util {
-      class UnscentedTransformProvider;
-    }
     namespace linear {
       class RealMatrix;
       class RealVector;
+    }
+    namespace util {
+      class UnscentedTransformProvider;
     }
   }
 }
@@ -28,9 +28,9 @@ namespace org {
       class AbstractUnscentedTransform : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0a2a1ac2721c0336,
-          mid_unscentedTransform_701a8550e98fcc7d,
-          mid_getMultiplicationFactor_456d9a2f64d6b28d,
+          mid_init$_99803b0791f320ff,
+          mid_unscentedTransform_596ac2a258d0a23b,
+          mid_getMultiplicationFactor_dff5885c2c873297,
           max_mid
         };
 

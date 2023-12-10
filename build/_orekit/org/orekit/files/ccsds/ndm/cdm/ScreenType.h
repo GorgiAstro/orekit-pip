@@ -34,8 +34,8 @@ namespace org {
             class ScreenType : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_6a312d562e906a26,
-                mid_values_1fc005c47b12121f,
+                mid_valueOf_8e9e4edd6495544e,
+                mid_values_b1f991fd6caf4d18,
                 max_mid
               };
 

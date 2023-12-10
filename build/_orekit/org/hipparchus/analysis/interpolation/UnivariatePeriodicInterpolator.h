@@ -9,10 +9,10 @@ namespace org {
       class MathIllegalArgumentException;
     }
     namespace analysis {
+      class UnivariateFunction;
       namespace interpolation {
         class UnivariateInterpolator;
       }
-      class UnivariateFunction;
     }
   }
 }
@@ -31,9 +31,9 @@ namespace org {
         class UnivariatePeriodicInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_829c3d5df327ad84,
-            mid_init$_0743fafa735d2b7c,
-            mid_interpolate_892e3f95ace99810,
+            mid_init$_6d5e1af35a58a08c,
+            mid_init$_39bac383100c02fc,
+            mid_interpolate_26024a819137b7d3,
             max_mid
           };
 

@@ -17,10 +17,10 @@ namespace org {
       class TimeStampedFieldHermiteInterpolator : public ::org::orekit::time::AbstractFieldTimeInterpolator {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_init$_0a2a1ac2721c0336,
-          mid_init$_987a5fb872043b12,
-          mid_interpolate_8488ed656e90df7c,
+          mid_init$_0fa09c18fee449d5,
+          mid_init$_99803b0791f320ff,
+          mid_init$_bb79ca80d85d0a66,
+          mid_interpolate_a8302d600b3ecdcd,
           max_mid
         };
 

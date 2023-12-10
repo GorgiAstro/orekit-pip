@@ -3,32 +3,24 @@
 
 #include "org/orekit/files/ccsds/ndm/cdm/CdmMessageWriter.h"
 
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace section {
-          class Segment;
+        namespace ndm {
+          namespace cdm {
+            class CdmRelativeMetadata;
+            class CdmData;
+            class CdmMetadata;
+          }
         }
         namespace utils {
           namespace generation {
             class Generator;
           }
         }
-        namespace ndm {
-          namespace cdm {
-            class CdmRelativeMetadata;
-            class CdmMetadata;
-            class CdmData;
-          }
+        namespace section {
+          class Segment;
         }
       }
     }
@@ -38,6 +30,14 @@ namespace org {
     namespace utils {
       class IERSConventions;
     }
+  }
+}
+namespace java {
+  namespace io {
+    class IOException;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -52,9 +52,9 @@ namespace org {
             class CdmWriter : public ::org::orekit::files::ccsds::ndm::cdm::CdmMessageWriter {
              public:
               enum {
-                mid_init$_da1de1cf1f97305e,
-                mid_writeRelativeMetadataContent_6f7f8f4354c51157,
-                mid_writeSegmentContent_17bd99da1e106002,
+                mid_init$_80145525a2ecc4f8,
+                mid_writeRelativeMetadataContent_6461388fb85a241b,
+                mid_writeSegmentContent_a4679b5cde76d825,
                 max_mid
               };
 

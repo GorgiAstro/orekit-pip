@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace linear {
       class RealMatrix;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -27,10 +27,10 @@ namespace org {
       class RectangularCholeskyDecomposition : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_30aa151fd03f3096,
-          mid_init$_27ff5cf8ba76b4fe,
-          mid_getRank_f2f64475e4580546,
-          mid_getRootMatrix_7116bbecdd8ceb21,
+          mid_init$_c67473bd6cfaa69b,
+          mid_init$_21a79182f4dd9085,
+          mid_getRank_570ce0828f81a2c1,
+          mid_getRootMatrix_688b496048ff947b,
           max_mid
         };
 

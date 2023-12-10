@@ -3,6 +3,13 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class Localizable;
+    }
+  }
+}
 namespace java {
   namespace util {
     class Locale;
@@ -10,13 +17,6 @@ namespace java {
   namespace lang {
     class String;
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class Localizable;
-    }
   }
 }
 template<class T> class JArray;
@@ -28,10 +28,10 @@ namespace org {
       class DummyLocalizable : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_e939c6558ae8d313,
-          mid_getLocalizedString_bab3be9b232acc5a,
-          mid_getSourceString_0090f7797e403f43,
-          mid_toString_0090f7797e403f43,
+          mid_init$_d0bc48d5b00dc40c,
+          mid_getLocalizedString_3cd873bfb132c4fd,
+          mid_getSourceString_11b109bd155ca898,
+          mid_toString_11b109bd155ca898,
           max_mid
         };
 

@@ -5,19 +5,19 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
-    namespace utils {
-      class TimeStampedFieldAngularCoordinates;
-      class FieldPVCoordinatesProvider;
-      class TimeStampedAngularCoordinates;
-      class PVCoordinatesProvider;
-    }
     namespace attitudes {
+      class AttitudeBuilder;
       class Attitude;
       class FieldAttitude;
-      class AttitudeBuilder;
+    }
+    namespace utils {
+      class TimeStampedAngularCoordinates;
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
+      class TimeStampedFieldAngularCoordinates;
+    }
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -36,13 +36,13 @@ namespace org {
       class PythonAttitudeBuilder : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_build_46e50d643ce38532,
-          mid_build_d2838fa0adea33de,
-          mid_finalize_7ae3461a92a43152,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
+          mid_init$_0fa09c18fee449d5,
+          mid_build_32e9a4ac991f1702,
+          mid_build_54b3b52d9ecd9e48,
+          mid_finalize_0fa09c18fee449d5,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
           max_mid
         };
 

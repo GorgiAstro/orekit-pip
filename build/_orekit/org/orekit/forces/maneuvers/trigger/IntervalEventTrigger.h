@@ -4,17 +4,17 @@
 #include "org/orekit/forces/maneuvers/trigger/AbstractManeuverTriggers.h"
 
 namespace org {
-  namespace hipparchus {
-    class Field;
-  }
   namespace orekit {
     namespace propagation {
       namespace events {
-        class FieldEventDetector;
         class AbstractDetector;
         class EventDetector;
+        class FieldEventDetector;
       }
     }
+  }
+  namespace hipparchus {
+    class Field;
   }
 }
 namespace java {
@@ -38,12 +38,12 @@ namespace org {
           class IntervalEventTrigger : public ::org::orekit::forces::maneuvers::trigger::AbstractManeuverTriggers {
            public:
             enum {
-              mid_init$_d0c14729fef158d0,
-              mid_getEventDetectors_a68a17dd093f796d,
-              mid_getFieldEventDetectors_1328ddb491531a35,
-              mid_getFiringIntervalDetector_5f2d0fd4426cfe5c,
-              mid_isFiringOnInitialState_795d7e54d4c58d83,
-              mid_convertIntervalDetector_695049796b8b09bd,
+              mid_init$_958f8a74aa6ccd6d,
+              mid_getEventDetectors_20f6d2b462aaef4b,
+              mid_getFieldEventDetectors_361313cd1a9c693a,
+              mid_getFiringIntervalDetector_900a1fd995808d92,
+              mid_convertIntervalDetector_904dccaacafa0db1,
+              mid_isFiringOnInitialState_6501154ab0a356a8,
               max_mid
             };
 

@@ -17,13 +17,13 @@ namespace org {
       class MathIllegalArgumentException;
     }
     namespace geometry {
+      class Space;
       namespace spherical {
         namespace oned {
-          class Sphere1D$NoSubSpaceException;
           class Sphere1D;
+          class Sphere1D$NoSubSpaceException;
         }
       }
-      class Space;
     }
   }
 }
@@ -38,10 +38,10 @@ namespace org {
           class Sphere1D : public ::java::lang::Object {
            public:
             enum {
-              mid_checkTolerance_77e0f9a1f260e2e5,
-              mid_getDimension_f2f64475e4580546,
-              mid_getInstance_5912521fb294e3a6,
-              mid_getSubSpace_0438ef5f9a5edb53,
+              mid_checkTolerance_17db3a65980d3441,
+              mid_getDimension_570ce0828f81a2c1,
+              mid_getInstance_1bd6b4665a0d1abd,
+              mid_getSubSpace_ebbd6b2d39ab0e4f,
               max_mid
             };
 

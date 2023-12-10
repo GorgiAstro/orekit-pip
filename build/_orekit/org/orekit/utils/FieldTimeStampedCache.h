@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace time {
-      class FieldTimeStamped;
-      class FieldAbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     namespace stream {
@@ -18,8 +10,16 @@ namespace java {
     }
   }
   namespace lang {
-    class IllegalStateException;
     class Class;
+    class IllegalStateException;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class FieldTimeStamped;
+      class FieldAbsoluteDate;
+    }
   }
 }
 template<class T> class JArray;
@@ -31,10 +31,10 @@ namespace org {
       class FieldTimeStampedCache : public ::java::lang::Object {
        public:
         enum {
-          mid_getEarliest_2ac58ed946476d4e,
-          mid_getLatest_2ac58ed946476d4e,
-          mid_getNeighbors_a39ee104977ad16b,
-          mid_getNeighborsSize_f2f64475e4580546,
+          mid_getEarliest_f8d8d28f6791aa76,
+          mid_getLatest_f8d8d28f6791aa76,
+          mid_getNeighbors_92d676459a63dcda,
+          mid_getNeighborsSize_570ce0828f81a2c1,
           max_mid
         };
 

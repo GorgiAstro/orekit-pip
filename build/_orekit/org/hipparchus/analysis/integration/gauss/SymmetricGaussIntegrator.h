@@ -8,11 +8,11 @@ namespace org {
     namespace exception {
       class MathIllegalArgumentException;
     }
-    namespace analysis {
-      class UnivariateFunction;
-    }
     namespace util {
       class Pair;
+    }
+    namespace analysis {
+      class UnivariateFunction;
     }
   }
 }
@@ -32,9 +32,9 @@ namespace org {
           class SymmetricGaussIntegrator : public ::org::hipparchus::analysis::integration::gauss::GaussIntegrator {
            public:
             enum {
-              mid_init$_832c28cb3cc4d660,
-              mid_init$_0d03c8a1d7f56f02,
-              mid_integrate_96e94d14952261a3,
+              mid_init$_3fca46bb93fd3e69,
+              mid_init$_e1f4b15468f5564a,
+              mid_integrate_c2aa72fb3bbda68c,
               max_mid
             };
 

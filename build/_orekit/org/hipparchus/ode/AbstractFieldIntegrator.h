@@ -3,6 +3,27 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace ode {
+      class FieldODEIntegrator;
+      class FieldODEStateAndDerivative;
+      namespace sampling {
+        class FieldODEStepHandler;
+      }
+      namespace events {
+        class FieldODEEventDetector;
+        class FieldODEStepEndHandler;
+      }
+    }
+    namespace exception {
+      class MathIllegalStateException;
+      class MathIllegalArgumentException;
+    }
+    class Field;
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -11,27 +32,6 @@ namespace java {
     class NullPointerException;
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    class Field;
-    namespace exception {
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
-    }
-    namespace ode {
-      class FieldODEStateAndDerivative;
-      class FieldODEIntegrator;
-      namespace events {
-        class FieldODEEventDetector;
-        class FieldODEStepEndHandler;
-      }
-      namespace sampling {
-        class FieldODEStepHandler;
-      }
-    }
-    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -43,35 +43,35 @@ namespace org {
       class AbstractFieldIntegrator : public ::java::lang::Object {
        public:
         enum {
-          mid_addEventDetector_51c8f19515e56fc6,
-          mid_addStepEndHandler_08e1e17c6db119ef,
-          mid_addStepHandler_d88adba4c2bf364d,
-          mid_clearEventDetectors_7ae3461a92a43152,
-          mid_clearStepEndHandlers_7ae3461a92a43152,
-          mid_clearStepHandlers_7ae3461a92a43152,
-          mid_computeDerivatives_ea2fed402e730f9f,
-          mid_getCurrentSignedStepsize_e6d4d3215c30992a,
-          mid_getEvaluations_f2f64475e4580546,
-          mid_getEventDetectors_a6156df500549a58,
-          mid_getField_70b4bbd3fa378d6b,
-          mid_getMaxEvaluations_f2f64475e4580546,
-          mid_getName_0090f7797e403f43,
-          mid_getStepEndHandlers_a6156df500549a58,
-          mid_getStepHandlers_a6156df500549a58,
-          mid_getStepStart_f1f1c5e26e98a1d9,
-          mid_setMaxEvaluations_0a2a1ac2721c0336,
-          mid_sanityChecks_2231c8fee9b0ac70,
-          mid_initIntegration_668e072c435ebb6b,
-          mid_setStepStart_c314ae4458a4e52a,
-          mid_setStepSize_03a16642f77779e7,
-          mid_setIsLastStep_50a2e0b139e80a58,
-          mid_getStepSize_e6d4d3215c30992a,
-          mid_acceptStep_356accace7518dce,
-          mid_isLastStep_e470b6d9e0d979db,
-          mid_resetOccurred_e470b6d9e0d979db,
-          mid_getEquations_6fd381cb4880014f,
-          mid_getEvaluationsCounter_745ef02916e2d8db,
-          mid_setStateInitialized_50a2e0b139e80a58,
+          mid_addEventDetector_cdac85baa1ddabb0,
+          mid_addStepEndHandler_9ddb55dbce73d9f2,
+          mid_addStepHandler_a947dba38eed8683,
+          mid_clearEventDetectors_0fa09c18fee449d5,
+          mid_clearStepEndHandlers_0fa09c18fee449d5,
+          mid_clearStepHandlers_0fa09c18fee449d5,
+          mid_computeDerivatives_895918d31d24de7c,
+          mid_getCurrentSignedStepsize_eba8e72a22c984ac,
+          mid_getEvaluations_570ce0828f81a2c1,
+          mid_getEventDetectors_2afa36052df4765d,
+          mid_getField_5b28be2d3632a5dc,
+          mid_getMaxEvaluations_570ce0828f81a2c1,
+          mid_getName_11b109bd155ca898,
+          mid_getStepEndHandlers_2afa36052df4765d,
+          mid_getStepHandlers_2afa36052df4765d,
+          mid_getStepStart_7194dd3ba3cbc7e8,
+          mid_setMaxEvaluations_99803b0791f320ff,
+          mid_sanityChecks_e269d011240a2d04,
+          mid_initIntegration_d8a6319aba9a7b17,
+          mid_setStepStart_22d6c75b64070b54,
+          mid_getStepSize_eba8e72a22c984ac,
+          mid_setIsLastStep_bd04c9335fb9e4cf,
+          mid_acceptStep_0795f39b52fb1f5e,
+          mid_isLastStep_b108b35ef48e27bd,
+          mid_resetOccurred_b108b35ef48e27bd,
+          mid_setStepSize_072c8635f2164db9,
+          mid_getEvaluationsCounter_b6dd60d8c3af0cf7,
+          mid_getEquations_53ef2152c5bf56a9,
+          mid_setStateInitialized_bd04c9335fb9e4cf,
           max_mid
         };
 

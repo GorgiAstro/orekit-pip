@@ -3,22 +3,22 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace distribution {
-      class RealDistribution;
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
-  }
-}
 namespace java {
+  namespace io {
+    class Serializable;
+  }
   namespace lang {
     class Class;
   }
-  namespace io {
-    class Serializable;
+}
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+    namespace distribution {
+      class RealDistribution;
+    }
   }
 }
 template<class T> class JArray;
@@ -31,10 +31,10 @@ namespace org {
         class AbstractRealDistribution : public ::java::lang::Object {
          public:
           enum {
-            mid_inverseCumulativeProbability_0ba5fed9597b693e,
-            mid_logDensity_0ba5fed9597b693e,
-            mid_probability_824133ce4aec3505,
-            mid_getSolverAbsoluteAccuracy_456d9a2f64d6b28d,
+            mid_inverseCumulativeProbability_dcbc7ce2902fa136,
+            mid_logDensity_dcbc7ce2902fa136,
+            mid_probability_86ffecc08a63eff0,
+            mid_getSolverAbsoluteAccuracy_dff5885c2c873297,
             max_mid
           };
 

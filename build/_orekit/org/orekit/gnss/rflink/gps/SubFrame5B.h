@@ -19,11 +19,11 @@ namespace org {
           class SubFrame5B : public ::org::orekit::gnss::rflink::gps::SubFrame45 {
            public:
             enum {
-              mid_getReservedA10_f2f64475e4580546,
-              mid_getReservedB10_f2f64475e4580546,
-              mid_getSvHealth_38565d58479aa24a,
-              mid_getTOA_f2f64475e4580546,
-              mid_getWeekNumber_f2f64475e4580546,
+              mid_getReservedA10_570ce0828f81a2c1,
+              mid_getReservedB10_570ce0828f81a2c1,
+              mid_getSvHealth_2235cd056f5a882b,
+              mid_getTOA_570ce0828f81a2c1,
+              mid_getWeekNumber_570ce0828f81a2c1,
               max_mid
             };
 

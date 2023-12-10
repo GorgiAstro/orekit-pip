@@ -6,10 +6,10 @@
 namespace org {
   namespace orekit {
     namespace propagation {
-      class EphemerisGenerator;
       namespace events {
         class EventDetector;
       }
+      class EphemerisGenerator;
       class SpacecraftState;
     }
     namespace utils {
@@ -38,18 +38,18 @@ namespace org {
         class AbstractAnalyticalPropagator : public ::org::orekit::propagation::AbstractPropagator {
          public:
           enum {
-            mid_addEventDetector_8ef30a2ad40caceb,
-            mid_clearEventsDetectors_7ae3461a92a43152,
-            mid_getEphemerisGenerator_dd0e78d2be8aaf34,
-            mid_getEventsDetectors_cfcfd130f9013e3e,
-            mid_getPvProvider_7044cb1966c8a481,
-            mid_propagate_afc18c81ed763a96,
-            mid_acceptStep_7a6cf16336efee55,
-            mid_getMass_e912d21057defe63,
-            mid_resetIntermediateState_9658cf3eaef14ef5,
-            mid_propagateOrbit_6f58641238e8a9c4,
-            mid_getJacobiansColumnsNames_a6156df500549a58,
-            mid_basicPropagate_889031abe87f3b14,
+            mid_addEventDetector_efb7003d866d4523,
+            mid_clearEventsDetectors_0fa09c18fee449d5,
+            mid_getEphemerisGenerator_18d439b26e70ccd0,
+            mid_getEventsDetectors_37528d110cff6b74,
+            mid_getPvProvider_903aca6bb4523e29,
+            mid_propagate_a69ef29c3ea1e1fa,
+            mid_acceptStep_a63e58b9dfde9ac7,
+            mid_propagateOrbit_7a8f4c854607bed6,
+            mid_getMass_bf1d7732f1acb697,
+            mid_resetIntermediateState_33f4696e4edaa03c,
+            mid_basicPropagate_fbff2ff5554d95e1,
+            mid_getJacobiansColumnsNames_2afa36052df4765d,
             max_mid
           };
 

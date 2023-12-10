@@ -17,7 +17,7 @@ namespace org {
       class ConvergenceChecker : public ::java::lang::Object {
        public:
         enum {
-          mid_converged_530133671081dc04,
+          mid_converged_7c442e0e70a8e8da,
           max_mid
         };
 

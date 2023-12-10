@@ -10,8 +10,8 @@ namespace org {
         namespace ndm {
           namespace odm {
             namespace opm {
-              class OpmData;
               class Maneuver;
+              class OpmData;
             }
             class OdmHeader;
             class OdmCommonMetadata;
@@ -21,10 +21,6 @@ namespace org {
           class Segment;
         }
       }
-    }
-    namespace time {
-      class TimeStamped;
-      class AbsoluteDate;
     }
     namespace data {
       class DataContext;
@@ -36,6 +32,10 @@ namespace org {
     namespace orbits {
       class CartesianOrbit;
       class KeplerianOrbit;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeStamped;
     }
     namespace propagation {
       class SpacecraftState;
@@ -64,18 +64,18 @@ namespace org {
               class Opm : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
                public:
                 enum {
-                  mid_init$_c312acee610c8d08,
-                  mid_generateCartesianOrbit_7b54ade357cb34f6,
-                  mid_generateKeplerianOrbit_073190698893349f,
-                  mid_generateSpacecraftState_dd3e4a8d51055f1f,
-                  mid_getData_68c414576c8d207e,
-                  mid_getDate_aaa854c403487cf3,
-                  mid_getManeuver_c348bbaee3991177,
-                  mid_getManeuvers_a6156df500549a58,
-                  mid_getMetadata_e7e2c53afeab821b,
-                  mid_getNbManeuvers_f2f64475e4580546,
-                  mid_getPVCoordinates_6890805957bea2cd,
-                  mid_hasManeuvers_e470b6d9e0d979db,
+                  mid_init$_2b261aaf5054b0fb,
+                  mid_generateCartesianOrbit_e5effdf9a992f1f2,
+                  mid_generateKeplerianOrbit_3b8c2ada972e4fd7,
+                  mid_generateSpacecraftState_c6311115fea01a34,
+                  mid_getData_795b1cd6af2ec6a7,
+                  mid_getDate_85703d13e302437e,
+                  mid_getManeuver_7e1ee5600d637967,
+                  mid_getManeuvers_2afa36052df4765d,
+                  mid_getMetadata_db01ddc8c0b55b51,
+                  mid_getNbManeuvers_570ce0828f81a2c1,
+                  mid_getPVCoordinates_c204436deca11d94,
+                  mid_hasManeuvers_b108b35ef48e27bd,
                   max_mid
                 };
 

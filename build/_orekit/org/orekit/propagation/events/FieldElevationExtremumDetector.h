@@ -5,8 +5,8 @@
 
 namespace org {
   namespace hipparchus {
-    class Field;
     class CalculusFieldElement;
+    class Field;
   }
   namespace orekit {
     namespace frames {
@@ -32,12 +32,12 @@ namespace org {
         class FieldElevationExtremumDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_6ca81eaf03a89fb6,
-            mid_init$_3630f374a349bed6,
-            mid_g_cc79c2733879de35,
-            mid_getElevation_cc79c2733879de35,
-            mid_getTopocentricFrame_52fc31c455206160,
-            mid_create_bb3ef5e9796d1922,
+            mid_init$_3d7271a8ea288af2,
+            mid_init$_28fe72372b8ccb78,
+            mid_g_41a008afe53da855,
+            mid_getElevation_41a008afe53da855,
+            mid_getTopocentricFrame_e17d4157ae504252,
+            mid_create_17977b547af3c25a,
             max_mid
           };
 

@@ -26,13 +26,13 @@ namespace java {
     class ModuleLayer : public ::java::lang::Object {
      public:
       enum {
-        mid_boot_b969436b816ffa6a,
-        mid_empty_b969436b816ffa6a,
-        mid_findLoader_532df1dececfab70,
-        mid_findModule_15a04797e6377ac1,
-        mid_modules_e9e1a6780fe94297,
-        mid_parents_a6156df500549a58,
-        mid_toString_0090f7797e403f43,
+        mid_boot_1488df134b0cb760,
+        mid_empty_1488df134b0cb760,
+        mid_findLoader_b64713dc34e37a10,
+        mid_findModule_440b7941ab9a8af2,
+        mid_modules_015730311a5bacdc,
+        mid_parents_2afa36052df4765d,
+        mid_toString_11b109bd155ca898,
         max_mid
       };
 

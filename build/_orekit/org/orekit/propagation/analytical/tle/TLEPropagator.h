@@ -5,9 +5,8 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeScale;
-      class AbsoluteDate;
+    namespace utils {
+      class PVCoordinates;
     }
     namespace frames {
       class Frame;
@@ -16,16 +15,17 @@ namespace org {
       namespace analytical {
         namespace tle {
           class TLEPropagator;
-          class TLE;
           namespace generation {
             class TleGenerationAlgorithm;
           }
+          class TLE;
         }
       }
       class SpacecraftState;
     }
-    namespace utils {
-      class PVCoordinates;
+    namespace time {
+      class AbsoluteDate;
+      class TimeScale;
     }
     namespace attitudes {
       class AttitudeProvider;
@@ -48,23 +48,23 @@ namespace org {
           class TLEPropagator : public ::org::orekit::propagation::analytical::AbstractAnalyticalPropagator {
            public:
             enum {
-              mid_getDefaultTleGenerationAlgorithm_d25864ee2083e4eb,
-              mid_getFrame_c8fe21bcdac65bf6,
-              mid_getMU_456d9a2f64d6b28d,
-              mid_getPVCoordinates_72289093b5ce53a7,
-              mid_getTLE_32ddbfc0b67883b1,
-              mid_resetInitialState_2b88003f931f70a7,
-              mid_selectExtrapolator_cc293ce4386ce2da,
-              mid_selectExtrapolator_24b30465a6824e32,
-              mid_selectExtrapolator_47c4d67773bcb869,
-              mid_selectExtrapolator_ce405822864d851d,
-              mid_getMass_e912d21057defe63,
-              mid_sxpInitialize_7ae3461a92a43152,
-              mid_sxpPropagate_77e0f9a1f260e2e5,
-              mid_resetIntermediateState_9658cf3eaef14ef5,
-              mid_propagateOrbit_6f58641238e8a9c4,
-              mid_createHarvester_d3d4ea925a699046,
-              mid_getJacobiansColumnsNames_a6156df500549a58,
+              mid_getDefaultTleGenerationAlgorithm_626c08330c00a237,
+              mid_getFrame_b86f9f61d97a7244,
+              mid_getMU_dff5885c2c873297,
+              mid_getPVCoordinates_38efe74c9e3a1286,
+              mid_getTLE_e993eceec98c738b,
+              mid_resetInitialState_0ee5c56004643a2e,
+              mid_selectExtrapolator_8f723e93b6b0c0e4,
+              mid_selectExtrapolator_14e6136d1bc29138,
+              mid_selectExtrapolator_031507efeb924a11,
+              mid_selectExtrapolator_d73df9db6a3294a1,
+              mid_propagateOrbit_7a8f4c854607bed6,
+              mid_getMass_bf1d7732f1acb697,
+              mid_resetIntermediateState_33f4696e4edaa03c,
+              mid_getJacobiansColumnsNames_2afa36052df4765d,
+              mid_createHarvester_5cfd2a13971b74c7,
+              mid_sxpInitialize_0fa09c18fee449d5,
+              mid_sxpPropagate_17db3a65980d3441,
               max_mid
             };
 

@@ -7,17 +7,17 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace utils {
+          namespace lexical {
+            class ParseToken;
+          }
+          class ContextBinding;
+        }
         namespace ndm {
           namespace adm {
             namespace aem {
               class AttitudeEntryKey;
             }
-          }
-        }
-        namespace utils {
-          class ContextBinding;
-          namespace lexical {
-            class ParseToken;
           }
         }
       }
@@ -43,8 +43,8 @@ namespace org {
               class AttitudeEntryKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_valueOf_6ffa9066dccce62c,
-                  mid_values_d07cda501023bb6d,
+                  mid_valueOf_c55b9c8df598dae5,
+                  mid_values_d7383d858ca1d758,
                   max_mid
                 };
 

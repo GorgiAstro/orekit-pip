@@ -7,17 +7,17 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class ObservableSatellite;
         class Position;
+        class ObservableSatellite;
       }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace propagation {
       namespace sampling {
         class OrekitStepInterpolator;
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -45,8 +45,8 @@ namespace org {
           class PositionBuilder : public ::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder {
            public:
             enum {
-              mid_init$_7dabc9ee4afb2ba6,
-              mid_build_cfa640d4d3017d56,
+              mid_init$_e86d7264e9a1f264,
+              mid_build_ae9421582f095ee0,
               max_mid
             };
 

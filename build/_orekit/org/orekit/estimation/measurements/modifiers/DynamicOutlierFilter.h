@@ -28,10 +28,10 @@ namespace org {
           class DynamicOutlierFilter : public ::org::orekit::estimation::measurements::modifiers::OutlierFilter {
            public:
             enum {
-              mid_init$_987a5fb872043b12,
-              mid_getSigma_7cdc325af0834901,
-              mid_modify_a5896dbcbe782924,
-              mid_setSigma_ebc26dcaf4761286,
+              mid_init$_bb79ca80d85d0a66,
+              mid_getSigma_60c7040667a7dc5c,
+              mid_modify_e4935e9a55e01fd8,
+              mid_setSigma_fa9d415d19f69361,
               max_mid
             };
 

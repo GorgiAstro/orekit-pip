@@ -12,11 +12,11 @@ namespace org {
         class Hyperplane;
       }
       namespace spherical {
-        namespace twod {
-          class Sphere2D;
-        }
         namespace oned {
           class Sphere1D;
+        }
+        namespace twod {
+          class Sphere2D;
         }
       }
     }
@@ -38,9 +38,9 @@ namespace org {
           class SubCircle : public ::org::hipparchus::geometry::partitioning::AbstractSubHyperplane {
            public:
             enum {
-              mid_init$_ece3b6638d417579,
-              mid_split_3b0163aa85fdaa47,
-              mid_buildNew_3227314555d80cc9,
+              mid_init$_10e1fbe5774bfd91,
+              mid_split_905725a56f20360c,
+              mid_buildNew_802b885e8f150523,
               max_mid
             };
 

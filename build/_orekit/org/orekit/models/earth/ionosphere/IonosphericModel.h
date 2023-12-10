@@ -4,17 +4,17 @@
 #include "org/orekit/utils/ParameterDriversProvider.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace frames {
       class TopocentricFrame;
     }
     namespace propagation {
-      class SpacecraftState;
       class FieldSpacecraftState;
+      class SpacecraftState;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -33,8 +33,8 @@ namespace org {
           class IonosphericModel : public ::org::orekit::utils::ParameterDriversProvider {
            public:
             enum {
-              mid_pathDelay_78d4f8498e981bf5,
-              mid_pathDelay_c824fdb3e595a2ae,
+              mid_pathDelay_28325ab4dabb069a,
+              mid_pathDelay_bea489d08473aa2e,
               max_mid
             };
 

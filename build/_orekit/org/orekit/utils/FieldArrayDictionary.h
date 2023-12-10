@@ -3,6 +3,18 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    class Field;
+  }
+  namespace orekit {
+    namespace utils {
+      class FieldArrayDictionary;
+      class FieldArrayDictionary$Entry;
+    }
+  }
+}
 namespace java {
   namespace util {
     class Map;
@@ -11,18 +23,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    class Field;
-    class CalculusFieldElement;
-  }
-  namespace orekit {
-    namespace utils {
-      class FieldArrayDictionary;
-      class FieldArrayDictionary$Entry;
-    }
   }
 }
 template<class T> class JArray;
@@ -34,23 +34,23 @@ namespace org {
       class FieldArrayDictionary : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_205c34b8e33cf33f,
-          mid_init$_a69d58691b2f6a42,
-          mid_init$_6967bdadd6bbd212,
-          mid_clear_7ae3461a92a43152,
-          mid_get_7ff62b68d24a340b,
-          mid_getData_a6156df500549a58,
-          mid_getEntry_9a6d30d927000ad0,
-          mid_getField_70b4bbd3fa378d6b,
-          mid_put_f158fe1c5def0235,
-          mid_put_3bfcb5213d619b28,
-          mid_putAll_bf3d4719370f451d,
-          mid_putAll_8b4e3987d7532731,
-          mid_remove_6b161f495ea569b8,
-          mid_size_f2f64475e4580546,
-          mid_toMap_d6753b7055940a54,
-          mid_toString_0090f7797e403f43,
-          mid_unmodifiableView_a517063e6ce1cd85,
+          mid_init$_484998d88974267b,
+          mid_init$_c5199de6167cff95,
+          mid_init$_b89190f186aaf539,
+          mid_clear_0fa09c18fee449d5,
+          mid_get_f1183f1b2d548100,
+          mid_getData_2afa36052df4765d,
+          mid_getEntry_e9b4158c37f4fb83,
+          mid_getField_5b28be2d3632a5dc,
+          mid_put_3468fcb7793f51a9,
+          mid_put_ed186b368c4c454c,
+          mid_putAll_9f0edbbc591be0df,
+          mid_putAll_db8de8bc54857165,
+          mid_remove_7edad2c2f64f4d68,
+          mid_size_570ce0828f81a2c1,
+          mid_toMap_6f5a75ccd8c04465,
+          mid_toString_11b109bd155ca898,
+          mid_unmodifiableView_a7763b9cf85435a1,
           max_mid
         };
 

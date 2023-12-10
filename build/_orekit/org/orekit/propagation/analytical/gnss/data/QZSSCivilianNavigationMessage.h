@@ -20,7 +20,7 @@ namespace org {
             class QZSSCivilianNavigationMessage : public ::org::orekit::propagation::analytical::gnss::data::CivilianNavigationMessage {
              public:
               enum {
-                mid_init$_50a2e0b139e80a58,
+                mid_init$_bd04c9335fb9e4cf,
                 max_mid
               };
 

@@ -3,24 +3,21 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frame;
+    namespace orbits {
+      class PositionAngleType;
+      class Orbit;
+      class OrbitType;
     }
     namespace propagation {
-      class Propagator;
       namespace conversion {
         class PropagatorBuilder;
       }
+      class Propagator;
+    }
+    namespace frames {
+      class Frame;
     }
     namespace estimation {
       namespace leastsquares {
@@ -31,17 +28,20 @@ namespace org {
         class ObservedMeasurement;
       }
     }
-    namespace orbits {
-      class Orbit;
-      class PositionAngleType;
-      class OrbitType;
+    namespace time {
+      class AbsoluteDate;
     }
     namespace utils {
       class ParameterDriversList;
     }
-    namespace time {
-      class AbsoluteDate;
-    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -54,18 +54,18 @@ namespace org {
         class PropagatorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_buildLeastSquaresModel_31c4fcde5bc19fc3,
-            mid_buildPropagator_d397e255f9fb16e6,
-            mid_copy_6e20699935a1c88e,
-            mid_getFrame_c8fe21bcdac65bf6,
-            mid_getInitialOrbitDate_aaa854c403487cf3,
-            mid_getMu_456d9a2f64d6b28d,
-            mid_getOrbitType_63ea5cd020bf7bf1,
-            mid_getOrbitalParametersDrivers_eb9e6df280c6daa0,
-            mid_getPositionAngleType_2571e8fe1cede425,
-            mid_getPropagationParametersDrivers_eb9e6df280c6daa0,
-            mid_getSelectedNormalizedParameters_7cdc325af0834901,
-            mid_resetOrbit_e5b8a6a44355183e,
+            mid_buildLeastSquaresModel_2eb3122719704f90,
+            mid_buildPropagator_0c183831cad84280,
+            mid_copy_7c39c5f4719b16a0,
+            mid_getFrame_b86f9f61d97a7244,
+            mid_getInitialOrbitDate_85703d13e302437e,
+            mid_getMu_dff5885c2c873297,
+            mid_getOrbitType_e29360d311dc0e20,
+            mid_getOrbitalParametersDrivers_bd51074bfd9d41da,
+            mid_getPositionAngleType_8f17e83e5a86217c,
+            mid_getPropagationParametersDrivers_bd51074bfd9d41da,
+            mid_getSelectedNormalizedParameters_60c7040667a7dc5c,
+            mid_resetOrbit_6219f6b430651d68,
             max_mid
           };
 

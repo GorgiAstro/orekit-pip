@@ -3,16 +3,16 @@
 
 #include "org/hipparchus/fitting/AbstractCurveFitter.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace fitting {
       class PolynomialCurveFitter;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,10 +24,10 @@ namespace org {
       class PolynomialCurveFitter : public ::org::hipparchus::fitting::AbstractCurveFitter {
        public:
         enum {
-          mid_create_8ac5985a7b4e822a,
-          mid_withMaxIterations_8ac5985a7b4e822a,
-          mid_withStartPoint_64921603ee6b99cc,
-          mid_getProblem_23a9c25631fa37c2,
+          mid_create_762004ab44e0f985,
+          mid_withMaxIterations_762004ab44e0f985,
+          mid_withStartPoint_13024057e91a5dd4,
+          mid_getProblem_c197708a453e8034,
           max_mid
         };
 

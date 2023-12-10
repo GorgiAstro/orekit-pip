@@ -3,6 +3,34 @@
 
 #include "org/orekit/files/ccsds/section/Metadata.h"
 
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace ccsds {
+        namespace ndm {
+          namespace tdm {
+            class RangeUnitsConverter;
+            class IntegrationReference;
+            class TimetagReference;
+            class AngleType;
+            class ObservationType;
+            class TrackingMode;
+            class DataQuality;
+            class CorrectionApplied;
+            class RangeUnits;
+            class RangeMode;
+          }
+        }
+        namespace definitions {
+          class FrameFacade;
+        }
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
+}
 namespace java {
   namespace util {
     class Map;
@@ -13,34 +41,6 @@ namespace java {
     class Double;
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ccsds {
-        namespace definitions {
-          class FrameFacade;
-        }
-        namespace ndm {
-          namespace tdm {
-            class ObservationType;
-            class TimetagReference;
-            class TrackingMode;
-            class RangeMode;
-            class RangeUnitsConverter;
-            class AngleType;
-            class DataQuality;
-            class CorrectionApplied;
-            class RangeUnits;
-            class IntegrationReference;
-          }
-        }
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
   }
 }
 template<class T> class JArray;
@@ -55,98 +55,98 @@ namespace org {
             class TdmMetadata : public ::org::orekit::files::ccsds::section::Metadata {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_addEphemerisName_46ad99eaf34b9cef,
-                mid_addParticipant_46ad99eaf34b9cef,
-                mid_addReceiveDelay_987a5fb872043b12,
-                mid_addTransmitDelay_987a5fb872043b12,
-                mid_getAngleType_0e6582a7efa17f8f,
-                mid_getCorrectionAberrationDiurnal_456d9a2f64d6b28d,
-                mid_getCorrectionAberrationYearly_456d9a2f64d6b28d,
-                mid_getCorrectionAngle1_456d9a2f64d6b28d,
-                mid_getCorrectionAngle2_456d9a2f64d6b28d,
-                mid_getCorrectionDoppler_456d9a2f64d6b28d,
-                mid_getCorrectionMagnitude_456d9a2f64d6b28d,
-                mid_getCorrectionRange_5fb18b378e5bf81a,
-                mid_getCorrectionRcs_456d9a2f64d6b28d,
-                mid_getCorrectionReceive_456d9a2f64d6b28d,
-                mid_getCorrectionTransmit_456d9a2f64d6b28d,
-                mid_getCorrectionsApplied_9b7340badba22846,
-                mid_getDataQuality_4a340da992ad1d62,
-                mid_getDataTypes_a6156df500549a58,
-                mid_getDopplerCountBias_456d9a2f64d6b28d,
-                mid_getDopplerCountScale_456d9a2f64d6b28d,
-                mid_getEphemerisNames_d6753b7055940a54,
-                mid_getFreqOffset_456d9a2f64d6b28d,
-                mid_getIntegrationInterval_456d9a2f64d6b28d,
-                mid_getIntegrationRef_e6ffda0ed65382f1,
-                mid_getInterpolationDegree_f2f64475e4580546,
-                mid_getInterpolationMethod_0090f7797e403f43,
-                mid_getMode_3f8e1b990482c3c8,
-                mid_getParticipants_d6753b7055940a54,
-                mid_getPath_d8ead0d90ce828b0,
-                mid_getPath1_d8ead0d90ce828b0,
-                mid_getPath2_d8ead0d90ce828b0,
-                mid_getRangeMode_e2146da89ec090a4,
-                mid_getRangeModulus_5fb18b378e5bf81a,
-                mid_getRangeUnits_629565d88137357c,
-                mid_getRawCorrectionRange_456d9a2f64d6b28d,
-                mid_getRawRangeModulus_456d9a2f64d6b28d,
-                mid_getReceiveBand_0090f7797e403f43,
-                mid_getReceiveDelays_d6753b7055940a54,
-                mid_getReferenceFrame_aa70fdb14ae9305f,
-                mid_getStartTime_aaa854c403487cf3,
-                mid_getStopTime_aaa854c403487cf3,
-                mid_getTimetagRef_8a5bcf997edee08a,
-                mid_getTrackId_0090f7797e403f43,
-                mid_getTransmitBand_0090f7797e403f43,
-                mid_getTransmitDelays_d6753b7055940a54,
-                mid_getTurnaroundDenominator_f2f64475e4580546,
-                mid_getTurnaroundNumerator_f2f64475e4580546,
-                mid_hasDopplerCountRollover_e470b6d9e0d979db,
-                mid_setAngleType_984d46f302e9b054,
-                mid_setCorrectionAberrationDiurnal_77e0f9a1f260e2e5,
-                mid_setCorrectionAberrationYearly_77e0f9a1f260e2e5,
-                mid_setCorrectionAngle1_77e0f9a1f260e2e5,
-                mid_setCorrectionAngle2_77e0f9a1f260e2e5,
-                mid_setCorrectionDoppler_77e0f9a1f260e2e5,
-                mid_setCorrectionMagnitude_77e0f9a1f260e2e5,
-                mid_setCorrectionRcs_77e0f9a1f260e2e5,
-                mid_setCorrectionReceive_77e0f9a1f260e2e5,
-                mid_setCorrectionTransmit_77e0f9a1f260e2e5,
-                mid_setCorrectionsApplied_a5d93472fc995699,
-                mid_setDataQuality_42421ed5da7fc944,
-                mid_setDataTypes_65de9727799c5641,
-                mid_setDopplerCountBias_77e0f9a1f260e2e5,
-                mid_setDopplerCountRollover_50a2e0b139e80a58,
-                mid_setDopplerCountScale_77e0f9a1f260e2e5,
-                mid_setEphemerisNames_8b4e3987d7532731,
-                mid_setFreqOffset_77e0f9a1f260e2e5,
-                mid_setIntegrationInterval_77e0f9a1f260e2e5,
-                mid_setIntegrationRef_b2ff161f33d465e1,
-                mid_setInterpolationDegree_0a2a1ac2721c0336,
-                mid_setInterpolationMethod_e939c6558ae8d313,
-                mid_setMode_7061a7592bf52da5,
-                mid_setParticipants_8b4e3987d7532731,
-                mid_setPath_3b603738d1eb3233,
-                mid_setPath1_3b603738d1eb3233,
-                mid_setPath2_3b603738d1eb3233,
-                mid_setRangeMode_70f75844a01d918c,
-                mid_setRangeUnits_0815bfffcdc67b75,
-                mid_setRawCorrectionRange_77e0f9a1f260e2e5,
-                mid_setRawRangeModulus_77e0f9a1f260e2e5,
-                mid_setReceiveBand_e939c6558ae8d313,
-                mid_setReceiveDelays_8b4e3987d7532731,
-                mid_setReferenceFrame_a455f3ff24eb0b47,
-                mid_setStartTime_e82d68cd9f886886,
-                mid_setStopTime_e82d68cd9f886886,
-                mid_setTimetagRef_1e44e5daa236bf14,
-                mid_setTrackId_e939c6558ae8d313,
-                mid_setTransmitBand_e939c6558ae8d313,
-                mid_setTransmitDelays_8b4e3987d7532731,
-                mid_setTurnaroundDenominator_0a2a1ac2721c0336,
-                mid_setTurnaroundNumerator_0a2a1ac2721c0336,
-                mid_validate_77e0f9a1f260e2e5,
+                mid_init$_0fa09c18fee449d5,
+                mid_addEphemerisName_eb545b81bcb6baba,
+                mid_addParticipant_eb545b81bcb6baba,
+                mid_addReceiveDelay_bb79ca80d85d0a66,
+                mid_addTransmitDelay_bb79ca80d85d0a66,
+                mid_getAngleType_f91b4dea8518961e,
+                mid_getCorrectionAberrationDiurnal_dff5885c2c873297,
+                mid_getCorrectionAberrationYearly_dff5885c2c873297,
+                mid_getCorrectionAngle1_dff5885c2c873297,
+                mid_getCorrectionAngle2_dff5885c2c873297,
+                mid_getCorrectionDoppler_dff5885c2c873297,
+                mid_getCorrectionMagnitude_dff5885c2c873297,
+                mid_getCorrectionRange_24af9cf244c434df,
+                mid_getCorrectionRcs_dff5885c2c873297,
+                mid_getCorrectionReceive_dff5885c2c873297,
+                mid_getCorrectionTransmit_dff5885c2c873297,
+                mid_getCorrectionsApplied_a2a54e9c1ed7c722,
+                mid_getDataQuality_16a8165b3529c8d4,
+                mid_getDataTypes_2afa36052df4765d,
+                mid_getDopplerCountBias_dff5885c2c873297,
+                mid_getDopplerCountScale_dff5885c2c873297,
+                mid_getEphemerisNames_6f5a75ccd8c04465,
+                mid_getFreqOffset_dff5885c2c873297,
+                mid_getIntegrationInterval_dff5885c2c873297,
+                mid_getIntegrationRef_e26ae58265a29e20,
+                mid_getInterpolationDegree_570ce0828f81a2c1,
+                mid_getInterpolationMethod_11b109bd155ca898,
+                mid_getMode_7de625188c0e0e3d,
+                mid_getParticipants_6f5a75ccd8c04465,
+                mid_getPath_d0635cea09dc178c,
+                mid_getPath1_d0635cea09dc178c,
+                mid_getPath2_d0635cea09dc178c,
+                mid_getRangeMode_ddb62a126c432b32,
+                mid_getRangeModulus_24af9cf244c434df,
+                mid_getRangeUnits_d8e325ed615979df,
+                mid_getRawCorrectionRange_dff5885c2c873297,
+                mid_getRawRangeModulus_dff5885c2c873297,
+                mid_getReceiveBand_11b109bd155ca898,
+                mid_getReceiveDelays_6f5a75ccd8c04465,
+                mid_getReferenceFrame_5d5dd95b04037824,
+                mid_getStartTime_85703d13e302437e,
+                mid_getStopTime_85703d13e302437e,
+                mid_getTimetagRef_d9da4ce754c0b913,
+                mid_getTrackId_11b109bd155ca898,
+                mid_getTransmitBand_11b109bd155ca898,
+                mid_getTransmitDelays_6f5a75ccd8c04465,
+                mid_getTurnaroundDenominator_570ce0828f81a2c1,
+                mid_getTurnaroundNumerator_570ce0828f81a2c1,
+                mid_hasDopplerCountRollover_b108b35ef48e27bd,
+                mid_setAngleType_85e7c7f200e5e122,
+                mid_setCorrectionAberrationDiurnal_17db3a65980d3441,
+                mid_setCorrectionAberrationYearly_17db3a65980d3441,
+                mid_setCorrectionAngle1_17db3a65980d3441,
+                mid_setCorrectionAngle2_17db3a65980d3441,
+                mid_setCorrectionDoppler_17db3a65980d3441,
+                mid_setCorrectionMagnitude_17db3a65980d3441,
+                mid_setCorrectionRcs_17db3a65980d3441,
+                mid_setCorrectionReceive_17db3a65980d3441,
+                mid_setCorrectionTransmit_17db3a65980d3441,
+                mid_setCorrectionsApplied_2153405ea927d10c,
+                mid_setDataQuality_0d2938ec981ab5ae,
+                mid_setDataTypes_de3e021e7266b71e,
+                mid_setDopplerCountBias_17db3a65980d3441,
+                mid_setDopplerCountRollover_bd04c9335fb9e4cf,
+                mid_setDopplerCountScale_17db3a65980d3441,
+                mid_setEphemerisNames_db8de8bc54857165,
+                mid_setFreqOffset_17db3a65980d3441,
+                mid_setIntegrationInterval_17db3a65980d3441,
+                mid_setIntegrationRef_c2a64cb80d011139,
+                mid_setInterpolationDegree_99803b0791f320ff,
+                mid_setInterpolationMethod_d0bc48d5b00dc40c,
+                mid_setMode_4401f9bb72642424,
+                mid_setParticipants_db8de8bc54857165,
+                mid_setPath_d147d7ce001e2d45,
+                mid_setPath1_d147d7ce001e2d45,
+                mid_setPath2_d147d7ce001e2d45,
+                mid_setRangeMode_fbab2027dea0f22f,
+                mid_setRangeUnits_957470214b89d066,
+                mid_setRawCorrectionRange_17db3a65980d3441,
+                mid_setRawRangeModulus_17db3a65980d3441,
+                mid_setReceiveBand_d0bc48d5b00dc40c,
+                mid_setReceiveDelays_db8de8bc54857165,
+                mid_setReferenceFrame_849bc9e3b38b9bcb,
+                mid_setStartTime_600a2a61652bc473,
+                mid_setStopTime_600a2a61652bc473,
+                mid_setTimetagRef_858a8a66d8c1b242,
+                mid_setTrackId_d0bc48d5b00dc40c,
+                mid_setTransmitBand_d0bc48d5b00dc40c,
+                mid_setTransmitDelays_db8de8bc54857165,
+                mid_setTurnaroundDenominator_99803b0791f320ff,
+                mid_setTurnaroundNumerator_99803b0791f320ff,
+                mid_validate_17db3a65980d3441,
                 max_mid
               };
 

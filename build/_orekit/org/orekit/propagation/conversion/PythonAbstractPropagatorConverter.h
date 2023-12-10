@@ -4,10 +4,14 @@
 #include "org/orekit/propagation/conversion/AbstractPropagatorConverter.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace analysis {
-      class MultivariateVectorFunction;
+  namespace orekit {
+    namespace propagation {
+      namespace conversion {
+        class PropagatorBuilder;
+      }
     }
+  }
+  namespace hipparchus {
     namespace optim {
       namespace nonlinear {
         namespace vector {
@@ -17,12 +21,8 @@ namespace org {
         }
       }
     }
-  }
-  namespace orekit {
-    namespace propagation {
-      namespace conversion {
-        class PropagatorBuilder;
-      }
+    namespace analysis {
+      class MultivariateVectorFunction;
     }
   }
 }
@@ -42,13 +42,13 @@ namespace org {
         class PythonAbstractPropagatorConverter : public ::org::orekit::propagation::conversion::AbstractPropagatorConverter {
          public:
           enum {
-            mid_init$_682853cb9e463f06,
-            mid_finalize_7ae3461a92a43152,
-            mid_getModel_b196da25fd980476,
-            mid_getObjectiveFunction_aaef55ff59f9c00e,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
+            mid_init$_78073cb29f7a4fd8,
+            mid_finalize_0fa09c18fee449d5,
+            mid_getModel_9751b2e3b68b45ea,
+            mid_getObjectiveFunction_18d8e6aab2238577,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
             max_mid
           };
 

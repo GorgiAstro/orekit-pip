@@ -28,12 +28,12 @@ namespace org {
           class Interval : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_1d715fa3b7b756e1,
-              mid_checkPoint_d3285dfe2b4bd4a9,
-              mid_getBarycenter_456d9a2f64d6b28d,
-              mid_getInf_456d9a2f64d6b28d,
-              mid_getSize_456d9a2f64d6b28d,
-              mid_getSup_456d9a2f64d6b28d,
+              mid_init$_8f2e782d5278b131,
+              mid_checkPoint_68e0cffc4189a356,
+              mid_getBarycenter_dff5885c2c873297,
+              mid_getInf_dff5885c2c873297,
+              mid_getSize_dff5885c2c873297,
+              mid_getSup_dff5885c2c873297,
               max_mid
             };
 

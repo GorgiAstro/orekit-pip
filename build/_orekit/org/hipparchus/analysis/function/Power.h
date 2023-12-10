@@ -28,9 +28,9 @@ namespace org {
         class Power : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_77e0f9a1f260e2e5,
-            mid_value_0ba5fed9597b693e,
-            mid_value_1f22c1881e72229d,
+            mid_init$_17db3a65980d3441,
+            mid_value_dcbc7ce2902fa136,
+            mid_value_73d6acaa8ebd2b7d,
             max_mid
           };
 

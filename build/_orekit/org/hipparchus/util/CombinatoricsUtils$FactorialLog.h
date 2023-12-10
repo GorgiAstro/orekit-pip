@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace util {
       class CombinatoricsUtils$FactorialLog;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,9 +24,9 @@ namespace org {
       class CombinatoricsUtils$FactorialLog : public ::java::lang::Object {
        public:
         enum {
-          mid_create_dea51f361c17123f,
-          mid_value_b772323fc98b7293,
-          mid_withCache_f45449bdc4622eb6,
+          mid_create_dc43b77eb3ad10f3,
+          mid_value_46f85b53d9aedd96,
+          mid_withCache_fd83fd97a5b95624,
           max_mid
         };
 

@@ -4,12 +4,12 @@
 #include "java/lang/Object.h"
 
 namespace java {
+  namespace io {
+    class ObjectInputFilter$FilterInfo;
+    class ObjectInputFilter$Status;
+  }
   namespace lang {
     class Class;
-  }
-  namespace io {
-    class ObjectInputFilter$Status;
-    class ObjectInputFilter$FilterInfo;
   }
 }
 template<class T> class JArray;
@@ -20,7 +20,7 @@ namespace java {
     class ObjectInputFilter : public ::java::lang::Object {
      public:
       enum {
-        mid_checkInput_9a8c66293ee3d4bc,
+        mid_checkInput_eb079c906b147a76,
         max_mid
       };
 

@@ -33,9 +33,9 @@ namespace org {
           class DataType : public ::java::lang::Enum {
            public:
             enum {
-              mid_decode_6212094b8c044d51,
-              mid_valueOf_881f1d42915fe464,
-              mid_values_1939b679958c4330,
+              mid_decode_a0e3d0deb9b63025,
+              mid_valueOf_bd6c94f448e87329,
+              mid_values_3cbe58ba1d4b26a3,
               max_mid
             };
 

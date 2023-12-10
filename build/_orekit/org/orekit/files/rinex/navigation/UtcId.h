@@ -3,14 +3,11 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
+    namespace errors {
+      class OrekitIllegalArgumentException;
+    }
     namespace files {
       namespace rinex {
         namespace navigation {
@@ -18,9 +15,12 @@ namespace org {
         }
       }
     }
-    namespace errors {
-      class OrekitIllegalArgumentException;
-    }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,9 +34,9 @@ namespace org {
           class UtcId : public ::java::lang::Enum {
            public:
             enum {
-              mid_parseUtcId_efdc3d036c3c05a9,
-              mid_valueOf_efdc3d036c3c05a9,
-              mid_values_efbcf3660b9b5e05,
+              mid_parseUtcId_88925b0677da9e9e,
+              mid_valueOf_88925b0677da9e9e,
+              mid_values_ffd3832410150260,
               max_mid
             };
 

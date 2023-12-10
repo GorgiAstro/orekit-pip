@@ -3,25 +3,6 @@
 
 #include "org/hipparchus/geometry/partitioning/AbstractRegion.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      class Point;
-      namespace euclidean {
-        namespace oned {
-          class Euclidean1D;
-          class Interval;
-          class IntervalsSet;
-        }
-      }
-      namespace partitioning {
-        class BSPTree;
-        class SubHyperplane;
-        class BoundaryProjection;
-      }
-    }
-  }
-}
 namespace java {
   namespace util {
     class Iterator;
@@ -31,6 +12,25 @@ namespace java {
   namespace lang {
     class Iterable;
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace oned {
+          class Interval;
+          class IntervalsSet;
+          class Euclidean1D;
+        }
+      }
+      namespace partitioning {
+        class SubHyperplane;
+        class BoundaryProjection;
+        class BSPTree;
+      }
+      class Point;
+    }
   }
 }
 template<class T> class JArray;
@@ -44,17 +44,17 @@ namespace org {
           class IntervalsSet : public ::org::hipparchus::geometry::partitioning::AbstractRegion {
            public:
             enum {
-              mid_init$_77e0f9a1f260e2e5,
-              mid_init$_3e72dd0bd3a69a59,
-              mid_init$_b832ff2fd1b54c87,
-              mid_init$_d0d6094fbd7015c5,
-              mid_asList_a6156df500549a58,
-              mid_buildNew_1122d43a099e75c6,
-              mid_getInf_456d9a2f64d6b28d,
-              mid_getSup_456d9a2f64d6b28d,
-              mid_iterator_035c6167e6569aac,
-              mid_projectToBoundary_a3932f0f8ec705f8,
-              mid_computeGeometricalProperties_7ae3461a92a43152,
+              mid_init$_17db3a65980d3441,
+              mid_init$_748cd2c51a955d77,
+              mid_init$_1f4d55383238fbb5,
+              mid_init$_2c56b6dd4d4b1dec,
+              mid_asList_2afa36052df4765d,
+              mid_buildNew_478602e2978d50f1,
+              mid_getInf_dff5885c2c873297,
+              mid_getSup_dff5885c2c873297,
+              mid_iterator_4d23511a9f0db098,
+              mid_projectToBoundary_e9baadaaf6c2e7eb,
+              mid_computeGeometricalProperties_0fa09c18fee449d5,
               max_mid
             };
 

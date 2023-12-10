@@ -7,22 +7,22 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace section {
+          class Data;
+        }
         namespace ndm {
           namespace adm {
             namespace acm {
-              class AttitudeDetermination;
               class AttitudeCovarianceHistory;
-              class AttitudeStateHistory;
+              class AttitudeDetermination;
               class AttitudePhysicalProperties;
               class AttitudeManeuver;
+              class AttitudeStateHistory;
             }
           }
           namespace odm {
             class UserDefined;
           }
-        }
-        namespace section {
-          class Data;
         }
       }
     }
@@ -49,14 +49,14 @@ namespace org {
               class AcmData : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_eb83c9518129e70a,
-                  mid_getAttitudeBlocks_a6156df500549a58,
-                  mid_getAttitudeDeterminationBlock_88ac15fdce7c6217,
-                  mid_getCovarianceBlocks_a6156df500549a58,
-                  mid_getManeuverBlocks_a6156df500549a58,
-                  mid_getPhysicBlock_4c00aa5ae00a7066,
-                  mid_getUserDefinedBlock_dc0ba09fd1c52b52,
-                  mid_validate_77e0f9a1f260e2e5,
+                  mid_init$_7d175ed02a2f74d0,
+                  mid_getAttitudeBlocks_2afa36052df4765d,
+                  mid_getAttitudeDeterminationBlock_b824d64d2693b4b1,
+                  mid_getCovarianceBlocks_2afa36052df4765d,
+                  mid_getManeuverBlocks_2afa36052df4765d,
+                  mid_getPhysicBlock_e4078fef0c3d5926,
+                  mid_getUserDefinedBlock_8d3e5fabdafb8483,
+                  mid_validate_17db3a65980d3441,
                   max_mid
                 };
 

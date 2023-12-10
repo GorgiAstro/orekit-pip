@@ -4,6 +4,16 @@
 #include "org/orekit/forces/Panel.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace propagation {
       class FieldSpacecraftState;
@@ -11,16 +21,6 @@ namespace org {
     }
     namespace utils {
       class ExtendedPVCoordinatesProvider;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
     }
   }
 }
@@ -38,9 +38,9 @@ namespace org {
       class PointingPanel : public ::org::orekit::forces::Panel {
        public:
         enum {
-          mid_init$_137c8539aa793752,
-          mid_getNormal_665eae343e14b9ea,
-          mid_getNormal_78226ca7935182ea,
+          mid_init$_d3816c2d7c0801cf,
+          mid_getNormal_e6f00ace1decd27c,
+          mid_getNormal_abc43395638fd218,
           max_mid
         };
 

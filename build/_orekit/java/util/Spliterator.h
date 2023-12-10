@@ -5,8 +5,8 @@
 
 namespace java {
   namespace util {
-    class Comparator;
     class Spliterator;
+    class Comparator;
   }
   namespace lang {
     class Class;
@@ -20,12 +20,12 @@ namespace java {
     class Spliterator : public ::java::lang::Object {
      public:
       enum {
-        mid_characteristics_f2f64475e4580546,
-        mid_estimateSize_a27fc9afd27e559d,
-        mid_getComparator_838794f9a43cf98e,
-        mid_getExactSizeIfKnown_a27fc9afd27e559d,
-        mid_hasCharacteristics_e95e4c7cd3dd17ff,
-        mid_trySplit_df0341cda53d4d48,
+        mid_characteristics_570ce0828f81a2c1,
+        mid_estimateSize_492808a339bfa35f,
+        mid_getComparator_96e45e3694fbbb22,
+        mid_getExactSizeIfKnown_492808a339bfa35f,
+        mid_hasCharacteristics_b6e9be1df30aebaf,
+        mid_trySplit_ef1070394b413a84,
         max_mid
       };
 

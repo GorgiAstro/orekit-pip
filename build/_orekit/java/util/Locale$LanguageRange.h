@@ -22,16 +22,16 @@ namespace java {
     class Locale$LanguageRange : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_e939c6558ae8d313,
-        mid_init$_dc256bfc3daae929,
-        mid_equals_229c87223f486349,
-        mid_getRange_0090f7797e403f43,
-        mid_getWeight_456d9a2f64d6b28d,
-        mid_hashCode_f2f64475e4580546,
-        mid_mapEquivalents_e10553a3d53385b8,
-        mid_parse_720e76ad3b86a46a,
-        mid_parse_f6d606db891c20a7,
-        mid_toString_0090f7797e403f43,
+        mid_init$_d0bc48d5b00dc40c,
+        mid_init$_1b3f5cad10162d50,
+        mid_equals_65c7d273e80d497a,
+        mid_getRange_11b109bd155ca898,
+        mid_getWeight_dff5885c2c873297,
+        mid_hashCode_570ce0828f81a2c1,
+        mid_mapEquivalents_4059283f910620ee,
+        mid_parse_aade4ea8882e7a2c,
+        mid_parse_48714afa09439ff5,
+        mid_toString_11b109bd155ca898,
         max_mid
       };
 

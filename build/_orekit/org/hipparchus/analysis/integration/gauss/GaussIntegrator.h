@@ -8,11 +8,11 @@ namespace org {
     namespace exception {
       class MathIllegalArgumentException;
     }
-    namespace analysis {
-      class UnivariateFunction;
-    }
     namespace util {
       class Pair;
+    }
+    namespace analysis {
+      class UnivariateFunction;
     }
   }
 }
@@ -32,12 +32,12 @@ namespace org {
           class GaussIntegrator : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_832c28cb3cc4d660,
-              mid_init$_0d03c8a1d7f56f02,
-              mid_getNumberOfPoints_f2f64475e4580546,
-              mid_getPoint_b772323fc98b7293,
-              mid_getWeight_b772323fc98b7293,
-              mid_integrate_96e94d14952261a3,
+              mid_init$_3fca46bb93fd3e69,
+              mid_init$_e1f4b15468f5564a,
+              mid_getNumberOfPoints_570ce0828f81a2c1,
+              mid_getPoint_46f85b53d9aedd96,
+              mid_getWeight_46f85b53d9aedd96,
+              mid_integrate_c2aa72fb3bbda68c,
               max_mid
             };
 

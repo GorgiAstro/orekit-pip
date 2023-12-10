@@ -5,19 +5,19 @@
 
 namespace org {
   namespace hipparchus {
+    namespace ode {
+      namespace nonstiff {
+        class FieldButcherArrayProvider;
+      }
+      class FieldODEStateAndDerivative;
+      class FieldODEState;
+      class FieldExpandableODE;
+    }
+    class CalculusFieldElement;
     namespace exception {
       class MathIllegalStateException;
       class MathIllegalArgumentException;
     }
-    namespace ode {
-      class FieldODEStateAndDerivative;
-      class FieldExpandableODE;
-      class FieldODEState;
-      namespace nonstiff {
-        class FieldButcherArrayProvider;
-      }
-    }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -35,18 +35,18 @@ namespace org {
         class EmbeddedRungeKuttaFieldIntegrator : public ::org::hipparchus::ode::nonstiff::AdaptiveStepsizeFieldIntegrator {
          public:
           enum {
-            mid_getMaxGrowth_e6d4d3215c30992a,
-            mid_getMinReduction_e6d4d3215c30992a,
-            mid_getOrder_f2f64475e4580546,
-            mid_getSafety_e6d4d3215c30992a,
-            mid_integrate_668e072c435ebb6b,
-            mid_setMaxGrowth_03a16642f77779e7,
-            mid_setMinReduction_03a16642f77779e7,
-            mid_setSafety_03a16642f77779e7,
-            mid_createInterpolator_5a12ffbd2c0d2689,
-            mid_estimateError_681c74af7b6fa1aa,
-            mid_fraction_df565f90ecf8d53c,
-            mid_fraction_3e44951e1cc3e6e3,
+            mid_getMaxGrowth_eba8e72a22c984ac,
+            mid_getMinReduction_eba8e72a22c984ac,
+            mid_getOrder_570ce0828f81a2c1,
+            mid_getSafety_eba8e72a22c984ac,
+            mid_integrate_d8a6319aba9a7b17,
+            mid_setMaxGrowth_072c8635f2164db9,
+            mid_setMinReduction_072c8635f2164db9,
+            mid_setSafety_072c8635f2164db9,
+            mid_fraction_d0525157bc3abb83,
+            mid_fraction_50936f84b69df8dc,
+            mid_createInterpolator_21baab755acbe636,
+            mid_estimateError_f7f77a3e7e765297,
             max_mid
           };
 

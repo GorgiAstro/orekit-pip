@@ -18,7 +18,7 @@ namespace org {
         class PhaseCenterVariationFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_value_824133ce4aec3505,
+            mid_value_86ffecc08a63eff0,
             max_mid
           };
 

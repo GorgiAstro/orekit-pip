@@ -34,8 +34,8 @@ namespace org {
               class AbstractAlfriend1999 : public ::org::orekit::ssa::collision::shorttermencounter::probability::twod::AbstractShortTermEncounter2DPOCMethod {
                public:
                 enum {
-                  mid_compute_23211d1e26c9c2c1,
-                  mid_compute_f7ffb3ec4f2d0056,
+                  mid_compute_184c2f4ec5889c74,
+                  mid_compute_0ed38e7bbee7fafc,
                   max_mid
                 };
 

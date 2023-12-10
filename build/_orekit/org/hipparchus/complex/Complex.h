@@ -3,6 +3,23 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace util {
+      class FieldSinCos;
+      class FieldSinhCosh;
+    }
+    class CalculusFieldElement;
+    namespace complex {
+      class Complex;
+      class ComplexField;
+    }
+    namespace exception {
+      class NullArgumentException;
+      class MathIllegalArgumentException;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -16,23 +33,6 @@ namespace java {
     class Comparable;
   }
 }
-namespace org {
-  namespace hipparchus {
-    namespace complex {
-      class ComplexField;
-      class Complex;
-    }
-    namespace exception {
-      class NullArgumentException;
-      class MathIllegalArgumentException;
-    }
-    namespace util {
-      class FieldSinCos;
-      class FieldSinhCosh;
-    }
-    class CalculusFieldElement;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -42,98 +42,98 @@ namespace org {
       class Complex : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_77e0f9a1f260e2e5,
-          mid_init$_1d715fa3b7b756e1,
-          mid_abs_8278e96d3787b980,
-          mid_acos_8278e96d3787b980,
-          mid_acosh_8278e96d3787b980,
-          mid_add_b074c62aaddfbbb2,
-          mid_add_4dfff6d1ce38e85b,
-          mid_asin_8278e96d3787b980,
-          mid_asinh_8278e96d3787b980,
-          mid_atan_8278e96d3787b980,
-          mid_atan2_b074c62aaddfbbb2,
-          mid_atanh_8278e96d3787b980,
-          mid_cbrt_8278e96d3787b980,
-          mid_ceil_8278e96d3787b980,
-          mid_compareTo_68c283ffd44764bc,
-          mid_conjugate_8278e96d3787b980,
-          mid_copySign_b074c62aaddfbbb2,
-          mid_copySign_4dfff6d1ce38e85b,
-          mid_cos_8278e96d3787b980,
-          mid_cosh_8278e96d3787b980,
-          mid_divide_b074c62aaddfbbb2,
-          mid_divide_4dfff6d1ce38e85b,
-          mid_equals_229c87223f486349,
-          mid_equals_d4a497a5f0ea4dae,
-          mid_equals_6b867caf03ce5a76,
-          mid_equals_c521148f5a1e8729,
-          mid_equalsWithRelativeTolerance_6b867caf03ce5a76,
-          mid_exp_8278e96d3787b980,
-          mid_expm1_8278e96d3787b980,
-          mid_floor_8278e96d3787b980,
-          mid_getArgument_456d9a2f64d6b28d,
-          mid_getField_3cb90e62d7040545,
-          mid_getImaginary_456d9a2f64d6b28d,
-          mid_getImaginaryPart_456d9a2f64d6b28d,
-          mid_getPi_8278e96d3787b980,
-          mid_getReal_456d9a2f64d6b28d,
-          mid_getRealPart_456d9a2f64d6b28d,
-          mid_hashCode_f2f64475e4580546,
-          mid_hypot_b074c62aaddfbbb2,
-          mid_isInfinite_e470b6d9e0d979db,
-          mid_isMathematicalInteger_e470b6d9e0d979db,
-          mid_isNaN_e470b6d9e0d979db,
-          mid_isReal_e470b6d9e0d979db,
-          mid_isZero_e470b6d9e0d979db,
-          mid_linearCombination_2c319bae11bd93df,
-          mid_linearCombination_a8d9a7d3fbb2d8eb,
-          mid_linearCombination_e56cc6846d200191,
-          mid_linearCombination_4aa118580a77cd9e,
-          mid_linearCombination_f1ef3700eb5013ff,
-          mid_linearCombination_e73e169906a4f317,
-          mid_linearCombination_aa7d437b73616dd9,
-          mid_linearCombination_82f969a1e9dd08d9,
-          mid_log_8278e96d3787b980,
-          mid_log10_8278e96d3787b980,
-          mid_log1p_8278e96d3787b980,
-          mid_multiply_b074c62aaddfbbb2,
-          mid_multiply_4dfff6d1ce38e85b,
-          mid_multiply_6274be11ed0ee172,
-          mid_multiplyMinusI_8278e96d3787b980,
-          mid_multiplyPlusI_8278e96d3787b980,
-          mid_negate_8278e96d3787b980,
-          mid_newInstance_4dfff6d1ce38e85b,
-          mid_norm_456d9a2f64d6b28d,
-          mid_nthRoot_0096b74d5921c439,
-          mid_pow_b074c62aaddfbbb2,
-          mid_pow_4dfff6d1ce38e85b,
-          mid_pow_6274be11ed0ee172,
-          mid_reciprocal_8278e96d3787b980,
-          mid_remainder_b074c62aaddfbbb2,
-          mid_remainder_4dfff6d1ce38e85b,
-          mid_rint_8278e96d3787b980,
-          mid_rootN_6274be11ed0ee172,
-          mid_scalb_6274be11ed0ee172,
-          mid_sign_8278e96d3787b980,
-          mid_sin_8278e96d3787b980,
-          mid_sinCos_35f2499c71416a1a,
-          mid_sinh_8278e96d3787b980,
-          mid_sinhCosh_c388a3eefde9d597,
-          mid_sqrt_8278e96d3787b980,
-          mid_sqrt1z_8278e96d3787b980,
-          mid_subtract_b074c62aaddfbbb2,
-          mid_subtract_4dfff6d1ce38e85b,
-          mid_tan_8278e96d3787b980,
-          mid_tanh_8278e96d3787b980,
-          mid_toDegrees_8278e96d3787b980,
-          mid_toRadians_8278e96d3787b980,
-          mid_toString_0090f7797e403f43,
-          mid_ulp_8278e96d3787b980,
-          mid_valueOf_4dfff6d1ce38e85b,
-          mid_valueOf_4a983b2ed426e60d,
-          mid_createComplex_4a983b2ed426e60d,
-          mid_readResolve_dfd7647d9110ac9f,
+          mid_init$_17db3a65980d3441,
+          mid_init$_8f2e782d5278b131,
+          mid_abs_a6784e0b89dedf02,
+          mid_acos_a6784e0b89dedf02,
+          mid_acosh_a6784e0b89dedf02,
+          mid_add_db05c4121ab4cf9b,
+          mid_add_f404cec7be8f51e5,
+          mid_asin_a6784e0b89dedf02,
+          mid_asinh_a6784e0b89dedf02,
+          mid_atan_a6784e0b89dedf02,
+          mid_atan2_db05c4121ab4cf9b,
+          mid_atanh_a6784e0b89dedf02,
+          mid_cbrt_a6784e0b89dedf02,
+          mid_ceil_a6784e0b89dedf02,
+          mid_compareTo_fae750cc0e19576c,
+          mid_conjugate_a6784e0b89dedf02,
+          mid_copySign_db05c4121ab4cf9b,
+          mid_copySign_f404cec7be8f51e5,
+          mid_cos_a6784e0b89dedf02,
+          mid_cosh_a6784e0b89dedf02,
+          mid_divide_db05c4121ab4cf9b,
+          mid_divide_f404cec7be8f51e5,
+          mid_equals_65c7d273e80d497a,
+          mid_equals_18cffd5529c0b318,
+          mid_equals_1977686a9a85c063,
+          mid_equals_ce480e84fb1bfdfe,
+          mid_equalsWithRelativeTolerance_1977686a9a85c063,
+          mid_exp_a6784e0b89dedf02,
+          mid_expm1_a6784e0b89dedf02,
+          mid_floor_a6784e0b89dedf02,
+          mid_getArgument_dff5885c2c873297,
+          mid_getField_f304aeb797b96d24,
+          mid_getImaginary_dff5885c2c873297,
+          mid_getImaginaryPart_dff5885c2c873297,
+          mid_getPi_a6784e0b89dedf02,
+          mid_getReal_dff5885c2c873297,
+          mid_getRealPart_dff5885c2c873297,
+          mid_hashCode_570ce0828f81a2c1,
+          mid_hypot_db05c4121ab4cf9b,
+          mid_isInfinite_b108b35ef48e27bd,
+          mid_isMathematicalInteger_b108b35ef48e27bd,
+          mid_isNaN_b108b35ef48e27bd,
+          mid_isReal_b108b35ef48e27bd,
+          mid_isZero_b108b35ef48e27bd,
+          mid_linearCombination_113b783bb5f6aa6a,
+          mid_linearCombination_768c966419db50f1,
+          mid_linearCombination_e4b62d9a92e5b076,
+          mid_linearCombination_3284425167f1af30,
+          mid_linearCombination_9a02c530712f3724,
+          mid_linearCombination_b8e2a7ca27846946,
+          mid_linearCombination_734aa9c379e40267,
+          mid_linearCombination_d32979eadaaef3e4,
+          mid_log_a6784e0b89dedf02,
+          mid_log10_a6784e0b89dedf02,
+          mid_log1p_a6784e0b89dedf02,
+          mid_multiply_db05c4121ab4cf9b,
+          mid_multiply_f404cec7be8f51e5,
+          mid_multiply_7ff716ce003a9897,
+          mid_multiplyMinusI_a6784e0b89dedf02,
+          mid_multiplyPlusI_a6784e0b89dedf02,
+          mid_negate_a6784e0b89dedf02,
+          mid_newInstance_f404cec7be8f51e5,
+          mid_norm_dff5885c2c873297,
+          mid_nthRoot_9c3e1c79a080a476,
+          mid_pow_db05c4121ab4cf9b,
+          mid_pow_f404cec7be8f51e5,
+          mid_pow_7ff716ce003a9897,
+          mid_reciprocal_a6784e0b89dedf02,
+          mid_remainder_db05c4121ab4cf9b,
+          mid_remainder_f404cec7be8f51e5,
+          mid_rint_a6784e0b89dedf02,
+          mid_rootN_7ff716ce003a9897,
+          mid_scalb_7ff716ce003a9897,
+          mid_sign_a6784e0b89dedf02,
+          mid_sin_a6784e0b89dedf02,
+          mid_sinCos_a447b7ca640e6b68,
+          mid_sinh_a6784e0b89dedf02,
+          mid_sinhCosh_eef733c8a50b276f,
+          mid_sqrt_a6784e0b89dedf02,
+          mid_sqrt1z_a6784e0b89dedf02,
+          mid_subtract_db05c4121ab4cf9b,
+          mid_subtract_f404cec7be8f51e5,
+          mid_tan_a6784e0b89dedf02,
+          mid_tanh_a6784e0b89dedf02,
+          mid_toDegrees_a6784e0b89dedf02,
+          mid_toRadians_a6784e0b89dedf02,
+          mid_toString_11b109bd155ca898,
+          mid_ulp_a6784e0b89dedf02,
+          mid_valueOf_f404cec7be8f51e5,
+          mid_valueOf_b9232ea66d045a31,
+          mid_createComplex_b9232ea66d045a31,
+          mid_readResolve_4d26fd885228c716,
           max_mid
         };
 

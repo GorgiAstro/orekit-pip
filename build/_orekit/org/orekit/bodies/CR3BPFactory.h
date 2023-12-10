@@ -5,13 +5,13 @@
 
 namespace org {
   namespace orekit {
+    namespace bodies {
+      class CR3BPSystem;
+      class CelestialBody;
+    }
     namespace time {
       class TimeScale;
       class AbsoluteDate;
-    }
-    namespace bodies {
-      class CelestialBody;
-      class CR3BPSystem;
     }
   }
 }
@@ -29,10 +29,10 @@ namespace org {
       class CR3BPFactory : public ::java::lang::Object {
        public:
         enum {
-          mid_getEarthMoonCR3BP_fd816a5468a737d0,
-          mid_getSunEarthCR3BP_dbdc50d253d6fe8b,
-          mid_getSunJupiterCR3BP_dbdc50d253d6fe8b,
-          mid_getSystem_2c7bc2e848dd5e54,
+          mid_getEarthMoonCR3BP_5fad4f68327f5e3d,
+          mid_getSunEarthCR3BP_2a04e203dd5a7815,
+          mid_getSunJupiterCR3BP_2a04e203dd5a7815,
+          mid_getSystem_806055d4cfef5676,
           max_mid
         };
 

@@ -15,6 +15,12 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataContext;
+    }
+    namespace utils {
+      class IERSConventions;
+    }
     namespace files {
       namespace ccsds {
         namespace definitions {
@@ -24,12 +30,6 @@ namespace org {
           class ParsedUnitsBehavior;
         }
       }
-    }
-    namespace data {
-      class DataContext;
-    }
-    namespace utils {
-      class IERSConventions;
     }
     namespace time {
       class AbsoluteDate;
@@ -47,14 +47,14 @@ namespace org {
           class ContextBinding : public ::java::lang::Object {
            public:
             enum {
-              mid_getClockCount_456d9a2f64d6b28d,
-              mid_getClockRate_456d9a2f64d6b28d,
-              mid_getConventions_f657aa17e72227da,
-              mid_getDataContext_fc8fc85e38e59042,
-              mid_getParsedUnitsBehavior_edbef281f8882e84,
-              mid_getReferenceDate_aaa854c403487cf3,
-              mid_getTimeSystem_8ece93c6c1ece30e,
-              mid_isSimpleEOP_e470b6d9e0d979db,
+              mid_getClockCount_dff5885c2c873297,
+              mid_getClockRate_dff5885c2c873297,
+              mid_getConventions_60f9ded87ab7ca4c,
+              mid_getDataContext_0b7cf48ee6a922ee,
+              mid_getParsedUnitsBehavior_8df14555f7513c0c,
+              mid_getReferenceDate_85703d13e302437e,
+              mid_getTimeSystem_ee0a6b60b63a969e,
+              mid_isSimpleEOP_b108b35ef48e27bd,
               max_mid
             };
 

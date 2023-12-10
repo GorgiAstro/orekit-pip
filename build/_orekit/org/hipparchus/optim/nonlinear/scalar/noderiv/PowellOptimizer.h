@@ -28,11 +28,11 @@ namespace org {
             class PowellOptimizer : public ::org::hipparchus::optim::nonlinear::scalar::MultivariateOptimizer {
              public:
               enum {
-                mid_init$_1d715fa3b7b756e1,
-                mid_init$_f83ff6a8ad92b0e0,
-                mid_init$_667a7965403ed91a,
-                mid_init$_7444ef0fe2c51256,
-                mid_doOptimize_f3368328259a5468,
+                mid_init$_8f2e782d5278b131,
+                mid_init$_511a7b4994f0ac32,
+                mid_init$_b0a935b68e41d65a,
+                mid_init$_491b73d0199013f8,
+                mid_doOptimize_4ae915e35f441d39,
                 max_mid
               };
 

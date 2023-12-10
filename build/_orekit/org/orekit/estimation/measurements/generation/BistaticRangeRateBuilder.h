@@ -4,26 +4,26 @@
 #include "org/orekit/estimation/measurements/generation/AbstractMeasurementBuilder.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace random {
+      class CorrelatedRandomVectorGenerator;
+    }
+  }
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class ObservableSatellite;
-        class BistaticRangeRate;
         class GroundStation;
-      }
-    }
-    namespace propagation {
-      namespace sampling {
-        class OrekitStepInterpolator;
+        class BistaticRangeRate;
+        class ObservableSatellite;
       }
     }
     namespace time {
       class AbsoluteDate;
     }
-  }
-  namespace hipparchus {
-    namespace random {
-      class CorrelatedRandomVectorGenerator;
+    namespace propagation {
+      namespace sampling {
+        class OrekitStepInterpolator;
+      }
     }
   }
 }
@@ -46,8 +46,8 @@ namespace org {
           class BistaticRangeRateBuilder : public ::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder {
            public:
             enum {
-              mid_init$_aa060bc4347f0934,
-              mid_build_389ef0ac967af068,
+              mid_init$_f2d2df585c0173ae,
+              mid_build_1528d79473e922b0,
               max_mid
             };
 

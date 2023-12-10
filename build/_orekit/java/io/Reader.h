@@ -23,17 +23,17 @@ namespace java {
     class Reader : public ::java::lang::Object {
      public:
       enum {
-        mid_close_7ae3461a92a43152,
-        mid_mark_0a2a1ac2721c0336,
-        mid_markSupported_e470b6d9e0d979db,
-        mid_nullReader_8476c88b3f0eb61c,
-        mid_read_f2f64475e4580546,
-        mid_read_eeb6c7fd19987667,
-        mid_read_a7dcb595f3e6fbfc,
-        mid_ready_e470b6d9e0d979db,
-        mid_reset_7ae3461a92a43152,
-        mid_skip_955f7541fca701ab,
-        mid_transferTo_8a463814dc358597,
+        mid_close_0fa09c18fee449d5,
+        mid_mark_99803b0791f320ff,
+        mid_markSupported_b108b35ef48e27bd,
+        mid_nullReader_26c6a3f16521a493,
+        mid_read_570ce0828f81a2c1,
+        mid_read_881698425abcbe49,
+        mid_read_e1525dbb996fb0b1,
+        mid_ready_b108b35ef48e27bd,
+        mid_reset_0fa09c18fee449d5,
+        mid_skip_02b241598e254a3f,
+        mid_transferTo_a3aea31848e09c40,
         max_mid
       };
 

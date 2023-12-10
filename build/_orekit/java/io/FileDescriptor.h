@@ -20,9 +20,9 @@ namespace java {
     class FileDescriptor : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_7ae3461a92a43152,
-        mid_sync_7ae3461a92a43152,
-        mid_valid_e470b6d9e0d979db,
+        mid_init$_0fa09c18fee449d5,
+        mid_sync_0fa09c18fee449d5,
+        mid_valid_b108b35ef48e27bd,
         max_mid
       };
 

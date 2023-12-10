@@ -13,22 +13,22 @@ namespace org {
         }
       }
     }
+    namespace attitudes {
+      class Attitude;
+      class FieldAttitude;
+      class AttitudeProvider;
+    }
     namespace frames {
       class Frame;
       class LOF;
     }
-    namespace attitudes {
-      class AttitudeProvider;
-      class Attitude;
-      class FieldAttitude;
+    namespace utils {
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
     }
     namespace time {
       class AbsoluteDate;
       class FieldAbsoluteDate;
-    }
-    namespace utils {
-      class FieldPVCoordinatesProvider;
-      class PVCoordinatesProvider;
     }
   }
   namespace hipparchus {
@@ -57,15 +57,15 @@ namespace org {
           class ThrustDirectionAndAttitudeProvider : public ::java::lang::Object {
            public:
             enum {
-              mid_buildFromCustomAttitude_2a509cacd8992176,
-              mid_buildFromDirectionInFrame_4a60dc91196dbefd,
-              mid_buildFromDirectionInLOF_1bbcb025902b2173,
-              mid_buildFromFixedDirectionInSatelliteFrame_68ee83b4aa4b2362,
-              mid_getAttitude_5341a8481841f90c,
-              mid_getAttitude_455b5c75f9292826,
-              mid_getManeuverAttitudeProvider_5cce95036ae870ba,
-              mid_getThrusterAxisInSatelliteFrame_17a952530a808943,
-              mid_getAttitudeFromFrame_5341a8481841f90c,
+              mid_buildFromCustomAttitude_f04d45055f690190,
+              mid_buildFromDirectionInFrame_55c924554b729f59,
+              mid_buildFromDirectionInLOF_b2589ba8f0aeef50,
+              mid_buildFromFixedDirectionInSatelliteFrame_97cc82c890b226b9,
+              mid_getAttitude_d2b70935d932b5c5,
+              mid_getAttitude_4e541876ea7d5bd0,
+              mid_getManeuverAttitudeProvider_a904f3d015a354a0,
+              mid_getThrusterAxisInSatelliteFrame_d52645e0d4c07563,
+              mid_getAttitudeFromFrame_d2b70935d932b5c5,
               max_mid
             };
 

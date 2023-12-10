@@ -30,9 +30,9 @@ namespace org {
           class GradientMultivariateOptimizer : public ::org::hipparchus::optim::nonlinear::scalar::MultivariateOptimizer {
            public:
             enum {
-              mid_optimize_02ecb87ce66bcfc1,
-              mid_parseOptimizationData_a5cd04a701a45f77,
-              mid_computeObjectiveGradient_4b742fe429c22ba8,
+              mid_optimize_d70788483e9a9a2c,
+              mid_parseOptimizationData_3d26e9f3a1d7e833,
+              mid_computeObjectiveGradient_ac3d742ccc742f22,
               max_mid
             };
 

@@ -5,19 +5,19 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalStateException;
+    }
     namespace geometry {
       namespace euclidean {
         namespace twod {
-          class Vector2D;
+          class Euclidean2D;
           namespace hull {
             class ConvexHull2D;
           }
-          class Euclidean2D;
+          class Vector2D;
         }
       }
-    }
-    namespace exception {
-      class MathIllegalStateException;
     }
   }
 }
@@ -41,7 +41,7 @@ namespace org {
             class ConvexHullGenerator2D : public ::org::hipparchus::geometry::hull::ConvexHullGenerator {
              public:
               enum {
-                mid_generate_94066d174e88779f,
+                mid_generate_031b48e42873ea77,
                 max_mid
               };
 

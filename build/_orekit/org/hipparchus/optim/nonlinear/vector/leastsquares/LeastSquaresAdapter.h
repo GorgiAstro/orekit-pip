@@ -5,8 +5,8 @@
 
 namespace org {
   namespace hipparchus {
-    namespace linear {
-      class RealVector;
+    namespace util {
+      class Incrementor;
     }
     namespace optim {
       namespace nonlinear {
@@ -19,8 +19,8 @@ namespace org {
       }
       class ConvergenceChecker;
     }
-    namespace util {
-      class Incrementor;
+    namespace linear {
+      class RealVector;
     }
   }
 }
@@ -41,14 +41,14 @@ namespace org {
             class LeastSquaresAdapter : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_65dbaf75e2600015,
-                mid_evaluate_3ec1db1849589637,
-                mid_getConvergenceChecker_100e81b1c0752b49,
-                mid_getEvaluationCounter_745ef02916e2d8db,
-                mid_getIterationCounter_745ef02916e2d8db,
-                mid_getObservationSize_f2f64475e4580546,
-                mid_getParameterSize_f2f64475e4580546,
-                mid_getStart_6d9adf1d5b463928,
+                mid_init$_0208fb941eb9e702,
+                mid_evaluate_766f7f4cc1ea3a49,
+                mid_getConvergenceChecker_c0e8b85b3220641b,
+                mid_getEvaluationCounter_b6dd60d8c3af0cf7,
+                mid_getIterationCounter_b6dd60d8c3af0cf7,
+                mid_getObservationSize_570ce0828f81a2c1,
+                mid_getParameterSize_570ce0828f81a2c1,
+                mid_getStart_aab4fbf77867daa8,
                 max_mid
               };
 

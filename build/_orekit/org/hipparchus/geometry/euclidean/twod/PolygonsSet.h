@@ -6,19 +6,19 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
+      namespace partitioning {
+        class SubHyperplane;
+        class BSPTree;
+      }
       namespace euclidean {
+        namespace twod {
+          class Euclidean2D;
+          class PolygonsSet;
+          class Vector2D;
+        }
         namespace oned {
           class Euclidean1D;
         }
-        namespace twod {
-          class Vector2D;
-          class PolygonsSet;
-          class Euclidean2D;
-        }
-      }
-      namespace partitioning {
-        class BSPTree;
-        class SubHyperplane;
       }
     }
   }
@@ -42,14 +42,14 @@ namespace org {
           class PolygonsSet : public ::org::hipparchus::geometry::partitioning::AbstractRegion {
            public:
             enum {
-              mid_init$_77e0f9a1f260e2e5,
-              mid_init$_71b33ec76cf5b8bd,
-              mid_init$_3e72dd0bd3a69a59,
-              mid_init$_b832ff2fd1b54c87,
-              mid_init$_1dc1968396ae9d11,
-              mid_buildNew_4b66640ad01107c7,
-              mid_getVertices_475ab40b782872dc,
-              mid_computeGeometricalProperties_7ae3461a92a43152,
+              mid_init$_17db3a65980d3441,
+              mid_init$_1ff06be7733ea843,
+              mid_init$_748cd2c51a955d77,
+              mid_init$_1f4d55383238fbb5,
+              mid_init$_cf6593b07e7e8f64,
+              mid_buildNew_977d6495eb74d6fe,
+              mid_getVertices_d1ff93c1a48f2b3f,
+              mid_computeGeometricalProperties_0fa09c18fee449d5,
               max_mid
             };
 

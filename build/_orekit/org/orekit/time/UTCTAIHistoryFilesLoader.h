@@ -13,12 +13,12 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace time {
-      class OffsetModel;
-      class UTCTAIOffsetsLoader;
-    }
     namespace data {
       class DataProvidersManager;
+    }
+    namespace time {
+      class UTCTAIOffsetsLoader;
+      class OffsetModel;
     }
   }
 }
@@ -31,9 +31,9 @@ namespace org {
       class UTCTAIHistoryFilesLoader : public ::org::orekit::data::AbstractSelfFeedingLoader {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_init$_92cedf0c8913c23b,
-          mid_loadOffsets_a6156df500549a58,
+          mid_init$_0fa09c18fee449d5,
+          mid_init$_2ce23204880a56c8,
+          mid_loadOffsets_2afa36052df4765d,
           max_mid
         };
 

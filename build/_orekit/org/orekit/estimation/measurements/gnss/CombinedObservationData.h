@@ -5,6 +5,13 @@
 
 namespace org {
   namespace orekit {
+    namespace files {
+      namespace rinex {
+        namespace observation {
+          class ObservationData;
+        }
+      }
+    }
     namespace gnss {
       class MeasurementType;
     }
@@ -12,13 +19,6 @@ namespace org {
       namespace measurements {
         namespace gnss {
           class CombinationType;
-        }
-      }
-    }
-    namespace files {
-      namespace rinex {
-        namespace observation {
-          class ObservationData;
         }
       }
     }
@@ -43,12 +43,12 @@ namespace org {
           class CombinedObservationData : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_361391244955dd59,
-              mid_getCombinationType_7e335f1c8cfa47c5,
-              mid_getCombinedMHzFrequency_456d9a2f64d6b28d,
-              mid_getMeasurementType_4399f03fd512a2dc,
-              mid_getUsedObservationData_a6156df500549a58,
-              mid_getValue_456d9a2f64d6b28d,
+              mid_init$_f8e1e2997176852d,
+              mid_getCombinationType_bcbd5b9371c0a4d1,
+              mid_getCombinedMHzFrequency_dff5885c2c873297,
+              mid_getMeasurementType_b9f942cb72c4c59a,
+              mid_getUsedObservationData_2afa36052df4765d,
+              mid_getValue_dff5885c2c873297,
               max_mid
             };
 

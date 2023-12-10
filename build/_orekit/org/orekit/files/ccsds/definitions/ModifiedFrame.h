@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
-    namespace bodies {
-      class CelestialBody;
-    }
     namespace files {
       namespace ccsds {
         namespace definitions {
           class CelestialBodyFrame;
         }
       }
+    }
+    namespace bodies {
+      class CelestialBody;
     }
   }
 }
@@ -34,9 +34,9 @@ namespace org {
           class ModifiedFrame : public ::org::orekit::frames::Frame {
            public:
             enum {
-              mid_init$_845bb5fbf46ce78e,
-              mid_getCenterName_0090f7797e403f43,
-              mid_getRefFrame_00a4299572a8abf7,
+              mid_init$_e9cfa26feec02953,
+              mid_getCenterName_11b109bd155ca898,
+              mid_getRefFrame_d0abc16340ab4d13,
               max_mid
             };
 

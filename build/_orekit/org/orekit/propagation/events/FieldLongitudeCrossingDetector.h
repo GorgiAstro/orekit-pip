@@ -4,20 +4,20 @@
 #include "org/orekit/propagation/events/FieldAbstractDetector.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    class Field;
+  }
   namespace orekit {
     namespace bodies {
       class OneAxisEllipsoid;
     }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace propagation {
       class FieldSpacecraftState;
     }
-  }
-  namespace hipparchus {
-    class Field;
-    class CalculusFieldElement;
+    namespace time {
+      class FieldAbsoluteDate;
+    }
   }
 }
 namespace java {
@@ -35,13 +35,13 @@ namespace org {
         class FieldLongitudeCrossingDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_78b88d9ac962dac0,
-            mid_init$_5173509e6f716b64,
-            mid_g_cc79c2733879de35,
-            mid_getBody_940814a1dcab100a,
-            mid_getLongitude_456d9a2f64d6b28d,
-            mid_init_acdd8180a5dc1a8d,
-            mid_create_9b4728e423e80b8f,
+            mid_init$_5d0d2e5636982682,
+            mid_init$_275c74b6b22ce273,
+            mid_g_41a008afe53da855,
+            mid_getBody_000d48aad6c74b0a,
+            mid_getLongitude_dff5885c2c873297,
+            mid_init_8e8de2be1664674a,
+            mid_create_9b540ff770cf94fe,
             max_mid
           };
 

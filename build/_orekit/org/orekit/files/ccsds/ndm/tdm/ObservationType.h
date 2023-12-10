@@ -9,17 +9,17 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace tdm {
-            class TdmMetadata;
-            class ObservationType;
-            class ObservationsBlock;
             class RangeUnitsConverter;
+            class ObservationsBlock;
+            class ObservationType;
+            class TdmMetadata;
           }
         }
         namespace utils {
-          class ContextBinding;
           namespace lexical {
             class ParseToken;
           }
+          class ContextBinding;
         }
       }
     }
@@ -46,11 +46,11 @@ namespace org {
             class ObservationType : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_7f7266c15496b3e0,
-                mid_rawToSI_de325662d5ff329b,
-                mid_siToRaw_de325662d5ff329b,
-                mid_valueOf_719ea848154846af,
-                mid_values_6739edc400929e81,
+                mid_process_e72a71cd30355630,
+                mid_rawToSI_f6cf436268177345,
+                mid_siToRaw_f6cf436268177345,
+                mid_valueOf_1479529000a26cf6,
+                mid_values_c187ad6fd87ef334,
                 max_mid
               };
 

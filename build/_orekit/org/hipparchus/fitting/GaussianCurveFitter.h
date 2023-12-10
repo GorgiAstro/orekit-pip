@@ -24,10 +24,10 @@ namespace org {
       class GaussianCurveFitter : public ::org::hipparchus::fitting::AbstractCurveFitter {
        public:
         enum {
-          mid_create_f7c1c887104d4e61,
-          mid_withMaxIterations_7e16ecc7bda7c112,
-          mid_withStartPoint_1c1aae45ffa98ecb,
-          mid_getProblem_23a9c25631fa37c2,
+          mid_create_8881ea96d07001b1,
+          mid_withMaxIterations_0b3ca76896ccd5a4,
+          mid_withStartPoint_972ad18b5e18ab89,
+          mid_getProblem_c197708a453e8034,
           max_mid
         };
 

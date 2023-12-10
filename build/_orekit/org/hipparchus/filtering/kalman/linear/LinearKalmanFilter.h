@@ -5,20 +5,20 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathRuntimeException;
+    }
     namespace filtering {
       namespace kalman {
-        class Measurement;
         namespace linear {
           class LinearProcess;
         }
         class ProcessEstimate;
+        class Measurement;
       }
     }
     namespace linear {
       class MatrixDecomposer;
-    }
-    namespace exception {
-      class MathRuntimeException;
     }
   }
 }
@@ -38,8 +38,8 @@ namespace org {
           class LinearKalmanFilter : public ::org::hipparchus::filtering::kalman::AbstractKalmanFilter {
            public:
             enum {
-              mid_init$_4ae6bcf5fefbfefd,
-              mid_estimationStep_01cd341bc5eb698c,
+              mid_init$_122c613624d6f176,
+              mid_estimationStep_ba157b27aa6224ec,
               max_mid
             };
 

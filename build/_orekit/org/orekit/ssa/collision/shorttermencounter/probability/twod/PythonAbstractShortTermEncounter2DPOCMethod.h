@@ -3,14 +3,10 @@
 
 #include "org/orekit/ssa/collision/shorttermencounter/probability/twod/AbstractShortTermEncounter2DPOCMethod.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-    class String;
-  }
-}
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace ssa {
       namespace collision {
@@ -23,13 +19,17 @@ namespace org {
         }
       }
       namespace metrics {
-        class ProbabilityOfCollision;
         class FieldProbabilityOfCollision;
+        class ProbabilityOfCollision;
       }
     }
   }
-  namespace hipparchus {
-    class CalculusFieldElement;
+}
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -45,14 +45,14 @@ namespace org {
               class PythonAbstractShortTermEncounter2DPOCMethod : public ::org::orekit::ssa::collision::shorttermencounter::probability::twod::AbstractShortTermEncounter2DPOCMethod {
                public:
                 enum {
-                  mid_init$_e939c6558ae8d313,
-                  mid_compute_23211d1e26c9c2c1,
-                  mid_compute_f7ffb3ec4f2d0056,
-                  mid_finalize_7ae3461a92a43152,
-                  mid_getType_830fb81b25fc6619,
-                  mid_pythonDecRef_7ae3461a92a43152,
-                  mid_pythonExtension_a27fc9afd27e559d,
-                  mid_pythonExtension_fefb08975c10f0a1,
+                  mid_init$_d0bc48d5b00dc40c,
+                  mid_compute_184c2f4ec5889c74,
+                  mid_compute_0ed38e7bbee7fafc,
+                  mid_finalize_0fa09c18fee449d5,
+                  mid_getType_5d7ecb27bb5e3bc3,
+                  mid_pythonDecRef_0fa09c18fee449d5,
+                  mid_pythonExtension_492808a339bfa35f,
+                  mid_pythonExtension_3a8e7649f31fdb20,
                   max_mid
                 };
 

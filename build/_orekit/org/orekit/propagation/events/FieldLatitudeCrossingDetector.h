@@ -4,6 +4,10 @@
 #include "org/orekit/propagation/events/FieldAbstractDetector.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    class Field;
+  }
   namespace orekit {
     namespace bodies {
       class OneAxisEllipsoid;
@@ -11,10 +15,6 @@ namespace org {
     namespace propagation {
       class FieldSpacecraftState;
     }
-  }
-  namespace hipparchus {
-    class Field;
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -32,12 +32,12 @@ namespace org {
         class FieldLatitudeCrossingDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_78b88d9ac962dac0,
-            mid_init$_5173509e6f716b64,
-            mid_g_cc79c2733879de35,
-            mid_getBody_940814a1dcab100a,
-            mid_getLatitude_456d9a2f64d6b28d,
-            mid_create_321bcd237994fcea,
+            mid_init$_5d0d2e5636982682,
+            mid_init$_275c74b6b22ce273,
+            mid_g_41a008afe53da855,
+            mid_getBody_000d48aad6c74b0a,
+            mid_getLatitude_dff5885c2c873297,
+            mid_create_a2bce466813c5267,
             max_mid
           };
 

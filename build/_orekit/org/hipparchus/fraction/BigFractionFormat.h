@@ -3,22 +3,6 @@
 
 #include "org/hipparchus/fraction/AbstractFormat.h"
 
-namespace java {
-  namespace lang {
-    class StringBuffer;
-    class Class;
-    class Object;
-    class String;
-  }
-  namespace util {
-    class Locale;
-  }
-  namespace text {
-    class FieldPosition;
-    class ParsePosition;
-    class NumberFormat;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace fraction {
@@ -30,6 +14,22 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class Locale;
+  }
+  namespace text {
+    class NumberFormat;
+    class ParsePosition;
+    class FieldPosition;
+  }
+  namespace lang {
+    class StringBuffer;
+    class Class;
+    class Object;
+    class String;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -39,20 +39,20 @@ namespace org {
       class BigFractionFormat : public ::org::hipparchus::fraction::AbstractFormat {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_init$_695a782f9c7823f6,
-          mid_init$_4c0f990589d379b7,
-          mid_format_42dd4f61513ad308,
-          mid_format_e231795b026d93db,
-          mid_formatBigFraction_f763fdb4539794ce,
-          mid_getAvailableLocales_81e8fdf65840780c,
-          mid_getImproperInstance_0a94ffafb1c3bf54,
-          mid_getImproperInstance_1069ad73f49e7f07,
-          mid_getProperInstance_0a94ffafb1c3bf54,
-          mid_getProperInstance_1069ad73f49e7f07,
-          mid_parse_7616b22aac27e6c3,
-          mid_parse_3123fd67840e701b,
-          mid_parseNextBigInteger_a8bef70e92826704,
+          mid_init$_0fa09c18fee449d5,
+          mid_init$_256f36a22c0d0f55,
+          mid_init$_e2028a486c5b97a5,
+          mid_format_848518009c5606f2,
+          mid_format_f5c3717ad7292c63,
+          mid_formatBigFraction_fd65e985244149e8,
+          mid_getAvailableLocales_c5ed07ebd55821bb,
+          mid_getImproperInstance_82a9eb9a5a797180,
+          mid_getImproperInstance_a14e6a4426b68fb7,
+          mid_getProperInstance_82a9eb9a5a797180,
+          mid_getProperInstance_a14e6a4426b68fb7,
+          mid_parse_0ca38107b4e82d97,
+          mid_parse_7ca853134336de7b,
+          mid_parseNextBigInteger_c8e1e8504169ebff,
           max_mid
         };
 

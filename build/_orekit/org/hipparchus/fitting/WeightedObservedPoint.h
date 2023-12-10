@@ -20,10 +20,10 @@ namespace org {
       class WeightedObservedPoint : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_d0d6094fbd7015c5,
-          mid_getWeight_456d9a2f64d6b28d,
-          mid_getX_456d9a2f64d6b28d,
-          mid_getY_456d9a2f64d6b28d,
+          mid_init$_2c56b6dd4d4b1dec,
+          mid_getWeight_dff5885c2c873297,
+          mid_getX_dff5885c2c873297,
+          mid_getY_dff5885c2c873297,
           max_mid
         };
 

@@ -17,10 +17,10 @@ namespace org {
       class TrackingCoordinates : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_d0d6094fbd7015c5,
-          mid_getAzimuth_456d9a2f64d6b28d,
-          mid_getElevation_456d9a2f64d6b28d,
-          mid_getRange_456d9a2f64d6b28d,
+          mid_init$_2c56b6dd4d4b1dec,
+          mid_getAzimuth_dff5885c2c873297,
+          mid_getElevation_dff5885c2c873297,
+          mid_getRange_dff5885c2c873297,
           max_mid
         };
 

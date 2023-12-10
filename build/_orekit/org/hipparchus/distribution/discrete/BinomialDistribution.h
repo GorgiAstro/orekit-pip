@@ -25,17 +25,17 @@ namespace org {
         class BinomialDistribution : public ::org::hipparchus::distribution::discrete::AbstractIntegerDistribution {
          public:
           enum {
-            mid_init$_987a5fb872043b12,
-            mid_cumulativeProbability_b772323fc98b7293,
-            mid_getNumberOfTrials_f2f64475e4580546,
-            mid_getNumericalMean_456d9a2f64d6b28d,
-            mid_getNumericalVariance_456d9a2f64d6b28d,
-            mid_getProbabilityOfSuccess_456d9a2f64d6b28d,
-            mid_getSupportLowerBound_f2f64475e4580546,
-            mid_getSupportUpperBound_f2f64475e4580546,
-            mid_isSupportConnected_e470b6d9e0d979db,
-            mid_logProbability_b772323fc98b7293,
-            mid_probability_b772323fc98b7293,
+            mid_init$_bb79ca80d85d0a66,
+            mid_cumulativeProbability_46f85b53d9aedd96,
+            mid_getNumberOfTrials_570ce0828f81a2c1,
+            mid_getNumericalMean_dff5885c2c873297,
+            mid_getNumericalVariance_dff5885c2c873297,
+            mid_getProbabilityOfSuccess_dff5885c2c873297,
+            mid_getSupportLowerBound_570ce0828f81a2c1,
+            mid_getSupportUpperBound_570ce0828f81a2c1,
+            mid_isSupportConnected_b108b35ef48e27bd,
+            mid_logProbability_46f85b53d9aedd96,
+            mid_probability_46f85b53d9aedd96,
             max_mid
           };
 

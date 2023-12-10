@@ -4,19 +4,19 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
-    namespace time {
-      class UTCScale;
-      class TimeScale;
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
     namespace frames {
       class EOPHistory;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
+    namespace time {
+      class UTCScale;
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+      class TimeScale;
+    }
   }
 }
 namespace java {
@@ -34,12 +34,12 @@ namespace org {
       class UT1Scale : public ::java::lang::Object {
        public:
         enum {
-          mid_getEOPHistory_1266c6198e5d43dd,
-          mid_getName_0090f7797e403f43,
-          mid_getUTCScale_ed870393143e8ecb,
-          mid_offsetFromTAI_e912d21057defe63,
-          mid_offsetFromTAI_7bc0fd76ee915b72,
-          mid_toString_0090f7797e403f43,
+          mid_getEOPHistory_a75a6d9d92c81a5e,
+          mid_getName_11b109bd155ca898,
+          mid_getUTCScale_4611f4f4ac7b3711,
+          mid_offsetFromTAI_bf1d7732f1acb697,
+          mid_offsetFromTAI_2a5f05be83ff251d,
+          mid_toString_11b109bd155ca898,
           max_mid
         };
 

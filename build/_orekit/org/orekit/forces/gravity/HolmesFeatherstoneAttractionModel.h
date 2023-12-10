@@ -5,23 +5,17 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
-    class CalculusFieldElement;
   }
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace forces {
       namespace gravity {
         namespace potential {
@@ -33,12 +27,18 @@ namespace org {
       class ForceModel;
     }
     namespace propagation {
-      class SpacecraftState;
       class FieldSpacecraftState;
+      class SpacecraftState;
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
   }
 }
@@ -60,18 +60,18 @@ namespace org {
         class HolmesFeatherstoneAttractionModel : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_ec879b01512fab89,
-            mid_acceleration_00aba28d3abe9a8c,
-            mid_acceleration_78989e44b99f7cc2,
-            mid_dependsOnPositionOnly_e470b6d9e0d979db,
-            mid_getMu_456d9a2f64d6b28d,
-            mid_getMu_e912d21057defe63,
-            mid_getParametersDrivers_a6156df500549a58,
-            mid_getTideSystem_b3b39360f3c8a6ac,
-            mid_gradient_43a4a80712c0c6fe,
-            mid_gradient_7bb320d4b9984b28,
-            mid_nonCentralPart_19fa8b376132ce5a,
-            mid_value_19fa8b376132ce5a,
+            mid_init$_42c0b505a2daeafd,
+            mid_acceleration_8954761face5e1a7,
+            mid_acceleration_b42ac4b5bfb80fab,
+            mid_dependsOnPositionOnly_b108b35ef48e27bd,
+            mid_getMu_dff5885c2c873297,
+            mid_getMu_bf1d7732f1acb697,
+            mid_getParametersDrivers_2afa36052df4765d,
+            mid_getTideSystem_c68abf1ca1fc273e,
+            mid_gradient_6677da9044a1cae1,
+            mid_gradient_0f32a827e3dcb556,
+            mid_nonCentralPart_7f2dc7ef92d08c2a,
+            mid_value_7f2dc7ef92d08c2a,
             max_mid
           };
 
@@ -95,8 +95,8 @@ namespace org {
           jdouble getMu(const ::org::orekit::time::AbsoluteDate &) const;
           ::java::util::List getParametersDrivers() const;
           ::org::orekit::forces::gravity::potential::TideSystem getTideSystem() const;
-          JArray< jdouble > gradient(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, jdouble) const;
           JArray< ::org::hipparchus::CalculusFieldElement > gradient(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::hipparchus::CalculusFieldElement &) const;
+          JArray< jdouble > gradient(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, jdouble) const;
           jdouble nonCentralPart(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, jdouble) const;
           jdouble value(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, jdouble) const;
         };

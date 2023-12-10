@@ -9,11 +9,11 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace cdm {
-            class CdmHeader;
-            class CdmSegment;
             class CdmRelativeMetadata;
-            class CdmMetadata;
+            class CdmSegment;
             class CdmData;
+            class CdmMetadata;
+            class CdmHeader;
           }
           namespace odm {
             class UserDefined;
@@ -50,13 +50,13 @@ namespace org {
             class Cdm : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
              public:
               enum {
-                mid_init$_a34e1d2d5ade684b,
-                mid_getDataObject1_336753ea3523a1cf,
-                mid_getDataObject2_336753ea3523a1cf,
-                mid_getMetadataObject1_bced7a5677927e3c,
-                mid_getMetadataObject2_bced7a5677927e3c,
-                mid_getRelativeMetadata_f8673e4c3b4aceb6,
-                mid_getUserDefinedParameters_dc0ba09fd1c52b52,
+                mid_init$_6798ac6e0dc04508,
+                mid_getDataObject1_0a2387782d958a52,
+                mid_getDataObject2_0a2387782d958a52,
+                mid_getMetadataObject1_ed7f3d346f5dfc32,
+                mid_getMetadataObject2_ed7f3d346f5dfc32,
+                mid_getRelativeMetadata_d2d96fe58613ae06,
+                mid_getUserDefinedParameters_8d3e5fabdafb8483,
                 max_mid
               };
 

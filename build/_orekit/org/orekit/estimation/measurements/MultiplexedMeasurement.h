@@ -9,8 +9,8 @@ namespace org {
       namespace measurements {
         class EstimatedMeasurement;
         class EstimatedMeasurementBase;
-        class MultiplexedMeasurement;
         class ObservedMeasurement;
+        class MultiplexedMeasurement;
       }
     }
   }
@@ -35,12 +35,12 @@ namespace org {
         class MultiplexedMeasurement : public ::org::orekit::estimation::measurements::AbstractMeasurement {
          public:
           enum {
-            mid_init$_65de9727799c5641,
-            mid_getEstimatedMeasurements_a6156df500549a58,
-            mid_getEstimatedMeasurementsWithoutDerivatives_a6156df500549a58,
-            mid_getMeasurements_a6156df500549a58,
-            mid_theoreticalEvaluationWithoutDerivatives_c188a3b50efa39a5,
-            mid_theoreticalEvaluation_9d5a7270ffb14a9e,
+            mid_init$_de3e021e7266b71e,
+            mid_getEstimatedMeasurements_2afa36052df4765d,
+            mid_getEstimatedMeasurementsWithoutDerivatives_2afa36052df4765d,
+            mid_getMeasurements_2afa36052df4765d,
+            mid_theoreticalEvaluationWithoutDerivatives_e32883476b3d9b22,
+            mid_theoreticalEvaluation_27ef5cc84ad0852b,
             max_mid
           };
 

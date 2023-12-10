@@ -23,9 +23,9 @@ namespace org {
         class FieldButcherArrayProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_getA_dd8485a0eb2e2903,
-            mid_getB_01c7d10e96d5cf94,
-            mid_getC_01c7d10e96d5cf94,
+            mid_getA_1b3ae884bec31e6d,
+            mid_getB_226a0b2040b1d2e1,
+            mid_getC_226a0b2040b1d2e1,
             max_mid
           };
 

@@ -3,36 +3,36 @@
 
 #include "org/hipparchus/geometry/VectorFormat.h"
 
-namespace java {
-  namespace lang {
-    class StringBuffer;
-    class Class;
-    class String;
-  }
-  namespace util {
-    class Locale;
-  }
-  namespace text {
-    class ParsePosition;
-    class FieldPosition;
-    class NumberFormat;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace geometry {
+      class Vector;
       namespace euclidean {
         namespace twod {
           class Vector2DFormat;
-          class Vector2D;
           class Euclidean2D;
+          class Vector2D;
         }
       }
-      class Vector;
     }
     namespace exception {
       class MathIllegalStateException;
     }
+  }
+}
+namespace java {
+  namespace text {
+    class NumberFormat;
+    class ParsePosition;
+    class FieldPosition;
+  }
+  namespace util {
+    class Locale;
+  }
+  namespace lang {
+    class StringBuffer;
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -46,15 +46,15 @@ namespace org {
           class Vector2DFormat : public ::org::hipparchus::geometry::VectorFormat {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_init$_695a782f9c7823f6,
-              mid_init$_de8316969b81209c,
-              mid_init$_3420ce131d6f9e7d,
-              mid_format_d63c028b54a2ec6c,
-              mid_getVector2DFormat_ccb08435455f7a35,
-              mid_getVector2DFormat_6bf2e0b65b9c1779,
-              mid_parse_0494dc1a6378cd42,
-              mid_parse_1fed149f6d69ecad,
+              mid_init$_0fa09c18fee449d5,
+              mid_init$_256f36a22c0d0f55,
+              mid_init$_3c57e287341c9288,
+              mid_init$_4ed7d7dd28d1bddd,
+              mid_format_84b38396c796d436,
+              mid_getVector2DFormat_1f9518acb9b68e05,
+              mid_getVector2DFormat_7fa127a67e45ef7a,
+              mid_parse_f1dbee0de937ae53,
+              mid_parse_99419362d0089fc6,
               max_mid
             };
 

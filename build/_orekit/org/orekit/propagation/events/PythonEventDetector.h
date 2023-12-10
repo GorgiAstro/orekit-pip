@@ -7,10 +7,10 @@ namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
+        class EventDetector;
         namespace handlers {
           class EventHandler;
         }
-        class EventDetector;
         class AdaptableInterval;
       }
       class SpacecraftState;
@@ -36,17 +36,17 @@ namespace org {
         class PythonEventDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_finalize_7ae3461a92a43152,
-            mid_g_66a2f071e6ed0c06,
-            mid_getHandler_d450688ba8c3949b,
-            mid_getMaxCheckInterval_5b5c68574977d620,
-            mid_getMaxIterationCount_f2f64475e4580546,
-            mid_getThreshold_456d9a2f64d6b28d,
-            mid_init_3d13474d79f5e7bc,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
+            mid_init$_0fa09c18fee449d5,
+            mid_finalize_0fa09c18fee449d5,
+            mid_g_432f3d328c15ec82,
+            mid_getHandler_551c102e543538fd,
+            mid_getMaxCheckInterval_35e5947e4e8f061c,
+            mid_getMaxIterationCount_570ce0828f81a2c1,
+            mid_getThreshold_dff5885c2c873297,
+            mid_init_826b4eda94da4e78,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
             max_mid
           };
 

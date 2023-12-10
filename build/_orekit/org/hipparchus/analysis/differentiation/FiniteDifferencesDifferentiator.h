@@ -8,14 +8,14 @@ namespace org {
     namespace analysis {
       namespace differentiation {
         class UnivariateMatrixFunctionDifferentiator;
-        class UnivariateFunctionDifferentiator;
         class UnivariateDifferentiableVectorFunction;
-        class UnivariateDifferentiableMatrixFunction;
-        class UnivariateVectorFunctionDifferentiator;
         class UnivariateDifferentiableFunction;
+        class UnivariateVectorFunctionDifferentiator;
+        class UnivariateFunctionDifferentiator;
+        class UnivariateDifferentiableMatrixFunction;
       }
-      class UnivariateFunction;
       class UnivariateMatrixFunction;
+      class UnivariateFunction;
       class UnivariateVectorFunction;
     }
     namespace exception {
@@ -41,13 +41,13 @@ namespace org {
         class FiniteDifferencesDifferentiator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_987a5fb872043b12,
-            mid_init$_d3d0b69fc0b5db95,
-            mid_differentiate_39c5729c9c0cff99,
-            mid_differentiate_bfe4c2e1bcc56b2f,
-            mid_differentiate_b23ddbdee3e84f5e,
-            mid_getNbPoints_f2f64475e4580546,
-            mid_getStepSize_456d9a2f64d6b28d,
+            mid_init$_bb79ca80d85d0a66,
+            mid_init$_2e15f46ce2042002,
+            mid_differentiate_0f70e8683b12e576,
+            mid_differentiate_b4b7f37a2e968eae,
+            mid_differentiate_e7252c9501d50f30,
+            mid_getNbPoints_570ce0828f81a2c1,
+            mid_getStepSize_dff5885c2c873297,
             max_mid
           };
 

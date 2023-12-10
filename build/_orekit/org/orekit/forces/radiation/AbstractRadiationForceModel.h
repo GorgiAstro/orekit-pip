@@ -5,10 +5,10 @@
 
 namespace java {
   namespace util {
-    class List;
     namespace stream {
       class Stream;
     }
+    class List;
   }
   namespace lang {
     class Class;
@@ -16,14 +16,14 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace bodies {
-      class OneAxisEllipsoid;
-    }
     namespace propagation {
       namespace events {
-        class FieldEventDetector;
         class EventDetector;
+        class FieldEventDetector;
       }
+    }
+    namespace bodies {
+      class OneAxisEllipsoid;
     }
     namespace forces {
       class ForceModel;
@@ -47,14 +47,14 @@ namespace org {
         class AbstractRadiationForceModel : public ::java::lang::Object {
          public:
           enum {
-            mid_addOccultingBody_6d5ed18afc9cd8ba,
-            mid_addOccultingBody_700c1b4c67b6f6c5,
-            mid_dependsOnPositionOnly_e470b6d9e0d979db,
-            mid_getEventDetectors_a68a17dd093f796d,
-            mid_getFieldEventDetectors_1328ddb491531a35,
-            mid_getOccultingBodies_a6156df500549a58,
-            mid_getGeneralEclipseAngles_515ed9c3398805a5,
-            mid_getGeneralEclipseAngles_92b5a46fc0bf8ab7,
+            mid_addOccultingBody_7c502fc601af6f77,
+            mid_addOccultingBody_d0e04e19947fa36d,
+            mid_dependsOnPositionOnly_b108b35ef48e27bd,
+            mid_getEventDetectors_20f6d2b462aaef4b,
+            mid_getFieldEventDetectors_361313cd1a9c693a,
+            mid_getOccultingBodies_2afa36052df4765d,
+            mid_getGeneralEclipseAngles_a99e86e606086333,
+            mid_getGeneralEclipseAngles_e68fcbb33aff0d20,
             max_mid
           };
 

@@ -17,28 +17,28 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace propagation {
-      class EphemerisGenerator;
-      namespace sampling {
-        class StepHandlerMultiplexer;
-      }
-      class AdditionalStateProvider;
-      class SpacecraftState;
-      class BoundedPropagator;
       namespace events {
         class EventDetector;
       }
+      class EphemerisGenerator;
+      class AdditionalStateProvider;
+      namespace sampling {
+        class StepHandlerMultiplexer;
+      }
+      class BoundedPropagator;
+      class SpacecraftState;
     }
     namespace frames {
       class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace attitudes {
       class AttitudeProvider;
     }
     namespace utils {
       class TimeStampedPVCoordinates;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -51,30 +51,30 @@ namespace org {
       class PythonBoundedPropagator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_addAdditionalStateProvider_7dfba37c14ed8f7a,
-          mid_addEventDetector_8ef30a2ad40caceb,
-          mid_clearEventsDetectors_7ae3461a92a43152,
-          mid_finalize_7ae3461a92a43152,
-          mid_getAdditionalStateProviders_a6156df500549a58,
-          mid_getAttitudeProvider_5cce95036ae870ba,
-          mid_getEphemerisGenerator_dd0e78d2be8aaf34,
-          mid_getEventsDetectors_cfcfd130f9013e3e,
-          mid_getFrame_c8fe21bcdac65bf6,
-          mid_getInitialState_dd3e4a8d51055f1f,
-          mid_getManagedAdditionalStates_0f62ccf08eef5924,
-          mid_getMaxDate_aaa854c403487cf3,
-          mid_getMinDate_aaa854c403487cf3,
-          mid_getMultiplexer_a44bf32d2051f26b,
-          mid_getPVCoordinates_20557c175f7cd899,
-          mid_isAdditionalStateManaged_6b161f495ea569b8,
-          mid_propagate_889031abe87f3b14,
-          mid_propagate_afc18c81ed763a96,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
-          mid_resetInitialState_2b88003f931f70a7,
-          mid_setAttitudeProvider_8109c1a27d4471d3,
+          mid_init$_0fa09c18fee449d5,
+          mid_addAdditionalStateProvider_81bc0d009507f0f4,
+          mid_addEventDetector_efb7003d866d4523,
+          mid_clearEventsDetectors_0fa09c18fee449d5,
+          mid_finalize_0fa09c18fee449d5,
+          mid_getAdditionalStateProviders_2afa36052df4765d,
+          mid_getAttitudeProvider_a904f3d015a354a0,
+          mid_getEphemerisGenerator_18d439b26e70ccd0,
+          mid_getEventsDetectors_37528d110cff6b74,
+          mid_getFrame_b86f9f61d97a7244,
+          mid_getInitialState_c6311115fea01a34,
+          mid_getManagedAdditionalStates_692f4257baa8d3c3,
+          mid_getMaxDate_85703d13e302437e,
+          mid_getMinDate_85703d13e302437e,
+          mid_getMultiplexer_808e9f10a9e4927b,
+          mid_getPVCoordinates_cfeec55f7c63ec64,
+          mid_isAdditionalStateManaged_7edad2c2f64f4d68,
+          mid_propagate_fbff2ff5554d95e1,
+          mid_propagate_a69ef29c3ea1e1fa,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
+          mid_resetInitialState_0ee5c56004643a2e,
+          mid_setAttitudeProvider_3cff7c75ea06698c,
           max_mid
         };
 

@@ -4,6 +4,15 @@
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class RotationOrder;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace files {
       namespace ccsds {
@@ -11,15 +20,6 @@ namespace org {
           namespace adm {
             class AttitudeEndpoints;
           }
-        }
-      }
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class RotationOrder;
         }
       }
     }
@@ -43,23 +43,23 @@ namespace org {
               class Euler : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_7ae3461a92a43152,
-                  mid_getEndpoints_160aadf35481229b,
-                  mid_getEulerRotSeq_425debac8563c8f4,
-                  mid_getRotationAngles_7cdc325af0834901,
-                  mid_getRotationRates_7cdc325af0834901,
-                  mid_hasAngles_e470b6d9e0d979db,
-                  mid_hasRates_e470b6d9e0d979db,
-                  mid_isSpacecraftBodyRate_e470b6d9e0d979db,
-                  mid_rateFrameIsA_e470b6d9e0d979db,
-                  mid_setEulerRotSeq_3c290f1c2c08ff0e,
-                  mid_setInRotationAngles_50a2e0b139e80a58,
-                  mid_setIndexedRotationAngle_987a5fb872043b12,
-                  mid_setIndexedRotationRate_987a5fb872043b12,
-                  mid_setLabeledRotationAngle_bab298509bfd5390,
-                  mid_setLabeledRotationRate_bab298509bfd5390,
-                  mid_setRateFrameIsA_50a2e0b139e80a58,
-                  mid_validate_77e0f9a1f260e2e5,
+                  mid_init$_0fa09c18fee449d5,
+                  mid_getEndpoints_35bd4909c56b6915,
+                  mid_getEulerRotSeq_5aea028785008a06,
+                  mid_getRotationAngles_60c7040667a7dc5c,
+                  mid_getRotationRates_60c7040667a7dc5c,
+                  mid_hasAngles_b108b35ef48e27bd,
+                  mid_hasRates_b108b35ef48e27bd,
+                  mid_isSpacecraftBodyRate_b108b35ef48e27bd,
+                  mid_rateFrameIsA_b108b35ef48e27bd,
+                  mid_setEulerRotSeq_a908138988eb2a50,
+                  mid_setInRotationAngles_bd04c9335fb9e4cf,
+                  mid_setIndexedRotationAngle_bb79ca80d85d0a66,
+                  mid_setIndexedRotationRate_bb79ca80d85d0a66,
+                  mid_setLabeledRotationAngle_9d67fa439cabbd44,
+                  mid_setLabeledRotationRate_9d67fa439cabbd44,
+                  mid_setRateFrameIsA_bd04c9335fb9e4cf,
+                  mid_validate_17db3a65980d3441,
                   max_mid
                 };
 

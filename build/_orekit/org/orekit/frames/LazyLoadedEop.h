@@ -3,24 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace time {
-      class TimeScales;
-      class TimeScale;
-    }
-    namespace data {
-      class DataProvidersManager;
-    }
-    namespace utils {
-      class IERSConventions;
-    }
-    namespace frames {
-      class EopHistoryLoader;
-      class EOPHistory;
-    }
-  }
-}
 namespace java {
   namespace util {
     namespace function {
@@ -32,6 +14,24 @@ namespace java {
     class String;
   }
 }
+namespace org {
+  namespace orekit {
+    namespace frames {
+      class EOPHistory;
+      class EopHistoryLoader;
+    }
+    namespace utils {
+      class IERSConventions;
+    }
+    namespace data {
+      class DataProvidersManager;
+    }
+    namespace time {
+      class TimeScales;
+      class TimeScale;
+    }
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -41,15 +41,15 @@ namespace org {
       class LazyLoadedEop : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_92cedf0c8913c23b,
-          mid_addDefaultEOP1980HistoryLoaders_76cf8f9004d5e7a3,
-          mid_addDefaultEOP2000HistoryLoaders_76cf8f9004d5e7a3,
-          mid_addEOPHistoryLoader_e1571b88fce42eed,
-          mid_clearEOPHistoryLoaders_7ae3461a92a43152,
-          mid_getDataProvidersManager_e1fc6728282cfec7,
-          mid_getEOPHistory_7e3b1b9c6a8f4b4a,
-          mid_setEOPContinuityThreshold_77e0f9a1f260e2e5,
-          mid_setInterpolationDegree_0a2a1ac2721c0336,
+          mid_init$_2ce23204880a56c8,
+          mid_addDefaultEOP1980HistoryLoaders_ff1d8967dbd30cfb,
+          mid_addDefaultEOP2000HistoryLoaders_ff1d8967dbd30cfb,
+          mid_addEOPHistoryLoader_0f554c95baa6eac9,
+          mid_clearEOPHistoryLoaders_0fa09c18fee449d5,
+          mid_getDataProvidersManager_69fa4d0abe16d651,
+          mid_getEOPHistory_4f61b29504ebc31d,
+          mid_setEOPContinuityThreshold_17db3a65980d3441,
+          mid_setInterpolationDegree_99803b0791f320ff,
           max_mid
         };
 

@@ -3,29 +3,8 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class CharSequence;
-    class Throwable;
-    class Double;
-    class Enum;
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace utils {
-      namespace units {
-        class Unit;
-      }
-    }
     namespace files {
       namespace ccsds {
         namespace utils {
@@ -39,9 +18,30 @@ namespace org {
         }
       }
     }
+    namespace utils {
+      namespace units {
+        class Unit;
+      }
+    }
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class CharSequence;
+    class Throwable;
+    class Double;
+    class Enum;
+    class Class;
+    class String;
+  }
+  namespace io {
+    class IOException;
   }
 }
 template<class T> class JArray;
@@ -56,36 +56,36 @@ namespace org {
             class PythonGenerator : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_close_7ae3461a92a43152,
-                mid_dateToCalendarString_e9166ff038580198,
-                mid_dateToString_e9166ff038580198,
-                mid_dateToString_5f1e8067dcf848fb,
-                mid_doubleToString_085bbc49599fa163,
-                mid_endMessage_e939c6558ae8d313,
-                mid_enterSection_e939c6558ae8d313,
-                mid_exitSection_0090f7797e403f43,
-                mid_finalize_7ae3461a92a43152,
-                mid_getFormat_b51f613f857a5e84,
-                mid_getOutputName_0090f7797e403f43,
-                mid_newLine_7ae3461a92a43152,
-                mid_pythonDecRef_7ae3461a92a43152,
-                mid_pythonExtension_a27fc9afd27e559d,
-                mid_pythonExtension_fefb08975c10f0a1,
-                mid_siToCcsdsName_43625fc1c3d86afe,
-                mid_startMessage_f7e4436e61826cb4,
-                mid_unitsListToString_7df61b71f083fbd6,
-                mid_writeComments_65de9727799c5641,
-                mid_writeEntry_c0315b1049063d00,
-                mid_writeEntry_8ef0818590b472f3,
-                mid_writeEntry_0a2534765e753ec9,
-                mid_writeEntry_a1392c2233da957d,
-                mid_writeEntry_fd7b1fd8e935b456,
-                mid_writeEntry_110375161a97bc67,
-                mid_writeEntry_b458f0406720c03f,
-                mid_writeEntry_20cfd7e2288cf462,
-                mid_writeRawData_be0046d7f7239695,
-                mid_writeRawData_d77f10dac029c69d,
+                mid_init$_0fa09c18fee449d5,
+                mid_close_0fa09c18fee449d5,
+                mid_dateToCalendarString_40338d1d67048bfb,
+                mid_dateToString_40338d1d67048bfb,
+                mid_dateToString_b3e3531a0f06efb9,
+                mid_doubleToString_e8f51f84167aafbd,
+                mid_endMessage_d0bc48d5b00dc40c,
+                mid_enterSection_d0bc48d5b00dc40c,
+                mid_exitSection_11b109bd155ca898,
+                mid_finalize_0fa09c18fee449d5,
+                mid_getFormat_66298c6188053be6,
+                mid_getOutputName_11b109bd155ca898,
+                mid_newLine_0fa09c18fee449d5,
+                mid_pythonDecRef_0fa09c18fee449d5,
+                mid_pythonExtension_492808a339bfa35f,
+                mid_pythonExtension_3a8e7649f31fdb20,
+                mid_siToCcsdsName_92807efd57acb082,
+                mid_startMessage_d68f2e10a4896937,
+                mid_unitsListToString_34ebc3df083d2284,
+                mid_writeComments_de3e021e7266b71e,
+                mid_writeEntry_ebeb70e5f85f1dc9,
+                mid_writeEntry_8e27d18ccaeb99ba,
+                mid_writeEntry_f12777dd1821e86a,
+                mid_writeEntry_d298f8af5ad811ef,
+                mid_writeEntry_b4657dba79ed747b,
+                mid_writeEntry_ddc5f91684d983c2,
+                mid_writeEntry_95abad989fa63d1a,
+                mid_writeEntry_182383f649d6a00c,
+                mid_writeRawData_636c0bbb96cab723,
+                mid_writeRawData_5e688138ffe60231,
                 max_mid
               };
 

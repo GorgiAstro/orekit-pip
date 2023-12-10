@@ -9,10 +9,10 @@ namespace org {
   }
   namespace orekit {
     namespace time {
+      class DateComponents;
+      class AbsoluteDate;
       class TimeComponents;
       class FieldAbsoluteDate;
-      class AbsoluteDate;
-      class DateComponents;
     }
   }
 }
@@ -31,16 +31,16 @@ namespace org {
       class TimeScale : public ::java::io::Serializable {
        public:
         enum {
-          mid_getLeap_e912d21057defe63,
-          mid_getLeap_7bc0fd76ee915b72,
-          mid_getName_0090f7797e403f43,
-          mid_insideLeap_ee2067c5768b6768,
-          mid_insideLeap_5997cf1e9de74766,
-          mid_minuteDuration_982c9f163875e1c9,
-          mid_minuteDuration_90583a249f651dc5,
-          mid_offsetFromTAI_e912d21057defe63,
-          mid_offsetFromTAI_7bc0fd76ee915b72,
-          mid_offsetToTAI_ceb6ee9e1c4bbdb1,
+          mid_getLeap_bf1d7732f1acb697,
+          mid_getLeap_2a5f05be83ff251d,
+          mid_getName_11b109bd155ca898,
+          mid_insideLeap_db6d81809797ddaa,
+          mid_insideLeap_6d572d97c8b0ec11,
+          mid_minuteDuration_17efd3c2ea0eaff7,
+          mid_minuteDuration_1e7a6890919ea8bb,
+          mid_offsetFromTAI_bf1d7732f1acb697,
+          mid_offsetFromTAI_2a5f05be83ff251d,
+          mid_offsetToTAI_56358b00ba005b52,
           max_mid
         };
 

@@ -6,9 +6,9 @@
 namespace org {
   namespace hipparchus {
     namespace linear {
+      class DecompositionSolver;
       class MatrixDecomposer;
       class RealMatrix;
-      class DecompositionSolver;
     }
   }
 }
@@ -26,8 +26,8 @@ namespace org {
       class SingularValueDecomposer : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_decompose_4196bcb69ccaa8a4,
+          mid_init$_0fa09c18fee449d5,
+          mid_decompose_6832546eac694082,
           max_mid
         };
 

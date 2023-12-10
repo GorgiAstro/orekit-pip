@@ -7,11 +7,11 @@ namespace org {
   namespace hipparchus {
     namespace geometry {
       namespace partitioning {
+        class SubHyperplane;
         class Region;
         class Region$Location;
-        class BSPTree;
-        class SubHyperplane;
         class BoundaryProjection;
+        class BSPTree;
       }
       class Point;
     }
@@ -32,20 +32,20 @@ namespace org {
         class Region : public ::java::lang::Object {
          public:
           enum {
-            mid_buildNew_c5623595bd3a3a84,
-            mid_checkPoint_153fabdeca87a5c4,
-            mid_contains_b25943163cbdf489,
-            mid_copySelf_9552c312bc09a7e5,
-            mid_getBarycenter_268784e47ab908a6,
-            mid_getBoundarySize_456d9a2f64d6b28d,
-            mid_getSize_456d9a2f64d6b28d,
-            mid_getTree_5bed1988454faad9,
-            mid_intersection_55f41ec2172e02d3,
-            mid_isEmpty_e470b6d9e0d979db,
-            mid_isEmpty_257992acaacae48a,
-            mid_isFull_e470b6d9e0d979db,
-            mid_isFull_257992acaacae48a,
-            mid_projectToBoundary_a3932f0f8ec705f8,
+            mid_buildNew_017f430783bf20c2,
+            mid_checkPoint_50307f10d8b0681b,
+            mid_contains_699b13c84f9f9ff1,
+            mid_copySelf_b72f8ac992e26582,
+            mid_getBarycenter_e164db6eb4ec1f00,
+            mid_getBoundarySize_dff5885c2c873297,
+            mid_getSize_dff5885c2c873297,
+            mid_getTree_4457617bb6ed0c9d,
+            mid_intersection_208a723630302f7b,
+            mid_isEmpty_b108b35ef48e27bd,
+            mid_isEmpty_06c832607c1f3329,
+            mid_isFull_b108b35ef48e27bd,
+            mid_isFull_06c832607c1f3329,
+            mid_projectToBoundary_e9baadaaf6c2e7eb,
             max_mid
           };
 

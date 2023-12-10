@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class RealVector;
       class RealMatrix;
+      class RealVector;
     }
   }
 }
@@ -26,15 +26,15 @@ namespace org {
         class ProcessEstimate : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_6fdc3f317620caee,
-            mid_init$_3ae1aa6ea43ccad8,
-            mid_getCovariance_7116bbecdd8ceb21,
-            mid_getInnovationCovariance_7116bbecdd8ceb21,
-            mid_getKalmanGain_7116bbecdd8ceb21,
-            mid_getMeasurementJacobian_7116bbecdd8ceb21,
-            mid_getState_6d9adf1d5b463928,
-            mid_getStateTransitionMatrix_7116bbecdd8ceb21,
-            mid_getTime_456d9a2f64d6b28d,
+            mid_init$_d905195db03d249f,
+            mid_init$_b5a6dee5d269e523,
+            mid_getCovariance_688b496048ff947b,
+            mid_getInnovationCovariance_688b496048ff947b,
+            mid_getKalmanGain_688b496048ff947b,
+            mid_getMeasurementJacobian_688b496048ff947b,
+            mid_getState_aab4fbf77867daa8,
+            mid_getStateTransitionMatrix_688b496048ff947b,
+            mid_getTime_dff5885c2c873297,
             max_mid
           };
 

@@ -4,26 +4,26 @@
 #include "org/orekit/propagation/events/FieldAbstractDetector.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    class Field;
+  }
   namespace orekit {
+    namespace frames {
+      class TopocentricFrame;
+    }
     namespace propagation {
       namespace events {
         class FieldElevationDetector;
       }
       class FieldSpacecraftState;
     }
-    namespace frames {
-      class TopocentricFrame;
+    namespace models {
+      class AtmosphericRefractionModel;
     }
     namespace utils {
       class ElevationMask;
     }
-    namespace models {
-      class AtmosphericRefractionModel;
-    }
-  }
-  namespace hipparchus {
-    class Field;
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -41,17 +41,17 @@ namespace org {
         class FieldElevationDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_6ca81eaf03a89fb6,
-            mid_init$_3630f374a349bed6,
-            mid_g_cc79c2733879de35,
-            mid_getElevationMask_5d6f826de9792bc8,
-            mid_getMinElevation_456d9a2f64d6b28d,
-            mid_getRefractionModel_92dfb2e76d975897,
-            mid_getTopocentricFrame_52fc31c455206160,
-            mid_withConstantElevation_4f3bd3b357cdeb54,
-            mid_withElevationMask_576450d53fa897db,
-            mid_withRefraction_bad8e6d8da75ecea,
-            mid_create_b73e50e886d5c36f,
+            mid_init$_3d7271a8ea288af2,
+            mid_init$_28fe72372b8ccb78,
+            mid_g_41a008afe53da855,
+            mid_getElevationMask_a2b53d9e5ddb8a2d,
+            mid_getMinElevation_dff5885c2c873297,
+            mid_getRefractionModel_d9410499a2583f14,
+            mid_getTopocentricFrame_e17d4157ae504252,
+            mid_withConstantElevation_d52caa8299348415,
+            mid_withElevationMask_3cb4267e55a79185,
+            mid_withRefraction_81ee95c06209bf51,
+            mid_create_3709f95b71d31737,
             max_mid
           };
 

@@ -3,11 +3,6 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -17,6 +12,11 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,18 +31,18 @@ namespace org {
             class SpacecraftParameters : public ::org::orekit::files::ccsds::section::CommentsContainer {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_getDragArea_456d9a2f64d6b28d,
-                mid_getDragCoeff_456d9a2f64d6b28d,
-                mid_getMass_456d9a2f64d6b28d,
-                mid_getSolarRadArea_456d9a2f64d6b28d,
-                mid_getSolarRadCoeff_456d9a2f64d6b28d,
-                mid_setDragArea_77e0f9a1f260e2e5,
-                mid_setDragCoeff_77e0f9a1f260e2e5,
-                mid_setMass_77e0f9a1f260e2e5,
-                mid_setSolarRadArea_77e0f9a1f260e2e5,
-                mid_setSolarRadCoeff_77e0f9a1f260e2e5,
-                mid_validate_77e0f9a1f260e2e5,
+                mid_init$_0fa09c18fee449d5,
+                mid_getDragArea_dff5885c2c873297,
+                mid_getDragCoeff_dff5885c2c873297,
+                mid_getMass_dff5885c2c873297,
+                mid_getSolarRadArea_dff5885c2c873297,
+                mid_getSolarRadCoeff_dff5885c2c873297,
+                mid_setDragArea_17db3a65980d3441,
+                mid_setDragCoeff_17db3a65980d3441,
+                mid_setMass_17db3a65980d3441,
+                mid_setSolarRadArea_17db3a65980d3441,
+                mid_setSolarRadCoeff_17db3a65980d3441,
+                mid_validate_17db3a65980d3441,
                 max_mid
               };
 

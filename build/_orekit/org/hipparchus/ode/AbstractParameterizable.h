@@ -14,11 +14,11 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace ode {
-      class Parameterizable;
-    }
     namespace exception {
       class MathIllegalArgumentException;
+    }
+    namespace ode {
+      class Parameterizable;
     }
   }
 }
@@ -31,9 +31,9 @@ namespace org {
       class AbstractParameterizable : public ::java::lang::Object {
        public:
         enum {
-          mid_complainIfNotSupported_e939c6558ae8d313,
-          mid_getParametersNames_a6156df500549a58,
-          mid_isSupported_6b161f495ea569b8,
+          mid_complainIfNotSupported_d0bc48d5b00dc40c,
+          mid_getParametersNames_2afa36052df4765d,
+          mid_isSupported_7edad2c2f64f4d68,
           max_mid
         };
 

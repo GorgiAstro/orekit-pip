@@ -7,27 +7,28 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class ObservableSatellite;
         class EstimatedMeasurement;
         class EstimatedMeasurementBase;
         class ObservedMeasurement;
         class EstimationModifier;
+        class ObservableSatellite;
       }
     }
     namespace utils {
-      class TimeStampedFieldPVCoordinates;
       class ParameterDriver;
       class TimeStampedPVCoordinates;
+      class TimeStampedFieldPVCoordinates;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
     namespace propagation {
       class SpacecraftState;
     }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
   }
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace analysis {
       namespace differentiation {
         class Gradient;
@@ -36,12 +37,11 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -62,25 +62,25 @@ namespace org {
         class AbstractMeasurement : public ::java::lang::Object {
          public:
           enum {
-            mid_addModifier_fc816f44bfa3d437,
-            mid_estimate_9d5a7270ffb14a9e,
-            mid_estimateWithoutDerivatives_c188a3b50efa39a5,
-            mid_getBaseWeight_7cdc325af0834901,
-            mid_getCoordinates_810e0038c590ccfe,
-            mid_getDate_aaa854c403487cf3,
-            mid_getDimension_f2f64475e4580546,
-            mid_getModifiers_a6156df500549a58,
-            mid_getObservedValue_7cdc325af0834901,
-            mid_getParametersDrivers_a6156df500549a58,
-            mid_getSatellites_a6156df500549a58,
-            mid_getTheoreticalStandardDeviation_7cdc325af0834901,
-            mid_isEnabled_e470b6d9e0d979db,
-            mid_setEnabled_50a2e0b139e80a58,
-            mid_signalTimeOfFlight_3034b58dad23b2f6,
-            mid_signalTimeOfFlight_b1b80f2b159999ff,
-            mid_theoreticalEvaluationWithoutDerivatives_c188a3b50efa39a5,
-            mid_theoreticalEvaluation_9d5a7270ffb14a9e,
-            mid_addParameterDriver_a4c33e1e91b3ca8e,
+            mid_addModifier_baf3397e6fffc21d,
+            mid_estimate_27ef5cc84ad0852b,
+            mid_estimateWithoutDerivatives_e32883476b3d9b22,
+            mid_getBaseWeight_60c7040667a7dc5c,
+            mid_getCoordinates_d3c60b51295c1a91,
+            mid_getDate_85703d13e302437e,
+            mid_getDimension_570ce0828f81a2c1,
+            mid_getModifiers_2afa36052df4765d,
+            mid_getObservedValue_60c7040667a7dc5c,
+            mid_getParametersDrivers_2afa36052df4765d,
+            mid_getSatellites_2afa36052df4765d,
+            mid_getTheoreticalStandardDeviation_60c7040667a7dc5c,
+            mid_isEnabled_b108b35ef48e27bd,
+            mid_setEnabled_bd04c9335fb9e4cf,
+            mid_signalTimeOfFlight_b8a7d6bc618d5fd6,
+            mid_signalTimeOfFlight_1fa9729545cf47a9,
+            mid_theoreticalEvaluationWithoutDerivatives_e32883476b3d9b22,
+            mid_theoreticalEvaluation_27ef5cc84ad0852b,
+            mid_addParameterDriver_01a5c4b8230d6f04,
             max_mid
           };
 

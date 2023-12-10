@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace ode {
       namespace events {
         class Action;
       }
     }
-    class CalculusFieldElement;
   }
   namespace orekit {
     namespace propagation {
@@ -40,8 +40,8 @@ namespace org {
           class FieldStopOnIncreasing : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_eventOccurred_9bc9ae10f590e312,
+              mid_init$_0fa09c18fee449d5,
+              mid_eventOccurred_fc49a7ff6cb062a2,
               max_mid
             };
 

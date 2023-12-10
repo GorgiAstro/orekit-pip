@@ -3,15 +3,22 @@
 
 #include "org/orekit/propagation/semianalytical/dsst/forces/AbstractGaussianContribution.h"
 
-namespace org {
-  namespace hipparchus {
-    class Field;
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
   }
+  namespace lang {
+    class Class;
+  }
+}
+namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
-        class FieldEventDetector;
         class EventDetector;
+        class FieldEventDetector;
       }
     }
     namespace forces {
@@ -28,15 +35,8 @@ namespace org {
       }
     }
   }
-}
-namespace java {
-  namespace util {
-    namespace stream {
-      class Stream;
-    }
-  }
-  namespace lang {
-    class Class;
+  namespace hipparchus {
+    class Field;
   }
 }
 template<class T> class JArray;
@@ -51,18 +51,18 @@ namespace org {
             class DSSTAtmosphericDrag : public ::org::orekit::propagation::semianalytical::dsst::forces::AbstractGaussianContribution {
              public:
               enum {
-                mid_init$_6cee8d78b22b267b,
-                mid_init$_925428893a7d0d7a,
-                mid_init$_4ee16ea79af9314b,
-                mid_getAtmosphere_97b68f99073ea89d,
-                mid_getDrag_013b7a196580bfdb,
-                mid_getEventDetectors_a68a17dd093f796d,
-                mid_getFieldEventDetectors_1328ddb491531a35,
-                mid_getRbar_456d9a2f64d6b28d,
-                mid_getSpacecraft_e36253101b741e3a,
-                mid_getParametersDriversWithoutMu_a6156df500549a58,
-                mid_getLLimits_4ece4b82b4394674,
-                mid_getLLimits_f53f254b7878e0dd,
+                mid_init$_8cf2088f47a57337,
+                mid_init$_93fb7884d0731876,
+                mid_init$_fbe0d84084597736,
+                mid_getAtmosphere_5eed92b432f371c2,
+                mid_getDrag_ab37bc06056a6237,
+                mid_getEventDetectors_20f6d2b462aaef4b,
+                mid_getFieldEventDetectors_361313cd1a9c693a,
+                mid_getRbar_dff5885c2c873297,
+                mid_getSpacecraft_2df1d9602f270c8d,
+                mid_getLLimits_04690aaa2b6db52c,
+                mid_getLLimits_7442885516ff2293,
+                mid_getParametersDriversWithoutMu_2afa36052df4765d,
                 max_mid
               };
 

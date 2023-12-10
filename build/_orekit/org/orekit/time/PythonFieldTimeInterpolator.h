@@ -3,29 +3,29 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-    class Collection;
-    namespace stream {
-      class Stream;
-    }
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
-      class FieldTimeStamped;
       class FieldTimeInterpolator;
+      class FieldTimeStamped;
       class FieldAbsoluteDate;
     }
   }
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+    class List;
+    class Collection;
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -37,16 +37,16 @@ namespace org {
       class PythonFieldTimeInterpolator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_finalize_7ae3461a92a43152,
-          mid_getExtrapolationThreshold_456d9a2f64d6b28d,
-          mid_getNbInterpolationPoints_f2f64475e4580546,
-          mid_getSubInterpolators_a6156df500549a58,
-          mid_interpolate_e5d5b5a7ee2b02b5,
-          mid_interpolate_a0507ed7c568b47c,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
+          mid_init$_0fa09c18fee449d5,
+          mid_finalize_0fa09c18fee449d5,
+          mid_getExtrapolationThreshold_dff5885c2c873297,
+          mid_getNbInterpolationPoints_570ce0828f81a2c1,
+          mid_getSubInterpolators_2afa36052df4765d,
+          mid_interpolate_66eecc2273162e9b,
+          mid_interpolate_ba43d53651adbb8f,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
           max_mid
         };
 

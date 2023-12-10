@@ -15,8 +15,8 @@ namespace java {
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class LocalizedCoreFormats;
       class Localizable;
+      class LocalizedCoreFormats;
     }
   }
 }
@@ -29,10 +29,10 @@ namespace org {
       class LocalizedCoreFormats : public ::java::lang::Enum {
        public:
         enum {
-          mid_getLocalizedString_bab3be9b232acc5a,
-          mid_getSourceString_0090f7797e403f43,
-          mid_valueOf_22c27263cea306a7,
-          mid_values_48b05f789e784309,
+          mid_getLocalizedString_3cd873bfb132c4fd,
+          mid_getSourceString_11b109bd155ca898,
+          mid_valueOf_566d4571f998d93d,
+          mid_values_4255748a3b687039,
           max_mid
         };
 

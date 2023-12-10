@@ -3,21 +3,6 @@
 
 #include "org/orekit/forces/maneuvers/trigger/IntervalEventTrigger.h"
 
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace events {
-        class ParameterDrivenDateIntervalDetector;
-      }
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -25,6 +10,21 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace propagation {
+      namespace events {
+        class ParameterDrivenDateIntervalDetector;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -38,14 +38,14 @@ namespace org {
           class DateBasedManeuverTriggers : public ::org::orekit::forces::maneuvers::trigger::IntervalEventTrigger {
            public:
             enum {
-              mid_init$_076f09dda44638d8,
-              mid_init$_44d04d6a1ac9a60f,
-              mid_getDuration_456d9a2f64d6b28d,
-              mid_getEndDate_aaa854c403487cf3,
-              mid_getName_0090f7797e403f43,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_getStartDate_aaa854c403487cf3,
-              mid_convertIntervalDetector_cd5483ed245bd65f,
+              mid_init$_fdc72bfdba154d74,
+              mid_init$_7d29df8e1e987e68,
+              mid_getDuration_dff5885c2c873297,
+              mid_getEndDate_85703d13e302437e,
+              mid_getName_11b109bd155ca898,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_getStartDate_85703d13e302437e,
+              mid_convertIntervalDetector_6d5643096d51e9e8,
               max_mid
             };
 

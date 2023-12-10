@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
+    }
     namespace stat {
       namespace correlation {
         class Covariance;
       }
-    }
-    namespace linear {
-      class RealMatrix;
     }
   }
 }
@@ -30,18 +30,18 @@ namespace org {
         class PearsonsCorrelation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_init$_d660c7a97bf55272,
-            mid_init$_a947224c4f5ea4e8,
-            mid_init$_30aa151fd03f3096,
-            mid_init$_f0469298b36930cd,
-            mid_computeCorrelationMatrix_d983e368b64b23a3,
-            mid_computeCorrelationMatrix_e00cd33aedcc5bd0,
-            mid_correlation_1ce76fb6ff382da9,
-            mid_covarianceToCorrelation_e00cd33aedcc5bd0,
-            mid_getCorrelationMatrix_7116bbecdd8ceb21,
-            mid_getCorrelationPValues_7116bbecdd8ceb21,
-            mid_getCorrelationStandardErrors_7116bbecdd8ceb21,
+            mid_init$_0fa09c18fee449d5,
+            mid_init$_a0befc7f3dc19e41,
+            mid_init$_6c5e3ad3650bb2d2,
+            mid_init$_c67473bd6cfaa69b,
+            mid_init$_108eaf33d77cb0c0,
+            mid_computeCorrelationMatrix_62c0bfb50b5dacc0,
+            mid_computeCorrelationMatrix_e9b72403ad502221,
+            mid_correlation_b561c6892e9976f8,
+            mid_covarianceToCorrelation_e9b72403ad502221,
+            mid_getCorrelationMatrix_688b496048ff947b,
+            mid_getCorrelationPValues_688b496048ff947b,
+            mid_getCorrelationStandardErrors_688b496048ff947b,
             max_mid
           };
 

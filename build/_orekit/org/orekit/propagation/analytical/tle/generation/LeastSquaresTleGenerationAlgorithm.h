@@ -5,24 +5,24 @@
 
 namespace org {
   namespace orekit {
+    namespace frames {
+      class Frame;
+    }
     namespace propagation {
       namespace analytical {
         namespace tle {
-          class FieldTLE;
-          class TLE;
           namespace generation {
             class TleGenerationAlgorithm;
           }
+          class FieldTLE;
+          class TLE;
         }
       }
-      class SpacecraftState;
       class FieldSpacecraftState;
+      class SpacecraftState;
     }
     namespace time {
       class TimeScale;
-    }
-    namespace frames {
-      class Frame;
     }
   }
 }
@@ -43,12 +43,12 @@ namespace org {
             class LeastSquaresTleGenerationAlgorithm : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_init$_0a2a1ac2721c0336,
-                mid_init$_960e3bcfe00e45ee,
-                mid_generate_70bd59273b78d702,
-                mid_generate_129bb6d4ed7ed841,
-                mid_getRms_456d9a2f64d6b28d,
+                mid_init$_0fa09c18fee449d5,
+                mid_init$_99803b0791f320ff,
+                mid_init$_f75877695db6cf2c,
+                mid_generate_bce44986dbf601d6,
+                mid_generate_34f09d826252bcec,
+                mid_getRms_dff5885c2c873297,
                 max_mid
               };
 

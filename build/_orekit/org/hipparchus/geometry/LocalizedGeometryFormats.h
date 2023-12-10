@@ -31,10 +31,10 @@ namespace org {
       class LocalizedGeometryFormats : public ::java::lang::Enum {
        public:
         enum {
-          mid_getLocalizedString_bab3be9b232acc5a,
-          mid_getSourceString_0090f7797e403f43,
-          mid_valueOf_e8e38b600cbe21d4,
-          mid_values_7e3ff576f1798244,
+          mid_getLocalizedString_3cd873bfb132c4fd,
+          mid_getSourceString_11b109bd155ca898,
+          mid_valueOf_44f0327de87a386a,
+          mid_values_dca0c9f9ad44e1a9,
           max_mid
         };
 

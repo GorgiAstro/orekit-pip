@@ -28,11 +28,11 @@ namespace org {
         }
       }
     }
-    namespace utils {
-      class TimeStampedPVCoordinates;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace utils {
+      class TimeStampedPVCoordinates;
     }
   }
 }
@@ -49,12 +49,12 @@ namespace org {
               class OcmSatelliteEphemeris : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_d0a6ea578b35c45e,
-                  mid_getId_0090f7797e403f43,
-                  mid_getMu_456d9a2f64d6b28d,
-                  mid_getSegments_a6156df500549a58,
-                  mid_getStart_aaa854c403487cf3,
-                  mid_getStop_aaa854c403487cf3,
+                  mid_init$_659ce81fb27f7feb,
+                  mid_getId_11b109bd155ca898,
+                  mid_getMu_dff5885c2c873297,
+                  mid_getSegments_2afa36052df4765d,
+                  mid_getStart_85703d13e302437e,
+                  mid_getStop_85703d13e302437e,
                   max_mid
                 };
 

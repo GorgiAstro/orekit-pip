@@ -31,13 +31,13 @@ namespace org {
       class RichardsonExpansion : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7c0e827f658a0910,
-          mid_computeHaloFirstGuess_981e0a2d070cf52a,
-          mid_computeLyapunovFirstGuess_fadd635b5f68d5a2,
-          mid_getCr3bpSystem_fd816a5468a737d0,
-          mid_getHaloOrbitalPeriod_0ba5fed9597b693e,
-          mid_getLagrangianPoint_08b2c4e71b2f5ee4,
-          mid_getLyapunovOrbitalPeriod_0ba5fed9597b693e,
+          mid_init$_9a1656cde9fcd0f5,
+          mid_computeHaloFirstGuess_dc4cc1c1b8c78d14,
+          mid_computeLyapunovFirstGuess_194490f1fa641a3f,
+          mid_getCr3bpSystem_5fad4f68327f5e3d,
+          mid_getHaloOrbitalPeriod_dcbc7ce2902fa136,
+          mid_getLagrangianPoint_8b95b3ac4a76acae,
+          mid_getLyapunovOrbitalPeriod_dcbc7ce2902fa136,
           max_mid
         };
 

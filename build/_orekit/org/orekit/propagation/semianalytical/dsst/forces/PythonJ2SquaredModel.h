@@ -4,6 +4,9 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace propagation {
       namespace semianalytical {
@@ -16,9 +19,6 @@ namespace org {
         }
       }
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -39,13 +39,13 @@ namespace org {
             class PythonJ2SquaredModel : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_computeMeanEquinoctialSecondOrderTerms_e32239e65f2894b6,
-                mid_computeMeanEquinoctialSecondOrderTerms_567add3558894c9e,
-                mid_finalize_7ae3461a92a43152,
-                mid_pythonDecRef_7ae3461a92a43152,
-                mid_pythonExtension_a27fc9afd27e559d,
-                mid_pythonExtension_fefb08975c10f0a1,
+                mid_init$_0fa09c18fee449d5,
+                mid_computeMeanEquinoctialSecondOrderTerms_03e8bdfa525c3779,
+                mid_computeMeanEquinoctialSecondOrderTerms_1a8550c5c09a5c40,
+                mid_finalize_0fa09c18fee449d5,
+                mid_pythonDecRef_0fa09c18fee449d5,
+                mid_pythonExtension_492808a339bfa35f,
+                mid_pythonExtension_3a8e7649f31fdb20,
                 max_mid
               };
 

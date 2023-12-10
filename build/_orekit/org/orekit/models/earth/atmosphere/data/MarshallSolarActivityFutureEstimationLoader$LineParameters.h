@@ -3,17 +3,17 @@
 
 #include "org/orekit/models/earth/atmosphere/data/AbstractSolarActivityDataLoader$LineParameters.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-    class Object;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class DateComponents;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
+    class Object;
   }
 }
 template<class T> class JArray;
@@ -28,12 +28,12 @@ namespace org {
             class MarshallSolarActivityFutureEstimationLoader$LineParameters : public ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityDataLoader$LineParameters {
              public:
               enum {
-                mid_compareTo_533614488ddee224,
-                mid_equals_229c87223f486349,
-                mid_getAp_456d9a2f64d6b28d,
-                mid_getF107_456d9a2f64d6b28d,
-                mid_getFileDate_d592c1a2c355eb35,
-                mid_hashCode_f2f64475e4580546,
+                mid_compareTo_b2c45b61abaea01a,
+                mid_equals_65c7d273e80d497a,
+                mid_getAp_dff5885c2c873297,
+                mid_getF107_dff5885c2c873297,
+                mid_getFileDate_06e6477664d37caa,
+                mid_hashCode_570ce0828f81a2c1,
                 max_mid
               };
 

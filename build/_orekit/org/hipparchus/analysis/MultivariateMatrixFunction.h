@@ -18,7 +18,7 @@ namespace org {
       class MultivariateMatrixFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_value_ac05399a8b81d1af,
+          mid_value_49e7a3c5d62c95c4,
           max_mid
         };
 

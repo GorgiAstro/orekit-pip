@@ -3,6 +3,31 @@
 
 #include "org/orekit/propagation/semianalytical/dsst/forces/AbstractGaussianContribution.h"
 
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
+  namespace orekit {
+    namespace propagation {
+      namespace semianalytical {
+        namespace dsst {
+          namespace utilities {
+            class AuxiliaryElements;
+            class FieldAuxiliaryElements;
+          }
+        }
+      }
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace forces {
+      class ForceModel;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -11,31 +36,6 @@ namespace java {
     class Throwable;
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace semianalytical {
-        namespace dsst {
-          namespace utilities {
-            class FieldAuxiliaryElements;
-            class AuxiliaryElements;
-          }
-        }
-      }
-      class SpacecraftState;
-      class FieldSpacecraftState;
-    }
-    namespace forces {
-      class ForceModel;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -50,14 +50,14 @@ namespace org {
             class PythonAbstractGaussianContribution : public ::org::orekit::propagation::semianalytical::dsst::forces::AbstractGaussianContribution {
              public:
               enum {
-                mid_init$_90bfc53454f91805,
-                mid_finalize_7ae3461a92a43152,
-                mid_getLLimits_4ece4b82b4394674,
-                mid_getLLimits_f53f254b7878e0dd,
-                mid_getParametersDriversWithoutMu_a6156df500549a58,
-                mid_pythonDecRef_7ae3461a92a43152,
-                mid_pythonExtension_a27fc9afd27e559d,
-                mid_pythonExtension_fefb08975c10f0a1,
+                mid_init$_678a339a3ee778c2,
+                mid_finalize_0fa09c18fee449d5,
+                mid_getLLimits_04690aaa2b6db52c,
+                mid_getLLimits_7442885516ff2293,
+                mid_getParametersDriversWithoutMu_2afa36052df4765d,
+                mid_pythonDecRef_0fa09c18fee449d5,
+                mid_pythonExtension_492808a339bfa35f,
+                mid_pythonExtension_3a8e7649f31fdb20,
                 max_mid
               };
 
@@ -75,8 +75,8 @@ namespace org {
               PythonAbstractGaussianContribution(const ::java::lang::String &, jdouble, const ::org::orekit::forces::ForceModel &, jdouble);
 
               void finalize() const;
-              JArray< ::org::hipparchus::CalculusFieldElement > getLLimits(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::FieldAuxiliaryElements &) const;
               JArray< jdouble > getLLimits(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::AuxiliaryElements &) const;
+              JArray< ::org::hipparchus::CalculusFieldElement > getLLimits(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::FieldAuxiliaryElements &) const;
               ::java::util::List getParametersDriversWithoutMu() const;
               void pythonDecRef() const;
               jlong pythonExtension() const;

@@ -6,12 +6,8 @@
 namespace org {
   namespace orekit {
     namespace data {
-      class DataSource;
       class DataProvidersManager;
-    }
-    namespace time {
-      class TimeScale;
-      class AbsoluteDate;
+      class DataSource;
     }
     namespace models {
       namespace earth {
@@ -22,6 +18,10 @@ namespace org {
           }
         }
       }
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeScale;
     }
   }
 }
@@ -43,21 +43,21 @@ namespace org {
             class CssiSpaceWeatherData : public ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityData {
              public:
               enum {
-                mid_init$_e939c6558ae8d313,
-                mid_init$_178426610ec237d4,
-                mid_init$_b4e6e392672e7dfd,
-                mid_init$_4782a728e14f2f6e,
-                mid_init$_c3298cacdeeaf7cf,
-                mid_init$_0cdfbdc326d8269d,
-                mid_init$_5801c42bbd9a703a,
-                mid_init$_cadc3689caf920c4,
-                mid_get24HoursKp_e912d21057defe63,
-                mid_getAp_e586dea4c0bad69b,
-                mid_getAverageFlux_e912d21057defe63,
-                mid_getDailyFlux_e912d21057defe63,
-                mid_getInstantFlux_e912d21057defe63,
-                mid_getMeanFlux_e912d21057defe63,
-                mid_getThreeHourlyKP_e912d21057defe63,
+                mid_init$_d0bc48d5b00dc40c,
+                mid_init$_579dcb2bf229954b,
+                mid_init$_63a3364c21ade86b,
+                mid_init$_377ee8b1596a9f80,
+                mid_init$_c9696a3ab5455033,
+                mid_init$_9ac58a50c4aae2c3,
+                mid_init$_4ed07469b7177e6c,
+                mid_init$_02e45cd6a94091ba,
+                mid_get24HoursKp_bf1d7732f1acb697,
+                mid_getAp_2b9aa40de0a696a4,
+                mid_getAverageFlux_bf1d7732f1acb697,
+                mid_getDailyFlux_bf1d7732f1acb697,
+                mid_getInstantFlux_bf1d7732f1acb697,
+                mid_getMeanFlux_bf1d7732f1acb697,
+                mid_getThreeHourlyKP_bf1d7732f1acb697,
                 max_mid
               };
 

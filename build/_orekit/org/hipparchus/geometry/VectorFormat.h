@@ -3,29 +3,29 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class StringBuffer;
-    class Class;
-    class String;
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      class Vector;
+    }
+    namespace exception {
+      class MathIllegalStateException;
+    }
   }
+}
+namespace java {
   namespace util {
     class Locale;
   }
   namespace text {
+    class NumberFormat;
     class ParsePosition;
     class FieldPosition;
-    class NumberFormat;
   }
-}
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class MathIllegalStateException;
-    }
-    namespace geometry {
-      class Vector;
-    }
+  namespace lang {
+    class StringBuffer;
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -37,17 +37,17 @@ namespace org {
       class VectorFormat : public ::java::lang::Object {
        public:
         enum {
-          mid_format_8f4014df8b545e23,
-          mid_format_d63c028b54a2ec6c,
-          mid_getAvailableLocales_81e8fdf65840780c,
-          mid_getFormat_d34e2e8dd35583a0,
-          mid_getPrefix_0090f7797e403f43,
-          mid_getSeparator_0090f7797e403f43,
-          mid_getSuffix_0090f7797e403f43,
-          mid_parse_53f6a343d7e75f91,
-          mid_parse_9afcbb599a8a8401,
-          mid_parseCoordinates_8dfbb0f9e536d3df,
-          mid_format_eea61c07cc9f1c82,
+          mid_format_70cc35afc62a15a9,
+          mid_format_84b38396c796d436,
+          mid_getAvailableLocales_c5ed07ebd55821bb,
+          mid_getFormat_24f83dea4a8657b1,
+          mid_getPrefix_11b109bd155ca898,
+          mid_getSeparator_11b109bd155ca898,
+          mid_getSuffix_11b109bd155ca898,
+          mid_parse_f2392149be71531b,
+          mid_parse_57fa38b35ce1396f,
+          mid_parseCoordinates_52c2f130524441eb,
+          mid_format_e7b84a9e0bbb4322,
           max_mid
         };
 

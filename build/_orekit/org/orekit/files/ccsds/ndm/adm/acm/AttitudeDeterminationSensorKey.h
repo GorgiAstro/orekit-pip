@@ -7,18 +7,18 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace utils {
+          namespace lexical {
+            class ParseToken;
+          }
+          class ContextBinding;
+        }
         namespace ndm {
           namespace adm {
             namespace acm {
               class AttitudeDeterminationSensorKey;
               class AttitudeDeterminationSensor;
             }
-          }
-        }
-        namespace utils {
-          class ContextBinding;
-          namespace lexical {
-            class ParseToken;
           }
         }
       }
@@ -44,9 +44,9 @@ namespace org {
               class AttitudeDeterminationSensorKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_5c734817633a82e8,
-                  mid_valueOf_a5711b8d1e60d5c1,
-                  mid_values_13bc0bfc1613a38b,
+                  mid_process_1e5bd59c38a14be0,
+                  mid_valueOf_f31d1837e04175ce,
+                  mid_values_3e9c07923ec176f7,
                   max_mid
                 };
 

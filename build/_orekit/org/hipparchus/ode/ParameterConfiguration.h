@@ -18,8 +18,8 @@ namespace org {
       class ParameterConfiguration : public ::java::lang::Object {
        public:
         enum {
-          mid_getHP_456d9a2f64d6b28d,
-          mid_getParameterName_0090f7797e403f43,
+          mid_getHP_dff5885c2c873297,
+          mid_getParameterName_11b109bd155ca898,
           max_mid
         };
 

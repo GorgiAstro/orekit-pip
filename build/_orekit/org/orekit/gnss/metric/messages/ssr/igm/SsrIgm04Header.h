@@ -21,7 +21,7 @@ namespace org {
               class SsrIgm04Header : public ::org::orekit::gnss::metric::messages::ssr::igm::SsrIgmHeader {
                public:
                 enum {
-                  mid_init$_7ae3461a92a43152,
+                  mid_init$_0fa09c18fee449d5,
                   max_mid
                 };
 

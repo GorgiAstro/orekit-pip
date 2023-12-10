@@ -3,6 +3,15 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -33,15 +42,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -55,11 +55,11 @@ namespace org {
               class AttitudeElementsType : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_getUnits_a6156df500549a58,
-                  mid_toRotation_cee82f5510cc01cd,
-                  mid_toString_0090f7797e403f43,
-                  mid_valueOf_d16beb45b836381a,
-                  mid_values_7115856627d2fe3c,
+                  mid_getUnits_2afa36052df4765d,
+                  mid_toRotation_6bb62df9eca4ac1d,
+                  mid_toString_11b109bd155ca898,
+                  mid_valueOf_92ba6852dab7e267,
+                  mid_values_55b6b8bc8018ba0b,
                   max_mid
                 };
 

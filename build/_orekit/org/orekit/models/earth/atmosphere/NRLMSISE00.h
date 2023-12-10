@@ -5,24 +5,30 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
-    class CalculusFieldElement;
   }
   namespace orekit {
+    namespace frames {
+      class Frame;
+    }
+    namespace bodies {
+      class BodyShape;
+    }
     namespace time {
       class TimeScale;
       class AbsoluteDate;
       class FieldAbsoluteDate;
     }
-    namespace frames {
-      class Frame;
+    namespace utils {
+      class PVCoordinatesProvider;
     }
     namespace models {
       namespace earth {
@@ -32,12 +38,6 @@ namespace org {
           class Atmosphere;
         }
       }
-    }
-    namespace bodies {
-      class BodyShape;
-    }
-    namespace utils {
-      class PVCoordinatesProvider;
     }
   }
 }
@@ -57,12 +57,12 @@ namespace org {
           class NRLMSISE00 : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_b8492ed5ddc9c0d3,
-              mid_init$_7ae9e48b9511bd6a,
-              mid_getDensity_e3f5c4474b151066,
-              mid_getDensity_ee5ac6667b0d4b90,
-              mid_getFrame_c8fe21bcdac65bf6,
-              mid_withSwitch_5970e9ba856fdbdf,
+              mid_init$_95485d1ebb7911a0,
+              mid_init$_3782e04c41242f72,
+              mid_getDensity_f7d7785230311c38,
+              mid_getDensity_b79d75c1a8af7374,
+              mid_getFrame_b86f9f61d97a7244,
+              mid_withSwitch_61652ce4abe178ec,
               max_mid
             };
 
@@ -80,8 +80,8 @@ namespace org {
             NRLMSISE00(const ::org::orekit::models::earth::atmosphere::NRLMSISE00InputParameters &, const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::bodies::BodyShape &);
             NRLMSISE00(const ::org::orekit::models::earth::atmosphere::NRLMSISE00InputParameters &, const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::bodies::BodyShape &, const ::org::orekit::time::TimeScale &);
 
-            ::org::hipparchus::CalculusFieldElement getDensity(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &) const;
             jdouble getDensity(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &) const;
+            ::org::hipparchus::CalculusFieldElement getDensity(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &) const;
             ::org::orekit::frames::Frame getFrame() const;
             NRLMSISE00 withSwitch(jint, jint) const;
           };

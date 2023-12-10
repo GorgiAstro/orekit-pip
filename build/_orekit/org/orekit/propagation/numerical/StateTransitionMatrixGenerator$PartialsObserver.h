@@ -25,7 +25,7 @@ namespace org {
         class StateTransitionMatrixGenerator$PartialsObserver : public ::java::lang::Object {
          public:
           enum {
-            mid_partialsComputed_32d762d958cb6960,
+            mid_partialsComputed_747d586861d6528b,
             max_mid
           };
 

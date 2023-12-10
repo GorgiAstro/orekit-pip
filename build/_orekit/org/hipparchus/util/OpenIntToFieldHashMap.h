@@ -13,10 +13,10 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    class Field;
     namespace util {
       class OpenIntToFieldHashMap$Iterator;
     }
+    class Field;
     class FieldElement;
   }
 }
@@ -29,16 +29,16 @@ namespace org {
       class OpenIntToFieldHashMap : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_205c34b8e33cf33f,
-          mid_init$_a69d58691b2f6a42,
-          mid_init$_517fb93f7f6e6810,
-          mid_init$_033ffb0d487f5fee,
-          mid_containsKey_e95e4c7cd3dd17ff,
-          mid_get_5e30662bac3edb02,
-          mid_iterator_5bdce533ecf08445,
-          mid_put_344984fcd6be0043,
-          mid_remove_5e30662bac3edb02,
-          mid_size_f2f64475e4580546,
+          mid_init$_484998d88974267b,
+          mid_init$_c5199de6167cff95,
+          mid_init$_e25fb577c07a9ba7,
+          mid_init$_cd3ef8f900d4dc86,
+          mid_containsKey_b6e9be1df30aebaf,
+          mid_get_ffcdb6600dc6671a,
+          mid_iterator_8894aa9b322ecaa1,
+          mid_put_00153cfbaed9aaab,
+          mid_remove_ffcdb6600dc6671a,
+          mid_size_570ce0828f81a2c1,
           max_mid
         };
 

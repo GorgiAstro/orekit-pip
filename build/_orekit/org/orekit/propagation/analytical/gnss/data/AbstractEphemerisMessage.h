@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,33 +27,33 @@ namespace org {
             class AbstractEphemerisMessage : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_getDate_aaa854c403487cf3,
-                mid_getEpochToc_aaa854c403487cf3,
-                mid_getHealth_456d9a2f64d6b28d,
-                mid_getPRN_f2f64475e4580546,
-                mid_getX_456d9a2f64d6b28d,
-                mid_getXDot_456d9a2f64d6b28d,
-                mid_getXDotDot_456d9a2f64d6b28d,
-                mid_getY_456d9a2f64d6b28d,
-                mid_getYDot_456d9a2f64d6b28d,
-                mid_getYDotDot_456d9a2f64d6b28d,
-                mid_getZ_456d9a2f64d6b28d,
-                mid_getZDot_456d9a2f64d6b28d,
-                mid_getZDotDot_456d9a2f64d6b28d,
-                mid_setDate_e82d68cd9f886886,
-                mid_setEpochToc_e82d68cd9f886886,
-                mid_setHealth_77e0f9a1f260e2e5,
-                mid_setPRN_0a2a1ac2721c0336,
-                mid_setX_77e0f9a1f260e2e5,
-                mid_setXDot_77e0f9a1f260e2e5,
-                mid_setXDotDot_77e0f9a1f260e2e5,
-                mid_setY_77e0f9a1f260e2e5,
-                mid_setYDot_77e0f9a1f260e2e5,
-                mid_setYDotDot_77e0f9a1f260e2e5,
-                mid_setZ_77e0f9a1f260e2e5,
-                mid_setZDot_77e0f9a1f260e2e5,
-                mid_setZDotDot_77e0f9a1f260e2e5,
+                mid_init$_0fa09c18fee449d5,
+                mid_getDate_85703d13e302437e,
+                mid_getEpochToc_85703d13e302437e,
+                mid_getHealth_dff5885c2c873297,
+                mid_getPRN_570ce0828f81a2c1,
+                mid_getX_dff5885c2c873297,
+                mid_getXDot_dff5885c2c873297,
+                mid_getXDotDot_dff5885c2c873297,
+                mid_getY_dff5885c2c873297,
+                mid_getYDot_dff5885c2c873297,
+                mid_getYDotDot_dff5885c2c873297,
+                mid_getZ_dff5885c2c873297,
+                mid_getZDot_dff5885c2c873297,
+                mid_getZDotDot_dff5885c2c873297,
+                mid_setDate_600a2a61652bc473,
+                mid_setEpochToc_600a2a61652bc473,
+                mid_setHealth_17db3a65980d3441,
+                mid_setPRN_99803b0791f320ff,
+                mid_setX_17db3a65980d3441,
+                mid_setXDot_17db3a65980d3441,
+                mid_setXDotDot_17db3a65980d3441,
+                mid_setY_17db3a65980d3441,
+                mid_setYDot_17db3a65980d3441,
+                mid_setYDotDot_17db3a65980d3441,
+                mid_setZ_17db3a65980d3441,
+                mid_setZDot_17db3a65980d3441,
+                mid_setZDotDot_17db3a65980d3441,
                 max_mid
               };
 

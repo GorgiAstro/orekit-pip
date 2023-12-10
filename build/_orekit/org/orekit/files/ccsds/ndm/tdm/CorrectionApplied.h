@@ -34,8 +34,8 @@ namespace org {
             class CorrectionApplied : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_5860dad88a3974af,
-                mid_values_81093ff8026ebe5f,
+                mid_valueOf_fb8b722d9e09feab,
+                mid_values_9ddabfb61ea06582,
                 max_mid
               };
 

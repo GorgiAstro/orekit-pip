@@ -3,39 +3,39 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
-    class CalculusFieldElement;
   }
   namespace orekit {
+    namespace utils {
+      class ParameterDriver;
+    }
     namespace forces {
       namespace drag {
         class DragSensitive;
       }
     }
     namespace propagation {
-      class SpacecraftState;
       class FieldSpacecraftState;
+      class SpacecraftState;
     }
-    namespace utils {
-      class ParameterDriver;
-    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -48,11 +48,11 @@ namespace org {
         class IsotropicDrag : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_1d715fa3b7b756e1,
-            mid_init$_667a7965403ed91a,
-            mid_dragAcceleration_72c100be3e679e5e,
-            mid_dragAcceleration_3061f9a13979e9fa,
-            mid_getDragParametersDrivers_a6156df500549a58,
+            mid_init$_8f2e782d5278b131,
+            mid_init$_b0a935b68e41d65a,
+            mid_dragAcceleration_fc130a15f669db38,
+            mid_dragAcceleration_6cbf0b5d7046f26b,
+            mid_getDragParametersDrivers_2afa36052df4765d,
             max_mid
           };
 
@@ -70,8 +70,8 @@ namespace org {
           IsotropicDrag(jdouble, jdouble);
           IsotropicDrag(jdouble, jdouble, jdouble, jdouble);
 
-          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D dragAcceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           ::org::hipparchus::geometry::euclidean::threed::Vector3D dragAcceleration(const ::org::orekit::propagation::SpacecraftState &, jdouble, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const JArray< jdouble > &) const;
+          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D dragAcceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           ::java::util::List getDragParametersDrivers() const;
         };
       }

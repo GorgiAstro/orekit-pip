@@ -5,24 +5,24 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace stat {
       namespace descriptive {
         class StorelessUnivariateStatistic;
       }
     }
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
   }
 }
 namespace java {
-  namespace lang {
-    class Class;
-  }
   namespace util {
     namespace function {
       class DoubleConsumer;
     }
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -35,15 +35,15 @@ namespace org {
         class StorelessUnivariateStatistic : public ::org::hipparchus::stat::descriptive::UnivariateStatistic {
          public:
           enum {
-            mid_accept_77e0f9a1f260e2e5,
-            mid_clear_7ae3461a92a43152,
-            mid_copy_341cf16d0d9912f3,
-            mid_evaluate_0a7ff474793a505a,
-            mid_getN_a27fc9afd27e559d,
-            mid_getResult_456d9a2f64d6b28d,
-            mid_increment_77e0f9a1f260e2e5,
-            mid_incrementAll_ebc26dcaf4761286,
-            mid_incrementAll_d3508f432c1d798d,
+            mid_accept_17db3a65980d3441,
+            mid_clear_0fa09c18fee449d5,
+            mid_copy_ac0cb19696f2f20f,
+            mid_evaluate_556bede10daac330,
+            mid_getN_492808a339bfa35f,
+            mid_getResult_dff5885c2c873297,
+            mid_increment_17db3a65980d3441,
+            mid_incrementAll_fa9d415d19f69361,
+            mid_incrementAll_12aca76acb10f1af,
             max_mid
           };
 

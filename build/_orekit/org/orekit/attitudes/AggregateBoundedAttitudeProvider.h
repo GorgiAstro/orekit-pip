@@ -16,9 +16,9 @@ namespace org {
   }
   namespace orekit {
     namespace attitudes {
-      class BoundedAttitudeProvider;
       class Attitude;
       class FieldAttitude;
+      class BoundedAttitudeProvider;
     }
     namespace frames {
       class Frame;
@@ -28,8 +28,8 @@ namespace org {
       class FieldPVCoordinatesProvider;
     }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
   }
 }
@@ -50,13 +50,13 @@ namespace org {
       class AggregateBoundedAttitudeProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_26b3669ec54017ce,
-          mid_getAttitude_455b5c75f9292826,
-          mid_getAttitude_5341a8481841f90c,
-          mid_getAttitudeRotation_01363f58d35f60d4,
-          mid_getAttitudeRotation_969253bc78d7a272,
-          mid_getMaxDate_aaa854c403487cf3,
-          mid_getMinDate_aaa854c403487cf3,
+          mid_init$_f72f53318f80c525,
+          mid_getAttitude_4e541876ea7d5bd0,
+          mid_getAttitude_d2b70935d932b5c5,
+          mid_getAttitudeRotation_29422c22de775b74,
+          mid_getAttitudeRotation_53a81d4d17b13463,
+          mid_getMaxDate_85703d13e302437e,
+          mid_getMinDate_85703d13e302437e,
           max_mid
         };
 

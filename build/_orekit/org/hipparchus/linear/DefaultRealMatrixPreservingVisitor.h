@@ -24,10 +24,10 @@ namespace org {
       class DefaultRealMatrixPreservingVisitor : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_end_456d9a2f64d6b28d,
-          mid_start_47d591670cfcc314,
-          mid_visit_78e41e7b5124a628,
+          mid_init$_0fa09c18fee449d5,
+          mid_end_dff5885c2c873297,
+          mid_start_5aa4d40be6f39408,
+          mid_visit_1506189166690b5e,
           max_mid
         };
 

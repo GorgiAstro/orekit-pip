@@ -5,22 +5,22 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frames;
-      class Frame;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
     namespace propagation {
       namespace analytical {
         namespace gnss {
-          class SBASPropagator;
           namespace data {
             class SBASOrbitalElements;
           }
+          class SBASPropagator;
         }
       }
+    }
+    namespace frames {
+      class Frame;
+      class Frames;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
     }
   }
 }
@@ -41,21 +41,21 @@ namespace org {
             class SBASNavigationMessage : public ::org::orekit::propagation::analytical::gnss::data::AbstractEphemerisMessage {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_getAGf0_456d9a2f64d6b28d,
-                mid_getAGf1_456d9a2f64d6b28d,
-                mid_getIODN_f2f64475e4580546,
-                mid_getPropagator_70869a450ee7c848,
-                mid_getPropagator_4782ed39e925c984,
-                mid_getPropagator_ad237026c17751de,
-                mid_getTime_456d9a2f64d6b28d,
-                mid_getURA_456d9a2f64d6b28d,
-                mid_getWeek_f2f64475e4580546,
-                mid_setAGf0_77e0f9a1f260e2e5,
-                mid_setAGf1_77e0f9a1f260e2e5,
-                mid_setIODN_77e0f9a1f260e2e5,
-                mid_setTime_77e0f9a1f260e2e5,
-                mid_setURA_77e0f9a1f260e2e5,
+                mid_init$_0fa09c18fee449d5,
+                mid_getAGf0_dff5885c2c873297,
+                mid_getAGf1_dff5885c2c873297,
+                mid_getIODN_570ce0828f81a2c1,
+                mid_getPropagator_9dcd848e51dbc12c,
+                mid_getPropagator_ae714d22f6e1d72f,
+                mid_getPropagator_c8d67577d76c2250,
+                mid_getTime_dff5885c2c873297,
+                mid_getURA_dff5885c2c873297,
+                mid_getWeek_570ce0828f81a2c1,
+                mid_setAGf0_17db3a65980d3441,
+                mid_setAGf1_17db3a65980d3441,
+                mid_setIODN_17db3a65980d3441,
+                mid_setTime_17db3a65980d3441,
+                mid_setURA_17db3a65980d3441,
                 max_mid
               };
 

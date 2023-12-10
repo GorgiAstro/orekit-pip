@@ -7,23 +7,23 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace ndm {
+          namespace tdm {
+            class TdmHeader;
+            class ObservationsBlock;
+            class TdmMetadata;
+          }
+        }
         namespace section {
           class Segment;
         }
-        namespace ndm {
-          namespace tdm {
-            class TdmMetadata;
-            class ObservationsBlock;
-            class TdmHeader;
-          }
-        }
       }
-    }
-    namespace data {
-      class DataContext;
     }
     namespace utils {
       class IERSConventions;
+    }
+    namespace data {
+      class DataContext;
     }
   }
 }
@@ -48,7 +48,7 @@ namespace org {
             class Tdm : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
              public:
               enum {
-                mid_init$_3ec50b09beb1a48e,
+                mid_init$_b2fcbc8571194da5,
                 max_mid
               };
 

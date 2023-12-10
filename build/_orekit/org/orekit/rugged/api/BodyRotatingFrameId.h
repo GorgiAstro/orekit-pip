@@ -28,8 +28,8 @@ namespace org {
         class BodyRotatingFrameId : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_0e2268125faf80ef,
-            mid_values_225464e14cee5fb1,
+            mid_valueOf_70179aa1e1b1a8c5,
+            mid_values_1d2ab5e5b9c6a1e0,
             max_mid
           };
 

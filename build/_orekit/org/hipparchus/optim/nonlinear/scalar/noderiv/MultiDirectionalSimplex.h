@@ -33,15 +33,15 @@ namespace org {
             class MultiDirectionalSimplex : public ::org::hipparchus::optim::nonlinear::scalar::noderiv::AbstractSimplex {
              public:
               enum {
-                mid_init$_ebc26dcaf4761286,
-                mid_init$_d660c7a97bf55272,
-                mid_init$_0a2a1ac2721c0336,
-                mid_init$_987a5fb872043b12,
-                mid_init$_34fab415168f529a,
-                mid_init$_92a262a7ed4e53ce,
-                mid_init$_13f7a72902bf1e20,
-                mid_init$_d3d0b69fc0b5db95,
-                mid_iterate_cd2534a55381d07e,
+                mid_init$_fa9d415d19f69361,
+                mid_init$_a0befc7f3dc19e41,
+                mid_init$_99803b0791f320ff,
+                mid_init$_bb79ca80d85d0a66,
+                mid_init$_b06f13e61b0a2762,
+                mid_init$_d396e21fdebc41e7,
+                mid_init$_07bf81310115068c,
+                mid_init$_2e15f46ce2042002,
+                mid_iterate_eb88542b81649386,
                 max_mid
               };
 

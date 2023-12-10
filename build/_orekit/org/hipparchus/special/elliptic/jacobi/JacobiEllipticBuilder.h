@@ -5,18 +5,18 @@
 
 namespace org {
   namespace hipparchus {
+    namespace complex {
+      class FieldComplex;
+      class Complex;
+    }
+    class CalculusFieldElement;
     namespace special {
       namespace elliptic {
         namespace jacobi {
-          class FieldJacobiElliptic;
           class JacobiElliptic;
+          class FieldJacobiElliptic;
         }
       }
-    }
-    class CalculusFieldElement;
-    namespace complex {
-      class Complex;
-      class FieldComplex;
     }
   }
 }
@@ -36,10 +36,10 @@ namespace org {
           class JacobiEllipticBuilder : public ::java::lang::Object {
            public:
             enum {
-              mid_build_5dc5f35c3e5fd887,
-              mid_build_ecef021f0b168079,
-              mid_build_50146fb82d94f0f6,
-              mid_build_f4644affeb985c99,
+              mid_build_49eaf78422c9dfbe,
+              mid_build_6c421db6f6807557,
+              mid_build_1c66b1627e260b52,
+              mid_build_28b33bf628deedce,
               max_mid
             };
 

@@ -5,20 +5,20 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
-    class CalculusFieldElement;
   }
   namespace orekit {
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
   }
 }
@@ -36,12 +36,12 @@ namespace org {
       class IAUPole : public ::java::io::Serializable {
        public:
         enum {
-          mid_getNode_71c51b45829333ce,
-          mid_getNode_11a4be79061d1fe3,
-          mid_getPole_71c51b45829333ce,
-          mid_getPole_11a4be79061d1fe3,
-          mid_getPrimeMeridianAngle_e912d21057defe63,
-          mid_getPrimeMeridianAngle_7bc0fd76ee915b72,
+          mid_getNode_24461752d0eea1e3,
+          mid_getNode_e81fa067750860a1,
+          mid_getPole_24461752d0eea1e3,
+          mid_getPole_e81fa067750860a1,
+          mid_getPrimeMeridianAngle_bf1d7732f1acb697,
+          mid_getPrimeMeridianAngle_2a5f05be83ff251d,
           max_mid
         };
 

@@ -22,17 +22,17 @@ namespace org {
       class FieldODEState : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_ef0bb554ba052051,
-          mid_init$_fb8a6e7e41ba410e,
-          mid_getCompleteState_01c7d10e96d5cf94,
-          mid_getCompleteStateDimension_f2f64475e4580546,
-          mid_getNumberOfSecondaryStates_f2f64475e4580546,
-          mid_getPrimaryState_01c7d10e96d5cf94,
-          mid_getPrimaryStateDimension_f2f64475e4580546,
-          mid_getSecondaryState_5b8578526a4f7e83,
-          mid_getSecondaryStateDimension_38565d58479aa24a,
-          mid_getTime_e6d4d3215c30992a,
-          mid_copy_739207d3fe95b2fa,
+          mid_init$_bee5c8ff86f4e777,
+          mid_init$_1aa689b999c11532,
+          mid_getCompleteState_226a0b2040b1d2e1,
+          mid_getCompleteStateDimension_570ce0828f81a2c1,
+          mid_getNumberOfSecondaryStates_570ce0828f81a2c1,
+          mid_getPrimaryState_226a0b2040b1d2e1,
+          mid_getPrimaryStateDimension_570ce0828f81a2c1,
+          mid_getSecondaryState_f2aa3eb7e0b5647f,
+          mid_getSecondaryStateDimension_2235cd056f5a882b,
+          mid_getTime_eba8e72a22c984ac,
+          mid_copy_d1031b0c6b4f03ae,
           max_mid
         };
 

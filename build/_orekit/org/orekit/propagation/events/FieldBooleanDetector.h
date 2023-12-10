@@ -3,22 +3,13 @@
 
 #include "org/orekit/propagation/events/FieldAbstractDetector.h"
 
-namespace java {
-  namespace util {
-    class List;
-    class Collection;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
+        class FieldBooleanDetector;
         class FieldNegateDetector;
         class FieldEventDetector;
-        class FieldBooleanDetector;
       }
       class FieldSpacecraftState;
     }
@@ -28,6 +19,15 @@ namespace org {
   }
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+    class Collection;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -40,15 +40,15 @@ namespace org {
         class FieldBooleanDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_andCombine_0157e0384da63662,
-            mid_andCombine_8b9f98582937f428,
-            mid_g_cc79c2733879de35,
-            mid_getDetectors_a6156df500549a58,
-            mid_init_acdd8180a5dc1a8d,
-            mid_notCombine_835a5282d28930ad,
-            mid_orCombine_0157e0384da63662,
-            mid_orCombine_8b9f98582937f428,
-            mid_create_9c0b562710a845f3,
+            mid_andCombine_f1bf7ad4c2560c97,
+            mid_andCombine_e841a6ad3abae38f,
+            mid_g_41a008afe53da855,
+            mid_getDetectors_2afa36052df4765d,
+            mid_init_8e8de2be1664674a,
+            mid_notCombine_bd2e3c52711c8637,
+            mid_orCombine_f1bf7ad4c2560c97,
+            mid_orCombine_e841a6ad3abae38f,
+            mid_create_705c558177873e23,
             max_mid
           };
 

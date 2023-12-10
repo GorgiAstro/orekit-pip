@@ -5,19 +5,19 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
-    namespace bodies {
-      class CelestialBody;
-      class CelestialBodies;
-    }
     namespace files {
       namespace ccsds {
         namespace definitions {
           class CenterName;
         }
       }
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace bodies {
+      class CelestialBodies;
+      class CelestialBody;
     }
   }
 }
@@ -38,12 +38,12 @@ namespace org {
           class CenterName : public ::java::lang::Enum {
            public:
             enum {
-              mid_getCelestialBody_798caa59db6076aa,
-              mid_getCelestialBody_86edba62e1b0c8fe,
-              mid_guessCenter_febdc9b326bc0d01,
-              mid_map_51935237629eb555,
-              mid_valueOf_60ea843e15b39289,
-              mid_values_3a5200f01c72cf94,
+              mid_getCelestialBody_624686a38a6b107c,
+              mid_getCelestialBody_e2da993b112eb885,
+              mid_guessCenter_4120982664ebec0c,
+              mid_map_26124556454e0c08,
+              mid_valueOf_54896343e052f441,
+              mid_values_228befef05db3571,
               max_mid
             };
 

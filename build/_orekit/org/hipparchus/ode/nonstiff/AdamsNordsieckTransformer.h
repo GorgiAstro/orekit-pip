@@ -30,10 +30,10 @@ namespace org {
         class AdamsNordsieckTransformer : public ::java::lang::Object {
          public:
           enum {
-            mid_getInstance_9059daa708ecf578,
-            mid_initializeHighOrderDerivatives_3307b1e87a2ed966,
-            mid_updateHighOrderDerivativesPhase1_6bf0ab2b7bd27bc5,
-            mid_updateHighOrderDerivativesPhase2_37b11fdf1f335fdb,
+            mid_getInstance_112b827632c230ff,
+            mid_initializeHighOrderDerivatives_05286ba32ad1612e,
+            mid_updateHighOrderDerivativesPhase1_98f76adeb9727d30,
+            mid_updateHighOrderDerivativesPhase2_a5e518d6a6618759,
             max_mid
           };
 

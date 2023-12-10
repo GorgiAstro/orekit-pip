@@ -4,6 +4,9 @@
 #include "java/lang/Object.h"
 
 namespace java {
+  namespace text {
+    class ParseException;
+  }
   namespace io {
     class IOException;
     class InputStream;
@@ -11,9 +14,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-  namespace text {
-    class ParseException;
   }
 }
 namespace org {
@@ -32,12 +32,12 @@ namespace org {
       class InterpolationTableLoader : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_getAbscissaGrid_7cdc325af0834901,
-          mid_getOrdinateGrid_7cdc325af0834901,
-          mid_getValuesSamples_43de1192439efa92,
-          mid_loadData_ec60cb5f4b3de555,
-          mid_stillAcceptsData_e470b6d9e0d979db,
+          mid_init$_0fa09c18fee449d5,
+          mid_getAbscissaGrid_60c7040667a7dc5c,
+          mid_getOrdinateGrid_60c7040667a7dc5c,
+          mid_getValuesSamples_0358d8ea02f2cdb1,
+          mid_loadData_1815f85c118161ad,
+          mid_stillAcceptsData_b108b35ef48e27bd,
           max_mid
         };
 

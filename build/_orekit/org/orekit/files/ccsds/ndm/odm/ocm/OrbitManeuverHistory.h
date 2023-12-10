@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -27,6 +19,14 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -40,9 +40,9 @@ namespace org {
               class OrbitManeuverHistory : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_b198251bf9153cf4,
-                  mid_getManeuvers_a6156df500549a58,
-                  mid_getMetadata_d20eeeee6387179d,
+                  mid_init$_37938e13c4b70b47,
+                  mid_getManeuvers_2afa36052df4765d,
+                  mid_getMetadata_80f8bc417c20f379,
                   max_mid
                 };
 

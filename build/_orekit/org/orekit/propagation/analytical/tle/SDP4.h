@@ -19,12 +19,12 @@ namespace org {
           class SDP4 : public ::org::orekit::propagation::analytical::tle::TLEPropagator {
            public:
             enum {
-              mid_sxpInitialize_7ae3461a92a43152,
-              mid_sxpPropagate_77e0f9a1f260e2e5,
-              mid_luniSolarTermsComputation_7ae3461a92a43152,
-              mid_deepSecularEffects_77e0f9a1f260e2e5,
-              mid_deepPeriodicEffects_77e0f9a1f260e2e5,
-              mid_thetaG_e912d21057defe63,
+              mid_sxpInitialize_0fa09c18fee449d5,
+              mid_sxpPropagate_17db3a65980d3441,
+              mid_thetaG_bf1d7732f1acb697,
+              mid_luniSolarTermsComputation_0fa09c18fee449d5,
+              mid_deepSecularEffects_17db3a65980d3441,
+              mid_deepPeriodicEffects_17db3a65980d3441,
               max_mid
             };
 

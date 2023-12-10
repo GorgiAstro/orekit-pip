@@ -4,6 +4,23 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class AngularAzEl;
+        class AngularRaDec;
+      }
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace orbits {
+      class Orbit;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -11,23 +28,6 @@ namespace org {
           class Vector3D;
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace frames {
-      class Frame;
-    }
-    namespace orbits {
-      class Orbit;
-    }
-    namespace estimation {
-      namespace measurements {
-        class AngularRaDec;
-        class AngularAzEl;
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -46,16 +46,16 @@ namespace org {
         class IodGooding : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_77e0f9a1f260e2e5,
-            mid_estimate_8a40756da47c2b16,
-            mid_estimate_c8f0acbeb1ebbf95,
-            mid_estimate_7db373ca74b69fc4,
-            mid_estimate_03fd19db71d2d39b,
-            mid_estimate_99b757b590ad23f0,
-            mid_estimate_a18827d23b8f9cad,
-            mid_getRange1_456d9a2f64d6b28d,
-            mid_getRange2_456d9a2f64d6b28d,
-            mid_getRange3_456d9a2f64d6b28d,
+            mid_init$_17db3a65980d3441,
+            mid_estimate_9f4edff2f4b2c1d0,
+            mid_estimate_e2eca386302ad5d5,
+            mid_estimate_10bff6c739149e21,
+            mid_estimate_f0cd4f5546c29d38,
+            mid_estimate_e386e2d1a757ec14,
+            mid_estimate_438460b781bc8282,
+            mid_getRange1_dff5885c2c873297,
+            mid_getRange2_dff5885c2c873297,
+            mid_getRange3_dff5885c2c873297,
             max_mid
           };
 

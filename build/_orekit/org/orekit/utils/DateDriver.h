@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class TimeStamped;
       class AbsoluteDate;
+      class TimeStamped;
     }
   }
 }
@@ -26,10 +26,10 @@ namespace org {
       class DateDriver : public ::org::orekit::utils::ParameterDriver {
        public:
         enum {
-          mid_init$_bbfbb4872f4edb46,
-          mid_getBaseDate_aaa854c403487cf3,
-          mid_getDate_aaa854c403487cf3,
-          mid_isStart_e470b6d9e0d979db,
+          mid_init$_75586423df931f63,
+          mid_getBaseDate_85703d13e302437e,
+          mid_getDate_85703d13e302437e,
+          mid_isStart_b108b35ef48e27bd,
           max_mid
         };
 

@@ -3,6 +3,20 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace fraction {
+      class Fraction;
+    }
+  }
+  namespace orekit {
+    namespace utils {
+      namespace units {
+        class Unit;
+      }
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -16,20 +30,6 @@ namespace java {
     class String;
   }
 }
-namespace org {
-  namespace orekit {
-    namespace utils {
-      namespace units {
-        class Unit;
-      }
-    }
-  }
-  namespace hipparchus {
-    namespace fraction {
-      class Fraction;
-    }
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -40,31 +40,31 @@ namespace org {
         class Unit : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_97dbf822f7252b42,
-            mid_alias_6650924024ae0f55,
-            mid_divide_d8fc6054bd0fbc8b,
-            mid_ensureCompatible_ddf63e191200a7a3,
-            mid_equals_229c87223f486349,
-            mid_fromSI_cd4b8534889fa81f,
-            mid_fromSI_0ba5fed9597b693e,
-            mid_getAngle_7847eacc50504e7f,
-            mid_getCurrent_7847eacc50504e7f,
-            mid_getLength_7847eacc50504e7f,
-            mid_getMass_7847eacc50504e7f,
-            mid_getName_0090f7797e403f43,
-            mid_getScale_456d9a2f64d6b28d,
-            mid_getTime_7847eacc50504e7f,
-            mid_hashCode_f2f64475e4580546,
-            mid_multiply_d8fc6054bd0fbc8b,
-            mid_parse_6650924024ae0f55,
-            mid_power_58cde49db0c58922,
-            mid_sameDimension_f6642efa67a69233,
-            mid_sameDimensionSI_196b004fd4585106,
-            mid_scale_33d5a55b3852688e,
-            mid_sqrt_6650924024ae0f55,
-            mid_toSI_cd4b8534889fa81f,
-            mid_toSI_0ba5fed9597b693e,
-            mid_toString_0090f7797e403f43,
+            mid_init$_284b61790ebbd4ed,
+            mid_alias_0a5740869b287d80,
+            mid_divide_fec86d24e27a1c31,
+            mid_ensureCompatible_064d1197ec1b60e4,
+            mid_equals_65c7d273e80d497a,
+            mid_fromSI_71d2acbe9dbc79f5,
+            mid_fromSI_dcbc7ce2902fa136,
+            mid_getAngle_883007575ab78b44,
+            mid_getCurrent_883007575ab78b44,
+            mid_getLength_883007575ab78b44,
+            mid_getMass_883007575ab78b44,
+            mid_getName_11b109bd155ca898,
+            mid_getScale_dff5885c2c873297,
+            mid_getTime_883007575ab78b44,
+            mid_hashCode_570ce0828f81a2c1,
+            mid_multiply_fec86d24e27a1c31,
+            mid_parse_0a5740869b287d80,
+            mid_power_7df14d78e751ac15,
+            mid_sameDimension_43de8ce72aa2edad,
+            mid_sameDimensionSI_de9b417ee3c58e2e,
+            mid_scale_fc750ab1c8920e40,
+            mid_sqrt_0a5740869b287d80,
+            mid_toSI_71d2acbe9dbc79f5,
+            mid_toSI_dcbc7ce2902fa136,
+            mid_toString_11b109bd155ca898,
             max_mid
           };
 

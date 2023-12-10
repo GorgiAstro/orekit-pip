@@ -5,21 +5,21 @@
 
 namespace org {
   namespace orekit {
+    namespace files {
+      namespace ccsds {
+        namespace ndm {
+          namespace tdm {
+            class RangeUnitsConverter;
+          }
+          class AbstractBuilder;
+        }
+      }
+    }
     namespace data {
       class DataContext;
     }
     namespace utils {
       class IERSConventions;
-    }
-    namespace files {
-      namespace ccsds {
-        namespace ndm {
-          class AbstractBuilder;
-          namespace tdm {
-            class RangeUnitsConverter;
-          }
-        }
-      }
     }
     namespace time {
       class AbsoluteDate;
@@ -42,19 +42,19 @@ namespace org {
           class AbstractBuilder : public ::java::lang::Object {
            public:
             enum {
-              mid_getConventions_f657aa17e72227da,
-              mid_getDataContext_fc8fc85e38e59042,
-              mid_getEquatorialRadius_456d9a2f64d6b28d,
-              mid_getFlattening_456d9a2f64d6b28d,
-              mid_getMissionReferenceDate_aaa854c403487cf3,
-              mid_getRangeUnitsConverter_873b8d1e769e332d,
-              mid_withConventions_c6466dc8192e49d4,
-              mid_withDataContext_61bea9df339185ac,
-              mid_withEquatorialRadius_703662fe5c7e5a16,
-              mid_withFlattening_703662fe5c7e5a16,
-              mid_withMissionReferenceDate_ca22bd80f06006ca,
-              mid_withRangeUnitsConverter_e7d11dca49312f86,
-              mid_create_a463538f9bac0ff7,
+              mid_getConventions_60f9ded87ab7ca4c,
+              mid_getDataContext_0b7cf48ee6a922ee,
+              mid_getEquatorialRadius_dff5885c2c873297,
+              mid_getFlattening_dff5885c2c873297,
+              mid_getMissionReferenceDate_85703d13e302437e,
+              mid_getRangeUnitsConverter_ce2b21d91cfcb6bd,
+              mid_withConventions_c41393f9593112cc,
+              mid_withDataContext_c1f7b3ad887fbffd,
+              mid_withEquatorialRadius_b764e0c530a10809,
+              mid_withFlattening_b764e0c530a10809,
+              mid_withMissionReferenceDate_0c67bdd3ec905004,
+              mid_withRangeUnitsConverter_b77f4525fccbf560,
+              mid_create_56bdb47287753acf,
               max_mid
             };
 

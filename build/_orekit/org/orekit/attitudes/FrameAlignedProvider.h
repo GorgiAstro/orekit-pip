@@ -15,21 +15,21 @@ namespace org {
     }
   }
   namespace orekit {
+    namespace attitudes {
+      class Attitude;
+      class FieldAttitude;
+      class AttitudeProvider;
+    }
     namespace frames {
       class Frame;
     }
-    namespace attitudes {
-      class AttitudeProvider;
-      class Attitude;
-      class FieldAttitude;
+    namespace utils {
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
     }
     namespace time {
       class AbsoluteDate;
       class FieldAbsoluteDate;
-    }
-    namespace utils {
-      class FieldPVCoordinatesProvider;
-      class PVCoordinatesProvider;
     }
   }
 }
@@ -47,14 +47,14 @@ namespace org {
       class FrameAlignedProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_897939f7cf621023,
-          mid_init$_b1992bd1bb70f476,
-          mid_init$_e1d486da686f0811,
-          mid_getAttitude_5341a8481841f90c,
-          mid_getAttitude_455b5c75f9292826,
-          mid_getAttitudeRotation_969253bc78d7a272,
-          mid_getAttitudeRotation_01363f58d35f60d4,
-          mid_of_ab8f9c0c395d2e45,
+          mid_init$_80a55d93aa5ecb9e,
+          mid_init$_b5680f5c30eede66,
+          mid_init$_7425adc369986a54,
+          mid_getAttitude_d2b70935d932b5c5,
+          mid_getAttitude_4e541876ea7d5bd0,
+          mid_getAttitudeRotation_53a81d4d17b13463,
+          mid_getAttitudeRotation_29422c22de775b74,
+          mid_of_645fb86928f8f669,
           max_mid
         };
 

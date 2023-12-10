@@ -22,14 +22,14 @@ namespace org {
       class LongFrequency : public ::org::hipparchus::stat::Frequency {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_init$_4aed3eb33e58d2f7,
-          mid_addValue_0a2a1ac2721c0336,
-          mid_getCount_3f523e51b2989e1f,
-          mid_getCumFreq_3f523e51b2989e1f,
-          mid_getCumPct_b772323fc98b7293,
-          mid_getPct_b772323fc98b7293,
-          mid_incrementValue_a1c96e7d1aa915f2,
+          mid_init$_0fa09c18fee449d5,
+          mid_init$_aba33752f2449599,
+          mid_addValue_99803b0791f320ff,
+          mid_getCount_a1cf8c47dc9c5883,
+          mid_getCumFreq_a1cf8c47dc9c5883,
+          mid_getCumPct_46f85b53d9aedd96,
+          mid_getPct_46f85b53d9aedd96,
+          mid_incrementValue_5ea3eee09cb6a61f,
           max_mid
         };
 

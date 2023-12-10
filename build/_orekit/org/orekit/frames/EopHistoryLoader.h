@@ -14,11 +14,11 @@ namespace org {
   }
 }
 namespace java {
-  namespace lang {
-    class Class;
-  }
   namespace util {
     class SortedSet;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -30,7 +30,7 @@ namespace org {
       class EopHistoryLoader : public ::java::lang::Object {
        public:
         enum {
-          mid_fillHistory_28ed459287c4a62f,
+          mid_fillHistory_fcb7f5d6983b9f18,
           max_mid
         };
 

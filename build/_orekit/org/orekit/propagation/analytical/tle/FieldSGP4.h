@@ -4,7 +4,16 @@
 #include "org/orekit/propagation/analytical/tle/FieldTLEPropagator.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
+    namespace frames {
+      class Frame;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
+    }
     namespace propagation {
       namespace analytical {
         namespace tle {
@@ -12,15 +21,6 @@ namespace org {
         }
       }
     }
-    namespace frames {
-      class Frame;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -39,10 +39,10 @@ namespace org {
           class FieldSGP4 : public ::org::orekit::propagation::analytical::tle::FieldTLEPropagator {
            public:
             enum {
-              mid_init$_07248e1efc10aa6e,
-              mid_init$_8f2042251d084a47,
-              mid_sxpInitialize_4c337e4c1ec6f647,
-              mid_sxpPropagate_ef0bb554ba052051,
+              mid_init$_dee9d0fe004a8f9d,
+              mid_init$_5151ab0d47c2b93c,
+              mid_sxpInitialize_72479ee08453ef97,
+              mid_sxpPropagate_bee5c8ff86f4e777,
               max_mid
             };
 

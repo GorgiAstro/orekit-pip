@@ -30,8 +30,8 @@ namespace org {
       class FieldChronologicalComparator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_compare_210e9114cb8bd64e,
+          mid_init$_0fa09c18fee449d5,
+          mid_compare_b98e5893a91c8891,
           max_mid
         };
 

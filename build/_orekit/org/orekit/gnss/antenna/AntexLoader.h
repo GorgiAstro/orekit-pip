@@ -3,27 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace data {
-      class DataSource;
-      class DataProvidersManager;
-    }
-    namespace time {
-      class TimeScale;
-    }
-    namespace gnss {
-      namespace antenna {
-        class SatelliteAntenna;
-        class ReceiverAntenna;
-      }
-      class SatelliteSystem;
-    }
-    namespace utils {
-      class TimeSpanMap;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -31,6 +10,27 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace gnss {
+      class SatelliteSystem;
+      namespace antenna {
+        class ReceiverAntenna;
+        class SatelliteAntenna;
+      }
+    }
+    namespace data {
+      class DataProvidersManager;
+      class DataSource;
+    }
+    namespace utils {
+      class TimeSpanMap;
+    }
+    namespace time {
+      class TimeScale;
+    }
   }
 }
 template<class T> class JArray;
@@ -43,12 +43,12 @@ namespace org {
         class AntexLoader : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_e939c6558ae8d313,
-            mid_init$_b4e6e392672e7dfd,
-            mid_init$_c3298cacdeeaf7cf,
-            mid_findSatelliteAntenna_d3972a3ac63ca120,
-            mid_getReceiversAntennas_a6156df500549a58,
-            mid_getSatellitesAntennas_a6156df500549a58,
+            mid_init$_d0bc48d5b00dc40c,
+            mid_init$_63a3364c21ade86b,
+            mid_init$_c9696a3ab5455033,
+            mid_findSatelliteAntenna_1a3c29a657e3b2a6,
+            mid_getReceiversAntennas_2afa36052df4765d,
+            mid_getSatellitesAntennas_2afa36052df4765d,
             max_mid
           };
 

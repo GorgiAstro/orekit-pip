@@ -5,19 +5,19 @@
 
 namespace org {
   namespace orekit {
-    namespace models {
-      namespace earth {
-        namespace troposphere {
-          class DiscreteTroposphericModel;
-        }
-      }
-    }
     namespace estimation {
       namespace measurements {
         class EstimatedMeasurement;
         class EstimatedMeasurementBase;
         class TurnAroundRange;
         class EstimationModifier;
+      }
+    }
+    namespace models {
+      namespace earth {
+        namespace troposphere {
+          class DiscreteTroposphericModel;
+        }
       }
     }
     namespace utils {
@@ -44,10 +44,10 @@ namespace org {
           class TurnAroundRangeTroposphericDelayModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_8171254277c9834a,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_modify_a5896dbcbe782924,
-              mid_modifyWithoutDerivatives_811f96960c94c1de,
+              mid_init$_3e4962f34ea61659,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_modify_e4935e9a55e01fd8,
+              mid_modifyWithoutDerivatives_d1815d998cba71e9,
               max_mid
             };
 

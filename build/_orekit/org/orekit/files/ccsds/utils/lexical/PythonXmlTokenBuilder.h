@@ -9,8 +9,8 @@ namespace org {
       namespace ccsds {
         namespace utils {
           namespace lexical {
-            class XmlTokenBuilder;
             class ParseToken;
+            class XmlTokenBuilder;
           }
         }
       }
@@ -40,12 +40,12 @@ namespace org {
             class PythonXmlTokenBuilder : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_buildTokens_9b67b2bd574b1d70,
-                mid_finalize_7ae3461a92a43152,
-                mid_pythonDecRef_7ae3461a92a43152,
-                mid_pythonExtension_a27fc9afd27e559d,
-                mid_pythonExtension_fefb08975c10f0a1,
+                mid_init$_0fa09c18fee449d5,
+                mid_buildTokens_e5e9154f880f1aad,
+                mid_finalize_0fa09c18fee449d5,
+                mid_pythonDecRef_0fa09c18fee449d5,
+                mid_pythonExtension_492808a339bfa35f,
+                mid_pythonExtension_3a8e7649f31fdb20,
                 max_mid
               };
 

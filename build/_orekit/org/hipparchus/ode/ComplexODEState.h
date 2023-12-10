@@ -27,17 +27,17 @@ namespace org {
       class ComplexODEState : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_762610eefab38248,
-          mid_init$_324472bfdf5fc794,
-          mid_getCompleteState_a42e219c62839d3d,
-          mid_getCompleteStateDimension_f2f64475e4580546,
-          mid_getNumberOfSecondaryStates_f2f64475e4580546,
-          mid_getPrimaryState_a42e219c62839d3d,
-          mid_getPrimaryStateDimension_f2f64475e4580546,
-          mid_getSecondaryState_2169290c4dd2441c,
-          mid_getSecondaryStateDimension_38565d58479aa24a,
-          mid_getTime_456d9a2f64d6b28d,
-          mid_copy_8436d88d682eec16,
+          mid_init$_218aa60ac719f855,
+          mid_init$_0320e82fa6ccb5a8,
+          mid_getCompleteState_8a0770025abeda5b,
+          mid_getCompleteStateDimension_570ce0828f81a2c1,
+          mid_getNumberOfSecondaryStates_570ce0828f81a2c1,
+          mid_getPrimaryState_8a0770025abeda5b,
+          mid_getPrimaryStateDimension_570ce0828f81a2c1,
+          mid_getSecondaryState_8b297114c93ecf96,
+          mid_getSecondaryStateDimension_2235cd056f5a882b,
+          mid_getTime_dff5885c2c873297,
+          mid_copy_4b54973ff9f93de0,
           max_mid
         };
 

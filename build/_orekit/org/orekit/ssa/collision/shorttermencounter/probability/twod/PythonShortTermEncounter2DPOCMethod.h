@@ -14,17 +14,17 @@ namespace org {
         namespace shorttermencounter {
           namespace probability {
             namespace twod {
-              class ShortTermEncounter2DPOCMethodType;
+              class ShortTermEncounter2DDefinition;
               class ShortTermEncounter2DPOCMethod;
               class FieldShortTermEncounter2DDefinition;
-              class ShortTermEncounter2DDefinition;
+              class ShortTermEncounter2DPOCMethodType;
             }
           }
         }
       }
       namespace metrics {
-        class ProbabilityOfCollision;
         class FieldProbabilityOfCollision;
+        class ProbabilityOfCollision;
       }
     }
     namespace files {
@@ -65,22 +65,22 @@ namespace org {
               class PythonShortTermEncounter2DPOCMethod : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_7ae3461a92a43152,
-                  mid_compute_4c5fe0d13c4a2327,
-                  mid_compute_a4d7e214295a00c5,
-                  mid_compute_a50e19d883e35f53,
-                  mid_compute_4f61fc1ea038da56,
-                  mid_compute_23211d1e26c9c2c1,
-                  mid_compute_f7ffb3ec4f2d0056,
-                  mid_compute_c51dae52f7f8ac4e,
-                  mid_compute_97c5e8233a686699,
-                  mid_finalize_7ae3461a92a43152,
-                  mid_getName_0090f7797e403f43,
-                  mid_getType_830fb81b25fc6619,
-                  mid_isAMaximumProbabilityOfCollisionMethod_e470b6d9e0d979db,
-                  mid_pythonDecRef_7ae3461a92a43152,
-                  mid_pythonExtension_a27fc9afd27e559d,
-                  mid_pythonExtension_fefb08975c10f0a1,
+                  mid_init$_0fa09c18fee449d5,
+                  mid_compute_7ed362902ba10174,
+                  mid_compute_4d249761aa92e117,
+                  mid_compute_091f0943f3979390,
+                  mid_compute_44d723598fb6a077,
+                  mid_compute_184c2f4ec5889c74,
+                  mid_compute_0ed38e7bbee7fafc,
+                  mid_compute_77dbe9f2fcda2496,
+                  mid_compute_1c26d4a5b9c10569,
+                  mid_finalize_0fa09c18fee449d5,
+                  mid_getName_11b109bd155ca898,
+                  mid_getType_5d7ecb27bb5e3bc3,
+                  mid_isAMaximumProbabilityOfCollisionMethod_b108b35ef48e27bd,
+                  mid_pythonDecRef_0fa09c18fee449d5,
+                  mid_pythonExtension_492808a339bfa35f,
+                  mid_pythonExtension_3a8e7649f31fdb20,
                   max_mid
                 };
 

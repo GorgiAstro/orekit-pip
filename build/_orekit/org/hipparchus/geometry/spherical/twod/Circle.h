@@ -6,29 +6,29 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
+      namespace partitioning {
+        class Embedding;
+        class Transform;
+        class Hyperplane;
+      }
+      namespace spherical {
+        namespace oned {
+          class S1Point;
+          class Arc;
+          class Sphere1D;
+        }
+        namespace twod {
+          class Circle;
+          class S2Point;
+          class SubCircle;
+          class SphericalPolygonsSet;
+          class Sphere2D;
+        }
+      }
       namespace euclidean {
         namespace threed {
           class Rotation;
           class Vector3D;
-        }
-      }
-      namespace partitioning {
-        class Transform;
-        class Hyperplane;
-        class Embedding;
-      }
-      namespace spherical {
-        namespace twod {
-          class SphericalPolygonsSet;
-          class SubCircle;
-          class Sphere2D;
-          class S2Point;
-          class Circle;
-        }
-        namespace oned {
-          class Arc;
-          class S1Point;
-          class Sphere1D;
         }
       }
       class Point;
@@ -54,30 +54,30 @@ namespace org {
           class Circle : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_c1cd2c1af3ffd51b,
-              mid_init$_00759efea5a3aae3,
-              mid_copySelf_15409f4dd57c6afd,
-              mid_emptyHyperplane_00b467b86e205579,
-              mid_getArc_dcf6ffb70606bae4,
-              mid_getInsideArc_ff776abf59c07ea1,
-              mid_getOffset_80b2470b9511edd1,
-              mid_getOffset_726dc963fac3505e,
-              mid_getPhase_80b2470b9511edd1,
-              mid_getPointAt_5f993a721a1d8c59,
-              mid_getPole_17a952530a808943,
-              mid_getReverse_15409f4dd57c6afd,
-              mid_getTolerance_456d9a2f64d6b28d,
-              mid_getTransform_6a5c6f9d2479f5e6,
-              mid_getXAxis_17a952530a808943,
-              mid_getYAxis_17a952530a808943,
-              mid_project_ac445dfe898b403a,
-              mid_reset_a94622407b723689,
-              mid_revertSelf_7ae3461a92a43152,
-              mid_sameOrientationAs_b99f508aafd89c77,
-              mid_toSpace_8e0fe0b556063cbf,
-              mid_toSubSpace_681cfbcac47b4c3d,
-              mid_wholeHyperplane_00b467b86e205579,
-              mid_wholeSpace_b554ba4417ec0cb0,
+              mid_init$_71a7c3cfed678f9d,
+              mid_init$_875d266deedb47de,
+              mid_copySelf_32f0886c61f7154f,
+              mid_emptyHyperplane_4f34c6c1db57a3eb,
+              mid_getArc_d617d5c3c078b007,
+              mid_getInsideArc_99bf345db36fbfd3,
+              mid_getOffset_bf473e7c74e5ce2b,
+              mid_getOffset_07bb97c2794cf6b1,
+              mid_getPhase_bf473e7c74e5ce2b,
+              mid_getPointAt_9137bba253a33d9c,
+              mid_getPole_d52645e0d4c07563,
+              mid_getReverse_32f0886c61f7154f,
+              mid_getTolerance_dff5885c2c873297,
+              mid_getTransform_d50fe3393e82058b,
+              mid_getXAxis_d52645e0d4c07563,
+              mid_getYAxis_d52645e0d4c07563,
+              mid_project_c48805c2dda937c6,
+              mid_reset_029ff0cbf68ea054,
+              mid_revertSelf_0fa09c18fee449d5,
+              mid_sameOrientationAs_5bc340c02d9ac484,
+              mid_toSpace_77cb6153d008c1ec,
+              mid_toSubSpace_ffd4c8161efaa32f,
+              mid_wholeHyperplane_4f34c6c1db57a3eb,
+              mid_wholeSpace_5a6ba0b36fb0268c,
               max_mid
             };
 

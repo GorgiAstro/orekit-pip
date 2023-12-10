@@ -7,9 +7,9 @@ namespace org {
   namespace orekit {
     namespace rugged {
       namespace utils {
-        class DerivativeGenerator;
         class ExtendedEllipsoid;
         class SpacecraftToObservedBody;
+        class DerivativeGenerator;
       }
       namespace api {
         class AlgorithmId;
@@ -17,35 +17,35 @@ namespace org {
       namespace intersection {
         class IntersectionAlgorithm;
       }
-      namespace linesensor {
-        class SensorPixel;
-        class LineSensor;
-      }
       namespace refraction {
         class AtmosphericRefraction;
       }
-    }
-    namespace bodies {
-      class GeodeticPoint;
-    }
-    namespace time {
-      class AbsoluteDate;
+      namespace linesensor {
+        class LineSensor;
+        class SensorPixel;
+      }
     }
     namespace frames {
       class Transform;
     }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace bodies {
+      class GeodeticPoint;
+    }
   }
   namespace hipparchus {
+    namespace analysis {
+      namespace differentiation {
+        class Derivative;
+      }
+    }
     namespace geometry {
       namespace euclidean {
         namespace threed {
           class Vector3D;
         }
-      }
-    }
-    namespace analysis {
-      namespace differentiation {
-        class Derivative;
       }
     }
   }
@@ -69,31 +69,31 @@ namespace org {
         class Rugged : public ::java::lang::Object {
          public:
           enum {
-            mid_dateLocation_2c41494519aab02c,
-            mid_dateLocation_9d3e14a06d0b2344,
-            mid_directLocation_6b3e9bc65f70f68b,
-            mid_directLocation_70b9e0efe6611035,
-            mid_distanceBetweenLOS_b88fa7195e9e7517,
-            mid_distanceBetweenLOSderivatives_982b0f0601e6abd4,
-            mid_getAlgorithm_0d3941fface9e0dd,
-            mid_getAlgorithmId_41b1271dfac9173f,
-            mid_getBodyToInertial_d55545a64ea4a9a7,
-            mid_getEllipsoid_98afe253151ec70a,
-            mid_getInertialToBody_d55545a64ea4a9a7,
-            mid_getLineSensor_09ab37db90b051e6,
-            mid_getLineSensors_cfcfd130f9013e3e,
-            mid_getMaxDate_aaa854c403487cf3,
-            mid_getMinDate_aaa854c403487cf3,
-            mid_getName_0090f7797e403f43,
-            mid_getRefractionCorrection_c5c91b8d86c254a9,
-            mid_getScToBody_38f80fac5aafac2a,
-            mid_getScToInertial_d55545a64ea4a9a7,
-            mid_inverseLocation_f77004ec6f045f2e,
-            mid_inverseLocation_3b69cb1d1085b47e,
-            mid_inverseLocationDerivatives_9169f46e89806c98,
-            mid_isAberrationOfLightCorrected_e470b6d9e0d979db,
-            mid_isInRange_ee2067c5768b6768,
-            mid_isLightTimeCorrected_e470b6d9e0d979db,
+            mid_dateLocation_4b5bd8dfc4d95546,
+            mid_dateLocation_0a9c33ee5240487c,
+            mid_directLocation_0f95dc097405fc15,
+            mid_directLocation_8bbd71e6fb48822c,
+            mid_distanceBetweenLOS_e3b68595272c4802,
+            mid_distanceBetweenLOSderivatives_0566b28b56fff79b,
+            mid_getAlgorithm_ba405a20d038fdfa,
+            mid_getAlgorithmId_da9f33328b8f3962,
+            mid_getBodyToInertial_687985c59478d29c,
+            mid_getEllipsoid_0cd7cb35607f9c90,
+            mid_getInertialToBody_687985c59478d29c,
+            mid_getLineSensor_c2bbc89b7ea3d3c3,
+            mid_getLineSensors_37528d110cff6b74,
+            mid_getMaxDate_85703d13e302437e,
+            mid_getMinDate_85703d13e302437e,
+            mid_getName_11b109bd155ca898,
+            mid_getRefractionCorrection_8a9b3bb0455f2a2d,
+            mid_getScToBody_688fb4be4b33225a,
+            mid_getScToInertial_687985c59478d29c,
+            mid_inverseLocation_9cfd359020f7e00c,
+            mid_inverseLocation_a03b661721787aa2,
+            mid_inverseLocationDerivatives_f6f19c5a49ccc008,
+            mid_isAberrationOfLightCorrected_b108b35ef48e27bd,
+            mid_isInRange_db6d81809797ddaa,
+            mid_isLightTimeCorrected_b108b35ef48e27bd,
             max_mid
           };
 

@@ -26,17 +26,17 @@ namespace org {
         class DcbDescription : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_getBiasMode_0090f7797e403f43,
-            mid_getDeterminationMethod_0090f7797e403f43,
-            mid_getObservationSampling_f2f64475e4580546,
-            mid_getParameterSpacing_f2f64475e4580546,
-            mid_getTimeSystem_b58d3545739694ee,
-            mid_setBiasMode_e939c6558ae8d313,
-            mid_setDeterminationMethod_e939c6558ae8d313,
-            mid_setObservationSampling_0a2a1ac2721c0336,
-            mid_setParameterSpacing_0a2a1ac2721c0336,
-            mid_setTimeSystem_4733fc8266dc541c,
+            mid_init$_0fa09c18fee449d5,
+            mid_getBiasMode_11b109bd155ca898,
+            mid_getDeterminationMethod_11b109bd155ca898,
+            mid_getObservationSampling_570ce0828f81a2c1,
+            mid_getParameterSpacing_570ce0828f81a2c1,
+            mid_getTimeSystem_47ed81afbc0cea8f,
+            mid_setBiasMode_d0bc48d5b00dc40c,
+            mid_setDeterminationMethod_d0bc48d5b00dc40c,
+            mid_setObservationSampling_99803b0791f320ff,
+            mid_setParameterSpacing_99803b0791f320ff,
+            mid_setTimeSystem_188d9681dd6fbe69,
             max_mid
           };
 

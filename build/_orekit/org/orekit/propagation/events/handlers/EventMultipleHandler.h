@@ -3,22 +3,23 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace ode {
-      namespace events {
-        class Action;
-      }
-    }
+namespace java {
+  namespace util {
+    class List;
   }
+  namespace lang {
+    class Class;
+  }
+}
+namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
+        class EventDetector;
         namespace handlers {
           class EventHandler;
           class EventMultipleHandler;
         }
-        class EventDetector;
       }
       class SpacecraftState;
     }
@@ -26,13 +27,12 @@ namespace org {
       class AbsoluteDate;
     }
   }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
+  namespace hipparchus {
+    namespace ode {
+      namespace events {
+        class Action;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -46,14 +46,14 @@ namespace org {
           class EventMultipleHandler : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_addHandler_79d596a0d2732767,
-              mid_addHandlers_5935b21d1016a436,
-              mid_eventOccurred_66531e3c1769dca9,
-              mid_getHandlers_a6156df500549a58,
-              mid_init_9678bba57553faaf,
-              mid_resetState_7c4cfc7ac2bc3a77,
-              mid_setHandlers_65de9727799c5641,
+              mid_init$_0fa09c18fee449d5,
+              mid_addHandler_2c820fcef7e4ced8,
+              mid_addHandlers_231f1812abdf722a,
+              mid_eventOccurred_abc543fa9701720f,
+              mid_getHandlers_2afa36052df4765d,
+              mid_init_2e343080aa0c9516,
+              mid_resetState_7a28fd3585a5b57c,
+              mid_setHandlers_de3e021e7266b71e,
               max_mid
             };
 

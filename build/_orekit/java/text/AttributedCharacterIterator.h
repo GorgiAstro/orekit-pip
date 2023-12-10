@@ -24,15 +24,15 @@ namespace java {
     class AttributedCharacterIterator : public ::java::text::CharacterIterator {
      public:
       enum {
-        mid_getAllAttributeKeys_e9e1a6780fe94297,
-        mid_getAttribute_331a91ce4e725dc5,
-        mid_getAttributes_d6753b7055940a54,
-        mid_getRunLimit_f2f64475e4580546,
-        mid_getRunLimit_2e7e960d6074d4cd,
-        mid_getRunLimit_beb513c9bdd614d1,
-        mid_getRunStart_f2f64475e4580546,
-        mid_getRunStart_2e7e960d6074d4cd,
-        mid_getRunStart_beb513c9bdd614d1,
+        mid_getAllAttributeKeys_015730311a5bacdc,
+        mid_getAttribute_477b942affd39899,
+        mid_getAttributes_6f5a75ccd8c04465,
+        mid_getRunLimit_570ce0828f81a2c1,
+        mid_getRunLimit_e4773efbe9c5c196,
+        mid_getRunLimit_f0b449a8ed06d97b,
+        mid_getRunStart_570ce0828f81a2c1,
+        mid_getRunStart_e4773efbe9c5c196,
+        mid_getRunStart_f0b449a8ed06d97b,
         max_mid
       };
 

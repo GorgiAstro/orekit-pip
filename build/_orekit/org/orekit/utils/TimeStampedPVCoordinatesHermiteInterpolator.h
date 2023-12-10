@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace utils {
-      class TimeStampedPVCoordinates;
       class CartesianDerivativesFilter;
+      class TimeStampedPVCoordinates;
     }
   }
 }
@@ -25,12 +25,12 @@ namespace org {
       class TimeStampedPVCoordinatesHermiteInterpolator : public ::org::orekit::time::AbstractTimeInterpolator {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_init$_0a2a1ac2721c0336,
-          mid_init$_60d6ef6da0933f47,
-          mid_init$_cf963d44d06e3222,
-          mid_getFilter_237181d932324188,
-          mid_interpolate_a6c4b93bfc4f4626,
+          mid_init$_0fa09c18fee449d5,
+          mid_init$_99803b0791f320ff,
+          mid_init$_297c693ff16234ea,
+          mid_init$_ce04d2837a89861b,
+          mid_getFilter_16e9a7b5414faf2d,
+          mid_interpolate_9ba6099e2bdc7195,
           max_mid
         };
 

@@ -9,9 +9,9 @@ namespace org {
       namespace euclidean {
         namespace threed {
           class Rotation;
-          class Vector3D;
           class FieldVector3D;
           class FieldRotation;
+          class Vector3D;
         }
       }
     }
@@ -19,8 +19,8 @@ namespace org {
   }
   namespace orekit {
     namespace utils {
-      class PVCoordinates;
       class FieldPVCoordinates;
+      class PVCoordinates;
     }
     namespace frames {
       namespace encounter {
@@ -46,18 +46,18 @@ namespace org {
         class PythonEncounterLOF : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_finalize_7ae3461a92a43152,
-            mid_getAxisNormalToCollisionPlane_17a952530a808943,
-            mid_getAxisNormalToCollisionPlane_dc29118b4d22b28d,
-            mid_getFieldOther_b10aa29cc18662da,
-            mid_getName_0090f7797e403f43,
-            mid_getOther_6761e3f334368d44,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
-            mid_rotationFromInertial_891f682396b75876,
-            mid_rotationFromInertial_0483676d141ad17c,
+            mid_init$_0fa09c18fee449d5,
+            mid_finalize_0fa09c18fee449d5,
+            mid_getAxisNormalToCollisionPlane_d52645e0d4c07563,
+            mid_getAxisNormalToCollisionPlane_202e7b3b5ed01afc,
+            mid_getFieldOther_90f77345373c3eb7,
+            mid_getName_11b109bd155ca898,
+            mid_getOther_9b7c658c14883c84,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
+            mid_rotationFromInertial_d59b144da7c7851f,
+            mid_rotationFromInertial_2ba248090f65b129,
             max_mid
           };
 

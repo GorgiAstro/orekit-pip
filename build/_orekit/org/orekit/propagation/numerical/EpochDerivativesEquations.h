@@ -6,12 +6,12 @@
 namespace org {
   namespace orekit {
     namespace propagation {
-      namespace integration {
-        class CombinedDerivatives;
-        class AdditionalDerivativesProvider;
-      }
       namespace numerical {
         class NumericalPropagator;
+      }
+      namespace integration {
+        class AdditionalDerivativesProvider;
+        class CombinedDerivatives;
       }
       class SpacecraftState;
     }
@@ -33,13 +33,13 @@ namespace org {
         class EpochDerivativesEquations : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_350898734686d48f,
-            mid_combinedDerivatives_32bde69742c0babb,
-            mid_getDimension_f2f64475e4580546,
-            mid_getName_0090f7797e403f43,
-            mid_setInitialJacobians_81fc6fb6078d2aa7,
-            mid_setInitialJacobians_8538f9cd1fca7aa5,
-            mid_setInitialJacobians_5602b631022d36a7,
+            mid_init$_0ed4a72bb044bc07,
+            mid_combinedDerivatives_4fc0958a0539e1d3,
+            mid_getDimension_570ce0828f81a2c1,
+            mid_getName_11b109bd155ca898,
+            mid_setInitialJacobians_f43130c50e9fafeb,
+            mid_setInitialJacobians_db5060b3fc07ab0a,
+            mid_setInitialJacobians_9648e5fea30e68b0,
             max_mid
           };
 

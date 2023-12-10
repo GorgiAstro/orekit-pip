@@ -3,29 +3,29 @@
 
 #include "org/hipparchus/stat/descriptive/AbstractStorelessUnivariateStatistic.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace stat {
-      namespace descriptive {
-        namespace moment {
-          class SecondMoment;
-          class Variance;
-        }
-        class AggregatableStatistic;
-        class WeightedEvaluation;
-      }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
-  }
-}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace stat {
+      namespace descriptive {
+        class AggregatableStatistic;
+        namespace moment {
+          class Variance;
+          class SecondMoment;
+        }
+        class WeightedEvaluation;
+      }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
   }
 }
 template<class T> class JArray;
@@ -39,24 +39,24 @@ namespace org {
           class Variance : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_init$_98e08a33c6fbb84a,
-              mid_init$_50a2e0b139e80a58,
-              mid_init$_eb21d3f0d574510d,
-              mid_aggregate_9823a278b951965d,
-              mid_clear_7ae3461a92a43152,
-              mid_copy_419e1a63d190ede9,
-              mid_evaluate_926a8b9763aa0b21,
-              mid_evaluate_568f42d2326d41b5,
-              mid_evaluate_0a7ff474793a505a,
-              mid_evaluate_5d62632feda90f27,
-              mid_evaluate_431214b6e4f01f3c,
-              mid_evaluate_f1d236bdd09f5396,
-              mid_getN_a27fc9afd27e559d,
-              mid_getResult_456d9a2f64d6b28d,
-              mid_increment_77e0f9a1f260e2e5,
-              mid_isBiasCorrected_e470b6d9e0d979db,
-              mid_withBiasCorrection_2309f759fa1c365a,
+              mid_init$_0fa09c18fee449d5,
+              mid_init$_7d2491dc61f6c936,
+              mid_init$_bd04c9335fb9e4cf,
+              mid_init$_2e37288d51fb7ec1,
+              mid_aggregate_193b2539f8f1ef0d,
+              mid_clear_0fa09c18fee449d5,
+              mid_copy_69ecd18766deb58c,
+              mid_evaluate_1c41301ff6e224e7,
+              mid_evaluate_81770d1e77838f28,
+              mid_evaluate_556bede10daac330,
+              mid_evaluate_2634be61548fc62b,
+              mid_evaluate_82195b7753559055,
+              mid_evaluate_70750df077661d7e,
+              mid_getN_492808a339bfa35f,
+              mid_getResult_dff5885c2c873297,
+              mid_increment_17db3a65980d3441,
+              mid_isBiasCorrected_b108b35ef48e27bd,
+              mid_withBiasCorrection_cff1120d0d93730e,
               max_mid
             };
 

@@ -3,28 +3,21 @@
 
 #include "org/orekit/propagation/FieldAbstractPropagator.h"
 
-namespace java {
-  namespace util {
-    class List;
-    class Collection;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace propagation {
       namespace integration {
         class FieldAdditionalDerivativesProvider;
       }
+      class PropagationType;
+      class FieldSpacecraftState;
+      class FieldEphemerisGenerator;
       namespace events {
         class FieldEventDetector;
       }
-      class FieldEphemerisGenerator;
-      class PropagationType;
-      class FieldSpacecraftState;
     }
     namespace attitudes {
       class AttitudeProvider;
@@ -33,8 +26,15 @@ namespace org {
       class FieldAbsoluteDate;
     }
   }
-  namespace hipparchus {
-    class CalculusFieldElement;
+}
+namespace java {
+  namespace util {
+    class List;
+    class Collection;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -47,39 +47,39 @@ namespace org {
         class FieldAbstractIntegratedPropagator : public ::org::orekit::propagation::FieldAbstractPropagator {
          public:
           enum {
-            mid_addAdditionalDerivativesProvider_9a993a9a36b8e365,
-            mid_addEventDetector_1843b26af41f9c8e,
-            mid_clearEventsDetectors_7ae3461a92a43152,
-            mid_getAdditionalDerivativesProviders_a6156df500549a58,
-            mid_getBasicDimension_f2f64475e4580546,
-            mid_getCalls_f2f64475e4580546,
-            mid_getEphemerisGenerator_a9ea70419e870eb4,
-            mid_getEventsDetectors_cfcfd130f9013e3e,
-            mid_getIntegratorName_0090f7797e403f43,
-            mid_getManagedAdditionalStates_0f62ccf08eef5924,
-            mid_getMu_e6d4d3215c30992a,
-            mid_getPropagationType_cb6f177f3e3f8613,
-            mid_getResetAtEnd_e470b6d9e0d979db,
-            mid_isAdditionalStateManaged_6b161f495ea569b8,
-            mid_propagate_85b5a3e9101d7c1f,
-            mid_propagate_195e701ebc75aca3,
-            mid_setAttitudeProvider_8109c1a27d4471d3,
-            mid_setMu_03a16642f77779e7,
-            mid_setResetAtEnd_50a2e0b139e80a58,
-            mid_getPositionAngleType_2571e8fe1cede425,
-            mid_getOrbitType_63ea5cd020bf7bf1,
-            mid_setPositionAngleType_07350e8db766ef51,
-            mid_beforeIntegration_acdd8180a5dc1a8d,
-            mid_afterIntegration_7ae3461a92a43152,
-            mid_getInitialIntegrationState_a553824829fc2514,
-            mid_createMapper_b12e4020688f2d3a,
-            mid_getMainStateEquations_9199626b9ad748bb,
-            mid_setUpEventDetector_90a65ad4a4031020,
-            mid_initMapper_205c34b8e33cf33f,
-            mid_setOrbitType_bbd02639b41d4055,
-            mid_getIntegrator_b792653519a95a45,
-            mid_setUpUserEventDetectors_7ae3461a92a43152,
-            mid_isMeanOrbit_cb6f177f3e3f8613,
+            mid_addAdditionalDerivativesProvider_aee4c637cf10d4b6,
+            mid_addEventDetector_f929ebd2a84dbfe7,
+            mid_clearEventsDetectors_0fa09c18fee449d5,
+            mid_getAdditionalDerivativesProviders_2afa36052df4765d,
+            mid_getBasicDimension_570ce0828f81a2c1,
+            mid_getCalls_570ce0828f81a2c1,
+            mid_getEphemerisGenerator_54ac43f1e933cf20,
+            mid_getEventsDetectors_37528d110cff6b74,
+            mid_getIntegratorName_11b109bd155ca898,
+            mid_getManagedAdditionalStates_692f4257baa8d3c3,
+            mid_getMu_eba8e72a22c984ac,
+            mid_getPropagationType_b2e499d9c793fc25,
+            mid_getResetAtEnd_b108b35ef48e27bd,
+            mid_isAdditionalStateManaged_7edad2c2f64f4d68,
+            mid_propagate_f6f1ea8aef3019eb,
+            mid_propagate_fc770c29e3468de8,
+            mid_setAttitudeProvider_3cff7c75ea06698c,
+            mid_setMu_072c8635f2164db9,
+            mid_setResetAtEnd_bd04c9335fb9e4cf,
+            mid_getPositionAngleType_8f17e83e5a86217c,
+            mid_setUpEventDetector_847da6d9d3822865,
+            mid_initMapper_484998d88974267b,
+            mid_setOrbitType_48a062bf972c4ab5,
+            mid_setPositionAngleType_4ca1644ed7c72fe3,
+            mid_getOrbitType_e29360d311dc0e20,
+            mid_isMeanOrbit_b2e499d9c793fc25,
+            mid_getIntegrator_64366de6ee97364a,
+            mid_beforeIntegration_8e8de2be1664674a,
+            mid_afterIntegration_0fa09c18fee449d5,
+            mid_getInitialIntegrationState_02cea343d9f71933,
+            mid_createMapper_16c8184497a1d794,
+            mid_getMainStateEquations_75bae68924620d17,
+            mid_setUpUserEventDetectors_0fa09c18fee449d5,
             max_mid
           };
 

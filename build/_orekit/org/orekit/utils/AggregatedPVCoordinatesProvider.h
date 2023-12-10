@@ -6,9 +6,9 @@
 namespace org {
   namespace orekit {
     namespace utils {
-      class TimeStampedPVCoordinates;
       class TimeSpanMap;
       class PVCoordinatesProvider;
+      class TimeStampedPVCoordinates;
     }
     namespace frames {
       class Frame;
@@ -41,12 +41,12 @@ namespace org {
       class AggregatedPVCoordinatesProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_2af49f877af16f8e,
-          mid_init$_ec7b19091f399515,
-          mid_getMaxDate_aaa854c403487cf3,
-          mid_getMinDate_aaa854c403487cf3,
-          mid_getPVCoordinates_20557c175f7cd899,
-          mid_getPosition_5343d34e5fbffcdd,
+          mid_init$_c0f77b4878f385fe,
+          mid_init$_eaf1e6dc246e4e06,
+          mid_getMaxDate_85703d13e302437e,
+          mid_getMinDate_85703d13e302437e,
+          mid_getPVCoordinates_cfeec55f7c63ec64,
+          mid_getPosition_41a826780212dfea,
           max_mid
         };
 

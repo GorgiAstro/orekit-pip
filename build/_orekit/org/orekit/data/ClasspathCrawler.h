@@ -26,8 +26,8 @@ namespace org {
       class ClasspathCrawler : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_5712fb35729cb71f,
-          mid_init$_5ca111ce7ec4f53d,
+          mid_init$_b8ac5bb33398c2cf,
+          mid_init$_c976573e5d3f191a,
           max_mid
         };
 

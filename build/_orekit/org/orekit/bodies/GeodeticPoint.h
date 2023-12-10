@@ -3,6 +3,15 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -19,15 +28,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -37,19 +37,19 @@ namespace org {
       class GeodeticPoint : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_d0d6094fbd7015c5,
-          mid_equals_229c87223f486349,
-          mid_getAltitude_456d9a2f64d6b28d,
-          mid_getEast_17a952530a808943,
-          mid_getLatitude_456d9a2f64d6b28d,
-          mid_getLongitude_456d9a2f64d6b28d,
-          mid_getNadir_17a952530a808943,
-          mid_getNorth_17a952530a808943,
-          mid_getSouth_17a952530a808943,
-          mid_getWest_17a952530a808943,
-          mid_getZenith_17a952530a808943,
-          mid_hashCode_f2f64475e4580546,
-          mid_toString_0090f7797e403f43,
+          mid_init$_2c56b6dd4d4b1dec,
+          mid_equals_65c7d273e80d497a,
+          mid_getAltitude_dff5885c2c873297,
+          mid_getEast_d52645e0d4c07563,
+          mid_getLatitude_dff5885c2c873297,
+          mid_getLongitude_dff5885c2c873297,
+          mid_getNadir_d52645e0d4c07563,
+          mid_getNorth_d52645e0d4c07563,
+          mid_getSouth_d52645e0d4c07563,
+          mid_getWest_d52645e0d4c07563,
+          mid_getZenith_d52645e0d4c07563,
+          mid_hashCode_570ce0828f81a2c1,
+          mid_toString_11b109bd155ca898,
           max_mid
         };
 

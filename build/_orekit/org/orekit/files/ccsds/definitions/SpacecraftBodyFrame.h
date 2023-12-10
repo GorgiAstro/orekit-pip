@@ -8,8 +8,8 @@ namespace org {
     namespace files {
       namespace ccsds {
         namespace definitions {
-          class SpacecraftBodyFrame$BaseEquipment;
           class SpacecraftBodyFrame;
+          class SpacecraftBodyFrame$BaseEquipment;
         }
       }
     }
@@ -32,11 +32,11 @@ namespace org {
           class SpacecraftBodyFrame : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_29f7f9a07e6883ba,
-              mid_getBaseEquipment_fd451afbba7c6279,
-              mid_getLabel_0090f7797e403f43,
-              mid_parse_5cb79273114edd39,
-              mid_toString_0090f7797e403f43,
+              mid_init$_bb8382b31d31cc2d,
+              mid_getBaseEquipment_69047e61c289d777,
+              mid_getLabel_11b109bd155ca898,
+              mid_parse_6f7b89a4206c1930,
+              mid_toString_11b109bd155ca898,
               max_mid
             };
 

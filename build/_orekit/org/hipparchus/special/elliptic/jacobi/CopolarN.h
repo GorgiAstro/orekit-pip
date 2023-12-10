@@ -19,9 +19,9 @@ namespace org {
           class CopolarN : public ::java::lang::Object {
            public:
             enum {
-              mid_cn_456d9a2f64d6b28d,
-              mid_dn_456d9a2f64d6b28d,
-              mid_sn_456d9a2f64d6b28d,
+              mid_cn_dff5885c2c873297,
+              mid_dn_dff5885c2c873297,
+              mid_sn_dff5885c2c873297,
               max_mid
             };
 

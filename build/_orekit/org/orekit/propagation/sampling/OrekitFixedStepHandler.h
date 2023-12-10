@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
@@ -16,6 +11,11 @@ namespace org {
     namespace propagation {
       class SpacecraftState;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,9 +28,9 @@ namespace org {
         class OrekitFixedStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_finish_2b88003f931f70a7,
-            mid_handleStep_2b88003f931f70a7,
-            mid_init_703918df646bd2ae,
+            mid_finish_0ee5c56004643a2e,
+            mid_handleStep_0ee5c56004643a2e,
+            mid_init_eb5e26882ba2d9b9,
             max_mid
           };
 

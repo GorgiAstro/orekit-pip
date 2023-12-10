@@ -4,15 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-    }
-  }
   namespace orekit {
     namespace attitudes {
       class AttitudeProvider;
@@ -28,6 +19,15 @@ namespace org {
     }
     namespace utils {
       class ParameterDriver;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
     }
   }
 }
@@ -50,9 +50,9 @@ namespace org {
           class OnBoardAntennaOneWayGNSSRangeModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_dd70a907d504c65c,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_modifyWithoutDerivatives_811f96960c94c1de,
+              mid_init$_42136dcb6d46591a,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_modifyWithoutDerivatives_d1815d998cba71e9,
               max_mid
             };
 

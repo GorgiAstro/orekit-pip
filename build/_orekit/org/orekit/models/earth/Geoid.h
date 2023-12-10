@@ -5,15 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class TimeStampedPVCoordinates;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace bodies {
-      class GeodeticPoint;
-      class FieldGeodeticPoint;
+    namespace models {
+      namespace earth {
+        class ReferenceEllipsoid;
+        class EarthShape;
+      }
     }
     namespace forces {
       namespace gravity {
@@ -22,24 +18,28 @@ namespace org {
         }
       }
     }
-    namespace models {
-      namespace earth {
-        class ReferenceEllipsoid;
-        class EarthShape;
-      }
+    namespace frames {
+      class Frame;
     }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
+    }
+    namespace bodies {
+      class FieldGeodeticPoint;
+      class GeodeticPoint;
+    }
+    namespace utils {
+      class TimeStampedPVCoordinates;
     }
   }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
-          class FieldVector3D;
           class FieldLine;
+          class FieldVector3D;
+          class Vector3D;
           class Line;
         }
       }
@@ -61,18 +61,18 @@ namespace org {
         class Geoid : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_ee5218bc025d40ec,
-            mid_getBodyFrame_c8fe21bcdac65bf6,
-            mid_getEllipsoid_1eef7b7a6c58a550,
-            mid_getIntersectionPoint_9dbbe2475f1298d4,
-            mid_getIntersectionPoint_4a2d37785a37d918,
-            mid_getUndulation_3a8282fb1941862d,
-            mid_projectToGround_6b6c0bf817ea4492,
-            mid_projectToGround_a871d6772929c652,
-            mid_transform_2637885099554561,
-            mid_transform_393fcc10540ff032,
-            mid_transform_d471208f838d1a3d,
-            mid_transform_588d378a3b637077,
+            mid_init$_3e46faf0843f94b0,
+            mid_getBodyFrame_b86f9f61d97a7244,
+            mid_getEllipsoid_eead5b864957d48b,
+            mid_getIntersectionPoint_e81d59d1bc381e5e,
+            mid_getIntersectionPoint_ec4b828b0bd3964b,
+            mid_getUndulation_51525816d9b1365b,
+            mid_projectToGround_7ddc39790e3dd04b,
+            mid_projectToGround_73ba258c5f91e9db,
+            mid_transform_5f1451dffd8cde56,
+            mid_transform_6cf64433187e46c3,
+            mid_transform_e019f2426bfb11d5,
+            mid_transform_dd18b1b42137f809,
             max_mid
           };
 

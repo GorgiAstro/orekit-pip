@@ -5,16 +5,16 @@
 
 namespace org {
   namespace orekit {
-    namespace forces {
-      namespace radiation {
-        class RadiationSensitive;
-      }
-    }
     namespace bodies {
       class OneAxisEllipsoid;
     }
     namespace utils {
       class ExtendedPVCoordinatesProvider;
+    }
+    namespace forces {
+      namespace radiation {
+        class RadiationSensitive;
+      }
     }
   }
 }
@@ -35,15 +35,15 @@ namespace org {
             class DSSTSolarRadiationPressure : public ::org::orekit::propagation::semianalytical::dsst::forces::AbstractGaussianContribution {
              public:
               enum {
-                mid_init$_0051a626c6c8523b,
-                mid_init$_3f2c3635f944dc47,
-                mid_init$_4d9dda243b5d66bd,
-                mid_init$_4e97cdcac87a62b7,
-                mid_getEquatorialRadius_456d9a2f64d6b28d,
-                mid_getSpacecraft_a0124c4a4e37e849,
-                mid_getParametersDriversWithoutMu_a6156df500549a58,
-                mid_getLLimits_4ece4b82b4394674,
-                mid_getLLimits_f53f254b7878e0dd,
+                mid_init$_67bf70f4c00ef897,
+                mid_init$_4ea24182ae12d009,
+                mid_init$_31d9b2733d5b0c58,
+                mid_init$_2bd38fab3137bf0b,
+                mid_getEquatorialRadius_dff5885c2c873297,
+                mid_getSpacecraft_df6c7f3bc1979ce3,
+                mid_getLLimits_04690aaa2b6db52c,
+                mid_getLLimits_7442885516ff2293,
+                mid_getParametersDriversWithoutMu_2afa36052df4765d,
                 max_mid
               };
 

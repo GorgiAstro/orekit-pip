@@ -5,8 +5,8 @@
 
 namespace java {
   namespace io {
-    class IOException;
     class FileNotFoundException;
+    class IOException;
     class File;
     class FileDescriptor;
   }
@@ -23,17 +23,17 @@ namespace java {
     class FileOutputStream : public ::java::io::OutputStream {
      public:
       enum {
-        mid_init$_46e66c77c82c9a6b,
-        mid_init$_451cf111c3bab36d,
-        mid_init$_e939c6558ae8d313,
-        mid_init$_cd7bcee0834329b0,
-        mid_init$_d1dd1bdcf55f8f80,
-        mid_close_7ae3461a92a43152,
-        mid_getFD_0498b7250232ff82,
-        mid_write_9c4b35f0a6dc87f3,
-        mid_write_0a2a1ac2721c0336,
-        mid_write_125b1e9f043b29f8,
-        mid_finalize_7ae3461a92a43152,
+        mid_init$_0613af62f2ba5dba,
+        mid_init$_9d90d2b41ddf88a5,
+        mid_init$_d0bc48d5b00dc40c,
+        mid_init$_b98d6d989298aaff,
+        mid_init$_d6df10f4e35ef1e8,
+        mid_close_0fa09c18fee449d5,
+        mid_getFD_1b2c26fd91c09af1,
+        mid_write_20012b3010a39c05,
+        mid_write_99803b0791f320ff,
+        mid_write_d7af9aedcdd3845b,
+        mid_finalize_0fa09c18fee449d5,
         max_mid
       };
 

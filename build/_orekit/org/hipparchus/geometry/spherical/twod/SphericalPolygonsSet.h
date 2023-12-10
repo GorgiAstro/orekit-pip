@@ -6,28 +6,28 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
+      namespace partitioning {
+        class SubHyperplane;
+        class BSPTree;
+      }
       namespace enclosing {
         class EnclosingBall;
       }
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
       namespace spherical {
         namespace twod {
-          class SphericalPolygonsSet;
-          class Sphere2D;
           class S2Point;
           class Vertex;
+          class SphericalPolygonsSet;
+          class Sphere2D;
         }
         namespace oned {
           class Sphere1D;
         }
       }
-      namespace partitioning {
-        class BSPTree;
-        class SubHyperplane;
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
       }
     }
     namespace exception {
@@ -56,16 +56,16 @@ namespace org {
           class SphericalPolygonsSet : public ::org::hipparchus::geometry::partitioning::AbstractRegion {
            public:
             enum {
-              mid_init$_77e0f9a1f260e2e5,
-              mid_init$_c8661dab4977d04c,
-              mid_init$_c1cd2c1af3ffd51b,
-              mid_init$_3e72dd0bd3a69a59,
-              mid_init$_b832ff2fd1b54c87,
-              mid_init$_f8298e0c9cdbb72c,
-              mid_buildNew_e9fb7b0dabb95171,
-              mid_getBoundaryLoops_a6156df500549a58,
-              mid_getEnclosingCap_75182acb0b7e2475,
-              mid_computeGeometricalProperties_7ae3461a92a43152,
+              mid_init$_17db3a65980d3441,
+              mid_init$_b83ff0107ca69f11,
+              mid_init$_71a7c3cfed678f9d,
+              mid_init$_748cd2c51a955d77,
+              mid_init$_1f4d55383238fbb5,
+              mid_init$_e17147739aee0b14,
+              mid_buildNew_b3112628ccbb7952,
+              mid_getBoundaryLoops_2afa36052df4765d,
+              mid_getEnclosingCap_a740d2831b9e3b92,
+              mid_computeGeometricalProperties_0fa09c18fee449d5,
               max_mid
             };
 

@@ -26,8 +26,8 @@ namespace org {
         class FieldODEFixedStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_handleStep_13050c2cae3dabdf,
-            mid_init_e6d23212b178b64e,
+            mid_handleStep_e3880ccdd72f7f23,
+            mid_init_81b5dd1fb920fdc1,
             max_mid
           };
 

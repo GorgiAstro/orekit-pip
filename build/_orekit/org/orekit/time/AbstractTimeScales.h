@@ -6,10 +6,10 @@
 namespace org {
   namespace orekit {
     namespace time {
+      class GMSTScale;
       class TimeScales;
       class UT1Scale;
       class AbsoluteDate;
-      class GMSTScale;
     }
     namespace utils {
       class IERSConventions;
@@ -30,27 +30,27 @@ namespace org {
       class AbstractTimeScales : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_createBesselianEpoch_a76f1ca2cc1b76e5,
-          mid_createJulianEpoch_a76f1ca2cc1b76e5,
-          mid_getBeidouEpoch_aaa854c403487cf3,
-          mid_getCcsdsEpoch_aaa854c403487cf3,
-          mid_getFiftiesEpoch_aaa854c403487cf3,
-          mid_getFutureInfinity_aaa854c403487cf3,
-          mid_getGMST_9d529a30e942a554,
-          mid_getGalileoEpoch_aaa854c403487cf3,
-          mid_getGlonassEpoch_aaa854c403487cf3,
-          mid_getGpsEpoch_aaa854c403487cf3,
-          mid_getIrnssEpoch_aaa854c403487cf3,
-          mid_getJ2000Epoch_aaa854c403487cf3,
-          mid_getJavaEpoch_aaa854c403487cf3,
-          mid_getJulianEpoch_aaa854c403487cf3,
-          mid_getModifiedJulianEpoch_aaa854c403487cf3,
-          mid_getPastInfinity_aaa854c403487cf3,
-          mid_getQzssEpoch_aaa854c403487cf3,
-          mid_getUT1_603d1058a5002a04,
-          mid_getUT1_7b22e00b4ab08eba,
-          mid_getEopHistory_7544a283da003d74,
+          mid_init$_0fa09c18fee449d5,
+          mid_createBesselianEpoch_149a9211a037d799,
+          mid_createJulianEpoch_149a9211a037d799,
+          mid_getBeidouEpoch_85703d13e302437e,
+          mid_getCcsdsEpoch_85703d13e302437e,
+          mid_getFiftiesEpoch_85703d13e302437e,
+          mid_getFutureInfinity_85703d13e302437e,
+          mid_getGMST_17da19434c6eaf77,
+          mid_getGalileoEpoch_85703d13e302437e,
+          mid_getGlonassEpoch_85703d13e302437e,
+          mid_getGpsEpoch_85703d13e302437e,
+          mid_getIrnssEpoch_85703d13e302437e,
+          mid_getJ2000Epoch_85703d13e302437e,
+          mid_getJavaEpoch_85703d13e302437e,
+          mid_getJulianEpoch_85703d13e302437e,
+          mid_getModifiedJulianEpoch_85703d13e302437e,
+          mid_getPastInfinity_85703d13e302437e,
+          mid_getQzssEpoch_85703d13e302437e,
+          mid_getUT1_03564ba2f50e6e3b,
+          mid_getUT1_9806ff584bac5289,
+          mid_getEopHistory_f7b9f8d7c24d861d,
           max_mid
         };
 

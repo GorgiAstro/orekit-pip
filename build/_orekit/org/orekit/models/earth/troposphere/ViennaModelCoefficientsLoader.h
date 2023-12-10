@@ -4,6 +4,9 @@
 #include "org/orekit/data/AbstractSelfFeedingLoader.h"
 
 namespace java {
+  namespace text {
+    class ParseException;
+  }
   namespace io {
     class IOException;
     class InputStream;
@@ -12,18 +15,15 @@ namespace java {
     class Class;
     class String;
   }
-  namespace text {
-    class ParseException;
-  }
 }
 namespace org {
   namespace orekit {
-    namespace time {
-      class DateTimeComponents;
-    }
     namespace data {
       class DataProvidersManager;
       class DataLoader;
+    }
+    namespace time {
+      class DateTimeComponents;
     }
     namespace models {
       namespace earth {
@@ -45,16 +45,16 @@ namespace org {
           class ViennaModelCoefficientsLoader : public ::org::orekit::data::AbstractSelfFeedingLoader {
            public:
             enum {
-              mid_init$_320383c73b780816,
-              mid_init$_7cde855d7ec2fcd3,
-              mid_init$_5ac77ae5b8feddee,
-              mid_getA_7cdc325af0834901,
-              mid_getSupportedNames_0090f7797e403f43,
-              mid_getZenithDelay_7cdc325af0834901,
-              mid_loadData_ec60cb5f4b3de555,
-              mid_loadViennaCoefficients_7ae3461a92a43152,
-              mid_loadViennaCoefficients_994b26ed44999e86,
-              mid_stillAcceptsData_e470b6d9e0d979db,
+              mid_init$_10464a1e1406b2a8,
+              mid_init$_e2acdcd5ca89a6e6,
+              mid_init$_615a551bd8547b2e,
+              mid_getA_60c7040667a7dc5c,
+              mid_getSupportedNames_11b109bd155ca898,
+              mid_getZenithDelay_60c7040667a7dc5c,
+              mid_loadData_1815f85c118161ad,
+              mid_loadViennaCoefficients_0fa09c18fee449d5,
+              mid_loadViennaCoefficients_4d63b530baf1ccb7,
+              mid_stillAcceptsData_b108b35ef48e27bd,
               max_mid
             };
 

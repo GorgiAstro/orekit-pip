@@ -3,6 +3,28 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
+  namespace orekit {
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace forces {
+      namespace empirical {
+        class AccelerationModel;
+      }
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,28 +32,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace forces {
-      namespace empirical {
-        class AccelerationModel;
-      }
-    }
-    namespace propagation {
-      class SpacecraftState;
-      class FieldSpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -44,11 +44,11 @@ namespace org {
         class PolynomialAccelerationModel : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_da0696ca02234263,
-            mid_getParametersDrivers_a6156df500549a58,
-            mid_init_3d13474d79f5e7bc,
-            mid_signedAmplitude_79518d097c897d26,
-            mid_signedAmplitude_4368a5d862927c08,
+            mid_init$_78fab9ce536a813d,
+            mid_getParametersDrivers_2afa36052df4765d,
+            mid_init_826b4eda94da4e78,
+            mid_signedAmplitude_8bdf60d5551eceaf,
+            mid_signedAmplitude_0b7191d207b9680f,
             max_mid
           };
 

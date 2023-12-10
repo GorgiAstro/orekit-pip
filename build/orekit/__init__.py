@@ -21,8 +21,8 @@ class InvalidArgsError(Exception):
 
 _orekit._set_exception_types(JavaError, InvalidArgsError)
 
-VERSION = "12.0"
-CLASSPATH = [os.path.join(__module_dir__, "orekit-12.0.jar"), os.path.join(__module_dir__, "hipparchus-core-3.0.jar"), os.path.join(__module_dir__, "hipparchus-fitting-3.0.jar"), os.path.join(__module_dir__, "hipparchus-filtering-3.0.jar"), os.path.join(__module_dir__, "hipparchus-geometry-3.0.jar"), os.path.join(__module_dir__, "hipparchus-ode-3.0.jar"), os.path.join(__module_dir__, "hipparchus-optim-3.0.jar"), os.path.join(__module_dir__, "hipparchus-stat-3.0.jar"), os.path.join(__module_dir__, "rugged-3.0.jar")]
+VERSION = "12.0.0"
+CLASSPATH = [os.path.join(__module_dir__, "orekit-12.0.jar"), os.path.join(__module_dir__, "hipparchus-optim-3.0.jar"), os.path.join(__module_dir__, "rugged-3.0.jar"), os.path.join(__module_dir__, "hipparchus-stat-3.0.jar"), os.path.join(__module_dir__, "hipparchus-filtering-3.0.jar"), os.path.join(__module_dir__, "hipparchus-ode-3.0.jar"), os.path.join(__module_dir__, "hipparchus-fitting-3.0.jar"), os.path.join(__module_dir__, "hipparchus-geometry-3.0.jar"), os.path.join(__module_dir__, "hipparchus-core-3.0.jar")]
 CLASSPATH = os.pathsep.join(CLASSPATH)
 _orekit.CLASSPATH = CLASSPATH
 _orekit._set_function_self(_orekit.initVM, _orekit)

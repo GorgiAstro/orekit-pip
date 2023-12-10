@@ -4,6 +4,15 @@
 #include "org/orekit/ssa/collision/shorttermencounter/probability/twod/AbstractShortTermEncounter1DNumerical2DPOCMethod.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace analysis {
+      namespace integration {
+        class FieldUnivariateIntegrator;
+        class UnivariateIntegrator;
+      }
+    }
+  }
   namespace orekit {
     namespace ssa {
       namespace collision {
@@ -16,17 +25,8 @@ namespace org {
         }
       }
       namespace metrics {
-        class ProbabilityOfCollision;
         class FieldProbabilityOfCollision;
-      }
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
-    namespace analysis {
-      namespace integration {
-        class FieldUnivariateIntegrator;
-        class UnivariateIntegrator;
+        class ProbabilityOfCollision;
       }
     }
   }
@@ -49,11 +49,11 @@ namespace org {
               class Patera2005 : public ::org::orekit::ssa::collision::shorttermencounter::probability::twod::AbstractShortTermEncounter1DNumerical2DPOCMethod {
                public:
                 enum {
-                  mid_init$_7ae3461a92a43152,
-                  mid_init$_2a367ff12676817c,
-                  mid_compute_61ec0633a7b37601,
-                  mid_compute_ddd31c5991d1fe60,
-                  mid_getType_830fb81b25fc6619,
+                  mid_init$_0fa09c18fee449d5,
+                  mid_init$_4ee143e57030d3b8,
+                  mid_compute_194bff03a32ceae7,
+                  mid_compute_acd6f33dacb379ff,
+                  mid_getType_5d7ecb27bb5e3bc3,
                   max_mid
                 };
 

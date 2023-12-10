@@ -6,11 +6,11 @@
 namespace org {
   namespace hipparchus {
     namespace analysis {
-      namespace polynomials {
-        class PolynomialFunctionNewtonForm;
-      }
       namespace interpolation {
         class UnivariateInterpolator;
+      }
+      namespace polynomials {
+        class PolynomialFunctionNewtonForm;
       }
     }
     namespace exception {
@@ -36,9 +36,9 @@ namespace org {
         class DividedDifferenceInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_interpolate_32a936e876fb7ecf,
-            mid_computeDividedDifference_0f29b7d9f77b462e,
+            mid_init$_0fa09c18fee449d5,
+            mid_interpolate_40ae0dc6172d15d3,
+            mid_computeDividedDifference_96bbba26ca51c0d1,
             max_mid
           };
 

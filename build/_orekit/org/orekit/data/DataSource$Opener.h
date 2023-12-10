@@ -22,9 +22,9 @@ namespace org {
       class DataSource$Opener : public ::java::lang::Object {
        public:
         enum {
-          mid_openReaderOnce_8476c88b3f0eb61c,
-          mid_openStreamOnce_eafcb03912e8859c,
-          mid_rawDataIsBinary_e470b6d9e0d979db,
+          mid_openReaderOnce_26c6a3f16521a493,
+          mid_openStreamOnce_51fdc45647b8e866,
+          mid_rawDataIsBinary_b108b35ef48e27bd,
           max_mid
         };
 

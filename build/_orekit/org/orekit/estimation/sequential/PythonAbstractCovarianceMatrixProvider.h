@@ -3,12 +3,6 @@
 
 #include "org/orekit/estimation/sequential/AbstractCovarianceMatrixProvider.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace linear {
@@ -21,6 +15,12 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -31,12 +31,12 @@ namespace org {
         class PythonAbstractCovarianceMatrixProvider : public ::org::orekit::estimation::sequential::AbstractCovarianceMatrixProvider {
          public:
           enum {
-            mid_init$_30aa151fd03f3096,
-            mid_finalize_7ae3461a92a43152,
-            mid_getProcessNoiseMatrix_dc7483997a2e9c4d,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
+            mid_init$_c67473bd6cfaa69b,
+            mid_finalize_0fa09c18fee449d5,
+            mid_getProcessNoiseMatrix_26148f4ae87f73a3,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
             max_mid
           };
 

@@ -5,12 +5,12 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeScale;
-    }
     namespace frames {
       class ITRFVersion$Converter;
       class ITRFVersion;
+    }
+    namespace time {
+      class TimeScale;
     }
   }
 }
@@ -29,15 +29,15 @@ namespace org {
       class ITRFVersion : public ::java::lang::Enum {
        public:
         enum {
-          mid_getConverter_a2a5dc504f064274,
-          mid_getConverter_6fd5aeb2f940da50,
-          mid_getITRFVersion_865e110b55770974,
-          mid_getITRFVersion_3b8078a2775f5351,
-          mid_getLast_f157e1cf87d45e2d,
-          mid_getName_0090f7797e403f43,
-          mid_getYear_f2f64475e4580546,
-          mid_valueOf_865e110b55770974,
-          mid_values_143fcc92fa54b7e5,
+          mid_getConverter_e79e2ee72fd76c00,
+          mid_getConverter_2b2635d05c2058b1,
+          mid_getITRFVersion_94090907cc596f0f,
+          mid_getITRFVersion_fbecc2ef02535c5e,
+          mid_getLast_8a73c81b6e5084ce,
+          mid_getName_11b109bd155ca898,
+          mid_getYear_570ce0828f81a2c1,
+          mid_valueOf_94090907cc596f0f,
+          mid_values_c913bbb9aa153cf0,
           max_mid
         };
 

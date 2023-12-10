@@ -19,14 +19,14 @@ namespace java {
     class Dictionary : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_7ae3461a92a43152,
-        mid_elements_44964b2b3d187632,
-        mid_get_ed50a8b49b8274dc,
-        mid_isEmpty_e470b6d9e0d979db,
-        mid_keys_44964b2b3d187632,
-        mid_put_286de79696ab0806,
-        mid_remove_ed50a8b49b8274dc,
-        mid_size_f2f64475e4580546,
+        mid_init$_0fa09c18fee449d5,
+        mid_elements_0dc02dfa0be4cd25,
+        mid_get_9facd1449e0950d3,
+        mid_isEmpty_b108b35ef48e27bd,
+        mid_keys_0dc02dfa0be4cd25,
+        mid_put_af8aa32ee9c1f184,
+        mid_remove_9facd1449e0950d3,
+        mid_size_570ce0828f81a2c1,
         max_mid
       };
 

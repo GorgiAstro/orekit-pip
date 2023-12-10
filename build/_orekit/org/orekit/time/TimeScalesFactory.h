@@ -6,22 +6,22 @@
 namespace org {
   namespace orekit {
     namespace time {
+      class TCBScale;
+      class GMSTScale;
+      class TAIScale;
+      class TDBScale;
+      class GalileoScale;
+      class QZSSScale;
+      class TTScale;
+      class UTCScale;
+      class IRNSSScale;
+      class BDTScale;
       class LazyLoadedTimeScales;
+      class UTCTAIOffsetsLoader;
       class UT1Scale;
       class GLONASSScale;
-      class BDTScale;
-      class UTCScale;
-      class TTScale;
-      class UTCTAIOffsetsLoader;
-      class TDBScale;
       class GPSScale;
-      class QZSSScale;
-      class TCBScale;
       class TCGScale;
-      class TAIScale;
-      class GalileoScale;
-      class IRNSSScale;
-      class GMSTScale;
     }
     namespace frames {
       class EOPHistory;
@@ -48,25 +48,25 @@ namespace org {
       class TimeScalesFactory : public ::java::lang::Object {
        public:
         enum {
-          mid_addDefaultUTCTAIOffsetsLoaders_7ae3461a92a43152,
-          mid_addUTCTAIOffsetsLoader_fd1ab7015414bef0,
-          mid_clearUTCTAIOffsetsLoaders_7ae3461a92a43152,
-          mid_getBDT_deaa012966748070,
-          mid_getGLONASS_c91e99b6d55c6edd,
-          mid_getGMST_9d529a30e942a554,
-          mid_getGPS_c3529b957726f144,
-          mid_getGST_11ee1ca64364e897,
-          mid_getIRNSS_ec0466e710e3daab,
-          mid_getQZSS_7f540f12419eda56,
-          mid_getTAI_9316322b62b6b656,
-          mid_getTCB_2460e78d331af28f,
-          mid_getTCG_30aeac15cc80b3c1,
-          mid_getTDB_0bcc4110bc5be1d2,
-          mid_getTT_9be074c5a298fe1e,
-          mid_getTimeScales_8c0eab743ddad863,
-          mid_getUT1_7b22e00b4ab08eba,
-          mid_getUT1_603d1058a5002a04,
-          mid_getUTC_ed870393143e8ecb,
+          mid_addDefaultUTCTAIOffsetsLoaders_0fa09c18fee449d5,
+          mid_addUTCTAIOffsetsLoader_65100d031698831e,
+          mid_clearUTCTAIOffsetsLoaders_0fa09c18fee449d5,
+          mid_getBDT_fc0e10255fdb9359,
+          mid_getGLONASS_2b4079449103a541,
+          mid_getGMST_17da19434c6eaf77,
+          mid_getGPS_9e1c13089038a5fa,
+          mid_getGST_0569916ae20da9e6,
+          mid_getIRNSS_acc0c9657c1b3fab,
+          mid_getQZSS_b61358961d42527b,
+          mid_getTAI_542013db907f5b2d,
+          mid_getTCB_a36a736c24a84bc8,
+          mid_getTCG_bc03267fa6cc0068,
+          mid_getTDB_01a9b50b4c9899e0,
+          mid_getTT_1cee2d27f65b3e44,
+          mid_getTimeScales_81309dd1495ca0f7,
+          mid_getUT1_9806ff584bac5289,
+          mid_getUT1_03564ba2f50e6e3b,
+          mid_getUTC_4611f4f4ac7b3711,
           max_mid
         };
 

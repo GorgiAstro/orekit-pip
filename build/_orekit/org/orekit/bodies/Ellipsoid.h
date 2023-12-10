@@ -3,13 +3,21 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
@@ -27,14 +35,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -44,17 +44,17 @@ namespace org {
       class Ellipsoid : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_cb97547c6cf5fb1e,
-          mid_getA_456d9a2f64d6b28d,
-          mid_getB_456d9a2f64d6b28d,
-          mid_getC_456d9a2f64d6b28d,
-          mid_getFrame_c8fe21bcdac65bf6,
-          mid_getPlaneSection_3bfaf4cd80ac687d,
-          mid_getPlaneSection_af1c511f98e824a6,
-          mid_isInside_f61e2266bee942fa,
-          mid_isInside_c8fb5394ceb559de,
-          mid_pointOnLimb_5ff6d50248c66b4d,
-          mid_pointOnLimb_ccf2ee059c93e01e,
+          mid_init$_a5d66ee321de235c,
+          mid_getA_dff5885c2c873297,
+          mid_getB_dff5885c2c873297,
+          mid_getC_dff5885c2c873297,
+          mid_getFrame_b86f9f61d97a7244,
+          mid_getPlaneSection_2e3bc4c6568da5d5,
+          mid_getPlaneSection_dc0ab9a321179f6f,
+          mid_isInside_19ce44a30ac2c75e,
+          mid_isInside_ab4ed00ccf0defd6,
+          mid_pointOnLimb_9dc4d243618c0821,
+          mid_pointOnLimb_e2a27ed5c4e12f6f,
           max_mid
         };
 

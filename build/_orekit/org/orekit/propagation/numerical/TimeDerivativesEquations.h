@@ -3,6 +3,11 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -12,11 +17,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -29,9 +29,9 @@ namespace org {
         class TimeDerivativesEquations : public ::java::lang::Object {
          public:
           enum {
-            mid_addKeplerContribution_77e0f9a1f260e2e5,
-            mid_addMassDerivative_77e0f9a1f260e2e5,
-            mid_addNonKeplerianAcceleration_a94622407b723689,
+            mid_addKeplerContribution_17db3a65980d3441,
+            mid_addMassDerivative_17db3a65980d3441,
+            mid_addNonKeplerianAcceleration_029ff0cbf68ea054,
             max_mid
           };
 

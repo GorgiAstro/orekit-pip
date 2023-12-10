@@ -28,7 +28,7 @@ namespace org {
         class UnivariateInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_interpolate_892e3f95ace99810,
+            mid_interpolate_26024a819137b7d3,
             max_mid
           };
 

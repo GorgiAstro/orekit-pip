@@ -35,16 +35,16 @@ namespace org {
           class Mesh$Node : public ::java::lang::Object {
            public:
             enum {
-              mid_getAcross_17a952530a808943,
-              mid_getAcrossIndex_f2f64475e4580546,
-              mid_getAlong_17a952530a808943,
-              mid_getAlongIndex_f2f64475e4580546,
-              mid_getS2P_71b7da0eb14488b0,
-              mid_getV_17a952530a808943,
-              mid_isEnabled_e470b6d9e0d979db,
-              mid_isInside_e470b6d9e0d979db,
-              mid_move_039d1d912b9705b9,
-              mid_setEnabled_7ae3461a92a43152,
+              mid_getAcross_d52645e0d4c07563,
+              mid_getAcrossIndex_570ce0828f81a2c1,
+              mid_getAlong_d52645e0d4c07563,
+              mid_getAlongIndex_570ce0828f81a2c1,
+              mid_getS2P_fe1c7ad511d8448b,
+              mid_getV_d52645e0d4c07563,
+              mid_isEnabled_b108b35ef48e27bd,
+              mid_isInside_b108b35ef48e27bd,
+              mid_move_490efaeb06700c2c,
+              mid_setEnabled_0fa09c18fee449d5,
               max_mid
             };
 

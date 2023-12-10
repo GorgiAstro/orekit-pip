@@ -3,16 +3,22 @@
 
 #include "org/orekit/files/ccsds/ndm/adm/AdmParser.h"
 
+namespace java {
+  namespace util {
+    class Map;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
+      namespace general {
+        class AttitudeEphemerisFileParser;
+      }
       namespace ccsds {
-        namespace utils {
-          namespace lexical {
-            class XmlTokenBuilder;
-          }
-          class FileFormat;
-        }
         namespace ndm {
           namespace adm {
             namespace acm {
@@ -23,27 +29,21 @@ namespace org {
           }
           class ParsedUnitsBehavior;
         }
-      }
-      namespace general {
-        class AttitudeEphemerisFileParser;
+        namespace utils {
+          namespace lexical {
+            class XmlTokenBuilder;
+          }
+          class FileFormat;
+        }
       }
     }
     namespace data {
-      class DataSource;
       class DataContext;
+      class DataSource;
     }
     namespace utils {
       class IERSConventions;
     }
-  }
-}
-namespace java {
-  namespace util {
-    class Map;
-  }
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -59,20 +59,20 @@ namespace org {
               class AcmParser : public ::org::orekit::files::ccsds::ndm::adm::AdmParser {
                public:
                 enum {
-                  mid_build_fe21b0b85e8b60d9,
-                  mid_finalizeData_e470b6d9e0d979db,
-                  mid_finalizeHeader_e470b6d9e0d979db,
-                  mid_finalizeMetadata_e470b6d9e0d979db,
-                  mid_getHeader_c489cac8f838b2e9,
-                  mid_getSpecialXmlElementsBuilders_d6753b7055940a54,
-                  mid_inData_e470b6d9e0d979db,
-                  mid_inHeader_e470b6d9e0d979db,
-                  mid_inMetadata_e470b6d9e0d979db,
-                  mid_parse_7c784a34c8278ccf,
-                  mid_prepareData_e470b6d9e0d979db,
-                  mid_prepareHeader_e470b6d9e0d979db,
-                  mid_prepareMetadata_e470b6d9e0d979db,
-                  mid_reset_052c3a3464b50355,
+                  mid_build_4d6b6e7f45764684,
+                  mid_finalizeData_b108b35ef48e27bd,
+                  mid_finalizeHeader_b108b35ef48e27bd,
+                  mid_finalizeMetadata_b108b35ef48e27bd,
+                  mid_getHeader_58c0f76fc10a27f5,
+                  mid_getSpecialXmlElementsBuilders_6f5a75ccd8c04465,
+                  mid_inData_b108b35ef48e27bd,
+                  mid_inHeader_b108b35ef48e27bd,
+                  mid_inMetadata_b108b35ef48e27bd,
+                  mid_parse_bcb26436586f3489,
+                  mid_prepareData_b108b35ef48e27bd,
+                  mid_prepareHeader_b108b35ef48e27bd,
+                  mid_prepareMetadata_b108b35ef48e27bd,
+                  mid_reset_e250621f009e45db,
                   max_mid
                 };
 

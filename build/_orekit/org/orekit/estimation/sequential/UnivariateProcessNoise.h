@@ -5,22 +5,22 @@
 
 namespace org {
   namespace orekit {
+    namespace orbits {
+      class PositionAngleType;
+    }
     namespace frames {
       class LOFType;
     }
     namespace propagation {
       class SpacecraftState;
     }
-    namespace orbits {
-      class PositionAngleType;
-    }
   }
   namespace hipparchus {
-    namespace analysis {
-      class UnivariateFunction;
-    }
     namespace linear {
       class RealMatrix;
+    }
+    namespace analysis {
+      class UnivariateFunction;
     }
   }
 }
@@ -39,14 +39,14 @@ namespace org {
         class UnivariateProcessNoise : public ::org::orekit::estimation::sequential::AbstractCovarianceMatrixProvider {
          public:
           enum {
-            mid_init$_c9342b48e67c409e,
-            mid_init$_c0e3efb252f067d5,
-            mid_getLofCartesianOrbitalParametersEvolution_8218f2a321676331,
-            mid_getLofType_c33b33ba21325973,
-            mid_getMeasurementsParametersEvolution_8218f2a321676331,
-            mid_getPositionAngleType_2571e8fe1cede425,
-            mid_getProcessNoiseMatrix_dc7483997a2e9c4d,
-            mid_getPropagationParametersEvolution_8218f2a321676331,
+            mid_init$_57fb9f2a151d8eec,
+            mid_init$_41e7b061c0c712fb,
+            mid_getLofCartesianOrbitalParametersEvolution_8524cef336b5710b,
+            mid_getLofType_91870b5ccc8bfe11,
+            mid_getMeasurementsParametersEvolution_8524cef336b5710b,
+            mid_getPositionAngleType_8f17e83e5a86217c,
+            mid_getProcessNoiseMatrix_26148f4ae87f73a3,
+            mid_getPropagationParametersEvolution_8524cef336b5710b,
             max_mid
           };
 

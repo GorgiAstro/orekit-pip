@@ -4,7 +4,14 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
+    namespace bodies {
+      class GeodeticPoint;
+      class FieldGeodeticPoint;
+    }
     namespace models {
       namespace earth {
         namespace troposphere {
@@ -13,20 +20,13 @@ namespace org {
         }
       }
     }
-    namespace bodies {
-      class GeodeticPoint;
-      class FieldGeodeticPoint;
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
     namespace utils {
       class ParameterDriver;
     }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -48,11 +48,11 @@ namespace org {
           class MariniMurrayModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_667a7965403ed91a,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_getStandardModel_c896c6573dd866aa,
-              mid_pathDelay_af133f80cdba1dc2,
-              mid_pathDelay_0326270bf0e8ed17,
+              mid_init$_b0a935b68e41d65a,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_getStandardModel_15d88e1aab769ee5,
+              mid_pathDelay_fe3b5c46874ab115,
+              mid_pathDelay_ff7a895eb6f0af2e,
               max_mid
             };
 

@@ -32,8 +32,8 @@ namespace org {
           class RtcmDataField : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_f47a0aee8b0994e9,
-              mid_values_07cfe4883c1fd236,
+              mid_valueOf_14eb376e68869fc7,
+              mid_values_f2eb5f44516d56a1,
               max_mid
             };
 

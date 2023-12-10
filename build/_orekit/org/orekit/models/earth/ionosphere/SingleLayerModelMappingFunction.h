@@ -4,9 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace models {
       namespace earth {
@@ -15,6 +12,9 @@ namespace org {
         }
       }
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -33,10 +33,10 @@ namespace org {
           class SingleLayerModelMappingFunction : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_init$_77e0f9a1f260e2e5,
-              mid_mappingFactor_0ba5fed9597b693e,
-              mid_mappingFactor_d3398190482814dc,
+              mid_init$_0fa09c18fee449d5,
+              mid_init$_17db3a65980d3441,
+              mid_mappingFactor_dcbc7ce2902fa136,
+              mid_mappingFactor_a4b1871f4d29e58b,
               max_mid
             };
 

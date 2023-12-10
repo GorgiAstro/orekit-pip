@@ -18,13 +18,13 @@ namespace org {
         class GLSMultipleLinearRegression : public ::org::hipparchus::stat::regression::AbstractMultipleLinearRegression {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_newSampleData_1b32d195c9ba81f9,
-            mid_calculateBeta_6d9adf1d5b463928,
-            mid_calculateBetaVariance_7116bbecdd8ceb21,
-            mid_calculateErrorVariance_456d9a2f64d6b28d,
-            mid_newCovarianceData_d660c7a97bf55272,
-            mid_getOmegaInverse_7116bbecdd8ceb21,
+            mid_init$_0fa09c18fee449d5,
+            mid_newSampleData_6faea01a29e89571,
+            mid_newCovarianceData_a0befc7f3dc19e41,
+            mid_getOmegaInverse_688b496048ff947b,
+            mid_calculateBeta_aab4fbf77867daa8,
+            mid_calculateBetaVariance_688b496048ff947b,
+            mid_calculateErrorVariance_dff5885c2c873297,
             max_mid
           };
 

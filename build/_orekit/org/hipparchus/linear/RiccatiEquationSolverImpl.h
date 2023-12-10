@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class RiccatiEquationSolver;
       class RealMatrix;
+      class RiccatiEquationSolver;
     }
   }
 }
@@ -25,9 +25,9 @@ namespace org {
       class RiccatiEquationSolverImpl : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7723a5eca38136a5,
-          mid_getK_7116bbecdd8ceb21,
-          mid_getP_7116bbecdd8ceb21,
+          mid_init$_c0499df1156f9183,
+          mid_getK_688b496048ff947b,
+          mid_getP_688b496048ff947b,
           max_mid
         };
 

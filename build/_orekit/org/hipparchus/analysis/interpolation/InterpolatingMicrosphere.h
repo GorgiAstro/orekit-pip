@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
-    namespace random {
-      class UnitSphereRandomVectorGenerator;
-    }
     namespace analysis {
       namespace interpolation {
         class InterpolatingMicrosphere;
       }
+    }
+    namespace random {
+      class UnitSphereRandomVectorGenerator;
     }
   }
 }
@@ -30,12 +30,12 @@ namespace org {
         class InterpolatingMicrosphere : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_ccdd860aa84caa04,
-            mid_copy_edeef1d772c2ce78,
-            mid_getDimension_f2f64475e4580546,
-            mid_getSize_f2f64475e4580546,
-            mid_value_6260a516b67893ef,
-            mid_add_d26930f65a8ba6c9,
+            mid_init$_fdaa6566f103e9da,
+            mid_copy_bc50b566c273722a,
+            mid_getDimension_570ce0828f81a2c1,
+            mid_getSize_570ce0828f81a2c1,
+            mid_value_8337bea1db3c18f3,
+            mid_add_a47a33f7938e1575,
             max_mid
           };
 

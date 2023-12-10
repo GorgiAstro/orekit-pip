@@ -33,10 +33,10 @@ namespace org {
         class BracketedUnivariateSolver : public ::org::hipparchus::analysis::solvers::BaseUnivariateSolver {
          public:
           enum {
-            mid_solve_0c4af17577847ef5,
-            mid_solve_d096fb40d6053e92,
-            mid_solveInterval_b498db826ca35455,
-            mid_solveInterval_f22794092f257ec3,
+            mid_solve_ba3e208e0ba870dd,
+            mid_solve_89bba4a49543a54f,
+            mid_solveInterval_dfe1f613dc6b1d83,
+            mid_solveInterval_fff76e1052c58572,
             max_mid
           };
 

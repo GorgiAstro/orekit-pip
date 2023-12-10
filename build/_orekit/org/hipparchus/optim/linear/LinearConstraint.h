@@ -3,6 +3,14 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace linear {
@@ -15,14 +23,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -33,15 +33,15 @@ namespace org {
         class LinearConstraint : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_3e9b496656853d8d,
-            mid_init$_fa4e1f5c5df59b6d,
-            mid_init$_a41a126968e503cd,
-            mid_init$_dbedba0022453ff9,
-            mid_equals_229c87223f486349,
-            mid_getCoefficients_6d9adf1d5b463928,
-            mid_getRelationship_435d5956567f4d61,
-            mid_getValue_456d9a2f64d6b28d,
-            mid_hashCode_f2f64475e4580546,
+            mid_init$_ed1196772defbeae,
+            mid_init$_5f338ccbbc248a13,
+            mid_init$_176ddfa61621172c,
+            mid_init$_815a0a1da754191e,
+            mid_equals_65c7d273e80d497a,
+            mid_getCoefficients_aab4fbf77867daa8,
+            mid_getRelationship_90960c2c386c2df2,
+            mid_getValue_dff5885c2c873297,
+            mid_hashCode_570ce0828f81a2c1,
             max_mid
           };
 

@@ -5,20 +5,20 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeStamped;
-      class TimeShiftable;
-      class AbsoluteDate;
-    }
-    namespace frames {
-      class Frame;
+    namespace utils {
+      class AngularCoordinates;
+      class TimeStampedAngularCoordinates;
     }
     namespace attitudes {
       class Attitude;
     }
-    namespace utils {
-      class AngularCoordinates;
-      class TimeStampedAngularCoordinates;
+    namespace frames {
+      class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeStamped;
+      class TimeShiftable;
     }
   }
   namespace hipparchus {
@@ -49,17 +49,17 @@ namespace org {
       class Attitude : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a7cd0652731bfe10,
-          mid_init$_5f47ea0b011c6224,
-          mid_init$_45d9735c7810f3c9,
-          mid_getDate_aaa854c403487cf3,
-          mid_getOrientation_8b3d104eb3a71bfc,
-          mid_getReferenceFrame_c8fe21bcdac65bf6,
-          mid_getRotation_24d2e432e376f9a0,
-          mid_getRotationAcceleration_17a952530a808943,
-          mid_getSpin_17a952530a808943,
-          mid_shiftedBy_a136a2ef3bf9ed86,
-          mid_withReferenceFrame_a8de43036058d924,
+          mid_init$_dea257300c01aa24,
+          mid_init$_548f5fe1e94cd245,
+          mid_init$_deeadd030b9b683a,
+          mid_getDate_85703d13e302437e,
+          mid_getOrientation_b8bfd7046d8ee6f7,
+          mid_getReferenceFrame_b86f9f61d97a7244,
+          mid_getRotation_de86c7efc42eac14,
+          mid_getRotationAcceleration_d52645e0d4c07563,
+          mid_getSpin_d52645e0d4c07563,
+          mid_shiftedBy_97390777173603db,
+          mid_withReferenceFrame_4b6ab70a25936a1a,
           max_mid
         };
 

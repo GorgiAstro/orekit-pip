@@ -5,14 +5,14 @@
 
 namespace org {
   namespace hipparchus {
-    namespace random {
-      class RandomGenerator;
-    }
     namespace optim {
-      class OptimizationData;
       namespace univariate {
         class UnivariatePointValuePair;
       }
+      class OptimizationData;
+    }
+    namespace random {
+      class RandomGenerator;
     }
   }
 }
@@ -31,11 +31,11 @@ namespace org {
         class MultiStartUnivariateOptimizer : public ::org::hipparchus::optim::univariate::UnivariateOptimizer {
          public:
           enum {
-            mid_init$_669d33194e2664ce,
-            mid_getEvaluations_f2f64475e4580546,
-            mid_getOptima_864c6ef2a38ff7d2,
-            mid_optimize_dfd82b5526071a92,
-            mid_doOptimize_d2fe1940144d9faa,
+            mid_init$_7c79e557fab8c7ef,
+            mid_getEvaluations_570ce0828f81a2c1,
+            mid_getOptima_0b15fb2534825a09,
+            mid_optimize_46d3687072fb1da8,
+            mid_doOptimize_1512fd4a147f4927,
             max_mid
           };
 

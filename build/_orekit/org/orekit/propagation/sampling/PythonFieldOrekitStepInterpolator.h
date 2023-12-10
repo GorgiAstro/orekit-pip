@@ -3,26 +3,26 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
   }
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace propagation {
-      class FieldSpacecraftState;
       namespace sampling {
         class FieldOrekitStepInterpolator;
       }
+      class FieldSpacecraftState;
     }
+    namespace time {
+      class FieldAbsoluteDate;
+    }
+  }
+}
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -35,16 +35,16 @@ namespace org {
         class PythonFieldOrekitStepInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_finalize_7ae3461a92a43152,
-            mid_getCurrentState_a553824829fc2514,
-            mid_getInterpolatedState_85b5a3e9101d7c1f,
-            mid_getPreviousState_a553824829fc2514,
-            mid_isForward_e470b6d9e0d979db,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
-            mid_restrictStep_c7ca73d5105d6a36,
+            mid_init$_0fa09c18fee449d5,
+            mid_finalize_0fa09c18fee449d5,
+            mid_getCurrentState_02cea343d9f71933,
+            mid_getInterpolatedState_f6f1ea8aef3019eb,
+            mid_getPreviousState_02cea343d9f71933,
+            mid_isForward_b108b35ef48e27bd,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
+            mid_restrictStep_7098fa5da93d95de,
             max_mid
           };
 

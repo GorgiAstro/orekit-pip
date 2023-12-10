@@ -5,19 +5,19 @@
 
 namespace org {
   namespace orekit {
-    namespace files {
-      namespace rinex {
-        namespace utils {
-          class RinexFileType;
-        }
-      }
-    }
     namespace gnss {
       class SatelliteSystem;
     }
     namespace time {
       class DateTimeComponents;
       class AbsoluteDate;
+    }
+    namespace files {
+      namespace rinex {
+        namespace utils {
+          class RinexFileType;
+        }
+      }
     }
   }
 }
@@ -38,27 +38,27 @@ namespace org {
           class RinexBaseHeader : public ::java::lang::Object {
            public:
             enum {
-              mid_getCreationDate_aaa854c403487cf3,
-              mid_getCreationDateComponents_e3c5f80897e753d6,
-              mid_getCreationTimeZone_0090f7797e403f43,
-              mid_getDoi_0090f7797e403f43,
-              mid_getFileType_28f7342554538782,
-              mid_getFormatVersion_456d9a2f64d6b28d,
-              mid_getLicense_0090f7797e403f43,
-              mid_getProgramName_0090f7797e403f43,
-              mid_getRunByName_0090f7797e403f43,
-              mid_getSatelliteSystem_1b72fcc8f550bfc7,
-              mid_getStationInformation_0090f7797e403f43,
-              mid_setCreationDate_e82d68cd9f886886,
-              mid_setCreationDateComponents_994b26ed44999e86,
-              mid_setCreationTimeZone_e939c6558ae8d313,
-              mid_setDoi_e939c6558ae8d313,
-              mid_setFormatVersion_77e0f9a1f260e2e5,
-              mid_setLicense_e939c6558ae8d313,
-              mid_setProgramName_e939c6558ae8d313,
-              mid_setRunByName_e939c6558ae8d313,
-              mid_setSatelliteSystem_a9204a81fe55aebe,
-              mid_setStationInformation_e939c6558ae8d313,
+              mid_getCreationDate_85703d13e302437e,
+              mid_getCreationDateComponents_386b3d55806dafec,
+              mid_getCreationTimeZone_11b109bd155ca898,
+              mid_getDoi_11b109bd155ca898,
+              mid_getFileType_b92f51e56d431d9f,
+              mid_getFormatVersion_dff5885c2c873297,
+              mid_getLicense_11b109bd155ca898,
+              mid_getProgramName_11b109bd155ca898,
+              mid_getRunByName_11b109bd155ca898,
+              mid_getSatelliteSystem_01acae5c1a253b8e,
+              mid_getStationInformation_11b109bd155ca898,
+              mid_setCreationDate_600a2a61652bc473,
+              mid_setCreationDateComponents_4d63b530baf1ccb7,
+              mid_setCreationTimeZone_d0bc48d5b00dc40c,
+              mid_setDoi_d0bc48d5b00dc40c,
+              mid_setFormatVersion_17db3a65980d3441,
+              mid_setLicense_d0bc48d5b00dc40c,
+              mid_setProgramName_d0bc48d5b00dc40c,
+              mid_setRunByName_d0bc48d5b00dc40c,
+              mid_setSatelliteSystem_10d44f5686b1d39e,
+              mid_setStationInformation_d0bc48d5b00dc40c,
               max_mid
             };
 

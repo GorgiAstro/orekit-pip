@@ -3,6 +3,14 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace io {
+    class IOException;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -16,14 +24,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -34,9 +34,9 @@ namespace org {
         class StreamingCpfWriter$Segment : public ::java::lang::Object {
          public:
           enum {
-            mid_finish_2b88003f931f70a7,
-            mid_handleStep_2b88003f931f70a7,
-            mid_writeEphemerisLine_9080af590c7e4f05,
+            mid_finish_0ee5c56004643a2e,
+            mid_handleStep_0ee5c56004643a2e,
+            mid_writeEphemerisLine_48579a0bdefdceaf,
             max_mid
           };
 

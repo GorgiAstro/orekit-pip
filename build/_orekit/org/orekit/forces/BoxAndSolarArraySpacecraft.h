@@ -4,35 +4,35 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace forces {
       namespace radiation {
         class RadiationSensitive;
       }
-      class Panel;
       namespace drag {
         class DragSensitive;
       }
-    }
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
+      class Panel;
     }
     namespace utils {
       class ParameterDriver;
       class ExtendedPVCoordinatesProvider;
     }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
     }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -52,17 +52,17 @@ namespace org {
       class BoxAndSolarArraySpacecraft : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_65de9727799c5641,
-          mid_init$_e6429e5de5c3a2c8,
-          mid_buildBox_b9c4adb1e5979ca4,
-          mid_buildPanels_2c13eb224defe6e0,
-          mid_dragAcceleration_72c100be3e679e5e,
-          mid_dragAcceleration_3061f9a13979e9fa,
-          mid_getDragParametersDrivers_a6156df500549a58,
-          mid_getPanels_a6156df500549a58,
-          mid_getRadiationParametersDrivers_a6156df500549a58,
-          mid_radiationPressureAcceleration_397d87bcad93c626,
-          mid_radiationPressureAcceleration_5efc9e86ed57c6dd,
+          mid_init$_de3e021e7266b71e,
+          mid_init$_f619ddf12a25c4b6,
+          mid_buildBox_e4269e7e0f3ced71,
+          mid_buildPanels_2c7040e42cd3a9fb,
+          mid_dragAcceleration_6cbf0b5d7046f26b,
+          mid_dragAcceleration_fc130a15f669db38,
+          mid_getDragParametersDrivers_2afa36052df4765d,
+          mid_getPanels_2afa36052df4765d,
+          mid_getRadiationParametersDrivers_2afa36052df4765d,
+          mid_radiationPressureAcceleration_c01594a6748cab78,
+          mid_radiationPressureAcceleration_70d4c57af2df1a86,
           max_mid
         };
 

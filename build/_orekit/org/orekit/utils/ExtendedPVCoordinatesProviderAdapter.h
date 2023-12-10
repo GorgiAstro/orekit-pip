@@ -25,7 +25,7 @@ namespace org {
       class ExtendedPVCoordinatesProviderAdapter : public ::org::orekit::frames::Frame {
        public:
         enum {
-          mid_init$_e8c3eba42dad69b0,
+          mid_init$_10178aa1957fcbf4,
           max_mid
         };
 

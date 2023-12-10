@@ -14,9 +14,9 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace time {
-      class TimeScale;
-      class DatesSelector;
       class AbsoluteDate;
+      class DatesSelector;
+      class TimeScale;
     }
   }
 }
@@ -29,8 +29,8 @@ namespace org {
       class FixedStepSelector : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_60e5ac0cc7094de6,
-          mid_selectDates_b7149ea6787a6f3c,
+          mid_init$_a8d9a986b8daff48,
+          mid_selectDates_8060cef9318d72e3,
           max_mid
         };
 

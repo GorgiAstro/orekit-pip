@@ -31,17 +31,17 @@ namespace org {
         class StatisticalSummaryValues : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_1c403465fcb9a8fb,
-            mid_equals_229c87223f486349,
-            mid_getMax_456d9a2f64d6b28d,
-            mid_getMean_456d9a2f64d6b28d,
-            mid_getMin_456d9a2f64d6b28d,
-            mid_getN_a27fc9afd27e559d,
-            mid_getStandardDeviation_456d9a2f64d6b28d,
-            mid_getSum_456d9a2f64d6b28d,
-            mid_getVariance_456d9a2f64d6b28d,
-            mid_hashCode_f2f64475e4580546,
-            mid_toString_0090f7797e403f43,
+            mid_init$_7cf26d2aa668662f,
+            mid_equals_65c7d273e80d497a,
+            mid_getMax_dff5885c2c873297,
+            mid_getMean_dff5885c2c873297,
+            mid_getMin_dff5885c2c873297,
+            mid_getN_492808a339bfa35f,
+            mid_getStandardDeviation_dff5885c2c873297,
+            mid_getSum_dff5885c2c873297,
+            mid_getVariance_dff5885c2c873297,
+            mid_hashCode_570ce0828f81a2c1,
+            mid_toString_11b109bd155ca898,
             max_mid
           };
 

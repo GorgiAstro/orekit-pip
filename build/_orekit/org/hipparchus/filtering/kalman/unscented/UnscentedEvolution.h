@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class RealVector;
       class RealMatrix;
+      class RealVector;
     }
   }
 }
@@ -27,10 +27,10 @@ namespace org {
           class UnscentedEvolution : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_6cf4d52a4cdc2484,
-              mid_getCurrentStates_9b5eca096aa7ef4a,
-              mid_getCurrentTime_456d9a2f64d6b28d,
-              mid_getProcessNoiseMatrix_7116bbecdd8ceb21,
+              mid_init$_e15112d7d9b7c603,
+              mid_getCurrentStates_06199998e1d3adc1,
+              mid_getCurrentTime_dff5885c2c873297,
+              mid_getProcessNoiseMatrix_688b496048ff947b,
               max_mid
             };
 

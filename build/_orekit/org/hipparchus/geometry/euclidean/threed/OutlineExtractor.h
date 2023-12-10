@@ -7,12 +7,12 @@ namespace org {
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
-        namespace twod {
-          class Vector2D;
-        }
         namespace threed {
           class PolyhedronsSet;
           class Vector3D;
+        }
+        namespace twod {
+          class Vector2D;
         }
       }
     }
@@ -34,8 +34,8 @@ namespace org {
           class OutlineExtractor : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_bedd188d9f399c34,
-              mid_getOutline_991374efd77c756f,
+              mid_init$_8f7d2a24ef2ff591,
+              mid_getOutline_2bc7c758fa46bc49,
               max_mid
             };
 

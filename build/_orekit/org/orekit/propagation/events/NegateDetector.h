@@ -3,11 +3,6 @@
 
 #include "org/orekit/propagation/events/AbstractDetector.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -22,6 +17,11 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -32,11 +32,11 @@ namespace org {
         class NegateDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_8ef30a2ad40caceb,
-            mid_g_66a2f071e6ed0c06,
-            mid_getOriginal_27b528e7858202ed,
-            mid_init_3d13474d79f5e7bc,
-            mid_create_74218385cc515fe3,
+            mid_init$_efb7003d866d4523,
+            mid_g_432f3d328c15ec82,
+            mid_getOriginal_d73bb985ffde4156,
+            mid_init_826b4eda94da4e78,
+            mid_create_aa01ca731fd42f9b,
             max_mid
           };
 

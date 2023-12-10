@@ -3,26 +3,16 @@
 
 #include "org/orekit/time/AbstractFieldTimeInterpolator.h"
 
-namespace java {
-  namespace util {
-    class List;
-    class Collection;
-    class Optional;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
+    namespace time {
+      class FieldTimeInterpolator;
+      class FieldTimeStamped;
+      class FieldAbsoluteDate;
+      class TimeStampedField;
+    }
     namespace frames {
       class Frame;
-    }
-    namespace time {
-      class FieldTimeStamped;
-      class FieldTimeInterpolator;
-      class TimeStampedField;
-      class FieldAbsoluteDate;
     }
     namespace utils {
       class AngularDerivativesFilter;
@@ -40,6 +30,16 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class List;
+    class Collection;
+    class Optional;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -49,22 +49,22 @@ namespace org {
       class FieldSpacecraftStateInterpolator : public ::org::orekit::time::AbstractFieldTimeInterpolator {
        public:
         enum {
-          mid_init$_b1992bd1bb70f476,
-          mid_init$_2ec8e00deddf59e8,
-          mid_init$_4806cf42a7c4464d,
-          mid_init$_c113313c707bf3d9,
-          mid_init$_8874babef770dcb7,
-          mid_init$_f5be9a20c1bf69c8,
-          mid_getAbsPVAInterpolator_c56b7edc0c3c7d86,
-          mid_getAdditionalStateInterpolator_c56b7edc0c3c7d86,
-          mid_getAttitudeInterpolator_c56b7edc0c3c7d86,
-          mid_getMassInterpolator_c56b7edc0c3c7d86,
-          mid_getNbInterpolationPoints_f2f64475e4580546,
-          mid_getOrbitInterpolator_c56b7edc0c3c7d86,
-          mid_getOutputFrame_c8fe21bcdac65bf6,
-          mid_getSubInterpolators_a6156df500549a58,
-          mid_interpolate_b85587e735f13c79,
-          mid_interpolate_b78e440b930977cb,
+          mid_init$_b5680f5c30eede66,
+          mid_init$_f67f9ac4338cd9bf,
+          mid_init$_1be06daec585e1cc,
+          mid_init$_6039fdd299a8bef6,
+          mid_init$_47d46a6c49da3b1b,
+          mid_init$_a37d544e446cc50c,
+          mid_getAbsPVAInterpolator_c5e311a9e5531e7d,
+          mid_getAdditionalStateInterpolator_c5e311a9e5531e7d,
+          mid_getAttitudeInterpolator_c5e311a9e5531e7d,
+          mid_getMassInterpolator_c5e311a9e5531e7d,
+          mid_getNbInterpolationPoints_570ce0828f81a2c1,
+          mid_getOrbitInterpolator_c5e311a9e5531e7d,
+          mid_getOutputFrame_b86f9f61d97a7244,
+          mid_getSubInterpolators_2afa36052df4765d,
+          mid_interpolate_bede014d8db77b67,
+          mid_interpolate_1fc44234b9e2bf71,
           max_mid
         };
 

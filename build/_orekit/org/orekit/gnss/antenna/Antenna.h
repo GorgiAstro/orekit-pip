@@ -3,6 +3,15 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -15,20 +24,11 @@ namespace org {
   }
   namespace orekit {
     namespace gnss {
-      class Frequency;
       namespace antenna {
         class FrequencyPattern;
       }
+      class Frequency;
     }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -41,12 +41,12 @@ namespace org {
         class Antenna : public ::java::lang::Object {
          public:
           enum {
-            mid_getEccentricities_0592875d77498bab,
-            mid_getFrequencies_a6156df500549a58,
-            mid_getPattern_05d30d5d4e353670,
-            mid_getPhaseCenterVariation_3c66d8751ce3e01a,
-            mid_getSinexCode_0090f7797e403f43,
-            mid_getType_0090f7797e403f43,
+            mid_getEccentricities_53fff387f14fabf8,
+            mid_getFrequencies_2afa36052df4765d,
+            mid_getPattern_54cb1a16386102e4,
+            mid_getPhaseCenterVariation_79cf2d2802e92516,
+            mid_getSinexCode_11b109bd155ca898,
+            mid_getType_11b109bd155ca898,
             max_mid
           };
 

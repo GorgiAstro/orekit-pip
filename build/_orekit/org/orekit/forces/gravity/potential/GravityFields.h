@@ -16,8 +16,8 @@ namespace org {
     namespace forces {
       namespace gravity {
         namespace potential {
-          class UnnormalizedSphericalHarmonicsProvider;
           class NormalizedSphericalHarmonicsProvider;
+          class UnnormalizedSphericalHarmonicsProvider;
           class OceanTidesWave;
         }
       }
@@ -38,11 +38,11 @@ namespace org {
           class GravityFields : public ::java::lang::Object {
            public:
             enum {
-              mid_getConstantNormalizedProvider_f23a878f7162aa63,
-              mid_getConstantUnnormalizedProvider_4ff4b36d038a4d30,
-              mid_getNormalizedProvider_cd3e5e7b86486169,
-              mid_getOceanTidesWaves_4a0f7788a82593c4,
-              mid_getUnnormalizedProvider_d3751d16c1e699b1,
+              mid_getConstantNormalizedProvider_8be9acc0db722a5e,
+              mid_getConstantUnnormalizedProvider_1a4f51636cfaa7fe,
+              mid_getNormalizedProvider_0fdcb0a280e1e598,
+              mid_getOceanTidesWaves_10d7c0f6de166543,
+              mid_getUnnormalizedProvider_c2f412128b078525,
               max_mid
             };
 

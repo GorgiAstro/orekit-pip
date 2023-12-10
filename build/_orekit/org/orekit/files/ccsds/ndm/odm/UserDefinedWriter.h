@@ -34,8 +34,8 @@ namespace org {
             class UserDefinedWriter : public ::org::orekit::files::ccsds::section::AbstractWriter {
              public:
               enum {
-                mid_init$_1c66f9d5aa136de6,
-                mid_writeContent_fb36c2e4ae059ab9,
+                mid_init$_afcce89ce269e798,
+                mid_writeContent_6d745cf7b26e9f5d,
                 max_mid
               };
 

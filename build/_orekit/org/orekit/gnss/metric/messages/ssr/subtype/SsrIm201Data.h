@@ -21,17 +21,17 @@ namespace org {
               class SsrIm201Data : public ::org::orekit::gnss::metric::messages::ssr::SsrData {
                public:
                 enum {
-                  mid_init$_7ae3461a92a43152,
-                  mid_getCnm_43de1192439efa92,
-                  mid_getHeightIonosphericLayer_456d9a2f64d6b28d,
-                  mid_getSnm_43de1192439efa92,
-                  mid_getSphericalHarmonicsDegree_f2f64475e4580546,
-                  mid_getSphericalHarmonicsOrder_f2f64475e4580546,
-                  mid_setCnm_d660c7a97bf55272,
-                  mid_setHeightIonosphericLayer_77e0f9a1f260e2e5,
-                  mid_setSnm_d660c7a97bf55272,
-                  mid_setSphericalHarmonicsDegree_0a2a1ac2721c0336,
-                  mid_setSphericalHarmonicsOrder_0a2a1ac2721c0336,
+                  mid_init$_0fa09c18fee449d5,
+                  mid_getCnm_0358d8ea02f2cdb1,
+                  mid_getHeightIonosphericLayer_dff5885c2c873297,
+                  mid_getSnm_0358d8ea02f2cdb1,
+                  mid_getSphericalHarmonicsDegree_570ce0828f81a2c1,
+                  mid_getSphericalHarmonicsOrder_570ce0828f81a2c1,
+                  mid_setCnm_a0befc7f3dc19e41,
+                  mid_setHeightIonosphericLayer_17db3a65980d3441,
+                  mid_setSnm_a0befc7f3dc19e41,
+                  mid_setSphericalHarmonicsDegree_99803b0791f320ff,
+                  mid_setSphericalHarmonicsOrder_99803b0791f320ff,
                   max_mid
                 };
 

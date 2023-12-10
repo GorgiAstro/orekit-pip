@@ -3,26 +3,26 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace stat {
+      namespace regression {
+        class UpdatingMultipleLinearRegression;
+        class RegressionResults;
+        class SimpleRegression;
+      }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+  }
+}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace stat {
-      namespace regression {
-        class UpdatingMultipleLinearRegression;
-        class SimpleRegression;
-        class RegressionResults;
-      }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
   }
 }
 template<class T> class JArray;
@@ -35,36 +35,36 @@ namespace org {
         class SimpleRegression : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_init$_50a2e0b139e80a58,
-            mid_addData_d660c7a97bf55272,
-            mid_addData_1d715fa3b7b756e1,
-            mid_addObservation_caadaecfce5fba2f,
-            mid_addObservations_f51b12ef24067352,
-            mid_append_28845c69a6d4c8e4,
-            mid_clear_7ae3461a92a43152,
-            mid_getIntercept_456d9a2f64d6b28d,
-            mid_getInterceptStdErr_456d9a2f64d6b28d,
-            mid_getMeanSquareError_456d9a2f64d6b28d,
-            mid_getN_a27fc9afd27e559d,
-            mid_getR_456d9a2f64d6b28d,
-            mid_getRSquare_456d9a2f64d6b28d,
-            mid_getRegressionSumSquares_456d9a2f64d6b28d,
-            mid_getSignificance_456d9a2f64d6b28d,
-            mid_getSlope_456d9a2f64d6b28d,
-            mid_getSlopeConfidenceInterval_456d9a2f64d6b28d,
-            mid_getSlopeConfidenceInterval_0ba5fed9597b693e,
-            mid_getSlopeStdErr_456d9a2f64d6b28d,
-            mid_getSumOfCrossProducts_456d9a2f64d6b28d,
-            mid_getSumSquaredErrors_456d9a2f64d6b28d,
-            mid_getTotalSumSquares_456d9a2f64d6b28d,
-            mid_getXSumSquares_456d9a2f64d6b28d,
-            mid_hasIntercept_e470b6d9e0d979db,
-            mid_predict_0ba5fed9597b693e,
-            mid_regress_b84c99961a7276a9,
-            mid_regress_d722bd798e38d351,
-            mid_removeData_d660c7a97bf55272,
-            mid_removeData_1d715fa3b7b756e1,
+            mid_init$_0fa09c18fee449d5,
+            mid_init$_bd04c9335fb9e4cf,
+            mid_addData_a0befc7f3dc19e41,
+            mid_addData_8f2e782d5278b131,
+            mid_addObservation_bc1ff02eb3693128,
+            mid_addObservations_38e689b845a7e4f9,
+            mid_append_612d078f264bef5d,
+            mid_clear_0fa09c18fee449d5,
+            mid_getIntercept_dff5885c2c873297,
+            mid_getInterceptStdErr_dff5885c2c873297,
+            mid_getMeanSquareError_dff5885c2c873297,
+            mid_getN_492808a339bfa35f,
+            mid_getR_dff5885c2c873297,
+            mid_getRSquare_dff5885c2c873297,
+            mid_getRegressionSumSquares_dff5885c2c873297,
+            mid_getSignificance_dff5885c2c873297,
+            mid_getSlope_dff5885c2c873297,
+            mid_getSlopeConfidenceInterval_dff5885c2c873297,
+            mid_getSlopeConfidenceInterval_dcbc7ce2902fa136,
+            mid_getSlopeStdErr_dff5885c2c873297,
+            mid_getSumOfCrossProducts_dff5885c2c873297,
+            mid_getSumSquaredErrors_dff5885c2c873297,
+            mid_getTotalSumSquares_dff5885c2c873297,
+            mid_getXSumSquares_dff5885c2c873297,
+            mid_hasIntercept_b108b35ef48e27bd,
+            mid_predict_dcbc7ce2902fa136,
+            mid_regress_0142096ec696b4f7,
+            mid_regress_7a5a137e3f3bf403,
+            mid_removeData_a0befc7f3dc19e41,
+            mid_removeData_8f2e782d5278b131,
             max_mid
           };
 

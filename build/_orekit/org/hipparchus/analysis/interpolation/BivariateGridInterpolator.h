@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace analysis {
       class BivariateFunction;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -28,7 +28,7 @@ namespace org {
         class BivariateGridInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_interpolate_3145d296e90f5aa3,
+            mid_interpolate_b1b3dc6deb3b6d67,
             max_mid
           };
 

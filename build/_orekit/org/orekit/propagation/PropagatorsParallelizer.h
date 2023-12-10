@@ -14,11 +14,11 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace propagation {
-      class Propagator;
       namespace sampling {
-        class MultiSatStepHandler;
         class MultiSatFixedStepHandler;
+        class MultiSatStepHandler;
       }
+      class Propagator;
       class SpacecraftState;
     }
     namespace time {
@@ -35,11 +35,10 @@ namespace org {
       class PropagatorsParallelizer : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_65de9727799c5641,
-          mid_init$_d41a4dd18aadc4fb,
-          mid_init$_1750be9ae5566540,
-          mid_getPropagators_a6156df500549a58,
-          mid_propagate_b7149ea6787a6f3c,
+          mid_init$_151c087c1a7e09cf,
+          mid_init$_d0d4103d5687bd9d,
+          mid_getPropagators_2afa36052df4765d,
+          mid_propagate_8060cef9318d72e3,
           max_mid
         };
 
@@ -54,7 +53,6 @@ namespace org {
         }
         PropagatorsParallelizer(const PropagatorsParallelizer& obj) : ::java::lang::Object(obj) {}
 
-        PropagatorsParallelizer(const ::java::util::List &);
         PropagatorsParallelizer(const ::java::util::List &, const ::org::orekit::propagation::sampling::MultiSatStepHandler &);
         PropagatorsParallelizer(const ::java::util::List &, jdouble, const ::org::orekit::propagation::sampling::MultiSatFixedStepHandler &);
 

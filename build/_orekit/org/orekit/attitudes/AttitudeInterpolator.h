@@ -5,17 +5,17 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeInterpolator;
-    }
-    namespace frames {
-      class Frame;
+    namespace utils {
+      class TimeStampedAngularCoordinates;
     }
     namespace attitudes {
       class Attitude;
     }
-    namespace utils {
-      class TimeStampedAngularCoordinates;
+    namespace frames {
+      class Frame;
+    }
+    namespace time {
+      class TimeInterpolator;
     }
   }
 }
@@ -33,10 +33,10 @@ namespace org {
       class AttitudeInterpolator : public ::org::orekit::time::AbstractTimeInterpolator {
        public:
         enum {
-          mid_init$_dcb9f1b6fb413a61,
-          mid_getAngularInterpolator_c8e4b57f7805ef06,
-          mid_getReferenceFrame_c8fe21bcdac65bf6,
-          mid_interpolate_f9957124dd7f719f,
+          mid_init$_1d277e3ce43e2fd2,
+          mid_getAngularInterpolator_1d0d15c75b6b7aca,
+          mid_getReferenceFrame_b86f9f61d97a7244,
+          mid_interpolate_76da488be1352f9b,
           max_mid
         };
 

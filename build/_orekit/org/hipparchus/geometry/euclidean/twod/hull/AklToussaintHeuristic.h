@@ -34,7 +34,7 @@ namespace org {
             class AklToussaintHeuristic : public ::java::lang::Object {
              public:
               enum {
-                mid_reducePoints_5c0bbab57d449f37,
+                mid_reducePoints_e6702ab1f73fd997,
                 max_mid
               };
 

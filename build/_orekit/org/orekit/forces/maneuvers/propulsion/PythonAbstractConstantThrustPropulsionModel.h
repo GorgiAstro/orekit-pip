@@ -3,6 +3,32 @@
 
 #include "org/orekit/forces/maneuvers/propulsion/AbstractConstantThrustPropulsionModel.h"
 
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+  }
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace forces {
+      namespace maneuvers {
+        class Control3DVectorCostType;
+      }
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -11,32 +37,6 @@ namespace java {
     class Throwable;
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-    class CalculusFieldElement;
-  }
-  namespace orekit {
-    namespace forces {
-      namespace maneuvers {
-        class Control3DVectorCostType;
-      }
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
   }
 }
 template<class T> class JArray;
@@ -50,20 +50,20 @@ namespace org {
           class PythonAbstractConstantThrustPropulsionModel : public ::org::orekit::forces::maneuvers::propulsion::AbstractConstantThrustPropulsionModel {
            public:
             enum {
-              mid_init$_341fcef9a4126498,
-              mid_finalize_7ae3461a92a43152,
-              mid_getFlowRate_456d9a2f64d6b28d,
-              mid_getFlowRate_f05cb8c6dfd5e0b9,
-              mid_getFlowRate_05c598bf3375e090,
-              mid_getFlowRate_e912d21057defe63,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_getThrustVector_17a952530a808943,
-              mid_getThrustVector_0afb6e76c9566061,
-              mid_getThrustVector_31ec2b6903b76c9e,
-              mid_getThrustVector_71c51b45829333ce,
-              mid_pythonDecRef_7ae3461a92a43152,
-              mid_pythonExtension_a27fc9afd27e559d,
-              mid_pythonExtension_fefb08975c10f0a1,
+              mid_init$_bd301e65f74781e6,
+              mid_finalize_0fa09c18fee449d5,
+              mid_getFlowRate_dff5885c2c873297,
+              mid_getFlowRate_9dc1ec0bcc0a9a29,
+              mid_getFlowRate_f2dc4f0d2f87d390,
+              mid_getFlowRate_bf1d7732f1acb697,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_getThrustVector_d52645e0d4c07563,
+              mid_getThrustVector_36619a55dd67cb97,
+              mid_getThrustVector_3cf6594f36d3d60d,
+              mid_getThrustVector_24461752d0eea1e3,
+              mid_pythonDecRef_0fa09c18fee449d5,
+              mid_pythonExtension_492808a339bfa35f,
+              mid_pythonExtension_3a8e7649f31fdb20,
               max_mid
             };
 

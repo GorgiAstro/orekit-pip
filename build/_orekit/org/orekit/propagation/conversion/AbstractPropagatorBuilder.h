@@ -5,30 +5,30 @@
 
 namespace org {
   namespace orekit {
+    namespace orbits {
+      class PositionAngleType;
+      class Orbit;
+      class OrbitType;
+    }
+    namespace propagation {
+      namespace conversion {
+        class PropagatorBuilder;
+      }
+      namespace integration {
+        class AdditionalDerivativesProvider;
+      }
+    }
     namespace frames {
       class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace attitudes {
       class AttitudeProvider;
     }
-    namespace propagation {
-      namespace integration {
-        class AdditionalDerivativesProvider;
-      }
-      namespace conversion {
-        class PropagatorBuilder;
-      }
-    }
-    namespace orbits {
-      class Orbit;
-      class PositionAngleType;
-      class OrbitType;
-    }
     namespace utils {
       class ParameterDriversList;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -47,24 +47,24 @@ namespace org {
         class AbstractPropagatorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_addAdditionalDerivativesProvider_de58ca8034102d77,
-            mid_deselectDynamicParameters_7ae3461a92a43152,
-            mid_getAttitudeProvider_5cce95036ae870ba,
-            mid_getFrame_c8fe21bcdac65bf6,
-            mid_getInitialOrbitDate_aaa854c403487cf3,
-            mid_getMu_456d9a2f64d6b28d,
-            mid_getOrbitType_63ea5cd020bf7bf1,
-            mid_getOrbitalParametersDrivers_eb9e6df280c6daa0,
-            mid_getPositionAngleType_2571e8fe1cede425,
-            mid_getPositionScale_456d9a2f64d6b28d,
-            mid_getPropagationParametersDrivers_eb9e6df280c6daa0,
-            mid_getSelectedNormalizedParameters_7cdc325af0834901,
-            mid_resetOrbit_e5b8a6a44355183e,
-            mid_setAttitudeProvider_8109c1a27d4471d3,
-            mid_getAdditionalDerivativesProviders_a6156df500549a58,
-            mid_addSupportedParameters_65de9727799c5641,
-            mid_createInitialOrbit_551bf685780e3c1f,
-            mid_setParameters_ebc26dcaf4761286,
+            mid_addAdditionalDerivativesProvider_3192623a36e6dd4e,
+            mid_deselectDynamicParameters_0fa09c18fee449d5,
+            mid_getAttitudeProvider_a904f3d015a354a0,
+            mid_getFrame_b86f9f61d97a7244,
+            mid_getInitialOrbitDate_85703d13e302437e,
+            mid_getMu_dff5885c2c873297,
+            mid_getOrbitType_e29360d311dc0e20,
+            mid_getOrbitalParametersDrivers_bd51074bfd9d41da,
+            mid_getPositionAngleType_8f17e83e5a86217c,
+            mid_getPositionScale_dff5885c2c873297,
+            mid_getPropagationParametersDrivers_bd51074bfd9d41da,
+            mid_getSelectedNormalizedParameters_60c7040667a7dc5c,
+            mid_resetOrbit_6219f6b430651d68,
+            mid_setAttitudeProvider_3cff7c75ea06698c,
+            mid_getAdditionalDerivativesProviders_2afa36052df4765d,
+            mid_createInitialOrbit_cde5690bfa4f9649,
+            mid_addSupportedParameters_de3e021e7266b71e,
+            mid_setParameters_fa9d415d19f69361,
             max_mid
           };
 

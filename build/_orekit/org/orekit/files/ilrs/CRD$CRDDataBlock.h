@@ -3,6 +3,24 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace ilrs {
+        class CRD$RangeSupplement;
+        class CRD$Meteo;
+        class CRDHeader;
+        class CRD$AnglesMeasurement;
+        class CRD$SessionStatistics;
+        class CRDConfiguration;
+        class CRD$Calibration;
+        class CRD$RangeMeasurement;
+        class CRD$CalibrationDetail;
+        class CRD$MeteorologicalMeasurement;
+      }
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,24 +28,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ilrs {
-        class CRD$CalibrationDetail;
-        class CRD$RangeSupplement;
-        class CRD$AnglesMeasurement;
-        class CRDHeader;
-        class CRD$Calibration;
-        class CRDConfiguration;
-        class CRD$RangeMeasurement;
-        class CRD$MeteorologicalMeasurement;
-        class CRD$Meteo;
-        class CRD$SessionStatistics;
-      }
-    }
   }
 }
 template<class T> class JArray;
@@ -40,32 +40,32 @@ namespace org {
         class CRD$CRDDataBlock : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_addAnglesData_fdbc10f5869cf001,
-            mid_addCalibrationData_1979c13861d37d85,
-            mid_addCalibrationDetailData_de1d36ea8533ded1,
-            mid_addMeteoData_f2d3e2233ad03dba,
-            mid_addRangeData_48b73d8623943b9d,
-            mid_addRangeSupplementData_d17923b8d3860522,
-            mid_addSessionStatisticsData_bf9a1af7f7500e5f,
-            mid_getAnglesData_a6156df500549a58,
-            mid_getCalibrationData_a6156df500549a58,
-            mid_getCalibrationDetailData_a6156df500549a58,
-            mid_getCalibrationDetailRecords_a6156df500549a58,
-            mid_getCalibrationDetailRecords_720e76ad3b86a46a,
-            mid_getCalibrationRecords_a6156df500549a58,
-            mid_getCalibrationRecords_720e76ad3b86a46a,
-            mid_getConfigurationRecords_c078d1163d6e31e6,
-            mid_getHeader_a6ac000995869c89,
-            mid_getMeteoData_4098865cefc5362e,
-            mid_getRangeData_a6156df500549a58,
-            mid_getRangeSupplementData_a6156df500549a58,
-            mid_getSessionStatisticsData_a6156df500549a58,
-            mid_getSessionStatisticsRecord_dd0bf23a6792e381,
-            mid_getSessionStatisticsRecord_97d81f26b5df075c,
-            mid_getWavelength_7940055cb2c5196d,
-            mid_setConfigurationRecords_03c50d7ef630256e,
-            mid_setHeader_681264e50bdf7b51,
+            mid_init$_0fa09c18fee449d5,
+            mid_addAnglesData_e1c9729d63e3bf8c,
+            mid_addCalibrationData_b67c956e14455568,
+            mid_addCalibrationDetailData_4290ad220666e670,
+            mid_addMeteoData_0bc8957e5ebed1cb,
+            mid_addRangeData_381def2f82634b72,
+            mid_addRangeSupplementData_aed86880c02a39ba,
+            mid_addSessionStatisticsData_a03b13e5108ccf85,
+            mid_getAnglesData_2afa36052df4765d,
+            mid_getCalibrationData_2afa36052df4765d,
+            mid_getCalibrationDetailData_2afa36052df4765d,
+            mid_getCalibrationDetailRecords_2afa36052df4765d,
+            mid_getCalibrationDetailRecords_aade4ea8882e7a2c,
+            mid_getCalibrationRecords_2afa36052df4765d,
+            mid_getCalibrationRecords_aade4ea8882e7a2c,
+            mid_getConfigurationRecords_ec13daa2694209ba,
+            mid_getHeader_3e90095384e815b3,
+            mid_getMeteoData_9459dd149ced72d3,
+            mid_getRangeData_2afa36052df4765d,
+            mid_getRangeSupplementData_2afa36052df4765d,
+            mid_getSessionStatisticsData_2afa36052df4765d,
+            mid_getSessionStatisticsRecord_175ecc667c3042a0,
+            mid_getSessionStatisticsRecord_0d71ee317acb3db8,
+            mid_getWavelength_9ab55b39347deb7b,
+            mid_setConfigurationRecords_7433965f70e12915,
+            mid_setHeader_a1f5a92ac3db7946,
             max_mid
           };
 

@@ -4,27 +4,8 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace time {
-      class FieldTimeShiftable;
-    }
-    namespace utils {
-      class PVCoordinates;
-      class FieldPVCoordinates;
-    }
-  }
   namespace hipparchus {
-    namespace analysis {
-      namespace differentiation {
-        class FieldUnivariateDerivative1;
-        class FieldDerivativeStructure;
-        class FieldUnivariateDerivative2;
-      }
-    }
-    namespace util {
-      class FieldBlendable;
-    }
-    class Field;
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -32,9 +13,28 @@ namespace org {
         }
       }
     }
-    class CalculusFieldElement;
+    namespace util {
+      class FieldBlendable;
+    }
+    namespace analysis {
+      namespace differentiation {
+        class FieldUnivariateDerivative2;
+        class FieldUnivariateDerivative1;
+        class FieldDerivativeStructure;
+      }
+    }
     namespace exception {
       class MathIllegalArgumentException;
+    }
+    class Field;
+  }
+  namespace orekit {
+    namespace time {
+      class FieldTimeShiftable;
+    }
+    namespace utils {
+      class FieldPVCoordinates;
+      class PVCoordinates;
     }
   }
 }
@@ -53,45 +53,45 @@ namespace org {
       class FieldPVCoordinates : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_9c8737fc819646bf,
-          mid_init$_d35296e3a83f651e,
-          mid_init$_73aec871053b5da0,
-          mid_init$_0bb523e1dfdeb246,
-          mid_init$_598bca9db0ea664d,
-          mid_init$_247062d7c2a77835,
-          mid_init$_9e3e1db0a2aa967f,
-          mid_init$_3f18bec8c28008a8,
-          mid_init$_824e651d3426922f,
-          mid_init$_66e66ae11124b9b1,
-          mid_init$_d62b17fa020a4f24,
-          mid_init$_b201ee41a111da4b,
-          mid_init$_3eb5a34dfaadc51b,
-          mid_init$_b41231f2ad06089f,
-          mid_init$_49c41db8204b1317,
-          mid_init$_d4a67adf885bbb69,
-          mid_init$_29150d269bfe43d4,
-          mid_blendArithmeticallyWith_eba1476fd142b272,
-          mid_crossProduct_32f08c76ddea4935,
-          mid_estimateVelocity_8f7f51ffc00ffac1,
-          mid_getAcceleration_5791f80683b5227e,
-          mid_getAngularVelocity_5791f80683b5227e,
-          mid_getMomentum_5791f80683b5227e,
-          mid_getPosition_5791f80683b5227e,
-          mid_getVelocity_5791f80683b5227e,
-          mid_getZero_b10aa29cc18662da,
-          mid_negate_239ccd4fbdc5d04d,
-          mid_normalize_239ccd4fbdc5d04d,
-          mid_positionShiftedBy_3023f195d3eecf7e,
-          mid_shiftedBy_22431c581ae51eff,
-          mid_shiftedBy_7b2c6ce606e939f5,
-          mid_toDerivativeStructurePV_42ec5cc0a8e3a780,
-          mid_toDerivativeStructureVector_cc53a43c791fc9de,
-          mid_toPVCoordinates_6761e3f334368d44,
-          mid_toString_0090f7797e403f43,
-          mid_toUnivariateDerivative1PV_239ccd4fbdc5d04d,
-          mid_toUnivariateDerivative1Vector_5791f80683b5227e,
-          mid_toUnivariateDerivative2PV_239ccd4fbdc5d04d,
-          mid_toUnivariateDerivative2Vector_5791f80683b5227e,
+          mid_init$_c79ed286e3615fed,
+          mid_init$_67d015490dd313e3,
+          mid_init$_d2f8fd42fbe1e9ea,
+          mid_init$_cdf7d14da933bd6b,
+          mid_init$_a332f4d4d1886b45,
+          mid_init$_d80830cf996d9780,
+          mid_init$_454f513ba9b358cd,
+          mid_init$_b1d60cb8a86b8e8f,
+          mid_init$_1a8058b4e5da5f9c,
+          mid_init$_c736ce6ed833c56f,
+          mid_init$_071961305ea9c152,
+          mid_init$_2354f35a5c328f24,
+          mid_init$_3d3d027e88bc533f,
+          mid_init$_a33ecdc3aa7fc877,
+          mid_init$_c1a8203e73d2a149,
+          mid_init$_b4660af81e942f37,
+          mid_init$_6d6f7878f920f885,
+          mid_blendArithmeticallyWith_b31c79033500d4c2,
+          mid_crossProduct_f76646e67e6a0632,
+          mid_estimateVelocity_314ed37c51b9736a,
+          mid_getAcceleration_716f50c86ffc8da7,
+          mid_getAngularVelocity_716f50c86ffc8da7,
+          mid_getMomentum_716f50c86ffc8da7,
+          mid_getPosition_716f50c86ffc8da7,
+          mid_getVelocity_716f50c86ffc8da7,
+          mid_getZero_90f77345373c3eb7,
+          mid_negate_aae6180d70913ad4,
+          mid_normalize_aae6180d70913ad4,
+          mid_positionShiftedBy_e0e563985265c470,
+          mid_shiftedBy_390e24fc3a0bcb9d,
+          mid_shiftedBy_82b950f4b8998a4c,
+          mid_toDerivativeStructurePV_4727d8c8b638c5ff,
+          mid_toDerivativeStructureVector_7c26e03bd80d6bb3,
+          mid_toPVCoordinates_9b7c658c14883c84,
+          mid_toString_11b109bd155ca898,
+          mid_toUnivariateDerivative1PV_aae6180d70913ad4,
+          mid_toUnivariateDerivative1Vector_716f50c86ffc8da7,
+          mid_toUnivariateDerivative2PV_aae6180d70913ad4,
+          mid_toUnivariateDerivative2Vector_716f50c86ffc8da7,
           max_mid
         };
 

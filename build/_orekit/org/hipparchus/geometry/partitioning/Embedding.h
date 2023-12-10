@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace geometry {
       class Point;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,8 +25,8 @@ namespace org {
         class Embedding : public ::java::lang::Object {
          public:
           enum {
-            mid_toSpace_ac445dfe898b403a,
-            mid_toSubSpace_ac445dfe898b403a,
+            mid_toSpace_c48805c2dda937c6,
+            mid_toSubSpace_c48805c2dda937c6,
             max_mid
           };
 

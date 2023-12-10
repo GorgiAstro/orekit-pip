@@ -6,14 +6,14 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
-      class ComplexOrdinaryDifferentialEquation;
       class ComplexODEStateAndDerivative;
-      class OrdinaryDifferentialEquation;
       class ComplexSecondaryODE;
-      class ComplexODEState;
-      class SecondaryODE;
       class ODEState;
+      class OrdinaryDifferentialEquation;
+      class SecondaryODE;
       class ODEStateAndDerivative;
+      class ComplexOrdinaryDifferentialEquation;
+      class ComplexODEState;
     }
   }
 }
@@ -31,11 +31,11 @@ namespace org {
       class ComplexODEConverter : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_convertEquations_692f4b856bdf35c9,
-          mid_convertSecondaryEquations_12bba565b84add90,
-          mid_convertState_9d4ec89646c80951,
-          mid_convertState_2ab9f12639004418,
+          mid_init$_0fa09c18fee449d5,
+          mid_convertEquations_66c8df12f3818ebb,
+          mid_convertSecondaryEquations_c01d75fd6cb02094,
+          mid_convertState_583e7e18b418ae63,
+          mid_convertState_2e1eef287dcdcc65,
           max_mid
         };
 

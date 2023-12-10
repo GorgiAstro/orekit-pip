@@ -28,10 +28,10 @@ namespace org {
         class StepNormalizerBounds : public ::java::lang::Enum {
          public:
           enum {
-            mid_firstIncluded_e470b6d9e0d979db,
-            mid_lastIncluded_e470b6d9e0d979db,
-            mid_valueOf_b90076d4eedf1063,
-            mid_values_22867757489bd4db,
+            mid_firstIncluded_b108b35ef48e27bd,
+            mid_lastIncluded_b108b35ef48e27bd,
+            mid_valueOf_bfccb03065d36240,
+            mid_values_72e4fffeed635b5c,
             max_mid
           };
 

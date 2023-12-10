@@ -34,9 +34,9 @@ namespace org {
             class EvaluationRmsChecker : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_77e0f9a1f260e2e5,
-                mid_init$_1d715fa3b7b756e1,
-                mid_converged_62033baec104fa85,
+                mid_init$_17db3a65980d3441,
+                mid_init$_8f2e782d5278b131,
+                mid_converged_a6b9ae58ae2de284,
                 max_mid
               };
 

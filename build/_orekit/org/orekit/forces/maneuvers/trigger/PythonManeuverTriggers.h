@@ -16,8 +16,8 @@ namespace org {
     }
     namespace propagation {
       namespace events {
-        class FieldEventDetector;
         class EventDetector;
+        class FieldEventDetector;
       }
       class SpacecraftState;
     }
@@ -25,13 +25,13 @@ namespace org {
       class ParameterDriver;
     }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
   }
   namespace hipparchus {
-    class Field;
     class CalculusFieldElement;
+    class Field;
   }
 }
 namespace java {
@@ -57,19 +57,19 @@ namespace org {
           class PythonManeuverTriggers : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_addResetter_c5c7f3f3d4c4bba2,
-              mid_addResetter_17ab38b8d22d6651,
-              mid_finalize_7ae3461a92a43152,
-              mid_getEventDetectors_a68a17dd093f796d,
-              mid_getFieldEventDetectors_1328ddb491531a35,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_init_3d13474d79f5e7bc,
-              mid_isFiring_b230552293273e68,
-              mid_isFiring_80ee6edc2471fed7,
-              mid_pythonDecRef_7ae3461a92a43152,
-              mid_pythonExtension_a27fc9afd27e559d,
-              mid_pythonExtension_fefb08975c10f0a1,
+              mid_init$_0fa09c18fee449d5,
+              mid_addResetter_a16797fae59e88ec,
+              mid_addResetter_e53773d2404dc858,
+              mid_finalize_0fa09c18fee449d5,
+              mid_getEventDetectors_20f6d2b462aaef4b,
+              mid_getFieldEventDetectors_361313cd1a9c693a,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_init_826b4eda94da4e78,
+              mid_isFiring_785ace4124d89120,
+              mid_isFiring_89b940ef53c9a82d,
+              mid_pythonDecRef_0fa09c18fee449d5,
+              mid_pythonExtension_492808a339bfa35f,
+              mid_pythonExtension_3a8e7649f31fdb20,
               max_mid
             };
 

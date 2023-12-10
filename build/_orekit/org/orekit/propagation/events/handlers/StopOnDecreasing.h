@@ -4,22 +4,22 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace events {
+        class EventDetector;
+        namespace handlers {
+          class EventHandler;
+        }
+      }
+      class SpacecraftState;
+    }
+  }
   namespace hipparchus {
     namespace ode {
       namespace events {
         class Action;
       }
-    }
-  }
-  namespace orekit {
-    namespace propagation {
-      namespace events {
-        namespace handlers {
-          class EventHandler;
-        }
-        class EventDetector;
-      }
-      class SpacecraftState;
     }
   }
 }
@@ -39,8 +39,8 @@ namespace org {
           class StopOnDecreasing : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_eventOccurred_66531e3c1769dca9,
+              mid_init$_0fa09c18fee449d5,
+              mid_eventOccurred_abc543fa9701720f,
               max_mid
             };
 

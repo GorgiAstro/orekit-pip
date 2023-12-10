@@ -49,13 +49,13 @@ namespace org {
               class ManeuverFieldType : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_checkUnit_dcad81dd7d926924,
-                  mid_getUnit_196b004fd4585106,
-                  mid_isTime_e470b6d9e0d979db,
-                  mid_outputField_aee2986e9e2d08c6,
-                  mid_process_c69ffcd75e03c815,
-                  mid_valueOf_b1ddf045105c6ed8,
-                  mid_values_56f48c168f29dc17,
+                  mid_checkUnit_97e95d3d99d1e1ba,
+                  mid_getUnit_de9b417ee3c58e2e,
+                  mid_isTime_b108b35ef48e27bd,
+                  mid_outputField_203b29c1d6cf2b5f,
+                  mid_process_6a2a230e80850e3c,
+                  mid_valueOf_cc6c48b3fbb592be,
+                  mid_values_959d1a08e0612ff8,
                   max_mid
                 };
 

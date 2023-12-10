@@ -39,8 +39,8 @@ namespace org {
         class SensorPixelCrossing : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_2656ede02700ff9b,
-            mid_locatePixel_e912d21057defe63,
+            mid_init$_c85520b8b5986ef0,
+            mid_locatePixel_bf1d7732f1acb697,
             max_mid
           };
 

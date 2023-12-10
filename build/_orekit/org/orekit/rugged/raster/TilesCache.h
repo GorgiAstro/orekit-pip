@@ -7,9 +7,9 @@ namespace org {
   namespace orekit {
     namespace rugged {
       namespace raster {
+        class TileUpdater;
         class TileFactory;
         class Tile;
-        class TileUpdater;
       }
     }
   }
@@ -29,8 +29,8 @@ namespace org {
         class TilesCache : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_979cd6d000a98ed6,
-            mid_getTile_b80e7ddb61f279c2,
+            mid_init$_953d847307fdcc31,
+            mid_getTile_e4980ca7d3026f70,
             max_mid
           };
 

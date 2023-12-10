@@ -3,6 +3,12 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -12,12 +18,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,8 +31,8 @@ namespace org {
           class RotationConvention : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_cffa0e02e315c2be,
-              mid_values_ba204ce6b8165e54,
+              mid_valueOf_7f2a5621b1707845,
+              mid_values_acdc129d560ce01b,
               max_mid
             };
 

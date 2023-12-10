@@ -21,8 +21,8 @@ namespace org {
         namespace messages {
           namespace ssr {
             namespace igm {
-              class SsrIgm01Header;
               class SsrIgm01Data;
+              class SsrIgm01Header;
             }
           }
         }
@@ -43,8 +43,8 @@ namespace org {
               class SsrIgm01 : public ::org::orekit::gnss::metric::messages::ssr::igm::SsrIgmMessage {
                public:
                 enum {
-                  mid_init$_d1cb74964c36a726,
-                  mid_getSsrIgm01Data_d6753b7055940a54,
+                  mid_init$_59c7c31d4371a83b,
+                  mid_getSsrIgm01Data_6f5a75ccd8c04465,
                   max_mid
                 };
 

@@ -5,20 +5,20 @@
 
 namespace org {
   namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        namespace gnss {
-          class CombinedObservationDataSet;
-          class MeasurementCombination;
-          class CombinedObservationData;
-        }
-      }
-    }
     namespace files {
       namespace rinex {
         namespace observation {
           class ObservationData;
           class ObservationDataSet;
+        }
+      }
+    }
+    namespace estimation {
+      namespace measurements {
+        namespace gnss {
+          class MeasurementCombination;
+          class CombinedObservationDataSet;
+          class CombinedObservationData;
         }
       }
     }
@@ -41,10 +41,10 @@ namespace org {
           class AbstractSingleFrequencyCombination : public ::java::lang::Object {
            public:
             enum {
-              mid_combine_d8c8276403544c3f,
-              mid_combine_f366866d8f2f42c5,
-              mid_getName_0090f7797e403f43,
-              mid_getCombinedValue_824133ce4aec3505,
+              mid_combine_38fa214a925f8e7a,
+              mid_combine_5803930ce6c7d9f1,
+              mid_getName_11b109bd155ca898,
+              mid_getCombinedValue_86ffecc08a63eff0,
               max_mid
             };
 

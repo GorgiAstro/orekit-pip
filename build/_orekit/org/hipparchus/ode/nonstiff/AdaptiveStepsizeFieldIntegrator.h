@@ -5,16 +5,16 @@
 
 namespace org {
   namespace hipparchus {
-    namespace ode {
-      class FieldEquationsMapper;
-      class FieldODEStateAndDerivative;
-    }
-    class Field;
+    class CalculusFieldElement;
     namespace exception {
       class MathIllegalStateException;
       class MathIllegalArgumentException;
     }
-    class CalculusFieldElement;
+    namespace ode {
+      class FieldODEStateAndDerivative;
+      class FieldEquationsMapper;
+    }
+    class Field;
   }
 }
 namespace java {
@@ -33,17 +33,17 @@ namespace org {
         class AdaptiveStepsizeFieldIntegrator : public ::org::hipparchus::ode::AbstractFieldIntegrator {
          public:
           enum {
-            mid_init$_1d742eb7407cf560,
-            mid_init$_33c0af90f11a227f,
-            mid_getMaxStep_456d9a2f64d6b28d,
-            mid_getMinStep_456d9a2f64d6b28d,
-            mid_initializeStep_12a30531f10c8169,
-            mid_setInitialStepSize_77e0f9a1f260e2e5,
-            mid_setStepSizeControl_e5787c5177784e12,
-            mid_setStepSizeControl_667a7965403ed91a,
-            mid_sanityChecks_2231c8fee9b0ac70,
-            mid_getStepSizeHelper_b1c87be850abd6a4,
-            mid_resetInternalState_7ae3461a92a43152,
+            mid_init$_7c1322d04e543be8,
+            mid_init$_4cfe509c2e9280c2,
+            mid_getMaxStep_dff5885c2c873297,
+            mid_getMinStep_dff5885c2c873297,
+            mid_initializeStep_73f4b2cdb3dce988,
+            mid_setInitialStepSize_17db3a65980d3441,
+            mid_setStepSizeControl_36e977212374ff6b,
+            mid_setStepSizeControl_b0a935b68e41d65a,
+            mid_sanityChecks_e269d011240a2d04,
+            mid_getStepSizeHelper_22d091974ce7dd9a,
+            mid_resetInternalState_0fa09c18fee449d5,
             max_mid
           };
 

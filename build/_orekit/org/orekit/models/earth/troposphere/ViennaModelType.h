@@ -31,8 +31,8 @@ namespace org {
           class ViennaModelType : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_78d8423598c077d1,
-              mid_values_5a71115a406bbf6b,
+              mid_valueOf_51501743bc0e5c45,
+              mid_values_7308b2239f73e0de,
               max_mid
             };
 

@@ -3,6 +3,27 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace ccsds {
+        namespace ndm {
+          class NdmConstituent;
+        }
+        namespace utils {
+          namespace generation {
+            class Generator;
+            class MessageWriter;
+          }
+        }
+        namespace section {
+          class Header;
+          class Segment;
+        }
+      }
+    }
+  }
+}
 namespace java {
   namespace io {
     class IOException;
@@ -11,27 +32,6 @@ namespace java {
     class Throwable;
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ccsds {
-        namespace section {
-          class Segment;
-          class Header;
-        }
-        namespace utils {
-          namespace generation {
-            class MessageWriter;
-            class Generator;
-          }
-        }
-        namespace ndm {
-          class NdmConstituent;
-        }
-      }
-    }
   }
 }
 template<class T> class JArray;
@@ -46,17 +46,17 @@ namespace org {
             class PythonMessageWriter : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_finalize_7ae3461a92a43152,
-                mid_getFormatVersionKey_0090f7797e403f43,
-                mid_getRoot_0090f7797e403f43,
-                mid_getVersion_456d9a2f64d6b28d,
-                mid_pythonDecRef_7ae3461a92a43152,
-                mid_pythonExtension_a27fc9afd27e559d,
-                mid_pythonExtension_fefb08975c10f0a1,
-                mid_writeFooter_fb36c2e4ae059ab9,
-                mid_writeHeader_31a4dd6b0c8635b6,
-                mid_writeSegment_412320e9d7a2723d,
+                mid_init$_0fa09c18fee449d5,
+                mid_finalize_0fa09c18fee449d5,
+                mid_getFormatVersionKey_11b109bd155ca898,
+                mid_getRoot_11b109bd155ca898,
+                mid_getVersion_dff5885c2c873297,
+                mid_pythonDecRef_0fa09c18fee449d5,
+                mid_pythonExtension_492808a339bfa35f,
+                mid_pythonExtension_3a8e7649f31fdb20,
+                mid_writeFooter_6d745cf7b26e9f5d,
+                mid_writeHeader_48090222d5fb583c,
+                mid_writeSegment_6a1f0a7164a88e0a,
                 max_mid
               };
 

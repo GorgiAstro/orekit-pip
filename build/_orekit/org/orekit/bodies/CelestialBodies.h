@@ -25,20 +25,20 @@ namespace org {
       class CelestialBodies : public ::java::lang::Object {
        public:
         enum {
-          mid_getBody_29f199e59c05cc68,
-          mid_getEarth_798caa59db6076aa,
-          mid_getEarthMoonBarycenter_798caa59db6076aa,
-          mid_getJupiter_798caa59db6076aa,
-          mid_getMars_798caa59db6076aa,
-          mid_getMercury_798caa59db6076aa,
-          mid_getMoon_798caa59db6076aa,
-          mid_getNeptune_798caa59db6076aa,
-          mid_getPluto_798caa59db6076aa,
-          mid_getSaturn_798caa59db6076aa,
-          mid_getSolarSystemBarycenter_798caa59db6076aa,
-          mid_getSun_798caa59db6076aa,
-          mid_getUranus_798caa59db6076aa,
-          mid_getVenus_798caa59db6076aa,
+          mid_getBody_68e48076ef831536,
+          mid_getEarth_624686a38a6b107c,
+          mid_getEarthMoonBarycenter_624686a38a6b107c,
+          mid_getJupiter_624686a38a6b107c,
+          mid_getMars_624686a38a6b107c,
+          mid_getMercury_624686a38a6b107c,
+          mid_getMoon_624686a38a6b107c,
+          mid_getNeptune_624686a38a6b107c,
+          mid_getPluto_624686a38a6b107c,
+          mid_getSaturn_624686a38a6b107c,
+          mid_getSolarSystemBarycenter_624686a38a6b107c,
+          mid_getSun_624686a38a6b107c,
+          mid_getUranus_624686a38a6b107c,
+          mid_getVenus_624686a38a6b107c,
           max_mid
         };
 

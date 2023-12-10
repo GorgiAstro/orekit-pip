@@ -25,10 +25,10 @@ namespace org {
         class MullerSolver : public ::org::hipparchus::analysis::solvers::AbstractUnivariateSolver {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_init$_77e0f9a1f260e2e5,
-            mid_init$_1d715fa3b7b756e1,
-            mid_doSolve_456d9a2f64d6b28d,
+            mid_init$_0fa09c18fee449d5,
+            mid_init$_17db3a65980d3441,
+            mid_init$_8f2e782d5278b131,
+            mid_doSolve_dff5885c2c873297,
             max_mid
           };
 

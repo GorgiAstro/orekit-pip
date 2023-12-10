@@ -25,8 +25,8 @@ namespace org {
       class SignalCode : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_c8172eecfba1e78b,
-          mid_values_0489783da1cb39f8,
+          mid_valueOf_aa53d09c54227551,
+          mid_values_17c9460f60a2a46d,
           max_mid
         };
 

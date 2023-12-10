@@ -21,9 +21,9 @@ namespace org {
     class Field : public ::java::lang::Object {
      public:
       enum {
-        mid_getOne_7e89936bdf79375b,
-        mid_getRuntimeClass_8f66acc08d2a174c,
-        mid_getZero_7e89936bdf79375b,
+        mid_getOne_99097cb60cf2d774,
+        mid_getRuntimeClass_7c16c5008b34b3db,
+        mid_getZero_99097cb60cf2d774,
         max_mid
       };
 

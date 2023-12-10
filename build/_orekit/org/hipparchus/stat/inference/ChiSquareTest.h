@@ -27,16 +27,16 @@ namespace org {
         class ChiSquareTest : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_chiSquare_04b1c4593e0336da,
-            mid_chiSquare_bea0e17cbbf5365f,
-            mid_chiSquareDataSetsComparison_84aeba7caf131216,
-            mid_chiSquareTest_04b1c4593e0336da,
-            mid_chiSquareTest_bea0e17cbbf5365f,
-            mid_chiSquareTest_766218494e6ad3c9,
-            mid_chiSquareTest_1663c18e69b1b60e,
-            mid_chiSquareTestDataSetsComparison_84aeba7caf131216,
-            mid_chiSquareTestDataSetsComparison_c7887040a8242925,
+            mid_init$_0fa09c18fee449d5,
+            mid_chiSquare_b90ef0962fb208c4,
+            mid_chiSquare_830834389f7bbf30,
+            mid_chiSquareDataSetsComparison_d498b5cc5125fdcb,
+            mid_chiSquareTest_b90ef0962fb208c4,
+            mid_chiSquareTest_830834389f7bbf30,
+            mid_chiSquareTest_b37d0c4bca3b7c28,
+            mid_chiSquareTest_d2b6ad91862e3050,
+            mid_chiSquareTestDataSetsComparison_d498b5cc5125fdcb,
+            mid_chiSquareTestDataSetsComparison_9c57b9c7c3ffd7eb,
             max_mid
           };
 

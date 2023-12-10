@@ -28,9 +28,9 @@ namespace org {
         class FieldEventsLogger$FieldLoggedEvent : public ::java::lang::Object {
          public:
           enum {
-            mid_getEventDetector_9afb3f6694da2222,
-            mid_getState_a553824829fc2514,
-            mid_isIncreasing_e470b6d9e0d979db,
+            mid_getEventDetector_4fe06ecc019ea51d,
+            mid_getState_02cea343d9f71933,
+            mid_isIncreasing_b108b35ef48e27bd,
             max_mid
           };
 

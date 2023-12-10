@@ -5,30 +5,30 @@
 
 namespace org {
   namespace hipparchus {
-    namespace linear {
-      class RealVector;
-      class RealMatrix;
-    }
     namespace optim {
+      class PointVectorValuePair;
       namespace nonlinear {
         namespace vector {
           namespace leastsquares {
-            class LeastSquaresProblem$Evaluation;
             class MultivariateJacobianFunction;
+            class LeastSquaresProblem$Evaluation;
             class ParameterValidator;
             class LeastSquaresProblem;
           }
         }
       }
-      class PointVectorValuePair;
       class ConvergenceChecker;
+    }
+    namespace util {
+      class Incrementor;
     }
     namespace analysis {
       class MultivariateVectorFunction;
       class MultivariateMatrixFunction;
     }
-    namespace util {
-      class Incrementor;
+    namespace linear {
+      class RealMatrix;
+      class RealVector;
     }
   }
 }
@@ -49,15 +49,15 @@ namespace org {
             class LeastSquaresFactory : public ::java::lang::Object {
              public:
               enum {
-                mid_countEvaluations_d895828ff66e2e28,
-                mid_create_5b568760059dad60,
-                mid_create_8e09ef5bdf791899,
-                mid_create_7d2867df71e9c392,
-                mid_create_878472d31d65edc2,
-                mid_evaluationChecker_3f15d3efc7f0fe61,
-                mid_model_77824eaff5c3c8a5,
-                mid_weightDiagonal_8d6b23812c19e8cd,
-                mid_weightMatrix_9506dfeff4834b40,
+                mid_countEvaluations_1047d1454f109d69,
+                mid_create_58ec63dd85264468,
+                mid_create_4e8eb0c006b16b51,
+                mid_create_6423dab85c480a70,
+                mid_create_1d8a4308d6f02389,
+                mid_evaluationChecker_137f067a9f665736,
+                mid_model_7996e90bd4c3017a,
+                mid_weightDiagonal_c11efa220350971b,
+                mid_weightMatrix_70ce7aeba7854313,
                 max_mid
               };
 

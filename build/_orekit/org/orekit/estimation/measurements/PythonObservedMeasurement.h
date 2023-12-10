@@ -7,22 +7,22 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class ObservableSatellite;
         class EstimatedMeasurement;
-        class ComparableMeasurement;
         class EstimatedMeasurementBase;
+        class ComparableMeasurement;
         class ObservedMeasurement;
         class EstimationModifier;
+        class ObservableSatellite;
       }
-    }
-    namespace propagation {
-      class SpacecraftState;
     }
     namespace utils {
       class ParameterDriver;
     }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace propagation {
+      class SpacecraftState;
     }
   }
 }
@@ -46,26 +46,26 @@ namespace org {
         class PythonObservedMeasurement : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_addModifier_fc816f44bfa3d437,
-            mid_compareTo_5d68114462a4e82e,
-            mid_estimate_9d5a7270ffb14a9e,
-            mid_estimateWithoutDerivatives_c188a3b50efa39a5,
-            mid_finalize_7ae3461a92a43152,
-            mid_getBaseWeight_7cdc325af0834901,
-            mid_getDate_aaa854c403487cf3,
-            mid_getDimension_f2f64475e4580546,
-            mid_getMeasurementType_0090f7797e403f43,
-            mid_getModifiers_a6156df500549a58,
-            mid_getObservedValue_7cdc325af0834901,
-            mid_getParametersDrivers_a6156df500549a58,
-            mid_getSatellites_a6156df500549a58,
-            mid_getTheoreticalStandardDeviation_7cdc325af0834901,
-            mid_isEnabled_e470b6d9e0d979db,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
-            mid_setEnabled_50a2e0b139e80a58,
+            mid_init$_0fa09c18fee449d5,
+            mid_addModifier_baf3397e6fffc21d,
+            mid_compareTo_aa79741dc73b1207,
+            mid_estimate_27ef5cc84ad0852b,
+            mid_estimateWithoutDerivatives_e32883476b3d9b22,
+            mid_finalize_0fa09c18fee449d5,
+            mid_getBaseWeight_60c7040667a7dc5c,
+            mid_getDate_85703d13e302437e,
+            mid_getDimension_570ce0828f81a2c1,
+            mid_getMeasurementType_11b109bd155ca898,
+            mid_getModifiers_2afa36052df4765d,
+            mid_getObservedValue_60c7040667a7dc5c,
+            mid_getParametersDrivers_2afa36052df4765d,
+            mid_getSatellites_2afa36052df4765d,
+            mid_getTheoreticalStandardDeviation_60c7040667a7dc5c,
+            mid_isEnabled_b108b35ef48e27bd,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
+            mid_setEnabled_bd04c9335fb9e4cf,
             max_mid
           };
 

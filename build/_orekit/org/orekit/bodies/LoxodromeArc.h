@@ -3,17 +3,17 @@
 
 #include "org/orekit/bodies/Loxodrome.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace bodies {
       class OneAxisEllipsoid;
       class GeodeticPoint;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,11 +25,11 @@ namespace org {
       class LoxodromeArc : public ::org::orekit::bodies::Loxodrome {
        public:
         enum {
-          mid_init$_4844c9c998947019,
-          mid_init$_7ddbea5e851c6edb,
-          mid_calculatePointAlongArc_e381e99dbfc90980,
-          mid_getDistance_456d9a2f64d6b28d,
-          mid_getFinalPoint_fabc97b1aefe5844,
+          mid_init$_e382dba4b5c7f7ec,
+          mid_init$_bba3738469ae684f,
+          mid_calculatePointAlongArc_a6daea86c60e2668,
+          mid_getDistance_dff5885c2c873297,
+          mid_getFinalPoint_82d0a9bcd06489bb,
           max_mid
         };
 

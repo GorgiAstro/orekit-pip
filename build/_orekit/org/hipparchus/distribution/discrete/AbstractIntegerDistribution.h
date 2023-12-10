@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace distribution {
       class IntegerDistribution;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -31,11 +31,11 @@ namespace org {
         class AbstractIntegerDistribution : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_inverseCumulativeProbability_12ebab281ee35c98,
-            mid_logProbability_b772323fc98b7293,
-            mid_probability_a84e4ee1da3f1ab8,
-            mid_solveInverseCumulativeProbability_c23b9a4409f2aa55,
+            mid_init$_0fa09c18fee449d5,
+            mid_inverseCumulativeProbability_4508852644846c83,
+            mid_logProbability_46f85b53d9aedd96,
+            mid_probability_dbbe5f05149dbf73,
+            mid_solveInverseCumulativeProbability_5f5c98d9d6068625,
             max_mid
           };
 

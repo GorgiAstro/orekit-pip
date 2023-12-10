@@ -3,16 +3,16 @@
 
 #include "org/orekit/frames/Frame.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace frames {
       class ITRFVersion;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,7 +24,7 @@ namespace org {
       class VersionedITRF : public ::org::orekit::frames::Frame {
        public:
         enum {
-          mid_getITRFVersion_f157e1cf87d45e2d,
+          mid_getITRFVersion_8a73c81b6e5084ce,
           max_mid
         };
 

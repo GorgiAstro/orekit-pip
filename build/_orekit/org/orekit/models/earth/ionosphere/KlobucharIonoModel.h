@@ -3,21 +3,11 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
-    namespace time {
-      class TimeScale;
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
     namespace frames {
       class TopocentricFrame;
     }
@@ -26,11 +16,8 @@ namespace org {
       class FieldGeodeticPoint;
     }
     namespace propagation {
-      class SpacecraftState;
       class FieldSpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
+      class SpacecraftState;
     }
     namespace models {
       namespace earth {
@@ -39,9 +26,22 @@ namespace org {
         }
       }
     }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+      class TimeScale;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
   }
-  namespace hipparchus {
-    class CalculusFieldElement;
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -55,13 +55,13 @@ namespace org {
           class KlobucharIonoModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0d03c8a1d7f56f02,
-              mid_init$_3a8146127c0aa9ca,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_pathDelay_78d4f8498e981bf5,
-              mid_pathDelay_c824fdb3e595a2ae,
-              mid_pathDelay_eb8eb219f7351702,
-              mid_pathDelay_a1a627c36b60b756,
+              mid_init$_e1f4b15468f5564a,
+              mid_init$_c9965c971ad94126,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_pathDelay_28325ab4dabb069a,
+              mid_pathDelay_bea489d08473aa2e,
+              mid_pathDelay_9d8059e615e4302f,
+              mid_pathDelay_2787d703045bd2bf,
               max_mid
             };
 

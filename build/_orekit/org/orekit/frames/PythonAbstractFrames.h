@@ -3,20 +3,6 @@
 
 #include "org/orekit/frames/AbstractFrames.h"
 
-namespace org {
-  namespace orekit {
-    namespace time {
-      class TimeScales;
-    }
-    namespace frames {
-      class Frame;
-      class EOPHistory;
-    }
-    namespace utils {
-      class IERSConventions;
-    }
-  }
-}
 namespace java {
   namespace util {
     namespace function {
@@ -28,6 +14,20 @@ namespace java {
     class Class;
   }
 }
+namespace org {
+  namespace orekit {
+    namespace frames {
+      class EOPHistory;
+      class Frame;
+    }
+    namespace utils {
+      class IERSConventions;
+    }
+    namespace time {
+      class TimeScales;
+    }
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -37,12 +37,12 @@ namespace org {
       class PythonAbstractFrames : public ::org::orekit::frames::AbstractFrames {
        public:
         enum {
-          mid_init$_2e8e53c66e9d36c4,
-          mid_finalize_7ae3461a92a43152,
-          mid_getEOPHistory_7544a283da003d74,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
+          mid_init$_404846c6e43ec406,
+          mid_finalize_0fa09c18fee449d5,
+          mid_getEOPHistory_f7b9f8d7c24d861d,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
           max_mid
         };
 

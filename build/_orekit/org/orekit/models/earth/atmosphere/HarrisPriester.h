@@ -5,22 +5,25 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
-    class CalculusFieldElement;
   }
   namespace orekit {
-    namespace bodies {
-      class OneAxisEllipsoid;
-    }
     namespace frames {
       class Frame;
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
+    }
+    namespace bodies {
+      class OneAxisEllipsoid;
     }
     namespace time {
       class AbsoluteDate;
@@ -32,9 +35,6 @@ namespace org {
           class Atmosphere;
         }
       }
-    }
-    namespace utils {
-      class PVCoordinatesProvider;
     }
   }
 }
@@ -54,18 +54,18 @@ namespace org {
           class HarrisPriester : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0a5b2718e0997f3a,
-              mid_init$_510722e30ff1bdf0,
-              mid_init$_f206e82e75dbd58d,
-              mid_init$_fbb4ef6954d0be48,
-              mid_getDensity_7e4981d8fe7bfeef,
-              mid_getDensity_5fd980386f9c0459,
-              mid_getDensity_e3f5c4474b151066,
-              mid_getDensity_ee5ac6667b0d4b90,
-              mid_getFrame_c8fe21bcdac65bf6,
-              mid_getMaxAlt_456d9a2f64d6b28d,
-              mid_getMinAlt_456d9a2f64d6b28d,
-              mid_getTabDensity_43de1192439efa92,
+              mid_init$_66b28f080fa271fc,
+              mid_init$_ab4c033fbcb06e60,
+              mid_init$_d9fceafc8418f6bc,
+              mid_init$_2cc741a8331eec3e,
+              mid_getDensity_659f5a2caf346aee,
+              mid_getDensity_2814c71be939a588,
+              mid_getDensity_f7d7785230311c38,
+              mid_getDensity_b79d75c1a8af7374,
+              mid_getFrame_b86f9f61d97a7244,
+              mid_getMaxAlt_dff5885c2c873297,
+              mid_getMinAlt_dff5885c2c873297,
+              mid_getTabDensity_0358d8ea02f2cdb1,
               max_mid
             };
 
@@ -87,8 +87,8 @@ namespace org {
 
             ::org::hipparchus::CalculusFieldElement getDensity(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &) const;
             jdouble getDensity(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &) const;
-            ::org::hipparchus::CalculusFieldElement getDensity(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &) const;
             jdouble getDensity(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &) const;
+            ::org::hipparchus::CalculusFieldElement getDensity(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &) const;
             ::org::orekit::frames::Frame getFrame() const;
             jdouble getMaxAlt() const;
             jdouble getMinAlt() const;

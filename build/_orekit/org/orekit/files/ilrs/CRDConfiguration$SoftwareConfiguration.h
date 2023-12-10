@@ -19,19 +19,19 @@ namespace org {
         class CRDConfiguration$SoftwareConfiguration : public ::org::orekit::files::ilrs::CRDConfiguration$BaseConfiguration {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_getProcessingSoftwareVersions_0f62ccf08eef5924,
-            mid_getProcessingSoftwares_0f62ccf08eef5924,
-            mid_getSoftwareId_0090f7797e403f43,
-            mid_getTrackingSoftwareVersions_0f62ccf08eef5924,
-            mid_getTrackingSoftwares_0f62ccf08eef5924,
-            mid_setProcessingSoftwareVersions_5712fb35729cb71f,
-            mid_setProcessingSoftwares_5712fb35729cb71f,
-            mid_setSoftwareId_e939c6558ae8d313,
-            mid_setTrackingSoftwareVersions_5712fb35729cb71f,
-            mid_setTrackingSoftwares_5712fb35729cb71f,
-            mid_toCrdString_0090f7797e403f43,
-            mid_toString_0090f7797e403f43,
+            mid_init$_0fa09c18fee449d5,
+            mid_getProcessingSoftwareVersions_692f4257baa8d3c3,
+            mid_getProcessingSoftwares_692f4257baa8d3c3,
+            mid_getSoftwareId_11b109bd155ca898,
+            mid_getTrackingSoftwareVersions_692f4257baa8d3c3,
+            mid_getTrackingSoftwares_692f4257baa8d3c3,
+            mid_setProcessingSoftwareVersions_b8ac5bb33398c2cf,
+            mid_setProcessingSoftwares_b8ac5bb33398c2cf,
+            mid_setSoftwareId_d0bc48d5b00dc40c,
+            mid_setTrackingSoftwareVersions_b8ac5bb33398c2cf,
+            mid_setTrackingSoftwares_b8ac5bb33398c2cf,
+            mid_toCrdString_11b109bd155ca898,
+            mid_toString_11b109bd155ca898,
             max_mid
           };
 

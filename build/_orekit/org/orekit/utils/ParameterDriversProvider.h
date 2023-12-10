@@ -3,6 +3,21 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    class Field;
+  }
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,21 +25,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    class Field;
-    class CalculusFieldElement;
-  }
-  namespace orekit {
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
   }
 }
 template<class T> class JArray;
@@ -36,16 +36,16 @@ namespace org {
       class ParameterDriversProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getNbParametersDriversValue_f2f64475e4580546,
-          mid_getParameterDriver_d5ba0ef5703f4c62,
-          mid_getParameters_7cdc325af0834901,
-          mid_getParameters_e586dea4c0bad69b,
-          mid_getParameters_62f3dd52a41b90da,
-          mid_getParameters_e702a9655dcb43da,
-          mid_getParametersAllValues_7cdc325af0834901,
-          mid_getParametersAllValues_62f3dd52a41b90da,
-          mid_getParametersDrivers_a6156df500549a58,
-          mid_isSupported_6b161f495ea569b8,
+          mid_getNbParametersDriversValue_570ce0828f81a2c1,
+          mid_getParameterDriver_32a37bc1292372ac,
+          mid_getParameters_60c7040667a7dc5c,
+          mid_getParameters_2b9aa40de0a696a4,
+          mid_getParameters_f040a403cffae196,
+          mid_getParameters_34a9acc5b042d8a8,
+          mid_getParametersAllValues_60c7040667a7dc5c,
+          mid_getParametersAllValues_f040a403cffae196,
+          mid_getParametersDrivers_2afa36052df4765d,
+          mid_isSupported_7edad2c2f64f4d68,
           max_mid
         };
 

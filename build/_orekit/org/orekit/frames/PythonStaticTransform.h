@@ -15,11 +15,11 @@ namespace org {
     }
   }
   namespace orekit {
-    namespace frames {
-      class StaticTransform;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace frames {
+      class StaticTransform;
     }
   }
 }
@@ -38,15 +38,15 @@ namespace org {
       class PythonStaticTransform : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_finalize_7ae3461a92a43152,
-          mid_getDate_aaa854c403487cf3,
-          mid_getInverse_85643104a022b593,
-          mid_getRotation_24d2e432e376f9a0,
-          mid_getTranslation_17a952530a808943,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
+          mid_init$_0fa09c18fee449d5,
+          mid_finalize_0fa09c18fee449d5,
+          mid_getDate_85703d13e302437e,
+          mid_getInverse_892837e768e813bc,
+          mid_getRotation_de86c7efc42eac14,
+          mid_getTranslation_d52645e0d4c07563,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
           max_mid
         };
 

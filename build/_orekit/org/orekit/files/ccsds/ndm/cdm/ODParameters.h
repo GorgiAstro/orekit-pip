@@ -3,16 +3,16 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,30 +27,30 @@ namespace org {
             class ODParameters : public ::org::orekit::files::ccsds::section::CommentsContainer {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_getActualOdSpan_456d9a2f64d6b28d,
-                mid_getObsAvailable_f2f64475e4580546,
-                mid_getObsUsed_f2f64475e4580546,
-                mid_getOdEpoch_aaa854c403487cf3,
-                mid_getRecommendedOdSpan_456d9a2f64d6b28d,
-                mid_getResidualsAccepted_456d9a2f64d6b28d,
-                mid_getTimeLastObsEnd_aaa854c403487cf3,
-                mid_getTimeLastObsStart_aaa854c403487cf3,
-                mid_getTracksAvailable_f2f64475e4580546,
-                mid_getTracksUsed_f2f64475e4580546,
-                mid_getWeightedRMS_456d9a2f64d6b28d,
-                mid_setActualOdSpan_77e0f9a1f260e2e5,
-                mid_setObsAvailable_0a2a1ac2721c0336,
-                mid_setObsUsed_0a2a1ac2721c0336,
-                mid_setOdEpoch_e82d68cd9f886886,
-                mid_setRecommendedOdSpan_77e0f9a1f260e2e5,
-                mid_setResidualsAccepted_77e0f9a1f260e2e5,
-                mid_setTimeLastObsEnd_e82d68cd9f886886,
-                mid_setTimeLastObsStart_e82d68cd9f886886,
-                mid_setTracksAvailable_0a2a1ac2721c0336,
-                mid_setTracksUsed_0a2a1ac2721c0336,
-                mid_setWeightedRMS_77e0f9a1f260e2e5,
-                mid_validate_77e0f9a1f260e2e5,
+                mid_init$_0fa09c18fee449d5,
+                mid_getActualOdSpan_dff5885c2c873297,
+                mid_getObsAvailable_570ce0828f81a2c1,
+                mid_getObsUsed_570ce0828f81a2c1,
+                mid_getOdEpoch_85703d13e302437e,
+                mid_getRecommendedOdSpan_dff5885c2c873297,
+                mid_getResidualsAccepted_dff5885c2c873297,
+                mid_getTimeLastObsEnd_85703d13e302437e,
+                mid_getTimeLastObsStart_85703d13e302437e,
+                mid_getTracksAvailable_570ce0828f81a2c1,
+                mid_getTracksUsed_570ce0828f81a2c1,
+                mid_getWeightedRMS_dff5885c2c873297,
+                mid_setActualOdSpan_17db3a65980d3441,
+                mid_setObsAvailable_99803b0791f320ff,
+                mid_setObsUsed_99803b0791f320ff,
+                mid_setOdEpoch_600a2a61652bc473,
+                mid_setRecommendedOdSpan_17db3a65980d3441,
+                mid_setResidualsAccepted_17db3a65980d3441,
+                mid_setTimeLastObsEnd_600a2a61652bc473,
+                mid_setTimeLastObsStart_600a2a61652bc473,
+                mid_setTracksAvailable_99803b0791f320ff,
+                mid_setTracksUsed_99803b0791f320ff,
+                mid_setWeightedRMS_17db3a65980d3441,
+                mid_validate_17db3a65980d3441,
                 max_mid
               };
 

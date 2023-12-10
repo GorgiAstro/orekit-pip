@@ -3,11 +3,6 @@
 
 #include "org/orekit/propagation/analytical/gnss/data/CommonGnssData.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -19,6 +14,11 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -33,16 +33,16 @@ namespace org {
             class AbstractAlmanac : public ::org::orekit::propagation::analytical::gnss::data::CommonGnssData {
              public:
               enum {
-                mid_init$_b05c288d5068eccb,
-                mid_getAf2_456d9a2f64d6b28d,
-                mid_getCic_456d9a2f64d6b28d,
-                mid_getCis_456d9a2f64d6b28d,
-                mid_getCrc_456d9a2f64d6b28d,
-                mid_getCrs_456d9a2f64d6b28d,
-                mid_getCuc_456d9a2f64d6b28d,
-                mid_getCus_456d9a2f64d6b28d,
-                mid_getIDot_456d9a2f64d6b28d,
-                mid_getMeanMotion_456d9a2f64d6b28d,
+                mid_init$_01fb2c777e5def32,
+                mid_getAf2_dff5885c2c873297,
+                mid_getCic_dff5885c2c873297,
+                mid_getCis_dff5885c2c873297,
+                mid_getCrc_dff5885c2c873297,
+                mid_getCrs_dff5885c2c873297,
+                mid_getCuc_dff5885c2c873297,
+                mid_getCus_dff5885c2c873297,
+                mid_getIDot_dff5885c2c873297,
+                mid_getMeanMotion_dff5885c2c873297,
                 max_mid
               };
 

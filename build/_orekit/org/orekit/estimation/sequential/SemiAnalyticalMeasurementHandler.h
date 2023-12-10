@@ -13,21 +13,21 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace estimation {
-      namespace sequential {
-        class SemiAnalyticalProcess;
-        class MeasurementDecorator;
+    namespace propagation {
+      namespace sampling {
+        class OrekitStepHandler;
+        class OrekitStepInterpolator;
       }
+      class SpacecraftState;
+    }
+    namespace estimation {
       namespace measurements {
         class ObservedMeasurement;
       }
-    }
-    namespace propagation {
-      namespace sampling {
-        class OrekitStepInterpolator;
-        class OrekitStepHandler;
+      namespace sequential {
+        class MeasurementDecorator;
+        class SemiAnalyticalProcess;
       }
-      class SpacecraftState;
     }
     namespace time {
       class AbsoluteDate;
@@ -51,10 +51,10 @@ namespace org {
         class SemiAnalyticalMeasurementHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_443674e595d9825a,
-            mid_init$_5d94a9dc7da109ec,
-            mid_handleStep_eb797cf50ec4b2c4,
-            mid_init_3d13474d79f5e7bc,
+            mid_init$_2f5c48307ae3f24f,
+            mid_init$_699981b9b0125762,
+            mid_handleStep_aa75aa80a734fb3b,
+            mid_init_826b4eda94da4e78,
             max_mid
           };
 

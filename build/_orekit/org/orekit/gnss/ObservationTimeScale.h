@@ -5,12 +5,12 @@
 
 namespace org {
   namespace orekit {
+    namespace gnss {
+      class ObservationTimeScale;
+    }
     namespace time {
       class TimeScales;
       class TimeScale;
-    }
-    namespace gnss {
-      class ObservationTimeScale;
     }
   }
 }
@@ -29,9 +29,9 @@ namespace org {
       class ObservationTimeScale : public ::java::lang::Enum {
        public:
         enum {
-          mid_getTimeScale_f8bc26f48dbcde4b,
-          mid_valueOf_ed3fc9dd517bf832,
-          mid_values_06ced374976446a7,
+          mid_getTimeScale_1598586664182696,
+          mid_valueOf_f1ab4c8d160d1d07,
+          mid_values_47242b2049afa44b,
           max_mid
         };
 

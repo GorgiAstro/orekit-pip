@@ -37,8 +37,8 @@ namespace org {
             class FieldFixedNumberInterpolationGrid : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a69d58691b2f6a42,
-                mid_getGridPoints_492e97ecdce43bb1,
+                mid_init$_c5199de6167cff95,
+                mid_getGridPoints_04b33bd8d7b2bde1,
                 max_mid
               };
 

@@ -3,14 +3,6 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -31,6 +23,14 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -43,11 +43,11 @@ namespace org {
             class ObservationsBlock : public ::org::orekit::files::ccsds::section::CommentsContainer {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_addObservation_e13ef2e2ed1f9373,
-                mid_addObservation_07829ca5e164764b,
-                mid_getObservations_a6156df500549a58,
-                mid_setObservations_65de9727799c5641,
+                mid_init$_0fa09c18fee449d5,
+                mid_addObservation_cd94b1e055e4d212,
+                mid_addObservation_2d550fb141a705f2,
+                mid_getObservations_2afa36052df4765d,
+                mid_setObservations_de3e021e7266b71e,
                 max_mid
               };
 

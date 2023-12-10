@@ -16,10 +16,10 @@ namespace org {
           }
         }
         namespace utils {
-          class ContextBinding;
           namespace lexical {
             class ParseToken;
           }
+          class ContextBinding;
         }
       }
     }
@@ -44,9 +44,9 @@ namespace org {
               class AttitudeStateHistoryMetadataKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_e5c91f7e921d2387,
-                  mid_valueOf_2344b00ad4d4017a,
-                  mid_values_23c9c46831adc176,
+                  mid_process_4a55b8ed8c24d7d9,
+                  mid_valueOf_95305a6a191bf229,
+                  mid_values_4cdb19a8b38e43ea,
                   max_mid
                 };
 

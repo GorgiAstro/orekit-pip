@@ -4,6 +4,17 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace frames {
+      class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class TimeStampedPVCoordinates;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -11,17 +22,6 @@ namespace org {
           class Vector3D;
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace frames {
-      class Frame;
-    }
-    namespace utils {
-      class TimeStampedPVCoordinates;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -39,8 +39,8 @@ namespace org {
       class PVCoordinatesProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getPVCoordinates_20557c175f7cd899,
-          mid_getPosition_5343d34e5fbffcdd,
+          mid_getPVCoordinates_cfeec55f7c63ec64,
+          mid_getPosition_41a826780212dfea,
           max_mid
         };
 

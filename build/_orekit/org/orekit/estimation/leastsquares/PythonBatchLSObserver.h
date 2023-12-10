@@ -4,6 +4,22 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace leastsquares {
+        class BatchLSObserver;
+      }
+      namespace measurements {
+        class EstimationsProvider;
+      }
+    }
+    namespace orbits {
+      class Orbit;
+    }
+    namespace utils {
+      class ParameterDriversList;
+    }
+  }
   namespace hipparchus {
     namespace optim {
       namespace nonlinear {
@@ -13,22 +29,6 @@ namespace org {
           }
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace orbits {
-      class Orbit;
-    }
-    namespace estimation {
-      namespace leastsquares {
-        class BatchLSObserver;
-      }
-      namespace measurements {
-        class EstimationsProvider;
-      }
-    }
-    namespace utils {
-      class ParameterDriversList;
     }
   }
 }
@@ -48,12 +48,12 @@ namespace org {
         class PythonBatchLSObserver : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_evaluationPerformed_385d95579a122c42,
-            mid_finalize_7ae3461a92a43152,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
+            mid_init$_0fa09c18fee449d5,
+            mid_evaluationPerformed_1c346acaad15e94a,
+            mid_finalize_0fa09c18fee449d5,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
             max_mid
           };
 

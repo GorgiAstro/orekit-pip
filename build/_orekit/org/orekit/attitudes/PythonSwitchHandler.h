@@ -12,8 +12,8 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace attitudes {
-      class AttitudeProvider;
       class AttitudesSequence$SwitchHandler;
+      class AttitudeProvider;
     }
     namespace propagation {
       class SpacecraftState;
@@ -29,12 +29,12 @@ namespace org {
       class PythonSwitchHandler : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_finalize_7ae3461a92a43152,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
-          mid_switchOccurred_8a05bbdb2856b4ec,
+          mid_init$_0fa09c18fee449d5,
+          mid_finalize_0fa09c18fee449d5,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
+          mid_switchOccurred_0bf4342ddf7e9645,
           max_mid
         };
 

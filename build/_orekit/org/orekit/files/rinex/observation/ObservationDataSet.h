@@ -5,19 +5,19 @@
 
 namespace org {
   namespace orekit {
-    namespace gnss {
-      class SatInSystem;
-    }
-    namespace time {
-      class TimeStamped;
-      class AbsoluteDate;
-    }
     namespace files {
       namespace rinex {
         namespace observation {
           class ObservationData;
         }
       }
+    }
+    namespace gnss {
+      class SatInSystem;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeStamped;
     }
   }
 }
@@ -40,12 +40,12 @@ namespace org {
           class ObservationDataSet : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_ebea0da2416dcfb3,
-              mid_getDate_aaa854c403487cf3,
-              mid_getEventFlag_f2f64475e4580546,
-              mid_getObservationData_a6156df500549a58,
-              mid_getRcvrClkOffset_456d9a2f64d6b28d,
-              mid_getSatellite_2d9e00e3b80c70c8,
+              mid_init$_3617e5a957fde8c1,
+              mid_getDate_85703d13e302437e,
+              mid_getEventFlag_570ce0828f81a2c1,
+              mid_getObservationData_2afa36052df4765d,
+              mid_getRcvrClkOffset_dff5885c2c873297,
+              mid_getSatellite_7c0ce8c834d2e72b,
               max_mid
             };
 

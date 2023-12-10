@@ -49,9 +49,9 @@ namespace org {
           class AlongTrackAiming : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_ad9ae6d9b489002f,
-              mid_alongTileDirection_c57b22dac91cacbc,
-              mid_getSingularPoints_a6156df500549a58,
+              mid_init$_a852fbc62bf75041,
+              mid_alongTileDirection_cb13d5b31f03b28f,
+              mid_getSingularPoints_2afa36052df4765d,
               max_mid
             };
 

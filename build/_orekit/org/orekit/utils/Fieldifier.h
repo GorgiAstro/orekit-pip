@@ -36,9 +36,9 @@ namespace org {
       class Fieldifier : public ::java::lang::Object {
        public:
         enum {
-          mid_fieldify_169ee1c5c6f349b6,
-          mid_fieldify_9fa67162fa1e99f8,
-          mid_fieldify_23bcd78a2b0d2684,
+          mid_fieldify_864f8e04b56fc910,
+          mid_fieldify_82a75cc2abf4301d,
+          mid_fieldify_0632d9af46316121,
           max_mid
         };
 

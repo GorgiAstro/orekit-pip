@@ -3,36 +3,24 @@
 
 #include "org/orekit/propagation/conversion/AbstractPropagatorBuilder.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class Object;
-  }
-}
 namespace org {
   namespace orekit {
+    namespace orbits {
+      class PositionAngleType;
+      class Orbit;
+      class OrbitType;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
+    }
     namespace propagation {
       namespace conversion {
-        class BrouwerLyddanePropagatorBuilder;
         class PropagatorBuilder;
+        class BrouwerLyddanePropagatorBuilder;
       }
       namespace analytical {
         class BrouwerLyddanePropagator;
       }
-    }
-    namespace forces {
-      namespace gravity {
-        namespace potential {
-          class UnnormalizedSphericalHarmonicsProvider;
-          class TideSystem;
-        }
-      }
-    }
-    namespace attitudes {
-      class AttitudeProvider;
     }
     namespace estimation {
       namespace leastsquares {
@@ -43,14 +31,26 @@ namespace org {
         class ObservedMeasurement;
       }
     }
-    namespace orbits {
-      class Orbit;
-      class PositionAngleType;
-      class OrbitType;
+    namespace forces {
+      namespace gravity {
+        namespace potential {
+          class UnnormalizedSphericalHarmonicsProvider;
+          class TideSystem;
+        }
+      }
     }
     namespace utils {
       class ParameterDriversList;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class Object;
   }
 }
 template<class T> class JArray;
@@ -63,12 +63,12 @@ namespace org {
         class BrouwerLyddanePropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_c72207c7d096789d,
-            mid_init$_79e3a5a0ab71306d,
-            mid_init$_d1a2dc4f34c3bd1c,
-            mid_buildLeastSquaresModel_31c4fcde5bc19fc3,
-            mid_buildPropagator_2e7dbdfa4a66de88,
-            mid_copy_b7a5d2f30ec62cb9,
+            mid_init$_9f127c615ff2fc4d,
+            mid_init$_628d3b35511bcea6,
+            mid_init$_ef197d62fd525fc4,
+            mid_buildLeastSquaresModel_2eb3122719704f90,
+            mid_buildPropagator_514ffedd6248f0b6,
+            mid_copy_20a4ebdd36e580a5,
             max_mid
           };
 

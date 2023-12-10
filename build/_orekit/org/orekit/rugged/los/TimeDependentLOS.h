@@ -3,31 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace rugged {
-      namespace utils {
-        class DerivativeGenerator;
-      }
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-  }
-}
 namespace java {
   namespace util {
     namespace stream {
@@ -36,6 +11,31 @@ namespace java {
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+  }
+  namespace orekit {
+    namespace rugged {
+      namespace utils {
+        class DerivativeGenerator;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
   }
 }
 template<class T> class JArray;
@@ -48,10 +48,10 @@ namespace org {
         class TimeDependentLOS : public ::java::lang::Object {
          public:
           enum {
-            mid_getLOS_dadcccbf4b51b382,
-            mid_getLOSDerivatives_a8f6a7b49980e1fd,
-            mid_getNbPixels_f2f64475e4580546,
-            mid_getParametersDrivers_a68a17dd093f796d,
+            mid_getLOS_900365c7737b1f14,
+            mid_getLOSDerivatives_6f9e440d79870fab,
+            mid_getNbPixels_570ce0828f81a2c1,
+            mid_getParametersDrivers_20f6d2b462aaef4b,
             max_mid
           };
 

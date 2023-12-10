@@ -4,18 +4,18 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriversList;
+    }
+  }
   namespace hipparchus {
     namespace linear {
       class RealVector;
       class RealMatrix;
-    }
-  }
-  namespace orekit {
-    namespace utils {
-      class ParameterDriversList;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -34,14 +34,14 @@ namespace org {
         class AbstractKalmanEstimator : public ::java::lang::Object {
          public:
           enum {
-            mid_getCurrentDate_aaa854c403487cf3,
-            mid_getCurrentMeasurementNumber_f2f64475e4580546,
-            mid_getEstimatedMeasurementsParameters_eb9e6df280c6daa0,
-            mid_getOrbitalParametersDrivers_2ede96f23730e099,
-            mid_getPhysicalEstimatedCovarianceMatrix_7116bbecdd8ceb21,
-            mid_getPhysicalEstimatedState_6d9adf1d5b463928,
-            mid_getPropagationParametersDrivers_2ede96f23730e099,
-            mid_getKalmanEstimation_69a0a486b7aaf0c0,
+            mid_getCurrentDate_85703d13e302437e,
+            mid_getCurrentMeasurementNumber_570ce0828f81a2c1,
+            mid_getEstimatedMeasurementsParameters_bd51074bfd9d41da,
+            mid_getOrbitalParametersDrivers_8357ebc867dea797,
+            mid_getPhysicalEstimatedCovarianceMatrix_688b496048ff947b,
+            mid_getPhysicalEstimatedState_aab4fbf77867daa8,
+            mid_getPropagationParametersDrivers_8357ebc867dea797,
+            mid_getKalmanEstimation_e05aaef10b06b09b,
             max_mid
           };
 

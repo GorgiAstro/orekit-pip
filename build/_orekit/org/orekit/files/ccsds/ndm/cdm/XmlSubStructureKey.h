@@ -9,8 +9,8 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace cdm {
-            class XmlSubStructureKey;
             class CdmParser;
+            class XmlSubStructureKey;
           }
         }
         namespace utils {
@@ -40,9 +40,9 @@ namespace org {
             class XmlSubStructureKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_10a767a8a3b44977,
-                mid_valueOf_da1f397a445254fd,
-                mid_values_5573586c1584ad2b,
+                mid_process_609bc51c22104b41,
+                mid_valueOf_8ed0115cc2676fed,
+                mid_values_4d1a3390e0f11cec,
                 max_mid
               };
 

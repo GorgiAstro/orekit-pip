@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace propagation {
       class FieldSpacecraftState;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -31,8 +31,8 @@ namespace org {
         class FieldAbstractIntegratedPropagator$MainStateEquations : public ::java::lang::Object {
          public:
           enum {
-            mid_computeDerivatives_360c953f14ed07de,
-            mid_init_acdd8180a5dc1a8d,
+            mid_computeDerivatives_567ea49d447f98c8,
+            mid_init_8e8de2be1664674a,
             max_mid
           };
 

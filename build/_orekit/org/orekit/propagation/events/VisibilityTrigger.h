@@ -3,12 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -16,6 +10,12 @@ namespace org {
         class VisibilityTrigger;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,9 +28,9 @@ namespace org {
         class VisibilityTrigger : public ::java::lang::Enum {
          public:
           enum {
-            mid_radiusCorrection_0ba5fed9597b693e,
-            mid_valueOf_18a6a01ed4582881,
-            mid_values_6d4fcad74b42991e,
+            mid_radiusCorrection_dcbc7ce2902fa136,
+            mid_valueOf_ccdfdce1748a95c1,
+            mid_values_7f89ad02cde9ebee,
             max_mid
           };
 

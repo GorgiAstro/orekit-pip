@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class TimeStamped;
       class AbsoluteDate;
+      class TimeStamped;
     }
   }
 }
@@ -27,15 +27,15 @@ namespace org {
         class CRD$RangeMeasurement : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_54d5095bd6b0c726,
-            mid_init$_ccc2406a0e104c30,
-            mid_init$_ba58bdeca658222c,
-            mid_getDate_aaa854c403487cf3,
-            mid_getEpochEvent_f2f64475e4580546,
-            mid_getSnr_456d9a2f64d6b28d,
-            mid_getSystemConfigurationId_0090f7797e403f43,
-            mid_getTimeOfFlight_456d9a2f64d6b28d,
-            mid_toCrdString_0090f7797e403f43,
+            mid_init$_399a69c3c034fff4,
+            mid_init$_1f869b32d549ac87,
+            mid_init$_94189024dc8d45f2,
+            mid_getDate_85703d13e302437e,
+            mid_getEpochEvent_570ce0828f81a2c1,
+            mid_getSnr_dff5885c2c873297,
+            mid_getSystemConfigurationId_11b109bd155ca898,
+            mid_getTimeOfFlight_dff5885c2c873297,
+            mid_toCrdString_11b109bd155ca898,
             max_mid
           };
 

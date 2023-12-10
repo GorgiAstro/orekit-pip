@@ -4,25 +4,25 @@
 #include "org/orekit/estimation/measurements/generation/AbstractMeasurementBuilder.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace random {
+      class CorrelatedRandomVectorGenerator;
+    }
+  }
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class ObservableSatellite;
         class ObservedMeasurement;
-      }
-    }
-    namespace propagation {
-      namespace sampling {
-        class OrekitStepInterpolator;
+        class ObservableSatellite;
       }
     }
     namespace time {
       class AbsoluteDate;
     }
-  }
-  namespace hipparchus {
-    namespace random {
-      class CorrelatedRandomVectorGenerator;
+    namespace propagation {
+      namespace sampling {
+        class OrekitStepInterpolator;
+      }
     }
   }
 }
@@ -46,19 +46,19 @@ namespace org {
           class PythonAbstractMeasurementBuilder : public ::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder {
            public:
             enum {
-              mid_init$_1cda38b242122db4,
-              mid_init$_f74e8126ce3426c2,
-              mid_build_d02e2fca157afe5d,
-              mid_finalize_7ae3461a92a43152,
-              mid_getBaseWeight_7cdc325af0834901,
-              mid_getEnd_aaa854c403487cf3,
-              mid_getNoise_7cdc325af0834901,
-              mid_getSatellites_ff20f279f9ba9f9e,
-              mid_getStart_aaa854c403487cf3,
-              mid_getTheoreticalStandardDeviation_7cdc325af0834901,
-              mid_pythonDecRef_7ae3461a92a43152,
-              mid_pythonExtension_a27fc9afd27e559d,
-              mid_pythonExtension_fefb08975c10f0a1,
+              mid_init$_577088844344eac1,
+              mid_init$_96f673984426d019,
+              mid_build_ae909064be36023e,
+              mid_finalize_0fa09c18fee449d5,
+              mid_getBaseWeight_60c7040667a7dc5c,
+              mid_getEnd_85703d13e302437e,
+              mid_getNoise_60c7040667a7dc5c,
+              mid_getSatellites_f81b672126a6576d,
+              mid_getStart_85703d13e302437e,
+              mid_getTheoreticalStandardDeviation_60c7040667a7dc5c,
+              mid_pythonDecRef_0fa09c18fee449d5,
+              mid_pythonExtension_492808a339bfa35f,
+              mid_pythonExtension_3a8e7649f31fdb20,
               max_mid
             };
 

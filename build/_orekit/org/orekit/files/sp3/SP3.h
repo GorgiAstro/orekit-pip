@@ -5,16 +5,13 @@
 
 namespace org {
   namespace orekit {
-    namespace errors {
-      class OrekitException;
-    }
     namespace files {
       namespace sp3 {
-        class SP3Segment;
         class SP3Header;
         class SP3;
-        class SP3Coordinate;
         class SP3Ephemeris;
+        class SP3Segment;
+        class SP3Coordinate;
       }
       namespace general {
         class EphemerisFile;
@@ -22,6 +19,9 @@ namespace org {
     }
     namespace frames {
       class Frame;
+    }
+    namespace errors {
+      class OrekitException;
     }
   }
 }
@@ -45,16 +45,16 @@ namespace org {
         class SP3 : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_8859cbb85555e51b,
-            mid_addSatellite_e939c6558ae8d313,
-            mid_containsSatellite_6b161f495ea569b8,
-            mid_getEphemeris_d5320b68d65f4db4,
-            mid_getEphemeris_e6c169c232fc0e88,
-            mid_getHeader_11aed2461124335a,
-            mid_getSatelliteCount_f2f64475e4580546,
-            mid_getSatellites_d6753b7055940a54,
-            mid_splice_af87c3f4a89e91bb,
-            mid_validate_90f9b414554a0838,
+            mid_init$_70a4bb39cd112135,
+            mid_addSatellite_d0bc48d5b00dc40c,
+            mid_containsSatellite_7edad2c2f64f4d68,
+            mid_getEphemeris_6f533a3154cab531,
+            mid_getEphemeris_f4e447d71819a411,
+            mid_getHeader_35c06998360669e6,
+            mid_getSatelliteCount_570ce0828f81a2c1,
+            mid_getSatellites_6f5a75ccd8c04465,
+            mid_splice_d952d8777f1add1e,
+            mid_validate_e180c5a079f07b98,
             max_mid
           };
 

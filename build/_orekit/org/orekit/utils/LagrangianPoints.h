@@ -3,17 +3,17 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace utils {
       class LagrangianPoints;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,8 +25,8 @@ namespace org {
       class LagrangianPoints : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_fb92f5216db1480d,
-          mid_values_23018153ccde58e4,
+          mid_valueOf_ac5daa58fa9d2237,
+          mid_values_3055fa7ebefc5fee,
           max_mid
         };
 

@@ -31,19 +31,19 @@ namespace org {
         class MillerUpdatingRegression : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_bc79bc153a2b3c2e,
-            mid_init$_43205367e2308f0a,
-            mid_addObservation_caadaecfce5fba2f,
-            mid_addObservations_f51b12ef24067352,
-            mid_clear_7ae3461a92a43152,
-            mid_getDiagonalOfHatMatrix_f05cb8c6dfd5e0b9,
-            mid_getN_a27fc9afd27e559d,
-            mid_getOrderOfRegressors_d8ead0d90ce828b0,
-            mid_getPartialCorrelations_eb9cceadce1b2217,
-            mid_hasIntercept_e470b6d9e0d979db,
-            mid_regress_b84c99961a7276a9,
-            mid_regress_d722bd798e38d351,
-            mid_regress_6d016b31aa6309e4,
+            mid_init$_f61a0322e15bde25,
+            mid_init$_8aa86769efed9c57,
+            mid_addObservation_bc1ff02eb3693128,
+            mid_addObservations_38e689b845a7e4f9,
+            mid_clear_0fa09c18fee449d5,
+            mid_getDiagonalOfHatMatrix_9dc1ec0bcc0a9a29,
+            mid_getN_492808a339bfa35f,
+            mid_getOrderOfRegressors_d0635cea09dc178c,
+            mid_getPartialCorrelations_abe82da4f5c7c981,
+            mid_hasIntercept_b108b35ef48e27bd,
+            mid_regress_0142096ec696b4f7,
+            mid_regress_7a5a137e3f3bf403,
+            mid_regress_8356b820807b832f,
             max_mid
           };
 

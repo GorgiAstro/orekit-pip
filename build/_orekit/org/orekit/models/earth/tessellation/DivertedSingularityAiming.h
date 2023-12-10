@@ -50,9 +50,9 @@ namespace org {
           class DivertedSingularityAiming : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_babed981d6ef92a1,
-              mid_alongTileDirection_c57b22dac91cacbc,
-              mid_getSingularPoints_a6156df500549a58,
+              mid_init$_de0cbf42314b699e,
+              mid_alongTileDirection_cb13d5b31f03b28f,
+              mid_getSingularPoints_2afa36052df4765d,
               max_mid
             };
 

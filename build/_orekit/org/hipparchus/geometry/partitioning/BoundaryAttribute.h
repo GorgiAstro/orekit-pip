@@ -7,8 +7,8 @@ namespace org {
   namespace hipparchus {
     namespace geometry {
       namespace partitioning {
-        class NodesSet;
         class SubHyperplane;
+        class NodesSet;
       }
     }
   }
@@ -28,9 +28,9 @@ namespace org {
         class BoundaryAttribute : public ::java::lang::Object {
          public:
           enum {
-            mid_getPlusInside_a66e04f05d5608cc,
-            mid_getPlusOutside_a66e04f05d5608cc,
-            mid_getSplitters_ee2e990bb6d19cec,
+            mid_getPlusInside_6e34449919366687,
+            mid_getPlusOutside_6e34449919366687,
+            mid_getSplitters_2147d93a31c2c0b0,
             max_mid
           };
 

@@ -7,16 +7,16 @@ namespace org {
   namespace hipparchus {
     namespace ode {
       namespace events {
-        class AdaptableInterval;
         class ODEEventHandler;
+        class AdaptableInterval;
       }
       class ODEStateAndDerivative;
     }
     namespace analysis {
-      class UnivariateFunction;
       namespace solvers {
         class BracketedUnivariateSolver;
       }
+      class UnivariateFunction;
     }
   }
 }
@@ -35,12 +35,12 @@ namespace org {
         class ODEEventDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_g_3b8f73a4d2dddc4a,
-            mid_getHandler_91daffcf18e93821,
-            mid_getMaxCheckInterval_3c6e49cd9bc6c1c8,
-            mid_getMaxIterationCount_f2f64475e4580546,
-            mid_getSolver_26f10bd8188f2feb,
-            mid_init_85808f3d6374b436,
+            mid_g_021b54f582f9e537,
+            mid_getHandler_7247a44d56e4e7e1,
+            mid_getMaxCheckInterval_9a5537b770a5986b,
+            mid_getMaxIterationCount_570ce0828f81a2c1,
+            mid_getSolver_4150c30eabb0f330,
+            mid_init_5aaadc62bce8a394,
             max_mid
           };
 

@@ -3,6 +3,31 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
+  namespace orekit {
+    namespace frames {
+      class TopocentricFrame;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
+    namespace models {
+      namespace earth {
+        namespace ionosphere {
+          class IonosphericModel;
+          class IonosphericMappingFunction;
+        }
+      }
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,31 +35,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace models {
-      namespace earth {
-        namespace ionosphere {
-          class IonosphericMappingFunction;
-          class IonosphericModel;
-        }
-      }
-    }
-    namespace frames {
-      class TopocentricFrame;
-    }
-    namespace propagation {
-      class SpacecraftState;
-      class FieldSpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -48,12 +48,12 @@ namespace org {
           class EstimatedIonosphericModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_c3df0bf38b459d86,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_pathDelay_00612b4611856fc4,
-              mid_pathDelay_bf16cb994a5cc871,
-              mid_pathDelay_c824fdb3e595a2ae,
-              mid_pathDelay_78d4f8498e981bf5,
+              mid_init$_e30c8862bd843d70,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_pathDelay_4964da8caf11638c,
+              mid_pathDelay_ab95aee7419cc874,
+              mid_pathDelay_bea489d08473aa2e,
+              mid_pathDelay_28325ab4dabb069a,
               max_mid
             };
 

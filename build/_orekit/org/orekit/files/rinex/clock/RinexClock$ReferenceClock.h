@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,12 +27,12 @@ namespace org {
           class RinexClock$ReferenceClock : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_403b729c294d7c0d,
-              mid_getClockConstraint_456d9a2f64d6b28d,
-              mid_getClockID_0090f7797e403f43,
-              mid_getEndDate_aaa854c403487cf3,
-              mid_getReferenceName_0090f7797e403f43,
-              mid_getStartDate_aaa854c403487cf3,
+              mid_init$_52aa0b8ea90f2a77,
+              mid_getClockConstraint_dff5885c2c873297,
+              mid_getClockID_11b109bd155ca898,
+              mid_getEndDate_85703d13e302437e,
+              mid_getReferenceName_11b109bd155ca898,
+              mid_getStartDate_85703d13e302437e,
               max_mid
             };
 

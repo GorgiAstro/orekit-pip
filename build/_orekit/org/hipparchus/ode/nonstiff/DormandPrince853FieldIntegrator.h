@@ -5,8 +5,8 @@
 
 namespace org {
   namespace hipparchus {
-    class Field;
     class CalculusFieldElement;
+    class Field;
   }
 }
 namespace java {
@@ -24,14 +24,14 @@ namespace org {
         class DormandPrince853FieldIntegrator : public ::org::hipparchus::ode::nonstiff::EmbeddedRungeKuttaFieldIntegrator {
          public:
           enum {
-            mid_init$_f7a36558ff3a2d8e,
-            mid_init$_348f4c168cbaf312,
-            mid_getA_dd8485a0eb2e2903,
-            mid_getB_01c7d10e96d5cf94,
-            mid_getC_01c7d10e96d5cf94,
-            mid_getOrder_f2f64475e4580546,
-            mid_createInterpolator_cc63d3ee9a54e620,
-            mid_estimateError_681c74af7b6fa1aa,
+            mid_init$_4a2c9513f4a7704d,
+            mid_init$_6d182549447f82d8,
+            mid_getA_1b3ae884bec31e6d,
+            mid_getB_226a0b2040b1d2e1,
+            mid_getC_226a0b2040b1d2e1,
+            mid_getOrder_570ce0828f81a2c1,
+            mid_createInterpolator_7826ce4bcb5554d5,
+            mid_estimateError_f7f77a3e7e765297,
             max_mid
           };
 

@@ -26,12 +26,12 @@ namespace org {
         class SmoothStepFactory$FieldSmoothStepFunction : public ::org::hipparchus::analysis::polynomials::FieldPolynomialFunction {
          public:
           enum {
-            mid_value_cc0a3d6abf820939,
-            mid_value_d3398190482814dc,
-            mid_value_d520dcedf02b9ea8,
-            mid_checkInputEdges_1d715fa3b7b756e1,
-            mid_clampInput_d520dcedf02b9ea8,
-            mid_normalizeInput_d520dcedf02b9ea8,
+            mid_value_616c74807d7607b4,
+            mid_value_a4b1871f4d29e58b,
+            mid_value_51d6e6eb816495b3,
+            mid_checkInputEdges_8f2e782d5278b131,
+            mid_clampInput_51d6e6eb816495b3,
+            mid_normalizeInput_51d6e6eb816495b3,
             max_mid
           };
 

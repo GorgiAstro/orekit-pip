@@ -8,14 +8,14 @@ namespace org {
     namespace frames {
       class Frame;
     }
-    namespace utils {
-      class TimeStampedFieldPVCoordinates;
-      class TimeStampedPVCoordinates;
-      class FieldPVCoordinatesProvider;
-      class PVCoordinatesProvider;
-    }
     namespace bodies {
       class BodyShape;
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
+      class TimeStampedPVCoordinates;
+      class TimeStampedFieldPVCoordinates;
     }
     namespace time {
       class AbsoluteDate;
@@ -37,9 +37,9 @@ namespace org {
       class NadirPointing : public ::org::orekit::attitudes::GroundPointing {
        public:
         enum {
-          mid_init$_4bbcb229beadee4c,
-          mid_getTargetPV_ab0341569f219f18,
-          mid_getTargetPV_99b96e260ceb5fe3,
+          mid_init$_a55d46b7b27e856c,
+          mid_getTargetPV_ad3e02e6f0d115f2,
+          mid_getTargetPV_129d59e5c897146f,
           max_mid
         };
 

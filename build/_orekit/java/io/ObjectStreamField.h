@@ -18,18 +18,18 @@ namespace java {
     class ObjectStreamField : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_4b15f99c4b73ca21,
-        mid_init$_0b1baeb0e3d57706,
-        mid_compareTo_ac8c1b6f384391ef,
-        mid_getName_0090f7797e403f43,
-        mid_getOffset_f2f64475e4580546,
-        mid_getType_8f66acc08d2a174c,
-        mid_getTypeCode_29e026b9d068f1c7,
-        mid_getTypeString_0090f7797e403f43,
-        mid_isPrimitive_e470b6d9e0d979db,
-        mid_isUnshared_e470b6d9e0d979db,
-        mid_toString_0090f7797e403f43,
-        mid_setOffset_0a2a1ac2721c0336,
+        mid_init$_54422b304601666c,
+        mid_init$_b6de2346b8ffb4ec,
+        mid_compareTo_90eb61a0d5cc5e34,
+        mid_getName_11b109bd155ca898,
+        mid_getOffset_570ce0828f81a2c1,
+        mid_getType_7c16c5008b34b3db,
+        mid_getTypeCode_7818f5b58320cd1f,
+        mid_getTypeString_11b109bd155ca898,
+        mid_isPrimitive_b108b35ef48e27bd,
+        mid_isUnshared_b108b35ef48e27bd,
+        mid_toString_11b109bd155ca898,
+        mid_setOffset_99803b0791f320ff,
         max_mid
       };
 

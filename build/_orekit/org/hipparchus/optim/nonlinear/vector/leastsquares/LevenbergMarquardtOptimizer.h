@@ -10,8 +10,8 @@ namespace org {
         namespace vector {
           namespace leastsquares {
             class LevenbergMarquardtOptimizer;
-            class LeastSquaresOptimizer;
             class LeastSquaresOptimizer$Optimum;
+            class LeastSquaresOptimizer;
             class LeastSquaresProblem;
           }
         }
@@ -36,19 +36,19 @@ namespace org {
             class LevenbergMarquardtOptimizer : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_init$_1dc1968396ae9d11,
-                mid_getCostRelativeTolerance_456d9a2f64d6b28d,
-                mid_getInitialStepBoundFactor_456d9a2f64d6b28d,
-                mid_getOrthoTolerance_456d9a2f64d6b28d,
-                mid_getParameterRelativeTolerance_456d9a2f64d6b28d,
-                mid_getRankingThreshold_456d9a2f64d6b28d,
-                mid_optimize_15b17ff9a423a2d3,
-                mid_withCostRelativeTolerance_773a169573cd7fc8,
-                mid_withInitialStepBoundFactor_773a169573cd7fc8,
-                mid_withOrthoTolerance_773a169573cd7fc8,
-                mid_withParameterRelativeTolerance_773a169573cd7fc8,
-                mid_withRankingThreshold_773a169573cd7fc8,
+                mid_init$_0fa09c18fee449d5,
+                mid_init$_cf6593b07e7e8f64,
+                mid_getCostRelativeTolerance_dff5885c2c873297,
+                mid_getInitialStepBoundFactor_dff5885c2c873297,
+                mid_getOrthoTolerance_dff5885c2c873297,
+                mid_getParameterRelativeTolerance_dff5885c2c873297,
+                mid_getRankingThreshold_dff5885c2c873297,
+                mid_optimize_3488934cadbbcc09,
+                mid_withCostRelativeTolerance_848d7cf4c83dca4b,
+                mid_withInitialStepBoundFactor_848d7cf4c83dca4b,
+                mid_withOrthoTolerance_848d7cf4c83dca4b,
+                mid_withParameterRelativeTolerance_848d7cf4c83dca4b,
+                mid_withRankingThreshold_848d7cf4c83dca4b,
                 max_mid
               };
 

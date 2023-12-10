@@ -25,8 +25,8 @@ namespace org {
       class MathArrays$Position : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_aff509199df38726,
-          mid_values_917c5bd55f25bb36,
+          mid_valueOf_3a36a4502b9282e2,
+          mid_values_4379459f5fd610c1,
           max_mid
         };
 

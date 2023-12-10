@@ -4,12 +4,12 @@
 #include "org/orekit/forces/gravity/potential/OceanTidesReader.h"
 
 namespace java {
+  namespace util {
+    class Map;
+  }
   namespace io {
     class IOException;
     class InputStream;
-  }
-  namespace util {
-    class Map;
   }
   namespace lang {
     class Integer;
@@ -40,8 +40,8 @@ namespace org {
           class FESCHatEpsilonReader : public ::org::orekit::forces::gravity::potential::OceanTidesReader {
            public:
             enum {
-              mid_init$_70b74fdcff2ed68a,
-              mid_loadData_ec60cb5f4b3de555,
+              mid_init$_3bacaeedc9858b49,
+              mid_loadData_1815f85c118161ad,
               max_mid
             };
 

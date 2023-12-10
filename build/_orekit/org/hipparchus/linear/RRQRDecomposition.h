@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class DecompositionSolver;
       class RealMatrix;
+      class DecompositionSolver;
     }
   }
 }
@@ -25,13 +25,13 @@ namespace org {
       class RRQRDecomposition : public ::org::hipparchus::linear::QRDecomposition {
        public:
         enum {
-          mid_init$_30aa151fd03f3096,
-          mid_init$_27ff5cf8ba76b4fe,
-          mid_getP_7116bbecdd8ceb21,
-          mid_getRank_12ebab281ee35c98,
-          mid_getSolver_73ddb95911119e87,
-          mid_decompose_d660c7a97bf55272,
-          mid_performHouseholderReflection_d2ec2a370d571745,
+          mid_init$_c67473bd6cfaa69b,
+          mid_init$_21a79182f4dd9085,
+          mid_getP_688b496048ff947b,
+          mid_getRank_4508852644846c83,
+          mid_getSolver_6b396ee5bc11943f,
+          mid_decompose_a0befc7f3dc19e41,
+          mid_performHouseholderReflection_3ca2bf5de9b54389,
           max_mid
         };
 

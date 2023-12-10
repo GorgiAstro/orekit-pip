@@ -16,10 +16,10 @@ namespace org {
     namespace estimation {
       namespace measurements {
         class EstimatedMeasurementBase;
+        class EstimationModifier;
         namespace gnss {
           class OneWayGNSSPhase;
         }
-        class EstimationModifier;
       }
     }
     namespace utils {
@@ -38,9 +38,9 @@ namespace org {
           class RelativisticJ2ClockOneWayGNSSPhaseModifier : public ::org::orekit::estimation::measurements::modifiers::AbstractRelativisticJ2ClockModifier {
            public:
             enum {
-              mid_init$_d0d6094fbd7015c5,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_modifyWithoutDerivatives_811f96960c94c1de,
+              mid_init$_2c56b6dd4d4b1dec,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_modifyWithoutDerivatives_d1815d998cba71e9,
               max_mid
             };
 

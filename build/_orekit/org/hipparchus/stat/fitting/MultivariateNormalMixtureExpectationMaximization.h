@@ -30,12 +30,12 @@ namespace org {
         class MultivariateNormalMixtureExpectationMaximization : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_d660c7a97bf55272,
-            mid_estimate_044a13274eb485cf,
-            mid_fit_c3745fd1d332b23f,
-            mid_fit_36de2024b54f35e2,
-            mid_getFittedModel_367a92862e8a241a,
-            mid_getLogLikelihood_456d9a2f64d6b28d,
+            mid_init$_a0befc7f3dc19e41,
+            mid_estimate_2dde099f3293c8f4,
+            mid_fit_798bc7fb6ed28c4b,
+            mid_fit_499e6fb142cdbfe7,
+            mid_getFittedModel_f9763aac1ee7efce,
+            mid_getLogLikelihood_dff5885c2c873297,
             max_mid
           };
 

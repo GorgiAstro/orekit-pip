@@ -4,6 +4,9 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace propagation {
       namespace events {
@@ -17,9 +20,6 @@ namespace org {
     namespace time {
       class FieldAbsoluteDate;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -37,12 +37,12 @@ namespace org {
         class FieldEventDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_g_cc79c2733879de35,
-            mid_getHandler_fa8b0a49dc8c921f,
-            mid_getMaxCheckInterval_a33ee6d38a1d69f9,
-            mid_getMaxIterationCount_f2f64475e4580546,
-            mid_getThreshold_e6d4d3215c30992a,
-            mid_init_acdd8180a5dc1a8d,
+            mid_g_41a008afe53da855,
+            mid_getHandler_48965f0f9fa2ddf9,
+            mid_getMaxCheckInterval_69f9ee3154bea730,
+            mid_getMaxIterationCount_570ce0828f81a2c1,
+            mid_getThreshold_eba8e72a22c984ac,
+            mid_init_8e8de2be1664674a,
             max_mid
           };
 

@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    class Field;
     namespace analysis {
       class CalculusFieldBivariateFunction;
     }
     class CalculusFieldElement;
+    class Field;
   }
 }
 namespace java {
@@ -26,8 +26,8 @@ namespace org {
       class FieldBivariateFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_toCalculusFieldBivariateFunction_a69d25616f9485b8,
-          mid_value_75c7ce7d33e7324b,
+          mid_toCalculusFieldBivariateFunction_a48fe1410b9380f5,
+          mid_value_6746cc1cd9210d54,
           max_mid
         };
 

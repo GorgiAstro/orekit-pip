@@ -30,13 +30,13 @@ namespace org {
         class AbstractUnivariateStatistic : public ::java::lang::Object {
          public:
           enum {
-            mid_copy_00705cc7a411fc09,
-            mid_evaluate_456d9a2f64d6b28d,
-            mid_evaluate_0a7ff474793a505a,
-            mid_getData_7cdc325af0834901,
-            mid_setData_ebc26dcaf4761286,
-            mid_setData_d3508f432c1d798d,
-            mid_getDataRef_7cdc325af0834901,
+            mid_copy_f30bf4039f437912,
+            mid_evaluate_dff5885c2c873297,
+            mid_evaluate_556bede10daac330,
+            mid_getData_60c7040667a7dc5c,
+            mid_setData_fa9d415d19f69361,
+            mid_setData_12aca76acb10f1af,
+            mid_getDataRef_60c7040667a7dc5c,
             max_mid
           };
 

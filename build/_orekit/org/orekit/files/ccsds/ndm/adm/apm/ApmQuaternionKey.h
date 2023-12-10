@@ -7,19 +7,19 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace utils {
+          namespace lexical {
+            class ParseToken$DateConsumer;
+            class ParseToken;
+          }
+          class ContextBinding;
+        }
         namespace ndm {
           namespace adm {
             namespace apm {
               class ApmQuaternion;
               class ApmQuaternionKey;
             }
-          }
-        }
-        namespace utils {
-          class ContextBinding;
-          namespace lexical {
-            class ParseToken$DateConsumer;
-            class ParseToken;
           }
         }
       }
@@ -45,9 +45,9 @@ namespace org {
               class ApmQuaternionKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_7976765135466d6f,
-                  mid_valueOf_5d20e5d2a0041db3,
-                  mid_values_7deca71ed01baa95,
+                  mid_process_7f37563f0ff7ce16,
+                  mid_valueOf_1c0143591c9009d3,
+                  mid_values_3a50282c288fb5d2,
                   max_mid
                 };
 

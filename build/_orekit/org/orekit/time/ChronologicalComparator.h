@@ -3,22 +3,22 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace time {
-      class TimeStamped;
-    }
-  }
-}
 namespace java {
+  namespace io {
+    class Serializable;
+  }
   namespace util {
     class Comparator;
   }
   namespace lang {
     class Class;
   }
-  namespace io {
-    class Serializable;
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class TimeStamped;
+    }
   }
 }
 template<class T> class JArray;
@@ -30,8 +30,8 @@ namespace org {
       class ChronologicalComparator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_compare_29ff1c020b619bb1,
+          mid_init$_0fa09c18fee449d5,
+          mid_compare_2bed7cb285c68c88,
           max_mid
         };
 

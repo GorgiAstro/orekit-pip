@@ -18,9 +18,9 @@ namespace org {
         class CombinedDerivatives : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0d03c8a1d7f56f02,
-            mid_getAdditionalDerivatives_7cdc325af0834901,
-            mid_getMainStateDerivativesIncrements_7cdc325af0834901,
+            mid_init$_e1f4b15468f5564a,
+            mid_getAdditionalDerivatives_60c7040667a7dc5c,
+            mid_getMainStateDerivativesIncrements_60c7040667a7dc5c,
             max_mid
           };
 

@@ -32,15 +32,15 @@ namespace org {
           class NetworkRecord : public ::org::orekit::gnss::metric::ntrip::Record {
            public:
             enum {
-              mid_init$_e939c6558ae8d313,
-              mid_areFeesRequired_e470b6d9e0d979db,
-              mid_getAuthentication_5f15d37696ebc041,
-              mid_getNetworkIdentifier_0090f7797e403f43,
-              mid_getNetworkInfoAddress_0090f7797e403f43,
-              mid_getOperator_0090f7797e403f43,
-              mid_getRecordType_9f311496246ad578,
-              mid_getRegistrationAddress_0090f7797e403f43,
-              mid_getStreamInfoAddress_0090f7797e403f43,
+              mid_init$_d0bc48d5b00dc40c,
+              mid_areFeesRequired_b108b35ef48e27bd,
+              mid_getAuthentication_9b280d308e8278f6,
+              mid_getNetworkIdentifier_11b109bd155ca898,
+              mid_getNetworkInfoAddress_11b109bd155ca898,
+              mid_getOperator_11b109bd155ca898,
+              mid_getRecordType_7952bb756bff2dbf,
+              mid_getRegistrationAddress_11b109bd155ca898,
+              mid_getStreamInfoAddress_11b109bd155ca898,
               max_mid
             };
 

@@ -21,18 +21,18 @@ namespace java {
     class ObjectInputStream$GetField : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_7ae3461a92a43152,
-        mid_defaulted_6b161f495ea569b8,
-        mid_get_9876c2abf74da7e0,
-        mid_get_ee15bcb5cc1b1c51,
-        mid_get_c4a813c023f75fad,
-        mid_get_e722af06fdba4ebe,
-        mid_get_47d906e7e1c7a09f,
-        mid_get_4918d8aef83f928e,
-        mid_get_40b7949a09a23362,
-        mid_get_164a181bcf5b61aa,
-        mid_get_fc00726672f3fd8a,
-        mid_getObjectStreamClass_8ad6f15d09fb9e15,
+        mid_init$_0fa09c18fee449d5,
+        mid_defaulted_7edad2c2f64f4d68,
+        mid_get_03329b950ddb6eb1,
+        mid_get_902d3a6b3b1673ff,
+        mid_get_2abf1d77cbb89cbd,
+        mid_get_10f32224710e3e43,
+        mid_get_f11315685ee96a4b,
+        mid_get_01c41545a950bc7c,
+        mid_get_9c669b2d7606b99e,
+        mid_get_94c4f2fbc7d60923,
+        mid_get_2386283b95853ae7,
+        mid_getObjectStreamClass_62a98f7a7fe67a84,
         max_mid
       };
 

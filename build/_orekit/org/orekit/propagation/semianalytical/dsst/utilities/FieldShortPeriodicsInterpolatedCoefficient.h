@@ -4,13 +4,13 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace time {
       class FieldAbsoluteDate;
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -30,10 +30,10 @@ namespace org {
             class FieldShortPeriodicsInterpolatedCoefficient : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0a2a1ac2721c0336,
-                mid_addGridPoint_dd74b9f18094eb16,
-                mid_clearHistory_7ae3461a92a43152,
-                mid_value_263b2fd0cf81fe4d,
+                mid_init$_99803b0791f320ff,
+                mid_addGridPoint_16271fdedb6d63b9,
+                mid_clearHistory_0fa09c18fee449d5,
+                mid_value_1d12c7a27955163b,
                 max_mid
               };
 

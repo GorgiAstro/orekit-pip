@@ -4,32 +4,32 @@
 #include "java/io/Serializable.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-          class FieldLine;
-          class Line;
-        }
-      }
-    }
-  }
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
     namespace bodies {
       class GeodeticPoint;
       class FieldGeodeticPoint;
     }
+    namespace frames {
+      class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
     namespace utils {
       class TimeStampedPVCoordinates;
     }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldLine;
+          class FieldVector3D;
+          class Vector3D;
+          class Line;
+        }
+      }
     }
   }
 }
@@ -47,15 +47,15 @@ namespace org {
       class BodyShape : public ::java::io::Serializable {
        public:
         enum {
-          mid_getBodyFrame_c8fe21bcdac65bf6,
-          mid_getIntersectionPoint_9dbbe2475f1298d4,
-          mid_getIntersectionPoint_4a2d37785a37d918,
-          mid_projectToGround_6b6c0bf817ea4492,
-          mid_projectToGround_a871d6772929c652,
-          mid_transform_2637885099554561,
-          mid_transform_393fcc10540ff032,
-          mid_transform_d471208f838d1a3d,
-          mid_transform_588d378a3b637077,
+          mid_getBodyFrame_b86f9f61d97a7244,
+          mid_getIntersectionPoint_ec4b828b0bd3964b,
+          mid_getIntersectionPoint_e81d59d1bc381e5e,
+          mid_projectToGround_7ddc39790e3dd04b,
+          mid_projectToGround_73ba258c5f91e9db,
+          mid_transform_5f1451dffd8cde56,
+          mid_transform_6cf64433187e46c3,
+          mid_transform_e019f2426bfb11d5,
+          mid_transform_dd18b1b42137f809,
           max_mid
         };
 
@@ -71,8 +71,8 @@ namespace org {
         BodyShape(const BodyShape& obj) : ::java::io::Serializable(obj) {}
 
         ::org::orekit::frames::Frame getBodyFrame() const;
-        ::org::orekit::bodies::FieldGeodeticPoint getIntersectionPoint(const ::org::hipparchus::geometry::euclidean::threed::FieldLine &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::FieldAbsoluteDate &) const;
         ::org::orekit::bodies::GeodeticPoint getIntersectionPoint(const ::org::hipparchus::geometry::euclidean::threed::Line &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::AbsoluteDate &) const;
+        ::org::orekit::bodies::FieldGeodeticPoint getIntersectionPoint(const ::org::hipparchus::geometry::euclidean::threed::FieldLine &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::FieldAbsoluteDate &) const;
         ::org::orekit::utils::TimeStampedPVCoordinates projectToGround(const ::org::orekit::utils::TimeStampedPVCoordinates &, const ::org::orekit::frames::Frame &) const;
         ::org::hipparchus::geometry::euclidean::threed::Vector3D projectToGround(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::hipparchus::geometry::euclidean::threed::FieldVector3D transform(const ::org::orekit::bodies::FieldGeodeticPoint &) const;

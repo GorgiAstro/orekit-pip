@@ -37,8 +37,8 @@ namespace org {
               class ManBasis : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_valueOf_63c4d40e73adb828,
-                  mid_values_cf78199c7f7cbda4,
+                  mid_valueOf_cbfbc301f4ac9688,
+                  mid_values_dcedf1a8a2bae813,
                   max_mid
                 };
 

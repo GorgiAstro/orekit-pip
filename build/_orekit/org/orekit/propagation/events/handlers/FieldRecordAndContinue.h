@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace ode {
       namespace events {
         class Action;
       }
     }
-    class CalculusFieldElement;
   }
   namespace orekit {
     namespace propagation {
@@ -44,11 +44,11 @@ namespace org {
           class FieldRecordAndContinue : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_init$_65de9727799c5641,
-              mid_clear_7ae3461a92a43152,
-              mid_eventOccurred_9bc9ae10f590e312,
-              mid_getEvents_a6156df500549a58,
+              mid_init$_0fa09c18fee449d5,
+              mid_init$_de3e021e7266b71e,
+              mid_clear_0fa09c18fee449d5,
+              mid_eventOccurred_fc49a7ff6cb062a2,
+              mid_getEvents_2afa36052df4765d,
               max_mid
             };
 

@@ -4,29 +4,29 @@
 #include "org/orekit/attitudes/GroundPointing.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
+    namespace utils {
+      class TimeStampedFieldPVCoordinates;
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
+      class TimeStampedPVCoordinates;
+    }
     namespace frames {
       class Frame;
     }
     namespace attitudes {
-      class AttitudeProvider;
       class Attitude;
       class FieldAttitude;
+      class AttitudeProvider;
       class AttitudeProviderModifier;
-    }
-    namespace utils {
-      class TimeStampedFieldPVCoordinates;
-      class FieldPVCoordinatesProvider;
-      class TimeStampedPVCoordinates;
-      class PVCoordinatesProvider;
     }
     namespace time {
       class AbsoluteDate;
       class FieldAbsoluteDate;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -43,16 +43,16 @@ namespace org {
       class YawCompensation : public ::org::orekit::attitudes::GroundPointing {
        public:
         enum {
-          mid_init$_ec530ce6ad455cf6,
-          mid_getAttitude_455b5c75f9292826,
-          mid_getAttitude_5341a8481841f90c,
-          mid_getBaseState_5341a8481841f90c,
-          mid_getBaseState_455b5c75f9292826,
-          mid_getTargetPV_99b96e260ceb5fe3,
-          mid_getTargetPV_ab0341569f219f18,
-          mid_getUnderlyingAttitudeProvider_5cce95036ae870ba,
-          mid_getYawAngle_0492697497604d82,
-          mid_getYawAngle_a6803988872a6135,
+          mid_init$_702872f023a6c698,
+          mid_getAttitude_4e541876ea7d5bd0,
+          mid_getAttitude_d2b70935d932b5c5,
+          mid_getBaseState_d2b70935d932b5c5,
+          mid_getBaseState_4e541876ea7d5bd0,
+          mid_getTargetPV_129d59e5c897146f,
+          mid_getTargetPV_ad3e02e6f0d115f2,
+          mid_getUnderlyingAttitudeProvider_a904f3d015a354a0,
+          mid_getYawAngle_0b717e9eccab23a9,
+          mid_getYawAngle_f38c6660506b041b,
           max_mid
         };
 

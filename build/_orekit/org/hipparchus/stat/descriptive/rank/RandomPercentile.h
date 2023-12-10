@@ -3,25 +3,6 @@
 
 #include "org/hipparchus/stat/descriptive/AbstractStorelessUnivariateStatistic.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace random {
-      class RandomGenerator;
-    }
-    namespace exception {
-      class NullArgumentException;
-      class MathIllegalArgumentException;
-    }
-    namespace stat {
-      namespace descriptive {
-        namespace rank {
-          class RandomPercentile;
-        }
-        class AggregatableStatistic;
-      }
-    }
-  }
-}
 namespace java {
   namespace io {
     class Serializable;
@@ -31,6 +12,25 @@ namespace java {
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class NullArgumentException;
+      class MathIllegalArgumentException;
+    }
+    namespace stat {
+      namespace descriptive {
+        class AggregatableStatistic;
+        namespace rank {
+          class RandomPercentile;
+        }
+      }
+    }
+    namespace random {
+      class RandomGenerator;
+    }
   }
 }
 template<class T> class JArray;
@@ -44,27 +44,27 @@ namespace org {
           class RandomPercentile : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_init$_77e0f9a1f260e2e5,
-              mid_init$_bb31e8cbfaf41e63,
-              mid_init$_313f2327697bef05,
-              mid_aggregate_d05e55c7836d5599,
-              mid_clear_7ae3461a92a43152,
-              mid_copy_86f662ee598b8165,
-              mid_evaluate_618a40a0b95154fa,
-              mid_evaluate_0a7ff474793a505a,
-              mid_evaluate_52f299e1e5aa92be,
-              mid_getAggregateN_a00f51a898ec07ff,
-              mid_getAggregateQuantileRank_bbcaca5ce440726d,
-              mid_getAggregateRank_bbcaca5ce440726d,
-              mid_getN_a27fc9afd27e559d,
-              mid_getQuantileRank_0ba5fed9597b693e,
-              mid_getRank_0ba5fed9597b693e,
-              mid_getResult_456d9a2f64d6b28d,
-              mid_getResult_0ba5fed9597b693e,
-              mid_increment_77e0f9a1f260e2e5,
-              mid_maxValuesRetained_7920263ad8deab44,
-              mid_reduce_bbcaca5ce440726d,
+              mid_init$_0fa09c18fee449d5,
+              mid_init$_17db3a65980d3441,
+              mid_init$_a351c1fd6920cdee,
+              mid_init$_a73757db4170dc00,
+              mid_aggregate_9cce984294960975,
+              mid_clear_0fa09c18fee449d5,
+              mid_copy_d7fd0b60788b1919,
+              mid_evaluate_19285de97bbc7eea,
+              mid_evaluate_556bede10daac330,
+              mid_evaluate_b1f392c723f21637,
+              mid_getAggregateN_7076a671f4259cfe,
+              mid_getAggregateQuantileRank_ac445c2196a57bd4,
+              mid_getAggregateRank_ac445c2196a57bd4,
+              mid_getN_492808a339bfa35f,
+              mid_getQuantileRank_dcbc7ce2902fa136,
+              mid_getRank_dcbc7ce2902fa136,
+              mid_getResult_dff5885c2c873297,
+              mid_getResult_dcbc7ce2902fa136,
+              mid_increment_17db3a65980d3441,
+              mid_maxValuesRetained_cebf7dc9be03a93c,
+              mid_reduce_ac445c2196a57bd4,
               max_mid
             };
 

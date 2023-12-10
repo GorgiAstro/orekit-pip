@@ -14,21 +14,21 @@ namespace org {
         }
       }
     }
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
     namespace utils {
       class TimeSpanMap;
     }
-    namespace propagation {
-      class SpacecraftState;
-      class FieldSpacecraftState;
-    }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
   }
   namespace hipparchus {
-    class Field;
     class CalculusFieldElement;
+    class Field;
   }
 }
 namespace java {
@@ -48,20 +48,20 @@ namespace org {
           class AbstractManeuverTriggers : public ::java::lang::Object {
            public:
             enum {
-              mid_addResetter_c5c7f3f3d4c4bba2,
-              mid_addResetter_17ab38b8d22d6651,
-              mid_getFirings_afbf756dd3c251fe,
-              mid_init_acdd8180a5dc1a8d,
-              mid_init_3d13474d79f5e7bc,
-              mid_isFiring_b230552293273e68,
-              mid_isFiring_80ee6edc2471fed7,
-              mid_initializeResetters_3d13474d79f5e7bc,
-              mid_initializeResetters_acdd8180a5dc1a8d,
-              mid_notifyResetters_c76342d42407aa3d,
-              mid_notifyResetters_9658cf3eaef14ef5,
-              mid_applyResetters_81fc6fb6078d2aa7,
-              mid_applyResetters_db7b9ef879f5b135,
-              mid_isFiringOnInitialState_795d7e54d4c58d83,
+              mid_addResetter_a16797fae59e88ec,
+              mid_addResetter_e53773d2404dc858,
+              mid_getFirings_62c7757711639c83,
+              mid_init_8e8de2be1664674a,
+              mid_init_826b4eda94da4e78,
+              mid_isFiring_785ace4124d89120,
+              mid_isFiring_89b940ef53c9a82d,
+              mid_initializeResetters_826b4eda94da4e78,
+              mid_initializeResetters_8e8de2be1664674a,
+              mid_notifyResetters_33f4696e4edaa03c,
+              mid_notifyResetters_33f1c56ea7775d4e,
+              mid_applyResetters_f43130c50e9fafeb,
+              mid_applyResetters_25e81e971666cba6,
+              mid_isFiringOnInitialState_6501154ab0a356a8,
               max_mid
             };
 

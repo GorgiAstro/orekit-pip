@@ -6,9 +6,9 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class TimeScale;
       class DateTimeComponents;
       class AbsoluteDate;
+      class TimeScale;
     }
   }
 }
@@ -29,12 +29,12 @@ namespace org {
           class TimeConverter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_f0f36dfd3c952abf,
-              mid_components_4a363a7423fa6ac8,
-              mid_getReferenceDate_aaa854c403487cf3,
-              mid_getTimeScale_63ac10047983bd43,
-              mid_offset_e912d21057defe63,
-              mid_parse_a7e270765e35aadf,
+              mid_init$_b853b844e7592d04,
+              mid_components_5983e23690eb425a,
+              mid_getReferenceDate_85703d13e302437e,
+              mid_getTimeScale_c39031284193adbe,
+              mid_offset_bf1d7732f1acb697,
+              mid_parse_c366629d892ff755,
               max_mid
             };
 

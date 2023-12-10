@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
-    namespace data {
-      class BodiesElements;
-    }
     namespace models {
       namespace earth {
         namespace displacement {
           class Tide;
         }
       }
+    }
+    namespace data {
+      class BodiesElements;
     }
   }
 }
@@ -33,16 +33,16 @@ namespace org {
           class Tide : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0a2a1ac2721c0336,
-              mid_init$_47d591670cfcc314,
-              mid_equals_229c87223f486349,
-              mid_getDelaunayMultipliers_d8ead0d90ce828b0,
-              mid_getDoodsonMultipliers_d8ead0d90ce828b0,
-              mid_getDoodsonNumber_f2f64475e4580546,
-              mid_getPhase_68f0627d4a947675,
-              mid_getRate_68f0627d4a947675,
-              mid_getTauMultiplier_f2f64475e4580546,
-              mid_hashCode_f2f64475e4580546,
+              mid_init$_99803b0791f320ff,
+              mid_init$_5aa4d40be6f39408,
+              mid_equals_65c7d273e80d497a,
+              mid_getDelaunayMultipliers_d0635cea09dc178c,
+              mid_getDoodsonMultipliers_d0635cea09dc178c,
+              mid_getDoodsonNumber_570ce0828f81a2c1,
+              mid_getPhase_bea6276a59f3cdf6,
+              mid_getRate_bea6276a59f3cdf6,
+              mid_getTauMultiplier_570ce0828f81a2c1,
+              mid_hashCode_570ce0828f81a2c1,
               max_mid
             };
 

@@ -3,37 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace rugged {
-      namespace utils {
-        class DerivativeGenerator;
-      }
-      namespace linesensor {
-        class LineDatation;
-      }
-      namespace los {
-        class TimeDependentLOS;
-      }
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-  }
-}
 namespace java {
   namespace util {
     namespace stream {
@@ -43,6 +12,37 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace rugged {
+      namespace linesensor {
+        class LineDatation;
+      }
+      namespace utils {
+        class DerivativeGenerator;
+      }
+      namespace los {
+        class TimeDependentLOS;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -55,19 +55,19 @@ namespace org {
         class LineSensor : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_479a21e7eda36c51,
-            mid_dumpRate_77e0f9a1f260e2e5,
-            mid_getDate_a76f1ca2cc1b76e5,
-            mid_getLOS_c2e737cda6af3a23,
-            mid_getLOS_969c0495d6f5d7aa,
-            mid_getLOSDerivatives_8a5be8518b5b0d00,
-            mid_getLOSDerivatives_8118db2f928a9f34,
-            mid_getLine_e912d21057defe63,
-            mid_getName_0090f7797e403f43,
-            mid_getNbPixels_f2f64475e4580546,
-            mid_getParametersDrivers_a68a17dd093f796d,
-            mid_getPosition_17a952530a808943,
-            mid_getRate_0ba5fed9597b693e,
+            mid_init$_8dd57cbeca7ea1c5,
+            mid_dumpRate_17db3a65980d3441,
+            mid_getDate_149a9211a037d799,
+            mid_getLOS_d13e85cf520666cb,
+            mid_getLOS_0967b903dc4355cb,
+            mid_getLOSDerivatives_6c0d2d70ff47f0b3,
+            mid_getLOSDerivatives_2daacf58d695a774,
+            mid_getLine_bf1d7732f1acb697,
+            mid_getName_11b109bd155ca898,
+            mid_getNbPixels_570ce0828f81a2c1,
+            mid_getParametersDrivers_20f6d2b462aaef4b,
+            mid_getPosition_d52645e0d4c07563,
+            mid_getRate_dcbc7ce2902fa136,
             max_mid
           };
 

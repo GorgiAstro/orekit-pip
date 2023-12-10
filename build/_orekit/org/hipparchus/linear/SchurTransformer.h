@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace linear {
       class RealMatrix;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,11 +24,11 @@ namespace org {
       class SchurTransformer : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_30aa151fd03f3096,
-          mid_init$_27ff5cf8ba76b4fe,
-          mid_getP_7116bbecdd8ceb21,
-          mid_getPT_7116bbecdd8ceb21,
-          mid_getT_7116bbecdd8ceb21,
+          mid_init$_c67473bd6cfaa69b,
+          mid_init$_21a79182f4dd9085,
+          mid_getP_688b496048ff947b,
+          mid_getPT_688b496048ff947b,
+          mid_getT_688b496048ff947b,
           max_mid
         };
 

@@ -4,17 +4,6 @@
 #include "java/lang/Enum.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Rotation;
-          class FieldRotation;
-        }
-      }
-    }
-    class Field;
-  }
   namespace orekit {
     namespace frames {
       class LOFType;
@@ -27,14 +16,25 @@ namespace org {
         }
       }
     }
-    namespace utils {
-      class PVCoordinates;
-      class FieldPVCoordinates;
-    }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
+    namespace utils {
+      class FieldPVCoordinates;
+      class PVCoordinates;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Rotation;
+          class FieldRotation;
+        }
+      }
+    }
+    class Field;
   }
 }
 namespace java {
@@ -52,16 +52,16 @@ namespace org {
       class LOFType : public ::java::lang::Enum {
        public:
         enum {
-          mid_getName_0090f7797e403f43,
-          mid_rotationFromInertial_9a23f79cd11b74e7,
-          mid_rotationFromInertial_95b12e29918a648c,
-          mid_rotationFromInertial_f3b8fc53bbbd7a0a,
-          mid_rotationFromInertial_346e8a02c9c839ea,
-          mid_rotationFromLOF_72077ab30cf19a5b,
-          mid_rotationFromLOF_35680e58f06f0cf2,
-          mid_toOrbitRelativeFrame_e2b586b2f9e79328,
-          mid_valueOf_636332e1f4b06249,
-          mid_values_9d808571dd8d739b,
+          mid_getName_11b109bd155ca898,
+          mid_rotationFromInertial_48dfcf66fb3ed19c,
+          mid_rotationFromInertial_475182fd71c6851b,
+          mid_rotationFromInertial_00be22c00009a46d,
+          mid_rotationFromInertial_076f35c1feeb36b3,
+          mid_rotationFromLOF_af58d526d9fa9835,
+          mid_rotationFromLOF_59306c62a2dda902,
+          mid_toOrbitRelativeFrame_65b7b6f762019366,
+          mid_valueOf_5eea000864e605d6,
+          mid_values_78c6da1ecdb315dd,
           max_mid
         };
 

@@ -3,22 +3,22 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace events {
-        class FieldEventsLogger$FieldLoggedEvent;
-        class FieldAbstractDetector;
-      }
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace events {
+        class FieldAbstractDetector;
+        class FieldEventsLogger$FieldLoggedEvent;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -31,9 +31,9 @@ namespace org {
         class FieldEventsLogger : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_clearLoggedEvents_7ae3461a92a43152,
-            mid_getLoggedEvents_a6156df500549a58,
+            mid_init$_0fa09c18fee449d5,
+            mid_clearLoggedEvents_0fa09c18fee449d5,
+            mid_getLoggedEvents_2afa36052df4765d,
             max_mid
           };
 

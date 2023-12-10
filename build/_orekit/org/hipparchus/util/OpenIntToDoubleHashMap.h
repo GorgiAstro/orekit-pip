@@ -3,19 +3,19 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace util {
+      class OpenIntToDoubleHashMap$Iterator;
+    }
+  }
+}
 namespace java {
   namespace lang {
     class Class;
   }
   namespace io {
     class Serializable;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace util {
-      class OpenIntToDoubleHashMap$Iterator;
-    }
   }
 }
 template<class T> class JArray;
@@ -27,16 +27,16 @@ namespace org {
       class OpenIntToDoubleHashMap : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_init$_77e0f9a1f260e2e5,
-          mid_init$_0a2a1ac2721c0336,
-          mid_init$_987a5fb872043b12,
-          mid_containsKey_e95e4c7cd3dd17ff,
-          mid_get_b772323fc98b7293,
-          mid_iterator_fa62dce97d6cc56a,
-          mid_put_31332242d1624d2c,
-          mid_remove_b772323fc98b7293,
-          mid_size_f2f64475e4580546,
+          mid_init$_0fa09c18fee449d5,
+          mid_init$_17db3a65980d3441,
+          mid_init$_99803b0791f320ff,
+          mid_init$_bb79ca80d85d0a66,
+          mid_containsKey_b6e9be1df30aebaf,
+          mid_get_46f85b53d9aedd96,
+          mid_iterator_e07c986a341a62c1,
+          mid_put_60d7624725a52590,
+          mid_remove_46f85b53d9aedd96,
+          mid_size_570ce0828f81a2c1,
           max_mid
         };
 

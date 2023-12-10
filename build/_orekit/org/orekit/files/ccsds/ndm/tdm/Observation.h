@@ -36,10 +36,10 @@ namespace org {
             class Observation : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_07829ca5e164764b,
-                mid_getEpoch_aaa854c403487cf3,
-                mid_getMeasurement_456d9a2f64d6b28d,
-                mid_getType_f32a91f5b1972277,
+                mid_init$_2d550fb141a705f2,
+                mid_getEpoch_85703d13e302437e,
+                mid_getMeasurement_dff5885c2c873297,
+                mid_getType_e58593622c19a861,
                 max_mid
               };
 

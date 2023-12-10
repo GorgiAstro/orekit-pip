@@ -24,10 +24,10 @@ namespace org {
       class IterationListener : public ::java::util::EventListener {
        public:
         enum {
-          mid_initializationPerformed_71cb46270a31ceff,
-          mid_iterationPerformed_71cb46270a31ceff,
-          mid_iterationStarted_71cb46270a31ceff,
-          mid_terminationPerformed_71cb46270a31ceff,
+          mid_initializationPerformed_5d333913f82828b1,
+          mid_iterationPerformed_5d333913f82828b1,
+          mid_iterationStarted_5d333913f82828b1,
+          mid_terminationPerformed_5d333913f82828b1,
           max_mid
         };
 

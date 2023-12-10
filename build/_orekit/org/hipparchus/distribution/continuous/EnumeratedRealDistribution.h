@@ -14,11 +14,11 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace util {
       class Pair;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -32,18 +32,18 @@ namespace org {
         class EnumeratedRealDistribution : public ::org::hipparchus::distribution::continuous::AbstractRealDistribution {
          public:
           enum {
-            mid_init$_ebc26dcaf4761286,
-            mid_init$_0d03c8a1d7f56f02,
-            mid_cumulativeProbability_0ba5fed9597b693e,
-            mid_density_0ba5fed9597b693e,
-            mid_getNumericalMean_456d9a2f64d6b28d,
-            mid_getNumericalVariance_456d9a2f64d6b28d,
-            mid_getPmf_a6156df500549a58,
-            mid_getSupportLowerBound_456d9a2f64d6b28d,
-            mid_getSupportUpperBound_456d9a2f64d6b28d,
-            mid_inverseCumulativeProbability_0ba5fed9597b693e,
-            mid_isSupportConnected_e470b6d9e0d979db,
-            mid_probability_0ba5fed9597b693e,
+            mid_init$_fa9d415d19f69361,
+            mid_init$_e1f4b15468f5564a,
+            mid_cumulativeProbability_dcbc7ce2902fa136,
+            mid_density_dcbc7ce2902fa136,
+            mid_getNumericalMean_dff5885c2c873297,
+            mid_getNumericalVariance_dff5885c2c873297,
+            mid_getPmf_2afa36052df4765d,
+            mid_getSupportLowerBound_dff5885c2c873297,
+            mid_getSupportUpperBound_dff5885c2c873297,
+            mid_inverseCumulativeProbability_dcbc7ce2902fa136,
+            mid_isSupportConnected_b108b35ef48e27bd,
+            mid_probability_dcbc7ce2902fa136,
             max_mid
           };
 

@@ -4,17 +4,17 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace time {
-      class TimeScale;
-      class TimeComponents;
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-      class DateComponents;
-    }
-  }
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+  namespace orekit {
+    namespace time {
+      class DateComponents;
+      class AbsoluteDate;
+      class TimeComponents;
+      class FieldAbsoluteDate;
+      class TimeScale;
+    }
   }
 }
 namespace java {
@@ -32,11 +32,11 @@ namespace org {
       class GPSScale : public ::java::lang::Object {
        public:
         enum {
-          mid_getName_0090f7797e403f43,
-          mid_offsetFromTAI_e912d21057defe63,
-          mid_offsetFromTAI_7bc0fd76ee915b72,
-          mid_offsetToTAI_ceb6ee9e1c4bbdb1,
-          mid_toString_0090f7797e403f43,
+          mid_getName_11b109bd155ca898,
+          mid_offsetFromTAI_bf1d7732f1acb697,
+          mid_offsetFromTAI_2a5f05be83ff251d,
+          mid_offsetToTAI_56358b00ba005b52,
+          mid_toString_11b109bd155ca898,
           max_mid
         };
 

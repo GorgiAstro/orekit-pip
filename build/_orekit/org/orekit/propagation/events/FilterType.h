@@ -3,6 +3,12 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -10,12 +16,6 @@ namespace org {
         class FilterType;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,10 +28,10 @@ namespace org {
         class FilterType : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_5133e6270b419ed8,
-            mid_values_53e2eec35fa1586c,
-            mid_selectTransformer_85e10f2660b5f940,
-            mid_getTriggeredIncreasing_e470b6d9e0d979db,
+            mid_valueOf_d0c7a8ec7803ff34,
+            mid_values_6573ef557f602b5b,
+            mid_selectTransformer_acd432a4ec673606,
+            mid_getTriggeredIncreasing_b108b35ef48e27bd,
             max_mid
           };
 

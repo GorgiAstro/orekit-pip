@@ -34,8 +34,8 @@ namespace org {
             class ScreenVolumeShape : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_dc98fcbf7089b1c3,
-                mid_values_77f739dd053dce82,
+                mid_valueOf_fcc870f7e7e8a951,
+                mid_values_98246fcc3199a167,
                 max_mid
               };
 

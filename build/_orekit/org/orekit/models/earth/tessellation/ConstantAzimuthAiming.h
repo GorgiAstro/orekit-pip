@@ -46,9 +46,9 @@ namespace org {
           class ConstantAzimuthAiming : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_6e31a3b5da8ff979,
-              mid_alongTileDirection_c57b22dac91cacbc,
-              mid_getSingularPoints_a6156df500549a58,
+              mid_init$_48cd945bba9df75e,
+              mid_alongTileDirection_cb13d5b31f03b28f,
+              mid_getSingularPoints_2afa36052df4765d,
               max_mid
             };
 

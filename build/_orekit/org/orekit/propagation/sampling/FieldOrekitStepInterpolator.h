@@ -4,25 +4,25 @@
 #include "org/orekit/utils/FieldPVCoordinatesProvider.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
+    namespace propagation {
+      namespace sampling {
+        class FieldOrekitStepInterpolator;
+      }
+      class FieldSpacecraftState;
+    }
     namespace frames {
       class Frame;
-    }
-    namespace utils {
-      class TimeStampedFieldPVCoordinates;
     }
     namespace time {
       class FieldAbsoluteDate;
     }
-    namespace propagation {
-      class FieldSpacecraftState;
-      namespace sampling {
-        class FieldOrekitStepInterpolator;
-      }
+    namespace utils {
+      class TimeStampedFieldPVCoordinates;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -40,12 +40,12 @@ namespace org {
         class FieldOrekitStepInterpolator : public ::org::orekit::utils::FieldPVCoordinatesProvider {
          public:
           enum {
-            mid_getCurrentState_a553824829fc2514,
-            mid_getInterpolatedState_85b5a3e9101d7c1f,
-            mid_getPVCoordinates_0e277b7d6a64b75a,
-            mid_getPreviousState_a553824829fc2514,
-            mid_isForward_e470b6d9e0d979db,
-            mid_restrictStep_c7ca73d5105d6a36,
+            mid_getCurrentState_02cea343d9f71933,
+            mid_getInterpolatedState_f6f1ea8aef3019eb,
+            mid_getPVCoordinates_2cdae1c350dc3e9a,
+            mid_getPreviousState_02cea343d9f71933,
+            mid_isForward_b108b35ef48e27bd,
+            mid_restrictStep_7098fa5da93d95de,
             max_mid
           };
 

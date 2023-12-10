@@ -10,8 +10,8 @@ namespace org {
         namespace ndm {
           namespace adm {
             namespace acm {
-              class AttitudeCovariance;
               class AttitudeCovarianceHistoryMetadata;
+              class AttitudeCovariance;
             }
           }
         }
@@ -40,9 +40,9 @@ namespace org {
               class AttitudeCovarianceHistory : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_186db5cf0e2febaa,
-                  mid_getCovariances_a6156df500549a58,
-                  mid_getMetadata_27ea627e4253db55,
+                  mid_init$_62ade5292ab38bb4,
+                  mid_getCovariances_2afa36052df4765d,
+                  mid_getMetadata_99cc4dcf1f1291d2,
                   max_mid
                 };
 

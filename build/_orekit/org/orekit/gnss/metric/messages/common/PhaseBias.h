@@ -20,12 +20,12 @@ namespace org {
             class PhaseBias : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_5b86856c57fb253a,
-                mid_getDiscontinuityCounter_f2f64475e4580546,
-                mid_getPhaseBias_456d9a2f64d6b28d,
-                mid_getSignalID_f2f64475e4580546,
-                mid_getSignalWideLaneIntegerIndicator_f2f64475e4580546,
-                mid_isSignalInteger_e470b6d9e0d979db,
+                mid_init$_d3567be8070cd240,
+                mid_getDiscontinuityCounter_570ce0828f81a2c1,
+                mid_getPhaseBias_dff5885c2c873297,
+                mid_getSignalID_570ce0828f81a2c1,
+                mid_getSignalWideLaneIntegerIndicator_570ce0828f81a2c1,
+                mid_isSignalInteger_b108b35ef48e27bd,
                 max_mid
               };
 

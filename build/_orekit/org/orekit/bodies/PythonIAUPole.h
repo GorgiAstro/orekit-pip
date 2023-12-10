@@ -4,25 +4,25 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace bodies {
       class IAUPole;
     }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -40,17 +40,17 @@ namespace org {
       class PythonIAUPole : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_finalize_7ae3461a92a43152,
-          mid_getNode_71c51b45829333ce,
-          mid_getNode_11a4be79061d1fe3,
-          mid_getPole_71c51b45829333ce,
-          mid_getPole_11a4be79061d1fe3,
-          mid_getPrimeMeridianAngle_e912d21057defe63,
-          mid_getPrimeMeridianAngle_7bc0fd76ee915b72,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
+          mid_init$_0fa09c18fee449d5,
+          mid_finalize_0fa09c18fee449d5,
+          mid_getNode_24461752d0eea1e3,
+          mid_getNode_e81fa067750860a1,
+          mid_getPole_24461752d0eea1e3,
+          mid_getPole_e81fa067750860a1,
+          mid_getPrimeMeridianAngle_bf1d7732f1acb697,
+          mid_getPrimeMeridianAngle_2a5f05be83ff251d,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
           max_mid
         };
 

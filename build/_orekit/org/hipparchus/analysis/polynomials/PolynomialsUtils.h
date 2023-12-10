@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace analysis {
@@ -15,6 +10,11 @@ namespace org {
         class PolynomialFunction;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,12 +27,12 @@ namespace org {
         class PolynomialsUtils : public ::java::lang::Object {
          public:
           enum {
-            mid_createChebyshevPolynomial_033dab9bdad55f91,
-            mid_createHermitePolynomial_033dab9bdad55f91,
-            mid_createJacobiPolynomial_20e6b0b545894323,
-            mid_createLaguerrePolynomial_033dab9bdad55f91,
-            mid_createLegendrePolynomial_033dab9bdad55f91,
-            mid_shift_1657efb2f051723b,
+            mid_createChebyshevPolynomial_5bd8ce1674c86e4e,
+            mid_createHermitePolynomial_5bd8ce1674c86e4e,
+            mid_createJacobiPolynomial_03ef4c1eb023d2c0,
+            mid_createLaguerrePolynomial_5bd8ce1674c86e4e,
+            mid_createLegendrePolynomial_5bd8ce1674c86e4e,
+            mid_shift_7c03fc65848ac490,
             max_mid
           };
 

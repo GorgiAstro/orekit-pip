@@ -4,16 +4,16 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
-    }
     namespace frames {
       class TopocentricFrame;
     }
-    namespace utils {
-      class ParameterDriver;
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
     }
     namespace models {
       namespace earth {
@@ -33,9 +33,9 @@ namespace org {
         }
       }
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
+    namespace utils {
+      class ParameterDriver;
+    }
   }
 }
 namespace java {
@@ -57,10 +57,10 @@ namespace org {
           class SsrVtecIonosphericModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a5e9097c5232e356,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_pathDelay_c824fdb3e595a2ae,
-              mid_pathDelay_78d4f8498e981bf5,
+              mid_init$_1c15ac86389b1fb5,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_pathDelay_bea489d08473aa2e,
+              mid_pathDelay_28325ab4dabb069a,
               max_mid
             };
 

@@ -5,6 +5,10 @@
 
 namespace org {
   namespace orekit {
+    namespace orbits {
+      class FieldKeplerianOrbit;
+      class FieldOrbit;
+    }
     namespace forces {
       namespace gravity {
         namespace potential {
@@ -13,23 +17,19 @@ namespace org {
         }
       }
     }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-    namespace orbits {
-      class FieldKeplerianOrbit;
-      class FieldOrbit;
-    }
     namespace propagation {
-      class PropagationType;
       class FieldSpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
+      class PropagationType;
     }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
   namespace hipparchus {
@@ -54,33 +54,33 @@ namespace org {
         class FieldBrouwerLyddanePropagator : public ::org::orekit::propagation::analytical::FieldAbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_27e8a13692420753,
-            mid_init$_671c616b00968fb2,
-            mid_init$_efe7600dfa7391ad,
-            mid_init$_35ddb209b3ddae90,
-            mid_init$_50fda38caa7cada8,
-            mid_init$_71d13b0508f8d325,
-            mid_init$_723bc419bc453bc3,
-            mid_init$_cde93a4d3deef6f7,
-            mid_init$_9699e1e4e93262a7,
-            mid_init$_654e1af68d0dc653,
-            mid_init$_d88346aabaf42630,
-            mid_init$_ee94ff43d4b7d233,
-            mid_init$_11f9b44e1ad8f777,
-            mid_init$_c9d4e35f6d86458b,
-            mid_computeMeanOrbit_a7554bf778bede47,
-            mid_computeMeanOrbit_2a41742e55413acf,
-            mid_computeMeanOrbit_331faca126df5b56,
-            mid_getM2_456d9a2f64d6b28d,
-            mid_getM2_e912d21057defe63,
-            mid_getParametersDrivers_a6156df500549a58,
-            mid_propagateOrbit_e754bc7a54a8a8cc,
-            mid_resetInitialState_52154b94d63e10ed,
-            mid_resetInitialState_7e8354b496e2a6c1,
-            mid_resetInitialState_24c065641ce262aa,
-            mid_getMass_7bc0fd76ee915b72,
-            mid_resetIntermediateState_b2aaf6a3ad1afcea,
-            mid_resetIntermediateState_c76342d42407aa3d,
+            mid_init$_e7cd2ef2420d1594,
+            mid_init$_3c3e85df13e3351b,
+            mid_init$_90f2cc506ebfa134,
+            mid_init$_85270cfa4cce05cb,
+            mid_init$_41fc38cfd1c91d93,
+            mid_init$_15911629bfdf8c58,
+            mid_init$_844e097acddc5ee6,
+            mid_init$_f2475f48f60e5e40,
+            mid_init$_ca81bc3db3056d46,
+            mid_init$_86281233528e311a,
+            mid_init$_34a0dab3c03a36d1,
+            mid_init$_0fc57aacdd580695,
+            mid_init$_5c4212d79c973cfe,
+            mid_init$_84e3b93e6a6da77c,
+            mid_computeMeanOrbit_4be4dbea6fe8e776,
+            mid_computeMeanOrbit_e3a434bff1818af6,
+            mid_computeMeanOrbit_a3123543fdf24586,
+            mid_getM2_dff5885c2c873297,
+            mid_getM2_bf1d7732f1acb697,
+            mid_getParametersDrivers_2afa36052df4765d,
+            mid_propagateOrbit_3209fa9b92c0cbe8,
+            mid_resetInitialState_1463d3d0d52f94dd,
+            mid_resetInitialState_c0db61abf5db836e,
+            mid_resetInitialState_25f988e2d639cbc3,
+            mid_getMass_2a5f05be83ff251d,
+            mid_resetIntermediateState_d141acdd230f09c3,
+            mid_resetIntermediateState_33f1c56ea7775d4e,
             max_mid
           };
 

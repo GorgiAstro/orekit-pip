@@ -4,18 +4,12 @@
 #include "org/orekit/bodies/OneAxisEllipsoid.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-    }
-  }
   namespace orekit {
     namespace frames {
       class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace rugged {
       namespace utils {
@@ -25,8 +19,14 @@ namespace org {
     namespace bodies {
       class GeodeticPoint;
     }
-    namespace time {
-      class AbsoluteDate;
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
     }
   }
 }
@@ -45,16 +45,16 @@ namespace org {
         class ExtendedEllipsoid : public ::org::orekit::bodies::OneAxisEllipsoid {
          public:
           enum {
-            mid_init$_67a8caec77669819,
-            mid_convertLos_ccf2ee059c93e01e,
-            mid_convertLos_54b6377056a157af,
-            mid_pointAtAltitude_b93b7baa8492af38,
-            mid_pointAtLatitude_c7c60b2b206e3e9d,
-            mid_pointAtLongitude_b93b7baa8492af38,
-            mid_pointOnGround_6f258df101c5dbf8,
-            mid_transform_393fcc10540ff032,
-            mid_transform_588d378a3b637077,
-            mid_transform_cce031b164f2fb00,
+            mid_init$_b0fb2e2980abbca2,
+            mid_convertLos_e2a27ed5c4e12f6f,
+            mid_convertLos_82744d9863c444fe,
+            mid_pointAtAltitude_de52532c17b2a672,
+            mid_pointAtLatitude_a6d54ec6f4d1012e,
+            mid_pointAtLongitude_de52532c17b2a672,
+            mid_pointOnGround_d269da9b33be9c15,
+            mid_transform_6cf64433187e46c3,
+            mid_transform_dd18b1b42137f809,
+            mid_transform_5402a59525ad1a15,
             max_mid
           };
 

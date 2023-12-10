@@ -34,8 +34,8 @@ namespace org {
             class AngleType : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_7cc44c14c2f4e2d7,
-                mid_values_b728ae17e66506c5,
+                mid_valueOf_3aeb734a044fd706,
+                mid_values_fce8f4eaabce606d,
                 max_mid
               };
 

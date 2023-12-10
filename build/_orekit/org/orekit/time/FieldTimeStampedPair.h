@@ -28,11 +28,11 @@ namespace org {
       class FieldTimeStampedPair : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_486ad96262764383,
-          mid_init$_0d343f41b92140e6,
-          mid_getDate_09b0a926600dfc14,
-          mid_getFirst_2ac58ed946476d4e,
-          mid_getSecond_2ac58ed946476d4e,
+          mid_init$_8ad927ae988773bc,
+          mid_init$_c36016fb2ef54a90,
+          mid_getDate_51da00d5b8a3b5df,
+          mid_getFirst_f8d8d28f6791aa76,
+          mid_getSecond_f8d8d28f6791aa76,
           max_mid
         };
 

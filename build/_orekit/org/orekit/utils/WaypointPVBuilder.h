@@ -33,18 +33,18 @@ namespace org {
       class WaypointPVBuilder : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_4ba8dde6ff9937ce,
-          mid_addWaypoint_519b23bb689342b8,
-          mid_build_7044cb1966c8a481,
-          mid_cartesianBuilder_062020604dbc5286,
-          mid_constantAfter_4d55dff8aba47889,
-          mid_constantBefore_4d55dff8aba47889,
-          mid_greatCircleBuilder_062020604dbc5286,
-          mid_invalidAfter_4d55dff8aba47889,
-          mid_invalidBefore_4d55dff8aba47889,
-          mid_loxodromeBuilder_062020604dbc5286,
-          mid_createInitial_9986637990d6c960,
-          mid_createFinal_9986637990d6c960,
+          mid_init$_72a7d1b6cac17025,
+          mid_addWaypoint_98c7b225ff22cf1e,
+          mid_build_903aca6bb4523e29,
+          mid_cartesianBuilder_ffde877dfa1e2dd2,
+          mid_constantAfter_a5badd7a0674683f,
+          mid_constantBefore_a5badd7a0674683f,
+          mid_greatCircleBuilder_ffde877dfa1e2dd2,
+          mid_invalidAfter_a5badd7a0674683f,
+          mid_invalidBefore_a5badd7a0674683f,
+          mid_loxodromeBuilder_ffde877dfa1e2dd2,
+          mid_createInitial_f9ed9bcb9bfb760e,
+          mid_createFinal_f9ed9bcb9bfb760e,
           max_mid
         };
 

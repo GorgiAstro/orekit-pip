@@ -28,8 +28,8 @@ namespace org {
       class TimeScalarFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_value_e912d21057defe63,
-          mid_value_7bc0fd76ee915b72,
+          mid_value_bf1d7732f1acb697,
+          mid_value_2a5f05be83ff251d,
           max_mid
         };
 

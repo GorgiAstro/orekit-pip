@@ -47,14 +47,14 @@ namespace org {
             class CartesianCovariance : public ::org::orekit::files::ccsds::section::CommentsContainer {
              public:
               enum {
-                mid_init$_79e8f9691be69c80,
-                mid_getCovarianceMatrix_7116bbecdd8ceb21,
-                mid_getEpoch_aaa854c403487cf3,
-                mid_getReferenceFrame_aa70fdb14ae9305f,
-                mid_setCovarianceMatrixEntry_78e41e7b5124a628,
-                mid_setEpoch_e82d68cd9f886886,
-                mid_setReferenceFrame_a455f3ff24eb0b47,
-                mid_validate_77e0f9a1f260e2e5,
+                mid_init$_4c1598888ef52491,
+                mid_getCovarianceMatrix_688b496048ff947b,
+                mid_getEpoch_85703d13e302437e,
+                mid_getReferenceFrame_5d5dd95b04037824,
+                mid_setCovarianceMatrixEntry_1506189166690b5e,
+                mid_setEpoch_600a2a61652bc473,
+                mid_setReferenceFrame_849bc9e3b38b9bcb,
+                mid_validate_17db3a65980d3441,
                 max_mid
               };
 

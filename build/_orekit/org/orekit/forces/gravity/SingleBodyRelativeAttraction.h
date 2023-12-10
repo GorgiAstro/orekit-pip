@@ -5,29 +5,29 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
-    class CalculusFieldElement;
   }
   namespace orekit {
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
+    namespace forces {
+      class ForceModel;
+    }
     namespace utils {
       class ParameterDriver;
     }
     namespace bodies {
       class CelestialBody;
-    }
-    namespace forces {
-      class ForceModel;
-    }
-    namespace propagation {
-      class SpacecraftState;
-      class FieldSpacecraftState;
     }
   }
 }
@@ -50,11 +50,11 @@ namespace org {
         class SingleBodyRelativeAttraction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_245df9da6b035d3e,
-            mid_acceleration_78989e44b99f7cc2,
-            mid_acceleration_00aba28d3abe9a8c,
-            mid_dependsOnPositionOnly_e470b6d9e0d979db,
-            mid_getParametersDrivers_a6156df500549a58,
+            mid_init$_6a22a7b4e14949e4,
+            mid_acceleration_8954761face5e1a7,
+            mid_acceleration_b42ac4b5bfb80fab,
+            mid_dependsOnPositionOnly_b108b35ef48e27bd,
+            mid_getParametersDrivers_2afa36052df4765d,
             max_mid
           };
 
@@ -73,8 +73,8 @@ namespace org {
 
           SingleBodyRelativeAttraction(const ::org::orekit::bodies::CelestialBody &);
 
-          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
+          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           jboolean dependsOnPositionOnly() const;
           ::java::util::List getParametersDrivers() const;
         };

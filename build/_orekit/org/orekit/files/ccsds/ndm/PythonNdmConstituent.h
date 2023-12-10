@@ -14,18 +14,18 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataContext;
+    }
+    namespace utils {
+      class IERSConventions;
+    }
     namespace files {
       namespace ccsds {
         namespace section {
           class Header;
         }
       }
-    }
-    namespace data {
-      class DataContext;
-    }
-    namespace utils {
-      class IERSConventions;
     }
   }
 }
@@ -40,16 +40,16 @@ namespace org {
           class PythonNdmConstituent : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
            public:
             enum {
-              mid_init$_c9d5a187842fe993,
-              mid_finalize_7ae3461a92a43152,
-              mid_getConventions_f657aa17e72227da,
-              mid_getDataContext_fc8fc85e38e59042,
-              mid_getHeader_2764986a35b07524,
-              mid_getSegments_a6156df500549a58,
-              mid_pythonDecRef_7ae3461a92a43152,
-              mid_pythonExtension_a27fc9afd27e559d,
-              mid_pythonExtension_fefb08975c10f0a1,
-              mid_validate_7ae3461a92a43152,
+              mid_init$_88568a8f3a300101,
+              mid_finalize_0fa09c18fee449d5,
+              mid_getConventions_60f9ded87ab7ca4c,
+              mid_getDataContext_0b7cf48ee6a922ee,
+              mid_getHeader_0e1b4a5061fb71d6,
+              mid_getSegments_2afa36052df4765d,
+              mid_pythonDecRef_0fa09c18fee449d5,
+              mid_pythonExtension_492808a339bfa35f,
+              mid_pythonExtension_3a8e7649f31fdb20,
+              mid_validate_0fa09c18fee449d5,
               max_mid
             };
 

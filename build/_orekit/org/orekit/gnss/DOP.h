@@ -3,19 +3,19 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace bodies {
       class GeodeticPoint;
     }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,15 +27,15 @@ namespace org {
       class DOP : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_c39c0edb2fdf00ae,
-          mid_getDate_aaa854c403487cf3,
-          mid_getGdop_456d9a2f64d6b28d,
-          mid_getGnssNb_f2f64475e4580546,
-          mid_getHdop_456d9a2f64d6b28d,
-          mid_getLocation_fabc97b1aefe5844,
-          mid_getPdop_456d9a2f64d6b28d,
-          mid_getTdop_456d9a2f64d6b28d,
-          mid_getVdop_456d9a2f64d6b28d,
+          mid_init$_c5e983cb1d6a8b6c,
+          mid_getDate_85703d13e302437e,
+          mid_getGdop_dff5885c2c873297,
+          mid_getGnssNb_570ce0828f81a2c1,
+          mid_getHdop_dff5885c2c873297,
+          mid_getLocation_82d0a9bcd06489bb,
+          mid_getPdop_dff5885c2c873297,
+          mid_getTdop_dff5885c2c873297,
+          mid_getVdop_dff5885c2c873297,
           max_mid
         };
 

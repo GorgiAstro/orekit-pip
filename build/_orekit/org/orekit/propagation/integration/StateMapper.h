@@ -5,22 +5,22 @@
 
 namespace org {
   namespace orekit {
+    namespace orbits {
+      class PositionAngleType;
+      class OrbitType;
+    }
     namespace frames {
       class Frame;
     }
-    namespace attitudes {
-      class AttitudeProvider;
+    namespace time {
+      class AbsoluteDate;
     }
     namespace propagation {
       class PropagationType;
       class SpacecraftState;
     }
-    namespace orbits {
-      class PositionAngleType;
-      class OrbitType;
-    }
-    namespace time {
-      class AbsoluteDate;
+    namespace attitudes {
+      class AttitudeProvider;
     }
   }
 }
@@ -39,19 +39,19 @@ namespace org {
         class StateMapper : public ::java::lang::Object {
          public:
           enum {
-            mid_getAttitudeProvider_5cce95036ae870ba,
-            mid_getFrame_c8fe21bcdac65bf6,
-            mid_getMu_456d9a2f64d6b28d,
-            mid_getOrbitType_63ea5cd020bf7bf1,
-            mid_getPositionAngleType_2571e8fe1cede425,
-            mid_getReferenceDate_aaa854c403487cf3,
-            mid_mapArrayToState_4ca0807e8dab0b83,
-            mid_mapArrayToState_934fdcb956880b35,
-            mid_mapDateToDouble_e912d21057defe63,
-            mid_mapDoubleToDate_a76f1ca2cc1b76e5,
-            mid_mapDoubleToDate_cb1bb8e47dbf2caf,
-            mid_mapStateToArray_32d762d958cb6960,
-            mid_setAttitudeProvider_8109c1a27d4471d3,
+            mid_getAttitudeProvider_a904f3d015a354a0,
+            mid_getFrame_b86f9f61d97a7244,
+            mid_getMu_dff5885c2c873297,
+            mid_getOrbitType_e29360d311dc0e20,
+            mid_getPositionAngleType_8f17e83e5a86217c,
+            mid_getReferenceDate_85703d13e302437e,
+            mid_mapArrayToState_618a7c03db72e57e,
+            mid_mapArrayToState_827bebc97a37b62b,
+            mid_mapDateToDouble_bf1d7732f1acb697,
+            mid_mapDoubleToDate_149a9211a037d799,
+            mid_mapDoubleToDate_4c50520a750977fa,
+            mid_mapStateToArray_747d586861d6528b,
+            mid_setAttitudeProvider_3cff7c75ea06698c,
             max_mid
           };
 

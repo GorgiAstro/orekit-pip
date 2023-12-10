@@ -17,7 +17,7 @@ namespace org {
       class AttitudeProviderModifier : public ::org::orekit::attitudes::AttitudeProvider {
        public:
         enum {
-          mid_getUnderlyingAttitudeProvider_5cce95036ae870ba,
+          mid_getUnderlyingAttitudeProvider_a904f3d015a354a0,
           max_mid
         };
 

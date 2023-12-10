@@ -14,16 +14,16 @@ namespace org {
         namespace shorttermencounter {
           namespace probability {
             namespace twod {
+              class ShortTermEncounter2DDefinition;
               class ShortTermEncounter2DPOCMethod;
               class FieldShortTermEncounter2DDefinition;
-              class ShortTermEncounter2DDefinition;
             }
           }
         }
       }
       namespace metrics {
-        class ProbabilityOfCollision;
         class FieldProbabilityOfCollision;
+        class ProbabilityOfCollision;
       }
     }
     namespace files {
@@ -63,18 +63,18 @@ namespace org {
               class AbstractShortTermEncounter2DPOCMethod : public ::java::lang::Object {
                public:
                 enum {
-                  mid_compute_4c5fe0d13c4a2327,
-                  mid_compute_a4d7e214295a00c5,
-                  mid_compute_a50e19d883e35f53,
-                  mid_compute_4f61fc1ea038da56,
-                  mid_compute_23211d1e26c9c2c1,
-                  mid_compute_f7ffb3ec4f2d0056,
-                  mid_compute_c51dae52f7f8ac4e,
-                  mid_compute_97c5e8233a686699,
-                  mid_getName_0090f7797e403f43,
-                  mid_isAMaximumProbabilityOfCollisionMethod_e470b6d9e0d979db,
-                  mid_getObjectOrbitFromCdm_8b39a4ef386bb0e6,
-                  mid_getObjectStateCovarianceFromCdm_b5c57b385a7c10bb,
+                  mid_compute_7ed362902ba10174,
+                  mid_compute_4d249761aa92e117,
+                  mid_compute_091f0943f3979390,
+                  mid_compute_44d723598fb6a077,
+                  mid_compute_184c2f4ec5889c74,
+                  mid_compute_0ed38e7bbee7fafc,
+                  mid_compute_77dbe9f2fcda2496,
+                  mid_compute_1c26d4a5b9c10569,
+                  mid_getName_11b109bd155ca898,
+                  mid_isAMaximumProbabilityOfCollisionMethod_b108b35ef48e27bd,
+                  mid_getObjectOrbitFromCdm_97e5b21be4be034a,
+                  mid_getObjectStateCovarianceFromCdm_199478496fa5b1ee,
                   max_mid
                 };
 

@@ -31,9 +31,9 @@ namespace org {
         class HarmonicOscillator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_d0d6094fbd7015c5,
-            mid_value_0ba5fed9597b693e,
-            mid_value_1f22c1881e72229d,
+            mid_init$_2c56b6dd4d4b1dec,
+            mid_value_dcbc7ce2902fa136,
+            mid_value_73d6acaa8ebd2b7d,
             max_mid
           };
 

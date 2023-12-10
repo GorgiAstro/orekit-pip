@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace attitudes {
-      class FieldInertiaAxis;
       class FieldInertia;
+      class FieldInertiaAxis;
     }
   }
   namespace hipparchus {
@@ -34,13 +34,13 @@ namespace org {
       class FieldInertia : public ::java::lang::Object {
        public:
         enum {
-          mid_getInertiaAxis1_ae6ac15c00e0e7cc,
-          mid_getInertiaAxis2_ae6ac15c00e0e7cc,
-          mid_getInertiaAxis3_ae6ac15c00e0e7cc,
-          mid_momentum_8ff2edc0ecba4b6e,
-          mid_swap12_08e0e7fcb388926f,
-          mid_swap13_08e0e7fcb388926f,
-          mid_swap23_08e0e7fcb388926f,
+          mid_getInertiaAxis1_ac55a8ab71ff75ce,
+          mid_getInertiaAxis2_ac55a8ab71ff75ce,
+          mid_getInertiaAxis3_ac55a8ab71ff75ce,
+          mid_momentum_a173408e2b1f78b2,
+          mid_swap12_6b150d4002e93e81,
+          mid_swap13_6b150d4002e93e81,
+          mid_swap23_6b150d4002e93e81,
           max_mid
         };
 

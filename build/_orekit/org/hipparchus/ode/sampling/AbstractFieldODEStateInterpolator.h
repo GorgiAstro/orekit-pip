@@ -5,14 +5,14 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace ode {
       namespace sampling {
-        class FieldODEStateInterpolator;
         class AbstractFieldODEStateInterpolator;
+        class FieldODEStateInterpolator;
       }
       class FieldODEStateAndDerivative;
     }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -30,18 +30,18 @@ namespace org {
         class AbstractFieldODEStateInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_getCurrentState_f1f1c5e26e98a1d9,
-            mid_getGlobalCurrentState_f1f1c5e26e98a1d9,
-            mid_getGlobalPreviousState_f1f1c5e26e98a1d9,
-            mid_getInterpolatedState_05327270bfa02fcd,
-            mid_getPreviousState_f1f1c5e26e98a1d9,
-            mid_isCurrentStateInterpolated_e470b6d9e0d979db,
-            mid_isForward_e470b6d9e0d979db,
-            mid_isPreviousStateInterpolated_e470b6d9e0d979db,
-            mid_restrictStep_5806de34f57ffd01,
-            mid_getMapper_ac3e7c17676ea260,
-            mid_computeInterpolatedStateAndDerivatives_9c7dc3baaf8a762f,
-            mid_create_36ffd6115f00e197,
+            mid_getCurrentState_7194dd3ba3cbc7e8,
+            mid_getGlobalCurrentState_7194dd3ba3cbc7e8,
+            mid_getGlobalPreviousState_7194dd3ba3cbc7e8,
+            mid_getInterpolatedState_ad18f3cde52c81b9,
+            mid_getPreviousState_7194dd3ba3cbc7e8,
+            mid_isCurrentStateInterpolated_b108b35ef48e27bd,
+            mid_isForward_b108b35ef48e27bd,
+            mid_isPreviousStateInterpolated_b108b35ef48e27bd,
+            mid_restrictStep_a1f0e19bf87f7a7b,
+            mid_getMapper_49938af8a63b9487,
+            mid_computeInterpolatedStateAndDerivatives_23997ceac6beb25e,
+            mid_create_fe27d20fc1a25788,
             max_mid
           };
 

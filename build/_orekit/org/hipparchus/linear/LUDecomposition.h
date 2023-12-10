@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class DecompositionSolver;
       class RealMatrix;
+      class DecompositionSolver;
     }
   }
 }
@@ -25,14 +25,14 @@ namespace org {
       class LUDecomposition : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_30aa151fd03f3096,
-          mid_init$_27ff5cf8ba76b4fe,
-          mid_getDeterminant_456d9a2f64d6b28d,
-          mid_getL_7116bbecdd8ceb21,
-          mid_getP_7116bbecdd8ceb21,
-          mid_getPivot_d8ead0d90ce828b0,
-          mid_getSolver_73ddb95911119e87,
-          mid_getU_7116bbecdd8ceb21,
+          mid_init$_c67473bd6cfaa69b,
+          mid_init$_21a79182f4dd9085,
+          mid_getDeterminant_dff5885c2c873297,
+          mid_getL_688b496048ff947b,
+          mid_getP_688b496048ff947b,
+          mid_getPivot_d0635cea09dc178c,
+          mid_getSolver_6b396ee5bc11943f,
+          mid_getU_688b496048ff947b,
           max_mid
         };
 

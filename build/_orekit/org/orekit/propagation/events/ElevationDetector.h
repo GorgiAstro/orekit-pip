@@ -5,20 +5,20 @@
 
 namespace org {
   namespace orekit {
+    namespace frames {
+      class TopocentricFrame;
+    }
     namespace propagation {
       namespace events {
         class ElevationDetector;
       }
       class SpacecraftState;
     }
-    namespace frames {
-      class TopocentricFrame;
+    namespace models {
+      class AtmosphericRefractionModel;
     }
     namespace utils {
       class ElevationMask;
-    }
-    namespace models {
-      class AtmosphericRefractionModel;
     }
   }
 }
@@ -37,17 +37,17 @@ namespace org {
         class ElevationDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_f9eb40be2920d1a6,
-            mid_init$_b7c2f9e5ae29d132,
-            mid_g_66a2f071e6ed0c06,
-            mid_getElevationMask_5d6f826de9792bc8,
-            mid_getMinElevation_456d9a2f64d6b28d,
-            mid_getRefractionModel_92dfb2e76d975897,
-            mid_getTopocentricFrame_52fc31c455206160,
-            mid_withConstantElevation_baeecf6061525086,
-            mid_withElevationMask_78eba44b1cd20eb1,
-            mid_withRefraction_422b0661514e96e6,
-            mid_create_47415e8062f7f200,
+            mid_init$_359d9aed85301acb,
+            mid_init$_0f402cc32c5bccb2,
+            mid_g_432f3d328c15ec82,
+            mid_getElevationMask_a2b53d9e5ddb8a2d,
+            mid_getMinElevation_dff5885c2c873297,
+            mid_getRefractionModel_d9410499a2583f14,
+            mid_getTopocentricFrame_e17d4157ae504252,
+            mid_withConstantElevation_3700314417fec14a,
+            mid_withElevationMask_89c90a0821fff37b,
+            mid_withRefraction_319adb60d2239e8e,
+            mid_create_66b2a57911e02ec9,
             max_mid
           };
 

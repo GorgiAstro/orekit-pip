@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace orbits {
-      class Orbit;
-    }
     namespace propagation {
+      class SpacecraftState;
       namespace events {
         class ApsideDetector;
       }
-      class SpacecraftState;
+    }
+    namespace orbits {
+      class Orbit;
     }
   }
 }
@@ -31,10 +31,10 @@ namespace org {
         class ApsideDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_e5b8a6a44355183e,
-            mid_init$_cabf1e33b54f56ee,
-            mid_g_66a2f071e6ed0c06,
-            mid_create_70aca8d6a1e7bff2,
+            mid_init$_6219f6b430651d68,
+            mid_init$_487615206f927568,
+            mid_g_432f3d328c15ec82,
+            mid_create_0efb55e20fece899,
             max_mid
           };
 

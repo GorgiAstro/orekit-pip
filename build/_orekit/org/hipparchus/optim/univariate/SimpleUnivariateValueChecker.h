@@ -3,11 +3,6 @@
 
 #include "org/hipparchus/optim/AbstractConvergenceChecker.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace optim {
@@ -15,6 +10,11 @@ namespace org {
         class UnivariatePointValuePair;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,9 +27,9 @@ namespace org {
         class SimpleUnivariateValueChecker : public ::org::hipparchus::optim::AbstractConvergenceChecker {
          public:
           enum {
-            mid_init$_1d715fa3b7b756e1,
-            mid_init$_b05c288d5068eccb,
-            mid_converged_22326eb759d18612,
+            mid_init$_8f2e782d5278b131,
+            mid_init$_01fb2c777e5def32,
+            mid_converged_2b6199fc988d1a61,
             max_mid
           };
 

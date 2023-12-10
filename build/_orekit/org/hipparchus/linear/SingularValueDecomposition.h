@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class DecompositionSolver;
       class RealMatrix;
+      class DecompositionSolver;
     }
   }
 }
@@ -25,19 +25,19 @@ namespace org {
       class SingularValueDecomposition : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_30aa151fd03f3096,
-          mid_getConditionNumber_456d9a2f64d6b28d,
-          mid_getCovariance_2461b653ab91779b,
-          mid_getInverseConditionNumber_456d9a2f64d6b28d,
-          mid_getNorm_456d9a2f64d6b28d,
-          mid_getRank_f2f64475e4580546,
-          mid_getS_7116bbecdd8ceb21,
-          mid_getSingularValues_7cdc325af0834901,
-          mid_getSolver_73ddb95911119e87,
-          mid_getU_7116bbecdd8ceb21,
-          mid_getUT_7116bbecdd8ceb21,
-          mid_getV_7116bbecdd8ceb21,
-          mid_getVT_7116bbecdd8ceb21,
+          mid_init$_c67473bd6cfaa69b,
+          mid_getConditionNumber_dff5885c2c873297,
+          mid_getCovariance_f21dcd9464c6e3c5,
+          mid_getInverseConditionNumber_dff5885c2c873297,
+          mid_getNorm_dff5885c2c873297,
+          mid_getRank_570ce0828f81a2c1,
+          mid_getS_688b496048ff947b,
+          mid_getSingularValues_60c7040667a7dc5c,
+          mid_getSolver_6b396ee5bc11943f,
+          mid_getU_688b496048ff947b,
+          mid_getUT_688b496048ff947b,
+          mid_getV_688b496048ff947b,
+          mid_getVT_688b496048ff947b,
           max_mid
         };
 

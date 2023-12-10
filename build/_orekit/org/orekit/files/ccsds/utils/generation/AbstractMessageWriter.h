@@ -3,6 +3,31 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace ccsds {
+        namespace ndm {
+          class NdmConstituent;
+        }
+        namespace utils {
+          namespace generation {
+            class Generator;
+            class MessageWriter;
+          }
+          class ContextBinding;
+        }
+        namespace definitions {
+          class TimeConverter;
+        }
+        namespace section {
+          class Header;
+          class Segment;
+        }
+      }
+    }
+  }
+}
 namespace java {
   namespace io {
     class IOException;
@@ -10,31 +35,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ccsds {
-        namespace section {
-          class Segment;
-          class Header;
-        }
-        namespace utils {
-          namespace generation {
-            class MessageWriter;
-            class Generator;
-          }
-          class ContextBinding;
-        }
-        namespace ndm {
-          class NdmConstituent;
-        }
-        namespace definitions {
-          class TimeConverter;
-        }
-      }
-    }
   }
 }
 template<class T> class JArray;
@@ -49,18 +49,18 @@ namespace org {
             class AbstractMessageWriter : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_478a9a59660d41ab,
-                mid_getContext_21a51eed276d81e3,
-                mid_getDefaultVersion_456d9a2f64d6b28d,
-                mid_getFormatVersionKey_0090f7797e403f43,
-                mid_getRoot_0090f7797e403f43,
-                mid_getTimeConverter_131aec6eeceff57f,
-                mid_getVersion_456d9a2f64d6b28d,
-                mid_setContext_b23a8b8e76c44cd4,
-                mid_writeFooter_fb36c2e4ae059ab9,
-                mid_writeHeader_31a4dd6b0c8635b6,
-                mid_writeSegment_412320e9d7a2723d,
-                mid_writeSegmentContent_17bd99da1e106002,
+                mid_init$_2a0a7c2e7c34a644,
+                mid_getContext_c779ff7fea6f1993,
+                mid_getDefaultVersion_dff5885c2c873297,
+                mid_getFormatVersionKey_11b109bd155ca898,
+                mid_getRoot_11b109bd155ca898,
+                mid_getTimeConverter_1a568e4d577ff0e8,
+                mid_getVersion_dff5885c2c873297,
+                mid_setContext_279465702b09ae7f,
+                mid_writeFooter_6d745cf7b26e9f5d,
+                mid_writeHeader_48090222d5fb583c,
+                mid_writeSegment_6a1f0a7164a88e0a,
+                mid_writeSegmentContent_a4679b5cde76d825,
                 max_mid
               };
 

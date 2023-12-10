@@ -5,9 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace attitudes {
-      class AttitudeProvider;
-    }
     namespace propagation {
       namespace analytical {
         namespace tle {
@@ -17,6 +14,9 @@ namespace org {
     }
     namespace frames {
       class Frame;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
     }
   }
 }
@@ -36,11 +36,11 @@ namespace org {
           class DeepSDP4 : public ::org::orekit::propagation::analytical::tle::SDP4 {
            public:
             enum {
-              mid_init$_3c209839d9f7d817,
-              mid_init$_8edece06f32cbd33,
-              mid_luniSolarTermsComputation_7ae3461a92a43152,
-              mid_deepSecularEffects_77e0f9a1f260e2e5,
-              mid_deepPeriodicEffects_77e0f9a1f260e2e5,
+              mid_init$_11c826170d15cb79,
+              mid_init$_2709a562b7f01856,
+              mid_luniSolarTermsComputation_0fa09c18fee449d5,
+              mid_deepSecularEffects_17db3a65980d3441,
+              mid_deepPeriodicEffects_17db3a65980d3441,
               max_mid
             };
 

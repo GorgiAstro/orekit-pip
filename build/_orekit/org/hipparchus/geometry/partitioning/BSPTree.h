@@ -6,15 +6,15 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      class Point;
       namespace partitioning {
+        class SubHyperplane;
+        class BSPTree$VanishingCutHandler;
         class Hyperplane;
         class BSPTree$LeafMerger;
-        class BSPTreeVisitor;
         class BSPTree;
-        class BSPTree$VanishingCutHandler;
-        class SubHyperplane;
+        class BSPTreeVisitor;
       }
+      class Point;
     }
   }
 }
@@ -36,24 +36,24 @@ namespace org {
         class BSPTree : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_init$_7ca0d9438822cb0b,
-            mid_init$_d7acb37d69da303f,
-            mid_copySelf_ec08d7579464d8a2,
-            mid_getAttribute_dfd7647d9110ac9f,
-            mid_getCell_4ea49dc3d1d970a9,
-            mid_getCloseCuts_e422c0b808638456,
-            mid_getCut_a66e04f05d5608cc,
-            mid_getMinus_ec08d7579464d8a2,
-            mid_getParent_ec08d7579464d8a2,
-            mid_getPlus_ec08d7579464d8a2,
-            mid_insertCut_b99f508aafd89c77,
-            mid_insertInTree_fbac4d079e23ef4e,
-            mid_merge_d7b304bb164ebb5e,
-            mid_pruneAroundConvexCell_378b9a70983ca2dd,
-            mid_setAttribute_7ca0d9438822cb0b,
-            mid_split_543eb723c89dfca4,
-            mid_visit_7ce3dc52f494910d,
+            mid_init$_0fa09c18fee449d5,
+            mid_init$_2990946c992aafed,
+            mid_init$_a6616e5a16388e97,
+            mid_copySelf_5bcc186ed7144178,
+            mid_getAttribute_4d26fd885228c716,
+            mid_getCell_090f24d48d539012,
+            mid_getCloseCuts_fdcaf1bcc15bca5f,
+            mid_getCut_6e34449919366687,
+            mid_getMinus_5bcc186ed7144178,
+            mid_getParent_5bcc186ed7144178,
+            mid_getPlus_5bcc186ed7144178,
+            mid_insertCut_5bc340c02d9ac484,
+            mid_insertInTree_0daf8859736f87dd,
+            mid_merge_dfbabc273fbcf8e1,
+            mid_pruneAroundConvexCell_eef8f25b38372685,
+            mid_setAttribute_2990946c992aafed,
+            mid_split_a6b6b20f5441afbd,
+            mid_visit_f87f01e6869287b2,
             max_mid
           };
 

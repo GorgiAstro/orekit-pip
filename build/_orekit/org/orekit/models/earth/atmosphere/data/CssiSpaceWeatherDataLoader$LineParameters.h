@@ -3,17 +3,17 @@
 
 #include "org/orekit/models/earth/atmosphere/data/AbstractSolarActivityDataLoader$LineParameters.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-    class Object;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
+    class Object;
   }
 }
 template<class T> class JArray;
@@ -28,23 +28,23 @@ namespace org {
             class CssiSpaceWeatherDataLoader$LineParameters : public ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityDataLoader$LineParameters {
              public:
               enum {
-                mid_init$_307d0c8ed06cc17f,
-                mid_compareTo_533614488ddee224,
-                mid_equals_229c87223f486349,
-                mid_getApAvg_456d9a2f64d6b28d,
-                mid_getCtr81Adj_456d9a2f64d6b28d,
-                mid_getCtr81Obs_456d9a2f64d6b28d,
-                mid_getF107Adj_456d9a2f64d6b28d,
-                mid_getF107Obs_456d9a2f64d6b28d,
-                mid_getFluxQualifier_f2f64475e4580546,
-                mid_getKpSum_456d9a2f64d6b28d,
-                mid_getLst81Adj_456d9a2f64d6b28d,
-                mid_getLst81Obs_456d9a2f64d6b28d,
-                mid_getThreeHourlyAp_7cdc325af0834901,
-                mid_getThreeHourlyAp_b772323fc98b7293,
-                mid_getThreeHourlyKp_7cdc325af0834901,
-                mid_getThreeHourlyKp_b772323fc98b7293,
-                mid_hashCode_f2f64475e4580546,
+                mid_init$_579f999607b35cc8,
+                mid_compareTo_b2c45b61abaea01a,
+                mid_equals_65c7d273e80d497a,
+                mid_getApAvg_dff5885c2c873297,
+                mid_getCtr81Adj_dff5885c2c873297,
+                mid_getCtr81Obs_dff5885c2c873297,
+                mid_getF107Adj_dff5885c2c873297,
+                mid_getF107Obs_dff5885c2c873297,
+                mid_getFluxQualifier_570ce0828f81a2c1,
+                mid_getKpSum_dff5885c2c873297,
+                mid_getLst81Adj_dff5885c2c873297,
+                mid_getLst81Obs_dff5885c2c873297,
+                mid_getThreeHourlyAp_60c7040667a7dc5c,
+                mid_getThreeHourlyAp_46f85b53d9aedd96,
+                mid_getThreeHourlyKp_60c7040667a7dc5c,
+                mid_getThreeHourlyKp_46f85b53d9aedd96,
+                mid_hashCode_570ce0828f81a2c1,
                 max_mid
               };
 

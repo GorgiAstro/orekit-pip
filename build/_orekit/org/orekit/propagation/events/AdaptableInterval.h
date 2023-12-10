@@ -25,7 +25,7 @@ namespace org {
         class AdaptableInterval : public ::java::lang::Object {
          public:
           enum {
-            mid_currentInterval_66a2f071e6ed0c06,
+            mid_currentInterval_432f3d328c15ec82,
             max_mid
           };
 

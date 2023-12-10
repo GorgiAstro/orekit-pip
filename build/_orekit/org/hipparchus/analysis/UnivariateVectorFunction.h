@@ -17,7 +17,7 @@ namespace org {
       class UnivariateVectorFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_value_e6753bb90e47a158,
+          mid_value_cd41055053027787,
           max_mid
         };
 

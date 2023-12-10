@@ -9,8 +9,8 @@ namespace org {
       class SatelliteSystem;
       namespace metric {
         namespace parser {
-          class IgsSsrMessageType;
           class MessageType;
+          class IgsSsrMessageType;
         }
       }
     }
@@ -33,11 +33,11 @@ namespace org {
           class IgsSsrMessageType : public ::java::lang::Enum {
            public:
             enum {
-              mid_getMessageType_ec8ed3783ba93a87,
-              mid_getSatelliteId_c7bf6d31939555f8,
-              mid_messageNumberToSatelliteSystem_a6dbe694407fc135,
-              mid_valueOf_ec8ed3783ba93a87,
-              mid_values_b2a6c053cd650d32,
+              mid_getMessageType_044bc996b7e01e86,
+              mid_getSatelliteId_ca48e2f2a322b431,
+              mid_messageNumberToSatelliteSystem_88047dd77a18b2f0,
+              mid_valueOf_044bc996b7e01e86,
+              mid_values_23b79723d947151c,
               max_mid
             };
 

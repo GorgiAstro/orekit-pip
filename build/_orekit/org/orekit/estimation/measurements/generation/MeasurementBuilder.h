@@ -3,25 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class ObservableSatellite;
-        class ObservedMeasurement;
-        class EstimationModifier;
-      }
-    }
-    namespace propagation {
-      namespace sampling {
-        class OrekitStepInterpolator;
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -29,6 +10,25 @@ namespace java {
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class ObservedMeasurement;
+        class EstimationModifier;
+        class ObservableSatellite;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace propagation {
+      namespace sampling {
+        class OrekitStepInterpolator;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -42,11 +42,11 @@ namespace org {
           class MeasurementBuilder : public ::java::lang::Object {
            public:
             enum {
-              mid_addModifier_fc816f44bfa3d437,
-              mid_build_d02e2fca157afe5d,
-              mid_getModifiers_a6156df500549a58,
-              mid_getSatellites_ff20f279f9ba9f9e,
-              mid_init_d958a9bfde45c759,
+              mid_addModifier_baf3397e6fffc21d,
+              mid_build_ae909064be36023e,
+              mid_getModifiers_2afa36052df4765d,
+              mid_getSatellites_f81b672126a6576d,
+              mid_init_a9e71d848b81c8f8,
               max_mid
             };
 

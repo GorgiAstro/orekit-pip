@@ -17,8 +17,8 @@ namespace org {
   namespace orekit {
     namespace data {
       class FiltersManager;
-      class DataProvider;
       class DataLoader;
+      class DataProvider;
     }
   }
 }
@@ -31,18 +31,18 @@ namespace org {
       class DataProvidersManager : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_addDefaultProviders_7ae3461a92a43152,
-          mid_addProvider_308c4bc60337625a,
-          mid_clearLoadedDataNames_7ae3461a92a43152,
-          mid_clearProviders_7ae3461a92a43152,
-          mid_feed_bcc626f294fafcf6,
-          mid_getFiltersManager_9bc87012852bc9c1,
-          mid_getLoadedDataNames_e9e1a6780fe94297,
-          mid_getProviders_a6156df500549a58,
-          mid_isSupported_ab23dfcf677c048c,
-          mid_removeProvider_29821a711ab49f7c,
-          mid_resetFiltersToDefault_7ae3461a92a43152,
+          mid_init$_0fa09c18fee449d5,
+          mid_addDefaultProviders_0fa09c18fee449d5,
+          mid_addProvider_0467e68987811603,
+          mid_clearLoadedDataNames_0fa09c18fee449d5,
+          mid_clearProviders_0fa09c18fee449d5,
+          mid_feed_b70d11da020d8106,
+          mid_getFiltersManager_8751d88cff64f6b0,
+          mid_getLoadedDataNames_015730311a5bacdc,
+          mid_getProviders_2afa36052df4765d,
+          mid_isSupported_b27cfcb990b8e37c,
+          mid_removeProvider_d29423315e8237e2,
+          mid_resetFiltersToDefault_0fa09c18fee449d5,
           max_mid
         };
 

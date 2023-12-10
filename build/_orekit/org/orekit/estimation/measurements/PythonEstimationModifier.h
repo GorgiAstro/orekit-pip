@@ -37,14 +37,14 @@ namespace org {
         class PythonEstimationModifier : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_finalize_7ae3461a92a43152,
-            mid_getParametersDrivers_a6156df500549a58,
-            mid_modify_a5896dbcbe782924,
-            mid_modifyWithoutDerivatives_811f96960c94c1de,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
+            mid_init$_0fa09c18fee449d5,
+            mid_finalize_0fa09c18fee449d5,
+            mid_getParametersDrivers_2afa36052df4765d,
+            mid_modify_e4935e9a55e01fd8,
+            mid_modifyWithoutDerivatives_d1815d998cba71e9,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
             max_mid
           };
 

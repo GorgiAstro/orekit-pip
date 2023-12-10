@@ -3,15 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace lang {
-    class AutoCloseable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -19,9 +10,9 @@ namespace org {
         namespace ndm {
           namespace odm {
             namespace oem {
-              class OemMetadata;
-              class OemWriter;
               class StreamingOemWriter$SegmentWriter;
+              class OemWriter;
+              class OemMetadata;
             }
             class OdmHeader;
           }
@@ -33,6 +24,15 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace io {
+    class IOException;
+  }
+  namespace lang {
+    class AutoCloseable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -48,11 +48,11 @@ namespace org {
               class StreamingOemWriter : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_47c174dd8d9f95f0,
-                  mid_init$_63d8fb2e0bb79b77,
-                  mid_init$_2a245e70e6caa480,
-                  mid_close_7ae3461a92a43152,
-                  mid_newSegment_94898e50afe4b3bb,
+                  mid_init$_a2ae4acdbb2a1ace,
+                  mid_init$_31126342ab987ed6,
+                  mid_init$_c297c56ee9a12ddd,
+                  mid_close_0fa09c18fee449d5,
+                  mid_newSegment_f219119970ffa746,
                   max_mid
                 };
 

@@ -19,7 +19,7 @@ namespace org {
           class ParsedMessage : public ::java::lang::Object {
            public:
             enum {
-              mid_getTypeCode_f2f64475e4580546,
+              mid_getTypeCode_570ce0828f81a2c1,
               max_mid
             };
 

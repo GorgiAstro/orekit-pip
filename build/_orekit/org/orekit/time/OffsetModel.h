@@ -3,19 +3,19 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace time {
+      class DateComponents;
+    }
+  }
+}
 namespace java {
   namespace lang {
     class Class;
   }
   namespace io {
     class Serializable;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace time {
-      class DateComponents;
-    }
   }
 }
 template<class T> class JArray;
@@ -27,12 +27,12 @@ namespace org {
       class OffsetModel : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_f258113202d4c30d,
-          mid_init$_275d7822ecae0775,
-          mid_getMJDRef_f2f64475e4580546,
-          mid_getOffset_456d9a2f64d6b28d,
-          mid_getSlope_456d9a2f64d6b28d,
-          mid_getStart_d592c1a2c355eb35,
+          mid_init$_07bece3cd7a2ccd6,
+          mid_init$_bc1e58e77e71782c,
+          mid_getMJDRef_570ce0828f81a2c1,
+          mid_getOffset_dff5885c2c873297,
+          mid_getSlope_dff5885c2c873297,
+          mid_getStart_06e6477664d37caa,
           max_mid
         };
 

@@ -5,10 +5,10 @@
 
 namespace java {
   namespace io {
-    class Flushable;
-    class Console;
-    class PrintWriter;
     class Reader;
+    class Flushable;
+    class PrintWriter;
+    class Console;
   }
   namespace lang {
     class Class;
@@ -23,15 +23,15 @@ namespace java {
     class Console : public ::java::lang::Object {
      public:
       enum {
-        mid_flush_7ae3461a92a43152,
-        mid_format_b1a86248963b4de8,
-        mid_printf_b1a86248963b4de8,
-        mid_readLine_0090f7797e403f43,
-        mid_readLine_800b9a7564ae3d87,
-        mid_readPassword_946e97d3d5d65de5,
-        mid_readPassword_afd36805b5ed4832,
-        mid_reader_8476c88b3f0eb61c,
-        mid_writer_8241e51f5b5595a7,
+        mid_flush_0fa09c18fee449d5,
+        mid_format_e74765ad272a293e,
+        mid_printf_e74765ad272a293e,
+        mid_readLine_11b109bd155ca898,
+        mid_readLine_f5b4dd623dba97e9,
+        mid_readPassword_1c41284d788a6957,
+        mid_readPassword_a7132a73eeb55370,
+        mid_reader_26c6a3f16521a493,
+        mid_writer_aac0951e65427d21,
         max_mid
       };
 

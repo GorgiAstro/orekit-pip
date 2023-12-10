@@ -13,11 +13,11 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeScales;
-    }
     namespace data {
       class DataSource;
+    }
+    namespace time {
+      class TimeScales;
     }
     namespace files {
       namespace rinex {
@@ -39,9 +39,9 @@ namespace org {
           class RinexNavigationParser : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_init$_3478eebd4736dcb6,
-              mid_parse_3e1c1d55456c6db2,
+              mid_init$_0fa09c18fee449d5,
+              mid_init$_8736fe4ec3234d8c,
+              mid_parse_803758770eba64f3,
               max_mid
             };
 

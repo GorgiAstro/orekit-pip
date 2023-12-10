@@ -36,21 +36,21 @@ namespace org {
             class GLONASSEphemeris : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_b468b32595f64f31,
-                mid_init$_95b15e482e88631c,
-                mid_getDate_aaa854c403487cf3,
-                mid_getN4_f2f64475e4580546,
-                mid_getNa_f2f64475e4580546,
-                mid_getTime_456d9a2f64d6b28d,
-                mid_getX_456d9a2f64d6b28d,
-                mid_getXDot_456d9a2f64d6b28d,
-                mid_getXDotDot_456d9a2f64d6b28d,
-                mid_getY_456d9a2f64d6b28d,
-                mid_getYDot_456d9a2f64d6b28d,
-                mid_getYDotDot_456d9a2f64d6b28d,
-                mid_getZ_456d9a2f64d6b28d,
-                mid_getZDot_456d9a2f64d6b28d,
-                mid_getZDotDot_456d9a2f64d6b28d,
+                mid_init$_008618ed8ffeed65,
+                mid_init$_2ab995c573e81c53,
+                mid_getDate_85703d13e302437e,
+                mid_getN4_570ce0828f81a2c1,
+                mid_getNa_570ce0828f81a2c1,
+                mid_getTime_dff5885c2c873297,
+                mid_getX_dff5885c2c873297,
+                mid_getXDot_dff5885c2c873297,
+                mid_getXDotDot_dff5885c2c873297,
+                mid_getY_dff5885c2c873297,
+                mid_getYDot_dff5885c2c873297,
+                mid_getYDotDot_dff5885c2c873297,
+                mid_getZ_dff5885c2c873297,
+                mid_getZDot_dff5885c2c873297,
+                mid_getZDotDot_dff5885c2c873297,
                 max_mid
               };
 

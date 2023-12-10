@@ -3,6 +3,11 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
@@ -12,11 +17,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,7 +31,7 @@ namespace org {
             class ParseToken$TimeSystemConsumer : public ::java::lang::Object {
              public:
               enum {
-                mid_accept_3dd15fb182523a58,
+                mid_accept_08d7048316d8d7b2,
                 max_mid
               };
 

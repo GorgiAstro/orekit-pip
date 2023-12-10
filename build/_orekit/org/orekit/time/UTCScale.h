@@ -3,6 +3,22 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
+  namespace orekit {
+    namespace time {
+      class OffsetModel;
+      class DateComponents;
+      class AbsoluteDate;
+      class TimeComponents;
+      class FieldAbsoluteDate;
+      class UTCTAIOffset;
+      class TimeScale;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -11,22 +27,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace time {
-      class TimeScale;
-      class OffsetModel;
-      class TimeComponents;
-      class UTCTAIOffset;
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-      class DateComponents;
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -38,21 +38,21 @@ namespace org {
       class UTCScale : public ::java::lang::Object {
        public:
         enum {
-          mid_getBaseOffsets_cfcfd130f9013e3e,
-          mid_getFirstKnownLeapSecond_aaa854c403487cf3,
-          mid_getLastKnownLeapSecond_aaa854c403487cf3,
-          mid_getLeap_e912d21057defe63,
-          mid_getLeap_7bc0fd76ee915b72,
-          mid_getName_0090f7797e403f43,
-          mid_getUTCTAIOffsets_a6156df500549a58,
-          mid_insideLeap_ee2067c5768b6768,
-          mid_insideLeap_5997cf1e9de74766,
-          mid_minuteDuration_982c9f163875e1c9,
-          mid_minuteDuration_90583a249f651dc5,
-          mid_offsetFromTAI_e912d21057defe63,
-          mid_offsetFromTAI_7bc0fd76ee915b72,
-          mid_offsetToTAI_ceb6ee9e1c4bbdb1,
-          mid_toString_0090f7797e403f43,
+          mid_getBaseOffsets_37528d110cff6b74,
+          mid_getFirstKnownLeapSecond_85703d13e302437e,
+          mid_getLastKnownLeapSecond_85703d13e302437e,
+          mid_getLeap_bf1d7732f1acb697,
+          mid_getLeap_2a5f05be83ff251d,
+          mid_getName_11b109bd155ca898,
+          mid_getUTCTAIOffsets_2afa36052df4765d,
+          mid_insideLeap_db6d81809797ddaa,
+          mid_insideLeap_6d572d97c8b0ec11,
+          mid_minuteDuration_17efd3c2ea0eaff7,
+          mid_minuteDuration_1e7a6890919ea8bb,
+          mid_offsetFromTAI_bf1d7732f1acb697,
+          mid_offsetFromTAI_2a5f05be83ff251d,
+          mid_offsetToTAI_56358b00ba005b52,
+          mid_toString_11b109bd155ca898,
           max_mid
         };
 

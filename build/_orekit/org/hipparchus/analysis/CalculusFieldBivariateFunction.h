@@ -22,7 +22,7 @@ namespace org {
       class CalculusFieldBivariateFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_value_75c7ce7d33e7324b,
+          mid_value_6746cc1cd9210d54,
           max_mid
         };
 

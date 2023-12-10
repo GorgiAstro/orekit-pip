@@ -9,8 +9,8 @@ namespace org {
       namespace ccsds {
         namespace utils {
           namespace lexical {
-            class XmlTokenBuilder;
             class ParseToken;
+            class XmlTokenBuilder;
           }
         }
       }
@@ -39,8 +39,8 @@ namespace org {
             class MessageVersionXmlTokenBuilder : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_buildTokens_9b67b2bd574b1d70,
+                mid_init$_0fa09c18fee449d5,
+                mid_buildTokens_e5e9154f880f1aad,
                 max_mid
               };
 

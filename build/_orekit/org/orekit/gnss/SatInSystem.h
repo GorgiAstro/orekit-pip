@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace gnss {
       class SatelliteSystem;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,12 +24,12 @@ namespace org {
       class SatInSystem : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_1cc5cc745f848cd5,
-          mid_equals_229c87223f486349,
-          mid_getPRN_f2f64475e4580546,
-          mid_getSystem_1b72fcc8f550bfc7,
-          mid_getTwoDigitsRinexPRN_f2f64475e4580546,
-          mid_hashCode_f2f64475e4580546,
+          mid_init$_74682bbdff47e90b,
+          mid_equals_65c7d273e80d497a,
+          mid_getPRN_570ce0828f81a2c1,
+          mid_getSystem_01acae5c1a253b8e,
+          mid_getTwoDigitsRinexPRN_570ce0828f81a2c1,
+          mid_hashCode_570ce0828f81a2c1,
           max_mid
         };
 

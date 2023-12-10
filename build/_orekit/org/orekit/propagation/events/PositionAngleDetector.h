@@ -5,21 +5,21 @@
 
 namespace org {
   namespace orekit {
-    namespace errors {
-      class OrekitIllegalArgumentException;
-    }
-    namespace propagation {
-      class SpacecraftState;
-      namespace events {
-        class PositionAngleDetector;
-      }
-    }
     namespace orbits {
       class PositionAngleType;
       class OrbitType;
     }
+    namespace errors {
+      class OrekitIllegalArgumentException;
+    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace propagation {
+      namespace events {
+        class PositionAngleDetector;
+      }
+      class SpacecraftState;
     }
   }
 }
@@ -38,14 +38,14 @@ namespace org {
         class PositionAngleDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_bae8e8bcb1f20009,
-            mid_init$_6e4c284847e31171,
-            mid_g_66a2f071e6ed0c06,
-            mid_getAngle_456d9a2f64d6b28d,
-            mid_getOrbitType_63ea5cd020bf7bf1,
-            mid_getPositionAngleType_2571e8fe1cede425,
-            mid_init_3d13474d79f5e7bc,
-            mid_create_6e6735a86409adbb,
+            mid_init$_da38e6127572ad93,
+            mid_init$_caefc517bbd16a1e,
+            mid_g_432f3d328c15ec82,
+            mid_getAngle_dff5885c2c873297,
+            mid_getOrbitType_e29360d311dc0e20,
+            mid_getPositionAngleType_8f17e83e5a86217c,
+            mid_init_826b4eda94da4e78,
+            mid_create_39063026c0d72c49,
             max_mid
           };
 

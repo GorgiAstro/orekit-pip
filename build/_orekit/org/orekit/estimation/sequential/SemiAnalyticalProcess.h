@@ -40,12 +40,12 @@ namespace org {
         class SemiAnalyticalProcess : public ::java::lang::Object {
          public:
           enum {
-            mid_finalizeEstimation_7cf22bbe05cd26dc,
-            mid_finalizeOperationsObservationGrid_7ae3461a92a43152,
-            mid_getObserver_c42c64cc17e34100,
-            mid_initializeShortPeriodicTerms_2b88003f931f70a7,
-            mid_updateNominalSpacecraftState_2b88003f931f70a7,
-            mid_updateShortPeriods_2b88003f931f70a7,
+            mid_finalizeEstimation_da0919b7ae9816a3,
+            mid_finalizeOperationsObservationGrid_0fa09c18fee449d5,
+            mid_getObserver_fc89aee73878aefd,
+            mid_initializeShortPeriodicTerms_0ee5c56004643a2e,
+            mid_updateNominalSpacecraftState_0ee5c56004643a2e,
+            mid_updateShortPeriods_0ee5c56004643a2e,
             max_mid
           };
 

@@ -4,25 +4,25 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace ode {
-      namespace events {
-        class Action;
-      }
-    }
-  }
   namespace orekit {
     namespace propagation {
       namespace events {
+        class EventDetector;
         namespace handlers {
           class EventHandler;
         }
-        class EventDetector;
       }
       class SpacecraftState;
     }
     namespace time {
       class AbsoluteDate;
+    }
+  }
+  namespace hipparchus {
+    namespace ode {
+      namespace events {
+        class Action;
+      }
     }
   }
 }
@@ -43,14 +43,14 @@ namespace org {
           class PythonEventHandler : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_eventOccurred_66531e3c1769dca9,
-              mid_finalize_7ae3461a92a43152,
-              mid_init_9678bba57553faaf,
-              mid_pythonDecRef_7ae3461a92a43152,
-              mid_pythonExtension_a27fc9afd27e559d,
-              mid_pythonExtension_fefb08975c10f0a1,
-              mid_resetState_7c4cfc7ac2bc3a77,
+              mid_init$_0fa09c18fee449d5,
+              mid_eventOccurred_abc543fa9701720f,
+              mid_finalize_0fa09c18fee449d5,
+              mid_init_2e343080aa0c9516,
+              mid_pythonDecRef_0fa09c18fee449d5,
+              mid_pythonExtension_492808a339bfa35f,
+              mid_pythonExtension_3a8e7649f31fdb20,
+              mid_resetState_7a28fd3585a5b57c,
               max_mid
             };
 

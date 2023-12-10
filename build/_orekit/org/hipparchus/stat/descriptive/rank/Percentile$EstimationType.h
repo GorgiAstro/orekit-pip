@@ -3,6 +3,12 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace util {
@@ -17,12 +23,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -34,12 +34,12 @@ namespace org {
           class Percentile$EstimationType : public ::java::lang::Enum {
            public:
             enum {
-              mid_evaluate_b3f8c0a6fcd474d2,
-              mid_valueOf_77624cca46538fe2,
-              mid_values_49c3192c700e56b5,
-              mid_evaluate_b6a18dd3bc4c6c25,
-              mid_estimate_65e9a65f06b863df,
-              mid_index_bcad94b64f1e2dd8,
+              mid_evaluate_3c85c49b21672f07,
+              mid_valueOf_071a6093fe35c3e5,
+              mid_values_dcaa04786abae305,
+              mid_evaluate_c1787a78ec64bdbf,
+              mid_estimate_ec22f36b0313b4dc,
+              mid_index_948617e69b66e15d,
               max_mid
             };
 

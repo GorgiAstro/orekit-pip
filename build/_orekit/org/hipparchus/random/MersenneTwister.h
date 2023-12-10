@@ -20,13 +20,13 @@ namespace org {
       class MersenneTwister : public ::org::hipparchus::random::IntRandomGenerator {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_init$_3b603738d1eb3233,
-          mid_init$_0a2a1ac2721c0336,
-          mid_init$_fefb08975c10f0a1,
-          mid_nextInt_f2f64475e4580546,
-          mid_setSeed_3b603738d1eb3233,
-          mid_setSeed_0a2a1ac2721c0336,
+          mid_init$_0fa09c18fee449d5,
+          mid_init$_d147d7ce001e2d45,
+          mid_init$_99803b0791f320ff,
+          mid_init$_3a8e7649f31fdb20,
+          mid_nextInt_570ce0828f81a2c1,
+          mid_setSeed_d147d7ce001e2d45,
+          mid_setSeed_99803b0791f320ff,
           max_mid
         };
 

@@ -22,10 +22,10 @@ namespace org {
               class OmmMetadata : public ::org::orekit::files::ccsds::ndm::odm::OdmCommonMetadata {
                public:
                 enum {
-                  mid_init$_7ae3461a92a43152,
-                  mid_getMeanElementTheory_0090f7797e403f43,
-                  mid_setMeanElementTheory_e939c6558ae8d313,
-                  mid_theoryIsSgpSdp_e470b6d9e0d979db,
+                  mid_init$_0fa09c18fee449d5,
+                  mid_getMeanElementTheory_11b109bd155ca898,
+                  mid_setMeanElementTheory_d0bc48d5b00dc40c,
+                  mid_theoryIsSgpSdp_b108b35ef48e27bd,
                   max_mid
                 };
 

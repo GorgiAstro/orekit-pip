@@ -16,10 +16,10 @@ namespace org {
           }
         }
         namespace utils {
-          class ContextBinding;
           namespace lexical {
             class ParseToken;
           }
+          class ContextBinding;
         }
       }
     }
@@ -44,9 +44,9 @@ namespace org {
               class OmmTleKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_e9fed2659f98b927,
-                  mid_valueOf_b874895857e0c9cc,
-                  mid_values_4af74d0941061dbb,
+                  mid_process_e39ab38fcea2570f,
+                  mid_valueOf_a91badf73e7c2c46,
+                  mid_values_c93389304b0e14f1,
                   max_mid
                 };
 

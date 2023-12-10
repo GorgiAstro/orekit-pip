@@ -13,12 +13,12 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    class Field;
     namespace analysis {
       namespace differentiation {
         class Derivative;
       }
     }
+    class Field;
   }
   namespace orekit {
     namespace utils {
@@ -36,10 +36,10 @@ namespace org {
         class DerivativeGenerator : public ::java::lang::Object {
          public:
           enum {
-            mid_constant_0edde46ddfc92b82,
-            mid_getField_70b4bbd3fa378d6b,
-            mid_getSelected_a6156df500549a58,
-            mid_variable_bf7c211ac81c340b,
+            mid_constant_d02904082378787e,
+            mid_getField_5b28be2d3632a5dc,
+            mid_getSelected_2afa36052df4765d,
+            mid_variable_ef120ce93b28b8e5,
             max_mid
           };
 

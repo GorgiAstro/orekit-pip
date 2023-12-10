@@ -5,18 +5,18 @@
 
 namespace org {
   namespace orekit {
+    namespace propagation {
+      namespace analytical {
+        class AdapterPropagator$DifferentialEffect;
+      }
+      class SpacecraftState;
+    }
     namespace forces {
       namespace gravity {
         namespace potential {
           class UnnormalizedSphericalHarmonicsProvider;
         }
       }
-    }
-    namespace propagation {
-      namespace analytical {
-        class AdapterPropagator$DifferentialEffect;
-      }
-      class SpacecraftState;
     }
     namespace orbits {
       class Orbit;
@@ -38,12 +38,12 @@ namespace org {
         class J2DifferentialEffect : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_968c8a684a653e35,
-            mid_init$_9afa102c5fb63730,
-            mid_init$_e68860fefcd1a7f2,
-            mid_init$_de64d3d9f52e8f34,
-            mid_apply_4500563ec80cd676,
-            mid_apply_81fc6fb6078d2aa7,
+            mid_init$_fd9074bf7267d323,
+            mid_init$_7b91f935782f6673,
+            mid_init$_86e49d3816ef81cb,
+            mid_init$_d8dfb9363a119d99,
+            mid_apply_58efaeb159657907,
+            mid_apply_f43130c50e9fafeb,
             max_mid
           };
 

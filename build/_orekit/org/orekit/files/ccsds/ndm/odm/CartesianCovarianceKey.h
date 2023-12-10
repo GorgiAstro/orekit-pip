@@ -7,16 +7,16 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace utils {
+          namespace lexical {
+            class ParseToken;
+          }
+          class ContextBinding;
+        }
         namespace ndm {
           namespace odm {
             class CartesianCovarianceKey;
             class CartesianCovariance;
-          }
-        }
-        namespace utils {
-          class ContextBinding;
-          namespace lexical {
-            class ParseToken;
           }
         }
       }
@@ -41,9 +41,9 @@ namespace org {
             class CartesianCovarianceKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_88590e503ad399bf,
-                mid_valueOf_1af72d434319f8e1,
-                mid_values_bbfbf994165b587a,
+                mid_process_91167e646acbc9d0,
+                mid_valueOf_8f3676a0a8b4c11d,
+                mid_values_037320d096bc10be,
                 max_mid
               };
 

@@ -13,31 +13,31 @@ namespace java {
   }
 }
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class RotationOrder;
-        }
-      }
-    }
-  }
   namespace orekit {
     namespace files {
       namespace ccsds {
         namespace ndm {
           namespace adm {
             namespace acm {
-              class AttitudeElementsType;
               class RateElementsType;
-              class AttitudeDeterminationSensor;
+              class AttitudeElementsType;
               class AttitudeCovarianceType;
+              class AttitudeDeterminationSensor;
             }
             class AttitudeEndpoints;
           }
         }
         namespace definitions {
           class AdMethodType;
+        }
+      }
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class RotationOrder;
         }
       }
     }
@@ -56,35 +56,35 @@ namespace org {
               class AttitudeDetermination : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_7ae3461a92a43152,
-                  mid_addSensor_4d8be7cfc38a825b,
-                  mid_getAttitudeStates_ec3c84a694477494,
-                  mid_getCovarianceType_10ff8ccfa18eb164,
-                  mid_getEndpoints_160aadf35481229b,
-                  mid_getEulerRotSeq_425debac8563c8f4,
-                  mid_getId_0090f7797e403f43,
-                  mid_getMethod_c8f5f28322e29d95,
-                  mid_getNbStates_f2f64475e4580546,
-                  mid_getPrevId_0090f7797e403f43,
-                  mid_getRateProcessNoiseStdDev_456d9a2f64d6b28d,
-                  mid_getRateStates_6a98691d179a0a11,
-                  mid_getSensorsUsed_a6156df500549a58,
-                  mid_getSigmaU_456d9a2f64d6b28d,
-                  mid_getSigmaV_456d9a2f64d6b28d,
-                  mid_getSource_0090f7797e403f43,
-                  mid_setAttitudeStates_3a0e4c42559abb2e,
-                  mid_setCovarianceType_f40cd56ce69cda26,
-                  mid_setEulerRotSeq_3c290f1c2c08ff0e,
-                  mid_setId_e939c6558ae8d313,
-                  mid_setMethod_01ed0efdbc98924d,
-                  mid_setNbStates_0a2a1ac2721c0336,
-                  mid_setPrevId_e939c6558ae8d313,
-                  mid_setRateProcessNoiseStdDev_77e0f9a1f260e2e5,
-                  mid_setRateStates_153f0895a658f894,
-                  mid_setSigmaU_77e0f9a1f260e2e5,
-                  mid_setSigmaV_77e0f9a1f260e2e5,
-                  mid_setSource_e939c6558ae8d313,
-                  mid_validate_77e0f9a1f260e2e5,
+                  mid_init$_0fa09c18fee449d5,
+                  mid_addSensor_bb8c5ac3b7165de2,
+                  mid_getAttitudeStates_f08064c40442c84b,
+                  mid_getCovarianceType_dbbc6c3c22ca640c,
+                  mid_getEndpoints_35bd4909c56b6915,
+                  mid_getEulerRotSeq_5aea028785008a06,
+                  mid_getId_11b109bd155ca898,
+                  mid_getMethod_d2912780ca38b0dd,
+                  mid_getNbStates_570ce0828f81a2c1,
+                  mid_getPrevId_11b109bd155ca898,
+                  mid_getRateProcessNoiseStdDev_dff5885c2c873297,
+                  mid_getRateStates_f2358484d07d6202,
+                  mid_getSensorsUsed_2afa36052df4765d,
+                  mid_getSigmaU_dff5885c2c873297,
+                  mid_getSigmaV_dff5885c2c873297,
+                  mid_getSource_11b109bd155ca898,
+                  mid_setAttitudeStates_4299529dacf75fa7,
+                  mid_setCovarianceType_c9a39b1c926f77b0,
+                  mid_setEulerRotSeq_a908138988eb2a50,
+                  mid_setId_d0bc48d5b00dc40c,
+                  mid_setMethod_2bd74e151e5425a9,
+                  mid_setNbStates_99803b0791f320ff,
+                  mid_setPrevId_d0bc48d5b00dc40c,
+                  mid_setRateProcessNoiseStdDev_17db3a65980d3441,
+                  mid_setRateStates_819c66db610b1575,
+                  mid_setSigmaU_17db3a65980d3441,
+                  mid_setSigmaV_17db3a65980d3441,
+                  mid_setSource_d0bc48d5b00dc40c,
+                  mid_validate_17db3a65980d3441,
                   max_mid
                 };
 

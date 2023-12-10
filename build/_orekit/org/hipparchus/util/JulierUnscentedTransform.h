@@ -24,11 +24,11 @@ namespace org {
       class JulierUnscentedTransform : public ::org::hipparchus::util::AbstractUnscentedTransform {
        public:
         enum {
-          mid_init$_0a2a1ac2721c0336,
-          mid_init$_987a5fb872043b12,
-          mid_getWc_6d9adf1d5b463928,
-          mid_getWm_6d9adf1d5b463928,
-          mid_getMultiplicationFactor_456d9a2f64d6b28d,
+          mid_init$_99803b0791f320ff,
+          mid_init$_bb79ca80d85d0a66,
+          mid_getWc_aab4fbf77867daa8,
+          mid_getWm_aab4fbf77867daa8,
+          mid_getMultiplicationFactor_dff5885c2c873297,
           max_mid
         };
 

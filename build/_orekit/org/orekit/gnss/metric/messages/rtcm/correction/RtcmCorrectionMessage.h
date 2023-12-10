@@ -42,10 +42,10 @@ namespace org {
               class RtcmCorrectionMessage : public ::org::orekit::gnss::metric::messages::rtcm::RtcmMessage {
                public:
                 enum {
-                  mid_init$_ddc181bba9c16073,
-                  mid_getDataMap_d6753b7055940a54,
-                  mid_getHeader_2ea93e5ea4dfc894,
-                  mid_getSatelliteSystem_1b72fcc8f550bfc7,
+                  mid_init$_b2f23762280bbe6f,
+                  mid_getDataMap_6f5a75ccd8c04465,
+                  mid_getHeader_93f61ca107b15f3c,
+                  mid_getSatelliteSystem_01acae5c1a253b8e,
                   max_mid
                 };
 

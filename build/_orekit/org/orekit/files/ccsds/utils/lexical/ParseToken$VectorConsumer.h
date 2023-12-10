@@ -3,6 +3,11 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -12,11 +17,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,7 +31,7 @@ namespace org {
             class ParseToken$VectorConsumer : public ::java::lang::Object {
              public:
               enum {
-                mid_accept_a94622407b723689,
+                mid_accept_029ff0cbf68ea054,
                 max_mid
               };
 

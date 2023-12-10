@@ -5,17 +5,17 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeInterpolator;
+    namespace orbits {
+      class PositionAngleType;
+      class Orbit;
+      class OrbitType;
     }
     namespace frames {
       class LOFType;
       class Frame;
     }
-    namespace orbits {
-      class Orbit;
-      class PositionAngleType;
-      class OrbitType;
+    namespace time {
+      class TimeInterpolator;
     }
   }
   namespace hipparchus {
@@ -40,9 +40,9 @@ namespace org {
       class StateCovarianceBlender : public ::org::orekit::propagation::AbstractStateCovarianceInterpolator {
        public:
         enum {
-          mid_init$_4903eb457e30521a,
-          mid_init$_8b6823ff71cba4c9,
-          mid_computeInterpolatedCovarianceInOrbitFrame_9c0671e111b7adfc,
+          mid_init$_f3691a7a656a731e,
+          mid_init$_6e413521e0652b3f,
+          mid_computeInterpolatedCovarianceInOrbitFrame_b3673400c0fde69a,
           max_mid
         };
 

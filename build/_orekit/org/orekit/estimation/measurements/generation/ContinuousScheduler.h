@@ -5,16 +5,16 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class DatesSelector;
+      class AbsoluteDate;
+    }
     namespace estimation {
       namespace measurements {
         namespace generation {
           class MeasurementBuilder;
         }
       }
-    }
-    namespace time {
-      class DatesSelector;
-      class AbsoluteDate;
     }
   }
 }
@@ -34,8 +34,8 @@ namespace org {
           class ContinuousScheduler : public ::org::orekit::estimation::measurements::generation::AbstractScheduler {
            public:
             enum {
-              mid_init$_30703ff0587c737c,
-              mid_measurementIsFeasible_ee2067c5768b6768,
+              mid_init$_df0efa5394471381,
+              mid_measurementIsFeasible_db6d81809797ddaa,
               max_mid
             };
 

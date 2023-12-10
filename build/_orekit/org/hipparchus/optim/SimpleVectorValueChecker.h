@@ -3,16 +3,16 @@
 
 #include "org/hipparchus/optim/AbstractConvergenceChecker.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace optim {
       class PointVectorValuePair;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,9 +24,9 @@ namespace org {
       class SimpleVectorValueChecker : public ::org::hipparchus::optim::AbstractConvergenceChecker {
        public:
         enum {
-          mid_init$_1d715fa3b7b756e1,
-          mid_init$_b05c288d5068eccb,
-          mid_converged_278765135752272f,
+          mid_init$_8f2e782d5278b131,
+          mid_init$_01fb2c777e5def32,
+          mid_converged_caf08c7242b15bc0,
           max_mid
         };
 

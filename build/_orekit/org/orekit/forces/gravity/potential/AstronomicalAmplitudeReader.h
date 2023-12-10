@@ -4,12 +4,12 @@
 #include "java/lang/Object.h"
 
 namespace java {
+  namespace util {
+    class Map;
+  }
   namespace io {
     class IOException;
     class InputStream;
-  }
-  namespace util {
-    class Map;
   }
   namespace lang {
     class Integer;
@@ -36,11 +36,11 @@ namespace org {
           class AstronomicalAmplitudeReader : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_8b8ad8f318d7ad17,
-              mid_getAstronomicalAmplitudesMap_d6753b7055940a54,
-              mid_getSupportedNames_0090f7797e403f43,
-              mid_loadData_ec60cb5f4b3de555,
-              mid_stillAcceptsData_e470b6d9e0d979db,
+              mid_init$_adf8b4a2b16bfd9e,
+              mid_getAstronomicalAmplitudesMap_6f5a75ccd8c04465,
+              mid_getSupportedNames_11b109bd155ca898,
+              mid_loadData_1815f85c118161ad,
+              mid_stillAcceptsData_b108b35ef48e27bd,
               max_mid
             };
 

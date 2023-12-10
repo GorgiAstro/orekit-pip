@@ -3,34 +3,24 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace lang {
-    class Appendable;
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace ndm {
-          namespace odm {
-            namespace oem {
-              class OemMetadata;
-              class OemWriter;
-            }
-            class OdmHeader;
-          }
-        }
         namespace utils {
           namespace generation {
             class Generator;
           }
           class FileFormat;
+        }
+        namespace ndm {
+          namespace odm {
+            namespace oem {
+              class OemWriter;
+              class OemMetadata;
+            }
+            class OdmHeader;
+          }
         }
       }
       namespace general {
@@ -39,6 +29,16 @@ namespace org {
         class EphemerisFile;
       }
     }
+  }
+}
+namespace java {
+  namespace io {
+    class IOException;
+  }
+  namespace lang {
+    class Appendable;
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -54,9 +54,9 @@ namespace org {
               class EphemerisOemWriter : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_9c3601fb93873324,
-                  mid_write_e65e411976c35f1d,
-                  mid_writeSegment_c76a9787e69e8f92,
+                  mid_init$_eeefd7776bcd1b30,
+                  mid_write_2fe5901b7cb5a492,
+                  mid_writeSegment_b5dc5008f70b538d,
                   max_mid
                 };
 

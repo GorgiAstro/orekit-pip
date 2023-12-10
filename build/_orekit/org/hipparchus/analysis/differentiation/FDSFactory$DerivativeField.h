@@ -28,12 +28,12 @@ namespace org {
         class FDSFactory$DerivativeField : public ::java::lang::Object {
          public:
           enum {
-            mid_equals_229c87223f486349,
-            mid_getOne_7208bb4259086f92,
-            mid_getPi_7208bb4259086f92,
-            mid_getRuntimeClass_8f66acc08d2a174c,
-            mid_getZero_7208bb4259086f92,
-            mid_hashCode_f2f64475e4580546,
+            mid_equals_65c7d273e80d497a,
+            mid_getOne_aa5c3ca19ecbe240,
+            mid_getPi_aa5c3ca19ecbe240,
+            mid_getRuntimeClass_7c16c5008b34b3db,
+            mid_getZero_aa5c3ca19ecbe240,
+            mid_hashCode_570ce0828f81a2c1,
             max_mid
           };
 

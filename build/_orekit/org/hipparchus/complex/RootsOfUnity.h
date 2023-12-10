@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathIllegalStateException;
       class MathIllegalArgumentException;
+      class MathIllegalStateException;
     }
   }
 }
@@ -28,12 +28,12 @@ namespace org {
       class RootsOfUnity : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_computeRoots_0a2a1ac2721c0336,
-          mid_getImaginary_b772323fc98b7293,
-          mid_getNumberOfRoots_f2f64475e4580546,
-          mid_getReal_b772323fc98b7293,
-          mid_isCounterClockWise_e470b6d9e0d979db,
+          mid_init$_0fa09c18fee449d5,
+          mid_computeRoots_99803b0791f320ff,
+          mid_getImaginary_46f85b53d9aedd96,
+          mid_getNumberOfRoots_570ce0828f81a2c1,
+          mid_getReal_46f85b53d9aedd96,
+          mid_isCounterClockWise_b108b35ef48e27bd,
           max_mid
         };
 

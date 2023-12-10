@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace gnss {
       class SatelliteSystem;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,9 +27,9 @@ namespace org {
           class TypeSvMessage : public ::java::lang::Object {
            public:
             enum {
-              mid_getNavigationMessageType_0090f7797e403f43,
-              mid_getPrn_f2f64475e4580546,
-              mid_getSystem_1b72fcc8f550bfc7,
+              mid_getNavigationMessageType_11b109bd155ca898,
+              mid_getPrn_570ce0828f81a2c1,
+              mid_getSystem_01acae5c1a253b8e,
               max_mid
             };
 

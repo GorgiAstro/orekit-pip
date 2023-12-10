@@ -3,16 +3,16 @@
 
 #include "java/io/Serializable.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace ode {
       class ODEStateAndDerivative;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,12 +25,12 @@ namespace org {
         class ODEStateInterpolator : public ::java::io::Serializable {
          public:
           enum {
-            mid_getCurrentState_ced1effea9e5e5d4,
-            mid_getInterpolatedState_05e60c2c1f1796ae,
-            mid_getPreviousState_ced1effea9e5e5d4,
-            mid_isCurrentStateInterpolated_e470b6d9e0d979db,
-            mid_isForward_e470b6d9e0d979db,
-            mid_isPreviousStateInterpolated_e470b6d9e0d979db,
+            mid_getCurrentState_72cfc96c3e58d15e,
+            mid_getInterpolatedState_f01efdb3ab1bad7f,
+            mid_getPreviousState_72cfc96c3e58d15e,
+            mid_isCurrentStateInterpolated_b108b35ef48e27bd,
+            mid_isForward_b108b35ef48e27bd,
+            mid_isPreviousStateInterpolated_b108b35ef48e27bd,
             max_mid
           };
 

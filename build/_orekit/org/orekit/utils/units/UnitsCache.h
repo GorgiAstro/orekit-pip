@@ -28,8 +28,8 @@ namespace org {
         class UnitsCache : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_getUnits_6650924024ae0f55,
+            mid_init$_0fa09c18fee449d5,
+            mid_getUnits_0a5740869b287d80,
             max_mid
           };
 

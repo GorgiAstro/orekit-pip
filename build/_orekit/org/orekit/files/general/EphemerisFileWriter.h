@@ -32,8 +32,8 @@ namespace org {
         class EphemerisFileWriter : public ::java::lang::Object {
          public:
           enum {
-            mid_write_4e618201ea15a8cc,
-            mid_write_e65e411976c35f1d,
+            mid_write_c304d7428e150e41,
+            mid_write_2fe5901b7cb5a492,
             max_mid
           };
 

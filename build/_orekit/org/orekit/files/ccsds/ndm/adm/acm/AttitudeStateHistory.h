@@ -5,12 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace attitudes {
-      class BoundedAttitudeProvider;
-    }
-    namespace frames {
-      class Frame;
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -27,11 +21,17 @@ namespace org {
       }
     }
     namespace utils {
-      class AngularDerivativesFilter;
       class TimeStampedAngularCoordinates;
+      class AngularDerivativesFilter;
+    }
+    namespace frames {
+      class Frame;
     }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace attitudes {
+      class BoundedAttitudeProvider;
     }
   }
 }
@@ -57,17 +57,17 @@ namespace org {
               class AttitudeStateHistory : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_be98a943865cb07a,
-                  mid_getAngularCoordinates_a6156df500549a58,
-                  mid_getAttitudeProvider_05a2839e8fecde67,
-                  mid_getAttitudeStates_a6156df500549a58,
-                  mid_getAvailableDerivatives_c14c1c09874639c8,
-                  mid_getInterpolationMethod_0090f7797e403f43,
-                  mid_getInterpolationSamples_f2f64475e4580546,
-                  mid_getMetadata_3ed6d67cff982ef3,
-                  mid_getReferenceFrame_c8fe21bcdac65bf6,
-                  mid_getStart_aaa854c403487cf3,
-                  mid_getStop_aaa854c403487cf3,
+                  mid_init$_2e00775434693e55,
+                  mid_getAngularCoordinates_2afa36052df4765d,
+                  mid_getAttitudeProvider_f95b60a986adb964,
+                  mid_getAttitudeStates_2afa36052df4765d,
+                  mid_getAvailableDerivatives_3d53ef1ca7ad5f8c,
+                  mid_getInterpolationMethod_11b109bd155ca898,
+                  mid_getInterpolationSamples_570ce0828f81a2c1,
+                  mid_getMetadata_003106faaf77d27d,
+                  mid_getReferenceFrame_b86f9f61d97a7244,
+                  mid_getStart_85703d13e302437e,
+                  mid_getStop_85703d13e302437e,
                   max_mid
                 };
 

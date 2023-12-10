@@ -3,27 +3,27 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace analysis {
+      namespace interpolation {
+        class UnivariateInterpolator;
+      }
+      namespace polynomials {
+        class PolynomialSplineFunction;
+      }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+  }
+}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
-    namespace analysis {
-      namespace polynomials {
-        class PolynomialSplineFunction;
-      }
-      namespace interpolation {
-        class UnivariateInterpolator;
-      }
-    }
   }
 }
 template<class T> class JArray;
@@ -36,12 +36,12 @@ namespace org {
         class LoessInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_init$_18b1ce6f78e2ded3,
-            mid_init$_4de8786c851b2321,
-            mid_interpolate_d587810b458fa2cb,
-            mid_smooth_0f29b7d9f77b462e,
-            mid_smooth_6a01665d7abd00ff,
+            mid_init$_0fa09c18fee449d5,
+            mid_init$_75c2da74a5a59fda,
+            mid_init$_98483f586918b5b8,
+            mid_interpolate_3eacf1659c4c06b1,
+            mid_smooth_96bbba26ca51c0d1,
+            mid_smooth_b3ff9f9f04cc80d3,
             max_mid
           };
 

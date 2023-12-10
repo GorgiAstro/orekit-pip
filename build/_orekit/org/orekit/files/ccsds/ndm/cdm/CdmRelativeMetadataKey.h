@@ -9,15 +9,15 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace cdm {
-            class CdmRelativeMetadataKey;
             class CdmRelativeMetadata;
+            class CdmRelativeMetadataKey;
           }
         }
         namespace utils {
-          class ContextBinding;
           namespace lexical {
             class ParseToken;
           }
+          class ContextBinding;
         }
       }
     }
@@ -41,9 +41,9 @@ namespace org {
             class CdmRelativeMetadataKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_0997e2450130d6bf,
-                mid_valueOf_f6ddd44e7fb4759f,
-                mid_values_6b57c9c9cc810644,
+                mid_process_782a6103009bbc73,
+                mid_valueOf_cd70eed78d98625e,
+                mid_values_d82f415f166f6072,
                 max_mid
               };
 

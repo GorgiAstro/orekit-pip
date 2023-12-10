@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace attitudes {
-      class AttitudeProvider;
-    }
     namespace propagation {
       class SpacecraftState;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
     }
   }
 }
@@ -27,7 +27,7 @@ namespace org {
       class AttitudesSequence$SwitchHandler : public ::java::lang::Object {
        public:
         enum {
-          mid_switchOccurred_8a05bbdb2856b4ec,
+          mid_switchOccurred_0bf4342ddf7e9645,
           max_mid
         };
 

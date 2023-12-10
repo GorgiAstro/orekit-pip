@@ -31,7 +31,7 @@ namespace org {
         class FieldEnablingPredicate : public ::java::lang::Object {
          public:
           enum {
-            mid_eventIsEnabled_59813d9212bb9b66,
+            mid_eventIsEnabled_0d65b7645fead4e2,
             max_mid
           };
 

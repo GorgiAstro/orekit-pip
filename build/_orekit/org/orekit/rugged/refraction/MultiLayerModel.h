@@ -6,15 +6,15 @@
 namespace org {
   namespace orekit {
     namespace rugged {
-      namespace refraction {
-        class ConstantRefractionLayer;
-      }
       namespace utils {
         class ExtendedEllipsoid;
         class NormalizedGeodeticPoint;
       }
       namespace intersection {
         class IntersectionAlgorithm;
+      }
+      namespace refraction {
+        class ConstantRefractionLayer;
       }
     }
   }
@@ -46,9 +46,9 @@ namespace org {
         class MultiLayerModel : public ::org::orekit::rugged::refraction::AtmosphericRefraction {
          public:
           enum {
-            mid_init$_de42b33da926dabf,
-            mid_init$_e169caa02a18ba2b,
-            mid_applyCorrection_af1abae4bdd3a766,
+            mid_init$_323cca21b3806954,
+            mid_init$_3e979f14515f6324,
+            mid_applyCorrection_a813ead3ffa4bffb,
             max_mid
           };
 

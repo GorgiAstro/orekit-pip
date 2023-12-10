@@ -3,25 +3,17 @@
 
 #include "org/hipparchus/stat/descriptive/AbstractUnivariateStatistic.h"
 
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace stat {
-      namespace ranking {
-        class NaNStrategy;
-      }
       namespace descriptive {
         namespace rank {
           class Percentile$EstimationType;
           class Median;
         }
+      }
+      namespace ranking {
+        class NaNStrategy;
       }
     }
     namespace util {
@@ -30,6 +22,14 @@ namespace org {
     namespace exception {
       class MathIllegalArgumentException;
     }
+  }
+}
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -43,15 +43,15 @@ namespace org {
           class Median : public ::org::hipparchus::stat::descriptive::AbstractUnivariateStatistic {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_copy_6e02f003a6bf1eec,
-              mid_evaluate_0a7ff474793a505a,
-              mid_getEstimationType_0c09ecaa3168cf74,
-              mid_getKthSelector_485854411e6d0542,
-              mid_getNaNStrategy_9a708dd74e04e9b8,
-              mid_withEstimationType_87cec76cda470bc9,
-              mid_withKthSelector_220f438871b85648,
-              mid_withNaNStrategy_14015af1579bb7e6,
+              mid_init$_0fa09c18fee449d5,
+              mid_copy_36bb62a49d7ab711,
+              mid_evaluate_556bede10daac330,
+              mid_getEstimationType_ca8426dd6c9a49d0,
+              mid_getKthSelector_f697e2e90a72747d,
+              mid_getNaNStrategy_884e0da06e21afce,
+              mid_withEstimationType_d01bcc37271b909f,
+              mid_withKthSelector_b70e5e7236ae1b3c,
+              mid_withNaNStrategy_f18b8dbf01717f4c,
               max_mid
             };
 

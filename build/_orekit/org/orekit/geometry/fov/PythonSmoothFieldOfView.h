@@ -3,13 +3,14 @@
 
 #include "org/orekit/geometry/fov/SmoothFieldOfView.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace events {
+        class VisibilityTrigger;
+      }
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -19,12 +20,11 @@ namespace org {
       }
     }
   }
-  namespace orekit {
-    namespace propagation {
-      namespace events {
-        class VisibilityTrigger;
-      }
-    }
+}
+namespace java {
+  namespace lang {
+    class Class;
+    class Throwable;
   }
 }
 template<class T> class JArray;
@@ -37,14 +37,14 @@ namespace org {
         class PythonSmoothFieldOfView : public ::org::orekit::geometry::fov::SmoothFieldOfView {
          public:
           enum {
-            mid_init$_7b3ba1964c11031c,
-            mid_directionAt_5f993a721a1d8c59,
-            mid_finalize_7ae3461a92a43152,
-            mid_offsetFromBoundary_9e70aa9759fb6e3e,
-            mid_projectToBoundary_afd63a09f6d01e4c,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
+            mid_init$_5da06482a46416aa,
+            mid_directionAt_9137bba253a33d9c,
+            mid_finalize_0fa09c18fee449d5,
+            mid_offsetFromBoundary_92bc6ba59ebf6937,
+            mid_projectToBoundary_d0fe714ef34714f7,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
             max_mid
           };
 

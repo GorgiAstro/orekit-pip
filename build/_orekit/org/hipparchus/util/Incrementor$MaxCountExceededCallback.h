@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalStateException;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,7 +24,7 @@ namespace org {
       class Incrementor$MaxCountExceededCallback : public ::java::lang::Object {
        public:
         enum {
-          mid_trigger_0a2a1ac2721c0336,
+          mid_trigger_99803b0791f320ff,
           max_mid
         };
 

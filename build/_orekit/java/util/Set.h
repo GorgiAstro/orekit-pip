@@ -6,8 +6,8 @@
 namespace java {
   namespace util {
     class Iterator;
-    class Set;
     class Spliterator;
+    class Set;
   }
   namespace lang {
     class Class;
@@ -22,35 +22,35 @@ namespace java {
     class Set : public ::java::util::Collection {
      public:
       enum {
-        mid_add_229c87223f486349,
-        mid_addAll_d88dbdb69255b770,
-        mid_clear_7ae3461a92a43152,
-        mid_contains_229c87223f486349,
-        mid_containsAll_d88dbdb69255b770,
-        mid_copyOf_14ed8684ec2be5b6,
-        mid_equals_229c87223f486349,
-        mid_hashCode_f2f64475e4580546,
-        mid_isEmpty_e470b6d9e0d979db,
-        mid_iterator_035c6167e6569aac,
-        mid_of_e9e1a6780fe94297,
-        mid_of_a448a5640f4dae04,
-        mid_of_161cf4838fdab35b,
-        mid_of_b80a3b2c26ae5036,
-        mid_of_9814c12f9c3c3e02,
-        mid_of_6ce84add5c98d9e4,
-        mid_of_634e7fd3a30c4709,
-        mid_of_f7a0cbc7ff4dca4b,
-        mid_of_81bd569de7e9f0be,
-        mid_of_cad2004cb84dd193,
-        mid_of_a42288531466f86b,
-        mid_of_7c523e7b0bbcfc68,
-        mid_remove_229c87223f486349,
-        mid_removeAll_d88dbdb69255b770,
-        mid_retainAll_d88dbdb69255b770,
-        mid_size_f2f64475e4580546,
-        mid_spliterator_df0341cda53d4d48,
-        mid_toArray_e81d7907eea7e008,
-        mid_toArray_66041b51ef6ee21d,
+        mid_add_65c7d273e80d497a,
+        mid_addAll_17e918edc999b3c7,
+        mid_clear_0fa09c18fee449d5,
+        mid_contains_65c7d273e80d497a,
+        mid_containsAll_17e918edc999b3c7,
+        mid_copyOf_5c4ad34ca62a4473,
+        mid_equals_65c7d273e80d497a,
+        mid_hashCode_570ce0828f81a2c1,
+        mid_isEmpty_b108b35ef48e27bd,
+        mid_iterator_4d23511a9f0db098,
+        mid_of_015730311a5bacdc,
+        mid_of_ef1acae2e135f3ac,
+        mid_of_9fef958b6aa7109a,
+        mid_of_cc78ac2bf2fba2d5,
+        mid_of_43edc07cc8814e40,
+        mid_of_9f4ba345a8b168dd,
+        mid_of_599e2df70038f6b9,
+        mid_of_42ae1bc4873ed18b,
+        mid_of_8dce9684123af9c9,
+        mid_of_f875e11a49a99a44,
+        mid_of_a641377206d05700,
+        mid_of_2b1fd661d980d771,
+        mid_remove_65c7d273e80d497a,
+        mid_removeAll_17e918edc999b3c7,
+        mid_retainAll_17e918edc999b3c7,
+        mid_size_570ce0828f81a2c1,
+        mid_spliterator_ef1070394b413a84,
+        mid_toArray_b93c730013ce64c6,
+        mid_toArray_72bb572e6638b43f,
         max_mid
       };
 

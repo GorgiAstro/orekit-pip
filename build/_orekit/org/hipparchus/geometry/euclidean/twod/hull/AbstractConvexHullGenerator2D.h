@@ -3,30 +3,30 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class MathIllegalStateException;
+    }
+    namespace geometry {
+      namespace euclidean {
+        namespace twod {
+          namespace hull {
+            class ConvexHullGenerator2D;
+            class ConvexHull2D;
+          }
+          class Vector2D;
+        }
+      }
+    }
+  }
+}
 namespace java {
   namespace util {
     class Collection;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace twod {
-          class Vector2D;
-          namespace hull {
-            class ConvexHullGenerator2D;
-            class ConvexHull2D;
-          }
-        }
-      }
-    }
-    namespace exception {
-      class MathIllegalStateException;
-    }
   }
 }
 template<class T> class JArray;
@@ -41,10 +41,10 @@ namespace org {
             class AbstractConvexHullGenerator2D : public ::java::lang::Object {
              public:
               enum {
-                mid_generate_94066d174e88779f,
-                mid_getTolerance_456d9a2f64d6b28d,
-                mid_isIncludeCollinearPoints_e470b6d9e0d979db,
-                mid_findHullVertices_5c0bbab57d449f37,
+                mid_generate_031b48e42873ea77,
+                mid_getTolerance_dff5885c2c873297,
+                mid_isIncludeCollinearPoints_b108b35ef48e27bd,
+                mid_findHullVertices_e6702ab1f73fd997,
                 max_mid
               };
 

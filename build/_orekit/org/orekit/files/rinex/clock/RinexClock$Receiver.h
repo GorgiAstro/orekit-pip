@@ -20,12 +20,12 @@ namespace org {
           class RinexClock$Receiver : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_e988acb14b88b552,
-              mid_getDesignator_0090f7797e403f43,
-              mid_getReceiverIdentifier_0090f7797e403f43,
-              mid_getX_456d9a2f64d6b28d,
-              mid_getY_456d9a2f64d6b28d,
-              mid_getZ_456d9a2f64d6b28d,
+              mid_init$_4831ccef11c12868,
+              mid_getDesignator_11b109bd155ca898,
+              mid_getReceiverIdentifier_11b109bd155ca898,
+              mid_getX_dff5885c2c873297,
+              mid_getY_dff5885c2c873297,
+              mid_getZ_dff5885c2c873297,
               max_mid
             };
 

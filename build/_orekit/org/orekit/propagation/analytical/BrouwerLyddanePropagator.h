@@ -13,12 +13,12 @@ namespace org {
         }
       }
     }
+    namespace utils {
+      class ParameterDriversProvider;
+      class ParameterDriver;
+    }
     namespace attitudes {
       class AttitudeProvider;
-    }
-    namespace utils {
-      class ParameterDriver;
-      class ParameterDriversProvider;
     }
     namespace orbits {
       class KeplerianOrbit;
@@ -52,37 +52,37 @@ namespace org {
         class BrouwerLyddanePropagator : public ::org::orekit::propagation::analytical::AbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_5eb36e8f2e4790b5,
-            mid_init$_fc8990643a59cc3a,
-            mid_init$_3ac8436b360cd5bb,
-            mid_init$_cdc9d14545e0c203,
-            mid_init$_02247cd530832bbc,
-            mid_init$_4eba2846f9577fdc,
-            mid_init$_696d039b06e7b14b,
-            mid_init$_9ea270337f95ff4c,
-            mid_init$_a214f2949187508c,
-            mid_init$_6fdccf30ac5ccd71,
-            mid_init$_e53f83b52f48b75e,
-            mid_init$_016d2092114ea672,
-            mid_init$_1445dac576226bc7,
-            mid_init$_844117abf3e4679d,
-            mid_computeMeanOrbit_0f0dcf93792b53ad,
-            mid_computeMeanOrbit_ac9aeda78f0e5de3,
-            mid_computeMeanOrbit_2364cc6d8503bfd9,
-            mid_getCk0_7cdc325af0834901,
-            mid_getM2_456d9a2f64d6b28d,
-            mid_getMu_456d9a2f64d6b28d,
-            mid_getParametersDrivers_a6156df500549a58,
-            mid_getReferenceRadius_456d9a2f64d6b28d,
-            mid_propagateOrbit_99e79dca79eef30e,
-            mid_resetInitialState_2b88003f931f70a7,
-            mid_resetInitialState_dfbbbfbf78c55942,
-            mid_resetInitialState_8db5913253ef6ad3,
-            mid_getMass_e912d21057defe63,
-            mid_resetIntermediateState_83d0edaa13a56f81,
-            mid_resetIntermediateState_9658cf3eaef14ef5,
-            mid_createHarvester_d3d4ea925a699046,
-            mid_getJacobiansColumnsNames_a6156df500549a58,
+            mid_init$_31607b718e7a1097,
+            mid_init$_a1b1c06f492959e4,
+            mid_init$_8646cc10dd33bbf2,
+            mid_init$_2c72174dffba1894,
+            mid_init$_f8b9250146f13e12,
+            mid_init$_252682d189d40f9c,
+            mid_init$_54e2c5d7b9423480,
+            mid_init$_20cb587487bfb507,
+            mid_init$_4afced4a8ff4bea6,
+            mid_init$_e47ae3c1fa8fb703,
+            mid_init$_54f20a766b03c649,
+            mid_init$_0a5ace5164997436,
+            mid_init$_97c1c2d9fb9540d2,
+            mid_init$_c47d0d0c5cbf47f4,
+            mid_computeMeanOrbit_246b62ce75e6ee7b,
+            mid_computeMeanOrbit_6de83e60186a683f,
+            mid_computeMeanOrbit_739ead9f7fc14c65,
+            mid_getCk0_60c7040667a7dc5c,
+            mid_getM2_dff5885c2c873297,
+            mid_getMu_dff5885c2c873297,
+            mid_getParametersDrivers_2afa36052df4765d,
+            mid_getReferenceRadius_dff5885c2c873297,
+            mid_propagateOrbit_ce31a304312e0d13,
+            mid_resetInitialState_0ee5c56004643a2e,
+            mid_resetInitialState_49bd3c28fa9b4521,
+            mid_resetInitialState_e810a1bf28643513,
+            mid_getMass_bf1d7732f1acb697,
+            mid_resetIntermediateState_33f4696e4edaa03c,
+            mid_resetIntermediateState_f44ee54963124581,
+            mid_getJacobiansColumnsNames_2afa36052df4765d,
+            mid_createHarvester_5cfd2a13971b74c7,
             max_mid
           };
 

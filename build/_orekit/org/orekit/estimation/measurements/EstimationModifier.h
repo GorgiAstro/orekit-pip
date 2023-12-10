@@ -28,8 +28,8 @@ namespace org {
         class EstimationModifier : public ::org::orekit::utils::ParameterDriversProvider {
          public:
           enum {
-            mid_modify_a5896dbcbe782924,
-            mid_modifyWithoutDerivatives_811f96960c94c1de,
+            mid_modify_e4935e9a55e01fd8,
+            mid_modifyWithoutDerivatives_d1815d998cba71e9,
             max_mid
           };
 

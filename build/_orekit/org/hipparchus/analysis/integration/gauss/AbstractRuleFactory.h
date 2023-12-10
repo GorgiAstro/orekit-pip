@@ -12,11 +12,11 @@ namespace org {
         }
       }
     }
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace util {
       class Pair;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -36,11 +36,11 @@ namespace org {
           class AbstractRuleFactory : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_getRule_086dd68d091255ed,
-              mid_computeRule_086dd68d091255ed,
-              mid_findRoots_3000edd95e7e9f28,
-              mid_enforceSymmetry_ebc26dcaf4761286,
+              mid_init$_0fa09c18fee449d5,
+              mid_getRule_e670405dd33862ee,
+              mid_computeRule_e670405dd33862ee,
+              mid_findRoots_5052ee4f5e957843,
+              mid_enforceSymmetry_fa9d415d19f69361,
               max_mid
             };
 

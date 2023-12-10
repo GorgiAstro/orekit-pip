@@ -7,16 +7,16 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace section {
-          class KvnStructureKey;
-        }
         namespace utils {
-          namespace parsing {
-            class AbstractConstituentParser;
-          }
           namespace lexical {
             class ParseToken;
           }
+          namespace parsing {
+            class AbstractConstituentParser;
+          }
+        }
+        namespace section {
+          class KvnStructureKey;
         }
       }
     }
@@ -40,9 +40,9 @@ namespace org {
           class KvnStructureKey : public ::java::lang::Enum {
            public:
             enum {
-              mid_process_6f09ff368ed52756,
-              mid_valueOf_e66b49010704c2ff,
-              mid_values_e650fa9e948e1781,
+              mid_process_f1d9f5026ab4c64c,
+              mid_valueOf_a5aab8ea9cfbd5b8,
+              mid_values_7bce4aca2e21099b,
               max_mid
             };
 

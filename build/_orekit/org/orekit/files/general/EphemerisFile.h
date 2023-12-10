@@ -3,15 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace general {
-        class EphemerisFile$SatelliteEphemeris;
-      }
-    }
-  }
-}
 namespace java {
   namespace lang {
     class String;
@@ -19,6 +10,15 @@ namespace java {
   }
   namespace util {
     class Map;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace general {
+        class EphemerisFile$SatelliteEphemeris;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -31,7 +31,7 @@ namespace org {
         class EphemerisFile : public ::java::lang::Object {
          public:
           enum {
-            mid_getSatellites_d6753b7055940a54,
+            mid_getSatellites_6f5a75ccd8c04465,
             max_mid
           };
 

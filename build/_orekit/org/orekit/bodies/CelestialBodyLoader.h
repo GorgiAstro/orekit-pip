@@ -25,7 +25,7 @@ namespace org {
       class CelestialBodyLoader : public ::java::lang::Object {
        public:
         enum {
-          mid_loadCelestialBody_29f199e59c05cc68,
+          mid_loadCelestialBody_68e48076ef831536,
           max_mid
         };
 

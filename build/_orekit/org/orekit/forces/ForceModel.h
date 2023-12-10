@@ -4,36 +4,36 @@
 #include "org/orekit/utils/ParameterDriversProvider.h"
 
 namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace numerical {
-        class FieldTimeDerivativesEquations;
-        class TimeDerivativesEquations;
-      }
-      namespace events {
-        class FieldEventDetector;
-        class EventDetector;
-        class EventDetectorsProvider;
-      }
-      class SpacecraftState;
-      class FieldSpacecraftState;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-  }
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
     class Field;
-    class CalculusFieldElement;
+  }
+  namespace orekit {
+    namespace propagation {
+      namespace events {
+        class EventDetector;
+        class FieldEventDetector;
+        class EventDetectorsProvider;
+      }
+      namespace numerical {
+        class FieldTimeDerivativesEquations;
+        class TimeDerivativesEquations;
+      }
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
   }
 }
 namespace java {
@@ -55,15 +55,15 @@ namespace org {
       class ForceModel : public ::org::orekit::utils::ParameterDriversProvider {
        public:
         enum {
-          mid_acceleration_00aba28d3abe9a8c,
-          mid_acceleration_78989e44b99f7cc2,
-          mid_addContribution_3ae28f2cc7cbb00b,
-          mid_addContribution_170c8a5902f676b2,
-          mid_dependsOnPositionOnly_e470b6d9e0d979db,
-          mid_getEventDetectors_a68a17dd093f796d,
-          mid_getFieldEventDetectors_1328ddb491531a35,
-          mid_init_3d13474d79f5e7bc,
-          mid_init_acdd8180a5dc1a8d,
+          mid_acceleration_8954761face5e1a7,
+          mid_acceleration_b42ac4b5bfb80fab,
+          mid_addContribution_5852b6ea0a71dcb4,
+          mid_addContribution_9d1574df69c5f1ff,
+          mid_dependsOnPositionOnly_b108b35ef48e27bd,
+          mid_getEventDetectors_20f6d2b462aaef4b,
+          mid_getFieldEventDetectors_361313cd1a9c693a,
+          mid_init_826b4eda94da4e78,
+          mid_init_8e8de2be1664674a,
           max_mid
         };
 

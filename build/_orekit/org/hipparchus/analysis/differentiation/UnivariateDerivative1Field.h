@@ -3,23 +3,23 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
-    class Field;
     namespace analysis {
       namespace differentiation {
         class UnivariateDerivative1Field;
         class UnivariateDerivative1;
       }
     }
+    class Field;
+  }
+}
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -32,12 +32,12 @@ namespace org {
         class UnivariateDerivative1Field : public ::java::lang::Object {
          public:
           enum {
-            mid_equals_229c87223f486349,
-            mid_getInstance_2f31d09ea5bf5b80,
-            mid_getOne_d8e02a4df001f4b7,
-            mid_getRuntimeClass_8f66acc08d2a174c,
-            mid_getZero_d8e02a4df001f4b7,
-            mid_hashCode_f2f64475e4580546,
+            mid_equals_65c7d273e80d497a,
+            mid_getInstance_4efec6a5aa4fd021,
+            mid_getOne_81b5d8fdb5d06385,
+            mid_getRuntimeClass_7c16c5008b34b3db,
+            mid_getZero_81b5d8fdb5d06385,
+            mid_hashCode_570ce0828f81a2c1,
             max_mid
           };
 

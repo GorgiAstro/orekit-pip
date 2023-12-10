@@ -3,12 +3,12 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
+  namespace hipparchus {
+    namespace ode {
+      class AbstractIntegrator;
+    }
+  }
   namespace orekit {
     namespace orbits {
       class Orbit;
@@ -20,10 +20,10 @@ namespace org {
       }
     }
   }
-  namespace hipparchus {
-    namespace ode {
-      class AbstractIntegrator;
-    }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -36,8 +36,8 @@ namespace org {
         class GillIntegratorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_77e0f9a1f260e2e5,
-            mid_buildIntegrator_501b0015ccc7d54e,
+            mid_init$_17db3a65980d3441,
+            mid_buildIntegrator_65049cf04139ef04,
             max_mid
           };
 

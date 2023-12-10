@@ -30,16 +30,16 @@ namespace org {
       class ParameterObserver : public ::java::lang::Object {
        public:
         enum {
-          mid_estimationTypeChanged_aa2456410c9edfed,
-          mid_maxValueChanged_8bad56a4adb01d6f,
-          mid_minValueChanged_8bad56a4adb01d6f,
-          mid_nameChanged_8306c9e30f20d9eb,
-          mid_referenceDateChanged_9d84e904439808dd,
-          mid_referenceValueChanged_8bad56a4adb01d6f,
-          mid_scaleChanged_8bad56a4adb01d6f,
-          mid_selectionChanged_aa2456410c9edfed,
-          mid_valueChanged_25a9530287ebc441,
-          mid_valueSpanMapChanged_dc11aff94465299a,
+          mid_estimationTypeChanged_c5eea8698b6de721,
+          mid_maxValueChanged_fc2ef790ea55778e,
+          mid_minValueChanged_fc2ef790ea55778e,
+          mid_nameChanged_e4f8d49c7ba0a1ff,
+          mid_referenceDateChanged_a6424e7ebf34e1db,
+          mid_referenceValueChanged_fc2ef790ea55778e,
+          mid_scaleChanged_fc2ef790ea55778e,
+          mid_selectionChanged_c5eea8698b6de721,
+          mid_valueChanged_add632ecd3f14e19,
+          mid_valueSpanMapChanged_8e4add4a2fbb55d9,
           max_mid
         };
 

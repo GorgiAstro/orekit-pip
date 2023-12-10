@@ -4,6 +4,13 @@
 #include "java/io/Writer.h"
 
 namespace java {
+  namespace io {
+    class UnsupportedEncodingException;
+    class FileNotFoundException;
+    class OutputStream;
+    class PrintWriter;
+    class File;
+  }
   namespace util {
     class Locale;
   }
@@ -12,13 +19,6 @@ namespace java {
     class Class;
     class Object;
     class String;
-  }
-  namespace io {
-    class OutputStream;
-    class PrintWriter;
-    class FileNotFoundException;
-    class File;
-    class UnsupportedEncodingException;
   }
 }
 template<class T> class JArray;
@@ -29,50 +29,50 @@ namespace java {
     class PrintWriter : public ::java::io::Writer {
      public:
       enum {
-        mid_init$_46e66c77c82c9a6b,
-        mid_init$_255f64cf1272816f,
-        mid_init$_645294b7123ff437,
-        mid_init$_e939c6558ae8d313,
-        mid_init$_94be9c6310e15013,
-        mid_init$_96073c87872b7a97,
-        mid_init$_50d10d496ad84231,
-        mid_init$_411e711b28768b62,
-        mid_append_004a5bd76bea8481,
-        mid_append_38d9518804582ecd,
-        mid_append_a56e4dafa3445fa2,
-        mid_checkError_e470b6d9e0d979db,
-        mid_close_7ae3461a92a43152,
-        mid_flush_7ae3461a92a43152,
-        mid_format_b6f08f464ed76c3b,
-        mid_format_3f2e19a6dabe53ae,
-        mid_print_819ed274952f967e,
-        mid_print_e939c6558ae8d313,
-        mid_print_50a2e0b139e80a58,
-        mid_print_be0046d7f7239695,
-        mid_print_77e0f9a1f260e2e5,
-        mid_print_ca234f4580d28ea3,
-        mid_print_0a2a1ac2721c0336,
-        mid_print_7ca0d9438822cb0b,
-        mid_print_fefb08975c10f0a1,
-        mid_printf_b6f08f464ed76c3b,
-        mid_printf_3f2e19a6dabe53ae,
-        mid_println_7ae3461a92a43152,
-        mid_println_819ed274952f967e,
-        mid_println_e939c6558ae8d313,
-        mid_println_50a2e0b139e80a58,
-        mid_println_be0046d7f7239695,
-        mid_println_77e0f9a1f260e2e5,
-        mid_println_ca234f4580d28ea3,
-        mid_println_0a2a1ac2721c0336,
-        mid_println_7ca0d9438822cb0b,
-        mid_println_fefb08975c10f0a1,
-        mid_write_819ed274952f967e,
-        mid_write_e939c6558ae8d313,
-        mid_write_0a2a1ac2721c0336,
-        mid_write_2df38be22737223f,
-        mid_write_10ca79ad48bfee14,
-        mid_setError_7ae3461a92a43152,
-        mid_clearError_7ae3461a92a43152,
+        mid_init$_0613af62f2ba5dba,
+        mid_init$_fd7cb6689cfa6eeb,
+        mid_init$_46e98d3f266d9b2f,
+        mid_init$_d0bc48d5b00dc40c,
+        mid_init$_94ced6352b9e37c8,
+        mid_init$_6a2001eff0605f71,
+        mid_init$_91fa247883002c58,
+        mid_init$_a295dc3cee02283d,
+        mid_append_4a7919589bf96cf5,
+        mid_append_25da441494026c24,
+        mid_append_8e17b09960d065a0,
+        mid_checkError_b108b35ef48e27bd,
+        mid_close_0fa09c18fee449d5,
+        mid_flush_0fa09c18fee449d5,
+        mid_format_46403640cc63e5d7,
+        mid_format_94bed11dedfa9845,
+        mid_print_3534e8e092c162a5,
+        mid_print_d0bc48d5b00dc40c,
+        mid_print_bd04c9335fb9e4cf,
+        mid_print_636c0bbb96cab723,
+        mid_print_17db3a65980d3441,
+        mid_print_f63147a1690942cc,
+        mid_print_99803b0791f320ff,
+        mid_print_2990946c992aafed,
+        mid_print_3a8e7649f31fdb20,
+        mid_printf_46403640cc63e5d7,
+        mid_printf_94bed11dedfa9845,
+        mid_println_0fa09c18fee449d5,
+        mid_println_3534e8e092c162a5,
+        mid_println_d0bc48d5b00dc40c,
+        mid_println_bd04c9335fb9e4cf,
+        mid_println_636c0bbb96cab723,
+        mid_println_17db3a65980d3441,
+        mid_println_f63147a1690942cc,
+        mid_println_99803b0791f320ff,
+        mid_println_2990946c992aafed,
+        mid_println_3a8e7649f31fdb20,
+        mid_write_3534e8e092c162a5,
+        mid_write_d0bc48d5b00dc40c,
+        mid_write_99803b0791f320ff,
+        mid_write_44aecef33af91018,
+        mid_write_04eb5531e9227c93,
+        mid_setError_0fa09c18fee449d5,
+        mid_clearError_0fa09c18fee449d5,
         max_mid
       };
 

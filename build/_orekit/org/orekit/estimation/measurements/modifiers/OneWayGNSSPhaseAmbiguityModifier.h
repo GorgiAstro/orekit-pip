@@ -9,10 +9,10 @@ namespace org {
       namespace measurements {
         class EstimatedMeasurement;
         class EstimatedMeasurementBase;
+        class EstimationModifier;
         namespace gnss {
           class OneWayGNSSPhase;
         }
-        class EstimationModifier;
       }
     }
     namespace utils {
@@ -39,10 +39,10 @@ namespace org {
           class OneWayGNSSPhaseAmbiguityModifier : public ::org::orekit::estimation::measurements::modifiers::AbstractAmbiguityModifier {
            public:
             enum {
-              mid_init$_987a5fb872043b12,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_modify_a5896dbcbe782924,
-              mid_modifyWithoutDerivatives_811f96960c94c1de,
+              mid_init$_bb79ca80d85d0a66,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_modify_e4935e9a55e01fd8,
+              mid_modifyWithoutDerivatives_d1815d998cba71e9,
               max_mid
             };
 

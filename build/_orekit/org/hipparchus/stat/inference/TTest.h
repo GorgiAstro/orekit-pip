@@ -6,9 +6,9 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
+      class MathIllegalStateException;
       class NullArgumentException;
       class MathIllegalArgumentException;
-      class MathIllegalStateException;
     }
     namespace stat {
       namespace descriptive {
@@ -32,34 +32,34 @@ namespace org {
         class TTest : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_homoscedasticT_1ce76fb6ff382da9,
-            mid_homoscedasticT_7e6cb2d20813e226,
-            mid_homoscedasticTTest_1ce76fb6ff382da9,
-            mid_homoscedasticTTest_7e6cb2d20813e226,
-            mid_homoscedasticTTest_c2fc7bc0a4bc40d1,
-            mid_pairedT_1ce76fb6ff382da9,
-            mid_pairedTTest_1ce76fb6ff382da9,
-            mid_pairedTTest_c2fc7bc0a4bc40d1,
-            mid_t_1ce76fb6ff382da9,
-            mid_t_618a40a0b95154fa,
-            mid_t_eac47427cc058468,
-            mid_t_7e6cb2d20813e226,
-            mid_tTest_1ce76fb6ff382da9,
-            mid_tTest_618a40a0b95154fa,
-            mid_tTest_eac47427cc058468,
-            mid_tTest_7e6cb2d20813e226,
-            mid_tTest_c2fc7bc0a4bc40d1,
-            mid_tTest_44e7d76275f3c148,
-            mid_tTest_290296050888289c,
-            mid_tTest_d1075db52bf9375e,
-            mid_t_88076de049bf2857,
-            mid_t_04175aacb25dae17,
-            mid_df_04175aacb25dae17,
-            mid_homoscedasticT_88076de049bf2857,
-            mid_tTest_04175aacb25dae17,
-            mid_tTest_88076de049bf2857,
-            mid_homoscedasticTTest_88076de049bf2857,
+            mid_init$_0fa09c18fee449d5,
+            mid_homoscedasticT_b561c6892e9976f8,
+            mid_homoscedasticT_a6a21e289ffe5810,
+            mid_homoscedasticTTest_b561c6892e9976f8,
+            mid_homoscedasticTTest_a6a21e289ffe5810,
+            mid_homoscedasticTTest_ed0fb6ee68c33cca,
+            mid_pairedT_b561c6892e9976f8,
+            mid_pairedTTest_b561c6892e9976f8,
+            mid_pairedTTest_ed0fb6ee68c33cca,
+            mid_t_b561c6892e9976f8,
+            mid_t_19285de97bbc7eea,
+            mid_t_0951dfc4a2f63f29,
+            mid_t_a6a21e289ffe5810,
+            mid_tTest_b561c6892e9976f8,
+            mid_tTest_19285de97bbc7eea,
+            mid_tTest_0951dfc4a2f63f29,
+            mid_tTest_a6a21e289ffe5810,
+            mid_tTest_ed0fb6ee68c33cca,
+            mid_tTest_97483ecb885b04db,
+            mid_tTest_d69003036bf27add,
+            mid_tTest_92d1c61945f36e5b,
+            mid_t_07e50dbdbc6e25b6,
+            mid_t_0f015b8be9d2dc40,
+            mid_df_0f015b8be9d2dc40,
+            mid_homoscedasticT_07e50dbdbc6e25b6,
+            mid_homoscedasticTTest_07e50dbdbc6e25b6,
+            mid_tTest_0f015b8be9d2dc40,
+            mid_tTest_07e50dbdbc6e25b6,
             max_mid
           };
 

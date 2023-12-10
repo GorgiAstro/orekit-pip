@@ -3,23 +3,23 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
+    class IllegalArgumentException;
+    class String;
+    class Comparable;
+  }
+}
 namespace org {
   namespace orekit {
     namespace time {
       class Month;
       class DateComponents;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Comparable;
-    class Class;
-    class IllegalArgumentException;
-    class String;
-  }
-  namespace io {
-    class Serializable;
   }
 }
 template<class T> class JArray;
@@ -31,26 +31,26 @@ namespace org {
       class DateComponents : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0a2a1ac2721c0336,
-          mid_init$_f258113202d4c30d,
-          mid_init$_8dbc1129a3c2557a,
-          mid_init$_2bb2179709f1d894,
-          mid_init$_c80ec2f7d8b5fe87,
-          mid_compareTo_6ebe4402e3a7e632,
-          mid_createFromWeekComponents_606eaea026b5af0b,
-          mid_equals_229c87223f486349,
-          mid_getCalendarWeek_f2f64475e4580546,
-          mid_getDay_f2f64475e4580546,
-          mid_getDayOfWeek_f2f64475e4580546,
-          mid_getDayOfYear_f2f64475e4580546,
-          mid_getJ2000Day_f2f64475e4580546,
-          mid_getMJD_f2f64475e4580546,
-          mid_getMonth_f2f64475e4580546,
-          mid_getMonthEnum_f0fe0217ceb36471,
-          mid_getYear_f2f64475e4580546,
-          mid_hashCode_f2f64475e4580546,
-          mid_parseDate_4d724b461e440432,
-          mid_toString_0090f7797e403f43,
+          mid_init$_99803b0791f320ff,
+          mid_init$_07bece3cd7a2ccd6,
+          mid_init$_6f37635c3285dbdf,
+          mid_init$_2981819d13ae2f57,
+          mid_init$_8336200ef3dde36b,
+          mid_compareTo_ae7b5ab7634ca960,
+          mid_createFromWeekComponents_e3e2a8ae3bc201ad,
+          mid_equals_65c7d273e80d497a,
+          mid_getCalendarWeek_570ce0828f81a2c1,
+          mid_getDay_570ce0828f81a2c1,
+          mid_getDayOfWeek_570ce0828f81a2c1,
+          mid_getDayOfYear_570ce0828f81a2c1,
+          mid_getJ2000Day_570ce0828f81a2c1,
+          mid_getMJD_570ce0828f81a2c1,
+          mid_getMonth_570ce0828f81a2c1,
+          mid_getMonthEnum_c6b6e6a1b9b6ecef,
+          mid_getYear_570ce0828f81a2c1,
+          mid_hashCode_570ce0828f81a2c1,
+          mid_parseDate_668d97c23df2044a,
+          mid_toString_11b109bd155ca898,
           max_mid
         };
 

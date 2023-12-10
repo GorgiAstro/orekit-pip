@@ -4,25 +4,25 @@
 #include "org/orekit/utils/AngularCoordinates.h"
 
 namespace org {
-  namespace orekit {
-    namespace time {
-      class TimeStamped;
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class PVCoordinates;
-      class TimeStampedAngularCoordinates;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
           class Rotation;
-          class Vector3D;
           class FieldRotation;
+          class Vector3D;
         }
       }
+    }
+  }
+  namespace orekit {
+    namespace utils {
+      class TimeStampedAngularCoordinates;
+      class PVCoordinates;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeStamped;
     }
   }
 }
@@ -40,15 +40,15 @@ namespace org {
       class TimeStampedAngularCoordinates : public ::org::orekit::utils::AngularCoordinates {
        public:
         enum {
-          mid_init$_4dd695ef7f847f99,
-          mid_init$_35ede516ab2a5b7c,
-          mid_init$_8b0e1234e87551c9,
-          mid_init$_80d87769fddea175,
-          mid_addOffset_40af0b84b03b166a,
-          mid_getDate_aaa854c403487cf3,
-          mid_revert_8b3d104eb3a71bfc,
-          mid_shiftedBy_161d918b0259e11d,
-          mid_subtractOffset_40af0b84b03b166a,
+          mid_init$_2b9eda08b3ec8dd7,
+          mid_init$_9ff2f3ca38e5cacd,
+          mid_init$_bc95563ddeee02cc,
+          mid_init$_d13df62481f4e58d,
+          mid_addOffset_fa2097760de32aee,
+          mid_getDate_85703d13e302437e,
+          mid_revert_b8bfd7046d8ee6f7,
+          mid_shiftedBy_577c57882f69ee57,
+          mid_subtractOffset_fa2097760de32aee,
           max_mid
         };
 

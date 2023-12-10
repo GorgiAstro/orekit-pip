@@ -3,30 +3,30 @@
 
 #include "org/orekit/propagation/FieldAbstractPropagator.h"
 
+namespace org {
+  namespace orekit {
+    namespace utils {
+      class ParameterDriversProvider;
+      class FieldPVCoordinatesProvider;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+      class FieldEphemerisGenerator;
+      namespace events {
+        class FieldEventDetector;
+      }
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+    }
+  }
+}
 namespace java {
   namespace util {
     class Collection;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace events {
-        class FieldEventDetector;
-      }
-      class FieldEphemerisGenerator;
-      class FieldSpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriversProvider;
-      class FieldPVCoordinatesProvider;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
   }
 }
 template<class T> class JArray;
@@ -39,17 +39,17 @@ namespace org {
         class FieldAbstractAnalyticalPropagator : public ::org::orekit::propagation::FieldAbstractPropagator {
          public:
           enum {
-            mid_addEventDetector_1843b26af41f9c8e,
-            mid_clearEventsDetectors_7ae3461a92a43152,
-            mid_getEphemerisGenerator_a9ea70419e870eb4,
-            mid_getEventsDetectors_cfcfd130f9013e3e,
-            mid_getPvProvider_d265659654cb169e,
-            mid_propagate_195e701ebc75aca3,
-            mid_acceptStep_e9cb6d3ab49cffdb,
-            mid_getMass_7bc0fd76ee915b72,
-            mid_resetIntermediateState_c76342d42407aa3d,
-            mid_propagateOrbit_edf76d94987be4ff,
-            mid_basicPropagate_85b5a3e9101d7c1f,
+            mid_addEventDetector_f929ebd2a84dbfe7,
+            mid_clearEventsDetectors_0fa09c18fee449d5,
+            mid_getEphemerisGenerator_54ac43f1e933cf20,
+            mid_getEventsDetectors_37528d110cff6b74,
+            mid_getPvProvider_d973c40fc0211a5b,
+            mid_propagate_fc770c29e3468de8,
+            mid_acceptStep_cd5c14894c08dcb4,
+            mid_propagateOrbit_3de5e0312fd3e848,
+            mid_getMass_2a5f05be83ff251d,
+            mid_resetIntermediateState_33f1c56ea7775d4e,
+            mid_basicPropagate_f6f1ea8aef3019eb,
             max_mid
           };
 

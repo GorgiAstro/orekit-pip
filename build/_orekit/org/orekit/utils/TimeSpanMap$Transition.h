@@ -10,8 +10,8 @@ namespace org {
       class AbsoluteDate;
     }
     namespace utils {
-      class TimeSpanMap$Transition;
       class TimeSpanMap$Span;
+      class TimeSpanMap$Transition;
     }
   }
 }
@@ -29,13 +29,13 @@ namespace org {
       class TimeSpanMap$Transition : public ::java::lang::Object {
        public:
         enum {
-          mid_getAfter_dfd7647d9110ac9f,
-          mid_getBefore_dfd7647d9110ac9f,
-          mid_getDate_aaa854c403487cf3,
-          mid_getSpanAfter_39a1e35b17737f60,
-          mid_getSpanBefore_39a1e35b17737f60,
-          mid_next_bfa1ec341cbef3d2,
-          mid_previous_bfa1ec341cbef3d2,
+          mid_getAfter_4d26fd885228c716,
+          mid_getBefore_4d26fd885228c716,
+          mid_getDate_85703d13e302437e,
+          mid_getSpanAfter_971209c2bf2033e7,
+          mid_getSpanBefore_971209c2bf2033e7,
+          mid_next_75c9888155918ff9,
+          mid_previous_75c9888155918ff9,
           max_mid
         };
 

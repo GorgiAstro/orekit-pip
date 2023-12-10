@@ -4,24 +4,24 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace propagation {
       namespace events {
-        class FieldAbstractDetector;
-        class FieldEventDetector;
         namespace handlers {
           class FieldEventHandler;
         }
         class FieldAdaptableInterval;
+        class FieldAbstractDetector;
+        class FieldEventDetector;
       }
       class FieldSpacecraftState;
     }
     namespace time {
       class FieldAbsoluteDate;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -39,19 +39,19 @@ namespace org {
         class FieldAbstractDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_g_cc79c2733879de35,
-            mid_getHandler_fa8b0a49dc8c921f,
-            mid_getMaxCheckInterval_a33ee6d38a1d69f9,
-            mid_getMaxIterationCount_f2f64475e4580546,
-            mid_getThreshold_e6d4d3215c30992a,
-            mid_init_acdd8180a5dc1a8d,
-            mid_isForward_e470b6d9e0d979db,
-            mid_withHandler_8b81204a9c6cddc3,
-            mid_withMaxCheck_921e1a2e2c178162,
-            mid_withMaxCheck_f911d43ae8e5d994,
-            mid_withMaxIter_449918ff3039d002,
-            mid_withThreshold_420337e6b660d34c,
-            mid_create_a461cc495f0e8159,
+            mid_g_41a008afe53da855,
+            mid_getHandler_48965f0f9fa2ddf9,
+            mid_getMaxCheckInterval_69f9ee3154bea730,
+            mid_getMaxIterationCount_570ce0828f81a2c1,
+            mid_getThreshold_eba8e72a22c984ac,
+            mid_init_8e8de2be1664674a,
+            mid_isForward_b108b35ef48e27bd,
+            mid_withHandler_588d9f7485c49043,
+            mid_withMaxCheck_921acf6bac04b9dd,
+            mid_withMaxCheck_aae90521b0d20054,
+            mid_withMaxIter_a99decc01f775036,
+            mid_withThreshold_2eeda93969d276ef,
+            mid_create_933932f56453be16,
             max_mid
           };
 

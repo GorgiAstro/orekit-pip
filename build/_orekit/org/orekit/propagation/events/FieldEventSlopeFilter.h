@@ -4,6 +4,9 @@
 #include "org/orekit/propagation/events/FieldAbstractDetector.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace propagation {
       namespace events {
@@ -15,9 +18,6 @@ namespace org {
     namespace time {
       class FieldAbsoluteDate;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -35,11 +35,11 @@ namespace org {
         class FieldEventSlopeFilter : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_5312591dbdb35876,
-            mid_g_cc79c2733879de35,
-            mid_getDetector_9afb3f6694da2222,
-            mid_init_acdd8180a5dc1a8d,
-            mid_create_cb91cc07e2d54452,
+            mid_init$_47727962149965b7,
+            mid_g_41a008afe53da855,
+            mid_getDetector_4fe06ecc019ea51d,
+            mid_init_8e8de2be1664674a,
+            mid_create_442fd2ba5cb06b9d,
             max_mid
           };
 

@@ -4,13 +4,13 @@
 #include "java/io/Reader.h"
 
 namespace java {
-  namespace io {
-    class IOException;
-  }
   namespace util {
     namespace stream {
       class Stream;
     }
+  }
+  namespace io {
+    class IOException;
   }
   namespace lang {
     class Class;
@@ -25,18 +25,18 @@ namespace java {
     class BufferedReader : public ::java::io::Reader {
      public:
       enum {
-        mid_init$_a1c6153fa427d8a7,
-        mid_init$_205448b9adc07b31,
-        mid_close_7ae3461a92a43152,
-        mid_lines_a68a17dd093f796d,
-        mid_mark_0a2a1ac2721c0336,
-        mid_markSupported_e470b6d9e0d979db,
-        mid_read_f2f64475e4580546,
-        mid_read_a7dcb595f3e6fbfc,
-        mid_readLine_0090f7797e403f43,
-        mid_ready_e470b6d9e0d979db,
-        mid_reset_7ae3461a92a43152,
-        mid_skip_955f7541fca701ab,
+        mid_init$_6bec8244898df009,
+        mid_init$_d4490f7274978073,
+        mid_close_0fa09c18fee449d5,
+        mid_lines_20f6d2b462aaef4b,
+        mid_mark_99803b0791f320ff,
+        mid_markSupported_b108b35ef48e27bd,
+        mid_read_570ce0828f81a2c1,
+        mid_read_e1525dbb996fb0b1,
+        mid_readLine_11b109bd155ca898,
+        mid_ready_b108b35ef48e27bd,
+        mid_reset_0fa09c18fee449d5,
+        mid_skip_02b241598e254a3f,
         max_mid
       };
 

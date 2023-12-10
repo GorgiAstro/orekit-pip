@@ -4,21 +4,21 @@
 #include "org/orekit/forces/maneuvers/trigger/AbstractManeuverTriggers.h"
 
 namespace org {
-  namespace hipparchus {
-    class Field;
-  }
   namespace orekit {
     namespace propagation {
       namespace events {
-        class FieldEventDetector;
         class AbstractDetector;
         class EventDetector;
+        class FieldEventDetector;
       }
       class SpacecraftState;
     }
     namespace time {
       class AbsoluteDate;
     }
+  }
+  namespace hipparchus {
+    class Field;
   }
 }
 namespace java {
@@ -42,14 +42,14 @@ namespace org {
           class StartStopEventsTrigger : public ::org::orekit::forces::maneuvers::trigger::AbstractManeuverTriggers {
            public:
             enum {
-              mid_getEventDetectors_a68a17dd093f796d,
-              mid_getFieldEventDetectors_1328ddb491531a35,
-              mid_getStartDetector_5f2d0fd4426cfe5c,
-              mid_getStopDetector_5f2d0fd4426cfe5c,
-              mid_init_3d13474d79f5e7bc,
-              mid_convertStartDetector_695049796b8b09bd,
-              mid_convertStopDetector_695049796b8b09bd,
-              mid_isFiringOnInitialState_795d7e54d4c58d83,
+              mid_getEventDetectors_20f6d2b462aaef4b,
+              mid_getFieldEventDetectors_361313cd1a9c693a,
+              mid_getStartDetector_900a1fd995808d92,
+              mid_getStopDetector_900a1fd995808d92,
+              mid_init_826b4eda94da4e78,
+              mid_isFiringOnInitialState_6501154ab0a356a8,
+              mid_convertStartDetector_904dccaacafa0db1,
+              mid_convertStopDetector_904dccaacafa0db1,
               max_mid
             };
 

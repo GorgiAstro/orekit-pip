@@ -3,12 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
@@ -17,6 +11,12 @@ namespace org {
     namespace propagation {
       class SpacecraftState;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,10 +28,10 @@ namespace org {
       class AdditionalStateProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getAdditionalState_137d7db4f3f987f7,
-          mid_getName_0090f7797e403f43,
-          mid_init_3d13474d79f5e7bc,
-          mid_yields_97634138963fb58a,
+          mid_getAdditionalState_cb44069ef445f941,
+          mid_getName_11b109bd155ca898,
+          mid_init_826b4eda94da4e78,
+          mid_yields_680f8463a473c3cb,
           max_mid
         };
 

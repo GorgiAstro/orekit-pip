@@ -7,9 +7,9 @@ namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
-        class EventEnablingPredicateFilter;
         class EnablingPredicate;
         class EventDetector;
+        class EventEnablingPredicateFilter;
       }
       class SpacecraftState;
     }
@@ -33,11 +33,11 @@ namespace org {
         class EventEnablingPredicateFilter : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_cac06a4b7cd10575,
-            mid_g_66a2f071e6ed0c06,
-            mid_getDetector_27b528e7858202ed,
-            mid_init_3d13474d79f5e7bc,
-            mid_create_69a590f9f8d3b5d0,
+            mid_init$_baf3aee712863946,
+            mid_g_432f3d328c15ec82,
+            mid_getDetector_d73bb985ffde4156,
+            mid_init_826b4eda94da4e78,
+            mid_create_575064c8dc323dd8,
             max_mid
           };
 

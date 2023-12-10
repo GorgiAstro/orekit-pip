@@ -5,16 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
     namespace data {
       class DataContext;
     }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
     namespace propagation {
+      namespace numerical {
+        class GLONASSNumericalPropagator;
+        class GLONASSNumericalPropagatorBuilder;
+      }
       namespace analytical {
         namespace gnss {
           namespace data {
@@ -22,10 +20,12 @@ namespace org {
           }
         }
       }
-      namespace numerical {
-        class GLONASSNumericalPropagator;
-        class GLONASSNumericalPropagatorBuilder;
-      }
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
     }
   }
   namespace hipparchus {
@@ -51,12 +51,12 @@ namespace org {
         class GLONASSNumericalPropagatorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_fda51b74477ee74c,
-            mid_init$_8dfdeeba52e3e344,
-            mid_attitudeProvider_056a33b5e9982ba4,
-            mid_build_ac7532e841088313,
-            mid_eci_efe7e4850252d670,
-            mid_mass_2482227c0cdf1750,
+            mid_init$_b497ba6a57c1bea6,
+            mid_init$_5ac92562e210e61f,
+            mid_attitudeProvider_c29034d29782ca95,
+            mid_build_38606dad37802ca8,
+            mid_eci_5967e5ad557b9333,
+            mid_mass_fd7ec11afcb405eb,
             max_mid
           };
 

@@ -3,6 +3,27 @@
 
 #include "org/orekit/forces/maneuvers/propulsion/AbstractConstantThrustPropulsionModel.h"
 
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+  }
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,27 +31,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-    class CalculusFieldElement;
-  }
-  namespace orekit {
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
   }
 }
 template<class T> class JArray;
@@ -44,16 +44,16 @@ namespace org {
           class ScaledConstantThrustPropulsionModel : public ::org::orekit::forces::maneuvers::propulsion::AbstractConstantThrustPropulsionModel {
            public:
             enum {
-              mid_init$_0f1efbd8efdc5b6d,
-              mid_getFlowRate_456d9a2f64d6b28d,
-              mid_getFlowRate_f05cb8c6dfd5e0b9,
-              mid_getFlowRate_05c598bf3375e090,
-              mid_getFlowRate_e912d21057defe63,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_getThrustVector_17a952530a808943,
-              mid_getThrustVector_0afb6e76c9566061,
-              mid_getThrustVector_31ec2b6903b76c9e,
-              mid_getThrustVector_71c51b45829333ce,
+              mid_init$_06e1ed88b8b36bf6,
+              mid_getFlowRate_dff5885c2c873297,
+              mid_getFlowRate_9dc1ec0bcc0a9a29,
+              mid_getFlowRate_f2dc4f0d2f87d390,
+              mid_getFlowRate_bf1d7732f1acb697,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_getThrustVector_d52645e0d4c07563,
+              mid_getThrustVector_36619a55dd67cb97,
+              mid_getThrustVector_3cf6594f36d3d60d,
+              mid_getThrustVector_24461752d0eea1e3,
               max_mid
             };
 

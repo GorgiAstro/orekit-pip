@@ -5,20 +5,20 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class TopocentricFrame;
-    }
     namespace propagation {
-      class SpacecraftState;
       namespace events {
         class GroundAtNightDetector;
       }
+      class SpacecraftState;
     }
-    namespace models {
-      class AtmosphericRefractionModel;
+    namespace frames {
+      class TopocentricFrame;
     }
     namespace utils {
       class PVCoordinatesProvider;
+    }
+    namespace models {
+      class AtmosphericRefractionModel;
     }
   }
 }
@@ -37,9 +37,9 @@ namespace org {
         class GroundAtNightDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_575d478a4b5821ba,
-            mid_g_66a2f071e6ed0c06,
-            mid_create_2d23008c7e50057b,
+            mid_init$_ebc791d379a84ca4,
+            mid_g_432f3d328c15ec82,
+            mid_create_3044864f6b67c6be,
             max_mid
           };
 

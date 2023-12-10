@@ -25,9 +25,9 @@ namespace org {
       class MaxIter : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0a2a1ac2721c0336,
-          mid_getMaxIter_f2f64475e4580546,
-          mid_unlimited_e7a0d71697a76da2,
+          mid_init$_99803b0791f320ff,
+          mid_getMaxIter_570ce0828f81a2c1,
+          mid_unlimited_e180e63eb968de6e,
           max_mid
         };
 

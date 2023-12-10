@@ -28,9 +28,9 @@ namespace org {
         class ODEStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_finish_100c57fd45963f6d,
-            mid_handleStep_7f7ea329b6669cd2,
-            mid_init_85808f3d6374b436,
+            mid_finish_250c80d95e429c01,
+            mid_handleStep_8c00288d760ba078,
+            mid_init_5aaadc62bce8a394,
             max_mid
           };
 

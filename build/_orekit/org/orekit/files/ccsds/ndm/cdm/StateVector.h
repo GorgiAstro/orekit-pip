@@ -3,6 +3,11 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -12,11 +17,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,16 +31,16 @@ namespace org {
             class StateVector : public ::org::orekit::files::ccsds::section::CommentsContainer {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_getPositionVector_17a952530a808943,
-                mid_getVelocityVector_17a952530a808943,
-                mid_setX_77e0f9a1f260e2e5,
-                mid_setXdot_77e0f9a1f260e2e5,
-                mid_setY_77e0f9a1f260e2e5,
-                mid_setYdot_77e0f9a1f260e2e5,
-                mid_setZ_77e0f9a1f260e2e5,
-                mid_setZdot_77e0f9a1f260e2e5,
-                mid_validate_77e0f9a1f260e2e5,
+                mid_init$_0fa09c18fee449d5,
+                mid_getPositionVector_d52645e0d4c07563,
+                mid_getVelocityVector_d52645e0d4c07563,
+                mid_setX_17db3a65980d3441,
+                mid_setXdot_17db3a65980d3441,
+                mid_setY_17db3a65980d3441,
+                mid_setYdot_17db3a65980d3441,
+                mid_setZ_17db3a65980d3441,
+                mid_setZdot_17db3a65980d3441,
+                mid_validate_17db3a65980d3441,
                 max_mid
               };
 

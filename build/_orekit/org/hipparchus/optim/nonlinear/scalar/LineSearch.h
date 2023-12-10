@@ -3,23 +3,23 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace optim {
+      namespace univariate {
+        class UnivariatePointValuePair;
+      }
       namespace nonlinear {
         namespace scalar {
           class MultivariateOptimizer;
         }
       }
-      namespace univariate {
-        class UnivariatePointValuePair;
-      }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -33,8 +33,8 @@ namespace org {
           class LineSearch : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_f6cb361db3026531,
-              mid_search_406006cd5debc153,
+              mid_init$_4260ebfc000f3b8b,
+              mid_search_4e3c679d97d98a62,
               max_mid
             };
 

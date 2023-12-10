@@ -21,10 +21,10 @@ namespace org {
               class HansenZonalLinear : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_8dbc1129a3c2557a,
-                  mid_computeInitValues_77e0f9a1f260e2e5,
-                  mid_getDerivative_31332242d1624d2c,
-                  mid_getValue_31332242d1624d2c,
+                  mid_init$_6f37635c3285dbdf,
+                  mid_computeInitValues_17db3a65980d3441,
+                  mid_getDerivative_60d7624725a52590,
+                  mid_getValue_60d7624725a52590,
                   max_mid
                 };
 

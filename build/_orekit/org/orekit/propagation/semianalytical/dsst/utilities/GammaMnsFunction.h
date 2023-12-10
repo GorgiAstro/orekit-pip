@@ -20,9 +20,9 @@ namespace org {
             class GammaMnsFunction : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_245a372f955cf5c9,
-                mid_getDerivative_17d75a1004cd0f67,
-                mid_getValue_17d75a1004cd0f67,
+                mid_init$_22c7346e56e9f942,
+                mid_getDerivative_3d407e6a8cf9e8ca,
+                mid_getValue_3d407e6a8cf9e8ca,
                 max_mid
               };
 

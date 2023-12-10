@@ -3,32 +3,32 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace ccsds {
+        namespace section {
+          class Data;
+        }
+        namespace ndm {
+          namespace odm {
+            class CartesianCovariance;
+          }
+        }
+      }
+    }
+    namespace utils {
+      class CartesianDerivativesFilter;
+      class TimeStampedPVCoordinates;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace utils {
-      class CartesianDerivativesFilter;
-      class TimeStampedPVCoordinates;
-    }
-    namespace files {
-      namespace ccsds {
-        namespace ndm {
-          namespace odm {
-            class CartesianCovariance;
-          }
-        }
-        namespace section {
-          class Data;
-        }
-      }
-    }
   }
 }
 template<class T> class JArray;
@@ -44,13 +44,13 @@ namespace org {
               class OemData : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_7ae3461a92a43152,
-                  mid_addCovarianceMatrix_de787bc8e28948b1,
-                  mid_addData_6bdbaef092d674eb,
-                  mid_getAvailableDerivatives_237181d932324188,
-                  mid_getCoordinates_a6156df500549a58,
-                  mid_getCovarianceMatrices_a6156df500549a58,
-                  mid_getEphemeridesDataLines_a6156df500549a58,
+                  mid_init$_0fa09c18fee449d5,
+                  mid_addCovarianceMatrix_2ffc54e70be390a1,
+                  mid_addData_edd0506cee437c86,
+                  mid_getAvailableDerivatives_16e9a7b5414faf2d,
+                  mid_getCoordinates_2afa36052df4765d,
+                  mid_getCovarianceMatrices_2afa36052df4765d,
+                  mid_getEphemeridesDataLines_2afa36052df4765d,
                   max_mid
                 };
 

@@ -3,26 +3,26 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace time {
-      class TimeStamped;
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class TimeStampedCache;
-    }
-  }
-}
 namespace java {
-  namespace lang {
-    class Throwable;
-    class IllegalStateException;
-    class Class;
-  }
   namespace util {
     namespace stream {
       class Stream;
+    }
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
+    class IllegalStateException;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+      class TimeStamped;
+    }
+    namespace utils {
+      class TimeStampedCache;
     }
   }
 }
@@ -35,16 +35,16 @@ namespace org {
       class PythonTimeStampedCache : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_finalize_7ae3461a92a43152,
-          mid_getEarliest_b6273cee359d7146,
-          mid_getLatest_b6273cee359d7146,
-          mid_getMaxNeighborsSize_f2f64475e4580546,
-          mid_getNeighbors_b6c1d562b013fefd,
-          mid_getNeighbors_1f145bd0decc1d0c,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
+          mid_init$_0fa09c18fee449d5,
+          mid_finalize_0fa09c18fee449d5,
+          mid_getEarliest_c2a1e08c7d64b02c,
+          mid_getLatest_c2a1e08c7d64b02c,
+          mid_getMaxNeighborsSize_570ce0828f81a2c1,
+          mid_getNeighbors_52c888e7e44261e4,
+          mid_getNeighbors_a067290de6165283,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
           max_mid
         };
 

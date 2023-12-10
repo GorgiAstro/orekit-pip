@@ -6,17 +6,17 @@
 namespace org {
   namespace orekit {
     namespace propagation {
-      class MatricesHarvester;
       class StateCovariance;
       class AdditionalStateProvider;
+      class MatricesHarvester;
       class SpacecraftState;
-    }
-    namespace frames {
-      class Frame;
     }
     namespace orbits {
       class PositionAngleType;
       class OrbitType;
+    }
+    namespace frames {
+      class Frame;
     }
     namespace time {
       class AbsoluteDate;
@@ -38,15 +38,15 @@ namespace org {
       class StateCovarianceMatrixProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_5bf85a5a232e407d,
-          mid_getAdditionalState_137d7db4f3f987f7,
-          mid_getCovarianceOrbitType_63ea5cd020bf7bf1,
-          mid_getName_0090f7797e403f43,
-          mid_getStateCovariance_3e27c3cac49b2604,
-          mid_getStateCovariance_12ee03a9343d9d5c,
-          mid_getStateCovariance_24d7aac134a336b8,
-          mid_init_3d13474d79f5e7bc,
-          mid_yields_97634138963fb58a,
+          mid_init$_1678ff5367b5b9b3,
+          mid_getAdditionalState_cb44069ef445f941,
+          mid_getCovarianceOrbitType_e29360d311dc0e20,
+          mid_getName_11b109bd155ca898,
+          mid_getStateCovariance_a4d66b80c9e4a0a7,
+          mid_getStateCovariance_ef02444df5934a90,
+          mid_getStateCovariance_5d8d0cb86789b4bf,
+          mid_init_826b4eda94da4e78,
+          mid_yields_680f8463a473c3cb,
           max_mid
         };
 

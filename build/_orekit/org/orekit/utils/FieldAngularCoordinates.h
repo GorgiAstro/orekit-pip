@@ -4,28 +4,8 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace time {
-      class FieldTimeShiftable;
-    }
-    namespace utils {
-      class FieldAngularCoordinates;
-      class TimeStampedFieldPVCoordinates;
-      class PVCoordinates;
-      class TimeStampedPVCoordinates;
-      class AngularCoordinates;
-      class FieldPVCoordinates;
-    }
-  }
   namespace hipparchus {
-    namespace analysis {
-      namespace differentiation {
-        class FieldUnivariateDerivative1;
-        class FieldDerivativeStructure;
-        class FieldUnivariateDerivative2;
-      }
-    }
-    class Field;
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -34,7 +14,27 @@ namespace org {
         }
       }
     }
-    class CalculusFieldElement;
+    namespace analysis {
+      namespace differentiation {
+        class FieldUnivariateDerivative2;
+        class FieldUnivariateDerivative1;
+        class FieldDerivativeStructure;
+      }
+    }
+    class Field;
+  }
+  namespace orekit {
+    namespace utils {
+      class AngularCoordinates;
+      class PVCoordinates;
+      class FieldPVCoordinates;
+      class TimeStampedPVCoordinates;
+      class TimeStampedFieldPVCoordinates;
+      class FieldAngularCoordinates;
+    }
+    namespace time {
+      class FieldTimeShiftable;
+    }
   }
 }
 namespace java {
@@ -51,33 +51,33 @@ namespace org {
       class FieldAngularCoordinates : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_f8f94b8019a86187,
-          mid_init$_66871659c3e0bfb2,
-          mid_init$_3c4f2f18d0303b84,
-          mid_init$_6ac368b443d4f180,
-          mid_init$_561a148bb3fca15e,
-          mid_addOffset_4bfc5bd74ac720b5,
-          mid_applyTo_dc7eea29a4d4ad51,
-          mid_applyTo_e42117f6acaa0604,
-          mid_applyTo_32f08c76ddea4935,
-          mid_applyTo_bdfc1809fc8a7def,
-          mid_createFromModifiedRodrigues_12e5bbdb204422f8,
-          mid_estimateRate_0c5dd53b4f41dc79,
-          mid_estimateRate_0f1070a3f1d3a0b3,
-          mid_getIdentity_baf57d554bbf8cbc,
-          mid_getModifiedRodrigues_150723b2a6519ce9,
-          mid_getRotation_ac4489fdef1c3aef,
-          mid_getRotationAcceleration_5791f80683b5227e,
-          mid_getRotationRate_5791f80683b5227e,
-          mid_revert_60e0de9a41eb35da,
-          mid_rotationShiftedBy_d07ea2a19a5215cb,
-          mid_shiftedBy_5a1bf28e9397fdaa,
-          mid_shiftedBy_c0afe8dc9dafe168,
-          mid_subtractOffset_4bfc5bd74ac720b5,
-          mid_toAngularCoordinates_eb0542756098e24f,
-          mid_toDerivativeStructureRotation_4293e15d24113072,
-          mid_toUnivariateDerivative1Rotation_ac4489fdef1c3aef,
-          mid_toUnivariateDerivative2Rotation_ac4489fdef1c3aef,
+          mid_init$_36678dbdedc42376,
+          mid_init$_d0f1c83862c61b8e,
+          mid_init$_d0be30050404b9d7,
+          mid_init$_6f9d9a409c6b64c9,
+          mid_init$_6c82494359f1e442,
+          mid_addOffset_5c4217e0473c8587,
+          mid_applyTo_2c604bfeb0a28a2f,
+          mid_applyTo_554e30441a4431d6,
+          mid_applyTo_f76646e67e6a0632,
+          mid_applyTo_ddd20dd2dd77e82a,
+          mid_createFromModifiedRodrigues_b6da44a362005f7f,
+          mid_estimateRate_eca05ede80447dac,
+          mid_estimateRate_fea02aafbdef9ea8,
+          mid_getIdentity_527880ef18d4c545,
+          mid_getModifiedRodrigues_cd67b2fc6153e86f,
+          mid_getRotation_1d339a2ee3a3323a,
+          mid_getRotationAcceleration_716f50c86ffc8da7,
+          mid_getRotationRate_716f50c86ffc8da7,
+          mid_revert_816428dc64133c35,
+          mid_rotationShiftedBy_18cefe87a5836f51,
+          mid_shiftedBy_d44ae49cec21abff,
+          mid_shiftedBy_44ac14fd99cc1f4e,
+          mid_subtractOffset_5c4217e0473c8587,
+          mid_toAngularCoordinates_8a604053f4d4c39e,
+          mid_toDerivativeStructureRotation_371facd070e18d41,
+          mid_toUnivariateDerivative1Rotation_1d339a2ee3a3323a,
+          mid_toUnivariateDerivative2Rotation_1d339a2ee3a3323a,
           max_mid
         };
 

@@ -3,46 +3,46 @@
 
 #include "org/orekit/propagation/integration/FieldAbstractIntegratedPropagator.h"
 
+namespace org {
+  namespace orekit {
+    namespace orbits {
+      class PositionAngleType;
+      class FieldOrbit;
+      class OrbitType;
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace forces {
+      class ForceModel;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+    }
+    namespace utils {
+      class TimeStampedFieldPVCoordinates;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace ode {
+      class FieldODEIntegrator;
+    }
+    class Field;
+  }
+}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace frames {
-      class Frame;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-    namespace utils {
-      class TimeStampedFieldPVCoordinates;
-    }
-    namespace forces {
-      class ForceModel;
-    }
-    namespace orbits {
-      class PositionAngleType;
-      class FieldOrbit;
-      class OrbitType;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
-    namespace propagation {
-      class FieldSpacecraftState;
-    }
-  }
-  namespace hipparchus {
-    class Field;
-    namespace ode {
-      class FieldODEIntegrator;
-    }
-    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -55,24 +55,24 @@ namespace org {
         class FieldNumericalPropagator : public ::org::orekit::propagation::integration::FieldAbstractIntegratedPropagator {
          public:
           enum {
-            mid_init$_272d3b6a3360c8cc,
-            mid_init$_f6f035abb558a5c0,
-            mid_addForceModel_beaeb16a38eea9d3,
-            mid_getAllForceModels_a6156df500549a58,
-            mid_getOrbitType_63ea5cd020bf7bf1,
-            mid_getPVCoordinates_0e277b7d6a64b75a,
-            mid_getPositionAngleType_2571e8fe1cede425,
-            mid_removeForceModels_7ae3461a92a43152,
-            mid_resetInitialState_52154b94d63e10ed,
-            mid_setIgnoreCentralAttraction_50a2e0b139e80a58,
-            mid_setInitialState_52154b94d63e10ed,
-            mid_setMu_03a16642f77779e7,
-            mid_setOrbitType_bbd02639b41d4055,
-            mid_setPositionAngleType_07350e8db766ef51,
-            mid_tolerances_bf5c278e5b478505,
-            mid_tolerances_90835be83898efac,
-            mid_createMapper_b12e4020688f2d3a,
-            mid_getMainStateEquations_9199626b9ad748bb,
+            mid_init$_bb6ed468e0500083,
+            mid_init$_b659cdfea9340f48,
+            mid_addForceModel_690f9b27ef4d22fe,
+            mid_getAllForceModels_2afa36052df4765d,
+            mid_getOrbitType_e29360d311dc0e20,
+            mid_getPVCoordinates_2cdae1c350dc3e9a,
+            mid_getPositionAngleType_8f17e83e5a86217c,
+            mid_removeForceModels_0fa09c18fee449d5,
+            mid_resetInitialState_1463d3d0d52f94dd,
+            mid_setIgnoreCentralAttraction_bd04c9335fb9e4cf,
+            mid_setInitialState_1463d3d0d52f94dd,
+            mid_setMu_072c8635f2164db9,
+            mid_setOrbitType_48a062bf972c4ab5,
+            mid_setPositionAngleType_4ca1644ed7c72fe3,
+            mid_tolerances_538ee42154b42493,
+            mid_tolerances_3d9429449a451b38,
+            mid_createMapper_16c8184497a1d794,
+            mid_getMainStateEquations_75bae68924620d17,
             max_mid
           };
 

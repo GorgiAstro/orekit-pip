@@ -3,9 +3,15 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
+      class FieldSpacecraftState;
       namespace analytical {
         namespace tle {
           class FieldTLE;
@@ -13,13 +19,7 @@ namespace org {
         }
       }
       class SpacecraftState;
-      class FieldSpacecraftState;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,8 +34,8 @@ namespace org {
             class TleGenerationAlgorithm : public ::java::lang::Object {
              public:
               enum {
-                mid_generate_70bd59273b78d702,
-                mid_generate_129bb6d4ed7ed841,
+                mid_generate_bce44986dbf601d6,
+                mid_generate_34f09d826252bcec,
                 max_mid
               };
 

@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathIllegalArgumentException;
       class NullArgumentException;
+      class MathIllegalArgumentException;
     }
     namespace analysis {
       class UnivariateFunction;
@@ -29,8 +29,8 @@ namespace org {
         class StepFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0d03c8a1d7f56f02,
-            mid_value_0ba5fed9597b693e,
+            mid_init$_e1f4b15468f5564a,
+            mid_value_dcbc7ce2902fa136,
             max_mid
           };
 

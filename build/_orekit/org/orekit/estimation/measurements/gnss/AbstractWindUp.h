@@ -36,10 +36,10 @@ namespace org {
           class AbstractWindUp : public ::java::lang::Object {
            public:
             enum {
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_modifyWithoutDerivatives_811f96960c94c1de,
-              mid_emitterToInert_fd1bf64855bd2d79,
-              mid_receiverToInert_fd1bf64855bd2d79,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_modifyWithoutDerivatives_d1815d998cba71e9,
+              mid_emitterToInert_e7f87679ee42d076,
+              mid_receiverToInert_e7f87679ee42d076,
               max_mid
             };
 

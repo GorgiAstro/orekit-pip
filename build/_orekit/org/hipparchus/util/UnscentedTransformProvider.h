@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class RealVector;
       class RealMatrix;
+      class RealVector;
     }
   }
 }
@@ -25,9 +25,9 @@ namespace org {
       class UnscentedTransformProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getWc_6d9adf1d5b463928,
-          mid_getWm_6d9adf1d5b463928,
-          mid_unscentedTransform_701a8550e98fcc7d,
+          mid_getWc_aab4fbf77867daa8,
+          mid_getWm_aab4fbf77867daa8,
+          mid_unscentedTransform_596ac2a258d0a23b,
           max_mid
         };
 

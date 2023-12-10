@@ -7,9 +7,9 @@ namespace org {
   namespace orekit {
     namespace propagation {
       namespace sampling {
+        class OrekitStepHandler;
         class OrekitFixedStepHandler;
         class OrekitStepInterpolator;
-        class OrekitStepHandler;
       }
       class SpacecraftState;
     }
@@ -33,12 +33,12 @@ namespace org {
         class OrekitStepNormalizer : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_ae887d6ebf6ba107,
-            mid_finish_2b88003f931f70a7,
-            mid_getFixedStepHandler_ab9c382395b68cd4,
-            mid_getFixedTimeStep_456d9a2f64d6b28d,
-            mid_handleStep_eb797cf50ec4b2c4,
-            mid_init_3d13474d79f5e7bc,
+            mid_init$_768baea54d9d6ae5,
+            mid_finish_0ee5c56004643a2e,
+            mid_getFixedStepHandler_19a1bf169a3bb19e,
+            mid_getFixedTimeStep_dff5885c2c873297,
+            mid_handleStep_aa75aa80a734fb3b,
+            mid_init_826b4eda94da4e78,
             max_mid
           };
 

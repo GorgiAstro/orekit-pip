@@ -6,14 +6,14 @@
 namespace org {
   namespace hipparchus {
     namespace analysis {
-      class BivariateFunction;
-      class UnivariateFunction;
-      class MultivariateVectorFunction;
       namespace differentiation {
         class MultivariateDifferentiableFunction;
         class UnivariateDifferentiableFunction;
       }
+      class MultivariateVectorFunction;
+      class BivariateFunction;
       class MultivariateFunction;
+      class UnivariateFunction;
     }
     namespace exception {
       class MathIllegalArgumentException;
@@ -34,22 +34,22 @@ namespace org {
       class FunctionUtils : public ::java::lang::Object {
        public:
         enum {
-          mid_add_3bcb41276db4e729,
-          mid_add_83e158309df32f6e,
-          mid_collector_ccfa2a1e3dda76a7,
-          mid_collector_9ba5c4593e3c2af1,
-          mid_combine_4d9c173230ae0e4e,
-          mid_compose_3bcb41276db4e729,
-          mid_compose_83e158309df32f6e,
-          mid_derivative_d995b8d0b97f5538,
-          mid_derivative_bbc32c89f9c311a5,
-          mid_fix1stArgument_950629fba33af181,
-          mid_fix2ndArgument_950629fba33af181,
-          mid_multiply_3bcb41276db4e729,
-          mid_multiply_83e158309df32f6e,
-          mid_sample_7b9dea3228efcc90,
-          mid_toDifferentiable_5f386df000b7e6e3,
-          mid_toDifferentiable_8339f4f7ed8eef9a,
+          mid_add_7170b070702438b3,
+          mid_add_4eb7faaab711f396,
+          mid_collector_4c39da77fc432e07,
+          mid_collector_9349fd916a39e221,
+          mid_combine_3330827e5a477097,
+          mid_compose_7170b070702438b3,
+          mid_compose_4eb7faaab711f396,
+          mid_derivative_1af9f11a6865952e,
+          mid_derivative_5707ffcbbb3c291a,
+          mid_fix1stArgument_f48bb0dc5eafff9b,
+          mid_fix2ndArgument_f48bb0dc5eafff9b,
+          mid_multiply_7170b070702438b3,
+          mid_multiply_4eb7faaab711f396,
+          mid_sample_bb5b80d154c3de2f,
+          mid_toDifferentiable_ec776c30a2f68070,
+          mid_toDifferentiable_33be8e58464546b4,
           max_mid
         };
 

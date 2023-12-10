@@ -8,13 +8,13 @@ namespace org {
     class CalculusFieldElement;
   }
   namespace orekit {
-    namespace bodies {
-      class GeodeticPoint;
-      class FieldGeodeticPoint;
-    }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
+    }
+    namespace bodies {
+      class FieldGeodeticPoint;
+      class GeodeticPoint;
     }
   }
 }
@@ -34,8 +34,8 @@ namespace org {
           class MappingFunction : public ::java::lang::Object {
            public:
             enum {
-              mid_mappingFactors_67294ed37389436d,
-              mid_mappingFactors_6def5a87906f3de8,
+              mid_mappingFactors_7ef12dc9276409e6,
+              mid_mappingFactors_6f55c0ac27817ed2,
               max_mid
             };
 

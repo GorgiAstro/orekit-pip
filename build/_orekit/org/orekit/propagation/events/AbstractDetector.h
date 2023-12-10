@@ -7,11 +7,11 @@ namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
+        class AbstractDetector;
+        class EventDetector;
         namespace handlers {
           class EventHandler;
         }
-        class AbstractDetector;
-        class EventDetector;
         class AdaptableInterval;
       }
       class SpacecraftState;
@@ -36,19 +36,19 @@ namespace org {
         class AbstractDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_g_66a2f071e6ed0c06,
-            mid_getHandler_d450688ba8c3949b,
-            mid_getMaxCheckInterval_5b5c68574977d620,
-            mid_getMaxIterationCount_f2f64475e4580546,
-            mid_getThreshold_456d9a2f64d6b28d,
-            mid_init_3d13474d79f5e7bc,
-            mid_isForward_e470b6d9e0d979db,
-            mid_withHandler_427c1e606cf016a7,
-            mid_withMaxCheck_28062f653333113e,
-            mid_withMaxCheck_ad0d5ccc43611835,
-            mid_withMaxIter_ab456b9a4e9f6c2b,
-            mid_withThreshold_28062f653333113e,
-            mid_create_ccd729cfbbaff306,
+            mid_g_432f3d328c15ec82,
+            mid_getHandler_551c102e543538fd,
+            mid_getMaxCheckInterval_35e5947e4e8f061c,
+            mid_getMaxIterationCount_570ce0828f81a2c1,
+            mid_getThreshold_dff5885c2c873297,
+            mid_init_826b4eda94da4e78,
+            mid_isForward_b108b35ef48e27bd,
+            mid_withHandler_60bfd53e9474bbd1,
+            mid_withMaxCheck_7597e629f58eff02,
+            mid_withMaxCheck_694003c4eb6fbaa9,
+            mid_withMaxIter_54534a9090a8f086,
+            mid_withThreshold_7597e629f58eff02,
+            mid_create_913a6d04c3b6bf64,
             max_mid
           };
 

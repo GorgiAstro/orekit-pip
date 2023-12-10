@@ -17,7 +17,7 @@ namespace org {
       class BigFraction$ConvergenceTest : public ::java::lang::Object {
        public:
         enum {
-          mid_test_1482b4da6cbbf02c,
+          mid_test_d943e189ce8312a2,
           max_mid
         };
 

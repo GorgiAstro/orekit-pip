@@ -5,18 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeScale;
-      class AbsoluteDate;
-    }
-    namespace frames {
-      class Frame;
-    }
     namespace data {
       class DataContext;
     }
-    namespace attitudes {
-      class AttitudeProvider;
+    namespace frames {
+      class Frame;
     }
     namespace propagation {
       namespace analytical {
@@ -27,6 +20,13 @@ namespace org {
           }
         }
       }
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeScale;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
     }
   }
 }
@@ -47,26 +47,26 @@ namespace org {
             class GLONASSAlmanac : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_06c4a4bb4a52cbb6,
-                mid_init$_aa72820258331840,
-                mid_getDate_aaa854c403487cf3,
-                mid_getDeltaI_456d9a2f64d6b28d,
-                mid_getDeltaT_456d9a2f64d6b28d,
-                mid_getDeltaTDot_456d9a2f64d6b28d,
-                mid_getE_456d9a2f64d6b28d,
-                mid_getFrequencyChannel_f2f64475e4580546,
-                mid_getGPS2Glo_456d9a2f64d6b28d,
-                mid_getGlo2UTC_456d9a2f64d6b28d,
-                mid_getGloOffset_456d9a2f64d6b28d,
-                mid_getHealth_f2f64475e4580546,
-                mid_getLambda_456d9a2f64d6b28d,
-                mid_getN4_f2f64475e4580546,
-                mid_getNa_f2f64475e4580546,
-                mid_getPa_456d9a2f64d6b28d,
-                mid_getPropagator_5d976fca9b951997,
-                mid_getPropagator_4c2baddb9a889e9e,
-                mid_getPropagator_7a1576b7ec59009e,
-                mid_getTime_456d9a2f64d6b28d,
+                mid_init$_927876482883ca32,
+                mid_init$_7f68134dc9a2ca41,
+                mid_getDate_85703d13e302437e,
+                mid_getDeltaI_dff5885c2c873297,
+                mid_getDeltaT_dff5885c2c873297,
+                mid_getDeltaTDot_dff5885c2c873297,
+                mid_getE_dff5885c2c873297,
+                mid_getFrequencyChannel_570ce0828f81a2c1,
+                mid_getGPS2Glo_dff5885c2c873297,
+                mid_getGlo2UTC_dff5885c2c873297,
+                mid_getGloOffset_dff5885c2c873297,
+                mid_getHealth_570ce0828f81a2c1,
+                mid_getLambda_dff5885c2c873297,
+                mid_getN4_570ce0828f81a2c1,
+                mid_getNa_570ce0828f81a2c1,
+                mid_getPa_dff5885c2c873297,
+                mid_getPropagator_169032d2e880ec70,
+                mid_getPropagator_5f8b38de0b54bda6,
+                mid_getPropagator_94b5f5c6e1c39dbc,
+                mid_getTime_dff5885c2c873297,
                 max_mid
               };
 

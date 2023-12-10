@@ -14,15 +14,15 @@ namespace org {
         namespace shorttermencounter {
           namespace probability {
             namespace twod {
-              class FieldShortTermEncounter2DDefinition;
               class ShortTermEncounter2DDefinition;
+              class FieldShortTermEncounter2DDefinition;
             }
           }
         }
       }
       namespace metrics {
-        class ProbabilityOfCollision;
         class FieldProbabilityOfCollision;
+        class ProbabilityOfCollision;
       }
     }
     namespace files {
@@ -67,16 +67,16 @@ namespace org {
               class AbstractShortTermEncounter1DNumerical2DPOCMethod : public ::org::orekit::ssa::collision::shorttermencounter::probability::twod::AbstractShortTermEncounter2DPOCMethod {
                public:
                 enum {
-                  mid_compute_380085cc5c31afbb,
-                  mid_compute_9b5a6f4a51f0ae15,
-                  mid_compute_23211d1e26c9c2c1,
-                  mid_compute_f7ffb3ec4f2d0056,
-                  mid_compute_de7363be5af22a90,
-                  mid_compute_667ac5ee3b8cba8a,
-                  mid_compute_ddd31c5991d1fe60,
-                  mid_compute_61ec0633a7b37601,
-                  mid_compute_2aa433dfb75a66e5,
-                  mid_compute_e200d210e0e2ea80,
+                  mid_compute_6c8d6a54416e8567,
+                  mid_compute_79225f5888470847,
+                  mid_compute_184c2f4ec5889c74,
+                  mid_compute_0ed38e7bbee7fafc,
+                  mid_compute_74f88e50415a2d2a,
+                  mid_compute_75f8736a87b2cb54,
+                  mid_compute_acd6f33dacb379ff,
+                  mid_compute_194bff03a32ceae7,
+                  mid_compute_e3c65781d9915088,
+                  mid_compute_929c0efe5e3d40e0,
                   max_mid
                 };
 

@@ -4,6 +4,13 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace analysis {
+      namespace polynomials {
+        class PolynomialFunction;
+      }
+    }
+  }
   namespace orekit {
     namespace propagation {
       namespace semianalytical {
@@ -14,13 +21,6 @@ namespace org {
             }
           }
         }
-      }
-    }
-  }
-  namespace hipparchus {
-    namespace analysis {
-      namespace polynomials {
-        class PolynomialFunction;
       }
     }
   }
@@ -43,13 +43,13 @@ namespace org {
               class PolynomialFunctionMatrix : public ::java::lang::Object {
                public:
                 enum {
-                  mid_add_ad88da858853752c,
-                  mid_getElem_719ea6244b7f87f0,
-                  mid_getMatrixLine_bdf8e93e2b87418a,
-                  mid_multiply_ad88da858853752c,
-                  mid_setElem_69234f814f3b439e,
-                  mid_setMatrix_b6b26e8a4079d308,
-                  mid_setMatrixLine_9889bd0c7190633d,
+                  mid_add_efa4915a18761d74,
+                  mid_getElem_ce4818bdbdc4bb6e,
+                  mid_getMatrixLine_ca70d17bfdf05b50,
+                  mid_multiply_efa4915a18761d74,
+                  mid_setElem_def4a2d3c56c8af3,
+                  mid_setMatrix_184d638647e39c2d,
+                  mid_setMatrixLine_a026c22cde76cbbe,
                   max_mid
                 };
 

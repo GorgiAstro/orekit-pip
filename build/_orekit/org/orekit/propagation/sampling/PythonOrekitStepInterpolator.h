@@ -11,14 +11,14 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace propagation {
       namespace sampling {
         class OrekitStepInterpolator;
       }
       class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -32,18 +32,18 @@ namespace org {
         class PythonOrekitStepInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_finalize_7ae3461a92a43152,
-            mid_getCurrentState_dd3e4a8d51055f1f,
-            mid_getInterpolatedState_889031abe87f3b14,
-            mid_getPreviousState_dd3e4a8d51055f1f,
-            mid_isCurrentStateInterpolated_e470b6d9e0d979db,
-            mid_isForward_e470b6d9e0d979db,
-            mid_isPreviousStateInterpolated_e470b6d9e0d979db,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
-            mid_restrictStep_da619a9456840a3b,
+            mid_init$_0fa09c18fee449d5,
+            mid_finalize_0fa09c18fee449d5,
+            mid_getCurrentState_c6311115fea01a34,
+            mid_getInterpolatedState_fbff2ff5554d95e1,
+            mid_getPreviousState_c6311115fea01a34,
+            mid_isCurrentStateInterpolated_b108b35ef48e27bd,
+            mid_isForward_b108b35ef48e27bd,
+            mid_isPreviousStateInterpolated_b108b35ef48e27bd,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
+            mid_restrictStep_470f776a59a8cb6f,
             max_mid
           };
 

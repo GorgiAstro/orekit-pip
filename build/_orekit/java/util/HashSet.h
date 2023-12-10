@@ -26,19 +26,19 @@ namespace java {
     class HashSet : public ::java::util::AbstractSet {
      public:
       enum {
-        mid_init$_7ae3461a92a43152,
-        mid_init$_0a2a1ac2721c0336,
-        mid_init$_26b3669ec54017ce,
-        mid_init$_75c5b1de54fd54f2,
-        mid_add_229c87223f486349,
-        mid_clear_7ae3461a92a43152,
-        mid_clone_dfd7647d9110ac9f,
-        mid_contains_229c87223f486349,
-        mid_isEmpty_e470b6d9e0d979db,
-        mid_iterator_035c6167e6569aac,
-        mid_remove_229c87223f486349,
-        mid_size_f2f64475e4580546,
-        mid_spliterator_df0341cda53d4d48,
+        mid_init$_0fa09c18fee449d5,
+        mid_init$_99803b0791f320ff,
+        mid_init$_f72f53318f80c525,
+        mid_init$_76637231e1f360e3,
+        mid_add_65c7d273e80d497a,
+        mid_clear_0fa09c18fee449d5,
+        mid_clone_4d26fd885228c716,
+        mid_contains_65c7d273e80d497a,
+        mid_isEmpty_b108b35ef48e27bd,
+        mid_iterator_4d23511a9f0db098,
+        mid_remove_65c7d273e80d497a,
+        mid_size_570ce0828f81a2c1,
+        mid_spliterator_ef1070394b413a84,
         max_mid
       };
 

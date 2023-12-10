@@ -3,28 +3,28 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-    class String;
-  }
-}
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace propagation {
+      class FieldSpacecraftState;
       namespace integration {
         class FieldAdditionalDerivativesProvider;
         class FieldCombinedDerivatives;
       }
-      class FieldSpacecraftState;
     }
     namespace time {
       class FieldAbsoluteDate;
     }
   }
-  namespace hipparchus {
-    class CalculusFieldElement;
+}
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -37,16 +37,16 @@ namespace org {
         class PythonFieldAdditionalDerivativesProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_combinedDerivatives_ae4cc0c1894391de,
-            mid_finalize_7ae3461a92a43152,
-            mid_getDimension_f2f64475e4580546,
-            mid_getName_0090f7797e403f43,
-            mid_init_acdd8180a5dc1a8d,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
-            mid_yields_91c945ca7903e8ac,
+            mid_init$_0fa09c18fee449d5,
+            mid_combinedDerivatives_bed9dfcebfaf5040,
+            mid_finalize_0fa09c18fee449d5,
+            mid_getDimension_570ce0828f81a2c1,
+            mid_getName_11b109bd155ca898,
+            mid_init_8e8de2be1664674a,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
+            mid_yields_1b0abd4f90ebd0eb,
             max_mid
           };
 

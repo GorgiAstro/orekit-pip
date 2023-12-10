@@ -3,6 +3,14 @@
 
 #include "java/lang/RuntimeException.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class LocalizedException;
+      class Localizable;
+    }
+  }
+}
 namespace java {
   namespace util {
     class Locale;
@@ -12,14 +20,6 @@ namespace java {
     class Class;
     class Object;
     class String;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class Localizable;
-      class LocalizedException;
-    }
   }
 }
 template<class T> class JArray;
@@ -32,13 +32,13 @@ namespace org {
         class RuggedException : public ::java::lang::RuntimeException {
          public:
           enum {
-            mid_init$_3d6784947cb48668,
-            mid_init$_ca997976b075d32c,
-            mid_getLocalizedMessage_0090f7797e403f43,
-            mid_getMessage_0090f7797e403f43,
-            mid_getMessage_bab3be9b232acc5a,
-            mid_getParts_e81d7907eea7e008,
-            mid_getSpecifier_2e589a53386da289,
+            mid_init$_d0cf82c16a7e8751,
+            mid_init$_6ecc3fd6067c266c,
+            mid_getLocalizedMessage_11b109bd155ca898,
+            mid_getMessage_11b109bd155ca898,
+            mid_getMessage_3cd873bfb132c4fd,
+            mid_getParts_b93c730013ce64c6,
+            mid_getSpecifier_517615caa9b88a24,
             max_mid
           };
 

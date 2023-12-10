@@ -4,26 +4,26 @@
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class RotationOrder;
-        }
-      }
-    }
-  }
   namespace orekit {
     namespace files {
       namespace ccsds {
         namespace ndm {
           namespace adm {
             namespace acm {
-              class AttitudeElementsType;
               class RateElementsType;
+              class AttitudeElementsType;
             }
             class AttitudeEndpoints;
           }
+        }
+      }
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class RotationOrder;
         }
       }
     }
@@ -48,25 +48,25 @@ namespace org {
               class AttitudeStateHistoryMetadata : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_7ae3461a92a43152,
-                  mid_getAttBasis_0090f7797e403f43,
-                  mid_getAttBasisID_0090f7797e403f43,
-                  mid_getAttID_0090f7797e403f43,
-                  mid_getAttPrevID_0090f7797e403f43,
-                  mid_getAttitudeType_ec3c84a694477494,
-                  mid_getEndpoints_160aadf35481229b,
-                  mid_getEulerRotSeq_425debac8563c8f4,
-                  mid_getNbStates_f2f64475e4580546,
-                  mid_getRateType_6a98691d179a0a11,
-                  mid_setAttBasis_e939c6558ae8d313,
-                  mid_setAttBasisID_e939c6558ae8d313,
-                  mid_setAttID_e939c6558ae8d313,
-                  mid_setAttPrevID_e939c6558ae8d313,
-                  mid_setAttitudeType_3a0e4c42559abb2e,
-                  mid_setEulerRotSeq_3c290f1c2c08ff0e,
-                  mid_setNbStates_0a2a1ac2721c0336,
-                  mid_setRateType_153f0895a658f894,
-                  mid_validate_77e0f9a1f260e2e5,
+                  mid_init$_0fa09c18fee449d5,
+                  mid_getAttBasis_11b109bd155ca898,
+                  mid_getAttBasisID_11b109bd155ca898,
+                  mid_getAttID_11b109bd155ca898,
+                  mid_getAttPrevID_11b109bd155ca898,
+                  mid_getAttitudeType_f08064c40442c84b,
+                  mid_getEndpoints_35bd4909c56b6915,
+                  mid_getEulerRotSeq_5aea028785008a06,
+                  mid_getNbStates_570ce0828f81a2c1,
+                  mid_getRateType_f2358484d07d6202,
+                  mid_setAttBasis_d0bc48d5b00dc40c,
+                  mid_setAttBasisID_d0bc48d5b00dc40c,
+                  mid_setAttID_d0bc48d5b00dc40c,
+                  mid_setAttPrevID_d0bc48d5b00dc40c,
+                  mid_setAttitudeType_4299529dacf75fa7,
+                  mid_setEulerRotSeq_a908138988eb2a50,
+                  mid_setNbStates_99803b0791f320ff,
+                  mid_setRateType_819c66db610b1575,
+                  mid_validate_17db3a65980d3441,
                   max_mid
                 };
 

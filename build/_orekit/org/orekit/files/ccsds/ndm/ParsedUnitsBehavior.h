@@ -5,16 +5,16 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      namespace units {
-        class Unit;
-      }
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
           class ParsedUnitsBehavior;
         }
+      }
+    }
+    namespace utils {
+      namespace units {
+        class Unit;
       }
     }
   }
@@ -36,9 +36,9 @@ namespace org {
           class ParsedUnitsBehavior : public ::java::lang::Enum {
            public:
             enum {
-              mid_select_e160e930f3181018,
-              mid_valueOf_a4d67bfdcd24dc92,
-              mid_values_b8c172bacd93e631,
+              mid_select_b425877fe8558ba5,
+              mid_valueOf_2f2171faa6955c91,
+              mid_values_3237b8dc14fa4016,
               max_mid
             };
 

@@ -7,16 +7,16 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace section {
-          class XmlStructureKey;
-        }
         namespace utils {
-          namespace parsing {
-            class AbstractConstituentParser;
-          }
           namespace lexical {
             class ParseToken;
           }
+          namespace parsing {
+            class AbstractConstituentParser;
+          }
+        }
+        namespace section {
+          class XmlStructureKey;
         }
       }
     }
@@ -40,9 +40,9 @@ namespace org {
           class XmlStructureKey : public ::java::lang::Enum {
            public:
             enum {
-              mid_process_6f09ff368ed52756,
-              mid_valueOf_af857aa1fe55eef0,
-              mid_values_e2e167fb9c360584,
+              mid_process_f1d9f5026ab4c64c,
+              mid_valueOf_5ebeae299069d557,
+              mid_values_dacfd4acd321e995,
               max_mid
             };
 

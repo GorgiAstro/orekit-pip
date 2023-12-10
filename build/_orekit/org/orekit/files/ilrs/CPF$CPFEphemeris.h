@@ -8,28 +8,28 @@ namespace org {
     namespace files {
       namespace ilrs {
         class CPF$CPFCoordinate;
-        class CPF;
         class CPF$CPFEphemeris;
+        class CPF;
       }
       namespace general {
         class EphemerisFile$SatelliteEphemeris;
         class EphemerisFile$EphemerisSegment;
       }
     }
+    namespace propagation {
+      class BoundedPropagator;
+    }
     namespace frames {
       class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace attitudes {
       class AttitudeProvider;
     }
     namespace utils {
       class CartesianDerivativesFilter;
-    }
-    namespace propagation {
-      class BoundedPropagator;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -52,19 +52,19 @@ namespace org {
         class CPF$CPFEphemeris : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_6ad257d4efed1c41,
-            mid_getAvailableDerivatives_237181d932324188,
-            mid_getCoordinates_a6156df500549a58,
-            mid_getEphemeridesDataLines_a6156df500549a58,
-            mid_getFrame_c8fe21bcdac65bf6,
-            mid_getId_0090f7797e403f43,
-            mid_getInterpolationSamples_f2f64475e4580546,
-            mid_getMu_456d9a2f64d6b28d,
-            mid_getPropagator_e29a1189b47e1aad,
-            mid_getPropagator_ecec515dedcdf4ce,
-            mid_getSegments_a6156df500549a58,
-            mid_getStart_aaa854c403487cf3,
-            mid_getStop_aaa854c403487cf3,
+            mid_init$_ca8570ac889d08c9,
+            mid_getAvailableDerivatives_16e9a7b5414faf2d,
+            mid_getCoordinates_2afa36052df4765d,
+            mid_getEphemeridesDataLines_2afa36052df4765d,
+            mid_getFrame_b86f9f61d97a7244,
+            mid_getId_11b109bd155ca898,
+            mid_getInterpolationSamples_570ce0828f81a2c1,
+            mid_getMu_dff5885c2c873297,
+            mid_getPropagator_08b52de56e2dfa9a,
+            mid_getPropagator_ac89b644d37ed0fc,
+            mid_getSegments_2afa36052df4765d,
+            mid_getStart_85703d13e302437e,
+            mid_getStop_85703d13e302437e,
             max_mid
           };
 

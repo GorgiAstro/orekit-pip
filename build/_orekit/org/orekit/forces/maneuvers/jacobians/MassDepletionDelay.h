@@ -10,15 +10,15 @@ namespace org {
         class Maneuver;
       }
     }
-    namespace propagation {
-      namespace integration {
-        class CombinedDerivatives;
-        class AdditionalDerivativesProvider;
-      }
-      class SpacecraftState;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace propagation {
+      namespace integration {
+        class AdditionalDerivativesProvider;
+        class CombinedDerivatives;
+      }
+      class SpacecraftState;
     }
   }
 }
@@ -39,11 +39,11 @@ namespace org {
           class MassDepletionDelay : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_6a73343958e74b70,
-              mid_combinedDerivatives_32bde69742c0babb,
-              mid_getDimension_f2f64475e4580546,
-              mid_getName_0090f7797e403f43,
-              mid_init_3d13474d79f5e7bc,
+              mid_init$_5a7a06dc2ea68812,
+              mid_combinedDerivatives_4fc0958a0539e1d3,
+              mid_getDimension_570ce0828f81a2c1,
+              mid_getName_11b109bd155ca898,
+              mid_init_826b4eda94da4e78,
               max_mid
             };
 

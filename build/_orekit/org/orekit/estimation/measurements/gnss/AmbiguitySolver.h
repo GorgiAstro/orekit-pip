@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace estimation {
@@ -31,6 +23,14 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -42,12 +42,12 @@ namespace org {
           class AmbiguitySolver : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_68a72f96fcfe346b,
-              mid_fixIntegerAmbiguities_3ea5886b8e7d0ac2,
-              mid_getAllAmbiguityDrivers_a6156df500549a58,
-              mid_unFixAmbiguity_a4c33e1e91b3ca8e,
-              mid_getFreeAmbiguityDrivers_a6156df500549a58,
-              mid_getFreeAmbiguityIndirection_191b31fcac2e6cf7,
+              mid_init$_a6dd32ef95df4eea,
+              mid_fixIntegerAmbiguities_c271d207a951992f,
+              mid_getAllAmbiguityDrivers_2afa36052df4765d,
+              mid_unFixAmbiguity_01a5c4b8230d6f04,
+              mid_getFreeAmbiguityDrivers_2afa36052df4765d,
+              mid_getFreeAmbiguityIndirection_ec0d400b55e6e7cc,
               max_mid
             };
 

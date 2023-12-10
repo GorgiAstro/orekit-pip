@@ -5,6 +5,9 @@
 
 namespace org {
   namespace hipparchus {
+    namespace linear {
+      class RealVector;
+    }
     namespace optim {
       namespace nonlinear {
         namespace vector {
@@ -13,9 +16,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace linear {
-      class RealVector;
     }
   }
 }
@@ -36,10 +36,10 @@ namespace org {
             class LeastSquaresProblem : public ::org::hipparchus::optim::OptimizationProblem {
              public:
               enum {
-                mid_evaluate_3ec1db1849589637,
-                mid_getObservationSize_f2f64475e4580546,
-                mid_getParameterSize_f2f64475e4580546,
-                mid_getStart_6d9adf1d5b463928,
+                mid_evaluate_766f7f4cc1ea3a49,
+                mid_getObservationSize_570ce0828f81a2c1,
+                mid_getParameterSize_570ce0828f81a2c1,
+                mid_getStart_aab4fbf77867daa8,
                 max_mid
               };
 

@@ -22,8 +22,8 @@ namespace java {
       class IntConsumer : public ::java::lang::Object {
        public:
         enum {
-          mid_accept_0a2a1ac2721c0336,
-          mid_andThen_bec3d71fc5873ec1,
+          mid_accept_99803b0791f320ff,
+          mid_andThen_5d30ea6f2e7770e3,
           max_mid
         };
 

@@ -3,18 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace time {
-      class TimeStamped;
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class TimeStampedGenerator;
-      class TimeStampedCache;
-    }
-  }
-}
 namespace java {
   namespace util {
     namespace stream {
@@ -26,6 +14,18 @@ namespace java {
     class IllegalStateException;
   }
 }
+namespace org {
+  namespace orekit {
+    namespace utils {
+      class TimeStampedGenerator;
+      class TimeStampedCache;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeStamped;
+    }
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -35,21 +35,21 @@ namespace org {
       class GenericTimeStampedCache : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_fa9ad4845ee8a7ca,
-          mid_init$_6afdb9308cfd17c0,
-          mid_getEarliest_b6273cee359d7146,
-          mid_getEntries_f2f64475e4580546,
-          mid_getGenerateCalls_f2f64475e4580546,
-          mid_getGenerator_aaa86a4e6cb88059,
-          mid_getGetNeighborsCalls_f2f64475e4580546,
-          mid_getLatest_b6273cee359d7146,
-          mid_getMaxNeighborsSize_f2f64475e4580546,
-          mid_getMaxSlots_f2f64475e4580546,
-          mid_getMaxSpan_456d9a2f64d6b28d,
-          mid_getNeighbors_1f145bd0decc1d0c,
-          mid_getNewSlotQuantumGap_456d9a2f64d6b28d,
-          mid_getSlots_f2f64475e4580546,
-          mid_getSlotsEvictions_f2f64475e4580546,
+          mid_init$_7f578824dbb30780,
+          mid_init$_78773a34e0cc3e3a,
+          mid_getEarliest_c2a1e08c7d64b02c,
+          mid_getEntries_570ce0828f81a2c1,
+          mid_getGenerateCalls_570ce0828f81a2c1,
+          mid_getGenerator_8de8e24d5cfdcebf,
+          mid_getGetNeighborsCalls_570ce0828f81a2c1,
+          mid_getLatest_c2a1e08c7d64b02c,
+          mid_getMaxNeighborsSize_570ce0828f81a2c1,
+          mid_getMaxSlots_570ce0828f81a2c1,
+          mid_getMaxSpan_dff5885c2c873297,
+          mid_getNeighbors_a067290de6165283,
+          mid_getNewSlotQuantumGap_dff5885c2c873297,
+          mid_getSlots_570ce0828f81a2c1,
+          mid_getSlotsEvictions_570ce0828f81a2c1,
           max_mid
         };
 

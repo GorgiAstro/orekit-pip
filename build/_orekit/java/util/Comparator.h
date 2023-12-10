@@ -19,14 +19,14 @@ namespace java {
     class Comparator : public ::java::lang::Object {
      public:
       enum {
-        mid_compare_635c62272e86b001,
-        mid_equals_229c87223f486349,
-        mid_naturalOrder_838794f9a43cf98e,
-        mid_nullsFirst_3d37843ecb21deb5,
-        mid_nullsLast_3d37843ecb21deb5,
-        mid_reverseOrder_838794f9a43cf98e,
-        mid_reversed_838794f9a43cf98e,
-        mid_thenComparing_3d37843ecb21deb5,
+        mid_compare_52527a74e1b581d7,
+        mid_equals_65c7d273e80d497a,
+        mid_naturalOrder_96e45e3694fbbb22,
+        mid_nullsFirst_7a4cd21393022d6a,
+        mid_nullsLast_7a4cd21393022d6a,
+        mid_reverseOrder_96e45e3694fbbb22,
+        mid_reversed_96e45e3694fbbb22,
+        mid_thenComparing_7a4cd21393022d6a,
         max_mid
       };
 

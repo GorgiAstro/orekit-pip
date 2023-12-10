@@ -28,8 +28,8 @@ namespace org {
         class GradientFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_489e30ecc3872b00,
-            mid_value_4b742fe429c22ba8,
+            mid_init$_f1b81f9c2c2ca13f,
+            mid_value_ac3d742ccc742f22,
             max_mid
           };
 

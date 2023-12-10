@@ -24,8 +24,8 @@ namespace org {
           class IonosphericMappingFunction : public ::java::lang::Object {
            public:
             enum {
-              mid_mappingFactor_0ba5fed9597b693e,
-              mid_mappingFactor_d3398190482814dc,
+              mid_mappingFactor_dcbc7ce2902fa136,
+              mid_mappingFactor_a4b1871f4d29e58b,
               max_mid
             };
 

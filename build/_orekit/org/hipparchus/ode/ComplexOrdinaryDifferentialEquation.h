@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace complex {
       class Complex;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,9 +24,9 @@ namespace org {
       class ComplexOrdinaryDifferentialEquation : public ::java::lang::Object {
        public:
         enum {
-          mid_computeDerivatives_4f956c68d111b80a,
-          mid_getDimension_f2f64475e4580546,
-          mid_init_60e113532e66e181,
+          mid_computeDerivatives_205a0588bf1b379d,
+          mid_getDimension_570ce0828f81a2c1,
+          mid_init_7cbf20925feb48fd,
           max_mid
         };
 

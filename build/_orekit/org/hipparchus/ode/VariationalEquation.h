@@ -6,12 +6,12 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
+      class VariationalEquation$MismatchedEquations;
+      class ODEState;
       class ParameterConfiguration;
       class ODEJacobiansProvider;
-      class VariationalEquation$MismatchedEquations;
       class ExpandableODE;
       class OrdinaryDifferentialEquation;
-      class ODEState;
       class ParametersController;
     }
     namespace exception {
@@ -34,13 +34,13 @@ namespace org {
       class VariationalEquation : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_9408efab732c5a84,
-          mid_init$_f6e1c0b025959694,
-          mid_extractMainSetJacobian_998477530e9d194b,
-          mid_extractParameterJacobian_47ae48399146c41b,
-          mid_setInitialMainStateJacobian_d660c7a97bf55272,
-          mid_setInitialParameterJacobian_f158fe1c5def0235,
-          mid_setUpInitialState_e89faae1f95dc3f6,
+          mid_init$_00706f73184eaf6c,
+          mid_init$_ffe1ad9fe310d59c,
+          mid_extractMainSetJacobian_01f1be3cf55ee85b,
+          mid_extractParameterJacobian_41a0e16ccaa8c872,
+          mid_setInitialMainStateJacobian_a0befc7f3dc19e41,
+          mid_setInitialParameterJacobian_3468fcb7793f51a9,
+          mid_setUpInitialState_d2199fa9bd17650b,
           max_mid
         };
 

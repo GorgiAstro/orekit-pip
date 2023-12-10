@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace linear {
       class RealMatrix;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -28,13 +28,13 @@ namespace org {
         class KendallsCorrelation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_init$_d660c7a97bf55272,
-            mid_init$_30aa151fd03f3096,
-            mid_computeCorrelationMatrix_d983e368b64b23a3,
-            mid_computeCorrelationMatrix_e00cd33aedcc5bd0,
-            mid_correlation_1ce76fb6ff382da9,
-            mid_getCorrelationMatrix_7116bbecdd8ceb21,
+            mid_init$_0fa09c18fee449d5,
+            mid_init$_a0befc7f3dc19e41,
+            mid_init$_c67473bd6cfaa69b,
+            mid_computeCorrelationMatrix_62c0bfb50b5dacc0,
+            mid_computeCorrelationMatrix_e9b72403ad502221,
+            mid_correlation_b561c6892e9976f8,
+            mid_getCorrelationMatrix_688b496048ff947b,
             max_mid
           };
 

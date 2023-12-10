@@ -5,13 +5,13 @@
 
 namespace org {
   namespace orekit {
+    namespace frames {
+      class StaticTransform;
+    }
     namespace gnss {
       namespace antenna {
         class FrequencyPattern;
       }
-    }
-    namespace frames {
-      class StaticTransform;
     }
   }
 }
@@ -31,8 +31,8 @@ namespace org {
           class PhaseCentersOffsetComputer : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_55b30db589ada038,
-              mid_offset_f5d825315c22c65f,
+              mid_init$_a2ed374ecf8bf34a,
+              mid_offset_02d94d8d3b578650,
               max_mid
             };
 

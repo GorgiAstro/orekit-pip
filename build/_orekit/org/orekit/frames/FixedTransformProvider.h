@@ -11,8 +11,8 @@ namespace org {
       class Transform;
     }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
   }
 }
@@ -30,9 +30,9 @@ namespace org {
       class FixedTransformProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_438ebd2c38ce3e7b,
-          mid_getTransform_d55545a64ea4a9a7,
-          mid_getTransform_0b4f24249033b631,
+          mid_init$_9bbe3b825fc9db52,
+          mid_getTransform_687985c59478d29c,
+          mid_getTransform_f7bf3269025b86c3,
           max_mid
         };
 

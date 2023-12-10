@@ -4,19 +4,7 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-    }
-  }
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
     namespace models {
       namespace earth {
         namespace displacement {
@@ -24,11 +12,23 @@ namespace org {
         }
       }
     }
+    namespace frames {
+      class Frame;
+    }
     namespace data {
       class BodiesElements;
     }
     namespace time {
       class AbsoluteDate;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
     }
   }
 }
@@ -48,8 +48,8 @@ namespace org {
           class TectonicsDisplacement : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_4fd2c20d73afc943,
-              mid_displacement_90801f07349d77e7,
+              mid_init$_3d7cc17d4ec11a9f,
+              mid_displacement_dc5338a5a1255d1d,
               max_mid
             };
 

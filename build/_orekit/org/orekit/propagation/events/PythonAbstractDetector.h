@@ -32,13 +32,13 @@ namespace org {
         class PythonAbstractDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_d11bc165798938dc,
-            mid_create_ccd729cfbbaff306,
-            mid_finalize_7ae3461a92a43152,
-            mid_g_66a2f071e6ed0c06,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
+            mid_init$_12f6a19557b7d4b4,
+            mid_create_913a6d04c3b6bf64,
+            mid_finalize_0fa09c18fee449d5,
+            mid_g_432f3d328c15ec82,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
             max_mid
           };
 

@@ -3,16 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace errors {
-      class OrekitIllegalArgumentException;
-    }
-    namespace time {
-      class TimeComponents;
-    }
-  }
-}
 namespace java {
   namespace io {
     class Serializable;
@@ -24,6 +14,16 @@ namespace java {
     class Comparable;
   }
 }
+namespace org {
+  namespace orekit {
+    namespace errors {
+      class OrekitIllegalArgumentException;
+    }
+    namespace time {
+      class TimeComponents;
+    }
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -33,24 +33,24 @@ namespace org {
       class TimeComponents : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_77e0f9a1f260e2e5,
-          mid_init$_987a5fb872043b12,
-          mid_init$_78e41e7b5124a628,
-          mid_init$_f5c307da94f08e20,
-          mid_compareTo_623b59d411cbe30a,
-          mid_equals_229c87223f486349,
-          mid_formatUtcOffset_0090f7797e403f43,
-          mid_fromSeconds_e2c98614b05dfb5f,
-          mid_getHour_f2f64475e4580546,
-          mid_getMinute_f2f64475e4580546,
-          mid_getMinutesFromUTC_f2f64475e4580546,
-          mid_getSecond_456d9a2f64d6b28d,
-          mid_getSecondsInLocalDay_456d9a2f64d6b28d,
-          mid_getSecondsInUTCDay_456d9a2f64d6b28d,
-          mid_hashCode_f2f64475e4580546,
-          mid_parseTime_a4b31ee1ef637293,
-          mid_toString_0090f7797e403f43,
-          mid_toStringWithoutUtcOffset_0090f7797e403f43,
+          mid_init$_17db3a65980d3441,
+          mid_init$_bb79ca80d85d0a66,
+          mid_init$_1506189166690b5e,
+          mid_init$_a74f71674060ec14,
+          mid_compareTo_d9b2403c89c27b85,
+          mid_equals_65c7d273e80d497a,
+          mid_formatUtcOffset_11b109bd155ca898,
+          mid_fromSeconds_563e129122230559,
+          mid_getHour_570ce0828f81a2c1,
+          mid_getMinute_570ce0828f81a2c1,
+          mid_getMinutesFromUTC_570ce0828f81a2c1,
+          mid_getSecond_dff5885c2c873297,
+          mid_getSecondsInLocalDay_dff5885c2c873297,
+          mid_getSecondsInUTCDay_dff5885c2c873297,
+          mid_hashCode_570ce0828f81a2c1,
+          mid_parseTime_38ec340cca6fd3db,
+          mid_toString_11b109bd155ca898,
+          mid_toStringWithoutUtcOffset_11b109bd155ca898,
           max_mid
         };
 

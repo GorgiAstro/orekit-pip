@@ -29,8 +29,8 @@ namespace org {
           class ObjectiveFunctionGradient : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_29c934b96c35263d,
-              mid_getObjectiveFunctionGradient_aaef55ff59f9c00e,
+              mid_init$_d33899f2761a81f4,
+              mid_getObjectiveFunctionGradient_18d8e6aab2238577,
               max_mid
             };
 

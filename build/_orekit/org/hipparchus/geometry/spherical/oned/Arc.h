@@ -5,6 +5,9 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
     namespace geometry {
       namespace partitioning {
         class Region$Location;
@@ -14,9 +17,6 @@ namespace org {
           class S1Point;
         }
       }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
     }
   }
 }
@@ -36,15 +36,15 @@ namespace org {
           class Arc : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_d0d6094fbd7015c5,
-              mid_checkPoint_69d64add2aa21689,
-              mid_getBarycenter_456d9a2f64d6b28d,
-              mid_getInf_456d9a2f64d6b28d,
-              mid_getOffset_0382ebde94e45116,
-              mid_getOffset_0ba5fed9597b693e,
-              mid_getSize_456d9a2f64d6b28d,
-              mid_getSup_456d9a2f64d6b28d,
-              mid_getTolerance_456d9a2f64d6b28d,
+              mid_init$_2c56b6dd4d4b1dec,
+              mid_checkPoint_b9b1c43283079b9b,
+              mid_getBarycenter_dff5885c2c873297,
+              mid_getInf_dff5885c2c873297,
+              mid_getOffset_999b5f6d06de13e8,
+              mid_getOffset_dcbc7ce2902fa136,
+              mid_getSize_dff5885c2c873297,
+              mid_getSup_dff5885c2c873297,
+              mid_getTolerance_dff5885c2c873297,
               max_mid
             };
 

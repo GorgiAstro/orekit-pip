@@ -8,8 +8,8 @@ namespace org {
     namespace files {
       namespace ccsds {
         namespace section {
-          class Metadata;
           class Data;
+          class Metadata;
         }
       }
     }
@@ -31,10 +31,10 @@ namespace org {
           class Segment : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_92756659d76972cf,
-              mid_getData_ffd26f8870766019,
-              mid_getMetadata_8ac99fc2374e56b2,
-              mid_setMetadata_7aaeb8f4e7b7ad8d,
+              mid_init$_4f1a1c287bdbbe29,
+              mid_getData_faa774fba39c031d,
+              mid_getMetadata_5dd238ab11f51a1b,
+              mid_setMetadata_2742811a85d54d6a,
               max_mid
             };
 

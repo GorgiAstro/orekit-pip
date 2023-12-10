@@ -5,22 +5,22 @@
 
 namespace org {
   namespace orekit {
+    namespace attitudes {
+      class Attitude;
+      class FieldAttitude;
+      class AttitudeProvider;
+      class Inertia;
+    }
     namespace frames {
       class Frame;
     }
-    namespace attitudes {
-      class AttitudeProvider;
-      class Attitude;
-      class FieldAttitude;
-      class Inertia;
+    namespace utils {
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
     }
     namespace time {
       class AbsoluteDate;
       class FieldAbsoluteDate;
-    }
-    namespace utils {
-      class FieldPVCoordinatesProvider;
-      class PVCoordinatesProvider;
     }
   }
 }
@@ -38,11 +38,11 @@ namespace org {
       class TorqueFree : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_5e90c783355f621f,
-          mid_getAttitude_5341a8481841f90c,
-          mid_getAttitude_455b5c75f9292826,
-          mid_getInertia_3602ee5088404a9b,
-          mid_getInitialAttitude_78dca83e076ede35,
+          mid_init$_928f9caae3df060e,
+          mid_getAttitude_4e541876ea7d5bd0,
+          mid_getAttitude_d2b70935d932b5c5,
+          mid_getInertia_abcaa399dcf67539,
+          mid_getInitialAttitude_bd12f6f74bd44dca,
           max_mid
         };
 
@@ -59,8 +59,8 @@ namespace org {
 
         TorqueFree(const ::org::orekit::attitudes::Attitude &, const ::org::orekit::attitudes::Inertia &);
 
-        ::org::orekit::attitudes::Attitude getAttitude(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::attitudes::FieldAttitude getAttitude(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
+        ::org::orekit::attitudes::Attitude getAttitude(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::attitudes::Inertia getInertia() const;
         ::org::orekit::attitudes::Attitude getInitialAttitude() const;
       };

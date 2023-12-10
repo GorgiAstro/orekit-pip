@@ -25,8 +25,8 @@ namespace org {
         class NonNegativeConstraint : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_50a2e0b139e80a58,
-            mid_isRestrictedToNonNegative_e470b6d9e0d979db,
+            mid_init$_bd04c9335fb9e4cf,
+            mid_isRestrictedToNonNegative_b108b35ef48e27bd,
             max_mid
           };
 

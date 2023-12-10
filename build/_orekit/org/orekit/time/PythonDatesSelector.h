@@ -15,8 +15,8 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace time {
-      class DatesSelector;
       class AbsoluteDate;
+      class DatesSelector;
     }
   }
 }
@@ -29,12 +29,12 @@ namespace org {
       class PythonDatesSelector : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_finalize_7ae3461a92a43152,
-          mid_pythonDecRef_7ae3461a92a43152,
-          mid_pythonExtension_a27fc9afd27e559d,
-          mid_pythonExtension_fefb08975c10f0a1,
-          mid_selectDates_b7149ea6787a6f3c,
+          mid_init$_0fa09c18fee449d5,
+          mid_finalize_0fa09c18fee449d5,
+          mid_pythonDecRef_0fa09c18fee449d5,
+          mid_pythonExtension_492808a339bfa35f,
+          mid_pythonExtension_3a8e7649f31fdb20,
+          mid_selectDates_8060cef9318d72e3,
           max_mid
         };
 

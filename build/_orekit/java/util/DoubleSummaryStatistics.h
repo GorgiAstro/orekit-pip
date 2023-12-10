@@ -5,10 +5,10 @@
 
 namespace java {
   namespace util {
-    class DoubleSummaryStatistics;
     namespace function {
       class DoubleConsumer;
     }
+    class DoubleSummaryStatistics;
   }
   namespace lang {
     class Class;
@@ -24,16 +24,16 @@ namespace java {
     class DoubleSummaryStatistics : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_7ae3461a92a43152,
-        mid_init$_e91f0c25c14e98ea,
-        mid_accept_77e0f9a1f260e2e5,
-        mid_combine_c0ba40af689196dd,
-        mid_getAverage_456d9a2f64d6b28d,
-        mid_getCount_a27fc9afd27e559d,
-        mid_getMax_456d9a2f64d6b28d,
-        mid_getMin_456d9a2f64d6b28d,
-        mid_getSum_456d9a2f64d6b28d,
-        mid_toString_0090f7797e403f43,
+        mid_init$_0fa09c18fee449d5,
+        mid_init$_098c7cc63aadde07,
+        mid_accept_17db3a65980d3441,
+        mid_combine_fbdc5ba466050c3e,
+        mid_getAverage_dff5885c2c873297,
+        mid_getCount_492808a339bfa35f,
+        mid_getMax_dff5885c2c873297,
+        mid_getMin_dff5885c2c873297,
+        mid_getSum_dff5885c2c873297,
+        mid_toString_11b109bd155ca898,
         max_mid
       };
 

@@ -18,8 +18,8 @@ namespace org {
       class RyuDouble : public ::java::lang::Object {
        public:
         enum {
-          mid_doubleToString_085bbc49599fa163,
-          mid_doubleToString_49a569e07527be6c,
+          mid_doubleToString_e8f51f84167aafbd,
+          mid_doubleToString_16f320e164865244,
           max_mid
         };
 

@@ -3,15 +3,12 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
+  namespace orekit {
+    namespace bodies {
+      class GeodeticPoint;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -21,10 +18,13 @@ namespace org {
       }
     }
   }
-  namespace orekit {
-    namespace bodies {
-      class GeodeticPoint;
-    }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -38,8 +38,8 @@ namespace org {
           class TileAiming : public ::java::lang::Object {
            public:
             enum {
-              mid_alongTileDirection_c57b22dac91cacbc,
-              mid_getSingularPoints_a6156df500549a58,
+              mid_alongTileDirection_cb13d5b31f03b28f,
+              mid_getSingularPoints_2afa36052df4765d,
               max_mid
             };
 

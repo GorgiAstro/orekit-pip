@@ -5,27 +5,27 @@
 
 namespace org {
   namespace hipparchus {
-    namespace linear {
-      class RealVector;
-      class FieldVector;
-      class Array2DRowRealMatrix;
-      class DependentVectorsHandler;
-      class RealMatrix;
-      class RealMatrixFormat;
-      class AnyMatrix;
-      class FieldMatrix;
-    }
     namespace fraction {
       class BigFraction;
       class Fraction;
     }
-    class Field;
+    class CalculusFieldElement;
     namespace exception {
-      class MathIllegalArgumentException;
       class NullArgumentException;
       class MathRuntimeException;
+      class MathIllegalArgumentException;
     }
-    class CalculusFieldElement;
+    namespace linear {
+      class DependentVectorsHandler;
+      class AnyMatrix;
+      class RealMatrix;
+      class RealVector;
+      class Array2DRowRealMatrix;
+      class RealMatrixFormat;
+      class FieldMatrix;
+      class FieldVector;
+    }
+    class Field;
     class FieldElement;
   }
 }
@@ -46,44 +46,44 @@ namespace org {
       class MatrixUtils : public ::java::lang::Object {
        public:
         enum {
-          mid_bigFractionMatrixToRealMatrix_9fb9a1441a6479fb,
-          mid_blockInverse_549c024f6fbaee2a,
-          mid_checkAdditionCompatible_9300e0efbec32708,
-          mid_checkColumnIndex_de5dcced44bc9dea,
-          mid_checkMatrixIndex_017e238265e32530,
-          mid_checkMultiplicationCompatible_9300e0efbec32708,
-          mid_checkRowIndex_de5dcced44bc9dea,
-          mid_checkSameColumnDimension_9300e0efbec32708,
-          mid_checkSameRowDimension_9300e0efbec32708,
-          mid_checkSubMatrixIndex_72f0321bceef35fd,
-          mid_checkSubMatrixIndex_3c5b7326720b7ecb,
-          mid_checkSubtractionCompatible_9300e0efbec32708,
-          mid_checkSymmetric_27ff5cf8ba76b4fe,
-          mid_createColumnFieldMatrix_f4763f915253b903,
-          mid_createColumnRealMatrix_70265c1b8bef83aa,
-          mid_createFieldDiagonalMatrix_f4763f915253b903,
-          mid_createFieldIdentityMatrix_93a1eea693cbc805,
-          mid_createFieldMatrix_e0465faeef73b24e,
-          mid_createFieldMatrix_f040517a28cc4692,
-          mid_createFieldVector_183d789bbe27b047,
-          mid_createFieldVector_9fe3b6e2ee7771dd,
-          mid_createRealDiagonalMatrix_70265c1b8bef83aa,
-          mid_createRealIdentityMatrix_3a4716f77215ee99,
-          mid_createRealMatrix_d983e368b64b23a3,
-          mid_createRealMatrix_4225756160ad1bc1,
-          mid_createRealVector_8cf27fb7e5ba736a,
-          mid_createRealVector_2cafd1b18558ed5f,
-          mid_createRowFieldMatrix_f4763f915253b903,
-          mid_createRowRealMatrix_70265c1b8bef83aa,
-          mid_fractionMatrixToRealMatrix_9fb9a1441a6479fb,
-          mid_inverse_e00cd33aedcc5bd0,
-          mid_inverse_7a6fbf98ec206240,
-          mid_isSymmetric_e41a0097560f9100,
-          mid_matrixExponential_e00cd33aedcc5bd0,
-          mid_orthonormalize_7e40acb6d4e820e7,
-          mid_orthonormalize_17f42c4cc95332ee,
-          mid_solveLowerTriangularSystem_99f2b480bb8e82fc,
-          mid_solveUpperTriangularSystem_99f2b480bb8e82fc,
+          mid_bigFractionMatrixToRealMatrix_d5bd149cee6814f0,
+          mid_blockInverse_cc827997ddc9899a,
+          mid_checkAdditionCompatible_7424e164afa9395a,
+          mid_checkColumnIndex_cff55cfde0e4b27b,
+          mid_checkMatrixIndex_bf0129d8c81da627,
+          mid_checkMultiplicationCompatible_7424e164afa9395a,
+          mid_checkRowIndex_cff55cfde0e4b27b,
+          mid_checkSameColumnDimension_7424e164afa9395a,
+          mid_checkSameRowDimension_7424e164afa9395a,
+          mid_checkSubMatrixIndex_d5740dc7043aa00f,
+          mid_checkSubMatrixIndex_d365082b0116d2a6,
+          mid_checkSubtractionCompatible_7424e164afa9395a,
+          mid_checkSymmetric_21a79182f4dd9085,
+          mid_createColumnFieldMatrix_aa1a2b34c91cf2d0,
+          mid_createColumnRealMatrix_1c14cec8544f26fc,
+          mid_createFieldDiagonalMatrix_aa1a2b34c91cf2d0,
+          mid_createFieldIdentityMatrix_f8cc4c60c0edcead,
+          mid_createFieldMatrix_fd0e2f11fcb2162d,
+          mid_createFieldMatrix_e8e9ca8cc1d2c247,
+          mid_createFieldVector_ec7b1509e2f2d6fd,
+          mid_createFieldVector_02962f1fea91a3cb,
+          mid_createRealDiagonalMatrix_1c14cec8544f26fc,
+          mid_createRealIdentityMatrix_7b5d3ee1211255a1,
+          mid_createRealMatrix_62c0bfb50b5dacc0,
+          mid_createRealMatrix_4410ec92987b66e9,
+          mid_createRealVector_a740f7f012972b3a,
+          mid_createRealVector_b686e6fcbf82678b,
+          mid_createRowFieldMatrix_aa1a2b34c91cf2d0,
+          mid_createRowRealMatrix_1c14cec8544f26fc,
+          mid_fractionMatrixToRealMatrix_d5bd149cee6814f0,
+          mid_inverse_e9b72403ad502221,
+          mid_inverse_b999dd1683240cd1,
+          mid_isSymmetric_fa6807f9c03f4acc,
+          mid_matrixExponential_e9b72403ad502221,
+          mid_orthonormalize_8fe84fea3780e6c0,
+          mid_orthonormalize_a29a6bfc68b3c522,
+          mid_solveLowerTriangularSystem_8d24243836b4d199,
+          mid_solveUpperTriangularSystem_8d24243836b4d199,
           max_mid
         };
 

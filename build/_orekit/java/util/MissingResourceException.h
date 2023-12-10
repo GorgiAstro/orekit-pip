@@ -17,9 +17,9 @@ namespace java {
     class MissingResourceException : public ::java::lang::RuntimeException {
      public:
       enum {
-        mid_init$_de8316969b81209c,
-        mid_getClassName_0090f7797e403f43,
-        mid_getKey_0090f7797e403f43,
+        mid_init$_3c57e287341c9288,
+        mid_getClassName_11b109bd155ca898,
+        mid_getKey_11b109bd155ca898,
         max_mid
       };
 

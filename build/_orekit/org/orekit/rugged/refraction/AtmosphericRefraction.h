@@ -4,7 +4,29 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace rugged {
+      namespace refraction {
+        class AtmosphericComputationParameters;
+      }
+      namespace intersection {
+        class IntersectionAlgorithm;
+      }
+      namespace utils {
+        class NormalizedGeodeticPoint;
+      }
+      namespace linesensor {
+        class LineSensor;
+        class SensorPixel;
+      }
+    }
+  }
   namespace hipparchus {
+    namespace analysis {
+      namespace interpolation {
+        class BilinearInterpolatingFunction;
+      }
+    }
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -12,34 +34,12 @@ namespace org {
         }
       }
     }
-    namespace analysis {
-      namespace interpolation {
-        class BilinearInterpolatingFunction;
-      }
-    }
-  }
-  namespace orekit {
-    namespace rugged {
-      namespace refraction {
-        class AtmosphericComputationParameters;
-      }
-      namespace utils {
-        class NormalizedGeodeticPoint;
-      }
-      namespace intersection {
-        class IntersectionAlgorithm;
-      }
-      namespace linesensor {
-        class SensorPixel;
-        class LineSensor;
-      }
-    }
   }
 }
 namespace java {
   namespace lang {
-    class Class;
     class Boolean;
+    class Class;
     class String;
   }
 }
@@ -53,18 +53,18 @@ namespace org {
         class AtmosphericRefraction : public ::java::lang::Object {
          public:
           enum {
-            mid_applyCorrection_af1abae4bdd3a766,
-            mid_computeGridCorrectionFunctions_641321ef7bfd456d,
-            mid_configureCorrectionGrid_75c5b898b43a4df8,
-            mid_deactivateComputation_7ae3461a92a43152,
-            mid_getBifLine_4c147bc5204adc4e,
-            mid_getBifPixel_4c147bc5204adc4e,
-            mid_getComputationParameters_9bd2b05eb139639e,
-            mid_isSameContext_5e194cdef3826029,
-            mid_mustBeComputed_e470b6d9e0d979db,
-            mid_reactivateComputation_7ae3461a92a43152,
-            mid_setGridSteps_8dbc1129a3c2557a,
-            mid_setInverseLocMargin_77e0f9a1f260e2e5,
+            mid_applyCorrection_a813ead3ffa4bffb,
+            mid_computeGridCorrectionFunctions_2d22bd225207563d,
+            mid_configureCorrectionGrid_5bf94bc89b069b4b,
+            mid_deactivateComputation_0fa09c18fee449d5,
+            mid_getBifLine_bc9d2a40b3c347ee,
+            mid_getBifPixel_bc9d2a40b3c347ee,
+            mid_getComputationParameters_cf83411fa86caecb,
+            mid_isSameContext_20cc85eae3931b01,
+            mid_mustBeComputed_b108b35ef48e27bd,
+            mid_reactivateComputation_0fa09c18fee449d5,
+            mid_setGridSteps_6f37635c3285dbdf,
+            mid_setInverseLocMargin_17db3a65980d3441,
             max_mid
           };
 

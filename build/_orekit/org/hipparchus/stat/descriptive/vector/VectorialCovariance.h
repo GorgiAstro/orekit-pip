@@ -32,13 +32,13 @@ namespace org {
           class VectorialCovariance : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_bc79bc153a2b3c2e,
-              mid_clear_7ae3461a92a43152,
-              mid_equals_229c87223f486349,
-              mid_getN_a27fc9afd27e559d,
-              mid_getResult_7116bbecdd8ceb21,
-              mid_hashCode_f2f64475e4580546,
-              mid_increment_ebc26dcaf4761286,
+              mid_init$_f61a0322e15bde25,
+              mid_clear_0fa09c18fee449d5,
+              mid_equals_65c7d273e80d497a,
+              mid_getN_492808a339bfa35f,
+              mid_getResult_688b496048ff947b,
+              mid_hashCode_570ce0828f81a2c1,
+              mid_increment_fa9d415d19f69361,
               max_mid
             };
 

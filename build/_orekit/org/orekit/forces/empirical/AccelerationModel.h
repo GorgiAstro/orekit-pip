@@ -8,12 +8,12 @@ namespace org {
     class CalculusFieldElement;
   }
   namespace orekit {
-    namespace propagation {
-      class SpacecraftState;
-      class FieldSpacecraftState;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
     }
   }
 }
@@ -32,9 +32,9 @@ namespace org {
         class AccelerationModel : public ::org::orekit::utils::ParameterDriversProvider {
          public:
           enum {
-            mid_init_3d13474d79f5e7bc,
-            mid_signedAmplitude_79518d097c897d26,
-            mid_signedAmplitude_4368a5d862927c08,
+            mid_init_826b4eda94da4e78,
+            mid_signedAmplitude_8bdf60d5551eceaf,
+            mid_signedAmplitude_0b7191d207b9680f,
             max_mid
           };
 

@@ -42,11 +42,11 @@ namespace org {
         class KalmanEstimatorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_addPropagationConfiguration_8b0a5ded17518498,
-            mid_build_37c5ed5e5ccc3381,
-            mid_decomposer_d884c98212f90b29,
-            mid_estimatedMeasurementsParameters_fe7efdeebd9a3d03,
+            mid_init$_0fa09c18fee449d5,
+            mid_addPropagationConfiguration_61fe9d340683de4c,
+            mid_build_55dabf57465c9f6d,
+            mid_decomposer_1c41ab74406b8fc8,
+            mid_estimatedMeasurementsParameters_07ea1a66b45abd16,
             max_mid
           };
 

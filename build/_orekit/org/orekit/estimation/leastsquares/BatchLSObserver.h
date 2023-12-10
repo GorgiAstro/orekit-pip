@@ -16,16 +16,16 @@ namespace org {
     }
   }
   namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class EstimationsProvider;
+      }
+    }
     namespace orbits {
       class Orbit;
     }
     namespace utils {
       class ParameterDriversList;
-    }
-    namespace estimation {
-      namespace measurements {
-        class EstimationsProvider;
-      }
     }
   }
 }
@@ -44,7 +44,7 @@ namespace org {
         class BatchLSObserver : public ::java::lang::Object {
          public:
           enum {
-            mid_evaluationPerformed_385d95579a122c42,
+            mid_evaluationPerformed_1c346acaad15e94a,
             max_mid
           };
 

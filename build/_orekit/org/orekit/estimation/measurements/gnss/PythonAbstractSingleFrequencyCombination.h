@@ -5,6 +5,9 @@
 
 namespace org {
   namespace orekit {
+    namespace gnss {
+      class SatelliteSystem;
+    }
     namespace estimation {
       namespace measurements {
         namespace gnss {
@@ -12,15 +15,12 @@ namespace org {
         }
       }
     }
-    namespace gnss {
-      class SatelliteSystem;
-    }
   }
 }
 namespace java {
   namespace lang {
-    class Throwable;
     class Class;
+    class Throwable;
   }
 }
 template<class T> class JArray;
@@ -34,12 +34,12 @@ namespace org {
           class PythonAbstractSingleFrequencyCombination : public ::org::orekit::estimation::measurements::gnss::AbstractSingleFrequencyCombination {
            public:
             enum {
-              mid_init$_809b540e573977f2,
-              mid_finalize_7ae3461a92a43152,
-              mid_getCombinedValue_824133ce4aec3505,
-              mid_pythonDecRef_7ae3461a92a43152,
-              mid_pythonExtension_a27fc9afd27e559d,
-              mid_pythonExtension_fefb08975c10f0a1,
+              mid_init$_5f9f97930f6e42c6,
+              mid_finalize_0fa09c18fee449d5,
+              mid_getCombinedValue_86ffecc08a63eff0,
+              mid_pythonDecRef_0fa09c18fee449d5,
+              mid_pythonExtension_492808a339bfa35f,
+              mid_pythonExtension_3a8e7649f31fdb20,
               max_mid
             };
 

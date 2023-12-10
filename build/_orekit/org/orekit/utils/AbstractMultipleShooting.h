@@ -3,22 +3,22 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      class SpacecraftState;
-    }
-    namespace utils {
-      class MultipleShooting;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace utils {
+      class MultipleShooting;
+    }
+    namespace propagation {
+      class SpacecraftState;
+    }
   }
 }
 template<class T> class JArray;
@@ -30,23 +30,23 @@ namespace org {
       class AbstractMultipleShooting : public ::java::lang::Object {
        public:
         enum {
-          mid_addConstraint_78e41e7b5124a628,
-          mid_compute_a6156df500549a58,
-          mid_setEpochFreedom_bc79bc153a2b3c2e,
-          mid_setPatchPointComponentFreedom_175ef6117ed1e5b6,
-          mid_setScaleLength_77e0f9a1f260e2e5,
-          mid_setScaleTime_77e0f9a1f260e2e5,
-          mid_getPatchPoint_881fd9055e653db3,
-          mid_computeEpochJacobianMatrix_8b899bcca8eef41a,
-          mid_updateAdditionalConstraints_7d4f41c65056f174,
-          mid_computeAdditionalConstraints_5c4ec51dfa4e445c,
-          mid_computeAdditionalJacobianMatrix_8b899bcca8eef41a,
-          mid_getAugmentedInitialState_881fd9055e653db3,
-          mid_getNumberOfFreeComponents_f2f64475e4580546,
-          mid_getNumberOfConstraints_f2f64475e4580546,
-          mid_getFreeCompsMap_e998aa0f1d876d6f,
-          mid_getConstraintsMap_d6753b7055940a54,
-          mid_getPatchedSpacecraftState_a6156df500549a58,
+          mid_addConstraint_1506189166690b5e,
+          mid_compute_2afa36052df4765d,
+          mid_setEpochFreedom_f61a0322e15bde25,
+          mid_setPatchPointComponentFreedom_1d19b51c24eaaa6c,
+          mid_setScaleLength_17db3a65980d3441,
+          mid_setScaleTime_17db3a65980d3441,
+          mid_getPatchPoint_8f68ada11fb66675,
+          mid_getConstraintsMap_6f5a75ccd8c04465,
+          mid_getFreeCompsMap_43b0b5b620a83f8e,
+          mid_getNumberOfFreeComponents_570ce0828f81a2c1,
+          mid_getPatchedSpacecraftState_2afa36052df4765d,
+          mid_updateAdditionalConstraints_7169a8c8a60b8b2c,
+          mid_getNumberOfConstraints_570ce0828f81a2c1,
+          mid_getAugmentedInitialState_8f68ada11fb66675,
+          mid_computeAdditionalJacobianMatrix_11c2223c723fd443,
+          mid_computeAdditionalConstraints_ae31e5696ec6455b,
+          mid_computeEpochJacobianMatrix_11c2223c723fd443,
           max_mid
         };
 

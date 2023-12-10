@@ -4,7 +4,15 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    class Field;
+  }
   namespace orekit {
+    namespace bodies {
+      class GeodeticPoint;
+      class FieldGeodeticPoint;
+    }
     namespace models {
       namespace earth {
         namespace troposphere {
@@ -12,21 +20,13 @@ namespace org {
         }
       }
     }
-    namespace bodies {
-      class GeodeticPoint;
-      class FieldGeodeticPoint;
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
     namespace utils {
       class ParameterDriver;
     }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    class Field;
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -49,16 +49,16 @@ namespace org {
           class PythonDiscreteTroposphericModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_finalize_7ae3461a92a43152,
-              mid_getParameters_7cdc325af0834901,
-              mid_getParameters_62f3dd52a41b90da,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_pathDelay_af133f80cdba1dc2,
-              mid_pathDelay_0326270bf0e8ed17,
-              mid_pythonDecRef_7ae3461a92a43152,
-              mid_pythonExtension_a27fc9afd27e559d,
-              mid_pythonExtension_fefb08975c10f0a1,
+              mid_init$_0fa09c18fee449d5,
+              mid_finalize_0fa09c18fee449d5,
+              mid_getParameters_60c7040667a7dc5c,
+              mid_getParameters_f040a403cffae196,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_pathDelay_fe3b5c46874ab115,
+              mid_pathDelay_ff7a895eb6f0af2e,
+              mid_pythonDecRef_0fa09c18fee449d5,
+              mid_pythonExtension_492808a339bfa35f,
+              mid_pythonExtension_3a8e7649f31fdb20,
               max_mid
             };
 

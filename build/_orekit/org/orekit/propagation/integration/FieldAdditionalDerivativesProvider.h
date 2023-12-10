@@ -3,23 +3,23 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace integration {
-        class FieldCombinedDerivatives;
-      }
-      class FieldSpacecraftState;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      class FieldSpacecraftState;
+      namespace integration {
+        class FieldCombinedDerivatives;
+      }
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+    }
   }
 }
 template<class T> class JArray;
@@ -32,11 +32,11 @@ namespace org {
         class FieldAdditionalDerivativesProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_combinedDerivatives_ae4cc0c1894391de,
-            mid_getDimension_f2f64475e4580546,
-            mid_getName_0090f7797e403f43,
-            mid_init_acdd8180a5dc1a8d,
-            mid_yields_91c945ca7903e8ac,
+            mid_combinedDerivatives_bed9dfcebfaf5040,
+            mid_getDimension_570ce0828f81a2c1,
+            mid_getName_11b109bd155ca898,
+            mid_init_8e8de2be1664674a,
+            mid_yields_1b0abd4f90ebd0eb,
             max_mid
           };
 

@@ -5,15 +5,15 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class NullArgumentException;
-      class MathIllegalArgumentException;
-    }
     namespace analysis {
       namespace interpolation {
         class PiecewiseBicubicSplineInterpolatingFunction;
         class BivariateGridInterpolator;
       }
+    }
+    namespace exception {
+      class NullArgumentException;
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -32,8 +32,8 @@ namespace org {
         class PiecewiseBicubicSplineInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_interpolate_bb79500d2ea11bdb,
+            mid_init$_0fa09c18fee449d5,
+            mid_interpolate_36a8ea44b704c39a,
             max_mid
           };
 

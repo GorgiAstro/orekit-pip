@@ -3,27 +3,27 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace sampling {
-        class OrekitFixedStepHandler;
-        class OrekitStepInterpolator;
-        class OrekitStepHandler;
-      }
-      class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace sampling {
+        class OrekitStepHandler;
+        class OrekitFixedStepHandler;
+        class OrekitStepInterpolator;
+      }
+      class SpacecraftState;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
   }
 }
 template<class T> class JArray;
@@ -36,16 +36,16 @@ namespace org {
         class StepHandlerMultiplexer : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_add_dbe30cb4a191086d,
-            mid_add_ae887d6ebf6ba107,
-            mid_clear_7ae3461a92a43152,
-            mid_finish_2b88003f931f70a7,
-            mid_getHandlers_a6156df500549a58,
-            mid_handleStep_eb797cf50ec4b2c4,
-            mid_init_3d13474d79f5e7bc,
-            mid_remove_1ab9ba6f7cccd409,
-            mid_remove_dbe30cb4a191086d,
+            mid_init$_0fa09c18fee449d5,
+            mid_add_bacb99df21c3a796,
+            mid_add_768baea54d9d6ae5,
+            mid_clear_0fa09c18fee449d5,
+            mid_finish_0ee5c56004643a2e,
+            mid_getHandlers_2afa36052df4765d,
+            mid_handleStep_aa75aa80a734fb3b,
+            mid_init_826b4eda94da4e78,
+            mid_remove_6747b2cdc04692d7,
+            mid_remove_bacb99df21c3a796,
             max_mid
           };
 

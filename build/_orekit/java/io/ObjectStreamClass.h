@@ -22,14 +22,14 @@ namespace java {
     class ObjectStreamClass : public ::java::lang::Object {
      public:
       enum {
-        mid_forClass_8f66acc08d2a174c,
-        mid_getField_416db66042eed71e,
-        mid_getFields_9a5c7ee21ac0602b,
-        mid_getName_0090f7797e403f43,
-        mid_getSerialVersionUID_a27fc9afd27e559d,
-        mid_lookup_229579f78ca1ccc8,
-        mid_lookupAny_229579f78ca1ccc8,
-        mid_toString_0090f7797e403f43,
+        mid_forClass_7c16c5008b34b3db,
+        mid_getField_f1b0f4b30d446865,
+        mid_getFields_a46c3bb6482c1ee0,
+        mid_getName_11b109bd155ca898,
+        mid_getSerialVersionUID_492808a339bfa35f,
+        mid_lookup_9098be045c4c24e9,
+        mid_lookupAny_9098be045c4c24e9,
+        mid_toString_11b109bd155ca898,
         max_mid
       };
 

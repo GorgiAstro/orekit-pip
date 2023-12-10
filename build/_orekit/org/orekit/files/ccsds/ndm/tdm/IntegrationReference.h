@@ -34,8 +34,8 @@ namespace org {
             class IntegrationReference : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_1b2818a13c1a4c89,
-                mid_values_7a01740a7f27efe4,
+                mid_valueOf_ec06b1d33f1a7a01,
+                mid_values_b68390f3f4c277d2,
                 max_mid
               };
 

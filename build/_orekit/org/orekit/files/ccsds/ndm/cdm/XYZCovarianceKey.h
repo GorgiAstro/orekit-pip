@@ -14,10 +14,10 @@ namespace org {
           }
         }
         namespace utils {
-          class ContextBinding;
           namespace lexical {
             class ParseToken;
           }
+          class ContextBinding;
         }
       }
     }
@@ -41,9 +41,9 @@ namespace org {
             class XYZCovarianceKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_9ddb3430030ce857,
-                mid_valueOf_55300e18a2255910,
-                mid_values_14c11261ca940f0a,
+                mid_process_929d2ebdaaf05df0,
+                mid_valueOf_2d389747eea72de0,
+                mid_values_3bcadb496f18c75c,
                 max_mid
               };
 

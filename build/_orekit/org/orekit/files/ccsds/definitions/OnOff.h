@@ -31,9 +31,9 @@ namespace org {
           class OnOff : public ::java::lang::Enum {
            public:
             enum {
-              mid_isOn_e470b6d9e0d979db,
-              mid_valueOf_407ee23562aadd5f,
-              mid_values_8ef873722278102a,
+              mid_isOn_b108b35ef48e27bd,
+              mid_valueOf_2fa16bd229e33be8,
+              mid_values_fa00b235f66b4b90,
               max_mid
             };
 

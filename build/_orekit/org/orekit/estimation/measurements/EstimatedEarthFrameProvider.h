@@ -4,28 +4,28 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace frames {
+      class FieldStaticTransform;
+      class TransformProvider;
+      class FieldTransform;
+      class Transform;
+      class StaticTransform;
+    }
+    namespace time {
+      class UT1Scale;
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+  }
   namespace hipparchus {
     namespace analysis {
       namespace differentiation {
         class Gradient;
       }
-    }
-  }
-  namespace orekit {
-    namespace time {
-      class UT1Scale;
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-    namespace frames {
-      class FieldStaticTransform;
-      class StaticTransform;
-      class TransformProvider;
-      class FieldTransform;
-      class Transform;
-    }
-    namespace utils {
-      class ParameterDriver;
     }
   }
 }
@@ -49,19 +49,19 @@ namespace org {
         class EstimatedEarthFrameProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_954476a37d8406bd,
-            mid_getEstimatedUT1_2493bae90e875538,
-            mid_getPolarDriftXDriver_ac0e5f8f2fa86f4f,
-            mid_getPolarDriftYDriver_ac0e5f8f2fa86f4f,
-            mid_getPolarOffsetXDriver_ac0e5f8f2fa86f4f,
-            mid_getPolarOffsetYDriver_ac0e5f8f2fa86f4f,
-            mid_getPrimeMeridianDriftDriver_ac0e5f8f2fa86f4f,
-            mid_getPrimeMeridianOffsetDriver_ac0e5f8f2fa86f4f,
-            mid_getStaticTransform_96493aacdf1acda1,
-            mid_getStaticTransform_490485462b5938a0,
-            mid_getTransform_d55545a64ea4a9a7,
-            mid_getTransform_0b4f24249033b631,
-            mid_getTransform_0cded0dfc13641b5,
+            mid_init$_a578b266e00b830c,
+            mid_getEstimatedUT1_b384d97b3c055d24,
+            mid_getPolarDriftXDriver_a25ed222178aa59f,
+            mid_getPolarDriftYDriver_a25ed222178aa59f,
+            mid_getPolarOffsetXDriver_a25ed222178aa59f,
+            mid_getPolarOffsetYDriver_a25ed222178aa59f,
+            mid_getPrimeMeridianDriftDriver_a25ed222178aa59f,
+            mid_getPrimeMeridianOffsetDriver_a25ed222178aa59f,
+            mid_getStaticTransform_edee248bbd22a723,
+            mid_getStaticTransform_eae0db96fe973887,
+            mid_getTransform_687985c59478d29c,
+            mid_getTransform_f7bf3269025b86c3,
+            mid_getTransform_e79c22b40d6fa7e0,
             max_mid
           };
 

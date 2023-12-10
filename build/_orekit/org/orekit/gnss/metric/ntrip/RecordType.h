@@ -31,8 +31,8 @@ namespace org {
           class RecordType : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_7cedf5e291fba3f6,
-              mid_values_176b890e867e8a48,
+              mid_valueOf_b6c068ef5a333889,
+              mid_values_251a10f9b06adc38,
               max_mid
             };
 

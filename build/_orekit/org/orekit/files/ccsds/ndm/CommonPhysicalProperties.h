@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace files {
       namespace ccsds {
         namespace definitions {
           class FrameFacade;
         }
       }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -38,42 +38,42 @@ namespace org {
           class CommonPhysicalProperties : public ::org::orekit::files::ccsds::section::CommentsContainer {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_getMaxRcs_456d9a2f64d6b28d,
-              mid_getMinRcs_456d9a2f64d6b28d,
-              mid_getOebAreaAlongIntermediate_456d9a2f64d6b28d,
-              mid_getOebAreaAlongMax_456d9a2f64d6b28d,
-              mid_getOebAreaAlongMin_456d9a2f64d6b28d,
-              mid_getOebIntermediate_456d9a2f64d6b28d,
-              mid_getOebMax_456d9a2f64d6b28d,
-              mid_getOebMin_456d9a2f64d6b28d,
-              mid_getOebParentFrame_aa70fdb14ae9305f,
-              mid_getOebParentFrameEpoch_aaa854c403487cf3,
-              mid_getOebQ_db551426640930fe,
-              mid_getRcs_456d9a2f64d6b28d,
-              mid_getReflectance_456d9a2f64d6b28d,
-              mid_getVmAbsolute_456d9a2f64d6b28d,
-              mid_getVmApparent_456d9a2f64d6b28d,
-              mid_getVmApparentMax_456d9a2f64d6b28d,
-              mid_getVmApparentMin_456d9a2f64d6b28d,
-              mid_setMaxRcs_77e0f9a1f260e2e5,
-              mid_setMinRcs_77e0f9a1f260e2e5,
-              mid_setOebAreaAlongIntermediate_77e0f9a1f260e2e5,
-              mid_setOebAreaAlongMax_77e0f9a1f260e2e5,
-              mid_setOebAreaAlongMin_77e0f9a1f260e2e5,
-              mid_setOebIntermediate_77e0f9a1f260e2e5,
-              mid_setOebMax_77e0f9a1f260e2e5,
-              mid_setOebMin_77e0f9a1f260e2e5,
-              mid_setOebParentFrame_a455f3ff24eb0b47,
-              mid_setOebParentFrameEpoch_e82d68cd9f886886,
-              mid_setOebQ_987a5fb872043b12,
-              mid_setRcs_77e0f9a1f260e2e5,
-              mid_setReflectance_77e0f9a1f260e2e5,
-              mid_setVmAbsolute_77e0f9a1f260e2e5,
-              mid_setVmApparent_77e0f9a1f260e2e5,
-              mid_setVmApparentMax_77e0f9a1f260e2e5,
-              mid_setVmApparentMin_77e0f9a1f260e2e5,
-              mid_validate_77e0f9a1f260e2e5,
+              mid_init$_0fa09c18fee449d5,
+              mid_getMaxRcs_dff5885c2c873297,
+              mid_getMinRcs_dff5885c2c873297,
+              mid_getOebAreaAlongIntermediate_dff5885c2c873297,
+              mid_getOebAreaAlongMax_dff5885c2c873297,
+              mid_getOebAreaAlongMin_dff5885c2c873297,
+              mid_getOebIntermediate_dff5885c2c873297,
+              mid_getOebMax_dff5885c2c873297,
+              mid_getOebMin_dff5885c2c873297,
+              mid_getOebParentFrame_5d5dd95b04037824,
+              mid_getOebParentFrameEpoch_85703d13e302437e,
+              mid_getOebQ_18aa64800eb51ca4,
+              mid_getRcs_dff5885c2c873297,
+              mid_getReflectance_dff5885c2c873297,
+              mid_getVmAbsolute_dff5885c2c873297,
+              mid_getVmApparent_dff5885c2c873297,
+              mid_getVmApparentMax_dff5885c2c873297,
+              mid_getVmApparentMin_dff5885c2c873297,
+              mid_setMaxRcs_17db3a65980d3441,
+              mid_setMinRcs_17db3a65980d3441,
+              mid_setOebAreaAlongIntermediate_17db3a65980d3441,
+              mid_setOebAreaAlongMax_17db3a65980d3441,
+              mid_setOebAreaAlongMin_17db3a65980d3441,
+              mid_setOebIntermediate_17db3a65980d3441,
+              mid_setOebMax_17db3a65980d3441,
+              mid_setOebMin_17db3a65980d3441,
+              mid_setOebParentFrame_849bc9e3b38b9bcb,
+              mid_setOebParentFrameEpoch_600a2a61652bc473,
+              mid_setOebQ_bb79ca80d85d0a66,
+              mid_setRcs_17db3a65980d3441,
+              mid_setReflectance_17db3a65980d3441,
+              mid_setVmAbsolute_17db3a65980d3441,
+              mid_setVmApparent_17db3a65980d3441,
+              mid_setVmApparentMax_17db3a65980d3441,
+              mid_setVmApparentMin_17db3a65980d3441,
+              mid_validate_17db3a65980d3441,
               max_mid
             };
 

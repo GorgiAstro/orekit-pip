@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frame;
+    namespace utils {
+      class ExtendedPVCoordinatesProvider;
     }
     namespace time {
       class AbsoluteDate;
     }
-    namespace utils {
-      class ExtendedPVCoordinatesProvider;
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -31,9 +31,9 @@ namespace org {
         class Galileo : public ::org::orekit::gnss::attitude::AbstractGNSSAttitudeProvider {
          public:
           enum {
-            mid_init$_c3bb01d9fe1b183b,
-            mid_correctedYaw_89a7d6ae4e1f14a2,
-            mid_correctedYaw_70e28bc10c6688c2,
+            mid_init$_ffdc3ec10e7d4912,
+            mid_correctedYaw_64e3133ed57cb807,
+            mid_correctedYaw_dbb16eda5c9f6b1d,
             max_mid
           };
 

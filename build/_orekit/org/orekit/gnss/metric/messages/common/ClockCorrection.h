@@ -20,10 +20,10 @@ namespace org {
             class ClockCorrection : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_d0d6094fbd7015c5,
-                mid_getDeltaClockC0_456d9a2f64d6b28d,
-                mid_getDeltaClockC1_456d9a2f64d6b28d,
-                mid_getDeltaClockC2_456d9a2f64d6b28d,
+                mid_init$_2c56b6dd4d4b1dec,
+                mid_getDeltaClockC0_dff5885c2c873297,
+                mid_getDeltaClockC1_dff5885c2c873297,
+                mid_getDeltaClockC2_dff5885c2c873297,
                 max_mid
               };
 

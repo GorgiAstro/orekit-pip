@@ -5,35 +5,35 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
     namespace util {
       class FieldBlendable;
     }
-    class Field;
     namespace exception {
-      class MathIllegalArgumentException;
       class MathRuntimeException;
+      class MathIllegalArgumentException;
     }
-    class CalculusFieldElement;
+    class Field;
   }
 }
 namespace java {
+  namespace text {
+    class NumberFormat;
+  }
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
     class String;
-  }
-  namespace text {
-    class NumberFormat;
   }
 }
 template<class T> class JArray;
@@ -47,100 +47,100 @@ namespace org {
           class FieldVector3D : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_4c337e4c1ec6f647,
-              mid_init$_e374b5b67eb31d56,
-              mid_init$_28d2e63284f478a9,
-              mid_init$_e557ab7861ec00ef,
-              mid_init$_a651cce8974e738f,
-              mid_init$_46c20bc1304e9cc4,
-              mid_init$_5b191078c5a85105,
-              mid_init$_af4d414625f043d5,
-              mid_init$_7e156e7c81332423,
-              mid_init$_63626756dee3b73a,
-              mid_init$_7d0dc0ba9dd5e66a,
-              mid_init$_d87ce86302ad73a3,
-              mid_init$_8a88423916495b27,
-              mid_init$_5b54afcd6d70763a,
-              mid_init$_2787625ea479c9e3,
-              mid_init$_b0a48e37fefe939b,
-              mid_add_8ff2edc0ecba4b6e,
-              mid_add_89718cf054290f11,
-              mid_add_2c84db90addb49ea,
-              mid_add_fe7cfe54af0f98e9,
-              mid_add_164cf969d0cc5992,
-              mid_add_2d47fae29783a957,
-              mid_angle_58fb8a4f78602c1f,
-              mid_angle_7e4981d8fe7bfeef,
-              mid_angle_126ffc68bc5f01b4,
-              mid_blendArithmeticallyWith_e924de5c5bb207b6,
-              mid_crossProduct_8ff2edc0ecba4b6e,
-              mid_crossProduct_89718cf054290f11,
-              mid_crossProduct_5ff6d50248c66b4d,
-              mid_crossProduct_764ae5b7ae58b01f,
-              mid_crossProduct_525ce17d197a32fe,
-              mid_distance_561f21e3ac14fa34,
-              mid_distance_5f51423dbe425445,
-              mid_distance_58fb8a4f78602c1f,
-              mid_distance_126ffc68bc5f01b4,
-              mid_distance_7e4981d8fe7bfeef,
-              mid_distance1_561f21e3ac14fa34,
-              mid_distance1_5f51423dbe425445,
-              mid_distance1_58fb8a4f78602c1f,
-              mid_distance1_7e4981d8fe7bfeef,
-              mid_distance1_126ffc68bc5f01b4,
-              mid_distanceInf_561f21e3ac14fa34,
-              mid_distanceInf_5f51423dbe425445,
-              mid_distanceInf_58fb8a4f78602c1f,
-              mid_distanceInf_7e4981d8fe7bfeef,
-              mid_distanceInf_126ffc68bc5f01b4,
-              mid_distanceSq_561f21e3ac14fa34,
-              mid_distanceSq_5f51423dbe425445,
-              mid_distanceSq_58fb8a4f78602c1f,
-              mid_distanceSq_126ffc68bc5f01b4,
-              mid_distanceSq_7e4981d8fe7bfeef,
-              mid_dotProduct_561f21e3ac14fa34,
-              mid_dotProduct_5f51423dbe425445,
-              mid_dotProduct_58fb8a4f78602c1f,
-              mid_dotProduct_126ffc68bc5f01b4,
-              mid_dotProduct_7e4981d8fe7bfeef,
-              mid_equals_229c87223f486349,
-              mid_getAlpha_e6d4d3215c30992a,
-              mid_getDelta_e6d4d3215c30992a,
-              mid_getMinusI_dc29118b4d22b28d,
-              mid_getMinusJ_dc29118b4d22b28d,
-              mid_getMinusK_dc29118b4d22b28d,
-              mid_getNaN_dc29118b4d22b28d,
-              mid_getNegativeInfinity_dc29118b4d22b28d,
-              mid_getNorm_e6d4d3215c30992a,
-              mid_getNorm1_e6d4d3215c30992a,
-              mid_getNormInf_e6d4d3215c30992a,
-              mid_getNormSq_e6d4d3215c30992a,
-              mid_getPlusI_dc29118b4d22b28d,
-              mid_getPlusJ_dc29118b4d22b28d,
-              mid_getPlusK_dc29118b4d22b28d,
-              mid_getPositiveInfinity_dc29118b4d22b28d,
-              mid_getX_e6d4d3215c30992a,
-              mid_getY_e6d4d3215c30992a,
-              mid_getZ_e6d4d3215c30992a,
-              mid_getZero_dc29118b4d22b28d,
-              mid_hashCode_f2f64475e4580546,
-              mid_isInfinite_e470b6d9e0d979db,
-              mid_isNaN_e470b6d9e0d979db,
-              mid_negate_5791f80683b5227e,
-              mid_normalize_5791f80683b5227e,
-              mid_orthogonal_5791f80683b5227e,
-              mid_scalarMultiply_14b0f58c06667f17,
-              mid_scalarMultiply_3023f195d3eecf7e,
-              mid_subtract_8ff2edc0ecba4b6e,
-              mid_subtract_89718cf054290f11,
-              mid_subtract_2c84db90addb49ea,
-              mid_subtract_164cf969d0cc5992,
-              mid_subtract_fe7cfe54af0f98e9,
-              mid_subtract_2d47fae29783a957,
-              mid_toArray_01c7d10e96d5cf94,
-              mid_toString_0090f7797e403f43,
-              mid_toString_aed149be89fb33b9,
-              mid_toVector3D_17a952530a808943,
+              mid_init$_72479ee08453ef97,
+              mid_init$_ad32522e5930a207,
+              mid_init$_a10b3e52820c4332,
+              mid_init$_0f8ae3b7a8c2efe4,
+              mid_init$_53343a27568c8665,
+              mid_init$_eee0c82b0b9e16e9,
+              mid_init$_82fa7e789a6ae1f6,
+              mid_init$_dd5e6f81820c071a,
+              mid_init$_0d386383f9d751b1,
+              mid_init$_952ae6ca33b5ca7b,
+              mid_init$_787507660b5345da,
+              mid_init$_2a7620523897e25e,
+              mid_init$_1a3e2f5679cdf6cc,
+              mid_init$_a7e0c5fb28eb8bfe,
+              mid_init$_0900299079acfdca,
+              mid_init$_3b1182b8003be140,
+              mid_add_a173408e2b1f78b2,
+              mid_add_7a9aa2e8b906f1a5,
+              mid_add_36f09bdcd3459c44,
+              mid_add_0a08f5ab3829235f,
+              mid_add_be17efda88c8b2a8,
+              mid_add_582f02609e2e5273,
+              mid_angle_664dcb5ef2f7cc2b,
+              mid_angle_dafa2886884c755a,
+              mid_angle_659f5a2caf346aee,
+              mid_blendArithmeticallyWith_8611389cf23e9404,
+              mid_crossProduct_a173408e2b1f78b2,
+              mid_crossProduct_7a9aa2e8b906f1a5,
+              mid_crossProduct_9dc4d243618c0821,
+              mid_crossProduct_a32a7e5b76d39058,
+              mid_crossProduct_13c107d11bb0484c,
+              mid_distance_11b158fbf85bdc54,
+              mid_distance_2f5dcdf943d50d31,
+              mid_distance_664dcb5ef2f7cc2b,
+              mid_distance_659f5a2caf346aee,
+              mid_distance_dafa2886884c755a,
+              mid_distance1_11b158fbf85bdc54,
+              mid_distance1_2f5dcdf943d50d31,
+              mid_distance1_664dcb5ef2f7cc2b,
+              mid_distance1_659f5a2caf346aee,
+              mid_distance1_dafa2886884c755a,
+              mid_distanceInf_11b158fbf85bdc54,
+              mid_distanceInf_2f5dcdf943d50d31,
+              mid_distanceInf_664dcb5ef2f7cc2b,
+              mid_distanceInf_659f5a2caf346aee,
+              mid_distanceInf_dafa2886884c755a,
+              mid_distanceSq_11b158fbf85bdc54,
+              mid_distanceSq_2f5dcdf943d50d31,
+              mid_distanceSq_664dcb5ef2f7cc2b,
+              mid_distanceSq_dafa2886884c755a,
+              mid_distanceSq_659f5a2caf346aee,
+              mid_dotProduct_11b158fbf85bdc54,
+              mid_dotProduct_2f5dcdf943d50d31,
+              mid_dotProduct_664dcb5ef2f7cc2b,
+              mid_dotProduct_659f5a2caf346aee,
+              mid_dotProduct_dafa2886884c755a,
+              mid_equals_65c7d273e80d497a,
+              mid_getAlpha_eba8e72a22c984ac,
+              mid_getDelta_eba8e72a22c984ac,
+              mid_getMinusI_202e7b3b5ed01afc,
+              mid_getMinusJ_202e7b3b5ed01afc,
+              mid_getMinusK_202e7b3b5ed01afc,
+              mid_getNaN_202e7b3b5ed01afc,
+              mid_getNegativeInfinity_202e7b3b5ed01afc,
+              mid_getNorm_eba8e72a22c984ac,
+              mid_getNorm1_eba8e72a22c984ac,
+              mid_getNormInf_eba8e72a22c984ac,
+              mid_getNormSq_eba8e72a22c984ac,
+              mid_getPlusI_202e7b3b5ed01afc,
+              mid_getPlusJ_202e7b3b5ed01afc,
+              mid_getPlusK_202e7b3b5ed01afc,
+              mid_getPositiveInfinity_202e7b3b5ed01afc,
+              mid_getX_eba8e72a22c984ac,
+              mid_getY_eba8e72a22c984ac,
+              mid_getZ_eba8e72a22c984ac,
+              mid_getZero_202e7b3b5ed01afc,
+              mid_hashCode_570ce0828f81a2c1,
+              mid_isInfinite_b108b35ef48e27bd,
+              mid_isNaN_b108b35ef48e27bd,
+              mid_negate_716f50c86ffc8da7,
+              mid_normalize_716f50c86ffc8da7,
+              mid_orthogonal_716f50c86ffc8da7,
+              mid_scalarMultiply_3e101a58a2527fdf,
+              mid_scalarMultiply_e0e563985265c470,
+              mid_subtract_a173408e2b1f78b2,
+              mid_subtract_7a9aa2e8b906f1a5,
+              mid_subtract_36f09bdcd3459c44,
+              mid_subtract_0a08f5ab3829235f,
+              mid_subtract_be17efda88c8b2a8,
+              mid_subtract_582f02609e2e5273,
+              mid_toArray_226a0b2040b1d2e1,
+              mid_toString_11b109bd155ca898,
+              mid_toString_7b429db583278c20,
+              mid_toVector3D_d52645e0d4c07563,
               max_mid
             };
 
@@ -179,8 +179,8 @@ namespace org {
             FieldVector3D add(const ::org::hipparchus::CalculusFieldElement &, const FieldVector3D &) const;
             FieldVector3D add(const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &) const;
             static ::org::hipparchus::CalculusFieldElement angle(const FieldVector3D &, const FieldVector3D &);
-            static ::org::hipparchus::CalculusFieldElement angle(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const FieldVector3D &);
             static ::org::hipparchus::CalculusFieldElement angle(const FieldVector3D &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &);
+            static ::org::hipparchus::CalculusFieldElement angle(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const FieldVector3D &);
             FieldVector3D blendArithmeticallyWith(const FieldVector3D &, const ::org::hipparchus::CalculusFieldElement &) const;
             FieldVector3D crossProduct(const FieldVector3D &) const;
             FieldVector3D crossProduct(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &) const;
@@ -190,8 +190,8 @@ namespace org {
             ::org::hipparchus::CalculusFieldElement distance(const FieldVector3D &) const;
             ::org::hipparchus::CalculusFieldElement distance(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &) const;
             static ::org::hipparchus::CalculusFieldElement distance(const FieldVector3D &, const FieldVector3D &);
-            static ::org::hipparchus::CalculusFieldElement distance(const FieldVector3D &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &);
             static ::org::hipparchus::CalculusFieldElement distance(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const FieldVector3D &);
+            static ::org::hipparchus::CalculusFieldElement distance(const FieldVector3D &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &);
             ::org::hipparchus::CalculusFieldElement distance1(const FieldVector3D &) const;
             ::org::hipparchus::CalculusFieldElement distance1(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &) const;
             static ::org::hipparchus::CalculusFieldElement distance1(const FieldVector3D &, const FieldVector3D &);
@@ -210,8 +210,8 @@ namespace org {
             ::org::hipparchus::CalculusFieldElement dotProduct(const FieldVector3D &) const;
             ::org::hipparchus::CalculusFieldElement dotProduct(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &) const;
             static ::org::hipparchus::CalculusFieldElement dotProduct(const FieldVector3D &, const FieldVector3D &);
-            static ::org::hipparchus::CalculusFieldElement dotProduct(const FieldVector3D &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &);
             static ::org::hipparchus::CalculusFieldElement dotProduct(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const FieldVector3D &);
+            static ::org::hipparchus::CalculusFieldElement dotProduct(const FieldVector3D &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &);
             jboolean equals(const ::java::lang::Object &) const;
             ::org::hipparchus::CalculusFieldElement getAlpha() const;
             ::org::hipparchus::CalculusFieldElement getDelta() const;
@@ -243,8 +243,8 @@ namespace org {
             FieldVector3D subtract(const FieldVector3D &) const;
             FieldVector3D subtract(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &) const;
             FieldVector3D subtract(jdouble, const FieldVector3D &) const;
-            FieldVector3D subtract(const ::org::hipparchus::CalculusFieldElement &, const FieldVector3D &) const;
             FieldVector3D subtract(jdouble, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &) const;
+            FieldVector3D subtract(const ::org::hipparchus::CalculusFieldElement &, const FieldVector3D &) const;
             FieldVector3D subtract(const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &) const;
             JArray< ::org::hipparchus::CalculusFieldElement > toArray() const;
             ::java::lang::String toString() const;

@@ -6,18 +6,18 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      class Point;
+      class Vector;
       namespace partitioning {
+        class AbstractRegion;
+        class SubHyperplane;
         class Transform;
         class Region;
-        class Hyperplane;
         class Region$Location;
-        class AbstractRegion;
-        class BSPTree;
-        class SubHyperplane;
+        class Hyperplane;
         class BoundaryProjection;
+        class BSPTree;
       }
-      class Vector;
+      class Point;
       class Space;
     }
   }
@@ -37,30 +37,30 @@ namespace org {
         class AbstractRegion : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0ac82b5b7c238a40,
-            mid_applyTransform_77825de2d339997c,
-            mid_buildNew_3384298d17fb447d,
-            mid_checkPoint_153fabdeca87a5c4,
-            mid_checkPoint_72bc5cad7c856665,
-            mid_contains_b25943163cbdf489,
-            mid_copySelf_acb6092c5eac86b3,
-            mid_getBarycenter_268784e47ab908a6,
-            mid_getBoundarySize_456d9a2f64d6b28d,
-            mid_getSize_456d9a2f64d6b28d,
-            mid_getTolerance_456d9a2f64d6b28d,
-            mid_getTree_5bed1988454faad9,
-            mid_intersection_55f41ec2172e02d3,
-            mid_isEmpty_e470b6d9e0d979db,
-            mid_isEmpty_257992acaacae48a,
-            mid_isFull_e470b6d9e0d979db,
-            mid_isFull_257992acaacae48a,
-            mid_projectToBoundary_a3932f0f8ec705f8,
-            mid_setSize_77e0f9a1f260e2e5,
-            mid_checkPoint_fc1bfdf07c2c223f,
-            mid_checkPoint_c4fd9d1092ff2129,
-            mid_computeGeometricalProperties_7ae3461a92a43152,
-            mid_setBarycenter_757a0a52ad332378,
-            mid_setBarycenter_0a3f49fb37fbe874,
+            mid_init$_52fbfb23c628acd5,
+            mid_applyTransform_125abe747efd3c42,
+            mid_buildNew_21f87056dd177f50,
+            mid_checkPoint_50307f10d8b0681b,
+            mid_checkPoint_9b5450307493913f,
+            mid_contains_699b13c84f9f9ff1,
+            mid_copySelf_54d714b9b8ebd2c9,
+            mid_getBarycenter_e164db6eb4ec1f00,
+            mid_getBoundarySize_dff5885c2c873297,
+            mid_getSize_dff5885c2c873297,
+            mid_getTolerance_dff5885c2c873297,
+            mid_getTree_4457617bb6ed0c9d,
+            mid_intersection_208a723630302f7b,
+            mid_isEmpty_b108b35ef48e27bd,
+            mid_isEmpty_06c832607c1f3329,
+            mid_isFull_b108b35ef48e27bd,
+            mid_isFull_06c832607c1f3329,
+            mid_projectToBoundary_e9baadaaf6c2e7eb,
+            mid_checkPoint_a8d4dfa8636caf0b,
+            mid_checkPoint_c5f03bf79b0dd0ad,
+            mid_computeGeometricalProperties_0fa09c18fee449d5,
+            mid_setBarycenter_ebc8a8ff77d92c6e,
+            mid_setBarycenter_8567c8fd9fae1122,
+            mid_setSize_17db3a65980d3441,
             max_mid
           };
 

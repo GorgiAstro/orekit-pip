@@ -3,24 +3,24 @@
 
 #include "org/hipparchus/linear/AbstractRealMatrix.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace linear {
+      class OpenMapRealMatrix;
+      class RealMatrix;
+      class SparseRealMatrix;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+  }
+}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
-    namespace linear {
-      class RealMatrix;
-      class SparseRealMatrix;
-      class OpenMapRealMatrix;
-    }
   }
 }
 template<class T> class JArray;
@@ -32,22 +32,22 @@ namespace org {
       class OpenMapRealMatrix : public ::org::hipparchus::linear::AbstractRealMatrix {
        public:
         enum {
-          mid_init$_8dbc1129a3c2557a,
-          mid_add_a888b793e7da7480,
-          mid_addToEntry_78e41e7b5124a628,
-          mid_copy_65fb3321439bb1aa,
-          mid_createMatrix_29bfd603ae1326fc,
-          mid_getColumnDimension_f2f64475e4580546,
-          mid_getEntry_a84e4ee1da3f1ab8,
-          mid_getRowDimension_f2f64475e4580546,
-          mid_multiply_a888b793e7da7480,
-          mid_multiply_e00cd33aedcc5bd0,
-          mid_multiplyEntry_78e41e7b5124a628,
-          mid_multiplyTransposed_e00cd33aedcc5bd0,
-          mid_setEntry_78e41e7b5124a628,
-          mid_subtract_a888b793e7da7480,
-          mid_subtract_19342885a4dbcd99,
-          mid_transposeMultiply_e00cd33aedcc5bd0,
+          mid_init$_6f37635c3285dbdf,
+          mid_add_e7eba3049ff21162,
+          mid_addToEntry_1506189166690b5e,
+          mid_copy_4f9e1a9121aa289f,
+          mid_createMatrix_7dc015665115207a,
+          mid_getColumnDimension_570ce0828f81a2c1,
+          mid_getEntry_dbbe5f05149dbf73,
+          mid_getRowDimension_570ce0828f81a2c1,
+          mid_multiply_e7eba3049ff21162,
+          mid_multiply_e9b72403ad502221,
+          mid_multiplyEntry_1506189166690b5e,
+          mid_multiplyTransposed_e9b72403ad502221,
+          mid_setEntry_1506189166690b5e,
+          mid_subtract_e7eba3049ff21162,
+          mid_subtract_231cd0c4aff11413,
+          mid_transposeMultiply_e9b72403ad502221,
           max_mid
         };
 

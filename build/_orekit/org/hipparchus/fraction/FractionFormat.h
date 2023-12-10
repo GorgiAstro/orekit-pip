@@ -4,30 +4,30 @@
 #include "org/hipparchus/fraction/AbstractFormat.h"
 
 namespace java {
+  namespace text {
+    class NumberFormat;
+    class ParsePosition;
+    class FieldPosition;
+  }
+  namespace util {
+    class Locale;
+  }
   namespace lang {
     class StringBuffer;
     class Class;
     class Object;
     class String;
   }
-  namespace util {
-    class Locale;
-  }
-  namespace text {
-    class FieldPosition;
-    class ParsePosition;
-    class NumberFormat;
-  }
 }
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
-    }
     namespace fraction {
       class FractionFormat;
       class Fraction;
+    }
+    namespace exception {
+      class MathIllegalStateException;
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -40,20 +40,20 @@ namespace org {
       class FractionFormat : public ::org::hipparchus::fraction::AbstractFormat {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_init$_695a782f9c7823f6,
-          mid_init$_4c0f990589d379b7,
-          mid_format_c19c8e97de8c2158,
-          mid_format_e231795b026d93db,
-          mid_formatFraction_4b44e5dbe2a42d26,
-          mid_getAvailableLocales_81e8fdf65840780c,
-          mid_getImproperInstance_50702bcb1992920e,
-          mid_getImproperInstance_a582bf44d92cfcc0,
-          mid_getProperInstance_50702bcb1992920e,
-          mid_getProperInstance_a582bf44d92cfcc0,
-          mid_parse_1e8dfd0587c9f00e,
-          mid_parse_7b370dc16c7b13a9,
-          mid_getDefaultNumberFormat_d34e2e8dd35583a0,
+          mid_init$_0fa09c18fee449d5,
+          mid_init$_256f36a22c0d0f55,
+          mid_init$_e2028a486c5b97a5,
+          mid_format_44821f0beb3a37bc,
+          mid_format_f5c3717ad7292c63,
+          mid_formatFraction_6a3db48ac3720129,
+          mid_getAvailableLocales_c5ed07ebd55821bb,
+          mid_getImproperInstance_f192aaa296be0934,
+          mid_getImproperInstance_10a3af3e09246bc7,
+          mid_getProperInstance_f192aaa296be0934,
+          mid_getProperInstance_10a3af3e09246bc7,
+          mid_parse_e9aed033a393d409,
+          mid_parse_32af1cad14e4c6d5,
+          mid_getDefaultNumberFormat_24f83dea4a8657b1,
           max_mid
         };
 

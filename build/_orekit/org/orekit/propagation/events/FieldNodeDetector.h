@@ -4,19 +4,19 @@
 #include "org/orekit/propagation/events/FieldAbstractDetector.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace frames {
       class Frame;
     }
-    namespace orbits {
-      class FieldOrbit;
-    }
     namespace propagation {
       class FieldSpacecraftState;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
+    namespace orbits {
+      class FieldOrbit;
+    }
   }
 }
 namespace java {
@@ -34,11 +34,11 @@ namespace org {
         class FieldNodeDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_bdfbb98834a5ed6a,
-            mid_init$_16b3a9717ca34d38,
-            mid_g_cc79c2733879de35,
-            mid_getFrame_c8fe21bcdac65bf6,
-            mid_create_8259d7c252dc0600,
+            mid_init$_529a3e69df0c2d68,
+            mid_init$_8abb69e3772f5edb,
+            mid_g_41a008afe53da855,
+            mid_getFrame_b86f9f61d97a7244,
+            mid_create_e89f17bb9bdbaf7d,
             max_mid
           };
 

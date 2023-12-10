@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace utils {
       class SecularAndHarmonic;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,12 +24,12 @@ namespace org {
       class EOPFittedModel : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_5ee6fde45bfd4ac4,
-          mid_getDUT1_f6883e86d6d06fa8,
-          mid_getDx_f6883e86d6d06fa8,
-          mid_getDy_f6883e86d6d06fa8,
-          mid_getXp_f6883e86d6d06fa8,
-          mid_getYp_f6883e86d6d06fa8,
+          mid_init$_4c009f9fb672dfb4,
+          mid_getDUT1_06e258f321573d42,
+          mid_getDx_06e258f321573d42,
+          mid_getDy_06e258f321573d42,
+          mid_getXp_06e258f321573d42,
+          mid_getYp_06e258f321573d42,
           max_mid
         };
 

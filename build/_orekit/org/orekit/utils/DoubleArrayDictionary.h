@@ -3,18 +3,10 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace utils {
-      class DoubleArrayDictionary;
-      class DoubleArrayDictionary$Entry;
-    }
-  }
-}
 namespace java {
   namespace util {
-    class Map;
     class List;
+    class Map;
   }
   namespace io {
     class Serializable;
@@ -22,6 +14,14 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace utils {
+      class DoubleArrayDictionary;
+      class DoubleArrayDictionary$Entry;
+    }
   }
 }
 template<class T> class JArray;
@@ -33,21 +33,21 @@ namespace org {
       class DoubleArrayDictionary : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_init$_0a2a1ac2721c0336,
-          mid_init$_8b4e3987d7532731,
-          mid_clear_7ae3461a92a43152,
-          mid_get_5fc57a69c973af17,
-          mid_getData_a6156df500549a58,
-          mid_getEntry_1ba5861551769af8,
-          mid_put_f158fe1c5def0235,
-          mid_putAll_78912f25ca84a166,
-          mid_putAll_8b4e3987d7532731,
-          mid_remove_6b161f495ea569b8,
-          mid_size_f2f64475e4580546,
-          mid_toMap_d6753b7055940a54,
-          mid_toString_0090f7797e403f43,
-          mid_unmodifiableView_08f613b585562583,
+          mid_init$_0fa09c18fee449d5,
+          mid_init$_99803b0791f320ff,
+          mid_init$_db8de8bc54857165,
+          mid_clear_0fa09c18fee449d5,
+          mid_get_f87e5f45128c2827,
+          mid_getData_2afa36052df4765d,
+          mid_getEntry_d37496364a361361,
+          mid_put_3468fcb7793f51a9,
+          mid_putAll_ad36dd55657c3ef8,
+          mid_putAll_db8de8bc54857165,
+          mid_remove_7edad2c2f64f4d68,
+          mid_size_570ce0828f81a2c1,
+          mid_toMap_6f5a75ccd8c04465,
+          mid_toString_11b109bd155ca898,
+          mid_unmodifiableView_17e5408138fe3169,
           max_mid
         };
 

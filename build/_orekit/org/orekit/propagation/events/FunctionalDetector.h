@@ -28,9 +28,9 @@ namespace org {
         class FunctionalDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_g_66a2f071e6ed0c06,
-            mid_create_4f95d673d33a983a,
+            mid_init$_0fa09c18fee449d5,
+            mid_g_432f3d328c15ec82,
+            mid_create_ecdcedadcf996c2b,
             max_mid
           };
 

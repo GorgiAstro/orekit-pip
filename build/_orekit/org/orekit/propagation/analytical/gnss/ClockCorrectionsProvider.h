@@ -6,6 +6,7 @@
 namespace org {
   namespace orekit {
     namespace propagation {
+      class AdditionalStateProvider;
       namespace analytical {
         namespace gnss {
           namespace data {
@@ -13,7 +14,6 @@ namespace org {
           }
         }
       }
-      class AdditionalStateProvider;
       class SpacecraftState;
     }
   }
@@ -35,9 +35,9 @@ namespace org {
           class ClockCorrectionsProvider : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_9bcf2172212125cf,
-              mid_getAdditionalState_137d7db4f3f987f7,
-              mid_getName_0090f7797e403f43,
+              mid_init$_e8f3d0186004951c,
+              mid_getAdditionalState_cb44069ef445f941,
+              mid_getName_11b109bd155ca898,
               max_mid
             };
 

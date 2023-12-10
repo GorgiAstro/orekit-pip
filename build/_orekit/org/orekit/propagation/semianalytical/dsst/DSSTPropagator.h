@@ -3,6 +3,35 @@
 
 #include "org/orekit/propagation/integration/AbstractIntegratedPropagator.h"
 
+namespace org {
+  namespace orekit {
+    namespace orbits {
+      class PositionAngleType;
+      class Orbit;
+      class OrbitType;
+    }
+    namespace propagation {
+      namespace semianalytical {
+        namespace dsst {
+          namespace forces {
+            class DSSTForceModel;
+            class ShortPeriodTerms;
+          }
+        }
+      }
+      class PropagationType;
+      class SpacecraftState;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+  }
+  namespace hipparchus {
+    namespace ode {
+      class ODEIntegrator;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -12,35 +41,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace ode {
-      class ODEIntegrator;
-    }
-  }
-  namespace orekit {
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-    namespace propagation {
-      namespace semianalytical {
-        namespace dsst {
-          namespace forces {
-            class ShortPeriodTerms;
-            class DSSTForceModel;
-          }
-        }
-      }
-      class PropagationType;
-      class SpacecraftState;
-    }
-    namespace orbits {
-      class PositionAngleType;
-      class Orbit;
-      class OrbitType;
-    }
   }
 }
 template<class T> class JArray;
@@ -54,42 +54,42 @@ namespace org {
           class DSSTPropagator : public ::org::orekit::propagation::integration::AbstractIntegratedPropagator {
            public:
             enum {
-              mid_init$_8b1272a4b400cfb6,
-              mid_init$_fad51e50ea7e824a,
-              mid_init$_906f931497b667f3,
-              mid_addForceModel_868bb92ba9b91af7,
-              mid_computeMeanState_15ac77c6bb076e70,
-              mid_computeMeanState_c4ce6d1e9b683ba5,
-              mid_computeOsculatingState_15ac77c6bb076e70,
-              mid_getAllForceModels_a6156df500549a58,
-              mid_getOrbitType_63ea5cd020bf7bf1,
-              mid_getPositionAngleType_2571e8fe1cede425,
-              mid_getSatelliteRevolution_f2f64475e4580546,
-              mid_getSelectedCoefficients_e9e1a6780fe94297,
-              mid_getShortPeriodTerms_a6156df500549a58,
-              mid_getShortPeriodTermsValue_137d7db4f3f987f7,
-              mid_initialIsOsculating_e470b6d9e0d979db,
-              mid_removeForceModels_7ae3461a92a43152,
-              mid_resetInitialState_2b88003f931f70a7,
-              mid_setAttitudeProvider_8109c1a27d4471d3,
-              mid_setInitialState_2b88003f931f70a7,
-              mid_setInitialState_dfbbbfbf78c55942,
-              mid_setInterpolationGridToFixedNumberOfPoints_0a2a1ac2721c0336,
-              mid_setInterpolationGridToMaxTimeGap_77e0f9a1f260e2e5,
-              mid_setMu_77e0f9a1f260e2e5,
-              mid_setSatelliteRevolution_0a2a1ac2721c0336,
-              mid_setSelectedCoefficients_ef1b87702d7ae7b8,
-              mid_setShortPeriodTerms_65de9727799c5641,
-              mid_tolerances_dd1e294a07f13ec6,
-              mid_tolerances_250ab7016fb7249f,
-              mid_createHarvester_d3d4ea925a699046,
-              mid_getJacobiansColumnsNames_a6156df500549a58,
-              mid_setUpStmAndJacobianGenerators_7ae3461a92a43152,
-              mid_beforeIntegration_3d13474d79f5e7bc,
-              mid_afterIntegration_7ae3461a92a43152,
-              mid_getInitialIntegrationState_dd3e4a8d51055f1f,
-              mid_createMapper_083e2bc1612e9def,
-              mid_getMainStateEquations_9c7da9606951e4f0,
+              mid_init$_16720c819e7ee0c1,
+              mid_init$_ab7da0e7cb0692d7,
+              mid_init$_48f8035a5cda539d,
+              mid_addForceModel_8788ca485d7d47e4,
+              mid_computeMeanState_83170c771fb244f1,
+              mid_computeMeanState_7e87a80fc0ee5537,
+              mid_computeOsculatingState_83170c771fb244f1,
+              mid_getAllForceModels_2afa36052df4765d,
+              mid_getOrbitType_e29360d311dc0e20,
+              mid_getPositionAngleType_8f17e83e5a86217c,
+              mid_getSatelliteRevolution_570ce0828f81a2c1,
+              mid_getSelectedCoefficients_015730311a5bacdc,
+              mid_getShortPeriodTerms_2afa36052df4765d,
+              mid_getShortPeriodTermsValue_cb44069ef445f941,
+              mid_initialIsOsculating_b108b35ef48e27bd,
+              mid_removeForceModels_0fa09c18fee449d5,
+              mid_resetInitialState_0ee5c56004643a2e,
+              mid_setAttitudeProvider_3cff7c75ea06698c,
+              mid_setInitialState_0ee5c56004643a2e,
+              mid_setInitialState_49bd3c28fa9b4521,
+              mid_setInterpolationGridToFixedNumberOfPoints_99803b0791f320ff,
+              mid_setInterpolationGridToMaxTimeGap_17db3a65980d3441,
+              mid_setMu_17db3a65980d3441,
+              mid_setSatelliteRevolution_99803b0791f320ff,
+              mid_setSelectedCoefficients_d8e4bbe7420244b7,
+              mid_setShortPeriodTerms_de3e021e7266b71e,
+              mid_tolerances_a8c32749a23019c2,
+              mid_tolerances_2339ca44155876e5,
+              mid_beforeIntegration_826b4eda94da4e78,
+              mid_afterIntegration_0fa09c18fee449d5,
+              mid_getInitialIntegrationState_c6311115fea01a34,
+              mid_createMapper_2bea84b26b1efc07,
+              mid_getMainStateEquations_e1fa3ce287fe2655,
+              mid_getJacobiansColumnsNames_2afa36052df4765d,
+              mid_createHarvester_5cfd2a13971b74c7,
+              mid_setUpStmAndJacobianGenerators_0fa09c18fee449d5,
               max_mid
             };
 

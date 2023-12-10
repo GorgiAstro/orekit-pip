@@ -6,10 +6,10 @@
 namespace org {
   namespace orekit {
     namespace utils {
-      class TimeStampedPVCoordinates;
       class TimeStampedFieldPVCoordinates;
-      class FieldPVCoordinatesProvider;
       class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
+      class TimeStampedPVCoordinates;
     }
     namespace frames {
       class Frame;
@@ -37,9 +37,9 @@ namespace org {
       class BodyCenterPointing : public ::org::orekit::attitudes::GroundPointing {
        public:
         enum {
-          mid_init$_a50bbae75e449f8b,
-          mid_getTargetPV_99b96e260ceb5fe3,
-          mid_getTargetPV_ab0341569f219f18,
+          mid_init$_23c858a05c2c176d,
+          mid_getTargetPV_129d59e5c897146f,
+          mid_getTargetPV_ad3e02e6f0d115f2,
           max_mid
         };
 

@@ -8,18 +8,18 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace oned {
-          class Euclidean1D;
-          class OrientedPoint;
           class SubOrientedPoint;
+          class OrientedPoint;
           class IntervalsSet;
+          class Euclidean1D;
           class Vector1D;
         }
       }
+      class Vector;
+      class Point;
       namespace partitioning {
         class Hyperplane;
       }
-      class Point;
-      class Vector;
     }
   }
 }
@@ -39,19 +39,19 @@ namespace org {
           class OrientedPoint : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_720dce0683153e53,
-              mid_copySelf_9eae96258c20e3c4,
-              mid_emptyHyperplane_faea651993278be1,
-              mid_getLocation_382bf37547292fb5,
-              mid_getOffset_726dc963fac3505e,
-              mid_getOffset_05fa5f52db18503d,
-              mid_getTolerance_456d9a2f64d6b28d,
-              mid_isDirect_e470b6d9e0d979db,
-              mid_project_ac445dfe898b403a,
-              mid_revertSelf_7ae3461a92a43152,
-              mid_sameOrientationAs_b99f508aafd89c77,
-              mid_wholeHyperplane_faea651993278be1,
-              mid_wholeSpace_9f4769cdc5713998,
+              mid_init$_a0148f2b1e7b1fe0,
+              mid_copySelf_1e8b5c1f5bf2f0dc,
+              mid_emptyHyperplane_26f436423bdf9c0a,
+              mid_getLocation_90d24faee21188ef,
+              mid_getOffset_07bb97c2794cf6b1,
+              mid_getOffset_b4822d5266bca26e,
+              mid_getTolerance_dff5885c2c873297,
+              mid_isDirect_b108b35ef48e27bd,
+              mid_project_c48805c2dda937c6,
+              mid_revertSelf_0fa09c18fee449d5,
+              mid_sameOrientationAs_5bc340c02d9ac484,
+              mid_wholeHyperplane_26f436423bdf9c0a,
+              mid_wholeSpace_c5f122d639184cd2,
               max_mid
             };
 

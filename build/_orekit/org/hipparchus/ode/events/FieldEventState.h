@@ -5,20 +5,20 @@
 
 namespace org {
   namespace hipparchus {
-    namespace ode {
-      namespace sampling {
-        class FieldODEStateInterpolator;
-      }
-      class FieldODEStateAndDerivative;
-      namespace events {
-        class FieldEventOccurrence;
-      }
-    }
+    class CalculusFieldElement;
     namespace exception {
       class MathIllegalStateException;
       class MathIllegalArgumentException;
     }
-    class CalculusFieldElement;
+    namespace ode {
+      class FieldODEStateAndDerivative;
+      namespace sampling {
+        class FieldODEStateInterpolator;
+      }
+      namespace events {
+        class FieldEventOccurrence;
+      }
+    }
   }
 }
 namespace java {
@@ -36,10 +36,10 @@ namespace org {
         class FieldEventState : public ::java::lang::Object {
          public:
           enum {
-            mid_doEvent_9a5ac4ec8957dcbf,
-            mid_evaluateStep_68d98c2570e5130d,
-            mid_getEventTime_e6d4d3215c30992a,
-            mid_init_e6d23212b178b64e,
+            mid_doEvent_bdf842cbe214f2d2,
+            mid_evaluateStep_92ced200eac51ce8,
+            mid_getEventTime_eba8e72a22c984ac,
+            mid_init_81b5dd1fb920fdc1,
             max_mid
           };
 

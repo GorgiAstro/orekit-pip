@@ -5,16 +5,16 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace exception {
       class NullArgumentException;
-      class MathIllegalArgumentException;
       class Localizable;
       class MathRuntimeException;
+      class MathIllegalArgumentException;
     }
-    class CalculusFieldElement;
     namespace util {
-      class MathUtils$SumAndResidual;
       class MathUtils$FieldSumAndResidual;
+      class MathUtils$SumAndResidual;
     }
     class FieldElement;
   }
@@ -33,27 +33,27 @@ namespace org {
       class MathUtils : public ::java::lang::Object {
        public:
         enum {
-          mid_checkDimension_8dbc1129a3c2557a,
-          mid_checkFinite_ebc26dcaf4761286,
-          mid_checkFinite_77e0f9a1f260e2e5,
-          mid_checkNotNull_7ca0d9438822cb0b,
-          mid_checkNotNull_4a08d1632f6975bc,
-          mid_checkRangeInclusive_d0d6094fbd7015c5,
-          mid_checkRangeInclusive_24462a11c42ba10b,
-          mid_copySign_5826ac196c20fe4e,
-          mid_copySign_d9790ac9eecfe931,
-          mid_copySign_8f974216cbe53aea,
-          mid_copySign_30405b752b89221e,
-          mid_equals_a836bdf37f582c99,
-          mid_hash_37221385ab42f822,
-          mid_hash_12ebab281ee35c98,
-          mid_max_75c7ce7d33e7324b,
-          mid_min_75c7ce7d33e7324b,
-          mid_normalizeAngle_824133ce4aec3505,
-          mid_normalizeAngle_75c7ce7d33e7324b,
-          mid_reduce_c564d6ace53a5934,
-          mid_twoSum_066d66182fb7a918,
-          mid_twoSum_3d4618c17ea63fb5,
+          mid_checkDimension_6f37635c3285dbdf,
+          mid_checkFinite_fa9d415d19f69361,
+          mid_checkFinite_17db3a65980d3441,
+          mid_checkNotNull_2990946c992aafed,
+          mid_checkNotNull_3c65185e850990f7,
+          mid_checkRangeInclusive_2c56b6dd4d4b1dec,
+          mid_checkRangeInclusive_112a246dd0c6f6dd,
+          mid_copySign_36a7418727e23ece,
+          mid_copySign_819f91eddf220c5b,
+          mid_copySign_fe4804b67425641b,
+          mid_copySign_c6d9b7dbb62504d2,
+          mid_equals_ff85a0d8ff097ee5,
+          mid_hash_e00f7ba4becc2a21,
+          mid_hash_4508852644846c83,
+          mid_max_6746cc1cd9210d54,
+          mid_min_6746cc1cd9210d54,
+          mid_normalizeAngle_86ffecc08a63eff0,
+          mid_normalizeAngle_6746cc1cd9210d54,
+          mid_reduce_8c19bdea212fe058,
+          mid_twoSum_a882b4284983c643,
+          mid_twoSum_d5a65cce20bdd72b,
           max_mid
         };
 

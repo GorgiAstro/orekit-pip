@@ -4,12 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace linear {
-      class RealVector;
-      class RealMatrix;
-    }
-  }
   namespace orekit {
     namespace estimation {
       namespace measurements {
@@ -30,6 +24,12 @@ namespace org {
       class ParameterDriversList;
     }
   }
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
+      class RealVector;
+    }
+  }
 }
 namespace java {
   namespace lang {
@@ -46,19 +46,19 @@ namespace org {
         class KalmanEstimatorUtil : public ::java::lang::Object {
          public:
           enum {
-            mid_applyDynamicOutlierFilter_81b67a7a1cc01557,
-            mid_checkDimension_89102031e9d66e7a,
-            mid_computeInnovationVector_7624e7aff53fd936,
-            mid_computeInnovationVector_6a809c7d1ea2bd94,
-            mid_decorate_adb96dd80cef08b8,
-            mid_decorateUnscented_adb96dd80cef08b8,
-            mid_filterRelevant_0536e83d158e5a50,
-            mid_normalizeCovarianceMatrix_2654c88e25da7e19,
-            mid_unnormalizeCovarianceMatrix_2654c88e25da7e19,
-            mid_unnormalizeInnovationCovarianceMatrix_2654c88e25da7e19,
-            mid_unnormalizeKalmanGainMatrix_a745d02df7ee9dde,
-            mid_unnormalizeMeasurementJacobian_a745d02df7ee9dde,
-            mid_unnormalizeStateTransitionMatrix_2654c88e25da7e19,
+            mid_applyDynamicOutlierFilter_593d7b7c82130187,
+            mid_checkDimension_088ed742c00be596,
+            mid_computeInnovationVector_cdc5772ae58fa459,
+            mid_computeInnovationVector_7aba347d6196588d,
+            mid_decorate_4255159303ff08a8,
+            mid_decorateUnscented_4255159303ff08a8,
+            mid_filterRelevant_61282c72766a2512,
+            mid_normalizeCovarianceMatrix_7039dc1e7ff6a443,
+            mid_unnormalizeCovarianceMatrix_7039dc1e7ff6a443,
+            mid_unnormalizeInnovationCovarianceMatrix_7039dc1e7ff6a443,
+            mid_unnormalizeKalmanGainMatrix_9a3798f3ffd3b445,
+            mid_unnormalizeMeasurementJacobian_9a3798f3ffd3b445,
+            mid_unnormalizeStateTransitionMatrix_7039dc1e7ff6a443,
             max_mid
           };
 

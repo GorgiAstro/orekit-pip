@@ -34,7 +34,7 @@ namespace org {
         class ModelObserver : public ::java::lang::Object {
          public:
           enum {
-            mid_modelCalled_03e6485ac4e3e934,
+            mid_modelCalled_098d286a550578c0,
             max_mid
           };
 

@@ -4,6 +4,9 @@
 #include "org/orekit/data/AbstractSelfFeedingLoader.h"
 
 namespace java {
+  namespace text {
+    class ParseException;
+  }
   namespace io {
     class IOException;
     class InputStream;
@@ -11,9 +14,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-  namespace text {
-    class ParseException;
   }
 }
 namespace org {
@@ -38,16 +38,16 @@ namespace org {
           class KlobucharIonoCoefficientsLoader : public ::org::orekit::data::AbstractSelfFeedingLoader {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_init$_e939c6558ae8d313,
-              mid_init$_2a9119a84e92f14a,
-              mid_getAlpha_7cdc325af0834901,
-              mid_getBeta_7cdc325af0834901,
-              mid_getSupportedNames_0090f7797e403f43,
-              mid_loadData_ec60cb5f4b3de555,
-              mid_loadKlobucharIonosphericCoefficients_7ae3461a92a43152,
-              mid_loadKlobucharIonosphericCoefficients_cd567be04bee4d03,
-              mid_stillAcceptsData_e470b6d9e0d979db,
+              mid_init$_0fa09c18fee449d5,
+              mid_init$_d0bc48d5b00dc40c,
+              mid_init$_63232a42a5419b09,
+              mid_getAlpha_60c7040667a7dc5c,
+              mid_getBeta_60c7040667a7dc5c,
+              mid_getSupportedNames_11b109bd155ca898,
+              mid_loadData_1815f85c118161ad,
+              mid_loadKlobucharIonosphericCoefficients_0fa09c18fee449d5,
+              mid_loadKlobucharIonosphericCoefficients_56dc33c3871b1cb7,
+              mid_stillAcceptsData_b108b35ef48e27bd,
               max_mid
             };
 

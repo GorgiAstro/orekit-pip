@@ -4,21 +4,14 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace analysis {
-      namespace differentiation {
-        class Gradient;
-      }
-    }
-  }
   namespace orekit {
     namespace estimation {
       namespace measurements {
         class EstimatedMeasurement;
         class EstimatedMeasurementBase;
         class GroundStation;
-        class EstimationModifier;
         class AngularRaDec;
+        class EstimationModifier;
       }
     }
     namespace frames {
@@ -30,6 +23,13 @@ namespace org {
     }
     namespace utils {
       class ParameterDriver;
+    }
+  }
+  namespace hipparchus {
+    namespace analysis {
+      namespace differentiation {
+        class Gradient;
+      }
     }
   }
 }
@@ -52,14 +52,14 @@ namespace org {
           class AberrationModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_fieldNaturalToProper_6a041d6881c9cde9,
-              mid_fieldProperToNatural_6a041d6881c9cde9,
-              mid_getParametersDrivers_a6156df500549a58,
-              mid_modify_a5896dbcbe782924,
-              mid_modifyWithoutDerivatives_811f96960c94c1de,
-              mid_naturalToProper_65b57dcd88b61033,
-              mid_properToNatural_65b57dcd88b61033,
+              mid_init$_0fa09c18fee449d5,
+              mid_fieldNaturalToProper_dc1b815aeeb01d6f,
+              mid_fieldProperToNatural_dc1b815aeeb01d6f,
+              mid_getParametersDrivers_2afa36052df4765d,
+              mid_modify_e4935e9a55e01fd8,
+              mid_modifyWithoutDerivatives_d1815d998cba71e9,
+              mid_naturalToProper_8caa5186a76fc396,
+              mid_properToNatural_8caa5186a76fc396,
               max_mid
             };
 

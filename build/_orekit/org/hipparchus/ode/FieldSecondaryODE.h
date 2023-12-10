@@ -26,9 +26,9 @@ namespace org {
       class FieldSecondaryODE : public ::java::lang::Object {
        public:
         enum {
-          mid_computeDerivatives_493e9accb34ba8d9,
-          mid_getDimension_f2f64475e4580546,
-          mid_init_0d379d27c7d38d91,
+          mid_computeDerivatives_074f58e68ab9f435,
+          mid_getDimension_570ce0828f81a2c1,
+          mid_init_281a8331f0ac6a2e,
           max_mid
         };
 

@@ -27,12 +27,12 @@ namespace org {
       class AbstractListCrawler : public ::java::lang::Object {
        public:
         enum {
-          mid_addInput_7ca0d9438822cb0b,
-          mid_getInputs_a6156df500549a58,
-          mid_getStream_25301161b6e4daa9,
-          mid_getCompleteName_d5950e748b97110b,
-          mid_getBaseName_d5950e748b97110b,
-          mid_getZipJarCrawler_5aeaff72b829467a,
+          mid_addInput_2990946c992aafed,
+          mid_getInputs_2afa36052df4765d,
+          mid_getStream_21e7c14915faab34,
+          mid_getZipJarCrawler_30558b0704cd5966,
+          mid_getBaseName_e816b890c4273bbd,
+          mid_getCompleteName_e816b890c4273bbd,
           max_mid
         };
 

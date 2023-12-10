@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace analysis {
       namespace differentiation {
         class FieldDerivative;
       }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -30,10 +30,10 @@ namespace org {
         class FieldDerivative : public ::org::hipparchus::CalculusFieldElement {
          public:
           enum {
-            mid_getFreeParameters_f2f64475e4580546,
-            mid_getOrder_f2f64475e4580546,
-            mid_getPartialDerivative_f622835d869c0081,
-            mid_getValue_e6d4d3215c30992a,
+            mid_getFreeParameters_570ce0828f81a2c1,
+            mid_getOrder_570ce0828f81a2c1,
+            mid_getPartialDerivative_46366c1e17d1d442,
+            mid_getValue_eba8e72a22c984ac,
             max_mid
           };
 

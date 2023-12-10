@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
-      class SecondOrderODE;
       class OrdinaryDifferentialEquation;
+      class SecondOrderODE;
     }
   }
 }
@@ -25,9 +25,9 @@ namespace org {
       class FirstOrderConverter : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_94350f72e874e484,
-          mid_computeDerivatives_7b8ea6f669f90156,
-          mid_getDimension_f2f64475e4580546,
+          mid_init$_991476c50b830526,
+          mid_computeDerivatives_125ce48de7dbfde5,
+          mid_getDimension_570ce0828f81a2c1,
           max_mid
         };
 

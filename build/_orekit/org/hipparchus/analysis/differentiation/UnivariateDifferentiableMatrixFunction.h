@@ -30,7 +30,7 @@ namespace org {
         class UnivariateDifferentiableMatrixFunction : public ::org::hipparchus::analysis::UnivariateMatrixFunction {
          public:
           enum {
-            mid_value_5ae018012fc0c987,
+            mid_value_c9ec56172aae29ee,
             max_mid
           };
 

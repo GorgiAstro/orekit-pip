@@ -30,10 +30,10 @@ namespace org {
         class BinomialProportion : public ::java::lang::Object {
          public:
           enum {
-            mid_getAgrestiCoullInterval_168111ceff0212ba,
-            mid_getClopperPearsonInterval_168111ceff0212ba,
-            mid_getNormalApproximationInterval_168111ceff0212ba,
-            mid_getWilsonScoreInterval_168111ceff0212ba,
+            mid_getAgrestiCoullInterval_902c51174b71d8d4,
+            mid_getClopperPearsonInterval_902c51174b71d8d4,
+            mid_getNormalApproximationInterval_902c51174b71d8d4,
+            mid_getWilsonScoreInterval_902c51174b71d8d4,
             max_mid
           };
 

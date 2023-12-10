@@ -7,18 +7,18 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace utils {
+          namespace lexical {
+            class ParseToken;
+          }
+          class ContextBinding;
+        }
         namespace ndm {
           namespace adm {
             namespace apm {
               class SpinStabilizedKey;
               class SpinStabilized;
             }
-          }
-        }
-        namespace utils {
-          class ContextBinding;
-          namespace lexical {
-            class ParseToken;
           }
         }
       }
@@ -44,9 +44,9 @@ namespace org {
               class SpinStabilizedKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_b8f6d5c460d9712b,
-                  mid_valueOf_abba7bdeb43c4364,
-                  mid_values_460dde49fc2dc958,
+                  mid_process_ca76c2515a12c56a,
+                  mid_valueOf_43a66864eb4c6c52,
+                  mid_values_5065a5c731cb266d,
                   max_mid
                 };
 

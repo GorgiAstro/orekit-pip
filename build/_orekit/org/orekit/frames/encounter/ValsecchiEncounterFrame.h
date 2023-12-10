@@ -9,9 +9,9 @@ namespace org {
       namespace euclidean {
         namespace threed {
           class Rotation;
-          class Vector3D;
           class FieldVector3D;
           class FieldRotation;
+          class Vector3D;
         }
       }
     }
@@ -19,8 +19,8 @@ namespace org {
   }
   namespace orekit {
     namespace utils {
-      class PVCoordinates;
       class FieldPVCoordinates;
+      class PVCoordinates;
     }
   }
 }
@@ -40,13 +40,13 @@ namespace org {
         class ValsecchiEncounterFrame : public ::org::orekit::frames::encounter::AbstractEncounterLOF {
          public:
           enum {
-            mid_init$_2fcbcb00b2514447,
-            mid_init$_d12117948cc23ea0,
-            mid_getAxisNormalToCollisionPlane_17a952530a808943,
-            mid_getAxisNormalToCollisionPlane_dc29118b4d22b28d,
-            mid_getName_0090f7797e403f43,
-            mid_rotationFromInertial_891f682396b75876,
-            mid_rotationFromInertial_0483676d141ad17c,
+            mid_init$_bb3f88d6e1120c95,
+            mid_init$_0cd9ca2f4cf79e0a,
+            mid_getAxisNormalToCollisionPlane_d52645e0d4c07563,
+            mid_getAxisNormalToCollisionPlane_202e7b3b5ed01afc,
+            mid_getName_11b109bd155ca898,
+            mid_rotationFromInertial_d59b144da7c7851f,
+            mid_rotationFromInertial_2ba248090f65b129,
             max_mid
           };
 

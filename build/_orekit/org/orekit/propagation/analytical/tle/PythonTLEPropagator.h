@@ -37,14 +37,14 @@ namespace org {
           class PythonTLEPropagator : public ::org::orekit::propagation::analytical::tle::TLEPropagator {
            public:
             enum {
-              mid_init$_3c209839d9f7d817,
-              mid_init$_8edece06f32cbd33,
-              mid_finalize_7ae3461a92a43152,
-              mid_pythonDecRef_7ae3461a92a43152,
-              mid_pythonExtension_a27fc9afd27e559d,
-              mid_pythonExtension_fefb08975c10f0a1,
-              mid_sxpInitialize_7ae3461a92a43152,
-              mid_sxpPropagate_77e0f9a1f260e2e5,
+              mid_init$_11c826170d15cb79,
+              mid_init$_2709a562b7f01856,
+              mid_finalize_0fa09c18fee449d5,
+              mid_pythonDecRef_0fa09c18fee449d5,
+              mid_pythonExtension_492808a339bfa35f,
+              mid_pythonExtension_3a8e7649f31fdb20,
+              mid_sxpInitialize_0fa09c18fee449d5,
+              mid_sxpPropagate_17db3a65980d3441,
               max_mid
             };
 

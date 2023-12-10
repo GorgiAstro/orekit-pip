@@ -7,17 +7,12 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace definitions {
-          class YesNoUnknown;
-          class FrameFacade;
-          class BodyFacade;
-        }
         namespace ndm {
           namespace cdm {
-            class Maneuvrable;
+            class CdmRelativeMetadata;
             class CovarianceMethod;
             class AltCovarianceType;
-            class CdmRelativeMetadata;
+            class Maneuvrable;
           }
           namespace odm {
             namespace ocm {
@@ -25,13 +20,18 @@ namespace org {
             }
           }
         }
+        namespace definitions {
+          class YesNoUnknown;
+          class BodyFacade;
+          class FrameFacade;
+        }
       }
-    }
-    namespace frames {
-      class Frame;
     }
     namespace data {
       class DataContext;
+    }
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -56,68 +56,68 @@ namespace org {
             class CdmMetadata : public ::org::orekit::files::ccsds::section::Metadata {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_init$_959fe257032a39c0,
-                mid_getAdmMsgLink_0090f7797e403f43,
-                mid_getAltCovRefFrame_aa70fdb14ae9305f,
-                mid_getAltCovType_8c2464a907a5a4bb,
-                mid_getAtmosphericModel_0090f7797e403f43,
-                mid_getCatalogName_0090f7797e403f43,
-                mid_getCovarianceMethod_92706c2f2eb2e248,
-                mid_getCovarianceSource_0090f7797e403f43,
-                mid_getEarthTides_03b02c6cedb410fa,
-                mid_getEphemName_0090f7797e403f43,
-                mid_getFrame_c8fe21bcdac65bf6,
-                mid_getGravityDegree_f2f64475e4580546,
-                mid_getGravityModel_0090f7797e403f43,
-                mid_getGravityOrder_f2f64475e4580546,
-                mid_getInternationalDes_0090f7797e403f43,
-                mid_getIntrackThrust_03b02c6cedb410fa,
-                mid_getManeuverable_87b100a305e3ccfd,
-                mid_getNBodyPerturbations_a6156df500549a58,
-                mid_getObject_0090f7797e403f43,
-                mid_getObjectDesignator_0090f7797e403f43,
-                mid_getObjectName_0090f7797e403f43,
-                mid_getObjectType_8be2b7ef61e9b842,
-                mid_getObsBeforeNextMessage_03b02c6cedb410fa,
-                mid_getOdmMsgLink_0090f7797e403f43,
-                mid_getOperatorContactPosition_0090f7797e403f43,
-                mid_getOperatorEmail_0090f7797e403f43,
-                mid_getOperatorOrganization_0090f7797e403f43,
-                mid_getOperatorPhone_0090f7797e403f43,
-                mid_getOrbitCenter_78375ee64056f203,
-                mid_getRefFrame_aa70fdb14ae9305f,
-                mid_getRelativeMetadata_f8673e4c3b4aceb6,
-                mid_getSolarRadiationPressure_03b02c6cedb410fa,
-                mid_setAdmMsgLink_e939c6558ae8d313,
-                mid_setAltCovRefFrame_a455f3ff24eb0b47,
-                mid_setAltCovType_d2aedb94a889b159,
-                mid_setAtmosphericModel_e939c6558ae8d313,
-                mid_setCatalogName_e939c6558ae8d313,
-                mid_setCovarianceMethod_535e77e9093c5cfb,
-                mid_setCovarianceSource_e939c6558ae8d313,
-                mid_setEarthTides_e1d48d83020845bd,
-                mid_setEphemName_e939c6558ae8d313,
-                mid_setGravityModel_10ca79ad48bfee14,
-                mid_setInternationalDes_e939c6558ae8d313,
-                mid_setIntrackThrust_e1d48d83020845bd,
-                mid_setManeuverable_c7a507e75d4e7ebb,
-                mid_setNBodyPerturbations_65de9727799c5641,
-                mid_setObject_e939c6558ae8d313,
-                mid_setObjectDesignator_e939c6558ae8d313,
-                mid_setObjectName_e939c6558ae8d313,
-                mid_setObjectType_221568b09df5e761,
-                mid_setObsBeforeNextMessage_e1d48d83020845bd,
-                mid_setOdmMsgLink_e939c6558ae8d313,
-                mid_setOperatorContactPosition_e939c6558ae8d313,
-                mid_setOperatorEmail_e939c6558ae8d313,
-                mid_setOperatorOrganization_e939c6558ae8d313,
-                mid_setOperatorPhone_e939c6558ae8d313,
-                mid_setOrbitCenter_4937bc9292f008b1,
-                mid_setRefFrame_a455f3ff24eb0b47,
-                mid_setRelativeMetadata_4e27559327bbd332,
-                mid_setSolarRadiationPressure_e1d48d83020845bd,
-                mid_validate_77e0f9a1f260e2e5,
+                mid_init$_0fa09c18fee449d5,
+                mid_init$_47d99c12e4a42886,
+                mid_getAdmMsgLink_11b109bd155ca898,
+                mid_getAltCovRefFrame_5d5dd95b04037824,
+                mid_getAltCovType_7a2f3f5198022a2d,
+                mid_getAtmosphericModel_11b109bd155ca898,
+                mid_getCatalogName_11b109bd155ca898,
+                mid_getCovarianceMethod_d5c8c6e2accd7af1,
+                mid_getCovarianceSource_11b109bd155ca898,
+                mid_getEarthTides_cda5653d7d9d3ff6,
+                mid_getEphemName_11b109bd155ca898,
+                mid_getFrame_b86f9f61d97a7244,
+                mid_getGravityDegree_570ce0828f81a2c1,
+                mid_getGravityModel_11b109bd155ca898,
+                mid_getGravityOrder_570ce0828f81a2c1,
+                mid_getInternationalDes_11b109bd155ca898,
+                mid_getIntrackThrust_cda5653d7d9d3ff6,
+                mid_getManeuverable_3b2c9e1d549fb9c8,
+                mid_getNBodyPerturbations_2afa36052df4765d,
+                mid_getObject_11b109bd155ca898,
+                mid_getObjectDesignator_11b109bd155ca898,
+                mid_getObjectName_11b109bd155ca898,
+                mid_getObjectType_1e10bdb6e1d917a7,
+                mid_getObsBeforeNextMessage_cda5653d7d9d3ff6,
+                mid_getOdmMsgLink_11b109bd155ca898,
+                mid_getOperatorContactPosition_11b109bd155ca898,
+                mid_getOperatorEmail_11b109bd155ca898,
+                mid_getOperatorOrganization_11b109bd155ca898,
+                mid_getOperatorPhone_11b109bd155ca898,
+                mid_getOrbitCenter_23d31d5db0bee8e9,
+                mid_getRefFrame_5d5dd95b04037824,
+                mid_getRelativeMetadata_d2d96fe58613ae06,
+                mid_getSolarRadiationPressure_cda5653d7d9d3ff6,
+                mid_setAdmMsgLink_d0bc48d5b00dc40c,
+                mid_setAltCovRefFrame_849bc9e3b38b9bcb,
+                mid_setAltCovType_4d35cd7fda4a0f2d,
+                mid_setAtmosphericModel_d0bc48d5b00dc40c,
+                mid_setCatalogName_d0bc48d5b00dc40c,
+                mid_setCovarianceMethod_64638d5d5e58a368,
+                mid_setCovarianceSource_d0bc48d5b00dc40c,
+                mid_setEarthTides_5bef0e6b8b546bf9,
+                mid_setEphemName_d0bc48d5b00dc40c,
+                mid_setGravityModel_04eb5531e9227c93,
+                mid_setInternationalDes_d0bc48d5b00dc40c,
+                mid_setIntrackThrust_5bef0e6b8b546bf9,
+                mid_setManeuverable_6c07bc4d7ea23f3b,
+                mid_setNBodyPerturbations_de3e021e7266b71e,
+                mid_setObject_d0bc48d5b00dc40c,
+                mid_setObjectDesignator_d0bc48d5b00dc40c,
+                mid_setObjectName_d0bc48d5b00dc40c,
+                mid_setObjectType_22d7655927343c9d,
+                mid_setObsBeforeNextMessage_5bef0e6b8b546bf9,
+                mid_setOdmMsgLink_d0bc48d5b00dc40c,
+                mid_setOperatorContactPosition_d0bc48d5b00dc40c,
+                mid_setOperatorEmail_d0bc48d5b00dc40c,
+                mid_setOperatorOrganization_d0bc48d5b00dc40c,
+                mid_setOperatorPhone_d0bc48d5b00dc40c,
+                mid_setOrbitCenter_32e120c3a0353f27,
+                mid_setRefFrame_849bc9e3b38b9bcb,
+                mid_setRelativeMetadata_317cd8556d11f4cf,
+                mid_setSolarRadiationPressure_5bef0e6b8b546bf9,
+                mid_validate_17db3a65980d3441,
                 max_mid
               };
 

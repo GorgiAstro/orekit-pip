@@ -6,16 +6,16 @@
 namespace org {
   namespace orekit {
     namespace frames {
-      class Frame;
       class FieldStaticTransform;
-      class StaticTransform;
       class TransformProvider;
+      class Frame;
       class FieldTransform;
       class Transform;
+      class StaticTransform;
     }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
   }
 }
@@ -38,24 +38,24 @@ namespace org {
       class Frame : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_4d900b4c52a404d9,
-          mid_init$_7a37becabe54df7d,
-          mid_init$_3b080937682107f9,
-          mid_init$_a79dd5c32ebf7fea,
-          mid_getAncestor_8357b90e78910c88,
-          mid_getDepth_f2f64475e4580546,
-          mid_getFrozenFrame_5f0fa436726d35c8,
-          mid_getName_0090f7797e403f43,
-          mid_getParent_c8fe21bcdac65bf6,
-          mid_getRoot_c8fe21bcdac65bf6,
-          mid_getStaticTransformTo_45c7482c9fa9b39a,
-          mid_getStaticTransformTo_b08047c3dc3b3990,
-          mid_getTransformProvider_9b4010550f8e9669,
-          mid_getTransformTo_77d7d77f32eef8df,
-          mid_getTransformTo_bbda212ac61abf9a,
-          mid_isChildOf_624313f3a90c38c1,
-          mid_isPseudoInertial_e470b6d9e0d979db,
-          mid_toString_0090f7797e403f43,
+          mid_init$_03e04995a6531dd6,
+          mid_init$_96b1a690846f391d,
+          mid_init$_066cbc733c0a5e57,
+          mid_init$_f331b5c2e1d602c8,
+          mid_getAncestor_6f93408d33c3a1aa,
+          mid_getDepth_570ce0828f81a2c1,
+          mid_getFrozenFrame_96ed7581df7a3e75,
+          mid_getName_11b109bd155ca898,
+          mid_getParent_b86f9f61d97a7244,
+          mid_getRoot_b86f9f61d97a7244,
+          mid_getStaticTransformTo_8048aebc71d12954,
+          mid_getStaticTransformTo_a413a039e46f1166,
+          mid_getTransformProvider_b22bdbe9f9cd12d5,
+          mid_getTransformTo_1ca8a058da89e769,
+          mid_getTransformTo_5d0e5fed1e48b4f7,
+          mid_isChildOf_b6ce2293f1753032,
+          mid_isPseudoInertial_b108b35ef48e27bd,
+          mid_toString_11b109bd155ca898,
           max_mid
         };
 

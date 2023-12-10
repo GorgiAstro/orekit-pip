@@ -3,20 +3,6 @@
 
 #include "java/lang/RuntimeException.h"
 
-namespace org {
-  namespace orekit {
-    namespace errors {
-      class OrekitException;
-      class LocalizedException;
-    }
-  }
-  namespace hipparchus {
-    namespace exception {
-      class MathRuntimeException;
-      class Localizable;
-    }
-  }
-}
 namespace java {
   namespace util {
     class Locale;
@@ -28,6 +14,20 @@ namespace java {
     class String;
   }
 }
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class Localizable;
+      class MathRuntimeException;
+    }
+  }
+  namespace orekit {
+    namespace errors {
+      class LocalizedException;
+      class OrekitException;
+    }
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -37,16 +37,16 @@ namespace org {
       class OrekitException : public ::java::lang::RuntimeException {
        public:
         enum {
-          mid_init$_2171b09f9faab92f,
-          mid_init$_3d6784947cb48668,
-          mid_init$_f03459011cf1d5d9,
-          mid_init$_ca997976b075d32c,
-          mid_getLocalizedMessage_0090f7797e403f43,
-          mid_getMessage_0090f7797e403f43,
-          mid_getMessage_bab3be9b232acc5a,
-          mid_getParts_e81d7907eea7e008,
-          mid_getSpecifier_2e589a53386da289,
-          mid_unwrap_bdd7f7bad3198ab9,
+          mid_init$_b82e021312358546,
+          mid_init$_d0cf82c16a7e8751,
+          mid_init$_ff2c638d27c87622,
+          mid_init$_6ecc3fd6067c266c,
+          mid_getLocalizedMessage_11b109bd155ca898,
+          mid_getMessage_11b109bd155ca898,
+          mid_getMessage_3cd873bfb132c4fd,
+          mid_getParts_b93c730013ce64c6,
+          mid_getSpecifier_517615caa9b88a24,
+          mid_unwrap_70dc890dae923211,
           max_mid
         };
 

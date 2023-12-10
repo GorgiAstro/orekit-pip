@@ -32,11 +32,11 @@ namespace org {
       class SobolSequenceGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0a2a1ac2721c0336,
-          mid_init$_c5ff11979485c1ac,
-          mid_getNextIndex_f2f64475e4580546,
-          mid_nextVector_7cdc325af0834901,
-          mid_skipTo_eb9cceadce1b2217,
+          mid_init$_99803b0791f320ff,
+          mid_init$_550926389ea2217c,
+          mid_getNextIndex_570ce0828f81a2c1,
+          mid_nextVector_60c7040667a7dc5c,
+          mid_skipTo_abe82da4f5c7c981,
           max_mid
         };
 

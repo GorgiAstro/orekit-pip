@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace geometry {
       class Point;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,10 +25,10 @@ namespace org {
         class BoundaryProjection : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_e44c205add2d5955,
-            mid_getOffset_456d9a2f64d6b28d,
-            mid_getOriginal_268784e47ab908a6,
-            mid_getProjected_268784e47ab908a6,
+            mid_init$_c53bbff1c5a45bc0,
+            mid_getOffset_dff5885c2c873297,
+            mid_getOriginal_e164db6eb4ec1f00,
+            mid_getProjected_e164db6eb4ec1f00,
             max_mid
           };
 

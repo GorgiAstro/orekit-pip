@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
+    namespace errors {
+      class OrekitIllegalArgumentException;
+    }
     namespace files {
       namespace rinex {
         namespace clock {
           class RinexClock$ClockDataType;
         }
       }
-    }
-    namespace errors {
-      class OrekitIllegalArgumentException;
     }
   }
 }
@@ -34,10 +34,10 @@ namespace org {
           class RinexClock$ClockDataType : public ::java::lang::Enum {
            public:
             enum {
-              mid_getKey_0090f7797e403f43,
-              mid_parseClockDataType_96d882edfd06a5a7,
-              mid_valueOf_96d882edfd06a5a7,
-              mid_values_1c25decec23f013f,
+              mid_getKey_11b109bd155ca898,
+              mid_parseClockDataType_2af0824302571178,
+              mid_valueOf_2af0824302571178,
+              mid_values_323783eb86fff0dd,
               max_mid
             };
 

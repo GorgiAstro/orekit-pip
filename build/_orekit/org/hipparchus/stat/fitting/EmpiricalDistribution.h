@@ -4,12 +4,12 @@
 #include "org/hipparchus/distribution/continuous/AbstractRealDistribution.h"
 
 namespace java {
+  namespace util {
+    class List;
+  }
   namespace io {
     class IOException;
     class File;
-  }
-  namespace util {
-    class List;
   }
   namespace lang {
     class Class;
@@ -20,19 +20,19 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace random {
-      class RandomGenerator;
-    }
     namespace exception {
       class MathIllegalStateException;
-      class MathIllegalArgumentException;
       class NullArgumentException;
+      class MathIllegalArgumentException;
     }
     namespace stat {
       namespace descriptive {
-        class StreamingStatistics;
         class StatisticalSummary;
+        class StreamingStatistics;
       }
+    }
+    namespace random {
+      class RandomGenerator;
     }
   }
 }
@@ -46,31 +46,31 @@ namespace org {
         class EmpiricalDistribution : public ::org::hipparchus::distribution::continuous::AbstractRealDistribution {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_init$_0a2a1ac2721c0336,
-            mid_init$_bb31e8cbfaf41e63,
-            mid_init$_3838ea28c063a110,
-            mid_cumulativeProbability_0ba5fed9597b693e,
-            mid_density_0ba5fed9597b693e,
-            mid_getBinCount_f2f64475e4580546,
-            mid_getBinStats_a6156df500549a58,
-            mid_getGeneratorUpperBounds_7cdc325af0834901,
-            mid_getNextValue_456d9a2f64d6b28d,
-            mid_getNumericalMean_456d9a2f64d6b28d,
-            mid_getNumericalVariance_456d9a2f64d6b28d,
-            mid_getSampleStats_47e97143cdc53a1c,
-            mid_getSupportLowerBound_456d9a2f64d6b28d,
-            mid_getSupportUpperBound_456d9a2f64d6b28d,
-            mid_getUpperBounds_7cdc325af0834901,
-            mid_inverseCumulativeProbability_0ba5fed9597b693e,
-            mid_isLoaded_e470b6d9e0d979db,
-            mid_isSupportConnected_e470b6d9e0d979db,
-            mid_load_ebc26dcaf4761286,
-            mid_load_46e66c77c82c9a6b,
-            mid_load_466101f788d70aca,
-            mid_reSeed_fefb08975c10f0a1,
-            mid_reseedRandomGenerator_fefb08975c10f0a1,
-            mid_getKernel_f22f19290070a5b3,
+            mid_init$_0fa09c18fee449d5,
+            mid_init$_99803b0791f320ff,
+            mid_init$_a351c1fd6920cdee,
+            mid_init$_2b71fcb2111892eb,
+            mid_cumulativeProbability_dcbc7ce2902fa136,
+            mid_density_dcbc7ce2902fa136,
+            mid_getBinCount_570ce0828f81a2c1,
+            mid_getBinStats_2afa36052df4765d,
+            mid_getGeneratorUpperBounds_60c7040667a7dc5c,
+            mid_getNextValue_dff5885c2c873297,
+            mid_getNumericalMean_dff5885c2c873297,
+            mid_getNumericalVariance_dff5885c2c873297,
+            mid_getSampleStats_5a169194284d157f,
+            mid_getSupportLowerBound_dff5885c2c873297,
+            mid_getSupportUpperBound_dff5885c2c873297,
+            mid_getUpperBounds_60c7040667a7dc5c,
+            mid_inverseCumulativeProbability_dcbc7ce2902fa136,
+            mid_isLoaded_b108b35ef48e27bd,
+            mid_isSupportConnected_b108b35ef48e27bd,
+            mid_load_fa9d415d19f69361,
+            mid_load_0613af62f2ba5dba,
+            mid_load_fe56d648976a8dcb,
+            mid_reSeed_3a8e7649f31fdb20,
+            mid_reseedRandomGenerator_3a8e7649f31fdb20,
+            mid_getKernel_3100b8ccdc6b60fb,
             max_mid
           };
 

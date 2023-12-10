@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace random {
-      class RandomVectorGenerator;
       class NormalizedRandomGenerator;
+      class RandomVectorGenerator;
     }
   }
 }
@@ -25,9 +25,9 @@ namespace org {
       class UncorrelatedRandomVectorGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_6a219a228ca4ae65,
-          mid_init$_e9e9a0a3450a44f3,
-          mid_nextVector_7cdc325af0834901,
+          mid_init$_0ff92a3db7c55279,
+          mid_init$_48c24d51511e841c,
+          mid_nextVector_60c7040667a7dc5c,
           max_mid
         };
 

@@ -13,29 +13,10 @@ namespace org {
         }
       }
     }
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
   namespace orekit {
-    namespace utils {
-      class TimeSpanMap;
-      class TimeSpanMap$Span;
-      class ParameterDriver;
-    }
-    namespace forces {
-      class ForceModel;
-      namespace empirical {
-        class AccelerationModel;
-      }
-    }
-    namespace propagation {
-      class SpacecraftState;
-      class FieldSpacecraftState;
-      namespace events {
-        class EventDetector;
-        class FieldEventDetector;
-      }
-    }
     namespace time {
       class AbsoluteDate;
       class FieldAbsoluteDate;
@@ -43,18 +24,37 @@ namespace org {
     namespace attitudes {
       class AttitudeProvider;
     }
+    namespace propagation {
+      namespace events {
+        class FieldEventDetector;
+        class EventDetector;
+      }
+      class SpacecraftState;
+      class FieldSpacecraftState;
+    }
+    namespace utils {
+      class TimeSpanMap$Span;
+      class ParameterDriver;
+      class TimeSpanMap;
+    }
+    namespace forces {
+      class ForceModel;
+      namespace empirical {
+        class AccelerationModel;
+      }
+    }
   }
 }
 namespace java {
+  namespace lang {
+    class Class;
+    class String;
+  }
   namespace util {
     namespace stream {
       class Stream;
     }
     class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -67,23 +67,23 @@ namespace org {
         class TimeSpanParametricAcceleration : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_fe8be0364ca74ee2,
-            mid_init$_0de0371c7296ad8d,
-            mid_acceleration_00aba28d3abe9a8c,
-            mid_acceleration_78989e44b99f7cc2,
-            mid_addAccelerationModelValidAfter_91f97c45321ef11b,
-            mid_addAccelerationModelValidBefore_91f97c45321ef11b,
-            mid_dependsOnPositionOnly_e470b6d9e0d979db,
-            mid_extractAccelerationModelRange_df7496d2771de2ea,
-            mid_extractParameters_d7d552e275320f67,
-            mid_extractParameters_8b177eb25e4eb468,
-            mid_getAccelerationModel_3c4e1c0fbc8f4df5,
-            mid_getAccelerationModelSpan_e815c41e031d3908,
-            mid_getEventDetectors_a68a17dd093f796d,
-            mid_getFieldEventDetectors_1328ddb491531a35,
-            mid_getFirstSpan_39a1e35b17737f60,
-            mid_getParametersDrivers_a6156df500549a58,
-            mid_init_3d13474d79f5e7bc,
+            mid_init$_043e9efe19e3b3cd,
+            mid_init$_292f4a8302d10a85,
+            mid_acceleration_8954761face5e1a7,
+            mid_acceleration_b42ac4b5bfb80fab,
+            mid_addAccelerationModelValidAfter_03b4f7d8bf49d4bf,
+            mid_addAccelerationModelValidBefore_03b4f7d8bf49d4bf,
+            mid_dependsOnPositionOnly_b108b35ef48e27bd,
+            mid_extractAccelerationModelRange_56889532bb31616d,
+            mid_extractParameters_020d17bb8c285475,
+            mid_extractParameters_547c908eaeea187e,
+            mid_getAccelerationModel_7cbe637ff309e336,
+            mid_getAccelerationModelSpan_561a18a65c5f000d,
+            mid_getEventDetectors_20f6d2b462aaef4b,
+            mid_getFieldEventDetectors_361313cd1a9c693a,
+            mid_getFirstSpan_971209c2bf2033e7,
+            mid_getParametersDrivers_2afa36052df4765d,
+            mid_init_826b4eda94da4e78,
             max_mid
           };
 

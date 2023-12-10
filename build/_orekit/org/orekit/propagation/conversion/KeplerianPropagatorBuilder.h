@@ -3,26 +3,18 @@
 
 #include "org/orekit/propagation/conversion/AbstractPropagatorBuilder.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class Object;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace propagation {
-      class Propagator;
-      namespace conversion {
-        class KeplerianPropagatorBuilder;
-        class PropagatorBuilder;
-      }
+    namespace orbits {
+      class PositionAngleType;
+      class Orbit;
     }
-    namespace attitudes {
-      class AttitudeProvider;
+    namespace propagation {
+      namespace conversion {
+        class PropagatorBuilder;
+        class KeplerianPropagatorBuilder;
+      }
+      class Propagator;
     }
     namespace estimation {
       namespace leastsquares {
@@ -33,13 +25,21 @@ namespace org {
         class ObservedMeasurement;
       }
     }
-    namespace orbits {
-      class Orbit;
-      class PositionAngleType;
+    namespace attitudes {
+      class AttitudeProvider;
     }
     namespace utils {
       class ParameterDriversList;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class Object;
   }
 }
 template<class T> class JArray;
@@ -52,11 +52,11 @@ namespace org {
         class KeplerianPropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_baacf153afcb2d24,
-            mid_init$_81365fd3614b2b0c,
-            mid_buildLeastSquaresModel_31c4fcde5bc19fc3,
-            mid_buildPropagator_d397e255f9fb16e6,
-            mid_copy_b628bebb3827312b,
+            mid_init$_24dcf7dfbd233a1e,
+            mid_init$_876e40d3b056a533,
+            mid_buildLeastSquaresModel_2eb3122719704f90,
+            mid_buildPropagator_0c183831cad84280,
+            mid_copy_098ffd584acb8c89,
             max_mid
           };
 

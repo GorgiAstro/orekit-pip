@@ -3,6 +3,26 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace general {
+        class OrekitAttitudeEphemerisFile$OrekitAttitudeEphemerisSegment;
+        class AttitudeEphemerisFile$SatelliteAttitudeEphemeris;
+      }
+    }
+    namespace utils {
+      class TimeStampedAngularCoordinates;
+      class AngularDerivativesFilter;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace propagation {
+      class SpacecraftState;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,26 +30,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace utils {
-      class AngularDerivativesFilter;
-      class TimeStampedAngularCoordinates;
-    }
-    namespace files {
-      namespace general {
-        class OrekitAttitudeEphemerisFile$OrekitAttitudeEphemerisSegment;
-        class AttitudeEphemerisFile$SatelliteAttitudeEphemeris;
-      }
-    }
-    namespace propagation {
-      class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
   }
 }
 template<class T> class JArray;
@@ -42,12 +42,12 @@ namespace org {
         class OrekitAttitudeEphemerisFile$OrekitSatelliteAttitudeEphemeris : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_e939c6558ae8d313,
-            mid_addNewSegment_3f51626c949c7491,
-            mid_getId_0090f7797e403f43,
-            mid_getSegments_a6156df500549a58,
-            mid_getStart_aaa854c403487cf3,
-            mid_getStop_aaa854c403487cf3,
+            mid_init$_d0bc48d5b00dc40c,
+            mid_addNewSegment_3061e5b7306989ba,
+            mid_getId_11b109bd155ca898,
+            mid_getSegments_2afa36052df4765d,
+            mid_getStart_85703d13e302437e,
+            mid_getStop_85703d13e302437e,
             max_mid
           };
 

@@ -5,22 +5,22 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace analysis {
-      namespace polynomials {
-        class PolynomialFunction;
-        class PolynomialSplineFunction;
-      }
       class FieldUnivariateFunction;
       namespace differentiation {
         class Derivative;
         class UnivariateDifferentiableFunction;
+      }
+      namespace polynomials {
+        class PolynomialFunction;
+        class PolynomialSplineFunction;
       }
     }
     namespace exception {
       class NullArgumentException;
       class MathIllegalArgumentException;
     }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -38,15 +38,15 @@ namespace org {
         class PolynomialSplineFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_93b81a7dc415befa,
-            mid_getKnots_7cdc325af0834901,
-            mid_getN_f2f64475e4580546,
-            mid_getPolynomials_4abf9ec9946ee32d,
-            mid_isValidPoint_e18fb1101b70dcca,
-            mid_polynomialSplineDerivative_0ca61ecfbea37c0e,
-            mid_value_0ba5fed9597b693e,
-            mid_value_d3398190482814dc,
-            mid_value_1f22c1881e72229d,
+            mid_init$_9018bf358367e5d6,
+            mid_getKnots_60c7040667a7dc5c,
+            mid_getN_570ce0828f81a2c1,
+            mid_getPolynomials_02eeb9e6c0dfd60f,
+            mid_isValidPoint_2e401133981893e4,
+            mid_polynomialSplineDerivative_0dc7302672c3994b,
+            mid_value_dcbc7ce2902fa136,
+            mid_value_a4b1871f4d29e58b,
+            mid_value_73d6acaa8ebd2b7d,
             max_mid
           };
 

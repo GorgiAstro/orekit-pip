@@ -35,8 +35,8 @@ namespace org {
         class SP3Writer : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_52f16e19f52d2733,
-            mid_write_0c62a5505384da6e,
+            mid_init$_90c3127910aa39b7,
+            mid_write_dcc7ce1f19d79b1d,
             max_mid
           };
 

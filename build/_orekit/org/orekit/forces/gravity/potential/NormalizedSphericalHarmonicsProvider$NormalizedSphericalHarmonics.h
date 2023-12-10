@@ -19,8 +19,8 @@ namespace org {
           class NormalizedSphericalHarmonicsProvider$NormalizedSphericalHarmonics : public ::org::orekit::time::TimeStamped {
            public:
             enum {
-              mid_getNormalizedCnm_a84e4ee1da3f1ab8,
-              mid_getNormalizedSnm_a84e4ee1da3f1ab8,
+              mid_getNormalizedCnm_dbbe5f05149dbf73,
+              mid_getNormalizedSnm_dbbe5f05149dbf73,
               max_mid
             };
 

@@ -3,21 +3,21 @@
 
 #include "org/orekit/frames/Frame.h"
 
+namespace org {
+  namespace orekit {
+    namespace frames {
+      class Transform;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
+}
 namespace java {
   namespace lang {
     class Class;
     class IllegalArgumentException;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace frames {
-      class Transform;
-    }
   }
 }
 template<class T> class JArray;
@@ -29,9 +29,9 @@ namespace org {
       class UpdatableFrame : public ::org::orekit::frames::Frame {
        public:
         enum {
-          mid_init$_4d900b4c52a404d9,
-          mid_init$_3b080937682107f9,
-          mid_updateTransform_e619467012bbf00d,
+          mid_init$_03e04995a6531dd6,
+          mid_init$_066cbc733c0a5e57,
+          mid_updateTransform_4b30d7911a9905e9,
           max_mid
         };
 

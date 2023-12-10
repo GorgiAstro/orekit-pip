@@ -5,21 +5,21 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeStamped;
-      class AbsoluteDate;
-    }
     namespace propagation {
       class StateCovariance;
+    }
+    namespace orbits {
+      class PositionAngleType;
+      class Orbit;
+      class OrbitType;
     }
     namespace frames {
       class Frame;
       class LOF;
     }
-    namespace orbits {
-      class Orbit;
-      class PositionAngleType;
-      class OrbitType;
+    namespace time {
+      class AbsoluteDate;
+      class TimeStamped;
     }
   }
   namespace hipparchus {
@@ -42,20 +42,20 @@ namespace org {
       class StateCovariance : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_bc3eac47e80fb0ba,
-          mid_init$_1c599a7dea3b43c0,
-          mid_changeCovarianceFrame_3fd4717a462c22f4,
-          mid_changeCovarianceFrame_1a4b94b92ad46ea0,
-          mid_changeCovarianceType_73777e50711dae04,
-          mid_checkFrameAndOrbitTypeConsistency_eac94fe4d20a9982,
-          mid_getDate_aaa854c403487cf3,
-          mid_getFrame_c8fe21bcdac65bf6,
-          mid_getLOF_6131a2ffcdec47e9,
-          mid_getMatrix_7116bbecdd8ceb21,
-          mid_getOrbitType_63ea5cd020bf7bf1,
-          mid_getPositionAngleType_2571e8fe1cede425,
-          mid_getStm_f834e4415e4edf80,
-          mid_shiftedBy_7942b69d6379bc01,
+          mid_init$_adcc3987ecb59f2f,
+          mid_init$_8c76bcc3b3703cd4,
+          mid_changeCovarianceFrame_182573aae0235221,
+          mid_changeCovarianceFrame_4b28d150e65f081d,
+          mid_changeCovarianceType_e0215de50e31f8fc,
+          mid_checkFrameAndOrbitTypeConsistency_45530030cb08ed48,
+          mid_getDate_85703d13e302437e,
+          mid_getFrame_b86f9f61d97a7244,
+          mid_getLOF_d1997b828913f65f,
+          mid_getMatrix_688b496048ff947b,
+          mid_getOrbitType_e29360d311dc0e20,
+          mid_getPositionAngleType_8f17e83e5a86217c,
+          mid_getStm_f193dd9736942df6,
+          mid_shiftedBy_5f863ee3bdf9af16,
           max_mid
         };
 

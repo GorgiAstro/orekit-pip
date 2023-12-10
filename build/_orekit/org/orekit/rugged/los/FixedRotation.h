@@ -3,7 +3,28 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace rugged {
       namespace utils {
@@ -17,27 +38,6 @@ namespace org {
       class ParameterDriver;
     }
   }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-  }
-}
-namespace java {
-  namespace util {
-    namespace stream {
-      class Stream;
-    }
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
 }
 template<class T> class JArray;
 
@@ -49,10 +49,10 @@ namespace org {
         class FixedRotation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_78d52e05e47a4474,
-            mid_getParametersDrivers_a68a17dd093f796d,
-            mid_transformLOS_5b56f31df08e1557,
-            mid_transformLOS_e434856d6b086dd4,
+            mid_init$_0d37035a6f00662a,
+            mid_getParametersDrivers_20f6d2b462aaef4b,
+            mid_transformLOS_c5b4a35f45a6f61e,
+            mid_transformLOS_43c702ec4c12ce7d,
             max_mid
           };
 

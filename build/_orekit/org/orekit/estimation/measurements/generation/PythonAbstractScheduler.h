@@ -19,8 +19,8 @@ namespace org {
       }
     }
     namespace time {
-      class DatesSelector;
       class AbsoluteDate;
+      class DatesSelector;
     }
   }
 }
@@ -35,12 +35,12 @@ namespace org {
           class PythonAbstractScheduler : public ::org::orekit::estimation::measurements::generation::AbstractScheduler {
            public:
             enum {
-              mid_init$_30703ff0587c737c,
-              mid_finalize_7ae3461a92a43152,
-              mid_measurementIsFeasible_ee2067c5768b6768,
-              mid_pythonDecRef_7ae3461a92a43152,
-              mid_pythonExtension_a27fc9afd27e559d,
-              mid_pythonExtension_fefb08975c10f0a1,
+              mid_init$_df0efa5394471381,
+              mid_finalize_0fa09c18fee449d5,
+              mid_measurementIsFeasible_db6d81809797ddaa,
+              mid_pythonDecRef_0fa09c18fee449d5,
+              mid_pythonExtension_492808a339bfa35f,
+              mid_pythonExtension_3a8e7649f31fdb20,
               max_mid
             };
 

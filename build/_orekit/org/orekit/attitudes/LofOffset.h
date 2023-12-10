@@ -9,29 +9,29 @@ namespace org {
       namespace euclidean {
         namespace threed {
           class Rotation;
-          class RotationOrder;
           class FieldRotation;
+          class RotationOrder;
         }
       }
     }
   }
   namespace orekit {
+    namespace attitudes {
+      class Attitude;
+      class FieldAttitude;
+      class AttitudeProvider;
+    }
     namespace frames {
       class Frame;
       class LOF;
     }
-    namespace attitudes {
-      class AttitudeProvider;
-      class Attitude;
-      class FieldAttitude;
+    namespace utils {
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
     }
     namespace time {
       class AbsoluteDate;
       class FieldAbsoluteDate;
-    }
-    namespace utils {
-      class FieldPVCoordinatesProvider;
-      class PVCoordinatesProvider;
     }
   }
 }
@@ -49,12 +49,12 @@ namespace org {
       class LofOffset : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_907a2084a7036347,
-          mid_init$_3f1d517820e7775e,
-          mid_getAttitude_455b5c75f9292826,
-          mid_getAttitude_5341a8481841f90c,
-          mid_getAttitudeRotation_969253bc78d7a272,
-          mid_getAttitudeRotation_01363f58d35f60d4,
+          mid_init$_d0da994ef99ba2d6,
+          mid_init$_47a098327b6c6c38,
+          mid_getAttitude_4e541876ea7d5bd0,
+          mid_getAttitude_d2b70935d932b5c5,
+          mid_getAttitudeRotation_53a81d4d17b13463,
+          mid_getAttitudeRotation_29422c22de775b74,
           max_mid
         };
 

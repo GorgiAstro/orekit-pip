@@ -3,12 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -16,6 +10,12 @@ namespace org {
         class STKEphemerisFile$STKCoordinateSystem;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,9 +28,9 @@ namespace org {
         class STKEphemerisFile$STKCoordinateSystem : public ::java::lang::Enum {
          public:
           enum {
-            mid_parse_400ba4f1fe184846,
-            mid_valueOf_400ba4f1fe184846,
-            mid_values_fc3899728934e9b0,
+            mid_parse_6bb8ad188765d66f,
+            mid_valueOf_6bb8ad188765d66f,
+            mid_values_b2e10462e755d0fa,
             max_mid
           };
 

@@ -3,28 +3,28 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace ode {
-      namespace sampling {
-        class ODEStepHandler;
-        class ODEStateInterpolator;
-      }
-      class DenseOutputModel;
-      class ODEStateAndDerivative;
-    }
-    namespace exception {
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
-    }
-  }
-}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class MathIllegalStateException;
+      class MathIllegalArgumentException;
+    }
+    namespace ode {
+      class ODEStateAndDerivative;
+      class DenseOutputModel;
+      namespace sampling {
+        class ODEStepHandler;
+        class ODEStateInterpolator;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -36,14 +36,14 @@ namespace org {
       class DenseOutputModel : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_append_2d53ab9c410c1d8f,
-          mid_finish_100c57fd45963f6d,
-          mid_getFinalTime_456d9a2f64d6b28d,
-          mid_getInitialTime_456d9a2f64d6b28d,
-          mid_getInterpolatedState_05e60c2c1f1796ae,
-          mid_handleStep_7f7ea329b6669cd2,
-          mid_init_85808f3d6374b436,
+          mid_init$_0fa09c18fee449d5,
+          mid_append_ad9eeb1bf2af40c3,
+          mid_finish_250c80d95e429c01,
+          mid_getFinalTime_dff5885c2c873297,
+          mid_getInitialTime_dff5885c2c873297,
+          mid_getInterpolatedState_f01efdb3ab1bad7f,
+          mid_handleStep_8c00288d760ba078,
+          mid_init_5aaadc62bce8a394,
           max_mid
         };
 

@@ -3,19 +3,10 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class SortedMap;
-  }
-  namespace lang {
-    class Double;
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
-    class Field;
     class CalculusFieldElement;
+    class Field;
   }
   namespace orekit {
     namespace propagation {
@@ -27,6 +18,15 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace util {
+    class SortedMap;
+  }
+  namespace lang {
+    class Double;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -41,9 +41,9 @@ namespace org {
             class FieldLnsCoefficients : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a1f22cac9018a557,
-                mid_getLns_3e44951e1cc3e6e3,
-                mid_getdLnsdGamma_3e44951e1cc3e6e3,
+                mid_init$_e0a281dafd8f50b8,
+                mid_getLns_d0525157bc3abb83,
+                mid_getdLnsdGamma_d0525157bc3abb83,
                 max_mid
               };
 

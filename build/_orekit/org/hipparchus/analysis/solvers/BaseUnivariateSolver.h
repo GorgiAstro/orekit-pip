@@ -29,13 +29,13 @@ namespace org {
         class BaseUnivariateSolver : public ::java::lang::Object {
          public:
           enum {
-            mid_getAbsoluteAccuracy_456d9a2f64d6b28d,
-            mid_getEvaluations_f2f64475e4580546,
-            mid_getFunctionValueAccuracy_456d9a2f64d6b28d,
-            mid_getRelativeAccuracy_456d9a2f64d6b28d,
-            mid_solve_f359ce7f50720544,
-            mid_solve_5e6ae88ca7503288,
-            mid_solve_5ec58f5d7d8b216f,
+            mid_getAbsoluteAccuracy_dff5885c2c873297,
+            mid_getEvaluations_570ce0828f81a2c1,
+            mid_getFunctionValueAccuracy_dff5885c2c873297,
+            mid_getRelativeAccuracy_dff5885c2c873297,
+            mid_solve_a156b737628248ac,
+            mid_solve_5531acb13e429311,
+            mid_solve_136fe8df860928b8,
             max_mid
           };
 

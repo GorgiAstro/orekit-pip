@@ -17,8 +17,8 @@ namespace org {
 }
 namespace java {
   namespace lang {
-    class Class;
     class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -32,13 +32,13 @@ namespace org {
           class RotationOrder : public ::java::lang::Enum {
            public:
             enum {
-              mid_getA1_17a952530a808943,
-              mid_getA2_17a952530a808943,
-              mid_getA3_17a952530a808943,
-              mid_getRotationOrder_b19970ea875427f5,
-              mid_toString_0090f7797e403f43,
-              mid_valueOf_b19970ea875427f5,
-              mid_values_da1671c21b9900e6,
+              mid_getA1_d52645e0d4c07563,
+              mid_getA2_d52645e0d4c07563,
+              mid_getA3_d52645e0d4c07563,
+              mid_getRotationOrder_c7309d119bde52fc,
+              mid_toString_11b109bd155ca898,
+              mid_valueOf_c7309d119bde52fc,
+              mid_values_a138aab2cc2c9608,
               max_mid
             };
 

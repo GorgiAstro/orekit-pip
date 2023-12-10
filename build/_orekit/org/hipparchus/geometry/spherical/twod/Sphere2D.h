@@ -17,15 +17,15 @@ namespace org {
       class MathIllegalArgumentException;
     }
     namespace geometry {
+      class Space;
       namespace spherical {
-        namespace twod {
-          class Sphere2D;
-        }
         namespace oned {
           class Sphere1D;
         }
+        namespace twod {
+          class Sphere2D;
+        }
       }
-      class Space;
     }
   }
 }
@@ -40,10 +40,10 @@ namespace org {
           class Sphere2D : public ::java::lang::Object {
            public:
             enum {
-              mid_checkTolerance_77e0f9a1f260e2e5,
-              mid_getDimension_f2f64475e4580546,
-              mid_getInstance_990d4b8b64c5346f,
-              mid_getSubSpace_5912521fb294e3a6,
+              mid_checkTolerance_17db3a65980d3441,
+              mid_getDimension_570ce0828f81a2c1,
+              mid_getInstance_89597fd2befc9ecf,
+              mid_getSubSpace_1bd6b4665a0d1abd,
               max_mid
             };
 

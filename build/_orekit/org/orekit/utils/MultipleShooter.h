@@ -31,10 +31,10 @@ namespace org {
       class MultipleShooter : public ::org::orekit::utils::AbstractMultipleShooting {
        public:
         enum {
-          mid_init$_ea30a3806cd01d66,
-          mid_computeAdditionalConstraints_5c4ec51dfa4e445c,
-          mid_computeAdditionalJacobianMatrix_8b899bcca8eef41a,
-          mid_getAugmentedInitialState_881fd9055e653db3,
+          mid_init$_15f1e1aa5c607e00,
+          mid_getAugmentedInitialState_8f68ada11fb66675,
+          mid_computeAdditionalJacobianMatrix_11c2223c723fd443,
+          mid_computeAdditionalConstraints_ae31e5696ec6455b,
           max_mid
         };
 

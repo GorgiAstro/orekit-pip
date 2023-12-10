@@ -13,11 +13,11 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace estimation {
-      namespace sequential {
-        class KalmanObserver;
-      }
       namespace measurements {
         class ObservedMeasurement;
+      }
+      namespace sequential {
+        class KalmanObserver;
       }
     }
     namespace propagation {
@@ -35,10 +35,10 @@ namespace org {
         class KalmanEstimator : public ::org::orekit::estimation::sequential::AbstractKalmanEstimator {
          public:
           enum {
-            mid_estimationStep_637ed96db7decac9,
-            mid_processMeasurements_0f0906d0fce818f4,
-            mid_setObserver_fe6775fb802fa129,
-            mid_getKalmanEstimation_69a0a486b7aaf0c0,
+            mid_estimationStep_ea9d4e2e9f4a999e,
+            mid_processMeasurements_cdedbecd168387ff,
+            mid_setObserver_3b3c487cb3322691,
+            mid_getKalmanEstimation_e05aaef10b06b09b,
             max_mid
           };
 

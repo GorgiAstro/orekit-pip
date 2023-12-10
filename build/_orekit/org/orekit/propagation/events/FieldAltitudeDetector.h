@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace bodies {
-      class BodyShape;
-    }
     namespace propagation {
       class FieldSpacecraftState;
+    }
+    namespace bodies {
+      class BodyShape;
     }
   }
   namespace hipparchus {
@@ -31,13 +31,13 @@ namespace org {
         class FieldAltitudeDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_a998b8675f61545e,
-            mid_init$_48e1ab7629a8c2a4,
-            mid_init$_6cbd24da1a73ca86,
-            mid_g_cc79c2733879de35,
-            mid_getAltitude_e6d4d3215c30992a,
-            mid_getBodyShape_883d26889ee03ca8,
-            mid_create_452ae8def470195c,
+            mid_init$_5eb423019e583d00,
+            mid_init$_daaca5e108517253,
+            mid_init$_87e4531e9decf5a6,
+            mid_g_41a008afe53da855,
+            mid_getAltitude_eba8e72a22c984ac,
+            mid_getBodyShape_6f78da94fd048d9d,
+            mid_create_11da04d559f0cfb7,
             max_mid
           };
 

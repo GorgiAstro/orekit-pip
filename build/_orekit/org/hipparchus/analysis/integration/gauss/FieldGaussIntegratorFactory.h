@@ -5,19 +5,19 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace analysis {
       namespace integration {
         namespace gauss {
-          class FieldGaussIntegrator;
           class SymmetricFieldGaussIntegrator;
+          class FieldGaussIntegrator;
         }
       }
     }
-    class Field;
     namespace exception {
       class MathIllegalArgumentException;
     }
-    class CalculusFieldElement;
+    class Field;
   }
 }
 namespace java {
@@ -36,11 +36,11 @@ namespace org {
           class FieldGaussIntegratorFactory : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_205c34b8e33cf33f,
-              mid_hermite_e199d499df8e4c14,
-              mid_laguerre_48624930c7529b05,
-              mid_legendre_48624930c7529b05,
-              mid_legendre_50b4ec78e096e5af,
+              mid_init$_484998d88974267b,
+              mid_hermite_9e57cd72aba37735,
+              mid_laguerre_ee6858ffadedf176,
+              mid_legendre_ee6858ffadedf176,
+              mid_legendre_9f4acbccfe7929d8,
               max_mid
             };
 

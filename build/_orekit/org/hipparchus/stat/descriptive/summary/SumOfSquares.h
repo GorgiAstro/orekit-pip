@@ -13,16 +13,16 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace stat {
       namespace descriptive {
-        class AggregatableStatistic;
         namespace summary {
           class SumOfSquares;
         }
+        class AggregatableStatistic;
       }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -37,14 +37,14 @@ namespace org {
           class SumOfSquares : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_aggregate_1e0c3014acd35543,
-              mid_clear_7ae3461a92a43152,
-              mid_copy_b883da216b53fdce,
-              mid_evaluate_0a7ff474793a505a,
-              mid_getN_a27fc9afd27e559d,
-              mid_getResult_456d9a2f64d6b28d,
-              mid_increment_77e0f9a1f260e2e5,
+              mid_init$_0fa09c18fee449d5,
+              mid_aggregate_4ae573e50f135b2f,
+              mid_clear_0fa09c18fee449d5,
+              mid_copy_9f0db2ec4a0fcc45,
+              mid_evaluate_556bede10daac330,
+              mid_getN_492808a339bfa35f,
+              mid_getResult_dff5885c2c873297,
+              mid_increment_17db3a65980d3441,
               max_mid
             };
 

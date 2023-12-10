@@ -4,6 +4,17 @@
 #include "org/orekit/forces/radiation/AbstractRadiationForceModel.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace propagation {
       class FieldSpacecraftState;
@@ -12,24 +23,13 @@ namespace org {
     namespace bodies {
       class OneAxisEllipsoid;
     }
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace utils {
       class ParameterDriver;
       class ExtendedPVCoordinatesProvider;
     }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -50,11 +50,11 @@ namespace org {
         class PythonAbstractRadiationForceModel : public ::org::orekit::forces::radiation::AbstractRadiationForceModel {
          public:
           enum {
-            mid_init$_719ca4870d1969c7,
-            mid_acceleration_78989e44b99f7cc2,
-            mid_acceleration_00aba28d3abe9a8c,
-            mid_getParametersDrivers_a6156df500549a58,
-            mid_init_3d13474d79f5e7bc,
+            mid_init$_3a0f577f9dfae88f,
+            mid_acceleration_8954761face5e1a7,
+            mid_acceleration_b42ac4b5bfb80fab,
+            mid_getParametersDrivers_2afa36052df4765d,
+            mid_init_826b4eda94da4e78,
             max_mid
           };
 
@@ -71,8 +71,8 @@ namespace org {
 
           PythonAbstractRadiationForceModel(const ::org::orekit::utils::ExtendedPVCoordinatesProvider &, const ::org::orekit::bodies::OneAxisEllipsoid &);
 
-          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
+          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           ::java::util::List getParametersDrivers() const;
           void init(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::time::AbsoluteDate &) const;
         };

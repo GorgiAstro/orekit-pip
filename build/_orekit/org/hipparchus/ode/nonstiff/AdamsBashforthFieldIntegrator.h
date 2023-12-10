@@ -5,10 +5,10 @@
 
 namespace org {
   namespace hipparchus {
-    class Field;
     namespace exception {
       class MathIllegalArgumentException;
     }
+    class Field;
   }
 }
 namespace java {
@@ -27,10 +27,10 @@ namespace org {
         class AdamsBashforthFieldIntegrator : public ::org::hipparchus::ode::nonstiff::AdamsFieldIntegrator {
          public:
           enum {
-            mid_init$_a9398ed2a13d6b42,
-            mid_init$_b90e9d65ac061479,
-            mid_errorEstimation_e2c124c0ae6f0f15,
-            mid_finalizeStep_2e4197dad990b4d5,
+            mid_init$_7f69364f82b72251,
+            mid_init$_b6677f3cac38e98d,
+            mid_errorEstimation_41f9dcc5eb20f1cb,
+            mid_finalizeStep_cf78fb7ef1b60a21,
             max_mid
           };
 

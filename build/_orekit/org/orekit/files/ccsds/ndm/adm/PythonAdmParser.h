@@ -3,27 +3,10 @@
 
 #include "org/orekit/files/ccsds/ndm/adm/AdmParser.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-    class Object;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataContext;
-    }
-    namespace utils {
-      class IERSConventions;
-    }
     namespace files {
       namespace ccsds {
-        namespace utils {
-          class FileFormat;
-        }
         namespace ndm {
           class NdmConstituent;
           namespace adm {
@@ -31,11 +14,28 @@ namespace org {
           }
           class ParsedUnitsBehavior;
         }
+        namespace utils {
+          class FileFormat;
+        }
       }
+    }
+    namespace data {
+      class DataContext;
+    }
+    namespace utils {
+      class IERSConventions;
     }
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+    class Object;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -50,22 +50,22 @@ namespace org {
             class PythonAdmParser : public ::org::orekit::files::ccsds::ndm::adm::AdmParser {
              public:
               enum {
-                mid_build_3d5ffc54bfa065da,
-                mid_finalize_7ae3461a92a43152,
-                mid_finalizeData_e470b6d9e0d979db,
-                mid_finalizeHeader_e470b6d9e0d979db,
-                mid_finalizeMetadata_e470b6d9e0d979db,
-                mid_getHeader_c489cac8f838b2e9,
-                mid_inData_e470b6d9e0d979db,
-                mid_inHeader_e470b6d9e0d979db,
-                mid_inMetadata_e470b6d9e0d979db,
-                mid_prepareData_e470b6d9e0d979db,
-                mid_prepareHeader_e470b6d9e0d979db,
-                mid_prepareMetadata_e470b6d9e0d979db,
-                mid_pythonDecRef_7ae3461a92a43152,
-                mid_pythonExtension_a27fc9afd27e559d,
-                mid_pythonExtension_fefb08975c10f0a1,
-                mid_reset_052c3a3464b50355,
+                mid_build_3204eef28de879bb,
+                mid_finalize_0fa09c18fee449d5,
+                mid_finalizeData_b108b35ef48e27bd,
+                mid_finalizeHeader_b108b35ef48e27bd,
+                mid_finalizeMetadata_b108b35ef48e27bd,
+                mid_getHeader_58c0f76fc10a27f5,
+                mid_inData_b108b35ef48e27bd,
+                mid_inHeader_b108b35ef48e27bd,
+                mid_inMetadata_b108b35ef48e27bd,
+                mid_prepareData_b108b35ef48e27bd,
+                mid_prepareHeader_b108b35ef48e27bd,
+                mid_prepareMetadata_b108b35ef48e27bd,
+                mid_pythonDecRef_0fa09c18fee449d5,
+                mid_pythonExtension_492808a339bfa35f,
+                mid_pythonExtension_3a8e7649f31fdb20,
+                mid_reset_e250621f009e45db,
                 max_mid
               };
 

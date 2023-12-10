@@ -17,9 +17,9 @@ namespace org {
       class RealMatrixChangingVisitor : public ::java::lang::Object {
        public:
         enum {
-          mid_end_456d9a2f64d6b28d,
-          mid_start_47d591670cfcc314,
-          mid_visit_4f773f7fb5410128,
+          mid_end_dff5885c2c873297,
+          mid_start_5aa4d40be6f39408,
+          mid_visit_3a88ef0e755558fa,
           max_mid
         };
 

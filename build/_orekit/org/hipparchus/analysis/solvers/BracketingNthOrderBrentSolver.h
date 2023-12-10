@@ -8,8 +8,8 @@ namespace org {
     namespace analysis {
       namespace solvers {
         class BracketedUnivariateSolver$Interval;
-        class AllowedSolution;
         class BracketedUnivariateSolver;
+        class AllowedSolution;
       }
       class UnivariateFunction;
     }
@@ -34,16 +34,16 @@ namespace org {
         class BracketingNthOrderBrentSolver : public ::org::hipparchus::analysis::solvers::AbstractUnivariateSolver {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_init$_18b1ce6f78e2ded3,
-            mid_init$_b05c288d5068eccb,
-            mid_init$_906d8abc315447ea,
-            mid_getMaximalOrder_f2f64475e4580546,
-            mid_solve_0c4af17577847ef5,
-            mid_solve_d096fb40d6053e92,
-            mid_solveInterval_f22794092f257ec3,
-            mid_doSolve_456d9a2f64d6b28d,
-            mid_doSolveInterval_315a1f5b2b06e1be,
+            mid_init$_0fa09c18fee449d5,
+            mid_init$_75c2da74a5a59fda,
+            mid_init$_01fb2c777e5def32,
+            mid_init$_447fea67b5450f7f,
+            mid_getMaximalOrder_570ce0828f81a2c1,
+            mid_solve_ba3e208e0ba870dd,
+            mid_solve_89bba4a49543a54f,
+            mid_solveInterval_fff76e1052c58572,
+            mid_doSolve_dff5885c2c873297,
+            mid_doSolveInterval_6f179d7662d75715,
             max_mid
           };
 

@@ -25,9 +25,9 @@ namespace org {
       class UnitSphereRandomVectorGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0a2a1ac2721c0336,
-          mid_init$_3838ea28c063a110,
-          mid_nextVector_7cdc325af0834901,
+          mid_init$_99803b0791f320ff,
+          mid_init$_2b71fcb2111892eb,
+          mid_nextVector_60c7040667a7dc5c,
           max_mid
         };
 

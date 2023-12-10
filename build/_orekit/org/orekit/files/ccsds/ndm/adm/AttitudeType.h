@@ -4,20 +4,7 @@
 #include "java/lang/Enum.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class RotationOrder;
-        }
-      }
-    }
-  }
   namespace orekit {
-    namespace utils {
-      class AngularDerivativesFilter;
-      class TimeStampedAngularCoordinates;
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -30,8 +17,21 @@ namespace org {
         }
       }
     }
+    namespace utils {
+      class TimeStampedAngularCoordinates;
+      class AngularDerivativesFilter;
+    }
     namespace time {
       class AbsoluteDate;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class RotationOrder;
+        }
+      }
     }
   }
 }
@@ -53,16 +53,16 @@ namespace org {
             class AttitudeType : public ::java::lang::Enum {
              public:
               enum {
-                mid_build_18de2db1a9eda97f,
-                mid_createDataFields_b2079b25eb3f7683,
-                mid_generateData_749420dd471c293b,
-                mid_getAngularDerivativesFilter_c14c1c09874639c8,
-                mid_getName_085bbc49599fa163,
-                mid_parse_3cd12c8f31254686,
-                mid_parseType_c9429a38f03d36fe,
-                mid_toString_0090f7797e403f43,
-                mid_valueOf_c9429a38f03d36fe,
-                mid_values_a01160436a2e54b8,
+                mid_build_957c4e73164ecb0b,
+                mid_createDataFields_072027a99e2c958b,
+                mid_generateData_08046bd2423bb931,
+                mid_getAngularDerivativesFilter_3d53ef1ca7ad5f8c,
+                mid_getName_e8f51f84167aafbd,
+                mid_parse_23dcd01663ff34ee,
+                mid_parseType_db58ad7cff2aa8e1,
+                mid_toString_11b109bd155ca898,
+                mid_valueOf_db58ad7cff2aa8e1,
+                mid_values_1d70a62ede216d25,
                 max_mid
               };
 

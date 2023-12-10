@@ -14,10 +14,10 @@ namespace org {
           }
         }
         namespace utils {
-          class ContextBinding;
           namespace lexical {
             class ParseToken;
           }
+          class ContextBinding;
         }
       }
     }
@@ -41,9 +41,9 @@ namespace org {
             class SigmaEigenvectorsCovarianceKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_5f8131a06e185f49,
-                mid_valueOf_7a2bddddfb2bfaf3,
-                mid_values_4d58d7c18eb97df4,
+                mid_process_99f301aa1807780e,
+                mid_valueOf_fb224734339f9cf1,
+                mid_values_aa045796a1890a66,
                 max_mid
               };
 

@@ -34,12 +34,12 @@ namespace org {
         class EventDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_g_66a2f071e6ed0c06,
-            mid_getHandler_d450688ba8c3949b,
-            mid_getMaxCheckInterval_5b5c68574977d620,
-            mid_getMaxIterationCount_f2f64475e4580546,
-            mid_getThreshold_456d9a2f64d6b28d,
-            mid_init_3d13474d79f5e7bc,
+            mid_g_432f3d328c15ec82,
+            mid_getHandler_551c102e543538fd,
+            mid_getMaxCheckInterval_35e5947e4e8f061c,
+            mid_getMaxIterationCount_570ce0828f81a2c1,
+            mid_getThreshold_dff5885c2c873297,
+            mid_init_826b4eda94da4e78,
             max_mid
           };
 

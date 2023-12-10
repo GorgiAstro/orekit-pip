@@ -9,19 +9,19 @@ namespace org {
       namespace euclidean {
         namespace threed {
           class PolyhedronsSet$BRep;
-          class Euclidean3D;
-          class PolyhedronsSet;
-          class Vector3D;
           class Rotation;
+          class PolyhedronsSet;
           class Line;
+          class Vector3D;
+          class Euclidean3D;
         }
         namespace twod {
           class Euclidean2D;
         }
       }
       namespace partitioning {
-        class BSPTree;
         class SubHyperplane;
+        class BSPTree;
       }
     }
     namespace exception {
@@ -49,18 +49,18 @@ namespace org {
           class PolyhedronsSet : public ::org::hipparchus::geometry::partitioning::AbstractRegion {
            public:
             enum {
-              mid_init$_77e0f9a1f260e2e5,
-              mid_init$_4535d6cb9170f124,
-              mid_init$_3e72dd0bd3a69a59,
-              mid_init$_b832ff2fd1b54c87,
-              mid_init$_983b22c4b36f878a,
-              mid_init$_c618f65720f1b668,
-              mid_buildNew_d63bb7e6b124b271,
-              mid_firstIntersection_35b9df4a7109e3eb,
-              mid_getBRep_b9db630e46c093bb,
-              mid_rotate_6640f6f7a491ea06,
-              mid_translate_3b9027e260eba8fe,
-              mid_computeGeometricalProperties_7ae3461a92a43152,
+              mid_init$_17db3a65980d3441,
+              mid_init$_fabe76086a822e9e,
+              mid_init$_748cd2c51a955d77,
+              mid_init$_1f4d55383238fbb5,
+              mid_init$_fc22ef365b06a732,
+              mid_init$_e64bbe9910cbd659,
+              mid_buildNew_20bbe3dcfa244809,
+              mid_firstIntersection_505c363342ef9e07,
+              mid_getBRep_56002d4c9835e187,
+              mid_rotate_0d7142cf5cc58689,
+              mid_translate_1f148067d6db6edf,
+              mid_computeGeometricalProperties_0fa09c18fee449d5,
               max_mid
             };
 

@@ -3,16 +3,14 @@
 
 #include "org/orekit/propagation/analytical/FieldAbstractAnalyticalPropagator.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
+    namespace propagation {
+      class FieldSpacecraftState;
+    }
     namespace attitudes {
       class AttitudeProvider;
     }
@@ -22,12 +20,14 @@ namespace org {
     namespace orbits {
       class FieldOrbit;
     }
-    namespace propagation {
-      class FieldSpacecraftState;
-    }
   }
-  namespace hipparchus {
-    class CalculusFieldElement;
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -40,16 +40,16 @@ namespace org {
         class FieldKeplerianPropagator : public ::org::orekit::propagation::analytical::FieldAbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_b6fb4d19a77f9888,
-            mid_init$_adb1719b0dda6ffc,
-            mid_init$_6f95e48bb8bb1403,
-            mid_init$_bb11f4dbd2f8fb4f,
-            mid_init$_d8969be32793f087,
-            mid_getParametersDrivers_a6156df500549a58,
-            mid_resetInitialState_52154b94d63e10ed,
-            mid_getMass_7bc0fd76ee915b72,
-            mid_resetIntermediateState_c76342d42407aa3d,
-            mid_propagateOrbit_edf76d94987be4ff,
+            mid_init$_1cbcb2601e7d1334,
+            mid_init$_a724b159b42485f4,
+            mid_init$_78df6e2abd2c4c9f,
+            mid_init$_11e81d70dfcadffc,
+            mid_init$_e726da50143f87ae,
+            mid_getParametersDrivers_2afa36052df4765d,
+            mid_resetInitialState_1463d3d0d52f94dd,
+            mid_propagateOrbit_3de5e0312fd3e848,
+            mid_getMass_2a5f05be83ff251d,
+            mid_resetIntermediateState_33f1c56ea7775d4e,
             max_mid
           };
 

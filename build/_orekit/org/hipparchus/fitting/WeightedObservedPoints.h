@@ -3,6 +3,13 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace fitting {
+      class WeightedObservedPoint;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -14,13 +21,6 @@ namespace java {
     class Serializable;
   }
 }
-namespace org {
-  namespace hipparchus {
-    namespace fitting {
-      class WeightedObservedPoint;
-    }
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -30,12 +30,12 @@ namespace org {
       class WeightedObservedPoints : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_add_63ac42c3bd1a5151,
-          mid_add_1d715fa3b7b756e1,
-          mid_add_d0d6094fbd7015c5,
-          mid_clear_7ae3461a92a43152,
-          mid_toList_a6156df500549a58,
+          mid_init$_0fa09c18fee449d5,
+          mid_add_00b9567804672335,
+          mid_add_8f2e782d5278b131,
+          mid_add_2c56b6dd4d4b1dec,
+          mid_clear_0fa09c18fee449d5,
+          mid_toList_2afa36052df4765d,
           max_mid
         };
 

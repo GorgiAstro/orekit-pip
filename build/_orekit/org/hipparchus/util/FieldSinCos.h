@@ -24,11 +24,11 @@ namespace org {
       class FieldSinCos : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0d8a2282c8979673,
-          mid_cos_dfd7647d9110ac9f,
-          mid_difference_a8dce0df29877ca1,
-          mid_sin_dfd7647d9110ac9f,
-          mid_sum_a8dce0df29877ca1,
+          mid_init$_ea69641e3fe74dd6,
+          mid_cos_4d26fd885228c716,
+          mid_difference_2e2927a46e3fad3f,
+          mid_sin_4d26fd885228c716,
+          mid_sum_2e2927a46e3fad3f,
           max_mid
         };
 

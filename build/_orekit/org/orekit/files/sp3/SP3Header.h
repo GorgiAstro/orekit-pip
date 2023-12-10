@@ -14,9 +14,6 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace gnss {
-      class TimeSystem;
-    }
     namespace files {
       namespace sp3 {
         class SP3OrbitType;
@@ -24,11 +21,14 @@ namespace org {
         class SP3FileType;
       }
     }
-    namespace utils {
-      class CartesianDerivativesFilter;
+    namespace gnss {
+      class TimeSystem;
     }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace utils {
+      class CartesianDerivativesFilter;
     }
   }
 }
@@ -42,48 +42,48 @@ namespace org {
         class SP3Header : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_addComment_e939c6558ae8d313,
-            mid_addSatId_e939c6558ae8d313,
-            mid_getAccuracy_531dcf669f2059aa,
-            mid_getAgency_0090f7797e403f43,
-            mid_getClockBase_456d9a2f64d6b28d,
-            mid_getComments_a6156df500549a58,
-            mid_getCoordinateSystem_0090f7797e403f43,
-            mid_getDataUsed_a6156df500549a58,
-            mid_getDayFraction_456d9a2f64d6b28d,
-            mid_getEpoch_aaa854c403487cf3,
-            mid_getEpochInterval_456d9a2f64d6b28d,
-            mid_getFilter_237181d932324188,
-            mid_getGpsWeek_f2f64475e4580546,
-            mid_getModifiedJulianDay_f2f64475e4580546,
-            mid_getNumberOfEpochs_f2f64475e4580546,
-            mid_getOrbitType_081c0433fb9a4be2,
-            mid_getOrbitTypeKey_0090f7797e403f43,
-            mid_getPosVelBase_456d9a2f64d6b28d,
-            mid_getSatIds_a6156df500549a58,
-            mid_getSecondsOfWeek_456d9a2f64d6b28d,
-            mid_getTimeSystem_b58d3545739694ee,
-            mid_getType_67cd54c93a5dcb88,
-            mid_getVersion_29e026b9d068f1c7,
-            mid_setAccuracy_987a5fb872043b12,
-            mid_setAgency_e939c6558ae8d313,
-            mid_setClockBase_77e0f9a1f260e2e5,
-            mid_setCoordinateSystem_e939c6558ae8d313,
-            mid_setDataUsed_65de9727799c5641,
-            mid_setDayFraction_77e0f9a1f260e2e5,
-            mid_setEpoch_e82d68cd9f886886,
-            mid_setEpochInterval_77e0f9a1f260e2e5,
-            mid_setFilter_8aadfa247de709c5,
-            mid_setGpsWeek_0a2a1ac2721c0336,
-            mid_setModifiedJulianDay_0a2a1ac2721c0336,
-            mid_setNumberOfEpochs_0a2a1ac2721c0336,
-            mid_setOrbitTypeKey_e939c6558ae8d313,
-            mid_setPosVelBase_77e0f9a1f260e2e5,
-            mid_setSecondsOfWeek_77e0f9a1f260e2e5,
-            mid_setTimeSystem_4733fc8266dc541c,
-            mid_setType_f761af605d43268b,
-            mid_setVersion_be0046d7f7239695,
+            mid_init$_0fa09c18fee449d5,
+            mid_addComment_d0bc48d5b00dc40c,
+            mid_addSatId_d0bc48d5b00dc40c,
+            mid_getAccuracy_b36dde1444e08956,
+            mid_getAgency_11b109bd155ca898,
+            mid_getClockBase_dff5885c2c873297,
+            mid_getComments_2afa36052df4765d,
+            mid_getCoordinateSystem_11b109bd155ca898,
+            mid_getDataUsed_2afa36052df4765d,
+            mid_getDayFraction_dff5885c2c873297,
+            mid_getEpoch_85703d13e302437e,
+            mid_getEpochInterval_dff5885c2c873297,
+            mid_getFilter_16e9a7b5414faf2d,
+            mid_getGpsWeek_570ce0828f81a2c1,
+            mid_getModifiedJulianDay_570ce0828f81a2c1,
+            mid_getNumberOfEpochs_570ce0828f81a2c1,
+            mid_getOrbitType_a0014784875d2563,
+            mid_getOrbitTypeKey_11b109bd155ca898,
+            mid_getPosVelBase_dff5885c2c873297,
+            mid_getSatIds_2afa36052df4765d,
+            mid_getSecondsOfWeek_dff5885c2c873297,
+            mid_getTimeSystem_47ed81afbc0cea8f,
+            mid_getType_1b0144a14b3b7d4f,
+            mid_getVersion_7818f5b58320cd1f,
+            mid_setAccuracy_bb79ca80d85d0a66,
+            mid_setAgency_d0bc48d5b00dc40c,
+            mid_setClockBase_17db3a65980d3441,
+            mid_setCoordinateSystem_d0bc48d5b00dc40c,
+            mid_setDataUsed_de3e021e7266b71e,
+            mid_setDayFraction_17db3a65980d3441,
+            mid_setEpoch_600a2a61652bc473,
+            mid_setEpochInterval_17db3a65980d3441,
+            mid_setFilter_10d93bbae9f06624,
+            mid_setGpsWeek_99803b0791f320ff,
+            mid_setModifiedJulianDay_99803b0791f320ff,
+            mid_setNumberOfEpochs_99803b0791f320ff,
+            mid_setOrbitTypeKey_d0bc48d5b00dc40c,
+            mid_setPosVelBase_17db3a65980d3441,
+            mid_setSecondsOfWeek_17db3a65980d3441,
+            mid_setTimeSystem_188d9681dd6fbe69,
+            mid_setType_032acd332d70b501,
+            mid_setVersion_636c0bbb96cab723,
             max_mid
           };
 

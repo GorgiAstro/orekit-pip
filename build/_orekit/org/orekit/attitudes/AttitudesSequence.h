@@ -4,6 +4,33 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace events {
+        class EventDetector;
+      }
+      class Propagator;
+      class FieldPropagator;
+    }
+    namespace attitudes {
+      class AttitudesSequence$SwitchHandler;
+      class Attitude;
+      class FieldAttitude;
+      class AttitudeProvider;
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
+      class AngularDerivativesFilter;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -14,33 +41,6 @@ namespace org {
       }
     }
     class Field;
-  }
-  namespace orekit {
-    namespace frames {
-      class Frame;
-    }
-    namespace propagation {
-      class Propagator;
-      class FieldPropagator;
-      namespace events {
-        class EventDetector;
-      }
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-      class Attitude;
-      class FieldAttitude;
-      class AttitudesSequence$SwitchHandler;
-    }
-    namespace utils {
-      class AngularDerivativesFilter;
-      class PVCoordinatesProvider;
-      class FieldPVCoordinatesProvider;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
   }
 }
 namespace java {
@@ -57,15 +57,15 @@ namespace org {
       class AttitudesSequence : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_addSwitchingCondition_0d2c16de1f34e1d0,
-          mid_getAttitude_455b5c75f9292826,
-          mid_getAttitude_5341a8481841f90c,
-          mid_getAttitudeRotation_969253bc78d7a272,
-          mid_getAttitudeRotation_01363f58d35f60d4,
-          mid_registerSwitchEvents_d2c685c0565d437e,
-          mid_registerSwitchEvents_b00225cd75c7864b,
-          mid_resetActiveProvider_8109c1a27d4471d3,
+          mid_init$_0fa09c18fee449d5,
+          mid_addSwitchingCondition_b09582ddb3381fe1,
+          mid_getAttitude_4e541876ea7d5bd0,
+          mid_getAttitude_d2b70935d932b5c5,
+          mid_getAttitudeRotation_29422c22de775b74,
+          mid_getAttitudeRotation_53a81d4d17b13463,
+          mid_registerSwitchEvents_a4d05ab8d79173b5,
+          mid_registerSwitchEvents_ec733b762a879d62,
+          mid_resetActiveProvider_3cff7c75ea06698c,
           max_mid
         };
 
@@ -85,8 +85,8 @@ namespace org {
         void addSwitchingCondition(const ::org::orekit::attitudes::AttitudeProvider &, const ::org::orekit::attitudes::AttitudeProvider &, const ::org::orekit::propagation::events::EventDetector &, jboolean, jboolean, jdouble, const ::org::orekit::utils::AngularDerivativesFilter &, const ::org::orekit::attitudes::AttitudesSequence$SwitchHandler &) const;
         ::org::orekit::attitudes::FieldAttitude getAttitude(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::attitudes::Attitude getAttitude(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
-        ::org::hipparchus::geometry::euclidean::threed::FieldRotation getAttitudeRotation(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::hipparchus::geometry::euclidean::threed::Rotation getAttitudeRotation(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
+        ::org::hipparchus::geometry::euclidean::threed::FieldRotation getAttitudeRotation(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         void registerSwitchEvents(const ::org::orekit::propagation::Propagator &) const;
         void registerSwitchEvents(const ::org::hipparchus::Field &, const ::org::orekit::propagation::FieldPropagator &) const;
         void resetActiveProvider(const ::org::orekit::attitudes::AttitudeProvider &) const;

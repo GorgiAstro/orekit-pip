@@ -19,9 +19,9 @@ namespace org {
           class AbstractShapiroBaseModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_77e0f9a1f260e2e5,
-              mid_doModify_811f96960c94c1de,
-              mid_shapiroCorrection_746d8b07ca1f2457,
+              mid_init$_17db3a65980d3441,
+              mid_doModify_d1815d998cba71e9,
+              mid_shapiroCorrection_29151631501fa929,
               max_mid
             };
 

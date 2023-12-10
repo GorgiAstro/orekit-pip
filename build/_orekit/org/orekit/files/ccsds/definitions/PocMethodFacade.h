@@ -32,10 +32,10 @@ namespace org {
           class PocMethodFacade : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_b19b88f05948e21e,
-              mid_getName_0090f7797e403f43,
-              mid_getType_c2b5c6ffc15c5f1d,
-              mid_parse_0b0cdec4aea9a3aa,
+              mid_init$_1f61cf533872efd7,
+              mid_getName_11b109bd155ca898,
+              mid_getType_7f289a825954eeb4,
+              mid_parse_85cab22e5e251add,
               max_mid
             };
 

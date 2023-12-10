@@ -3,39 +3,39 @@
 
 #include "org/hipparchus/geometry/partitioning/AbstractRegion.h"
 
+namespace java {
+  namespace util {
+    class Iterator;
+    class List;
+    class Collection;
+  }
+  namespace lang {
+    class Iterable;
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
+      namespace partitioning {
+        class SubHyperplane;
+        class BoundaryProjection;
+        class BSPTree;
+      }
       class Point;
       namespace spherical {
         namespace oned {
           class ArcsSet;
           class ArcsSet$InconsistentStateAt2PiWrapping;
-          class Arc;
           class ArcsSet$Split;
+          class Arc;
           class Sphere1D;
         }
-      }
-      namespace partitioning {
-        class BoundaryProjection;
-        class BSPTree;
-        class SubHyperplane;
       }
     }
     namespace exception {
       class MathIllegalArgumentException;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Iterable;
-    class Class;
-  }
-  namespace util {
-    class Iterator;
-    class List;
-    class Collection;
   }
 }
 template<class T> class JArray;
@@ -49,16 +49,16 @@ namespace org {
           class ArcsSet : public ::org::hipparchus::geometry::partitioning::AbstractRegion {
            public:
             enum {
-              mid_init$_77e0f9a1f260e2e5,
-              mid_init$_3e72dd0bd3a69a59,
-              mid_init$_b832ff2fd1b54c87,
-              mid_init$_d0d6094fbd7015c5,
-              mid_asList_a6156df500549a58,
-              mid_buildNew_7cfd2171837d9e80,
-              mid_iterator_035c6167e6569aac,
-              mid_projectToBoundary_a3932f0f8ec705f8,
-              mid_split_10b435f7457cfcb0,
-              mid_computeGeometricalProperties_7ae3461a92a43152,
+              mid_init$_17db3a65980d3441,
+              mid_init$_748cd2c51a955d77,
+              mid_init$_1f4d55383238fbb5,
+              mid_init$_2c56b6dd4d4b1dec,
+              mid_asList_2afa36052df4765d,
+              mid_buildNew_857f0d64f3326df3,
+              mid_iterator_4d23511a9f0db098,
+              mid_projectToBoundary_e9baadaaf6c2e7eb,
+              mid_split_04f55787d5300b9c,
+              mid_computeGeometricalProperties_0fa09c18fee449d5,
               max_mid
             };
 

@@ -30,8 +30,8 @@ namespace org {
         class AbstractPolynomialSolver : public ::org::hipparchus::analysis::solvers::BaseAbstractUnivariateSolver {
          public:
           enum {
-            mid_getCoefficients_7cdc325af0834901,
-            mid_setup_beba1b4b11856bf4,
+            mid_getCoefficients_60c7040667a7dc5c,
+            mid_setup_b0c582833ad20e05,
             max_mid
           };
 

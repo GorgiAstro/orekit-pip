@@ -19,8 +19,8 @@ namespace org {
           class IonosphereFreeCombination : public ::org::orekit::estimation::measurements::gnss::AbstractDualFrequencyCombination {
            public:
             enum {
-              mid_getCombinedValue_17aea80d13f83b81,
-              mid_getCombinedFrequency_f4c99548ccdd1967,
+              mid_getCombinedValue_e0f2baaf2a2ab093,
+              mid_getCombinedFrequency_6baf140b93832af8,
               max_mid
             };
 

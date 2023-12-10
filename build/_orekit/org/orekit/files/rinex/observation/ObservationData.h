@@ -26,11 +26,11 @@ namespace org {
           class ObservationData : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_f641c95c86b5073f,
-              mid_getLossOfLockIndicator_f2f64475e4580546,
-              mid_getObservationType_5edc6553f2bb4ae7,
-              mid_getSignalStrength_f2f64475e4580546,
-              mid_getValue_456d9a2f64d6b28d,
+              mid_init$_7c9e65e9156e2b45,
+              mid_getLossOfLockIndicator_570ce0828f81a2c1,
+              mid_getObservationType_1d725002fa550800,
+              mid_getSignalStrength_570ce0828f81a2c1,
+              mid_getValue_dff5885c2c873297,
               max_mid
             };
 

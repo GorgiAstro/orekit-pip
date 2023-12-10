@@ -3,10 +3,22 @@
 
 #include "org/orekit/propagation/analytical/AbstractAnalyticalPropagator.h"
 
+namespace java {
+  namespace util {
+    class Collection;
+    class NavigableMap;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace frames {
       class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace propagation {
       class BoundedPropagator;
@@ -15,18 +27,6 @@ namespace org {
     namespace utils {
       class TimeStampedPVCoordinates;
     }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
-namespace java {
-  namespace util {
-    class Collection;
-    class NavigableMap;
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -39,18 +39,18 @@ namespace org {
         class AggregateBoundedPropagator : public ::org::orekit::propagation::analytical::AbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_26b3669ec54017ce,
-            mid_init$_66ccee43e2526fcb,
-            mid_getInitialState_dd3e4a8d51055f1f,
-            mid_getMaxDate_aaa854c403487cf3,
-            mid_getMinDate_aaa854c403487cf3,
-            mid_getPVCoordinates_20557c175f7cd899,
-            mid_getPropagators_08b23a9584a26070,
-            mid_resetInitialState_2b88003f931f70a7,
-            mid_getMass_e912d21057defe63,
-            mid_resetIntermediateState_9658cf3eaef14ef5,
-            mid_propagateOrbit_6f58641238e8a9c4,
-            mid_basicPropagate_889031abe87f3b14,
+            mid_init$_f72f53318f80c525,
+            mid_init$_d766e632da5d7770,
+            mid_getInitialState_c6311115fea01a34,
+            mid_getMaxDate_85703d13e302437e,
+            mid_getMinDate_85703d13e302437e,
+            mid_getPVCoordinates_cfeec55f7c63ec64,
+            mid_getPropagators_d71603ad1730c5c7,
+            mid_resetInitialState_0ee5c56004643a2e,
+            mid_propagateOrbit_7a8f4c854607bed6,
+            mid_getMass_bf1d7732f1acb697,
+            mid_resetIntermediateState_33f4696e4edaa03c,
+            mid_basicPropagate_fbff2ff5554d95e1,
             max_mid
           };
 

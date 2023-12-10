@@ -36,11 +36,11 @@ namespace org {
           class Edge : public ::java::lang::Object {
            public:
             enum {
-              mid_getCircle_15409f4dd57c6afd,
-              mid_getEnd_729ee436c51c3951,
-              mid_getLength_456d9a2f64d6b28d,
-              mid_getPointAt_5f993a721a1d8c59,
-              mid_getStart_729ee436c51c3951,
+              mid_getCircle_32f0886c61f7154f,
+              mid_getEnd_22d742b608089bec,
+              mid_getLength_dff5885c2c873297,
+              mid_getPointAt_9137bba253a33d9c,
+              mid_getStart_22d742b608089bec,
               max_mid
             };
 

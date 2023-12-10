@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace estimation {
@@ -15,6 +10,11 @@ namespace org {
         class KalmanEstimation;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,7 +27,7 @@ namespace org {
         class KalmanObserver : public ::java::lang::Object {
          public:
           enum {
-            mid_evaluationPerformed_a9c60094e0bfed76,
+            mid_evaluationPerformed_d76c6ca9a1d073d2,
             max_mid
           };
 

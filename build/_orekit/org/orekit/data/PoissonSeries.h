@@ -3,21 +3,12 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class Map;
-  }
-  namespace lang {
-    class Class;
-    class Long;
-  }
-}
 namespace org {
   namespace orekit {
     namespace data {
-      class BodiesElements;
-      class PoissonSeries$CompiledSeries;
       class PolynomialNutation;
+      class PoissonSeries$CompiledSeries;
+      class BodiesElements;
       class FieldBodiesElements;
       class SeriesTerm;
       class PoissonSeries;
@@ -25,6 +16,15 @@ namespace org {
   }
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace util {
+    class Map;
+  }
+  namespace lang {
+    class Class;
+    class Long;
   }
 }
 template<class T> class JArray;
@@ -36,12 +36,12 @@ namespace org {
       class PoissonSeries : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_15261f7c2d65d14d,
-          mid_compile_c342c29781b1c8a8,
-          mid_getNonPolynomialSize_f2f64475e4580546,
-          mid_getPolynomial_1320c5726800138e,
-          mid_value_68f0627d4a947675,
-          mid_value_8988cf596cc2decd,
+          mid_init$_eb152ceb778bf99d,
+          mid_compile_cda8e90069187421,
+          mid_getNonPolynomialSize_570ce0828f81a2c1,
+          mid_getPolynomial_5b9d83970064b661,
+          mid_value_bea6276a59f3cdf6,
+          mid_value_2748c478a8009c37,
           max_mid
         };
 

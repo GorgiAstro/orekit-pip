@@ -3,6 +3,18 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace rugged {
+      namespace adjustment {
+        namespace measurements {
+          class SensorToGroundMapping;
+          class SensorToSensorMapping;
+        }
+      }
+    }
+  }
+}
 namespace java {
   namespace util {
     class Collection;
@@ -10,18 +22,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace rugged {
-      namespace adjustment {
-        namespace measurements {
-          class SensorToSensorMapping;
-          class SensorToGroundMapping;
-        }
-      }
-    }
   }
 }
 template<class T> class JArray;
@@ -35,14 +35,14 @@ namespace org {
           class Observables : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0a2a1ac2721c0336,
-              mid_addGroundMapping_1afb5828617014ec,
-              mid_addInterMapping_8cf2ccb67844acde,
-              mid_getGroundMapping_372d2e7f09297236,
-              mid_getGroundMappings_cfcfd130f9013e3e,
-              mid_getInterMapping_eebda754e4c976db,
-              mid_getInterMappings_cfcfd130f9013e3e,
-              mid_getNbModels_f2f64475e4580546,
+              mid_init$_99803b0791f320ff,
+              mid_addGroundMapping_3c453fa32a2c5ba5,
+              mid_addInterMapping_d927b7daafd7c09a,
+              mid_getGroundMapping_67bb76e411ff1ed2,
+              mid_getGroundMappings_37528d110cff6b74,
+              mid_getInterMapping_eeb650d7ed3a1f0b,
+              mid_getInterMappings_37528d110cff6b74,
+              mid_getNbModels_570ce0828f81a2c1,
               max_mid
             };
 

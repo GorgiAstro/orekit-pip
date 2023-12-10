@@ -21,22 +21,22 @@ namespace org {
             class AdditionalCovarianceMetadata : public ::org::orekit::files::ccsds::section::CommentsContainer {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_getDcpSensitivityVectorPosition_7cdc325af0834901,
-                mid_getDcpSensitivityVectorVelocity_7cdc325af0834901,
-                mid_getDensityForecastUncertainty_456d9a2f64d6b28d,
-                mid_getScreeningDataSource_0090f7797e403f43,
-                mid_getcScaleFactor_456d9a2f64d6b28d,
-                mid_getcScaleFactorMax_456d9a2f64d6b28d,
-                mid_getcScaleFactorMin_456d9a2f64d6b28d,
-                mid_setDcpSensitivityVectorPosition_ebc26dcaf4761286,
-                mid_setDcpSensitivityVectorVelocity_ebc26dcaf4761286,
-                mid_setDensityForecastUncertainty_77e0f9a1f260e2e5,
-                mid_setScreeningDataSource_e939c6558ae8d313,
-                mid_setcScaleFactor_77e0f9a1f260e2e5,
-                mid_setcScaleFactorMax_77e0f9a1f260e2e5,
-                mid_setcScaleFactorMin_77e0f9a1f260e2e5,
-                mid_validate_77e0f9a1f260e2e5,
+                mid_init$_0fa09c18fee449d5,
+                mid_getDcpSensitivityVectorPosition_60c7040667a7dc5c,
+                mid_getDcpSensitivityVectorVelocity_60c7040667a7dc5c,
+                mid_getDensityForecastUncertainty_dff5885c2c873297,
+                mid_getScreeningDataSource_11b109bd155ca898,
+                mid_getcScaleFactor_dff5885c2c873297,
+                mid_getcScaleFactorMax_dff5885c2c873297,
+                mid_getcScaleFactorMin_dff5885c2c873297,
+                mid_setDcpSensitivityVectorPosition_fa9d415d19f69361,
+                mid_setDcpSensitivityVectorVelocity_fa9d415d19f69361,
+                mid_setDensityForecastUncertainty_17db3a65980d3441,
+                mid_setScreeningDataSource_d0bc48d5b00dc40c,
+                mid_setcScaleFactor_17db3a65980d3441,
+                mid_setcScaleFactorMax_17db3a65980d3441,
+                mid_setcScaleFactorMin_17db3a65980d3441,
+                mid_validate_17db3a65980d3441,
                 max_mid
               };
 

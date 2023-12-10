@@ -7,8 +7,8 @@ namespace org {
   namespace hipparchus {
     namespace geometry {
       namespace partitioning {
-        class SubHyperplane;
         class Hyperplane;
+        class SubHyperplane;
       }
       class Point;
     }
@@ -29,9 +29,9 @@ namespace org {
         class Transform : public ::java::lang::Object {
          public:
           enum {
-            mid_apply_ac445dfe898b403a,
-            mid_apply_369238cc76da09a5,
-            mid_apply_525a9dfaec49a781,
+            mid_apply_c48805c2dda937c6,
+            mid_apply_f9fa256dcaa658f0,
+            mid_apply_f7334896549e9ce0,
             max_mid
           };
 

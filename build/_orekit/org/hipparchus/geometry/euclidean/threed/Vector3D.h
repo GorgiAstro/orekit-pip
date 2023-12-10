@@ -6,32 +6,32 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
+      class Vector;
+      class Point;
       namespace euclidean {
         namespace threed {
-          class Euclidean3D;
           class Vector3D;
+          class Euclidean3D;
         }
       }
-      class Point;
-      class Vector;
       class Space;
     }
     namespace exception {
-      class MathIllegalArgumentException;
       class MathRuntimeException;
+      class MathIllegalArgumentException;
     }
   }
 }
 namespace java {
+  namespace text {
+    class NumberFormat;
+  }
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
     class String;
-  }
-  namespace text {
-    class NumberFormat;
   }
 }
 template<class T> class JArray;
@@ -45,52 +45,52 @@ namespace org {
           class Vector3D : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_ebc26dcaf4761286,
-              mid_init$_6396b2b628f2a4f4,
-              mid_init$_1d715fa3b7b756e1,
-              mid_init$_d0d6094fbd7015c5,
-              mid_init$_751bf0b5ceb330cd,
-              mid_init$_d0a713a4687418d4,
-              mid_init$_27da48ed94d263cb,
-              mid_add_7a21411cb28c8c28,
-              mid_add_2acd0f562b727d04,
-              mid_angle_5fd980386f9c0459,
-              mid_crossProduct_7a21411cb28c8c28,
-              mid_crossProduct_ccf2ee059c93e01e,
-              mid_distance_726dc963fac3505e,
-              mid_distance_5fd980386f9c0459,
-              mid_distance1_05fa5f52db18503d,
-              mid_distance1_5fd980386f9c0459,
-              mid_distanceInf_05fa5f52db18503d,
-              mid_distanceInf_5fd980386f9c0459,
-              mid_distanceSq_05fa5f52db18503d,
-              mid_distanceSq_5fd980386f9c0459,
-              mid_dotProduct_05fa5f52db18503d,
-              mid_dotProduct_5fd980386f9c0459,
-              mid_equals_229c87223f486349,
-              mid_equalsIeee754_229c87223f486349,
-              mid_getAlpha_456d9a2f64d6b28d,
-              mid_getDelta_456d9a2f64d6b28d,
-              mid_getNorm_456d9a2f64d6b28d,
-              mid_getNorm1_456d9a2f64d6b28d,
-              mid_getNormInf_456d9a2f64d6b28d,
-              mid_getNormSq_456d9a2f64d6b28d,
-              mid_getSpace_0438ef5f9a5edb53,
-              mid_getX_456d9a2f64d6b28d,
-              mid_getY_456d9a2f64d6b28d,
-              mid_getZ_456d9a2f64d6b28d,
-              mid_getZero_17a952530a808943,
-              mid_hashCode_f2f64475e4580546,
-              mid_isInfinite_e470b6d9e0d979db,
-              mid_isNaN_e470b6d9e0d979db,
-              mid_negate_17a952530a808943,
-              mid_orthogonal_17a952530a808943,
-              mid_scalarMultiply_5f993a721a1d8c59,
-              mid_subtract_7a21411cb28c8c28,
-              mid_subtract_2acd0f562b727d04,
-              mid_toArray_7cdc325af0834901,
-              mid_toString_0090f7797e403f43,
-              mid_toString_aed149be89fb33b9,
+              mid_init$_fa9d415d19f69361,
+              mid_init$_b8001d8c3e32b808,
+              mid_init$_8f2e782d5278b131,
+              mid_init$_2c56b6dd4d4b1dec,
+              mid_init$_fd4f6f77e2c9c2bc,
+              mid_init$_e7a168c41301bc86,
+              mid_init$_7860fb8ee9cfe845,
+              mid_add_84b1343e67eeaa7b,
+              mid_add_6c46082a7ea5a2f0,
+              mid_angle_2814c71be939a588,
+              mid_crossProduct_84b1343e67eeaa7b,
+              mid_crossProduct_e2a27ed5c4e12f6f,
+              mid_distance_07bb97c2794cf6b1,
+              mid_distance_2814c71be939a588,
+              mid_distance1_b4822d5266bca26e,
+              mid_distance1_2814c71be939a588,
+              mid_distanceInf_b4822d5266bca26e,
+              mid_distanceInf_2814c71be939a588,
+              mid_distanceSq_b4822d5266bca26e,
+              mid_distanceSq_2814c71be939a588,
+              mid_dotProduct_b4822d5266bca26e,
+              mid_dotProduct_2814c71be939a588,
+              mid_equals_65c7d273e80d497a,
+              mid_equalsIeee754_65c7d273e80d497a,
+              mid_getAlpha_dff5885c2c873297,
+              mid_getDelta_dff5885c2c873297,
+              mid_getNorm_dff5885c2c873297,
+              mid_getNorm1_dff5885c2c873297,
+              mid_getNormInf_dff5885c2c873297,
+              mid_getNormSq_dff5885c2c873297,
+              mid_getSpace_ebbd6b2d39ab0e4f,
+              mid_getX_dff5885c2c873297,
+              mid_getY_dff5885c2c873297,
+              mid_getZ_dff5885c2c873297,
+              mid_getZero_d52645e0d4c07563,
+              mid_hashCode_570ce0828f81a2c1,
+              mid_isInfinite_b108b35ef48e27bd,
+              mid_isNaN_b108b35ef48e27bd,
+              mid_negate_d52645e0d4c07563,
+              mid_orthogonal_d52645e0d4c07563,
+              mid_scalarMultiply_9137bba253a33d9c,
+              mid_subtract_84b1343e67eeaa7b,
+              mid_subtract_6c46082a7ea5a2f0,
+              mid_toArray_60c7040667a7dc5c,
+              mid_toString_11b109bd155ca898,
+              mid_toString_7b429db583278c20,
               max_mid
             };
 

@@ -17,8 +17,8 @@ namespace org {
   }
   namespace orekit {
     namespace utils {
-      class PVCoordinates;
       class FieldPVCoordinates;
+      class PVCoordinates;
     }
     namespace frames {
       namespace encounter {
@@ -42,10 +42,10 @@ namespace org {
         class AbstractEncounterLOF : public ::java::lang::Object {
          public:
           enum {
-            mid_getFieldOther_b10aa29cc18662da,
-            mid_getOther_6761e3f334368d44,
-            mid_rotationFromInertial_9a23f79cd11b74e7,
-            mid_rotationFromInertial_f3b8fc53bbbd7a0a,
+            mid_getFieldOther_90f77345373c3eb7,
+            mid_getOther_9b7c658c14883c84,
+            mid_rotationFromInertial_48dfcf66fb3ed19c,
+            mid_rotationFromInertial_00be22c00009a46d,
             max_mid
           };
 

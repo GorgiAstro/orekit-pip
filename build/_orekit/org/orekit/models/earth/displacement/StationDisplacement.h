@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace data {
-      class BodiesElements;
-    }
     namespace frames {
       class Frame;
+    }
+    namespace data {
+      class BodiesElements;
     }
   }
   namespace hipparchus {
@@ -38,7 +38,7 @@ namespace org {
           class StationDisplacement : public ::java::lang::Object {
            public:
             enum {
-              mid_displacement_90801f07349d77e7,
+              mid_displacement_dc5338a5a1255d1d,
               max_mid
             };
 

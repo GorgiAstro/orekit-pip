@@ -28,9 +28,9 @@ namespace org {
       class LocalizedException : public ::java::lang::Object {
        public:
         enum {
-          mid_getMessage_bab3be9b232acc5a,
-          mid_getParts_e81d7907eea7e008,
-          mid_getSpecifier_2e589a53386da289,
+          mid_getMessage_3cd873bfb132c4fd,
+          mid_getParts_b93c730013ce64c6,
+          mid_getSpecifier_517615caa9b88a24,
           max_mid
         };
 

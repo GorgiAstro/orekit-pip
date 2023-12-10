@@ -3,12 +3,17 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
+    class Comparable;
+  }
+}
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeStamped;
-      class AbsoluteDate;
-    }
     namespace models {
       namespace earth {
         namespace atmosphere {
@@ -18,15 +23,10 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-    class Comparable;
+    namespace time {
+      class AbsoluteDate;
+      class TimeStamped;
+    }
   }
 }
 template<class T> class JArray;
@@ -41,10 +41,10 @@ namespace org {
             class AbstractSolarActivityDataLoader$LineParameters : public ::java::lang::Object {
              public:
               enum {
-                mid_compareTo_533614488ddee224,
-                mid_equals_229c87223f486349,
-                mid_getDate_aaa854c403487cf3,
-                mid_hashCode_f2f64475e4580546,
+                mid_compareTo_b2c45b61abaea01a,
+                mid_equals_65c7d273e80d497a,
+                mid_getDate_85703d13e302437e,
+                mid_hashCode_570ce0828f81a2c1,
                 max_mid
               };
 

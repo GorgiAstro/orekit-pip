@@ -5,6 +5,11 @@
 
 namespace org {
   namespace orekit {
+    namespace propagation {
+      namespace events {
+        class VisibilityTrigger;
+      }
+    }
     namespace geometry {
       namespace fov {
         class PolygonalFieldOfView$DefiningConeType;
@@ -13,11 +18,6 @@ namespace org {
     namespace bodies {
       class OneAxisEllipsoid;
       class GeodeticPoint;
-    }
-    namespace propagation {
-      namespace events {
-        class VisibilityTrigger;
-      }
     }
     namespace frames {
       class Transform;
@@ -56,12 +56,12 @@ namespace org {
         class PolygonalFieldOfView : public ::org::orekit::geometry::fov::AbstractFieldOfView {
          public:
           enum {
-            mid_init$_ba1ca34937b5839e,
-            mid_init$_67789161e23865e3,
-            mid_getFootprint_260aa711ad5a5b78,
-            mid_getZone_b554ba4417ec0cb0,
-            mid_offsetFromBoundary_9e70aa9759fb6e3e,
-            mid_projectToBoundary_afd63a09f6d01e4c,
+            mid_init$_991a5885d40d9dc2,
+            mid_init$_d0c690fdba21c866,
+            mid_getFootprint_d179f90e70a637c1,
+            mid_getZone_5a6ba0b36fb0268c,
+            mid_offsetFromBoundary_92bc6ba59ebf6937,
+            mid_projectToBoundary_d0fe714ef34714f7,
             max_mid
           };
 

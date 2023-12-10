@@ -3,6 +3,15 @@
 
 #include "org/orekit/files/ccsds/utils/parsing/AbstractConstituentParser.h"
 
+namespace java {
+  namespace util {
+    class Map;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
@@ -19,15 +28,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace util {
-    class Map;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -40,8 +40,8 @@ namespace org {
             class AdmParser : public ::org::orekit::files::ccsds::utils::parsing::AbstractConstituentParser {
              public:
               enum {
-                mid_getMissionReferenceDate_aaa854c403487cf3,
-                mid_getSpecialXmlElementsBuilders_d6753b7055940a54,
+                mid_getMissionReferenceDate_85703d13e302437e,
+                mid_getSpecialXmlElementsBuilders_6f5a75ccd8c04465,
                 max_mid
               };
 

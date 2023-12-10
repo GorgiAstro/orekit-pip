@@ -5,9 +5,9 @@
 
 namespace java {
   namespace lang {
-    class InterruptedException;
     class String;
     class Class;
+    class InterruptedException;
     class Object;
   }
 }
@@ -19,18 +19,18 @@ namespace java {
     class Object : public ::JObject {
      public:
       enum {
-        mid_init$_7ae3461a92a43152,
-        mid_equals_229c87223f486349,
-        mid_getClass_8f66acc08d2a174c,
-        mid_hashCode_f2f64475e4580546,
-        mid_notify_7ae3461a92a43152,
-        mid_notifyAll_7ae3461a92a43152,
-        mid_toString_0090f7797e403f43,
-        mid_wait_7ae3461a92a43152,
-        mid_wait_fefb08975c10f0a1,
-        mid_wait_7198f0f6eb202fc7,
-        mid_finalize_7ae3461a92a43152,
-        mid_clone_dfd7647d9110ac9f,
+        mid_init$_0fa09c18fee449d5,
+        mid_equals_65c7d273e80d497a,
+        mid_getClass_7c16c5008b34b3db,
+        mid_hashCode_570ce0828f81a2c1,
+        mid_notify_0fa09c18fee449d5,
+        mid_notifyAll_0fa09c18fee449d5,
+        mid_toString_11b109bd155ca898,
+        mid_wait_0fa09c18fee449d5,
+        mid_wait_3a8e7649f31fdb20,
+        mid_wait_bc47df22dc246221,
+        mid_finalize_0fa09c18fee449d5,
+        mid_clone_4d26fd885228c716,
         max_mid
       };
 

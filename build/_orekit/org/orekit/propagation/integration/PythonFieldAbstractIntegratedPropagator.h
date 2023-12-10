@@ -4,11 +4,22 @@
 #include "org/orekit/propagation/integration/FieldAbstractIntegratedPropagator.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace ode {
+      class FieldODEIntegrator;
+    }
+    class Field;
+  }
   namespace orekit {
+    namespace orbits {
+      class PositionAngleType;
+      class OrbitType;
+    }
     namespace propagation {
       namespace integration {
-        class FieldAbstractIntegratedPropagator$MainStateEquations;
         class FieldStateMapper;
+        class FieldAbstractIntegratedPropagator$MainStateEquations;
       }
       class PropagationType;
     }
@@ -18,20 +29,9 @@ namespace org {
     namespace attitudes {
       class AttitudeProvider;
     }
-    namespace orbits {
-      class PositionAngleType;
-      class OrbitType;
-    }
     namespace time {
       class FieldAbsoluteDate;
     }
-  }
-  namespace hipparchus {
-    class Field;
-    namespace ode {
-      class FieldODEIntegrator;
-    }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -50,13 +50,13 @@ namespace org {
         class PythonFieldAbstractIntegratedPropagator : public ::org::orekit::propagation::integration::FieldAbstractIntegratedPropagator {
          public:
           enum {
-            mid_init$_fb107a39f80551b6,
-            mid_createMapper_b12e4020688f2d3a,
-            mid_finalize_7ae3461a92a43152,
-            mid_getMainStateEquations_9199626b9ad748bb,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
+            mid_init$_fd706f9f174d8023,
+            mid_createMapper_16c8184497a1d794,
+            mid_finalize_0fa09c18fee449d5,
+            mid_getMainStateEquations_75bae68924620d17,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
             max_mid
           };
 

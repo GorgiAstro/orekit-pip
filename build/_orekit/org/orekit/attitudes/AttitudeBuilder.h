@@ -5,18 +5,18 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frame;
+    namespace utils {
+      class TimeStampedAngularCoordinates;
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
+      class TimeStampedFieldAngularCoordinates;
     }
     namespace attitudes {
       class Attitude;
       class FieldAttitude;
     }
-    namespace utils {
-      class TimeStampedFieldAngularCoordinates;
-      class FieldPVCoordinatesProvider;
-      class TimeStampedAngularCoordinates;
-      class PVCoordinatesProvider;
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -34,8 +34,8 @@ namespace org {
       class AttitudeBuilder : public ::java::lang::Object {
        public:
         enum {
-          mid_build_46e50d643ce38532,
-          mid_build_d2838fa0adea33de,
+          mid_build_32e9a4ac991f1702,
+          mid_build_54b3b52d9ecd9e48,
           max_mid
         };
 

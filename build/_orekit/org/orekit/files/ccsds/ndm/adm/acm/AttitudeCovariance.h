@@ -4,6 +4,11 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace linear {
+      class DiagonalMatrix;
+    }
+  }
   namespace orekit {
     namespace time {
       class TimeStamped;
@@ -19,11 +24,6 @@ namespace org {
           }
         }
       }
-    }
-  }
-  namespace hipparchus {
-    namespace linear {
-      class DiagonalMatrix;
     }
   }
 }
@@ -46,10 +46,10 @@ namespace org {
               class AttitudeCovariance : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_b8baade554523355,
-                  mid_getDate_aaa854c403487cf3,
-                  mid_getMatrix_6938007bdd8d6602,
-                  mid_getType_10ff8ccfa18eb164,
+                  mid_init$_dcfac03f71576299,
+                  mid_getDate_85703d13e302437e,
+                  mid_getMatrix_c1458e35d8bd3b65,
+                  mid_getType_dbbc6c3c22ca640c,
                   max_mid
                 };
 

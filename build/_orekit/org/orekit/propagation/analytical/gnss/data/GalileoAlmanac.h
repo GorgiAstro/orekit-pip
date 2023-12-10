@@ -20,17 +20,17 @@ namespace org {
             class GalileoAlmanac : public ::org::orekit::propagation::analytical::gnss::data::AbstractAlmanac {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_getHealthE1_f2f64475e4580546,
-                mid_getHealthE5a_f2f64475e4580546,
-                mid_getHealthE5b_f2f64475e4580546,
-                mid_getIOD_f2f64475e4580546,
-                mid_setDeltaInc_77e0f9a1f260e2e5,
-                mid_setDeltaSqrtA_77e0f9a1f260e2e5,
-                mid_setHealthE1_0a2a1ac2721c0336,
-                mid_setHealthE5a_0a2a1ac2721c0336,
-                mid_setHealthE5b_0a2a1ac2721c0336,
-                mid_setIOD_0a2a1ac2721c0336,
+                mid_init$_0fa09c18fee449d5,
+                mid_getHealthE1_570ce0828f81a2c1,
+                mid_getHealthE5a_570ce0828f81a2c1,
+                mid_getHealthE5b_570ce0828f81a2c1,
+                mid_getIOD_570ce0828f81a2c1,
+                mid_setDeltaInc_17db3a65980d3441,
+                mid_setDeltaSqrtA_17db3a65980d3441,
+                mid_setHealthE1_99803b0791f320ff,
+                mid_setHealthE5a_99803b0791f320ff,
+                mid_setHealthE5b_99803b0791f320ff,
+                mid_setIOD_99803b0791f320ff,
                 max_mid
               };
 

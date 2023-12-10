@@ -3,16 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace linear {
-      class RealVector;
-      class FieldVector;
-      class DependentVectorsHandler;
-    }
-    class Field;
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -20,6 +10,16 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace linear {
+      class DependentVectorsHandler;
+      class RealVector;
+      class FieldVector;
+    }
+    class Field;
   }
 }
 template<class T> class JArray;
@@ -31,10 +31,10 @@ namespace org {
       class DependentVectorsHandler : public ::java::lang::Enum {
        public:
         enum {
-          mid_manageDependent_2b51d970dd581ebc,
-          mid_manageDependent_b1c195a1927cd9ce,
-          mid_valueOf_fad7224d36107be1,
-          mid_values_ad7aba0118544edf,
+          mid_manageDependent_6ff729c408795275,
+          mid_manageDependent_55a90ba7dcaff80c,
+          mid_valueOf_ac716b038b45c93c,
+          mid_values_218cb98788baa394,
           max_mid
         };
 

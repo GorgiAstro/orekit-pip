@@ -5,14 +5,14 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace analysis {
       namespace interpolation {
         class TrivariateGridInterpolator;
         class TricubicInterpolatingFunction;
       }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -31,8 +31,8 @@ namespace org {
         class TricubicInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_interpolate_64d1837d51e036b5,
+            mid_init$_0fa09c18fee449d5,
+            mid_interpolate_70e6d9ebfd0eec38,
             max_mid
           };
 

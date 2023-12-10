@@ -3,6 +3,14 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -12,19 +20,11 @@ namespace org {
       }
       namespace euclidean {
         namespace twod {
-          class Vector2D;
           class Euclidean2D;
+          class Vector2D;
         }
       }
     }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -38,8 +38,8 @@ namespace org {
           class DiskGenerator : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_ballOnSupport_5189031e8a0790ca,
+              mid_init$_0fa09c18fee449d5,
+              mid_ballOnSupport_8eaea97b2dcfeb64,
               max_mid
             };
 

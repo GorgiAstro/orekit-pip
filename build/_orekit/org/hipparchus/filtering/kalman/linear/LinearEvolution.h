@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class RealVector;
       class RealMatrix;
+      class RealVector;
     }
   }
 }
@@ -27,12 +27,12 @@ namespace org {
           class LinearEvolution : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_402b66b81e5a8616,
-              mid_getCommand_6d9adf1d5b463928,
-              mid_getControlMatrix_7116bbecdd8ceb21,
-              mid_getMeasurementJacobian_7116bbecdd8ceb21,
-              mid_getProcessNoiseMatrix_7116bbecdd8ceb21,
-              mid_getStateTransitionMatrix_7116bbecdd8ceb21,
+              mid_init$_81f8aac4a3a3185c,
+              mid_getCommand_aab4fbf77867daa8,
+              mid_getControlMatrix_688b496048ff947b,
+              mid_getMeasurementJacobian_688b496048ff947b,
+              mid_getProcessNoiseMatrix_688b496048ff947b,
+              mid_getStateTransitionMatrix_688b496048ff947b,
               max_mid
             };
 

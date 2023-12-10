@@ -3,6 +3,11 @@
 
 #include "org/orekit/propagation/conversion/AbstractPropagatorConverter.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -10,11 +15,6 @@ namespace org {
         class NumericalPropagatorBuilder;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,9 +27,9 @@ namespace org {
         class JacobianPropagatorConverter : public ::org::orekit::propagation::conversion::AbstractPropagatorConverter {
          public:
           enum {
-            mid_init$_66745156d771e238,
-            mid_getObjectiveFunction_aaef55ff59f9c00e,
-            mid_getModel_b196da25fd980476,
+            mid_init$_d85ff7ef518673fb,
+            mid_getModel_9751b2e3b68b45ea,
+            mid_getObjectiveFunction_18d8e6aab2238577,
             max_mid
           };
 

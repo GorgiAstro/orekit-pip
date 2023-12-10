@@ -24,22 +24,22 @@ namespace java {
     class Throwable : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_7ae3461a92a43152,
-        mid_init$_e939c6558ae8d313,
-        mid_init$_fd4c96defa578a22,
-        mid_addSuppressed_ea7f4d04e27238a7,
-        mid_fillInStackTrace_67c131e34276cda8,
-        mid_getCause_67c131e34276cda8,
-        mid_getLocalizedMessage_0090f7797e403f43,
-        mid_getMessage_0090f7797e403f43,
-        mid_getStackTrace_e6bb52718778b305,
-        mid_getSuppressed_4781de9358fe92cb,
-        mid_initCause_adb273fe246ba153,
-        mid_printStackTrace_7ae3461a92a43152,
-        mid_printStackTrace_97a189d81f6ca857,
-        mid_printStackTrace_6f85f82c503eab85,
-        mid_setStackTrace_45423f0d633b7091,
-        mid_toString_0090f7797e403f43,
+        mid_init$_0fa09c18fee449d5,
+        mid_init$_d0bc48d5b00dc40c,
+        mid_init$_884e3b5778514e73,
+        mid_addSuppressed_98504698e8b85a67,
+        mid_fillInStackTrace_281710d8d48eb133,
+        mid_getCause_281710d8d48eb133,
+        mid_getLocalizedMessage_11b109bd155ca898,
+        mid_getMessage_11b109bd155ca898,
+        mid_getStackTrace_3450848eb58bb499,
+        mid_getSuppressed_324bf2ef70f5279e,
+        mid_initCause_1225dc7d8a39887f,
+        mid_printStackTrace_0fa09c18fee449d5,
+        mid_printStackTrace_d7059445128d3e18,
+        mid_printStackTrace_4999b5b1f2d8269b,
+        mid_setStackTrace_08da82c7aad10ed0,
+        mid_toString_11b109bd155ca898,
         max_mid
       };
 

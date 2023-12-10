@@ -3,21 +3,21 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace models {
       namespace earth {
         class GeoMagneticFieldFactory$FieldModel;
-        class GeoMagneticField;
         class GeoMagneticFields;
+        class GeoMagneticField;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -30,14 +30,14 @@ namespace org {
         class PythonGeoMagneticFields : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_finalize_7ae3461a92a43152,
-            mid_getField_391592e224573f6b,
-            mid_getIGRF_e74dfaa8c09512d5,
-            mid_getWMM_e74dfaa8c09512d5,
-            mid_pythonDecRef_7ae3461a92a43152,
-            mid_pythonExtension_a27fc9afd27e559d,
-            mid_pythonExtension_fefb08975c10f0a1,
+            mid_init$_0fa09c18fee449d5,
+            mid_finalize_0fa09c18fee449d5,
+            mid_getField_4aeee65bc3c68b0b,
+            mid_getIGRF_11ad1d91265636f7,
+            mid_getWMM_11ad1d91265636f7,
+            mid_pythonDecRef_0fa09c18fee449d5,
+            mid_pythonExtension_492808a339bfa35f,
+            mid_pythonExtension_3a8e7649f31fdb20,
             max_mid
           };
 

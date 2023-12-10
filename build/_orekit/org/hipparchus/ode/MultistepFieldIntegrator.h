@@ -3,16 +3,16 @@
 
 #include "org/hipparchus/ode/nonstiff/AdaptiveStepsizeFieldIntegrator.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace ode {
       class FieldODEIntegrator;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,19 +24,19 @@ namespace org {
       class MultistepFieldIntegrator : public ::org::hipparchus::ode::nonstiff::AdaptiveStepsizeFieldIntegrator {
        public:
         enum {
-          mid_getMaxGrowth_456d9a2f64d6b28d,
-          mid_getMinReduction_456d9a2f64d6b28d,
-          mid_getNSteps_f2f64475e4580546,
-          mid_getSafety_456d9a2f64d6b28d,
-          mid_getStarterIntegrator_b792653519a95a45,
-          mid_setMaxGrowth_77e0f9a1f260e2e5,
-          mid_setMinReduction_77e0f9a1f260e2e5,
-          mid_setSafety_77e0f9a1f260e2e5,
-          mid_setStarterIntegrator_a7608ffb03fe3825,
-          mid_initializeHighOrderDerivatives_306bab15a17e087f,
-          mid_rescale_03a16642f77779e7,
-          mid_computeStepGrowShrinkFactor_0ba5fed9597b693e,
-          mid_start_257c87e40eefb645,
+          mid_getMaxGrowth_dff5885c2c873297,
+          mid_getMinReduction_dff5885c2c873297,
+          mid_getNSteps_570ce0828f81a2c1,
+          mid_getSafety_dff5885c2c873297,
+          mid_getStarterIntegrator_64366de6ee97364a,
+          mid_setMaxGrowth_17db3a65980d3441,
+          mid_setMinReduction_17db3a65980d3441,
+          mid_setSafety_17db3a65980d3441,
+          mid_setStarterIntegrator_b912abd7b84ac44c,
+          mid_initializeHighOrderDerivatives_8a387f2c5f491083,
+          mid_computeStepGrowShrinkFactor_dcbc7ce2902fa136,
+          mid_rescale_072c8635f2164db9,
+          mid_start_2983f8f6ad2f6b4a,
           max_mid
         };
 

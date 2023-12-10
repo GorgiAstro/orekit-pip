@@ -31,8 +31,8 @@ namespace org {
       class AggregatedPVCoordinatesProvider$InvalidPVProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7ae3461a92a43152,
-          mid_getPVCoordinates_20557c175f7cd899,
+          mid_init$_0fa09c18fee449d5,
+          mid_getPVCoordinates_cfeec55f7c63ec64,
           max_mid
         };
 

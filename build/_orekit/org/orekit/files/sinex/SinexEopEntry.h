@@ -5,17 +5,17 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeStamped;
-      class TimeScale;
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class IERSConventions$NutationCorrectionConverter;
-    }
     namespace frames {
       class EOPEntry;
       class ITRFVersion;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeStamped;
+      class TimeScale;
+    }
+    namespace utils {
+      class IERSConventions$NutationCorrectionConverter;
     }
   }
 }
@@ -34,25 +34,25 @@ namespace org {
         class SinexEopEntry : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_e82d68cd9f886886,
-            mid_getDate_aaa854c403487cf3,
-            mid_getLod_456d9a2f64d6b28d,
-            mid_getNutLn_456d9a2f64d6b28d,
-            mid_getNutOb_456d9a2f64d6b28d,
-            mid_getNutX_456d9a2f64d6b28d,
-            mid_getNutY_456d9a2f64d6b28d,
-            mid_getUt1MinusUtc_456d9a2f64d6b28d,
-            mid_getXPo_456d9a2f64d6b28d,
-            mid_getYPo_456d9a2f64d6b28d,
-            mid_setLod_77e0f9a1f260e2e5,
-            mid_setNutLn_77e0f9a1f260e2e5,
-            mid_setNutOb_77e0f9a1f260e2e5,
-            mid_setNutX_77e0f9a1f260e2e5,
-            mid_setNutY_77e0f9a1f260e2e5,
-            mid_setUt1MinusUtc_77e0f9a1f260e2e5,
-            mid_setxPo_77e0f9a1f260e2e5,
-            mid_setyPo_77e0f9a1f260e2e5,
-            mid_toEopEntry_1b30883cfc3e0010,
+            mid_init$_600a2a61652bc473,
+            mid_getDate_85703d13e302437e,
+            mid_getLod_dff5885c2c873297,
+            mid_getNutLn_dff5885c2c873297,
+            mid_getNutOb_dff5885c2c873297,
+            mid_getNutX_dff5885c2c873297,
+            mid_getNutY_dff5885c2c873297,
+            mid_getUt1MinusUtc_dff5885c2c873297,
+            mid_getXPo_dff5885c2c873297,
+            mid_getYPo_dff5885c2c873297,
+            mid_setLod_17db3a65980d3441,
+            mid_setNutLn_17db3a65980d3441,
+            mid_setNutOb_17db3a65980d3441,
+            mid_setNutX_17db3a65980d3441,
+            mid_setNutY_17db3a65980d3441,
+            mid_setUt1MinusUtc_17db3a65980d3441,
+            mid_setxPo_17db3a65980d3441,
+            mid_setyPo_17db3a65980d3441,
+            mid_toEopEntry_70a1abaf98a061db,
             max_mid
           };
 

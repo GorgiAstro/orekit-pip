@@ -4,6 +4,19 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace geometry {
+      namespace euclidean {
+        namespace twod {
+          class FieldVector2D;
+        }
+        namespace threed {
+          class FieldVector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace frames {
       class Frame;
@@ -11,19 +24,6 @@ namespace org {
     namespace utils {
       class TimeStampedFieldPVCoordinates;
     }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class FieldVector3D;
-        }
-        namespace twod {
-          class FieldVector2D;
-        }
-      }
-    }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -40,19 +40,19 @@ namespace org {
       class FieldEllipse : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_ae772aa1e16db643,
-          mid_getA_e6d4d3215c30992a,
-          mid_getB_e6d4d3215c30992a,
-          mid_getCenter_5791f80683b5227e,
-          mid_getCenterOfCurvature_5e94b047a6786e99,
-          mid_getFrame_c8fe21bcdac65bf6,
-          mid_getU_5791f80683b5227e,
-          mid_getV_5791f80683b5227e,
-          mid_pointAt_3023f195d3eecf7e,
-          mid_projectToEllipse_dc7eea29a4d4ad51,
-          mid_projectToEllipse_5e94b047a6786e99,
-          mid_toPlane_cc9be632777be51e,
-          mid_toSpace_f08c9c2e7b3f66a1,
+          mid_init$_a80d078788493a03,
+          mid_getA_eba8e72a22c984ac,
+          mid_getB_eba8e72a22c984ac,
+          mid_getCenter_716f50c86ffc8da7,
+          mid_getCenterOfCurvature_516439063b85838d,
+          mid_getFrame_b86f9f61d97a7244,
+          mid_getU_716f50c86ffc8da7,
+          mid_getV_716f50c86ffc8da7,
+          mid_pointAt_e0e563985265c470,
+          mid_projectToEllipse_2c604bfeb0a28a2f,
+          mid_projectToEllipse_516439063b85838d,
+          mid_toPlane_92f5981810110281,
+          mid_toSpace_cd76bd749d804094,
           max_mid
         };
 

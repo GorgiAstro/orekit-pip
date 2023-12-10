@@ -14,8 +14,8 @@ namespace java {
 namespace org {
   namespace hipparchus {
     namespace complex {
-      class ComplexField;
       class Complex;
+      class ComplexField;
     }
     class Field;
   }
@@ -29,12 +29,12 @@ namespace org {
       class ComplexField : public ::java::lang::Object {
        public:
         enum {
-          mid_equals_229c87223f486349,
-          mid_getInstance_3cb90e62d7040545,
-          mid_getOne_8278e96d3787b980,
-          mid_getRuntimeClass_8f66acc08d2a174c,
-          mid_getZero_8278e96d3787b980,
-          mid_hashCode_f2f64475e4580546,
+          mid_equals_65c7d273e80d497a,
+          mid_getInstance_f304aeb797b96d24,
+          mid_getOne_a6784e0b89dedf02,
+          mid_getRuntimeClass_7c16c5008b34b3db,
+          mid_getZero_a6784e0b89dedf02,
+          mid_hashCode_570ce0828f81a2c1,
           max_mid
         };
 

@@ -8,10 +8,10 @@ namespace org {
     namespace files {
       namespace ccsds {
         namespace utils {
-          class ContextBinding;
           namespace lexical {
             class ParseToken;
           }
+          class ContextBinding;
         }
         namespace ndm {
           namespace adm {
@@ -44,9 +44,9 @@ namespace org {
               class AttitudeManeuverKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_588d62a629547500,
-                  mid_valueOf_b9f2269c9d870997,
-                  mid_values_3ede685191255a63,
+                  mid_process_b59763a79eda10b2,
+                  mid_valueOf_d0eb52be340b1a50,
+                  mid_values_b0be67a4ccd5c917,
                   max_mid
                 };
 

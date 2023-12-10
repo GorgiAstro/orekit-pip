@@ -3,12 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace models {
@@ -23,6 +17,12 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -34,18 +34,18 @@ namespace org {
           class OceanLoadingCoefficients : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_07c801f17154fb71,
-              mid_getNbSpecies_f2f64475e4580546,
-              mid_getNbTides_38565d58479aa24a,
-              mid_getSiteLocation_fabc97b1aefe5844,
-              mid_getSiteName_0090f7797e403f43,
-              mid_getSouthAmplitude_a84e4ee1da3f1ab8,
-              mid_getSouthPhase_a84e4ee1da3f1ab8,
-              mid_getTide_8d497e94d9aa86f9,
-              mid_getWestAmplitude_a84e4ee1da3f1ab8,
-              mid_getWestPhase_a84e4ee1da3f1ab8,
-              mid_getZenithAmplitude_a84e4ee1da3f1ab8,
-              mid_getZenithPhase_a84e4ee1da3f1ab8,
+              mid_init$_f6a8bbdebdde827c,
+              mid_getNbSpecies_570ce0828f81a2c1,
+              mid_getNbTides_2235cd056f5a882b,
+              mid_getSiteLocation_82d0a9bcd06489bb,
+              mid_getSiteName_11b109bd155ca898,
+              mid_getSouthAmplitude_dbbe5f05149dbf73,
+              mid_getSouthPhase_dbbe5f05149dbf73,
+              mid_getTide_819ad1f415723af9,
+              mid_getWestAmplitude_dbbe5f05149dbf73,
+              mid_getWestPhase_dbbe5f05149dbf73,
+              mid_getZenithAmplitude_dbbe5f05149dbf73,
+              mid_getZenithPhase_dbbe5f05149dbf73,
               max_mid
             };
 

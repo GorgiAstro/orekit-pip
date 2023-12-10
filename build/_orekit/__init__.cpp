@@ -13056,7 +13056,6 @@ namespace org {
   }
 }
 
-#include "org/orekit/propagation/sampling/EmptyMultiSatStepHandler.h"
 #include "org/orekit/propagation/sampling/FieldOrekitFixedStepHandler.h"
 #include "org/orekit/propagation/sampling/FieldOrekitStepHandler.h"
 #include "org/orekit/propagation/sampling/FieldOrekitStepInterpolator.h"
@@ -13089,7 +13088,6 @@ namespace org {
         {
           module = getJavaModule(module, "org.orekit.propagation", "sampling");
 
-          t_EmptyMultiSatStepHandler::install(module);
           t_FieldOrekitFixedStepHandler::install(module);
           t_FieldOrekitStepHandler::install(module);
           t_FieldOrekitStepInterpolator::install(module);
@@ -13117,7 +13115,6 @@ namespace org {
         {
           module = getJavaModule(module, "org.orekit.propagation", "sampling");
 
-          t_EmptyMultiSatStepHandler::initialize(module);
           t_FieldOrekitFixedStepHandler::initialize(module);
           t_FieldOrekitStepHandler::initialize(module);
           t_FieldOrekitStepInterpolator::initialize(module);

@@ -7,14 +7,14 @@ namespace org {
   namespace orekit {
     namespace frames {
       class FieldStaticTransform;
-      class StaticTransform;
       class TransformProvider;
       class FieldTransform;
       class Transform;
+      class StaticTransform;
     }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
   }
 }
@@ -32,12 +32,12 @@ namespace org {
       class HelmertTransformation : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_dbe7ce1323037723,
-          mid_getEpoch_aaa854c403487cf3,
-          mid_getStaticTransform_96493aacdf1acda1,
-          mid_getStaticTransform_490485462b5938a0,
-          mid_getTransform_d55545a64ea4a9a7,
-          mid_getTransform_0b4f24249033b631,
+          mid_init$_8555f4eafee7cf0a,
+          mid_getEpoch_85703d13e302437e,
+          mid_getStaticTransform_edee248bbd22a723,
+          mid_getStaticTransform_eae0db96fe973887,
+          mid_getTransform_687985c59478d29c,
+          mid_getTransform_f7bf3269025b86c3,
           max_mid
         };
 

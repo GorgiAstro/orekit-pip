@@ -25,8 +25,8 @@ namespace org {
       class GaussianRandomGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_bb31e8cbfaf41e63,
-          mid_nextNormalizedDouble_456d9a2f64d6b28d,
+          mid_init$_a351c1fd6920cdee,
+          mid_nextNormalizedDouble_dff5885c2c873297,
           max_mid
         };
 

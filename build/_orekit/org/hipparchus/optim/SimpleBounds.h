@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace optim {
-      class OptimizationData;
       class SimpleBounds;
+      class OptimizationData;
     }
   }
 }
@@ -25,10 +25,10 @@ namespace org {
       class SimpleBounds : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0d03c8a1d7f56f02,
-          mid_getLower_7cdc325af0834901,
-          mid_getUpper_7cdc325af0834901,
-          mid_unbounded_d944268fde9fcc18,
+          mid_init$_e1f4b15468f5564a,
+          mid_getLower_60c7040667a7dc5c,
+          mid_getUpper_60c7040667a7dc5c,
+          mid_unbounded_03b3e79eff942963,
           max_mid
         };
 

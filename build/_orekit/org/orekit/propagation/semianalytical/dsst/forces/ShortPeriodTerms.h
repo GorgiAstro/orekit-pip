@@ -15,11 +15,11 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace orbits {
-      class Orbit;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace orbits {
+      class Orbit;
     }
   }
 }
@@ -35,9 +35,9 @@ namespace org {
             class ShortPeriodTerms : public ::java::lang::Object {
              public:
               enum {
-                mid_getCoefficients_f2bf54770645c00d,
-                mid_getCoefficientsKeyPrefix_0090f7797e403f43,
-                mid_value_bae9521eacc13195,
+                mid_getCoefficients_64003844027bb6c4,
+                mid_getCoefficientsKeyPrefix_11b109bd155ca898,
+                mid_value_2ab179738ea066bf,
                 max_mid
               };
 

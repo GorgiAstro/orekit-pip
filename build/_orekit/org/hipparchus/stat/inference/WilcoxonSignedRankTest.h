@@ -5,16 +5,16 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalStateException;
+      class NullArgumentException;
+      class MathIllegalArgumentException;
+    }
     namespace stat {
       namespace ranking {
         class NaNStrategy;
         class TiesStrategy;
       }
-    }
-    namespace exception {
-      class NullArgumentException;
-      class MathIllegalArgumentException;
-      class MathIllegalStateException;
     }
   }
 }
@@ -33,10 +33,10 @@ namespace org {
         class WilcoxonSignedRankTest : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_init$_30686433a7523e33,
-            mid_wilcoxonSignedRank_1ce76fb6ff382da9,
-            mid_wilcoxonSignedRankTest_6379f5334de861c2,
+            mid_init$_0fa09c18fee449d5,
+            mid_init$_ed87323846b88129,
+            mid_wilcoxonSignedRank_b561c6892e9976f8,
+            mid_wilcoxonSignedRankTest_c98cc76e0ea0aa4c,
             max_mid
           };
 

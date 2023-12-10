@@ -17,9 +17,9 @@ namespace org {
     namespace forces {
       namespace gravity {
         namespace potential {
-          class UnnormalizedSphericalHarmonicsProvider;
-          class NormalizedSphericalHarmonicsProvider;
           class GravityFields;
+          class NormalizedSphericalHarmonicsProvider;
+          class UnnormalizedSphericalHarmonicsProvider;
           class OceanTidesWave;
         }
       }
@@ -40,16 +40,16 @@ namespace org {
           class PythonGravityFields : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7ae3461a92a43152,
-              mid_finalize_7ae3461a92a43152,
-              mid_getConstantNormalizedProvider_f23a878f7162aa63,
-              mid_getConstantUnnormalizedProvider_4ff4b36d038a4d30,
-              mid_getNormalizedProvider_cd3e5e7b86486169,
-              mid_getOceanTidesWaves_4a0f7788a82593c4,
-              mid_getUnnormalizedProvider_d3751d16c1e699b1,
-              mid_pythonDecRef_7ae3461a92a43152,
-              mid_pythonExtension_a27fc9afd27e559d,
-              mid_pythonExtension_fefb08975c10f0a1,
+              mid_init$_0fa09c18fee449d5,
+              mid_finalize_0fa09c18fee449d5,
+              mid_getConstantNormalizedProvider_8be9acc0db722a5e,
+              mid_getConstantUnnormalizedProvider_1a4f51636cfaa7fe,
+              mid_getNormalizedProvider_0fdcb0a280e1e598,
+              mid_getOceanTidesWaves_10d7c0f6de166543,
+              mid_getUnnormalizedProvider_c2f412128b078525,
+              mid_pythonDecRef_0fa09c18fee449d5,
+              mid_pythonExtension_492808a339bfa35f,
+              mid_pythonExtension_3a8e7649f31fdb20,
               max_mid
             };
 

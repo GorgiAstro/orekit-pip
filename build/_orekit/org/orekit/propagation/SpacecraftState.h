@@ -15,26 +15,23 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace propagation {
-      class SpacecraftState;
-    }
-    namespace utils {
-      class AbsolutePVCoordinates;
-      class DoubleArrayDictionary;
-      class TimeStampedPVCoordinates;
-    }
     namespace time {
       class AbsoluteDate;
       class TimeStamped;
       class TimeShiftable;
     }
+    namespace utils {
+      class DoubleArrayDictionary;
+      class AbsolutePVCoordinates;
+      class TimeStampedPVCoordinates;
+    }
     namespace frames {
+      class StaticTransform;
       class Transform;
       class Frame;
-      class StaticTransform;
     }
-    namespace attitudes {
-      class Attitude;
+    namespace propagation {
+      class SpacecraftState;
     }
     namespace orbits {
       class Orbit;
@@ -42,17 +39,20 @@ namespace org {
     namespace errors {
       class OrekitIllegalStateException;
     }
+    namespace attitudes {
+      class Attitude;
+    }
   }
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalStateException;
-    }
     namespace geometry {
       namespace euclidean {
         namespace threed {
           class Vector3D;
         }
       }
+    }
+    namespace exception {
+      class MathIllegalStateException;
     }
   }
 }
@@ -65,61 +65,61 @@ namespace org {
       class SpacecraftState : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_073e85bdda4ac909,
-          mid_init$_e5b8a6a44355183e,
-          mid_init$_cac0876957c83a07,
-          mid_init$_4113b01e3f013ea8,
-          mid_init$_2cfe80d4c8f771e1,
-          mid_init$_bedbb88fd5c96a0b,
-          mid_init$_3246ce2d8d1e813c,
-          mid_init$_b088b68c4e93a489,
-          mid_init$_f46c916b57b2fddc,
-          mid_init$_cfb5a80032a9ea52,
-          mid_init$_eaa9801c626b609c,
-          mid_init$_b9a0b4387a439d7c,
-          mid_init$_f66b76ba9f271ec3,
-          mid_init$_d44940232ffa9ece,
-          mid_init$_9660dccae5113b7e,
-          mid_init$_6237ff20bb39d491,
-          mid_init$_c554ee2e12ba2ef8,
-          mid_init$_e1f80ec9e89fc9f9,
-          mid_addAdditionalState_8a6f4fa701b1f728,
-          mid_addAdditionalStateDerivative_8a6f4fa701b1f728,
-          mid_ensureCompatibleAdditionalStates_2b88003f931f70a7,
-          mid_getA_456d9a2f64d6b28d,
-          mid_getAbsPVA_821da029915a6e75,
-          mid_getAdditionalState_5fc57a69c973af17,
-          mid_getAdditionalStateDerivative_5fc57a69c973af17,
-          mid_getAdditionalStatesDerivatives_08f613b585562583,
-          mid_getAdditionalStatesValues_08f613b585562583,
-          mid_getAttitude_78dca83e076ede35,
-          mid_getDate_aaa854c403487cf3,
-          mid_getE_456d9a2f64d6b28d,
-          mid_getEquinoctialEx_456d9a2f64d6b28d,
-          mid_getEquinoctialEy_456d9a2f64d6b28d,
-          mid_getFrame_c8fe21bcdac65bf6,
-          mid_getHx_456d9a2f64d6b28d,
-          mid_getHy_456d9a2f64d6b28d,
-          mid_getI_456d9a2f64d6b28d,
-          mid_getKeplerianMeanMotion_456d9a2f64d6b28d,
-          mid_getKeplerianPeriod_456d9a2f64d6b28d,
-          mid_getLE_456d9a2f64d6b28d,
-          mid_getLM_456d9a2f64d6b28d,
-          mid_getLv_456d9a2f64d6b28d,
-          mid_getMass_456d9a2f64d6b28d,
-          mid_getMu_456d9a2f64d6b28d,
-          mid_getOrbit_551bf685780e3c1f,
-          mid_getPVCoordinates_6890805957bea2cd,
-          mid_getPVCoordinates_f8a365e30a3ddce1,
-          mid_getPosition_17a952530a808943,
-          mid_getPosition_b070efa02e5e2595,
-          mid_hasAdditionalState_6b161f495ea569b8,
-          mid_hasAdditionalStateDerivative_6b161f495ea569b8,
-          mid_isOrbitDefined_e470b6d9e0d979db,
-          mid_shiftedBy_d8572e79ca9ff46b,
-          mid_toStaticTransform_85643104a022b593,
-          mid_toString_0090f7797e403f43,
-          mid_toTransform_631c2f99a847a383,
+          mid_init$_a834341b86d7c555,
+          mid_init$_6219f6b430651d68,
+          mid_init$_2ec9afc2e47b338d,
+          mid_init$_a7d560625cc2403d,
+          mid_init$_91f7468bd00a89a5,
+          mid_init$_41811c3e433fc06a,
+          mid_init$_0dd51dbd5e2936c0,
+          mid_init$_6a752d664cb18d86,
+          mid_init$_5348132fee043717,
+          mid_init$_4d11e626785a9720,
+          mid_init$_381d44db988285bc,
+          mid_init$_15d74cc964e458b3,
+          mid_init$_836d3066cd9c6f05,
+          mid_init$_0cc7979070d5c007,
+          mid_init$_92918c7cfdd4eaaf,
+          mid_init$_df1b78511c9c133f,
+          mid_init$_4c91821601404e7a,
+          mid_init$_68f3c275a900e996,
+          mid_addAdditionalState_7a8e66b8670b4752,
+          mid_addAdditionalStateDerivative_7a8e66b8670b4752,
+          mid_ensureCompatibleAdditionalStates_0ee5c56004643a2e,
+          mid_getA_dff5885c2c873297,
+          mid_getAbsPVA_3484f681e5893171,
+          mid_getAdditionalState_f87e5f45128c2827,
+          mid_getAdditionalStateDerivative_f87e5f45128c2827,
+          mid_getAdditionalStatesDerivatives_17e5408138fe3169,
+          mid_getAdditionalStatesValues_17e5408138fe3169,
+          mid_getAttitude_bd12f6f74bd44dca,
+          mid_getDate_85703d13e302437e,
+          mid_getE_dff5885c2c873297,
+          mid_getEquinoctialEx_dff5885c2c873297,
+          mid_getEquinoctialEy_dff5885c2c873297,
+          mid_getFrame_b86f9f61d97a7244,
+          mid_getHx_dff5885c2c873297,
+          mid_getHy_dff5885c2c873297,
+          mid_getI_dff5885c2c873297,
+          mid_getKeplerianMeanMotion_dff5885c2c873297,
+          mid_getKeplerianPeriod_dff5885c2c873297,
+          mid_getLE_dff5885c2c873297,
+          mid_getLM_dff5885c2c873297,
+          mid_getLv_dff5885c2c873297,
+          mid_getMass_dff5885c2c873297,
+          mid_getMu_dff5885c2c873297,
+          mid_getOrbit_cde5690bfa4f9649,
+          mid_getPVCoordinates_c204436deca11d94,
+          mid_getPVCoordinates_d9ebf50b8aebcbf9,
+          mid_getPosition_d52645e0d4c07563,
+          mid_getPosition_e91e859b879f3586,
+          mid_hasAdditionalState_7edad2c2f64f4d68,
+          mid_hasAdditionalStateDerivative_7edad2c2f64f4d68,
+          mid_isOrbitDefined_b108b35ef48e27bd,
+          mid_shiftedBy_4c7d85f6fb7b5bef,
+          mid_toStaticTransform_892837e768e813bc,
+          mid_toString_11b109bd155ca898,
+          mid_toTransform_09afc11266121652,
           max_mid
         };
 

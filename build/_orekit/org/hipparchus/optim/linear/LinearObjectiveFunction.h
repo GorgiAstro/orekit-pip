@@ -3,25 +3,25 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace linear {
-      class RealVector;
-    }
-    namespace optim {
-      class OptimizationData;
-    }
-    namespace analysis {
-      class MultivariateFunction;
-    }
-  }
-}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace analysis {
+      class MultivariateFunction;
+    }
+    namespace linear {
+      class RealVector;
+    }
+    namespace optim {
+      class OptimizationData;
+    }
   }
 }
 template<class T> class JArray;
@@ -34,14 +34,14 @@ namespace org {
         class LinearObjectiveFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_caadaecfce5fba2f,
-            mid_init$_971f7be7e0a3e00b,
-            mid_equals_229c87223f486349,
-            mid_getCoefficients_6d9adf1d5b463928,
-            mid_getConstantTerm_456d9a2f64d6b28d,
-            mid_hashCode_f2f64475e4580546,
-            mid_value_f05cb8c6dfd5e0b9,
-            mid_value_5ed80776077f2bda,
+            mid_init$_bc1ff02eb3693128,
+            mid_init$_bec6f1a06b57756a,
+            mid_equals_65c7d273e80d497a,
+            mid_getCoefficients_aab4fbf77867daa8,
+            mid_getConstantTerm_dff5885c2c873297,
+            mid_hashCode_570ce0828f81a2c1,
+            mid_value_9dc1ec0bcc0a9a29,
+            mid_value_c579a73494d20c67,
             max_mid
           };
 

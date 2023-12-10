@@ -3,32 +3,32 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace random {
-      class RandomGenerator;
-    }
-    namespace stat {
-      namespace descriptive {
-        class StreamingStatistics;
-        class AggregatableStatistic;
-        class StatisticalSummary;
-        class StreamingStatistics$StreamingStatisticsBuilder;
-      }
-    }
-  }
-}
 namespace java {
   namespace io {
     class Serializable;
+  }
+  namespace util {
+    namespace function {
+      class DoubleConsumer;
+    }
   }
   namespace lang {
     class Class;
     class String;
   }
-  namespace util {
-    namespace function {
-      class DoubleConsumer;
+}
+namespace org {
+  namespace hipparchus {
+    namespace stat {
+      namespace descriptive {
+        class AggregatableStatistic;
+        class StatisticalSummary;
+        class StreamingStatistics;
+        class StreamingStatistics$StreamingStatisticsBuilder;
+      }
+    }
+    namespace random {
+      class RandomGenerator;
     }
   }
 }
@@ -42,33 +42,33 @@ namespace org {
         class StreamingStatistics : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_init$_313f2327697bef05,
-            mid_accept_77e0f9a1f260e2e5,
-            mid_addValue_77e0f9a1f260e2e5,
-            mid_aggregate_209abf4c4bd685bf,
-            mid_builder_8895a9fba315c7a6,
-            mid_clear_7ae3461a92a43152,
-            mid_copy_cdee09d4729ad8fd,
-            mid_equals_229c87223f486349,
-            mid_getGeometricMean_456d9a2f64d6b28d,
-            mid_getMax_456d9a2f64d6b28d,
-            mid_getMean_456d9a2f64d6b28d,
-            mid_getMedian_456d9a2f64d6b28d,
-            mid_getMin_456d9a2f64d6b28d,
-            mid_getN_a27fc9afd27e559d,
-            mid_getPercentile_0ba5fed9597b693e,
-            mid_getPopulationVariance_456d9a2f64d6b28d,
-            mid_getQuadraticMean_456d9a2f64d6b28d,
-            mid_getSecondMoment_456d9a2f64d6b28d,
-            mid_getStandardDeviation_456d9a2f64d6b28d,
-            mid_getSum_456d9a2f64d6b28d,
-            mid_getSumOfLogs_456d9a2f64d6b28d,
-            mid_getSumOfSquares_456d9a2f64d6b28d,
-            mid_getSummary_47e97143cdc53a1c,
-            mid_getVariance_456d9a2f64d6b28d,
-            mid_hashCode_f2f64475e4580546,
-            mid_toString_0090f7797e403f43,
+            mid_init$_0fa09c18fee449d5,
+            mid_init$_a73757db4170dc00,
+            mid_accept_17db3a65980d3441,
+            mid_addValue_17db3a65980d3441,
+            mid_aggregate_b9e7d1acbb3a5f4c,
+            mid_builder_b53be6ff329e001c,
+            mid_clear_0fa09c18fee449d5,
+            mid_copy_28f0324196bf3cb7,
+            mid_equals_65c7d273e80d497a,
+            mid_getGeometricMean_dff5885c2c873297,
+            mid_getMax_dff5885c2c873297,
+            mid_getMean_dff5885c2c873297,
+            mid_getMedian_dff5885c2c873297,
+            mid_getMin_dff5885c2c873297,
+            mid_getN_492808a339bfa35f,
+            mid_getPercentile_dcbc7ce2902fa136,
+            mid_getPopulationVariance_dff5885c2c873297,
+            mid_getQuadraticMean_dff5885c2c873297,
+            mid_getSecondMoment_dff5885c2c873297,
+            mid_getStandardDeviation_dff5885c2c873297,
+            mid_getSum_dff5885c2c873297,
+            mid_getSumOfLogs_dff5885c2c873297,
+            mid_getSumOfSquares_dff5885c2c873297,
+            mid_getSummary_5a169194284d157f,
+            mid_getVariance_dff5885c2c873297,
+            mid_hashCode_570ce0828f81a2c1,
+            mid_toString_11b109bd155ca898,
             max_mid
           };
 

@@ -3,20 +3,6 @@
 
 #include "org/orekit/propagation/events/AbstractDetector.h"
 
-namespace org {
-  namespace orekit {
-    namespace time {
-      class TimeStamped;
-      class AbsoluteDate;
-    }
-    namespace propagation {
-      namespace events {
-        class DateDetector;
-      }
-      class SpacecraftState;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -24,6 +10,20 @@ namespace java {
   namespace lang {
     class Class;
     class IllegalArgumentException;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+      class TimeStamped;
+    }
+    namespace propagation {
+      namespace events {
+        class DateDetector;
+      }
+      class SpacecraftState;
+    }
   }
 }
 template<class T> class JArray;
@@ -36,13 +36,13 @@ namespace org {
         class DateDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_3865e269610853fc,
-            mid_addEventDate_e82d68cd9f886886,
-            mid_g_66a2f071e6ed0c06,
-            mid_getDate_aaa854c403487cf3,
-            mid_getDates_a6156df500549a58,
-            mid_withMinGap_66f0b0590f580cf6,
-            mid_create_19d67cd164575bf6,
+            mid_init$_ed188f35a6b77a71,
+            mid_addEventDate_600a2a61652bc473,
+            mid_g_432f3d328c15ec82,
+            mid_getDate_85703d13e302437e,
+            mid_getDates_2afa36052df4765d,
+            mid_withMinGap_b17263d5227b3c7a,
+            mid_create_b894a60d70854e2d,
             max_mid
           };
 

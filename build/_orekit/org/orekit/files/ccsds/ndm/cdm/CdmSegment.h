@@ -9,8 +9,8 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace cdm {
-            class CdmMetadata;
             class CdmData;
+            class CdmMetadata;
           }
         }
       }
@@ -34,7 +34,7 @@ namespace org {
             class CdmSegment : public ::org::orekit::files::ccsds::section::Segment {
              public:
               enum {
-                mid_init$_2cf8e366edcf1d43,
+                mid_init$_d60d68b83bd2720c,
                 max_mid
               };
 

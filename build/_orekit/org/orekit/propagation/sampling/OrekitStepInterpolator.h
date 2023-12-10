@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class TimeStampedPVCoordinates;
-    }
     namespace frames {
       class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace propagation {
       namespace sampling {
@@ -17,8 +17,8 @@ namespace org {
       }
       class SpacecraftState;
     }
-    namespace time {
-      class AbsoluteDate;
+    namespace utils {
+      class TimeStampedPVCoordinates;
     }
   }
 }
@@ -37,14 +37,14 @@ namespace org {
         class OrekitStepInterpolator : public ::org::orekit::utils::PVCoordinatesProvider {
          public:
           enum {
-            mid_getCurrentState_dd3e4a8d51055f1f,
-            mid_getInterpolatedState_889031abe87f3b14,
-            mid_getPVCoordinates_20557c175f7cd899,
-            mid_getPreviousState_dd3e4a8d51055f1f,
-            mid_isCurrentStateInterpolated_e470b6d9e0d979db,
-            mid_isForward_e470b6d9e0d979db,
-            mid_isPreviousStateInterpolated_e470b6d9e0d979db,
-            mid_restrictStep_da619a9456840a3b,
+            mid_getCurrentState_c6311115fea01a34,
+            mid_getInterpolatedState_fbff2ff5554d95e1,
+            mid_getPVCoordinates_cfeec55f7c63ec64,
+            mid_getPreviousState_c6311115fea01a34,
+            mid_isCurrentStateInterpolated_b108b35ef48e27bd,
+            mid_isForward_b108b35ef48e27bd,
+            mid_isPreviousStateInterpolated_b108b35ef48e27bd,
+            mid_restrictStep_470f776a59a8cb6f,
             max_mid
           };
 

@@ -9,9 +9,9 @@ namespace org {
       namespace ccsds {
         namespace utils {
           namespace lexical {
+            class ParseToken;
             class XmlTokenBuilder;
             class MessageParser;
-            class ParseToken;
           }
           class FileFormat;
         }
@@ -44,18 +44,18 @@ namespace org {
             class PythonMessageParser : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_7ae3461a92a43152,
-                mid_build_dfd7647d9110ac9f,
-                mid_finalize_7ae3461a92a43152,
-                mid_getFileFormat_b51f613f857a5e84,
-                mid_getFormatVersionKey_0090f7797e403f43,
-                mid_getSpecialXmlElementsBuilders_d6753b7055940a54,
-                mid_parseMessage_691778b38b11996d,
-                mid_process_9b91a684064d0956,
-                mid_pythonDecRef_7ae3461a92a43152,
-                mid_pythonExtension_a27fc9afd27e559d,
-                mid_pythonExtension_fefb08975c10f0a1,
-                mid_reset_052c3a3464b50355,
+                mid_init$_0fa09c18fee449d5,
+                mid_build_4d26fd885228c716,
+                mid_finalize_0fa09c18fee449d5,
+                mid_getFileFormat_66298c6188053be6,
+                mid_getFormatVersionKey_11b109bd155ca898,
+                mid_getSpecialXmlElementsBuilders_6f5a75ccd8c04465,
+                mid_parseMessage_455adfd4ae4ab630,
+                mid_process_60c6e06c33a7585b,
+                mid_pythonDecRef_0fa09c18fee449d5,
+                mid_pythonExtension_492808a339bfa35f,
+                mid_pythonExtension_3a8e7649f31fdb20,
+                mid_reset_e250621f009e45db,
                 max_mid
               };
 

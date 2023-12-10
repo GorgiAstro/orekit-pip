@@ -19,21 +19,21 @@ namespace org {
         class CRDConfiguration$TimingSystemConfiguration : public ::org::orekit::files::ilrs::CRDConfiguration$BaseConfiguration {
          public:
           enum {
-            mid_init$_7ae3461a92a43152,
-            mid_getEpochDelayCorrection_456d9a2f64d6b28d,
-            mid_getFrequencySource_0090f7797e403f43,
-            mid_getLocalTimingId_0090f7797e403f43,
-            mid_getTimeSource_0090f7797e403f43,
-            mid_getTimer_0090f7797e403f43,
-            mid_getTimerSerialNumber_0090f7797e403f43,
-            mid_setEpochDelayCorrection_77e0f9a1f260e2e5,
-            mid_setFrequencySource_e939c6558ae8d313,
-            mid_setLocalTimingId_e939c6558ae8d313,
-            mid_setTimeSource_e939c6558ae8d313,
-            mid_setTimer_e939c6558ae8d313,
-            mid_setTimerSerialNumber_e939c6558ae8d313,
-            mid_toCrdString_0090f7797e403f43,
-            mid_toString_0090f7797e403f43,
+            mid_init$_0fa09c18fee449d5,
+            mid_getEpochDelayCorrection_dff5885c2c873297,
+            mid_getFrequencySource_11b109bd155ca898,
+            mid_getLocalTimingId_11b109bd155ca898,
+            mid_getTimeSource_11b109bd155ca898,
+            mid_getTimer_11b109bd155ca898,
+            mid_getTimerSerialNumber_11b109bd155ca898,
+            mid_setEpochDelayCorrection_17db3a65980d3441,
+            mid_setFrequencySource_d0bc48d5b00dc40c,
+            mid_setLocalTimingId_d0bc48d5b00dc40c,
+            mid_setTimeSource_d0bc48d5b00dc40c,
+            mid_setTimer_d0bc48d5b00dc40c,
+            mid_setTimerSerialNumber_d0bc48d5b00dc40c,
+            mid_toCrdString_11b109bd155ca898,
+            mid_toString_11b109bd155ca898,
             max_mid
           };
 

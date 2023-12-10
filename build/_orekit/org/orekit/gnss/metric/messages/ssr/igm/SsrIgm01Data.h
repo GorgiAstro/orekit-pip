@@ -34,11 +34,11 @@ namespace org {
               class SsrIgm01Data : public ::org::orekit::gnss::metric::messages::ssr::igm::SsrIgmData {
                public:
                 enum {
-                  mid_init$_7ae3461a92a43152,
-                  mid_getGnssIod_f2f64475e4580546,
-                  mid_getOrbitCorrection_7cd8e64b85aa1635,
-                  mid_setGnssIod_0a2a1ac2721c0336,
-                  mid_setOrbitCorrection_d62793cb3669987a,
+                  mid_init$_0fa09c18fee449d5,
+                  mid_getGnssIod_570ce0828f81a2c1,
+                  mid_getOrbitCorrection_ed0d27aa2377afa2,
+                  mid_setGnssIod_99803b0791f320ff,
+                  mid_setOrbitCorrection_4d608774f859b10b,
                   max_mid
                 };
 

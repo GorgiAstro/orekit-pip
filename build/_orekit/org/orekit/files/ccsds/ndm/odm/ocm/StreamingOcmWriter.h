@@ -3,6 +3,30 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace ccsds {
+        namespace utils {
+          namespace generation {
+            class Generator;
+          }
+        }
+        namespace ndm {
+          namespace odm {
+            namespace ocm {
+              class TrajectoryStateHistoryMetadata;
+              class OcmWriter;
+              class StreamingOcmWriter$BlockWriter;
+              class OcmMetadata;
+            }
+            class OdmHeader;
+          }
+        }
+      }
+    }
+  }
+}
 namespace java {
   namespace io {
     class IOException;
@@ -10,30 +34,6 @@ namespace java {
   namespace lang {
     class AutoCloseable;
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ccsds {
-        namespace ndm {
-          namespace odm {
-            namespace ocm {
-              class OcmWriter;
-              class TrajectoryStateHistoryMetadata;
-              class StreamingOcmWriter$BlockWriter;
-              class OcmMetadata;
-            }
-            class OdmHeader;
-          }
-        }
-        namespace utils {
-          namespace generation {
-            class Generator;
-          }
-        }
-      }
-    }
   }
 }
 template<class T> class JArray;
@@ -49,10 +49,10 @@ namespace org {
               class StreamingOcmWriter : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_f7e8ebbce8addf92,
-                  mid_init$_12e8ffe840a131e2,
-                  mid_close_7ae3461a92a43152,
-                  mid_newBlock_a4428b3d75ed85a7,
+                  mid_init$_8e97470ee4b40e88,
+                  mid_init$_824428e8b1c4caea,
+                  mid_close_0fa09c18fee449d5,
+                  mid_newBlock_0b234cb422df0ede,
                   max_mid
                 };
 

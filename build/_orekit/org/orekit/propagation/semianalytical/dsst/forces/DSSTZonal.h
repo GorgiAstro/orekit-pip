@@ -4,24 +4,27 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace propagation {
-      class FieldSpacecraftState;
       namespace semianalytical {
         namespace dsst {
           namespace forces {
+            class DSSTForceModel;
             class ShortPeriodTerms;
             class FieldShortPeriodTerms;
-            class DSSTForceModel;
           }
           namespace utilities {
-            class AuxiliaryElements;
             class FieldAuxiliaryElements;
+            class AuxiliaryElements;
           }
         }
       }
-      class SpacecraftState;
+      class FieldSpacecraftState;
       class PropagationType;
+      class SpacecraftState;
     }
     namespace forces {
       namespace gravity {
@@ -36,9 +39,6 @@ namespace org {
     namespace utils {
       class ParameterDriver;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -62,17 +62,17 @@ namespace org {
             class DSSTZonal : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_ae95768491c6929a,
-                mid_init$_caab3b50ba79ba40,
-                mid_getMeanElementRate_5265bce9e9da3506,
-                mid_getMeanElementRate_3b4b4fe187ad73ff,
-                mid_getParametersDrivers_a6156df500549a58,
-                mid_getProvider_c9ceb4647ee2e17e,
-                mid_initializeShortPeriodTerms_74f227e9e3e51225,
-                mid_initializeShortPeriodTerms_46b1d1d9daf3396d,
-                mid_registerAttitudeProvider_8109c1a27d4471d3,
-                mid_updateShortPeriodTerms_8df221610d0cb785,
-                mid_updateShortPeriodTerms_6839803ab3ef216d,
+                mid_init$_a30010a3362089e6,
+                mid_init$_c746a94bc718e759,
+                mid_getMeanElementRate_c0df8831049775b0,
+                mid_getMeanElementRate_5dbca2d049b16b82,
+                mid_getParametersDrivers_2afa36052df4765d,
+                mid_getProvider_137abdb234636c0e,
+                mid_initializeShortPeriodTerms_cd6a8183d9477030,
+                mid_initializeShortPeriodTerms_c7d75d32fd67f743,
+                mid_registerAttitudeProvider_3cff7c75ea06698c,
+                mid_updateShortPeriodTerms_120865f9c5cc3bda,
+                mid_updateShortPeriodTerms_a9748e634dd1c969,
                 max_mid
               };
 

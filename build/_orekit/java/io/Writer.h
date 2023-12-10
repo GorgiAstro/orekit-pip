@@ -25,17 +25,17 @@ namespace java {
     class Writer : public ::java::lang::Object {
      public:
       enum {
-        mid_append_450d34df563509c8,
-        mid_append_5e0975345e21e35e,
-        mid_append_8309bf12b15805c4,
-        mid_close_7ae3461a92a43152,
-        mid_flush_7ae3461a92a43152,
-        mid_nullWriter_f79c221da116968d,
-        mid_write_819ed274952f967e,
-        mid_write_e939c6558ae8d313,
-        mid_write_0a2a1ac2721c0336,
-        mid_write_2df38be22737223f,
-        mid_write_10ca79ad48bfee14,
+        mid_append_eb0d0a46d5f171c4,
+        mid_append_40d8b2381ff5cb27,
+        mid_append_f781e8360c490bf8,
+        mid_close_0fa09c18fee449d5,
+        mid_flush_0fa09c18fee449d5,
+        mid_nullWriter_4d6b86ab781296cb,
+        mid_write_3534e8e092c162a5,
+        mid_write_d0bc48d5b00dc40c,
+        mid_write_99803b0791f320ff,
+        mid_write_44aecef33af91018,
+        mid_write_04eb5531e9227c93,
         max_mid
       };
 

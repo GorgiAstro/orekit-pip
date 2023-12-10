@@ -7,11 +7,11 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class ObservableSatellite;
         namespace gnss {
           class Phase;
         }
         class GroundStation;
+        class ObservableSatellite;
       }
     }
     namespace utils {
@@ -39,11 +39,11 @@ namespace org {
           class Phase : public ::org::orekit::estimation::measurements::GroundReceiverMeasurement {
            public:
             enum {
-              mid_init$_a2a546e8c3408b03,
-              mid_getAmbiguityDriver_ac0e5f8f2fa86f4f,
-              mid_getWavelength_456d9a2f64d6b28d,
-              mid_theoreticalEvaluationWithoutDerivatives_c188a3b50efa39a5,
-              mid_theoreticalEvaluation_9d5a7270ffb14a9e,
+              mid_init$_ddde37795a589131,
+              mid_getAmbiguityDriver_a25ed222178aa59f,
+              mid_getWavelength_dff5885c2c873297,
+              mid_theoreticalEvaluationWithoutDerivatives_e32883476b3d9b22,
+              mid_theoreticalEvaluation_27ef5cc84ad0852b,
               max_mid
             };
 
