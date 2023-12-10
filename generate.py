@@ -1,15 +1,30 @@
 import os
 import jcc
 from jcc import cpp
+import git
+import tempfile
+import shutil
 
-orekit_version = '12.0'
-jar_folder = '/media/ssd/git/orekit_python_artifacts'
-hipparchus_version = '3.0'
-rugged_version = '3.0'
-py_src_dir = '/media/ssd/git/orekit_python_artifacts' # pure Python additions, for instance pyhelpers.py
+orekit_py_artifacts_git_url = 'https://github.com/petrushy/orekit_python_artifacts.git'
+
+def clone_orekit_py_artifacts(version):
+    """
+    :param version: list of size 4, for instance [11, 3, 3, 1] for Orekit version 11.3.3.1
+    """
+    tag = f"v{version[0]}_{version[1]}_{version[2]}_{version[3]}"
+    temp_dir = tempfile.TemporaryDirectory()
+    print(f"Cloning git repo {orekit_py_artifacts_git_url}, tag {tag} into temporary directory {temp_dir.name}")
+    repo = git.Repo.clone_from(orekit_py_artifacts_git_url,
+                               temp_dir.name,
+                               branch=tag)
+    print("Successfully cloned git repository")
+    return temp_dir
+
+
+orekit_version = [12, 0, 0, 0]  # for instance [11, 3, 3, 1] for Orekit version 11.3.3.1
+
 n_cpp_files_split = '99' # Number (in string representation) of C++ files to split. Alternatively 'separate' will create a C++ file for each Java class, can be a lot.
 
-hipparchus_modules = ['core', 'fitting', 'filtering', 'geometry', 'ode', 'optim', 'stat']
 packages = ['java.io', 'java.util', 'java.text', 'org.orekit', 'org.orekit.rugged']
 vanilla_java_classes = [
     'java.io.BufferedReader',
@@ -53,20 +68,25 @@ classpath = []
 classes_exclude = ['org.hipparchus.util.RosenNumberPartitionIterator', 'org.orekit.compiler.plugin.DefaultDataContextPlugin']
 
 if __name__ == "__main__":
+    # First remove existing build folder to start from scratch
+    shutil.rmtree("build")
+    print("Deleted old ./build folder")
+
+    orekit_py_artifacts_tmp_dir = clone_orekit_py_artifacts(orekit_version)
+    jar_folder = orekit_py_artifacts_tmp_dir.name
+    py_src_dir = orekit_py_artifacts_tmp_dir.name
+
     args = [
         jcc.__file__,
         '--use_full_names',
         '--python', 'orekit',
-        '--version', orekit_version,
+        '--version', f"{orekit_version[0]}.{orekit_version[1]}.{orekit_version[2]}",
         '--wheel'
     ]
 
-    args.extend(['--jar', os.path.join(jar_folder, f'orekit-{orekit_version}.jar')])
-
-    for hipparchus_module in hipparchus_modules:
-        args.extend(['--jar', os.path.join(jar_folder, f'hipparchus-{hipparchus_module}-{hipparchus_version}.jar')])
-
-    args.extend(['--jar', os.path.join(jar_folder, f'rugged-{rugged_version}.jar')])
+    for file in os.listdir(orekit_py_artifacts_tmp_dir.name):
+        if file.endswith('.jar'):
+            args.extend(['--jar', os.path.join(orekit_py_artifacts_tmp_dir.name, file)])
 
     for package in packages:
         args.extend(['--package', package])
@@ -94,3 +114,5 @@ if __name__ == "__main__":
     ])
 
     cpp.jcc(args)
+
+    orekit_py_artifacts_tmp_dir.cleanup()
