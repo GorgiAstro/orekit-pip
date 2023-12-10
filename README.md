@@ -9,7 +9,13 @@ This is an attempt at providing the [Orekit Python Wrapper](https://gitlab.oreki
 
 ## Installation
 
-Local installation: `pip install .`
+Local installation: `pip install .`. This can take a couple of minutes because it single-threadingly compiles the Orekit C++ bindings.
+
+## Code generation
+
+This doesn't need to be done by the normal user, it is mostly done by the package publishers when a new version of Orekit is available for example.
+
+This calls `jcc` to generate Orekit's C++ bindings and the `setup.py` script which configures the compilation of the Orekit C++ extension.
 
 ## Limitations
 
