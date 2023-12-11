@@ -3,6 +3,12 @@
 
 #include "org/orekit/propagation/analytical/gnss/data/AbstractNavigationMessage.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -14,12 +20,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,18 +34,18 @@ namespace org {
             class LegacyNavigationMessage : public ::org::orekit::propagation::analytical::gnss::data::AbstractNavigationMessage {
              public:
               enum {
-                mid_getFitInterval_570ce0828f81a2c1,
-                mid_getIODC_570ce0828f81a2c1,
-                mid_getIODE_570ce0828f81a2c1,
-                mid_getSvAccuracy_dff5885c2c873297,
-                mid_getSvHealth_570ce0828f81a2c1,
-                mid_getTGD_dff5885c2c873297,
-                mid_setFitInterval_99803b0791f320ff,
-                mid_setIODC_99803b0791f320ff,
-                mid_setIODE_17db3a65980d3441,
-                mid_setSvAccuracy_17db3a65980d3441,
-                mid_setSvHealth_99803b0791f320ff,
-                mid_setTGD_17db3a65980d3441,
+                mid_getFitInterval_412668abc8d889e9,
+                mid_getIODC_412668abc8d889e9,
+                mid_getIODE_412668abc8d889e9,
+                mid_getSvAccuracy_557b8123390d8d0c,
+                mid_getSvHealth_412668abc8d889e9,
+                mid_getTGD_557b8123390d8d0c,
+                mid_setFitInterval_a3da1a935cb37f7b,
+                mid_setIODC_a3da1a935cb37f7b,
+                mid_setIODE_10f281d777284cea,
+                mid_setSvAccuracy_10f281d777284cea,
+                mid_setSvHealth_a3da1a935cb37f7b,
+                mid_setTGD_10f281d777284cea,
                 max_mid
               };
 

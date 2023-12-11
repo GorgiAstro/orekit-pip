@@ -3,13 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace complex {
-      class Complex;
-    }
-  }
-}
 namespace java {
   namespace util {
     class Comparator;
@@ -21,6 +14,13 @@ namespace java {
     class Serializable;
   }
 }
+namespace org {
+  namespace hipparchus {
+    namespace complex {
+      class Complex;
+    }
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -30,8 +30,8 @@ namespace org {
       class ComplexComparator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_compare_1d8244b3a91ad75b,
+          mid_init$_0640e6acf969ed28,
+          mid_compare_cc2703681edf5a92,
           max_mid
         };
 

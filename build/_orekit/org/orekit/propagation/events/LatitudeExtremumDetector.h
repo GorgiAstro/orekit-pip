@@ -32,11 +32,11 @@ namespace org {
         class LatitudeExtremumDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_7c502fc601af6f77,
-            mid_init$_b67b42078e2e878c,
-            mid_g_432f3d328c15ec82,
-            mid_getBody_6f78da94fd048d9d,
-            mid_create_4905953214205b97,
+            mid_init$_fee9aa8bf77f755f,
+            mid_init$_9c6b45b00f88cd51,
+            mid_g_1bbf81d80c47ecdd,
+            mid_getBody_f166528db337c659,
+            mid_create_a5ae8afde810b907,
             max_mid
           };
 

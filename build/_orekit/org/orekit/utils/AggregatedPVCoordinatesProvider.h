@@ -41,12 +41,12 @@ namespace org {
       class AggregatedPVCoordinatesProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_c0f77b4878f385fe,
-          mid_init$_eaf1e6dc246e4e06,
-          mid_getMaxDate_85703d13e302437e,
-          mid_getMinDate_85703d13e302437e,
-          mid_getPVCoordinates_cfeec55f7c63ec64,
-          mid_getPosition_41a826780212dfea,
+          mid_init$_81c77edb92f240ae,
+          mid_init$_44690fe6b1395199,
+          mid_getMaxDate_7a97f7e149e79afb,
+          mid_getMinDate_7a97f7e149e79afb,
+          mid_getPVCoordinates_17742a9a6655bdb1,
+          mid_getPosition_7ca40559664606d9,
           max_mid
         };
 

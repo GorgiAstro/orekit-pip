@@ -31,7 +31,7 @@ namespace org {
             class ParseToken$VectorConsumer : public ::java::lang::Object {
              public:
               enum {
-                mid_accept_029ff0cbf68ea054,
+                mid_accept_2810d2bec90e7b1c,
                 max_mid
               };
 

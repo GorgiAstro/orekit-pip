@@ -4,11 +4,11 @@
 #include "org/orekit/files/ccsds/utils/generation/AbstractGenerator.h"
 
 namespace java {
-  namespace util {
-    class List;
-  }
   namespace io {
     class IOException;
+  }
+  namespace util {
+    class List;
   }
   namespace lang {
     class Appendable;
@@ -44,16 +44,16 @@ namespace org {
             class XmlGenerator : public ::org::orekit::files::ccsds::utils::generation::AbstractGenerator {
              public:
               enum {
-                mid_init$_d73bd3f88c49d68d,
-                mid_endMessage_d0bc48d5b00dc40c,
-                mid_enterSection_d0bc48d5b00dc40c,
-                mid_exitSection_11b109bd155ca898,
-                mid_getFormat_66298c6188053be6,
-                mid_startMessage_d68f2e10a4896937,
-                mid_writeComments_de3e021e7266b71e,
-                mid_writeEntry_ddc5f91684d983c2,
-                mid_writeOneAttributeElement_984b533a39fac42d,
-                mid_writeTwoAttributesElement_0be9bb25c5e386d0,
+                mid_init$_eb20efd9b3374001,
+                mid_endMessage_f5ffdf29129ef90a,
+                mid_enterSection_f5ffdf29129ef90a,
+                mid_exitSection_3cffd47377eca18a,
+                mid_getFormat_c3a4c5f37e67a25e,
+                mid_startMessage_9547058464ed819e,
+                mid_writeComments_4ccaedadb068bdeb,
+                mid_writeEntry_a717407bcf2f477f,
+                mid_writeOneAttributeElement_31dd4a79e86cd8aa,
+                mid_writeTwoAttributesElement_7ef3cb05fa691170,
                 max_mid
               };
 

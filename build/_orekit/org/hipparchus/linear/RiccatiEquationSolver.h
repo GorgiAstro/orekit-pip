@@ -24,8 +24,8 @@ namespace org {
       class RiccatiEquationSolver : public ::java::lang::Object {
        public:
         enum {
-          mid_getK_688b496048ff947b,
-          mid_getP_688b496048ff947b,
+          mid_getK_70a207fcbc031df2,
+          mid_getP_70a207fcbc031df2,
           max_mid
         };
 

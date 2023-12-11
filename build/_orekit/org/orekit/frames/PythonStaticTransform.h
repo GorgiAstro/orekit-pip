@@ -3,13 +3,19 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Rotation;
           class Vector3D;
+          class Rotation;
         }
       }
     }
@@ -23,12 +29,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -38,15 +38,15 @@ namespace org {
       class PythonStaticTransform : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_finalize_0fa09c18fee449d5,
-          mid_getDate_85703d13e302437e,
-          mid_getInverse_892837e768e813bc,
-          mid_getRotation_de86c7efc42eac14,
-          mid_getTranslation_d52645e0d4c07563,
-          mid_pythonDecRef_0fa09c18fee449d5,
-          mid_pythonExtension_492808a339bfa35f,
-          mid_pythonExtension_3a8e7649f31fdb20,
+          mid_init$_0640e6acf969ed28,
+          mid_finalize_0640e6acf969ed28,
+          mid_getDate_7a97f7e149e79afb,
+          mid_getInverse_f798b00aed778de3,
+          mid_getRotation_1e0dc1a6788897b9,
+          mid_getTranslation_f88961cca75a2c0a,
+          mid_pythonDecRef_0640e6acf969ed28,
+          mid_pythonExtension_9e26256fb0d384a2,
+          mid_pythonExtension_3cd6a6b354c6aa22,
           max_mid
         };
 

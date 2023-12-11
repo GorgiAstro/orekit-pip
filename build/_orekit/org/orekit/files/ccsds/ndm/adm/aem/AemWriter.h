@@ -5,27 +5,27 @@
 
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataContext;
-    }
-    namespace utils {
-      class IERSConventions;
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
           namespace adm {
             namespace aem {
-              class AemSegment;
               class Aem;
+              class AemSegment;
             }
             class AdmHeader;
           }
         }
       }
     }
+    namespace utils {
+      class IERSConventions;
+    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace data {
+      class DataContext;
     }
   }
 }
@@ -47,8 +47,8 @@ namespace org {
               class AemWriter : public ::org::orekit::files::ccsds::utils::generation::AbstractMessageWriter {
                public:
                 enum {
-                  mid_init$_6f30abb95e05bcdd,
-                  mid_writeSegmentContent_8059a0fd8d00a118,
+                  mid_init$_170ee021ab23bf06,
+                  mid_writeSegmentContent_ef28fc5796839007,
                   max_mid
                 };
 

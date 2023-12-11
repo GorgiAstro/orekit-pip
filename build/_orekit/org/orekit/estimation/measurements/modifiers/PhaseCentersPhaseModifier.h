@@ -13,22 +13,22 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        namespace gnss {
-          class Phase;
-        }
-        class EstimatedMeasurementBase;
-        class EstimationModifier;
-      }
+    namespace utils {
+      class ParameterDriver;
     }
     namespace gnss {
       namespace antenna {
         class FrequencyPattern;
       }
     }
-    namespace utils {
-      class ParameterDriver;
+    namespace estimation {
+      namespace measurements {
+        class EstimatedMeasurementBase;
+        class EstimationModifier;
+        namespace gnss {
+          class Phase;
+        }
+      }
     }
   }
 }
@@ -43,9 +43,9 @@ namespace org {
           class PhaseCentersPhaseModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a2ed374ecf8bf34a,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_modifyWithoutDerivatives_d1815d998cba71e9,
+              mid_init$_59cfeb08e5a13ccd,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_modifyWithoutDerivatives_e471490df8741b73,
               max_mid
             };
 

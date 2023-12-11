@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -19,6 +14,11 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -33,8 +33,8 @@ namespace org {
             class GlonassUserRangeAccuracy : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_99803b0791f320ff,
-                mid_getAccuracy_dff5885c2c873297,
+                mid_init$_a3da1a935cb37f7b,
+                mid_getAccuracy_557b8123390d8d0c,
                 max_mid
               };
 

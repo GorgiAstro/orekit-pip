@@ -4,15 +4,15 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace data {
+      class SeriesTerm;
       class BodiesElements;
       class FieldBodiesElements;
-      class SeriesTerm;
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -29,19 +29,19 @@ namespace org {
       class SeriesTerm : public ::java::lang::Object {
        public:
         enum {
-          mid_add_d472661d1e6c4e58,
-          mid_buildTerm_bd640c15e6a2c88d,
-          mid_derivative_82ff8289084ebe61,
-          mid_derivative_87b8f1de0a07b746,
-          mid_getCosCoeff_dbbe5f05149dbf73,
-          mid_getDegree_2235cd056f5a882b,
-          mid_getSinCoeff_dbbe5f05149dbf73,
-          mid_value_82ff8289084ebe61,
-          mid_value_87b8f1de0a07b746,
-          mid_argumentDerivative_2748c478a8009c37,
-          mid_argumentDerivative_bea6276a59f3cdf6,
-          mid_argument_2748c478a8009c37,
-          mid_argument_bea6276a59f3cdf6,
+          mid_add_8f08153945634de4,
+          mid_buildTerm_9e48c9dd795854c8,
+          mid_derivative_c933bd8b3b01b6fa,
+          mid_derivative_19d2f680a2dd5e54,
+          mid_getCosCoeff_21b81d54c06b64b0,
+          mid_getDegree_0092017e99012694,
+          mid_getSinCoeff_21b81d54c06b64b0,
+          mid_value_c933bd8b3b01b6fa,
+          mid_value_19d2f680a2dd5e54,
+          mid_argumentDerivative_3e0ce57516456e43,
+          mid_argumentDerivative_645226ccf45fca25,
+          mid_argument_3e0ce57516456e43,
+          mid_argument_645226ccf45fca25,
           max_mid
         };
 

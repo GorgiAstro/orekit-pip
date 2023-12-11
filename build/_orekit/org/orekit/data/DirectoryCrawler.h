@@ -3,19 +3,19 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace data {
-      class DataProvider;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class Class;
   }
   namespace io {
     class File;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace data {
+      class DataProvider;
+    }
   }
 }
 template<class T> class JArray;
@@ -27,7 +27,7 @@ namespace org {
       class DirectoryCrawler : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0613af62f2ba5dba,
+          mid_init$_5d6bcca91ae998ee,
           max_mid
         };
 

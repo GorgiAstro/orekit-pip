@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -13,11 +12,9 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
   namespace orekit {
-    namespace attitudes {
-      class AttitudeProvider;
-    }
     namespace propagation {
       class FieldSpacecraftState;
       namespace events {
@@ -31,6 +28,9 @@ namespace org {
       namespace maneuvers {
         class Control3DVectorCostType;
       }
+    }
+    namespace attitudes {
+      class AttitudeProvider;
     }
   }
 }
@@ -49,17 +49,17 @@ namespace org {
         class FieldImpulseManeuver : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_9fd07713d88b584d,
-            mid_init$_2e00d63537056507,
-            mid_init$_d7504c83b8d83efa,
-            mid_g_41a008afe53da855,
-            mid_getAttitudeOverride_a904f3d015a354a0,
-            mid_getControl3DVectorCostType_67739b20d9566a8c,
-            mid_getDeltaVSat_716f50c86ffc8da7,
-            mid_getIsp_eba8e72a22c984ac,
-            mid_getTrigger_4fe06ecc019ea51d,
-            mid_init_8e8de2be1664674a,
-            mid_create_fb23fbb396cac7fb,
+            mid_init$_25d58fd2710268d2,
+            mid_init$_baf08257bec4be06,
+            mid_init$_51dd9d9720025d56,
+            mid_g_de1c2d709eb2829c,
+            mid_getAttitudeOverride_6df6b78ab9377151,
+            mid_getControl3DVectorCostType_601f05e5d0c82ad9,
+            mid_getDeltaVSat_2d64addf4c3391d9,
+            mid_getIsp_613c8f46c659f636,
+            mid_getTrigger_07d9256595c42b86,
+            mid_init_811e49dad2467b67,
+            mid_create_0258ce74068cec70,
             max_mid
           };
 

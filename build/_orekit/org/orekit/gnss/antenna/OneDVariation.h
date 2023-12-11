@@ -27,8 +27,8 @@ namespace org {
         class OneDVariation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7e28ac3886d489af,
-            mid_value_86ffecc08a63eff0,
+            mid_init$_9604d7e460d56161,
+            mid_value_2268d18be49a6087,
             max_mid
           };
 

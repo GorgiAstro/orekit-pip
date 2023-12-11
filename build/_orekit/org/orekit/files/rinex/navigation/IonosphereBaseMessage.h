@@ -30,9 +30,9 @@ namespace org {
           class IonosphereBaseMessage : public ::org::orekit::files::rinex::navigation::TypeSvMessage {
            public:
             enum {
-              mid_init$_a82ff7a18fa6993f,
-              mid_getTransmitTime_85703d13e302437e,
-              mid_setTransmitTime_600a2a61652bc473,
+              mid_init$_e1b2f7b885c85083,
+              mid_getTransmitTime_7a97f7e149e79afb,
+              mid_setTransmitTime_20affcbd28542333,
               max_mid
             };
 

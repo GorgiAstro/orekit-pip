@@ -3,23 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace orbits {
-      class PositionAngleType;
-      class OrbitType;
-    }
-    namespace propagation {
-      class MatricesHarvester;
-      class SpacecraftState;
-    }
-  }
-  namespace hipparchus {
-    namespace linear {
-      class RealMatrix;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -28,6 +11,23 @@ namespace java {
     class Throwable;
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      class MatricesHarvester;
+      class SpacecraftState;
+    }
+    namespace orbits {
+      class OrbitType;
+      class PositionAngleType;
+    }
+  }
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
+    }
   }
 }
 template<class T> class JArray;
@@ -39,17 +39,17 @@ namespace org {
       class PythonMatricesHarvester : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_finalize_0fa09c18fee449d5,
-          mid_getJacobiansColumnsNames_2afa36052df4765d,
-          mid_getOrbitType_e29360d311dc0e20,
-          mid_getParametersJacobian_9483b2ac438718ce,
-          mid_getPositionAngleType_8f17e83e5a86217c,
-          mid_getStateTransitionMatrix_9483b2ac438718ce,
-          mid_pythonDecRef_0fa09c18fee449d5,
-          mid_pythonExtension_492808a339bfa35f,
-          mid_pythonExtension_3a8e7649f31fdb20,
-          mid_setReferenceState_0ee5c56004643a2e,
+          mid_init$_0640e6acf969ed28,
+          mid_finalize_0640e6acf969ed28,
+          mid_getJacobiansColumnsNames_0d9551367f7ecdef,
+          mid_getOrbitType_2cea2a2cb3e02091,
+          mid_getParametersJacobian_fc9cdfa83c55d6b2,
+          mid_getPositionAngleType_f4984aee71df4c19,
+          mid_getStateTransitionMatrix_fc9cdfa83c55d6b2,
+          mid_pythonDecRef_0640e6acf969ed28,
+          mid_pythonExtension_9e26256fb0d384a2,
+          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_setReferenceState_8655761ebf04b503,
           max_mid
         };
 

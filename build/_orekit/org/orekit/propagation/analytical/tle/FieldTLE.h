@@ -4,32 +4,32 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-    class Field;
-  }
   namespace orekit {
-    namespace utils {
-      class ParameterDriversProvider;
-      class ParameterDriver;
-    }
     namespace propagation {
-      class FieldSpacecraftState;
       namespace analytical {
         namespace tle {
+          class FieldTLE;
+          class TLE;
           namespace generation {
             class TleGenerationAlgorithm;
           }
-          class FieldTLE;
-          class TLE;
         }
       }
+      class FieldSpacecraftState;
     }
     namespace time {
-      class FieldTimeStamped;
       class FieldAbsoluteDate;
+      class FieldTimeStamped;
       class TimeScale;
     }
+    namespace utils {
+      class ParameterDriver;
+      class ParameterDriversProvider;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
+    class Field;
   }
 }
 namespace java {
@@ -55,37 +55,37 @@ namespace org {
           class FieldTLE : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_964fa3751c176051,
-              mid_init$_f6ecc8aad0bdcb24,
-              mid_init$_5a5a5ec4c232c23e,
-              mid_init$_9047e07f6401a189,
-              mid_equals_65c7d273e80d497a,
-              mid_getBStar_dff5885c2c873297,
-              mid_getClassification_7818f5b58320cd1f,
-              mid_getDate_51da00d5b8a3b5df,
-              mid_getE_eba8e72a22c984ac,
-              mid_getElementNumber_570ce0828f81a2c1,
-              mid_getEphemerisType_570ce0828f81a2c1,
-              mid_getI_eba8e72a22c984ac,
-              mid_getLaunchNumber_570ce0828f81a2c1,
-              mid_getLaunchPiece_11b109bd155ca898,
-              mid_getLaunchYear_570ce0828f81a2c1,
-              mid_getLine1_11b109bd155ca898,
-              mid_getLine2_11b109bd155ca898,
-              mid_getMeanAnomaly_eba8e72a22c984ac,
-              mid_getMeanMotion_eba8e72a22c984ac,
-              mid_getMeanMotionFirstDerivative_eba8e72a22c984ac,
-              mid_getMeanMotionSecondDerivative_eba8e72a22c984ac,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_getPerigeeArgument_eba8e72a22c984ac,
-              mid_getRaan_eba8e72a22c984ac,
-              mid_getRevolutionNumberAtEpoch_570ce0828f81a2c1,
-              mid_getSatelliteNumber_570ce0828f81a2c1,
-              mid_hashCode_570ce0828f81a2c1,
-              mid_isFormatOK_9365555b1308b94c,
-              mid_stateToTLE_1e78a1437043d7f8,
-              mid_toString_11b109bd155ca898,
-              mid_toTLE_e993eceec98c738b,
+              mid_init$_a2c7449b381f2df3,
+              mid_init$_7828a34495b14e73,
+              mid_init$_b950babc90b9c7ed,
+              mid_init$_6e630f0bbf68a980,
+              mid_equals_221e8e85cb385209,
+              mid_getBStar_557b8123390d8d0c,
+              mid_getClassification_d156d1ce330f6993,
+              mid_getDate_f1fe4daf77c66560,
+              mid_getE_613c8f46c659f636,
+              mid_getElementNumber_412668abc8d889e9,
+              mid_getEphemerisType_412668abc8d889e9,
+              mid_getI_613c8f46c659f636,
+              mid_getLaunchNumber_412668abc8d889e9,
+              mid_getLaunchPiece_3cffd47377eca18a,
+              mid_getLaunchYear_412668abc8d889e9,
+              mid_getLine1_3cffd47377eca18a,
+              mid_getLine2_3cffd47377eca18a,
+              mid_getMeanAnomaly_613c8f46c659f636,
+              mid_getMeanMotion_613c8f46c659f636,
+              mid_getMeanMotionFirstDerivative_613c8f46c659f636,
+              mid_getMeanMotionSecondDerivative_613c8f46c659f636,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_getPerigeeArgument_613c8f46c659f636,
+              mid_getRaan_613c8f46c659f636,
+              mid_getRevolutionNumberAtEpoch_412668abc8d889e9,
+              mid_getSatelliteNumber_412668abc8d889e9,
+              mid_hashCode_412668abc8d889e9,
+              mid_isFormatOK_64c9e5626fbef1d6,
+              mid_stateToTLE_18e49a74c9d4ab3a,
+              mid_toString_3cffd47377eca18a,
+              mid_toTLE_67f978062a0fd0e7,
               max_mid
             };
 

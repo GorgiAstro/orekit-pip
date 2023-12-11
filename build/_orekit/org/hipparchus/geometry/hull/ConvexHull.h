@@ -5,14 +5,14 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
     namespace geometry {
+      class Point;
       namespace partitioning {
         class Region;
       }
-      class Point;
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
     }
   }
 }
@@ -31,8 +31,8 @@ namespace org {
         class ConvexHull : public ::java::io::Serializable {
          public:
           enum {
-            mid_createRegion_b72f8ac992e26582,
-            mid_getVertices_55a29d8e9344cdba,
+            mid_createRegion_fd006079784937f2,
+            mid_getVertices_029301c85132187e,
             max_mid
           };
 

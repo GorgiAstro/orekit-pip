@@ -20,7 +20,7 @@ namespace org {
             class ParseToken$IndexedDoubleConsumer : public ::java::lang::Object {
              public:
               enum {
-                mid_accept_bb79ca80d85d0a66,
+                mid_accept_89aad365fb0ed8da,
                 max_mid
               };
 

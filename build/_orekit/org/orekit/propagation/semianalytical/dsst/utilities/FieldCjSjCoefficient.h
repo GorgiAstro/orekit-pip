@@ -3,15 +3,15 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
     class Field;
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,13 +26,13 @@ namespace org {
             class FieldCjSjCoefficient : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_c8b8af07d18fac54,
-                mid_getCj_93058f0552012043,
-                mid_getDcjDh_93058f0552012043,
-                mid_getDcjDk_93058f0552012043,
-                mid_getDsjDh_93058f0552012043,
-                mid_getDsjDk_93058f0552012043,
-                mid_getSj_93058f0552012043,
+                mid_init$_5514994c3b90e687,
+                mid_getCj_8b3a1c735adfa4bc,
+                mid_getDcjDh_8b3a1c735adfa4bc,
+                mid_getDcjDk_8b3a1c735adfa4bc,
+                mid_getDsjDh_8b3a1c735adfa4bc,
+                mid_getDsjDk_8b3a1c735adfa4bc,
+                mid_getSj_8b3a1c735adfa4bc,
                 max_mid
               };
 

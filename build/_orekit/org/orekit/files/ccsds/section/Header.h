@@ -27,18 +27,18 @@ namespace org {
           class Header : public ::org::orekit::files::ccsds::section::CommentsContainer {
            public:
             enum {
-              mid_init$_8f2e782d5278b131,
-              mid_getClassification_11b109bd155ca898,
-              mid_getCreationDate_85703d13e302437e,
-              mid_getFormatVersion_dff5885c2c873297,
-              mid_getMessageId_11b109bd155ca898,
-              mid_getOriginator_11b109bd155ca898,
-              mid_setClassification_d0bc48d5b00dc40c,
-              mid_setCreationDate_600a2a61652bc473,
-              mid_setFormatVersion_17db3a65980d3441,
-              mid_setMessageId_d0bc48d5b00dc40c,
-              mid_setOriginator_d0bc48d5b00dc40c,
-              mid_validate_17db3a65980d3441,
+              mid_init$_ab23f4ae0fb33968,
+              mid_getClassification_3cffd47377eca18a,
+              mid_getCreationDate_7a97f7e149e79afb,
+              mid_getFormatVersion_557b8123390d8d0c,
+              mid_getMessageId_3cffd47377eca18a,
+              mid_getOriginator_3cffd47377eca18a,
+              mid_setClassification_f5ffdf29129ef90a,
+              mid_setCreationDate_20affcbd28542333,
+              mid_setFormatVersion_10f281d777284cea,
+              mid_setMessageId_f5ffdf29129ef90a,
+              mid_setOriginator_f5ffdf29129ef90a,
+              mid_validate_10f281d777284cea,
               max_mid
             };
 

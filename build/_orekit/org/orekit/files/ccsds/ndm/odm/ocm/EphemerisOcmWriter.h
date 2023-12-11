@@ -20,9 +20,9 @@ namespace org {
         namespace ndm {
           namespace odm {
             namespace ocm {
+              class OcmMetadata;
               class TrajectoryStateHistoryMetadata;
               class OcmWriter;
-              class OcmMetadata;
             }
             class OdmHeader;
           }
@@ -32,8 +32,8 @@ namespace org {
         }
       }
       namespace general {
-        class EphemerisFileWriter;
         class EphemerisFile;
+        class EphemerisFileWriter;
       }
     }
   }
@@ -51,8 +51,8 @@ namespace org {
               class EphemerisOcmWriter : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_0eb4682c434bb56b,
-                  mid_write_2fe5901b7cb5a492,
+                  mid_init$_0561a19387a0a30f,
+                  mid_write_0fa910eb9c2e844e,
                   max_mid
                 };
 

@@ -24,20 +24,20 @@ namespace org {
       class ForwardingRandomGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_nextBoolean_b108b35ef48e27bd,
-          mid_nextBytes_20012b3010a39c05,
-          mid_nextBytes_d7af9aedcdd3845b,
-          mid_nextDouble_dff5885c2c873297,
-          mid_nextFloat_5adccb493ada08e8,
-          mid_nextGaussian_dff5885c2c873297,
-          mid_nextInt_570ce0828f81a2c1,
-          mid_nextInt_2235cd056f5a882b,
-          mid_nextLong_492808a339bfa35f,
-          mid_nextLong_02b241598e254a3f,
-          mid_setSeed_d147d7ce001e2d45,
-          mid_setSeed_99803b0791f320ff,
-          mid_setSeed_3a8e7649f31fdb20,
-          mid_delegate_cf774856d74e158c,
+          mid_nextBoolean_89b302893bdbe1f1,
+          mid_nextBytes_d759c70c6670fd89,
+          mid_nextBytes_ac782c7077255dd3,
+          mid_nextDouble_557b8123390d8d0c,
+          mid_nextFloat_04fe014f7609dc26,
+          mid_nextGaussian_557b8123390d8d0c,
+          mid_nextInt_412668abc8d889e9,
+          mid_nextInt_0092017e99012694,
+          mid_nextLong_9e26256fb0d384a2,
+          mid_nextLong_f4ad805a81234b49,
+          mid_setSeed_ec63cb8a58ef5a54,
+          mid_setSeed_a3da1a935cb37f7b,
+          mid_setSeed_3cd6a6b354c6aa22,
+          mid_delegate_94b7a5da78ee3cfb,
           max_mid
         };
 

@@ -31,9 +31,9 @@ namespace org {
         class Logistic : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_e42c7d2e3ddfb2c2,
-            mid_value_dcbc7ce2902fa136,
-            mid_value_73d6acaa8ebd2b7d,
+            mid_init$_3869a36d565fbc00,
+            mid_value_7e960cd6eee376d8,
+            mid_value_3eb2b84dba0ab7d2,
             max_mid
           };
 

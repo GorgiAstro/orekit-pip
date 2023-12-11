@@ -4,6 +4,19 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace orbits {
+      class Orbit;
+    }
+    namespace utils {
+      class ParameterDriversList;
+    }
+    namespace estimation {
+      namespace measurements {
+        class EstimationsProvider;
+      }
+    }
+  }
   namespace hipparchus {
     namespace optim {
       namespace nonlinear {
@@ -13,19 +26,6 @@ namespace org {
           }
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class EstimationsProvider;
-      }
-    }
-    namespace orbits {
-      class Orbit;
-    }
-    namespace utils {
-      class ParameterDriversList;
     }
   }
 }
@@ -44,7 +44,7 @@ namespace org {
         class BatchLSObserver : public ::java::lang::Object {
          public:
           enum {
-            mid_evaluationPerformed_1c346acaad15e94a,
+            mid_evaluationPerformed_4d8a932bdf6a0b43,
             max_mid
           };
 

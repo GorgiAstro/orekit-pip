@@ -3,17 +3,12 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
+      namespace general {
+        class EphemerisFile$EphemerisSegment;
+      }
       namespace ccsds {
         namespace ndm {
           namespace odm {
@@ -24,23 +19,28 @@ namespace org {
           }
         }
       }
-      namespace general {
-        class EphemerisFile$EphemerisSegment;
-      }
     }
     namespace frames {
       class Frame;
     }
-    namespace bodies {
-      class OneAxisEllipsoid;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace bodies {
+      class OneAxisEllipsoid;
     }
     namespace utils {
       class CartesianDerivativesFilter;
       class TimeStampedPVCoordinates;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -56,17 +56,17 @@ namespace org {
               class TrajectoryStateHistory : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_1a4c23d6f5282fcc,
-                  mid_getAvailableDerivatives_16e9a7b5414faf2d,
-                  mid_getBody_000d48aad6c74b0a,
-                  mid_getCoordinates_2afa36052df4765d,
-                  mid_getFrame_b86f9f61d97a7244,
-                  mid_getInterpolationSamples_570ce0828f81a2c1,
-                  mid_getMetadata_1fe510d4fbfbe0c9,
-                  mid_getMu_dff5885c2c873297,
-                  mid_getStart_85703d13e302437e,
-                  mid_getStop_85703d13e302437e,
-                  mid_getTrajectoryStates_2afa36052df4765d,
+                  mid_init$_8aabf9afabae729c,
+                  mid_getAvailableDerivatives_6c4898d6ec0c3837,
+                  mid_getBody_0c55bd1adf955c4c,
+                  mid_getCoordinates_0d9551367f7ecdef,
+                  mid_getFrame_6c9bc0a928c56d4e,
+                  mid_getInterpolationSamples_412668abc8d889e9,
+                  mid_getMetadata_1911a405d6451e8c,
+                  mid_getMu_557b8123390d8d0c,
+                  mid_getStart_7a97f7e149e79afb,
+                  mid_getStop_7a97f7e149e79afb,
+                  mid_getTrajectoryStates_0d9551367f7ecdef,
                   max_mid
                 };
 

@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -14,20 +13,21 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
   namespace orekit {
-    namespace frames {
-      class Frame;
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
     namespace utils {
       class PVCoordinatesProvider;
     }
+    namespace frames {
+      class Frame;
+    }
     namespace bodies {
       class OneAxisEllipsoid;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
     }
     namespace models {
       namespace earth {
@@ -54,18 +54,18 @@ namespace org {
           class HarrisPriester : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_66b28f080fa271fc,
-              mid_init$_ab4c033fbcb06e60,
-              mid_init$_d9fceafc8418f6bc,
-              mid_init$_2cc741a8331eec3e,
-              mid_getDensity_659f5a2caf346aee,
-              mid_getDensity_2814c71be939a588,
-              mid_getDensity_f7d7785230311c38,
-              mid_getDensity_b79d75c1a8af7374,
-              mid_getFrame_b86f9f61d97a7244,
-              mid_getMaxAlt_dff5885c2c873297,
-              mid_getMinAlt_dff5885c2c873297,
-              mid_getTabDensity_0358d8ea02f2cdb1,
+              mid_init$_ba2837ebacb842b1,
+              mid_init$_b65c475fba40cde4,
+              mid_init$_e522dd141110feeb,
+              mid_init$_2852904c6199ecb5,
+              mid_getDensity_b464f829e6652655,
+              mid_getDensity_80610bac160dfa0e,
+              mid_getDensity_57dd506d2d9ba196,
+              mid_getDensity_818999d9e7960fd1,
+              mid_getFrame_6c9bc0a928c56d4e,
+              mid_getMaxAlt_557b8123390d8d0c,
+              mid_getMinAlt_557b8123390d8d0c,
+              mid_getTabDensity_8cf5267aa13a77f3,
               max_mid
             };
 

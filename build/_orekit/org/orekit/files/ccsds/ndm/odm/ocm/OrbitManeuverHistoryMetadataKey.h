@@ -7,19 +7,19 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace ndm {
-          namespace odm {
-            namespace ocm {
-              class OrbitManeuverHistoryMetadata;
-              class OrbitManeuverHistoryMetadataKey;
-            }
-          }
-        }
         namespace utils {
           namespace lexical {
             class ParseToken;
           }
           class ContextBinding;
+        }
+        namespace ndm {
+          namespace odm {
+            namespace ocm {
+              class OrbitManeuverHistoryMetadataKey;
+              class OrbitManeuverHistoryMetadata;
+            }
+          }
         }
       }
     }
@@ -44,9 +44,9 @@ namespace org {
               class OrbitManeuverHistoryMetadataKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_a0d94c23b7cd79a8,
-                  mid_valueOf_1f13a955bddde1e7,
-                  mid_values_ce4b5db5f19ff39e,
+                  mid_process_3517cd74997ab541,
+                  mid_valueOf_ed5ef9b1a8d2aa87,
+                  mid_values_9130ba061cc1fd00,
                   max_mid
                 };
 

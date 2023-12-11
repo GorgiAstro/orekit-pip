@@ -6,11 +6,11 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
-      class ODEStateAndDerivative;
       namespace events {
         class FilterType;
         class ODEEventDetector;
       }
+      class ODEStateAndDerivative;
     }
   }
 }
@@ -29,11 +29,11 @@ namespace org {
         class EventSlopeFilter : public ::org::hipparchus::ode::events::AbstractODEDetector {
          public:
           enum {
-            mid_init$_4a7d9c21a0b13716,
-            mid_g_021b54f582f9e537,
-            mid_getDetector_d3000cf67fb1b23b,
-            mid_init_5aaadc62bce8a394,
-            mid_create_957305d388f058d5,
+            mid_init$_a1c678be6043be8d,
+            mid_g_4a3e96b6f1af9d91,
+            mid_getDetector_4e8fbf7207a2f82a,
+            mid_init_7e69c83de8052a2b,
+            mid_create_7b8a81f21fec5a65,
             max_mid
           };
 

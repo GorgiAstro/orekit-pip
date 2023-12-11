@@ -3,12 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -18,6 +12,12 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,9 +31,9 @@ namespace org {
           class RinexFileType : public ::java::lang::Enum {
            public:
             enum {
-              mid_parseRinexFileType_1ed01b18f4a5c98e,
-              mid_valueOf_1ed01b18f4a5c98e,
-              mid_values_f7aae3d0a36f9141,
+              mid_parseRinexFileType_541df4a60273096d,
+              mid_valueOf_541df4a60273096d,
+              mid_values_564b10a0f5ff5244,
               max_mid
             };
 

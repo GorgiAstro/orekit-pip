@@ -31,8 +31,8 @@ namespace org {
           class RegionCode : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_19801efe937ea9ac,
-              mid_values_a8affb7348886059,
+              mid_valueOf_ed3c9815d91db0fc,
+              mid_values_f458428792f7c497,
               max_mid
             };
 

@@ -5,23 +5,23 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
-    namespace exception {
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
-    }
     namespace ode {
+      namespace events {
+        class FieldODEStepEndHandler;
+        class FieldODEEventDetector;
+      }
       class FieldODEStateAndDerivative;
       namespace sampling {
         class FieldODEStepHandler;
       }
-      class FieldODEState;
-      namespace events {
-        class FieldODEEventDetector;
-        class FieldODEStepEndHandler;
-      }
       class FieldExpandableODE;
+      class FieldODEState;
     }
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
+    }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -42,22 +42,22 @@ namespace org {
       class FieldODEIntegrator : public ::java::lang::Object {
        public:
         enum {
-          mid_addEventDetector_cdac85baa1ddabb0,
-          mid_addStepEndHandler_9ddb55dbce73d9f2,
-          mid_addStepHandler_a947dba38eed8683,
-          mid_clearEventDetectors_0fa09c18fee449d5,
-          mid_clearStepEndHandlers_0fa09c18fee449d5,
-          mid_clearStepHandlers_0fa09c18fee449d5,
-          mid_getCurrentSignedStepsize_eba8e72a22c984ac,
-          mid_getEvaluations_570ce0828f81a2c1,
-          mid_getEventDetectors_2afa36052df4765d,
-          mid_getMaxEvaluations_570ce0828f81a2c1,
-          mid_getName_11b109bd155ca898,
-          mid_getStepEndHandlers_2afa36052df4765d,
-          mid_getStepHandlers_2afa36052df4765d,
-          mid_getStepStart_7194dd3ba3cbc7e8,
-          mid_integrate_d8a6319aba9a7b17,
-          mid_setMaxEvaluations_99803b0791f320ff,
+          mid_addEventDetector_7951513ad7dd1f46,
+          mid_addStepEndHandler_f4eae0b3d6c5e2af,
+          mid_addStepHandler_01ea5dfa7056a45c,
+          mid_clearEventDetectors_0640e6acf969ed28,
+          mid_clearStepEndHandlers_0640e6acf969ed28,
+          mid_clearStepHandlers_0640e6acf969ed28,
+          mid_getCurrentSignedStepsize_613c8f46c659f636,
+          mid_getEvaluations_412668abc8d889e9,
+          mid_getEventDetectors_0d9551367f7ecdef,
+          mid_getMaxEvaluations_412668abc8d889e9,
+          mid_getName_3cffd47377eca18a,
+          mid_getStepEndHandlers_0d9551367f7ecdef,
+          mid_getStepHandlers_0d9551367f7ecdef,
+          mid_getStepStart_45f3e0f3929fa6d9,
+          mid_integrate_dd582e1c9ef253c9,
+          mid_setMaxEvaluations_a3da1a935cb37f7b,
           max_mid
         };
 

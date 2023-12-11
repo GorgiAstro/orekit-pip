@@ -5,14 +5,14 @@
 
 namespace org {
   namespace hipparchus {
-    namespace complex {
-      class FieldComplex;
-      class Complex;
-    }
-    class CalculusFieldElement;
     namespace exception {
       class MathIllegalArgumentException;
     }
+    namespace complex {
+      class Complex;
+      class FieldComplex;
+    }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -29,9 +29,9 @@ namespace org {
       class ComplexUtils : public ::java::lang::Object {
        public:
         enum {
-          mid_convertToComplex_5ed73ec4da606630,
-          mid_polar2Complex_b9232ea66d045a31,
-          mid_polar2Complex_7eb6ea04df70146c,
+          mid_convertToComplex_430c39327f12a793,
+          mid_polar2Complex_00e4ffdd403af412,
+          mid_polar2Complex_e9dc5bca1487ec04,
           max_mid
         };
 

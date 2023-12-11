@@ -27,7 +27,7 @@ namespace org {
       class DatesSelector : public ::java::lang::Object {
        public:
         enum {
-          mid_selectDates_8060cef9318d72e3,
+          mid_selectDates_c5683b8e06424542,
           max_mid
         };
 

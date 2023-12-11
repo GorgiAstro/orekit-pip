@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class Position;
         class ObservableSatellite;
+        class Position;
       }
     }
     namespace time {
@@ -41,14 +41,14 @@ namespace org {
         class Position : public ::org::orekit::estimation::measurements::AbstractMeasurement {
          public:
           enum {
-            mid_init$_b39cf2a9e1d1fc45,
-            mid_init$_984266dc65a298c8,
-            mid_init$_91453090eb6b628d,
-            mid_getCorrelationCoefficientsMatrix_0358d8ea02f2cdb1,
-            mid_getCovarianceMatrix_0358d8ea02f2cdb1,
-            mid_getPosition_d52645e0d4c07563,
-            mid_theoreticalEvaluationWithoutDerivatives_e32883476b3d9b22,
-            mid_theoreticalEvaluation_27ef5cc84ad0852b,
+            mid_init$_cbe337d72e3d86dc,
+            mid_init$_e0193c6ea9f0e7c0,
+            mid_init$_6e1bb37af9cc219a,
+            mid_getCorrelationCoefficientsMatrix_8cf5267aa13a77f3,
+            mid_getCovarianceMatrix_8cf5267aa13a77f3,
+            mid_getPosition_f88961cca75a2c0a,
+            mid_theoreticalEvaluationWithoutDerivatives_71d69ca0f7c280a7,
+            mid_theoreticalEvaluation_eae039ee8c8a4a4d,
             max_mid
           };
 

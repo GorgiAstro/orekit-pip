@@ -3,14 +3,27 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
+namespace java {
+  namespace util {
+    class List;
   }
+  namespace lang {
+    class Class;
+  }
+}
+namespace org {
   namespace orekit {
     namespace bodies {
       class GeodeticPoint;
       class FieldGeodeticPoint;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+      class TimeScale;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
     namespace models {
       namespace earth {
@@ -20,22 +33,9 @@ namespace org {
         }
       }
     }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-      class TimeScale;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
   }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -49,15 +49,15 @@ namespace org {
           class ViennaThreeModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_e1f4b15468f5564a,
-              mid_init$_c9965c971ad94126,
-              mid_computeZenithDelay_61c3b5679b3be385,
-              mid_computeZenithDelay_dcd2d94aeb49e9c9,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_mappingFactors_7ef12dc9276409e6,
-              mid_mappingFactors_6f55c0ac27817ed2,
-              mid_pathDelay_fe3b5c46874ab115,
-              mid_pathDelay_ff7a895eb6f0af2e,
+              mid_init$_ab4840ba016ef1da,
+              mid_init$_efb1066fada7736f,
+              mid_computeZenithDelay_fd96fda04d407b93,
+              mid_computeZenithDelay_006dc50aa6e193b5,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_mappingFactors_e6ce6b157ff98280,
+              mid_mappingFactors_964dc353437b5da2,
+              mid_pathDelay_a4fdd877b349d4a6,
+              mid_pathDelay_129678f244f63094,
               max_mid
             };
 
@@ -80,8 +80,8 @@ namespace org {
             ::java::util::List getParametersDrivers() const;
             JArray< ::org::hipparchus::CalculusFieldElement > mappingFactors(const ::org::hipparchus::CalculusFieldElement &, const ::org::orekit::bodies::FieldGeodeticPoint &, const ::org::orekit::time::FieldAbsoluteDate &) const;
             JArray< jdouble > mappingFactors(jdouble, const ::org::orekit::bodies::GeodeticPoint &, const ::org::orekit::time::AbsoluteDate &) const;
-            jdouble pathDelay(jdouble, const ::org::orekit::bodies::GeodeticPoint &, const JArray< jdouble > &, const ::org::orekit::time::AbsoluteDate &) const;
             ::org::hipparchus::CalculusFieldElement pathDelay(const ::org::hipparchus::CalculusFieldElement &, const ::org::orekit::bodies::FieldGeodeticPoint &, const JArray< ::org::hipparchus::CalculusFieldElement > &, const ::org::orekit::time::FieldAbsoluteDate &) const;
+            jdouble pathDelay(jdouble, const ::org::orekit::bodies::GeodeticPoint &, const JArray< jdouble > &, const ::org::orekit::time::AbsoluteDate &) const;
           };
         }
       }

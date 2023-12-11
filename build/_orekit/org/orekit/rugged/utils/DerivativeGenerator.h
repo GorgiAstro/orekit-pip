@@ -36,10 +36,10 @@ namespace org {
         class DerivativeGenerator : public ::java::lang::Object {
          public:
           enum {
-            mid_constant_d02904082378787e,
-            mid_getField_5b28be2d3632a5dc,
-            mid_getSelected_2afa36052df4765d,
-            mid_variable_ef120ce93b28b8e5,
+            mid_constant_a69b521cb0ac39a4,
+            mid_getField_20f98801541dcec1,
+            mid_getSelected_0d9551367f7ecdef,
+            mid_variable_33a58d2029513955,
             max_mid
           };
 

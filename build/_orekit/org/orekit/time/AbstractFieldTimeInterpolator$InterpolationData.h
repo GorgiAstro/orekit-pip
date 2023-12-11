@@ -3,26 +3,26 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-    class Field;
-  }
-  namespace orekit {
-    namespace utils {
-      class ImmutableFieldTimeStampedCache;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+    }
+    namespace utils {
+      class ImmutableFieldTimeStampedCache;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
+    class Field;
   }
 }
 template<class T> class JArray;
@@ -34,13 +34,13 @@ namespace org {
       class AbstractFieldTimeInterpolator$InterpolationData : public ::java::lang::Object {
        public:
         enum {
-          mid_getCachedSamples_821d9d6a73dea7a9,
-          mid_getField_5b28be2d3632a5dc,
-          mid_getInterpolationDate_51da00d5b8a3b5df,
-          mid_getNeighborList_2afa36052df4765d,
-          mid_getOne_eba8e72a22c984ac,
-          mid_getZero_eba8e72a22c984ac,
-          mid_getCentralDate_c75237029429ec51,
+          mid_getCachedSamples_79d13eb0d6af7c21,
+          mid_getField_20f98801541dcec1,
+          mid_getInterpolationDate_f1fe4daf77c66560,
+          mid_getNeighborList_0d9551367f7ecdef,
+          mid_getOne_613c8f46c659f636,
+          mid_getZero_613c8f46c659f636,
+          mid_getCentralDate_1c21077076c919e2,
           max_mid
         };
 

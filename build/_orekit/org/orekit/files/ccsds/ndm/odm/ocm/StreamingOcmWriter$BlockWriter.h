@@ -5,6 +5,12 @@
 
 namespace org {
   namespace orekit {
+    namespace propagation {
+      namespace sampling {
+        class OrekitFixedStepHandler;
+      }
+      class SpacecraftState;
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -18,12 +24,6 @@ namespace org {
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace propagation {
-      namespace sampling {
-        class OrekitFixedStepHandler;
-      }
-      class SpacecraftState;
     }
   }
 }
@@ -45,10 +45,10 @@ namespace org {
               class StreamingOcmWriter$BlockWriter : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_5e771c0a59ef898d,
-                  mid_finish_0ee5c56004643a2e,
-                  mid_handleStep_0ee5c56004643a2e,
-                  mid_init_eb5e26882ba2d9b9,
+                  mid_init$_8d079afa87086fe2,
+                  mid_finish_8655761ebf04b503,
+                  mid_handleStep_8655761ebf04b503,
+                  mid_init_a423d7aa7c2fe850,
                   max_mid
                 };
 

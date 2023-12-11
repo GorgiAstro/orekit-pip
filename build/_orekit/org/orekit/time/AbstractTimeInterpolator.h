@@ -5,11 +5,11 @@
 
 namespace java {
   namespace util {
+    class List;
+    class Collection;
     namespace stream {
       class Stream;
     }
-    class List;
-    class Collection;
   }
   namespace lang {
     class Class;
@@ -18,9 +18,9 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace time {
+      class TimeInterpolator;
       class AbsoluteDate;
       class TimeStamped;
-      class TimeInterpolator;
     }
   }
 }
@@ -33,16 +33,16 @@ namespace org {
       class AbstractTimeInterpolator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_bb79ca80d85d0a66,
-          mid_checkInterpolatorCompatibilityWithSampleSize_a748072092391184,
-          mid_getExtrapolationThreshold_dff5885c2c873297,
-          mid_getNbInterpolationPoints_570ce0828f81a2c1,
-          mid_getSubInterpolators_2afa36052df4765d,
-          mid_interpolate_706b4b6f6d197b4e,
-          mid_interpolate_ca327566eddabc11,
-          mid_interpolate_db94401e92756319,
-          mid_addOptionalSubInterpolatorIfDefined_cfbf80e0f0ffc468,
-          mid_getTimeParameter_c6a5af2f1a642248,
+          mid_init$_89aad365fb0ed8da,
+          mid_checkInterpolatorCompatibilityWithSampleSize_e37a8011f5ddf655,
+          mid_getExtrapolationThreshold_557b8123390d8d0c,
+          mid_getNbInterpolationPoints_412668abc8d889e9,
+          mid_getSubInterpolators_0d9551367f7ecdef,
+          mid_interpolate_da5f44ff87474809,
+          mid_interpolate_d5b4fcbe51b9e2da,
+          mid_interpolate_db599ec6bbae5863,
+          mid_addOptionalSubInterpolatorIfDefined_84e95070d7e3b525,
+          mid_getTimeParameter_3bd5b6ae6cb80300,
           max_mid
         };
 

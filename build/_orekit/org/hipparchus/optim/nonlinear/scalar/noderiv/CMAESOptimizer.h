@@ -15,19 +15,19 @@ namespace java {
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathIllegalStateException;
       class MathIllegalArgumentException;
+      class MathIllegalStateException;
     }
     namespace random {
       class RandomGenerator;
     }
-    namespace optim {
-      class ConvergenceChecker;
-      class PointValuePair;
-      class OptimizationData;
-    }
     namespace linear {
       class RealMatrix;
+    }
+    namespace optim {
+      class PointValuePair;
+      class OptimizationData;
+      class ConvergenceChecker;
     }
   }
 }
@@ -43,14 +43,14 @@ namespace org {
             class CMAESOptimizer : public ::org::hipparchus::optim::nonlinear::scalar::MultivariateOptimizer {
              public:
               enum {
-                mid_init$_88a40a0d3c6a3df9,
-                mid_getStatisticsDHistory_2afa36052df4765d,
-                mid_getStatisticsFitnessHistory_2afa36052df4765d,
-                mid_getStatisticsMeanHistory_2afa36052df4765d,
-                mid_getStatisticsSigmaHistory_2afa36052df4765d,
-                mid_optimize_d70788483e9a9a2c,
-                mid_parseOptimizationData_3d26e9f3a1d7e833,
-                mid_doOptimize_4ae915e35f441d39,
+                mid_init$_6ad6377e39b87917,
+                mid_getStatisticsDHistory_0d9551367f7ecdef,
+                mid_getStatisticsFitnessHistory_0d9551367f7ecdef,
+                mid_getStatisticsMeanHistory_0d9551367f7ecdef,
+                mid_getStatisticsSigmaHistory_0d9551367f7ecdef,
+                mid_optimize_428d2547a0c45016,
+                mid_doOptimize_adf293b2643f22b0,
+                mid_parseOptimizationData_946a92401917c130,
                 max_mid
               };
 

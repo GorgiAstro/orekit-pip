@@ -5,16 +5,16 @@
 
 namespace org {
   namespace hipparchus {
+    class Field;
     class CalculusFieldElement;
     namespace ode {
       class AbstractFieldIntegrator;
     }
-    class Field;
   }
   namespace orekit {
     namespace orbits {
-      class Orbit;
       class OrbitType;
+      class Orbit;
     }
   }
 }
@@ -33,9 +33,9 @@ namespace org {
         class ThreeEighthesFieldIntegratorBuilder : public ::org::orekit::propagation::conversion::AbstractFixedStepFieldIntegratorBuilder {
          public:
           enum {
-            mid_init$_17db3a65980d3441,
-            mid_init$_072c8635f2164db9,
-            mid_buildIntegrator_048f7039a7622a2b,
+            mid_init$_10f281d777284cea,
+            mid_init$_1ee4bed350fde589,
+            mid_buildIntegrator_3a1ee7ebe4f0e344,
             max_mid
           };
 

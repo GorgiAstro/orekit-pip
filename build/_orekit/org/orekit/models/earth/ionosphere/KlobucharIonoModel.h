@@ -3,21 +3,34 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
+namespace java {
+  namespace util {
+    class List;
   }
+  namespace lang {
+    class Class;
+  }
+}
+namespace org {
   namespace orekit {
-    namespace frames {
-      class TopocentricFrame;
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
     }
     namespace bodies {
       class GeodeticPoint;
       class FieldGeodeticPoint;
     }
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+      class TimeScale;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace frames {
+      class TopocentricFrame;
     }
     namespace models {
       namespace earth {
@@ -26,22 +39,9 @@ namespace org {
         }
       }
     }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-      class TimeScale;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
   }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -55,13 +55,13 @@ namespace org {
           class KlobucharIonoModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_e1f4b15468f5564a,
-              mid_init$_c9965c971ad94126,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_pathDelay_28325ab4dabb069a,
-              mid_pathDelay_bea489d08473aa2e,
-              mid_pathDelay_9d8059e615e4302f,
-              mid_pathDelay_2787d703045bd2bf,
+              mid_init$_ab4840ba016ef1da,
+              mid_init$_efb1066fada7736f,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_pathDelay_8fbdb07bb0b935f0,
+              mid_pathDelay_e09499dc3d690830,
+              mid_pathDelay_0adf42b9a5e45618,
+              mid_pathDelay_5ede7c721db1b6ab,
               max_mid
             };
 

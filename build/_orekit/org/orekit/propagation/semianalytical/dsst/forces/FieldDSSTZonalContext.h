@@ -3,14 +3,14 @@
 
 #include "org/orekit/propagation/semianalytical/dsst/forces/FieldForceModelContext.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -25,26 +25,26 @@ namespace org {
             class FieldDSSTZonalContext : public ::org::orekit::propagation::semianalytical::dsst::forces::FieldForceModelContext {
              public:
               enum {
-                mid_getBB_eba8e72a22c984ac,
-                mid_getBoA_eba8e72a22c984ac,
-                mid_getBoABpo_eba8e72a22c984ac,
-                mid_getCXO2N2A2_eba8e72a22c984ac,
-                mid_getHK_eba8e72a22c984ac,
-                mid_getK2MH2_eba8e72a22c984ac,
-                mid_getK2MH2O2_eba8e72a22c984ac,
-                mid_getM2aoA_eba8e72a22c984ac,
-                mid_getMCo2AB_eba8e72a22c984ac,
-                mid_getMeanMotion_eba8e72a22c984ac,
-                mid_getMuoa_eba8e72a22c984ac,
-                mid_getOON2A2_eba8e72a22c984ac,
-                mid_getOoAB_eba8e72a22c984ac,
-                mid_getRoa_eba8e72a22c984ac,
-                mid_getX_eba8e72a22c984ac,
-                mid_getX2ON2A2XP1_eba8e72a22c984ac,
-                mid_getX3ON2A_eba8e72a22c984ac,
-                mid_getXON2A2_eba8e72a22c984ac,
-                mid_getXX_eba8e72a22c984ac,
-                mid_getXXX_eba8e72a22c984ac,
+                mid_getBB_613c8f46c659f636,
+                mid_getBoA_613c8f46c659f636,
+                mid_getBoABpo_613c8f46c659f636,
+                mid_getCXO2N2A2_613c8f46c659f636,
+                mid_getHK_613c8f46c659f636,
+                mid_getK2MH2_613c8f46c659f636,
+                mid_getK2MH2O2_613c8f46c659f636,
+                mid_getM2aoA_613c8f46c659f636,
+                mid_getMCo2AB_613c8f46c659f636,
+                mid_getMeanMotion_613c8f46c659f636,
+                mid_getMuoa_613c8f46c659f636,
+                mid_getOON2A2_613c8f46c659f636,
+                mid_getOoAB_613c8f46c659f636,
+                mid_getRoa_613c8f46c659f636,
+                mid_getX_613c8f46c659f636,
+                mid_getX2ON2A2XP1_613c8f46c659f636,
+                mid_getX3ON2A_613c8f46c659f636,
+                mid_getXON2A2_613c8f46c659f636,
+                mid_getXX_613c8f46c659f636,
+                mid_getXXX_613c8f46c659f636,
                 max_mid
               };
 

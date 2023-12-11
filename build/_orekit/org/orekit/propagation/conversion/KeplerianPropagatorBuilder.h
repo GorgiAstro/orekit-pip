@@ -5,10 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace orbits {
-      class PositionAngleType;
-      class Orbit;
-    }
     namespace propagation {
       namespace conversion {
         class PropagatorBuilder;
@@ -18,18 +14,22 @@ namespace org {
     }
     namespace estimation {
       namespace leastsquares {
-        class AbstractBatchLSModel;
         class ModelObserver;
+        class AbstractBatchLSModel;
       }
       namespace measurements {
         class ObservedMeasurement;
       }
     }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
     namespace utils {
       class ParameterDriversList;
+    }
+    namespace orbits {
+      class PositionAngleType;
+      class Orbit;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
     }
   }
 }
@@ -52,11 +52,11 @@ namespace org {
         class KeplerianPropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_24dcf7dfbd233a1e,
-            mid_init$_876e40d3b056a533,
-            mid_buildLeastSquaresModel_2eb3122719704f90,
-            mid_buildPropagator_0c183831cad84280,
-            mid_copy_098ffd584acb8c89,
+            mid_init$_e7d991b18d63c54b,
+            mid_init$_e0b795670e5b5275,
+            mid_buildLeastSquaresModel_4fca41eef9d750a6,
+            mid_buildPropagator_5ad9cbd11735eecd,
+            mid_copy_c0974e79ac050d47,
             max_mid
           };
 

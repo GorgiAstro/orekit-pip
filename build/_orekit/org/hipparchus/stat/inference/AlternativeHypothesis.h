@@ -3,12 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace stat {
@@ -16,6 +10,12 @@ namespace org {
         class AlternativeHypothesis;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,8 +28,8 @@ namespace org {
         class AlternativeHypothesis : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_e2d55acad813d3ed,
-            mid_values_0912def2ad2ee561,
+            mid_valueOf_e103b327b4e4b0f7,
+            mid_values_f740c23dd98a238a,
             max_mid
           };
 

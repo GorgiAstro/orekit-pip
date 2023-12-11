@@ -33,12 +33,12 @@ namespace org {
           class FirstMoment : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_clear_0fa09c18fee449d5,
-              mid_copy_3b80ff938c90ebee,
-              mid_getN_492808a339bfa35f,
-              mid_getResult_dff5885c2c873297,
-              mid_increment_17db3a65980d3441,
-              mid_aggregate_a3de77dcfa83aed2,
+              mid_clear_0640e6acf969ed28,
+              mid_copy_9efcb4b822312722,
+              mid_getN_9e26256fb0d384a2,
+              mid_getResult_557b8123390d8d0c,
+              mid_increment_10f281d777284cea,
+              mid_aggregate_4588de4772df8531,
               max_mid
             };
 

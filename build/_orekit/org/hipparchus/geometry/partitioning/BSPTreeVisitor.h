@@ -7,8 +7,8 @@ namespace org {
   namespace hipparchus {
     namespace geometry {
       namespace partitioning {
-        class BSPTreeVisitor$Order;
         class BSPTree;
+        class BSPTreeVisitor$Order;
       }
     }
   }
@@ -28,9 +28,9 @@ namespace org {
         class BSPTreeVisitor : public ::java::lang::Object {
          public:
           enum {
-            mid_visitInternalNode_083ba3410c8af631,
-            mid_visitLeafNode_083ba3410c8af631,
-            mid_visitOrder_c5e9b148bf3d895c,
+            mid_visitInternalNode_5865d893f5a7dd72,
+            mid_visitLeafNode_5865d893f5a7dd72,
+            mid_visitOrder_30238d6180adf358,
             max_mid
           };
 

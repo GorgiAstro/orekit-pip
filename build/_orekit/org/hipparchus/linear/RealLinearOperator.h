@@ -28,11 +28,11 @@ namespace org {
       class RealLinearOperator : public ::java::lang::Object {
        public:
         enum {
-          mid_getColumnDimension_570ce0828f81a2c1,
-          mid_getRowDimension_570ce0828f81a2c1,
-          mid_isTransposable_b108b35ef48e27bd,
-          mid_operate_613347e28dd909cd,
-          mid_operateTranspose_613347e28dd909cd,
+          mid_getColumnDimension_412668abc8d889e9,
+          mid_getRowDimension_412668abc8d889e9,
+          mid_isTransposable_89b302893bdbe1f1,
+          mid_operate_342d5b01463e0dc5,
+          mid_operateTranspose_342d5b01463e0dc5,
           max_mid
         };
 

@@ -4,26 +4,26 @@
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
 namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ccsds {
-        namespace definitions {
-          class FrameFacade;
-        }
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
   namespace hipparchus {
-    namespace linear {
-      class RealMatrix;
-    }
     namespace geometry {
       namespace euclidean {
         namespace threed {
           class Vector3D;
+        }
+      }
+    }
+    namespace linear {
+      class RealMatrix;
+    }
+  }
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace files {
+      namespace ccsds {
+        namespace definitions {
+          class FrameFacade;
         }
       }
     }
@@ -47,22 +47,22 @@ namespace org {
               class AttitudePhysicalProperties : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_600a2a61652bc473,
-                  mid_getCenterOfPressure_d52645e0d4c07563,
-                  mid_getCenterOfPressureReferenceFrame_5d5dd95b04037824,
-                  mid_getDragCoefficient_dff5885c2c873297,
-                  mid_getDryMass_dff5885c2c873297,
-                  mid_getInertiaMatrix_688b496048ff947b,
-                  mid_getInertiaReferenceFrame_5d5dd95b04037824,
-                  mid_getWetMass_dff5885c2c873297,
-                  mid_setCenterOfPressure_029ff0cbf68ea054,
-                  mid_setCenterOfPressureReferenceFrame_849bc9e3b38b9bcb,
-                  mid_setDragCoefficient_17db3a65980d3441,
-                  mid_setDryMass_17db3a65980d3441,
-                  mid_setInertiaMatrixEntry_1506189166690b5e,
-                  mid_setInertiaReferenceFrame_849bc9e3b38b9bcb,
-                  mid_setWetMass_17db3a65980d3441,
-                  mid_validate_17db3a65980d3441,
+                  mid_init$_20affcbd28542333,
+                  mid_getCenterOfPressure_f88961cca75a2c0a,
+                  mid_getCenterOfPressureReferenceFrame_98f5fcaff3e3f9d2,
+                  mid_getDragCoefficient_557b8123390d8d0c,
+                  mid_getDryMass_557b8123390d8d0c,
+                  mid_getInertiaMatrix_70a207fcbc031df2,
+                  mid_getInertiaReferenceFrame_98f5fcaff3e3f9d2,
+                  mid_getWetMass_557b8123390d8d0c,
+                  mid_setCenterOfPressure_2810d2bec90e7b1c,
+                  mid_setCenterOfPressureReferenceFrame_f55eee1236275bb1,
+                  mid_setDragCoefficient_10f281d777284cea,
+                  mid_setDryMass_10f281d777284cea,
+                  mid_setInertiaMatrixEntry_754312f3734d6e2f,
+                  mid_setInertiaReferenceFrame_f55eee1236275bb1,
+                  mid_setWetMass_10f281d777284cea,
+                  mid_validate_10f281d777284cea,
                   max_mid
                 };
 

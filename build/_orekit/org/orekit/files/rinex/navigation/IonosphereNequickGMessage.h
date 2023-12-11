@@ -32,15 +32,15 @@ namespace org {
           class IonosphereNequickGMessage : public ::org::orekit::files::rinex::navigation::IonosphereBaseMessage {
            public:
             enum {
-              mid_init$_a82ff7a18fa6993f,
-              mid_getAi0_dff5885c2c873297,
-              mid_getAi1_dff5885c2c873297,
-              mid_getAi2_dff5885c2c873297,
-              mid_getFlags_570ce0828f81a2c1,
-              mid_setAi0_17db3a65980d3441,
-              mid_setAi1_17db3a65980d3441,
-              mid_setAi2_17db3a65980d3441,
-              mid_setFlags_99803b0791f320ff,
+              mid_init$_e1b2f7b885c85083,
+              mid_getAi0_557b8123390d8d0c,
+              mid_getAi1_557b8123390d8d0c,
+              mid_getAi2_557b8123390d8d0c,
+              mid_getFlags_412668abc8d889e9,
+              mid_setAi0_10f281d777284cea,
+              mid_setAi1_10f281d777284cea,
+              mid_setAi2_10f281d777284cea,
+              mid_setFlags_a3da1a935cb37f7b,
               max_mid
             };
 

@@ -4,6 +4,11 @@
 #include "org/orekit/files/ccsds/ndm/CommonPhysicalProperties.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
+    }
+  }
   namespace orekit {
     namespace files {
       namespace ccsds {
@@ -11,11 +16,6 @@ namespace org {
           class FrameFacade;
         }
       }
-    }
-  }
-  namespace hipparchus {
-    namespace linear {
-      class RealMatrix;
     }
   }
 }
@@ -37,12 +37,12 @@ namespace org {
               class Inertia : public ::org::orekit::files::ccsds::ndm::CommonPhysicalProperties {
                public:
                 enum {
-                  mid_init$_0fa09c18fee449d5,
-                  mid_getFrame_5d5dd95b04037824,
-                  mid_getInertiaMatrix_688b496048ff947b,
-                  mid_setFrame_849bc9e3b38b9bcb,
-                  mid_setInertiaMatrixEntry_1506189166690b5e,
-                  mid_validate_17db3a65980d3441,
+                  mid_init$_0640e6acf969ed28,
+                  mid_getFrame_98f5fcaff3e3f9d2,
+                  mid_getInertiaMatrix_70a207fcbc031df2,
+                  mid_setFrame_f55eee1236275bb1,
+                  mid_setInertiaMatrixEntry_754312f3734d6e2f,
+                  mid_validate_10f281d777284cea,
                   max_mid
                 };
 

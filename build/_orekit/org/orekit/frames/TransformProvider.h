@@ -6,14 +6,14 @@
 namespace org {
   namespace orekit {
     namespace frames {
-      class FieldStaticTransform;
-      class FieldTransform;
       class Transform;
+      class FieldStaticTransform;
       class StaticTransform;
+      class FieldTransform;
     }
     namespace time {
-      class AbsoluteDate;
       class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
   }
 }
@@ -31,10 +31,10 @@ namespace org {
       class TransformProvider : public ::java::io::Serializable {
        public:
         enum {
-          mid_getStaticTransform_edee248bbd22a723,
-          mid_getStaticTransform_eae0db96fe973887,
-          mid_getTransform_687985c59478d29c,
-          mid_getTransform_f7bf3269025b86c3,
+          mid_getStaticTransform_7265a2d9c3b9a38a,
+          mid_getStaticTransform_68fd5b9bb9184393,
+          mid_getTransform_df04e3927954349e,
+          mid_getTransform_e70631ba002d9a32,
           max_mid
         };
 

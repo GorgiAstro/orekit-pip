@@ -5,9 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace bodies {
-      class OneAxisEllipsoid;
-    }
     namespace utils {
       class OccultationEngine;
       class ExtendedPVCoordinatesProvider;
@@ -17,6 +14,9 @@ namespace org {
         class EclipseDetector;
       }
       class SpacecraftState;
+    }
+    namespace bodies {
+      class OneAxisEllipsoid;
     }
   }
 }
@@ -35,16 +35,16 @@ namespace org {
         class EclipseDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_e2f8d857b11c9024,
-            mid_init$_1718479cc62dba49,
-            mid_g_432f3d328c15ec82,
-            mid_getMargin_dff5885c2c873297,
-            mid_getOccultationEngine_a79c04d8e5243995,
-            mid_getTotalEclipse_b108b35ef48e27bd,
-            mid_withMargin_7ac491b8edb69a1e,
-            mid_withPenumbra_6b92ae008e2e8637,
-            mid_withUmbra_6b92ae008e2e8637,
-            mid_create_0007ba63619445b3,
+            mid_init$_0ef01684d428ac9c,
+            mid_init$_96b8e1d4ccad7364,
+            mid_g_1bbf81d80c47ecdd,
+            mid_getMargin_557b8123390d8d0c,
+            mid_getOccultationEngine_fed7baa95ffa6698,
+            mid_getTotalEclipse_89b302893bdbe1f1,
+            mid_withMargin_a1fde6d5872cd52e,
+            mid_withPenumbra_76e14f3742e5da58,
+            mid_withUmbra_76e14f3742e5da58,
+            mid_create_c1aaa24ee2ef77a7,
             max_mid
           };
 

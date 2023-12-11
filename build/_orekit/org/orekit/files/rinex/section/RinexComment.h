@@ -20,9 +20,9 @@ namespace org {
           class RinexComment : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_eb545b81bcb6baba,
-              mid_getLineNumber_570ce0828f81a2c1,
-              mid_getText_11b109bd155ca898,
+              mid_init$_da9d52f3cfda13c8,
+              mid_getLineNumber_412668abc8d889e9,
+              mid_getText_3cffd47377eca18a,
               max_mid
             };
 

@@ -13,8 +13,8 @@ namespace org {
       }
     }
     namespace frames {
-      class Frame;
       class Frames;
+      class Frame;
     }
     namespace attitudes {
       class AttitudeProvider;
@@ -38,30 +38,30 @@ namespace org {
             class GNSSOrbitalElements : public ::org::orekit::time::TimeStamped {
              public:
               enum {
-                mid_getAngularVelocity_dff5885c2c873297,
-                mid_getCic_dff5885c2c873297,
-                mid_getCis_dff5885c2c873297,
-                mid_getCrc_dff5885c2c873297,
-                mid_getCrs_dff5885c2c873297,
-                mid_getCuc_dff5885c2c873297,
-                mid_getCus_dff5885c2c873297,
-                mid_getCycleDuration_dff5885c2c873297,
-                mid_getE_dff5885c2c873297,
-                mid_getI0_dff5885c2c873297,
-                mid_getIDot_dff5885c2c873297,
-                mid_getM0_dff5885c2c873297,
-                mid_getMeanMotion_dff5885c2c873297,
-                mid_getMu_dff5885c2c873297,
-                mid_getOmega0_dff5885c2c873297,
-                mid_getOmegaDot_dff5885c2c873297,
-                mid_getPRN_570ce0828f81a2c1,
-                mid_getPa_dff5885c2c873297,
-                mid_getPropagator_6d7baa04e9d5997e,
-                mid_getPropagator_1f6ce194c3ea0981,
-                mid_getPropagator_c9b0be5ff079ea0a,
-                mid_getSma_dff5885c2c873297,
-                mid_getTime_dff5885c2c873297,
-                mid_getWeek_570ce0828f81a2c1,
+                mid_getAngularVelocity_557b8123390d8d0c,
+                mid_getCic_557b8123390d8d0c,
+                mid_getCis_557b8123390d8d0c,
+                mid_getCrc_557b8123390d8d0c,
+                mid_getCrs_557b8123390d8d0c,
+                mid_getCuc_557b8123390d8d0c,
+                mid_getCus_557b8123390d8d0c,
+                mid_getCycleDuration_557b8123390d8d0c,
+                mid_getE_557b8123390d8d0c,
+                mid_getI0_557b8123390d8d0c,
+                mid_getIDot_557b8123390d8d0c,
+                mid_getM0_557b8123390d8d0c,
+                mid_getMeanMotion_557b8123390d8d0c,
+                mid_getMu_557b8123390d8d0c,
+                mid_getOmega0_557b8123390d8d0c,
+                mid_getOmegaDot_557b8123390d8d0c,
+                mid_getPRN_412668abc8d889e9,
+                mid_getPa_557b8123390d8d0c,
+                mid_getPropagator_2d63e0224266d4a7,
+                mid_getPropagator_fd9ba085897912c9,
+                mid_getPropagator_8c43a154c6c41be9,
+                mid_getSma_557b8123390d8d0c,
+                mid_getTime_557b8123390d8d0c,
+                mid_getWeek_412668abc8d889e9,
                 max_mid
               };
 

@@ -27,15 +27,15 @@ namespace org {
         class CRD$RangeMeasurement : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_399a69c3c034fff4,
-            mid_init$_1f869b32d549ac87,
-            mid_init$_94189024dc8d45f2,
-            mid_getDate_85703d13e302437e,
-            mid_getEpochEvent_570ce0828f81a2c1,
-            mid_getSnr_dff5885c2c873297,
-            mid_getSystemConfigurationId_11b109bd155ca898,
-            mid_getTimeOfFlight_dff5885c2c873297,
-            mid_toCrdString_11b109bd155ca898,
+            mid_init$_8bee68461ef1d830,
+            mid_init$_a710cda32bdb5ed9,
+            mid_init$_8cc469ee0a9203d0,
+            mid_getDate_7a97f7e149e79afb,
+            mid_getEpochEvent_412668abc8d889e9,
+            mid_getSnr_557b8123390d8d0c,
+            mid_getSystemConfigurationId_3cffd47377eca18a,
+            mid_getTimeOfFlight_557b8123390d8d0c,
+            mid_toCrdString_3cffd47377eca18a,
             max_mid
           };
 

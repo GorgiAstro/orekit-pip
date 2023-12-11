@@ -43,8 +43,8 @@ namespace org {
               class SsrIgm04 : public ::org::orekit::gnss::metric::messages::ssr::igm::SsrIgmMessage {
                public:
                 enum {
-                  mid_init$_29af0ca298a45f10,
-                  mid_getSsrIgm04Data_6f5a75ccd8c04465,
+                  mid_init$_fda72f789735f041,
+                  mid_getSsrIgm04Data_1e62c2f73fbdd1c4,
                   max_mid
                 };
 

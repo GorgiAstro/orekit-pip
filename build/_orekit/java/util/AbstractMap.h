@@ -23,22 +23,22 @@ namespace java {
     class AbstractMap : public ::java::lang::Object {
      public:
       enum {
-        mid_clear_0fa09c18fee449d5,
-        mid_containsKey_65c7d273e80d497a,
-        mid_containsValue_65c7d273e80d497a,
-        mid_entrySet_015730311a5bacdc,
-        mid_equals_65c7d273e80d497a,
-        mid_get_9facd1449e0950d3,
-        mid_hashCode_570ce0828f81a2c1,
-        mid_isEmpty_b108b35ef48e27bd,
-        mid_keySet_015730311a5bacdc,
-        mid_put_af8aa32ee9c1f184,
-        mid_putAll_db8de8bc54857165,
-        mid_remove_9facd1449e0950d3,
-        mid_size_570ce0828f81a2c1,
-        mid_toString_11b109bd155ca898,
-        mid_values_37528d110cff6b74,
-        mid_clone_4d26fd885228c716,
+        mid_clear_0640e6acf969ed28,
+        mid_containsKey_221e8e85cb385209,
+        mid_containsValue_221e8e85cb385209,
+        mid_entrySet_2dfcbd371d62f4e1,
+        mid_equals_221e8e85cb385209,
+        mid_get_65d69db95c5eb156,
+        mid_hashCode_412668abc8d889e9,
+        mid_isEmpty_89b302893bdbe1f1,
+        mid_keySet_2dfcbd371d62f4e1,
+        mid_put_e9b6f8dd03d71e12,
+        mid_putAll_6ba01303bcce0307,
+        mid_remove_65d69db95c5eb156,
+        mid_size_412668abc8d889e9,
+        mid_toString_3cffd47377eca18a,
+        mid_values_12ee61573a18f417,
+        mid_clone_e661fe3ba2fafb22,
         max_mid
       };
 

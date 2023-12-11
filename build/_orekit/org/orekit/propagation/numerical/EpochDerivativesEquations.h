@@ -10,8 +10,8 @@ namespace org {
         class NumericalPropagator;
       }
       namespace integration {
-        class AdditionalDerivativesProvider;
         class CombinedDerivatives;
+        class AdditionalDerivativesProvider;
       }
       class SpacecraftState;
     }
@@ -33,13 +33,13 @@ namespace org {
         class EpochDerivativesEquations : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0ed4a72bb044bc07,
-            mid_combinedDerivatives_4fc0958a0539e1d3,
-            mid_getDimension_570ce0828f81a2c1,
-            mid_getName_11b109bd155ca898,
-            mid_setInitialJacobians_f43130c50e9fafeb,
-            mid_setInitialJacobians_db5060b3fc07ab0a,
-            mid_setInitialJacobians_9648e5fea30e68b0,
+            mid_init$_fcf7e65889751518,
+            mid_combinedDerivatives_5fc55a092d474e7c,
+            mid_getDimension_412668abc8d889e9,
+            mid_getName_3cffd47377eca18a,
+            mid_setInitialJacobians_2c4cc16b11f79a6c,
+            mid_setInitialJacobians_4e9faa373286a7e3,
+            mid_setInitialJacobians_917e96f1f52f04b8,
             max_mid
           };
 

@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace orbits {
-      class RichardsonExpansion;
-    }
     namespace bodies {
       class CR3BPSystem;
     }
     namespace utils {
       class PVCoordinates;
+    }
+    namespace orbits {
+      class RichardsonExpansion;
     }
   }
 }
@@ -30,9 +30,9 @@ namespace org {
       class LyapunovOrbit : public ::org::orekit::orbits::LibrationOrbit {
        public:
         enum {
-          mid_init$_0f778f809bdde6f2,
-          mid_init$_6ca73a52ae88cb29,
-          mid_applyCorrectionOnPV_e2324264d8e2d238,
+          mid_init$_bdcb30870316daf0,
+          mid_init$_cba003a7418c96ab,
+          mid_applyCorrectionOnPV_0f6106070ec4ffe8,
           max_mid
         };
 

@@ -48,9 +48,9 @@ namespace org {
         class AdjustmentContext : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_53a0040bd172c677,
-            mid_estimateFreeParameters_f579bcabd6fa2037,
-            mid_setOptimizer_63f13867ea40ee93,
+            mid_init$_e523c66771543b5a,
+            mid_estimateFreeParameters_942a8de0858c9d46,
+            mid_setOptimizer_6e8d52daed67f697,
             max_mid
           };
 

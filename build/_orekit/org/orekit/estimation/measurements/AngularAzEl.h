@@ -7,9 +7,9 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class AngularAzEl;
-        class GroundStation;
         class ObservableSatellite;
+        class GroundStation;
+        class AngularAzEl;
       }
     }
     namespace frames {
@@ -45,10 +45,10 @@ namespace org {
         class AngularAzEl : public ::org::orekit::estimation::measurements::GroundReceiverMeasurement {
          public:
           enum {
-            mid_init$_6d8110a9cba4c78c,
-            mid_getObservedLineOfSight_e91e859b879f3586,
-            mid_theoreticalEvaluationWithoutDerivatives_e32883476b3d9b22,
-            mid_theoreticalEvaluation_27ef5cc84ad0852b,
+            mid_init$_0a6e1b20dddd166b,
+            mid_getObservedLineOfSight_8386213426308de8,
+            mid_theoreticalEvaluationWithoutDerivatives_71d69ca0f7c280a7,
+            mid_theoreticalEvaluation_eae039ee8c8a4a4d,
             max_mid
           };
 

@@ -9,8 +9,8 @@ namespace org {
       class MathIllegalStateException;
     }
     namespace optim {
-      class ConvergenceChecker;
       class OptimizationData;
+      class ConvergenceChecker;
     }
   }
 }
@@ -28,17 +28,17 @@ namespace org {
       class BaseOptimizer : public ::java::lang::Object {
        public:
         enum {
-          mid_getConvergenceChecker_c0e8b85b3220641b,
-          mid_getEvaluations_570ce0828f81a2c1,
-          mid_getIterations_570ce0828f81a2c1,
-          mid_getMaxEvaluations_570ce0828f81a2c1,
-          mid_getMaxIterations_570ce0828f81a2c1,
-          mid_optimize_4d26fd885228c716,
-          mid_optimize_19319236ce3fd082,
-          mid_parseOptimizationData_3d26e9f3a1d7e833,
-          mid_doOptimize_4d26fd885228c716,
-          mid_incrementEvaluationCount_0fa09c18fee449d5,
-          mid_incrementIterationCount_0fa09c18fee449d5,
+          mid_getConvergenceChecker_4c680323f2c08379,
+          mid_getEvaluations_412668abc8d889e9,
+          mid_getIterations_412668abc8d889e9,
+          mid_getMaxEvaluations_412668abc8d889e9,
+          mid_getMaxIterations_412668abc8d889e9,
+          mid_optimize_e661fe3ba2fafb22,
+          mid_optimize_531d71f92ce59bee,
+          mid_incrementIterationCount_0640e6acf969ed28,
+          mid_incrementEvaluationCount_0640e6acf969ed28,
+          mid_doOptimize_e661fe3ba2fafb22,
+          mid_parseOptimizationData_946a92401917c130,
           max_mid
         };
 

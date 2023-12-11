@@ -5,21 +5,21 @@
 
 namespace org {
   namespace orekit {
-    namespace gnss {
-      class SatelliteSystem;
-    }
     namespace estimation {
       namespace measurements {
         namespace gnss {
-          class NarrowLaneCombination;
-          class MelbourneWubbenaCombination;
-          class GeometryFreeCombination;
-          class WideLaneCombination;
           class PhaseMinusCodeCombination;
+          class GeometryFreeCombination;
           class IonosphereFreeCombination;
+          class NarrowLaneCombination;
           class GRAPHICCombination;
+          class MelbourneWubbenaCombination;
+          class WideLaneCombination;
         }
       }
+    }
+    namespace gnss {
+      class SatelliteSystem;
     }
   }
 }
@@ -39,13 +39,13 @@ namespace org {
           class MeasurementCombinationFactory : public ::java::lang::Object {
            public:
             enum {
-              mid_getGRAPHICCombination_d7bec929149053a7,
-              mid_getGeometryFreeCombination_402a059c905d285c,
-              mid_getIonosphereFreeCombination_1229de4c47e96ea4,
-              mid_getMelbourneWubbenaCombination_19fc771d40383d9e,
-              mid_getNarrowLaneCombination_07f29255bc3eb116,
-              mid_getPhaseMinusCodeCombination_772c0092ad4a1d41,
-              mid_getWideLaneCombination_2e88547eebb61d89,
+              mid_getGRAPHICCombination_b80d8f8528f7c532,
+              mid_getGeometryFreeCombination_67d54b328b5ec799,
+              mid_getIonosphereFreeCombination_d842a68344c6ba82,
+              mid_getMelbourneWubbenaCombination_10a56ef5d39182b1,
+              mid_getNarrowLaneCombination_32012fea9b2fc3d3,
+              mid_getPhaseMinusCodeCombination_96d7bd866e3f6da7,
+              mid_getWideLaneCombination_183fcfefa59f744b,
               max_mid
             };
 

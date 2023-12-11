@@ -44,18 +44,18 @@ namespace org {
             class PythonMessageParser : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_build_4d26fd885228c716,
-                mid_finalize_0fa09c18fee449d5,
-                mid_getFileFormat_66298c6188053be6,
-                mid_getFormatVersionKey_11b109bd155ca898,
-                mid_getSpecialXmlElementsBuilders_6f5a75ccd8c04465,
-                mid_parseMessage_455adfd4ae4ab630,
-                mid_process_60c6e06c33a7585b,
-                mid_pythonDecRef_0fa09c18fee449d5,
-                mid_pythonExtension_492808a339bfa35f,
-                mid_pythonExtension_3a8e7649f31fdb20,
-                mid_reset_e250621f009e45db,
+                mid_init$_0640e6acf969ed28,
+                mid_build_e661fe3ba2fafb22,
+                mid_finalize_0640e6acf969ed28,
+                mid_getFileFormat_c3a4c5f37e67a25e,
+                mid_getFormatVersionKey_3cffd47377eca18a,
+                mid_getSpecialXmlElementsBuilders_1e62c2f73fbdd1c4,
+                mid_parseMessage_850ca290e1713a38,
+                mid_process_1eac6345cb6bda02,
+                mid_pythonDecRef_0640e6acf969ed28,
+                mid_pythonExtension_9e26256fb0d384a2,
+                mid_pythonExtension_3cd6a6b354c6aa22,
+                mid_reset_a580586827f4ec13,
                 max_mid
               };
 

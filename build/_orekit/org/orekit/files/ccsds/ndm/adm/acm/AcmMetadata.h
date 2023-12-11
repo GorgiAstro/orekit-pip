@@ -3,20 +3,8 @@
 
 #include "org/orekit/files/ccsds/ndm/adm/AdmMetadata.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataContext;
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -31,6 +19,18 @@ namespace org {
     namespace time {
       class AbsoluteDate;
     }
+    namespace data {
+      class DataContext;
+    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -46,40 +46,40 @@ namespace org {
               class AcmMetadata : public ::org::orekit::files::ccsds::ndm::adm::AdmMetadata {
                public:
                 enum {
-                  mid_init$_47d99c12e4a42886,
-                  mid_getAcmDataElements_2afa36052df4765d,
-                  mid_getCatalogName_11b109bd155ca898,
-                  mid_getEpochT0_85703d13e302437e,
-                  mid_getInternationalDesignator_11b109bd155ca898,
-                  mid_getNextLeapEpoch_85703d13e302437e,
-                  mid_getNextLeapTaimutc_dff5885c2c873297,
-                  mid_getObjectDesignator_11b109bd155ca898,
-                  mid_getOdmMessageLink_11b109bd155ca898,
-                  mid_getOriginatorAddress_11b109bd155ca898,
-                  mid_getOriginatorEmail_11b109bd155ca898,
-                  mid_getOriginatorPOC_11b109bd155ca898,
-                  mid_getOriginatorPhone_11b109bd155ca898,
-                  mid_getOriginatorPosition_11b109bd155ca898,
-                  mid_getStartTime_85703d13e302437e,
-                  mid_getStopTime_85703d13e302437e,
-                  mid_getTaimutcT0_dff5885c2c873297,
-                  mid_setAcmDataElements_de3e021e7266b71e,
-                  mid_setCatalogName_d0bc48d5b00dc40c,
-                  mid_setEpochT0_600a2a61652bc473,
-                  mid_setInternationalDesignator_d0bc48d5b00dc40c,
-                  mid_setNextLeapEpoch_600a2a61652bc473,
-                  mid_setNextLeapTaimutc_17db3a65980d3441,
-                  mid_setObjectDesignator_d0bc48d5b00dc40c,
-                  mid_setOdmMessageLink_d0bc48d5b00dc40c,
-                  mid_setOriginatorAddress_d0bc48d5b00dc40c,
-                  mid_setOriginatorEmail_d0bc48d5b00dc40c,
-                  mid_setOriginatorPOC_d0bc48d5b00dc40c,
-                  mid_setOriginatorPhone_d0bc48d5b00dc40c,
-                  mid_setOriginatorPosition_d0bc48d5b00dc40c,
-                  mid_setStartTime_600a2a61652bc473,
-                  mid_setStopTime_600a2a61652bc473,
-                  mid_setTaimutcT0_17db3a65980d3441,
-                  mid_validate_17db3a65980d3441,
+                  mid_init$_23625b258f7a7479,
+                  mid_getAcmDataElements_0d9551367f7ecdef,
+                  mid_getCatalogName_3cffd47377eca18a,
+                  mid_getEpochT0_7a97f7e149e79afb,
+                  mid_getInternationalDesignator_3cffd47377eca18a,
+                  mid_getNextLeapEpoch_7a97f7e149e79afb,
+                  mid_getNextLeapTaimutc_557b8123390d8d0c,
+                  mid_getObjectDesignator_3cffd47377eca18a,
+                  mid_getOdmMessageLink_3cffd47377eca18a,
+                  mid_getOriginatorAddress_3cffd47377eca18a,
+                  mid_getOriginatorEmail_3cffd47377eca18a,
+                  mid_getOriginatorPOC_3cffd47377eca18a,
+                  mid_getOriginatorPhone_3cffd47377eca18a,
+                  mid_getOriginatorPosition_3cffd47377eca18a,
+                  mid_getStartTime_7a97f7e149e79afb,
+                  mid_getStopTime_7a97f7e149e79afb,
+                  mid_getTaimutcT0_557b8123390d8d0c,
+                  mid_setAcmDataElements_4ccaedadb068bdeb,
+                  mid_setCatalogName_f5ffdf29129ef90a,
+                  mid_setEpochT0_20affcbd28542333,
+                  mid_setInternationalDesignator_f5ffdf29129ef90a,
+                  mid_setNextLeapEpoch_20affcbd28542333,
+                  mid_setNextLeapTaimutc_10f281d777284cea,
+                  mid_setObjectDesignator_f5ffdf29129ef90a,
+                  mid_setOdmMessageLink_f5ffdf29129ef90a,
+                  mid_setOriginatorAddress_f5ffdf29129ef90a,
+                  mid_setOriginatorEmail_f5ffdf29129ef90a,
+                  mid_setOriginatorPOC_f5ffdf29129ef90a,
+                  mid_setOriginatorPhone_f5ffdf29129ef90a,
+                  mid_setOriginatorPosition_f5ffdf29129ef90a,
+                  mid_setStartTime_20affcbd28542333,
+                  mid_setStopTime_20affcbd28542333,
+                  mid_setTaimutcT0_10f281d777284cea,
+                  mid_validate_10f281d777284cea,
                   max_mid
                 };
 

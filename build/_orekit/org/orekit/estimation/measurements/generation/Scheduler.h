@@ -3,17 +3,13 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class Map;
-    class SortedSet;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
+    namespace propagation {
+      namespace sampling {
+        class OrekitStepInterpolator;
+      }
+    }
     namespace estimation {
       namespace measurements {
         namespace generation {
@@ -25,11 +21,15 @@ namespace org {
     namespace time {
       class AbsoluteDate;
     }
-    namespace propagation {
-      namespace sampling {
-        class OrekitStepInterpolator;
-      }
-    }
+  }
+}
+namespace java {
+  namespace util {
+    class Map;
+    class SortedSet;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -43,9 +43,9 @@ namespace org {
           class Scheduler : public ::java::lang::Object {
            public:
             enum {
-              mid_generate_e61f6829e4c9c5f5,
-              mid_getBuilder_63a5a16953d5c5b8,
-              mid_init_a9e71d848b81c8f8,
+              mid_generate_efa69a4463f8239b,
+              mid_getBuilder_73d2d5822258be13,
+              mid_init_d5db9a5f2035671b,
               max_mid
             };
 

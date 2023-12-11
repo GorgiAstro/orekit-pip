@@ -3,29 +3,29 @@
 
 #include "org/hipparchus/stat/descriptive/AbstractStorelessUnivariateStatistic.h"
 
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace stat {
       namespace descriptive {
-        class AggregatableStatistic;
         namespace moment {
-          class FirstMoment;
           class Mean;
+          class FirstMoment;
         }
+        class AggregatableStatistic;
         class WeightedEvaluation;
       }
     }
     namespace exception {
       class MathIllegalArgumentException;
     }
+  }
+}
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -39,16 +39,16 @@ namespace org {
           class Mean : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_init$_a3de77dcfa83aed2,
-              mid_aggregate_432a3abb0caaadf9,
-              mid_clear_0fa09c18fee449d5,
-              mid_copy_7b8896d94cfe5ea9,
-              mid_evaluate_556bede10daac330,
-              mid_evaluate_2634be61548fc62b,
-              mid_getN_492808a339bfa35f,
-              mid_getResult_dff5885c2c873297,
-              mid_increment_17db3a65980d3441,
+              mid_init$_0640e6acf969ed28,
+              mid_init$_4588de4772df8531,
+              mid_aggregate_d935e5680b15378b,
+              mid_clear_0640e6acf969ed28,
+              mid_copy_21710564dc90c0ac,
+              mid_evaluate_9eeeb1ae977f525d,
+              mid_evaluate_579f1672894f464a,
+              mid_getN_9e26256fb0d384a2,
+              mid_getResult_557b8123390d8d0c,
+              mid_increment_10f281d777284cea,
               max_mid
             };
 

@@ -4,6 +4,21 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace frames {
+      class LOF;
+      class Transform;
+      class FieldTransform;
+    }
+    namespace utils {
+      class FieldPVCoordinates;
+      class PVCoordinates;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -14,21 +29,6 @@ namespace org {
       }
     }
     class Field;
-  }
-  namespace orekit {
-    namespace frames {
-      class FieldTransform;
-      class Transform;
-      class LOF;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-    }
-    namespace utils {
-      class FieldPVCoordinates;
-      class PVCoordinates;
-    }
   }
 }
 namespace java {
@@ -46,20 +46,20 @@ namespace org {
       class LOF : public ::java::lang::Object {
        public:
         enum {
-          mid_getName_11b109bd155ca898,
-          mid_isQuasiInertial_b108b35ef48e27bd,
-          mid_rotationFromInertial_475182fd71c6851b,
-          mid_rotationFromInertial_076f35c1feeb36b3,
-          mid_rotationFromLOF_19113ef4e598287b,
-          mid_rotationFromLOF_8088d480809c18c4,
-          mid_rotationFromLOFInToLOFOut_42ccf97cd80cbf07,
-          mid_rotationFromLOFInToLOFOut_0e21e2ef6cf8e3e4,
-          mid_transformFromInertial_2f33e71311570caf,
-          mid_transformFromInertial_ebe03c8ec9572105,
-          mid_transformFromLOF_0bcf38086fabd19a,
-          mid_transformFromLOF_66098893b8c09c76,
-          mid_transformFromLOFInToLOFOut_8e8b5e9a81637430,
-          mid_transformFromLOFInToLOFOut_9504937c4fb78046,
+          mid_getName_3cffd47377eca18a,
+          mid_isQuasiInertial_89b302893bdbe1f1,
+          mid_rotationFromInertial_9b71bf39454b4a07,
+          mid_rotationFromInertial_1022f468fb3d1015,
+          mid_rotationFromLOF_4589fd7f02974794,
+          mid_rotationFromLOF_3d58d3c4fbbdd666,
+          mid_rotationFromLOFInToLOFOut_9a9c25ec3dddff77,
+          mid_rotationFromLOFInToLOFOut_dc0beda38c449646,
+          mid_transformFromInertial_2a23f2d721e3dbf7,
+          mid_transformFromInertial_770b64ef6abe3e27,
+          mid_transformFromLOF_c10a26e3ee070a26,
+          mid_transformFromLOF_434b8bd008c153c5,
+          mid_transformFromLOFInToLOFOut_0b931f6337724e6c,
+          mid_transformFromLOFInToLOFOut_fbf49304709710af,
           max_mid
         };
 

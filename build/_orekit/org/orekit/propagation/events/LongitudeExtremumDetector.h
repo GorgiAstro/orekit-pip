@@ -10,10 +10,10 @@ namespace org {
       class OneAxisEllipsoid;
     }
     namespace propagation {
+      class SpacecraftState;
       namespace events {
         class LongitudeExtremumDetector;
       }
-      class SpacecraftState;
     }
   }
 }
@@ -32,11 +32,11 @@ namespace org {
         class LongitudeExtremumDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_7c502fc601af6f77,
-            mid_init$_b67b42078e2e878c,
-            mid_g_432f3d328c15ec82,
-            mid_getBody_6f78da94fd048d9d,
-            mid_create_f4c7a8d14197c62d,
+            mid_init$_fee9aa8bf77f755f,
+            mid_init$_9c6b45b00f88cd51,
+            mid_g_1bbf81d80c47ecdd,
+            mid_getBody_f166528db337c659,
+            mid_create_280af7449dc0e320,
             max_mid
           };
 

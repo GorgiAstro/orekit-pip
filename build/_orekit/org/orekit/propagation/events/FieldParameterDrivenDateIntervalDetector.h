@@ -4,21 +4,21 @@
 #include "org/orekit/propagation/events/FieldAbstractDetector.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-    class Field;
-  }
   namespace orekit {
+    namespace propagation {
+      class FieldSpacecraftState;
+    }
     namespace utils {
-      class ParameterDriver;
       class DateDriver;
+      class ParameterDriver;
     }
     namespace time {
       class AbsoluteDate;
     }
-    namespace propagation {
-      class FieldSpacecraftState;
-    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
+    class Field;
   }
 }
 namespace java {
@@ -37,14 +37,14 @@ namespace org {
         class FieldParameterDrivenDateIntervalDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_aed558bc796a4379,
-            mid_init$_7b7ab69c28b41c60,
-            mid_g_41a008afe53da855,
-            mid_getDurationDriver_a25ed222178aa59f,
-            mid_getMedianDriver_3fcb2f6aa57e183e,
-            mid_getStartDriver_3fcb2f6aa57e183e,
-            mid_getStopDriver_3fcb2f6aa57e183e,
-            mid_create_29a8fc1df67f1fa7,
+            mid_init$_2b833fd21087965f,
+            mid_init$_9966c0d31c17c449,
+            mid_g_de1c2d709eb2829c,
+            mid_getDurationDriver_4194657b5e280ddc,
+            mid_getMedianDriver_e73bc59e931ba25e,
+            mid_getStartDriver_e73bc59e931ba25e,
+            mid_getStopDriver_e73bc59e931ba25e,
+            mid_create_f408a982afeb758b,
             max_mid
           };
 

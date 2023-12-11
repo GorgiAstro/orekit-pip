@@ -3,14 +3,14 @@
 
 #include "org/orekit/propagation/semianalytical/dsst/forces/FieldForceModelContext.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -25,7 +25,7 @@ namespace org {
             class FieldDSSTNewtonianAttractionContext : public ::org::orekit::propagation::semianalytical::dsst::forces::FieldForceModelContext {
              public:
               enum {
-                mid_getGM_eba8e72a22c984ac,
+                mid_getGM_613c8f46c659f636,
                 max_mid
               };
 

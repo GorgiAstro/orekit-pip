@@ -16,14 +16,14 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace utils {
+      class ParameterDriver;
+    }
     namespace propagation {
       namespace events {
         class EventDetector;
         class FieldEventDetector;
       }
-    }
-    namespace utils {
-      class ParameterDriver;
     }
   }
   namespace hipparchus {
@@ -40,10 +40,10 @@ namespace org {
         class EventDetectorsProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_getEventDetectors_20f6d2b462aaef4b,
-            mid_getEventDetectors_7659b9c52e25aa5d,
-            mid_getFieldEventDetectors_361313cd1a9c693a,
-            mid_getFieldEventDetectors_bccf367c194c95ef,
+            mid_getEventDetectors_d7cce92225eb0db2,
+            mid_getEventDetectors_525f259082364af5,
+            mid_getFieldEventDetectors_8130af76f6998f44,
+            mid_getFieldEventDetectors_8fda129f71dfeeba,
             max_mid
           };
 

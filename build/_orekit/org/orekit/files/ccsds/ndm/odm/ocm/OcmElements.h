@@ -37,8 +37,8 @@ namespace org {
               class OcmElements : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_valueOf_ea7ff09e28f9c18b,
-                  mid_values_b4f2b69e777aa1cf,
+                  mid_valueOf_df20b5474f2b5281,
+                  mid_values_d1b30da0ffe05b48,
                   max_mid
                 };
 

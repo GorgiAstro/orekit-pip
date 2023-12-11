@@ -13,14 +13,14 @@ namespace java {
   }
 }
 namespace org {
-  namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
   namespace hipparchus {
     namespace linear {
       class RealMatrix;
+    }
+  }
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -37,58 +37,58 @@ namespace org {
               class OrbitPhysicalProperties : public ::org::orekit::files::ccsds::ndm::CommonPhysicalProperties {
                public:
                 enum {
-                  mid_init$_600a2a61652bc473,
-                  mid_getAttitudeActuatorType_11b109bd155ca898,
-                  mid_getAttitudeControlAccuracy_dff5885c2c873297,
-                  mid_getAttitudeControlMode_11b109bd155ca898,
-                  mid_getAttitudeKnowledgeAccuracy_dff5885c2c873297,
-                  mid_getAttitudePointingAccuracy_dff5885c2c873297,
-                  mid_getBolDv_dff5885c2c873297,
-                  mid_getBusModel_11b109bd155ca898,
-                  mid_getDockedWith_2afa36052df4765d,
-                  mid_getDragCoefficient_dff5885c2c873297,
-                  mid_getDragConstantArea_dff5885c2c873297,
-                  mid_getDragUncertainty_dff5885c2c873297,
-                  mid_getDryMass_dff5885c2c873297,
-                  mid_getInertiaMatrix_688b496048ff947b,
-                  mid_getInitialWetMass_dff5885c2c873297,
-                  mid_getManeuversFrequency_dff5885c2c873297,
-                  mid_getManeuversPerYear_dff5885c2c873297,
-                  mid_getManufacturer_11b109bd155ca898,
-                  mid_getMaxAreaForCollisionProbability_dff5885c2c873297,
-                  mid_getMaxThrust_dff5885c2c873297,
-                  mid_getMinAreaForCollisionProbability_dff5885c2c873297,
-                  mid_getRemainingDv_dff5885c2c873297,
-                  mid_getSrpCoefficient_dff5885c2c873297,
-                  mid_getSrpConstantArea_dff5885c2c873297,
-                  mid_getSrpUncertainty_dff5885c2c873297,
-                  mid_getTypAreaForCollisionProbability_dff5885c2c873297,
-                  mid_getWetMass_dff5885c2c873297,
-                  mid_setAttitudeActuatorType_d0bc48d5b00dc40c,
-                  mid_setAttitudeControlAccuracy_17db3a65980d3441,
-                  mid_setAttitudeControlMode_d0bc48d5b00dc40c,
-                  mid_setAttitudeKnowledgeAccuracy_17db3a65980d3441,
-                  mid_setAttitudePointingAccuracy_17db3a65980d3441,
-                  mid_setBolDv_17db3a65980d3441,
-                  mid_setBusModel_d0bc48d5b00dc40c,
-                  mid_setDockedWith_de3e021e7266b71e,
-                  mid_setDragCoefficient_17db3a65980d3441,
-                  mid_setDragConstantArea_17db3a65980d3441,
-                  mid_setDragUncertainty_17db3a65980d3441,
-                  mid_setDryMass_17db3a65980d3441,
-                  mid_setInertiaMatrixEntry_1506189166690b5e,
-                  mid_setInitialWetMass_17db3a65980d3441,
-                  mid_setManeuversFrequency_17db3a65980d3441,
-                  mid_setManufacturer_d0bc48d5b00dc40c,
-                  mid_setMaxAreaForCollisionProbability_17db3a65980d3441,
-                  mid_setMaxThrust_17db3a65980d3441,
-                  mid_setMinAreaForCollisionProbability_17db3a65980d3441,
-                  mid_setRemainingDv_17db3a65980d3441,
-                  mid_setSrpCoefficient_17db3a65980d3441,
-                  mid_setSrpConstantArea_17db3a65980d3441,
-                  mid_setSrpUncertainty_17db3a65980d3441,
-                  mid_setTypAreaForCollisionProbability_17db3a65980d3441,
-                  mid_setWetMass_17db3a65980d3441,
+                  mid_init$_20affcbd28542333,
+                  mid_getAttitudeActuatorType_3cffd47377eca18a,
+                  mid_getAttitudeControlAccuracy_557b8123390d8d0c,
+                  mid_getAttitudeControlMode_3cffd47377eca18a,
+                  mid_getAttitudeKnowledgeAccuracy_557b8123390d8d0c,
+                  mid_getAttitudePointingAccuracy_557b8123390d8d0c,
+                  mid_getBolDv_557b8123390d8d0c,
+                  mid_getBusModel_3cffd47377eca18a,
+                  mid_getDockedWith_0d9551367f7ecdef,
+                  mid_getDragCoefficient_557b8123390d8d0c,
+                  mid_getDragConstantArea_557b8123390d8d0c,
+                  mid_getDragUncertainty_557b8123390d8d0c,
+                  mid_getDryMass_557b8123390d8d0c,
+                  mid_getInertiaMatrix_70a207fcbc031df2,
+                  mid_getInitialWetMass_557b8123390d8d0c,
+                  mid_getManeuversFrequency_557b8123390d8d0c,
+                  mid_getManeuversPerYear_557b8123390d8d0c,
+                  mid_getManufacturer_3cffd47377eca18a,
+                  mid_getMaxAreaForCollisionProbability_557b8123390d8d0c,
+                  mid_getMaxThrust_557b8123390d8d0c,
+                  mid_getMinAreaForCollisionProbability_557b8123390d8d0c,
+                  mid_getRemainingDv_557b8123390d8d0c,
+                  mid_getSrpCoefficient_557b8123390d8d0c,
+                  mid_getSrpConstantArea_557b8123390d8d0c,
+                  mid_getSrpUncertainty_557b8123390d8d0c,
+                  mid_getTypAreaForCollisionProbability_557b8123390d8d0c,
+                  mid_getWetMass_557b8123390d8d0c,
+                  mid_setAttitudeActuatorType_f5ffdf29129ef90a,
+                  mid_setAttitudeControlAccuracy_10f281d777284cea,
+                  mid_setAttitudeControlMode_f5ffdf29129ef90a,
+                  mid_setAttitudeKnowledgeAccuracy_10f281d777284cea,
+                  mid_setAttitudePointingAccuracy_10f281d777284cea,
+                  mid_setBolDv_10f281d777284cea,
+                  mid_setBusModel_f5ffdf29129ef90a,
+                  mid_setDockedWith_4ccaedadb068bdeb,
+                  mid_setDragCoefficient_10f281d777284cea,
+                  mid_setDragConstantArea_10f281d777284cea,
+                  mid_setDragUncertainty_10f281d777284cea,
+                  mid_setDryMass_10f281d777284cea,
+                  mid_setInertiaMatrixEntry_754312f3734d6e2f,
+                  mid_setInitialWetMass_10f281d777284cea,
+                  mid_setManeuversFrequency_10f281d777284cea,
+                  mid_setManufacturer_f5ffdf29129ef90a,
+                  mid_setMaxAreaForCollisionProbability_10f281d777284cea,
+                  mid_setMaxThrust_10f281d777284cea,
+                  mid_setMinAreaForCollisionProbability_10f281d777284cea,
+                  mid_setRemainingDv_10f281d777284cea,
+                  mid_setSrpCoefficient_10f281d777284cea,
+                  mid_setSrpConstantArea_10f281d777284cea,
+                  mid_setSrpUncertainty_10f281d777284cea,
+                  mid_setTypAreaForCollisionProbability_10f281d777284cea,
+                  mid_setWetMass_10f281d777284cea,
                   max_mid
                 };
 

@@ -3,15 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-    class Comparable;
-  }
-}
 namespace org {
   namespace orekit {
     namespace models {
@@ -29,6 +20,15 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
+    class Comparable;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -41,10 +41,10 @@ namespace org {
             class AbstractSolarActivityDataLoader$LineParameters : public ::java::lang::Object {
              public:
               enum {
-                mid_compareTo_b2c45b61abaea01a,
-                mid_equals_65c7d273e80d497a,
-                mid_getDate_85703d13e302437e,
-                mid_hashCode_570ce0828f81a2c1,
+                mid_compareTo_2ef76e9305253641,
+                mid_equals_221e8e85cb385209,
+                mid_getDate_7a97f7e149e79afb,
+                mid_hashCode_412668abc8d889e9,
                 max_mid
               };
 

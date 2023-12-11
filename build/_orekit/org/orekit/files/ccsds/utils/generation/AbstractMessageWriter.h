@@ -7,22 +7,22 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace ndm {
-          class NdmConstituent;
+        namespace section {
+          class Header;
+          class Segment;
         }
         namespace utils {
-          namespace generation {
-            class Generator;
-            class MessageWriter;
-          }
           class ContextBinding;
+          namespace generation {
+            class MessageWriter;
+            class Generator;
+          }
         }
         namespace definitions {
           class TimeConverter;
         }
-        namespace section {
-          class Header;
-          class Segment;
+        namespace ndm {
+          class NdmConstituent;
         }
       }
     }
@@ -49,18 +49,18 @@ namespace org {
             class AbstractMessageWriter : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_2a0a7c2e7c34a644,
-                mid_getContext_c779ff7fea6f1993,
-                mid_getDefaultVersion_dff5885c2c873297,
-                mid_getFormatVersionKey_11b109bd155ca898,
-                mid_getRoot_11b109bd155ca898,
-                mid_getTimeConverter_1a568e4d577ff0e8,
-                mid_getVersion_dff5885c2c873297,
-                mid_setContext_279465702b09ae7f,
-                mid_writeFooter_6d745cf7b26e9f5d,
-                mid_writeHeader_48090222d5fb583c,
-                mid_writeSegment_6a1f0a7164a88e0a,
-                mid_writeSegmentContent_a4679b5cde76d825,
+                mid_init$_17d2c89957221da8,
+                mid_getContext_cfb32720392d108f,
+                mid_getDefaultVersion_557b8123390d8d0c,
+                mid_getFormatVersionKey_3cffd47377eca18a,
+                mid_getRoot_3cffd47377eca18a,
+                mid_getTimeConverter_98138020b4258bf0,
+                mid_getVersion_557b8123390d8d0c,
+                mid_setContext_f673e6e131e83586,
+                mid_writeFooter_0503da09b1f1eb3c,
+                mid_writeHeader_9c5c2ece653aa3f3,
+                mid_writeSegment_c15b5f80625a03e0,
+                mid_writeSegmentContent_e9836ce27ccfe3b9,
                 max_mid
               };
 

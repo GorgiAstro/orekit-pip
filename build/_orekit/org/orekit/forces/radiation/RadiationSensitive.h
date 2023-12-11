@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -14,14 +13,15 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
   namespace orekit {
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
 }
@@ -44,9 +44,9 @@ namespace org {
         class RadiationSensitive : public ::java::lang::Object {
          public:
           enum {
-            mid_getRadiationParametersDrivers_2afa36052df4765d,
-            mid_radiationPressureAcceleration_70d4c57af2df1a86,
-            mid_radiationPressureAcceleration_c01594a6748cab78,
+            mid_getRadiationParametersDrivers_0d9551367f7ecdef,
+            mid_radiationPressureAcceleration_a910b2c2e7db1f82,
+            mid_radiationPressureAcceleration_122b60d0431fddf5,
             max_mid
           };
 

@@ -29,9 +29,9 @@ namespace org {
         class TimeDerivativesEquations : public ::java::lang::Object {
          public:
           enum {
-            mid_addKeplerContribution_17db3a65980d3441,
-            mid_addMassDerivative_17db3a65980d3441,
-            mid_addNonKeplerianAcceleration_029ff0cbf68ea054,
+            mid_addKeplerContribution_10f281d777284cea,
+            mid_addMassDerivative_10f281d777284cea,
+            mid_addNonKeplerianAcceleration_2810d2bec90e7b1c,
             max_mid
           };
 

@@ -3,28 +3,28 @@
 
 #include "org/orekit/data/AbstractSelfFeedingLoader.h"
 
-namespace java {
-  namespace text {
-    class ParseException;
+namespace org {
+  namespace orekit {
+    namespace time {
+      class DateComponents;
+    }
+    namespace data {
+      class DataLoader;
+      class DataProvidersManager;
+    }
   }
+}
+namespace java {
   namespace io {
     class IOException;
     class InputStream;
   }
+  namespace text {
+    class ParseException;
+  }
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace data {
-      class DataProvidersManager;
-      class DataLoader;
-    }
-    namespace time {
-      class DateComponents;
-    }
   }
 }
 template<class T> class JArray;
@@ -38,16 +38,16 @@ namespace org {
           class KlobucharIonoCoefficientsLoader : public ::org::orekit::data::AbstractSelfFeedingLoader {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_init$_d0bc48d5b00dc40c,
-              mid_init$_63232a42a5419b09,
-              mid_getAlpha_60c7040667a7dc5c,
-              mid_getBeta_60c7040667a7dc5c,
-              mid_getSupportedNames_11b109bd155ca898,
-              mid_loadData_1815f85c118161ad,
-              mid_loadKlobucharIonosphericCoefficients_0fa09c18fee449d5,
-              mid_loadKlobucharIonosphericCoefficients_56dc33c3871b1cb7,
-              mid_stillAcceptsData_b108b35ef48e27bd,
+              mid_init$_0640e6acf969ed28,
+              mid_init$_f5ffdf29129ef90a,
+              mid_init$_28c7bdc075bb74e8,
+              mid_getAlpha_a53a7513ecedada2,
+              mid_getBeta_a53a7513ecedada2,
+              mid_getSupportedNames_3cffd47377eca18a,
+              mid_loadData_15770e8d8949a557,
+              mid_loadKlobucharIonosphericCoefficients_0640e6acf969ed28,
+              mid_loadKlobucharIonosphericCoefficients_4d2eb60c6d6ac3df,
+              mid_stillAcceptsData_89b302893bdbe1f1,
               max_mid
             };
 

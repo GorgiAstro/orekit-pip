@@ -4,14 +4,14 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace io {
-    class Serializable;
-  }
   namespace util {
     class Comparator;
   }
   namespace lang {
     class Class;
+  }
+  namespace io {
+    class Serializable;
   }
 }
 namespace org {
@@ -30,8 +30,8 @@ namespace org {
       class ChronologicalComparator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_compare_2bed7cb285c68c88,
+          mid_init$_0640e6acf969ed28,
+          mid_compare_c2c4d8fe15f9b71a,
           max_mid
         };
 

@@ -19,9 +19,9 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace oned {
-          class Interval;
-          class IntervalsSet;
           class Euclidean1D;
+          class IntervalsSet;
+          class Interval;
         }
       }
       namespace partitioning {
@@ -44,17 +44,17 @@ namespace org {
           class IntervalsSet : public ::org::hipparchus::geometry::partitioning::AbstractRegion {
            public:
             enum {
-              mid_init$_17db3a65980d3441,
-              mid_init$_748cd2c51a955d77,
-              mid_init$_1f4d55383238fbb5,
-              mid_init$_2c56b6dd4d4b1dec,
-              mid_asList_2afa36052df4765d,
-              mid_buildNew_478602e2978d50f1,
-              mid_getInf_dff5885c2c873297,
-              mid_getSup_dff5885c2c873297,
-              mid_iterator_4d23511a9f0db098,
-              mid_projectToBoundary_e9baadaaf6c2e7eb,
-              mid_computeGeometricalProperties_0fa09c18fee449d5,
+              mid_init$_10f281d777284cea,
+              mid_init$_546559a08b08816f,
+              mid_init$_bdacd7c5506b494c,
+              mid_init$_87096e3fd8086100,
+              mid_asList_0d9551367f7ecdef,
+              mid_buildNew_faa8e1c775f8f198,
+              mid_getInf_557b8123390d8d0c,
+              mid_getSup_557b8123390d8d0c,
+              mid_iterator_834a3801c426326d,
+              mid_projectToBoundary_76fb0949df043b81,
+              mid_computeGeometricalProperties_0640e6acf969ed28,
               max_mid
             };
 

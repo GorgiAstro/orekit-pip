@@ -17,9 +17,9 @@ namespace org {
       class OccultationEngine$OccultationAngles : public ::java::lang::Object {
        public:
         enum {
-          mid_getLimbRadius_dff5885c2c873297,
-          mid_getOccultedApparentRadius_dff5885c2c873297,
-          mid_getSeparation_dff5885c2c873297,
+          mid_getLimbRadius_557b8123390d8d0c,
+          mid_getOccultedApparentRadius_557b8123390d8d0c,
+          mid_getSeparation_557b8123390d8d0c,
           max_mid
         };
 

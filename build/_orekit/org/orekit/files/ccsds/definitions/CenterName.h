@@ -12,12 +12,12 @@ namespace org {
         }
       }
     }
+    namespace bodies {
+      class CelestialBody;
+      class CelestialBodies;
+    }
     namespace frames {
       class Frame;
-    }
-    namespace bodies {
-      class CelestialBodies;
-      class CelestialBody;
     }
   }
 }
@@ -38,12 +38,12 @@ namespace org {
           class CenterName : public ::java::lang::Enum {
            public:
             enum {
-              mid_getCelestialBody_624686a38a6b107c,
-              mid_getCelestialBody_e2da993b112eb885,
-              mid_guessCenter_4120982664ebec0c,
-              mid_map_26124556454e0c08,
-              mid_valueOf_54896343e052f441,
-              mid_values_228befef05db3571,
+              mid_getCelestialBody_40e74583267ad550,
+              mid_getCelestialBody_18ab25d924d88f51,
+              mid_guessCenter_1fb9161cbce7f53e,
+              mid_map_05675ec85ded2fd8,
+              mid_valueOf_17f9bf4c2612840c,
+              mid_values_d157b27031769ef0,
               max_mid
             };
 

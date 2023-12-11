@@ -22,11 +22,11 @@ namespace org {
       class Combinations : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_6f37635c3285dbdf,
-          mid_comparator_96e45e3694fbbb22,
-          mid_getK_570ce0828f81a2c1,
-          mid_getN_570ce0828f81a2c1,
-          mid_iterator_4d23511a9f0db098,
+          mid_init$_a84c9a223722150c,
+          mid_comparator_b0b551d4a54c7150,
+          mid_getK_412668abc8d889e9,
+          mid_getN_412668abc8d889e9,
+          mid_iterator_834a3801c426326d,
           max_mid
         };
 

@@ -4,16 +4,7 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace linear {
-      class DiagonalMatrix;
-    }
-  }
   namespace orekit {
-    namespace time {
-      class TimeStamped;
-      class AbsoluteDate;
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -24,6 +15,15 @@ namespace org {
           }
         }
       }
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeStamped;
+    }
+  }
+  namespace hipparchus {
+    namespace linear {
+      class DiagonalMatrix;
     }
   }
 }
@@ -46,10 +46,10 @@ namespace org {
               class AttitudeCovariance : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_dcfac03f71576299,
-                  mid_getDate_85703d13e302437e,
-                  mid_getMatrix_c1458e35d8bd3b65,
-                  mid_getType_dbbc6c3c22ca640c,
+                  mid_init$_bb99cd754d655876,
+                  mid_getDate_7a97f7e149e79afb,
+                  mid_getMatrix_b1a245683de9728d,
+                  mid_getType_270107b6f5cd254c,
                   max_mid
                 };
 

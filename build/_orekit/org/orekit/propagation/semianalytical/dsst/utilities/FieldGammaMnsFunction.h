@@ -3,15 +3,15 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
     class Field;
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,9 +26,9 @@ namespace org {
             class FieldGammaMnsFunction : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_3a2e186de3b94400,
-                mid_getDerivative_4f221dcfbd8744de,
-                mid_getValue_4f221dcfbd8744de,
+                mid_init$_351c8a208f94d0d9,
+                mid_getDerivative_1e72c6fa8f42834d,
+                mid_getValue_1e72c6fa8f42834d,
                 max_mid
               };
 

@@ -34,12 +34,12 @@ namespace org {
         class SensorMeanPlaneCrossing$CrossingResult : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_ba46eb41ed43e894,
-            mid_getDate_85703d13e302437e,
-            mid_getLine_dff5885c2c873297,
-            mid_getTarget_d52645e0d4c07563,
-            mid_getTargetDirection_d52645e0d4c07563,
-            mid_getTargetDirectionDerivative_d52645e0d4c07563,
+            mid_init$_5ee75d1abe7eae30,
+            mid_getDate_7a97f7e149e79afb,
+            mid_getLine_557b8123390d8d0c,
+            mid_getTarget_f88961cca75a2c0a,
+            mid_getTargetDirection_f88961cca75a2c0a,
+            mid_getTargetDirectionDerivative_f88961cca75a2c0a,
             max_mid
           };
 

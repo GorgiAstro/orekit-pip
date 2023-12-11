@@ -7,9 +7,9 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
+        class ObservableSatellite;
         class GroundStation;
         class AngularRaDec;
-        class ObservableSatellite;
       }
     }
     namespace frames {
@@ -45,11 +45,11 @@ namespace org {
         class AngularRaDec : public ::org::orekit::estimation::measurements::GroundReceiverMeasurement {
          public:
           enum {
-            mid_init$_895f80ea02a737c2,
-            mid_getObservedLineOfSight_e91e859b879f3586,
-            mid_getReferenceFrame_b86f9f61d97a7244,
-            mid_theoreticalEvaluationWithoutDerivatives_e32883476b3d9b22,
-            mid_theoreticalEvaluation_27ef5cc84ad0852b,
+            mid_init$_1d4154093d198556,
+            mid_getObservedLineOfSight_8386213426308de8,
+            mid_getReferenceFrame_6c9bc0a928c56d4e,
+            mid_theoreticalEvaluationWithoutDerivatives_71d69ca0f7c280a7,
+            mid_theoreticalEvaluation_eae039ee8c8a4a4d,
             max_mid
           };
 

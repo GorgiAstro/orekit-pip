@@ -4,30 +4,30 @@
 #include "java/lang/Enum.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
-    namespace frames {
-      class EOPHistory;
+    namespace time {
+      class TimeVectorFunction;
+      class FieldAbsoluteDate;
+      class TimeScalarFunction;
+      class TimeScales;
+      class AbsoluteDate;
+      class TimeScale;
     }
     namespace utils {
-      class IERSConventions;
-      class LoveNumbers;
       class IERSConventions$NutationCorrectionConverter;
+      class LoveNumbers;
+      class IERSConventions;
+    }
+    namespace frames {
+      class EOPHistory;
     }
     namespace data {
       class PoissonSeries$CompiledSeries;
       class FundamentalNutationArguments;
     }
-    namespace time {
-      class TimeScales;
-      class TimeScalarFunction;
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-      class TimeVectorFunction;
-      class TimeScale;
-    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -45,49 +45,49 @@ namespace org {
       class IERSConventions : public ::java::lang::Enum {
        public:
         enum {
-          mid_evaluateTC_bf1d7732f1acb697,
-          mid_evaluateTC_2a5f05be83ff251d,
-          mid_evaluateTC_77a84556e854cabe,
-          mid_evaluateTC_202c67cceb997c33,
-          mid_getEOPTidalCorrection_2029114ac725bb80,
-          mid_getEOPTidalCorrection_388ffaf18cf259ad,
-          mid_getEarthOrientationAngleFunction_4f84269f5949ae74,
-          mid_getEarthOrientationAngleFunction_49033c7bb7135703,
-          mid_getGASTFunction_0f1253b45c45601c,
-          mid_getGASTFunction_01618c29039035a5,
-          mid_getGMSTFunction_4f84269f5949ae74,
-          mid_getGMSTFunction_4026e3bd370d7174,
-          mid_getGMSTRateFunction_4f84269f5949ae74,
-          mid_getGMSTRateFunction_4026e3bd370d7174,
-          mid_getLoveNumbers_07dbee69df37c1f2,
-          mid_getMeanObliquityFunction_e5e32d8601923166,
-          mid_getMeanObliquityFunction_6070dbe839741045,
-          mid_getNominalTidalDisplacement_60c7040667a7dc5c,
-          mid_getNutationArguments_8dda5d7b821bcb03,
-          mid_getNutationArguments_bf8e13b455a844df,
-          mid_getNutationCorrectionConverter_0c47cb966ded8a1b,
-          mid_getNutationCorrectionConverter_90ad6aea41ec9c7a,
-          mid_getNutationFunction_2029114ac725bb80,
-          mid_getNutationFunction_388ffaf18cf259ad,
-          mid_getNutationReferenceEpoch_85703d13e302437e,
-          mid_getNutationReferenceEpoch_d8a78748e466a958,
-          mid_getOceanPoleTide_51b2cbed57d6565b,
-          mid_getPermanentTide_dff5885c2c873297,
-          mid_getPrecessionFunction_2029114ac725bb80,
-          mid_getPrecessionFunction_388ffaf18cf259ad,
-          mid_getSolidPoleTide_51b2cbed57d6565b,
-          mid_getTidalDisplacementFrequencyCorrectionDiurnal_750c1a26cb878eba,
-          mid_getTidalDisplacementFrequencyCorrectionZonal_750c1a26cb878eba,
-          mid_getTideFrequencyDependenceFunction_894febc40533d83e,
-          mid_getTideFrequencyDependenceFunction_a641939742e1d64f,
-          mid_getXYSpXY2Function_2029114ac725bb80,
-          mid_getXYSpXY2Function_388ffaf18cf259ad,
-          mid_valueOf_9198903a32309f8c,
-          mid_values_02521f9540354471,
-          mid_getNutationArguments_9f8d6c56795a04cd,
-          mid_getTidalDisplacementFrequencyCorrectionDiurnal_198e36ee8b14f9cf,
-          mid_getTidalDisplacementFrequencyCorrectionZonal_198e36ee8b14f9cf,
-          mid_loadLoveNumbers_7f265c46e8c28dcf,
+          mid_evaluateTC_b0b988f941da47d8,
+          mid_evaluateTC_b884068a2c99f6ca,
+          mid_evaluateTC_afadb93117a91cf2,
+          mid_evaluateTC_c40527712cc30fd1,
+          mid_getEOPTidalCorrection_b02468de716866b4,
+          mid_getEOPTidalCorrection_a94f012293f7f4b2,
+          mid_getEarthOrientationAngleFunction_784463606954bfa7,
+          mid_getEarthOrientationAngleFunction_3e34b3a99275c31a,
+          mid_getGASTFunction_4a023417c19b9473,
+          mid_getGASTFunction_f07e9d6f5265aad9,
+          mid_getGMSTFunction_784463606954bfa7,
+          mid_getGMSTFunction_8903ace4b49f0e54,
+          mid_getGMSTRateFunction_784463606954bfa7,
+          mid_getGMSTRateFunction_8903ace4b49f0e54,
+          mid_getLoveNumbers_a9df4cfa6ee57f12,
+          mid_getMeanObliquityFunction_a972ac0ab6da9ec1,
+          mid_getMeanObliquityFunction_a61297b447dbba8e,
+          mid_getNominalTidalDisplacement_a53a7513ecedada2,
+          mid_getNutationArguments_57a5edd5dc7498d8,
+          mid_getNutationArguments_c364e89eb2d3ab86,
+          mid_getNutationCorrectionConverter_960af55dff8aba2e,
+          mid_getNutationCorrectionConverter_7010f229a93dbb70,
+          mid_getNutationFunction_b02468de716866b4,
+          mid_getNutationFunction_a94f012293f7f4b2,
+          mid_getNutationReferenceEpoch_7a97f7e149e79afb,
+          mid_getNutationReferenceEpoch_8de65d6ed0f5ceba,
+          mid_getOceanPoleTide_0a7ff33fcbeaa3c8,
+          mid_getPermanentTide_557b8123390d8d0c,
+          mid_getPrecessionFunction_b02468de716866b4,
+          mid_getPrecessionFunction_a94f012293f7f4b2,
+          mid_getSolidPoleTide_0a7ff33fcbeaa3c8,
+          mid_getTidalDisplacementFrequencyCorrectionDiurnal_400994325d6e2733,
+          mid_getTidalDisplacementFrequencyCorrectionZonal_400994325d6e2733,
+          mid_getTideFrequencyDependenceFunction_35cfab1ad1c0cc40,
+          mid_getTideFrequencyDependenceFunction_6f9a6c351b205bd8,
+          mid_getXYSpXY2Function_b02468de716866b4,
+          mid_getXYSpXY2Function_a94f012293f7f4b2,
+          mid_valueOf_63ad83029409cd4f,
+          mid_values_a7ec554e9bd0f016,
+          mid_getNutationArguments_fe8e5b508ab40d8c,
+          mid_getTidalDisplacementFrequencyCorrectionDiurnal_d8b69ba2f66d7675,
+          mid_getTidalDisplacementFrequencyCorrectionZonal_d8b69ba2f66d7675,
+          mid_loadLoveNumbers_b1eecaa531085753,
           max_mid
         };
 

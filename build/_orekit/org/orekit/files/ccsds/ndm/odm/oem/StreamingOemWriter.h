@@ -10,9 +10,9 @@ namespace org {
         namespace ndm {
           namespace odm {
             namespace oem {
-              class StreamingOemWriter$SegmentWriter;
               class OemWriter;
               class OemMetadata;
+              class StreamingOemWriter$SegmentWriter;
             }
             class OdmHeader;
           }
@@ -48,11 +48,11 @@ namespace org {
               class StreamingOemWriter : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_a2ae4acdbb2a1ace,
-                  mid_init$_31126342ab987ed6,
-                  mid_init$_c297c56ee9a12ddd,
-                  mid_close_0fa09c18fee449d5,
-                  mid_newSegment_f219119970ffa746,
+                  mid_init$_945023d2895847d0,
+                  mid_init$_1fcc7d486e776df4,
+                  mid_init$_d3cf3d1523bc52fe,
+                  mid_close_0640e6acf969ed28,
+                  mid_newSegment_878e48bbd4ba0a8e,
                   max_mid
                 };
 

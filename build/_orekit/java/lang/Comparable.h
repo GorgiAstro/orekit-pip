@@ -16,7 +16,7 @@ namespace java {
     class Comparable : public ::java::lang::Object {
      public:
       enum {
-        mid_compareTo_90eb61a0d5cc5e34,
+        mid_compareTo_38a1845c8d44a9b0,
         max_mid
       };
 

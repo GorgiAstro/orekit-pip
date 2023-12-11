@@ -15,15 +15,15 @@ namespace org {
     class Field;
   }
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
     namespace utils {
-      class FieldPVCoordinatesProvider;
       class TimeStampedFieldPVCoordinates;
+      class FieldPVCoordinatesProvider;
     }
     namespace time {
       class FieldAbsoluteDate;
+    }
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -41,9 +41,9 @@ namespace org {
       class ExtendedPVCoordinatesProvider : public ::org::orekit::utils::PVCoordinatesProvider {
        public:
         enum {
-          mid_getPVCoordinates_2cdae1c350dc3e9a,
-          mid_getPosition_edb3d4e7c6d4d2e6,
-          mid_toFieldPVCoordinatesProvider_d72544f06817e18b,
+          mid_getPVCoordinates_4ac52e75113a03db,
+          mid_getPosition_8fac774a8fbb3d99,
+          mid_toFieldPVCoordinatesProvider_cdcdbddb8a8cc591,
           max_mid
         };
 

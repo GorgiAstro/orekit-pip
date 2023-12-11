@@ -3,22 +3,6 @@
 
 #include "org/orekit/propagation/AbstractMatricesHarvester.h"
 
-namespace org {
-  namespace orekit {
-    namespace orbits {
-      class PositionAngleType;
-      class OrbitType;
-    }
-    namespace utils {
-      class DoubleArrayDictionary;
-    }
-  }
-  namespace hipparchus {
-    namespace linear {
-      class RealMatrix;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -27,6 +11,22 @@ namespace java {
     class Throwable;
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace utils {
+      class DoubleArrayDictionary;
+    }
+    namespace orbits {
+      class OrbitType;
+      class PositionAngleType;
+    }
+  }
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
+    }
   }
 }
 template<class T> class JArray;
@@ -38,15 +38,15 @@ namespace org {
       class PythonAbstractMatricesHarvester : public ::org::orekit::propagation::AbstractMatricesHarvester {
        public:
         enum {
-          mid_init$_4eed9f37096d374b,
-          mid_finalize_0fa09c18fee449d5,
-          mid_freezeColumnsNames_0fa09c18fee449d5,
-          mid_getJacobiansColumnsNames_2afa36052df4765d,
-          mid_getOrbitType_e29360d311dc0e20,
-          mid_getPositionAngleType_8f17e83e5a86217c,
-          mid_pythonDecRef_0fa09c18fee449d5,
-          mid_pythonExtension_492808a339bfa35f,
-          mid_pythonExtension_3a8e7649f31fdb20,
+          mid_init$_37a7a25250858c8e,
+          mid_finalize_0640e6acf969ed28,
+          mid_freezeColumnsNames_0640e6acf969ed28,
+          mid_getJacobiansColumnsNames_0d9551367f7ecdef,
+          mid_getOrbitType_2cea2a2cb3e02091,
+          mid_getPositionAngleType_f4984aee71df4c19,
+          mid_pythonDecRef_0640e6acf969ed28,
+          mid_pythonExtension_9e26256fb0d384a2,
+          mid_pythonExtension_3cd6a6b354c6aa22,
           max_mid
         };
 

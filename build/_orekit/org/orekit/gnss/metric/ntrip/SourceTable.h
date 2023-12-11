@@ -3,6 +3,19 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace gnss {
+      namespace metric {
+        namespace ntrip {
+          class CasterRecord;
+          class NetworkRecord;
+          class DataStreamRecord;
+        }
+      }
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,19 +23,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace gnss {
-      namespace metric {
-        namespace ntrip {
-          class DataStreamRecord;
-          class CasterRecord;
-          class NetworkRecord;
-        }
-      }
-    }
   }
 }
 template<class T> class JArray;
@@ -36,10 +36,10 @@ namespace org {
           class SourceTable : public ::java::lang::Object {
            public:
             enum {
-              mid_getCasters_2afa36052df4765d,
-              mid_getDataStreams_2afa36052df4765d,
-              mid_getNetworks_2afa36052df4765d,
-              mid_getNtripFlags_11b109bd155ca898,
+              mid_getCasters_0d9551367f7ecdef,
+              mid_getDataStreams_0d9551367f7ecdef,
+              mid_getNetworks_0d9551367f7ecdef,
+              mid_getNtripFlags_3cffd47377eca18a,
               max_mid
             };
 

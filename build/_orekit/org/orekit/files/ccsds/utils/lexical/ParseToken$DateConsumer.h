@@ -27,7 +27,7 @@ namespace org {
             class ParseToken$DateConsumer : public ::java::lang::Object {
              public:
               enum {
-                mid_accept_600a2a61652bc473,
+                mid_accept_20affcbd28542333,
                 max_mid
               };
 

@@ -4,27 +4,27 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
-    namespace orbits {
-      class PositionAngleType;
-      class OrbitType;
-    }
-    namespace frames {
-      class Frame;
-    }
     namespace propagation {
-      class PropagationType;
       class FieldSpacecraftState;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
+      class PropagationType;
     }
     namespace time {
       class FieldAbsoluteDate;
     }
+    namespace orbits {
+      class OrbitType;
+      class PositionAngleType;
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -42,19 +42,19 @@ namespace org {
         class FieldStateMapper : public ::java::lang::Object {
          public:
           enum {
-            mid_getAttitudeProvider_a904f3d015a354a0,
-            mid_getFrame_b86f9f61d97a7244,
-            mid_getMu_eba8e72a22c984ac,
-            mid_getOrbitType_e29360d311dc0e20,
-            mid_getPositionAngleType_8f17e83e5a86217c,
-            mid_getReferenceDate_51da00d5b8a3b5df,
-            mid_mapArrayToState_2bc4466f5de6b26b,
-            mid_mapArrayToState_4538da74350c9224,
-            mid_mapDateToDouble_2a5f05be83ff251d,
-            mid_mapDoubleToDate_1975a0ad09e731d5,
-            mid_mapDoubleToDate_dc6ab73d9602ecfc,
-            mid_mapStateToArray_e85151cf356bb2fe,
-            mid_setPositionAngleType_0fa09c18fee449d5,
+            mid_getAttitudeProvider_6df6b78ab9377151,
+            mid_getFrame_6c9bc0a928c56d4e,
+            mid_getMu_613c8f46c659f636,
+            mid_getOrbitType_2cea2a2cb3e02091,
+            mid_getPositionAngleType_f4984aee71df4c19,
+            mid_getReferenceDate_f1fe4daf77c66560,
+            mid_mapArrayToState_90cbab6bce028b0d,
+            mid_mapArrayToState_2d55a845b18a3006,
+            mid_mapDateToDouble_b884068a2c99f6ca,
+            mid_mapDoubleToDate_61a24ec56865ba5a,
+            mid_mapDoubleToDate_3281eb2bff5217b3,
+            mid_mapStateToArray_b5f12a51288f780a,
+            mid_setPositionAngleType_0640e6acf969ed28,
             max_mid
           };
 

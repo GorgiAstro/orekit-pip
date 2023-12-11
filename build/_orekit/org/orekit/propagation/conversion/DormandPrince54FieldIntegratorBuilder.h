@@ -5,15 +5,15 @@
 
 namespace org {
   namespace hipparchus {
+    class Field;
     namespace ode {
       class AbstractFieldIntegrator;
     }
-    class Field;
   }
   namespace orekit {
     namespace orbits {
-      class Orbit;
       class OrbitType;
+      class Orbit;
     }
   }
 }
@@ -32,8 +32,8 @@ namespace org {
         class DormandPrince54FieldIntegratorBuilder : public ::org::orekit::propagation::conversion::AbstractVariableStepFieldIntegratorBuilder {
          public:
           enum {
-            mid_init$_2c56b6dd4d4b1dec,
-            mid_buildIntegrator_048f7039a7622a2b,
+            mid_init$_87096e3fd8086100,
+            mid_buildIntegrator_3a1ee7ebe4f0e344,
             max_mid
           };
 

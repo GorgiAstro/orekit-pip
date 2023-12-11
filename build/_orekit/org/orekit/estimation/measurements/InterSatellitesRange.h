@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class InterSatellitesRange;
         class ObservableSatellite;
+        class InterSatellitesRange;
       }
     }
     namespace time {
@@ -32,10 +32,10 @@ namespace org {
         class InterSatellitesRange : public ::org::orekit::estimation::measurements::AbstractMeasurement {
          public:
           enum {
-            mid_init$_22abf2f8074d5895,
-            mid_isTwoWay_b108b35ef48e27bd,
-            mid_theoreticalEvaluationWithoutDerivatives_e32883476b3d9b22,
-            mid_theoreticalEvaluation_27ef5cc84ad0852b,
+            mid_init$_a2d3c0162de8f6fd,
+            mid_isTwoWay_89b302893bdbe1f1,
+            mid_theoreticalEvaluationWithoutDerivatives_71d69ca0f7c280a7,
+            mid_theoreticalEvaluation_eae039ee8c8a4a4d,
             max_mid
           };
 

@@ -9,8 +9,8 @@ namespace org {
       namespace metric {
         namespace messages {
           namespace common {
-            class OrbitCorrection;
             class ClockCorrection;
+            class OrbitCorrection;
           }
         }
       }
@@ -35,13 +35,13 @@ namespace org {
               class RtcmCombinedCorrectionData : public ::org::orekit::gnss::metric::messages::rtcm::correction::RtcmCorrectionData {
                public:
                 enum {
-                  mid_init$_0fa09c18fee449d5,
-                  mid_getClockCorrection_ac204103acb34678,
-                  mid_getGnssIod_570ce0828f81a2c1,
-                  mid_getOrbitCorrection_ed0d27aa2377afa2,
-                  mid_setClockCorrection_b67ff9100e1cd031,
-                  mid_setGnssIod_99803b0791f320ff,
-                  mid_setOrbitCorrection_4d608774f859b10b,
+                  mid_init$_0640e6acf969ed28,
+                  mid_getClockCorrection_96d5462b84e1a874,
+                  mid_getGnssIod_412668abc8d889e9,
+                  mid_getOrbitCorrection_58d117cad6f91792,
+                  mid_setClockCorrection_cf572ee5ddb143ac,
+                  mid_setGnssIod_a3da1a935cb37f7b,
+                  mid_setOrbitCorrection_9a400e8af37b7414,
                   max_mid
                 };
 

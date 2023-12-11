@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -18,8 +10,11 @@ namespace org {
       class DOP;
     }
     namespace bodies {
-      class OneAxisEllipsoid;
       class GeodeticPoint;
+      class OneAxisEllipsoid;
+    }
+    namespace utils {
+      class ElevationMask;
     }
     namespace propagation {
       class Propagator;
@@ -27,9 +22,14 @@ namespace org {
     namespace time {
       class AbsoluteDate;
     }
-    namespace utils {
-      class ElevationMask;
-    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -41,12 +41,12 @@ namespace org {
       class DOPComputer : public ::java::lang::Object {
        public:
         enum {
-          mid_compute_370dd6e157cc4c90,
-          mid_create_759c52f3efaa4f0c,
-          mid_getElevationMask_a2b53d9e5ddb8a2d,
-          mid_getMinElevation_dff5885c2c873297,
-          mid_withElevationMask_fbe70e78b6eb5b3a,
-          mid_withMinElevation_c509d9237ff82859,
+          mid_compute_192575f77f52acac,
+          mid_create_6b6539a775e19157,
+          mid_getElevationMask_d8e21ec66d7f6ed7,
+          mid_getMinElevation_557b8123390d8d0c,
+          mid_withElevationMask_399027060c7ec7c2,
+          mid_withMinElevation_4d2a17737163760c,
           max_mid
         };
 

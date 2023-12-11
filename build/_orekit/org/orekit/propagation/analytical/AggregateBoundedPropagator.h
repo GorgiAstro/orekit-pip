@@ -21,8 +21,8 @@ namespace org {
       class AbsoluteDate;
     }
     namespace propagation {
-      class BoundedPropagator;
       class SpacecraftState;
+      class BoundedPropagator;
     }
     namespace utils {
       class TimeStampedPVCoordinates;
@@ -39,18 +39,18 @@ namespace org {
         class AggregateBoundedPropagator : public ::org::orekit::propagation::analytical::AbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_f72f53318f80c525,
-            mid_init$_d766e632da5d7770,
-            mid_getInitialState_c6311115fea01a34,
-            mid_getMaxDate_85703d13e302437e,
-            mid_getMinDate_85703d13e302437e,
-            mid_getPVCoordinates_cfeec55f7c63ec64,
-            mid_getPropagators_d71603ad1730c5c7,
-            mid_resetInitialState_0ee5c56004643a2e,
-            mid_propagateOrbit_7a8f4c854607bed6,
-            mid_getMass_bf1d7732f1acb697,
-            mid_resetIntermediateState_33f4696e4edaa03c,
-            mid_basicPropagate_fbff2ff5554d95e1,
+            mid_init$_3abde0be9b9c9773,
+            mid_init$_e923c5ed0622afbe,
+            mid_getInitialState_15e85d5301b90ef8,
+            mid_getMaxDate_7a97f7e149e79afb,
+            mid_getMinDate_7a97f7e149e79afb,
+            mid_getPVCoordinates_17742a9a6655bdb1,
+            mid_getPropagators_60eb75cca6401fd1,
+            mid_resetInitialState_8655761ebf04b503,
+            mid_propagateOrbit_9e937c0ae63d8022,
+            mid_resetIntermediateState_45bf76e836befe86,
+            mid_getMass_b0b988f941da47d8,
+            mid_basicPropagate_15e0d02372b1347b,
             max_mid
           };
 

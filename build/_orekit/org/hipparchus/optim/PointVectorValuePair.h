@@ -20,12 +20,12 @@ namespace org {
       class PointVectorValuePair : public ::org::hipparchus::util::Pair {
        public:
         enum {
-          mid_init$_e1f4b15468f5564a,
-          mid_init$_d7aa1cbd3c7df90a,
-          mid_getPoint_60c7040667a7dc5c,
-          mid_getPointRef_60c7040667a7dc5c,
-          mid_getValue_60c7040667a7dc5c,
-          mid_getValueRef_60c7040667a7dc5c,
+          mid_init$_ab4840ba016ef1da,
+          mid_init$_ef37244d0d44cd23,
+          mid_getPoint_a53a7513ecedada2,
+          mid_getPointRef_a53a7513ecedada2,
+          mid_getValue_a53a7513ecedada2,
+          mid_getValueRef_a53a7513ecedada2,
           max_mid
         };
 

@@ -24,7 +24,7 @@ namespace org {
       class SimpleTimeStampedTableParser$RowConverter : public ::java::lang::Object {
        public:
         enum {
-          mid_convert_a343645103cbfbac,
+          mid_convert_882a135460ccee29,
           max_mid
         };
 

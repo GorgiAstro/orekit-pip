@@ -5,14 +5,13 @@
 
 namespace org {
   namespace orekit {
-    namespace bodies {
-      class LazyLoadedCelestialBodies;
-    }
-    namespace time {
-      class LazyLoadedTimeScales;
-    }
     namespace frames {
       class LazyLoadedFrames;
+    }
+    namespace models {
+      namespace earth {
+        class LazyLoadedGeoMagneticFields;
+      }
     }
     namespace forces {
       namespace gravity {
@@ -21,10 +20,11 @@ namespace org {
         }
       }
     }
-    namespace models {
-      namespace earth {
-        class LazyLoadedGeoMagneticFields;
-      }
+    namespace bodies {
+      class LazyLoadedCelestialBodies;
+    }
+    namespace time {
+      class LazyLoadedTimeScales;
     }
   }
 }
@@ -42,12 +42,12 @@ namespace org {
       class ExceptionalDataContext : public ::org::orekit::data::LazyLoadedDataContext {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_getCelestialBodies_fc81056d907ed286,
-          mid_getFrames_ac56fa33f5ed59f4,
-          mid_getGeoMagneticFields_df53e62f422caa08,
-          mid_getGravityFields_6e6081b92fd46837,
-          mid_getTimeScales_81309dd1495ca0f7,
+          mid_init$_0640e6acf969ed28,
+          mid_getCelestialBodies_2192d5132b3243a4,
+          mid_getFrames_19dab31df3f9900d,
+          mid_getGeoMagneticFields_f938ea66f56d3454,
+          mid_getGravityFields_0d8a4be514230626,
+          mid_getTimeScales_52cbe31230c76b6b,
           max_mid
         };
 

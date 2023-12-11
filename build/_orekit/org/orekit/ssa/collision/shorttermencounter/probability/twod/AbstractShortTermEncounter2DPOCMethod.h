@@ -5,27 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      class StateCovariance;
-      class FieldStateCovariance;
-    }
-    namespace ssa {
-      namespace collision {
-        namespace shorttermencounter {
-          namespace probability {
-            namespace twod {
-              class ShortTermEncounter2DDefinition;
-              class ShortTermEncounter2DPOCMethod;
-              class FieldShortTermEncounter2DDefinition;
-            }
-          }
-        }
-      }
-      namespace metrics {
-        class FieldProbabilityOfCollision;
-        class ProbabilityOfCollision;
-      }
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -35,9 +14,30 @@ namespace org {
         }
       }
     }
+    namespace ssa {
+      namespace metrics {
+        class FieldProbabilityOfCollision;
+        class ProbabilityOfCollision;
+      }
+      namespace collision {
+        namespace shorttermencounter {
+          namespace probability {
+            namespace twod {
+              class FieldShortTermEncounter2DDefinition;
+              class ShortTermEncounter2DPOCMethod;
+              class ShortTermEncounter2DDefinition;
+            }
+          }
+        }
+      }
+    }
     namespace orbits {
       class Orbit;
       class FieldOrbit;
+    }
+    namespace propagation {
+      class FieldStateCovariance;
+      class StateCovariance;
     }
   }
   namespace hipparchus {
@@ -63,18 +63,18 @@ namespace org {
               class AbstractShortTermEncounter2DPOCMethod : public ::java::lang::Object {
                public:
                 enum {
-                  mid_compute_7ed362902ba10174,
-                  mid_compute_4d249761aa92e117,
-                  mid_compute_091f0943f3979390,
-                  mid_compute_44d723598fb6a077,
-                  mid_compute_184c2f4ec5889c74,
-                  mid_compute_0ed38e7bbee7fafc,
-                  mid_compute_77dbe9f2fcda2496,
-                  mid_compute_1c26d4a5b9c10569,
-                  mid_getName_11b109bd155ca898,
-                  mid_isAMaximumProbabilityOfCollisionMethod_b108b35ef48e27bd,
-                  mid_getObjectOrbitFromCdm_97e5b21be4be034a,
-                  mid_getObjectStateCovarianceFromCdm_199478496fa5b1ee,
+                  mid_compute_7917f8d0fe4dcee2,
+                  mid_compute_5bd7443246955087,
+                  mid_compute_d4afe7edfd93d28b,
+                  mid_compute_54a027380ebb9f4f,
+                  mid_compute_ddf22cd33bfe153c,
+                  mid_compute_8d09da96ce925a0b,
+                  mid_compute_51013759c7807d3e,
+                  mid_compute_0fff86b0133b54f7,
+                  mid_getName_3cffd47377eca18a,
+                  mid_isAMaximumProbabilityOfCollisionMethod_89b302893bdbe1f1,
+                  mid_getObjectOrbitFromCdm_73f786077ee136c5,
+                  mid_getObjectStateCovarianceFromCdm_225db9af3cee9489,
                   max_mid
                 };
 

@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -14,31 +13,32 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
   namespace orekit {
-    namespace forces {
-      namespace gravity {
-        namespace potential {
-          class NormalizedSphericalHarmonicsProvider;
-          class TideSystemProvider;
-          class TideSystem;
-        }
-      }
-      class ForceModel;
-    }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
-    namespace frames {
-      class Frame;
+    namespace forces {
+      namespace gravity {
+        namespace potential {
+          class TideSystemProvider;
+          class TideSystem;
+          class NormalizedSphericalHarmonicsProvider;
+        }
+      }
+      class ForceModel;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
     namespace utils {
       class ParameterDriver;
     }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -60,18 +60,18 @@ namespace org {
         class HolmesFeatherstoneAttractionModel : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_42c0b505a2daeafd,
-            mid_acceleration_8954761face5e1a7,
-            mid_acceleration_b42ac4b5bfb80fab,
-            mid_dependsOnPositionOnly_b108b35ef48e27bd,
-            mid_getMu_dff5885c2c873297,
-            mid_getMu_bf1d7732f1acb697,
-            mid_getParametersDrivers_2afa36052df4765d,
-            mid_getTideSystem_c68abf1ca1fc273e,
-            mid_gradient_6677da9044a1cae1,
-            mid_gradient_0f32a827e3dcb556,
-            mid_nonCentralPart_7f2dc7ef92d08c2a,
-            mid_value_7f2dc7ef92d08c2a,
+            mid_init$_cb3e6c602ff511eb,
+            mid_acceleration_b61fb59a041240c6,
+            mid_acceleration_61944e27a39e8290,
+            mid_dependsOnPositionOnly_89b302893bdbe1f1,
+            mid_getMu_557b8123390d8d0c,
+            mid_getMu_b0b988f941da47d8,
+            mid_getParametersDrivers_0d9551367f7ecdef,
+            mid_getTideSystem_7d9a2a298dcb49fa,
+            mid_gradient_67cb4b664c333873,
+            mid_gradient_e6b613f6a8d3aa0e,
+            mid_nonCentralPart_53ff1fab7c351985,
+            mid_value_53ff1fab7c351985,
             max_mid
           };
 
@@ -88,15 +88,15 @@ namespace org {
 
           HolmesFeatherstoneAttractionModel(const ::org::orekit::frames::Frame &, const ::org::orekit::forces::gravity::potential::NormalizedSphericalHarmonicsProvider &);
 
-          ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
           ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
+          ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
           jboolean dependsOnPositionOnly() const;
           jdouble getMu() const;
           jdouble getMu(const ::org::orekit::time::AbsoluteDate &) const;
           ::java::util::List getParametersDrivers() const;
           ::org::orekit::forces::gravity::potential::TideSystem getTideSystem() const;
-          JArray< ::org::hipparchus::CalculusFieldElement > gradient(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::hipparchus::CalculusFieldElement &) const;
           JArray< jdouble > gradient(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, jdouble) const;
+          JArray< ::org::hipparchus::CalculusFieldElement > gradient(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::hipparchus::CalculusFieldElement &) const;
           jdouble nonCentralPart(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, jdouble) const;
           jdouble value(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, jdouble) const;
         };

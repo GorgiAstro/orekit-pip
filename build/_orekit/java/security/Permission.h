@@ -4,16 +4,16 @@
 #include "java/lang/Object.h"
 
 namespace java {
+  namespace lang {
+    class SecurityException;
+    class Class;
+    class String;
+  }
   namespace io {
     class Serializable;
   }
   namespace security {
     class Permission;
-  }
-  namespace lang {
-    class Class;
-    class SecurityException;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -24,14 +24,14 @@ namespace java {
     class Permission : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_d0bc48d5b00dc40c,
-        mid_checkGuard_2990946c992aafed,
-        mid_equals_65c7d273e80d497a,
-        mid_getActions_11b109bd155ca898,
-        mid_getName_11b109bd155ca898,
-        mid_hashCode_570ce0828f81a2c1,
-        mid_implies_fd5914bb7b2ed7bc,
-        mid_toString_11b109bd155ca898,
+        mid_init$_f5ffdf29129ef90a,
+        mid_checkGuard_009757f2c0fd9090,
+        mid_equals_221e8e85cb385209,
+        mid_getActions_3cffd47377eca18a,
+        mid_getName_3cffd47377eca18a,
+        mid_hashCode_412668abc8d889e9,
+        mid_implies_a8c459a5c587bd4f,
+        mid_toString_3cffd47377eca18a,
         max_mid
       };
 

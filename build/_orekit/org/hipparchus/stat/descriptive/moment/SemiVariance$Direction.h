@@ -31,8 +31,8 @@ namespace org {
           class SemiVariance$Direction : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_49b8ea7599d58688,
-              mid_values_a91e0e5bbc0692ab,
+              mid_valueOf_47f84cc3a8ad1cd7,
+              mid_values_83f57805c36f76b0,
               max_mid
             };
 

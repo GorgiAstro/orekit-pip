@@ -28,21 +28,21 @@ namespace org {
       class FieldDelaunayArguments : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_d6694262f79a2a57,
-          mid_getD_eba8e72a22c984ac,
-          mid_getDDot_eba8e72a22c984ac,
-          mid_getDate_51da00d5b8a3b5df,
-          mid_getF_eba8e72a22c984ac,
-          mid_getFDot_eba8e72a22c984ac,
-          mid_getGamma_eba8e72a22c984ac,
-          mid_getGammaDot_eba8e72a22c984ac,
-          mid_getL_eba8e72a22c984ac,
-          mid_getLDot_eba8e72a22c984ac,
-          mid_getLPrime_eba8e72a22c984ac,
-          mid_getLPrimeDot_eba8e72a22c984ac,
-          mid_getOmega_eba8e72a22c984ac,
-          mid_getOmegaDot_eba8e72a22c984ac,
-          mid_getTC_eba8e72a22c984ac,
+          mid_init$_aa952c80edca6122,
+          mid_getD_613c8f46c659f636,
+          mid_getDDot_613c8f46c659f636,
+          mid_getDate_f1fe4daf77c66560,
+          mid_getF_613c8f46c659f636,
+          mid_getFDot_613c8f46c659f636,
+          mid_getGamma_613c8f46c659f636,
+          mid_getGammaDot_613c8f46c659f636,
+          mid_getL_613c8f46c659f636,
+          mid_getLDot_613c8f46c659f636,
+          mid_getLPrime_613c8f46c659f636,
+          mid_getLPrimeDot_613c8f46c659f636,
+          mid_getOmega_613c8f46c659f636,
+          mid_getOmegaDot_613c8f46c659f636,
+          mid_getTC_613c8f46c659f636,
           max_mid
         };
 

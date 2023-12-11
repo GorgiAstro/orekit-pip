@@ -20,19 +20,19 @@ namespace org {
             class GalileoNavigationMessage : public ::org::orekit::propagation::analytical::gnss::data::AbstractNavigationMessage {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_getBGDE1E5a_dff5885c2c873297,
-                mid_getBGDE5bE1_dff5885c2c873297,
-                mid_getDataSource_570ce0828f81a2c1,
-                mid_getIODNav_570ce0828f81a2c1,
-                mid_getSisa_dff5885c2c873297,
-                mid_getSvHealth_dff5885c2c873297,
-                mid_setBGDE1E5a_17db3a65980d3441,
-                mid_setBGDE5bE1_17db3a65980d3441,
-                mid_setDataSource_99803b0791f320ff,
-                mid_setIODNav_99803b0791f320ff,
-                mid_setSisa_17db3a65980d3441,
-                mid_setSvHealth_17db3a65980d3441,
+                mid_init$_0640e6acf969ed28,
+                mid_getBGDE1E5a_557b8123390d8d0c,
+                mid_getBGDE5bE1_557b8123390d8d0c,
+                mid_getDataSource_412668abc8d889e9,
+                mid_getIODNav_412668abc8d889e9,
+                mid_getSisa_557b8123390d8d0c,
+                mid_getSvHealth_557b8123390d8d0c,
+                mid_setBGDE1E5a_10f281d777284cea,
+                mid_setBGDE5bE1_10f281d777284cea,
+                mid_setDataSource_a3da1a935cb37f7b,
+                mid_setIODNav_a3da1a935cb37f7b,
+                mid_setSisa_10f281d777284cea,
+                mid_setSvHealth_10f281d777284cea,
                 max_mid
               };
 

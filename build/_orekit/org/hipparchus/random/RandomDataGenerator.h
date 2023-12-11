@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace distribution {
-      class IntegerDistribution;
       class RealDistribution;
+      class IntegerDistribution;
     }
     namespace exception {
       class MathIllegalArgumentException;
@@ -40,29 +40,29 @@ namespace org {
       class RandomDataGenerator : public ::org::hipparchus::random::ForwardingRandomGenerator {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_init$_3a8e7649f31fdb20,
-          mid_nextBeta_86ffecc08a63eff0,
-          mid_nextDeviate_920595bf12cadb2a,
-          mid_nextDeviate_a601ec4de303a373,
-          mid_nextDeviates_0ffb852e66a0db85,
-          mid_nextDeviates_14efafc24c1489a9,
-          mid_nextExponential_dcbc7ce2902fa136,
-          mid_nextGamma_86ffecc08a63eff0,
-          mid_nextHexString_8cc8a10236476f23,
-          mid_nextInt_819f91eddf220c5b,
-          mid_nextLogNormal_86ffecc08a63eff0,
-          mid_nextLong_fe4804b67425641b,
-          mid_nextNormal_86ffecc08a63eff0,
-          mid_nextPermutation_f2bc73ddcd6acde6,
-          mid_nextPoisson_4508852644846c83,
-          mid_nextSample_118f9c80345bfb12,
-          mid_nextSample_c53357cdb1932b75,
-          mid_nextSampleWithReplacement_0e70f0fa1a405a85,
-          mid_nextUniform_86ffecc08a63eff0,
-          mid_nextZipf_687d91bbad5d613d,
-          mid_of_f9e719b4bf1a1b8c,
-          mid_delegate_cf774856d74e158c,
+          mid_init$_0640e6acf969ed28,
+          mid_init$_3cd6a6b354c6aa22,
+          mid_nextBeta_2268d18be49a6087,
+          mid_nextDeviate_769ab1e031b83fa6,
+          mid_nextDeviate_e2283b5af8ea84db,
+          mid_nextDeviates_3885143c3870d976,
+          mid_nextDeviates_266304a22b47de3b,
+          mid_nextExponential_7e960cd6eee376d8,
+          mid_nextGamma_2268d18be49a6087,
+          mid_nextHexString_0f10d4a5e06f61c0,
+          mid_nextInt_5625cf3db98dadc1,
+          mid_nextLogNormal_2268d18be49a6087,
+          mid_nextLong_c18ab8eab0c49f84,
+          mid_nextNormal_2268d18be49a6087,
+          mid_nextPermutation_e2b10810209e9407,
+          mid_nextPoisson_abbeb9db7144ca23,
+          mid_nextSample_07b003307208ca7c,
+          mid_nextSample_e1c657623dd8ba44,
+          mid_nextSampleWithReplacement_d36a547e4410f3b1,
+          mid_nextUniform_2268d18be49a6087,
+          mid_nextZipf_36a7cf95cc3d8465,
+          mid_of_9bdc5c0c9ae623bb,
+          mid_delegate_94b7a5da78ee3cfb,
           max_mid
         };
 

@@ -8,9 +8,9 @@ namespace org {
     namespace forces {
       namespace gravity {
         namespace potential {
-          class RawSphericalHarmonicsProvider;
           class RawSphericalHarmonicsProvider$RawSphericalHarmonics;
           class TideSystem;
+          class RawSphericalHarmonicsProvider;
         }
       }
     }
@@ -36,18 +36,18 @@ namespace org {
           class PythonRawSphericalHarmonicsProvider : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_finalize_0fa09c18fee449d5,
-              mid_getAe_dff5885c2c873297,
-              mid_getMaxDegree_570ce0828f81a2c1,
-              mid_getMaxOrder_570ce0828f81a2c1,
-              mid_getMu_dff5885c2c873297,
-              mid_getReferenceDate_85703d13e302437e,
-              mid_getTideSystem_c68abf1ca1fc273e,
-              mid_onDate_25793e429590ca38,
-              mid_pythonDecRef_0fa09c18fee449d5,
-              mid_pythonExtension_492808a339bfa35f,
-              mid_pythonExtension_3a8e7649f31fdb20,
+              mid_init$_0640e6acf969ed28,
+              mid_finalize_0640e6acf969ed28,
+              mid_getAe_557b8123390d8d0c,
+              mid_getMaxDegree_412668abc8d889e9,
+              mid_getMaxOrder_412668abc8d889e9,
+              mid_getMu_557b8123390d8d0c,
+              mid_getReferenceDate_7a97f7e149e79afb,
+              mid_getTideSystem_7d9a2a298dcb49fa,
+              mid_onDate_5db0dfc8bd8b9574,
+              mid_pythonDecRef_0640e6acf969ed28,
+              mid_pythonExtension_9e26256fb0d384a2,
+              mid_pythonExtension_3cd6a6b354c6aa22,
               max_mid
             };
 

@@ -5,6 +5,13 @@
 
 namespace org {
   namespace hipparchus {
+    namespace random {
+      class RandomVectorGenerator;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+      class NullArgumentException;
+    }
     namespace optim {
       namespace nonlinear {
         namespace scalar {
@@ -12,13 +19,6 @@ namespace org {
         }
       }
       class PointValuePair;
-    }
-    namespace exception {
-      class NullArgumentException;
-      class MathIllegalArgumentException;
-    }
-    namespace random {
-      class RandomVectorGenerator;
     }
   }
 }
@@ -38,10 +38,10 @@ namespace org {
           class MultiStartMultivariateOptimizer : public ::org::hipparchus::optim::BaseMultiStartMultivariateOptimizer {
            public:
             enum {
-              mid_init$_088236b2089b209e,
-              mid_getOptima_fb04b599bc7d04e3,
-              mid_clear_0fa09c18fee449d5,
-              mid_store_ba76051a64c2f341,
+              mid_init$_c37061ecdb337b1c,
+              mid_getOptima_80ecb9f5bff58fab,
+              mid_clear_0640e6acf969ed28,
+              mid_store_45c1422479aa96f0,
               max_mid
             };
 

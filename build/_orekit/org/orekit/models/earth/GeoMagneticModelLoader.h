@@ -4,12 +4,12 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace text {
-    class ParseException;
-  }
   namespace io {
     class IOException;
     class InputStream;
+  }
+  namespace text {
+    class ParseException;
   }
   namespace util {
     class Collection;
@@ -41,10 +41,10 @@ namespace org {
         class GeoMagneticModelLoader : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_getModels_37528d110cff6b74,
-            mid_loadData_1815f85c118161ad,
-            mid_stillAcceptsData_b108b35ef48e27bd,
+            mid_init$_0640e6acf969ed28,
+            mid_getModels_12ee61573a18f417,
+            mid_loadData_15770e8d8949a557,
+            mid_stillAcceptsData_89b302893bdbe1f1,
             max_mid
           };
 

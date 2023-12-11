@@ -3,41 +3,41 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace utils {
-      class AngularCoordinates;
-      class TimeStampedAngularCoordinates;
-    }
-    namespace attitudes {
-      class Attitude;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class TimeStamped;
-      class TimeShiftable;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Rotation;
-          class Vector3D;
-        }
-      }
-    }
-  }
-}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+          class Rotation;
+        }
+      }
+    }
+  }
+  namespace orekit {
+    namespace utils {
+      class AngularCoordinates;
+      class TimeStampedAngularCoordinates;
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeShiftable;
+      class TimeStamped;
+    }
+    namespace attitudes {
+      class Attitude;
+    }
   }
 }
 template<class T> class JArray;
@@ -49,17 +49,17 @@ namespace org {
       class Attitude : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_dea257300c01aa24,
-          mid_init$_548f5fe1e94cd245,
-          mid_init$_deeadd030b9b683a,
-          mid_getDate_85703d13e302437e,
-          mid_getOrientation_b8bfd7046d8ee6f7,
-          mid_getReferenceFrame_b86f9f61d97a7244,
-          mid_getRotation_de86c7efc42eac14,
-          mid_getRotationAcceleration_d52645e0d4c07563,
-          mid_getSpin_d52645e0d4c07563,
-          mid_shiftedBy_97390777173603db,
-          mid_withReferenceFrame_4b6ab70a25936a1a,
+          mid_init$_fd44fd61f38f328a,
+          mid_init$_8d6d2d78e8e97666,
+          mid_init$_f61e782a3e250190,
+          mid_getDate_7a97f7e149e79afb,
+          mid_getOrientation_99d3c751073fda6d,
+          mid_getReferenceFrame_6c9bc0a928c56d4e,
+          mid_getRotation_1e0dc1a6788897b9,
+          mid_getRotationAcceleration_f88961cca75a2c0a,
+          mid_getSpin_f88961cca75a2c0a,
+          mid_shiftedBy_e946dd34d7cdbe89,
+          mid_withReferenceFrame_32f130533643b5b7,
           max_mid
         };
 

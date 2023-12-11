@@ -41,9 +41,9 @@ namespace org {
             class RTNCovarianceKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_a225aa4cbe503e97,
-                mid_valueOf_06ec16330ba26c4c,
-                mid_values_4fbf8d4000185b21,
+                mid_process_c93747e68be263a4,
+                mid_valueOf_89ea04f00a2b6f17,
+                mid_values_ce840628a444c420,
                 max_mid
               };
 

@@ -6,11 +6,11 @@
 namespace org {
   namespace orekit {
     namespace estimation {
-      namespace sequential {
-        class KalmanObserver;
-      }
       namespace measurements {
         class ObservedMeasurement;
+      }
+      namespace sequential {
+        class KalmanObserver;
       }
     }
     namespace propagation {
@@ -40,12 +40,12 @@ namespace org {
         class SemiAnalyticalProcess : public ::java::lang::Object {
          public:
           enum {
-            mid_finalizeEstimation_da0919b7ae9816a3,
-            mid_finalizeOperationsObservationGrid_0fa09c18fee449d5,
-            mid_getObserver_fc89aee73878aefd,
-            mid_initializeShortPeriodicTerms_0ee5c56004643a2e,
-            mid_updateNominalSpacecraftState_0ee5c56004643a2e,
-            mid_updateShortPeriods_0ee5c56004643a2e,
+            mid_finalizeEstimation_6f886d47d0124943,
+            mid_finalizeOperationsObservationGrid_0640e6acf969ed28,
+            mid_getObserver_25fab8044126746b,
+            mid_initializeShortPeriodicTerms_8655761ebf04b503,
+            mid_updateNominalSpacecraftState_8655761ebf04b503,
+            mid_updateShortPeriods_8655761ebf04b503,
             max_mid
           };
 

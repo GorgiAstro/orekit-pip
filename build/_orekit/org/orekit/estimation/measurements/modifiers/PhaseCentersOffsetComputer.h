@@ -3,21 +3,21 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
-    namespace frames {
-      class StaticTransform;
-    }
     namespace gnss {
       namespace antenna {
         class FrequencyPattern;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
+    namespace frames {
+      class StaticTransform;
+    }
   }
 }
 template<class T> class JArray;
@@ -31,8 +31,8 @@ namespace org {
           class PhaseCentersOffsetComputer : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a2ed374ecf8bf34a,
-              mid_offset_02d94d8d3b578650,
+              mid_init$_59cfeb08e5a13ccd,
+              mid_offset_998e18f6a9251793,
               max_mid
             };
 

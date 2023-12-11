@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace util {
       class FieldSinCos;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,11 +24,11 @@ namespace org {
       class FieldSinCos : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_ea69641e3fe74dd6,
-          mid_cos_4d26fd885228c716,
-          mid_difference_2e2927a46e3fad3f,
-          mid_sin_4d26fd885228c716,
-          mid_sum_2e2927a46e3fad3f,
+          mid_init$_cdf90f5ab4b39eca,
+          mid_cos_e661fe3ba2fafb22,
+          mid_difference_d160f12151991377,
+          mid_sin_e661fe3ba2fafb22,
+          mid_sum_d160f12151991377,
           max_mid
         };
 

@@ -4,8 +4,32 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace bodies {
+      class BodyShape;
+    }
+    namespace models {
+      namespace earth {
+        namespace atmosphere {
+          class NRLMSISE00InputParameters;
+          class NRLMSISE00;
+          class Atmosphere;
+        }
+      }
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+      class TimeScale;
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
+    }
+    namespace frames {
+      class Frame;
+    }
+  }
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -14,31 +38,7 @@ namespace org {
         }
       }
     }
-  }
-  namespace orekit {
-    namespace frames {
-      class Frame;
-    }
-    namespace bodies {
-      class BodyShape;
-    }
-    namespace time {
-      class TimeScale;
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-    }
-    namespace utils {
-      class PVCoordinatesProvider;
-    }
-    namespace models {
-      namespace earth {
-        namespace atmosphere {
-          class NRLMSISE00;
-          class NRLMSISE00InputParameters;
-          class Atmosphere;
-        }
-      }
-    }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -57,12 +57,12 @@ namespace org {
           class NRLMSISE00 : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_95485d1ebb7911a0,
-              mid_init$_3782e04c41242f72,
-              mid_getDensity_f7d7785230311c38,
-              mid_getDensity_b79d75c1a8af7374,
-              mid_getFrame_b86f9f61d97a7244,
-              mid_withSwitch_61652ce4abe178ec,
+              mid_init$_e99c95858c97e349,
+              mid_init$_7d34f4ef06631494,
+              mid_getDensity_818999d9e7960fd1,
+              mid_getDensity_57dd506d2d9ba196,
+              mid_getFrame_6c9bc0a928c56d4e,
+              mid_withSwitch_8bc8fb0092c9c486,
               max_mid
             };
 
@@ -80,8 +80,8 @@ namespace org {
             NRLMSISE00(const ::org::orekit::models::earth::atmosphere::NRLMSISE00InputParameters &, const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::bodies::BodyShape &);
             NRLMSISE00(const ::org::orekit::models::earth::atmosphere::NRLMSISE00InputParameters &, const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::bodies::BodyShape &, const ::org::orekit::time::TimeScale &);
 
-            jdouble getDensity(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &) const;
             ::org::hipparchus::CalculusFieldElement getDensity(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &) const;
+            jdouble getDensity(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &) const;
             ::org::orekit::frames::Frame getFrame() const;
             NRLMSISE00 withSwitch(jint, jint) const;
           };

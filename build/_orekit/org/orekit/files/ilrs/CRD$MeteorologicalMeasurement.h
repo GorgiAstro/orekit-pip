@@ -27,15 +27,15 @@ namespace org {
         class CRD$MeteorologicalMeasurement : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_d912a1711a7bd5f1,
-            mid_init$_9e6e27a31336e876,
-            mid_getDate_85703d13e302437e,
-            mid_getHumidity_dff5885c2c873297,
-            mid_getOriginOfValues_570ce0828f81a2c1,
-            mid_getPressure_dff5885c2c873297,
-            mid_getTemperature_dff5885c2c873297,
-            mid_toCrdString_11b109bd155ca898,
-            mid_toString_11b109bd155ca898,
+            mid_init$_8509f4f9f0fe609c,
+            mid_init$_6c8b9bcd18b0a073,
+            mid_getDate_7a97f7e149e79afb,
+            mid_getHumidity_557b8123390d8d0c,
+            mid_getOriginOfValues_412668abc8d889e9,
+            mid_getPressure_557b8123390d8d0c,
+            mid_getTemperature_557b8123390d8d0c,
+            mid_toCrdString_3cffd47377eca18a,
+            mid_toString_3cffd47377eca18a,
             max_mid
           };
 

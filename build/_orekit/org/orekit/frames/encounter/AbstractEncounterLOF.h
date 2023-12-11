@@ -4,6 +4,17 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace frames {
+      namespace encounter {
+        class EncounterLOF;
+      }
+    }
+    namespace utils {
+      class FieldPVCoordinates;
+      class PVCoordinates;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -14,17 +25,6 @@ namespace org {
       }
     }
     class Field;
-  }
-  namespace orekit {
-    namespace utils {
-      class FieldPVCoordinates;
-      class PVCoordinates;
-    }
-    namespace frames {
-      namespace encounter {
-        class EncounterLOF;
-      }
-    }
   }
 }
 namespace java {
@@ -42,10 +42,10 @@ namespace org {
         class AbstractEncounterLOF : public ::java::lang::Object {
          public:
           enum {
-            mid_getFieldOther_90f77345373c3eb7,
-            mid_getOther_9b7c658c14883c84,
-            mid_rotationFromInertial_48dfcf66fb3ed19c,
-            mid_rotationFromInertial_00be22c00009a46d,
+            mid_getFieldOther_dda60cf1427afe76,
+            mid_getOther_77bd7b3cdab2713e,
+            mid_rotationFromInertial_8b424804999938a4,
+            mid_rotationFromInertial_352d2666b9e583bd,
             max_mid
           };
 

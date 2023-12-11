@@ -11,21 +11,21 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace attitudes {
-      class Attitude;
-      class FieldAttitude;
-      class BoundedAttitudeProvider;
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
-    namespace frames {
-      class Frame;
+    namespace attitudes {
+      class BoundedAttitudeProvider;
+      class FieldAttitude;
+      class Attitude;
     }
     namespace utils {
       class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
     }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -38,15 +38,15 @@ namespace org {
       class PythonBoundedAttitudeProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_finalize_0fa09c18fee449d5,
-          mid_getAttitude_4e541876ea7d5bd0,
-          mid_getAttitude_d2b70935d932b5c5,
-          mid_getMaxDate_85703d13e302437e,
-          mid_getMinDate_85703d13e302437e,
-          mid_pythonDecRef_0fa09c18fee449d5,
-          mid_pythonExtension_492808a339bfa35f,
-          mid_pythonExtension_3a8e7649f31fdb20,
+          mid_init$_0640e6acf969ed28,
+          mid_finalize_0640e6acf969ed28,
+          mid_getAttitude_77e3383de01f3e48,
+          mid_getAttitude_1306ac39e1d2de3f,
+          mid_getMaxDate_7a97f7e149e79afb,
+          mid_getMinDate_7a97f7e149e79afb,
+          mid_pythonDecRef_0640e6acf969ed28,
+          mid_pythonExtension_9e26256fb0d384a2,
+          mid_pythonExtension_3cd6a6b354c6aa22,
           max_mid
         };
 

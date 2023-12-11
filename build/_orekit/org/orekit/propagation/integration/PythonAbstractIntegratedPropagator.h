@@ -13,8 +13,8 @@ namespace org {
       class PropagationType;
     }
     namespace orbits {
-      class PositionAngleType;
       class OrbitType;
+      class PositionAngleType;
     }
     namespace frames {
       class Frame;
@@ -48,13 +48,13 @@ namespace org {
         class PythonAbstractIntegratedPropagator : public ::org::orekit::propagation::integration::AbstractIntegratedPropagator {
          public:
           enum {
-            mid_init$_ab7da0e7cb0692d7,
-            mid_createMapper_2bea84b26b1efc07,
-            mid_finalize_0fa09c18fee449d5,
-            mid_getMainStateEquations_e1fa3ce287fe2655,
-            mid_pythonDecRef_0fa09c18fee449d5,
-            mid_pythonExtension_492808a339bfa35f,
-            mid_pythonExtension_3a8e7649f31fdb20,
+            mid_init$_f9a0f6f49e4bc2f0,
+            mid_createMapper_31b084497c320ed2,
+            mid_finalize_0640e6acf969ed28,
+            mid_getMainStateEquations_4a2f137b7a0c1747,
+            mid_pythonDecRef_0640e6acf969ed28,
+            mid_pythonExtension_9e26256fb0d384a2,
+            mid_pythonExtension_3cd6a6b354c6aa22,
             max_mid
           };
 

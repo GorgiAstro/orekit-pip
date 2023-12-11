@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -15,35 +14,36 @@ namespace org {
       }
     }
     class Field;
+    class CalculusFieldElement;
   }
   namespace orekit {
     namespace propagation {
-      namespace events {
-        class EventDetector;
-        class FieldEventDetector;
-        class EventDetectorsProvider;
-      }
       namespace numerical {
         class FieldTimeDerivativesEquations;
         class TimeDerivativesEquations;
       }
       class FieldSpacecraftState;
+      namespace events {
+        class EventDetectorsProvider;
+        class EventDetector;
+        class FieldEventDetector;
+      }
       class SpacecraftState;
     }
     namespace time {
-      class AbsoluteDate;
       class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
   }
 }
 namespace java {
+  namespace lang {
+    class Class;
+  }
   namespace util {
     namespace stream {
       class Stream;
     }
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -55,15 +55,15 @@ namespace org {
       class ForceModel : public ::org::orekit::utils::ParameterDriversProvider {
        public:
         enum {
-          mid_acceleration_8954761face5e1a7,
-          mid_acceleration_b42ac4b5bfb80fab,
-          mid_addContribution_5852b6ea0a71dcb4,
-          mid_addContribution_9d1574df69c5f1ff,
-          mid_dependsOnPositionOnly_b108b35ef48e27bd,
-          mid_getEventDetectors_20f6d2b462aaef4b,
-          mid_getFieldEventDetectors_361313cd1a9c693a,
-          mid_init_826b4eda94da4e78,
-          mid_init_8e8de2be1664674a,
+          mid_acceleration_61944e27a39e8290,
+          mid_acceleration_b61fb59a041240c6,
+          mid_addContribution_0f28031d74393af0,
+          mid_addContribution_9ecc165cc3358de0,
+          mid_dependsOnPositionOnly_89b302893bdbe1f1,
+          mid_getEventDetectors_d7cce92225eb0db2,
+          mid_getFieldEventDetectors_8130af76f6998f44,
+          mid_init_0472264ad6f40bc2,
+          mid_init_811e49dad2467b67,
           max_mid
         };
 

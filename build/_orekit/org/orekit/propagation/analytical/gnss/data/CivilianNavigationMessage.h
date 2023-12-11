@@ -3,6 +3,12 @@
 
 #include "org/orekit/propagation/analytical/gnss/data/AbstractNavigationMessage.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -14,12 +20,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,37 +34,37 @@ namespace org {
             class CivilianNavigationMessage : public ::org::orekit::propagation::analytical::gnss::data::AbstractNavigationMessage {
              public:
               enum {
-                mid_getADot_dff5885c2c873297,
-                mid_getDeltaN0Dot_dff5885c2c873297,
-                mid_getIscL1CA_dff5885c2c873297,
-                mid_getIscL1CD_dff5885c2c873297,
-                mid_getIscL1CP_dff5885c2c873297,
-                mid_getIscL2C_dff5885c2c873297,
-                mid_getIscL5I5_dff5885c2c873297,
-                mid_getIscL5Q5_dff5885c2c873297,
-                mid_getSvAccuracy_dff5885c2c873297,
-                mid_getSvHealth_570ce0828f81a2c1,
-                mid_getTGD_dff5885c2c873297,
-                mid_getUraiEd_570ce0828f81a2c1,
-                mid_getUraiNed0_570ce0828f81a2c1,
-                mid_getUraiNed1_570ce0828f81a2c1,
-                mid_getUraiNed2_570ce0828f81a2c1,
-                mid_isCnv2_b108b35ef48e27bd,
-                mid_setADot_17db3a65980d3441,
-                mid_setDeltaN0Dot_17db3a65980d3441,
-                mid_setIscL1CA_17db3a65980d3441,
-                mid_setIscL1CD_17db3a65980d3441,
-                mid_setIscL1CP_17db3a65980d3441,
-                mid_setIscL2C_17db3a65980d3441,
-                mid_setIscL5I5_17db3a65980d3441,
-                mid_setIscL5Q5_17db3a65980d3441,
-                mid_setSvAccuracy_17db3a65980d3441,
-                mid_setSvHealth_99803b0791f320ff,
-                mid_setTGD_17db3a65980d3441,
-                mid_setUraiEd_99803b0791f320ff,
-                mid_setUraiNed0_99803b0791f320ff,
-                mid_setUraiNed1_99803b0791f320ff,
-                mid_setUraiNed2_99803b0791f320ff,
+                mid_getADot_557b8123390d8d0c,
+                mid_getDeltaN0Dot_557b8123390d8d0c,
+                mid_getIscL1CA_557b8123390d8d0c,
+                mid_getIscL1CD_557b8123390d8d0c,
+                mid_getIscL1CP_557b8123390d8d0c,
+                mid_getIscL2C_557b8123390d8d0c,
+                mid_getIscL5I5_557b8123390d8d0c,
+                mid_getIscL5Q5_557b8123390d8d0c,
+                mid_getSvAccuracy_557b8123390d8d0c,
+                mid_getSvHealth_412668abc8d889e9,
+                mid_getTGD_557b8123390d8d0c,
+                mid_getUraiEd_412668abc8d889e9,
+                mid_getUraiNed0_412668abc8d889e9,
+                mid_getUraiNed1_412668abc8d889e9,
+                mid_getUraiNed2_412668abc8d889e9,
+                mid_isCnv2_89b302893bdbe1f1,
+                mid_setADot_10f281d777284cea,
+                mid_setDeltaN0Dot_10f281d777284cea,
+                mid_setIscL1CA_10f281d777284cea,
+                mid_setIscL1CD_10f281d777284cea,
+                mid_setIscL1CP_10f281d777284cea,
+                mid_setIscL2C_10f281d777284cea,
+                mid_setIscL5I5_10f281d777284cea,
+                mid_setIscL5Q5_10f281d777284cea,
+                mid_setSvAccuracy_10f281d777284cea,
+                mid_setSvHealth_a3da1a935cb37f7b,
+                mid_setTGD_10f281d777284cea,
+                mid_setUraiEd_a3da1a935cb37f7b,
+                mid_setUraiNed0_a3da1a935cb37f7b,
+                mid_setUraiNed1_a3da1a935cb37f7b,
+                mid_setUraiNed2_a3da1a935cb37f7b,
                 max_mid
               };
 

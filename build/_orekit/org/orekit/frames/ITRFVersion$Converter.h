@@ -6,16 +6,16 @@
 namespace org {
   namespace orekit {
     namespace frames {
-      class FieldStaticTransform;
       class TransformProvider;
-      class FieldTransform;
-      class ITRFVersion;
       class Transform;
+      class FieldStaticTransform;
       class StaticTransform;
+      class ITRFVersion;
+      class FieldTransform;
     }
     namespace time {
-      class AbsoluteDate;
       class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
   }
 }
@@ -33,12 +33,12 @@ namespace org {
       class ITRFVersion$Converter : public ::java::lang::Object {
        public:
         enum {
-          mid_getDestination_8a73c81b6e5084ce,
-          mid_getOrigin_8a73c81b6e5084ce,
-          mid_getStaticTransform_edee248bbd22a723,
-          mid_getStaticTransform_eae0db96fe973887,
-          mid_getTransform_687985c59478d29c,
-          mid_getTransform_f7bf3269025b86c3,
+          mid_getDestination_b311296551ce8af2,
+          mid_getOrigin_b311296551ce8af2,
+          mid_getStaticTransform_7265a2d9c3b9a38a,
+          mid_getStaticTransform_68fd5b9bb9184393,
+          mid_getTransform_df04e3927954349e,
+          mid_getTransform_e70631ba002d9a32,
           max_mid
         };
 

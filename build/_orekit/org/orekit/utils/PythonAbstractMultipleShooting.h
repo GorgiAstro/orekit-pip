@@ -32,14 +32,14 @@ namespace org {
       class PythonAbstractMultipleShooting : public ::org::orekit::utils::AbstractMultipleShooting {
        public:
         enum {
-          mid_init$_d9bf154f5a0c8c94,
-          mid_computeAdditionalConstraints_ae31e5696ec6455b,
-          mid_computeAdditionalJacobianMatrix_11c2223c723fd443,
-          mid_finalize_0fa09c18fee449d5,
-          mid_getAugmentedInitialState_8f68ada11fb66675,
-          mid_pythonDecRef_0fa09c18fee449d5,
-          mid_pythonExtension_492808a339bfa35f,
-          mid_pythonExtension_3a8e7649f31fdb20,
+          mid_init$_712b854f7aef1aab,
+          mid_computeAdditionalConstraints_1122e29f2a25b86f,
+          mid_computeAdditionalJacobianMatrix_29dc26d4c6c7bd43,
+          mid_finalize_0640e6acf969ed28,
+          mid_getAugmentedInitialState_d91edcd61f36fecc,
+          mid_pythonDecRef_0640e6acf969ed28,
+          mid_pythonExtension_9e26256fb0d384a2,
+          mid_pythonExtension_3cd6a6b354c6aa22,
           max_mid
         };
 

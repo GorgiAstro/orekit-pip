@@ -15,11 +15,11 @@ namespace org {
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
-        namespace twod {
-          class Euclidean2D;
-        }
         namespace threed {
           class Euclidean3D;
+        }
+        namespace twod {
+          class Euclidean2D;
         }
       }
       class Space;
@@ -37,9 +37,9 @@ namespace org {
           class Euclidean3D : public ::java::lang::Object {
            public:
             enum {
-              mid_getDimension_570ce0828f81a2c1,
-              mid_getInstance_77987c948d33384e,
-              mid_getSubSpace_6c1c21e9986360d8,
+              mid_getDimension_412668abc8d889e9,
+              mid_getInstance_d2a0479b294c0f72,
+              mid_getSubSpace_60c21a86e2a4669d,
               max_mid
             };
 

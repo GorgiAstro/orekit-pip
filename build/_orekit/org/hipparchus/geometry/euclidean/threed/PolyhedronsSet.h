@@ -3,32 +3,6 @@
 
 #include "org/hipparchus/geometry/partitioning/AbstractRegion.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class PolyhedronsSet$BRep;
-          class Rotation;
-          class PolyhedronsSet;
-          class Line;
-          class Vector3D;
-          class Euclidean3D;
-        }
-        namespace twod {
-          class Euclidean2D;
-        }
-      }
-      namespace partitioning {
-        class SubHyperplane;
-        class BSPTree;
-      }
-    }
-    namespace exception {
-      class MathRuntimeException;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -36,6 +10,32 @@ namespace java {
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace partitioning {
+        class SubHyperplane;
+        class BSPTree;
+      }
+      namespace euclidean {
+        namespace threed {
+          class Line;
+          class Vector3D;
+          class Rotation;
+          class Euclidean3D;
+          class PolyhedronsSet;
+          class PolyhedronsSet$BRep;
+        }
+        namespace twod {
+          class Euclidean2D;
+        }
+      }
+    }
+    namespace exception {
+      class MathRuntimeException;
+    }
   }
 }
 template<class T> class JArray;
@@ -49,18 +49,18 @@ namespace org {
           class PolyhedronsSet : public ::org::hipparchus::geometry::partitioning::AbstractRegion {
            public:
             enum {
-              mid_init$_17db3a65980d3441,
-              mid_init$_fabe76086a822e9e,
-              mid_init$_748cd2c51a955d77,
-              mid_init$_1f4d55383238fbb5,
-              mid_init$_fc22ef365b06a732,
-              mid_init$_e64bbe9910cbd659,
-              mid_buildNew_20bbe3dcfa244809,
-              mid_firstIntersection_505c363342ef9e07,
-              mid_getBRep_56002d4c9835e187,
-              mid_rotate_0d7142cf5cc58689,
-              mid_translate_1f148067d6db6edf,
-              mid_computeGeometricalProperties_0fa09c18fee449d5,
+              mid_init$_10f281d777284cea,
+              mid_init$_3c57d2e720eaa4f8,
+              mid_init$_546559a08b08816f,
+              mid_init$_bdacd7c5506b494c,
+              mid_init$_b7afa53d597eefdc,
+              mid_init$_c0cf786cd30233c5,
+              mid_buildNew_ad25d981bf0661ee,
+              mid_firstIntersection_e41ce56ec01ebfa0,
+              mid_getBRep_7dd4c2a86e6aca17,
+              mid_rotate_84307c85cd32152b,
+              mid_translate_2477f00f88909b27,
+              mid_computeGeometricalProperties_0640e6acf969ed28,
               max_mid
             };
 

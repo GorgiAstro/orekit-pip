@@ -4,6 +4,19 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace frames {
+      class LOF;
+    }
+    namespace utils {
+      class FieldPVCoordinates;
+      class PVCoordinates;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -14,19 +27,6 @@ namespace org {
       }
     }
     class Field;
-  }
-  namespace orekit {
-    namespace frames {
-      class LOF;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-    }
-    namespace utils {
-      class FieldPVCoordinates;
-      class PVCoordinates;
-    }
   }
 }
 namespace java {
@@ -45,14 +45,14 @@ namespace org {
       class PythonLOF : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_finalize_0fa09c18fee449d5,
-          mid_getName_11b109bd155ca898,
-          mid_pythonDecRef_0fa09c18fee449d5,
-          mid_pythonExtension_492808a339bfa35f,
-          mid_pythonExtension_3a8e7649f31fdb20,
-          mid_rotationFromInertial_475182fd71c6851b,
-          mid_rotationFromInertial_076f35c1feeb36b3,
+          mid_init$_0640e6acf969ed28,
+          mid_finalize_0640e6acf969ed28,
+          mid_getName_3cffd47377eca18a,
+          mid_pythonDecRef_0640e6acf969ed28,
+          mid_pythonExtension_9e26256fb0d384a2,
+          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_rotationFromInertial_9b71bf39454b4a07,
+          mid_rotationFromInertial_1022f468fb3d1015,
           max_mid
         };
 

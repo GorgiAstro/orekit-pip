@@ -36,9 +36,9 @@ namespace org {
               class Alfriend1999 : public ::org::orekit::ssa::collision::shorttermencounter::probability::twod::AbstractAlfriend1999 {
                public:
                 enum {
-                  mid_init$_0fa09c18fee449d5,
-                  mid_getType_5d7ecb27bb5e3bc3,
-                  mid_isAMaximumProbabilityOfCollisionMethod_b108b35ef48e27bd,
+                  mid_init$_0640e6acf969ed28,
+                  mid_getType_4b8bf2bb84f7480e,
+                  mid_isAMaximumProbabilityOfCollisionMethod_89b302893bdbe1f1,
                   max_mid
                 };
 

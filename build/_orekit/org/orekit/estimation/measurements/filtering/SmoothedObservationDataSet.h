@@ -8,8 +8,8 @@ namespace org {
     namespace files {
       namespace rinex {
         namespace observation {
-          class ObservationData;
           class ObservationDataSet;
+          class ObservationData;
         }
       }
     }
@@ -31,9 +31,9 @@ namespace org {
           class SmoothedObservationDataSet : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_486b2cad7a6de1a0,
-              mid_getDataSet_34eee2d151204867,
-              mid_getSmoothedData_46645d31b9bde460,
+              mid_init$_95b4b21ffaf71469,
+              mid_getDataSet_438dd48fa809cabc,
+              mid_getSmoothedData_35f670e1101632be,
               max_mid
             };
 

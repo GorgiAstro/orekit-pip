@@ -6,17 +6,17 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
+      class ODEState;
       namespace nonstiff {
         class ButcherArrayProvider;
       }
-      class ODEState;
-      class ExpandableODE;
       class OrdinaryDifferentialEquation;
+      class ExpandableODE;
       class ODEStateAndDerivative;
     }
     namespace exception {
-      class MathIllegalStateException;
       class MathIllegalArgumentException;
+      class MathIllegalStateException;
     }
   }
 }
@@ -35,10 +35,10 @@ namespace org {
         class RungeKuttaIntegrator : public ::org::hipparchus::ode::AbstractIntegrator {
          public:
           enum {
-            mid_getDefaultStep_dff5885c2c873297,
-            mid_integrate_3c1cc820e563e3e9,
-            mid_singleStep_ab3ac540cd7660e4,
-            mid_createInterpolator_3c3452116c60fd90,
+            mid_getDefaultStep_557b8123390d8d0c,
+            mid_integrate_7b1e7ccc98e27149,
+            mid_singleStep_ce20fc409e3571a8,
+            mid_createInterpolator_11ab5d82310ecbfa,
             max_mid
           };
 

@@ -4,23 +4,23 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-    namespace ode {
-      namespace events {
-        class Action;
-      }
-    }
-  }
   namespace orekit {
     namespace propagation {
+      class FieldSpacecraftState;
       namespace events {
         namespace handlers {
           class FieldEventHandler;
         }
         class FieldEventDetector;
       }
-      class FieldSpacecraftState;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace ode {
+      namespace events {
+        class Action;
+      }
     }
   }
 }
@@ -40,8 +40,8 @@ namespace org {
           class FieldStopOnIncreasing : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_eventOccurred_fc49a7ff6cb062a2,
+              mid_init$_0640e6acf969ed28,
+              mid_eventOccurred_061886b33964a9af,
               max_mid
             };
 

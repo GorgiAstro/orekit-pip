@@ -4,41 +4,13 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace semianalytical {
-        namespace dsst {
-          class DSSTPropagator;
-        }
-      }
-      class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace estimation {
-      namespace measurements {
-        class ObservedMeasurement;
-        class EstimatedMeasurement;
-      }
-      namespace sequential {
-        class SemiAnalyticalProcess;
-        class KalmanEstimation;
-        class KalmanObserver;
-        class MeasurementDecorator;
-      }
-    }
-    namespace utils {
-      class ParameterDriversList;
-    }
-  }
   namespace hipparchus {
     namespace filtering {
       namespace kalman {
         namespace extended {
-          class NonLinearProcess;
           class NonLinearEvolution;
           class ExtendedKalmanFilter;
+          class NonLinearProcess;
         }
         class ProcessEstimate;
       }
@@ -46,6 +18,34 @@ namespace org {
     namespace linear {
       class RealVector;
       class RealMatrix;
+    }
+  }
+  namespace orekit {
+    namespace estimation {
+      namespace sequential {
+        class MeasurementDecorator;
+        class KalmanEstimation;
+        class KalmanObserver;
+        class SemiAnalyticalProcess;
+      }
+      namespace measurements {
+        class ObservedMeasurement;
+        class EstimatedMeasurement;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace propagation {
+      class SpacecraftState;
+      namespace semianalytical {
+        namespace dsst {
+          class DSSTPropagator;
+        }
+      }
+    }
+    namespace utils {
+      class ParameterDriversList;
     }
   }
 }
@@ -67,34 +67,34 @@ namespace org {
         class SemiAnalyticalKalmanModel : public ::java::lang::Object {
          public:
           enum {
-            mid_finalizeEstimation_da0919b7ae9816a3,
-            mid_finalizeOperationsObservationGrid_0fa09c18fee449d5,
-            mid_getCorrectedMeasurement_5a90ceef60f482f1,
-            mid_getCorrectedSpacecraftStates_fa9cea0faefb9a31,
-            mid_getCurrentDate_85703d13e302437e,
-            mid_getCurrentMeasurementNumber_570ce0828f81a2c1,
-            mid_getEstimate_c93ddc26f3b3eef4,
-            mid_getEstimatedMeasurementsParameters_bd51074bfd9d41da,
-            mid_getEstimatedOrbitalParameters_bd51074bfd9d41da,
-            mid_getEstimatedPropagationParameters_bd51074bfd9d41da,
-            mid_getEstimatedPropagator_58b33e4b5f875168,
-            mid_getEvolution_8baf140085ffa2b7,
-            mid_getInnovation_c1adcb03cc15012a,
-            mid_getObserver_fc89aee73878aefd,
-            mid_getPhysicalEstimatedCovarianceMatrix_688b496048ff947b,
-            mid_getPhysicalEstimatedState_aab4fbf77867daa8,
-            mid_getPhysicalInnovationCovarianceMatrix_688b496048ff947b,
-            mid_getPhysicalKalmanGain_688b496048ff947b,
-            mid_getPhysicalMeasurementJacobian_688b496048ff947b,
-            mid_getPhysicalStateTransitionMatrix_688b496048ff947b,
-            mid_getPredictedMeasurement_5a90ceef60f482f1,
-            mid_getPredictedSpacecraftStates_fa9cea0faefb9a31,
-            mid_initializeShortPeriodicTerms_0ee5c56004643a2e,
-            mid_processMeasurements_0d49551f8b25626b,
-            mid_setObserver_3b3c487cb3322691,
-            mid_updateNominalSpacecraftState_0ee5c56004643a2e,
-            mid_updateReferenceTrajectory_6dd5e3e05e92502e,
-            mid_updateShortPeriods_0ee5c56004643a2e,
+            mid_finalizeEstimation_6f886d47d0124943,
+            mid_finalizeOperationsObservationGrid_0640e6acf969ed28,
+            mid_getCorrectedMeasurement_95a396fe45ccbbc0,
+            mid_getCorrectedSpacecraftStates_5dccf571345671af,
+            mid_getCurrentDate_7a97f7e149e79afb,
+            mid_getCurrentMeasurementNumber_412668abc8d889e9,
+            mid_getEstimate_55b445719d7de2a7,
+            mid_getEstimatedMeasurementsParameters_467d574a7997e53a,
+            mid_getEstimatedOrbitalParameters_467d574a7997e53a,
+            mid_getEstimatedPropagationParameters_467d574a7997e53a,
+            mid_getEstimatedPropagator_0cd5cd5bc4d32a91,
+            mid_getEvolution_ebde746c06b90598,
+            mid_getInnovation_e958eadec739b50c,
+            mid_getObserver_25fab8044126746b,
+            mid_getPhysicalEstimatedCovarianceMatrix_70a207fcbc031df2,
+            mid_getPhysicalEstimatedState_75d50d73180655b4,
+            mid_getPhysicalInnovationCovarianceMatrix_70a207fcbc031df2,
+            mid_getPhysicalKalmanGain_70a207fcbc031df2,
+            mid_getPhysicalMeasurementJacobian_70a207fcbc031df2,
+            mid_getPhysicalStateTransitionMatrix_70a207fcbc031df2,
+            mid_getPredictedMeasurement_95a396fe45ccbbc0,
+            mid_getPredictedSpacecraftStates_5dccf571345671af,
+            mid_initializeShortPeriodicTerms_8655761ebf04b503,
+            mid_processMeasurements_d63c8a40f144939b,
+            mid_setObserver_4275515b1ffe8ceb,
+            mid_updateNominalSpacecraftState_8655761ebf04b503,
+            mid_updateReferenceTrajectory_ca23f13ffad40372,
+            mid_updateShortPeriods_8655761ebf04b503,
             max_mid
           };
 

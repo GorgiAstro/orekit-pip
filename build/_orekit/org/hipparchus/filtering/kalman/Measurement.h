@@ -26,9 +26,9 @@ namespace org {
         class Measurement : public ::java::lang::Object {
          public:
           enum {
-            mid_getCovariance_688b496048ff947b,
-            mid_getTime_dff5885c2c873297,
-            mid_getValue_aab4fbf77867daa8,
+            mid_getCovariance_70a207fcbc031df2,
+            mid_getTime_557b8123390d8d0c,
+            mid_getValue_75d50d73180655b4,
             max_mid
           };
 

@@ -3,10 +3,30 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      namespace units {
+        class Unit;
+      }
+    }
     namespace files {
       namespace ccsds {
+        namespace definitions {
+          class FrameFacade;
+        }
         namespace ndm {
           namespace odm {
             namespace ocm {
@@ -15,28 +35,8 @@ namespace org {
             }
           }
         }
-        namespace definitions {
-          class FrameFacade;
-        }
       }
     }
-    namespace utils {
-      namespace units {
-        class Unit;
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -52,34 +52,34 @@ namespace org {
               class OrbitCovarianceHistoryMetadata : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_600a2a61652bc473,
-                  mid_getCovBasis_11b109bd155ca898,
-                  mid_getCovBasisID_11b109bd155ca898,
-                  mid_getCovConfidence_dff5885c2c873297,
-                  mid_getCovFrameEpoch_85703d13e302437e,
-                  mid_getCovID_11b109bd155ca898,
-                  mid_getCovNextID_11b109bd155ca898,
-                  mid_getCovOrdering_99f30435104fb7a1,
-                  mid_getCovPrevID_11b109bd155ca898,
-                  mid_getCovReferenceFrame_5d5dd95b04037824,
-                  mid_getCovScaleMax_dff5885c2c873297,
-                  mid_getCovScaleMin_dff5885c2c873297,
-                  mid_getCovType_f6a584069fbe1b12,
-                  mid_getCovUnits_2afa36052df4765d,
-                  mid_setCovBasis_d0bc48d5b00dc40c,
-                  mid_setCovBasisID_d0bc48d5b00dc40c,
-                  mid_setCovConfidence_17db3a65980d3441,
-                  mid_setCovFrameEpoch_600a2a61652bc473,
-                  mid_setCovID_d0bc48d5b00dc40c,
-                  mid_setCovNextID_d0bc48d5b00dc40c,
-                  mid_setCovOrdering_3f694760f2dd1e10,
-                  mid_setCovPrevID_d0bc48d5b00dc40c,
-                  mid_setCovReferenceFrame_849bc9e3b38b9bcb,
-                  mid_setCovScaleMax_17db3a65980d3441,
-                  mid_setCovScaleMin_17db3a65980d3441,
-                  mid_setCovType_fa6b10c2faa6bff6,
-                  mid_setCovUnits_de3e021e7266b71e,
-                  mid_validate_17db3a65980d3441,
+                  mid_init$_20affcbd28542333,
+                  mid_getCovBasis_3cffd47377eca18a,
+                  mid_getCovBasisID_3cffd47377eca18a,
+                  mid_getCovConfidence_557b8123390d8d0c,
+                  mid_getCovFrameEpoch_7a97f7e149e79afb,
+                  mid_getCovID_3cffd47377eca18a,
+                  mid_getCovNextID_3cffd47377eca18a,
+                  mid_getCovOrdering_315fd39b1c41dd4c,
+                  mid_getCovPrevID_3cffd47377eca18a,
+                  mid_getCovReferenceFrame_98f5fcaff3e3f9d2,
+                  mid_getCovScaleMax_557b8123390d8d0c,
+                  mid_getCovScaleMin_557b8123390d8d0c,
+                  mid_getCovType_ada74ce902d29422,
+                  mid_getCovUnits_0d9551367f7ecdef,
+                  mid_setCovBasis_f5ffdf29129ef90a,
+                  mid_setCovBasisID_f5ffdf29129ef90a,
+                  mid_setCovConfidence_10f281d777284cea,
+                  mid_setCovFrameEpoch_20affcbd28542333,
+                  mid_setCovID_f5ffdf29129ef90a,
+                  mid_setCovNextID_f5ffdf29129ef90a,
+                  mid_setCovOrdering_aaad25c735d17afe,
+                  mid_setCovPrevID_f5ffdf29129ef90a,
+                  mid_setCovReferenceFrame_f55eee1236275bb1,
+                  mid_setCovScaleMax_10f281d777284cea,
+                  mid_setCovScaleMin_10f281d777284cea,
+                  mid_setCovType_94fd56ae4b55b80e,
+                  mid_setCovUnits_4ccaedadb068bdeb,
+                  mid_validate_10f281d777284cea,
                   max_mid
                 };
 

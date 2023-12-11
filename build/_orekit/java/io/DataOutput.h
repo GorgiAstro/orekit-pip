@@ -20,20 +20,20 @@ namespace java {
     class DataOutput : public ::java::lang::Object {
      public:
       enum {
-        mid_write_20012b3010a39c05,
-        mid_write_99803b0791f320ff,
-        mid_write_d7af9aedcdd3845b,
-        mid_writeBoolean_bd04c9335fb9e4cf,
-        mid_writeByte_99803b0791f320ff,
-        mid_writeBytes_d0bc48d5b00dc40c,
-        mid_writeChar_99803b0791f320ff,
-        mid_writeChars_d0bc48d5b00dc40c,
-        mid_writeDouble_17db3a65980d3441,
-        mid_writeFloat_f63147a1690942cc,
-        mid_writeInt_99803b0791f320ff,
-        mid_writeLong_3a8e7649f31fdb20,
-        mid_writeShort_99803b0791f320ff,
-        mid_writeUTF_d0bc48d5b00dc40c,
+        mid_write_d759c70c6670fd89,
+        mid_write_a3da1a935cb37f7b,
+        mid_write_ac782c7077255dd3,
+        mid_writeBoolean_ed2afdb8506b9742,
+        mid_writeByte_a3da1a935cb37f7b,
+        mid_writeBytes_f5ffdf29129ef90a,
+        mid_writeChar_a3da1a935cb37f7b,
+        mid_writeChars_f5ffdf29129ef90a,
+        mid_writeDouble_10f281d777284cea,
+        mid_writeFloat_3ac7cc3def9efaa9,
+        mid_writeInt_a3da1a935cb37f7b,
+        mid_writeLong_3cd6a6b354c6aa22,
+        mid_writeShort_a3da1a935cb37f7b,
+        mid_writeUTF_f5ffdf29129ef90a,
         max_mid
       };
 

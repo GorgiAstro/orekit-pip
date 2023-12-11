@@ -33,13 +33,13 @@ namespace org {
         class DcbStation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_d0bc48d5b00dc40c,
-            mid_addDcb_9240f9c21af74bfa,
-            mid_getAvailableSatelliteSystems_3bed2e1062489236,
-            mid_getDcbData_39258d6e17eda633,
-            mid_getDescription_b66783625d13e607,
-            mid_getSiteCode_11b109bd155ca898,
-            mid_setDescription_c7a638e3ab0f92d6,
+            mid_init$_f5ffdf29129ef90a,
+            mid_addDcb_3534a70b26a70401,
+            mid_getAvailableSatelliteSystems_6cac7769b34554a7,
+            mid_getDcbData_05271a9caf0ddfcd,
+            mid_getDescription_4d0641e2232580f1,
+            mid_getSiteCode_3cffd47377eca18a,
+            mid_setDescription_c4e21d1fdc63a330,
             max_mid
           };
 

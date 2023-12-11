@@ -37,8 +37,8 @@ namespace org {
           class XmlStructureProcessingState : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_4ccbff64d3b5eedd,
-              mid_processToken_85d9863c57bc3b0c,
+              mid_init$_ed900d53b0c7c76b,
+              mid_processToken_7f6d4ab73f1deb26,
               max_mid
             };
 

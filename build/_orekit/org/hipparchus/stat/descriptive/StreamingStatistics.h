@@ -19,16 +19,16 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace stat {
-      namespace descriptive {
-        class AggregatableStatistic;
-        class StatisticalSummary;
-        class StreamingStatistics;
-        class StreamingStatistics$StreamingStatisticsBuilder;
-      }
-    }
     namespace random {
       class RandomGenerator;
+    }
+    namespace stat {
+      namespace descriptive {
+        class StreamingStatistics;
+        class StatisticalSummary;
+        class AggregatableStatistic;
+        class StreamingStatistics$StreamingStatisticsBuilder;
+      }
     }
   }
 }
@@ -42,33 +42,33 @@ namespace org {
         class StreamingStatistics : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_init$_a73757db4170dc00,
-            mid_accept_17db3a65980d3441,
-            mid_addValue_17db3a65980d3441,
-            mid_aggregate_b9e7d1acbb3a5f4c,
-            mid_builder_b53be6ff329e001c,
-            mid_clear_0fa09c18fee449d5,
-            mid_copy_28f0324196bf3cb7,
-            mid_equals_65c7d273e80d497a,
-            mid_getGeometricMean_dff5885c2c873297,
-            mid_getMax_dff5885c2c873297,
-            mid_getMean_dff5885c2c873297,
-            mid_getMedian_dff5885c2c873297,
-            mid_getMin_dff5885c2c873297,
-            mid_getN_492808a339bfa35f,
-            mid_getPercentile_dcbc7ce2902fa136,
-            mid_getPopulationVariance_dff5885c2c873297,
-            mid_getQuadraticMean_dff5885c2c873297,
-            mid_getSecondMoment_dff5885c2c873297,
-            mid_getStandardDeviation_dff5885c2c873297,
-            mid_getSum_dff5885c2c873297,
-            mid_getSumOfLogs_dff5885c2c873297,
-            mid_getSumOfSquares_dff5885c2c873297,
-            mid_getSummary_5a169194284d157f,
-            mid_getVariance_dff5885c2c873297,
-            mid_hashCode_570ce0828f81a2c1,
-            mid_toString_11b109bd155ca898,
+            mid_init$_0640e6acf969ed28,
+            mid_init$_fb29db45daae1732,
+            mid_accept_10f281d777284cea,
+            mid_addValue_10f281d777284cea,
+            mid_aggregate_dabde7a6d9f154ab,
+            mid_builder_575058d69559c78a,
+            mid_clear_0640e6acf969ed28,
+            mid_copy_adcadc851bf4f5fa,
+            mid_equals_221e8e85cb385209,
+            mid_getGeometricMean_557b8123390d8d0c,
+            mid_getMax_557b8123390d8d0c,
+            mid_getMean_557b8123390d8d0c,
+            mid_getMedian_557b8123390d8d0c,
+            mid_getMin_557b8123390d8d0c,
+            mid_getN_9e26256fb0d384a2,
+            mid_getPercentile_7e960cd6eee376d8,
+            mid_getPopulationVariance_557b8123390d8d0c,
+            mid_getQuadraticMean_557b8123390d8d0c,
+            mid_getSecondMoment_557b8123390d8d0c,
+            mid_getStandardDeviation_557b8123390d8d0c,
+            mid_getSum_557b8123390d8d0c,
+            mid_getSumOfLogs_557b8123390d8d0c,
+            mid_getSumOfSquares_557b8123390d8d0c,
+            mid_getSummary_8f883f2497314ce2,
+            mid_getVariance_557b8123390d8d0c,
+            mid_hashCode_412668abc8d889e9,
+            mid_toString_3cffd47377eca18a,
             max_mid
           };
 

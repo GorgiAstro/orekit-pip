@@ -6,25 +6,25 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class TCBScale;
-      class TDBScale;
-      class UTCScale;
-      class UT1Scale;
-      class GalileoScale;
-      class QZSSScale;
-      class GLONASSScale;
       class TTScale;
-      class IRNSSScale;
       class TAIScale;
-      class BDTScale;
+      class UTCScale;
+      class GLONASSScale;
       class GPSScale;
+      class QZSSScale;
+      class UT1Scale;
+      class IRNSSScale;
+      class TDBScale;
+      class GalileoScale;
+      class TCBScale;
       class TCGScale;
-    }
-    namespace frames {
-      class EOPHistory;
+      class BDTScale;
     }
     namespace utils {
       class IERSConventions;
+    }
+    namespace frames {
+      class EOPHistory;
     }
   }
 }
@@ -43,25 +43,25 @@ namespace org {
       class PythonAbstractTimeScales : public ::org::orekit::time::AbstractTimeScales {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_finalize_0fa09c18fee449d5,
-          mid_getBDT_fc0e10255fdb9359,
-          mid_getEopHistory_f7b9f8d7c24d861d,
-          mid_getGLONASS_2b4079449103a541,
-          mid_getGPS_9e1c13089038a5fa,
-          mid_getGST_0569916ae20da9e6,
-          mid_getIRNSS_acc0c9657c1b3fab,
-          mid_getQZSS_b61358961d42527b,
-          mid_getTAI_542013db907f5b2d,
-          mid_getTCB_a36a736c24a84bc8,
-          mid_getTCG_bc03267fa6cc0068,
-          mid_getTDB_01a9b50b4c9899e0,
-          mid_getTT_1cee2d27f65b3e44,
-          mid_getUT1_9806ff584bac5289,
-          mid_getUTC_4611f4f4ac7b3711,
-          mid_pythonDecRef_0fa09c18fee449d5,
-          mid_pythonExtension_492808a339bfa35f,
-          mid_pythonExtension_3a8e7649f31fdb20,
+          mid_init$_0640e6acf969ed28,
+          mid_finalize_0640e6acf969ed28,
+          mid_getBDT_9391834b1a937fd3,
+          mid_getEopHistory_9cf4a1ec2e53bbd3,
+          mid_getGLONASS_237364a28a8cf0b4,
+          mid_getGPS_0cd5c45ac1466124,
+          mid_getGST_3eb0a3a9b450fe42,
+          mid_getIRNSS_64d2db466ba002ef,
+          mid_getQZSS_513baddf28d44704,
+          mid_getTAI_d5c1bf5214e95dd6,
+          mid_getTCB_1561497728a78b6a,
+          mid_getTCG_2cdd0fa7c8f02aa9,
+          mid_getTDB_777ef8538a45134b,
+          mid_getTT_f6e670da699ff3f8,
+          mid_getUT1_c21aaa13d4f3f95e,
+          mid_getUTC_81e037be1ebdb551,
+          mid_pythonDecRef_0640e6acf969ed28,
+          mid_pythonExtension_9e26256fb0d384a2,
+          mid_pythonExtension_3cd6a6b354c6aa22,
           max_mid
         };
 

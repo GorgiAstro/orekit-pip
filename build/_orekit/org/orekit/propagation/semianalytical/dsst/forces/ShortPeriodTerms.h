@@ -35,9 +35,9 @@ namespace org {
             class ShortPeriodTerms : public ::java::lang::Object {
              public:
               enum {
-                mid_getCoefficients_64003844027bb6c4,
-                mid_getCoefficientsKeyPrefix_11b109bd155ca898,
-                mid_value_2ab179738ea066bf,
+                mid_getCoefficients_ee77cc1344480b7f,
+                mid_getCoefficientsKeyPrefix_3cffd47377eca18a,
+                mid_value_5997117348549fd3,
                 max_mid
               };
 

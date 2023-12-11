@@ -5,6 +5,11 @@
 
 namespace org {
   namespace orekit {
+    namespace attitudes {
+      class Attitude;
+      class AttitudeProvider;
+      class FieldAttitude;
+    }
     namespace forces {
       namespace maneuvers {
         namespace propulsion {
@@ -13,22 +18,17 @@ namespace org {
         }
       }
     }
-    namespace attitudes {
-      class Attitude;
-      class FieldAttitude;
-      class AttitudeProvider;
-    }
     namespace frames {
-      class Frame;
       class LOF;
+      class Frame;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
     namespace utils {
       class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -57,15 +57,15 @@ namespace org {
           class ThrustDirectionAndAttitudeProvider : public ::java::lang::Object {
            public:
             enum {
-              mid_buildFromCustomAttitude_f04d45055f690190,
-              mid_buildFromDirectionInFrame_55c924554b729f59,
-              mid_buildFromDirectionInLOF_b2589ba8f0aeef50,
-              mid_buildFromFixedDirectionInSatelliteFrame_97cc82c890b226b9,
-              mid_getAttitude_d2b70935d932b5c5,
-              mid_getAttitude_4e541876ea7d5bd0,
-              mid_getManeuverAttitudeProvider_a904f3d015a354a0,
-              mid_getThrusterAxisInSatelliteFrame_d52645e0d4c07563,
-              mid_getAttitudeFromFrame_d2b70935d932b5c5,
+              mid_buildFromCustomAttitude_f505ac706dd9e1f4,
+              mid_buildFromDirectionInFrame_607094d91814431a,
+              mid_buildFromDirectionInLOF_8aa09489b3ae0491,
+              mid_buildFromFixedDirectionInSatelliteFrame_80eb1072ad4c73de,
+              mid_getAttitude_1306ac39e1d2de3f,
+              mid_getAttitude_77e3383de01f3e48,
+              mid_getManeuverAttitudeProvider_6df6b78ab9377151,
+              mid_getThrusterAxisInSatelliteFrame_f88961cca75a2c0a,
+              mid_getAttitudeFromFrame_1306ac39e1d2de3f,
               max_mid
             };
 

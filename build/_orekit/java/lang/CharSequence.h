@@ -18,11 +18,11 @@ namespace java {
     class CharSequence : public ::java::lang::Object {
      public:
       enum {
-        mid_charAt_9d4c2604195fbadb,
-        mid_compare_510522d819b7a295,
-        mid_length_570ce0828f81a2c1,
-        mid_subSequence_be25fa7011a1ec8f,
-        mid_toString_11b109bd155ca898,
+        mid_charAt_4affd00329d5d4cf,
+        mid_compare_bafd4c74759892c3,
+        mid_length_412668abc8d889e9,
+        mid_subSequence_581d824833fd6c72,
+        mid_toString_3cffd47377eca18a,
         max_mid
       };
 

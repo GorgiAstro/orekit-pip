@@ -14,8 +14,8 @@ namespace org {
       }
     }
     namespace gnss {
-      class SatelliteSystem;
       class ObservationType;
+      class SatelliteSystem;
     }
     namespace estimation {
       namespace measurements {
@@ -47,12 +47,12 @@ namespace org {
           class DualFrequencySmoother : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_75c2da74a5a59fda,
-              mid_copyObservationData_a2626020949c0710,
-              mid_createFilter_925e54532dc3f5f2,
-              mid_filterDataSet_71b58f251f63b1ae,
-              mid_getFilteredDataMap_16a1de631a9b7527,
-              mid_getMapFilters_16a1de631a9b7527,
+              mid_init$_47602ef8408ea361,
+              mid_copyObservationData_f6f450be0ab92fea,
+              mid_createFilter_7a832b0eff2a17cf,
+              mid_filterDataSet_1a7469cb8fc0bf06,
+              mid_getFilteredDataMap_2bd3906654d055d1,
+              mid_getMapFilters_2bd3906654d055d1,
               max_mid
             };
 

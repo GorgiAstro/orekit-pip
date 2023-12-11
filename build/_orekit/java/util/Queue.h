@@ -17,12 +17,12 @@ namespace java {
     class Queue : public ::java::util::Collection {
      public:
       enum {
-        mid_add_65c7d273e80d497a,
-        mid_element_4d26fd885228c716,
-        mid_offer_65c7d273e80d497a,
-        mid_peek_4d26fd885228c716,
-        mid_poll_4d26fd885228c716,
-        mid_remove_4d26fd885228c716,
+        mid_add_221e8e85cb385209,
+        mid_element_e661fe3ba2fafb22,
+        mid_offer_221e8e85cb385209,
+        mid_peek_e661fe3ba2fafb22,
+        mid_poll_e661fe3ba2fafb22,
+        mid_remove_e661fe3ba2fafb22,
         max_mid
       };
 

@@ -3,6 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace time {
+      class DateComponents;
+      class Month;
+      class TimeComponents;
+      class DateTimeComponents;
+    }
+  }
+}
 namespace java {
   namespace io {
     class Serializable;
@@ -14,16 +24,6 @@ namespace java {
     class Comparable;
   }
 }
-namespace org {
-  namespace orekit {
-    namespace time {
-      class DateTimeComponents;
-      class TimeComponents;
-      class Month;
-      class DateComponents;
-    }
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -33,26 +33,26 @@ namespace org {
       class DateTimeComponents : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_9c14c403a5c352d6,
-          mid_init$_68cb5421234eef18,
-          mid_init$_2981819d13ae2f57,
-          mid_init$_8336200ef3dde36b,
-          mid_init$_e057cf067cded0b1,
-          mid_init$_ed1b0bf4ea7912b1,
-          mid_compareTo_580f9f152eeb57a7,
-          mid_equals_65c7d273e80d497a,
-          mid_getDate_06e6477664d37caa,
-          mid_getTime_844c883de8de25a4,
-          mid_hashCode_570ce0828f81a2c1,
-          mid_offsetFrom_d9ea92929f2fc1c4,
-          mid_parseDateTime_a1ae90bb1e45c6d8,
-          mid_roundIfNeeded_63daf82408c2d953,
-          mid_toString_11b109bd155ca898,
-          mid_toString_8cc8a10236476f23,
-          mid_toString_5d51f1f447446760,
-          mid_toStringRfc3339_11b109bd155ca898,
-          mid_toStringWithoutUtcOffset_11b109bd155ca898,
-          mid_toStringWithoutUtcOffset_5d51f1f447446760,
+          mid_init$_97334b4cde36fee4,
+          mid_init$_353be96736eb4a0e,
+          mid_init$_c01975213386f6a3,
+          mid_init$_3796b665437eba81,
+          mid_init$_3b45da7a278589bc,
+          mid_init$_053a596a1809d580,
+          mid_compareTo_0b255e184011a8ea,
+          mid_equals_221e8e85cb385209,
+          mid_getDate_ef81839d8717cc3a,
+          mid_getTime_6230b16c2680001d,
+          mid_hashCode_412668abc8d889e9,
+          mid_offsetFrom_9e85e6d4a4eee270,
+          mid_parseDateTime_3d71e8ecdce2fb61,
+          mid_roundIfNeeded_3765068295c1bb88,
+          mid_toString_3cffd47377eca18a,
+          mid_toString_0f10d4a5e06f61c0,
+          mid_toString_637f0334ff6ee92d,
+          mid_toStringRfc3339_3cffd47377eca18a,
+          mid_toStringWithoutUtcOffset_3cffd47377eca18a,
+          mid_toStringWithoutUtcOffset_637f0334ff6ee92d,
           max_mid
         };
 

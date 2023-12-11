@@ -3,19 +3,19 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace data {
-      class DataProvider;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace data {
+      class DataProvider;
+    }
   }
 }
 template<class T> class JArray;
@@ -27,12 +27,12 @@ namespace org {
       class AbstractListCrawler : public ::java::lang::Object {
        public:
         enum {
-          mid_addInput_2990946c992aafed,
-          mid_getInputs_2afa36052df4765d,
-          mid_getStream_21e7c14915faab34,
-          mid_getZipJarCrawler_30558b0704cd5966,
-          mid_getBaseName_e816b890c4273bbd,
-          mid_getCompleteName_e816b890c4273bbd,
+          mid_addInput_009757f2c0fd9090,
+          mid_getInputs_0d9551367f7ecdef,
+          mid_getCompleteName_fa48e6cfb0766bbf,
+          mid_getBaseName_fa48e6cfb0766bbf,
+          mid_getZipJarCrawler_bb8b4fd10482c728,
+          mid_getStream_9f5def4cb35ed37f,
           max_mid
         };
 

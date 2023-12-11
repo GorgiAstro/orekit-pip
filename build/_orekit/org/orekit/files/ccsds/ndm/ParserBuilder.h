@@ -8,40 +8,40 @@ namespace org {
     namespace files {
       namespace ccsds {
         namespace ndm {
-          class ParserBuilder;
-          namespace cdm {
-            class CdmParser;
-          }
-          namespace tdm {
-            class TdmParser;
-          }
-          namespace adm {
-            namespace apm {
-              class ApmParser;
-            }
-            namespace acm {
-              class AcmParser;
-            }
-            namespace aem {
-              class AemParser;
-            }
-          }
           namespace odm {
+            namespace oem {
+              class OemParser;
+            }
+            namespace opm {
+              class OpmParser;
+            }
             namespace omm {
               class OmmParser;
             }
             namespace ocm {
               class OcmParser;
             }
-            namespace opm {
-              class OpmParser;
+          }
+          class ParsedUnitsBehavior;
+          namespace adm {
+            namespace aem {
+              class AemParser;
             }
-            namespace oem {
-              class OemParser;
+            namespace acm {
+              class AcmParser;
+            }
+            namespace apm {
+              class ApmParser;
             }
           }
+          class ParserBuilder;
           class NdmParser;
-          class ParsedUnitsBehavior;
+          namespace tdm {
+            class TdmParser;
+          }
+          namespace cdm {
+            class CdmParser;
+          }
         }
       }
     }
@@ -66,29 +66,29 @@ namespace org {
           class ParserBuilder : public ::org::orekit::files::ccsds::ndm::AbstractBuilder {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_init$_47d99c12e4a42886,
-              mid_buildAcmParser_2aa5c19e4d5f2142,
-              mid_buildAemParser_4ea708b5faf8145e,
-              mid_buildApmParser_c093551445ef7ba3,
-              mid_buildCdmParser_fc1b3c415062f7bd,
-              mid_buildNdmParser_2659e5d6a5121296,
-              mid_buildOcmParser_136ce27922ee89ce,
-              mid_buildOemParser_fa970dd4387a80e3,
-              mid_buildOmmParser_4f9ce280b5f9dbf3,
-              mid_buildOpmParser_8616f2e7f58e9a7e,
-              mid_buildTdmParser_506132c9fd0c05bf,
-              mid_getDefaultInterpolationDegree_570ce0828f81a2c1,
-              mid_getDefaultMass_dff5885c2c873297,
-              mid_getMu_dff5885c2c873297,
-              mid_getParsedUnitsBehavior_8df14555f7513c0c,
-              mid_isSimpleEOP_b108b35ef48e27bd,
-              mid_withDefaultInterpolationDegree_2889e1c2207af806,
-              mid_withDefaultMass_b81b97c003637b25,
-              mid_withMu_b81b97c003637b25,
-              mid_withParsedUnitsBehavior_bffeee18af4d6edb,
-              mid_withSimpleEOP_efc8a17719217074,
-              mid_create_5ea517fc57c81492,
+              mid_init$_0640e6acf969ed28,
+              mid_init$_23625b258f7a7479,
+              mid_buildAcmParser_a6519a9380eaaaf5,
+              mid_buildAemParser_9ac1c95a2e207c3f,
+              mid_buildApmParser_bf78fe4d9417c3b9,
+              mid_buildCdmParser_c202e8e2ea242b80,
+              mid_buildNdmParser_5bad0a6d587f3cbd,
+              mid_buildOcmParser_102244e00399c31e,
+              mid_buildOemParser_33c71f44d6c0e191,
+              mid_buildOmmParser_f739eeebf6641686,
+              mid_buildOpmParser_7abca2de4e339a48,
+              mid_buildTdmParser_e52a56c28cd727a7,
+              mid_getDefaultInterpolationDegree_412668abc8d889e9,
+              mid_getDefaultMass_557b8123390d8d0c,
+              mid_getMu_557b8123390d8d0c,
+              mid_getParsedUnitsBehavior_430d6c1485d1d8cb,
+              mid_isSimpleEOP_89b302893bdbe1f1,
+              mid_withDefaultInterpolationDegree_7ca0964da3353719,
+              mid_withDefaultMass_d20f07dc9475132d,
+              mid_withMu_d20f07dc9475132d,
+              mid_withParsedUnitsBehavior_c085c85d123384ae,
+              mid_withSimpleEOP_8a5b5cc3921c1e36,
+              mid_create_d5c8eda04d2cfb3c,
               max_mid
             };
 

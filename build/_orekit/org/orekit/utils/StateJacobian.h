@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
       class SpacecraftState;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,7 +24,7 @@ namespace org {
       class StateJacobian : public ::java::lang::Object {
        public:
         enum {
-          mid_value_f910011805e7fdeb,
+          mid_value_223e694727d946d7,
           max_mid
         };
 

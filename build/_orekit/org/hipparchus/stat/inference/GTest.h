@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathIllegalArgumentException;
       class MathIllegalStateException;
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -26,15 +26,15 @@ namespace org {
         class GTest : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_g_830834389f7bbf30,
-            mid_gDataSetsComparison_d498b5cc5125fdcb,
-            mid_gTest_830834389f7bbf30,
-            mid_gTest_d2b6ad91862e3050,
-            mid_gTestDataSetsComparison_d498b5cc5125fdcb,
-            mid_gTestDataSetsComparison_9c57b9c7c3ffd7eb,
-            mid_gTestIntrinsic_830834389f7bbf30,
-            mid_rootLogLikelihoodRatio_4a76c08ca752718a,
+            mid_init$_0640e6acf969ed28,
+            mid_g_309c07a77179d86e,
+            mid_gDataSetsComparison_c9aa1880e4fb2330,
+            mid_gTest_309c07a77179d86e,
+            mid_gTest_deac5230a366dcf3,
+            mid_gTestDataSetsComparison_c9aa1880e4fb2330,
+            mid_gTestDataSetsComparison_885f29369ee9c892,
+            mid_gTestIntrinsic_309c07a77179d86e,
+            mid_rootLogLikelihoodRatio_db51ea2c930fe509,
             max_mid
           };
 

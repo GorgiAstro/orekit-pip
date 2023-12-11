@@ -3,26 +3,26 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace time {
-      class FieldTimeInterpolator;
-      class FieldTimeStamped;
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
+    class List;
+    class Collection;
     namespace stream {
       class Stream;
     }
-    class List;
-    class Collection;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+      class FieldTimeInterpolator;
+      class AbsoluteDate;
+      class FieldTimeStamped;
+    }
   }
 }
 template<class T> class JArray;
@@ -34,13 +34,13 @@ namespace org {
       class FieldTimeInterpolator : public ::java::lang::Object {
        public:
         enum {
-          mid_getExtrapolationThreshold_dff5885c2c873297,
-          mid_getNbInterpolationPoints_570ce0828f81a2c1,
-          mid_getSubInterpolators_2afa36052df4765d,
-          mid_interpolate_70830b2a3e9bc73c,
-          mid_interpolate_bfec8f7d8bb341f8,
-          mid_interpolate_557eb4540302b61a,
-          mid_interpolate_0b262a74531436b2,
+          mid_getExtrapolationThreshold_557b8123390d8d0c,
+          mid_getNbInterpolationPoints_412668abc8d889e9,
+          mid_getSubInterpolators_0d9551367f7ecdef,
+          mid_interpolate_38dc0c96cc60a813,
+          mid_interpolate_98428073ca0c402f,
+          mid_interpolate_cc27df3dc8f597ed,
+          mid_interpolate_a061c10693b292f5,
           max_mid
         };
 

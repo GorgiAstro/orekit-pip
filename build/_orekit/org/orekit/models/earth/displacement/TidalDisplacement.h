@@ -5,22 +5,22 @@
 
 namespace org {
   namespace orekit {
+    namespace data {
+      class BodiesElements;
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
+      class IERSConventions;
+    }
+    namespace frames {
+      class Frame;
+    }
     namespace models {
       namespace earth {
         namespace displacement {
           class StationDisplacement;
         }
       }
-    }
-    namespace utils {
-      class IERSConventions;
-      class PVCoordinatesProvider;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace data {
-      class BodiesElements;
     }
   }
   namespace hipparchus {
@@ -49,8 +49,8 @@ namespace org {
           class TidalDisplacement : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_41baa2835134b5c4,
-              mid_displacement_dc5338a5a1255d1d,
+              mid_init$_c8975a7ccf324a90,
+              mid_displacement_2092c3958d15642d,
               max_mid
             };
 

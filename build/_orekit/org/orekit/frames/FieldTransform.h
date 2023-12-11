@@ -4,7 +4,30 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+      class FieldTimeShiftable;
+    }
+    namespace utils {
+      class TimeStampedPVCoordinates;
+      class TimeStampedFieldPVCoordinates;
+      class FieldPVCoordinates;
+      class PVCoordinates;
+      class FieldAngularCoordinates;
+      class CartesianDerivativesFilter;
+      class AngularDerivativesFilter;
+    }
+    namespace frames {
+      class FieldStaticTransform;
+      class FieldTransform;
+      class Transform;
+    }
+  }
   namespace hipparchus {
+    class CalculusFieldElement;
+    class Field;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -13,40 +36,17 @@ namespace org {
         }
       }
     }
-    class Field;
-    class CalculusFieldElement;
-  }
-  namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-      class FieldTimeShiftable;
-      class FieldAbsoluteDate;
-    }
-    namespace utils {
-      class PVCoordinates;
-      class FieldAngularCoordinates;
-      class AngularDerivativesFilter;
-      class FieldPVCoordinates;
-      class TimeStampedPVCoordinates;
-      class CartesianDerivativesFilter;
-      class TimeStampedFieldPVCoordinates;
-    }
-    namespace frames {
-      class FieldStaticTransform;
-      class FieldTransform;
-      class Transform;
-    }
   }
 }
 namespace java {
-  namespace lang {
-    class Class;
-  }
   namespace util {
     namespace stream {
       class Stream;
     }
     class Collection;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -58,41 +58,41 @@ namespace org {
       class FieldTransform : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_b65ab84bb47d00a7,
-          mid_init$_468ba0bc6c5bf070,
-          mid_init$_26718f4f8a0dd037,
-          mid_init$_ffeb9db3a56160f3,
-          mid_init$_377b90ea2be02ed7,
-          mid_init$_3a3329f14a7830fd,
-          mid_init$_e4eca126a7326a31,
-          mid_init$_3b280fe84d2fa2bd,
-          mid_init$_b615b416f90b473e,
-          mid_init$_22c42e194d2f9e41,
-          mid_freeze_8c35d0b6fdd377c3,
-          mid_getAcceleration_716f50c86ffc8da7,
-          mid_getAngular_816428dc64133c35,
-          mid_getCartesian_aae6180d70913ad4,
-          mid_getDate_85703d13e302437e,
-          mid_getFieldDate_51da00d5b8a3b5df,
-          mid_getIdentity_e1a67a7e3aeecd7e,
-          mid_getInverse_8c35d0b6fdd377c3,
-          mid_getJacobian_17a769a90b4358b9,
-          mid_getRotation_1d339a2ee3a3323a,
-          mid_getRotationAcceleration_716f50c86ffc8da7,
-          mid_getRotationRate_716f50c86ffc8da7,
-          mid_getTranslation_716f50c86ffc8da7,
-          mid_getVelocity_716f50c86ffc8da7,
-          mid_interpolate_16c4aa3db8b258a4,
-          mid_interpolate_58f99d45c331a0a9,
-          mid_interpolate_5679859ce4e8409b,
-          mid_shiftedBy_2541ce2a53eedbd6,
-          mid_shiftedBy_958f5755b0dcd0d4,
-          mid_staticShiftedBy_edfa04e1609ffef6,
-          mid_toStaticTransform_b4e9bd069b43219a,
-          mid_transformPVCoordinates_2c604bfeb0a28a2f,
-          mid_transformPVCoordinates_554e30441a4431d6,
-          mid_transformPVCoordinates_f76646e67e6a0632,
-          mid_transformPVCoordinates_ddd20dd2dd77e82a,
+          mid_init$_3e3c82b13e2cf201,
+          mid_init$_3662f4f3d5ceb7b5,
+          mid_init$_35bdc1ce10a82b14,
+          mid_init$_ba43a5f0914e9ada,
+          mid_init$_c1da1fadea6d07de,
+          mid_init$_85d2f5694dce0dd3,
+          mid_init$_0ece0fa6b706157f,
+          mid_init$_9f3e9231dc4d4fdd,
+          mid_init$_448839dff1f7f897,
+          mid_init$_e632fd0ade92943b,
+          mid_freeze_88fa1fad93ade5d3,
+          mid_getAcceleration_2d64addf4c3391d9,
+          mid_getAngular_2e8947cffff3985b,
+          mid_getCartesian_950575861e9716b3,
+          mid_getDate_7a97f7e149e79afb,
+          mid_getFieldDate_f1fe4daf77c66560,
+          mid_getIdentity_99b2ac05e5fc7895,
+          mid_getInverse_88fa1fad93ade5d3,
+          mid_getJacobian_4ff515bdbce6a2ad,
+          mid_getRotation_73da4eeccf2b7e14,
+          mid_getRotationAcceleration_2d64addf4c3391d9,
+          mid_getRotationRate_2d64addf4c3391d9,
+          mid_getTranslation_2d64addf4c3391d9,
+          mid_getVelocity_2d64addf4c3391d9,
+          mid_interpolate_f374ad8221fbadd4,
+          mid_interpolate_e76541a1d81fb90b,
+          mid_interpolate_4940ae4d3bb419f1,
+          mid_shiftedBy_e779761267ceaf91,
+          mid_shiftedBy_1ce66039276ccc6b,
+          mid_staticShiftedBy_39d5979fbbfb1f23,
+          mid_toStaticTransform_fe2c5c7bc73a25b6,
+          mid_transformPVCoordinates_f6b3fdf5ec92a07f,
+          mid_transformPVCoordinates_fdfa06d009a789af,
+          mid_transformPVCoordinates_5954fda0d828683a,
+          mid_transformPVCoordinates_b038abcbf2a1b6eb,
           max_mid
         };
 

@@ -36,10 +36,10 @@ namespace org {
             class LeastSquaresProblem : public ::org::hipparchus::optim::OptimizationProblem {
              public:
               enum {
-                mid_evaluate_766f7f4cc1ea3a49,
-                mid_getObservationSize_570ce0828f81a2c1,
-                mid_getParameterSize_570ce0828f81a2c1,
-                mid_getStart_aab4fbf77867daa8,
+                mid_evaluate_45332b266cdd66d4,
+                mid_getObservationSize_412668abc8d889e9,
+                mid_getParameterSize_412668abc8d889e9,
+                mid_getStart_75d50d73180655b4,
                 max_mid
               };
 

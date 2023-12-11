@@ -8,8 +8,8 @@ namespace org {
     namespace files {
       namespace rinex {
         namespace observation {
-          class RinexObservationHeader;
           class ObservationDataSet;
+          class RinexObservationHeader;
         }
       }
     }
@@ -34,9 +34,9 @@ namespace org {
           class RinexObservation : public ::org::orekit::files::rinex::RinexFile {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_addObservationDataSet_5e249044f63168db,
-              mid_getObservationDataSets_2afa36052df4765d,
+              mid_init$_0640e6acf969ed28,
+              mid_addObservationDataSet_7cae3eafa8e6978c,
+              mid_getObservationDataSets_0d9551367f7ecdef,
               max_mid
             };
 

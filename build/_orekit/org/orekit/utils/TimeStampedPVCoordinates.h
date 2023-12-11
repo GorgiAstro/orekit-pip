@@ -15,17 +15,17 @@ namespace org {
     }
   }
   namespace orekit {
+    namespace utils {
+      class PVCoordinatesProvider;
+      class TimeStampedPVCoordinates;
+    }
     namespace frames {
       class Frame;
     }
     namespace time {
-      class TimeScale;
       class AbsoluteDate;
+      class TimeScale;
       class TimeStamped;
-    }
-    namespace utils {
-      class PVCoordinatesProvider;
-      class TimeStampedPVCoordinates;
     }
   }
 }
@@ -44,20 +44,20 @@ namespace org {
       class TimeStampedPVCoordinates : public ::org::orekit::utils::PVCoordinates {
        public:
         enum {
-          mid_init$_f88e9097ff8a5727,
-          mid_init$_db8760ebddf85268,
-          mid_init$_d039183b82af87d6,
-          mid_init$_9ff2f3ca38e5cacd,
-          mid_init$_eeb459fa935d9f89,
-          mid_init$_1c345cf73262affe,
-          mid_init$_c4b26be37eff0af5,
-          mid_init$_df5cef70e3fdc417,
-          mid_init$_676a84b2fb6cb2c2,
-          mid_getDate_85703d13e302437e,
-          mid_shiftedBy_9de3a3e1b3ac3d5a,
-          mid_toString_11b109bd155ca898,
-          mid_toString_e3ec59f6a2ed4d7c,
-          mid_toTaylorProvider_2d8eb60a3ed519a7,
+          mid_init$_8b5236185db73aff,
+          mid_init$_a1f5dc554250f77b,
+          mid_init$_8a280baa525bbe55,
+          mid_init$_d1b18387f266ab27,
+          mid_init$_cbd37fa90c15dcc5,
+          mid_init$_06f788959c496621,
+          mid_init$_ab5c1802aae2e873,
+          mid_init$_c3b70466f3a2d583,
+          mid_init$_bfa9bec6e182d19e,
+          mid_getDate_7a97f7e149e79afb,
+          mid_shiftedBy_abc572ee9de7b188,
+          mid_toString_3cffd47377eca18a,
+          mid_toString_8873a127a4f312ad,
+          mid_toTaylorProvider_2f9a95aa9dd20b18,
           max_mid
         };
 

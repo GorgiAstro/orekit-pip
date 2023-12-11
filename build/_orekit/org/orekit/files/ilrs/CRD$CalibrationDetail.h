@@ -26,8 +26,8 @@ namespace org {
         class CRD$CalibrationDetail : public ::org::orekit::files::ilrs::CRD$Calibration {
          public:
           enum {
-            mid_init$_8911ec2fe4f4cc28,
-            mid_toCrdString_11b109bd155ca898,
+            mid_init$_eafe5b3d04932887,
+            mid_toCrdString_3cffd47377eca18a,
             max_mid
           };
 

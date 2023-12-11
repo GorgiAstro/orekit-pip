@@ -6,11 +6,11 @@
 namespace org {
   namespace orekit {
     namespace rugged {
-      namespace errors {
-        class DumpReplayer$Result;
-      }
       namespace api {
         class Rugged;
+      }
+      namespace errors {
+        class DumpReplayer$Result;
       }
     }
   }
@@ -33,10 +33,10 @@ namespace org {
         class DumpReplayer : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_createRugged_a3579a23a3f3f05f,
-            mid_execute_4764216aaf810de5,
-            mid_parse_0613af62f2ba5dba,
+            mid_init$_0640e6acf969ed28,
+            mid_createRugged_f145c77b35875136,
+            mid_execute_ea85ae1307587c4c,
+            mid_parse_5d6bcca91ae998ee,
             max_mid
           };
 

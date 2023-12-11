@@ -5,12 +5,12 @@
 
 namespace org {
   namespace orekit {
+    namespace bodies {
+      class GeodeticPoint;
+      class OneAxisEllipsoid;
+    }
     namespace utils {
       class PVCoordinatesProvider;
-    }
-    namespace bodies {
-      class OneAxisEllipsoid;
-      class GeodeticPoint;
     }
     namespace time {
       class AbsoluteDate;
@@ -31,7 +31,7 @@ namespace org {
       class WaypointPVBuilder$InterpolationFactory : public ::java::lang::Object {
        public:
         enum {
-          mid_create_092e4309578f48b7,
+          mid_create_439794ba61ea0c79,
           max_mid
         };
 

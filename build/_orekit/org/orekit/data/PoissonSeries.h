@@ -6,12 +6,12 @@
 namespace org {
   namespace orekit {
     namespace data {
-      class PolynomialNutation;
-      class PoissonSeries$CompiledSeries;
-      class BodiesElements;
-      class FieldBodiesElements;
       class SeriesTerm;
+      class BodiesElements;
+      class PolynomialNutation;
       class PoissonSeries;
+      class FieldBodiesElements;
+      class PoissonSeries$CompiledSeries;
     }
   }
   namespace hipparchus {
@@ -36,12 +36,12 @@ namespace org {
       class PoissonSeries : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_eb152ceb778bf99d,
-          mid_compile_cda8e90069187421,
-          mid_getNonPolynomialSize_570ce0828f81a2c1,
-          mid_getPolynomial_5b9d83970064b661,
-          mid_value_bea6276a59f3cdf6,
-          mid_value_2748c478a8009c37,
+          mid_init$_0083be6cd8730319,
+          mid_compile_8e1980293785248d,
+          mid_getNonPolynomialSize_412668abc8d889e9,
+          mid_getPolynomial_c08e070a55035864,
+          mid_value_645226ccf45fca25,
+          mid_value_3e0ce57516456e43,
           max_mid
         };
 

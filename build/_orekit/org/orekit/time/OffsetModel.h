@@ -27,12 +27,12 @@ namespace org {
       class OffsetModel : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_07bece3cd7a2ccd6,
-          mid_init$_bc1e58e77e71782c,
-          mid_getMJDRef_570ce0828f81a2c1,
-          mid_getOffset_dff5885c2c873297,
-          mid_getSlope_dff5885c2c873297,
-          mid_getStart_06e6477664d37caa,
+          mid_init$_2cfd6eaa6758b3d2,
+          mid_init$_7ff55b3cf6ee3c81,
+          mid_getMJDRef_412668abc8d889e9,
+          mid_getOffset_557b8123390d8d0c,
+          mid_getSlope_557b8123390d8d0c,
+          mid_getStart_ef81839d8717cc3a,
           max_mid
         };
 

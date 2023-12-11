@@ -5,24 +5,24 @@
 
 namespace org {
   namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class EstimatedMeasurement;
-        class ObservedMeasurement;
-      }
-      namespace leastsquares {
-        class ModelObserver;
-      }
-    }
     namespace propagation {
       namespace conversion {
         class PropagatorBuilder;
       }
+      class MatricesHarvester;
+      class Propagator;
       namespace integration {
         class AbstractIntegratedPropagator;
       }
-      class MatricesHarvester;
-      class Propagator;
+    }
+    namespace estimation {
+      namespace leastsquares {
+        class ModelObserver;
+      }
+      namespace measurements {
+        class ObservedMeasurement;
+        class EstimatedMeasurement;
+      }
     }
     namespace orbits {
       class Orbit;
@@ -37,8 +37,8 @@ namespace org {
       class Pair;
     }
     namespace linear {
-      class RealVector;
       class RealMatrix;
+      class RealVector;
     }
   }
 }
@@ -62,22 +62,22 @@ namespace org {
         class PythonAbstractBatchLSModel : public ::org::orekit::estimation::leastsquares::AbstractBatchLSModel {
          public:
           enum {
-            mid_init$_013b9b75e2d29096,
-            mid_configureHarvester_e80966db3f120c01,
-            mid_configureOrbits_e5faaf40266e83a3,
-            mid_createPropagators_eb824313fdad97ad,
-            mid_fetchEvaluatedMeasurement_de3fd4c2c4a341a7,
-            mid_finalize_0fa09c18fee449d5,
-            mid_getEvaluationsCount_570ce0828f81a2c1,
-            mid_getIterationsCount_570ce0828f81a2c1,
-            mid_getSelectedPropagationDriversForBuilder_e970077e9411a499,
-            mid_isForwardPropagation_b108b35ef48e27bd,
-            mid_pythonDecRef_0fa09c18fee449d5,
-            mid_pythonExtension_492808a339bfa35f,
-            mid_pythonExtension_3a8e7649f31fdb20,
-            mid_setEvaluationsCounter_97761a13d2e9faa2,
-            mid_setIterationsCounter_97761a13d2e9faa2,
-            mid_value_f3b8dd3e226035d1,
+            mid_init$_2406e4cf7f21e166,
+            mid_configureHarvester_58ff847451f5cf92,
+            mid_configureOrbits_614fe55969c9646f,
+            mid_createPropagators_30bf62a3dd22b244,
+            mid_fetchEvaluatedMeasurement_e484126dd163b386,
+            mid_finalize_0640e6acf969ed28,
+            mid_getEvaluationsCount_412668abc8d889e9,
+            mid_getIterationsCount_412668abc8d889e9,
+            mid_getSelectedPropagationDriversForBuilder_b63a8ff72f9e46a4,
+            mid_isForwardPropagation_89b302893bdbe1f1,
+            mid_pythonDecRef_0640e6acf969ed28,
+            mid_pythonExtension_9e26256fb0d384a2,
+            mid_pythonExtension_3cd6a6b354c6aa22,
+            mid_setEvaluationsCounter_7852dd173b858d1b,
+            mid_setIterationsCounter_7852dd173b858d1b,
+            mid_value_77538fd880505017,
             max_mid
           };
 

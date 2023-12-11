@@ -7,9 +7,9 @@ namespace org {
   namespace hipparchus {
     namespace stat {
       namespace regression {
+        class SimpleRegression;
         class UpdatingMultipleLinearRegression;
         class RegressionResults;
-        class SimpleRegression;
       }
     }
     namespace exception {
@@ -35,36 +35,36 @@ namespace org {
         class SimpleRegression : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_init$_bd04c9335fb9e4cf,
-            mid_addData_a0befc7f3dc19e41,
-            mid_addData_8f2e782d5278b131,
-            mid_addObservation_bc1ff02eb3693128,
-            mid_addObservations_38e689b845a7e4f9,
-            mid_append_612d078f264bef5d,
-            mid_clear_0fa09c18fee449d5,
-            mid_getIntercept_dff5885c2c873297,
-            mid_getInterceptStdErr_dff5885c2c873297,
-            mid_getMeanSquareError_dff5885c2c873297,
-            mid_getN_492808a339bfa35f,
-            mid_getR_dff5885c2c873297,
-            mid_getRSquare_dff5885c2c873297,
-            mid_getRegressionSumSquares_dff5885c2c873297,
-            mid_getSignificance_dff5885c2c873297,
-            mid_getSlope_dff5885c2c873297,
-            mid_getSlopeConfidenceInterval_dff5885c2c873297,
-            mid_getSlopeConfidenceInterval_dcbc7ce2902fa136,
-            mid_getSlopeStdErr_dff5885c2c873297,
-            mid_getSumOfCrossProducts_dff5885c2c873297,
-            mid_getSumSquaredErrors_dff5885c2c873297,
-            mid_getTotalSumSquares_dff5885c2c873297,
-            mid_getXSumSquares_dff5885c2c873297,
-            mid_hasIntercept_b108b35ef48e27bd,
-            mid_predict_dcbc7ce2902fa136,
-            mid_regress_0142096ec696b4f7,
-            mid_regress_7a5a137e3f3bf403,
-            mid_removeData_a0befc7f3dc19e41,
-            mid_removeData_8f2e782d5278b131,
+            mid_init$_0640e6acf969ed28,
+            mid_init$_ed2afdb8506b9742,
+            mid_addData_edb361bfdd1ad9ae,
+            mid_addData_ab23f4ae0fb33968,
+            mid_addObservation_3682f2e0c8382fe5,
+            mid_addObservations_122207bd161e9ddc,
+            mid_append_e6378b3609f57f95,
+            mid_clear_0640e6acf969ed28,
+            mid_getIntercept_557b8123390d8d0c,
+            mid_getInterceptStdErr_557b8123390d8d0c,
+            mid_getMeanSquareError_557b8123390d8d0c,
+            mid_getN_9e26256fb0d384a2,
+            mid_getR_557b8123390d8d0c,
+            mid_getRSquare_557b8123390d8d0c,
+            mid_getRegressionSumSquares_557b8123390d8d0c,
+            mid_getSignificance_557b8123390d8d0c,
+            mid_getSlope_557b8123390d8d0c,
+            mid_getSlopeConfidenceInterval_557b8123390d8d0c,
+            mid_getSlopeConfidenceInterval_7e960cd6eee376d8,
+            mid_getSlopeStdErr_557b8123390d8d0c,
+            mid_getSumOfCrossProducts_557b8123390d8d0c,
+            mid_getSumSquaredErrors_557b8123390d8d0c,
+            mid_getTotalSumSquares_557b8123390d8d0c,
+            mid_getXSumSquares_557b8123390d8d0c,
+            mid_hasIntercept_89b302893bdbe1f1,
+            mid_predict_7e960cd6eee376d8,
+            mid_regress_2f78c8eefa6215e0,
+            mid_regress_bfd11e26913ff479,
+            mid_removeData_edb361bfdd1ad9ae,
+            mid_removeData_ab23f4ae0fb33968,
             max_mid
           };
 

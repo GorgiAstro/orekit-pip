@@ -5,10 +5,10 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace ode {
       class FieldODEStateAndDerivative;
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -26,12 +26,12 @@ namespace org {
         class FieldODEStateInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_getCurrentState_7194dd3ba3cbc7e8,
-            mid_getInterpolatedState_ad18f3cde52c81b9,
-            mid_getPreviousState_7194dd3ba3cbc7e8,
-            mid_isCurrentStateInterpolated_b108b35ef48e27bd,
-            mid_isForward_b108b35ef48e27bd,
-            mid_isPreviousStateInterpolated_b108b35ef48e27bd,
+            mid_getCurrentState_45f3e0f3929fa6d9,
+            mid_getInterpolatedState_2c40e49ec2799666,
+            mid_getPreviousState_45f3e0f3929fa6d9,
+            mid_isCurrentStateInterpolated_89b302893bdbe1f1,
+            mid_isForward_89b302893bdbe1f1,
+            mid_isPreviousStateInterpolated_89b302893bdbe1f1,
             max_mid
           };
 

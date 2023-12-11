@@ -30,7 +30,7 @@ namespace org {
           class TideSystemProvider : public ::java::lang::Object {
            public:
             enum {
-              mid_getTideSystem_c68abf1ca1fc273e,
+              mid_getTideSystem_7d9a2a298dcb49fa,
               max_mid
             };
 

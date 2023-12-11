@@ -13,12 +13,12 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace bodies {
-      class OneAxisEllipsoid;
-      class GeodeticPoint;
-    }
     namespace frames {
       class Transform;
+    }
+    namespace bodies {
+      class GeodeticPoint;
+      class OneAxisEllipsoid;
     }
   }
   namespace hipparchus {
@@ -41,12 +41,12 @@ namespace org {
         class SmoothFieldOfView : public ::org::orekit::geometry::fov::AbstractFieldOfView {
          public:
           enum {
-            mid_getCenter_d52645e0d4c07563,
-            mid_getFootprint_d179f90e70a637c1,
-            mid_getX_d52645e0d4c07563,
-            mid_getY_d52645e0d4c07563,
-            mid_getZ_d52645e0d4c07563,
-            mid_directionAt_9137bba253a33d9c,
+            mid_getCenter_f88961cca75a2c0a,
+            mid_getFootprint_37f5cab3ae6d781a,
+            mid_getX_f88961cca75a2c0a,
+            mid_getY_f88961cca75a2c0a,
+            mid_getZ_f88961cca75a2c0a,
+            mid_directionAt_20de5f9d51c6611f,
             max_mid
           };
 

@@ -28,7 +28,7 @@ namespace org {
         class BivariateGridInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_interpolate_b1b3dc6deb3b6d67,
+            mid_interpolate_3edf1effd3188e77,
             max_mid
           };
 

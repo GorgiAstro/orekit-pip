@@ -6,13 +6,13 @@
 namespace org {
   namespace orekit {
     namespace gnss {
-      class SatelliteSystem;
       namespace metric {
         namespace parser {
-          class MessageType;
           class IgsSsrMessageType;
+          class MessageType;
         }
       }
+      class SatelliteSystem;
     }
   }
 }
@@ -33,11 +33,11 @@ namespace org {
           class IgsSsrMessageType : public ::java::lang::Enum {
            public:
             enum {
-              mid_getMessageType_044bc996b7e01e86,
-              mid_getSatelliteId_ca48e2f2a322b431,
-              mid_messageNumberToSatelliteSystem_88047dd77a18b2f0,
-              mid_valueOf_044bc996b7e01e86,
-              mid_values_23b79723d947151c,
+              mid_getMessageType_ed1acef2fdb033e1,
+              mid_getSatelliteId_e73aede0632481c0,
+              mid_messageNumberToSatelliteSystem_6aab4999d0ba53ca,
+              mid_valueOf_ed1acef2fdb033e1,
+              mid_values_103304ddea6ba3dc,
               max_mid
             };
 

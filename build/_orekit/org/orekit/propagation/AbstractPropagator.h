@@ -3,37 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-    namespace propagation {
-      class AdditionalStateProvider;
-      class MatricesHarvester;
-      namespace sampling {
-        class StepHandlerMultiplexer;
-      }
-      class Propagator;
-      class SpacecraftState;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class DoubleArrayDictionary;
-      class TimeStampedPVCoordinates;
-    }
-  }
-  namespace hipparchus {
-    namespace linear {
-      class RealMatrix;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -41,6 +10,37 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      class MatricesHarvester;
+      class Propagator;
+      namespace sampling {
+        class StepHandlerMultiplexer;
+      }
+      class SpacecraftState;
+      class AdditionalStateProvider;
+    }
+    namespace utils {
+      class DoubleArrayDictionary;
+      class TimeStampedPVCoordinates;
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+  }
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
+    }
   }
 }
 template<class T> class JArray;
@@ -52,28 +52,28 @@ namespace org {
       class AbstractPropagator : public ::java::lang::Object {
        public:
         enum {
-          mid_addAdditionalStateProvider_81bc0d009507f0f4,
-          mid_getAdditionalStateProviders_2afa36052df4765d,
-          mid_getAttitudeProvider_a904f3d015a354a0,
-          mid_getFrame_b86f9f61d97a7244,
-          mid_getInitialState_c6311115fea01a34,
-          mid_getManagedAdditionalStates_692f4257baa8d3c3,
-          mid_getMultiplexer_808e9f10a9e4927b,
-          mid_getPVCoordinates_cfeec55f7c63ec64,
-          mid_isAdditionalStateManaged_7edad2c2f64f4d68,
-          mid_propagate_fbff2ff5554d95e1,
-          mid_resetInitialState_0ee5c56004643a2e,
-          mid_setAttitudeProvider_3cff7c75ea06698c,
-          mid_setupMatricesComputation_ae2572b7a98390d4,
-          mid_updateAdditionalStates_f43130c50e9fafeb,
-          mid_initializePropagation_0fa09c18fee449d5,
-          mid_initializeAdditionalStates_600a2a61652bc473,
-          mid_setStartDate_600a2a61652bc473,
-          mid_updateUnmanagedStates_f43130c50e9fafeb,
-          mid_getStartDate_85703d13e302437e,
-          mid_stateChanged_0ee5c56004643a2e,
-          mid_createHarvester_5cfd2a13971b74c7,
-          mid_getHarvester_c46c094dc8f7c2fc,
+          mid_addAdditionalStateProvider_8af102d28e19f725,
+          mid_getAdditionalStateProviders_0d9551367f7ecdef,
+          mid_getAttitudeProvider_6df6b78ab9377151,
+          mid_getFrame_6c9bc0a928c56d4e,
+          mid_getInitialState_15e85d5301b90ef8,
+          mid_getManagedAdditionalStates_5d7d8c500345981d,
+          mid_getMultiplexer_82f3fa0ddb2ba923,
+          mid_getPVCoordinates_17742a9a6655bdb1,
+          mid_isAdditionalStateManaged_fd2162b8a05a22fe,
+          mid_propagate_15e0d02372b1347b,
+          mid_resetInitialState_8655761ebf04b503,
+          mid_setAttitudeProvider_8fa6c0c067ead7b2,
+          mid_setupMatricesComputation_31c2066d459d0537,
+          mid_setStartDate_20affcbd28542333,
+          mid_createHarvester_5f0409a66c29e9c1,
+          mid_updateAdditionalStates_2c4cc16b11f79a6c,
+          mid_initializePropagation_0640e6acf969ed28,
+          mid_initializeAdditionalStates_20affcbd28542333,
+          mid_updateUnmanagedStates_2c4cc16b11f79a6c,
+          mid_getStartDate_7a97f7e149e79afb,
+          mid_getHarvester_34a1db86ec41ca99,
+          mid_stateChanged_8655761ebf04b503,
           max_mid
         };
 

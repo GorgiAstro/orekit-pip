@@ -31,8 +31,8 @@ namespace org {
           class TideSystem : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_c31cb90652bcfc12,
-              mid_values_73dc534173d04b87,
+              mid_valueOf_4df7f62f46196891,
+              mid_values_0672990ee2ea9349,
               max_mid
             };
 

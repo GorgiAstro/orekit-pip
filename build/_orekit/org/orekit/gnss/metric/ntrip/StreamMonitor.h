@@ -3,27 +3,27 @@
 
 #include "org/orekit/gnss/metric/parser/AbstractEncodedMessage.h"
 
+namespace java {
+  namespace lang {
+    class Runnable;
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
     namespace gnss {
       namespace metric {
         namespace ntrip {
-          class NtripClient;
-          class MessageObserver;
           class Type;
+          class MessageObserver;
+          class NtripClient;
         }
       }
     }
     namespace errors {
       class OrekitException;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Runnable;
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -37,12 +37,12 @@ namespace org {
           class StreamMonitor : public ::org::orekit::gnss::metric::parser::AbstractEncodedMessage {
            public:
             enum {
-              mid_init$_33aa1131f657fa07,
-              mid_addObserver_ec8f9baf591d2d70,
-              mid_getException_ca14d9b754aefde3,
-              mid_run_0fa09c18fee449d5,
-              mid_stopMonitoring_0fa09c18fee449d5,
-              mid_fetchByte_570ce0828f81a2c1,
+              mid_init$_1b25a01a27e47695,
+              mid_addObserver_2fd2308d42ce0a43,
+              mid_getException_5062f2ffb53bc0b4,
+              mid_run_0640e6acf969ed28,
+              mid_stopMonitoring_0640e6acf969ed28,
+              mid_fetchByte_412668abc8d889e9,
               max_mid
             };
 

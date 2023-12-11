@@ -34,10 +34,10 @@ namespace org {
             class MonotoneChain : public ::org::hipparchus::geometry::euclidean::twod::hull::AbstractConvexHullGenerator2D {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_init$_bd04c9335fb9e4cf,
-                mid_init$_e7660d2871eaed1f,
-                mid_findHullVertices_e6702ab1f73fd997,
+                mid_init$_0640e6acf969ed28,
+                mid_init$_ed2afdb8506b9742,
+                mid_init$_de678bc36ddd2b6a,
+                mid_findHullVertices_6472a4633751d554,
                 max_mid
               };
 

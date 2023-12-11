@@ -13,12 +13,12 @@ namespace org {
         class Geoid;
       }
     }
-    namespace data {
-      class DataProvidersManager;
-    }
     namespace time {
       class AbsoluteDate;
       class TimeScale;
+    }
+    namespace data {
+      class DataProvidersManager;
     }
   }
 }
@@ -39,14 +39,14 @@ namespace org {
           class GlobalPressureTemperature2Model : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_19e8fabe7fac9f6f,
-              mid_init$_b0686cbcd452eabf,
-              mid_init$_9192b414c25d017b,
-              mid_getA_60c7040667a7dc5c,
-              mid_getPressure_dff5885c2c873297,
-              mid_getTemperature_dff5885c2c873297,
-              mid_getWaterVaporPressure_dff5885c2c873297,
-              mid_weatherParameters_a7786d9d355d3792,
+              mid_init$_13b9421b93b56628,
+              mid_init$_7d537054ffc60b02,
+              mid_init$_4c2f0029514de5e4,
+              mid_getA_a53a7513ecedada2,
+              mid_getPressure_557b8123390d8d0c,
+              mid_getTemperature_557b8123390d8d0c,
+              mid_getWaterVaporPressure_557b8123390d8d0c,
+              mid_weatherParameters_4ca6118c75b70100,
               max_mid
             };
 

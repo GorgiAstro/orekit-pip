@@ -42,11 +42,11 @@ namespace org {
         class SemiAnalyticalKalmanEstimatorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_addPropagationConfiguration_796471e986ca1c14,
-            mid_build_0a252603a3d25efa,
-            mid_decomposer_c8db4b68fd9ed991,
-            mid_estimatedMeasurementsParameters_217f0bbd89c92250,
+            mid_init$_0640e6acf969ed28,
+            mid_addPropagationConfiguration_6fe2b5afb594b4e3,
+            mid_build_edfcb27d4dad6e67,
+            mid_decomposer_032ccc0017a05cb8,
+            mid_estimatedMeasurementsParameters_79d89206611a8ec8,
             max_mid
           };
 

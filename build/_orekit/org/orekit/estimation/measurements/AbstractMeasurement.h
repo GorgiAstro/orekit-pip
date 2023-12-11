@@ -4,31 +4,7 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class EstimatedMeasurement;
-        class EstimatedMeasurementBase;
-        class ObservedMeasurement;
-        class EstimationModifier;
-        class ObservableSatellite;
-      }
-    }
-    namespace utils {
-      class ParameterDriver;
-      class TimeStampedPVCoordinates;
-      class TimeStampedFieldPVCoordinates;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-    }
-    namespace propagation {
-      class SpacecraftState;
-    }
-  }
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace analysis {
       namespace differentiation {
         class Gradient;
@@ -41,6 +17,30 @@ namespace org {
           class Vector3D;
         }
       }
+    }
+    class CalculusFieldElement;
+  }
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class ObservedMeasurement;
+        class ObservableSatellite;
+        class EstimatedMeasurement;
+        class EstimatedMeasurementBase;
+        class EstimationModifier;
+      }
+    }
+    namespace utils {
+      class TimeStampedFieldPVCoordinates;
+      class ParameterDriver;
+      class TimeStampedPVCoordinates;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
+    namespace propagation {
+      class SpacecraftState;
     }
   }
 }
@@ -62,25 +62,25 @@ namespace org {
         class AbstractMeasurement : public ::java::lang::Object {
          public:
           enum {
-            mid_addModifier_baf3397e6fffc21d,
-            mid_estimate_27ef5cc84ad0852b,
-            mid_estimateWithoutDerivatives_e32883476b3d9b22,
-            mid_getBaseWeight_60c7040667a7dc5c,
-            mid_getCoordinates_d3c60b51295c1a91,
-            mid_getDate_85703d13e302437e,
-            mid_getDimension_570ce0828f81a2c1,
-            mid_getModifiers_2afa36052df4765d,
-            mid_getObservedValue_60c7040667a7dc5c,
-            mid_getParametersDrivers_2afa36052df4765d,
-            mid_getSatellites_2afa36052df4765d,
-            mid_getTheoreticalStandardDeviation_60c7040667a7dc5c,
-            mid_isEnabled_b108b35ef48e27bd,
-            mid_setEnabled_bd04c9335fb9e4cf,
-            mid_signalTimeOfFlight_b8a7d6bc618d5fd6,
-            mid_signalTimeOfFlight_1fa9729545cf47a9,
-            mid_theoreticalEvaluationWithoutDerivatives_e32883476b3d9b22,
-            mid_theoreticalEvaluation_27ef5cc84ad0852b,
-            mid_addParameterDriver_01a5c4b8230d6f04,
+            mid_addModifier_6f472135bf397672,
+            mid_estimate_eae039ee8c8a4a4d,
+            mid_estimateWithoutDerivatives_71d69ca0f7c280a7,
+            mid_getBaseWeight_a53a7513ecedada2,
+            mid_getCoordinates_35bdb952e4a028e2,
+            mid_getDate_7a97f7e149e79afb,
+            mid_getDimension_412668abc8d889e9,
+            mid_getModifiers_0d9551367f7ecdef,
+            mid_getObservedValue_a53a7513ecedada2,
+            mid_getParametersDrivers_0d9551367f7ecdef,
+            mid_getSatellites_0d9551367f7ecdef,
+            mid_getTheoreticalStandardDeviation_a53a7513ecedada2,
+            mid_isEnabled_89b302893bdbe1f1,
+            mid_setEnabled_ed2afdb8506b9742,
+            mid_signalTimeOfFlight_8b2d535c90fd2ca6,
+            mid_signalTimeOfFlight_9011d63fcb2c1242,
+            mid_addParameterDriver_558cfe74a49f563f,
+            mid_theoreticalEvaluationWithoutDerivatives_71d69ca0f7c280a7,
+            mid_theoreticalEvaluation_eae039ee8c8a4a4d,
             max_mid
           };
 
@@ -109,8 +109,8 @@ namespace org {
           JArray< jdouble > getTheoreticalStandardDeviation() const;
           jboolean isEnabled() const;
           void setEnabled(jboolean) const;
-          static jdouble signalTimeOfFlight(const ::org::orekit::utils::TimeStampedPVCoordinates &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::time::AbsoluteDate &);
           static ::org::hipparchus::CalculusFieldElement signalTimeOfFlight(const ::org::orekit::utils::TimeStampedFieldPVCoordinates &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::time::FieldAbsoluteDate &);
+          static jdouble signalTimeOfFlight(const ::org::orekit::utils::TimeStampedPVCoordinates &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::time::AbsoluteDate &);
         };
       }
     }

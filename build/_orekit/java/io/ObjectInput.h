@@ -22,13 +22,13 @@ namespace java {
     class ObjectInput : public ::java::io::DataInput {
      public:
       enum {
-        mid_available_570ce0828f81a2c1,
-        mid_close_0fa09c18fee449d5,
-        mid_read_570ce0828f81a2c1,
-        mid_read_5702323b606d072b,
-        mid_read_619434785725cc72,
-        mid_readObject_4d26fd885228c716,
-        mid_skip_02b241598e254a3f,
+        mid_available_412668abc8d889e9,
+        mid_close_0640e6acf969ed28,
+        mid_read_412668abc8d889e9,
+        mid_read_67c88f2bf4e7f8b2,
+        mid_read_68a76742c8623fb3,
+        mid_readObject_e661fe3ba2fafb22,
+        mid_skip_f4ad805a81234b49,
         max_mid
       };
 

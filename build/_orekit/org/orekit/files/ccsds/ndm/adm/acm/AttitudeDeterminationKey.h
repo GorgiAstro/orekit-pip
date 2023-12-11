@@ -16,9 +16,9 @@ namespace org {
         namespace ndm {
           namespace adm {
             namespace acm {
-              class AttitudeDetermination;
-              class AcmParser;
               class AttitudeDeterminationKey;
+              class AcmParser;
+              class AttitudeDetermination;
             }
           }
         }
@@ -45,9 +45,9 @@ namespace org {
               class AttitudeDeterminationKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_34dbc793aacbfa8b,
-                  mid_valueOf_e3d6ea63ba9ee177,
-                  mid_values_b33701ce494f5d3b,
+                  mid_process_e4d8b3167bf5005a,
+                  mid_valueOf_6a3a78fd0ab9605d,
+                  mid_values_03fcc68f489b28a6,
                   max_mid
                 };
 

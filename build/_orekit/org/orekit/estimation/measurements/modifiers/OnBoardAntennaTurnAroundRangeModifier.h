@@ -13,15 +13,15 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace utils {
+      class ParameterDriver;
+    }
     namespace estimation {
       namespace measurements {
         class EstimatedMeasurementBase;
         class TurnAroundRange;
         class EstimationModifier;
       }
-    }
-    namespace utils {
-      class ParameterDriver;
     }
   }
   namespace hipparchus {
@@ -45,9 +45,9 @@ namespace org {
           class OnBoardAntennaTurnAroundRangeModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_029ff0cbf68ea054,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_modifyWithoutDerivatives_d1815d998cba71e9,
+              mid_init$_2810d2bec90e7b1c,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_modifyWithoutDerivatives_e471490df8741b73,
               max_mid
             };
 

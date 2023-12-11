@@ -11,15 +11,15 @@ namespace org {
       class FieldPVCoordinatesProvider;
       class TimeStampedPVCoordinates;
     }
-    namespace frames {
-      class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-    }
     namespace bodies {
       class Ellipsoid;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -37,9 +37,9 @@ namespace org {
       class BodyCenterPointing : public ::org::orekit::attitudes::GroundPointing {
        public:
         enum {
-          mid_init$_23c858a05c2c176d,
-          mid_getTargetPV_129d59e5c897146f,
-          mid_getTargetPV_ad3e02e6f0d115f2,
+          mid_init$_f9d5e998a0fdbd09,
+          mid_getTargetPV_9e0119a6fef31431,
+          mid_getTargetPV_ee00ab612436435b,
           max_mid
         };
 

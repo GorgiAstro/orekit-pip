@@ -27,11 +27,11 @@ namespace org {
             class OdmParser : public ::org::orekit::files::ccsds::utils::parsing::AbstractConstituentParser {
              public:
               enum {
-                mid_getMissionReferenceDate_85703d13e302437e,
-                mid_getSelectedMu_dff5885c2c873297,
-                mid_getMuSet_dff5885c2c873297,
-                mid_setMuParsed_17db3a65980d3441,
-                mid_setMuCreated_17db3a65980d3441,
+                mid_getMissionReferenceDate_7a97f7e149e79afb,
+                mid_getSelectedMu_557b8123390d8d0c,
+                mid_setMuCreated_10f281d777284cea,
+                mid_setMuParsed_10f281d777284cea,
+                mid_getMuSet_557b8123390d8d0c,
                 max_mid
               };
 

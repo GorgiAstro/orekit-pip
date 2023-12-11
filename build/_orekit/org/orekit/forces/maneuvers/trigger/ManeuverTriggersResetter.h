@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace propagation {
       class SpacecraftState;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -29,9 +29,9 @@ namespace org {
           class ManeuverTriggersResetter : public ::java::lang::Object {
            public:
             enum {
-              mid_init_826b4eda94da4e78,
-              mid_maneuverTriggered_33f4696e4edaa03c,
-              mid_resetState_f43130c50e9fafeb,
+              mid_init_0472264ad6f40bc2,
+              mid_maneuverTriggered_45bf76e836befe86,
+              mid_resetState_2c4cc16b11f79a6c,
               max_mid
             };
 

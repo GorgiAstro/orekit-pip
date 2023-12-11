@@ -13,6 +13,11 @@ namespace java {
   }
 }
 namespace org {
+  namespace orekit {
+    namespace bodies {
+      class GeodeticPoint;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -20,11 +25,6 @@ namespace org {
           class Vector3D;
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace bodies {
-      class GeodeticPoint;
     }
   }
 }
@@ -37,19 +37,19 @@ namespace org {
       class GeodeticPoint : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_2c56b6dd4d4b1dec,
-          mid_equals_65c7d273e80d497a,
-          mid_getAltitude_dff5885c2c873297,
-          mid_getEast_d52645e0d4c07563,
-          mid_getLatitude_dff5885c2c873297,
-          mid_getLongitude_dff5885c2c873297,
-          mid_getNadir_d52645e0d4c07563,
-          mid_getNorth_d52645e0d4c07563,
-          mid_getSouth_d52645e0d4c07563,
-          mid_getWest_d52645e0d4c07563,
-          mid_getZenith_d52645e0d4c07563,
-          mid_hashCode_570ce0828f81a2c1,
-          mid_toString_11b109bd155ca898,
+          mid_init$_87096e3fd8086100,
+          mid_equals_221e8e85cb385209,
+          mid_getAltitude_557b8123390d8d0c,
+          mid_getEast_f88961cca75a2c0a,
+          mid_getLatitude_557b8123390d8d0c,
+          mid_getLongitude_557b8123390d8d0c,
+          mid_getNadir_f88961cca75a2c0a,
+          mid_getNorth_f88961cca75a2c0a,
+          mid_getSouth_f88961cca75a2c0a,
+          mid_getWest_f88961cca75a2c0a,
+          mid_getZenith_f88961cca75a2c0a,
+          mid_hashCode_412668abc8d889e9,
+          mid_toString_3cffd47377eca18a,
           max_mid
         };
 

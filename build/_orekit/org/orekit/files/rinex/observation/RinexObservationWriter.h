@@ -3,34 +3,34 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace rinex {
-        namespace section {
-          class RinexComment;
-        }
-        namespace observation {
-          class RinexObservation;
-          class ObservationDataSet;
-          class RinexObservationHeader;
-        }
-      }
-    }
-  }
-}
 namespace java {
-  namespace util {
-    class List;
-  }
   namespace io {
     class IOException;
+  }
+  namespace util {
+    class List;
   }
   namespace lang {
     class AutoCloseable;
     class Appendable;
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace rinex {
+        namespace observation {
+          class RinexObservation;
+          class RinexObservationHeader;
+          class ObservationDataSet;
+        }
+        namespace section {
+          class RinexComment;
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -44,14 +44,14 @@ namespace org {
           class RinexObservationWriter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_580b43eb7b580d53,
-              mid_close_0fa09c18fee449d5,
-              mid_prepareComments_de3e021e7266b71e,
-              mid_writeCompleteFile_f5988098843867b2,
-              mid_writeHeader_2b1813bb25ab1e9c,
-              mid_writeObservationDataSet_5e249044f63168db,
-              mid_writePendingRinex2Observations_0fa09c18fee449d5,
-              mid_writePendingRinex34Observations_0fa09c18fee449d5,
+              mid_init$_07ec9ab68c2ac844,
+              mid_close_0640e6acf969ed28,
+              mid_prepareComments_4ccaedadb068bdeb,
+              mid_writeCompleteFile_e605781ac255bbd3,
+              mid_writeHeader_3d74ba4f9e2b8c95,
+              mid_writeObservationDataSet_7cae3eafa8e6978c,
+              mid_writePendingRinex2Observations_0640e6acf969ed28,
+              mid_writePendingRinex34Observations_0640e6acf969ed28,
               max_mid
             };
 

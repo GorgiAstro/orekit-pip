@@ -9,18 +9,18 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace tdm {
-            class TdmHeader;
             class RangeUnitsConverter;
             class Tdm;
+            class TdmHeader;
           }
         }
       }
     }
-    namespace data {
-      class DataContext;
-    }
     namespace utils {
       class IERSConventions;
+    }
+    namespace data {
+      class DataContext;
     }
   }
 }
@@ -41,8 +41,8 @@ namespace org {
             class TdmWriter : public ::org::orekit::files::ccsds::utils::generation::AbstractMessageWriter {
              public:
               enum {
-                mid_init$_328e2518395eef7f,
-                mid_writeSegmentContent_a4679b5cde76d825,
+                mid_init$_11d463aea965da03,
+                mid_writeSegmentContent_e9836ce27ccfe3b9,
                 max_mid
               };
 

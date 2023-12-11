@@ -46,17 +46,17 @@ namespace org {
             class AbstractMessageParser : public ::java::lang::Object {
              public:
               enum {
-                mid_anticipateNext_30e3b8a372059ddf,
-                mid_getCurrent_1dbed63d6789950e,
-                mid_getFileFormat_66298c6188053be6,
-                mid_getFormatVersionKey_11b109bd155ca898,
-                mid_getSpecialXmlElementsBuilders_6f5a75ccd8c04465,
-                mid_parseMessage_455adfd4ae4ab630,
-                mid_process_60c6e06c33a7585b,
-                mid_setEndTagSeen_bd04c9335fb9e4cf,
-                mid_setFallback_30e3b8a372059ddf,
-                mid_wasEndTagSeen_b108b35ef48e27bd,
-                mid_reset_b2bb54cd2f7ebe7d,
+                mid_anticipateNext_a4672268e69dcb47,
+                mid_getCurrent_50ed54b038eedc45,
+                mid_getFileFormat_c3a4c5f37e67a25e,
+                mid_getFormatVersionKey_3cffd47377eca18a,
+                mid_getSpecialXmlElementsBuilders_1e62c2f73fbdd1c4,
+                mid_parseMessage_850ca290e1713a38,
+                mid_process_1eac6345cb6bda02,
+                mid_setEndTagSeen_ed2afdb8506b9742,
+                mid_setFallback_a4672268e69dcb47,
+                mid_wasEndTagSeen_89b302893bdbe1f1,
+                mid_reset_5f31019b1332b69c,
                 max_mid
               };
 

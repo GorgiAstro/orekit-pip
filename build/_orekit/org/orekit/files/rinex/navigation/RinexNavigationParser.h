@@ -3,22 +3,8 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataSource;
-    }
-    namespace time {
-      class TimeScales;
-    }
     namespace files {
       namespace rinex {
         namespace navigation {
@@ -26,6 +12,20 @@ namespace org {
         }
       }
     }
+    namespace data {
+      class DataSource;
+    }
+    namespace time {
+      class TimeScales;
+    }
+  }
+}
+namespace java {
+  namespace io {
+    class IOException;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -39,9 +39,9 @@ namespace org {
           class RinexNavigationParser : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_init$_8736fe4ec3234d8c,
-              mid_parse_803758770eba64f3,
+              mid_init$_0640e6acf969ed28,
+              mid_init$_fdb437c675e993f7,
+              mid_parse_6ec8d3ac4b3ffe39,
               max_mid
             };
 

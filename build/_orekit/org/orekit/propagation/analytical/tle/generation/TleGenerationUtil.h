@@ -5,10 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace orbits {
-      class FieldKeplerianOrbit;
-      class KeplerianOrbit;
-    }
     namespace propagation {
       namespace analytical {
         namespace tle {
@@ -16,6 +12,10 @@ namespace org {
           class TLE;
         }
       }
+    }
+    namespace orbits {
+      class FieldKeplerianOrbit;
+      class KeplerianOrbit;
     }
     namespace time {
       class TimeScale;
@@ -42,8 +42,8 @@ namespace org {
             class TleGenerationUtil : public ::java::lang::Object {
              public:
               enum {
-                mid_newTLE_6a02b71c2722d4c9,
-                mid_newTLE_90f440e2043552fb,
+                mid_newTLE_7f839109c827fb0a,
+                mid_newTLE_218efa4656bb672d,
                 max_mid
               };
 

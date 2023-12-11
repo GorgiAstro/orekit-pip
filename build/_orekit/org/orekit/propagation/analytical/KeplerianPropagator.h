@@ -8,11 +8,11 @@ namespace org {
     namespace propagation {
       class SpacecraftState;
     }
-    namespace orbits {
-      class Orbit;
-    }
     namespace attitudes {
       class AttitudeProvider;
+    }
+    namespace orbits {
+      class Orbit;
     }
   }
 }
@@ -31,16 +31,16 @@ namespace org {
         class KeplerianPropagator : public ::org::orekit::propagation::analytical::AbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_6219f6b430651d68,
-            mid_init$_6a752d664cb18d86,
-            mid_init$_6d1157b698d5d0d2,
-            mid_init$_664d66016fd6d2d1,
-            mid_init$_14feca30358aa4fd,
-            mid_resetInitialState_0ee5c56004643a2e,
-            mid_propagateOrbit_7a8f4c854607bed6,
-            mid_getMass_bf1d7732f1acb697,
-            mid_resetIntermediateState_33f4696e4edaa03c,
-            mid_createHarvester_5cfd2a13971b74c7,
+            mid_init$_a9af82a1647a21f3,
+            mid_init$_6bcd4ef191c1dc21,
+            mid_init$_23c8620d4b42ef5f,
+            mid_init$_27faad14ca55d093,
+            mid_init$_833f230a8a50fec3,
+            mid_resetInitialState_8655761ebf04b503,
+            mid_propagateOrbit_9e937c0ae63d8022,
+            mid_resetIntermediateState_45bf76e836befe86,
+            mid_getMass_b0b988f941da47d8,
+            mid_createHarvester_5f0409a66c29e9c1,
             max_mid
           };
 

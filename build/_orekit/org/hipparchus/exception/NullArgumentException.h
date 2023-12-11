@@ -3,14 +3,6 @@
 
 #include "java/lang/NullPointerException.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class LocalizedException;
-      class Localizable;
-    }
-  }
-}
 namespace java {
   namespace util {
     class Locale;
@@ -19,6 +11,14 @@ namespace java {
     class Class;
     class Object;
     class String;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class LocalizedException;
+      class Localizable;
+    }
   }
 }
 template<class T> class JArray;
@@ -30,13 +30,13 @@ namespace org {
       class NullArgumentException : public ::java::lang::NullPointerException {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_init$_d0cf82c16a7e8751,
-          mid_getLocalizedMessage_11b109bd155ca898,
-          mid_getMessage_11b109bd155ca898,
-          mid_getMessage_3cd873bfb132c4fd,
-          mid_getParts_b93c730013ce64c6,
-          mid_getSpecifier_517615caa9b88a24,
+          mid_init$_0640e6acf969ed28,
+          mid_init$_4fde7f3f87bbd6f7,
+          mid_getLocalizedMessage_3cffd47377eca18a,
+          mid_getMessage_3cffd47377eca18a,
+          mid_getMessage_4b51060c6b7ea981,
+          mid_getParts_6555a5198c71b73a,
+          mid_getSpecifier_a86d7419cf3241b7,
           max_mid
         };
 

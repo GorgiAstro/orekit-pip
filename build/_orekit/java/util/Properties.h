@@ -13,11 +13,11 @@ namespace java {
     class InvalidPropertiesFormatException;
   }
   namespace io {
-    class Reader;
     class IOException;
     class InputStream;
     class OutputStream;
     class PrintWriter;
+    class Reader;
     class Writer;
     class PrintStream;
   }
@@ -35,48 +35,48 @@ namespace java {
     class Properties : public ::java::util::Hashtable {
      public:
       enum {
-        mid_init$_0fa09c18fee449d5,
-        mid_init$_99803b0791f320ff,
-        mid_clear_0fa09c18fee449d5,
-        mid_clone_4d26fd885228c716,
-        mid_contains_65c7d273e80d497a,
-        mid_containsKey_65c7d273e80d497a,
-        mid_containsValue_65c7d273e80d497a,
-        mid_elements_0dc02dfa0be4cd25,
-        mid_entrySet_015730311a5bacdc,
-        mid_equals_65c7d273e80d497a,
-        mid_get_9facd1449e0950d3,
-        mid_getOrDefault_af8aa32ee9c1f184,
-        mid_getProperty_92807efd57acb082,
-        mid_getProperty_d3f6016a3bf93dcd,
-        mid_hashCode_570ce0828f81a2c1,
-        mid_isEmpty_b108b35ef48e27bd,
-        mid_keySet_015730311a5bacdc,
-        mid_keys_0dc02dfa0be4cd25,
-        mid_list_d7059445128d3e18,
-        mid_list_4999b5b1f2d8269b,
-        mid_load_42871fcf824ad25f,
-        mid_load_6bec8244898df009,
-        mid_loadFromXML_42871fcf824ad25f,
-        mid_propertyNames_0dc02dfa0be4cd25,
-        mid_put_af8aa32ee9c1f184,
-        mid_putAll_db8de8bc54857165,
-        mid_putIfAbsent_af8aa32ee9c1f184,
-        mid_remove_9facd1449e0950d3,
-        mid_remove_83750138b7b51bf4,
-        mid_replace_af8aa32ee9c1f184,
-        mid_replace_25e3a1e437d39751,
-        mid_save_c55dfb0939e8fb48,
-        mid_setProperty_117fa3e1caf1236b,
-        mid_size_570ce0828f81a2c1,
-        mid_store_c55dfb0939e8fb48,
-        mid_store_aace611d43734887,
-        mid_storeToXML_c55dfb0939e8fb48,
-        mid_storeToXML_78f8716e1ece5bfa,
-        mid_stringPropertyNames_015730311a5bacdc,
-        mid_toString_11b109bd155ca898,
-        mid_values_37528d110cff6b74,
-        mid_rehash_0fa09c18fee449d5,
+        mid_init$_0640e6acf969ed28,
+        mid_init$_a3da1a935cb37f7b,
+        mid_clear_0640e6acf969ed28,
+        mid_clone_e661fe3ba2fafb22,
+        mid_contains_221e8e85cb385209,
+        mid_containsKey_221e8e85cb385209,
+        mid_containsValue_221e8e85cb385209,
+        mid_elements_00b99a423cfc29b8,
+        mid_entrySet_2dfcbd371d62f4e1,
+        mid_equals_221e8e85cb385209,
+        mid_get_65d69db95c5eb156,
+        mid_getOrDefault_e9b6f8dd03d71e12,
+        mid_getProperty_60bb1b490b673cbf,
+        mid_getProperty_495add03b8c9417b,
+        mid_hashCode_412668abc8d889e9,
+        mid_isEmpty_89b302893bdbe1f1,
+        mid_keySet_2dfcbd371d62f4e1,
+        mid_keys_00b99a423cfc29b8,
+        mid_list_bbeebf9dbb580a3d,
+        mid_list_b077047c9598ae7e,
+        mid_load_115bc9fcd812647a,
+        mid_load_d679cb724d14a1e8,
+        mid_loadFromXML_115bc9fcd812647a,
+        mid_propertyNames_00b99a423cfc29b8,
+        mid_put_e9b6f8dd03d71e12,
+        mid_putAll_6ba01303bcce0307,
+        mid_putIfAbsent_e9b6f8dd03d71e12,
+        mid_remove_65d69db95c5eb156,
+        mid_remove_5f964797772d10ff,
+        mid_replace_e9b6f8dd03d71e12,
+        mid_replace_5c8006f3f1f9c96f,
+        mid_save_207a8313515c6ca8,
+        mid_setProperty_63fc77e6d24b7a67,
+        mid_size_412668abc8d889e9,
+        mid_store_207a8313515c6ca8,
+        mid_store_a67829916a4b8bcb,
+        mid_storeToXML_207a8313515c6ca8,
+        mid_storeToXML_eeb3e1bed9e221e7,
+        mid_stringPropertyNames_2dfcbd371d62f4e1,
+        mid_toString_3cffd47377eca18a,
+        mid_values_12ee61573a18f417,
+        mid_rehash_0640e6acf969ed28,
         max_mid
       };
 

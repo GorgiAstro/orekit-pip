@@ -28,9 +28,9 @@ namespace org {
         class GeoMagneticFields : public ::java::lang::Object {
          public:
           enum {
-            mid_getField_4aeee65bc3c68b0b,
-            mid_getIGRF_11ad1d91265636f7,
-            mid_getWMM_11ad1d91265636f7,
+            mid_getField_a3e70fb66ee864fe,
+            mid_getIGRF_7100d3672aa999e4,
+            mid_getWMM_7100d3672aa999e4,
             max_mid
           };
 

@@ -3,6 +3,21 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
+    }
+    namespace stat {
+      namespace descriptive {
+        class UnivariateStatistic;
+        class DescriptiveStatistics;
+        class StatisticalSummary;
+      }
+    }
+  }
+}
 namespace java {
   namespace io {
     class Serializable;
@@ -17,21 +32,6 @@ namespace java {
     class String;
   }
 }
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
-    }
-    namespace stat {
-      namespace descriptive {
-        class StatisticalSummary;
-        class DescriptiveStatistics;
-        class UnivariateStatistic;
-      }
-    }
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -42,36 +42,36 @@ namespace org {
         class DescriptiveStatistics : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_init$_fa9d415d19f69361,
-            mid_init$_99803b0791f320ff,
-            mid_accept_17db3a65980d3441,
-            mid_addValue_17db3a65980d3441,
-            mid_apply_11f6cd1332ce91d7,
-            mid_clear_0fa09c18fee449d5,
-            mid_copy_eb8178054e79f61d,
-            mid_getElement_46f85b53d9aedd96,
-            mid_getGeometricMean_dff5885c2c873297,
-            mid_getKurtosis_dff5885c2c873297,
-            mid_getMax_dff5885c2c873297,
-            mid_getMean_dff5885c2c873297,
-            mid_getMin_dff5885c2c873297,
-            mid_getN_492808a339bfa35f,
-            mid_getPercentile_dcbc7ce2902fa136,
-            mid_getPopulationVariance_dff5885c2c873297,
-            mid_getQuadraticMean_dff5885c2c873297,
-            mid_getSkewness_dff5885c2c873297,
-            mid_getSortedValues_60c7040667a7dc5c,
-            mid_getStandardDeviation_dff5885c2c873297,
-            mid_getSum_dff5885c2c873297,
-            mid_getSumOfSquares_dff5885c2c873297,
-            mid_getValues_60c7040667a7dc5c,
-            mid_getVariance_dff5885c2c873297,
-            mid_getWindowSize_570ce0828f81a2c1,
-            mid_removeMostRecentValue_0fa09c18fee449d5,
-            mid_replaceMostRecentValue_dcbc7ce2902fa136,
-            mid_setWindowSize_99803b0791f320ff,
-            mid_toString_11b109bd155ca898,
+            mid_init$_0640e6acf969ed28,
+            mid_init$_cc18240f4a737f14,
+            mid_init$_a3da1a935cb37f7b,
+            mid_accept_10f281d777284cea,
+            mid_addValue_10f281d777284cea,
+            mid_apply_1fd59dc8c1348e34,
+            mid_clear_0640e6acf969ed28,
+            mid_copy_176a899d8f1ce21f,
+            mid_getElement_69cfb132c661aca4,
+            mid_getGeometricMean_557b8123390d8d0c,
+            mid_getKurtosis_557b8123390d8d0c,
+            mid_getMax_557b8123390d8d0c,
+            mid_getMean_557b8123390d8d0c,
+            mid_getMin_557b8123390d8d0c,
+            mid_getN_9e26256fb0d384a2,
+            mid_getPercentile_7e960cd6eee376d8,
+            mid_getPopulationVariance_557b8123390d8d0c,
+            mid_getQuadraticMean_557b8123390d8d0c,
+            mid_getSkewness_557b8123390d8d0c,
+            mid_getSortedValues_a53a7513ecedada2,
+            mid_getStandardDeviation_557b8123390d8d0c,
+            mid_getSum_557b8123390d8d0c,
+            mid_getSumOfSquares_557b8123390d8d0c,
+            mid_getValues_a53a7513ecedada2,
+            mid_getVariance_557b8123390d8d0c,
+            mid_getWindowSize_412668abc8d889e9,
+            mid_removeMostRecentValue_0640e6acf969ed28,
+            mid_replaceMostRecentValue_7e960cd6eee376d8,
+            mid_setWindowSize_a3da1a935cb37f7b,
+            mid_toString_3cffd47377eca18a,
             max_mid
           };
 

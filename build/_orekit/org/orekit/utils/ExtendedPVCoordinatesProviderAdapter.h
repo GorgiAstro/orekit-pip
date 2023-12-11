@@ -3,17 +3,17 @@
 
 #include "org/orekit/frames/Frame.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace utils {
       class ExtendedPVCoordinatesProvider;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,7 +25,7 @@ namespace org {
       class ExtendedPVCoordinatesProviderAdapter : public ::org::orekit::frames::Frame {
        public:
         enum {
-          mid_init$_10178aa1957fcbf4,
+          mid_init$_ffaafe31c629f87e,
           max_mid
         };
 

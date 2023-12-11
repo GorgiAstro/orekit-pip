@@ -31,10 +31,10 @@ namespace org {
           class RinexLabels : public ::java::lang::Enum {
            public:
             enum {
-              mid_getLabel_11b109bd155ca898,
-              mid_matches_7edad2c2f64f4d68,
-              mid_valueOf_e07ada233254e39e,
-              mid_values_68162d818eac21fb,
+              mid_getLabel_3cffd47377eca18a,
+              mid_matches_fd2162b8a05a22fe,
+              mid_valueOf_b31250dda514ea56,
+              mid_values_3bfff4c4ee184087,
               max_mid
             };
 

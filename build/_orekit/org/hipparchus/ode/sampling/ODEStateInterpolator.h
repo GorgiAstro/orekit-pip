@@ -25,12 +25,12 @@ namespace org {
         class ODEStateInterpolator : public ::java::io::Serializable {
          public:
           enum {
-            mid_getCurrentState_72cfc96c3e58d15e,
-            mid_getInterpolatedState_f01efdb3ab1bad7f,
-            mid_getPreviousState_72cfc96c3e58d15e,
-            mid_isCurrentStateInterpolated_b108b35ef48e27bd,
-            mid_isForward_b108b35ef48e27bd,
-            mid_isPreviousStateInterpolated_b108b35ef48e27bd,
+            mid_getCurrentState_0a798a152cb54887,
+            mid_getInterpolatedState_0a47e68426cfc9cf,
+            mid_getPreviousState_0a798a152cb54887,
+            mid_isCurrentStateInterpolated_89b302893bdbe1f1,
+            mid_isForward_89b302893bdbe1f1,
+            mid_isPreviousStateInterpolated_89b302893bdbe1f1,
             max_mid
           };
 

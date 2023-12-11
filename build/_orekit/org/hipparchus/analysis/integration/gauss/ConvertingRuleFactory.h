@@ -30,8 +30,8 @@ namespace org {
           class ConvertingRuleFactory : public ::org::hipparchus::analysis::integration::gauss::AbstractRuleFactory {
            public:
             enum {
-              mid_init$_0b43fca6e1f0e767,
-              mid_computeRule_e670405dd33862ee,
+              mid_init$_f9059ad5e70fba0e,
+              mid_computeRule_9a5adfb225849173,
               max_mid
             };
 

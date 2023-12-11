@@ -4,16 +4,7 @@
 #include "org/orekit/propagation/analytical/tle/FieldSDP4.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
     namespace propagation {
       namespace analytical {
         namespace tle {
@@ -21,6 +12,15 @@ namespace org {
         }
       }
     }
+    namespace frames {
+      class Frame;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -39,11 +39,11 @@ namespace org {
           class FieldDeepSDP4 : public ::org::orekit::propagation::analytical::tle::FieldSDP4 {
            public:
             enum {
-              mid_init$_dee9d0fe004a8f9d,
-              mid_init$_5151ab0d47c2b93c,
-              mid_luniSolarTermsComputation_0fa09c18fee449d5,
-              mid_deepSecularEffects_072c8635f2164db9,
-              mid_deepPeriodicEffects_072c8635f2164db9,
+              mid_init$_506aefaa51ea8c08,
+              mid_init$_09515132f38e5487,
+              mid_luniSolarTermsComputation_0640e6acf969ed28,
+              mid_deepSecularEffects_1ee4bed350fde589,
+              mid_deepPeriodicEffects_1ee4bed350fde589,
               max_mid
             };
 

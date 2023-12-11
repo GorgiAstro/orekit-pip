@@ -20,15 +20,15 @@ namespace java {
     class Map$Entry : public ::java::lang::Object {
      public:
       enum {
-        mid_comparingByKey_96e45e3694fbbb22,
-        mid_comparingByKey_7a4cd21393022d6a,
-        mid_comparingByValue_96e45e3694fbbb22,
-        mid_comparingByValue_7a4cd21393022d6a,
-        mid_equals_65c7d273e80d497a,
-        mid_getKey_4d26fd885228c716,
-        mid_getValue_4d26fd885228c716,
-        mid_hashCode_570ce0828f81a2c1,
-        mid_setValue_9facd1449e0950d3,
+        mid_comparingByKey_b0b551d4a54c7150,
+        mid_comparingByKey_ed7a25767f280242,
+        mid_comparingByValue_b0b551d4a54c7150,
+        mid_comparingByValue_ed7a25767f280242,
+        mid_equals_221e8e85cb385209,
+        mid_getKey_e661fe3ba2fafb22,
+        mid_getValue_e661fe3ba2fafb22,
+        mid_hashCode_412668abc8d889e9,
+        mid_setValue_65d69db95c5eb156,
         max_mid
       };
 

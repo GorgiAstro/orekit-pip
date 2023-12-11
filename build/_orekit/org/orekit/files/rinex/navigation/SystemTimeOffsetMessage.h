@@ -5,13 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace gnss {
-      class SatelliteSystem;
-      class TimeSystem;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace files {
       namespace rinex {
         namespace navigation {
@@ -19,6 +12,13 @@ namespace org {
           class SbasId;
         }
       }
+    }
+    namespace gnss {
+      class TimeSystem;
+      class SatelliteSystem;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -39,25 +39,25 @@ namespace org {
           class SystemTimeOffsetMessage : public ::org::orekit::files::rinex::navigation::TypeSvMessage {
            public:
             enum {
-              mid_init$_a82ff7a18fa6993f,
-              mid_getA0_dff5885c2c873297,
-              mid_getA1_dff5885c2c873297,
-              mid_getA2_dff5885c2c873297,
-              mid_getDefinedTimeSystem_47ed81afbc0cea8f,
-              mid_getReferenceEpoch_85703d13e302437e,
-              mid_getReferenceTimeSystem_47ed81afbc0cea8f,
-              mid_getSbasId_8f6914b4bd2e2d71,
-              mid_getTransmissionTime_dff5885c2c873297,
-              mid_getUtcId_561540de83f061b2,
-              mid_setA0_17db3a65980d3441,
-              mid_setA1_17db3a65980d3441,
-              mid_setA2_17db3a65980d3441,
-              mid_setDefinedTimeSystem_188d9681dd6fbe69,
-              mid_setReferenceEpoch_600a2a61652bc473,
-              mid_setReferenceTimeSystem_188d9681dd6fbe69,
-              mid_setSbasId_f0dccd70fadf61fe,
-              mid_setTransmissionTime_17db3a65980d3441,
-              mid_setUtcId_588659e8e1639977,
+              mid_init$_e1b2f7b885c85083,
+              mid_getA0_557b8123390d8d0c,
+              mid_getA1_557b8123390d8d0c,
+              mid_getA2_557b8123390d8d0c,
+              mid_getDefinedTimeSystem_2700635415605e4d,
+              mid_getReferenceEpoch_7a97f7e149e79afb,
+              mid_getReferenceTimeSystem_2700635415605e4d,
+              mid_getSbasId_f14deef4f5ae913f,
+              mid_getTransmissionTime_557b8123390d8d0c,
+              mid_getUtcId_1187194f96ded63f,
+              mid_setA0_10f281d777284cea,
+              mid_setA1_10f281d777284cea,
+              mid_setA2_10f281d777284cea,
+              mid_setDefinedTimeSystem_562aaa7511f66c1c,
+              mid_setReferenceEpoch_20affcbd28542333,
+              mid_setReferenceTimeSystem_562aaa7511f66c1c,
+              mid_setSbasId_631a985e246bff70,
+              mid_setTransmissionTime_10f281d777284cea,
+              mid_setUtcId_43c2027d5aaa2ca7,
               max_mid
             };
 

@@ -14,16 +14,16 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace propagation {
       namespace events {
         class ParameterDrivenDateIntervalDetector;
       }
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -38,14 +38,14 @@ namespace org {
           class DateBasedManeuverTriggers : public ::org::orekit::forces::maneuvers::trigger::IntervalEventTrigger {
            public:
             enum {
-              mid_init$_fdc72bfdba154d74,
-              mid_init$_7d29df8e1e987e68,
-              mid_getDuration_dff5885c2c873297,
-              mid_getEndDate_85703d13e302437e,
-              mid_getName_11b109bd155ca898,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_getStartDate_85703d13e302437e,
-              mid_convertIntervalDetector_6d5643096d51e9e8,
+              mid_init$_f22bef3f7be90029,
+              mid_init$_c68a5ca0cc166e0d,
+              mid_getDuration_557b8123390d8d0c,
+              mid_getEndDate_7a97f7e149e79afb,
+              mid_getName_3cffd47377eca18a,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_getStartDate_7a97f7e149e79afb,
+              mid_convertIntervalDetector_11c11f8a5b36a3f9,
               max_mid
             };
 

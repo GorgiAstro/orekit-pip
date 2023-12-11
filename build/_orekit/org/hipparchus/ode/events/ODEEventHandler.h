@@ -6,11 +6,11 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
-      namespace events {
-        class Action;
-        class ODEEventDetector;
-      }
       class ODEState;
+      namespace events {
+        class ODEEventDetector;
+        class Action;
+      }
       class ODEStateAndDerivative;
     }
   }
@@ -30,9 +30,9 @@ namespace org {
         class ODEEventHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_eventOccurred_8eae28001ad776dd,
-            mid_init_8c7db74dc121e7b9,
-            mid_resetState_0cb5f574380f6dc4,
+            mid_eventOccurred_fd726416cdd75217,
+            mid_init_7c627b13cc0bc863,
+            mid_resetState_2597e34d70859cbd,
             max_mid
           };
 

@@ -5,9 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataContext;
-    }
     namespace propagation {
       namespace numerical {
         class GLONASSNumericalPropagator;
@@ -26,6 +23,9 @@ namespace org {
     }
     namespace attitudes {
       class AttitudeProvider;
+    }
+    namespace data {
+      class DataContext;
     }
   }
   namespace hipparchus {
@@ -51,12 +51,12 @@ namespace org {
         class GLONASSNumericalPropagatorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_b497ba6a57c1bea6,
-            mid_init$_5ac92562e210e61f,
-            mid_attitudeProvider_c29034d29782ca95,
-            mid_build_38606dad37802ca8,
-            mid_eci_5967e5ad557b9333,
-            mid_mass_fd7ec11afcb405eb,
+            mid_init$_c4f5084529b2630a,
+            mid_init$_fe060e7d2340011c,
+            mid_attitudeProvider_b8e20793d178ef3e,
+            mid_build_66895542a8da4316,
+            mid_eci_d85d69f2cf281f4c,
+            mid_mass_1e4b091bb86c38aa,
             max_mid
           };
 

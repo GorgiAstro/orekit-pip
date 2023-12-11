@@ -44,16 +44,16 @@ namespace org {
         class SP3Ephemeris : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_c8f7ccb4be2c9aa7,
-            mid_addCoordinate_ee2ec20169ef45b1,
-            mid_getAvailableDerivatives_16e9a7b5414faf2d,
-            mid_getFrame_b86f9f61d97a7244,
-            mid_getId_11b109bd155ca898,
-            mid_getInterpolationSamples_570ce0828f81a2c1,
-            mid_getMu_dff5885c2c873297,
-            mid_getSegments_2afa36052df4765d,
-            mid_getStart_85703d13e302437e,
-            mid_getStop_85703d13e302437e,
+            mid_init$_d20f1b9933bf6131,
+            mid_addCoordinate_3b8f026ef20f7360,
+            mid_getAvailableDerivatives_6c4898d6ec0c3837,
+            mid_getFrame_6c9bc0a928c56d4e,
+            mid_getId_3cffd47377eca18a,
+            mid_getInterpolationSamples_412668abc8d889e9,
+            mid_getMu_557b8123390d8d0c,
+            mid_getSegments_0d9551367f7ecdef,
+            mid_getStart_7a97f7e149e79afb,
+            mid_getStop_7a97f7e149e79afb,
             max_mid
           };
 

@@ -26,10 +26,10 @@ namespace org {
       class CartesianDerivativesFilter : public ::java::lang::Enum {
        public:
         enum {
-          mid_getFilter_db36f0575b5122ab,
-          mid_getMaxOrder_570ce0828f81a2c1,
-          mid_valueOf_5856fb500eb39730,
-          mid_values_b21b9bc9310d7dc4,
+          mid_getFilter_c5d6392fd4affea9,
+          mid_getMaxOrder_412668abc8d889e9,
+          mid_valueOf_cdb925dbc9d5c0f2,
+          mid_values_f8d12b019cf223aa,
           max_mid
         };
 

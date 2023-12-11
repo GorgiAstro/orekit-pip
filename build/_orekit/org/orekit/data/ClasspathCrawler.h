@@ -3,18 +3,18 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class ClassLoader;
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace data {
       class DataProvider;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-    class ClassLoader;
   }
 }
 template<class T> class JArray;
@@ -26,8 +26,8 @@ namespace org {
       class ClasspathCrawler : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_b8ac5bb33398c2cf,
-          mid_init$_c976573e5d3f191a,
+          mid_init$_cb4082327a3ebdc5,
+          mid_init$_0ffe18e62f27ddd9,
           max_mid
         };
 

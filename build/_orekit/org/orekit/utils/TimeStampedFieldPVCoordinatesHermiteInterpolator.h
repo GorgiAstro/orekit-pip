@@ -24,12 +24,12 @@ namespace org {
       class TimeStampedFieldPVCoordinatesHermiteInterpolator : public ::org::orekit::time::AbstractFieldTimeInterpolator {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_init$_99803b0791f320ff,
-          mid_init$_297c693ff16234ea,
-          mid_init$_ce04d2837a89861b,
-          mid_getFilter_16e9a7b5414faf2d,
-          mid_interpolate_10906d940387ab3e,
+          mid_init$_0640e6acf969ed28,
+          mid_init$_a3da1a935cb37f7b,
+          mid_init$_d326b3da32a40ffa,
+          mid_init$_fab028e15eb3891b,
+          mid_getFilter_6c4898d6ec0c3837,
+          mid_interpolate_5ac6a4ca260ac13f,
           max_mid
         };
 

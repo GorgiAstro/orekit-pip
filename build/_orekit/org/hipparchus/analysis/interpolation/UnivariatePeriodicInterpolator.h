@@ -5,14 +5,14 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace analysis {
       class UnivariateFunction;
       namespace interpolation {
         class UnivariateInterpolator;
       }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -31,9 +31,9 @@ namespace org {
         class UnivariatePeriodicInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_6d5e1af35a58a08c,
-            mid_init$_39bac383100c02fc,
-            mid_interpolate_26024a819137b7d3,
+            mid_init$_5062af5d86f74f7b,
+            mid_init$_db044254c8bdb23b,
+            mid_interpolate_f70e3a7ad4658836,
             max_mid
           };
 

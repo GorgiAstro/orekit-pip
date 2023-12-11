@@ -5,8 +5,8 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
   namespace orekit {
     namespace propagation {
@@ -21,12 +21,12 @@ namespace org {
   }
 }
 namespace java {
-  namespace util {
-    class SortedMap;
-  }
   namespace lang {
     class Double;
     class Class;
+  }
+  namespace util {
+    class SortedMap;
   }
 }
 template<class T> class JArray;
@@ -41,12 +41,12 @@ namespace org {
             class CoefficientsFactory : public ::java::lang::Object {
              public:
               enum {
-                mid_computeGsHs_9729f35458e90405,
-                mid_computeGsHs_92ed6d97d3136441,
-                mid_computeQns_164c4999f0e80777,
-                mid_computeQns_571181d055513081,
-                mid_computeVns_58ab571ec7f76162,
-                mid_getVmns_3d407e6a8cf9e8ca,
+                mid_computeGsHs_91dc03a64efae3d5,
+                mid_computeGsHs_2355f919653f668f,
+                mid_computeQns_2d3e8b8ef3940f3c,
+                mid_computeQns_89ca475961b7cdea,
+                mid_computeVns_b99c49b5f9b9dff0,
+                mid_getVmns_093995dc5657c18c,
                 max_mid
               };
 

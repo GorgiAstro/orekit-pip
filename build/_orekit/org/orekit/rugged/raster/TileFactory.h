@@ -27,7 +27,7 @@ namespace org {
         class TileFactory : public ::java::lang::Object {
          public:
           enum {
-            mid_createTile_2f7030d942f36841,
+            mid_createTile_c36eccfe3059a213,
             max_mid
           };
 

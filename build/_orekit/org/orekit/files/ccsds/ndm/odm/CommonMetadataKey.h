@@ -15,8 +15,8 @@ namespace org {
         }
         namespace ndm {
           namespace odm {
-            class CommonMetadataKey;
             class OdmCommonMetadata;
+            class CommonMetadataKey;
           }
         }
       }
@@ -41,9 +41,9 @@ namespace org {
             class CommonMetadataKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_9ccb1594a59f0353,
-                mid_valueOf_b8bef2ea1bf8e3ae,
-                mid_values_e52ac7dd10f55521,
+                mid_process_ed0894e4f39ba1e9,
+                mid_valueOf_f0a630142e41faf7,
+                mid_values_6a84328aebdf684c,
                 max_mid
               };
 

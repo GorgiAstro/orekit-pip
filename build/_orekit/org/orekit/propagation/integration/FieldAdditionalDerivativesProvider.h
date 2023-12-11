@@ -3,12 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -22,6 +16,12 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -32,11 +32,11 @@ namespace org {
         class FieldAdditionalDerivativesProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_combinedDerivatives_bed9dfcebfaf5040,
-            mid_getDimension_570ce0828f81a2c1,
-            mid_getName_11b109bd155ca898,
-            mid_init_8e8de2be1664674a,
-            mid_yields_1b0abd4f90ebd0eb,
+            mid_combinedDerivatives_33912551ee5141fb,
+            mid_getDimension_412668abc8d889e9,
+            mid_getName_3cffd47377eca18a,
+            mid_init_811e49dad2467b67,
+            mid_yields_4fda3059ab91dbfe,
             max_mid
           };
 

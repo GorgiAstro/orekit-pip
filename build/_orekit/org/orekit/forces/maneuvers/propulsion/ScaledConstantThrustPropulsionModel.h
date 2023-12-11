@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -14,13 +13,14 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace utils {
       class ParameterDriver;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -44,16 +44,16 @@ namespace org {
           class ScaledConstantThrustPropulsionModel : public ::org::orekit::forces::maneuvers::propulsion::AbstractConstantThrustPropulsionModel {
            public:
             enum {
-              mid_init$_06e1ed88b8b36bf6,
-              mid_getFlowRate_dff5885c2c873297,
-              mid_getFlowRate_9dc1ec0bcc0a9a29,
-              mid_getFlowRate_f2dc4f0d2f87d390,
-              mid_getFlowRate_bf1d7732f1acb697,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_getThrustVector_d52645e0d4c07563,
-              mid_getThrustVector_36619a55dd67cb97,
-              mid_getThrustVector_3cf6594f36d3d60d,
-              mid_getThrustVector_24461752d0eea1e3,
+              mid_init$_cf2d903473e9fd3b,
+              mid_getFlowRate_557b8123390d8d0c,
+              mid_getFlowRate_86c4a0582e0747ce,
+              mid_getFlowRate_e3919ad898361abd,
+              mid_getFlowRate_b0b988f941da47d8,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_getThrustVector_f88961cca75a2c0a,
+              mid_getThrustVector_b4c4f24efa81746b,
+              mid_getThrustVector_73a8498c189497cd,
+              mid_getThrustVector_3df461fe15362b2b,
               max_mid
             };
 

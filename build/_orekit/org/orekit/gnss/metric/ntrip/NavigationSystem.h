@@ -31,10 +31,10 @@ namespace org {
           class NavigationSystem : public ::java::lang::Enum {
            public:
             enum {
-              mid_getNavigationSystem_3146cb04e114db92,
-              mid_toString_11b109bd155ca898,
-              mid_valueOf_3146cb04e114db92,
-              mid_values_8a00c70ad784c536,
+              mid_getNavigationSystem_eae3ad692c83727b,
+              mid_toString_3cffd47377eca18a,
+              mid_valueOf_eae3ad692c83727b,
+              mid_values_9f5a969911311e6e,
               max_mid
             };
 

@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -14,14 +13,15 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
   namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
     namespace bodies {
       class IAUPole;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
     }
   }
 }
@@ -40,17 +40,17 @@ namespace org {
       class PythonIAUPole : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_finalize_0fa09c18fee449d5,
-          mid_getNode_24461752d0eea1e3,
-          mid_getNode_e81fa067750860a1,
-          mid_getPole_24461752d0eea1e3,
-          mid_getPole_e81fa067750860a1,
-          mid_getPrimeMeridianAngle_bf1d7732f1acb697,
-          mid_getPrimeMeridianAngle_2a5f05be83ff251d,
-          mid_pythonDecRef_0fa09c18fee449d5,
-          mid_pythonExtension_492808a339bfa35f,
-          mid_pythonExtension_3a8e7649f31fdb20,
+          mid_init$_0640e6acf969ed28,
+          mid_finalize_0640e6acf969ed28,
+          mid_getNode_3df461fe15362b2b,
+          mid_getNode_3343973a86caeaa4,
+          mid_getPole_3df461fe15362b2b,
+          mid_getPole_3343973a86caeaa4,
+          mid_getPrimeMeridianAngle_b0b988f941da47d8,
+          mid_getPrimeMeridianAngle_b884068a2c99f6ca,
+          mid_pythonDecRef_0640e6acf969ed28,
+          mid_pythonExtension_9e26256fb0d384a2,
+          mid_pythonExtension_3cd6a6b354c6aa22,
           max_mid
         };
 

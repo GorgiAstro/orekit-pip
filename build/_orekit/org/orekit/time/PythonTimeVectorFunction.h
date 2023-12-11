@@ -4,15 +4,15 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
       class TimeVectorFunction;
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -30,13 +30,13 @@ namespace org {
       class PythonTimeVectorFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_finalize_0fa09c18fee449d5,
-          mid_pythonDecRef_0fa09c18fee449d5,
-          mid_pythonExtension_492808a339bfa35f,
-          mid_pythonExtension_3a8e7649f31fdb20,
-          mid_value_2b9aa40de0a696a4,
-          mid_value_1d12c7a27955163b,
+          mid_init$_0640e6acf969ed28,
+          mid_finalize_0640e6acf969ed28,
+          mid_pythonDecRef_0640e6acf969ed28,
+          mid_pythonExtension_9e26256fb0d384a2,
+          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_value_89e8b78e4211e023,
+          mid_value_f77452810420dd04,
           max_mid
         };
 

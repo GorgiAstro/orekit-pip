@@ -3,14 +3,14 @@
 
 #include "org/orekit/propagation/semianalytical/dsst/forces/FieldForceModelContext.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -25,20 +25,20 @@ namespace org {
             class FieldDSSTTesseralContext : public ::org::orekit::propagation::semianalytical::dsst::forces::FieldForceModelContext {
              public:
               enum {
-                mid_getAx2oA_eba8e72a22c984ac,
-                mid_getBoA_eba8e72a22c984ac,
-                mid_getBoABpo_eba8e72a22c984ac,
-                mid_getChi_eba8e72a22c984ac,
-                mid_getChi2_eba8e72a22c984ac,
-                mid_getCo2AB_eba8e72a22c984ac,
-                mid_getE2_eba8e72a22c984ac,
-                mid_getMeanMotion_eba8e72a22c984ac,
-                mid_getMoa_eba8e72a22c984ac,
-                mid_getOoAB_eba8e72a22c984ac,
-                mid_getOrbitPeriod_eba8e72a22c984ac,
-                mid_getRatio_eba8e72a22c984ac,
-                mid_getRoa_eba8e72a22c984ac,
-                mid_getTheta_eba8e72a22c984ac,
+                mid_getAx2oA_613c8f46c659f636,
+                mid_getBoA_613c8f46c659f636,
+                mid_getBoABpo_613c8f46c659f636,
+                mid_getChi_613c8f46c659f636,
+                mid_getChi2_613c8f46c659f636,
+                mid_getCo2AB_613c8f46c659f636,
+                mid_getE2_613c8f46c659f636,
+                mid_getMeanMotion_613c8f46c659f636,
+                mid_getMoa_613c8f46c659f636,
+                mid_getOoAB_613c8f46c659f636,
+                mid_getOrbitPeriod_613c8f46c659f636,
+                mid_getRatio_613c8f46c659f636,
+                mid_getRoa_613c8f46c659f636,
+                mid_getTheta_613c8f46c659f636,
                 max_mid
               };
 

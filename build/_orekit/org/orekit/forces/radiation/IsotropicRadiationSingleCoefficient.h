@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -14,8 +13,13 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
   namespace orekit {
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
     namespace forces {
       namespace radiation {
         class RadiationSensitive;
@@ -23,10 +27,6 @@ namespace org {
     }
     namespace utils {
       class ParameterDriver;
-    }
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
     }
   }
 }
@@ -48,11 +48,11 @@ namespace org {
         class IsotropicRadiationSingleCoefficient : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_8f2e782d5278b131,
-            mid_init$_b0a935b68e41d65a,
-            mid_getRadiationParametersDrivers_2afa36052df4765d,
-            mid_radiationPressureAcceleration_c01594a6748cab78,
-            mid_radiationPressureAcceleration_70d4c57af2df1a86,
+            mid_init$_ab23f4ae0fb33968,
+            mid_init$_bc3712e794ac7a81,
+            mid_getRadiationParametersDrivers_0d9551367f7ecdef,
+            mid_radiationPressureAcceleration_a910b2c2e7db1f82,
+            mid_radiationPressureAcceleration_122b60d0431fddf5,
             max_mid
           };
 
@@ -71,8 +71,8 @@ namespace org {
           IsotropicRadiationSingleCoefficient(jdouble, jdouble, jdouble, jdouble);
 
           ::java::util::List getRadiationParametersDrivers() const;
-          ::org::hipparchus::geometry::euclidean::threed::Vector3D radiationPressureAcceleration(const ::org::orekit::propagation::SpacecraftState &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const JArray< jdouble > &) const;
           ::org::hipparchus::geometry::euclidean::threed::FieldVector3D radiationPressureAcceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
+          ::org::hipparchus::geometry::euclidean::threed::Vector3D radiationPressureAcceleration(const ::org::orekit::propagation::SpacecraftState &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const JArray< jdouble > &) const;
         };
       }
     }

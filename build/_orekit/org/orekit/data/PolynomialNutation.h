@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-}
 namespace java {
   namespace lang {
     class Class;
   }
   namespace io {
     class Serializable;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -25,11 +25,11 @@ namespace org {
       class PolynomialNutation : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_fa9d415d19f69361,
-          mid_derivative_dcbc7ce2902fa136,
-          mid_derivative_a4b1871f4d29e58b,
-          mid_value_dcbc7ce2902fa136,
-          mid_value_a4b1871f4d29e58b,
+          mid_init$_cc18240f4a737f14,
+          mid_derivative_7e960cd6eee376d8,
+          mid_derivative_6672ad854985cb64,
+          mid_value_7e960cd6eee376d8,
+          mid_value_6672ad854985cb64,
           max_mid
         };
 

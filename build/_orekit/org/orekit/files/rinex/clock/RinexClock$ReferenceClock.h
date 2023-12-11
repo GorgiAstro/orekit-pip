@@ -27,12 +27,12 @@ namespace org {
           class RinexClock$ReferenceClock : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_52aa0b8ea90f2a77,
-              mid_getClockConstraint_dff5885c2c873297,
-              mid_getClockID_11b109bd155ca898,
-              mid_getEndDate_85703d13e302437e,
-              mid_getReferenceName_11b109bd155ca898,
-              mid_getStartDate_85703d13e302437e,
+              mid_init$_2db2697bafc57f1a,
+              mid_getClockConstraint_557b8123390d8d0c,
+              mid_getClockID_3cffd47377eca18a,
+              mid_getEndDate_7a97f7e149e79afb,
+              mid_getReferenceName_3cffd47377eca18a,
+              mid_getStartDate_7a97f7e149e79afb,
               max_mid
             };
 

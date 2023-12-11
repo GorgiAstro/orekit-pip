@@ -5,8 +5,8 @@
 
 namespace java {
   namespace util {
-    class Map;
     class List;
+    class Map;
   }
   namespace lang {
     class Class;
@@ -42,10 +42,10 @@ namespace org {
               class RtcmCorrectionMessage : public ::org::orekit::gnss::metric::messages::rtcm::RtcmMessage {
                public:
                 enum {
-                  mid_init$_b2f23762280bbe6f,
-                  mid_getDataMap_6f5a75ccd8c04465,
-                  mid_getHeader_93f61ca107b15f3c,
-                  mid_getSatelliteSystem_01acae5c1a253b8e,
+                  mid_init$_b08a631b84df15a5,
+                  mid_getDataMap_1e62c2f73fbdd1c4,
+                  mid_getHeader_0db4eac2bf3a134e,
+                  mid_getSatelliteSystem_8b86408cc2633961,
                   max_mid
                 };
 

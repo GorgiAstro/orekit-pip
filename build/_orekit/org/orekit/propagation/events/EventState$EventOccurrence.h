@@ -35,9 +35,9 @@ namespace org {
         class EventState$EventOccurrence : public ::java::lang::Object {
          public:
           enum {
-            mid_getAction_4aa421fecbe7eed3,
-            mid_getNewState_c6311115fea01a34,
-            mid_getStopDate_85703d13e302437e,
+            mid_getAction_2ecf57a2edb373ef,
+            mid_getNewState_15e85d5301b90ef8,
+            mid_getStopDate_7a97f7e149e79afb,
             max_mid
           };
 

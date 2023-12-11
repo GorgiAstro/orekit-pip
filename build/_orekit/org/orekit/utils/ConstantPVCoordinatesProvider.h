@@ -5,17 +5,17 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frame;
+    namespace bodies {
+      class GeodeticPoint;
+      class OneAxisEllipsoid;
     }
     namespace utils {
+      class PVCoordinates;
       class PVCoordinatesProvider;
       class TimeStampedPVCoordinates;
-      class PVCoordinates;
     }
-    namespace bodies {
-      class OneAxisEllipsoid;
-      class GeodeticPoint;
+    namespace frames {
+      class Frame;
     }
     namespace time {
       class AbsoluteDate;
@@ -45,11 +45,11 @@ namespace org {
       class ConstantPVCoordinatesProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_daec801f3b74e98f,
-          mid_init$_5cacd6aaf020b118,
-          mid_init$_233a3bb131db24ed,
-          mid_getPVCoordinates_cfeec55f7c63ec64,
-          mid_getPosition_41a826780212dfea,
+          mid_init$_ed6bf324da5460e4,
+          mid_init$_a6a752e8ad147b96,
+          mid_init$_1caf593de129c444,
+          mid_getPVCoordinates_17742a9a6655bdb1,
+          mid_getPosition_7ca40559664606d9,
           max_mid
         };
 

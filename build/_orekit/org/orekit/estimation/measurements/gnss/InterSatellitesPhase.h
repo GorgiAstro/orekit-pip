@@ -38,11 +38,11 @@ namespace org {
           class InterSatellitesPhase : public ::org::orekit::estimation::measurements::AbstractMeasurement {
            public:
             enum {
-              mid_init$_0d3f6425cb7d5653,
-              mid_getAmbiguityDriver_a25ed222178aa59f,
-              mid_getWavelength_dff5885c2c873297,
-              mid_theoreticalEvaluationWithoutDerivatives_e32883476b3d9b22,
-              mid_theoreticalEvaluation_27ef5cc84ad0852b,
+              mid_init$_b8eeca3db8b2400e,
+              mid_getAmbiguityDriver_4194657b5e280ddc,
+              mid_getWavelength_557b8123390d8d0c,
+              mid_theoreticalEvaluationWithoutDerivatives_71d69ca0f7c280a7,
+              mid_theoreticalEvaluation_eae039ee8c8a4a4d,
               max_mid
             };
 

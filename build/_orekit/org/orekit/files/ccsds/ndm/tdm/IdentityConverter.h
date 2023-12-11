@@ -37,9 +37,9 @@ namespace org {
             class IdentityConverter : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_metersToRu_19583340ae9202d1,
-                mid_ruToMeters_19583340ae9202d1,
+                mid_init$_0640e6acf969ed28,
+                mid_metersToRu_5e4513d7d070fbb0,
+                mid_ruToMeters_5e4513d7d070fbb0,
                 max_mid
               };
 

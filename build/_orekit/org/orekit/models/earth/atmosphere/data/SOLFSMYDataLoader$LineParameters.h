@@ -3,20 +3,20 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
       class TimeStamped;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
+  }
+  namespace io {
+    class Serializable;
   }
 }
 template<class T> class JArray;
@@ -31,16 +31,16 @@ namespace org {
             class SOLFSMYDataLoader$LineParameters : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a6955225de4fc928,
-                mid_getDate_85703d13e302437e,
-                mid_getF10_dff5885c2c873297,
-                mid_getF10B_dff5885c2c873297,
-                mid_getS10_dff5885c2c873297,
-                mid_getS10B_dff5885c2c873297,
-                mid_getXM10_dff5885c2c873297,
-                mid_getXM10B_dff5885c2c873297,
-                mid_getY10_dff5885c2c873297,
-                mid_getY10B_dff5885c2c873297,
+                mid_init$_5ca484248216f6c1,
+                mid_getDate_7a97f7e149e79afb,
+                mid_getF10_557b8123390d8d0c,
+                mid_getF10B_557b8123390d8d0c,
+                mid_getS10_557b8123390d8d0c,
+                mid_getS10B_557b8123390d8d0c,
+                mid_getXM10_557b8123390d8d0c,
+                mid_getXM10B_557b8123390d8d0c,
+                mid_getY10_557b8123390d8d0c,
+                mid_getY10B_557b8123390d8d0c,
                 max_mid
               };
 

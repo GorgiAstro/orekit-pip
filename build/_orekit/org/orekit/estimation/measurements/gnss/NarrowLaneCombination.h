@@ -19,8 +19,8 @@ namespace org {
           class NarrowLaneCombination : public ::org::orekit::estimation::measurements::gnss::AbstractDualFrequencyCombination {
            public:
             enum {
-              mid_getCombinedValue_e0f2baaf2a2ab093,
-              mid_getCombinedFrequency_6baf140b93832af8,
+              mid_getCombinedValue_1aca6111050d8282,
+              mid_getCombinedFrequency_ec5e21d51ba3cb9a,
               max_mid
             };
 

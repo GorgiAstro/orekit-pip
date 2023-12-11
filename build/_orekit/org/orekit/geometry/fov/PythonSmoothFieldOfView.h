@@ -23,8 +23,8 @@ namespace org {
 }
 namespace java {
   namespace lang {
-    class Class;
     class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -37,14 +37,14 @@ namespace org {
         class PythonSmoothFieldOfView : public ::org::orekit::geometry::fov::SmoothFieldOfView {
          public:
           enum {
-            mid_init$_5da06482a46416aa,
-            mid_directionAt_9137bba253a33d9c,
-            mid_finalize_0fa09c18fee449d5,
-            mid_offsetFromBoundary_92bc6ba59ebf6937,
-            mid_projectToBoundary_d0fe714ef34714f7,
-            mid_pythonDecRef_0fa09c18fee449d5,
-            mid_pythonExtension_492808a339bfa35f,
-            mid_pythonExtension_3a8e7649f31fdb20,
+            mid_init$_8a3775c012d81228,
+            mid_directionAt_20de5f9d51c6611f,
+            mid_finalize_0640e6acf969ed28,
+            mid_offsetFromBoundary_d0bb3aecf00cc465,
+            mid_projectToBoundary_b48aa9aef740fa79,
+            mid_pythonDecRef_0640e6acf969ed28,
+            mid_pythonExtension_9e26256fb0d384a2,
+            mid_pythonExtension_3cd6a6b354c6aa22,
             max_mid
           };
 

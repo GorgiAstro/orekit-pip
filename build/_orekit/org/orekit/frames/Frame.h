@@ -3,22 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace frames {
-      class FieldStaticTransform;
-      class TransformProvider;
-      class Frame;
-      class FieldTransform;
-      class Transform;
-      class StaticTransform;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace io {
     class Serializable;
@@ -27,6 +11,22 @@ namespace java {
     class Class;
     class IllegalArgumentException;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace frames {
+      class Transform;
+      class TransformProvider;
+      class FieldStaticTransform;
+      class Frame;
+      class StaticTransform;
+      class FieldTransform;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
   }
 }
 template<class T> class JArray;
@@ -38,24 +38,24 @@ namespace org {
       class Frame : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_03e04995a6531dd6,
-          mid_init$_96b1a690846f391d,
-          mid_init$_066cbc733c0a5e57,
-          mid_init$_f331b5c2e1d602c8,
-          mid_getAncestor_6f93408d33c3a1aa,
-          mid_getDepth_570ce0828f81a2c1,
-          mid_getFrozenFrame_96ed7581df7a3e75,
-          mid_getName_11b109bd155ca898,
-          mid_getParent_b86f9f61d97a7244,
-          mid_getRoot_b86f9f61d97a7244,
-          mid_getStaticTransformTo_8048aebc71d12954,
-          mid_getStaticTransformTo_a413a039e46f1166,
-          mid_getTransformProvider_b22bdbe9f9cd12d5,
-          mid_getTransformTo_1ca8a058da89e769,
-          mid_getTransformTo_5d0e5fed1e48b4f7,
-          mid_isChildOf_b6ce2293f1753032,
-          mid_isPseudoInertial_b108b35ef48e27bd,
-          mid_toString_11b109bd155ca898,
+          mid_init$_d8cb329c586d12d2,
+          mid_init$_544a46f568cb82e6,
+          mid_init$_616b39805dc3fd53,
+          mid_init$_bf7d1562b348c3f4,
+          mid_getAncestor_afa0c8dddbea8501,
+          mid_getDepth_412668abc8d889e9,
+          mid_getFrozenFrame_3ca3ca1c6544a8cc,
+          mid_getName_3cffd47377eca18a,
+          mid_getParent_6c9bc0a928c56d4e,
+          mid_getRoot_6c9bc0a928c56d4e,
+          mid_getStaticTransformTo_7a25a52eda73c1be,
+          mid_getStaticTransformTo_26fe8228a784e36b,
+          mid_getTransformProvider_5b1059d129debef8,
+          mid_getTransformTo_0c8fad60d8b4d965,
+          mid_getTransformTo_b55ae1e761b9de03,
+          mid_isChildOf_f73c6a4bba5acc20,
+          mid_isPseudoInertial_89b302893bdbe1f1,
+          mid_toString_3cffd47377eca18a,
           max_mid
         };
 

@@ -17,7 +17,7 @@ namespace org {
       class MultivariateFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_value_9dc1ec0bcc0a9a29,
+          mid_value_86c4a0582e0747ce,
           max_mid
         };
 

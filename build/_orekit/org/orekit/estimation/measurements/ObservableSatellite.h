@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace utils {
       class ParameterDriver;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,12 +26,12 @@ namespace org {
         class ObservableSatellite : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_99803b0791f320ff,
-            mid_equals_65c7d273e80d497a,
-            mid_getClockDriftDriver_a25ed222178aa59f,
-            mid_getClockOffsetDriver_a25ed222178aa59f,
-            mid_getPropagatorIndex_570ce0828f81a2c1,
-            mid_hashCode_570ce0828f81a2c1,
+            mid_init$_a3da1a935cb37f7b,
+            mid_equals_221e8e85cb385209,
+            mid_getClockDriftDriver_4194657b5e280ddc,
+            mid_getClockOffsetDriver_4194657b5e280ddc,
+            mid_getPropagatorIndex_412668abc8d889e9,
+            mid_hashCode_412668abc8d889e9,
             max_mid
           };
 

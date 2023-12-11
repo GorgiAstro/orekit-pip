@@ -21,10 +21,10 @@ namespace org {
             class CdmHeader : public ::org::orekit::files::ccsds::section::Header {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_getMessageFor_11b109bd155ca898,
-                mid_setMessageFor_d0bc48d5b00dc40c,
-                mid_validate_17db3a65980d3441,
+                mid_init$_0640e6acf969ed28,
+                mid_getMessageFor_3cffd47377eca18a,
+                mid_setMessageFor_f5ffdf29129ef90a,
+                mid_validate_10f281d777284cea,
                 max_mid
               };
 

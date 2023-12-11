@@ -3,16 +3,16 @@
 
 #include "org/hipparchus/distribution/discrete/AbstractIntegerDistribution.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,19 +25,19 @@ namespace org {
         class HypergeometricDistribution : public ::org::hipparchus::distribution::discrete::AbstractIntegerDistribution {
          public:
           enum {
-            mid_init$_8336200ef3dde36b,
-            mid_cumulativeProbability_46f85b53d9aedd96,
-            mid_getNumberOfSuccesses_570ce0828f81a2c1,
-            mid_getNumericalMean_dff5885c2c873297,
-            mid_getNumericalVariance_dff5885c2c873297,
-            mid_getPopulationSize_570ce0828f81a2c1,
-            mid_getSampleSize_570ce0828f81a2c1,
-            mid_getSupportLowerBound_570ce0828f81a2c1,
-            mid_getSupportUpperBound_570ce0828f81a2c1,
-            mid_isSupportConnected_b108b35ef48e27bd,
-            mid_logProbability_46f85b53d9aedd96,
-            mid_probability_46f85b53d9aedd96,
-            mid_upperCumulativeProbability_46f85b53d9aedd96,
+            mid_init$_3796b665437eba81,
+            mid_cumulativeProbability_69cfb132c661aca4,
+            mid_getNumberOfSuccesses_412668abc8d889e9,
+            mid_getNumericalMean_557b8123390d8d0c,
+            mid_getNumericalVariance_557b8123390d8d0c,
+            mid_getPopulationSize_412668abc8d889e9,
+            mid_getSampleSize_412668abc8d889e9,
+            mid_getSupportLowerBound_412668abc8d889e9,
+            mid_getSupportUpperBound_412668abc8d889e9,
+            mid_isSupportConnected_89b302893bdbe1f1,
+            mid_logProbability_69cfb132c661aca4,
+            mid_probability_69cfb132c661aca4,
+            mid_upperCumulativeProbability_69cfb132c661aca4,
             max_mid
           };
 

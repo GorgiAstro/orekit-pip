@@ -5,14 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace orbits {
-      class PositionAngleType;
-      class Orbit;
-      class OrbitType;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
     namespace propagation {
       namespace conversion {
         class PropagatorBuilder;
@@ -24,8 +16,8 @@ namespace org {
     }
     namespace estimation {
       namespace leastsquares {
-        class AbstractBatchLSModel;
         class ModelObserver;
+        class AbstractBatchLSModel;
       }
       namespace measurements {
         class ObservedMeasurement;
@@ -41,6 +33,14 @@ namespace org {
     }
     namespace utils {
       class ParameterDriversList;
+    }
+    namespace orbits {
+      class PositionAngleType;
+      class OrbitType;
+      class Orbit;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
     }
   }
 }
@@ -63,12 +63,12 @@ namespace org {
         class BrouwerLyddanePropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_9f127c615ff2fc4d,
-            mid_init$_628d3b35511bcea6,
-            mid_init$_ef197d62fd525fc4,
-            mid_buildLeastSquaresModel_2eb3122719704f90,
-            mid_buildPropagator_514ffedd6248f0b6,
-            mid_copy_20a4ebdd36e580a5,
+            mid_init$_96fa06557882028a,
+            mid_init$_f78463a528996b20,
+            mid_init$_820cf347395465d6,
+            mid_buildLeastSquaresModel_4fca41eef9d750a6,
+            mid_buildPropagator_de4cda068ed20390,
+            mid_copy_d362e5271befd797,
             max_mid
           };
 

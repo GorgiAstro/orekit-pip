@@ -3,6 +3,13 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace data {
+      class DataProvider;
+    }
+  }
+}
 namespace java {
   namespace io {
     class File;
@@ -16,13 +23,6 @@ namespace java {
     class URL;
   }
 }
-namespace org {
-  namespace orekit {
-    namespace data {
-      class DataProvider;
-    }
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -32,10 +32,10 @@ namespace org {
       class ZipJarCrawler : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0613af62f2ba5dba,
-          mid_init$_d0bc48d5b00dc40c,
-          mid_init$_fe56d648976a8dcb,
-          mid_init$_9a6e053ada5ce237,
+          mid_init$_5d6bcca91ae998ee,
+          mid_init$_f5ffdf29129ef90a,
+          mid_init$_1d2bf2ec349f3959,
+          mid_init$_e8f0cb096a102698,
           max_mid
         };
 

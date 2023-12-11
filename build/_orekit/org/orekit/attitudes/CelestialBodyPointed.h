@@ -5,21 +5,21 @@
 
 namespace org {
   namespace orekit {
-    namespace attitudes {
-      class Attitude;
-      class FieldAttitude;
-      class AttitudeProvider;
-    }
-    namespace frames {
-      class Frame;
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
     namespace utils {
       class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
     }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
+    namespace attitudes {
+      class FieldAttitude;
+      class AttitudeProvider;
+      class Attitude;
+    }
+    namespace frames {
+      class Frame;
     }
   }
   namespace hipparchus {
@@ -46,9 +46,9 @@ namespace org {
       class CelestialBodyPointed : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_06df8e8f4b63281a,
-          mid_getAttitude_4e541876ea7d5bd0,
-          mid_getAttitude_d2b70935d932b5c5,
+          mid_init$_2a842241179c7b7e,
+          mid_getAttitude_77e3383de01f3e48,
+          mid_getAttitude_1306ac39e1d2de3f,
           max_mid
         };
 

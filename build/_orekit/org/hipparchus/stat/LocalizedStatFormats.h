@@ -31,10 +31,10 @@ namespace org {
       class LocalizedStatFormats : public ::java::lang::Enum {
        public:
         enum {
-          mid_getLocalizedString_3cd873bfb132c4fd,
-          mid_getSourceString_11b109bd155ca898,
-          mid_valueOf_b5b7eb207ab01753,
-          mid_values_59ec90acf378cde9,
+          mid_getLocalizedString_4b51060c6b7ea981,
+          mid_getSourceString_3cffd47377eca18a,
+          mid_valueOf_c8d2c9e037b43e18,
+          mid_values_17b3b60ab534a8f7,
           max_mid
         };
 

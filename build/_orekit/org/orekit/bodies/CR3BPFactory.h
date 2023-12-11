@@ -10,8 +10,8 @@ namespace org {
       class CelestialBody;
     }
     namespace time {
-      class TimeScale;
       class AbsoluteDate;
+      class TimeScale;
     }
   }
 }
@@ -29,10 +29,10 @@ namespace org {
       class CR3BPFactory : public ::java::lang::Object {
        public:
         enum {
-          mid_getEarthMoonCR3BP_5fad4f68327f5e3d,
-          mid_getSunEarthCR3BP_2a04e203dd5a7815,
-          mid_getSunJupiterCR3BP_2a04e203dd5a7815,
-          mid_getSystem_806055d4cfef5676,
+          mid_getEarthMoonCR3BP_846281b3daba3578,
+          mid_getSunEarthCR3BP_d5bdda3719e09bbc,
+          mid_getSunJupiterCR3BP_d5bdda3719e09bbc,
+          mid_getSystem_5db8a3ac27876e90,
           max_mid
         };
 

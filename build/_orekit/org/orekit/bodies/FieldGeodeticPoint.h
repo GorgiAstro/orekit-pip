@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -13,6 +12,7 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -30,19 +30,19 @@ namespace org {
       class FieldGeodeticPoint : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_82fa7e789a6ae1f6,
-          mid_equals_65c7d273e80d497a,
-          mid_getAltitude_eba8e72a22c984ac,
-          mid_getEast_716f50c86ffc8da7,
-          mid_getLatitude_eba8e72a22c984ac,
-          mid_getLongitude_eba8e72a22c984ac,
-          mid_getNadir_716f50c86ffc8da7,
-          mid_getNorth_716f50c86ffc8da7,
-          mid_getSouth_716f50c86ffc8da7,
-          mid_getWest_716f50c86ffc8da7,
-          mid_getZenith_716f50c86ffc8da7,
-          mid_hashCode_570ce0828f81a2c1,
-          mid_toString_11b109bd155ca898,
+          mid_init$_0f27b0249abd6c51,
+          mid_equals_221e8e85cb385209,
+          mid_getAltitude_613c8f46c659f636,
+          mid_getEast_2d64addf4c3391d9,
+          mid_getLatitude_613c8f46c659f636,
+          mid_getLongitude_613c8f46c659f636,
+          mid_getNadir_2d64addf4c3391d9,
+          mid_getNorth_2d64addf4c3391d9,
+          mid_getSouth_2d64addf4c3391d9,
+          mid_getWest_2d64addf4c3391d9,
+          mid_getZenith_2d64addf4c3391d9,
+          mid_hashCode_412668abc8d889e9,
+          mid_toString_3cffd47377eca18a,
           max_mid
         };
 

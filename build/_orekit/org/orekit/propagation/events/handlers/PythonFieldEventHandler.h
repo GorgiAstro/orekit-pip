@@ -4,26 +4,26 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-    namespace ode {
-      namespace events {
-        class Action;
-      }
-    }
-  }
   namespace orekit {
     namespace propagation {
+      class FieldSpacecraftState;
       namespace events {
         namespace handlers {
           class FieldEventHandler;
         }
         class FieldEventDetector;
       }
-      class FieldSpacecraftState;
     }
     namespace time {
       class FieldAbsoluteDate;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace ode {
+      namespace events {
+        class Action;
+      }
     }
   }
 }
@@ -44,14 +44,14 @@ namespace org {
           class PythonFieldEventHandler : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_eventOccurred_fc49a7ff6cb062a2,
-              mid_finalize_0fa09c18fee449d5,
-              mid_init_cb6b7da7e22b633e,
-              mid_pythonDecRef_0fa09c18fee449d5,
-              mid_pythonExtension_492808a339bfa35f,
-              mid_pythonExtension_3a8e7649f31fdb20,
-              mid_resetState_be16adf9d9d445bf,
+              mid_init$_0640e6acf969ed28,
+              mid_eventOccurred_061886b33964a9af,
+              mid_finalize_0640e6acf969ed28,
+              mid_init_3ea56aaf691449ae,
+              mid_pythonDecRef_0640e6acf969ed28,
+              mid_pythonExtension_9e26256fb0d384a2,
+              mid_pythonExtension_3cd6a6b354c6aa22,
+              mid_resetState_ceb1c025df8e35c2,
               max_mid
             };
 

@@ -3,14 +3,14 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -22,9 +22,9 @@ namespace org {
       class FieldOrdinaryDifferentialEquation : public ::java::lang::Object {
        public:
         enum {
-          mid_computeDerivatives_895918d31d24de7c,
-          mid_getDimension_570ce0828f81a2c1,
-          mid_init_e0045fcf0efd35be,
+          mid_computeDerivatives_67a274b4fbd2dca4,
+          mid_getDimension_412668abc8d889e9,
+          mid_init_ff1d1482edb7bec1,
           max_mid
         };
 

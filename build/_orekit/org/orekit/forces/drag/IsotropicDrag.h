@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -14,8 +13,13 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
   namespace orekit {
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
     namespace utils {
       class ParameterDriver;
     }
@@ -23,10 +27,6 @@ namespace org {
       namespace drag {
         class DragSensitive;
       }
-    }
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
     }
   }
 }
@@ -48,11 +48,11 @@ namespace org {
         class IsotropicDrag : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_8f2e782d5278b131,
-            mid_init$_b0a935b68e41d65a,
-            mid_dragAcceleration_fc130a15f669db38,
-            mid_dragAcceleration_6cbf0b5d7046f26b,
-            mid_getDragParametersDrivers_2afa36052df4765d,
+            mid_init$_ab23f4ae0fb33968,
+            mid_init$_bc3712e794ac7a81,
+            mid_dragAcceleration_bc16b30ecfb3a4cc,
+            mid_dragAcceleration_59d392869e8fa633,
+            mid_getDragParametersDrivers_0d9551367f7ecdef,
             max_mid
           };
 

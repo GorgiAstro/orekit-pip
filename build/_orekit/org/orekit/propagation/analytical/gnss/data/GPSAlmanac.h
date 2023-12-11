@@ -3,6 +3,12 @@
 
 #include "org/orekit/propagation/analytical/gnss/data/AbstractAlmanac.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -14,12 +20,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,19 +34,19 @@ namespace org {
             class GPSAlmanac : public ::org::orekit::propagation::analytical::gnss::data::AbstractAlmanac {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_getHealth_570ce0828f81a2c1,
-                mid_getSVN_570ce0828f81a2c1,
-                mid_getSatConfiguration_570ce0828f81a2c1,
-                mid_getSource_11b109bd155ca898,
-                mid_getTGD_dff5885c2c873297,
-                mid_getURA_570ce0828f81a2c1,
-                mid_setHealth_99803b0791f320ff,
-                mid_setSVN_99803b0791f320ff,
-                mid_setSatConfiguration_99803b0791f320ff,
-                mid_setSource_d0bc48d5b00dc40c,
-                mid_setSqrtA_17db3a65980d3441,
-                mid_setURA_99803b0791f320ff,
+                mid_init$_0640e6acf969ed28,
+                mid_getHealth_412668abc8d889e9,
+                mid_getSVN_412668abc8d889e9,
+                mid_getSatConfiguration_412668abc8d889e9,
+                mid_getSource_3cffd47377eca18a,
+                mid_getTGD_557b8123390d8d0c,
+                mid_getURA_412668abc8d889e9,
+                mid_setHealth_a3da1a935cb37f7b,
+                mid_setSVN_a3da1a935cb37f7b,
+                mid_setSatConfiguration_a3da1a935cb37f7b,
+                mid_setSource_f5ffdf29129ef90a,
+                mid_setSqrtA_10f281d777284cea,
+                mid_setURA_a3da1a935cb37f7b,
                 max_mid
               };
 

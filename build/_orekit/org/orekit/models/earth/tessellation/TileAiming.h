@@ -38,8 +38,8 @@ namespace org {
           class TileAiming : public ::java::lang::Object {
            public:
             enum {
-              mid_alongTileDirection_cb13d5b31f03b28f,
-              mid_getSingularPoints_2afa36052df4765d,
+              mid_alongTileDirection_94d0bf825c02adfa,
+              mid_getSingularPoints_0d9551367f7ecdef,
               max_mid
             };
 

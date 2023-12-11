@@ -5,18 +5,18 @@
 
 namespace org {
   namespace orekit {
+    namespace frames {
+      class Frame;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
+    }
     namespace propagation {
       namespace analytical {
         namespace tle {
           class TLE;
         }
       }
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
     }
   }
 }
@@ -36,10 +36,10 @@ namespace org {
           class SGP4 : public ::org::orekit::propagation::analytical::tle::TLEPropagator {
            public:
             enum {
-              mid_init$_11c826170d15cb79,
-              mid_init$_2709a562b7f01856,
-              mid_sxpInitialize_0fa09c18fee449d5,
-              mid_sxpPropagate_17db3a65980d3441,
+              mid_init$_c15edfeff3b77424,
+              mid_init$_2f68d31a9dcd927c,
+              mid_sxpInitialize_0640e6acf969ed28,
+              mid_sxpPropagate_10f281d777284cea,
               max_mid
             };
 

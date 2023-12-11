@@ -4,7 +4,22 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+    class CalculusFieldElement;
+  }
   namespace orekit {
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
     namespace forces {
       namespace maneuvers {
         namespace propulsion {
@@ -13,26 +28,11 @@ namespace org {
         class Control3DVectorCostType;
       }
     }
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace utils {
       class ParameterDriver;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class FieldVector3D;
-          class Vector3D;
-        }
-      }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -56,20 +56,20 @@ namespace org {
           class PythonThrustPropulsionModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_finalize_0fa09c18fee449d5,
-              mid_getControl3DVectorCostType_67739b20d9566a8c,
-              mid_getFlowRate_432f3d328c15ec82,
-              mid_getFlowRate_8bdf60d5551eceaf,
-              mid_getFlowRate_0b7191d207b9680f,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_getThrustVector_abc43395638fd218,
-              mid_getThrustVector_b42ac4b5bfb80fab,
-              mid_getThrustVector_8954761face5e1a7,
-              mid_init_826b4eda94da4e78,
-              mid_pythonDecRef_0fa09c18fee449d5,
-              mid_pythonExtension_492808a339bfa35f,
-              mid_pythonExtension_3a8e7649f31fdb20,
+              mid_init$_0640e6acf969ed28,
+              mid_finalize_0640e6acf969ed28,
+              mid_getControl3DVectorCostType_601f05e5d0c82ad9,
+              mid_getFlowRate_1bbf81d80c47ecdd,
+              mid_getFlowRate_4ad317f7598a10a9,
+              mid_getFlowRate_810dcb8f9f5d191a,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_getThrustVector_3fff8c49d4e2dc6b,
+              mid_getThrustVector_b61fb59a041240c6,
+              mid_getThrustVector_61944e27a39e8290,
+              mid_init_0472264ad6f40bc2,
+              mid_pythonDecRef_0640e6acf969ed28,
+              mid_pythonExtension_9e26256fb0d384a2,
+              mid_pythonExtension_3cd6a6b354c6aa22,
               max_mid
             };
 

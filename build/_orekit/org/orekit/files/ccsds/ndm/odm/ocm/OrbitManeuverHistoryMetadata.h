@@ -3,10 +3,25 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace definitions {
+          class BodyFacade;
+          class DutyCycleType;
+          class SpacecraftBodyFrame;
+          class FrameFacade;
+        }
         namespace ndm {
           namespace odm {
             namespace ocm {
@@ -15,21 +30,15 @@ namespace org {
             }
           }
         }
-        namespace definitions {
-          class BodyFacade;
-          class FrameFacade;
-          class SpacecraftBodyFrame;
-          class DutyCycleType;
-        }
       }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace utils {
       namespace units {
         class Unit;
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -40,15 +49,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -64,68 +64,68 @@ namespace org {
               class OrbitManeuverHistoryMetadata : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_600a2a61652bc473,
-                  mid_getDcBodyFrame_630d91cd1f29802e,
-                  mid_getDcBodyTrigger_d52645e0d4c07563,
-                  mid_getDcExecStart_85703d13e302437e,
-                  mid_getDcExecStop_85703d13e302437e,
-                  mid_getDcMaxCycles_570ce0828f81a2c1,
-                  mid_getDcMinCycles_570ce0828f81a2c1,
-                  mid_getDcPhaseStartAngle_dff5885c2c873297,
-                  mid_getDcPhaseStopAngle_dff5885c2c873297,
-                  mid_getDcRefDir_d52645e0d4c07563,
-                  mid_getDcRefTime_85703d13e302437e,
-                  mid_getDcTimePulseDuration_dff5885c2c873297,
-                  mid_getDcTimePulsePeriod_dff5885c2c873297,
-                  mid_getDcType_f6c2c917cc164be8,
-                  mid_getDcWindowClose_85703d13e302437e,
-                  mid_getDcWindowOpen_85703d13e302437e,
-                  mid_getGravitationalAssist_23d31d5db0bee8e9,
-                  mid_getManBasis_c5a5e285b1a83f5e,
-                  mid_getManBasisID_11b109bd155ca898,
-                  mid_getManComposition_2afa36052df4765d,
-                  mid_getManDeviceID_11b109bd155ca898,
-                  mid_getManFrameEpoch_85703d13e302437e,
-                  mid_getManID_11b109bd155ca898,
-                  mid_getManNextEpoch_85703d13e302437e,
-                  mid_getManNextID_11b109bd155ca898,
-                  mid_getManPredSource_11b109bd155ca898,
-                  mid_getManPrevEpoch_85703d13e302437e,
-                  mid_getManPrevID_11b109bd155ca898,
-                  mid_getManPurpose_2afa36052df4765d,
-                  mid_getManReferenceFrame_5d5dd95b04037824,
-                  mid_getManUnits_2afa36052df4765d,
-                  mid_setDcBodyFrame_da2b68dd5e1213c8,
-                  mid_setDcBodyTrigger_029ff0cbf68ea054,
-                  mid_setDcExecStart_600a2a61652bc473,
-                  mid_setDcExecStop_600a2a61652bc473,
-                  mid_setDcMaxCycles_99803b0791f320ff,
-                  mid_setDcMinCycles_99803b0791f320ff,
-                  mid_setDcPhaseStartAngle_17db3a65980d3441,
-                  mid_setDcPhaseStopAngle_17db3a65980d3441,
-                  mid_setDcRefDir_029ff0cbf68ea054,
-                  mid_setDcRefTime_600a2a61652bc473,
-                  mid_setDcTimePulseDuration_17db3a65980d3441,
-                  mid_setDcTimePulsePeriod_17db3a65980d3441,
-                  mid_setDcType_16c5f15eeddfdcd8,
-                  mid_setDcWindowClose_600a2a61652bc473,
-                  mid_setDcWindowOpen_600a2a61652bc473,
-                  mid_setGravitationalAssist_32e120c3a0353f27,
-                  mid_setManBasis_e936bb223a91f519,
-                  mid_setManBasisID_d0bc48d5b00dc40c,
-                  mid_setManComposition_de3e021e7266b71e,
-                  mid_setManDeviceID_d0bc48d5b00dc40c,
-                  mid_setManFrameEpoch_600a2a61652bc473,
-                  mid_setManID_d0bc48d5b00dc40c,
-                  mid_setManNextEpoch_600a2a61652bc473,
-                  mid_setManNextID_d0bc48d5b00dc40c,
-                  mid_setManPredSource_d0bc48d5b00dc40c,
-                  mid_setManPrevEpoch_600a2a61652bc473,
-                  mid_setManPrevID_d0bc48d5b00dc40c,
-                  mid_setManPurpose_de3e021e7266b71e,
-                  mid_setManReferenceFrame_849bc9e3b38b9bcb,
-                  mid_setManUnits_de3e021e7266b71e,
-                  mid_validate_17db3a65980d3441,
+                  mid_init$_20affcbd28542333,
+                  mid_getDcBodyFrame_f86371e743965d5e,
+                  mid_getDcBodyTrigger_f88961cca75a2c0a,
+                  mid_getDcExecStart_7a97f7e149e79afb,
+                  mid_getDcExecStop_7a97f7e149e79afb,
+                  mid_getDcMaxCycles_412668abc8d889e9,
+                  mid_getDcMinCycles_412668abc8d889e9,
+                  mid_getDcPhaseStartAngle_557b8123390d8d0c,
+                  mid_getDcPhaseStopAngle_557b8123390d8d0c,
+                  mid_getDcRefDir_f88961cca75a2c0a,
+                  mid_getDcRefTime_7a97f7e149e79afb,
+                  mid_getDcTimePulseDuration_557b8123390d8d0c,
+                  mid_getDcTimePulsePeriod_557b8123390d8d0c,
+                  mid_getDcType_f6ee7f5f33e09f00,
+                  mid_getDcWindowClose_7a97f7e149e79afb,
+                  mid_getDcWindowOpen_7a97f7e149e79afb,
+                  mid_getGravitationalAssist_c642bce266d6d89a,
+                  mid_getManBasis_1929aa09b0efe5e6,
+                  mid_getManBasisID_3cffd47377eca18a,
+                  mid_getManComposition_0d9551367f7ecdef,
+                  mid_getManDeviceID_3cffd47377eca18a,
+                  mid_getManFrameEpoch_7a97f7e149e79afb,
+                  mid_getManID_3cffd47377eca18a,
+                  mid_getManNextEpoch_7a97f7e149e79afb,
+                  mid_getManNextID_3cffd47377eca18a,
+                  mid_getManPredSource_3cffd47377eca18a,
+                  mid_getManPrevEpoch_7a97f7e149e79afb,
+                  mid_getManPrevID_3cffd47377eca18a,
+                  mid_getManPurpose_0d9551367f7ecdef,
+                  mid_getManReferenceFrame_98f5fcaff3e3f9d2,
+                  mid_getManUnits_0d9551367f7ecdef,
+                  mid_setDcBodyFrame_cd9779da9f153284,
+                  mid_setDcBodyTrigger_2810d2bec90e7b1c,
+                  mid_setDcExecStart_20affcbd28542333,
+                  mid_setDcExecStop_20affcbd28542333,
+                  mid_setDcMaxCycles_a3da1a935cb37f7b,
+                  mid_setDcMinCycles_a3da1a935cb37f7b,
+                  mid_setDcPhaseStartAngle_10f281d777284cea,
+                  mid_setDcPhaseStopAngle_10f281d777284cea,
+                  mid_setDcRefDir_2810d2bec90e7b1c,
+                  mid_setDcRefTime_20affcbd28542333,
+                  mid_setDcTimePulseDuration_10f281d777284cea,
+                  mid_setDcTimePulsePeriod_10f281d777284cea,
+                  mid_setDcType_4d69b82588c717d8,
+                  mid_setDcWindowClose_20affcbd28542333,
+                  mid_setDcWindowOpen_20affcbd28542333,
+                  mid_setGravitationalAssist_e6f755c267d91c26,
+                  mid_setManBasis_5c26ac53f1ec8457,
+                  mid_setManBasisID_f5ffdf29129ef90a,
+                  mid_setManComposition_4ccaedadb068bdeb,
+                  mid_setManDeviceID_f5ffdf29129ef90a,
+                  mid_setManFrameEpoch_20affcbd28542333,
+                  mid_setManID_f5ffdf29129ef90a,
+                  mid_setManNextEpoch_20affcbd28542333,
+                  mid_setManNextID_f5ffdf29129ef90a,
+                  mid_setManPredSource_f5ffdf29129ef90a,
+                  mid_setManPrevEpoch_20affcbd28542333,
+                  mid_setManPrevID_f5ffdf29129ef90a,
+                  mid_setManPurpose_4ccaedadb068bdeb,
+                  mid_setManReferenceFrame_f55eee1236275bb1,
+                  mid_setManUnits_4ccaedadb068bdeb,
+                  mid_validate_10f281d777284cea,
                   max_mid
                 };
 

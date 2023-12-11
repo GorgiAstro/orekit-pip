@@ -5,21 +5,21 @@
 
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataContext;
-    }
-    namespace utils {
-      class IERSConventions;
-    }
-    namespace frames {
-      class Frame;
-    }
     namespace files {
       namespace ccsds {
         namespace definitions {
           class CelestialBodyFrame;
         }
       }
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace utils {
+      class IERSConventions;
+    }
+    namespace data {
+      class DataContext;
     }
   }
 }
@@ -40,13 +40,13 @@ namespace org {
           class CelestialBodyFrame : public ::java::lang::Enum {
            public:
             enum {
-              mid_getFrame_7a733e4d17b5b971,
-              mid_getName_11b109bd155ca898,
-              mid_guessFrame_4120982664ebec0c,
-              mid_map_5c952752e80776eb,
-              mid_parse_8035e6593a519d3d,
-              mid_valueOf_8035e6593a519d3d,
-              mid_values_e69fc9b8b16d9412,
+              mid_getFrame_27072b92c7530322,
+              mid_getName_3cffd47377eca18a,
+              mid_guessFrame_1fb9161cbce7f53e,
+              mid_map_eb632e2b819d1e95,
+              mid_parse_3e303cc1781714bf,
+              mid_valueOf_3e303cc1781714bf,
+              mid_values_fda49998e05fb093,
               max_mid
             };
 

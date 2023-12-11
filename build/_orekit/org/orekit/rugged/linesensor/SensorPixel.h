@@ -21,9 +21,9 @@ namespace org {
         class SensorPixel : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_8f2e782d5278b131,
-            mid_getLineNumber_dff5885c2c873297,
-            mid_getPixelNumber_dff5885c2c873297,
+            mid_init$_ab23f4ae0fb33968,
+            mid_getLineNumber_557b8123390d8d0c,
+            mid_getPixelNumber_557b8123390d8d0c,
             max_mid
           };
 

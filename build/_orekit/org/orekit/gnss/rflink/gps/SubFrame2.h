@@ -19,17 +19,17 @@ namespace org {
           class SubFrame2 : public ::org::orekit::gnss::rflink::gps::SubFrame {
            public:
             enum {
-              mid_getAODO_570ce0828f81a2c1,
-              mid_getCrs_dff5885c2c873297,
-              mid_getCuc_dff5885c2c873297,
-              mid_getCus_dff5885c2c873297,
-              mid_getDeltaN_dff5885c2c873297,
-              mid_getE_dff5885c2c873297,
-              mid_getFitInterval_570ce0828f81a2c1,
-              mid_getIODE_570ce0828f81a2c1,
-              mid_getM0_dff5885c2c873297,
-              mid_getSqrtA_dff5885c2c873297,
-              mid_getToe_570ce0828f81a2c1,
+              mid_getAODO_412668abc8d889e9,
+              mid_getCrs_557b8123390d8d0c,
+              mid_getCuc_557b8123390d8d0c,
+              mid_getCus_557b8123390d8d0c,
+              mid_getDeltaN_557b8123390d8d0c,
+              mid_getE_557b8123390d8d0c,
+              mid_getFitInterval_412668abc8d889e9,
+              mid_getIODE_412668abc8d889e9,
+              mid_getM0_557b8123390d8d0c,
+              mid_getSqrtA_557b8123390d8d0c,
+              mid_getToe_412668abc8d889e9,
               max_mid
             };
 

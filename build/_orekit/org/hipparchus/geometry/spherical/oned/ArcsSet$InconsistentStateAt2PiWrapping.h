@@ -3,6 +3,11 @@
 
 #include "org/hipparchus/exception/MathIllegalArgumentException.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -12,11 +17,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -30,7 +30,7 @@ namespace org {
           class ArcsSet$InconsistentStateAt2PiWrapping : public ::org::hipparchus::exception::MathIllegalArgumentException {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
+              mid_init$_0640e6acf969ed28,
               max_mid
             };
 

@@ -3,15 +3,19 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace io {
+    class IOException;
+  }
+  namespace lang {
+    class AutoCloseable;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace utils {
-          namespace generation {
-            class Generator;
-          }
-        }
         namespace ndm {
           namespace adm {
             namespace aem {
@@ -22,17 +26,13 @@ namespace org {
             class AdmHeader;
           }
         }
+        namespace utils {
+          namespace generation {
+            class Generator;
+          }
+        }
       }
     }
-  }
-}
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace lang {
-    class AutoCloseable;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -48,9 +48,9 @@ namespace org {
               class StreamingAemWriter : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_93ec9a5fc43b7407,
-                  mid_close_0fa09c18fee449d5,
-                  mid_newSegment_a16bd808d4e206dc,
+                  mid_init$_e1c8ed482aa88f16,
+                  mid_close_0640e6acf969ed28,
+                  mid_newSegment_12e8ecfdac00357e,
                   max_mid
                 };
 

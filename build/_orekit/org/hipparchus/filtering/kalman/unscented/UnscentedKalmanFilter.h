@@ -10,20 +10,20 @@ namespace org {
         namespace unscented {
           class UnscentedProcess;
         }
-        class KalmanFilter;
-        class ProcessEstimate;
         class Measurement;
+        class ProcessEstimate;
+        class KalmanFilter;
       }
+    }
+    namespace linear {
+      class MatrixDecomposer;
+      class RealVector;
     }
     namespace exception {
       class MathRuntimeException;
     }
     namespace util {
       class UnscentedTransformProvider;
-    }
-    namespace linear {
-      class MatrixDecomposer;
-      class RealVector;
     }
   }
 }
@@ -43,12 +43,12 @@ namespace org {
           class UnscentedKalmanFilter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_8bb102852d4d6a59,
-              mid_estimationStep_ba157b27aa6224ec,
-              mid_getCorrected_c93ddc26f3b3eef4,
-              mid_getPredicted_c93ddc26f3b3eef4,
-              mid_getUnscentedTransformProvider_7accb6271c7127b9,
-              mid_predictionAndCorrectionSteps_65e2c8ae613651cd,
+              mid_init$_da60c12455e60f25,
+              mid_estimationStep_8438f0b1b3460266,
+              mid_getCorrected_55b445719d7de2a7,
+              mid_getPredicted_55b445719d7de2a7,
+              mid_getUnscentedTransformProvider_8c4a909424e66af4,
+              mid_predictionAndCorrectionSteps_c773c6d72a608e00,
               max_mid
             };
 

@@ -19,7 +19,7 @@ namespace java {
     class Flushable : public ::java::lang::Object {
      public:
       enum {
-        mid_flush_0fa09c18fee449d5,
+        mid_flush_0640e6acf969ed28,
         max_mid
       };
 

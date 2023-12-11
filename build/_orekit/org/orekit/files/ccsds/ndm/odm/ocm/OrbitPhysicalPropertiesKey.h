@@ -16,8 +16,8 @@ namespace org {
         namespace ndm {
           namespace odm {
             namespace ocm {
-              class OrbitPhysicalProperties;
               class OrbitPhysicalPropertiesKey;
+              class OrbitPhysicalProperties;
             }
           }
         }
@@ -44,9 +44,9 @@ namespace org {
               class OrbitPhysicalPropertiesKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_1b7f5832a814cd36,
-                  mid_valueOf_a7750d3d2cff0fae,
-                  mid_values_2112aa726947e88b,
+                  mid_process_22b76e5a05430141,
+                  mid_valueOf_5ab20fb966246ef9,
+                  mid_values_4b251283a15eeb91,
                   max_mid
                 };
 

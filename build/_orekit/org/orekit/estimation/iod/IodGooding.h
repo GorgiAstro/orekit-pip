@@ -46,16 +46,16 @@ namespace org {
         class IodGooding : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_17db3a65980d3441,
-            mid_estimate_9f4edff2f4b2c1d0,
-            mid_estimate_e2eca386302ad5d5,
-            mid_estimate_10bff6c739149e21,
-            mid_estimate_f0cd4f5546c29d38,
-            mid_estimate_e386e2d1a757ec14,
-            mid_estimate_438460b781bc8282,
-            mid_getRange1_dff5885c2c873297,
-            mid_getRange2_dff5885c2c873297,
-            mid_getRange3_dff5885c2c873297,
+            mid_init$_10f281d777284cea,
+            mid_estimate_0e8246cd2bf5a092,
+            mid_estimate_aeed4500e99e945e,
+            mid_estimate_12e348f8c50cde24,
+            mid_estimate_a6ce26518bf6712c,
+            mid_estimate_24ec2b6d24d65f1f,
+            mid_estimate_b48f6346e0ac5fe4,
+            mid_getRange1_557b8123390d8d0c,
+            mid_getRange2_557b8123390d8d0c,
+            mid_getRange3_557b8123390d8d0c,
             max_mid
           };
 

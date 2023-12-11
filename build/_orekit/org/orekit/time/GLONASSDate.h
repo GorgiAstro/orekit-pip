@@ -15,8 +15,8 @@ namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
-      class TimeStamped;
       class TimeScale;
+      class TimeStamped;
     }
   }
 }
@@ -29,16 +29,16 @@ namespace org {
       class GLONASSDate : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_600a2a61652bc473,
-          mid_init$_83d5b0065691b874,
-          mid_init$_1506189166690b5e,
-          mid_init$_9e28ee401d3a2b1f,
-          mid_getDate_85703d13e302437e,
-          mid_getDayNumber_570ce0828f81a2c1,
-          mid_getGMST_dff5885c2c873297,
-          mid_getIntervalNumber_570ce0828f81a2c1,
-          mid_getJD0_dff5885c2c873297,
-          mid_getSecInDay_dff5885c2c873297,
+          mid_init$_20affcbd28542333,
+          mid_init$_9d31fbd7d3d72cec,
+          mid_init$_754312f3734d6e2f,
+          mid_init$_8b3ae84c27acbc02,
+          mid_getDate_7a97f7e149e79afb,
+          mid_getDayNumber_412668abc8d889e9,
+          mid_getGMST_557b8123390d8d0c,
+          mid_getIntervalNumber_412668abc8d889e9,
+          mid_getJD0_557b8123390d8d0c,
+          mid_getSecInDay_557b8123390d8d0c,
           max_mid
         };
 

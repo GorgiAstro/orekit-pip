@@ -3,21 +3,21 @@
 
 #include "org/orekit/data/SeriesTerm.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
   }
+}
+namespace org {
   namespace orekit {
     namespace data {
       class BodiesElements;
       class FieldBodiesElements;
     }
   }
-}
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -29,15 +29,15 @@ namespace org {
       class PythonSeriesTerm : public ::org::orekit::data::SeriesTerm {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_argument_bea6276a59f3cdf6,
-          mid_argument_2748c478a8009c37,
-          mid_argumentDerivative_bea6276a59f3cdf6,
-          mid_argumentDerivative_2748c478a8009c37,
-          mid_finalize_0fa09c18fee449d5,
-          mid_pythonDecRef_0fa09c18fee449d5,
-          mid_pythonExtension_492808a339bfa35f,
-          mid_pythonExtension_3a8e7649f31fdb20,
+          mid_init$_0640e6acf969ed28,
+          mid_argument_645226ccf45fca25,
+          mid_argument_3e0ce57516456e43,
+          mid_argumentDerivative_645226ccf45fca25,
+          mid_argumentDerivative_3e0ce57516456e43,
+          mid_finalize_0640e6acf969ed28,
+          mid_pythonDecRef_0640e6acf969ed28,
+          mid_pythonExtension_9e26256fb0d384a2,
+          mid_pythonExtension_3cd6a6b354c6aa22,
           max_mid
         };
 

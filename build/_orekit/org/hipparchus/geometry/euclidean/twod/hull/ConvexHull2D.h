@@ -3,26 +3,18 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      namespace partitioning {
-        class Region;
-      }
       namespace euclidean {
         namespace twod {
           class Segment;
-          class Euclidean2D;
           class Vector2D;
+          class Euclidean2D;
         }
+      }
+      namespace partitioning {
+        class Region;
       }
       namespace hull {
         class ConvexHull;
@@ -31,6 +23,14 @@ namespace org {
     namespace exception {
       class MathIllegalArgumentException;
     }
+  }
+}
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -45,10 +45,10 @@ namespace org {
             class ConvexHull2D : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_4566161917de7b46,
-                mid_createRegion_b72f8ac992e26582,
-                mid_getLineSegments_79fa15dd644a16a1,
-                mid_getVertices_d4a46c71e7ff1166,
+                mid_init$_c0bcde802d314b1b,
+                mid_createRegion_fd006079784937f2,
+                mid_getLineSegments_1db8d57a3ccdb413,
+                mid_getVertices_2ba250086feeaa90,
                 max_mid
               };
 

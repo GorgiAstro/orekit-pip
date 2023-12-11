@@ -28,9 +28,9 @@ namespace org {
         class TricubicInterpolatingFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_8679b497b578747a,
-            mid_isValidPoint_01c0c8b0c5f55ddf,
-            mid_value_8c19bdea212fe058,
+            mid_init$_121a2aef88214875,
+            mid_isValidPoint_3d7c70c33c048085,
+            mid_value_8d02ba458f22e508,
             max_mid
           };
 

@@ -3,11 +3,6 @@
 
 #include "org/orekit/gnss/metric/messages/rtcm/correction/RtcmCorrectionData.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -19,6 +14,11 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,9 +34,9 @@ namespace org {
               class RtcmClockCorrectionData : public ::org::orekit::gnss::metric::messages::rtcm::correction::RtcmCorrectionData {
                public:
                 enum {
-                  mid_init$_0fa09c18fee449d5,
-                  mid_getClockCorrection_ac204103acb34678,
-                  mid_setClockCorrection_b67ff9100e1cd031,
+                  mid_init$_0640e6acf969ed28,
+                  mid_getClockCorrection_96d5462b84e1a874,
+                  mid_setClockCorrection_cf572ee5ddb143ac,
                   max_mid
                 };
 

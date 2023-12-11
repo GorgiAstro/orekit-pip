@@ -20,8 +20,8 @@ namespace org {
           namespace adm {
             namespace acm {
               class RateElementsType;
-              class AttitudeElementsType;
               class AttitudeCovarianceType;
+              class AttitudeElementsType;
               class AttitudeDeterminationSensor;
             }
             class AttitudeEndpoints;
@@ -56,35 +56,35 @@ namespace org {
               class AttitudeDetermination : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_0fa09c18fee449d5,
-                  mid_addSensor_bb8c5ac3b7165de2,
-                  mid_getAttitudeStates_f08064c40442c84b,
-                  mid_getCovarianceType_dbbc6c3c22ca640c,
-                  mid_getEndpoints_35bd4909c56b6915,
-                  mid_getEulerRotSeq_5aea028785008a06,
-                  mid_getId_11b109bd155ca898,
-                  mid_getMethod_d2912780ca38b0dd,
-                  mid_getNbStates_570ce0828f81a2c1,
-                  mid_getPrevId_11b109bd155ca898,
-                  mid_getRateProcessNoiseStdDev_dff5885c2c873297,
-                  mid_getRateStates_f2358484d07d6202,
-                  mid_getSensorsUsed_2afa36052df4765d,
-                  mid_getSigmaU_dff5885c2c873297,
-                  mid_getSigmaV_dff5885c2c873297,
-                  mid_getSource_11b109bd155ca898,
-                  mid_setAttitudeStates_4299529dacf75fa7,
-                  mid_setCovarianceType_c9a39b1c926f77b0,
-                  mid_setEulerRotSeq_a908138988eb2a50,
-                  mid_setId_d0bc48d5b00dc40c,
-                  mid_setMethod_2bd74e151e5425a9,
-                  mid_setNbStates_99803b0791f320ff,
-                  mid_setPrevId_d0bc48d5b00dc40c,
-                  mid_setRateProcessNoiseStdDev_17db3a65980d3441,
-                  mid_setRateStates_819c66db610b1575,
-                  mid_setSigmaU_17db3a65980d3441,
-                  mid_setSigmaV_17db3a65980d3441,
-                  mid_setSource_d0bc48d5b00dc40c,
-                  mid_validate_17db3a65980d3441,
+                  mid_init$_0640e6acf969ed28,
+                  mid_addSensor_d19ab97a0ba117d7,
+                  mid_getAttitudeStates_5db4fed82a3253b8,
+                  mid_getCovarianceType_270107b6f5cd254c,
+                  mid_getEndpoints_c66f753ddee38944,
+                  mid_getEulerRotSeq_cd8353278e08930b,
+                  mid_getId_3cffd47377eca18a,
+                  mid_getMethod_da536d3d7c70db0c,
+                  mid_getNbStates_412668abc8d889e9,
+                  mid_getPrevId_3cffd47377eca18a,
+                  mid_getRateProcessNoiseStdDev_557b8123390d8d0c,
+                  mid_getRateStates_232ed199566358d9,
+                  mid_getSensorsUsed_0d9551367f7ecdef,
+                  mid_getSigmaU_557b8123390d8d0c,
+                  mid_getSigmaV_557b8123390d8d0c,
+                  mid_getSource_3cffd47377eca18a,
+                  mid_setAttitudeStates_a785d3c67d2cf110,
+                  mid_setCovarianceType_424aa6ac7cc5c170,
+                  mid_setEulerRotSeq_8b9f97be929dfd52,
+                  mid_setId_f5ffdf29129ef90a,
+                  mid_setMethod_7100c7873fbfaf4d,
+                  mid_setNbStates_a3da1a935cb37f7b,
+                  mid_setPrevId_f5ffdf29129ef90a,
+                  mid_setRateProcessNoiseStdDev_10f281d777284cea,
+                  mid_setRateStates_2a73a81936748923,
+                  mid_setSigmaU_10f281d777284cea,
+                  mid_setSigmaV_10f281d777284cea,
+                  mid_setSource_f5ffdf29129ef90a,
+                  mid_validate_10f281d777284cea,
                   max_mid
                 };
 

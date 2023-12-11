@@ -9,16 +9,16 @@ namespace org {
       namespace analytical {
         namespace gnss {
           namespace data {
-            class GLONASSNavigationMessage;
+            class BeidouLegacyNavigationMessage;
+            class GPSCivilianNavigationMessage;
             class IRNSSNavigationMessage;
+            class GPSLegacyNavigationMessage;
+            class GLONASSNavigationMessage;
+            class SBASNavigationMessage;
+            class QZSSCivilianNavigationMessage;
             class BeidouCivilianNavigationMessage;
             class QZSSLegacyNavigationMessage;
-            class GPSLegacyNavigationMessage;
             class GalileoNavigationMessage;
-            class QZSSCivilianNavigationMessage;
-            class SBASNavigationMessage;
-            class GPSCivilianNavigationMessage;
-            class BeidouLegacyNavigationMessage;
           }
         }
       }
@@ -26,12 +26,12 @@ namespace org {
     namespace files {
       namespace rinex {
         namespace navigation {
-          class IonosphereKlobucharMessage;
-          class IonosphereNequickGMessage;
           class SystemTimeOffsetMessage;
-          class RinexNavigationHeader;
           class IonosphereBDGIMMessage;
+          class IonosphereNequickGMessage;
+          class RinexNavigationHeader;
           class EarthOrientationParameterMessage;
+          class IonosphereKlobucharMessage;
         }
       }
     }
@@ -58,53 +58,53 @@ namespace org {
           class RinexNavigation : public ::org::orekit::files::rinex::RinexFile {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_addBDGIMMessage_6db30441c35d6fb7,
-              mid_addBeidouCivilianNavigationMessage_6a3700b4f65d21b8,
-              mid_addBeidouLegacyNavigationMessage_68d319561ad57af5,
-              mid_addEarthOrientationParameter_b13bf812cc8c3997,
-              mid_addGPSLegacyNavigationMessage_8e193a05a4675db9,
-              mid_addGPSLegacyNavigationMessage_16aa3ee67a4aead2,
-              mid_addGalileoNavigationMessage_4a80ac1fbe917041,
-              mid_addGlonassNavigationMessage_03382bf5f212b94b,
-              mid_addIRNSSNavigationMessage_17e1d776ff5f1ae7,
-              mid_addKlobucharMessage_e2f6e204ebbd1a99,
-              mid_addNequickGMessage_da1804d087bca47e,
-              mid_addQZSSCivilianNavigationMessage_2c9642098f9593c6,
-              mid_addQZSSLegacyNavigationMessage_ee4b9dd29db0df25,
-              mid_addSBASNavigationMessage_d0cb5c4df227efb9,
-              mid_addSystemTimeOffset_eb8e31ddda72aa89,
-              mid_getBDGIMMessages_2afa36052df4765d,
-              mid_getBeidouCivilianNavigationMessages_6f5a75ccd8c04465,
-              mid_getBeidouCivilianNavigationMessages_aade4ea8882e7a2c,
-              mid_getBeidouLegacyNavigationMessages_6f5a75ccd8c04465,
-              mid_getBeidouLegacyNavigationMessages_aade4ea8882e7a2c,
-              mid_getEarthOrientationParameters_2afa36052df4765d,
-              mid_getGPSCivilianNavigationMessages_6f5a75ccd8c04465,
-              mid_getGPSCivilianNavigationMessages_aade4ea8882e7a2c,
-              mid_getGPSLegacyNavigationMessages_6f5a75ccd8c04465,
-              mid_getGPSLegacyNavigationMessages_aade4ea8882e7a2c,
-              mid_getGalileoNavigationMessages_6f5a75ccd8c04465,
-              mid_getGalileoNavigationMessages_aade4ea8882e7a2c,
-              mid_getGlonassNavigationMessages_6f5a75ccd8c04465,
-              mid_getGlonassNavigationMessages_aade4ea8882e7a2c,
-              mid_getIRNSSNavigationMessages_6f5a75ccd8c04465,
-              mid_getIRNSSNavigationMessages_aade4ea8882e7a2c,
-              mid_getKlobucharAlpha_60c7040667a7dc5c,
-              mid_getKlobucharBeta_60c7040667a7dc5c,
-              mid_getKlobucharMessages_2afa36052df4765d,
-              mid_getNeQuickAlpha_60c7040667a7dc5c,
-              mid_getNequickGMessages_2afa36052df4765d,
-              mid_getQZSSCivilianNavigationMessages_6f5a75ccd8c04465,
-              mid_getQZSSCivilianNavigationMessages_aade4ea8882e7a2c,
-              mid_getQZSSLegacyNavigationMessages_6f5a75ccd8c04465,
-              mid_getQZSSLegacyNavigationMessages_aade4ea8882e7a2c,
-              mid_getSBASNavigationMessages_6f5a75ccd8c04465,
-              mid_getSBASNavigationMessages_aade4ea8882e7a2c,
-              mid_getSystemTimeOffsets_2afa36052df4765d,
-              mid_setKlobucharAlpha_fa9d415d19f69361,
-              mid_setKlobucharBeta_fa9d415d19f69361,
-              mid_setNeQuickAlpha_fa9d415d19f69361,
+              mid_init$_0640e6acf969ed28,
+              mid_addBDGIMMessage_17edee189478da4a,
+              mid_addBeidouCivilianNavigationMessage_51d66a128545ab32,
+              mid_addBeidouLegacyNavigationMessage_b3ed48b5bc32689f,
+              mid_addEarthOrientationParameter_564a583497363346,
+              mid_addGPSLegacyNavigationMessage_c20e2b5181601e79,
+              mid_addGPSLegacyNavigationMessage_32ebc1a815392aa5,
+              mid_addGalileoNavigationMessage_91f1ae10feea1e6d,
+              mid_addGlonassNavigationMessage_2ccd3101dfe293f5,
+              mid_addIRNSSNavigationMessage_3c046d1961be1d76,
+              mid_addKlobucharMessage_1cd22f0da01d5ade,
+              mid_addNequickGMessage_7bf843147ff865a6,
+              mid_addQZSSCivilianNavigationMessage_54e5819ce49f4f51,
+              mid_addQZSSLegacyNavigationMessage_0219a485357a5d22,
+              mid_addSBASNavigationMessage_ae80c234e2f5a759,
+              mid_addSystemTimeOffset_761b1cc460d40e17,
+              mid_getBDGIMMessages_0d9551367f7ecdef,
+              mid_getBeidouCivilianNavigationMessages_1e62c2f73fbdd1c4,
+              mid_getBeidouCivilianNavigationMessages_112f9b169ddc4fbe,
+              mid_getBeidouLegacyNavigationMessages_1e62c2f73fbdd1c4,
+              mid_getBeidouLegacyNavigationMessages_112f9b169ddc4fbe,
+              mid_getEarthOrientationParameters_0d9551367f7ecdef,
+              mid_getGPSCivilianNavigationMessages_1e62c2f73fbdd1c4,
+              mid_getGPSCivilianNavigationMessages_112f9b169ddc4fbe,
+              mid_getGPSLegacyNavigationMessages_1e62c2f73fbdd1c4,
+              mid_getGPSLegacyNavigationMessages_112f9b169ddc4fbe,
+              mid_getGalileoNavigationMessages_1e62c2f73fbdd1c4,
+              mid_getGalileoNavigationMessages_112f9b169ddc4fbe,
+              mid_getGlonassNavigationMessages_1e62c2f73fbdd1c4,
+              mid_getGlonassNavigationMessages_112f9b169ddc4fbe,
+              mid_getIRNSSNavigationMessages_1e62c2f73fbdd1c4,
+              mid_getIRNSSNavigationMessages_112f9b169ddc4fbe,
+              mid_getKlobucharAlpha_a53a7513ecedada2,
+              mid_getKlobucharBeta_a53a7513ecedada2,
+              mid_getKlobucharMessages_0d9551367f7ecdef,
+              mid_getNeQuickAlpha_a53a7513ecedada2,
+              mid_getNequickGMessages_0d9551367f7ecdef,
+              mid_getQZSSCivilianNavigationMessages_1e62c2f73fbdd1c4,
+              mid_getQZSSCivilianNavigationMessages_112f9b169ddc4fbe,
+              mid_getQZSSLegacyNavigationMessages_1e62c2f73fbdd1c4,
+              mid_getQZSSLegacyNavigationMessages_112f9b169ddc4fbe,
+              mid_getSBASNavigationMessages_1e62c2f73fbdd1c4,
+              mid_getSBASNavigationMessages_112f9b169ddc4fbe,
+              mid_getSystemTimeOffsets_0d9551367f7ecdef,
+              mid_setKlobucharAlpha_cc18240f4a737f14,
+              mid_setKlobucharBeta_cc18240f4a737f14,
+              mid_setNeQuickAlpha_cc18240f4a737f14,
               max_mid
             };
 

@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalStateException;
+    }
     namespace optim {
       class PointValuePair;
       class OptimizationData;
-    }
-    namespace exception {
-      class MathIllegalStateException;
     }
   }
 }
@@ -29,11 +29,11 @@ namespace org {
         class LinearOptimizer : public ::org::hipparchus::optim::nonlinear::scalar::MultivariateOptimizer {
          public:
           enum {
-            mid_optimize_d70788483e9a9a2c,
-            mid_parseOptimizationData_3d26e9f3a1d7e833,
-            mid_getConstraints_37528d110cff6b74,
-            mid_isRestrictedToNonNegative_b108b35ef48e27bd,
-            mid_getFunction_2183057fc5330a32,
+            mid_optimize_428d2547a0c45016,
+            mid_parseOptimizationData_946a92401917c130,
+            mid_getConstraints_12ee61573a18f417,
+            mid_isRestrictedToNonNegative_89b302893bdbe1f1,
+            mid_getFunction_254a9da82033e549,
             max_mid
           };
 

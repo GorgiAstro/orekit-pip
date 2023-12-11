@@ -32,12 +32,12 @@ namespace org {
         class DcbSatellite : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_d0bc48d5b00dc40c,
-            mid_getDcbData_9b5127ddb8c8d319,
-            mid_getDescription_b66783625d13e607,
-            mid_getPRN_11b109bd155ca898,
-            mid_getSatelliteSytem_01acae5c1a253b8e,
-            mid_setDescription_c7a638e3ab0f92d6,
+            mid_init$_f5ffdf29129ef90a,
+            mid_getDcbData_aa52836425be0e57,
+            mid_getDescription_4d0641e2232580f1,
+            mid_getPRN_3cffd47377eca18a,
+            mid_getSatelliteSytem_8b86408cc2633961,
+            mid_setDescription_c4e21d1fdc63a330,
             max_mid
           };
 

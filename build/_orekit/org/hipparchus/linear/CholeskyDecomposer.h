@@ -26,8 +26,8 @@ namespace org {
       class CholeskyDecomposer : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_8f2e782d5278b131,
-          mid_decompose_6832546eac694082,
+          mid_init$_ab23f4ae0fb33968,
+          mid_decompose_3f89101650640015,
           max_mid
         };
 

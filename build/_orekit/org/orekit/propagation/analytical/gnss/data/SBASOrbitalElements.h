@@ -20,22 +20,22 @@ namespace org {
             class SBASOrbitalElements : public ::org::orekit::time::TimeStamped {
              public:
               enum {
-                mid_getAGf0_dff5885c2c873297,
-                mid_getAGf1_dff5885c2c873297,
-                mid_getIODN_570ce0828f81a2c1,
-                mid_getPRN_570ce0828f81a2c1,
-                mid_getTime_dff5885c2c873297,
-                mid_getToc_dff5885c2c873297,
-                mid_getWeek_570ce0828f81a2c1,
-                mid_getX_dff5885c2c873297,
-                mid_getXDot_dff5885c2c873297,
-                mid_getXDotDot_dff5885c2c873297,
-                mid_getY_dff5885c2c873297,
-                mid_getYDot_dff5885c2c873297,
-                mid_getYDotDot_dff5885c2c873297,
-                mid_getZ_dff5885c2c873297,
-                mid_getZDot_dff5885c2c873297,
-                mid_getZDotDot_dff5885c2c873297,
+                mid_getAGf0_557b8123390d8d0c,
+                mid_getAGf1_557b8123390d8d0c,
+                mid_getIODN_412668abc8d889e9,
+                mid_getPRN_412668abc8d889e9,
+                mid_getTime_557b8123390d8d0c,
+                mid_getToc_557b8123390d8d0c,
+                mid_getWeek_412668abc8d889e9,
+                mid_getX_557b8123390d8d0c,
+                mid_getXDot_557b8123390d8d0c,
+                mid_getXDotDot_557b8123390d8d0c,
+                mid_getY_557b8123390d8d0c,
+                mid_getYDot_557b8123390d8d0c,
+                mid_getYDotDot_557b8123390d8d0c,
+                mid_getZ_557b8123390d8d0c,
+                mid_getZDot_557b8123390d8d0c,
+                mid_getZDotDot_557b8123390d8d0c,
                 max_mid
               };
 

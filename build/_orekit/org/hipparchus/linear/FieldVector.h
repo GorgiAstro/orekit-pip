@@ -5,17 +5,17 @@
 
 namespace org {
   namespace hipparchus {
+    class FieldElement;
     namespace exception {
+      class MathIllegalArgumentException;
       class NullArgumentException;
       class MathRuntimeException;
-      class MathIllegalArgumentException;
+    }
+    namespace linear {
+      class FieldVector;
+      class FieldMatrix;
     }
     class Field;
-    class FieldElement;
-    namespace linear {
-      class FieldMatrix;
-      class FieldVector;
-    }
   }
 }
 namespace java {
@@ -32,34 +32,34 @@ namespace org {
       class FieldVector : public ::java::lang::Object {
        public:
         enum {
-          mid_add_a657ce460dba8c79,
-          mid_append_ca6f118471875f79,
-          mid_append_a657ce460dba8c79,
-          mid_copy_34cb9002c167d93d,
-          mid_dotProduct_5546fa4eea5fe461,
-          mid_ebeDivide_a657ce460dba8c79,
-          mid_ebeMultiply_a657ce460dba8c79,
-          mid_getDimension_570ce0828f81a2c1,
-          mid_getEntry_ffcdb6600dc6671a,
-          mid_getField_5b28be2d3632a5dc,
-          mid_getSubVector_cf350b5e44ab330d,
-          mid_mapAdd_ca6f118471875f79,
-          mid_mapAddToSelf_ca6f118471875f79,
-          mid_mapDivide_ca6f118471875f79,
-          mid_mapDivideToSelf_ca6f118471875f79,
-          mid_mapInv_34cb9002c167d93d,
-          mid_mapInvToSelf_34cb9002c167d93d,
-          mid_mapMultiply_ca6f118471875f79,
-          mid_mapMultiplyToSelf_ca6f118471875f79,
-          mid_mapSubtract_ca6f118471875f79,
-          mid_mapSubtractToSelf_ca6f118471875f79,
-          mid_outerProduct_02f30c6e86c806f6,
-          mid_projection_a657ce460dba8c79,
-          mid_set_f96eb0f00086e90d,
-          mid_setEntry_2c97e4718ab5a1ad,
-          mid_setSubVector_0c5a38a1f7c3f4d4,
-          mid_subtract_a657ce460dba8c79,
-          mid_toArray_cbac806c384cdbe1,
+          mid_add_a7c6926a425759ad,
+          mid_append_9c0263b78fe30ac4,
+          mid_append_a7c6926a425759ad,
+          mid_copy_f39e0d3c1ce991ac,
+          mid_dotProduct_3954878560819a96,
+          mid_ebeDivide_a7c6926a425759ad,
+          mid_ebeMultiply_a7c6926a425759ad,
+          mid_getDimension_412668abc8d889e9,
+          mid_getEntry_d40ba91356b6a058,
+          mid_getField_20f98801541dcec1,
+          mid_getSubVector_6244d57986a4c96a,
+          mid_mapAdd_9c0263b78fe30ac4,
+          mid_mapAddToSelf_9c0263b78fe30ac4,
+          mid_mapDivide_9c0263b78fe30ac4,
+          mid_mapDivideToSelf_9c0263b78fe30ac4,
+          mid_mapInv_f39e0d3c1ce991ac,
+          mid_mapInvToSelf_f39e0d3c1ce991ac,
+          mid_mapMultiply_9c0263b78fe30ac4,
+          mid_mapMultiplyToSelf_9c0263b78fe30ac4,
+          mid_mapSubtract_9c0263b78fe30ac4,
+          mid_mapSubtractToSelf_9c0263b78fe30ac4,
+          mid_outerProduct_2284af949fc5e425,
+          mid_projection_a7c6926a425759ad,
+          mid_set_b906415fb0b2ba27,
+          mid_setEntry_d23b1b48c6bca206,
+          mid_setSubVector_502f8ed205bebebd,
+          mid_subtract_a7c6926a425759ad,
+          mid_toArray_7a985a773168dff8,
           max_mid
         };
 

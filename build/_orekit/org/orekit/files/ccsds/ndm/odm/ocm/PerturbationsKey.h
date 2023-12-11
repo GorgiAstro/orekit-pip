@@ -7,19 +7,19 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace ndm {
+          namespace odm {
+            namespace ocm {
+              class PerturbationsKey;
+              class Perturbations;
+            }
+          }
+        }
         namespace utils {
           namespace lexical {
             class ParseToken;
           }
           class ContextBinding;
-        }
-        namespace ndm {
-          namespace odm {
-            namespace ocm {
-              class Perturbations;
-              class PerturbationsKey;
-            }
-          }
         }
       }
     }
@@ -44,9 +44,9 @@ namespace org {
               class PerturbationsKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_efedbbc9f9f45bca,
-                  mid_valueOf_fe61e7640ca9628c,
-                  mid_values_e3065fb2163fd379,
+                  mid_process_5e0e8ad62a45aa65,
+                  mid_valueOf_9f45414097b601c3,
+                  mid_values_d84de0734e3601d8,
                   max_mid
                 };
 

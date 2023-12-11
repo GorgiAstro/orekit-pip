@@ -14,17 +14,17 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace time {
+      class TimeScale;
+    }
     namespace files {
       namespace general {
-        class EphemerisFileWriter;
         class EphemerisFile;
+        class EphemerisFileWriter;
       }
       namespace ilrs {
         class CPFHeader;
       }
-    }
-    namespace time {
-      class TimeScale;
     }
   }
 }
@@ -38,9 +38,9 @@ namespace org {
         class CPFWriter : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_441284539c794317,
-            mid_init$_b8f58eb96ff59f90,
-            mid_write_2fe5901b7cb5a492,
+            mid_init$_07a3276b4776920d,
+            mid_init$_377629c5718b541b,
+            mid_write_0fa910eb9c2e844e,
             max_mid
           };
 

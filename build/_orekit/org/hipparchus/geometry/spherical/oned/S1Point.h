@@ -8,17 +8,17 @@ namespace org {
     namespace geometry {
       namespace spherical {
         namespace oned {
-          class S1Point;
           class Sphere1D;
+          class S1Point;
         }
       }
       class Point;
-      class Space;
       namespace euclidean {
         namespace twod {
           class Vector2D;
         }
       }
+      class Space;
     }
   }
 }
@@ -38,16 +38,16 @@ namespace org {
           class S1Point : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_17db3a65980d3441,
-              mid_distance_07bb97c2794cf6b1,
-              mid_distance_f60f567ab8f0d599,
-              mid_equals_65c7d273e80d497a,
-              mid_equalsIeee754_65c7d273e80d497a,
-              mid_getAlpha_dff5885c2c873297,
-              mid_getSpace_ebbd6b2d39ab0e4f,
-              mid_getVector_73f627838730c264,
-              mid_hashCode_570ce0828f81a2c1,
-              mid_isNaN_b108b35ef48e27bd,
+              mid_init$_10f281d777284cea,
+              mid_distance_cf1fec2b7b1c0efe,
+              mid_distance_0ae4679e4e35d729,
+              mid_equals_221e8e85cb385209,
+              mid_equalsIeee754_221e8e85cb385209,
+              mid_getAlpha_557b8123390d8d0c,
+              mid_getSpace_cf9410d213a7cbb9,
+              mid_getVector_f681f2fc9cdfab57,
+              mid_hashCode_412668abc8d889e9,
+              mid_isNaN_89b302893bdbe1f1,
               max_mid
             };
 

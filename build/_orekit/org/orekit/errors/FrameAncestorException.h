@@ -25,7 +25,7 @@ namespace org {
       class FrameAncestorException : public ::org::orekit::errors::OrekitException {
        public:
         enum {
-          mid_init$_d0cf82c16a7e8751,
+          mid_init$_4fde7f3f87bbd6f7,
           max_mid
         };
 

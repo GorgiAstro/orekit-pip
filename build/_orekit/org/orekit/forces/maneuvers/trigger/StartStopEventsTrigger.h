@@ -22,13 +22,13 @@ namespace org {
   }
 }
 namespace java {
+  namespace lang {
+    class Class;
+  }
   namespace util {
     namespace stream {
       class Stream;
     }
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -42,14 +42,14 @@ namespace org {
           class StartStopEventsTrigger : public ::org::orekit::forces::maneuvers::trigger::AbstractManeuverTriggers {
            public:
             enum {
-              mid_getEventDetectors_20f6d2b462aaef4b,
-              mid_getFieldEventDetectors_361313cd1a9c693a,
-              mid_getStartDetector_900a1fd995808d92,
-              mid_getStopDetector_900a1fd995808d92,
-              mid_init_826b4eda94da4e78,
-              mid_isFiringOnInitialState_6501154ab0a356a8,
-              mid_convertStartDetector_904dccaacafa0db1,
-              mid_convertStopDetector_904dccaacafa0db1,
+              mid_getEventDetectors_d7cce92225eb0db2,
+              mid_getFieldEventDetectors_8130af76f6998f44,
+              mid_getStartDetector_9cafaf54f10725f9,
+              mid_getStopDetector_9cafaf54f10725f9,
+              mid_init_0472264ad6f40bc2,
+              mid_isFiringOnInitialState_1e4c79a00429445e,
+              mid_convertStartDetector_590bb38060674b63,
+              mid_convertStopDetector_590bb38060674b63,
               max_mid
             };
 

@@ -6,10 +6,10 @@
 namespace org {
   namespace orekit {
     namespace propagation {
+      class SpacecraftState;
       namespace events {
         class EventDetector;
       }
-      class SpacecraftState;
     }
   }
 }
@@ -28,7 +28,7 @@ namespace org {
         class EnablingPredicate : public ::java::lang::Object {
          public:
           enum {
-            mid_eventIsEnabled_9da0e57d64f11841,
+            mid_eventIsEnabled_3634c1457eedfeb6,
             max_mid
           };
 

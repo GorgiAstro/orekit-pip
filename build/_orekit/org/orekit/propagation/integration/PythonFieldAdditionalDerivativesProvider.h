@@ -4,20 +4,20 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
       class FieldSpacecraftState;
       namespace integration {
-        class FieldAdditionalDerivativesProvider;
         class FieldCombinedDerivatives;
+        class FieldAdditionalDerivativesProvider;
       }
     }
     namespace time {
       class FieldAbsoluteDate;
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -37,16 +37,16 @@ namespace org {
         class PythonFieldAdditionalDerivativesProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_combinedDerivatives_bed9dfcebfaf5040,
-            mid_finalize_0fa09c18fee449d5,
-            mid_getDimension_570ce0828f81a2c1,
-            mid_getName_11b109bd155ca898,
-            mid_init_8e8de2be1664674a,
-            mid_pythonDecRef_0fa09c18fee449d5,
-            mid_pythonExtension_492808a339bfa35f,
-            mid_pythonExtension_3a8e7649f31fdb20,
-            mid_yields_1b0abd4f90ebd0eb,
+            mid_init$_0640e6acf969ed28,
+            mid_combinedDerivatives_33912551ee5141fb,
+            mid_finalize_0640e6acf969ed28,
+            mid_getDimension_412668abc8d889e9,
+            mid_getName_3cffd47377eca18a,
+            mid_init_811e49dad2467b67,
+            mid_pythonDecRef_0640e6acf969ed28,
+            mid_pythonExtension_9e26256fb0d384a2,
+            mid_pythonExtension_3cd6a6b354c6aa22,
+            mid_yields_4fda3059ab91dbfe,
             max_mid
           };
 

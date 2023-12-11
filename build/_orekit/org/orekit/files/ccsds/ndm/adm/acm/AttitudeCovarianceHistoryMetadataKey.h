@@ -16,8 +16,8 @@ namespace org {
         namespace ndm {
           namespace adm {
             namespace acm {
-              class AttitudeCovarianceHistoryMetadataKey;
               class AttitudeCovarianceHistoryMetadata;
+              class AttitudeCovarianceHistoryMetadataKey;
             }
           }
         }
@@ -44,9 +44,9 @@ namespace org {
               class AttitudeCovarianceHistoryMetadataKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_e09e56f27a403a39,
-                  mid_valueOf_2f7811d4f58a13da,
-                  mid_values_65605db3ba401a3e,
+                  mid_process_6fdf800dfc8ede24,
+                  mid_valueOf_7c2e426ee9589283,
+                  mid_values_802962e782d8dab4,
                   max_mid
                 };
 

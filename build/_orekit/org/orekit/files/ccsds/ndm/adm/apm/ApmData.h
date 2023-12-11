@@ -7,35 +7,35 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace section {
-          class Data;
-          class CommentsContainer;
-        }
         namespace ndm {
           namespace adm {
             namespace apm {
-              class ApmQuaternion;
               class Inertia;
-              class Maneuver;
               class AngularVelocity;
-              class Euler;
               class SpinStabilized;
+              class Maneuver;
+              class Euler;
+              class ApmQuaternion;
             }
           }
         }
+        namespace section {
+          class CommentsContainer;
+          class Data;
+        }
       }
-    }
-    namespace attitudes {
-      class Attitude;
-    }
-    namespace frames {
-      class Frame;
     }
     namespace utils {
       class PVCoordinatesProvider;
     }
+    namespace frames {
+      class Frame;
+    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace attitudes {
+      class Attitude;
     }
   }
 }
@@ -61,21 +61,21 @@ namespace org {
               class ApmData : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_a2df71d5b124c9b9,
-                  mid_addManeuver_ff54c6b9e53ef2cf,
-                  mid_getAngularVelocityBlock_9d728f0071a6aee8,
-                  mid_getAttitude_d44cfca563ece87b,
-                  mid_getComments_2afa36052df4765d,
-                  mid_getEpoch_85703d13e302437e,
-                  mid_getEulerBlock_15e988127d1d4e98,
-                  mid_getInertiaBlock_4f694b9dd2b080cf,
-                  mid_getManeuver_e35b80d65cc7de9d,
-                  mid_getManeuvers_2afa36052df4765d,
-                  mid_getNbManeuvers_570ce0828f81a2c1,
-                  mid_getQuaternionBlock_7ac169a957cf30f9,
-                  mid_getSpinStabilizedBlock_6f5c74988a32b146,
-                  mid_hasManeuvers_b108b35ef48e27bd,
-                  mid_validate_17db3a65980d3441,
+                  mid_init$_d076a969b76543d3,
+                  mid_addManeuver_97d51943868d9ed6,
+                  mid_getAngularVelocityBlock_06f6fa90aa75a35a,
+                  mid_getAttitude_01bb94f66a53b35f,
+                  mid_getComments_0d9551367f7ecdef,
+                  mid_getEpoch_7a97f7e149e79afb,
+                  mid_getEulerBlock_fbcd84ef1de4cd5e,
+                  mid_getInertiaBlock_3fe2d2b2719cb298,
+                  mid_getManeuver_2b0d6c2893b478cf,
+                  mid_getManeuvers_0d9551367f7ecdef,
+                  mid_getNbManeuvers_412668abc8d889e9,
+                  mid_getQuaternionBlock_4bf964b085beb1a5,
+                  mid_getSpinStabilizedBlock_5fd684779f02edc8,
+                  mid_hasManeuvers_89b302893bdbe1f1,
+                  mid_validate_10f281d777284cea,
                   max_mid
                 };
 

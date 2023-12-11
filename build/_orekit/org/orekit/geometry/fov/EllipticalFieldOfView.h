@@ -36,14 +36,14 @@ namespace org {
         class EllipticalFieldOfView : public ::org::orekit::geometry::fov::SmoothFieldOfView {
          public:
           enum {
-            mid_init$_3b428f774cad46a6,
-            mid_getFocus1_d52645e0d4c07563,
-            mid_getFocus2_d52645e0d4c07563,
-            mid_getHalfApertureAlongX_dff5885c2c873297,
-            mid_getHalfApertureAlongY_dff5885c2c873297,
-            mid_offsetFromBoundary_92bc6ba59ebf6937,
-            mid_projectToBoundary_d0fe714ef34714f7,
-            mid_directionAt_9137bba253a33d9c,
+            mid_init$_498dcf63319448e7,
+            mid_getFocus1_f88961cca75a2c0a,
+            mid_getFocus2_f88961cca75a2c0a,
+            mid_getHalfApertureAlongX_557b8123390d8d0c,
+            mid_getHalfApertureAlongY_557b8123390d8d0c,
+            mid_offsetFromBoundary_d0bb3aecf00cc465,
+            mid_projectToBoundary_b48aa9aef740fa79,
+            mid_directionAt_20de5f9d51c6611f,
             max_mid
           };
 

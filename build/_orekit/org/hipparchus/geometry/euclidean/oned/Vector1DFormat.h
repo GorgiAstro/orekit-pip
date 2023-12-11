@@ -3,36 +3,36 @@
 
 #include "org/hipparchus/geometry/VectorFormat.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      class Vector;
-      namespace euclidean {
-        namespace oned {
-          class Vector1D;
-          class Vector1DFormat;
-          class Euclidean1D;
-        }
-      }
-    }
-    namespace exception {
-      class MathIllegalStateException;
-    }
-  }
-}
 namespace java {
   namespace text {
-    class NumberFormat;
     class ParsePosition;
+    class NumberFormat;
     class FieldPosition;
   }
   namespace util {
     class Locale;
   }
   namespace lang {
-    class StringBuffer;
     class Class;
+    class StringBuffer;
     class String;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace oned {
+          class Euclidean1D;
+          class Vector1DFormat;
+          class Vector1D;
+        }
+      }
+      class Vector;
+    }
+    namespace exception {
+      class MathIllegalStateException;
+    }
   }
 }
 template<class T> class JArray;
@@ -46,15 +46,15 @@ namespace org {
           class Vector1DFormat : public ::org::hipparchus::geometry::VectorFormat {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_init$_256f36a22c0d0f55,
-              mid_init$_6a2001eff0605f71,
-              mid_init$_7706b32444fa5b9a,
-              mid_format_84b38396c796d436,
-              mid_getVector1DFormat_866be8bfa4bc145d,
-              mid_getVector1DFormat_ecec3e400f920a3d,
-              mid_parse_9ee5006ad26b508d,
-              mid_parse_77e599b352cc406f,
+              mid_init$_0640e6acf969ed28,
+              mid_init$_d53859bd7ba1b247,
+              mid_init$_630071dd94c59169,
+              mid_init$_a588adb4788c769e,
+              mid_format_6f1f6993f3124ea0,
+              mid_getVector1DFormat_db73d8f487ad5091,
+              mid_getVector1DFormat_0b31e7058e9c8907,
+              mid_parse_a8c76d737531d495,
+              mid_parse_6e45f1ee6f020de9,
               max_mid
             };
 

@@ -30,13 +30,13 @@ namespace org {
         class UpdatingMultipleLinearRegression : public ::java::lang::Object {
          public:
           enum {
-            mid_addObservation_bc1ff02eb3693128,
-            mid_addObservations_38e689b845a7e4f9,
-            mid_clear_0fa09c18fee449d5,
-            mid_getN_492808a339bfa35f,
-            mid_hasIntercept_b108b35ef48e27bd,
-            mid_regress_0142096ec696b4f7,
-            mid_regress_7a5a137e3f3bf403,
+            mid_addObservation_3682f2e0c8382fe5,
+            mid_addObservations_122207bd161e9ddc,
+            mid_clear_0640e6acf969ed28,
+            mid_getN_9e26256fb0d384a2,
+            mid_hasIntercept_89b302893bdbe1f1,
+            mid_regress_2f78c8eefa6215e0,
+            mid_regress_bfd11e26913ff479,
             max_mid
           };
 

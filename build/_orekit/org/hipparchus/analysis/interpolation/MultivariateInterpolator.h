@@ -29,7 +29,7 @@ namespace org {
         class MultivariateInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_interpolate_ade864ba8b3d9956,
+            mid_interpolate_7fe6a527b1a5d65c,
             max_mid
           };
 

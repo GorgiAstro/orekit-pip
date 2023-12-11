@@ -28,10 +28,10 @@ namespace org {
       class DummyLocalizable : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_d0bc48d5b00dc40c,
-          mid_getLocalizedString_3cd873bfb132c4fd,
-          mid_getSourceString_11b109bd155ca898,
-          mid_toString_11b109bd155ca898,
+          mid_init$_f5ffdf29129ef90a,
+          mid_getLocalizedString_4b51060c6b7ea981,
+          mid_getSourceString_3cffd47377eca18a,
+          mid_toString_3cffd47377eca18a,
           max_mid
         };
 

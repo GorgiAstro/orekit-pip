@@ -28,9 +28,9 @@ namespace org {
         class BicubicInterpolatingFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_f897de34796be74a,
-            mid_isValidPoint_ff85a0d8ff097ee5,
-            mid_value_86ffecc08a63eff0,
+            mid_init$_19c569ee064d5b49,
+            mid_isValidPoint_41fce65646328eb2,
+            mid_value_2268d18be49a6087,
             max_mid
           };
 

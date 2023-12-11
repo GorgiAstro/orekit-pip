@@ -18,8 +18,8 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace general {
-        class EphemerisFileWriter;
         class EphemerisFile;
+        class EphemerisFileWriter;
       }
     }
   }
@@ -34,13 +34,13 @@ namespace org {
         class PythonEphemerisFileWriter : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_finalize_0fa09c18fee449d5,
-            mid_pythonDecRef_0fa09c18fee449d5,
-            mid_pythonExtension_492808a339bfa35f,
-            mid_pythonExtension_3a8e7649f31fdb20,
-            mid_write_c304d7428e150e41,
-            mid_write_2fe5901b7cb5a492,
+            mid_init$_0640e6acf969ed28,
+            mid_finalize_0640e6acf969ed28,
+            mid_pythonDecRef_0640e6acf969ed28,
+            mid_pythonExtension_9e26256fb0d384a2,
+            mid_pythonExtension_3cd6a6b354c6aa22,
+            mid_write_507409137616ad7b,
+            mid_write_0fa910eb9c2e844e,
             max_mid
           };
 

@@ -20,17 +20,17 @@ namespace org {
             class GHmsjPolynomials : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_12428deb464a7a30,
-                mid_getGmsj_3d407e6a8cf9e8ca,
-                mid_getHmsj_3d407e6a8cf9e8ca,
-                mid_getdGmsdAlpha_3d407e6a8cf9e8ca,
-                mid_getdGmsdBeta_3d407e6a8cf9e8ca,
-                mid_getdGmsdh_3d407e6a8cf9e8ca,
-                mid_getdGmsdk_3d407e6a8cf9e8ca,
-                mid_getdHmsdAlpha_3d407e6a8cf9e8ca,
-                mid_getdHmsdBeta_3d407e6a8cf9e8ca,
-                mid_getdHmsdh_3d407e6a8cf9e8ca,
-                mid_getdHmsdk_3d407e6a8cf9e8ca,
+                mid_init$_62dec2ddd788a71d,
+                mid_getGmsj_093995dc5657c18c,
+                mid_getHmsj_093995dc5657c18c,
+                mid_getdGmsdAlpha_093995dc5657c18c,
+                mid_getdGmsdBeta_093995dc5657c18c,
+                mid_getdGmsdh_093995dc5657c18c,
+                mid_getdGmsdk_093995dc5657c18c,
+                mid_getdHmsdAlpha_093995dc5657c18c,
+                mid_getdHmsdBeta_093995dc5657c18c,
+                mid_getdHmsdh_093995dc5657c18c,
+                mid_getdHmsdk_093995dc5657c18c,
                 max_mid
               };
 

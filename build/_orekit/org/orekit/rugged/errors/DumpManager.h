@@ -6,30 +6,30 @@
 namespace org {
   namespace orekit {
     namespace rugged {
+      namespace api {
+        class AlgorithmId;
+      }
       namespace utils {
         class ExtendedEllipsoid;
         class SpacecraftToObservedBody;
       }
-      namespace api {
-        class AlgorithmId;
-      }
       namespace linesensor {
-        class SensorMeanPlaneCrossing;
-        class LineSensor;
         class SensorPixel;
+        class LineSensor;
+        class SensorMeanPlaneCrossing;
       }
       namespace raster {
         class Tile;
       }
+    }
+    namespace bodies {
+      class GeodeticPoint;
     }
     namespace frames {
       class Transform;
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace bodies {
-      class GeodeticPoint;
     }
   }
   namespace hipparchus {
@@ -61,25 +61,25 @@ namespace org {
         class DumpManager : public ::java::lang::Object {
          public:
           enum {
-            mid_activate_0613af62f2ba5dba,
-            mid_deactivate_0fa09c18fee449d5,
-            mid_dumpAlgorithm_bf8b5dae4ed03a23,
-            mid_dumpAlgorithm_ae3e3a99fa2baadd,
-            mid_dumpDirectLocation_59f76e44cd6c2fd4,
-            mid_dumpDirectLocationResult_083a0f582ac2c846,
-            mid_dumpEllipsoid_323cca21b3806954,
-            mid_dumpInverseLocation_8027d207ff6378d8,
-            mid_dumpInverseLocationResult_0fc18d1cc8c4a1a6,
-            mid_dumpSensorDatation_8ab2a5996db1732e,
-            mid_dumpSensorLOS_0a886226d4f13cd0,
-            mid_dumpSensorMeanPlane_2020c547641e3f1d,
-            mid_dumpSensorRate_a06c5b9fb71931a3,
-            mid_dumpTileCell_a38e6192c4ef3a41,
-            mid_dumpTransform_221d25b63c6d70bd,
-            mid_endNicely_0fa09c18fee449d5,
-            mid_isActive_b108b35ef48e27bd,
-            mid_resume_39ded4df2e865a26,
-            mid_suspend_32e0a2327c4a0419,
+            mid_activate_5d6bcca91ae998ee,
+            mid_deactivate_0640e6acf969ed28,
+            mid_dumpAlgorithm_7627dde45c73f8d7,
+            mid_dumpAlgorithm_dfd3548ae6c4432e,
+            mid_dumpDirectLocation_cc308f3f1d1cf703,
+            mid_dumpDirectLocationResult_fbf2547e3e819d1a,
+            mid_dumpEllipsoid_224b23f8eb5eaad9,
+            mid_dumpInverseLocation_4ecf9e7f7daff38b,
+            mid_dumpInverseLocationResult_fc8156a42573cb8b,
+            mid_dumpSensorDatation_c7f68f6699a398f6,
+            mid_dumpSensorLOS_aa726d47a4c117cc,
+            mid_dumpSensorMeanPlane_6139d52cdd0ebd03,
+            mid_dumpSensorRate_4fe1c16a241adb22,
+            mid_dumpTileCell_20f37c4dfc02e214,
+            mid_dumpTransform_481fc23d59ffdfac,
+            mid_endNicely_0640e6acf969ed28,
+            mid_isActive_89b302893bdbe1f1,
+            mid_resume_63dc8f8ce091e3e5,
+            mid_suspend_adef4ca621ef1c5e,
             max_mid
           };
 

@@ -33,9 +33,9 @@ namespace org {
         class RinexFile : public ::java::lang::Object {
          public:
           enum {
-            mid_addComment_4f4944d1a215603e,
-            mid_getComments_2afa36052df4765d,
-            mid_getHeader_c152fe3e8867bec0,
+            mid_addComment_202c0c0df5f8bb5c,
+            mid_getComments_0d9551367f7ecdef,
+            mid_getHeader_2f3f30d5211d15d8,
             max_mid
           };
 

@@ -24,8 +24,8 @@ namespace org {
       class BoundedAttitudeProvider : public ::org::orekit::attitudes::AttitudeProvider {
        public:
         enum {
-          mid_getMaxDate_85703d13e302437e,
-          mid_getMinDate_85703d13e302437e,
+          mid_getMaxDate_7a97f7e149e79afb,
+          mid_getMinDate_7a97f7e149e79afb,
           max_mid
         };
 

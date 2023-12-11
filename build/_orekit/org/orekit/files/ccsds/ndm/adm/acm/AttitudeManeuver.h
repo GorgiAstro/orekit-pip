@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Rotation;
           class Vector3D;
+          class Rotation;
         }
       }
     }
@@ -43,30 +43,30 @@ namespace org {
               class AttitudeManeuver : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_0fa09c18fee449d5,
-                  mid_getActuatorUsed_11b109bd155ca898,
-                  mid_getBeginTime_dff5885c2c873297,
-                  mid_getDuration_dff5885c2c873297,
-                  mid_getEndTime_dff5885c2c873297,
-                  mid_getID_11b109bd155ca898,
-                  mid_getManPurpose_11b109bd155ca898,
-                  mid_getPrevID_11b109bd155ca898,
-                  mid_getTargetAttitude_de86c7efc42eac14,
-                  mid_getTargetMomFrame_5d5dd95b04037824,
-                  mid_getTargetMomentum_d52645e0d4c07563,
-                  mid_getTargetSpinRate_dff5885c2c873297,
-                  mid_setActuatorUsed_d0bc48d5b00dc40c,
-                  mid_setBeginTime_17db3a65980d3441,
-                  mid_setDuration_17db3a65980d3441,
-                  mid_setEndTime_17db3a65980d3441,
-                  mid_setID_d0bc48d5b00dc40c,
-                  mid_setManPurpose_d0bc48d5b00dc40c,
-                  mid_setPrevID_d0bc48d5b00dc40c,
-                  mid_setTargetAttitude_80a55d93aa5ecb9e,
-                  mid_setTargetMomFrame_849bc9e3b38b9bcb,
-                  mid_setTargetMomentum_029ff0cbf68ea054,
-                  mid_setTargetSpinRate_17db3a65980d3441,
-                  mid_validate_17db3a65980d3441,
+                  mid_init$_0640e6acf969ed28,
+                  mid_getActuatorUsed_3cffd47377eca18a,
+                  mid_getBeginTime_557b8123390d8d0c,
+                  mid_getDuration_557b8123390d8d0c,
+                  mid_getEndTime_557b8123390d8d0c,
+                  mid_getID_3cffd47377eca18a,
+                  mid_getManPurpose_3cffd47377eca18a,
+                  mid_getPrevID_3cffd47377eca18a,
+                  mid_getTargetAttitude_1e0dc1a6788897b9,
+                  mid_getTargetMomFrame_98f5fcaff3e3f9d2,
+                  mid_getTargetMomentum_f88961cca75a2c0a,
+                  mid_getTargetSpinRate_557b8123390d8d0c,
+                  mid_setActuatorUsed_f5ffdf29129ef90a,
+                  mid_setBeginTime_10f281d777284cea,
+                  mid_setDuration_10f281d777284cea,
+                  mid_setEndTime_10f281d777284cea,
+                  mid_setID_f5ffdf29129ef90a,
+                  mid_setManPurpose_f5ffdf29129ef90a,
+                  mid_setPrevID_f5ffdf29129ef90a,
+                  mid_setTargetAttitude_cffe2196131a8abb,
+                  mid_setTargetMomFrame_f55eee1236275bb1,
+                  mid_setTargetMomentum_2810d2bec90e7b1c,
+                  mid_setTargetSpinRate_10f281d777284cea,
+                  mid_validate_10f281d777284cea,
                   max_mid
                 };
 

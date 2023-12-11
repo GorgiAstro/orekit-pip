@@ -36,10 +36,10 @@ namespace org {
           class RinexClockParser : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_parse_4c37f05826036982,
-              mid_parse_57f3ad0a089e35e5,
-              mid_parse_397982b7308487ff,
+              mid_init$_0640e6acf969ed28,
+              mid_parse_70775d8267b42e37,
+              mid_parse_f636ade7825ced3d,
+              mid_parse_e9ac07eb307c88c8,
               max_mid
             };
 

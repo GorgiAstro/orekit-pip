@@ -3,27 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace forces {
-      namespace gravity {
-        namespace potential {
-          class OceanTidesReader;
-          class NormalizedSphericalHarmonicsProvider;
-          class PotentialCoefficientsReader;
-          class OceanLoadDeformationCoefficients;
-          class LazyLoadedGravityFields;
-          class UnnormalizedSphericalHarmonicsProvider;
-          class OceanTidesWave;
-          class TideSystem;
-        }
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -31,6 +10,27 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace forces {
+      namespace gravity {
+        namespace potential {
+          class TideSystem;
+          class UnnormalizedSphericalHarmonicsProvider;
+          class OceanTidesReader;
+          class OceanTidesWave;
+          class PotentialCoefficientsReader;
+          class NormalizedSphericalHarmonicsProvider;
+          class LazyLoadedGravityFields;
+          class OceanLoadDeformationCoefficients;
+        }
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
   }
 }
 template<class T> class JArray;
@@ -44,26 +44,26 @@ namespace org {
           class GravityFieldFactory : public ::java::lang::Object {
            public:
             enum {
-              mid_addDefaultOceanTidesReaders_0fa09c18fee449d5,
-              mid_addDefaultPotentialCoefficientsReaders_0fa09c18fee449d5,
-              mid_addOceanTidesReader_aaf944cdf3a65ca7,
-              mid_addPotentialCoefficientsReader_bb91501de12fc9cd,
-              mid_clearOceanTidesReaders_0fa09c18fee449d5,
-              mid_clearPotentialCoefficientsReaders_0fa09c18fee449d5,
-              mid_configureOceanLoadDeformationCoefficients_1f277f0c1fb1d25f,
-              mid_getConstantNormalizedProvider_8be9acc0db722a5e,
-              mid_getConstantUnnormalizedProvider_1a4f51636cfaa7fe,
-              mid_getGravityFields_6e6081b92fd46837,
-              mid_getNormalizedProvider_85db78a69810583e,
-              mid_getNormalizedProvider_0fdcb0a280e1e598,
-              mid_getNormalizedProvider_7e4305b432a52ae3,
-              mid_getOceanLoadDeformationCoefficients_ed8ed7679d88de0a,
-              mid_getOceanTidesWaves_10d7c0f6de166543,
-              mid_getUnnormalizationFactors_5f8b4bdc912abcfa,
-              mid_getUnnormalizedProvider_95cc2006b0da2544,
-              mid_getUnnormalizedProvider_c2f412128b078525,
-              mid_getUnnormalizedProvider_05607b190f3105e2,
-              mid_readGravityField_59c1b784e0263abd,
+              mid_addDefaultOceanTidesReaders_0640e6acf969ed28,
+              mid_addDefaultPotentialCoefficientsReaders_0640e6acf969ed28,
+              mid_addOceanTidesReader_53a9275b0b397970,
+              mid_addPotentialCoefficientsReader_5853b49c202b050b,
+              mid_clearOceanTidesReaders_0640e6acf969ed28,
+              mid_clearPotentialCoefficientsReaders_0640e6acf969ed28,
+              mid_configureOceanLoadDeformationCoefficients_48fb5ba519b6ce93,
+              mid_getConstantNormalizedProvider_0c77c94a83049da8,
+              mid_getConstantUnnormalizedProvider_eb1ce3dfed700512,
+              mid_getGravityFields_0d8a4be514230626,
+              mid_getNormalizedProvider_003cf918a8e938f4,
+              mid_getNormalizedProvider_79759f2115f6836e,
+              mid_getNormalizedProvider_9108cf7f45bb896a,
+              mid_getOceanLoadDeformationCoefficients_5e90d7425c16a9f8,
+              mid_getOceanTidesWaves_db6a96225c690c76,
+              mid_getUnnormalizationFactors_c5a249365f81f631,
+              mid_getUnnormalizedProvider_d395c492ef90bcf1,
+              mid_getUnnormalizedProvider_2609e3e741b941bf,
+              mid_getUnnormalizedProvider_016911f22f84e125,
+              mid_readGravityField_88cf88e8bd59d4fa,
               max_mid
             };
 

@@ -30,7 +30,7 @@ namespace org {
         class SupportBallGenerator : public ::java::lang::Object {
          public:
           enum {
-            mid_ballOnSupport_8eaea97b2dcfeb64,
+            mid_ballOnSupport_7c06e55e72f854ed,
             max_mid
           };
 

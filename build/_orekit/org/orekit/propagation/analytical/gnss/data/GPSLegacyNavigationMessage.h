@@ -20,7 +20,7 @@ namespace org {
             class GPSLegacyNavigationMessage : public ::org::orekit::propagation::analytical::gnss::data::LegacyNavigationMessage {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
+                mid_init$_0640e6acf969ed28,
                 max_mid
               };
 

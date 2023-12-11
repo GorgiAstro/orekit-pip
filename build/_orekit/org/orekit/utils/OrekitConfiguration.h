@@ -17,8 +17,8 @@ namespace org {
       class OrekitConfiguration : public ::java::lang::Object {
        public:
         enum {
-          mid_getCacheSlotsNumber_570ce0828f81a2c1,
-          mid_setCacheSlotsNumber_99803b0791f320ff,
+          mid_getCacheSlotsNumber_412668abc8d889e9,
+          mid_setCacheSlotsNumber_a3da1a935cb37f7b,
           max_mid
         };
 

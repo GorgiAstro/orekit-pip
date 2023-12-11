@@ -3,15 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
@@ -27,6 +18,15 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -37,24 +37,24 @@ namespace org {
         class MultivariateSummaryStatistics : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_99803b0791f320ff,
-            mid_init$_f61a0322e15bde25,
-            mid_addValue_fa9d415d19f69361,
-            mid_clear_0fa09c18fee449d5,
-            mid_equals_65c7d273e80d497a,
-            mid_getCovariance_688b496048ff947b,
-            mid_getDimension_570ce0828f81a2c1,
-            mid_getGeometricMean_60c7040667a7dc5c,
-            mid_getMax_60c7040667a7dc5c,
-            mid_getMean_60c7040667a7dc5c,
-            mid_getMin_60c7040667a7dc5c,
-            mid_getN_492808a339bfa35f,
-            mid_getStandardDeviation_60c7040667a7dc5c,
-            mid_getSum_60c7040667a7dc5c,
-            mid_getSumLog_60c7040667a7dc5c,
-            mid_getSumSq_60c7040667a7dc5c,
-            mid_hashCode_570ce0828f81a2c1,
-            mid_toString_11b109bd155ca898,
+            mid_init$_a3da1a935cb37f7b,
+            mid_init$_746492bb94848925,
+            mid_addValue_cc18240f4a737f14,
+            mid_clear_0640e6acf969ed28,
+            mid_equals_221e8e85cb385209,
+            mid_getCovariance_70a207fcbc031df2,
+            mid_getDimension_412668abc8d889e9,
+            mid_getGeometricMean_a53a7513ecedada2,
+            mid_getMax_a53a7513ecedada2,
+            mid_getMean_a53a7513ecedada2,
+            mid_getMin_a53a7513ecedada2,
+            mid_getN_9e26256fb0d384a2,
+            mid_getStandardDeviation_a53a7513ecedada2,
+            mid_getSum_a53a7513ecedada2,
+            mid_getSumLog_a53a7513ecedada2,
+            mid_getSumSq_a53a7513ecedada2,
+            mid_hashCode_412668abc8d889e9,
+            mid_toString_3cffd47377eca18a,
             max_mid
           };
 

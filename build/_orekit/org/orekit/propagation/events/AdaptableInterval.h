@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
       class SpacecraftState;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,7 +25,7 @@ namespace org {
         class AdaptableInterval : public ::java::lang::Object {
          public:
           enum {
-            mid_currentInterval_432f3d328c15ec82,
+            mid_currentInterval_1bbf81d80c47ecdd,
             max_mid
           };
 

@@ -24,8 +24,8 @@ namespace org {
       class IERSConventions$NutationCorrectionConverter : public ::java::lang::Object {
        public:
         enum {
-          mid_toEquinox_94992fc53ba06f18,
-          mid_toNonRotating_94992fc53ba06f18,
+          mid_toEquinox_284d549d39f6cacb,
+          mid_toNonRotating_284d549d39f6cacb,
           max_mid
         };
 

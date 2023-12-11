@@ -38,16 +38,16 @@ namespace org {
               class SsrIgm06Data : public ::org::orekit::gnss::metric::messages::ssr::igm::SsrIgmData {
                public:
                 enum {
-                  mid_init$_0fa09c18fee449d5,
-                  mid_addPhaseBias_037e847c25c69ec3,
-                  mid_getNumberOfBiasesProcessed_570ce0828f81a2c1,
-                  mid_getPhaseBias_b55c654d358d1991,
-                  mid_getPhaseBiases_6f5a75ccd8c04465,
-                  mid_getYawAngle_dff5885c2c873297,
-                  mid_getYawRate_dff5885c2c873297,
-                  mid_setNumberOfBiasesProcessed_99803b0791f320ff,
-                  mid_setYawAngle_17db3a65980d3441,
-                  mid_setYawRate_17db3a65980d3441,
+                  mid_init$_0640e6acf969ed28,
+                  mid_addPhaseBias_6aaab491eca22f6c,
+                  mid_getNumberOfBiasesProcessed_412668abc8d889e9,
+                  mid_getPhaseBias_7cfe504a3d90d1f0,
+                  mid_getPhaseBiases_1e62c2f73fbdd1c4,
+                  mid_getYawAngle_557b8123390d8d0c,
+                  mid_getYawRate_557b8123390d8d0c,
+                  mid_setNumberOfBiasesProcessed_a3da1a935cb37f7b,
+                  mid_setYawAngle_10f281d777284cea,
+                  mid_setYawRate_10f281d777284cea,
                   max_mid
                 };
 

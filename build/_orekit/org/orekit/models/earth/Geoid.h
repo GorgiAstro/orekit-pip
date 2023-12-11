@@ -4,12 +4,35 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Line;
+          class Vector3D;
+          class FieldLine;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace models {
       namespace earth {
         class ReferenceEllipsoid;
         class EarthShape;
       }
+    }
+    namespace bodies {
+      class GeodeticPoint;
+      class FieldGeodeticPoint;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
+    namespace frames {
+      class Frame;
     }
     namespace forces {
       namespace gravity {
@@ -18,31 +41,8 @@ namespace org {
         }
       }
     }
-    namespace frames {
-      class Frame;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-    namespace bodies {
-      class FieldGeodeticPoint;
-      class GeodeticPoint;
-    }
     namespace utils {
       class TimeStampedPVCoordinates;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class FieldLine;
-          class FieldVector3D;
-          class Vector3D;
-          class Line;
-        }
-      }
     }
   }
 }
@@ -61,18 +61,18 @@ namespace org {
         class Geoid : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_3e46faf0843f94b0,
-            mid_getBodyFrame_b86f9f61d97a7244,
-            mid_getEllipsoid_eead5b864957d48b,
-            mid_getIntersectionPoint_e81d59d1bc381e5e,
-            mid_getIntersectionPoint_ec4b828b0bd3964b,
-            mid_getUndulation_51525816d9b1365b,
-            mid_projectToGround_7ddc39790e3dd04b,
-            mid_projectToGround_73ba258c5f91e9db,
-            mid_transform_5f1451dffd8cde56,
-            mid_transform_6cf64433187e46c3,
-            mid_transform_e019f2426bfb11d5,
-            mid_transform_dd18b1b42137f809,
+            mid_init$_213180f7826041a3,
+            mid_getBodyFrame_6c9bc0a928c56d4e,
+            mid_getEllipsoid_576f0b44e8384336,
+            mid_getIntersectionPoint_6391bd6fdaac29a3,
+            mid_getIntersectionPoint_884873e1d3d77c4e,
+            mid_getUndulation_b013e8eac006d836,
+            mid_projectToGround_3d4e9a6447a03aa9,
+            mid_projectToGround_4c5eeaf1ff845fca,
+            mid_transform_8b70a50ea3e1f728,
+            mid_transform_8b264141c1de262c,
+            mid_transform_8e052cb77f98e021,
+            mid_transform_4dfad8dc678d42b2,
             max_mid
           };
 
@@ -91,8 +91,8 @@ namespace org {
 
           ::org::orekit::frames::Frame getBodyFrame() const;
           ::org::orekit::models::earth::ReferenceEllipsoid getEllipsoid() const;
-          ::org::orekit::bodies::FieldGeodeticPoint getIntersectionPoint(const ::org::hipparchus::geometry::euclidean::threed::FieldLine &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::FieldAbsoluteDate &) const;
           ::org::orekit::bodies::GeodeticPoint getIntersectionPoint(const ::org::hipparchus::geometry::euclidean::threed::Line &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::AbsoluteDate &) const;
+          ::org::orekit::bodies::FieldGeodeticPoint getIntersectionPoint(const ::org::hipparchus::geometry::euclidean::threed::FieldLine &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::FieldAbsoluteDate &) const;
           jdouble getUndulation(jdouble, jdouble, const ::org::orekit::time::AbsoluteDate &) const;
           ::org::orekit::utils::TimeStampedPVCoordinates projectToGround(const ::org::orekit::utils::TimeStampedPVCoordinates &, const ::org::orekit::frames::Frame &) const;
           ::org::hipparchus::geometry::euclidean::threed::Vector3D projectToGround(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;

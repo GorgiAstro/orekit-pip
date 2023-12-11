@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -13,6 +12,7 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
   namespace orekit {
     namespace propagation {
@@ -38,14 +38,14 @@ namespace org {
         class PythonFieldTimeDerivativesEquations : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_addKeplerContribution_072c8635f2164db9,
-            mid_addMassDerivative_072c8635f2164db9,
-            mid_addNonKeplerianAcceleration_c79ed286e3615fed,
-            mid_finalize_0fa09c18fee449d5,
-            mid_pythonDecRef_0fa09c18fee449d5,
-            mid_pythonExtension_492808a339bfa35f,
-            mid_pythonExtension_3a8e7649f31fdb20,
+            mid_init$_0640e6acf969ed28,
+            mid_addKeplerContribution_1ee4bed350fde589,
+            mid_addMassDerivative_1ee4bed350fde589,
+            mid_addNonKeplerianAcceleration_282cea09b82f4134,
+            mid_finalize_0640e6acf969ed28,
+            mid_pythonDecRef_0640e6acf969ed28,
+            mid_pythonExtension_9e26256fb0d384a2,
+            mid_pythonExtension_3cd6a6b354c6aa22,
             max_mid
           };
 

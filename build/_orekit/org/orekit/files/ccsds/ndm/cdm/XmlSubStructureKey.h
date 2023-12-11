@@ -7,15 +7,15 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace ndm {
-          namespace cdm {
-            class CdmParser;
-            class XmlSubStructureKey;
-          }
-        }
         namespace utils {
           namespace lexical {
             class ParseToken;
+          }
+        }
+        namespace ndm {
+          namespace cdm {
+            class XmlSubStructureKey;
+            class CdmParser;
           }
         }
       }
@@ -40,9 +40,9 @@ namespace org {
             class XmlSubStructureKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_609bc51c22104b41,
-                mid_valueOf_8ed0115cc2676fed,
-                mid_values_4d1a3390e0f11cec,
+                mid_process_33a9b71b74be7008,
+                mid_valueOf_d468866fd61e938a,
+                mid_values_de9a49671004f1a1,
                 max_mid
               };
 

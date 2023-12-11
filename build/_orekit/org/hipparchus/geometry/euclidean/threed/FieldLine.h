@@ -5,19 +5,19 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldLine;
           class FieldVector3D;
           class Vector3D;
+          class FieldLine;
         }
       }
     }
     namespace exception {
       class MathIllegalArgumentException;
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -36,24 +36,24 @@ namespace org {
           class FieldLine : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_23eb1e83466508cd,
-              mid_closestPoint_465816f33f087bba,
-              mid_contains_19ce44a30ac2c75e,
-              mid_contains_ab4ed00ccf0defd6,
-              mid_distance_4d5c9a83dec064bc,
-              mid_distance_11b158fbf85bdc54,
-              mid_distance_2f5dcdf943d50d31,
-              mid_getAbscissa_11b158fbf85bdc54,
-              mid_getAbscissa_2f5dcdf943d50d31,
-              mid_getDirection_716f50c86ffc8da7,
-              mid_getOrigin_716f50c86ffc8da7,
-              mid_getTolerance_dff5885c2c873297,
-              mid_intersection_465816f33f087bba,
-              mid_isSimilarTo_e14dd382f7b52011,
-              mid_pointAt_3e101a58a2527fdf,
-              mid_pointAt_e0e563985265c470,
-              mid_reset_67d015490dd313e3,
-              mid_revert_8bd95f1b4afb6092,
+              mid_init$_4c55045f6a03c721,
+              mid_closestPoint_d840ee208e084141,
+              mid_contains_7a86ea6adaa11bf8,
+              mid_contains_7ccf3b3f40d5fcd3,
+              mid_distance_e26e605b64a5a41d,
+              mid_distance_b2798c156647508e,
+              mid_distance_a22927126b45d148,
+              mid_getAbscissa_b2798c156647508e,
+              mid_getAbscissa_a22927126b45d148,
+              mid_getDirection_2d64addf4c3391d9,
+              mid_getOrigin_2d64addf4c3391d9,
+              mid_getTolerance_557b8123390d8d0c,
+              mid_intersection_d840ee208e084141,
+              mid_isSimilarTo_6be0c7436f0b164d,
+              mid_pointAt_9465a023313b1d29,
+              mid_pointAt_68e9ce281b70d410,
+              mid_reset_b2e28a0995250182,
+              mid_revert_713655f9399cdc2f,
               max_mid
             };
 

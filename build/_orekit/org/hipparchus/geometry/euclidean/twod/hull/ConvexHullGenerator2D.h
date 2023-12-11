@@ -3,30 +3,30 @@
 
 #include "org/hipparchus/geometry/hull/ConvexHullGenerator.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class MathIllegalStateException;
-    }
-    namespace geometry {
-      namespace euclidean {
-        namespace twod {
-          class Euclidean2D;
-          namespace hull {
-            class ConvexHull2D;
-          }
-          class Vector2D;
-        }
-      }
-    }
-  }
-}
 namespace java {
   namespace util {
     class Collection;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace twod {
+          class Vector2D;
+          namespace hull {
+            class ConvexHull2D;
+          }
+          class Euclidean2D;
+        }
+      }
+    }
+    namespace exception {
+      class MathIllegalStateException;
+    }
   }
 }
 template<class T> class JArray;
@@ -41,7 +41,7 @@ namespace org {
             class ConvexHullGenerator2D : public ::org::hipparchus::geometry::hull::ConvexHullGenerator {
              public:
               enum {
-                mid_generate_031b48e42873ea77,
+                mid_generate_b7d73bd07a9bc56d,
                 max_mid
               };
 

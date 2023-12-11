@@ -6,17 +6,17 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathRuntimeException;
       class MathIllegalArgumentException;
+      class MathRuntimeException;
     }
     namespace geometry {
-      class Point;
       namespace spherical {
         namespace twod {
-          class S2Point;
           class Sphere2D;
+          class S2Point;
         }
       }
+      class Point;
       namespace euclidean {
         namespace threed {
           class Vector3D;
@@ -43,20 +43,20 @@ namespace org {
           class S2Point : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_029ff0cbf68ea054,
-              mid_init$_8f2e782d5278b131,
-              mid_distance_07bb97c2794cf6b1,
-              mid_distance_7906933611969296,
-              mid_equals_65c7d273e80d497a,
-              mid_equalsIeee754_65c7d273e80d497a,
-              mid_getPhi_dff5885c2c873297,
-              mid_getSpace_ebbd6b2d39ab0e4f,
-              mid_getTheta_dff5885c2c873297,
-              mid_getVector_d52645e0d4c07563,
-              mid_hashCode_570ce0828f81a2c1,
-              mid_isNaN_b108b35ef48e27bd,
-              mid_negate_fe1c7ad511d8448b,
-              mid_toString_11b109bd155ca898,
+              mid_init$_2810d2bec90e7b1c,
+              mid_init$_ab23f4ae0fb33968,
+              mid_distance_cf1fec2b7b1c0efe,
+              mid_distance_8531a7312d9da5ba,
+              mid_equals_221e8e85cb385209,
+              mid_equalsIeee754_221e8e85cb385209,
+              mid_getPhi_557b8123390d8d0c,
+              mid_getSpace_cf9410d213a7cbb9,
+              mid_getTheta_557b8123390d8d0c,
+              mid_getVector_f88961cca75a2c0a,
+              mid_hashCode_412668abc8d889e9,
+              mid_isNaN_89b302893bdbe1f1,
+              mid_negate_0ba7e0560ff59fd8,
+              mid_toString_3cffd47377eca18a,
               max_mid
             };
 

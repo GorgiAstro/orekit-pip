@@ -10,9 +10,9 @@ namespace org {
         namespace ndm {
           namespace tdm {
             class RangeUnitsConverter;
-            class ObservationsBlock;
-            class ObservationType;
             class TdmMetadata;
+            class ObservationType;
+            class ObservationsBlock;
           }
         }
         namespace utils {
@@ -46,11 +46,11 @@ namespace org {
             class ObservationType : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_e72a71cd30355630,
-                mid_rawToSI_f6cf436268177345,
-                mid_siToRaw_f6cf436268177345,
-                mid_valueOf_1479529000a26cf6,
-                mid_values_c187ad6fd87ef334,
+                mid_process_ed8b45f2e265f28c,
+                mid_rawToSI_39eff01712aa84c6,
+                mid_siToRaw_39eff01712aa84c6,
+                mid_valueOf_09376b04ec936bb1,
+                mid_values_eb72dc802a5409b9,
                 max_mid
               };
 

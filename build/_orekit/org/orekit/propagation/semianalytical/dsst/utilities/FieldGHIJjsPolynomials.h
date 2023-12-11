@@ -3,14 +3,14 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -25,27 +25,27 @@ namespace org {
             class FieldGHIJjsPolynomials : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_f70e12a452183042,
-                mid_getGjs_d0525157bc3abb83,
-                mid_getHjs_d0525157bc3abb83,
-                mid_getIjs_d0525157bc3abb83,
-                mid_getJjs_d0525157bc3abb83,
-                mid_getdGjsdAlpha_d0525157bc3abb83,
-                mid_getdGjsdBeta_d0525157bc3abb83,
-                mid_getdGjsdh_d0525157bc3abb83,
-                mid_getdGjsdk_d0525157bc3abb83,
-                mid_getdHjsdAlpha_d0525157bc3abb83,
-                mid_getdHjsdBeta_d0525157bc3abb83,
-                mid_getdHjsdh_d0525157bc3abb83,
-                mid_getdHjsdk_d0525157bc3abb83,
-                mid_getdIjsdAlpha_d0525157bc3abb83,
-                mid_getdIjsdBeta_d0525157bc3abb83,
-                mid_getdIjsdh_d0525157bc3abb83,
-                mid_getdIjsdk_d0525157bc3abb83,
-                mid_getdJjsdAlpha_d0525157bc3abb83,
-                mid_getdJjsdBeta_d0525157bc3abb83,
-                mid_getdJjsdh_d0525157bc3abb83,
-                mid_getdJjsdk_d0525157bc3abb83,
+                mid_init$_56d3d4aaadd7d7a1,
+                mid_getGjs_f548ed78c2486137,
+                mid_getHjs_f548ed78c2486137,
+                mid_getIjs_f548ed78c2486137,
+                mid_getJjs_f548ed78c2486137,
+                mid_getdGjsdAlpha_f548ed78c2486137,
+                mid_getdGjsdBeta_f548ed78c2486137,
+                mid_getdGjsdh_f548ed78c2486137,
+                mid_getdGjsdk_f548ed78c2486137,
+                mid_getdHjsdAlpha_f548ed78c2486137,
+                mid_getdHjsdBeta_f548ed78c2486137,
+                mid_getdHjsdh_f548ed78c2486137,
+                mid_getdHjsdk_f548ed78c2486137,
+                mid_getdIjsdAlpha_f548ed78c2486137,
+                mid_getdIjsdBeta_f548ed78c2486137,
+                mid_getdIjsdh_f548ed78c2486137,
+                mid_getdIjsdk_f548ed78c2486137,
+                mid_getdJjsdAlpha_f548ed78c2486137,
+                mid_getdJjsdBeta_f548ed78c2486137,
+                mid_getdJjsdh_f548ed78c2486137,
+                mid_getdJjsdk_f548ed78c2486137,
                 max_mid
               };
 

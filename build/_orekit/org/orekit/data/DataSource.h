@@ -3,6 +3,15 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace data {
+      class DataSource$StreamOpener;
+      class DataSource$ReaderOpener;
+      class DataSource$Opener;
+    }
+  }
+}
 namespace java {
   namespace io {
     class File;
@@ -10,15 +19,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace data {
-      class DataSource$Opener;
-      class DataSource$StreamOpener;
-      class DataSource$ReaderOpener;
-    }
   }
 }
 template<class T> class JArray;
@@ -30,12 +30,12 @@ namespace org {
       class DataSource : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0613af62f2ba5dba,
-          mid_init$_d0bc48d5b00dc40c,
-          mid_init$_cb4fb21723b801f8,
-          mid_init$_b8b39c0870e0929a,
-          mid_getName_11b109bd155ca898,
-          mid_getOpener_0bfb0ac7f0358ce6,
+          mid_init$_5d6bcca91ae998ee,
+          mid_init$_f5ffdf29129ef90a,
+          mid_init$_d78fe12c98ba1e42,
+          mid_init$_e3be660e5a2ef485,
+          mid_getName_3cffd47377eca18a,
+          mid_getOpener_4793c6fb0a9a9512,
           max_mid
         };
 

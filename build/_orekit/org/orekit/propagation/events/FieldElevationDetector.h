@@ -4,26 +4,26 @@
 #include "org/orekit/propagation/events/FieldAbstractDetector.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-    class Field;
-  }
   namespace orekit {
-    namespace frames {
-      class TopocentricFrame;
-    }
     namespace propagation {
+      class FieldSpacecraftState;
       namespace events {
         class FieldElevationDetector;
       }
-      class FieldSpacecraftState;
-    }
-    namespace models {
-      class AtmosphericRefractionModel;
     }
     namespace utils {
       class ElevationMask;
     }
+    namespace frames {
+      class TopocentricFrame;
+    }
+    namespace models {
+      class AtmosphericRefractionModel;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
+    class Field;
   }
 }
 namespace java {
@@ -41,17 +41,17 @@ namespace org {
         class FieldElevationDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_3d7271a8ea288af2,
-            mid_init$_28fe72372b8ccb78,
-            mid_g_41a008afe53da855,
-            mid_getElevationMask_a2b53d9e5ddb8a2d,
-            mid_getMinElevation_dff5885c2c873297,
-            mid_getRefractionModel_d9410499a2583f14,
-            mid_getTopocentricFrame_e17d4157ae504252,
-            mid_withConstantElevation_d52caa8299348415,
-            mid_withElevationMask_3cb4267e55a79185,
-            mid_withRefraction_81ee95c06209bf51,
-            mid_create_3709f95b71d31737,
+            mid_init$_5ad0e9bb8a1deb62,
+            mid_init$_d8af0e993415b2eb,
+            mid_g_de1c2d709eb2829c,
+            mid_getElevationMask_d8e21ec66d7f6ed7,
+            mid_getMinElevation_557b8123390d8d0c,
+            mid_getRefractionModel_9124ab694682a769,
+            mid_getTopocentricFrame_2bb3e750d93d59cc,
+            mid_withConstantElevation_b9a578648b0acaab,
+            mid_withElevationMask_7455425acfa093e7,
+            mid_withRefraction_8bb5322c8d1891db,
+            mid_create_27ce6ca4fbdc0588,
             max_mid
           };
 

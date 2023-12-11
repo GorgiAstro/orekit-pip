@@ -8,11 +8,11 @@ namespace org {
     namespace util {
       class BigReal;
     }
+    class FieldElement;
+    class Field;
     namespace exception {
       class MathRuntimeException;
     }
-    class Field;
-    class FieldElement;
   }
 }
 namespace java {
@@ -34,27 +34,27 @@ namespace org {
       class BigReal : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_3534e8e092c162a5,
-          mid_init$_d0bc48d5b00dc40c,
-          mid_init$_17db3a65980d3441,
-          mid_init$_99803b0791f320ff,
-          mid_init$_3a8e7649f31fdb20,
-          mid_init$_44aecef33af91018,
-          mid_add_2d1826a69b67e3b0,
-          mid_compareTo_1ce8cbfef64aaf0d,
-          mid_divide_2d1826a69b67e3b0,
-          mid_doubleValue_dff5885c2c873297,
-          mid_equals_65c7d273e80d497a,
-          mid_getField_5b28be2d3632a5dc,
-          mid_getReal_dff5885c2c873297,
-          mid_getScale_570ce0828f81a2c1,
-          mid_hashCode_570ce0828f81a2c1,
-          mid_multiply_2d1826a69b67e3b0,
-          mid_multiply_cd8e4f68673673f2,
-          mid_negate_fd9d6080c6f729de,
-          mid_reciprocal_fd9d6080c6f729de,
-          mid_setScale_99803b0791f320ff,
-          mid_subtract_2d1826a69b67e3b0,
+          mid_init$_916bf6d42d285c69,
+          mid_init$_f5ffdf29129ef90a,
+          mid_init$_10f281d777284cea,
+          mid_init$_a3da1a935cb37f7b,
+          mid_init$_3cd6a6b354c6aa22,
+          mid_init$_5421d1c1f03cf945,
+          mid_add_754ca702113ce3a8,
+          mid_compareTo_886ba1973cae04cd,
+          mid_divide_754ca702113ce3a8,
+          mid_doubleValue_557b8123390d8d0c,
+          mid_equals_221e8e85cb385209,
+          mid_getField_20f98801541dcec1,
+          mid_getReal_557b8123390d8d0c,
+          mid_getScale_412668abc8d889e9,
+          mid_hashCode_412668abc8d889e9,
+          mid_multiply_754ca702113ce3a8,
+          mid_multiply_9627ebcb527ee60f,
+          mid_negate_2073e31f7b6bcf19,
+          mid_reciprocal_2073e31f7b6bcf19,
+          mid_setScale_a3da1a935cb37f7b,
+          mid_subtract_754ca702113ce3a8,
           max_mid
         };
 

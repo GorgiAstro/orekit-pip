@@ -5,6 +5,12 @@
 
 namespace org {
   namespace orekit {
+    namespace frames {
+      class Frame;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
+    }
     namespace propagation {
       namespace analytical {
         namespace gnss {
@@ -18,12 +24,6 @@ namespace org {
     }
     namespace data {
       class DataContext;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
     }
   }
 }
@@ -43,14 +43,14 @@ namespace org {
           class GLONASSAnalyticalPropagatorBuilder : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_b15ec496e48d0936,
-              mid_init$_5f7a1029b2026edb,
-              mid_attitudeProvider_5161c4867b6c9b7a,
-              mid_build_169032d2e880ec70,
-              mid_dataContext_719680c7bc93c412,
-              mid_ecef_1923bef8f3c0f59d,
-              mid_eci_1923bef8f3c0f59d,
-              mid_mass_72536a18f7ecd06d,
+              mid_init$_288e58e8962e6403,
+              mid_init$_4f0bf06544a648db,
+              mid_attitudeProvider_f2b07e16ed5ef284,
+              mid_build_2bdec6e86d80c4e6,
+              mid_dataContext_7e49273d33bbb3c6,
+              mid_ecef_c84e8cca474e689b,
+              mid_eci_c84e8cca474e689b,
+              mid_mass_422d3e2b895a53cd,
               max_mid
             };
 

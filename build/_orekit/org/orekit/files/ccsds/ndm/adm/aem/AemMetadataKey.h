@@ -16,8 +16,8 @@ namespace org {
         namespace ndm {
           namespace adm {
             namespace aem {
-              class AemMetadata;
               class AemMetadataKey;
+              class AemMetadata;
             }
           }
         }
@@ -44,9 +44,9 @@ namespace org {
               class AemMetadataKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_698c108dd4fcb3ea,
-                  mid_valueOf_d4ad7f0ee397ded2,
-                  mid_values_dccf89c010ac59ee,
+                  mid_process_c24b714f1d96ba52,
+                  mid_valueOf_45a83ef9b477ab70,
+                  mid_values_17bde26411cb27e9,
                   max_mid
                 };
 

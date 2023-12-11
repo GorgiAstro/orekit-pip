@@ -29,7 +29,7 @@ namespace org {
           class RuleFactory : public ::java::lang::Object {
            public:
             enum {
-              mid_getRule_e670405dd33862ee,
+              mid_getRule_9a5adfb225849173,
               max_mid
             };
 

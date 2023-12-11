@@ -3,31 +3,31 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class GroundStation;
-      }
-    }
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
+    namespace estimation {
+      namespace measurements {
+        class GroundStation;
+      }
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -41,10 +41,10 @@ namespace org {
           class BaseRangeTroposphericDelayModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_rangeErrorTroposphericModel_08d2a35aee39232b,
-              mid_rangeErrorTroposphericModel_03cd5a2e88a0f0f6,
-              mid_getTropoModel_4b77a751a52d683d,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_rangeErrorTroposphericModel_17bae2e3aa9bc870,
+              mid_rangeErrorTroposphericModel_81f653af97ea34a8,
+              mid_getTropoModel_f33f77393a996753,
               max_mid
             };
 

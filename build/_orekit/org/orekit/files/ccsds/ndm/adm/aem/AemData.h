@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
+    namespace utils {
+      class TimeStampedAngularCoordinates;
+    }
     namespace files {
       namespace ccsds {
         namespace section {
           class Data;
         }
       }
-    }
-    namespace utils {
-      class TimeStampedAngularCoordinates;
     }
   }
 }
@@ -38,9 +38,9 @@ namespace org {
               class AemData : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_0fa09c18fee449d5,
-                  mid_addData_ef2cb1a12b4a8a0d,
-                  mid_getAngularCoordinates_2afa36052df4765d,
+                  mid_init$_0640e6acf969ed28,
+                  mid_addData_1adeff44d5ae21ba,
+                  mid_getAngularCoordinates_0d9551367f7ecdef,
                   max_mid
                 };
 

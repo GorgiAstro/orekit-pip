@@ -33,9 +33,9 @@ namespace org {
       class InertiaAxis : public ::java::lang::Object {
        public:
         enum {
-          mid_getA_d52645e0d4c07563,
-          mid_getI_dff5885c2c873297,
-          mid_negate_88f98d66bcc1d5e4,
+          mid_getA_f88961cca75a2c0a,
+          mid_getI_557b8123390d8d0c,
+          mid_negate_b822d9cbafca1aaf,
           max_mid
         };
 

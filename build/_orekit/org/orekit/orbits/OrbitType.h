@@ -4,16 +4,11 @@
 #include "java/lang/Enum.h"
 
 namespace org {
+  namespace hipparchus {
+    class Field;
+    class CalculusFieldElement;
+  }
   namespace orekit {
-    namespace orbits {
-      class PositionAngleType;
-      class Orbit;
-      class FieldOrbit;
-      class OrbitType;
-    }
-    namespace frames {
-      class Frame;
-    }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
@@ -21,10 +16,15 @@ namespace org {
     namespace utils {
       class ParameterDriversList;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
-    class Field;
+    namespace orbits {
+      class PositionAngleType;
+      class OrbitType;
+      class Orbit;
+      class FieldOrbit;
+    }
+    namespace frames {
+      class Frame;
+    }
   }
 }
 namespace java {
@@ -42,20 +42,20 @@ namespace org {
       class OrbitType : public ::java::lang::Enum {
        public:
         enum {
-          mid_convertToFieldOrbit_864f8e04b56fc910,
-          mid_convertType_4af4c6daa80bd4b5,
-          mid_convertType_58efaeb159657907,
-          mid_getDrivers_42a44f5869ea00ce,
-          mid_isPositionAngleBased_b108b35ef48e27bd,
-          mid_mapArrayToOrbit_224b9961b25c8b67,
-          mid_mapArrayToOrbit_d64c9807d7fa0073,
-          mid_mapOrbitToArray_000eb2abc9546b49,
-          mid_mapOrbitToArray_57f5a1d6e45b457f,
-          mid_normalize_e005a63f56a3e571,
-          mid_normalize_0bafaa780f7922ce,
-          mid_valueOf_a59515854432acbe,
-          mid_values_d1659fce81d7c2f6,
-          mid_scale_12ab47efff96b2ed,
+          mid_convertToFieldOrbit_e9be6c9886c2ede1,
+          mid_convertType_8e5d41efd1316adf,
+          mid_convertType_f66341a46b0a495a,
+          mid_getDrivers_2dc678382be03f90,
+          mid_isPositionAngleBased_89b302893bdbe1f1,
+          mid_mapArrayToOrbit_ac083376e9e49863,
+          mid_mapArrayToOrbit_b8f94d8b89c37228,
+          mid_mapOrbitToArray_9d78f2b469e9d210,
+          mid_mapOrbitToArray_eae83fc342f0eb92,
+          mid_normalize_9a9f168ee5c82859,
+          mid_normalize_b2a35539461bc5cf,
+          mid_valueOf_1887b258ce5f94b2,
+          mid_values_fc02321a93006dba,
+          mid_scale_447de1222ff10980,
           max_mid
         };
 

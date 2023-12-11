@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace optim {
       class OptimizationData;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,8 +25,8 @@ namespace org {
         class NonNegativeConstraint : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_bd04c9335fb9e4cf,
-            mid_isRestrictedToNonNegative_b108b35ef48e27bd,
+            mid_init$_ed2afdb8506b9742,
+            mid_isRestrictedToNonNegative_89b302893bdbe1f1,
             max_mid
           };
 

@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -14,11 +13,12 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
   namespace orekit {
     namespace time {
-      class AbsoluteDate;
       class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
   }
 }
@@ -36,12 +36,12 @@ namespace org {
       class IAUPole : public ::java::io::Serializable {
        public:
         enum {
-          mid_getNode_24461752d0eea1e3,
-          mid_getNode_e81fa067750860a1,
-          mid_getPole_24461752d0eea1e3,
-          mid_getPole_e81fa067750860a1,
-          mid_getPrimeMeridianAngle_bf1d7732f1acb697,
-          mid_getPrimeMeridianAngle_2a5f05be83ff251d,
+          mid_getNode_3df461fe15362b2b,
+          mid_getNode_3343973a86caeaa4,
+          mid_getPole_3df461fe15362b2b,
+          mid_getPole_3343973a86caeaa4,
+          mid_getPrimeMeridianAngle_b0b988f941da47d8,
+          mid_getPrimeMeridianAngle_b884068a2c99f6ca,
           max_mid
         };
 

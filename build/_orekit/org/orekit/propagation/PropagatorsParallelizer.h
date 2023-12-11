@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -26,6 +18,14 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -35,10 +35,10 @@ namespace org {
       class PropagatorsParallelizer : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_151c087c1a7e09cf,
-          mid_init$_d0d4103d5687bd9d,
-          mid_getPropagators_2afa36052df4765d,
-          mid_propagate_8060cef9318d72e3,
+          mid_init$_9720e6d1873130df,
+          mid_init$_43832b78aa0998e4,
+          mid_getPropagators_0d9551367f7ecdef,
+          mid_propagate_c5683b8e06424542,
           max_mid
         };
 

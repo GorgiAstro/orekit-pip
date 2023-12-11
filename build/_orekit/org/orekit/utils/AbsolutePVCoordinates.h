@@ -15,13 +15,13 @@ namespace org {
     }
   }
   namespace orekit {
+    namespace utils {
+      class PVCoordinates;
+      class PVCoordinatesProvider;
+      class AbsolutePVCoordinates;
+    }
     namespace frames {
       class Frame;
-    }
-    namespace utils {
-      class AbsolutePVCoordinates;
-      class PVCoordinatesProvider;
-      class PVCoordinates;
     }
     namespace time {
       class AbsoluteDate;
@@ -42,23 +42,23 @@ namespace org {
       class AbsolutePVCoordinates : public ::org::orekit::utils::TimeStampedPVCoordinates {
        public:
         enum {
-          mid_init$_0daa668827680b8e,
-          mid_init$_5149c5d601d1b99c,
-          mid_init$_9204b33858544bf0,
-          mid_init$_a91babafba973925,
-          mid_init$_fa9ab2460e66166d,
-          mid_init$_292536b29942aed7,
-          mid_init$_cc3081536a71c211,
-          mid_init$_f2a1bf0b29b61ed3,
-          mid_init$_4e298926d9652ffd,
-          mid_init$_355d9810ccc5dfdd,
-          mid_getFrame_b86f9f61d97a7244,
-          mid_getPVCoordinates_c204436deca11d94,
-          mid_getPVCoordinates_d9ebf50b8aebcbf9,
-          mid_getPVCoordinates_cfeec55f7c63ec64,
-          mid_getPosition_e91e859b879f3586,
-          mid_shiftedBy_62e71a9085e39e01,
-          mid_toTaylorProvider_903aca6bb4523e29,
+          mid_init$_a1fd02f06b657f28,
+          mid_init$_76db051720408dec,
+          mid_init$_9843b99b5e658838,
+          mid_init$_243f7b18c367ef6e,
+          mid_init$_745e3e9bf9e580ce,
+          mid_init$_a40d3c1c906792a4,
+          mid_init$_0f6c145f52314e2c,
+          mid_init$_e35ea6ed1126bff5,
+          mid_init$_7e1773b50a3ff7d2,
+          mid_init$_f7f3bf23e900bdc6,
+          mid_getFrame_6c9bc0a928c56d4e,
+          mid_getPVCoordinates_daf15abc21907508,
+          mid_getPVCoordinates_8cf7b972bef1e4d8,
+          mid_getPVCoordinates_17742a9a6655bdb1,
+          mid_getPosition_8386213426308de8,
+          mid_shiftedBy_1e0bd76edd81d64f,
+          mid_toTaylorProvider_dec199e86bf037eb,
           max_mid
         };
 

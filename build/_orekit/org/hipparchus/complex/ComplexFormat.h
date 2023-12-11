@@ -4,27 +4,27 @@
 #include "java/lang/Object.h"
 
 namespace java {
+  namespace text {
+    class ParsePosition;
+    class NumberFormat;
+    class FieldPosition;
+  }
   namespace util {
     class Locale;
   }
-  namespace text {
-    class NumberFormat;
-    class ParsePosition;
-    class FieldPosition;
-  }
   namespace lang {
-    class StringBuffer;
     class Double;
     class Class;
+    class StringBuffer;
     class String;
   }
 }
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathIllegalStateException;
-      class NullArgumentException;
       class MathIllegalArgumentException;
+      class NullArgumentException;
+      class MathIllegalStateException;
     }
     namespace complex {
       class Complex;
@@ -41,25 +41,25 @@ namespace org {
       class ComplexFormat : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_init$_256f36a22c0d0f55,
-          mid_init$_d0bc48d5b00dc40c,
-          mid_init$_e2028a486c5b97a5,
-          mid_init$_4f25566dcb220520,
-          mid_init$_8db4b6f129d3dd87,
-          mid_format_29f1b93744775b94,
-          mid_format_25cc0288c0c0b8ed,
-          mid_format_ffd5cf5906ec2ab3,
-          mid_format_f5c3717ad7292c63,
-          mid_getAvailableLocales_c5ed07ebd55821bb,
-          mid_getComplexFormat_0b252931508f6d4e,
-          mid_getComplexFormat_1e232ce2e7570743,
-          mid_getComplexFormat_37105b18a0225257,
-          mid_getImaginaryCharacter_11b109bd155ca898,
-          mid_getImaginaryFormat_24f83dea4a8657b1,
-          mid_getRealFormat_24f83dea4a8657b1,
-          mid_parse_32a35bb7fb909be7,
-          mid_parse_dc6a5fb6090ca71d,
+          mid_init$_0640e6acf969ed28,
+          mid_init$_d53859bd7ba1b247,
+          mid_init$_f5ffdf29129ef90a,
+          mid_init$_3190c52142e043eb,
+          mid_init$_f8346b669961714d,
+          mid_init$_11201179d5af1746,
+          mid_format_ca2cdf8fc9022e15,
+          mid_format_5d64c3cb4ee44c91,
+          mid_format_3891bf712b0a97e9,
+          mid_format_60ec49fc2ad8aa0e,
+          mid_getAvailableLocales_85ff0d07ca843902,
+          mid_getComplexFormat_dd63ef9c6b55c846,
+          mid_getComplexFormat_88ba113ef3e3cc4d,
+          mid_getComplexFormat_451577ae69011247,
+          mid_getImaginaryCharacter_3cffd47377eca18a,
+          mid_getImaginaryFormat_001645e916bd626d,
+          mid_getRealFormat_001645e916bd626d,
+          mid_parse_086aa5c20f9f9f57,
+          mid_parse_7b7750207000a556,
           max_mid
         };
 

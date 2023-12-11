@@ -30,9 +30,9 @@ namespace org {
         class ConstantProcessNoise : public ::org::orekit::estimation::sequential::AbstractCovarianceMatrixProvider {
          public:
           enum {
-            mid_init$_c67473bd6cfaa69b,
-            mid_init$_f09dcac15bdcc9db,
-            mid_getProcessNoiseMatrix_26148f4ae87f73a3,
+            mid_init$_f3731847577f13e6,
+            mid_init$_14ed96341358adcb,
+            mid_getProcessNoiseMatrix_158686209bf6089c,
             max_mid
           };
 

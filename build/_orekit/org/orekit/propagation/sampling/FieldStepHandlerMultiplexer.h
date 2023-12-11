@@ -4,14 +4,11 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
       namespace sampling {
-        class FieldOrekitStepInterpolator;
         class FieldOrekitFixedStepHandler;
+        class FieldOrekitStepInterpolator;
         class FieldOrekitStepHandler;
       }
       class FieldSpacecraftState;
@@ -19,6 +16,9 @@ namespace org {
     namespace time {
       class FieldAbsoluteDate;
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -39,16 +39,16 @@ namespace org {
         class FieldStepHandlerMultiplexer : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_add_16d47a327666f5ff,
-            mid_add_465bcdb67e0beb29,
-            mid_clear_0fa09c18fee449d5,
-            mid_finish_1463d3d0d52f94dd,
-            mid_getHandlers_2afa36052df4765d,
-            mid_handleStep_edb529c141e8d4a9,
-            mid_init_8e8de2be1664674a,
-            mid_remove_5516e9ecb647e12b,
-            mid_remove_16d47a327666f5ff,
+            mid_init$_0640e6acf969ed28,
+            mid_add_69a7e501f9a938a3,
+            mid_add_c9f4018f814d2514,
+            mid_clear_0640e6acf969ed28,
+            mid_finish_b66c84a5711243d5,
+            mid_getHandlers_0d9551367f7ecdef,
+            mid_handleStep_c006764357a9d9b2,
+            mid_init_811e49dad2467b67,
+            mid_remove_a1360aa6c3a89612,
+            mid_remove_69a7e501f9a938a3,
             max_mid
           };
 

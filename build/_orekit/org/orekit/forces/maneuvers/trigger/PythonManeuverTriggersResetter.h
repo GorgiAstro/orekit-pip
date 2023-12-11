@@ -19,8 +19,8 @@ namespace org {
 }
 namespace java {
   namespace lang {
-    class Throwable;
     class Class;
+    class Throwable;
   }
 }
 template<class T> class JArray;
@@ -34,13 +34,13 @@ namespace org {
           class PythonManeuverTriggersResetter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_finalize_0fa09c18fee449d5,
-              mid_maneuverTriggered_33f4696e4edaa03c,
-              mid_pythonDecRef_0fa09c18fee449d5,
-              mid_pythonExtension_492808a339bfa35f,
-              mid_pythonExtension_3a8e7649f31fdb20,
-              mid_resetState_f43130c50e9fafeb,
+              mid_init$_0640e6acf969ed28,
+              mid_finalize_0640e6acf969ed28,
+              mid_maneuverTriggered_45bf76e836befe86,
+              mid_pythonDecRef_0640e6acf969ed28,
+              mid_pythonExtension_9e26256fb0d384a2,
+              mid_pythonExtension_3cd6a6b354c6aa22,
+              mid_resetState_2c4cc16b11f79a6c,
               max_mid
             };
 

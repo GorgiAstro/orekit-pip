@@ -31,7 +31,7 @@ namespace org {
           class DSSTStateTransitionMatrixGenerator$DSSTPartialsObserver : public ::java::lang::Object {
            public:
             enum {
-              mid_partialsComputed_5c23c9e194727670,
+              mid_partialsComputed_deea883a52231bef,
               max_mid
             };
 

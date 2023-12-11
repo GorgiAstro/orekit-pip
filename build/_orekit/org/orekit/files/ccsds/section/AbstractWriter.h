@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -24,6 +16,14 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace io {
+    class IOException;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -35,11 +35,11 @@ namespace org {
           class AbstractWriter : public ::java::lang::Object {
            public:
             enum {
-              mid_enterSection_6d745cf7b26e9f5d,
-              mid_exitSection_6d745cf7b26e9f5d,
-              mid_write_6d745cf7b26e9f5d,
-              mid_writeContent_6d745cf7b26e9f5d,
-              mid_intArrayToString_73683ad393ccda19,
+              mid_enterSection_0503da09b1f1eb3c,
+              mid_exitSection_0503da09b1f1eb3c,
+              mid_write_0503da09b1f1eb3c,
+              mid_writeContent_0503da09b1f1eb3c,
+              mid_intArrayToString_ae74174caf679503,
               max_mid
             };
 

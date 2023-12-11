@@ -28,10 +28,10 @@ namespace org {
         class PolygonalFieldOfView$DefiningConeType : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_a4000e9917488440,
-            mid_values_a3253f5ff3568304,
-            mid_verticesRadius_948617e69b66e15d,
-            mid_createVertex_5c226f3c91080757,
+            mid_valueOf_8a790818bb8fee21,
+            mid_values_34294ba1c4846ba2,
+            mid_verticesRadius_156ae9d72f1c8533,
+            mid_createVertex_198b54b5df3ab767,
             max_mid
           };
 

@@ -5,9 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeScales;
-    }
     namespace propagation {
       namespace analytical {
         namespace gnss {
@@ -16,6 +13,9 @@ namespace org {
           }
         }
       }
+    }
+    namespace time {
+      class TimeScales;
     }
   }
 }
@@ -37,18 +37,18 @@ namespace org {
               class Rtcm1019Data : public ::org::orekit::gnss::metric::messages::rtcm::ephemeris::RtcmEphemerisData {
                public:
                 enum {
-                  mid_init$_0fa09c18fee449d5,
-                  mid_getGpsCodeOnL2_570ce0828f81a2c1,
-                  mid_getGpsFitInterval_570ce0828f81a2c1,
-                  mid_getGpsL2PDataFlag_b108b35ef48e27bd,
-                  mid_getGpsNavigationMessage_1dc0f2491ce745f8,
-                  mid_getGpsNavigationMessage_4910099d75fee3ff,
-                  mid_getGpsToc_dff5885c2c873297,
-                  mid_setGpsCodeOnL2_99803b0791f320ff,
-                  mid_setGpsFitInterval_99803b0791f320ff,
-                  mid_setGpsL2PDataFlag_bd04c9335fb9e4cf,
-                  mid_setGpsNavigationMessage_16aa3ee67a4aead2,
-                  mid_setGpsToc_17db3a65980d3441,
+                  mid_init$_0640e6acf969ed28,
+                  mid_getGpsCodeOnL2_412668abc8d889e9,
+                  mid_getGpsFitInterval_412668abc8d889e9,
+                  mid_getGpsL2PDataFlag_89b302893bdbe1f1,
+                  mid_getGpsNavigationMessage_e97c0a268023bf7a,
+                  mid_getGpsNavigationMessage_5a132e5828edd449,
+                  mid_getGpsToc_557b8123390d8d0c,
+                  mid_setGpsCodeOnL2_a3da1a935cb37f7b,
+                  mid_setGpsFitInterval_a3da1a935cb37f7b,
+                  mid_setGpsL2PDataFlag_ed2afdb8506b9742,
+                  mid_setGpsNavigationMessage_32ebc1a815392aa5,
+                  mid_setGpsToc_10f281d777284cea,
                   max_mid
                 };
 

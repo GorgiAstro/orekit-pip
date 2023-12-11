@@ -17,7 +17,7 @@ namespace java {
       class Supplier : public ::java::lang::Object {
        public:
         enum {
-          mid_get_4d26fd885228c716,
+          mid_get_e661fe3ba2fafb22,
           max_mid
         };
 

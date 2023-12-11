@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -14,6 +13,7 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
   namespace orekit {
     namespace forces {
@@ -39,10 +39,10 @@ namespace org {
         class Control3DVectorCostType : public ::java::lang::Enum {
          public:
           enum {
-            mid_evaluate_11b158fbf85bdc54,
-            mid_evaluate_bf473e7c74e5ce2b,
-            mid_valueOf_e4813c5809923fe4,
-            mid_values_8a829e96a9a95262,
+            mid_evaluate_b2798c156647508e,
+            mid_evaluate_8ddca7bd73e586da,
+            mid_valueOf_416610b402bb077c,
+            mid_values_c44b5897b1d29c77,
             max_mid
           };
 

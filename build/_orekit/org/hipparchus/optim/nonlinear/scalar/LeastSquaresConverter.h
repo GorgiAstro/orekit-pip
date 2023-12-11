@@ -30,10 +30,10 @@ namespace org {
           class LeastSquaresConverter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_39d2406262aa1a74,
-              mid_init$_b3c40b66fb017889,
-              mid_init$_5426cbd7f34887d0,
-              mid_value_9dc1ec0bcc0a9a29,
+              mid_init$_9cb9668045142b5a,
+              mid_init$_4bc5aeb9e9e93295,
+              mid_init$_39c91493eebe07c4,
+              mid_value_86c4a0582e0747ce,
               max_mid
             };
 

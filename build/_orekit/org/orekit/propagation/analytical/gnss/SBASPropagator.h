@@ -5,6 +5,15 @@
 
 namespace org {
   namespace orekit {
+    namespace utils {
+      class PVCoordinates;
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace propagation {
       namespace analytical {
         namespace gnss {
@@ -14,15 +23,6 @@ namespace org {
         }
       }
       class SpacecraftState;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class PVCoordinates;
     }
   }
 }
@@ -42,16 +42,16 @@ namespace org {
           class SBASPropagator : public ::org::orekit::propagation::analytical::AbstractAnalyticalPropagator {
            public:
             enum {
-              mid_getECEF_b86f9f61d97a7244,
-              mid_getECI_b86f9f61d97a7244,
-              mid_getFrame_b86f9f61d97a7244,
-              mid_getMU_dff5885c2c873297,
-              mid_getSBASOrbitalElements_155020a76818292b,
-              mid_propagateInEcef_38efe74c9e3a1286,
-              mid_resetInitialState_0ee5c56004643a2e,
-              mid_propagateOrbit_7a8f4c854607bed6,
-              mid_getMass_bf1d7732f1acb697,
-              mid_resetIntermediateState_33f4696e4edaa03c,
+              mid_getECEF_6c9bc0a928c56d4e,
+              mid_getECI_6c9bc0a928c56d4e,
+              mid_getFrame_6c9bc0a928c56d4e,
+              mid_getMU_557b8123390d8d0c,
+              mid_getSBASOrbitalElements_62933eb69192060d,
+              mid_propagateInEcef_f00f0e7ea285c370,
+              mid_resetInitialState_8655761ebf04b503,
+              mid_propagateOrbit_9e937c0ae63d8022,
+              mid_resetIntermediateState_45bf76e836befe86,
+              mid_getMass_b0b988f941da47d8,
               max_mid
             };
 

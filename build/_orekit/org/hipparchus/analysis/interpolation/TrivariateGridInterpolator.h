@@ -28,7 +28,7 @@ namespace org {
         class TrivariateGridInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_interpolate_b8e01c2cd251591c,
+            mid_interpolate_7d6b4f8b98e7e8f3,
             max_mid
           };
 

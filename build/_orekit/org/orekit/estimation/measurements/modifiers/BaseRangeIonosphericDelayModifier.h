@@ -3,19 +3,19 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace utils {
-      class ParameterDriver;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace utils {
+      class ParameterDriver;
+    }
   }
 }
 template<class T> class JArray;
@@ -29,10 +29,10 @@ namespace org {
           class BaseRangeIonosphericDelayModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_rangeErrorIonosphericModel_03cd5a2e88a0f0f6,
-              mid_rangeErrorIonosphericModel_08d2a35aee39232b,
-              mid_getIonoModel_f6314816f66aaed0,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_getIonoModel_d442018e79d7cb97,
+              mid_rangeErrorIonosphericModel_81f653af97ea34a8,
+              mid_rangeErrorIonosphericModel_17bae2e3aa9bc870,
               max_mid
             };
 

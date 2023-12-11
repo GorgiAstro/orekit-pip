@@ -18,8 +18,8 @@ namespace org {
       class IterationEvent : public ::java::util::EventObject {
        public:
         enum {
-          mid_init$_4d88176e7ce939fe,
-          mid_getIterations_570ce0828f81a2c1,
+          mid_init$_3b6b1ab3a4013647,
+          mid_getIterations_412668abc8d889e9,
           max_mid
         };
 

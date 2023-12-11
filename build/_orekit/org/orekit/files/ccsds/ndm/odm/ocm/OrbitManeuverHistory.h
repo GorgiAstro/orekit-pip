@@ -40,9 +40,9 @@ namespace org {
               class OrbitManeuverHistory : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_37938e13c4b70b47,
-                  mid_getManeuvers_2afa36052df4765d,
-                  mid_getMetadata_80f8bc417c20f379,
+                  mid_init$_9b5d2eef65de2111,
+                  mid_getManeuvers_0d9551367f7ecdef,
+                  mid_getMetadata_3be9b3636297daeb,
                   max_mid
                 };
 

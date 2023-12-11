@@ -28,18 +28,18 @@ namespace org {
         class OLSMultipleLinearRegression : public ::org::hipparchus::stat::regression::AbstractMultipleLinearRegression {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_init$_17db3a65980d3441,
-            mid_calculateAdjustedRSquared_dff5885c2c873297,
-            mid_calculateHat_688b496048ff947b,
-            mid_calculateRSquared_dff5885c2c873297,
-            mid_calculateResidualSumOfSquares_dff5885c2c873297,
-            mid_calculateTotalSumOfSquares_dff5885c2c873297,
-            mid_newSampleData_0942607a80e88c17,
-            mid_newSampleData_12aca76acb10f1af,
-            mid_calculateBeta_aab4fbf77867daa8,
-            mid_calculateBetaVariance_688b496048ff947b,
-            mid_newXSampleData_a0befc7f3dc19e41,
+            mid_init$_0640e6acf969ed28,
+            mid_init$_10f281d777284cea,
+            mid_calculateAdjustedRSquared_557b8123390d8d0c,
+            mid_calculateHat_70a207fcbc031df2,
+            mid_calculateRSquared_557b8123390d8d0c,
+            mid_calculateResidualSumOfSquares_557b8123390d8d0c,
+            mid_calculateTotalSumOfSquares_557b8123390d8d0c,
+            mid_newSampleData_d28c10701e55f94c,
+            mid_newSampleData_91b51b3c05127ead,
+            mid_newXSampleData_edb361bfdd1ad9ae,
+            mid_calculateBeta_75d50d73180655b4,
+            mid_calculateBetaVariance_70a207fcbc031df2,
             max_mid
           };
 

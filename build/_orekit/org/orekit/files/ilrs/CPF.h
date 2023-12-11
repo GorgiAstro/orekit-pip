@@ -8,8 +8,8 @@ namespace org {
     namespace files {
       namespace ilrs {
         class CPF$CPFCoordinate;
-        class CPF$CPFEphemeris;
         class CPFHeader;
+        class CPF$CPFEphemeris;
       }
       namespace general {
         class EphemerisFile;
@@ -52,18 +52,18 @@ namespace org {
         class CPF : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_addSatelliteCoordinate_2121cf57a15dacdf,
-            mid_addSatelliteCoordinates_91fd4e71827f714e,
-            mid_addSatelliteVelocityToCPFCoordinate_898ecd5be95da09c,
-            mid_getComments_2afa36052df4765d,
-            mid_getHeader_2291408dbd033b0e,
-            mid_getSatellites_6f5a75ccd8c04465,
-            mid_getTimeScale_c39031284193adbe,
-            mid_setFilter_10d93bbae9f06624,
-            mid_setInterpolationSample_99803b0791f320ff,
-            mid_setMu_17db3a65980d3441,
-            mid_setTimeScale_e93d77ad761aa1f2,
+            mid_init$_0640e6acf969ed28,
+            mid_addSatelliteCoordinate_a156272b8409e571,
+            mid_addSatelliteCoordinates_013b264b441f07a2,
+            mid_addSatelliteVelocityToCPFCoordinate_e74a95e87acc49f8,
+            mid_getComments_0d9551367f7ecdef,
+            mid_getHeader_c18325609dc27f44,
+            mid_getSatellites_1e62c2f73fbdd1c4,
+            mid_getTimeScale_527ee9dde1a96470,
+            mid_setFilter_fd4d3944a3fb1083,
+            mid_setInterpolationSample_a3da1a935cb37f7b,
+            mid_setMu_10f281d777284cea,
+            mid_setTimeScale_3e3301925c0131d4,
             max_mid
           };
 

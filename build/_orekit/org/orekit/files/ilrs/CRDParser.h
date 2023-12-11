@@ -37,10 +37,10 @@ namespace org {
         class CRDParser : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_init$_e93d77ad761aa1f2,
-            mid_getTimeScale_c39031284193adbe,
-            mid_parse_7379f847dad0aeed,
+            mid_init$_0640e6acf969ed28,
+            mid_init$_3e3301925c0131d4,
+            mid_getTimeScale_527ee9dde1a96470,
+            mid_parse_55616e1bfd4b461a,
             max_mid
           };
 

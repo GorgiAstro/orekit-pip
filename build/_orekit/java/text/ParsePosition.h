@@ -17,14 +17,14 @@ namespace java {
     class ParsePosition : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_99803b0791f320ff,
-        mid_equals_65c7d273e80d497a,
-        mid_getErrorIndex_570ce0828f81a2c1,
-        mid_getIndex_570ce0828f81a2c1,
-        mid_hashCode_570ce0828f81a2c1,
-        mid_setErrorIndex_99803b0791f320ff,
-        mid_setIndex_99803b0791f320ff,
-        mid_toString_11b109bd155ca898,
+        mid_init$_a3da1a935cb37f7b,
+        mid_equals_221e8e85cb385209,
+        mid_getErrorIndex_412668abc8d889e9,
+        mid_getIndex_412668abc8d889e9,
+        mid_hashCode_412668abc8d889e9,
+        mid_setErrorIndex_a3da1a935cb37f7b,
+        mid_setIndex_a3da1a935cb37f7b,
+        mid_toString_3cffd47377eca18a,
         max_mid
       };
 

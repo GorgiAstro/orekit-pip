@@ -3,18 +3,20 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
-    namespace files {
-      namespace ccsds {
-        namespace ndm {
-          namespace odm {
-            namespace ocm {
-              class OrbitElementsType;
-            }
-          }
-        }
-      }
+    namespace time {
+      class AbsoluteDate;
+      class TimeStamped;
     }
     namespace utils {
       namespace units {
@@ -26,19 +28,17 @@ namespace org {
     namespace bodies {
       class OneAxisEllipsoid;
     }
-    namespace time {
-      class AbsoluteDate;
-      class TimeStamped;
+    namespace files {
+      namespace ccsds {
+        namespace ndm {
+          namespace odm {
+            namespace ocm {
+              class OrbitElementsType;
+            }
+          }
+        }
+      }
     }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -54,13 +54,13 @@ namespace org {
               class TrajectoryState : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_0d3cc9d72a4f2928,
-                  mid_init$_43d47814b78412bd,
-                  mid_getAvailableDerivatives_16e9a7b5414faf2d,
-                  mid_getDate_85703d13e302437e,
-                  mid_getElements_60c7040667a7dc5c,
-                  mid_getType_f6a584069fbe1b12,
-                  mid_toCartesian_e4aeebae5229dc38,
+                  mid_init$_26353228e626a9b0,
+                  mid_init$_0bcd8384b44d4acf,
+                  mid_getAvailableDerivatives_6c4898d6ec0c3837,
+                  mid_getDate_7a97f7e149e79afb,
+                  mid_getElements_a53a7513ecedada2,
+                  mid_getType_ada74ce902d29422,
+                  mid_toCartesian_2741d46a9a4d5b3e,
                   max_mid
                 };
 

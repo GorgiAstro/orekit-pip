@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace analysis {
       class FieldUnivariateFunction;
       namespace differentiation {
@@ -18,9 +17,10 @@ namespace org {
       }
     }
     namespace exception {
-      class NullArgumentException;
       class MathIllegalArgumentException;
+      class NullArgumentException;
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -38,15 +38,15 @@ namespace org {
         class PolynomialSplineFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_9018bf358367e5d6,
-            mid_getKnots_60c7040667a7dc5c,
-            mid_getN_570ce0828f81a2c1,
-            mid_getPolynomials_02eeb9e6c0dfd60f,
-            mid_isValidPoint_2e401133981893e4,
-            mid_polynomialSplineDerivative_0dc7302672c3994b,
-            mid_value_dcbc7ce2902fa136,
-            mid_value_a4b1871f4d29e58b,
-            mid_value_73d6acaa8ebd2b7d,
+            mid_init$_0bdb57b79cecc140,
+            mid_getKnots_a53a7513ecedada2,
+            mid_getN_412668abc8d889e9,
+            mid_getPolynomials_ab8ca1f1c6647c6c,
+            mid_isValidPoint_dd69c3ab2404bb71,
+            mid_polynomialSplineDerivative_0197192358cfcea9,
+            mid_value_7e960cd6eee376d8,
+            mid_value_6672ad854985cb64,
+            mid_value_3eb2b84dba0ab7d2,
             max_mid
           };
 

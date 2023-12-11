@@ -6,13 +6,13 @@
 namespace org {
   namespace hipparchus {
     namespace util {
-      class ResizableDoubleArray$ExpansionMode;
       class ResizableDoubleArray;
+      class ResizableDoubleArray$ExpansionMode;
       class MathArrays$Function;
     }
     namespace exception {
-      class MathIllegalStateException;
       class MathIllegalArgumentException;
+      class MathIllegalStateException;
     }
   }
 }
@@ -33,37 +33,37 @@ namespace org {
       class ResizableDoubleArray : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_init$_fa9d415d19f69361,
-          mid_init$_99803b0791f320ff,
-          mid_init$_bb79ca80d85d0a66,
-          mid_init$_07bf81310115068c,
-          mid_init$_bdfcc5b1188867de,
-          mid_addElement_17db3a65980d3441,
-          mid_addElementRolling_dcbc7ce2902fa136,
-          mid_addElements_fa9d415d19f69361,
-          mid_clear_0fa09c18fee449d5,
-          mid_compute_03e2c9f605520832,
-          mid_contract_0fa09c18fee449d5,
-          mid_copy_7dd44dd9c212bf1f,
-          mid_discardFrontElements_99803b0791f320ff,
-          mid_discardMostRecentElements_99803b0791f320ff,
-          mid_equals_65c7d273e80d497a,
-          mid_getCapacity_570ce0828f81a2c1,
-          mid_getContractionCriterion_dff5885c2c873297,
-          mid_getElement_46f85b53d9aedd96,
-          mid_getElements_60c7040667a7dc5c,
-          mid_getExpansionFactor_dff5885c2c873297,
-          mid_getExpansionMode_afafe47c1fd96b76,
-          mid_getNumElements_570ce0828f81a2c1,
-          mid_hashCode_570ce0828f81a2c1,
-          mid_setElement_bb79ca80d85d0a66,
-          mid_setNumElements_99803b0791f320ff,
-          mid_substituteMostRecentElement_dcbc7ce2902fa136,
-          mid_checkContractExpand_8f2e782d5278b131,
-          mid_getArrayRef_60c7040667a7dc5c,
-          mid_getStartIndex_570ce0828f81a2c1,
-          mid_expand_0fa09c18fee449d5,
+          mid_init$_0640e6acf969ed28,
+          mid_init$_cc18240f4a737f14,
+          mid_init$_a3da1a935cb37f7b,
+          mid_init$_89aad365fb0ed8da,
+          mid_init$_79cfe3f564275380,
+          mid_init$_15b0310ad3557c3c,
+          mid_addElement_10f281d777284cea,
+          mid_addElementRolling_7e960cd6eee376d8,
+          mid_addElements_cc18240f4a737f14,
+          mid_clear_0640e6acf969ed28,
+          mid_compute_23a245537fd5b882,
+          mid_contract_0640e6acf969ed28,
+          mid_copy_1ec432f6c6474a51,
+          mid_discardFrontElements_a3da1a935cb37f7b,
+          mid_discardMostRecentElements_a3da1a935cb37f7b,
+          mid_equals_221e8e85cb385209,
+          mid_getCapacity_412668abc8d889e9,
+          mid_getContractionCriterion_557b8123390d8d0c,
+          mid_getElement_69cfb132c661aca4,
+          mid_getElements_a53a7513ecedada2,
+          mid_getExpansionFactor_557b8123390d8d0c,
+          mid_getExpansionMode_c799c969d6a3c220,
+          mid_getNumElements_412668abc8d889e9,
+          mid_hashCode_412668abc8d889e9,
+          mid_setElement_89aad365fb0ed8da,
+          mid_setNumElements_a3da1a935cb37f7b,
+          mid_substituteMostRecentElement_7e960cd6eee376d8,
+          mid_checkContractExpand_ab23f4ae0fb33968,
+          mid_getArrayRef_a53a7513ecedada2,
+          mid_getStartIndex_412668abc8d889e9,
+          mid_expand_0640e6acf969ed28,
           max_mid
         };
 

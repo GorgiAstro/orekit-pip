@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -19,6 +14,11 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,21 +34,21 @@ namespace org {
               class RtcmCorrectionHeader : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_0fa09c18fee449d5,
-                  mid_getEpochTime1s_dff5885c2c873297,
-                  mid_getIodSsr_570ce0828f81a2c1,
-                  mid_getMultipleMessageIndicator_570ce0828f81a2c1,
-                  mid_getNumberOfSatellites_570ce0828f81a2c1,
-                  mid_getSsrProviderId_570ce0828f81a2c1,
-                  mid_getSsrSolutionId_570ce0828f81a2c1,
-                  mid_getSsrUpdateInterval_84f8aabc0e0f32e2,
-                  mid_setEpochTime1s_17db3a65980d3441,
-                  mid_setIodSsr_99803b0791f320ff,
-                  mid_setMultipleMessageIndicator_99803b0791f320ff,
-                  mid_setNumberOfSatellites_99803b0791f320ff,
-                  mid_setSsrProviderId_99803b0791f320ff,
-                  mid_setSsrSolutionId_99803b0791f320ff,
-                  mid_setSsrUpdateInterval_23b863f8ba362dbf,
+                  mid_init$_0640e6acf969ed28,
+                  mid_getEpochTime1s_557b8123390d8d0c,
+                  mid_getIodSsr_412668abc8d889e9,
+                  mid_getMultipleMessageIndicator_412668abc8d889e9,
+                  mid_getNumberOfSatellites_412668abc8d889e9,
+                  mid_getSsrProviderId_412668abc8d889e9,
+                  mid_getSsrSolutionId_412668abc8d889e9,
+                  mid_getSsrUpdateInterval_bdb56644ae226ace,
+                  mid_setEpochTime1s_10f281d777284cea,
+                  mid_setIodSsr_a3da1a935cb37f7b,
+                  mid_setMultipleMessageIndicator_a3da1a935cb37f7b,
+                  mid_setNumberOfSatellites_a3da1a935cb37f7b,
+                  mid_setSsrProviderId_a3da1a935cb37f7b,
+                  mid_setSsrSolutionId_a3da1a935cb37f7b,
+                  mid_setSsrUpdateInterval_ea1bc450da024121,
                   max_mid
                 };
 

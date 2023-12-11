@@ -6,7 +6,6 @@
 namespace org {
   namespace orekit {
     namespace gnss {
-      class SatelliteSystem;
       namespace metric {
         namespace messages {
           namespace ssr {
@@ -16,6 +15,7 @@ namespace org {
           }
         }
       }
+      class SatelliteSystem;
     }
   }
 }
@@ -40,8 +40,8 @@ namespace org {
               class SsrIgmMessage : public ::org::orekit::gnss::metric::messages::ssr::SsrMessage {
                public:
                 enum {
-                  mid_init$_f739b616ad00309d,
-                  mid_getSatelliteSystem_01acae5c1a253b8e,
+                  mid_init$_8f8b8c5c70a833b4,
+                  mid_getSatelliteSystem_8b86408cc2633961,
                   max_mid
                 };
 

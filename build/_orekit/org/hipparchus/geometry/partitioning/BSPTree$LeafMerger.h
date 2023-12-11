@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -15,6 +10,11 @@ namespace org {
         class BSPTree;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,7 +27,7 @@ namespace org {
         class BSPTree$LeafMerger : public ::java::lang::Object {
          public:
           enum {
-            mid_merge_a220d82b690dc3f1,
+            mid_merge_451709fdd8386167,
             max_mid
           };
 

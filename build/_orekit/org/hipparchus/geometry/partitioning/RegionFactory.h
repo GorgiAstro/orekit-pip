@@ -28,13 +28,13 @@ namespace org {
         class RegionFactory : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_buildConvex_b89c6c49bf0bd297,
-            mid_difference_db20e259eb103bfe,
-            mid_getComplement_90c3d7ed138008ce,
-            mid_intersection_db20e259eb103bfe,
-            mid_union_db20e259eb103bfe,
-            mid_xor_db20e259eb103bfe,
+            mid_init$_0640e6acf969ed28,
+            mid_buildConvex_a18d6b9ad6e66651,
+            mid_difference_9bbfbd7b8dace037,
+            mid_getComplement_91551c197f332306,
+            mid_intersection_9bbfbd7b8dace037,
+            mid_union_9bbfbd7b8dace037,
+            mid_xor_9bbfbd7b8dace037,
             max_mid
           };
 

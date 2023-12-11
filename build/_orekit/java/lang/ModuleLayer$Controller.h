@@ -20,10 +20,10 @@ namespace java {
     class ModuleLayer$Controller : public ::java::lang::Object {
      public:
       enum {
-        mid_addExports_52a8fd996fa69f25,
-        mid_addOpens_52a8fd996fa69f25,
-        mid_addReads_6fcb9d780be10f52,
-        mid_layer_1488df134b0cb760,
+        mid_addExports_d8130dcb512da5ee,
+        mid_addOpens_d8130dcb512da5ee,
+        mid_addReads_3fb90a8c9cf73541,
+        mid_layer_a9837dd004e81a19,
         max_mid
       };
 

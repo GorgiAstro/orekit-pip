@@ -5,19 +5,19 @@
 
 namespace org {
   namespace orekit {
+    namespace data {
+      class BodiesElements;
+    }
     namespace models {
       namespace earth {
         namespace displacement {
-          class StationDisplacement;
           class OceanLoadingCoefficients;
+          class StationDisplacement;
         }
       }
     }
     namespace frames {
       class Frame;
-    }
-    namespace data {
-      class BodiesElements;
     }
     namespace bodies {
       class OneAxisEllipsoid;
@@ -49,8 +49,8 @@ namespace org {
           class OceanLoading : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_b655637bfd999b6f,
-              mid_displacement_dc5338a5a1255d1d,
+              mid_init$_8d9958c18bab9055,
+              mid_displacement_2092c3958d15642d,
               max_mid
             };
 

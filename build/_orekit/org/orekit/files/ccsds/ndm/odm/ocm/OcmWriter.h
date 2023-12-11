@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataContext;
-    }
     namespace utils {
       class IERSConventions;
+    }
+    namespace data {
+      class DataContext;
     }
     namespace files {
       namespace ccsds {
@@ -43,10 +43,10 @@ namespace org {
               class OcmWriter : public ::org::orekit::files::ccsds::utils::generation::AbstractMessageWriter {
                public:
                 enum {
-                  mid_init$_076e559209c6d5a4,
-                  mid_getEquatorialRadius_dff5885c2c873297,
-                  mid_getFlattening_dff5885c2c873297,
-                  mid_writeSegmentContent_a4679b5cde76d825,
+                  mid_init$_6e7dc3e42ba012e7,
+                  mid_getEquatorialRadius_557b8123390d8d0c,
+                  mid_getFlattening_557b8123390d8d0c,
+                  mid_writeSegmentContent_e9836ce27ccfe3b9,
                   max_mid
                 };
 

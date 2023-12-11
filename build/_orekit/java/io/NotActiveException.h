@@ -17,8 +17,8 @@ namespace java {
     class NotActiveException : public ::java::io::ObjectStreamException {
      public:
       enum {
-        mid_init$_0fa09c18fee449d5,
-        mid_init$_d0bc48d5b00dc40c,
+        mid_init$_0640e6acf969ed28,
+        mid_init$_f5ffdf29129ef90a,
         max_mid
       };
 

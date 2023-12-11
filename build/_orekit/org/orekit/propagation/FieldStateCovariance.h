@@ -5,30 +5,30 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      class StateCovariance;
-      class FieldStateCovariance;
-    }
-    namespace orbits {
-      class PositionAngleType;
-      class OrbitType;
-      class FieldOrbit;
+    namespace frames {
+      class LOF;
+      class Frame;
     }
     namespace time {
-      class FieldTimeStamped;
       class FieldAbsoluteDate;
+      class FieldTimeStamped;
     }
-    namespace frames {
-      class Frame;
-      class LOF;
+    namespace orbits {
+      class OrbitType;
+      class PositionAngleType;
+      class FieldOrbit;
+    }
+    namespace propagation {
+      class FieldStateCovariance;
+      class StateCovariance;
     }
   }
   namespace hipparchus {
-    class CalculusFieldElement;
-    class Field;
     namespace linear {
       class FieldMatrix;
     }
+    class CalculusFieldElement;
+    class Field;
   }
 }
 namespace java {
@@ -45,19 +45,19 @@ namespace org {
       class FieldStateCovariance : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_2eeff210f6495c96,
-          mid_init$_f76c0380c93d0193,
-          mid_changeCovarianceFrame_f4f5b65c95d1a515,
-          mid_changeCovarianceFrame_7fc85fab4fb9f757,
-          mid_changeCovarianceType_3109b3511c2d70d9,
-          mid_getDate_51da00d5b8a3b5df,
-          mid_getFrame_b86f9f61d97a7244,
-          mid_getLOF_d1997b828913f65f,
-          mid_getMatrix_c992983685c753c5,
-          mid_getOrbitType_e29360d311dc0e20,
-          mid_getPositionAngleType_8f17e83e5a86217c,
-          mid_shiftedBy_dcaf767057f01ca9,
-          mid_toStateCovariance_9114b59f891867ba,
+          mid_init$_e793e31fd7661d04,
+          mid_init$_5d99d74ed1c760dc,
+          mid_changeCovarianceFrame_27b207a35c9e1194,
+          mid_changeCovarianceFrame_b0e3ac315d7b5d79,
+          mid_changeCovarianceType_bbfc7ef621f6c573,
+          mid_getDate_f1fe4daf77c66560,
+          mid_getFrame_6c9bc0a928c56d4e,
+          mid_getLOF_13b82f8eb71f0f31,
+          mid_getMatrix_1d6b27621d7bea96,
+          mid_getOrbitType_2cea2a2cb3e02091,
+          mid_getPositionAngleType_f4984aee71df4c19,
+          mid_shiftedBy_af70d7fbde9f1d5c,
+          mid_toStateCovariance_8e9af39b29713242,
           max_mid
         };
 

@@ -4,12 +4,12 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace text {
-    class ParseException;
-  }
   namespace io {
     class IOException;
     class InputStream;
+  }
+  namespace text {
+    class ParseException;
   }
   namespace lang {
     class Class;
@@ -25,8 +25,8 @@ namespace org {
       class DataLoader : public ::java::lang::Object {
        public:
         enum {
-          mid_loadData_1815f85c118161ad,
-          mid_stillAcceptsData_b108b35ef48e27bd,
+          mid_loadData_15770e8d8949a557,
+          mid_stillAcceptsData_89b302893bdbe1f1,
           max_mid
         };
 

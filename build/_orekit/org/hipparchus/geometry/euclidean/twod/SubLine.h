@@ -6,21 +6,21 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      namespace partitioning {
-        class SubHyperplane$SplitSubHyperplane;
-        class Region;
-        class Hyperplane;
-      }
       namespace euclidean {
-        namespace twod {
-          class SubLine;
-          class Segment;
-          class Euclidean2D;
-          class Vector2D;
-        }
         namespace oned {
           class Euclidean1D;
         }
+        namespace twod {
+          class Segment;
+          class Vector2D;
+          class Euclidean2D;
+          class SubLine;
+        }
+      }
+      namespace partitioning {
+        class Hyperplane;
+        class SubHyperplane$SplitSubHyperplane;
+        class Region;
       }
     }
   }
@@ -44,13 +44,13 @@ namespace org {
           class SubLine : public ::org::hipparchus::geometry::partitioning::AbstractSubHyperplane {
            public:
             enum {
-              mid_init$_4add8fbc11d34426,
-              mid_init$_10e1fbe5774bfd91,
-              mid_init$_9e348818a9543cf1,
-              mid_getSegments_2afa36052df4765d,
-              mid_intersection_a2606086a4a0acd9,
-              mid_split_905725a56f20360c,
-              mid_buildNew_802b885e8f150523,
+              mid_init$_1bab0430894827a0,
+              mid_init$_08c86faf9fec8eaa,
+              mid_init$_b2fa07e96193ae69,
+              mid_getSegments_0d9551367f7ecdef,
+              mid_intersection_0b14c58c51fe99fb,
+              mid_split_ae8e2bbf2389e86e,
+              mid_buildNew_0ffd07a16ed53139,
               max_mid
             };
 

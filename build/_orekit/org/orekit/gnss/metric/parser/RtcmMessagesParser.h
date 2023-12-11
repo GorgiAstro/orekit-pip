@@ -23,9 +23,9 @@ namespace org {
           class RtcmMessagesParser : public ::org::orekit::gnss::metric::parser::MessagesParser {
            public:
             enum {
-              mid_init$_de3e021e7266b71e,
-              mid_getMessageType_b909afe8923771a6,
-              mid_parseMessageNumber_bbc828ae54845950,
+              mid_init$_4ccaedadb068bdeb,
+              mid_getMessageType_ceeebd64fcb1f2de,
+              mid_parseMessageNumber_2ab051b27e6414f5,
               max_mid
             };
 

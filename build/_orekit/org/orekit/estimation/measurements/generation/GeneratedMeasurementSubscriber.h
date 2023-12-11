@@ -5,13 +5,13 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace estimation {
       namespace measurements {
         class ObservedMeasurement;
       }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -31,8 +31,8 @@ namespace org {
           class GeneratedMeasurementSubscriber : public ::java::lang::Object {
            public:
             enum {
-              mid_handleGeneratedMeasurement_558d7f8249b8a2bc,
-              mid_init_a9e71d848b81c8f8,
+              mid_handleGeneratedMeasurement_4063373aad443d2b,
+              mid_init_d5db9a5f2035671b,
               max_mid
             };
 

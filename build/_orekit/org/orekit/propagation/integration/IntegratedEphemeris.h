@@ -4,18 +4,24 @@
 #include "org/orekit/propagation/analytical/AbstractAnalyticalPropagator.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace ode {
+      class DenseOutputModel;
+    }
+  }
   namespace orekit {
     namespace propagation {
       namespace integration {
         class StateMapper;
       }
-      class AdditionalStateProvider;
-      class PropagationType;
-      class BoundedPropagator;
       class SpacecraftState;
+      class BoundedPropagator;
+      class PropagationType;
+      class AdditionalStateProvider;
     }
-    namespace attitudes {
-      class AttitudeProvider;
+    namespace utils {
+      class DoubleArrayDictionary;
+      class TimeStampedPVCoordinates;
     }
     namespace frames {
       class Frame;
@@ -23,14 +29,8 @@ namespace org {
     namespace time {
       class AbsoluteDate;
     }
-    namespace utils {
-      class DoubleArrayDictionary;
-      class TimeStampedPVCoordinates;
-    }
-  }
-  namespace hipparchus {
-    namespace ode {
-      class DenseOutputModel;
+    namespace attitudes {
+      class AttitudeProvider;
     }
   }
 }
@@ -53,19 +53,19 @@ namespace org {
         class IntegratedEphemeris : public ::org::orekit::propagation::analytical::AbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_6d4da7daec623631,
-            mid_getFrame_b86f9f61d97a7244,
-            mid_getInitialState_c6311115fea01a34,
-            mid_getMaxDate_85703d13e302437e,
-            mid_getMinDate_85703d13e302437e,
-            mid_getPVCoordinates_cfeec55f7c63ec64,
-            mid_resetInitialState_0ee5c56004643a2e,
-            mid_setAttitudeProvider_3cff7c75ea06698c,
-            mid_propagateOrbit_7a8f4c854607bed6,
-            mid_getMass_bf1d7732f1acb697,
-            mid_resetIntermediateState_33f4696e4edaa03c,
-            mid_updateAdditionalStates_f43130c50e9fafeb,
-            mid_basicPropagate_fbff2ff5554d95e1,
+            mid_init$_6bc781ad2aa5b2b2,
+            mid_getFrame_6c9bc0a928c56d4e,
+            mid_getInitialState_15e85d5301b90ef8,
+            mid_getMaxDate_7a97f7e149e79afb,
+            mid_getMinDate_7a97f7e149e79afb,
+            mid_getPVCoordinates_17742a9a6655bdb1,
+            mid_resetInitialState_8655761ebf04b503,
+            mid_setAttitudeProvider_8fa6c0c067ead7b2,
+            mid_propagateOrbit_9e937c0ae63d8022,
+            mid_resetIntermediateState_45bf76e836befe86,
+            mid_getMass_b0b988f941da47d8,
+            mid_updateAdditionalStates_2c4cc16b11f79a6c,
+            mid_basicPropagate_15e0d02372b1347b,
             max_mid
           };
 

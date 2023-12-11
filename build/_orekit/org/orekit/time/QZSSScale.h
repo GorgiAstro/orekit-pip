@@ -4,17 +4,17 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace time {
       class DateComponents;
-      class AbsoluteDate;
-      class TimeComponents;
       class FieldAbsoluteDate;
+      class TimeComponents;
+      class AbsoluteDate;
       class TimeScale;
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -32,11 +32,11 @@ namespace org {
       class QZSSScale : public ::java::lang::Object {
        public:
         enum {
-          mid_getName_11b109bd155ca898,
-          mid_offsetFromTAI_bf1d7732f1acb697,
-          mid_offsetFromTAI_2a5f05be83ff251d,
-          mid_offsetToTAI_56358b00ba005b52,
-          mid_toString_11b109bd155ca898,
+          mid_getName_3cffd47377eca18a,
+          mid_offsetFromTAI_b0b988f941da47d8,
+          mid_offsetFromTAI_b884068a2c99f6ca,
+          mid_offsetToTAI_e4171ab80e571373,
+          mid_toString_3cffd47377eca18a,
           max_mid
         };
 

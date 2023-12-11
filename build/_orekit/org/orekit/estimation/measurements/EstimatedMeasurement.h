@@ -3,21 +3,8 @@
 
 #include "org/orekit/estimation/measurements/EstimatedMeasurementBase.h"
 
-namespace java {
-  namespace util {
-    namespace stream {
-      class Stream;
-    }
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace errors {
-      class OrekitIllegalArgumentException;
-    }
     namespace utils {
       class TimeSpanMap;
       class ParameterDriver;
@@ -28,11 +15,24 @@ namespace org {
         class ObservedMeasurement;
       }
     }
+    namespace errors {
+      class OrekitIllegalArgumentException;
+    }
     namespace time {
       class AbsoluteDate;
     }
     namespace propagation {
       class SpacecraftState;
+    }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
+  }
+  namespace util {
+    namespace stream {
+      class Stream;
     }
   }
 }
@@ -46,15 +46,15 @@ namespace org {
         class EstimatedMeasurement : public ::org::orekit::estimation::measurements::EstimatedMeasurementBase {
          public:
           enum {
-            mid_init$_d1c2fb63ea99e1e6,
-            mid_getDerivativesDrivers_20f6d2b462aaef4b,
-            mid_getParameterDerivatives_5386fd8e2da103f7,
-            mid_getParameterDerivatives_3a00431c3e905a8f,
-            mid_getStateDerivatives_d3e8f395184a4338,
-            mid_getStateSize_570ce0828f81a2c1,
-            mid_setParameterDerivatives_ff7a5e31add3f53c,
-            mid_setParameterDerivatives_39ef7d36cf7f5331,
-            mid_setStateDerivatives_3ca2bf5de9b54389,
+            mid_init$_f92fd0d275c4d59c,
+            mid_getDerivativesDrivers_d7cce92225eb0db2,
+            mid_getParameterDerivatives_00b2044be7a3a4c5,
+            mid_getParameterDerivatives_d8cf911e614780c8,
+            mid_getStateDerivatives_ace8110626df0bb8,
+            mid_getStateSize_412668abc8d889e9,
+            mid_setParameterDerivatives_fdd3af5690b10570,
+            mid_setParameterDerivatives_83d85c8b9fde2e36,
+            mid_setStateDerivatives_03f9d79d0168ba0b,
             max_mid
           };
 

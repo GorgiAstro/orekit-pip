@@ -27,7 +27,7 @@ namespace org {
         class KalmanObserver : public ::java::lang::Object {
          public:
           enum {
-            mid_evaluationPerformed_d76c6ca9a1d073d2,
+            mid_evaluationPerformed_9ef1e6c96a3a3980,
             max_mid
           };
 

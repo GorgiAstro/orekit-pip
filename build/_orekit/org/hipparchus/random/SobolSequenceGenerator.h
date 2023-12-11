@@ -14,12 +14,12 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
-    }
     namespace random {
       class RandomVectorGenerator;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
     }
   }
 }
@@ -32,11 +32,11 @@ namespace org {
       class SobolSequenceGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_99803b0791f320ff,
-          mid_init$_550926389ea2217c,
-          mid_getNextIndex_570ce0828f81a2c1,
-          mid_nextVector_60c7040667a7dc5c,
-          mid_skipTo_abe82da4f5c7c981,
+          mid_init$_a3da1a935cb37f7b,
+          mid_init$_f9ea0f24af142461,
+          mid_getNextIndex_412668abc8d889e9,
+          mid_nextVector_a53a7513ecedada2,
+          mid_skipTo_1da5c9e77f24f269,
           max_mid
         };
 

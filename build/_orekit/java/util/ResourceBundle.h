@@ -5,11 +5,11 @@
 
 namespace java {
   namespace util {
-    class Locale;
     class ResourceBundle$Control;
+    class Locale;
+    class ResourceBundle;
     class Enumeration;
     class Set;
-    class ResourceBundle;
   }
   namespace lang {
     class Module;
@@ -26,28 +26,28 @@ namespace java {
     class ResourceBundle : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_0fa09c18fee449d5,
-        mid_clearCache_0fa09c18fee449d5,
-        mid_clearCache_5b2cbf1cefa98954,
-        mid_containsKey_7edad2c2f64f4d68,
-        mid_getBaseBundleName_11b109bd155ca898,
-        mid_getBundle_e3321a87167f3b01,
-        mid_getBundle_d805a6a98954e809,
-        mid_getBundle_85e9b7f4ce4632dd,
-        mid_getBundle_da57cf588f56405d,
-        mid_getBundle_5b90e45e7082cba8,
-        mid_getBundle_44f2f3b93de92349,
-        mid_getBundle_134ae29f6d067afc,
-        mid_getBundle_51a3deac5be470eb,
-        mid_getKeys_0dc02dfa0be4cd25,
-        mid_getLocale_d31b3a14c10c739b,
-        mid_getObject_f639320a33718c6c,
-        mid_getString_92807efd57acb082,
-        mid_getStringArray_f96e27ad15cba282,
-        mid_keySet_015730311a5bacdc,
-        mid_handleKeySet_015730311a5bacdc,
-        mid_handleGetObject_f639320a33718c6c,
-        mid_setParent_734f3117d00f9ab6,
+        mid_init$_0640e6acf969ed28,
+        mid_clearCache_0640e6acf969ed28,
+        mid_clearCache_3cf05a86101dd452,
+        mid_containsKey_fd2162b8a05a22fe,
+        mid_getBaseBundleName_3cffd47377eca18a,
+        mid_getBundle_e0da9fa628df6799,
+        mid_getBundle_7b6c9c1764085eea,
+        mid_getBundle_4751b51e2cea8067,
+        mid_getBundle_33e498a9d5a4d5af,
+        mid_getBundle_4cc81d9f43c60e1f,
+        mid_getBundle_8e47a1358bccd05d,
+        mid_getBundle_4c02f480d3600c6f,
+        mid_getBundle_b3b885301694fe90,
+        mid_getKeys_00b99a423cfc29b8,
+        mid_getLocale_dbe2fc8ef8b3e0a1,
+        mid_getObject_86c4b8560f4aa70f,
+        mid_getString_60bb1b490b673cbf,
+        mid_getStringArray_c6b001d9fe3bba6d,
+        mid_keySet_2dfcbd371d62f4e1,
+        mid_handleGetObject_86c4b8560f4aa70f,
+        mid_handleKeySet_2dfcbd371d62f4e1,
+        mid_setParent_da729090bfa11ea4,
         max_mid
       };
 

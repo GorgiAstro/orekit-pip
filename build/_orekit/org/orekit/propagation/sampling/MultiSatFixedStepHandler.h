@@ -31,9 +31,9 @@ namespace org {
         class MultiSatFixedStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_finish_de3e021e7266b71e,
-            mid_handleStep_de3e021e7266b71e,
-            mid_init_c2a9f38df475e398,
+            mid_finish_4ccaedadb068bdeb,
+            mid_handleStep_4ccaedadb068bdeb,
+            mid_init_fefad6c1f262d1e2,
             max_mid
           };
 

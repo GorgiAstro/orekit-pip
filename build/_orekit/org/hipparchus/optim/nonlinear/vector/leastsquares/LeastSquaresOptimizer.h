@@ -9,8 +9,8 @@ namespace org {
       namespace nonlinear {
         namespace vector {
           namespace leastsquares {
-            class LeastSquaresOptimizer$Optimum;
             class LeastSquaresProblem;
+            class LeastSquaresOptimizer$Optimum;
           }
         }
       }
@@ -34,7 +34,7 @@ namespace org {
             class LeastSquaresOptimizer : public ::java::lang::Object {
              public:
               enum {
-                mid_optimize_3488934cadbbcc09,
+                mid_optimize_07184cacaaa6a451,
                 max_mid
               };
 

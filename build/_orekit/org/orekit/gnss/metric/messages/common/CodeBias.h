@@ -20,9 +20,9 @@ namespace org {
             class CodeBias : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_bb79ca80d85d0a66,
-                mid_getCodeBias_dff5885c2c873297,
-                mid_getSignalID_570ce0828f81a2c1,
+                mid_init$_89aad365fb0ed8da,
+                mid_getCodeBias_557b8123390d8d0c,
+                mid_getSignalID_412668abc8d889e9,
                 max_mid
               };
 

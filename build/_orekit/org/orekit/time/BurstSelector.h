@@ -14,8 +14,8 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace time {
-      class AbsoluteDate;
       class DatesSelector;
+      class AbsoluteDate;
       class TimeScale;
     }
   }
@@ -29,8 +29,8 @@ namespace org {
       class BurstSelector : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_478adfd86c184534,
-          mid_selectDates_8060cef9318d72e3,
+          mid_init$_972baebc39fce160,
+          mid_selectDates_c5683b8e06424542,
           max_mid
         };
 

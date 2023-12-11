@@ -18,9 +18,9 @@ namespace org {
         class ButcherArrayProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_getA_0358d8ea02f2cdb1,
-            mid_getB_60c7040667a7dc5c,
-            mid_getC_60c7040667a7dc5c,
+            mid_getA_8cf5267aa13a77f3,
+            mid_getB_a53a7513ecedada2,
+            mid_getC_a53a7513ecedada2,
             max_mid
           };
 

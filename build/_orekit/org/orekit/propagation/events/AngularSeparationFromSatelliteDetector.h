@@ -31,12 +31,12 @@ namespace org {
         class AngularSeparationFromSatelliteDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_186eec647879c1ca,
-            mid_g_432f3d328c15ec82,
-            mid_getPrimaryObject_903aca6bb4523e29,
-            mid_getProximityAngle_dff5885c2c873297,
-            mid_getSecondaryObject_903aca6bb4523e29,
-            mid_create_a4b45067e780fead,
+            mid_init$_d026d5c1d05f1112,
+            mid_g_1bbf81d80c47ecdd,
+            mid_getPrimaryObject_dec199e86bf037eb,
+            mid_getProximityAngle_557b8123390d8d0c,
+            mid_getSecondaryObject_dec199e86bf037eb,
+            mid_create_5636a7936e1f1639,
             max_mid
           };
 

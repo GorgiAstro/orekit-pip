@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace rugged {
       namespace utils {
-        class ExtendedEllipsoid;
         class NormalizedGeodeticPoint;
+        class ExtendedEllipsoid;
       }
       namespace api {
         class AlgorithmId;
@@ -40,10 +40,10 @@ namespace org {
         class IntersectionAlgorithm : public ::java::lang::Object {
          public:
           enum {
-            mid_getAlgorithmId_da9f33328b8f3962,
-            mid_getElevation_86ffecc08a63eff0,
-            mid_intersection_943aab8456e3784b,
-            mid_refineIntersection_860353a3ab3d03aa,
+            mid_getAlgorithmId_58f1b48b3d6060f9,
+            mid_getElevation_2268d18be49a6087,
+            mid_intersection_bffffb02b1b74895,
+            mid_refineIntersection_5fc8cb427a1ada2e,
             max_mid
           };
 

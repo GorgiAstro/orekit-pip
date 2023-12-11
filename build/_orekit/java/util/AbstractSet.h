@@ -21,9 +21,9 @@ namespace java {
     class AbstractSet : public ::java::util::AbstractCollection {
      public:
       enum {
-        mid_equals_65c7d273e80d497a,
-        mid_hashCode_570ce0828f81a2c1,
-        mid_removeAll_17e918edc999b3c7,
+        mid_equals_221e8e85cb385209,
+        mid_hashCode_412668abc8d889e9,
+        mid_removeAll_15ecf331dcc5aaf3,
         max_mid
       };
 

@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class EstimatedMeasurement;
         class ObservedMeasurement;
+        class EstimatedMeasurement;
       }
     }
     namespace orbits {
@@ -34,7 +34,7 @@ namespace org {
         class ModelObserver : public ::java::lang::Object {
          public:
           enum {
-            mid_modelCalled_098d286a550578c0,
+            mid_modelCalled_b94f4715223105a5,
             max_mid
           };
 

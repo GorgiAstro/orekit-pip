@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -14,23 +13,24 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
   namespace orekit {
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
+    namespace utils {
+      class ExtendedPVCoordinatesProvider;
+      class ParameterDriver;
+    }
     namespace forces {
       namespace radiation {
         class RadiationSensitive;
       }
     }
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
-    }
     namespace bodies {
       class OneAxisEllipsoid;
-    }
-    namespace utils {
-      class ParameterDriver;
-      class ExtendedPVCoordinatesProvider;
     }
   }
 }
@@ -52,13 +52,13 @@ namespace org {
         class SolarRadiationPressure : public ::org::orekit::forces::radiation::AbstractRadiationForceModel {
          public:
           enum {
-            mid_init$_eb8e6d3dab9933fd,
-            mid_init$_a14707e8e69d92fb,
-            mid_acceleration_b42ac4b5bfb80fab,
-            mid_acceleration_8954761face5e1a7,
-            mid_getLightingRatio_41a008afe53da855,
-            mid_getLightingRatio_432f3d328c15ec82,
-            mid_getParametersDrivers_2afa36052df4765d,
+            mid_init$_d555dbd04a0c182e,
+            mid_init$_3e673fd4ea8e449d,
+            mid_acceleration_b61fb59a041240c6,
+            mid_acceleration_61944e27a39e8290,
+            mid_getLightingRatio_de1c2d709eb2829c,
+            mid_getLightingRatio_1bbf81d80c47ecdd,
+            mid_getParametersDrivers_0d9551367f7ecdef,
             max_mid
           };
 

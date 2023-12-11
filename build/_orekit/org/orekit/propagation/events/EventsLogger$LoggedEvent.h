@@ -32,10 +32,10 @@ namespace org {
         class EventsLogger$LoggedEvent : public ::java::lang::Object {
          public:
           enum {
-            mid_getDate_85703d13e302437e,
-            mid_getEventDetector_d73bb985ffde4156,
-            mid_getState_c6311115fea01a34,
-            mid_isIncreasing_b108b35ef48e27bd,
+            mid_getDate_7a97f7e149e79afb,
+            mid_getEventDetector_0701b00b25822fff,
+            mid_getState_15e85d5301b90ef8,
+            mid_isIncreasing_89b302893bdbe1f1,
             max_mid
           };
 

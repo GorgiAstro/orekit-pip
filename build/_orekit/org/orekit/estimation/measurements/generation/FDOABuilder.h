@@ -4,26 +4,26 @@
 #include "org/orekit/estimation/measurements/generation/AbstractMeasurementBuilder.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace random {
+      class CorrelatedRandomVectorGenerator;
+    }
+  }
   namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class FDOA;
-        class GroundStation;
-        class ObservableSatellite;
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace propagation {
       namespace sampling {
         class OrekitStepInterpolator;
       }
     }
-  }
-  namespace hipparchus {
-    namespace random {
-      class CorrelatedRandomVectorGenerator;
+    namespace estimation {
+      namespace measurements {
+        class ObservableSatellite;
+        class GroundStation;
+        class FDOA;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -46,8 +46,8 @@ namespace org {
           class FDOABuilder : public ::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder {
            public:
             enum {
-              mid_init$_b3b39c3301ee152f,
-              mid_build_4da7dc73c716f762,
+              mid_init$_7292f02938ec8cc8,
+              mid_build_888d88cdd98bf4f2,
               max_mid
             };
 

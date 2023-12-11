@@ -4,11 +4,12 @@
 #include "org/orekit/ssa/collision/shorttermencounter/probability/twod/AbstractShortTermEncounter2DPOCMethod.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace ssa {
+      namespace metrics {
+        class FieldProbabilityOfCollision;
+        class ProbabilityOfCollision;
+      }
       namespace collision {
         namespace shorttermencounter {
           namespace probability {
@@ -18,11 +19,10 @@ namespace org {
           }
         }
       }
-      namespace metrics {
-        class FieldProbabilityOfCollision;
-        class ProbabilityOfCollision;
-      }
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -43,10 +43,10 @@ namespace org {
               class Alfano2005 : public ::org::orekit::ssa::collision::shorttermencounter::probability::twod::AbstractShortTermEncounter2DPOCMethod {
                public:
                 enum {
-                  mid_init$_0fa09c18fee449d5,
-                  mid_compute_184c2f4ec5889c74,
-                  mid_compute_0ed38e7bbee7fafc,
-                  mid_getType_5d7ecb27bb5e3bc3,
+                  mid_init$_0640e6acf969ed28,
+                  mid_compute_ddf22cd33bfe153c,
+                  mid_compute_8d09da96ce925a0b,
+                  mid_getType_4b8bf2bb84f7480e,
                   max_mid
                 };
 

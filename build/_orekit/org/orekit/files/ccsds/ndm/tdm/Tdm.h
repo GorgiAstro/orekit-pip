@@ -9,9 +9,9 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace tdm {
-            class TdmHeader;
-            class ObservationsBlock;
             class TdmMetadata;
+            class ObservationsBlock;
+            class TdmHeader;
           }
         }
         namespace section {
@@ -48,7 +48,7 @@ namespace org {
             class Tdm : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
              public:
               enum {
-                mid_init$_b2fcbc8571194da5,
+                mid_init$_435bebe2723e4064,
                 max_mid
               };
 

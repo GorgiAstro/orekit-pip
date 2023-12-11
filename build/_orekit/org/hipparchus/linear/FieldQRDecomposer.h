@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace linear {
       class FieldMatrixDecomposer;
       class FieldDecompositionSolver;
       class FieldMatrix;
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -27,8 +27,8 @@ namespace org {
       class FieldQRDecomposer : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_072c8635f2164db9,
-          mid_decompose_f65caede4265247f,
+          mid_init$_1ee4bed350fde589,
+          mid_decompose_b2f65345b24ac236,
           max_mid
         };
 

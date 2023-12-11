@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
+    class FieldElement;
     namespace exception {
+      class MathIllegalArgumentException;
       class NullArgumentException;
       class MathRuntimeException;
-      class MathIllegalArgumentException;
     }
-    class FieldElement;
   }
 }
 namespace java {
@@ -28,10 +28,10 @@ namespace org {
         class FieldHermiteInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_addSamplePoint_5867299ca30b4511,
-            mid_derivatives_e337ebc29ccab05d,
-            mid_value_2b0562a1b7a1f4bd,
+            mid_init$_0640e6acf969ed28,
+            mid_addSamplePoint_b905de7a007641fb,
+            mid_derivatives_7e6a45a3e3b96ef6,
+            mid_value_fe86fae25ede109a,
             max_mid
           };
 

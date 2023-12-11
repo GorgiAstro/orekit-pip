@@ -3,10 +3,18 @@
 
 #include "org/orekit/models/earth/atmosphere/data/AbstractSolarActivityData.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataProvidersManager;
+    namespace time {
+      class AbsoluteDate;
+      class TimeScale;
     }
     namespace models {
       namespace earth {
@@ -17,17 +25,9 @@ namespace org {
         }
       }
     }
-    namespace time {
-      class AbsoluteDate;
-      class TimeScale;
+    namespace data {
+      class DataProvidersManager;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -42,18 +42,18 @@ namespace org {
             class PythonAbstractSolarActivityData : public ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityData {
              public:
               enum {
-                mid_init$_d1f1c08df6ac1f50,
-                mid_finalize_0fa09c18fee449d5,
-                mid_get24HoursKp_bf1d7732f1acb697,
-                mid_getAp_2b9aa40de0a696a4,
-                mid_getAverageFlux_bf1d7732f1acb697,
-                mid_getDailyFlux_bf1d7732f1acb697,
-                mid_getInstantFlux_bf1d7732f1acb697,
-                mid_getMeanFlux_bf1d7732f1acb697,
-                mid_getThreeHourlyKP_bf1d7732f1acb697,
-                mid_pythonDecRef_0fa09c18fee449d5,
-                mid_pythonExtension_492808a339bfa35f,
-                mid_pythonExtension_3a8e7649f31fdb20,
+                mid_init$_ae5a3c6dd7a6713f,
+                mid_finalize_0640e6acf969ed28,
+                mid_get24HoursKp_b0b988f941da47d8,
+                mid_getAp_89e8b78e4211e023,
+                mid_getAverageFlux_b0b988f941da47d8,
+                mid_getDailyFlux_b0b988f941da47d8,
+                mid_getInstantFlux_b0b988f941da47d8,
+                mid_getMeanFlux_b0b988f941da47d8,
+                mid_getThreeHourlyKP_b0b988f941da47d8,
+                mid_pythonDecRef_0640e6acf969ed28,
+                mid_pythonExtension_9e26256fb0d384a2,
+                mid_pythonExtension_3cd6a6b354c6aa22,
                 max_mid
               };
 

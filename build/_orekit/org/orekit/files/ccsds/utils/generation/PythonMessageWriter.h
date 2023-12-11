@@ -7,18 +7,18 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace section {
+          class Header;
+          class Segment;
+        }
         namespace ndm {
           class NdmConstituent;
         }
         namespace utils {
           namespace generation {
-            class Generator;
             class MessageWriter;
+            class Generator;
           }
-        }
-        namespace section {
-          class Header;
-          class Segment;
         }
       }
     }
@@ -46,17 +46,17 @@ namespace org {
             class PythonMessageWriter : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_finalize_0fa09c18fee449d5,
-                mid_getFormatVersionKey_11b109bd155ca898,
-                mid_getRoot_11b109bd155ca898,
-                mid_getVersion_dff5885c2c873297,
-                mid_pythonDecRef_0fa09c18fee449d5,
-                mid_pythonExtension_492808a339bfa35f,
-                mid_pythonExtension_3a8e7649f31fdb20,
-                mid_writeFooter_6d745cf7b26e9f5d,
-                mid_writeHeader_48090222d5fb583c,
-                mid_writeSegment_6a1f0a7164a88e0a,
+                mid_init$_0640e6acf969ed28,
+                mid_finalize_0640e6acf969ed28,
+                mid_getFormatVersionKey_3cffd47377eca18a,
+                mid_getRoot_3cffd47377eca18a,
+                mid_getVersion_557b8123390d8d0c,
+                mid_pythonDecRef_0640e6acf969ed28,
+                mid_pythonExtension_9e26256fb0d384a2,
+                mid_pythonExtension_3cd6a6b354c6aa22,
+                mid_writeFooter_0503da09b1f1eb3c,
+                mid_writeHeader_9c5c2ece653aa3f3,
+                mid_writeSegment_c15b5f80625a03e0,
                 max_mid
               };
 

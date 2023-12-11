@@ -22,8 +22,8 @@ namespace java {
       class DoubleConsumer : public ::java::lang::Object {
        public:
         enum {
-          mid_accept_17db3a65980d3441,
-          mid_andThen_6936d14169327829,
+          mid_accept_10f281d777284cea,
+          mid_andThen_41c437f6c629d64a,
           max_mid
         };
 

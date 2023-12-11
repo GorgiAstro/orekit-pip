@@ -5,18 +5,18 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace analysis {
+      class FieldUnivariateFunction;
       namespace differentiation {
         class Derivative;
         class UnivariateDifferentiableFunction;
       }
-      class FieldUnivariateFunction;
     }
     namespace exception {
-      class NullArgumentException;
       class MathIllegalArgumentException;
+      class NullArgumentException;
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -34,17 +34,17 @@ namespace org {
         class PolynomialFunctionNewtonForm : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_e1f4b15468f5564a,
-            mid_degree_570ce0828f81a2c1,
-            mid_evaluate_81770d1e77838f28,
-            mid_getCenters_60c7040667a7dc5c,
-            mid_getCoefficients_60c7040667a7dc5c,
-            mid_getNewtonCoefficients_60c7040667a7dc5c,
-            mid_value_dcbc7ce2902fa136,
-            mid_value_a4b1871f4d29e58b,
-            mid_value_73d6acaa8ebd2b7d,
-            mid_computeCoefficients_0fa09c18fee449d5,
-            mid_verifyInputArray_e1f4b15468f5564a,
+            mid_init$_ab4840ba016ef1da,
+            mid_degree_412668abc8d889e9,
+            mid_evaluate_abf45904c34f3045,
+            mid_getCenters_a53a7513ecedada2,
+            mid_getCoefficients_a53a7513ecedada2,
+            mid_getNewtonCoefficients_a53a7513ecedada2,
+            mid_value_7e960cd6eee376d8,
+            mid_value_6672ad854985cb64,
+            mid_value_3eb2b84dba0ab7d2,
+            mid_computeCoefficients_0640e6acf969ed28,
+            mid_verifyInputArray_ab4840ba016ef1da,
             max_mid
           };
 

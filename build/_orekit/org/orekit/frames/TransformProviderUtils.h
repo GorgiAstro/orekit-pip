@@ -24,8 +24,8 @@ namespace org {
       class TransformProviderUtils : public ::java::lang::Object {
        public:
         enum {
-          mid_getCombinedProvider_a7bb61a39f2f3398,
-          mid_getReversedProvider_b63c14ebdf355632,
+          mid_getCombinedProvider_8798d257229cdce9,
+          mid_getReversedProvider_8b834322b537d1ea,
           max_mid
         };
 

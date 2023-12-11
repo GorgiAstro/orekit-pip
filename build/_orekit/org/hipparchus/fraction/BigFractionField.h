@@ -29,12 +29,12 @@ namespace org {
       class BigFractionField : public ::java::lang::Object {
        public:
         enum {
-          mid_equals_65c7d273e80d497a,
-          mid_getInstance_bd5b8d6d09b3bc67,
-          mid_getOne_785133ac6602777f,
-          mid_getRuntimeClass_7c16c5008b34b3db,
-          mid_getZero_785133ac6602777f,
-          mid_hashCode_570ce0828f81a2c1,
+          mid_equals_221e8e85cb385209,
+          mid_getInstance_b141d0462bc50421,
+          mid_getOne_92546681fd225453,
+          mid_getRuntimeClass_d4b191ff8147475d,
+          mid_getZero_92546681fd225453,
+          mid_hashCode_412668abc8d889e9,
           max_mid
         };
 

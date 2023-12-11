@@ -3,6 +3,12 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -12,12 +18,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,7 +31,7 @@ namespace org {
           class MessageObserver : public ::java::lang::Object {
            public:
             enum {
-              mid_messageAvailable_4d53d7b30f77764b,
+              mid_messageAvailable_5e983d1774bbd3db,
               max_mid
             };
 

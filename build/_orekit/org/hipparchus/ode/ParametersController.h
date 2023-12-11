@@ -3,17 +3,17 @@
 
 #include "org/hipparchus/ode/Parameterizable.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,8 +25,8 @@ namespace org {
       class ParametersController : public ::org::hipparchus::ode::Parameterizable {
        public:
         enum {
-          mid_getParameter_b36dde1444e08956,
-          mid_setParameter_1b3f5cad10162d50,
+          mid_getParameter_071554b5f5a6b17b,
+          mid_setParameter_c6843ef8200b1ede,
           max_mid
         };
 

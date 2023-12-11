@@ -41,9 +41,9 @@ namespace org {
             class TdmDataKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_d71bbb8f25abd65b,
-                mid_valueOf_8e77ee4d72a34d2f,
-                mid_values_750f4b17f840aeb2,
+                mid_process_ecebd077d5e99789,
+                mid_valueOf_f2d608ce921e7f7a,
+                mid_values_ee598c15726670bc,
                 max_mid
               };
 

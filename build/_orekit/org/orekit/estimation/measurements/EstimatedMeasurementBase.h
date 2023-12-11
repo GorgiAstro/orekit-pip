@@ -8,18 +8,18 @@ namespace org {
     namespace estimation {
       namespace measurements {
         class EstimatedMeasurementBase$Status;
-        class ComparableMeasurement;
         class ObservedMeasurement;
+        class ComparableMeasurement;
       }
     }
     namespace time {
       class AbsoluteDate;
     }
-    namespace utils {
-      class TimeStampedPVCoordinates;
-    }
     namespace propagation {
       class SpacecraftState;
+    }
+    namespace utils {
+      class TimeStampedPVCoordinates;
     }
   }
 }
@@ -38,19 +38,19 @@ namespace org {
         class EstimatedMeasurementBase : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_d1c2fb63ea99e1e6,
-            mid_getCount_570ce0828f81a2c1,
-            mid_getDate_85703d13e302437e,
-            mid_getEstimatedValue_60c7040667a7dc5c,
-            mid_getIteration_570ce0828f81a2c1,
-            mid_getObservedMeasurement_744f33e0abf11bf9,
-            mid_getObservedValue_60c7040667a7dc5c,
-            mid_getParticipants_2c08433c0c18552f,
-            mid_getStates_fa9cea0faefb9a31,
-            mid_getStatus_7c948ae3415a4366,
-            mid_getTimeOffset_dff5885c2c873297,
-            mid_setEstimatedValue_fa9d415d19f69361,
-            mid_setStatus_6b1c7f370d471bab,
+            mid_init$_f92fd0d275c4d59c,
+            mid_getCount_412668abc8d889e9,
+            mid_getDate_7a97f7e149e79afb,
+            mid_getEstimatedValue_a53a7513ecedada2,
+            mid_getIteration_412668abc8d889e9,
+            mid_getObservedMeasurement_1217c497a513de4c,
+            mid_getObservedValue_a53a7513ecedada2,
+            mid_getParticipants_94d7c40250738b28,
+            mid_getStates_5dccf571345671af,
+            mid_getStatus_0bf93a0304e8d453,
+            mid_getTimeOffset_557b8123390d8d0c,
+            mid_setEstimatedValue_cc18240f4a737f14,
+            mid_setStatus_340c6e935d582f0c,
             max_mid
           };
 

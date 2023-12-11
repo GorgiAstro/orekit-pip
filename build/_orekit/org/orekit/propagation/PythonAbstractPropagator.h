@@ -3,6 +3,15 @@
 
 #include "org/orekit/propagation/AbstractPropagator.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+  namespace util {
+    class Collection;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -17,15 +26,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-  namespace util {
-    class Collection;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -35,16 +35,16 @@ namespace org {
       class PythonAbstractPropagator : public ::org::orekit::propagation::AbstractPropagator {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_addEventDetector_efb7003d866d4523,
-          mid_clearEventsDetectors_0fa09c18fee449d5,
-          mid_finalize_0fa09c18fee449d5,
-          mid_getEphemerisGenerator_18d439b26e70ccd0,
-          mid_getEventsDetectors_37528d110cff6b74,
-          mid_propagate_a69ef29c3ea1e1fa,
-          mid_pythonDecRef_0fa09c18fee449d5,
-          mid_pythonExtension_492808a339bfa35f,
-          mid_pythonExtension_3a8e7649f31fdb20,
+          mid_init$_0640e6acf969ed28,
+          mid_addEventDetector_2e2dfaf38ed50d1d,
+          mid_clearEventsDetectors_0640e6acf969ed28,
+          mid_finalize_0640e6acf969ed28,
+          mid_getEphemerisGenerator_6a3edfe13bcee780,
+          mid_getEventsDetectors_12ee61573a18f417,
+          mid_propagate_b96c0d97a162784d,
+          mid_pythonDecRef_0640e6acf969ed28,
+          mid_pythonExtension_9e26256fb0d384a2,
+          mid_pythonExtension_3cd6a6b354c6aa22,
           max_mid
         };
 

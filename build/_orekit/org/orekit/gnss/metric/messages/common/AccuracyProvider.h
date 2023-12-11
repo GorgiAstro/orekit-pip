@@ -20,7 +20,7 @@ namespace org {
             class AccuracyProvider : public ::java::lang::Object {
              public:
               enum {
-                mid_getAccuracy_dff5885c2c873297,
+                mid_getAccuracy_557b8123390d8d0c,
                 max_mid
               };
 

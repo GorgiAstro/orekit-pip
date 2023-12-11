@@ -18,8 +18,8 @@ namespace org {
         class AbstractFixedStepFieldIntegratorBuilder : public ::org::orekit::propagation::conversion::AbstractFieldIntegratorBuilder {
          public:
           enum {
-            mid_getFieldStep_d432811b42deb1dc,
-            mid_checkStep_17db3a65980d3441,
+            mid_getFieldStep_ad2da19d393bd397,
+            mid_checkStep_10f281d777284cea,
             max_mid
           };
 

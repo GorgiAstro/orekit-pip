@@ -34,8 +34,8 @@ namespace org {
             class NonLinearConjugateGradientOptimizer$Formula : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_ae25b8b4e8d7c84a,
-                mid_values_f6e3985d7fdc4051,
+                mid_valueOf_a9cc3413a2d8d610,
+                mid_values_06e50e69145ce8b2,
                 max_mid
               };
 

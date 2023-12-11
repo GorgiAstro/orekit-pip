@@ -5,21 +5,21 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      namespace analytical {
-        class AdapterPropagator$DifferentialEffect;
-      }
-      class SpacecraftState;
-    }
     namespace orbits {
-      class PositionAngleType;
       class Orbit;
+      class PositionAngleType;
     }
     namespace frames {
       class Frame;
     }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace propagation {
+      namespace analytical {
+        class AdapterPropagator$DifferentialEffect;
+      }
+      class SpacecraftState;
     }
   }
   namespace hipparchus {
@@ -47,15 +47,15 @@ namespace org {
         class SmallManeuverAnalyticalModel : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_2a6db53d6def3a34,
-            mid_init$_665410d4e1a3356f,
-            mid_apply_58efaeb159657907,
-            mid_apply_f43130c50e9fafeb,
-            mid_getDate_85703d13e302437e,
-            mid_getInertialDV_d52645e0d4c07563,
-            mid_getInertialFrame_b86f9f61d97a7244,
-            mid_getJacobian_0743f2f4f7f34cc1,
-            mid_updateMass_dcbc7ce2902fa136,
+            mid_init$_76b1012746817507,
+            mid_init$_5e6ac11ce0e39e22,
+            mid_apply_f66341a46b0a495a,
+            mid_apply_2c4cc16b11f79a6c,
+            mid_getDate_7a97f7e149e79afb,
+            mid_getInertialDV_f88961cca75a2c0a,
+            mid_getInertialFrame_6c9bc0a928c56d4e,
+            mid_getJacobian_032b4d4d2c7f6c6c,
+            mid_updateMass_7e960cd6eee376d8,
             max_mid
           };
 

@@ -4,36 +4,36 @@
 #include "org/orekit/geometry/fov/AbstractFieldOfView.h"
 
 namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace events {
-        class VisibilityTrigger;
-      }
-    }
-    namespace geometry {
-      namespace fov {
-        class PolygonalFieldOfView$DefiningConeType;
-      }
-    }
-    namespace bodies {
-      class OneAxisEllipsoid;
-      class GeodeticPoint;
-    }
-    namespace frames {
-      class Transform;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
+      namespace spherical {
+        namespace twod {
+          class SphericalPolygonsSet;
+        }
+      }
       namespace euclidean {
         namespace threed {
           class Vector3D;
         }
       }
-      namespace spherical {
-        namespace twod {
-          class SphericalPolygonsSet;
-        }
+    }
+  }
+  namespace orekit {
+    namespace geometry {
+      namespace fov {
+        class PolygonalFieldOfView$DefiningConeType;
+      }
+    }
+    namespace frames {
+      class Transform;
+    }
+    namespace bodies {
+      class GeodeticPoint;
+      class OneAxisEllipsoid;
+    }
+    namespace propagation {
+      namespace events {
+        class VisibilityTrigger;
       }
     }
   }
@@ -56,12 +56,12 @@ namespace org {
         class PolygonalFieldOfView : public ::org::orekit::geometry::fov::AbstractFieldOfView {
          public:
           enum {
-            mid_init$_991a5885d40d9dc2,
-            mid_init$_d0c690fdba21c866,
-            mid_getFootprint_d179f90e70a637c1,
-            mid_getZone_5a6ba0b36fb0268c,
-            mid_offsetFromBoundary_92bc6ba59ebf6937,
-            mid_projectToBoundary_d0fe714ef34714f7,
+            mid_init$_5d74c35edd4a312a,
+            mid_init$_6e7a41e023f7503b,
+            mid_getFootprint_37f5cab3ae6d781a,
+            mid_getZone_1223d06efa3ccad7,
+            mid_offsetFromBoundary_d0bb3aecf00cc465,
+            mid_projectToBoundary_b48aa9aef740fa79,
             max_mid
           };
 

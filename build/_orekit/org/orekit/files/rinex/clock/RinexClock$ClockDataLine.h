@@ -5,19 +5,19 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class DateComponents;
+      class TimeComponents;
+      class AbsoluteDate;
+      class TimeScale;
+    }
     namespace files {
       namespace rinex {
         namespace clock {
-          class RinexClock;
           class RinexClock$ClockDataType;
+          class RinexClock;
         }
       }
-    }
-    namespace time {
-      class TimeComponents;
-      class AbsoluteDate;
-      class DateComponents;
-      class TimeScale;
     }
   }
 }
@@ -38,18 +38,18 @@ namespace org {
           class RinexClock$ClockDataLine : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a6f1810076dcae20,
-              mid_getClockAcceleration_dff5885c2c873297,
-              mid_getClockAccelerationSigma_dff5885c2c873297,
-              mid_getClockBias_dff5885c2c873297,
-              mid_getClockBiasSigma_dff5885c2c873297,
-              mid_getClockRate_dff5885c2c873297,
-              mid_getClockRateSigma_dff5885c2c873297,
-              mid_getDataType_0fb623818906aacc,
-              mid_getEpoch_85703d13e302437e,
-              mid_getEpoch_1695de8a22bfc72e,
-              mid_getName_11b109bd155ca898,
-              mid_getNumberOfValues_570ce0828f81a2c1,
+              mid_init$_0c897206077b7113,
+              mid_getClockAcceleration_557b8123390d8d0c,
+              mid_getClockAccelerationSigma_557b8123390d8d0c,
+              mid_getClockBias_557b8123390d8d0c,
+              mid_getClockBiasSigma_557b8123390d8d0c,
+              mid_getClockRate_557b8123390d8d0c,
+              mid_getClockRateSigma_557b8123390d8d0c,
+              mid_getDataType_171db9079163a25a,
+              mid_getEpoch_7a97f7e149e79afb,
+              mid_getEpoch_5303d2b8df09dbef,
+              mid_getName_3cffd47377eca18a,
+              mid_getNumberOfValues_412668abc8d889e9,
               max_mid
             };
 

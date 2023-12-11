@@ -4,20 +4,20 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
+      class FieldSpacecraftState;
       namespace sampling {
         class FieldOrekitStepInterpolator;
         class FieldOrekitStepHandler;
       }
-      class FieldSpacecraftState;
     }
     namespace time {
       class FieldAbsoluteDate;
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -36,14 +36,14 @@ namespace org {
         class PythonFieldOrekitStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_finalize_0fa09c18fee449d5,
-            mid_finish_1463d3d0d52f94dd,
-            mid_handleStep_edb529c141e8d4a9,
-            mid_init_8e8de2be1664674a,
-            mid_pythonDecRef_0fa09c18fee449d5,
-            mid_pythonExtension_492808a339bfa35f,
-            mid_pythonExtension_3a8e7649f31fdb20,
+            mid_init$_0640e6acf969ed28,
+            mid_finalize_0640e6acf969ed28,
+            mid_finish_b66c84a5711243d5,
+            mid_handleStep_c006764357a9d9b2,
+            mid_init_811e49dad2467b67,
+            mid_pythonDecRef_0640e6acf969ed28,
+            mid_pythonExtension_9e26256fb0d384a2,
+            mid_pythonExtension_3cd6a6b354c6aa22,
             max_mid
           };
 

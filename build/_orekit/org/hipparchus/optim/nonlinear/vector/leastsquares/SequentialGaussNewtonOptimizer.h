@@ -5,23 +5,23 @@
 
 namespace org {
   namespace hipparchus {
+    namespace linear {
+      class MatrixDecomposer;
+      class RealMatrix;
+      class RealVector;
+    }
     namespace optim {
       namespace nonlinear {
         namespace vector {
           namespace leastsquares {
-            class SequentialGaussNewtonOptimizer;
+            class LeastSquaresOptimizer;
             class LeastSquaresOptimizer$Optimum;
             class LeastSquaresProblem$Evaluation;
-            class LeastSquaresOptimizer;
             class LeastSquaresProblem;
+            class SequentialGaussNewtonOptimizer;
           }
         }
       }
-    }
-    namespace linear {
-      class MatrixDecomposer;
-      class RealVector;
-      class RealMatrix;
     }
   }
 }
@@ -43,18 +43,18 @@ namespace org {
             class SequentialGaussNewtonOptimizer : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_init$_a6dbc2626fd93207,
-                mid_getDecomposer_43a2c3cb3afc9b3b,
-                mid_getOldEvaluation_b37820a2ab3d7e67,
-                mid_isFormNormalEquations_b108b35ef48e27bd,
-                mid_optimize_3488934cadbbcc09,
-                mid_toString_11b109bd155ca898,
-                mid_withAPrioriData_6c4b3e1fccdc5ae7,
-                mid_withAPrioriData_103c23346cfe98fc,
-                mid_withDecomposer_d5e36e467a8f93c2,
-                mid_withEvaluation_6b9a3a2736db8a71,
-                mid_withFormNormalEquations_200a796350a5ce05,
+                mid_init$_0640e6acf969ed28,
+                mid_init$_2c6bf99d169aafec,
+                mid_getDecomposer_6715228bb9fc3272,
+                mid_getOldEvaluation_b9160dea002527ef,
+                mid_isFormNormalEquations_89b302893bdbe1f1,
+                mid_optimize_07184cacaaa6a451,
+                mid_toString_3cffd47377eca18a,
+                mid_withAPrioriData_623502691f8621d5,
+                mid_withAPrioriData_4ad66676b7da8c32,
+                mid_withDecomposer_30cc4c2c9e87a99d,
+                mid_withEvaluation_f0edaddfc0e1df67,
+                mid_withFormNormalEquations_1dd66e38a2c693ba,
                 max_mid
               };
 

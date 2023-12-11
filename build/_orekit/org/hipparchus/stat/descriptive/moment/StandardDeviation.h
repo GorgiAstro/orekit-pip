@@ -3,14 +3,6 @@
 
 #include "org/hipparchus/stat/descriptive/AbstractStorelessUnivariateStatistic.h"
 
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
@@ -26,6 +18,14 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -37,20 +37,20 @@ namespace org {
           class StandardDeviation : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_init$_7d2491dc61f6c936,
-              mid_init$_bd04c9335fb9e4cf,
-              mid_init$_2e37288d51fb7ec1,
-              mid_clear_0fa09c18fee449d5,
-              mid_copy_4602d7f3fad7762c,
-              mid_evaluate_1c41301ff6e224e7,
-              mid_evaluate_556bede10daac330,
-              mid_evaluate_82195b7753559055,
-              mid_getN_492808a339bfa35f,
-              mid_getResult_dff5885c2c873297,
-              mid_increment_17db3a65980d3441,
-              mid_isBiasCorrected_b108b35ef48e27bd,
-              mid_withBiasCorrection_32b8a14555b1fca5,
+              mid_init$_0640e6acf969ed28,
+              mid_init$_b42241ac9de9fb3c,
+              mid_init$_ed2afdb8506b9742,
+              mid_init$_466cd392a0f97ab1,
+              mid_clear_0640e6acf969ed28,
+              mid_copy_7712cb22347034aa,
+              mid_evaluate_05f591cf0826202b,
+              mid_evaluate_9eeeb1ae977f525d,
+              mid_evaluate_134920ed0a3e958a,
+              mid_getN_9e26256fb0d384a2,
+              mid_getResult_557b8123390d8d0c,
+              mid_increment_10f281d777284cea,
+              mid_isBiasCorrected_89b302893bdbe1f1,
+              mid_withBiasCorrection_31819963ee766f94,
               max_mid
             };
 

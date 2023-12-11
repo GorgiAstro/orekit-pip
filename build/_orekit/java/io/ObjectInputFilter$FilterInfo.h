@@ -16,11 +16,11 @@ namespace java {
     class ObjectInputFilter$FilterInfo : public ::java::lang::Object {
      public:
       enum {
-        mid_arrayLength_492808a339bfa35f,
-        mid_depth_492808a339bfa35f,
-        mid_references_492808a339bfa35f,
-        mid_serialClass_7c16c5008b34b3db,
-        mid_streamBytes_492808a339bfa35f,
+        mid_arrayLength_9e26256fb0d384a2,
+        mid_depth_9e26256fb0d384a2,
+        mid_references_9e26256fb0d384a2,
+        mid_serialClass_d4b191ff8147475d,
+        mid_streamBytes_9e26256fb0d384a2,
         max_mid
       };
 

@@ -7,12 +7,6 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace utils {
-          namespace lexical {
-            class ParseToken;
-          }
-          class ContextBinding;
-        }
         namespace ndm {
           namespace adm {
             namespace apm {
@@ -20,6 +14,12 @@ namespace org {
               class InertiaKey;
             }
           }
+        }
+        namespace utils {
+          namespace lexical {
+            class ParseToken;
+          }
+          class ContextBinding;
         }
       }
     }
@@ -44,9 +44,9 @@ namespace org {
               class InertiaKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_e94a9c57de0fd4de,
-                  mid_valueOf_5c57e3ad27f6c5ac,
-                  mid_values_0b26b1e20416f420,
+                  mid_process_25f40cd108bfff82,
+                  mid_valueOf_c7ca18690b3803f7,
+                  mid_values_cca4a3229479c82f,
                   max_mid
                 };
 

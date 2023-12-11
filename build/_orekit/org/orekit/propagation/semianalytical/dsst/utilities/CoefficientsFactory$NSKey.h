@@ -3,6 +3,12 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+    class Comparable;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -14,12 +20,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
-    class Comparable;
   }
 }
 template<class T> class JArray;
@@ -34,12 +34,12 @@ namespace org {
             class CoefficientsFactory$NSKey : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_6f37635c3285dbdf,
-                mid_compareTo_7f564367d2213478,
-                mid_equals_65c7d273e80d497a,
-                mid_getN_570ce0828f81a2c1,
-                mid_getS_570ce0828f81a2c1,
-                mid_hashCode_570ce0828f81a2c1,
+                mid_init$_a84c9a223722150c,
+                mid_compareTo_46df49a4ad1ef79a,
+                mid_equals_221e8e85cb385209,
+                mid_getN_412668abc8d889e9,
+                mid_getS_412668abc8d889e9,
+                mid_hashCode_412668abc8d889e9,
                 max_mid
               };
 

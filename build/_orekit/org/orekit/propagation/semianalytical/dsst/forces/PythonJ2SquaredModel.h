@@ -4,21 +4,21 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
       namespace semianalytical {
         namespace dsst {
           namespace forces {
-            class DSSTJ2SquaredClosedFormContext;
-            class FieldDSSTJ2SquaredClosedFormContext;
             class J2SquaredModel;
+            class FieldDSSTJ2SquaredClosedFormContext;
+            class DSSTJ2SquaredClosedFormContext;
           }
         }
       }
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -39,13 +39,13 @@ namespace org {
             class PythonJ2SquaredModel : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_computeMeanEquinoctialSecondOrderTerms_03e8bdfa525c3779,
-                mid_computeMeanEquinoctialSecondOrderTerms_1a8550c5c09a5c40,
-                mid_finalize_0fa09c18fee449d5,
-                mid_pythonDecRef_0fa09c18fee449d5,
-                mid_pythonExtension_492808a339bfa35f,
-                mid_pythonExtension_3a8e7649f31fdb20,
+                mid_init$_0640e6acf969ed28,
+                mid_computeMeanEquinoctialSecondOrderTerms_3cadce1f0ff01a88,
+                mid_computeMeanEquinoctialSecondOrderTerms_b35994dcdbf40b4e,
+                mid_finalize_0640e6acf969ed28,
+                mid_pythonDecRef_0640e6acf969ed28,
+                mid_pythonExtension_9e26256fb0d384a2,
+                mid_pythonExtension_3cd6a6b354c6aa22,
                 max_mid
               };
 

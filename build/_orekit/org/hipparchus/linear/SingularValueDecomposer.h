@@ -26,8 +26,8 @@ namespace org {
       class SingularValueDecomposer : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_decompose_6832546eac694082,
+          mid_init$_0640e6acf969ed28,
+          mid_decompose_3f89101650640015,
           max_mid
         };
 

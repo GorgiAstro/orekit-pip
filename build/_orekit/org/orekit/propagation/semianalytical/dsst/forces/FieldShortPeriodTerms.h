@@ -3,19 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-  namespace orekit {
-    namespace orbits {
-      class FieldOrbit;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class Map;
@@ -24,6 +11,19 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+    }
+    namespace orbits {
+      class FieldOrbit;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -38,9 +38,9 @@ namespace org {
             class FieldShortPeriodTerms : public ::java::lang::Object {
              public:
               enum {
-                mid_getCoefficients_8ceaa814d240672e,
-                mid_getCoefficientsKeyPrefix_11b109bd155ca898,
-                mid_value_32514bc2dbb6aee5,
+                mid_getCoefficients_34654a764ba0e833,
+                mid_getCoefficientsKeyPrefix_3cffd47377eca18a,
+                mid_value_e1d65e2f6c9d2422,
                 max_mid
               };
 

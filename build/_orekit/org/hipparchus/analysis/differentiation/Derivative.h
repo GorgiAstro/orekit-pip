@@ -25,11 +25,11 @@ namespace org {
         class Derivative : public ::org::hipparchus::CalculusFieldElement {
          public:
           enum {
-            mid_compose_48885a3a6ec88a01,
-            mid_getFreeParameters_570ce0828f81a2c1,
-            mid_getOrder_570ce0828f81a2c1,
-            mid_getPartialDerivative_48330f48ce3d930b,
-            mid_getValue_dff5885c2c873297,
+            mid_compose_c2a9122c04338397,
+            mid_getFreeParameters_412668abc8d889e9,
+            mid_getOrder_412668abc8d889e9,
+            mid_getPartialDerivative_75914fee15aa69bc,
+            mid_getValue_557b8123390d8d0c,
             max_mid
           };
 

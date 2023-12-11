@@ -6,10 +6,10 @@
 namespace org {
   namespace orekit {
     namespace propagation {
+      class FieldSpacecraftState;
       namespace sampling {
         class FieldOrekitStepInterpolator;
       }
-      class FieldSpacecraftState;
       namespace events {
         class FieldEventState$EventOccurrence;
         class FieldEventDetector;
@@ -40,15 +40,15 @@ namespace org {
         class FieldEventState : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_f929ebd2a84dbfe7,
-            mid_doEvent_64e3f7fbad9633b0,
-            mid_evaluateStep_9e297a99a072e460,
-            mid_getEventDate_51da00d5b8a3b5df,
-            mid_getEventDetector_4fe06ecc019ea51d,
-            mid_getPendingEvent_b108b35ef48e27bd,
-            mid_init_8e8de2be1664674a,
-            mid_reinitializeBegin_edb529c141e8d4a9,
-            mid_tryAdvance_0c4e1f72634cc9b1,
+            mid_init$_2ffeff0ffaf1deef,
+            mid_doEvent_f05b1228908fdafd,
+            mid_evaluateStep_5c5863fec6dd24f0,
+            mid_getEventDate_f1fe4daf77c66560,
+            mid_getEventDetector_07d9256595c42b86,
+            mid_getPendingEvent_89b302893bdbe1f1,
+            mid_init_811e49dad2467b67,
+            mid_reinitializeBegin_c006764357a9d9b2,
+            mid_tryAdvance_d2e09743b2212992,
             max_mid
           };
 

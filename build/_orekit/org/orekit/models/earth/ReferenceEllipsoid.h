@@ -31,18 +31,18 @@ namespace org {
         class ReferenceEllipsoid : public ::org::orekit::bodies::OneAxisEllipsoid {
          public:
           enum {
-            mid_init$_466092543ed377c2,
-            mid_getC2n0_46f85b53d9aedd96,
-            mid_getEllipsoid_eead5b864957d48b,
-            mid_getGM_dff5885c2c873297,
-            mid_getGrs80_04ae7ff6f8a973b9,
-            mid_getIers2003_04ae7ff6f8a973b9,
-            mid_getIers2010_04ae7ff6f8a973b9,
-            mid_getIers96_04ae7ff6f8a973b9,
-            mid_getNormalGravity_dcbc7ce2902fa136,
-            mid_getPolarRadius_dff5885c2c873297,
-            mid_getSpin_dff5885c2c873297,
-            mid_getWgs84_04ae7ff6f8a973b9,
+            mid_init$_dc7300a4d004d885,
+            mid_getC2n0_69cfb132c661aca4,
+            mid_getEllipsoid_576f0b44e8384336,
+            mid_getGM_557b8123390d8d0c,
+            mid_getGrs80_039ba5d4c7fe1b86,
+            mid_getIers2003_039ba5d4c7fe1b86,
+            mid_getIers2010_039ba5d4c7fe1b86,
+            mid_getIers96_039ba5d4c7fe1b86,
+            mid_getNormalGravity_7e960cd6eee376d8,
+            mid_getPolarRadius_557b8123390d8d0c,
+            mid_getSpin_557b8123390d8d0c,
+            mid_getWgs84_039ba5d4c7fe1b86,
             max_mid
           };
 

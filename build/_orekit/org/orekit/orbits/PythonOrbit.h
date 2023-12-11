@@ -3,6 +3,13 @@
 
 #include "org/orekit/orbits/Orbit.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+    class IllegalArgumentException;
+  }
+}
 namespace org {
   namespace orekit {
     namespace orbits {
@@ -29,13 +36,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-    class IllegalArgumentException;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -45,40 +45,40 @@ namespace org {
       class PythonOrbit : public ::org::orekit::orbits::Orbit {
        public:
         enum {
-          mid_init$_7753eee512deef45,
-          mid_init$_0411787cdbbfc137,
-          mid_addKeplerContribution_f2365c7dd61a1cda,
-          mid_computeJacobianEccentricWrtCartesian_0358d8ea02f2cdb1,
-          mid_computeJacobianMeanWrtCartesian_0358d8ea02f2cdb1,
-          mid_computeJacobianTrueWrtCartesian_0358d8ea02f2cdb1,
-          mid_finalize_0fa09c18fee449d5,
-          mid_getA_dff5885c2c873297,
-          mid_getADot_dff5885c2c873297,
-          mid_getE_dff5885c2c873297,
-          mid_getEDot_dff5885c2c873297,
-          mid_getEquinoctialEx_dff5885c2c873297,
-          mid_getEquinoctialExDot_dff5885c2c873297,
-          mid_getEquinoctialEy_dff5885c2c873297,
-          mid_getEquinoctialEyDot_dff5885c2c873297,
-          mid_getHx_dff5885c2c873297,
-          mid_getHxDot_dff5885c2c873297,
-          mid_getHy_dff5885c2c873297,
-          mid_getHyDot_dff5885c2c873297,
-          mid_getI_dff5885c2c873297,
-          mid_getIDot_dff5885c2c873297,
-          mid_getLE_dff5885c2c873297,
-          mid_getLEDot_dff5885c2c873297,
-          mid_getLM_dff5885c2c873297,
-          mid_getLMDot_dff5885c2c873297,
-          mid_getLv_dff5885c2c873297,
-          mid_getLvDot_dff5885c2c873297,
-          mid_getType_e29360d311dc0e20,
-          mid_initPVCoordinates_c204436deca11d94,
-          mid_initPosition_d52645e0d4c07563,
-          mid_pythonDecRef_0fa09c18fee449d5,
-          mid_pythonExtension_492808a339bfa35f,
-          mid_pythonExtension_3a8e7649f31fdb20,
-          mid_shiftedBy_3f8b433edd9f6aeb,
+          mid_init$_7c6479063e790949,
+          mid_init$_511409a69796653b,
+          mid_addKeplerContribution_9dda16418cc4ed80,
+          mid_computeJacobianEccentricWrtCartesian_8cf5267aa13a77f3,
+          mid_computeJacobianMeanWrtCartesian_8cf5267aa13a77f3,
+          mid_computeJacobianTrueWrtCartesian_8cf5267aa13a77f3,
+          mid_finalize_0640e6acf969ed28,
+          mid_getA_557b8123390d8d0c,
+          mid_getADot_557b8123390d8d0c,
+          mid_getE_557b8123390d8d0c,
+          mid_getEDot_557b8123390d8d0c,
+          mid_getEquinoctialEx_557b8123390d8d0c,
+          mid_getEquinoctialExDot_557b8123390d8d0c,
+          mid_getEquinoctialEy_557b8123390d8d0c,
+          mid_getEquinoctialEyDot_557b8123390d8d0c,
+          mid_getHx_557b8123390d8d0c,
+          mid_getHxDot_557b8123390d8d0c,
+          mid_getHy_557b8123390d8d0c,
+          mid_getHyDot_557b8123390d8d0c,
+          mid_getI_557b8123390d8d0c,
+          mid_getIDot_557b8123390d8d0c,
+          mid_getLE_557b8123390d8d0c,
+          mid_getLEDot_557b8123390d8d0c,
+          mid_getLM_557b8123390d8d0c,
+          mid_getLMDot_557b8123390d8d0c,
+          mid_getLv_557b8123390d8d0c,
+          mid_getLvDot_557b8123390d8d0c,
+          mid_getType_2cea2a2cb3e02091,
+          mid_initPVCoordinates_daf15abc21907508,
+          mid_initPosition_f88961cca75a2c0a,
+          mid_pythonDecRef_0640e6acf969ed28,
+          mid_pythonExtension_9e26256fb0d384a2,
+          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_shiftedBy_47d1046ffc445a6a,
           max_mid
         };
 

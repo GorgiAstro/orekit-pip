@@ -4,12 +4,12 @@
 #include "org/orekit/files/ilrs/CRDConfiguration$BaseConfiguration.h"
 
 namespace java {
-  namespace util {
-    class List;
-  }
   namespace lang {
     class String;
     class Class;
+  }
+  namespace util {
+    class List;
   }
 }
 template<class T> class JArray;
@@ -22,15 +22,15 @@ namespace org {
         class CRDConfiguration$SystemConfiguration : public ::org::orekit::files::ilrs::CRDConfiguration$BaseConfiguration {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_getComponents_2afa36052df4765d,
-            mid_getSystemId_11b109bd155ca898,
-            mid_getWavelength_dff5885c2c873297,
-            mid_setComponents_b8ac5bb33398c2cf,
-            mid_setSystemId_d0bc48d5b00dc40c,
-            mid_setWavelength_17db3a65980d3441,
-            mid_toCrdString_11b109bd155ca898,
-            mid_toString_11b109bd155ca898,
+            mid_init$_0640e6acf969ed28,
+            mid_getComponents_0d9551367f7ecdef,
+            mid_getSystemId_3cffd47377eca18a,
+            mid_getWavelength_557b8123390d8d0c,
+            mid_setComponents_cb4082327a3ebdc5,
+            mid_setSystemId_f5ffdf29129ef90a,
+            mid_setWavelength_10f281d777284cea,
+            mid_toCrdString_3cffd47377eca18a,
+            mid_toString_3cffd47377eca18a,
             max_mid
           };
 

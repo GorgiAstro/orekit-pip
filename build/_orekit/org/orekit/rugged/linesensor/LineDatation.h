@@ -25,9 +25,9 @@ namespace org {
         class LineDatation : public ::java::lang::Object {
          public:
           enum {
-            mid_getDate_149a9211a037d799,
-            mid_getLine_bf1d7732f1acb697,
-            mid_getRate_dcbc7ce2902fa136,
+            mid_getDate_8ef471ef852a9678,
+            mid_getLine_b0b988f941da47d8,
+            mid_getRate_7e960cd6eee376d8,
             max_mid
           };
 

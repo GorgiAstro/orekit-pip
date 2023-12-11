@@ -30,15 +30,15 @@ namespace org {
       class PoissonSeriesParser : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_99803b0791f320ff,
-          mid_parse_86004db4ac2d5290,
-          mid_withDoodson_ab9b99d60dd9b017,
-          mid_withFirstDelaunay_bad66f92d0f51d88,
-          mid_withFirstPlanetary_bad66f92d0f51d88,
-          mid_withGamma_bad66f92d0f51d88,
-          mid_withOptionalColumn_bad66f92d0f51d88,
-          mid_withPolynomialPart_3768b074dfce1760,
-          mid_withSinCos_fda9e5d057f7bd8a,
+          mid_init$_a3da1a935cb37f7b,
+          mid_parse_7bc0c72c38f7f723,
+          mid_withDoodson_26b8a2a75a89e12b,
+          mid_withFirstDelaunay_2098ad57f676ba38,
+          mid_withFirstPlanetary_2098ad57f676ba38,
+          mid_withGamma_2098ad57f676ba38,
+          mid_withOptionalColumn_2098ad57f676ba38,
+          mid_withPolynomialPart_fc61e1684ac4d72c,
+          mid_withSinCos_12c525c604f68c4f,
           max_mid
         };
 

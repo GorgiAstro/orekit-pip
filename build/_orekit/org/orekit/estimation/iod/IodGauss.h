@@ -4,6 +4,15 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace estimation {
       namespace measurements {
@@ -19,15 +28,6 @@ namespace org {
     }
     namespace orbits {
       class Orbit;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
     }
   }
 }
@@ -46,10 +46,10 @@ namespace org {
         class IodGauss : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_17db3a65980d3441,
-            mid_estimate_12719eba39e9d7d3,
-            mid_estimate_e5fb064d6de252af,
-            mid_estimate_bba28df4d6850362,
+            mid_init$_10f281d777284cea,
+            mid_estimate_3e39f730636f7cb8,
+            mid_estimate_826da74c81b95475,
+            mid_estimate_859de450efe65f47,
             max_mid
           };
 

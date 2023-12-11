@@ -8,8 +8,8 @@ namespace org {
     namespace estimation {
       namespace measurements {
         namespace gnss {
-          class Dipole;
           class InterSatellitesWindUp;
+          class Dipole;
         }
       }
     }
@@ -34,8 +34,8 @@ namespace org {
           class InterSatellitesWindUpFactory : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_getWindUp_fa7048f68d3cf24a,
+              mid_init$_0640e6acf969ed28,
+              mid_getWindUp_8cbc5ddb9df3a024,
               max_mid
             };
 

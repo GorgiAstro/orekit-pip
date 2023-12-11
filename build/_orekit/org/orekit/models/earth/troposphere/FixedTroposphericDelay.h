@@ -3,35 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace models {
-      namespace earth {
-        namespace troposphere {
-          class FixedTroposphericDelay;
-          class DiscreteTroposphericModel;
-        }
-      }
-    }
-    namespace data {
-      class DataProvidersManager;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-    namespace bodies {
-      class FieldGeodeticPoint;
-      class GeodeticPoint;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -39,6 +10,35 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace bodies {
+      class GeodeticPoint;
+      class FieldGeodeticPoint;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace models {
+      namespace earth {
+        namespace troposphere {
+          class DiscreteTroposphericModel;
+          class FixedTroposphericDelay;
+        }
+      }
+    }
+    namespace data {
+      class DataProvidersManager;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -52,13 +52,13 @@ namespace org {
           class FixedTroposphericDelay : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_d0bc48d5b00dc40c,
-              mid_init$_63232a42a5419b09,
-              mid_init$_2656072909750fef,
-              mid_getDefaultModel_fb351a86def9fdc1,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_pathDelay_ff7a895eb6f0af2e,
-              mid_pathDelay_fe3b5c46874ab115,
+              mid_init$_f5ffdf29129ef90a,
+              mid_init$_28c7bdc075bb74e8,
+              mid_init$_fa8d638c79b33265,
+              mid_getDefaultModel_f6291ba3968b7789,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_pathDelay_a4fdd877b349d4a6,
+              mid_pathDelay_129678f244f63094,
               max_mid
             };
 

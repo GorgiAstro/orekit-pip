@@ -4,12 +4,12 @@
 #include "org/orekit/data/AbstractSelfFeedingLoader.h"
 
 namespace java {
-  namespace text {
-    class ParseException;
-  }
   namespace io {
     class IOException;
     class InputStream;
+  }
+  namespace text {
+    class ParseException;
   }
   namespace lang {
     class Class;
@@ -18,19 +18,19 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataProvidersManager;
-      class DataLoader;
-    }
-    namespace time {
-      class DateTimeComponents;
-    }
     namespace models {
       namespace earth {
         namespace troposphere {
           class ViennaModelType;
         }
       }
+    }
+    namespace data {
+      class DataLoader;
+      class DataProvidersManager;
+    }
+    namespace time {
+      class DateTimeComponents;
     }
   }
 }
@@ -45,16 +45,16 @@ namespace org {
           class ViennaModelCoefficientsLoader : public ::org::orekit::data::AbstractSelfFeedingLoader {
            public:
             enum {
-              mid_init$_10464a1e1406b2a8,
-              mid_init$_e2acdcd5ca89a6e6,
-              mid_init$_615a551bd8547b2e,
-              mid_getA_60c7040667a7dc5c,
-              mid_getSupportedNames_11b109bd155ca898,
-              mid_getZenithDelay_60c7040667a7dc5c,
-              mid_loadData_1815f85c118161ad,
-              mid_loadViennaCoefficients_0fa09c18fee449d5,
-              mid_loadViennaCoefficients_4d63b530baf1ccb7,
-              mid_stillAcceptsData_b108b35ef48e27bd,
+              mid_init$_7c93207b27c1d5d1,
+              mid_init$_7decaa8221e502f9,
+              mid_init$_e8b83fa5b312fd3e,
+              mid_getA_a53a7513ecedada2,
+              mid_getSupportedNames_3cffd47377eca18a,
+              mid_getZenithDelay_a53a7513ecedada2,
+              mid_loadData_15770e8d8949a557,
+              mid_loadViennaCoefficients_0640e6acf969ed28,
+              mid_loadViennaCoefficients_f86c144703aac3d6,
+              mid_stillAcceptsData_89b302893bdbe1f1,
               max_mid
             };
 

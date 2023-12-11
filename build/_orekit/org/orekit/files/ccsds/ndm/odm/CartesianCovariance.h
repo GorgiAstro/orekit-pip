@@ -3,8 +3,26 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
+namespace java {
+  namespace util {
+    namespace function {
+      class Supplier;
+    }
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
+    }
+  }
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace files {
       namespace ccsds {
         namespace section {
@@ -15,24 +33,6 @@ namespace org {
         }
       }
     }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    namespace linear {
-      class RealMatrix;
-    }
-  }
-}
-namespace java {
-  namespace util {
-    namespace function {
-      class Supplier;
-    }
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -47,14 +47,14 @@ namespace org {
             class CartesianCovariance : public ::org::orekit::files::ccsds::section::CommentsContainer {
              public:
               enum {
-                mid_init$_4c1598888ef52491,
-                mid_getCovarianceMatrix_688b496048ff947b,
-                mid_getEpoch_85703d13e302437e,
-                mid_getReferenceFrame_5d5dd95b04037824,
-                mid_setCovarianceMatrixEntry_1506189166690b5e,
-                mid_setEpoch_600a2a61652bc473,
-                mid_setReferenceFrame_849bc9e3b38b9bcb,
-                mid_validate_17db3a65980d3441,
+                mid_init$_d1f229fbdda3f023,
+                mid_getCovarianceMatrix_70a207fcbc031df2,
+                mid_getEpoch_7a97f7e149e79afb,
+                mid_getReferenceFrame_98f5fcaff3e3f9d2,
+                mid_setCovarianceMatrixEntry_754312f3734d6e2f,
+                mid_setEpoch_20affcbd28542333,
+                mid_setReferenceFrame_f55eee1236275bb1,
+                mid_validate_10f281d777284cea,
                 max_mid
               };
 

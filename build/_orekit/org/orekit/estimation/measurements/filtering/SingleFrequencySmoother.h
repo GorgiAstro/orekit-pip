@@ -14,15 +14,15 @@ namespace org {
       }
     }
     namespace gnss {
+      class ObservationType;
       class SatelliteSystem;
       class MeasurementType;
-      class ObservationType;
     }
     namespace estimation {
       namespace measurements {
         namespace filtering {
-          class SingleFrequencyHatchFilter;
           class SmoothedObservationDataSet;
+          class SingleFrequencyHatchFilter;
         }
       }
     }
@@ -48,12 +48,12 @@ namespace org {
           class SingleFrequencySmoother : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_e7ac04e1ff03d0a2,
-              mid_copyObservationData_a2626020949c0710,
-              mid_createFilter_e1080ec0c25a2b2c,
-              mid_filterDataSet_e781233a691e29e8,
-              mid_getFilteredDataMap_16a1de631a9b7527,
-              mid_getMapFilters_16a1de631a9b7527,
+              mid_init$_6c94f1a23ed7c29a,
+              mid_copyObservationData_f6f450be0ab92fea,
+              mid_createFilter_d3b5cedf330d3f01,
+              mid_filterDataSet_262da5617a6dd751,
+              mid_getFilteredDataMap_2bd3906654d055d1,
+              mid_getMapFilters_2bd3906654d055d1,
               max_mid
             };
 

@@ -15,13 +15,13 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeScales;
-    }
     namespace files {
       namespace sp3 {
         class SP3;
       }
+    }
+    namespace time {
+      class TimeScales;
     }
   }
 }
@@ -35,8 +35,8 @@ namespace org {
         class SP3Writer : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_90c3127910aa39b7,
-            mid_write_dcc7ce1f19d79b1d,
+            mid_init$_7db31472897430b1,
+            mid_write_5e3a00a527a3c075,
             max_mid
           };
 

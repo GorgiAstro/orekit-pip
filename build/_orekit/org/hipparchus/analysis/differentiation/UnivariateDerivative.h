@@ -3,6 +3,20 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace analysis {
+      namespace differentiation {
+        class Derivative;
+        class UnivariateDerivative;
+        class DerivativeStructure;
+      }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+  }
+}
 namespace java {
   namespace io {
     class Serializable;
@@ -10,20 +24,6 @@ namespace java {
   namespace lang {
     class Class;
     class Comparable;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace analysis {
-      namespace differentiation {
-        class Derivative;
-        class DerivativeStructure;
-        class UnivariateDerivative;
-      }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
   }
 }
 template<class T> class JArray;
@@ -36,11 +36,11 @@ namespace org {
         class UnivariateDerivative : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_getDerivative_46f85b53d9aedd96,
-            mid_getFreeParameters_570ce0828f81a2c1,
-            mid_getPartialDerivative_48330f48ce3d930b,
-            mid_toDerivativeStructure_73e277cbd957031a,
+            mid_init$_0640e6acf969ed28,
+            mid_getDerivative_69cfb132c661aca4,
+            mid_getFreeParameters_412668abc8d889e9,
+            mid_getPartialDerivative_75914fee15aa69bc,
+            mid_toDerivativeStructure_9f40c2a430225d38,
             max_mid
           };
 

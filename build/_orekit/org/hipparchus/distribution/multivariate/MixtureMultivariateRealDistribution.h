@@ -14,11 +14,11 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace util {
-      class Pair;
-    }
     namespace random {
       class RandomGenerator;
+    }
+    namespace util {
+      class Pair;
     }
   }
 }
@@ -32,12 +32,12 @@ namespace org {
         class MixtureMultivariateRealDistribution : public ::org::hipparchus::distribution::multivariate::AbstractMultivariateRealDistribution {
          public:
           enum {
-            mid_init$_de3e021e7266b71e,
-            mid_init$_a3d6463b27f37fbe,
-            mid_density_9dc1ec0bcc0a9a29,
-            mid_getComponents_2afa36052df4765d,
-            mid_reseedRandomGenerator_3a8e7649f31fdb20,
-            mid_sample_60c7040667a7dc5c,
+            mid_init$_4ccaedadb068bdeb,
+            mid_init$_6ec0adca852af91a,
+            mid_density_86c4a0582e0747ce,
+            mid_getComponents_0d9551367f7ecdef,
+            mid_reseedRandomGenerator_3cd6a6b354c6aa22,
+            mid_sample_a53a7513ecedada2,
             max_mid
           };
 

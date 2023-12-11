@@ -10,8 +10,8 @@ namespace org {
         namespace ndm {
           namespace odm {
             namespace omm {
-              class OmmTleKey;
               class OmmTle;
+              class OmmTleKey;
             }
           }
         }
@@ -44,9 +44,9 @@ namespace org {
               class OmmTleKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_e39ab38fcea2570f,
-                  mid_valueOf_a91badf73e7c2c46,
-                  mid_values_c93389304b0e14f1,
+                  mid_process_a0ba3873c2275559,
+                  mid_valueOf_dc5c2d929549cd5d,
+                  mid_values_49a67daa00f555d9,
                   max_mid
                 };
 

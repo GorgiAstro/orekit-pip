@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace complex {
-      class FieldComplex;
-      class FieldComplexField;
-    }
     class Field;
+    namespace complex {
+      class FieldComplexField;
+      class FieldComplex;
+    }
   }
 }
 namespace java {
@@ -26,12 +26,12 @@ namespace org {
       class FieldComplexField : public ::java::lang::Object {
        public:
         enum {
-          mid_equals_65c7d273e80d497a,
-          mid_getField_560e9f4ec935da98,
-          mid_getOne_ded2d2c0c0e6239b,
-          mid_getRuntimeClass_7c16c5008b34b3db,
-          mid_getZero_ded2d2c0c0e6239b,
-          mid_hashCode_570ce0828f81a2c1,
+          mid_equals_221e8e85cb385209,
+          mid_getField_ce9ae1019f40cd7c,
+          mid_getOne_bfc6d3bb8e8278b9,
+          mid_getRuntimeClass_d4b191ff8147475d,
+          mid_getZero_bfc6d3bb8e8278b9,
+          mid_hashCode_412668abc8d889e9,
           max_mid
         };
 

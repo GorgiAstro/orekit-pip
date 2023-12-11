@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -35,6 +27,14 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -44,17 +44,17 @@ namespace org {
       class Ellipsoid : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a5d66ee321de235c,
-          mid_getA_dff5885c2c873297,
-          mid_getB_dff5885c2c873297,
-          mid_getC_dff5885c2c873297,
-          mid_getFrame_b86f9f61d97a7244,
-          mid_getPlaneSection_2e3bc4c6568da5d5,
-          mid_getPlaneSection_dc0ab9a321179f6f,
-          mid_isInside_19ce44a30ac2c75e,
-          mid_isInside_ab4ed00ccf0defd6,
-          mid_pointOnLimb_9dc4d243618c0821,
-          mid_pointOnLimb_e2a27ed5c4e12f6f,
+          mid_init$_563f09c906576b6f,
+          mid_getA_557b8123390d8d0c,
+          mid_getB_557b8123390d8d0c,
+          mid_getC_557b8123390d8d0c,
+          mid_getFrame_6c9bc0a928c56d4e,
+          mid_getPlaneSection_8bcf26874b6ac495,
+          mid_getPlaneSection_0c53fe7c07ad58f7,
+          mid_isInside_7a86ea6adaa11bf8,
+          mid_isInside_7ccf3b3f40d5fcd3,
+          mid_pointOnLimb_b3579c1d2113481e,
+          mid_pointOnLimb_720ad0a891308b00,
           max_mid
         };
 

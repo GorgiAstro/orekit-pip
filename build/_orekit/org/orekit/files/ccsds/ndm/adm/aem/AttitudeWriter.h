@@ -3,9 +3,23 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace io {
+    class IOException;
+  }
+  namespace lang {
+    class Appendable;
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
+      namespace general {
+        class AttitudeEphemerisFileWriter;
+        class AttitudeEphemerisFile;
+      }
       namespace ccsds {
         namespace ndm {
           namespace adm {
@@ -20,21 +34,7 @@ namespace org {
           class FileFormat;
         }
       }
-      namespace general {
-        class AttitudeEphemerisFileWriter;
-        class AttitudeEphemerisFile;
-      }
     }
-  }
-}
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace lang {
-    class Appendable;
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -50,8 +50,8 @@ namespace org {
               class AttitudeWriter : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_7ab38667c66f9189,
-                  mid_write_9b09ecef0da8f461,
+                  mid_init$_a682dbe47c2f2556,
+                  mid_write_dd179231c59f3177,
                   max_mid
                 };
 

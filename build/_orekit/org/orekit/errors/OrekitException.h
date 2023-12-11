@@ -15,16 +15,16 @@ namespace java {
   }
 }
 namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class Localizable;
-      class MathRuntimeException;
-    }
-  }
   namespace orekit {
     namespace errors {
       class LocalizedException;
       class OrekitException;
+    }
+  }
+  namespace hipparchus {
+    namespace exception {
+      class MathRuntimeException;
+      class Localizable;
     }
   }
 }
@@ -37,16 +37,16 @@ namespace org {
       class OrekitException : public ::java::lang::RuntimeException {
        public:
         enum {
-          mid_init$_b82e021312358546,
-          mid_init$_d0cf82c16a7e8751,
-          mid_init$_ff2c638d27c87622,
-          mid_init$_6ecc3fd6067c266c,
-          mid_getLocalizedMessage_11b109bd155ca898,
-          mid_getMessage_11b109bd155ca898,
-          mid_getMessage_3cd873bfb132c4fd,
-          mid_getParts_b93c730013ce64c6,
-          mid_getSpecifier_517615caa9b88a24,
-          mid_unwrap_70dc890dae923211,
+          mid_init$_5a362f030f21d160,
+          mid_init$_4fde7f3f87bbd6f7,
+          mid_init$_7e3eb40b1c2d2586,
+          mid_init$_0ff5a331e85ddf14,
+          mid_getLocalizedMessage_3cffd47377eca18a,
+          mid_getMessage_3cffd47377eca18a,
+          mid_getMessage_4b51060c6b7ea981,
+          mid_getParts_6555a5198c71b73a,
+          mid_getSpecifier_a86d7419cf3241b7,
+          mid_unwrap_b461ed04f2b877b6,
           max_mid
         };
 

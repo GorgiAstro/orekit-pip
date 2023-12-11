@@ -41,9 +41,9 @@ namespace org {
             class AdditionalParametersKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_09b7f0115d6b12b9,
-                mid_valueOf_f32bcbc2d591ad53,
-                mid_values_a6324c8893c479eb,
+                mid_process_4dded83b8b2e78c2,
+                mid_valueOf_11fe4c995a2893ab,
+                mid_values_ef7ca7f6f85c90c1,
                 max_mid
               };
 

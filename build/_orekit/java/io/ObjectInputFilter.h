@@ -20,7 +20,7 @@ namespace java {
     class ObjectInputFilter : public ::java::lang::Object {
      public:
       enum {
-        mid_checkInput_eb079c906b147a76,
+        mid_checkInput_e04658988b631719,
         max_mid
       };
 

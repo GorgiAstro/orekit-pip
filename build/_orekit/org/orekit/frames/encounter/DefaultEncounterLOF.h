@@ -8,10 +8,10 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Rotation;
           class FieldVector3D;
-          class FieldRotation;
           class Vector3D;
+          class Rotation;
+          class FieldRotation;
         }
       }
     }
@@ -40,13 +40,13 @@ namespace org {
         class DefaultEncounterLOF : public ::org::orekit::frames::encounter::AbstractEncounterLOF {
          public:
           enum {
-            mid_init$_bb3f88d6e1120c95,
-            mid_init$_0cd9ca2f4cf79e0a,
-            mid_getAxisNormalToCollisionPlane_d52645e0d4c07563,
-            mid_getAxisNormalToCollisionPlane_202e7b3b5ed01afc,
-            mid_getName_11b109bd155ca898,
-            mid_rotationFromInertial_d59b144da7c7851f,
-            mid_rotationFromInertial_2ba248090f65b129,
+            mid_init$_fa7831ef12a1aeba,
+            mid_init$_dd80faf626f5319e,
+            mid_getAxisNormalToCollisionPlane_f88961cca75a2c0a,
+            mid_getAxisNormalToCollisionPlane_3a465a0c08d1dbdf,
+            mid_getName_3cffd47377eca18a,
+            mid_rotationFromInertial_0158ab79fb625627,
+            mid_rotationFromInertial_ea6e3434436b926f,
             max_mid
           };
 

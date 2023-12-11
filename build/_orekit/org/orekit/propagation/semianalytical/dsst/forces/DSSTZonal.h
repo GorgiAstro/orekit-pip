@@ -4,26 +4,23 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
+      class PropagationType;
+      class FieldSpacecraftState;
       namespace semianalytical {
         namespace dsst {
-          namespace forces {
-            class DSSTForceModel;
-            class ShortPeriodTerms;
-            class FieldShortPeriodTerms;
-          }
           namespace utilities {
-            class FieldAuxiliaryElements;
             class AuxiliaryElements;
+            class FieldAuxiliaryElements;
+          }
+          namespace forces {
+            class FieldShortPeriodTerms;
+            class ShortPeriodTerms;
+            class DSSTForceModel;
           }
         }
       }
-      class FieldSpacecraftState;
-      class PropagationType;
       class SpacecraftState;
     }
     namespace forces {
@@ -33,12 +30,15 @@ namespace org {
         }
       }
     }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
     namespace utils {
       class ParameterDriver;
     }
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -62,17 +62,17 @@ namespace org {
             class DSSTZonal : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a30010a3362089e6,
-                mid_init$_c746a94bc718e759,
-                mid_getMeanElementRate_c0df8831049775b0,
-                mid_getMeanElementRate_5dbca2d049b16b82,
-                mid_getParametersDrivers_2afa36052df4765d,
-                mid_getProvider_137abdb234636c0e,
-                mid_initializeShortPeriodTerms_cd6a8183d9477030,
-                mid_initializeShortPeriodTerms_c7d75d32fd67f743,
-                mid_registerAttitudeProvider_3cff7c75ea06698c,
-                mid_updateShortPeriodTerms_120865f9c5cc3bda,
-                mid_updateShortPeriodTerms_a9748e634dd1c969,
+                mid_init$_824898e59eddfa6c,
+                mid_init$_78ed1711d05b4189,
+                mid_getMeanElementRate_6930c150caff50e0,
+                mid_getMeanElementRate_3573019cca22a7a6,
+                mid_getParametersDrivers_0d9551367f7ecdef,
+                mid_getProvider_72fe1f11b4245c25,
+                mid_initializeShortPeriodTerms_57b295149dcd4abd,
+                mid_initializeShortPeriodTerms_0791dbeb06a23554,
+                mid_registerAttitudeProvider_8fa6c0c067ead7b2,
+                mid_updateShortPeriodTerms_a9be3da5be85857d,
+                mid_updateShortPeriodTerms_114c99ef73dfde56,
                 max_mid
               };
 
@@ -92,8 +92,8 @@ namespace org {
               DSSTZonal(const ::org::orekit::forces::gravity::potential::UnnormalizedSphericalHarmonicsProvider &);
               DSSTZonal(const ::org::orekit::forces::gravity::potential::UnnormalizedSphericalHarmonicsProvider &, jint, jint, jint);
 
-              JArray< ::org::hipparchus::CalculusFieldElement > getMeanElementRate(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::FieldAuxiliaryElements &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
               JArray< jdouble > getMeanElementRate(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::AuxiliaryElements &, const JArray< jdouble > &) const;
+              JArray< ::org::hipparchus::CalculusFieldElement > getMeanElementRate(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::FieldAuxiliaryElements &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
               ::java::util::List getParametersDrivers() const;
               ::org::orekit::forces::gravity::potential::UnnormalizedSphericalHarmonicsProvider getProvider() const;
               ::java::util::List initializeShortPeriodTerms(const ::org::orekit::propagation::semianalytical::dsst::utilities::AuxiliaryElements &, const ::org::orekit::propagation::PropagationType &, const JArray< jdouble > &) const;

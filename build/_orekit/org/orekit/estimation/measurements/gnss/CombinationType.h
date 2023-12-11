@@ -31,9 +31,9 @@ namespace org {
           class CombinationType : public ::java::lang::Enum {
            public:
             enum {
-              mid_getName_11b109bd155ca898,
-              mid_valueOf_b34d4427fb07a623,
-              mid_values_ed1fafe12983a149,
+              mid_getName_3cffd47377eca18a,
+              mid_valueOf_d8f63fa0f38d087e,
+              mid_values_bb870966667cab72,
               max_mid
             };
 

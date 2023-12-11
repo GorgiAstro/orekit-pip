@@ -4,13 +4,13 @@
 #include "java/lang/Object.h"
 
 namespace java {
+  namespace io {
+    class IOException;
+  }
   namespace lang {
     class Appendable;
     class Class;
     class CharSequence;
-  }
-  namespace io {
-    class IOException;
   }
 }
 template<class T> class JArray;
@@ -21,9 +21,9 @@ namespace java {
     class Appendable : public ::java::lang::Object {
      public:
       enum {
-        mid_append_a2f2e916ce1d7f9b,
-        mid_append_c76ba1b7146e9ce3,
-        mid_append_becdfeab9d438f52,
+        mid_append_248283abf10276d1,
+        mid_append_dd8e8c1ababf14e4,
+        mid_append_938115f399e5c06f,
         max_mid
       };
 

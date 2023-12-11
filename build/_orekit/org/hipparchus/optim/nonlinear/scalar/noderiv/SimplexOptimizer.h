@@ -29,11 +29,11 @@ namespace org {
             class SimplexOptimizer : public ::org::hipparchus::optim::nonlinear::scalar::MultivariateOptimizer {
              public:
               enum {
-                mid_init$_a5d0ffcf0a6327fe,
-                mid_init$_8f2e782d5278b131,
-                mid_optimize_d70788483e9a9a2c,
-                mid_parseOptimizationData_3d26e9f3a1d7e833,
-                mid_doOptimize_4ae915e35f441d39,
+                mid_init$_38783cba7e493c69,
+                mid_init$_ab23f4ae0fb33968,
+                mid_optimize_428d2547a0c45016,
+                mid_doOptimize_adf293b2643f22b0,
+                mid_parseOptimizationData_946a92401917c130,
                 max_mid
               };
 

@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
 }
@@ -27,7 +27,7 @@ namespace org {
       class ParameterFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_value_68971d186049f4f1,
+          mid_value_ceb9685d0630065e,
           max_mid
         };
 

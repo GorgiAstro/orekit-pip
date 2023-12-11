@@ -5,22 +5,22 @@
 
 namespace org {
   namespace orekit {
+    namespace orbits {
+      class Orbit;
+      class OrbitType;
+      class PositionAngleType;
+    }
     namespace time {
+      class TimeInterpolator;
       class AbstractTimeInterpolator$InterpolationData;
       class TimeStampedPair;
-      class TimeInterpolator;
+    }
+    namespace frames {
+      class Frame;
+      class LOFType;
     }
     namespace propagation {
       class StateCovariance;
-    }
-    namespace frames {
-      class LOFType;
-      class Frame;
-    }
-    namespace orbits {
-      class PositionAngleType;
-      class Orbit;
-      class OrbitType;
     }
   }
 }
@@ -38,17 +38,17 @@ namespace org {
       class AbstractStateCovarianceInterpolator : public ::org::orekit::time::AbstractTimeInterpolator {
        public:
         enum {
-          mid_init$_5f0807e7942c7d7c,
-          mid_init$_7b4aa1d843c89a93,
-          mid_getOrbitInterpolator_1d0d15c75b6b7aca,
-          mid_getOutFrame_b86f9f61d97a7244,
-          mid_getOutLOF_91870b5ccc8bfe11,
-          mid_getOutOrbitType_e29360d311dc0e20,
-          mid_getOutPositionAngleType_8f17e83e5a86217c,
-          mid_interpolate_fcc939c8c4b4de8b,
-          mid_interpolateOrbit_0577ed07067da9a4,
-          mid_computeInterpolatedCovarianceInOrbitFrame_b3673400c0fde69a,
-          mid_expressCovarianceInDesiredOutput_787125c88b8db04c,
+          mid_init$_49155443553009e5,
+          mid_init$_3d20fdce58d11197,
+          mid_getOrbitInterpolator_1bb20e7ea407bfce,
+          mid_getOutFrame_6c9bc0a928c56d4e,
+          mid_getOutLOF_fc5c5809abf07d72,
+          mid_getOutOrbitType_2cea2a2cb3e02091,
+          mid_getOutPositionAngleType_f4984aee71df4c19,
+          mid_interpolate_78e9037c485fbff2,
+          mid_computeInterpolatedCovarianceInOrbitFrame_1da586432f5e847a,
+          mid_interpolateOrbit_f6ee768c3d6032b8,
+          mid_expressCovarianceInDesiredOutput_808f2b09b980aa21,
           max_mid
         };
 

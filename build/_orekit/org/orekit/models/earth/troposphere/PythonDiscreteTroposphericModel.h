@@ -3,15 +3,27 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-    class Field;
+namespace java {
+  namespace util {
+    class List;
   }
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
+namespace org {
   namespace orekit {
     namespace bodies {
       class GeodeticPoint;
       class FieldGeodeticPoint;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
     namespace models {
       namespace earth {
@@ -20,22 +32,10 @@ namespace org {
         }
       }
     }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
   }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
+  namespace hipparchus {
+    class CalculusFieldElement;
+    class Field;
   }
 }
 template<class T> class JArray;
@@ -49,16 +49,16 @@ namespace org {
           class PythonDiscreteTroposphericModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_finalize_0fa09c18fee449d5,
-              mid_getParameters_60c7040667a7dc5c,
-              mid_getParameters_f040a403cffae196,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_pathDelay_fe3b5c46874ab115,
-              mid_pathDelay_ff7a895eb6f0af2e,
-              mid_pythonDecRef_0fa09c18fee449d5,
-              mid_pythonExtension_492808a339bfa35f,
-              mid_pythonExtension_3a8e7649f31fdb20,
+              mid_init$_0640e6acf969ed28,
+              mid_finalize_0640e6acf969ed28,
+              mid_getParameters_a53a7513ecedada2,
+              mid_getParameters_4ab353685404cfce,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_pathDelay_129678f244f63094,
+              mid_pathDelay_a4fdd877b349d4a6,
+              mid_pythonDecRef_0640e6acf969ed28,
+              mid_pythonExtension_9e26256fb0d384a2,
+              mid_pythonExtension_3cd6a6b354c6aa22,
               max_mid
             };
 

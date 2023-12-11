@@ -17,11 +17,11 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace util {
-      class Pair;
-    }
     namespace exception {
       class MathIllegalArgumentException;
+    }
+    namespace util {
+      class Pair;
     }
   }
 }
@@ -34,10 +34,10 @@ namespace org {
       class EnumeratedDistribution : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_de3e021e7266b71e,
-          mid_checkAndNormalize_ac3d742ccc742f22,
-          mid_getPmf_2afa36052df4765d,
-          mid_probability_ca14d4d45e84aa16,
+          mid_init$_4ccaedadb068bdeb,
+          mid_checkAndNormalize_1db7c087750eaffe,
+          mid_getPmf_0d9551367f7ecdef,
+          mid_probability_30d4f3cd987878bc,
           max_mid
         };
 

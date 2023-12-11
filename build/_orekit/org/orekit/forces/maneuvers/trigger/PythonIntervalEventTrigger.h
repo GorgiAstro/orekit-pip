@@ -39,13 +39,13 @@ namespace org {
           class PythonIntervalEventTrigger : public ::org::orekit::forces::maneuvers::trigger::IntervalEventTrigger {
            public:
             enum {
-              mid_init$_958f8a74aa6ccd6d,
-              mid_convertIntervalDetector_904dccaacafa0db1,
-              mid_finalize_0fa09c18fee449d5,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_pythonDecRef_0fa09c18fee449d5,
-              mid_pythonExtension_492808a339bfa35f,
-              mid_pythonExtension_3a8e7649f31fdb20,
+              mid_init$_f9a3e736b2361f6c,
+              mid_convertIntervalDetector_590bb38060674b63,
+              mid_finalize_0640e6acf969ed28,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_pythonDecRef_0640e6acf969ed28,
+              mid_pythonExtension_9e26256fb0d384a2,
+              mid_pythonExtension_3cd6a6b354c6aa22,
               max_mid
             };
 

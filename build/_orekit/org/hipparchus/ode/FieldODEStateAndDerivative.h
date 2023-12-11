@@ -3,14 +3,14 @@
 
 #include "org/hipparchus/ode/FieldODEState.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -22,11 +22,11 @@ namespace org {
       class FieldODEStateAndDerivative : public ::org::hipparchus::ode::FieldODEState {
        public:
         enum {
-          mid_init$_ee036456c0119d47,
-          mid_init$_924e79cbd5b7c89c,
-          mid_getCompleteDerivative_226a0b2040b1d2e1,
-          mid_getPrimaryDerivative_226a0b2040b1d2e1,
-          mid_getSecondaryDerivative_f2aa3eb7e0b5647f,
+          mid_init$_e9795fccc89fdc2b,
+          mid_init$_176ec9f2d788ac95,
+          mid_getCompleteDerivative_41762fd4377ff26e,
+          mid_getPrimaryDerivative_41762fd4377ff26e,
+          mid_getSecondaryDerivative_9566838049dc0d99,
           max_mid
         };
 

@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace linear {
       class FieldMatrix;
       class FieldDecompositionSolver;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -28,7 +28,7 @@ namespace org {
       class FieldMatrixDecomposer : public ::java::lang::Object {
        public:
         enum {
-          mid_decompose_f65caede4265247f,
+          mid_decompose_b2f65345b24ac236,
           max_mid
         };
 

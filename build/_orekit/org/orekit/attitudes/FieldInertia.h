@@ -4,12 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace attitudes {
-      class FieldInertia;
-      class FieldInertiaAxis;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -17,6 +11,12 @@ namespace org {
           class FieldVector3D;
         }
       }
+    }
+  }
+  namespace orekit {
+    namespace attitudes {
+      class FieldInertia;
+      class FieldInertiaAxis;
     }
   }
 }
@@ -34,13 +34,13 @@ namespace org {
       class FieldInertia : public ::java::lang::Object {
        public:
         enum {
-          mid_getInertiaAxis1_ac55a8ab71ff75ce,
-          mid_getInertiaAxis2_ac55a8ab71ff75ce,
-          mid_getInertiaAxis3_ac55a8ab71ff75ce,
-          mid_momentum_a173408e2b1f78b2,
-          mid_swap12_6b150d4002e93e81,
-          mid_swap13_6b150d4002e93e81,
-          mid_swap23_6b150d4002e93e81,
+          mid_getInertiaAxis1_4745cc6d841a74c0,
+          mid_getInertiaAxis2_4745cc6d841a74c0,
+          mid_getInertiaAxis3_4745cc6d841a74c0,
+          mid_momentum_588ed0f09550adb9,
+          mid_swap12_469ffcb8a6625c58,
+          mid_swap13_469ffcb8a6625c58,
+          mid_swap23_469ffcb8a6625c58,
           max_mid
         };
 

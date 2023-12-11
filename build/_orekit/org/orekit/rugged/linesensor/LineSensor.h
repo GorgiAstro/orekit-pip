@@ -3,37 +3,7 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    namespace stream {
-      class Stream;
-    }
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
-  namespace orekit {
-    namespace rugged {
-      namespace linesensor {
-        class LineDatation;
-      }
-      namespace utils {
-        class DerivativeGenerator;
-      }
-      namespace los {
-        class TimeDependentLOS;
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -42,6 +12,36 @@ namespace org {
           class Vector3D;
         }
       }
+    }
+  }
+  namespace orekit {
+    namespace rugged {
+      namespace linesensor {
+        class LineDatation;
+      }
+      namespace los {
+        class TimeDependentLOS;
+      }
+      namespace utils {
+        class DerivativeGenerator;
+      }
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
+    class String;
+  }
+  namespace util {
+    namespace stream {
+      class Stream;
     }
   }
 }
@@ -55,19 +55,19 @@ namespace org {
         class LineSensor : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_8dd57cbeca7ea1c5,
-            mid_dumpRate_17db3a65980d3441,
-            mid_getDate_149a9211a037d799,
-            mid_getLOS_d13e85cf520666cb,
-            mid_getLOS_0967b903dc4355cb,
-            mid_getLOSDerivatives_6c0d2d70ff47f0b3,
-            mid_getLOSDerivatives_2daacf58d695a774,
-            mid_getLine_bf1d7732f1acb697,
-            mid_getName_11b109bd155ca898,
-            mid_getNbPixels_570ce0828f81a2c1,
-            mid_getParametersDrivers_20f6d2b462aaef4b,
-            mid_getPosition_d52645e0d4c07563,
-            mid_getRate_dcbc7ce2902fa136,
+            mid_init$_d6a5725cfda9eb6a,
+            mid_dumpRate_10f281d777284cea,
+            mid_getDate_8ef471ef852a9678,
+            mid_getLOS_3c56f5b1e29b9eca,
+            mid_getLOS_8bb2c64f904a2a90,
+            mid_getLOSDerivatives_dbc314b6641cc90f,
+            mid_getLOSDerivatives_6d63592424503b42,
+            mid_getLine_b0b988f941da47d8,
+            mid_getName_3cffd47377eca18a,
+            mid_getNbPixels_412668abc8d889e9,
+            mid_getParametersDrivers_d7cce92225eb0db2,
+            mid_getPosition_f88961cca75a2c0a,
+            mid_getRate_7e960cd6eee376d8,
             max_mid
           };
 

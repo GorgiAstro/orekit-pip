@@ -3,15 +3,15 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
     class Field;
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,17 +26,17 @@ namespace org {
             class FieldGHmsjPolynomials : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0eefce751720a9d6,
-                mid_getGmsj_4f221dcfbd8744de,
-                mid_getHmsj_4f221dcfbd8744de,
-                mid_getdGmsdAlpha_4f221dcfbd8744de,
-                mid_getdGmsdBeta_4f221dcfbd8744de,
-                mid_getdGmsdh_4f221dcfbd8744de,
-                mid_getdGmsdk_4f221dcfbd8744de,
-                mid_getdHmsdAlpha_4f221dcfbd8744de,
-                mid_getdHmsdBeta_4f221dcfbd8744de,
-                mid_getdHmsdh_4f221dcfbd8744de,
-                mid_getdHmsdk_4f221dcfbd8744de,
+                mid_init$_0b5445c0e116773e,
+                mid_getGmsj_1e72c6fa8f42834d,
+                mid_getHmsj_1e72c6fa8f42834d,
+                mid_getdGmsdAlpha_1e72c6fa8f42834d,
+                mid_getdGmsdBeta_1e72c6fa8f42834d,
+                mid_getdGmsdh_1e72c6fa8f42834d,
+                mid_getdGmsdk_1e72c6fa8f42834d,
+                mid_getdHmsdAlpha_1e72c6fa8f42834d,
+                mid_getdHmsdBeta_1e72c6fa8f42834d,
+                mid_getdHmsdh_1e72c6fa8f42834d,
+                mid_getdHmsdk_1e72c6fa8f42834d,
                 max_mid
               };
 

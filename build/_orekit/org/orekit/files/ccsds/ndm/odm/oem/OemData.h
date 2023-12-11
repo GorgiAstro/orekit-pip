@@ -3,17 +3,25 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace section {
-          class Data;
-        }
         namespace ndm {
           namespace odm {
             class CartesianCovariance;
           }
+        }
+        namespace section {
+          class Data;
         }
       }
     }
@@ -21,14 +29,6 @@ namespace org {
       class CartesianDerivativesFilter;
       class TimeStampedPVCoordinates;
     }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -44,13 +44,13 @@ namespace org {
               class OemData : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_0fa09c18fee449d5,
-                  mid_addCovarianceMatrix_2ffc54e70be390a1,
-                  mid_addData_edd0506cee437c86,
-                  mid_getAvailableDerivatives_16e9a7b5414faf2d,
-                  mid_getCoordinates_2afa36052df4765d,
-                  mid_getCovarianceMatrices_2afa36052df4765d,
-                  mid_getEphemeridesDataLines_2afa36052df4765d,
+                  mid_init$_0640e6acf969ed28,
+                  mid_addCovarianceMatrix_2b65391e2d141e2e,
+                  mid_addData_ca6146c7df041212,
+                  mid_getAvailableDerivatives_6c4898d6ec0c3837,
+                  mid_getCoordinates_0d9551367f7ecdef,
+                  mid_getCovarianceMatrices_0d9551367f7ecdef,
+                  mid_getEphemeridesDataLines_0d9551367f7ecdef,
                   max_mid
                 };
 

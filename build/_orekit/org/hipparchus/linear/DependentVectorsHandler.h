@@ -15,9 +15,9 @@ namespace java {
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class DependentVectorsHandler;
-      class RealVector;
       class FieldVector;
+      class RealVector;
+      class DependentVectorsHandler;
     }
     class Field;
   }
@@ -31,10 +31,10 @@ namespace org {
       class DependentVectorsHandler : public ::java::lang::Enum {
        public:
         enum {
-          mid_manageDependent_6ff729c408795275,
-          mid_manageDependent_55a90ba7dcaff80c,
-          mid_valueOf_ac716b038b45c93c,
-          mid_values_218cb98788baa394,
+          mid_manageDependent_2870ff50a5bfd52c,
+          mid_manageDependent_9bb5b045c18ca7e5,
+          mid_valueOf_96d403af5010354f,
+          mid_values_0f53356b5d3bc549,
           max_mid
         };
 

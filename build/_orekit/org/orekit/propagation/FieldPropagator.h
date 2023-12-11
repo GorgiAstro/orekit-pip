@@ -4,22 +4,22 @@
 #include "org/orekit/utils/FieldPVCoordinatesProvider.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
       namespace sampling {
-        class FieldStepHandlerMultiplexer;
         class FieldOrekitFixedStepHandler;
+        class FieldStepHandlerMultiplexer;
         class FieldOrekitStepHandler;
       }
-      class FieldEphemerisGenerator;
       class FieldSpacecraftState;
-      class FieldAdditionalStateProvider;
       namespace events {
         class FieldEventDetector;
       }
+      class FieldEphemerisGenerator;
+      class FieldAdditionalStateProvider;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
     }
     namespace frames {
       class Frame;
@@ -27,9 +27,9 @@ namespace org {
     namespace attitudes {
       class AttitudeProvider;
     }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -51,25 +51,25 @@ namespace org {
       class FieldPropagator : public ::org::orekit::utils::FieldPVCoordinatesProvider {
        public:
         enum {
-          mid_addAdditionalStateProvider_2c8cec257f03501f,
-          mid_addEventDetector_f929ebd2a84dbfe7,
-          mid_clearEventsDetectors_0fa09c18fee449d5,
-          mid_clearStepHandlers_0fa09c18fee449d5,
-          mid_getAdditionalStateProviders_2afa36052df4765d,
-          mid_getAttitudeProvider_a904f3d015a354a0,
-          mid_getEphemerisGenerator_54ac43f1e933cf20,
-          mid_getEventsDetectors_37528d110cff6b74,
-          mid_getFrame_b86f9f61d97a7244,
-          mid_getInitialState_02cea343d9f71933,
-          mid_getManagedAdditionalStates_692f4257baa8d3c3,
-          mid_getMultiplexer_805c1ec2ab9b09dd,
-          mid_isAdditionalStateManaged_7edad2c2f64f4d68,
-          mid_propagate_f6f1ea8aef3019eb,
-          mid_propagate_fc770c29e3468de8,
-          mid_resetInitialState_1463d3d0d52f94dd,
-          mid_setAttitudeProvider_3cff7c75ea06698c,
-          mid_setStepHandler_16d47a327666f5ff,
-          mid_setStepHandler_465bcdb67e0beb29,
+          mid_addAdditionalStateProvider_1dbe9cc03f00d454,
+          mid_addEventDetector_2ffeff0ffaf1deef,
+          mid_clearEventsDetectors_0640e6acf969ed28,
+          mid_clearStepHandlers_0640e6acf969ed28,
+          mid_getAdditionalStateProviders_0d9551367f7ecdef,
+          mid_getAttitudeProvider_6df6b78ab9377151,
+          mid_getEphemerisGenerator_07866493eb3b3f17,
+          mid_getEventsDetectors_12ee61573a18f417,
+          mid_getFrame_6c9bc0a928c56d4e,
+          mid_getInitialState_381b3e011cde018d,
+          mid_getManagedAdditionalStates_5d7d8c500345981d,
+          mid_getMultiplexer_da8c64c8d63a3f9a,
+          mid_isAdditionalStateManaged_fd2162b8a05a22fe,
+          mid_propagate_5324cbf9e5ce58fe,
+          mid_propagate_78f4b3ee8066e6b6,
+          mid_resetInitialState_b66c84a5711243d5,
+          mid_setAttitudeProvider_8fa6c0c067ead7b2,
+          mid_setStepHandler_69a7e501f9a938a3,
+          mid_setStepHandler_c9f4018f814d2514,
           max_mid
         };
 

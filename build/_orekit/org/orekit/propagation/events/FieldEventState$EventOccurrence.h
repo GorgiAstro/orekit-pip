@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-    }
     namespace time {
       class FieldAbsoluteDate;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
     }
   }
   namespace hipparchus {
@@ -35,9 +35,9 @@ namespace org {
         class FieldEventState$EventOccurrence : public ::java::lang::Object {
          public:
           enum {
-            mid_getAction_4aa421fecbe7eed3,
-            mid_getNewState_02cea343d9f71933,
-            mid_getStopDate_51da00d5b8a3b5df,
+            mid_getAction_2ecf57a2edb373ef,
+            mid_getNewState_381b3e011cde018d,
+            mid_getStopDate_f1fe4daf77c66560,
             max_mid
           };
 

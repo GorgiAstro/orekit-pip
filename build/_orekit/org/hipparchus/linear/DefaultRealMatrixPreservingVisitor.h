@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace linear {
       class RealMatrixPreservingVisitor;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,10 +24,10 @@ namespace org {
       class DefaultRealMatrixPreservingVisitor : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_end_dff5885c2c873297,
-          mid_start_5aa4d40be6f39408,
-          mid_visit_1506189166690b5e,
+          mid_init$_0640e6acf969ed28,
+          mid_end_557b8123390d8d0c,
+          mid_start_b02282271d2e33e3,
+          mid_visit_754312f3734d6e2f,
           max_mid
         };
 

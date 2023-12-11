@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalStateException;
+      class MathIllegalArgumentException;
+    }
     namespace complex {
       class Complex;
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-      class MathIllegalStateException;
     }
   }
 }
@@ -28,9 +28,9 @@ namespace org {
       class ComplexSecondaryODE : public ::java::lang::Object {
        public:
         enum {
-          mid_computeDerivatives_46564e87b38bcc21,
-          mid_getDimension_570ce0828f81a2c1,
-          mid_init_f97bebf0df07d222,
+          mid_computeDerivatives_03ec1540e0e7ef37,
+          mid_getDimension_412668abc8d889e9,
+          mid_init_090a5f252422f99c,
           max_mid
         };
 

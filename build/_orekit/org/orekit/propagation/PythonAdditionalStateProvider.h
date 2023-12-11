@@ -12,12 +12,12 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace propagation {
-      class AdditionalStateProvider;
-      class SpacecraftState;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace propagation {
+      class SpacecraftState;
+      class AdditionalStateProvider;
     }
   }
 }
@@ -30,16 +30,16 @@ namespace org {
       class PythonAdditionalStateProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_finalize_0fa09c18fee449d5,
-          mid_getAdditionalState_cb44069ef445f941,
-          mid_getName_11b109bd155ca898,
-          mid_init_826b4eda94da4e78,
-          mid_pythonDecRef_0fa09c18fee449d5,
-          mid_pythonExtension_492808a339bfa35f,
-          mid_pythonExtension_3a8e7649f31fdb20,
-          mid_yield_680f8463a473c3cb,
-          mid_yield__680f8463a473c3cb,
+          mid_init$_0640e6acf969ed28,
+          mid_finalize_0640e6acf969ed28,
+          mid_getAdditionalState_2a145999b8c9a41d,
+          mid_getName_3cffd47377eca18a,
+          mid_init_0472264ad6f40bc2,
+          mid_pythonDecRef_0640e6acf969ed28,
+          mid_pythonExtension_9e26256fb0d384a2,
+          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_yield_abdf3beb789bbd4e,
+          mid_yield__abdf3beb789bbd4e,
           max_mid
         };
 

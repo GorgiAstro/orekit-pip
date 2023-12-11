@@ -7,18 +7,18 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
+        class GroundStation;
         class EstimatedMeasurement;
         class EstimatedMeasurementBase;
-        class GroundStation;
       }
-    }
-    namespace utils {
-      class ParameterDriversProvider;
     }
     namespace propagation {
       namespace integration {
         class AbstractGradientConverter;
       }
+    }
+    namespace utils {
+      class ParameterDriversProvider;
     }
   }
 }

@@ -3,6 +3,15 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
@@ -12,15 +21,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -34,9 +34,9 @@ namespace org {
           class Ndm : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_6701c064a13f8d2f,
-              mid_getComments_2afa36052df4765d,
-              mid_getConstituents_2afa36052df4765d,
+              mid_init$_aaa4588ba4c2491b,
+              mid_getComments_0d9551367f7ecdef,
+              mid_getConstituents_0d9551367f7ecdef,
               max_mid
             };
 

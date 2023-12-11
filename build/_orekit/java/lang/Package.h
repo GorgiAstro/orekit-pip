@@ -5,10 +5,10 @@
 
 namespace java {
   namespace lang {
-    class NumberFormatException;
     class Class;
     class Package;
     class String;
+    class NumberFormatException;
   }
   namespace net {
     class URL;
@@ -22,20 +22,20 @@ namespace java {
     class Package : public ::java::lang::NamedPackage {
      public:
       enum {
-        mid_getImplementationTitle_11b109bd155ca898,
-        mid_getImplementationVendor_11b109bd155ca898,
-        mid_getImplementationVersion_11b109bd155ca898,
-        mid_getName_11b109bd155ca898,
-        mid_getPackage_2ebccdeed255784a,
-        mid_getPackages_23df86f75843b87b,
-        mid_getSpecificationTitle_11b109bd155ca898,
-        mid_getSpecificationVendor_11b109bd155ca898,
-        mid_getSpecificationVersion_11b109bd155ca898,
-        mid_hashCode_570ce0828f81a2c1,
-        mid_isCompatibleWith_7edad2c2f64f4d68,
-        mid_isSealed_b108b35ef48e27bd,
-        mid_isSealed_c31132c160c2df88,
-        mid_toString_11b109bd155ca898,
+        mid_getImplementationTitle_3cffd47377eca18a,
+        mid_getImplementationVendor_3cffd47377eca18a,
+        mid_getImplementationVersion_3cffd47377eca18a,
+        mid_getName_3cffd47377eca18a,
+        mid_getPackage_7b9ea2e3cd9b2198,
+        mid_getPackages_fd735c3a2f16936e,
+        mid_getSpecificationTitle_3cffd47377eca18a,
+        mid_getSpecificationVendor_3cffd47377eca18a,
+        mid_getSpecificationVersion_3cffd47377eca18a,
+        mid_hashCode_412668abc8d889e9,
+        mid_isCompatibleWith_fd2162b8a05a22fe,
+        mid_isSealed_89b302893bdbe1f1,
+        mid_isSealed_f24d92f382df2fc3,
+        mid_toString_3cffd47377eca18a,
         max_mid
       };
 

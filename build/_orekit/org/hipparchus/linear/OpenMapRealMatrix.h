@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
-    namespace linear {
-      class OpenMapRealMatrix;
-      class RealMatrix;
-      class SparseRealMatrix;
-    }
     namespace exception {
       class MathIllegalArgumentException;
+    }
+    namespace linear {
+      class SparseRealMatrix;
+      class RealMatrix;
+      class OpenMapRealMatrix;
     }
   }
 }
@@ -32,22 +32,22 @@ namespace org {
       class OpenMapRealMatrix : public ::org::hipparchus::linear::AbstractRealMatrix {
        public:
         enum {
-          mid_init$_6f37635c3285dbdf,
-          mid_add_e7eba3049ff21162,
-          mid_addToEntry_1506189166690b5e,
-          mid_copy_4f9e1a9121aa289f,
-          mid_createMatrix_7dc015665115207a,
-          mid_getColumnDimension_570ce0828f81a2c1,
-          mid_getEntry_dbbe5f05149dbf73,
-          mid_getRowDimension_570ce0828f81a2c1,
-          mid_multiply_e7eba3049ff21162,
-          mid_multiply_e9b72403ad502221,
-          mid_multiplyEntry_1506189166690b5e,
-          mid_multiplyTransposed_e9b72403ad502221,
-          mid_setEntry_1506189166690b5e,
-          mid_subtract_e7eba3049ff21162,
-          mid_subtract_231cd0c4aff11413,
-          mid_transposeMultiply_e9b72403ad502221,
+          mid_init$_a84c9a223722150c,
+          mid_add_8476a57dc45d9597,
+          mid_addToEntry_754312f3734d6e2f,
+          mid_copy_e95fec3f7133efdf,
+          mid_createMatrix_61139315e9486837,
+          mid_getColumnDimension_412668abc8d889e9,
+          mid_getEntry_21b81d54c06b64b0,
+          mid_getRowDimension_412668abc8d889e9,
+          mid_multiply_8476a57dc45d9597,
+          mid_multiply_340b47d21842d02c,
+          mid_multiplyEntry_754312f3734d6e2f,
+          mid_multiplyTransposed_340b47d21842d02c,
+          mid_setEntry_754312f3734d6e2f,
+          mid_subtract_8476a57dc45d9597,
+          mid_subtract_940a268a713300c5,
+          mid_transposeMultiply_340b47d21842d02c,
           max_mid
         };
 

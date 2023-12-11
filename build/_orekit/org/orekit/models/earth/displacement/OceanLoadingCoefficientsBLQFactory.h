@@ -14,15 +14,15 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataProvidersManager;
-    }
     namespace models {
       namespace earth {
         namespace displacement {
           class OceanLoadingCoefficients;
         }
       }
+    }
+    namespace data {
+      class DataProvidersManager;
     }
   }
 }
@@ -37,10 +37,10 @@ namespace org {
           class OceanLoadingCoefficientsBLQFactory : public ::org::orekit::data::AbstractSelfFeedingLoader {
            public:
             enum {
-              mid_init$_d0bc48d5b00dc40c,
-              mid_init$_63232a42a5419b09,
-              mid_getCoefficients_ac62575948893c94,
-              mid_getSites_2afa36052df4765d,
+              mid_init$_f5ffdf29129ef90a,
+              mid_init$_28c7bdc075bb74e8,
+              mid_getCoefficients_6d7582e003e3fca2,
+              mid_getSites_0d9551367f7ecdef,
               max_mid
             };
 

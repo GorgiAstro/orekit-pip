@@ -26,10 +26,10 @@ namespace org {
           class MultivariateFunctionMappingAdapter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_895e8ed7d2e6e8f8,
-              mid_boundedToUnbounded_ac3d742ccc742f22,
-              mid_unboundedToBounded_ac3d742ccc742f22,
-              mid_value_9dc1ec0bcc0a9a29,
+              mid_init$_6d4646014958a318,
+              mid_boundedToUnbounded_1db7c087750eaffe,
+              mid_unboundedToBounded_1db7c087750eaffe,
+              mid_value_86c4a0582e0747ce,
               max_mid
             };
 

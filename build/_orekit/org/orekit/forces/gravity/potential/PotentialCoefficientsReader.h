@@ -4,12 +4,12 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace text {
-    class ParseException;
-  }
   namespace io {
     class IOException;
     class InputStream;
+  }
+  namespace text {
+    class ParseException;
   }
   namespace lang {
     class Class;
@@ -18,15 +18,15 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataLoader;
+    }
     namespace forces {
       namespace gravity {
         namespace potential {
           class RawSphericalHarmonicsProvider;
         }
       }
-    }
-    namespace data {
-      class DataLoader;
     }
     namespace errors {
       class OrekitException;
@@ -44,34 +44,34 @@ namespace org {
           class PotentialCoefficientsReader : public ::java::lang::Object {
            public:
             enum {
-              mid_getMaxAvailableDegree_570ce0828f81a2c1,
-              mid_getMaxAvailableOrder_570ce0828f81a2c1,
-              mid_getMaxParseDegree_570ce0828f81a2c1,
-              mid_getMaxParseOrder_570ce0828f81a2c1,
-              mid_getProvider_fc0a96c558346426,
-              mid_getSupportedNames_11b109bd155ca898,
-              mid_loadData_1815f85c118161ad,
-              mid_missingCoefficientsAllowed_b108b35ef48e27bd,
-              mid_setMaxParseDegree_99803b0791f320ff,
-              mid_setMaxParseOrder_99803b0791f320ff,
-              mid_stillAcceptsData_b108b35ef48e27bd,
-              mid_getMu_dff5885c2c873297,
-              mid_getAe_dff5885c2c873297,
-              mid_getTideSystem_c68abf1ca1fc273e,
-              mid_rescale_9a2aa9108cecb925,
-              mid_rescale_61f58c83df8a60fe,
-              mid_setMu_17db3a65980d3441,
-              mid_buildFlatArray_46d958aaa8c2963a,
-              mid_toDate_3eda4f7d7f1dde2e,
-              mid_toDate_4ace5066ad98bc71,
-              mid_buildRow_8c43e11f707ab8a7,
-              mid_setReadComplete_bd04c9335fb9e4cf,
-              mid_setAe_17db3a65980d3441,
-              mid_setTideSystem_9dc8f5cdc0b53f13,
-              mid_parseCoefficient_1954fd36afccfc5c,
-              mid_setRawCoefficients_27afb517a8911014,
-              mid_getBaseProvider_1ac4a92a4fde34c8,
-              mid_parseDouble_b36dde1444e08956,
+              mid_getMaxAvailableDegree_412668abc8d889e9,
+              mid_getMaxAvailableOrder_412668abc8d889e9,
+              mid_getMaxParseDegree_412668abc8d889e9,
+              mid_getMaxParseOrder_412668abc8d889e9,
+              mid_getProvider_f0b357b475e18957,
+              mid_getSupportedNames_3cffd47377eca18a,
+              mid_loadData_15770e8d8949a557,
+              mid_missingCoefficientsAllowed_89b302893bdbe1f1,
+              mid_setMaxParseDegree_a3da1a935cb37f7b,
+              mid_setMaxParseOrder_a3da1a935cb37f7b,
+              mid_stillAcceptsData_89b302893bdbe1f1,
+              mid_getMu_557b8123390d8d0c,
+              mid_getAe_557b8123390d8d0c,
+              mid_getTideSystem_7d9a2a298dcb49fa,
+              mid_toDate_469425c83a305968,
+              mid_toDate_d2ab2a876c299d78,
+              mid_rescale_694cbd0c9d2012bc,
+              mid_rescale_30c637d022c053e7,
+              mid_setMu_10f281d777284cea,
+              mid_parseCoefficient_18c60afe1bc1abc4,
+              mid_setReadComplete_ed2afdb8506b9742,
+              mid_setAe_10f281d777284cea,
+              mid_setTideSystem_fe9afd278841d180,
+              mid_setRawCoefficients_b7bd4586f308d44a,
+              mid_getBaseProvider_0e1e7c4563c4b007,
+              mid_buildFlatArray_4d37aaaa24dcf6a3,
+              mid_buildRow_7ded574d710da36c,
+              mid_parseDouble_071554b5f5a6b17b,
               max_mid
             };
 

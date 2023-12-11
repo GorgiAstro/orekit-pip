@@ -5,10 +5,11 @@
 
 namespace org {
   namespace hipparchus {
+    class FieldElement;
     namespace fraction {
-      class Fraction;
-      class Fraction$ConvergenceTest;
       class FractionField;
+      class Fraction$ConvergenceTest;
+      class Fraction;
     }
     namespace exception {
       class MathIllegalStateException;
@@ -16,21 +17,20 @@ namespace org {
     namespace util {
       class Pair;
     }
-    class FieldElement;
   }
 }
 namespace java {
+  namespace lang {
+    class Class;
+    class Boolean;
+    class Object;
+    class String;
+    class Comparable;
+  }
   namespace util {
     namespace stream {
       class Stream;
     }
-  }
-  namespace lang {
-    class Class;
-    class Object;
-    class Boolean;
-    class String;
-    class Comparable;
   }
 }
 template<class T> class JArray;
@@ -42,40 +42,40 @@ namespace org {
       class Fraction : public ::java::lang::Number {
        public:
         enum {
-          mid_init$_17db3a65980d3441,
-          mid_init$_99803b0791f320ff,
-          mid_init$_75c2da74a5a59fda,
-          mid_init$_6f37635c3285dbdf,
-          mid_init$_01fb2c777e5def32,
-          mid_abs_883007575ab78b44,
-          mid_add_f8ad4f296d9e6e5a,
-          mid_add_c1a3055d403e155b,
-          mid_compareTo_593972f776ed929e,
-          mid_convergent_48c5e5d18a18a1f7,
-          mid_convergents_6e644ae679b81b73,
-          mid_divide_f8ad4f296d9e6e5a,
-          mid_divide_c1a3055d403e155b,
-          mid_doubleValue_dff5885c2c873297,
-          mid_equals_65c7d273e80d497a,
-          mid_floatValue_5adccb493ada08e8,
-          mid_getDenominator_570ce0828f81a2c1,
-          mid_getField_c92e44cc353119ce,
-          mid_getNumerator_570ce0828f81a2c1,
-          mid_getReal_dff5885c2c873297,
-          mid_getReducedFraction_354275059e0b39d8,
-          mid_hashCode_570ce0828f81a2c1,
-          mid_intValue_570ce0828f81a2c1,
-          mid_isInteger_b108b35ef48e27bd,
-          mid_longValue_492808a339bfa35f,
-          mid_multiply_f8ad4f296d9e6e5a,
-          mid_multiply_c1a3055d403e155b,
-          mid_negate_883007575ab78b44,
-          mid_percentageValue_dff5885c2c873297,
-          mid_reciprocal_883007575ab78b44,
-          mid_signum_570ce0828f81a2c1,
-          mid_subtract_f8ad4f296d9e6e5a,
-          mid_subtract_c1a3055d403e155b,
-          mid_toString_11b109bd155ca898,
+          mid_init$_10f281d777284cea,
+          mid_init$_a3da1a935cb37f7b,
+          mid_init$_47602ef8408ea361,
+          mid_init$_a84c9a223722150c,
+          mid_init$_427af08acba367ca,
+          mid_abs_78ed58163a805805,
+          mid_add_cd77e6d012ea5cc3,
+          mid_add_d5f28efe59a8e670,
+          mid_compareTo_e8d020c2580961b3,
+          mid_convergent_4cef17945da86adb,
+          mid_convergents_9f7d72ee529fa4ce,
+          mid_divide_cd77e6d012ea5cc3,
+          mid_divide_d5f28efe59a8e670,
+          mid_doubleValue_557b8123390d8d0c,
+          mid_equals_221e8e85cb385209,
+          mid_floatValue_04fe014f7609dc26,
+          mid_getDenominator_412668abc8d889e9,
+          mid_getField_1840755d7868de7a,
+          mid_getNumerator_412668abc8d889e9,
+          mid_getReal_557b8123390d8d0c,
+          mid_getReducedFraction_6bc81349e4597c3b,
+          mid_hashCode_412668abc8d889e9,
+          mid_intValue_412668abc8d889e9,
+          mid_isInteger_89b302893bdbe1f1,
+          mid_longValue_9e26256fb0d384a2,
+          mid_multiply_cd77e6d012ea5cc3,
+          mid_multiply_d5f28efe59a8e670,
+          mid_negate_78ed58163a805805,
+          mid_percentageValue_557b8123390d8d0c,
+          mid_reciprocal_78ed58163a805805,
+          mid_signum_412668abc8d889e9,
+          mid_subtract_cd77e6d012ea5cc3,
+          mid_subtract_d5f28efe59a8e670,
+          mid_toString_3cffd47377eca18a,
           max_mid
         };
 

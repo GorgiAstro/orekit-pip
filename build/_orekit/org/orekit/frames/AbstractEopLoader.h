@@ -33,8 +33,8 @@ namespace org {
       class AbstractEopLoader : public ::org::orekit::data::AbstractSelfFeedingLoader {
        public:
         enum {
-          mid_init$_2c228debf8e43fa0,
-          mid_getUtc_c39031284193adbe,
+          mid_init$_1b3e3ade57ae798c,
+          mid_getUtc_527ee9dde1a96470,
           max_mid
         };
 

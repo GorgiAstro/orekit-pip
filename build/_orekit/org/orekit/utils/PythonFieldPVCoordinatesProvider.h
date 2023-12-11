@@ -4,20 +4,20 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
     namespace utils {
-      class FieldPVCoordinatesProvider;
       class TimeStampedFieldPVCoordinates;
+      class FieldPVCoordinatesProvider;
     }
     namespace time {
       class FieldAbsoluteDate;
     }
+    namespace frames {
+      class Frame;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -35,12 +35,12 @@ namespace org {
       class PythonFieldPVCoordinatesProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_finalize_0fa09c18fee449d5,
-          mid_getPVCoordinates_2cdae1c350dc3e9a,
-          mid_pythonDecRef_0fa09c18fee449d5,
-          mid_pythonExtension_492808a339bfa35f,
-          mid_pythonExtension_3a8e7649f31fdb20,
+          mid_init$_0640e6acf969ed28,
+          mid_finalize_0640e6acf969ed28,
+          mid_getPVCoordinates_4ac52e75113a03db,
+          mid_pythonDecRef_0640e6acf969ed28,
+          mid_pythonExtension_9e26256fb0d384a2,
+          mid_pythonExtension_3cd6a6b354c6aa22,
           max_mid
         };
 

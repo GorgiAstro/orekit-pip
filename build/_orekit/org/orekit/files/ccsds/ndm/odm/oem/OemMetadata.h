@@ -39,20 +39,20 @@ namespace org {
               class OemMetadata : public ::org::orekit::files::ccsds::ndm::odm::OdmCommonMetadata {
                public:
                 enum {
-                  mid_init$_99803b0791f320ff,
-                  mid_getInterpolationDegree_570ce0828f81a2c1,
-                  mid_getInterpolationMethod_94ea91241555a59e,
-                  mid_getStartTime_85703d13e302437e,
-                  mid_getStopTime_85703d13e302437e,
-                  mid_getUseableStartTime_85703d13e302437e,
-                  mid_getUseableStopTime_85703d13e302437e,
-                  mid_setInterpolationDegree_99803b0791f320ff,
-                  mid_setInterpolationMethod_f05dcf712ccb2c7b,
-                  mid_setStartTime_600a2a61652bc473,
-                  mid_setStopTime_600a2a61652bc473,
-                  mid_setUseableStartTime_600a2a61652bc473,
-                  mid_setUseableStopTime_600a2a61652bc473,
-                  mid_validate_17db3a65980d3441,
+                  mid_init$_a3da1a935cb37f7b,
+                  mid_getInterpolationDegree_412668abc8d889e9,
+                  mid_getInterpolationMethod_8efb284b7b2c86d2,
+                  mid_getStartTime_7a97f7e149e79afb,
+                  mid_getStopTime_7a97f7e149e79afb,
+                  mid_getUseableStartTime_7a97f7e149e79afb,
+                  mid_getUseableStopTime_7a97f7e149e79afb,
+                  mid_setInterpolationDegree_a3da1a935cb37f7b,
+                  mid_setInterpolationMethod_db5b325923fed9a5,
+                  mid_setStartTime_20affcbd28542333,
+                  mid_setStopTime_20affcbd28542333,
+                  mid_setUseableStartTime_20affcbd28542333,
+                  mid_setUseableStopTime_20affcbd28542333,
+                  mid_validate_10f281d777284cea,
                   max_mid
                 };
 

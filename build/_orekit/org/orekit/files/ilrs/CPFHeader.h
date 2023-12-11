@@ -3,17 +3,17 @@
 
 #include "org/orekit/files/ilrs/ILRSHeader.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace frames {
       class Frame;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,35 +26,35 @@ namespace org {
         class CPFHeader : public ::org::orekit::files::ilrs::ILRSHeader {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_getCenterOfMassOffset_dff5885c2c873297,
-            mid_getPrf_dff5885c2c873297,
-            mid_getRefFrame_b86f9f61d97a7244,
-            mid_getRefFrameId_570ce0828f81a2c1,
-            mid_getRotationalAngleType_570ce0828f81a2c1,
-            mid_getSource_11b109bd155ca898,
-            mid_getStep_570ce0828f81a2c1,
-            mid_getSubDailySequenceNumber_570ce0828f81a2c1,
-            mid_getTranspClkRef_dff5885c2c873297,
-            mid_getTranspOscDrift_dff5885c2c873297,
-            mid_getTranspTransmitDelay_dff5885c2c873297,
-            mid_getTranspUtcOffset_dff5885c2c873297,
-            mid_isCenterOfMassCorrectionApplied_b108b35ef48e27bd,
-            mid_isCompatibleWithTIVs_b108b35ef48e27bd,
-            mid_setCenterOfMassOffset_17db3a65980d3441,
-            mid_setIsCenterOfMassCorrectionApplied_bd04c9335fb9e4cf,
-            mid_setIsCompatibleWithTIVs_bd04c9335fb9e4cf,
-            mid_setPrf_17db3a65980d3441,
-            mid_setRefFrame_b5680f5c30eede66,
-            mid_setRefFrameId_99803b0791f320ff,
-            mid_setRotationalAngleType_99803b0791f320ff,
-            mid_setSource_d0bc48d5b00dc40c,
-            mid_setStep_99803b0791f320ff,
-            mid_setSubDailySequenceNumber_99803b0791f320ff,
-            mid_setTranspClkRef_17db3a65980d3441,
-            mid_setTranspOscDrift_17db3a65980d3441,
-            mid_setTranspTransmitDelay_17db3a65980d3441,
-            mid_setTranspUtcOffset_17db3a65980d3441,
+            mid_init$_0640e6acf969ed28,
+            mid_getCenterOfMassOffset_557b8123390d8d0c,
+            mid_getPrf_557b8123390d8d0c,
+            mid_getRefFrame_6c9bc0a928c56d4e,
+            mid_getRefFrameId_412668abc8d889e9,
+            mid_getRotationalAngleType_412668abc8d889e9,
+            mid_getSource_3cffd47377eca18a,
+            mid_getStep_412668abc8d889e9,
+            mid_getSubDailySequenceNumber_412668abc8d889e9,
+            mid_getTranspClkRef_557b8123390d8d0c,
+            mid_getTranspOscDrift_557b8123390d8d0c,
+            mid_getTranspTransmitDelay_557b8123390d8d0c,
+            mid_getTranspUtcOffset_557b8123390d8d0c,
+            mid_isCenterOfMassCorrectionApplied_89b302893bdbe1f1,
+            mid_isCompatibleWithTIVs_89b302893bdbe1f1,
+            mid_setCenterOfMassOffset_10f281d777284cea,
+            mid_setIsCenterOfMassCorrectionApplied_ed2afdb8506b9742,
+            mid_setIsCompatibleWithTIVs_ed2afdb8506b9742,
+            mid_setPrf_10f281d777284cea,
+            mid_setRefFrame_535d1f91a93c8b4d,
+            mid_setRefFrameId_a3da1a935cb37f7b,
+            mid_setRotationalAngleType_a3da1a935cb37f7b,
+            mid_setSource_f5ffdf29129ef90a,
+            mid_setStep_a3da1a935cb37f7b,
+            mid_setSubDailySequenceNumber_a3da1a935cb37f7b,
+            mid_setTranspClkRef_10f281d777284cea,
+            mid_setTranspOscDrift_10f281d777284cea,
+            mid_setTranspTransmitDelay_10f281d777284cea,
+            mid_setTranspUtcOffset_10f281d777284cea,
             max_mid
           };
 

@@ -5,13 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
-    namespace analysis {
-      namespace differentiation {
-        class DerivativeStructure;
-        class FieldDerivativeStructure;
-      }
-    }
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -20,20 +13,27 @@ namespace org {
         }
       }
     }
+    namespace analysis {
+      namespace differentiation {
+        class FieldDerivativeStructure;
+        class DerivativeStructure;
+      }
+    }
+    class CalculusFieldElement;
   }
   namespace orekit {
+    namespace bodies {
+      class CR3BPSystem;
+    }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
-    namespace forces {
-      class ForceModel;
-    }
     namespace utils {
       class ParameterDriver;
     }
-    namespace bodies {
-      class CR3BPSystem;
+    namespace forces {
+      class ForceModel;
     }
   }
 }
@@ -57,13 +57,13 @@ namespace org {
           class CR3BPForceModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_ec35a1651f7b6401,
-              mid_acceleration_8954761face5e1a7,
-              mid_acceleration_b42ac4b5bfb80fab,
-              mid_dependsOnPositionOnly_b108b35ef48e27bd,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_getPotential_643a8e19bdae2e10,
-              mid_getPotential_1dc99629b4b23597,
+              mid_init$_f1c6590d5c8242d6,
+              mid_acceleration_61944e27a39e8290,
+              mid_acceleration_b61fb59a041240c6,
+              mid_dependsOnPositionOnly_89b302893bdbe1f1,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_getPotential_316960e77ea8548e,
+              mid_getPotential_e9a60de26ad5a3a8,
               max_mid
             };
 

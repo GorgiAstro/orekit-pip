@@ -18,14 +18,14 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathRuntimeException;
+    }
     namespace linear {
       class OpenMapRealVector;
-      class RealVector;
       class RealVector$Entry;
-    }
-    namespace exception {
-      class MathRuntimeException;
-      class MathIllegalArgumentException;
+      class RealVector;
     }
   }
 }
@@ -38,49 +38,49 @@ namespace org {
       class OpenMapRealVector : public ::org::hipparchus::linear::SparseRealVector {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_init$_fa9d415d19f69361,
-          mid_init$_dffaee884eb24974,
-          mid_init$_bdf205176b90cff1,
-          mid_init$_99803b0791f320ff,
-          mid_init$_bc1ff02eb3693128,
-          mid_init$_ce8c8b53c2138baa,
-          mid_init$_bb79ca80d85d0a66,
-          mid_init$_6f37635c3285dbdf,
-          mid_init$_1506189166690b5e,
-          mid_add_f41b4392c3b0cbe8,
-          mid_add_613347e28dd909cd,
-          mid_append_f41b4392c3b0cbe8,
-          mid_append_bca8e4820c9cabf8,
-          mid_append_09df6803b1c624a1,
-          mid_copy_8ab6f9d2c3b24e14,
-          mid_ebeDivide_bca8e4820c9cabf8,
-          mid_ebeMultiply_bca8e4820c9cabf8,
-          mid_equals_65c7d273e80d497a,
-          mid_getDimension_570ce0828f81a2c1,
-          mid_getDistance_bd316bc7df5386b7,
-          mid_getDistance_c579a73494d20c67,
-          mid_getEntry_46f85b53d9aedd96,
-          mid_getL1Distance_bd316bc7df5386b7,
-          mid_getL1Distance_c579a73494d20c67,
-          mid_getLInfDistance_c579a73494d20c67,
-          mid_getSparsity_dff5885c2c873297,
-          mid_getSubVector_583c2e0c30920a31,
-          mid_hashCode_570ce0828f81a2c1,
-          mid_isInfinite_b108b35ef48e27bd,
-          mid_isNaN_b108b35ef48e27bd,
-          mid_mapAdd_09df6803b1c624a1,
-          mid_mapAddToSelf_09df6803b1c624a1,
-          mid_set_17db3a65980d3441,
-          mid_setEntry_bb79ca80d85d0a66,
-          mid_setSubVector_18388821294f273e,
-          mid_sparseIterator_4d23511a9f0db098,
-          mid_subtract_f41b4392c3b0cbe8,
-          mid_subtract_613347e28dd909cd,
-          mid_toArray_60c7040667a7dc5c,
-          mid_unitVector_8ab6f9d2c3b24e14,
-          mid_unitize_0fa09c18fee449d5,
-          mid_isDefaultValue_2e401133981893e4,
+          mid_init$_0640e6acf969ed28,
+          mid_init$_cc18240f4a737f14,
+          mid_init$_c354c911a2a99469,
+          mid_init$_87d15d6564ad754f,
+          mid_init$_a3da1a935cb37f7b,
+          mid_init$_3682f2e0c8382fe5,
+          mid_init$_4c962094e30c788c,
+          mid_init$_89aad365fb0ed8da,
+          mid_init$_a84c9a223722150c,
+          mid_init$_754312f3734d6e2f,
+          mid_add_c8caf6b86809b421,
+          mid_add_342d5b01463e0dc5,
+          mid_append_c8caf6b86809b421,
+          mid_append_7841ff123295f72b,
+          mid_append_75541c8200d1f16e,
+          mid_copy_0f75e049dcae9e48,
+          mid_ebeDivide_7841ff123295f72b,
+          mid_ebeMultiply_7841ff123295f72b,
+          mid_equals_221e8e85cb385209,
+          mid_getDimension_412668abc8d889e9,
+          mid_getDistance_db11e5a6053f761d,
+          mid_getDistance_4062041acf71098b,
+          mid_getEntry_69cfb132c661aca4,
+          mid_getL1Distance_db11e5a6053f761d,
+          mid_getL1Distance_4062041acf71098b,
+          mid_getLInfDistance_4062041acf71098b,
+          mid_getSparsity_557b8123390d8d0c,
+          mid_getSubVector_dd99dbbd80939c15,
+          mid_hashCode_412668abc8d889e9,
+          mid_isInfinite_89b302893bdbe1f1,
+          mid_isNaN_89b302893bdbe1f1,
+          mid_mapAdd_75541c8200d1f16e,
+          mid_mapAddToSelf_75541c8200d1f16e,
+          mid_set_10f281d777284cea,
+          mid_setEntry_89aad365fb0ed8da,
+          mid_setSubVector_a967cf1fffd0038f,
+          mid_sparseIterator_834a3801c426326d,
+          mid_subtract_c8caf6b86809b421,
+          mid_subtract_342d5b01463e0dc5,
+          mid_toArray_a53a7513ecedada2,
+          mid_unitVector_0f75e049dcae9e48,
+          mid_unitize_0640e6acf969ed28,
+          mid_isDefaultValue_dd69c3ab2404bb71,
           max_mid
         };
 

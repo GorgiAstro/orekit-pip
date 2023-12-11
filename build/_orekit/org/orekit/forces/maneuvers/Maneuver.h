@@ -4,65 +4,65 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class FieldVector3D;
-          class Vector3D;
-        }
-      }
-    }
-    class Field;
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
+      class FieldSpacecraftState;
       namespace numerical {
-        class FieldTimeDerivativesEquations;
         class TimeDerivativesEquations;
+        class FieldTimeDerivativesEquations;
       }
       namespace events {
         class FieldEventDetector;
         class EventDetector;
       }
       class SpacecraftState;
-      class FieldSpacecraftState;
     }
     namespace time {
-      class AbsoluteDate;
       class FieldAbsoluteDate;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-    namespace forces {
-      namespace maneuvers {
-        namespace propulsion {
-          class PropulsionModel;
-        }
-        class Control3DVectorCostType;
-        namespace trigger {
-          class ManeuverTriggers;
-        }
-      }
-      class ForceModel;
+      class AbsoluteDate;
     }
     namespace utils {
       class ParameterDriver;
     }
+    namespace forces {
+      namespace maneuvers {
+        namespace trigger {
+          class ManeuverTriggers;
+        }
+        namespace propulsion {
+          class PropulsionModel;
+        }
+        class Control3DVectorCostType;
+      }
+      class ForceModel;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+          class FieldVector3D;
+        }
+      }
+    }
+    class CalculusFieldElement;
+    class Field;
   }
 }
 namespace java {
-  namespace lang {
-    class Class;
-    class String;
-  }
   namespace util {
     namespace stream {
       class Stream;
     }
     class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -75,22 +75,22 @@ namespace org {
         class Maneuver : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_1b49064004922e0f,
-            mid_acceleration_8954761face5e1a7,
-            mid_acceleration_b42ac4b5bfb80fab,
-            mid_addContribution_5852b6ea0a71dcb4,
-            mid_addContribution_9d1574df69c5f1ff,
-            mid_dependsOnPositionOnly_b108b35ef48e27bd,
-            mid_getAttitudeOverride_a904f3d015a354a0,
-            mid_getControl3DVectorCostType_67739b20d9566a8c,
-            mid_getEventDetectors_20f6d2b462aaef4b,
-            mid_getFieldEventDetectors_361313cd1a9c693a,
-            mid_getManeuverTriggers_37940bf6d7d342ef,
-            mid_getName_11b109bd155ca898,
-            mid_getParametersDrivers_2afa36052df4765d,
-            mid_getPropulsionModel_559c6850652697a2,
-            mid_init_8e8de2be1664674a,
-            mid_init_826b4eda94da4e78,
+            mid_init$_812a7c56b984179a,
+            mid_acceleration_61944e27a39e8290,
+            mid_acceleration_b61fb59a041240c6,
+            mid_addContribution_0f28031d74393af0,
+            mid_addContribution_9ecc165cc3358de0,
+            mid_dependsOnPositionOnly_89b302893bdbe1f1,
+            mid_getAttitudeOverride_6df6b78ab9377151,
+            mid_getControl3DVectorCostType_601f05e5d0c82ad9,
+            mid_getEventDetectors_d7cce92225eb0db2,
+            mid_getFieldEventDetectors_8130af76f6998f44,
+            mid_getManeuverTriggers_cee7298c5da7b0f2,
+            mid_getName_3cffd47377eca18a,
+            mid_getParametersDrivers_0d9551367f7ecdef,
+            mid_getPropulsionModel_a5c75fea8de63925,
+            mid_init_0472264ad6f40bc2,
+            mid_init_811e49dad2467b67,
             max_mid
           };
 
@@ -120,8 +120,8 @@ namespace org {
           ::java::lang::String getName() const;
           ::java::util::List getParametersDrivers() const;
           ::org::orekit::forces::maneuvers::propulsion::PropulsionModel getPropulsionModel() const;
-          void init(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::time::FieldAbsoluteDate &) const;
           void init(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::time::AbsoluteDate &) const;
+          void init(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::time::FieldAbsoluteDate &) const;
         };
       }
     }

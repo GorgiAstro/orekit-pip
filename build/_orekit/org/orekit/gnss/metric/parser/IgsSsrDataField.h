@@ -8,8 +8,8 @@ namespace org {
     namespace gnss {
       namespace metric {
         namespace parser {
-          class IgsSsrDataField;
           class DataField;
+          class IgsSsrDataField;
         }
       }
     }
@@ -32,8 +32,8 @@ namespace org {
           class IgsSsrDataField : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_7a2bfdb291445824,
-              mid_values_953a8768ccab919f,
+              mid_valueOf_29191d171c2347fd,
+              mid_values_b0269f4adcb9f36b,
               max_mid
             };
 

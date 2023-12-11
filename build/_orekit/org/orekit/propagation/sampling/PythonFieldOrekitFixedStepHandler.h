@@ -4,9 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
       namespace sampling {
@@ -17,6 +14,9 @@ namespace org {
     namespace time {
       class FieldAbsoluteDate;
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -35,14 +35,14 @@ namespace org {
         class PythonFieldOrekitFixedStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_finalize_0fa09c18fee449d5,
-            mid_finish_1463d3d0d52f94dd,
-            mid_handleStep_1463d3d0d52f94dd,
-            mid_init_b32b9cbcae791ea7,
-            mid_pythonDecRef_0fa09c18fee449d5,
-            mid_pythonExtension_492808a339bfa35f,
-            mid_pythonExtension_3a8e7649f31fdb20,
+            mid_init$_0640e6acf969ed28,
+            mid_finalize_0640e6acf969ed28,
+            mid_finish_b66c84a5711243d5,
+            mid_handleStep_b66c84a5711243d5,
+            mid_init_1b5a30d717840b16,
+            mid_pythonDecRef_0640e6acf969ed28,
+            mid_pythonExtension_9e26256fb0d384a2,
+            mid_pythonExtension_3cd6a6b354c6aa22,
             max_mid
           };
 

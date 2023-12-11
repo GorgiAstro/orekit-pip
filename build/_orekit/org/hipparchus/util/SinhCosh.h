@@ -24,10 +24,10 @@ namespace org {
       class SinhCosh : public ::java::lang::Object {
        public:
         enum {
-          mid_cosh_dff5885c2c873297,
-          mid_difference_7c987656902090b9,
-          mid_sinh_dff5885c2c873297,
-          mid_sum_7c987656902090b9,
+          mid_cosh_557b8123390d8d0c,
+          mid_difference_add2402b81ab1dda,
+          mid_sinh_557b8123390d8d0c,
+          mid_sum_add2402b81ab1dda,
           max_mid
         };
 

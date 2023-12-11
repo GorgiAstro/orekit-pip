@@ -5,18 +5,18 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace forces {
       namespace maneuvers {
-        namespace trigger {
-          class ManeuverTriggers;
-        }
         namespace propulsion {
           class ThrustDirectionAndAttitudeProvider;
         }
+        namespace trigger {
+          class ManeuverTriggers;
+        }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -35,12 +35,12 @@ namespace org {
         class ConfigurableLowThrustManeuver : public ::org::orekit::forces::maneuvers::Maneuver {
          public:
           enum {
-            mid_init$_d171606bd2ebae55,
-            mid_getIsp_dff5885c2c873297,
-            mid_getIsp_bf1d7732f1acb697,
-            mid_getThrustDirectionProvider_be6a6d8d1d656fb0,
-            mid_getThrustMagnitude_dff5885c2c873297,
-            mid_getThrustMagnitude_bf1d7732f1acb697,
+            mid_init$_9f07a3a6f29a7aff,
+            mid_getIsp_557b8123390d8d0c,
+            mid_getIsp_b0b988f941da47d8,
+            mid_getThrustDirectionProvider_8d737b557fa9f336,
+            mid_getThrustMagnitude_557b8123390d8d0c,
+            mid_getThrustMagnitude_b0b988f941da47d8,
             max_mid
           };
 

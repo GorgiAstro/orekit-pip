@@ -5,17 +5,17 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace utils {
       class ParameterDriversList;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
   namespace hipparchus {
     namespace linear {
-      class RealVector;
       class RealMatrix;
+      class RealVector;
     }
   }
 }
@@ -34,14 +34,14 @@ namespace org {
         class AbstractKalmanEstimator : public ::java::lang::Object {
          public:
           enum {
-            mid_getCurrentDate_85703d13e302437e,
-            mid_getCurrentMeasurementNumber_570ce0828f81a2c1,
-            mid_getEstimatedMeasurementsParameters_bd51074bfd9d41da,
-            mid_getOrbitalParametersDrivers_8357ebc867dea797,
-            mid_getPhysicalEstimatedCovarianceMatrix_688b496048ff947b,
-            mid_getPhysicalEstimatedState_aab4fbf77867daa8,
-            mid_getPropagationParametersDrivers_8357ebc867dea797,
-            mid_getKalmanEstimation_e05aaef10b06b09b,
+            mid_getCurrentDate_7a97f7e149e79afb,
+            mid_getCurrentMeasurementNumber_412668abc8d889e9,
+            mid_getEstimatedMeasurementsParameters_467d574a7997e53a,
+            mid_getOrbitalParametersDrivers_4f6dd8cf21dd8817,
+            mid_getPhysicalEstimatedCovarianceMatrix_70a207fcbc031df2,
+            mid_getPhysicalEstimatedState_75d50d73180655b4,
+            mid_getPropagationParametersDrivers_4f6dd8cf21dd8817,
+            mid_getKalmanEstimation_32faeba2996c6566,
             max_mid
           };
 

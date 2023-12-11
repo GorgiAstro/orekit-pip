@@ -28,14 +28,14 @@ namespace org {
       class FieldArrayDictionary$Entry : public ::java::lang::Object {
        public:
         enum {
-          mid_getKey_11b109bd155ca898,
-          mid_getValue_226a0b2040b1d2e1,
-          mid_increment_fa9d415d19f69361,
-          mid_increment_72479ee08453ef97,
-          mid_scaledIncrement_e8aab7eadc3b7dd1,
-          mid_scaledIncrement_4f7734e82d1e0818,
-          mid_size_570ce0828f81a2c1,
-          mid_zero_0fa09c18fee449d5,
+          mid_getKey_3cffd47377eca18a,
+          mid_getValue_41762fd4377ff26e,
+          mid_increment_cc18240f4a737f14,
+          mid_increment_5d9c9afaca2e497c,
+          mid_scaledIncrement_dbfb7d53d6018f6f,
+          mid_scaledIncrement_14f13c9f5bb765bd,
+          mid_size_412668abc8d889e9,
+          mid_zero_0640e6acf969ed28,
           max_mid
         };
 

@@ -3,6 +3,11 @@
 
 #include "org/hipparchus/util/MathArrays$Function.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace exception {
@@ -15,11 +20,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -30,9 +30,9 @@ namespace org {
         class UnivariateStatistic : public ::org::hipparchus::util::MathArrays$Function {
          public:
           enum {
-            mid_copy_f30bf4039f437912,
-            mid_evaluate_9dc1ec0bcc0a9a29,
-            mid_evaluate_556bede10daac330,
+            mid_copy_98b5288d1f202841,
+            mid_evaluate_86c4a0582e0747ce,
+            mid_evaluate_9eeeb1ae977f525d,
             max_mid
           };
 

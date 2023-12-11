@@ -26,15 +26,15 @@ namespace org {
         class ProcessEstimate : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_d905195db03d249f,
-            mid_init$_b5a6dee5d269e523,
-            mid_getCovariance_688b496048ff947b,
-            mid_getInnovationCovariance_688b496048ff947b,
-            mid_getKalmanGain_688b496048ff947b,
-            mid_getMeasurementJacobian_688b496048ff947b,
-            mid_getState_aab4fbf77867daa8,
-            mid_getStateTransitionMatrix_688b496048ff947b,
-            mid_getTime_dff5885c2c873297,
+            mid_init$_fd385d0a9ef22a8e,
+            mid_init$_c48eea702e0cbbc7,
+            mid_getCovariance_70a207fcbc031df2,
+            mid_getInnovationCovariance_70a207fcbc031df2,
+            mid_getKalmanGain_70a207fcbc031df2,
+            mid_getMeasurementJacobian_70a207fcbc031df2,
+            mid_getState_75d50d73180655b4,
+            mid_getStateTransitionMatrix_70a207fcbc031df2,
+            mid_getTime_557b8123390d8d0c,
             max_mid
           };
 

@@ -6,11 +6,11 @@
 namespace org {
   namespace orekit {
     namespace utils {
-      class AngularCoordinates;
       class TimeStampedFieldPVCoordinates;
       class FieldPVCoordinates;
-      class TimeStampedPVCoordinates;
       class PVCoordinates;
+      class AngularCoordinates;
+      class TimeStampedPVCoordinates;
     }
     namespace time {
       class TimeShiftable;
@@ -20,17 +20,17 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
+          class Vector3D;
           class Rotation;
           class FieldRotation;
-          class Vector3D;
         }
       }
     }
     namespace analysis {
       namespace differentiation {
         class DerivativeStructure;
-        class UnivariateDerivative2;
         class UnivariateDerivative1;
+        class UnivariateDerivative2;
       }
     }
   }
@@ -52,31 +52,31 @@ namespace org {
       class AngularCoordinates : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_init$_36678dbdedc42376,
-          mid_init$_80a55d93aa5ecb9e,
-          mid_init$_c67728c7f4a764b5,
-          mid_init$_ab85b25be4476a0e,
-          mid_init$_7b92f603fecfaf2b,
-          mid_init$_e11bf4825866d52b,
-          mid_addOffset_1677a311e39de502,
-          mid_applyTo_2c604bfeb0a28a2f,
-          mid_applyTo_fe87e6eba6ef42f9,
-          mid_applyTo_f76646e67e6a0632,
-          mid_applyTo_44abf30654d86934,
-          mid_createFromModifiedRodrigues_ec287fbe4bf97234,
-          mid_estimateRate_5497a219643496d9,
-          mid_getModifiedRodrigues_a1f5c9dbe0a195af,
-          mid_getRotation_de86c7efc42eac14,
-          mid_getRotationAcceleration_d52645e0d4c07563,
-          mid_getRotationRate_d52645e0d4c07563,
-          mid_revert_8a604053f4d4c39e,
-          mid_rotationShiftedBy_ce9226ab7f6f56df,
-          mid_shiftedBy_3ab5c08186f27feb,
-          mid_subtractOffset_1677a311e39de502,
-          mid_toDerivativeStructureRotation_371facd070e18d41,
-          mid_toUnivariateDerivative1Rotation_1d339a2ee3a3323a,
-          mid_toUnivariateDerivative2Rotation_1d339a2ee3a3323a,
+          mid_init$_0640e6acf969ed28,
+          mid_init$_52b7e4a71c1f5acc,
+          mid_init$_cffe2196131a8abb,
+          mid_init$_cacf1e806efac37c,
+          mid_init$_ef872cbae0d10840,
+          mid_init$_4fdcd85b0c7929aa,
+          mid_init$_adb68a911ef752b9,
+          mid_addOffset_c0f86b964fece7aa,
+          mid_applyTo_f6b3fdf5ec92a07f,
+          mid_applyTo_fc4b100c90055253,
+          mid_applyTo_5954fda0d828683a,
+          mid_applyTo_c0d29187a28e22fc,
+          mid_createFromModifiedRodrigues_e4f621c772dd618e,
+          mid_estimateRate_d6616c6d64635c33,
+          mid_getModifiedRodrigues_575a099fc2492a12,
+          mid_getRotation_1e0dc1a6788897b9,
+          mid_getRotationAcceleration_f88961cca75a2c0a,
+          mid_getRotationRate_f88961cca75a2c0a,
+          mid_revert_f385f7a363d6ca27,
+          mid_rotationShiftedBy_72e0d732f56c88d5,
+          mid_shiftedBy_2dc3d2110b20141c,
+          mid_subtractOffset_c0f86b964fece7aa,
+          mid_toDerivativeStructureRotation_787de7775c059c73,
+          mid_toUnivariateDerivative1Rotation_73da4eeccf2b7e14,
+          mid_toUnivariateDerivative2Rotation_73da4eeccf2b7e14,
           max_mid
         };
 

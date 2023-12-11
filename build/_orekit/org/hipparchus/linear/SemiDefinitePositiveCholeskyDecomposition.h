@@ -24,10 +24,10 @@ namespace org {
       class SemiDefinitePositiveCholeskyDecomposition : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_c67473bd6cfaa69b,
-          mid_init$_21a79182f4dd9085,
-          mid_getL_688b496048ff947b,
-          mid_getLT_688b496048ff947b,
+          mid_init$_f3731847577f13e6,
+          mid_init$_08eaf415db10314f,
+          mid_getL_70a207fcbc031df2,
+          mid_getLT_70a207fcbc031df2,
           max_mid
         };
 

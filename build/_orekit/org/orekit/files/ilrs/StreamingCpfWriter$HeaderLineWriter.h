@@ -17,8 +17,8 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ilrs {
-        class StreamingCpfWriter$HeaderLineWriter;
         class CPFHeader;
+        class StreamingCpfWriter$HeaderLineWriter;
       }
     }
     namespace time {
@@ -36,10 +36,10 @@ namespace org {
         class StreamingCpfWriter$HeaderLineWriter : public ::java::lang::Enum {
          public:
           enum {
-            mid_getIdentifier_11b109bd155ca898,
-            mid_valueOf_c1c1c1cefb07ad13,
-            mid_values_86ce42271e03c949,
-            mid_write_5ea53a4031a3df60,
+            mid_getIdentifier_3cffd47377eca18a,
+            mid_valueOf_1b3efe879e7f1d29,
+            mid_values_add654cae3f6f9cd,
+            mid_write_900728190d5e0bec,
             max_mid
           };
 

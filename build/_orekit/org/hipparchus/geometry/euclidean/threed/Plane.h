@@ -6,27 +6,27 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      class Vector;
-      namespace partitioning {
-        class Embedding;
-        class Hyperplane;
-      }
       namespace euclidean {
+        namespace threed {
+          class SubPlane;
+          class Plane;
+          class Vector3D;
+          class Line;
+          class Euclidean3D;
+          class PolyhedronsSet;
+          class Rotation;
+        }
         namespace twod {
           class Vector2D;
           class Euclidean2D;
         }
-        namespace threed {
-          class SubPlane;
-          class Rotation;
-          class Line;
-          class PolyhedronsSet;
-          class Plane;
-          class Vector3D;
-          class Euclidean3D;
-        }
       }
       class Point;
+      namespace partitioning {
+        class Hyperplane;
+        class Embedding;
+      }
+      class Vector;
     }
     namespace exception {
       class MathRuntimeException;
@@ -49,38 +49,38 @@ namespace org {
           class Plane : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_71a7c3cfed678f9d,
-              mid_init$_5da06482a46416aa,
-              mid_init$_ec3112f4a5b73c95,
-              mid_contains_ab4ed00ccf0defd6,
-              mid_copySelf_1e83f05440df3f7f,
-              mid_emptyHyperplane_0e32c3e36042d486,
-              mid_getNormal_d52645e0d4c07563,
-              mid_getOffset_194a2acf6985d1d7,
-              mid_getOffset_07bb97c2794cf6b1,
-              mid_getOffset_b4822d5266bca26e,
-              mid_getOrigin_d52645e0d4c07563,
-              mid_getPointAt_5f7e52137dc6173e,
-              mid_getTolerance_dff5885c2c873297,
-              mid_getU_d52645e0d4c07563,
-              mid_getV_d52645e0d4c07563,
-              mid_intersection_cdaae38017a00464,
-              mid_intersection_daef14cbfc833ae9,
-              mid_intersection_98cbff8e29bca0b1,
-              mid_isSimilarTo_9b207ef3ceb142b8,
-              mid_project_c48805c2dda937c6,
-              mid_reset_4c8b15479bee9030,
-              mid_reset_8f7d2a24ef2ff591,
-              mid_revertSelf_0fa09c18fee449d5,
-              mid_rotate_1bf297956c6bafd3,
-              mid_sameOrientationAs_5bc340c02d9ac484,
-              mid_toSpace_25054c2060d7aee4,
-              mid_toSpace_84b1343e67eeaa7b,
-              mid_toSubSpace_02aa1f4808a162d3,
-              mid_toSubSpace_8144ab28b67d94ff,
-              mid_translate_c6a5f2e7e6d58765,
-              mid_wholeHyperplane_0e32c3e36042d486,
-              mid_wholeSpace_344a613a0061fc1e,
+              mid_init$_9eca765a47180abb,
+              mid_init$_8a3775c012d81228,
+              mid_init$_7b8560643974313c,
+              mid_contains_7ccf3b3f40d5fcd3,
+              mid_copySelf_1fd0e17d0272ad27,
+              mid_emptyHyperplane_45d5677cf604b36e,
+              mid_getNormal_f88961cca75a2c0a,
+              mid_getOffset_6c5cc1f7d7387606,
+              mid_getOffset_cf1fec2b7b1c0efe,
+              mid_getOffset_b540ea36818b5810,
+              mid_getOrigin_f88961cca75a2c0a,
+              mid_getPointAt_a18591be60e2d678,
+              mid_getTolerance_557b8123390d8d0c,
+              mid_getU_f88961cca75a2c0a,
+              mid_getV_f88961cca75a2c0a,
+              mid_intersection_915d07ea0c621755,
+              mid_intersection_1adc2918a6a6e897,
+              mid_intersection_6cfbbc81cf155b3e,
+              mid_isSimilarTo_ba626117b2392f64,
+              mid_project_328d0d966eeb9668,
+              mid_reset_c6c929e9e9af7f84,
+              mid_reset_be9548a8a583a03d,
+              mid_revertSelf_0640e6acf969ed28,
+              mid_rotate_5aeea1a6b4a20ee8,
+              mid_sameOrientationAs_cb9274a363000a77,
+              mid_toSpace_78d94b5fd2b1ad0c,
+              mid_toSpace_5d6b94fad5d111c4,
+              mid_toSubSpace_52abee4ee839df65,
+              mid_toSubSpace_adc34d508fd7001c,
+              mid_translate_7bc527dfa6d63039,
+              mid_wholeHyperplane_45d5677cf604b36e,
+              mid_wholeSpace_fb1aab73a260a0e4,
               max_mid
             };
 

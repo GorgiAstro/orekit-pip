@@ -35,10 +35,10 @@ namespace org {
           class MultivariateOptimizer : public ::org::hipparchus::optim::BaseMultivariateOptimizer {
            public:
             enum {
-              mid_computeObjectiveValue_9dc1ec0bcc0a9a29,
-              mid_getGoalType_5759ced222da2ae0,
-              mid_optimize_d70788483e9a9a2c,
-              mid_parseOptimizationData_3d26e9f3a1d7e833,
+              mid_computeObjectiveValue_86c4a0582e0747ce,
+              mid_getGoalType_bd7f7e2869c755fb,
+              mid_optimize_428d2547a0c45016,
+              mid_parseOptimizationData_946a92401917c130,
               max_mid
             };
 

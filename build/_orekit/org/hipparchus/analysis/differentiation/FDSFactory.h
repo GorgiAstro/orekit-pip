@@ -5,17 +5,17 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
+    namespace analysis {
+      namespace differentiation {
+        class DSCompiler;
+        class FieldDerivativeStructure;
+        class FDSFactory$DerivativeField;
+      }
+    }
     namespace exception {
       class MathIllegalArgumentException;
     }
-    namespace analysis {
-      namespace differentiation {
-        class FDSFactory$DerivativeField;
-        class DSCompiler;
-        class FieldDerivativeStructure;
-      }
-    }
+    class CalculusFieldElement;
     class Field;
   }
 }
@@ -34,16 +34,16 @@ namespace org {
         class FDSFactory : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7dbd657fb2d34563,
-            mid_build_418b3af1711b43e6,
-            mid_build_44d0136f1427ef1d,
-            mid_constant_629ba89773b89477,
-            mid_constant_dc82eda6d2eed253,
-            mid_getCompiler_ae6f9f9cc48aac48,
-            mid_getDerivativeField_b3afcca7dbbddb7f,
-            mid_getValueField_5b28be2d3632a5dc,
-            mid_variable_3f218e91648e4931,
-            mid_variable_695a5b8d4ec495cc,
+            mid_init$_a9ccb012d4cb48bd,
+            mid_build_1e72ceb97300ff53,
+            mid_build_276eb72cb82e871b,
+            mid_constant_16af759261ef50b4,
+            mid_constant_bcb3f877ec28ee10,
+            mid_getCompiler_dfc048d343f51ab1,
+            mid_getDerivativeField_2ed566e60939f4ee,
+            mid_getValueField_20f98801541dcec1,
+            mid_variable_a73597f593036083,
+            mid_variable_7e11caf716d163b9,
             max_mid
           };
 

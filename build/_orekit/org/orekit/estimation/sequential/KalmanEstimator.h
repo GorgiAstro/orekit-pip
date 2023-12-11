@@ -35,10 +35,10 @@ namespace org {
         class KalmanEstimator : public ::org::orekit::estimation::sequential::AbstractKalmanEstimator {
          public:
           enum {
-            mid_estimationStep_ea9d4e2e9f4a999e,
-            mid_processMeasurements_cdedbecd168387ff,
-            mid_setObserver_3b3c487cb3322691,
-            mid_getKalmanEstimation_e05aaef10b06b09b,
+            mid_estimationStep_e70572bb561aea25,
+            mid_processMeasurements_48e4d72357877767,
+            mid_setObserver_4275515b1ffe8ceb,
+            mid_getKalmanEstimation_32faeba2996c6566,
             max_mid
           };
 

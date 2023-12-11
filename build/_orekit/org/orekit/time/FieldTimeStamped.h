@@ -28,8 +28,8 @@ namespace org {
       class FieldTimeStamped : public ::java::lang::Object {
        public:
         enum {
-          mid_durationFrom_5b3d47fc55f504bc,
-          mid_getDate_51da00d5b8a3b5df,
+          mid_durationFrom_57047f23e148cea9,
+          mid_getDate_f1fe4daf77c66560,
           max_mid
         };
 

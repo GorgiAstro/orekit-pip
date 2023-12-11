@@ -39,8 +39,8 @@ namespace org {
           class StopOnEvent : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_eventOccurred_abc543fa9701720f,
+              mid_init$_0640e6acf969ed28,
+              mid_eventOccurred_c85ac59cb25f2670,
               max_mid
             };
 

@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
+    class Field;
+    class CalculusFieldElement;
     namespace analysis {
       class CalculusFieldUnivariateVectorFunction;
     }
-    class CalculusFieldElement;
-    class Field;
   }
 }
 namespace java {
@@ -26,8 +26,8 @@ namespace org {
       class FieldUnivariateVectorFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_toCalculusFieldUnivariateVectorFunction_dae87adbde51705f,
-          mid_value_30c819b09170a025,
+          mid_toCalculusFieldUnivariateVectorFunction_fa57fb650f468ffb,
+          mid_value_0baeeb97b799c59f,
           max_mid
         };
 

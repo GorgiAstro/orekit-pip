@@ -5,22 +5,22 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
     namespace bodies {
       class BodyShape;
       class GeodeticPoint;
+    }
+    namespace utils {
+      class TimeStampedFieldPVCoordinates;
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
+      class TimeStampedPVCoordinates;
     }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
     }
-    namespace utils {
-      class PVCoordinatesProvider;
-      class FieldPVCoordinatesProvider;
-      class TimeStampedPVCoordinates;
-      class TimeStampedFieldPVCoordinates;
+    namespace frames {
+      class Frame;
     }
   }
   namespace hipparchus {
@@ -47,10 +47,10 @@ namespace org {
       class TargetPointing : public ::org::orekit::attitudes::GroundPointing {
        public:
         enum {
-          mid_init$_b54c157362136a00,
-          mid_init$_8238e3d52ed5e244,
-          mid_getTargetPV_ad3e02e6f0d115f2,
-          mid_getTargetPV_129d59e5c897146f,
+          mid_init$_d8e03270a3daa2ee,
+          mid_init$_6d8eab5c7bf95fd9,
+          mid_getTargetPV_ee00ab612436435b,
+          mid_getTargetPV_9e0119a6fef31431,
           max_mid
         };
 

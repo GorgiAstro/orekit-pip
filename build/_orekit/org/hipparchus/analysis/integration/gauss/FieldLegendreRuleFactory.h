@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
-    namespace util {
-      class Pair;
-    }
     namespace exception {
       class MathIllegalArgumentException;
     }
+    namespace util {
+      class Pair;
+    }
+    class CalculusFieldElement;
     class Field;
   }
 }
@@ -31,8 +31,8 @@ namespace org {
           class FieldLegendreRuleFactory : public ::org::hipparchus::analysis::integration::gauss::FieldAbstractRuleFactory {
            public:
             enum {
-              mid_init$_484998d88974267b,
-              mid_computeRule_e670405dd33862ee,
+              mid_init$_979ae7f57a96b096,
+              mid_computeRule_9a5adfb225849173,
               max_mid
             };
 

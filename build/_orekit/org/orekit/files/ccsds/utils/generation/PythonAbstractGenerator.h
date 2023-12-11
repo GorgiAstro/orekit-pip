@@ -4,11 +4,11 @@
 #include "org/orekit/files/ccsds/utils/generation/AbstractGenerator.h"
 
 namespace java {
-  namespace util {
-    class List;
-  }
   namespace io {
     class IOException;
+  }
+  namespace util {
+    class List;
   }
   namespace lang {
     class Throwable;
@@ -45,16 +45,16 @@ namespace org {
             class PythonAbstractGenerator : public ::org::orekit::files::ccsds::utils::generation::AbstractGenerator {
              public:
               enum {
-                mid_init$_421e10c76f266368,
-                mid_endMessage_d0bc48d5b00dc40c,
-                mid_finalize_0fa09c18fee449d5,
-                mid_getFormat_66298c6188053be6,
-                mid_pythonDecRef_0fa09c18fee449d5,
-                mid_pythonExtension_492808a339bfa35f,
-                mid_pythonExtension_3a8e7649f31fdb20,
-                mid_startMessage_d68f2e10a4896937,
-                mid_writeComments_de3e021e7266b71e,
-                mid_writeEntry_ddc5f91684d983c2,
+                mid_init$_6e7c6a479ca124c5,
+                mid_endMessage_f5ffdf29129ef90a,
+                mid_finalize_0640e6acf969ed28,
+                mid_getFormat_c3a4c5f37e67a25e,
+                mid_pythonDecRef_0640e6acf969ed28,
+                mid_pythonExtension_9e26256fb0d384a2,
+                mid_pythonExtension_3cd6a6b354c6aa22,
+                mid_startMessage_9547058464ed819e,
+                mid_writeComments_4ccaedadb068bdeb,
+                mid_writeEntry_a717407bcf2f477f,
                 max_mid
               };
 

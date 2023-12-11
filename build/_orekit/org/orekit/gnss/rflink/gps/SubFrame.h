@@ -35,19 +35,19 @@ namespace org {
           class SubFrame : public ::java::lang::Object {
            public:
             enum {
-              mid_checkParity_4bcf680fb63dc524,
-              mid_getAlert_570ce0828f81a2c1,
-              mid_getAntiSpoofing_570ce0828f81a2c1,
-              mid_getId_570ce0828f81a2c1,
-              mid_getIntegrityStatus_570ce0828f81a2c1,
-              mid_getMessage_570ce0828f81a2c1,
-              mid_getPreamble_570ce0828f81a2c1,
-              mid_getTow_570ce0828f81a2c1,
-              mid_hasParityErrors_b108b35ef48e27bd,
-              mid_parse_47ae5458c8202d96,
-              mid_setField_ea6ddf4b94154dc7,
-              mid_setField_6296971d230a4e5f,
-              mid_getField_2235cd056f5a882b,
+              mid_checkParity_1e0f61f59fdd7111,
+              mid_getAlert_412668abc8d889e9,
+              mid_getAntiSpoofing_412668abc8d889e9,
+              mid_getId_412668abc8d889e9,
+              mid_getIntegrityStatus_412668abc8d889e9,
+              mid_getMessage_412668abc8d889e9,
+              mid_getPreamble_412668abc8d889e9,
+              mid_getTow_412668abc8d889e9,
+              mid_hasParityErrors_89b302893bdbe1f1,
+              mid_parse_80def97abbda8bbb,
+              mid_setField_95509ae0fa83b970,
+              mid_setField_a9571382e1de1e93,
+              mid_getField_0092017e99012694,
               max_mid
             };
 

@@ -24,11 +24,11 @@ namespace org {
       class SchurTransformer : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_c67473bd6cfaa69b,
-          mid_init$_21a79182f4dd9085,
-          mid_getP_688b496048ff947b,
-          mid_getPT_688b496048ff947b,
-          mid_getT_688b496048ff947b,
+          mid_init$_f3731847577f13e6,
+          mid_init$_08eaf415db10314f,
+          mid_getP_70a207fcbc031df2,
+          mid_getPT_70a207fcbc031df2,
+          mid_getT_70a207fcbc031df2,
           max_mid
         };
 

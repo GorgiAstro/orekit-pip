@@ -3,14 +3,20 @@
 
 #include "org/orekit/estimation/measurements/GroundReceiverMeasurement.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class EstimatedMeasurement;
-        class GroundStation;
-        class EstimatedMeasurementBase;
         class ObservableSatellite;
+        class GroundStation;
+        class EstimatedMeasurement;
+        class EstimatedMeasurementBase;
       }
     }
     namespace time {
@@ -19,12 +25,6 @@ namespace org {
     namespace propagation {
       class SpacecraftState;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -37,13 +37,13 @@ namespace org {
         class PythonGroundReceiverMeasurement : public ::org::orekit::estimation::measurements::GroundReceiverMeasurement {
          public:
           enum {
-            mid_init$_d61b0753fbc5ddd9,
-            mid_finalize_0fa09c18fee449d5,
-            mid_pythonDecRef_0fa09c18fee449d5,
-            mid_pythonExtension_492808a339bfa35f,
-            mid_pythonExtension_3a8e7649f31fdb20,
-            mid_theoreticalEvaluation_27ef5cc84ad0852b,
-            mid_theoreticalEvaluationWithoutDerivatives_e32883476b3d9b22,
+            mid_init$_0c97652d522ed1b8,
+            mid_finalize_0640e6acf969ed28,
+            mid_pythonDecRef_0640e6acf969ed28,
+            mid_pythonExtension_9e26256fb0d384a2,
+            mid_pythonExtension_3cd6a6b354c6aa22,
+            mid_theoreticalEvaluation_eae039ee8c8a4a4d,
+            mid_theoreticalEvaluationWithoutDerivatives_71d69ca0f7c280a7,
             max_mid
           };
 

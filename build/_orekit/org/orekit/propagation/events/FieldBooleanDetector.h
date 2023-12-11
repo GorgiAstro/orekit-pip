@@ -6,12 +6,12 @@
 namespace org {
   namespace orekit {
     namespace propagation {
+      class FieldSpacecraftState;
       namespace events {
         class FieldBooleanDetector;
         class FieldNegateDetector;
         class FieldEventDetector;
       }
-      class FieldSpacecraftState;
     }
     namespace time {
       class FieldAbsoluteDate;
@@ -40,15 +40,15 @@ namespace org {
         class FieldBooleanDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_andCombine_f1bf7ad4c2560c97,
-            mid_andCombine_e841a6ad3abae38f,
-            mid_g_41a008afe53da855,
-            mid_getDetectors_2afa36052df4765d,
-            mid_init_8e8de2be1664674a,
-            mid_notCombine_bd2e3c52711c8637,
-            mid_orCombine_f1bf7ad4c2560c97,
-            mid_orCombine_e841a6ad3abae38f,
-            mid_create_705c558177873e23,
+            mid_andCombine_d61c8663f0454d70,
+            mid_andCombine_4626eeb861b7efcb,
+            mid_g_de1c2d709eb2829c,
+            mid_getDetectors_0d9551367f7ecdef,
+            mid_init_811e49dad2467b67,
+            mid_notCombine_d201107bb76f34db,
+            mid_orCombine_d61c8663f0454d70,
+            mid_orCombine_4626eeb861b7efcb,
+            mid_create_44da38e4a9a9d26d,
             max_mid
           };
 

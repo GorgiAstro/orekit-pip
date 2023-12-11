@@ -3,6 +3,14 @@
 
 #include "org/orekit/propagation/AbstractPropagator.h"
 
+namespace java {
+  namespace util {
+    class Collection;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -20,14 +28,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace util {
-    class Collection;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -38,18 +38,18 @@ namespace org {
         class AbstractAnalyticalPropagator : public ::org::orekit::propagation::AbstractPropagator {
          public:
           enum {
-            mid_addEventDetector_efb7003d866d4523,
-            mid_clearEventsDetectors_0fa09c18fee449d5,
-            mid_getEphemerisGenerator_18d439b26e70ccd0,
-            mid_getEventsDetectors_37528d110cff6b74,
-            mid_getPvProvider_903aca6bb4523e29,
-            mid_propagate_a69ef29c3ea1e1fa,
-            mid_acceptStep_a63e58b9dfde9ac7,
-            mid_propagateOrbit_7a8f4c854607bed6,
-            mid_getMass_bf1d7732f1acb697,
-            mid_resetIntermediateState_33f4696e4edaa03c,
-            mid_basicPropagate_fbff2ff5554d95e1,
-            mid_getJacobiansColumnsNames_2afa36052df4765d,
+            mid_addEventDetector_2e2dfaf38ed50d1d,
+            mid_clearEventsDetectors_0640e6acf969ed28,
+            mid_getEphemerisGenerator_6a3edfe13bcee780,
+            mid_getEventsDetectors_12ee61573a18f417,
+            mid_getPvProvider_dec199e86bf037eb,
+            mid_propagate_b96c0d97a162784d,
+            mid_getJacobiansColumnsNames_0d9551367f7ecdef,
+            mid_propagateOrbit_9e937c0ae63d8022,
+            mid_resetIntermediateState_45bf76e836befe86,
+            mid_getMass_b0b988f941da47d8,
+            mid_basicPropagate_15e0d02372b1347b,
+            mid_acceptStep_5c22a6e0fde1ed6a,
             max_mid
           };
 

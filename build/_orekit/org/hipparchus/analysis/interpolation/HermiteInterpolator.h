@@ -15,9 +15,9 @@ namespace org {
       }
     }
     namespace exception {
+      class MathIllegalArgumentException;
       class NullArgumentException;
       class MathRuntimeException;
-      class MathIllegalArgumentException;
     }
   }
 }
@@ -36,12 +36,12 @@ namespace org {
         class HermiteInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_addSamplePoint_4908d66a94509f65,
-            mid_derivatives_1f43101c22428bd8,
-            mid_getPolynomials_02eeb9e6c0dfd60f,
-            mid_value_cd41055053027787,
-            mid_value_75b23942a40a3816,
+            mid_init$_0640e6acf969ed28,
+            mid_addSamplePoint_c348d229de01ec27,
+            mid_derivatives_fee2210b9e0b192d,
+            mid_getPolynomials_ab8ca1f1c6647c6c,
+            mid_value_ebf0376b0df5061b,
+            mid_value_e94dffdd58ba460f,
             max_mid
           };
 

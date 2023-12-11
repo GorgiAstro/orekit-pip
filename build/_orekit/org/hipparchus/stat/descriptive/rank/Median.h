@@ -6,21 +6,21 @@
 namespace org {
   namespace hipparchus {
     namespace stat {
-      namespace descriptive {
-        namespace rank {
-          class Percentile$EstimationType;
-          class Median;
-        }
-      }
       namespace ranking {
         class NaNStrategy;
       }
-    }
-    namespace util {
-      class KthSelector;
+      namespace descriptive {
+        namespace rank {
+          class Median;
+          class Percentile$EstimationType;
+        }
+      }
     }
     namespace exception {
       class MathIllegalArgumentException;
+    }
+    namespace util {
+      class KthSelector;
     }
   }
 }
@@ -43,15 +43,15 @@ namespace org {
           class Median : public ::org::hipparchus::stat::descriptive::AbstractUnivariateStatistic {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_copy_36bb62a49d7ab711,
-              mid_evaluate_556bede10daac330,
-              mid_getEstimationType_ca8426dd6c9a49d0,
-              mid_getKthSelector_f697e2e90a72747d,
-              mid_getNaNStrategy_884e0da06e21afce,
-              mid_withEstimationType_d01bcc37271b909f,
-              mid_withKthSelector_b70e5e7236ae1b3c,
-              mid_withNaNStrategy_f18b8dbf01717f4c,
+              mid_init$_0640e6acf969ed28,
+              mid_copy_9ffc117cc13b2825,
+              mid_evaluate_9eeeb1ae977f525d,
+              mid_getEstimationType_4612cef7d7be3067,
+              mid_getKthSelector_e3d4c2054ef00f3b,
+              mid_getNaNStrategy_771b1218ed87a53c,
+              mid_withEstimationType_a0066a70c668abd3,
+              mid_withKthSelector_e61e10a52383847b,
+              mid_withNaNStrategy_2c605bc82addaab6,
               max_mid
             };
 

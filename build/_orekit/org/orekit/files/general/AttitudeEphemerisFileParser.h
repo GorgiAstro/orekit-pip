@@ -30,7 +30,7 @@ namespace org {
         class AttitudeEphemerisFileParser : public ::java::lang::Object {
          public:
           enum {
-            mid_parse_538d2753c07b807c,
+            mid_parse_10d7b05ae96f3423,
             max_mid
           };
 

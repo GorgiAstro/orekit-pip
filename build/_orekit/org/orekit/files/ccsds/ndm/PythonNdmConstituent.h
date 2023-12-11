@@ -3,23 +3,8 @@
 
 #include "org/orekit/files/ccsds/ndm/NdmConstituent.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataContext;
-    }
-    namespace utils {
-      class IERSConventions;
-    }
     namespace files {
       namespace ccsds {
         namespace section {
@@ -27,6 +12,21 @@ namespace org {
         }
       }
     }
+    namespace utils {
+      class IERSConventions;
+    }
+    namespace data {
+      class DataContext;
+    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -40,16 +40,16 @@ namespace org {
           class PythonNdmConstituent : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
            public:
             enum {
-              mid_init$_88568a8f3a300101,
-              mid_finalize_0fa09c18fee449d5,
-              mid_getConventions_60f9ded87ab7ca4c,
-              mid_getDataContext_0b7cf48ee6a922ee,
-              mid_getHeader_0e1b4a5061fb71d6,
-              mid_getSegments_2afa36052df4765d,
-              mid_pythonDecRef_0fa09c18fee449d5,
-              mid_pythonExtension_492808a339bfa35f,
-              mid_pythonExtension_3a8e7649f31fdb20,
-              mid_validate_0fa09c18fee449d5,
+              mid_init$_3744512ad200554d,
+              mid_finalize_0640e6acf969ed28,
+              mid_getConventions_690653480c12ac72,
+              mid_getDataContext_b259b25d6495e5b3,
+              mid_getHeader_6fe6597816e9e593,
+              mid_getSegments_0d9551367f7ecdef,
+              mid_pythonDecRef_0640e6acf969ed28,
+              mid_pythonExtension_9e26256fb0d384a2,
+              mid_pythonExtension_3cd6a6b354c6aa22,
+              mid_validate_0640e6acf969ed28,
               max_mid
             };
 

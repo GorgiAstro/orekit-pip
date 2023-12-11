@@ -3,28 +3,28 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace enclosing {
+        class SupportBallGenerator;
+        class EnclosingBall;
+      }
+      namespace euclidean {
+        namespace twod {
+          class Vector2D;
+          class Euclidean2D;
+        }
+      }
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace enclosing {
-        class EnclosingBall;
-        class SupportBallGenerator;
-      }
-      namespace euclidean {
-        namespace twod {
-          class Euclidean2D;
-          class Vector2D;
-        }
-      }
-    }
   }
 }
 template<class T> class JArray;
@@ -38,8 +38,8 @@ namespace org {
           class DiskGenerator : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_ballOnSupport_8eaea97b2dcfeb64,
+              mid_init$_0640e6acf969ed28,
+              mid_ballOnSupport_7c06e55e72f854ed,
               max_mid
             };
 

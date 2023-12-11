@@ -7,20 +7,20 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace utils {
-          namespace generation {
-            class Generator;
-          }
-        }
         namespace ndm {
           namespace odm {
             namespace ocm {
-              class TrajectoryStateHistoryMetadata;
-              class OcmWriter;
               class StreamingOcmWriter$BlockWriter;
               class OcmMetadata;
+              class TrajectoryStateHistoryMetadata;
+              class OcmWriter;
             }
             class OdmHeader;
+          }
+        }
+        namespace utils {
+          namespace generation {
+            class Generator;
           }
         }
       }
@@ -49,10 +49,10 @@ namespace org {
               class StreamingOcmWriter : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_8e97470ee4b40e88,
-                  mid_init$_824428e8b1c4caea,
-                  mid_close_0fa09c18fee449d5,
-                  mid_newBlock_0b234cb422df0ede,
+                  mid_init$_351dfc3ade83fe24,
+                  mid_init$_219f77940e63ab66,
+                  mid_close_0640e6acf969ed28,
+                  mid_newBlock_299afe41b2afd6dd,
                   max_mid
                 };
 

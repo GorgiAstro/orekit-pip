@@ -36,8 +36,8 @@ namespace org {
           class IntegerLeastSquareComparator : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_compare_4d9ee7b457024673,
+              mid_init$_0640e6acf969ed28,
+              mid_compare_b55c09687809027d,
               max_mid
             };
 

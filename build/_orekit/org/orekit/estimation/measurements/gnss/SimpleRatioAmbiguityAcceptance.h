@@ -8,8 +8,8 @@ namespace org {
     namespace estimation {
       namespace measurements {
         namespace gnss {
-          class IntegerLeastSquareSolution;
           class AmbiguityAcceptance;
+          class IntegerLeastSquareSolution;
         }
       }
     }
@@ -31,9 +31,9 @@ namespace org {
           class SimpleRatioAmbiguityAcceptance : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_17db3a65980d3441,
-              mid_accept_9b257df6a366a6ba,
-              mid_numberOfCandidates_570ce0828f81a2c1,
+              mid_init$_10f281d777284cea,
+              mid_accept_21ad48006d2406de,
+              mid_numberOfCandidates_412668abc8d889e9,
               max_mid
             };
 

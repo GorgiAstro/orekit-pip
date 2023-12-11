@@ -37,10 +37,10 @@ namespace org {
           class GatheringSubscriber : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_getGeneratedMeasurements_917725130bbb61f1,
-              mid_handleGeneratedMeasurement_558d7f8249b8a2bc,
-              mid_init_a9e71d848b81c8f8,
+              mid_init$_0640e6acf969ed28,
+              mid_getGeneratedMeasurements_c6b6a992db588a51,
+              mid_handleGeneratedMeasurement_4063373aad443d2b,
+              mid_init_d5db9a5f2035671b,
               max_mid
             };
 

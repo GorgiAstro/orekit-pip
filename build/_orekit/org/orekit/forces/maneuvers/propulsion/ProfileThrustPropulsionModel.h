@@ -4,31 +4,7 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace forces {
-      namespace maneuvers {
-        namespace propulsion {
-          class ThrustPropulsionModel;
-          class PolynomialThrustSegment;
-        }
-        class Control3DVectorCostType;
-      }
-    }
-    namespace propagation {
-      namespace events {
-        class EventDetector;
-        class FieldEventDetector;
-      }
-      class FieldSpacecraftState;
-      class SpacecraftState;
-    }
-    namespace utils {
-      class TimeSpanMap;
-      class ParameterDriver;
-    }
-  }
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -38,14 +14,38 @@ namespace org {
       }
     }
     class Field;
+    class CalculusFieldElement;
+  }
+  namespace orekit {
+    namespace utils {
+      class TimeSpanMap;
+      class ParameterDriver;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+      namespace events {
+        class EventDetector;
+        class FieldEventDetector;
+      }
+      class SpacecraftState;
+    }
+    namespace forces {
+      namespace maneuvers {
+        namespace propulsion {
+          class ThrustPropulsionModel;
+          class PolynomialThrustSegment;
+        }
+        class Control3DVectorCostType;
+      }
+    }
   }
 }
 namespace java {
   namespace util {
+    class List;
     namespace stream {
       class Stream;
     }
-    class List;
   }
   namespace lang {
     class Class;
@@ -63,18 +63,18 @@ namespace org {
           class ProfileThrustPropulsionModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_f818c95c4dc4720b,
-              mid_getControl3DVectorCostType_67739b20d9566a8c,
-              mid_getEventDetectors_20f6d2b462aaef4b,
-              mid_getFieldEventDetectors_361313cd1a9c693a,
-              mid_getFlowRate_432f3d328c15ec82,
-              mid_getFlowRate_8bdf60d5551eceaf,
-              mid_getFlowRate_0b7191d207b9680f,
-              mid_getName_11b109bd155ca898,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_getThrustVector_abc43395638fd218,
-              mid_getThrustVector_8954761face5e1a7,
-              mid_getThrustVector_b42ac4b5bfb80fab,
+              mid_init$_695d3f43be2dface,
+              mid_getControl3DVectorCostType_601f05e5d0c82ad9,
+              mid_getEventDetectors_d7cce92225eb0db2,
+              mid_getFieldEventDetectors_8130af76f6998f44,
+              mid_getFlowRate_1bbf81d80c47ecdd,
+              mid_getFlowRate_810dcb8f9f5d191a,
+              mid_getFlowRate_4ad317f7598a10a9,
+              mid_getName_3cffd47377eca18a,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_getThrustVector_3fff8c49d4e2dc6b,
+              mid_getThrustVector_b61fb59a041240c6,
+              mid_getThrustVector_61944e27a39e8290,
               max_mid
             };
 
@@ -95,13 +95,13 @@ namespace org {
             ::java::util::stream::Stream getEventDetectors() const;
             ::java::util::stream::Stream getFieldEventDetectors(const ::org::hipparchus::Field &) const;
             jdouble getFlowRate(const ::org::orekit::propagation::SpacecraftState &) const;
-            ::org::hipparchus::CalculusFieldElement getFlowRate(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
             jdouble getFlowRate(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
+            ::org::hipparchus::CalculusFieldElement getFlowRate(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
             ::java::lang::String getName() const;
             ::java::util::List getParametersDrivers() const;
             ::org::hipparchus::geometry::euclidean::threed::Vector3D getThrustVector(const ::org::orekit::propagation::SpacecraftState &) const;
-            ::org::hipparchus::geometry::euclidean::threed::Vector3D getThrustVector(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
             ::org::hipparchus::geometry::euclidean::threed::FieldVector3D getThrustVector(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
+            ::org::hipparchus::geometry::euclidean::threed::Vector3D getThrustVector(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
           };
         }
       }

@@ -28,12 +28,12 @@ namespace org {
       class DecompositionSolver : public ::java::lang::Object {
        public:
         enum {
-          mid_getColumnDimension_570ce0828f81a2c1,
-          mid_getInverse_688b496048ff947b,
-          mid_getRowDimension_570ce0828f81a2c1,
-          mid_isNonSingular_b108b35ef48e27bd,
-          mid_solve_613347e28dd909cd,
-          mid_solve_e9b72403ad502221,
+          mid_getColumnDimension_412668abc8d889e9,
+          mid_getInverse_70a207fcbc031df2,
+          mid_getRowDimension_412668abc8d889e9,
+          mid_isNonSingular_89b302893bdbe1f1,
+          mid_solve_342d5b01463e0dc5,
+          mid_solve_340b47d21842d02c,
           max_mid
         };
 

@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -13,19 +12,20 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
     class Field;
   }
   namespace orekit {
-    namespace time {
-      class FieldTimeStamped;
-      class TimeScale;
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-    }
     namespace utils {
       class TimeStampedFieldPVCoordinates;
-      class TimeStampedPVCoordinates;
       class PVCoordinates;
+      class TimeStampedPVCoordinates;
+    }
+    namespace time {
+      class TimeScale;
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+      class FieldTimeStamped;
     }
   }
 }
@@ -44,44 +44,44 @@ namespace org {
       class TimeStampedFieldPVCoordinates : public ::org::orekit::utils::FieldPVCoordinates {
        public:
         enum {
-          mid_init$_dce00f1bb2a9b447,
-          mid_init$_fdb43bfa6d43366f,
-          mid_init$_468ba0bc6c5bf070,
-          mid_init$_ffeb9db3a56160f3,
-          mid_init$_714680d7f2f36231,
-          mid_init$_dad60168652e571f,
-          mid_init$_94e86b986601fe86,
-          mid_init$_9ff58311d7400e04,
-          mid_init$_ce537fff2eb7dd83,
-          mid_init$_5b99a056028b24a3,
-          mid_init$_a77b68499c2a150f,
-          mid_init$_988f6932842e45aa,
-          mid_init$_fc453dab701d245e,
-          mid_init$_22c42e194d2f9e41,
-          mid_init$_5dbf64d84deeb0bb,
-          mid_init$_46f6fdcb314b59b0,
-          mid_init$_8b9453b84e578c27,
-          mid_init$_b21aea609d95b4cb,
-          mid_init$_85f69d1090230023,
-          mid_init$_4d38f0699df00596,
-          mid_init$_8c6df58dbf1792d4,
-          mid_init$_4d3d873e2f48d623,
-          mid_init$_80c668a1a390999a,
-          mid_init$_d6e3c4b90386d014,
-          mid_init$_1e4eb190a274ece1,
-          mid_init$_413cfd58be4a8f36,
-          mid_init$_e9cecda3f72174e4,
-          mid_init$_2f69f97ab801d697,
-          mid_init$_54db1fbb29425a19,
-          mid_init$_f43979ec1613a752,
-          mid_init$_d2d95c9364c6998f,
-          mid_init$_8904b988a7471757,
-          mid_getDate_51da00d5b8a3b5df,
-          mid_shiftedBy_357c4c67143fefb2,
-          mid_shiftedBy_653eb1a4934a2f6b,
-          mid_toString_11b109bd155ca898,
-          mid_toString_e3ec59f6a2ed4d7c,
-          mid_toTimeStampedPVCoordinates_c204436deca11d94,
+          mid_init$_287992e1be2f741b,
+          mid_init$_be4a763764fca433,
+          mid_init$_3662f4f3d5ceb7b5,
+          mid_init$_ba43a5f0914e9ada,
+          mid_init$_787a95047ac068ac,
+          mid_init$_dd3b29be3171ef13,
+          mid_init$_af6d4d196c7a2c20,
+          mid_init$_c051df2d044d00ed,
+          mid_init$_a14a16331d5f2b77,
+          mid_init$_264c2c939e537026,
+          mid_init$_3f4828593e8baa0b,
+          mid_init$_f6b7835da097715f,
+          mid_init$_ba774aad389cff86,
+          mid_init$_e632fd0ade92943b,
+          mid_init$_55e8cbd742515bc1,
+          mid_init$_5d4fba259711cb3f,
+          mid_init$_ce0a5091dff76f76,
+          mid_init$_4c91ace03dab7333,
+          mid_init$_60d304cf92aedfe6,
+          mid_init$_ecc4fb9310f8d0bd,
+          mid_init$_68fb5b56ef6bbd86,
+          mid_init$_c624442a4dc7968d,
+          mid_init$_657c889ec221a7a4,
+          mid_init$_25cfa2aa8962d285,
+          mid_init$_2eb0156eea2a510a,
+          mid_init$_97337ceb85d50c1a,
+          mid_init$_fe39c48a4de0cba5,
+          mid_init$_f447d39279cf90d3,
+          mid_init$_af66ea9232dfcd29,
+          mid_init$_381a7ac9b6d39968,
+          mid_init$_efda25d1bdea6647,
+          mid_init$_dabd12216765412e,
+          mid_getDate_f1fe4daf77c66560,
+          mid_shiftedBy_30b51fed958970f2,
+          mid_shiftedBy_e68f08e83f93f159,
+          mid_toString_3cffd47377eca18a,
+          mid_toString_8873a127a4f312ad,
+          mid_toTimeStampedPVCoordinates_daf15abc21907508,
           max_mid
         };
 

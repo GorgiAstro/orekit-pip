@@ -4,27 +4,16 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class FieldVector3D;
-          class Vector3D;
-        }
-      }
-    }
-  }
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
     namespace bodies {
       class BodyShape;
     }
     namespace time {
-      class AbsoluteDate;
       class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
+    namespace frames {
+      class Frame;
     }
     namespace models {
       namespace earth {
@@ -33,6 +22,17 @@ namespace org {
         }
       }
     }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -51,10 +51,10 @@ namespace org {
           class SimpleExponentialAtmosphere : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_d4e71ef1b50c73de,
-              mid_getDensity_f7d7785230311c38,
-              mid_getDensity_b79d75c1a8af7374,
-              mid_getFrame_b86f9f61d97a7244,
+              mid_init$_6e0ec85ad512ea5d,
+              mid_getDensity_57dd506d2d9ba196,
+              mid_getDensity_818999d9e7960fd1,
+              mid_getFrame_6c9bc0a928c56d4e,
               max_mid
             };
 

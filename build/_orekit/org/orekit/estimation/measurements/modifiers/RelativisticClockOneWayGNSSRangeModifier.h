@@ -13,17 +13,17 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace utils {
+      class ParameterDriver;
+    }
     namespace estimation {
       namespace measurements {
         class EstimatedMeasurementBase;
-        class EstimationModifier;
         namespace gnss {
           class OneWayGNSSRange;
         }
+        class EstimationModifier;
       }
-    }
-    namespace utils {
-      class ParameterDriver;
     }
   }
 }
@@ -38,9 +38,9 @@ namespace org {
           class RelativisticClockOneWayGNSSRangeModifier : public ::org::orekit::estimation::measurements::modifiers::AbstractRelativisticClockModifier {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_modifyWithoutDerivatives_d1815d998cba71e9,
+              mid_init$_0640e6acf969ed28,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_modifyWithoutDerivatives_e471490df8741b73,
               max_mid
             };
 

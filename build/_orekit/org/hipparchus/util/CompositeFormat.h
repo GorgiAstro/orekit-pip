@@ -4,18 +4,18 @@
 #include "java/lang/Object.h"
 
 namespace java {
+  namespace text {
+    class ParsePosition;
+    class NumberFormat;
+    class FieldPosition;
+  }
   namespace util {
     class Locale;
   }
-  namespace text {
-    class NumberFormat;
-    class ParsePosition;
-    class FieldPosition;
-  }
   namespace lang {
     class Number;
-    class StringBuffer;
     class Class;
+    class StringBuffer;
     class String;
   }
 }
@@ -28,13 +28,13 @@ namespace org {
       class CompositeFormat : public ::java::lang::Object {
        public:
         enum {
-          mid_formatDouble_011f6c03d2da5cfc,
-          mid_getDefaultNumberFormat_24f83dea4a8657b1,
-          mid_getDefaultNumberFormat_09db48c8af63ef24,
-          mid_parseAndIgnoreWhitespace_e097ee22c3f6fd45,
-          mid_parseFixedstring_cbbf5c6c125aa0e5,
-          mid_parseNextCharacter_3867dd0052a198da,
-          mid_parseNumber_12cb0ffadecc8e5c,
+          mid_formatDouble_d7c56a79155e517c,
+          mid_getDefaultNumberFormat_001645e916bd626d,
+          mid_getDefaultNumberFormat_eb8cc1bc569326d0,
+          mid_parseAndIgnoreWhitespace_c31631851425bff4,
+          mid_parseFixedstring_5eb943e76b31513b,
+          mid_parseNextCharacter_925fed7c0b932e5a,
+          mid_parseNumber_9653b7c6be11e290,
           max_mid
         };
 

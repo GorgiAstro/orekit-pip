@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -14,6 +13,7 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
   namespace orekit {
     namespace propagation {
@@ -51,14 +51,14 @@ namespace org {
         class PythonAbstractDragForceModel : public ::org::orekit::forces::drag::AbstractDragForceModel {
          public:
           enum {
-            mid_init$_7536aa327c8cd1b5,
-            mid_acceleration_b42ac4b5bfb80fab,
-            mid_acceleration_8954761face5e1a7,
-            mid_finalize_0fa09c18fee449d5,
-            mid_getParametersDrivers_2afa36052df4765d,
-            mid_pythonDecRef_0fa09c18fee449d5,
-            mid_pythonExtension_492808a339bfa35f,
-            mid_pythonExtension_3a8e7649f31fdb20,
+            mid_init$_75d446ceb412e1f6,
+            mid_acceleration_b61fb59a041240c6,
+            mid_acceleration_61944e27a39e8290,
+            mid_finalize_0640e6acf969ed28,
+            mid_getParametersDrivers_0d9551367f7ecdef,
+            mid_pythonDecRef_0640e6acf969ed28,
+            mid_pythonExtension_9e26256fb0d384a2,
+            mid_pythonExtension_3cd6a6b354c6aa22,
             max_mid
           };
 

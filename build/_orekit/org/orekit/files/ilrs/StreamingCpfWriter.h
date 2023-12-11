@@ -14,14 +14,14 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
     namespace files {
       namespace ilrs {
-        class StreamingCpfWriter$Segment;
         class CPFHeader;
+        class StreamingCpfWriter$Segment;
       }
+    }
+    namespace frames {
+      class Frame;
     }
     namespace time {
       class TimeScale;
@@ -38,11 +38,11 @@ namespace org {
         class StreamingCpfWriter : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_19c2513a0b4eaf1d,
-            mid_init$_a385c366a36fa71f,
-            mid_newSegment_a4bf1e7b62865aec,
-            mid_writeEndOfFile_0fa09c18fee449d5,
-            mid_writeHeader_0fa09c18fee449d5,
+            mid_init$_0b01e2d82f1bd25d,
+            mid_init$_5252d75ab5d69603,
+            mid_newSegment_d79b215bb1140a6d,
+            mid_writeEndOfFile_0640e6acf969ed28,
+            mid_writeHeader_0640e6acf969ed28,
             max_mid
           };
 

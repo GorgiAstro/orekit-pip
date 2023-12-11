@@ -3,30 +3,15 @@
 
 #include "org/orekit/files/ccsds/ndm/NdmConstituent.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataContext;
-    }
-    namespace utils {
-      class IERSConventions;
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
           namespace odm {
             namespace omm {
-              class OmmData;
               class OmmMetadata;
+              class OmmData;
             }
             class OdmHeader;
           }
@@ -36,12 +21,8 @@ namespace org {
         }
       }
     }
-    namespace orbits {
-      class KeplerianOrbit;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class TimeStamped;
+    namespace data {
+      class DataContext;
     }
     namespace propagation {
       namespace analytical {
@@ -51,6 +32,25 @@ namespace org {
       }
       class SpacecraftState;
     }
+    namespace orbits {
+      class KeplerianOrbit;
+    }
+    namespace time {
+      class TimeStamped;
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class IERSConventions;
+    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -66,13 +66,13 @@ namespace org {
               class Omm : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
                public:
                 enum {
-                  mid_init$_a3c39779efce50a0,
-                  mid_generateKeplerianOrbit_3b8c2ada972e4fd7,
-                  mid_generateSpacecraftState_c6311115fea01a34,
-                  mid_generateTLE_e993eceec98c738b,
-                  mid_getData_466f4b889e77ad6f,
-                  mid_getDate_85703d13e302437e,
-                  mid_getMetadata_a99df25529150639,
+                  mid_init$_25fe3f0c23ce561a,
+                  mid_generateKeplerianOrbit_48360cd036a5e97b,
+                  mid_generateSpacecraftState_15e85d5301b90ef8,
+                  mid_generateTLE_67f978062a0fd0e7,
+                  mid_getData_374ab60b26a12851,
+                  mid_getDate_7a97f7e149e79afb,
+                  mid_getMetadata_8a5287d2a9885a95,
                   max_mid
                 };
 

@@ -28,9 +28,9 @@ namespace org {
       class AbstractOptimizationProblem : public ::java::lang::Object {
        public:
         enum {
-          mid_getConvergenceChecker_c0e8b85b3220641b,
-          mid_getEvaluationCounter_b6dd60d8c3af0cf7,
-          mid_getIterationCounter_b6dd60d8c3af0cf7,
+          mid_getConvergenceChecker_4c680323f2c08379,
+          mid_getEvaluationCounter_d3591c1ea177be92,
+          mid_getIterationCounter_d3591c1ea177be92,
           max_mid
         };
 

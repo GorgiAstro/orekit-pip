@@ -7,17 +7,17 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace ndm {
-          namespace odm {
-            class SpacecraftParameters;
-            class SpacecraftParametersKey;
-          }
-        }
         namespace utils {
           namespace lexical {
             class ParseToken;
           }
           class ContextBinding;
+        }
+        namespace ndm {
+          namespace odm {
+            class SpacecraftParametersKey;
+            class SpacecraftParameters;
+          }
         }
       }
     }
@@ -41,9 +41,9 @@ namespace org {
             class SpacecraftParametersKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_d213af3eb9d365fb,
-                mid_valueOf_e7dc05c51a8d3f1d,
-                mid_values_ef310c9d00ed9809,
+                mid_process_33b4713338554511,
+                mid_valueOf_2ca3f5488d30cb44,
+                mid_values_9342cf6ddacdf0c7,
                 max_mid
               };
 

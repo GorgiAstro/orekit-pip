@@ -43,12 +43,12 @@ namespace org {
           class CombinedObservationData : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_f8e1e2997176852d,
-              mid_getCombinationType_bcbd5b9371c0a4d1,
-              mid_getCombinedMHzFrequency_dff5885c2c873297,
-              mid_getMeasurementType_b9f942cb72c4c59a,
-              mid_getUsedObservationData_2afa36052df4765d,
-              mid_getValue_dff5885c2c873297,
+              mid_init$_e33a53c7689ac28c,
+              mid_getCombinationType_ad3ea7f7acc4745a,
+              mid_getCombinedMHzFrequency_557b8123390d8d0c,
+              mid_getMeasurementType_f61bec61c77ea492,
+              mid_getUsedObservationData_0d9551367f7ecdef,
+              mid_getValue_557b8123390d8d0c,
               max_mid
             };
 

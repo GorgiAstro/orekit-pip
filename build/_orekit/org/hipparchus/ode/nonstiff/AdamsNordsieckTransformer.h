@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
-    namespace linear {
-      class Array2DRowRealMatrix;
-    }
     namespace ode {
       namespace nonstiff {
         class AdamsNordsieckTransformer;
       }
+    }
+    namespace linear {
+      class Array2DRowRealMatrix;
     }
   }
 }
@@ -30,10 +30,10 @@ namespace org {
         class AdamsNordsieckTransformer : public ::java::lang::Object {
          public:
           enum {
-            mid_getInstance_112b827632c230ff,
-            mid_initializeHighOrderDerivatives_05286ba32ad1612e,
-            mid_updateHighOrderDerivativesPhase1_98f76adeb9727d30,
-            mid_updateHighOrderDerivativesPhase2_a5e518d6a6618759,
+            mid_getInstance_0bc6cd973b0a8b86,
+            mid_initializeHighOrderDerivatives_a72bdebc8d5fa5c2,
+            mid_updateHighOrderDerivativesPhase1_f317c35d7d377fcb,
+            mid_updateHighOrderDerivativesPhase2_8366e8011d6ccc43,
             max_mid
           };
 

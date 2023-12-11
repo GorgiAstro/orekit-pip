@@ -3,6 +3,12 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace stat {
@@ -10,12 +16,6 @@ namespace org {
         class StorelessUnivariateStatistic;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,14 +28,14 @@ namespace org {
         class AbstractStorelessUnivariateStatistic : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_clear_0fa09c18fee449d5,
-            mid_copy_ac0cb19696f2f20f,
-            mid_equals_65c7d273e80d497a,
-            mid_getResult_dff5885c2c873297,
-            mid_hashCode_570ce0828f81a2c1,
-            mid_increment_17db3a65980d3441,
-            mid_toString_11b109bd155ca898,
+            mid_init$_0640e6acf969ed28,
+            mid_clear_0640e6acf969ed28,
+            mid_copy_0a0ee925e68176d0,
+            mid_equals_221e8e85cb385209,
+            mid_getResult_557b8123390d8d0c,
+            mid_hashCode_412668abc8d889e9,
+            mid_increment_10f281d777284cea,
+            mid_toString_3cffd47377eca18a,
             max_mid
           };
 

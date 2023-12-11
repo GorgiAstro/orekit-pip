@@ -6,8 +6,8 @@
 namespace java {
   namespace util {
     class Iterator;
-    class Collection;
     class Spliterator;
+    class Collection;
   }
   namespace io {
     class Serializable;
@@ -26,19 +26,19 @@ namespace java {
     class HashSet : public ::java::util::AbstractSet {
      public:
       enum {
-        mid_init$_0fa09c18fee449d5,
-        mid_init$_99803b0791f320ff,
-        mid_init$_f72f53318f80c525,
-        mid_init$_76637231e1f360e3,
-        mid_add_65c7d273e80d497a,
-        mid_clear_0fa09c18fee449d5,
-        mid_clone_4d26fd885228c716,
-        mid_contains_65c7d273e80d497a,
-        mid_isEmpty_b108b35ef48e27bd,
-        mid_iterator_4d23511a9f0db098,
-        mid_remove_65c7d273e80d497a,
-        mid_size_570ce0828f81a2c1,
-        mid_spliterator_ef1070394b413a84,
+        mid_init$_0640e6acf969ed28,
+        mid_init$_a3da1a935cb37f7b,
+        mid_init$_3abde0be9b9c9773,
+        mid_init$_7c1037ab599ac362,
+        mid_add_221e8e85cb385209,
+        mid_clear_0640e6acf969ed28,
+        mid_clone_e661fe3ba2fafb22,
+        mid_contains_221e8e85cb385209,
+        mid_isEmpty_89b302893bdbe1f1,
+        mid_iterator_834a3801c426326d,
+        mid_remove_221e8e85cb385209,
+        mid_size_412668abc8d889e9,
+        mid_spliterator_0a89e3b18808f850,
         max_mid
       };
 

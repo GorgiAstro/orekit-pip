@@ -26,11 +26,11 @@ namespace org {
           class SphericalHarmonicsProvider : public ::org::orekit::forces::gravity::potential::TideSystemProvider {
            public:
             enum {
-              mid_getAe_dff5885c2c873297,
-              mid_getMaxDegree_570ce0828f81a2c1,
-              mid_getMaxOrder_570ce0828f81a2c1,
-              mid_getMu_dff5885c2c873297,
-              mid_getReferenceDate_85703d13e302437e,
+              mid_getAe_557b8123390d8d0c,
+              mid_getMaxDegree_412668abc8d889e9,
+              mid_getMaxOrder_412668abc8d889e9,
+              mid_getMu_557b8123390d8d0c,
+              mid_getReferenceDate_7a97f7e149e79afb,
               max_mid
             };
 

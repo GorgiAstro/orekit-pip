@@ -7,17 +7,17 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace ndm {
-          namespace odm {
-            class KeplerianElements;
-            class KeplerianElementsKey;
-          }
-        }
         namespace utils {
           namespace lexical {
             class ParseToken;
           }
           class ContextBinding;
+        }
+        namespace ndm {
+          namespace odm {
+            class KeplerianElementsKey;
+            class KeplerianElements;
+          }
         }
       }
     }
@@ -41,9 +41,9 @@ namespace org {
             class KeplerianElementsKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_653ce425526d59e5,
-                mid_valueOf_384ec00c7080971c,
-                mid_values_b203c16db82c2cf7,
+                mid_process_608c7d6f2374fc7c,
+                mid_valueOf_820830e27036f17a,
+                mid_values_47f2621d2489ee68,
                 max_mid
               };
 

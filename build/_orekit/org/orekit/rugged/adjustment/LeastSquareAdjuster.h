@@ -4,22 +4,22 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace rugged {
-      namespace adjustment {
-        class OptimizerId;
-      }
-    }
-  }
   namespace hipparchus {
     namespace optim {
       namespace nonlinear {
         namespace vector {
           namespace leastsquares {
-            class LeastSquaresOptimizer$Optimum;
             class LeastSquaresProblem;
+            class LeastSquaresOptimizer$Optimum;
           }
         }
+      }
+    }
+  }
+  namespace orekit {
+    namespace rugged {
+      namespace adjustment {
+        class OptimizerId;
       }
     }
   }
@@ -39,9 +39,9 @@ namespace org {
         class LeastSquareAdjuster : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_init$_63f13867ea40ee93,
-            mid_optimize_3488934cadbbcc09,
+            mid_init$_0640e6acf969ed28,
+            mid_init$_6e8d52daed67f697,
+            mid_optimize_07184cacaaa6a451,
             max_mid
           };
 

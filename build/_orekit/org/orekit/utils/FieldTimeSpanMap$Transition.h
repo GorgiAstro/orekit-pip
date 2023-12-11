@@ -6,9 +6,9 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class TimeStamped;
-      class AbsoluteDate;
       class FieldAbsoluteDate;
+      class AbsoluteDate;
+      class TimeStamped;
     }
   }
 }
@@ -26,10 +26,10 @@ namespace org {
       class FieldTimeSpanMap$Transition : public ::java::lang::Object {
        public:
         enum {
-          mid_getAbsoluteDate_51da00d5b8a3b5df,
-          mid_getAfter_4d26fd885228c716,
-          mid_getBefore_4d26fd885228c716,
-          mid_getDate_85703d13e302437e,
+          mid_getAbsoluteDate_f1fe4daf77c66560,
+          mid_getAfter_e661fe3ba2fafb22,
+          mid_getBefore_e661fe3ba2fafb22,
+          mid_getDate_7a97f7e149e79afb,
           max_mid
         };
 

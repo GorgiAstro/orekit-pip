@@ -18,13 +18,13 @@ namespace org {
   }
 }
 namespace java {
+  namespace lang {
+    class Class;
+  }
   namespace util {
     namespace stream {
       class Stream;
     }
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -38,12 +38,12 @@ namespace org {
           class IntervalEventTrigger : public ::org::orekit::forces::maneuvers::trigger::AbstractManeuverTriggers {
            public:
             enum {
-              mid_init$_958f8a74aa6ccd6d,
-              mid_getEventDetectors_20f6d2b462aaef4b,
-              mid_getFieldEventDetectors_361313cd1a9c693a,
-              mid_getFiringIntervalDetector_900a1fd995808d92,
-              mid_convertIntervalDetector_904dccaacafa0db1,
-              mid_isFiringOnInitialState_6501154ab0a356a8,
+              mid_init$_f9a3e736b2361f6c,
+              mid_getEventDetectors_d7cce92225eb0db2,
+              mid_getFieldEventDetectors_8130af76f6998f44,
+              mid_getFiringIntervalDetector_9cafaf54f10725f9,
+              mid_isFiringOnInitialState_1e4c79a00429445e,
+              mid_convertIntervalDetector_590bb38060674b63,
               max_mid
             };
 

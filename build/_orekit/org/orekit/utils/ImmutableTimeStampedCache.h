@@ -5,11 +5,11 @@
 
 namespace java {
   namespace util {
+    class List;
+    class Collection;
     namespace stream {
       class Stream;
     }
-    class List;
-    class Collection;
   }
   namespace lang {
     class Class;
@@ -18,13 +18,13 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace utils {
+      class TimeStampedCache;
+      class ImmutableTimeStampedCache;
+    }
     namespace time {
       class AbsoluteDate;
       class TimeStamped;
-    }
-    namespace utils {
-      class ImmutableTimeStampedCache;
-      class TimeStampedCache;
     }
   }
 }
@@ -37,14 +37,14 @@ namespace org {
       class ImmutableTimeStampedCache : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_11390acb87dd159d,
-          mid_emptyCache_6750a7a81e7b6495,
-          mid_getAll_2afa36052df4765d,
-          mid_getEarliest_c2a1e08c7d64b02c,
-          mid_getLatest_c2a1e08c7d64b02c,
-          mid_getMaxNeighborsSize_570ce0828f81a2c1,
-          mid_getNeighbors_a067290de6165283,
-          mid_toString_11b109bd155ca898,
+          mid_init$_7eb5c0f6d06d97ea,
+          mid_emptyCache_86a357074a1a5ab9,
+          mid_getAll_0d9551367f7ecdef,
+          mid_getEarliest_da8f710d3d2958bf,
+          mid_getLatest_da8f710d3d2958bf,
+          mid_getMaxNeighborsSize_412668abc8d889e9,
+          mid_getNeighbors_b9470a4d1609cf1f,
+          mid_toString_3cffd47377eca18a,
           max_mid
         };
 

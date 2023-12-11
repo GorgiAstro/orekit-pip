@@ -4,28 +4,28 @@
 #include "org/orekit/time/TimeStamped.h"
 
 namespace org {
-  namespace orekit {
-    namespace frames {
-      class FieldStaticTransform;
-      class StaticTransform;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldLine;
           class FieldVector3D;
           class Line;
-          class FieldRotation;
           class Vector3D;
+          class FieldLine;
+          class FieldRotation;
         }
       }
     }
     class Field;
+  }
+  namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+    }
+    namespace frames {
+      class FieldStaticTransform;
+      class StaticTransform;
+    }
   }
 }
 namespace java {
@@ -42,23 +42,23 @@ namespace org {
       class FieldStaticTransform : public ::org::orekit::time::TimeStamped {
        public:
         enum {
-          mid_compose_e718ef15d9487dde,
-          mid_compositeRotation_63d03d752aea77b3,
-          mid_compositeTranslation_e78a51049c739df6,
-          mid_getIdentity_47701bd9c773f171,
-          mid_getInverse_b4e9bd069b43219a,
-          mid_getRotation_1d339a2ee3a3323a,
-          mid_getTranslation_716f50c86ffc8da7,
-          mid_of_ccf560e3672a239e,
-          mid_of_c4eae0c7e1e1b864,
-          mid_of_06614a63a9481c60,
-          mid_of_1817b764fbb99071,
-          mid_transformLine_98e8513ff63d3587,
-          mid_transformLine_1542cd68fd018a55,
-          mid_transformPosition_a173408e2b1f78b2,
-          mid_transformPosition_7a9aa2e8b906f1a5,
-          mid_transformVector_a173408e2b1f78b2,
-          mid_transformVector_7a9aa2e8b906f1a5,
+          mid_compose_066a6913a4b63ff5,
+          mid_compositeRotation_014853c586edcdd1,
+          mid_compositeTranslation_44279ba3a6027e62,
+          mid_getIdentity_2bcc0f7f43ffb45e,
+          mid_getInverse_fe2c5c7bc73a25b6,
+          mid_getRotation_73da4eeccf2b7e14,
+          mid_getTranslation_2d64addf4c3391d9,
+          mid_of_d8bca083a85ca2e7,
+          mid_of_7bc4315b92dbfe6f,
+          mid_of_860013017bff522f,
+          mid_of_d7b67bfa134276b0,
+          mid_transformLine_d12840109f20e722,
+          mid_transformLine_74f3858d2d426a7f,
+          mid_transformPosition_588ed0f09550adb9,
+          mid_transformPosition_3d90e30d4cb13513,
+          mid_transformVector_588ed0f09550adb9,
+          mid_transformVector_3d90e30d4cb13513,
           max_mid
         };
 

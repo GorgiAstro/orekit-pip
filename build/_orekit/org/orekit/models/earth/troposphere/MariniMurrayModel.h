@@ -3,38 +3,38 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-  namespace orekit {
-    namespace bodies {
-      class GeodeticPoint;
-      class FieldGeodeticPoint;
-    }
-    namespace models {
-      namespace earth {
-        namespace troposphere {
-          class DiscreteTroposphericModel;
-          class MariniMurrayModel;
-        }
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace models {
+      namespace earth {
+        namespace troposphere {
+          class MariniMurrayModel;
+          class DiscreteTroposphericModel;
+        }
+      }
+    }
+    namespace bodies {
+      class GeodeticPoint;
+      class FieldGeodeticPoint;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -48,11 +48,11 @@ namespace org {
           class MariniMurrayModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_b0a935b68e41d65a,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_getStandardModel_15d88e1aab769ee5,
-              mid_pathDelay_fe3b5c46874ab115,
-              mid_pathDelay_ff7a895eb6f0af2e,
+              mid_init$_bc3712e794ac7a81,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_getStandardModel_885bd0311205fa21,
+              mid_pathDelay_129678f244f63094,
+              mid_pathDelay_a4fdd877b349d4a6,
               max_mid
             };
 

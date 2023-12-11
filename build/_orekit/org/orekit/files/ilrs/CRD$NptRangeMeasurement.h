@@ -26,18 +26,18 @@ namespace org {
         class CRD$NptRangeMeasurement : public ::org::orekit::files::ilrs::CRD$RangeMeasurement {
          public:
           enum {
-            mid_init$_94189024dc8d45f2,
-            mid_init$_a4c52483ea5ba4c7,
-            mid_getBinKurtosis_dff5885c2c873297,
-            mid_getBinPeakMinusMean_dff5885c2c873297,
-            mid_getBinRms_dff5885c2c873297,
-            mid_getBinSkew_dff5885c2c873297,
-            mid_getDetectorChannel_570ce0828f81a2c1,
-            mid_getNumberOfRawRanges_570ce0828f81a2c1,
-            mid_getReturnRate_dff5885c2c873297,
-            mid_getWindowLength_dff5885c2c873297,
-            mid_toCrdString_11b109bd155ca898,
-            mid_toString_11b109bd155ca898,
+            mid_init$_8cc469ee0a9203d0,
+            mid_init$_602a63585f6f07eb,
+            mid_getBinKurtosis_557b8123390d8d0c,
+            mid_getBinPeakMinusMean_557b8123390d8d0c,
+            mid_getBinRms_557b8123390d8d0c,
+            mid_getBinSkew_557b8123390d8d0c,
+            mid_getDetectorChannel_412668abc8d889e9,
+            mid_getNumberOfRawRanges_412668abc8d889e9,
+            mid_getReturnRate_557b8123390d8d0c,
+            mid_getWindowLength_557b8123390d8d0c,
+            mid_toCrdString_3cffd47377eca18a,
+            mid_toString_3cffd47377eca18a,
             max_mid
           };
 

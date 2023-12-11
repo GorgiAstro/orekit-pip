@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace ode {
       class FieldODEStateAndDerivative;
     }
     namespace exception {
       class MathIllegalArgumentException;
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -31,11 +31,11 @@ namespace org {
       class FieldEquationsMapper : public ::java::lang::Object {
        public:
         enum {
-          mid_extractEquationData_34dfc92b396ffe6f,
-          mid_getNumberOfEquations_570ce0828f81a2c1,
-          mid_getTotalDimension_570ce0828f81a2c1,
-          mid_insertEquationData_96b09c1b6812b26f,
-          mid_mapStateAndDerivative_51e49ea6635206d7,
+          mid_extractEquationData_2bfb9a29e7d7770a,
+          mid_getNumberOfEquations_412668abc8d889e9,
+          mid_getTotalDimension_412668abc8d889e9,
+          mid_insertEquationData_270f73898b4ef6d7,
+          mid_mapStateAndDerivative_4a44960527a4a78a,
           max_mid
         };
 

@@ -5,10 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class TimeStampedAngularCoordinates;
-      class AngularDerivativesFilter;
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -24,6 +20,10 @@ namespace org {
     namespace time {
       class AbsoluteDate;
       class TimeStamped;
+    }
+    namespace utils {
+      class AngularDerivativesFilter;
+      class TimeStampedAngularCoordinates;
     }
   }
   namespace hipparchus {
@@ -55,13 +55,13 @@ namespace org {
               class AttitudeState : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_ceeb8f33d6af116b,
-                  mid_getAttitudeType_f08064c40442c84b,
-                  mid_getAvailableDerivatives_3d53ef1ca7ad5f8c,
-                  mid_getDate_85703d13e302437e,
-                  mid_getElements_60c7040667a7dc5c,
-                  mid_getRateElementsType_f2358484d07d6202,
-                  mid_toAngular_ea520df32133da66,
+                  mid_init$_3588a6527012f382,
+                  mid_getAttitudeType_5db4fed82a3253b8,
+                  mid_getAvailableDerivatives_c2e9b2b1c0db39b3,
+                  mid_getDate_7a97f7e149e79afb,
+                  mid_getElements_a53a7513ecedada2,
+                  mid_getRateElementsType_232ed199566358d9,
+                  mid_toAngular_dae83a7678180add,
                   max_mid
                 };
 

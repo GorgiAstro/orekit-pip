@@ -13,6 +13,14 @@ namespace java {
   }
 }
 namespace org {
+  namespace orekit {
+    namespace gnss {
+      class Frequency;
+      namespace antenna {
+        class FrequencyPattern;
+      }
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -20,14 +28,6 @@ namespace org {
           class Vector3D;
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace gnss {
-      namespace antenna {
-        class FrequencyPattern;
-      }
-      class Frequency;
     }
   }
 }
@@ -41,12 +41,12 @@ namespace org {
         class Antenna : public ::java::lang::Object {
          public:
           enum {
-            mid_getEccentricities_53fff387f14fabf8,
-            mid_getFrequencies_2afa36052df4765d,
-            mid_getPattern_54cb1a16386102e4,
-            mid_getPhaseCenterVariation_79cf2d2802e92516,
-            mid_getSinexCode_11b109bd155ca898,
-            mid_getType_11b109bd155ca898,
+            mid_getEccentricities_5b2557f30fe1c2d7,
+            mid_getFrequencies_0d9551367f7ecdef,
+            mid_getPattern_0e7ab14a9a932ae8,
+            mid_getPhaseCenterVariation_cf1fadd58bcb6fde,
+            mid_getSinexCode_3cffd47377eca18a,
+            mid_getType_3cffd47377eca18a,
             max_mid
           };
 

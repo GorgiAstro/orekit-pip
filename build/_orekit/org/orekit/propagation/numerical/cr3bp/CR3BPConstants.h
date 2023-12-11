@@ -27,9 +27,9 @@ namespace org {
           class CR3BPConstants : public ::java::lang::Object {
            public:
             enum {
-              mid_getEarthMoonBarycenterSemiMajorAxis_3ee179c6abb41546,
-              mid_getJupiterSemiMajorAxis_3ee179c6abb41546,
-              mid_getMoonSemiMajorAxis_dff5885c2c873297,
+              mid_getEarthMoonBarycenterSemiMajorAxis_0ea0045c89a146a3,
+              mid_getJupiterSemiMajorAxis_0ea0045c89a146a3,
+              mid_getMoonSemiMajorAxis_557b8123390d8d0c,
               max_mid
             };
 

@@ -13,12 +13,12 @@ namespace org {
   namespace orekit {
     namespace frames {
       class TransformProvider;
-      class FieldTransform;
       class Transform;
+      class FieldTransform;
     }
     namespace time {
-      class AbsoluteDate;
       class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
   }
 }
@@ -31,13 +31,13 @@ namespace org {
       class PythonTransformProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_finalize_0fa09c18fee449d5,
-          mid_getTransform_687985c59478d29c,
-          mid_getTransform_f7bf3269025b86c3,
-          mid_pythonDecRef_0fa09c18fee449d5,
-          mid_pythonExtension_492808a339bfa35f,
-          mid_pythonExtension_3a8e7649f31fdb20,
+          mid_init$_0640e6acf969ed28,
+          mid_finalize_0640e6acf969ed28,
+          mid_getTransform_df04e3927954349e,
+          mid_getTransform_e70631ba002d9a32,
+          mid_pythonDecRef_0640e6acf969ed28,
+          mid_pythonExtension_9e26256fb0d384a2,
+          mid_pythonExtension_3cd6a6b354c6aa22,
           max_mid
         };
 

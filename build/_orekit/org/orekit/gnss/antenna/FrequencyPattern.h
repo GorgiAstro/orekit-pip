@@ -37,10 +37,10 @@ namespace org {
         class FrequencyPattern : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0f76d53776f1b12d,
-            mid_getEccentricities_d52645e0d4c07563,
-            mid_getPhaseCenterVariation_bf473e7c74e5ce2b,
-            mid_getPhaseCenterVariationFunction_5e79c1f042c16192,
+            mid_init$_5101e04ba5dafe45,
+            mid_getEccentricities_f88961cca75a2c0a,
+            mid_getPhaseCenterVariation_8ddca7bd73e586da,
+            mid_getPhaseCenterVariationFunction_12a1f278a2ab1218,
             max_mid
           };
 

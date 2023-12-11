@@ -7,27 +7,27 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace sinex {
-        class Station;
         class DcbSatellite;
+        class Station;
         class SinexEopEntry;
         class DcbStation;
       }
     }
+    namespace data {
+      class DataSource;
+      class DataProvidersManager;
+    }
     namespace frames {
+      class EopHistoryLoader;
       class EOPEntry;
       class ITRFVersion;
-      class EopHistoryLoader;
     }
-    namespace data {
-      class DataProvidersManager;
-      class DataSource;
+    namespace utils {
+      class IERSConventions$NutationCorrectionConverter;
     }
     namespace time {
       class TimeScales;
       class AbsoluteDate;
-    }
-    namespace utils {
-      class IERSConventions$NutationCorrectionConverter;
     }
   }
 }
@@ -51,21 +51,21 @@ namespace org {
         class SinexLoader : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_d0bc48d5b00dc40c,
-            mid_init$_579dcb2bf229954b,
-            mid_init$_6889f18263b76403,
-            mid_init$_4449ecb3aa08e27f,
-            mid_fillHistory_fcb7f5d6983b9f18,
-            mid_getCreationDate_85703d13e302437e,
-            mid_getDcbSatellite_4f9c8feccc3d9a44,
-            mid_getDcbStation_2a0ca7547eaf333a,
-            mid_getFileEpochEndTime_85703d13e302437e,
-            mid_getFileEpochStartTime_85703d13e302437e,
-            mid_getITRFVersion_8a73c81b6e5084ce,
-            mid_getParsedEop_6f5a75ccd8c04465,
-            mid_getStation_07ba7e9f9a463aac,
-            mid_getStations_6f5a75ccd8c04465,
-            mid_setITRFVersion_99803b0791f320ff,
+            mid_init$_f5ffdf29129ef90a,
+            mid_init$_562a84d0b1d0d772,
+            mid_init$_34c18f1fe190c73a,
+            mid_init$_f930d4f5e3f73cb2,
+            mid_fillHistory_dc8806c52abe2b9d,
+            mid_getCreationDate_7a97f7e149e79afb,
+            mid_getDcbSatellite_fa842dcb3ed5687b,
+            mid_getDcbStation_fb9454879306a98e,
+            mid_getFileEpochEndTime_7a97f7e149e79afb,
+            mid_getFileEpochStartTime_7a97f7e149e79afb,
+            mid_getITRFVersion_b311296551ce8af2,
+            mid_getParsedEop_1e62c2f73fbdd1c4,
+            mid_getStation_beceb8c30b4a6974,
+            mid_getStations_1e62c2f73fbdd1c4,
+            mid_setITRFVersion_a3da1a935cb37f7b,
             max_mid
           };
 

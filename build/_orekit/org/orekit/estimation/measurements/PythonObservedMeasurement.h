@@ -7,12 +7,12 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
+        class ObservedMeasurement;
+        class ObservableSatellite;
         class EstimatedMeasurement;
         class EstimatedMeasurementBase;
         class ComparableMeasurement;
-        class ObservedMeasurement;
         class EstimationModifier;
-        class ObservableSatellite;
       }
     }
     namespace utils {
@@ -46,26 +46,26 @@ namespace org {
         class PythonObservedMeasurement : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_addModifier_baf3397e6fffc21d,
-            mid_compareTo_aa79741dc73b1207,
-            mid_estimate_27ef5cc84ad0852b,
-            mid_estimateWithoutDerivatives_e32883476b3d9b22,
-            mid_finalize_0fa09c18fee449d5,
-            mid_getBaseWeight_60c7040667a7dc5c,
-            mid_getDate_85703d13e302437e,
-            mid_getDimension_570ce0828f81a2c1,
-            mid_getMeasurementType_11b109bd155ca898,
-            mid_getModifiers_2afa36052df4765d,
-            mid_getObservedValue_60c7040667a7dc5c,
-            mid_getParametersDrivers_2afa36052df4765d,
-            mid_getSatellites_2afa36052df4765d,
-            mid_getTheoreticalStandardDeviation_60c7040667a7dc5c,
-            mid_isEnabled_b108b35ef48e27bd,
-            mid_pythonDecRef_0fa09c18fee449d5,
-            mid_pythonExtension_492808a339bfa35f,
-            mid_pythonExtension_3a8e7649f31fdb20,
-            mid_setEnabled_bd04c9335fb9e4cf,
+            mid_init$_0640e6acf969ed28,
+            mid_addModifier_6f472135bf397672,
+            mid_compareTo_0a393ed00cc2801f,
+            mid_estimate_eae039ee8c8a4a4d,
+            mid_estimateWithoutDerivatives_71d69ca0f7c280a7,
+            mid_finalize_0640e6acf969ed28,
+            mid_getBaseWeight_a53a7513ecedada2,
+            mid_getDate_7a97f7e149e79afb,
+            mid_getDimension_412668abc8d889e9,
+            mid_getMeasurementType_3cffd47377eca18a,
+            mid_getModifiers_0d9551367f7ecdef,
+            mid_getObservedValue_a53a7513ecedada2,
+            mid_getParametersDrivers_0d9551367f7ecdef,
+            mid_getSatellites_0d9551367f7ecdef,
+            mid_getTheoreticalStandardDeviation_a53a7513ecedada2,
+            mid_isEnabled_89b302893bdbe1f1,
+            mid_pythonDecRef_0640e6acf969ed28,
+            mid_pythonExtension_9e26256fb0d384a2,
+            mid_pythonExtension_3cd6a6b354c6aa22,
+            mid_setEnabled_ed2afdb8506b9742,
             max_mid
           };
 

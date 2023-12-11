@@ -9,21 +9,21 @@ namespace org {
       class Attitude;
       class FieldAttitude;
     }
-    namespace frames {
-      class Frame;
-    }
-    namespace utils {
-      class PVCoordinatesProvider;
-      class FieldPVCoordinatesProvider;
-    }
     namespace time {
-      class AbsoluteDate;
       class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
     namespace gnss {
       namespace attitude {
         class GNSSAttitudeProvider;
       }
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
+    }
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -42,14 +42,14 @@ namespace org {
         class AbstractGNSSAttitudeProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_getAttitude_d2b70935d932b5c5,
-            mid_getAttitude_4e541876ea7d5bd0,
-            mid_validityEnd_85703d13e302437e,
-            mid_validityStart_85703d13e302437e,
-            mid_getSun_6c6c680f468e3316,
-            mid_getInertialFrame_b86f9f61d97a7244,
-            mid_correctedYaw_dbb16eda5c9f6b1d,
-            mid_correctedYaw_64e3133ed57cb807,
+            mid_getAttitude_1306ac39e1d2de3f,
+            mid_getAttitude_77e3383de01f3e48,
+            mid_validityEnd_7a97f7e149e79afb,
+            mid_validityStart_7a97f7e149e79afb,
+            mid_getSun_9aa0b612d90098c2,
+            mid_getInertialFrame_6c9bc0a928c56d4e,
+            mid_correctedYaw_c46751716d57fe1f,
+            mid_correctedYaw_2a43991494de952e,
             max_mid
           };
 

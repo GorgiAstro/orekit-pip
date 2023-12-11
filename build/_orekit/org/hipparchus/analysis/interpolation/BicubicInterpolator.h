@@ -31,8 +31,8 @@ namespace org {
         class BicubicInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_interpolate_73e510fd41791282,
+            mid_init$_0640e6acf969ed28,
+            mid_interpolate_78b4fa08d8d71630,
             max_mid
           };
 

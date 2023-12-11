@@ -5,9 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalStateException;
-    }
     namespace geometry {
       namespace euclidean {
         namespace twod {
@@ -18,6 +15,9 @@ namespace org {
           class Vector2D;
         }
       }
+    }
+    namespace exception {
+      class MathIllegalStateException;
     }
   }
 }
@@ -41,10 +41,10 @@ namespace org {
             class AbstractConvexHullGenerator2D : public ::java::lang::Object {
              public:
               enum {
-                mid_generate_031b48e42873ea77,
-                mid_getTolerance_dff5885c2c873297,
-                mid_isIncludeCollinearPoints_b108b35ef48e27bd,
-                mid_findHullVertices_e6702ab1f73fd997,
+                mid_generate_b7d73bd07a9bc56d,
+                mid_getTolerance_557b8123390d8d0c,
+                mid_isIncludeCollinearPoints_89b302893bdbe1f1,
+                mid_findHullVertices_6472a4633751d554,
                 max_mid
               };
 

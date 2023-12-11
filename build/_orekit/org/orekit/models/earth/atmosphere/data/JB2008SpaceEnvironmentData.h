@@ -5,16 +5,16 @@
 
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataProvidersManager;
-      class DataSource;
-    }
     namespace models {
       namespace earth {
         namespace atmosphere {
           class JB2008InputParameters;
         }
       }
+    }
+    namespace data {
+      class DataSource;
+      class DataProvidersManager;
     }
     namespace time {
       class AbsoluteDate;
@@ -40,21 +40,21 @@ namespace org {
             class JB2008SpaceEnvironmentData : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_6a2001eff0605f71,
-                mid_init$_d48a82716818091c,
-                mid_init$_f59dcd76f648116b,
-                mid_init$_f3b8e7d9e7dfe4ec,
-                mid_getDSTDTC_bf1d7732f1acb697,
-                mid_getF10_bf1d7732f1acb697,
-                mid_getF10B_bf1d7732f1acb697,
-                mid_getMaxDate_85703d13e302437e,
-                mid_getMinDate_85703d13e302437e,
-                mid_getS10_bf1d7732f1acb697,
-                mid_getS10B_bf1d7732f1acb697,
-                mid_getXM10_bf1d7732f1acb697,
-                mid_getXM10B_bf1d7732f1acb697,
-                mid_getY10_bf1d7732f1acb697,
-                mid_getY10B_bf1d7732f1acb697,
+                mid_init$_630071dd94c59169,
+                mid_init$_fd7250d9a4ba58ec,
+                mid_init$_e77392bf2c8f03c3,
+                mid_init$_063c99087c77d3f0,
+                mid_getDSTDTC_b0b988f941da47d8,
+                mid_getF10_b0b988f941da47d8,
+                mid_getF10B_b0b988f941da47d8,
+                mid_getMaxDate_7a97f7e149e79afb,
+                mid_getMinDate_7a97f7e149e79afb,
+                mid_getS10_b0b988f941da47d8,
+                mid_getS10B_b0b988f941da47d8,
+                mid_getXM10_b0b988f941da47d8,
+                mid_getXM10B_b0b988f941da47d8,
+                mid_getY10_b0b988f941da47d8,
+                mid_getY10B_b0b988f941da47d8,
                 max_mid
               };
 

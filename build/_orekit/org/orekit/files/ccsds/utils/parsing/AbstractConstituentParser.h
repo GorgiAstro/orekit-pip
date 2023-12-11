@@ -5,12 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataContext;
-    }
-    namespace utils {
-      class IERSConventions;
-    }
     namespace files {
       namespace ccsds {
         namespace section {
@@ -20,6 +14,12 @@ namespace org {
           class ParsedUnitsBehavior;
         }
       }
+    }
+    namespace utils {
+      class IERSConventions;
+    }
+    namespace data {
+      class DataContext;
     }
   }
 }
@@ -40,20 +40,20 @@ namespace org {
             class AbstractConstituentParser : public ::org::orekit::files::ccsds::utils::parsing::AbstractMessageParser {
              public:
               enum {
-                mid_finalizeData_b108b35ef48e27bd,
-                mid_finalizeHeader_b108b35ef48e27bd,
-                mid_finalizeMetadata_b108b35ef48e27bd,
-                mid_getConventions_60f9ded87ab7ca4c,
-                mid_getDataContext_0b7cf48ee6a922ee,
-                mid_getHeader_0e1b4a5061fb71d6,
-                mid_getParsedUnitsBehavior_8df14555f7513c0c,
-                mid_inData_b108b35ef48e27bd,
-                mid_inHeader_b108b35ef48e27bd,
-                mid_inMetadata_b108b35ef48e27bd,
-                mid_isSimpleEOP_b108b35ef48e27bd,
-                mid_prepareData_b108b35ef48e27bd,
-                mid_prepareHeader_b108b35ef48e27bd,
-                mid_prepareMetadata_b108b35ef48e27bd,
+                mid_finalizeData_89b302893bdbe1f1,
+                mid_finalizeHeader_89b302893bdbe1f1,
+                mid_finalizeMetadata_89b302893bdbe1f1,
+                mid_getConventions_690653480c12ac72,
+                mid_getDataContext_b259b25d6495e5b3,
+                mid_getHeader_6fe6597816e9e593,
+                mid_getParsedUnitsBehavior_430d6c1485d1d8cb,
+                mid_inData_89b302893bdbe1f1,
+                mid_inHeader_89b302893bdbe1f1,
+                mid_inMetadata_89b302893bdbe1f1,
+                mid_isSimpleEOP_89b302893bdbe1f1,
+                mid_prepareData_89b302893bdbe1f1,
+                mid_prepareHeader_89b302893bdbe1f1,
+                mid_prepareMetadata_89b302893bdbe1f1,
                 max_mid
               };
 

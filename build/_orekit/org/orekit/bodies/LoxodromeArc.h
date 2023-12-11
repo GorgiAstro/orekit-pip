@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace bodies {
-      class OneAxisEllipsoid;
       class GeodeticPoint;
+      class OneAxisEllipsoid;
     }
   }
 }
@@ -25,11 +25,11 @@ namespace org {
       class LoxodromeArc : public ::org::orekit::bodies::Loxodrome {
        public:
         enum {
-          mid_init$_e382dba4b5c7f7ec,
-          mid_init$_bba3738469ae684f,
-          mid_calculatePointAlongArc_a6daea86c60e2668,
-          mid_getDistance_dff5885c2c873297,
-          mid_getFinalPoint_82d0a9bcd06489bb,
+          mid_init$_51c0ede7fd3ca4a5,
+          mid_init$_8edee3a2b13af932,
+          mid_calculatePointAlongArc_fdfcc3c813d87498,
+          mid_getDistance_557b8123390d8d0c,
+          mid_getFinalPoint_8672b163b0e4a5a3,
           max_mid
         };
 

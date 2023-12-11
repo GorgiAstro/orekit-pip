@@ -31,10 +31,10 @@ namespace org {
       class LocalizedODEFormats : public ::java::lang::Enum {
        public:
         enum {
-          mid_getLocalizedString_3cd873bfb132c4fd,
-          mid_getSourceString_11b109bd155ca898,
-          mid_valueOf_bb9b0255062d9cfe,
-          mid_values_eaec6d7dcb2ab4f2,
+          mid_getLocalizedString_4b51060c6b7ea981,
+          mid_getSourceString_3cffd47377eca18a,
+          mid_valueOf_d368850a65d634c2,
+          mid_values_ac05cca52586756a,
           max_mid
         };
 

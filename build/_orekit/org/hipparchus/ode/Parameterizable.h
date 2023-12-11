@@ -21,8 +21,8 @@ namespace org {
       class Parameterizable : public ::java::lang::Object {
        public:
         enum {
-          mid_getParametersNames_2afa36052df4765d,
-          mid_isSupported_7edad2c2f64f4d68,
+          mid_getParametersNames_0d9551367f7ecdef,
+          mid_isSupported_fd2162b8a05a22fe,
           max_mid
         };
 

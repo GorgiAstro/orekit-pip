@@ -24,11 +24,11 @@ namespace org {
       class RealVector$Entry : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_bdf205176b90cff1,
-          mid_getIndex_570ce0828f81a2c1,
-          mid_getValue_dff5885c2c873297,
-          mid_setIndex_99803b0791f320ff,
-          mid_setValue_17db3a65980d3441,
+          mid_init$_87d15d6564ad754f,
+          mid_getIndex_412668abc8d889e9,
+          mid_getValue_557b8123390d8d0c,
+          mid_setIndex_a3da1a935cb37f7b,
+          mid_setValue_10f281d777284cea,
           max_mid
         };
 

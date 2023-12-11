@@ -11,12 +11,12 @@ namespace org {
       }
       class SpacecraftState;
     }
+    namespace utils {
+      class DateDriver;
+      class ParameterDriver;
+    }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace utils {
-      class ParameterDriver;
-      class DateDriver;
     }
   }
 }
@@ -36,14 +36,14 @@ namespace org {
         class ParameterDrivenDateIntervalDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_49db7ce395dde351,
-            mid_init$_7d29df8e1e987e68,
-            mid_g_432f3d328c15ec82,
-            mid_getDurationDriver_a25ed222178aa59f,
-            mid_getMedianDriver_3fcb2f6aa57e183e,
-            mid_getStartDriver_3fcb2f6aa57e183e,
-            mid_getStopDriver_3fcb2f6aa57e183e,
-            mid_create_4b6d24734e79941b,
+            mid_init$_96c74a7b518a43e9,
+            mid_init$_c68a5ca0cc166e0d,
+            mid_g_1bbf81d80c47ecdd,
+            mid_getDurationDriver_4194657b5e280ddc,
+            mid_getMedianDriver_e73bc59e931ba25e,
+            mid_getStartDriver_e73bc59e931ba25e,
+            mid_getStopDriver_e73bc59e931ba25e,
+            mid_create_aa9de813b19ee575,
             max_mid
           };
 

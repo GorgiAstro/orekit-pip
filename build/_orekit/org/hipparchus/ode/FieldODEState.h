@@ -3,14 +3,14 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -22,17 +22,17 @@ namespace org {
       class FieldODEState : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_bee5c8ff86f4e777,
-          mid_init$_1aa689b999c11532,
-          mid_getCompleteState_226a0b2040b1d2e1,
-          mid_getCompleteStateDimension_570ce0828f81a2c1,
-          mid_getNumberOfSecondaryStates_570ce0828f81a2c1,
-          mid_getPrimaryState_226a0b2040b1d2e1,
-          mid_getPrimaryStateDimension_570ce0828f81a2c1,
-          mid_getSecondaryState_f2aa3eb7e0b5647f,
-          mid_getSecondaryStateDimension_2235cd056f5a882b,
-          mid_getTime_eba8e72a22c984ac,
-          mid_copy_d1031b0c6b4f03ae,
+          mid_init$_960efa47e0a8eec2,
+          mid_init$_5c6c9c90a6a087ff,
+          mid_getCompleteState_41762fd4377ff26e,
+          mid_getCompleteStateDimension_412668abc8d889e9,
+          mid_getNumberOfSecondaryStates_412668abc8d889e9,
+          mid_getPrimaryState_41762fd4377ff26e,
+          mid_getPrimaryStateDimension_412668abc8d889e9,
+          mid_getSecondaryState_9566838049dc0d99,
+          mid_getSecondaryStateDimension_0092017e99012694,
+          mid_getTime_613c8f46c659f636,
+          mid_copy_fcf24063c8a7c3ff,
           max_mid
         };
 

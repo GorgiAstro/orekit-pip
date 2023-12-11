@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
     namespace optim {
       class PointValuePair;
       class OptimizationData;
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
     }
   }
 }
@@ -31,8 +31,8 @@ namespace org {
             class CMAESOptimizer$PopulationSize : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_99803b0791f320ff,
-                mid_getPopulationSize_570ce0828f81a2c1,
+                mid_init$_a3da1a935cb37f7b,
+                mid_getPopulationSize_412668abc8d889e9,
                 max_mid
               };
 

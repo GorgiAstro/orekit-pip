@@ -28,7 +28,7 @@ namespace org {
         class Encloser : public ::java::lang::Object {
          public:
           enum {
-            mid_enclose_ab52cd1d30fd41e7,
+            mid_enclose_60fb4b68643b7fe8,
             max_mid
           };
 

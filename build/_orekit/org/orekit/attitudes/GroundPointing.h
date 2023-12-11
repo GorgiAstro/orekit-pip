@@ -4,6 +4,24 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace attitudes {
+      class Attitude;
+      class AttitudeProvider;
+      class FieldAttitude;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
+    }
+    namespace frames {
+      class Frame;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -12,24 +30,6 @@ namespace org {
           class FieldRotation;
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace attitudes {
-      class Attitude;
-      class FieldAttitude;
-      class AttitudeProvider;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace utils {
-      class PVCoordinatesProvider;
-      class FieldPVCoordinatesProvider;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
     }
   }
 }
@@ -47,15 +47,15 @@ namespace org {
       class GroundPointing : public ::java::lang::Object {
        public:
         enum {
-          mid_getAttitude_4e541876ea7d5bd0,
-          mid_getAttitude_d2b70935d932b5c5,
-          mid_getAttitudeRotation_29422c22de775b74,
-          mid_getAttitudeRotation_53a81d4d17b13463,
-          mid_getBodyFrame_b86f9f61d97a7244,
-          mid_getTargetPV_129d59e5c897146f,
-          mid_getTargetPV_ad3e02e6f0d115f2,
-          mid_getTargetPosition_ed512b95aefae7df,
-          mid_getTargetPosition_35628cd92ea82231,
+          mid_getAttitude_1306ac39e1d2de3f,
+          mid_getAttitude_77e3383de01f3e48,
+          mid_getAttitudeRotation_85bb0a19efdadc1d,
+          mid_getAttitudeRotation_5c74bfcf2d42825a,
+          mid_getBodyFrame_6c9bc0a928c56d4e,
+          mid_getTargetPV_9e0119a6fef31431,
+          mid_getTargetPV_ee00ab612436435b,
+          mid_getTargetPosition_0ed0905f85ed7f56,
+          mid_getTargetPosition_102e5d95cb32da9e,
           max_mid
         };
 
@@ -70,10 +70,10 @@ namespace org {
         }
         GroundPointing(const GroundPointing& obj) : ::java::lang::Object(obj) {}
 
-        ::org::orekit::attitudes::FieldAttitude getAttitude(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::attitudes::Attitude getAttitude(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
-        ::org::hipparchus::geometry::euclidean::threed::Rotation getAttitudeRotation(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
+        ::org::orekit::attitudes::FieldAttitude getAttitude(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::hipparchus::geometry::euclidean::threed::FieldRotation getAttitudeRotation(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
+        ::org::hipparchus::geometry::euclidean::threed::Rotation getAttitudeRotation(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::frames::Frame getBodyFrame() const;
       };
     }

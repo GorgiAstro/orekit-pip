@@ -6,10 +6,10 @@
 namespace org {
   namespace orekit {
     namespace propagation {
+      class SpacecraftState;
       namespace events {
         class HaloXZPlaneCrossingDetector;
       }
-      class SpacecraftState;
     }
   }
 }
@@ -28,9 +28,9 @@ namespace org {
         class HaloXZPlaneCrossingDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_8f2e782d5278b131,
-            mid_g_432f3d328c15ec82,
-            mid_create_fc8c214d51a3dffb,
+            mid_init$_ab23f4ae0fb33968,
+            mid_g_1bbf81d80c47ecdd,
+            mid_create_07b52a795a98dfa4,
             max_mid
           };
 

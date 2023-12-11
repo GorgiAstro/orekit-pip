@@ -4,7 +4,16 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
+    }
+  }
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+      class TimeStamped;
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -16,15 +25,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
-      class TimeStamped;
-    }
-  }
-  namespace hipparchus {
-    namespace linear {
-      class RealMatrix;
     }
   }
 }
@@ -47,10 +47,10 @@ namespace org {
               class OrbitCovariance : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_c685172ae668527f,
-                  mid_getDate_85703d13e302437e,
-                  mid_getMatrix_688b496048ff947b,
-                  mid_getType_f6a584069fbe1b12,
+                  mid_init$_ab6484d50474cac0,
+                  mid_getDate_7a97f7e149e79afb,
+                  mid_getMatrix_70a207fcbc031df2,
+                  mid_getType_ada74ce902d29422,
                   max_mid
                 };
 

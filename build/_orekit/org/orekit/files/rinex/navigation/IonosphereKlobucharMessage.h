@@ -39,13 +39,13 @@ namespace org {
           class IonosphereKlobucharMessage : public ::org::orekit::files::rinex::navigation::IonosphereBaseMessage {
            public:
             enum {
-              mid_init$_a82ff7a18fa6993f,
-              mid_getAlpha_60c7040667a7dc5c,
-              mid_getBeta_60c7040667a7dc5c,
-              mid_getRegionCode_57d80864ed5ce984,
-              mid_setAlphaI_bb79ca80d85d0a66,
-              mid_setBetaI_bb79ca80d85d0a66,
-              mid_setRegionCode_3a0ca53733eb8d6b,
+              mid_init$_e1b2f7b885c85083,
+              mid_getAlpha_a53a7513ecedada2,
+              mid_getBeta_a53a7513ecedada2,
+              mid_getRegionCode_9a51418bd8a33d02,
+              mid_setAlphaI_89aad365fb0ed8da,
+              mid_setBetaI_89aad365fb0ed8da,
+              mid_setRegionCode_2034f98224d4dad7,
               max_mid
             };
 

@@ -3,17 +3,18 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-    namespace ode {
-      namespace events {
-        class Action;
-      }
-    }
+namespace java {
+  namespace util {
+    class List;
   }
+  namespace lang {
+    class Class;
+  }
+}
+namespace org {
   namespace orekit {
     namespace propagation {
+      class FieldSpacecraftState;
       namespace events {
         namespace handlers {
           class FieldEventHandler;
@@ -21,16 +22,15 @@ namespace org {
         }
         class FieldEventDetector;
       }
-      class FieldSpacecraftState;
     }
   }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
+  namespace hipparchus {
+    class CalculusFieldElement;
+    namespace ode {
+      namespace events {
+        class Action;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -44,11 +44,11 @@ namespace org {
           class FieldRecordAndContinue : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_init$_de3e021e7266b71e,
-              mid_clear_0fa09c18fee449d5,
-              mid_eventOccurred_fc49a7ff6cb062a2,
-              mid_getEvents_2afa36052df4765d,
+              mid_init$_0640e6acf969ed28,
+              mid_init$_4ccaedadb068bdeb,
+              mid_clear_0640e6acf969ed28,
+              mid_eventOccurred_061886b33964a9af,
+              mid_getEvents_0d9551367f7ecdef,
               max_mid
             };
 

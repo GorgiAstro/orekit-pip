@@ -26,8 +26,8 @@ namespace org {
       class LUDecomposer : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_17db3a65980d3441,
-          mid_decompose_6832546eac694082,
+          mid_init$_10f281d777284cea,
+          mid_decompose_3f89101650640015,
           max_mid
         };
 

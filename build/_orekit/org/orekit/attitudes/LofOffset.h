@@ -4,34 +4,34 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Rotation;
-          class FieldRotation;
-          class RotationOrder;
-        }
-      }
-    }
-  }
   namespace orekit {
-    namespace attitudes {
-      class Attitude;
-      class FieldAttitude;
-      class AttitudeProvider;
-    }
     namespace frames {
-      class Frame;
       class LOF;
+      class Frame;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
     namespace utils {
       class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
     }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
+    namespace attitudes {
+      class FieldAttitude;
+      class AttitudeProvider;
+      class Attitude;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Rotation;
+          class RotationOrder;
+          class FieldRotation;
+        }
+      }
     }
   }
 }
@@ -49,12 +49,12 @@ namespace org {
       class LofOffset : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_d0da994ef99ba2d6,
-          mid_init$_47a098327b6c6c38,
-          mid_getAttitude_4e541876ea7d5bd0,
-          mid_getAttitude_d2b70935d932b5c5,
-          mid_getAttitudeRotation_53a81d4d17b13463,
-          mid_getAttitudeRotation_29422c22de775b74,
+          mid_init$_a8a7b8ba1d2b6f0d,
+          mid_init$_9142b1f90e628d63,
+          mid_getAttitude_77e3383de01f3e48,
+          mid_getAttitude_1306ac39e1d2de3f,
+          mid_getAttitudeRotation_85bb0a19efdadc1d,
+          mid_getAttitudeRotation_5c74bfcf2d42825a,
           max_mid
         };
 

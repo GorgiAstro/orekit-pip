@@ -5,6 +5,9 @@
 
 namespace org {
   namespace orekit {
+    namespace utils {
+      class PVCoordinates;
+    }
     namespace estimation {
       namespace measurements {
         class AngularAzEl;
@@ -19,9 +22,6 @@ namespace org {
     }
     namespace orbits {
       class Orbit;
-    }
-    namespace utils {
-      class PVCoordinates;
     }
   }
   namespace hipparchus {
@@ -49,10 +49,10 @@ namespace org {
         class IodLaplace : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_17db3a65980d3441,
-            mid_estimate_12719eba39e9d7d3,
-            mid_estimate_e5fb064d6de252af,
-            mid_estimate_24be0461599c9b60,
+            mid_init$_10f281d777284cea,
+            mid_estimate_3e39f730636f7cb8,
+            mid_estimate_826da74c81b95475,
+            mid_estimate_0f30588d6f69b08f,
             max_mid
           };
 

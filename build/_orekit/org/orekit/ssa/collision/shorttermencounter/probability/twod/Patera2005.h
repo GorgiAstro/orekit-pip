@@ -4,17 +4,12 @@
 #include "org/orekit/ssa/collision/shorttermencounter/probability/twod/AbstractShortTermEncounter1DNumerical2DPOCMethod.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-    namespace analysis {
-      namespace integration {
-        class FieldUnivariateIntegrator;
-        class UnivariateIntegrator;
-      }
-    }
-  }
   namespace orekit {
     namespace ssa {
+      namespace metrics {
+        class FieldProbabilityOfCollision;
+        class ProbabilityOfCollision;
+      }
       namespace collision {
         namespace shorttermencounter {
           namespace probability {
@@ -24,11 +19,16 @@ namespace org {
           }
         }
       }
-      namespace metrics {
-        class FieldProbabilityOfCollision;
-        class ProbabilityOfCollision;
+    }
+  }
+  namespace hipparchus {
+    namespace analysis {
+      namespace integration {
+        class FieldUnivariateIntegrator;
+        class UnivariateIntegrator;
       }
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -49,11 +49,11 @@ namespace org {
               class Patera2005 : public ::org::orekit::ssa::collision::shorttermencounter::probability::twod::AbstractShortTermEncounter1DNumerical2DPOCMethod {
                public:
                 enum {
-                  mid_init$_0fa09c18fee449d5,
-                  mid_init$_4ee143e57030d3b8,
-                  mid_compute_194bff03a32ceae7,
-                  mid_compute_acd6f33dacb379ff,
-                  mid_getType_5d7ecb27bb5e3bc3,
+                  mid_init$_0640e6acf969ed28,
+                  mid_init$_75c609fbbc605945,
+                  mid_compute_376cdf1ab01ad011,
+                  mid_compute_4b0f59ff7b8720f9,
+                  mid_getType_4b8bf2bb84f7480e,
                   max_mid
                 };
 

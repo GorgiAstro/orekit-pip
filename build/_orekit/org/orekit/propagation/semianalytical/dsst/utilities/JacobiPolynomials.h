@@ -7,8 +7,8 @@ namespace org {
   namespace hipparchus {
     namespace analysis {
       namespace differentiation {
-        class FieldGradient;
         class Gradient;
+        class FieldGradient;
       }
     }
   }
@@ -30,9 +30,9 @@ namespace org {
             class JacobiPolynomials : public ::java::lang::Object {
              public:
               enum {
-                mid_getValue_cf82d8d5ac031606,
-                mid_getValue_14288ac64491d96d,
-                mid_getValueAndDerivative_cb608be377c869c0,
+                mid_getValue_cf9cd6d4aea42e11,
+                mid_getValue_feba4baa7091dd05,
+                mid_getValueAndDerivative_de167a4ebcb09657,
                 max_mid
               };
 

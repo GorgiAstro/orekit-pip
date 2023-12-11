@@ -5,8 +5,8 @@
 
 namespace java {
   namespace util {
-    class List;
     class Map;
+    class List;
   }
   namespace io {
     class Serializable;
@@ -33,21 +33,21 @@ namespace org {
       class DoubleArrayDictionary : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_init$_99803b0791f320ff,
-          mid_init$_db8de8bc54857165,
-          mid_clear_0fa09c18fee449d5,
-          mid_get_f87e5f45128c2827,
-          mid_getData_2afa36052df4765d,
-          mid_getEntry_d37496364a361361,
-          mid_put_3468fcb7793f51a9,
-          mid_putAll_ad36dd55657c3ef8,
-          mid_putAll_db8de8bc54857165,
-          mid_remove_7edad2c2f64f4d68,
-          mid_size_570ce0828f81a2c1,
-          mid_toMap_6f5a75ccd8c04465,
-          mid_toString_11b109bd155ca898,
-          mid_unmodifiableView_17e5408138fe3169,
+          mid_init$_0640e6acf969ed28,
+          mid_init$_a3da1a935cb37f7b,
+          mid_init$_6ba01303bcce0307,
+          mid_clear_0640e6acf969ed28,
+          mid_get_008e0cff49b0ec83,
+          mid_getData_0d9551367f7ecdef,
+          mid_getEntry_42f94031f6bfb94c,
+          mid_put_7d8c14f144e3f080,
+          mid_putAll_4df10196e6ff77db,
+          mid_putAll_6ba01303bcce0307,
+          mid_remove_fd2162b8a05a22fe,
+          mid_size_412668abc8d889e9,
+          mid_toMap_1e62c2f73fbdd1c4,
+          mid_toString_3cffd47377eca18a,
+          mid_unmodifiableView_408230a61ade575e,
           max_mid
         };
 

@@ -29,13 +29,13 @@ namespace org {
       class AggregatedPVCoordinatesProvider$Builder : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_init$_36de6b722535732f,
-          mid_addPVProviderAfter_a4e52086d3c578e4,
-          mid_addPVProviderBefore_a4e52086d3c578e4,
-          mid_build_0bfa8135d82b8c5f,
-          mid_invalidAfter_684b0f09aacac05d,
-          mid_invalidBefore_684b0f09aacac05d,
+          mid_init$_0640e6acf969ed28,
+          mid_init$_89227d950841a6f5,
+          mid_addPVProviderAfter_91816397f6065003,
+          mid_addPVProviderBefore_91816397f6065003,
+          mid_build_5950ada932adf178,
+          mid_invalidAfter_034efa53a4f26e25,
+          mid_invalidBefore_034efa53a4f26e25,
           max_mid
         };
 

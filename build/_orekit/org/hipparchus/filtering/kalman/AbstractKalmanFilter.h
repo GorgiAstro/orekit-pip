@@ -7,9 +7,9 @@ namespace org {
   namespace hipparchus {
     namespace filtering {
       namespace kalman {
+        class ProcessEstimate;
         class Measurement;
         class KalmanFilter;
-        class ProcessEstimate;
       }
     }
   }
@@ -29,11 +29,11 @@ namespace org {
         class AbstractKalmanFilter : public ::java::lang::Object {
          public:
           enum {
-            mid_getCorrected_c93ddc26f3b3eef4,
-            mid_getPredicted_c93ddc26f3b3eef4,
-            mid_predict_982284b8d8a1f193,
-            mid_correct_45b900b87520adad,
-            mid_computeInnovationCovarianceMatrix_ef6b3f5b68ab82a9,
+            mid_getCorrected_55b445719d7de2a7,
+            mid_getPredicted_55b445719d7de2a7,
+            mid_predict_570ed598f04500be,
+            mid_correct_f5fbdb2f00887037,
+            mid_computeInnovationCovarianceMatrix_13c4114cb11d13ae,
             max_mid
           };
 

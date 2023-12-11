@@ -29,12 +29,12 @@ namespace org {
       class BigRealField : public ::java::lang::Object {
        public:
         enum {
-          mid_equals_65c7d273e80d497a,
-          mid_getInstance_e723739aa731d3cf,
-          mid_getOne_fd9d6080c6f729de,
-          mid_getRuntimeClass_7c16c5008b34b3db,
-          mid_getZero_fd9d6080c6f729de,
-          mid_hashCode_570ce0828f81a2c1,
+          mid_equals_221e8e85cb385209,
+          mid_getInstance_5a46ddf8e02ff43d,
+          mid_getOne_2073e31f7b6bcf19,
+          mid_getRuntimeClass_d4b191ff8147475d,
+          mid_getZero_2073e31f7b6bcf19,
+          mid_hashCode_412668abc8d889e9,
           max_mid
         };
 

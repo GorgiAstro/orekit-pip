@@ -19,9 +19,9 @@ namespace org {
           class IntegerLeastSquareSolution : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7a441056067c6c5b,
-              mid_getSolution_08d09551619faf57,
-              mid_getSquaredDistance_dff5885c2c873297,
+              mid_init$_c71cb41dee20c1a0,
+              mid_getSolution_0a2c3435f5c6a530,
+              mid_getSquaredDistance_557b8123390d8d0c,
               max_mid
             };
 

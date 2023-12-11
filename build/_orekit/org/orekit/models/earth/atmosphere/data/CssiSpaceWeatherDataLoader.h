@@ -4,23 +4,26 @@
 #include "org/orekit/models/earth/atmosphere/data/AbstractSolarActivityDataLoader.h"
 
 namespace java {
-  namespace text {
-    class ParseException;
-  }
   namespace io {
     class IOException;
     class InputStream;
+  }
+  namespace text {
+    class ParseException;
+  }
+  namespace util {
+    class SortedSet;
   }
   namespace lang {
     class Class;
     class String;
   }
-  namespace util {
-    class SortedSet;
-  }
 }
 namespace org {
   namespace orekit {
+    namespace errors {
+      class OrekitException;
+    }
     namespace models {
       namespace earth {
         namespace atmosphere {
@@ -29,9 +32,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace errors {
-      class OrekitException;
     }
     namespace time {
       class AbsoluteDate;
@@ -51,11 +51,11 @@ namespace org {
             class CssiSpaceWeatherDataLoader : public ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityDataLoader {
              public:
               enum {
-                mid_init$_e93d77ad761aa1f2,
-                mid_getDataSet_917725130bbb61f1,
-                mid_getLastDailyPredictedDate_85703d13e302437e,
-                mid_getLastObservedDate_85703d13e302437e,
-                mid_loadData_1815f85c118161ad,
+                mid_init$_3e3301925c0131d4,
+                mid_getDataSet_c6b6a992db588a51,
+                mid_getLastDailyPredictedDate_7a97f7e149e79afb,
+                mid_getLastObservedDate_7a97f7e149e79afb,
+                mid_loadData_15770e8d8949a557,
                 max_mid
               };
 

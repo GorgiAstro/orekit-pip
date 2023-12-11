@@ -5,10 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace orbits {
-      class PositionAngleType;
-      class Orbit;
-    }
     namespace propagation {
       namespace conversion {
         class PropagatorBuilder;
@@ -17,8 +13,8 @@ namespace org {
     }
     namespace estimation {
       namespace leastsquares {
-        class AbstractBatchLSModel;
         class ModelObserver;
+        class AbstractBatchLSModel;
       }
       namespace measurements {
         class ObservedMeasurement;
@@ -26,6 +22,10 @@ namespace org {
     }
     namespace utils {
       class ParameterDriversList;
+    }
+    namespace orbits {
+      class PositionAngleType;
+      class Orbit;
     }
   }
 }
@@ -49,14 +49,14 @@ namespace org {
         class PythonAbstractPropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_1af1d7ef33c5abdd,
-            mid_buildLeastSquaresModel_2eb3122719704f90,
-            mid_buildPropagator_0c183831cad84280,
-            mid_copy_7c39c5f4719b16a0,
-            mid_finalize_0fa09c18fee449d5,
-            mid_pythonDecRef_0fa09c18fee449d5,
-            mid_pythonExtension_492808a339bfa35f,
-            mid_pythonExtension_3a8e7649f31fdb20,
+            mid_init$_2e76d450f29fd903,
+            mid_buildLeastSquaresModel_4fca41eef9d750a6,
+            mid_buildPropagator_5ad9cbd11735eecd,
+            mid_copy_9ce0d272477ff7e1,
+            mid_finalize_0640e6acf969ed28,
+            mid_pythonDecRef_0640e6acf969ed28,
+            mid_pythonExtension_9e26256fb0d384a2,
+            mid_pythonExtension_3cd6a6b354c6aa22,
             max_mid
           };
 

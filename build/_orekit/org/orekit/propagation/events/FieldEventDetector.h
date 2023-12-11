@@ -4,22 +4,22 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
+      class FieldSpacecraftState;
       namespace events {
         namespace handlers {
           class FieldEventHandler;
         }
         class FieldAdaptableInterval;
       }
-      class FieldSpacecraftState;
     }
     namespace time {
       class FieldAbsoluteDate;
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -37,12 +37,12 @@ namespace org {
         class FieldEventDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_g_41a008afe53da855,
-            mid_getHandler_48965f0f9fa2ddf9,
-            mid_getMaxCheckInterval_69f9ee3154bea730,
-            mid_getMaxIterationCount_570ce0828f81a2c1,
-            mid_getThreshold_eba8e72a22c984ac,
-            mid_init_8e8de2be1664674a,
+            mid_g_de1c2d709eb2829c,
+            mid_getHandler_ae75cc14adc9e750,
+            mid_getMaxCheckInterval_24041a63d01af092,
+            mid_getMaxIterationCount_412668abc8d889e9,
+            mid_getThreshold_613c8f46c659f636,
+            mid_init_811e49dad2467b67,
             max_mid
           };
 

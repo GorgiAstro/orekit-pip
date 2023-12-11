@@ -5,21 +5,21 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
-    namespace exception {
-      class NullArgumentException;
-      class MathRuntimeException;
-      class MathIllegalArgumentException;
-    }
     namespace util {
       class MathArrays$Position;
       class MathArrays$OrderDirection;
     }
+    class FieldElement;
+    namespace exception {
+      class MathIllegalArgumentException;
+      class NullArgumentException;
+      class MathRuntimeException;
+    }
     namespace random {
       class RandomGenerator;
     }
+    class CalculusFieldElement;
     class Field;
-    class FieldElement;
   }
 }
 namespace java {
@@ -37,70 +37,70 @@ namespace org {
       class MathArrays : public ::java::lang::Object {
        public:
         enum {
-          mid_buildArray_53a8968856aac728,
-          mid_buildArray_9d0b4d67c7d5ec91,
-          mid_buildArray_bfb3642e16852529,
-          mid_checkEqualLength_e1f4b15468f5564a,
-          mid_checkEqualLength_b091d33670ea17ab,
-          mid_checkEqualLength_cbc98e7d0c0477db,
-          mid_checkEqualLength_2a23e9f4a2692a23,
-          mid_checkEqualLength_ef7981f2c05315da,
-          mid_checkEqualLength_61bb38d449624a13,
-          mid_checkNonNegative_c57942992c8467a1,
-          mid_checkNonNegative_ade5c97d2456ed21,
-          mid_checkNotNaN_fa9d415d19f69361,
-          mid_checkOrder_fa9d415d19f69361,
-          mid_checkOrder_72479ee08453ef97,
-          mid_checkOrder_9825f8ead88fc7a2,
-          mid_checkOrder_7d4cfe1aa8d9500e,
-          mid_checkOrder_ba626246740b4f78,
-          mid_checkOrder_5e803c62cb962490,
-          mid_checkPositive_fa9d415d19f69361,
-          mid_checkRectangular_ade5c97d2456ed21,
-          mid_concatenate_c2fd47c0f811c269,
-          mid_convolve_96bbba26ca51c0d1,
-          mid_cosAngle_b561c6892e9976f8,
-          mid_distance_b561c6892e9976f8,
-          mid_distance_c7a20f1226fb06ea,
-          mid_distance1_b561c6892e9976f8,
-          mid_distance1_779c476bcabb05f3,
-          mid_distanceInf_b561c6892e9976f8,
-          mid_distanceInf_779c476bcabb05f3,
-          mid_ebeAdd_96bbba26ca51c0d1,
-          mid_ebeDivide_96bbba26ca51c0d1,
-          mid_ebeMultiply_96bbba26ca51c0d1,
-          mid_ebeSubtract_96bbba26ca51c0d1,
-          mid_equals_026a317eb6da308c,
-          mid_equals_b013f01484dd6b19,
-          mid_equals_b2dc548396b699a5,
-          mid_equals_f8ca155cbadf2a73,
-          mid_equals_739455d93f7b2089,
-          mid_equals_266b3ca27c6bb5ac,
-          mid_equalsIncludingNaN_b013f01484dd6b19,
-          mid_equalsIncludingNaN_b2dc548396b699a5,
-          mid_isMonotonic_303cdb6f1e3d1d20,
-          mid_isMonotonic_ed716723e463a03e,
-          mid_linearCombination_b561c6892e9976f8,
-          mid_linearCombination_0f015b8be9d2dc40,
-          mid_linearCombination_07e50dbdbc6e25b6,
-          mid_linearCombination_982084a63a0acdbd,
-          mid_natural_10b428b076a044c1,
-          mid_normalizeArray_7c03fc65848ac490,
-          mid_safeNorm_9dc1ec0bcc0a9a29,
-          mid_scale_125ce48de7dbfde5,
-          mid_scaleInPlace_f617b8481082c6ea,
-          mid_sequence_4cce8278046f494a,
-          mid_shuffle_d147d7ce001e2d45,
-          mid_shuffle_cd72f2edc6fe3699,
-          mid_shuffle_4403e14380343a86,
-          mid_shuffle_5274baa35baf0207,
-          mid_sortInPlace_0942607a80e88c17,
-          mid_sortInPlace_b127a748d81177ab,
-          mid_unique_ac3d742ccc742f22,
-          mid_verifyValues_ecd0e94e44eeb80d,
-          mid_verifyValues_2ce8032ca4cc67c5,
-          mid_verifyValues_fa5076ba832da619,
-          mid_verifyValues_44e8cc5a12cb39a9,
+          mid_buildArray_cc1a24bbd64f47d6,
+          mid_buildArray_918e914ae6927f78,
+          mid_buildArray_bf02a5b7b48e23fe,
+          mid_checkEqualLength_ab4840ba016ef1da,
+          mid_checkEqualLength_2f87d6c2a43180ff,
+          mid_checkEqualLength_2c0fd42a693364fa,
+          mid_checkEqualLength_e4da1fc662513bd0,
+          mid_checkEqualLength_698c1440c3cd002e,
+          mid_checkEqualLength_ea2ade9a62eeb9ec,
+          mid_checkNonNegative_b8d088127dcc34ef,
+          mid_checkNonNegative_f40ad1a354d03b89,
+          mid_checkNotNaN_cc18240f4a737f14,
+          mid_checkOrder_cc18240f4a737f14,
+          mid_checkOrder_5d9c9afaca2e497c,
+          mid_checkOrder_89ee3544b02ad6f9,
+          mid_checkOrder_e5501a88db9bc72b,
+          mid_checkOrder_bf1fab8415688b27,
+          mid_checkOrder_f13890a7012c8e1c,
+          mid_checkPositive_cc18240f4a737f14,
+          mid_checkRectangular_f40ad1a354d03b89,
+          mid_concatenate_f19c0141146dd11b,
+          mid_convolve_d2593442847fe350,
+          mid_cosAngle_628a76297e217f13,
+          mid_distance_628a76297e217f13,
+          mid_distance_e49dbe74159ed118,
+          mid_distance1_628a76297e217f13,
+          mid_distance1_f60ba2e14f6d8c9c,
+          mid_distanceInf_628a76297e217f13,
+          mid_distanceInf_f60ba2e14f6d8c9c,
+          mid_ebeAdd_d2593442847fe350,
+          mid_ebeDivide_d2593442847fe350,
+          mid_ebeMultiply_d2593442847fe350,
+          mid_ebeSubtract_d2593442847fe350,
+          mid_equals_d5b882f16e78e133,
+          mid_equals_3c9cd66399ef44d7,
+          mid_equals_3a3ed4baa87ab62d,
+          mid_equals_3a89abee8ad1e7d2,
+          mid_equals_9f3fe168122d3e43,
+          mid_equals_b788c922a3ed1ff3,
+          mid_equalsIncludingNaN_3c9cd66399ef44d7,
+          mid_equalsIncludingNaN_3a3ed4baa87ab62d,
+          mid_isMonotonic_0362324c8a2e5805,
+          mid_isMonotonic_de3cbaea4121081e,
+          mid_linearCombination_628a76297e217f13,
+          mid_linearCombination_79d60f5d1a9d8623,
+          mid_linearCombination_9f42b6fd9d0f2606,
+          mid_linearCombination_34decd667cde93a3,
+          mid_natural_014107aa2fd99303,
+          mid_normalizeArray_59ea33beffed37b5,
+          mid_safeNorm_86c4a0582e0747ce,
+          mid_scale_31b9a2982d73e37a,
+          mid_scaleInPlace_092013acd44a9e63,
+          mid_sequence_ebc3194797d38989,
+          mid_shuffle_ec63cb8a58ef5a54,
+          mid_shuffle_7d86656f508ee25c,
+          mid_shuffle_c4ed6b04af6788e3,
+          mid_shuffle_272558de9fb3be98,
+          mid_sortInPlace_d28c10701e55f94c,
+          mid_sortInPlace_33ef5b09ab6b2ec9,
+          mid_unique_1db7c087750eaffe,
+          mid_verifyValues_8ceff153711ac571,
+          mid_verifyValues_8f9a240c089e2ce0,
+          mid_verifyValues_ec609308d4860815,
+          mid_verifyValues_eac1096da7fabd15,
           max_mid
         };
 

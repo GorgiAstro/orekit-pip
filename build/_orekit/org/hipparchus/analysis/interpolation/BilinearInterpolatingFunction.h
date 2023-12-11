@@ -5,14 +5,14 @@
 
 namespace org {
   namespace hipparchus {
-    namespace analysis {
-      class FieldBivariateFunction;
-      class BivariateFunction;
-    }
-    class CalculusFieldElement;
     namespace exception {
       class MathIllegalArgumentException;
     }
+    namespace analysis {
+      class BivariateFunction;
+      class FieldBivariateFunction;
+    }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -33,13 +33,13 @@ namespace org {
         class BilinearInterpolatingFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_2656072909750fef,
-            mid_getXInf_dff5885c2c873297,
-            mid_getXSup_dff5885c2c873297,
-            mid_getYInf_dff5885c2c873297,
-            mid_getYSup_dff5885c2c873297,
-            mid_value_86ffecc08a63eff0,
-            mid_value_6746cc1cd9210d54,
+            mid_init$_fa8d638c79b33265,
+            mid_getXInf_557b8123390d8d0c,
+            mid_getXSup_557b8123390d8d0c,
+            mid_getYInf_557b8123390d8d0c,
+            mid_getYSup_557b8123390d8d0c,
+            mid_value_2268d18be49a6087,
+            mid_value_d5f58731bcb8a011,
             max_mid
           };
 

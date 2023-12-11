@@ -7,6 +7,12 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace utils {
+          namespace lexical {
+            class ParseToken;
+          }
+          class ContextBinding;
+        }
         namespace ndm {
           namespace odm {
             namespace ocm {
@@ -14,12 +20,6 @@ namespace org {
               class OrbitDeterminationKey;
             }
           }
-        }
-        namespace utils {
-          namespace lexical {
-            class ParseToken;
-          }
-          class ContextBinding;
         }
       }
     }
@@ -44,9 +44,9 @@ namespace org {
               class OrbitDeterminationKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_af88e34bdbb80401,
-                  mid_valueOf_c728483d7f27e3f7,
-                  mid_values_3032bd8d88ce90de,
+                  mid_process_106ad4cf2988349f,
+                  mid_valueOf_6aedeeb40c743b6d,
+                  mid_values_6315d5d95b5ccc70,
                   max_mid
                 };
 

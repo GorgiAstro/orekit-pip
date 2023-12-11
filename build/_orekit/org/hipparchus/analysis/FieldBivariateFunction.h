@@ -26,8 +26,8 @@ namespace org {
       class FieldBivariateFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_toCalculusFieldBivariateFunction_a48fe1410b9380f5,
-          mid_value_6746cc1cd9210d54,
+          mid_toCalculusFieldBivariateFunction_3a001dea9816ebce,
+          mid_value_d5f58731bcb8a011,
           max_mid
         };
 

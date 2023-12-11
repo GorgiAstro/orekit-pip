@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
     namespace utils {
       class ExtendedPVCoordinatesProvider;
+    }
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -28,10 +28,10 @@ namespace org {
       class CelestialBody : public ::java::io::Serializable {
        public:
         enum {
-          mid_getBodyOrientedFrame_b86f9f61d97a7244,
-          mid_getGM_dff5885c2c873297,
-          mid_getInertiallyOrientedFrame_b86f9f61d97a7244,
-          mid_getName_11b109bd155ca898,
+          mid_getBodyOrientedFrame_6c9bc0a928c56d4e,
+          mid_getGM_557b8123390d8d0c,
+          mid_getInertiallyOrientedFrame_6c9bc0a928c56d4e,
+          mid_getName_3cffd47377eca18a,
           max_mid
         };
 

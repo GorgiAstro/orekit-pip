@@ -25,12 +25,12 @@ namespace org {
       class IterativeLinearSolverEvent : public ::org::hipparchus::util::IterationEvent {
        public:
         enum {
-          mid_init$_4d88176e7ce939fe,
-          mid_getNormOfResidual_dff5885c2c873297,
-          mid_getResidual_aab4fbf77867daa8,
-          mid_getRightHandSideVector_aab4fbf77867daa8,
-          mid_getSolution_aab4fbf77867daa8,
-          mid_providesResidual_b108b35ef48e27bd,
+          mid_init$_3b6b1ab3a4013647,
+          mid_getNormOfResidual_557b8123390d8d0c,
+          mid_getResidual_75d50d73180655b4,
+          mid_getRightHandSideVector_75d50d73180655b4,
+          mid_getSolution_75d50d73180655b4,
+          mid_providesResidual_89b302893bdbe1f1,
           max_mid
         };
 

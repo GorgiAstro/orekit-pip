@@ -5,15 +5,15 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace ode {
-      namespace events {
-        class Action;
-        class FieldODEEventDetector;
-      }
       class FieldODEStateAndDerivative;
       class FieldODEState;
+      namespace events {
+        class FieldODEEventDetector;
+        class Action;
+      }
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -31,9 +31,9 @@ namespace org {
         class FieldODEEventHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_eventOccurred_441913d27e10bdb0,
-            mid_init_8d242e8398770fef,
-            mid_resetState_e98923f0683d1726,
+            mid_eventOccurred_8cd57f25ffb2a49d,
+            mid_init_cde3ce643bd77a29,
+            mid_resetState_89a2130370baafc4,
             max_mid
           };
 

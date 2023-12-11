@@ -28,10 +28,10 @@ namespace org {
         class Station$ReferenceSystem : public ::java::lang::Enum {
          public:
           enum {
-            mid_getEccRefSystem_598a51d5a149f1f8,
-            mid_getName_11b109bd155ca898,
-            mid_valueOf_598a51d5a149f1f8,
-            mid_values_b86ae42ecff54fe1,
+            mid_getEccRefSystem_eb64cc3aae726ad0,
+            mid_getName_3cffd47377eca18a,
+            mid_valueOf_eb64cc3aae726ad0,
+            mid_values_037e708780c44d0f,
             max_mid
           };
 

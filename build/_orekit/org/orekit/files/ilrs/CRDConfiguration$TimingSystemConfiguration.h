@@ -19,21 +19,21 @@ namespace org {
         class CRDConfiguration$TimingSystemConfiguration : public ::org::orekit::files::ilrs::CRDConfiguration$BaseConfiguration {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_getEpochDelayCorrection_dff5885c2c873297,
-            mid_getFrequencySource_11b109bd155ca898,
-            mid_getLocalTimingId_11b109bd155ca898,
-            mid_getTimeSource_11b109bd155ca898,
-            mid_getTimer_11b109bd155ca898,
-            mid_getTimerSerialNumber_11b109bd155ca898,
-            mid_setEpochDelayCorrection_17db3a65980d3441,
-            mid_setFrequencySource_d0bc48d5b00dc40c,
-            mid_setLocalTimingId_d0bc48d5b00dc40c,
-            mid_setTimeSource_d0bc48d5b00dc40c,
-            mid_setTimer_d0bc48d5b00dc40c,
-            mid_setTimerSerialNumber_d0bc48d5b00dc40c,
-            mid_toCrdString_11b109bd155ca898,
-            mid_toString_11b109bd155ca898,
+            mid_init$_0640e6acf969ed28,
+            mid_getEpochDelayCorrection_557b8123390d8d0c,
+            mid_getFrequencySource_3cffd47377eca18a,
+            mid_getLocalTimingId_3cffd47377eca18a,
+            mid_getTimeSource_3cffd47377eca18a,
+            mid_getTimer_3cffd47377eca18a,
+            mid_getTimerSerialNumber_3cffd47377eca18a,
+            mid_setEpochDelayCorrection_10f281d777284cea,
+            mid_setFrequencySource_f5ffdf29129ef90a,
+            mid_setLocalTimingId_f5ffdf29129ef90a,
+            mid_setTimeSource_f5ffdf29129ef90a,
+            mid_setTimer_f5ffdf29129ef90a,
+            mid_setTimerSerialNumber_f5ffdf29129ef90a,
+            mid_toCrdString_3cffd47377eca18a,
+            mid_toString_3cffd47377eca18a,
             max_mid
           };
 

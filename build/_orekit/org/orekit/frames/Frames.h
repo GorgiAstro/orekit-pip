@@ -15,24 +15,24 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace bodies {
+      class CelestialBodies;
+    }
     namespace frames {
-      class EOPHistory;
-      class FactoryManagedFrame;
-      class Frame;
-      class ITRFVersion;
       class Frames;
-      class VersionedITRF;
+      class Frame;
       class Predefined;
+      class ITRFVersion;
+      class EOPHistory;
+      class VersionedITRF;
+      class FactoryManagedFrame;
+    }
+    namespace time {
+      class UT1Scale;
+      class TimeScales;
     }
     namespace utils {
       class IERSConventions;
-    }
-    namespace time {
-      class TimeScales;
-      class UT1Scale;
-    }
-    namespace bodies {
-      class CelestialBodies;
     }
   }
 }
@@ -45,30 +45,30 @@ namespace org {
       class Frames : public ::java::lang::Object {
        public:
         enum {
-          mid_buildUncachedITRF_f52b182126778ef0,
-          mid_getCIRF_0567c110431f823b,
-          mid_getEME2000_5337b4e40b3fd7b7,
-          mid_getEOPHistory_f7b9f8d7c24d861d,
-          mid_getEcliptic_18c303577f427d2c,
-          mid_getFrame_a045cc44324e9b37,
-          mid_getGCRF_b86f9f61d97a7244,
-          mid_getGTOD_af0cfaf732e2f76f,
-          mid_getGTOD_0567c110431f823b,
-          mid_getICRF_b86f9f61d97a7244,
-          mid_getITRF_0567c110431f823b,
-          mid_getITRF_ebe8ec05e13e16d0,
-          mid_getITRFEquinox_0567c110431f823b,
-          mid_getMOD_ab9f051c99cfdab5,
-          mid_getMOD_af0cfaf732e2f76f,
-          mid_getPZ9011_0567c110431f823b,
-          mid_getTEME_5337b4e40b3fd7b7,
-          mid_getTIRF_ab9f051c99cfdab5,
-          mid_getTIRF_0567c110431f823b,
-          mid_getTOD_af0cfaf732e2f76f,
-          mid_getTOD_0567c110431f823b,
-          mid_getVeis1950_5337b4e40b3fd7b7,
-          mid_of_204da4b92db127d6,
-          mid_of_a585aed55484f0ef,
+          mid_buildUncachedITRF_d001272d652a2315,
+          mid_getCIRF_af417399ee2f3e0d,
+          mid_getEME2000_e96d0d85e78fc6bd,
+          mid_getEOPHistory_9cf4a1ec2e53bbd3,
+          mid_getEcliptic_bb61238dc14574bc,
+          mid_getFrame_9103848bb456e582,
+          mid_getGCRF_6c9bc0a928c56d4e,
+          mid_getGTOD_a06a41ba6e4eb36a,
+          mid_getGTOD_af417399ee2f3e0d,
+          mid_getICRF_6c9bc0a928c56d4e,
+          mid_getITRF_af417399ee2f3e0d,
+          mid_getITRF_e7702de838b8de68,
+          mid_getITRFEquinox_af417399ee2f3e0d,
+          mid_getMOD_57509cacf2364dd9,
+          mid_getMOD_a06a41ba6e4eb36a,
+          mid_getPZ9011_af417399ee2f3e0d,
+          mid_getTEME_e96d0d85e78fc6bd,
+          mid_getTIRF_57509cacf2364dd9,
+          mid_getTIRF_af417399ee2f3e0d,
+          mid_getTOD_a06a41ba6e4eb36a,
+          mid_getTOD_af417399ee2f3e0d,
+          mid_getVeis1950_e96d0d85e78fc6bd,
+          mid_of_d61f89abbaffbf29,
+          mid_of_de3cab55580c83d6,
           max_mid
         };
 

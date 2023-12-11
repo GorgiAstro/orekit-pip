@@ -3,17 +3,17 @@
 
 #include "org/hipparchus/analysis/integration/BaseAbstractFieldUnivariateIntegrator.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
     class Field;
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,10 +26,10 @@ namespace org {
         class FieldSimpsonIntegrator : public ::org::hipparchus::analysis::integration::BaseAbstractFieldUnivariateIntegrator {
          public:
           enum {
-            mid_init$_484998d88974267b,
-            mid_init$_7dbd657fb2d34563,
-            mid_init$_b63dedd7ffb51c0c,
-            mid_doIntegrate_eba8e72a22c984ac,
+            mid_init$_979ae7f57a96b096,
+            mid_init$_a9ccb012d4cb48bd,
+            mid_init$_54078aff55a90bb9,
+            mid_doIntegrate_613c8f46c659f636,
             max_mid
           };
 

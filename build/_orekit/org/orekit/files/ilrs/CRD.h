@@ -4,12 +4,12 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace util {
-    class List;
-  }
   namespace lang {
     class String;
     class Class;
+  }
+  namespace util {
+    class List;
   }
 }
 namespace org {
@@ -31,12 +31,12 @@ namespace org {
         class CRD : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_addDataBlock_7dfaf1e050a296a0,
-            mid_formatIntegerOrNaN_5d51f1f447446760,
-            mid_getComments_2afa36052df4765d,
-            mid_getDataBlocks_2afa36052df4765d,
-            mid_handleNaN_92807efd57acb082,
+            mid_init$_0640e6acf969ed28,
+            mid_addDataBlock_8144a496fd0af892,
+            mid_formatIntegerOrNaN_637f0334ff6ee92d,
+            mid_getComments_0d9551367f7ecdef,
+            mid_getDataBlocks_0d9551367f7ecdef,
+            mid_handleNaN_60bb1b490b673cbf,
             max_mid
           };
 

@@ -26,9 +26,9 @@ namespace org {
         class PowerTerm : public ::java::lang::Object {
          public:
           enum {
-            mid_getBase_3a61c13ba4f982db,
-            mid_getExponent_883007575ab78b44,
-            mid_getScale_dff5885c2c873297,
+            mid_getBase_a1a7f0c25ade1939,
+            mid_getExponent_78ed58163a805805,
+            mid_getScale_557b8123390d8d0c,
             max_mid
           };
 

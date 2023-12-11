@@ -30,11 +30,11 @@ namespace org {
       class EquationsMapper : public ::java::lang::Object {
        public:
         enum {
-          mid_extractEquationData_a0c637c3f718550b,
-          mid_getNumberOfEquations_570ce0828f81a2c1,
-          mid_getTotalDimension_570ce0828f81a2c1,
-          mid_insertEquationData_adb6d52e6b8167e8,
-          mid_mapStateAndDerivative_6af71e5b97cf897b,
+          mid_extractEquationData_545d7714bece21ed,
+          mid_getNumberOfEquations_412668abc8d889e9,
+          mid_getTotalDimension_412668abc8d889e9,
+          mid_insertEquationData_4b60b99b94da8ca7,
+          mid_mapStateAndDerivative_f8a8d5145e03dbab,
           max_mid
         };
 

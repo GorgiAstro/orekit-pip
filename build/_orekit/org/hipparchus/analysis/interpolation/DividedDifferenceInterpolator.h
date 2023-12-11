@@ -5,6 +5,9 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
     namespace analysis {
       namespace interpolation {
         class UnivariateInterpolator;
@@ -12,9 +15,6 @@ namespace org {
       namespace polynomials {
         class PolynomialFunctionNewtonForm;
       }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
     }
   }
 }
@@ -36,9 +36,9 @@ namespace org {
         class DividedDifferenceInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_interpolate_40ae0dc6172d15d3,
-            mid_computeDividedDifference_96bbba26ca51c0d1,
+            mid_init$_0640e6acf969ed28,
+            mid_interpolate_4ac3594b9825ca1c,
+            mid_computeDividedDifference_d2593442847fe350,
             max_mid
           };
 

@@ -19,12 +19,12 @@ namespace java {
     class FilterOutputStream : public ::java::io::OutputStream {
      public:
       enum {
-        mid_init$_fd7cb6689cfa6eeb,
-        mid_close_0fa09c18fee449d5,
-        mid_flush_0fa09c18fee449d5,
-        mid_write_20012b3010a39c05,
-        mid_write_99803b0791f320ff,
-        mid_write_d7af9aedcdd3845b,
+        mid_init$_a093374b16e6c27d,
+        mid_close_0640e6acf969ed28,
+        mid_flush_0640e6acf969ed28,
+        mid_write_d759c70c6670fd89,
+        mid_write_a3da1a935cb37f7b,
+        mid_write_ac782c7077255dd3,
         max_mid
       };
 

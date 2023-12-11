@@ -6,10 +6,10 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
+      class FieldODEStateAndDerivative;
       namespace sampling {
         class FieldODEStateInterpolator;
       }
-      class FieldODEStateAndDerivative;
     }
     class CalculusFieldElement;
   }
@@ -29,9 +29,9 @@ namespace org {
         class FieldODEStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_finish_22d6c75b64070b54,
-            mid_handleStep_f31e7e3a46e05334,
-            mid_init_81b5dd1fb920fdc1,
+            mid_finish_747fee420c9ba889,
+            mid_handleStep_e7d5f5a81e2a2b8e,
+            mid_init_f808a4f21f8be825,
             max_mid
           };
 

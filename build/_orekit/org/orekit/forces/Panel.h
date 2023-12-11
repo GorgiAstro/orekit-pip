@@ -35,14 +35,14 @@ namespace org {
       class Panel : public ::java::lang::Object {
        public:
         enum {
-          mid_getAbsorption_dff5885c2c873297,
-          mid_getArea_dff5885c2c873297,
-          mid_getDrag_dff5885c2c873297,
-          mid_getLiftRatio_dff5885c2c873297,
-          mid_getNormal_e6f00ace1decd27c,
-          mid_getNormal_abc43395638fd218,
-          mid_getReflection_dff5885c2c873297,
-          mid_isDoubleSided_b108b35ef48e27bd,
+          mid_getAbsorption_557b8123390d8d0c,
+          mid_getArea_557b8123390d8d0c,
+          mid_getDrag_557b8123390d8d0c,
+          mid_getLiftRatio_557b8123390d8d0c,
+          mid_getNormal_503a254311e5da95,
+          mid_getNormal_3fff8c49d4e2dc6b,
+          mid_getReflection_557b8123390d8d0c,
+          mid_isDoubleSided_89b302893bdbe1f1,
           max_mid
         };
 

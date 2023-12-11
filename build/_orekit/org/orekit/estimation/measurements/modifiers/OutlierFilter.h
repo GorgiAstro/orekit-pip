@@ -3,26 +3,26 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class EstimatedMeasurementBase;
         class ObservedMeasurement;
+        class EstimatedMeasurementBase;
         class EstimationModifier;
       }
     }
     namespace utils {
       class ParameterDriver;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -36,11 +36,11 @@ namespace org {
           class OutlierFilter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_bb79ca80d85d0a66,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_modifyWithoutDerivatives_d1815d998cba71e9,
-              mid_getWarmup_570ce0828f81a2c1,
-              mid_getMaxSigma_dff5885c2c873297,
+              mid_init$_89aad365fb0ed8da,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_modifyWithoutDerivatives_e471490df8741b73,
+              mid_getWarmup_412668abc8d889e9,
+              mid_getMaxSigma_557b8123390d8d0c,
               max_mid
             };
 

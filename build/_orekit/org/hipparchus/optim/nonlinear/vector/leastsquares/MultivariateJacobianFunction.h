@@ -31,7 +31,7 @@ namespace org {
             class MultivariateJacobianFunction : public ::java::lang::Object {
              public:
               enum {
-                mid_value_f3b8dd3e226035d1,
+                mid_value_77538fd880505017,
                 max_mid
               };
 

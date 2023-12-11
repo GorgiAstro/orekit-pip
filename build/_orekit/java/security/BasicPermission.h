@@ -18,12 +18,12 @@ namespace java {
     class BasicPermission : public ::java::security::Permission {
      public:
       enum {
-        mid_init$_d0bc48d5b00dc40c,
-        mid_init$_6a2001eff0605f71,
-        mid_equals_65c7d273e80d497a,
-        mid_getActions_11b109bd155ca898,
-        mid_hashCode_570ce0828f81a2c1,
-        mid_implies_fd5914bb7b2ed7bc,
+        mid_init$_f5ffdf29129ef90a,
+        mid_init$_630071dd94c59169,
+        mid_equals_221e8e85cb385209,
+        mid_getActions_3cffd47377eca18a,
+        mid_hashCode_412668abc8d889e9,
+        mid_implies_a8c459a5c587bd4f,
         max_mid
       };
 

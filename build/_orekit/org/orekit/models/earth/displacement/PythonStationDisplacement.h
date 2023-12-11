@@ -3,20 +3,26 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
+    namespace data {
+      class BodiesElements;
+    }
+    namespace frames {
+      class Frame;
+    }
     namespace models {
       namespace earth {
         namespace displacement {
           class StationDisplacement;
         }
       }
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace data {
-      class BodiesElements;
     }
   }
   namespace hipparchus {
@@ -27,12 +33,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -46,12 +46,12 @@ namespace org {
           class PythonStationDisplacement : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_displacement_dc5338a5a1255d1d,
-              mid_finalize_0fa09c18fee449d5,
-              mid_pythonDecRef_0fa09c18fee449d5,
-              mid_pythonExtension_492808a339bfa35f,
-              mid_pythonExtension_3a8e7649f31fdb20,
+              mid_init$_0640e6acf969ed28,
+              mid_displacement_2092c3958d15642d,
+              mid_finalize_0640e6acf969ed28,
+              mid_pythonDecRef_0640e6acf969ed28,
+              mid_pythonExtension_9e26256fb0d384a2,
+              mid_pythonExtension_3cd6a6b354c6aa22,
               max_mid
             };
 

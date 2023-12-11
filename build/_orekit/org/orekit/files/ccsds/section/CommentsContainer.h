@@ -3,15 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -21,6 +12,15 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -34,16 +34,16 @@ namespace org {
           class CommentsContainer : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_acceptComments_b108b35ef48e27bd,
-              mid_addComment_7edad2c2f64f4d68,
-              mid_checkAllowed_245681ee2b0284d9,
-              mid_checkNotNaN_0f9c4af43dc22978,
-              mid_checkNotNegative_eb545b81bcb6baba,
-              mid_checkNotNull_f535a727b347df63,
-              mid_getComments_2afa36052df4765d,
-              mid_refuseFurtherComments_0fa09c18fee449d5,
-              mid_validate_17db3a65980d3441,
+              mid_init$_0640e6acf969ed28,
+              mid_acceptComments_89b302893bdbe1f1,
+              mid_addComment_fd2162b8a05a22fe,
+              mid_checkAllowed_5ebcb2d7669fd61d,
+              mid_checkNotNaN_d159d90d402c6e37,
+              mid_checkNotNegative_da9d52f3cfda13c8,
+              mid_checkNotNull_d4801ac1961ee2ac,
+              mid_getComments_0d9551367f7ecdef,
+              mid_refuseFurtherComments_0640e6acf969ed28,
+              mid_validate_10f281d777284cea,
               max_mid
             };
 

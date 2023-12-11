@@ -4,6 +4,24 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace attitudes {
+      class Attitude;
+      class AttitudeProvider;
+      class FieldAttitude;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
+    }
+    namespace frames {
+      class Frame;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -12,24 +30,6 @@ namespace org {
           class FieldRotation;
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace attitudes {
-      class Attitude;
-      class FieldAttitude;
-      class AttitudeProvider;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace utils {
-      class PVCoordinatesProvider;
-      class FieldPVCoordinatesProvider;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
     }
   }
 }
@@ -47,14 +47,14 @@ namespace org {
       class FrameAlignedProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_80a55d93aa5ecb9e,
-          mid_init$_b5680f5c30eede66,
-          mid_init$_7425adc369986a54,
-          mid_getAttitude_d2b70935d932b5c5,
-          mid_getAttitude_4e541876ea7d5bd0,
-          mid_getAttitudeRotation_53a81d4d17b13463,
-          mid_getAttitudeRotation_29422c22de775b74,
-          mid_of_645fb86928f8f669,
+          mid_init$_cffe2196131a8abb,
+          mid_init$_535d1f91a93c8b4d,
+          mid_init$_5aed8d3c9ea07a80,
+          mid_getAttitude_1306ac39e1d2de3f,
+          mid_getAttitude_77e3383de01f3e48,
+          mid_getAttitudeRotation_85bb0a19efdadc1d,
+          mid_getAttitudeRotation_5c74bfcf2d42825a,
+          mid_of_cdc4e41e4b95cd96,
           max_mid
         };
 

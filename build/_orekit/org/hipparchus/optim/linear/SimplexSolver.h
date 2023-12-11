@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalStateException;
+    }
     namespace optim {
       class PointValuePair;
       class OptimizationData;
-    }
-    namespace exception {
-      class MathIllegalStateException;
     }
   }
 }
@@ -29,15 +29,15 @@ namespace org {
         class SimplexSolver : public ::org::hipparchus::optim::linear::LinearOptimizer {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_init$_17db3a65980d3441,
-            mid_init$_75c2da74a5a59fda,
-            mid_init$_98483f586918b5b8,
-            mid_doOptimize_4ae915e35f441d39,
-            mid_optimize_d70788483e9a9a2c,
-            mid_parseOptimizationData_3d26e9f3a1d7e833,
-            mid_doIteration_f720eabeace587f9,
-            mid_solvePhase1_f720eabeace587f9,
+            mid_init$_0640e6acf969ed28,
+            mid_init$_10f281d777284cea,
+            mid_init$_47602ef8408ea361,
+            mid_init$_3191da1710a102eb,
+            mid_doOptimize_adf293b2643f22b0,
+            mid_optimize_428d2547a0c45016,
+            mid_parseOptimizationData_946a92401917c130,
+            mid_doIteration_92c6ab7f472e44a6,
+            mid_solvePhase1_92c6ab7f472e44a6,
             max_mid
           };
 

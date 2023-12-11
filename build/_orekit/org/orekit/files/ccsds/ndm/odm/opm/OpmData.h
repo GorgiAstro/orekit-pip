@@ -9,14 +9,14 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace odm {
+            class UserDefined;
+            class StateVector;
             class SpacecraftParameters;
-            class KeplerianElements;
-            class CartesianCovariance;
             namespace opm {
               class Maneuver;
             }
-            class UserDefined;
-            class StateVector;
+            class CartesianCovariance;
+            class KeplerianElements;
           }
         }
         namespace section {
@@ -47,18 +47,18 @@ namespace org {
               class OpmData : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_6f39f621f1439de3,
-                  mid_getCovarianceBlock_cf101600575330c7,
-                  mid_getKeplerianElementsBlock_c379fe2f6979132e,
-                  mid_getManeuver_7e1ee5600d637967,
-                  mid_getManeuvers_2afa36052df4765d,
-                  mid_getMass_dff5885c2c873297,
-                  mid_getNbManeuvers_570ce0828f81a2c1,
-                  mid_getSpacecraftParametersBlock_60188820d73f1019,
-                  mid_getStateVectorBlock_59e2ee0a61476728,
-                  mid_getUserDefinedBlock_8d3e5fabdafb8483,
-                  mid_hasManeuvers_b108b35ef48e27bd,
-                  mid_validate_17db3a65980d3441,
+                  mid_init$_ef88bee09a3b5466,
+                  mid_getCovarianceBlock_ab1f5bcd3006ffba,
+                  mid_getKeplerianElementsBlock_a7b00de16bb05023,
+                  mid_getManeuver_8f5fc12e3129007b,
+                  mid_getManeuvers_0d9551367f7ecdef,
+                  mid_getMass_557b8123390d8d0c,
+                  mid_getNbManeuvers_412668abc8d889e9,
+                  mid_getSpacecraftParametersBlock_ac68c68a22df72d8,
+                  mid_getStateVectorBlock_76c5443b4a833bb4,
+                  mid_getUserDefinedBlock_e8dd2483e310f990,
+                  mid_hasManeuvers_89b302893bdbe1f1,
+                  mid_validate_10f281d777284cea,
                   max_mid
                 };
 

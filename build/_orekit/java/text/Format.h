@@ -5,19 +5,19 @@
 
 namespace java {
   namespace text {
-    class ParseException;
     class ParsePosition;
+    class ParseException;
     class AttributedCharacterIterator;
     class FieldPosition;
   }
-  namespace lang {
-    class StringBuffer;
-    class Class;
-    class Cloneable;
-    class String;
-  }
   namespace io {
     class Serializable;
+  }
+  namespace lang {
+    class Class;
+    class StringBuffer;
+    class Cloneable;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -28,12 +28,12 @@ namespace java {
     class Format : public ::java::lang::Object {
      public:
       enum {
-        mid_clone_4d26fd885228c716,
-        mid_format_e816b890c4273bbd,
-        mid_format_f5c3717ad7292c63,
-        mid_formatToCharacterIterator_9456d3ba5fac0c0f,
-        mid_parseObject_f639320a33718c6c,
-        mid_parseObject_621466ec4567b9e0,
+        mid_clone_e661fe3ba2fafb22,
+        mid_format_fa48e6cfb0766bbf,
+        mid_format_60ec49fc2ad8aa0e,
+        mid_formatToCharacterIterator_67523d7667ad62e2,
+        mid_parseObject_86c4b8560f4aa70f,
+        mid_parseObject_a7f2c32d9be5fd0d,
         max_mid
       };
 

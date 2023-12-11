@@ -5,6 +5,13 @@
 
 namespace org {
   namespace orekit {
+    namespace propagation {
+      namespace integration {
+        class CombinedDerivatives;
+        class AdditionalDerivativesProvider;
+      }
+      class SpacecraftState;
+    }
     namespace forces {
       namespace maneuvers {
         class Maneuver;
@@ -12,13 +19,6 @@ namespace org {
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace propagation {
-      namespace integration {
-        class AdditionalDerivativesProvider;
-        class CombinedDerivatives;
-      }
-      class SpacecraftState;
     }
   }
 }
@@ -39,11 +39,11 @@ namespace org {
           class MassDepletionDelay : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_5a7a06dc2ea68812,
-              mid_combinedDerivatives_4fc0958a0539e1d3,
-              mid_getDimension_570ce0828f81a2c1,
-              mid_getName_11b109bd155ca898,
-              mid_init_826b4eda94da4e78,
+              mid_init$_d12f1efaaf614d8b,
+              mid_combinedDerivatives_5fc55a092d474e7c,
+              mid_getDimension_412668abc8d889e9,
+              mid_getName_3cffd47377eca18a,
+              mid_init_0472264ad6f40bc2,
               max_mid
             };
 

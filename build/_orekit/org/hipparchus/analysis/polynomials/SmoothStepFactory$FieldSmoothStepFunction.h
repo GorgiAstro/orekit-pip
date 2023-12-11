@@ -5,10 +5,10 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace exception {
       class MathIllegalArgumentException;
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -26,12 +26,12 @@ namespace org {
         class SmoothStepFactory$FieldSmoothStepFunction : public ::org::hipparchus::analysis::polynomials::FieldPolynomialFunction {
          public:
           enum {
-            mid_value_616c74807d7607b4,
-            mid_value_a4b1871f4d29e58b,
-            mid_value_51d6e6eb816495b3,
-            mid_checkInputEdges_8f2e782d5278b131,
-            mid_clampInput_51d6e6eb816495b3,
-            mid_normalizeInput_51d6e6eb816495b3,
+            mid_value_94d37e81a3238af8,
+            mid_value_6672ad854985cb64,
+            mid_value_f6144a4a13723d33,
+            mid_checkInputEdges_ab23f4ae0fb33968,
+            mid_clampInput_f6144a4a13723d33,
+            mid_normalizeInput_f6144a4a13723d33,
             max_mid
           };
 

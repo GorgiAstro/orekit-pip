@@ -3,6 +3,15 @@
 
 #include "org/orekit/propagation/AbstractMatricesHarvester.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
     namespace orbits {
@@ -19,15 +28,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -39,19 +39,19 @@ namespace org {
           class DSSTHarvester : public ::org::orekit::propagation::AbstractMatricesHarvester {
            public:
             enum {
-              mid_freezeColumnsNames_0fa09c18fee449d5,
-              mid_getB1_688b496048ff947b,
-              mid_getB2_9483b2ac438718ce,
-              mid_getB3_9483b2ac438718ce,
-              mid_getB4_688b496048ff947b,
-              mid_getJacobiansColumnsNames_2afa36052df4765d,
-              mid_getOrbitType_e29360d311dc0e20,
-              mid_getParametersJacobian_9483b2ac438718ce,
-              mid_getPositionAngleType_8f17e83e5a86217c,
-              mid_getStateTransitionMatrix_9483b2ac438718ce,
-              mid_initializeFieldShortPeriodTerms_0ee5c56004643a2e,
-              mid_setReferenceState_0ee5c56004643a2e,
-              mid_updateFieldShortPeriodTerms_0ee5c56004643a2e,
+              mid_freezeColumnsNames_0640e6acf969ed28,
+              mid_getB1_70a207fcbc031df2,
+              mid_getB2_fc9cdfa83c55d6b2,
+              mid_getB3_fc9cdfa83c55d6b2,
+              mid_getB4_70a207fcbc031df2,
+              mid_getJacobiansColumnsNames_0d9551367f7ecdef,
+              mid_getOrbitType_2cea2a2cb3e02091,
+              mid_getParametersJacobian_fc9cdfa83c55d6b2,
+              mid_getPositionAngleType_f4984aee71df4c19,
+              mid_getStateTransitionMatrix_fc9cdfa83c55d6b2,
+              mid_initializeFieldShortPeriodTerms_8655761ebf04b503,
+              mid_setReferenceState_8655761ebf04b503,
+              mid_updateFieldShortPeriodTerms_8655761ebf04b503,
               max_mid
             };
 

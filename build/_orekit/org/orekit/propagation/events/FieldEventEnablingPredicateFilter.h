@@ -4,20 +4,20 @@
 #include "org/orekit/propagation/events/FieldAbstractDetector.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
+      class FieldSpacecraftState;
       namespace events {
         class FieldEnablingPredicate;
         class FieldEventDetector;
       }
-      class FieldSpacecraftState;
     }
     namespace time {
       class FieldAbsoluteDate;
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -35,11 +35,11 @@ namespace org {
         class FieldEventEnablingPredicateFilter : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_3609119c1e3b8098,
-            mid_g_41a008afe53da855,
-            mid_getDetector_4fe06ecc019ea51d,
-            mid_init_8e8de2be1664674a,
-            mid_create_239190ad6dae84e4,
+            mid_init$_3fecc29823af5a11,
+            mid_g_de1c2d709eb2829c,
+            mid_getDetector_07d9256595c42b86,
+            mid_init_811e49dad2467b67,
+            mid_create_e0eab4e811c73257,
             max_mid
           };
 

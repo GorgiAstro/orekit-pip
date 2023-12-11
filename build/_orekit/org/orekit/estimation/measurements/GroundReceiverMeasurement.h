@@ -7,18 +7,18 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class GroundStation;
         class ObservableSatellite;
+        class GroundStation;
       }
+    }
+    namespace utils {
+      class PVCoordinates;
     }
     namespace frames {
       class Frame;
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace utils {
-      class PVCoordinates;
     }
   }
   namespace hipparchus {
@@ -46,14 +46,14 @@ namespace org {
         class GroundReceiverMeasurement : public ::org::orekit::estimation::measurements::AbstractMeasurement {
          public:
           enum {
-            mid_init$_362e8d4cf9667e4f,
-            mid_init$_d61b0753fbc5ddd9,
-            mid_getGroundStationCoordinates_63a9f16c3c0f8f49,
-            mid_getGroundStationPosition_e91e859b879f3586,
-            mid_getStation_58e3efb0e9576916,
-            mid_isTwoWay_b108b35ef48e27bd,
-            mid_computeCommonParametersWithDerivatives_638dce81e4a08053,
-            mid_computeCommonParametersWithout_71fc2e11d90352fd,
+            mid_init$_cc77f77ecf3467f7,
+            mid_init$_0c97652d522ed1b8,
+            mid_getGroundStationCoordinates_2608b7929cfe65be,
+            mid_getGroundStationPosition_8386213426308de8,
+            mid_getStation_2161f2a4a8c885ec,
+            mid_isTwoWay_89b302893bdbe1f1,
+            mid_computeCommonParametersWithout_eb2352b23f22469e,
+            mid_computeCommonParametersWithDerivatives_e0d35cbb5d453f3a,
             max_mid
           };
 

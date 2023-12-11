@@ -3,30 +3,30 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-  namespace orekit {
-    namespace time {
-      class FieldTimeStamped;
-      class FieldAbsoluteDate;
-    }
-    namespace utils {
-      class FieldTimeStampedCache;
-    }
-  }
-}
 namespace java {
+  namespace lang {
+    class Throwable;
+    class IllegalStateException;
+    class Class;
+  }
   namespace util {
     namespace stream {
       class Stream;
     }
   }
-  namespace lang {
-    class Throwable;
-    class Class;
-    class IllegalStateException;
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+      class FieldTimeStamped;
+    }
+    namespace utils {
+      class FieldTimeStampedCache;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -38,15 +38,15 @@ namespace org {
       class PythonFieldTimeStampedCache : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_finalize_0fa09c18fee449d5,
-          mid_getEarliest_f8d8d28f6791aa76,
-          mid_getLatest_f8d8d28f6791aa76,
-          mid_getNeighbors_92d676459a63dcda,
-          mid_getNeighborsSize_570ce0828f81a2c1,
-          mid_pythonDecRef_0fa09c18fee449d5,
-          mid_pythonExtension_492808a339bfa35f,
-          mid_pythonExtension_3a8e7649f31fdb20,
+          mid_init$_0640e6acf969ed28,
+          mid_finalize_0640e6acf969ed28,
+          mid_getEarliest_d840ecaffb3bbf7f,
+          mid_getLatest_d840ecaffb3bbf7f,
+          mid_getNeighbors_d2b16151ed8cc73c,
+          mid_getNeighborsSize_412668abc8d889e9,
+          mid_pythonDecRef_0640e6acf969ed28,
+          mid_pythonExtension_9e26256fb0d384a2,
+          mid_pythonExtension_3cd6a6b354c6aa22,
           max_mid
         };
 

@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace optim {
       class OptimizationData;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,8 +24,8 @@ namespace org {
       class InitialGuess : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_fa9d415d19f69361,
-          mid_getInitialGuess_60c7040667a7dc5c,
+          mid_init$_cc18240f4a737f14,
+          mid_getInitialGuess_a53a7513ecedada2,
           max_mid
         };
 

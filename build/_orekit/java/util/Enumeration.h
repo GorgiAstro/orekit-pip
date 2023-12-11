@@ -19,9 +19,9 @@ namespace java {
     class Enumeration : public ::java::lang::Object {
      public:
       enum {
-        mid_asIterator_4d23511a9f0db098,
-        mid_hasMoreElements_b108b35ef48e27bd,
-        mid_nextElement_4d26fd885228c716,
+        mid_asIterator_834a3801c426326d,
+        mid_hasMoreElements_89b302893bdbe1f1,
+        mid_nextElement_e661fe3ba2fafb22,
         max_mid
       };
 

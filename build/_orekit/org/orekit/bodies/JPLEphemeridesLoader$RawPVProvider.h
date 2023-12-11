@@ -15,13 +15,13 @@ namespace org {
     }
   }
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-    }
     namespace utils {
       class FieldPVCoordinates;
       class PVCoordinates;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
   }
 }
@@ -39,10 +39,10 @@ namespace org {
       class JPLEphemeridesLoader$RawPVProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getRawPV_38efe74c9e3a1286,
-          mid_getRawPV_04c31977feea432f,
-          mid_getRawPosition_24461752d0eea1e3,
-          mid_getRawPosition_e81fa067750860a1,
+          mid_getRawPV_f00f0e7ea285c370,
+          mid_getRawPV_47281698929ef375,
+          mid_getRawPosition_3df461fe15362b2b,
+          mid_getRawPosition_3343973a86caeaa4,
           max_mid
         };
 

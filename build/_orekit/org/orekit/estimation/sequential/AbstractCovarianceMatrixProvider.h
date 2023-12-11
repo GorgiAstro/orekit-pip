@@ -10,13 +10,13 @@ namespace org {
     }
   }
   namespace orekit {
+    namespace propagation {
+      class SpacecraftState;
+    }
     namespace estimation {
       namespace sequential {
         class CovarianceMatrixProvider;
       }
-    }
-    namespace propagation {
-      class SpacecraftState;
     }
   }
 }
@@ -35,7 +35,7 @@ namespace org {
         class AbstractCovarianceMatrixProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_getInitialCovarianceMatrix_9483b2ac438718ce,
+            mid_getInitialCovarianceMatrix_fc9cdfa83c55d6b2,
             max_mid
           };
 

@@ -26,14 +26,14 @@ namespace org {
         class CRD$FrRangeMeasurement : public ::org::orekit::files::ilrs::CRD$RangeMeasurement {
          public:
           enum {
-            mid_init$_0f40c5eb9988d498,
-            mid_getDetectorChannel_570ce0828f81a2c1,
-            mid_getFilterFlag_570ce0828f81a2c1,
-            mid_getReceiveAmplitude_570ce0828f81a2c1,
-            mid_getStopNumber_570ce0828f81a2c1,
-            mid_getTransmitAmplitude_570ce0828f81a2c1,
-            mid_toCrdString_11b109bd155ca898,
-            mid_toString_11b109bd155ca898,
+            mid_init$_7f9a0ec64fb18faf,
+            mid_getDetectorChannel_412668abc8d889e9,
+            mid_getFilterFlag_412668abc8d889e9,
+            mid_getReceiveAmplitude_412668abc8d889e9,
+            mid_getStopNumber_412668abc8d889e9,
+            mid_getTransmitAmplitude_412668abc8d889e9,
+            mid_toCrdString_3cffd47377eca18a,
+            mid_toString_3cffd47377eca18a,
             max_mid
           };
 

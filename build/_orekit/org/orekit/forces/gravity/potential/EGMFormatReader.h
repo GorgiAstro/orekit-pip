@@ -4,12 +4,12 @@
 #include "org/orekit/forces/gravity/potential/PotentialCoefficientsReader.h"
 
 namespace java {
-  namespace text {
-    class ParseException;
-  }
   namespace io {
     class IOException;
     class InputStream;
+  }
+  namespace text {
+    class ParseException;
   }
   namespace lang {
     class Class;
@@ -41,10 +41,10 @@ namespace org {
           class EGMFormatReader : public ::org::orekit::forces::gravity::potential::PotentialCoefficientsReader {
            public:
             enum {
-              mid_init$_d6df10f4e35ef1e8,
-              mid_init$_718db1cacd303261,
-              mid_getProvider_fc0a96c558346426,
-              mid_loadData_1815f85c118161ad,
+              mid_init$_e5ca4b97ee6bd2b6,
+              mid_init$_c08444eca1af05e2,
+              mid_getProvider_f0b357b475e18957,
+              mid_loadData_15770e8d8949a557,
               max_mid
             };
 

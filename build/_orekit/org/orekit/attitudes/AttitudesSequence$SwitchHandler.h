@@ -27,7 +27,7 @@ namespace org {
       class AttitudesSequence$SwitchHandler : public ::java::lang::Object {
        public:
         enum {
-          mid_switchOccurred_0bf4342ddf7e9645,
+          mid_switchOccurred_990f4edc83670459,
           max_mid
         };
 

@@ -5,13 +5,13 @@
 
 namespace java {
   namespace text {
-    class NumberFormat;
     class ParsePosition;
+    class NumberFormat;
     class FieldPosition;
   }
   namespace lang {
-    class StringBuffer;
     class Class;
+    class StringBuffer;
     class String;
   }
 }
@@ -31,12 +31,12 @@ namespace org {
       class ProperFractionFormat : public ::org::hipparchus::fraction::FractionFormat {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_init$_256f36a22c0d0f55,
-          mid_init$_2af517d7a6ef01c6,
-          mid_format_44821f0beb3a37bc,
-          mid_getWholeFormat_24f83dea4a8657b1,
-          mid_parse_32af1cad14e4c6d5,
+          mid_init$_0640e6acf969ed28,
+          mid_init$_d53859bd7ba1b247,
+          mid_init$_0c28e98ce8b6fdd7,
+          mid_format_c8dfafe6701753f2,
+          mid_getWholeFormat_001645e916bd626d,
+          mid_parse_fb155efb3cdca00d,
           max_mid
         };
 

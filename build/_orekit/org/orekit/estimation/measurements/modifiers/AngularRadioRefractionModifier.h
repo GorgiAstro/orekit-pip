@@ -3,29 +3,29 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class AngularAzEl;
-        class EstimatedMeasurementBase;
-        class EstimationModifier;
-      }
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace models {
-      class AtmosphericRefractionModel;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace estimation {
+      namespace measurements {
+        class EstimatedMeasurementBase;
+        class AngularAzEl;
+        class EstimationModifier;
+      }
+    }
+    namespace models {
+      class AtmosphericRefractionModel;
+    }
   }
 }
 template<class T> class JArray;
@@ -39,9 +39,9 @@ namespace org {
           class AngularRadioRefractionModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_e298e47002f6c8f7,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_modifyWithoutDerivatives_d1815d998cba71e9,
+              mid_init$_6d9d05db5ec5612f,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_modifyWithoutDerivatives_e471490df8741b73,
               max_mid
             };
 

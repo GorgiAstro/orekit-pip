@@ -4,18 +4,18 @@
 #include "org/orekit/utils/ParameterDriversProvider.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
+    namespace bodies {
+      class GeodeticPoint;
+      class FieldGeodeticPoint;
+    }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
     }
-    namespace bodies {
-      class FieldGeodeticPoint;
-      class GeodeticPoint;
-    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -34,8 +34,8 @@ namespace org {
           class DiscreteTroposphericModel : public ::org::orekit::utils::ParameterDriversProvider {
            public:
             enum {
-              mid_pathDelay_ff7a895eb6f0af2e,
-              mid_pathDelay_fe3b5c46874ab115,
+              mid_pathDelay_a4fdd877b349d4a6,
+              mid_pathDelay_129678f244f63094,
               max_mid
             };
 

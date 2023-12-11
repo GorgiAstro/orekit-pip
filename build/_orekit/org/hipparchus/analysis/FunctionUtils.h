@@ -5,18 +5,18 @@
 
 namespace org {
   namespace hipparchus {
-    namespace analysis {
-      namespace differentiation {
-        class MultivariateDifferentiableFunction;
-        class UnivariateDifferentiableFunction;
-      }
-      class MultivariateVectorFunction;
-      class BivariateFunction;
-      class MultivariateFunction;
-      class UnivariateFunction;
-    }
     namespace exception {
       class MathIllegalArgumentException;
+    }
+    namespace analysis {
+      class BivariateFunction;
+      class UnivariateFunction;
+      class MultivariateVectorFunction;
+      namespace differentiation {
+        class UnivariateDifferentiableFunction;
+        class MultivariateDifferentiableFunction;
+      }
+      class MultivariateFunction;
     }
   }
 }
@@ -34,22 +34,22 @@ namespace org {
       class FunctionUtils : public ::java::lang::Object {
        public:
         enum {
-          mid_add_7170b070702438b3,
-          mid_add_4eb7faaab711f396,
-          mid_collector_4c39da77fc432e07,
-          mid_collector_9349fd916a39e221,
-          mid_combine_3330827e5a477097,
-          mid_compose_7170b070702438b3,
-          mid_compose_4eb7faaab711f396,
-          mid_derivative_1af9f11a6865952e,
-          mid_derivative_5707ffcbbb3c291a,
-          mid_fix1stArgument_f48bb0dc5eafff9b,
-          mid_fix2ndArgument_f48bb0dc5eafff9b,
-          mid_multiply_7170b070702438b3,
-          mid_multiply_4eb7faaab711f396,
-          mid_sample_bb5b80d154c3de2f,
-          mid_toDifferentiable_ec776c30a2f68070,
-          mid_toDifferentiable_33be8e58464546b4,
+          mid_add_7fa3f7fd3ae81707,
+          mid_add_aa258a25e5aa8480,
+          mid_collector_f1cef6b9a4ab60ff,
+          mid_collector_8d82531d92573cbf,
+          mid_combine_485b9d450102a3d6,
+          mid_compose_7fa3f7fd3ae81707,
+          mid_compose_aa258a25e5aa8480,
+          mid_derivative_6067394c788ff7c4,
+          mid_derivative_d32286ed7ab8e1ed,
+          mid_fix1stArgument_6433026d4a74b2a4,
+          mid_fix2ndArgument_6433026d4a74b2a4,
+          mid_multiply_7fa3f7fd3ae81707,
+          mid_multiply_aa258a25e5aa8480,
+          mid_sample_3682f29a267a9c14,
+          mid_toDifferentiable_bcc65662dd57fbae,
+          mid_toDifferentiable_fca30ac7ebcab533,
           max_mid
         };
 

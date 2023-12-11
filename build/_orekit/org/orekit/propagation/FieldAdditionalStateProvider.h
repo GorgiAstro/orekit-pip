@@ -4,9 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
       class FieldSpacecraftState;
@@ -14,6 +11,9 @@ namespace org {
     namespace time {
       class FieldAbsoluteDate;
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -31,10 +31,10 @@ namespace org {
       class FieldAdditionalStateProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getAdditionalState_567ea49d447f98c8,
-          mid_getName_11b109bd155ca898,
-          mid_init_8e8de2be1664674a,
-          mid_yields_1b0abd4f90ebd0eb,
+          mid_getAdditionalState_00d4758be4cee3ce,
+          mid_getName_3cffd47377eca18a,
+          mid_init_811e49dad2467b67,
+          mid_yields_4fda3059ab91dbfe,
           max_mid
         };
 

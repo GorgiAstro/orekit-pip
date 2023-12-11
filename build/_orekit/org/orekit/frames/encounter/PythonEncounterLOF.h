@@ -8,24 +8,24 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Rotation;
           class FieldVector3D;
-          class FieldRotation;
           class Vector3D;
+          class Rotation;
+          class FieldRotation;
         }
       }
     }
     class Field;
   }
   namespace orekit {
-    namespace utils {
-      class FieldPVCoordinates;
-      class PVCoordinates;
-    }
     namespace frames {
       namespace encounter {
         class EncounterLOF;
       }
+    }
+    namespace utils {
+      class FieldPVCoordinates;
+      class PVCoordinates;
     }
   }
 }
@@ -46,18 +46,18 @@ namespace org {
         class PythonEncounterLOF : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_finalize_0fa09c18fee449d5,
-            mid_getAxisNormalToCollisionPlane_d52645e0d4c07563,
-            mid_getAxisNormalToCollisionPlane_202e7b3b5ed01afc,
-            mid_getFieldOther_90f77345373c3eb7,
-            mid_getName_11b109bd155ca898,
-            mid_getOther_9b7c658c14883c84,
-            mid_pythonDecRef_0fa09c18fee449d5,
-            mid_pythonExtension_492808a339bfa35f,
-            mid_pythonExtension_3a8e7649f31fdb20,
-            mid_rotationFromInertial_d59b144da7c7851f,
-            mid_rotationFromInertial_2ba248090f65b129,
+            mid_init$_0640e6acf969ed28,
+            mid_finalize_0640e6acf969ed28,
+            mid_getAxisNormalToCollisionPlane_f88961cca75a2c0a,
+            mid_getAxisNormalToCollisionPlane_3a465a0c08d1dbdf,
+            mid_getFieldOther_dda60cf1427afe76,
+            mid_getName_3cffd47377eca18a,
+            mid_getOther_77bd7b3cdab2713e,
+            mid_pythonDecRef_0640e6acf969ed28,
+            mid_pythonExtension_9e26256fb0d384a2,
+            mid_pythonExtension_3cd6a6b354c6aa22,
+            mid_rotationFromInertial_0158ab79fb625627,
+            mid_rotationFromInertial_ea6e3434436b926f,
             max_mid
           };
 

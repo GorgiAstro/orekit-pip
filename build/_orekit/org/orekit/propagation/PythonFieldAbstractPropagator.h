@@ -3,19 +3,7 @@
 
 #include "org/orekit/propagation/FieldAbstractPropagator.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-  namespace util {
-    class Collection;
-  }
-}
 namespace org {
-  namespace hipparchus {
-    class Field;
-  }
   namespace orekit {
     namespace propagation {
       class FieldSpacecraftState;
@@ -28,6 +16,18 @@ namespace org {
       class FieldAbsoluteDate;
     }
   }
+  namespace hipparchus {
+    class Field;
+  }
+}
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+  namespace util {
+    class Collection;
+  }
 }
 template<class T> class JArray;
 
@@ -38,16 +38,16 @@ namespace org {
       class PythonFieldAbstractPropagator : public ::org::orekit::propagation::FieldAbstractPropagator {
        public:
         enum {
-          mid_init$_484998d88974267b,
-          mid_addEventDetector_f929ebd2a84dbfe7,
-          mid_clearEventsDetectors_0fa09c18fee449d5,
-          mid_finalize_0fa09c18fee449d5,
-          mid_getEphemerisGenerator_54ac43f1e933cf20,
-          mid_getEventsDetectors_37528d110cff6b74,
-          mid_propagate_fc770c29e3468de8,
-          mid_pythonDecRef_0fa09c18fee449d5,
-          mid_pythonExtension_492808a339bfa35f,
-          mid_pythonExtension_3a8e7649f31fdb20,
+          mid_init$_979ae7f57a96b096,
+          mid_addEventDetector_2ffeff0ffaf1deef,
+          mid_clearEventsDetectors_0640e6acf969ed28,
+          mid_finalize_0640e6acf969ed28,
+          mid_getEphemerisGenerator_07866493eb3b3f17,
+          mid_getEventsDetectors_12ee61573a18f417,
+          mid_propagate_78f4b3ee8066e6b6,
+          mid_pythonDecRef_0640e6acf969ed28,
+          mid_pythonExtension_9e26256fb0d384a2,
+          mid_pythonExtension_3cd6a6b354c6aa22,
           max_mid
         };
 

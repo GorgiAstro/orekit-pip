@@ -27,10 +27,10 @@ namespace org {
             class ShortPeriodicsInterpolatedCoefficient : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_99803b0791f320ff,
-                mid_addGridPoint_ab5a86184bb74c69,
-                mid_clearHistory_0fa09c18fee449d5,
-                mid_value_2b9aa40de0a696a4,
+                mid_init$_a3da1a935cb37f7b,
+                mid_addGridPoint_0fd0d5413261aea6,
+                mid_clearHistory_0640e6acf969ed28,
+                mid_value_89e8b78e4211e023,
                 max_mid
               };
 

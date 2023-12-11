@@ -30,8 +30,8 @@ namespace org {
         class AbstractUnivariateDifferentiableSolver : public ::org::hipparchus::analysis::solvers::BaseAbstractUnivariateSolver {
          public:
           enum {
-            mid_computeObjectiveValueAndDerivative_b3ed376bfd09e93b,
-            mid_setup_7b491e71da30eef2,
+            mid_computeObjectiveValueAndDerivative_e5494538980257b4,
+            mid_setup_7417e00c8aefca3d,
             max_mid
           };
 

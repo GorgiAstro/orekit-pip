@@ -25,18 +25,18 @@ namespace java {
     class Currency : public ::java::lang::Object {
      public:
       enum {
-        mid_getAvailableCurrencies_015730311a5bacdc,
-        mid_getCurrencyCode_11b109bd155ca898,
-        mid_getDefaultFractionDigits_570ce0828f81a2c1,
-        mid_getDisplayName_11b109bd155ca898,
-        mid_getDisplayName_3cd873bfb132c4fd,
-        mid_getInstance_6324b501742ce15e,
-        mid_getInstance_255c2ca41d8843c3,
-        mid_getNumericCode_570ce0828f81a2c1,
-        mid_getNumericCodeAsString_11b109bd155ca898,
-        mid_getSymbol_11b109bd155ca898,
-        mid_getSymbol_3cd873bfb132c4fd,
-        mid_toString_11b109bd155ca898,
+        mid_getAvailableCurrencies_2dfcbd371d62f4e1,
+        mid_getCurrencyCode_3cffd47377eca18a,
+        mid_getDefaultFractionDigits_412668abc8d889e9,
+        mid_getDisplayName_3cffd47377eca18a,
+        mid_getDisplayName_4b51060c6b7ea981,
+        mid_getInstance_51e9b5ef3cee4cb5,
+        mid_getInstance_babbc6e6ce0672cb,
+        mid_getNumericCode_412668abc8d889e9,
+        mid_getNumericCodeAsString_3cffd47377eca18a,
+        mid_getSymbol_3cffd47377eca18a,
+        mid_getSymbol_4b51060c6b7ea981,
+        mid_toString_3cffd47377eca18a,
         max_mid
       };
 

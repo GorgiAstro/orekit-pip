@@ -5,31 +5,25 @@
 
 namespace org {
   namespace orekit {
-    namespace orbits {
-      class PositionAngleType;
-    }
     namespace propagation {
       namespace conversion {
-        class TLEPropagatorBuilder;
         class PropagatorBuilder;
+        class TLEPropagatorBuilder;
       }
       namespace analytical {
         namespace tle {
           class TLEPropagator;
+          class TLE;
           namespace generation {
             class TleGenerationAlgorithm;
           }
-          class TLE;
         }
       }
     }
-    namespace data {
-      class DataContext;
-    }
     namespace estimation {
       namespace leastsquares {
-        class AbstractBatchLSModel;
         class ModelObserver;
+        class AbstractBatchLSModel;
       }
       namespace measurements {
         class ObservedMeasurement;
@@ -37,6 +31,12 @@ namespace org {
     }
     namespace utils {
       class ParameterDriversList;
+    }
+    namespace orbits {
+      class PositionAngleType;
+    }
+    namespace data {
+      class DataContext;
     }
   }
 }
@@ -59,12 +59,12 @@ namespace org {
         class TLEPropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_74fe3f418af898ed,
-            mid_init$_5805b462d88cb3bd,
-            mid_buildLeastSquaresModel_2eb3122719704f90,
-            mid_buildPropagator_9ad7da531a683a90,
-            mid_copy_009a67d896739747,
-            mid_getTemplateTLE_e993eceec98c738b,
+            mid_init$_4719a996de68c182,
+            mid_init$_1dff286f8dcbaaee,
+            mid_buildLeastSquaresModel_4fca41eef9d750a6,
+            mid_buildPropagator_c186d77d7194bb8c,
+            mid_copy_9adeea3e8a1b28d1,
+            mid_getTemplateTLE_67f978062a0fd0e7,
             max_mid
           };
 

@@ -30,12 +30,12 @@ namespace org {
       class OrbitHermiteInterpolator : public ::org::orekit::orbits::AbstractOrbitInterpolator {
        public:
         enum {
-          mid_init$_b5680f5c30eede66,
-          mid_init$_f67f9ac4338cd9bf,
-          mid_init$_66865f52d36c8d04,
-          mid_init$_1958d683b153c045,
-          mid_getPVAFilter_16e9a7b5414faf2d,
-          mid_interpolate_1274df0c3ddd4327,
+          mid_init$_535d1f91a93c8b4d,
+          mid_init$_03d00ffd0ee81fe0,
+          mid_init$_51c833c667e08e0f,
+          mid_init$_824f93e8d6b45930,
+          mid_getPVAFilter_6c4898d6ec0c3837,
+          mid_interpolate_633c02f6304af1cb,
           max_mid
         };
 

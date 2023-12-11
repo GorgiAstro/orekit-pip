@@ -5,10 +5,10 @@
 
 namespace java {
   namespace util {
-    class Spliterator$OfDouble;
     namespace function {
       class DoubleConsumer;
     }
+    class Spliterator$OfDouble;
   }
   namespace lang {
     class Double;
@@ -23,9 +23,9 @@ namespace java {
     class Spliterator$OfDouble : public ::java::util::Spliterator$OfPrimitive {
      public:
       enum {
-        mid_forEachRemaining_6444b3e27af46e9d,
-        mid_tryAdvance_a1b906adcf459018,
-        mid_trySplit_801fcadd4b3f4dbb,
+        mid_forEachRemaining_fda350dd3513069c,
+        mid_tryAdvance_6584f80d17f85d7a,
+        mid_trySplit_67e70219587d017f,
         max_mid
       };
 

@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace utils {
       class TimeStampedPVCoordinates;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -30,15 +30,15 @@ namespace org {
             class StateVector : public ::org::orekit::files::ccsds::section::CommentsContainer {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_getEpoch_85703d13e302437e,
-                mid_hasAcceleration_b108b35ef48e27bd,
-                mid_setA_bb79ca80d85d0a66,
-                mid_setEpoch_600a2a61652bc473,
-                mid_setP_bb79ca80d85d0a66,
-                mid_setV_bb79ca80d85d0a66,
-                mid_toTimeStampedPVCoordinates_c204436deca11d94,
-                mid_validate_17db3a65980d3441,
+                mid_init$_0640e6acf969ed28,
+                mid_getEpoch_7a97f7e149e79afb,
+                mid_hasAcceleration_89b302893bdbe1f1,
+                mid_setA_89aad365fb0ed8da,
+                mid_setEpoch_20affcbd28542333,
+                mid_setP_89aad365fb0ed8da,
+                mid_setV_89aad365fb0ed8da,
+                mid_toTimeStampedPVCoordinates_daf15abc21907508,
+                mid_validate_10f281d777284cea,
                 max_mid
               };
 

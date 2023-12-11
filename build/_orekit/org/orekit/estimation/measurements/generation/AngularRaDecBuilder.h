@@ -10,11 +10,16 @@ namespace org {
     }
   }
   namespace orekit {
+    namespace propagation {
+      namespace sampling {
+        class OrekitStepInterpolator;
+      }
+    }
     namespace estimation {
       namespace measurements {
+        class ObservableSatellite;
         class GroundStation;
         class AngularRaDec;
-        class ObservableSatellite;
       }
     }
     namespace frames {
@@ -22,11 +27,6 @@ namespace org {
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace propagation {
-      namespace sampling {
-        class OrekitStepInterpolator;
-      }
     }
   }
 }
@@ -49,8 +49,8 @@ namespace org {
           class AngularRaDecBuilder : public ::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder {
            public:
             enum {
-              mid_init$_07d4c6ba86546447,
-              mid_build_a7274153218a5de6,
+              mid_init$_33dc93b5248673a7,
+              mid_build_4797158990a89f89,
               max_mid
             };
 

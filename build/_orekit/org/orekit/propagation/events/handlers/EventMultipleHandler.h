@@ -46,14 +46,14 @@ namespace org {
           class EventMultipleHandler : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_addHandler_2c820fcef7e4ced8,
-              mid_addHandlers_231f1812abdf722a,
-              mid_eventOccurred_abc543fa9701720f,
-              mid_getHandlers_2afa36052df4765d,
-              mid_init_2e343080aa0c9516,
-              mid_resetState_7a28fd3585a5b57c,
-              mid_setHandlers_de3e021e7266b71e,
+              mid_init$_0640e6acf969ed28,
+              mid_addHandler_59ed1088e47ce19e,
+              mid_addHandlers_b99a1af3df83b323,
+              mid_eventOccurred_c85ac59cb25f2670,
+              mid_getHandlers_0d9551367f7ecdef,
+              mid_init_e0491fcf7b1e4288,
+              mid_resetState_ce9bc9b3806ce3d4,
+              mid_setHandlers_4ccaedadb068bdeb,
               max_mid
             };
 

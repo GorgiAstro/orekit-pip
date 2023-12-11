@@ -11,10 +11,13 @@ namespace org {
       class FieldAttitude;
     }
     namespace utils {
-      class TimeStampedAngularCoordinates;
+      class TimeStampedFieldAngularCoordinates;
       class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
-      class TimeStampedFieldAngularCoordinates;
+      class TimeStampedAngularCoordinates;
+    }
+    namespace frames {
+      class Frame;
     }
     namespace files {
       namespace ccsds {
@@ -27,9 +30,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace frames {
-      class Frame;
     }
   }
 }
@@ -52,22 +52,22 @@ namespace org {
             class AttitudeEndpoints : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_build_32e9a4ac991f1702,
-                mid_build_54b3b52d9ecd9e48,
-                mid_checkExternalFrame_11b1ff867c62ed90,
-                mid_checkMandatoryEntriesExceptExternalFrame_928242bba88ff831,
-                mid_getExternalFrame_5d5dd95b04037824,
-                mid_getFrameA_5d5dd95b04037824,
-                mid_getFrameB_5d5dd95b04037824,
-                mid_getSpacecraftBodyFrame_5d5dd95b04037824,
-                mid_isA2b_b108b35ef48e27bd,
-                mid_isCompatibleWith_8b4c4011cac9576a,
-                mid_isExternal2SpacecraftBody_b108b35ef48e27bd,
-                mid_setA2b_bd04c9335fb9e4cf,
-                mid_setFrameA_849bc9e3b38b9bcb,
-                mid_setFrameB_849bc9e3b38b9bcb,
-                mid_toString_11b109bd155ca898,
+                mid_init$_0640e6acf969ed28,
+                mid_build_4329b81cdba13b7b,
+                mid_build_76e687ee866bdc48,
+                mid_checkExternalFrame_a149591111ac16ba,
+                mid_checkMandatoryEntriesExceptExternalFrame_220b7e9d21985607,
+                mid_getExternalFrame_98f5fcaff3e3f9d2,
+                mid_getFrameA_98f5fcaff3e3f9d2,
+                mid_getFrameB_98f5fcaff3e3f9d2,
+                mid_getSpacecraftBodyFrame_98f5fcaff3e3f9d2,
+                mid_isA2b_89b302893bdbe1f1,
+                mid_isCompatibleWith_9b08e60715a7a476,
+                mid_isExternal2SpacecraftBody_89b302893bdbe1f1,
+                mid_setA2b_ed2afdb8506b9742,
+                mid_setFrameA_f55eee1236275bb1,
+                mid_setFrameB_f55eee1236275bb1,
+                mid_toString_3cffd47377eca18a,
                 max_mid
               };
 

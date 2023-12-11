@@ -3,20 +3,20 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace data {
-      class DataSource;
-      class DataFilter;
-    }
-  }
-}
 namespace java {
   namespace io {
     class IOException;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace data {
+      class DataFilter;
+      class DataSource;
+    }
   }
 }
 template<class T> class JArray;
@@ -28,8 +28,8 @@ namespace org {
       class TruncatingFilter : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_99803b0791f320ff,
-          mid_filter_716adf7a6da8b4d7,
+          mid_init$_a3da1a935cb37f7b,
+          mid_filter_d33f4b0b3a1030ad,
           max_mid
         };
 

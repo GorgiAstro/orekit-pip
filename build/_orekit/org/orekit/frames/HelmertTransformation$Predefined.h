@@ -6,10 +6,10 @@
 namespace org {
   namespace orekit {
     namespace frames {
-      class Frame;
-      class ITRFVersion;
       class HelmertTransformation;
       class HelmertTransformation$Predefined;
+      class Frame;
+      class ITRFVersion;
     }
     namespace time {
       class TimeScale;
@@ -31,15 +31,15 @@ namespace org {
       class HelmertTransformation$Predefined : public ::java::lang::Enum {
        public:
         enum {
-          mid_createTransformedITRF_2ae8d85140934fc6,
-          mid_createTransformedITRF_a59321555618994b,
-          mid_getDestination_8a73c81b6e5084ce,
-          mid_getOrigin_8a73c81b6e5084ce,
-          mid_getTransformation_96690571c4117dfd,
-          mid_getTransformation_027e4f0a93ad8af6,
-          mid_selectPredefined_0ebc8b7060e8137f,
-          mid_valueOf_204519afaba60499,
-          mid_values_0aa77d79c86b7d08,
+          mid_createTransformedITRF_be8eab9f6f8c1262,
+          mid_createTransformedITRF_3421bf0922818af1,
+          mid_getDestination_b311296551ce8af2,
+          mid_getOrigin_b311296551ce8af2,
+          mid_getTransformation_685acbd1c11a45e2,
+          mid_getTransformation_95565310de8c1bab,
+          mid_selectPredefined_d3cd54fb21c16fef,
+          mid_valueOf_a382223668cf3823,
+          mid_values_4d6128b387e04c2c,
           max_mid
         };
 

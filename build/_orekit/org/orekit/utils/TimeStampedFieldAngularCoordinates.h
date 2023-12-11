@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -14,18 +13,19 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
     class Field;
   }
   namespace orekit {
     namespace utils {
-      class TimeStampedAngularCoordinates;
       class TimeStampedFieldAngularCoordinates;
       class FieldPVCoordinates;
+      class TimeStampedAngularCoordinates;
     }
     namespace time {
-      class FieldTimeStamped;
-      class AbsoluteDate;
       class FieldAbsoluteDate;
+      class AbsoluteDate;
+      class FieldTimeStamped;
     }
   }
 }
@@ -43,18 +43,18 @@ namespace org {
       class TimeStampedFieldAngularCoordinates : public ::org::orekit::utils::FieldAngularCoordinates {
        public:
         enum {
-          mid_init$_b65ab84bb47d00a7,
-          mid_init$_57465d89f578decb,
-          mid_init$_d1b59cac8bab6322,
-          mid_init$_b615b416f90b473e,
-          mid_init$_7074573958993f96,
-          mid_init$_3b247e4eb3f721c9,
-          mid_addOffset_7ec0bea5c02f6519,
-          mid_getDate_51da00d5b8a3b5df,
-          mid_revert_d8696322b912d5fd,
-          mid_shiftedBy_7e28b13c041efa8b,
-          mid_shiftedBy_093b9606e7549330,
-          mid_subtractOffset_7ec0bea5c02f6519,
+          mid_init$_3e3c82b13e2cf201,
+          mid_init$_354b52f41aeff9a4,
+          mid_init$_47577ce34ad0612e,
+          mid_init$_448839dff1f7f897,
+          mid_init$_7d35ada25901a0df,
+          mid_init$_a5863878b8b8d3e2,
+          mid_addOffset_97721bc21cc7efe3,
+          mid_getDate_f1fe4daf77c66560,
+          mid_revert_6ee4b6b8d0c547ac,
+          mid_shiftedBy_4f847e3a19f195cb,
+          mid_shiftedBy_4f016eb855e53d73,
+          mid_subtractOffset_97721bc21cc7efe3,
           max_mid
         };
 

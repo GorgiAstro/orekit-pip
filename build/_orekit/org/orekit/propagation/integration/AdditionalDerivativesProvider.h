@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace propagation {
       namespace integration {
         class CombinedDerivatives;
       }
       class SpacecraftState;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -32,11 +32,11 @@ namespace org {
         class AdditionalDerivativesProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_combinedDerivatives_4fc0958a0539e1d3,
-            mid_getDimension_570ce0828f81a2c1,
-            mid_getName_11b109bd155ca898,
-            mid_init_826b4eda94da4e78,
-            mid_yields_680f8463a473c3cb,
+            mid_combinedDerivatives_5fc55a092d474e7c,
+            mid_getDimension_412668abc8d889e9,
+            mid_getName_3cffd47377eca18a,
+            mid_init_0472264ad6f40bc2,
+            mid_yields_abdf3beb789bbd4e,
             max_mid
           };
 

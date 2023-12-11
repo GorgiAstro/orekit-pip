@@ -14,23 +14,17 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataContext;
-    }
-    namespace utils {
-      class IERSConventions;
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
+          class ParsedUnitsBehavior;
           namespace odm {
             namespace opm {
-              class Opm;
               class OpmParser;
+              class Opm;
             }
             class OdmHeader;
           }
-          class ParsedUnitsBehavior;
         }
         namespace utils {
           namespace lexical {
@@ -40,8 +34,14 @@ namespace org {
         }
       }
     }
+    namespace utils {
+      class IERSConventions;
+    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace data {
+      class DataContext;
     }
   }
 }
@@ -58,19 +58,19 @@ namespace org {
               class OpmParser : public ::org::orekit::files::ccsds::ndm::odm::OdmParser {
                public:
                 enum {
-                  mid_build_1d1d200b4f79c07e,
-                  mid_finalizeData_b108b35ef48e27bd,
-                  mid_finalizeHeader_b108b35ef48e27bd,
-                  mid_finalizeMetadata_b108b35ef48e27bd,
-                  mid_getHeader_3423aca890fca0cd,
-                  mid_getSpecialXmlElementsBuilders_6f5a75ccd8c04465,
-                  mid_inData_b108b35ef48e27bd,
-                  mid_inHeader_b108b35ef48e27bd,
-                  mid_inMetadata_b108b35ef48e27bd,
-                  mid_prepareData_b108b35ef48e27bd,
-                  mid_prepareHeader_b108b35ef48e27bd,
-                  mid_prepareMetadata_b108b35ef48e27bd,
-                  mid_reset_e250621f009e45db,
+                  mid_build_8424812d0f5a0a71,
+                  mid_finalizeData_89b302893bdbe1f1,
+                  mid_finalizeHeader_89b302893bdbe1f1,
+                  mid_finalizeMetadata_89b302893bdbe1f1,
+                  mid_getHeader_d7722dc369ae0874,
+                  mid_getSpecialXmlElementsBuilders_1e62c2f73fbdd1c4,
+                  mid_inData_89b302893bdbe1f1,
+                  mid_inHeader_89b302893bdbe1f1,
+                  mid_inMetadata_89b302893bdbe1f1,
+                  mid_prepareData_89b302893bdbe1f1,
+                  mid_prepareHeader_89b302893bdbe1f1,
+                  mid_prepareMetadata_89b302893bdbe1f1,
+                  mid_reset_a580586827f4ec13,
                   max_mid
                 };
 

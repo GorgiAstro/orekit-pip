@@ -4,28 +4,28 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
-    namespace frames {
-      class TopocentricFrame;
+    namespace models {
+      namespace earth {
+        namespace ionosphere {
+          class IonosphericMappingFunction;
+          class IonosphericModel;
+        }
+      }
     }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
-    namespace models {
-      namespace earth {
-        namespace ionosphere {
-          class IonosphericModel;
-          class IonosphericMappingFunction;
-        }
-      }
-    }
     namespace utils {
       class ParameterDriver;
     }
+    namespace frames {
+      class TopocentricFrame;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -48,12 +48,12 @@ namespace org {
           class EstimatedIonosphericModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_e30c8862bd843d70,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_pathDelay_4964da8caf11638c,
-              mid_pathDelay_ab95aee7419cc874,
-              mid_pathDelay_bea489d08473aa2e,
-              mid_pathDelay_28325ab4dabb069a,
+              mid_init$_c633345812d89e69,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_pathDelay_2c22e006b3b11c35,
+              mid_pathDelay_da32eccdf871125c,
+              mid_pathDelay_e09499dc3d690830,
+              mid_pathDelay_8fbdb07bb0b935f0,
               max_mid
             };
 

@@ -28,8 +28,8 @@ namespace org {
         class Action : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_da19fce7787ffd31,
-            mid_values_738c81813a452b9f,
+            mid_valueOf_d4807f4620e23a07,
+            mid_values_e3d2cb5c972231f4,
             max_mid
           };
 

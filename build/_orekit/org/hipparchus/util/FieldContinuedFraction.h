@@ -5,10 +5,10 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace exception {
       class MathIllegalStateException;
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -25,12 +25,12 @@ namespace org {
       class FieldContinuedFraction : public ::java::lang::Object {
        public:
         enum {
-          mid_evaluate_a4b1871f4d29e58b,
-          mid_evaluate_40cfe74535da4622,
-          mid_evaluate_7fc015d41da5fb84,
-          mid_evaluate_76ee700af6f4010d,
-          mid_getA_e2b464e41c9ba627,
-          mid_getB_e2b464e41c9ba627,
+          mid_evaluate_6672ad854985cb64,
+          mid_evaluate_0c85c14ef225acd0,
+          mid_evaluate_a945230069a4182c,
+          mid_evaluate_600546fd77bd344c,
+          mid_getA_d7f69d00c9b191e9,
+          mid_getB_d7f69d00c9b191e9,
           max_mid
         };
 

@@ -7,6 +7,12 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace utils {
+          namespace lexical {
+            class ParseToken;
+          }
+          class ContextBinding;
+        }
         namespace ndm {
           namespace odm {
             namespace ocm {
@@ -14,12 +20,6 @@ namespace org {
               class TrajectoryStateHistoryMetadata;
             }
           }
-        }
-        namespace utils {
-          namespace lexical {
-            class ParseToken;
-          }
-          class ContextBinding;
         }
       }
     }
@@ -44,9 +44,9 @@ namespace org {
               class TrajectoryStateHistoryMetadataKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_b6af25ec97c9e2be,
-                  mid_valueOf_b8480e569bae6ced,
-                  mid_values_0e526f44ce4016ba,
+                  mid_process_e4f3211c25f686c8,
+                  mid_valueOf_ca5aa833406c3b61,
+                  mid_values_9208e883581135e9,
                   max_mid
                 };
 

@@ -3,12 +3,6 @@
 
 #include "org/orekit/files/ccsds/section/Metadata.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -18,6 +12,12 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -32,18 +32,18 @@ namespace org {
             class AdmMetadata : public ::org::orekit::files::ccsds::section::Metadata {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_getCenter_23d31d5db0bee8e9,
-                mid_getHasCreatableBody_b108b35ef48e27bd,
-                mid_getLaunchNumber_570ce0828f81a2c1,
-                mid_getLaunchPiece_11b109bd155ca898,
-                mid_getLaunchYear_570ce0828f81a2c1,
-                mid_getObjectID_11b109bd155ca898,
-                mid_getObjectName_11b109bd155ca898,
-                mid_setCenter_32e120c3a0353f27,
-                mid_setObjectID_d0bc48d5b00dc40c,
-                mid_setObjectName_d0bc48d5b00dc40c,
-                mid_validate_17db3a65980d3441,
+                mid_init$_0640e6acf969ed28,
+                mid_getCenter_c642bce266d6d89a,
+                mid_getHasCreatableBody_89b302893bdbe1f1,
+                mid_getLaunchNumber_412668abc8d889e9,
+                mid_getLaunchPiece_3cffd47377eca18a,
+                mid_getLaunchYear_412668abc8d889e9,
+                mid_getObjectID_3cffd47377eca18a,
+                mid_getObjectName_3cffd47377eca18a,
+                mid_setCenter_e6f755c267d91c26,
+                mid_setObjectID_f5ffdf29129ef90a,
+                mid_setObjectName_f5ffdf29129ef90a,
+                mid_validate_10f281d777284cea,
                 max_mid
               };
 

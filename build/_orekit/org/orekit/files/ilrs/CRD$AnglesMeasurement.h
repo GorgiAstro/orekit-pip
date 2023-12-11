@@ -27,17 +27,17 @@ namespace org {
         class CRD$AnglesMeasurement : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_40fb827d152567d2,
-            mid_getAzimuth_dff5885c2c873297,
-            mid_getAzimuthRate_dff5885c2c873297,
-            mid_getDate_85703d13e302437e,
-            mid_getDirectionFlag_570ce0828f81a2c1,
-            mid_getElevation_dff5885c2c873297,
-            mid_getElevationRate_dff5885c2c873297,
-            mid_getOriginIndicator_570ce0828f81a2c1,
-            mid_isRefractionCorrected_b108b35ef48e27bd,
-            mid_toCrdString_11b109bd155ca898,
-            mid_toString_11b109bd155ca898,
+            mid_init$_60b7d33d13f2b96c,
+            mid_getAzimuth_557b8123390d8d0c,
+            mid_getAzimuthRate_557b8123390d8d0c,
+            mid_getDate_7a97f7e149e79afb,
+            mid_getDirectionFlag_412668abc8d889e9,
+            mid_getElevation_557b8123390d8d0c,
+            mid_getElevationRate_557b8123390d8d0c,
+            mid_getOriginIndicator_412668abc8d889e9,
+            mid_isRefractionCorrected_89b302893bdbe1f1,
+            mid_toCrdString_3cffd47377eca18a,
+            mid_toString_3cffd47377eca18a,
             max_mid
           };
 

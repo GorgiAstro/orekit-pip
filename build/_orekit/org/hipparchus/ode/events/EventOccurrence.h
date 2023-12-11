@@ -28,10 +28,10 @@ namespace org {
         class EventOccurrence : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_d715ab096cbe3d3a,
-            mid_getAction_4aa421fecbe7eed3,
-            mid_getNewState_a50ac4c184b2434f,
-            mid_getStopTime_dff5885c2c873297,
+            mid_init$_22eaf1594b4245bf,
+            mid_getAction_2ecf57a2edb373ef,
+            mid_getNewState_7786706b02d94c05,
+            mid_getStopTime_557b8123390d8d0c,
             max_mid
           };
 

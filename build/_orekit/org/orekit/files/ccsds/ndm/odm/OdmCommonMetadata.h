@@ -7,12 +7,12 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace utils {
+          class ContextBinding;
+        }
         namespace definitions {
           class BodyFacade;
           class FrameFacade;
-        }
-        namespace utils {
-          class ContextBinding;
         }
       }
     }
@@ -42,22 +42,22 @@ namespace org {
             class OdmCommonMetadata : public ::org::orekit::files::ccsds::ndm::odm::OdmMetadata {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_finalizeMetadata_279465702b09ae7f,
-                mid_getCenter_23d31d5db0bee8e9,
-                mid_getFrame_b86f9f61d97a7244,
-                mid_getFrameEpoch_85703d13e302437e,
-                mid_getLaunchNumber_570ce0828f81a2c1,
-                mid_getLaunchPiece_11b109bd155ca898,
-                mid_getLaunchYear_570ce0828f81a2c1,
-                mid_getObjectID_11b109bd155ca898,
-                mid_getReferenceFrame_5d5dd95b04037824,
-                mid_setCenter_32e120c3a0353f27,
-                mid_setFrameEpoch_600a2a61652bc473,
-                mid_setFrameEpochString_d0bc48d5b00dc40c,
-                mid_setObjectID_d0bc48d5b00dc40c,
-                mid_setReferenceFrame_849bc9e3b38b9bcb,
-                mid_validate_17db3a65980d3441,
+                mid_init$_0640e6acf969ed28,
+                mid_finalizeMetadata_f673e6e131e83586,
+                mid_getCenter_c642bce266d6d89a,
+                mid_getFrame_6c9bc0a928c56d4e,
+                mid_getFrameEpoch_7a97f7e149e79afb,
+                mid_getLaunchNumber_412668abc8d889e9,
+                mid_getLaunchPiece_3cffd47377eca18a,
+                mid_getLaunchYear_412668abc8d889e9,
+                mid_getObjectID_3cffd47377eca18a,
+                mid_getReferenceFrame_98f5fcaff3e3f9d2,
+                mid_setCenter_e6f755c267d91c26,
+                mid_setFrameEpoch_20affcbd28542333,
+                mid_setFrameEpochString_f5ffdf29129ef90a,
+                mid_setObjectID_f5ffdf29129ef90a,
+                mid_setReferenceFrame_f55eee1236275bb1,
+                mid_validate_10f281d777284cea,
                 max_mid
               };
 

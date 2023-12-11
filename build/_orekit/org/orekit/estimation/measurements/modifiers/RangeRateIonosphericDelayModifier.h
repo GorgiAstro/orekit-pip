@@ -7,9 +7,9 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
+        class RangeRate;
         class EstimatedMeasurement;
         class EstimatedMeasurementBase;
-        class RangeRate;
         class EstimationModifier;
       }
     }
@@ -38,11 +38,11 @@ namespace org {
           class RangeRateIonosphericDelayModifier : public ::org::orekit::estimation::measurements::modifiers::BaseRangeRateIonosphericDelayModifier {
            public:
             enum {
-              mid_init$_c6707a208a39c405,
-              mid_modify_e4935e9a55e01fd8,
-              mid_modifyWithoutDerivatives_d1815d998cba71e9,
-              mid_rangeRateErrorIonosphericModel_03cd5a2e88a0f0f6,
-              mid_rangeRateErrorIonosphericModel_08d2a35aee39232b,
+              mid_init$_155815578e18b03e,
+              mid_modify_0054a497255e8220,
+              mid_modifyWithoutDerivatives_e471490df8741b73,
+              mid_rangeRateErrorIonosphericModel_81f653af97ea34a8,
+              mid_rangeRateErrorIonosphericModel_17bae2e3aa9bc870,
               max_mid
             };
 

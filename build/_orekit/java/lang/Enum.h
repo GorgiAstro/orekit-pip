@@ -22,16 +22,16 @@ namespace java {
     class Enum : public ::java::lang::Object {
      public:
       enum {
-        mid_compareTo_bbf319b0f1e9c808,
-        mid_equals_65c7d273e80d497a,
-        mid_getDeclaringClass_7c16c5008b34b3db,
-        mid_hashCode_570ce0828f81a2c1,
-        mid_name_11b109bd155ca898,
-        mid_ordinal_570ce0828f81a2c1,
-        mid_toString_11b109bd155ca898,
-        mid_valueOf_e2f80ec8f066cdfb,
-        mid_finalize_0fa09c18fee449d5,
-        mid_clone_4d26fd885228c716,
+        mid_compareTo_53d8254923182755,
+        mid_equals_221e8e85cb385209,
+        mid_getDeclaringClass_d4b191ff8147475d,
+        mid_hashCode_412668abc8d889e9,
+        mid_name_3cffd47377eca18a,
+        mid_ordinal_412668abc8d889e9,
+        mid_toString_3cffd47377eca18a,
+        mid_valueOf_4a7cfd0912abeab0,
+        mid_finalize_0640e6acf969ed28,
+        mid_clone_e661fe3ba2fafb22,
         max_mid
       };
 

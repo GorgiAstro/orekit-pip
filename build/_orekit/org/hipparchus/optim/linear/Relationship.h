@@ -28,10 +28,10 @@ namespace org {
         class Relationship : public ::java::lang::Enum {
          public:
           enum {
-            mid_oppositeRelationship_90960c2c386c2df2,
-            mid_toString_11b109bd155ca898,
-            mid_valueOf_e841a6f998c6076a,
-            mid_values_4058d8b914f76def,
+            mid_oppositeRelationship_c55cd9ad2e6d5653,
+            mid_toString_3cffd47377eca18a,
+            mid_valueOf_51a36101421c2ddf,
+            mid_values_6c1ba400cea315d2,
             max_mid
           };
 

@@ -9,9 +9,9 @@ namespace org {
       class Complex;
     }
     namespace linear {
-      class RealMatrix;
-      class FieldMatrix;
       class FieldVector;
+      class FieldMatrix;
+      class RealMatrix;
     }
   }
 }
@@ -29,19 +29,19 @@ namespace org {
       class ComplexEigenDecomposition : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_c67473bd6cfaa69b,
-          mid_init$_acd058c9ad5e3c71,
-          mid_getD_c992983685c753c5,
-          mid_getDeterminant_dff5885c2c873297,
-          mid_getEigenvalues_8a0770025abeda5b,
-          mid_getEigenvector_819edc89e6437565,
-          mid_getV_c992983685c753c5,
-          mid_getVT_c992983685c753c5,
-          mid_hasComplexEigenvalues_b108b35ef48e27bd,
-          mid_findEigenVectors_3c6edf548344b9f0,
-          mid_matricesToEigenArrays_0fa09c18fee449d5,
-          mid_findEigenValues_c67473bd6cfaa69b,
-          mid_checkDefinition_c67473bd6cfaa69b,
+          mid_init$_f3731847577f13e6,
+          mid_init$_a1e398644838b5f0,
+          mid_getD_1d6b27621d7bea96,
+          mid_getDeterminant_557b8123390d8d0c,
+          mid_getEigenvalues_cdf70bdb2a575f18,
+          mid_getEigenvector_6f1c886add96d5a0,
+          mid_getV_1d6b27621d7bea96,
+          mid_getVT_1d6b27621d7bea96,
+          mid_hasComplexEigenvalues_89b302893bdbe1f1,
+          mid_findEigenValues_f3731847577f13e6,
+          mid_findEigenVectors_33e6ddbf6bb140a5,
+          mid_matricesToEigenArrays_0640e6acf969ed28,
+          mid_checkDefinition_f3731847577f13e6,
           max_mid
         };
 

@@ -26,10 +26,10 @@ namespace org {
           class Theta : public ::java::lang::Object {
            public:
             enum {
-              mid_theta1_a6784e0b89dedf02,
-              mid_theta2_a6784e0b89dedf02,
-              mid_theta3_a6784e0b89dedf02,
-              mid_theta4_a6784e0b89dedf02,
+              mid_theta1_921a2f30ecc499e5,
+              mid_theta2_921a2f30ecc499e5,
+              mid_theta3_921a2f30ecc499e5,
+              mid_theta4_921a2f30ecc499e5,
               max_mid
             };
 

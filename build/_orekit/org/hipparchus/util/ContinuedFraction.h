@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalStateException;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,12 +24,12 @@ namespace org {
       class ContinuedFraction : public ::java::lang::Object {
        public:
         enum {
-          mid_evaluate_dcbc7ce2902fa136,
-          mid_evaluate_86ffecc08a63eff0,
-          mid_evaluate_948617e69b66e15d,
-          mid_evaluate_aa604e695a59526c,
-          mid_getA_60d7624725a52590,
-          mid_getB_60d7624725a52590,
+          mid_evaluate_7e960cd6eee376d8,
+          mid_evaluate_2268d18be49a6087,
+          mid_evaluate_156ae9d72f1c8533,
+          mid_evaluate_63ce51364ee6da7c,
+          mid_getA_77f9e227e4cf04b4,
+          mid_getB_77f9e227e4cf04b4,
           max_mid
         };
 

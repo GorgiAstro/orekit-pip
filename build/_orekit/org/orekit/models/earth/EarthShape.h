@@ -27,7 +27,7 @@ namespace org {
         class EarthShape : public ::org::orekit::bodies::BodyShape {
          public:
           enum {
-            mid_getEllipsoid_eead5b864957d48b,
+            mid_getEllipsoid_576f0b44e8384336,
             max_mid
           };
 

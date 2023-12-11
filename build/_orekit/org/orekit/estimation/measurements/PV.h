@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class PV;
         class ObservableSatellite;
+        class PV;
       }
     }
     namespace time {
@@ -41,17 +41,17 @@ namespace org {
         class PV : public ::org::orekit::estimation::measurements::AbstractMeasurement {
          public:
           enum {
-            mid_init$_3fbd368e7c18cce5,
-            mid_init$_6dab31058b9c9d74,
-            mid_init$_d7f5ef4e1182a36e,
-            mid_init$_b89e2f55c4516033,
-            mid_init$_6e5235441958b384,
-            mid_getCorrelationCoefficientsMatrix_0358d8ea02f2cdb1,
-            mid_getCovarianceMatrix_0358d8ea02f2cdb1,
-            mid_getPosition_d52645e0d4c07563,
-            mid_getVelocity_d52645e0d4c07563,
-            mid_theoreticalEvaluationWithoutDerivatives_e32883476b3d9b22,
-            mid_theoreticalEvaluation_27ef5cc84ad0852b,
+            mid_init$_15beb50931c1cf88,
+            mid_init$_9f586bcdceee113e,
+            mid_init$_8a2365ac496613b2,
+            mid_init$_3003177fad71f016,
+            mid_init$_88bd0c310d4fcdf3,
+            mid_getCorrelationCoefficientsMatrix_8cf5267aa13a77f3,
+            mid_getCovarianceMatrix_8cf5267aa13a77f3,
+            mid_getPosition_f88961cca75a2c0a,
+            mid_getVelocity_f88961cca75a2c0a,
+            mid_theoreticalEvaluationWithoutDerivatives_71d69ca0f7c280a7,
+            mid_theoreticalEvaluation_eae039ee8c8a4a4d,
             max_mid
           };
 

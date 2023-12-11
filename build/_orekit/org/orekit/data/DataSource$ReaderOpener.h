@@ -21,7 +21,7 @@ namespace org {
       class DataSource$ReaderOpener : public ::java::lang::Object {
        public:
         enum {
-          mid_openOnce_26c6a3f16521a493,
+          mid_openOnce_db817b1afec8e8b3,
           max_mid
         };
 

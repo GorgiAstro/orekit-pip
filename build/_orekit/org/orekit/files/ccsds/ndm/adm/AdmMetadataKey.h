@@ -41,9 +41,9 @@ namespace org {
             class AdmMetadataKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_3f621e0676a56eac,
-                mid_valueOf_5690d2025eaadfc2,
-                mid_values_64501ad286e575d6,
+                mid_process_cfa125da71219f08,
+                mid_valueOf_6a09891492e31266,
+                mid_values_b7d60a2274250787,
                 max_mid
               };
 

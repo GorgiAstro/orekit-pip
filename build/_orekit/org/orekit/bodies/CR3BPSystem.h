@@ -5,18 +5,18 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class LagrangianPoints;
-      class AbsolutePVCoordinates;
+    namespace bodies {
+      class CelestialBody;
     }
     namespace frames {
       class Frame;
     }
+    namespace utils {
+      class AbsolutePVCoordinates;
+      class LagrangianPoints;
+    }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace bodies {
-      class CelestialBody;
     }
   }
   namespace hipparchus {
@@ -44,19 +44,19 @@ namespace org {
       class CR3BPSystem : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_d11347034ed276da,
-          mid_init$_6d86c9a7f988a510,
-          mid_getDdim_dff5885c2c873297,
-          mid_getGamma_a6014739f6940e4d,
-          mid_getLPosition_acea59134d6f8e06,
-          mid_getMassRatio_dff5885c2c873297,
-          mid_getName_11b109bd155ca898,
-          mid_getPrimary_624686a38a6b107c,
-          mid_getRealAPV_3e18b13cf889f713,
-          mid_getRotatingFrame_b86f9f61d97a7244,
-          mid_getSecondary_624686a38a6b107c,
-          mid_getTdim_dff5885c2c873297,
-          mid_getVdim_dff5885c2c873297,
+          mid_init$_ae9fd1f5c4d53442,
+          mid_init$_afa7dd171d632b48,
+          mid_getDdim_557b8123390d8d0c,
+          mid_getGamma_31acf4e2286f460f,
+          mid_getLPosition_deb1609876453761,
+          mid_getMassRatio_557b8123390d8d0c,
+          mid_getName_3cffd47377eca18a,
+          mid_getPrimary_40e74583267ad550,
+          mid_getRealAPV_6d3d97b7bab0cbad,
+          mid_getRotatingFrame_6c9bc0a928c56d4e,
+          mid_getSecondary_40e74583267ad550,
+          mid_getTdim_557b8123390d8d0c,
+          mid_getVdim_557b8123390d8d0c,
           max_mid
         };
 

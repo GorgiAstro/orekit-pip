@@ -14,12 +14,6 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace utils {
-      class TimeStampedAngularCoordinates;
-      namespace units {
-        class Unit;
-      }
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -33,6 +27,12 @@ namespace org {
     }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace utils {
+      namespace units {
+        class Unit;
+      }
+      class TimeStampedAngularCoordinates;
     }
   }
   namespace hipparchus {
@@ -59,11 +59,11 @@ namespace org {
               class RateElementsType : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_getUnits_2afa36052df4765d,
-                  mid_toAngular_d7352954ca2ee5a0,
-                  mid_toString_11b109bd155ca898,
-                  mid_valueOf_c1643f89878104a0,
-                  mid_values_35785bce553ea733,
+                  mid_getUnits_0d9551367f7ecdef,
+                  mid_toAngular_24924b5a8161a5b1,
+                  mid_toString_3cffd47377eca18a,
+                  mid_valueOf_92dcbaba224660a5,
+                  mid_values_287077f2dfc0de9a,
                   max_mid
                 };
 

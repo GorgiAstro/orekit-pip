@@ -15,22 +15,15 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataContext;
-    }
-    namespace utils {
-      class IERSConventions;
-      class TimeStampedPVCoordinates;
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
           namespace odm {
             namespace ocm {
               class OcmSatelliteEphemeris;
-              class TrajectoryStateHistory;
-              class OcmData;
               class OcmMetadata;
+              class OcmData;
+              class TrajectoryStateHistory;
             }
             class OdmHeader;
           }
@@ -42,6 +35,13 @@ namespace org {
       namespace general {
         class EphemerisFile;
       }
+    }
+    namespace utils {
+      class TimeStampedPVCoordinates;
+      class IERSConventions;
+    }
+    namespace data {
+      class DataContext;
     }
   }
 }
@@ -58,10 +58,10 @@ namespace org {
               class Ocm : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
                public:
                 enum {
-                  mid_init$_2b261aaf5054b0fb,
-                  mid_getData_881b04544853ed71,
-                  mid_getMetadata_ad80b8a9eaa21be5,
-                  mid_getSatellites_6f5a75ccd8c04465,
+                  mid_init$_66443a7cc3b43b5d,
+                  mid_getData_85563dc69f3f76d9,
+                  mid_getMetadata_a54c90733aadb491,
+                  mid_getSatellites_1e62c2f73fbdd1c4,
                   max_mid
                 };
 

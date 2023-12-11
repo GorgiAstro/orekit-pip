@@ -36,8 +36,8 @@ namespace org {
           class HeaderProcessingState : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_8348465aaad0e8dc,
-              mid_processToken_85d9863c57bc3b0c,
+              mid_init$_751b447e12ee0563,
+              mid_processToken_7f6d4ab73f1deb26,
               max_mid
             };
 

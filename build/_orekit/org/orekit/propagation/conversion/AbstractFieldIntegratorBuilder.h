@@ -4,23 +4,23 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-    namespace ode {
-      class AbstractFieldIntegrator;
-    }
-    class Field;
-  }
   namespace orekit {
+    namespace orbits {
+      class Orbit;
+      class OrbitType;
+      class FieldOrbit;
+    }
     namespace propagation {
       namespace conversion {
         class FieldODEIntegratorBuilder;
       }
     }
-    namespace orbits {
-      class Orbit;
-      class FieldOrbit;
-      class OrbitType;
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
+    class Field;
+    namespace ode {
+      class AbstractFieldIntegrator;
     }
   }
 }
@@ -39,9 +39,9 @@ namespace org {
         class AbstractFieldIntegratorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_buildIntegrator_c6b1aa22e8585e91,
-            mid_buildIntegrator_048f7039a7622a2b,
+            mid_init$_0640e6acf969ed28,
+            mid_buildIntegrator_da5761494991d7f4,
+            mid_buildIntegrator_3a1ee7ebe4f0e344,
             max_mid
           };
 

@@ -3,11 +3,6 @@
 
 #include "java/lang/RuntimeException.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace rugged {
@@ -15,6 +10,11 @@ namespace org {
         class RuggedException;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,8 +27,8 @@ namespace org {
         class RuggedExceptionWrapper : public ::java::lang::RuntimeException {
          public:
           enum {
-            mid_init$_c1afc86299db90c8,
-            mid_getException_72bb208273c044fd,
+            mid_init$_e8f16eb16464d495,
+            mid_getException_f134d5c5de78cfc2,
             max_mid
           };
 

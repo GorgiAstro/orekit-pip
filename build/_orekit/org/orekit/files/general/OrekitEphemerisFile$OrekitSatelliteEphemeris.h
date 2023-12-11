@@ -3,6 +3,29 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace general {
+        class OrekitEphemerisFile$OrekitEphemerisSegment;
+        class EphemerisFile$SatelliteEphemeris;
+      }
+    }
+    namespace bodies {
+      class CelestialBody;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeScale;
+    }
+    namespace propagation {
+      class SpacecraftState;
+    }
+    namespace utils {
+      class TimeStampedPVCoordinates;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,29 +33,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace bodies {
-      class CelestialBody;
-    }
-    namespace files {
-      namespace general {
-        class EphemerisFile$SatelliteEphemeris;
-        class OrekitEphemerisFile$OrekitEphemerisSegment;
-      }
-    }
-    namespace time {
-      class TimeScale;
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class TimeStampedPVCoordinates;
-    }
-    namespace propagation {
-      class SpacecraftState;
-    }
   }
 }
 template<class T> class JArray;
@@ -45,16 +45,16 @@ namespace org {
         class OrekitEphemerisFile$OrekitSatelliteEphemeris : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_d0bc48d5b00dc40c,
-            mid_addNewSegment_ffb7d7dc5ac6f8f1,
-            mid_addNewSegment_a13ddf4dbc57f848,
-            mid_addNewSegment_3b01723d1f6d701d,
-            mid_addNewSegment_c352de3deb2c5ebb,
-            mid_getId_11b109bd155ca898,
-            mid_getMu_dff5885c2c873297,
-            mid_getSegments_2afa36052df4765d,
-            mid_getStart_85703d13e302437e,
-            mid_getStop_85703d13e302437e,
+            mid_init$_f5ffdf29129ef90a,
+            mid_addNewSegment_e6890ac796bcffec,
+            mid_addNewSegment_e8724d2b2bf80340,
+            mid_addNewSegment_da1b8e3a515ccb91,
+            mid_addNewSegment_381a50f5d292489f,
+            mid_getId_3cffd47377eca18a,
+            mid_getMu_557b8123390d8d0c,
+            mid_getSegments_0d9551367f7ecdef,
+            mid_getStart_7a97f7e149e79afb,
+            mid_getStop_7a97f7e149e79afb,
             max_mid
           };
 

@@ -17,21 +17,21 @@ namespace java {
 namespace org {
   namespace hipparchus {
     namespace geometry {
+      namespace spherical {
+        namespace oned {
+          class ArcsSet;
+          class Sphere1D;
+          class ArcsSet$InconsistentStateAt2PiWrapping;
+          class ArcsSet$Split;
+          class Arc;
+        }
+      }
       namespace partitioning {
         class SubHyperplane;
         class BoundaryProjection;
         class BSPTree;
       }
       class Point;
-      namespace spherical {
-        namespace oned {
-          class ArcsSet;
-          class ArcsSet$InconsistentStateAt2PiWrapping;
-          class ArcsSet$Split;
-          class Arc;
-          class Sphere1D;
-        }
-      }
     }
     namespace exception {
       class MathIllegalArgumentException;
@@ -49,16 +49,16 @@ namespace org {
           class ArcsSet : public ::org::hipparchus::geometry::partitioning::AbstractRegion {
            public:
             enum {
-              mid_init$_17db3a65980d3441,
-              mid_init$_748cd2c51a955d77,
-              mid_init$_1f4d55383238fbb5,
-              mid_init$_2c56b6dd4d4b1dec,
-              mid_asList_2afa36052df4765d,
-              mid_buildNew_857f0d64f3326df3,
-              mid_iterator_4d23511a9f0db098,
-              mid_projectToBoundary_e9baadaaf6c2e7eb,
-              mid_split_04f55787d5300b9c,
-              mid_computeGeometricalProperties_0fa09c18fee449d5,
+              mid_init$_10f281d777284cea,
+              mid_init$_546559a08b08816f,
+              mid_init$_bdacd7c5506b494c,
+              mid_init$_87096e3fd8086100,
+              mid_asList_0d9551367f7ecdef,
+              mid_buildNew_834ed2332948bfe5,
+              mid_iterator_834a3801c426326d,
+              mid_projectToBoundary_76fb0949df043b81,
+              mid_split_93b2dbc81083cb8e,
+              mid_computeGeometricalProperties_0640e6acf969ed28,
               max_mid
             };
 

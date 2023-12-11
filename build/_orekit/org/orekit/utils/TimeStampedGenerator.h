@@ -27,7 +27,7 @@ namespace org {
       class TimeStampedGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_generate_8060cef9318d72e3,
+          mid_generate_c5683b8e06424542,
           max_mid
         };
 

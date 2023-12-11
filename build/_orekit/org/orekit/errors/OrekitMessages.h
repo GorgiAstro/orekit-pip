@@ -3,6 +3,15 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace util {
+    class Locale;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
     namespace errors {
@@ -15,15 +24,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace util {
-    class Locale;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -33,10 +33,10 @@ namespace org {
       class OrekitMessages : public ::java::lang::Enum {
        public:
         enum {
-          mid_getLocalizedString_3cd873bfb132c4fd,
-          mid_getSourceString_11b109bd155ca898,
-          mid_valueOf_4bd8e8f651585e7e,
-          mid_values_0bd089a5efd8b3d2,
+          mid_getLocalizedString_4b51060c6b7ea981,
+          mid_getSourceString_3cffd47377eca18a,
+          mid_valueOf_a03c9bb7372453b6,
+          mid_values_558c1f138f9d0ab9,
           max_mid
         };
 

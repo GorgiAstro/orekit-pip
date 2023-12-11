@@ -5,10 +5,17 @@
 
 namespace org {
   namespace orekit {
+    namespace propagation {
+      namespace conversion {
+        class PropagatorBuilder;
+      }
+      class Propagator;
+      class SpacecraftState;
+    }
     namespace estimation {
       namespace measurements {
-        class EstimatedMeasurement;
         class ObservedMeasurement;
+        class EstimatedMeasurement;
       }
       namespace sequential {
         class MeasurementDecorator;
@@ -16,33 +23,26 @@ namespace org {
         class CovarianceMatrixProvider;
       }
     }
-    namespace propagation {
-      namespace conversion {
-        class PropagatorBuilder;
-      }
-      class SpacecraftState;
-      class Propagator;
+    namespace utils {
+      class ParameterDriversList;
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace utils {
-      class ParameterDriversList;
     }
   }
   namespace hipparchus {
     namespace filtering {
       namespace kalman {
         namespace extended {
-          class NonLinearEvolution;
           class NonLinearProcess;
+          class NonLinearEvolution;
         }
         class ProcessEstimate;
       }
     }
     namespace linear {
-      class RealVector;
       class RealMatrix;
+      class RealVector;
     }
   }
 }
@@ -64,31 +64,31 @@ namespace org {
         class KalmanModel : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_61e57eae98c1c0d2,
-            mid_finalizeEstimation_da0919b7ae9816a3,
-            mid_getBuilders_2afa36052df4765d,
-            mid_getCorrectedMeasurement_5a90ceef60f482f1,
-            mid_getCorrectedSpacecraftStates_fa9cea0faefb9a31,
-            mid_getCurrentDate_85703d13e302437e,
-            mid_getCurrentMeasurementNumber_570ce0828f81a2c1,
-            mid_getEstimate_c93ddc26f3b3eef4,
-            mid_getEstimatedMeasurementsParameters_bd51074bfd9d41da,
-            mid_getEstimatedOrbitalParameters_bd51074bfd9d41da,
-            mid_getEstimatedPropagationParameters_bd51074bfd9d41da,
-            mid_getEstimatedPropagators_4570675aa9d951bc,
-            mid_getEvolution_8baf140085ffa2b7,
-            mid_getInnovation_c1adcb03cc15012a,
-            mid_getPhysicalEstimatedCovarianceMatrix_688b496048ff947b,
-            mid_getPhysicalEstimatedState_aab4fbf77867daa8,
-            mid_getPhysicalInnovationCovarianceMatrix_688b496048ff947b,
-            mid_getPhysicalKalmanGain_688b496048ff947b,
-            mid_getPhysicalMeasurementJacobian_688b496048ff947b,
-            mid_getPhysicalStateTransitionMatrix_688b496048ff947b,
-            mid_getPredictedMeasurement_5a90ceef60f482f1,
-            mid_getPredictedSpacecraftStates_fa9cea0faefb9a31,
-            mid_getReferenceTrajectories_4570675aa9d951bc,
-            mid_setReferenceTrajectories_7d74b10f70058dc6,
-            mid_updateReferenceTrajectories_7d74b10f70058dc6,
+            mid_init$_8e60210fff190f25,
+            mid_finalizeEstimation_6f886d47d0124943,
+            mid_getBuilders_0d9551367f7ecdef,
+            mid_getCorrectedMeasurement_95a396fe45ccbbc0,
+            mid_getCorrectedSpacecraftStates_5dccf571345671af,
+            mid_getCurrentDate_7a97f7e149e79afb,
+            mid_getCurrentMeasurementNumber_412668abc8d889e9,
+            mid_getEstimate_55b445719d7de2a7,
+            mid_getEstimatedMeasurementsParameters_467d574a7997e53a,
+            mid_getEstimatedOrbitalParameters_467d574a7997e53a,
+            mid_getEstimatedPropagationParameters_467d574a7997e53a,
+            mid_getEstimatedPropagators_2d0616b730e7ec0f,
+            mid_getEvolution_ebde746c06b90598,
+            mid_getInnovation_e958eadec739b50c,
+            mid_getPhysicalEstimatedCovarianceMatrix_70a207fcbc031df2,
+            mid_getPhysicalEstimatedState_75d50d73180655b4,
+            mid_getPhysicalInnovationCovarianceMatrix_70a207fcbc031df2,
+            mid_getPhysicalKalmanGain_70a207fcbc031df2,
+            mid_getPhysicalMeasurementJacobian_70a207fcbc031df2,
+            mid_getPhysicalStateTransitionMatrix_70a207fcbc031df2,
+            mid_getPredictedMeasurement_95a396fe45ccbbc0,
+            mid_getPredictedSpacecraftStates_5dccf571345671af,
+            mid_getReferenceTrajectories_2d0616b730e7ec0f,
+            mid_setReferenceTrajectories_1ac24457161f6296,
+            mid_updateReferenceTrajectories_1ac24457161f6296,
             max_mid
           };
 

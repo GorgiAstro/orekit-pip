@@ -8,8 +8,8 @@ namespace org {
     namespace gnss {
       namespace metric {
         namespace parser {
-          class RtcmMessageType;
           class MessageType;
+          class RtcmMessageType;
         }
       }
     }
@@ -32,9 +32,9 @@ namespace org {
           class RtcmMessageType : public ::java::lang::Enum {
            public:
             enum {
-              mid_getMessageType_88060bd9903e0c36,
-              mid_valueOf_88060bd9903e0c36,
-              mid_values_a33f89df78560247,
+              mid_getMessageType_612aa70df0f31133,
+              mid_valueOf_612aa70df0f31133,
+              mid_values_12551cba4bfbd81d,
               max_mid
             };
 

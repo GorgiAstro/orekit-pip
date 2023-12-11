@@ -17,11 +17,11 @@ namespace org {
       class Well19937c : public ::org::hipparchus::random::AbstractWell {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_init$_d147d7ce001e2d45,
-          mid_init$_99803b0791f320ff,
-          mid_init$_3a8e7649f31fdb20,
-          mid_nextInt_570ce0828f81a2c1,
+          mid_init$_0640e6acf969ed28,
+          mid_init$_ec63cb8a58ef5a54,
+          mid_init$_a3da1a935cb37f7b,
+          mid_init$_3cd6a6b354c6aa22,
+          mid_nextInt_412668abc8d889e9,
           max_mid
         };
 

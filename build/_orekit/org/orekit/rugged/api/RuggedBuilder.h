@@ -6,16 +6,16 @@
 namespace org {
   namespace orekit {
     namespace rugged {
-      namespace api {
-        class Rugged;
-        class InertialFrameId;
-        class EllipsoidId;
-        class AlgorithmId;
-        class RuggedBuilder;
-        class BodyRotatingFrameId;
-      }
       namespace raster {
         class TileUpdater;
+      }
+      namespace api {
+        class AlgorithmId;
+        class RuggedBuilder;
+        class InertialFrameId;
+        class EllipsoidId;
+        class Rugged;
+        class BodyRotatingFrameId;
       }
       namespace utils {
         class ExtendedEllipsoid;
@@ -31,19 +31,19 @@ namespace org {
       class AbsoluteDate;
     }
     namespace utils {
-      class AngularDerivativesFilter;
       class TimeStampedPVCoordinates;
       class CartesianDerivativesFilter;
       class TimeStampedAngularCoordinates;
+      class AngularDerivativesFilter;
     }
     namespace propagation {
       class Propagator;
     }
-    namespace bodies {
-      class OneAxisEllipsoid;
-    }
     namespace frames {
       class Frame;
+    }
+    namespace bodies {
+      class OneAxisEllipsoid;
     }
   }
 }
@@ -70,46 +70,46 @@ namespace org {
         class RuggedBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_addLineSensor_d46e5d4c4ec262ff,
-            mid_build_a3579a23a3f3f05f,
-            mid_clearLineSensors_c1850c6a9b11703c,
-            mid_getAFilter_3d53ef1ca7ad5f8c,
-            mid_getAInterpolationNumber_570ce0828f81a2c1,
-            mid_getAberrationOfLightCorrection_b108b35ef48e27bd,
-            mid_getAlgorithm_da9f33328b8f3962,
-            mid_getConstantElevation_dff5885c2c873297,
-            mid_getEllipsoid_0cd7cb35607f9c90,
-            mid_getInertialFrame_b86f9f61d97a7244,
-            mid_getLightTimeCorrection_b108b35ef48e27bd,
-            mid_getLineSensors_2afa36052df4765d,
-            mid_getMaxCachedTiles_570ce0828f81a2c1,
-            mid_getMaxDate_85703d13e302437e,
-            mid_getMinDate_85703d13e302437e,
-            mid_getName_11b109bd155ca898,
-            mid_getOvershootTolerance_dff5885c2c873297,
-            mid_getPVFilter_16e9a7b5414faf2d,
-            mid_getPVInterpolationNumber_570ce0828f81a2c1,
-            mid_getPositionsVelocities_2afa36052df4765d,
-            mid_getQuaternions_2afa36052df4765d,
-            mid_getRefractionCorrection_8a9b3bb0455f2a2d,
-            mid_getTStep_dff5885c2c873297,
-            mid_getTileUpdater_6b8556435f5a4994,
-            mid_setAberrationOfLightCorrection_e8c0e4822609da67,
-            mid_setAlgorithm_9c10cc76da81de16,
-            mid_setConstantElevation_ba7a898f5e37d3f3,
-            mid_setDigitalElevationModel_10e209a6feba6833,
-            mid_setEllipsoid_7a6317d70e281d65,
-            mid_setEllipsoid_516a7e7aea2a14bd,
-            mid_setLightTimeCorrection_e8c0e4822609da67,
-            mid_setName_d0bc48d5b00dc40c,
-            mid_setRefractionCorrection_79942275284be399,
-            mid_setTimeSpan_26c0baa1e059a0c8,
-            mid_setTrajectory_f72ae43d21f8c96d,
-            mid_setTrajectory_62378cbd85368de2,
-            mid_setTrajectory_6b1ad96c5d4f0da8,
-            mid_setTrajectoryAndTimeSpan_49755b1a1d43b661,
-            mid_storeInterpolator_fd7cb6689cfa6eeb,
+            mid_init$_0640e6acf969ed28,
+            mid_addLineSensor_fb40c7e5a4534c6a,
+            mid_build_f145c77b35875136,
+            mid_clearLineSensors_a0a726f990ec1fc6,
+            mid_getAFilter_c2e9b2b1c0db39b3,
+            mid_getAInterpolationNumber_412668abc8d889e9,
+            mid_getAberrationOfLightCorrection_89b302893bdbe1f1,
+            mid_getAlgorithm_58f1b48b3d6060f9,
+            mid_getConstantElevation_557b8123390d8d0c,
+            mid_getEllipsoid_3aefdf5430f1346a,
+            mid_getInertialFrame_6c9bc0a928c56d4e,
+            mid_getLightTimeCorrection_89b302893bdbe1f1,
+            mid_getLineSensors_0d9551367f7ecdef,
+            mid_getMaxCachedTiles_412668abc8d889e9,
+            mid_getMaxDate_7a97f7e149e79afb,
+            mid_getMinDate_7a97f7e149e79afb,
+            mid_getName_3cffd47377eca18a,
+            mid_getOvershootTolerance_557b8123390d8d0c,
+            mid_getPVFilter_6c4898d6ec0c3837,
+            mid_getPVInterpolationNumber_412668abc8d889e9,
+            mid_getPositionsVelocities_0d9551367f7ecdef,
+            mid_getQuaternions_0d9551367f7ecdef,
+            mid_getRefractionCorrection_0f038fb48fafa13d,
+            mid_getTStep_557b8123390d8d0c,
+            mid_getTileUpdater_b42c9a6955c9850d,
+            mid_setAberrationOfLightCorrection_819868aea18e30c6,
+            mid_setAlgorithm_3efc53d7de6d6e4c,
+            mid_setConstantElevation_492b334f8354f325,
+            mid_setDigitalElevationModel_67fe5e2cbb9f9806,
+            mid_setEllipsoid_61119b52c99a4e60,
+            mid_setEllipsoid_93bbbb1506203afc,
+            mid_setLightTimeCorrection_819868aea18e30c6,
+            mid_setName_f5ffdf29129ef90a,
+            mid_setRefractionCorrection_d75b73d157e160dd,
+            mid_setTimeSpan_27e3db4c5346f3d8,
+            mid_setTrajectory_cd20452370ae1c99,
+            mid_setTrajectory_ea04c9e968c214f5,
+            mid_setTrajectory_a55114fcc01d72f4,
+            mid_setTrajectoryAndTimeSpan_d9fe484d57b2641a,
+            mid_storeInterpolator_a093374b16e6c27d,
             max_mid
           };
 

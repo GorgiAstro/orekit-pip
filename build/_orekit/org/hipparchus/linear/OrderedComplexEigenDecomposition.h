@@ -17,8 +17,8 @@ namespace org {
       class Complex;
     }
     namespace linear {
-      class RealMatrix;
       class FieldMatrix;
+      class RealMatrix;
     }
   }
 }
@@ -31,10 +31,10 @@ namespace org {
       class OrderedComplexEigenDecomposition : public ::org::hipparchus::linear::ComplexEigenDecomposition {
        public:
         enum {
-          mid_init$_c67473bd6cfaa69b,
-          mid_init$_acd058c9ad5e3c71,
-          mid_init$_05aabef5e3d10010,
-          mid_getVT_c992983685c753c5,
+          mid_init$_f3731847577f13e6,
+          mid_init$_a1e398644838b5f0,
+          mid_init$_2fdb4175dd8f6fbb,
+          mid_getVT_1d6b27621d7bea96,
           max_mid
         };
 

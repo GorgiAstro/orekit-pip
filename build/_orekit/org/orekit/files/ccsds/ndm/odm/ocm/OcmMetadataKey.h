@@ -16,8 +16,8 @@ namespace org {
         namespace ndm {
           namespace odm {
             namespace ocm {
-              class OcmMetadataKey;
               class OcmMetadata;
+              class OcmMetadataKey;
             }
           }
         }
@@ -44,9 +44,9 @@ namespace org {
               class OcmMetadataKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_6491a9a59507ad54,
-                  mid_valueOf_479d53521c73ebc9,
-                  mid_values_663506d196b1f7d9,
+                  mid_process_5fb049a3cc8df848,
+                  mid_valueOf_c2c4632bb75e91be,
+                  mid_values_07dd92008c106080,
                   max_mid
                 };
 

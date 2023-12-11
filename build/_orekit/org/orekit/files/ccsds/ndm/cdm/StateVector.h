@@ -31,16 +31,16 @@ namespace org {
             class StateVector : public ::org::orekit::files::ccsds::section::CommentsContainer {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_getPositionVector_d52645e0d4c07563,
-                mid_getVelocityVector_d52645e0d4c07563,
-                mid_setX_17db3a65980d3441,
-                mid_setXdot_17db3a65980d3441,
-                mid_setY_17db3a65980d3441,
-                mid_setYdot_17db3a65980d3441,
-                mid_setZ_17db3a65980d3441,
-                mid_setZdot_17db3a65980d3441,
-                mid_validate_17db3a65980d3441,
+                mid_init$_0640e6acf969ed28,
+                mid_getPositionVector_f88961cca75a2c0a,
+                mid_getVelocityVector_f88961cca75a2c0a,
+                mid_setX_10f281d777284cea,
+                mid_setXdot_10f281d777284cea,
+                mid_setY_10f281d777284cea,
+                mid_setYdot_10f281d777284cea,
+                mid_setZ_10f281d777284cea,
+                mid_setZdot_10f281d777284cea,
+                mid_validate_10f281d777284cea,
                 max_mid
               };
 

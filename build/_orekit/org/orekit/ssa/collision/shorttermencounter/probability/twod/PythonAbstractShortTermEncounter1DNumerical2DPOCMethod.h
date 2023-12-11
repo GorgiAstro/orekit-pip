@@ -4,17 +4,12 @@
 #include "org/orekit/ssa/collision/shorttermencounter/probability/twod/AbstractShortTermEncounter1DNumerical2DPOCMethod.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-    namespace analysis {
-      namespace integration {
-        class FieldUnivariateIntegrator;
-        class UnivariateIntegrator;
-      }
-    }
-  }
   namespace orekit {
     namespace ssa {
+      namespace metrics {
+        class FieldProbabilityOfCollision;
+        class ProbabilityOfCollision;
+      }
       namespace collision {
         namespace shorttermencounter {
           namespace probability {
@@ -24,11 +19,16 @@ namespace org {
           }
         }
       }
-      namespace metrics {
-        class FieldProbabilityOfCollision;
-        class ProbabilityOfCollision;
+    }
+  }
+  namespace hipparchus {
+    namespace analysis {
+      namespace integration {
+        class FieldUnivariateIntegrator;
+        class UnivariateIntegrator;
       }
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -51,14 +51,14 @@ namespace org {
               class PythonAbstractShortTermEncounter1DNumerical2DPOCMethod : public ::org::orekit::ssa::collision::shorttermencounter::probability::twod::AbstractShortTermEncounter1DNumerical2DPOCMethod {
                public:
                 enum {
-                  mid_init$_3b483c7f2fc93c86,
-                  mid_compute_194bff03a32ceae7,
-                  mid_compute_acd6f33dacb379ff,
-                  mid_finalize_0fa09c18fee449d5,
-                  mid_getType_5d7ecb27bb5e3bc3,
-                  mid_pythonDecRef_0fa09c18fee449d5,
-                  mid_pythonExtension_492808a339bfa35f,
-                  mid_pythonExtension_3a8e7649f31fdb20,
+                  mid_init$_2d3cf86082e01bb1,
+                  mid_compute_376cdf1ab01ad011,
+                  mid_compute_4b0f59ff7b8720f9,
+                  mid_finalize_0640e6acf969ed28,
+                  mid_getType_4b8bf2bb84f7480e,
+                  mid_pythonDecRef_0640e6acf969ed28,
+                  mid_pythonExtension_9e26256fb0d384a2,
+                  mid_pythonExtension_3cd6a6b354c6aa22,
                   max_mid
                 };
 

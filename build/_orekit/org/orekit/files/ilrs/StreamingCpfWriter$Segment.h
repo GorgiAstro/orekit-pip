@@ -34,9 +34,9 @@ namespace org {
         class StreamingCpfWriter$Segment : public ::java::lang::Object {
          public:
           enum {
-            mid_finish_0ee5c56004643a2e,
-            mid_handleStep_0ee5c56004643a2e,
-            mid_writeEphemerisLine_48579a0bdefdceaf,
+            mid_finish_8655761ebf04b503,
+            mid_handleStep_8655761ebf04b503,
+            mid_writeEphemerisLine_72ab8dadb04e6687,
             max_mid
           };
 

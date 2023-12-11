@@ -8,10 +8,10 @@ namespace java {
     namespace function {
       class Supplier;
     }
+    class Optional;
     namespace stream {
       class Stream;
     }
-    class Optional;
   }
   namespace lang {
     class Throwable;
@@ -27,21 +27,21 @@ namespace java {
     class Optional : public ::java::lang::Object {
      public:
       enum {
-        mid_empty_c5e311a9e5531e7d,
-        mid_equals_65c7d273e80d497a,
-        mid_get_4d26fd885228c716,
-        mid_hashCode_570ce0828f81a2c1,
-        mid_isEmpty_b108b35ef48e27bd,
-        mid_isPresent_b108b35ef48e27bd,
-        mid_of_ca633efe068089a6,
-        mid_ofNullable_ca633efe068089a6,
-        mid_or_65024172fd6c4767,
-        mid_orElse_9facd1449e0950d3,
-        mid_orElseGet_88359068aed48a59,
-        mid_orElseThrow_4d26fd885228c716,
-        mid_orElseThrow_88359068aed48a59,
-        mid_stream_20f6d2b462aaef4b,
-        mid_toString_11b109bd155ca898,
+        mid_empty_d0ccac9b4c6bdd55,
+        mid_equals_221e8e85cb385209,
+        mid_get_e661fe3ba2fafb22,
+        mid_hashCode_412668abc8d889e9,
+        mid_isEmpty_89b302893bdbe1f1,
+        mid_isPresent_89b302893bdbe1f1,
+        mid_of_a5279ad90f7422e8,
+        mid_ofNullable_a5279ad90f7422e8,
+        mid_or_f655b6b80eaffe76,
+        mid_orElse_65d69db95c5eb156,
+        mid_orElseGet_f204f9de7bbbfc88,
+        mid_orElseThrow_e661fe3ba2fafb22,
+        mid_orElseThrow_f204f9de7bbbfc88,
+        mid_stream_d7cce92225eb0db2,
+        mid_toString_3cffd47377eca18a,
         max_mid
       };
 

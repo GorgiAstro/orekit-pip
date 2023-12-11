@@ -14,15 +14,15 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-      class TimeStamped;
-    }
     namespace propagation {
       namespace events {
         class DateDetector;
       }
       class SpacecraftState;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeStamped;
     }
   }
 }
@@ -36,13 +36,13 @@ namespace org {
         class DateDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_ed188f35a6b77a71,
-            mid_addEventDate_600a2a61652bc473,
-            mid_g_432f3d328c15ec82,
-            mid_getDate_85703d13e302437e,
-            mid_getDates_2afa36052df4765d,
-            mid_withMinGap_b17263d5227b3c7a,
-            mid_create_b894a60d70854e2d,
+            mid_init$_1e4a523e2df6fd31,
+            mid_addEventDate_20affcbd28542333,
+            mid_g_1bbf81d80c47ecdd,
+            mid_getDate_7a97f7e149e79afb,
+            mid_getDates_0d9551367f7ecdef,
+            mid_withMinGap_55168a13fa43b797,
+            mid_create_2827a5ee6c5052d6,
             max_mid
           };
 

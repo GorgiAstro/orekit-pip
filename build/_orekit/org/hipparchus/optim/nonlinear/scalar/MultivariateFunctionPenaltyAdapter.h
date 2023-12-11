@@ -26,8 +26,8 @@ namespace org {
           class MultivariateFunctionPenaltyAdapter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_252e662bbd2ad425,
-              mid_value_9dc1ec0bcc0a9a29,
+              mid_init$_53c9091172698e93,
+              mid_value_86c4a0582e0747ce,
               max_mid
             };
 

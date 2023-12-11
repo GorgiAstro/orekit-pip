@@ -5,22 +5,22 @@
 
 namespace org {
   namespace orekit {
-    namespace attitudes {
-      class Attitude;
-      class FieldAttitude;
-      class AttitudeProvider;
-      class Inertia;
-    }
-    namespace frames {
-      class Frame;
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
     namespace utils {
       class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
     }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
+    namespace attitudes {
+      class FieldAttitude;
+      class Inertia;
+      class AttitudeProvider;
+      class Attitude;
+    }
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -38,11 +38,11 @@ namespace org {
       class TorqueFree : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_928f9caae3df060e,
-          mid_getAttitude_4e541876ea7d5bd0,
-          mid_getAttitude_d2b70935d932b5c5,
-          mid_getInertia_abcaa399dcf67539,
-          mid_getInitialAttitude_bd12f6f74bd44dca,
+          mid_init$_92784335c590ffe3,
+          mid_getAttitude_77e3383de01f3e48,
+          mid_getAttitude_1306ac39e1d2de3f,
+          mid_getInertia_0c35e3e78a73a076,
+          mid_getInitialAttitude_ed1eef73b5133690,
           max_mid
         };
 

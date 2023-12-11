@@ -15,14 +15,14 @@ namespace org {
     }
   }
   namespace hipparchus {
-    namespace linear {
-      class RealMatrix;
-      class RealVector;
-    }
     namespace filtering {
       namespace kalman {
         class Measurement;
       }
+    }
+    namespace linear {
+      class RealMatrix;
+      class RealVector;
     }
   }
 }
@@ -41,11 +41,11 @@ namespace org {
         class MeasurementDecorator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_68b85a591bc859cc,
-            mid_getCovariance_688b496048ff947b,
-            mid_getObservedMeasurement_744f33e0abf11bf9,
-            mid_getTime_dff5885c2c873297,
-            mid_getValue_aab4fbf77867daa8,
+            mid_init$_6b3d9251175727b2,
+            mid_getCovariance_70a207fcbc031df2,
+            mid_getObservedMeasurement_1217c497a513de4c,
+            mid_getTime_557b8123390d8d0c,
+            mid_getValue_75d50d73180655b4,
             max_mid
           };
 

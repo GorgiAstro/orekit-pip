@@ -5,16 +5,16 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+      class NullArgumentException;
+    }
     namespace analysis {
       namespace interpolation {
         class InterpolatingMicrosphere;
         class MultivariateInterpolator;
       }
       class MultivariateFunction;
-    }
-    namespace exception {
-      class NullArgumentException;
-      class MathIllegalArgumentException;
     }
   }
 }
@@ -33,9 +33,9 @@ namespace org {
         class MicrosphereProjectionInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_bc9655dd21c6bc97,
-            mid_init$_4c2d7b504d71edc7,
-            mid_interpolate_ade864ba8b3d9956,
+            mid_init$_104f26532f255add,
+            mid_init$_f4d1ba5cb6ea1f8a,
+            mid_interpolate_7fe6a527b1a5d65c,
             max_mid
           };
 

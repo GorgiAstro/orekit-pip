@@ -15,11 +15,11 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace files {
-      namespace general {
-        class EphemerisFile$SatelliteEphemeris;
-      }
       namespace stk {
         class STKEphemerisFile$STKEphemerisSegment;
+      }
+      namespace general {
+        class EphemerisFile$SatelliteEphemeris;
       }
     }
     namespace time {
@@ -40,12 +40,12 @@ namespace org {
         class STKEphemerisFile$STKEphemeris : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_659ce81fb27f7feb,
-            mid_getId_11b109bd155ca898,
-            mid_getMu_dff5885c2c873297,
-            mid_getSegments_2afa36052df4765d,
-            mid_getStart_85703d13e302437e,
-            mid_getStop_85703d13e302437e,
+            mid_init$_f5014c1d3796dec5,
+            mid_getId_3cffd47377eca18a,
+            mid_getMu_557b8123390d8d0c,
+            mid_getSegments_0d9551367f7ecdef,
+            mid_getStart_7a97f7e149e79afb,
+            mid_getStop_7a97f7e149e79afb,
             max_mid
           };
 

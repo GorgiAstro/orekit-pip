@@ -13,21 +13,21 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
     namespace geometry {
       namespace euclidean {
-        namespace threed {
-          class Segment;
-          class SubLine;
-          class Vector3D;
-          class Line;
-        }
         namespace oned {
           class IntervalsSet;
         }
+        namespace threed {
+          class Line;
+          class Vector3D;
+          class SubLine;
+          class Segment;
+        }
       }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
     }
   }
 }
@@ -42,11 +42,11 @@ namespace org {
           class SubLine : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_435bbf4c27b04320,
-              mid_init$_71ad1166b72158fd,
-              mid_init$_5da06482a46416aa,
-              mid_getSegments_2afa36052df4765d,
-              mid_intersection_39f3eaf75a0716fa,
+              mid_init$_236e7483aa3ace2d,
+              mid_init$_ecad37d667f0f990,
+              mid_init$_8a3775c012d81228,
+              mid_getSegments_0d9551367f7ecdef,
+              mid_intersection_3688c10a24527df7,
               max_mid
             };
 

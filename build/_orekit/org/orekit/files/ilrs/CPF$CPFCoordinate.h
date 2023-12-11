@@ -34,9 +34,9 @@ namespace org {
         class CPF$CPFCoordinate : public ::org::orekit::utils::TimeStampedPVCoordinates {
          public:
           enum {
-            mid_init$_58c0d6ad5aca569e,
-            mid_init$_b1253fc8f46fe144,
-            mid_getLeap_570ce0828f81a2c1,
+            mid_init$_9b2895eb1071c88b,
+            mid_init$_771259e0fa2256e6,
+            mid_getLeap_412668abc8d889e9,
             max_mid
           };
 

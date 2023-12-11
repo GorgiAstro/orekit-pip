@@ -28,10 +28,10 @@ namespace org {
       class AdditionalStateProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getAdditionalState_cb44069ef445f941,
-          mid_getName_11b109bd155ca898,
-          mid_init_826b4eda94da4e78,
-          mid_yields_680f8463a473c3cb,
+          mid_getAdditionalState_2a145999b8c9a41d,
+          mid_getName_3cffd47377eca18a,
+          mid_init_0472264ad6f40bc2,
+          mid_yields_abdf3beb789bbd4e,
           max_mid
         };
 

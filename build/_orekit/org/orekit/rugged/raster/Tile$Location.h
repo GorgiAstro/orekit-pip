@@ -28,8 +28,8 @@ namespace org {
         class Tile$Location : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_bff73828672ee26b,
-            mid_values_81fe2d0c1339a248,
+            mid_valueOf_28fedaa182441e99,
+            mid_values_6abdd870954fe22d,
             max_mid
           };
 

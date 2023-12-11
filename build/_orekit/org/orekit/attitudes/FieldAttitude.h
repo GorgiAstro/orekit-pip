@@ -4,37 +4,37 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Rotation;
-          class FieldVector3D;
-          class FieldRotation;
-          class Vector3D;
-        }
-      }
-    }
-    class Field;
-  }
   namespace orekit {
-    namespace time {
-      class FieldTimeStamped;
-      class FieldTimeShiftable;
-      class FieldAbsoluteDate;
-    }
     namespace attitudes {
       class Attitude;
       class FieldAttitude;
-    }
-    namespace frames {
-      class Frame;
     }
     namespace utils {
       class TimeStampedFieldAngularCoordinates;
       class FieldAngularCoordinates;
     }
+    namespace time {
+      class FieldAbsoluteDate;
+      class FieldTimeStamped;
+      class FieldTimeShiftable;
+    }
+    namespace frames {
+      class Frame;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+          class Rotation;
+          class FieldRotation;
+        }
+      }
+    }
+    class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -51,21 +51,21 @@ namespace org {
       class FieldAttitude : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_df4a5ea802673084,
-          mid_init$_a3f9433b549639d7,
-          mid_init$_df9d60e253dca407,
-          mid_init$_b7dfe93e78e2f3c9,
-          mid_init$_00f2dbe02c1f4a6b,
-          mid_getDate_51da00d5b8a3b5df,
-          mid_getOrientation_d8696322b912d5fd,
-          mid_getReferenceFrame_b86f9f61d97a7244,
-          mid_getRotation_1d339a2ee3a3323a,
-          mid_getRotationAcceleration_716f50c86ffc8da7,
-          mid_getSpin_716f50c86ffc8da7,
-          mid_shiftedBy_309635d047969067,
-          mid_shiftedBy_482ffc39eb1c8a04,
-          mid_toAttitude_bd12f6f74bd44dca,
-          mid_withReferenceFrame_f3d56c354e112e1b,
+          mid_init$_d19b0669806052fb,
+          mid_init$_5dfce6dcb2f2f4fa,
+          mid_init$_ff527da09f82b6d2,
+          mid_init$_8dfe6ba809ac1d2d,
+          mid_init$_0de1d014cc09f042,
+          mid_getDate_f1fe4daf77c66560,
+          mid_getOrientation_6ee4b6b8d0c547ac,
+          mid_getReferenceFrame_6c9bc0a928c56d4e,
+          mid_getRotation_73da4eeccf2b7e14,
+          mid_getRotationAcceleration_2d64addf4c3391d9,
+          mid_getSpin_2d64addf4c3391d9,
+          mid_shiftedBy_7f36c3f6f9d790d4,
+          mid_shiftedBy_2ba1b5f5b87774e7,
+          mid_toAttitude_ed1eef73b5133690,
+          mid_withReferenceFrame_708b51366c08d226,
           max_mid
         };
 

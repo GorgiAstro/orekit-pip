@@ -5,14 +5,14 @@
 
 namespace org {
   namespace hipparchus {
-    namespace filtering {
-      namespace kalman {
-        class Measurement;
-        class ProcessEstimate;
-      }
-    }
     namespace exception {
       class MathRuntimeException;
+    }
+    namespace filtering {
+      namespace kalman {
+        class ProcessEstimate;
+        class Measurement;
+      }
     }
   }
 }
@@ -31,9 +31,9 @@ namespace org {
         class KalmanFilter : public ::java::lang::Object {
          public:
           enum {
-            mid_estimationStep_ba157b27aa6224ec,
-            mid_getCorrected_c93ddc26f3b3eef4,
-            mid_getPredicted_c93ddc26f3b3eef4,
+            mid_estimationStep_8438f0b1b3460266,
+            mid_getCorrected_55b445719d7de2a7,
+            mid_getPredicted_55b445719d7de2a7,
             max_mid
           };
 

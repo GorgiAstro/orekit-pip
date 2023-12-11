@@ -4,12 +4,12 @@
 #include "org/orekit/data/AbstractSelfFeedingLoader.h"
 
 namespace java {
-  namespace util {
-    class List;
-  }
   namespace io {
     class IOException;
     class InputStream;
+  }
+  namespace util {
+    class List;
   }
   namespace lang {
     class Integer;
@@ -22,10 +22,6 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataProvidersManager;
-      class DataLoader;
-    }
     namespace propagation {
       namespace analytical {
         namespace gnss {
@@ -34,6 +30,10 @@ namespace org {
           }
         }
       }
+    }
+    namespace data {
+      class DataLoader;
+      class DataProvidersManager;
     }
     namespace time {
       class TimeScales;
@@ -52,14 +52,14 @@ namespace org {
       class YUMAParser : public ::org::orekit::data::AbstractSelfFeedingLoader {
        public:
         enum {
-          mid_init$_d0bc48d5b00dc40c,
-          mid_init$_4449ecb3aa08e27f,
-          mid_getAlmanacs_2afa36052df4765d,
-          mid_getPRNNumbers_2afa36052df4765d,
-          mid_getSupportedNames_11b109bd155ca898,
-          mid_loadData_0fa09c18fee449d5,
-          mid_loadData_1815f85c118161ad,
-          mid_stillAcceptsData_b108b35ef48e27bd,
+          mid_init$_f5ffdf29129ef90a,
+          mid_init$_f930d4f5e3f73cb2,
+          mid_getAlmanacs_0d9551367f7ecdef,
+          mid_getPRNNumbers_0d9551367f7ecdef,
+          mid_getSupportedNames_3cffd47377eca18a,
+          mid_loadData_0640e6acf969ed28,
+          mid_loadData_15770e8d8949a557,
+          mid_stillAcceptsData_89b302893bdbe1f1,
           max_mid
         };
 

@@ -3,16 +3,16 @@
 
 #include "org/hipparchus/distribution/continuous/AbstractRealDistribution.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,18 +25,18 @@ namespace org {
         class LevyDistribution : public ::org::hipparchus::distribution::continuous::AbstractRealDistribution {
          public:
           enum {
-            mid_init$_8f2e782d5278b131,
-            mid_cumulativeProbability_dcbc7ce2902fa136,
-            mid_density_dcbc7ce2902fa136,
-            mid_getLocation_dff5885c2c873297,
-            mid_getNumericalMean_dff5885c2c873297,
-            mid_getNumericalVariance_dff5885c2c873297,
-            mid_getScale_dff5885c2c873297,
-            mid_getSupportLowerBound_dff5885c2c873297,
-            mid_getSupportUpperBound_dff5885c2c873297,
-            mid_inverseCumulativeProbability_dcbc7ce2902fa136,
-            mid_isSupportConnected_b108b35ef48e27bd,
-            mid_logDensity_dcbc7ce2902fa136,
+            mid_init$_ab23f4ae0fb33968,
+            mid_cumulativeProbability_7e960cd6eee376d8,
+            mid_density_7e960cd6eee376d8,
+            mid_getLocation_557b8123390d8d0c,
+            mid_getNumericalMean_557b8123390d8d0c,
+            mid_getNumericalVariance_557b8123390d8d0c,
+            mid_getScale_557b8123390d8d0c,
+            mid_getSupportLowerBound_557b8123390d8d0c,
+            mid_getSupportUpperBound_557b8123390d8d0c,
+            mid_inverseCumulativeProbability_7e960cd6eee376d8,
+            mid_isSupportConnected_89b302893bdbe1f1,
+            mid_logDensity_7e960cd6eee376d8,
             max_mid
           };
 

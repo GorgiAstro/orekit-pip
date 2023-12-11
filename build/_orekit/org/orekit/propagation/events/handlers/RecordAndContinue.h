@@ -15,11 +15,11 @@ namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
-        class EventDetector;
         namespace handlers {
-          class EventHandler;
           class RecordAndContinue$Event;
+          class EventHandler;
         }
+        class EventDetector;
       }
       class SpacecraftState;
     }
@@ -43,11 +43,11 @@ namespace org {
           class RecordAndContinue : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_init$_de3e021e7266b71e,
-              mid_clear_0fa09c18fee449d5,
-              mid_eventOccurred_abc543fa9701720f,
-              mid_getEvents_2afa36052df4765d,
+              mid_init$_0640e6acf969ed28,
+              mid_init$_4ccaedadb068bdeb,
+              mid_clear_0640e6acf969ed28,
+              mid_eventOccurred_c85ac59cb25f2670,
+              mid_getEvents_0d9551367f7ecdef,
               max_mid
             };
 

@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace ode {
       class ODEStateAndDerivative;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,7 +25,7 @@ namespace org {
         class AdaptableInterval : public ::java::lang::Object {
          public:
           enum {
-            mid_currentInterval_021b54f582f9e537,
+            mid_currentInterval_4a3e96b6f1af9d91,
             max_mid
           };
 

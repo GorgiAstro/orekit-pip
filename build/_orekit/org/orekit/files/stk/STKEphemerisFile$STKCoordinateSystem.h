@@ -28,9 +28,9 @@ namespace org {
         class STKEphemerisFile$STKCoordinateSystem : public ::java::lang::Enum {
          public:
           enum {
-            mid_parse_6bb8ad188765d66f,
-            mid_valueOf_6bb8ad188765d66f,
-            mid_values_b2e10462e755d0fa,
+            mid_parse_8b96aa3542b32f2e,
+            mid_valueOf_8b96aa3542b32f2e,
+            mid_values_dd0d1a61c7b76489,
             max_mid
           };
 

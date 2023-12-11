@@ -44,9 +44,9 @@ namespace org {
               class AttitudeDeterminationSensorKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_1e5bd59c38a14be0,
-                  mid_valueOf_f31d1837e04175ce,
-                  mid_values_3e9c07923ec176f7,
+                  mid_process_089c84cee9ddbd83,
+                  mid_valueOf_583a3b7ad74d46fe,
+                  mid_values_7ca089d727fa48e4,
                   max_mid
                 };
 

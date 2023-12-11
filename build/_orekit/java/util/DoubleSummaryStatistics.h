@@ -24,16 +24,16 @@ namespace java {
     class DoubleSummaryStatistics : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_0fa09c18fee449d5,
-        mid_init$_098c7cc63aadde07,
-        mid_accept_17db3a65980d3441,
-        mid_combine_fbdc5ba466050c3e,
-        mid_getAverage_dff5885c2c873297,
-        mid_getCount_492808a339bfa35f,
-        mid_getMax_dff5885c2c873297,
-        mid_getMin_dff5885c2c873297,
-        mid_getSum_dff5885c2c873297,
-        mid_toString_11b109bd155ca898,
+        mid_init$_0640e6acf969ed28,
+        mid_init$_c5227966293c74be,
+        mid_accept_10f281d777284cea,
+        mid_combine_c9a194a4ddbf0293,
+        mid_getAverage_557b8123390d8d0c,
+        mid_getCount_9e26256fb0d384a2,
+        mid_getMax_557b8123390d8d0c,
+        mid_getMin_557b8123390d8d0c,
+        mid_getSum_557b8123390d8d0c,
+        mid_toString_3cffd47377eca18a,
         max_mid
       };
 

@@ -11,8 +11,8 @@ namespace org {
         namespace vector {
           namespace leastsquares {
             class MultivariateJacobianFunction;
-            class LeastSquaresProblem$Evaluation;
             class ParameterValidator;
+            class LeastSquaresProblem$Evaluation;
             class LeastSquaresProblem;
           }
         }
@@ -22,13 +22,13 @@ namespace org {
     namespace util {
       class Incrementor;
     }
-    namespace analysis {
-      class MultivariateVectorFunction;
-      class MultivariateMatrixFunction;
-    }
     namespace linear {
       class RealMatrix;
       class RealVector;
+    }
+    namespace analysis {
+      class MultivariateVectorFunction;
+      class MultivariateMatrixFunction;
     }
   }
 }
@@ -49,15 +49,15 @@ namespace org {
             class LeastSquaresFactory : public ::java::lang::Object {
              public:
               enum {
-                mid_countEvaluations_1047d1454f109d69,
-                mid_create_58ec63dd85264468,
-                mid_create_4e8eb0c006b16b51,
-                mid_create_6423dab85c480a70,
-                mid_create_1d8a4308d6f02389,
-                mid_evaluationChecker_137f067a9f665736,
-                mid_model_7996e90bd4c3017a,
-                mid_weightDiagonal_c11efa220350971b,
-                mid_weightMatrix_70ce7aeba7854313,
+                mid_countEvaluations_186fa1bc193d77f6,
+                mid_create_1119b2bd6b827dcd,
+                mid_create_8a37c42f4f10b498,
+                mid_create_1f611c9d57ffe81d,
+                mid_create_5217d2d0d728c25d,
+                mid_evaluationChecker_17462b30e1059916,
+                mid_model_cf0b4a54d3c72188,
+                mid_weightDiagonal_e63f7dff9daf56ba,
+                mid_weightMatrix_e868c777d4558256,
                 max_mid
               };
 

@@ -26,12 +26,12 @@ namespace org {
           class DTM2000InputParameters : public ::java::io::Serializable {
            public:
             enum {
-              mid_get24HoursKp_bf1d7732f1acb697,
-              mid_getInstantFlux_bf1d7732f1acb697,
-              mid_getMaxDate_85703d13e302437e,
-              mid_getMeanFlux_bf1d7732f1acb697,
-              mid_getMinDate_85703d13e302437e,
-              mid_getThreeHourlyKP_bf1d7732f1acb697,
+              mid_get24HoursKp_b0b988f941da47d8,
+              mid_getInstantFlux_b0b988f941da47d8,
+              mid_getMaxDate_7a97f7e149e79afb,
+              mid_getMeanFlux_b0b988f941da47d8,
+              mid_getMinDate_7a97f7e149e79afb,
+              mid_getThreeHourlyKP_b0b988f941da47d8,
               max_mid
             };
 

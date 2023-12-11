@@ -14,15 +14,15 @@ namespace org {
       }
     }
     namespace propagation {
+      class FieldSpacecraftState;
       namespace events {
         class EventDetectorsProvider;
       }
-      class FieldSpacecraftState;
       class SpacecraftState;
     }
     namespace time {
-      class AbsoluteDate;
       class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -47,13 +47,13 @@ namespace org {
           class ManeuverTriggers : public ::org::orekit::utils::ParameterDriversProvider {
            public:
             enum {
-              mid_addResetter_a16797fae59e88ec,
-              mid_addResetter_e53773d2404dc858,
-              mid_getName_11b109bd155ca898,
-              mid_init_826b4eda94da4e78,
-              mid_init_8e8de2be1664674a,
-              mid_isFiring_785ace4124d89120,
-              mid_isFiring_89b940ef53c9a82d,
+              mid_addResetter_6c2e9e35ba95043d,
+              mid_addResetter_17259cc5ef51ebf7,
+              mid_getName_3cffd47377eca18a,
+              mid_init_0472264ad6f40bc2,
+              mid_init_811e49dad2467b67,
+              mid_isFiring_cf913265ec3c3fe7,
+              mid_isFiring_7ccb736f2a8bfc30,
               max_mid
             };
 

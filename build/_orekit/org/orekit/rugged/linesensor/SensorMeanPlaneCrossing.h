@@ -3,16 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    namespace stream {
-      class Stream;
-    }
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace rugged {
@@ -35,6 +25,16 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Class;
+  }
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -45,17 +45,17 @@ namespace org {
         class SensorMeanPlaneCrossing : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_fb6f66bbc3000890,
-            mid_init$_fabf2921b74e43d4,
-            mid_find_68394db1cdfcbe46,
-            mid_getAccuracy_dff5885c2c873297,
-            mid_getCachedResults_20f6d2b462aaef4b,
-            mid_getMaxEval_570ce0828f81a2c1,
-            mid_getMaxLine_570ce0828f81a2c1,
-            mid_getMeanPlaneNormal_d52645e0d4c07563,
-            mid_getMinLine_570ce0828f81a2c1,
-            mid_getScToBody_688fb4be4b33225a,
-            mid_getSensor_0dd977498c42255e,
+            mid_init$_c3cd7c6e36f5c757,
+            mid_init$_fb8b53d59399f140,
+            mid_find_51639cab485e188e,
+            mid_getAccuracy_557b8123390d8d0c,
+            mid_getCachedResults_d7cce92225eb0db2,
+            mid_getMaxEval_412668abc8d889e9,
+            mid_getMaxLine_412668abc8d889e9,
+            mid_getMeanPlaneNormal_f88961cca75a2c0a,
+            mid_getMinLine_412668abc8d889e9,
+            mid_getScToBody_90cfcff71c037e63,
+            mid_getSensor_a33204662c4e4444,
             max_mid
           };
 

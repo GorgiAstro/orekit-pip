@@ -6,16 +6,16 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
+      class ODEState;
       namespace nonstiff {
         class ButcherArrayProvider;
       }
-      class ODEState;
       class ExpandableODE;
       class ODEStateAndDerivative;
     }
     namespace exception {
-      class MathIllegalStateException;
       class MathIllegalArgumentException;
+      class MathIllegalStateException;
     }
   }
 }
@@ -34,16 +34,16 @@ namespace org {
         class EmbeddedRungeKuttaIntegrator : public ::org::hipparchus::ode::nonstiff::AdaptiveStepsizeIntegrator {
          public:
           enum {
-            mid_getMaxGrowth_dff5885c2c873297,
-            mid_getMinReduction_dff5885c2c873297,
-            mid_getOrder_570ce0828f81a2c1,
-            mid_getSafety_dff5885c2c873297,
-            mid_integrate_3c1cc820e563e3e9,
-            mid_setMaxGrowth_17db3a65980d3441,
-            mid_setMinReduction_17db3a65980d3441,
-            mid_setSafety_17db3a65980d3441,
-            mid_createInterpolator_3c3452116c60fd90,
-            mid_estimateError_c892cfaf07a4634f,
+            mid_getMaxGrowth_557b8123390d8d0c,
+            mid_getMinReduction_557b8123390d8d0c,
+            mid_getOrder_412668abc8d889e9,
+            mid_getSafety_557b8123390d8d0c,
+            mid_integrate_7b1e7ccc98e27149,
+            mid_setMaxGrowth_10f281d777284cea,
+            mid_setMinReduction_10f281d777284cea,
+            mid_setSafety_10f281d777284cea,
+            mid_estimateError_ce34cd66684833d2,
+            mid_createInterpolator_11ab5d82310ecbfa,
             max_mid
           };
 

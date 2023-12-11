@@ -5,6 +5,13 @@
 
 namespace org {
   namespace orekit {
+    namespace frames {
+      class Frames;
+      class Frame;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
+    }
     namespace propagation {
       namespace analytical {
         namespace gnss {
@@ -14,13 +21,6 @@ namespace org {
           class SBASPropagator;
         }
       }
-    }
-    namespace frames {
-      class Frame;
-      class Frames;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
     }
   }
 }
@@ -41,21 +41,21 @@ namespace org {
             class SBASNavigationMessage : public ::org::orekit::propagation::analytical::gnss::data::AbstractEphemerisMessage {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_getAGf0_dff5885c2c873297,
-                mid_getAGf1_dff5885c2c873297,
-                mid_getIODN_570ce0828f81a2c1,
-                mid_getPropagator_9dcd848e51dbc12c,
-                mid_getPropagator_ae714d22f6e1d72f,
-                mid_getPropagator_c8d67577d76c2250,
-                mid_getTime_dff5885c2c873297,
-                mid_getURA_dff5885c2c873297,
-                mid_getWeek_570ce0828f81a2c1,
-                mid_setAGf0_17db3a65980d3441,
-                mid_setAGf1_17db3a65980d3441,
-                mid_setIODN_17db3a65980d3441,
-                mid_setTime_17db3a65980d3441,
-                mid_setURA_17db3a65980d3441,
+                mid_init$_0640e6acf969ed28,
+                mid_getAGf0_557b8123390d8d0c,
+                mid_getAGf1_557b8123390d8d0c,
+                mid_getIODN_412668abc8d889e9,
+                mid_getPropagator_21e9d28a362393d1,
+                mid_getPropagator_9172eb1b3e877a9f,
+                mid_getPropagator_edafac9436d54b30,
+                mid_getTime_557b8123390d8d0c,
+                mid_getURA_557b8123390d8d0c,
+                mid_getWeek_412668abc8d889e9,
+                mid_setAGf0_10f281d777284cea,
+                mid_setAGf1_10f281d777284cea,
+                mid_setIODN_10f281d777284cea,
+                mid_setTime_10f281d777284cea,
+                mid_setURA_10f281d777284cea,
                 max_mid
               };
 

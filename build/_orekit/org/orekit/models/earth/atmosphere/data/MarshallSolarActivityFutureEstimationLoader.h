@@ -9,8 +9,8 @@ namespace org {
       namespace earth {
         namespace atmosphere {
           namespace data {
-            class MarshallSolarActivityFutureEstimationLoader$LineParameters;
             class MarshallSolarActivityFutureEstimation$StrengthLevel;
+            class MarshallSolarActivityFutureEstimationLoader$LineParameters;
           }
         }
       }
@@ -24,19 +24,19 @@ namespace org {
   }
 }
 namespace java {
-  namespace text {
-    class ParseException;
-  }
   namespace io {
     class IOException;
     class InputStream;
   }
-  namespace lang {
-    class Class;
-    class String;
+  namespace text {
+    class ParseException;
   }
   namespace util {
     class SortedSet;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -51,10 +51,10 @@ namespace org {
             class MarshallSolarActivityFutureEstimationLoader : public ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityDataLoader {
              public:
               enum {
-                mid_init$_edd21ff166ccb749,
-                mid_init$_5623a4dd4748fa7b,
-                mid_getDataSet_917725130bbb61f1,
-                mid_loadData_1815f85c118161ad,
+                mid_init$_d5799c4b988fa7a5,
+                mid_init$_914ef2e902d54760,
+                mid_getDataSet_c6b6a992db588a51,
+                mid_loadData_15770e8d8949a557,
                 max_mid
               };
 

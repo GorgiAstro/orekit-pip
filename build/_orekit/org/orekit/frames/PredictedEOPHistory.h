@@ -3,16 +3,16 @@
 
 #include "org/orekit/frames/EOPHistory.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace frames {
       class EOPFitter;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,7 +24,7 @@ namespace org {
       class PredictedEOPHistory : public ::org::orekit::frames::EOPHistory {
        public:
         enum {
-          mid_init$_eecc46ed0fd30bf7,
+          mid_init$_aa062f4825aa77e9,
           max_mid
         };
 

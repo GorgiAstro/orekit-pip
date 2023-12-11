@@ -30,10 +30,10 @@ namespace org {
       class AbstractTimeInterpolator$InterpolationData : public ::java::lang::Object {
        public:
         enum {
-          mid_getCachedSamples_6750a7a81e7b6495,
-          mid_getInterpolationDate_85703d13e302437e,
-          mid_getNeighborList_2afa36052df4765d,
-          mid_getCentralDate_359d74440de34909,
+          mid_getCachedSamples_86a357074a1a5ab9,
+          mid_getInterpolationDate_7a97f7e149e79afb,
+          mid_getNeighborList_0d9551367f7ecdef,
+          mid_getCentralDate_57daf0c769dbd44f,
           max_mid
         };
 

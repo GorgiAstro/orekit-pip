@@ -8,10 +8,10 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Rotation;
           class FieldVector3D;
-          class FieldRotation;
           class Vector3D;
+          class Rotation;
+          class FieldRotation;
         }
         namespace twod {
           class FieldVector2D;
@@ -19,20 +19,20 @@ namespace org {
         }
       }
     }
-    class Field;
     namespace linear {
-      class RealMatrix;
       class FieldMatrix;
+      class RealMatrix;
     }
+    class Field;
   }
   namespace orekit {
     namespace utils {
-      class PVCoordinates;
       class FieldPVCoordinates;
+      class PVCoordinates;
     }
     namespace time {
-      class AbsoluteDate;
       class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
   }
 }
@@ -51,23 +51,23 @@ namespace org {
         class EncounterLOF : public ::org::orekit::frames::LOF {
          public:
           enum {
-            mid_computeProjectionMatrix_688b496048ff947b,
-            mid_computeProjectionMatrix_da96d53489e4adf9,
-            mid_getAxisNormalToCollisionPlane_d52645e0d4c07563,
-            mid_getAxisNormalToCollisionPlane_202e7b3b5ed01afc,
-            mid_getFieldOther_90f77345373c3eb7,
-            mid_getOther_9b7c658c14883c84,
-            mid_isQuasiInertial_b108b35ef48e27bd,
-            mid_projectOntoCollisionPlane_92f5981810110281,
-            mid_projectOntoCollisionPlane_6888ee2da1e4e6ff,
-            mid_projectOntoCollisionPlane_1409f31dc074a11f,
-            mid_projectOntoCollisionPlane_e9b72403ad502221,
-            mid_rotationFromInertial_48dfcf66fb3ed19c,
-            mid_rotationFromInertial_475182fd71c6851b,
-            mid_rotationFromInertial_d59b144da7c7851f,
-            mid_rotationFromInertial_00be22c00009a46d,
-            mid_rotationFromInertial_076f35c1feeb36b3,
-            mid_rotationFromInertial_2ba248090f65b129,
+            mid_computeProjectionMatrix_70a207fcbc031df2,
+            mid_computeProjectionMatrix_3547a3eeb1e69366,
+            mid_getAxisNormalToCollisionPlane_f88961cca75a2c0a,
+            mid_getAxisNormalToCollisionPlane_3a465a0c08d1dbdf,
+            mid_getFieldOther_dda60cf1427afe76,
+            mid_getOther_77bd7b3cdab2713e,
+            mid_isQuasiInertial_89b302893bdbe1f1,
+            mid_projectOntoCollisionPlane_7f02e62a67dbd97c,
+            mid_projectOntoCollisionPlane_3b3b6a3c97d1f7fa,
+            mid_projectOntoCollisionPlane_60dc3401cb1a0936,
+            mid_projectOntoCollisionPlane_340b47d21842d02c,
+            mid_rotationFromInertial_8b424804999938a4,
+            mid_rotationFromInertial_9b71bf39454b4a07,
+            mid_rotationFromInertial_0158ab79fb625627,
+            mid_rotationFromInertial_352d2666b9e583bd,
+            mid_rotationFromInertial_1022f468fb3d1015,
+            mid_rotationFromInertial_ea6e3434436b926f,
             max_mid
           };
 

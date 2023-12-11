@@ -8,17 +8,17 @@ namespace org {
     namespace propagation {
       namespace analytical {
         namespace gnss {
+          class GNSSPropagator;
           class GNSSPropagatorBuilder;
           namespace data {
             class GNSSOrbitalElements;
           }
-          class GNSSPropagator;
         }
       }
     }
     namespace frames {
-      class Frame;
       class Frames;
+      class Frame;
     }
     namespace attitudes {
       class AttitudeProvider;
@@ -41,13 +41,13 @@ namespace org {
           class GNSSPropagatorBuilder : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_95c068f7789f9f41,
-              mid_init$_37da3277b080f0fa,
-              mid_attitudeProvider_6eb1a8219a109e62,
-              mid_build_6d7baa04e9d5997e,
-              mid_ecef_ed557929d63f77b1,
-              mid_eci_ed557929d63f77b1,
-              mid_mass_6ac915d03a72089c,
+              mid_init$_cc589ac293e044f3,
+              mid_init$_b911d08072198cf6,
+              mid_attitudeProvider_887cdac6f079f08a,
+              mid_build_2d63e0224266d4a7,
+              mid_ecef_c41ad29c243e2ca5,
+              mid_eci_c41ad29c243e2ca5,
+              mid_mass_a35b0fd2d45b0aa1,
               max_mid
             };
 

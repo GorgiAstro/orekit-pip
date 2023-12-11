@@ -44,9 +44,9 @@ namespace org {
               class SpinStabilizedKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_ca76c2515a12c56a,
-                  mid_valueOf_43a66864eb4c6c52,
-                  mid_values_5065a5c731cb266d,
+                  mid_process_8dbffe5ea19f8465,
+                  mid_valueOf_3ca1c4d3a2d7eaa2,
+                  mid_values_6cf7e92116b69138,
                   max_mid
                 };
 

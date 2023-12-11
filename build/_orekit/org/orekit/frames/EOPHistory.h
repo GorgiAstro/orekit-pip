@@ -3,28 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace frames {
-      class EOPEntry;
-      class EOPHistory;
-      class ITRFVersion;
-      class FieldPoleCorrection;
-      class PoleCorrection;
-    }
-    namespace utils {
-      class IERSConventions;
-    }
-    namespace time {
-      class TimeScales;
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -37,6 +15,28 @@ namespace java {
     class Class;
   }
 }
+namespace org {
+  namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+      class TimeScales;
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class IERSConventions;
+    }
+    namespace frames {
+      class FieldPoleCorrection;
+      class EOPEntry;
+      class ITRFVersion;
+      class EOPHistory;
+      class PoleCorrection;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -46,30 +46,30 @@ namespace org {
       class EOPHistory : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_4a3c17d419eb577d,
-          mid_cachesTidalCorrection_b108b35ef48e27bd,
-          mid_checkEOPContinuity_17db3a65980d3441,
-          mid_getConventions_60f9ded87ab7ca4c,
-          mid_getEOPHistoryWithoutCachedTidalCorrection_a75a6d9d92c81a5e,
-          mid_getEndDate_85703d13e302437e,
-          mid_getEntries_2afa36052df4765d,
-          mid_getEquinoxNutationCorrection_2b9aa40de0a696a4,
-          mid_getEquinoxNutationCorrection_1d12c7a27955163b,
-          mid_getITRFVersion_7516dbdbd6368e44,
-          mid_getInterpolationDegree_570ce0828f81a2c1,
-          mid_getLOD_bf1d7732f1acb697,
-          mid_getLOD_2a5f05be83ff251d,
-          mid_getNonRotatinOriginNutationCorrection_2b9aa40de0a696a4,
-          mid_getNonRotatinOriginNutationCorrection_1d12c7a27955163b,
-          mid_getPoleCorrection_6d8f033f24b22917,
-          mid_getPoleCorrection_78539f38afd6a92e,
-          mid_getStartDate_85703d13e302437e,
-          mid_getTimeScales_f0675560047d99cd,
-          mid_getUT1MinusUTC_bf1d7732f1acb697,
-          mid_getUT1MinusUTC_2a5f05be83ff251d,
-          mid_isSimpleEop_b108b35ef48e27bd,
-          mid_getNeighbors_a067290de6165283,
-          mid_hasDataFor_db6d81809797ddaa,
+          mid_init$_fab96ebbb42599e8,
+          mid_cachesTidalCorrection_89b302893bdbe1f1,
+          mid_checkEOPContinuity_10f281d777284cea,
+          mid_getConventions_690653480c12ac72,
+          mid_getEOPHistoryWithoutCachedTidalCorrection_9a64cc378cf7ab6b,
+          mid_getEndDate_7a97f7e149e79afb,
+          mid_getEntries_0d9551367f7ecdef,
+          mid_getEquinoxNutationCorrection_89e8b78e4211e023,
+          mid_getEquinoxNutationCorrection_f77452810420dd04,
+          mid_getITRFVersion_df72f6fe6d5dd352,
+          mid_getInterpolationDegree_412668abc8d889e9,
+          mid_getLOD_b0b988f941da47d8,
+          mid_getLOD_b884068a2c99f6ca,
+          mid_getNonRotatinOriginNutationCorrection_89e8b78e4211e023,
+          mid_getNonRotatinOriginNutationCorrection_f77452810420dd04,
+          mid_getPoleCorrection_2c5aebecdb63e56e,
+          mid_getPoleCorrection_edfb8c5443b93454,
+          mid_getStartDate_7a97f7e149e79afb,
+          mid_getTimeScales_ac9ef17f951ae11a,
+          mid_getUT1MinusUTC_b0b988f941da47d8,
+          mid_getUT1MinusUTC_b884068a2c99f6ca,
+          mid_isSimpleEop_89b302893bdbe1f1,
+          mid_hasDataFor_981023bfa4a8a093,
+          mid_getNeighbors_b9470a4d1609cf1f,
           max_mid
         };
 

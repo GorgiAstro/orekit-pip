@@ -9,9 +9,9 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace cdm {
-            class CdmParser;
             class Cdm;
             class CdmHeader;
+            class CdmParser;
           }
           class ParsedUnitsBehavior;
         }
@@ -45,18 +45,18 @@ namespace org {
             class CdmParser : public ::org::orekit::files::ccsds::utils::parsing::AbstractConstituentParser {
              public:
               enum {
-                mid_build_0249af82f959c1eb,
-                mid_finalizeData_b108b35ef48e27bd,
-                mid_finalizeHeader_b108b35ef48e27bd,
-                mid_finalizeMetadata_b108b35ef48e27bd,
-                mid_getHeader_a2f99c13b713dc74,
-                mid_inData_b108b35ef48e27bd,
-                mid_inHeader_b108b35ef48e27bd,
-                mid_inMetadata_b108b35ef48e27bd,
-                mid_prepareData_b108b35ef48e27bd,
-                mid_prepareHeader_b108b35ef48e27bd,
-                mid_prepareMetadata_b108b35ef48e27bd,
-                mid_reset_e250621f009e45db,
+                mid_build_b402fdf8b50ee808,
+                mid_finalizeData_89b302893bdbe1f1,
+                mid_finalizeHeader_89b302893bdbe1f1,
+                mid_finalizeMetadata_89b302893bdbe1f1,
+                mid_getHeader_b9986681911b0c56,
+                mid_inData_89b302893bdbe1f1,
+                mid_inHeader_89b302893bdbe1f1,
+                mid_inMetadata_89b302893bdbe1f1,
+                mid_prepareData_89b302893bdbe1f1,
+                mid_prepareHeader_89b302893bdbe1f1,
+                mid_prepareMetadata_89b302893bdbe1f1,
+                mid_reset_a580586827f4ec13,
                 max_mid
               };
 

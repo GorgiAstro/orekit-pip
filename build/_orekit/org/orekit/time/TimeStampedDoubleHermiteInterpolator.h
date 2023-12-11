@@ -24,10 +24,10 @@ namespace org {
       class TimeStampedDoubleHermiteInterpolator : public ::org::orekit::time::AbstractTimeInterpolator {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_init$_99803b0791f320ff,
-          mid_init$_bb79ca80d85d0a66,
-          mid_interpolate_9ee6bd89f7bc0b17,
+          mid_init$_0640e6acf969ed28,
+          mid_init$_a3da1a935cb37f7b,
+          mid_init$_89aad365fb0ed8da,
+          mid_interpolate_8887b9e89013d909,
           max_mid
         };
 

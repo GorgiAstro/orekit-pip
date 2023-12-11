@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
+    namespace bodies {
+      class CR3BPSystem;
+    }
     namespace propagation {
       namespace integration {
         class CombinedDerivatives;
         class AdditionalDerivativesProvider;
       }
       class SpacecraftState;
-    }
-    namespace bodies {
-      class CR3BPSystem;
     }
   }
   namespace hipparchus {
@@ -39,12 +39,12 @@ namespace org {
           class STMEquations : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_ec35a1651f7b6401,
-              mid_combinedDerivatives_4fc0958a0539e1d3,
-              mid_getDimension_570ce0828f81a2c1,
-              mid_getName_11b109bd155ca898,
-              mid_getStateTransitionMatrix_9483b2ac438718ce,
-              mid_setInitialPhi_f43130c50e9fafeb,
+              mid_init$_f1c6590d5c8242d6,
+              mid_combinedDerivatives_5fc55a092d474e7c,
+              mid_getDimension_412668abc8d889e9,
+              mid_getName_3cffd47377eca18a,
+              mid_getStateTransitionMatrix_fc9cdfa83c55d6b2,
+              mid_setInitialPhi_2c4cc16b11f79a6c,
               max_mid
             };
 

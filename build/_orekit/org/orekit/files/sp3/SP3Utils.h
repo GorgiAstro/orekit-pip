@@ -27,8 +27,8 @@ namespace org {
         class SP3Utils : public ::java::lang::Object {
          public:
           enum {
-            mid_indexAccuracy_e35b4e41d0799f26,
-            mid_siAccuracy_32b37b360bc5030c,
+            mid_indexAccuracy_f6d42204526fd863,
+            mid_siAccuracy_7ba5056cf424cd00,
             max_mid
           };
 

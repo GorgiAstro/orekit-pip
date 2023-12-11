@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathRuntimeException;
-    }
     namespace distribution {
       class RealDistribution;
+    }
+    namespace exception {
+      class MathRuntimeException;
     }
   }
 }
@@ -28,24 +28,24 @@ namespace org {
         class KolmogorovSmirnovTest : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_init$_3a8e7649f31fdb20,
-            mid_approximateP_7a492dc1edd19b72,
-            mid_bootstrap_ea13093698ab0faa,
-            mid_bootstrap_a3e9810f02ff7bb5,
-            mid_cdf_948617e69b66e15d,
-            mid_cdf_648736fa2c0b0c97,
-            mid_cdfExact_948617e69b66e15d,
-            mid_exactP_7cb31c5b5c5fe800,
-            mid_kolmogorovSmirnovStatistic_b561c6892e9976f8,
-            mid_kolmogorovSmirnovStatistic_c12bc4bf7b12344d,
-            mid_kolmogorovSmirnovTest_b561c6892e9976f8,
-            mid_kolmogorovSmirnovTest_c12bc4bf7b12344d,
-            mid_kolmogorovSmirnovTest_c98cc76e0ea0aa4c,
-            mid_kolmogorovSmirnovTest_9a58ab94185971d6,
-            mid_kolmogorovSmirnovTest_ad738ebacbd28f66,
-            mid_ksSum_aa604e695a59526c,
-            mid_pelzGood_948617e69b66e15d,
+            mid_init$_0640e6acf969ed28,
+            mid_init$_3cd6a6b354c6aa22,
+            mid_approximateP_5b7edc654bd4c638,
+            mid_bootstrap_a7af9b8e2bb5e099,
+            mid_bootstrap_6a5e1519e571e53d,
+            mid_cdf_156ae9d72f1c8533,
+            mid_cdf_3e2cba7ad7d970a7,
+            mid_cdfExact_156ae9d72f1c8533,
+            mid_exactP_4cb0bd459cea3c08,
+            mid_kolmogorovSmirnovStatistic_628a76297e217f13,
+            mid_kolmogorovSmirnovStatistic_25a541813dc79893,
+            mid_kolmogorovSmirnovTest_628a76297e217f13,
+            mid_kolmogorovSmirnovTest_25a541813dc79893,
+            mid_kolmogorovSmirnovTest_81226d0b24750fea,
+            mid_kolmogorovSmirnovTest_7ce25eee88719bea,
+            mid_kolmogorovSmirnovTest_3766a811638b85f8,
+            mid_ksSum_63ce51364ee6da7c,
+            mid_pelzGood_156ae9d72f1c8533,
             max_mid
           };
 

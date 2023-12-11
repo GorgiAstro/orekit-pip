@@ -3,6 +3,16 @@
 
 #include "org/orekit/files/ccsds/section/AbstractWriter.h"
 
+namespace java {
+  namespace io {
+    class IOException;
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
@@ -16,16 +26,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-    class String;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -37,13 +37,13 @@ namespace org {
           class PythonAbstractWriter : public ::org::orekit::files::ccsds::section::AbstractWriter {
            public:
             enum {
-              mid_init$_6a2001eff0605f71,
-              mid_finalize_0fa09c18fee449d5,
-              mid_intArrayToString_73683ad393ccda19,
-              mid_pythonDecRef_0fa09c18fee449d5,
-              mid_pythonExtension_492808a339bfa35f,
-              mid_pythonExtension_3a8e7649f31fdb20,
-              mid_writeContent_6d745cf7b26e9f5d,
+              mid_init$_630071dd94c59169,
+              mid_finalize_0640e6acf969ed28,
+              mid_intArrayToString_ae74174caf679503,
+              mid_pythonDecRef_0640e6acf969ed28,
+              mid_pythonExtension_9e26256fb0d384a2,
+              mid_pythonExtension_3cd6a6b354c6aa22,
+              mid_writeContent_0503da09b1f1eb3c,
               max_mid
             };
 

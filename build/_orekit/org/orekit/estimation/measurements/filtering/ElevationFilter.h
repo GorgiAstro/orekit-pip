@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class GroundStation;
         class ObservedMeasurement;
+        class GroundStation;
         namespace filtering {
           class MeasurementFilter;
         }
@@ -35,8 +35,8 @@ namespace org {
           class ElevationFilter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_01ab7ff4b696a7ab,
-              mid_filter_ba898b75be14e8ca,
+              mid_init$_41e1db373f7bd180,
+              mid_filter_87933cc299a70778,
               max_mid
             };
 

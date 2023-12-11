@@ -25,8 +25,8 @@ namespace org {
       class LagrangianPoints : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_ac5daa58fa9d2237,
-          mid_values_3055fa7ebefc5fee,
+          mid_valueOf_a66dbc0550148616,
+          mid_values_9e54864e4504cd8f,
           max_mid
         };
 

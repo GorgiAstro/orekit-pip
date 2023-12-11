@@ -3,20 +3,12 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class EstimatedMeasurementBase;
         class EstimationModifier;
+        class EstimatedMeasurementBase;
         namespace gnss {
           class InterSatellitesPhase;
         }
@@ -36,6 +28,14 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -47,9 +47,9 @@ namespace org {
           class OnBoardAntennaInterSatellitesPhaseModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_8f7d2a24ef2ff591,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_modifyWithoutDerivatives_d1815d998cba71e9,
+              mid_init$_be9548a8a583a03d,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_modifyWithoutDerivatives_e471490df8741b73,
               max_mid
             };
 

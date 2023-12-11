@@ -7,14 +7,14 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ilrs {
+        class CRD$SessionStatistics;
+        class CRD$Calibration;
+        class CRD$AnglesMeasurement;
         class CRD$RangeSupplement;
         class CRD$Meteo;
-        class CRDHeader;
-        class CRD$AnglesMeasurement;
-        class CRD$SessionStatistics;
-        class CRDConfiguration;
-        class CRD$Calibration;
         class CRD$RangeMeasurement;
+        class CRDConfiguration;
+        class CRDHeader;
         class CRD$CalibrationDetail;
         class CRD$MeteorologicalMeasurement;
       }
@@ -40,32 +40,32 @@ namespace org {
         class CRD$CRDDataBlock : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_addAnglesData_e1c9729d63e3bf8c,
-            mid_addCalibrationData_b67c956e14455568,
-            mid_addCalibrationDetailData_4290ad220666e670,
-            mid_addMeteoData_0bc8957e5ebed1cb,
-            mid_addRangeData_381def2f82634b72,
-            mid_addRangeSupplementData_aed86880c02a39ba,
-            mid_addSessionStatisticsData_a03b13e5108ccf85,
-            mid_getAnglesData_2afa36052df4765d,
-            mid_getCalibrationData_2afa36052df4765d,
-            mid_getCalibrationDetailData_2afa36052df4765d,
-            mid_getCalibrationDetailRecords_2afa36052df4765d,
-            mid_getCalibrationDetailRecords_aade4ea8882e7a2c,
-            mid_getCalibrationRecords_2afa36052df4765d,
-            mid_getCalibrationRecords_aade4ea8882e7a2c,
-            mid_getConfigurationRecords_ec13daa2694209ba,
-            mid_getHeader_3e90095384e815b3,
-            mid_getMeteoData_9459dd149ced72d3,
-            mid_getRangeData_2afa36052df4765d,
-            mid_getRangeSupplementData_2afa36052df4765d,
-            mid_getSessionStatisticsData_2afa36052df4765d,
-            mid_getSessionStatisticsRecord_175ecc667c3042a0,
-            mid_getSessionStatisticsRecord_0d71ee317acb3db8,
-            mid_getWavelength_9ab55b39347deb7b,
-            mid_setConfigurationRecords_7433965f70e12915,
-            mid_setHeader_a1f5a92ac3db7946,
+            mid_init$_0640e6acf969ed28,
+            mid_addAnglesData_35383e0c843c3084,
+            mid_addCalibrationData_cc0e8057595cb595,
+            mid_addCalibrationDetailData_540c2ec67cb130ce,
+            mid_addMeteoData_e118fb7db41bcff6,
+            mid_addRangeData_922f4ef45083699e,
+            mid_addRangeSupplementData_a0b8f90cbfce5723,
+            mid_addSessionStatisticsData_0a7705e408a98b7b,
+            mid_getAnglesData_0d9551367f7ecdef,
+            mid_getCalibrationData_0d9551367f7ecdef,
+            mid_getCalibrationDetailData_0d9551367f7ecdef,
+            mid_getCalibrationDetailRecords_0d9551367f7ecdef,
+            mid_getCalibrationDetailRecords_112f9b169ddc4fbe,
+            mid_getCalibrationRecords_0d9551367f7ecdef,
+            mid_getCalibrationRecords_112f9b169ddc4fbe,
+            mid_getConfigurationRecords_6ff2a6b6ea3e1822,
+            mid_getHeader_280bc464d093e3cf,
+            mid_getMeteoData_fce7f079c8fc6110,
+            mid_getRangeData_0d9551367f7ecdef,
+            mid_getRangeSupplementData_0d9551367f7ecdef,
+            mid_getSessionStatisticsData_0d9551367f7ecdef,
+            mid_getSessionStatisticsRecord_a385ffee72bd3d9c,
+            mid_getSessionStatisticsRecord_8d772f4eaa89cc95,
+            mid_getWavelength_a02bac742ffcb9ae,
+            mid_setConfigurationRecords_3b7f7f9152be91f0,
+            mid_setHeader_03439c0671fe86ce,
             max_mid
           };
 

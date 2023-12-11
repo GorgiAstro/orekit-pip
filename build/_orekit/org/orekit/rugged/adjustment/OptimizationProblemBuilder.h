@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace optim {
@@ -21,6 +16,11 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -31,15 +31,15 @@ namespace org {
         class OptimizationProblemBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_build_fb782eefc76cd888,
-            mid_getDrivers_2afa36052df4765d,
-            mid_getNbParams_570ce0828f81a2c1,
-            mid_createTargetAndWeight_0fa09c18fee449d5,
-            mid_initMapping_0fa09c18fee449d5,
-            mid_getSensors_2afa36052df4765d,
-            mid_getGenerator_6b50c0d68a5b89d6,
-            mid_getMeasurements_bb4e7fe961703150,
-            mid_createFunction_9751b2e3b68b45ea,
+            mid_build_d4732481b9968791,
+            mid_getDrivers_0d9551367f7ecdef,
+            mid_getNbParams_412668abc8d889e9,
+            mid_getSensors_0d9551367f7ecdef,
+            mid_getMeasurements_e8a9e616d9a15f91,
+            mid_getGenerator_288f48cc056758ad,
+            mid_initMapping_0640e6acf969ed28,
+            mid_createTargetAndWeight_0640e6acf969ed28,
+            mid_createFunction_e31bcbfb9203b3a6,
             max_mid
           };
 

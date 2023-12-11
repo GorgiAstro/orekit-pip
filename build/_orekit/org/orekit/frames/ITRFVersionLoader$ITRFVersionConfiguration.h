@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace frames {
       class ITRFVersion;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,10 +25,10 @@ namespace org {
       class ITRFVersionLoader$ITRFVersionConfiguration : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_48fe94404927ad1e,
-          mid_appliesTo_7edad2c2f64f4d68,
-          mid_getVersion_8a73c81b6e5084ce,
-          mid_isValid_b6e9be1df30aebaf,
+          mid_init$_0faa264352fa9521,
+          mid_appliesTo_fd2162b8a05a22fe,
+          mid_getVersion_b311296551ce8af2,
+          mid_isValid_e034cac2b514bb09,
           max_mid
         };
 

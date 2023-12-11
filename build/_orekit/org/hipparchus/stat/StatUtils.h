@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,38 +24,38 @@ namespace org {
       class StatUtils : public ::java::lang::Object {
        public:
         enum {
-          mid_geometricMean_9dc1ec0bcc0a9a29,
-          mid_geometricMean_556bede10daac330,
-          mid_max_9dc1ec0bcc0a9a29,
-          mid_max_556bede10daac330,
-          mid_mean_9dc1ec0bcc0a9a29,
-          mid_mean_556bede10daac330,
-          mid_meanDifference_b561c6892e9976f8,
-          mid_min_9dc1ec0bcc0a9a29,
-          mid_min_556bede10daac330,
-          mid_mode_ac3d742ccc742f22,
-          mid_mode_41a59b6c86e2e047,
-          mid_normalize_ac3d742ccc742f22,
-          mid_percentile_1c41301ff6e224e7,
-          mid_percentile_9b4f2bb29c648b6e,
-          mid_populationVariance_9dc1ec0bcc0a9a29,
-          mid_populationVariance_1c41301ff6e224e7,
-          mid_populationVariance_556bede10daac330,
-          mid_populationVariance_82195b7753559055,
-          mid_product_9dc1ec0bcc0a9a29,
-          mid_product_556bede10daac330,
-          mid_sum_9dc1ec0bcc0a9a29,
-          mid_sum_556bede10daac330,
-          mid_sumDifference_b561c6892e9976f8,
-          mid_sumLog_9dc1ec0bcc0a9a29,
-          mid_sumLog_556bede10daac330,
-          mid_sumSq_9dc1ec0bcc0a9a29,
-          mid_sumSq_556bede10daac330,
-          mid_variance_9dc1ec0bcc0a9a29,
-          mid_variance_1c41301ff6e224e7,
-          mid_variance_556bede10daac330,
-          mid_variance_82195b7753559055,
-          mid_varianceDifference_81770d1e77838f28,
+          mid_geometricMean_86c4a0582e0747ce,
+          mid_geometricMean_9eeeb1ae977f525d,
+          mid_max_86c4a0582e0747ce,
+          mid_max_9eeeb1ae977f525d,
+          mid_mean_86c4a0582e0747ce,
+          mid_mean_9eeeb1ae977f525d,
+          mid_meanDifference_628a76297e217f13,
+          mid_min_86c4a0582e0747ce,
+          mid_min_9eeeb1ae977f525d,
+          mid_mode_1db7c087750eaffe,
+          mid_mode_3a89ed5ea3adefb8,
+          mid_normalize_1db7c087750eaffe,
+          mid_percentile_05f591cf0826202b,
+          mid_percentile_52cb74c4004a744d,
+          mid_populationVariance_86c4a0582e0747ce,
+          mid_populationVariance_05f591cf0826202b,
+          mid_populationVariance_9eeeb1ae977f525d,
+          mid_populationVariance_134920ed0a3e958a,
+          mid_product_86c4a0582e0747ce,
+          mid_product_9eeeb1ae977f525d,
+          mid_sum_86c4a0582e0747ce,
+          mid_sum_9eeeb1ae977f525d,
+          mid_sumDifference_628a76297e217f13,
+          mid_sumLog_86c4a0582e0747ce,
+          mid_sumLog_9eeeb1ae977f525d,
+          mid_sumSq_86c4a0582e0747ce,
+          mid_sumSq_9eeeb1ae977f525d,
+          mid_variance_86c4a0582e0747ce,
+          mid_variance_05f591cf0826202b,
+          mid_variance_9eeeb1ae977f525d,
+          mid_variance_134920ed0a3e958a,
+          mid_varianceDifference_abf45904c34f3045,
           max_mid
         };
 

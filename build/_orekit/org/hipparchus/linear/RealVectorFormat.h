@@ -4,26 +4,26 @@
 #include "java/lang/Object.h"
 
 namespace java {
+  namespace text {
+    class ParsePosition;
+    class NumberFormat;
+    class FieldPosition;
+  }
   namespace util {
     class Locale;
   }
-  namespace text {
-    class NumberFormat;
-    class ParsePosition;
-    class FieldPosition;
-  }
   namespace lang {
-    class StringBuffer;
     class Class;
+    class StringBuffer;
     class String;
   }
 }
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class RealVectorFormat;
       class RealVector;
       class ArrayRealVector;
+      class RealVectorFormat;
     }
   }
 }
@@ -36,21 +36,21 @@ namespace org {
       class RealVectorFormat : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_init$_256f36a22c0d0f55,
-          mid_init$_3c57e287341c9288,
-          mid_init$_4ed7d7dd28d1bddd,
-          mid_format_ed0d223f69bb75cc,
-          mid_format_39b5b20e8e62d3bb,
-          mid_getAvailableLocales_c5ed07ebd55821bb,
-          mid_getFormat_24f83dea4a8657b1,
-          mid_getPrefix_11b109bd155ca898,
-          mid_getRealVectorFormat_dbafcc70378c90ab,
-          mid_getRealVectorFormat_c6647bbef3e873a0,
-          mid_getSeparator_11b109bd155ca898,
-          mid_getSuffix_11b109bd155ca898,
-          mid_parse_534cde3579de93aa,
-          mid_parse_d76e447a19a63b65,
+          mid_init$_0640e6acf969ed28,
+          mid_init$_d53859bd7ba1b247,
+          mid_init$_f5c244a0f15376be,
+          mid_init$_5f051ed7add2b099,
+          mid_format_c0171abb3ba0b023,
+          mid_format_a6e853369bf753b4,
+          mid_getAvailableLocales_85ff0d07ca843902,
+          mid_getFormat_001645e916bd626d,
+          mid_getPrefix_3cffd47377eca18a,
+          mid_getRealVectorFormat_f6c83731ab02792b,
+          mid_getRealVectorFormat_dd3046636f0c2838,
+          mid_getSeparator_3cffd47377eca18a,
+          mid_getSuffix_3cffd47377eca18a,
+          mid_parse_f3a541aea0c3b97f,
+          mid_parse_26152c0fd0d0312a,
           max_mid
         };
 

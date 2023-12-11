@@ -36,13 +36,13 @@ namespace org {
           class Skewness : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_clear_0fa09c18fee449d5,
-              mid_copy_f7032c04c28b06fe,
-              mid_evaluate_556bede10daac330,
-              mid_getN_492808a339bfa35f,
-              mid_getResult_dff5885c2c873297,
-              mid_increment_17db3a65980d3441,
+              mid_init$_0640e6acf969ed28,
+              mid_clear_0640e6acf969ed28,
+              mid_copy_39d94353cfc666bc,
+              mid_evaluate_9eeeb1ae977f525d,
+              mid_getN_9e26256fb0d384a2,
+              mid_getResult_557b8123390d8d0c,
+              mid_increment_10f281d777284cea,
               max_mid
             };
 

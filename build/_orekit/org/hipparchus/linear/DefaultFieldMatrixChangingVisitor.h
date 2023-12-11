@@ -5,10 +5,10 @@
 
 namespace org {
   namespace hipparchus {
+    class FieldElement;
     namespace linear {
       class FieldMatrixChangingVisitor;
     }
-    class FieldElement;
   }
 }
 namespace java {
@@ -25,10 +25,10 @@ namespace org {
       class DefaultFieldMatrixChangingVisitor : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_f96eb0f00086e90d,
-          mid_end_99097cb60cf2d774,
-          mid_start_5aa4d40be6f39408,
-          mid_visit_67d71003e110b686,
+          mid_init$_b906415fb0b2ba27,
+          mid_end_ce0470d468f80a56,
+          mid_start_b02282271d2e33e3,
+          mid_visit_0f2f35f7d94c9635,
           max_mid
         };
 

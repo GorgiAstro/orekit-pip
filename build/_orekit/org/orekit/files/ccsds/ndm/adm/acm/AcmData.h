@@ -7,22 +7,22 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace section {
-          class Data;
-        }
         namespace ndm {
-          namespace adm {
-            namespace acm {
-              class AttitudeCovarianceHistory;
-              class AttitudeDetermination;
-              class AttitudePhysicalProperties;
-              class AttitudeManeuver;
-              class AttitudeStateHistory;
-            }
-          }
           namespace odm {
             class UserDefined;
           }
+          namespace adm {
+            namespace acm {
+              class AttitudeCovarianceHistory;
+              class AttitudePhysicalProperties;
+              class AttitudeStateHistory;
+              class AttitudeDetermination;
+              class AttitudeManeuver;
+            }
+          }
+        }
+        namespace section {
+          class Data;
         }
       }
     }
@@ -49,14 +49,14 @@ namespace org {
               class AcmData : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_7d175ed02a2f74d0,
-                  mid_getAttitudeBlocks_2afa36052df4765d,
-                  mid_getAttitudeDeterminationBlock_b824d64d2693b4b1,
-                  mid_getCovarianceBlocks_2afa36052df4765d,
-                  mid_getManeuverBlocks_2afa36052df4765d,
-                  mid_getPhysicBlock_e4078fef0c3d5926,
-                  mid_getUserDefinedBlock_8d3e5fabdafb8483,
-                  mid_validate_17db3a65980d3441,
+                  mid_init$_1724940ac42f3f73,
+                  mid_getAttitudeBlocks_0d9551367f7ecdef,
+                  mid_getAttitudeDeterminationBlock_d40e46e33d1586b5,
+                  mid_getCovarianceBlocks_0d9551367f7ecdef,
+                  mid_getManeuverBlocks_0d9551367f7ecdef,
+                  mid_getPhysicBlock_1419754bb1060497,
+                  mid_getUserDefinedBlock_e8dd2483e310f990,
+                  mid_validate_10f281d777284cea,
                   max_mid
                 };
 

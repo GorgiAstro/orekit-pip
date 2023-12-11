@@ -17,9 +17,9 @@ namespace org {
       class RealVectorChangingVisitor : public ::java::lang::Object {
        public:
         enum {
-          mid_end_dff5885c2c873297,
-          mid_start_8336200ef3dde36b,
-          mid_visit_60d7624725a52590,
+          mid_end_557b8123390d8d0c,
+          mid_start_3796b665437eba81,
+          mid_visit_77f9e227e4cf04b4,
           max_mid
         };
 

@@ -3,17 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    namespace stream {
-      class Stream;
-    }
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -32,18 +21,29 @@ namespace org {
   }
   namespace orekit {
     namespace rugged {
-      namespace utils {
-        class DerivativeGenerator;
-      }
       namespace los {
         class LOSTransform;
       }
+      namespace utils {
+        class DerivativeGenerator;
+      }
+    }
+    namespace utils {
+      class ParameterDriver;
     }
     namespace time {
       class AbsoluteDate;
     }
-    namespace utils {
-      class ParameterDriver;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
+    class String;
+  }
+  namespace util {
+    namespace stream {
+      class Stream;
     }
   }
 }
@@ -57,11 +57,11 @@ namespace org {
         class PolynomialRotation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_2b5df60ab5fcc3a1,
-            mid_init$_8a73e3626e76fc00,
-            mid_getParametersDrivers_20f6d2b462aaef4b,
-            mid_transformLOS_5bf59b7055ded983,
-            mid_transformLOS_ff297ae5ca0c9136,
+            mid_init$_7a08d7c8afe9826d,
+            mid_init$_1bc215ef4b343331,
+            mid_getParametersDrivers_d7cce92225eb0db2,
+            mid_transformLOS_193bcb23df54ca95,
+            mid_transformLOS_da5b61aadada7c1f,
             max_mid
           };
 

@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class NullArgumentException;
-    }
     namespace util {
       class PivotingStrategy;
+    }
+    namespace exception {
+      class NullArgumentException;
     }
   }
 }
@@ -30,10 +30,10 @@ namespace org {
       class KthSelector : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_init$_7ed4e51422b10f61,
-          mid_getPivotingStrategy_d098c6797f63b37e,
-          mid_select_32766843ea06b4a3,
+          mid_init$_0640e6acf969ed28,
+          mid_init$_1d74d701de50c6b0,
+          mid_getPivotingStrategy_b6c90f164ea1e1c5,
+          mid_select_ac31a84fee33c024,
           max_mid
         };
 

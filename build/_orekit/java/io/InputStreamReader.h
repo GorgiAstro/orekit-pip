@@ -22,13 +22,13 @@ namespace java {
     class InputStreamReader : public ::java::io::Reader {
      public:
       enum {
-        mid_init$_42871fcf824ad25f,
-        mid_init$_1815f85c118161ad,
-        mid_close_0fa09c18fee449d5,
-        mid_getEncoding_11b109bd155ca898,
-        mid_read_570ce0828f81a2c1,
-        mid_read_e1525dbb996fb0b1,
-        mid_ready_b108b35ef48e27bd,
+        mid_init$_115bc9fcd812647a,
+        mid_init$_15770e8d8949a557,
+        mid_close_0640e6acf969ed28,
+        mid_getEncoding_3cffd47377eca18a,
+        mid_read_412668abc8d889e9,
+        mid_read_f0b052b9721148b0,
+        mid_ready_89b302893bdbe1f1,
         max_mid
       };
 

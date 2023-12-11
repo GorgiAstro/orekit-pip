@@ -7,19 +7,19 @@ namespace org {
   namespace orekit {
     namespace attitudes {
       class Attitude;
-      class FieldAttitude;
       class AttitudeProvider;
+      class FieldAttitude;
     }
-    namespace frames {
-      class Frame;
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
     namespace utils {
       class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
     }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -37,10 +37,10 @@ namespace org {
       class FixedRate : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_ba686ec2be369c23,
-          mid_getAttitude_d2b70935d932b5c5,
-          mid_getAttitude_4e541876ea7d5bd0,
-          mid_getReferenceAttitude_bd12f6f74bd44dca,
+          mid_init$_59f7a5a3efbf6514,
+          mid_getAttitude_1306ac39e1d2de3f,
+          mid_getAttitude_77e3383de01f3e48,
+          mid_getReferenceAttitude_ed1eef73b5133690,
           max_mid
         };
 

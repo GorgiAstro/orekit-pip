@@ -40,7 +40,7 @@ namespace org {
               class Rtcm1243 : public ::org::orekit::gnss::metric::messages::rtcm::correction::RtcmCorrectionMessage {
                public:
                 enum {
-                  mid_init$_c862bfeb63a17bd5,
+                  mid_init$_e429337ce34e6c7c,
                   max_mid
                 };
 

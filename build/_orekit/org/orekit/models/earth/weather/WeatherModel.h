@@ -26,7 +26,7 @@ namespace org {
           class WeatherModel : public ::java::lang::Object {
            public:
             enum {
-              mid_weatherParameters_a7786d9d355d3792,
+              mid_weatherParameters_4ca6118c75b70100,
               max_mid
             };
 

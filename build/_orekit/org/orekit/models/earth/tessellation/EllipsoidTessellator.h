@@ -3,15 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace spherical {
+        namespace twod {
+          class SphericalPolygonsSet;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace models {
       namespace earth {
@@ -22,18 +23,17 @@ namespace org {
       }
     }
     namespace bodies {
-      class OneAxisEllipsoid;
       class GeodeticPoint;
+      class OneAxisEllipsoid;
     }
   }
-  namespace hipparchus {
-    namespace geometry {
-      namespace spherical {
-        namespace twod {
-          class SphericalPolygonsSet;
-        }
-      }
-    }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -47,12 +47,12 @@ namespace org {
           class EllipsoidTessellator : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_77f1a5dfde5d9334,
-              mid_buildSimpleZone_e0cdac0f8844a597,
-              mid_buildSimpleZone_90b26b8ccdda699d,
-              mid_sample_8281c4d2cd40ce62,
-              mid_tessellate_23b10122fe29aea8,
-              mid_toGeodetic_1b240fc4f889c389,
+              mid_init$_a31e019ba9d05ce7,
+              mid_buildSimpleZone_504a8d441b5202c7,
+              mid_buildSimpleZone_ec6a766e431c796c,
+              mid_sample_78bd2592ae6dbd42,
+              mid_tessellate_6796254ce45b0eb1,
+              mid_toGeodetic_0015b467bc7250e0,
               max_mid
             };
 

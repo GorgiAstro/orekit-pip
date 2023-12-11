@@ -7,20 +7,20 @@ namespace org {
   namespace orekit {
     namespace attitudes {
       class Attitude;
-      class FieldAttitude;
       class AttitudeProvider;
+      class FieldAttitude;
       class AttitudeProviderModifier;
     }
-    namespace frames {
-      class Frame;
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
     namespace utils {
       class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
     }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
+    namespace frames {
+      class Frame;
     }
   }
   namespace hipparchus {
@@ -47,10 +47,10 @@ namespace org {
       class SpinStabilized : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_4344affd4de78726,
-          mid_getAttitude_d2b70935d932b5c5,
-          mid_getAttitude_4e541876ea7d5bd0,
-          mid_getUnderlyingAttitudeProvider_a904f3d015a354a0,
+          mid_init$_8f0a7a57ebfb39ba,
+          mid_getAttitude_1306ac39e1d2de3f,
+          mid_getAttitude_77e3383de01f3e48,
+          mid_getUnderlyingAttitudeProvider_6df6b78ab9377151,
           max_mid
         };
 

@@ -13,11 +13,11 @@ namespace org {
           }
         }
         namespace utils {
-          namespace lexical {
-            class ParseToken;
-          }
           namespace parsing {
             class ProcessingState;
+          }
+          namespace lexical {
+            class ParseToken;
           }
         }
       }
@@ -41,8 +41,8 @@ namespace org {
             class CdmHeaderProcessingState : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_838d1aa1713cb425,
-                mid_processToken_85d9863c57bc3b0c,
+                mid_init$_96fc3f4ca65a13d8,
+                mid_processToken_7f6d4ab73f1deb26,
                 max_mid
               };
 

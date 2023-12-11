@@ -28,15 +28,15 @@ namespace org {
             class LeastSquaresProblem$Evaluation : public ::java::lang::Object {
              public:
               enum {
-                mid_getChiSquare_dff5885c2c873297,
-                mid_getCost_dff5885c2c873297,
-                mid_getCovariances_f21dcd9464c6e3c5,
-                mid_getJacobian_688b496048ff947b,
-                mid_getPoint_aab4fbf77867daa8,
-                mid_getRMS_dff5885c2c873297,
-                mid_getReducedChiSquare_46f85b53d9aedd96,
-                mid_getResiduals_aab4fbf77867daa8,
-                mid_getSigma_5df18376713b9c4f,
+                mid_getChiSquare_557b8123390d8d0c,
+                mid_getCost_557b8123390d8d0c,
+                mid_getCovariances_e95e381257af03e9,
+                mid_getJacobian_70a207fcbc031df2,
+                mid_getPoint_75d50d73180655b4,
+                mid_getRMS_557b8123390d8d0c,
+                mid_getReducedChiSquare_69cfb132c661aca4,
+                mid_getResiduals_75d50d73180655b4,
+                mid_getSigma_6041102868c92dbb,
                 max_mid
               };
 

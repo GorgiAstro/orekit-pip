@@ -3,22 +3,8 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataContext;
-    }
-    namespace utils {
-      class IERSConventions;
-    }
     namespace files {
       namespace ccsds {
         namespace section {
@@ -26,6 +12,20 @@ namespace org {
         }
       }
     }
+    namespace utils {
+      class IERSConventions;
+    }
+    namespace data {
+      class DataContext;
+    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -39,13 +39,13 @@ namespace org {
           class NdmConstituent : public ::java::lang::Object {
            public:
             enum {
-              mid_getConventions_60f9ded87ab7ca4c,
-              mid_getDataContext_0b7cf48ee6a922ee,
-              mid_getHeader_0e1b4a5061fb71d6,
-              mid_getSegments_2afa36052df4765d,
-              mid_setHeader_023fa04bd3c493a9,
-              mid_setSegments_de3e021e7266b71e,
-              mid_validate_0fa09c18fee449d5,
+              mid_getConventions_690653480c12ac72,
+              mid_getDataContext_b259b25d6495e5b3,
+              mid_getHeader_6fe6597816e9e593,
+              mid_getSegments_0d9551367f7ecdef,
+              mid_setHeader_7884456a8420d358,
+              mid_setSegments_4ccaedadb068bdeb,
+              mid_validate_0640e6acf969ed28,
               max_mid
             };
 

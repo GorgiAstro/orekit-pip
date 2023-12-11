@@ -3,6 +3,13 @@
 
 #include "org/orekit/errors/OrekitException.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+    class Object;
+  }
+}
 namespace org {
   namespace orekit {
     namespace errors {
@@ -11,16 +18,9 @@ namespace org {
   }
   namespace hipparchus {
     namespace exception {
-      class Localizable;
       class MathRuntimeException;
+      class Localizable;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-    class Object;
   }
 }
 template<class T> class JArray;
@@ -32,12 +32,12 @@ namespace org {
       class TimeStampedCacheException : public ::org::orekit::errors::OrekitException {
        public:
         enum {
-          mid_init$_b82e021312358546,
-          mid_init$_224a394c2fd91cdf,
-          mid_init$_d0cf82c16a7e8751,
-          mid_init$_6ecc3fd6067c266c,
-          mid_unwrap_98ab925763c8c570,
-          mid_unwrap_3e62516228911b5b,
+          mid_init$_5a362f030f21d160,
+          mid_init$_6cecc4ef7f063ebe,
+          mid_init$_4fde7f3f87bbd6f7,
+          mid_init$_0ff5a331e85ddf14,
+          mid_unwrap_e56989996ecbae32,
+          mid_unwrap_a2e2492d9d6ade54,
           max_mid
         };
 

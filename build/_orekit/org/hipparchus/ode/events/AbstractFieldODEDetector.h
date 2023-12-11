@@ -5,21 +5,21 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace ode {
+      class FieldODEStateAndDerivative;
       namespace events {
-        class FieldODEEventHandler;
         class FieldAdaptableInterval;
         class AbstractFieldODEDetector;
+        class FieldODEEventHandler;
         class FieldODEEventDetector;
       }
-      class FieldODEStateAndDerivative;
     }
     namespace analysis {
       namespace solvers {
         class BracketedRealFieldUnivariateSolver;
       }
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -37,20 +37,20 @@ namespace org {
         class AbstractFieldODEDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_g_2fe24792561bd145,
-            mid_getHandler_6becb2360697f07b,
-            mid_getMaxCheckInterval_3c82d31ec337b8be,
-            mid_getMaxIterationCount_570ce0828f81a2c1,
-            mid_getSolver_818bdb7f8312a2dd,
-            mid_init_81b5dd1fb920fdc1,
-            mid_isForward_b108b35ef48e27bd,
-            mid_withHandler_b39a93bc3cee4fa8,
-            mid_withMaxCheck_7ba6d3ff6c69ffdc,
-            mid_withMaxCheck_ce900a3fd00fa916,
-            mid_withMaxIter_ce991b19a4f74810,
-            mid_withSolver_34261d528a331e74,
-            mid_withThreshold_7ba6d3ff6c69ffdc,
-            mid_create_faae19721acf326a,
+            mid_g_8677e670f9e68e2e,
+            mid_getHandler_b77ca012966a5dd0,
+            mid_getMaxCheckInterval_e651d05ccb464edb,
+            mid_getMaxIterationCount_412668abc8d889e9,
+            mid_getSolver_f12d4ed2528168bc,
+            mid_init_f808a4f21f8be825,
+            mid_isForward_89b302893bdbe1f1,
+            mid_withHandler_9395159e7dce049c,
+            mid_withMaxCheck_50da3c2e6691fad8,
+            mid_withMaxCheck_5cf9441a828d17d8,
+            mid_withMaxIter_365982a4db146285,
+            mid_withSolver_fe5c5b8b4e18fdc1,
+            mid_withThreshold_50da3c2e6691fad8,
+            mid_create_6399bb5ecfdc159d,
             max_mid
           };
 

@@ -15,8 +15,8 @@ namespace org {
         }
         namespace ndm {
           namespace odm {
-            class StateVectorKey;
             class StateVector;
+            class StateVectorKey;
           }
         }
       }
@@ -41,9 +41,9 @@ namespace org {
             class StateVectorKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_ab30e674d5bdf428,
-                mid_valueOf_a5c77010a5841215,
-                mid_values_dfa9e768bed2b9ea,
+                mid_process_aab33168dd69d950,
+                mid_valueOf_571ff0834a17d364,
+                mid_values_854b5f3a9e62a4a3,
                 max_mid
               };
 

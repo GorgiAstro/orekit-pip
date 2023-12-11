@@ -44,9 +44,9 @@ namespace org {
               class AngularVelocityKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_2d34aa8a2c0fdf6a,
-                  mid_valueOf_aa3ff05e0636580c,
-                  mid_values_ceb94f79f7dbea70,
+                  mid_process_1ff545b12bd19418,
+                  mid_valueOf_ec47ab5669823943,
+                  mid_values_9e1e329af2f3990b,
                   max_mid
                 };
 

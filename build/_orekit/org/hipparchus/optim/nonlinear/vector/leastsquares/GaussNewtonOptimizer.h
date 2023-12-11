@@ -9,9 +9,9 @@ namespace org {
       namespace nonlinear {
         namespace vector {
           namespace leastsquares {
-            class LeastSquaresOptimizer$Optimum;
-            class LeastSquaresOptimizer;
             class GaussNewtonOptimizer;
+            class LeastSquaresOptimizer;
+            class LeastSquaresOptimizer$Optimum;
             class LeastSquaresProblem;
           }
         }
@@ -40,14 +40,14 @@ namespace org {
             class GaussNewtonOptimizer : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_init$_f08bee1caa1a9d92,
-                mid_getDecomposer_43a2c3cb3afc9b3b,
-                mid_isFormNormalEquations_b108b35ef48e27bd,
-                mid_optimize_3488934cadbbcc09,
-                mid_toString_11b109bd155ca898,
-                mid_withDecomposer_d1e87854600a5967,
-                mid_withFormNormalEquations_2596334709b9d39b,
+                mid_init$_0640e6acf969ed28,
+                mid_init$_8ab888c115793311,
+                mid_getDecomposer_6715228bb9fc3272,
+                mid_isFormNormalEquations_89b302893bdbe1f1,
+                mid_optimize_07184cacaaa6a451,
+                mid_toString_3cffd47377eca18a,
+                mid_withDecomposer_a87eafbb47a48152,
+                mid_withFormNormalEquations_465ad36aa0b87989,
                 max_mid
               };
 

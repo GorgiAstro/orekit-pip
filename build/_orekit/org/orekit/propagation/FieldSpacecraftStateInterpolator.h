@@ -5,28 +5,28 @@
 
 namespace org {
   namespace orekit {
+    namespace utils {
+      class FieldAbsolutePVCoordinates;
+      class AngularDerivativesFilter;
+      class CartesianDerivativesFilter;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+    }
     namespace time {
-      class FieldTimeInterpolator;
-      class FieldTimeStamped;
       class FieldAbsoluteDate;
+      class FieldTimeInterpolator;
       class TimeStampedField;
+      class FieldTimeStamped;
     }
     namespace frames {
       class Frame;
-    }
-    namespace utils {
-      class AngularDerivativesFilter;
-      class CartesianDerivativesFilter;
-      class FieldAbsolutePVCoordinates;
     }
     namespace attitudes {
       class FieldAttitude;
     }
     namespace orbits {
       class FieldOrbit;
-    }
-    namespace propagation {
-      class FieldSpacecraftState;
     }
   }
 }
@@ -49,22 +49,22 @@ namespace org {
       class FieldSpacecraftStateInterpolator : public ::org::orekit::time::AbstractFieldTimeInterpolator {
        public:
         enum {
-          mid_init$_b5680f5c30eede66,
-          mid_init$_f67f9ac4338cd9bf,
-          mid_init$_1be06daec585e1cc,
-          mid_init$_6039fdd299a8bef6,
-          mid_init$_47d46a6c49da3b1b,
-          mid_init$_a37d544e446cc50c,
-          mid_getAbsPVAInterpolator_c5e311a9e5531e7d,
-          mid_getAdditionalStateInterpolator_c5e311a9e5531e7d,
-          mid_getAttitudeInterpolator_c5e311a9e5531e7d,
-          mid_getMassInterpolator_c5e311a9e5531e7d,
-          mid_getNbInterpolationPoints_570ce0828f81a2c1,
-          mid_getOrbitInterpolator_c5e311a9e5531e7d,
-          mid_getOutputFrame_b86f9f61d97a7244,
-          mid_getSubInterpolators_2afa36052df4765d,
-          mid_interpolate_bede014d8db77b67,
-          mid_interpolate_1fc44234b9e2bf71,
+          mid_init$_535d1f91a93c8b4d,
+          mid_init$_03d00ffd0ee81fe0,
+          mid_init$_e69fe3991d4122f6,
+          mid_init$_3eb98fb434e9f71a,
+          mid_init$_93057eaba5c5145b,
+          mid_init$_08bab9dd5568148d,
+          mid_getAbsPVAInterpolator_d0ccac9b4c6bdd55,
+          mid_getAdditionalStateInterpolator_d0ccac9b4c6bdd55,
+          mid_getAttitudeInterpolator_d0ccac9b4c6bdd55,
+          mid_getMassInterpolator_d0ccac9b4c6bdd55,
+          mid_getNbInterpolationPoints_412668abc8d889e9,
+          mid_getOrbitInterpolator_d0ccac9b4c6bdd55,
+          mid_getOutputFrame_6c9bc0a928c56d4e,
+          mid_getSubInterpolators_0d9551367f7ecdef,
+          mid_interpolate_8216054f5ace4033,
+          mid_interpolate_d78defbfa7b71041,
           max_mid
         };
 

@@ -4,17 +4,6 @@
 #include "org/orekit/forces/maneuvers/propulsion/PropulsionModel.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class FieldVector3D;
-          class Vector3D;
-        }
-      }
-    }
-  }
   namespace orekit {
     namespace attitudes {
       class Attitude;
@@ -24,6 +13,17 @@ namespace org {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -42,18 +42,18 @@ namespace org {
           class ThrustPropulsionModel : public ::org::orekit::forces::maneuvers::propulsion::PropulsionModel {
            public:
             enum {
-              mid_getAcceleration_a6c71e83efaf48d0,
-              mid_getAcceleration_19f36cd1a0a8b9bf,
-              mid_getDirection_abc43395638fd218,
-              mid_getFlowRate_432f3d328c15ec82,
-              mid_getFlowRate_8bdf60d5551eceaf,
-              mid_getFlowRate_0b7191d207b9680f,
-              mid_getIsp_432f3d328c15ec82,
-              mid_getMassDerivatives_0b7191d207b9680f,
-              mid_getMassDerivatives_8bdf60d5551eceaf,
-              mid_getThrustVector_abc43395638fd218,
-              mid_getThrustVector_8954761face5e1a7,
-              mid_getThrustVector_b42ac4b5bfb80fab,
+              mid_getAcceleration_28694fea3dbf2005,
+              mid_getAcceleration_53d7cdec4a9e3cd4,
+              mid_getDirection_3fff8c49d4e2dc6b,
+              mid_getFlowRate_1bbf81d80c47ecdd,
+              mid_getFlowRate_4ad317f7598a10a9,
+              mid_getFlowRate_810dcb8f9f5d191a,
+              mid_getIsp_1bbf81d80c47ecdd,
+              mid_getMassDerivatives_4ad317f7598a10a9,
+              mid_getMassDerivatives_810dcb8f9f5d191a,
+              mid_getThrustVector_3fff8c49d4e2dc6b,
+              mid_getThrustVector_61944e27a39e8290,
+              mid_getThrustVector_b61fb59a041240c6,
               max_mid
             };
 
@@ -75,8 +75,8 @@ namespace org {
             ::org::hipparchus::CalculusFieldElement getFlowRate(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
             jdouble getFlowRate(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
             jdouble getIsp(const ::org::orekit::propagation::SpacecraftState &) const;
-            jdouble getMassDerivatives(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
             ::org::hipparchus::CalculusFieldElement getMassDerivatives(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
+            jdouble getMassDerivatives(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
             ::org::hipparchus::geometry::euclidean::threed::Vector3D getThrustVector(const ::org::orekit::propagation::SpacecraftState &) const;
             ::org::hipparchus::geometry::euclidean::threed::Vector3D getThrustVector(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
             ::org::hipparchus::geometry::euclidean::threed::FieldVector3D getThrustVector(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;

@@ -25,9 +25,9 @@ namespace org {
       class SimplePointChecker : public ::org::hipparchus::optim::AbstractConvergenceChecker {
        public:
         enum {
-          mid_init$_8f2e782d5278b131,
-          mid_init$_01fb2c777e5def32,
-          mid_converged_0be2ff4627a3adb6,
+          mid_init$_ab23f4ae0fb33968,
+          mid_init$_427af08acba367ca,
+          mid_converged_ca0d344f89e25c9c,
           max_mid
         };
 

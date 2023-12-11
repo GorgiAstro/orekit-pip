@@ -31,10 +31,10 @@ namespace org {
         class Logit : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_init$_8f2e782d5278b131,
-            mid_value_dcbc7ce2902fa136,
-            mid_value_73d6acaa8ebd2b7d,
+            mid_init$_0640e6acf969ed28,
+            mid_init$_ab23f4ae0fb33968,
+            mid_value_7e960cd6eee376d8,
+            mid_value_3eb2b84dba0ab7d2,
             max_mid
           };
 

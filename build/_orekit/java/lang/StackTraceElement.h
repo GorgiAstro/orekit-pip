@@ -20,19 +20,19 @@ namespace java {
     class StackTraceElement : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_c08592dec40051d4,
-        mid_init$_5684073b2ab70eb7,
-        mid_equals_65c7d273e80d497a,
-        mid_getClassLoaderName_11b109bd155ca898,
-        mid_getClassName_11b109bd155ca898,
-        mid_getFileName_11b109bd155ca898,
-        mid_getLineNumber_570ce0828f81a2c1,
-        mid_getMethodName_11b109bd155ca898,
-        mid_getModuleName_11b109bd155ca898,
-        mid_getModuleVersion_11b109bd155ca898,
-        mid_hashCode_570ce0828f81a2c1,
-        mid_isNativeMethod_b108b35ef48e27bd,
-        mid_toString_11b109bd155ca898,
+        mid_init$_0db3ce164f010509,
+        mid_init$_e5e2a5da4cf3e3af,
+        mid_equals_221e8e85cb385209,
+        mid_getClassLoaderName_3cffd47377eca18a,
+        mid_getClassName_3cffd47377eca18a,
+        mid_getFileName_3cffd47377eca18a,
+        mid_getLineNumber_412668abc8d889e9,
+        mid_getMethodName_3cffd47377eca18a,
+        mid_getModuleName_3cffd47377eca18a,
+        mid_getModuleVersion_3cffd47377eca18a,
+        mid_hashCode_412668abc8d889e9,
+        mid_isNativeMethod_89b302893bdbe1f1,
+        mid_toString_3cffd47377eca18a,
         max_mid
       };
 

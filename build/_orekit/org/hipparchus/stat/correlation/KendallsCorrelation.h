@@ -28,13 +28,13 @@ namespace org {
         class KendallsCorrelation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_init$_a0befc7f3dc19e41,
-            mid_init$_c67473bd6cfaa69b,
-            mid_computeCorrelationMatrix_62c0bfb50b5dacc0,
-            mid_computeCorrelationMatrix_e9b72403ad502221,
-            mid_correlation_b561c6892e9976f8,
-            mid_getCorrelationMatrix_688b496048ff947b,
+            mid_init$_0640e6acf969ed28,
+            mid_init$_edb361bfdd1ad9ae,
+            mid_init$_f3731847577f13e6,
+            mid_computeCorrelationMatrix_05cc2960cde80114,
+            mid_computeCorrelationMatrix_340b47d21842d02c,
+            mid_correlation_628a76297e217f13,
+            mid_getCorrelationMatrix_70a207fcbc031df2,
             max_mid
           };
 

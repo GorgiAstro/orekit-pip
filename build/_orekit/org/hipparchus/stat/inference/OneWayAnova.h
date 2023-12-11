@@ -6,9 +6,9 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathIllegalStateException;
-      class NullArgumentException;
       class MathIllegalArgumentException;
+      class NullArgumentException;
+      class MathIllegalStateException;
     }
     namespace stat {
       namespace descriptive {
@@ -35,11 +35,11 @@ namespace org {
         class OneWayAnova : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_anovaFValue_7076a671f4259cfe,
-            mid_anovaPValue_7076a671f4259cfe,
-            mid_anovaPValue_d1cc7de1f6c52201,
-            mid_anovaTest_c02897b462a4df37,
+            mid_init$_0640e6acf969ed28,
+            mid_anovaFValue_1ab1799bb5ae5130,
+            mid_anovaPValue_1ab1799bb5ae5130,
+            mid_anovaPValue_6ee7ccf8d95c41ad,
+            mid_anovaTest_cee28d5d28508179,
             max_mid
           };
 

@@ -25,9 +25,9 @@ namespace org {
       class TimeStampedDouble : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a7786d9d355d3792,
-          mid_getDate_85703d13e302437e,
-          mid_getValue_dff5885c2c873297,
+          mid_init$_4ca6118c75b70100,
+          mid_getDate_7a97f7e149e79afb,
+          mid_getValue_557b8123390d8d0c,
           max_mid
         };
 

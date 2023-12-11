@@ -37,18 +37,18 @@ namespace org {
           class OceanTidesReader : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_d0bc48d5b00dc40c,
-              mid_canAdd_4bcf680fb63dc524,
-              mid_getMaxParseDegree_570ce0828f81a2c1,
-              mid_getMaxParseOrder_570ce0828f81a2c1,
-              mid_getSupportedNames_11b109bd155ca898,
-              mid_getWaves_2afa36052df4765d,
-              mid_setMaxParseDegree_99803b0791f320ff,
-              mid_setMaxParseOrder_99803b0791f320ff,
-              mid_stillAcceptsData_b108b35ef48e27bd,
-              mid_endParse_0fa09c18fee449d5,
-              mid_startParse_d0bc48d5b00dc40c,
-              mid_addWaveCoefficients_0d53f0d16fa90ec6,
+              mid_init$_f5ffdf29129ef90a,
+              mid_canAdd_1e0f61f59fdd7111,
+              mid_getMaxParseDegree_412668abc8d889e9,
+              mid_getMaxParseOrder_412668abc8d889e9,
+              mid_getSupportedNames_3cffd47377eca18a,
+              mid_getWaves_0d9551367f7ecdef,
+              mid_setMaxParseDegree_a3da1a935cb37f7b,
+              mid_setMaxParseOrder_a3da1a935cb37f7b,
+              mid_stillAcceptsData_89b302893bdbe1f1,
+              mid_addWaveCoefficients_9f0359e61fbe1af2,
+              mid_endParse_0640e6acf969ed28,
+              mid_startParse_f5ffdf29129ef90a,
               max_mid
             };
 

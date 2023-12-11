@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -14,20 +13,21 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
   namespace orekit {
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
-    namespace forces {
-      class ForceModel;
+    namespace bodies {
+      class CelestialBody;
     }
     namespace utils {
       class ParameterDriver;
     }
-    namespace bodies {
-      class CelestialBody;
+    namespace forces {
+      class ForceModel;
     }
   }
 }
@@ -50,14 +50,14 @@ namespace org {
         class DeSitterRelativity : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_init$_628ee7a3e714b75c,
-            mid_acceleration_8954761face5e1a7,
-            mid_acceleration_b42ac4b5bfb80fab,
-            mid_dependsOnPositionOnly_b108b35ef48e27bd,
-            mid_getEarth_624686a38a6b107c,
-            mid_getParametersDrivers_2afa36052df4765d,
-            mid_getSun_624686a38a6b107c,
+            mid_init$_0640e6acf969ed28,
+            mid_init$_9a72c2af019e2130,
+            mid_acceleration_61944e27a39e8290,
+            mid_acceleration_b61fb59a041240c6,
+            mid_dependsOnPositionOnly_89b302893bdbe1f1,
+            mid_getEarth_40e74583267ad550,
+            mid_getParametersDrivers_0d9551367f7ecdef,
+            mid_getSun_40e74583267ad550,
             max_mid
           };
 

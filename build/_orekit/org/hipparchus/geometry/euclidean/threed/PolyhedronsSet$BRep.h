@@ -37,9 +37,9 @@ namespace org {
           class PolyhedronsSet$BRep : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_6701c064a13f8d2f,
-              mid_getFacets_2afa36052df4765d,
-              mid_getVertices_2afa36052df4765d,
+              mid_init$_aaa4588ba4c2491b,
+              mid_getFacets_0d9551367f7ecdef,
+              mid_getVertices_0d9551367f7ecdef,
               max_mid
             };
 

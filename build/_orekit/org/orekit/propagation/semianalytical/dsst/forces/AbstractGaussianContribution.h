@@ -4,38 +4,38 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
+      class PropagationType;
       namespace semianalytical {
         namespace dsst {
-          namespace forces {
-            class DSSTForceModel;
-            class ShortPeriodTerms;
-            class FieldShortPeriodTerms;
-          }
           namespace utilities {
             class AuxiliaryElements;
             class FieldAuxiliaryElements;
           }
+          namespace forces {
+            class FieldShortPeriodTerms;
+            class ShortPeriodTerms;
+            class DSSTForceModel;
+          }
         }
       }
       class FieldSpacecraftState;
-      class PropagationType;
       class SpacecraftState;
     }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
     }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
     namespace utils {
       class ParameterDriver;
     }
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -58,21 +58,21 @@ namespace org {
             class AbstractGaussianContribution : public ::java::lang::Object {
              public:
               enum {
-                mid_getMeanElementRate_5dbca2d049b16b82,
-                mid_getMeanElementRate_c0df8831049775b0,
-                mid_getParametersDrivers_2afa36052df4765d,
-                mid_init_826b4eda94da4e78,
-                mid_init_8e8de2be1664674a,
-                mid_initializeShortPeriodTerms_cd6a8183d9477030,
-                mid_initializeShortPeriodTerms_c7d75d32fd67f743,
-                mid_registerAttitudeProvider_3cff7c75ea06698c,
-                mid_updateShortPeriodTerms_a9748e634dd1c969,
-                mid_updateShortPeriodTerms_120865f9c5cc3bda,
-                mid_getLLimits_7442885516ff2293,
-                mid_getLLimits_04690aaa2b6db52c,
-                mid_getMeanElementRate_5ce81bda82dfab26,
-                mid_getMeanElementRate_2fdd4ae6d3a08d37,
-                mid_getParametersDriversWithoutMu_2afa36052df4765d,
+                mid_getMeanElementRate_3573019cca22a7a6,
+                mid_getMeanElementRate_6930c150caff50e0,
+                mid_getParametersDrivers_0d9551367f7ecdef,
+                mid_init_0472264ad6f40bc2,
+                mid_init_811e49dad2467b67,
+                mid_initializeShortPeriodTerms_57b295149dcd4abd,
+                mid_initializeShortPeriodTerms_0791dbeb06a23554,
+                mid_registerAttitudeProvider_8fa6c0c067ead7b2,
+                mid_updateShortPeriodTerms_114c99ef73dfde56,
+                mid_updateShortPeriodTerms_a9be3da5be85857d,
+                mid_getMeanElementRate_dd9e811b89bb8dca,
+                mid_getMeanElementRate_c9a5e53b1d67f4e0,
+                mid_getLLimits_8babb6fb34d6b24d,
+                mid_getLLimits_233f032b171b49d2,
+                mid_getParametersDriversWithoutMu_0d9551367f7ecdef,
                 max_mid
               };
 
@@ -87,8 +87,8 @@ namespace org {
               }
               AbstractGaussianContribution(const AbstractGaussianContribution& obj) : ::java::lang::Object(obj) {}
 
-              JArray< jdouble > getMeanElementRate(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::AuxiliaryElements &, const JArray< jdouble > &) const;
               JArray< ::org::hipparchus::CalculusFieldElement > getMeanElementRate(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::FieldAuxiliaryElements &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
+              JArray< jdouble > getMeanElementRate(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::AuxiliaryElements &, const JArray< jdouble > &) const;
               ::java::util::List getParametersDrivers() const;
               void init(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::time::AbsoluteDate &) const;
               void init(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::time::FieldAbsoluteDate &) const;

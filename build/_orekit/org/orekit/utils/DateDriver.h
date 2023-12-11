@@ -26,10 +26,10 @@ namespace org {
       class DateDriver : public ::org::orekit::utils::ParameterDriver {
        public:
         enum {
-          mid_init$_75586423df931f63,
-          mid_getBaseDate_85703d13e302437e,
-          mid_getDate_85703d13e302437e,
-          mid_isStart_b108b35ef48e27bd,
+          mid_init$_521d2640b298dfcf,
+          mid_getBaseDate_7a97f7e149e79afb,
+          mid_getDate_7a97f7e149e79afb,
+          mid_isStart_89b302893bdbe1f1,
           max_mid
         };
 

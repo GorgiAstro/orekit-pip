@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
       class SpacecraftState;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,7 +25,7 @@ namespace org {
         class AdapterPropagator$DifferentialEffect : public ::java::lang::Object {
          public:
           enum {
-            mid_apply_f43130c50e9fafeb,
+            mid_apply_2c4cc16b11f79a6c,
             max_mid
           };
 

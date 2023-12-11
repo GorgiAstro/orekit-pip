@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace propagation {
       class SpacecraftState;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -28,9 +28,9 @@ namespace org {
         class OrekitFixedStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_finish_0ee5c56004643a2e,
-            mid_handleStep_0ee5c56004643a2e,
-            mid_init_eb5e26882ba2d9b9,
+            mid_finish_8655761ebf04b503,
+            mid_handleStep_8655761ebf04b503,
+            mid_init_a423d7aa7c2fe850,
             max_mid
           };
 

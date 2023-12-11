@@ -5,6 +5,9 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -13,9 +16,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -36,10 +36,10 @@ namespace org {
             class Observation : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_2d550fb141a705f2,
-                mid_getEpoch_85703d13e302437e,
-                mid_getMeasurement_dff5885c2c873297,
-                mid_getType_e58593622c19a861,
+                mid_init$_f1cf86cd74f431e1,
+                mid_getEpoch_7a97f7e149e79afb,
+                mid_getMeasurement_557b8123390d8d0c,
+                mid_getType_586ffde90508f09b,
                 max_mid
               };
 

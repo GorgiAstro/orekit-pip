@@ -18,11 +18,11 @@ namespace org {
         class EulerIntegrator : public ::org::hipparchus::ode::nonstiff::RungeKuttaIntegrator {
          public:
           enum {
-            mid_init$_17db3a65980d3441,
-            mid_getA_0358d8ea02f2cdb1,
-            mid_getB_60c7040667a7dc5c,
-            mid_getC_60c7040667a7dc5c,
-            mid_createInterpolator_2a06dcdb9833144e,
+            mid_init$_10f281d777284cea,
+            mid_getA_8cf5267aa13a77f3,
+            mid_getB_a53a7513ecedada2,
+            mid_getC_a53a7513ecedada2,
+            mid_createInterpolator_1c9938281777a19f,
             max_mid
           };
 

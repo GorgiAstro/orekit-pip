@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace partitioning {
         class SubHyperplane;
-        class Region;
         class Hyperplane;
+        class Region;
       }
       class Point;
     }
@@ -30,14 +30,14 @@ namespace org {
         class Hyperplane : public ::java::lang::Object {
          public:
           enum {
-            mid_copySelf_a9ae8c67d757c80a,
-            mid_emptyHyperplane_6e34449919366687,
-            mid_getOffset_07bb97c2794cf6b1,
-            mid_getTolerance_dff5885c2c873297,
-            mid_project_c48805c2dda937c6,
-            mid_sameOrientationAs_5bc340c02d9ac484,
-            mid_wholeHyperplane_6e34449919366687,
-            mid_wholeSpace_b72f8ac992e26582,
+            mid_copySelf_db5d0f7cdc937b69,
+            mid_emptyHyperplane_0629297ff6ae927a,
+            mid_getOffset_cf1fec2b7b1c0efe,
+            mid_getTolerance_557b8123390d8d0c,
+            mid_project_328d0d966eeb9668,
+            mid_sameOrientationAs_cb9274a363000a77,
+            mid_wholeHyperplane_0629297ff6ae927a,
+            mid_wholeSpace_fd006079784937f2,
             max_mid
           };
 

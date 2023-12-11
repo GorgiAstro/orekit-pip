@@ -3,6 +3,14 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class SortedSet;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace data {
@@ -12,14 +20,6 @@ namespace org {
       class AbsoluteDate;
       class TimeScale;
     }
-  }
-}
-namespace java {
-  namespace util {
-    class SortedSet;
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,13 +34,13 @@ namespace org {
             class AbstractSolarActivityDataLoader : public ::java::lang::Object {
              public:
               enum {
-                mid_getDataSet_917725130bbb61f1,
-                mid_getMaxDate_85703d13e302437e,
-                mid_getMinDate_85703d13e302437e,
-                mid_getUTC_c39031284193adbe,
-                mid_setMaxDate_600a2a61652bc473,
-                mid_setMinDate_600a2a61652bc473,
-                mid_stillAcceptsData_b108b35ef48e27bd,
+                mid_getDataSet_c6b6a992db588a51,
+                mid_getMaxDate_7a97f7e149e79afb,
+                mid_getMinDate_7a97f7e149e79afb,
+                mid_getUTC_527ee9dde1a96470,
+                mid_setMaxDate_20affcbd28542333,
+                mid_setMinDate_20affcbd28542333,
+                mid_stillAcceptsData_89b302893bdbe1f1,
                 max_mid
               };
 

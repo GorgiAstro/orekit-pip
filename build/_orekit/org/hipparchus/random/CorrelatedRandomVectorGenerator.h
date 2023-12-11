@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
-    namespace linear {
-      class RealMatrix;
-    }
     namespace random {
       class NormalizedRandomGenerator;
       class RandomVectorGenerator;
+    }
+    namespace linear {
+      class RealMatrix;
     }
   }
 }
@@ -28,12 +28,12 @@ namespace org {
       class CorrelatedRandomVectorGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_fb090446522c63e2,
-          mid_init$_2c160632cdf05391,
-          mid_getGenerator_8b247f8f2020e9d0,
-          mid_getRank_570ce0828f81a2c1,
-          mid_getRootMatrix_688b496048ff947b,
-          mid_nextVector_60c7040667a7dc5c,
+          mid_init$_0175c4d47bc18395,
+          mid_init$_1671dd5bf6cbe2ec,
+          mid_getGenerator_bbf29926cadb12ad,
+          mid_getRank_412668abc8d889e9,
+          mid_getRootMatrix_70a207fcbc031df2,
+          mid_nextVector_a53a7513ecedada2,
           max_mid
         };
 

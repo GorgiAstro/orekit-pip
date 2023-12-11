@@ -3,17 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    namespace stream {
-      class Stream;
-    }
-  }
-  namespace lang {
-    class Class;
-    class IllegalStateException;
-  }
-}
 namespace org {
   namespace orekit {
     namespace utils {
@@ -26,6 +15,17 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class IllegalStateException;
+    class Class;
+  }
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -35,21 +35,21 @@ namespace org {
       class GenericTimeStampedCache : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7f578824dbb30780,
-          mid_init$_78773a34e0cc3e3a,
-          mid_getEarliest_c2a1e08c7d64b02c,
-          mid_getEntries_570ce0828f81a2c1,
-          mid_getGenerateCalls_570ce0828f81a2c1,
-          mid_getGenerator_8de8e24d5cfdcebf,
-          mid_getGetNeighborsCalls_570ce0828f81a2c1,
-          mid_getLatest_c2a1e08c7d64b02c,
-          mid_getMaxNeighborsSize_570ce0828f81a2c1,
-          mid_getMaxSlots_570ce0828f81a2c1,
-          mid_getMaxSpan_dff5885c2c873297,
-          mid_getNeighbors_a067290de6165283,
-          mid_getNewSlotQuantumGap_dff5885c2c873297,
-          mid_getSlots_570ce0828f81a2c1,
-          mid_getSlotsEvictions_570ce0828f81a2c1,
+          mid_init$_0f6126ec31c23fbe,
+          mid_init$_7dccdc905f2755d6,
+          mid_getEarliest_da8f710d3d2958bf,
+          mid_getEntries_412668abc8d889e9,
+          mid_getGenerateCalls_412668abc8d889e9,
+          mid_getGenerator_2c8890bb845f5c9a,
+          mid_getGetNeighborsCalls_412668abc8d889e9,
+          mid_getLatest_da8f710d3d2958bf,
+          mid_getMaxNeighborsSize_412668abc8d889e9,
+          mid_getMaxSlots_412668abc8d889e9,
+          mid_getMaxSpan_557b8123390d8d0c,
+          mid_getNeighbors_b9470a4d1609cf1f,
+          mid_getNewSlotQuantumGap_557b8123390d8d0c,
+          mid_getSlots_412668abc8d889e9,
+          mid_getSlotsEvictions_412668abc8d889e9,
           max_mid
         };
 

@@ -3,26 +3,26 @@
 
 #include "org/orekit/estimation/measurements/modifiers/AbstractShapiroBaseModifier.h"
 
-namespace org {
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class InterSatellitesRange;
-        class EstimatedMeasurementBase;
-        class EstimationModifier;
-      }
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace estimation {
+      namespace measurements {
+        class EstimatedMeasurementBase;
+        class InterSatellitesRange;
+        class EstimationModifier;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -36,9 +36,9 @@ namespace org {
           class ShapiroInterSatelliteRangeModifier : public ::org::orekit::estimation::measurements::modifiers::AbstractShapiroBaseModifier {
            public:
             enum {
-              mid_init$_17db3a65980d3441,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_modifyWithoutDerivatives_d1815d998cba71e9,
+              mid_init$_10f281d777284cea,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_modifyWithoutDerivatives_e471490df8741b73,
               max_mid
             };
 

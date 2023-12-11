@@ -4,11 +4,11 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace io {
-    class Serializable;
-  }
   namespace text {
     class AttributedCharacterIterator$Attribute;
+  }
+  namespace io {
+    class Serializable;
   }
   namespace lang {
     class Class;
@@ -23,11 +23,11 @@ namespace java {
     class AttributedCharacterIterator$Attribute : public ::java::lang::Object {
      public:
       enum {
-        mid_equals_65c7d273e80d497a,
-        mid_hashCode_570ce0828f81a2c1,
-        mid_toString_11b109bd155ca898,
-        mid_getName_11b109bd155ca898,
-        mid_readResolve_4d26fd885228c716,
+        mid_equals_221e8e85cb385209,
+        mid_hashCode_412668abc8d889e9,
+        mid_toString_3cffd47377eca18a,
+        mid_getName_3cffd47377eca18a,
+        mid_readResolve_e661fe3ba2fafb22,
         max_mid
       };
 

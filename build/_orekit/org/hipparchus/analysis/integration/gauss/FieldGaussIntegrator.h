@@ -5,16 +5,16 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
-    namespace util {
-      class Pair;
-    }
     namespace exception {
       class MathIllegalArgumentException;
     }
     namespace analysis {
       class CalculusFieldUnivariateFunction;
     }
+    namespace util {
+      class Pair;
+    }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -33,12 +33,12 @@ namespace org {
           class FieldGaussIntegrator : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_3fca46bb93fd3e69,
-              mid_init$_cbc98e7d0c0477db,
-              mid_getNumberOfPoints_570ce0828f81a2c1,
-              mid_getPoint_93058f0552012043,
-              mid_getWeight_93058f0552012043,
-              mid_integrate_d4d4f68a6723feee,
+              mid_init$_7cd681864cf513c2,
+              mid_init$_2c0fd42a693364fa,
+              mid_getNumberOfPoints_412668abc8d889e9,
+              mid_getPoint_8b3a1c735adfa4bc,
+              mid_getWeight_8b3a1c735adfa4bc,
+              mid_integrate_cf175d31250bee45,
               max_mid
             };
 

@@ -3,13 +3,21 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
         namespace gnss {
-          class CycleSlipDetectorResults;
           class CycleSlipDetectors;
+          class CycleSlipDetectorResults;
         }
       }
     }
@@ -20,14 +28,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -41,14 +41,14 @@ namespace org {
           class AbstractCycleSlipDetector : public ::java::lang::Object {
            public:
             enum {
-              mid_detect_667c8a8776700e01,
-              mid_getResults_2afa36052df4765d,
-              mid_getMinMeasurementNumber_570ce0828f81a2c1,
-              mid_getMaxTimeBeetween2Measurement_dff5885c2c873297,
-              mid_getStuffReference_2afa36052df4765d,
-              mid_cycleSlipDataSet_37ef30963779752d,
-              mid_manageData_5e249044f63168db,
-              mid_setName_571eb7cd9a331044,
+              mid_detect_77cbef3c12dc7892,
+              mid_cycleSlipDataSet_7660552c05323b39,
+              mid_getResults_0d9551367f7ecdef,
+              mid_getStuffReference_0d9551367f7ecdef,
+              mid_getMaxTimeBeetween2Measurement_557b8123390d8d0c,
+              mid_getMinMeasurementNumber_412668abc8d889e9,
+              mid_manageData_7cae3eafa8e6978c,
+              mid_setName_3232b7e9138747dc,
               max_mid
             };
 

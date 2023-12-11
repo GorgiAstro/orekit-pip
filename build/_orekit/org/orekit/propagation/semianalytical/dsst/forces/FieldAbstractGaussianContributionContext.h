@@ -3,14 +3,14 @@
 
 #include "org/orekit/propagation/semianalytical/dsst/forces/FieldForceModelContext.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -25,15 +25,15 @@ namespace org {
             class FieldAbstractGaussianContributionContext : public ::org::orekit::propagation::semianalytical::dsst::forces::FieldForceModelContext {
              public:
               enum {
-                mid_getA_eba8e72a22c984ac,
-                mid_getCo2AB_eba8e72a22c984ac,
-                mid_getMeanMotion_eba8e72a22c984ac,
-                mid_getMu_eba8e72a22c984ac,
-                mid_getOOA_eba8e72a22c984ac,
-                mid_getOOAB_eba8e72a22c984ac,
-                mid_getOoBpo_eba8e72a22c984ac,
-                mid_getOoMU_eba8e72a22c984ac,
-                mid_getTon2a_eba8e72a22c984ac,
+                mid_getA_613c8f46c659f636,
+                mid_getCo2AB_613c8f46c659f636,
+                mid_getMeanMotion_613c8f46c659f636,
+                mid_getMu_613c8f46c659f636,
+                mid_getOOA_613c8f46c659f636,
+                mid_getOOAB_613c8f46c659f636,
+                mid_getOoBpo_613c8f46c659f636,
+                mid_getOoMU_613c8f46c659f636,
+                mid_getTon2a_613c8f46c659f636,
                 max_mid
               };
 

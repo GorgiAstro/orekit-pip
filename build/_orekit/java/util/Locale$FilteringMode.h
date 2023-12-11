@@ -20,8 +20,8 @@ namespace java {
     class Locale$FilteringMode : public ::java::lang::Enum {
      public:
       enum {
-        mid_valueOf_e78670ebdf0db16b,
-        mid_values_1fd1490cf0f020a8,
+        mid_valueOf_ec4517dd93c504ca,
+        mid_values_a8d7c2de5d24f592,
         max_mid
       };
 

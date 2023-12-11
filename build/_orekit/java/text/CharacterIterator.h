@@ -17,16 +17,16 @@ namespace java {
     class CharacterIterator : public ::java::lang::Cloneable {
      public:
       enum {
-        mid_clone_4d26fd885228c716,
-        mid_current_7818f5b58320cd1f,
-        mid_first_7818f5b58320cd1f,
-        mid_getBeginIndex_570ce0828f81a2c1,
-        mid_getEndIndex_570ce0828f81a2c1,
-        mid_getIndex_570ce0828f81a2c1,
-        mid_last_7818f5b58320cd1f,
-        mid_next_7818f5b58320cd1f,
-        mid_previous_7818f5b58320cd1f,
-        mid_setIndex_9d4c2604195fbadb,
+        mid_clone_e661fe3ba2fafb22,
+        mid_current_d156d1ce330f6993,
+        mid_first_d156d1ce330f6993,
+        mid_getBeginIndex_412668abc8d889e9,
+        mid_getEndIndex_412668abc8d889e9,
+        mid_getIndex_412668abc8d889e9,
+        mid_last_d156d1ce330f6993,
+        mid_next_d156d1ce330f6993,
+        mid_previous_d156d1ce330f6993,
+        mid_setIndex_4affd00329d5d4cf,
         max_mid
       };
 

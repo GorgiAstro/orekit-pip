@@ -3,6 +3,11 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace geometry {
@@ -10,11 +15,6 @@ namespace org {
         class FieldOfView;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,7 +27,7 @@ namespace org {
         class AbstractFieldOfView : public ::java::lang::Object {
          public:
           enum {
-            mid_getMargin_dff5885c2c873297,
+            mid_getMargin_557b8123390d8d0c,
             max_mid
           };
 

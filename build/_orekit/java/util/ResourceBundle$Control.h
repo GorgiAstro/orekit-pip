@@ -4,21 +4,21 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace lang {
-    class IllegalAccessException;
-    class InstantiationException;
-    class Class;
-    class String;
-    class ClassLoader;
-  }
   namespace util {
+    class ResourceBundle$Control;
     class Locale;
     class List;
-    class ResourceBundle$Control;
     class ResourceBundle;
   }
   namespace io {
     class IOException;
+  }
+  namespace lang {
+    class InstantiationException;
+    class IllegalAccessException;
+    class Class;
+    class String;
+    class ClassLoader;
   }
 }
 template<class T> class JArray;
@@ -29,16 +29,16 @@ namespace java {
     class ResourceBundle$Control : public ::java::lang::Object {
      public:
       enum {
-        mid_getCandidateLocales_18ba79b982b22ae5,
-        mid_getControl_4dfa5fc487ef83e5,
-        mid_getFallbackLocale_fbb9cd1fb8d7bba3,
-        mid_getFormats_aade4ea8882e7a2c,
-        mid_getNoFallbackControl_4dfa5fc487ef83e5,
-        mid_getTimeToLive_85ce65c5709e688f,
-        mid_needsReload_2e0fe1dfd18b4d7d,
-        mid_newBundle_b7c54cce3a9709ed,
-        mid_toBundleName_ce588e67ac292ba0,
-        mid_toResourceName_d3f6016a3bf93dcd,
+        mid_getCandidateLocales_31d5ff3a82e11577,
+        mid_getControl_5a94baa170b5bb61,
+        mid_getFallbackLocale_5b93a5dd19b99d50,
+        mid_getFormats_112f9b169ddc4fbe,
+        mid_getNoFallbackControl_5a94baa170b5bb61,
+        mid_getTimeToLive_5b4fedcee16880a3,
+        mid_needsReload_65cfc4d7faf66b3e,
+        mid_newBundle_c5caa61954589488,
+        mid_toBundleName_23e0ac6ff2600e8d,
+        mid_toResourceName_495add03b8c9417b,
         max_mid
       };
 

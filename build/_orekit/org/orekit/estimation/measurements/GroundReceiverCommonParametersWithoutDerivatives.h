@@ -8,11 +8,11 @@ namespace org {
     namespace frames {
       class Transform;
     }
-    namespace utils {
-      class TimeStampedPVCoordinates;
-    }
     namespace propagation {
       class SpacecraftState;
+    }
+    namespace utils {
+      class TimeStampedPVCoordinates;
     }
   }
 }
@@ -31,13 +31,13 @@ namespace org {
         class GroundReceiverCommonParametersWithoutDerivatives : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_e793b63d9cc45475,
-            mid_getOffsetToInertialDownlink_09afc11266121652,
-            mid_getState_c6311115fea01a34,
-            mid_getStationDownlink_c204436deca11d94,
-            mid_getTauD_dff5885c2c873297,
-            mid_getTransitPV_c204436deca11d94,
-            mid_getTransitState_c6311115fea01a34,
+            mid_init$_fb8b97640875587d,
+            mid_getOffsetToInertialDownlink_1168c6fb2fb8754f,
+            mid_getState_15e85d5301b90ef8,
+            mid_getStationDownlink_daf15abc21907508,
+            mid_getTauD_557b8123390d8d0c,
+            mid_getTransitPV_daf15abc21907508,
+            mid_getTransitState_15e85d5301b90ef8,
             max_mid
           };
 

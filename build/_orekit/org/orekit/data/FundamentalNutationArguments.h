@@ -18,18 +18,18 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace utils {
-      class IERSConventions;
-    }
-    namespace time {
-      class TimeScales;
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-      class TimeScale;
-    }
     namespace data {
       class BodiesElements;
       class FieldBodiesElements;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class TimeScales;
+      class AbsoluteDate;
+      class TimeScale;
+    }
+    namespace utils {
+      class IERSConventions;
     }
   }
 }
@@ -42,12 +42,12 @@ namespace org {
       class FundamentalNutationArguments : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_6be915333cfac2fc,
-          mid_init$_34b40839a1481ffd,
-          mid_init$_0690ab0f15e6cf3f,
-          mid_init$_1cb3f8250f029147,
-          mid_evaluateAll_697ddc758d45542c,
-          mid_evaluateAll_c625c7afc26b358d,
+          mid_init$_fa2598418e3fde16,
+          mid_init$_a1d61436263fee86,
+          mid_init$_4bab9f8c6e6f0cd0,
+          mid_init$_c10c391be25d3cbe,
+          mid_evaluateAll_51d87a2a5d743374,
+          mid_evaluateAll_6ac8976527e5e845,
           max_mid
         };
 

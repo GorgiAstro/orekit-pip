@@ -8,12 +8,12 @@ namespace org {
     namespace gnss {
       namespace metric {
         namespace ntrip {
-          class RecordType;
-          class NavigationSystem;
           class StreamedMessage;
-          class CarrierPhase;
+          class NavigationSystem;
           class DataFormat;
+          class CarrierPhase;
           class Authentication;
+          class RecordType;
         }
       }
     }
@@ -39,25 +39,25 @@ namespace org {
           class DataStreamRecord : public ::org::orekit::gnss::metric::ntrip::Record {
            public:
             enum {
-              mid_init$_d0bc48d5b00dc40c,
-              mid_areFeesRequired_b108b35ef48e27bd,
-              mid_getAuthentication_9b280d308e8278f6,
-              mid_getBitRate_570ce0828f81a2c1,
-              mid_getCarrierPhase_90a98dc6928530e7,
-              mid_getCompressionEncryption_11b109bd155ca898,
-              mid_getCountry_11b109bd155ca898,
-              mid_getFormat_d3caf78f280234e4,
-              mid_getFormatDetails_2afa36052df4765d,
-              mid_getGenerator_11b109bd155ca898,
-              mid_getLatitude_dff5885c2c873297,
-              mid_getLongitude_dff5885c2c873297,
-              mid_getMountPoint_11b109bd155ca898,
-              mid_getNavigationSystems_2afa36052df4765d,
-              mid_getNetwork_11b109bd155ca898,
-              mid_getRecordType_7952bb756bff2dbf,
-              mid_getSourceIdentifier_11b109bd155ca898,
-              mid_isNMEARequired_b108b35ef48e27bd,
-              mid_isNetworked_b108b35ef48e27bd,
+              mid_init$_f5ffdf29129ef90a,
+              mid_areFeesRequired_89b302893bdbe1f1,
+              mid_getAuthentication_c5e2d1332c099f0d,
+              mid_getBitRate_412668abc8d889e9,
+              mid_getCarrierPhase_599f6ea2a23b069a,
+              mid_getCompressionEncryption_3cffd47377eca18a,
+              mid_getCountry_3cffd47377eca18a,
+              mid_getFormat_bb02fb13bbd4a601,
+              mid_getFormatDetails_0d9551367f7ecdef,
+              mid_getGenerator_3cffd47377eca18a,
+              mid_getLatitude_557b8123390d8d0c,
+              mid_getLongitude_557b8123390d8d0c,
+              mid_getMountPoint_3cffd47377eca18a,
+              mid_getNavigationSystems_0d9551367f7ecdef,
+              mid_getNetwork_3cffd47377eca18a,
+              mid_getRecordType_2923d5139aa846c0,
+              mid_getSourceIdentifier_3cffd47377eca18a,
+              mid_isNMEARequired_89b302893bdbe1f1,
+              mid_isNetworked_89b302893bdbe1f1,
               max_mid
             };
 

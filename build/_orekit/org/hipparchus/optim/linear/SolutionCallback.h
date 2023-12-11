@@ -26,9 +26,9 @@ namespace org {
         class SolutionCallback : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_getSolution_4ae915e35f441d39,
-            mid_isSolutionOptimal_b108b35ef48e27bd,
+            mid_init$_0640e6acf969ed28,
+            mid_getSolution_adf293b2643f22b0,
+            mid_isSolutionOptimal_89b302893bdbe1f1,
             max_mid
           };
 

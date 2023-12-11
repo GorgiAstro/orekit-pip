@@ -4,24 +4,24 @@
 #include "org/orekit/propagation/events/FieldAbstractDetector.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-    class Field;
-  }
   namespace orekit {
-    namespace bodies {
-      class OneAxisEllipsoid;
-    }
     namespace utils {
       class OccultationEngine;
       class ExtendedPVCoordinatesProvider;
     }
     namespace propagation {
+      class FieldSpacecraftState;
       namespace events {
         class FieldEclipseDetector;
       }
-      class FieldSpacecraftState;
     }
+    namespace bodies {
+      class OneAxisEllipsoid;
+    }
+  }
+  namespace hipparchus {
+    class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -39,16 +39,16 @@ namespace org {
         class FieldEclipseDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_4d5ea8a562078a81,
-            mid_init$_1bf89e9c93e81794,
-            mid_g_41a008afe53da855,
-            mid_getMargin_eba8e72a22c984ac,
-            mid_getOccultationEngine_a79c04d8e5243995,
-            mid_getTotalEclipse_b108b35ef48e27bd,
-            mid_withMargin_dc9df869634ffc65,
-            mid_withPenumbra_4914423b50a4170c,
-            mid_withUmbra_4914423b50a4170c,
-            mid_create_13c93b03c50400ac,
+            mid_init$_9b6fc1cd358f2cd2,
+            mid_init$_aa9a75272aa75b60,
+            mid_g_de1c2d709eb2829c,
+            mid_getMargin_613c8f46c659f636,
+            mid_getOccultationEngine_fed7baa95ffa6698,
+            mid_getTotalEclipse_89b302893bdbe1f1,
+            mid_withMargin_51df47e11579db04,
+            mid_withPenumbra_e6d3ee8fd4b41dad,
+            mid_withUmbra_e6d3ee8fd4b41dad,
+            mid_create_9e9987a8275a8085,
             max_mid
           };
 

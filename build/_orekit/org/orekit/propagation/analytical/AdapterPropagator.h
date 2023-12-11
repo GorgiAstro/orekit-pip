@@ -3,23 +3,23 @@
 
 #include "org/orekit/propagation/analytical/AbstractAnalyticalPropagator.h"
 
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace analytical {
-        class AdapterPropagator$DifferentialEffect;
-      }
-      class Propagator;
-      class SpacecraftState;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      class Propagator;
+      namespace analytical {
+        class AdapterPropagator$DifferentialEffect;
+      }
+      class SpacecraftState;
+    }
   }
 }
 template<class T> class JArray;
@@ -32,16 +32,16 @@ namespace org {
         class AdapterPropagator : public ::org::orekit::propagation::analytical::AbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_a4d05ab8d79173b5,
-            mid_addEffect_61deea2f3d73b301,
-            mid_getEffects_2afa36052df4765d,
-            mid_getInitialState_c6311115fea01a34,
-            mid_getPropagator_8afbda2d6a487743,
-            mid_resetInitialState_0ee5c56004643a2e,
-            mid_propagateOrbit_7a8f4c854607bed6,
-            mid_getMass_bf1d7732f1acb697,
-            mid_resetIntermediateState_33f4696e4edaa03c,
-            mid_basicPropagate_fbff2ff5554d95e1,
+            mid_init$_52713bb4a21e1f43,
+            mid_addEffect_3931de52c7764f12,
+            mid_getEffects_0d9551367f7ecdef,
+            mid_getInitialState_15e85d5301b90ef8,
+            mid_getPropagator_8d6cf3295e825916,
+            mid_resetInitialState_8655761ebf04b503,
+            mid_propagateOrbit_9e937c0ae63d8022,
+            mid_resetIntermediateState_45bf76e836befe86,
+            mid_getMass_b0b988f941da47d8,
+            mid_basicPropagate_15e0d02372b1347b,
             max_mid
           };
 

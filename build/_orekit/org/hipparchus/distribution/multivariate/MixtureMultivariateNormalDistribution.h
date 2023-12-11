@@ -14,14 +14,14 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace util {
-      class Pair;
-    }
     namespace exception {
       class MathIllegalArgumentException;
     }
     namespace random {
       class RandomGenerator;
+    }
+    namespace util {
+      class Pair;
     }
     namespace distribution {
       namespace multivariate {
@@ -40,9 +40,9 @@ namespace org {
         class MixtureMultivariateNormalDistribution : public ::org::hipparchus::distribution::multivariate::MixtureMultivariateRealDistribution {
          public:
           enum {
-            mid_init$_de3e021e7266b71e,
-            mid_init$_a3d6463b27f37fbe,
-            mid_init$_e0a095fa97bddc94,
+            mid_init$_4ccaedadb068bdeb,
+            mid_init$_6ec0adca852af91a,
+            mid_init$_afdc84ae249d04a9,
             max_mid
           };
 

@@ -5,17 +5,17 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      namespace events {
-        class InterSatDirectViewDetector;
-      }
-      class SpacecraftState;
-    }
     namespace utils {
       class PVCoordinatesProvider;
     }
     namespace bodies {
       class OneAxisEllipsoid;
+    }
+    namespace propagation {
+      class SpacecraftState;
+      namespace events {
+        class InterSatDirectViewDetector;
+      }
     }
   }
 }
@@ -34,13 +34,13 @@ namespace org {
         class InterSatDirectViewDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_9bc1ae8a0ce1e629,
-            mid_g_432f3d328c15ec82,
-            mid_getCentralBody_000d48aad6c74b0a,
-            mid_getSecondary_903aca6bb4523e29,
-            mid_getSkimmingAltitude_dff5885c2c873297,
-            mid_withSkimmingAltitude_19622359ac8c23f3,
-            mid_create_17a48175344ae6ef,
+            mid_init$_3ce4e2f1b1430b52,
+            mid_g_1bbf81d80c47ecdd,
+            mid_getCentralBody_0c55bd1adf955c4c,
+            mid_getSecondary_dec199e86bf037eb,
+            mid_getSkimmingAltitude_557b8123390d8d0c,
+            mid_withSkimmingAltitude_d29130d5933edbf5,
+            mid_create_1fdcc4c399e43d59,
             max_mid
           };
 

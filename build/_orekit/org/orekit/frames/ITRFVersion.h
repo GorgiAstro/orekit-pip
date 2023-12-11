@@ -29,15 +29,15 @@ namespace org {
       class ITRFVersion : public ::java::lang::Enum {
        public:
         enum {
-          mid_getConverter_e79e2ee72fd76c00,
-          mid_getConverter_2b2635d05c2058b1,
-          mid_getITRFVersion_94090907cc596f0f,
-          mid_getITRFVersion_fbecc2ef02535c5e,
-          mid_getLast_8a73c81b6e5084ce,
-          mid_getName_11b109bd155ca898,
-          mid_getYear_570ce0828f81a2c1,
-          mid_valueOf_94090907cc596f0f,
-          mid_values_c913bbb9aa153cf0,
+          mid_getConverter_f04aa79ffaaf8456,
+          mid_getConverter_bfb6aef9f29793c0,
+          mid_getITRFVersion_64feea1c8a442fcc,
+          mid_getITRFVersion_fd623a781f8f379f,
+          mid_getLast_b311296551ce8af2,
+          mid_getName_3cffd47377eca18a,
+          mid_getYear_412668abc8d889e9,
+          mid_valueOf_64feea1c8a442fcc,
+          mid_values_9eef3acac661cdfc,
           max_mid
         };
 

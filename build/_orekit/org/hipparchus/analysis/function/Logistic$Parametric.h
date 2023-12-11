@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
-    namespace analysis {
-      class ParametricUnivariateFunction;
-    }
     namespace exception {
       class NullArgumentException;
       class MathIllegalArgumentException;
+    }
+    namespace analysis {
+      class ParametricUnivariateFunction;
     }
   }
 }
@@ -29,9 +29,9 @@ namespace org {
         class Logistic$Parametric : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_gradient_125ce48de7dbfde5,
-            mid_value_19285de97bbc7eea,
+            mid_init$_0640e6acf969ed28,
+            mid_gradient_31b9a2982d73e37a,
+            mid_value_1bc40469b56f2c3c,
             max_mid
           };
 

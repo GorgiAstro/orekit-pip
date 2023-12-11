@@ -30,10 +30,10 @@ namespace org {
           class RecordAndContinue$Event : public ::java::lang::Object {
            public:
             enum {
-              mid_getDetector_d73bb985ffde4156,
-              mid_getState_c6311115fea01a34,
-              mid_isIncreasing_b108b35ef48e27bd,
-              mid_toString_11b109bd155ca898,
+              mid_getDetector_0701b00b25822fff,
+              mid_getState_15e85d5301b90ef8,
+              mid_isIncreasing_89b302893bdbe1f1,
+              mid_toString_3cffd47377eca18a,
               max_mid
             };
 

@@ -6,32 +6,33 @@
 namespace org {
   namespace orekit {
     namespace propagation {
+      class FieldPropagator;
+      class Propagator;
       namespace events {
         class EventDetector;
       }
-      class Propagator;
-      class FieldPropagator;
     }
     namespace attitudes {
       class AttitudesSequence$SwitchHandler;
-      class Attitude;
       class FieldAttitude;
       class AttitudeProvider;
+      class Attitude;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
+      class AngularDerivativesFilter;
+      class FieldPVCoordinatesProvider;
     }
     namespace frames {
       class Frame;
     }
-    namespace utils {
-      class PVCoordinatesProvider;
-      class FieldPVCoordinatesProvider;
-      class AngularDerivativesFilter;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-    }
   }
   namespace hipparchus {
+    class Field;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -40,7 +41,6 @@ namespace org {
         }
       }
     }
-    class Field;
   }
 }
 namespace java {
@@ -57,15 +57,15 @@ namespace org {
       class AttitudesSequence : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_addSwitchingCondition_b09582ddb3381fe1,
-          mid_getAttitude_4e541876ea7d5bd0,
-          mid_getAttitude_d2b70935d932b5c5,
-          mid_getAttitudeRotation_29422c22de775b74,
-          mid_getAttitudeRotation_53a81d4d17b13463,
-          mid_registerSwitchEvents_a4d05ab8d79173b5,
-          mid_registerSwitchEvents_ec733b762a879d62,
-          mid_resetActiveProvider_3cff7c75ea06698c,
+          mid_init$_0640e6acf969ed28,
+          mid_addSwitchingCondition_2882efe71e6f5a14,
+          mid_getAttitude_77e3383de01f3e48,
+          mid_getAttitude_1306ac39e1d2de3f,
+          mid_getAttitudeRotation_5c74bfcf2d42825a,
+          mid_getAttitudeRotation_85bb0a19efdadc1d,
+          mid_registerSwitchEvents_52713bb4a21e1f43,
+          mid_registerSwitchEvents_341b878527f5b605,
+          mid_resetActiveProvider_8fa6c0c067ead7b2,
           max_mid
         };
 

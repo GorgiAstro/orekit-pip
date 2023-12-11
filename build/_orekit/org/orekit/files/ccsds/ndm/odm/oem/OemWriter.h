@@ -10,22 +10,22 @@ namespace org {
         namespace ndm {
           namespace odm {
             namespace oem {
-              class OemSegment;
               class Oem;
+              class OemSegment;
             }
             class OdmHeader;
           }
         }
       }
     }
-    namespace data {
-      class DataContext;
-    }
     namespace utils {
       class IERSConventions;
     }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace data {
+      class DataContext;
     }
   }
 }
@@ -48,8 +48,8 @@ namespace org {
               class OemWriter : public ::org::orekit::files::ccsds::utils::generation::AbstractMessageWriter {
                public:
                 enum {
-                  mid_init$_6f30abb95e05bcdd,
-                  mid_writeSegmentContent_23075babb40e611c,
+                  mid_init$_170ee021ab23bf06,
+                  mid_writeSegmentContent_6a3ba9a15a6911b0,
                   max_mid
                 };
 

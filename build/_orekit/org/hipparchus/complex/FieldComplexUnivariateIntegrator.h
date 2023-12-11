@@ -5,14 +5,14 @@
 
 namespace org {
   namespace hipparchus {
-    namespace complex {
-      class FieldComplex;
-    }
     namespace analysis {
+      class CalculusFieldUnivariateFunction;
       namespace integration {
         class FieldUnivariateIntegrator;
       }
-      class CalculusFieldUnivariateFunction;
+    }
+    namespace complex {
+      class FieldComplex;
     }
   }
 }
@@ -30,9 +30,9 @@ namespace org {
       class FieldComplexUnivariateIntegrator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_4e6a4384b891653f,
-          mid_integrate_63fbce98c4bda2d0,
-          mid_integrate_437c332a9c9fedfd,
+          mid_init$_3b9d5c720aaf2f51,
+          mid_integrate_be9a0d23dc9061ee,
+          mid_integrate_e956a4a4203ef305,
           max_mid
         };
 

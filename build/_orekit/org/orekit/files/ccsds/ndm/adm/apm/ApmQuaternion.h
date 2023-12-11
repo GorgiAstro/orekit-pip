@@ -4,6 +4,11 @@
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace complex {
+      class Quaternion;
+    }
+  }
   namespace orekit {
     namespace files {
       namespace ccsds {
@@ -13,11 +18,6 @@ namespace org {
           }
         }
       }
-    }
-  }
-  namespace hipparchus {
-    namespace complex {
-      class Quaternion;
     }
   }
 }
@@ -39,14 +39,14 @@ namespace org {
               class ApmQuaternion : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_0fa09c18fee449d5,
-                  mid_getEndpoints_35bd4909c56b6915,
-                  mid_getQuaternion_18aa64800eb51ca4,
-                  mid_getQuaternionDot_18aa64800eb51ca4,
-                  mid_hasRates_b108b35ef48e27bd,
-                  mid_setQ_bb79ca80d85d0a66,
-                  mid_setQDot_bb79ca80d85d0a66,
-                  mid_validate_17db3a65980d3441,
+                  mid_init$_0640e6acf969ed28,
+                  mid_getEndpoints_c66f753ddee38944,
+                  mid_getQuaternion_ed563d4dda2b9f62,
+                  mid_getQuaternionDot_ed563d4dda2b9f62,
+                  mid_hasRates_89b302893bdbe1f1,
+                  mid_setQ_89aad365fb0ed8da,
+                  mid_setQDot_89aad365fb0ed8da,
+                  mid_validate_10f281d777284cea,
                   max_mid
                 };
 

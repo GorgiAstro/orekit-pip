@@ -8,16 +8,13 @@ namespace org {
     namespace files {
       namespace ilrs {
         class CPF$CPFCoordinate;
-        class CPF$CPFEphemeris;
         class CPF;
+        class CPF$CPFEphemeris;
       }
       namespace general {
         class EphemerisFile$SatelliteEphemeris;
         class EphemerisFile$EphemerisSegment;
       }
-    }
-    namespace propagation {
-      class BoundedPropagator;
     }
     namespace frames {
       class Frame;
@@ -30,6 +27,9 @@ namespace org {
     }
     namespace utils {
       class CartesianDerivativesFilter;
+    }
+    namespace propagation {
+      class BoundedPropagator;
     }
   }
 }
@@ -52,19 +52,19 @@ namespace org {
         class CPF$CPFEphemeris : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_ca8570ac889d08c9,
-            mid_getAvailableDerivatives_16e9a7b5414faf2d,
-            mid_getCoordinates_2afa36052df4765d,
-            mid_getEphemeridesDataLines_2afa36052df4765d,
-            mid_getFrame_b86f9f61d97a7244,
-            mid_getId_11b109bd155ca898,
-            mid_getInterpolationSamples_570ce0828f81a2c1,
-            mid_getMu_dff5885c2c873297,
-            mid_getPropagator_08b52de56e2dfa9a,
-            mid_getPropagator_ac89b644d37ed0fc,
-            mid_getSegments_2afa36052df4765d,
-            mid_getStart_85703d13e302437e,
-            mid_getStop_85703d13e302437e,
+            mid_init$_fa27d74d51a8d629,
+            mid_getAvailableDerivatives_6c4898d6ec0c3837,
+            mid_getCoordinates_0d9551367f7ecdef,
+            mid_getEphemeridesDataLines_0d9551367f7ecdef,
+            mid_getFrame_6c9bc0a928c56d4e,
+            mid_getId_3cffd47377eca18a,
+            mid_getInterpolationSamples_412668abc8d889e9,
+            mid_getMu_557b8123390d8d0c,
+            mid_getPropagator_fa108fc36df3791a,
+            mid_getPropagator_587eea156586204f,
+            mid_getSegments_0d9551367f7ecdef,
+            mid_getStart_7a97f7e149e79afb,
+            mid_getStop_7a97f7e149e79afb,
             max_mid
           };
 

@@ -3,16 +3,21 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
+namespace java {
+  namespace util {
+    class Map;
+    class Set;
   }
+  namespace lang {
+    class Throwable;
+    class Class;
+    class String;
+  }
+}
+namespace org {
   namespace orekit {
     namespace time {
       class FieldAbsoluteDate;
-    }
-    namespace orbits {
-      class FieldOrbit;
     }
     namespace propagation {
       namespace semianalytical {
@@ -23,17 +28,12 @@ namespace org {
         }
       }
     }
+    namespace orbits {
+      class FieldOrbit;
+    }
   }
-}
-namespace java {
-  namespace util {
-    class Map;
-    class Set;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-    class String;
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -48,14 +48,14 @@ namespace org {
             class PythonFieldShortPeriodTerms : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_finalize_0fa09c18fee449d5,
-                mid_getCoefficients_8ceaa814d240672e,
-                mid_getCoefficientsKeyPrefix_11b109bd155ca898,
-                mid_pythonDecRef_0fa09c18fee449d5,
-                mid_pythonExtension_492808a339bfa35f,
-                mid_pythonExtension_3a8e7649f31fdb20,
-                mid_value_32514bc2dbb6aee5,
+                mid_init$_0640e6acf969ed28,
+                mid_finalize_0640e6acf969ed28,
+                mid_getCoefficients_34654a764ba0e833,
+                mid_getCoefficientsKeyPrefix_3cffd47377eca18a,
+                mid_pythonDecRef_0640e6acf969ed28,
+                mid_pythonExtension_9e26256fb0d384a2,
+                mid_pythonExtension_3cd6a6b354c6aa22,
+                mid_value_e1d65e2f6c9d2422,
                 max_mid
               };
 

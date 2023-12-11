@@ -17,7 +17,7 @@ namespace java {
     class PrimitiveIterator : public ::java::util::Iterator {
      public:
       enum {
-        mid_forEachRemaining_2990946c992aafed,
+        mid_forEachRemaining_009757f2c0fd9090,
         max_mid
       };
 

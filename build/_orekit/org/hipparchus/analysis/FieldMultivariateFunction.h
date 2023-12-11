@@ -8,8 +8,8 @@ namespace org {
     namespace analysis {
       class CalculusFieldMultivariateFunction;
     }
-    class Field;
     class CalculusFieldElement;
+    class Field;
   }
 }
 namespace java {
@@ -26,8 +26,8 @@ namespace org {
       class FieldMultivariateFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_toCalculusFieldMultivariateFunction_a04eccf82b7ac6e5,
-          mid_value_f2dc4f0d2f87d390,
+          mid_toCalculusFieldMultivariateFunction_a3136e7716fb5ee4,
+          mid_value_e3919ad898361abd,
           max_mid
         };
 

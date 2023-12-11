@@ -3,21 +3,12 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
     namespace geometry {
-      class Space;
       namespace spherical {
         namespace oned {
           class Sphere1D;
@@ -26,7 +17,16 @@ namespace org {
           class Sphere2D;
         }
       }
+      class Space;
     }
+  }
+}
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -40,10 +40,10 @@ namespace org {
           class Sphere2D : public ::java::lang::Object {
            public:
             enum {
-              mid_checkTolerance_17db3a65980d3441,
-              mid_getDimension_570ce0828f81a2c1,
-              mid_getInstance_89597fd2befc9ecf,
-              mid_getSubSpace_1bd6b4665a0d1abd,
+              mid_checkTolerance_10f281d777284cea,
+              mid_getDimension_412668abc8d889e9,
+              mid_getInstance_4455c3f474f340d7,
+              mid_getSubSpace_1c4d3de89e8bc553,
               max_mid
             };
 

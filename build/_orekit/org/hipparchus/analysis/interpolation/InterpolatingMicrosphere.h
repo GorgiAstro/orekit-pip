@@ -3,6 +3,11 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace analysis {
@@ -15,11 +20,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -30,12 +30,12 @@ namespace org {
         class InterpolatingMicrosphere : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_fdaa6566f103e9da,
-            mid_copy_bc50b566c273722a,
-            mid_getDimension_570ce0828f81a2c1,
-            mid_getSize_570ce0828f81a2c1,
-            mid_value_8337bea1db3c18f3,
-            mid_add_a47a33f7938e1575,
+            mid_init$_f411c87cf5f815c1,
+            mid_copy_8d04df50e5d7067d,
+            mid_getDimension_412668abc8d889e9,
+            mid_getSize_412668abc8d889e9,
+            mid_value_c089c9c00fccb9ee,
+            mid_add_bdd4888f749f6b83,
             max_mid
           };
 

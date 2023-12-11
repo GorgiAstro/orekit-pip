@@ -13,12 +13,12 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace frames {
-      class ITRFVersion;
-    }
     namespace time {
       class AbsoluteDate;
       class TimeStamped;
+    }
+    namespace frames {
+      class ITRFVersion;
     }
   }
 }
@@ -31,20 +31,20 @@ namespace org {
       class EOPEntry : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_b9fb2587f40ba4f3,
-          mid_getDate_85703d13e302437e,
-          mid_getDdEps_dff5885c2c873297,
-          mid_getDdPsi_dff5885c2c873297,
-          mid_getDx_dff5885c2c873297,
-          mid_getDy_dff5885c2c873297,
-          mid_getITRFType_8a73c81b6e5084ce,
-          mid_getLOD_dff5885c2c873297,
-          mid_getMjd_570ce0828f81a2c1,
-          mid_getUT1MinusUTC_dff5885c2c873297,
-          mid_getX_dff5885c2c873297,
-          mid_getXRate_dff5885c2c873297,
-          mid_getY_dff5885c2c873297,
-          mid_getYRate_dff5885c2c873297,
+          mid_init$_3c622621d4e330b6,
+          mid_getDate_7a97f7e149e79afb,
+          mid_getDdEps_557b8123390d8d0c,
+          mid_getDdPsi_557b8123390d8d0c,
+          mid_getDx_557b8123390d8d0c,
+          mid_getDy_557b8123390d8d0c,
+          mid_getITRFType_b311296551ce8af2,
+          mid_getLOD_557b8123390d8d0c,
+          mid_getMjd_412668abc8d889e9,
+          mid_getUT1MinusUTC_557b8123390d8d0c,
+          mid_getX_557b8123390d8d0c,
+          mid_getXRate_557b8123390d8d0c,
+          mid_getY_557b8123390d8d0c,
+          mid_getYRate_557b8123390d8d0c,
           max_mid
         };
 

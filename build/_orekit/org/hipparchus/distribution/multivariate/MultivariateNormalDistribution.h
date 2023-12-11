@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace linear {
-      class RealMatrix;
-    }
     namespace random {
       class RandomGenerator;
+    }
+    namespace linear {
+      class RealMatrix;
     }
     namespace exception {
       class MathIllegalArgumentException;
@@ -31,16 +31,16 @@ namespace org {
         class MultivariateNormalDistribution : public ::org::hipparchus::distribution::multivariate::AbstractMultivariateRealDistribution {
          public:
           enum {
-            mid_init$_0942607a80e88c17,
-            mid_init$_ed409df2c5d12b2b,
-            mid_init$_2eaf92124f7b956a,
-            mid_init$_c29aa22b4d243723,
-            mid_density_9dc1ec0bcc0a9a29,
-            mid_getCovariances_688b496048ff947b,
-            mid_getMeans_60c7040667a7dc5c,
-            mid_getSingularMatrixCheckTolerance_dff5885c2c873297,
-            mid_getStandardDeviations_60c7040667a7dc5c,
-            mid_sample_60c7040667a7dc5c,
+            mid_init$_d28c10701e55f94c,
+            mid_init$_bc6402de7b0a344c,
+            mid_init$_4384082604f87d7a,
+            mid_init$_dd4deb99569a6127,
+            mid_density_86c4a0582e0747ce,
+            mid_getCovariances_70a207fcbc031df2,
+            mid_getMeans_a53a7513ecedada2,
+            mid_getSingularMatrixCheckTolerance_557b8123390d8d0c,
+            mid_getStandardDeviations_a53a7513ecedada2,
+            mid_sample_a53a7513ecedada2,
             max_mid
           };
 

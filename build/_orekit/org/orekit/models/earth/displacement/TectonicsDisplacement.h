@@ -5,21 +5,21 @@
 
 namespace org {
   namespace orekit {
+    namespace data {
+      class BodiesElements;
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace models {
       namespace earth {
         namespace displacement {
           class StationDisplacement;
         }
       }
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace data {
-      class BodiesElements;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -48,8 +48,8 @@ namespace org {
           class TectonicsDisplacement : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_3d7cc17d4ec11a9f,
-              mid_displacement_dc5338a5a1255d1d,
+              mid_init$_900f9429442ceeb9,
+              mid_displacement_2092c3958d15642d,
               max_mid
             };
 

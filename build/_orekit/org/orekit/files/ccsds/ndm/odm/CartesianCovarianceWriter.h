@@ -3,12 +3,6 @@
 
 #include "org/orekit/files/ccsds/section/AbstractWriter.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -20,6 +14,12 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,8 +34,8 @@ namespace org {
             class CartesianCovarianceWriter : public ::org::orekit::files::ccsds::section::AbstractWriter {
              public:
               enum {
-                mid_init$_0418e3c5baef8bce,
-                mid_writeContent_6d745cf7b26e9f5d,
+                mid_init$_e67eb5a35bd229eb,
+                mid_writeContent_0503da09b1f1eb3c,
                 max_mid
               };
 

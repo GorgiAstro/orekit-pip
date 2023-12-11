@@ -22,13 +22,13 @@ namespace java {
     class SortedSet : public ::java::util::Set {
      public:
       enum {
-        mid_comparator_96e45e3694fbbb22,
-        mid_first_4d26fd885228c716,
-        mid_headSet_c07cc04010820225,
-        mid_last_4d26fd885228c716,
-        mid_spliterator_ef1070394b413a84,
-        mid_subSet_91c93627253b416a,
-        mid_tailSet_c07cc04010820225,
+        mid_comparator_b0b551d4a54c7150,
+        mid_first_e661fe3ba2fafb22,
+        mid_headSet_3ca4ace183d6efe9,
+        mid_last_e661fe3ba2fafb22,
+        mid_spliterator_0a89e3b18808f850,
+        mid_subSet_ba202d431ff51666,
+        mid_tailSet_3ca4ace183d6efe9,
         max_mid
       };
 

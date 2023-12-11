@@ -19,8 +19,8 @@ namespace org {
           class HermiteRuleFactory : public ::org::hipparchus::analysis::integration::gauss::AbstractRuleFactory {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_computeRule_e670405dd33862ee,
+              mid_init$_0640e6acf969ed28,
+              mid_computeRule_9a5adfb225849173,
               max_mid
             };
 

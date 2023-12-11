@@ -21,8 +21,8 @@ namespace org {
   }
   namespace orekit {
     namespace time {
-      class AbsoluteDate;
       class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
   }
 }
@@ -42,9 +42,9 @@ namespace org {
           class PolynomialThrustSegment : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_9369cf81176a0f42,
-              mid_getThrustVector_24461752d0eea1e3,
-              mid_getThrustVector_e81fa067750860a1,
+              mid_init$_b857e5cc8567e4ee,
+              mid_getThrustVector_3df461fe15362b2b,
+              mid_getThrustVector_3343973a86caeaa4,
               max_mid
             };
 

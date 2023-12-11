@@ -3,15 +3,15 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
     class Field;
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,10 +27,10 @@ namespace org {
               class FieldHansenThirdBodyLinear : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_4b0ddad3195faf0c,
-                  mid_computeInitValues_82fa7e789a6ae1f6,
-                  mid_getDerivative_e2b464e41c9ba627,
-                  mid_getValue_e2b464e41c9ba627,
+                  mid_init$_aa34f9974068bcd4,
+                  mid_computeInitValues_0f27b0249abd6c51,
+                  mid_getDerivative_d7f69d00c9b191e9,
+                  mid_getValue_d7f69d00c9b191e9,
                   max_mid
                 };
 

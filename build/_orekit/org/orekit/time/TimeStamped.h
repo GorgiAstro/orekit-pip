@@ -25,8 +25,8 @@ namespace org {
       class TimeStamped : public ::java::lang::Object {
        public:
         enum {
-          mid_durationFrom_ea2b3148acebf68c,
-          mid_getDate_85703d13e302437e,
+          mid_durationFrom_fe4d52c50affd584,
+          mid_getDate_7a97f7e149e79afb,
           max_mid
         };
 

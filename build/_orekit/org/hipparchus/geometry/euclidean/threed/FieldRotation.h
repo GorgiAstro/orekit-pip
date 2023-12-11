@@ -5,24 +5,24 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
+          class FieldVector3D;
+          class Vector3D;
           class Rotation;
           class RotationConvention;
-          class FieldVector3D;
-          class FieldRotation;
           class RotationOrder;
-          class Vector3D;
+          class FieldRotation;
         }
       }
     }
     namespace exception {
-      class MathIllegalStateException;
-      class MathRuntimeException;
       class MathIllegalArgumentException;
+      class MathRuntimeException;
+      class MathIllegalStateException;
     }
+    class CalculusFieldElement;
     class Field;
   }
 }
@@ -45,45 +45,45 @@ namespace org {
           class FieldRotation : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_67d015490dd313e3,
-              mid_init$_4477d1375dd1908a,
-              mid_init$_841fd60741dbfb48,
-              mid_init$_f918795bdbac97ac,
-              mid_init$_49bf7a3fc95b685e,
-              mid_init$_816d59820332b1b5,
-              mid_init$_fbe39ca3cfe4582d,
-              mid_applyInverseTo_81292042324b6fb2,
-              mid_applyInverseTo_a173408e2b1f78b2,
-              mid_applyInverseTo_dd12e5f7a585a156,
-              mid_applyInverseTo_7a9aa2e8b906f1a5,
-              mid_applyInverseTo_1fafd88f5c1b8f0f,
-              mid_applyInverseTo_cbc98e7d0c0477db,
-              mid_applyInverseTo_36d4d2841b95f44f,
-              mid_applyInverseTo_431eb85cb1b43ad7,
-              mid_applyTo_81292042324b6fb2,
-              mid_applyTo_a173408e2b1f78b2,
-              mid_applyTo_dd12e5f7a585a156,
-              mid_applyTo_7a9aa2e8b906f1a5,
-              mid_applyTo_1fafd88f5c1b8f0f,
-              mid_applyTo_cbc98e7d0c0477db,
-              mid_applyTo_36d4d2841b95f44f,
-              mid_applyTo_431eb85cb1b43ad7,
-              mid_compose_78c23ea2b2ceca49,
-              mid_compose_b2a1d7ead97c63bd,
-              mid_composeInverse_78c23ea2b2ceca49,
-              mid_composeInverse_b2a1d7ead97c63bd,
-              mid_distance_f00f0d7b4350b7f6,
-              mid_getAngle_eba8e72a22c984ac,
-              mid_getAngles_83468b668f3dd1eb,
-              mid_getAxis_470de3cbd3b402cf,
-              mid_getIdentity_68ed739186cbd17c,
-              mid_getMatrix_1b3ae884bec31e6d,
-              mid_getQ0_eba8e72a22c984ac,
-              mid_getQ1_eba8e72a22c984ac,
-              mid_getQ2_eba8e72a22c984ac,
-              mid_getQ3_eba8e72a22c984ac,
-              mid_revert_1d339a2ee3a3323a,
-              mid_toRotation_de86c7efc42eac14,
+              mid_init$_b2e28a0995250182,
+              mid_init$_99519c74887c9a65,
+              mid_init$_cd2793491083f130,
+              mid_init$_70afa204a0c5f293,
+              mid_init$_7032bcc2305f4a2a,
+              mid_init$_c8fb986ac347be10,
+              mid_init$_5df711e8e19596d4,
+              mid_applyInverseTo_8926439b3a3636df,
+              mid_applyInverseTo_588ed0f09550adb9,
+              mid_applyInverseTo_41277586417b5e98,
+              mid_applyInverseTo_3d90e30d4cb13513,
+              mid_applyInverseTo_dbc10859aa4336fa,
+              mid_applyInverseTo_2c0fd42a693364fa,
+              mid_applyInverseTo_700737d6d191289b,
+              mid_applyInverseTo_9938b214a9bc898d,
+              mid_applyTo_8926439b3a3636df,
+              mid_applyTo_588ed0f09550adb9,
+              mid_applyTo_41277586417b5e98,
+              mid_applyTo_3d90e30d4cb13513,
+              mid_applyTo_dbc10859aa4336fa,
+              mid_applyTo_2c0fd42a693364fa,
+              mid_applyTo_700737d6d191289b,
+              mid_applyTo_9938b214a9bc898d,
+              mid_compose_6b040ce0cdf349fd,
+              mid_compose_1346c98f72663e1a,
+              mid_composeInverse_6b040ce0cdf349fd,
+              mid_composeInverse_1346c98f72663e1a,
+              mid_distance_0e2701e899e1a78d,
+              mid_getAngle_613c8f46c659f636,
+              mid_getAngles_3af024ffea07f1eb,
+              mid_getAxis_2c83ede3dfe0d5da,
+              mid_getIdentity_45d0c5633bdbb166,
+              mid_getMatrix_f180d140dce78d62,
+              mid_getQ0_613c8f46c659f636,
+              mid_getQ1_613c8f46c659f636,
+              mid_getQ2_613c8f46c659f636,
+              mid_getQ3_613c8f46c659f636,
+              mid_revert_73da4eeccf2b7e14,
+              mid_toRotation_1e0dc1a6788897b9,
               max_mid
             };
 

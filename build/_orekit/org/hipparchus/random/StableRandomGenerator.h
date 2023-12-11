@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+      class NullArgumentException;
+    }
     namespace random {
       class NormalizedRandomGenerator;
       class RandomGenerator;
-    }
-    namespace exception {
-      class NullArgumentException;
-      class MathIllegalArgumentException;
     }
   }
 }
@@ -29,8 +29,8 @@ namespace org {
       class StableRandomGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0bf56ca058dcc616,
-          mid_nextNormalizedDouble_dff5885c2c873297,
+          mid_init$_7264f2f4bdb6e6d3,
+          mid_nextNormalizedDouble_557b8123390d8d0c,
           max_mid
         };
 

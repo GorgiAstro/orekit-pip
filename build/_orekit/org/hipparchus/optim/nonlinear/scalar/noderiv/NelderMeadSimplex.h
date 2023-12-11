@@ -3,22 +3,22 @@
 
 #include "org/hipparchus/optim/nonlinear/scalar/noderiv/AbstractSimplex.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace optim {
-      class PointValuePair;
-    }
-    namespace analysis {
-      class MultivariateFunction;
-    }
-  }
-}
 namespace java {
   namespace util {
     class Comparator;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace analysis {
+      class MultivariateFunction;
+    }
+    namespace optim {
+      class PointValuePair;
+    }
   }
 }
 template<class T> class JArray;
@@ -33,15 +33,15 @@ namespace org {
             class NelderMeadSimplex : public ::org::hipparchus::optim::nonlinear::scalar::noderiv::AbstractSimplex {
              public:
               enum {
-                mid_init$_fa9d415d19f69361,
-                mid_init$_a0befc7f3dc19e41,
-                mid_init$_99803b0791f320ff,
-                mid_init$_bb79ca80d85d0a66,
-                mid_init$_bbd94d386660acaa,
-                mid_init$_6e30b20e45c3cf51,
-                mid_init$_383392bb694f45fb,
-                mid_init$_ae09a068540f250e,
-                mid_iterate_eb88542b81649386,
+                mid_init$_cc18240f4a737f14,
+                mid_init$_edb361bfdd1ad9ae,
+                mid_init$_a3da1a935cb37f7b,
+                mid_init$_89aad365fb0ed8da,
+                mid_init$_0536af1b89c263e5,
+                mid_init$_b2e19060b99cf780,
+                mid_init$_0d23f64daa74287b,
+                mid_init$_850a0e81dbd48ad1,
+                mid_iterate_5af60315979aa937,
                 max_mid
               };
 

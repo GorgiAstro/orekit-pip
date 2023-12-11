@@ -4,17 +4,17 @@
 #include "org/orekit/utils/ParameterDriversProvider.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -32,9 +32,9 @@ namespace org {
         class AccelerationModel : public ::org::orekit::utils::ParameterDriversProvider {
          public:
           enum {
-            mid_init_826b4eda94da4e78,
-            mid_signedAmplitude_8bdf60d5551eceaf,
-            mid_signedAmplitude_0b7191d207b9680f,
+            mid_init_0472264ad6f40bc2,
+            mid_signedAmplitude_4ad317f7598a10a9,
+            mid_signedAmplitude_810dcb8f9f5d191a,
             max_mid
           };
 

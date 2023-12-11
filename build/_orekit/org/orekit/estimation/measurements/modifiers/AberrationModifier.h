@@ -4,7 +4,17 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace analysis {
+      namespace differentiation {
+        class Gradient;
+      }
+    }
+  }
   namespace orekit {
+    namespace utils {
+      class ParameterDriver;
+    }
     namespace estimation {
       namespace measurements {
         class EstimatedMeasurement;
@@ -20,16 +30,6 @@ namespace org {
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-  }
-  namespace hipparchus {
-    namespace analysis {
-      namespace differentiation {
-        class Gradient;
-      }
     }
   }
 }
@@ -52,14 +52,14 @@ namespace org {
           class AberrationModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_fieldNaturalToProper_dc1b815aeeb01d6f,
-              mid_fieldProperToNatural_dc1b815aeeb01d6f,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_modify_e4935e9a55e01fd8,
-              mid_modifyWithoutDerivatives_d1815d998cba71e9,
-              mid_naturalToProper_8caa5186a76fc396,
-              mid_properToNatural_8caa5186a76fc396,
+              mid_init$_0640e6acf969ed28,
+              mid_fieldNaturalToProper_1524791121e959c6,
+              mid_fieldProperToNatural_1524791121e959c6,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_modify_0054a497255e8220,
+              mid_modifyWithoutDerivatives_e471490df8741b73,
+              mid_naturalToProper_3d1b32bf08f1cecd,
+              mid_properToNatural_3d1b32bf08f1cecd,
               max_mid
             };
 

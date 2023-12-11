@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace gnss {
-      class SatelliteSystem;
       class Frequency;
+      class SatelliteSystem;
     }
     namespace estimation {
       namespace measurements {
@@ -35,13 +35,13 @@ namespace org {
           class PythonAbstractDualFrequencyCombination : public ::org::orekit::estimation::measurements::gnss::AbstractDualFrequencyCombination {
            public:
             enum {
-              mid_init$_5f9f97930f6e42c6,
-              mid_finalize_0fa09c18fee449d5,
-              mid_getCombinedFrequency_6baf140b93832af8,
-              mid_getCombinedValue_e0f2baaf2a2ab093,
-              mid_pythonDecRef_0fa09c18fee449d5,
-              mid_pythonExtension_492808a339bfa35f,
-              mid_pythonExtension_3a8e7649f31fdb20,
+              mid_init$_e2286686e76d4599,
+              mid_finalize_0640e6acf969ed28,
+              mid_getCombinedFrequency_ec5e21d51ba3cb9a,
+              mid_getCombinedValue_1aca6111050d8282,
+              mid_pythonDecRef_0640e6acf969ed28,
+              mid_pythonExtension_9e26256fb0d384a2,
+              mid_pythonExtension_3cd6a6b354c6aa22,
               max_mid
             };
 

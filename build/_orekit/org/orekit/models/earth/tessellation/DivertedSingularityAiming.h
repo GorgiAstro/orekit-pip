@@ -4,6 +4,20 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace spherical {
+        namespace twod {
+          class SphericalPolygonsSet;
+        }
+      }
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace models {
       namespace earth {
@@ -14,20 +28,6 @@ namespace org {
     }
     namespace bodies {
       class GeodeticPoint;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-      namespace spherical {
-        namespace twod {
-          class SphericalPolygonsSet;
-        }
-      }
     }
   }
 }
@@ -50,9 +50,9 @@ namespace org {
           class DivertedSingularityAiming : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_de0cbf42314b699e,
-              mid_alongTileDirection_cb13d5b31f03b28f,
-              mid_getSingularPoints_2afa36052df4765d,
+              mid_init$_64f9d0c569c80ccb,
+              mid_alongTileDirection_94d0bf825c02adfa,
+              mid_getSingularPoints_0d9551367f7ecdef,
               max_mid
             };
 

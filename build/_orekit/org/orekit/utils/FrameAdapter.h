@@ -10,12 +10,12 @@ namespace org {
       class ExtendedPVCoordinatesProvider;
       class TimeStampedPVCoordinates;
     }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
     namespace frames {
       class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
     }
   }
 }
@@ -33,9 +33,9 @@ namespace org {
       class FrameAdapter : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_b5680f5c30eede66,
-          mid_getPVCoordinates_cfeec55f7c63ec64,
-          mid_getPVCoordinates_2cdae1c350dc3e9a,
+          mid_init$_535d1f91a93c8b4d,
+          mid_getPVCoordinates_17742a9a6655bdb1,
+          mid_getPVCoordinates_4ac52e75113a03db,
           max_mid
         };
 

@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -14,29 +13,30 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
   namespace orekit {
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
-    namespace attitudes {
-      class Attitude;
-      class FieldAttitude;
+    namespace utils {
+      class ParameterDriver;
     }
     namespace forces {
       namespace maneuvers {
+        class Control3DVectorCostType;
         namespace propulsion {
           class PropulsionModel;
         }
-        class Control3DVectorCostType;
       }
+    }
+    namespace attitudes {
+      class FieldAttitude;
+      class Attitude;
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace utils {
-      class ParameterDriver;
     }
   }
 }
@@ -61,19 +61,19 @@ namespace org {
           class PythonPropulsionModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_finalize_0fa09c18fee449d5,
-              mid_getAcceleration_a6c71e83efaf48d0,
-              mid_getAcceleration_19f36cd1a0a8b9bf,
-              mid_getControl3DVectorCostType_67739b20d9566a8c,
-              mid_getMassDerivatives_0b7191d207b9680f,
-              mid_getMassDerivatives_8bdf60d5551eceaf,
-              mid_getName_11b109bd155ca898,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_init_826b4eda94da4e78,
-              mid_pythonDecRef_0fa09c18fee449d5,
-              mid_pythonExtension_492808a339bfa35f,
-              mid_pythonExtension_3a8e7649f31fdb20,
+              mid_init$_0640e6acf969ed28,
+              mid_finalize_0640e6acf969ed28,
+              mid_getAcceleration_53d7cdec4a9e3cd4,
+              mid_getAcceleration_28694fea3dbf2005,
+              mid_getControl3DVectorCostType_601f05e5d0c82ad9,
+              mid_getMassDerivatives_810dcb8f9f5d191a,
+              mid_getMassDerivatives_4ad317f7598a10a9,
+              mid_getName_3cffd47377eca18a,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_init_0472264ad6f40bc2,
+              mid_pythonDecRef_0640e6acf969ed28,
+              mid_pythonExtension_9e26256fb0d384a2,
+              mid_pythonExtension_3cd6a6b354c6aa22,
               max_mid
             };
 
@@ -91,8 +91,8 @@ namespace org {
             PythonPropulsionModel();
 
             void finalize() const;
-            ::org::hipparchus::geometry::euclidean::threed::Vector3D getAcceleration(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::attitudes::Attitude &, const JArray< jdouble > &) const;
             ::org::hipparchus::geometry::euclidean::threed::FieldVector3D getAcceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::attitudes::FieldAttitude &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
+            ::org::hipparchus::geometry::euclidean::threed::Vector3D getAcceleration(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::attitudes::Attitude &, const JArray< jdouble > &) const;
             ::org::orekit::forces::maneuvers::Control3DVectorCostType getControl3DVectorCostType() const;
             jdouble getMassDerivatives(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
             ::org::hipparchus::CalculusFieldElement getMassDerivatives(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;

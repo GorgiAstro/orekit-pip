@@ -7,19 +7,19 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace ndm {
-          namespace adm {
-            namespace apm {
-              class ManeuverKey;
-              class Maneuver;
-            }
-          }
-        }
         namespace utils {
           namespace lexical {
             class ParseToken;
           }
           class ContextBinding;
+        }
+        namespace ndm {
+          namespace adm {
+            namespace apm {
+              class Maneuver;
+              class ManeuverKey;
+            }
+          }
         }
       }
     }
@@ -44,9 +44,9 @@ namespace org {
               class ManeuverKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_3ee4734b1b4313c8,
-                  mid_valueOf_51ad987b41424b4a,
-                  mid_values_08691f21f25d0ed7,
+                  mid_process_a90fd8465f7bd9c2,
+                  mid_valueOf_44af345398f19e9b,
+                  mid_values_0a719a076a5e2b38,
                   max_mid
                 };
 

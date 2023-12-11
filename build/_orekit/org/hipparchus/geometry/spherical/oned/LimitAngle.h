@@ -8,11 +8,11 @@ namespace org {
     namespace geometry {
       namespace spherical {
         namespace oned {
+          class SubLimitAngle;
+          class ArcsSet;
+          class Sphere1D;
           class S1Point;
           class LimitAngle;
-          class ArcsSet;
-          class SubLimitAngle;
-          class Sphere1D;
         }
       }
       class Point;
@@ -41,18 +41,18 @@ namespace org {
           class LimitAngle : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_82536b2cb42ed7f9,
-              mid_copySelf_01001ad942f10976,
-              mid_emptyHyperplane_21c05dc3dd28ffae,
-              mid_getLocation_ad9f612e40949328,
-              mid_getOffset_07bb97c2794cf6b1,
-              mid_getReverse_01001ad942f10976,
-              mid_getTolerance_dff5885c2c873297,
-              mid_isDirect_b108b35ef48e27bd,
-              mid_project_c48805c2dda937c6,
-              mid_sameOrientationAs_5bc340c02d9ac484,
-              mid_wholeHyperplane_21c05dc3dd28ffae,
-              mid_wholeSpace_9a4d6a36c117a959,
+              mid_init$_3124af4883917e47,
+              mid_copySelf_0d8f45c3f1b74855,
+              mid_emptyHyperplane_4a61f36b44575d3c,
+              mid_getLocation_0b0acc7251a8d339,
+              mid_getOffset_cf1fec2b7b1c0efe,
+              mid_getReverse_0d8f45c3f1b74855,
+              mid_getTolerance_557b8123390d8d0c,
+              mid_isDirect_89b302893bdbe1f1,
+              mid_project_328d0d966eeb9668,
+              mid_sameOrientationAs_cb9274a363000a77,
+              mid_wholeHyperplane_4a61f36b44575d3c,
+              mid_wholeSpace_75597f9ad249cb08,
               max_mid
             };
 

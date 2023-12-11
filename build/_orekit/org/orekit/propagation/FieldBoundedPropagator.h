@@ -27,8 +27,8 @@ namespace org {
       class FieldBoundedPropagator : public ::org::orekit::propagation::FieldPropagator {
        public:
         enum {
-          mid_getMaxDate_51da00d5b8a3b5df,
-          mid_getMinDate_51da00d5b8a3b5df,
+          mid_getMaxDate_f1fe4daf77c66560,
+          mid_getMinDate_f1fe4daf77c66560,
           max_mid
         };
 

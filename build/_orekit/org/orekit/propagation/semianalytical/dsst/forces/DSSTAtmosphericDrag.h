@@ -3,16 +3,6 @@
 
 #include "org/orekit/propagation/semianalytical/dsst/forces/AbstractGaussianContribution.h"
 
-namespace java {
-  namespace util {
-    namespace stream {
-      class Stream;
-    }
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -39,6 +29,16 @@ namespace org {
     class Field;
   }
 }
+namespace java {
+  namespace lang {
+    class Class;
+  }
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -51,18 +51,18 @@ namespace org {
             class DSSTAtmosphericDrag : public ::org::orekit::propagation::semianalytical::dsst::forces::AbstractGaussianContribution {
              public:
               enum {
-                mid_init$_8cf2088f47a57337,
-                mid_init$_93fb7884d0731876,
-                mid_init$_fbe0d84084597736,
-                mid_getAtmosphere_5eed92b432f371c2,
-                mid_getDrag_ab37bc06056a6237,
-                mid_getEventDetectors_20f6d2b462aaef4b,
-                mid_getFieldEventDetectors_361313cd1a9c693a,
-                mid_getRbar_dff5885c2c873297,
-                mid_getSpacecraft_2df1d9602f270c8d,
-                mid_getLLimits_04690aaa2b6db52c,
-                mid_getLLimits_7442885516ff2293,
-                mid_getParametersDriversWithoutMu_2afa36052df4765d,
+                mid_init$_873d6049c2f7e1b1,
+                mid_init$_a6cdc333049d7715,
+                mid_init$_ce907123f94397c6,
+                mid_getAtmosphere_344c414ab8fc3e7e,
+                mid_getDrag_c60005f03b2de7af,
+                mid_getEventDetectors_d7cce92225eb0db2,
+                mid_getFieldEventDetectors_8130af76f6998f44,
+                mid_getRbar_557b8123390d8d0c,
+                mid_getSpacecraft_5af7812abe9360ec,
+                mid_getLLimits_233f032b171b49d2,
+                mid_getLLimits_8babb6fb34d6b24d,
+                mid_getParametersDriversWithoutMu_0d9551367f7ecdef,
                 max_mid
               };
 

@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-  namespace io {
-    class Serializable;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -20,6 +12,14 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
+  }
+  namespace io {
+    class Serializable;
   }
 }
 template<class T> class JArray;
@@ -33,14 +33,14 @@ namespace org {
           class SphericalCoordinates : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_029ff0cbf68ea054,
-              mid_init$_2c56b6dd4d4b1dec,
-              mid_getCartesian_d52645e0d4c07563,
-              mid_getPhi_dff5885c2c873297,
-              mid_getR_dff5885c2c873297,
-              mid_getTheta_dff5885c2c873297,
-              mid_toCartesianGradient_ac3d742ccc742f22,
-              mid_toCartesianHessian_81ab62e515fe2068,
+              mid_init$_2810d2bec90e7b1c,
+              mid_init$_87096e3fd8086100,
+              mid_getCartesian_f88961cca75a2c0a,
+              mid_getPhi_557b8123390d8d0c,
+              mid_getR_557b8123390d8d0c,
+              mid_getTheta_557b8123390d8d0c,
+              mid_toCartesianGradient_1db7c087750eaffe,
+              mid_toCartesianHessian_31bf75c889c32990,
               max_mid
             };
 

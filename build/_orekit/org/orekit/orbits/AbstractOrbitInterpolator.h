@@ -33,10 +33,10 @@ namespace org {
       class AbstractOrbitInterpolator : public ::org::orekit::time::AbstractTimeInterpolator {
        public:
         enum {
-          mid_init$_2ee482a4c6f42d96,
-          mid_checkOrbitsConsistency_f72f53318f80c525,
-          mid_getOutputInertialFrame_b86f9f61d97a7244,
-          mid_interpolate_df64ba85d4130bf6,
+          mid_init$_fc65bf318d004af6,
+          mid_checkOrbitsConsistency_3abde0be9b9c9773,
+          mid_getOutputInertialFrame_6c9bc0a928c56d4e,
+          mid_interpolate_5e9e8aa4ef832981,
           max_mid
         };
 

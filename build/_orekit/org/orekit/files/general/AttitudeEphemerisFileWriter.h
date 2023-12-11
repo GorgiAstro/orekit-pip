@@ -32,8 +32,8 @@ namespace org {
         class AttitudeEphemerisFileWriter : public ::java::lang::Object {
          public:
           enum {
-            mid_write_1c80e0cccc4d4797,
-            mid_write_9b09ecef0da8f461,
+            mid_write_3e1b1b36d1b8b3a1,
+            mid_write_dd179231c59f3177,
             max_mid
           };
 

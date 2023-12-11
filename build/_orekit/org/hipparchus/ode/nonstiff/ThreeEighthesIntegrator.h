@@ -18,11 +18,11 @@ namespace org {
         class ThreeEighthesIntegrator : public ::org::hipparchus::ode::nonstiff::RungeKuttaIntegrator {
          public:
           enum {
-            mid_init$_17db3a65980d3441,
-            mid_getA_0358d8ea02f2cdb1,
-            mid_getB_60c7040667a7dc5c,
-            mid_getC_60c7040667a7dc5c,
-            mid_createInterpolator_9e7dcf977a46ce04,
+            mid_init$_10f281d777284cea,
+            mid_getA_8cf5267aa13a77f3,
+            mid_getB_a53a7513ecedada2,
+            mid_getC_a53a7513ecedada2,
+            mid_createInterpolator_68dc828ebc8622c4,
             max_mid
           };
 

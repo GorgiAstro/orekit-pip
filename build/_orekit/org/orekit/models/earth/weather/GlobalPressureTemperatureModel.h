@@ -12,14 +12,14 @@ namespace org {
         }
       }
     }
-    namespace data {
-      class DataContext;
-    }
     namespace frames {
       class Frame;
     }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace data {
+      class DataContext;
     }
   }
 }
@@ -39,11 +39,11 @@ namespace org {
           class GlobalPressureTemperatureModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_b0fb2e2980abbca2,
-              mid_init$_9bb7aba3503e2aef,
-              mid_getPressure_dff5885c2c873297,
-              mid_getTemperature_dff5885c2c873297,
-              mid_weatherParameters_a7786d9d355d3792,
+              mid_init$_77eb4a8c540c1776,
+              mid_init$_f5cca62652e4a820,
+              mid_getPressure_557b8123390d8d0c,
+              mid_getTemperature_557b8123390d8d0c,
+              mid_weatherParameters_4ca6118c75b70100,
               max_mid
             };
 

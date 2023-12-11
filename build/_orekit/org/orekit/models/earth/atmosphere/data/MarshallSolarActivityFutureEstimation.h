@@ -9,21 +9,21 @@ namespace org {
       namespace earth {
         namespace atmosphere {
           namespace data {
-            class MarshallSolarActivityFutureEstimationLoader$LineParameters;
             class MarshallSolarActivityFutureEstimation$StrengthLevel;
+            class MarshallSolarActivityFutureEstimationLoader$LineParameters;
             class MarshallSolarActivityFutureEstimationLoader;
           }
         }
       }
     }
-    namespace data {
-      class DataProvidersManager;
-      class DataSource;
-    }
     namespace time {
-      class AbsoluteDate;
       class DateComponents;
+      class AbsoluteDate;
       class TimeScale;
+    }
+    namespace data {
+      class DataSource;
+      class DataProvidersManager;
     }
   }
 }
@@ -45,21 +45,21 @@ namespace org {
             class MarshallSolarActivityFutureEstimation : public ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityData {
              public:
               enum {
-                mid_init$_63237fb16192c43e,
-                mid_init$_49087018f9ef4b50,
-                mid_init$_1def1b70c873513f,
-                mid_init$_10d47b13d66f2d64,
-                mid_init$_d5e607b5def59a14,
-                mid_init$_cc5ba78e41fbaf15,
-                mid_get24HoursKp_bf1d7732f1acb697,
-                mid_getAp_2b9aa40de0a696a4,
-                mid_getAverageFlux_bf1d7732f1acb697,
-                mid_getDailyFlux_bf1d7732f1acb697,
-                mid_getFileDate_21e8cae7789f5d8a,
-                mid_getInstantFlux_bf1d7732f1acb697,
-                mid_getMeanFlux_bf1d7732f1acb697,
-                mid_getStrengthLevel_d8093aa01452ce71,
-                mid_getThreeHourlyKP_bf1d7732f1acb697,
+                mid_init$_3ec7eea9830771ac,
+                mid_init$_e392516865664de5,
+                mid_init$_c4c299c8a306aef5,
+                mid_init$_689592c643358bb5,
+                mid_init$_476b77da02fe834a,
+                mid_init$_0456b112dff413d3,
+                mid_get24HoursKp_b0b988f941da47d8,
+                mid_getAp_89e8b78e4211e023,
+                mid_getAverageFlux_b0b988f941da47d8,
+                mid_getDailyFlux_b0b988f941da47d8,
+                mid_getFileDate_cbc22955a45bd9a2,
+                mid_getInstantFlux_b0b988f941da47d8,
+                mid_getMeanFlux_b0b988f941da47d8,
+                mid_getStrengthLevel_ca23ece2c9c96552,
+                mid_getThreeHourlyKP_b0b988f941da47d8,
                 max_mid
               };
 

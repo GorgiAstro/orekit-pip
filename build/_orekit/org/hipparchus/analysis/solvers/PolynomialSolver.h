@@ -3,6 +3,11 @@
 
 #include "org/hipparchus/analysis/solvers/BaseUnivariateSolver.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace analysis {
@@ -10,11 +15,6 @@ namespace org {
         class PolynomialFunction;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;

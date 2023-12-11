@@ -13,8 +13,8 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace bodies {
-      class CelestialBodies;
       class CelestialBody;
+      class CelestialBodies;
     }
   }
 }
@@ -27,25 +27,25 @@ namespace org {
       class PythonCelestialBodies : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_finalize_0fa09c18fee449d5,
-          mid_getBody_68e48076ef831536,
-          mid_getEarth_624686a38a6b107c,
-          mid_getEarthMoonBarycenter_624686a38a6b107c,
-          mid_getJupiter_624686a38a6b107c,
-          mid_getMars_624686a38a6b107c,
-          mid_getMercury_624686a38a6b107c,
-          mid_getMoon_624686a38a6b107c,
-          mid_getNeptune_624686a38a6b107c,
-          mid_getPluto_624686a38a6b107c,
-          mid_getSaturn_624686a38a6b107c,
-          mid_getSolarSystemBarycenter_624686a38a6b107c,
-          mid_getSun_624686a38a6b107c,
-          mid_getUranus_624686a38a6b107c,
-          mid_getVenus_624686a38a6b107c,
-          mid_pythonDecRef_0fa09c18fee449d5,
-          mid_pythonExtension_492808a339bfa35f,
-          mid_pythonExtension_3a8e7649f31fdb20,
+          mid_init$_0640e6acf969ed28,
+          mid_finalize_0640e6acf969ed28,
+          mid_getBody_47d89fc2b3d16fd5,
+          mid_getEarth_40e74583267ad550,
+          mid_getEarthMoonBarycenter_40e74583267ad550,
+          mid_getJupiter_40e74583267ad550,
+          mid_getMars_40e74583267ad550,
+          mid_getMercury_40e74583267ad550,
+          mid_getMoon_40e74583267ad550,
+          mid_getNeptune_40e74583267ad550,
+          mid_getPluto_40e74583267ad550,
+          mid_getSaturn_40e74583267ad550,
+          mid_getSolarSystemBarycenter_40e74583267ad550,
+          mid_getSun_40e74583267ad550,
+          mid_getUranus_40e74583267ad550,
+          mid_getVenus_40e74583267ad550,
+          mid_pythonDecRef_0640e6acf969ed28,
+          mid_pythonExtension_9e26256fb0d384a2,
+          mid_pythonExtension_3cd6a6b354c6aa22,
           max_mid
         };
 

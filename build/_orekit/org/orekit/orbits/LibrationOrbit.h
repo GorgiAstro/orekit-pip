@@ -27,11 +27,11 @@ namespace org {
       class LibrationOrbit : public ::java::lang::Object {
        public:
         enum {
-          mid_applyDifferentialCorrection_0fa09c18fee449d5,
-          mid_getInitialPV_9b7c658c14883c84,
-          mid_getManifolds_9136566038bfc19a,
-          mid_getOrbitalPeriod_dff5885c2c873297,
-          mid_applyCorrectionOnPV_e2324264d8e2d238,
+          mid_applyDifferentialCorrection_0640e6acf969ed28,
+          mid_getInitialPV_77bd7b3cdab2713e,
+          mid_getManifolds_9f3a2589cd3feaf4,
+          mid_getOrbitalPeriod_557b8123390d8d0c,
+          mid_applyCorrectionOnPV_0f6106070ec4ffe8,
           max_mid
         };
 

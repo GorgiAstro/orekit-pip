@@ -6,11 +6,11 @@
 namespace org {
   namespace hipparchus {
     namespace analysis {
-      namespace polynomials {
-        class PolynomialFunction;
-      }
       namespace solvers {
         class PolynomialSolver;
+      }
+      namespace polynomials {
+        class PolynomialFunction;
       }
     }
   }
@@ -30,8 +30,8 @@ namespace org {
         class AbstractPolynomialSolver : public ::org::hipparchus::analysis::solvers::BaseAbstractUnivariateSolver {
          public:
           enum {
-            mid_getCoefficients_60c7040667a7dc5c,
-            mid_setup_b0c582833ad20e05,
+            mid_getCoefficients_a53a7513ecedada2,
+            mid_setup_b62111a68f502a63,
             max_mid
           };
 

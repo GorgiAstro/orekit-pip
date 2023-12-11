@@ -3,36 +3,6 @@
 
 #include "org/orekit/propagation/analytical/AbstractAnalyticalPropagator.h"
 
-namespace org {
-  namespace orekit {
-    namespace forces {
-      namespace gravity {
-        namespace potential {
-          class UnnormalizedSphericalHarmonicsProvider$UnnormalizedSphericalHarmonics;
-          class UnnormalizedSphericalHarmonicsProvider;
-        }
-      }
-    }
-    namespace utils {
-      class ParameterDriversProvider;
-      class ParameterDriver;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-    namespace orbits {
-      class KeplerianOrbit;
-      class Orbit;
-    }
-    namespace propagation {
-      class PropagationType;
-      class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -40,6 +10,36 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace forces {
+      namespace gravity {
+        namespace potential {
+          class UnnormalizedSphericalHarmonicsProvider;
+          class UnnormalizedSphericalHarmonicsProvider$UnnormalizedSphericalHarmonics;
+        }
+      }
+    }
+    namespace orbits {
+      class KeplerianOrbit;
+      class Orbit;
+    }
+    namespace utils {
+      class ParameterDriver;
+      class ParameterDriversProvider;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+    namespace propagation {
+      class SpacecraftState;
+      class PropagationType;
+    }
   }
 }
 template<class T> class JArray;
@@ -52,37 +52,37 @@ namespace org {
         class BrouwerLyddanePropagator : public ::org::orekit::propagation::analytical::AbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_31607b718e7a1097,
-            mid_init$_a1b1c06f492959e4,
-            mid_init$_8646cc10dd33bbf2,
-            mid_init$_2c72174dffba1894,
-            mid_init$_f8b9250146f13e12,
-            mid_init$_252682d189d40f9c,
-            mid_init$_54e2c5d7b9423480,
-            mid_init$_20cb587487bfb507,
-            mid_init$_4afced4a8ff4bea6,
-            mid_init$_e47ae3c1fa8fb703,
-            mid_init$_54f20a766b03c649,
-            mid_init$_0a5ace5164997436,
-            mid_init$_97c1c2d9fb9540d2,
-            mid_init$_c47d0d0c5cbf47f4,
-            mid_computeMeanOrbit_246b62ce75e6ee7b,
-            mid_computeMeanOrbit_6de83e60186a683f,
-            mid_computeMeanOrbit_739ead9f7fc14c65,
-            mid_getCk0_60c7040667a7dc5c,
-            mid_getM2_dff5885c2c873297,
-            mid_getMu_dff5885c2c873297,
-            mid_getParametersDrivers_2afa36052df4765d,
-            mid_getReferenceRadius_dff5885c2c873297,
-            mid_propagateOrbit_ce31a304312e0d13,
-            mid_resetInitialState_0ee5c56004643a2e,
-            mid_resetInitialState_49bd3c28fa9b4521,
-            mid_resetInitialState_e810a1bf28643513,
-            mid_getMass_bf1d7732f1acb697,
-            mid_resetIntermediateState_33f4696e4edaa03c,
-            mid_resetIntermediateState_f44ee54963124581,
-            mid_getJacobiansColumnsNames_2afa36052df4765d,
-            mid_createHarvester_5cfd2a13971b74c7,
+            mid_init$_65a89f7e11326edb,
+            mid_init$_72bb5fd9248459ec,
+            mid_init$_3bbaee0cd134e64d,
+            mid_init$_51ca8416b8041192,
+            mid_init$_30a09973fa93a380,
+            mid_init$_1abc9dfeae04dcd1,
+            mid_init$_76469dc8b3177e2d,
+            mid_init$_5480bf14a8e1b439,
+            mid_init$_c1ce6d7a4b6f55df,
+            mid_init$_6c46459a430a1264,
+            mid_init$_a4ba5fe6da24ec6b,
+            mid_init$_3b89d9d09fc7e150,
+            mid_init$_8e7c787222eb0372,
+            mid_init$_4aa17fceee61a1fc,
+            mid_computeMeanOrbit_7650e78f6078508c,
+            mid_computeMeanOrbit_a29df85448b17ec0,
+            mid_computeMeanOrbit_46a72092c059ae31,
+            mid_getCk0_a53a7513ecedada2,
+            mid_getM2_557b8123390d8d0c,
+            mid_getMu_557b8123390d8d0c,
+            mid_getParametersDrivers_0d9551367f7ecdef,
+            mid_getReferenceRadius_557b8123390d8d0c,
+            mid_propagateOrbit_0788a2ada99e6ef9,
+            mid_resetInitialState_8655761ebf04b503,
+            mid_resetInitialState_cd59a3a5d9eb366e,
+            mid_resetInitialState_c13195962bdcee40,
+            mid_getJacobiansColumnsNames_0d9551367f7ecdef,
+            mid_resetIntermediateState_ac5c93ef3cbab63b,
+            mid_resetIntermediateState_45bf76e836befe86,
+            mid_getMass_b0b988f941da47d8,
+            mid_createHarvester_5f0409a66c29e9c1,
             max_mid
           };
 

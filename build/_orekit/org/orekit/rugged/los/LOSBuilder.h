@@ -3,14 +3,22 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace rugged {
       namespace los {
-        class LOSBuilder;
-        class TimeDependentLOS;
         class LOSTransform;
+        class TimeDependentLOS;
         class TimeIndependentLOSTransform;
+        class LOSBuilder;
       }
     }
   }
@@ -24,14 +32,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -42,10 +42,10 @@ namespace org {
         class LOSBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_de3e021e7266b71e,
-            mid_addTransform_cd61dd8248b3f5f8,
-            mid_addTransform_3fca5e167b9283bf,
-            mid_build_49fd8d1afbb96641,
+            mid_init$_4ccaedadb068bdeb,
+            mid_addTransform_231109ffe5c9a348,
+            mid_addTransform_5ec13618c44587f1,
+            mid_build_f31dbf4c8d33b612,
             max_mid
           };
 

@@ -5,6 +5,9 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class TimeScales;
+    }
     namespace propagation {
       namespace analytical {
         namespace gnss {
@@ -13,9 +16,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace time {
-      class TimeScales;
     }
   }
 }
@@ -37,50 +37,50 @@ namespace org {
               class Rtcm1020Data : public ::org::orekit::gnss::metric::messages::rtcm::ephemeris::RtcmEphemerisData {
                public:
                 enum {
-                  mid_init$_0fa09c18fee449d5,
-                  mid_areAdditionalDataAvailable_b108b35ef48e27bd,
-                  mid_getBN_570ce0828f81a2c1,
-                  mid_getDeltaTN_dff5885c2c873297,
-                  mid_getEn_570ce0828f81a2c1,
-                  mid_getFT_570ce0828f81a2c1,
-                  mid_getGlonassNavigationMessage_17df07811745e427,
-                  mid_getGlonassNavigationMessage_42c1c61c25a503ca,
-                  mid_getLNFifthString_570ce0828f81a2c1,
-                  mid_getLNThirdString_570ce0828f81a2c1,
-                  mid_getM_570ce0828f81a2c1,
-                  mid_getN4_570ce0828f81a2c1,
-                  mid_getNA_570ce0828f81a2c1,
-                  mid_getNt_570ce0828f81a2c1,
-                  mid_getP_570ce0828f81a2c1,
-                  mid_getP1_570ce0828f81a2c1,
-                  mid_getP2_570ce0828f81a2c1,
-                  mid_getP3_570ce0828f81a2c1,
-                  mid_getP4_570ce0828f81a2c1,
-                  mid_getTauC_dff5885c2c873297,
-                  mid_getTauGps_dff5885c2c873297,
-                  mid_getTk_dff5885c2c873297,
-                  mid_isHealthAvailable_b108b35ef48e27bd,
-                  mid_setAreAdditionalDataAvailable_bd04c9335fb9e4cf,
-                  mid_setBN_99803b0791f320ff,
-                  mid_setDeltaTN_17db3a65980d3441,
-                  mid_setEn_99803b0791f320ff,
-                  mid_setFT_99803b0791f320ff,
-                  mid_setGlonassNavigationMessage_03382bf5f212b94b,
-                  mid_setHealthAvailabilityIndicator_bd04c9335fb9e4cf,
-                  mid_setLNFifthString_99803b0791f320ff,
-                  mid_setLNThirdString_99803b0791f320ff,
-                  mid_setM_99803b0791f320ff,
-                  mid_setN4_99803b0791f320ff,
-                  mid_setNA_99803b0791f320ff,
-                  mid_setNt_99803b0791f320ff,
-                  mid_setP_99803b0791f320ff,
-                  mid_setP1_99803b0791f320ff,
-                  mid_setP2_99803b0791f320ff,
-                  mid_setP3_99803b0791f320ff,
-                  mid_setP4_99803b0791f320ff,
-                  mid_setTauC_17db3a65980d3441,
-                  mid_setTauGps_17db3a65980d3441,
-                  mid_setTk_17db3a65980d3441,
+                  mid_init$_0640e6acf969ed28,
+                  mid_areAdditionalDataAvailable_89b302893bdbe1f1,
+                  mid_getBN_412668abc8d889e9,
+                  mid_getDeltaTN_557b8123390d8d0c,
+                  mid_getEn_412668abc8d889e9,
+                  mid_getFT_412668abc8d889e9,
+                  mid_getGlonassNavigationMessage_5224aff0852264c8,
+                  mid_getGlonassNavigationMessage_df267878cf34cf89,
+                  mid_getLNFifthString_412668abc8d889e9,
+                  mid_getLNThirdString_412668abc8d889e9,
+                  mid_getM_412668abc8d889e9,
+                  mid_getN4_412668abc8d889e9,
+                  mid_getNA_412668abc8d889e9,
+                  mid_getNt_412668abc8d889e9,
+                  mid_getP_412668abc8d889e9,
+                  mid_getP1_412668abc8d889e9,
+                  mid_getP2_412668abc8d889e9,
+                  mid_getP3_412668abc8d889e9,
+                  mid_getP4_412668abc8d889e9,
+                  mid_getTauC_557b8123390d8d0c,
+                  mid_getTauGps_557b8123390d8d0c,
+                  mid_getTk_557b8123390d8d0c,
+                  mid_isHealthAvailable_89b302893bdbe1f1,
+                  mid_setAreAdditionalDataAvailable_ed2afdb8506b9742,
+                  mid_setBN_a3da1a935cb37f7b,
+                  mid_setDeltaTN_10f281d777284cea,
+                  mid_setEn_a3da1a935cb37f7b,
+                  mid_setFT_a3da1a935cb37f7b,
+                  mid_setGlonassNavigationMessage_2ccd3101dfe293f5,
+                  mid_setHealthAvailabilityIndicator_ed2afdb8506b9742,
+                  mid_setLNFifthString_a3da1a935cb37f7b,
+                  mid_setLNThirdString_a3da1a935cb37f7b,
+                  mid_setM_a3da1a935cb37f7b,
+                  mid_setN4_a3da1a935cb37f7b,
+                  mid_setNA_a3da1a935cb37f7b,
+                  mid_setNt_a3da1a935cb37f7b,
+                  mid_setP_a3da1a935cb37f7b,
+                  mid_setP1_a3da1a935cb37f7b,
+                  mid_setP2_a3da1a935cb37f7b,
+                  mid_setP3_a3da1a935cb37f7b,
+                  mid_setP4_a3da1a935cb37f7b,
+                  mid_setTauC_10f281d777284cea,
+                  mid_setTauGps_10f281d777284cea,
+                  mid_setTk_10f281d777284cea,
                   max_mid
                 };
 

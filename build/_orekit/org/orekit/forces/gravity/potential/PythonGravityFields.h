@@ -3,6 +3,23 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace forces {
+      namespace gravity {
+        namespace potential {
+          class GravityFields;
+          class UnnormalizedSphericalHarmonicsProvider;
+          class OceanTidesWave;
+          class NormalizedSphericalHarmonicsProvider;
+        }
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,23 +27,6 @@ namespace java {
   namespace lang {
     class Throwable;
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace forces {
-      namespace gravity {
-        namespace potential {
-          class GravityFields;
-          class NormalizedSphericalHarmonicsProvider;
-          class UnnormalizedSphericalHarmonicsProvider;
-          class OceanTidesWave;
-        }
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
   }
 }
 template<class T> class JArray;
@@ -40,16 +40,16 @@ namespace org {
           class PythonGravityFields : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_finalize_0fa09c18fee449d5,
-              mid_getConstantNormalizedProvider_8be9acc0db722a5e,
-              mid_getConstantUnnormalizedProvider_1a4f51636cfaa7fe,
-              mid_getNormalizedProvider_0fdcb0a280e1e598,
-              mid_getOceanTidesWaves_10d7c0f6de166543,
-              mid_getUnnormalizedProvider_c2f412128b078525,
-              mid_pythonDecRef_0fa09c18fee449d5,
-              mid_pythonExtension_492808a339bfa35f,
-              mid_pythonExtension_3a8e7649f31fdb20,
+              mid_init$_0640e6acf969ed28,
+              mid_finalize_0640e6acf969ed28,
+              mid_getConstantNormalizedProvider_0c77c94a83049da8,
+              mid_getConstantUnnormalizedProvider_eb1ce3dfed700512,
+              mid_getNormalizedProvider_79759f2115f6836e,
+              mid_getOceanTidesWaves_db6a96225c690c76,
+              mid_getUnnormalizedProvider_2609e3e741b941bf,
+              mid_pythonDecRef_0640e6acf969ed28,
+              mid_pythonExtension_9e26256fb0d384a2,
+              mid_pythonExtension_3cd6a6b354c6aa22,
               max_mid
             };
 

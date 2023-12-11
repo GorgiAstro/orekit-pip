@@ -3,24 +3,33 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
-    namespace propagation {
-      namespace events {
-        class VisibilityTrigger;
-      }
+    namespace frames {
+      class Transform;
+    }
+    namespace bodies {
+      class GeodeticPoint;
+      class OneAxisEllipsoid;
     }
     namespace geometry {
       namespace fov {
         class FieldOfView;
       }
     }
-    namespace bodies {
-      class OneAxisEllipsoid;
-      class GeodeticPoint;
-    }
-    namespace frames {
-      class Transform;
+    namespace propagation {
+      namespace events {
+        class VisibilityTrigger;
+      }
     }
   }
   namespace hipparchus {
@@ -33,15 +42,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -52,15 +52,15 @@ namespace org {
         class PythonFieldOfView : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_finalize_0fa09c18fee449d5,
-            mid_getFootprint_d179f90e70a637c1,
-            mid_getMargin_dff5885c2c873297,
-            mid_offsetFromBoundary_92bc6ba59ebf6937,
-            mid_projectToBoundary_d0fe714ef34714f7,
-            mid_pythonDecRef_0fa09c18fee449d5,
-            mid_pythonExtension_492808a339bfa35f,
-            mid_pythonExtension_3a8e7649f31fdb20,
+            mid_init$_0640e6acf969ed28,
+            mid_finalize_0640e6acf969ed28,
+            mid_getFootprint_37f5cab3ae6d781a,
+            mid_getMargin_557b8123390d8d0c,
+            mid_offsetFromBoundary_d0bb3aecf00cc465,
+            mid_projectToBoundary_b48aa9aef740fa79,
+            mid_pythonDecRef_0640e6acf969ed28,
+            mid_pythonExtension_9e26256fb0d384a2,
+            mid_pythonExtension_3cd6a6b354c6aa22,
             max_mid
           };
 

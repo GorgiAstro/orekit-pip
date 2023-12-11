@@ -21,8 +21,8 @@ namespace org {
             class OdmMetadata : public ::org::orekit::files::ccsds::section::Metadata {
              public:
               enum {
-                mid_getObjectName_11b109bd155ca898,
-                mid_setObjectName_d0bc48d5b00dc40c,
+                mid_getObjectName_3cffd47377eca18a,
+                mid_setObjectName_f5ffdf29129ef90a,
                 max_mid
               };
 

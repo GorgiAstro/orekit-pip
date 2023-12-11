@@ -5,16 +5,16 @@
 
 namespace org {
   namespace orekit {
+    namespace propagation {
+      namespace conversion {
+        class PropagatorBuilder;
+      }
+    }
     namespace estimation {
       namespace sequential {
         class KalmanEstimator;
         class KalmanEstimatorBuilder;
         class CovarianceMatrixProvider;
-      }
-    }
-    namespace propagation {
-      namespace conversion {
-        class PropagatorBuilder;
       }
     }
     namespace utils {
@@ -42,11 +42,11 @@ namespace org {
         class KalmanEstimatorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_addPropagationConfiguration_61fe9d340683de4c,
-            mid_build_55dabf57465c9f6d,
-            mid_decomposer_1c41ab74406b8fc8,
-            mid_estimatedMeasurementsParameters_07ea1a66b45abd16,
+            mid_init$_0640e6acf969ed28,
+            mid_addPropagationConfiguration_f540e5f291410015,
+            mid_build_a42b7cd58644ce4d,
+            mid_decomposer_db62971c2f8c9e8a,
+            mid_estimatedMeasurementsParameters_a8b9641e50f1ffff,
             max_mid
           };
 

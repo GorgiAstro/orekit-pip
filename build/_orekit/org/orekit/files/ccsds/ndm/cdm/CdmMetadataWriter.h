@@ -3,11 +3,6 @@
 
 #include "org/orekit/files/ccsds/section/AbstractWriter.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -19,6 +14,11 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -33,8 +33,8 @@ namespace org {
             class CdmMetadataWriter : public ::org::orekit::files::ccsds::section::AbstractWriter {
              public:
               enum {
-                mid_init$_3dfd8fa1537edea9,
-                mid_writeContent_6d745cf7b26e9f5d,
+                mid_init$_188e3c0472d94c3c,
+                mid_writeContent_0503da09b1f1eb3c,
                 max_mid
               };
 

@@ -3,27 +3,27 @@
 
 #include "org/hipparchus/stat/descriptive/AbstractStorelessUnivariateStatistic.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace stat {
+      namespace descriptive {
+        namespace rank {
+          class Max;
+        }
+        class AggregatableStatistic;
+      }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+  }
+}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace stat {
-      namespace descriptive {
-        class AggregatableStatistic;
-        namespace rank {
-          class Max;
-        }
-      }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
   }
 }
 template<class T> class JArray;
@@ -37,14 +37,14 @@ namespace org {
           class Max : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_aggregate_fe3a0c5fa6b904a3,
-              mid_clear_0fa09c18fee449d5,
-              mid_copy_74e2c09c034cb400,
-              mid_evaluate_556bede10daac330,
-              mid_getN_492808a339bfa35f,
-              mid_getResult_dff5885c2c873297,
-              mid_increment_17db3a65980d3441,
+              mid_init$_0640e6acf969ed28,
+              mid_aggregate_1f02a0aeaa94b22d,
+              mid_clear_0640e6acf969ed28,
+              mid_copy_2755e5ad258aab4f,
+              mid_evaluate_9eeeb1ae977f525d,
+              mid_getN_9e26256fb0d384a2,
+              mid_getResult_557b8123390d8d0c,
+              mid_increment_10f281d777284cea,
               max_mid
             };
 

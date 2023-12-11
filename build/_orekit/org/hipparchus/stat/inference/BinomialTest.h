@@ -27,9 +27,9 @@ namespace org {
         class BinomialTest : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_binomialTest_ca88065b5070c7c9,
-            mid_binomialTest_b26c4075b34737c4,
+            mid_init$_0640e6acf969ed28,
+            mid_binomialTest_d7ff5d93e82bbe26,
+            mid_binomialTest_088090df4f38c4c6,
             max_mid
           };
 

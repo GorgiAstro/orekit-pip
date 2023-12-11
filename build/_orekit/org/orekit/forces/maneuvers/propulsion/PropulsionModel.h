@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -15,24 +14,25 @@ namespace org {
       }
     }
     class Field;
+    class CalculusFieldElement;
   }
   namespace orekit {
     namespace propagation {
+      class FieldSpacecraftState;
       namespace events {
+        class EventDetectorsProvider;
         class EventDetector;
         class FieldEventDetector;
-        class EventDetectorsProvider;
       }
-      class FieldSpacecraftState;
       class SpacecraftState;
     }
-    namespace attitudes {
-      class Attitude;
-      class FieldAttitude;
-    }
     namespace time {
-      class AbsoluteDate;
       class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
+    namespace attitudes {
+      class FieldAttitude;
+      class Attitude;
     }
     namespace forces {
       namespace maneuvers {
@@ -42,14 +42,14 @@ namespace org {
   }
 }
 namespace java {
+  namespace lang {
+    class Class;
+    class String;
+  }
   namespace util {
     namespace stream {
       class Stream;
     }
-  }
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -63,16 +63,16 @@ namespace org {
           class PropulsionModel : public ::org::orekit::utils::ParameterDriversProvider {
            public:
             enum {
-              mid_getAcceleration_19f36cd1a0a8b9bf,
-              mid_getAcceleration_a6c71e83efaf48d0,
-              mid_getControl3DVectorCostType_67739b20d9566a8c,
-              mid_getEventDetectors_20f6d2b462aaef4b,
-              mid_getFieldEventDetectors_361313cd1a9c693a,
-              mid_getMassDerivatives_0b7191d207b9680f,
-              mid_getMassDerivatives_8bdf60d5551eceaf,
-              mid_getName_11b109bd155ca898,
-              mid_init_8e8de2be1664674a,
-              mid_init_826b4eda94da4e78,
+              mid_getAcceleration_53d7cdec4a9e3cd4,
+              mid_getAcceleration_28694fea3dbf2005,
+              mid_getControl3DVectorCostType_601f05e5d0c82ad9,
+              mid_getEventDetectors_d7cce92225eb0db2,
+              mid_getFieldEventDetectors_8130af76f6998f44,
+              mid_getMassDerivatives_810dcb8f9f5d191a,
+              mid_getMassDerivatives_4ad317f7598a10a9,
+              mid_getName_3cffd47377eca18a,
+              mid_init_811e49dad2467b67,
+              mid_init_0472264ad6f40bc2,
               max_mid
             };
 

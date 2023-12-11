@@ -4,11 +4,9 @@
 #include "org/orekit/propagation/semianalytical/dsst/forces/AbstractGaussianContribution.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
+      class FieldSpacecraftState;
       namespace semianalytical {
         namespace dsst {
           namespace utilities {
@@ -17,7 +15,6 @@ namespace org {
           }
         }
       }
-      class FieldSpacecraftState;
       class SpacecraftState;
     }
     namespace utils {
@@ -26,6 +23,9 @@ namespace org {
     namespace forces {
       class ForceModel;
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -50,14 +50,14 @@ namespace org {
             class PythonAbstractGaussianContribution : public ::org::orekit::propagation::semianalytical::dsst::forces::AbstractGaussianContribution {
              public:
               enum {
-                mid_init$_678a339a3ee778c2,
-                mid_finalize_0fa09c18fee449d5,
-                mid_getLLimits_04690aaa2b6db52c,
-                mid_getLLimits_7442885516ff2293,
-                mid_getParametersDriversWithoutMu_2afa36052df4765d,
-                mid_pythonDecRef_0fa09c18fee449d5,
-                mid_pythonExtension_492808a339bfa35f,
-                mid_pythonExtension_3a8e7649f31fdb20,
+                mid_init$_9fd79603d9e48fb7,
+                mid_finalize_0640e6acf969ed28,
+                mid_getLLimits_8babb6fb34d6b24d,
+                mid_getLLimits_233f032b171b49d2,
+                mid_getParametersDriversWithoutMu_0d9551367f7ecdef,
+                mid_pythonDecRef_0640e6acf969ed28,
+                mid_pythonExtension_9e26256fb0d384a2,
+                mid_pythonExtension_3cd6a6b354c6aa22,
                 max_mid
               };
 

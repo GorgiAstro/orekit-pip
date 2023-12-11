@@ -31,10 +31,10 @@ namespace org {
         class FieldApsideDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_1cbcb2601e7d1334,
-            mid_init$_7d2b5fee17c8356b,
-            mid_g_41a008afe53da855,
-            mid_create_f6d4515668f2d483,
+            mid_init$_8c98afebb6212490,
+            mid_init$_aaab803ef8769023,
+            mid_g_de1c2d709eb2829c,
+            mid_create_9a8291c9838e8605,
             max_mid
           };
 

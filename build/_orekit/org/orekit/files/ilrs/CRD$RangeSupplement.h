@@ -27,16 +27,16 @@ namespace org {
         class CRD$RangeSupplement : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7b0546b525dc44ca,
-            mid_getCenterOfMassCorrection_dff5885c2c873297,
-            mid_getDate_85703d13e302437e,
-            mid_getNdFilterValue_dff5885c2c873297,
-            mid_getRangeRate_dff5885c2c873297,
-            mid_getSystemConfigurationId_11b109bd155ca898,
-            mid_getTimeBiasApplied_dff5885c2c873297,
-            mid_getTroposphericRefractionCorrection_dff5885c2c873297,
-            mid_toCrdString_11b109bd155ca898,
-            mid_toString_11b109bd155ca898,
+            mid_init$_956b6a53861e670b,
+            mid_getCenterOfMassCorrection_557b8123390d8d0c,
+            mid_getDate_7a97f7e149e79afb,
+            mid_getNdFilterValue_557b8123390d8d0c,
+            mid_getRangeRate_557b8123390d8d0c,
+            mid_getSystemConfigurationId_3cffd47377eca18a,
+            mid_getTimeBiasApplied_557b8123390d8d0c,
+            mid_getTroposphericRefractionCorrection_557b8123390d8d0c,
+            mid_toCrdString_3cffd47377eca18a,
+            mid_toString_3cffd47377eca18a,
             max_mid
           };
 

@@ -29,8 +29,8 @@ namespace org {
         class StepFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_e1f4b15468f5564a,
-            mid_value_dcbc7ce2902fa136,
+            mid_init$_ab4840ba016ef1da,
+            mid_value_7e960cd6eee376d8,
             max_mid
           };
 

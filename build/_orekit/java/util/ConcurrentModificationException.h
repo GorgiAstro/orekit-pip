@@ -18,10 +18,10 @@ namespace java {
     class ConcurrentModificationException : public ::java::lang::RuntimeException {
      public:
       enum {
-        mid_init$_0fa09c18fee449d5,
-        mid_init$_d0bc48d5b00dc40c,
-        mid_init$_98504698e8b85a67,
-        mid_init$_884e3b5778514e73,
+        mid_init$_0640e6acf969ed28,
+        mid_init$_f5ffdf29129ef90a,
+        mid_init$_7d9320fd2ea36122,
+        mid_init$_0701bef404aae0c6,
         max_mid
       };
 

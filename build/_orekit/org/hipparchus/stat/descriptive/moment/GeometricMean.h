@@ -3,30 +3,30 @@
 
 #include "org/hipparchus/stat/descriptive/AbstractStorelessUnivariateStatistic.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+    namespace stat {
+      namespace descriptive {
+        class AggregatableStatistic;
+        namespace summary {
+          class SumOfLogs;
+        }
+        namespace moment {
+          class GeometricMean;
+        }
+      }
+    }
+  }
+}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace stat {
-      namespace descriptive {
-        class AggregatableStatistic;
-        namespace moment {
-          class GeometricMean;
-        }
-        namespace summary {
-          class SumOfLogs;
-        }
-      }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
   }
 }
 template<class T> class JArray;
@@ -40,15 +40,15 @@ namespace org {
           class GeometricMean : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_init$_b873a77489eff3da,
-              mid_aggregate_e47a6fc0848379ab,
-              mid_clear_0fa09c18fee449d5,
-              mid_copy_b7aadfaef0aaff44,
-              mid_evaluate_556bede10daac330,
-              mid_getN_492808a339bfa35f,
-              mid_getResult_dff5885c2c873297,
-              mid_increment_17db3a65980d3441,
+              mid_init$_0640e6acf969ed28,
+              mid_init$_6a62c6cf36c34733,
+              mid_aggregate_b7317f18b8318562,
+              mid_clear_0640e6acf969ed28,
+              mid_copy_942e62182ea7f28a,
+              mid_evaluate_9eeeb1ae977f525d,
+              mid_getN_9e26256fb0d384a2,
+              mid_getResult_557b8123390d8d0c,
+              mid_increment_10f281d777284cea,
               max_mid
             };
 

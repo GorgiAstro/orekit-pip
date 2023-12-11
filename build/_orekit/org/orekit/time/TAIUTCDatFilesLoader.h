@@ -3,6 +3,17 @@
 
 #include "org/orekit/data/AbstractSelfFeedingLoader.h"
 
+namespace org {
+  namespace orekit {
+    namespace time {
+      class UTCTAIOffsetsLoader;
+      class OffsetModel;
+    }
+    namespace data {
+      class DataProvidersManager;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,17 +21,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace data {
-      class DataProvidersManager;
-    }
-    namespace time {
-      class UTCTAIOffsetsLoader;
-      class OffsetModel;
-    }
   }
 }
 template<class T> class JArray;
@@ -32,9 +32,9 @@ namespace org {
       class TAIUTCDatFilesLoader : public ::org::orekit::data::AbstractSelfFeedingLoader {
        public:
         enum {
-          mid_init$_d0bc48d5b00dc40c,
-          mid_init$_63232a42a5419b09,
-          mid_loadOffsets_2afa36052df4765d,
+          mid_init$_f5ffdf29129ef90a,
+          mid_init$_28c7bdc075bb74e8,
+          mid_loadOffsets_0d9551367f7ecdef,
           max_mid
         };
 

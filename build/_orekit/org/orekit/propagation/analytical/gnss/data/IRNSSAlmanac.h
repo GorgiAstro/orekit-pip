@@ -20,8 +20,8 @@ namespace org {
             class IRNSSAlmanac : public ::org::orekit::propagation::analytical::gnss::data::AbstractAlmanac {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_setSqrtA_17db3a65980d3441,
+                mid_init$_0640e6acf969ed28,
+                mid_setSqrtA_10f281d777284cea,
                 max_mid
               };
 

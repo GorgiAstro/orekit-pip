@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathIllegalArgumentException;
       class MathIllegalStateException;
+      class MathIllegalArgumentException;
     }
     namespace analysis {
       class UnivariateFunction;
@@ -29,13 +29,13 @@ namespace org {
         class BaseUnivariateSolver : public ::java::lang::Object {
          public:
           enum {
-            mid_getAbsoluteAccuracy_dff5885c2c873297,
-            mid_getEvaluations_570ce0828f81a2c1,
-            mid_getFunctionValueAccuracy_dff5885c2c873297,
-            mid_getRelativeAccuracy_dff5885c2c873297,
-            mid_solve_a156b737628248ac,
-            mid_solve_5531acb13e429311,
-            mid_solve_136fe8df860928b8,
+            mid_getAbsoluteAccuracy_557b8123390d8d0c,
+            mid_getEvaluations_412668abc8d889e9,
+            mid_getFunctionValueAccuracy_557b8123390d8d0c,
+            mid_getRelativeAccuracy_557b8123390d8d0c,
+            mid_solve_2acf1fcf666df32e,
+            mid_solve_277b266ef2505d2d,
+            mid_solve_50fe689dc1cd3df5,
             max_mid
           };
 

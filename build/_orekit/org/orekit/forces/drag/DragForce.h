@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -14,19 +13,20 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
   namespace orekit {
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
+    namespace utils {
+      class ParameterDriver;
+    }
     namespace forces {
       namespace drag {
         class DragSensitive;
       }
-    }
-    namespace utils {
-      class ParameterDriver;
     }
     namespace models {
       namespace earth {
@@ -55,12 +55,12 @@ namespace org {
         class DragForce : public ::org::orekit::forces::drag::AbstractDragForceModel {
          public:
           enum {
-            mid_init$_47c8c3109a8b7c41,
-            mid_acceleration_b42ac4b5bfb80fab,
-            mid_acceleration_8954761face5e1a7,
-            mid_getAtmosphere_5eed92b432f371c2,
-            mid_getParametersDrivers_2afa36052df4765d,
-            mid_getSpacecraft_2df1d9602f270c8d,
+            mid_init$_36405303e879e795,
+            mid_acceleration_61944e27a39e8290,
+            mid_acceleration_b61fb59a041240c6,
+            mid_getAtmosphere_344c414ab8fc3e7e,
+            mid_getParametersDrivers_0d9551367f7ecdef,
+            mid_getSpacecraft_5af7812abe9360ec,
             max_mid
           };
 
@@ -77,8 +77,8 @@ namespace org {
 
           DragForce(const ::org::orekit::models::earth::atmosphere::Atmosphere &, const ::org::orekit::forces::drag::DragSensitive &);
 
-          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
+          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           ::org::orekit::models::earth::atmosphere::Atmosphere getAtmosphere() const;
           ::java::util::List getParametersDrivers() const;
           ::org::orekit::forces::drag::DragSensitive getSpacecraft() const;

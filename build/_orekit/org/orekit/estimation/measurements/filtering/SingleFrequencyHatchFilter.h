@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
+    namespace gnss {
+      class MeasurementType;
+    }
     namespace files {
       namespace rinex {
         namespace observation {
           class ObservationData;
         }
       }
-    }
-    namespace gnss {
-      class MeasurementType;
     }
   }
 }
@@ -33,8 +33,8 @@ namespace org {
           class SingleFrequencyHatchFilter : public ::org::orekit::estimation::measurements::filtering::HatchFilter {
            public:
             enum {
-              mid_init$_d015ddafa5420cad,
-              mid_filterData_274c8bdbc6f49717,
+              mid_init$_894a5f5eb6fefda4,
+              mid_filterData_121e54bf6d31bdf9,
               max_mid
             };
 

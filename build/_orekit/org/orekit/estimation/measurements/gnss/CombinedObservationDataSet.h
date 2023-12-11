@@ -16,16 +16,16 @@ namespace org {
     namespace gnss {
       class SatelliteSystem;
     }
-    namespace time {
-      class AbsoluteDate;
-      class TimeStamped;
-    }
     namespace estimation {
       namespace measurements {
         namespace gnss {
           class CombinedObservationData;
         }
       }
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeStamped;
     }
   }
 }
@@ -40,12 +40,12 @@ namespace org {
           class CombinedObservationDataSet : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_78879f88aa7807cd,
-              mid_getDate_85703d13e302437e,
-              mid_getObservationData_2afa36052df4765d,
-              mid_getPrnNumber_570ce0828f81a2c1,
-              mid_getRcvrClkOffset_dff5885c2c873297,
-              mid_getSatelliteSystem_01acae5c1a253b8e,
+              mid_init$_436465e6f8c87d12,
+              mid_getDate_7a97f7e149e79afb,
+              mid_getObservationData_0d9551367f7ecdef,
+              mid_getPrnNumber_412668abc8d889e9,
+              mid_getRcvrClkOffset_557b8123390d8d0c,
+              mid_getSatelliteSystem_8b86408cc2633961,
               max_mid
             };
 

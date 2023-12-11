@@ -5,17 +5,17 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
-    namespace linear {
-      class FieldMatrixDecomposer;
-    }
-    class Field;
     namespace analysis {
       namespace differentiation {
         class FieldDerivativeStructure;
         class FieldTaylorMap;
       }
     }
+    namespace linear {
+      class FieldMatrixDecomposer;
+    }
+    class CalculusFieldElement;
+    class Field;
   }
 }
 namespace java {
@@ -33,16 +33,16 @@ namespace org {
         class FieldTaylorMap : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_35cd4b0d5c456d22,
-            mid_init$_6621086b060c801f,
-            mid_compose_2186d3bfd7fd19ad,
-            mid_getFunction_5209187934217f90,
-            mid_getNbFunctions_570ce0828f81a2c1,
-            mid_getNbParameters_570ce0828f81a2c1,
-            mid_getPoint_226a0b2040b1d2e1,
-            mid_invert_431a64036cd27a45,
-            mid_value_a60c769d407c20d1,
-            mid_value_401cf8a1b53fb909,
+            mid_init$_dc508ff654a63001,
+            mid_init$_a4259b5830086408,
+            mid_compose_8a705bca13fda9e9,
+            mid_getFunction_40193fcf634e0858,
+            mid_getNbFunctions_412668abc8d889e9,
+            mid_getNbParameters_412668abc8d889e9,
+            mid_getPoint_41762fd4377ff26e,
+            mid_invert_478258a7e7861983,
+            mid_value_0d5d57abd8dbe925,
+            mid_value_a126e91ca3e53df2,
             max_mid
           };
 

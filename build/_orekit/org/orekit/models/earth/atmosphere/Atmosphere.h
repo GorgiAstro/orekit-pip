@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -14,14 +13,15 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
   namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
     namespace frames {
       class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
     }
   }
 }
@@ -41,11 +41,11 @@ namespace org {
           class Atmosphere : public ::java::io::Serializable {
            public:
             enum {
-              mid_getDensity_b79d75c1a8af7374,
-              mid_getDensity_f7d7785230311c38,
-              mid_getFrame_b86f9f61d97a7244,
-              mid_getVelocity_417ea3d5e6de26e5,
-              mid_getVelocity_b4b015cfdb3a2ead,
+              mid_getDensity_818999d9e7960fd1,
+              mid_getDensity_57dd506d2d9ba196,
+              mid_getFrame_6c9bc0a928c56d4e,
+              mid_getVelocity_12776b6e8e044274,
+              mid_getVelocity_4b2e058d0b26ef39,
               max_mid
             };
 

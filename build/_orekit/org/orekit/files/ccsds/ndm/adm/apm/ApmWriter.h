@@ -5,26 +5,26 @@
 
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataContext;
-    }
     namespace utils {
       class IERSConventions;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace files {
       namespace ccsds {
         namespace ndm {
           namespace adm {
-            class AdmHeader;
             namespace apm {
               class Apm;
             }
+            class AdmHeader;
           }
         }
       }
     }
-    namespace time {
-      class AbsoluteDate;
+    namespace data {
+      class DataContext;
     }
   }
 }
@@ -46,8 +46,8 @@ namespace org {
               class ApmWriter : public ::org::orekit::files::ccsds::utils::generation::AbstractMessageWriter {
                public:
                 enum {
-                  mid_init$_6f30abb95e05bcdd,
-                  mid_writeSegmentContent_a4679b5cde76d825,
+                  mid_init$_170ee021ab23bf06,
+                  mid_writeSegmentContent_e9836ce27ccfe3b9,
                   max_mid
                 };
 

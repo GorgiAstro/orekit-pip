@@ -3,20 +3,8 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace files {
       namespace ccsds {
         namespace definitions {
@@ -24,6 +12,18 @@ namespace org {
         }
       }
     }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -39,66 +39,66 @@ namespace org {
               class OrbitDetermination : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_0fa09c18fee449d5,
-                  mid_getActualOdSpan_dff5885c2c873297,
-                  mid_getConfidence_dff5885c2c873297,
-                  mid_getConsiderN_570ce0828f81a2c1,
-                  mid_getConsiderParameters_2afa36052df4765d,
-                  mid_getDataTypes_2afa36052df4765d,
-                  mid_getEpoch_85703d13e302437e,
-                  mid_getEpochEigenInt_dff5885c2c873297,
-                  mid_getEpochEigenMaj_dff5885c2c873297,
-                  mid_getEpochEigenMin_dff5885c2c873297,
-                  mid_getGdop_dff5885c2c873297,
-                  mid_getId_11b109bd155ca898,
-                  mid_getMaxPredictedEigenMaj_dff5885c2c873297,
-                  mid_getMaximumObsGap_dff5885c2c873297,
-                  mid_getMethod_17e84526459b3be5,
-                  mid_getMinPredictedEigenMin_dff5885c2c873297,
-                  mid_getObsAvailable_570ce0828f81a2c1,
-                  mid_getObsUsed_570ce0828f81a2c1,
-                  mid_getPrevId_11b109bd155ca898,
-                  mid_getRecommendedOdSpan_dff5885c2c873297,
-                  mid_getSedr_dff5885c2c873297,
-                  mid_getSensors_2afa36052df4765d,
-                  mid_getSensorsN_570ce0828f81a2c1,
-                  mid_getSolveN_570ce0828f81a2c1,
-                  mid_getSolveStates_2afa36052df4765d,
-                  mid_getTimeSinceFirstObservation_dff5885c2c873297,
-                  mid_getTimeSinceLastObservation_dff5885c2c873297,
-                  mid_getTracksAvailable_570ce0828f81a2c1,
-                  mid_getTracksUsed_570ce0828f81a2c1,
-                  mid_getWeightedRms_dff5885c2c873297,
-                  mid_setActualOdSpan_17db3a65980d3441,
-                  mid_setConfidence_17db3a65980d3441,
-                  mid_setConsiderN_99803b0791f320ff,
-                  mid_setConsiderParameters_de3e021e7266b71e,
-                  mid_setDataTypes_de3e021e7266b71e,
-                  mid_setEpoch_600a2a61652bc473,
-                  mid_setEpochEigenInt_17db3a65980d3441,
-                  mid_setEpochEigenMaj_17db3a65980d3441,
-                  mid_setEpochEigenMin_17db3a65980d3441,
-                  mid_setGdop_17db3a65980d3441,
-                  mid_setId_d0bc48d5b00dc40c,
-                  mid_setMaxPredictedEigenMaj_17db3a65980d3441,
-                  mid_setMaximumObsGap_17db3a65980d3441,
-                  mid_setMethod_13ae259d78efa15d,
-                  mid_setMinPredictedEigenMin_17db3a65980d3441,
-                  mid_setObsAvailable_99803b0791f320ff,
-                  mid_setObsUsed_99803b0791f320ff,
-                  mid_setPrevId_d0bc48d5b00dc40c,
-                  mid_setRecommendedOdSpan_17db3a65980d3441,
-                  mid_setSedr_17db3a65980d3441,
-                  mid_setSensors_de3e021e7266b71e,
-                  mid_setSensorsN_99803b0791f320ff,
-                  mid_setSolveN_99803b0791f320ff,
-                  mid_setSolveStates_de3e021e7266b71e,
-                  mid_setTimeSinceFirstObservation_17db3a65980d3441,
-                  mid_setTimeSinceLastObservation_17db3a65980d3441,
-                  mid_setTracksAvailable_99803b0791f320ff,
-                  mid_setTracksUsed_99803b0791f320ff,
-                  mid_setWeightedRms_17db3a65980d3441,
-                  mid_validate_17db3a65980d3441,
+                  mid_init$_0640e6acf969ed28,
+                  mid_getActualOdSpan_557b8123390d8d0c,
+                  mid_getConfidence_557b8123390d8d0c,
+                  mid_getConsiderN_412668abc8d889e9,
+                  mid_getConsiderParameters_0d9551367f7ecdef,
+                  mid_getDataTypes_0d9551367f7ecdef,
+                  mid_getEpoch_7a97f7e149e79afb,
+                  mid_getEpochEigenInt_557b8123390d8d0c,
+                  mid_getEpochEigenMaj_557b8123390d8d0c,
+                  mid_getEpochEigenMin_557b8123390d8d0c,
+                  mid_getGdop_557b8123390d8d0c,
+                  mid_getId_3cffd47377eca18a,
+                  mid_getMaxPredictedEigenMaj_557b8123390d8d0c,
+                  mid_getMaximumObsGap_557b8123390d8d0c,
+                  mid_getMethod_969c9256ca143e68,
+                  mid_getMinPredictedEigenMin_557b8123390d8d0c,
+                  mid_getObsAvailable_412668abc8d889e9,
+                  mid_getObsUsed_412668abc8d889e9,
+                  mid_getPrevId_3cffd47377eca18a,
+                  mid_getRecommendedOdSpan_557b8123390d8d0c,
+                  mid_getSedr_557b8123390d8d0c,
+                  mid_getSensors_0d9551367f7ecdef,
+                  mid_getSensorsN_412668abc8d889e9,
+                  mid_getSolveN_412668abc8d889e9,
+                  mid_getSolveStates_0d9551367f7ecdef,
+                  mid_getTimeSinceFirstObservation_557b8123390d8d0c,
+                  mid_getTimeSinceLastObservation_557b8123390d8d0c,
+                  mid_getTracksAvailable_412668abc8d889e9,
+                  mid_getTracksUsed_412668abc8d889e9,
+                  mid_getWeightedRms_557b8123390d8d0c,
+                  mid_setActualOdSpan_10f281d777284cea,
+                  mid_setConfidence_10f281d777284cea,
+                  mid_setConsiderN_a3da1a935cb37f7b,
+                  mid_setConsiderParameters_4ccaedadb068bdeb,
+                  mid_setDataTypes_4ccaedadb068bdeb,
+                  mid_setEpoch_20affcbd28542333,
+                  mid_setEpochEigenInt_10f281d777284cea,
+                  mid_setEpochEigenMaj_10f281d777284cea,
+                  mid_setEpochEigenMin_10f281d777284cea,
+                  mid_setGdop_10f281d777284cea,
+                  mid_setId_f5ffdf29129ef90a,
+                  mid_setMaxPredictedEigenMaj_10f281d777284cea,
+                  mid_setMaximumObsGap_10f281d777284cea,
+                  mid_setMethod_344785fcd4d01936,
+                  mid_setMinPredictedEigenMin_10f281d777284cea,
+                  mid_setObsAvailable_a3da1a935cb37f7b,
+                  mid_setObsUsed_a3da1a935cb37f7b,
+                  mid_setPrevId_f5ffdf29129ef90a,
+                  mid_setRecommendedOdSpan_10f281d777284cea,
+                  mid_setSedr_10f281d777284cea,
+                  mid_setSensors_4ccaedadb068bdeb,
+                  mid_setSensorsN_a3da1a935cb37f7b,
+                  mid_setSolveN_a3da1a935cb37f7b,
+                  mid_setSolveStates_4ccaedadb068bdeb,
+                  mid_setTimeSinceFirstObservation_10f281d777284cea,
+                  mid_setTimeSinceLastObservation_10f281d777284cea,
+                  mid_setTracksAvailable_a3da1a935cb37f7b,
+                  mid_setTracksUsed_a3da1a935cb37f7b,
+                  mid_setWeightedRms_10f281d777284cea,
+                  mid_validate_10f281d777284cea,
                   max_mid
                 };
 

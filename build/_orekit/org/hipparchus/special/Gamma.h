@@ -5,10 +5,10 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace exception {
       class MathIllegalArgumentException;
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -25,28 +25,28 @@ namespace org {
       class Gamma : public ::java::lang::Object {
        public:
         enum {
-          mid_digamma_dcbc7ce2902fa136,
-          mid_digamma_a4b1871f4d29e58b,
-          mid_gamma_dcbc7ce2902fa136,
-          mid_gamma_a4b1871f4d29e58b,
-          mid_invGamma1pm1_dcbc7ce2902fa136,
-          mid_invGamma1pm1_a4b1871f4d29e58b,
-          mid_lanczos_dcbc7ce2902fa136,
-          mid_lanczos_a4b1871f4d29e58b,
-          mid_logGamma_dcbc7ce2902fa136,
-          mid_logGamma_a4b1871f4d29e58b,
-          mid_logGamma1p_dcbc7ce2902fa136,
-          mid_logGamma1p_a4b1871f4d29e58b,
-          mid_regularizedGammaP_86ffecc08a63eff0,
-          mid_regularizedGammaP_6746cc1cd9210d54,
-          mid_regularizedGammaP_1a4183e52d14c27e,
-          mid_regularizedGammaP_c9fbd14d4617b15d,
-          mid_regularizedGammaQ_86ffecc08a63eff0,
-          mid_regularizedGammaQ_6746cc1cd9210d54,
-          mid_regularizedGammaQ_1a4183e52d14c27e,
-          mid_regularizedGammaQ_c9fbd14d4617b15d,
-          mid_trigamma_dcbc7ce2902fa136,
-          mid_trigamma_a4b1871f4d29e58b,
+          mid_digamma_7e960cd6eee376d8,
+          mid_digamma_6672ad854985cb64,
+          mid_gamma_7e960cd6eee376d8,
+          mid_gamma_6672ad854985cb64,
+          mid_invGamma1pm1_7e960cd6eee376d8,
+          mid_invGamma1pm1_6672ad854985cb64,
+          mid_lanczos_7e960cd6eee376d8,
+          mid_lanczos_6672ad854985cb64,
+          mid_logGamma_7e960cd6eee376d8,
+          mid_logGamma_6672ad854985cb64,
+          mid_logGamma1p_7e960cd6eee376d8,
+          mid_logGamma1p_6672ad854985cb64,
+          mid_regularizedGammaP_2268d18be49a6087,
+          mid_regularizedGammaP_d5f58731bcb8a011,
+          mid_regularizedGammaP_018e65b087664781,
+          mid_regularizedGammaP_80e21d9f0e751610,
+          mid_regularizedGammaQ_2268d18be49a6087,
+          mid_regularizedGammaQ_d5f58731bcb8a011,
+          mid_regularizedGammaQ_018e65b087664781,
+          mid_regularizedGammaQ_80e21d9f0e751610,
+          mid_trigamma_7e960cd6eee376d8,
+          mid_trigamma_6672ad854985cb64,
           max_mid
         };
 

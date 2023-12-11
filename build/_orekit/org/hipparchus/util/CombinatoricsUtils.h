@@ -18,8 +18,8 @@ namespace java {
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathRuntimeException;
       class MathIllegalArgumentException;
+      class MathRuntimeException;
     }
   }
 }
@@ -32,18 +32,18 @@ namespace org {
       class CombinatoricsUtils : public ::java::lang::Object {
        public:
         enum {
-          mid_bellNumber_a1cf8c47dc9c5883,
-          mid_binomialCoefficient_30f7d12d17ddfa28,
-          mid_binomialCoefficientDouble_dbbe5f05149dbf73,
-          mid_binomialCoefficientLog_dbbe5f05149dbf73,
-          mid_checkBinomial_6f37635c3285dbdf,
-          mid_combinationsIterator_6103faf4afbc1801,
-          mid_factorial_a1cf8c47dc9c5883,
-          mid_factorialDouble_46f85b53d9aedd96,
-          mid_factorialLog_46f85b53d9aedd96,
-          mid_partitions_7659b9c52e25aa5d,
-          mid_permutations_7659b9c52e25aa5d,
-          mid_stirlingS2_30f7d12d17ddfa28,
+          mid_bellNumber_4f6383d3e31ab417,
+          mid_binomialCoefficient_1fba9172e7658368,
+          mid_binomialCoefficientDouble_21b81d54c06b64b0,
+          mid_binomialCoefficientLog_21b81d54c06b64b0,
+          mid_checkBinomial_a84c9a223722150c,
+          mid_combinationsIterator_cbfaf52b19a80000,
+          mid_factorial_4f6383d3e31ab417,
+          mid_factorialDouble_69cfb132c661aca4,
+          mid_factorialLog_69cfb132c661aca4,
+          mid_partitions_525f259082364af5,
+          mid_permutations_525f259082364af5,
+          mid_stirlingS2_1fba9172e7658368,
           max_mid
         };
 

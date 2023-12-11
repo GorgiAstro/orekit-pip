@@ -6,27 +6,22 @@
 namespace org {
   namespace orekit {
     namespace rugged {
-      namespace refraction {
-        class AtmosphericComputationParameters;
-      }
-      namespace intersection {
-        class IntersectionAlgorithm;
-      }
       namespace utils {
         class NormalizedGeodeticPoint;
       }
       namespace linesensor {
-        class LineSensor;
         class SensorPixel;
+        class LineSensor;
+      }
+      namespace intersection {
+        class IntersectionAlgorithm;
+      }
+      namespace refraction {
+        class AtmosphericComputationParameters;
       }
     }
   }
   namespace hipparchus {
-    namespace analysis {
-      namespace interpolation {
-        class BilinearInterpolatingFunction;
-      }
-    }
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -34,12 +29,17 @@ namespace org {
         }
       }
     }
+    namespace analysis {
+      namespace interpolation {
+        class BilinearInterpolatingFunction;
+      }
+    }
   }
 }
 namespace java {
   namespace lang {
-    class Boolean;
     class Class;
+    class Boolean;
     class String;
   }
 }
@@ -53,18 +53,18 @@ namespace org {
         class AtmosphericRefraction : public ::java::lang::Object {
          public:
           enum {
-            mid_applyCorrection_a813ead3ffa4bffb,
-            mid_computeGridCorrectionFunctions_2d22bd225207563d,
-            mid_configureCorrectionGrid_5bf94bc89b069b4b,
-            mid_deactivateComputation_0fa09c18fee449d5,
-            mid_getBifLine_bc9d2a40b3c347ee,
-            mid_getBifPixel_bc9d2a40b3c347ee,
-            mid_getComputationParameters_cf83411fa86caecb,
-            mid_isSameContext_20cc85eae3931b01,
-            mid_mustBeComputed_b108b35ef48e27bd,
-            mid_reactivateComputation_0fa09c18fee449d5,
-            mid_setGridSteps_6f37635c3285dbdf,
-            mid_setInverseLocMargin_17db3a65980d3441,
+            mid_applyCorrection_981eb3dc755df9fc,
+            mid_computeGridCorrectionFunctions_7f8f3b09c1fc49ca,
+            mid_configureCorrectionGrid_03c83376fa653679,
+            mid_deactivateComputation_0640e6acf969ed28,
+            mid_getBifLine_21978c3787844e9d,
+            mid_getBifPixel_21978c3787844e9d,
+            mid_getComputationParameters_68f95f8b3d5bc1b9,
+            mid_isSameContext_81615cd59e7dd174,
+            mid_mustBeComputed_89b302893bdbe1f1,
+            mid_reactivateComputation_0640e6acf969ed28,
+            mid_setGridSteps_a84c9a223722150c,
+            mid_setInverseLocMargin_10f281d777284cea,
             max_mid
           };
 

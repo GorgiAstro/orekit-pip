@@ -17,7 +17,7 @@ namespace java {
     class InvalidObjectException : public ::java::io::ObjectStreamException {
      public:
       enum {
-        mid_init$_d0bc48d5b00dc40c,
+        mid_init$_f5ffdf29129ef90a,
         max_mid
       };
 

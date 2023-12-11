@@ -5,34 +5,34 @@
 
 namespace org {
   namespace orekit {
-    namespace orbits {
-      class PositionAngleType;
-      class Orbit;
-      class OrbitType;
-    }
     namespace propagation {
       namespace conversion {
         class PropagatorBuilder;
       }
       class Propagator;
     }
-    namespace frames {
-      class Frame;
-    }
     namespace estimation {
       namespace leastsquares {
-        class AbstractBatchLSModel;
         class ModelObserver;
+        class AbstractBatchLSModel;
       }
       namespace measurements {
         class ObservedMeasurement;
       }
     }
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace utils {
       class ParameterDriversList;
+    }
+    namespace orbits {
+      class PositionAngleType;
+      class OrbitType;
+      class Orbit;
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -54,18 +54,18 @@ namespace org {
         class PropagatorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_buildLeastSquaresModel_2eb3122719704f90,
-            mid_buildPropagator_0c183831cad84280,
-            mid_copy_7c39c5f4719b16a0,
-            mid_getFrame_b86f9f61d97a7244,
-            mid_getInitialOrbitDate_85703d13e302437e,
-            mid_getMu_dff5885c2c873297,
-            mid_getOrbitType_e29360d311dc0e20,
-            mid_getOrbitalParametersDrivers_bd51074bfd9d41da,
-            mid_getPositionAngleType_8f17e83e5a86217c,
-            mid_getPropagationParametersDrivers_bd51074bfd9d41da,
-            mid_getSelectedNormalizedParameters_60c7040667a7dc5c,
-            mid_resetOrbit_6219f6b430651d68,
+            mid_buildLeastSquaresModel_4fca41eef9d750a6,
+            mid_buildPropagator_5ad9cbd11735eecd,
+            mid_copy_9ce0d272477ff7e1,
+            mid_getFrame_6c9bc0a928c56d4e,
+            mid_getInitialOrbitDate_7a97f7e149e79afb,
+            mid_getMu_557b8123390d8d0c,
+            mid_getOrbitType_2cea2a2cb3e02091,
+            mid_getOrbitalParametersDrivers_467d574a7997e53a,
+            mid_getPositionAngleType_f4984aee71df4c19,
+            mid_getPropagationParametersDrivers_467d574a7997e53a,
+            mid_getSelectedNormalizedParameters_a53a7513ecedada2,
+            mid_resetOrbit_a9af82a1647a21f3,
             max_mid
           };
 

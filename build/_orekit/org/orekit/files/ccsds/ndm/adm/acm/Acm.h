@@ -15,22 +15,15 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace utils {
-      class TimeStampedAngularCoordinates;
-      class IERSConventions;
-    }
-    namespace data {
-      class DataContext;
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
           namespace adm {
             namespace acm {
-              class AcmData;
               class AcmSatelliteEphemeris;
-              class AcmMetadata;
               class AttitudeStateHistory;
+              class AcmData;
+              class AcmMetadata;
             }
             class AdmHeader;
           }
@@ -42,6 +35,13 @@ namespace org {
       namespace general {
         class AttitudeEphemerisFile;
       }
+    }
+    namespace utils {
+      class IERSConventions;
+      class TimeStampedAngularCoordinates;
+    }
+    namespace data {
+      class DataContext;
     }
   }
 }
@@ -58,10 +58,10 @@ namespace org {
               class Acm : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
                public:
                 enum {
-                  mid_init$_61c8f32249f88749,
-                  mid_getData_c85893d17909e463,
-                  mid_getMetadata_cadb0f9af36b4813,
-                  mid_getSatellites_6f5a75ccd8c04465,
+                  mid_init$_f4c63464eb8f0477,
+                  mid_getData_81e808cfcd4865bd,
+                  mid_getMetadata_a46adf9d544d27b7,
+                  mid_getSatellites_1e62c2f73fbdd1c4,
                   max_mid
                 };
 

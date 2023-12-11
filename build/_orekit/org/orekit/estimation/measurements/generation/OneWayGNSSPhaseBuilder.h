@@ -10,21 +10,21 @@ namespace org {
     }
   }
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace estimation {
-      namespace measurements {
-        class ObservableSatellite;
-        namespace gnss {
-          class OneWayGNSSPhase;
-        }
-      }
-    }
     namespace propagation {
       namespace sampling {
         class OrekitStepInterpolator;
       }
+    }
+    namespace estimation {
+      namespace measurements {
+        namespace gnss {
+          class OneWayGNSSPhase;
+        }
+        class ObservableSatellite;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -47,7 +47,7 @@ namespace org {
           class OneWayGNSSPhaseBuilder : public ::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder {
            public:
             enum {
-              mid_build_d1341e9b1d47487a,
+              mid_build_6de94fdf3d4eb161,
               max_mid
             };
 

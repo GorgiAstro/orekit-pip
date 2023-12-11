@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class RealVector;
       class RealMatrix;
+      class RealVector;
     }
   }
 }
@@ -28,8 +28,8 @@ namespace org {
             class ValueAndJacobianFunction : public ::org::hipparchus::optim::nonlinear::vector::leastsquares::MultivariateJacobianFunction {
              public:
               enum {
-                mid_computeJacobian_1c14cec8544f26fc,
-                mid_computeValue_a740f7f012972b3a,
+                mid_computeJacobian_e78c77f555f24619,
+                mid_computeValue_b50585f101c65302,
                 max_mid
               };
 

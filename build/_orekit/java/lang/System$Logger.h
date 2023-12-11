@@ -25,16 +25,16 @@ namespace java {
     class System$Logger : public ::java::lang::Object {
      public:
       enum {
-        mid_getName_11b109bd155ca898,
-        mid_isLoggable_f3bee7568d22bab7,
-        mid_log_4fc1faf6d98530df,
-        mid_log_8075ac60c2498ce5,
-        mid_log_376f9678ec757672,
-        mid_log_a2145bb1e1cf08e9,
-        mid_log_5b32bc2fcbc7ab37,
-        mid_log_826a17a9525dd3b3,
-        mid_log_8d1c006254da0d24,
-        mid_log_a9d5e47bc3bdd2da,
+        mid_getName_3cffd47377eca18a,
+        mid_isLoggable_d111cb4e3b0e7ab6,
+        mid_log_53a3c18e10b100e3,
+        mid_log_036ea930a288ea07,
+        mid_log_7006f3f1c76dd40c,
+        mid_log_b650d0ff408116b4,
+        mid_log_151b5c30d7c7230d,
+        mid_log_a726c9aef73ecc5b,
+        mid_log_c55da14b22e8a35e,
+        mid_log_d89730eb21b326b8,
         max_mid
       };
 

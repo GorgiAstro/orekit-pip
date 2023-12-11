@@ -4,12 +4,12 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace util {
-    class List;
-  }
   namespace io {
     class IOException;
     class InputStream;
+  }
+  namespace util {
+    class List;
   }
   namespace lang {
     class Class;
@@ -33,8 +33,8 @@ namespace org {
       class AGILeapSecondFilesLoader$Parser : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_parse_19eef1cf230063a6,
+          mid_init$_0640e6acf969ed28,
+          mid_parse_e3101d06c7a1bcab,
           max_mid
         };
 

@@ -21,8 +21,8 @@ namespace org {
       class AccurateFormatter : public ::java::lang::Object {
        public:
         enum {
-          mid_format_e8f51f84167aafbd,
-          mid_format_b3e3531a0f06efb9,
+          mid_format_c03a7791f2fcb1f1,
+          mid_format_26917e8002e2fe0e,
           max_mid
         };
 

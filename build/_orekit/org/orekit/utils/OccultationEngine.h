@@ -5,17 +5,17 @@
 
 namespace org {
   namespace orekit {
-    namespace bodies {
-      class OneAxisEllipsoid;
-    }
     namespace utils {
       class OccultationEngine$OccultationAngles;
-      class OccultationEngine$FieldOccultationAngles;
       class ExtendedPVCoordinatesProvider;
+      class OccultationEngine$FieldOccultationAngles;
     }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
+    }
+    namespace bodies {
+      class OneAxisEllipsoid;
     }
   }
 }
@@ -33,12 +33,12 @@ namespace org {
       class OccultationEngine : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_1718479cc62dba49,
-          mid_angles_a84eb778aaccfd81,
-          mid_angles_15d1ad0d8abc3fdb,
-          mid_getOcculted_6c6c680f468e3316,
-          mid_getOccultedRadius_dff5885c2c873297,
-          mid_getOcculting_000d48aad6c74b0a,
+          mid_init$_96b8e1d4ccad7364,
+          mid_angles_df633d7a5dacbba6,
+          mid_angles_9914e974952d6aaa,
+          mid_getOcculted_9aa0b612d90098c2,
+          mid_getOccultedRadius_557b8123390d8d0c,
+          mid_getOcculting_0c55bd1adf955c4c,
           max_mid
         };
 

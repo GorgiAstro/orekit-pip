@@ -34,15 +34,15 @@ namespace org {
           class RinexNavigationHeader : public ::org::orekit::files::rinex::section::RinexBaseHeader {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_addTimeSystemCorrections_ccf19589f253278b,
-              mid_getIonosphericCorrectionType_95784a81ac0ef776,
-              mid_getMergedFiles_570ce0828f81a2c1,
-              mid_getNumberOfLeapSeconds_570ce0828f81a2c1,
-              mid_getTimeSystemCorrections_2afa36052df4765d,
-              mid_setIonosphericCorrectionType_1ae8e31df7b1189a,
-              mid_setMergedFiles_99803b0791f320ff,
-              mid_setNumberOfLeapSeconds_99803b0791f320ff,
+              mid_init$_0640e6acf969ed28,
+              mid_addTimeSystemCorrections_c58230bb9bf03e26,
+              mid_getIonosphericCorrectionType_274c47bda8a7356f,
+              mid_getMergedFiles_412668abc8d889e9,
+              mid_getNumberOfLeapSeconds_412668abc8d889e9,
+              mid_getTimeSystemCorrections_0d9551367f7ecdef,
+              mid_setIonosphericCorrectionType_2b2777839ed697bc,
+              mid_setMergedFiles_a3da1a935cb37f7b,
+              mid_setNumberOfLeapSeconds_a3da1a935cb37f7b,
               max_mid
             };
 

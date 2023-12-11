@@ -3,34 +3,25 @@
 
 #include "org/orekit/estimation/sequential/AbstractKalmanEstimator.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class Object;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace propagation {
-      namespace semianalytical {
-        namespace dsst {
-          class DSSTPropagator;
-        }
-      }
-      namespace conversion {
-        class DSSTPropagatorBuilder;
-      }
-    }
     namespace estimation {
+      namespace measurements {
+        class ObservedMeasurement;
+      }
       namespace sequential {
         class KalmanObserver;
         class CovarianceMatrixProvider;
       }
-      namespace measurements {
-        class ObservedMeasurement;
+    }
+    namespace propagation {
+      namespace conversion {
+        class DSSTPropagatorBuilder;
+      }
+      namespace semianalytical {
+        namespace dsst {
+          class DSSTPropagator;
+        }
       }
     }
     namespace utils {
@@ -43,6 +34,15 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class Object;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -53,10 +53,10 @@ namespace org {
         class SemiAnalyticalKalmanEstimator : public ::org::orekit::estimation::sequential::AbstractKalmanEstimator {
          public:
           enum {
-            mid_init$_db8c5868b80e02d6,
-            mid_processMeasurements_3f953d279000cee1,
-            mid_setObserver_3b3c487cb3322691,
-            mid_getKalmanEstimation_e05aaef10b06b09b,
+            mid_init$_5b2d951bb36a8b67,
+            mid_processMeasurements_59e9b5905b4638f0,
+            mid_setObserver_4275515b1ffe8ceb,
+            mid_getKalmanEstimation_32faeba2996c6566,
             max_mid
           };
 

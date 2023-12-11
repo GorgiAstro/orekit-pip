@@ -3,11 +3,6 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -17,6 +12,11 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -30,12 +30,12 @@ namespace org {
           class Metadata : public ::org::orekit::files::ccsds::section::CommentsContainer {
            public:
             enum {
-              mid_getTimeSystem_ee0a6b60b63a969e,
-              mid_setTimeSystem_08d7048316d8d7b2,
-              mid_validate_17db3a65980d3441,
-              mid_getLaunchYear_02f02486e9727d8f,
-              mid_getLaunchNumber_02f02486e9727d8f,
-              mid_getLaunchPiece_92807efd57acb082,
+              mid_getTimeSystem_d0d0dc777cc1d8f8,
+              mid_setTimeSystem_dcfc8f760c17d3b6,
+              mid_validate_10f281d777284cea,
+              mid_getLaunchYear_a6602ba493f77974,
+              mid_getLaunchNumber_a6602ba493f77974,
+              mid_getLaunchPiece_60bb1b490b673cbf,
               max_mid
             };
 

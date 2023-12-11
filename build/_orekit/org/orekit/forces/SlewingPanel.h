@@ -15,12 +15,12 @@ namespace org {
     }
   }
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -38,9 +38,9 @@ namespace org {
       class SlewingPanel : public ::org::orekit::forces::Panel {
        public:
         enum {
-          mid_init$_1a125af387d435b2,
-          mid_getNormal_e6f00ace1decd27c,
-          mid_getNormal_abc43395638fd218,
+          mid_init$_9c66bdc47ced46b3,
+          mid_getNormal_503a254311e5da95,
+          mid_getNormal_3fff8c49d4e2dc6b,
           max_mid
         };
 

@@ -40,14 +40,14 @@ namespace org {
         class GeographicZoneDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_8e6e7fdc773af1b1,
-            mid_init$_138030571468d4c5,
-            mid_g_432f3d328c15ec82,
-            mid_getBody_6f78da94fd048d9d,
-            mid_getMargin_dff5885c2c873297,
-            mid_getZone_5a6ba0b36fb0268c,
-            mid_withMargin_a856946e5d132bd1,
-            mid_create_81d7f5811fc3c1a9,
+            mid_init$_bc1a55e394385453,
+            mid_init$_e9509d28a9dc022e,
+            mid_g_1bbf81d80c47ecdd,
+            mid_getBody_f166528db337c659,
+            mid_getMargin_557b8123390d8d0c,
+            mid_getZone_1223d06efa3ccad7,
+            mid_withMargin_86c82b696f99a1e1,
+            mid_create_c137a22e12d2740e,
             max_mid
           };
 

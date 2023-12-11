@@ -5,15 +5,15 @@
 
 namespace org {
   namespace hipparchus {
+    namespace analysis {
+      class UnivariateFunction;
+    }
     namespace optim {
       namespace nonlinear {
         namespace scalar {
           class GoalType;
         }
       }
-    }
-    namespace analysis {
-      class UnivariateFunction;
     }
   }
 }
@@ -32,17 +32,17 @@ namespace org {
         class BracketFinder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_init$_75c2da74a5a59fda,
-            mid_getEvaluations_570ce0828f81a2c1,
-            mid_getFHi_dff5885c2c873297,
-            mid_getFLo_dff5885c2c873297,
-            mid_getFMid_dff5885c2c873297,
-            mid_getHi_dff5885c2c873297,
-            mid_getLo_dff5885c2c873297,
-            mid_getMaxEvaluations_570ce0828f81a2c1,
-            mid_getMid_dff5885c2c873297,
-            mid_search_2267d410d37cdcec,
+            mid_init$_0640e6acf969ed28,
+            mid_init$_47602ef8408ea361,
+            mid_getEvaluations_412668abc8d889e9,
+            mid_getFHi_557b8123390d8d0c,
+            mid_getFLo_557b8123390d8d0c,
+            mid_getFMid_557b8123390d8d0c,
+            mid_getHi_557b8123390d8d0c,
+            mid_getLo_557b8123390d8d0c,
+            mid_getMaxEvaluations_412668abc8d889e9,
+            mid_getMid_557b8123390d8d0c,
+            mid_search_33db5f32c3aed894,
             max_mid
           };
 

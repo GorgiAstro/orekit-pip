@@ -12,24 +12,24 @@ namespace java {
   }
 }
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace twod {
+          class Vector2D;
+        }
+        namespace threed {
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace frames {
       class Frame;
     }
     namespace utils {
       class TimeStampedPVCoordinates;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-        namespace twod {
-          class Vector2D;
-        }
-      }
     }
   }
 }
@@ -42,19 +42,19 @@ namespace org {
       class Ellipse : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a454bb4a34264e48,
-          mid_getA_dff5885c2c873297,
-          mid_getB_dff5885c2c873297,
-          mid_getCenter_d52645e0d4c07563,
-          mid_getCenterOfCurvature_943908560e598858,
-          mid_getFrame_b86f9f61d97a7244,
-          mid_getU_d52645e0d4c07563,
-          mid_getV_d52645e0d4c07563,
-          mid_pointAt_9137bba253a33d9c,
-          mid_projectToEllipse_fe87e6eba6ef42f9,
-          mid_projectToEllipse_943908560e598858,
-          mid_toPlane_6888ee2da1e4e6ff,
-          mid_toSpace_de1c0a3cb97333a9,
+          mid_init$_ce1f0f7b19db1321,
+          mid_getA_557b8123390d8d0c,
+          mid_getB_557b8123390d8d0c,
+          mid_getCenter_f88961cca75a2c0a,
+          mid_getCenterOfCurvature_990490e7ef486e74,
+          mid_getFrame_6c9bc0a928c56d4e,
+          mid_getU_f88961cca75a2c0a,
+          mid_getV_f88961cca75a2c0a,
+          mid_pointAt_20de5f9d51c6611f,
+          mid_projectToEllipse_fc4b100c90055253,
+          mid_projectToEllipse_990490e7ef486e74,
+          mid_toPlane_3b3b6a3c97d1f7fa,
+          mid_toSpace_ac3ac1fb666bf55b,
           max_mid
         };
 

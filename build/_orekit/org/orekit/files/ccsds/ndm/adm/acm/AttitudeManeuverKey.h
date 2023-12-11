@@ -7,12 +7,6 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace utils {
-          namespace lexical {
-            class ParseToken;
-          }
-          class ContextBinding;
-        }
         namespace ndm {
           namespace adm {
             namespace acm {
@@ -20,6 +14,12 @@ namespace org {
               class AttitudeManeuver;
             }
           }
+        }
+        namespace utils {
+          namespace lexical {
+            class ParseToken;
+          }
+          class ContextBinding;
         }
       }
     }
@@ -44,9 +44,9 @@ namespace org {
               class AttitudeManeuverKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_b59763a79eda10b2,
-                  mid_valueOf_d0eb52be340b1a50,
-                  mid_values_b0be67a4ccd5c917,
+                  mid_process_0d19cfc750cef9e3,
+                  mid_valueOf_55f378a0290449fd,
+                  mid_values_fe8b7d4a129438b3,
                   max_mid
                 };
 

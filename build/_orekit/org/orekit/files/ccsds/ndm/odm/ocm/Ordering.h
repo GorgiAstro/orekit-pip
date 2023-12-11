@@ -37,8 +37,8 @@ namespace org {
               class Ordering : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_valueOf_acc10660b39b3d81,
-                  mid_values_c6b234148b2b67c3,
+                  mid_valueOf_1f6fba851cfb5f7a,
+                  mid_values_2990c7897c653ef6,
                   max_mid
                 };
 

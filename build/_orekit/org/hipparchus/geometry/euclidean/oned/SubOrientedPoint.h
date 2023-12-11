@@ -6,15 +6,15 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      namespace partitioning {
-        class SubHyperplane$SplitSubHyperplane;
-        class Region;
-        class Hyperplane;
-      }
       namespace euclidean {
         namespace oned {
           class Euclidean1D;
         }
+      }
+      namespace partitioning {
+        class Hyperplane;
+        class SubHyperplane$SplitSubHyperplane;
+        class Region;
       }
     }
   }
@@ -35,11 +35,11 @@ namespace org {
           class SubOrientedPoint : public ::org::hipparchus::geometry::partitioning::AbstractSubHyperplane {
            public:
             enum {
-              mid_init$_10e1fbe5774bfd91,
-              mid_getSize_dff5885c2c873297,
-              mid_isEmpty_b108b35ef48e27bd,
-              mid_split_905725a56f20360c,
-              mid_buildNew_802b885e8f150523,
+              mid_init$_08c86faf9fec8eaa,
+              mid_getSize_557b8123390d8d0c,
+              mid_isEmpty_89b302893bdbe1f1,
+              mid_split_ae8e2bbf2389e86e,
+              mid_buildNew_0ffd07a16ed53139,
               max_mid
             };
 

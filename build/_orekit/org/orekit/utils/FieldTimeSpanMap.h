@@ -3,25 +3,25 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace utils {
-      class FieldTimeSpanMap$Transition;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    class Field;
-  }
-}
 namespace java {
   namespace util {
     class SortedSet;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+    }
+    namespace utils {
+      class FieldTimeSpanMap$Transition;
+    }
+  }
+  namespace hipparchus {
+    class Field;
   }
 }
 template<class T> class JArray;
@@ -33,11 +33,11 @@ namespace org {
       class FieldTimeSpanMap : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_5436e976103f5935,
-          mid_addValidAfter_9609c002ae1fab35,
-          mid_addValidBefore_9609c002ae1fab35,
-          mid_get_ba0f15400f4e0189,
-          mid_getTransitions_917725130bbb61f1,
+          mid_init$_7384cc2619eea255,
+          mid_addValidAfter_5620e6c4fac9acfa,
+          mid_addValidBefore_5620e6c4fac9acfa,
+          mid_get_84ba864745aad457,
+          mid_getTransitions_c6b6a992db588a51,
           max_mid
         };
 

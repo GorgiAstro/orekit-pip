@@ -5,15 +5,10 @@
 
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataContext;
-    }
-    namespace utils {
-      class IERSConventions;
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
+          class ParsedUnitsBehavior;
           namespace adm {
             namespace apm {
               class ApmParser;
@@ -21,12 +16,17 @@ namespace org {
             }
             class AdmHeader;
           }
-          class ParsedUnitsBehavior;
         }
         namespace utils {
           class FileFormat;
         }
       }
+    }
+    namespace utils {
+      class IERSConventions;
+    }
+    namespace data {
+      class DataContext;
     }
     namespace time {
       class AbsoluteDate;
@@ -51,18 +51,18 @@ namespace org {
               class ApmParser : public ::org::orekit::files::ccsds::ndm::adm::AdmParser {
                public:
                 enum {
-                  mid_build_bbe3a1c434f459ae,
-                  mid_finalizeData_b108b35ef48e27bd,
-                  mid_finalizeHeader_b108b35ef48e27bd,
-                  mid_finalizeMetadata_b108b35ef48e27bd,
-                  mid_getHeader_58c0f76fc10a27f5,
-                  mid_inData_b108b35ef48e27bd,
-                  mid_inHeader_b108b35ef48e27bd,
-                  mid_inMetadata_b108b35ef48e27bd,
-                  mid_prepareData_b108b35ef48e27bd,
-                  mid_prepareHeader_b108b35ef48e27bd,
-                  mid_prepareMetadata_b108b35ef48e27bd,
-                  mid_reset_e250621f009e45db,
+                  mid_build_691c47b62bac3b4a,
+                  mid_finalizeData_89b302893bdbe1f1,
+                  mid_finalizeHeader_89b302893bdbe1f1,
+                  mid_finalizeMetadata_89b302893bdbe1f1,
+                  mid_getHeader_880defc2f8f9f844,
+                  mid_inData_89b302893bdbe1f1,
+                  mid_inHeader_89b302893bdbe1f1,
+                  mid_inMetadata_89b302893bdbe1f1,
+                  mid_prepareData_89b302893bdbe1f1,
+                  mid_prepareHeader_89b302893bdbe1f1,
+                  mid_prepareMetadata_89b302893bdbe1f1,
+                  mid_reset_a580586827f4ec13,
                   max_mid
                 };
 

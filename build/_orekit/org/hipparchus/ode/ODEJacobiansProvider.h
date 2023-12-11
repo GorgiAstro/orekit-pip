@@ -9,8 +9,8 @@ namespace org {
       class NamedParameterJacobianProvider;
     }
     namespace exception {
-      class MathIllegalStateException;
       class MathIllegalArgumentException;
+      class MathIllegalStateException;
     }
   }
 }
@@ -32,10 +32,10 @@ namespace org {
       class ODEJacobiansProvider : public ::org::hipparchus::ode::OrdinaryDifferentialEquation {
        public:
         enum {
-          mid_computeMainStateJacobian_41d6d5aae26e7bb6,
-          mid_computeParameterJacobian_471a10a7837f0228,
-          mid_getParametersNames_2afa36052df4765d,
-          mid_isSupported_7edad2c2f64f4d68,
+          mid_computeMainStateJacobian_bd7192e808ddb91f,
+          mid_computeParameterJacobian_b987435e157df371,
+          mid_getParametersNames_0d9551367f7ecdef,
+          mid_isSupported_fd2162b8a05a22fe,
           max_mid
         };
 

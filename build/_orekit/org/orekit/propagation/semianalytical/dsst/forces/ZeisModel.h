@@ -4,21 +4,21 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
       namespace semianalytical {
         namespace dsst {
           namespace forces {
-            class DSSTJ2SquaredClosedFormContext;
-            class FieldDSSTJ2SquaredClosedFormContext;
             class J2SquaredModel;
+            class FieldDSSTJ2SquaredClosedFormContext;
+            class DSSTJ2SquaredClosedFormContext;
           }
         }
       }
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -38,11 +38,11 @@ namespace org {
             class ZeisModel : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_computeC2Z_88b57c541cd2b921,
-                mid_computeC2Z_8493f9d5b8291733,
-                mid_computeMeanEquinoctialSecondOrderTerms_03e8bdfa525c3779,
-                mid_computeMeanEquinoctialSecondOrderTerms_1a8550c5c09a5c40,
+                mid_init$_0640e6acf969ed28,
+                mid_computeC2Z_a95be6a864781ae1,
+                mid_computeC2Z_e0c6c5b6e976ac94,
+                mid_computeMeanEquinoctialSecondOrderTerms_3cadce1f0ff01a88,
+                mid_computeMeanEquinoctialSecondOrderTerms_b35994dcdbf40b4e,
                 max_mid
               };
 

@@ -7,18 +7,18 @@ namespace org {
   namespace hipparchus {
     namespace ode {
       namespace events {
-        class ODEEventHandler;
-        class AbstractODEDetector;
         class AdaptableInterval;
+        class AbstractODEDetector;
+        class ODEEventHandler;
         class ODEEventDetector;
       }
       class ODEStateAndDerivative;
     }
     namespace analysis {
+      class UnivariateFunction;
       namespace solvers {
         class BracketedUnivariateSolver;
       }
-      class UnivariateFunction;
     }
   }
 }
@@ -37,20 +37,20 @@ namespace org {
         class AbstractODEDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_g_021b54f582f9e537,
-            mid_getHandler_7247a44d56e4e7e1,
-            mid_getMaxCheckInterval_9a5537b770a5986b,
-            mid_getMaxIterationCount_570ce0828f81a2c1,
-            mid_getSolver_4150c30eabb0f330,
-            mid_init_5aaadc62bce8a394,
-            mid_isForward_b108b35ef48e27bd,
-            mid_withHandler_39c51a5079c7c678,
-            mid_withMaxCheck_3d613fe0e4e80078,
-            mid_withMaxCheck_b9a374b3c1f511a1,
-            mid_withMaxIter_ef53f6276a11357c,
-            mid_withSolver_2e720daa75c69c32,
-            mid_withThreshold_3d613fe0e4e80078,
-            mid_create_af9ea80f6fc355a3,
+            mid_g_4a3e96b6f1af9d91,
+            mid_getHandler_1066bb0522dfdb81,
+            mid_getMaxCheckInterval_f27f9c0aa71fac14,
+            mid_getMaxIterationCount_412668abc8d889e9,
+            mid_getSolver_88c9da53bb1865ce,
+            mid_init_7e69c83de8052a2b,
+            mid_isForward_89b302893bdbe1f1,
+            mid_withHandler_ea512a716b02ce4d,
+            mid_withMaxCheck_7f1492bbe3772e53,
+            mid_withMaxCheck_e7dbeb50f7049b2b,
+            mid_withMaxIter_35638c0b37ecd5a2,
+            mid_withSolver_911e24e8e0609b5d,
+            mid_withThreshold_7f1492bbe3772e53,
+            mid_create_bc7049580916f64e,
             max_mid
           };
 

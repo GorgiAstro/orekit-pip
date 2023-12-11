@@ -21,21 +21,21 @@ namespace java {
     class NavigableSet : public ::java::util::SortedSet {
      public:
       enum {
-        mid_ceiling_9facd1449e0950d3,
-        mid_descendingIterator_4d23511a9f0db098,
-        mid_descendingSet_024b2fed0d07125f,
-        mid_floor_9facd1449e0950d3,
-        mid_headSet_c07cc04010820225,
-        mid_headSet_3998b1c856c6bc87,
-        mid_higher_9facd1449e0950d3,
-        mid_iterator_4d23511a9f0db098,
-        mid_lower_9facd1449e0950d3,
-        mid_pollFirst_4d26fd885228c716,
-        mid_pollLast_4d26fd885228c716,
-        mid_subSet_91c93627253b416a,
-        mid_subSet_8a24c3c47a25901f,
-        mid_tailSet_c07cc04010820225,
-        mid_tailSet_3998b1c856c6bc87,
+        mid_ceiling_65d69db95c5eb156,
+        mid_descendingIterator_834a3801c426326d,
+        mid_descendingSet_0617a74a450b6c8d,
+        mid_floor_65d69db95c5eb156,
+        mid_headSet_3ca4ace183d6efe9,
+        mid_headSet_b83c282998266525,
+        mid_higher_65d69db95c5eb156,
+        mid_iterator_834a3801c426326d,
+        mid_lower_65d69db95c5eb156,
+        mid_pollFirst_e661fe3ba2fafb22,
+        mid_pollLast_e661fe3ba2fafb22,
+        mid_subSet_ba202d431ff51666,
+        mid_subSet_95b7fdef68d2eb53,
+        mid_tailSet_3ca4ace183d6efe9,
+        mid_tailSet_b83c282998266525,
         max_mid
       };
 

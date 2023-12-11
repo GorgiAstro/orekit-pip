@@ -4,35 +4,35 @@
 #include "org/orekit/propagation/analytical/FieldAbstractAnalyticalPropagator.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
       namespace analytical {
         namespace tle {
-          class FieldTLEPropagator;
           class FieldTLE;
+          class FieldTLEPropagator;
         }
       }
       class FieldSpacecraftState;
     }
-    namespace frames {
-      class Frame;
-    }
     namespace utils {
-      class ParameterDriver;
       class FieldPVCoordinates;
-    }
-    namespace orbits {
-      class FieldOrbit;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
+      class ParameterDriver;
     }
     namespace time {
       class FieldAbsoluteDate;
     }
+    namespace frames {
+      class Frame;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+    namespace orbits {
+      class FieldOrbit;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -54,21 +54,21 @@ namespace org {
           class FieldTLEPropagator : public ::org::orekit::propagation::analytical::FieldAbstractAnalyticalPropagator {
            public:
             enum {
-              mid_getFrame_b86f9f61d97a7244,
-              mid_getMU_dff5885c2c873297,
-              mid_getPVCoordinates_4be26760bff65485,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_getTLE_56b0e40317713723,
-              mid_propagateOrbit_3de5e0312fd3e848,
-              mid_resetInitialState_1463d3d0d52f94dd,
-              mid_selectExtrapolator_2c3a8cfbb74b168e,
-              mid_selectExtrapolator_320b8f6fd71085ef,
-              mid_selectExtrapolator_3d23e0121ca554b4,
-              mid_selectExtrapolator_abab29bda75d0bc7,
-              mid_getMass_2a5f05be83ff251d,
-              mid_resetIntermediateState_33f1c56ea7775d4e,
-              mid_sxpInitialize_72479ee08453ef97,
-              mid_sxpPropagate_bee5c8ff86f4e777,
+              mid_getFrame_6c9bc0a928c56d4e,
+              mid_getMU_557b8123390d8d0c,
+              mid_getPVCoordinates_bbdf40688b91577a,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_getTLE_8561c1b354d95eb2,
+              mid_propagateOrbit_ec5b52b8a8c77d72,
+              mid_resetInitialState_b66c84a5711243d5,
+              mid_selectExtrapolator_461e9e7bc90c878c,
+              mid_selectExtrapolator_9e5610c6d756262c,
+              mid_selectExtrapolator_d1ae87a7216a745b,
+              mid_selectExtrapolator_cb040962839e03a8,
+              mid_sxpInitialize_5d9c9afaca2e497c,
+              mid_sxpPropagate_960efa47e0a8eec2,
+              mid_resetIntermediateState_585702d5a402c590,
+              mid_getMass_b884068a2c99f6ca,
               max_mid
             };
 

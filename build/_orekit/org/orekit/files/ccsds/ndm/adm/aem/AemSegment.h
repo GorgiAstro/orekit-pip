@@ -3,6 +3,15 @@
 
 #include "org/orekit/files/ccsds/section/Segment.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
@@ -10,8 +19,8 @@ namespace org {
         namespace ndm {
           namespace adm {
             namespace aem {
-              class AemData;
               class AemMetadata;
+              class AemData;
             }
           }
         }
@@ -20,28 +29,19 @@ namespace org {
         class AttitudeEphemerisFile$AttitudeEphemerisSegment;
       }
     }
-    namespace utils {
-      class TimeStampedAngularCoordinates;
-      class AngularDerivativesFilter;
-    }
     namespace frames {
       class Frame;
     }
     namespace time {
       class AbsoluteDate;
     }
+    namespace utils {
+      class AngularDerivativesFilter;
+      class TimeStampedAngularCoordinates;
+    }
     namespace attitudes {
       class BoundedAttitudeProvider;
     }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -57,15 +57,15 @@ namespace org {
               class AemSegment : public ::org::orekit::files::ccsds::section::Segment {
                public:
                 enum {
-                  mid_init$_8c9ac597189a8a73,
-                  mid_getAngularCoordinates_2afa36052df4765d,
-                  mid_getAttitudeProvider_f95b60a986adb964,
-                  mid_getAvailableDerivatives_3d53ef1ca7ad5f8c,
-                  mid_getInterpolationMethod_11b109bd155ca898,
-                  mid_getInterpolationSamples_570ce0828f81a2c1,
-                  mid_getReferenceFrame_b86f9f61d97a7244,
-                  mid_getStart_85703d13e302437e,
-                  mid_getStop_85703d13e302437e,
+                  mid_init$_449d7e5cfd695677,
+                  mid_getAngularCoordinates_0d9551367f7ecdef,
+                  mid_getAttitudeProvider_b44a04493534d299,
+                  mid_getAvailableDerivatives_c2e9b2b1c0db39b3,
+                  mid_getInterpolationMethod_3cffd47377eca18a,
+                  mid_getInterpolationSamples_412668abc8d889e9,
+                  mid_getReferenceFrame_6c9bc0a928c56d4e,
+                  mid_getStart_7a97f7e149e79afb,
+                  mid_getStop_7a97f7e149e79afb,
                   max_mid
                 };
 

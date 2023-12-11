@@ -6,12 +6,12 @@
 namespace org {
   namespace hipparchus {
     namespace optim {
-      class OptimizationData;
       namespace nonlinear {
         namespace scalar {
           class GoalType;
         }
       }
+      class OptimizationData;
     }
   }
 }
@@ -32,8 +32,8 @@ namespace org {
           class GoalType : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_30ead9f687148074,
-              mid_values_a8b0f5c40a2beb91,
+              mid_valueOf_c3f73218204d4841,
+              mid_values_1d242ab20f6f15e3,
               max_mid
             };
 

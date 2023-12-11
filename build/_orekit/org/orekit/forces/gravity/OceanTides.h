@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -15,6 +14,7 @@ namespace org {
       }
     }
     class Field;
+    class CalculusFieldElement;
   }
   namespace orekit {
     namespace forces {
@@ -26,31 +26,31 @@ namespace org {
       class ForceModel;
     }
     namespace propagation {
+      class FieldSpacecraftState;
       namespace events {
         class EventDetector;
         class FieldEventDetector;
       }
-      class FieldSpacecraftState;
       class SpacecraftState;
     }
     namespace utils {
-      class IERSConventions;
       class ParameterDriver;
-    }
-    namespace frames {
-      class Frame;
+      class IERSConventions;
     }
     namespace time {
       class UT1Scale;
+    }
+    namespace frames {
+      class Frame;
     }
   }
 }
 namespace java {
   namespace util {
+    class List;
     namespace stream {
       class Stream;
     }
-    class List;
   }
   namespace lang {
     class Class;
@@ -66,15 +66,15 @@ namespace org {
         class OceanTides : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_78c4483a058b3c31,
-            mid_init$_be0c289fb279b5c9,
-            mid_init$_f041363185b10634,
-            mid_acceleration_b42ac4b5bfb80fab,
-            mid_acceleration_8954761face5e1a7,
-            mid_dependsOnPositionOnly_b108b35ef48e27bd,
-            mid_getEventDetectors_20f6d2b462aaef4b,
-            mid_getFieldEventDetectors_361313cd1a9c693a,
-            mid_getParametersDrivers_2afa36052df4765d,
+            mid_init$_1837be424f5e21da,
+            mid_init$_fce18387073bd04d,
+            mid_init$_0a43ed81d0ca6cd3,
+            mid_acceleration_b61fb59a041240c6,
+            mid_acceleration_61944e27a39e8290,
+            mid_dependsOnPositionOnly_89b302893bdbe1f1,
+            mid_getEventDetectors_d7cce92225eb0db2,
+            mid_getFieldEventDetectors_8130af76f6998f44,
+            mid_getParametersDrivers_0d9551367f7ecdef,
             max_mid
           };
 

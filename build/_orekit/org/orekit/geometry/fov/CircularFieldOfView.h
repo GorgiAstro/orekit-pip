@@ -36,11 +36,11 @@ namespace org {
         class CircularFieldOfView : public ::org::orekit::geometry::fov::SmoothFieldOfView {
          public:
           enum {
-            mid_init$_a55d6d358b7d4a5f,
-            mid_getHalfAperture_dff5885c2c873297,
-            mid_offsetFromBoundary_92bc6ba59ebf6937,
-            mid_projectToBoundary_d0fe714ef34714f7,
-            mid_directionAt_9137bba253a33d9c,
+            mid_init$_52e0f31b55ec2394,
+            mid_getHalfAperture_557b8123390d8d0c,
+            mid_offsetFromBoundary_d0bb3aecf00cc465,
+            mid_projectToBoundary_b48aa9aef740fa79,
+            mid_directionAt_20de5f9d51c6611f,
             max_mid
           };
 

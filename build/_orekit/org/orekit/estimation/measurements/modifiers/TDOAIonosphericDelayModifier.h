@@ -7,11 +7,14 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
+        class TDOA;
         class EstimatedMeasurement;
         class EstimatedMeasurementBase;
         class EstimationModifier;
-        class TDOA;
       }
+    }
+    namespace utils {
+      class ParameterDriver;
     }
     namespace models {
       namespace earth {
@@ -19,9 +22,6 @@ namespace org {
           class IonosphericModel;
         }
       }
-    }
-    namespace utils {
-      class ParameterDriver;
     }
   }
 }
@@ -44,10 +44,10 @@ namespace org {
           class TDOAIonosphericDelayModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_88af61602f29e4c4,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_modify_e4935e9a55e01fd8,
-              mid_modifyWithoutDerivatives_d1815d998cba71e9,
+              mid_init$_69c6b2cabec159dd,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_modify_0054a497255e8220,
+              mid_modifyWithoutDerivatives_e471490df8741b73,
               max_mid
             };
 

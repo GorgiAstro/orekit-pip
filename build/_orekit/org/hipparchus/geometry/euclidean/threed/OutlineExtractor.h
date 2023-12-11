@@ -34,8 +34,8 @@ namespace org {
           class OutlineExtractor : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_8f7d2a24ef2ff591,
-              mid_getOutline_2bc7c758fa46bc49,
+              mid_init$_be9548a8a583a03d,
+              mid_getOutline_94f17f0a661d1fc6,
               max_mid
             };
 

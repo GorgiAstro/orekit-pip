@@ -13,12 +13,12 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace frames {
+      class Transform;
+      class TransformProvider;
+    }
     namespace utils {
       class TimeStampedGenerator;
-    }
-    namespace frames {
-      class TransformProvider;
-      class Transform;
     }
     namespace time {
       class AbsoluteDate;
@@ -34,8 +34,8 @@ namespace org {
       class TransformGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_db9023fa4795e93d,
-          mid_generate_8060cef9318d72e3,
+          mid_init$_3291e0fe5159f573,
+          mid_generate_c5683b8e06424542,
           max_mid
         };
 

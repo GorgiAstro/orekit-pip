@@ -25,10 +25,10 @@ namespace org {
         class BisectionSolver : public ::org::hipparchus::analysis::solvers::AbstractUnivariateSolver {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_init$_17db3a65980d3441,
-            mid_init$_8f2e782d5278b131,
-            mid_doSolve_dff5885c2c873297,
+            mid_init$_0640e6acf969ed28,
+            mid_init$_10f281d777284cea,
+            mid_init$_ab23f4ae0fb33968,
+            mid_doSolve_557b8123390d8d0c,
             max_mid
           };
 

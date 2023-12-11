@@ -27,11 +27,11 @@ namespace org {
           class TimeSystemCorrection : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_9f5c2240387841bc,
-              mid_getReferenceDate_85703d13e302437e,
-              mid_getTimeSystemCorrectionA0_dff5885c2c873297,
-              mid_getTimeSystemCorrectionA1_dff5885c2c873297,
-              mid_getTimeSystemCorrectionType_11b109bd155ca898,
+              mid_init$_f3eb9ceafa1e55a5,
+              mid_getReferenceDate_7a97f7e149e79afb,
+              mid_getTimeSystemCorrectionA0_557b8123390d8d0c,
+              mid_getTimeSystemCorrectionA1_557b8123390d8d0c,
+              mid_getTimeSystemCorrectionType_3cffd47377eca18a,
               max_mid
             };
 

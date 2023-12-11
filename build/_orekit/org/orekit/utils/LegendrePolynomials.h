@@ -17,8 +17,8 @@ namespace org {
       class LegendrePolynomials : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_1506189166690b5e,
-          mid_getPnm_dbbe5f05149dbf73,
+          mid_init$_754312f3734d6e2f,
+          mid_getPnm_21b81d54c06b64b0,
           max_mid
         };
 

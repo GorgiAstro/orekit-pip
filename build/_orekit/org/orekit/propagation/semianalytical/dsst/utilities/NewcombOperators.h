@@ -20,7 +20,7 @@ namespace org {
             class NewcombOperators : public ::java::lang::Object {
              public:
               enum {
-                mid_getValue_394b82fc957be26d,
+                mid_getValue_2cce301fcf69b1db,
                 max_mid
               };
 

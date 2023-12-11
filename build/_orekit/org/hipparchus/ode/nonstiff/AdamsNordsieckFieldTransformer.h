@@ -5,16 +5,16 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
+    namespace linear {
+      class Array2DRowFieldMatrix;
+    }
     namespace ode {
       namespace nonstiff {
         class AdamsNordsieckFieldTransformer;
       }
     }
+    class CalculusFieldElement;
     class Field;
-    namespace linear {
-      class Array2DRowFieldMatrix;
-    }
   }
 }
 namespace java {
@@ -32,10 +32,10 @@ namespace org {
         class AdamsNordsieckFieldTransformer : public ::java::lang::Object {
          public:
           enum {
-            mid_getInstance_49ad421963f77d2c,
-            mid_initializeHighOrderDerivatives_8a387f2c5f491083,
-            mid_updateHighOrderDerivativesPhase1_e3fbb99b5c5aabb2,
-            mid_updateHighOrderDerivativesPhase2_ecf8fc9f38ab7a9d,
+            mid_getInstance_fdcef8516d85f185,
+            mid_initializeHighOrderDerivatives_688ff0660b77c6d1,
+            mid_updateHighOrderDerivativesPhase1_9b7147116b9a105f,
+            mid_updateHighOrderDerivativesPhase2_227b5b7fcf4fbdd6,
             max_mid
           };
 

@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace ode {
       namespace events {
         class FieldEventState;
@@ -17,6 +16,7 @@ namespace org {
         class FieldODEStateInterpolator;
       }
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -34,13 +34,13 @@ namespace org {
         class FieldStepEndEventState : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_9ddb55dbce73d9f2,
-            mid_doEvent_bdf842cbe214f2d2,
-            mid_evaluateStep_92ced200eac51ce8,
-            mid_getEventTime_eba8e72a22c984ac,
-            mid_getHandler_f311821b5588cd27,
-            mid_init_81b5dd1fb920fdc1,
-            mid_setStepEnd_072c8635f2164db9,
+            mid_init$_f4eae0b3d6c5e2af,
+            mid_doEvent_0c16f01e69648df7,
+            mid_evaluateStep_568d6c99e8870196,
+            mid_getEventTime_613c8f46c659f636,
+            mid_getHandler_4c44fbf92f21f6a9,
+            mid_init_f808a4f21f8be825,
+            mid_setStepEnd_1ee4bed350fde589,
             max_mid
           };
 

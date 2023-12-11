@@ -3,6 +3,11 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
@@ -14,11 +19,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,31 +34,31 @@ namespace org {
               class SpinStabilized : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_0fa09c18fee449d5,
-                  mid_getEndpoints_35bd4909c56b6915,
-                  mid_getMomentumAlpha_dff5885c2c873297,
-                  mid_getMomentumDelta_dff5885c2c873297,
-                  mid_getNutation_dff5885c2c873297,
-                  mid_getNutationPeriod_dff5885c2c873297,
-                  mid_getNutationPhase_dff5885c2c873297,
-                  mid_getNutationVel_dff5885c2c873297,
-                  mid_getSpinAlpha_dff5885c2c873297,
-                  mid_getSpinAngle_dff5885c2c873297,
-                  mid_getSpinAngleVel_dff5885c2c873297,
-                  mid_getSpinDelta_dff5885c2c873297,
-                  mid_hasMomentum_b108b35ef48e27bd,
-                  mid_hasNutation_b108b35ef48e27bd,
-                  mid_setMomentumAlpha_17db3a65980d3441,
-                  mid_setMomentumDelta_17db3a65980d3441,
-                  mid_setNutation_17db3a65980d3441,
-                  mid_setNutationPeriod_17db3a65980d3441,
-                  mid_setNutationPhase_17db3a65980d3441,
-                  mid_setNutationVel_17db3a65980d3441,
-                  mid_setSpinAlpha_17db3a65980d3441,
-                  mid_setSpinAngle_17db3a65980d3441,
-                  mid_setSpinAngleVel_17db3a65980d3441,
-                  mid_setSpinDelta_17db3a65980d3441,
-                  mid_validate_17db3a65980d3441,
+                  mid_init$_0640e6acf969ed28,
+                  mid_getEndpoints_c66f753ddee38944,
+                  mid_getMomentumAlpha_557b8123390d8d0c,
+                  mid_getMomentumDelta_557b8123390d8d0c,
+                  mid_getNutation_557b8123390d8d0c,
+                  mid_getNutationPeriod_557b8123390d8d0c,
+                  mid_getNutationPhase_557b8123390d8d0c,
+                  mid_getNutationVel_557b8123390d8d0c,
+                  mid_getSpinAlpha_557b8123390d8d0c,
+                  mid_getSpinAngle_557b8123390d8d0c,
+                  mid_getSpinAngleVel_557b8123390d8d0c,
+                  mid_getSpinDelta_557b8123390d8d0c,
+                  mid_hasMomentum_89b302893bdbe1f1,
+                  mid_hasNutation_89b302893bdbe1f1,
+                  mid_setMomentumAlpha_10f281d777284cea,
+                  mid_setMomentumDelta_10f281d777284cea,
+                  mid_setNutation_10f281d777284cea,
+                  mid_setNutationPeriod_10f281d777284cea,
+                  mid_setNutationPhase_10f281d777284cea,
+                  mid_setNutationVel_10f281d777284cea,
+                  mid_setSpinAlpha_10f281d777284cea,
+                  mid_setSpinAngle_10f281d777284cea,
+                  mid_setSpinAngleVel_10f281d777284cea,
+                  mid_setSpinDelta_10f281d777284cea,
+                  mid_validate_10f281d777284cea,
                   max_mid
                 };
 

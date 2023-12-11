@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
-        class FilterType;
         class EventDetector;
+        class FilterType;
       }
       class SpacecraftState;
     }
@@ -32,12 +32,12 @@ namespace org {
         class EventSlopeFilter : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_23f1b60819ad787e,
-            mid_g_432f3d328c15ec82,
-            mid_getDetector_d73bb985ffde4156,
-            mid_getFilter_1393923992462bde,
-            mid_init_826b4eda94da4e78,
-            mid_create_92757c1ef4145bae,
+            mid_init$_2e421142af66b60c,
+            mid_g_1bbf81d80c47ecdd,
+            mid_getDetector_0701b00b25822fff,
+            mid_getFilter_2a6e755e9e4e94fa,
+            mid_init_0472264ad6f40bc2,
+            mid_create_c3f06491636058be,
             max_mid
           };
 

@@ -5,31 +5,30 @@
 
 namespace org {
   namespace orekit {
-    namespace models {
-      namespace earth {
-        namespace atmosphere {
-          class DTM2000InputParameters;
-          class Atmosphere;
-        }
-      }
-    }
-    namespace frames {
-      class Frame;
-    }
     namespace bodies {
       class BodyShape;
     }
     namespace time {
-      class TimeScale;
-      class AbsoluteDate;
       class FieldAbsoluteDate;
+      class AbsoluteDate;
+      class TimeScale;
     }
     namespace utils {
       class PVCoordinatesProvider;
     }
+    namespace frames {
+      class Frame;
+    }
+    namespace models {
+      namespace earth {
+        namespace atmosphere {
+          class Atmosphere;
+          class DTM2000InputParameters;
+        }
+      }
+    }
   }
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -38,6 +37,7 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -56,13 +56,13 @@ namespace org {
           class DTM2000 : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_be95f33da0d2904c,
-              mid_init$_7901fb8814519ab6,
-              mid_getDensity_f7d7785230311c38,
-              mid_getDensity_b79d75c1a8af7374,
-              mid_getDensity_8e42f47834f10f03,
-              mid_getDensity_f74e74a24d011c99,
-              mid_getFrame_b86f9f61d97a7244,
+              mid_init$_01310ec5aa4763df,
+              mid_init$_b6b3afe4e05ae922,
+              mid_getDensity_818999d9e7960fd1,
+              mid_getDensity_57dd506d2d9ba196,
+              mid_getDensity_acc20646a0a0aa35,
+              mid_getDensity_6f1be0a0dd39a32d,
+              mid_getFrame_6c9bc0a928c56d4e,
               max_mid
             };
 
@@ -80,8 +80,8 @@ namespace org {
             DTM2000(const ::org::orekit::models::earth::atmosphere::DTM2000InputParameters &, const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::bodies::BodyShape &);
             DTM2000(const ::org::orekit::models::earth::atmosphere::DTM2000InputParameters &, const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::bodies::BodyShape &, const ::org::orekit::time::TimeScale &);
 
-            jdouble getDensity(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &) const;
             ::org::hipparchus::CalculusFieldElement getDensity(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &) const;
+            jdouble getDensity(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &) const;
             jdouble getDensity(jint, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble) const;
             ::org::hipparchus::CalculusFieldElement getDensity(jint, const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::CalculusFieldElement &, jdouble, jdouble, jdouble, jdouble) const;
             ::org::orekit::frames::Frame getFrame() const;

@@ -3,23 +3,25 @@
 
 #include "org/orekit/propagation/integration/FieldAbstractIntegratedPropagator.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-    namespace ode {
-      class FieldODEIntegrator;
-    }
-    class Field;
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
   }
+}
+namespace org {
   namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+    }
     namespace orbits {
-      class PositionAngleType;
       class OrbitType;
+      class PositionAngleType;
     }
     namespace propagation {
       namespace integration {
-        class FieldStateMapper;
         class FieldAbstractIntegratedPropagator$MainStateEquations;
+        class FieldStateMapper;
       }
       class PropagationType;
     }
@@ -29,15 +31,13 @@ namespace org {
     namespace attitudes {
       class AttitudeProvider;
     }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
   }
-}
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
+  namespace hipparchus {
+    class CalculusFieldElement;
+    class Field;
+    namespace ode {
+      class FieldODEIntegrator;
+    }
   }
 }
 template<class T> class JArray;
@@ -50,13 +50,13 @@ namespace org {
         class PythonFieldAbstractIntegratedPropagator : public ::org::orekit::propagation::integration::FieldAbstractIntegratedPropagator {
          public:
           enum {
-            mid_init$_fd706f9f174d8023,
-            mid_createMapper_16c8184497a1d794,
-            mid_finalize_0fa09c18fee449d5,
-            mid_getMainStateEquations_75bae68924620d17,
-            mid_pythonDecRef_0fa09c18fee449d5,
-            mid_pythonExtension_492808a339bfa35f,
-            mid_pythonExtension_3a8e7649f31fdb20,
+            mid_init$_d00ce4881929b1dd,
+            mid_createMapper_ad7c2ac9dfe2008b,
+            mid_finalize_0640e6acf969ed28,
+            mid_getMainStateEquations_c822d3b1a2fa150a,
+            mid_pythonDecRef_0640e6acf969ed28,
+            mid_pythonExtension_9e26256fb0d384a2,
+            mid_pythonExtension_3cd6a6b354c6aa22,
             max_mid
           };
 

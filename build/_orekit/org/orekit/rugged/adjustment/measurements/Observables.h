@@ -3,6 +3,15 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class Collection;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
     namespace rugged {
@@ -13,15 +22,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace util {
-    class Collection;
-  }
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -35,14 +35,14 @@ namespace org {
           class Observables : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_99803b0791f320ff,
-              mid_addGroundMapping_3c453fa32a2c5ba5,
-              mid_addInterMapping_d927b7daafd7c09a,
-              mid_getGroundMapping_67bb76e411ff1ed2,
-              mid_getGroundMappings_37528d110cff6b74,
-              mid_getInterMapping_eeb650d7ed3a1f0b,
-              mid_getInterMappings_37528d110cff6b74,
-              mid_getNbModels_570ce0828f81a2c1,
+              mid_init$_a3da1a935cb37f7b,
+              mid_addGroundMapping_20b2c0aea4daece7,
+              mid_addInterMapping_7e4266e4836752ff,
+              mid_getGroundMapping_276bf3c3705258c9,
+              mid_getGroundMappings_12ee61573a18f417,
+              mid_getInterMapping_67d9a3f0c5fca42f,
+              mid_getInterMappings_12ee61573a18f417,
+              mid_getNbModels_412668abc8d889e9,
               max_mid
             };
 

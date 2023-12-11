@@ -20,21 +20,21 @@ namespace java {
     class DataInput : public ::java::lang::Object {
      public:
       enum {
-        mid_readBoolean_b108b35ef48e27bd,
-        mid_readByte_42a1555092006f7f,
-        mid_readChar_7818f5b58320cd1f,
-        mid_readDouble_dff5885c2c873297,
-        mid_readFloat_5adccb493ada08e8,
-        mid_readFully_20012b3010a39c05,
-        mid_readFully_d7af9aedcdd3845b,
-        mid_readInt_570ce0828f81a2c1,
-        mid_readLine_11b109bd155ca898,
-        mid_readLong_492808a339bfa35f,
-        mid_readShort_b5dd6688e7dce57d,
-        mid_readUTF_11b109bd155ca898,
-        mid_readUnsignedByte_570ce0828f81a2c1,
-        mid_readUnsignedShort_570ce0828f81a2c1,
-        mid_skipBytes_2235cd056f5a882b,
+        mid_readBoolean_89b302893bdbe1f1,
+        mid_readByte_acadfed42a0dbd0d,
+        mid_readChar_d156d1ce330f6993,
+        mid_readDouble_557b8123390d8d0c,
+        mid_readFloat_04fe014f7609dc26,
+        mid_readFully_d759c70c6670fd89,
+        mid_readFully_ac782c7077255dd3,
+        mid_readInt_412668abc8d889e9,
+        mid_readLine_3cffd47377eca18a,
+        mid_readLong_9e26256fb0d384a2,
+        mid_readShort_2554afc868a7ba2a,
+        mid_readUTF_3cffd47377eca18a,
+        mid_readUnsignedByte_412668abc8d889e9,
+        mid_readUnsignedShort_412668abc8d889e9,
+        mid_skipBytes_0092017e99012694,
         max_mid
       };
 

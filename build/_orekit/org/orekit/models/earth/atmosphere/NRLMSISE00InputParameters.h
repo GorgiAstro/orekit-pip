@@ -26,11 +26,11 @@ namespace org {
           class NRLMSISE00InputParameters : public ::java::io::Serializable {
            public:
             enum {
-              mid_getAp_2b9aa40de0a696a4,
-              mid_getAverageFlux_bf1d7732f1acb697,
-              mid_getDailyFlux_bf1d7732f1acb697,
-              mid_getMaxDate_85703d13e302437e,
-              mid_getMinDate_85703d13e302437e,
+              mid_getAp_89e8b78e4211e023,
+              mid_getAverageFlux_b0b988f941da47d8,
+              mid_getDailyFlux_b0b988f941da47d8,
+              mid_getMaxDate_7a97f7e149e79afb,
+              mid_getMinDate_7a97f7e149e79afb,
               max_mid
             };
 

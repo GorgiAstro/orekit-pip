@@ -3,15 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace util {
-    class Locale;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace optim {
@@ -20,6 +11,15 @@ namespace org {
     namespace exception {
       class Localizable;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class Locale;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -31,10 +31,10 @@ namespace org {
       class LocalizedOptimFormats : public ::java::lang::Enum {
        public:
         enum {
-          mid_getLocalizedString_3cd873bfb132c4fd,
-          mid_getSourceString_11b109bd155ca898,
-          mid_valueOf_c4eb37bc1f8e3659,
-          mid_values_92d1099fb0c9b32e,
+          mid_getLocalizedString_4b51060c6b7ea981,
+          mid_getSourceString_3cffd47377eca18a,
+          mid_valueOf_4d7190db543ebdfe,
+          mid_values_504f2b9e4d58f26e,
           max_mid
         };
 

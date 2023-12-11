@@ -3,27 +3,27 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
       namespace sampling {
+        class OrekitStepInterpolator;
         class MultiSatFixedStepHandler;
         class MultiSatStepHandler;
-        class OrekitStepInterpolator;
       }
       class SpacecraftState;
     }
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -36,12 +36,12 @@ namespace org {
         class MultisatStepNormalizer : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_f9ccce40f0a0ea38,
-            mid_finish_de3e021e7266b71e,
-            mid_getFixedStepHandler_b7499f537ca23947,
-            mid_getFixedTimeStep_dff5885c2c873297,
-            mid_handleStep_de3e021e7266b71e,
-            mid_init_741f4d97cd6d356c,
+            mid_init$_26b8003b7e15d197,
+            mid_finish_4ccaedadb068bdeb,
+            mid_getFixedStepHandler_3a1aa72f37e261e7,
+            mid_getFixedTimeStep_557b8123390d8d0c,
+            mid_handleStep_4ccaedadb068bdeb,
+            mid_init_98fa7d48d3b7f88a,
             max_mid
           };
 

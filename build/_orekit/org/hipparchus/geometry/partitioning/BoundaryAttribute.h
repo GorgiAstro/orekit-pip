@@ -28,9 +28,9 @@ namespace org {
         class BoundaryAttribute : public ::java::lang::Object {
          public:
           enum {
-            mid_getPlusInside_6e34449919366687,
-            mid_getPlusOutside_6e34449919366687,
-            mid_getSplitters_2147d93a31c2c0b0,
+            mid_getPlusInside_0629297ff6ae927a,
+            mid_getPlusOutside_0629297ff6ae927a,
+            mid_getSplitters_a7bfdbab4f440827,
             max_mid
           };
 

@@ -3,6 +3,11 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace optim {
@@ -17,11 +22,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -34,9 +34,9 @@ namespace org {
             class EvaluationRmsChecker : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_17db3a65980d3441,
-                mid_init$_8f2e782d5278b131,
-                mid_converged_a6b9ae58ae2de284,
+                mid_init$_10f281d777284cea,
+                mid_init$_ab23f4ae0fb33968,
+                mid_converged_a1dcadd71f86feaa,
                 max_mid
               };
 

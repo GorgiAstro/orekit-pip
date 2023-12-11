@@ -5,19 +5,12 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
     namespace propagation {
       namespace semianalytical {
         namespace dsst {
           namespace utilities {
-            class FieldAuxiliaryElements;
             class AuxiliaryElements;
+            class FieldAuxiliaryElements;
           }
           namespace forces {
             class FieldShortPeriodTerms;
@@ -25,14 +18,21 @@ namespace org {
           }
         }
       }
-      class SpacecraftState;
+      class FieldSpacecraftState;
       namespace events {
+        class EventDetectorsProvider;
         class FieldEventDetector;
         class EventDetector;
-        class EventDetectorsProvider;
       }
       class PropagationType;
-      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
+    namespace attitudes {
+      class AttitudeProvider;
     }
   }
   namespace hipparchus {
@@ -41,14 +41,14 @@ namespace org {
   }
 }
 namespace java {
-  namespace lang {
-    class Class;
-  }
   namespace util {
     namespace stream {
       class Stream;
     }
     class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -63,19 +63,19 @@ namespace org {
             class DSSTForceModel : public ::org::orekit::utils::ParameterDriversProvider {
              public:
               enum {
-                mid_extractParameters_020d17bb8c285475,
-                mid_extractParameters_547c908eaeea187e,
-                mid_getEventDetectors_20f6d2b462aaef4b,
-                mid_getFieldEventDetectors_361313cd1a9c693a,
-                mid_getMeanElementRate_c0df8831049775b0,
-                mid_getMeanElementRate_5dbca2d049b16b82,
-                mid_init_826b4eda94da4e78,
-                mid_init_8e8de2be1664674a,
-                mid_initializeShortPeriodTerms_cd6a8183d9477030,
-                mid_initializeShortPeriodTerms_c7d75d32fd67f743,
-                mid_registerAttitudeProvider_3cff7c75ea06698c,
-                mid_updateShortPeriodTerms_a9748e634dd1c969,
-                mid_updateShortPeriodTerms_120865f9c5cc3bda,
+                mid_extractParameters_2a4cb51cb18e4e8b,
+                mid_extractParameters_32c7759b5aba450d,
+                mid_getEventDetectors_d7cce92225eb0db2,
+                mid_getFieldEventDetectors_8130af76f6998f44,
+                mid_getMeanElementRate_3573019cca22a7a6,
+                mid_getMeanElementRate_6930c150caff50e0,
+                mid_init_0472264ad6f40bc2,
+                mid_init_811e49dad2467b67,
+                mid_initializeShortPeriodTerms_57b295149dcd4abd,
+                mid_initializeShortPeriodTerms_0791dbeb06a23554,
+                mid_registerAttitudeProvider_8fa6c0c067ead7b2,
+                mid_updateShortPeriodTerms_114c99ef73dfde56,
+                mid_updateShortPeriodTerms_a9be3da5be85857d,
                 max_mid
               };
 

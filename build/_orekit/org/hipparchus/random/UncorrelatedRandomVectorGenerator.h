@@ -25,9 +25,9 @@ namespace org {
       class UncorrelatedRandomVectorGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0ff92a3db7c55279,
-          mid_init$_48c24d51511e841c,
-          mid_nextVector_60c7040667a7dc5c,
+          mid_init$_4511f107bd1b1224,
+          mid_init$_653c6f42cbdc8d76,
+          mid_nextVector_a53a7513ecedada2,
           max_mid
         };
 

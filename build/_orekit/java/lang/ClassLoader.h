@@ -4,23 +4,23 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace util {
-    namespace stream {
-      class Stream;
-    }
-    class Enumeration;
-  }
   namespace io {
     class IOException;
     class InputStream;
   }
   namespace lang {
     class Module;
-    class ClassNotFoundException;
     class Class;
     class Package;
+    class ClassNotFoundException;
     class String;
     class ClassLoader;
+  }
+  namespace util {
+    class Enumeration;
+    namespace stream {
+      class Stream;
+    }
   }
   namespace net {
     class URL;
@@ -34,46 +34,46 @@ namespace java {
     class ClassLoader : public ::java::lang::Object {
      public:
       enum {
-        mid_clearAssertionStatus_0fa09c18fee449d5,
-        mid_getDefinedPackage_2ebccdeed255784a,
-        mid_getDefinedPackages_23df86f75843b87b,
-        mid_getName_11b109bd155ca898,
-        mid_getParent_da1c487fbe6ab900,
-        mid_getPlatformClassLoader_da1c487fbe6ab900,
-        mid_getResource_92a0f99f4944a8b1,
-        mid_getResourceAsStream_d8c3e08e3826298a,
-        mid_getResources_51addc91753b4c4d,
-        mid_getSystemClassLoader_da1c487fbe6ab900,
-        mid_getSystemResource_92a0f99f4944a8b1,
-        mid_getSystemResourceAsStream_d8c3e08e3826298a,
-        mid_getSystemResources_51addc91753b4c4d,
-        mid_getUnnamedModule_191607d6c6e74ab2,
-        mid_isRegisteredAsParallelCapable_b108b35ef48e27bd,
-        mid_loadClass_e88d065cb04fcbf6,
-        mid_resources_5a688b58704bda7e,
-        mid_setClassAssertionStatus_d6df10f4e35ef1e8,
-        mid_setDefaultAssertionStatus_bd04c9335fb9e4cf,
-        mid_setPackageAssertionStatus_d6df10f4e35ef1e8,
-        mid_loadClass_e38edfaa0baa77a8,
-        mid_definePackage_ff1175edc40e0bc8,
-        mid_getPackage_2ebccdeed255784a,
-        mid_setSigners_ff6317628e6e047e,
-        mid_findResource_92a0f99f4944a8b1,
-        mid_findResource_9f0cb071ff0043a3,
-        mid_getClassLoadingLock_f639320a33718c6c,
-        mid_findLoadedClass_e88d065cb04fcbf6,
-        mid_findClass_e88d065cb04fcbf6,
-        mid_findClass_9ea674c8b961918c,
-        mid_resolveClass_834972a40792b06e,
-        mid_defineClass_2173fb0f275a5e7d,
-        mid_defineClass_35421cfae2a8d0a6,
-        mid_defineClass_4eab932f0aaf96b9,
-        mid_defineClass_ac5afae98d4e3b56,
-        mid_findSystemClass_e88d065cb04fcbf6,
-        mid_findResources_51addc91753b4c4d,
-        mid_registerAsParallelCapable_b108b35ef48e27bd,
-        mid_getPackages_23df86f75843b87b,
-        mid_findLibrary_92807efd57acb082,
+        mid_clearAssertionStatus_0640e6acf969ed28,
+        mid_getDefinedPackage_7b9ea2e3cd9b2198,
+        mid_getDefinedPackages_fd735c3a2f16936e,
+        mid_getName_3cffd47377eca18a,
+        mid_getParent_822bf82dfc5992ba,
+        mid_getPlatformClassLoader_822bf82dfc5992ba,
+        mid_getResource_b738586de9814931,
+        mid_getResourceAsStream_425095ef57e6735b,
+        mid_getResources_27bc01b0cf1a3695,
+        mid_getSystemClassLoader_822bf82dfc5992ba,
+        mid_getSystemResource_b738586de9814931,
+        mid_getSystemResourceAsStream_425095ef57e6735b,
+        mid_getSystemResources_27bc01b0cf1a3695,
+        mid_getUnnamedModule_04458a8861f7bacc,
+        mid_isRegisteredAsParallelCapable_89b302893bdbe1f1,
+        mid_loadClass_33271d9fced271c1,
+        mid_resources_0dc60653ff1ab3bd,
+        mid_setClassAssertionStatus_e5ca4b97ee6bd2b6,
+        mid_setDefaultAssertionStatus_ed2afdb8506b9742,
+        mid_setPackageAssertionStatus_e5ca4b97ee6bd2b6,
+        mid_loadClass_e6ece06a3060ddbb,
+        mid_definePackage_9c42a69023400294,
+        mid_getPackage_7b9ea2e3cd9b2198,
+        mid_setSigners_d918cbcf7c43701a,
+        mid_findResource_b738586de9814931,
+        mid_findResource_a71fec3fc8c959f3,
+        mid_getClassLoadingLock_86c4b8560f4aa70f,
+        mid_findLoadedClass_33271d9fced271c1,
+        mid_findClass_33271d9fced271c1,
+        mid_findClass_ef42b063b49029ac,
+        mid_resolveClass_80b724d415998d9f,
+        mid_defineClass_3f2a7bee506c545c,
+        mid_defineClass_792c4f29b3565d21,
+        mid_defineClass_b7c35bde5241f9c4,
+        mid_defineClass_4d1acd34d220744d,
+        mid_findSystemClass_33271d9fced271c1,
+        mid_findResources_27bc01b0cf1a3695,
+        mid_registerAsParallelCapable_89b302893bdbe1f1,
+        mid_getPackages_fd735c3a2f16936e,
+        mid_findLibrary_60bb1b490b673cbf,
         max_mid
       };
 

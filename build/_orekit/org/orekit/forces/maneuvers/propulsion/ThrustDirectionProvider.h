@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
     namespace utils {
       class PVCoordinatesProvider;
+    }
+    namespace frames {
+      class Frame;
     }
     namespace time {
       class AbsoluteDate;
@@ -41,7 +41,7 @@ namespace org {
           class ThrustDirectionProvider : public ::java::lang::Object {
            public:
             enum {
-              mid_computeThrustDirection_35628cd92ea82231,
+              mid_computeThrustDirection_102e5d95cb32da9e,
               max_mid
             };
 

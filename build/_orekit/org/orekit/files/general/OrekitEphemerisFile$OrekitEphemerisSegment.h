@@ -3,23 +3,15 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
     namespace files {
       namespace general {
         class EphemerisFile$EphemerisSegment;
       }
+    }
+    namespace frames {
+      class Frame;
     }
     namespace time {
       class AbsoluteDate;
@@ -28,6 +20,14 @@ namespace org {
       class CartesianDerivativesFilter;
       class TimeStampedPVCoordinates;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -40,15 +40,15 @@ namespace org {
         class OrekitEphemerisFile$OrekitEphemerisSegment : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_586a31fa94512a39,
-            mid_getAvailableDerivatives_16e9a7b5414faf2d,
-            mid_getCoordinates_2afa36052df4765d,
-            mid_getFrame_b86f9f61d97a7244,
-            mid_getInertialFrame_b86f9f61d97a7244,
-            mid_getInterpolationSamples_570ce0828f81a2c1,
-            mid_getMu_dff5885c2c873297,
-            mid_getStart_85703d13e302437e,
-            mid_getStop_85703d13e302437e,
+            mid_init$_1573fde9982ede03,
+            mid_getAvailableDerivatives_6c4898d6ec0c3837,
+            mid_getCoordinates_0d9551367f7ecdef,
+            mid_getFrame_6c9bc0a928c56d4e,
+            mid_getInertialFrame_6c9bc0a928c56d4e,
+            mid_getInterpolationSamples_412668abc8d889e9,
+            mid_getMu_557b8123390d8d0c,
+            mid_getStart_7a97f7e149e79afb,
+            mid_getStop_7a97f7e149e79afb,
             max_mid
           };
 

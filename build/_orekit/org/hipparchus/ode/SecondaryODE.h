@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathIllegalArgumentException;
       class MathIllegalStateException;
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -25,9 +25,9 @@ namespace org {
       class SecondaryODE : public ::java::lang::Object {
        public:
         enum {
-          mid_computeDerivatives_068f688047544b24,
-          mid_getDimension_570ce0828f81a2c1,
-          mid_init_7e0c266289f6d4f1,
+          mid_computeDerivatives_6fd4242fb5dae63c,
+          mid_getDimension_412668abc8d889e9,
+          mid_init_2e25eaf0e03aa89f,
           max_mid
         };
 

@@ -32,11 +32,11 @@ namespace org {
         class AttitudeEphemerisFile$SatelliteAttitudeEphemeris : public ::java::lang::Object {
          public:
           enum {
-            mid_getAttitudeProvider_f95b60a986adb964,
-            mid_getId_11b109bd155ca898,
-            mid_getSegments_2afa36052df4765d,
-            mid_getStart_85703d13e302437e,
-            mid_getStop_85703d13e302437e,
+            mid_getAttitudeProvider_b44a04493534d299,
+            mid_getId_3cffd47377eca18a,
+            mid_getSegments_0d9551367f7ecdef,
+            mid_getStart_7a97f7e149e79afb,
+            mid_getStop_7a97f7e149e79afb,
             max_mid
           };
 

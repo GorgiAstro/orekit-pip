@@ -3,24 +3,22 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
+namespace java {
+  namespace util {
+    class List;
   }
+  namespace lang {
+    class Class;
+  }
+}
+namespace org {
   namespace orekit {
-    namespace frames {
-      class TopocentricFrame;
-    }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
-    namespace models {
-      namespace earth {
-        namespace ionosphere {
-          class IonosphericModel;
-        }
-      }
+    namespace utils {
+      class ParameterDriver;
     }
     namespace gnss {
       namespace metric {
@@ -33,17 +31,19 @@ namespace org {
         }
       }
     }
-    namespace utils {
-      class ParameterDriver;
+    namespace models {
+      namespace earth {
+        namespace ionosphere {
+          class IonosphericModel;
+        }
+      }
+    }
+    namespace frames {
+      class TopocentricFrame;
     }
   }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -57,10 +57,10 @@ namespace org {
           class SsrVtecIonosphericModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_1c15ac86389b1fb5,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_pathDelay_bea489d08473aa2e,
-              mid_pathDelay_28325ab4dabb069a,
+              mid_init$_8fbd7e828f9b51c3,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_pathDelay_e09499dc3d690830,
+              mid_pathDelay_8fbdb07bb0b935f0,
               max_mid
             };
 

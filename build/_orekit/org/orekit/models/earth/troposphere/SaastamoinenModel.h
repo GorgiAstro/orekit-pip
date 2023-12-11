@@ -3,35 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-  namespace orekit {
-    namespace models {
-      namespace earth {
-        namespace troposphere {
-          class DiscreteTroposphericModel;
-          class SaastamoinenModel;
-        }
-      }
-    }
-    namespace data {
-      class DataProvidersManager;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-    namespace bodies {
-      class FieldGeodeticPoint;
-      class GeodeticPoint;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -39,6 +10,35 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace models {
+      namespace earth {
+        namespace troposphere {
+          class SaastamoinenModel;
+          class DiscreteTroposphericModel;
+        }
+      }
+    }
+    namespace bodies {
+      class GeodeticPoint;
+      class FieldGeodeticPoint;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace data {
+      class DataProvidersManager;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -52,15 +52,15 @@ namespace org {
           class SaastamoinenModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_2c56b6dd4d4b1dec,
-              mid_init$_67f6ec33b4d0bffd,
-              mid_init$_08597647738b99f8,
-              mid_getLowElevationThreshold_dff5885c2c873297,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_getStandardModel_7e2e0f949f78c931,
-              mid_pathDelay_ff7a895eb6f0af2e,
-              mid_pathDelay_fe3b5c46874ab115,
-              mid_setLowElevationThreshold_17db3a65980d3441,
+              mid_init$_87096e3fd8086100,
+              mid_init$_cd0a6cb6bf2555a1,
+              mid_init$_6715d5a727bb2ee9,
+              mid_getLowElevationThreshold_557b8123390d8d0c,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_getStandardModel_f1fd9d673b2eb4b0,
+              mid_pathDelay_a4fdd877b349d4a6,
+              mid_pathDelay_129678f244f63094,
+              mid_setLowElevationThreshold_10f281d777284cea,
               max_mid
             };
 

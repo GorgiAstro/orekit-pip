@@ -43,11 +43,11 @@ namespace org {
             class ObservationsBlock : public ::org::orekit::files::ccsds::section::CommentsContainer {
              public:
               enum {
-                mid_init$_0fa09c18fee449d5,
-                mid_addObservation_cd94b1e055e4d212,
-                mid_addObservation_2d550fb141a705f2,
-                mid_getObservations_2afa36052df4765d,
-                mid_setObservations_de3e021e7266b71e,
+                mid_init$_0640e6acf969ed28,
+                mid_addObservation_d2ff22efb71e3f1e,
+                mid_addObservation_f1cf86cd74f431e1,
+                mid_getObservations_0d9551367f7ecdef,
+                mid_setObservations_4ccaedadb068bdeb,
                 max_mid
               };
 

@@ -6,18 +6,18 @@
 namespace org {
   namespace orekit {
     namespace bodies {
+      class CelestialBody;
       class JPLEphemeridesLoader$EphemerisType;
       class CelestialBodyLoader;
-      class CelestialBody;
-    }
-    namespace data {
-      class DataProvidersManager;
     }
     namespace time {
       class TimeScales;
     }
     namespace frames {
       class Frame;
+    }
+    namespace data {
+      class DataProvidersManager;
     }
   }
 }
@@ -36,14 +36,14 @@ namespace org {
       class JPLEphemeridesLoader : public ::org::orekit::data::AbstractSelfFeedingLoader {
        public:
         enum {
-          mid_init$_7680e4f675d5ce38,
-          mid_init$_58a957ea41d89c4d,
-          mid_getLoadedAstronomicalUnit_dff5885c2c873297,
-          mid_getLoadedConstant_2ae203d757702f8f,
-          mid_getLoadedEarthMoonMassRatio_dff5885c2c873297,
-          mid_getLoadedGravitationalCoefficient_7aef2115c46be48a,
-          mid_getMaxChunksDuration_dff5885c2c873297,
-          mid_loadCelestialBody_68e48076ef831536,
+          mid_init$_f6332ad449282561,
+          mid_init$_5edff63840aa9e5d,
+          mid_getLoadedAstronomicalUnit_557b8123390d8d0c,
+          mid_getLoadedConstant_7fabd776843e2b9c,
+          mid_getLoadedEarthMoonMassRatio_557b8123390d8d0c,
+          mid_getLoadedGravitationalCoefficient_fdd8401f20d05d59,
+          mid_getMaxChunksDuration_557b8123390d8d0c,
+          mid_loadCelestialBody_47d89fc2b3d16fd5,
           max_mid
         };
 

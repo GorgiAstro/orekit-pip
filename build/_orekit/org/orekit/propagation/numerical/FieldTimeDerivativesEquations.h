@@ -30,9 +30,9 @@ namespace org {
         class FieldTimeDerivativesEquations : public ::java::lang::Object {
          public:
           enum {
-            mid_addKeplerContribution_072c8635f2164db9,
-            mid_addMassDerivative_072c8635f2164db9,
-            mid_addNonKeplerianAcceleration_c79ed286e3615fed,
+            mid_addKeplerContribution_1ee4bed350fde589,
+            mid_addMassDerivative_1ee4bed350fde589,
+            mid_addNonKeplerianAcceleration_282cea09b82f4134,
             max_mid
           };
 

@@ -37,8 +37,8 @@ namespace org {
             class J2SquaredModel : public ::java::lang::Object {
              public:
               enum {
-                mid_computeMeanEquinoctialSecondOrderTerms_03e8bdfa525c3779,
-                mid_computeMeanEquinoctialSecondOrderTerms_1a8550c5c09a5c40,
+                mid_computeMeanEquinoctialSecondOrderTerms_3cadce1f0ff01a88,
+                mid_computeMeanEquinoctialSecondOrderTerms_b35994dcdbf40b4e,
                 max_mid
               };
 

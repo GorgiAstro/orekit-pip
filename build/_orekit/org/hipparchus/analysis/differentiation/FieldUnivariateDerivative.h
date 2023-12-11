@@ -5,17 +5,17 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace analysis {
       namespace differentiation {
         class FieldDerivative;
-        class FieldUnivariateDerivative;
         class FieldDerivativeStructure;
+        class FieldUnivariateDerivative;
       }
     }
     namespace exception {
       class MathIllegalArgumentException;
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -33,11 +33,11 @@ namespace org {
         class FieldUnivariateDerivative : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_getDerivative_93058f0552012043,
-            mid_getFreeParameters_570ce0828f81a2c1,
-            mid_getPartialDerivative_46366c1e17d1d442,
-            mid_toDerivativeStructure_aa5c3ca19ecbe240,
+            mid_init$_0640e6acf969ed28,
+            mid_getDerivative_8b3a1c735adfa4bc,
+            mid_getFreeParameters_412668abc8d889e9,
+            mid_getPartialDerivative_12d47fa54f2033ee,
+            mid_toDerivativeStructure_5997f22f8d76210e,
             max_mid
           };
 

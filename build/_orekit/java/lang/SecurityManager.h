@@ -13,9 +13,6 @@ namespace java {
   namespace io {
     class FileDescriptor;
   }
-  namespace security {
-    class Permission;
-  }
 }
 template<class T> class JArray;
 
@@ -25,35 +22,33 @@ namespace java {
     class SecurityManager : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_0fa09c18fee449d5,
-        mid_checkAccept_e227023543046618,
-        mid_checkAccess_6fe64205f671d335,
-        mid_checkAccess_cc95f01a6d9b6abb,
-        mid_checkConnect_e227023543046618,
-        mid_checkConnect_97d3bf06faca5afa,
-        mid_checkCreateClassLoader_0fa09c18fee449d5,
-        mid_checkDelete_d0bc48d5b00dc40c,
-        mid_checkExec_d0bc48d5b00dc40c,
-        mid_checkExit_99803b0791f320ff,
-        mid_checkLink_d0bc48d5b00dc40c,
-        mid_checkListen_99803b0791f320ff,
-        mid_checkPackageAccess_d0bc48d5b00dc40c,
-        mid_checkPackageDefinition_d0bc48d5b00dc40c,
-        mid_checkPermission_7dbb217d272a752a,
-        mid_checkPermission_ba67496e93cdae21,
-        mid_checkPrintJobAccess_0fa09c18fee449d5,
-        mid_checkPropertiesAccess_0fa09c18fee449d5,
-        mid_checkPropertyAccess_d0bc48d5b00dc40c,
-        mid_checkRead_9d90d2b41ddf88a5,
-        mid_checkRead_d0bc48d5b00dc40c,
-        mid_checkRead_562cf77ba0f3b1a4,
-        mid_checkSecurityAccess_d0bc48d5b00dc40c,
-        mid_checkSetFactory_0fa09c18fee449d5,
-        mid_checkWrite_9d90d2b41ddf88a5,
-        mid_checkWrite_d0bc48d5b00dc40c,
-        mid_getSecurityContext_4d26fd885228c716,
-        mid_getThreadGroup_b3b4aaae6d375f3d,
-        mid_getClassContext_c7d92886d19dfecc,
+        mid_init$_0640e6acf969ed28,
+        mid_checkAccept_358501078068b45e,
+        mid_checkAccess_574f9dad62c353dc,
+        mid_checkAccess_84802e277a8287ee,
+        mid_checkConnect_358501078068b45e,
+        mid_checkConnect_094bd74fcac1628c,
+        mid_checkCreateClassLoader_0640e6acf969ed28,
+        mid_checkDelete_f5ffdf29129ef90a,
+        mid_checkExec_f5ffdf29129ef90a,
+        mid_checkExit_a3da1a935cb37f7b,
+        mid_checkLink_f5ffdf29129ef90a,
+        mid_checkListen_a3da1a935cb37f7b,
+        mid_checkPackageAccess_f5ffdf29129ef90a,
+        mid_checkPackageDefinition_f5ffdf29129ef90a,
+        mid_checkPrintJobAccess_0640e6acf969ed28,
+        mid_checkPropertiesAccess_0640e6acf969ed28,
+        mid_checkPropertyAccess_f5ffdf29129ef90a,
+        mid_checkRead_0a1c60be3a779b3b,
+        mid_checkRead_f5ffdf29129ef90a,
+        mid_checkRead_53d92541fcec0ec7,
+        mid_checkSecurityAccess_f5ffdf29129ef90a,
+        mid_checkSetFactory_0640e6acf969ed28,
+        mid_checkWrite_0a1c60be3a779b3b,
+        mid_checkWrite_f5ffdf29129ef90a,
+        mid_getSecurityContext_e661fe3ba2fafb22,
+        mid_getThreadGroup_33ca5756bd56429e,
+        mid_getClassContext_c988485cdace3d64,
         max_mid
       };
 
@@ -83,8 +78,6 @@ namespace java {
       void checkListen(jint) const;
       void checkPackageAccess(const ::java::lang::String &) const;
       void checkPackageDefinition(const ::java::lang::String &) const;
-      void checkPermission(const ::java::security::Permission &) const;
-      void checkPermission(const ::java::security::Permission &, const ::java::lang::Object &) const;
       void checkPrintJobAccess() const;
       void checkPropertiesAccess() const;
       void checkPropertyAccess(const ::java::lang::String &) const;

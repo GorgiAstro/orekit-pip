@@ -4,10 +4,14 @@
 #include "org/orekit/propagation/integration/AbstractIntegratedPropagator.h"
 
 namespace org {
-  namespace orekit {
-    namespace data {
-      class DataContext;
+  namespace hipparchus {
+    namespace ode {
+      namespace nonstiff {
+        class ClassicalRungeKuttaIntegrator;
+      }
     }
+  }
+  namespace orekit {
     namespace frames {
       class Frame;
     }
@@ -17,21 +21,17 @@ namespace org {
     namespace attitudes {
       class AttitudeProvider;
     }
+    namespace data {
+      class DataContext;
+    }
     namespace propagation {
+      class SpacecraftState;
       namespace analytical {
         namespace gnss {
           namespace data {
             class GLONASSOrbitalElements;
           }
         }
-      }
-      class SpacecraftState;
-    }
-  }
-  namespace hipparchus {
-    namespace ode {
-      namespace nonstiff {
-        class ClassicalRungeKuttaIntegrator;
       }
     }
   }
@@ -51,11 +51,11 @@ namespace org {
         class GLONASSNumericalPropagator : public ::org::orekit::propagation::integration::AbstractIntegratedPropagator {
          public:
           enum {
-            mid_init$_bcc36abbe353bf79,
-            mid_getGLONASSOrbitalElements_44dc208271d1b6f9,
-            mid_propagate_fbff2ff5554d95e1,
-            mid_createMapper_2bea84b26b1efc07,
-            mid_getMainStateEquations_e1fa3ce287fe2655,
+            mid_init$_e282e250497c197e,
+            mid_getGLONASSOrbitalElements_19faff6f6b9c4979,
+            mid_propagate_15e0d02372b1347b,
+            mid_createMapper_31b084497c320ed2,
+            mid_getMainStateEquations_4a2f137b7a0c1747,
             max_mid
           };
 

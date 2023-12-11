@@ -16,7 +16,7 @@ namespace java {
     class Runnable : public ::java::lang::Object {
      public:
       enum {
-        mid_run_0fa09c18fee449d5,
+        mid_run_0640e6acf969ed28,
         max_mid
       };
 

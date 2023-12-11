@@ -3,7 +3,33 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class Collection;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
+  namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
+    namespace attitudes {
+      class BoundedAttitudeProvider;
+      class FieldAttitude;
+      class Attitude;
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
+    }
+    namespace frames {
+      class Frame;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -13,32 +39,6 @@ namespace org {
         }
       }
     }
-  }
-  namespace orekit {
-    namespace attitudes {
-      class Attitude;
-      class FieldAttitude;
-      class BoundedAttitudeProvider;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace utils {
-      class PVCoordinatesProvider;
-      class FieldPVCoordinatesProvider;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-    }
-  }
-}
-namespace java {
-  namespace util {
-    class Collection;
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -50,13 +50,13 @@ namespace org {
       class AggregateBoundedAttitudeProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_f72f53318f80c525,
-          mid_getAttitude_4e541876ea7d5bd0,
-          mid_getAttitude_d2b70935d932b5c5,
-          mid_getAttitudeRotation_29422c22de775b74,
-          mid_getAttitudeRotation_53a81d4d17b13463,
-          mid_getMaxDate_85703d13e302437e,
-          mid_getMinDate_85703d13e302437e,
+          mid_init$_3abde0be9b9c9773,
+          mid_getAttitude_77e3383de01f3e48,
+          mid_getAttitude_1306ac39e1d2de3f,
+          mid_getAttitudeRotation_5c74bfcf2d42825a,
+          mid_getAttitudeRotation_85bb0a19efdadc1d,
+          mid_getMaxDate_7a97f7e149e79afb,
+          mid_getMinDate_7a97f7e149e79afb,
           max_mid
         };
 

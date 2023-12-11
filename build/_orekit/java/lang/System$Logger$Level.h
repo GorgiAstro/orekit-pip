@@ -18,10 +18,10 @@ namespace java {
     class System$Logger$Level : public ::java::lang::Enum {
      public:
       enum {
-        mid_getName_11b109bd155ca898,
-        mid_getSeverity_570ce0828f81a2c1,
-        mid_valueOf_12e089f7e7891274,
-        mid_values_b26358edb8b776f0,
+        mid_getName_3cffd47377eca18a,
+        mid_getSeverity_412668abc8d889e9,
+        mid_valueOf_0df800252628b85f,
+        mid_values_de06acb541c2af58,
         max_mid
       };
 

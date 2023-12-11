@@ -6,14 +6,14 @@
 namespace org {
   namespace orekit {
     namespace utils {
-      class TimeStampedAngularCoordinates;
+      class TimeStampedFieldAngularCoordinates;
       class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
-      class TimeStampedFieldAngularCoordinates;
+      class TimeStampedAngularCoordinates;
     }
     namespace attitudes {
-      class Attitude;
       class FieldAttitude;
+      class Attitude;
     }
     namespace frames {
       class Frame;
@@ -34,8 +34,8 @@ namespace org {
       class AttitudeBuilder : public ::java::lang::Object {
        public:
         enum {
-          mid_build_32e9a4ac991f1702,
-          mid_build_54b3b52d9ecd9e48,
+          mid_build_4329b81cdba13b7b,
+          mid_build_76e687ee866bdc48,
           max_mid
         };
 

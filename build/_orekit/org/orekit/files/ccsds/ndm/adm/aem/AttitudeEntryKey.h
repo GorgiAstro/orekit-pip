@@ -43,8 +43,8 @@ namespace org {
               class AttitudeEntryKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_valueOf_c55b9c8df598dae5,
-                  mid_values_d7383d858ca1d758,
+                  mid_valueOf_20d56872ce77efdf,
+                  mid_values_270f0a9e5644cd9d,
                   max_mid
                 };
 

@@ -5,16 +5,20 @@
 
 namespace org {
   namespace orekit {
+    namespace orbits {
+      class CartesianOrbit;
+      class KeplerianOrbit;
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
           namespace odm {
+            class OdmCommonMetadata;
             namespace opm {
-              class Maneuver;
               class OpmData;
+              class Maneuver;
             }
             class OdmHeader;
-            class OdmCommonMetadata;
           }
         }
         namespace section {
@@ -22,20 +26,16 @@ namespace org {
         }
       }
     }
-    namespace data {
-      class DataContext;
+    namespace time {
+      class TimeStamped;
+      class AbsoluteDate;
     }
     namespace utils {
       class IERSConventions;
       class TimeStampedPVCoordinates;
     }
-    namespace orbits {
-      class CartesianOrbit;
-      class KeplerianOrbit;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class TimeStamped;
+    namespace data {
+      class DataContext;
     }
     namespace propagation {
       class SpacecraftState;
@@ -64,18 +64,18 @@ namespace org {
               class Opm : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
                public:
                 enum {
-                  mid_init$_2b261aaf5054b0fb,
-                  mid_generateCartesianOrbit_e5effdf9a992f1f2,
-                  mid_generateKeplerianOrbit_3b8c2ada972e4fd7,
-                  mid_generateSpacecraftState_c6311115fea01a34,
-                  mid_getData_795b1cd6af2ec6a7,
-                  mid_getDate_85703d13e302437e,
-                  mid_getManeuver_7e1ee5600d637967,
-                  mid_getManeuvers_2afa36052df4765d,
-                  mid_getMetadata_db01ddc8c0b55b51,
-                  mid_getNbManeuvers_570ce0828f81a2c1,
-                  mid_getPVCoordinates_c204436deca11d94,
-                  mid_hasManeuvers_b108b35ef48e27bd,
+                  mid_init$_66443a7cc3b43b5d,
+                  mid_generateCartesianOrbit_0b5f23f972fe7789,
+                  mid_generateKeplerianOrbit_48360cd036a5e97b,
+                  mid_generateSpacecraftState_15e85d5301b90ef8,
+                  mid_getData_2b9b4229a136e2bd,
+                  mid_getDate_7a97f7e149e79afb,
+                  mid_getManeuver_8f5fc12e3129007b,
+                  mid_getManeuvers_0d9551367f7ecdef,
+                  mid_getMetadata_ece27d931e37ca4f,
+                  mid_getNbManeuvers_412668abc8d889e9,
+                  mid_getPVCoordinates_daf15abc21907508,
+                  mid_hasManeuvers_89b302893bdbe1f1,
                   max_mid
                 };
 

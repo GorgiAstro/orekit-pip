@@ -3,14 +3,23 @@
 
 #include "org/orekit/estimation/measurements/ComparableMeasurement.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
+        class ObservableSatellite;
         class EstimatedMeasurement;
         class EstimatedMeasurementBase;
         class EstimationModifier;
-        class ObservableSatellite;
       }
     }
     namespace utils {
@@ -19,15 +28,6 @@ namespace org {
     namespace propagation {
       class SpacecraftState;
     }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -40,17 +40,17 @@ namespace org {
         class ObservedMeasurement : public ::org::orekit::estimation::measurements::ComparableMeasurement {
          public:
           enum {
-            mid_addModifier_baf3397e6fffc21d,
-            mid_estimate_27ef5cc84ad0852b,
-            mid_estimateWithoutDerivatives_e32883476b3d9b22,
-            mid_getBaseWeight_60c7040667a7dc5c,
-            mid_getDimension_570ce0828f81a2c1,
-            mid_getMeasurementType_11b109bd155ca898,
-            mid_getModifiers_2afa36052df4765d,
-            mid_getSatellites_2afa36052df4765d,
-            mid_getTheoreticalStandardDeviation_60c7040667a7dc5c,
-            mid_isEnabled_b108b35ef48e27bd,
-            mid_setEnabled_bd04c9335fb9e4cf,
+            mid_addModifier_6f472135bf397672,
+            mid_estimate_eae039ee8c8a4a4d,
+            mid_estimateWithoutDerivatives_71d69ca0f7c280a7,
+            mid_getBaseWeight_a53a7513ecedada2,
+            mid_getDimension_412668abc8d889e9,
+            mid_getMeasurementType_3cffd47377eca18a,
+            mid_getModifiers_0d9551367f7ecdef,
+            mid_getSatellites_0d9551367f7ecdef,
+            mid_getTheoreticalStandardDeviation_a53a7513ecedada2,
+            mid_isEnabled_89b302893bdbe1f1,
+            mid_setEnabled_ed2afdb8506b9742,
             max_mid
           };
 

@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace rugged {
       namespace utils {
-        class ExtendedEllipsoid;
         class NormalizedGeodeticPoint;
+        class ExtendedEllipsoid;
       }
       namespace intersection {
         class IntersectionAlgorithm;
@@ -46,9 +46,9 @@ namespace org {
         class MultiLayerModel : public ::org::orekit::rugged::refraction::AtmosphericRefraction {
          public:
           enum {
-            mid_init$_323cca21b3806954,
-            mid_init$_3e979f14515f6324,
-            mid_applyCorrection_a813ead3ffa4bffb,
+            mid_init$_224b23f8eb5eaad9,
+            mid_init$_c11240812b3a0202,
+            mid_applyCorrection_981eb3dc755df9fc,
             max_mid
           };
 

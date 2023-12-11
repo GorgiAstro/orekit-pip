@@ -3,20 +3,20 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
       class TimeStamped;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
+  }
+  namespace io {
+    class Serializable;
   }
 }
 template<class T> class JArray;
@@ -28,21 +28,21 @@ namespace org {
       class DelaunayArguments : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_9ac7694849fc1cb8,
-          mid_getD_dff5885c2c873297,
-          mid_getDDot_dff5885c2c873297,
-          mid_getDate_85703d13e302437e,
-          mid_getF_dff5885c2c873297,
-          mid_getFDot_dff5885c2c873297,
-          mid_getGamma_dff5885c2c873297,
-          mid_getGammaDot_dff5885c2c873297,
-          mid_getL_dff5885c2c873297,
-          mid_getLDot_dff5885c2c873297,
-          mid_getLPrime_dff5885c2c873297,
-          mid_getLPrimeDot_dff5885c2c873297,
-          mid_getOmega_dff5885c2c873297,
-          mid_getOmegaDot_dff5885c2c873297,
-          mid_getTC_dff5885c2c873297,
+          mid_init$_93cd117b5bd418cf,
+          mid_getD_557b8123390d8d0c,
+          mid_getDDot_557b8123390d8d0c,
+          mid_getDate_7a97f7e149e79afb,
+          mid_getF_557b8123390d8d0c,
+          mid_getFDot_557b8123390d8d0c,
+          mid_getGamma_557b8123390d8d0c,
+          mid_getGammaDot_557b8123390d8d0c,
+          mid_getL_557b8123390d8d0c,
+          mid_getLDot_557b8123390d8d0c,
+          mid_getLPrime_557b8123390d8d0c,
+          mid_getLPrimeDot_557b8123390d8d0c,
+          mid_getOmega_557b8123390d8d0c,
+          mid_getOmegaDot_557b8123390d8d0c,
+          mid_getTC_557b8123390d8d0c,
           max_mid
         };
 

@@ -17,7 +17,7 @@ namespace org {
       class AtmosphericRefractionModel : public ::java::io::Serializable {
        public:
         enum {
-          mid_getRefraction_dcbc7ce2902fa136,
+          mid_getRefraction_7e960cd6eee376d8,
           max_mid
         };
 

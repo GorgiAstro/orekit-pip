@@ -33,10 +33,10 @@ namespace org {
           class SingleLayerModelMappingFunction : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_init$_17db3a65980d3441,
-              mid_mappingFactor_dcbc7ce2902fa136,
-              mid_mappingFactor_a4b1871f4d29e58b,
+              mid_init$_0640e6acf969ed28,
+              mid_init$_10f281d777284cea,
+              mid_mappingFactor_7e960cd6eee376d8,
+              mid_mappingFactor_6672ad854985cb64,
               max_mid
             };
 

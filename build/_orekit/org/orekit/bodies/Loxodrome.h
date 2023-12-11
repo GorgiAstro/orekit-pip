@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace bodies {
-      class OneAxisEllipsoid;
       class GeodeticPoint;
+      class OneAxisEllipsoid;
     }
   }
 }
@@ -25,13 +25,13 @@ namespace org {
       class Loxodrome : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_c56db44a8458e921,
-          mid_init$_99ae746ddfb04a5b,
-          mid_getAltitude_dff5885c2c873297,
-          mid_getAzimuth_dff5885c2c873297,
-          mid_getBody_000d48aad6c74b0a,
-          mid_getPoint_82d0a9bcd06489bb,
-          mid_pointAtDistance_a6daea86c60e2668,
+          mid_init$_a9ff5df2027c94d3,
+          mid_init$_c225dd5200da8e62,
+          mid_getAltitude_557b8123390d8d0c,
+          mid_getAzimuth_557b8123390d8d0c,
+          mid_getBody_0c55bd1adf955c4c,
+          mid_getPoint_8672b163b0e4a5a3,
+          mid_pointAtDistance_fdfcc3c813d87498,
           max_mid
         };
 

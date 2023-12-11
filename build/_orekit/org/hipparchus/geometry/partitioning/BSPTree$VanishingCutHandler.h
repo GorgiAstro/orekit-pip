@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -15,6 +10,11 @@ namespace org {
         class BSPTree;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,7 +27,7 @@ namespace org {
         class BSPTree$VanishingCutHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_fixNode_fcfc0129c0a7b557,
+            mid_fixNode_bf59e8c45d4e589e,
             max_mid
           };
 

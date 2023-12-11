@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace attitudes {
@@ -19,19 +11,27 @@ namespace org {
       class FieldAttitude;
       class BoundedAttitudeProvider;
     }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
     namespace utils {
-      class TimeStampedAngularCoordinates;
-      class AngularDerivativesFilter;
       class PVCoordinatesProvider;
+      class AngularDerivativesFilter;
       class FieldPVCoordinatesProvider;
+      class TimeStampedAngularCoordinates;
     }
     namespace frames {
       class Frame;
     }
-    namespace time {
-      class AbsoluteDate;
-      class FieldAbsoluteDate;
-    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -43,12 +43,12 @@ namespace org {
       class TabulatedProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_b54c4378f1b49120,
-          mid_init$_53f1defe81182479,
-          mid_getAttitude_d2b70935d932b5c5,
-          mid_getAttitude_4e541876ea7d5bd0,
-          mid_getMaxDate_85703d13e302437e,
-          mid_getMinDate_85703d13e302437e,
+          mid_init$_1d4ab58533b5cef5,
+          mid_init$_0f67a1b319521d8a,
+          mid_getAttitude_1306ac39e1d2de3f,
+          mid_getAttitude_77e3383de01f3e48,
+          mid_getMaxDate_7a97f7e149e79afb,
+          mid_getMinDate_7a97f7e149e79afb,
           max_mid
         };
 

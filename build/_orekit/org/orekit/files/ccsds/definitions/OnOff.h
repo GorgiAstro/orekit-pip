@@ -3,12 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -18,6 +12,12 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,9 +31,9 @@ namespace org {
           class OnOff : public ::java::lang::Enum {
            public:
             enum {
-              mid_isOn_b108b35ef48e27bd,
-              mid_valueOf_2fa16bd229e33be8,
-              mid_values_fa00b235f66b4b90,
+              mid_isOn_89b302893bdbe1f1,
+              mid_valueOf_b3425661c8839a36,
+              mid_values_ec032e6bc72340b5,
               max_mid
             };
 

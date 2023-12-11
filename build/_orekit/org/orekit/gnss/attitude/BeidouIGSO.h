@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
+    namespace frames {
+      class Frame;
+    }
     namespace utils {
       class ExtendedPVCoordinatesProvider;
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace frames {
-      class Frame;
     }
   }
 }
@@ -31,7 +31,7 @@ namespace org {
         class BeidouIGSO : public ::org::orekit::gnss::attitude::BeidouMeo {
          public:
           enum {
-            mid_init$_be6476273154a2ce,
+            mid_init$_c9803b569bb20b21,
             max_mid
           };
 

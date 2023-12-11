@@ -6,12 +6,12 @@
 namespace java {
   namespace util {
     class Comparator;
+    namespace stream {
+      class DoubleStream;
+      class Stream;
+    }
     namespace function {
       class Supplier;
-    }
-    namespace stream {
-      class Stream;
-      class DoubleStream;
     }
     class Optional;
   }
@@ -28,23 +28,23 @@ namespace java {
       class Stream : public ::java::lang::Object {
        public:
         enum {
-          mid_concat_0b92fe9e9f9acef1,
-          mid_count_492808a339bfa35f,
-          mid_distinct_20f6d2b462aaef4b,
-          mid_empty_20f6d2b462aaef4b,
-          mid_findAny_c5e311a9e5531e7d,
-          mid_findFirst_c5e311a9e5531e7d,
-          mid_generate_8be855f490d09fce,
-          mid_limit_e15865d9d042e9f4,
-          mid_max_d7a4493c96ea432e,
-          mid_min_d7a4493c96ea432e,
-          mid_of_fcdf5e804d048ff5,
-          mid_of_5ec77a47066bac4a,
-          mid_ofNullable_5ec77a47066bac4a,
-          mid_skip_e15865d9d042e9f4,
-          mid_sorted_20f6d2b462aaef4b,
-          mid_sorted_f1a7c968203f8263,
-          mid_toArray_b93c730013ce64c6,
+          mid_concat_9e0a3c4944e5dc50,
+          mid_count_9e26256fb0d384a2,
+          mid_distinct_d7cce92225eb0db2,
+          mid_empty_d7cce92225eb0db2,
+          mid_findAny_d0ccac9b4c6bdd55,
+          mid_findFirst_d0ccac9b4c6bdd55,
+          mid_generate_3245191b6f3ae2e0,
+          mid_limit_2d0d8836c8e6d751,
+          mid_max_17d9ff3676ac1fa2,
+          mid_min_17d9ff3676ac1fa2,
+          mid_of_13c199dd7611bbb8,
+          mid_of_f5d6c2fe1294fb2d,
+          mid_ofNullable_f5d6c2fe1294fb2d,
+          mid_skip_2d0d8836c8e6d751,
+          mid_sorted_d7cce92225eb0db2,
+          mid_sorted_f8130c0783e3fa7c,
+          mid_toArray_6555a5198c71b73a,
           max_mid
         };
 

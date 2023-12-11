@@ -3,16 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    namespace stream {
-      class Stream;
-    }
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -25,16 +15,26 @@ namespace org {
     }
   }
   namespace orekit {
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace rugged {
       namespace utils {
         class DerivativeGenerator;
       }
     }
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class ParameterDriver;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
+  }
+  namespace util {
+    namespace stream {
+      class Stream;
     }
   }
 }
@@ -48,9 +48,9 @@ namespace org {
         class LOSTransform : public ::java::lang::Object {
          public:
           enum {
-            mid_getParametersDrivers_20f6d2b462aaef4b,
-            mid_transformLOS_5bf59b7055ded983,
-            mid_transformLOS_ff297ae5ca0c9136,
+            mid_getParametersDrivers_d7cce92225eb0db2,
+            mid_transformLOS_193bcb23df54ca95,
+            mid_transformLOS_da5b61aadada7c1f,
             max_mid
           };
 

@@ -6,10 +6,10 @@
 namespace org {
   namespace hipparchus {
     namespace optim {
+      class ConvergenceChecker;
       namespace univariate {
         class UnivariatePointValuePair;
       }
-      class ConvergenceChecker;
     }
   }
 }
@@ -28,9 +28,9 @@ namespace org {
         class BrentOptimizer : public ::org::hipparchus::optim::univariate::UnivariateOptimizer {
          public:
           enum {
-            mid_init$_8f2e782d5278b131,
-            mid_init$_511a7b4994f0ac32,
-            mid_doOptimize_1512fd4a147f4927,
+            mid_init$_ab23f4ae0fb33968,
+            mid_init$_b2b4889b70ee50e3,
+            mid_doOptimize_31fa57ee28e1174a,
             max_mid
           };
 

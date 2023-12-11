@@ -5,17 +5,17 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class LOFType;
-      class Frame;
-    }
     namespace orbits {
-      class PositionAngleType;
       class Orbit;
       class OrbitType;
+      class PositionAngleType;
     }
     namespace time {
       class TimeInterpolator;
+    }
+    namespace frames {
+      class Frame;
+      class LOFType;
     }
     namespace utils {
       class CartesianDerivativesFilter;
@@ -36,16 +36,16 @@ namespace org {
       class StateCovarianceKeplerianHermiteInterpolator : public ::org::orekit::propagation::AbstractStateCovarianceInterpolator {
        public:
         enum {
-          mid_init$_a44ffd8bb5f49e75,
-          mid_init$_5b1ae7e6cbac560c,
-          mid_init$_b69d69c1cc177acf,
-          mid_init$_3197a714f98d582f,
-          mid_init$_b2f48658e3eb96bd,
-          mid_init$_6d7c27d7647a298a,
-          mid_init$_616c3b4472c86982,
-          mid_init$_0c7e2c00747b2207,
-          mid_getFilter_16e9a7b5414faf2d,
-          mid_computeInterpolatedCovarianceInOrbitFrame_b3673400c0fde69a,
+          mid_init$_48a6dcb8ba1e206b,
+          mid_init$_5dfeb67fd2988885,
+          mid_init$_596de125d0bf1d0a,
+          mid_init$_7b6e4e34795f1add,
+          mid_init$_e635f69f6b718ce6,
+          mid_init$_215b0fc7a61130fd,
+          mid_init$_22e3762927839869,
+          mid_init$_06156d6cf98e4c27,
+          mid_getFilter_6c4898d6ec0c3837,
+          mid_computeInterpolatedCovarianceInOrbitFrame_1da586432f5e847a,
           max_mid
         };
 

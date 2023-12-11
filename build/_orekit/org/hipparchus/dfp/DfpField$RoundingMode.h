@@ -3,17 +3,17 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace dfp {
       class DfpField$RoundingMode;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,8 +25,8 @@ namespace org {
       class DfpField$RoundingMode : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_ea89e584afd79cc7,
-          mid_values_487a25867658d69c,
+          mid_valueOf_f09b5bf7ce7b406c,
+          mid_values_c898b66ae65cba1c,
           max_mid
         };
 

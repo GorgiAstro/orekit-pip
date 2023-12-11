@@ -3,22 +3,30 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
-    namespace attitudes {
-      class AttitudeProvider;
+    namespace utils {
+      class ParameterDriver;
     }
     namespace estimation {
       namespace measurements {
         class EstimatedMeasurementBase;
-        class EstimationModifier;
         namespace gnss {
           class OneWayGNSSRange;
         }
+        class EstimationModifier;
       }
     }
-    namespace utils {
-      class ParameterDriver;
+    namespace attitudes {
+      class AttitudeProvider;
     }
   }
   namespace hipparchus {
@@ -29,14 +37,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -50,9 +50,9 @@ namespace org {
           class OnBoardAntennaOneWayGNSSRangeModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_42136dcb6d46591a,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_modifyWithoutDerivatives_d1815d998cba71e9,
+              mid_init$_b0d111dc230cd433,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_modifyWithoutDerivatives_e471490df8741b73,
               max_mid
             };
 

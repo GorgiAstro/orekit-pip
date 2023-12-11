@@ -5,6 +5,9 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace propagation {
       namespace analytical {
         namespace gnss {
@@ -13,9 +16,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -36,32 +36,32 @@ namespace org {
             class AbstractNavigationMessage : public ::org::orekit::propagation::analytical::gnss::data::CommonGnssData {
              public:
               enum {
-                mid_init$_01fb2c777e5def32,
-                mid_getAf2_dff5885c2c873297,
-                mid_getCic_dff5885c2c873297,
-                mid_getCis_dff5885c2c873297,
-                mid_getCrc_dff5885c2c873297,
-                mid_getCrs_dff5885c2c873297,
-                mid_getCuc_dff5885c2c873297,
-                mid_getCus_dff5885c2c873297,
-                mid_getDeltaN_dff5885c2c873297,
-                mid_getEpochToc_85703d13e302437e,
-                mid_getIDot_dff5885c2c873297,
-                mid_getMeanMotion_dff5885c2c873297,
-                mid_getSqrtA_dff5885c2c873297,
-                mid_getTransmissionTime_dff5885c2c873297,
-                mid_setAf2_17db3a65980d3441,
-                mid_setCic_17db3a65980d3441,
-                mid_setCis_17db3a65980d3441,
-                mid_setCrc_17db3a65980d3441,
-                mid_setCrs_17db3a65980d3441,
-                mid_setCuc_17db3a65980d3441,
-                mid_setCus_17db3a65980d3441,
-                mid_setDeltaN_17db3a65980d3441,
-                mid_setEpochToc_600a2a61652bc473,
-                mid_setIDot_17db3a65980d3441,
-                mid_setSqrtA_17db3a65980d3441,
-                mid_setTransmissionTime_17db3a65980d3441,
+                mid_init$_427af08acba367ca,
+                mid_getAf2_557b8123390d8d0c,
+                mid_getCic_557b8123390d8d0c,
+                mid_getCis_557b8123390d8d0c,
+                mid_getCrc_557b8123390d8d0c,
+                mid_getCrs_557b8123390d8d0c,
+                mid_getCuc_557b8123390d8d0c,
+                mid_getCus_557b8123390d8d0c,
+                mid_getDeltaN_557b8123390d8d0c,
+                mid_getEpochToc_7a97f7e149e79afb,
+                mid_getIDot_557b8123390d8d0c,
+                mid_getMeanMotion_557b8123390d8d0c,
+                mid_getSqrtA_557b8123390d8d0c,
+                mid_getTransmissionTime_557b8123390d8d0c,
+                mid_setAf2_10f281d777284cea,
+                mid_setCic_10f281d777284cea,
+                mid_setCis_10f281d777284cea,
+                mid_setCrc_10f281d777284cea,
+                mid_setCrs_10f281d777284cea,
+                mid_setCuc_10f281d777284cea,
+                mid_setCus_10f281d777284cea,
+                mid_setDeltaN_10f281d777284cea,
+                mid_setEpochToc_20affcbd28542333,
+                mid_setIDot_10f281d777284cea,
+                mid_setSqrtA_10f281d777284cea,
+                mid_setTransmissionTime_10f281d777284cea,
                 max_mid
               };
 

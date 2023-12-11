@@ -3,6 +3,15 @@
 
 #include "org/orekit/gnss/metric/messages/ssr/igm/SsrIgmData.h"
 
+namespace java {
+  namespace util {
+    class Map;
+  }
+  namespace lang {
+    class Class;
+    class Integer;
+  }
+}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -14,15 +23,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace util {
-    class Map;
-  }
-  namespace lang {
-    class Class;
-    class Integer;
   }
 }
 template<class T> class JArray;
@@ -38,12 +38,12 @@ namespace org {
               class SsrIgm05Data : public ::org::orekit::gnss::metric::messages::ssr::igm::SsrIgmData {
                public:
                 enum {
-                  mid_init$_0fa09c18fee449d5,
-                  mid_addCodeBias_9c9697fec23db7de,
-                  mid_getCodeBias_017463b439db258e,
-                  mid_getCodeBiases_6f5a75ccd8c04465,
-                  mid_getNumberOfBiasesProcessed_570ce0828f81a2c1,
-                  mid_setNumberOfBiasesProcessed_99803b0791f320ff,
+                  mid_init$_0640e6acf969ed28,
+                  mid_addCodeBias_801fe9b6b70a536c,
+                  mid_getCodeBias_80df61932c3adcb9,
+                  mid_getCodeBiases_1e62c2f73fbdd1c4,
+                  mid_getNumberOfBiasesProcessed_412668abc8d889e9,
+                  mid_setNumberOfBiasesProcessed_a3da1a935cb37f7b,
                   max_mid
                 };
 

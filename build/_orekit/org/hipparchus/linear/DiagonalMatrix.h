@@ -3,25 +3,25 @@
 
 #include "org/hipparchus/linear/AbstractRealMatrix.h"
 
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class NullArgumentException;
       class MathIllegalArgumentException;
+      class NullArgumentException;
     }
     namespace linear {
       class DiagonalMatrix;
       class RealMatrix;
       class RealVector;
     }
+  }
+}
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -33,33 +33,33 @@ namespace org {
       class DiagonalMatrix : public ::org::hipparchus::linear::AbstractRealMatrix {
        public:
         enum {
-          mid_init$_fa9d415d19f69361,
-          mid_init$_99803b0791f320ff,
-          mid_init$_a47a33f7938e1575,
-          mid_add_7a737158a7bf2d27,
-          mid_addToEntry_1506189166690b5e,
-          mid_copy_688b496048ff947b,
-          mid_createMatrix_4410ec92987b66e9,
-          mid_getColumnDimension_570ce0828f81a2c1,
-          mid_getData_0358d8ea02f2cdb1,
-          mid_getDataRef_60c7040667a7dc5c,
-          mid_getEntry_dbbe5f05149dbf73,
-          mid_getRowDimension_570ce0828f81a2c1,
-          mid_inverse_c1458e35d8bd3b65,
-          mid_inverse_7e8ba41b8af4d349,
-          mid_isSingular_2e401133981893e4,
-          mid_multiply_7a737158a7bf2d27,
-          mid_multiply_e9b72403ad502221,
-          mid_multiplyEntry_1506189166690b5e,
-          mid_multiplyTransposed_7a737158a7bf2d27,
-          mid_multiplyTransposed_e9b72403ad502221,
-          mid_operate_ac3d742ccc742f22,
-          mid_preMultiply_ac3d742ccc742f22,
-          mid_preMultiply_613347e28dd909cd,
-          mid_setEntry_1506189166690b5e,
-          mid_subtract_7a737158a7bf2d27,
-          mid_transposeMultiply_7a737158a7bf2d27,
-          mid_transposeMultiply_e9b72403ad502221,
+          mid_init$_cc18240f4a737f14,
+          mid_init$_a3da1a935cb37f7b,
+          mid_init$_bdd4888f749f6b83,
+          mid_add_22eb29f902e0135d,
+          mid_addToEntry_754312f3734d6e2f,
+          mid_copy_70a207fcbc031df2,
+          mid_createMatrix_e8546415f980523f,
+          mid_getColumnDimension_412668abc8d889e9,
+          mid_getData_8cf5267aa13a77f3,
+          mid_getDataRef_a53a7513ecedada2,
+          mid_getEntry_21b81d54c06b64b0,
+          mid_getRowDimension_412668abc8d889e9,
+          mid_inverse_b1a245683de9728d,
+          mid_inverse_b27f94a2ca88181f,
+          mid_isSingular_dd69c3ab2404bb71,
+          mid_multiply_22eb29f902e0135d,
+          mid_multiply_340b47d21842d02c,
+          mid_multiplyEntry_754312f3734d6e2f,
+          mid_multiplyTransposed_22eb29f902e0135d,
+          mid_multiplyTransposed_340b47d21842d02c,
+          mid_operate_1db7c087750eaffe,
+          mid_preMultiply_1db7c087750eaffe,
+          mid_preMultiply_342d5b01463e0dc5,
+          mid_setEntry_754312f3734d6e2f,
+          mid_subtract_22eb29f902e0135d,
+          mid_transposeMultiply_22eb29f902e0135d,
+          mid_transposeMultiply_340b47d21842d02c,
           max_mid
         };
 

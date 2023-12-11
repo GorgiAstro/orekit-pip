@@ -6,15 +6,15 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      class Vector;
-      class Point;
-      class Space;
       namespace euclidean {
         namespace oned {
           class Euclidean1D;
           class Vector1D;
         }
       }
+      class Point;
+      class Space;
+      class Vector;
     }
   }
 }
@@ -38,39 +38,39 @@ namespace org {
           class Vector1D : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_17db3a65980d3441,
-              mid_init$_7757c3d40a86ae4d,
-              mid_init$_90fba1d39ff2c19f,
-              mid_init$_bb464d8a47dffde9,
-              mid_init$_6eba53664f74ff3a,
-              mid_add_b46f57fa6217d00f,
-              mid_add_733d0ab0dc2eba13,
-              mid_distance_07bb97c2794cf6b1,
-              mid_distance_e14b0b079d61a875,
-              mid_distance1_b4822d5266bca26e,
-              mid_distanceInf_b4822d5266bca26e,
-              mid_distanceInf_e14b0b079d61a875,
-              mid_distanceSq_b4822d5266bca26e,
-              mid_distanceSq_e14b0b079d61a875,
-              mid_dotProduct_b4822d5266bca26e,
-              mid_equals_65c7d273e80d497a,
-              mid_equalsIeee754_65c7d273e80d497a,
-              mid_getNorm_dff5885c2c873297,
-              mid_getNorm1_dff5885c2c873297,
-              mid_getNormInf_dff5885c2c873297,
-              mid_getNormSq_dff5885c2c873297,
-              mid_getSpace_ebbd6b2d39ab0e4f,
-              mid_getX_dff5885c2c873297,
-              mid_getZero_90d24faee21188ef,
-              mid_hashCode_570ce0828f81a2c1,
-              mid_isInfinite_b108b35ef48e27bd,
-              mid_isNaN_b108b35ef48e27bd,
-              mid_negate_90d24faee21188ef,
-              mid_scalarMultiply_45a3480a9fbf5253,
-              mid_subtract_b46f57fa6217d00f,
-              mid_subtract_733d0ab0dc2eba13,
-              mid_toString_11b109bd155ca898,
-              mid_toString_7b429db583278c20,
+              mid_init$_10f281d777284cea,
+              mid_init$_6660e0e219ae6305,
+              mid_init$_930cbfef52871ef4,
+              mid_init$_e450a5f39d2b7fe6,
+              mid_init$_7c81f54288af27f7,
+              mid_add_be3d5e0f525cd980,
+              mid_add_08732e6f726f426f,
+              mid_distance_cf1fec2b7b1c0efe,
+              mid_distance_6ca3078378362c71,
+              mid_distance1_b540ea36818b5810,
+              mid_distanceInf_b540ea36818b5810,
+              mid_distanceInf_6ca3078378362c71,
+              mid_distanceSq_b540ea36818b5810,
+              mid_distanceSq_6ca3078378362c71,
+              mid_dotProduct_b540ea36818b5810,
+              mid_equals_221e8e85cb385209,
+              mid_equalsIeee754_221e8e85cb385209,
+              mid_getNorm_557b8123390d8d0c,
+              mid_getNorm1_557b8123390d8d0c,
+              mid_getNormInf_557b8123390d8d0c,
+              mid_getNormSq_557b8123390d8d0c,
+              mid_getSpace_cf9410d213a7cbb9,
+              mid_getX_557b8123390d8d0c,
+              mid_getZero_466c0ad242ce3f41,
+              mid_hashCode_412668abc8d889e9,
+              mid_isInfinite_89b302893bdbe1f1,
+              mid_isNaN_89b302893bdbe1f1,
+              mid_negate_466c0ad242ce3f41,
+              mid_scalarMultiply_5dbe0d73eb008e74,
+              mid_subtract_be3d5e0f525cd980,
+              mid_subtract_08732e6f726f426f,
+              mid_toString_3cffd47377eca18a,
+              mid_toString_8d9667e91d8ffa97,
               max_mid
             };
 

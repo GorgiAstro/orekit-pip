@@ -37,14 +37,14 @@ namespace org {
               class Rtcm1042Data : public ::org::orekit::gnss::metric::messages::rtcm::ephemeris::RtcmEphemerisData {
                public:
                 enum {
-                  mid_init$_0fa09c18fee449d5,
-                  mid_getBeidouNavigationMessage_7791a588b5aa560f,
-                  mid_getBeidouNavigationMessage_f0e2be289a6a81c7,
-                  mid_getBeidouToc_dff5885c2c873297,
-                  mid_getSvHealth_dff5885c2c873297,
-                  mid_setBeidouNavigationMessage_68d319561ad57af5,
-                  mid_setBeidouToc_17db3a65980d3441,
-                  mid_setSvHealth_17db3a65980d3441,
+                  mid_init$_0640e6acf969ed28,
+                  mid_getBeidouNavigationMessage_006e221904e033c6,
+                  mid_getBeidouNavigationMessage_0da0f002b5100811,
+                  mid_getBeidouToc_557b8123390d8d0c,
+                  mid_getSvHealth_557b8123390d8d0c,
+                  mid_setBeidouNavigationMessage_b3ed48b5bc32689f,
+                  mid_setBeidouToc_10f281d777284cea,
+                  mid_setSvHealth_10f281d777284cea,
                   max_mid
                 };
 

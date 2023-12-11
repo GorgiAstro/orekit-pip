@@ -3,16 +3,16 @@
 
 #include "org/hipparchus/analysis/integration/BaseAbstractUnivariateIntegrator.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,10 +25,10 @@ namespace org {
         class TrapezoidIntegrator : public ::org::hipparchus::analysis::integration::BaseAbstractUnivariateIntegrator {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_init$_6f37635c3285dbdf,
-            mid_init$_1b5e9254fb70ca20,
-            mid_doIntegrate_dff5885c2c873297,
+            mid_init$_0640e6acf969ed28,
+            mid_init$_a84c9a223722150c,
+            mid_init$_8ceb2936471aec5d,
+            mid_doIntegrate_557b8123390d8d0c,
             max_mid
           };
 

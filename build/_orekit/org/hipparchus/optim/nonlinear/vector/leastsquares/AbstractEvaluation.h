@@ -37,13 +37,13 @@ namespace org {
             class AbstractEvaluation : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_99803b0791f320ff,
-                mid_getChiSquare_dff5885c2c873297,
-                mid_getCost_dff5885c2c873297,
-                mid_getCovariances_f21dcd9464c6e3c5,
-                mid_getRMS_dff5885c2c873297,
-                mid_getReducedChiSquare_46f85b53d9aedd96,
-                mid_getSigma_5df18376713b9c4f,
+                mid_init$_a3da1a935cb37f7b,
+                mid_getChiSquare_557b8123390d8d0c,
+                mid_getCost_557b8123390d8d0c,
+                mid_getCovariances_e95e381257af03e9,
+                mid_getRMS_557b8123390d8d0c,
+                mid_getReducedChiSquare_69cfb132c661aca4,
+                mid_getSigma_6041102868c92dbb,
                 max_mid
               };
 

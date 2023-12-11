@@ -25,10 +25,10 @@ namespace org {
       class SimpleBounds : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_e1f4b15468f5564a,
-          mid_getLower_60c7040667a7dc5c,
-          mid_getUpper_60c7040667a7dc5c,
-          mid_unbounded_03b3e79eff942963,
+          mid_init$_ab4840ba016ef1da,
+          mid_getLower_a53a7513ecedada2,
+          mid_getUpper_a53a7513ecedada2,
+          mid_unbounded_b6474a35bb12cf70,
           max_mid
         };
 

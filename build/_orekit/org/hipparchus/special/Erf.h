@@ -3,14 +3,14 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -22,16 +22,16 @@ namespace org {
       class Erf : public ::java::lang::Object {
        public:
         enum {
-          mid_erf_dcbc7ce2902fa136,
-          mid_erf_a4b1871f4d29e58b,
-          mid_erf_86ffecc08a63eff0,
-          mid_erf_6746cc1cd9210d54,
-          mid_erfInv_dcbc7ce2902fa136,
-          mid_erfInv_a4b1871f4d29e58b,
-          mid_erfc_dcbc7ce2902fa136,
-          mid_erfc_a4b1871f4d29e58b,
-          mid_erfcInv_dcbc7ce2902fa136,
-          mid_erfcInv_a4b1871f4d29e58b,
+          mid_erf_7e960cd6eee376d8,
+          mid_erf_6672ad854985cb64,
+          mid_erf_2268d18be49a6087,
+          mid_erf_d5f58731bcb8a011,
+          mid_erfInv_7e960cd6eee376d8,
+          mid_erfInv_6672ad854985cb64,
+          mid_erfc_7e960cd6eee376d8,
+          mid_erfc_6672ad854985cb64,
+          mid_erfcInv_7e960cd6eee376d8,
+          mid_erfcInv_6672ad854985cb64,
           max_mid
         };
 

@@ -7,12 +7,12 @@ namespace org {
   namespace orekit {
     namespace frames {
       class TransformProvider;
-      class FieldTransform;
       class Transform;
+      class FieldTransform;
     }
     namespace time {
-      class AbsoluteDate;
       class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
   }
 }
@@ -30,9 +30,9 @@ namespace org {
       class FixedTransformProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_9bbe3b825fc9db52,
-          mid_getTransform_687985c59478d29c,
-          mid_getTransform_f7bf3269025b86c3,
+          mid_init$_6eb86d2b2bbcc346,
+          mid_getTransform_df04e3927954349e,
+          mid_getTransform_e70631ba002d9a32,
           max_mid
         };
 

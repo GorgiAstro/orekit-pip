@@ -7,10 +7,10 @@ namespace org {
   namespace hipparchus {
     namespace stat {
       namespace descriptive {
-        class AggregatableStatistic;
         namespace moment {
           class SecondMoment;
         }
+        class AggregatableStatistic;
       }
     }
   }
@@ -31,12 +31,12 @@ namespace org {
           class SecondMoment : public ::org::hipparchus::stat::descriptive::moment::FirstMoment {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_aggregate_7d2491dc61f6c936,
-              mid_clear_0fa09c18fee449d5,
-              mid_copy_f10a88f3e717b4d8,
-              mid_getResult_dff5885c2c873297,
-              mid_increment_17db3a65980d3441,
+              mid_init$_0640e6acf969ed28,
+              mid_aggregate_b42241ac9de9fb3c,
+              mid_clear_0640e6acf969ed28,
+              mid_copy_c2d7ba6b29d60a37,
+              mid_getResult_557b8123390d8d0c,
+              mid_increment_10f281d777284cea,
               max_mid
             };
 

@@ -9,26 +9,26 @@ namespace org {
       namespace maneuvers {
         namespace trigger {
           class FieldManeuverTriggersResetter;
-          class ManeuverTriggersResetter;
           class ManeuverTriggers;
+          class ManeuverTriggersResetter;
         }
       }
+    }
+    namespace utils {
+      class TimeSpanMap;
     }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
-    namespace utils {
-      class TimeSpanMap;
-    }
     namespace time {
-      class AbsoluteDate;
       class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
   }
   namespace hipparchus {
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -48,20 +48,20 @@ namespace org {
           class AbstractManeuverTriggers : public ::java::lang::Object {
            public:
             enum {
-              mid_addResetter_a16797fae59e88ec,
-              mid_addResetter_e53773d2404dc858,
-              mid_getFirings_62c7757711639c83,
-              mid_init_8e8de2be1664674a,
-              mid_init_826b4eda94da4e78,
-              mid_isFiring_785ace4124d89120,
-              mid_isFiring_89b940ef53c9a82d,
-              mid_initializeResetters_826b4eda94da4e78,
-              mid_initializeResetters_8e8de2be1664674a,
-              mid_notifyResetters_33f4696e4edaa03c,
-              mid_notifyResetters_33f1c56ea7775d4e,
-              mid_applyResetters_f43130c50e9fafeb,
-              mid_applyResetters_25e81e971666cba6,
-              mid_isFiringOnInitialState_6501154ab0a356a8,
+              mid_addResetter_6c2e9e35ba95043d,
+              mid_addResetter_17259cc5ef51ebf7,
+              mid_getFirings_d26bd874ee319049,
+              mid_init_811e49dad2467b67,
+              mid_init_0472264ad6f40bc2,
+              mid_isFiring_cf913265ec3c3fe7,
+              mid_isFiring_7ccb736f2a8bfc30,
+              mid_initializeResetters_0472264ad6f40bc2,
+              mid_initializeResetters_811e49dad2467b67,
+              mid_notifyResetters_585702d5a402c590,
+              mid_notifyResetters_45bf76e836befe86,
+              mid_applyResetters_2c4cc16b11f79a6c,
+              mid_applyResetters_4f12774dd382c6f4,
+              mid_isFiringOnInitialState_1e4c79a00429445e,
               max_mid
             };
 

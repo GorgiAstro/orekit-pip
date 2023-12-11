@@ -5,27 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      class StateCovariance;
-      class FieldStateCovariance;
-    }
-    namespace ssa {
-      namespace collision {
-        namespace shorttermencounter {
-          namespace probability {
-            namespace twod {
-              class ShortTermEncounter2DDefinition;
-              class FieldShortTermEncounter2DDefinition;
-              class ShortTermEncounter2DPOCMethodType;
-            }
-          }
-        }
-      }
-      namespace metrics {
-        class FieldProbabilityOfCollision;
-        class ProbabilityOfCollision;
-      }
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -34,6 +13,27 @@ namespace org {
           }
         }
       }
+    }
+    namespace ssa {
+      namespace metrics {
+        class FieldProbabilityOfCollision;
+        class ProbabilityOfCollision;
+      }
+      namespace collision {
+        namespace shorttermencounter {
+          namespace probability {
+            namespace twod {
+              class ShortTermEncounter2DPOCMethodType;
+              class FieldShortTermEncounter2DDefinition;
+              class ShortTermEncounter2DDefinition;
+            }
+          }
+        }
+      }
+    }
+    namespace propagation {
+      class FieldStateCovariance;
+      class StateCovariance;
     }
     namespace orbits {
       class Orbit;
@@ -63,26 +63,26 @@ namespace org {
               class ShortTermEncounter2DPOCMethod : public ::java::lang::Object {
                public:
                 enum {
-                  mid_compute_2664b980701fb17f,
-                  mid_compute_1c0b9804a37c5224,
-                  mid_compute_7ed362902ba10174,
-                  mid_compute_163599a09fd03091,
-                  mid_compute_4d249761aa92e117,
-                  mid_compute_091f0943f3979390,
-                  mid_compute_0de76eb60c6db62c,
-                  mid_compute_44d723598fb6a077,
-                  mid_compute_76485a46079dea66,
-                  mid_compute_2dd8f4edd2a65fcf,
-                  mid_compute_08528402ae0ec62a,
-                  mid_compute_184c2f4ec5889c74,
-                  mid_compute_0ed38e7bbee7fafc,
-                  mid_compute_77dbe9f2fcda2496,
-                  mid_compute_dc121e1e9d39c98c,
-                  mid_compute_ac385b194fca344b,
-                  mid_compute_1c26d4a5b9c10569,
-                  mid_getName_11b109bd155ca898,
-                  mid_getType_5d7ecb27bb5e3bc3,
-                  mid_isAMaximumProbabilityOfCollisionMethod_b108b35ef48e27bd,
+                  mid_compute_52ac86180af0fc38,
+                  mid_compute_a8ad2b5fdf7c89e9,
+                  mid_compute_7917f8d0fe4dcee2,
+                  mid_compute_fe2c8257e3a1171e,
+                  mid_compute_5bd7443246955087,
+                  mid_compute_d4afe7edfd93d28b,
+                  mid_compute_62e67021055b4b34,
+                  mid_compute_54a027380ebb9f4f,
+                  mid_compute_d7ca5925933c6d49,
+                  mid_compute_b1728d2759e16f6b,
+                  mid_compute_5478b75e08765b46,
+                  mid_compute_ddf22cd33bfe153c,
+                  mid_compute_8d09da96ce925a0b,
+                  mid_compute_51013759c7807d3e,
+                  mid_compute_ca5c6c5a7bbee06f,
+                  mid_compute_38f8ce8ca31e24a9,
+                  mid_compute_0fff86b0133b54f7,
+                  mid_getName_3cffd47377eca18a,
+                  mid_getType_4b8bf2bb84f7480e,
+                  mid_isAMaximumProbabilityOfCollisionMethod_89b302893bdbe1f1,
                   max_mid
                 };
 

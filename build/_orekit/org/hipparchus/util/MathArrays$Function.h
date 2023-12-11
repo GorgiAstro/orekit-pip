@@ -17,8 +17,8 @@ namespace org {
       class MathArrays$Function : public ::java::lang::Object {
        public:
         enum {
-          mid_evaluate_9dc1ec0bcc0a9a29,
-          mid_evaluate_556bede10daac330,
+          mid_evaluate_86c4a0582e0747ce,
+          mid_evaluate_9eeeb1ae977f525d,
           max_mid
         };
 

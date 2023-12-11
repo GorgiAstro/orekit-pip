@@ -3,14 +3,23 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace io {
+    class IOException;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
         namespace ndm {
+          class WriterBuilder;
           class NdmConstituent;
           class Ndm;
-          class WriterBuilder;
         }
         namespace utils {
           namespace generation {
@@ -19,15 +28,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -41,10 +41,10 @@ namespace org {
           class NdmWriter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_699707fca779db0b,
-              mid_writeComment_dd2e2df417b602ab,
-              mid_writeConstituent_0998ca77618694ad,
-              mid_writeMessage_1f6f6f587e5afd97,
+              mid_init$_b100e6078d2dd78d,
+              mid_writeComment_39c06d862a52ffa0,
+              mid_writeConstituent_f246fa1b4daafa07,
+              mid_writeMessage_b795c6a8fe11be54,
               max_mid
             };
 

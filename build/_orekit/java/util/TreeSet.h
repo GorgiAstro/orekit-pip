@@ -7,9 +7,9 @@ namespace java {
   namespace util {
     class Iterator;
     class Comparator;
-    class Collection;
     class Spliterator;
     class SortedSet;
+    class Collection;
     class NavigableSet;
   }
   namespace io {
@@ -29,37 +29,37 @@ namespace java {
     class TreeSet : public ::java::util::AbstractSet {
      public:
       enum {
-        mid_init$_0fa09c18fee449d5,
-        mid_init$_f72f53318f80c525,
-        mid_init$_aba33752f2449599,
-        mid_init$_5794fd067b349f51,
-        mid_add_65c7d273e80d497a,
-        mid_addAll_17e918edc999b3c7,
-        mid_ceiling_9facd1449e0950d3,
-        mid_clear_0fa09c18fee449d5,
-        mid_clone_4d26fd885228c716,
-        mid_comparator_96e45e3694fbbb22,
-        mid_contains_65c7d273e80d497a,
-        mid_descendingIterator_4d23511a9f0db098,
-        mid_descendingSet_024b2fed0d07125f,
-        mid_first_4d26fd885228c716,
-        mid_floor_9facd1449e0950d3,
-        mid_headSet_c07cc04010820225,
-        mid_headSet_3998b1c856c6bc87,
-        mid_higher_9facd1449e0950d3,
-        mid_isEmpty_b108b35ef48e27bd,
-        mid_iterator_4d23511a9f0db098,
-        mid_last_4d26fd885228c716,
-        mid_lower_9facd1449e0950d3,
-        mid_pollFirst_4d26fd885228c716,
-        mid_pollLast_4d26fd885228c716,
-        mid_remove_65c7d273e80d497a,
-        mid_size_570ce0828f81a2c1,
-        mid_spliterator_ef1070394b413a84,
-        mid_subSet_91c93627253b416a,
-        mid_subSet_8a24c3c47a25901f,
-        mid_tailSet_c07cc04010820225,
-        mid_tailSet_3998b1c856c6bc87,
+        mid_init$_0640e6acf969ed28,
+        mid_init$_3abde0be9b9c9773,
+        mid_init$_349032d04af23bed,
+        mid_init$_dd1a69b50abe9a6d,
+        mid_add_221e8e85cb385209,
+        mid_addAll_15ecf331dcc5aaf3,
+        mid_ceiling_65d69db95c5eb156,
+        mid_clear_0640e6acf969ed28,
+        mid_clone_e661fe3ba2fafb22,
+        mid_comparator_b0b551d4a54c7150,
+        mid_contains_221e8e85cb385209,
+        mid_descendingIterator_834a3801c426326d,
+        mid_descendingSet_0617a74a450b6c8d,
+        mid_first_e661fe3ba2fafb22,
+        mid_floor_65d69db95c5eb156,
+        mid_headSet_3ca4ace183d6efe9,
+        mid_headSet_b83c282998266525,
+        mid_higher_65d69db95c5eb156,
+        mid_isEmpty_89b302893bdbe1f1,
+        mid_iterator_834a3801c426326d,
+        mid_last_e661fe3ba2fafb22,
+        mid_lower_65d69db95c5eb156,
+        mid_pollFirst_e661fe3ba2fafb22,
+        mid_pollLast_e661fe3ba2fafb22,
+        mid_remove_221e8e85cb385209,
+        mid_size_412668abc8d889e9,
+        mid_spliterator_0a89e3b18808f850,
+        mid_subSet_ba202d431ff51666,
+        mid_subSet_95b7fdef68d2eb53,
+        mid_tailSet_3ca4ace183d6efe9,
+        mid_tailSet_b83c282998266525,
         max_mid
       };
 

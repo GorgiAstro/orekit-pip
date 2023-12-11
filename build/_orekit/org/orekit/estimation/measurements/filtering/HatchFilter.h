@@ -23,18 +23,18 @@ namespace org {
           class HatchFilter : public ::java::lang::Object {
            public:
             enum {
-              mid_addToCodeHistory_17db3a65980d3441,
-              mid_addToSmoothedCodeHistory_17db3a65980d3441,
-              mid_getCodeHistory_d91fa6c7b6ddeaae,
-              mid_getSmoothedCodeHistory_d91fa6c7b6ddeaae,
-              mid_getThreshold_dff5885c2c873297,
-              mid_resetFilterNext_17db3a65980d3441,
-              mid_updatePreviousSmoothedCode_17db3a65980d3441,
-              mid_updatePreviousSmoothingValue_17db3a65980d3441,
-              mid_smoothedCode_86ffecc08a63eff0,
-              mid_checkValidData_9df09399397f756e,
-              mid_resetNextBoolean_0fa09c18fee449d5,
-              mid_resetK_0fa09c18fee449d5,
+              mid_addToCodeHistory_10f281d777284cea,
+              mid_addToSmoothedCodeHistory_10f281d777284cea,
+              mid_getCodeHistory_897d94db124f72e1,
+              mid_getSmoothedCodeHistory_897d94db124f72e1,
+              mid_getThreshold_557b8123390d8d0c,
+              mid_resetFilterNext_10f281d777284cea,
+              mid_updatePreviousSmoothedCode_10f281d777284cea,
+              mid_updatePreviousSmoothingValue_10f281d777284cea,
+              mid_resetNextBoolean_0640e6acf969ed28,
+              mid_resetK_0640e6acf969ed28,
+              mid_smoothedCode_2268d18be49a6087,
+              mid_checkValidData_ef17307f2586a186,
               max_mid
             };
 

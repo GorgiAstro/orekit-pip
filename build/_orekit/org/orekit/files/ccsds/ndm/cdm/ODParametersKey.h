@@ -15,8 +15,8 @@ namespace org {
         }
         namespace ndm {
           namespace cdm {
-            class ODParameters;
             class ODParametersKey;
+            class ODParameters;
           }
         }
       }
@@ -41,9 +41,9 @@ namespace org {
             class ODParametersKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_3c0f9f6727df314d,
-                mid_valueOf_68da3827ece4c36a,
-                mid_values_5b2dff51eb53745d,
+                mid_process_c70b16095465b4c7,
+                mid_valueOf_622a00e4c0322e6c,
+                mid_values_7bae0afa23732d36,
                 max_mid
               };
 

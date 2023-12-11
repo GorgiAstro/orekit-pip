@@ -5,13 +5,13 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace rugged {
       namespace linesensor {
         class LineSensor;
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -39,8 +39,8 @@ namespace org {
         class SensorPixelCrossing : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_c85520b8b5986ef0,
-            mid_locatePixel_bf1d7732f1acb697,
+            mid_init$_f4fc95bc6bb270ba,
+            mid_locatePixel_b0b988f941da47d8,
             max_mid
           };
 

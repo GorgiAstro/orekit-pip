@@ -32,17 +32,17 @@ namespace org {
         class SmoothStepFactory : public ::java::lang::Object {
          public:
           enum {
-            mid_checkBetweenZeroAndOneIncluded_17db3a65980d3441,
-            mid_getClamp_f18ca541c854e890,
-            mid_getClamp_538040519eb9f486,
-            mid_getCubic_f18ca541c854e890,
-            mid_getCubic_538040519eb9f486,
-            mid_getFieldGeneralOrder_60e4224851f2b09a,
-            mid_getGeneralOrder_482197413efde1be,
-            mid_getQuadratic_f18ca541c854e890,
-            mid_getQuadratic_538040519eb9f486,
-            mid_getQuintic_f18ca541c854e890,
-            mid_getQuintic_538040519eb9f486,
+            mid_checkBetweenZeroAndOneIncluded_10f281d777284cea,
+            mid_getClamp_eedc0df51e79adef,
+            mid_getClamp_0b6c279ce81f402f,
+            mid_getCubic_eedc0df51e79adef,
+            mid_getCubic_0b6c279ce81f402f,
+            mid_getFieldGeneralOrder_cb2318af5f79fd6a,
+            mid_getGeneralOrder_f63e16b76ec0adac,
+            mid_getQuadratic_eedc0df51e79adef,
+            mid_getQuadratic_0b6c279ce81f402f,
+            mid_getQuintic_eedc0df51e79adef,
+            mid_getQuintic_0b6c279ce81f402f,
             max_mid
           };
 

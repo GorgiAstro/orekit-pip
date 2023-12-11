@@ -4,11 +4,20 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class Position;
         class PV;
+        class Position;
       }
     }
     namespace frames {
@@ -19,15 +28,6 @@ namespace org {
     }
     namespace orbits {
       class Orbit;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
     }
   }
 }
@@ -46,10 +46,10 @@ namespace org {
         class IodGibbs : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_17db3a65980d3441,
-            mid_estimate_572a07e48137f16a,
-            mid_estimate_33ef19f1b7699b20,
-            mid_estimate_baa50281755c23af,
+            mid_init$_10f281d777284cea,
+            mid_estimate_57c86ae6f9301614,
+            mid_estimate_09f96a1482d9ef74,
+            mid_estimate_a8afbd382f279a22,
             max_mid
           };
 

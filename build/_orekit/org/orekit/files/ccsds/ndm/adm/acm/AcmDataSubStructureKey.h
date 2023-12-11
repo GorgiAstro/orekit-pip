@@ -15,8 +15,8 @@ namespace org {
         namespace ndm {
           namespace adm {
             namespace acm {
-              class AcmParser;
               class AcmDataSubStructureKey;
+              class AcmParser;
             }
           }
         }
@@ -43,9 +43,9 @@ namespace org {
               class AcmDataSubStructureKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_3c68c849d0a293e9,
-                  mid_valueOf_f37fca85579f67e0,
-                  mid_values_5ef48a5bbc8d8ce7,
+                  mid_process_318bdda3c4276f03,
+                  mid_valueOf_6e5812972d939fcb,
+                  mid_values_706b0ea4d837aa33,
                   max_mid
                 };
 

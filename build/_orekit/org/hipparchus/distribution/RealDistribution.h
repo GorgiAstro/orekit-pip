@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,16 +24,16 @@ namespace org {
       class RealDistribution : public ::java::lang::Object {
        public:
         enum {
-          mid_cumulativeProbability_dcbc7ce2902fa136,
-          mid_density_dcbc7ce2902fa136,
-          mid_getNumericalMean_dff5885c2c873297,
-          mid_getNumericalVariance_dff5885c2c873297,
-          mid_getSupportLowerBound_dff5885c2c873297,
-          mid_getSupportUpperBound_dff5885c2c873297,
-          mid_inverseCumulativeProbability_dcbc7ce2902fa136,
-          mid_isSupportConnected_b108b35ef48e27bd,
-          mid_logDensity_dcbc7ce2902fa136,
-          mid_probability_86ffecc08a63eff0,
+          mid_cumulativeProbability_7e960cd6eee376d8,
+          mid_density_7e960cd6eee376d8,
+          mid_getNumericalMean_557b8123390d8d0c,
+          mid_getNumericalVariance_557b8123390d8d0c,
+          mid_getSupportLowerBound_557b8123390d8d0c,
+          mid_getSupportUpperBound_557b8123390d8d0c,
+          mid_inverseCumulativeProbability_7e960cd6eee376d8,
+          mid_isSupportConnected_89b302893bdbe1f1,
+          mid_logDensity_7e960cd6eee376d8,
+          mid_probability_2268d18be49a6087,
           max_mid
         };
 

@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathIllegalStateException;
       class MathIllegalArgumentException;
+      class MathIllegalStateException;
     }
   }
 }
@@ -26,7 +26,7 @@ namespace org {
       class NamedParameterJacobianProvider : public ::org::hipparchus::ode::Parameterizable {
        public:
         enum {
-          mid_computeParameterJacobian_471a10a7837f0228,
+          mid_computeParameterJacobian_b987435e157df371,
           max_mid
         };
 

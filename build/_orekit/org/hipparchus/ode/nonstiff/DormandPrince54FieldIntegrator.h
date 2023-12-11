@@ -3,15 +3,15 @@
 
 #include "org/hipparchus/ode/nonstiff/EmbeddedRungeKuttaFieldIntegrator.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
     class Field;
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,14 +24,14 @@ namespace org {
         class DormandPrince54FieldIntegrator : public ::org::hipparchus::ode::nonstiff::EmbeddedRungeKuttaFieldIntegrator {
          public:
           enum {
-            mid_init$_4a2c9513f4a7704d,
-            mid_init$_6d182549447f82d8,
-            mid_getA_1b3ae884bec31e6d,
-            mid_getB_226a0b2040b1d2e1,
-            mid_getC_226a0b2040b1d2e1,
-            mid_getOrder_570ce0828f81a2c1,
-            mid_createInterpolator_8da11934ae871d4c,
-            mid_estimateError_f7f77a3e7e765297,
+            mid_init$_4879aa54fb0b4b90,
+            mid_init$_f2e08e06cc4e8e8d,
+            mid_getA_f180d140dce78d62,
+            mid_getB_41762fd4377ff26e,
+            mid_getC_41762fd4377ff26e,
+            mid_getOrder_412668abc8d889e9,
+            mid_estimateError_db5b00c957704bb3,
+            mid_createInterpolator_8a5005e52d76084e,
             max_mid
           };
 

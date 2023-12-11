@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
       class SpacecraftState;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,7 +25,7 @@ namespace org {
         class StateTransitionMatrixGenerator$PartialsObserver : public ::java::lang::Object {
          public:
           enum {
-            mid_partialsComputed_747d586861d6528b,
+            mid_partialsComputed_c6e78d5a2304799f,
             max_mid
           };
 

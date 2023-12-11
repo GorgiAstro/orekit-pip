@@ -31,9 +31,9 @@ namespace org {
         class LinearConstraintSet : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_9593a64b2533d7fd,
-            mid_init$_f72f53318f80c525,
-            mid_getConstraints_37528d110cff6b74,
+            mid_init$_c3f07fb0fd6d2519,
+            mid_init$_3abde0be9b9c9773,
+            mid_getConstraints_12ee61573a18f417,
             max_mid
           };
 

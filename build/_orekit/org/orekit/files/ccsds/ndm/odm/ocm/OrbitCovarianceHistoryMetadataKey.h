@@ -44,9 +44,9 @@ namespace org {
               class OrbitCovarianceHistoryMetadataKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_138c68d2746c1c8e,
-                  mid_valueOf_45008e387ae525fc,
-                  mid_values_279f60f4984908a7,
+                  mid_process_09eafc6941d7bef7,
+                  mid_valueOf_68e5ab106f806138,
+                  mid_values_fecf9ca8ab6cb863,
                   max_mid
                 };
 

@@ -12,12 +12,12 @@ namespace org {
         }
       }
     }
-    namespace gnss {
-      class SatInSystem;
-    }
     namespace time {
       class AbsoluteDate;
       class TimeStamped;
+    }
+    namespace gnss {
+      class SatInSystem;
     }
   }
 }
@@ -40,12 +40,12 @@ namespace org {
           class ObservationDataSet : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_3617e5a957fde8c1,
-              mid_getDate_85703d13e302437e,
-              mid_getEventFlag_570ce0828f81a2c1,
-              mid_getObservationData_2afa36052df4765d,
-              mid_getRcvrClkOffset_dff5885c2c873297,
-              mid_getSatellite_7c0ce8c834d2e72b,
+              mid_init$_19dd1c22de000ada,
+              mid_getDate_7a97f7e149e79afb,
+              mid_getEventFlag_412668abc8d889e9,
+              mid_getObservationData_0d9551367f7ecdef,
+              mid_getRcvrClkOffset_557b8123390d8d0c,
+              mid_getSatellite_c5291c85b38fda6b,
               max_mid
             };
 

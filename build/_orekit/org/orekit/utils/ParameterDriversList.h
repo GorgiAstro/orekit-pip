@@ -15,8 +15,8 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace utils {
-      class ParameterDriver;
       class ParameterDriversList$DelegatingDriver;
+      class ParameterDriver;
     }
   }
 }
@@ -29,15 +29,15 @@ namespace org {
       class ParameterDriversList : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0fa09c18fee449d5,
-          mid_add_01a5c4b8230d6f04,
-          mid_filter_bd04c9335fb9e4cf,
-          mid_findByName_01949d6c54d4d229,
-          mid_findDelegatingSpanNameBySpanName_92807efd57acb082,
-          mid_getDrivers_2afa36052df4765d,
-          mid_getNbParams_570ce0828f81a2c1,
-          mid_getNbValuesToEstimate_570ce0828f81a2c1,
-          mid_sort_0fa09c18fee449d5,
+          mid_init$_0640e6acf969ed28,
+          mid_add_558cfe74a49f563f,
+          mid_filter_ed2afdb8506b9742,
+          mid_findByName_2cfe42bb060aed43,
+          mid_findDelegatingSpanNameBySpanName_60bb1b490b673cbf,
+          mid_getDrivers_0d9551367f7ecdef,
+          mid_getNbParams_412668abc8d889e9,
+          mid_getNbValuesToEstimate_412668abc8d889e9,
+          mid_sort_0640e6acf969ed28,
           max_mid
         };
 

@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -14,26 +13,27 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
     class Field;
   }
   namespace orekit {
     namespace propagation {
-      class FieldSpacecraftState;
       namespace numerical {
         class FieldTimeDerivativesEquations;
         class TimeDerivativesEquations;
       }
+      class FieldSpacecraftState;
       class SpacecraftState;
     }
-    namespace forces {
-      class ForceModel;
-    }
     namespace time {
-      class AbsoluteDate;
       class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
     namespace utils {
       class ParameterDriver;
+    }
+    namespace forces {
+      class ForceModel;
     }
   }
 }
@@ -56,15 +56,15 @@ namespace org {
         class NewtonianAttraction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_17db3a65980d3441,
-            mid_acceleration_b42ac4b5bfb80fab,
-            mid_acceleration_8954761face5e1a7,
-            mid_addContribution_5852b6ea0a71dcb4,
-            mid_addContribution_9d1574df69c5f1ff,
-            mid_dependsOnPositionOnly_b108b35ef48e27bd,
-            mid_getMu_bf1d7732f1acb697,
-            mid_getMu_cbbccee8cfc483ca,
-            mid_getParametersDrivers_2afa36052df4765d,
+            mid_init$_10f281d777284cea,
+            mid_acceleration_b61fb59a041240c6,
+            mid_acceleration_61944e27a39e8290,
+            mid_addContribution_0f28031d74393af0,
+            mid_addContribution_9ecc165cc3358de0,
+            mid_dependsOnPositionOnly_89b302893bdbe1f1,
+            mid_getMu_b0b988f941da47d8,
+            mid_getMu_81cbf1832c7c6864,
+            mid_getParametersDrivers_0d9551367f7ecdef,
             max_mid
           };
 

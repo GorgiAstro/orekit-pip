@@ -11,17 +11,17 @@ namespace org {
       }
       class SpacecraftState;
     }
+    namespace forces {
+      namespace maneuvers {
+        class ImpulseManeuver;
+        class Control3DVectorCostType;
+      }
+    }
     namespace time {
       class AbsoluteDate;
     }
     namespace attitudes {
       class AttitudeProvider;
-    }
-    namespace forces {
-      namespace maneuvers {
-        class Control3DVectorCostType;
-        class ImpulseManeuver;
-      }
     }
   }
   namespace hipparchus {
@@ -49,17 +49,17 @@ namespace org {
         class ImpulseManeuver : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_33ff2531f6afe54b,
-            mid_init$_6e35dd1e707d55ce,
-            mid_init$_d5a1eb9188b4db60,
-            mid_g_432f3d328c15ec82,
-            mid_getAttitudeOverride_a904f3d015a354a0,
-            mid_getControl3DVectorCostType_67739b20d9566a8c,
-            mid_getDeltaVSat_d52645e0d4c07563,
-            mid_getIsp_dff5885c2c873297,
-            mid_getTrigger_d73bb985ffde4156,
-            mid_init_826b4eda94da4e78,
-            mid_create_6b5d818a71042d92,
+            mid_init$_a72590358f93cd86,
+            mid_init$_63188daf92eb3db6,
+            mid_init$_165edace01f52664,
+            mid_g_1bbf81d80c47ecdd,
+            mid_getAttitudeOverride_6df6b78ab9377151,
+            mid_getControl3DVectorCostType_601f05e5d0c82ad9,
+            mid_getDeltaVSat_f88961cca75a2c0a,
+            mid_getIsp_557b8123390d8d0c,
+            mid_getTrigger_0701b00b25822fff,
+            mid_init_0472264ad6f40bc2,
+            mid_create_3ed87803c90c6b84,
             max_mid
           };
 

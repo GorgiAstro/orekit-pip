@@ -10,6 +10,9 @@ namespace org {
         class PropagatorBuilder;
       }
     }
+    namespace utils {
+      class ParameterDriversList;
+    }
     namespace estimation {
       namespace sequential {
         class UnscentedKalmanEstimator;
@@ -17,16 +20,13 @@ namespace org {
         class CovarianceMatrixProvider;
       }
     }
-    namespace utils {
-      class ParameterDriversList;
-    }
   }
   namespace hipparchus {
-    namespace util {
-      class UnscentedTransformProvider;
-    }
     namespace linear {
       class MatrixDecomposer;
+    }
+    namespace util {
+      class UnscentedTransformProvider;
     }
   }
 }
@@ -45,12 +45,12 @@ namespace org {
         class UnscentedKalmanEstimatorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_addPropagationConfiguration_4f0222b06fa4311a,
-            mid_build_a5b48003a865cd83,
-            mid_decomposer_e93e2b79e62135b3,
-            mid_estimatedMeasurementsParameters_a8e81bedebfdb55c,
-            mid_unscentedTransformProvider_a5c354e7e08b95e2,
+            mid_init$_0640e6acf969ed28,
+            mid_addPropagationConfiguration_910d9b705ae177cf,
+            mid_build_99c6e345eb94588e,
+            mid_decomposer_d9ee1fe18fb8546c,
+            mid_estimatedMeasurementsParameters_8c50f82de329d511,
+            mid_unscentedTransformProvider_961c88377e177f40,
             max_mid
           };
 

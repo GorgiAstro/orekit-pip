@@ -6,23 +6,23 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      class Vector;
-      namespace partitioning {
-        class Embedding;
-      }
-      class Point;
       namespace euclidean {
-        namespace threed {
-          class SubLine;
-          class Vector3D;
-          class Line;
-          class Euclidean3D;
-        }
         namespace oned {
           class Euclidean1D;
           class Vector1D;
         }
+        namespace threed {
+          class Line;
+          class Vector3D;
+          class Euclidean3D;
+          class SubLine;
+        }
       }
+      class Point;
+      namespace partitioning {
+        class Embedding;
+      }
+      class Vector;
     }
     namespace exception {
       class MathIllegalArgumentException;
@@ -45,26 +45,26 @@ namespace org {
           class Line : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_5da06482a46416aa,
-              mid_closestPoint_cdaae38017a00464,
-              mid_contains_ab4ed00ccf0defd6,
-              mid_distance_e41f841ed79f933c,
-              mid_distance_bf473e7c74e5ce2b,
-              mid_fromDirection_b436cebd67c93f56,
-              mid_getAbscissa_bf473e7c74e5ce2b,
-              mid_getDirection_d52645e0d4c07563,
-              mid_getOrigin_d52645e0d4c07563,
-              mid_getTolerance_dff5885c2c873297,
-              mid_intersection_cdaae38017a00464,
-              mid_isSimilarTo_6639e54dacc07051,
-              mid_pointAt_9137bba253a33d9c,
-              mid_reset_8f7d2a24ef2ff591,
-              mid_revert_9fb9cdc35bfe2f74,
-              mid_toSpace_25054c2060d7aee4,
-              mid_toSpace_84b1343e67eeaa7b,
-              mid_toSubSpace_d43a3b6426dc1754,
-              mid_toSubSpace_b46f57fa6217d00f,
-              mid_wholeLine_a538b105c8caf09b,
+              mid_init$_8a3775c012d81228,
+              mid_closestPoint_915d07ea0c621755,
+              mid_contains_7ccf3b3f40d5fcd3,
+              mid_distance_4aa316f686c1a1eb,
+              mid_distance_8ddca7bd73e586da,
+              mid_fromDirection_d19a50c1011094cf,
+              mid_getAbscissa_8ddca7bd73e586da,
+              mid_getDirection_f88961cca75a2c0a,
+              mid_getOrigin_f88961cca75a2c0a,
+              mid_getTolerance_557b8123390d8d0c,
+              mid_intersection_915d07ea0c621755,
+              mid_isSimilarTo_78ea6c7fe91873db,
+              mid_pointAt_20de5f9d51c6611f,
+              mid_reset_be9548a8a583a03d,
+              mid_revert_50dd992767fffc25,
+              mid_toSpace_78d94b5fd2b1ad0c,
+              mid_toSpace_5d6b94fad5d111c4,
+              mid_toSubSpace_42ff1f7fd4bd45c4,
+              mid_toSubSpace_be3d5e0f525cd980,
+              mid_wholeLine_40fe3d99fdc690cd,
               max_mid
             };
 

@@ -15,11 +15,11 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace gnss {
       class Frequency;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -34,10 +34,10 @@ namespace org {
           class CycleSlipDetectorResults : public ::java::lang::Object {
            public:
             enum {
-              mid_getBeginDate_d36ded8f0487ea65,
-              mid_getCycleSlipMap_6f5a75ccd8c04465,
-              mid_getEndDate_d36ded8f0487ea65,
-              mid_getSatelliteName_11b109bd155ca898,
+              mid_getBeginDate_b36855b8e31e5f05,
+              mid_getCycleSlipMap_1e62c2f73fbdd1c4,
+              mid_getEndDate_b36855b8e31e5f05,
+              mid_getSatelliteName_3cffd47377eca18a,
               max_mid
             };
 

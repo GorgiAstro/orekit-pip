@@ -20,7 +20,7 @@ namespace org {
             class Preconditioner : public ::java::lang::Object {
              public:
               enum {
-                mid_precondition_96bbba26ca51c0d1,
+                mid_precondition_d2593442847fe350,
                 max_mid
               };
 

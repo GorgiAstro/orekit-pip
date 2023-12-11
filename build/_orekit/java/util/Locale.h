@@ -5,14 +5,14 @@
 
 namespace java {
   namespace util {
-    class Locale$LanguageRange;
     class Locale;
     class List;
     class Locale$IsoCountryCode;
     class Collection;
+    class Locale$LanguageRange;
     class MissingResourceException;
-    class Set;
     class Locale$FilteringMode;
+    class Set;
     class Locale$Category;
   }
   namespace io {
@@ -33,52 +33,52 @@ namespace java {
     class Locale : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_d0bc48d5b00dc40c,
-        mid_init$_6a2001eff0605f71,
-        mid_init$_3c57e287341c9288,
-        mid_clone_4d26fd885228c716,
-        mid_equals_65c7d273e80d497a,
-        mid_filter_b2f6453fa339c571,
-        mid_filter_45a99bc2d8a88bd5,
-        mid_filterTags_b2f6453fa339c571,
-        mid_filterTags_45a99bc2d8a88bd5,
-        mid_forLanguageTag_c4d4adcf8a8ee36c,
-        mid_getAvailableLocales_c5ed07ebd55821bb,
-        mid_getCountry_11b109bd155ca898,
-        mid_getDefault_d31b3a14c10c739b,
-        mid_getDefault_856f9de903087aa2,
-        mid_getDisplayCountry_11b109bd155ca898,
-        mid_getDisplayCountry_3cd873bfb132c4fd,
-        mid_getDisplayLanguage_11b109bd155ca898,
-        mid_getDisplayLanguage_3cd873bfb132c4fd,
-        mid_getDisplayName_11b109bd155ca898,
-        mid_getDisplayName_3cd873bfb132c4fd,
-        mid_getDisplayScript_11b109bd155ca898,
-        mid_getDisplayScript_3cd873bfb132c4fd,
-        mid_getDisplayVariant_11b109bd155ca898,
-        mid_getDisplayVariant_3cd873bfb132c4fd,
-        mid_getExtension_3371cef512ec7a0c,
-        mid_getExtensionKeys_015730311a5bacdc,
-        mid_getISO3Country_11b109bd155ca898,
-        mid_getISO3Language_11b109bd155ca898,
-        mid_getISOCountries_692f4257baa8d3c3,
-        mid_getISOCountries_266c1c6971f89c7b,
-        mid_getISOLanguages_692f4257baa8d3c3,
-        mid_getLanguage_11b109bd155ca898,
-        mid_getScript_11b109bd155ca898,
-        mid_getUnicodeLocaleAttributes_015730311a5bacdc,
-        mid_getUnicodeLocaleKeys_015730311a5bacdc,
-        mid_getUnicodeLocaleType_92807efd57acb082,
-        mid_getVariant_11b109bd155ca898,
-        mid_hasExtensions_b108b35ef48e27bd,
-        mid_hashCode_570ce0828f81a2c1,
-        mid_lookup_394e13a16d002490,
-        mid_lookupTag_092deffdd375d0a1,
-        mid_setDefault_c0d4c4b5d69513bc,
-        mid_setDefault_5a42e6843c463d64,
-        mid_stripExtensions_d31b3a14c10c739b,
-        mid_toLanguageTag_11b109bd155ca898,
-        mid_toString_11b109bd155ca898,
+        mid_init$_f5ffdf29129ef90a,
+        mid_init$_630071dd94c59169,
+        mid_init$_f5c244a0f15376be,
+        mid_clone_e661fe3ba2fafb22,
+        mid_equals_221e8e85cb385209,
+        mid_filter_e5abae9cbc97b660,
+        mid_filter_3a194246cf7e18a4,
+        mid_filterTags_e5abae9cbc97b660,
+        mid_filterTags_3a194246cf7e18a4,
+        mid_forLanguageTag_4aa291b8ae8519ed,
+        mid_getAvailableLocales_85ff0d07ca843902,
+        mid_getCountry_3cffd47377eca18a,
+        mid_getDefault_dbe2fc8ef8b3e0a1,
+        mid_getDefault_5caeacab93b07ce2,
+        mid_getDisplayCountry_3cffd47377eca18a,
+        mid_getDisplayCountry_4b51060c6b7ea981,
+        mid_getDisplayLanguage_3cffd47377eca18a,
+        mid_getDisplayLanguage_4b51060c6b7ea981,
+        mid_getDisplayName_3cffd47377eca18a,
+        mid_getDisplayName_4b51060c6b7ea981,
+        mid_getDisplayScript_3cffd47377eca18a,
+        mid_getDisplayScript_4b51060c6b7ea981,
+        mid_getDisplayVariant_3cffd47377eca18a,
+        mid_getDisplayVariant_4b51060c6b7ea981,
+        mid_getExtension_2e13aecc9b888e11,
+        mid_getExtensionKeys_2dfcbd371d62f4e1,
+        mid_getISO3Country_3cffd47377eca18a,
+        mid_getISO3Language_3cffd47377eca18a,
+        mid_getISOCountries_5d7d8c500345981d,
+        mid_getISOCountries_d6a2ea42be66c213,
+        mid_getISOLanguages_5d7d8c500345981d,
+        mid_getLanguage_3cffd47377eca18a,
+        mid_getScript_3cffd47377eca18a,
+        mid_getUnicodeLocaleAttributes_2dfcbd371d62f4e1,
+        mid_getUnicodeLocaleKeys_2dfcbd371d62f4e1,
+        mid_getUnicodeLocaleType_60bb1b490b673cbf,
+        mid_getVariant_3cffd47377eca18a,
+        mid_hasExtensions_89b302893bdbe1f1,
+        mid_hashCode_412668abc8d889e9,
+        mid_lookup_8835c81b15ca0db7,
+        mid_lookupTag_622b595eff3911e9,
+        mid_setDefault_be68e56b20169c78,
+        mid_setDefault_ae7b51d83f3edb02,
+        mid_stripExtensions_dbe2fc8ef8b3e0a1,
+        mid_toLanguageTag_3cffd47377eca18a,
+        mid_toString_3cffd47377eca18a,
         max_mid
       };
 

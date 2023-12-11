@@ -6,10 +6,10 @@
 namespace org {
   namespace orekit {
     namespace propagation {
-      class FieldSpacecraftState;
       namespace events {
         class FieldEventDetector;
       }
+      class FieldSpacecraftState;
     }
   }
   namespace hipparchus {
@@ -31,7 +31,7 @@ namespace org {
         class FieldEnablingPredicate : public ::java::lang::Object {
          public:
           enum {
-            mid_eventIsEnabled_0d65b7645fead4e2,
+            mid_eventIsEnabled_2dbef992042bcf47,
             max_mid
           };
 

@@ -26,8 +26,8 @@ namespace org {
       class MathIllegalArgumentException : public ::org::hipparchus::exception::MathRuntimeException {
        public:
         enum {
-          mid_init$_d0cf82c16a7e8751,
-          mid_init$_6ecc3fd6067c266c,
+          mid_init$_4fde7f3f87bbd6f7,
+          mid_init$_0ff5a331e85ddf14,
           max_mid
         };
 

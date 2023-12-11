@@ -5,24 +5,24 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
-        namespace twod {
-          class FieldVector2D;
-        }
         namespace threed {
           class FieldVector3D;
         }
+        namespace twod {
+          class FieldVector2D;
+        }
       }
     }
+    class CalculusFieldElement;
   }
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
     namespace utils {
       class TimeStampedFieldPVCoordinates;
+    }
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -40,19 +40,19 @@ namespace org {
       class FieldEllipse : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a80d078788493a03,
-          mid_getA_eba8e72a22c984ac,
-          mid_getB_eba8e72a22c984ac,
-          mid_getCenter_716f50c86ffc8da7,
-          mid_getCenterOfCurvature_516439063b85838d,
-          mid_getFrame_b86f9f61d97a7244,
-          mid_getU_716f50c86ffc8da7,
-          mid_getV_716f50c86ffc8da7,
-          mid_pointAt_e0e563985265c470,
-          mid_projectToEllipse_2c604bfeb0a28a2f,
-          mid_projectToEllipse_516439063b85838d,
-          mid_toPlane_92f5981810110281,
-          mid_toSpace_cd76bd749d804094,
+          mid_init$_d08588a8ab820125,
+          mid_getA_613c8f46c659f636,
+          mid_getB_613c8f46c659f636,
+          mid_getCenter_2d64addf4c3391d9,
+          mid_getCenterOfCurvature_453f66131fc0f21f,
+          mid_getFrame_6c9bc0a928c56d4e,
+          mid_getU_2d64addf4c3391d9,
+          mid_getV_2d64addf4c3391d9,
+          mid_pointAt_68e9ce281b70d410,
+          mid_projectToEllipse_f6b3fdf5ec92a07f,
+          mid_projectToEllipse_453f66131fc0f21f,
+          mid_toPlane_7f02e62a67dbd97c,
+          mid_toSpace_695484e81a048fc5,
           max_mid
         };
 

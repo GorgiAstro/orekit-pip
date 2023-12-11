@@ -25,8 +25,8 @@ namespace org {
         class Divide : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_value_86ffecc08a63eff0,
+            mid_init$_0640e6acf969ed28,
+            mid_value_2268d18be49a6087,
             max_mid
           };
 

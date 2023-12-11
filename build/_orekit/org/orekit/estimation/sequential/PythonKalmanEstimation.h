@@ -3,8 +3,17 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
+    namespace utils {
+      class ParameterDriversList;
+    }
     namespace estimation {
       namespace measurements {
         class EstimatedMeasurement;
@@ -19,21 +28,12 @@ namespace org {
     namespace propagation {
       class SpacecraftState;
     }
-    namespace utils {
-      class ParameterDriversList;
-    }
   }
   namespace hipparchus {
     namespace linear {
-      class RealVector;
       class RealMatrix;
+      class RealVector;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -46,26 +46,26 @@ namespace org {
         class PythonKalmanEstimation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0fa09c18fee449d5,
-            mid_finalize_0fa09c18fee449d5,
-            mid_getCorrectedMeasurement_5a90ceef60f482f1,
-            mid_getCorrectedSpacecraftStates_fa9cea0faefb9a31,
-            mid_getCurrentDate_85703d13e302437e,
-            mid_getCurrentMeasurementNumber_570ce0828f81a2c1,
-            mid_getEstimatedMeasurementsParameters_bd51074bfd9d41da,
-            mid_getEstimatedOrbitalParameters_bd51074bfd9d41da,
-            mid_getEstimatedPropagationParameters_bd51074bfd9d41da,
-            mid_getPhysicalEstimatedCovarianceMatrix_688b496048ff947b,
-            mid_getPhysicalEstimatedState_aab4fbf77867daa8,
-            mid_getPhysicalInnovationCovarianceMatrix_688b496048ff947b,
-            mid_getPhysicalKalmanGain_688b496048ff947b,
-            mid_getPhysicalMeasurementJacobian_688b496048ff947b,
-            mid_getPhysicalStateTransitionMatrix_688b496048ff947b,
-            mid_getPredictedMeasurement_5a90ceef60f482f1,
-            mid_getPredictedSpacecraftStates_fa9cea0faefb9a31,
-            mid_pythonDecRef_0fa09c18fee449d5,
-            mid_pythonExtension_492808a339bfa35f,
-            mid_pythonExtension_3a8e7649f31fdb20,
+            mid_init$_0640e6acf969ed28,
+            mid_finalize_0640e6acf969ed28,
+            mid_getCorrectedMeasurement_95a396fe45ccbbc0,
+            mid_getCorrectedSpacecraftStates_5dccf571345671af,
+            mid_getCurrentDate_7a97f7e149e79afb,
+            mid_getCurrentMeasurementNumber_412668abc8d889e9,
+            mid_getEstimatedMeasurementsParameters_467d574a7997e53a,
+            mid_getEstimatedOrbitalParameters_467d574a7997e53a,
+            mid_getEstimatedPropagationParameters_467d574a7997e53a,
+            mid_getPhysicalEstimatedCovarianceMatrix_70a207fcbc031df2,
+            mid_getPhysicalEstimatedState_75d50d73180655b4,
+            mid_getPhysicalInnovationCovarianceMatrix_70a207fcbc031df2,
+            mid_getPhysicalKalmanGain_70a207fcbc031df2,
+            mid_getPhysicalMeasurementJacobian_70a207fcbc031df2,
+            mid_getPhysicalStateTransitionMatrix_70a207fcbc031df2,
+            mid_getPredictedMeasurement_95a396fe45ccbbc0,
+            mid_getPredictedSpacecraftStates_5dccf571345671af,
+            mid_pythonDecRef_0640e6acf969ed28,
+            mid_pythonExtension_9e26256fb0d384a2,
+            mid_pythonExtension_3cd6a6b354c6aa22,
             max_mid
           };
 

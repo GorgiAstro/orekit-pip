@@ -3,28 +3,28 @@
 
 #include "org/hipparchus/stat/descriptive/AbstractStorelessUnivariateStatistic.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+    namespace stat {
+      namespace descriptive {
+        namespace summary {
+          class Sum;
+        }
+        class AggregatableStatistic;
+        class WeightedEvaluation;
+      }
+    }
+  }
+}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace stat {
-      namespace descriptive {
-        class AggregatableStatistic;
-        namespace summary {
-          class Sum;
-        }
-        class WeightedEvaluation;
-      }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
   }
 }
 template<class T> class JArray;
@@ -38,15 +38,15 @@ namespace org {
           class Sum : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_0fa09c18fee449d5,
-              mid_aggregate_6f8404103d85250f,
-              mid_clear_0fa09c18fee449d5,
-              mid_copy_bd1d7d03386ddc9e,
-              mid_evaluate_556bede10daac330,
-              mid_evaluate_2634be61548fc62b,
-              mid_getN_492808a339bfa35f,
-              mid_getResult_dff5885c2c873297,
-              mid_increment_17db3a65980d3441,
+              mid_init$_0640e6acf969ed28,
+              mid_aggregate_61be0f1aec2d16e4,
+              mid_clear_0640e6acf969ed28,
+              mid_copy_b2be7f5cb61a7de1,
+              mid_evaluate_9eeeb1ae977f525d,
+              mid_evaluate_579f1672894f464a,
+              mid_getN_9e26256fb0d384a2,
+              mid_getResult_557b8123390d8d0c,
+              mid_increment_10f281d777284cea,
               max_mid
             };
 

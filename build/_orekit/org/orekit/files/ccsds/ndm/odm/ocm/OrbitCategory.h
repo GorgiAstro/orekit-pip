@@ -37,9 +37,9 @@ namespace org {
               class OrbitCategory : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_toString_11b109bd155ca898,
-                  mid_valueOf_10c7682884230d50,
-                  mid_values_3a3282b8d9862ca3,
+                  mid_toString_3cffd47377eca18a,
+                  mid_valueOf_cac85bd723f3f49f,
+                  mid_values_fd74b3a77a3645ee,
                   max_mid
                 };
 

@@ -13,8 +13,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class Line;
+          class Vector3D;
         }
       }
     }
@@ -31,10 +31,10 @@ namespace org {
           class Segment : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_38903000df91ad6d,
-              mid_getEnd_d52645e0d4c07563,
-              mid_getLine_9fb9cdc35bfe2f74,
-              mid_getStart_d52645e0d4c07563,
+              mid_init$_3f2bfdea7068fab2,
+              mid_getEnd_f88961cca75a2c0a,
+              mid_getLine_50dd992767fffc25,
+              mid_getStart_f88961cca75a2c0a,
               max_mid
             };
 

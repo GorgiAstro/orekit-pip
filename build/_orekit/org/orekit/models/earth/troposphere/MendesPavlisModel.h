@@ -4,30 +4,30 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace models {
       namespace earth {
         namespace troposphere {
+          class MendesPavlisModel;
           class DiscreteTroposphericModel;
           class MappingFunction;
-          class MendesPavlisModel;
         }
       }
+    }
+    namespace bodies {
+      class GeodeticPoint;
+      class FieldGeodeticPoint;
     }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
     }
-    namespace bodies {
-      class FieldGeodeticPoint;
-      class GeodeticPoint;
-    }
     namespace utils {
       class ParameterDriver;
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -49,15 +49,15 @@ namespace org {
           class MendesPavlisModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_b0a935b68e41d65a,
-              mid_computeZenithDelay_dcd2d94aeb49e9c9,
-              mid_computeZenithDelay_61c3b5679b3be385,
-              mid_getParametersDrivers_2afa36052df4765d,
-              mid_getStandardModel_680d82503d452153,
-              mid_mappingFactors_7ef12dc9276409e6,
-              mid_mappingFactors_6f55c0ac27817ed2,
-              mid_pathDelay_fe3b5c46874ab115,
-              mid_pathDelay_ff7a895eb6f0af2e,
+              mid_init$_bc3712e794ac7a81,
+              mid_computeZenithDelay_fd96fda04d407b93,
+              mid_computeZenithDelay_006dc50aa6e193b5,
+              mid_getParametersDrivers_0d9551367f7ecdef,
+              mid_getStandardModel_8facfaf27f8256a8,
+              mid_mappingFactors_964dc353437b5da2,
+              mid_mappingFactors_e6ce6b157ff98280,
+              mid_pathDelay_a4fdd877b349d4a6,
+              mid_pathDelay_129678f244f63094,
               max_mid
             };
 
@@ -74,14 +74,14 @@ namespace org {
 
             MendesPavlisModel(jdouble, jdouble, jdouble, jdouble);
 
-            JArray< ::org::hipparchus::CalculusFieldElement > computeZenithDelay(const ::org::orekit::bodies::FieldGeodeticPoint &, const JArray< ::org::hipparchus::CalculusFieldElement > &, const ::org::orekit::time::FieldAbsoluteDate &) const;
             JArray< jdouble > computeZenithDelay(const ::org::orekit::bodies::GeodeticPoint &, const JArray< jdouble > &, const ::org::orekit::time::AbsoluteDate &) const;
+            JArray< ::org::hipparchus::CalculusFieldElement > computeZenithDelay(const ::org::orekit::bodies::FieldGeodeticPoint &, const JArray< ::org::hipparchus::CalculusFieldElement > &, const ::org::orekit::time::FieldAbsoluteDate &) const;
             ::java::util::List getParametersDrivers() const;
             static MendesPavlisModel getStandardModel(jdouble);
-            JArray< ::org::hipparchus::CalculusFieldElement > mappingFactors(const ::org::hipparchus::CalculusFieldElement &, const ::org::orekit::bodies::FieldGeodeticPoint &, const ::org::orekit::time::FieldAbsoluteDate &) const;
             JArray< jdouble > mappingFactors(jdouble, const ::org::orekit::bodies::GeodeticPoint &, const ::org::orekit::time::AbsoluteDate &) const;
-            jdouble pathDelay(jdouble, const ::org::orekit::bodies::GeodeticPoint &, const JArray< jdouble > &, const ::org::orekit::time::AbsoluteDate &) const;
+            JArray< ::org::hipparchus::CalculusFieldElement > mappingFactors(const ::org::hipparchus::CalculusFieldElement &, const ::org::orekit::bodies::FieldGeodeticPoint &, const ::org::orekit::time::FieldAbsoluteDate &) const;
             ::org::hipparchus::CalculusFieldElement pathDelay(const ::org::hipparchus::CalculusFieldElement &, const ::org::orekit::bodies::FieldGeodeticPoint &, const JArray< ::org::hipparchus::CalculusFieldElement > &, const ::org::orekit::time::FieldAbsoluteDate &) const;
+            jdouble pathDelay(jdouble, const ::org::orekit::bodies::GeodeticPoint &, const JArray< jdouble > &, const ::org::orekit::time::AbsoluteDate &) const;
           };
         }
       }
