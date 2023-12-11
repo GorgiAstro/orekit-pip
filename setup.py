@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # This setup is was created with Apache JCC 3.13 on 2023-12-11 09:22:39
 from setuptools import setup, Extension
-from jdk4py import JAVA_HOME
 from pathlib import Path
 from jcc import config as jcc_conf
 import jcc
