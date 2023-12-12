@@ -1,0 +1,100 @@
+#ifndef org_orekit_estimation_measurements_generation_Generator_H
+#define org_orekit_estimation_measurements_generation_Generator_H
+
+#include "java/lang/Object.h"
+
+namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        namespace generation {
+          class Scheduler;
+          class GeneratedMeasurementSubscriber;
+        }
+        class ObservableSatellite;
+      }
+    }
+    namespace propagation {
+      class Propagator;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
+template<class T> class JArray;
+
+namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        namespace generation {
+
+          class Generator : public ::java::lang::Object {
+           public:
+            enum {
+              mid_init$_0640e6acf969ed28,
+              mid_addPropagator_007497abc1d6b5f9,
+              mid_addScheduler_8ab15ab86df361ae,
+              mid_addSubscriber_d079e7078bf73ceb,
+              mid_generate_d5db9a5f2035671b,
+              mid_getPropagator_3290d3d97e59e59d,
+              max_mid
+            };
+
+            static ::java::lang::Class *class$;
+            static jmethodID *mids$;
+            static bool live$;
+            static jclass initializeClass(bool);
+
+            explicit Generator(jobject obj) : ::java::lang::Object(obj) {
+              if (obj != NULL && mids$ == NULL)
+                env->getClass(initializeClass);
+            }
+            Generator(const Generator& obj) : ::java::lang::Object(obj) {}
+
+            Generator();
+
+            ::org::orekit::estimation::measurements::ObservableSatellite addPropagator(const ::org::orekit::propagation::Propagator &) const;
+            void addScheduler(const ::org::orekit::estimation::measurements::generation::Scheduler &) const;
+            void addSubscriber(const ::org::orekit::estimation::measurements::generation::GeneratedMeasurementSubscriber &) const;
+            void generate(const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::time::AbsoluteDate &) const;
+            ::org::orekit::propagation::Propagator getPropagator(const ::org::orekit::estimation::measurements::ObservableSatellite &) const;
+          };
+        }
+      }
+    }
+  }
+}
+
+#include <Python.h>
+
+namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        namespace generation {
+          extern PyType_Def PY_TYPE_DEF(Generator);
+          extern PyTypeObject *PY_TYPE(Generator);
+
+          class t_Generator {
+          public:
+            PyObject_HEAD
+            Generator object;
+            static PyObject *wrap_Object(const Generator&);
+            static PyObject *wrap_jobject(const jobject&);
+            static void install(PyObject *module);
+            static void initialize(PyObject *module);
+          };
+        }
+      }
+    }
+  }
+}
+
+#endif

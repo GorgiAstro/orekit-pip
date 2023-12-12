@@ -1,0 +1,14 @@
+# pyproject.toml
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+    "jcc @ git+https://github.com/GorgiAstro/jcc/"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orekit"
+version = "12.0"
+dependencies = [
+]
