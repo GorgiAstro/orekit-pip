@@ -9,7 +9,17 @@ This is an attempt at providing the [Orekit Python Wrapper](https://gitlab.oreki
 
 ## Installation
 
-Local installation: `pip install .`. This can take a couple of minutes because it single-threadingly compiles the Orekit C++ bindings.
+This can take a couple of minutes because it single-threadingly compiles the Orekit C++ bindings.
+
+* `pip install git+https://github.com/GorgiAstro/orekit-pip.git`
+
+Local installation:
+* git clone this repo
+* `pip install .`. 
+
+## Testing
+
+`python test/orekit-hello-world.py`
 
 ## Code generation
 
