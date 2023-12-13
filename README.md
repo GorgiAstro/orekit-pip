@@ -5,7 +5,18 @@ This is an attempt at providing the [Orekit Python Wrapper](https://gitlab.oreki
 ## Requirements
 
 * A C++ compiler
+    * For Windows, see below
+    * For Linux, this is gcc and g++
 * `pip`
+
+### Windows
+
+* Install the Visual C++ build tools, version 14.0 or greater: https://visualstudio.microsoft.com/visual-cpp-build-tools/
+* Additionally, install the two following modules as shown in the screenshot below:
+    * Windows 11 SDK (or Windows 10 SDK if you're using Windows 10)
+    * Windows Universal CRT SDK
+
+<img src="windows-vs-tools.png" width="800">
 
 ## Installation
 
