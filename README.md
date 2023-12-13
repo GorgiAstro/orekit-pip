@@ -16,7 +16,7 @@ This is an attempt at providing the [Orekit Python Wrapper](https://gitlab.oreki
     * Windows 11 SDK (or Windows 10 SDK if you're using Windows 10)
     * Windows Universal CRT SDK
 
-<img src="windows-vs-tools.png" width="800">
+<img src="docs/windows-vs-tools.png" width="800">
 
 ## Installation
 
