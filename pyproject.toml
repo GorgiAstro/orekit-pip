@@ -3,7 +3,8 @@
 requires = [
     "setuptools",
     "wheel",
-    "jcc @ git+https://github.com/GorgiAstro/jcc/"
+    "jcchelpers @ git+https://github.com/GorgiAstro/jcchelpers",
+    "jcc @ git+https://github.com/GorgiAstro/jcc/",
 ]
 build-backend = "setuptools.build_meta"
 
