@@ -3,30 +3,11 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
-      class AbsoluteDate;
       class TimeStamped;
-    }
-    namespace utils {
-      namespace units {
-        class Unit;
-      }
-      class CartesianDerivativesFilter;
-      class TimeStampedPVCoordinates;
-    }
-    namespace bodies {
-      class OneAxisEllipsoid;
+      class AbsoluteDate;
     }
     namespace files {
       namespace ccsds {
@@ -39,6 +20,25 @@ namespace org {
         }
       }
     }
+    namespace utils {
+      namespace units {
+        class Unit;
+      }
+      class TimeStampedPVCoordinates;
+      class CartesianDerivativesFilter;
+    }
+    namespace bodies {
+      class OneAxisEllipsoid;
+    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -54,13 +54,13 @@ namespace org {
               class TrajectoryState : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_26353228e626a9b0,
-                  mid_init$_0bcd8384b44d4acf,
-                  mid_getAvailableDerivatives_6c4898d6ec0c3837,
-                  mid_getDate_7a97f7e149e79afb,
-                  mid_getElements_a53a7513ecedada2,
-                  mid_getType_ada74ce902d29422,
-                  mid_toCartesian_2741d46a9a4d5b3e,
+                  mid_init$_33b7b7a0b78ae098,
+                  mid_init$_2805503b28821c62,
+                  mid_getAvailableDerivatives_63bfdcc4b7a0536c,
+                  mid_getDate_c325492395d89b24,
+                  mid_getElements_25e1757a36c4dde2,
+                  mid_getType_4eb559a63ad8d46d,
+                  mid_toCartesian_a2e5e6bb15eb66c5,
                   max_mid
                 };
 

@@ -5,16 +5,16 @@
 
 namespace java {
   namespace text {
+    class FieldPosition;
     class ParsePosition;
     class NumberFormat;
-    class FieldPosition;
   }
   namespace util {
     class Locale;
   }
   namespace lang {
-    class Class;
     class StringBuffer;
+    class Class;
     class String;
   }
 }
@@ -46,15 +46,15 @@ namespace org {
           class Vector3DFormat : public ::org::hipparchus::geometry::VectorFormat {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_init$_d53859bd7ba1b247,
-              mid_init$_f5c244a0f15376be,
-              mid_init$_5f051ed7add2b099,
-              mid_format_6f1f6993f3124ea0,
-              mid_getVector3DFormat_b08c70b31ed5b7b7,
-              mid_getVector3DFormat_140477902cc69130,
-              mid_parse_db83f02e25e2f85a,
-              mid_parse_a5a0093b79428b75,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_init$_b7f3d50b51ef7518,
+              mid_init$_ee9345b4af8c40df,
+              mid_init$_d047b7641facca84,
+              mid_format_4b712c2465e37e54,
+              mid_getVector3DFormat_43a16a8b4506fabe,
+              mid_getVector3DFormat_1ae216ab37378c98,
+              mid_parse_7a448fc80928d881,
+              mid_parse_1be531ac6832f604,
               max_mid
             };
 

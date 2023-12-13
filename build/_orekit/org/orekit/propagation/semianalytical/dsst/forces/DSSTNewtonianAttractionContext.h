@@ -3,6 +3,11 @@
 
 #include "org/orekit/propagation/semianalytical/dsst/forces/ForceModelContext.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -14,11 +19,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -33,8 +33,8 @@ namespace org {
             class DSSTNewtonianAttractionContext : public ::org::orekit::propagation::semianalytical::dsst::forces::ForceModelContext {
              public:
               enum {
-                mid_init$_5393a5d2b5753509,
-                mid_getGM_557b8123390d8d0c,
+                mid_init$_fd1cd6a4cd6e52a8,
+                mid_getGM_b74f83833fdad017,
                 max_mid
               };
 

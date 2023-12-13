@@ -4,12 +4,12 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace io {
-    class IOException;
-    class InputStream;
-  }
   namespace util {
     class List;
+  }
+  namespace io {
+    class InputStream;
+    class IOException;
   }
   namespace lang {
     class Class;
@@ -32,7 +32,7 @@ namespace org {
       class UTCTAIOffsetsLoader$Parser : public ::java::lang::Object {
        public:
         enum {
-          mid_parse_e3101d06c7a1bcab,
+          mid_parse_7b8887374449b257,
           max_mid
         };
 

@@ -5,12 +5,13 @@
 
 namespace org {
   namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+    namespace utils {
+      class ParameterDriversList;
+    }
     namespace propagation {
-      namespace conversion {
-        class PropagatorBuilder;
-        class DSSTPropagatorBuilder;
-        class ODEIntegratorBuilder;
-      }
       namespace semianalytical {
         namespace dsst {
           class DSSTPropagator;
@@ -19,25 +20,24 @@ namespace org {
           }
         }
       }
+      namespace conversion {
+        class DSSTPropagatorBuilder;
+        class ODEIntegratorBuilder;
+        class PropagatorBuilder;
+      }
       class PropagationType;
     }
+    namespace orbits {
+      class Orbit;
+    }
     namespace estimation {
+      namespace measurements {
+        class ObservedMeasurement;
+      }
       namespace leastsquares {
         class ModelObserver;
         class DSSTBatchLSModel;
       }
-      namespace measurements {
-        class ObservedMeasurement;
-      }
-    }
-    namespace utils {
-      class ParameterDriversList;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-    namespace orbits {
-      class Orbit;
     }
   }
 }
@@ -60,19 +60,19 @@ namespace org {
         class DSSTPropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_b9ccae616b531dbe,
-            mid_init$_195606cc9d74c2f4,
-            mid_addForceModel_2a559dedc6480c51,
-            mid_buildLeastSquaresModel_3446f8fef52f0814,
-            mid_buildPropagator_7f447239921efd7c,
-            mid_copy_e4730451f9f3afed,
-            mid_getAllForceModels_0d9551367f7ecdef,
-            mid_getIntegratorBuilder_4785d50855609363,
-            mid_getMass_557b8123390d8d0c,
-            mid_getPropagationType_81e4bfcfa9059f10,
-            mid_getStateType_81e4bfcfa9059f10,
-            mid_resetOrbit_ec22b2fd6dbaa1ee,
-            mid_setMass_10f281d777284cea,
+            mid_init$_437f7fba6637ef09,
+            mid_init$_05e35caa779a7b0e,
+            mid_addForceModel_d24de896ffe1d07a,
+            mid_buildLeastSquaresModel_a6159c38c462f3f0,
+            mid_buildPropagator_4135970edd4a8374,
+            mid_copy_0eaaaa36958ff434,
+            mid_getAllForceModels_e62d3bb06d56d7e3,
+            mid_getIntegratorBuilder_a870bf0f84eaaecb,
+            mid_getMass_b74f83833fdad017,
+            mid_getPropagationType_c479da51fc09a224,
+            mid_getStateType_c479da51fc09a224,
+            mid_resetOrbit_98cc5c663640f0ba,
+            mid_setMass_8ba9fe7a847cecad,
             max_mid
           };
 

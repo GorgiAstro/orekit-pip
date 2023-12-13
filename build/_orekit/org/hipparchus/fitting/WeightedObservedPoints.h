@@ -30,12 +30,12 @@ namespace org {
       class WeightedObservedPoints : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_add_14c17786a6648771,
-          mid_add_ab23f4ae0fb33968,
-          mid_add_87096e3fd8086100,
-          mid_clear_0640e6acf969ed28,
-          mid_toList_0d9551367f7ecdef,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_add_1f0d8489caf82ae8,
+          mid_add_369b4c97255d5afa,
+          mid_add_b5167f35b2521627,
+          mid_clear_a1fa5dae97ea5ed2,
+          mid_toList_e62d3bb06d56d7e3,
           max_mid
         };
 

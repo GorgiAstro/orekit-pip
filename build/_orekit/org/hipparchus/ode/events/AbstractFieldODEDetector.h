@@ -6,20 +6,20 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
-      class FieldODEStateAndDerivative;
       namespace events {
-        class FieldAdaptableInterval;
-        class AbstractFieldODEDetector;
         class FieldODEEventHandler;
+        class AbstractFieldODEDetector;
+        class FieldAdaptableInterval;
         class FieldODEEventDetector;
       }
+      class FieldODEStateAndDerivative;
     }
+    class CalculusFieldElement;
     namespace analysis {
       namespace solvers {
         class BracketedRealFieldUnivariateSolver;
       }
     }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -37,20 +37,20 @@ namespace org {
         class AbstractFieldODEDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_g_8677e670f9e68e2e,
-            mid_getHandler_b77ca012966a5dd0,
-            mid_getMaxCheckInterval_e651d05ccb464edb,
-            mid_getMaxIterationCount_412668abc8d889e9,
-            mid_getSolver_f12d4ed2528168bc,
-            mid_init_f808a4f21f8be825,
-            mid_isForward_89b302893bdbe1f1,
-            mid_withHandler_9395159e7dce049c,
-            mid_withMaxCheck_50da3c2e6691fad8,
-            mid_withMaxCheck_5cf9441a828d17d8,
-            mid_withMaxIter_365982a4db146285,
-            mid_withSolver_fe5c5b8b4e18fdc1,
-            mid_withThreshold_50da3c2e6691fad8,
-            mid_create_6399bb5ecfdc159d,
+            mid_g_751903dc38e0b7e8,
+            mid_getHandler_daa4dcd20dd895b8,
+            mid_getMaxCheckInterval_9e96a56f8b6efe47,
+            mid_getMaxIterationCount_55546ef6a647f39b,
+            mid_getSolver_95522f52875c5391,
+            mid_init_55fdeef582303a99,
+            mid_isForward_9ab94ac1dc23b105,
+            mid_withHandler_47d643dacb7a2361,
+            mid_withMaxCheck_5e4e748e9b4bac80,
+            mid_withMaxCheck_caf5dc8899e0b901,
+            mid_withMaxIter_74b35201f96fff90,
+            mid_withSolver_c481c8eb62c06a6a,
+            mid_withThreshold_5e4e748e9b4bac80,
+            mid_create_d90cb26b03bae470,
             max_mid
           };
 

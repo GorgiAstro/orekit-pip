@@ -17,8 +17,8 @@ namespace java {
     class SerializablePermission : public ::java::security::BasicPermission {
      public:
       enum {
-        mid_init$_f5ffdf29129ef90a,
-        mid_init$_630071dd94c59169,
+        mid_init$_734b91ac30d5f9b4,
+        mid_init$_a627ad9c5959309d,
         max_mid
       };
 

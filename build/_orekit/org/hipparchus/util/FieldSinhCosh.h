@@ -24,11 +24,11 @@ namespace org {
       class FieldSinhCosh : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_cdf90f5ab4b39eca,
-          mid_cosh_e661fe3ba2fafb22,
-          mid_difference_5460d248f7509324,
-          mid_sinh_e661fe3ba2fafb22,
-          mid_sum_5460d248f7509324,
+          mid_init$_cb233f2d837bf6b7,
+          mid_cosh_541690f9ee81d3ad,
+          mid_difference_5031b9cee1849dc0,
+          mid_sinh_541690f9ee81d3ad,
+          mid_sum_5031b9cee1849dc0,
           max_mid
         };
 

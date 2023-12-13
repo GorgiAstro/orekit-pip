@@ -8,26 +8,26 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
     class CalculusFieldElement;
   }
   namespace orekit {
+    namespace forces {
+      class ForceModel;
+    }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
-    namespace bodies {
-      class CelestialBody;
-    }
     namespace utils {
       class ParameterDriver;
     }
-    namespace forces {
-      class ForceModel;
+    namespace bodies {
+      class CelestialBody;
     }
   }
 }
@@ -50,14 +50,14 @@ namespace org {
         class DeSitterRelativity : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_init$_9a72c2af019e2130,
-            mid_acceleration_61944e27a39e8290,
-            mid_acceleration_b61fb59a041240c6,
-            mid_dependsOnPositionOnly_89b302893bdbe1f1,
-            mid_getEarth_40e74583267ad550,
-            mid_getParametersDrivers_0d9551367f7ecdef,
-            mid_getSun_40e74583267ad550,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_init$_8e55d90b2c31e510,
+            mid_acceleration_20bded0292328743,
+            mid_acceleration_0ce449c67b5ffd9c,
+            mid_dependsOnPositionOnly_9ab94ac1dc23b105,
+            mid_getEarth_5df52e80cbb5eb85,
+            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_getSun_5df52e80cbb5eb85,
             max_mid
           };
 

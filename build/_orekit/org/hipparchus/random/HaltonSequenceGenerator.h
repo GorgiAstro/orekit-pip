@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class NullArgumentException;
+      class MathIllegalArgumentException;
+    }
     namespace random {
       class RandomVectorGenerator;
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-      class NullArgumentException;
     }
   }
 }
@@ -28,12 +28,12 @@ namespace org {
       class HaltonSequenceGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a3da1a935cb37f7b,
-          mid_init$_2ec9e030f61ba505,
-          mid_getNextIndex_412668abc8d889e9,
-          mid_nextVector_a53a7513ecedada2,
-          mid_skipTo_1da5c9e77f24f269,
-          mid_scramble_4885f823e425a625,
+          mid_init$_44ed599e93e8a30c,
+          mid_init$_5f0ee0ef02547c61,
+          mid_getNextIndex_55546ef6a647f39b,
+          mid_nextVector_25e1757a36c4dde2,
+          mid_skipTo_bb2a44a76ad252f7,
+          mid_scramble_aad24acd6036a6f1,
           max_mid
         };
 

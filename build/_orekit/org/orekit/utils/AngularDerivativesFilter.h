@@ -3,18 +3,18 @@
 
 #include "java/lang/Enum.h"
 
-namespace org {
-  namespace orekit {
-    namespace utils {
-      class AngularDerivativesFilter;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class String;
     class Class;
     class IllegalArgumentException;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace utils {
+      class AngularDerivativesFilter;
+    }
   }
 }
 template<class T> class JArray;
@@ -26,10 +26,10 @@ namespace org {
       class AngularDerivativesFilter : public ::java::lang::Enum {
        public:
         enum {
-          mid_getFilter_fc338503faecdd01,
-          mid_getMaxOrder_412668abc8d889e9,
-          mid_valueOf_a83e1e8abbd4b65b,
-          mid_values_05edc09a4ca9b5ac,
+          mid_getFilter_71cb048b3c730036,
+          mid_getMaxOrder_55546ef6a647f39b,
+          mid_valueOf_bee5d2db8fcf7df4,
+          mid_values_22007163d4198fde,
           max_mid
         };
 

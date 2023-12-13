@@ -5,6 +5,10 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class NullArgumentException;
+      class MathIllegalArgumentException;
+    }
     namespace stat {
       namespace descriptive {
         namespace rank {
@@ -12,10 +16,6 @@ namespace org {
         }
         class AggregatableStatistic;
       }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-      class NullArgumentException;
     }
     namespace random {
       class RandomGenerator;
@@ -44,27 +44,27 @@ namespace org {
           class RandomPercentile : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_init$_10f281d777284cea,
-              mid_init$_19e7f6e95a4dc08e,
-              mid_init$_fb29db45daae1732,
-              mid_aggregate_9cb79a90fac63186,
-              mid_clear_0640e6acf969ed28,
-              mid_copy_29eb99ad640257e5,
-              mid_evaluate_1bc40469b56f2c3c,
-              mid_evaluate_9eeeb1ae977f525d,
-              mid_evaluate_a6ce01f236d2d451,
-              mid_getAggregateN_1ab1799bb5ae5130,
-              mid_getAggregateQuantileRank_8b8f547a5368aa42,
-              mid_getAggregateRank_8b8f547a5368aa42,
-              mid_getN_9e26256fb0d384a2,
-              mid_getQuantileRank_7e960cd6eee376d8,
-              mid_getRank_7e960cd6eee376d8,
-              mid_getResult_557b8123390d8d0c,
-              mid_getResult_7e960cd6eee376d8,
-              mid_increment_10f281d777284cea,
-              mid_maxValuesRetained_9d550dd06216a860,
-              mid_reduce_8b8f547a5368aa42,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_init$_8ba9fe7a847cecad,
+              mid_init$_f1c8159898f25396,
+              mid_init$_6f61eb577a811a32,
+              mid_aggregate_29e91062f5743be3,
+              mid_clear_a1fa5dae97ea5ed2,
+              mid_copy_0a1c21202907a51b,
+              mid_evaluate_e45651f63bcd931a,
+              mid_evaluate_1567a80062adb31b,
+              mid_evaluate_77eb5de7403bd8c7,
+              mid_getAggregateN_b19699bf13064258,
+              mid_getAggregateQuantileRank_14d6020fc6898a6b,
+              mid_getAggregateRank_14d6020fc6898a6b,
+              mid_getN_6c0ce7e438e5ded4,
+              mid_getQuantileRank_04fd0666b613d2ab,
+              mid_getRank_04fd0666b613d2ab,
+              mid_getResult_b74f83833fdad017,
+              mid_getResult_04fd0666b613d2ab,
+              mid_increment_8ba9fe7a847cecad,
+              mid_maxValuesRetained_12ed7e7112604870,
+              mid_reduce_14d6020fc6898a6b,
               max_mid
             };
 

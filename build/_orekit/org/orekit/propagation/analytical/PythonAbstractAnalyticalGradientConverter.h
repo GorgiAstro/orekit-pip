@@ -3,27 +3,6 @@
 
 #include "org/orekit/propagation/analytical/AbstractAnalyticalGradientConverter.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace analysis {
-      namespace differentiation {
-        class Gradient;
-      }
-    }
-  }
-  namespace orekit {
-    namespace propagation {
-      namespace analytical {
-        class FieldAbstractAnalyticalPropagator;
-        class AbstractAnalyticalPropagator;
-      }
-      class FieldSpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -31,6 +10,27 @@ namespace java {
   namespace lang {
     class Throwable;
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace analytical {
+        class AbstractAnalyticalPropagator;
+        class FieldAbstractAnalyticalPropagator;
+      }
+      class FieldSpacecraftState;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+  }
+  namespace hipparchus {
+    namespace analysis {
+      namespace differentiation {
+        class Gradient;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -43,13 +43,13 @@ namespace org {
         class PythonAbstractAnalyticalGradientConverter : public ::org::orekit::propagation::analytical::AbstractAnalyticalGradientConverter {
          public:
           enum {
-            mid_init$_4de0bd046bd8fbcf,
-            mid_finalize_0640e6acf969ed28,
-            mid_getParametersDrivers_0d9551367f7ecdef,
-            mid_getPropagator_733af95624ce3e55,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
+            mid_init$_296566653f57b5ed,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_getPropagator_50636e1e84d390e7,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
             max_mid
           };
 

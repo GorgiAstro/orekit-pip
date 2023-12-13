@@ -17,8 +17,8 @@ namespace org {
     }
   }
   namespace hipparchus {
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
     namespace ode {
       class AbstractFieldIntegrator;
     }
@@ -39,9 +39,9 @@ namespace org {
         class AbstractFieldIntegratorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_buildIntegrator_da5761494991d7f4,
-            mid_buildIntegrator_3a1ee7ebe4f0e344,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_buildIntegrator_95fca721ff63137c,
+            mid_buildIntegrator_ce58c6ef4cfb23c4,
             max_mid
           };
 

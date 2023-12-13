@@ -7,10 +7,10 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class EstimatedMeasurement;
-        class EstimatedMeasurementBase;
-        class BistaticRangeRate;
         class EstimationModifier;
+        class BistaticRangeRate;
+        class EstimatedMeasurementBase;
+        class EstimatedMeasurement;
       }
     }
     namespace models {
@@ -38,9 +38,9 @@ namespace org {
           class BistaticRangeRateTroposphericDelayModifier : public ::org::orekit::estimation::measurements::modifiers::BaseRangeRateTroposphericDelayModifier {
            public:
             enum {
-              mid_init$_b6cf54f3c9220bc7,
-              mid_modify_0054a497255e8220,
-              mid_modifyWithoutDerivatives_e471490df8741b73,
+              mid_init$_516bd20115aa9d9d,
+              mid_modify_f784f7724d44a90a,
+              mid_modifyWithoutDerivatives_308087fabc1d7f66,
               max_mid
             };
 

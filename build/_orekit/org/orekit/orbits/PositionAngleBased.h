@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace orbits {
-      class PositionAngleBased;
       class PositionAngleType;
+      class PositionAngleBased;
     }
   }
 }
@@ -25,9 +25,9 @@ namespace org {
       class PositionAngleBased : public ::java::lang::Object {
        public:
         enum {
-          mid_getCachedPositionAngleType_f4984aee71df4c19,
-          mid_hasRates_89b302893bdbe1f1,
-          mid_removeRates_670bb8d961de5e47,
+          mid_getCachedPositionAngleType_c25055891f180348,
+          mid_hasRates_9ab94ac1dc23b105,
+          mid_removeRates_26ab66f50d4bfc93,
           max_mid
         };
 

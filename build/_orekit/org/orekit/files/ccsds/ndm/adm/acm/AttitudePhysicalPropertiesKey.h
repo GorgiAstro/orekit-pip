@@ -44,9 +44,9 @@ namespace org {
               class AttitudePhysicalPropertiesKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_ab4d2cc52dce74b0,
-                  mid_valueOf_f6b41ab08f5d1e78,
-                  mid_values_a83944222b9b3d03,
+                  mid_process_4e16a4054ae03944,
+                  mid_valueOf_f38b14ffdef5cb46,
+                  mid_values_1cca4be7de8a1754,
                   max_mid
                 };
 

@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -18,13 +10,21 @@ namespace org {
         namespace ndm {
           namespace adm {
             namespace acm {
-              class AttitudeCovariance;
               class AttitudeCovarianceHistoryMetadata;
+              class AttitudeCovariance;
             }
           }
         }
       }
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -40,9 +40,9 @@ namespace org {
               class AttitudeCovarianceHistory : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_9ebd01da74ea119f,
-                  mid_getCovariances_0d9551367f7ecdef,
-                  mid_getMetadata_20a67f28436ad533,
+                  mid_init$_0694642a06bba0c0,
+                  mid_getCovariances_e62d3bb06d56d7e3,
+                  mid_getMetadata_9cf45f3dda76eb07,
                   max_mid
                 };
 

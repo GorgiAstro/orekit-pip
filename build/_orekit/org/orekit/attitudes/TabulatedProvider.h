@@ -3,35 +3,35 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace attitudes {
-      class AttitudeBuilder;
-      class Attitude;
-      class FieldAttitude;
-      class BoundedAttitudeProvider;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class PVCoordinatesProvider;
-      class AngularDerivativesFilter;
-      class FieldPVCoordinatesProvider;
-      class TimeStampedAngularCoordinates;
-    }
-    namespace frames {
-      class Frame;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class TimeStampedAngularCoordinates;
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
+      class AngularDerivativesFilter;
+    }
+    namespace attitudes {
+      class FieldAttitude;
+      class BoundedAttitudeProvider;
+      class AttitudeBuilder;
+      class Attitude;
+    }
+    namespace frames {
+      class Frame;
+    }
   }
 }
 template<class T> class JArray;
@@ -43,12 +43,12 @@ namespace org {
       class TabulatedProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_1d4ab58533b5cef5,
-          mid_init$_0f67a1b319521d8a,
-          mid_getAttitude_1306ac39e1d2de3f,
-          mid_getAttitude_77e3383de01f3e48,
-          mid_getMaxDate_7a97f7e149e79afb,
-          mid_getMinDate_7a97f7e149e79afb,
+          mid_init$_27d82222e71f7d6a,
+          mid_init$_64e2df2033784a10,
+          mid_getAttitude_896ee4d68989b1e8,
+          mid_getAttitude_21845cfb0034fe1c,
+          mid_getMaxDate_c325492395d89b24,
+          mid_getMinDate_c325492395d89b24,
           max_mid
         };
 
@@ -66,8 +66,8 @@ namespace org {
         TabulatedProvider(const ::org::orekit::frames::Frame &, const ::java::util::List &, jint, const ::org::orekit::utils::AngularDerivativesFilter &);
         TabulatedProvider(const ::java::util::List &, jint, const ::org::orekit::utils::AngularDerivativesFilter &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::attitudes::AttitudeBuilder &);
 
-        ::org::orekit::attitudes::Attitude getAttitude(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::attitudes::FieldAttitude getAttitude(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
+        ::org::orekit::attitudes::Attitude getAttitude(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::time::AbsoluteDate getMaxDate() const;
         ::org::orekit::time::AbsoluteDate getMinDate() const;
       };

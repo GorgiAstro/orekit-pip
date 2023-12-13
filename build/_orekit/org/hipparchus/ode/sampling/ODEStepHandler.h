@@ -6,10 +6,10 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
+      class ODEStateAndDerivative;
       namespace sampling {
         class ODEStateInterpolator;
       }
-      class ODEStateAndDerivative;
     }
   }
 }
@@ -28,9 +28,9 @@ namespace org {
         class ODEStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_finish_b79fdee299d79fcc,
-            mid_handleStep_b272ebb5ead79c81,
-            mid_init_7e69c83de8052a2b,
+            mid_finish_d2d966b8a9c77b61,
+            mid_handleStep_197c5aaefd855810,
+            mid_init_a7556bd72cab73f1,
             max_mid
           };
 

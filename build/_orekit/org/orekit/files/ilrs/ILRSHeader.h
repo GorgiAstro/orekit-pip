@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class DateComponents;
       class AbsoluteDate;
+      class DateComponents;
     }
   }
 }
@@ -27,33 +27,33 @@ namespace org {
         class ILRSHeader : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_getEndEpoch_7a97f7e149e79afb,
-            mid_getFormat_3cffd47377eca18a,
-            mid_getIlrsSatelliteId_3cffd47377eca18a,
-            mid_getName_3cffd47377eca18a,
-            mid_getNoradId_3cffd47377eca18a,
-            mid_getProductionEpoch_ef81839d8717cc3a,
-            mid_getProductionHour_412668abc8d889e9,
-            mid_getSequenceNumber_412668abc8d889e9,
-            mid_getSic_3cffd47377eca18a,
-            mid_getStartEpoch_7a97f7e149e79afb,
-            mid_getTargetClass_412668abc8d889e9,
-            mid_getTargetLocation_412668abc8d889e9,
-            mid_getVersion_412668abc8d889e9,
-            mid_setEndEpoch_20affcbd28542333,
-            mid_setFormat_f5ffdf29129ef90a,
-            mid_setIlrsSatelliteId_f5ffdf29129ef90a,
-            mid_setName_f5ffdf29129ef90a,
-            mid_setNoradId_f5ffdf29129ef90a,
-            mid_setProductionEpoch_4d2eb60c6d6ac3df,
-            mid_setProductionHour_a3da1a935cb37f7b,
-            mid_setSequenceNumber_a3da1a935cb37f7b,
-            mid_setSic_f5ffdf29129ef90a,
-            mid_setStartEpoch_20affcbd28542333,
-            mid_setTargetClass_a3da1a935cb37f7b,
-            mid_setTargetLocation_a3da1a935cb37f7b,
-            mid_setVersion_a3da1a935cb37f7b,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_getEndEpoch_c325492395d89b24,
+            mid_getFormat_1c1fa1e935d6cdcf,
+            mid_getIlrsSatelliteId_1c1fa1e935d6cdcf,
+            mid_getName_1c1fa1e935d6cdcf,
+            mid_getNoradId_1c1fa1e935d6cdcf,
+            mid_getProductionEpoch_357436921b6db81c,
+            mid_getProductionHour_55546ef6a647f39b,
+            mid_getSequenceNumber_55546ef6a647f39b,
+            mid_getSic_1c1fa1e935d6cdcf,
+            mid_getStartEpoch_c325492395d89b24,
+            mid_getTargetClass_55546ef6a647f39b,
+            mid_getTargetLocation_55546ef6a647f39b,
+            mid_getVersion_55546ef6a647f39b,
+            mid_setEndEpoch_02135a6ef25adb4b,
+            mid_setFormat_734b91ac30d5f9b4,
+            mid_setIlrsSatelliteId_734b91ac30d5f9b4,
+            mid_setName_734b91ac30d5f9b4,
+            mid_setNoradId_734b91ac30d5f9b4,
+            mid_setProductionEpoch_a97e9138404c69cd,
+            mid_setProductionHour_44ed599e93e8a30c,
+            mid_setSequenceNumber_44ed599e93e8a30c,
+            mid_setSic_734b91ac30d5f9b4,
+            mid_setStartEpoch_02135a6ef25adb4b,
+            mid_setTargetClass_44ed599e93e8a30c,
+            mid_setTargetLocation_44ed599e93e8a30c,
+            mid_setVersion_44ed599e93e8a30c,
             max_mid
           };
 

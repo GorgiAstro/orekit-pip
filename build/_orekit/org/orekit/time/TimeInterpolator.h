@@ -3,6 +3,15 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace time {
+      class TimeStamped;
+      class AbsoluteDate;
+      class TimeInterpolator;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -15,15 +24,6 @@ namespace java {
     class Class;
   }
 }
-namespace org {
-  namespace orekit {
-    namespace time {
-      class TimeInterpolator;
-      class AbsoluteDate;
-      class TimeStamped;
-    }
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -33,11 +33,11 @@ namespace org {
       class TimeInterpolator : public ::java::lang::Object {
        public:
         enum {
-          mid_getExtrapolationThreshold_557b8123390d8d0c,
-          mid_getNbInterpolationPoints_412668abc8d889e9,
-          mid_getSubInterpolators_0d9551367f7ecdef,
-          mid_interpolate_da5f44ff87474809,
-          mid_interpolate_d5b4fcbe51b9e2da,
+          mid_getExtrapolationThreshold_b74f83833fdad017,
+          mid_getNbInterpolationPoints_55546ef6a647f39b,
+          mid_getSubInterpolators_e62d3bb06d56d7e3,
+          mid_interpolate_0ccd3950902c0411,
+          mid_interpolate_510d3bf17898cb55,
           max_mid
         };
 

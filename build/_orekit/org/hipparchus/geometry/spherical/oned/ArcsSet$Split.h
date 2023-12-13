@@ -6,14 +6,14 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      namespace spherical {
-        namespace oned {
-          class ArcsSet;
-          class Sphere1D;
-        }
-      }
       namespace partitioning {
         class Side;
+      }
+      namespace spherical {
+        namespace oned {
+          class Sphere1D;
+          class ArcsSet;
+        }
       }
     }
   }
@@ -34,9 +34,9 @@ namespace org {
           class ArcsSet$Split : public ::java::lang::Object {
            public:
             enum {
-              mid_getMinus_75597f9ad249cb08,
-              mid_getPlus_75597f9ad249cb08,
-              mid_getSide_65bf13475edb2de9,
+              mid_getMinus_7d64add151265ba7,
+              mid_getPlus_7d64add151265ba7,
+              mid_getSide_e46f65835b705175,
               max_mid
             };
 

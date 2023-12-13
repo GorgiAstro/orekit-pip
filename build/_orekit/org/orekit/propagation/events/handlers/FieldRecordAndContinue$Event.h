@@ -6,10 +6,10 @@
 namespace org {
   namespace orekit {
     namespace propagation {
+      class FieldSpacecraftState;
       namespace events {
         class FieldEventDetector;
       }
-      class FieldSpacecraftState;
     }
   }
 }
@@ -30,10 +30,10 @@ namespace org {
           class FieldRecordAndContinue$Event : public ::java::lang::Object {
            public:
             enum {
-              mid_getDetector_07d9256595c42b86,
-              mid_getState_381b3e011cde018d,
-              mid_isIncreasing_89b302893bdbe1f1,
-              mid_toString_3cffd47377eca18a,
+              mid_getDetector_e78af9d734a5fbe1,
+              mid_getState_fba6d56f8dbc98d0,
+              mid_isIncreasing_9ab94ac1dc23b105,
+              mid_toString_1c1fa1e935d6cdcf,
               max_mid
             };
 

@@ -10,15 +10,15 @@ namespace org {
     }
   }
   namespace orekit {
-    namespace propagation {
-      namespace sampling {
-        class OrekitStepInterpolator;
-      }
-    }
     namespace estimation {
       namespace measurements {
         class ObservedMeasurement;
         class ObservableSatellite;
+      }
+    }
+    namespace propagation {
+      namespace sampling {
+        class OrekitStepInterpolator;
       }
     }
     namespace time {
@@ -46,19 +46,19 @@ namespace org {
           class PythonAbstractMeasurementBuilder : public ::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder {
            public:
             enum {
-              mid_init$_8468e98590cd7e4e,
-              mid_init$_e10682339646f739,
-              mid_build_9bd3ff0754feb0c8,
-              mid_finalize_0640e6acf969ed28,
-              mid_getBaseWeight_a53a7513ecedada2,
-              mid_getEnd_7a97f7e149e79afb,
-              mid_getNoise_a53a7513ecedada2,
-              mid_getSatellites_b8c09fefa9db3b83,
-              mid_getStart_7a97f7e149e79afb,
-              mid_getTheoreticalStandardDeviation_a53a7513ecedada2,
-              mid_pythonDecRef_0640e6acf969ed28,
-              mid_pythonExtension_9e26256fb0d384a2,
-              mid_pythonExtension_3cd6a6b354c6aa22,
+              mid_init$_4f943d9e98868fa9,
+              mid_init$_de1f836ff115aa61,
+              mid_build_121e4e49170b7802,
+              mid_finalize_a1fa5dae97ea5ed2,
+              mid_getBaseWeight_25e1757a36c4dde2,
+              mid_getEnd_c325492395d89b24,
+              mid_getNoise_25e1757a36c4dde2,
+              mid_getSatellites_eb47c48e4fca882c,
+              mid_getStart_c325492395d89b24,
+              mid_getTheoreticalStandardDeviation_25e1757a36c4dde2,
+              mid_pythonDecRef_a1fa5dae97ea5ed2,
+              mid_pythonExtension_6c0ce7e438e5ded4,
+              mid_pythonExtension_3d7dd2314a0dd456,
               max_mid
             };
 

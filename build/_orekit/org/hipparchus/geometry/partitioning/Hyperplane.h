@@ -30,14 +30,14 @@ namespace org {
         class Hyperplane : public ::java::lang::Object {
          public:
           enum {
-            mid_copySelf_db5d0f7cdc937b69,
-            mid_emptyHyperplane_0629297ff6ae927a,
-            mid_getOffset_cf1fec2b7b1c0efe,
-            mid_getTolerance_557b8123390d8d0c,
-            mid_project_328d0d966eeb9668,
-            mid_sameOrientationAs_cb9274a363000a77,
-            mid_wholeHyperplane_0629297ff6ae927a,
-            mid_wholeSpace_fd006079784937f2,
+            mid_copySelf_40a20a6ecfa9e745,
+            mid_emptyHyperplane_0417f9f9ce6ee466,
+            mid_getOffset_f0dd8cb59ea09794,
+            mid_getTolerance_b74f83833fdad017,
+            mid_project_2214f7ad5b6ca158,
+            mid_sameOrientationAs_806ecfbca1984226,
+            mid_wholeHyperplane_0417f9f9ce6ee466,
+            mid_wholeSpace_3698fd1911856e70,
             max_mid
           };
 

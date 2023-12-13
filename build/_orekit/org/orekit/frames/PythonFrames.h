@@ -7,18 +7,18 @@ namespace org {
   namespace orekit {
     namespace frames {
       class Frames;
-      class Frame;
-      class Predefined;
-      class ITRFVersion;
-      class EOPHistory;
       class VersionedITRF;
+      class Predefined;
+      class EOPHistory;
+      class Frame;
       class FactoryManagedFrame;
-    }
-    namespace time {
-      class UT1Scale;
+      class ITRFVersion;
     }
     namespace utils {
       class IERSConventions;
+    }
+    namespace time {
+      class UT1Scale;
     }
   }
 }
@@ -37,33 +37,33 @@ namespace org {
       class PythonFrames : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_buildUncachedITRF_d001272d652a2315,
-          mid_finalize_0640e6acf969ed28,
-          mid_getCIRF_af417399ee2f3e0d,
-          mid_getEME2000_e96d0d85e78fc6bd,
-          mid_getEOPHistory_9cf4a1ec2e53bbd3,
-          mid_getEcliptic_bb61238dc14574bc,
-          mid_getFrame_9103848bb456e582,
-          mid_getGCRF_6c9bc0a928c56d4e,
-          mid_getGTOD_a06a41ba6e4eb36a,
-          mid_getGTOD_af417399ee2f3e0d,
-          mid_getICRF_6c9bc0a928c56d4e,
-          mid_getITRF_af417399ee2f3e0d,
-          mid_getITRF_e7702de838b8de68,
-          mid_getITRFEquinox_af417399ee2f3e0d,
-          mid_getMOD_57509cacf2364dd9,
-          mid_getMOD_a06a41ba6e4eb36a,
-          mid_getPZ9011_af417399ee2f3e0d,
-          mid_getTEME_e96d0d85e78fc6bd,
-          mid_getTIRF_57509cacf2364dd9,
-          mid_getTIRF_af417399ee2f3e0d,
-          mid_getTOD_a06a41ba6e4eb36a,
-          mid_getTOD_af417399ee2f3e0d,
-          mid_getVeis1950_e96d0d85e78fc6bd,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_buildUncachedITRF_de25c2adba5180fc,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_getCIRF_b8f4087626aff39a,
+          mid_getEME2000_38d89ffeb32a6f21,
+          mid_getEOPHistory_a77e9d6bc0da2439,
+          mid_getEcliptic_15d291dcc172f59b,
+          mid_getFrame_acd75386f33c2984,
+          mid_getGCRF_2c51111cc6894ba1,
+          mid_getGTOD_816956b542562f07,
+          mid_getGTOD_b8f4087626aff39a,
+          mid_getICRF_2c51111cc6894ba1,
+          mid_getITRF_b8f4087626aff39a,
+          mid_getITRF_2e00eadcfbf4fef8,
+          mid_getITRFEquinox_b8f4087626aff39a,
+          mid_getMOD_5e99e4a3c4469bb0,
+          mid_getMOD_816956b542562f07,
+          mid_getPZ9011_b8f4087626aff39a,
+          mid_getTEME_38d89ffeb32a6f21,
+          mid_getTIRF_5e99e4a3c4469bb0,
+          mid_getTIRF_b8f4087626aff39a,
+          mid_getTOD_816956b542562f07,
+          mid_getTOD_b8f4087626aff39a,
+          mid_getVeis1950_38d89ffeb32a6f21,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
           max_mid
         };
 

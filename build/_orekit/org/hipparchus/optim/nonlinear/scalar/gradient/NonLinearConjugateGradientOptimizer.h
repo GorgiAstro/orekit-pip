@@ -6,17 +6,17 @@
 namespace org {
   namespace hipparchus {
     namespace optim {
-      class PointValuePair;
+      class ConvergenceChecker;
       class OptimizationData;
       namespace nonlinear {
         namespace scalar {
           namespace gradient {
-            class Preconditioner;
             class NonLinearConjugateGradientOptimizer$Formula;
+            class Preconditioner;
           }
         }
       }
-      class ConvergenceChecker;
+      class PointValuePair;
     }
     namespace exception {
       class MathIllegalStateException;
@@ -40,12 +40,12 @@ namespace org {
             class NonLinearConjugateGradientOptimizer : public ::org::hipparchus::optim::nonlinear::scalar::GradientMultivariateOptimizer {
              public:
               enum {
-                mid_init$_db7daf12c9f3aa8b,
-                mid_init$_70efae1c09fd2be9,
-                mid_init$_c34e09f6066821bc,
-                mid_optimize_428d2547a0c45016,
-                mid_doOptimize_adf293b2643f22b0,
-                mid_parseOptimizationData_946a92401917c130,
+                mid_init$_0905b944d2ee80b7,
+                mid_init$_143c7e95e2590c15,
+                mid_init$_cba8557a7f2969ed,
+                mid_optimize_9d04816d74472b44,
+                mid_parseOptimizationData_14193ddbce7a2cc0,
+                mid_doOptimize_35ff88cac3217ca3,
                 max_mid
               };
 

@@ -3,16 +3,16 @@
 
 #include "org/orekit/forces/gravity/potential/TideSystemProvider.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,11 +26,11 @@ namespace org {
           class SphericalHarmonicsProvider : public ::org::orekit::forces::gravity::potential::TideSystemProvider {
            public:
             enum {
-              mid_getAe_557b8123390d8d0c,
-              mid_getMaxDegree_412668abc8d889e9,
-              mid_getMaxOrder_412668abc8d889e9,
-              mid_getMu_557b8123390d8d0c,
-              mid_getReferenceDate_7a97f7e149e79afb,
+              mid_getAe_b74f83833fdad017,
+              mid_getMaxDegree_55546ef6a647f39b,
+              mid_getMaxOrder_55546ef6a647f39b,
+              mid_getMu_b74f83833fdad017,
+              mid_getReferenceDate_c325492395d89b24,
               max_mid
             };
 

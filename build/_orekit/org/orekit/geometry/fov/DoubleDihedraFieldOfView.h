@@ -3,11 +3,6 @@
 
 #include "org/orekit/geometry/fov/PolygonalFieldOfView.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -17,6 +12,11 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -29,7 +29,7 @@ namespace org {
         class DoubleDihedraFieldOfView : public ::org::orekit::geometry::fov::PolygonalFieldOfView {
          public:
           enum {
-            mid_init$_c20ce71487552155,
+            mid_init$_fb2b6a92621f27cc,
             max_mid
           };
 

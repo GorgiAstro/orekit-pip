@@ -17,19 +17,19 @@ namespace java {
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      namespace euclidean {
-        namespace oned {
-          class Euclidean1D;
-          class IntervalsSet;
-          class Interval;
-        }
-      }
       namespace partitioning {
         class SubHyperplane;
-        class BoundaryProjection;
         class BSPTree;
+        class BoundaryProjection;
       }
       class Point;
+      namespace euclidean {
+        namespace oned {
+          class Interval;
+          class Euclidean1D;
+          class IntervalsSet;
+        }
+      }
     }
   }
 }
@@ -44,17 +44,17 @@ namespace org {
           class IntervalsSet : public ::org::hipparchus::geometry::partitioning::AbstractRegion {
            public:
             enum {
-              mid_init$_10f281d777284cea,
-              mid_init$_546559a08b08816f,
-              mid_init$_bdacd7c5506b494c,
-              mid_init$_87096e3fd8086100,
-              mid_asList_0d9551367f7ecdef,
-              mid_buildNew_faa8e1c775f8f198,
-              mid_getInf_557b8123390d8d0c,
-              mid_getSup_557b8123390d8d0c,
-              mid_iterator_834a3801c426326d,
-              mid_projectToBoundary_76fb0949df043b81,
-              mid_computeGeometricalProperties_0640e6acf969ed28,
+              mid_init$_8ba9fe7a847cecad,
+              mid_init$_936ab5386aba1bbf,
+              mid_init$_16deaf08470737f9,
+              mid_init$_b5167f35b2521627,
+              mid_asList_e62d3bb06d56d7e3,
+              mid_buildNew_3d4e98e70bfea87e,
+              mid_getInf_b74f83833fdad017,
+              mid_getSup_b74f83833fdad017,
+              mid_iterator_fc7780bc5d5b73b0,
+              mid_projectToBoundary_dcacfc1bc354b9c2,
+              mid_computeGeometricalProperties_a1fa5dae97ea5ed2,
               max_mid
             };
 

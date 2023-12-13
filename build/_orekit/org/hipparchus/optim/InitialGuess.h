@@ -24,8 +24,8 @@ namespace org {
       class InitialGuess : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_cc18240f4a737f14,
-          mid_getInitialGuess_a53a7513ecedada2,
+          mid_init$_ab69da052b88f50c,
+          mid_getInitialGuess_25e1757a36c4dde2,
           max_mid
         };
 

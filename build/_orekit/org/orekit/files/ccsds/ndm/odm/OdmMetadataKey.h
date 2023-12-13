@@ -41,9 +41,9 @@ namespace org {
             class OdmMetadataKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_817926ffc925014a,
-                mid_valueOf_2011d501e4da0a3f,
-                mid_values_97e2df4fd7b8b957,
+                mid_process_384505cbb3ae16a2,
+                mid_valueOf_eca7224a8570b0cc,
+                mid_values_15b2fbf6e08600b8,
                 max_mid
               };
 

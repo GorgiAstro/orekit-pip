@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class TimeVectorFunction;
       class FieldAbsoluteDate;
+      class TimeVectorFunction;
       class AbsoluteDate;
     }
   }
@@ -30,13 +30,13 @@ namespace org {
       class PythonTimeVectorFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_finalize_0640e6acf969ed28,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
-          mid_value_89e8b78e4211e023,
-          mid_value_f77452810420dd04,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_value_27b701db396ade01,
+          mid_value_954ad4b53022f84b,
           max_mid
         };
 

@@ -5,6 +5,20 @@
 
 namespace org {
   namespace orekit {
+    namespace frames {
+      class Frames;
+    }
+    namespace data {
+      class DataContext;
+    }
+    namespace bodies {
+      class CelestialBodies;
+    }
+    namespace models {
+      namespace earth {
+        class GeoMagneticFields;
+      }
+    }
     namespace forces {
       namespace gravity {
         namespace potential {
@@ -12,22 +26,8 @@ namespace org {
         }
       }
     }
-    namespace frames {
-      class Frames;
-    }
-    namespace data {
-      class DataContext;
-    }
     namespace time {
       class TimeScales;
-    }
-    namespace models {
-      namespace earth {
-        class GeoMagneticFields;
-      }
-    }
-    namespace bodies {
-      class CelestialBodies;
     }
   }
 }
@@ -46,16 +46,16 @@ namespace org {
       class PythonDataContext : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_finalize_0640e6acf969ed28,
-          mid_getCelestialBodies_a9d31e254defc040,
-          mid_getFrames_efd6f6d0fc89f7ce,
-          mid_getGeoMagneticFields_ac4b7520cc429937,
-          mid_getGravityFields_d0ea355ca6d68d00,
-          mid_getTimeScales_ac9ef17f951ae11a,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_getCelestialBodies_379576bb08948576,
+          mid_getFrames_19f184be91611afc,
+          mid_getGeoMagneticFields_78e2356802c487c4,
+          mid_getGravityFields_045bd2a3a054f1f1,
+          mid_getTimeScales_d1a571f8b033e2d3,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
           max_mid
         };
 

@@ -5,12 +5,15 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-      class PropagationType;
+    namespace attitudes {
+      class AttitudeProvider;
     }
     namespace time {
       class FieldAbsoluteDate;
+    }
+    namespace propagation {
+      class PropagationType;
+      class FieldSpacecraftState;
     }
     namespace orbits {
       class OrbitType;
@@ -18,9 +21,6 @@ namespace org {
     }
     namespace frames {
       class Frame;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
     }
   }
   namespace hipparchus {
@@ -42,19 +42,19 @@ namespace org {
         class FieldStateMapper : public ::java::lang::Object {
          public:
           enum {
-            mid_getAttitudeProvider_6df6b78ab9377151,
-            mid_getFrame_6c9bc0a928c56d4e,
-            mid_getMu_613c8f46c659f636,
-            mid_getOrbitType_2cea2a2cb3e02091,
-            mid_getPositionAngleType_f4984aee71df4c19,
-            mid_getReferenceDate_f1fe4daf77c66560,
-            mid_mapArrayToState_90cbab6bce028b0d,
-            mid_mapArrayToState_2d55a845b18a3006,
-            mid_mapDateToDouble_b884068a2c99f6ca,
-            mid_mapDoubleToDate_61a24ec56865ba5a,
-            mid_mapDoubleToDate_3281eb2bff5217b3,
-            mid_mapStateToArray_b5f12a51288f780a,
-            mid_setPositionAngleType_0640e6acf969ed28,
+            mid_getAttitudeProvider_331f12bb6017243b,
+            mid_getFrame_2c51111cc6894ba1,
+            mid_getMu_81520b552cb3fa26,
+            mid_getOrbitType_c7d4737d7afca612,
+            mid_getPositionAngleType_c25055891f180348,
+            mid_getReferenceDate_fa23a4301b9c83e7,
+            mid_mapArrayToState_1b9bfe1085235c3b,
+            mid_mapArrayToState_332029ddc6fecef1,
+            mid_mapDateToDouble_140b8964300ddedf,
+            mid_mapDoubleToDate_22e288de5d0d08a6,
+            mid_mapDoubleToDate_ee4cabe6e15ddac3,
+            mid_mapStateToArray_81a15f6754980fa1,
+            mid_setPositionAngleType_a1fa5dae97ea5ed2,
             max_mid
           };
 

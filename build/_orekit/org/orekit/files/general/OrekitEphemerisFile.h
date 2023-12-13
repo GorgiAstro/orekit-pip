@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace general {
-        class OrekitEphemerisFile$OrekitEphemerisSegment;
         class OrekitEphemerisFile$OrekitSatelliteEphemeris;
+        class OrekitEphemerisFile$OrekitEphemerisSegment;
         class EphemerisFile;
       }
     }
@@ -36,9 +36,9 @@ namespace org {
         class OrekitEphemerisFile : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_addSatellite_b3e01345e0c06820,
-            mid_getSatellites_1e62c2f73fbdd1c4,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_addSatellite_d4cceb8b0840180e,
+            mid_getSatellites_810bed48fafb0b9a,
             max_mid
           };
 

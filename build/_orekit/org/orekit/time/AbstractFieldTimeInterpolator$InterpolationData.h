@@ -21,8 +21,8 @@ namespace org {
     }
   }
   namespace hipparchus {
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -34,13 +34,13 @@ namespace org {
       class AbstractFieldTimeInterpolator$InterpolationData : public ::java::lang::Object {
        public:
         enum {
-          mid_getCachedSamples_79d13eb0d6af7c21,
-          mid_getField_20f98801541dcec1,
-          mid_getInterpolationDate_f1fe4daf77c66560,
-          mid_getNeighborList_0d9551367f7ecdef,
-          mid_getOne_613c8f46c659f636,
-          mid_getZero_613c8f46c659f636,
-          mid_getCentralDate_1c21077076c919e2,
+          mid_getCachedSamples_dadd4156df1ed960,
+          mid_getField_04d1f63e17d5c5d4,
+          mid_getInterpolationDate_fa23a4301b9c83e7,
+          mid_getNeighborList_e62d3bb06d56d7e3,
+          mid_getOne_81520b552cb3fa26,
+          mid_getZero_81520b552cb3fa26,
+          mid_getCentralDate_5b6d0b7fbadac432,
           max_mid
         };
 

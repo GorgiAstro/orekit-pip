@@ -3,10 +3,25 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace utils {
+      class IERSConventions;
+    }
+    namespace frames {
+      class EOPEntry;
+      class ItrfVersionProvider;
+      class EopHistoryLoader$Parser;
+    }
+    namespace time {
+      class TimeScales;
+    }
+  }
+}
 namespace java {
   namespace io {
-    class IOException;
     class InputStream;
+    class IOException;
   }
   namespace util {
     class Collection;
@@ -14,21 +29,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace frames {
-      class ItrfVersionProvider;
-      class EopHistoryLoader$Parser;
-      class EOPEntry;
-    }
-    namespace time {
-      class TimeScales;
-    }
-    namespace utils {
-      class IERSConventions;
-    }
   }
 }
 template<class T> class JArray;
@@ -40,11 +40,11 @@ namespace org {
       class EopHistoryLoader$Parser : public ::java::lang::Object {
        public:
         enum {
-          mid_newBulletinBParser_6f6ad2a6ae8828b0,
-          mid_newEopC04Parser_6f6ad2a6ae8828b0,
-          mid_newFinalsColumnsParser_f68fb5c951d93d52,
-          mid_newFinalsXmlParser_6f6ad2a6ae8828b0,
-          mid_parse_b37b9ef659753c44,
+          mid_newBulletinBParser_d23614a351b30e27,
+          mid_newEopC04Parser_d23614a351b30e27,
+          mid_newFinalsColumnsParser_1003aba2539b8602,
+          mid_newFinalsXmlParser_d23614a351b30e27,
+          mid_parse_45e6e751205dacc3,
           max_mid
         };
 

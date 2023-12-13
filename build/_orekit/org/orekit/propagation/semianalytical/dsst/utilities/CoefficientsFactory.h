@@ -4,10 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class Field;
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
       namespace semianalytical {
@@ -18,6 +14,10 @@ namespace org {
         }
       }
     }
+  }
+  namespace hipparchus {
+    class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -41,12 +41,12 @@ namespace org {
             class CoefficientsFactory : public ::java::lang::Object {
              public:
               enum {
-                mid_computeGsHs_91dc03a64efae3d5,
-                mid_computeGsHs_2355f919653f668f,
-                mid_computeQns_2d3e8b8ef3940f3c,
-                mid_computeQns_89ca475961b7cdea,
-                mid_computeVns_b99c49b5f9b9dff0,
-                mid_getVmns_093995dc5657c18c,
+                mid_computeGsHs_9703443b8e98cb65,
+                mid_computeGsHs_0cd7926eec02749e,
+                mid_computeQns_a75b2896a12fb778,
+                mid_computeQns_f9dc0468fd651ea0,
+                mid_computeVns_83270ffe4c2eeea0,
+                mid_getVmns_2f53baea9459d443,
                 max_mid
               };
 

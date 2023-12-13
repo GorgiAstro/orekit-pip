@@ -15,12 +15,12 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace files {
+      namespace sp3 {
+        class SP3Coordinate;
+        class SP3Segment;
+      }
       namespace general {
         class EphemerisFile$SatelliteEphemeris;
-      }
-      namespace sp3 {
-        class SP3Segment;
-        class SP3Coordinate;
       }
     }
     namespace frames {
@@ -44,16 +44,16 @@ namespace org {
         class SP3Ephemeris : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_d20f1b9933bf6131,
-            mid_addCoordinate_3b8f026ef20f7360,
-            mid_getAvailableDerivatives_6c4898d6ec0c3837,
-            mid_getFrame_6c9bc0a928c56d4e,
-            mid_getId_3cffd47377eca18a,
-            mid_getInterpolationSamples_412668abc8d889e9,
-            mid_getMu_557b8123390d8d0c,
-            mid_getSegments_0d9551367f7ecdef,
-            mid_getStart_7a97f7e149e79afb,
-            mid_getStop_7a97f7e149e79afb,
+            mid_init$_e9c7e5d02848b09d,
+            mid_addCoordinate_cc9684087c360e7f,
+            mid_getAvailableDerivatives_63bfdcc4b7a0536c,
+            mid_getFrame_2c51111cc6894ba1,
+            mid_getId_1c1fa1e935d6cdcf,
+            mid_getInterpolationSamples_55546ef6a647f39b,
+            mid_getMu_b74f83833fdad017,
+            mid_getSegments_e62d3bb06d56d7e3,
+            mid_getStart_c325492395d89b24,
+            mid_getStop_c325492395d89b24,
             max_mid
           };
 

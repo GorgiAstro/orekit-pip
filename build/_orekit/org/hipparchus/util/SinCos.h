@@ -24,10 +24,10 @@ namespace org {
       class SinCos : public ::java::lang::Object {
        public:
         enum {
-          mid_cos_557b8123390d8d0c,
-          mid_difference_35070a900a305827,
-          mid_sin_557b8123390d8d0c,
-          mid_sum_35070a900a305827,
+          mid_cos_b74f83833fdad017,
+          mid_difference_a483e6970cd1d876,
+          mid_sin_b74f83833fdad017,
+          mid_sum_a483e6970cd1d876,
           max_mid
         };
 

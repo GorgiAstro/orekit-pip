@@ -25,8 +25,8 @@ namespace org {
         class Embedding : public ::java::lang::Object {
          public:
           enum {
-            mid_toSpace_328d0d966eeb9668,
-            mid_toSubSpace_328d0d966eeb9668,
+            mid_toSpace_2214f7ad5b6ca158,
+            mid_toSubSpace_2214f7ad5b6ca158,
             max_mid
           };
 

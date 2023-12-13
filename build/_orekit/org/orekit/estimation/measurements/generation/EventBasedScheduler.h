@@ -5,6 +5,16 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class DatesSelector;
+      class AbsoluteDate;
+    }
+    namespace propagation {
+      class Propagator;
+      namespace events {
+        class EventDetector;
+      }
+    }
     namespace estimation {
       namespace measurements {
         namespace generation {
@@ -12,16 +22,6 @@ namespace org {
           class SignSemantic;
         }
       }
-    }
-    namespace time {
-      class DatesSelector;
-      class AbsoluteDate;
-    }
-    namespace propagation {
-      namespace events {
-        class EventDetector;
-      }
-      class Propagator;
     }
   }
 }
@@ -41,8 +41,8 @@ namespace org {
           class EventBasedScheduler : public ::org::orekit::estimation::measurements::generation::AbstractScheduler {
            public:
             enum {
-              mid_init$_816bd7dfa01bdc9d,
-              mid_measurementIsFeasible_981023bfa4a8a093,
+              mid_init$_96463f83d671d5ac,
+              mid_measurementIsFeasible_a35647bda2901f54,
               max_mid
             };
 

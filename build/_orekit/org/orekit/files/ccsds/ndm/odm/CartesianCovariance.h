@@ -14,24 +14,24 @@ namespace java {
   }
 }
 namespace org {
-  namespace hipparchus {
-    namespace linear {
-      class RealMatrix;
-    }
-  }
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace files {
       namespace ccsds {
-        namespace section {
-          class Data;
-        }
         namespace definitions {
           class FrameFacade;
         }
+        namespace section {
+          class Data;
+        }
       }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
     }
   }
 }
@@ -47,14 +47,14 @@ namespace org {
             class CartesianCovariance : public ::org::orekit::files::ccsds::section::CommentsContainer {
              public:
               enum {
-                mid_init$_d1f229fbdda3f023,
-                mid_getCovarianceMatrix_70a207fcbc031df2,
-                mid_getEpoch_7a97f7e149e79afb,
-                mid_getReferenceFrame_98f5fcaff3e3f9d2,
-                mid_setCovarianceMatrixEntry_754312f3734d6e2f,
-                mid_setEpoch_20affcbd28542333,
-                mid_setReferenceFrame_f55eee1236275bb1,
-                mid_validate_10f281d777284cea,
+                mid_init$_80d0ce2c6f944208,
+                mid_getCovarianceMatrix_f77d745f2128c391,
+                mid_getEpoch_c325492395d89b24,
+                mid_getReferenceFrame_69d8be1b6b0a1a94,
+                mid_setCovarianceMatrixEntry_94fe8d9ffeb50676,
+                mid_setEpoch_02135a6ef25adb4b,
+                mid_setReferenceFrame_4755133c5c4c59be,
+                mid_validate_8ba9fe7a847cecad,
                 max_mid
               };
 

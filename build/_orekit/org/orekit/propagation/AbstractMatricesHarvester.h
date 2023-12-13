@@ -31,14 +31,14 @@ namespace org {
       class AbstractMatricesHarvester : public ::java::lang::Object {
        public:
         enum {
-          mid_freezeColumnsNames_0640e6acf969ed28,
-          mid_getInitialJacobianColumn_008e0cff49b0ec83,
-          mid_getInitialStateTransitionMatrix_70a207fcbc031df2,
-          mid_getParametersJacobian_fc9cdfa83c55d6b2,
-          mid_getStateTransitionMatrix_fc9cdfa83c55d6b2,
-          mid_getStmName_3cffd47377eca18a,
-          mid_setReferenceState_8655761ebf04b503,
-          mid_getConversionJacobian_223e694727d946d7,
+          mid_freezeColumnsNames_a1fa5dae97ea5ed2,
+          mid_getInitialJacobianColumn_1d7f5d54f6c58f85,
+          mid_getInitialStateTransitionMatrix_f77d745f2128c391,
+          mid_getParametersJacobian_b7aa5791b069a41f,
+          mid_getStateTransitionMatrix_b7aa5791b069a41f,
+          mid_getStmName_1c1fa1e935d6cdcf,
+          mid_setReferenceState_280c3390961e0a50,
+          mid_getConversionJacobian_92a90247fa9f7aa3,
           max_mid
         };
 

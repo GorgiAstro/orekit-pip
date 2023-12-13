@@ -13,9 +13,9 @@ namespace org {
       }
     }
     namespace attitudes {
+      class AttitudeProvider;
       class AttitudesSequence$SwitchHandler;
       class FieldAttitude;
-      class AttitudeProvider;
       class Attitude;
     }
     namespace time {
@@ -24,23 +24,23 @@ namespace org {
     }
     namespace utils {
       class PVCoordinatesProvider;
-      class AngularDerivativesFilter;
       class FieldPVCoordinatesProvider;
+      class AngularDerivativesFilter;
     }
     namespace frames {
       class Frame;
     }
   }
   namespace hipparchus {
-    class Field;
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Rotation;
           class FieldRotation;
+          class Rotation;
         }
       }
     }
+    class Field;
   }
 }
 namespace java {
@@ -57,15 +57,15 @@ namespace org {
       class AttitudesSequence : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_addSwitchingCondition_2882efe71e6f5a14,
-          mid_getAttitude_77e3383de01f3e48,
-          mid_getAttitude_1306ac39e1d2de3f,
-          mid_getAttitudeRotation_5c74bfcf2d42825a,
-          mid_getAttitudeRotation_85bb0a19efdadc1d,
-          mid_registerSwitchEvents_52713bb4a21e1f43,
-          mid_registerSwitchEvents_341b878527f5b605,
-          mid_resetActiveProvider_8fa6c0c067ead7b2,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_addSwitchingCondition_3344837cede29df1,
+          mid_getAttitude_896ee4d68989b1e8,
+          mid_getAttitude_21845cfb0034fe1c,
+          mid_getAttitudeRotation_6acae55a2f5d3ab4,
+          mid_getAttitudeRotation_1bc07ea175743b30,
+          mid_registerSwitchEvents_7077d4247ef1c4a5,
+          mid_registerSwitchEvents_3fe3cc96d879b6c1,
+          mid_resetActiveProvider_8e4d3ea100bc0095,
           max_mid
         };
 

@@ -31,8 +31,8 @@ namespace org {
           class RotationConvention : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_710395c98821a651,
-              mid_values_61c711db04a03942,
+              mid_valueOf_f092df088d0600b1,
+              mid_values_ff7f663b6d62aea2,
               max_mid
             };
 

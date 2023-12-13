@@ -18,15 +18,15 @@ namespace org {
       class FieldAbsoluteDate;
       class AbsoluteDate;
     }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace propagation {
       namespace events {
-        class EventDetector;
         class FieldEventDetector;
+        class EventDetector;
       }
       class SpacecraftState;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
   namespace hipparchus {
@@ -57,19 +57,19 @@ namespace org {
           class PythonManeuverTriggers : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_addResetter_6c2e9e35ba95043d,
-              mid_addResetter_17259cc5ef51ebf7,
-              mid_finalize_0640e6acf969ed28,
-              mid_getEventDetectors_d7cce92225eb0db2,
-              mid_getFieldEventDetectors_8130af76f6998f44,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_init_0472264ad6f40bc2,
-              mid_isFiring_cf913265ec3c3fe7,
-              mid_isFiring_7ccb736f2a8bfc30,
-              mid_pythonDecRef_0640e6acf969ed28,
-              mid_pythonExtension_9e26256fb0d384a2,
-              mid_pythonExtension_3cd6a6b354c6aa22,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_addResetter_88f6b3eca6f2ace7,
+              mid_addResetter_7abb1f925b31f873,
+              mid_finalize_a1fa5dae97ea5ed2,
+              mid_getEventDetectors_14e21bf777ff0ccf,
+              mid_getFieldEventDetectors_283ad33581c047a0,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_init_2d7f9a496c7e9781,
+              mid_isFiring_430b36eccbd3b265,
+              mid_isFiring_d98e2ca7f972ae8c,
+              mid_pythonDecRef_a1fa5dae97ea5ed2,
+              mid_pythonExtension_6c0ce7e438e5ded4,
+              mid_pythonExtension_3d7dd2314a0dd456,
               max_mid
             };
 

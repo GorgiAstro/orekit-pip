@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace bodies {
-      class GeodeticPoint;
       class FieldGeodeticPoint;
+      class GeodeticPoint;
     }
     namespace time {
       class FieldAbsoluteDate;
@@ -34,8 +34,8 @@ namespace org {
           class DiscreteTroposphericModel : public ::org::orekit::utils::ParameterDriversProvider {
            public:
             enum {
-              mid_pathDelay_a4fdd877b349d4a6,
-              mid_pathDelay_129678f244f63094,
+              mid_pathDelay_6f66c6b7094d6f08,
+              mid_pathDelay_2edbfa177156ee09,
               max_mid
             };
 

@@ -17,20 +17,20 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-      class TimeScales;
-      class AbsoluteDate;
-    }
     namespace utils {
       class IERSConventions;
     }
     namespace frames {
       class FieldPoleCorrection;
       class EOPEntry;
-      class ITRFVersion;
       class EOPHistory;
       class PoleCorrection;
+      class ITRFVersion;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+      class TimeScales;
     }
   }
   namespace hipparchus {
@@ -46,30 +46,30 @@ namespace org {
       class EOPHistory : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_fab96ebbb42599e8,
-          mid_cachesTidalCorrection_89b302893bdbe1f1,
-          mid_checkEOPContinuity_10f281d777284cea,
-          mid_getConventions_690653480c12ac72,
-          mid_getEOPHistoryWithoutCachedTidalCorrection_9a64cc378cf7ab6b,
-          mid_getEndDate_7a97f7e149e79afb,
-          mid_getEntries_0d9551367f7ecdef,
-          mid_getEquinoxNutationCorrection_89e8b78e4211e023,
-          mid_getEquinoxNutationCorrection_f77452810420dd04,
-          mid_getITRFVersion_df72f6fe6d5dd352,
-          mid_getInterpolationDegree_412668abc8d889e9,
-          mid_getLOD_b0b988f941da47d8,
-          mid_getLOD_b884068a2c99f6ca,
-          mid_getNonRotatinOriginNutationCorrection_89e8b78e4211e023,
-          mid_getNonRotatinOriginNutationCorrection_f77452810420dd04,
-          mid_getPoleCorrection_2c5aebecdb63e56e,
-          mid_getPoleCorrection_edfb8c5443b93454,
-          mid_getStartDate_7a97f7e149e79afb,
-          mid_getTimeScales_ac9ef17f951ae11a,
-          mid_getUT1MinusUTC_b0b988f941da47d8,
-          mid_getUT1MinusUTC_b884068a2c99f6ca,
-          mid_isSimpleEop_89b302893bdbe1f1,
-          mid_hasDataFor_981023bfa4a8a093,
-          mid_getNeighbors_b9470a4d1609cf1f,
+          mid_init$_e1d22f124694cefe,
+          mid_cachesTidalCorrection_9ab94ac1dc23b105,
+          mid_checkEOPContinuity_8ba9fe7a847cecad,
+          mid_getConventions_53aaf70620a914af,
+          mid_getEOPHistoryWithoutCachedTidalCorrection_f9d30be358d43685,
+          mid_getEndDate_c325492395d89b24,
+          mid_getEntries_e62d3bb06d56d7e3,
+          mid_getEquinoxNutationCorrection_27b701db396ade01,
+          mid_getEquinoxNutationCorrection_954ad4b53022f84b,
+          mid_getITRFVersion_a8ff2358cca8c992,
+          mid_getInterpolationDegree_55546ef6a647f39b,
+          mid_getLOD_fd347811007a6ba3,
+          mid_getLOD_140b8964300ddedf,
+          mid_getNonRotatinOriginNutationCorrection_27b701db396ade01,
+          mid_getNonRotatinOriginNutationCorrection_954ad4b53022f84b,
+          mid_getPoleCorrection_a726f9782dce00d1,
+          mid_getPoleCorrection_2c525218d1f29ffc,
+          mid_getStartDate_c325492395d89b24,
+          mid_getTimeScales_d1a571f8b033e2d3,
+          mid_getUT1MinusUTC_fd347811007a6ba3,
+          mid_getUT1MinusUTC_140b8964300ddedf,
+          mid_isSimpleEop_9ab94ac1dc23b105,
+          mid_getNeighbors_70177eb25c19b8d4,
+          mid_hasDataFor_a35647bda2901f54,
           max_mid
         };
 

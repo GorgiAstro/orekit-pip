@@ -3,11 +3,6 @@
 
 #include "org/orekit/time/TimeShiftable.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
@@ -16,6 +11,11 @@ namespace org {
     namespace time {
       class FieldTimeShiftable;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,7 +27,7 @@ namespace org {
       class FieldTimeShiftable : public ::org::orekit::time::TimeShiftable {
        public:
         enum {
-          mid_shiftedBy_726000f3d379befb,
+          mid_shiftedBy_7996cf2c358d897a,
           max_mid
         };
 

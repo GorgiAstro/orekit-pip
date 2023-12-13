@@ -16,8 +16,8 @@ namespace org {
     namespace propagation {
       namespace events {
         namespace handlers {
-          class RecordAndContinue$Event;
           class EventHandler;
+          class RecordAndContinue$Event;
         }
         class EventDetector;
       }
@@ -43,11 +43,11 @@ namespace org {
           class RecordAndContinue : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_init$_4ccaedadb068bdeb,
-              mid_clear_0640e6acf969ed28,
-              mid_eventOccurred_c85ac59cb25f2670,
-              mid_getEvents_0d9551367f7ecdef,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_init$_0e7c3032c7c93ed3,
+              mid_clear_a1fa5dae97ea5ed2,
+              mid_eventOccurred_ae9b0131fefe6c67,
+              mid_getEvents_e62d3bb06d56d7e3,
               max_mid
             };
 

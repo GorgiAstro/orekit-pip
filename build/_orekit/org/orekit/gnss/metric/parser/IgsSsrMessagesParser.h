@@ -23,9 +23,9 @@ namespace org {
           class IgsSsrMessagesParser : public ::org::orekit::gnss::metric::parser::MessagesParser {
            public:
             enum {
-              mid_init$_4ccaedadb068bdeb,
-              mid_getMessageType_ceeebd64fcb1f2de,
-              mid_parseMessageNumber_2ab051b27e6414f5,
+              mid_init$_0e7c3032c7c93ed3,
+              mid_getMessageType_7fab758a818e0182,
+              mid_parseMessageNumber_c7387344adbf63af,
               max_mid
             };
 

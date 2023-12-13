@@ -4,6 +4,15 @@
 #include "org/orekit/rugged/raster/UpdatableTile.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace rugged {
       namespace utils {
@@ -11,15 +20,6 @@ namespace org {
       }
       namespace raster {
         class Tile$Location;
-      }
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
       }
     }
   }
@@ -39,29 +39,29 @@ namespace org {
         class Tile : public ::org::orekit::rugged::raster::UpdatableTile {
          public:
           enum {
-            mid_cellIntersection_9786a4c652387487,
-            mid_getElevationAtIndices_21b81d54c06b64b0,
-            mid_getFloorLatitudeIndex_abbeb9db7144ca23,
-            mid_getFloorLongitudeIndex_abbeb9db7144ca23,
-            mid_getLatitudeAtIndex_69cfb132c661aca4,
-            mid_getLatitudeRows_412668abc8d889e9,
-            mid_getLatitudeStep_557b8123390d8d0c,
-            mid_getLocation_f18cc9781bcd74eb,
-            mid_getLongitudeAtIndex_69cfb132c661aca4,
-            mid_getLongitudeColumns_412668abc8d889e9,
-            mid_getLongitudeStep_557b8123390d8d0c,
-            mid_getMaxElevation_557b8123390d8d0c,
-            mid_getMaxElevationLatitudeIndex_412668abc8d889e9,
-            mid_getMaxElevationLongitudeIndex_412668abc8d889e9,
-            mid_getMaximumLatitude_557b8123390d8d0c,
-            mid_getMaximumLongitude_557b8123390d8d0c,
-            mid_getMinElevation_557b8123390d8d0c,
-            mid_getMinElevationLatitudeIndex_412668abc8d889e9,
-            mid_getMinElevationLongitudeIndex_412668abc8d889e9,
-            mid_getMinimumLatitude_557b8123390d8d0c,
-            mid_getMinimumLongitude_557b8123390d8d0c,
-            mid_interpolateElevation_2268d18be49a6087,
-            mid_tileUpdateCompleted_0640e6acf969ed28,
+            mid_cellIntersection_4f0fb331517d0f4d,
+            mid_getElevationAtIndices_cad98089d00f8a5b,
+            mid_getFloorLatitudeIndex_2af4736545087009,
+            mid_getFloorLongitudeIndex_2af4736545087009,
+            mid_getLatitudeAtIndex_2afcbc21f4e57ab2,
+            mid_getLatitudeRows_55546ef6a647f39b,
+            mid_getLatitudeStep_b74f83833fdad017,
+            mid_getLocation_0b4a238e5205c712,
+            mid_getLongitudeAtIndex_2afcbc21f4e57ab2,
+            mid_getLongitudeColumns_55546ef6a647f39b,
+            mid_getLongitudeStep_b74f83833fdad017,
+            mid_getMaxElevation_b74f83833fdad017,
+            mid_getMaxElevationLatitudeIndex_55546ef6a647f39b,
+            mid_getMaxElevationLongitudeIndex_55546ef6a647f39b,
+            mid_getMaximumLatitude_b74f83833fdad017,
+            mid_getMaximumLongitude_b74f83833fdad017,
+            mid_getMinElevation_b74f83833fdad017,
+            mid_getMinElevationLatitudeIndex_55546ef6a647f39b,
+            mid_getMinElevationLongitudeIndex_55546ef6a647f39b,
+            mid_getMinimumLatitude_b74f83833fdad017,
+            mid_getMinimumLongitude_b74f83833fdad017,
+            mid_interpolateElevation_99e3200dafc19573,
+            mid_tileUpdateCompleted_a1fa5dae97ea5ed2,
             max_mid
           };
 

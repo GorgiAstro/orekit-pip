@@ -9,10 +9,10 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace adm {
+            class AdmHeader;
             namespace acm {
               class Acm;
             }
-            class AdmHeader;
           }
         }
       }
@@ -43,8 +43,8 @@ namespace org {
               class AcmWriter : public ::org::orekit::files::ccsds::utils::generation::AbstractMessageWriter {
                public:
                 enum {
-                  mid_init$_cba1f12fdff2950e,
-                  mid_writeSegmentContent_e9836ce27ccfe3b9,
+                  mid_init$_5df9b2a3aa97175c,
+                  mid_writeSegmentContent_309d7ce7156c8c23,
                   max_mid
                 };
 

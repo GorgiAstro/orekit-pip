@@ -25,11 +25,11 @@ namespace org {
         class SearchInterval : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_ab23f4ae0fb33968,
-            mid_init$_87096e3fd8086100,
-            mid_getMax_557b8123390d8d0c,
-            mid_getMin_557b8123390d8d0c,
-            mid_getStartValue_557b8123390d8d0c,
+            mid_init$_369b4c97255d5afa,
+            mid_init$_b5167f35b2521627,
+            mid_getMax_b74f83833fdad017,
+            mid_getMin_b74f83833fdad017,
+            mid_getStartValue_b74f83833fdad017,
             max_mid
           };
 

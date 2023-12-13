@@ -3,6 +3,12 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
@@ -14,12 +20,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,8 +34,8 @@ namespace org {
             class CovarianceMethod : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_5d9d13c02fa6e83f,
-                mid_values_f84183ccdd089e0a,
+                mid_valueOf_483268284b6a72b6,
+                mid_values_53ceb335c46e8998,
                 max_mid
               };
 

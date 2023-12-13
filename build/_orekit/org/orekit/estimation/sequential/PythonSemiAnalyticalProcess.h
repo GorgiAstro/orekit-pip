@@ -3,15 +3,21 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace estimation {
-      namespace measurements {
-        class ObservedMeasurement;
-      }
       namespace sequential {
         class KalmanObserver;
         class SemiAnalyticalProcess;
+      }
+      namespace measurements {
+        class ObservedMeasurement;
       }
     }
     namespace propagation {
@@ -26,12 +32,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -42,17 +42,17 @@ namespace org {
         class PythonSemiAnalyticalProcess : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_finalize_0640e6acf969ed28,
-            mid_finalizeEstimation_6f886d47d0124943,
-            mid_finalizeOperationsObservationGrid_0640e6acf969ed28,
-            mid_getObserver_25fab8044126746b,
-            mid_initializeShortPeriodicTerms_8655761ebf04b503,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
-            mid_updateNominalSpacecraftState_8655761ebf04b503,
-            mid_updateShortPeriods_8655761ebf04b503,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_finalizeEstimation_aef7db4b13ced902,
+            mid_finalizeOperationsObservationGrid_a1fa5dae97ea5ed2,
+            mid_getObserver_f666564f549c2e32,
+            mid_initializeShortPeriodicTerms_280c3390961e0a50,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_updateNominalSpacecraftState_280c3390961e0a50,
+            mid_updateShortPeriods_280c3390961e0a50,
             max_mid
           };
 

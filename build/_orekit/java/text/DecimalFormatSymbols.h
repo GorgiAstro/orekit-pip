@@ -11,13 +11,13 @@ namespace java {
   namespace io {
     class Serializable;
   }
-  namespace text {
-    class DecimalFormatSymbols;
-  }
   namespace lang {
     class Class;
     class Cloneable;
     class String;
+  }
+  namespace text {
+    class DecimalFormatSymbols;
   }
 }
 template<class T> class JArray;
@@ -28,44 +28,44 @@ namespace java {
     class DecimalFormatSymbols : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_0640e6acf969ed28,
-        mid_init$_be68e56b20169c78,
-        mid_clone_e661fe3ba2fafb22,
-        mid_equals_221e8e85cb385209,
-        mid_getAvailableLocales_85ff0d07ca843902,
-        mid_getCurrency_e0e11425d6f25aed,
-        mid_getCurrencySymbol_3cffd47377eca18a,
-        mid_getDecimalSeparator_d156d1ce330f6993,
-        mid_getDigit_d156d1ce330f6993,
-        mid_getExponentSeparator_3cffd47377eca18a,
-        mid_getGroupingSeparator_d156d1ce330f6993,
-        mid_getInfinity_3cffd47377eca18a,
-        mid_getInstance_42697fd6214b108c,
-        mid_getInstance_bab4cf5650304785,
-        mid_getInternationalCurrencySymbol_3cffd47377eca18a,
-        mid_getMinusSign_d156d1ce330f6993,
-        mid_getMonetaryDecimalSeparator_d156d1ce330f6993,
-        mid_getNaN_3cffd47377eca18a,
-        mid_getPatternSeparator_d156d1ce330f6993,
-        mid_getPerMill_d156d1ce330f6993,
-        mid_getPercent_d156d1ce330f6993,
-        mid_getZeroDigit_d156d1ce330f6993,
-        mid_hashCode_412668abc8d889e9,
-        mid_setCurrency_f72be4c0db9df8b9,
-        mid_setCurrencySymbol_f5ffdf29129ef90a,
-        mid_setDecimalSeparator_102587d250c3217b,
-        mid_setDigit_102587d250c3217b,
-        mid_setExponentSeparator_f5ffdf29129ef90a,
-        mid_setGroupingSeparator_102587d250c3217b,
-        mid_setInfinity_f5ffdf29129ef90a,
-        mid_setInternationalCurrencySymbol_f5ffdf29129ef90a,
-        mid_setMinusSign_102587d250c3217b,
-        mid_setMonetaryDecimalSeparator_102587d250c3217b,
-        mid_setNaN_f5ffdf29129ef90a,
-        mid_setPatternSeparator_102587d250c3217b,
-        mid_setPerMill_102587d250c3217b,
-        mid_setPercent_102587d250c3217b,
-        mid_setZeroDigit_102587d250c3217b,
+        mid_init$_a1fa5dae97ea5ed2,
+        mid_init$_ae952945a283d1a5,
+        mid_clone_541690f9ee81d3ad,
+        mid_equals_460c5e2d9d51c6cc,
+        mid_getAvailableLocales_8d2cd0b971cc7b85,
+        mid_getCurrency_5c4bce1ad9114b42,
+        mid_getCurrencySymbol_1c1fa1e935d6cdcf,
+        mid_getDecimalSeparator_5e2f8fc4d7c03fbd,
+        mid_getDigit_5e2f8fc4d7c03fbd,
+        mid_getExponentSeparator_1c1fa1e935d6cdcf,
+        mid_getGroupingSeparator_5e2f8fc4d7c03fbd,
+        mid_getInfinity_1c1fa1e935d6cdcf,
+        mid_getInstance_36ca27640d647410,
+        mid_getInstance_4b7e8b7f5086f229,
+        mid_getInternationalCurrencySymbol_1c1fa1e935d6cdcf,
+        mid_getMinusSign_5e2f8fc4d7c03fbd,
+        mid_getMonetaryDecimalSeparator_5e2f8fc4d7c03fbd,
+        mid_getNaN_1c1fa1e935d6cdcf,
+        mid_getPatternSeparator_5e2f8fc4d7c03fbd,
+        mid_getPerMill_5e2f8fc4d7c03fbd,
+        mid_getPercent_5e2f8fc4d7c03fbd,
+        mid_getZeroDigit_5e2f8fc4d7c03fbd,
+        mid_hashCode_55546ef6a647f39b,
+        mid_setCurrency_4943c1e384d46623,
+        mid_setCurrencySymbol_734b91ac30d5f9b4,
+        mid_setDecimalSeparator_df95ad02f5b4acd9,
+        mid_setDigit_df95ad02f5b4acd9,
+        mid_setExponentSeparator_734b91ac30d5f9b4,
+        mid_setGroupingSeparator_df95ad02f5b4acd9,
+        mid_setInfinity_734b91ac30d5f9b4,
+        mid_setInternationalCurrencySymbol_734b91ac30d5f9b4,
+        mid_setMinusSign_df95ad02f5b4acd9,
+        mid_setMonetaryDecimalSeparator_df95ad02f5b4acd9,
+        mid_setNaN_734b91ac30d5f9b4,
+        mid_setPatternSeparator_df95ad02f5b4acd9,
+        mid_setPerMill_df95ad02f5b4acd9,
+        mid_setPercent_df95ad02f5b4acd9,
+        mid_setZeroDigit_df95ad02f5b4acd9,
         max_mid
       };
 

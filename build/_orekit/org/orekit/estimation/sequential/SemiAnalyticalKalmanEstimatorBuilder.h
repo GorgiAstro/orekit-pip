@@ -5,20 +5,20 @@
 
 namespace org {
   namespace orekit {
-    namespace estimation {
-      namespace sequential {
-        class SemiAnalyticalKalmanEstimator;
-        class SemiAnalyticalKalmanEstimatorBuilder;
-        class CovarianceMatrixProvider;
-      }
+    namespace utils {
+      class ParameterDriversList;
     }
     namespace propagation {
       namespace conversion {
         class DSSTPropagatorBuilder;
       }
     }
-    namespace utils {
-      class ParameterDriversList;
+    namespace estimation {
+      namespace sequential {
+        class CovarianceMatrixProvider;
+        class SemiAnalyticalKalmanEstimator;
+        class SemiAnalyticalKalmanEstimatorBuilder;
+      }
     }
   }
   namespace hipparchus {
@@ -42,11 +42,11 @@ namespace org {
         class SemiAnalyticalKalmanEstimatorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_addPropagationConfiguration_6fe2b5afb594b4e3,
-            mid_build_edfcb27d4dad6e67,
-            mid_decomposer_032ccc0017a05cb8,
-            mid_estimatedMeasurementsParameters_79d89206611a8ec8,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_addPropagationConfiguration_a396da815d82426d,
+            mid_build_d2e217fd1610430e,
+            mid_decomposer_9c30c144bdffdffa,
+            mid_estimatedMeasurementsParameters_93ad8e267c04336d,
             max_mid
           };
 

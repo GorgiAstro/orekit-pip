@@ -5,6 +5,9 @@
 
 namespace org {
   namespace orekit {
+    namespace utils {
+      class ParameterDriversList;
+    }
     namespace estimation {
       namespace measurements {
         class ObservedMeasurement;
@@ -13,9 +16,6 @@ namespace org {
       namespace sequential {
         class MeasurementDecorator;
       }
-    }
-    namespace utils {
-      class ParameterDriversList;
     }
     namespace time {
       class AbsoluteDate;
@@ -26,8 +26,8 @@ namespace org {
   }
   namespace hipparchus {
     namespace linear {
-      class RealMatrix;
       class RealVector;
+      class RealMatrix;
     }
   }
 }
@@ -46,19 +46,19 @@ namespace org {
         class KalmanEstimatorUtil : public ::java::lang::Object {
          public:
           enum {
-            mid_applyDynamicOutlierFilter_9cc024d2d85b53a0,
-            mid_checkDimension_40ad4cd5e1594ee9,
-            mid_computeInnovationVector_9a65bd68ddc90580,
-            mid_computeInnovationVector_efa365481a703aad,
-            mid_decorate_d5883b878ac967fe,
-            mid_decorateUnscented_d5883b878ac967fe,
-            mid_filterRelevant_e38c466cbe3b97ac,
-            mid_normalizeCovarianceMatrix_6c8b771e6146cbec,
-            mid_unnormalizeCovarianceMatrix_6c8b771e6146cbec,
-            mid_unnormalizeInnovationCovarianceMatrix_6c8b771e6146cbec,
-            mid_unnormalizeKalmanGainMatrix_55f32a8dee1bf581,
-            mid_unnormalizeMeasurementJacobian_55f32a8dee1bf581,
-            mid_unnormalizeStateTransitionMatrix_6c8b771e6146cbec,
+            mid_applyDynamicOutlierFilter_b27bf6983be17cd5,
+            mid_checkDimension_12d71379b192fd42,
+            mid_computeInnovationVector_ec65c5758c341ab5,
+            mid_computeInnovationVector_f9ff8f3570f5b024,
+            mid_decorate_77e5ff2a058cebc7,
+            mid_decorateUnscented_77e5ff2a058cebc7,
+            mid_filterRelevant_6c3b3d666dfbaac2,
+            mid_normalizeCovarianceMatrix_7639737fe0da56a8,
+            mid_unnormalizeCovarianceMatrix_7639737fe0da56a8,
+            mid_unnormalizeInnovationCovarianceMatrix_7639737fe0da56a8,
+            mid_unnormalizeKalmanGainMatrix_5e632611367b44d1,
+            mid_unnormalizeMeasurementJacobian_5e632611367b44d1,
+            mid_unnormalizeStateTransitionMatrix_7639737fe0da56a8,
             max_mid
           };
 

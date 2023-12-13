@@ -4,23 +4,20 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace attitudes {
-      class Attitude;
-      class AttitudeProvider;
-      class FieldAttitude;
-    }
-    namespace forces {
-      namespace maneuvers {
-        namespace propulsion {
-          class ThrustDirectionProvider;
-          class ThrustDirectionAndAttitudeProvider;
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
         }
       }
     }
-    namespace frames {
-      class LOF;
-      class Frame;
+  }
+  namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+      class FieldAttitude;
+      class Attitude;
     }
     namespace time {
       class FieldAbsoluteDate;
@@ -30,12 +27,15 @@ namespace org {
       class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
     }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
+    namespace frames {
+      class LOF;
+      class Frame;
+    }
+    namespace forces {
+      namespace maneuvers {
+        namespace propulsion {
+          class ThrustDirectionProvider;
+          class ThrustDirectionAndAttitudeProvider;
         }
       }
     }
@@ -57,15 +57,15 @@ namespace org {
           class ThrustDirectionAndAttitudeProvider : public ::java::lang::Object {
            public:
             enum {
-              mid_buildFromCustomAttitude_f505ac706dd9e1f4,
-              mid_buildFromDirectionInFrame_607094d91814431a,
-              mid_buildFromDirectionInLOF_8aa09489b3ae0491,
-              mid_buildFromFixedDirectionInSatelliteFrame_80eb1072ad4c73de,
-              mid_getAttitude_1306ac39e1d2de3f,
-              mid_getAttitude_77e3383de01f3e48,
-              mid_getManeuverAttitudeProvider_6df6b78ab9377151,
-              mid_getThrusterAxisInSatelliteFrame_f88961cca75a2c0a,
-              mid_getAttitudeFromFrame_1306ac39e1d2de3f,
+              mid_buildFromCustomAttitude_a3f64f8717c9511d,
+              mid_buildFromDirectionInFrame_63447e4da4c98de8,
+              mid_buildFromDirectionInLOF_843847f4f0e08985,
+              mid_buildFromFixedDirectionInSatelliteFrame_4df7434fe337ce1b,
+              mid_getAttitude_21845cfb0034fe1c,
+              mid_getAttitude_896ee4d68989b1e8,
+              mid_getManeuverAttitudeProvider_331f12bb6017243b,
+              mid_getThrusterAxisInSatelliteFrame_8b724f8b4fdad1a2,
+              mid_getAttitudeFromFrame_21845cfb0034fe1c,
               max_mid
             };
 

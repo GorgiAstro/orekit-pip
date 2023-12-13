@@ -8,18 +8,14 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
     class CalculusFieldElement;
   }
   namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
-    }
     namespace forces {
       namespace maneuvers {
         namespace propulsion {
@@ -33,6 +29,10 @@ namespace org {
     }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
     }
   }
 }
@@ -56,20 +56,20 @@ namespace org {
           class PythonThrustPropulsionModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_finalize_0640e6acf969ed28,
-              mid_getControl3DVectorCostType_601f05e5d0c82ad9,
-              mid_getFlowRate_1bbf81d80c47ecdd,
-              mid_getFlowRate_4ad317f7598a10a9,
-              mid_getFlowRate_810dcb8f9f5d191a,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_getThrustVector_3fff8c49d4e2dc6b,
-              mid_getThrustVector_b61fb59a041240c6,
-              mid_getThrustVector_61944e27a39e8290,
-              mid_init_0472264ad6f40bc2,
-              mid_pythonDecRef_0640e6acf969ed28,
-              mid_pythonExtension_9e26256fb0d384a2,
-              mid_pythonExtension_3cd6a6b354c6aa22,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_finalize_a1fa5dae97ea5ed2,
+              mid_getControl3DVectorCostType_2eba60c257188b83,
+              mid_getFlowRate_a17ea857ce74d258,
+              mid_getFlowRate_8e86371c61460f23,
+              mid_getFlowRate_f867476668f8eb00,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_getThrustVector_9019a5b32b11453a,
+              mid_getThrustVector_0ce449c67b5ffd9c,
+              mid_getThrustVector_20bded0292328743,
+              mid_init_2d7f9a496c7e9781,
+              mid_pythonDecRef_a1fa5dae97ea5ed2,
+              mid_pythonExtension_6c0ce7e438e5ded4,
+              mid_pythonExtension_3d7dd2314a0dd456,
               max_mid
             };
 
@@ -89,8 +89,8 @@ namespace org {
             void finalize() const;
             ::org::orekit::forces::maneuvers::Control3DVectorCostType getControl3DVectorCostType() const;
             jdouble getFlowRate(const ::org::orekit::propagation::SpacecraftState &) const;
-            ::org::hipparchus::CalculusFieldElement getFlowRate(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
             jdouble getFlowRate(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
+            ::org::hipparchus::CalculusFieldElement getFlowRate(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
             ::java::util::List getParametersDrivers() const;
             ::org::hipparchus::geometry::euclidean::threed::Vector3D getThrustVector(const ::org::orekit::propagation::SpacecraftState &) const;
             ::org::hipparchus::geometry::euclidean::threed::FieldVector3D getThrustVector(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;

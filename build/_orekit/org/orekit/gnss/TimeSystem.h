@@ -8,12 +8,12 @@ namespace org {
     namespace errors {
       class OrekitIllegalArgumentException;
     }
-    namespace gnss {
-      class TimeSystem;
-    }
     namespace time {
       class TimeScales;
       class TimeScale;
+    }
+    namespace gnss {
+      class TimeSystem;
     }
   }
 }
@@ -32,13 +32,13 @@ namespace org {
       class TimeSystem : public ::java::lang::Enum {
        public:
         enum {
-          mid_getKey_3cffd47377eca18a,
-          mid_getTimeScale_dd32dd7783926716,
-          mid_parseOneLetterCode_1259673d1cb4346c,
-          mid_parseTimeSystem_1259673d1cb4346c,
-          mid_parseTwoLettersCode_1259673d1cb4346c,
-          mid_valueOf_1259673d1cb4346c,
-          mid_values_4d6e6a242884854e,
+          mid_getKey_1c1fa1e935d6cdcf,
+          mid_getTimeScale_d429fb7b5ff8192c,
+          mid_parseOneLetterCode_da16e21e6c32114e,
+          mid_parseTimeSystem_da16e21e6c32114e,
+          mid_parseTwoLettersCode_da16e21e6c32114e,
+          mid_valueOf_da16e21e6c32114e,
+          mid_values_e10ea8986e8f1ce2,
           max_mid
         };
 

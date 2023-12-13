@@ -1,32 +1,197 @@
 #include <jni.h>
 #include "JCCEnv.h"
-#include "java/util/Queue.h"
+#include "java/lang/NamedPackage.h"
 #include "java/lang/Class.h"
-#include "java/lang/Object.h"
 #include "JArray.h"
 
 namespace java {
-  namespace util {
+  namespace lang {
 
-    ::java::lang::Class *Queue::class$ = NULL;
-    jmethodID *Queue::mids$ = NULL;
-    bool Queue::live$ = false;
+    ::java::lang::Class *NamedPackage::class$ = NULL;
+    jmethodID *NamedPackage::mids$ = NULL;
+    bool NamedPackage::live$ = false;
 
-    jclass Queue::initializeClass(bool getOnly)
+    jclass NamedPackage::initializeClass(bool getOnly)
     {
       if (getOnly)
         return (jclass) (live$ ? class$->this$ : NULL);
       if (class$ == NULL)
       {
-        jclass cls = (jclass) env->findClass("java/util/Queue");
+        jclass cls = (jclass) env->findClass("java/lang/NamedPackage");
+
+        class$ = new ::java::lang::Class(cls);
+        live$ = true;
+      }
+      return (jclass) class$->this$;
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace java {
+  namespace lang {
+    static PyObject *t_NamedPackage_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_NamedPackage_instance_(PyTypeObject *type, PyObject *arg);
+
+    static PyMethodDef t_NamedPackage__methods_[] = {
+      DECLARE_METHOD(t_NamedPackage, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_NamedPackage, instance_, METH_O | METH_CLASS),
+      { NULL, NULL, 0, NULL }
+    };
+
+    static PyType_Slot PY_TYPE_SLOTS(NamedPackage)[] = {
+      { Py_tp_methods, t_NamedPackage__methods_ },
+      { Py_tp_init, (void *) abstract_init },
+      { 0, NULL }
+    };
+
+    static PyType_Def *PY_TYPE_BASES(NamedPackage)[] = {
+      &PY_TYPE_DEF(::java::lang::Object),
+      NULL
+    };
+
+    DEFINE_TYPE(NamedPackage, t_NamedPackage, NamedPackage);
+
+    void t_NamedPackage::install(PyObject *module)
+    {
+      installType(&PY_TYPE(NamedPackage), &PY_TYPE_DEF(NamedPackage), module, "NamedPackage", 0);
+    }
+
+    void t_NamedPackage::initialize(PyObject *module)
+    {
+      PyObject_SetAttrString((PyObject *) PY_TYPE(NamedPackage), "class_", make_descriptor(NamedPackage::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(NamedPackage), "wrapfn_", make_descriptor(t_NamedPackage::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(NamedPackage), "boxfn_", make_descriptor(boxObject));
+    }
+
+    static PyObject *t_NamedPackage_cast_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!(arg = castCheck(arg, NamedPackage::initializeClass, 1)))
+        return NULL;
+      return t_NamedPackage::wrap_Object(NamedPackage(((t_NamedPackage *) arg)->object.this$));
+    }
+    static PyObject *t_NamedPackage_instance_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!castCheck(arg, NamedPackage::initializeClass, 0))
+        Py_RETURN_FALSE;
+      Py_RETURN_TRUE;
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "java/io/ObjectStreamException.h"
+#include "java/lang/Class.h"
+#include "JArray.h"
+
+namespace java {
+  namespace io {
+
+    ::java::lang::Class *ObjectStreamException::class$ = NULL;
+    jmethodID *ObjectStreamException::mids$ = NULL;
+    bool ObjectStreamException::live$ = false;
+
+    jclass ObjectStreamException::initializeClass(bool getOnly)
+    {
+      if (getOnly)
+        return (jclass) (live$ ? class$->this$ : NULL);
+      if (class$ == NULL)
+      {
+        jclass cls = (jclass) env->findClass("java/io/ObjectStreamException");
+
+        class$ = new ::java::lang::Class(cls);
+        live$ = true;
+      }
+      return (jclass) class$->this$;
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace java {
+  namespace io {
+    static PyObject *t_ObjectStreamException_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_ObjectStreamException_instance_(PyTypeObject *type, PyObject *arg);
+
+    static PyMethodDef t_ObjectStreamException__methods_[] = {
+      DECLARE_METHOD(t_ObjectStreamException, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_ObjectStreamException, instance_, METH_O | METH_CLASS),
+      { NULL, NULL, 0, NULL }
+    };
+
+    static PyType_Slot PY_TYPE_SLOTS(ObjectStreamException)[] = {
+      { Py_tp_methods, t_ObjectStreamException__methods_ },
+      { Py_tp_init, (void *) abstract_init },
+      { 0, NULL }
+    };
+
+    static PyType_Def *PY_TYPE_BASES(ObjectStreamException)[] = {
+      &PY_TYPE_DEF(::java::io::IOException),
+      NULL
+    };
+
+    DEFINE_TYPE(ObjectStreamException, t_ObjectStreamException, ObjectStreamException);
+
+    void t_ObjectStreamException::install(PyObject *module)
+    {
+      installType(&PY_TYPE(ObjectStreamException), &PY_TYPE_DEF(ObjectStreamException), module, "ObjectStreamException", 0);
+    }
+
+    void t_ObjectStreamException::initialize(PyObject *module)
+    {
+      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectStreamException), "class_", make_descriptor(ObjectStreamException::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectStreamException), "wrapfn_", make_descriptor(t_ObjectStreamException::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectStreamException), "boxfn_", make_descriptor(boxObject));
+    }
+
+    static PyObject *t_ObjectStreamException_cast_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!(arg = castCheck(arg, ObjectStreamException::initializeClass, 1)))
+        return NULL;
+      return t_ObjectStreamException::wrap_Object(ObjectStreamException(((t_ObjectStreamException *) arg)->object.this$));
+    }
+    static PyObject *t_ObjectStreamException_instance_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!castCheck(arg, ObjectStreamException::initializeClass, 0))
+        Py_RETURN_FALSE;
+      Py_RETURN_TRUE;
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "java/util/Spliterator$OfDouble.h"
+#include "java/util/Spliterator$OfDouble.h"
+#include "java/lang/Double.h"
+#include "java/util/function/DoubleConsumer.h"
+#include "java/lang/Class.h"
+#include "JArray.h"
+
+namespace java {
+  namespace util {
+
+    ::java::lang::Class *Spliterator$OfDouble::class$ = NULL;
+    jmethodID *Spliterator$OfDouble::mids$ = NULL;
+    bool Spliterator$OfDouble::live$ = false;
+
+    jclass Spliterator$OfDouble::initializeClass(bool getOnly)
+    {
+      if (getOnly)
+        return (jclass) (live$ ? class$->this$ : NULL);
+      if (class$ == NULL)
+      {
+        jclass cls = (jclass) env->findClass("java/util/Spliterator$OfDouble");
 
         mids$ = new jmethodID[max_mid];
-        mids$[mid_add_221e8e85cb385209] = env->getMethodID(cls, "add", "(Ljava/lang/Object;)Z");
-        mids$[mid_element_e661fe3ba2fafb22] = env->getMethodID(cls, "element", "()Ljava/lang/Object;");
-        mids$[mid_offer_221e8e85cb385209] = env->getMethodID(cls, "offer", "(Ljava/lang/Object;)Z");
-        mids$[mid_peek_e661fe3ba2fafb22] = env->getMethodID(cls, "peek", "()Ljava/lang/Object;");
-        mids$[mid_poll_e661fe3ba2fafb22] = env->getMethodID(cls, "poll", "()Ljava/lang/Object;");
-        mids$[mid_remove_e661fe3ba2fafb22] = env->getMethodID(cls, "remove", "()Ljava/lang/Object;");
+        mids$[mid_forEachRemaining_85691ac11e338ac3] = env->getMethodID(cls, "forEachRemaining", "(Ljava/util/function/DoubleConsumer;)V");
+        mids$[mid_tryAdvance_9dcf961798cd1f48] = env->getMethodID(cls, "tryAdvance", "(Ljava/util/function/DoubleConsumer;)Z");
+        mids$[mid_trySplit_6bd048c33c1b01f9] = env->getMethodID(cls, "trySplit", "()Ljava/util/Spliterator$OfDouble;");
 
         class$ = new ::java::lang::Class(cls);
         live$ = true;
@@ -34,34 +199,19 @@ namespace java {
       return (jclass) class$->this$;
     }
 
-    jboolean Queue::add(const ::java::lang::Object & a0) const
+    void Spliterator$OfDouble::forEachRemaining(const ::java::util::function::DoubleConsumer & a0) const
     {
-      return env->callBooleanMethod(this$, mids$[mid_add_221e8e85cb385209], a0.this$);
+      env->callVoidMethod(this$, mids$[mid_forEachRemaining_85691ac11e338ac3], a0.this$);
     }
 
-    ::java::lang::Object Queue::element() const
+    jboolean Spliterator$OfDouble::tryAdvance(const ::java::util::function::DoubleConsumer & a0) const
     {
-      return ::java::lang::Object(env->callObjectMethod(this$, mids$[mid_element_e661fe3ba2fafb22]));
+      return env->callBooleanMethod(this$, mids$[mid_tryAdvance_9dcf961798cd1f48], a0.this$);
     }
 
-    jboolean Queue::offer(const ::java::lang::Object & a0) const
+    Spliterator$OfDouble Spliterator$OfDouble::trySplit() const
     {
-      return env->callBooleanMethod(this$, mids$[mid_offer_221e8e85cb385209], a0.this$);
-    }
-
-    ::java::lang::Object Queue::peek() const
-    {
-      return ::java::lang::Object(env->callObjectMethod(this$, mids$[mid_peek_e661fe3ba2fafb22]));
-    }
-
-    ::java::lang::Object Queue::poll() const
-    {
-      return ::java::lang::Object(env->callObjectMethod(this$, mids$[mid_poll_e661fe3ba2fafb22]));
-    }
-
-    ::java::lang::Object Queue::remove() const
-    {
-      return ::java::lang::Object(env->callObjectMethod(this$, mids$[mid_remove_e661fe3ba2fafb22]));
+      return Spliterator$OfDouble(env->callObjectMethod(this$, mids$[mid_trySplit_6bd048c33c1b01f9]));
     }
   }
 }
@@ -72,164 +222,135 @@ namespace java {
 
 namespace java {
   namespace util {
-    static PyObject *t_Queue_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_Queue_instance_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_Queue_of_(t_Queue *self, PyObject *args);
-    static PyObject *t_Queue_add(t_Queue *self, PyObject *args);
-    static PyObject *t_Queue_element(t_Queue *self);
-    static PyObject *t_Queue_offer(t_Queue *self, PyObject *arg);
-    static PyObject *t_Queue_peek(t_Queue *self);
-    static PyObject *t_Queue_poll(t_Queue *self);
-    static PyObject *t_Queue_remove(t_Queue *self, PyObject *args);
-    static PyObject *t_Queue_get__parameters_(t_Queue *self, void *data);
-    static PyGetSetDef t_Queue__fields_[] = {
-      DECLARE_GET_FIELD(t_Queue, parameters_),
+    static PyObject *t_Spliterator$OfDouble_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_Spliterator$OfDouble_instance_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_Spliterator$OfDouble_of_(t_Spliterator$OfDouble *self, PyObject *args);
+    static PyObject *t_Spliterator$OfDouble_forEachRemaining(t_Spliterator$OfDouble *self, PyObject *args);
+    static PyObject *t_Spliterator$OfDouble_tryAdvance(t_Spliterator$OfDouble *self, PyObject *args);
+    static PyObject *t_Spliterator$OfDouble_trySplit(t_Spliterator$OfDouble *self, PyObject *args);
+    static PyObject *t_Spliterator$OfDouble_get__parameters_(t_Spliterator$OfDouble *self, void *data);
+    static PyGetSetDef t_Spliterator$OfDouble__fields_[] = {
+      DECLARE_GET_FIELD(t_Spliterator$OfDouble, parameters_),
       { NULL, NULL, NULL, NULL, NULL }
     };
 
-    static PyMethodDef t_Queue__methods_[] = {
-      DECLARE_METHOD(t_Queue, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_Queue, instance_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_Queue, of_, METH_VARARGS),
-      DECLARE_METHOD(t_Queue, add, METH_VARARGS),
-      DECLARE_METHOD(t_Queue, element, METH_NOARGS),
-      DECLARE_METHOD(t_Queue, offer, METH_O),
-      DECLARE_METHOD(t_Queue, peek, METH_NOARGS),
-      DECLARE_METHOD(t_Queue, poll, METH_NOARGS),
-      DECLARE_METHOD(t_Queue, remove, METH_VARARGS),
+    static PyMethodDef t_Spliterator$OfDouble__methods_[] = {
+      DECLARE_METHOD(t_Spliterator$OfDouble, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_Spliterator$OfDouble, instance_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_Spliterator$OfDouble, of_, METH_VARARGS),
+      DECLARE_METHOD(t_Spliterator$OfDouble, forEachRemaining, METH_VARARGS),
+      DECLARE_METHOD(t_Spliterator$OfDouble, tryAdvance, METH_VARARGS),
+      DECLARE_METHOD(t_Spliterator$OfDouble, trySplit, METH_VARARGS),
       { NULL, NULL, 0, NULL }
     };
 
-    static PyType_Slot PY_TYPE_SLOTS(Queue)[] = {
-      { Py_tp_methods, t_Queue__methods_ },
+    static PyType_Slot PY_TYPE_SLOTS(Spliterator$OfDouble)[] = {
+      { Py_tp_methods, t_Spliterator$OfDouble__methods_ },
       { Py_tp_init, (void *) abstract_init },
-      { Py_tp_getset, t_Queue__fields_ },
+      { Py_tp_getset, t_Spliterator$OfDouble__fields_ },
       { 0, NULL }
     };
 
-    static PyType_Def *PY_TYPE_BASES(Queue)[] = {
-      &PY_TYPE_DEF(::java::util::Collection),
+    static PyType_Def *PY_TYPE_BASES(Spliterator$OfDouble)[] = {
+      &PY_TYPE_DEF(::java::util::Spliterator$OfPrimitive),
       NULL
     };
 
-    DEFINE_TYPE(Queue, t_Queue, Queue);
-    PyObject *t_Queue::wrap_Object(const Queue& object, PyTypeObject *p0)
+    DEFINE_TYPE(Spliterator$OfDouble, t_Spliterator$OfDouble, Spliterator$OfDouble);
+    PyObject *t_Spliterator$OfDouble::wrap_Object(const Spliterator$OfDouble& object, PyTypeObject *p0)
     {
-      PyObject *obj = t_Queue::wrap_Object(object);
+      PyObject *obj = t_Spliterator$OfDouble::wrap_Object(object);
       if (obj != NULL && obj != Py_None)
       {
-        t_Queue *self = (t_Queue *) obj;
+        t_Spliterator$OfDouble *self = (t_Spliterator$OfDouble *) obj;
         self->parameters[0] = p0;
       }
       return obj;
     }
 
-    PyObject *t_Queue::wrap_jobject(const jobject& object, PyTypeObject *p0)
+    PyObject *t_Spliterator$OfDouble::wrap_jobject(const jobject& object, PyTypeObject *p0)
     {
-      PyObject *obj = t_Queue::wrap_jobject(object);
+      PyObject *obj = t_Spliterator$OfDouble::wrap_jobject(object);
       if (obj != NULL && obj != Py_None)
       {
-        t_Queue *self = (t_Queue *) obj;
+        t_Spliterator$OfDouble *self = (t_Spliterator$OfDouble *) obj;
         self->parameters[0] = p0;
       }
       return obj;
     }
 
-    void t_Queue::install(PyObject *module)
+    void t_Spliterator$OfDouble::install(PyObject *module)
     {
-      installType(&PY_TYPE(Queue), &PY_TYPE_DEF(Queue), module, "Queue", 0);
+      installType(&PY_TYPE(Spliterator$OfDouble), &PY_TYPE_DEF(Spliterator$OfDouble), module, "Spliterator$OfDouble", 0);
     }
 
-    void t_Queue::initialize(PyObject *module)
+    void t_Spliterator$OfDouble::initialize(PyObject *module)
     {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(Queue), "class_", make_descriptor(Queue::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(Queue), "wrapfn_", make_descriptor(t_Queue::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(Queue), "boxfn_", make_descriptor(boxObject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(Spliterator$OfDouble), "class_", make_descriptor(Spliterator$OfDouble::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(Spliterator$OfDouble), "wrapfn_", make_descriptor(t_Spliterator$OfDouble::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(Spliterator$OfDouble), "boxfn_", make_descriptor(boxObject));
     }
 
-    static PyObject *t_Queue_cast_(PyTypeObject *type, PyObject *arg)
+    static PyObject *t_Spliterator$OfDouble_cast_(PyTypeObject *type, PyObject *arg)
     {
-      if (!(arg = castCheck(arg, Queue::initializeClass, 1)))
+      if (!(arg = castCheck(arg, Spliterator$OfDouble::initializeClass, 1)))
         return NULL;
-      return t_Queue::wrap_Object(Queue(((t_Queue *) arg)->object.this$));
+      return t_Spliterator$OfDouble::wrap_Object(Spliterator$OfDouble(((t_Spliterator$OfDouble *) arg)->object.this$));
     }
-    static PyObject *t_Queue_instance_(PyTypeObject *type, PyObject *arg)
+    static PyObject *t_Spliterator$OfDouble_instance_(PyTypeObject *type, PyObject *arg)
     {
-      if (!castCheck(arg, Queue::initializeClass, 0))
+      if (!castCheck(arg, Spliterator$OfDouble::initializeClass, 0))
         Py_RETURN_FALSE;
       Py_RETURN_TRUE;
     }
 
-    static PyObject *t_Queue_of_(t_Queue *self, PyObject *args)
+    static PyObject *t_Spliterator$OfDouble_of_(t_Spliterator$OfDouble *self, PyObject *args)
     {
       if (!parseArg(args, "T", 1, &(self->parameters)))
         Py_RETURN_SELF;
       return PyErr_SetArgsError((PyObject *) self, "of_", args);
     }
 
-    static PyObject *t_Queue_add(t_Queue *self, PyObject *args)
+    static PyObject *t_Spliterator$OfDouble_forEachRemaining(t_Spliterator$OfDouble *self, PyObject *args)
     {
-      ::java::lang::Object a0((jobject) NULL);
+      ::java::util::function::DoubleConsumer a0((jobject) NULL);
+
+      if (!parseArgs(args, "k", ::java::util::function::DoubleConsumer::initializeClass, &a0))
+      {
+        OBJ_CALL(self->object.forEachRemaining(a0));
+        Py_RETURN_NONE;
+      }
+
+      return callSuper(PY_TYPE(Spliterator$OfDouble), (PyObject *) self, "forEachRemaining", args, 2);
+    }
+
+    static PyObject *t_Spliterator$OfDouble_tryAdvance(t_Spliterator$OfDouble *self, PyObject *args)
+    {
+      ::java::util::function::DoubleConsumer a0((jobject) NULL);
       jboolean result;
 
-      if (!parseArgs(args, "O", self->parameters[0], &a0))
+      if (!parseArgs(args, "k", ::java::util::function::DoubleConsumer::initializeClass, &a0))
       {
-        OBJ_CALL(result = self->object.add(a0));
+        OBJ_CALL(result = self->object.tryAdvance(a0));
         Py_RETURN_BOOL(result);
       }
 
-      return callSuper(PY_TYPE(Queue), (PyObject *) self, "add", args, 2);
+      return callSuper(PY_TYPE(Spliterator$OfDouble), (PyObject *) self, "tryAdvance", args, 2);
     }
 
-    static PyObject *t_Queue_element(t_Queue *self)
+    static PyObject *t_Spliterator$OfDouble_trySplit(t_Spliterator$OfDouble *self, PyObject *args)
     {
-      ::java::lang::Object result((jobject) NULL);
-      OBJ_CALL(result = self->object.element());
-      return self->parameters[0] != NULL ? wrapType(self->parameters[0], result.this$) : ::java::lang::t_Object::wrap_Object(result);
-    }
-
-    static PyObject *t_Queue_offer(t_Queue *self, PyObject *arg)
-    {
-      ::java::lang::Object a0((jobject) NULL);
-      jboolean result;
-
-      if (!parseArg(arg, "O", self->parameters[0], &a0))
-      {
-        OBJ_CALL(result = self->object.offer(a0));
-        Py_RETURN_BOOL(result);
-      }
-
-      PyErr_SetArgsError((PyObject *) self, "offer", arg);
-      return NULL;
-    }
-
-    static PyObject *t_Queue_peek(t_Queue *self)
-    {
-      ::java::lang::Object result((jobject) NULL);
-      OBJ_CALL(result = self->object.peek());
-      return self->parameters[0] != NULL ? wrapType(self->parameters[0], result.this$) : ::java::lang::t_Object::wrap_Object(result);
-    }
-
-    static PyObject *t_Queue_poll(t_Queue *self)
-    {
-      ::java::lang::Object result((jobject) NULL);
-      OBJ_CALL(result = self->object.poll());
-      return self->parameters[0] != NULL ? wrapType(self->parameters[0], result.this$) : ::java::lang::t_Object::wrap_Object(result);
-    }
-
-    static PyObject *t_Queue_remove(t_Queue *self, PyObject *args)
-    {
-      ::java::lang::Object result((jobject) NULL);
+      Spliterator$OfDouble result((jobject) NULL);
 
       if (!parseArgs(args, ""))
       {
-        OBJ_CALL(result = self->object.remove());
-        return self->parameters[0] != NULL ? wrapType(self->parameters[0], result.this$) : ::java::lang::t_Object::wrap_Object(result);
+        OBJ_CALL(result = self->object.trySplit());
+        return t_Spliterator$OfDouble::wrap_Object(result);
       }
 
-      return callSuper(PY_TYPE(Queue), (PyObject *) self, "remove", args, 2);
+      return callSuper(PY_TYPE(Spliterator$OfDouble), (PyObject *) self, "trySplit", args, 2);
     }
-    static PyObject *t_Queue_get__parameters_(t_Queue *self, void *data)
+    static PyObject *t_Spliterator$OfDouble_get__parameters_(t_Spliterator$OfDouble *self, void *data)
     {
       return typeParameters(self->parameters, sizeof(self->parameters));
     }
@@ -237,821 +358,29 @@ namespace java {
 }
 #include <jni.h>
 #include "JCCEnv.h"
-#include "java/util/EventListener.h"
-#include "java/lang/Class.h"
-#include "JArray.h"
-
-namespace java {
-  namespace util {
-
-    ::java::lang::Class *EventListener::class$ = NULL;
-    jmethodID *EventListener::mids$ = NULL;
-    bool EventListener::live$ = false;
-
-    jclass EventListener::initializeClass(bool getOnly)
-    {
-      if (getOnly)
-        return (jclass) (live$ ? class$->this$ : NULL);
-      if (class$ == NULL)
-      {
-        jclass cls = (jclass) env->findClass("java/util/EventListener");
-
-        class$ = new ::java::lang::Class(cls);
-        live$ = true;
-      }
-      return (jclass) class$->this$;
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace java {
-  namespace util {
-    static PyObject *t_EventListener_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_EventListener_instance_(PyTypeObject *type, PyObject *arg);
-
-    static PyMethodDef t_EventListener__methods_[] = {
-      DECLARE_METHOD(t_EventListener, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_EventListener, instance_, METH_O | METH_CLASS),
-      { NULL, NULL, 0, NULL }
-    };
-
-    static PyType_Slot PY_TYPE_SLOTS(EventListener)[] = {
-      { Py_tp_methods, t_EventListener__methods_ },
-      { Py_tp_init, (void *) abstract_init },
-      { 0, NULL }
-    };
-
-    static PyType_Def *PY_TYPE_BASES(EventListener)[] = {
-      &PY_TYPE_DEF(::java::lang::Object),
-      NULL
-    };
-
-    DEFINE_TYPE(EventListener, t_EventListener, EventListener);
-
-    void t_EventListener::install(PyObject *module)
-    {
-      installType(&PY_TYPE(EventListener), &PY_TYPE_DEF(EventListener), module, "EventListener", 0);
-    }
-
-    void t_EventListener::initialize(PyObject *module)
-    {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(EventListener), "class_", make_descriptor(EventListener::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(EventListener), "wrapfn_", make_descriptor(t_EventListener::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(EventListener), "boxfn_", make_descriptor(boxObject));
-    }
-
-    static PyObject *t_EventListener_cast_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!(arg = castCheck(arg, EventListener::initializeClass, 1)))
-        return NULL;
-      return t_EventListener::wrap_Object(EventListener(((t_EventListener *) arg)->object.this$));
-    }
-    static PyObject *t_EventListener_instance_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!castCheck(arg, EventListener::initializeClass, 0))
-        Py_RETURN_FALSE;
-      Py_RETURN_TRUE;
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "java/io/ObjectInputStream$GetField.h"
-#include "java/io/IOException.h"
-#include "java/io/ObjectStreamClass.h"
-#include "java/lang/Class.h"
-#include "java/lang/String.h"
-#include "JArray.h"
-
-namespace java {
-  namespace io {
-
-    ::java::lang::Class *ObjectInputStream$GetField::class$ = NULL;
-    jmethodID *ObjectInputStream$GetField::mids$ = NULL;
-    bool ObjectInputStream$GetField::live$ = false;
-
-    jclass ObjectInputStream$GetField::initializeClass(bool getOnly)
-    {
-      if (getOnly)
-        return (jclass) (live$ ? class$->this$ : NULL);
-      if (class$ == NULL)
-      {
-        jclass cls = (jclass) env->findClass("java/io/ObjectInputStream$GetField");
-
-        mids$ = new jmethodID[max_mid];
-        mids$[mid_init$_0640e6acf969ed28] = env->getMethodID(cls, "<init>", "()V");
-        mids$[mid_defaulted_fd2162b8a05a22fe] = env->getMethodID(cls, "defaulted", "(Ljava/lang/String;)Z");
-        mids$[mid_get_25eab1df282b7da1] = env->getMethodID(cls, "get", "(Ljava/lang/String;Z)Z");
-        mids$[mid_get_7e64616b59cda34c] = env->getMethodID(cls, "get", "(Ljava/lang/String;B)B");
-        mids$[mid_get_aa3dbdfe21f97666] = env->getMethodID(cls, "get", "(Ljava/lang/String;C)C");
-        mids$[mid_get_792704fafbc1ba32] = env->getMethodID(cls, "get", "(Ljava/lang/String;D)D");
-        mids$[mid_get_8932d96572bfa5e9] = env->getMethodID(cls, "get", "(Ljava/lang/String;F)F");
-        mids$[mid_get_f5fd9af3faa747d5] = env->getMethodID(cls, "get", "(Ljava/lang/String;I)I");
-        mids$[mid_get_d99c45aaa01ca49f] = env->getMethodID(cls, "get", "(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;");
-        mids$[mid_get_08826549b8f2bdcc] = env->getMethodID(cls, "get", "(Ljava/lang/String;J)J");
-        mids$[mid_get_c262b427c2fc0c80] = env->getMethodID(cls, "get", "(Ljava/lang/String;S)S");
-        mids$[mid_getObjectStreamClass_dbbdc211e0cefa39] = env->getMethodID(cls, "getObjectStreamClass", "()Ljava/io/ObjectStreamClass;");
-
-        class$ = new ::java::lang::Class(cls);
-        live$ = true;
-      }
-      return (jclass) class$->this$;
-    }
-
-    ObjectInputStream$GetField::ObjectInputStream$GetField() : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_0640e6acf969ed28)) {}
-
-    jboolean ObjectInputStream$GetField::defaulted(const ::java::lang::String & a0) const
-    {
-      return env->callBooleanMethod(this$, mids$[mid_defaulted_fd2162b8a05a22fe], a0.this$);
-    }
-
-    jboolean ObjectInputStream$GetField::get$(const ::java::lang::String & a0, jboolean a1) const
-    {
-      return env->callBooleanMethod(this$, mids$[mid_get_25eab1df282b7da1], a0.this$, a1);
-    }
-
-    jbyte ObjectInputStream$GetField::get$(const ::java::lang::String & a0, jbyte a1) const
-    {
-      return env->callByteMethod(this$, mids$[mid_get_7e64616b59cda34c], a0.this$, a1);
-    }
-
-    jchar ObjectInputStream$GetField::get$(const ::java::lang::String & a0, jchar a1) const
-    {
-      return env->callCharMethod(this$, mids$[mid_get_aa3dbdfe21f97666], a0.this$, a1);
-    }
-
-    jdouble ObjectInputStream$GetField::get$(const ::java::lang::String & a0, jdouble a1) const
-    {
-      return env->callDoubleMethod(this$, mids$[mid_get_792704fafbc1ba32], a0.this$, a1);
-    }
-
-    jfloat ObjectInputStream$GetField::get$(const ::java::lang::String & a0, jfloat a1) const
-    {
-      return env->callFloatMethod(this$, mids$[mid_get_8932d96572bfa5e9], a0.this$, a1);
-    }
-
-    jint ObjectInputStream$GetField::get$(const ::java::lang::String & a0, jint a1) const
-    {
-      return env->callIntMethod(this$, mids$[mid_get_f5fd9af3faa747d5], a0.this$, a1);
-    }
-
-    ::java::lang::Object ObjectInputStream$GetField::get$(const ::java::lang::String & a0, const ::java::lang::Object & a1) const
-    {
-      return ::java::lang::Object(env->callObjectMethod(this$, mids$[mid_get_d99c45aaa01ca49f], a0.this$, a1.this$));
-    }
-
-    jlong ObjectInputStream$GetField::get$(const ::java::lang::String & a0, jlong a1) const
-    {
-      return env->callLongMethod(this$, mids$[mid_get_08826549b8f2bdcc], a0.this$, a1);
-    }
-
-    jshort ObjectInputStream$GetField::get$(const ::java::lang::String & a0, jshort a1) const
-    {
-      return env->callShortMethod(this$, mids$[mid_get_c262b427c2fc0c80], a0.this$, a1);
-    }
-
-    ::java::io::ObjectStreamClass ObjectInputStream$GetField::getObjectStreamClass() const
-    {
-      return ::java::io::ObjectStreamClass(env->callObjectMethod(this$, mids$[mid_getObjectStreamClass_dbbdc211e0cefa39]));
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace java {
-  namespace io {
-    static PyObject *t_ObjectInputStream$GetField_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_ObjectInputStream$GetField_instance_(PyTypeObject *type, PyObject *arg);
-    static int t_ObjectInputStream$GetField_init_(t_ObjectInputStream$GetField *self, PyObject *args, PyObject *kwds);
-    static PyObject *t_ObjectInputStream$GetField_defaulted(t_ObjectInputStream$GetField *self, PyObject *arg);
-    static PyObject *t_ObjectInputStream$GetField_get(t_ObjectInputStream$GetField *self, PyObject *args);
-    static PyObject *t_ObjectInputStream$GetField_getObjectStreamClass(t_ObjectInputStream$GetField *self);
-    static PyObject *t_ObjectInputStream$GetField_get__objectStreamClass(t_ObjectInputStream$GetField *self, void *data);
-    static PyGetSetDef t_ObjectInputStream$GetField__fields_[] = {
-      DECLARE_GET_FIELD(t_ObjectInputStream$GetField, objectStreamClass),
-      { NULL, NULL, NULL, NULL, NULL }
-    };
-
-    static PyMethodDef t_ObjectInputStream$GetField__methods_[] = {
-      DECLARE_METHOD(t_ObjectInputStream$GetField, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_ObjectInputStream$GetField, instance_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_ObjectInputStream$GetField, defaulted, METH_O),
-      DECLARE_METHOD(t_ObjectInputStream$GetField, get, METH_VARARGS),
-      DECLARE_METHOD(t_ObjectInputStream$GetField, getObjectStreamClass, METH_NOARGS),
-      { NULL, NULL, 0, NULL }
-    };
-
-    static PyType_Slot PY_TYPE_SLOTS(ObjectInputStream$GetField)[] = {
-      { Py_tp_methods, t_ObjectInputStream$GetField__methods_ },
-      { Py_tp_init, (void *) t_ObjectInputStream$GetField_init_ },
-      { Py_tp_getset, t_ObjectInputStream$GetField__fields_ },
-      { 0, NULL }
-    };
-
-    static PyType_Def *PY_TYPE_BASES(ObjectInputStream$GetField)[] = {
-      &PY_TYPE_DEF(::java::lang::Object),
-      NULL
-    };
-
-    DEFINE_TYPE(ObjectInputStream$GetField, t_ObjectInputStream$GetField, ObjectInputStream$GetField);
-
-    void t_ObjectInputStream$GetField::install(PyObject *module)
-    {
-      installType(&PY_TYPE(ObjectInputStream$GetField), &PY_TYPE_DEF(ObjectInputStream$GetField), module, "ObjectInputStream$GetField", 0);
-    }
-
-    void t_ObjectInputStream$GetField::initialize(PyObject *module)
-    {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputStream$GetField), "class_", make_descriptor(ObjectInputStream$GetField::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputStream$GetField), "wrapfn_", make_descriptor(t_ObjectInputStream$GetField::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputStream$GetField), "boxfn_", make_descriptor(boxObject));
-    }
-
-    static PyObject *t_ObjectInputStream$GetField_cast_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!(arg = castCheck(arg, ObjectInputStream$GetField::initializeClass, 1)))
-        return NULL;
-      return t_ObjectInputStream$GetField::wrap_Object(ObjectInputStream$GetField(((t_ObjectInputStream$GetField *) arg)->object.this$));
-    }
-    static PyObject *t_ObjectInputStream$GetField_instance_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!castCheck(arg, ObjectInputStream$GetField::initializeClass, 0))
-        Py_RETURN_FALSE;
-      Py_RETURN_TRUE;
-    }
-
-    static int t_ObjectInputStream$GetField_init_(t_ObjectInputStream$GetField *self, PyObject *args, PyObject *kwds)
-    {
-      ObjectInputStream$GetField object((jobject) NULL);
-
-      INT_CALL(object = ObjectInputStream$GetField());
-      self->object = object;
-
-      return 0;
-    }
-
-    static PyObject *t_ObjectInputStream$GetField_defaulted(t_ObjectInputStream$GetField *self, PyObject *arg)
-    {
-      ::java::lang::String a0((jobject) NULL);
-      jboolean result;
-
-      if (!parseArg(arg, "s", &a0))
-      {
-        OBJ_CALL(result = self->object.defaulted(a0));
-        Py_RETURN_BOOL(result);
-      }
-
-      PyErr_SetArgsError((PyObject *) self, "defaulted", arg);
-      return NULL;
-    }
-
-    static PyObject *t_ObjectInputStream$GetField_get(t_ObjectInputStream$GetField *self, PyObject *args)
-    {
-      switch (PyTuple_GET_SIZE(args)) {
-       case 2:
-        {
-          ::java::lang::String a0((jobject) NULL);
-          jboolean a1;
-          jboolean result;
-
-          if (!parseArgs(args, "sZ", &a0, &a1))
-          {
-            OBJ_CALL(result = self->object.get$(a0, a1));
-            Py_RETURN_BOOL(result);
-          }
-        }
-        {
-          ::java::lang::String a0((jobject) NULL);
-          jbyte a1;
-          jbyte result;
-
-          if (!parseArgs(args, "sB", &a0, &a1))
-          {
-            OBJ_CALL(result = self->object.get$(a0, a1));
-            return PyLong_FromLong((long) result);
-          }
-        }
-        {
-          ::java::lang::String a0((jobject) NULL);
-          jchar a1;
-          jchar result;
-
-          if (!parseArgs(args, "sC", &a0, &a1))
-          {
-            OBJ_CALL(result = self->object.get$(a0, a1));
-            return c2p(result);
-          }
-        }
-        {
-          ::java::lang::String a0((jobject) NULL);
-          jdouble a1;
-          jdouble result;
-
-          if (!parseArgs(args, "sD", &a0, &a1))
-          {
-            OBJ_CALL(result = self->object.get$(a0, a1));
-            return PyFloat_FromDouble((double) result);
-          }
-        }
-        {
-          ::java::lang::String a0((jobject) NULL);
-          jfloat a1;
-          jfloat result;
-
-          if (!parseArgs(args, "sF", &a0, &a1))
-          {
-            OBJ_CALL(result = self->object.get$(a0, a1));
-            return PyFloat_FromDouble((double) result);
-          }
-        }
-        {
-          ::java::lang::String a0((jobject) NULL);
-          jint a1;
-          jint result;
-
-          if (!parseArgs(args, "sI", &a0, &a1))
-          {
-            OBJ_CALL(result = self->object.get$(a0, a1));
-            return PyLong_FromLong((long) result);
-          }
-        }
-        {
-          ::java::lang::String a0((jobject) NULL);
-          ::java::lang::Object a1((jobject) NULL);
-          ::java::lang::Object result((jobject) NULL);
-
-          if (!parseArgs(args, "so", &a0, &a1))
-          {
-            OBJ_CALL(result = self->object.get$(a0, a1));
-            return ::java::lang::t_Object::wrap_Object(result);
-          }
-        }
-        {
-          ::java::lang::String a0((jobject) NULL);
-          jlong a1;
-          jlong result;
-
-          if (!parseArgs(args, "sJ", &a0, &a1))
-          {
-            OBJ_CALL(result = self->object.get$(a0, a1));
-            return PyLong_FromLongLong((PY_LONG_LONG) result);
-          }
-        }
-        {
-          ::java::lang::String a0((jobject) NULL);
-          jshort a1;
-          jshort result;
-
-          if (!parseArgs(args, "sS", &a0, &a1))
-          {
-            OBJ_CALL(result = self->object.get$(a0, a1));
-            return PyLong_FromLong((long) result);
-          }
-        }
-      }
-
-      PyErr_SetArgsError((PyObject *) self, "get", args);
-      return NULL;
-    }
-
-    static PyObject *t_ObjectInputStream$GetField_getObjectStreamClass(t_ObjectInputStream$GetField *self)
-    {
-      ::java::io::ObjectStreamClass result((jobject) NULL);
-      OBJ_CALL(result = self->object.getObjectStreamClass());
-      return ::java::io::t_ObjectStreamClass::wrap_Object(result);
-    }
-
-    static PyObject *t_ObjectInputStream$GetField_get__objectStreamClass(t_ObjectInputStream$GetField *self, void *data)
-    {
-      ::java::io::ObjectStreamClass value((jobject) NULL);
-      OBJ_CALL(value = self->object.getObjectStreamClass());
-      return ::java::io::t_ObjectStreamClass::wrap_Object(value);
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "java/util/OptionalDouble.h"
-#include "java/lang/Runnable.h"
-#include "java/util/stream/DoubleStream.h"
-#include "java/util/function/Supplier.h"
-#include "java/lang/Throwable.h"
-#include "java/util/function/DoubleConsumer.h"
-#include "java/lang/Class.h"
-#include "java/util/OptionalDouble.h"
-#include "java/lang/String.h"
-#include "JArray.h"
-
-namespace java {
-  namespace util {
-
-    ::java::lang::Class *OptionalDouble::class$ = NULL;
-    jmethodID *OptionalDouble::mids$ = NULL;
-    bool OptionalDouble::live$ = false;
-
-    jclass OptionalDouble::initializeClass(bool getOnly)
-    {
-      if (getOnly)
-        return (jclass) (live$ ? class$->this$ : NULL);
-      if (class$ == NULL)
-      {
-        jclass cls = (jclass) env->findClass("java/util/OptionalDouble");
-
-        mids$ = new jmethodID[max_mid];
-        mids$[mid_empty_e3186f0c7a9ab30b] = env->getStaticMethodID(cls, "empty", "()Ljava/util/OptionalDouble;");
-        mids$[mid_equals_221e8e85cb385209] = env->getMethodID(cls, "equals", "(Ljava/lang/Object;)Z");
-        mids$[mid_getAsDouble_557b8123390d8d0c] = env->getMethodID(cls, "getAsDouble", "()D");
-        mids$[mid_hashCode_412668abc8d889e9] = env->getMethodID(cls, "hashCode", "()I");
-        mids$[mid_ifPresent_fda350dd3513069c] = env->getMethodID(cls, "ifPresent", "(Ljava/util/function/DoubleConsumer;)V");
-        mids$[mid_ifPresentOrElse_67dd0e15cf1c0ffe] = env->getMethodID(cls, "ifPresentOrElse", "(Ljava/util/function/DoubleConsumer;Ljava/lang/Runnable;)V");
-        mids$[mid_isEmpty_89b302893bdbe1f1] = env->getMethodID(cls, "isEmpty", "()Z");
-        mids$[mid_isPresent_89b302893bdbe1f1] = env->getMethodID(cls, "isPresent", "()Z");
-        mids$[mid_of_afa36fca5724ddcb] = env->getStaticMethodID(cls, "of", "(D)Ljava/util/OptionalDouble;");
-        mids$[mid_orElse_7e960cd6eee376d8] = env->getMethodID(cls, "orElse", "(D)D");
-        mids$[mid_orElseThrow_557b8123390d8d0c] = env->getMethodID(cls, "orElseThrow", "()D");
-        mids$[mid_orElseThrow_a5cf1eb1c68623c3] = env->getMethodID(cls, "orElseThrow", "(Ljava/util/function/Supplier;)D");
-        mids$[mid_stream_78c9b5d7fa0dbac0] = env->getMethodID(cls, "stream", "()Ljava/util/stream/DoubleStream;");
-        mids$[mid_toString_3cffd47377eca18a] = env->getMethodID(cls, "toString", "()Ljava/lang/String;");
-
-        class$ = new ::java::lang::Class(cls);
-        live$ = true;
-      }
-      return (jclass) class$->this$;
-    }
-
-    OptionalDouble OptionalDouble::empty()
-    {
-      jclass cls = env->getClass(initializeClass);
-      return OptionalDouble(env->callStaticObjectMethod(cls, mids$[mid_empty_e3186f0c7a9ab30b]));
-    }
-
-    jboolean OptionalDouble::equals(const ::java::lang::Object & a0) const
-    {
-      return env->callBooleanMethod(this$, mids$[mid_equals_221e8e85cb385209], a0.this$);
-    }
-
-    jdouble OptionalDouble::getAsDouble() const
-    {
-      return env->callDoubleMethod(this$, mids$[mid_getAsDouble_557b8123390d8d0c]);
-    }
-
-    jint OptionalDouble::hashCode() const
-    {
-      return env->callIntMethod(this$, mids$[mid_hashCode_412668abc8d889e9]);
-    }
-
-    void OptionalDouble::ifPresent(const ::java::util::function::DoubleConsumer & a0) const
-    {
-      env->callVoidMethod(this$, mids$[mid_ifPresent_fda350dd3513069c], a0.this$);
-    }
-
-    void OptionalDouble::ifPresentOrElse(const ::java::util::function::DoubleConsumer & a0, const ::java::lang::Runnable & a1) const
-    {
-      env->callVoidMethod(this$, mids$[mid_ifPresentOrElse_67dd0e15cf1c0ffe], a0.this$, a1.this$);
-    }
-
-    jboolean OptionalDouble::isEmpty() const
-    {
-      return env->callBooleanMethod(this$, mids$[mid_isEmpty_89b302893bdbe1f1]);
-    }
-
-    jboolean OptionalDouble::isPresent() const
-    {
-      return env->callBooleanMethod(this$, mids$[mid_isPresent_89b302893bdbe1f1]);
-    }
-
-    OptionalDouble OptionalDouble::of(jdouble a0)
-    {
-      jclass cls = env->getClass(initializeClass);
-      return OptionalDouble(env->callStaticObjectMethod(cls, mids$[mid_of_afa36fca5724ddcb], a0));
-    }
-
-    jdouble OptionalDouble::orElse(jdouble a0) const
-    {
-      return env->callDoubleMethod(this$, mids$[mid_orElse_7e960cd6eee376d8], a0);
-    }
-
-    jdouble OptionalDouble::orElseThrow() const
-    {
-      return env->callDoubleMethod(this$, mids$[mid_orElseThrow_557b8123390d8d0c]);
-    }
-
-    jdouble OptionalDouble::orElseThrow(const ::java::util::function::Supplier & a0) const
-    {
-      return env->callDoubleMethod(this$, mids$[mid_orElseThrow_a5cf1eb1c68623c3], a0.this$);
-    }
-
-    ::java::util::stream::DoubleStream OptionalDouble::stream() const
-    {
-      return ::java::util::stream::DoubleStream(env->callObjectMethod(this$, mids$[mid_stream_78c9b5d7fa0dbac0]));
-    }
-
-    ::java::lang::String OptionalDouble::toString() const
-    {
-      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_toString_3cffd47377eca18a]));
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace java {
-  namespace util {
-    static PyObject *t_OptionalDouble_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_OptionalDouble_instance_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_OptionalDouble_empty(PyTypeObject *type);
-    static PyObject *t_OptionalDouble_equals(t_OptionalDouble *self, PyObject *args);
-    static PyObject *t_OptionalDouble_getAsDouble(t_OptionalDouble *self);
-    static PyObject *t_OptionalDouble_hashCode(t_OptionalDouble *self, PyObject *args);
-    static PyObject *t_OptionalDouble_ifPresent(t_OptionalDouble *self, PyObject *arg);
-    static PyObject *t_OptionalDouble_ifPresentOrElse(t_OptionalDouble *self, PyObject *args);
-    static PyObject *t_OptionalDouble_isEmpty(t_OptionalDouble *self);
-    static PyObject *t_OptionalDouble_isPresent(t_OptionalDouble *self);
-    static PyObject *t_OptionalDouble_of(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_OptionalDouble_orElse(t_OptionalDouble *self, PyObject *arg);
-    static PyObject *t_OptionalDouble_orElseThrow(t_OptionalDouble *self, PyObject *args);
-    static PyObject *t_OptionalDouble_stream(t_OptionalDouble *self);
-    static PyObject *t_OptionalDouble_toString(t_OptionalDouble *self, PyObject *args);
-    static PyObject *t_OptionalDouble_get__asDouble(t_OptionalDouble *self, void *data);
-    static PyObject *t_OptionalDouble_get__present(t_OptionalDouble *self, void *data);
-    static PyGetSetDef t_OptionalDouble__fields_[] = {
-      DECLARE_GET_FIELD(t_OptionalDouble, asDouble),
-      DECLARE_GET_FIELD(t_OptionalDouble, present),
-      { NULL, NULL, NULL, NULL, NULL }
-    };
-
-    static PyMethodDef t_OptionalDouble__methods_[] = {
-      DECLARE_METHOD(t_OptionalDouble, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_OptionalDouble, instance_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_OptionalDouble, empty, METH_NOARGS | METH_CLASS),
-      DECLARE_METHOD(t_OptionalDouble, equals, METH_VARARGS),
-      DECLARE_METHOD(t_OptionalDouble, getAsDouble, METH_NOARGS),
-      DECLARE_METHOD(t_OptionalDouble, hashCode, METH_VARARGS),
-      DECLARE_METHOD(t_OptionalDouble, ifPresent, METH_O),
-      DECLARE_METHOD(t_OptionalDouble, ifPresentOrElse, METH_VARARGS),
-      DECLARE_METHOD(t_OptionalDouble, isEmpty, METH_NOARGS),
-      DECLARE_METHOD(t_OptionalDouble, isPresent, METH_NOARGS),
-      DECLARE_METHOD(t_OptionalDouble, of, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_OptionalDouble, orElse, METH_O),
-      DECLARE_METHOD(t_OptionalDouble, orElseThrow, METH_VARARGS),
-      DECLARE_METHOD(t_OptionalDouble, stream, METH_NOARGS),
-      DECLARE_METHOD(t_OptionalDouble, toString, METH_VARARGS),
-      { NULL, NULL, 0, NULL }
-    };
-
-    static PyType_Slot PY_TYPE_SLOTS(OptionalDouble)[] = {
-      { Py_tp_methods, t_OptionalDouble__methods_ },
-      { Py_tp_init, (void *) abstract_init },
-      { Py_tp_getset, t_OptionalDouble__fields_ },
-      { 0, NULL }
-    };
-
-    static PyType_Def *PY_TYPE_BASES(OptionalDouble)[] = {
-      &PY_TYPE_DEF(::java::lang::Object),
-      NULL
-    };
-
-    DEFINE_TYPE(OptionalDouble, t_OptionalDouble, OptionalDouble);
-
-    void t_OptionalDouble::install(PyObject *module)
-    {
-      installType(&PY_TYPE(OptionalDouble), &PY_TYPE_DEF(OptionalDouble), module, "OptionalDouble", 0);
-    }
-
-    void t_OptionalDouble::initialize(PyObject *module)
-    {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(OptionalDouble), "class_", make_descriptor(OptionalDouble::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(OptionalDouble), "wrapfn_", make_descriptor(t_OptionalDouble::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(OptionalDouble), "boxfn_", make_descriptor(boxObject));
-    }
-
-    static PyObject *t_OptionalDouble_cast_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!(arg = castCheck(arg, OptionalDouble::initializeClass, 1)))
-        return NULL;
-      return t_OptionalDouble::wrap_Object(OptionalDouble(((t_OptionalDouble *) arg)->object.this$));
-    }
-    static PyObject *t_OptionalDouble_instance_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!castCheck(arg, OptionalDouble::initializeClass, 0))
-        Py_RETURN_FALSE;
-      Py_RETURN_TRUE;
-    }
-
-    static PyObject *t_OptionalDouble_empty(PyTypeObject *type)
-    {
-      OptionalDouble result((jobject) NULL);
-      OBJ_CALL(result = ::java::util::OptionalDouble::empty());
-      return t_OptionalDouble::wrap_Object(result);
-    }
-
-    static PyObject *t_OptionalDouble_equals(t_OptionalDouble *self, PyObject *args)
-    {
-      ::java::lang::Object a0((jobject) NULL);
-      jboolean result;
-
-      if (!parseArgs(args, "o", &a0))
-      {
-        OBJ_CALL(result = self->object.equals(a0));
-        Py_RETURN_BOOL(result);
-      }
-
-      return callSuper(PY_TYPE(OptionalDouble), (PyObject *) self, "equals", args, 2);
-    }
-
-    static PyObject *t_OptionalDouble_getAsDouble(t_OptionalDouble *self)
-    {
-      jdouble result;
-      OBJ_CALL(result = self->object.getAsDouble());
-      return PyFloat_FromDouble((double) result);
-    }
-
-    static PyObject *t_OptionalDouble_hashCode(t_OptionalDouble *self, PyObject *args)
-    {
-      jint result;
-
-      if (!parseArgs(args, ""))
-      {
-        OBJ_CALL(result = self->object.hashCode());
-        return PyLong_FromLong((long) result);
-      }
-
-      return callSuper(PY_TYPE(OptionalDouble), (PyObject *) self, "hashCode", args, 2);
-    }
-
-    static PyObject *t_OptionalDouble_ifPresent(t_OptionalDouble *self, PyObject *arg)
-    {
-      ::java::util::function::DoubleConsumer a0((jobject) NULL);
-
-      if (!parseArg(arg, "k", ::java::util::function::DoubleConsumer::initializeClass, &a0))
-      {
-        OBJ_CALL(self->object.ifPresent(a0));
-        Py_RETURN_NONE;
-      }
-
-      PyErr_SetArgsError((PyObject *) self, "ifPresent", arg);
-      return NULL;
-    }
-
-    static PyObject *t_OptionalDouble_ifPresentOrElse(t_OptionalDouble *self, PyObject *args)
-    {
-      ::java::util::function::DoubleConsumer a0((jobject) NULL);
-      ::java::lang::Runnable a1((jobject) NULL);
-
-      if (!parseArgs(args, "kk", ::java::util::function::DoubleConsumer::initializeClass, ::java::lang::Runnable::initializeClass, &a0, &a1))
-      {
-        OBJ_CALL(self->object.ifPresentOrElse(a0, a1));
-        Py_RETURN_NONE;
-      }
-
-      PyErr_SetArgsError((PyObject *) self, "ifPresentOrElse", args);
-      return NULL;
-    }
-
-    static PyObject *t_OptionalDouble_isEmpty(t_OptionalDouble *self)
-    {
-      jboolean result;
-      OBJ_CALL(result = self->object.isEmpty());
-      Py_RETURN_BOOL(result);
-    }
-
-    static PyObject *t_OptionalDouble_isPresent(t_OptionalDouble *self)
-    {
-      jboolean result;
-      OBJ_CALL(result = self->object.isPresent());
-      Py_RETURN_BOOL(result);
-    }
-
-    static PyObject *t_OptionalDouble_of(PyTypeObject *type, PyObject *arg)
-    {
-      jdouble a0;
-      OptionalDouble result((jobject) NULL);
-
-      if (!parseArg(arg, "D", &a0))
-      {
-        OBJ_CALL(result = ::java::util::OptionalDouble::of(a0));
-        return t_OptionalDouble::wrap_Object(result);
-      }
-
-      PyErr_SetArgsError(type, "of", arg);
-      return NULL;
-    }
-
-    static PyObject *t_OptionalDouble_orElse(t_OptionalDouble *self, PyObject *arg)
-    {
-      jdouble a0;
-      jdouble result;
-
-      if (!parseArg(arg, "D", &a0))
-      {
-        OBJ_CALL(result = self->object.orElse(a0));
-        return PyFloat_FromDouble((double) result);
-      }
-
-      PyErr_SetArgsError((PyObject *) self, "orElse", arg);
-      return NULL;
-    }
-
-    static PyObject *t_OptionalDouble_orElseThrow(t_OptionalDouble *self, PyObject *args)
-    {
-      switch (PyTuple_GET_SIZE(args)) {
-       case 0:
-        {
-          jdouble result;
-          OBJ_CALL(result = self->object.orElseThrow());
-          return PyFloat_FromDouble((double) result);
-        }
-        break;
-       case 1:
-        {
-          ::java::util::function::Supplier a0((jobject) NULL);
-          PyTypeObject **p0;
-          jdouble result;
-
-          if (!parseArgs(args, "K", ::java::util::function::Supplier::initializeClass, &a0, &p0, ::java::util::function::t_Supplier::parameters_))
-          {
-            OBJ_CALL(result = self->object.orElseThrow(a0));
-            return PyFloat_FromDouble((double) result);
-          }
-        }
-      }
-
-      PyErr_SetArgsError((PyObject *) self, "orElseThrow", args);
-      return NULL;
-    }
-
-    static PyObject *t_OptionalDouble_stream(t_OptionalDouble *self)
-    {
-      ::java::util::stream::DoubleStream result((jobject) NULL);
-      OBJ_CALL(result = self->object.stream());
-      return ::java::util::stream::t_DoubleStream::wrap_Object(result);
-    }
-
-    static PyObject *t_OptionalDouble_toString(t_OptionalDouble *self, PyObject *args)
-    {
-      ::java::lang::String result((jobject) NULL);
-
-      if (!parseArgs(args, ""))
-      {
-        OBJ_CALL(result = self->object.toString());
-        return j2p(result);
-      }
-
-      return callSuper(PY_TYPE(OptionalDouble), (PyObject *) self, "toString", args, 2);
-    }
-
-    static PyObject *t_OptionalDouble_get__asDouble(t_OptionalDouble *self, void *data)
-    {
-      jdouble value;
-      OBJ_CALL(value = self->object.getAsDouble());
-      return PyFloat_FromDouble((double) value);
-    }
-
-    static PyObject *t_OptionalDouble_get__present(t_OptionalDouble *self, void *data)
-    {
-      jboolean value;
-      OBJ_CALL(value = self->object.isPresent());
-      Py_RETURN_BOOL(value);
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "java/lang/SecurityException.h"
+#include "java/lang/IllegalAccessException.h"
 #include "java/lang/String.h"
 #include "java/lang/Class.h"
-#include "java/lang/Throwable.h"
 #include "JArray.h"
 
 namespace java {
   namespace lang {
 
-    ::java::lang::Class *SecurityException::class$ = NULL;
-    jmethodID *SecurityException::mids$ = NULL;
-    bool SecurityException::live$ = false;
+    ::java::lang::Class *IllegalAccessException::class$ = NULL;
+    jmethodID *IllegalAccessException::mids$ = NULL;
+    bool IllegalAccessException::live$ = false;
 
-    jclass SecurityException::initializeClass(bool getOnly)
+    jclass IllegalAccessException::initializeClass(bool getOnly)
     {
       if (getOnly)
         return (jclass) (live$ ? class$->this$ : NULL);
       if (class$ == NULL)
       {
-        jclass cls = (jclass) env->findClass("java/lang/SecurityException");
+        jclass cls = (jclass) env->findClass("java/lang/IllegalAccessException");
 
         mids$ = new jmethodID[max_mid];
-        mids$[mid_init$_0640e6acf969ed28] = env->getMethodID(cls, "<init>", "()V");
-        mids$[mid_init$_f5ffdf29129ef90a] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;)V");
-        mids$[mid_init$_7d9320fd2ea36122] = env->getMethodID(cls, "<init>", "(Ljava/lang/Throwable;)V");
-        mids$[mid_init$_0701bef404aae0c6] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;Ljava/lang/Throwable;)V");
+        mids$[mid_init$_a1fa5dae97ea5ed2] = env->getMethodID(cls, "<init>", "()V");
+        mids$[mid_init$_734b91ac30d5f9b4] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;)V");
 
         class$ = new ::java::lang::Class(cls);
         live$ = true;
@@ -1059,13 +388,9 @@ namespace java {
       return (jclass) class$->this$;
     }
 
-    SecurityException::SecurityException() : ::java::lang::RuntimeException(env->newObject(initializeClass, &mids$, mid_init$_0640e6acf969ed28)) {}
+    IllegalAccessException::IllegalAccessException() : ::java::lang::ReflectiveOperationException(env->newObject(initializeClass, &mids$, mid_init$_a1fa5dae97ea5ed2)) {}
 
-    SecurityException::SecurityException(const ::java::lang::String & a0) : ::java::lang::RuntimeException(env->newObject(initializeClass, &mids$, mid_init$_f5ffdf29129ef90a, a0.this$)) {}
-
-    SecurityException::SecurityException(const ::java::lang::Throwable & a0) : ::java::lang::RuntimeException(env->newObject(initializeClass, &mids$, mid_init$_7d9320fd2ea36122, a0.this$)) {}
-
-    SecurityException::SecurityException(const ::java::lang::String & a0, const ::java::lang::Throwable & a1) : ::java::lang::RuntimeException(env->newObject(initializeClass, &mids$, mid_init$_0701bef404aae0c6, a0.this$, a1.this$)) {}
+    IllegalAccessException::IllegalAccessException(const ::java::lang::String & a0) : ::java::lang::ReflectiveOperationException(env->newObject(initializeClass, &mids$, mid_init$_734b91ac30d5f9b4, a0.this$)) {}
   }
 }
 
@@ -1075,104 +400,78 @@ namespace java {
 
 namespace java {
   namespace lang {
-    static PyObject *t_SecurityException_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_SecurityException_instance_(PyTypeObject *type, PyObject *arg);
-    static int t_SecurityException_init_(t_SecurityException *self, PyObject *args, PyObject *kwds);
+    static PyObject *t_IllegalAccessException_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_IllegalAccessException_instance_(PyTypeObject *type, PyObject *arg);
+    static int t_IllegalAccessException_init_(t_IllegalAccessException *self, PyObject *args, PyObject *kwds);
 
-    static PyMethodDef t_SecurityException__methods_[] = {
-      DECLARE_METHOD(t_SecurityException, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_SecurityException, instance_, METH_O | METH_CLASS),
+    static PyMethodDef t_IllegalAccessException__methods_[] = {
+      DECLARE_METHOD(t_IllegalAccessException, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_IllegalAccessException, instance_, METH_O | METH_CLASS),
       { NULL, NULL, 0, NULL }
     };
 
-    static PyType_Slot PY_TYPE_SLOTS(SecurityException)[] = {
-      { Py_tp_methods, t_SecurityException__methods_ },
-      { Py_tp_init, (void *) t_SecurityException_init_ },
+    static PyType_Slot PY_TYPE_SLOTS(IllegalAccessException)[] = {
+      { Py_tp_methods, t_IllegalAccessException__methods_ },
+      { Py_tp_init, (void *) t_IllegalAccessException_init_ },
       { 0, NULL }
     };
 
-    static PyType_Def *PY_TYPE_BASES(SecurityException)[] = {
-      &PY_TYPE_DEF(::java::lang::RuntimeException),
+    static PyType_Def *PY_TYPE_BASES(IllegalAccessException)[] = {
+      &PY_TYPE_DEF(::java::lang::ReflectiveOperationException),
       NULL
     };
 
-    DEFINE_TYPE(SecurityException, t_SecurityException, SecurityException);
+    DEFINE_TYPE(IllegalAccessException, t_IllegalAccessException, IllegalAccessException);
 
-    void t_SecurityException::install(PyObject *module)
+    void t_IllegalAccessException::install(PyObject *module)
     {
-      installType(&PY_TYPE(SecurityException), &PY_TYPE_DEF(SecurityException), module, "SecurityException", 0);
+      installType(&PY_TYPE(IllegalAccessException), &PY_TYPE_DEF(IllegalAccessException), module, "IllegalAccessException", 0);
     }
 
-    void t_SecurityException::initialize(PyObject *module)
+    void t_IllegalAccessException::initialize(PyObject *module)
     {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(SecurityException), "class_", make_descriptor(SecurityException::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(SecurityException), "wrapfn_", make_descriptor(t_SecurityException::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(SecurityException), "boxfn_", make_descriptor(boxObject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(IllegalAccessException), "class_", make_descriptor(IllegalAccessException::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(IllegalAccessException), "wrapfn_", make_descriptor(t_IllegalAccessException::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(IllegalAccessException), "boxfn_", make_descriptor(boxObject));
     }
 
-    static PyObject *t_SecurityException_cast_(PyTypeObject *type, PyObject *arg)
+    static PyObject *t_IllegalAccessException_cast_(PyTypeObject *type, PyObject *arg)
     {
-      if (!(arg = castCheck(arg, SecurityException::initializeClass, 1)))
+      if (!(arg = castCheck(arg, IllegalAccessException::initializeClass, 1)))
         return NULL;
-      return t_SecurityException::wrap_Object(SecurityException(((t_SecurityException *) arg)->object.this$));
+      return t_IllegalAccessException::wrap_Object(IllegalAccessException(((t_IllegalAccessException *) arg)->object.this$));
     }
-    static PyObject *t_SecurityException_instance_(PyTypeObject *type, PyObject *arg)
+    static PyObject *t_IllegalAccessException_instance_(PyTypeObject *type, PyObject *arg)
     {
-      if (!castCheck(arg, SecurityException::initializeClass, 0))
+      if (!castCheck(arg, IllegalAccessException::initializeClass, 0))
         Py_RETURN_FALSE;
       Py_RETURN_TRUE;
     }
 
-    static int t_SecurityException_init_(t_SecurityException *self, PyObject *args, PyObject *kwds)
+    static int t_IllegalAccessException_init_(t_IllegalAccessException *self, PyObject *args, PyObject *kwds)
     {
       switch (PyTuple_GET_SIZE(args)) {
        case 0:
         {
-          SecurityException object((jobject) NULL);
+          IllegalAccessException object((jobject) NULL);
 
-          INT_CALL(object = SecurityException());
+          INT_CALL(object = IllegalAccessException());
           self->object = object;
           break;
         }
        case 1:
         {
           ::java::lang::String a0((jobject) NULL);
-          SecurityException object((jobject) NULL);
+          IllegalAccessException object((jobject) NULL);
 
           if (!parseArgs(args, "s", &a0))
           {
-            INT_CALL(object = SecurityException(a0));
-            self->object = object;
-            break;
-          }
-        }
-        {
-          ::java::lang::Throwable a0((jobject) NULL);
-          SecurityException object((jobject) NULL);
-
-          if (!parseArgs(args, "k", ::java::lang::Throwable::initializeClass, &a0))
-          {
-            INT_CALL(object = SecurityException(a0));
-            self->object = object;
-            break;
-          }
-        }
-        goto err;
-       case 2:
-        {
-          ::java::lang::String a0((jobject) NULL);
-          ::java::lang::Throwable a1((jobject) NULL);
-          SecurityException object((jobject) NULL);
-
-          if (!parseArgs(args, "sk", ::java::lang::Throwable::initializeClass, &a0, &a1))
-          {
-            INT_CALL(object = SecurityException(a0, a1));
+            INT_CALL(object = IllegalAccessException(a0));
             self->object = object;
             break;
           }
         }
        default:
-       err:
         PyErr_SetArgsError((PyObject *) self, "__init__", args);
         return -1;
       }
@@ -1183,29 +482,29 @@ namespace java {
 }
 #include <jni.h>
 #include "JCCEnv.h"
-#include "java/io/ObjectInputFilter.h"
-#include "java/io/ObjectInputFilter$FilterInfo.h"
-#include "java/io/ObjectInputFilter$Status.h"
+#include "java/io/FilenameFilter.h"
+#include "java/lang/String.h"
 #include "java/lang/Class.h"
+#include "java/io/File.h"
 #include "JArray.h"
 
 namespace java {
   namespace io {
 
-    ::java::lang::Class *ObjectInputFilter::class$ = NULL;
-    jmethodID *ObjectInputFilter::mids$ = NULL;
-    bool ObjectInputFilter::live$ = false;
+    ::java::lang::Class *FilenameFilter::class$ = NULL;
+    jmethodID *FilenameFilter::mids$ = NULL;
+    bool FilenameFilter::live$ = false;
 
-    jclass ObjectInputFilter::initializeClass(bool getOnly)
+    jclass FilenameFilter::initializeClass(bool getOnly)
     {
       if (getOnly)
         return (jclass) (live$ ? class$->this$ : NULL);
       if (class$ == NULL)
       {
-        jclass cls = (jclass) env->findClass("java/io/ObjectInputFilter");
+        jclass cls = (jclass) env->findClass("java/io/FilenameFilter");
 
         mids$ = new jmethodID[max_mid];
-        mids$[mid_checkInput_e04658988b631719] = env->getMethodID(cls, "checkInput", "(Ljava/io/ObjectInputFilter$FilterInfo;)Ljava/io/ObjectInputFilter$Status;");
+        mids$[mid_accept_12832a4c86ffbc36] = env->getMethodID(cls, "accept", "(Ljava/io/File;Ljava/lang/String;)Z");
 
         class$ = new ::java::lang::Class(cls);
         live$ = true;
@@ -1213,9 +512,9 @@ namespace java {
       return (jclass) class$->this$;
     }
 
-    ::java::io::ObjectInputFilter$Status ObjectInputFilter::checkInput(const ::java::io::ObjectInputFilter$FilterInfo & a0) const
+    jboolean FilenameFilter::accept(const ::java::io::File & a0, const ::java::lang::String & a1) const
     {
-      return ::java::io::ObjectInputFilter$Status(env->callObjectMethod(this$, mids$[mid_checkInput_e04658988b631719], a0.this$));
+      return env->callBooleanMethod(this$, mids$[mid_accept_12832a4c86ffbc36], a0.this$, a1.this$);
     }
   }
 }
@@ -1226,158 +525,145 @@ namespace java {
 
 namespace java {
   namespace io {
-    static PyObject *t_ObjectInputFilter_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_ObjectInputFilter_instance_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_ObjectInputFilter_checkInput(t_ObjectInputFilter *self, PyObject *arg);
+    static PyObject *t_FilenameFilter_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_FilenameFilter_instance_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_FilenameFilter_accept(t_FilenameFilter *self, PyObject *args);
 
-    static PyMethodDef t_ObjectInputFilter__methods_[] = {
-      DECLARE_METHOD(t_ObjectInputFilter, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_ObjectInputFilter, instance_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_ObjectInputFilter, checkInput, METH_O),
+    static PyMethodDef t_FilenameFilter__methods_[] = {
+      DECLARE_METHOD(t_FilenameFilter, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_FilenameFilter, instance_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_FilenameFilter, accept, METH_VARARGS),
       { NULL, NULL, 0, NULL }
     };
 
-    static PyType_Slot PY_TYPE_SLOTS(ObjectInputFilter)[] = {
-      { Py_tp_methods, t_ObjectInputFilter__methods_ },
+    static PyType_Slot PY_TYPE_SLOTS(FilenameFilter)[] = {
+      { Py_tp_methods, t_FilenameFilter__methods_ },
       { Py_tp_init, (void *) abstract_init },
       { 0, NULL }
     };
 
-    static PyType_Def *PY_TYPE_BASES(ObjectInputFilter)[] = {
+    static PyType_Def *PY_TYPE_BASES(FilenameFilter)[] = {
       &PY_TYPE_DEF(::java::lang::Object),
       NULL
     };
 
-    DEFINE_TYPE(ObjectInputFilter, t_ObjectInputFilter, ObjectInputFilter);
+    DEFINE_TYPE(FilenameFilter, t_FilenameFilter, FilenameFilter);
 
-    void t_ObjectInputFilter::install(PyObject *module)
+    void t_FilenameFilter::install(PyObject *module)
     {
-      installType(&PY_TYPE(ObjectInputFilter), &PY_TYPE_DEF(ObjectInputFilter), module, "ObjectInputFilter", 0);
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputFilter), "Status", make_descriptor(&PY_TYPE_DEF(ObjectInputFilter$Status)));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputFilter), "FilterInfo", make_descriptor(&PY_TYPE_DEF(ObjectInputFilter$FilterInfo)));
+      installType(&PY_TYPE(FilenameFilter), &PY_TYPE_DEF(FilenameFilter), module, "FilenameFilter", 0);
     }
 
-    void t_ObjectInputFilter::initialize(PyObject *module)
+    void t_FilenameFilter::initialize(PyObject *module)
     {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputFilter), "class_", make_descriptor(ObjectInputFilter::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputFilter), "wrapfn_", make_descriptor(t_ObjectInputFilter::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputFilter), "boxfn_", make_descriptor(boxObject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(FilenameFilter), "class_", make_descriptor(FilenameFilter::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(FilenameFilter), "wrapfn_", make_descriptor(t_FilenameFilter::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(FilenameFilter), "boxfn_", make_descriptor(boxObject));
     }
 
-    static PyObject *t_ObjectInputFilter_cast_(PyTypeObject *type, PyObject *arg)
+    static PyObject *t_FilenameFilter_cast_(PyTypeObject *type, PyObject *arg)
     {
-      if (!(arg = castCheck(arg, ObjectInputFilter::initializeClass, 1)))
+      if (!(arg = castCheck(arg, FilenameFilter::initializeClass, 1)))
         return NULL;
-      return t_ObjectInputFilter::wrap_Object(ObjectInputFilter(((t_ObjectInputFilter *) arg)->object.this$));
+      return t_FilenameFilter::wrap_Object(FilenameFilter(((t_FilenameFilter *) arg)->object.this$));
     }
-    static PyObject *t_ObjectInputFilter_instance_(PyTypeObject *type, PyObject *arg)
+    static PyObject *t_FilenameFilter_instance_(PyTypeObject *type, PyObject *arg)
     {
-      if (!castCheck(arg, ObjectInputFilter::initializeClass, 0))
+      if (!castCheck(arg, FilenameFilter::initializeClass, 0))
         Py_RETURN_FALSE;
       Py_RETURN_TRUE;
     }
 
-    static PyObject *t_ObjectInputFilter_checkInput(t_ObjectInputFilter *self, PyObject *arg)
+    static PyObject *t_FilenameFilter_accept(t_FilenameFilter *self, PyObject *args)
     {
-      ::java::io::ObjectInputFilter$FilterInfo a0((jobject) NULL);
-      ::java::io::ObjectInputFilter$Status result((jobject) NULL);
+      ::java::io::File a0((jobject) NULL);
+      ::java::lang::String a1((jobject) NULL);
+      jboolean result;
 
-      if (!parseArg(arg, "k", ::java::io::ObjectInputFilter$FilterInfo::initializeClass, &a0))
+      if (!parseArgs(args, "ks", ::java::io::File::initializeClass, &a0, &a1))
       {
-        OBJ_CALL(result = self->object.checkInput(a0));
-        return ::java::io::t_ObjectInputFilter$Status::wrap_Object(result);
+        OBJ_CALL(result = self->object.accept(a0, a1));
+        Py_RETURN_BOOL(result);
       }
 
-      PyErr_SetArgsError((PyObject *) self, "checkInput", arg);
+      PyErr_SetArgsError((PyObject *) self, "accept", args);
       return NULL;
     }
   }
 }
 #include <jni.h>
 #include "JCCEnv.h"
-#include "java/io/ObjectStreamClass.h"
-#include "java/io/ObjectStreamField.h"
-#include "java/io/Serializable.h"
-#include "java/io/ObjectStreamClass.h"
+#include "java/util/SortedSet.h"
+#include "java/util/Spliterator.h"
+#include "java/util/Comparator.h"
 #include "java/lang/Class.h"
-#include "java/lang/String.h"
+#include "java/lang/Object.h"
+#include "java/util/SortedSet.h"
 #include "JArray.h"
 
 namespace java {
-  namespace io {
+  namespace util {
 
-    ::java::lang::Class *ObjectStreamClass::class$ = NULL;
-    jmethodID *ObjectStreamClass::mids$ = NULL;
-    bool ObjectStreamClass::live$ = false;
-    JArray< ::java::io::ObjectStreamField > *ObjectStreamClass::NO_FIELDS = NULL;
+    ::java::lang::Class *SortedSet::class$ = NULL;
+    jmethodID *SortedSet::mids$ = NULL;
+    bool SortedSet::live$ = false;
 
-    jclass ObjectStreamClass::initializeClass(bool getOnly)
+    jclass SortedSet::initializeClass(bool getOnly)
     {
       if (getOnly)
         return (jclass) (live$ ? class$->this$ : NULL);
       if (class$ == NULL)
       {
-        jclass cls = (jclass) env->findClass("java/io/ObjectStreamClass");
+        jclass cls = (jclass) env->findClass("java/util/SortedSet");
 
         mids$ = new jmethodID[max_mid];
-        mids$[mid_forClass_d4b191ff8147475d] = env->getMethodID(cls, "forClass", "()Ljava/lang/Class;");
-        mids$[mid_getField_08225b2fd24da2ad] = env->getMethodID(cls, "getField", "(Ljava/lang/String;)Ljava/io/ObjectStreamField;");
-        mids$[mid_getFields_7934f9002a889ae9] = env->getMethodID(cls, "getFields", "()[Ljava/io/ObjectStreamField;");
-        mids$[mid_getName_3cffd47377eca18a] = env->getMethodID(cls, "getName", "()Ljava/lang/String;");
-        mids$[mid_getSerialVersionUID_9e26256fb0d384a2] = env->getMethodID(cls, "getSerialVersionUID", "()J");
-        mids$[mid_lookup_f8433cde6293a234] = env->getStaticMethodID(cls, "lookup", "(Ljava/lang/Class;)Ljava/io/ObjectStreamClass;");
-        mids$[mid_lookupAny_f8433cde6293a234] = env->getStaticMethodID(cls, "lookupAny", "(Ljava/lang/Class;)Ljava/io/ObjectStreamClass;");
-        mids$[mid_toString_3cffd47377eca18a] = env->getMethodID(cls, "toString", "()Ljava/lang/String;");
+        mids$[mid_comparator_127b1bec8b0c3ae1] = env->getMethodID(cls, "comparator", "()Ljava/util/Comparator;");
+        mids$[mid_first_541690f9ee81d3ad] = env->getMethodID(cls, "first", "()Ljava/lang/Object;");
+        mids$[mid_headSet_15bf8d17699caf41] = env->getMethodID(cls, "headSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;");
+        mids$[mid_last_541690f9ee81d3ad] = env->getMethodID(cls, "last", "()Ljava/lang/Object;");
+        mids$[mid_spliterator_fe8f811ebd6e639a] = env->getMethodID(cls, "spliterator", "()Ljava/util/Spliterator;");
+        mids$[mid_subSet_4e206fa37c57fda5] = env->getMethodID(cls, "subSet", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/util/SortedSet;");
+        mids$[mid_tailSet_15bf8d17699caf41] = env->getMethodID(cls, "tailSet", "(Ljava/lang/Object;)Ljava/util/SortedSet;");
 
         class$ = new ::java::lang::Class(cls);
-        cls = (jclass) class$->this$;
-
-        NO_FIELDS = new JArray< ::java::io::ObjectStreamField >(env->getStaticObjectField(cls, "NO_FIELDS", "[Ljava/io/ObjectStreamField;"));
         live$ = true;
       }
       return (jclass) class$->this$;
     }
 
-    ::java::lang::Class ObjectStreamClass::forClass() const
+    ::java::util::Comparator SortedSet::comparator() const
     {
-      return ::java::lang::Class(env->callObjectMethod(this$, mids$[mid_forClass_d4b191ff8147475d]));
+      return ::java::util::Comparator(env->callObjectMethod(this$, mids$[mid_comparator_127b1bec8b0c3ae1]));
     }
 
-    ::java::io::ObjectStreamField ObjectStreamClass::getField(const ::java::lang::String & a0) const
+    ::java::lang::Object SortedSet::first() const
     {
-      return ::java::io::ObjectStreamField(env->callObjectMethod(this$, mids$[mid_getField_08225b2fd24da2ad], a0.this$));
+      return ::java::lang::Object(env->callObjectMethod(this$, mids$[mid_first_541690f9ee81d3ad]));
     }
 
-    JArray< ::java::io::ObjectStreamField > ObjectStreamClass::getFields() const
+    SortedSet SortedSet::headSet(const ::java::lang::Object & a0) const
     {
-      return JArray< ::java::io::ObjectStreamField >(env->callObjectMethod(this$, mids$[mid_getFields_7934f9002a889ae9]));
+      return SortedSet(env->callObjectMethod(this$, mids$[mid_headSet_15bf8d17699caf41], a0.this$));
     }
 
-    ::java::lang::String ObjectStreamClass::getName() const
+    ::java::lang::Object SortedSet::last() const
     {
-      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getName_3cffd47377eca18a]));
+      return ::java::lang::Object(env->callObjectMethod(this$, mids$[mid_last_541690f9ee81d3ad]));
     }
 
-    jlong ObjectStreamClass::getSerialVersionUID() const
+    ::java::util::Spliterator SortedSet::spliterator() const
     {
-      return env->callLongMethod(this$, mids$[mid_getSerialVersionUID_9e26256fb0d384a2]);
+      return ::java::util::Spliterator(env->callObjectMethod(this$, mids$[mid_spliterator_fe8f811ebd6e639a]));
     }
 
-    ObjectStreamClass ObjectStreamClass::lookup(const ::java::lang::Class & a0)
+    SortedSet SortedSet::subSet(const ::java::lang::Object & a0, const ::java::lang::Object & a1) const
     {
-      jclass cls = env->getClass(initializeClass);
-      return ObjectStreamClass(env->callStaticObjectMethod(cls, mids$[mid_lookup_f8433cde6293a234], a0.this$));
+      return SortedSet(env->callObjectMethod(this$, mids$[mid_subSet_4e206fa37c57fda5], a0.this$, a1.this$));
     }
 
-    ObjectStreamClass ObjectStreamClass::lookupAny(const ::java::lang::Class & a0)
+    SortedSet SortedSet::tailSet(const ::java::lang::Object & a0) const
     {
-      jclass cls = env->getClass(initializeClass);
-      return ObjectStreamClass(env->callStaticObjectMethod(cls, mids$[mid_lookupAny_f8433cde6293a234], a0.this$));
-    }
-
-    ::java::lang::String ObjectStreamClass::toString() const
-    {
-      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_toString_3cffd47377eca18a]));
+      return SortedSet(env->callObjectMethod(this$, mids$[mid_tailSet_15bf8d17699caf41], a0.this$));
     }
   }
 }
@@ -1387,317 +673,186 @@ namespace java {
 #include "macros.h"
 
 namespace java {
-  namespace io {
-    static PyObject *t_ObjectStreamClass_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_ObjectStreamClass_instance_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_ObjectStreamClass_forClass(t_ObjectStreamClass *self);
-    static PyObject *t_ObjectStreamClass_getField(t_ObjectStreamClass *self, PyObject *arg);
-    static PyObject *t_ObjectStreamClass_getFields(t_ObjectStreamClass *self);
-    static PyObject *t_ObjectStreamClass_getName(t_ObjectStreamClass *self);
-    static PyObject *t_ObjectStreamClass_getSerialVersionUID(t_ObjectStreamClass *self);
-    static PyObject *t_ObjectStreamClass_lookup(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_ObjectStreamClass_lookupAny(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_ObjectStreamClass_toString(t_ObjectStreamClass *self, PyObject *args);
-    static PyObject *t_ObjectStreamClass_get__fields(t_ObjectStreamClass *self, void *data);
-    static PyObject *t_ObjectStreamClass_get__name(t_ObjectStreamClass *self, void *data);
-    static PyObject *t_ObjectStreamClass_get__serialVersionUID(t_ObjectStreamClass *self, void *data);
-    static PyGetSetDef t_ObjectStreamClass__fields_[] = {
-      DECLARE_GET_FIELD(t_ObjectStreamClass, fields),
-      DECLARE_GET_FIELD(t_ObjectStreamClass, name),
-      DECLARE_GET_FIELD(t_ObjectStreamClass, serialVersionUID),
+  namespace util {
+    static PyObject *t_SortedSet_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_SortedSet_instance_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_SortedSet_of_(t_SortedSet *self, PyObject *args);
+    static PyObject *t_SortedSet_comparator(t_SortedSet *self);
+    static PyObject *t_SortedSet_first(t_SortedSet *self);
+    static PyObject *t_SortedSet_headSet(t_SortedSet *self, PyObject *arg);
+    static PyObject *t_SortedSet_last(t_SortedSet *self);
+    static PyObject *t_SortedSet_spliterator(t_SortedSet *self, PyObject *args);
+    static PyObject *t_SortedSet_subSet(t_SortedSet *self, PyObject *args);
+    static PyObject *t_SortedSet_tailSet(t_SortedSet *self, PyObject *arg);
+    static PyObject *t_SortedSet_get__parameters_(t_SortedSet *self, void *data);
+    static PyGetSetDef t_SortedSet__fields_[] = {
+      DECLARE_GET_FIELD(t_SortedSet, parameters_),
       { NULL, NULL, NULL, NULL, NULL }
     };
 
-    static PyMethodDef t_ObjectStreamClass__methods_[] = {
-      DECLARE_METHOD(t_ObjectStreamClass, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_ObjectStreamClass, instance_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_ObjectStreamClass, forClass, METH_NOARGS),
-      DECLARE_METHOD(t_ObjectStreamClass, getField, METH_O),
-      DECLARE_METHOD(t_ObjectStreamClass, getFields, METH_NOARGS),
-      DECLARE_METHOD(t_ObjectStreamClass, getName, METH_NOARGS),
-      DECLARE_METHOD(t_ObjectStreamClass, getSerialVersionUID, METH_NOARGS),
-      DECLARE_METHOD(t_ObjectStreamClass, lookup, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_ObjectStreamClass, lookupAny, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_ObjectStreamClass, toString, METH_VARARGS),
+    static PyMethodDef t_SortedSet__methods_[] = {
+      DECLARE_METHOD(t_SortedSet, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_SortedSet, instance_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_SortedSet, of_, METH_VARARGS),
+      DECLARE_METHOD(t_SortedSet, comparator, METH_NOARGS),
+      DECLARE_METHOD(t_SortedSet, first, METH_NOARGS),
+      DECLARE_METHOD(t_SortedSet, headSet, METH_O),
+      DECLARE_METHOD(t_SortedSet, last, METH_NOARGS),
+      DECLARE_METHOD(t_SortedSet, spliterator, METH_VARARGS),
+      DECLARE_METHOD(t_SortedSet, subSet, METH_VARARGS),
+      DECLARE_METHOD(t_SortedSet, tailSet, METH_O),
       { NULL, NULL, 0, NULL }
     };
 
-    static PyType_Slot PY_TYPE_SLOTS(ObjectStreamClass)[] = {
-      { Py_tp_methods, t_ObjectStreamClass__methods_ },
+    static PyType_Slot PY_TYPE_SLOTS(SortedSet)[] = {
+      { Py_tp_methods, t_SortedSet__methods_ },
       { Py_tp_init, (void *) abstract_init },
-      { Py_tp_getset, t_ObjectStreamClass__fields_ },
+      { Py_tp_getset, t_SortedSet__fields_ },
       { 0, NULL }
     };
 
-    static PyType_Def *PY_TYPE_BASES(ObjectStreamClass)[] = {
-      &PY_TYPE_DEF(::java::lang::Object),
+    static PyType_Def *PY_TYPE_BASES(SortedSet)[] = {
+      &PY_TYPE_DEF(::java::util::Set),
       NULL
     };
 
-    DEFINE_TYPE(ObjectStreamClass, t_ObjectStreamClass, ObjectStreamClass);
-
-    void t_ObjectStreamClass::install(PyObject *module)
+    DEFINE_TYPE(SortedSet, t_SortedSet, SortedSet);
+    PyObject *t_SortedSet::wrap_Object(const SortedSet& object, PyTypeObject *p0)
     {
-      installType(&PY_TYPE(ObjectStreamClass), &PY_TYPE_DEF(ObjectStreamClass), module, "ObjectStreamClass", 0);
+      PyObject *obj = t_SortedSet::wrap_Object(object);
+      if (obj != NULL && obj != Py_None)
+      {
+        t_SortedSet *self = (t_SortedSet *) obj;
+        self->parameters[0] = p0;
+      }
+      return obj;
     }
 
-    void t_ObjectStreamClass::initialize(PyObject *module)
+    PyObject *t_SortedSet::wrap_jobject(const jobject& object, PyTypeObject *p0)
     {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectStreamClass), "class_", make_descriptor(ObjectStreamClass::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectStreamClass), "wrapfn_", make_descriptor(t_ObjectStreamClass::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectStreamClass), "boxfn_", make_descriptor(boxObject));
-      env->getClass(ObjectStreamClass::initializeClass);
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectStreamClass), "NO_FIELDS", make_descriptor(JArray<jobject>(ObjectStreamClass::NO_FIELDS->this$).wrap(::java::io::t_ObjectStreamField::wrap_jobject)));
+      PyObject *obj = t_SortedSet::wrap_jobject(object);
+      if (obj != NULL && obj != Py_None)
+      {
+        t_SortedSet *self = (t_SortedSet *) obj;
+        self->parameters[0] = p0;
+      }
+      return obj;
     }
 
-    static PyObject *t_ObjectStreamClass_cast_(PyTypeObject *type, PyObject *arg)
+    void t_SortedSet::install(PyObject *module)
     {
-      if (!(arg = castCheck(arg, ObjectStreamClass::initializeClass, 1)))
+      installType(&PY_TYPE(SortedSet), &PY_TYPE_DEF(SortedSet), module, "SortedSet", 0);
+    }
+
+    void t_SortedSet::initialize(PyObject *module)
+    {
+      PyObject_SetAttrString((PyObject *) PY_TYPE(SortedSet), "class_", make_descriptor(SortedSet::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(SortedSet), "wrapfn_", make_descriptor(t_SortedSet::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(SortedSet), "boxfn_", make_descriptor(boxObject));
+    }
+
+    static PyObject *t_SortedSet_cast_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!(arg = castCheck(arg, SortedSet::initializeClass, 1)))
         return NULL;
-      return t_ObjectStreamClass::wrap_Object(ObjectStreamClass(((t_ObjectStreamClass *) arg)->object.this$));
+      return t_SortedSet::wrap_Object(SortedSet(((t_SortedSet *) arg)->object.this$));
     }
-    static PyObject *t_ObjectStreamClass_instance_(PyTypeObject *type, PyObject *arg)
+    static PyObject *t_SortedSet_instance_(PyTypeObject *type, PyObject *arg)
     {
-      if (!castCheck(arg, ObjectStreamClass::initializeClass, 0))
+      if (!castCheck(arg, SortedSet::initializeClass, 0))
         Py_RETURN_FALSE;
       Py_RETURN_TRUE;
     }
 
-    static PyObject *t_ObjectStreamClass_forClass(t_ObjectStreamClass *self)
+    static PyObject *t_SortedSet_of_(t_SortedSet *self, PyObject *args)
     {
-      ::java::lang::Class result((jobject) NULL);
-      OBJ_CALL(result = self->object.forClass());
-      return ::java::lang::t_Class::wrap_Object(result);
+      if (!parseArg(args, "T", 1, &(self->parameters)))
+        Py_RETURN_SELF;
+      return PyErr_SetArgsError((PyObject *) self, "of_", args);
     }
 
-    static PyObject *t_ObjectStreamClass_getField(t_ObjectStreamClass *self, PyObject *arg)
+    static PyObject *t_SortedSet_comparator(t_SortedSet *self)
     {
-      ::java::lang::String a0((jobject) NULL);
-      ::java::io::ObjectStreamField result((jobject) NULL);
+      ::java::util::Comparator result((jobject) NULL);
+      OBJ_CALL(result = self->object.comparator());
+      return ::java::util::t_Comparator::wrap_Object(result);
+    }
 
-      if (!parseArg(arg, "s", &a0))
+    static PyObject *t_SortedSet_first(t_SortedSet *self)
+    {
+      ::java::lang::Object result((jobject) NULL);
+      OBJ_CALL(result = self->object.first());
+      return self->parameters[0] != NULL ? wrapType(self->parameters[0], result.this$) : ::java::lang::t_Object::wrap_Object(result);
+    }
+
+    static PyObject *t_SortedSet_headSet(t_SortedSet *self, PyObject *arg)
+    {
+      ::java::lang::Object a0((jobject) NULL);
+      SortedSet result((jobject) NULL);
+
+      if (!parseArg(arg, "O", self->parameters[0], &a0))
       {
-        OBJ_CALL(result = self->object.getField(a0));
-        return ::java::io::t_ObjectStreamField::wrap_Object(result);
+        OBJ_CALL(result = self->object.headSet(a0));
+        return t_SortedSet::wrap_Object(result, self->parameters[0]);
       }
 
-      PyErr_SetArgsError((PyObject *) self, "getField", arg);
+      PyErr_SetArgsError((PyObject *) self, "headSet", arg);
       return NULL;
     }
 
-    static PyObject *t_ObjectStreamClass_getFields(t_ObjectStreamClass *self)
+    static PyObject *t_SortedSet_last(t_SortedSet *self)
     {
-      JArray< ::java::io::ObjectStreamField > result((jobject) NULL);
-      OBJ_CALL(result = self->object.getFields());
-      return JArray<jobject>(result.this$).wrap(::java::io::t_ObjectStreamField::wrap_jobject);
+      ::java::lang::Object result((jobject) NULL);
+      OBJ_CALL(result = self->object.last());
+      return self->parameters[0] != NULL ? wrapType(self->parameters[0], result.this$) : ::java::lang::t_Object::wrap_Object(result);
     }
 
-    static PyObject *t_ObjectStreamClass_getName(t_ObjectStreamClass *self)
+    static PyObject *t_SortedSet_spliterator(t_SortedSet *self, PyObject *args)
     {
-      ::java::lang::String result((jobject) NULL);
-      OBJ_CALL(result = self->object.getName());
-      return j2p(result);
-    }
-
-    static PyObject *t_ObjectStreamClass_getSerialVersionUID(t_ObjectStreamClass *self)
-    {
-      jlong result;
-      OBJ_CALL(result = self->object.getSerialVersionUID());
-      return PyLong_FromLongLong((PY_LONG_LONG) result);
-    }
-
-    static PyObject *t_ObjectStreamClass_lookup(PyTypeObject *type, PyObject *arg)
-    {
-      ::java::lang::Class a0((jobject) NULL);
-      PyTypeObject **p0;
-      ObjectStreamClass result((jobject) NULL);
-
-      if (!parseArg(arg, "K", ::java::lang::Class::initializeClass, &a0, &p0, ::java::lang::t_Class::parameters_))
-      {
-        OBJ_CALL(result = ::java::io::ObjectStreamClass::lookup(a0));
-        return t_ObjectStreamClass::wrap_Object(result);
-      }
-
-      PyErr_SetArgsError(type, "lookup", arg);
-      return NULL;
-    }
-
-    static PyObject *t_ObjectStreamClass_lookupAny(PyTypeObject *type, PyObject *arg)
-    {
-      ::java::lang::Class a0((jobject) NULL);
-      PyTypeObject **p0;
-      ObjectStreamClass result((jobject) NULL);
-
-      if (!parseArg(arg, "K", ::java::lang::Class::initializeClass, &a0, &p0, ::java::lang::t_Class::parameters_))
-      {
-        OBJ_CALL(result = ::java::io::ObjectStreamClass::lookupAny(a0));
-        return t_ObjectStreamClass::wrap_Object(result);
-      }
-
-      PyErr_SetArgsError(type, "lookupAny", arg);
-      return NULL;
-    }
-
-    static PyObject *t_ObjectStreamClass_toString(t_ObjectStreamClass *self, PyObject *args)
-    {
-      ::java::lang::String result((jobject) NULL);
+      ::java::util::Spliterator result((jobject) NULL);
 
       if (!parseArgs(args, ""))
       {
-        OBJ_CALL(result = self->object.toString());
-        return j2p(result);
+        OBJ_CALL(result = self->object.spliterator());
+        return ::java::util::t_Spliterator::wrap_Object(result, self->parameters[0]);
       }
 
-      return callSuper(PY_TYPE(ObjectStreamClass), (PyObject *) self, "toString", args, 2);
+      return callSuper(PY_TYPE(SortedSet), (PyObject *) self, "spliterator", args, 2);
     }
 
-    static PyObject *t_ObjectStreamClass_get__fields(t_ObjectStreamClass *self, void *data)
+    static PyObject *t_SortedSet_subSet(t_SortedSet *self, PyObject *args)
     {
-      JArray< ::java::io::ObjectStreamField > value((jobject) NULL);
-      OBJ_CALL(value = self->object.getFields());
-      return JArray<jobject>(value.this$).wrap(::java::io::t_ObjectStreamField::wrap_jobject);
-    }
+      ::java::lang::Object a0((jobject) NULL);
+      ::java::lang::Object a1((jobject) NULL);
+      SortedSet result((jobject) NULL);
 
-    static PyObject *t_ObjectStreamClass_get__name(t_ObjectStreamClass *self, void *data)
-    {
-      ::java::lang::String value((jobject) NULL);
-      OBJ_CALL(value = self->object.getName());
-      return j2p(value);
-    }
-
-    static PyObject *t_ObjectStreamClass_get__serialVersionUID(t_ObjectStreamClass *self, void *data)
-    {
-      jlong value;
-      OBJ_CALL(value = self->object.getSerialVersionUID());
-      return PyLong_FromLongLong((PY_LONG_LONG) value);
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "java/util/InvalidPropertiesFormatException.h"
-#include "java/lang/String.h"
-#include "java/lang/Class.h"
-#include "java/lang/Throwable.h"
-#include "JArray.h"
-
-namespace java {
-  namespace util {
-
-    ::java::lang::Class *InvalidPropertiesFormatException::class$ = NULL;
-    jmethodID *InvalidPropertiesFormatException::mids$ = NULL;
-    bool InvalidPropertiesFormatException::live$ = false;
-
-    jclass InvalidPropertiesFormatException::initializeClass(bool getOnly)
-    {
-      if (getOnly)
-        return (jclass) (live$ ? class$->this$ : NULL);
-      if (class$ == NULL)
+      if (!parseArgs(args, "OO", self->parameters[0], self->parameters[0], &a0, &a1))
       {
-        jclass cls = (jclass) env->findClass("java/util/InvalidPropertiesFormatException");
-
-        mids$ = new jmethodID[max_mid];
-        mids$[mid_init$_f5ffdf29129ef90a] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;)V");
-        mids$[mid_init$_7d9320fd2ea36122] = env->getMethodID(cls, "<init>", "(Ljava/lang/Throwable;)V");
-
-        class$ = new ::java::lang::Class(cls);
-        live$ = true;
-      }
-      return (jclass) class$->this$;
-    }
-
-    InvalidPropertiesFormatException::InvalidPropertiesFormatException(const ::java::lang::String & a0) : ::java::io::IOException(env->newObject(initializeClass, &mids$, mid_init$_f5ffdf29129ef90a, a0.this$)) {}
-
-    InvalidPropertiesFormatException::InvalidPropertiesFormatException(const ::java::lang::Throwable & a0) : ::java::io::IOException(env->newObject(initializeClass, &mids$, mid_init$_7d9320fd2ea36122, a0.this$)) {}
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace java {
-  namespace util {
-    static PyObject *t_InvalidPropertiesFormatException_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_InvalidPropertiesFormatException_instance_(PyTypeObject *type, PyObject *arg);
-    static int t_InvalidPropertiesFormatException_init_(t_InvalidPropertiesFormatException *self, PyObject *args, PyObject *kwds);
-
-    static PyMethodDef t_InvalidPropertiesFormatException__methods_[] = {
-      DECLARE_METHOD(t_InvalidPropertiesFormatException, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_InvalidPropertiesFormatException, instance_, METH_O | METH_CLASS),
-      { NULL, NULL, 0, NULL }
-    };
-
-    static PyType_Slot PY_TYPE_SLOTS(InvalidPropertiesFormatException)[] = {
-      { Py_tp_methods, t_InvalidPropertiesFormatException__methods_ },
-      { Py_tp_init, (void *) t_InvalidPropertiesFormatException_init_ },
-      { 0, NULL }
-    };
-
-    static PyType_Def *PY_TYPE_BASES(InvalidPropertiesFormatException)[] = {
-      &PY_TYPE_DEF(::java::io::IOException),
-      NULL
-    };
-
-    DEFINE_TYPE(InvalidPropertiesFormatException, t_InvalidPropertiesFormatException, InvalidPropertiesFormatException);
-
-    void t_InvalidPropertiesFormatException::install(PyObject *module)
-    {
-      installType(&PY_TYPE(InvalidPropertiesFormatException), &PY_TYPE_DEF(InvalidPropertiesFormatException), module, "InvalidPropertiesFormatException", 0);
-    }
-
-    void t_InvalidPropertiesFormatException::initialize(PyObject *module)
-    {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(InvalidPropertiesFormatException), "class_", make_descriptor(InvalidPropertiesFormatException::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(InvalidPropertiesFormatException), "wrapfn_", make_descriptor(t_InvalidPropertiesFormatException::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(InvalidPropertiesFormatException), "boxfn_", make_descriptor(boxObject));
-    }
-
-    static PyObject *t_InvalidPropertiesFormatException_cast_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!(arg = castCheck(arg, InvalidPropertiesFormatException::initializeClass, 1)))
-        return NULL;
-      return t_InvalidPropertiesFormatException::wrap_Object(InvalidPropertiesFormatException(((t_InvalidPropertiesFormatException *) arg)->object.this$));
-    }
-    static PyObject *t_InvalidPropertiesFormatException_instance_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!castCheck(arg, InvalidPropertiesFormatException::initializeClass, 0))
-        Py_RETURN_FALSE;
-      Py_RETURN_TRUE;
-    }
-
-    static int t_InvalidPropertiesFormatException_init_(t_InvalidPropertiesFormatException *self, PyObject *args, PyObject *kwds)
-    {
-      switch (PyTuple_GET_SIZE(args)) {
-       case 1:
-        {
-          ::java::lang::String a0((jobject) NULL);
-          InvalidPropertiesFormatException object((jobject) NULL);
-
-          if (!parseArgs(args, "s", &a0))
-          {
-            INT_CALL(object = InvalidPropertiesFormatException(a0));
-            self->object = object;
-            break;
-          }
-        }
-        {
-          ::java::lang::Throwable a0((jobject) NULL);
-          InvalidPropertiesFormatException object((jobject) NULL);
-
-          if (!parseArgs(args, "k", ::java::lang::Throwable::initializeClass, &a0))
-          {
-            INT_CALL(object = InvalidPropertiesFormatException(a0));
-            self->object = object;
-            break;
-          }
-        }
-       default:
-        PyErr_SetArgsError((PyObject *) self, "__init__", args);
-        return -1;
+        OBJ_CALL(result = self->object.subSet(a0, a1));
+        return t_SortedSet::wrap_Object(result, self->parameters[0]);
       }
 
-      return 0;
+      PyErr_SetArgsError((PyObject *) self, "subSet", args);
+      return NULL;
+    }
+
+    static PyObject *t_SortedSet_tailSet(t_SortedSet *self, PyObject *arg)
+    {
+      ::java::lang::Object a0((jobject) NULL);
+      SortedSet result((jobject) NULL);
+
+      if (!parseArg(arg, "O", self->parameters[0], &a0))
+      {
+        OBJ_CALL(result = self->object.tailSet(a0));
+        return t_SortedSet::wrap_Object(result, self->parameters[0]);
+      }
+
+      PyErr_SetArgsError((PyObject *) self, "tailSet", arg);
+      return NULL;
+    }
+    static PyObject *t_SortedSet_get__parameters_(t_SortedSet *self, void *data)
+    {
+      return typeParameters(self->parameters, sizeof(self->parameters));
     }
   }
 }
@@ -1728,32 +883,32 @@ namespace java {
         jclass cls = (jclass) env->findClass("java/lang/ThreadGroup");
 
         mids$ = new jmethodID[max_mid];
-        mids$[mid_init$_f5ffdf29129ef90a] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;)V");
-        mids$[mid_init$_5f2f5f3d7421182b] = env->getMethodID(cls, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/String;)V");
-        mids$[mid_activeCount_412668abc8d889e9] = env->getMethodID(cls, "activeCount", "()I");
-        mids$[mid_activeGroupCount_412668abc8d889e9] = env->getMethodID(cls, "activeGroupCount", "()I");
-        mids$[mid_allowThreadSuspension_bc7235a51f399397] = env->getMethodID(cls, "allowThreadSuspension", "(Z)Z");
-        mids$[mid_checkAccess_0640e6acf969ed28] = env->getMethodID(cls, "checkAccess", "()V");
-        mids$[mid_destroy_0640e6acf969ed28] = env->getMethodID(cls, "destroy", "()V");
-        mids$[mid_enumerate_33318ecfe98749af] = env->getMethodID(cls, "enumerate", "([Ljava/lang/Thread;)I");
-        mids$[mid_enumerate_3372509a943b910a] = env->getMethodID(cls, "enumerate", "([Ljava/lang/ThreadGroup;)I");
-        mids$[mid_enumerate_6ddae58fe6e2ebee] = env->getMethodID(cls, "enumerate", "([Ljava/lang/Thread;Z)I");
-        mids$[mid_enumerate_82a98c7b62ede06a] = env->getMethodID(cls, "enumerate", "([Ljava/lang/ThreadGroup;Z)I");
-        mids$[mid_getMaxPriority_412668abc8d889e9] = env->getMethodID(cls, "getMaxPriority", "()I");
-        mids$[mid_getName_3cffd47377eca18a] = env->getMethodID(cls, "getName", "()Ljava/lang/String;");
-        mids$[mid_getParent_33ca5756bd56429e] = env->getMethodID(cls, "getParent", "()Ljava/lang/ThreadGroup;");
-        mids$[mid_interrupt_0640e6acf969ed28] = env->getMethodID(cls, "interrupt", "()V");
-        mids$[mid_isDaemon_89b302893bdbe1f1] = env->getMethodID(cls, "isDaemon", "()Z");
-        mids$[mid_isDestroyed_89b302893bdbe1f1] = env->getMethodID(cls, "isDestroyed", "()Z");
-        mids$[mid_list_0640e6acf969ed28] = env->getMethodID(cls, "list", "()V");
-        mids$[mid_parentOf_6ecd715167b5bcc1] = env->getMethodID(cls, "parentOf", "(Ljava/lang/ThreadGroup;)Z");
-        mids$[mid_resume_0640e6acf969ed28] = env->getMethodID(cls, "resume", "()V");
-        mids$[mid_setDaemon_ed2afdb8506b9742] = env->getMethodID(cls, "setDaemon", "(Z)V");
-        mids$[mid_setMaxPriority_a3da1a935cb37f7b] = env->getMethodID(cls, "setMaxPriority", "(I)V");
-        mids$[mid_stop_0640e6acf969ed28] = env->getMethodID(cls, "stop", "()V");
-        mids$[mid_suspend_0640e6acf969ed28] = env->getMethodID(cls, "suspend", "()V");
-        mids$[mid_toString_3cffd47377eca18a] = env->getMethodID(cls, "toString", "()Ljava/lang/String;");
-        mids$[mid_uncaughtException_6ab5c8a40df48e4f] = env->getMethodID(cls, "uncaughtException", "(Ljava/lang/Thread;Ljava/lang/Throwable;)V");
+        mids$[mid_init$_734b91ac30d5f9b4] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;)V");
+        mids$[mid_init$_c0f56f14913e02e9] = env->getMethodID(cls, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/String;)V");
+        mids$[mid_activeCount_55546ef6a647f39b] = env->getMethodID(cls, "activeCount", "()I");
+        mids$[mid_activeGroupCount_55546ef6a647f39b] = env->getMethodID(cls, "activeGroupCount", "()I");
+        mids$[mid_allowThreadSuspension_52d2d2523d94d978] = env->getMethodID(cls, "allowThreadSuspension", "(Z)Z");
+        mids$[mid_checkAccess_a1fa5dae97ea5ed2] = env->getMethodID(cls, "checkAccess", "()V");
+        mids$[mid_destroy_a1fa5dae97ea5ed2] = env->getMethodID(cls, "destroy", "()V");
+        mids$[mid_enumerate_0e7ff9b56e206905] = env->getMethodID(cls, "enumerate", "([Ljava/lang/Thread;)I");
+        mids$[mid_enumerate_7ed52e1c46a75d99] = env->getMethodID(cls, "enumerate", "([Ljava/lang/ThreadGroup;)I");
+        mids$[mid_enumerate_5bc4fa64d53df6cd] = env->getMethodID(cls, "enumerate", "([Ljava/lang/Thread;Z)I");
+        mids$[mid_enumerate_5e2818aa52434eef] = env->getMethodID(cls, "enumerate", "([Ljava/lang/ThreadGroup;Z)I");
+        mids$[mid_getMaxPriority_55546ef6a647f39b] = env->getMethodID(cls, "getMaxPriority", "()I");
+        mids$[mid_getName_1c1fa1e935d6cdcf] = env->getMethodID(cls, "getName", "()Ljava/lang/String;");
+        mids$[mid_getParent_4241f87211c845e3] = env->getMethodID(cls, "getParent", "()Ljava/lang/ThreadGroup;");
+        mids$[mid_interrupt_a1fa5dae97ea5ed2] = env->getMethodID(cls, "interrupt", "()V");
+        mids$[mid_isDaemon_9ab94ac1dc23b105] = env->getMethodID(cls, "isDaemon", "()Z");
+        mids$[mid_isDestroyed_9ab94ac1dc23b105] = env->getMethodID(cls, "isDestroyed", "()Z");
+        mids$[mid_list_a1fa5dae97ea5ed2] = env->getMethodID(cls, "list", "()V");
+        mids$[mid_parentOf_dc2161560cebbf04] = env->getMethodID(cls, "parentOf", "(Ljava/lang/ThreadGroup;)Z");
+        mids$[mid_resume_a1fa5dae97ea5ed2] = env->getMethodID(cls, "resume", "()V");
+        mids$[mid_setDaemon_fcb96c98de6fad04] = env->getMethodID(cls, "setDaemon", "(Z)V");
+        mids$[mid_setMaxPriority_44ed599e93e8a30c] = env->getMethodID(cls, "setMaxPriority", "(I)V");
+        mids$[mid_stop_a1fa5dae97ea5ed2] = env->getMethodID(cls, "stop", "()V");
+        mids$[mid_suspend_a1fa5dae97ea5ed2] = env->getMethodID(cls, "suspend", "()V");
+        mids$[mid_toString_1c1fa1e935d6cdcf] = env->getMethodID(cls, "toString", "()Ljava/lang/String;");
+        mids$[mid_uncaughtException_6614adf33092b99a] = env->getMethodID(cls, "uncaughtException", "(Ljava/lang/Thread;Ljava/lang/Throwable;)V");
 
         class$ = new ::java::lang::Class(cls);
         live$ = true;
@@ -1761,128 +916,128 @@ namespace java {
       return (jclass) class$->this$;
     }
 
-    ThreadGroup::ThreadGroup(const ::java::lang::String & a0) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_f5ffdf29129ef90a, a0.this$)) {}
+    ThreadGroup::ThreadGroup(const ::java::lang::String & a0) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_734b91ac30d5f9b4, a0.this$)) {}
 
-    ThreadGroup::ThreadGroup(const ThreadGroup & a0, const ::java::lang::String & a1) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_5f2f5f3d7421182b, a0.this$, a1.this$)) {}
+    ThreadGroup::ThreadGroup(const ThreadGroup & a0, const ::java::lang::String & a1) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_c0f56f14913e02e9, a0.this$, a1.this$)) {}
 
     jint ThreadGroup::activeCount() const
     {
-      return env->callIntMethod(this$, mids$[mid_activeCount_412668abc8d889e9]);
+      return env->callIntMethod(this$, mids$[mid_activeCount_55546ef6a647f39b]);
     }
 
     jint ThreadGroup::activeGroupCount() const
     {
-      return env->callIntMethod(this$, mids$[mid_activeGroupCount_412668abc8d889e9]);
+      return env->callIntMethod(this$, mids$[mid_activeGroupCount_55546ef6a647f39b]);
     }
 
     jboolean ThreadGroup::allowThreadSuspension(jboolean a0) const
     {
-      return env->callBooleanMethod(this$, mids$[mid_allowThreadSuspension_bc7235a51f399397], a0);
+      return env->callBooleanMethod(this$, mids$[mid_allowThreadSuspension_52d2d2523d94d978], a0);
     }
 
     void ThreadGroup::checkAccess() const
     {
-      env->callVoidMethod(this$, mids$[mid_checkAccess_0640e6acf969ed28]);
+      env->callVoidMethod(this$, mids$[mid_checkAccess_a1fa5dae97ea5ed2]);
     }
 
     void ThreadGroup::destroy() const
     {
-      env->callVoidMethod(this$, mids$[mid_destroy_0640e6acf969ed28]);
+      env->callVoidMethod(this$, mids$[mid_destroy_a1fa5dae97ea5ed2]);
     }
 
     jint ThreadGroup::enumerate(const JArray< ::java::lang::Thread > & a0) const
     {
-      return env->callIntMethod(this$, mids$[mid_enumerate_33318ecfe98749af], a0.this$);
+      return env->callIntMethod(this$, mids$[mid_enumerate_0e7ff9b56e206905], a0.this$);
     }
 
     jint ThreadGroup::enumerate(const JArray< ThreadGroup > & a0) const
     {
-      return env->callIntMethod(this$, mids$[mid_enumerate_3372509a943b910a], a0.this$);
+      return env->callIntMethod(this$, mids$[mid_enumerate_7ed52e1c46a75d99], a0.this$);
     }
 
     jint ThreadGroup::enumerate(const JArray< ::java::lang::Thread > & a0, jboolean a1) const
     {
-      return env->callIntMethod(this$, mids$[mid_enumerate_6ddae58fe6e2ebee], a0.this$, a1);
+      return env->callIntMethod(this$, mids$[mid_enumerate_5bc4fa64d53df6cd], a0.this$, a1);
     }
 
     jint ThreadGroup::enumerate(const JArray< ThreadGroup > & a0, jboolean a1) const
     {
-      return env->callIntMethod(this$, mids$[mid_enumerate_82a98c7b62ede06a], a0.this$, a1);
+      return env->callIntMethod(this$, mids$[mid_enumerate_5e2818aa52434eef], a0.this$, a1);
     }
 
     jint ThreadGroup::getMaxPriority() const
     {
-      return env->callIntMethod(this$, mids$[mid_getMaxPriority_412668abc8d889e9]);
+      return env->callIntMethod(this$, mids$[mid_getMaxPriority_55546ef6a647f39b]);
     }
 
     ::java::lang::String ThreadGroup::getName() const
     {
-      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getName_3cffd47377eca18a]));
+      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getName_1c1fa1e935d6cdcf]));
     }
 
     ThreadGroup ThreadGroup::getParent() const
     {
-      return ThreadGroup(env->callObjectMethod(this$, mids$[mid_getParent_33ca5756bd56429e]));
+      return ThreadGroup(env->callObjectMethod(this$, mids$[mid_getParent_4241f87211c845e3]));
     }
 
     void ThreadGroup::interrupt() const
     {
-      env->callVoidMethod(this$, mids$[mid_interrupt_0640e6acf969ed28]);
+      env->callVoidMethod(this$, mids$[mid_interrupt_a1fa5dae97ea5ed2]);
     }
 
     jboolean ThreadGroup::isDaemon() const
     {
-      return env->callBooleanMethod(this$, mids$[mid_isDaemon_89b302893bdbe1f1]);
+      return env->callBooleanMethod(this$, mids$[mid_isDaemon_9ab94ac1dc23b105]);
     }
 
     jboolean ThreadGroup::isDestroyed() const
     {
-      return env->callBooleanMethod(this$, mids$[mid_isDestroyed_89b302893bdbe1f1]);
+      return env->callBooleanMethod(this$, mids$[mid_isDestroyed_9ab94ac1dc23b105]);
     }
 
     void ThreadGroup::list() const
     {
-      env->callVoidMethod(this$, mids$[mid_list_0640e6acf969ed28]);
+      env->callVoidMethod(this$, mids$[mid_list_a1fa5dae97ea5ed2]);
     }
 
     jboolean ThreadGroup::parentOf(const ThreadGroup & a0) const
     {
-      return env->callBooleanMethod(this$, mids$[mid_parentOf_6ecd715167b5bcc1], a0.this$);
+      return env->callBooleanMethod(this$, mids$[mid_parentOf_dc2161560cebbf04], a0.this$);
     }
 
     void ThreadGroup::resume() const
     {
-      env->callVoidMethod(this$, mids$[mid_resume_0640e6acf969ed28]);
+      env->callVoidMethod(this$, mids$[mid_resume_a1fa5dae97ea5ed2]);
     }
 
     void ThreadGroup::setDaemon(jboolean a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_setDaemon_ed2afdb8506b9742], a0);
+      env->callVoidMethod(this$, mids$[mid_setDaemon_fcb96c98de6fad04], a0);
     }
 
     void ThreadGroup::setMaxPriority(jint a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_setMaxPriority_a3da1a935cb37f7b], a0);
+      env->callVoidMethod(this$, mids$[mid_setMaxPriority_44ed599e93e8a30c], a0);
     }
 
     void ThreadGroup::stop() const
     {
-      env->callVoidMethod(this$, mids$[mid_stop_0640e6acf969ed28]);
+      env->callVoidMethod(this$, mids$[mid_stop_a1fa5dae97ea5ed2]);
     }
 
     void ThreadGroup::suspend() const
     {
-      env->callVoidMethod(this$, mids$[mid_suspend_0640e6acf969ed28]);
+      env->callVoidMethod(this$, mids$[mid_suspend_a1fa5dae97ea5ed2]);
     }
 
     ::java::lang::String ThreadGroup::toString() const
     {
-      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_toString_3cffd47377eca18a]));
+      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_toString_1c1fa1e935d6cdcf]));
     }
 
     void ThreadGroup::uncaughtException(const ::java::lang::Thread & a0, const ::java::lang::Throwable & a1) const
     {
-      env->callVoidMethod(this$, mids$[mid_uncaughtException_6ab5c8a40df48e4f], a0.this$, a1.this$);
+      env->callVoidMethod(this$, mids$[mid_uncaughtException_6614adf33092b99a], a0.this$, a1.this$);
     }
   }
 }
@@ -2332,28 +1487,28 @@ namespace java {
 }
 #include <jni.h>
 #include "JCCEnv.h"
-#include "java/io/SyncFailedException.h"
-#include "java/lang/String.h"
+#include "java/util/PrimitiveIterator.h"
 #include "java/lang/Class.h"
+#include "java/lang/Object.h"
 #include "JArray.h"
 
 namespace java {
-  namespace io {
+  namespace util {
 
-    ::java::lang::Class *SyncFailedException::class$ = NULL;
-    jmethodID *SyncFailedException::mids$ = NULL;
-    bool SyncFailedException::live$ = false;
+    ::java::lang::Class *PrimitiveIterator::class$ = NULL;
+    jmethodID *PrimitiveIterator::mids$ = NULL;
+    bool PrimitiveIterator::live$ = false;
 
-    jclass SyncFailedException::initializeClass(bool getOnly)
+    jclass PrimitiveIterator::initializeClass(bool getOnly)
     {
       if (getOnly)
         return (jclass) (live$ ? class$->this$ : NULL);
       if (class$ == NULL)
       {
-        jclass cls = (jclass) env->findClass("java/io/SyncFailedException");
+        jclass cls = (jclass) env->findClass("java/util/PrimitiveIterator");
 
         mids$ = new jmethodID[max_mid];
-        mids$[mid_init$_f5ffdf29129ef90a] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;)V");
+        mids$[mid_forEachRemaining_55f3c894852c27a3] = env->getMethodID(cls, "forEachRemaining", "(Ljava/lang/Object;)V");
 
         class$ = new ::java::lang::Class(cls);
         live$ = true;
@@ -2361,7 +1516,152 @@ namespace java {
       return (jclass) class$->this$;
     }
 
-    SyncFailedException::SyncFailedException(const ::java::lang::String & a0) : ::java::io::IOException(env->newObject(initializeClass, &mids$, mid_init$_f5ffdf29129ef90a, a0.this$)) {}
+    void PrimitiveIterator::forEachRemaining(const ::java::lang::Object & a0) const
+    {
+      env->callVoidMethod(this$, mids$[mid_forEachRemaining_55f3c894852c27a3], a0.this$);
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+#include "java/util/PrimitiveIterator$OfDouble.h"
+
+namespace java {
+  namespace util {
+    static PyObject *t_PrimitiveIterator_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_PrimitiveIterator_instance_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_PrimitiveIterator_of_(t_PrimitiveIterator *self, PyObject *args);
+    static PyObject *t_PrimitiveIterator_forEachRemaining(t_PrimitiveIterator *self, PyObject *args);
+    static PyObject *t_PrimitiveIterator_get__parameters_(t_PrimitiveIterator *self, void *data);
+    static PyGetSetDef t_PrimitiveIterator__fields_[] = {
+      DECLARE_GET_FIELD(t_PrimitiveIterator, parameters_),
+      { NULL, NULL, NULL, NULL, NULL }
+    };
+
+    static PyMethodDef t_PrimitiveIterator__methods_[] = {
+      DECLARE_METHOD(t_PrimitiveIterator, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_PrimitiveIterator, instance_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_PrimitiveIterator, of_, METH_VARARGS),
+      DECLARE_METHOD(t_PrimitiveIterator, forEachRemaining, METH_VARARGS),
+      { NULL, NULL, 0, NULL }
+    };
+
+    static PyType_Slot PY_TYPE_SLOTS(PrimitiveIterator)[] = {
+      { Py_tp_methods, t_PrimitiveIterator__methods_ },
+      { Py_tp_init, (void *) abstract_init },
+      { Py_tp_getset, t_PrimitiveIterator__fields_ },
+      { 0, NULL }
+    };
+
+    static PyType_Def *PY_TYPE_BASES(PrimitiveIterator)[] = {
+      &PY_TYPE_DEF(::java::util::Iterator),
+      NULL
+    };
+
+    DEFINE_TYPE(PrimitiveIterator, t_PrimitiveIterator, PrimitiveIterator);
+    PyObject *t_PrimitiveIterator::wrap_Object(const PrimitiveIterator& object, PyTypeObject *p0, PyTypeObject *p1)
+    {
+      PyObject *obj = t_PrimitiveIterator::wrap_Object(object);
+      if (obj != NULL && obj != Py_None)
+      {
+        t_PrimitiveIterator *self = (t_PrimitiveIterator *) obj;
+        self->parameters[0] = p0;
+        self->parameters[1] = p1;
+      }
+      return obj;
+    }
+
+    PyObject *t_PrimitiveIterator::wrap_jobject(const jobject& object, PyTypeObject *p0, PyTypeObject *p1)
+    {
+      PyObject *obj = t_PrimitiveIterator::wrap_jobject(object);
+      if (obj != NULL && obj != Py_None)
+      {
+        t_PrimitiveIterator *self = (t_PrimitiveIterator *) obj;
+        self->parameters[0] = p0;
+        self->parameters[1] = p1;
+      }
+      return obj;
+    }
+
+    void t_PrimitiveIterator::install(PyObject *module)
+    {
+      installType(&PY_TYPE(PrimitiveIterator), &PY_TYPE_DEF(PrimitiveIterator), module, "PrimitiveIterator", 0);
+      PyObject_SetAttrString((PyObject *) PY_TYPE(PrimitiveIterator), "OfDouble", make_descriptor(&PY_TYPE_DEF(PrimitiveIterator$OfDouble)));
+    }
+
+    void t_PrimitiveIterator::initialize(PyObject *module)
+    {
+      PyObject_SetAttrString((PyObject *) PY_TYPE(PrimitiveIterator), "class_", make_descriptor(PrimitiveIterator::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(PrimitiveIterator), "wrapfn_", make_descriptor(t_PrimitiveIterator::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(PrimitiveIterator), "boxfn_", make_descriptor(boxObject));
+    }
+
+    static PyObject *t_PrimitiveIterator_cast_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!(arg = castCheck(arg, PrimitiveIterator::initializeClass, 1)))
+        return NULL;
+      return t_PrimitiveIterator::wrap_Object(PrimitiveIterator(((t_PrimitiveIterator *) arg)->object.this$));
+    }
+    static PyObject *t_PrimitiveIterator_instance_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!castCheck(arg, PrimitiveIterator::initializeClass, 0))
+        Py_RETURN_FALSE;
+      Py_RETURN_TRUE;
+    }
+
+    static PyObject *t_PrimitiveIterator_of_(t_PrimitiveIterator *self, PyObject *args)
+    {
+      if (!parseArg(args, "T", 2, &(self->parameters)))
+        Py_RETURN_SELF;
+      return PyErr_SetArgsError((PyObject *) self, "of_", args);
+    }
+
+    static PyObject *t_PrimitiveIterator_forEachRemaining(t_PrimitiveIterator *self, PyObject *args)
+    {
+      ::java::lang::Object a0((jobject) NULL);
+
+      if (!parseArgs(args, "O", self->parameters[1], &a0))
+      {
+        OBJ_CALL(self->object.forEachRemaining(a0));
+        Py_RETURN_NONE;
+      }
+
+      return callSuper(PY_TYPE(PrimitiveIterator), (PyObject *) self, "forEachRemaining", args, 2);
+    }
+    static PyObject *t_PrimitiveIterator_get__parameters_(t_PrimitiveIterator *self, void *data)
+    {
+      return typeParameters(self->parameters, sizeof(self->parameters));
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "java/text/Format$Field.h"
+#include "java/lang/Class.h"
+#include "JArray.h"
+
+namespace java {
+  namespace text {
+
+    ::java::lang::Class *Format$Field::class$ = NULL;
+    jmethodID *Format$Field::mids$ = NULL;
+    bool Format$Field::live$ = false;
+
+    jclass Format$Field::initializeClass(bool getOnly)
+    {
+      if (getOnly)
+        return (jclass) (live$ ? class$->this$ : NULL);
+      if (class$ == NULL)
+      {
+        jclass cls = (jclass) env->findClass("java/text/Format$Field");
+
+        class$ = new ::java::lang::Class(cls);
+        live$ = true;
+      }
+      return (jclass) class$->this$;
+    }
   }
 }
 
@@ -2370,72 +1670,52 @@ namespace java {
 #include "macros.h"
 
 namespace java {
-  namespace io {
-    static PyObject *t_SyncFailedException_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_SyncFailedException_instance_(PyTypeObject *type, PyObject *arg);
-    static int t_SyncFailedException_init_(t_SyncFailedException *self, PyObject *args, PyObject *kwds);
+  namespace text {
+    static PyObject *t_Format$Field_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_Format$Field_instance_(PyTypeObject *type, PyObject *arg);
 
-    static PyMethodDef t_SyncFailedException__methods_[] = {
-      DECLARE_METHOD(t_SyncFailedException, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_SyncFailedException, instance_, METH_O | METH_CLASS),
+    static PyMethodDef t_Format$Field__methods_[] = {
+      DECLARE_METHOD(t_Format$Field, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_Format$Field, instance_, METH_O | METH_CLASS),
       { NULL, NULL, 0, NULL }
     };
 
-    static PyType_Slot PY_TYPE_SLOTS(SyncFailedException)[] = {
-      { Py_tp_methods, t_SyncFailedException__methods_ },
-      { Py_tp_init, (void *) t_SyncFailedException_init_ },
+    static PyType_Slot PY_TYPE_SLOTS(Format$Field)[] = {
+      { Py_tp_methods, t_Format$Field__methods_ },
+      { Py_tp_init, (void *) abstract_init },
       { 0, NULL }
     };
 
-    static PyType_Def *PY_TYPE_BASES(SyncFailedException)[] = {
-      &PY_TYPE_DEF(::java::io::IOException),
+    static PyType_Def *PY_TYPE_BASES(Format$Field)[] = {
+      &PY_TYPE_DEF(::java::text::AttributedCharacterIterator$Attribute),
       NULL
     };
 
-    DEFINE_TYPE(SyncFailedException, t_SyncFailedException, SyncFailedException);
+    DEFINE_TYPE(Format$Field, t_Format$Field, Format$Field);
 
-    void t_SyncFailedException::install(PyObject *module)
+    void t_Format$Field::install(PyObject *module)
     {
-      installType(&PY_TYPE(SyncFailedException), &PY_TYPE_DEF(SyncFailedException), module, "SyncFailedException", 0);
+      installType(&PY_TYPE(Format$Field), &PY_TYPE_DEF(Format$Field), module, "Format$Field", 0);
     }
 
-    void t_SyncFailedException::initialize(PyObject *module)
+    void t_Format$Field::initialize(PyObject *module)
     {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(SyncFailedException), "class_", make_descriptor(SyncFailedException::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(SyncFailedException), "wrapfn_", make_descriptor(t_SyncFailedException::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(SyncFailedException), "boxfn_", make_descriptor(boxObject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(Format$Field), "class_", make_descriptor(Format$Field::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(Format$Field), "wrapfn_", make_descriptor(t_Format$Field::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(Format$Field), "boxfn_", make_descriptor(boxObject));
     }
 
-    static PyObject *t_SyncFailedException_cast_(PyTypeObject *type, PyObject *arg)
+    static PyObject *t_Format$Field_cast_(PyTypeObject *type, PyObject *arg)
     {
-      if (!(arg = castCheck(arg, SyncFailedException::initializeClass, 1)))
+      if (!(arg = castCheck(arg, Format$Field::initializeClass, 1)))
         return NULL;
-      return t_SyncFailedException::wrap_Object(SyncFailedException(((t_SyncFailedException *) arg)->object.this$));
+      return t_Format$Field::wrap_Object(Format$Field(((t_Format$Field *) arg)->object.this$));
     }
-    static PyObject *t_SyncFailedException_instance_(PyTypeObject *type, PyObject *arg)
+    static PyObject *t_Format$Field_instance_(PyTypeObject *type, PyObject *arg)
     {
-      if (!castCheck(arg, SyncFailedException::initializeClass, 0))
+      if (!castCheck(arg, Format$Field::initializeClass, 0))
         Py_RETURN_FALSE;
       Py_RETURN_TRUE;
-    }
-
-    static int t_SyncFailedException_init_(t_SyncFailedException *self, PyObject *args, PyObject *kwds)
-    {
-      ::java::lang::String a0((jobject) NULL);
-      SyncFailedException object((jobject) NULL);
-
-      if (!parseArgs(args, "s", &a0))
-      {
-        INT_CALL(object = SyncFailedException(a0));
-        self->object = object;
-      }
-      else
-      {
-        PyErr_SetArgsError((PyObject *) self, "__init__", args);
-        return -1;
-      }
-
-      return 0;
     }
   }
 }
@@ -2444,11 +1724,11 @@ namespace java {
 #include "java/lang/ModuleLayer.h"
 #include "java/lang/ModuleLayer.h"
 #include "java/util/List.h"
+#include "java/lang/ModuleLayer$Controller.h"
 #include "java/util/Optional.h"
 #include "java/lang/Module.h"
 #include "java/util/Set.h"
 #include "java/lang/Class.h"
-#include "java/lang/ModuleLayer$Controller.h"
 #include "java/lang/String.h"
 #include "java/lang/ClassLoader.h"
 #include "JArray.h"
@@ -2469,13 +1749,13 @@ namespace java {
         jclass cls = (jclass) env->findClass("java/lang/ModuleLayer");
 
         mids$ = new jmethodID[max_mid];
-        mids$[mid_boot_a9837dd004e81a19] = env->getStaticMethodID(cls, "boot", "()Ljava/lang/ModuleLayer;");
-        mids$[mid_empty_a9837dd004e81a19] = env->getStaticMethodID(cls, "empty", "()Ljava/lang/ModuleLayer;");
-        mids$[mid_findLoader_a03391f23408d51d] = env->getMethodID(cls, "findLoader", "(Ljava/lang/String;)Ljava/lang/ClassLoader;");
-        mids$[mid_findModule_9c3a4165b34182b4] = env->getMethodID(cls, "findModule", "(Ljava/lang/String;)Ljava/util/Optional;");
-        mids$[mid_modules_2dfcbd371d62f4e1] = env->getMethodID(cls, "modules", "()Ljava/util/Set;");
-        mids$[mid_parents_0d9551367f7ecdef] = env->getMethodID(cls, "parents", "()Ljava/util/List;");
-        mids$[mid_toString_3cffd47377eca18a] = env->getMethodID(cls, "toString", "()Ljava/lang/String;");
+        mids$[mid_boot_c147713285b11692] = env->getStaticMethodID(cls, "boot", "()Ljava/lang/ModuleLayer;");
+        mids$[mid_empty_c147713285b11692] = env->getStaticMethodID(cls, "empty", "()Ljava/lang/ModuleLayer;");
+        mids$[mid_findLoader_7980adf98b67e930] = env->getMethodID(cls, "findLoader", "(Ljava/lang/String;)Ljava/lang/ClassLoader;");
+        mids$[mid_findModule_fc4fec43e040d30a] = env->getMethodID(cls, "findModule", "(Ljava/lang/String;)Ljava/util/Optional;");
+        mids$[mid_modules_7e8f11dd23d1142c] = env->getMethodID(cls, "modules", "()Ljava/util/Set;");
+        mids$[mid_parents_e62d3bb06d56d7e3] = env->getMethodID(cls, "parents", "()Ljava/util/List;");
+        mids$[mid_toString_1c1fa1e935d6cdcf] = env->getMethodID(cls, "toString", "()Ljava/lang/String;");
 
         class$ = new ::java::lang::Class(cls);
         live$ = true;
@@ -2486,38 +1766,38 @@ namespace java {
     ModuleLayer ModuleLayer::boot()
     {
       jclass cls = env->getClass(initializeClass);
-      return ModuleLayer(env->callStaticObjectMethod(cls, mids$[mid_boot_a9837dd004e81a19]));
+      return ModuleLayer(env->callStaticObjectMethod(cls, mids$[mid_boot_c147713285b11692]));
     }
 
     ModuleLayer ModuleLayer::empty()
     {
       jclass cls = env->getClass(initializeClass);
-      return ModuleLayer(env->callStaticObjectMethod(cls, mids$[mid_empty_a9837dd004e81a19]));
+      return ModuleLayer(env->callStaticObjectMethod(cls, mids$[mid_empty_c147713285b11692]));
     }
 
     ::java::lang::ClassLoader ModuleLayer::findLoader(const ::java::lang::String & a0) const
     {
-      return ::java::lang::ClassLoader(env->callObjectMethod(this$, mids$[mid_findLoader_a03391f23408d51d], a0.this$));
+      return ::java::lang::ClassLoader(env->callObjectMethod(this$, mids$[mid_findLoader_7980adf98b67e930], a0.this$));
     }
 
     ::java::util::Optional ModuleLayer::findModule(const ::java::lang::String & a0) const
     {
-      return ::java::util::Optional(env->callObjectMethod(this$, mids$[mid_findModule_9c3a4165b34182b4], a0.this$));
+      return ::java::util::Optional(env->callObjectMethod(this$, mids$[mid_findModule_fc4fec43e040d30a], a0.this$));
     }
 
     ::java::util::Set ModuleLayer::modules() const
     {
-      return ::java::util::Set(env->callObjectMethod(this$, mids$[mid_modules_2dfcbd371d62f4e1]));
+      return ::java::util::Set(env->callObjectMethod(this$, mids$[mid_modules_7e8f11dd23d1142c]));
     }
 
     ::java::util::List ModuleLayer::parents() const
     {
-      return ::java::util::List(env->callObjectMethod(this$, mids$[mid_parents_0d9551367f7ecdef]));
+      return ::java::util::List(env->callObjectMethod(this$, mids$[mid_parents_e62d3bb06d56d7e3]));
     }
 
     ::java::lang::String ModuleLayer::toString() const
     {
-      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_toString_3cffd47377eca18a]));
+      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_toString_1c1fa1e935d6cdcf]));
     }
   }
 }
@@ -2690,11 +1970,11 @@ namespace java {
         jclass cls = (jclass) env->findClass("java/text/AttributedCharacterIterator$Attribute");
 
         mids$ = new jmethodID[max_mid];
-        mids$[mid_equals_221e8e85cb385209] = env->getMethodID(cls, "equals", "(Ljava/lang/Object;)Z");
-        mids$[mid_hashCode_412668abc8d889e9] = env->getMethodID(cls, "hashCode", "()I");
-        mids$[mid_toString_3cffd47377eca18a] = env->getMethodID(cls, "toString", "()Ljava/lang/String;");
-        mids$[mid_getName_3cffd47377eca18a] = env->getMethodID(cls, "getName", "()Ljava/lang/String;");
-        mids$[mid_readResolve_e661fe3ba2fafb22] = env->getMethodID(cls, "readResolve", "()Ljava/lang/Object;");
+        mids$[mid_equals_460c5e2d9d51c6cc] = env->getMethodID(cls, "equals", "(Ljava/lang/Object;)Z");
+        mids$[mid_hashCode_55546ef6a647f39b] = env->getMethodID(cls, "hashCode", "()I");
+        mids$[mid_toString_1c1fa1e935d6cdcf] = env->getMethodID(cls, "toString", "()Ljava/lang/String;");
+        mids$[mid_getName_1c1fa1e935d6cdcf] = env->getMethodID(cls, "getName", "()Ljava/lang/String;");
+        mids$[mid_readResolve_541690f9ee81d3ad] = env->getMethodID(cls, "readResolve", "()Ljava/lang/Object;");
 
         class$ = new ::java::lang::Class(cls);
         cls = (jclass) class$->this$;
@@ -2709,17 +1989,17 @@ namespace java {
 
     jboolean AttributedCharacterIterator$Attribute::equals(const ::java::lang::Object & a0) const
     {
-      return env->callBooleanMethod(this$, mids$[mid_equals_221e8e85cb385209], a0.this$);
+      return env->callBooleanMethod(this$, mids$[mid_equals_460c5e2d9d51c6cc], a0.this$);
     }
 
     jint AttributedCharacterIterator$Attribute::hashCode() const
     {
-      return env->callIntMethod(this$, mids$[mid_hashCode_412668abc8d889e9]);
+      return env->callIntMethod(this$, mids$[mid_hashCode_55546ef6a647f39b]);
     }
 
     ::java::lang::String AttributedCharacterIterator$Attribute::toString() const
     {
-      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_toString_3cffd47377eca18a]));
+      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_toString_1c1fa1e935d6cdcf]));
     }
   }
 }
@@ -2830,10 +2110,1050 @@ namespace java {
 }
 #include <jni.h>
 #include "JCCEnv.h"
-#include "java/io/DataOutput.h"
-#include "java/io/IOException.h"
+#include "java/io/ObjectInputFilter$Status.h"
+#include "java/io/ObjectInputFilter$Status.h"
 #include "java/lang/String.h"
 #include "java/lang/Class.h"
+#include "JArray.h"
+
+namespace java {
+  namespace io {
+
+    ::java::lang::Class *ObjectInputFilter$Status::class$ = NULL;
+    jmethodID *ObjectInputFilter$Status::mids$ = NULL;
+    bool ObjectInputFilter$Status::live$ = false;
+    ObjectInputFilter$Status *ObjectInputFilter$Status::ALLOWED = NULL;
+    ObjectInputFilter$Status *ObjectInputFilter$Status::REJECTED = NULL;
+    ObjectInputFilter$Status *ObjectInputFilter$Status::UNDECIDED = NULL;
+
+    jclass ObjectInputFilter$Status::initializeClass(bool getOnly)
+    {
+      if (getOnly)
+        return (jclass) (live$ ? class$->this$ : NULL);
+      if (class$ == NULL)
+      {
+        jclass cls = (jclass) env->findClass("java/io/ObjectInputFilter$Status");
+
+        mids$ = new jmethodID[max_mid];
+        mids$[mid_valueOf_2f091d648ef5c66a] = env->getStaticMethodID(cls, "valueOf", "(Ljava/lang/String;)Ljava/io/ObjectInputFilter$Status;");
+        mids$[mid_values_58dfdde44b6e9f1e] = env->getStaticMethodID(cls, "values", "()[Ljava/io/ObjectInputFilter$Status;");
+
+        class$ = new ::java::lang::Class(cls);
+        cls = (jclass) class$->this$;
+
+        ALLOWED = new ObjectInputFilter$Status(env->getStaticObjectField(cls, "ALLOWED", "Ljava/io/ObjectInputFilter$Status;"));
+        REJECTED = new ObjectInputFilter$Status(env->getStaticObjectField(cls, "REJECTED", "Ljava/io/ObjectInputFilter$Status;"));
+        UNDECIDED = new ObjectInputFilter$Status(env->getStaticObjectField(cls, "UNDECIDED", "Ljava/io/ObjectInputFilter$Status;"));
+        live$ = true;
+      }
+      return (jclass) class$->this$;
+    }
+
+    ObjectInputFilter$Status ObjectInputFilter$Status::valueOf(const ::java::lang::String & a0)
+    {
+      jclass cls = env->getClass(initializeClass);
+      return ObjectInputFilter$Status(env->callStaticObjectMethod(cls, mids$[mid_valueOf_2f091d648ef5c66a], a0.this$));
+    }
+
+    JArray< ObjectInputFilter$Status > ObjectInputFilter$Status::values()
+    {
+      jclass cls = env->getClass(initializeClass);
+      return JArray< ObjectInputFilter$Status >(env->callStaticObjectMethod(cls, mids$[mid_values_58dfdde44b6e9f1e]));
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace java {
+  namespace io {
+    static PyObject *t_ObjectInputFilter$Status_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_ObjectInputFilter$Status_instance_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_ObjectInputFilter$Status_of_(t_ObjectInputFilter$Status *self, PyObject *args);
+    static PyObject *t_ObjectInputFilter$Status_valueOf(PyTypeObject *type, PyObject *args);
+    static PyObject *t_ObjectInputFilter$Status_values(PyTypeObject *type);
+    static PyObject *t_ObjectInputFilter$Status_get__parameters_(t_ObjectInputFilter$Status *self, void *data);
+    static PyGetSetDef t_ObjectInputFilter$Status__fields_[] = {
+      DECLARE_GET_FIELD(t_ObjectInputFilter$Status, parameters_),
+      { NULL, NULL, NULL, NULL, NULL }
+    };
+
+    static PyMethodDef t_ObjectInputFilter$Status__methods_[] = {
+      DECLARE_METHOD(t_ObjectInputFilter$Status, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_ObjectInputFilter$Status, instance_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_ObjectInputFilter$Status, of_, METH_VARARGS),
+      DECLARE_METHOD(t_ObjectInputFilter$Status, valueOf, METH_VARARGS | METH_CLASS),
+      DECLARE_METHOD(t_ObjectInputFilter$Status, values, METH_NOARGS | METH_CLASS),
+      { NULL, NULL, 0, NULL }
+    };
+
+    static PyType_Slot PY_TYPE_SLOTS(ObjectInputFilter$Status)[] = {
+      { Py_tp_methods, t_ObjectInputFilter$Status__methods_ },
+      { Py_tp_init, (void *) abstract_init },
+      { Py_tp_getset, t_ObjectInputFilter$Status__fields_ },
+      { 0, NULL }
+    };
+
+    static PyType_Def *PY_TYPE_BASES(ObjectInputFilter$Status)[] = {
+      &PY_TYPE_DEF(::java::lang::Enum),
+      NULL
+    };
+
+    DEFINE_TYPE(ObjectInputFilter$Status, t_ObjectInputFilter$Status, ObjectInputFilter$Status);
+    PyObject *t_ObjectInputFilter$Status::wrap_Object(const ObjectInputFilter$Status& object, PyTypeObject *p0)
+    {
+      PyObject *obj = t_ObjectInputFilter$Status::wrap_Object(object);
+      if (obj != NULL && obj != Py_None)
+      {
+        t_ObjectInputFilter$Status *self = (t_ObjectInputFilter$Status *) obj;
+        self->parameters[0] = p0;
+      }
+      return obj;
+    }
+
+    PyObject *t_ObjectInputFilter$Status::wrap_jobject(const jobject& object, PyTypeObject *p0)
+    {
+      PyObject *obj = t_ObjectInputFilter$Status::wrap_jobject(object);
+      if (obj != NULL && obj != Py_None)
+      {
+        t_ObjectInputFilter$Status *self = (t_ObjectInputFilter$Status *) obj;
+        self->parameters[0] = p0;
+      }
+      return obj;
+    }
+
+    void t_ObjectInputFilter$Status::install(PyObject *module)
+    {
+      installType(&PY_TYPE(ObjectInputFilter$Status), &PY_TYPE_DEF(ObjectInputFilter$Status), module, "ObjectInputFilter$Status", 0);
+    }
+
+    void t_ObjectInputFilter$Status::initialize(PyObject *module)
+    {
+      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputFilter$Status), "class_", make_descriptor(ObjectInputFilter$Status::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputFilter$Status), "wrapfn_", make_descriptor(t_ObjectInputFilter$Status::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputFilter$Status), "boxfn_", make_descriptor(boxObject));
+      env->getClass(ObjectInputFilter$Status::initializeClass);
+      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputFilter$Status), "ALLOWED", make_descriptor(t_ObjectInputFilter$Status::wrap_Object(*ObjectInputFilter$Status::ALLOWED)));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputFilter$Status), "REJECTED", make_descriptor(t_ObjectInputFilter$Status::wrap_Object(*ObjectInputFilter$Status::REJECTED)));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputFilter$Status), "UNDECIDED", make_descriptor(t_ObjectInputFilter$Status::wrap_Object(*ObjectInputFilter$Status::UNDECIDED)));
+    }
+
+    static PyObject *t_ObjectInputFilter$Status_cast_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!(arg = castCheck(arg, ObjectInputFilter$Status::initializeClass, 1)))
+        return NULL;
+      return t_ObjectInputFilter$Status::wrap_Object(ObjectInputFilter$Status(((t_ObjectInputFilter$Status *) arg)->object.this$));
+    }
+    static PyObject *t_ObjectInputFilter$Status_instance_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!castCheck(arg, ObjectInputFilter$Status::initializeClass, 0))
+        Py_RETURN_FALSE;
+      Py_RETURN_TRUE;
+    }
+
+    static PyObject *t_ObjectInputFilter$Status_of_(t_ObjectInputFilter$Status *self, PyObject *args)
+    {
+      if (!parseArg(args, "T", 1, &(self->parameters)))
+        Py_RETURN_SELF;
+      return PyErr_SetArgsError((PyObject *) self, "of_", args);
+    }
+
+    static PyObject *t_ObjectInputFilter$Status_valueOf(PyTypeObject *type, PyObject *args)
+    {
+      ::java::lang::String a0((jobject) NULL);
+      ObjectInputFilter$Status result((jobject) NULL);
+
+      if (!parseArgs(args, "s", &a0))
+      {
+        OBJ_CALL(result = ::java::io::ObjectInputFilter$Status::valueOf(a0));
+        return t_ObjectInputFilter$Status::wrap_Object(result);
+      }
+
+      return callSuper(type, "valueOf", args, 2);
+    }
+
+    static PyObject *t_ObjectInputFilter$Status_values(PyTypeObject *type)
+    {
+      JArray< ObjectInputFilter$Status > result((jobject) NULL);
+      OBJ_CALL(result = ::java::io::ObjectInputFilter$Status::values());
+      return JArray<jobject>(result.this$).wrap(t_ObjectInputFilter$Status::wrap_jobject);
+    }
+    static PyObject *t_ObjectInputFilter$Status_get__parameters_(t_ObjectInputFilter$Status *self, void *data)
+    {
+      return typeParameters(self->parameters, sizeof(self->parameters));
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "java/text/CharacterIterator.h"
+#include "java/lang/Class.h"
+#include "java/lang/Object.h"
+#include "JArray.h"
+
+namespace java {
+  namespace text {
+
+    ::java::lang::Class *CharacterIterator::class$ = NULL;
+    jmethodID *CharacterIterator::mids$ = NULL;
+    bool CharacterIterator::live$ = false;
+    jchar CharacterIterator::DONE = (jchar) 0;
+
+    jclass CharacterIterator::initializeClass(bool getOnly)
+    {
+      if (getOnly)
+        return (jclass) (live$ ? class$->this$ : NULL);
+      if (class$ == NULL)
+      {
+        jclass cls = (jclass) env->findClass("java/text/CharacterIterator");
+
+        mids$ = new jmethodID[max_mid];
+        mids$[mid_clone_541690f9ee81d3ad] = env->getMethodID(cls, "clone", "()Ljava/lang/Object;");
+        mids$[mid_current_5e2f8fc4d7c03fbd] = env->getMethodID(cls, "current", "()C");
+        mids$[mid_first_5e2f8fc4d7c03fbd] = env->getMethodID(cls, "first", "()C");
+        mids$[mid_getBeginIndex_55546ef6a647f39b] = env->getMethodID(cls, "getBeginIndex", "()I");
+        mids$[mid_getEndIndex_55546ef6a647f39b] = env->getMethodID(cls, "getEndIndex", "()I");
+        mids$[mid_getIndex_55546ef6a647f39b] = env->getMethodID(cls, "getIndex", "()I");
+        mids$[mid_last_5e2f8fc4d7c03fbd] = env->getMethodID(cls, "last", "()C");
+        mids$[mid_next_5e2f8fc4d7c03fbd] = env->getMethodID(cls, "next", "()C");
+        mids$[mid_previous_5e2f8fc4d7c03fbd] = env->getMethodID(cls, "previous", "()C");
+        mids$[mid_setIndex_f41af25e73e22f74] = env->getMethodID(cls, "setIndex", "(I)C");
+
+        class$ = new ::java::lang::Class(cls);
+        cls = (jclass) class$->this$;
+
+        DONE = env->getStaticCharField(cls, "DONE");
+        live$ = true;
+      }
+      return (jclass) class$->this$;
+    }
+
+    ::java::lang::Object CharacterIterator::clone() const
+    {
+      return ::java::lang::Object(env->callObjectMethod(this$, mids$[mid_clone_541690f9ee81d3ad]));
+    }
+
+    jchar CharacterIterator::current() const
+    {
+      return env->callCharMethod(this$, mids$[mid_current_5e2f8fc4d7c03fbd]);
+    }
+
+    jchar CharacterIterator::first() const
+    {
+      return env->callCharMethod(this$, mids$[mid_first_5e2f8fc4d7c03fbd]);
+    }
+
+    jint CharacterIterator::getBeginIndex() const
+    {
+      return env->callIntMethod(this$, mids$[mid_getBeginIndex_55546ef6a647f39b]);
+    }
+
+    jint CharacterIterator::getEndIndex() const
+    {
+      return env->callIntMethod(this$, mids$[mid_getEndIndex_55546ef6a647f39b]);
+    }
+
+    jint CharacterIterator::getIndex() const
+    {
+      return env->callIntMethod(this$, mids$[mid_getIndex_55546ef6a647f39b]);
+    }
+
+    jchar CharacterIterator::last() const
+    {
+      return env->callCharMethod(this$, mids$[mid_last_5e2f8fc4d7c03fbd]);
+    }
+
+    jchar CharacterIterator::next() const
+    {
+      return env->callCharMethod(this$, mids$[mid_next_5e2f8fc4d7c03fbd]);
+    }
+
+    jchar CharacterIterator::previous() const
+    {
+      return env->callCharMethod(this$, mids$[mid_previous_5e2f8fc4d7c03fbd]);
+    }
+
+    jchar CharacterIterator::setIndex(jint a0) const
+    {
+      return env->callCharMethod(this$, mids$[mid_setIndex_f41af25e73e22f74], a0);
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace java {
+  namespace text {
+    static PyObject *t_CharacterIterator_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_CharacterIterator_instance_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_CharacterIterator_clone(t_CharacterIterator *self);
+    static PyObject *t_CharacterIterator_current(t_CharacterIterator *self);
+    static PyObject *t_CharacterIterator_first(t_CharacterIterator *self);
+    static PyObject *t_CharacterIterator_getBeginIndex(t_CharacterIterator *self);
+    static PyObject *t_CharacterIterator_getEndIndex(t_CharacterIterator *self);
+    static PyObject *t_CharacterIterator_getIndex(t_CharacterIterator *self);
+    static PyObject *t_CharacterIterator_last(t_CharacterIterator *self);
+    static PyObject *t_CharacterIterator_next(t_CharacterIterator *self);
+    static PyObject *t_CharacterIterator_previous(t_CharacterIterator *self);
+    static PyObject *t_CharacterIterator_setIndex(t_CharacterIterator *self, PyObject *arg);
+    static PyObject *t_CharacterIterator_get__beginIndex(t_CharacterIterator *self, void *data);
+    static PyObject *t_CharacterIterator_get__endIndex(t_CharacterIterator *self, void *data);
+    static PyObject *t_CharacterIterator_get__index(t_CharacterIterator *self, void *data);
+    static int t_CharacterIterator_set__index(t_CharacterIterator *self, PyObject *arg, void *data);
+    static PyGetSetDef t_CharacterIterator__fields_[] = {
+      DECLARE_GET_FIELD(t_CharacterIterator, beginIndex),
+      DECLARE_GET_FIELD(t_CharacterIterator, endIndex),
+      DECLARE_GETSET_FIELD(t_CharacterIterator, index),
+      { NULL, NULL, NULL, NULL, NULL }
+    };
+
+    static PyMethodDef t_CharacterIterator__methods_[] = {
+      DECLARE_METHOD(t_CharacterIterator, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_CharacterIterator, instance_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_CharacterIterator, clone, METH_NOARGS),
+      DECLARE_METHOD(t_CharacterIterator, current, METH_NOARGS),
+      DECLARE_METHOD(t_CharacterIterator, first, METH_NOARGS),
+      DECLARE_METHOD(t_CharacterIterator, getBeginIndex, METH_NOARGS),
+      DECLARE_METHOD(t_CharacterIterator, getEndIndex, METH_NOARGS),
+      DECLARE_METHOD(t_CharacterIterator, getIndex, METH_NOARGS),
+      DECLARE_METHOD(t_CharacterIterator, last, METH_NOARGS),
+      DECLARE_METHOD(t_CharacterIterator, next, METH_NOARGS),
+      DECLARE_METHOD(t_CharacterIterator, previous, METH_NOARGS),
+      DECLARE_METHOD(t_CharacterIterator, setIndex, METH_O),
+      { NULL, NULL, 0, NULL }
+    };
+
+    static PyType_Slot PY_TYPE_SLOTS(CharacterIterator)[] = {
+      { Py_tp_methods, t_CharacterIterator__methods_ },
+      { Py_tp_init, (void *) abstract_init },
+      { Py_tp_getset, t_CharacterIterator__fields_ },
+      { 0, NULL }
+    };
+
+    static PyType_Def *PY_TYPE_BASES(CharacterIterator)[] = {
+      &PY_TYPE_DEF(::java::lang::Cloneable),
+      NULL
+    };
+
+    DEFINE_TYPE(CharacterIterator, t_CharacterIterator, CharacterIterator);
+
+    void t_CharacterIterator::install(PyObject *module)
+    {
+      installType(&PY_TYPE(CharacterIterator), &PY_TYPE_DEF(CharacterIterator), module, "CharacterIterator", 0);
+    }
+
+    void t_CharacterIterator::initialize(PyObject *module)
+    {
+      PyObject_SetAttrString((PyObject *) PY_TYPE(CharacterIterator), "class_", make_descriptor(CharacterIterator::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(CharacterIterator), "wrapfn_", make_descriptor(t_CharacterIterator::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(CharacterIterator), "boxfn_", make_descriptor(boxObject));
+      env->getClass(CharacterIterator::initializeClass);
+      PyObject_SetAttrString((PyObject *) PY_TYPE(CharacterIterator), "DONE", make_descriptor(CharacterIterator::DONE));
+    }
+
+    static PyObject *t_CharacterIterator_cast_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!(arg = castCheck(arg, CharacterIterator::initializeClass, 1)))
+        return NULL;
+      return t_CharacterIterator::wrap_Object(CharacterIterator(((t_CharacterIterator *) arg)->object.this$));
+    }
+    static PyObject *t_CharacterIterator_instance_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!castCheck(arg, CharacterIterator::initializeClass, 0))
+        Py_RETURN_FALSE;
+      Py_RETURN_TRUE;
+    }
+
+    static PyObject *t_CharacterIterator_clone(t_CharacterIterator *self)
+    {
+      ::java::lang::Object result((jobject) NULL);
+      OBJ_CALL(result = self->object.clone());
+      return ::java::lang::t_Object::wrap_Object(result);
+    }
+
+    static PyObject *t_CharacterIterator_current(t_CharacterIterator *self)
+    {
+      jchar result;
+      OBJ_CALL(result = self->object.current());
+      return c2p(result);
+    }
+
+    static PyObject *t_CharacterIterator_first(t_CharacterIterator *self)
+    {
+      jchar result;
+      OBJ_CALL(result = self->object.first());
+      return c2p(result);
+    }
+
+    static PyObject *t_CharacterIterator_getBeginIndex(t_CharacterIterator *self)
+    {
+      jint result;
+      OBJ_CALL(result = self->object.getBeginIndex());
+      return PyLong_FromLong((long) result);
+    }
+
+    static PyObject *t_CharacterIterator_getEndIndex(t_CharacterIterator *self)
+    {
+      jint result;
+      OBJ_CALL(result = self->object.getEndIndex());
+      return PyLong_FromLong((long) result);
+    }
+
+    static PyObject *t_CharacterIterator_getIndex(t_CharacterIterator *self)
+    {
+      jint result;
+      OBJ_CALL(result = self->object.getIndex());
+      return PyLong_FromLong((long) result);
+    }
+
+    static PyObject *t_CharacterIterator_last(t_CharacterIterator *self)
+    {
+      jchar result;
+      OBJ_CALL(result = self->object.last());
+      return c2p(result);
+    }
+
+    static PyObject *t_CharacterIterator_next(t_CharacterIterator *self)
+    {
+      jchar result;
+      OBJ_CALL(result = self->object.next());
+      return c2p(result);
+    }
+
+    static PyObject *t_CharacterIterator_previous(t_CharacterIterator *self)
+    {
+      jchar result;
+      OBJ_CALL(result = self->object.previous());
+      return c2p(result);
+    }
+
+    static PyObject *t_CharacterIterator_setIndex(t_CharacterIterator *self, PyObject *arg)
+    {
+      jint a0;
+      jchar result;
+
+      if (!parseArg(arg, "I", &a0))
+      {
+        OBJ_CALL(result = self->object.setIndex(a0));
+        return c2p(result);
+      }
+
+      PyErr_SetArgsError((PyObject *) self, "setIndex", arg);
+      return NULL;
+    }
+
+    static PyObject *t_CharacterIterator_get__beginIndex(t_CharacterIterator *self, void *data)
+    {
+      jint value;
+      OBJ_CALL(value = self->object.getBeginIndex());
+      return PyLong_FromLong((long) value);
+    }
+
+    static PyObject *t_CharacterIterator_get__endIndex(t_CharacterIterator *self, void *data)
+    {
+      jint value;
+      OBJ_CALL(value = self->object.getEndIndex());
+      return PyLong_FromLong((long) value);
+    }
+
+    static PyObject *t_CharacterIterator_get__index(t_CharacterIterator *self, void *data)
+    {
+      jint value;
+      OBJ_CALL(value = self->object.getIndex());
+      return PyLong_FromLong((long) value);
+    }
+    static int t_CharacterIterator_set__index(t_CharacterIterator *self, PyObject *arg, void *data)
+    {
+      {
+        jint value;
+        if (!parseArg(arg, "I", &value))
+        {
+          INT_CALL(self->object.setIndex(value));
+          return 0;
+        }
+      }
+      PyErr_SetArgsError((PyObject *) self, "index", arg);
+      return -1;
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "java/security/BasicPermission.h"
+#include "java/lang/String.h"
+#include "java/lang/Class.h"
+#include "java/lang/Object.h"
+#include "JArray.h"
+
+namespace java {
+  namespace security {
+
+    ::java::lang::Class *BasicPermission::class$ = NULL;
+    jmethodID *BasicPermission::mids$ = NULL;
+    bool BasicPermission::live$ = false;
+
+    jclass BasicPermission::initializeClass(bool getOnly)
+    {
+      if (getOnly)
+        return (jclass) (live$ ? class$->this$ : NULL);
+      if (class$ == NULL)
+      {
+        jclass cls = (jclass) env->findClass("java/security/BasicPermission");
+
+        mids$ = new jmethodID[max_mid];
+        mids$[mid_init$_734b91ac30d5f9b4] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;)V");
+        mids$[mid_init$_a627ad9c5959309d] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+        mids$[mid_equals_460c5e2d9d51c6cc] = env->getMethodID(cls, "equals", "(Ljava/lang/Object;)Z");
+        mids$[mid_getActions_1c1fa1e935d6cdcf] = env->getMethodID(cls, "getActions", "()Ljava/lang/String;");
+        mids$[mid_hashCode_55546ef6a647f39b] = env->getMethodID(cls, "hashCode", "()I");
+        mids$[mid_implies_ca9e753196b1e6bc] = env->getMethodID(cls, "implies", "(Ljava/security/Permission;)Z");
+
+        class$ = new ::java::lang::Class(cls);
+        live$ = true;
+      }
+      return (jclass) class$->this$;
+    }
+
+    BasicPermission::BasicPermission(const ::java::lang::String & a0) : ::java::security::Permission(env->newObject(initializeClass, &mids$, mid_init$_734b91ac30d5f9b4, a0.this$)) {}
+
+    BasicPermission::BasicPermission(const ::java::lang::String & a0, const ::java::lang::String & a1) : ::java::security::Permission(env->newObject(initializeClass, &mids$, mid_init$_a627ad9c5959309d, a0.this$, a1.this$)) {}
+
+    jboolean BasicPermission::equals(const ::java::lang::Object & a0) const
+    {
+      return env->callBooleanMethod(this$, mids$[mid_equals_460c5e2d9d51c6cc], a0.this$);
+    }
+
+    ::java::lang::String BasicPermission::getActions() const
+    {
+      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getActions_1c1fa1e935d6cdcf]));
+    }
+
+    jint BasicPermission::hashCode() const
+    {
+      return env->callIntMethod(this$, mids$[mid_hashCode_55546ef6a647f39b]);
+    }
+
+    jboolean BasicPermission::implies(const ::java::security::Permission & a0) const
+    {
+      return env->callBooleanMethod(this$, mids$[mid_implies_ca9e753196b1e6bc], a0.this$);
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace java {
+  namespace security {
+    static PyObject *t_BasicPermission_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_BasicPermission_instance_(PyTypeObject *type, PyObject *arg);
+    static int t_BasicPermission_init_(t_BasicPermission *self, PyObject *args, PyObject *kwds);
+    static PyObject *t_BasicPermission_equals(t_BasicPermission *self, PyObject *args);
+    static PyObject *t_BasicPermission_getActions(t_BasicPermission *self, PyObject *args);
+    static PyObject *t_BasicPermission_hashCode(t_BasicPermission *self, PyObject *args);
+    static PyObject *t_BasicPermission_implies(t_BasicPermission *self, PyObject *args);
+    static PyObject *t_BasicPermission_get__actions(t_BasicPermission *self, void *data);
+    static PyGetSetDef t_BasicPermission__fields_[] = {
+      DECLARE_GET_FIELD(t_BasicPermission, actions),
+      { NULL, NULL, NULL, NULL, NULL }
+    };
+
+    static PyMethodDef t_BasicPermission__methods_[] = {
+      DECLARE_METHOD(t_BasicPermission, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_BasicPermission, instance_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_BasicPermission, equals, METH_VARARGS),
+      DECLARE_METHOD(t_BasicPermission, getActions, METH_VARARGS),
+      DECLARE_METHOD(t_BasicPermission, hashCode, METH_VARARGS),
+      DECLARE_METHOD(t_BasicPermission, implies, METH_VARARGS),
+      { NULL, NULL, 0, NULL }
+    };
+
+    static PyType_Slot PY_TYPE_SLOTS(BasicPermission)[] = {
+      { Py_tp_methods, t_BasicPermission__methods_ },
+      { Py_tp_init, (void *) t_BasicPermission_init_ },
+      { Py_tp_getset, t_BasicPermission__fields_ },
+      { 0, NULL }
+    };
+
+    static PyType_Def *PY_TYPE_BASES(BasicPermission)[] = {
+      &PY_TYPE_DEF(::java::security::Permission),
+      NULL
+    };
+
+    DEFINE_TYPE(BasicPermission, t_BasicPermission, BasicPermission);
+
+    void t_BasicPermission::install(PyObject *module)
+    {
+      installType(&PY_TYPE(BasicPermission), &PY_TYPE_DEF(BasicPermission), module, "BasicPermission", 0);
+    }
+
+    void t_BasicPermission::initialize(PyObject *module)
+    {
+      PyObject_SetAttrString((PyObject *) PY_TYPE(BasicPermission), "class_", make_descriptor(BasicPermission::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(BasicPermission), "wrapfn_", make_descriptor(t_BasicPermission::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(BasicPermission), "boxfn_", make_descriptor(boxObject));
+    }
+
+    static PyObject *t_BasicPermission_cast_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!(arg = castCheck(arg, BasicPermission::initializeClass, 1)))
+        return NULL;
+      return t_BasicPermission::wrap_Object(BasicPermission(((t_BasicPermission *) arg)->object.this$));
+    }
+    static PyObject *t_BasicPermission_instance_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!castCheck(arg, BasicPermission::initializeClass, 0))
+        Py_RETURN_FALSE;
+      Py_RETURN_TRUE;
+    }
+
+    static int t_BasicPermission_init_(t_BasicPermission *self, PyObject *args, PyObject *kwds)
+    {
+      switch (PyTuple_GET_SIZE(args)) {
+       case 1:
+        {
+          ::java::lang::String a0((jobject) NULL);
+          BasicPermission object((jobject) NULL);
+
+          if (!parseArgs(args, "s", &a0))
+          {
+            INT_CALL(object = BasicPermission(a0));
+            self->object = object;
+            break;
+          }
+        }
+        goto err;
+       case 2:
+        {
+          ::java::lang::String a0((jobject) NULL);
+          ::java::lang::String a1((jobject) NULL);
+          BasicPermission object((jobject) NULL);
+
+          if (!parseArgs(args, "ss", &a0, &a1))
+          {
+            INT_CALL(object = BasicPermission(a0, a1));
+            self->object = object;
+            break;
+          }
+        }
+       default:
+       err:
+        PyErr_SetArgsError((PyObject *) self, "__init__", args);
+        return -1;
+      }
+
+      return 0;
+    }
+
+    static PyObject *t_BasicPermission_equals(t_BasicPermission *self, PyObject *args)
+    {
+      ::java::lang::Object a0((jobject) NULL);
+      jboolean result;
+
+      if (!parseArgs(args, "o", &a0))
+      {
+        OBJ_CALL(result = self->object.equals(a0));
+        Py_RETURN_BOOL(result);
+      }
+
+      return callSuper(PY_TYPE(BasicPermission), (PyObject *) self, "equals", args, 2);
+    }
+
+    static PyObject *t_BasicPermission_getActions(t_BasicPermission *self, PyObject *args)
+    {
+      ::java::lang::String result((jobject) NULL);
+
+      if (!parseArgs(args, ""))
+      {
+        OBJ_CALL(result = self->object.getActions());
+        return j2p(result);
+      }
+
+      return callSuper(PY_TYPE(BasicPermission), (PyObject *) self, "getActions", args, 2);
+    }
+
+    static PyObject *t_BasicPermission_hashCode(t_BasicPermission *self, PyObject *args)
+    {
+      jint result;
+
+      if (!parseArgs(args, ""))
+      {
+        OBJ_CALL(result = self->object.hashCode());
+        return PyLong_FromLong((long) result);
+      }
+
+      return callSuper(PY_TYPE(BasicPermission), (PyObject *) self, "hashCode", args, 2);
+    }
+
+    static PyObject *t_BasicPermission_implies(t_BasicPermission *self, PyObject *args)
+    {
+      ::java::security::Permission a0((jobject) NULL);
+      jboolean result;
+
+      if (!parseArgs(args, "k", ::java::security::Permission::initializeClass, &a0))
+      {
+        OBJ_CALL(result = self->object.implies(a0));
+        Py_RETURN_BOOL(result);
+      }
+
+      return callSuper(PY_TYPE(BasicPermission), (PyObject *) self, "implies", args, 2);
+    }
+
+    static PyObject *t_BasicPermission_get__actions(t_BasicPermission *self, void *data)
+    {
+      ::java::lang::String value((jobject) NULL);
+      OBJ_CALL(value = self->object.getActions());
+      return j2p(value);
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "java/io/DataInput.h"
+#include "java/lang/String.h"
+#include "java/lang/Class.h"
+#include "java/io/IOException.h"
+#include "JArray.h"
+
+namespace java {
+  namespace io {
+
+    ::java::lang::Class *DataInput::class$ = NULL;
+    jmethodID *DataInput::mids$ = NULL;
+    bool DataInput::live$ = false;
+
+    jclass DataInput::initializeClass(bool getOnly)
+    {
+      if (getOnly)
+        return (jclass) (live$ ? class$->this$ : NULL);
+      if (class$ == NULL)
+      {
+        jclass cls = (jclass) env->findClass("java/io/DataInput");
+
+        mids$ = new jmethodID[max_mid];
+        mids$[mid_readBoolean_9ab94ac1dc23b105] = env->getMethodID(cls, "readBoolean", "()Z");
+        mids$[mid_readByte_82ba37184c5152a3] = env->getMethodID(cls, "readByte", "()B");
+        mids$[mid_readChar_5e2f8fc4d7c03fbd] = env->getMethodID(cls, "readChar", "()C");
+        mids$[mid_readDouble_b74f83833fdad017] = env->getMethodID(cls, "readDouble", "()D");
+        mids$[mid_readFloat_1fb1bf0772ae5db7] = env->getMethodID(cls, "readFloat", "()F");
+        mids$[mid_readFully_459771b03534868e] = env->getMethodID(cls, "readFully", "([B)V");
+        mids$[mid_readFully_a9fddc59b07ce512] = env->getMethodID(cls, "readFully", "([BII)V");
+        mids$[mid_readInt_55546ef6a647f39b] = env->getMethodID(cls, "readInt", "()I");
+        mids$[mid_readLine_1c1fa1e935d6cdcf] = env->getMethodID(cls, "readLine", "()Ljava/lang/String;");
+        mids$[mid_readLong_6c0ce7e438e5ded4] = env->getMethodID(cls, "readLong", "()J");
+        mids$[mid_readShort_02a2271f89f4492b] = env->getMethodID(cls, "readShort", "()S");
+        mids$[mid_readUTF_1c1fa1e935d6cdcf] = env->getMethodID(cls, "readUTF", "()Ljava/lang/String;");
+        mids$[mid_readUnsignedByte_55546ef6a647f39b] = env->getMethodID(cls, "readUnsignedByte", "()I");
+        mids$[mid_readUnsignedShort_55546ef6a647f39b] = env->getMethodID(cls, "readUnsignedShort", "()I");
+        mids$[mid_skipBytes_0e7cf35192c3effe] = env->getMethodID(cls, "skipBytes", "(I)I");
+
+        class$ = new ::java::lang::Class(cls);
+        live$ = true;
+      }
+      return (jclass) class$->this$;
+    }
+
+    jboolean DataInput::readBoolean() const
+    {
+      return env->callBooleanMethod(this$, mids$[mid_readBoolean_9ab94ac1dc23b105]);
+    }
+
+    jbyte DataInput::readByte() const
+    {
+      return env->callByteMethod(this$, mids$[mid_readByte_82ba37184c5152a3]);
+    }
+
+    jchar DataInput::readChar() const
+    {
+      return env->callCharMethod(this$, mids$[mid_readChar_5e2f8fc4d7c03fbd]);
+    }
+
+    jdouble DataInput::readDouble() const
+    {
+      return env->callDoubleMethod(this$, mids$[mid_readDouble_b74f83833fdad017]);
+    }
+
+    jfloat DataInput::readFloat() const
+    {
+      return env->callFloatMethod(this$, mids$[mid_readFloat_1fb1bf0772ae5db7]);
+    }
+
+    void DataInput::readFully(const JArray< jbyte > & a0) const
+    {
+      env->callVoidMethod(this$, mids$[mid_readFully_459771b03534868e], a0.this$);
+    }
+
+    void DataInput::readFully(const JArray< jbyte > & a0, jint a1, jint a2) const
+    {
+      env->callVoidMethod(this$, mids$[mid_readFully_a9fddc59b07ce512], a0.this$, a1, a2);
+    }
+
+    jint DataInput::readInt() const
+    {
+      return env->callIntMethod(this$, mids$[mid_readInt_55546ef6a647f39b]);
+    }
+
+    ::java::lang::String DataInput::readLine() const
+    {
+      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_readLine_1c1fa1e935d6cdcf]));
+    }
+
+    jlong DataInput::readLong() const
+    {
+      return env->callLongMethod(this$, mids$[mid_readLong_6c0ce7e438e5ded4]);
+    }
+
+    jshort DataInput::readShort() const
+    {
+      return env->callShortMethod(this$, mids$[mid_readShort_02a2271f89f4492b]);
+    }
+
+    ::java::lang::String DataInput::readUTF() const
+    {
+      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_readUTF_1c1fa1e935d6cdcf]));
+    }
+
+    jint DataInput::readUnsignedByte() const
+    {
+      return env->callIntMethod(this$, mids$[mid_readUnsignedByte_55546ef6a647f39b]);
+    }
+
+    jint DataInput::readUnsignedShort() const
+    {
+      return env->callIntMethod(this$, mids$[mid_readUnsignedShort_55546ef6a647f39b]);
+    }
+
+    jint DataInput::skipBytes(jint a0) const
+    {
+      return env->callIntMethod(this$, mids$[mid_skipBytes_0e7cf35192c3effe], a0);
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace java {
+  namespace io {
+    static PyObject *t_DataInput_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_DataInput_instance_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_DataInput_readBoolean(t_DataInput *self);
+    static PyObject *t_DataInput_readByte(t_DataInput *self);
+    static PyObject *t_DataInput_readChar(t_DataInput *self);
+    static PyObject *t_DataInput_readDouble(t_DataInput *self);
+    static PyObject *t_DataInput_readFloat(t_DataInput *self);
+    static PyObject *t_DataInput_readFully(t_DataInput *self, PyObject *args);
+    static PyObject *t_DataInput_readInt(t_DataInput *self);
+    static PyObject *t_DataInput_readLine(t_DataInput *self);
+    static PyObject *t_DataInput_readLong(t_DataInput *self);
+    static PyObject *t_DataInput_readShort(t_DataInput *self);
+    static PyObject *t_DataInput_readUTF(t_DataInput *self);
+    static PyObject *t_DataInput_readUnsignedByte(t_DataInput *self);
+    static PyObject *t_DataInput_readUnsignedShort(t_DataInput *self);
+    static PyObject *t_DataInput_skipBytes(t_DataInput *self, PyObject *arg);
+
+    static PyMethodDef t_DataInput__methods_[] = {
+      DECLARE_METHOD(t_DataInput, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_DataInput, instance_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_DataInput, readBoolean, METH_NOARGS),
+      DECLARE_METHOD(t_DataInput, readByte, METH_NOARGS),
+      DECLARE_METHOD(t_DataInput, readChar, METH_NOARGS),
+      DECLARE_METHOD(t_DataInput, readDouble, METH_NOARGS),
+      DECLARE_METHOD(t_DataInput, readFloat, METH_NOARGS),
+      DECLARE_METHOD(t_DataInput, readFully, METH_VARARGS),
+      DECLARE_METHOD(t_DataInput, readInt, METH_NOARGS),
+      DECLARE_METHOD(t_DataInput, readLine, METH_NOARGS),
+      DECLARE_METHOD(t_DataInput, readLong, METH_NOARGS),
+      DECLARE_METHOD(t_DataInput, readShort, METH_NOARGS),
+      DECLARE_METHOD(t_DataInput, readUTF, METH_NOARGS),
+      DECLARE_METHOD(t_DataInput, readUnsignedByte, METH_NOARGS),
+      DECLARE_METHOD(t_DataInput, readUnsignedShort, METH_NOARGS),
+      DECLARE_METHOD(t_DataInput, skipBytes, METH_O),
+      { NULL, NULL, 0, NULL }
+    };
+
+    static PyType_Slot PY_TYPE_SLOTS(DataInput)[] = {
+      { Py_tp_methods, t_DataInput__methods_ },
+      { Py_tp_init, (void *) abstract_init },
+      { 0, NULL }
+    };
+
+    static PyType_Def *PY_TYPE_BASES(DataInput)[] = {
+      &PY_TYPE_DEF(::java::lang::Object),
+      NULL
+    };
+
+    DEFINE_TYPE(DataInput, t_DataInput, DataInput);
+
+    void t_DataInput::install(PyObject *module)
+    {
+      installType(&PY_TYPE(DataInput), &PY_TYPE_DEF(DataInput), module, "DataInput", 0);
+    }
+
+    void t_DataInput::initialize(PyObject *module)
+    {
+      PyObject_SetAttrString((PyObject *) PY_TYPE(DataInput), "class_", make_descriptor(DataInput::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(DataInput), "wrapfn_", make_descriptor(t_DataInput::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(DataInput), "boxfn_", make_descriptor(boxObject));
+    }
+
+    static PyObject *t_DataInput_cast_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!(arg = castCheck(arg, DataInput::initializeClass, 1)))
+        return NULL;
+      return t_DataInput::wrap_Object(DataInput(((t_DataInput *) arg)->object.this$));
+    }
+    static PyObject *t_DataInput_instance_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!castCheck(arg, DataInput::initializeClass, 0))
+        Py_RETURN_FALSE;
+      Py_RETURN_TRUE;
+    }
+
+    static PyObject *t_DataInput_readBoolean(t_DataInput *self)
+    {
+      jboolean result;
+      OBJ_CALL(result = self->object.readBoolean());
+      Py_RETURN_BOOL(result);
+    }
+
+    static PyObject *t_DataInput_readByte(t_DataInput *self)
+    {
+      jbyte result;
+      OBJ_CALL(result = self->object.readByte());
+      return PyLong_FromLong((long) result);
+    }
+
+    static PyObject *t_DataInput_readChar(t_DataInput *self)
+    {
+      jchar result;
+      OBJ_CALL(result = self->object.readChar());
+      return c2p(result);
+    }
+
+    static PyObject *t_DataInput_readDouble(t_DataInput *self)
+    {
+      jdouble result;
+      OBJ_CALL(result = self->object.readDouble());
+      return PyFloat_FromDouble((double) result);
+    }
+
+    static PyObject *t_DataInput_readFloat(t_DataInput *self)
+    {
+      jfloat result;
+      OBJ_CALL(result = self->object.readFloat());
+      return PyFloat_FromDouble((double) result);
+    }
+
+    static PyObject *t_DataInput_readFully(t_DataInput *self, PyObject *args)
+    {
+      switch (PyTuple_GET_SIZE(args)) {
+       case 1:
+        {
+          JArray< jbyte > a0((jobject) NULL);
+
+          if (!parseArgs(args, "[B", &a0))
+          {
+            OBJ_CALL(self->object.readFully(a0));
+            Py_RETURN_NONE;
+          }
+        }
+        break;
+       case 3:
+        {
+          JArray< jbyte > a0((jobject) NULL);
+          jint a1;
+          jint a2;
+
+          if (!parseArgs(args, "[BII", &a0, &a1, &a2))
+          {
+            OBJ_CALL(self->object.readFully(a0, a1, a2));
+            Py_RETURN_NONE;
+          }
+        }
+      }
+
+      PyErr_SetArgsError((PyObject *) self, "readFully", args);
+      return NULL;
+    }
+
+    static PyObject *t_DataInput_readInt(t_DataInput *self)
+    {
+      jint result;
+      OBJ_CALL(result = self->object.readInt());
+      return PyLong_FromLong((long) result);
+    }
+
+    static PyObject *t_DataInput_readLine(t_DataInput *self)
+    {
+      ::java::lang::String result((jobject) NULL);
+      OBJ_CALL(result = self->object.readLine());
+      return j2p(result);
+    }
+
+    static PyObject *t_DataInput_readLong(t_DataInput *self)
+    {
+      jlong result;
+      OBJ_CALL(result = self->object.readLong());
+      return PyLong_FromLongLong((PY_LONG_LONG) result);
+    }
+
+    static PyObject *t_DataInput_readShort(t_DataInput *self)
+    {
+      jshort result;
+      OBJ_CALL(result = self->object.readShort());
+      return PyLong_FromLong((long) result);
+    }
+
+    static PyObject *t_DataInput_readUTF(t_DataInput *self)
+    {
+      ::java::lang::String result((jobject) NULL);
+      OBJ_CALL(result = self->object.readUTF());
+      return j2p(result);
+    }
+
+    static PyObject *t_DataInput_readUnsignedByte(t_DataInput *self)
+    {
+      jint result;
+      OBJ_CALL(result = self->object.readUnsignedByte());
+      return PyLong_FromLong((long) result);
+    }
+
+    static PyObject *t_DataInput_readUnsignedShort(t_DataInput *self)
+    {
+      jint result;
+      OBJ_CALL(result = self->object.readUnsignedShort());
+      return PyLong_FromLong((long) result);
+    }
+
+    static PyObject *t_DataInput_skipBytes(t_DataInput *self, PyObject *arg)
+    {
+      jint a0;
+      jint result;
+
+      if (!parseArg(arg, "I", &a0))
+      {
+        OBJ_CALL(result = self->object.skipBytes(a0));
+        return PyLong_FromLong((long) result);
+      }
+
+      PyErr_SetArgsError((PyObject *) self, "skipBytes", arg);
+      return NULL;
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "java/io/DataOutput.h"
+#include "java/lang/String.h"
+#include "java/lang/Class.h"
+#include "java/io/IOException.h"
 #include "JArray.h"
 
 namespace java {
@@ -2852,20 +3172,20 @@ namespace java {
         jclass cls = (jclass) env->findClass("java/io/DataOutput");
 
         mids$ = new jmethodID[max_mid];
-        mids$[mid_write_d759c70c6670fd89] = env->getMethodID(cls, "write", "([B)V");
-        mids$[mid_write_a3da1a935cb37f7b] = env->getMethodID(cls, "write", "(I)V");
-        mids$[mid_write_ac782c7077255dd3] = env->getMethodID(cls, "write", "([BII)V");
-        mids$[mid_writeBoolean_ed2afdb8506b9742] = env->getMethodID(cls, "writeBoolean", "(Z)V");
-        mids$[mid_writeByte_a3da1a935cb37f7b] = env->getMethodID(cls, "writeByte", "(I)V");
-        mids$[mid_writeBytes_f5ffdf29129ef90a] = env->getMethodID(cls, "writeBytes", "(Ljava/lang/String;)V");
-        mids$[mid_writeChar_a3da1a935cb37f7b] = env->getMethodID(cls, "writeChar", "(I)V");
-        mids$[mid_writeChars_f5ffdf29129ef90a] = env->getMethodID(cls, "writeChars", "(Ljava/lang/String;)V");
-        mids$[mid_writeDouble_10f281d777284cea] = env->getMethodID(cls, "writeDouble", "(D)V");
-        mids$[mid_writeFloat_3ac7cc3def9efaa9] = env->getMethodID(cls, "writeFloat", "(F)V");
-        mids$[mid_writeInt_a3da1a935cb37f7b] = env->getMethodID(cls, "writeInt", "(I)V");
-        mids$[mid_writeLong_3cd6a6b354c6aa22] = env->getMethodID(cls, "writeLong", "(J)V");
-        mids$[mid_writeShort_a3da1a935cb37f7b] = env->getMethodID(cls, "writeShort", "(I)V");
-        mids$[mid_writeUTF_f5ffdf29129ef90a] = env->getMethodID(cls, "writeUTF", "(Ljava/lang/String;)V");
+        mids$[mid_write_459771b03534868e] = env->getMethodID(cls, "write", "([B)V");
+        mids$[mid_write_44ed599e93e8a30c] = env->getMethodID(cls, "write", "(I)V");
+        mids$[mid_write_a9fddc59b07ce512] = env->getMethodID(cls, "write", "([BII)V");
+        mids$[mid_writeBoolean_fcb96c98de6fad04] = env->getMethodID(cls, "writeBoolean", "(Z)V");
+        mids$[mid_writeByte_44ed599e93e8a30c] = env->getMethodID(cls, "writeByte", "(I)V");
+        mids$[mid_writeBytes_734b91ac30d5f9b4] = env->getMethodID(cls, "writeBytes", "(Ljava/lang/String;)V");
+        mids$[mid_writeChar_44ed599e93e8a30c] = env->getMethodID(cls, "writeChar", "(I)V");
+        mids$[mid_writeChars_734b91ac30d5f9b4] = env->getMethodID(cls, "writeChars", "(Ljava/lang/String;)V");
+        mids$[mid_writeDouble_8ba9fe7a847cecad] = env->getMethodID(cls, "writeDouble", "(D)V");
+        mids$[mid_writeFloat_bb7181dc3b1dc22b] = env->getMethodID(cls, "writeFloat", "(F)V");
+        mids$[mid_writeInt_44ed599e93e8a30c] = env->getMethodID(cls, "writeInt", "(I)V");
+        mids$[mid_writeLong_3d7dd2314a0dd456] = env->getMethodID(cls, "writeLong", "(J)V");
+        mids$[mid_writeShort_44ed599e93e8a30c] = env->getMethodID(cls, "writeShort", "(I)V");
+        mids$[mid_writeUTF_734b91ac30d5f9b4] = env->getMethodID(cls, "writeUTF", "(Ljava/lang/String;)V");
 
         class$ = new ::java::lang::Class(cls);
         live$ = true;
@@ -2875,72 +3195,72 @@ namespace java {
 
     void DataOutput::write(const JArray< jbyte > & a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_write_d759c70c6670fd89], a0.this$);
+      env->callVoidMethod(this$, mids$[mid_write_459771b03534868e], a0.this$);
     }
 
     void DataOutput::write(jint a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_write_a3da1a935cb37f7b], a0);
+      env->callVoidMethod(this$, mids$[mid_write_44ed599e93e8a30c], a0);
     }
 
     void DataOutput::write(const JArray< jbyte > & a0, jint a1, jint a2) const
     {
-      env->callVoidMethod(this$, mids$[mid_write_ac782c7077255dd3], a0.this$, a1, a2);
+      env->callVoidMethod(this$, mids$[mid_write_a9fddc59b07ce512], a0.this$, a1, a2);
     }
 
     void DataOutput::writeBoolean(jboolean a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_writeBoolean_ed2afdb8506b9742], a0);
+      env->callVoidMethod(this$, mids$[mid_writeBoolean_fcb96c98de6fad04], a0);
     }
 
     void DataOutput::writeByte(jint a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_writeByte_a3da1a935cb37f7b], a0);
+      env->callVoidMethod(this$, mids$[mid_writeByte_44ed599e93e8a30c], a0);
     }
 
     void DataOutput::writeBytes(const ::java::lang::String & a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_writeBytes_f5ffdf29129ef90a], a0.this$);
+      env->callVoidMethod(this$, mids$[mid_writeBytes_734b91ac30d5f9b4], a0.this$);
     }
 
     void DataOutput::writeChar(jint a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_writeChar_a3da1a935cb37f7b], a0);
+      env->callVoidMethod(this$, mids$[mid_writeChar_44ed599e93e8a30c], a0);
     }
 
     void DataOutput::writeChars(const ::java::lang::String & a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_writeChars_f5ffdf29129ef90a], a0.this$);
+      env->callVoidMethod(this$, mids$[mid_writeChars_734b91ac30d5f9b4], a0.this$);
     }
 
     void DataOutput::writeDouble(jdouble a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_writeDouble_10f281d777284cea], a0);
+      env->callVoidMethod(this$, mids$[mid_writeDouble_8ba9fe7a847cecad], a0);
     }
 
     void DataOutput::writeFloat(jfloat a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_writeFloat_3ac7cc3def9efaa9], a0);
+      env->callVoidMethod(this$, mids$[mid_writeFloat_bb7181dc3b1dc22b], a0);
     }
 
     void DataOutput::writeInt(jint a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_writeInt_a3da1a935cb37f7b], a0);
+      env->callVoidMethod(this$, mids$[mid_writeInt_44ed599e93e8a30c], a0);
     }
 
     void DataOutput::writeLong(jlong a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_writeLong_3cd6a6b354c6aa22], a0);
+      env->callVoidMethod(this$, mids$[mid_writeLong_3d7dd2314a0dd456], a0);
     }
 
     void DataOutput::writeShort(jint a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_writeShort_a3da1a935cb37f7b], a0);
+      env->callVoidMethod(this$, mids$[mid_writeShort_44ed599e93e8a30c], a0);
     }
 
     void DataOutput::writeUTF(const ::java::lang::String & a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_writeUTF_f5ffdf29129ef90a], a0.this$);
+      env->callVoidMethod(this$, mids$[mid_writeUTF_734b91ac30d5f9b4], a0.this$);
     }
   }
 }
@@ -3220,7 +3540,7 @@ namespace java {
 }
 #include <jni.h>
 #include "JCCEnv.h"
-#include "java/io/SerializablePermission.h"
+#include "java/io/SyncFailedException.h"
 #include "java/lang/String.h"
 #include "java/lang/Class.h"
 #include "JArray.h"
@@ -3228,21 +3548,20 @@ namespace java {
 namespace java {
   namespace io {
 
-    ::java::lang::Class *SerializablePermission::class$ = NULL;
-    jmethodID *SerializablePermission::mids$ = NULL;
-    bool SerializablePermission::live$ = false;
+    ::java::lang::Class *SyncFailedException::class$ = NULL;
+    jmethodID *SyncFailedException::mids$ = NULL;
+    bool SyncFailedException::live$ = false;
 
-    jclass SerializablePermission::initializeClass(bool getOnly)
+    jclass SyncFailedException::initializeClass(bool getOnly)
     {
       if (getOnly)
         return (jclass) (live$ ? class$->this$ : NULL);
       if (class$ == NULL)
       {
-        jclass cls = (jclass) env->findClass("java/io/SerializablePermission");
+        jclass cls = (jclass) env->findClass("java/io/SyncFailedException");
 
         mids$ = new jmethodID[max_mid];
-        mids$[mid_init$_f5ffdf29129ef90a] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;)V");
-        mids$[mid_init$_630071dd94c59169] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
+        mids$[mid_init$_734b91ac30d5f9b4] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;)V");
 
         class$ = new ::java::lang::Class(cls);
         live$ = true;
@@ -3250,9 +3569,7 @@ namespace java {
       return (jclass) class$->this$;
     }
 
-    SerializablePermission::SerializablePermission(const ::java::lang::String & a0) : ::java::security::BasicPermission(env->newObject(initializeClass, &mids$, mid_init$_f5ffdf29129ef90a, a0.this$)) {}
-
-    SerializablePermission::SerializablePermission(const ::java::lang::String & a0, const ::java::lang::String & a1) : ::java::security::BasicPermission(env->newObject(initializeClass, &mids$, mid_init$_630071dd94c59169, a0.this$, a1.this$)) {}
+    SyncFailedException::SyncFailedException(const ::java::lang::String & a0) : ::java::io::IOException(env->newObject(initializeClass, &mids$, mid_init$_734b91ac30d5f9b4, a0.this$)) {}
   }
 }
 
@@ -3262,257 +3579,62 @@ namespace java {
 
 namespace java {
   namespace io {
-    static PyObject *t_SerializablePermission_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_SerializablePermission_instance_(PyTypeObject *type, PyObject *arg);
-    static int t_SerializablePermission_init_(t_SerializablePermission *self, PyObject *args, PyObject *kwds);
+    static PyObject *t_SyncFailedException_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_SyncFailedException_instance_(PyTypeObject *type, PyObject *arg);
+    static int t_SyncFailedException_init_(t_SyncFailedException *self, PyObject *args, PyObject *kwds);
 
-    static PyMethodDef t_SerializablePermission__methods_[] = {
-      DECLARE_METHOD(t_SerializablePermission, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_SerializablePermission, instance_, METH_O | METH_CLASS),
+    static PyMethodDef t_SyncFailedException__methods_[] = {
+      DECLARE_METHOD(t_SyncFailedException, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_SyncFailedException, instance_, METH_O | METH_CLASS),
       { NULL, NULL, 0, NULL }
     };
 
-    static PyType_Slot PY_TYPE_SLOTS(SerializablePermission)[] = {
-      { Py_tp_methods, t_SerializablePermission__methods_ },
-      { Py_tp_init, (void *) t_SerializablePermission_init_ },
+    static PyType_Slot PY_TYPE_SLOTS(SyncFailedException)[] = {
+      { Py_tp_methods, t_SyncFailedException__methods_ },
+      { Py_tp_init, (void *) t_SyncFailedException_init_ },
       { 0, NULL }
     };
 
-    static PyType_Def *PY_TYPE_BASES(SerializablePermission)[] = {
-      &PY_TYPE_DEF(::java::security::BasicPermission),
+    static PyType_Def *PY_TYPE_BASES(SyncFailedException)[] = {
+      &PY_TYPE_DEF(::java::io::IOException),
       NULL
     };
 
-    DEFINE_TYPE(SerializablePermission, t_SerializablePermission, SerializablePermission);
+    DEFINE_TYPE(SyncFailedException, t_SyncFailedException, SyncFailedException);
 
-    void t_SerializablePermission::install(PyObject *module)
+    void t_SyncFailedException::install(PyObject *module)
     {
-      installType(&PY_TYPE(SerializablePermission), &PY_TYPE_DEF(SerializablePermission), module, "SerializablePermission", 0);
+      installType(&PY_TYPE(SyncFailedException), &PY_TYPE_DEF(SyncFailedException), module, "SyncFailedException", 0);
     }
 
-    void t_SerializablePermission::initialize(PyObject *module)
+    void t_SyncFailedException::initialize(PyObject *module)
     {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(SerializablePermission), "class_", make_descriptor(SerializablePermission::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(SerializablePermission), "wrapfn_", make_descriptor(t_SerializablePermission::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(SerializablePermission), "boxfn_", make_descriptor(boxObject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(SyncFailedException), "class_", make_descriptor(SyncFailedException::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(SyncFailedException), "wrapfn_", make_descriptor(t_SyncFailedException::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(SyncFailedException), "boxfn_", make_descriptor(boxObject));
     }
 
-    static PyObject *t_SerializablePermission_cast_(PyTypeObject *type, PyObject *arg)
+    static PyObject *t_SyncFailedException_cast_(PyTypeObject *type, PyObject *arg)
     {
-      if (!(arg = castCheck(arg, SerializablePermission::initializeClass, 1)))
+      if (!(arg = castCheck(arg, SyncFailedException::initializeClass, 1)))
         return NULL;
-      return t_SerializablePermission::wrap_Object(SerializablePermission(((t_SerializablePermission *) arg)->object.this$));
+      return t_SyncFailedException::wrap_Object(SyncFailedException(((t_SyncFailedException *) arg)->object.this$));
     }
-    static PyObject *t_SerializablePermission_instance_(PyTypeObject *type, PyObject *arg)
+    static PyObject *t_SyncFailedException_instance_(PyTypeObject *type, PyObject *arg)
     {
-      if (!castCheck(arg, SerializablePermission::initializeClass, 0))
+      if (!castCheck(arg, SyncFailedException::initializeClass, 0))
         Py_RETURN_FALSE;
       Py_RETURN_TRUE;
     }
 
-    static int t_SerializablePermission_init_(t_SerializablePermission *self, PyObject *args, PyObject *kwds)
-    {
-      switch (PyTuple_GET_SIZE(args)) {
-       case 1:
-        {
-          ::java::lang::String a0((jobject) NULL);
-          SerializablePermission object((jobject) NULL);
-
-          if (!parseArgs(args, "s", &a0))
-          {
-            INT_CALL(object = SerializablePermission(a0));
-            self->object = object;
-            break;
-          }
-        }
-        goto err;
-       case 2:
-        {
-          ::java::lang::String a0((jobject) NULL);
-          ::java::lang::String a1((jobject) NULL);
-          SerializablePermission object((jobject) NULL);
-
-          if (!parseArgs(args, "ss", &a0, &a1))
-          {
-            INT_CALL(object = SerializablePermission(a0, a1));
-            self->object = object;
-            break;
-          }
-        }
-       default:
-       err:
-        PyErr_SetArgsError((PyObject *) self, "__init__", args);
-        return -1;
-      }
-
-      return 0;
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "java/security/Permission.h"
-#include "java/lang/SecurityException.h"
-#include "java/io/Serializable.h"
-#include "java/security/Permission.h"
-#include "java/lang/Class.h"
-#include "java/lang/String.h"
-#include "JArray.h"
-
-namespace java {
-  namespace security {
-
-    ::java::lang::Class *Permission::class$ = NULL;
-    jmethodID *Permission::mids$ = NULL;
-    bool Permission::live$ = false;
-
-    jclass Permission::initializeClass(bool getOnly)
-    {
-      if (getOnly)
-        return (jclass) (live$ ? class$->this$ : NULL);
-      if (class$ == NULL)
-      {
-        jclass cls = (jclass) env->findClass("java/security/Permission");
-
-        mids$ = new jmethodID[max_mid];
-        mids$[mid_init$_f5ffdf29129ef90a] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;)V");
-        mids$[mid_checkGuard_009757f2c0fd9090] = env->getMethodID(cls, "checkGuard", "(Ljava/lang/Object;)V");
-        mids$[mid_equals_221e8e85cb385209] = env->getMethodID(cls, "equals", "(Ljava/lang/Object;)Z");
-        mids$[mid_getActions_3cffd47377eca18a] = env->getMethodID(cls, "getActions", "()Ljava/lang/String;");
-        mids$[mid_getName_3cffd47377eca18a] = env->getMethodID(cls, "getName", "()Ljava/lang/String;");
-        mids$[mid_hashCode_412668abc8d889e9] = env->getMethodID(cls, "hashCode", "()I");
-        mids$[mid_implies_a8c459a5c587bd4f] = env->getMethodID(cls, "implies", "(Ljava/security/Permission;)Z");
-        mids$[mid_toString_3cffd47377eca18a] = env->getMethodID(cls, "toString", "()Ljava/lang/String;");
-
-        class$ = new ::java::lang::Class(cls);
-        live$ = true;
-      }
-      return (jclass) class$->this$;
-    }
-
-    Permission::Permission(const ::java::lang::String & a0) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_f5ffdf29129ef90a, a0.this$)) {}
-
-    void Permission::checkGuard(const ::java::lang::Object & a0) const
-    {
-      env->callVoidMethod(this$, mids$[mid_checkGuard_009757f2c0fd9090], a0.this$);
-    }
-
-    jboolean Permission::equals(const ::java::lang::Object & a0) const
-    {
-      return env->callBooleanMethod(this$, mids$[mid_equals_221e8e85cb385209], a0.this$);
-    }
-
-    ::java::lang::String Permission::getActions() const
-    {
-      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getActions_3cffd47377eca18a]));
-    }
-
-    ::java::lang::String Permission::getName() const
-    {
-      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getName_3cffd47377eca18a]));
-    }
-
-    jint Permission::hashCode() const
-    {
-      return env->callIntMethod(this$, mids$[mid_hashCode_412668abc8d889e9]);
-    }
-
-    jboolean Permission::implies(const Permission & a0) const
-    {
-      return env->callBooleanMethod(this$, mids$[mid_implies_a8c459a5c587bd4f], a0.this$);
-    }
-
-    ::java::lang::String Permission::toString() const
-    {
-      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_toString_3cffd47377eca18a]));
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace java {
-  namespace security {
-    static PyObject *t_Permission_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_Permission_instance_(PyTypeObject *type, PyObject *arg);
-    static int t_Permission_init_(t_Permission *self, PyObject *args, PyObject *kwds);
-    static PyObject *t_Permission_checkGuard(t_Permission *self, PyObject *arg);
-    static PyObject *t_Permission_equals(t_Permission *self, PyObject *args);
-    static PyObject *t_Permission_getActions(t_Permission *self);
-    static PyObject *t_Permission_getName(t_Permission *self);
-    static PyObject *t_Permission_hashCode(t_Permission *self, PyObject *args);
-    static PyObject *t_Permission_implies(t_Permission *self, PyObject *arg);
-    static PyObject *t_Permission_toString(t_Permission *self, PyObject *args);
-    static PyObject *t_Permission_get__actions(t_Permission *self, void *data);
-    static PyObject *t_Permission_get__name(t_Permission *self, void *data);
-    static PyGetSetDef t_Permission__fields_[] = {
-      DECLARE_GET_FIELD(t_Permission, actions),
-      DECLARE_GET_FIELD(t_Permission, name),
-      { NULL, NULL, NULL, NULL, NULL }
-    };
-
-    static PyMethodDef t_Permission__methods_[] = {
-      DECLARE_METHOD(t_Permission, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_Permission, instance_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_Permission, checkGuard, METH_O),
-      DECLARE_METHOD(t_Permission, equals, METH_VARARGS),
-      DECLARE_METHOD(t_Permission, getActions, METH_NOARGS),
-      DECLARE_METHOD(t_Permission, getName, METH_NOARGS),
-      DECLARE_METHOD(t_Permission, hashCode, METH_VARARGS),
-      DECLARE_METHOD(t_Permission, implies, METH_O),
-      DECLARE_METHOD(t_Permission, toString, METH_VARARGS),
-      { NULL, NULL, 0, NULL }
-    };
-
-    static PyType_Slot PY_TYPE_SLOTS(Permission)[] = {
-      { Py_tp_methods, t_Permission__methods_ },
-      { Py_tp_init, (void *) t_Permission_init_ },
-      { Py_tp_getset, t_Permission__fields_ },
-      { 0, NULL }
-    };
-
-    static PyType_Def *PY_TYPE_BASES(Permission)[] = {
-      &PY_TYPE_DEF(::java::lang::Object),
-      NULL
-    };
-
-    DEFINE_TYPE(Permission, t_Permission, Permission);
-
-    void t_Permission::install(PyObject *module)
-    {
-      installType(&PY_TYPE(Permission), &PY_TYPE_DEF(Permission), module, "Permission", 0);
-    }
-
-    void t_Permission::initialize(PyObject *module)
-    {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(Permission), "class_", make_descriptor(Permission::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(Permission), "wrapfn_", make_descriptor(t_Permission::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(Permission), "boxfn_", make_descriptor(boxObject));
-    }
-
-    static PyObject *t_Permission_cast_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!(arg = castCheck(arg, Permission::initializeClass, 1)))
-        return NULL;
-      return t_Permission::wrap_Object(Permission(((t_Permission *) arg)->object.this$));
-    }
-    static PyObject *t_Permission_instance_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!castCheck(arg, Permission::initializeClass, 0))
-        Py_RETURN_FALSE;
-      Py_RETURN_TRUE;
-    }
-
-    static int t_Permission_init_(t_Permission *self, PyObject *args, PyObject *kwds)
+    static int t_SyncFailedException_init_(t_SyncFailedException *self, PyObject *args, PyObject *kwds)
     {
       ::java::lang::String a0((jobject) NULL);
-      Permission object((jobject) NULL);
+      SyncFailedException object((jobject) NULL);
 
       if (!parseArgs(args, "s", &a0))
       {
-        INT_CALL(object = Permission(a0));
+        INT_CALL(object = SyncFailedException(a0));
         self->object = object;
       }
       else
@@ -3523,78 +3645,254 @@ namespace java {
 
       return 0;
     }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "java/io/ObjectStreamClass.h"
+#include "java/io/ObjectStreamField.h"
+#include "java/io/Serializable.h"
+#include "java/io/ObjectStreamClass.h"
+#include "java/lang/Class.h"
+#include "java/lang/String.h"
+#include "JArray.h"
 
-    static PyObject *t_Permission_checkGuard(t_Permission *self, PyObject *arg)
+namespace java {
+  namespace io {
+
+    ::java::lang::Class *ObjectStreamClass::class$ = NULL;
+    jmethodID *ObjectStreamClass::mids$ = NULL;
+    bool ObjectStreamClass::live$ = false;
+    JArray< ::java::io::ObjectStreamField > *ObjectStreamClass::NO_FIELDS = NULL;
+
+    jclass ObjectStreamClass::initializeClass(bool getOnly)
     {
-      ::java::lang::Object a0((jobject) NULL);
-
-      if (!parseArg(arg, "o", &a0))
+      if (getOnly)
+        return (jclass) (live$ ? class$->this$ : NULL);
+      if (class$ == NULL)
       {
-        OBJ_CALL(self->object.checkGuard(a0));
-        Py_RETURN_NONE;
+        jclass cls = (jclass) env->findClass("java/io/ObjectStreamClass");
+
+        mids$ = new jmethodID[max_mid];
+        mids$[mid_forClass_1aeb0737a960d371] = env->getMethodID(cls, "forClass", "()Ljava/lang/Class;");
+        mids$[mid_getField_a31fe4b41736abba] = env->getMethodID(cls, "getField", "(Ljava/lang/String;)Ljava/io/ObjectStreamField;");
+        mids$[mid_getFields_adc2f328b162d69b] = env->getMethodID(cls, "getFields", "()[Ljava/io/ObjectStreamField;");
+        mids$[mid_getName_1c1fa1e935d6cdcf] = env->getMethodID(cls, "getName", "()Ljava/lang/String;");
+        mids$[mid_getSerialVersionUID_6c0ce7e438e5ded4] = env->getMethodID(cls, "getSerialVersionUID", "()J");
+        mids$[mid_lookup_fc50c2fafcf35cf3] = env->getStaticMethodID(cls, "lookup", "(Ljava/lang/Class;)Ljava/io/ObjectStreamClass;");
+        mids$[mid_lookupAny_fc50c2fafcf35cf3] = env->getStaticMethodID(cls, "lookupAny", "(Ljava/lang/Class;)Ljava/io/ObjectStreamClass;");
+        mids$[mid_toString_1c1fa1e935d6cdcf] = env->getMethodID(cls, "toString", "()Ljava/lang/String;");
+
+        class$ = new ::java::lang::Class(cls);
+        cls = (jclass) class$->this$;
+
+        NO_FIELDS = new JArray< ::java::io::ObjectStreamField >(env->getStaticObjectField(cls, "NO_FIELDS", "[Ljava/io/ObjectStreamField;"));
+        live$ = true;
+      }
+      return (jclass) class$->this$;
+    }
+
+    ::java::lang::Class ObjectStreamClass::forClass() const
+    {
+      return ::java::lang::Class(env->callObjectMethod(this$, mids$[mid_forClass_1aeb0737a960d371]));
+    }
+
+    ::java::io::ObjectStreamField ObjectStreamClass::getField(const ::java::lang::String & a0) const
+    {
+      return ::java::io::ObjectStreamField(env->callObjectMethod(this$, mids$[mid_getField_a31fe4b41736abba], a0.this$));
+    }
+
+    JArray< ::java::io::ObjectStreamField > ObjectStreamClass::getFields() const
+    {
+      return JArray< ::java::io::ObjectStreamField >(env->callObjectMethod(this$, mids$[mid_getFields_adc2f328b162d69b]));
+    }
+
+    ::java::lang::String ObjectStreamClass::getName() const
+    {
+      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getName_1c1fa1e935d6cdcf]));
+    }
+
+    jlong ObjectStreamClass::getSerialVersionUID() const
+    {
+      return env->callLongMethod(this$, mids$[mid_getSerialVersionUID_6c0ce7e438e5ded4]);
+    }
+
+    ObjectStreamClass ObjectStreamClass::lookup(const ::java::lang::Class & a0)
+    {
+      jclass cls = env->getClass(initializeClass);
+      return ObjectStreamClass(env->callStaticObjectMethod(cls, mids$[mid_lookup_fc50c2fafcf35cf3], a0.this$));
+    }
+
+    ObjectStreamClass ObjectStreamClass::lookupAny(const ::java::lang::Class & a0)
+    {
+      jclass cls = env->getClass(initializeClass);
+      return ObjectStreamClass(env->callStaticObjectMethod(cls, mids$[mid_lookupAny_fc50c2fafcf35cf3], a0.this$));
+    }
+
+    ::java::lang::String ObjectStreamClass::toString() const
+    {
+      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_toString_1c1fa1e935d6cdcf]));
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace java {
+  namespace io {
+    static PyObject *t_ObjectStreamClass_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_ObjectStreamClass_instance_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_ObjectStreamClass_forClass(t_ObjectStreamClass *self);
+    static PyObject *t_ObjectStreamClass_getField(t_ObjectStreamClass *self, PyObject *arg);
+    static PyObject *t_ObjectStreamClass_getFields(t_ObjectStreamClass *self);
+    static PyObject *t_ObjectStreamClass_getName(t_ObjectStreamClass *self);
+    static PyObject *t_ObjectStreamClass_getSerialVersionUID(t_ObjectStreamClass *self);
+    static PyObject *t_ObjectStreamClass_lookup(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_ObjectStreamClass_lookupAny(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_ObjectStreamClass_toString(t_ObjectStreamClass *self, PyObject *args);
+    static PyObject *t_ObjectStreamClass_get__fields(t_ObjectStreamClass *self, void *data);
+    static PyObject *t_ObjectStreamClass_get__name(t_ObjectStreamClass *self, void *data);
+    static PyObject *t_ObjectStreamClass_get__serialVersionUID(t_ObjectStreamClass *self, void *data);
+    static PyGetSetDef t_ObjectStreamClass__fields_[] = {
+      DECLARE_GET_FIELD(t_ObjectStreamClass, fields),
+      DECLARE_GET_FIELD(t_ObjectStreamClass, name),
+      DECLARE_GET_FIELD(t_ObjectStreamClass, serialVersionUID),
+      { NULL, NULL, NULL, NULL, NULL }
+    };
+
+    static PyMethodDef t_ObjectStreamClass__methods_[] = {
+      DECLARE_METHOD(t_ObjectStreamClass, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_ObjectStreamClass, instance_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_ObjectStreamClass, forClass, METH_NOARGS),
+      DECLARE_METHOD(t_ObjectStreamClass, getField, METH_O),
+      DECLARE_METHOD(t_ObjectStreamClass, getFields, METH_NOARGS),
+      DECLARE_METHOD(t_ObjectStreamClass, getName, METH_NOARGS),
+      DECLARE_METHOD(t_ObjectStreamClass, getSerialVersionUID, METH_NOARGS),
+      DECLARE_METHOD(t_ObjectStreamClass, lookup, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_ObjectStreamClass, lookupAny, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_ObjectStreamClass, toString, METH_VARARGS),
+      { NULL, NULL, 0, NULL }
+    };
+
+    static PyType_Slot PY_TYPE_SLOTS(ObjectStreamClass)[] = {
+      { Py_tp_methods, t_ObjectStreamClass__methods_ },
+      { Py_tp_init, (void *) abstract_init },
+      { Py_tp_getset, t_ObjectStreamClass__fields_ },
+      { 0, NULL }
+    };
+
+    static PyType_Def *PY_TYPE_BASES(ObjectStreamClass)[] = {
+      &PY_TYPE_DEF(::java::lang::Object),
+      NULL
+    };
+
+    DEFINE_TYPE(ObjectStreamClass, t_ObjectStreamClass, ObjectStreamClass);
+
+    void t_ObjectStreamClass::install(PyObject *module)
+    {
+      installType(&PY_TYPE(ObjectStreamClass), &PY_TYPE_DEF(ObjectStreamClass), module, "ObjectStreamClass", 0);
+    }
+
+    void t_ObjectStreamClass::initialize(PyObject *module)
+    {
+      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectStreamClass), "class_", make_descriptor(ObjectStreamClass::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectStreamClass), "wrapfn_", make_descriptor(t_ObjectStreamClass::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectStreamClass), "boxfn_", make_descriptor(boxObject));
+      env->getClass(ObjectStreamClass::initializeClass);
+      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectStreamClass), "NO_FIELDS", make_descriptor(JArray<jobject>(ObjectStreamClass::NO_FIELDS->this$).wrap(::java::io::t_ObjectStreamField::wrap_jobject)));
+    }
+
+    static PyObject *t_ObjectStreamClass_cast_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!(arg = castCheck(arg, ObjectStreamClass::initializeClass, 1)))
+        return NULL;
+      return t_ObjectStreamClass::wrap_Object(ObjectStreamClass(((t_ObjectStreamClass *) arg)->object.this$));
+    }
+    static PyObject *t_ObjectStreamClass_instance_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!castCheck(arg, ObjectStreamClass::initializeClass, 0))
+        Py_RETURN_FALSE;
+      Py_RETURN_TRUE;
+    }
+
+    static PyObject *t_ObjectStreamClass_forClass(t_ObjectStreamClass *self)
+    {
+      ::java::lang::Class result((jobject) NULL);
+      OBJ_CALL(result = self->object.forClass());
+      return ::java::lang::t_Class::wrap_Object(result);
+    }
+
+    static PyObject *t_ObjectStreamClass_getField(t_ObjectStreamClass *self, PyObject *arg)
+    {
+      ::java::lang::String a0((jobject) NULL);
+      ::java::io::ObjectStreamField result((jobject) NULL);
+
+      if (!parseArg(arg, "s", &a0))
+      {
+        OBJ_CALL(result = self->object.getField(a0));
+        return ::java::io::t_ObjectStreamField::wrap_Object(result);
       }
 
-      PyErr_SetArgsError((PyObject *) self, "checkGuard", arg);
+      PyErr_SetArgsError((PyObject *) self, "getField", arg);
       return NULL;
     }
 
-    static PyObject *t_Permission_equals(t_Permission *self, PyObject *args)
+    static PyObject *t_ObjectStreamClass_getFields(t_ObjectStreamClass *self)
     {
-      ::java::lang::Object a0((jobject) NULL);
-      jboolean result;
-
-      if (!parseArgs(args, "o", &a0))
-      {
-        OBJ_CALL(result = self->object.equals(a0));
-        Py_RETURN_BOOL(result);
-      }
-
-      return callSuper(PY_TYPE(Permission), (PyObject *) self, "equals", args, 2);
+      JArray< ::java::io::ObjectStreamField > result((jobject) NULL);
+      OBJ_CALL(result = self->object.getFields());
+      return JArray<jobject>(result.this$).wrap(::java::io::t_ObjectStreamField::wrap_jobject);
     }
 
-    static PyObject *t_Permission_getActions(t_Permission *self)
-    {
-      ::java::lang::String result((jobject) NULL);
-      OBJ_CALL(result = self->object.getActions());
-      return j2p(result);
-    }
-
-    static PyObject *t_Permission_getName(t_Permission *self)
+    static PyObject *t_ObjectStreamClass_getName(t_ObjectStreamClass *self)
     {
       ::java::lang::String result((jobject) NULL);
       OBJ_CALL(result = self->object.getName());
       return j2p(result);
     }
 
-    static PyObject *t_Permission_hashCode(t_Permission *self, PyObject *args)
+    static PyObject *t_ObjectStreamClass_getSerialVersionUID(t_ObjectStreamClass *self)
     {
-      jint result;
-
-      if (!parseArgs(args, ""))
-      {
-        OBJ_CALL(result = self->object.hashCode());
-        return PyLong_FromLong((long) result);
-      }
-
-      return callSuper(PY_TYPE(Permission), (PyObject *) self, "hashCode", args, 2);
+      jlong result;
+      OBJ_CALL(result = self->object.getSerialVersionUID());
+      return PyLong_FromLongLong((PY_LONG_LONG) result);
     }
 
-    static PyObject *t_Permission_implies(t_Permission *self, PyObject *arg)
+    static PyObject *t_ObjectStreamClass_lookup(PyTypeObject *type, PyObject *arg)
     {
-      Permission a0((jobject) NULL);
-      jboolean result;
+      ::java::lang::Class a0((jobject) NULL);
+      PyTypeObject **p0;
+      ObjectStreamClass result((jobject) NULL);
 
-      if (!parseArg(arg, "k", Permission::initializeClass, &a0))
+      if (!parseArg(arg, "K", ::java::lang::Class::initializeClass, &a0, &p0, ::java::lang::t_Class::parameters_))
       {
-        OBJ_CALL(result = self->object.implies(a0));
-        Py_RETURN_BOOL(result);
+        OBJ_CALL(result = ::java::io::ObjectStreamClass::lookup(a0));
+        return t_ObjectStreamClass::wrap_Object(result);
       }
 
-      PyErr_SetArgsError((PyObject *) self, "implies", arg);
+      PyErr_SetArgsError(type, "lookup", arg);
       return NULL;
     }
 
-    static PyObject *t_Permission_toString(t_Permission *self, PyObject *args)
+    static PyObject *t_ObjectStreamClass_lookupAny(PyTypeObject *type, PyObject *arg)
+    {
+      ::java::lang::Class a0((jobject) NULL);
+      PyTypeObject **p0;
+      ObjectStreamClass result((jobject) NULL);
+
+      if (!parseArg(arg, "K", ::java::lang::Class::initializeClass, &a0, &p0, ::java::lang::t_Class::parameters_))
+      {
+        OBJ_CALL(result = ::java::io::ObjectStreamClass::lookupAny(a0));
+        return t_ObjectStreamClass::wrap_Object(result);
+      }
+
+      PyErr_SetArgsError(type, "lookupAny", arg);
+      return NULL;
+    }
+
+    static PyObject *t_ObjectStreamClass_toString(t_ObjectStreamClass *self, PyObject *args)
     {
       ::java::lang::String result((jobject) NULL);
 
@@ -3604,1063 +3902,28 @@ namespace java {
         return j2p(result);
       }
 
-      return callSuper(PY_TYPE(Permission), (PyObject *) self, "toString", args, 2);
+      return callSuper(PY_TYPE(ObjectStreamClass), (PyObject *) self, "toString", args, 2);
     }
 
-    static PyObject *t_Permission_get__actions(t_Permission *self, void *data)
+    static PyObject *t_ObjectStreamClass_get__fields(t_ObjectStreamClass *self, void *data)
     {
-      ::java::lang::String value((jobject) NULL);
-      OBJ_CALL(value = self->object.getActions());
-      return j2p(value);
+      JArray< ::java::io::ObjectStreamField > value((jobject) NULL);
+      OBJ_CALL(value = self->object.getFields());
+      return JArray<jobject>(value.this$).wrap(::java::io::t_ObjectStreamField::wrap_jobject);
     }
 
-    static PyObject *t_Permission_get__name(t_Permission *self, void *data)
-    {
-      ::java::lang::String value((jobject) NULL);
-      OBJ_CALL(value = self->object.getName());
-      return j2p(value);
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "java/util/Spliterator$OfPrimitive.h"
-#include "java/util/Spliterator$OfPrimitive.h"
-#include "java/lang/Class.h"
-#include "java/lang/Object.h"
-#include "JArray.h"
-
-namespace java {
-  namespace util {
-
-    ::java::lang::Class *Spliterator$OfPrimitive::class$ = NULL;
-    jmethodID *Spliterator$OfPrimitive::mids$ = NULL;
-    bool Spliterator$OfPrimitive::live$ = false;
-
-    jclass Spliterator$OfPrimitive::initializeClass(bool getOnly)
-    {
-      if (getOnly)
-        return (jclass) (live$ ? class$->this$ : NULL);
-      if (class$ == NULL)
-      {
-        jclass cls = (jclass) env->findClass("java/util/Spliterator$OfPrimitive");
-
-        mids$ = new jmethodID[max_mid];
-        mids$[mid_forEachRemaining_009757f2c0fd9090] = env->getMethodID(cls, "forEachRemaining", "(Ljava/lang/Object;)V");
-        mids$[mid_tryAdvance_221e8e85cb385209] = env->getMethodID(cls, "tryAdvance", "(Ljava/lang/Object;)Z");
-        mids$[mid_trySplit_cb8bbf8b8d713578] = env->getMethodID(cls, "trySplit", "()Ljava/util/Spliterator$OfPrimitive;");
-
-        class$ = new ::java::lang::Class(cls);
-        live$ = true;
-      }
-      return (jclass) class$->this$;
-    }
-
-    void Spliterator$OfPrimitive::forEachRemaining(const ::java::lang::Object & a0) const
-    {
-      env->callVoidMethod(this$, mids$[mid_forEachRemaining_009757f2c0fd9090], a0.this$);
-    }
-
-    jboolean Spliterator$OfPrimitive::tryAdvance(const ::java::lang::Object & a0) const
-    {
-      return env->callBooleanMethod(this$, mids$[mid_tryAdvance_221e8e85cb385209], a0.this$);
-    }
-
-    Spliterator$OfPrimitive Spliterator$OfPrimitive::trySplit() const
-    {
-      return Spliterator$OfPrimitive(env->callObjectMethod(this$, mids$[mid_trySplit_cb8bbf8b8d713578]));
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace java {
-  namespace util {
-    static PyObject *t_Spliterator$OfPrimitive_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_Spliterator$OfPrimitive_instance_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_Spliterator$OfPrimitive_of_(t_Spliterator$OfPrimitive *self, PyObject *args);
-    static PyObject *t_Spliterator$OfPrimitive_forEachRemaining(t_Spliterator$OfPrimitive *self, PyObject *args);
-    static PyObject *t_Spliterator$OfPrimitive_tryAdvance(t_Spliterator$OfPrimitive *self, PyObject *args);
-    static PyObject *t_Spliterator$OfPrimitive_trySplit(t_Spliterator$OfPrimitive *self, PyObject *args);
-    static PyObject *t_Spliterator$OfPrimitive_get__parameters_(t_Spliterator$OfPrimitive *self, void *data);
-    static PyGetSetDef t_Spliterator$OfPrimitive__fields_[] = {
-      DECLARE_GET_FIELD(t_Spliterator$OfPrimitive, parameters_),
-      { NULL, NULL, NULL, NULL, NULL }
-    };
-
-    static PyMethodDef t_Spliterator$OfPrimitive__methods_[] = {
-      DECLARE_METHOD(t_Spliterator$OfPrimitive, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_Spliterator$OfPrimitive, instance_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_Spliterator$OfPrimitive, of_, METH_VARARGS),
-      DECLARE_METHOD(t_Spliterator$OfPrimitive, forEachRemaining, METH_VARARGS),
-      DECLARE_METHOD(t_Spliterator$OfPrimitive, tryAdvance, METH_VARARGS),
-      DECLARE_METHOD(t_Spliterator$OfPrimitive, trySplit, METH_VARARGS),
-      { NULL, NULL, 0, NULL }
-    };
-
-    static PyType_Slot PY_TYPE_SLOTS(Spliterator$OfPrimitive)[] = {
-      { Py_tp_methods, t_Spliterator$OfPrimitive__methods_ },
-      { Py_tp_init, (void *) abstract_init },
-      { Py_tp_getset, t_Spliterator$OfPrimitive__fields_ },
-      { 0, NULL }
-    };
-
-    static PyType_Def *PY_TYPE_BASES(Spliterator$OfPrimitive)[] = {
-      &PY_TYPE_DEF(::java::util::Spliterator),
-      NULL
-    };
-
-    DEFINE_TYPE(Spliterator$OfPrimitive, t_Spliterator$OfPrimitive, Spliterator$OfPrimitive);
-    PyObject *t_Spliterator$OfPrimitive::wrap_Object(const Spliterator$OfPrimitive& object, PyTypeObject *p0, PyTypeObject *p1, PyTypeObject *p2)
-    {
-      PyObject *obj = t_Spliterator$OfPrimitive::wrap_Object(object);
-      if (obj != NULL && obj != Py_None)
-      {
-        t_Spliterator$OfPrimitive *self = (t_Spliterator$OfPrimitive *) obj;
-        self->parameters[0] = p0;
-        self->parameters[1] = p1;
-        self->parameters[2] = p2;
-      }
-      return obj;
-    }
-
-    PyObject *t_Spliterator$OfPrimitive::wrap_jobject(const jobject& object, PyTypeObject *p0, PyTypeObject *p1, PyTypeObject *p2)
-    {
-      PyObject *obj = t_Spliterator$OfPrimitive::wrap_jobject(object);
-      if (obj != NULL && obj != Py_None)
-      {
-        t_Spliterator$OfPrimitive *self = (t_Spliterator$OfPrimitive *) obj;
-        self->parameters[0] = p0;
-        self->parameters[1] = p1;
-        self->parameters[2] = p2;
-      }
-      return obj;
-    }
-
-    void t_Spliterator$OfPrimitive::install(PyObject *module)
-    {
-      installType(&PY_TYPE(Spliterator$OfPrimitive), &PY_TYPE_DEF(Spliterator$OfPrimitive), module, "Spliterator$OfPrimitive", 0);
-    }
-
-    void t_Spliterator$OfPrimitive::initialize(PyObject *module)
-    {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(Spliterator$OfPrimitive), "class_", make_descriptor(Spliterator$OfPrimitive::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(Spliterator$OfPrimitive), "wrapfn_", make_descriptor(t_Spliterator$OfPrimitive::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(Spliterator$OfPrimitive), "boxfn_", make_descriptor(boxObject));
-    }
-
-    static PyObject *t_Spliterator$OfPrimitive_cast_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!(arg = castCheck(arg, Spliterator$OfPrimitive::initializeClass, 1)))
-        return NULL;
-      return t_Spliterator$OfPrimitive::wrap_Object(Spliterator$OfPrimitive(((t_Spliterator$OfPrimitive *) arg)->object.this$));
-    }
-    static PyObject *t_Spliterator$OfPrimitive_instance_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!castCheck(arg, Spliterator$OfPrimitive::initializeClass, 0))
-        Py_RETURN_FALSE;
-      Py_RETURN_TRUE;
-    }
-
-    static PyObject *t_Spliterator$OfPrimitive_of_(t_Spliterator$OfPrimitive *self, PyObject *args)
-    {
-      if (!parseArg(args, "T", 3, &(self->parameters)))
-        Py_RETURN_SELF;
-      return PyErr_SetArgsError((PyObject *) self, "of_", args);
-    }
-
-    static PyObject *t_Spliterator$OfPrimitive_forEachRemaining(t_Spliterator$OfPrimitive *self, PyObject *args)
-    {
-      ::java::lang::Object a0((jobject) NULL);
-
-      if (!parseArgs(args, "O", self->parameters[1], &a0))
-      {
-        OBJ_CALL(self->object.forEachRemaining(a0));
-        Py_RETURN_NONE;
-      }
-
-      return callSuper(PY_TYPE(Spliterator$OfPrimitive), (PyObject *) self, "forEachRemaining", args, 2);
-    }
-
-    static PyObject *t_Spliterator$OfPrimitive_tryAdvance(t_Spliterator$OfPrimitive *self, PyObject *args)
-    {
-      ::java::lang::Object a0((jobject) NULL);
-      jboolean result;
-
-      if (!parseArgs(args, "O", self->parameters[1], &a0))
-      {
-        OBJ_CALL(result = self->object.tryAdvance(a0));
-        Py_RETURN_BOOL(result);
-      }
-
-      return callSuper(PY_TYPE(Spliterator$OfPrimitive), (PyObject *) self, "tryAdvance", args, 2);
-    }
-
-    static PyObject *t_Spliterator$OfPrimitive_trySplit(t_Spliterator$OfPrimitive *self, PyObject *args)
-    {
-      Spliterator$OfPrimitive result((jobject) NULL);
-
-      if (!parseArgs(args, ""))
-      {
-        OBJ_CALL(result = self->object.trySplit());
-        return self->parameters[2] != NULL ? wrapType(self->parameters[2], result.this$) : t_Spliterator$OfPrimitive::wrap_Object(result);
-      }
-
-      return callSuper(PY_TYPE(Spliterator$OfPrimitive), (PyObject *) self, "trySplit", args, 2);
-    }
-    static PyObject *t_Spliterator$OfPrimitive_get__parameters_(t_Spliterator$OfPrimitive *self, void *data)
-    {
-      return typeParameters(self->parameters, sizeof(self->parameters));
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "java/lang/System$Logger$Level.h"
-#include "java/lang/String.h"
-#include "java/lang/Class.h"
-#include "java/lang/System$Logger$Level.h"
-#include "JArray.h"
-
-namespace java {
-  namespace lang {
-
-    ::java::lang::Class *System$Logger$Level::class$ = NULL;
-    jmethodID *System$Logger$Level::mids$ = NULL;
-    bool System$Logger$Level::live$ = false;
-    System$Logger$Level *System$Logger$Level::ALL = NULL;
-    System$Logger$Level *System$Logger$Level::DEBUG$ = NULL;
-    System$Logger$Level *System$Logger$Level::ERROR$ = NULL;
-    System$Logger$Level *System$Logger$Level::INFO = NULL;
-    System$Logger$Level *System$Logger$Level::OFF = NULL;
-    System$Logger$Level *System$Logger$Level::TRACE = NULL;
-    System$Logger$Level *System$Logger$Level::WARNING = NULL;
-
-    jclass System$Logger$Level::initializeClass(bool getOnly)
-    {
-      if (getOnly)
-        return (jclass) (live$ ? class$->this$ : NULL);
-      if (class$ == NULL)
-      {
-        jclass cls = (jclass) env->findClass("java/lang/System$Logger$Level");
-
-        mids$ = new jmethodID[max_mid];
-        mids$[mid_getName_3cffd47377eca18a] = env->getMethodID(cls, "getName", "()Ljava/lang/String;");
-        mids$[mid_getSeverity_412668abc8d889e9] = env->getMethodID(cls, "getSeverity", "()I");
-        mids$[mid_valueOf_0df800252628b85f] = env->getStaticMethodID(cls, "valueOf", "(Ljava/lang/String;)Ljava/lang/System$Logger$Level;");
-        mids$[mid_values_de06acb541c2af58] = env->getStaticMethodID(cls, "values", "()[Ljava/lang/System$Logger$Level;");
-
-        class$ = new ::java::lang::Class(cls);
-        cls = (jclass) class$->this$;
-
-        ALL = new System$Logger$Level(env->getStaticObjectField(cls, "ALL", "Ljava/lang/System$Logger$Level;"));
-        DEBUG$ = new System$Logger$Level(env->getStaticObjectField(cls, "DEBUG", "Ljava/lang/System$Logger$Level;"));
-        ERROR$ = new System$Logger$Level(env->getStaticObjectField(cls, "ERROR", "Ljava/lang/System$Logger$Level;"));
-        INFO = new System$Logger$Level(env->getStaticObjectField(cls, "INFO", "Ljava/lang/System$Logger$Level;"));
-        OFF = new System$Logger$Level(env->getStaticObjectField(cls, "OFF", "Ljava/lang/System$Logger$Level;"));
-        TRACE = new System$Logger$Level(env->getStaticObjectField(cls, "TRACE", "Ljava/lang/System$Logger$Level;"));
-        WARNING = new System$Logger$Level(env->getStaticObjectField(cls, "WARNING", "Ljava/lang/System$Logger$Level;"));
-        live$ = true;
-      }
-      return (jclass) class$->this$;
-    }
-
-    ::java::lang::String System$Logger$Level::getName() const
-    {
-      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getName_3cffd47377eca18a]));
-    }
-
-    jint System$Logger$Level::getSeverity() const
-    {
-      return env->callIntMethod(this$, mids$[mid_getSeverity_412668abc8d889e9]);
-    }
-
-    System$Logger$Level System$Logger$Level::valueOf(const ::java::lang::String & a0)
-    {
-      jclass cls = env->getClass(initializeClass);
-      return System$Logger$Level(env->callStaticObjectMethod(cls, mids$[mid_valueOf_0df800252628b85f], a0.this$));
-    }
-
-    JArray< System$Logger$Level > System$Logger$Level::values()
-    {
-      jclass cls = env->getClass(initializeClass);
-      return JArray< System$Logger$Level >(env->callStaticObjectMethod(cls, mids$[mid_values_de06acb541c2af58]));
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace java {
-  namespace lang {
-    static PyObject *t_System$Logger$Level_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_System$Logger$Level_instance_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_System$Logger$Level_of_(t_System$Logger$Level *self, PyObject *args);
-    static PyObject *t_System$Logger$Level_getName(t_System$Logger$Level *self);
-    static PyObject *t_System$Logger$Level_getSeverity(t_System$Logger$Level *self);
-    static PyObject *t_System$Logger$Level_valueOf(PyTypeObject *type, PyObject *args);
-    static PyObject *t_System$Logger$Level_values(PyTypeObject *type);
-    static PyObject *t_System$Logger$Level_get__name(t_System$Logger$Level *self, void *data);
-    static PyObject *t_System$Logger$Level_get__severity(t_System$Logger$Level *self, void *data);
-    static PyObject *t_System$Logger$Level_get__parameters_(t_System$Logger$Level *self, void *data);
-    static PyGetSetDef t_System$Logger$Level__fields_[] = {
-      DECLARE_GET_FIELD(t_System$Logger$Level, name),
-      DECLARE_GET_FIELD(t_System$Logger$Level, severity),
-      DECLARE_GET_FIELD(t_System$Logger$Level, parameters_),
-      { NULL, NULL, NULL, NULL, NULL }
-    };
-
-    static PyMethodDef t_System$Logger$Level__methods_[] = {
-      DECLARE_METHOD(t_System$Logger$Level, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_System$Logger$Level, instance_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_System$Logger$Level, of_, METH_VARARGS),
-      DECLARE_METHOD(t_System$Logger$Level, getName, METH_NOARGS),
-      DECLARE_METHOD(t_System$Logger$Level, getSeverity, METH_NOARGS),
-      DECLARE_METHOD(t_System$Logger$Level, valueOf, METH_VARARGS | METH_CLASS),
-      DECLARE_METHOD(t_System$Logger$Level, values, METH_NOARGS | METH_CLASS),
-      { NULL, NULL, 0, NULL }
-    };
-
-    static PyType_Slot PY_TYPE_SLOTS(System$Logger$Level)[] = {
-      { Py_tp_methods, t_System$Logger$Level__methods_ },
-      { Py_tp_init, (void *) abstract_init },
-      { Py_tp_getset, t_System$Logger$Level__fields_ },
-      { 0, NULL }
-    };
-
-    static PyType_Def *PY_TYPE_BASES(System$Logger$Level)[] = {
-      &PY_TYPE_DEF(::java::lang::Enum),
-      NULL
-    };
-
-    DEFINE_TYPE(System$Logger$Level, t_System$Logger$Level, System$Logger$Level);
-    PyObject *t_System$Logger$Level::wrap_Object(const System$Logger$Level& object, PyTypeObject *p0)
-    {
-      PyObject *obj = t_System$Logger$Level::wrap_Object(object);
-      if (obj != NULL && obj != Py_None)
-      {
-        t_System$Logger$Level *self = (t_System$Logger$Level *) obj;
-        self->parameters[0] = p0;
-      }
-      return obj;
-    }
-
-    PyObject *t_System$Logger$Level::wrap_jobject(const jobject& object, PyTypeObject *p0)
-    {
-      PyObject *obj = t_System$Logger$Level::wrap_jobject(object);
-      if (obj != NULL && obj != Py_None)
-      {
-        t_System$Logger$Level *self = (t_System$Logger$Level *) obj;
-        self->parameters[0] = p0;
-      }
-      return obj;
-    }
-
-    void t_System$Logger$Level::install(PyObject *module)
-    {
-      installType(&PY_TYPE(System$Logger$Level), &PY_TYPE_DEF(System$Logger$Level), module, "System$Logger$Level", 0);
-    }
-
-    void t_System$Logger$Level::initialize(PyObject *module)
-    {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "class_", make_descriptor(System$Logger$Level::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "wrapfn_", make_descriptor(t_System$Logger$Level::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "boxfn_", make_descriptor(boxObject));
-      env->getClass(System$Logger$Level::initializeClass);
-      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "ALL", make_descriptor(t_System$Logger$Level::wrap_Object(*System$Logger$Level::ALL)));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "DEBUG", make_descriptor(t_System$Logger$Level::wrap_Object(*System$Logger$Level::DEBUG$)));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "ERROR", make_descriptor(t_System$Logger$Level::wrap_Object(*System$Logger$Level::ERROR$)));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "INFO", make_descriptor(t_System$Logger$Level::wrap_Object(*System$Logger$Level::INFO)));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "OFF", make_descriptor(t_System$Logger$Level::wrap_Object(*System$Logger$Level::OFF)));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "TRACE", make_descriptor(t_System$Logger$Level::wrap_Object(*System$Logger$Level::TRACE)));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "WARNING", make_descriptor(t_System$Logger$Level::wrap_Object(*System$Logger$Level::WARNING)));
-    }
-
-    static PyObject *t_System$Logger$Level_cast_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!(arg = castCheck(arg, System$Logger$Level::initializeClass, 1)))
-        return NULL;
-      return t_System$Logger$Level::wrap_Object(System$Logger$Level(((t_System$Logger$Level *) arg)->object.this$));
-    }
-    static PyObject *t_System$Logger$Level_instance_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!castCheck(arg, System$Logger$Level::initializeClass, 0))
-        Py_RETURN_FALSE;
-      Py_RETURN_TRUE;
-    }
-
-    static PyObject *t_System$Logger$Level_of_(t_System$Logger$Level *self, PyObject *args)
-    {
-      if (!parseArg(args, "T", 1, &(self->parameters)))
-        Py_RETURN_SELF;
-      return PyErr_SetArgsError((PyObject *) self, "of_", args);
-    }
-
-    static PyObject *t_System$Logger$Level_getName(t_System$Logger$Level *self)
-    {
-      ::java::lang::String result((jobject) NULL);
-      OBJ_CALL(result = self->object.getName());
-      return j2p(result);
-    }
-
-    static PyObject *t_System$Logger$Level_getSeverity(t_System$Logger$Level *self)
-    {
-      jint result;
-      OBJ_CALL(result = self->object.getSeverity());
-      return PyLong_FromLong((long) result);
-    }
-
-    static PyObject *t_System$Logger$Level_valueOf(PyTypeObject *type, PyObject *args)
-    {
-      ::java::lang::String a0((jobject) NULL);
-      System$Logger$Level result((jobject) NULL);
-
-      if (!parseArgs(args, "s", &a0))
-      {
-        OBJ_CALL(result = ::java::lang::System$Logger$Level::valueOf(a0));
-        return t_System$Logger$Level::wrap_Object(result);
-      }
-
-      return callSuper(type, "valueOf", args, 2);
-    }
-
-    static PyObject *t_System$Logger$Level_values(PyTypeObject *type)
-    {
-      JArray< System$Logger$Level > result((jobject) NULL);
-      OBJ_CALL(result = ::java::lang::System$Logger$Level::values());
-      return JArray<jobject>(result.this$).wrap(t_System$Logger$Level::wrap_jobject);
-    }
-    static PyObject *t_System$Logger$Level_get__parameters_(t_System$Logger$Level *self, void *data)
-    {
-      return typeParameters(self->parameters, sizeof(self->parameters));
-    }
-
-    static PyObject *t_System$Logger$Level_get__name(t_System$Logger$Level *self, void *data)
+    static PyObject *t_ObjectStreamClass_get__name(t_ObjectStreamClass *self, void *data)
     {
       ::java::lang::String value((jobject) NULL);
       OBJ_CALL(value = self->object.getName());
       return j2p(value);
     }
 
-    static PyObject *t_System$Logger$Level_get__severity(t_System$Logger$Level *self, void *data)
+    static PyObject *t_ObjectStreamClass_get__serialVersionUID(t_ObjectStreamClass *self, void *data)
     {
-      jint value;
-      OBJ_CALL(value = self->object.getSeverity());
-      return PyLong_FromLong((long) value);
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "java/text/CharacterIterator.h"
-#include "java/lang/Class.h"
-#include "java/lang/Object.h"
-#include "JArray.h"
-
-namespace java {
-  namespace text {
-
-    ::java::lang::Class *CharacterIterator::class$ = NULL;
-    jmethodID *CharacterIterator::mids$ = NULL;
-    bool CharacterIterator::live$ = false;
-    jchar CharacterIterator::DONE = (jchar) 0;
-
-    jclass CharacterIterator::initializeClass(bool getOnly)
-    {
-      if (getOnly)
-        return (jclass) (live$ ? class$->this$ : NULL);
-      if (class$ == NULL)
-      {
-        jclass cls = (jclass) env->findClass("java/text/CharacterIterator");
-
-        mids$ = new jmethodID[max_mid];
-        mids$[mid_clone_e661fe3ba2fafb22] = env->getMethodID(cls, "clone", "()Ljava/lang/Object;");
-        mids$[mid_current_d156d1ce330f6993] = env->getMethodID(cls, "current", "()C");
-        mids$[mid_first_d156d1ce330f6993] = env->getMethodID(cls, "first", "()C");
-        mids$[mid_getBeginIndex_412668abc8d889e9] = env->getMethodID(cls, "getBeginIndex", "()I");
-        mids$[mid_getEndIndex_412668abc8d889e9] = env->getMethodID(cls, "getEndIndex", "()I");
-        mids$[mid_getIndex_412668abc8d889e9] = env->getMethodID(cls, "getIndex", "()I");
-        mids$[mid_last_d156d1ce330f6993] = env->getMethodID(cls, "last", "()C");
-        mids$[mid_next_d156d1ce330f6993] = env->getMethodID(cls, "next", "()C");
-        mids$[mid_previous_d156d1ce330f6993] = env->getMethodID(cls, "previous", "()C");
-        mids$[mid_setIndex_4affd00329d5d4cf] = env->getMethodID(cls, "setIndex", "(I)C");
-
-        class$ = new ::java::lang::Class(cls);
-        cls = (jclass) class$->this$;
-
-        DONE = env->getStaticCharField(cls, "DONE");
-        live$ = true;
-      }
-      return (jclass) class$->this$;
-    }
-
-    ::java::lang::Object CharacterIterator::clone() const
-    {
-      return ::java::lang::Object(env->callObjectMethod(this$, mids$[mid_clone_e661fe3ba2fafb22]));
-    }
-
-    jchar CharacterIterator::current() const
-    {
-      return env->callCharMethod(this$, mids$[mid_current_d156d1ce330f6993]);
-    }
-
-    jchar CharacterIterator::first() const
-    {
-      return env->callCharMethod(this$, mids$[mid_first_d156d1ce330f6993]);
-    }
-
-    jint CharacterIterator::getBeginIndex() const
-    {
-      return env->callIntMethod(this$, mids$[mid_getBeginIndex_412668abc8d889e9]);
-    }
-
-    jint CharacterIterator::getEndIndex() const
-    {
-      return env->callIntMethod(this$, mids$[mid_getEndIndex_412668abc8d889e9]);
-    }
-
-    jint CharacterIterator::getIndex() const
-    {
-      return env->callIntMethod(this$, mids$[mid_getIndex_412668abc8d889e9]);
-    }
-
-    jchar CharacterIterator::last() const
-    {
-      return env->callCharMethod(this$, mids$[mid_last_d156d1ce330f6993]);
-    }
-
-    jchar CharacterIterator::next() const
-    {
-      return env->callCharMethod(this$, mids$[mid_next_d156d1ce330f6993]);
-    }
-
-    jchar CharacterIterator::previous() const
-    {
-      return env->callCharMethod(this$, mids$[mid_previous_d156d1ce330f6993]);
-    }
-
-    jchar CharacterIterator::setIndex(jint a0) const
-    {
-      return env->callCharMethod(this$, mids$[mid_setIndex_4affd00329d5d4cf], a0);
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace java {
-  namespace text {
-    static PyObject *t_CharacterIterator_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_CharacterIterator_instance_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_CharacterIterator_clone(t_CharacterIterator *self);
-    static PyObject *t_CharacterIterator_current(t_CharacterIterator *self);
-    static PyObject *t_CharacterIterator_first(t_CharacterIterator *self);
-    static PyObject *t_CharacterIterator_getBeginIndex(t_CharacterIterator *self);
-    static PyObject *t_CharacterIterator_getEndIndex(t_CharacterIterator *self);
-    static PyObject *t_CharacterIterator_getIndex(t_CharacterIterator *self);
-    static PyObject *t_CharacterIterator_last(t_CharacterIterator *self);
-    static PyObject *t_CharacterIterator_next(t_CharacterIterator *self);
-    static PyObject *t_CharacterIterator_previous(t_CharacterIterator *self);
-    static PyObject *t_CharacterIterator_setIndex(t_CharacterIterator *self, PyObject *arg);
-    static PyObject *t_CharacterIterator_get__beginIndex(t_CharacterIterator *self, void *data);
-    static PyObject *t_CharacterIterator_get__endIndex(t_CharacterIterator *self, void *data);
-    static PyObject *t_CharacterIterator_get__index(t_CharacterIterator *self, void *data);
-    static int t_CharacterIterator_set__index(t_CharacterIterator *self, PyObject *arg, void *data);
-    static PyGetSetDef t_CharacterIterator__fields_[] = {
-      DECLARE_GET_FIELD(t_CharacterIterator, beginIndex),
-      DECLARE_GET_FIELD(t_CharacterIterator, endIndex),
-      DECLARE_GETSET_FIELD(t_CharacterIterator, index),
-      { NULL, NULL, NULL, NULL, NULL }
-    };
-
-    static PyMethodDef t_CharacterIterator__methods_[] = {
-      DECLARE_METHOD(t_CharacterIterator, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_CharacterIterator, instance_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_CharacterIterator, clone, METH_NOARGS),
-      DECLARE_METHOD(t_CharacterIterator, current, METH_NOARGS),
-      DECLARE_METHOD(t_CharacterIterator, first, METH_NOARGS),
-      DECLARE_METHOD(t_CharacterIterator, getBeginIndex, METH_NOARGS),
-      DECLARE_METHOD(t_CharacterIterator, getEndIndex, METH_NOARGS),
-      DECLARE_METHOD(t_CharacterIterator, getIndex, METH_NOARGS),
-      DECLARE_METHOD(t_CharacterIterator, last, METH_NOARGS),
-      DECLARE_METHOD(t_CharacterIterator, next, METH_NOARGS),
-      DECLARE_METHOD(t_CharacterIterator, previous, METH_NOARGS),
-      DECLARE_METHOD(t_CharacterIterator, setIndex, METH_O),
-      { NULL, NULL, 0, NULL }
-    };
-
-    static PyType_Slot PY_TYPE_SLOTS(CharacterIterator)[] = {
-      { Py_tp_methods, t_CharacterIterator__methods_ },
-      { Py_tp_init, (void *) abstract_init },
-      { Py_tp_getset, t_CharacterIterator__fields_ },
-      { 0, NULL }
-    };
-
-    static PyType_Def *PY_TYPE_BASES(CharacterIterator)[] = {
-      &PY_TYPE_DEF(::java::lang::Cloneable),
-      NULL
-    };
-
-    DEFINE_TYPE(CharacterIterator, t_CharacterIterator, CharacterIterator);
-
-    void t_CharacterIterator::install(PyObject *module)
-    {
-      installType(&PY_TYPE(CharacterIterator), &PY_TYPE_DEF(CharacterIterator), module, "CharacterIterator", 0);
-    }
-
-    void t_CharacterIterator::initialize(PyObject *module)
-    {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(CharacterIterator), "class_", make_descriptor(CharacterIterator::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(CharacterIterator), "wrapfn_", make_descriptor(t_CharacterIterator::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(CharacterIterator), "boxfn_", make_descriptor(boxObject));
-      env->getClass(CharacterIterator::initializeClass);
-      PyObject_SetAttrString((PyObject *) PY_TYPE(CharacterIterator), "DONE", make_descriptor(CharacterIterator::DONE));
-    }
-
-    static PyObject *t_CharacterIterator_cast_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!(arg = castCheck(arg, CharacterIterator::initializeClass, 1)))
-        return NULL;
-      return t_CharacterIterator::wrap_Object(CharacterIterator(((t_CharacterIterator *) arg)->object.this$));
-    }
-    static PyObject *t_CharacterIterator_instance_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!castCheck(arg, CharacterIterator::initializeClass, 0))
-        Py_RETURN_FALSE;
-      Py_RETURN_TRUE;
-    }
-
-    static PyObject *t_CharacterIterator_clone(t_CharacterIterator *self)
-    {
-      ::java::lang::Object result((jobject) NULL);
-      OBJ_CALL(result = self->object.clone());
-      return ::java::lang::t_Object::wrap_Object(result);
-    }
-
-    static PyObject *t_CharacterIterator_current(t_CharacterIterator *self)
-    {
-      jchar result;
-      OBJ_CALL(result = self->object.current());
-      return c2p(result);
-    }
-
-    static PyObject *t_CharacterIterator_first(t_CharacterIterator *self)
-    {
-      jchar result;
-      OBJ_CALL(result = self->object.first());
-      return c2p(result);
-    }
-
-    static PyObject *t_CharacterIterator_getBeginIndex(t_CharacterIterator *self)
-    {
-      jint result;
-      OBJ_CALL(result = self->object.getBeginIndex());
-      return PyLong_FromLong((long) result);
-    }
-
-    static PyObject *t_CharacterIterator_getEndIndex(t_CharacterIterator *self)
-    {
-      jint result;
-      OBJ_CALL(result = self->object.getEndIndex());
-      return PyLong_FromLong((long) result);
-    }
-
-    static PyObject *t_CharacterIterator_getIndex(t_CharacterIterator *self)
-    {
-      jint result;
-      OBJ_CALL(result = self->object.getIndex());
-      return PyLong_FromLong((long) result);
-    }
-
-    static PyObject *t_CharacterIterator_last(t_CharacterIterator *self)
-    {
-      jchar result;
-      OBJ_CALL(result = self->object.last());
-      return c2p(result);
-    }
-
-    static PyObject *t_CharacterIterator_next(t_CharacterIterator *self)
-    {
-      jchar result;
-      OBJ_CALL(result = self->object.next());
-      return c2p(result);
-    }
-
-    static PyObject *t_CharacterIterator_previous(t_CharacterIterator *self)
-    {
-      jchar result;
-      OBJ_CALL(result = self->object.previous());
-      return c2p(result);
-    }
-
-    static PyObject *t_CharacterIterator_setIndex(t_CharacterIterator *self, PyObject *arg)
-    {
-      jint a0;
-      jchar result;
-
-      if (!parseArg(arg, "I", &a0))
-      {
-        OBJ_CALL(result = self->object.setIndex(a0));
-        return c2p(result);
-      }
-
-      PyErr_SetArgsError((PyObject *) self, "setIndex", arg);
-      return NULL;
-    }
-
-    static PyObject *t_CharacterIterator_get__beginIndex(t_CharacterIterator *self, void *data)
-    {
-      jint value;
-      OBJ_CALL(value = self->object.getBeginIndex());
-      return PyLong_FromLong((long) value);
-    }
-
-    static PyObject *t_CharacterIterator_get__endIndex(t_CharacterIterator *self, void *data)
-    {
-      jint value;
-      OBJ_CALL(value = self->object.getEndIndex());
-      return PyLong_FromLong((long) value);
-    }
-
-    static PyObject *t_CharacterIterator_get__index(t_CharacterIterator *self, void *data)
-    {
-      jint value;
-      OBJ_CALL(value = self->object.getIndex());
-      return PyLong_FromLong((long) value);
-    }
-    static int t_CharacterIterator_set__index(t_CharacterIterator *self, PyObject *arg, void *data)
-    {
-      {
-        jint value;
-        if (!parseArg(arg, "I", &value))
-        {
-          INT_CALL(self->object.setIndex(value));
-          return 0;
-        }
-      }
-      PyErr_SetArgsError((PyObject *) self, "index", arg);
-      return -1;
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "java/text/Format$Field.h"
-#include "java/lang/Class.h"
-#include "JArray.h"
-
-namespace java {
-  namespace text {
-
-    ::java::lang::Class *Format$Field::class$ = NULL;
-    jmethodID *Format$Field::mids$ = NULL;
-    bool Format$Field::live$ = false;
-
-    jclass Format$Field::initializeClass(bool getOnly)
-    {
-      if (getOnly)
-        return (jclass) (live$ ? class$->this$ : NULL);
-      if (class$ == NULL)
-      {
-        jclass cls = (jclass) env->findClass("java/text/Format$Field");
-
-        class$ = new ::java::lang::Class(cls);
-        live$ = true;
-      }
-      return (jclass) class$->this$;
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace java {
-  namespace text {
-    static PyObject *t_Format$Field_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_Format$Field_instance_(PyTypeObject *type, PyObject *arg);
-
-    static PyMethodDef t_Format$Field__methods_[] = {
-      DECLARE_METHOD(t_Format$Field, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_Format$Field, instance_, METH_O | METH_CLASS),
-      { NULL, NULL, 0, NULL }
-    };
-
-    static PyType_Slot PY_TYPE_SLOTS(Format$Field)[] = {
-      { Py_tp_methods, t_Format$Field__methods_ },
-      { Py_tp_init, (void *) abstract_init },
-      { 0, NULL }
-    };
-
-    static PyType_Def *PY_TYPE_BASES(Format$Field)[] = {
-      &PY_TYPE_DEF(::java::text::AttributedCharacterIterator$Attribute),
-      NULL
-    };
-
-    DEFINE_TYPE(Format$Field, t_Format$Field, Format$Field);
-
-    void t_Format$Field::install(PyObject *module)
-    {
-      installType(&PY_TYPE(Format$Field), &PY_TYPE_DEF(Format$Field), module, "Format$Field", 0);
-    }
-
-    void t_Format$Field::initialize(PyObject *module)
-    {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(Format$Field), "class_", make_descriptor(Format$Field::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(Format$Field), "wrapfn_", make_descriptor(t_Format$Field::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(Format$Field), "boxfn_", make_descriptor(boxObject));
-    }
-
-    static PyObject *t_Format$Field_cast_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!(arg = castCheck(arg, Format$Field::initializeClass, 1)))
-        return NULL;
-      return t_Format$Field::wrap_Object(Format$Field(((t_Format$Field *) arg)->object.this$));
-    }
-    static PyObject *t_Format$Field_instance_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!castCheck(arg, Format$Field::initializeClass, 0))
-        Py_RETURN_FALSE;
-      Py_RETURN_TRUE;
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "java/security/BasicPermission.h"
-#include "java/lang/String.h"
-#include "java/lang/Class.h"
-#include "java/lang/Object.h"
-#include "JArray.h"
-
-namespace java {
-  namespace security {
-
-    ::java::lang::Class *BasicPermission::class$ = NULL;
-    jmethodID *BasicPermission::mids$ = NULL;
-    bool BasicPermission::live$ = false;
-
-    jclass BasicPermission::initializeClass(bool getOnly)
-    {
-      if (getOnly)
-        return (jclass) (live$ ? class$->this$ : NULL);
-      if (class$ == NULL)
-      {
-        jclass cls = (jclass) env->findClass("java/security/BasicPermission");
-
-        mids$ = new jmethodID[max_mid];
-        mids$[mid_init$_f5ffdf29129ef90a] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;)V");
-        mids$[mid_init$_630071dd94c59169] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
-        mids$[mid_equals_221e8e85cb385209] = env->getMethodID(cls, "equals", "(Ljava/lang/Object;)Z");
-        mids$[mid_getActions_3cffd47377eca18a] = env->getMethodID(cls, "getActions", "()Ljava/lang/String;");
-        mids$[mid_hashCode_412668abc8d889e9] = env->getMethodID(cls, "hashCode", "()I");
-        mids$[mid_implies_a8c459a5c587bd4f] = env->getMethodID(cls, "implies", "(Ljava/security/Permission;)Z");
-
-        class$ = new ::java::lang::Class(cls);
-        live$ = true;
-      }
-      return (jclass) class$->this$;
-    }
-
-    BasicPermission::BasicPermission(const ::java::lang::String & a0) : ::java::security::Permission(env->newObject(initializeClass, &mids$, mid_init$_f5ffdf29129ef90a, a0.this$)) {}
-
-    BasicPermission::BasicPermission(const ::java::lang::String & a0, const ::java::lang::String & a1) : ::java::security::Permission(env->newObject(initializeClass, &mids$, mid_init$_630071dd94c59169, a0.this$, a1.this$)) {}
-
-    jboolean BasicPermission::equals(const ::java::lang::Object & a0) const
-    {
-      return env->callBooleanMethod(this$, mids$[mid_equals_221e8e85cb385209], a0.this$);
-    }
-
-    ::java::lang::String BasicPermission::getActions() const
-    {
-      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getActions_3cffd47377eca18a]));
-    }
-
-    jint BasicPermission::hashCode() const
-    {
-      return env->callIntMethod(this$, mids$[mid_hashCode_412668abc8d889e9]);
-    }
-
-    jboolean BasicPermission::implies(const ::java::security::Permission & a0) const
-    {
-      return env->callBooleanMethod(this$, mids$[mid_implies_a8c459a5c587bd4f], a0.this$);
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace java {
-  namespace security {
-    static PyObject *t_BasicPermission_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_BasicPermission_instance_(PyTypeObject *type, PyObject *arg);
-    static int t_BasicPermission_init_(t_BasicPermission *self, PyObject *args, PyObject *kwds);
-    static PyObject *t_BasicPermission_equals(t_BasicPermission *self, PyObject *args);
-    static PyObject *t_BasicPermission_getActions(t_BasicPermission *self, PyObject *args);
-    static PyObject *t_BasicPermission_hashCode(t_BasicPermission *self, PyObject *args);
-    static PyObject *t_BasicPermission_implies(t_BasicPermission *self, PyObject *args);
-    static PyObject *t_BasicPermission_get__actions(t_BasicPermission *self, void *data);
-    static PyGetSetDef t_BasicPermission__fields_[] = {
-      DECLARE_GET_FIELD(t_BasicPermission, actions),
-      { NULL, NULL, NULL, NULL, NULL }
-    };
-
-    static PyMethodDef t_BasicPermission__methods_[] = {
-      DECLARE_METHOD(t_BasicPermission, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_BasicPermission, instance_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_BasicPermission, equals, METH_VARARGS),
-      DECLARE_METHOD(t_BasicPermission, getActions, METH_VARARGS),
-      DECLARE_METHOD(t_BasicPermission, hashCode, METH_VARARGS),
-      DECLARE_METHOD(t_BasicPermission, implies, METH_VARARGS),
-      { NULL, NULL, 0, NULL }
-    };
-
-    static PyType_Slot PY_TYPE_SLOTS(BasicPermission)[] = {
-      { Py_tp_methods, t_BasicPermission__methods_ },
-      { Py_tp_init, (void *) t_BasicPermission_init_ },
-      { Py_tp_getset, t_BasicPermission__fields_ },
-      { 0, NULL }
-    };
-
-    static PyType_Def *PY_TYPE_BASES(BasicPermission)[] = {
-      &PY_TYPE_DEF(::java::security::Permission),
-      NULL
-    };
-
-    DEFINE_TYPE(BasicPermission, t_BasicPermission, BasicPermission);
-
-    void t_BasicPermission::install(PyObject *module)
-    {
-      installType(&PY_TYPE(BasicPermission), &PY_TYPE_DEF(BasicPermission), module, "BasicPermission", 0);
-    }
-
-    void t_BasicPermission::initialize(PyObject *module)
-    {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(BasicPermission), "class_", make_descriptor(BasicPermission::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(BasicPermission), "wrapfn_", make_descriptor(t_BasicPermission::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(BasicPermission), "boxfn_", make_descriptor(boxObject));
-    }
-
-    static PyObject *t_BasicPermission_cast_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!(arg = castCheck(arg, BasicPermission::initializeClass, 1)))
-        return NULL;
-      return t_BasicPermission::wrap_Object(BasicPermission(((t_BasicPermission *) arg)->object.this$));
-    }
-    static PyObject *t_BasicPermission_instance_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!castCheck(arg, BasicPermission::initializeClass, 0))
-        Py_RETURN_FALSE;
-      Py_RETURN_TRUE;
-    }
-
-    static int t_BasicPermission_init_(t_BasicPermission *self, PyObject *args, PyObject *kwds)
-    {
-      switch (PyTuple_GET_SIZE(args)) {
-       case 1:
-        {
-          ::java::lang::String a0((jobject) NULL);
-          BasicPermission object((jobject) NULL);
-
-          if (!parseArgs(args, "s", &a0))
-          {
-            INT_CALL(object = BasicPermission(a0));
-            self->object = object;
-            break;
-          }
-        }
-        goto err;
-       case 2:
-        {
-          ::java::lang::String a0((jobject) NULL);
-          ::java::lang::String a1((jobject) NULL);
-          BasicPermission object((jobject) NULL);
-
-          if (!parseArgs(args, "ss", &a0, &a1))
-          {
-            INT_CALL(object = BasicPermission(a0, a1));
-            self->object = object;
-            break;
-          }
-        }
-       default:
-       err:
-        PyErr_SetArgsError((PyObject *) self, "__init__", args);
-        return -1;
-      }
-
-      return 0;
-    }
-
-    static PyObject *t_BasicPermission_equals(t_BasicPermission *self, PyObject *args)
-    {
-      ::java::lang::Object a0((jobject) NULL);
-      jboolean result;
-
-      if (!parseArgs(args, "o", &a0))
-      {
-        OBJ_CALL(result = self->object.equals(a0));
-        Py_RETURN_BOOL(result);
-      }
-
-      return callSuper(PY_TYPE(BasicPermission), (PyObject *) self, "equals", args, 2);
-    }
-
-    static PyObject *t_BasicPermission_getActions(t_BasicPermission *self, PyObject *args)
-    {
-      ::java::lang::String result((jobject) NULL);
-
-      if (!parseArgs(args, ""))
-      {
-        OBJ_CALL(result = self->object.getActions());
-        return j2p(result);
-      }
-
-      return callSuper(PY_TYPE(BasicPermission), (PyObject *) self, "getActions", args, 2);
-    }
-
-    static PyObject *t_BasicPermission_hashCode(t_BasicPermission *self, PyObject *args)
-    {
-      jint result;
-
-      if (!parseArgs(args, ""))
-      {
-        OBJ_CALL(result = self->object.hashCode());
-        return PyLong_FromLong((long) result);
-      }
-
-      return callSuper(PY_TYPE(BasicPermission), (PyObject *) self, "hashCode", args, 2);
-    }
-
-    static PyObject *t_BasicPermission_implies(t_BasicPermission *self, PyObject *args)
-    {
-      ::java::security::Permission a0((jobject) NULL);
-      jboolean result;
-
-      if (!parseArgs(args, "k", ::java::security::Permission::initializeClass, &a0))
-      {
-        OBJ_CALL(result = self->object.implies(a0));
-        Py_RETURN_BOOL(result);
-      }
-
-      return callSuper(PY_TYPE(BasicPermission), (PyObject *) self, "implies", args, 2);
-    }
-
-    static PyObject *t_BasicPermission_get__actions(t_BasicPermission *self, void *data)
-    {
-      ::java::lang::String value((jobject) NULL);
-      OBJ_CALL(value = self->object.getActions());
-      return j2p(value);
+      jlong value;
+      OBJ_CALL(value = self->object.getSerialVersionUID());
+      return PyLong_FromLongLong((PY_LONG_LONG) value);
     }
   }
 }
@@ -4671,11 +3934,11 @@ namespace java {
 #include "java/lang/Runnable.h"
 #include "java/lang/Thread$UncaughtExceptionHandler.h"
 #include "java/util/Map.h"
-#include "java/lang/StackTraceElement.h"
-#include "java/lang/Thread.h"
 #include "java/lang/InterruptedException.h"
-#include "java/lang/Class.h"
+#include "java/lang/StackTraceElement.h"
 #include "java/lang/Thread$State.h"
+#include "java/lang/Thread.h"
+#include "java/lang/Class.h"
 #include "java/lang/String.h"
 #include "java/lang/ClassLoader.h"
 #include "JArray.h"
@@ -4699,57 +3962,57 @@ namespace java {
         jclass cls = (jclass) env->findClass("java/lang/Thread");
 
         mids$ = new jmethodID[max_mid];
-        mids$[mid_init$_0640e6acf969ed28] = env->getMethodID(cls, "<init>", "()V");
-        mids$[mid_init$_f5ffdf29129ef90a] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;)V");
-        mids$[mid_init$_28b7ec64eba9f306] = env->getMethodID(cls, "<init>", "(Ljava/lang/Runnable;)V");
-        mids$[mid_init$_5f2f5f3d7421182b] = env->getMethodID(cls, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/String;)V");
-        mids$[mid_init$_38f58160c6e4b41d] = env->getMethodID(cls, "<init>", "(Ljava/lang/Runnable;Ljava/lang/String;)V");
-        mids$[mid_init$_15e963f75c03e9c6] = env->getMethodID(cls, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;)V");
-        mids$[mid_init$_643d9099f9bb7c38] = env->getMethodID(cls, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;)V");
-        mids$[mid_init$_324bd55ce542cf89] = env->getMethodID(cls, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;J)V");
-        mids$[mid_init$_f6117e8acc32a6e9] = env->getMethodID(cls, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;JZ)V");
-        mids$[mid_activeCount_412668abc8d889e9] = env->getStaticMethodID(cls, "activeCount", "()I");
-        mids$[mid_checkAccess_0640e6acf969ed28] = env->getMethodID(cls, "checkAccess", "()V");
-        mids$[mid_countStackFrames_412668abc8d889e9] = env->getMethodID(cls, "countStackFrames", "()I");
-        mids$[mid_currentThread_39a13f26f025dcaa] = env->getStaticMethodID(cls, "currentThread", "()Ljava/lang/Thread;");
-        mids$[mid_dumpStack_0640e6acf969ed28] = env->getStaticMethodID(cls, "dumpStack", "()V");
-        mids$[mid_enumerate_33318ecfe98749af] = env->getStaticMethodID(cls, "enumerate", "([Ljava/lang/Thread;)I");
-        mids$[mid_getAllStackTraces_1e62c2f73fbdd1c4] = env->getStaticMethodID(cls, "getAllStackTraces", "()Ljava/util/Map;");
-        mids$[mid_getContextClassLoader_822bf82dfc5992ba] = env->getMethodID(cls, "getContextClassLoader", "()Ljava/lang/ClassLoader;");
-        mids$[mid_getDefaultUncaughtExceptionHandler_97fdfc9062f9f501] = env->getStaticMethodID(cls, "getDefaultUncaughtExceptionHandler", "()Ljava/lang/Thread$UncaughtExceptionHandler;");
-        mids$[mid_getId_9e26256fb0d384a2] = env->getMethodID(cls, "getId", "()J");
-        mids$[mid_getName_3cffd47377eca18a] = env->getMethodID(cls, "getName", "()Ljava/lang/String;");
-        mids$[mid_getPriority_412668abc8d889e9] = env->getMethodID(cls, "getPriority", "()I");
-        mids$[mid_getStackTrace_8174c106a73a6243] = env->getMethodID(cls, "getStackTrace", "()[Ljava/lang/StackTraceElement;");
-        mids$[mid_getState_7ec835d9beacad15] = env->getMethodID(cls, "getState", "()Ljava/lang/Thread$State;");
-        mids$[mid_getThreadGroup_33ca5756bd56429e] = env->getMethodID(cls, "getThreadGroup", "()Ljava/lang/ThreadGroup;");
-        mids$[mid_getUncaughtExceptionHandler_97fdfc9062f9f501] = env->getMethodID(cls, "getUncaughtExceptionHandler", "()Ljava/lang/Thread$UncaughtExceptionHandler;");
-        mids$[mid_holdsLock_221e8e85cb385209] = env->getStaticMethodID(cls, "holdsLock", "(Ljava/lang/Object;)Z");
-        mids$[mid_interrupt_0640e6acf969ed28] = env->getMethodID(cls, "interrupt", "()V");
-        mids$[mid_interrupted_89b302893bdbe1f1] = env->getStaticMethodID(cls, "interrupted", "()Z");
-        mids$[mid_isAlive_89b302893bdbe1f1] = env->getMethodID(cls, "isAlive", "()Z");
-        mids$[mid_isDaemon_89b302893bdbe1f1] = env->getMethodID(cls, "isDaemon", "()Z");
-        mids$[mid_isInterrupted_89b302893bdbe1f1] = env->getMethodID(cls, "isInterrupted", "()Z");
-        mids$[mid_join_0640e6acf969ed28] = env->getMethodID(cls, "join", "()V");
-        mids$[mid_join_3cd6a6b354c6aa22] = env->getMethodID(cls, "join", "(J)V");
-        mids$[mid_join_0bf85841a094cb2e] = env->getMethodID(cls, "join", "(JI)V");
-        mids$[mid_onSpinWait_0640e6acf969ed28] = env->getStaticMethodID(cls, "onSpinWait", "()V");
-        mids$[mid_resume_0640e6acf969ed28] = env->getMethodID(cls, "resume", "()V");
-        mids$[mid_run_0640e6acf969ed28] = env->getMethodID(cls, "run", "()V");
-        mids$[mid_setContextClassLoader_3cf05a86101dd452] = env->getMethodID(cls, "setContextClassLoader", "(Ljava/lang/ClassLoader;)V");
-        mids$[mid_setDaemon_ed2afdb8506b9742] = env->getMethodID(cls, "setDaemon", "(Z)V");
-        mids$[mid_setDefaultUncaughtExceptionHandler_fb240d20456c6da7] = env->getStaticMethodID(cls, "setDefaultUncaughtExceptionHandler", "(Ljava/lang/Thread$UncaughtExceptionHandler;)V");
-        mids$[mid_setName_f5ffdf29129ef90a] = env->getMethodID(cls, "setName", "(Ljava/lang/String;)V");
-        mids$[mid_setPriority_a3da1a935cb37f7b] = env->getMethodID(cls, "setPriority", "(I)V");
-        mids$[mid_setUncaughtExceptionHandler_fb240d20456c6da7] = env->getMethodID(cls, "setUncaughtExceptionHandler", "(Ljava/lang/Thread$UncaughtExceptionHandler;)V");
-        mids$[mid_sleep_3cd6a6b354c6aa22] = env->getStaticMethodID(cls, "sleep", "(J)V");
-        mids$[mid_sleep_0bf85841a094cb2e] = env->getStaticMethodID(cls, "sleep", "(JI)V");
-        mids$[mid_start_0640e6acf969ed28] = env->getMethodID(cls, "start", "()V");
-        mids$[mid_stop_0640e6acf969ed28] = env->getMethodID(cls, "stop", "()V");
-        mids$[mid_suspend_0640e6acf969ed28] = env->getMethodID(cls, "suspend", "()V");
-        mids$[mid_toString_3cffd47377eca18a] = env->getMethodID(cls, "toString", "()Ljava/lang/String;");
-        mids$[mid_yield_0640e6acf969ed28] = env->getStaticMethodID(cls, "yield", "()V");
-        mids$[mid_clone_e661fe3ba2fafb22] = env->getMethodID(cls, "clone", "()Ljava/lang/Object;");
+        mids$[mid_init$_a1fa5dae97ea5ed2] = env->getMethodID(cls, "<init>", "()V");
+        mids$[mid_init$_734b91ac30d5f9b4] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;)V");
+        mids$[mid_init$_5e38fe117cc20873] = env->getMethodID(cls, "<init>", "(Ljava/lang/Runnable;)V");
+        mids$[mid_init$_c0f56f14913e02e9] = env->getMethodID(cls, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/String;)V");
+        mids$[mid_init$_7ed972a788392058] = env->getMethodID(cls, "<init>", "(Ljava/lang/Runnable;Ljava/lang/String;)V");
+        mids$[mid_init$_96240008f388ac78] = env->getMethodID(cls, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;)V");
+        mids$[mid_init$_b9570bc7961950c4] = env->getMethodID(cls, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;)V");
+        mids$[mid_init$_7977844e3ab4abbb] = env->getMethodID(cls, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;J)V");
+        mids$[mid_init$_3f44ea8af58136d8] = env->getMethodID(cls, "<init>", "(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;JZ)V");
+        mids$[mid_activeCount_55546ef6a647f39b] = env->getStaticMethodID(cls, "activeCount", "()I");
+        mids$[mid_checkAccess_a1fa5dae97ea5ed2] = env->getMethodID(cls, "checkAccess", "()V");
+        mids$[mid_countStackFrames_55546ef6a647f39b] = env->getMethodID(cls, "countStackFrames", "()I");
+        mids$[mid_currentThread_2740fea5ba8b0c43] = env->getStaticMethodID(cls, "currentThread", "()Ljava/lang/Thread;");
+        mids$[mid_dumpStack_a1fa5dae97ea5ed2] = env->getStaticMethodID(cls, "dumpStack", "()V");
+        mids$[mid_enumerate_0e7ff9b56e206905] = env->getStaticMethodID(cls, "enumerate", "([Ljava/lang/Thread;)I");
+        mids$[mid_getAllStackTraces_810bed48fafb0b9a] = env->getStaticMethodID(cls, "getAllStackTraces", "()Ljava/util/Map;");
+        mids$[mid_getContextClassLoader_fb951be34fc77929] = env->getMethodID(cls, "getContextClassLoader", "()Ljava/lang/ClassLoader;");
+        mids$[mid_getDefaultUncaughtExceptionHandler_a89b963f21517a30] = env->getStaticMethodID(cls, "getDefaultUncaughtExceptionHandler", "()Ljava/lang/Thread$UncaughtExceptionHandler;");
+        mids$[mid_getId_6c0ce7e438e5ded4] = env->getMethodID(cls, "getId", "()J");
+        mids$[mid_getName_1c1fa1e935d6cdcf] = env->getMethodID(cls, "getName", "()Ljava/lang/String;");
+        mids$[mid_getPriority_55546ef6a647f39b] = env->getMethodID(cls, "getPriority", "()I");
+        mids$[mid_getStackTrace_17c6439d4c7f5646] = env->getMethodID(cls, "getStackTrace", "()[Ljava/lang/StackTraceElement;");
+        mids$[mid_getState_a3f378fa3bbd0de4] = env->getMethodID(cls, "getState", "()Ljava/lang/Thread$State;");
+        mids$[mid_getThreadGroup_4241f87211c845e3] = env->getMethodID(cls, "getThreadGroup", "()Ljava/lang/ThreadGroup;");
+        mids$[mid_getUncaughtExceptionHandler_a89b963f21517a30] = env->getMethodID(cls, "getUncaughtExceptionHandler", "()Ljava/lang/Thread$UncaughtExceptionHandler;");
+        mids$[mid_holdsLock_460c5e2d9d51c6cc] = env->getStaticMethodID(cls, "holdsLock", "(Ljava/lang/Object;)Z");
+        mids$[mid_interrupt_a1fa5dae97ea5ed2] = env->getMethodID(cls, "interrupt", "()V");
+        mids$[mid_interrupted_9ab94ac1dc23b105] = env->getStaticMethodID(cls, "interrupted", "()Z");
+        mids$[mid_isAlive_9ab94ac1dc23b105] = env->getMethodID(cls, "isAlive", "()Z");
+        mids$[mid_isDaemon_9ab94ac1dc23b105] = env->getMethodID(cls, "isDaemon", "()Z");
+        mids$[mid_isInterrupted_9ab94ac1dc23b105] = env->getMethodID(cls, "isInterrupted", "()Z");
+        mids$[mid_join_a1fa5dae97ea5ed2] = env->getMethodID(cls, "join", "()V");
+        mids$[mid_join_3d7dd2314a0dd456] = env->getMethodID(cls, "join", "(J)V");
+        mids$[mid_join_c89ec8817ad4d2c6] = env->getMethodID(cls, "join", "(JI)V");
+        mids$[mid_onSpinWait_a1fa5dae97ea5ed2] = env->getStaticMethodID(cls, "onSpinWait", "()V");
+        mids$[mid_resume_a1fa5dae97ea5ed2] = env->getMethodID(cls, "resume", "()V");
+        mids$[mid_run_a1fa5dae97ea5ed2] = env->getMethodID(cls, "run", "()V");
+        mids$[mid_setContextClassLoader_453dfedd86409b20] = env->getMethodID(cls, "setContextClassLoader", "(Ljava/lang/ClassLoader;)V");
+        mids$[mid_setDaemon_fcb96c98de6fad04] = env->getMethodID(cls, "setDaemon", "(Z)V");
+        mids$[mid_setDefaultUncaughtExceptionHandler_e3538aa684020dec] = env->getStaticMethodID(cls, "setDefaultUncaughtExceptionHandler", "(Ljava/lang/Thread$UncaughtExceptionHandler;)V");
+        mids$[mid_setName_734b91ac30d5f9b4] = env->getMethodID(cls, "setName", "(Ljava/lang/String;)V");
+        mids$[mid_setPriority_44ed599e93e8a30c] = env->getMethodID(cls, "setPriority", "(I)V");
+        mids$[mid_setUncaughtExceptionHandler_e3538aa684020dec] = env->getMethodID(cls, "setUncaughtExceptionHandler", "(Ljava/lang/Thread$UncaughtExceptionHandler;)V");
+        mids$[mid_sleep_3d7dd2314a0dd456] = env->getStaticMethodID(cls, "sleep", "(J)V");
+        mids$[mid_sleep_c89ec8817ad4d2c6] = env->getStaticMethodID(cls, "sleep", "(JI)V");
+        mids$[mid_start_a1fa5dae97ea5ed2] = env->getMethodID(cls, "start", "()V");
+        mids$[mid_stop_a1fa5dae97ea5ed2] = env->getMethodID(cls, "stop", "()V");
+        mids$[mid_suspend_a1fa5dae97ea5ed2] = env->getMethodID(cls, "suspend", "()V");
+        mids$[mid_toString_1c1fa1e935d6cdcf] = env->getMethodID(cls, "toString", "()Ljava/lang/String;");
+        mids$[mid_yield_a1fa5dae97ea5ed2] = env->getStaticMethodID(cls, "yield", "()V");
+        mids$[mid_clone_541690f9ee81d3ad] = env->getMethodID(cls, "clone", "()Ljava/lang/Object;");
 
         class$ = new ::java::lang::Class(cls);
         cls = (jclass) class$->this$;
@@ -4762,240 +4025,240 @@ namespace java {
       return (jclass) class$->this$;
     }
 
-    Thread::Thread() : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_0640e6acf969ed28)) {}
+    Thread::Thread() : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_a1fa5dae97ea5ed2)) {}
 
-    Thread::Thread(const ::java::lang::String & a0) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_f5ffdf29129ef90a, a0.this$)) {}
+    Thread::Thread(const ::java::lang::String & a0) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_734b91ac30d5f9b4, a0.this$)) {}
 
-    Thread::Thread(const ::java::lang::Runnable & a0) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_28b7ec64eba9f306, a0.this$)) {}
+    Thread::Thread(const ::java::lang::Runnable & a0) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_5e38fe117cc20873, a0.this$)) {}
 
-    Thread::Thread(const ::java::lang::ThreadGroup & a0, const ::java::lang::String & a1) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_5f2f5f3d7421182b, a0.this$, a1.this$)) {}
+    Thread::Thread(const ::java::lang::ThreadGroup & a0, const ::java::lang::String & a1) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_c0f56f14913e02e9, a0.this$, a1.this$)) {}
 
-    Thread::Thread(const ::java::lang::Runnable & a0, const ::java::lang::String & a1) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_38f58160c6e4b41d, a0.this$, a1.this$)) {}
+    Thread::Thread(const ::java::lang::Runnable & a0, const ::java::lang::String & a1) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_7ed972a788392058, a0.this$, a1.this$)) {}
 
-    Thread::Thread(const ::java::lang::ThreadGroup & a0, const ::java::lang::Runnable & a1) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_15e963f75c03e9c6, a0.this$, a1.this$)) {}
+    Thread::Thread(const ::java::lang::ThreadGroup & a0, const ::java::lang::Runnable & a1) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_96240008f388ac78, a0.this$, a1.this$)) {}
 
-    Thread::Thread(const ::java::lang::ThreadGroup & a0, const ::java::lang::Runnable & a1, const ::java::lang::String & a2) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_643d9099f9bb7c38, a0.this$, a1.this$, a2.this$)) {}
+    Thread::Thread(const ::java::lang::ThreadGroup & a0, const ::java::lang::Runnable & a1, const ::java::lang::String & a2) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_b9570bc7961950c4, a0.this$, a1.this$, a2.this$)) {}
 
-    Thread::Thread(const ::java::lang::ThreadGroup & a0, const ::java::lang::Runnable & a1, const ::java::lang::String & a2, jlong a3) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_324bd55ce542cf89, a0.this$, a1.this$, a2.this$, a3)) {}
+    Thread::Thread(const ::java::lang::ThreadGroup & a0, const ::java::lang::Runnable & a1, const ::java::lang::String & a2, jlong a3) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_7977844e3ab4abbb, a0.this$, a1.this$, a2.this$, a3)) {}
 
-    Thread::Thread(const ::java::lang::ThreadGroup & a0, const ::java::lang::Runnable & a1, const ::java::lang::String & a2, jlong a3, jboolean a4) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_f6117e8acc32a6e9, a0.this$, a1.this$, a2.this$, a3, a4)) {}
+    Thread::Thread(const ::java::lang::ThreadGroup & a0, const ::java::lang::Runnable & a1, const ::java::lang::String & a2, jlong a3, jboolean a4) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_3f44ea8af58136d8, a0.this$, a1.this$, a2.this$, a3, a4)) {}
 
     jint Thread::activeCount()
     {
       jclass cls = env->getClass(initializeClass);
-      return env->callStaticIntMethod(cls, mids$[mid_activeCount_412668abc8d889e9]);
+      return env->callStaticIntMethod(cls, mids$[mid_activeCount_55546ef6a647f39b]);
     }
 
     void Thread::checkAccess() const
     {
-      env->callVoidMethod(this$, mids$[mid_checkAccess_0640e6acf969ed28]);
+      env->callVoidMethod(this$, mids$[mid_checkAccess_a1fa5dae97ea5ed2]);
     }
 
     jint Thread::countStackFrames() const
     {
-      return env->callIntMethod(this$, mids$[mid_countStackFrames_412668abc8d889e9]);
+      return env->callIntMethod(this$, mids$[mid_countStackFrames_55546ef6a647f39b]);
     }
 
     Thread Thread::currentThread()
     {
       jclass cls = env->getClass(initializeClass);
-      return Thread(env->callStaticObjectMethod(cls, mids$[mid_currentThread_39a13f26f025dcaa]));
+      return Thread(env->callStaticObjectMethod(cls, mids$[mid_currentThread_2740fea5ba8b0c43]));
     }
 
     void Thread::dumpStack()
     {
       jclass cls = env->getClass(initializeClass);
-      env->callStaticVoidMethod(cls, mids$[mid_dumpStack_0640e6acf969ed28]);
+      env->callStaticVoidMethod(cls, mids$[mid_dumpStack_a1fa5dae97ea5ed2]);
     }
 
     jint Thread::enumerate(const JArray< Thread > & a0)
     {
       jclass cls = env->getClass(initializeClass);
-      return env->callStaticIntMethod(cls, mids$[mid_enumerate_33318ecfe98749af], a0.this$);
+      return env->callStaticIntMethod(cls, mids$[mid_enumerate_0e7ff9b56e206905], a0.this$);
     }
 
     ::java::util::Map Thread::getAllStackTraces()
     {
       jclass cls = env->getClass(initializeClass);
-      return ::java::util::Map(env->callStaticObjectMethod(cls, mids$[mid_getAllStackTraces_1e62c2f73fbdd1c4]));
+      return ::java::util::Map(env->callStaticObjectMethod(cls, mids$[mid_getAllStackTraces_810bed48fafb0b9a]));
     }
 
     ::java::lang::ClassLoader Thread::getContextClassLoader() const
     {
-      return ::java::lang::ClassLoader(env->callObjectMethod(this$, mids$[mid_getContextClassLoader_822bf82dfc5992ba]));
+      return ::java::lang::ClassLoader(env->callObjectMethod(this$, mids$[mid_getContextClassLoader_fb951be34fc77929]));
     }
 
     ::java::lang::Thread$UncaughtExceptionHandler Thread::getDefaultUncaughtExceptionHandler()
     {
       jclass cls = env->getClass(initializeClass);
-      return ::java::lang::Thread$UncaughtExceptionHandler(env->callStaticObjectMethod(cls, mids$[mid_getDefaultUncaughtExceptionHandler_97fdfc9062f9f501]));
+      return ::java::lang::Thread$UncaughtExceptionHandler(env->callStaticObjectMethod(cls, mids$[mid_getDefaultUncaughtExceptionHandler_a89b963f21517a30]));
     }
 
     jlong Thread::getId() const
     {
-      return env->callLongMethod(this$, mids$[mid_getId_9e26256fb0d384a2]);
+      return env->callLongMethod(this$, mids$[mid_getId_6c0ce7e438e5ded4]);
     }
 
     ::java::lang::String Thread::getName() const
     {
-      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getName_3cffd47377eca18a]));
+      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getName_1c1fa1e935d6cdcf]));
     }
 
     jint Thread::getPriority() const
     {
-      return env->callIntMethod(this$, mids$[mid_getPriority_412668abc8d889e9]);
+      return env->callIntMethod(this$, mids$[mid_getPriority_55546ef6a647f39b]);
     }
 
     JArray< ::java::lang::StackTraceElement > Thread::getStackTrace() const
     {
-      return JArray< ::java::lang::StackTraceElement >(env->callObjectMethod(this$, mids$[mid_getStackTrace_8174c106a73a6243]));
+      return JArray< ::java::lang::StackTraceElement >(env->callObjectMethod(this$, mids$[mid_getStackTrace_17c6439d4c7f5646]));
     }
 
     ::java::lang::Thread$State Thread::getState() const
     {
-      return ::java::lang::Thread$State(env->callObjectMethod(this$, mids$[mid_getState_7ec835d9beacad15]));
+      return ::java::lang::Thread$State(env->callObjectMethod(this$, mids$[mid_getState_a3f378fa3bbd0de4]));
     }
 
     ::java::lang::ThreadGroup Thread::getThreadGroup() const
     {
-      return ::java::lang::ThreadGroup(env->callObjectMethod(this$, mids$[mid_getThreadGroup_33ca5756bd56429e]));
+      return ::java::lang::ThreadGroup(env->callObjectMethod(this$, mids$[mid_getThreadGroup_4241f87211c845e3]));
     }
 
     ::java::lang::Thread$UncaughtExceptionHandler Thread::getUncaughtExceptionHandler() const
     {
-      return ::java::lang::Thread$UncaughtExceptionHandler(env->callObjectMethod(this$, mids$[mid_getUncaughtExceptionHandler_97fdfc9062f9f501]));
+      return ::java::lang::Thread$UncaughtExceptionHandler(env->callObjectMethod(this$, mids$[mid_getUncaughtExceptionHandler_a89b963f21517a30]));
     }
 
     jboolean Thread::holdsLock(const ::java::lang::Object & a0)
     {
       jclass cls = env->getClass(initializeClass);
-      return env->callStaticBooleanMethod(cls, mids$[mid_holdsLock_221e8e85cb385209], a0.this$);
+      return env->callStaticBooleanMethod(cls, mids$[mid_holdsLock_460c5e2d9d51c6cc], a0.this$);
     }
 
     void Thread::interrupt() const
     {
-      env->callVoidMethod(this$, mids$[mid_interrupt_0640e6acf969ed28]);
+      env->callVoidMethod(this$, mids$[mid_interrupt_a1fa5dae97ea5ed2]);
     }
 
     jboolean Thread::interrupted()
     {
       jclass cls = env->getClass(initializeClass);
-      return env->callStaticBooleanMethod(cls, mids$[mid_interrupted_89b302893bdbe1f1]);
+      return env->callStaticBooleanMethod(cls, mids$[mid_interrupted_9ab94ac1dc23b105]);
     }
 
     jboolean Thread::isAlive() const
     {
-      return env->callBooleanMethod(this$, mids$[mid_isAlive_89b302893bdbe1f1]);
+      return env->callBooleanMethod(this$, mids$[mid_isAlive_9ab94ac1dc23b105]);
     }
 
     jboolean Thread::isDaemon() const
     {
-      return env->callBooleanMethod(this$, mids$[mid_isDaemon_89b302893bdbe1f1]);
+      return env->callBooleanMethod(this$, mids$[mid_isDaemon_9ab94ac1dc23b105]);
     }
 
     jboolean Thread::isInterrupted() const
     {
-      return env->callBooleanMethod(this$, mids$[mid_isInterrupted_89b302893bdbe1f1]);
+      return env->callBooleanMethod(this$, mids$[mid_isInterrupted_9ab94ac1dc23b105]);
     }
 
     void Thread::join() const
     {
-      env->callVoidMethod(this$, mids$[mid_join_0640e6acf969ed28]);
+      env->callVoidMethod(this$, mids$[mid_join_a1fa5dae97ea5ed2]);
     }
 
     void Thread::join(jlong a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_join_3cd6a6b354c6aa22], a0);
+      env->callVoidMethod(this$, mids$[mid_join_3d7dd2314a0dd456], a0);
     }
 
     void Thread::join(jlong a0, jint a1) const
     {
-      env->callVoidMethod(this$, mids$[mid_join_0bf85841a094cb2e], a0, a1);
+      env->callVoidMethod(this$, mids$[mid_join_c89ec8817ad4d2c6], a0, a1);
     }
 
     void Thread::onSpinWait()
     {
       jclass cls = env->getClass(initializeClass);
-      env->callStaticVoidMethod(cls, mids$[mid_onSpinWait_0640e6acf969ed28]);
+      env->callStaticVoidMethod(cls, mids$[mid_onSpinWait_a1fa5dae97ea5ed2]);
     }
 
     void Thread::resume() const
     {
-      env->callVoidMethod(this$, mids$[mid_resume_0640e6acf969ed28]);
+      env->callVoidMethod(this$, mids$[mid_resume_a1fa5dae97ea5ed2]);
     }
 
     void Thread::run() const
     {
-      env->callVoidMethod(this$, mids$[mid_run_0640e6acf969ed28]);
+      env->callVoidMethod(this$, mids$[mid_run_a1fa5dae97ea5ed2]);
     }
 
     void Thread::setContextClassLoader(const ::java::lang::ClassLoader & a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_setContextClassLoader_3cf05a86101dd452], a0.this$);
+      env->callVoidMethod(this$, mids$[mid_setContextClassLoader_453dfedd86409b20], a0.this$);
     }
 
     void Thread::setDaemon(jboolean a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_setDaemon_ed2afdb8506b9742], a0);
+      env->callVoidMethod(this$, mids$[mid_setDaemon_fcb96c98de6fad04], a0);
     }
 
     void Thread::setDefaultUncaughtExceptionHandler(const ::java::lang::Thread$UncaughtExceptionHandler & a0)
     {
       jclass cls = env->getClass(initializeClass);
-      env->callStaticVoidMethod(cls, mids$[mid_setDefaultUncaughtExceptionHandler_fb240d20456c6da7], a0.this$);
+      env->callStaticVoidMethod(cls, mids$[mid_setDefaultUncaughtExceptionHandler_e3538aa684020dec], a0.this$);
     }
 
     void Thread::setName(const ::java::lang::String & a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_setName_f5ffdf29129ef90a], a0.this$);
+      env->callVoidMethod(this$, mids$[mid_setName_734b91ac30d5f9b4], a0.this$);
     }
 
     void Thread::setPriority(jint a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_setPriority_a3da1a935cb37f7b], a0);
+      env->callVoidMethod(this$, mids$[mid_setPriority_44ed599e93e8a30c], a0);
     }
 
     void Thread::setUncaughtExceptionHandler(const ::java::lang::Thread$UncaughtExceptionHandler & a0) const
     {
-      env->callVoidMethod(this$, mids$[mid_setUncaughtExceptionHandler_fb240d20456c6da7], a0.this$);
+      env->callVoidMethod(this$, mids$[mid_setUncaughtExceptionHandler_e3538aa684020dec], a0.this$);
     }
 
     void Thread::sleep(jlong a0)
     {
       jclass cls = env->getClass(initializeClass);
-      env->callStaticVoidMethod(cls, mids$[mid_sleep_3cd6a6b354c6aa22], a0);
+      env->callStaticVoidMethod(cls, mids$[mid_sleep_3d7dd2314a0dd456], a0);
     }
 
     void Thread::sleep(jlong a0, jint a1)
     {
       jclass cls = env->getClass(initializeClass);
-      env->callStaticVoidMethod(cls, mids$[mid_sleep_0bf85841a094cb2e], a0, a1);
+      env->callStaticVoidMethod(cls, mids$[mid_sleep_c89ec8817ad4d2c6], a0, a1);
     }
 
     void Thread::start() const
     {
-      env->callVoidMethod(this$, mids$[mid_start_0640e6acf969ed28]);
+      env->callVoidMethod(this$, mids$[mid_start_a1fa5dae97ea5ed2]);
     }
 
     void Thread::stop() const
     {
-      env->callVoidMethod(this$, mids$[mid_stop_0640e6acf969ed28]);
+      env->callVoidMethod(this$, mids$[mid_stop_a1fa5dae97ea5ed2]);
     }
 
     void Thread::suspend() const
     {
-      env->callVoidMethod(this$, mids$[mid_suspend_0640e6acf969ed28]);
+      env->callVoidMethod(this$, mids$[mid_suspend_a1fa5dae97ea5ed2]);
     }
 
     ::java::lang::String Thread::toString() const
     {
-      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_toString_3cffd47377eca18a]));
+      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_toString_1c1fa1e935d6cdcf]));
     }
 
     void Thread::yield()
     {
       jclass cls = env->getClass(initializeClass);
-      env->callStaticVoidMethod(cls, mids$[mid_yield_0640e6acf969ed28]);
+      env->callStaticVoidMethod(cls, mids$[mid_yield_a1fa5dae97ea5ed2]);
     }
   }
 }
@@ -5838,6 +5101,840 @@ namespace java {
 }
 #include <jni.h>
 #include "JCCEnv.h"
+#include "java/util/Spliterator$OfPrimitive.h"
+#include "java/lang/Class.h"
+#include "java/util/Spliterator$OfPrimitive.h"
+#include "java/lang/Object.h"
+#include "JArray.h"
+
+namespace java {
+  namespace util {
+
+    ::java::lang::Class *Spliterator$OfPrimitive::class$ = NULL;
+    jmethodID *Spliterator$OfPrimitive::mids$ = NULL;
+    bool Spliterator$OfPrimitive::live$ = false;
+
+    jclass Spliterator$OfPrimitive::initializeClass(bool getOnly)
+    {
+      if (getOnly)
+        return (jclass) (live$ ? class$->this$ : NULL);
+      if (class$ == NULL)
+      {
+        jclass cls = (jclass) env->findClass("java/util/Spliterator$OfPrimitive");
+
+        mids$ = new jmethodID[max_mid];
+        mids$[mid_forEachRemaining_55f3c894852c27a3] = env->getMethodID(cls, "forEachRemaining", "(Ljava/lang/Object;)V");
+        mids$[mid_tryAdvance_460c5e2d9d51c6cc] = env->getMethodID(cls, "tryAdvance", "(Ljava/lang/Object;)Z");
+        mids$[mid_trySplit_22635de398cddab7] = env->getMethodID(cls, "trySplit", "()Ljava/util/Spliterator$OfPrimitive;");
+
+        class$ = new ::java::lang::Class(cls);
+        live$ = true;
+      }
+      return (jclass) class$->this$;
+    }
+
+    void Spliterator$OfPrimitive::forEachRemaining(const ::java::lang::Object & a0) const
+    {
+      env->callVoidMethod(this$, mids$[mid_forEachRemaining_55f3c894852c27a3], a0.this$);
+    }
+
+    jboolean Spliterator$OfPrimitive::tryAdvance(const ::java::lang::Object & a0) const
+    {
+      return env->callBooleanMethod(this$, mids$[mid_tryAdvance_460c5e2d9d51c6cc], a0.this$);
+    }
+
+    Spliterator$OfPrimitive Spliterator$OfPrimitive::trySplit() const
+    {
+      return Spliterator$OfPrimitive(env->callObjectMethod(this$, mids$[mid_trySplit_22635de398cddab7]));
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace java {
+  namespace util {
+    static PyObject *t_Spliterator$OfPrimitive_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_Spliterator$OfPrimitive_instance_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_Spliterator$OfPrimitive_of_(t_Spliterator$OfPrimitive *self, PyObject *args);
+    static PyObject *t_Spliterator$OfPrimitive_forEachRemaining(t_Spliterator$OfPrimitive *self, PyObject *args);
+    static PyObject *t_Spliterator$OfPrimitive_tryAdvance(t_Spliterator$OfPrimitive *self, PyObject *args);
+    static PyObject *t_Spliterator$OfPrimitive_trySplit(t_Spliterator$OfPrimitive *self, PyObject *args);
+    static PyObject *t_Spliterator$OfPrimitive_get__parameters_(t_Spliterator$OfPrimitive *self, void *data);
+    static PyGetSetDef t_Spliterator$OfPrimitive__fields_[] = {
+      DECLARE_GET_FIELD(t_Spliterator$OfPrimitive, parameters_),
+      { NULL, NULL, NULL, NULL, NULL }
+    };
+
+    static PyMethodDef t_Spliterator$OfPrimitive__methods_[] = {
+      DECLARE_METHOD(t_Spliterator$OfPrimitive, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_Spliterator$OfPrimitive, instance_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_Spliterator$OfPrimitive, of_, METH_VARARGS),
+      DECLARE_METHOD(t_Spliterator$OfPrimitive, forEachRemaining, METH_VARARGS),
+      DECLARE_METHOD(t_Spliterator$OfPrimitive, tryAdvance, METH_VARARGS),
+      DECLARE_METHOD(t_Spliterator$OfPrimitive, trySplit, METH_VARARGS),
+      { NULL, NULL, 0, NULL }
+    };
+
+    static PyType_Slot PY_TYPE_SLOTS(Spliterator$OfPrimitive)[] = {
+      { Py_tp_methods, t_Spliterator$OfPrimitive__methods_ },
+      { Py_tp_init, (void *) abstract_init },
+      { Py_tp_getset, t_Spliterator$OfPrimitive__fields_ },
+      { 0, NULL }
+    };
+
+    static PyType_Def *PY_TYPE_BASES(Spliterator$OfPrimitive)[] = {
+      &PY_TYPE_DEF(::java::util::Spliterator),
+      NULL
+    };
+
+    DEFINE_TYPE(Spliterator$OfPrimitive, t_Spliterator$OfPrimitive, Spliterator$OfPrimitive);
+    PyObject *t_Spliterator$OfPrimitive::wrap_Object(const Spliterator$OfPrimitive& object, PyTypeObject *p0, PyTypeObject *p1, PyTypeObject *p2)
+    {
+      PyObject *obj = t_Spliterator$OfPrimitive::wrap_Object(object);
+      if (obj != NULL && obj != Py_None)
+      {
+        t_Spliterator$OfPrimitive *self = (t_Spliterator$OfPrimitive *) obj;
+        self->parameters[0] = p0;
+        self->parameters[1] = p1;
+        self->parameters[2] = p2;
+      }
+      return obj;
+    }
+
+    PyObject *t_Spliterator$OfPrimitive::wrap_jobject(const jobject& object, PyTypeObject *p0, PyTypeObject *p1, PyTypeObject *p2)
+    {
+      PyObject *obj = t_Spliterator$OfPrimitive::wrap_jobject(object);
+      if (obj != NULL && obj != Py_None)
+      {
+        t_Spliterator$OfPrimitive *self = (t_Spliterator$OfPrimitive *) obj;
+        self->parameters[0] = p0;
+        self->parameters[1] = p1;
+        self->parameters[2] = p2;
+      }
+      return obj;
+    }
+
+    void t_Spliterator$OfPrimitive::install(PyObject *module)
+    {
+      installType(&PY_TYPE(Spliterator$OfPrimitive), &PY_TYPE_DEF(Spliterator$OfPrimitive), module, "Spliterator$OfPrimitive", 0);
+    }
+
+    void t_Spliterator$OfPrimitive::initialize(PyObject *module)
+    {
+      PyObject_SetAttrString((PyObject *) PY_TYPE(Spliterator$OfPrimitive), "class_", make_descriptor(Spliterator$OfPrimitive::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(Spliterator$OfPrimitive), "wrapfn_", make_descriptor(t_Spliterator$OfPrimitive::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(Spliterator$OfPrimitive), "boxfn_", make_descriptor(boxObject));
+    }
+
+    static PyObject *t_Spliterator$OfPrimitive_cast_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!(arg = castCheck(arg, Spliterator$OfPrimitive::initializeClass, 1)))
+        return NULL;
+      return t_Spliterator$OfPrimitive::wrap_Object(Spliterator$OfPrimitive(((t_Spliterator$OfPrimitive *) arg)->object.this$));
+    }
+    static PyObject *t_Spliterator$OfPrimitive_instance_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!castCheck(arg, Spliterator$OfPrimitive::initializeClass, 0))
+        Py_RETURN_FALSE;
+      Py_RETURN_TRUE;
+    }
+
+    static PyObject *t_Spliterator$OfPrimitive_of_(t_Spliterator$OfPrimitive *self, PyObject *args)
+    {
+      if (!parseArg(args, "T", 3, &(self->parameters)))
+        Py_RETURN_SELF;
+      return PyErr_SetArgsError((PyObject *) self, "of_", args);
+    }
+
+    static PyObject *t_Spliterator$OfPrimitive_forEachRemaining(t_Spliterator$OfPrimitive *self, PyObject *args)
+    {
+      ::java::lang::Object a0((jobject) NULL);
+
+      if (!parseArgs(args, "O", self->parameters[1], &a0))
+      {
+        OBJ_CALL(self->object.forEachRemaining(a0));
+        Py_RETURN_NONE;
+      }
+
+      return callSuper(PY_TYPE(Spliterator$OfPrimitive), (PyObject *) self, "forEachRemaining", args, 2);
+    }
+
+    static PyObject *t_Spliterator$OfPrimitive_tryAdvance(t_Spliterator$OfPrimitive *self, PyObject *args)
+    {
+      ::java::lang::Object a0((jobject) NULL);
+      jboolean result;
+
+      if (!parseArgs(args, "O", self->parameters[1], &a0))
+      {
+        OBJ_CALL(result = self->object.tryAdvance(a0));
+        Py_RETURN_BOOL(result);
+      }
+
+      return callSuper(PY_TYPE(Spliterator$OfPrimitive), (PyObject *) self, "tryAdvance", args, 2);
+    }
+
+    static PyObject *t_Spliterator$OfPrimitive_trySplit(t_Spliterator$OfPrimitive *self, PyObject *args)
+    {
+      Spliterator$OfPrimitive result((jobject) NULL);
+
+      if (!parseArgs(args, ""))
+      {
+        OBJ_CALL(result = self->object.trySplit());
+        return self->parameters[2] != NULL ? wrapType(self->parameters[2], result.this$) : t_Spliterator$OfPrimitive::wrap_Object(result);
+      }
+
+      return callSuper(PY_TYPE(Spliterator$OfPrimitive), (PyObject *) self, "trySplit", args, 2);
+    }
+    static PyObject *t_Spliterator$OfPrimitive_get__parameters_(t_Spliterator$OfPrimitive *self, void *data)
+    {
+      return typeParameters(self->parameters, sizeof(self->parameters));
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "java/lang/System$Logger$Level.h"
+#include "java/lang/System$Logger$Level.h"
+#include "java/lang/String.h"
+#include "java/lang/Class.h"
+#include "JArray.h"
+
+namespace java {
+  namespace lang {
+
+    ::java::lang::Class *System$Logger$Level::class$ = NULL;
+    jmethodID *System$Logger$Level::mids$ = NULL;
+    bool System$Logger$Level::live$ = false;
+    System$Logger$Level *System$Logger$Level::ALL = NULL;
+    System$Logger$Level *System$Logger$Level::DEBUG$ = NULL;
+    System$Logger$Level *System$Logger$Level::ERROR$ = NULL;
+    System$Logger$Level *System$Logger$Level::INFO = NULL;
+    System$Logger$Level *System$Logger$Level::OFF = NULL;
+    System$Logger$Level *System$Logger$Level::TRACE = NULL;
+    System$Logger$Level *System$Logger$Level::WARNING = NULL;
+
+    jclass System$Logger$Level::initializeClass(bool getOnly)
+    {
+      if (getOnly)
+        return (jclass) (live$ ? class$->this$ : NULL);
+      if (class$ == NULL)
+      {
+        jclass cls = (jclass) env->findClass("java/lang/System$Logger$Level");
+
+        mids$ = new jmethodID[max_mid];
+        mids$[mid_getName_1c1fa1e935d6cdcf] = env->getMethodID(cls, "getName", "()Ljava/lang/String;");
+        mids$[mid_getSeverity_55546ef6a647f39b] = env->getMethodID(cls, "getSeverity", "()I");
+        mids$[mid_valueOf_2f7e7c2d3ff0da17] = env->getStaticMethodID(cls, "valueOf", "(Ljava/lang/String;)Ljava/lang/System$Logger$Level;");
+        mids$[mid_values_bf7b9861e0839e00] = env->getStaticMethodID(cls, "values", "()[Ljava/lang/System$Logger$Level;");
+
+        class$ = new ::java::lang::Class(cls);
+        cls = (jclass) class$->this$;
+
+        ALL = new System$Logger$Level(env->getStaticObjectField(cls, "ALL", "Ljava/lang/System$Logger$Level;"));
+        DEBUG$ = new System$Logger$Level(env->getStaticObjectField(cls, "DEBUG", "Ljava/lang/System$Logger$Level;"));
+        ERROR$ = new System$Logger$Level(env->getStaticObjectField(cls, "ERROR", "Ljava/lang/System$Logger$Level;"));
+        INFO = new System$Logger$Level(env->getStaticObjectField(cls, "INFO", "Ljava/lang/System$Logger$Level;"));
+        OFF = new System$Logger$Level(env->getStaticObjectField(cls, "OFF", "Ljava/lang/System$Logger$Level;"));
+        TRACE = new System$Logger$Level(env->getStaticObjectField(cls, "TRACE", "Ljava/lang/System$Logger$Level;"));
+        WARNING = new System$Logger$Level(env->getStaticObjectField(cls, "WARNING", "Ljava/lang/System$Logger$Level;"));
+        live$ = true;
+      }
+      return (jclass) class$->this$;
+    }
+
+    ::java::lang::String System$Logger$Level::getName() const
+    {
+      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getName_1c1fa1e935d6cdcf]));
+    }
+
+    jint System$Logger$Level::getSeverity() const
+    {
+      return env->callIntMethod(this$, mids$[mid_getSeverity_55546ef6a647f39b]);
+    }
+
+    System$Logger$Level System$Logger$Level::valueOf(const ::java::lang::String & a0)
+    {
+      jclass cls = env->getClass(initializeClass);
+      return System$Logger$Level(env->callStaticObjectMethod(cls, mids$[mid_valueOf_2f7e7c2d3ff0da17], a0.this$));
+    }
+
+    JArray< System$Logger$Level > System$Logger$Level::values()
+    {
+      jclass cls = env->getClass(initializeClass);
+      return JArray< System$Logger$Level >(env->callStaticObjectMethod(cls, mids$[mid_values_bf7b9861e0839e00]));
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace java {
+  namespace lang {
+    static PyObject *t_System$Logger$Level_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_System$Logger$Level_instance_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_System$Logger$Level_of_(t_System$Logger$Level *self, PyObject *args);
+    static PyObject *t_System$Logger$Level_getName(t_System$Logger$Level *self);
+    static PyObject *t_System$Logger$Level_getSeverity(t_System$Logger$Level *self);
+    static PyObject *t_System$Logger$Level_valueOf(PyTypeObject *type, PyObject *args);
+    static PyObject *t_System$Logger$Level_values(PyTypeObject *type);
+    static PyObject *t_System$Logger$Level_get__name(t_System$Logger$Level *self, void *data);
+    static PyObject *t_System$Logger$Level_get__severity(t_System$Logger$Level *self, void *data);
+    static PyObject *t_System$Logger$Level_get__parameters_(t_System$Logger$Level *self, void *data);
+    static PyGetSetDef t_System$Logger$Level__fields_[] = {
+      DECLARE_GET_FIELD(t_System$Logger$Level, name),
+      DECLARE_GET_FIELD(t_System$Logger$Level, severity),
+      DECLARE_GET_FIELD(t_System$Logger$Level, parameters_),
+      { NULL, NULL, NULL, NULL, NULL }
+    };
+
+    static PyMethodDef t_System$Logger$Level__methods_[] = {
+      DECLARE_METHOD(t_System$Logger$Level, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_System$Logger$Level, instance_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_System$Logger$Level, of_, METH_VARARGS),
+      DECLARE_METHOD(t_System$Logger$Level, getName, METH_NOARGS),
+      DECLARE_METHOD(t_System$Logger$Level, getSeverity, METH_NOARGS),
+      DECLARE_METHOD(t_System$Logger$Level, valueOf, METH_VARARGS | METH_CLASS),
+      DECLARE_METHOD(t_System$Logger$Level, values, METH_NOARGS | METH_CLASS),
+      { NULL, NULL, 0, NULL }
+    };
+
+    static PyType_Slot PY_TYPE_SLOTS(System$Logger$Level)[] = {
+      { Py_tp_methods, t_System$Logger$Level__methods_ },
+      { Py_tp_init, (void *) abstract_init },
+      { Py_tp_getset, t_System$Logger$Level__fields_ },
+      { 0, NULL }
+    };
+
+    static PyType_Def *PY_TYPE_BASES(System$Logger$Level)[] = {
+      &PY_TYPE_DEF(::java::lang::Enum),
+      NULL
+    };
+
+    DEFINE_TYPE(System$Logger$Level, t_System$Logger$Level, System$Logger$Level);
+    PyObject *t_System$Logger$Level::wrap_Object(const System$Logger$Level& object, PyTypeObject *p0)
+    {
+      PyObject *obj = t_System$Logger$Level::wrap_Object(object);
+      if (obj != NULL && obj != Py_None)
+      {
+        t_System$Logger$Level *self = (t_System$Logger$Level *) obj;
+        self->parameters[0] = p0;
+      }
+      return obj;
+    }
+
+    PyObject *t_System$Logger$Level::wrap_jobject(const jobject& object, PyTypeObject *p0)
+    {
+      PyObject *obj = t_System$Logger$Level::wrap_jobject(object);
+      if (obj != NULL && obj != Py_None)
+      {
+        t_System$Logger$Level *self = (t_System$Logger$Level *) obj;
+        self->parameters[0] = p0;
+      }
+      return obj;
+    }
+
+    void t_System$Logger$Level::install(PyObject *module)
+    {
+      installType(&PY_TYPE(System$Logger$Level), &PY_TYPE_DEF(System$Logger$Level), module, "System$Logger$Level", 0);
+    }
+
+    void t_System$Logger$Level::initialize(PyObject *module)
+    {
+      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "class_", make_descriptor(System$Logger$Level::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "wrapfn_", make_descriptor(t_System$Logger$Level::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "boxfn_", make_descriptor(boxObject));
+      env->getClass(System$Logger$Level::initializeClass);
+      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "ALL", make_descriptor(t_System$Logger$Level::wrap_Object(*System$Logger$Level::ALL)));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "DEBUG", make_descriptor(t_System$Logger$Level::wrap_Object(*System$Logger$Level::DEBUG$)));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "ERROR", make_descriptor(t_System$Logger$Level::wrap_Object(*System$Logger$Level::ERROR$)));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "INFO", make_descriptor(t_System$Logger$Level::wrap_Object(*System$Logger$Level::INFO)));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "OFF", make_descriptor(t_System$Logger$Level::wrap_Object(*System$Logger$Level::OFF)));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "TRACE", make_descriptor(t_System$Logger$Level::wrap_Object(*System$Logger$Level::TRACE)));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(System$Logger$Level), "WARNING", make_descriptor(t_System$Logger$Level::wrap_Object(*System$Logger$Level::WARNING)));
+    }
+
+    static PyObject *t_System$Logger$Level_cast_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!(arg = castCheck(arg, System$Logger$Level::initializeClass, 1)))
+        return NULL;
+      return t_System$Logger$Level::wrap_Object(System$Logger$Level(((t_System$Logger$Level *) arg)->object.this$));
+    }
+    static PyObject *t_System$Logger$Level_instance_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!castCheck(arg, System$Logger$Level::initializeClass, 0))
+        Py_RETURN_FALSE;
+      Py_RETURN_TRUE;
+    }
+
+    static PyObject *t_System$Logger$Level_of_(t_System$Logger$Level *self, PyObject *args)
+    {
+      if (!parseArg(args, "T", 1, &(self->parameters)))
+        Py_RETURN_SELF;
+      return PyErr_SetArgsError((PyObject *) self, "of_", args);
+    }
+
+    static PyObject *t_System$Logger$Level_getName(t_System$Logger$Level *self)
+    {
+      ::java::lang::String result((jobject) NULL);
+      OBJ_CALL(result = self->object.getName());
+      return j2p(result);
+    }
+
+    static PyObject *t_System$Logger$Level_getSeverity(t_System$Logger$Level *self)
+    {
+      jint result;
+      OBJ_CALL(result = self->object.getSeverity());
+      return PyLong_FromLong((long) result);
+    }
+
+    static PyObject *t_System$Logger$Level_valueOf(PyTypeObject *type, PyObject *args)
+    {
+      ::java::lang::String a0((jobject) NULL);
+      System$Logger$Level result((jobject) NULL);
+
+      if (!parseArgs(args, "s", &a0))
+      {
+        OBJ_CALL(result = ::java::lang::System$Logger$Level::valueOf(a0));
+        return t_System$Logger$Level::wrap_Object(result);
+      }
+
+      return callSuper(type, "valueOf", args, 2);
+    }
+
+    static PyObject *t_System$Logger$Level_values(PyTypeObject *type)
+    {
+      JArray< System$Logger$Level > result((jobject) NULL);
+      OBJ_CALL(result = ::java::lang::System$Logger$Level::values());
+      return JArray<jobject>(result.this$).wrap(t_System$Logger$Level::wrap_jobject);
+    }
+    static PyObject *t_System$Logger$Level_get__parameters_(t_System$Logger$Level *self, void *data)
+    {
+      return typeParameters(self->parameters, sizeof(self->parameters));
+    }
+
+    static PyObject *t_System$Logger$Level_get__name(t_System$Logger$Level *self, void *data)
+    {
+      ::java::lang::String value((jobject) NULL);
+      OBJ_CALL(value = self->object.getName());
+      return j2p(value);
+    }
+
+    static PyObject *t_System$Logger$Level_get__severity(t_System$Logger$Level *self, void *data)
+    {
+      jint value;
+      OBJ_CALL(value = self->object.getSeverity());
+      return PyLong_FromLong((long) value);
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "java/util/InvalidPropertiesFormatException.h"
+#include "java/lang/String.h"
+#include "java/lang/Class.h"
+#include "java/lang/Throwable.h"
+#include "JArray.h"
+
+namespace java {
+  namespace util {
+
+    ::java::lang::Class *InvalidPropertiesFormatException::class$ = NULL;
+    jmethodID *InvalidPropertiesFormatException::mids$ = NULL;
+    bool InvalidPropertiesFormatException::live$ = false;
+
+    jclass InvalidPropertiesFormatException::initializeClass(bool getOnly)
+    {
+      if (getOnly)
+        return (jclass) (live$ ? class$->this$ : NULL);
+      if (class$ == NULL)
+      {
+        jclass cls = (jclass) env->findClass("java/util/InvalidPropertiesFormatException");
+
+        mids$ = new jmethodID[max_mid];
+        mids$[mid_init$_734b91ac30d5f9b4] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;)V");
+        mids$[mid_init$_c5d3549d4f245728] = env->getMethodID(cls, "<init>", "(Ljava/lang/Throwable;)V");
+
+        class$ = new ::java::lang::Class(cls);
+        live$ = true;
+      }
+      return (jclass) class$->this$;
+    }
+
+    InvalidPropertiesFormatException::InvalidPropertiesFormatException(const ::java::lang::String & a0) : ::java::io::IOException(env->newObject(initializeClass, &mids$, mid_init$_734b91ac30d5f9b4, a0.this$)) {}
+
+    InvalidPropertiesFormatException::InvalidPropertiesFormatException(const ::java::lang::Throwable & a0) : ::java::io::IOException(env->newObject(initializeClass, &mids$, mid_init$_c5d3549d4f245728, a0.this$)) {}
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace java {
+  namespace util {
+    static PyObject *t_InvalidPropertiesFormatException_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_InvalidPropertiesFormatException_instance_(PyTypeObject *type, PyObject *arg);
+    static int t_InvalidPropertiesFormatException_init_(t_InvalidPropertiesFormatException *self, PyObject *args, PyObject *kwds);
+
+    static PyMethodDef t_InvalidPropertiesFormatException__methods_[] = {
+      DECLARE_METHOD(t_InvalidPropertiesFormatException, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_InvalidPropertiesFormatException, instance_, METH_O | METH_CLASS),
+      { NULL, NULL, 0, NULL }
+    };
+
+    static PyType_Slot PY_TYPE_SLOTS(InvalidPropertiesFormatException)[] = {
+      { Py_tp_methods, t_InvalidPropertiesFormatException__methods_ },
+      { Py_tp_init, (void *) t_InvalidPropertiesFormatException_init_ },
+      { 0, NULL }
+    };
+
+    static PyType_Def *PY_TYPE_BASES(InvalidPropertiesFormatException)[] = {
+      &PY_TYPE_DEF(::java::io::IOException),
+      NULL
+    };
+
+    DEFINE_TYPE(InvalidPropertiesFormatException, t_InvalidPropertiesFormatException, InvalidPropertiesFormatException);
+
+    void t_InvalidPropertiesFormatException::install(PyObject *module)
+    {
+      installType(&PY_TYPE(InvalidPropertiesFormatException), &PY_TYPE_DEF(InvalidPropertiesFormatException), module, "InvalidPropertiesFormatException", 0);
+    }
+
+    void t_InvalidPropertiesFormatException::initialize(PyObject *module)
+    {
+      PyObject_SetAttrString((PyObject *) PY_TYPE(InvalidPropertiesFormatException), "class_", make_descriptor(InvalidPropertiesFormatException::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(InvalidPropertiesFormatException), "wrapfn_", make_descriptor(t_InvalidPropertiesFormatException::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(InvalidPropertiesFormatException), "boxfn_", make_descriptor(boxObject));
+    }
+
+    static PyObject *t_InvalidPropertiesFormatException_cast_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!(arg = castCheck(arg, InvalidPropertiesFormatException::initializeClass, 1)))
+        return NULL;
+      return t_InvalidPropertiesFormatException::wrap_Object(InvalidPropertiesFormatException(((t_InvalidPropertiesFormatException *) arg)->object.this$));
+    }
+    static PyObject *t_InvalidPropertiesFormatException_instance_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!castCheck(arg, InvalidPropertiesFormatException::initializeClass, 0))
+        Py_RETURN_FALSE;
+      Py_RETURN_TRUE;
+    }
+
+    static int t_InvalidPropertiesFormatException_init_(t_InvalidPropertiesFormatException *self, PyObject *args, PyObject *kwds)
+    {
+      switch (PyTuple_GET_SIZE(args)) {
+       case 1:
+        {
+          ::java::lang::String a0((jobject) NULL);
+          InvalidPropertiesFormatException object((jobject) NULL);
+
+          if (!parseArgs(args, "s", &a0))
+          {
+            INT_CALL(object = InvalidPropertiesFormatException(a0));
+            self->object = object;
+            break;
+          }
+        }
+        {
+          ::java::lang::Throwable a0((jobject) NULL);
+          InvalidPropertiesFormatException object((jobject) NULL);
+
+          if (!parseArgs(args, "k", ::java::lang::Throwable::initializeClass, &a0))
+          {
+            INT_CALL(object = InvalidPropertiesFormatException(a0));
+            self->object = object;
+            break;
+          }
+        }
+       default:
+        PyErr_SetArgsError((PyObject *) self, "__init__", args);
+        return -1;
+      }
+
+      return 0;
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
+#include "java/security/Permission.h"
+#include "java/io/Serializable.h"
+#include "java/security/Permission.h"
+#include "java/lang/SecurityException.h"
+#include "java/lang/Class.h"
+#include "java/lang/String.h"
+#include "JArray.h"
+
+namespace java {
+  namespace security {
+
+    ::java::lang::Class *Permission::class$ = NULL;
+    jmethodID *Permission::mids$ = NULL;
+    bool Permission::live$ = false;
+
+    jclass Permission::initializeClass(bool getOnly)
+    {
+      if (getOnly)
+        return (jclass) (live$ ? class$->this$ : NULL);
+      if (class$ == NULL)
+      {
+        jclass cls = (jclass) env->findClass("java/security/Permission");
+
+        mids$ = new jmethodID[max_mid];
+        mids$[mid_init$_734b91ac30d5f9b4] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;)V");
+        mids$[mid_checkGuard_55f3c894852c27a3] = env->getMethodID(cls, "checkGuard", "(Ljava/lang/Object;)V");
+        mids$[mid_equals_460c5e2d9d51c6cc] = env->getMethodID(cls, "equals", "(Ljava/lang/Object;)Z");
+        mids$[mid_getActions_1c1fa1e935d6cdcf] = env->getMethodID(cls, "getActions", "()Ljava/lang/String;");
+        mids$[mid_getName_1c1fa1e935d6cdcf] = env->getMethodID(cls, "getName", "()Ljava/lang/String;");
+        mids$[mid_hashCode_55546ef6a647f39b] = env->getMethodID(cls, "hashCode", "()I");
+        mids$[mid_implies_ca9e753196b1e6bc] = env->getMethodID(cls, "implies", "(Ljava/security/Permission;)Z");
+        mids$[mid_toString_1c1fa1e935d6cdcf] = env->getMethodID(cls, "toString", "()Ljava/lang/String;");
+
+        class$ = new ::java::lang::Class(cls);
+        live$ = true;
+      }
+      return (jclass) class$->this$;
+    }
+
+    Permission::Permission(const ::java::lang::String & a0) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_734b91ac30d5f9b4, a0.this$)) {}
+
+    void Permission::checkGuard(const ::java::lang::Object & a0) const
+    {
+      env->callVoidMethod(this$, mids$[mid_checkGuard_55f3c894852c27a3], a0.this$);
+    }
+
+    jboolean Permission::equals(const ::java::lang::Object & a0) const
+    {
+      return env->callBooleanMethod(this$, mids$[mid_equals_460c5e2d9d51c6cc], a0.this$);
+    }
+
+    ::java::lang::String Permission::getActions() const
+    {
+      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getActions_1c1fa1e935d6cdcf]));
+    }
+
+    ::java::lang::String Permission::getName() const
+    {
+      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getName_1c1fa1e935d6cdcf]));
+    }
+
+    jint Permission::hashCode() const
+    {
+      return env->callIntMethod(this$, mids$[mid_hashCode_55546ef6a647f39b]);
+    }
+
+    jboolean Permission::implies(const Permission & a0) const
+    {
+      return env->callBooleanMethod(this$, mids$[mid_implies_ca9e753196b1e6bc], a0.this$);
+    }
+
+    ::java::lang::String Permission::toString() const
+    {
+      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_toString_1c1fa1e935d6cdcf]));
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace java {
+  namespace security {
+    static PyObject *t_Permission_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_Permission_instance_(PyTypeObject *type, PyObject *arg);
+    static int t_Permission_init_(t_Permission *self, PyObject *args, PyObject *kwds);
+    static PyObject *t_Permission_checkGuard(t_Permission *self, PyObject *arg);
+    static PyObject *t_Permission_equals(t_Permission *self, PyObject *args);
+    static PyObject *t_Permission_getActions(t_Permission *self);
+    static PyObject *t_Permission_getName(t_Permission *self);
+    static PyObject *t_Permission_hashCode(t_Permission *self, PyObject *args);
+    static PyObject *t_Permission_implies(t_Permission *self, PyObject *arg);
+    static PyObject *t_Permission_toString(t_Permission *self, PyObject *args);
+    static PyObject *t_Permission_get__actions(t_Permission *self, void *data);
+    static PyObject *t_Permission_get__name(t_Permission *self, void *data);
+    static PyGetSetDef t_Permission__fields_[] = {
+      DECLARE_GET_FIELD(t_Permission, actions),
+      DECLARE_GET_FIELD(t_Permission, name),
+      { NULL, NULL, NULL, NULL, NULL }
+    };
+
+    static PyMethodDef t_Permission__methods_[] = {
+      DECLARE_METHOD(t_Permission, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_Permission, instance_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_Permission, checkGuard, METH_O),
+      DECLARE_METHOD(t_Permission, equals, METH_VARARGS),
+      DECLARE_METHOD(t_Permission, getActions, METH_NOARGS),
+      DECLARE_METHOD(t_Permission, getName, METH_NOARGS),
+      DECLARE_METHOD(t_Permission, hashCode, METH_VARARGS),
+      DECLARE_METHOD(t_Permission, implies, METH_O),
+      DECLARE_METHOD(t_Permission, toString, METH_VARARGS),
+      { NULL, NULL, 0, NULL }
+    };
+
+    static PyType_Slot PY_TYPE_SLOTS(Permission)[] = {
+      { Py_tp_methods, t_Permission__methods_ },
+      { Py_tp_init, (void *) t_Permission_init_ },
+      { Py_tp_getset, t_Permission__fields_ },
+      { 0, NULL }
+    };
+
+    static PyType_Def *PY_TYPE_BASES(Permission)[] = {
+      &PY_TYPE_DEF(::java::lang::Object),
+      NULL
+    };
+
+    DEFINE_TYPE(Permission, t_Permission, Permission);
+
+    void t_Permission::install(PyObject *module)
+    {
+      installType(&PY_TYPE(Permission), &PY_TYPE_DEF(Permission), module, "Permission", 0);
+    }
+
+    void t_Permission::initialize(PyObject *module)
+    {
+      PyObject_SetAttrString((PyObject *) PY_TYPE(Permission), "class_", make_descriptor(Permission::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(Permission), "wrapfn_", make_descriptor(t_Permission::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(Permission), "boxfn_", make_descriptor(boxObject));
+    }
+
+    static PyObject *t_Permission_cast_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!(arg = castCheck(arg, Permission::initializeClass, 1)))
+        return NULL;
+      return t_Permission::wrap_Object(Permission(((t_Permission *) arg)->object.this$));
+    }
+    static PyObject *t_Permission_instance_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!castCheck(arg, Permission::initializeClass, 0))
+        Py_RETURN_FALSE;
+      Py_RETURN_TRUE;
+    }
+
+    static int t_Permission_init_(t_Permission *self, PyObject *args, PyObject *kwds)
+    {
+      ::java::lang::String a0((jobject) NULL);
+      Permission object((jobject) NULL);
+
+      if (!parseArgs(args, "s", &a0))
+      {
+        INT_CALL(object = Permission(a0));
+        self->object = object;
+      }
+      else
+      {
+        PyErr_SetArgsError((PyObject *) self, "__init__", args);
+        return -1;
+      }
+
+      return 0;
+    }
+
+    static PyObject *t_Permission_checkGuard(t_Permission *self, PyObject *arg)
+    {
+      ::java::lang::Object a0((jobject) NULL);
+
+      if (!parseArg(arg, "o", &a0))
+      {
+        OBJ_CALL(self->object.checkGuard(a0));
+        Py_RETURN_NONE;
+      }
+
+      PyErr_SetArgsError((PyObject *) self, "checkGuard", arg);
+      return NULL;
+    }
+
+    static PyObject *t_Permission_equals(t_Permission *self, PyObject *args)
+    {
+      ::java::lang::Object a0((jobject) NULL);
+      jboolean result;
+
+      if (!parseArgs(args, "o", &a0))
+      {
+        OBJ_CALL(result = self->object.equals(a0));
+        Py_RETURN_BOOL(result);
+      }
+
+      return callSuper(PY_TYPE(Permission), (PyObject *) self, "equals", args, 2);
+    }
+
+    static PyObject *t_Permission_getActions(t_Permission *self)
+    {
+      ::java::lang::String result((jobject) NULL);
+      OBJ_CALL(result = self->object.getActions());
+      return j2p(result);
+    }
+
+    static PyObject *t_Permission_getName(t_Permission *self)
+    {
+      ::java::lang::String result((jobject) NULL);
+      OBJ_CALL(result = self->object.getName());
+      return j2p(result);
+    }
+
+    static PyObject *t_Permission_hashCode(t_Permission *self, PyObject *args)
+    {
+      jint result;
+
+      if (!parseArgs(args, ""))
+      {
+        OBJ_CALL(result = self->object.hashCode());
+        return PyLong_FromLong((long) result);
+      }
+
+      return callSuper(PY_TYPE(Permission), (PyObject *) self, "hashCode", args, 2);
+    }
+
+    static PyObject *t_Permission_implies(t_Permission *self, PyObject *arg)
+    {
+      Permission a0((jobject) NULL);
+      jboolean result;
+
+      if (!parseArg(arg, "k", Permission::initializeClass, &a0))
+      {
+        OBJ_CALL(result = self->object.implies(a0));
+        Py_RETURN_BOOL(result);
+      }
+
+      PyErr_SetArgsError((PyObject *) self, "implies", arg);
+      return NULL;
+    }
+
+    static PyObject *t_Permission_toString(t_Permission *self, PyObject *args)
+    {
+      ::java::lang::String result((jobject) NULL);
+
+      if (!parseArgs(args, ""))
+      {
+        OBJ_CALL(result = self->object.toString());
+        return j2p(result);
+      }
+
+      return callSuper(PY_TYPE(Permission), (PyObject *) self, "toString", args, 2);
+    }
+
+    static PyObject *t_Permission_get__actions(t_Permission *self, void *data)
+    {
+      ::java::lang::String value((jobject) NULL);
+      OBJ_CALL(value = self->object.getActions());
+      return j2p(value);
+    }
+
+    static PyObject *t_Permission_get__name(t_Permission *self, void *data)
+    {
+      ::java::lang::String value((jobject) NULL);
+      OBJ_CALL(value = self->object.getName());
+      return j2p(value);
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
 #include "java/io/ObjectInputFilter$FilterInfo.h"
 #include "java/lang/Class.h"
 #include "JArray.h"
@@ -5858,11 +5955,11 @@ namespace java {
         jclass cls = (jclass) env->findClass("java/io/ObjectInputFilter$FilterInfo");
 
         mids$ = new jmethodID[max_mid];
-        mids$[mid_arrayLength_9e26256fb0d384a2] = env->getMethodID(cls, "arrayLength", "()J");
-        mids$[mid_depth_9e26256fb0d384a2] = env->getMethodID(cls, "depth", "()J");
-        mids$[mid_references_9e26256fb0d384a2] = env->getMethodID(cls, "references", "()J");
-        mids$[mid_serialClass_d4b191ff8147475d] = env->getMethodID(cls, "serialClass", "()Ljava/lang/Class;");
-        mids$[mid_streamBytes_9e26256fb0d384a2] = env->getMethodID(cls, "streamBytes", "()J");
+        mids$[mid_arrayLength_6c0ce7e438e5ded4] = env->getMethodID(cls, "arrayLength", "()J");
+        mids$[mid_depth_6c0ce7e438e5ded4] = env->getMethodID(cls, "depth", "()J");
+        mids$[mid_references_6c0ce7e438e5ded4] = env->getMethodID(cls, "references", "()J");
+        mids$[mid_serialClass_1aeb0737a960d371] = env->getMethodID(cls, "serialClass", "()Ljava/lang/Class;");
+        mids$[mid_streamBytes_6c0ce7e438e5ded4] = env->getMethodID(cls, "streamBytes", "()J");
 
         class$ = new ::java::lang::Class(cls);
         live$ = true;
@@ -5872,27 +5969,27 @@ namespace java {
 
     jlong ObjectInputFilter$FilterInfo::arrayLength() const
     {
-      return env->callLongMethod(this$, mids$[mid_arrayLength_9e26256fb0d384a2]);
+      return env->callLongMethod(this$, mids$[mid_arrayLength_6c0ce7e438e5ded4]);
     }
 
     jlong ObjectInputFilter$FilterInfo::depth() const
     {
-      return env->callLongMethod(this$, mids$[mid_depth_9e26256fb0d384a2]);
+      return env->callLongMethod(this$, mids$[mid_depth_6c0ce7e438e5ded4]);
     }
 
     jlong ObjectInputFilter$FilterInfo::references() const
     {
-      return env->callLongMethod(this$, mids$[mid_references_9e26256fb0d384a2]);
+      return env->callLongMethod(this$, mids$[mid_references_6c0ce7e438e5ded4]);
     }
 
     ::java::lang::Class ObjectInputFilter$FilterInfo::serialClass() const
     {
-      return ::java::lang::Class(env->callObjectMethod(this$, mids$[mid_serialClass_d4b191ff8147475d]));
+      return ::java::lang::Class(env->callObjectMethod(this$, mids$[mid_serialClass_1aeb0737a960d371]));
     }
 
     jlong ObjectInputFilter$FilterInfo::streamBytes() const
     {
-      return env->callLongMethod(this$, mids$[mid_streamBytes_9e26256fb0d384a2]);
+      return env->callLongMethod(this$, mids$[mid_streamBytes_6c0ce7e438e5ded4]);
     }
   }
 }
@@ -5998,159 +6095,7 @@ namespace java {
 }
 #include <jni.h>
 #include "JCCEnv.h"
-#include "java/util/PrimitiveIterator.h"
-#include "java/lang/Class.h"
-#include "java/lang/Object.h"
-#include "JArray.h"
-
-namespace java {
-  namespace util {
-
-    ::java::lang::Class *PrimitiveIterator::class$ = NULL;
-    jmethodID *PrimitiveIterator::mids$ = NULL;
-    bool PrimitiveIterator::live$ = false;
-
-    jclass PrimitiveIterator::initializeClass(bool getOnly)
-    {
-      if (getOnly)
-        return (jclass) (live$ ? class$->this$ : NULL);
-      if (class$ == NULL)
-      {
-        jclass cls = (jclass) env->findClass("java/util/PrimitiveIterator");
-
-        mids$ = new jmethodID[max_mid];
-        mids$[mid_forEachRemaining_009757f2c0fd9090] = env->getMethodID(cls, "forEachRemaining", "(Ljava/lang/Object;)V");
-
-        class$ = new ::java::lang::Class(cls);
-        live$ = true;
-      }
-      return (jclass) class$->this$;
-    }
-
-    void PrimitiveIterator::forEachRemaining(const ::java::lang::Object & a0) const
-    {
-      env->callVoidMethod(this$, mids$[mid_forEachRemaining_009757f2c0fd9090], a0.this$);
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-#include "java/util/PrimitiveIterator$OfDouble.h"
-
-namespace java {
-  namespace util {
-    static PyObject *t_PrimitiveIterator_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_PrimitiveIterator_instance_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_PrimitiveIterator_of_(t_PrimitiveIterator *self, PyObject *args);
-    static PyObject *t_PrimitiveIterator_forEachRemaining(t_PrimitiveIterator *self, PyObject *args);
-    static PyObject *t_PrimitiveIterator_get__parameters_(t_PrimitiveIterator *self, void *data);
-    static PyGetSetDef t_PrimitiveIterator__fields_[] = {
-      DECLARE_GET_FIELD(t_PrimitiveIterator, parameters_),
-      { NULL, NULL, NULL, NULL, NULL }
-    };
-
-    static PyMethodDef t_PrimitiveIterator__methods_[] = {
-      DECLARE_METHOD(t_PrimitiveIterator, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_PrimitiveIterator, instance_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_PrimitiveIterator, of_, METH_VARARGS),
-      DECLARE_METHOD(t_PrimitiveIterator, forEachRemaining, METH_VARARGS),
-      { NULL, NULL, 0, NULL }
-    };
-
-    static PyType_Slot PY_TYPE_SLOTS(PrimitiveIterator)[] = {
-      { Py_tp_methods, t_PrimitiveIterator__methods_ },
-      { Py_tp_init, (void *) abstract_init },
-      { Py_tp_getset, t_PrimitiveIterator__fields_ },
-      { 0, NULL }
-    };
-
-    static PyType_Def *PY_TYPE_BASES(PrimitiveIterator)[] = {
-      &PY_TYPE_DEF(::java::util::Iterator),
-      NULL
-    };
-
-    DEFINE_TYPE(PrimitiveIterator, t_PrimitiveIterator, PrimitiveIterator);
-    PyObject *t_PrimitiveIterator::wrap_Object(const PrimitiveIterator& object, PyTypeObject *p0, PyTypeObject *p1)
-    {
-      PyObject *obj = t_PrimitiveIterator::wrap_Object(object);
-      if (obj != NULL && obj != Py_None)
-      {
-        t_PrimitiveIterator *self = (t_PrimitiveIterator *) obj;
-        self->parameters[0] = p0;
-        self->parameters[1] = p1;
-      }
-      return obj;
-    }
-
-    PyObject *t_PrimitiveIterator::wrap_jobject(const jobject& object, PyTypeObject *p0, PyTypeObject *p1)
-    {
-      PyObject *obj = t_PrimitiveIterator::wrap_jobject(object);
-      if (obj != NULL && obj != Py_None)
-      {
-        t_PrimitiveIterator *self = (t_PrimitiveIterator *) obj;
-        self->parameters[0] = p0;
-        self->parameters[1] = p1;
-      }
-      return obj;
-    }
-
-    void t_PrimitiveIterator::install(PyObject *module)
-    {
-      installType(&PY_TYPE(PrimitiveIterator), &PY_TYPE_DEF(PrimitiveIterator), module, "PrimitiveIterator", 0);
-      PyObject_SetAttrString((PyObject *) PY_TYPE(PrimitiveIterator), "OfDouble", make_descriptor(&PY_TYPE_DEF(PrimitiveIterator$OfDouble)));
-    }
-
-    void t_PrimitiveIterator::initialize(PyObject *module)
-    {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(PrimitiveIterator), "class_", make_descriptor(PrimitiveIterator::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(PrimitiveIterator), "wrapfn_", make_descriptor(t_PrimitiveIterator::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(PrimitiveIterator), "boxfn_", make_descriptor(boxObject));
-    }
-
-    static PyObject *t_PrimitiveIterator_cast_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!(arg = castCheck(arg, PrimitiveIterator::initializeClass, 1)))
-        return NULL;
-      return t_PrimitiveIterator::wrap_Object(PrimitiveIterator(((t_PrimitiveIterator *) arg)->object.this$));
-    }
-    static PyObject *t_PrimitiveIterator_instance_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!castCheck(arg, PrimitiveIterator::initializeClass, 0))
-        Py_RETURN_FALSE;
-      Py_RETURN_TRUE;
-    }
-
-    static PyObject *t_PrimitiveIterator_of_(t_PrimitiveIterator *self, PyObject *args)
-    {
-      if (!parseArg(args, "T", 2, &(self->parameters)))
-        Py_RETURN_SELF;
-      return PyErr_SetArgsError((PyObject *) self, "of_", args);
-    }
-
-    static PyObject *t_PrimitiveIterator_forEachRemaining(t_PrimitiveIterator *self, PyObject *args)
-    {
-      ::java::lang::Object a0((jobject) NULL);
-
-      if (!parseArgs(args, "O", self->parameters[1], &a0))
-      {
-        OBJ_CALL(self->object.forEachRemaining(a0));
-        Py_RETURN_NONE;
-      }
-
-      return callSuper(PY_TYPE(PrimitiveIterator), (PyObject *) self, "forEachRemaining", args, 2);
-    }
-    static PyObject *t_PrimitiveIterator_get__parameters_(t_PrimitiveIterator *self, void *data)
-    {
-      return typeParameters(self->parameters, sizeof(self->parameters));
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "java/io/ObjectInputFilter$Status.h"
-#include "java/io/ObjectInputFilter$Status.h"
+#include "java/io/SerializablePermission.h"
 #include "java/lang/String.h"
 #include "java/lang/Class.h"
 #include "JArray.h"
@@ -6158,47 +6103,31 @@ namespace java {
 namespace java {
   namespace io {
 
-    ::java::lang::Class *ObjectInputFilter$Status::class$ = NULL;
-    jmethodID *ObjectInputFilter$Status::mids$ = NULL;
-    bool ObjectInputFilter$Status::live$ = false;
-    ObjectInputFilter$Status *ObjectInputFilter$Status::ALLOWED = NULL;
-    ObjectInputFilter$Status *ObjectInputFilter$Status::REJECTED = NULL;
-    ObjectInputFilter$Status *ObjectInputFilter$Status::UNDECIDED = NULL;
+    ::java::lang::Class *SerializablePermission::class$ = NULL;
+    jmethodID *SerializablePermission::mids$ = NULL;
+    bool SerializablePermission::live$ = false;
 
-    jclass ObjectInputFilter$Status::initializeClass(bool getOnly)
+    jclass SerializablePermission::initializeClass(bool getOnly)
     {
       if (getOnly)
         return (jclass) (live$ ? class$->this$ : NULL);
       if (class$ == NULL)
       {
-        jclass cls = (jclass) env->findClass("java/io/ObjectInputFilter$Status");
+        jclass cls = (jclass) env->findClass("java/io/SerializablePermission");
 
         mids$ = new jmethodID[max_mid];
-        mids$[mid_valueOf_e8a6b88739241593] = env->getStaticMethodID(cls, "valueOf", "(Ljava/lang/String;)Ljava/io/ObjectInputFilter$Status;");
-        mids$[mid_values_69aa11d66d4db3e4] = env->getStaticMethodID(cls, "values", "()[Ljava/io/ObjectInputFilter$Status;");
+        mids$[mid_init$_734b91ac30d5f9b4] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;)V");
+        mids$[mid_init$_a627ad9c5959309d] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V");
 
         class$ = new ::java::lang::Class(cls);
-        cls = (jclass) class$->this$;
-
-        ALLOWED = new ObjectInputFilter$Status(env->getStaticObjectField(cls, "ALLOWED", "Ljava/io/ObjectInputFilter$Status;"));
-        REJECTED = new ObjectInputFilter$Status(env->getStaticObjectField(cls, "REJECTED", "Ljava/io/ObjectInputFilter$Status;"));
-        UNDECIDED = new ObjectInputFilter$Status(env->getStaticObjectField(cls, "UNDECIDED", "Ljava/io/ObjectInputFilter$Status;"));
         live$ = true;
       }
       return (jclass) class$->this$;
     }
 
-    ObjectInputFilter$Status ObjectInputFilter$Status::valueOf(const ::java::lang::String & a0)
-    {
-      jclass cls = env->getClass(initializeClass);
-      return ObjectInputFilter$Status(env->callStaticObjectMethod(cls, mids$[mid_valueOf_e8a6b88739241593], a0.this$));
-    }
+    SerializablePermission::SerializablePermission(const ::java::lang::String & a0) : ::java::security::BasicPermission(env->newObject(initializeClass, &mids$, mid_init$_734b91ac30d5f9b4, a0.this$)) {}
 
-    JArray< ObjectInputFilter$Status > ObjectInputFilter$Status::values()
-    {
-      jclass cls = env->getClass(initializeClass);
-      return JArray< ObjectInputFilter$Status >(env->callStaticObjectMethod(cls, mids$[mid_values_69aa11d66d4db3e4]));
-    }
+    SerializablePermission::SerializablePermission(const ::java::lang::String & a0, const ::java::lang::String & a1) : ::java::security::BasicPermission(env->newObject(initializeClass, &mids$, mid_init$_a627ad9c5959309d, a0.this$, a1.this$)) {}
   }
 }
 
@@ -6208,456 +6137,90 @@ namespace java {
 
 namespace java {
   namespace io {
-    static PyObject *t_ObjectInputFilter$Status_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_ObjectInputFilter$Status_instance_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_ObjectInputFilter$Status_of_(t_ObjectInputFilter$Status *self, PyObject *args);
-    static PyObject *t_ObjectInputFilter$Status_valueOf(PyTypeObject *type, PyObject *args);
-    static PyObject *t_ObjectInputFilter$Status_values(PyTypeObject *type);
-    static PyObject *t_ObjectInputFilter$Status_get__parameters_(t_ObjectInputFilter$Status *self, void *data);
-    static PyGetSetDef t_ObjectInputFilter$Status__fields_[] = {
-      DECLARE_GET_FIELD(t_ObjectInputFilter$Status, parameters_),
-      { NULL, NULL, NULL, NULL, NULL }
-    };
+    static PyObject *t_SerializablePermission_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_SerializablePermission_instance_(PyTypeObject *type, PyObject *arg);
+    static int t_SerializablePermission_init_(t_SerializablePermission *self, PyObject *args, PyObject *kwds);
 
-    static PyMethodDef t_ObjectInputFilter$Status__methods_[] = {
-      DECLARE_METHOD(t_ObjectInputFilter$Status, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_ObjectInputFilter$Status, instance_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_ObjectInputFilter$Status, of_, METH_VARARGS),
-      DECLARE_METHOD(t_ObjectInputFilter$Status, valueOf, METH_VARARGS | METH_CLASS),
-      DECLARE_METHOD(t_ObjectInputFilter$Status, values, METH_NOARGS | METH_CLASS),
+    static PyMethodDef t_SerializablePermission__methods_[] = {
+      DECLARE_METHOD(t_SerializablePermission, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_SerializablePermission, instance_, METH_O | METH_CLASS),
       { NULL, NULL, 0, NULL }
     };
 
-    static PyType_Slot PY_TYPE_SLOTS(ObjectInputFilter$Status)[] = {
-      { Py_tp_methods, t_ObjectInputFilter$Status__methods_ },
-      { Py_tp_init, (void *) abstract_init },
-      { Py_tp_getset, t_ObjectInputFilter$Status__fields_ },
+    static PyType_Slot PY_TYPE_SLOTS(SerializablePermission)[] = {
+      { Py_tp_methods, t_SerializablePermission__methods_ },
+      { Py_tp_init, (void *) t_SerializablePermission_init_ },
       { 0, NULL }
     };
 
-    static PyType_Def *PY_TYPE_BASES(ObjectInputFilter$Status)[] = {
-      &PY_TYPE_DEF(::java::lang::Enum),
+    static PyType_Def *PY_TYPE_BASES(SerializablePermission)[] = {
+      &PY_TYPE_DEF(::java::security::BasicPermission),
       NULL
     };
 
-    DEFINE_TYPE(ObjectInputFilter$Status, t_ObjectInputFilter$Status, ObjectInputFilter$Status);
-    PyObject *t_ObjectInputFilter$Status::wrap_Object(const ObjectInputFilter$Status& object, PyTypeObject *p0)
+    DEFINE_TYPE(SerializablePermission, t_SerializablePermission, SerializablePermission);
+
+    void t_SerializablePermission::install(PyObject *module)
     {
-      PyObject *obj = t_ObjectInputFilter$Status::wrap_Object(object);
-      if (obj != NULL && obj != Py_None)
-      {
-        t_ObjectInputFilter$Status *self = (t_ObjectInputFilter$Status *) obj;
-        self->parameters[0] = p0;
-      }
-      return obj;
+      installType(&PY_TYPE(SerializablePermission), &PY_TYPE_DEF(SerializablePermission), module, "SerializablePermission", 0);
     }
 
-    PyObject *t_ObjectInputFilter$Status::wrap_jobject(const jobject& object, PyTypeObject *p0)
+    void t_SerializablePermission::initialize(PyObject *module)
     {
-      PyObject *obj = t_ObjectInputFilter$Status::wrap_jobject(object);
-      if (obj != NULL && obj != Py_None)
-      {
-        t_ObjectInputFilter$Status *self = (t_ObjectInputFilter$Status *) obj;
-        self->parameters[0] = p0;
-      }
-      return obj;
+      PyObject_SetAttrString((PyObject *) PY_TYPE(SerializablePermission), "class_", make_descriptor(SerializablePermission::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(SerializablePermission), "wrapfn_", make_descriptor(t_SerializablePermission::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(SerializablePermission), "boxfn_", make_descriptor(boxObject));
     }
 
-    void t_ObjectInputFilter$Status::install(PyObject *module)
+    static PyObject *t_SerializablePermission_cast_(PyTypeObject *type, PyObject *arg)
     {
-      installType(&PY_TYPE(ObjectInputFilter$Status), &PY_TYPE_DEF(ObjectInputFilter$Status), module, "ObjectInputFilter$Status", 0);
-    }
-
-    void t_ObjectInputFilter$Status::initialize(PyObject *module)
-    {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputFilter$Status), "class_", make_descriptor(ObjectInputFilter$Status::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputFilter$Status), "wrapfn_", make_descriptor(t_ObjectInputFilter$Status::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputFilter$Status), "boxfn_", make_descriptor(boxObject));
-      env->getClass(ObjectInputFilter$Status::initializeClass);
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputFilter$Status), "ALLOWED", make_descriptor(t_ObjectInputFilter$Status::wrap_Object(*ObjectInputFilter$Status::ALLOWED)));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputFilter$Status), "REJECTED", make_descriptor(t_ObjectInputFilter$Status::wrap_Object(*ObjectInputFilter$Status::REJECTED)));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ObjectInputFilter$Status), "UNDECIDED", make_descriptor(t_ObjectInputFilter$Status::wrap_Object(*ObjectInputFilter$Status::UNDECIDED)));
-    }
-
-    static PyObject *t_ObjectInputFilter$Status_cast_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!(arg = castCheck(arg, ObjectInputFilter$Status::initializeClass, 1)))
+      if (!(arg = castCheck(arg, SerializablePermission::initializeClass, 1)))
         return NULL;
-      return t_ObjectInputFilter$Status::wrap_Object(ObjectInputFilter$Status(((t_ObjectInputFilter$Status *) arg)->object.this$));
+      return t_SerializablePermission::wrap_Object(SerializablePermission(((t_SerializablePermission *) arg)->object.this$));
     }
-    static PyObject *t_ObjectInputFilter$Status_instance_(PyTypeObject *type, PyObject *arg)
+    static PyObject *t_SerializablePermission_instance_(PyTypeObject *type, PyObject *arg)
     {
-      if (!castCheck(arg, ObjectInputFilter$Status::initializeClass, 0))
+      if (!castCheck(arg, SerializablePermission::initializeClass, 0))
         Py_RETURN_FALSE;
       Py_RETURN_TRUE;
     }
 
-    static PyObject *t_ObjectInputFilter$Status_of_(t_ObjectInputFilter$Status *self, PyObject *args)
-    {
-      if (!parseArg(args, "T", 1, &(self->parameters)))
-        Py_RETURN_SELF;
-      return PyErr_SetArgsError((PyObject *) self, "of_", args);
-    }
-
-    static PyObject *t_ObjectInputFilter$Status_valueOf(PyTypeObject *type, PyObject *args)
-    {
-      ::java::lang::String a0((jobject) NULL);
-      ObjectInputFilter$Status result((jobject) NULL);
-
-      if (!parseArgs(args, "s", &a0))
-      {
-        OBJ_CALL(result = ::java::io::ObjectInputFilter$Status::valueOf(a0));
-        return t_ObjectInputFilter$Status::wrap_Object(result);
-      }
-
-      return callSuper(type, "valueOf", args, 2);
-    }
-
-    static PyObject *t_ObjectInputFilter$Status_values(PyTypeObject *type)
-    {
-      JArray< ObjectInputFilter$Status > result((jobject) NULL);
-      OBJ_CALL(result = ::java::io::ObjectInputFilter$Status::values());
-      return JArray<jobject>(result.this$).wrap(t_ObjectInputFilter$Status::wrap_jobject);
-    }
-    static PyObject *t_ObjectInputFilter$Status_get__parameters_(t_ObjectInputFilter$Status *self, void *data)
-    {
-      return typeParameters(self->parameters, sizeof(self->parameters));
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "java/io/DataInput.h"
-#include "java/io/IOException.h"
-#include "java/lang/String.h"
-#include "java/lang/Class.h"
-#include "JArray.h"
-
-namespace java {
-  namespace io {
-
-    ::java::lang::Class *DataInput::class$ = NULL;
-    jmethodID *DataInput::mids$ = NULL;
-    bool DataInput::live$ = false;
-
-    jclass DataInput::initializeClass(bool getOnly)
-    {
-      if (getOnly)
-        return (jclass) (live$ ? class$->this$ : NULL);
-      if (class$ == NULL)
-      {
-        jclass cls = (jclass) env->findClass("java/io/DataInput");
-
-        mids$ = new jmethodID[max_mid];
-        mids$[mid_readBoolean_89b302893bdbe1f1] = env->getMethodID(cls, "readBoolean", "()Z");
-        mids$[mid_readByte_acadfed42a0dbd0d] = env->getMethodID(cls, "readByte", "()B");
-        mids$[mid_readChar_d156d1ce330f6993] = env->getMethodID(cls, "readChar", "()C");
-        mids$[mid_readDouble_557b8123390d8d0c] = env->getMethodID(cls, "readDouble", "()D");
-        mids$[mid_readFloat_04fe014f7609dc26] = env->getMethodID(cls, "readFloat", "()F");
-        mids$[mid_readFully_d759c70c6670fd89] = env->getMethodID(cls, "readFully", "([B)V");
-        mids$[mid_readFully_ac782c7077255dd3] = env->getMethodID(cls, "readFully", "([BII)V");
-        mids$[mid_readInt_412668abc8d889e9] = env->getMethodID(cls, "readInt", "()I");
-        mids$[mid_readLine_3cffd47377eca18a] = env->getMethodID(cls, "readLine", "()Ljava/lang/String;");
-        mids$[mid_readLong_9e26256fb0d384a2] = env->getMethodID(cls, "readLong", "()J");
-        mids$[mid_readShort_2554afc868a7ba2a] = env->getMethodID(cls, "readShort", "()S");
-        mids$[mid_readUTF_3cffd47377eca18a] = env->getMethodID(cls, "readUTF", "()Ljava/lang/String;");
-        mids$[mid_readUnsignedByte_412668abc8d889e9] = env->getMethodID(cls, "readUnsignedByte", "()I");
-        mids$[mid_readUnsignedShort_412668abc8d889e9] = env->getMethodID(cls, "readUnsignedShort", "()I");
-        mids$[mid_skipBytes_0092017e99012694] = env->getMethodID(cls, "skipBytes", "(I)I");
-
-        class$ = new ::java::lang::Class(cls);
-        live$ = true;
-      }
-      return (jclass) class$->this$;
-    }
-
-    jboolean DataInput::readBoolean() const
-    {
-      return env->callBooleanMethod(this$, mids$[mid_readBoolean_89b302893bdbe1f1]);
-    }
-
-    jbyte DataInput::readByte() const
-    {
-      return env->callByteMethod(this$, mids$[mid_readByte_acadfed42a0dbd0d]);
-    }
-
-    jchar DataInput::readChar() const
-    {
-      return env->callCharMethod(this$, mids$[mid_readChar_d156d1ce330f6993]);
-    }
-
-    jdouble DataInput::readDouble() const
-    {
-      return env->callDoubleMethod(this$, mids$[mid_readDouble_557b8123390d8d0c]);
-    }
-
-    jfloat DataInput::readFloat() const
-    {
-      return env->callFloatMethod(this$, mids$[mid_readFloat_04fe014f7609dc26]);
-    }
-
-    void DataInput::readFully(const JArray< jbyte > & a0) const
-    {
-      env->callVoidMethod(this$, mids$[mid_readFully_d759c70c6670fd89], a0.this$);
-    }
-
-    void DataInput::readFully(const JArray< jbyte > & a0, jint a1, jint a2) const
-    {
-      env->callVoidMethod(this$, mids$[mid_readFully_ac782c7077255dd3], a0.this$, a1, a2);
-    }
-
-    jint DataInput::readInt() const
-    {
-      return env->callIntMethod(this$, mids$[mid_readInt_412668abc8d889e9]);
-    }
-
-    ::java::lang::String DataInput::readLine() const
-    {
-      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_readLine_3cffd47377eca18a]));
-    }
-
-    jlong DataInput::readLong() const
-    {
-      return env->callLongMethod(this$, mids$[mid_readLong_9e26256fb0d384a2]);
-    }
-
-    jshort DataInput::readShort() const
-    {
-      return env->callShortMethod(this$, mids$[mid_readShort_2554afc868a7ba2a]);
-    }
-
-    ::java::lang::String DataInput::readUTF() const
-    {
-      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_readUTF_3cffd47377eca18a]));
-    }
-
-    jint DataInput::readUnsignedByte() const
-    {
-      return env->callIntMethod(this$, mids$[mid_readUnsignedByte_412668abc8d889e9]);
-    }
-
-    jint DataInput::readUnsignedShort() const
-    {
-      return env->callIntMethod(this$, mids$[mid_readUnsignedShort_412668abc8d889e9]);
-    }
-
-    jint DataInput::skipBytes(jint a0) const
-    {
-      return env->callIntMethod(this$, mids$[mid_skipBytes_0092017e99012694], a0);
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace java {
-  namespace io {
-    static PyObject *t_DataInput_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_DataInput_instance_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_DataInput_readBoolean(t_DataInput *self);
-    static PyObject *t_DataInput_readByte(t_DataInput *self);
-    static PyObject *t_DataInput_readChar(t_DataInput *self);
-    static PyObject *t_DataInput_readDouble(t_DataInput *self);
-    static PyObject *t_DataInput_readFloat(t_DataInput *self);
-    static PyObject *t_DataInput_readFully(t_DataInput *self, PyObject *args);
-    static PyObject *t_DataInput_readInt(t_DataInput *self);
-    static PyObject *t_DataInput_readLine(t_DataInput *self);
-    static PyObject *t_DataInput_readLong(t_DataInput *self);
-    static PyObject *t_DataInput_readShort(t_DataInput *self);
-    static PyObject *t_DataInput_readUTF(t_DataInput *self);
-    static PyObject *t_DataInput_readUnsignedByte(t_DataInput *self);
-    static PyObject *t_DataInput_readUnsignedShort(t_DataInput *self);
-    static PyObject *t_DataInput_skipBytes(t_DataInput *self, PyObject *arg);
-
-    static PyMethodDef t_DataInput__methods_[] = {
-      DECLARE_METHOD(t_DataInput, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_DataInput, instance_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_DataInput, readBoolean, METH_NOARGS),
-      DECLARE_METHOD(t_DataInput, readByte, METH_NOARGS),
-      DECLARE_METHOD(t_DataInput, readChar, METH_NOARGS),
-      DECLARE_METHOD(t_DataInput, readDouble, METH_NOARGS),
-      DECLARE_METHOD(t_DataInput, readFloat, METH_NOARGS),
-      DECLARE_METHOD(t_DataInput, readFully, METH_VARARGS),
-      DECLARE_METHOD(t_DataInput, readInt, METH_NOARGS),
-      DECLARE_METHOD(t_DataInput, readLine, METH_NOARGS),
-      DECLARE_METHOD(t_DataInput, readLong, METH_NOARGS),
-      DECLARE_METHOD(t_DataInput, readShort, METH_NOARGS),
-      DECLARE_METHOD(t_DataInput, readUTF, METH_NOARGS),
-      DECLARE_METHOD(t_DataInput, readUnsignedByte, METH_NOARGS),
-      DECLARE_METHOD(t_DataInput, readUnsignedShort, METH_NOARGS),
-      DECLARE_METHOD(t_DataInput, skipBytes, METH_O),
-      { NULL, NULL, 0, NULL }
-    };
-
-    static PyType_Slot PY_TYPE_SLOTS(DataInput)[] = {
-      { Py_tp_methods, t_DataInput__methods_ },
-      { Py_tp_init, (void *) abstract_init },
-      { 0, NULL }
-    };
-
-    static PyType_Def *PY_TYPE_BASES(DataInput)[] = {
-      &PY_TYPE_DEF(::java::lang::Object),
-      NULL
-    };
-
-    DEFINE_TYPE(DataInput, t_DataInput, DataInput);
-
-    void t_DataInput::install(PyObject *module)
-    {
-      installType(&PY_TYPE(DataInput), &PY_TYPE_DEF(DataInput), module, "DataInput", 0);
-    }
-
-    void t_DataInput::initialize(PyObject *module)
-    {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(DataInput), "class_", make_descriptor(DataInput::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(DataInput), "wrapfn_", make_descriptor(t_DataInput::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(DataInput), "boxfn_", make_descriptor(boxObject));
-    }
-
-    static PyObject *t_DataInput_cast_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!(arg = castCheck(arg, DataInput::initializeClass, 1)))
-        return NULL;
-      return t_DataInput::wrap_Object(DataInput(((t_DataInput *) arg)->object.this$));
-    }
-    static PyObject *t_DataInput_instance_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!castCheck(arg, DataInput::initializeClass, 0))
-        Py_RETURN_FALSE;
-      Py_RETURN_TRUE;
-    }
-
-    static PyObject *t_DataInput_readBoolean(t_DataInput *self)
-    {
-      jboolean result;
-      OBJ_CALL(result = self->object.readBoolean());
-      Py_RETURN_BOOL(result);
-    }
-
-    static PyObject *t_DataInput_readByte(t_DataInput *self)
-    {
-      jbyte result;
-      OBJ_CALL(result = self->object.readByte());
-      return PyLong_FromLong((long) result);
-    }
-
-    static PyObject *t_DataInput_readChar(t_DataInput *self)
-    {
-      jchar result;
-      OBJ_CALL(result = self->object.readChar());
-      return c2p(result);
-    }
-
-    static PyObject *t_DataInput_readDouble(t_DataInput *self)
-    {
-      jdouble result;
-      OBJ_CALL(result = self->object.readDouble());
-      return PyFloat_FromDouble((double) result);
-    }
-
-    static PyObject *t_DataInput_readFloat(t_DataInput *self)
-    {
-      jfloat result;
-      OBJ_CALL(result = self->object.readFloat());
-      return PyFloat_FromDouble((double) result);
-    }
-
-    static PyObject *t_DataInput_readFully(t_DataInput *self, PyObject *args)
+    static int t_SerializablePermission_init_(t_SerializablePermission *self, PyObject *args, PyObject *kwds)
     {
       switch (PyTuple_GET_SIZE(args)) {
        case 1:
         {
-          JArray< jbyte > a0((jobject) NULL);
+          ::java::lang::String a0((jobject) NULL);
+          SerializablePermission object((jobject) NULL);
 
-          if (!parseArgs(args, "[B", &a0))
+          if (!parseArgs(args, "s", &a0))
           {
-            OBJ_CALL(self->object.readFully(a0));
-            Py_RETURN_NONE;
+            INT_CALL(object = SerializablePermission(a0));
+            self->object = object;
+            break;
           }
         }
-        break;
-       case 3:
+        goto err;
+       case 2:
         {
-          JArray< jbyte > a0((jobject) NULL);
-          jint a1;
-          jint a2;
+          ::java::lang::String a0((jobject) NULL);
+          ::java::lang::String a1((jobject) NULL);
+          SerializablePermission object((jobject) NULL);
 
-          if (!parseArgs(args, "[BII", &a0, &a1, &a2))
+          if (!parseArgs(args, "ss", &a0, &a1))
           {
-            OBJ_CALL(self->object.readFully(a0, a1, a2));
-            Py_RETURN_NONE;
+            INT_CALL(object = SerializablePermission(a0, a1));
+            self->object = object;
+            break;
           }
         }
+       default:
+       err:
+        PyErr_SetArgsError((PyObject *) self, "__init__", args);
+        return -1;
       }
 
-      PyErr_SetArgsError((PyObject *) self, "readFully", args);
-      return NULL;
-    }
-
-    static PyObject *t_DataInput_readInt(t_DataInput *self)
-    {
-      jint result;
-      OBJ_CALL(result = self->object.readInt());
-      return PyLong_FromLong((long) result);
-    }
-
-    static PyObject *t_DataInput_readLine(t_DataInput *self)
-    {
-      ::java::lang::String result((jobject) NULL);
-      OBJ_CALL(result = self->object.readLine());
-      return j2p(result);
-    }
-
-    static PyObject *t_DataInput_readLong(t_DataInput *self)
-    {
-      jlong result;
-      OBJ_CALL(result = self->object.readLong());
-      return PyLong_FromLongLong((PY_LONG_LONG) result);
-    }
-
-    static PyObject *t_DataInput_readShort(t_DataInput *self)
-    {
-      jshort result;
-      OBJ_CALL(result = self->object.readShort());
-      return PyLong_FromLong((long) result);
-    }
-
-    static PyObject *t_DataInput_readUTF(t_DataInput *self)
-    {
-      ::java::lang::String result((jobject) NULL);
-      OBJ_CALL(result = self->object.readUTF());
-      return j2p(result);
-    }
-
-    static PyObject *t_DataInput_readUnsignedByte(t_DataInput *self)
-    {
-      jint result;
-      OBJ_CALL(result = self->object.readUnsignedByte());
-      return PyLong_FromLong((long) result);
-    }
-
-    static PyObject *t_DataInput_readUnsignedShort(t_DataInput *self)
-    {
-      jint result;
-      OBJ_CALL(result = self->object.readUnsignedShort());
-      return PyLong_FromLong((long) result);
-    }
-
-    static PyObject *t_DataInput_skipBytes(t_DataInput *self, PyObject *arg)
-    {
-      jint a0;
-      jint result;
-
-      if (!parseArg(arg, "I", &a0))
-      {
-        OBJ_CALL(result = self->object.skipBytes(a0));
-        return PyLong_FromLong((long) result);
-      }
-
-      PyErr_SetArgsError((PyObject *) self, "skipBytes", arg);
-      return NULL;
+      return 0;
     }
   }
 }
@@ -6685,18 +6248,18 @@ namespace java {
         jclass cls = (jclass) env->findClass("java/io/ObjectStreamField");
 
         mids$ = new jmethodID[max_mid];
-        mids$[mid_init$_c6d8829858f3ca7b] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;Ljava/lang/Class;)V");
-        mids$[mid_init$_98c4736689c785d5] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;Ljava/lang/Class;Z)V");
-        mids$[mid_compareTo_38a1845c8d44a9b0] = env->getMethodID(cls, "compareTo", "(Ljava/lang/Object;)I");
-        mids$[mid_getName_3cffd47377eca18a] = env->getMethodID(cls, "getName", "()Ljava/lang/String;");
-        mids$[mid_getOffset_412668abc8d889e9] = env->getMethodID(cls, "getOffset", "()I");
-        mids$[mid_getType_d4b191ff8147475d] = env->getMethodID(cls, "getType", "()Ljava/lang/Class;");
-        mids$[mid_getTypeCode_d156d1ce330f6993] = env->getMethodID(cls, "getTypeCode", "()C");
-        mids$[mid_getTypeString_3cffd47377eca18a] = env->getMethodID(cls, "getTypeString", "()Ljava/lang/String;");
-        mids$[mid_isPrimitive_89b302893bdbe1f1] = env->getMethodID(cls, "isPrimitive", "()Z");
-        mids$[mid_isUnshared_89b302893bdbe1f1] = env->getMethodID(cls, "isUnshared", "()Z");
-        mids$[mid_toString_3cffd47377eca18a] = env->getMethodID(cls, "toString", "()Ljava/lang/String;");
-        mids$[mid_setOffset_a3da1a935cb37f7b] = env->getMethodID(cls, "setOffset", "(I)V");
+        mids$[mid_init$_3ff057c15820ae2e] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;Ljava/lang/Class;)V");
+        mids$[mid_init$_b9642883180e8c56] = env->getMethodID(cls, "<init>", "(Ljava/lang/String;Ljava/lang/Class;Z)V");
+        mids$[mid_compareTo_b7898c5e94612125] = env->getMethodID(cls, "compareTo", "(Ljava/lang/Object;)I");
+        mids$[mid_getName_1c1fa1e935d6cdcf] = env->getMethodID(cls, "getName", "()Ljava/lang/String;");
+        mids$[mid_getOffset_55546ef6a647f39b] = env->getMethodID(cls, "getOffset", "()I");
+        mids$[mid_getType_1aeb0737a960d371] = env->getMethodID(cls, "getType", "()Ljava/lang/Class;");
+        mids$[mid_getTypeCode_5e2f8fc4d7c03fbd] = env->getMethodID(cls, "getTypeCode", "()C");
+        mids$[mid_getTypeString_1c1fa1e935d6cdcf] = env->getMethodID(cls, "getTypeString", "()Ljava/lang/String;");
+        mids$[mid_isPrimitive_9ab94ac1dc23b105] = env->getMethodID(cls, "isPrimitive", "()Z");
+        mids$[mid_isUnshared_9ab94ac1dc23b105] = env->getMethodID(cls, "isUnshared", "()Z");
+        mids$[mid_toString_1c1fa1e935d6cdcf] = env->getMethodID(cls, "toString", "()Ljava/lang/String;");
+        mids$[mid_setOffset_44ed599e93e8a30c] = env->getMethodID(cls, "setOffset", "(I)V");
 
         class$ = new ::java::lang::Class(cls);
         live$ = true;
@@ -6704,53 +6267,53 @@ namespace java {
       return (jclass) class$->this$;
     }
 
-    ObjectStreamField::ObjectStreamField(const ::java::lang::String & a0, const ::java::lang::Class & a1) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_c6d8829858f3ca7b, a0.this$, a1.this$)) {}
+    ObjectStreamField::ObjectStreamField(const ::java::lang::String & a0, const ::java::lang::Class & a1) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_3ff057c15820ae2e, a0.this$, a1.this$)) {}
 
-    ObjectStreamField::ObjectStreamField(const ::java::lang::String & a0, const ::java::lang::Class & a1, jboolean a2) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_98c4736689c785d5, a0.this$, a1.this$, a2)) {}
+    ObjectStreamField::ObjectStreamField(const ::java::lang::String & a0, const ::java::lang::Class & a1, jboolean a2) : ::java::lang::Object(env->newObject(initializeClass, &mids$, mid_init$_b9642883180e8c56, a0.this$, a1.this$, a2)) {}
 
     jint ObjectStreamField::compareTo(const ::java::lang::Object & a0) const
     {
-      return env->callIntMethod(this$, mids$[mid_compareTo_38a1845c8d44a9b0], a0.this$);
+      return env->callIntMethod(this$, mids$[mid_compareTo_b7898c5e94612125], a0.this$);
     }
 
     ::java::lang::String ObjectStreamField::getName() const
     {
-      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getName_3cffd47377eca18a]));
+      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getName_1c1fa1e935d6cdcf]));
     }
 
     jint ObjectStreamField::getOffset() const
     {
-      return env->callIntMethod(this$, mids$[mid_getOffset_412668abc8d889e9]);
+      return env->callIntMethod(this$, mids$[mid_getOffset_55546ef6a647f39b]);
     }
 
     ::java::lang::Class ObjectStreamField::getType() const
     {
-      return ::java::lang::Class(env->callObjectMethod(this$, mids$[mid_getType_d4b191ff8147475d]));
+      return ::java::lang::Class(env->callObjectMethod(this$, mids$[mid_getType_1aeb0737a960d371]));
     }
 
     jchar ObjectStreamField::getTypeCode() const
     {
-      return env->callCharMethod(this$, mids$[mid_getTypeCode_d156d1ce330f6993]);
+      return env->callCharMethod(this$, mids$[mid_getTypeCode_5e2f8fc4d7c03fbd]);
     }
 
     ::java::lang::String ObjectStreamField::getTypeString() const
     {
-      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getTypeString_3cffd47377eca18a]));
+      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_getTypeString_1c1fa1e935d6cdcf]));
     }
 
     jboolean ObjectStreamField::isPrimitive() const
     {
-      return env->callBooleanMethod(this$, mids$[mid_isPrimitive_89b302893bdbe1f1]);
+      return env->callBooleanMethod(this$, mids$[mid_isPrimitive_9ab94ac1dc23b105]);
     }
 
     jboolean ObjectStreamField::isUnshared() const
     {
-      return env->callBooleanMethod(this$, mids$[mid_isUnshared_89b302893bdbe1f1]);
+      return env->callBooleanMethod(this$, mids$[mid_isUnshared_9ab94ac1dc23b105]);
     }
 
     ::java::lang::String ObjectStreamField::toString() const
     {
-      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_toString_3cffd47377eca18a]));
+      return ::java::lang::String(env->callObjectMethod(this$, mids$[mid_toString_1c1fa1e935d6cdcf]));
     }
   }
 }
@@ -7038,7 +6601,7 @@ namespace java {
         jclass cls = (jclass) env->findClass("java/lang/Thread$UncaughtExceptionHandler");
 
         mids$ = new jmethodID[max_mid];
-        mids$[mid_uncaughtException_6ab5c8a40df48e4f] = env->getMethodID(cls, "uncaughtException", "(Ljava/lang/Thread;Ljava/lang/Throwable;)V");
+        mids$[mid_uncaughtException_6614adf33092b99a] = env->getMethodID(cls, "uncaughtException", "(Ljava/lang/Thread;Ljava/lang/Throwable;)V");
 
         class$ = new ::java::lang::Class(cls);
         live$ = true;
@@ -7048,7 +6611,7 @@ namespace java {
 
     void Thread$UncaughtExceptionHandler::uncaughtException(const ::java::lang::Thread & a0, const ::java::lang::Throwable & a1) const
     {
-      env->callVoidMethod(this$, mids$[mid_uncaughtException_6ab5c8a40df48e4f], a0.this$, a1.this$);
+      env->callVoidMethod(this$, mids$[mid_uncaughtException_6614adf33092b99a], a0.this$, a1.this$);
     }
   }
 }
@@ -7126,10 +6689,188 @@ namespace java {
 }
 #include <jni.h>
 #include "JCCEnv.h"
-#include "java/lang/Thread$State.h"
+#include "java/lang/ModuleLayer$Controller.h"
+#include "java/lang/ModuleLayer.h"
+#include "java/lang/ModuleLayer$Controller.h"
+#include "java/lang/Module.h"
+#include "java/lang/Class.h"
+#include "java/lang/String.h"
+#include "JArray.h"
+
+namespace java {
+  namespace lang {
+
+    ::java::lang::Class *ModuleLayer$Controller::class$ = NULL;
+    jmethodID *ModuleLayer$Controller::mids$ = NULL;
+    bool ModuleLayer$Controller::live$ = false;
+
+    jclass ModuleLayer$Controller::initializeClass(bool getOnly)
+    {
+      if (getOnly)
+        return (jclass) (live$ ? class$->this$ : NULL);
+      if (class$ == NULL)
+      {
+        jclass cls = (jclass) env->findClass("java/lang/ModuleLayer$Controller");
+
+        mids$ = new jmethodID[max_mid];
+        mids$[mid_addExports_0d8ace6424583464] = env->getMethodID(cls, "addExports", "(Ljava/lang/Module;Ljava/lang/String;Ljava/lang/Module;)Ljava/lang/ModuleLayer$Controller;");
+        mids$[mid_addOpens_0d8ace6424583464] = env->getMethodID(cls, "addOpens", "(Ljava/lang/Module;Ljava/lang/String;Ljava/lang/Module;)Ljava/lang/ModuleLayer$Controller;");
+        mids$[mid_addReads_bd6a30f240548966] = env->getMethodID(cls, "addReads", "(Ljava/lang/Module;Ljava/lang/Module;)Ljava/lang/ModuleLayer$Controller;");
+        mids$[mid_layer_c147713285b11692] = env->getMethodID(cls, "layer", "()Ljava/lang/ModuleLayer;");
+
+        class$ = new ::java::lang::Class(cls);
+        live$ = true;
+      }
+      return (jclass) class$->this$;
+    }
+
+    ModuleLayer$Controller ModuleLayer$Controller::addExports(const ::java::lang::Module & a0, const ::java::lang::String & a1, const ::java::lang::Module & a2) const
+    {
+      return ModuleLayer$Controller(env->callObjectMethod(this$, mids$[mid_addExports_0d8ace6424583464], a0.this$, a1.this$, a2.this$));
+    }
+
+    ModuleLayer$Controller ModuleLayer$Controller::addOpens(const ::java::lang::Module & a0, const ::java::lang::String & a1, const ::java::lang::Module & a2) const
+    {
+      return ModuleLayer$Controller(env->callObjectMethod(this$, mids$[mid_addOpens_0d8ace6424583464], a0.this$, a1.this$, a2.this$));
+    }
+
+    ModuleLayer$Controller ModuleLayer$Controller::addReads(const ::java::lang::Module & a0, const ::java::lang::Module & a1) const
+    {
+      return ModuleLayer$Controller(env->callObjectMethod(this$, mids$[mid_addReads_bd6a30f240548966], a0.this$, a1.this$));
+    }
+
+    ::java::lang::ModuleLayer ModuleLayer$Controller::layer() const
+    {
+      return ::java::lang::ModuleLayer(env->callObjectMethod(this$, mids$[mid_layer_c147713285b11692]));
+    }
+  }
+}
+
+#include "structmember.h"
+#include "functions.h"
+#include "macros.h"
+
+namespace java {
+  namespace lang {
+    static PyObject *t_ModuleLayer$Controller_cast_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_ModuleLayer$Controller_instance_(PyTypeObject *type, PyObject *arg);
+    static PyObject *t_ModuleLayer$Controller_addExports(t_ModuleLayer$Controller *self, PyObject *args);
+    static PyObject *t_ModuleLayer$Controller_addOpens(t_ModuleLayer$Controller *self, PyObject *args);
+    static PyObject *t_ModuleLayer$Controller_addReads(t_ModuleLayer$Controller *self, PyObject *args);
+    static PyObject *t_ModuleLayer$Controller_layer(t_ModuleLayer$Controller *self);
+
+    static PyMethodDef t_ModuleLayer$Controller__methods_[] = {
+      DECLARE_METHOD(t_ModuleLayer$Controller, cast_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_ModuleLayer$Controller, instance_, METH_O | METH_CLASS),
+      DECLARE_METHOD(t_ModuleLayer$Controller, addExports, METH_VARARGS),
+      DECLARE_METHOD(t_ModuleLayer$Controller, addOpens, METH_VARARGS),
+      DECLARE_METHOD(t_ModuleLayer$Controller, addReads, METH_VARARGS),
+      DECLARE_METHOD(t_ModuleLayer$Controller, layer, METH_NOARGS),
+      { NULL, NULL, 0, NULL }
+    };
+
+    static PyType_Slot PY_TYPE_SLOTS(ModuleLayer$Controller)[] = {
+      { Py_tp_methods, t_ModuleLayer$Controller__methods_ },
+      { Py_tp_init, (void *) abstract_init },
+      { 0, NULL }
+    };
+
+    static PyType_Def *PY_TYPE_BASES(ModuleLayer$Controller)[] = {
+      &PY_TYPE_DEF(::java::lang::Object),
+      NULL
+    };
+
+    DEFINE_TYPE(ModuleLayer$Controller, t_ModuleLayer$Controller, ModuleLayer$Controller);
+
+    void t_ModuleLayer$Controller::install(PyObject *module)
+    {
+      installType(&PY_TYPE(ModuleLayer$Controller), &PY_TYPE_DEF(ModuleLayer$Controller), module, "ModuleLayer$Controller", 0);
+    }
+
+    void t_ModuleLayer$Controller::initialize(PyObject *module)
+    {
+      PyObject_SetAttrString((PyObject *) PY_TYPE(ModuleLayer$Controller), "class_", make_descriptor(ModuleLayer$Controller::initializeClass, 1));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(ModuleLayer$Controller), "wrapfn_", make_descriptor(t_ModuleLayer$Controller::wrap_jobject));
+      PyObject_SetAttrString((PyObject *) PY_TYPE(ModuleLayer$Controller), "boxfn_", make_descriptor(boxObject));
+    }
+
+    static PyObject *t_ModuleLayer$Controller_cast_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!(arg = castCheck(arg, ModuleLayer$Controller::initializeClass, 1)))
+        return NULL;
+      return t_ModuleLayer$Controller::wrap_Object(ModuleLayer$Controller(((t_ModuleLayer$Controller *) arg)->object.this$));
+    }
+    static PyObject *t_ModuleLayer$Controller_instance_(PyTypeObject *type, PyObject *arg)
+    {
+      if (!castCheck(arg, ModuleLayer$Controller::initializeClass, 0))
+        Py_RETURN_FALSE;
+      Py_RETURN_TRUE;
+    }
+
+    static PyObject *t_ModuleLayer$Controller_addExports(t_ModuleLayer$Controller *self, PyObject *args)
+    {
+      ::java::lang::Module a0((jobject) NULL);
+      ::java::lang::String a1((jobject) NULL);
+      ::java::lang::Module a2((jobject) NULL);
+      ModuleLayer$Controller result((jobject) NULL);
+
+      if (!parseArgs(args, "ksk", ::java::lang::Module::initializeClass, ::java::lang::Module::initializeClass, &a0, &a1, &a2))
+      {
+        OBJ_CALL(result = self->object.addExports(a0, a1, a2));
+        return t_ModuleLayer$Controller::wrap_Object(result);
+      }
+
+      PyErr_SetArgsError((PyObject *) self, "addExports", args);
+      return NULL;
+    }
+
+    static PyObject *t_ModuleLayer$Controller_addOpens(t_ModuleLayer$Controller *self, PyObject *args)
+    {
+      ::java::lang::Module a0((jobject) NULL);
+      ::java::lang::String a1((jobject) NULL);
+      ::java::lang::Module a2((jobject) NULL);
+      ModuleLayer$Controller result((jobject) NULL);
+
+      if (!parseArgs(args, "ksk", ::java::lang::Module::initializeClass, ::java::lang::Module::initializeClass, &a0, &a1, &a2))
+      {
+        OBJ_CALL(result = self->object.addOpens(a0, a1, a2));
+        return t_ModuleLayer$Controller::wrap_Object(result);
+      }
+
+      PyErr_SetArgsError((PyObject *) self, "addOpens", args);
+      return NULL;
+    }
+
+    static PyObject *t_ModuleLayer$Controller_addReads(t_ModuleLayer$Controller *self, PyObject *args)
+    {
+      ::java::lang::Module a0((jobject) NULL);
+      ::java::lang::Module a1((jobject) NULL);
+      ModuleLayer$Controller result((jobject) NULL);
+
+      if (!parseArgs(args, "kk", ::java::lang::Module::initializeClass, ::java::lang::Module::initializeClass, &a0, &a1))
+      {
+        OBJ_CALL(result = self->object.addReads(a0, a1));
+        return t_ModuleLayer$Controller::wrap_Object(result);
+      }
+
+      PyErr_SetArgsError((PyObject *) self, "addReads", args);
+      return NULL;
+    }
+
+    static PyObject *t_ModuleLayer$Controller_layer(t_ModuleLayer$Controller *self)
+    {
+      ::java::lang::ModuleLayer result((jobject) NULL);
+      OBJ_CALL(result = self->object.layer());
+      return ::java::lang::t_ModuleLayer::wrap_Object(result);
+    }
+  }
+}
+#include <jni.h>
+#include "JCCEnv.h"
 #include "java/lang/Thread$State.h"
 #include "java/lang/String.h"
 #include "java/lang/Class.h"
+#include "java/lang/Thread$State.h"
 #include "JArray.h"
 
 namespace java {
@@ -7154,8 +6895,8 @@ namespace java {
         jclass cls = (jclass) env->findClass("java/lang/Thread$State");
 
         mids$ = new jmethodID[max_mid];
-        mids$[mid_valueOf_ec547e262f3fc5e7] = env->getStaticMethodID(cls, "valueOf", "(Ljava/lang/String;)Ljava/lang/Thread$State;");
-        mids$[mid_values_ceba256230d063b4] = env->getStaticMethodID(cls, "values", "()[Ljava/lang/Thread$State;");
+        mids$[mid_valueOf_2e00d81d01570f38] = env->getStaticMethodID(cls, "valueOf", "(Ljava/lang/String;)Ljava/lang/Thread$State;");
+        mids$[mid_values_7a4de42ee0c3d8dc] = env->getStaticMethodID(cls, "values", "()[Ljava/lang/Thread$State;");
 
         class$ = new ::java::lang::Class(cls);
         cls = (jclass) class$->this$;
@@ -7174,13 +6915,13 @@ namespace java {
     Thread$State Thread$State::valueOf(const ::java::lang::String & a0)
     {
       jclass cls = env->getClass(initializeClass);
-      return Thread$State(env->callStaticObjectMethod(cls, mids$[mid_valueOf_ec547e262f3fc5e7], a0.this$));
+      return Thread$State(env->callStaticObjectMethod(cls, mids$[mid_valueOf_2e00d81d01570f38], a0.this$));
     }
 
     JArray< Thread$State > Thread$State::values()
     {
       jclass cls = env->getClass(initializeClass);
-      return JArray< Thread$State >(env->callStaticObjectMethod(cls, mids$[mid_values_ceba256230d063b4]));
+      return JArray< Thread$State >(env->callStaticObjectMethod(cls, mids$[mid_values_7a4de42ee0c3d8dc]));
     }
   }
 }
@@ -7308,184 +7049,6 @@ namespace java {
     static PyObject *t_Thread$State_get__parameters_(t_Thread$State *self, void *data)
     {
       return typeParameters(self->parameters, sizeof(self->parameters));
-    }
-  }
-}
-#include <jni.h>
-#include "JCCEnv.h"
-#include "java/lang/ModuleLayer$Controller.h"
-#include "java/lang/ModuleLayer.h"
-#include "java/lang/Module.h"
-#include "java/lang/Class.h"
-#include "java/lang/ModuleLayer$Controller.h"
-#include "java/lang/String.h"
-#include "JArray.h"
-
-namespace java {
-  namespace lang {
-
-    ::java::lang::Class *ModuleLayer$Controller::class$ = NULL;
-    jmethodID *ModuleLayer$Controller::mids$ = NULL;
-    bool ModuleLayer$Controller::live$ = false;
-
-    jclass ModuleLayer$Controller::initializeClass(bool getOnly)
-    {
-      if (getOnly)
-        return (jclass) (live$ ? class$->this$ : NULL);
-      if (class$ == NULL)
-      {
-        jclass cls = (jclass) env->findClass("java/lang/ModuleLayer$Controller");
-
-        mids$ = new jmethodID[max_mid];
-        mids$[mid_addExports_d8130dcb512da5ee] = env->getMethodID(cls, "addExports", "(Ljava/lang/Module;Ljava/lang/String;Ljava/lang/Module;)Ljava/lang/ModuleLayer$Controller;");
-        mids$[mid_addOpens_d8130dcb512da5ee] = env->getMethodID(cls, "addOpens", "(Ljava/lang/Module;Ljava/lang/String;Ljava/lang/Module;)Ljava/lang/ModuleLayer$Controller;");
-        mids$[mid_addReads_3fb90a8c9cf73541] = env->getMethodID(cls, "addReads", "(Ljava/lang/Module;Ljava/lang/Module;)Ljava/lang/ModuleLayer$Controller;");
-        mids$[mid_layer_a9837dd004e81a19] = env->getMethodID(cls, "layer", "()Ljava/lang/ModuleLayer;");
-
-        class$ = new ::java::lang::Class(cls);
-        live$ = true;
-      }
-      return (jclass) class$->this$;
-    }
-
-    ModuleLayer$Controller ModuleLayer$Controller::addExports(const ::java::lang::Module & a0, const ::java::lang::String & a1, const ::java::lang::Module & a2) const
-    {
-      return ModuleLayer$Controller(env->callObjectMethod(this$, mids$[mid_addExports_d8130dcb512da5ee], a0.this$, a1.this$, a2.this$));
-    }
-
-    ModuleLayer$Controller ModuleLayer$Controller::addOpens(const ::java::lang::Module & a0, const ::java::lang::String & a1, const ::java::lang::Module & a2) const
-    {
-      return ModuleLayer$Controller(env->callObjectMethod(this$, mids$[mid_addOpens_d8130dcb512da5ee], a0.this$, a1.this$, a2.this$));
-    }
-
-    ModuleLayer$Controller ModuleLayer$Controller::addReads(const ::java::lang::Module & a0, const ::java::lang::Module & a1) const
-    {
-      return ModuleLayer$Controller(env->callObjectMethod(this$, mids$[mid_addReads_3fb90a8c9cf73541], a0.this$, a1.this$));
-    }
-
-    ::java::lang::ModuleLayer ModuleLayer$Controller::layer() const
-    {
-      return ::java::lang::ModuleLayer(env->callObjectMethod(this$, mids$[mid_layer_a9837dd004e81a19]));
-    }
-  }
-}
-
-#include "structmember.h"
-#include "functions.h"
-#include "macros.h"
-
-namespace java {
-  namespace lang {
-    static PyObject *t_ModuleLayer$Controller_cast_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_ModuleLayer$Controller_instance_(PyTypeObject *type, PyObject *arg);
-    static PyObject *t_ModuleLayer$Controller_addExports(t_ModuleLayer$Controller *self, PyObject *args);
-    static PyObject *t_ModuleLayer$Controller_addOpens(t_ModuleLayer$Controller *self, PyObject *args);
-    static PyObject *t_ModuleLayer$Controller_addReads(t_ModuleLayer$Controller *self, PyObject *args);
-    static PyObject *t_ModuleLayer$Controller_layer(t_ModuleLayer$Controller *self);
-
-    static PyMethodDef t_ModuleLayer$Controller__methods_[] = {
-      DECLARE_METHOD(t_ModuleLayer$Controller, cast_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_ModuleLayer$Controller, instance_, METH_O | METH_CLASS),
-      DECLARE_METHOD(t_ModuleLayer$Controller, addExports, METH_VARARGS),
-      DECLARE_METHOD(t_ModuleLayer$Controller, addOpens, METH_VARARGS),
-      DECLARE_METHOD(t_ModuleLayer$Controller, addReads, METH_VARARGS),
-      DECLARE_METHOD(t_ModuleLayer$Controller, layer, METH_NOARGS),
-      { NULL, NULL, 0, NULL }
-    };
-
-    static PyType_Slot PY_TYPE_SLOTS(ModuleLayer$Controller)[] = {
-      { Py_tp_methods, t_ModuleLayer$Controller__methods_ },
-      { Py_tp_init, (void *) abstract_init },
-      { 0, NULL }
-    };
-
-    static PyType_Def *PY_TYPE_BASES(ModuleLayer$Controller)[] = {
-      &PY_TYPE_DEF(::java::lang::Object),
-      NULL
-    };
-
-    DEFINE_TYPE(ModuleLayer$Controller, t_ModuleLayer$Controller, ModuleLayer$Controller);
-
-    void t_ModuleLayer$Controller::install(PyObject *module)
-    {
-      installType(&PY_TYPE(ModuleLayer$Controller), &PY_TYPE_DEF(ModuleLayer$Controller), module, "ModuleLayer$Controller", 0);
-    }
-
-    void t_ModuleLayer$Controller::initialize(PyObject *module)
-    {
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ModuleLayer$Controller), "class_", make_descriptor(ModuleLayer$Controller::initializeClass, 1));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ModuleLayer$Controller), "wrapfn_", make_descriptor(t_ModuleLayer$Controller::wrap_jobject));
-      PyObject_SetAttrString((PyObject *) PY_TYPE(ModuleLayer$Controller), "boxfn_", make_descriptor(boxObject));
-    }
-
-    static PyObject *t_ModuleLayer$Controller_cast_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!(arg = castCheck(arg, ModuleLayer$Controller::initializeClass, 1)))
-        return NULL;
-      return t_ModuleLayer$Controller::wrap_Object(ModuleLayer$Controller(((t_ModuleLayer$Controller *) arg)->object.this$));
-    }
-    static PyObject *t_ModuleLayer$Controller_instance_(PyTypeObject *type, PyObject *arg)
-    {
-      if (!castCheck(arg, ModuleLayer$Controller::initializeClass, 0))
-        Py_RETURN_FALSE;
-      Py_RETURN_TRUE;
-    }
-
-    static PyObject *t_ModuleLayer$Controller_addExports(t_ModuleLayer$Controller *self, PyObject *args)
-    {
-      ::java::lang::Module a0((jobject) NULL);
-      ::java::lang::String a1((jobject) NULL);
-      ::java::lang::Module a2((jobject) NULL);
-      ModuleLayer$Controller result((jobject) NULL);
-
-      if (!parseArgs(args, "ksk", ::java::lang::Module::initializeClass, ::java::lang::Module::initializeClass, &a0, &a1, &a2))
-      {
-        OBJ_CALL(result = self->object.addExports(a0, a1, a2));
-        return t_ModuleLayer$Controller::wrap_Object(result);
-      }
-
-      PyErr_SetArgsError((PyObject *) self, "addExports", args);
-      return NULL;
-    }
-
-    static PyObject *t_ModuleLayer$Controller_addOpens(t_ModuleLayer$Controller *self, PyObject *args)
-    {
-      ::java::lang::Module a0((jobject) NULL);
-      ::java::lang::String a1((jobject) NULL);
-      ::java::lang::Module a2((jobject) NULL);
-      ModuleLayer$Controller result((jobject) NULL);
-
-      if (!parseArgs(args, "ksk", ::java::lang::Module::initializeClass, ::java::lang::Module::initializeClass, &a0, &a1, &a2))
-      {
-        OBJ_CALL(result = self->object.addOpens(a0, a1, a2));
-        return t_ModuleLayer$Controller::wrap_Object(result);
-      }
-
-      PyErr_SetArgsError((PyObject *) self, "addOpens", args);
-      return NULL;
-    }
-
-    static PyObject *t_ModuleLayer$Controller_addReads(t_ModuleLayer$Controller *self, PyObject *args)
-    {
-      ::java::lang::Module a0((jobject) NULL);
-      ::java::lang::Module a1((jobject) NULL);
-      ModuleLayer$Controller result((jobject) NULL);
-
-      if (!parseArgs(args, "kk", ::java::lang::Module::initializeClass, ::java::lang::Module::initializeClass, &a0, &a1))
-      {
-        OBJ_CALL(result = self->object.addReads(a0, a1));
-        return t_ModuleLayer$Controller::wrap_Object(result);
-      }
-
-      PyErr_SetArgsError((PyObject *) self, "addReads", args);
-      return NULL;
-    }
-
-    static PyObject *t_ModuleLayer$Controller_layer(t_ModuleLayer$Controller *self)
-    {
-      ::java::lang::ModuleLayer result((jobject) NULL);
-      OBJ_CALL(result = self->object.layer());
-      return ::java::lang::t_ModuleLayer::wrap_Object(result);
     }
   }
 }

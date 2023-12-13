@@ -31,13 +31,13 @@ namespace org {
         class GroundReceiverCommonParametersWithoutDerivatives : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_fb8b97640875587d,
-            mid_getOffsetToInertialDownlink_1168c6fb2fb8754f,
-            mid_getState_15e85d5301b90ef8,
-            mid_getStationDownlink_daf15abc21907508,
-            mid_getTauD_557b8123390d8d0c,
-            mid_getTransitPV_daf15abc21907508,
-            mid_getTransitState_15e85d5301b90ef8,
+            mid_init$_07c57a746e2cf86f,
+            mid_getOffsetToInertialDownlink_417755e67b7f769d,
+            mid_getState_9d155cc8314c99cf,
+            mid_getStationDownlink_136cc8ba23b21c29,
+            mid_getTauD_b74f83833fdad017,
+            mid_getTransitPV_136cc8ba23b21c29,
+            mid_getTransitState_9d155cc8314c99cf,
             max_mid
           };
 

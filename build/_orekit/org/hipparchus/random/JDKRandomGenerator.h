@@ -4,11 +4,11 @@
 #include "org/hipparchus/random/IntRandomGenerator.h"
 
 namespace java {
-  namespace util {
-    class Random;
-  }
   namespace lang {
     class Class;
+  }
+  namespace util {
+    class Random;
   }
   namespace io {
     class Serializable;
@@ -23,20 +23,20 @@ namespace org {
       class JDKRandomGenerator : public ::org::hipparchus::random::IntRandomGenerator {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_init$_9d6ab8c2b4bb997b,
-          mid_init$_3cd6a6b354c6aa22,
-          mid_nextBoolean_89b302893bdbe1f1,
-          mid_nextBytes_d759c70c6670fd89,
-          mid_nextDouble_557b8123390d8d0c,
-          mid_nextFloat_04fe014f7609dc26,
-          mid_nextGaussian_557b8123390d8d0c,
-          mid_nextInt_412668abc8d889e9,
-          mid_nextInt_0092017e99012694,
-          mid_nextLong_9e26256fb0d384a2,
-          mid_setSeed_ec63cb8a58ef5a54,
-          mid_setSeed_a3da1a935cb37f7b,
-          mid_setSeed_3cd6a6b354c6aa22,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_init$_61462ed9aef3cca2,
+          mid_init$_3d7dd2314a0dd456,
+          mid_nextBoolean_9ab94ac1dc23b105,
+          mid_nextBytes_459771b03534868e,
+          mid_nextDouble_b74f83833fdad017,
+          mid_nextFloat_1fb1bf0772ae5db7,
+          mid_nextGaussian_b74f83833fdad017,
+          mid_nextInt_55546ef6a647f39b,
+          mid_nextInt_0e7cf35192c3effe,
+          mid_nextLong_6c0ce7e438e5ded4,
+          mid_setSeed_86a2769cb881d388,
+          mid_setSeed_44ed599e93e8a30c,
+          mid_setSeed_3d7dd2314a0dd456,
           max_mid
         };
 

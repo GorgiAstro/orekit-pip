@@ -41,9 +41,9 @@ namespace org {
             class AdditionalCovarianceMetadataKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_6f0c70d4889bd78e,
-                mid_valueOf_7c12ad021662d2aa,
-                mid_values_c755e15f52b8dfb9,
+                mid_process_f098100daf0b7e97,
+                mid_valueOf_5ccdc9661978f168,
+                mid_values_6cfefcfb61f43e57,
                 max_mid
               };
 

@@ -4,12 +4,12 @@
 #include "java/io/InputStream.h"
 
 namespace java {
-  namespace io {
-    class IOException;
-  }
   namespace lang {
     class String;
     class Class;
+  }
+  namespace io {
+    class IOException;
   }
 }
 template<class T> class JArray;
@@ -21,17 +21,17 @@ namespace org {
       class ZipJarCrawler$Archive$EntryStream : public ::java::io::InputStream {
        public:
         enum {
-          mid_available_412668abc8d889e9,
-          mid_close_0640e6acf969ed28,
-          mid_getName_3cffd47377eca18a,
-          mid_isDirectory_89b302893bdbe1f1,
-          mid_mark_a3da1a935cb37f7b,
-          mid_markSupported_89b302893bdbe1f1,
-          mid_read_412668abc8d889e9,
-          mid_read_67c88f2bf4e7f8b2,
-          mid_read_68a76742c8623fb3,
-          mid_reset_0640e6acf969ed28,
-          mid_skip_f4ad805a81234b49,
+          mid_available_55546ef6a647f39b,
+          mid_close_a1fa5dae97ea5ed2,
+          mid_getName_1c1fa1e935d6cdcf,
+          mid_isDirectory_9ab94ac1dc23b105,
+          mid_mark_44ed599e93e8a30c,
+          mid_markSupported_9ab94ac1dc23b105,
+          mid_read_55546ef6a647f39b,
+          mid_read_53324f422c2c7f64,
+          mid_read_296dd75c373e2c1d,
+          mid_reset_a1fa5dae97ea5ed2,
+          mid_skip_9db63109f74a74fc,
           max_mid
         };
 

@@ -28,9 +28,9 @@ namespace org {
       class PivotingStrategy : public ::java::lang::Enum {
        public:
         enum {
-          mid_pivotIndex_77c2509677720eda,
-          mid_valueOf_efc6a41649bdcb84,
-          mid_values_e1862acc3dc110cb,
+          mid_pivotIndex_a39b8700a2dab961,
+          mid_valueOf_861337c48a57490d,
+          mid_values_784bb9013e909172,
           max_mid
         };
 

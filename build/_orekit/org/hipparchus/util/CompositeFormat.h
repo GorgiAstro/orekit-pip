@@ -5,17 +5,17 @@
 
 namespace java {
   namespace text {
+    class FieldPosition;
     class ParsePosition;
     class NumberFormat;
-    class FieldPosition;
   }
   namespace util {
     class Locale;
   }
   namespace lang {
     class Number;
-    class Class;
     class StringBuffer;
+    class Class;
     class String;
   }
 }
@@ -28,13 +28,13 @@ namespace org {
       class CompositeFormat : public ::java::lang::Object {
        public:
         enum {
-          mid_formatDouble_d7c56a79155e517c,
-          mid_getDefaultNumberFormat_001645e916bd626d,
-          mid_getDefaultNumberFormat_eb8cc1bc569326d0,
-          mid_parseAndIgnoreWhitespace_c31631851425bff4,
-          mid_parseFixedstring_5eb943e76b31513b,
-          mid_parseNextCharacter_925fed7c0b932e5a,
-          mid_parseNumber_9653b7c6be11e290,
+          mid_formatDouble_dbb787bb65ee7daa,
+          mid_getDefaultNumberFormat_87ffffc449cd25a5,
+          mid_getDefaultNumberFormat_3c858cd11341b00a,
+          mid_parseAndIgnoreWhitespace_1df84bc342ab1345,
+          mid_parseFixedstring_07decc762bc95813,
+          mid_parseNextCharacter_ab936c5146b74d5a,
+          mid_parseNumber_15d59e9ef502093d,
           max_mid
         };
 

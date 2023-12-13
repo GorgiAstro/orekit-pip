@@ -4,16 +4,16 @@
 #include "org/orekit/propagation/conversion/AbstractFieldIntegratorBuilder.h"
 
 namespace org {
+  namespace orekit {
+    namespace orbits {
+      class Orbit;
+      class OrbitType;
+    }
+  }
   namespace hipparchus {
     class Field;
     namespace ode {
       class AbstractFieldIntegrator;
-    }
-  }
-  namespace orekit {
-    namespace orbits {
-      class OrbitType;
-      class Orbit;
     }
   }
 }
@@ -32,7 +32,7 @@ namespace org {
         class AbstractVariableStepFieldIntegratorBuilder : public ::org::orekit::propagation::conversion::AbstractFieldIntegratorBuilder {
          public:
           enum {
-            mid_buildIntegrator_3a1ee7ebe4f0e344,
+            mid_buildIntegrator_ce58c6ef4cfb23c4,
             max_mid
           };
 

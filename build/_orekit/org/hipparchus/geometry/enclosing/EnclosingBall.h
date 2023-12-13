@@ -28,13 +28,13 @@ namespace org {
         class EnclosingBall : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a03f4ce268469baa,
-            mid_contains_d92750ddbead1ab5,
-            mid_contains_7f6f17594f569eaa,
-            mid_getCenter_abb5df84e8ab06b8,
-            mid_getRadius_557b8123390d8d0c,
-            mid_getSupport_029301c85132187e,
-            mid_getSupportSize_412668abc8d889e9,
+            mid_init$_0cf43987106ef7f4,
+            mid_contains_b92074fa0a6b377c,
+            mid_contains_939c2b4f37355197,
+            mid_getCenter_4b90e5ca2d7b0c50,
+            mid_getRadius_b74f83833fdad017,
+            mid_getSupport_afc97567b9ab5b54,
+            mid_getSupportSize_55546ef6a647f39b,
             max_mid
           };
 

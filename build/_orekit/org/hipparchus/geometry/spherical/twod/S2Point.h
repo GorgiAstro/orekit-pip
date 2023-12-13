@@ -5,24 +5,24 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-      class MathRuntimeException;
-    }
     namespace geometry {
+      class Space;
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
+      class Point;
       namespace spherical {
         namespace twod {
           class Sphere2D;
           class S2Point;
         }
       }
-      class Point;
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-      class Space;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathRuntimeException;
     }
   }
 }
@@ -43,20 +43,20 @@ namespace org {
           class S2Point : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_2810d2bec90e7b1c,
-              mid_init$_ab23f4ae0fb33968,
-              mid_distance_cf1fec2b7b1c0efe,
-              mid_distance_8531a7312d9da5ba,
-              mid_equals_221e8e85cb385209,
-              mid_equalsIeee754_221e8e85cb385209,
-              mid_getPhi_557b8123390d8d0c,
-              mid_getSpace_cf9410d213a7cbb9,
-              mid_getTheta_557b8123390d8d0c,
-              mid_getVector_f88961cca75a2c0a,
-              mid_hashCode_412668abc8d889e9,
-              mid_isNaN_89b302893bdbe1f1,
-              mid_negate_0ba7e0560ff59fd8,
-              mid_toString_3cffd47377eca18a,
+              mid_init$_1844f891addbac57,
+              mid_init$_369b4c97255d5afa,
+              mid_distance_f0dd8cb59ea09794,
+              mid_distance_76f75333fe7fe00c,
+              mid_equals_460c5e2d9d51c6cc,
+              mid_equalsIeee754_460c5e2d9d51c6cc,
+              mid_getPhi_b74f83833fdad017,
+              mid_getSpace_9afbccb68c8e9ef8,
+              mid_getTheta_b74f83833fdad017,
+              mid_getVector_8b724f8b4fdad1a2,
+              mid_hashCode_55546ef6a647f39b,
+              mid_isNaN_9ab94ac1dc23b105,
+              mid_negate_cf0fa877996d1fcc,
+              mid_toString_1c1fa1e935d6cdcf,
               max_mid
             };
 

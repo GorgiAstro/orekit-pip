@@ -3,18 +3,18 @@
 
 #include "org/hipparchus/exception/MathRuntimeException.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class Localizable;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class Throwable;
     class Class;
     class Object;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class Localizable;
+    }
   }
 }
 template<class T> class JArray;
@@ -26,8 +26,8 @@ namespace org {
       class MathIllegalArgumentException : public ::org::hipparchus::exception::MathRuntimeException {
        public:
         enum {
-          mid_init$_4fde7f3f87bbd6f7,
-          mid_init$_0ff5a331e85ddf14,
+          mid_init$_9b3ada3301b0db8c,
+          mid_init$_4d462b77e7e55a0d,
           max_mid
         };
 

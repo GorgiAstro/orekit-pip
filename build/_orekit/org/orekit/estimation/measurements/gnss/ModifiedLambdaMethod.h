@@ -19,12 +19,12 @@ namespace org {
           class ModifiedLambdaMethod : public ::org::orekit::estimation::measurements::gnss::AbstractLambdaMethod {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_sign_7e960cd6eee376d8,
-              mid_discreteSearch_0640e6acf969ed28,
-              mid_ltdlDecomposition_0640e6acf969ed28,
-              mid_reduction_0640e6acf969ed28,
-              mid_inverseDecomposition_0640e6acf969ed28,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_discreteSearch_a1fa5dae97ea5ed2,
+              mid_ltdlDecomposition_a1fa5dae97ea5ed2,
+              mid_reduction_a1fa5dae97ea5ed2,
+              mid_inverseDecomposition_a1fa5dae97ea5ed2,
+              mid_sign_04fd0666b613d2ab,
               max_mid
             };
 

@@ -5,11 +5,8 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      namespace conversion {
-        class PropagatorBuilder;
-      }
-      class Propagator;
+    namespace utils {
+      class ParameterDriversList;
     }
     namespace estimation {
       namespace measurements {
@@ -20,22 +17,25 @@ namespace org {
         class BatchLSObserver;
       }
     }
-    namespace utils {
-      class ParameterDriversList;
+    namespace propagation {
+      class Propagator;
+      namespace conversion {
+        class PropagatorBuilder;
+      }
     }
   }
   namespace hipparchus {
     namespace optim {
+      class ConvergenceChecker;
       namespace nonlinear {
         namespace vector {
           namespace leastsquares {
             class LeastSquaresOptimizer;
-            class LeastSquaresOptimizer$Optimum;
             class LeastSquaresProblem$Evaluation;
+            class LeastSquaresOptimizer$Optimum;
           }
         }
       }
-      class ConvergenceChecker;
     }
     namespace linear {
       class RealMatrix;
@@ -60,22 +60,22 @@ namespace org {
         class BatchLSEstimator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_e1196493cd3809bc,
-            mid_addMeasurement_4063373aad443d2b,
-            mid_estimate_2d0616b730e7ec0f,
-            mid_getEvaluationsCount_412668abc8d889e9,
-            mid_getIterationsCount_412668abc8d889e9,
-            mid_getLastEstimations_1e62c2f73fbdd1c4,
-            mid_getMeasurementsParametersDrivers_4f6dd8cf21dd8817,
-            mid_getOptimum_7e2f60993e150a77,
-            mid_getOrbitalParametersDrivers_4f6dd8cf21dd8817,
-            mid_getPhysicalCovariances_e95e381257af03e9,
-            mid_getPropagatorParametersDrivers_4f6dd8cf21dd8817,
-            mid_setConvergenceChecker_38783cba7e493c69,
-            mid_setMaxEvaluations_a3da1a935cb37f7b,
-            mid_setMaxIterations_a3da1a935cb37f7b,
-            mid_setObserver_677f6e1bcad1374b,
-            mid_setParametersConvergenceThreshold_10f281d777284cea,
+            mid_init$_4ea528b84c668043,
+            mid_addMeasurement_1640bf51befb0c77,
+            mid_estimate_17493e4ff0ba8a7f,
+            mid_getEvaluationsCount_55546ef6a647f39b,
+            mid_getIterationsCount_55546ef6a647f39b,
+            mid_getLastEstimations_810bed48fafb0b9a,
+            mid_getMeasurementsParametersDrivers_f4ab92625193d439,
+            mid_getOptimum_ae37d9c1ca8671a9,
+            mid_getOrbitalParametersDrivers_f4ab92625193d439,
+            mid_getPhysicalCovariances_f5dd9d6021dc9dae,
+            mid_getPropagatorParametersDrivers_f4ab92625193d439,
+            mid_setConvergenceChecker_faeab0ed0f5e2304,
+            mid_setMaxEvaluations_44ed599e93e8a30c,
+            mid_setMaxIterations_44ed599e93e8a30c,
+            mid_setObserver_656e84af1aeac1c9,
+            mid_setParametersConvergenceThreshold_8ba9fe7a847cecad,
             max_mid
           };
 

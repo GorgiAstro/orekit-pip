@@ -8,11 +8,11 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
-          class Line;
           class Vector3D;
-          class FieldLine;
           class FieldRotation;
+          class FieldVector3D;
+          class FieldLine;
+          class Line;
         }
       }
     }
@@ -42,23 +42,23 @@ namespace org {
       class FieldStaticTransform : public ::org::orekit::time::TimeStamped {
        public:
         enum {
-          mid_compose_066a6913a4b63ff5,
-          mid_compositeRotation_014853c586edcdd1,
-          mid_compositeTranslation_44279ba3a6027e62,
-          mid_getIdentity_2bcc0f7f43ffb45e,
-          mid_getInverse_fe2c5c7bc73a25b6,
-          mid_getRotation_73da4eeccf2b7e14,
-          mid_getTranslation_2d64addf4c3391d9,
-          mid_of_d8bca083a85ca2e7,
-          mid_of_7bc4315b92dbfe6f,
-          mid_of_860013017bff522f,
-          mid_of_d7b67bfa134276b0,
-          mid_transformLine_d12840109f20e722,
-          mid_transformLine_74f3858d2d426a7f,
-          mid_transformPosition_588ed0f09550adb9,
-          mid_transformPosition_3d90e30d4cb13513,
-          mid_transformVector_588ed0f09550adb9,
-          mid_transformVector_3d90e30d4cb13513,
+          mid_compose_9105b66daa9d24f1,
+          mid_compositeRotation_2208b259da045dcf,
+          mid_compositeTranslation_6d6daa21bda0ae5f,
+          mid_getIdentity_fcb78665b94e4648,
+          mid_getInverse_f5bae1937d1edbc7,
+          mid_getRotation_1e54a5caa5199c2e,
+          mid_getTranslation_ff5ac73a7b43eddd,
+          mid_of_7dd5a16ee5376cd6,
+          mid_of_48b63227f7d28e46,
+          mid_of_bd0a27faa06d5d8d,
+          mid_of_9fd334eaeb2212b6,
+          mid_transformLine_f23b0a932a8a1dcc,
+          mid_transformLine_2cacbd5ce2a6a87d,
+          mid_transformPosition_49157187b00e5904,
+          mid_transformPosition_356b02aa715afa02,
+          mid_transformVector_49157187b00e5904,
+          mid_transformVector_356b02aa715afa02,
           max_mid
         };
 

@@ -5,21 +5,21 @@
 
 namespace org {
   namespace orekit {
-    namespace orbits {
-      class Orbit;
-      class FieldOrbit;
-    }
     namespace propagation {
       class FieldStateCovariance;
       class StateCovariance;
     }
+    namespace orbits {
+      class Orbit;
+      class FieldOrbit;
+    }
   }
   namespace hipparchus {
-    namespace linear {
-      class FieldMatrix;
-      class RealMatrix;
-    }
     class Field;
+    namespace linear {
+      class RealMatrix;
+      class FieldMatrix;
+    }
   }
 }
 namespace java {
@@ -36,9 +36,9 @@ namespace org {
       class Fieldifier : public ::java::lang::Object {
        public:
         enum {
-          mid_fieldify_e9be6c9886c2ede1,
-          mid_fieldify_a3f9f869471db509,
-          mid_fieldify_2b8bd54a32522ec8,
+          mid_fieldify_9b0122682636b413,
+          mid_fieldify_1115a57aafd01f21,
+          mid_fieldify_e3682f5ba20b6fed,
           max_mid
         };
 

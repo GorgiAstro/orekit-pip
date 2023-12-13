@@ -20,12 +20,12 @@ namespace org {
             class GNSSClockElements : public ::org::orekit::time::TimeStamped {
              public:
               enum {
-                mid_getAf0_557b8123390d8d0c,
-                mid_getAf1_557b8123390d8d0c,
-                mid_getAf2_557b8123390d8d0c,
-                mid_getCycleDuration_557b8123390d8d0c,
-                mid_getTGD_557b8123390d8d0c,
-                mid_getToc_557b8123390d8d0c,
+                mid_getAf0_b74f83833fdad017,
+                mid_getAf1_b74f83833fdad017,
+                mid_getAf2_b74f83833fdad017,
+                mid_getCycleDuration_b74f83833fdad017,
+                mid_getTGD_b74f83833fdad017,
+                mid_getToc_b74f83833fdad017,
                 max_mid
               };
 

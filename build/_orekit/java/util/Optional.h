@@ -27,21 +27,21 @@ namespace java {
     class Optional : public ::java::lang::Object {
      public:
       enum {
-        mid_empty_d0ccac9b4c6bdd55,
-        mid_equals_221e8e85cb385209,
-        mid_get_e661fe3ba2fafb22,
-        mid_hashCode_412668abc8d889e9,
-        mid_isEmpty_89b302893bdbe1f1,
-        mid_isPresent_89b302893bdbe1f1,
-        mid_of_a5279ad90f7422e8,
-        mid_ofNullable_a5279ad90f7422e8,
-        mid_or_f655b6b80eaffe76,
-        mid_orElse_65d69db95c5eb156,
-        mid_orElseGet_f204f9de7bbbfc88,
-        mid_orElseThrow_e661fe3ba2fafb22,
-        mid_orElseThrow_f204f9de7bbbfc88,
-        mid_stream_d7cce92225eb0db2,
-        mid_toString_3cffd47377eca18a,
+        mid_empty_9fe5189c8c3b230d,
+        mid_equals_460c5e2d9d51c6cc,
+        mid_get_541690f9ee81d3ad,
+        mid_hashCode_55546ef6a647f39b,
+        mid_isEmpty_9ab94ac1dc23b105,
+        mid_isPresent_9ab94ac1dc23b105,
+        mid_of_9cbbcd2b19204a9a,
+        mid_ofNullable_9cbbcd2b19204a9a,
+        mid_or_c21c430465811668,
+        mid_orElse_5804c890f94a02b6,
+        mid_orElseGet_800ae6b5a8263b1c,
+        mid_orElseThrow_541690f9ee81d3ad,
+        mid_orElseThrow_800ae6b5a8263b1c,
+        mid_stream_14e21bf777ff0ccf,
+        mid_toString_1c1fa1e935d6cdcf,
         max_mid
       };
 

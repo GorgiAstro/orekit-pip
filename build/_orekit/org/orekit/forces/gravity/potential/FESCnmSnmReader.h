@@ -24,8 +24,8 @@ namespace org {
           class FESCnmSnmReader : public ::org::orekit::forces::gravity::potential::OceanTidesReader {
            public:
             enum {
-              mid_init$_c6843ef8200b1ede,
-              mid_loadData_15770e8d8949a557,
+              mid_init$_b7ec643e4edd96c5,
+              mid_loadData_360461e719fb564c,
               max_mid
             };
 

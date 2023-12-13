@@ -5,17 +5,17 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace stat {
       namespace descriptive {
         namespace summary {
           class Sum;
         }
-        class AggregatableStatistic;
         class WeightedEvaluation;
+        class AggregatableStatistic;
       }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -38,15 +38,15 @@ namespace org {
           class Sum : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_aggregate_61be0f1aec2d16e4,
-              mid_clear_0640e6acf969ed28,
-              mid_copy_b2be7f5cb61a7de1,
-              mid_evaluate_9eeeb1ae977f525d,
-              mid_evaluate_579f1672894f464a,
-              mid_getN_9e26256fb0d384a2,
-              mid_getResult_557b8123390d8d0c,
-              mid_increment_10f281d777284cea,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_aggregate_860425ec69ccf3c3,
+              mid_clear_a1fa5dae97ea5ed2,
+              mid_copy_e7d254c0bec0b758,
+              mid_evaluate_1567a80062adb31b,
+              mid_evaluate_0f0d79795aa485ac,
+              mid_getN_6c0ce7e438e5ded4,
+              mid_getResult_b74f83833fdad017,
+              mid_increment_8ba9fe7a847cecad,
               max_mid
             };
 

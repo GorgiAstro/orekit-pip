@@ -5,13 +5,13 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace rugged {
       namespace linesensor {
         class LineDatation;
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -30,10 +30,10 @@ namespace org {
         class LinearLineDatation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_80c808f44ee4ae1c,
-            mid_getDate_8ef471ef852a9678,
-            mid_getLine_b0b988f941da47d8,
-            mid_getRate_7e960cd6eee376d8,
+            mid_init$_574dcea0b820e53f,
+            mid_getDate_f359a0110559347a,
+            mid_getLine_fd347811007a6ba3,
+            mid_getRate_04fd0666b613d2ab,
             max_mid
           };
 

@@ -5,16 +5,16 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class DatesSelector;
+      class AbsoluteDate;
+    }
     namespace estimation {
       namespace measurements {
         namespace generation {
           class MeasurementBuilder;
         }
       }
-    }
-    namespace time {
-      class DatesSelector;
-      class AbsoluteDate;
     }
   }
 }
@@ -35,12 +35,12 @@ namespace org {
           class PythonAbstractScheduler : public ::org::orekit::estimation::measurements::generation::AbstractScheduler {
            public:
             enum {
-              mid_init$_abb76428109f399d,
-              mid_finalize_0640e6acf969ed28,
-              mid_measurementIsFeasible_981023bfa4a8a093,
-              mid_pythonDecRef_0640e6acf969ed28,
-              mid_pythonExtension_9e26256fb0d384a2,
-              mid_pythonExtension_3cd6a6b354c6aa22,
+              mid_init$_1c3d87302302feaf,
+              mid_finalize_a1fa5dae97ea5ed2,
+              mid_measurementIsFeasible_a35647bda2901f54,
+              mid_pythonDecRef_a1fa5dae97ea5ed2,
+              mid_pythonExtension_6c0ce7e438e5ded4,
+              mid_pythonExtension_3d7dd2314a0dd456,
               max_mid
             };
 

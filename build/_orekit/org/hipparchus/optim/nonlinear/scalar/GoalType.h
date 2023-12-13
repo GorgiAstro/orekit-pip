@@ -32,8 +32,8 @@ namespace org {
           class GoalType : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_c3f73218204d4841,
-              mid_values_1d242ab20f6f15e3,
+              mid_valueOf_aed5e2c523d11e5a,
+              mid_values_a2c1a8eec5ec2bd7,
               max_mid
             };
 

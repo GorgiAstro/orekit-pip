@@ -6,9 +6,9 @@
 namespace java {
   namespace lang {
     class ModuleLayer;
+    class ModuleLayer$Controller;
     class Module;
     class Class;
-    class ModuleLayer$Controller;
     class String;
     class ClassLoader;
   }
@@ -26,13 +26,13 @@ namespace java {
     class ModuleLayer : public ::java::lang::Object {
      public:
       enum {
-        mid_boot_a9837dd004e81a19,
-        mid_empty_a9837dd004e81a19,
-        mid_findLoader_a03391f23408d51d,
-        mid_findModule_9c3a4165b34182b4,
-        mid_modules_2dfcbd371d62f4e1,
-        mid_parents_0d9551367f7ecdef,
-        mid_toString_3cffd47377eca18a,
+        mid_boot_c147713285b11692,
+        mid_empty_c147713285b11692,
+        mid_findLoader_7980adf98b67e930,
+        mid_findModule_fc4fec43e040d30a,
+        mid_modules_7e8f11dd23d1142c,
+        mid_parents_e62d3bb06d56d7e3,
+        mid_toString_1c1fa1e935d6cdcf,
         max_mid
       };
 

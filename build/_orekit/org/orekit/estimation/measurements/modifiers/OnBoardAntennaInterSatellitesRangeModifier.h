@@ -3,27 +3,7 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
-  namespace orekit {
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace estimation {
-      namespace measurements {
-        class EstimatedMeasurementBase;
-        class InterSatellitesRange;
-        class EstimationModifier;
-      }
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -32,6 +12,26 @@ namespace org {
         }
       }
     }
+  }
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class EstimationModifier;
+        class EstimatedMeasurementBase;
+        class InterSatellitesRange;
+      }
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -45,9 +45,9 @@ namespace org {
           class OnBoardAntennaInterSatellitesRangeModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_be9548a8a583a03d,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_modifyWithoutDerivatives_e471490df8741b73,
+              mid_init$_b651b5ef96594ce8,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_modifyWithoutDerivatives_308087fabc1d7f66,
               max_mid
             };
 

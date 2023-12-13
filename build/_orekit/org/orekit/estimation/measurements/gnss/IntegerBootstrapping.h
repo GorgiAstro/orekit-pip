@@ -19,9 +19,9 @@ namespace org {
           class IntegerBootstrapping : public ::org::orekit::estimation::measurements::gnss::LambdaMethod {
            public:
             enum {
-              mid_init$_10f281d777284cea,
-              mid_discreteSearch_0640e6acf969ed28,
-              mid_recoverAmbiguities_152c52200b30dda4,
+              mid_init$_8ba9fe7a847cecad,
+              mid_discreteSearch_a1fa5dae97ea5ed2,
+              mid_recoverAmbiguities_992f722e5b5b80cb,
               max_mid
             };
 

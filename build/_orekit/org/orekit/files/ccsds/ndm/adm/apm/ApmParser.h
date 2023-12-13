@@ -8,14 +8,14 @@ namespace org {
     namespace files {
       namespace ccsds {
         namespace ndm {
-          class ParsedUnitsBehavior;
           namespace adm {
-            namespace apm {
-              class ApmParser;
-              class Apm;
-            }
             class AdmHeader;
+            namespace apm {
+              class Apm;
+              class ApmParser;
+            }
           }
+          class ParsedUnitsBehavior;
         }
         namespace utils {
           class FileFormat;
@@ -51,18 +51,18 @@ namespace org {
               class ApmParser : public ::org::orekit::files::ccsds::ndm::adm::AdmParser {
                public:
                 enum {
-                  mid_build_691c47b62bac3b4a,
-                  mid_finalizeData_89b302893bdbe1f1,
-                  mid_finalizeHeader_89b302893bdbe1f1,
-                  mid_finalizeMetadata_89b302893bdbe1f1,
-                  mid_getHeader_880defc2f8f9f844,
-                  mid_inData_89b302893bdbe1f1,
-                  mid_inHeader_89b302893bdbe1f1,
-                  mid_inMetadata_89b302893bdbe1f1,
-                  mid_prepareData_89b302893bdbe1f1,
-                  mid_prepareHeader_89b302893bdbe1f1,
-                  mid_prepareMetadata_89b302893bdbe1f1,
-                  mid_reset_a580586827f4ec13,
+                  mid_build_b2f14c5dd9556061,
+                  mid_finalizeData_9ab94ac1dc23b105,
+                  mid_finalizeHeader_9ab94ac1dc23b105,
+                  mid_finalizeMetadata_9ab94ac1dc23b105,
+                  mid_getHeader_beec2990b8b4fe1e,
+                  mid_inData_9ab94ac1dc23b105,
+                  mid_inHeader_9ab94ac1dc23b105,
+                  mid_inMetadata_9ab94ac1dc23b105,
+                  mid_prepareData_9ab94ac1dc23b105,
+                  mid_prepareHeader_9ab94ac1dc23b105,
+                  mid_prepareMetadata_9ab94ac1dc23b105,
+                  mid_reset_28163d47221b3cf7,
                   max_mid
                 };
 

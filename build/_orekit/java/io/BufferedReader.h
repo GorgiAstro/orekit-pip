@@ -25,18 +25,18 @@ namespace java {
     class BufferedReader : public ::java::io::Reader {
      public:
       enum {
-        mid_init$_d679cb724d14a1e8,
-        mid_init$_bef797222a3f4702,
-        mid_close_0640e6acf969ed28,
-        mid_lines_d7cce92225eb0db2,
-        mid_mark_a3da1a935cb37f7b,
-        mid_markSupported_89b302893bdbe1f1,
-        mid_read_412668abc8d889e9,
-        mid_read_f0b052b9721148b0,
-        mid_readLine_3cffd47377eca18a,
-        mid_ready_89b302893bdbe1f1,
-        mid_reset_0640e6acf969ed28,
-        mid_skip_f4ad805a81234b49,
+        mid_init$_e1a387c1ca9243a3,
+        mid_init$_f4e06c40be13a44b,
+        mid_close_a1fa5dae97ea5ed2,
+        mid_lines_14e21bf777ff0ccf,
+        mid_mark_44ed599e93e8a30c,
+        mid_markSupported_9ab94ac1dc23b105,
+        mid_read_55546ef6a647f39b,
+        mid_read_a45a4db28976f262,
+        mid_readLine_1c1fa1e935d6cdcf,
+        mid_ready_9ab94ac1dc23b105,
+        mid_reset_a1fa5dae97ea5ed2,
+        mid_skip_9db63109f74a74fc,
         max_mid
       };
 

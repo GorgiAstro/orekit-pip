@@ -5,17 +5,9 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class LOF;
-      class LOFType;
-    }
     namespace utils {
       class FieldPVCoordinates;
       class PVCoordinates;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
     }
     namespace files {
       namespace ccsds {
@@ -24,13 +16,21 @@ namespace org {
         }
       }
     }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
+    namespace frames {
+      class LOFType;
+      class LOF;
+    }
   }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Rotation;
           class FieldRotation;
+          class Rotation;
         }
       }
     }
@@ -52,16 +52,16 @@ namespace org {
       class LOFType : public ::java::lang::Enum {
        public:
         enum {
-          mid_getName_3cffd47377eca18a,
-          mid_rotationFromInertial_8b424804999938a4,
-          mid_rotationFromInertial_9b71bf39454b4a07,
-          mid_rotationFromInertial_352d2666b9e583bd,
-          mid_rotationFromInertial_1022f468fb3d1015,
-          mid_rotationFromLOF_8d5767b4634d801e,
-          mid_rotationFromLOF_6bc33cb92fb35718,
-          mid_toOrbitRelativeFrame_8f84f1568afeba4e,
-          mid_valueOf_60012f35de3d5983,
-          mid_values_021586431706f290,
+          mid_getName_1c1fa1e935d6cdcf,
+          mid_rotationFromInertial_7e9d52385b0ba3f0,
+          mid_rotationFromInertial_9c03210e4a66b8b3,
+          mid_rotationFromInertial_80cbd49af33092b8,
+          mid_rotationFromInertial_8f928c19e9edde2b,
+          mid_rotationFromLOF_404fd1e1ee7a0f99,
+          mid_rotationFromLOF_8e169a23d8373027,
+          mid_toOrbitRelativeFrame_77481b528a1ae805,
+          mid_valueOf_2862ff6fc1bb5941,
+          mid_values_20b2193d6f06e063,
           max_mid
         };
 

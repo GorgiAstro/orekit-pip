@@ -5,17 +5,17 @@
 
 namespace org {
   namespace orekit {
+    namespace bodies {
+      class OneAxisEllipsoid;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace propagation {
       namespace events {
         class LongitudeCrossingDetector;
       }
       class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace bodies {
-      class OneAxisEllipsoid;
     }
   }
 }
@@ -34,13 +34,13 @@ namespace org {
         class LongitudeCrossingDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_cee3325573481ef4,
-            mid_init$_732c94d692efbcdf,
-            mid_g_1bbf81d80c47ecdd,
-            mid_getBody_0c55bd1adf955c4c,
-            mid_getLongitude_557b8123390d8d0c,
-            mid_init_0472264ad6f40bc2,
-            mid_create_08e20d34148f61f0,
+            mid_init$_d11e39be76d848c0,
+            mid_init$_2b115367b64f9286,
+            mid_g_a17ea857ce74d258,
+            mid_getBody_dd5c4288aa5a3dd8,
+            mid_getLongitude_b74f83833fdad017,
+            mid_init_2d7f9a496c7e9781,
+            mid_create_79621c4db5045679,
             max_mid
           };
 

@@ -32,11 +32,11 @@ namespace org {
         class NegateDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_2e2dfaf38ed50d1d,
-            mid_g_1bbf81d80c47ecdd,
-            mid_getOriginal_0701b00b25822fff,
-            mid_init_0472264ad6f40bc2,
-            mid_create_067d6eaa97883114,
+            mid_init$_e13564f833403504,
+            mid_g_a17ea857ce74d258,
+            mid_getOriginal_9ada55f07f5a223c,
+            mid_init_2d7f9a496c7e9781,
+            mid_create_b636b8e6ef44d5d7,
             max_mid
           };
 

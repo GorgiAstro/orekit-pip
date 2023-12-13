@@ -34,22 +34,22 @@ namespace org {
           class PythonJB2008InputParameters : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_finalize_0640e6acf969ed28,
-              mid_getDSTDTC_b0b988f941da47d8,
-              mid_getF10_b0b988f941da47d8,
-              mid_getF10B_b0b988f941da47d8,
-              mid_getMaxDate_7a97f7e149e79afb,
-              mid_getMinDate_7a97f7e149e79afb,
-              mid_getS10_b0b988f941da47d8,
-              mid_getS10B_b0b988f941da47d8,
-              mid_getXM10_b0b988f941da47d8,
-              mid_getXM10B_b0b988f941da47d8,
-              mid_getY10_b0b988f941da47d8,
-              mid_getY10B_b0b988f941da47d8,
-              mid_pythonDecRef_0640e6acf969ed28,
-              mid_pythonExtension_9e26256fb0d384a2,
-              mid_pythonExtension_3cd6a6b354c6aa22,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_finalize_a1fa5dae97ea5ed2,
+              mid_getDSTDTC_fd347811007a6ba3,
+              mid_getF10_fd347811007a6ba3,
+              mid_getF10B_fd347811007a6ba3,
+              mid_getMaxDate_c325492395d89b24,
+              mid_getMinDate_c325492395d89b24,
+              mid_getS10_fd347811007a6ba3,
+              mid_getS10B_fd347811007a6ba3,
+              mid_getXM10_fd347811007a6ba3,
+              mid_getXM10B_fd347811007a6ba3,
+              mid_getY10_fd347811007a6ba3,
+              mid_getY10B_fd347811007a6ba3,
+              mid_pythonDecRef_a1fa5dae97ea5ed2,
+              mid_pythonExtension_6c0ce7e438e5ded4,
+              mid_pythonExtension_3d7dd2314a0dd456,
               max_mid
             };
 

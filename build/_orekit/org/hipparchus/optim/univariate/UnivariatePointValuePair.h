@@ -21,9 +21,9 @@ namespace org {
         class UnivariatePointValuePair : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_ab23f4ae0fb33968,
-            mid_getPoint_557b8123390d8d0c,
-            mid_getValue_557b8123390d8d0c,
+            mid_init$_369b4c97255d5afa,
+            mid_getPoint_b74f83833fdad017,
+            mid_getValue_b74f83833fdad017,
             max_mid
           };
 

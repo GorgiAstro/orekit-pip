@@ -3,15 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace data {
@@ -27,6 +18,15 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace io {
+    class IOException;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -37,10 +37,10 @@ namespace org {
         class CRDParser : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_init$_3e3301925c0131d4,
-            mid_getTimeScale_527ee9dde1a96470,
-            mid_parse_55616e1bfd4b461a,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_init$_cae5d0c3721eff67,
+            mid_getTimeScale_34d3bda0a8989e3e,
+            mid_parse_d0ee9288361369fc,
             max_mid
           };
 

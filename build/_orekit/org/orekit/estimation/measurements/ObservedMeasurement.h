@@ -16,10 +16,10 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class ObservableSatellite;
-        class EstimatedMeasurement;
-        class EstimatedMeasurementBase;
         class EstimationModifier;
+        class EstimatedMeasurementBase;
+        class EstimatedMeasurement;
+        class ObservableSatellite;
       }
     }
     namespace utils {
@@ -40,17 +40,17 @@ namespace org {
         class ObservedMeasurement : public ::org::orekit::estimation::measurements::ComparableMeasurement {
          public:
           enum {
-            mid_addModifier_6f472135bf397672,
-            mid_estimate_eae039ee8c8a4a4d,
-            mid_estimateWithoutDerivatives_71d69ca0f7c280a7,
-            mid_getBaseWeight_a53a7513ecedada2,
-            mid_getDimension_412668abc8d889e9,
-            mid_getMeasurementType_3cffd47377eca18a,
-            mid_getModifiers_0d9551367f7ecdef,
-            mid_getSatellites_0d9551367f7ecdef,
-            mid_getTheoreticalStandardDeviation_a53a7513ecedada2,
-            mid_isEnabled_89b302893bdbe1f1,
-            mid_setEnabled_ed2afdb8506b9742,
+            mid_addModifier_cb38ed914ba48f20,
+            mid_estimate_d598991c5cac8ab0,
+            mid_estimateWithoutDerivatives_9347cf3b1f0dd85a,
+            mid_getBaseWeight_25e1757a36c4dde2,
+            mid_getDimension_55546ef6a647f39b,
+            mid_getMeasurementType_1c1fa1e935d6cdcf,
+            mid_getModifiers_e62d3bb06d56d7e3,
+            mid_getSatellites_e62d3bb06d56d7e3,
+            mid_getTheoreticalStandardDeviation_25e1757a36c4dde2,
+            mid_isEnabled_9ab94ac1dc23b105,
+            mid_setEnabled_fcb96c98de6fad04,
             max_mid
           };
 

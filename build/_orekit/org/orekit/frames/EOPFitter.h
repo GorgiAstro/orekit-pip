@@ -14,9 +14,9 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace frames {
-      class EOPFittedModel;
-      class SingleParameterFitter;
       class EOPHistory;
+      class SingleParameterFitter;
+      class EOPFittedModel;
     }
   }
 }
@@ -29,8 +29,8 @@ namespace org {
       class EOPFitter : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_e586bdb7bb59c8ba,
-          mid_fit_acbe010d10a5ce79,
+          mid_init$_d7eb7eed1392eeb4,
+          mid_fit_d6f0ba91b4d7f8fd,
           max_mid
         };
 

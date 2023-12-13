@@ -28,12 +28,12 @@ namespace org {
       class RootsOfUnity : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_computeRoots_a3da1a935cb37f7b,
-          mid_getImaginary_69cfb132c661aca4,
-          mid_getNumberOfRoots_412668abc8d889e9,
-          mid_getReal_69cfb132c661aca4,
-          mid_isCounterClockWise_89b302893bdbe1f1,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_computeRoots_44ed599e93e8a30c,
+          mid_getImaginary_2afcbc21f4e57ab2,
+          mid_getNumberOfRoots_55546ef6a647f39b,
+          mid_getReal_2afcbc21f4e57ab2,
+          mid_isCounterClockWise_9ab94ac1dc23b105,
           max_mid
         };
 

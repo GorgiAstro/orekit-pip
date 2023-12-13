@@ -3,12 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -18,6 +12,12 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,8 +31,8 @@ namespace org {
           class IonosphericCorrectionType : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_34f3c2211724e34d,
-              mid_values_e461afe201e53b10,
+              mid_valueOf_7bd07224476383b6,
+              mid_values_2bf5d6902d31e785,
               max_mid
             };
 

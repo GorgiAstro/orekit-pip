@@ -3,6 +3,11 @@
 
 #include "org/orekit/propagation/semianalytical/dsst/forces/ForceModelContext.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -14,11 +19,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -33,10 +33,10 @@ namespace org {
             class DSSTThirdBodyStaticContext : public ::org::orekit::propagation::semianalytical::dsst::forces::ForceModelContext {
              public:
               enum {
-                mid_init$_478bfc2cac501812,
-                mid_getMaxAR3Pow_412668abc8d889e9,
-                mid_getMaxEccPow_412668abc8d889e9,
-                mid_getMaxFreqF_412668abc8d889e9,
+                mid_init$_3f7d3078b325cb52,
+                mid_getMaxAR3Pow_55546ef6a647f39b,
+                mid_getMaxEccPow_55546ef6a647f39b,
+                mid_getMaxFreqF_55546ef6a647f39b,
                 max_mid
               };
 

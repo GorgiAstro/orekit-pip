@@ -5,16 +5,16 @@
 
 namespace java {
   namespace text {
+    class FieldPosition;
     class ParsePosition;
     class NumberFormat;
-    class FieldPosition;
   }
   namespace util {
     class Locale;
   }
   namespace lang {
-    class Class;
     class StringBuffer;
+    class Class;
     class String;
   }
 }
@@ -24,8 +24,8 @@ namespace org {
       namespace euclidean {
         namespace oned {
           class Euclidean1D;
-          class Vector1DFormat;
           class Vector1D;
+          class Vector1DFormat;
         }
       }
       class Vector;
@@ -46,15 +46,15 @@ namespace org {
           class Vector1DFormat : public ::org::hipparchus::geometry::VectorFormat {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_init$_d53859bd7ba1b247,
-              mid_init$_630071dd94c59169,
-              mid_init$_a588adb4788c769e,
-              mid_format_6f1f6993f3124ea0,
-              mid_getVector1DFormat_db73d8f487ad5091,
-              mid_getVector1DFormat_0b31e7058e9c8907,
-              mid_parse_a8c76d737531d495,
-              mid_parse_6e45f1ee6f020de9,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_init$_b7f3d50b51ef7518,
+              mid_init$_a627ad9c5959309d,
+              mid_init$_f042513511266bed,
+              mid_format_4b712c2465e37e54,
+              mid_getVector1DFormat_e1f13f76b61559d2,
+              mid_getVector1DFormat_887f222cad8d6968,
+              mid_parse_72dfc0833c7e849e,
+              mid_parse_3574fe41be7ab2ce,
               max_mid
             };
 

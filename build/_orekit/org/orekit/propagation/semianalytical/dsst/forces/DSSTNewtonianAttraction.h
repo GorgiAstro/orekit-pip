@@ -5,32 +5,32 @@
 
 namespace org {
   namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
     namespace propagation {
-      class PropagationType;
-      class FieldSpacecraftState;
       namespace semianalytical {
         namespace dsst {
-          namespace utilities {
-            class AuxiliaryElements;
-            class FieldAuxiliaryElements;
-          }
           namespace forces {
             class FieldShortPeriodTerms;
-            class ShortPeriodTerms;
             class DSSTForceModel;
+            class ShortPeriodTerms;
+          }
+          namespace utilities {
+            class FieldAuxiliaryElements;
+            class AuxiliaryElements;
           }
         }
       }
+      class PropagationType;
       class SpacecraftState;
+      class FieldSpacecraftState;
     }
     namespace utils {
       class ParameterDriver;
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
     }
   }
   namespace hipparchus {
@@ -58,16 +58,16 @@ namespace org {
             class DSSTNewtonianAttraction : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_10f281d777284cea,
-                mid_getMeanElementRate_6930c150caff50e0,
-                mid_getMeanElementRate_3573019cca22a7a6,
-                mid_getMu_b0b988f941da47d8,
-                mid_getParametersDrivers_0d9551367f7ecdef,
-                mid_initializeShortPeriodTerms_57b295149dcd4abd,
-                mid_initializeShortPeriodTerms_0791dbeb06a23554,
-                mid_registerAttitudeProvider_8fa6c0c067ead7b2,
-                mid_updateShortPeriodTerms_114c99ef73dfde56,
-                mid_updateShortPeriodTerms_a9be3da5be85857d,
+                mid_init$_8ba9fe7a847cecad,
+                mid_getMeanElementRate_7d3eb19aa1e75a63,
+                mid_getMeanElementRate_0483a0f94731abef,
+                mid_getMu_fd347811007a6ba3,
+                mid_getParametersDrivers_e62d3bb06d56d7e3,
+                mid_initializeShortPeriodTerms_6fb0c582e8925f89,
+                mid_initializeShortPeriodTerms_3144241334d46411,
+                mid_registerAttitudeProvider_8e4d3ea100bc0095,
+                mid_updateShortPeriodTerms_62f1ad39eb6f1276,
+                mid_updateShortPeriodTerms_5401e749436ec3b7,
                 max_mid
               };
 
@@ -86,8 +86,8 @@ namespace org {
 
               DSSTNewtonianAttraction(jdouble);
 
-              JArray< jdouble > getMeanElementRate(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::AuxiliaryElements &, const JArray< jdouble > &) const;
               JArray< ::org::hipparchus::CalculusFieldElement > getMeanElementRate(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::FieldAuxiliaryElements &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
+              JArray< jdouble > getMeanElementRate(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::AuxiliaryElements &, const JArray< jdouble > &) const;
               jdouble getMu(const ::org::orekit::time::AbsoluteDate &) const;
               ::java::util::List getParametersDrivers() const;
               ::java::util::List initializeShortPeriodTerms(const ::org::orekit::propagation::semianalytical::dsst::utilities::AuxiliaryElements &, const ::org::orekit::propagation::PropagationType &, const JArray< jdouble > &) const;

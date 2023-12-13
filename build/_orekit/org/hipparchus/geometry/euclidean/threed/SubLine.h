@@ -3,32 +3,32 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+          class Line;
+          class SubLine;
+          class Segment;
+        }
+        namespace oned {
+          class IntervalsSet;
+        }
+      }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
-    namespace geometry {
-      namespace euclidean {
-        namespace oned {
-          class IntervalsSet;
-        }
-        namespace threed {
-          class Line;
-          class Vector3D;
-          class SubLine;
-          class Segment;
-        }
-      }
-    }
   }
 }
 template<class T> class JArray;
@@ -42,11 +42,11 @@ namespace org {
           class SubLine : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_236e7483aa3ace2d,
-              mid_init$_ecad37d667f0f990,
-              mid_init$_8a3775c012d81228,
-              mid_getSegments_0d9551367f7ecdef,
-              mid_intersection_3688c10a24527df7,
+              mid_init$_65a195fe57e45aec,
+              mid_init$_d2188b18eb0641eb,
+              mid_init$_4fbea8fa1cddeb2d,
+              mid_getSegments_e62d3bb06d56d7e3,
+              mid_intersection_9efff305bd180435,
               max_mid
             };
 

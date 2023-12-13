@@ -3,6 +3,11 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -14,11 +19,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -33,7 +33,7 @@ namespace org {
             class ForceModelContext : public ::java::lang::Object {
              public:
               enum {
-                mid_getAuxiliaryElements_53e9e25baae02d2b,
+                mid_getAuxiliaryElements_bb7d61c7025dded3,
                 max_mid
               };
 

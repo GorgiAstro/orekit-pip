@@ -4,17 +4,17 @@
 #include "org/orekit/propagation/conversion/AbstractFixedStepFieldIntegratorBuilder.h"
 
 namespace org {
+  namespace orekit {
+    namespace orbits {
+      class Orbit;
+      class OrbitType;
+    }
+  }
   namespace hipparchus {
     class Field;
     class CalculusFieldElement;
     namespace ode {
       class AbstractFieldIntegrator;
-    }
-  }
-  namespace orekit {
-    namespace orbits {
-      class OrbitType;
-      class Orbit;
     }
   }
 }
@@ -33,9 +33,9 @@ namespace org {
         class GillFieldIntegratorBuilder : public ::org::orekit::propagation::conversion::AbstractFixedStepFieldIntegratorBuilder {
          public:
           enum {
-            mid_init$_10f281d777284cea,
-            mid_init$_1ee4bed350fde589,
-            mid_buildIntegrator_3a1ee7ebe4f0e344,
+            mid_init$_8ba9fe7a847cecad,
+            mid_init$_f2b4bfa0af1007e8,
+            mid_buildIntegrator_ce58c6ef4cfb23c4,
             max_mid
           };
 

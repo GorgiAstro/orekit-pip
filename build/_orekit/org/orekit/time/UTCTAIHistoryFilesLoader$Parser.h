@@ -4,12 +4,12 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace io {
-    class IOException;
-    class InputStream;
-  }
   namespace util {
     class List;
+  }
+  namespace io {
+    class InputStream;
+    class IOException;
   }
   namespace lang {
     class Class;
@@ -33,8 +33,8 @@ namespace org {
       class UTCTAIHistoryFilesLoader$Parser : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_parse_e3101d06c7a1bcab,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_parse_7b8887374449b257,
           max_mid
         };
 

@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace spherical {
         namespace twod {
-          class Edge;
           class S2Point;
+          class Edge;
         }
       }
     }
@@ -31,9 +31,9 @@ namespace org {
           class Vertex : public ::java::lang::Object {
            public:
             enum {
-              mid_getIncoming_eb4d44d7506dc6e8,
-              mid_getLocation_0ba7e0560ff59fd8,
-              mid_getOutgoing_eb4d44d7506dc6e8,
+              mid_getIncoming_e042a987ddce5121,
+              mid_getLocation_cf0fa877996d1fcc,
+              mid_getOutgoing_e042a987ddce5121,
               max_mid
             };
 

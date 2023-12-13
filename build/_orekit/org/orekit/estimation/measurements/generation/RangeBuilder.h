@@ -10,16 +10,16 @@ namespace org {
     }
   }
   namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class Range;
+        class GroundStation;
+        class ObservableSatellite;
+      }
+    }
     namespace propagation {
       namespace sampling {
         class OrekitStepInterpolator;
-      }
-    }
-    namespace estimation {
-      namespace measurements {
-        class ObservableSatellite;
-        class GroundStation;
-        class Range;
       }
     }
     namespace time {
@@ -46,8 +46,8 @@ namespace org {
           class RangeBuilder : public ::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder {
            public:
             enum {
-              mid_init$_bda3a2dd57982d0f,
-              mid_build_b0a1aa08a2944cf3,
+              mid_init$_9b5700032cdfc1f4,
+              mid_build_05e0f9152fb7bc0a,
               max_mid
             };
 

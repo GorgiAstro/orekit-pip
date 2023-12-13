@@ -31,8 +31,8 @@ namespace org {
           class FileFormat : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_5b990ca2a38ebac4,
-              mid_values_07b18792ff213d8e,
+              mid_valueOf_947af617501dda22,
+              mid_values_7ce347067462f023,
               max_mid
             };
 

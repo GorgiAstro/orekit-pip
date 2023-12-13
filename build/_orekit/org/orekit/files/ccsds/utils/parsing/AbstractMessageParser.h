@@ -3,18 +3,27 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class Map;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
         namespace utils {
-          namespace lexical {
-            class ParseToken;
-            class XmlTokenBuilder;
-            class MessageParser;
-          }
           namespace parsing {
             class ProcessingState;
+          }
+          namespace lexical {
+            class XmlTokenBuilder;
+            class ParseToken;
+            class MessageParser;
           }
           class FileFormat;
         }
@@ -23,15 +32,6 @@ namespace org {
     namespace data {
       class DataSource;
     }
-  }
-}
-namespace java {
-  namespace util {
-    class Map;
-  }
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -46,17 +46,17 @@ namespace org {
             class AbstractMessageParser : public ::java::lang::Object {
              public:
               enum {
-                mid_anticipateNext_a4672268e69dcb47,
-                mid_getCurrent_50ed54b038eedc45,
-                mid_getFileFormat_c3a4c5f37e67a25e,
-                mid_getFormatVersionKey_3cffd47377eca18a,
-                mid_getSpecialXmlElementsBuilders_1e62c2f73fbdd1c4,
-                mid_parseMessage_850ca290e1713a38,
-                mid_process_1eac6345cb6bda02,
-                mid_setEndTagSeen_ed2afdb8506b9742,
-                mid_setFallback_a4672268e69dcb47,
-                mid_wasEndTagSeen_89b302893bdbe1f1,
-                mid_reset_5f31019b1332b69c,
+                mid_anticipateNext_c4aced5b6da74a0c,
+                mid_getCurrent_f164c3688294cf91,
+                mid_getFileFormat_e4c64bde02ca34c3,
+                mid_getFormatVersionKey_1c1fa1e935d6cdcf,
+                mid_getSpecialXmlElementsBuilders_810bed48fafb0b9a,
+                mid_parseMessage_653fe7fd2fcbf113,
+                mid_process_19d473d3b0277de6,
+                mid_setEndTagSeen_fcb96c98de6fad04,
+                mid_setFallback_c4aced5b6da74a0c,
+                mid_wasEndTagSeen_9ab94ac1dc23b105,
+                mid_reset_4a64e4a74b40b4f0,
                 max_mid
               };
 

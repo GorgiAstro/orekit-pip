@@ -25,8 +25,8 @@ namespace org {
       class LibrationOrbitType : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_01887543342b1b3c,
-          mid_values_1eceb4db80802b41,
+          mid_valueOf_71fc06850e21f261,
+          mid_values_452fc104e7e92fdd,
           max_mid
         };
 

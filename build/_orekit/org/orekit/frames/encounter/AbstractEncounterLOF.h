@@ -5,22 +5,22 @@
 
 namespace org {
   namespace orekit {
+    namespace utils {
+      class FieldPVCoordinates;
+      class PVCoordinates;
+    }
     namespace frames {
       namespace encounter {
         class EncounterLOF;
       }
-    }
-    namespace utils {
-      class FieldPVCoordinates;
-      class PVCoordinates;
     }
   }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Rotation;
           class FieldRotation;
+          class Rotation;
         }
       }
     }
@@ -42,10 +42,10 @@ namespace org {
         class AbstractEncounterLOF : public ::java::lang::Object {
          public:
           enum {
-            mid_getFieldOther_dda60cf1427afe76,
-            mid_getOther_77bd7b3cdab2713e,
-            mid_rotationFromInertial_8b424804999938a4,
-            mid_rotationFromInertial_352d2666b9e583bd,
+            mid_getFieldOther_dac7b66b757e9da0,
+            mid_getOther_180fb117720acb76,
+            mid_rotationFromInertial_7e9d52385b0ba3f0,
+            mid_rotationFromInertial_80cbd49af33092b8,
             max_mid
           };
 

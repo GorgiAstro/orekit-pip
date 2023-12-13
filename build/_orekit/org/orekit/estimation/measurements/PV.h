@@ -4,17 +4,6 @@
 #include "org/orekit/estimation/measurements/AbstractMeasurement.h"
 
 namespace org {
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class ObservableSatellite;
-        class PV;
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -22,6 +11,17 @@ namespace org {
           class Vector3D;
         }
       }
+    }
+  }
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class PV;
+        class ObservableSatellite;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -41,17 +41,17 @@ namespace org {
         class PV : public ::org::orekit::estimation::measurements::AbstractMeasurement {
          public:
           enum {
-            mid_init$_15beb50931c1cf88,
-            mid_init$_9f586bcdceee113e,
-            mid_init$_8a2365ac496613b2,
-            mid_init$_3003177fad71f016,
-            mid_init$_88bd0c310d4fcdf3,
-            mid_getCorrelationCoefficientsMatrix_8cf5267aa13a77f3,
-            mid_getCovarianceMatrix_8cf5267aa13a77f3,
-            mid_getPosition_f88961cca75a2c0a,
-            mid_getVelocity_f88961cca75a2c0a,
-            mid_theoreticalEvaluationWithoutDerivatives_71d69ca0f7c280a7,
-            mid_theoreticalEvaluation_eae039ee8c8a4a4d,
+            mid_init$_9ef35e383d66c380,
+            mid_init$_c9c19463d1055bc5,
+            mid_init$_5c6acf1bcac7f73f,
+            mid_init$_90a93226d0ab00d5,
+            mid_init$_ed865644d6626b16,
+            mid_getCorrelationCoefficientsMatrix_3b7b373db8e7887f,
+            mid_getCovarianceMatrix_3b7b373db8e7887f,
+            mid_getPosition_8b724f8b4fdad1a2,
+            mid_getVelocity_8b724f8b4fdad1a2,
+            mid_theoreticalEvaluationWithoutDerivatives_9347cf3b1f0dd85a,
+            mid_theoreticalEvaluation_d598991c5cac8ab0,
             max_mid
           };
 

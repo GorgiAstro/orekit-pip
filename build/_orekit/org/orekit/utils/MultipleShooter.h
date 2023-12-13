@@ -15,8 +15,8 @@ namespace org {
   namespace orekit {
     namespace propagation {
       namespace numerical {
-        class NumericalPropagator;
         class EpochDerivativesEquations;
+        class NumericalPropagator;
       }
       class SpacecraftState;
     }
@@ -31,10 +31,10 @@ namespace org {
       class MultipleShooter : public ::org::orekit::utils::AbstractMultipleShooting {
        public:
         enum {
-          mid_init$_56e88fd08b255763,
-          mid_computeAdditionalConstraints_1122e29f2a25b86f,
-          mid_computeAdditionalJacobianMatrix_29dc26d4c6c7bd43,
-          mid_getAugmentedInitialState_d91edcd61f36fecc,
+          mid_init$_2381028a34dd7d63,
+          mid_getAugmentedInitialState_f4730dd89e9880a0,
+          mid_computeAdditionalConstraints_a16345554cd829da,
+          mid_computeAdditionalJacobianMatrix_223f424c780300ce,
           max_mid
         };
 

@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
+    namespace orbits {
+      class FieldOrbit;
     }
     namespace frames {
       class Frame;
     }
-    namespace orbits {
-      class FieldOrbit;
+    namespace propagation {
+      class FieldSpacecraftState;
     }
   }
   namespace hipparchus {
@@ -34,11 +34,11 @@ namespace org {
         class FieldNodeDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_bf08ea5b43df40f6,
-            mid_init$_ee41e0076fce6e1a,
-            mid_g_de1c2d709eb2829c,
-            mid_getFrame_6c9bc0a928c56d4e,
-            mid_create_305ce3ce554bf816,
+            mid_init$_891556684acdd59d,
+            mid_init$_9904853b43bda69b,
+            mid_g_2203631097e94c79,
+            mid_getFrame_2c51111cc6894ba1,
+            mid_create_75ef0f4eb41b3553,
             max_mid
           };
 

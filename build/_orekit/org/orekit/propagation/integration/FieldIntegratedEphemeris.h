@@ -3,24 +3,33 @@
 
 #include "org/orekit/propagation/analytical/FieldAbstractAnalyticalPropagator.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+    }
     namespace propagation {
       class PropagationType;
-      class FieldSpacecraftState;
       namespace integration {
         class FieldStateMapper;
       }
       class FieldAdditionalStateProvider;
+      class FieldSpacecraftState;
       class FieldBoundedPropagator;
     }
     namespace utils {
-      class TimeStampedFieldPVCoordinates;
       class FieldArrayDictionary;
       class ParameterDriver;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
+      class TimeStampedFieldPVCoordinates;
     }
     namespace frames {
       class Frame;
@@ -33,15 +42,6 @@ namespace org {
     class CalculusFieldElement;
   }
 }
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -52,19 +52,19 @@ namespace org {
         class FieldIntegratedEphemeris : public ::org::orekit::propagation::analytical::FieldAbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_abb29bc47afd3aba,
-            mid_getFrame_6c9bc0a928c56d4e,
-            mid_getInitialState_381b3e011cde018d,
-            mid_getMaxDate_f1fe4daf77c66560,
-            mid_getMinDate_f1fe4daf77c66560,
-            mid_getPVCoordinates_4ac52e75113a03db,
-            mid_getParametersDrivers_0d9551367f7ecdef,
-            mid_resetInitialState_b66c84a5711243d5,
-            mid_propagateOrbit_ec5b52b8a8c77d72,
-            mid_resetIntermediateState_585702d5a402c590,
-            mid_getMass_b884068a2c99f6ca,
-            mid_updateAdditionalStates_4f12774dd382c6f4,
-            mid_basicPropagate_5324cbf9e5ce58fe,
+            mid_init$_5a0fc6c09d7cf9a1,
+            mid_getFrame_2c51111cc6894ba1,
+            mid_getInitialState_fba6d56f8dbc98d0,
+            mid_getMaxDate_fa23a4301b9c83e7,
+            mid_getMinDate_fa23a4301b9c83e7,
+            mid_getPVCoordinates_294c5c99690f2356,
+            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_resetInitialState_54d9efbf99822980,
+            mid_getMass_140b8964300ddedf,
+            mid_updateAdditionalStates_370b1acde6244b7e,
+            mid_basicPropagate_70fecd201ca47d3b,
+            mid_resetIntermediateState_871885b409df9d57,
+            mid_propagateOrbit_f34a7a94e111b112,
             max_mid
           };
 

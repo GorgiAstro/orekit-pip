@@ -6,10 +6,10 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class DateComponents;
       class Month;
-      class TimeComponents;
+      class DateComponents;
       class DateTimeComponents;
+      class TimeComponents;
     }
   }
 }
@@ -33,26 +33,26 @@ namespace org {
       class DateTimeComponents : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_97334b4cde36fee4,
-          mid_init$_353be96736eb4a0e,
-          mid_init$_c01975213386f6a3,
-          mid_init$_3796b665437eba81,
-          mid_init$_3b45da7a278589bc,
-          mid_init$_053a596a1809d580,
-          mid_compareTo_0b255e184011a8ea,
-          mid_equals_221e8e85cb385209,
-          mid_getDate_ef81839d8717cc3a,
-          mid_getTime_6230b16c2680001d,
-          mid_hashCode_412668abc8d889e9,
-          mid_offsetFrom_9e85e6d4a4eee270,
-          mid_parseDateTime_3d71e8ecdce2fb61,
-          mid_roundIfNeeded_3765068295c1bb88,
-          mid_toString_3cffd47377eca18a,
-          mid_toString_0f10d4a5e06f61c0,
-          mid_toString_637f0334ff6ee92d,
-          mid_toStringRfc3339_3cffd47377eca18a,
-          mid_toStringWithoutUtcOffset_3cffd47377eca18a,
-          mid_toStringWithoutUtcOffset_637f0334ff6ee92d,
+          mid_init$_87bf07f0ebe49ff9,
+          mid_init$_c643d20492025243,
+          mid_init$_cb5fad2f35fdd552,
+          mid_init$_a0df4b8e4ed3805e,
+          mid_init$_99718373fb134ca1,
+          mid_init$_95f55466c5eda770,
+          mid_compareTo_167562ea0d5aaaa3,
+          mid_equals_460c5e2d9d51c6cc,
+          mid_getDate_357436921b6db81c,
+          mid_getTime_f6de698ca751b724,
+          mid_hashCode_55546ef6a647f39b,
+          mid_offsetFrom_67953e0a78e1093f,
+          mid_parseDateTime_c468f224154d2782,
+          mid_roundIfNeeded_86222a613b253114,
+          mid_toString_1c1fa1e935d6cdcf,
+          mid_toString_2a9bffd3d5397f7c,
+          mid_toString_e91e53c42d39aef9,
+          mid_toStringRfc3339_1c1fa1e935d6cdcf,
+          mid_toStringWithoutUtcOffset_1c1fa1e935d6cdcf,
+          mid_toStringWithoutUtcOffset_e91e53c42d39aef9,
           max_mid
         };
 

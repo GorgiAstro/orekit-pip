@@ -3,12 +3,6 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -27,6 +21,12 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -40,20 +40,20 @@ namespace org {
               class AttitudeCovarianceHistoryMetadata : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_0640e6acf969ed28,
-                  mid_getCovBasis_3cffd47377eca18a,
-                  mid_getCovBasisID_3cffd47377eca18a,
-                  mid_getCovID_3cffd47377eca18a,
-                  mid_getCovPrevID_3cffd47377eca18a,
-                  mid_getCovReferenceFrame_98f5fcaff3e3f9d2,
-                  mid_getCovType_270107b6f5cd254c,
-                  mid_setCovBasis_f5ffdf29129ef90a,
-                  mid_setCovBasisID_f5ffdf29129ef90a,
-                  mid_setCovID_f5ffdf29129ef90a,
-                  mid_setCovPrevID_f5ffdf29129ef90a,
-                  mid_setCovReferenceFrame_f55eee1236275bb1,
-                  mid_setCovType_424aa6ac7cc5c170,
-                  mid_validate_10f281d777284cea,
+                  mid_init$_a1fa5dae97ea5ed2,
+                  mid_getCovBasis_1c1fa1e935d6cdcf,
+                  mid_getCovBasisID_1c1fa1e935d6cdcf,
+                  mid_getCovID_1c1fa1e935d6cdcf,
+                  mid_getCovPrevID_1c1fa1e935d6cdcf,
+                  mid_getCovReferenceFrame_69d8be1b6b0a1a94,
+                  mid_getCovType_49fb04b3e4992396,
+                  mid_setCovBasis_734b91ac30d5f9b4,
+                  mid_setCovBasisID_734b91ac30d5f9b4,
+                  mid_setCovID_734b91ac30d5f9b4,
+                  mid_setCovPrevID_734b91ac30d5f9b4,
+                  mid_setCovReferenceFrame_4755133c5c4c59be,
+                  mid_setCovType_8563e2f42c19e56b,
+                  mid_validate_8ba9fe7a847cecad,
                   max_mid
                 };
 

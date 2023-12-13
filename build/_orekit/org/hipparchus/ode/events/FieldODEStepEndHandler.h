@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
-      class FieldODEStateAndDerivative;
       class FieldODEState;
+      class FieldODEStateAndDerivative;
       namespace events {
         class Action;
       }
@@ -30,9 +30,9 @@ namespace org {
         class FieldODEStepEndHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_init_f808a4f21f8be825,
-            mid_resetState_b8cb4bf937fbd995,
-            mid_stepEndOccurred_3385c85b1bdb5b9a,
+            mid_init_55fdeef582303a99,
+            mid_resetState_209ef60d14a0b393,
+            mid_stepEndOccurred_4f8991c4fe232e6e,
             max_mid
           };
 

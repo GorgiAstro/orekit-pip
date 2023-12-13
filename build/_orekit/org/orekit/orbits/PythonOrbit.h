@@ -3,15 +3,20 @@
 
 #include "org/orekit/orbits/Orbit.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-    class IllegalArgumentException;
-  }
-}
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
+    namespace utils {
+      class TimeStampedPVCoordinates;
+    }
     namespace orbits {
       class PositionAngleType;
       class OrbitType;
@@ -22,18 +27,13 @@ namespace org {
     namespace time {
       class AbsoluteDate;
     }
-    namespace utils {
-      class TimeStampedPVCoordinates;
-    }
   }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-    }
+}
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+    class IllegalArgumentException;
   }
 }
 template<class T> class JArray;
@@ -45,40 +45,40 @@ namespace org {
       class PythonOrbit : public ::org::orekit::orbits::Orbit {
        public:
         enum {
-          mid_init$_7c6479063e790949,
-          mid_init$_511409a69796653b,
-          mid_addKeplerContribution_9dda16418cc4ed80,
-          mid_computeJacobianEccentricWrtCartesian_8cf5267aa13a77f3,
-          mid_computeJacobianMeanWrtCartesian_8cf5267aa13a77f3,
-          mid_computeJacobianTrueWrtCartesian_8cf5267aa13a77f3,
-          mid_finalize_0640e6acf969ed28,
-          mid_getA_557b8123390d8d0c,
-          mid_getADot_557b8123390d8d0c,
-          mid_getE_557b8123390d8d0c,
-          mid_getEDot_557b8123390d8d0c,
-          mid_getEquinoctialEx_557b8123390d8d0c,
-          mid_getEquinoctialExDot_557b8123390d8d0c,
-          mid_getEquinoctialEy_557b8123390d8d0c,
-          mid_getEquinoctialEyDot_557b8123390d8d0c,
-          mid_getHx_557b8123390d8d0c,
-          mid_getHxDot_557b8123390d8d0c,
-          mid_getHy_557b8123390d8d0c,
-          mid_getHyDot_557b8123390d8d0c,
-          mid_getI_557b8123390d8d0c,
-          mid_getIDot_557b8123390d8d0c,
-          mid_getLE_557b8123390d8d0c,
-          mid_getLEDot_557b8123390d8d0c,
-          mid_getLM_557b8123390d8d0c,
-          mid_getLMDot_557b8123390d8d0c,
-          mid_getLv_557b8123390d8d0c,
-          mid_getLvDot_557b8123390d8d0c,
-          mid_getType_2cea2a2cb3e02091,
-          mid_initPVCoordinates_daf15abc21907508,
-          mid_initPosition_f88961cca75a2c0a,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
-          mid_shiftedBy_47d1046ffc445a6a,
+          mid_init$_18124f64d7fce8bd,
+          mid_init$_9782eb8ed3559570,
+          mid_addKeplerContribution_2a5649bc1625306e,
+          mid_computeJacobianEccentricWrtCartesian_3b7b373db8e7887f,
+          mid_computeJacobianMeanWrtCartesian_3b7b373db8e7887f,
+          mid_computeJacobianTrueWrtCartesian_3b7b373db8e7887f,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_getA_b74f83833fdad017,
+          mid_getADot_b74f83833fdad017,
+          mid_getE_b74f83833fdad017,
+          mid_getEDot_b74f83833fdad017,
+          mid_getEquinoctialEx_b74f83833fdad017,
+          mid_getEquinoctialExDot_b74f83833fdad017,
+          mid_getEquinoctialEy_b74f83833fdad017,
+          mid_getEquinoctialEyDot_b74f83833fdad017,
+          mid_getHx_b74f83833fdad017,
+          mid_getHxDot_b74f83833fdad017,
+          mid_getHy_b74f83833fdad017,
+          mid_getHyDot_b74f83833fdad017,
+          mid_getI_b74f83833fdad017,
+          mid_getIDot_b74f83833fdad017,
+          mid_getLE_b74f83833fdad017,
+          mid_getLEDot_b74f83833fdad017,
+          mid_getLM_b74f83833fdad017,
+          mid_getLMDot_b74f83833fdad017,
+          mid_getLv_b74f83833fdad017,
+          mid_getLvDot_b74f83833fdad017,
+          mid_getType_c7d4737d7afca612,
+          mid_initPVCoordinates_136cc8ba23b21c29,
+          mid_initPosition_8b724f8b4fdad1a2,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_shiftedBy_93453d78b4f95a28,
           max_mid
         };
 

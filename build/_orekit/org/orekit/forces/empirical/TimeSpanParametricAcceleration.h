@@ -5,28 +5,28 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-      namespace events {
-        class FieldEventDetector;
-        class EventDetector;
-      }
-      class SpacecraftState;
-    }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
     }
-    namespace forces {
-      namespace empirical {
-        class AccelerationModel;
+    namespace propagation {
+      namespace events {
+        class EventDetector;
+        class FieldEventDetector;
       }
-      class ForceModel;
+      class FieldSpacecraftState;
+      class SpacecraftState;
     }
     namespace utils {
       class ParameterDriver;
       class TimeSpanMap$Span;
       class TimeSpanMap;
+    }
+    namespace forces {
+      class ForceModel;
+      namespace empirical {
+        class AccelerationModel;
+      }
     }
     namespace attitudes {
       class AttitudeProvider;
@@ -41,20 +41,20 @@ namespace org {
         }
       }
     }
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
+  namespace lang {
+    class Class;
+    class String;
+  }
   namespace util {
     namespace stream {
       class Stream;
     }
     class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -67,23 +67,23 @@ namespace org {
         class TimeSpanParametricAcceleration : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_fdf46db75c3e782a,
-            mid_init$_b106f18f1129bdba,
-            mid_acceleration_b61fb59a041240c6,
-            mid_acceleration_61944e27a39e8290,
-            mid_addAccelerationModelValidAfter_9342f723ecfae537,
-            mid_addAccelerationModelValidBefore_9342f723ecfae537,
-            mid_dependsOnPositionOnly_89b302893bdbe1f1,
-            mid_extractAccelerationModelRange_cdee4c9b841a225d,
-            mid_extractParameters_2a4cb51cb18e4e8b,
-            mid_extractParameters_32c7759b5aba450d,
-            mid_getAccelerationModel_d68384122246eccc,
-            mid_getAccelerationModelSpan_320d9b9cba67eeb8,
-            mid_getEventDetectors_d7cce92225eb0db2,
-            mid_getFieldEventDetectors_8130af76f6998f44,
-            mid_getFirstSpan_2a24ed7b7f6cbca3,
-            mid_getParametersDrivers_0d9551367f7ecdef,
-            mid_init_0472264ad6f40bc2,
+            mid_init$_4c3161fe77d68ecd,
+            mid_init$_5e38cdb9559e0e6a,
+            mid_acceleration_20bded0292328743,
+            mid_acceleration_0ce449c67b5ffd9c,
+            mid_addAccelerationModelValidAfter_7576a11e87bcb804,
+            mid_addAccelerationModelValidBefore_7576a11e87bcb804,
+            mid_dependsOnPositionOnly_9ab94ac1dc23b105,
+            mid_extractAccelerationModelRange_2917731b47ff4d6e,
+            mid_extractParameters_5417afc1212505b6,
+            mid_extractParameters_afb90c8392ccc216,
+            mid_getAccelerationModel_35bbad49226ddaea,
+            mid_getAccelerationModelSpan_d9699fc4c4f11b26,
+            mid_getEventDetectors_14e21bf777ff0ccf,
+            mid_getFieldEventDetectors_283ad33581c047a0,
+            mid_getFirstSpan_5290b219f9ebfd63,
+            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_init_2d7f9a496c7e9781,
             max_mid
           };
 
@@ -104,8 +104,8 @@ namespace org {
           TimeSpanParametricAcceleration(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, jboolean, const ::org::orekit::forces::empirical::AccelerationModel &);
           TimeSpanParametricAcceleration(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::attitudes::AttitudeProvider &, const ::org::orekit::forces::empirical::AccelerationModel &);
 
-          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
+          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           void addAccelerationModelValidAfter(const ::org::orekit::forces::empirical::AccelerationModel &, const ::org::orekit::time::AbsoluteDate &) const;
           void addAccelerationModelValidBefore(const ::org::orekit::forces::empirical::AccelerationModel &, const ::org::orekit::time::AbsoluteDate &) const;
           jboolean dependsOnPositionOnly() const;

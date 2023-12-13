@@ -3,15 +3,15 @@
 
 #include "org/hipparchus/ode/nonstiff/RungeKuttaFieldIntegrator.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
     class Field;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,11 +24,11 @@ namespace org {
         class EulerFieldIntegrator : public ::org::hipparchus::ode::nonstiff::RungeKuttaFieldIntegrator {
          public:
           enum {
-            mid_init$_c9ae9949e6b74bf6,
-            mid_getA_f180d140dce78d62,
-            mid_getB_41762fd4377ff26e,
-            mid_getC_41762fd4377ff26e,
-            mid_createInterpolator_94680d98ae991ebd,
+            mid_init$_2a6f45ac0878ab87,
+            mid_getA_34ce7b2f6a50059b,
+            mid_getB_883be608cfc68c26,
+            mid_getC_883be608cfc68c26,
+            mid_createInterpolator_a4b50822e34394b5,
             max_mid
           };
 

@@ -5,8 +5,8 @@
 
 namespace java {
   namespace io {
-    class IOException;
     class InputStream;
+    class IOException;
     class BufferedReader;
   }
   namespace lang {
@@ -36,10 +36,10 @@ namespace org {
           class RinexClockParser : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_parse_70775d8267b42e37,
-              mid_parse_f636ade7825ced3d,
-              mid_parse_e9ac07eb307c88c8,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_parse_d990f63525ec8677,
+              mid_parse_8335d5b2135f1935,
+              mid_parse_f14a026436b4e446,
               max_mid
             };
 

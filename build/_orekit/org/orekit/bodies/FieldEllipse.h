@@ -18,11 +18,11 @@ namespace org {
     class CalculusFieldElement;
   }
   namespace orekit {
-    namespace utils {
-      class TimeStampedFieldPVCoordinates;
-    }
     namespace frames {
       class Frame;
+    }
+    namespace utils {
+      class TimeStampedFieldPVCoordinates;
     }
   }
 }
@@ -40,19 +40,19 @@ namespace org {
       class FieldEllipse : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_d08588a8ab820125,
-          mid_getA_613c8f46c659f636,
-          mid_getB_613c8f46c659f636,
-          mid_getCenter_2d64addf4c3391d9,
-          mid_getCenterOfCurvature_453f66131fc0f21f,
-          mid_getFrame_6c9bc0a928c56d4e,
-          mid_getU_2d64addf4c3391d9,
-          mid_getV_2d64addf4c3391d9,
-          mid_pointAt_68e9ce281b70d410,
-          mid_projectToEllipse_f6b3fdf5ec92a07f,
-          mid_projectToEllipse_453f66131fc0f21f,
-          mid_toPlane_7f02e62a67dbd97c,
-          mid_toSpace_695484e81a048fc5,
+          mid_init$_fb9945b50b3dda96,
+          mid_getA_81520b552cb3fa26,
+          mid_getB_81520b552cb3fa26,
+          mid_getCenter_ff5ac73a7b43eddd,
+          mid_getCenterOfCurvature_352489997a01ac70,
+          mid_getFrame_2c51111cc6894ba1,
+          mid_getU_ff5ac73a7b43eddd,
+          mid_getV_ff5ac73a7b43eddd,
+          mid_pointAt_0e25f993119a02fa,
+          mid_projectToEllipse_176da7a9c87c96a5,
+          mid_projectToEllipse_352489997a01ac70,
+          mid_toPlane_9f54cac39580172c,
+          mid_toSpace_46ed8157ea06215e,
           max_mid
         };
 

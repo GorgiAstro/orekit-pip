@@ -6,15 +6,15 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
+      namespace partitioning {
+        class SubHyperplane$SplitSubHyperplane;
+        class Hyperplane;
+        class Region;
+      }
       namespace spherical {
         namespace oned {
           class Sphere1D;
         }
-      }
-      namespace partitioning {
-        class Hyperplane;
-        class SubHyperplane$SplitSubHyperplane;
-        class Region;
       }
     }
   }
@@ -35,11 +35,11 @@ namespace org {
           class SubLimitAngle : public ::org::hipparchus::geometry::partitioning::AbstractSubHyperplane {
            public:
             enum {
-              mid_init$_08c86faf9fec8eaa,
-              mid_getSize_557b8123390d8d0c,
-              mid_isEmpty_89b302893bdbe1f1,
-              mid_split_ae8e2bbf2389e86e,
-              mid_buildNew_0ffd07a16ed53139,
+              mid_init$_6ae2db4be0bbe390,
+              mid_getSize_b74f83833fdad017,
+              mid_isEmpty_9ab94ac1dc23b105,
+              mid_split_30674c36ae2fcf9f,
+              mid_buildNew_3d919cfe5b11c3d0,
               max_mid
             };
 

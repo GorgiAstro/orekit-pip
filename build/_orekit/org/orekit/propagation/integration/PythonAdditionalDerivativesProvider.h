@@ -14,8 +14,8 @@ namespace org {
   namespace orekit {
     namespace propagation {
       namespace integration {
-        class CombinedDerivatives;
         class AdditionalDerivativesProvider;
+        class CombinedDerivatives;
       }
       class SpacecraftState;
     }
@@ -34,16 +34,16 @@ namespace org {
         class PythonAdditionalDerivativesProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_combinedDerivatives_5fc55a092d474e7c,
-            mid_finalize_0640e6acf969ed28,
-            mid_getDimension_412668abc8d889e9,
-            mid_getName_3cffd47377eca18a,
-            mid_init_0472264ad6f40bc2,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
-            mid_yields_abdf3beb789bbd4e,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_combinedDerivatives_f7e02f1d7093fbbb,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_getDimension_55546ef6a647f39b,
+            mid_getName_1c1fa1e935d6cdcf,
+            mid_init_2d7f9a496c7e9781,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_yields_97df9017614a1945,
             max_mid
           };
 

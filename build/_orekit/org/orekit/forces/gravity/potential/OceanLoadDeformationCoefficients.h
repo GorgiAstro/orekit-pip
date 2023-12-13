@@ -31,9 +31,9 @@ namespace org {
           class OceanLoadDeformationCoefficients : public ::java::lang::Enum {
            public:
             enum {
-              mid_getCoefficients_a53a7513ecedada2,
-              mid_valueOf_6b95500457f5a1c2,
-              mid_values_bbf84a506094fe9b,
+              mid_getCoefficients_25e1757a36c4dde2,
+              mid_valueOf_c479a96c7183b205,
+              mid_values_38b90a2bce786533,
               max_mid
             };
 

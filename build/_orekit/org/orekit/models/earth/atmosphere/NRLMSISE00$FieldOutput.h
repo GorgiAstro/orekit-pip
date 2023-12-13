@@ -3,14 +3,14 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,7 +24,7 @@ namespace org {
           class NRLMSISE00$FieldOutput : public ::java::lang::Object {
            public:
             enum {
-              mid_getDensity_8b3a1c735adfa4bc,
+              mid_getDensity_21e6b3c521b9c768,
               max_mid
             };
 

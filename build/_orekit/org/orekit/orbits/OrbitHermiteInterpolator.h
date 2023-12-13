@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class CartesianDerivativesFilter;
+    namespace orbits {
+      class Orbit;
     }
     namespace frames {
       class Frame;
     }
-    namespace orbits {
-      class Orbit;
+    namespace utils {
+      class CartesianDerivativesFilter;
     }
   }
 }
@@ -30,12 +30,12 @@ namespace org {
       class OrbitHermiteInterpolator : public ::org::orekit::orbits::AbstractOrbitInterpolator {
        public:
         enum {
-          mid_init$_535d1f91a93c8b4d,
-          mid_init$_03d00ffd0ee81fe0,
-          mid_init$_51c833c667e08e0f,
-          mid_init$_824f93e8d6b45930,
-          mid_getPVAFilter_6c4898d6ec0c3837,
-          mid_interpolate_633c02f6304af1cb,
+          mid_init$_237ae1c2ddd68062,
+          mid_init$_92e0516c51076c2f,
+          mid_init$_5295144d3ac34660,
+          mid_init$_7f6d7ca3076fa7fe,
+          mid_getPVAFilter_63bfdcc4b7a0536c,
+          mid_interpolate_ea364fd17b3fd043,
           max_mid
         };
 

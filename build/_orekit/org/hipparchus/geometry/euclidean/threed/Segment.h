@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -18,6 +13,11 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,10 +31,10 @@ namespace org {
           class Segment : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_3f2bfdea7068fab2,
-              mid_getEnd_f88961cca75a2c0a,
-              mid_getLine_50dd992767fffc25,
-              mid_getStart_f88961cca75a2c0a,
+              mid_init$_4644e9e8a32f72dd,
+              mid_getEnd_8b724f8b4fdad1a2,
+              mid_getLine_26296f26a05c4026,
+              mid_getStart_8b724f8b4fdad1a2,
               max_mid
             };
 

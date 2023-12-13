@@ -34,18 +34,18 @@ namespace org {
             class LegacyNavigationMessage : public ::org::orekit::propagation::analytical::gnss::data::AbstractNavigationMessage {
              public:
               enum {
-                mid_getFitInterval_412668abc8d889e9,
-                mid_getIODC_412668abc8d889e9,
-                mid_getIODE_412668abc8d889e9,
-                mid_getSvAccuracy_557b8123390d8d0c,
-                mid_getSvHealth_412668abc8d889e9,
-                mid_getTGD_557b8123390d8d0c,
-                mid_setFitInterval_a3da1a935cb37f7b,
-                mid_setIODC_a3da1a935cb37f7b,
-                mid_setIODE_10f281d777284cea,
-                mid_setSvAccuracy_10f281d777284cea,
-                mid_setSvHealth_a3da1a935cb37f7b,
-                mid_setTGD_10f281d777284cea,
+                mid_getFitInterval_55546ef6a647f39b,
+                mid_getIODC_55546ef6a647f39b,
+                mid_getIODE_55546ef6a647f39b,
+                mid_getSvAccuracy_b74f83833fdad017,
+                mid_getSvHealth_55546ef6a647f39b,
+                mid_getTGD_b74f83833fdad017,
+                mid_setFitInterval_44ed599e93e8a30c,
+                mid_setIODC_44ed599e93e8a30c,
+                mid_setIODE_8ba9fe7a847cecad,
+                mid_setSvAccuracy_8ba9fe7a847cecad,
+                mid_setSvHealth_44ed599e93e8a30c,
+                mid_setTGD_8ba9fe7a847cecad,
                 max_mid
               };
 

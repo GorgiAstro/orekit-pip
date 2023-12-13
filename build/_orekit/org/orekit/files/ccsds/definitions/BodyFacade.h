@@ -5,20 +5,20 @@
 
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataContext;
+    }
+    namespace bodies {
+      class CelestialBodies;
+      class CelestialBody;
+    }
     namespace files {
       namespace ccsds {
         namespace definitions {
-          class CenterName;
           class BodyFacade;
+          class CenterName;
         }
       }
-    }
-    namespace bodies {
-      class CelestialBody;
-      class CelestialBodies;
-    }
-    namespace data {
-      class DataContext;
     }
   }
 }
@@ -39,12 +39,12 @@ namespace org {
           class BodyFacade : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_b8d85b160e35dea0,
-              mid_create_8350318c3f6a35fa,
-              mid_create_6a724a5aaeb66912,
-              mid_create_66495be5ac120ead,
-              mid_getBody_40e74583267ad550,
-              mid_getName_3cffd47377eca18a,
+              mid_init$_1437c06a6f40cf9b,
+              mid_create_4bbf95743698337f,
+              mid_create_9d1a0e179e09f078,
+              mid_create_33547d7be3dbbee8,
+              mid_getBody_5df52e80cbb5eb85,
+              mid_getName_1c1fa1e935d6cdcf,
               max_mid
             };
 

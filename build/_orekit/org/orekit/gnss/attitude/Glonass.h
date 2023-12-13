@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
     namespace utils {
       class ExtendedPVCoordinatesProvider;
+    }
+    namespace frames {
+      class Frame;
     }
     namespace time {
       class AbsoluteDate;
@@ -31,9 +31,9 @@ namespace org {
         class Glonass : public ::org::orekit::gnss::attitude::AbstractGNSSAttitudeProvider {
          public:
           enum {
-            mid_init$_d2624b53a7984676,
-            mid_correctedYaw_c46751716d57fe1f,
-            mid_correctedYaw_2a43991494de952e,
+            mid_init$_1e895b27f5ad5fa3,
+            mid_correctedYaw_0e415c4bbe3bedab,
+            mid_correctedYaw_4231606446b6d08a,
             max_mid
           };
 

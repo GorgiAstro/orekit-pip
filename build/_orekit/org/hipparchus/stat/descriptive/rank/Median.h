@@ -11,16 +11,16 @@ namespace org {
       }
       namespace descriptive {
         namespace rank {
-          class Median;
           class Percentile$EstimationType;
+          class Median;
         }
       }
     }
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace util {
       class KthSelector;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -43,15 +43,15 @@ namespace org {
           class Median : public ::org::hipparchus::stat::descriptive::AbstractUnivariateStatistic {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_copy_9ffc117cc13b2825,
-              mid_evaluate_9eeeb1ae977f525d,
-              mid_getEstimationType_4612cef7d7be3067,
-              mid_getKthSelector_e3d4c2054ef00f3b,
-              mid_getNaNStrategy_771b1218ed87a53c,
-              mid_withEstimationType_a0066a70c668abd3,
-              mid_withKthSelector_e61e10a52383847b,
-              mid_withNaNStrategy_2c605bc82addaab6,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_copy_e7d20978b299e4ee,
+              mid_evaluate_1567a80062adb31b,
+              mid_getEstimationType_243f7211bd3660bc,
+              mid_getKthSelector_5930553957d5187e,
+              mid_getNaNStrategy_9ae875326a45f3e9,
+              mid_withEstimationType_35be72416be2b820,
+              mid_withKthSelector_dbbbd61d1eee8fff,
+              mid_withNaNStrategy_41d9c4eb9be594d5,
               max_mid
             };
 

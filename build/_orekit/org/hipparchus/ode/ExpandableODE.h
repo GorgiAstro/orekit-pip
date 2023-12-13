@@ -6,14 +6,14 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
+      class OrdinaryDifferentialEquation;
       class ODEState;
       class EquationsMapper;
-      class OrdinaryDifferentialEquation;
       class SecondaryODE;
     }
     namespace exception {
-      class MathIllegalArgumentException;
       class MathIllegalStateException;
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -31,12 +31,12 @@ namespace org {
       class ExpandableODE : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_28d0dab69f2e282c,
-          mid_addSecondaryEquations_95d0971981220a69,
-          mid_computeDerivatives_31b9a2982d73e37a,
-          mid_getMapper_ac224193cab69474,
-          mid_getPrimary_7732629ab518c1bf,
-          mid_init_4d28f529380c21e7,
+          mid_init$_e32ec3fc45ceb153,
+          mid_addSecondaryEquations_12812867dc221799,
+          mid_computeDerivatives_91fbb4072ae7ce9a,
+          mid_getMapper_d05a9ec8030c7103,
+          mid_getPrimary_c6cec2ce02740365,
+          mid_init_9ab16ee510aba086,
           max_mid
         };
 

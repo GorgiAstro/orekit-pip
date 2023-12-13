@@ -3,21 +3,21 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace fraction {
-      class BigFraction;
-      class BigFractionField;
-    }
-    class Field;
-  }
-}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace fraction {
+      class BigFractionField;
+      class BigFraction;
+    }
+    class Field;
   }
 }
 template<class T> class JArray;
@@ -29,12 +29,12 @@ namespace org {
       class BigFractionField : public ::java::lang::Object {
        public:
         enum {
-          mid_equals_221e8e85cb385209,
-          mid_getInstance_b141d0462bc50421,
-          mid_getOne_92546681fd225453,
-          mid_getRuntimeClass_d4b191ff8147475d,
-          mid_getZero_92546681fd225453,
-          mid_hashCode_412668abc8d889e9,
+          mid_equals_460c5e2d9d51c6cc,
+          mid_getInstance_23be7e86283dd98a,
+          mid_getOne_7369b54299dcf892,
+          mid_getRuntimeClass_1aeb0737a960d371,
+          mid_getZero_7369b54299dcf892,
+          mid_hashCode_55546ef6a647f39b,
           max_mid
         };
 

@@ -3,6 +3,29 @@
 
 #include "org/orekit/propagation/analytical/FieldAbstractAnalyticalPropagator.h"
 
+namespace org {
+  namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+    }
+    namespace orbits {
+      class FieldOrbit;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+    }
+  }
+  namespace hipparchus {
+    class Field;
+    class CalculusFieldElement;
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,29 +33,6 @@ namespace java {
   namespace lang {
     class Throwable;
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-    namespace orbits {
-      class FieldOrbit;
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
-    class Field;
   }
 }
 template<class T> class JArray;
@@ -45,15 +45,15 @@ namespace org {
         class PythonFieldAbstractAnalyticalPropagator : public ::org::orekit::propagation::analytical::FieldAbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_c5a2c9984a82c4c1,
-            mid_finalize_0640e6acf969ed28,
-            mid_getMass_b884068a2c99f6ca,
-            mid_getParametersDrivers_0d9551367f7ecdef,
-            mid_propagateOrbit_ec5b52b8a8c77d72,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
-            mid_resetIntermediateState_585702d5a402c590,
+            mid_init$_c9d3fc8b6e0fe513,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_getMass_140b8964300ddedf,
+            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_propagateOrbit_f34a7a94e111b112,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_resetIntermediateState_871885b409df9d57,
             max_mid
           };
 

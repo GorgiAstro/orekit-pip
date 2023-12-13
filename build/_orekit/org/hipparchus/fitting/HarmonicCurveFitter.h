@@ -24,10 +24,10 @@ namespace org {
       class HarmonicCurveFitter : public ::org::hipparchus::fitting::AbstractCurveFitter {
        public:
         enum {
-          mid_create_8d19e35e2898a9c2,
-          mid_withMaxIterations_e1522e4c4402ab09,
-          mid_withStartPoint_a7fb2fedd8b70f3d,
-          mid_getProblem_cf073573d4101d89,
+          mid_create_f1c4460a81bc9fa3,
+          mid_withMaxIterations_0d79b676ffbe47ab,
+          mid_withStartPoint_116ed70a41dfff0e,
+          mid_getProblem_067ae4e9e4e5b47a,
           max_mid
         };
 

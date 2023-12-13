@@ -27,8 +27,8 @@ namespace org {
       class Space : public ::java::io::Serializable {
        public:
         enum {
-          mid_getDimension_412668abc8d889e9,
-          mid_getSubSpace_cf9410d213a7cbb9,
+          mid_getDimension_55546ef6a647f39b,
+          mid_getSubSpace_9afbccb68c8e9ef8,
           max_mid
         };
 

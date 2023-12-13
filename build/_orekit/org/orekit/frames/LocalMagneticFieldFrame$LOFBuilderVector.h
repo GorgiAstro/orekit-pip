@@ -25,8 +25,8 @@ namespace org {
       class LocalMagneticFieldFrame$LOFBuilderVector : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_35543344c03965dc,
-          mid_values_96ce917f3ca49745,
+          mid_valueOf_162f8dd74dfd19a3,
+          mid_values_dff922766d1166ca,
           max_mid
         };
 

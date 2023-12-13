@@ -3,27 +3,19 @@
 
 #include "org/orekit/rugged/adjustment/OptimizationProblemBuilder.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace rugged {
-      namespace adjustment {
-        namespace measurements {
-          class Observables;
-        }
-      }
       namespace linesensor {
         class LineSensor;
       }
       namespace api {
         class Rugged;
+      }
+      namespace adjustment {
+        namespace measurements {
+          class Observables;
+        }
       }
     }
   }
@@ -39,6 +31,14 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -49,11 +49,11 @@ namespace org {
         class GroundOptimizationProblemBuilder : public ::org::orekit::rugged::adjustment::OptimizationProblemBuilder {
          public:
           enum {
-            mid_init$_637a56b354b9c756,
-            mid_build_d4732481b9968791,
-            mid_initMapping_0640e6acf969ed28,
-            mid_createTargetAndWeight_0640e6acf969ed28,
-            mid_createFunction_e31bcbfb9203b3a6,
+            mid_init$_429e2d2ce7e91e3c,
+            mid_build_6f03ef14ae36f9b3,
+            mid_createTargetAndWeight_a1fa5dae97ea5ed2,
+            mid_initMapping_a1fa5dae97ea5ed2,
+            mid_createFunction_6a20d4ddc607b9bb,
             max_mid
           };
 

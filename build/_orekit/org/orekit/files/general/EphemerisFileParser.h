@@ -30,7 +30,7 @@ namespace org {
         class EphemerisFileParser : public ::java::lang::Object {
          public:
           enum {
-            mid_parse_c897b47d9e3916d0,
+            mid_parse_c2184fda105f33cd,
             max_mid
           };
 

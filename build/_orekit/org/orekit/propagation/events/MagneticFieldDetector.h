@@ -5,10 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace models {
-      namespace earth {
-        class GeoMagneticFieldFactory$FieldModel;
-      }
+    namespace data {
+      class DataContext;
+    }
+    namespace bodies {
+      class OneAxisEllipsoid;
     }
     namespace propagation {
       namespace events {
@@ -19,11 +20,10 @@ namespace org {
     namespace time {
       class AbsoluteDate;
     }
-    namespace bodies {
-      class OneAxisEllipsoid;
-    }
-    namespace data {
-      class DataContext;
+    namespace models {
+      namespace earth {
+        class GeoMagneticFieldFactory$FieldModel;
+      }
     }
   }
 }
@@ -42,13 +42,13 @@ namespace org {
         class MagneticFieldDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_68033445f345c9ef,
-            mid_init$_3174aec7a05af877,
-            mid_init$_9aeefe4c3d3f0311,
-            mid_init$_e65cd52fbc7968aa,
-            mid_g_1bbf81d80c47ecdd,
-            mid_init_0472264ad6f40bc2,
-            mid_create_fd36477aa8336cad,
+            mid_init$_ed906644adf1627c,
+            mid_init$_ed1263de4577c5a4,
+            mid_init$_bd5544ae44ef5bcc,
+            mid_init$_0576c70d09c1f3bb,
+            mid_g_a17ea857ce74d258,
+            mid_init_2d7f9a496c7e9781,
+            mid_create_74b6d21820f03f8f,
             max_mid
           };
 

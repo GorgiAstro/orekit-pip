@@ -35,17 +35,17 @@ namespace org {
           class PSquarePercentile : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_10f281d777284cea,
-              mid_clear_0640e6acf969ed28,
-              mid_copy_4b709ee17fb84299,
-              mid_equals_221e8e85cb385209,
-              mid_getN_9e26256fb0d384a2,
-              mid_getQuantile_557b8123390d8d0c,
-              mid_getResult_557b8123390d8d0c,
-              mid_hashCode_412668abc8d889e9,
-              mid_increment_10f281d777284cea,
-              mid_quantile_557b8123390d8d0c,
-              mid_toString_3cffd47377eca18a,
+              mid_init$_8ba9fe7a847cecad,
+              mid_clear_a1fa5dae97ea5ed2,
+              mid_copy_3bda7fe784041369,
+              mid_equals_460c5e2d9d51c6cc,
+              mid_getN_6c0ce7e438e5ded4,
+              mid_getQuantile_b74f83833fdad017,
+              mid_getResult_b74f83833fdad017,
+              mid_hashCode_55546ef6a647f39b,
+              mid_increment_8ba9fe7a847cecad,
+              mid_quantile_b74f83833fdad017,
+              mid_toString_1c1fa1e935d6cdcf,
               max_mid
             };
 

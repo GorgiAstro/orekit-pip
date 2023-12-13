@@ -13,15 +13,15 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace estimation {
       namespace measurements {
+        class EstimationModifier;
         class EstimatedMeasurementBase;
         class Range;
-        class EstimationModifier;
       }
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
 }
@@ -36,9 +36,9 @@ namespace org {
           class RelativisticJ2ClockRangeModifier : public ::org::orekit::estimation::measurements::modifiers::AbstractRelativisticJ2ClockModifier {
            public:
             enum {
-              mid_init$_87096e3fd8086100,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_modifyWithoutDerivatives_e471490df8741b73,
+              mid_init$_b5167f35b2521627,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_modifyWithoutDerivatives_308087fabc1d7f66,
               max_mid
             };
 

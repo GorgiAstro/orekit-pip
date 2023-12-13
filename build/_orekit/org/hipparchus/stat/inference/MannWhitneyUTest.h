@@ -5,15 +5,15 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class NullArgumentException;
+      class MathIllegalArgumentException;
+    }
     namespace stat {
       namespace ranking {
         class NaNStrategy;
         class TiesStrategy;
       }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-      class NullArgumentException;
     }
   }
 }
@@ -32,11 +32,11 @@ namespace org {
         class MannWhitneyUTest : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_init$_08eff940a3336a45,
-            mid_mannWhitneyU_628a76297e217f13,
-            mid_mannWhitneyUTest_628a76297e217f13,
-            mid_mannWhitneyUTest_81226d0b24750fea,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_init$_c6e936703eef190b,
+            mid_mannWhitneyU_3207f9c2ae7271d9,
+            mid_mannWhitneyUTest_3207f9c2ae7271d9,
+            mid_mannWhitneyUTest_0c373dc781edcf2f,
             max_mid
           };
 

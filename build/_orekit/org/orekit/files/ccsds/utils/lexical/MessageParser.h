@@ -3,24 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ccsds {
-        namespace utils {
-          namespace lexical {
-            class ParseToken;
-            class XmlTokenBuilder;
-          }
-          class FileFormat;
-        }
-      }
-    }
-    namespace data {
-      class DataSource;
-    }
-  }
-}
 namespace java {
   namespace util {
     class Map;
@@ -28,6 +10,24 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace data {
+      class DataSource;
+    }
+    namespace files {
+      namespace ccsds {
+        namespace utils {
+          namespace lexical {
+            class XmlTokenBuilder;
+            class ParseToken;
+          }
+          class FileFormat;
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -42,13 +42,13 @@ namespace org {
             class MessageParser : public ::java::lang::Object {
              public:
               enum {
-                mid_build_e661fe3ba2fafb22,
-                mid_getFileFormat_c3a4c5f37e67a25e,
-                mid_getFormatVersionKey_3cffd47377eca18a,
-                mid_getSpecialXmlElementsBuilders_1e62c2f73fbdd1c4,
-                mid_parseMessage_850ca290e1713a38,
-                mid_process_1eac6345cb6bda02,
-                mid_reset_a580586827f4ec13,
+                mid_build_541690f9ee81d3ad,
+                mid_getFileFormat_e4c64bde02ca34c3,
+                mid_getFormatVersionKey_1c1fa1e935d6cdcf,
+                mid_getSpecialXmlElementsBuilders_810bed48fafb0b9a,
+                mid_parseMessage_653fe7fd2fcbf113,
+                mid_process_19d473d3b0277de6,
+                mid_reset_28163d47221b3cf7,
                 max_mid
               };
 

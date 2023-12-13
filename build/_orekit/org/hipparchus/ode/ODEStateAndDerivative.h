@@ -17,11 +17,11 @@ namespace org {
       class ODEStateAndDerivative : public ::org::hipparchus::ode::ODEState {
        public:
         enum {
-          mid_init$_d1fab4f16ef74ba5,
-          mid_init$_3af222968dd38947,
-          mid_getCompleteDerivative_a53a7513ecedada2,
-          mid_getPrimaryDerivative_a53a7513ecedada2,
-          mid_getSecondaryDerivative_1da5c9e77f24f269,
+          mid_init$_6fe32ac24b853639,
+          mid_init$_1cbb0b220bfb337a,
+          mid_getCompleteDerivative_25e1757a36c4dde2,
+          mid_getPrimaryDerivative_25e1757a36c4dde2,
+          mid_getSecondaryDerivative_bb2a44a76ad252f7,
           max_mid
         };
 

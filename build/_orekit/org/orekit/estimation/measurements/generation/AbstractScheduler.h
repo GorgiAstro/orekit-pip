@@ -5,11 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      namespace sampling {
-        class OrekitStepInterpolator;
-      }
-    }
     namespace estimation {
       namespace measurements {
         namespace generation {
@@ -23,6 +18,11 @@ namespace org {
     namespace time {
       class DatesSelector;
       class AbsoluteDate;
+    }
+    namespace propagation {
+      namespace sampling {
+        class OrekitStepInterpolator;
+      }
     }
   }
 }
@@ -46,11 +46,11 @@ namespace org {
           class AbstractScheduler : public ::java::lang::Object {
            public:
             enum {
-              mid_generate_efa69a4463f8239b,
-              mid_getBuilder_73d2d5822258be13,
-              mid_getSelector_78eb80fc74b267d2,
-              mid_init_d5db9a5f2035671b,
-              mid_measurementIsFeasible_981023bfa4a8a093,
+              mid_generate_3d5d4740e56d31ff,
+              mid_getBuilder_45574e80a4b0eb29,
+              mid_getSelector_8a390688d552ddc8,
+              mid_init_f89af00fc113b524,
+              mid_measurementIsFeasible_a35647bda2901f54,
               max_mid
             };
 

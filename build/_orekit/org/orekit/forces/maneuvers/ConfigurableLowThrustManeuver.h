@@ -35,12 +35,12 @@ namespace org {
         class ConfigurableLowThrustManeuver : public ::org::orekit::forces::maneuvers::Maneuver {
          public:
           enum {
-            mid_init$_9f07a3a6f29a7aff,
-            mid_getIsp_557b8123390d8d0c,
-            mid_getIsp_b0b988f941da47d8,
-            mid_getThrustDirectionProvider_8d737b557fa9f336,
-            mid_getThrustMagnitude_557b8123390d8d0c,
-            mid_getThrustMagnitude_b0b988f941da47d8,
+            mid_init$_51940d8c6b3ff8a5,
+            mid_getIsp_b74f83833fdad017,
+            mid_getIsp_fd347811007a6ba3,
+            mid_getThrustDirectionProvider_0df8595e014a87b9,
+            mid_getThrustMagnitude_b74f83833fdad017,
+            mid_getThrustMagnitude_fd347811007a6ba3,
             max_mid
           };
 

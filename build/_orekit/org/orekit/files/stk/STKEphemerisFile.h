@@ -14,17 +14,17 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace utils {
+      class TimeStampedPVCoordinates;
+    }
     namespace files {
-      namespace general {
-        class EphemerisFile;
-      }
       namespace stk {
         class STKEphemerisFile$STKEphemeris;
         class STKEphemerisFile$STKEphemerisSegment;
       }
-    }
-    namespace utils {
-      class TimeStampedPVCoordinates;
+      namespace general {
+        class EphemerisFile;
+      }
     }
   }
 }
@@ -38,9 +38,9 @@ namespace org {
         class STKEphemerisFile : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a4c150de9c0b12f3,
-            mid_getSTKVersion_3cffd47377eca18a,
-            mid_getSatellites_1e62c2f73fbdd1c4,
+            mid_init$_95a45b28b2bbbb14,
+            mid_getSTKVersion_1c1fa1e935d6cdcf,
+            mid_getSatellites_810bed48fafb0b9a,
             max_mid
           };
 

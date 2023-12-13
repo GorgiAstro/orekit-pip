@@ -28,15 +28,15 @@ namespace org {
         class StatisticalSummary : public ::java::lang::Object {
          public:
           enum {
-            mid_aggregate_dd76cbfc149afa7e,
-            mid_aggregate_ce28b77efd275ce0,
-            mid_getMax_557b8123390d8d0c,
-            mid_getMean_557b8123390d8d0c,
-            mid_getMin_557b8123390d8d0c,
-            mid_getN_9e26256fb0d384a2,
-            mid_getStandardDeviation_557b8123390d8d0c,
-            mid_getSum_557b8123390d8d0c,
-            mid_getVariance_557b8123390d8d0c,
+            mid_aggregate_b5d4386d9c48f5f3,
+            mid_aggregate_b2572dd77c02dd54,
+            mid_getMax_b74f83833fdad017,
+            mid_getMean_b74f83833fdad017,
+            mid_getMin_b74f83833fdad017,
+            mid_getN_6c0ce7e438e5ded4,
+            mid_getStandardDeviation_b74f83833fdad017,
+            mid_getSum_b74f83833fdad017,
+            mid_getVariance_b74f83833fdad017,
             max_mid
           };
 

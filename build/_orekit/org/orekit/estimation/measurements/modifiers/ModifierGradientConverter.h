@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      class SpacecraftState;
-    }
     namespace attitudes {
       class AttitudeProvider;
+    }
+    namespace propagation {
+      class SpacecraftState;
     }
   }
 }
@@ -29,7 +29,7 @@ namespace org {
           class ModifierGradientConverter : public ::org::orekit::propagation::integration::AbstractGradientConverter {
            public:
             enum {
-              mid_init$_4cdc8ad3728ad5da,
+              mid_init$_f9fee79f1d2ae5a2,
               max_mid
             };
 

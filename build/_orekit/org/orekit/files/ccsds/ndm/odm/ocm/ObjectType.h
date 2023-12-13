@@ -37,8 +37,8 @@ namespace org {
               class ObjectType : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_valueOf_0dedbbc6c0fc7d86,
-                  mid_values_f8037bbcc868436c,
+                  mid_valueOf_bb7c5d17a870fb26,
+                  mid_values_5230abe0387ea31f,
                   max_mid
                 };
 

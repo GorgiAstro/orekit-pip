@@ -3,21 +3,21 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
         namespace gnss {
-          class AmbiguityAcceptance;
           class IntegerLeastSquareSolution;
+          class AmbiguityAcceptance;
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,9 +31,9 @@ namespace org {
           class SimpleRatioAmbiguityAcceptance : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_10f281d777284cea,
-              mid_accept_21ad48006d2406de,
-              mid_numberOfCandidates_412668abc8d889e9,
+              mid_init$_8ba9fe7a847cecad,
+              mid_accept_77098f4ed257d870,
+              mid_numberOfCandidates_55546ef6a647f39b,
               max_mid
             };
 

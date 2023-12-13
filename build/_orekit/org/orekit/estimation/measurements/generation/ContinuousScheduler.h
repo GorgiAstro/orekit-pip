@@ -34,8 +34,8 @@ namespace org {
           class ContinuousScheduler : public ::org::orekit::estimation::measurements::generation::AbstractScheduler {
            public:
             enum {
-              mid_init$_abb76428109f399d,
-              mid_measurementIsFeasible_981023bfa4a8a093,
+              mid_init$_1c3d87302302feaf,
+              mid_measurementIsFeasible_a35647bda2901f54,
               max_mid
             };
 

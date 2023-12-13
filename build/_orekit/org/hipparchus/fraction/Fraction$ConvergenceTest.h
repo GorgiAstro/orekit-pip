@@ -17,7 +17,7 @@ namespace org {
       class Fraction$ConvergenceTest : public ::java::lang::Object {
        public:
         enum {
-          mid_test_1e0f61f59fdd7111,
+          mid_test_75f431eefaad4f32,
           max_mid
         };
 

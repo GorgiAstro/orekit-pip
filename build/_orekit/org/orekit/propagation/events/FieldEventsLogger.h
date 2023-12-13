@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
-        class FieldAbstractDetector;
         class FieldEventsLogger$FieldLoggedEvent;
+        class FieldAbstractDetector;
       }
     }
   }
@@ -31,9 +31,9 @@ namespace org {
         class FieldEventsLogger : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_clearLoggedEvents_0640e6acf969ed28,
-            mid_getLoggedEvents_0d9551367f7ecdef,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_clearLoggedEvents_a1fa5dae97ea5ed2,
+            mid_getLoggedEvents_e62d3bb06d56d7e3,
             max_mid
           };
 

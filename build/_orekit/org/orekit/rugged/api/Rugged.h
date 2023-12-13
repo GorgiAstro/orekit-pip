@@ -5,11 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    namespace analysis {
-      namespace differentiation {
-        class Derivative;
-      }
-    }
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -17,33 +12,38 @@ namespace org {
         }
       }
     }
+    namespace analysis {
+      namespace differentiation {
+        class Derivative;
+      }
+    }
   }
   namespace orekit {
     namespace rugged {
-      namespace api {
-        class AlgorithmId;
-      }
       namespace utils {
         class ExtendedEllipsoid;
-        class SpacecraftToObservedBody;
         class DerivativeGenerator;
+        class SpacecraftToObservedBody;
       }
       namespace linesensor {
-        class SensorPixel;
         class LineSensor;
-      }
-      namespace refraction {
-        class AtmosphericRefraction;
+        class SensorPixel;
       }
       namespace intersection {
         class IntersectionAlgorithm;
       }
-    }
-    namespace bodies {
-      class GeodeticPoint;
+      namespace refraction {
+        class AtmosphericRefraction;
+      }
+      namespace api {
+        class AlgorithmId;
+      }
     }
     namespace frames {
       class Transform;
+    }
+    namespace bodies {
+      class GeodeticPoint;
     }
     namespace time {
       class AbsoluteDate;
@@ -69,31 +69,31 @@ namespace org {
         class Rugged : public ::java::lang::Object {
          public:
           enum {
-            mid_dateLocation_03c804cd85b6a606,
-            mid_dateLocation_4c87d707b4cb76cf,
-            mid_directLocation_ebdd52895fb08f8a,
-            mid_directLocation_5aa64d851a121163,
-            mid_distanceBetweenLOS_dba97cfe7c1da25e,
-            mid_distanceBetweenLOSderivatives_ff26bf7eeebd9c0d,
-            mid_getAlgorithm_a215ec96f5ff8add,
-            mid_getAlgorithmId_58f1b48b3d6060f9,
-            mid_getBodyToInertial_df04e3927954349e,
-            mid_getEllipsoid_3aefdf5430f1346a,
-            mid_getInertialToBody_df04e3927954349e,
-            mid_getLineSensor_65cfb823e2102f32,
-            mid_getLineSensors_12ee61573a18f417,
-            mid_getMaxDate_7a97f7e149e79afb,
-            mid_getMinDate_7a97f7e149e79afb,
-            mid_getName_3cffd47377eca18a,
-            mid_getRefractionCorrection_0f038fb48fafa13d,
-            mid_getScToBody_90cfcff71c037e63,
-            mid_getScToInertial_df04e3927954349e,
-            mid_inverseLocation_f5527ee705393f53,
-            mid_inverseLocation_1b54f398bbbd19ba,
-            mid_inverseLocationDerivatives_27a17ae8dc61e6d2,
-            mid_isAberrationOfLightCorrected_89b302893bdbe1f1,
-            mid_isInRange_981023bfa4a8a093,
-            mid_isLightTimeCorrected_89b302893bdbe1f1,
+            mid_dateLocation_cb79a54660e78b3c,
+            mid_dateLocation_22120ae0407ca8cb,
+            mid_directLocation_61df8abbfc58115b,
+            mid_directLocation_084fceafe328d082,
+            mid_distanceBetweenLOS_42ebea2f799979f3,
+            mid_distanceBetweenLOSderivatives_c8e3e81530539894,
+            mid_getAlgorithm_81f0b03daeff021f,
+            mid_getAlgorithmId_d67e2fdbea04a3ee,
+            mid_getBodyToInertial_976d4bc81671ce42,
+            mid_getEllipsoid_dd5ed0ce6aa0aa1f,
+            mid_getInertialToBody_976d4bc81671ce42,
+            mid_getLineSensor_4377f7d741e3b8b8,
+            mid_getLineSensors_cb666ea1a15f5210,
+            mid_getMaxDate_c325492395d89b24,
+            mid_getMinDate_c325492395d89b24,
+            mid_getName_1c1fa1e935d6cdcf,
+            mid_getRefractionCorrection_8900d038872ca946,
+            mid_getScToBody_cf686ec38ae38bec,
+            mid_getScToInertial_976d4bc81671ce42,
+            mid_inverseLocation_65ac31aa9f2ff8e2,
+            mid_inverseLocation_de019a270691f75a,
+            mid_inverseLocationDerivatives_4395b3d88792732c,
+            mid_isAberrationOfLightCorrected_9ab94ac1dc23b105,
+            mid_isInRange_a35647bda2901f54,
+            mid_isLightTimeCorrected_9ab94ac1dc23b105,
             max_mid
           };
 

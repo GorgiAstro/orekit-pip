@@ -8,8 +8,8 @@ namespace org {
     namespace propagation {
       namespace events {
         class AbstractDetector;
-        class EventDetector;
         class FieldEventDetector;
+        class EventDetector;
       }
       class SpacecraftState;
     }
@@ -42,14 +42,14 @@ namespace org {
           class StartStopEventsTrigger : public ::org::orekit::forces::maneuvers::trigger::AbstractManeuverTriggers {
            public:
             enum {
-              mid_getEventDetectors_d7cce92225eb0db2,
-              mid_getFieldEventDetectors_8130af76f6998f44,
-              mid_getStartDetector_9cafaf54f10725f9,
-              mid_getStopDetector_9cafaf54f10725f9,
-              mid_init_0472264ad6f40bc2,
-              mid_isFiringOnInitialState_1e4c79a00429445e,
-              mid_convertStartDetector_590bb38060674b63,
-              mid_convertStopDetector_590bb38060674b63,
+              mid_getEventDetectors_14e21bf777ff0ccf,
+              mid_getFieldEventDetectors_283ad33581c047a0,
+              mid_getStartDetector_e060948c985b754b,
+              mid_getStopDetector_e060948c985b754b,
+              mid_init_2d7f9a496c7e9781,
+              mid_isFiringOnInitialState_4ef3ef34329e6316,
+              mid_convertStartDetector_323adeb6f2939c8a,
+              mid_convertStopDetector_323adeb6f2939c8a,
               max_mid
             };
 

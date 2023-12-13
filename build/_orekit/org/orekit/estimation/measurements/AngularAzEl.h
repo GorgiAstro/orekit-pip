@@ -4,21 +4,6 @@
 #include "org/orekit/estimation/measurements/GroundReceiverMeasurement.h"
 
 namespace org {
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class ObservableSatellite;
-        class GroundStation;
-        class AngularAzEl;
-      }
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -26,6 +11,21 @@ namespace org {
           class Vector3D;
         }
       }
+    }
+  }
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class AngularAzEl;
+        class GroundStation;
+        class ObservableSatellite;
+      }
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -45,10 +45,10 @@ namespace org {
         class AngularAzEl : public ::org::orekit::estimation::measurements::GroundReceiverMeasurement {
          public:
           enum {
-            mid_init$_0a6e1b20dddd166b,
-            mid_getObservedLineOfSight_8386213426308de8,
-            mid_theoreticalEvaluationWithoutDerivatives_71d69ca0f7c280a7,
-            mid_theoreticalEvaluation_eae039ee8c8a4a4d,
+            mid_init$_8d27fd33291dc567,
+            mid_getObservedLineOfSight_982d534f80d70918,
+            mid_theoreticalEvaluationWithoutDerivatives_9347cf3b1f0dd85a,
+            mid_theoreticalEvaluation_d598991c5cac8ab0,
             max_mid
           };
 

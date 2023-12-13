@@ -29,11 +29,11 @@ namespace org {
         class LinearOptimizer : public ::org::hipparchus::optim::nonlinear::scalar::MultivariateOptimizer {
          public:
           enum {
-            mid_optimize_428d2547a0c45016,
-            mid_parseOptimizationData_946a92401917c130,
-            mid_getConstraints_12ee61573a18f417,
-            mid_isRestrictedToNonNegative_89b302893bdbe1f1,
-            mid_getFunction_254a9da82033e549,
+            mid_optimize_9d04816d74472b44,
+            mid_parseOptimizationData_14193ddbce7a2cc0,
+            mid_getConstraints_cb666ea1a15f5210,
+            mid_isRestrictedToNonNegative_9ab94ac1dc23b105,
+            mid_getFunction_04ec5af671a3ecd3,
             max_mid
           };
 

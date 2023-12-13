@@ -5,17 +5,17 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace attitudes {
       class AttitudeProvider;
     }
     namespace orbits {
       class FieldOrbit;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
     }
   }
   namespace hipparchus {
@@ -40,16 +40,16 @@ namespace org {
         class FieldKeplerianPropagator : public ::org::orekit::propagation::analytical::FieldAbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_8c98afebb6212490,
-            mid_init$_676b80212ae6696e,
-            mid_init$_802495dc0272e4b1,
-            mid_init$_9653f31e5e184049,
-            mid_init$_b79477cdea32e877,
-            mid_getParametersDrivers_0d9551367f7ecdef,
-            mid_resetInitialState_b66c84a5711243d5,
-            mid_propagateOrbit_ec5b52b8a8c77d72,
-            mid_resetIntermediateState_585702d5a402c590,
-            mid_getMass_b884068a2c99f6ca,
+            mid_init$_01b80e5fc8224f27,
+            mid_init$_49f6b8e8e63ddd72,
+            mid_init$_8572d3ed7c8f364c,
+            mid_init$_4954ffbdfe632147,
+            mid_init$_a1d700082199d0a3,
+            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_resetInitialState_54d9efbf99822980,
+            mid_getMass_140b8964300ddedf,
+            mid_resetIntermediateState_871885b409df9d57,
+            mid_propagateOrbit_f34a7a94e111b112,
             max_mid
           };
 

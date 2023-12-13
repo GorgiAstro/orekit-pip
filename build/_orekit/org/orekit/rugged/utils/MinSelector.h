@@ -27,8 +27,8 @@ namespace org {
         class MinSelector : public ::org::orekit::rugged::utils::Selector {
          public:
           enum {
-            mid_getInstance_fd4cbcccc697f17c,
-            mid_selectFirst_41fce65646328eb2,
+            mid_getInstance_66f0279de41aba24,
+            mid_selectFirst_cd8da52a7e84190c,
             max_mid
           };
 

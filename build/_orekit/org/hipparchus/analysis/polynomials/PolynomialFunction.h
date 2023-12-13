@@ -6,18 +6,18 @@
 namespace org {
   namespace hipparchus {
     namespace analysis {
-      class FieldUnivariateFunction;
       namespace differentiation {
-        class Derivative;
         class UnivariateDifferentiableFunction;
+        class Derivative;
       }
       namespace polynomials {
         class PolynomialFunction;
       }
+      class FieldUnivariateFunction;
     }
     namespace exception {
-      class MathIllegalArgumentException;
       class NullArgumentException;
+      class MathIllegalArgumentException;
     }
     class CalculusFieldElement;
   }
@@ -41,24 +41,24 @@ namespace org {
         class PolynomialFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_cc18240f4a737f14,
-            mid_add_9b28b9c1f8a5c1e6,
-            mid_antiDerivative_1de01c95bfe9897b,
-            mid_degree_412668abc8d889e9,
-            mid_equals_221e8e85cb385209,
-            mid_getCoefficients_a53a7513ecedada2,
-            mid_hashCode_412668abc8d889e9,
-            mid_integrate_2268d18be49a6087,
-            mid_multiply_9b28b9c1f8a5c1e6,
-            mid_negate_1de01c95bfe9897b,
-            mid_polynomialDerivative_1de01c95bfe9897b,
-            mid_subtract_9b28b9c1f8a5c1e6,
-            mid_toString_3cffd47377eca18a,
-            mid_value_7e960cd6eee376d8,
-            mid_value_6672ad854985cb64,
-            mid_value_3eb2b84dba0ab7d2,
-            mid_evaluate_05f591cf0826202b,
-            mid_differentiate_1db7c087750eaffe,
+            mid_init$_ab69da052b88f50c,
+            mid_add_54f3e3329edce1eb,
+            mid_antiDerivative_c3e7249fd6a78747,
+            mid_degree_55546ef6a647f39b,
+            mid_equals_460c5e2d9d51c6cc,
+            mid_getCoefficients_25e1757a36c4dde2,
+            mid_hashCode_55546ef6a647f39b,
+            mid_integrate_99e3200dafc19573,
+            mid_multiply_54f3e3329edce1eb,
+            mid_negate_c3e7249fd6a78747,
+            mid_polynomialDerivative_c3e7249fd6a78747,
+            mid_subtract_54f3e3329edce1eb,
+            mid_toString_1c1fa1e935d6cdcf,
+            mid_value_04fd0666b613d2ab,
+            mid_value_6e00dc5eb352fe51,
+            mid_value_a5332de4d4d64b08,
+            mid_evaluate_79e4db9e1e3d84c9,
+            mid_differentiate_14dee4cb8cc3e959,
             max_mid
           };
 

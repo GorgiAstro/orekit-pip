@@ -34,13 +34,13 @@ namespace org {
       class FieldTimeInterpolator : public ::java::lang::Object {
        public:
         enum {
-          mid_getExtrapolationThreshold_557b8123390d8d0c,
-          mid_getNbInterpolationPoints_412668abc8d889e9,
-          mid_getSubInterpolators_0d9551367f7ecdef,
-          mid_interpolate_38dc0c96cc60a813,
-          mid_interpolate_98428073ca0c402f,
-          mid_interpolate_cc27df3dc8f597ed,
-          mid_interpolate_a061c10693b292f5,
+          mid_getExtrapolationThreshold_b74f83833fdad017,
+          mid_getNbInterpolationPoints_55546ef6a647f39b,
+          mid_getSubInterpolators_e62d3bb06d56d7e3,
+          mid_interpolate_4c468c3f574f12a9,
+          mid_interpolate_596f2e40e2200071,
+          mid_interpolate_1b1c8c532c82f5d0,
+          mid_interpolate_f9931e17105657a3,
           max_mid
         };
 

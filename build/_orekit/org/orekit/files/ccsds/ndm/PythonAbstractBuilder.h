@@ -5,6 +5,15 @@
 
 namespace org {
   namespace orekit {
+    namespace utils {
+      class IERSConventions;
+    }
+    namespace data {
+      class DataContext;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -13,15 +22,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace utils {
-      class IERSConventions;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace data {
-      class DataContext;
     }
   }
 }
@@ -42,12 +42,12 @@ namespace org {
           class PythonAbstractBuilder : public ::org::orekit::files::ccsds::ndm::AbstractBuilder {
            public:
             enum {
-              mid_init$_d534fa6767f45c74,
-              mid_create_cbd54da82dabf79c,
-              mid_finalize_0640e6acf969ed28,
-              mid_pythonDecRef_0640e6acf969ed28,
-              mid_pythonExtension_9e26256fb0d384a2,
-              mid_pythonExtension_3cd6a6b354c6aa22,
+              mid_init$_d9f8a46c51e6c39c,
+              mid_create_c9fe7425468bb64c,
+              mid_finalize_a1fa5dae97ea5ed2,
+              mid_pythonDecRef_a1fa5dae97ea5ed2,
+              mid_pythonExtension_6c0ce7e438e5ded4,
+              mid_pythonExtension_3d7dd2314a0dd456,
               max_mid
             };
 

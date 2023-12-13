@@ -4,7 +4,22 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
+    namespace propagation {
+      namespace analytical {
+        class AdapterPropagator$DifferentialEffect;
+      }
+      class SpacecraftState;
+    }
     namespace orbits {
       class Orbit;
       class PositionAngleType;
@@ -14,21 +29,6 @@ namespace org {
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace propagation {
-      namespace analytical {
-        class AdapterPropagator$DifferentialEffect;
-      }
-      class SpacecraftState;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
     }
   }
 }
@@ -47,15 +47,15 @@ namespace org {
         class SmallManeuverAnalyticalModel : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_76b1012746817507,
-            mid_init$_5e6ac11ce0e39e22,
-            mid_apply_f66341a46b0a495a,
-            mid_apply_2c4cc16b11f79a6c,
-            mid_getDate_7a97f7e149e79afb,
-            mid_getInertialDV_f88961cca75a2c0a,
-            mid_getInertialFrame_6c9bc0a928c56d4e,
-            mid_getJacobian_032b4d4d2c7f6c6c,
-            mid_updateMass_7e960cd6eee376d8,
+            mid_init$_c2b83dc7e69685f6,
+            mid_init$_db76597cf6e043f6,
+            mid_apply_17366d6f28f0e9a3,
+            mid_apply_c3c52b1257139045,
+            mid_getDate_c325492395d89b24,
+            mid_getInertialDV_8b724f8b4fdad1a2,
+            mid_getInertialFrame_2c51111cc6894ba1,
+            mid_getJacobian_c444daada41664f4,
+            mid_updateMass_04fd0666b613d2ab,
             max_mid
           };
 

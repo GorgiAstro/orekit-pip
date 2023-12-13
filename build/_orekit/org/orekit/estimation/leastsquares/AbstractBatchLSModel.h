@@ -4,27 +4,15 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace conversion {
-        class PropagatorBuilder;
-      }
-      class Propagator;
-    }
-    namespace estimation {
-      namespace leastsquares {
-        class ModelObserver;
-      }
-      namespace measurements {
-        class ObservedMeasurement;
-        class EstimatedMeasurement;
-      }
-    }
-    namespace utils {
-      class ParameterDriversList;
-    }
-  }
   namespace hipparchus {
+    namespace util {
+      class Pair;
+      class Incrementor;
+    }
+    namespace linear {
+      class RealVector;
+      class RealMatrix;
+    }
     namespace optim {
       namespace nonlinear {
         namespace vector {
@@ -34,13 +22,25 @@ namespace org {
         }
       }
     }
-    namespace util {
-      class Incrementor;
-      class Pair;
+  }
+  namespace orekit {
+    namespace utils {
+      class ParameterDriversList;
     }
-    namespace linear {
-      class RealMatrix;
-      class RealVector;
+    namespace estimation {
+      namespace measurements {
+        class ObservedMeasurement;
+        class EstimatedMeasurement;
+      }
+      namespace leastsquares {
+        class ModelObserver;
+      }
+    }
+    namespace propagation {
+      class Propagator;
+      namespace conversion {
+        class PropagatorBuilder;
+      }
     }
   }
 }
@@ -62,19 +62,19 @@ namespace org {
         class AbstractBatchLSModel : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_2406e4cf7f21e166,
-            mid_createPropagators_04da9f6cb19def2d,
-            mid_fetchEvaluatedMeasurement_e484126dd163b386,
-            mid_getEvaluationsCount_412668abc8d889e9,
-            mid_getIterationsCount_412668abc8d889e9,
-            mid_getSelectedOrbitalParametersDriversForBuilder_b63a8ff72f9e46a4,
-            mid_getSelectedPropagationDriversForBuilder_b63a8ff72f9e46a4,
-            mid_isForwardPropagation_89b302893bdbe1f1,
-            mid_setEvaluationsCounter_7852dd173b858d1b,
-            mid_setIterationsCounter_7852dd173b858d1b,
-            mid_value_77538fd880505017,
-            mid_configureHarvester_58ff847451f5cf92,
-            mid_configureOrbits_614fe55969c9646f,
+            mid_init$_244486d6f58d6cbc,
+            mid_createPropagators_eea2f4f2cdf6f801,
+            mid_fetchEvaluatedMeasurement_e26746051feca807,
+            mid_getEvaluationsCount_55546ef6a647f39b,
+            mid_getIterationsCount_55546ef6a647f39b,
+            mid_getSelectedOrbitalParametersDriversForBuilder_d30ee09a585504b1,
+            mid_getSelectedPropagationDriversForBuilder_d30ee09a585504b1,
+            mid_isForwardPropagation_9ab94ac1dc23b105,
+            mid_setEvaluationsCounter_29712264b86e4d61,
+            mid_setIterationsCounter_29712264b86e4d61,
+            mid_value_75baf79414a7355b,
+            mid_configureHarvester_dafc362fdc9e50eb,
+            mid_configureOrbits_3575848f266bfbed,
             max_mid
           };
 

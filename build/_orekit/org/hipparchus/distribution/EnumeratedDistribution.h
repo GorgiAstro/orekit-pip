@@ -3,6 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace util {
+      class Pair;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -15,16 +25,6 @@ namespace java {
     class Class;
   }
 }
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
-    namespace util {
-      class Pair;
-    }
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -34,10 +34,10 @@ namespace org {
       class EnumeratedDistribution : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_4ccaedadb068bdeb,
-          mid_checkAndNormalize_1db7c087750eaffe,
-          mid_getPmf_0d9551367f7ecdef,
-          mid_probability_30d4f3cd987878bc,
+          mid_init$_0e7c3032c7c93ed3,
+          mid_checkAndNormalize_14dee4cb8cc3e959,
+          mid_getPmf_e62d3bb06d56d7e3,
+          mid_probability_855d8589234ef20e,
           max_mid
         };
 

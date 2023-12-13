@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
-    namespace bodies {
-      class GeodeticPoint;
-    }
     namespace models {
       namespace earth {
         namespace displacement {
           class Tide;
         }
       }
+    }
+    namespace bodies {
+      class GeodeticPoint;
     }
   }
 }
@@ -34,18 +34,18 @@ namespace org {
           class OceanLoadingCoefficients : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_fcb650f5320a1b2a,
-              mid_getNbSpecies_412668abc8d889e9,
-              mid_getNbTides_0092017e99012694,
-              mid_getSiteLocation_8672b163b0e4a5a3,
-              mid_getSiteName_3cffd47377eca18a,
-              mid_getSouthAmplitude_21b81d54c06b64b0,
-              mid_getSouthPhase_21b81d54c06b64b0,
-              mid_getTide_b069b3eff5d0d17f,
-              mid_getWestAmplitude_21b81d54c06b64b0,
-              mid_getWestPhase_21b81d54c06b64b0,
-              mid_getZenithAmplitude_21b81d54c06b64b0,
-              mid_getZenithPhase_21b81d54c06b64b0,
+              mid_init$_45ecc5fe392d73ba,
+              mid_getNbSpecies_55546ef6a647f39b,
+              mid_getNbTides_0e7cf35192c3effe,
+              mid_getSiteLocation_963915d358b1e63a,
+              mid_getSiteName_1c1fa1e935d6cdcf,
+              mid_getSouthAmplitude_cad98089d00f8a5b,
+              mid_getSouthPhase_cad98089d00f8a5b,
+              mid_getTide_eae842591bb4ca23,
+              mid_getWestAmplitude_cad98089d00f8a5b,
+              mid_getWestPhase_cad98089d00f8a5b,
+              mid_getZenithAmplitude_cad98089d00f8a5b,
+              mid_getZenithPhase_cad98089d00f8a5b,
               max_mid
             };
 

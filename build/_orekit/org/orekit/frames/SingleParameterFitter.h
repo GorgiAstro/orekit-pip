@@ -3,23 +3,23 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace utils {
       class SecularAndHarmonic;
     }
     namespace frames {
-      class SingleParameterFitter;
       class EOPHistory;
+      class SingleParameterFitter;
     }
+  }
+}
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,13 +31,13 @@ namespace org {
       class SingleParameterFitter : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_f21737dc64f9d4b3,
-          mid_createDefaultDut1FitterLongTermPrediction_e3f99774da48cc23,
-          mid_createDefaultDut1FitterShortTermPrediction_e3f99774da48cc23,
-          mid_createDefaultNutationFitterLongTermPrediction_e3f99774da48cc23,
-          mid_createDefaultNutationFitterShortTermPrediction_e3f99774da48cc23,
-          mid_createDefaultPoleFitterLongTermPrediction_e3f99774da48cc23,
-          mid_createDefaultPoleFitterShortTermPrediction_e3f99774da48cc23,
+          mid_init$_214d4c524920bcdf,
+          mid_createDefaultDut1FitterLongTermPrediction_ebdd2597d89397de,
+          mid_createDefaultDut1FitterShortTermPrediction_ebdd2597d89397de,
+          mid_createDefaultNutationFitterLongTermPrediction_ebdd2597d89397de,
+          mid_createDefaultNutationFitterShortTermPrediction_ebdd2597d89397de,
+          mid_createDefaultPoleFitterLongTermPrediction_ebdd2597d89397de,
+          mid_createDefaultPoleFitterShortTermPrediction_ebdd2597d89397de,
           max_mid
         };
 

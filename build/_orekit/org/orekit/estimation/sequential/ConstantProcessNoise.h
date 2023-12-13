@@ -4,14 +4,14 @@
 #include "org/orekit/estimation/sequential/AbstractCovarianceMatrixProvider.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace linear {
-      class RealMatrix;
-    }
-  }
   namespace orekit {
     namespace propagation {
       class SpacecraftState;
+    }
+  }
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
     }
   }
 }
@@ -30,9 +30,9 @@ namespace org {
         class ConstantProcessNoise : public ::org::orekit::estimation::sequential::AbstractCovarianceMatrixProvider {
          public:
           enum {
-            mid_init$_f3731847577f13e6,
-            mid_init$_14ed96341358adcb,
-            mid_getProcessNoiseMatrix_158686209bf6089c,
+            mid_init$_84bd15e0995d0c79,
+            mid_init$_7c7f5ea440781413,
+            mid_getProcessNoiseMatrix_18b28191c1378912,
             max_mid
           };
 

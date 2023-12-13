@@ -4,10 +4,6 @@
 #include "org/orekit/data/AbstractSelfFeedingLoader.h"
 
 namespace java {
-  namespace io {
-    class IOException;
-    class InputStream;
-  }
   namespace util {
     class List;
   }
@@ -16,12 +12,23 @@ namespace java {
     class Class;
     class String;
   }
+  namespace io {
+    class InputStream;
+    class IOException;
+  }
   namespace text {
     class ParseException;
   }
 }
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataLoader;
+      class DataProvidersManager;
+    }
+    namespace time {
+      class TimeScales;
+    }
     namespace propagation {
       namespace analytical {
         namespace gnss {
@@ -30,13 +37,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace data {
-      class DataLoader;
-      class DataProvidersManager;
-    }
-    namespace time {
-      class TimeScales;
     }
     namespace errors {
       class OrekitException;
@@ -52,14 +52,14 @@ namespace org {
       class SEMParser : public ::org::orekit::data::AbstractSelfFeedingLoader {
        public:
         enum {
-          mid_init$_f5ffdf29129ef90a,
-          mid_init$_f930d4f5e3f73cb2,
-          mid_getAlmanacs_0d9551367f7ecdef,
-          mid_getPRNNumbers_0d9551367f7ecdef,
-          mid_getSupportedNames_3cffd47377eca18a,
-          mid_loadData_0640e6acf969ed28,
-          mid_loadData_15770e8d8949a557,
-          mid_stillAcceptsData_89b302893bdbe1f1,
+          mid_init$_734b91ac30d5f9b4,
+          mid_init$_6d628f04453f432c,
+          mid_getAlmanacs_e62d3bb06d56d7e3,
+          mid_getPRNNumbers_e62d3bb06d56d7e3,
+          mid_getSupportedNames_1c1fa1e935d6cdcf,
+          mid_loadData_a1fa5dae97ea5ed2,
+          mid_loadData_360461e719fb564c,
+          mid_stillAcceptsData_9ab94ac1dc23b105,
           max_mid
         };
 

@@ -3,6 +3,15 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace time {
+      class TimeStamped;
+      class AbsoluteDate;
+      class TimeInterpolator;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -15,15 +24,6 @@ namespace java {
     class Class;
   }
 }
-namespace org {
-  namespace orekit {
-    namespace time {
-      class TimeInterpolator;
-      class AbsoluteDate;
-      class TimeStamped;
-    }
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -33,16 +33,16 @@ namespace org {
       class AbstractTimeInterpolator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_89aad365fb0ed8da,
-          mid_checkInterpolatorCompatibilityWithSampleSize_e37a8011f5ddf655,
-          mid_getExtrapolationThreshold_557b8123390d8d0c,
-          mid_getNbInterpolationPoints_412668abc8d889e9,
-          mid_getSubInterpolators_0d9551367f7ecdef,
-          mid_interpolate_da5f44ff87474809,
-          mid_interpolate_d5b4fcbe51b9e2da,
-          mid_interpolate_db599ec6bbae5863,
-          mid_addOptionalSubInterpolatorIfDefined_84e95070d7e3b525,
-          mid_getTimeParameter_3bd5b6ae6cb80300,
+          mid_init$_d5322b8b512aeb26,
+          mid_checkInterpolatorCompatibilityWithSampleSize_86e8035ddd3b6fb5,
+          mid_getExtrapolationThreshold_b74f83833fdad017,
+          mid_getNbInterpolationPoints_55546ef6a647f39b,
+          mid_getSubInterpolators_e62d3bb06d56d7e3,
+          mid_interpolate_0ccd3950902c0411,
+          mid_interpolate_510d3bf17898cb55,
+          mid_interpolate_7256d27895569924,
+          mid_addOptionalSubInterpolatorIfDefined_4f12b60006b411d5,
+          mid_getTimeParameter_b3f978f59484aa1f,
           max_mid
         };
 

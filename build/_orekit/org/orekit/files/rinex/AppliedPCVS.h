@@ -26,10 +26,10 @@ namespace org {
         class AppliedPCVS : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_3c3b8d2681241227,
-            mid_getProgPCVS_3cffd47377eca18a,
-            mid_getSatelliteSystem_8b86408cc2633961,
-            mid_getSourcePCVS_3cffd47377eca18a,
+            mid_init$_2ffc5087441db4aa,
+            mid_getProgPCVS_1c1fa1e935d6cdcf,
+            mid_getSatelliteSystem_21bd759cc4a81606,
+            mid_getSourcePCVS_1c1fa1e935d6cdcf,
             max_mid
           };
 

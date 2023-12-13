@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace orbits {
-      class OrbitType;
       class Orbit;
+      class OrbitType;
     }
     namespace propagation {
       namespace conversion {
@@ -36,8 +36,8 @@ namespace org {
         class AdamsBashforthIntegratorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_c4eb928bd0dae600,
-            mid_buildIntegrator_f50d555477b898d8,
+            mid_init$_390258812740a16c,
+            mid_buildIntegrator_916fa199ca08d656,
             max_mid
           };
 

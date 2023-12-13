@@ -3,24 +3,6 @@
 
 #include "org/orekit/propagation/events/FieldAbstractDetector.h"
 
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-      namespace events {
-        class FieldDateDetector;
-      }
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class FieldTimeStamped;
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
-    class Field;
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -28,6 +10,24 @@ namespace java {
   namespace lang {
     class Class;
     class IllegalArgumentException;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace events {
+        class FieldDateDetector;
+      }
+      class FieldSpacecraftState;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class FieldTimeStamped;
+    }
+  }
+  namespace hipparchus {
+    class Field;
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -40,13 +40,13 @@ namespace org {
         class FieldDateDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_675030e5ec88191c,
-            mid_addEventDate_96f1f04e218525b7,
-            mid_g_de1c2d709eb2829c,
-            mid_getDate_f1fe4daf77c66560,
-            mid_getDates_0d9551367f7ecdef,
-            mid_withMinGap_ba8c32d08952bed4,
-            mid_create_642164c30982a939,
+            mid_init$_2db260886c47962b,
+            mid_addEventDate_382e93bb0508f0e4,
+            mid_g_2203631097e94c79,
+            mid_getDate_fa23a4301b9c83e7,
+            mid_getDates_e62d3bb06d56d7e3,
+            mid_withMinGap_dd92e8644626e7e1,
+            mid_create_ac22377e890bc84d,
             max_mid
           };
 

@@ -6,9 +6,9 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathIllegalArgumentException;
       class NullArgumentException;
       class MathIllegalStateException;
+      class MathIllegalArgumentException;
     }
     namespace analysis {
       namespace polynomials {
@@ -35,13 +35,13 @@ namespace org {
         class LaguerreSolver : public ::org::hipparchus::analysis::solvers::AbstractPolynomialSolver {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_init$_10f281d777284cea,
-            mid_init$_ab23f4ae0fb33968,
-            mid_init$_87096e3fd8086100,
-            mid_doSolve_557b8123390d8d0c,
-            mid_solveAllComplex_f7acb1d5dc64300c,
-            mid_solveComplex_033e4e8b6b04318f,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_init$_8ba9fe7a847cecad,
+            mid_init$_369b4c97255d5afa,
+            mid_init$_b5167f35b2521627,
+            mid_doSolve_b74f83833fdad017,
+            mid_solveAllComplex_67d8487bd048a34b,
+            mid_solveComplex_f51b24100b0e51b5,
             max_mid
           };
 

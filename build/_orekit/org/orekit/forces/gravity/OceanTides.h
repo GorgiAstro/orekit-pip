@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
@@ -17,28 +17,28 @@ namespace org {
     class CalculusFieldElement;
   }
   namespace orekit {
+    namespace utils {
+      class IERSConventions;
+      class ParameterDriver;
+    }
     namespace forces {
+      class ForceModel;
       namespace gravity {
         namespace potential {
           class GravityFields;
         }
       }
-      class ForceModel;
-    }
-    namespace propagation {
-      class FieldSpacecraftState;
-      namespace events {
-        class EventDetector;
-        class FieldEventDetector;
-      }
-      class SpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
-      class IERSConventions;
     }
     namespace time {
       class UT1Scale;
+    }
+    namespace propagation {
+      namespace events {
+        class FieldEventDetector;
+        class EventDetector;
+      }
+      class FieldSpacecraftState;
+      class SpacecraftState;
     }
     namespace frames {
       class Frame;
@@ -66,15 +66,15 @@ namespace org {
         class OceanTides : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_1837be424f5e21da,
-            mid_init$_fce18387073bd04d,
-            mid_init$_0a43ed81d0ca6cd3,
-            mid_acceleration_b61fb59a041240c6,
-            mid_acceleration_61944e27a39e8290,
-            mid_dependsOnPositionOnly_89b302893bdbe1f1,
-            mid_getEventDetectors_d7cce92225eb0db2,
-            mid_getFieldEventDetectors_8130af76f6998f44,
-            mid_getParametersDrivers_0d9551367f7ecdef,
+            mid_init$_b969bee9b70083a9,
+            mid_init$_068d507e061d4ea6,
+            mid_init$_1dd2a1faf37eb57e,
+            mid_acceleration_0ce449c67b5ffd9c,
+            mid_acceleration_20bded0292328743,
+            mid_dependsOnPositionOnly_9ab94ac1dc23b105,
+            mid_getEventDetectors_14e21bf777ff0ccf,
+            mid_getFieldEventDetectors_283ad33581c047a0,
+            mid_getParametersDrivers_e62d3bb06d56d7e3,
             max_mid
           };
 

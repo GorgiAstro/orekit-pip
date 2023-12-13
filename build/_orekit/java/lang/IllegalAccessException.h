@@ -17,8 +17,8 @@ namespace java {
     class IllegalAccessException : public ::java::lang::ReflectiveOperationException {
      public:
       enum {
-        mid_init$_0640e6acf969ed28,
-        mid_init$_f5ffdf29129ef90a,
+        mid_init$_a1fa5dae97ea5ed2,
+        mid_init$_734b91ac30d5f9b4,
         max_mid
       };
 

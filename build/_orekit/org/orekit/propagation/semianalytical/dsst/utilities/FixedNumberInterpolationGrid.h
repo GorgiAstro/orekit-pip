@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -19,6 +14,11 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -33,8 +33,8 @@ namespace org {
             class FixedNumberInterpolationGrid : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a3da1a935cb37f7b,
-                mid_getGridPoints_0699cadabd57760f,
+                mid_init$_44ed599e93e8a30c,
+                mid_getGridPoints_eaf2da2173f3569e,
                 max_mid
               };
 

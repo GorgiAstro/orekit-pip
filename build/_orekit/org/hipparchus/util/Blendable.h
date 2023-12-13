@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,7 +24,7 @@ namespace org {
       class Blendable : public ::java::lang::Object {
        public:
         enum {
-          mid_blendArithmeticallyWith_d63fa23fa3cc8b1d,
+          mid_blendArithmeticallyWith_4c5ff869c16f4311,
           max_mid
         };
 

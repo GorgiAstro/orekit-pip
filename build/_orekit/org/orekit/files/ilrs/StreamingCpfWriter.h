@@ -3,15 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace lang {
-    class Appendable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -28,6 +19,15 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace io {
+    class IOException;
+  }
+  namespace lang {
+    class Appendable;
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -38,11 +38,11 @@ namespace org {
         class StreamingCpfWriter : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0b01e2d82f1bd25d,
-            mid_init$_5252d75ab5d69603,
-            mid_newSegment_d79b215bb1140a6d,
-            mid_writeEndOfFile_0640e6acf969ed28,
-            mid_writeHeader_0640e6acf969ed28,
+            mid_init$_5baeda89ba1fd167,
+            mid_init$_5e7b9d3abccb7287,
+            mid_newSegment_1a9b96556317330a,
+            mid_writeEndOfFile_a1fa5dae97ea5ed2,
+            mid_writeHeader_a1fa5dae97ea5ed2,
             max_mid
           };
 

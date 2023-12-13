@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace rugged {
@@ -15,6 +10,11 @@ namespace org {
         class Tile;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,7 +27,7 @@ namespace org {
         class TileFactory : public ::java::lang::Object {
          public:
           enum {
-            mid_createTile_c36eccfe3059a213,
+            mid_createTile_b7ba3ef310fb0817,
             max_mid
           };
 

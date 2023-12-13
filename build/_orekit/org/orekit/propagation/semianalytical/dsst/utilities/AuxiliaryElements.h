@@ -14,14 +14,14 @@ namespace org {
     }
   }
   namespace orekit {
+    namespace orbits {
+      class Orbit;
+    }
     namespace frames {
       class Frame;
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace orbits {
-      class Orbit;
     }
   }
 }
@@ -42,30 +42,30 @@ namespace org {
             class AuxiliaryElements : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_62651a2d74687d26,
-                mid_getAlpha_557b8123390d8d0c,
-                mid_getB_557b8123390d8d0c,
-                mid_getBeta_557b8123390d8d0c,
-                mid_getC_557b8123390d8d0c,
-                mid_getDate_7a97f7e149e79afb,
-                mid_getEcc_557b8123390d8d0c,
-                mid_getFrame_6c9bc0a928c56d4e,
-                mid_getGamma_557b8123390d8d0c,
-                mid_getH_557b8123390d8d0c,
-                mid_getK_557b8123390d8d0c,
-                mid_getKeplerianPeriod_557b8123390d8d0c,
-                mid_getLM_557b8123390d8d0c,
-                mid_getLf_557b8123390d8d0c,
-                mid_getLv_557b8123390d8d0c,
-                mid_getMeanMotion_557b8123390d8d0c,
-                mid_getOrbit_71f9c54b5f482a59,
-                mid_getP_557b8123390d8d0c,
-                mid_getQ_557b8123390d8d0c,
-                mid_getRetrogradeFactor_412668abc8d889e9,
-                mid_getSma_557b8123390d8d0c,
-                mid_getVectorF_f88961cca75a2c0a,
-                mid_getVectorG_f88961cca75a2c0a,
-                mid_getVectorW_f88961cca75a2c0a,
+                mid_init$_5580c8af98851969,
+                mid_getAlpha_b74f83833fdad017,
+                mid_getB_b74f83833fdad017,
+                mid_getBeta_b74f83833fdad017,
+                mid_getC_b74f83833fdad017,
+                mid_getDate_c325492395d89b24,
+                mid_getEcc_b74f83833fdad017,
+                mid_getFrame_2c51111cc6894ba1,
+                mid_getGamma_b74f83833fdad017,
+                mid_getH_b74f83833fdad017,
+                mid_getK_b74f83833fdad017,
+                mid_getKeplerianPeriod_b74f83833fdad017,
+                mid_getLM_b74f83833fdad017,
+                mid_getLf_b74f83833fdad017,
+                mid_getLv_b74f83833fdad017,
+                mid_getMeanMotion_b74f83833fdad017,
+                mid_getOrbit_b6e68c5f730fb347,
+                mid_getP_b74f83833fdad017,
+                mid_getQ_b74f83833fdad017,
+                mid_getRetrogradeFactor_55546ef6a647f39b,
+                mid_getSma_b74f83833fdad017,
+                mid_getVectorF_8b724f8b4fdad1a2,
+                mid_getVectorG_8b724f8b4fdad1a2,
+                mid_getVectorW_8b724f8b4fdad1a2,
                 max_mid
               };
 

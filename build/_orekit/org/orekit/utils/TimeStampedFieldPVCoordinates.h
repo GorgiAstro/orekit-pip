@@ -4,6 +4,19 @@
 #include "org/orekit/utils/FieldPVCoordinates.h"
 
 namespace org {
+  namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+      class FieldTimeStamped;
+      class TimeScale;
+    }
+    namespace utils {
+      class TimeStampedPVCoordinates;
+      class PVCoordinates;
+      class TimeStampedFieldPVCoordinates;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -12,21 +25,8 @@ namespace org {
         }
       }
     }
-    class CalculusFieldElement;
     class Field;
-  }
-  namespace orekit {
-    namespace utils {
-      class TimeStampedFieldPVCoordinates;
-      class PVCoordinates;
-      class TimeStampedPVCoordinates;
-    }
-    namespace time {
-      class TimeScale;
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-      class FieldTimeStamped;
-    }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -44,44 +44,44 @@ namespace org {
       class TimeStampedFieldPVCoordinates : public ::org::orekit::utils::FieldPVCoordinates {
        public:
         enum {
-          mid_init$_287992e1be2f741b,
-          mid_init$_be4a763764fca433,
-          mid_init$_3662f4f3d5ceb7b5,
-          mid_init$_ba43a5f0914e9ada,
-          mid_init$_787a95047ac068ac,
-          mid_init$_dd3b29be3171ef13,
-          mid_init$_af6d4d196c7a2c20,
-          mid_init$_c051df2d044d00ed,
-          mid_init$_a14a16331d5f2b77,
-          mid_init$_264c2c939e537026,
-          mid_init$_3f4828593e8baa0b,
-          mid_init$_f6b7835da097715f,
-          mid_init$_ba774aad389cff86,
-          mid_init$_e632fd0ade92943b,
-          mid_init$_55e8cbd742515bc1,
-          mid_init$_5d4fba259711cb3f,
-          mid_init$_ce0a5091dff76f76,
-          mid_init$_4c91ace03dab7333,
-          mid_init$_60d304cf92aedfe6,
-          mid_init$_ecc4fb9310f8d0bd,
-          mid_init$_68fb5b56ef6bbd86,
-          mid_init$_c624442a4dc7968d,
-          mid_init$_657c889ec221a7a4,
-          mid_init$_25cfa2aa8962d285,
-          mid_init$_2eb0156eea2a510a,
-          mid_init$_97337ceb85d50c1a,
-          mid_init$_fe39c48a4de0cba5,
-          mid_init$_f447d39279cf90d3,
-          mid_init$_af66ea9232dfcd29,
-          mid_init$_381a7ac9b6d39968,
-          mid_init$_efda25d1bdea6647,
-          mid_init$_dabd12216765412e,
-          mid_getDate_f1fe4daf77c66560,
-          mid_shiftedBy_30b51fed958970f2,
-          mid_shiftedBy_e68f08e83f93f159,
-          mid_toString_3cffd47377eca18a,
-          mid_toString_8873a127a4f312ad,
-          mid_toTimeStampedPVCoordinates_daf15abc21907508,
+          mid_init$_a8bfd6ad44b787f3,
+          mid_init$_cfc788dca6a8235d,
+          mid_init$_dc699a7de0f37bf7,
+          mid_init$_b19b60e39c50b506,
+          mid_init$_6994897a320d907d,
+          mid_init$_8e321282deb95025,
+          mid_init$_40c2a76141cc9860,
+          mid_init$_d2c8e93461a601ac,
+          mid_init$_3cb5ec6833cdf23f,
+          mid_init$_381a4ecdb8fd3a35,
+          mid_init$_b3a0c531ef4cb80d,
+          mid_init$_1d369cfda8906471,
+          mid_init$_afebadf13f26164f,
+          mid_init$_4b2d668898c102f2,
+          mid_init$_e54f6b601b347d30,
+          mid_init$_47bd782156c58a6e,
+          mid_init$_fde1eabc1afd00a9,
+          mid_init$_0302a7d74ec18402,
+          mid_init$_9b8d2f22281e263c,
+          mid_init$_d3ace86dfc4fff67,
+          mid_init$_7be77f8a0e6f26b1,
+          mid_init$_96ee45abc6c523c9,
+          mid_init$_d6804e188ec0c16f,
+          mid_init$_3760ed8939cf69da,
+          mid_init$_8c5e7fefe4a79b68,
+          mid_init$_20e893655c6f85d0,
+          mid_init$_eeefa546ece94c1c,
+          mid_init$_34c1cadd913c26a5,
+          mid_init$_c1896ea3ed563785,
+          mid_init$_6f8d22976d3a6e18,
+          mid_init$_e58f765a3e221501,
+          mid_init$_51644ef4bc2dd8e9,
+          mid_getDate_fa23a4301b9c83e7,
+          mid_shiftedBy_a479dbc1b53ce443,
+          mid_shiftedBy_8a2825d4f6c40ffa,
+          mid_toString_1c1fa1e935d6cdcf,
+          mid_toString_2ee13d9bd10373d0,
+          mid_toTimeStampedPVCoordinates_136cc8ba23b21c29,
           max_mid
         };
 

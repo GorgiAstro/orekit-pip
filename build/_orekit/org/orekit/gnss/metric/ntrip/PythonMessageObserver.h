@@ -3,25 +3,25 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace gnss {
-      namespace metric {
-        namespace messages {
-          class ParsedMessage;
-        }
-        namespace ntrip {
-          class MessageObserver;
-        }
-      }
-    }
-  }
-}
 namespace java {
   namespace lang {
     class Throwable;
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace gnss {
+      namespace metric {
+        namespace ntrip {
+          class MessageObserver;
+        }
+        namespace messages {
+          class ParsedMessage;
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -35,12 +35,12 @@ namespace org {
           class PythonMessageObserver : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_finalize_0640e6acf969ed28,
-              mid_messageAvailable_5e983d1774bbd3db,
-              mid_pythonDecRef_0640e6acf969ed28,
-              mid_pythonExtension_9e26256fb0d384a2,
-              mid_pythonExtension_3cd6a6b354c6aa22,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_finalize_a1fa5dae97ea5ed2,
+              mid_messageAvailable_1a4f1f18b22ebdb4,
+              mid_pythonDecRef_a1fa5dae97ea5ed2,
+              mid_pythonExtension_6c0ce7e438e5ded4,
+              mid_pythonExtension_3d7dd2314a0dd456,
               max_mid
             };
 

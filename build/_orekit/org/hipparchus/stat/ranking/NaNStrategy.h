@@ -28,8 +28,8 @@ namespace org {
         class NaNStrategy : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_0df71b9dd2bb9aa9,
-            mid_values_7dba55f7250b7655,
+            mid_valueOf_0505cd0bd306e8c5,
+            mid_values_8f7b764ea282c040,
             max_mid
           };
 

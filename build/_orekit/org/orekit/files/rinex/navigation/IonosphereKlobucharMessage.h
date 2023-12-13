@@ -5,19 +5,19 @@
 
 namespace org {
   namespace orekit {
+    namespace files {
+      namespace rinex {
+        namespace navigation {
+          class RegionCode;
+        }
+      }
+    }
     namespace gnss {
       class SatelliteSystem;
     }
     namespace utils {
       namespace units {
         class Unit;
-      }
-    }
-    namespace files {
-      namespace rinex {
-        namespace navigation {
-          class RegionCode;
-        }
       }
     }
   }
@@ -39,13 +39,13 @@ namespace org {
           class IonosphereKlobucharMessage : public ::org::orekit::files::rinex::navigation::IonosphereBaseMessage {
            public:
             enum {
-              mid_init$_e1b2f7b885c85083,
-              mid_getAlpha_a53a7513ecedada2,
-              mid_getBeta_a53a7513ecedada2,
-              mid_getRegionCode_9a51418bd8a33d02,
-              mid_setAlphaI_89aad365fb0ed8da,
-              mid_setBetaI_89aad365fb0ed8da,
-              mid_setRegionCode_2034f98224d4dad7,
+              mid_init$_2f7855eb8fb85f32,
+              mid_getAlpha_25e1757a36c4dde2,
+              mid_getBeta_25e1757a36c4dde2,
+              mid_getRegionCode_4d9174f820356647,
+              mid_setAlphaI_d5322b8b512aeb26,
+              mid_setBetaI_d5322b8b512aeb26,
+              mid_setRegionCode_239322339573c66a,
               max_mid
             };
 

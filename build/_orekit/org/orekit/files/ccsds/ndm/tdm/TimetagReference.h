@@ -34,8 +34,8 @@ namespace org {
             class TimetagReference : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_bc053f433d2984d8,
-                mid_values_2c23046667b6a263,
+                mid_valueOf_ae702167a8f90e94,
+                mid_values_4fa16c8105e64751,
                 max_mid
               };
 

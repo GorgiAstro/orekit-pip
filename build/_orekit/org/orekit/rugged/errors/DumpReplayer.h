@@ -33,10 +33,10 @@ namespace org {
         class DumpReplayer : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_createRugged_f145c77b35875136,
-            mid_execute_ea85ae1307587c4c,
-            mid_parse_5d6bcca91ae998ee,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_createRugged_d1370324fdb0128e,
+            mid_execute_4adf2ac6176dd639,
+            mid_parse_7e1d51614d5d6a43,
             max_mid
           };
 

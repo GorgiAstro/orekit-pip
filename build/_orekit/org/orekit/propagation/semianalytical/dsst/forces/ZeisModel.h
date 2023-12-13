@@ -38,11 +38,11 @@ namespace org {
             class ZeisModel : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0640e6acf969ed28,
-                mid_computeC2Z_a95be6a864781ae1,
-                mid_computeC2Z_e0c6c5b6e976ac94,
-                mid_computeMeanEquinoctialSecondOrderTerms_3cadce1f0ff01a88,
-                mid_computeMeanEquinoctialSecondOrderTerms_b35994dcdbf40b4e,
+                mid_init$_a1fa5dae97ea5ed2,
+                mid_computeC2Z_68d64f9221cf9db4,
+                mid_computeC2Z_1731376d8d9e3d78,
+                mid_computeMeanEquinoctialSecondOrderTerms_9e21a8e72403ad02,
+                mid_computeMeanEquinoctialSecondOrderTerms_4a156b883cf16de2,
                 max_mid
               };
 

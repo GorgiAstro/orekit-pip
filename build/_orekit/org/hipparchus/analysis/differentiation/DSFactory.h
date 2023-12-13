@@ -35,12 +35,12 @@ namespace org {
         class DSFactory : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a84c9a223722150c,
-            mid_build_51e3f3a70c0b0650,
-            mid_constant_e5494538980257b4,
-            mid_getCompiler_dfc048d343f51ab1,
-            mid_getDerivativeField_878cd2801368be59,
-            mid_variable_9f9d1a368b0a2baf,
+            mid_init$_3313c75e3e16c428,
+            mid_build_86f1b5af7e082a1a,
+            mid_constant_d33302169f933b5a,
+            mid_getCompiler_e0888effe8b453a6,
+            mid_getDerivativeField_41dff4b84eb98073,
+            mid_variable_3955647bcb5e5f97,
             max_mid
           };
 

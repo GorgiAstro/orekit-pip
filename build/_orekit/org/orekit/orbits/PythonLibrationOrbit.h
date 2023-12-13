@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace bodies {
-      class CR3BPSystem;
-    }
     namespace orbits {
       class CR3BPDifferentialCorrection;
+    }
+    namespace bodies {
+      class CR3BPSystem;
     }
     namespace utils {
       class PVCoordinates;
@@ -31,12 +31,12 @@ namespace org {
       class PythonLibrationOrbit : public ::org::orekit::orbits::LibrationOrbit {
        public:
         enum {
-          mid_init$_cba003a7418c96ab,
-          mid_applyCorrectionOnPV_0f6106070ec4ffe8,
-          mid_finalize_0640e6acf969ed28,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_init$_61210a58b1c5967a,
+          mid_applyCorrectionOnPV_57264af3b06f967f,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
           max_mid
         };
 

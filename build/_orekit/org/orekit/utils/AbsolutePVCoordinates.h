@@ -8,17 +8,17 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
   }
   namespace orekit {
     namespace utils {
-      class PVCoordinates;
-      class PVCoordinatesProvider;
       class AbsolutePVCoordinates;
+      class PVCoordinatesProvider;
+      class PVCoordinates;
     }
     namespace frames {
       class Frame;
@@ -42,23 +42,23 @@ namespace org {
       class AbsolutePVCoordinates : public ::org::orekit::utils::TimeStampedPVCoordinates {
        public:
         enum {
-          mid_init$_a1fd02f06b657f28,
-          mid_init$_76db051720408dec,
-          mid_init$_9843b99b5e658838,
-          mid_init$_243f7b18c367ef6e,
-          mid_init$_745e3e9bf9e580ce,
-          mid_init$_a40d3c1c906792a4,
-          mid_init$_0f6c145f52314e2c,
-          mid_init$_e35ea6ed1126bff5,
-          mid_init$_7e1773b50a3ff7d2,
-          mid_init$_f7f3bf23e900bdc6,
-          mid_getFrame_6c9bc0a928c56d4e,
-          mid_getPVCoordinates_daf15abc21907508,
-          mid_getPVCoordinates_8cf7b972bef1e4d8,
-          mid_getPVCoordinates_17742a9a6655bdb1,
-          mid_getPosition_8386213426308de8,
-          mid_shiftedBy_1e0bd76edd81d64f,
-          mid_toTaylorProvider_dec199e86bf037eb,
+          mid_init$_800c3dd335c0380a,
+          mid_init$_fd2b0750660b1520,
+          mid_init$_72cc8b5e799f1af2,
+          mid_init$_cf7eb6bf40ec2784,
+          mid_init$_863f1b02c8177428,
+          mid_init$_ea4c48813d74fdbb,
+          mid_init$_da876b03b47aa63e,
+          mid_init$_d540dd032c580460,
+          mid_init$_3e48dcefd2485625,
+          mid_init$_57f438b019fb3492,
+          mid_getFrame_2c51111cc6894ba1,
+          mid_getPVCoordinates_136cc8ba23b21c29,
+          mid_getPVCoordinates_03c7a0bca588a4f5,
+          mid_getPVCoordinates_e5d15ef236cd9ffe,
+          mid_getPosition_982d534f80d70918,
+          mid_shiftedBy_e7e789aaa661e1b8,
+          mid_toTaylorProvider_8a41319e47f3bd7c,
           max_mid
         };
 

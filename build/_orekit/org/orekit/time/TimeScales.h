@@ -6,23 +6,23 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class TTScale;
-      class TAIScale;
-      class GMSTScale;
-      class GLONASSScale;
-      class UT1Scale;
-      class IRNSSScale;
       class TDBScale;
-      class AbsoluteDate;
-      class BDTScale;
-      class UTCScale;
-      class GPSScale;
-      class TimeScales;
-      class GalileoScale;
-      class QZSSScale;
+      class GLONASSScale;
+      class IRNSSScale;
+      class UT1Scale;
+      class GMSTScale;
       class OffsetModel;
+      class TTScale;
+      class QZSSScale;
+      class TAIScale;
       class TCBScale;
+      class UTCScale;
+      class TimeScales;
       class TCGScale;
+      class GPSScale;
+      class BDTScale;
+      class AbsoluteDate;
+      class GalileoScale;
     }
     namespace utils {
       class IERSConventions;
@@ -46,36 +46,36 @@ namespace org {
       class TimeScales : public ::java::lang::Object {
        public:
         enum {
-          mid_createBesselianEpoch_8ef471ef852a9678,
-          mid_createJulianEpoch_8ef471ef852a9678,
-          mid_getBDT_9391834b1a937fd3,
-          mid_getBeidouEpoch_7a97f7e149e79afb,
-          mid_getCcsdsEpoch_7a97f7e149e79afb,
-          mid_getFiftiesEpoch_7a97f7e149e79afb,
-          mid_getFutureInfinity_7a97f7e149e79afb,
-          mid_getGLONASS_237364a28a8cf0b4,
-          mid_getGMST_265dd6a5eaf62dee,
-          mid_getGPS_0cd5c45ac1466124,
-          mid_getGST_3eb0a3a9b450fe42,
-          mid_getGalileoEpoch_7a97f7e149e79afb,
-          mid_getGlonassEpoch_7a97f7e149e79afb,
-          mid_getGpsEpoch_7a97f7e149e79afb,
-          mid_getIRNSS_64d2db466ba002ef,
-          mid_getIrnssEpoch_7a97f7e149e79afb,
-          mid_getJ2000Epoch_7a97f7e149e79afb,
-          mid_getJavaEpoch_7a97f7e149e79afb,
-          mid_getJulianEpoch_7a97f7e149e79afb,
-          mid_getModifiedJulianEpoch_7a97f7e149e79afb,
-          mid_getPastInfinity_7a97f7e149e79afb,
-          mid_getQZSS_513baddf28d44704,
-          mid_getQzssEpoch_7a97f7e149e79afb,
-          mid_getTAI_d5c1bf5214e95dd6,
-          mid_getTCB_1561497728a78b6a,
-          mid_getTCG_2cdd0fa7c8f02aa9,
-          mid_getTDB_777ef8538a45134b,
-          mid_getTT_f6e670da699ff3f8,
-          mid_getUT1_672057b4f848abf0,
-          mid_getUTC_81e037be1ebdb551,
+          mid_createBesselianEpoch_f359a0110559347a,
+          mid_createJulianEpoch_f359a0110559347a,
+          mid_getBDT_e66ecc29d9b0858a,
+          mid_getBeidouEpoch_c325492395d89b24,
+          mid_getCcsdsEpoch_c325492395d89b24,
+          mid_getFiftiesEpoch_c325492395d89b24,
+          mid_getFutureInfinity_c325492395d89b24,
+          mid_getGLONASS_75a06d4a3e06af34,
+          mid_getGMST_375ab849f7e3d9ee,
+          mid_getGPS_a74060fc815076a7,
+          mid_getGST_935fd284aa6ccd53,
+          mid_getGalileoEpoch_c325492395d89b24,
+          mid_getGlonassEpoch_c325492395d89b24,
+          mid_getGpsEpoch_c325492395d89b24,
+          mid_getIRNSS_d7fbef15a3374e78,
+          mid_getIrnssEpoch_c325492395d89b24,
+          mid_getJ2000Epoch_c325492395d89b24,
+          mid_getJavaEpoch_c325492395d89b24,
+          mid_getJulianEpoch_c325492395d89b24,
+          mid_getModifiedJulianEpoch_c325492395d89b24,
+          mid_getPastInfinity_c325492395d89b24,
+          mid_getQZSS_f801e6f0b9a78872,
+          mid_getQzssEpoch_c325492395d89b24,
+          mid_getTAI_700cdb40469496d6,
+          mid_getTCB_e0443055c5547bea,
+          mid_getTCG_9ccd709f9ae42bbc,
+          mid_getTDB_61ba58ac615801fa,
+          mid_getTT_68d743a8c670f6cb,
+          mid_getUT1_246820b70f2cddeb,
+          mid_getUTC_1e4acbbebd50858e,
           max_mid
         };
 

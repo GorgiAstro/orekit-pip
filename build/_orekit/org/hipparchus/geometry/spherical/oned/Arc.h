@@ -6,13 +6,13 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
+      namespace partitioning {
+        class Region$Location;
+      }
       namespace spherical {
         namespace oned {
           class S1Point;
         }
-      }
-      namespace partitioning {
-        class Region$Location;
       }
     }
     namespace exception {
@@ -36,15 +36,15 @@ namespace org {
           class Arc : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_87096e3fd8086100,
-              mid_checkPoint_7a14c5735bc0a803,
-              mid_getBarycenter_557b8123390d8d0c,
-              mid_getInf_557b8123390d8d0c,
-              mid_getOffset_badaa03339491dac,
-              mid_getOffset_7e960cd6eee376d8,
-              mid_getSize_557b8123390d8d0c,
-              mid_getSup_557b8123390d8d0c,
-              mid_getTolerance_557b8123390d8d0c,
+              mid_init$_b5167f35b2521627,
+              mid_checkPoint_e724e7fee8c093d4,
+              mid_getBarycenter_b74f83833fdad017,
+              mid_getInf_b74f83833fdad017,
+              mid_getOffset_b08534c86dd5d029,
+              mid_getOffset_04fd0666b613d2ab,
+              mid_getSize_b74f83833fdad017,
+              mid_getSup_b74f83833fdad017,
+              mid_getTolerance_b74f83833fdad017,
               max_mid
             };
 

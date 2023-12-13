@@ -17,8 +17,8 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace errors {
-      class LocalizedException;
       class OrekitException;
+      class LocalizedException;
     }
   }
   namespace hipparchus {
@@ -37,16 +37,16 @@ namespace org {
       class OrekitException : public ::java::lang::RuntimeException {
        public:
         enum {
-          mid_init$_5a362f030f21d160,
-          mid_init$_4fde7f3f87bbd6f7,
-          mid_init$_7e3eb40b1c2d2586,
-          mid_init$_0ff5a331e85ddf14,
-          mid_getLocalizedMessage_3cffd47377eca18a,
-          mid_getMessage_3cffd47377eca18a,
-          mid_getMessage_4b51060c6b7ea981,
-          mid_getParts_6555a5198c71b73a,
-          mid_getSpecifier_a86d7419cf3241b7,
-          mid_unwrap_b461ed04f2b877b6,
+          mid_init$_5156a99a29d65d29,
+          mid_init$_9b3ada3301b0db8c,
+          mid_init$_4bb1ca1d16a113c3,
+          mid_init$_4d462b77e7e55a0d,
+          mid_getLocalizedMessage_1c1fa1e935d6cdcf,
+          mid_getMessage_1c1fa1e935d6cdcf,
+          mid_getMessage_26070c28e6ea354d,
+          mid_getParts_24e2edd6319f4c5a,
+          mid_getSpecifier_d8f5056e4f45c9a6,
+          mid_unwrap_f8191f14ec005730,
           max_mid
         };
 

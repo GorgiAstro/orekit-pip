@@ -5,10 +5,10 @@
 
 namespace java {
   namespace io {
-    class IOException;
-    class ObjectStreamConstants;
     class ObjectOutputStream$PutField;
     class ObjectOutput;
+    class ObjectStreamConstants;
+    class IOException;
   }
   namespace lang {
     class Class;
@@ -24,38 +24,38 @@ namespace java {
     class ObjectOutputStream : public ::java::io::OutputStream {
      public:
       enum {
-        mid_init$_a093374b16e6c27d,
-        mid_close_0640e6acf969ed28,
-        mid_defaultWriteObject_0640e6acf969ed28,
-        mid_flush_0640e6acf969ed28,
-        mid_putFields_6d0fa0c03e43522c,
-        mid_reset_0640e6acf969ed28,
-        mid_useProtocolVersion_a3da1a935cb37f7b,
-        mid_write_d759c70c6670fd89,
-        mid_write_a3da1a935cb37f7b,
-        mid_write_ac782c7077255dd3,
-        mid_writeBoolean_ed2afdb8506b9742,
-        mid_writeByte_a3da1a935cb37f7b,
-        mid_writeBytes_f5ffdf29129ef90a,
-        mid_writeChar_a3da1a935cb37f7b,
-        mid_writeChars_f5ffdf29129ef90a,
-        mid_writeDouble_10f281d777284cea,
-        mid_writeFields_0640e6acf969ed28,
-        mid_writeFloat_3ac7cc3def9efaa9,
-        mid_writeInt_a3da1a935cb37f7b,
-        mid_writeLong_3cd6a6b354c6aa22,
-        mid_writeObject_009757f2c0fd9090,
-        mid_writeShort_a3da1a935cb37f7b,
-        mid_writeUTF_f5ffdf29129ef90a,
-        mid_writeUnshared_009757f2c0fd9090,
-        mid_writeStreamHeader_0640e6acf969ed28,
-        mid_writeObjectOverride_009757f2c0fd9090,
-        mid_annotateClass_80b724d415998d9f,
-        mid_annotateProxyClass_80b724d415998d9f,
-        mid_replaceObject_65d69db95c5eb156,
-        mid_enableReplaceObject_bc7235a51f399397,
-        mid_writeClassDescriptor_372f23a0ca31862c,
-        mid_drain_0640e6acf969ed28,
+        mid_init$_9601da1efb310931,
+        mid_close_a1fa5dae97ea5ed2,
+        mid_defaultWriteObject_a1fa5dae97ea5ed2,
+        mid_flush_a1fa5dae97ea5ed2,
+        mid_putFields_d617ccc8cb976ecd,
+        mid_reset_a1fa5dae97ea5ed2,
+        mid_useProtocolVersion_44ed599e93e8a30c,
+        mid_write_459771b03534868e,
+        mid_write_44ed599e93e8a30c,
+        mid_write_a9fddc59b07ce512,
+        mid_writeBoolean_fcb96c98de6fad04,
+        mid_writeByte_44ed599e93e8a30c,
+        mid_writeBytes_734b91ac30d5f9b4,
+        mid_writeChar_44ed599e93e8a30c,
+        mid_writeChars_734b91ac30d5f9b4,
+        mid_writeDouble_8ba9fe7a847cecad,
+        mid_writeFields_a1fa5dae97ea5ed2,
+        mid_writeFloat_bb7181dc3b1dc22b,
+        mid_writeInt_44ed599e93e8a30c,
+        mid_writeLong_3d7dd2314a0dd456,
+        mid_writeObject_55f3c894852c27a3,
+        mid_writeShort_44ed599e93e8a30c,
+        mid_writeUTF_734b91ac30d5f9b4,
+        mid_writeUnshared_55f3c894852c27a3,
+        mid_writeObjectOverride_55f3c894852c27a3,
+        mid_annotateClass_9d20f27ef81b4361,
+        mid_annotateProxyClass_9d20f27ef81b4361,
+        mid_replaceObject_5804c890f94a02b6,
+        mid_enableReplaceObject_52d2d2523d94d978,
+        mid_writeStreamHeader_a1fa5dae97ea5ed2,
+        mid_writeClassDescriptor_f7ffe611f9e6736e,
+        mid_drain_a1fa5dae97ea5ed2,
         max_mid
       };
 

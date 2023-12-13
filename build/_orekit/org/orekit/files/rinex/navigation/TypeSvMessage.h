@@ -27,9 +27,9 @@ namespace org {
           class TypeSvMessage : public ::java::lang::Object {
            public:
             enum {
-              mid_getNavigationMessageType_3cffd47377eca18a,
-              mid_getPrn_412668abc8d889e9,
-              mid_getSystem_8b86408cc2633961,
+              mid_getNavigationMessageType_1c1fa1e935d6cdcf,
+              mid_getPrn_55546ef6a647f39b,
+              mid_getSystem_21bd759cc4a81606,
               max_mid
             };
 

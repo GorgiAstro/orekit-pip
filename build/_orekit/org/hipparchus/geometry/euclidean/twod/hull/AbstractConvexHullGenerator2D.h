@@ -8,11 +8,11 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace twod {
+          class Vector2D;
           namespace hull {
             class ConvexHullGenerator2D;
             class ConvexHull2D;
           }
-          class Vector2D;
         }
       }
     }
@@ -41,10 +41,10 @@ namespace org {
             class AbstractConvexHullGenerator2D : public ::java::lang::Object {
              public:
               enum {
-                mid_generate_b7d73bd07a9bc56d,
-                mid_getTolerance_557b8123390d8d0c,
-                mid_isIncludeCollinearPoints_89b302893bdbe1f1,
-                mid_findHullVertices_6472a4633751d554,
+                mid_generate_ae326bc9ed5d7af0,
+                mid_getTolerance_b74f83833fdad017,
+                mid_isIncludeCollinearPoints_9ab94ac1dc23b105,
+                mid_findHullVertices_394fcc3577736ad2,
                 max_mid
               };
 

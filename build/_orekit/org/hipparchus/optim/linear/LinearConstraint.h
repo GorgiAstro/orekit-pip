@@ -13,13 +13,13 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
+    namespace linear {
+      class RealVector;
+    }
     namespace optim {
       namespace linear {
         class Relationship;
       }
-    }
-    namespace linear {
-      class RealVector;
     }
   }
 }
@@ -33,15 +33,15 @@ namespace org {
         class LinearConstraint : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_cfaeb259ce53994e,
-            mid_init$_d64ce658cd967d2e,
-            mid_init$_5e18566fee7e8405,
-            mid_init$_14d5aa8adb640a48,
-            mid_equals_221e8e85cb385209,
-            mid_getCoefficients_75d50d73180655b4,
-            mid_getRelationship_c55cd9ad2e6d5653,
-            mid_getValue_557b8123390d8d0c,
-            mid_hashCode_412668abc8d889e9,
+            mid_init$_2aeb1c1abbfab740,
+            mid_init$_ac4d203849d954ad,
+            mid_init$_c768f6b19d2aa1d9,
+            mid_init$_3a15a6c1a7071f17,
+            mid_equals_460c5e2d9d51c6cc,
+            mid_getCoefficients_3a10cc75bd070d84,
+            mid_getRelationship_8ee3b6cbb19ddabb,
+            mid_getValue_b74f83833fdad017,
+            mid_hashCode_55546ef6a647f39b,
             max_mid
           };
 

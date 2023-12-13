@@ -6,11 +6,11 @@
 namespace org {
   namespace orekit {
     namespace frames {
+      class FieldTransform;
       class TransformProvider;
       class Transform;
       class FieldStaticTransform;
       class StaticTransform;
-      class FieldTransform;
     }
     namespace time {
       class FieldAbsoluteDate;
@@ -36,14 +36,14 @@ namespace org {
       class ShiftingTransformProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_eb9cd2c2bb77ce9f,
-          mid_getGridPoints_412668abc8d889e9,
-          mid_getRawProvider_5b1059d129debef8,
-          mid_getStaticTransform_7265a2d9c3b9a38a,
-          mid_getStaticTransform_68fd5b9bb9184393,
-          mid_getStep_557b8123390d8d0c,
-          mid_getTransform_df04e3927954349e,
-          mid_getTransform_e70631ba002d9a32,
+          mid_init$_b5ee83e9cfd012af,
+          mid_getGridPoints_55546ef6a647f39b,
+          mid_getRawProvider_51018934a5745bab,
+          mid_getStaticTransform_5f13614b572308e8,
+          mid_getStaticTransform_09ace34b8a3460b2,
+          mid_getStep_b74f83833fdad017,
+          mid_getTransform_976d4bc81671ce42,
+          mid_getTransform_7a8ca6856fe3fc9e,
           max_mid
         };
 

@@ -3,19 +3,19 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
-namespace org {
-  namespace orekit {
-    namespace utils {
-      class TimeStampedPVCoordinates;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class TimeStampedPVCoordinates;
+    }
   }
 }
 template<class T> class JArray;
@@ -30,15 +30,15 @@ namespace org {
             class StateVector : public ::org::orekit::files::ccsds::section::CommentsContainer {
              public:
               enum {
-                mid_init$_0640e6acf969ed28,
-                mid_getEpoch_7a97f7e149e79afb,
-                mid_hasAcceleration_89b302893bdbe1f1,
-                mid_setA_89aad365fb0ed8da,
-                mid_setEpoch_20affcbd28542333,
-                mid_setP_89aad365fb0ed8da,
-                mid_setV_89aad365fb0ed8da,
-                mid_toTimeStampedPVCoordinates_daf15abc21907508,
-                mid_validate_10f281d777284cea,
+                mid_init$_a1fa5dae97ea5ed2,
+                mid_getEpoch_c325492395d89b24,
+                mid_hasAcceleration_9ab94ac1dc23b105,
+                mid_setA_d5322b8b512aeb26,
+                mid_setEpoch_02135a6ef25adb4b,
+                mid_setP_d5322b8b512aeb26,
+                mid_setV_d5322b8b512aeb26,
+                mid_toTimeStampedPVCoordinates_136cc8ba23b21c29,
+                mid_validate_8ba9fe7a847cecad,
                 max_mid
               };
 

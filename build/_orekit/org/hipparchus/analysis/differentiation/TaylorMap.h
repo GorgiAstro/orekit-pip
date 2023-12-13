@@ -31,15 +31,15 @@ namespace org {
         class TaylorMap : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_859c9366927100bd,
-            mid_init$_3796b665437eba81,
-            mid_compose_b7f2337e4b8f4e3a,
-            mid_getFunction_aee818789db1d6ac,
-            mid_getNbFunctions_412668abc8d889e9,
-            mid_getNbParameters_412668abc8d889e9,
-            mid_getPoint_a53a7513ecedada2,
-            mid_invert_cd6cfb213ddfa90d,
-            mid_value_1db7c087750eaffe,
+            mid_init$_9d69924e252c5b9a,
+            mid_init$_a0df4b8e4ed3805e,
+            mid_compose_6646fcff2910e26b,
+            mid_getFunction_7d1614ef7f412b0c,
+            mid_getNbFunctions_55546ef6a647f39b,
+            mid_getNbParameters_55546ef6a647f39b,
+            mid_getPoint_25e1757a36c4dde2,
+            mid_invert_1573c268f373a63b,
+            mid_value_14dee4cb8cc3e959,
             max_mid
           };
 

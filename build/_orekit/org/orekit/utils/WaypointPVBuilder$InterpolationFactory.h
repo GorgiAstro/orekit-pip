@@ -31,7 +31,7 @@ namespace org {
       class WaypointPVBuilder$InterpolationFactory : public ::java::lang::Object {
        public:
         enum {
-          mid_create_439794ba61ea0c79,
+          mid_create_f9ae23f2f622a163,
           max_mid
         };
 

@@ -25,9 +25,9 @@ namespace org {
       class UnscentedTransformProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getWc_75d50d73180655b4,
-          mid_getWm_75d50d73180655b4,
-          mid_unscentedTransform_4b6e483760a5840b,
+          mid_getWc_3a10cc75bd070d84,
+          mid_getWm_3a10cc75bd070d84,
+          mid_unscentedTransform_d7f36cdbc321d4e6,
           max_mid
         };
 

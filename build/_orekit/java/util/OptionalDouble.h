@@ -11,14 +11,14 @@ namespace java {
     class String;
   }
   namespace util {
-    namespace stream {
-      class DoubleStream;
-    }
     namespace function {
       class Supplier;
       class DoubleConsumer;
     }
     class OptionalDouble;
+    namespace stream {
+      class DoubleStream;
+    }
   }
 }
 template<class T> class JArray;
@@ -29,20 +29,20 @@ namespace java {
     class OptionalDouble : public ::java::lang::Object {
      public:
       enum {
-        mid_empty_e3186f0c7a9ab30b,
-        mid_equals_221e8e85cb385209,
-        mid_getAsDouble_557b8123390d8d0c,
-        mid_hashCode_412668abc8d889e9,
-        mid_ifPresent_fda350dd3513069c,
-        mid_ifPresentOrElse_67dd0e15cf1c0ffe,
-        mid_isEmpty_89b302893bdbe1f1,
-        mid_isPresent_89b302893bdbe1f1,
-        mid_of_afa36fca5724ddcb,
-        mid_orElse_7e960cd6eee376d8,
-        mid_orElseThrow_557b8123390d8d0c,
-        mid_orElseThrow_a5cf1eb1c68623c3,
-        mid_stream_78c9b5d7fa0dbac0,
-        mid_toString_3cffd47377eca18a,
+        mid_empty_a58140050545434b,
+        mid_equals_460c5e2d9d51c6cc,
+        mid_getAsDouble_b74f83833fdad017,
+        mid_hashCode_55546ef6a647f39b,
+        mid_ifPresent_85691ac11e338ac3,
+        mid_ifPresentOrElse_45e69547b92f94bd,
+        mid_isEmpty_9ab94ac1dc23b105,
+        mid_isPresent_9ab94ac1dc23b105,
+        mid_of_35e22db7ad859742,
+        mid_orElse_04fd0666b613d2ab,
+        mid_orElseThrow_b74f83833fdad017,
+        mid_orElseThrow_a720d4bc78d0f73d,
+        mid_stream_48a8801871033f9c,
+        mid_toString_1c1fa1e935d6cdcf,
         max_mid
       };
 

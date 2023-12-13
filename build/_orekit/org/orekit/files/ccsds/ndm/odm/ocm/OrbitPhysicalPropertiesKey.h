@@ -7,12 +7,6 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace utils {
-          namespace lexical {
-            class ParseToken;
-          }
-          class ContextBinding;
-        }
         namespace ndm {
           namespace odm {
             namespace ocm {
@@ -20,6 +14,12 @@ namespace org {
               class OrbitPhysicalProperties;
             }
           }
+        }
+        namespace utils {
+          namespace lexical {
+            class ParseToken;
+          }
+          class ContextBinding;
         }
       }
     }
@@ -44,9 +44,9 @@ namespace org {
               class OrbitPhysicalPropertiesKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_22b76e5a05430141,
-                  mid_valueOf_5ab20fb966246ef9,
-                  mid_values_4b251283a15eeb91,
+                  mid_process_7c8f2f452bd42d0a,
+                  mid_valueOf_8319c2a27f5ee4bd,
+                  mid_values_b67aee829b8e142a,
                   max_mid
                 };
 

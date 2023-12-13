@@ -25,17 +25,17 @@ namespace org {
       class Month : public ::java::lang::Enum {
        public:
         enum {
-          mid_getCapitalizedAbbreviation_3cffd47377eca18a,
-          mid_getCapitalizedName_3cffd47377eca18a,
-          mid_getLowerCaseAbbreviation_3cffd47377eca18a,
-          mid_getLowerCaseName_3cffd47377eca18a,
-          mid_getMonth_27dff97b9e8029b7,
-          mid_getNumber_412668abc8d889e9,
-          mid_getUpperCaseAbbreviation_3cffd47377eca18a,
-          mid_getUpperCaseName_3cffd47377eca18a,
-          mid_parseMonth_4137c00c97fcbc5e,
-          mid_valueOf_4137c00c97fcbc5e,
-          mid_values_967fa078b3d0ac38,
+          mid_getCapitalizedAbbreviation_1c1fa1e935d6cdcf,
+          mid_getCapitalizedName_1c1fa1e935d6cdcf,
+          mid_getLowerCaseAbbreviation_1c1fa1e935d6cdcf,
+          mid_getLowerCaseName_1c1fa1e935d6cdcf,
+          mid_getMonth_fab8240f801e307f,
+          mid_getNumber_55546ef6a647f39b,
+          mid_getUpperCaseAbbreviation_1c1fa1e935d6cdcf,
+          mid_getUpperCaseName_1c1fa1e935d6cdcf,
+          mid_parseMonth_f4316336d73d53f1,
+          mid_valueOf_f4316336d73d53f1,
+          mid_values_8e4a97337a848d9f,
           max_mid
         };
 

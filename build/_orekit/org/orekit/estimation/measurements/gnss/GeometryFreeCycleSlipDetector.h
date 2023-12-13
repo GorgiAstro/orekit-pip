@@ -19,8 +19,8 @@ namespace org {
           class GeometryFreeCycleSlipDetector : public ::org::orekit::estimation::measurements::gnss::AbstractCycleSlipDetector {
            public:
             enum {
-              mid_init$_427af08acba367ca,
-              mid_manageData_7cae3eafa8e6978c,
+              mid_init$_2aa803b9073e6a76,
+              mid_manageData_e95b94a72b1c921a,
               max_mid
             };
 

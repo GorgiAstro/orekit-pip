@@ -5,8 +5,8 @@
 
 namespace java {
   namespace util {
-    class Comparator;
     class Spliterator;
+    class Comparator;
     class SortedSet;
   }
   namespace lang {
@@ -22,13 +22,13 @@ namespace java {
     class SortedSet : public ::java::util::Set {
      public:
       enum {
-        mid_comparator_b0b551d4a54c7150,
-        mid_first_e661fe3ba2fafb22,
-        mid_headSet_3ca4ace183d6efe9,
-        mid_last_e661fe3ba2fafb22,
-        mid_spliterator_0a89e3b18808f850,
-        mid_subSet_ba202d431ff51666,
-        mid_tailSet_3ca4ace183d6efe9,
+        mid_comparator_127b1bec8b0c3ae1,
+        mid_first_541690f9ee81d3ad,
+        mid_headSet_15bf8d17699caf41,
+        mid_last_541690f9ee81d3ad,
+        mid_spliterator_fe8f811ebd6e639a,
+        mid_subSet_4e206fa37c57fda5,
+        mid_tailSet_15bf8d17699caf41,
         max_mid
       };
 

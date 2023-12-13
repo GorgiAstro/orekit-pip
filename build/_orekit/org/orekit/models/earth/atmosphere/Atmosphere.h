@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
@@ -41,11 +41,11 @@ namespace org {
           class Atmosphere : public ::java::io::Serializable {
            public:
             enum {
-              mid_getDensity_818999d9e7960fd1,
-              mid_getDensity_57dd506d2d9ba196,
-              mid_getFrame_6c9bc0a928c56d4e,
-              mid_getVelocity_12776b6e8e044274,
-              mid_getVelocity_4b2e058d0b26ef39,
+              mid_getDensity_e9a4fc2340b58984,
+              mid_getDensity_58866e32a1c9318b,
+              mid_getFrame_2c51111cc6894ba1,
+              mid_getVelocity_2e30102aa3d53198,
+              mid_getVelocity_b79629c6a3fafdaa,
               max_mid
             };
 

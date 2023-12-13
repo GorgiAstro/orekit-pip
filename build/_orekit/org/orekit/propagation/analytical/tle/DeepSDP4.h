@@ -36,11 +36,11 @@ namespace org {
           class DeepSDP4 : public ::org::orekit::propagation::analytical::tle::SDP4 {
            public:
             enum {
-              mid_init$_c15edfeff3b77424,
-              mid_init$_2f68d31a9dcd927c,
-              mid_luniSolarTermsComputation_0640e6acf969ed28,
-              mid_deepSecularEffects_10f281d777284cea,
-              mid_deepPeriodicEffects_10f281d777284cea,
+              mid_init$_7a5e69c032c7e921,
+              mid_init$_3b79aaf1b59208bb,
+              mid_luniSolarTermsComputation_a1fa5dae97ea5ed2,
+              mid_deepSecularEffects_8ba9fe7a847cecad,
+              mid_deepPeriodicEffects_8ba9fe7a847cecad,
               max_mid
             };
 

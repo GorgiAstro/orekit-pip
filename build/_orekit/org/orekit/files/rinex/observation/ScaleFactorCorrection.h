@@ -29,9 +29,9 @@ namespace org {
           class ScaleFactorCorrection : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_bb8694b66894545d,
-              mid_getCorrection_557b8123390d8d0c,
-              mid_getTypesObsScaled_0d9551367f7ecdef,
+              mid_init$_ff4b669f0c231c8c,
+              mid_getCorrection_b74f83833fdad017,
+              mid_getTypesObsScaled_e62d3bb06d56d7e3,
               max_mid
             };
 

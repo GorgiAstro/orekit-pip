@@ -3,17 +3,17 @@
 
 #include "org/hipparchus/optim/BaseOptimizer.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-    class Object;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace optim {
       class OptimizationData;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
+    class Object;
   }
 }
 template<class T> class JArray;
@@ -25,11 +25,11 @@ namespace org {
       class BaseMultivariateOptimizer : public ::org::hipparchus::optim::BaseOptimizer {
        public:
         enum {
-          mid_getLowerBound_a53a7513ecedada2,
-          mid_getStartPoint_a53a7513ecedada2,
-          mid_getUpperBound_a53a7513ecedada2,
-          mid_optimize_531d71f92ce59bee,
-          mid_parseOptimizationData_946a92401917c130,
+          mid_getLowerBound_25e1757a36c4dde2,
+          mid_getStartPoint_25e1757a36c4dde2,
+          mid_getUpperBound_25e1757a36c4dde2,
+          mid_optimize_91381cab165160dc,
+          mid_parseOptimizationData_14193ddbce7a2cc0,
           max_mid
         };
 

@@ -6,15 +6,15 @@
 namespace org {
   namespace orekit {
     namespace rugged {
+      namespace intersection {
+        class IntersectionAlgorithm;
+      }
       namespace utils {
-        class NormalizedGeodeticPoint;
         class ExtendedEllipsoid;
+        class NormalizedGeodeticPoint;
       }
       namespace api {
         class AlgorithmId;
-      }
-      namespace intersection {
-        class IntersectionAlgorithm;
       }
     }
   }
@@ -43,11 +43,11 @@ namespace org {
         class ConstantElevationAlgorithm : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_10f281d777284cea,
-            mid_getAlgorithmId_58f1b48b3d6060f9,
-            mid_getElevation_2268d18be49a6087,
-            mid_intersection_bffffb02b1b74895,
-            mid_refineIntersection_5fc8cb427a1ada2e,
+            mid_init$_8ba9fe7a847cecad,
+            mid_getAlgorithmId_d67e2fdbea04a3ee,
+            mid_getElevation_99e3200dafc19573,
+            mid_intersection_7819c980b8c560ad,
+            mid_refineIntersection_882cf21796738f1c,
             max_mid
           };
 

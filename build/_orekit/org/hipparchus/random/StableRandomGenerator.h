@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathIllegalArgumentException;
       class NullArgumentException;
+      class MathIllegalArgumentException;
     }
     namespace random {
       class NormalizedRandomGenerator;
@@ -29,8 +29,8 @@ namespace org {
       class StableRandomGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7264f2f4bdb6e6d3,
-          mid_nextNormalizedDouble_557b8123390d8d0c,
+          mid_init$_c3896a42bf2f005f,
+          mid_nextNormalizedDouble_b74f83833fdad017,
           max_mid
         };
 

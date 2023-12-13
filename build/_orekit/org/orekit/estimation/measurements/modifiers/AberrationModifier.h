@@ -4,32 +4,32 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class AngularRaDec;
+        class EstimationModifier;
+        class EstimatedMeasurementBase;
+        class EstimatedMeasurement;
+        class GroundStation;
+      }
+    }
+    namespace frames {
+      class FieldTransform;
+      class Frame;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
   namespace hipparchus {
     namespace analysis {
       namespace differentiation {
         class Gradient;
       }
-    }
-  }
-  namespace orekit {
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace estimation {
-      namespace measurements {
-        class EstimatedMeasurement;
-        class EstimatedMeasurementBase;
-        class GroundStation;
-        class AngularRaDec;
-        class EstimationModifier;
-      }
-    }
-    namespace frames {
-      class Frame;
-      class FieldTransform;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -52,14 +52,14 @@ namespace org {
           class AberrationModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_fieldNaturalToProper_1524791121e959c6,
-              mid_fieldProperToNatural_1524791121e959c6,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_modify_0054a497255e8220,
-              mid_modifyWithoutDerivatives_e471490df8741b73,
-              mid_naturalToProper_3d1b32bf08f1cecd,
-              mid_properToNatural_3d1b32bf08f1cecd,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_fieldNaturalToProper_3d83526a19e21371,
+              mid_fieldProperToNatural_3d83526a19e21371,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_modify_f784f7724d44a90a,
+              mid_modifyWithoutDerivatives_308087fabc1d7f66,
+              mid_naturalToProper_901c3791391f487f,
+              mid_properToNatural_901c3791391f487f,
               max_mid
             };
 

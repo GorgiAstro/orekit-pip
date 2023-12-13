@@ -7,8 +7,8 @@ namespace org {
   namespace hipparchus {
     namespace ode {
       namespace sampling {
-        class ODEStateInterpolator;
         class AbstractODEStateInterpolator;
+        class ODEStateInterpolator;
       }
       class ODEStateAndDerivative;
     }
@@ -29,18 +29,18 @@ namespace org {
         class AbstractODEStateInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_getCurrentState_0a798a152cb54887,
-            mid_getGlobalCurrentState_0a798a152cb54887,
-            mid_getGlobalPreviousState_0a798a152cb54887,
-            mid_getInterpolatedState_0a47e68426cfc9cf,
-            mid_getPreviousState_0a798a152cb54887,
-            mid_isCurrentStateInterpolated_89b302893bdbe1f1,
-            mid_isForward_89b302893bdbe1f1,
-            mid_isPreviousStateInterpolated_89b302893bdbe1f1,
-            mid_restrictStep_062f93260d31faa2,
-            mid_getMapper_ac224193cab69474,
-            mid_computeInterpolatedStateAndDerivatives_0611821f422badbb,
-            mid_create_d36a5031f0749114,
+            mid_getCurrentState_73a804ac72232dd7,
+            mid_getGlobalCurrentState_73a804ac72232dd7,
+            mid_getGlobalPreviousState_73a804ac72232dd7,
+            mid_getInterpolatedState_cf0061d2765ae5a3,
+            mid_getPreviousState_73a804ac72232dd7,
+            mid_isCurrentStateInterpolated_9ab94ac1dc23b105,
+            mid_isForward_9ab94ac1dc23b105,
+            mid_isPreviousStateInterpolated_9ab94ac1dc23b105,
+            mid_restrictStep_c30f3dfccffcc659,
+            mid_getMapper_d05a9ec8030c7103,
+            mid_computeInterpolatedStateAndDerivatives_95a6c58152853e22,
+            mid_create_39f312cb029323b1,
             max_mid
           };
 

@@ -24,12 +24,12 @@ namespace org {
       class ContinuedFraction : public ::java::lang::Object {
        public:
         enum {
-          mid_evaluate_7e960cd6eee376d8,
-          mid_evaluate_2268d18be49a6087,
-          mid_evaluate_156ae9d72f1c8533,
-          mid_evaluate_63ce51364ee6da7c,
-          mid_getA_77f9e227e4cf04b4,
-          mid_getB_77f9e227e4cf04b4,
+          mid_evaluate_04fd0666b613d2ab,
+          mid_evaluate_99e3200dafc19573,
+          mid_evaluate_2eeda88661ae34d3,
+          mid_evaluate_c35488bf93c357d0,
+          mid_getA_98e10c261c066ee7,
+          mid_getB_98e10c261c066ee7,
           max_mid
         };
 

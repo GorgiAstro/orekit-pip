@@ -13,18 +13,18 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace utils {
+      class TimeStampedPVCoordinates;
+    }
     namespace bodies {
-      class GeodeticPoint;
       class OneAxisEllipsoid;
+      class GeodeticPoint;
     }
     namespace frames {
       class Frame;
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace utils {
-      class TimeStampedPVCoordinates;
     }
   }
 }
@@ -38,8 +38,8 @@ namespace org {
         class RoughVisibilityEstimator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_500f509a1d8d8904,
-            mid_estimateVisibility_c9efe5cf116ca41b,
+            mid_init$_399876c4baaf92fd,
+            mid_estimateVisibility_5a46fb2cb47f92a5,
             max_mid
           };
 

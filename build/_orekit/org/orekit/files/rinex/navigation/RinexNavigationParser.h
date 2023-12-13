@@ -39,9 +39,9 @@ namespace org {
           class RinexNavigationParser : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_init$_fdb437c675e993f7,
-              mid_parse_6ec8d3ac4b3ffe39,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_init$_0473fe41b53e3616,
+              mid_parse_58f8fb0799838569,
               max_mid
             };
 

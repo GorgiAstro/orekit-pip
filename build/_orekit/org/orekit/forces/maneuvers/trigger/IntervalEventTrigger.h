@@ -8,8 +8,8 @@ namespace org {
     namespace propagation {
       namespace events {
         class AbstractDetector;
-        class EventDetector;
         class FieldEventDetector;
+        class EventDetector;
       }
     }
   }
@@ -38,12 +38,12 @@ namespace org {
           class IntervalEventTrigger : public ::org::orekit::forces::maneuvers::trigger::AbstractManeuverTriggers {
            public:
             enum {
-              mid_init$_f9a3e736b2361f6c,
-              mid_getEventDetectors_d7cce92225eb0db2,
-              mid_getFieldEventDetectors_8130af76f6998f44,
-              mid_getFiringIntervalDetector_9cafaf54f10725f9,
-              mid_isFiringOnInitialState_1e4c79a00429445e,
-              mid_convertIntervalDetector_590bb38060674b63,
+              mid_init$_83e63d3f64ed1c29,
+              mid_getEventDetectors_14e21bf777ff0ccf,
+              mid_getFieldEventDetectors_283ad33581c047a0,
+              mid_getFiringIntervalDetector_e060948c985b754b,
+              mid_convertIntervalDetector_323adeb6f2939c8a,
+              mid_isFiringOnInitialState_4ef3ef34329e6316,
               max_mid
             };
 

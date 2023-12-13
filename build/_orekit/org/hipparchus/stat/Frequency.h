@@ -11,14 +11,14 @@ namespace java {
     class List;
     class Collection;
   }
-  namespace io {
-    class Serializable;
-  }
   namespace lang {
     class Long;
     class Class;
     class String;
     class Comparable;
+  }
+  namespace io {
+    class Serializable;
   }
 }
 namespace org {
@@ -40,25 +40,25 @@ namespace org {
       class Frequency : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_init$_349032d04af23bed,
-          mid_addValue_1e222383a0988b8a,
-          mid_clear_0640e6acf969ed28,
-          mid_entrySetIterator_834a3801c426326d,
-          mid_equals_221e8e85cb385209,
-          mid_getCount_afa7ed76ccf53f0c,
-          mid_getCumFreq_afa7ed76ccf53f0c,
-          mid_getCumPct_045db5c4787a66b9,
-          mid_getMode_0d9551367f7ecdef,
-          mid_getPct_045db5c4787a66b9,
-          mid_getSumFreq_9e26256fb0d384a2,
-          mid_getUniqueCount_412668abc8d889e9,
-          mid_hashCode_412668abc8d889e9,
-          mid_incrementValue_f8a5a43213a74b25,
-          mid_merge_760509cbfffb9cf4,
-          mid_merge_3abde0be9b9c9773,
-          mid_toString_3cffd47377eca18a,
-          mid_valuesIterator_834a3801c426326d,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_init$_2c01874c65d2ef2f,
+          mid_addValue_be194746f459c63c,
+          mid_clear_a1fa5dae97ea5ed2,
+          mid_entrySetIterator_fc7780bc5d5b73b0,
+          mid_equals_460c5e2d9d51c6cc,
+          mid_getCount_847217f97b13f225,
+          mid_getCumFreq_847217f97b13f225,
+          mid_getCumPct_501a514086abd77c,
+          mid_getMode_e62d3bb06d56d7e3,
+          mid_getPct_501a514086abd77c,
+          mid_getSumFreq_6c0ce7e438e5ded4,
+          mid_getUniqueCount_55546ef6a647f39b,
+          mid_hashCode_55546ef6a647f39b,
+          mid_incrementValue_73e3fbb166ca1058,
+          mid_merge_17f8a575980fa0db,
+          mid_merge_7d8f123763cd893c,
+          mid_toString_1c1fa1e935d6cdcf,
+          mid_valuesIterator_fc7780bc5d5b73b0,
           max_mid
         };
 

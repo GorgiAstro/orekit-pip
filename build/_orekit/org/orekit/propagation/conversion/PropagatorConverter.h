@@ -30,10 +30,10 @@ namespace org {
         class PropagatorConverter : public ::java::lang::Object {
          public:
           enum {
-            mid_convert_aca0727def0bdfc3,
-            mid_convert_e823fa7f61b08ee5,
-            mid_convert_45d78d4eb2e28b70,
-            mid_convert_5aea72ca01fda79c,
+            mid_convert_1085fbc3099561ad,
+            mid_convert_ed49a95e057deeb1,
+            mid_convert_8c138e9dd275b235,
+            mid_convert_439cb7b3f99fe6c0,
             max_mid
           };
 

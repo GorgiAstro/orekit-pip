@@ -3,6 +3,14 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -16,14 +24,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -34,9 +34,9 @@ namespace org {
         class MultiSatStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_finish_4ccaedadb068bdeb,
-            mid_handleStep_4ccaedadb068bdeb,
-            mid_init_98fa7d48d3b7f88a,
+            mid_finish_0e7c3032c7c93ed3,
+            mid_handleStep_0e7c3032c7c93ed3,
+            mid_init_0365da66b6e36325,
             max_mid
           };
 

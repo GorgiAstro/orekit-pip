@@ -26,15 +26,15 @@ namespace org {
         class GTest : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_g_309c07a77179d86e,
-            mid_gDataSetsComparison_c9aa1880e4fb2330,
-            mid_gTest_309c07a77179d86e,
-            mid_gTest_deac5230a366dcf3,
-            mid_gTestDataSetsComparison_c9aa1880e4fb2330,
-            mid_gTestDataSetsComparison_885f29369ee9c892,
-            mid_gTestIntrinsic_309c07a77179d86e,
-            mid_rootLogLikelihoodRatio_db51ea2c930fe509,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_g_5da72ec1f5d4a740,
+            mid_gDataSetsComparison_f69626ae7ca2489a,
+            mid_gTest_5da72ec1f5d4a740,
+            mid_gTest_337fdba983c67932,
+            mid_gTestDataSetsComparison_f69626ae7ca2489a,
+            mid_gTestDataSetsComparison_05bd0745ca7cc56a,
+            mid_gTestIntrinsic_5da72ec1f5d4a740,
+            mid_rootLogLikelihoodRatio_84bd267915ec3a91,
             max_mid
           };
 

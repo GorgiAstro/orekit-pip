@@ -7,17 +7,17 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace section {
-          class Header;
-          class Segment;
-        }
-        namespace ndm {
-          class NdmConstituent;
-        }
         namespace utils {
           namespace generation {
             class Generator;
           }
+        }
+        namespace section {
+          class Segment;
+          class Header;
+        }
+        namespace ndm {
+          class NdmConstituent;
         }
       }
     }
@@ -44,13 +44,13 @@ namespace org {
             class MessageWriter : public ::java::lang::Object {
              public:
               enum {
-                mid_getFormatVersionKey_3cffd47377eca18a,
-                mid_getRoot_3cffd47377eca18a,
-                mid_getVersion_557b8123390d8d0c,
-                mid_writeFooter_0503da09b1f1eb3c,
-                mid_writeHeader_9c5c2ece653aa3f3,
-                mid_writeMessage_f246fa1b4daafa07,
-                mid_writeSegment_c15b5f80625a03e0,
+                mid_getFormatVersionKey_1c1fa1e935d6cdcf,
+                mid_getRoot_1c1fa1e935d6cdcf,
+                mid_getVersion_b74f83833fdad017,
+                mid_writeFooter_fb222e851cd27682,
+                mid_writeHeader_5f2a5114115bbdb2,
+                mid_writeMessage_a4b14e3c29843c15,
+                mid_writeSegment_1cabdf4a5e993579,
                 max_mid
               };
 

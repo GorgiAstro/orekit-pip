@@ -5,6 +5,10 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class TimeStamped;
+      class AbsoluteDate;
+    }
     namespace models {
       namespace earth {
         namespace atmosphere {
@@ -13,10 +17,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
-      class TimeStamped;
     }
   }
 }
@@ -41,10 +41,10 @@ namespace org {
             class AbstractSolarActivityDataLoader$LineParameters : public ::java::lang::Object {
              public:
               enum {
-                mid_compareTo_2ef76e9305253641,
-                mid_equals_221e8e85cb385209,
-                mid_getDate_7a97f7e149e79afb,
-                mid_hashCode_412668abc8d889e9,
+                mid_compareTo_73ef5c88fa79f2d9,
+                mid_equals_460c5e2d9d51c6cc,
+                mid_getDate_c325492395d89b24,
+                mid_hashCode_55546ef6a647f39b,
                 max_mid
               };
 

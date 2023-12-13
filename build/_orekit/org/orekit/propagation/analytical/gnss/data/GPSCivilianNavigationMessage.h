@@ -20,7 +20,7 @@ namespace org {
             class GPSCivilianNavigationMessage : public ::org::orekit::propagation::analytical::gnss::data::CivilianNavigationMessage {
              public:
               enum {
-                mid_init$_ed2afdb8506b9742,
+                mid_init$_fcb96c98de6fad04,
                 max_mid
               };
 

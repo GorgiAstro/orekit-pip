@@ -5,23 +5,25 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      namespace conversion {
-        class PropagatorBuilder;
-        class BrouwerLyddanePropagatorBuilder;
-      }
-      namespace analytical {
-        class BrouwerLyddanePropagator;
-      }
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+    namespace utils {
+      class ParameterDriversList;
     }
     namespace estimation {
       namespace leastsquares {
-        class ModelObserver;
         class AbstractBatchLSModel;
+        class ModelObserver;
       }
       namespace measurements {
         class ObservedMeasurement;
       }
+    }
+    namespace orbits {
+      class Orbit;
+      class PositionAngleType;
+      class OrbitType;
     }
     namespace forces {
       namespace gravity {
@@ -31,16 +33,14 @@ namespace org {
         }
       }
     }
-    namespace utils {
-      class ParameterDriversList;
-    }
-    namespace orbits {
-      class PositionAngleType;
-      class OrbitType;
-      class Orbit;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
+    namespace propagation {
+      namespace analytical {
+        class BrouwerLyddanePropagator;
+      }
+      namespace conversion {
+        class PropagatorBuilder;
+        class BrouwerLyddanePropagatorBuilder;
+      }
     }
   }
 }
@@ -63,12 +63,12 @@ namespace org {
         class BrouwerLyddanePropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_96fa06557882028a,
-            mid_init$_f78463a528996b20,
-            mid_init$_820cf347395465d6,
-            mid_buildLeastSquaresModel_4fca41eef9d750a6,
-            mid_buildPropagator_de4cda068ed20390,
-            mid_copy_d362e5271befd797,
+            mid_init$_c2db4c2af9d353e5,
+            mid_init$_63cfa8ed77650466,
+            mid_init$_1890bd31fcaa073d,
+            mid_buildLeastSquaresModel_1a4dd1f247347a8f,
+            mid_buildPropagator_7f3ab1e0344cdbc7,
+            mid_copy_e38155725bec7fbb,
             max_mid
           };
 

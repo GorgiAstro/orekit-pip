@@ -28,8 +28,8 @@ namespace org {
         class AbstractIntegratedPropagator$MainStateEquations : public ::java::lang::Object {
          public:
           enum {
-            mid_computeDerivatives_2a145999b8c9a41d,
-            mid_init_0472264ad6f40bc2,
+            mid_computeDerivatives_f227e5f48720b798,
+            mid_init_2d7f9a496c7e9781,
             max_mid
           };
 

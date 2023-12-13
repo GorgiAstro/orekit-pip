@@ -14,11 +14,11 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace ode {
-      class LocalizedODEFormats;
-    }
     namespace exception {
       class Localizable;
+    }
+    namespace ode {
+      class LocalizedODEFormats;
     }
   }
 }
@@ -31,10 +31,10 @@ namespace org {
       class LocalizedODEFormats : public ::java::lang::Enum {
        public:
         enum {
-          mid_getLocalizedString_4b51060c6b7ea981,
-          mid_getSourceString_3cffd47377eca18a,
-          mid_valueOf_d368850a65d634c2,
-          mid_values_ac05cca52586756a,
+          mid_getLocalizedString_26070c28e6ea354d,
+          mid_getSourceString_1c1fa1e935d6cdcf,
+          mid_valueOf_e0774ffc25a7a018,
+          mid_values_5050a592b1d6232f,
           max_mid
         };
 

@@ -3,14 +3,14 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,10 +24,10 @@ namespace org {
           class FieldTheta : public ::java::lang::Object {
            public:
             enum {
-              mid_theta1_613c8f46c659f636,
-              mid_theta2_613c8f46c659f636,
-              mid_theta3_613c8f46c659f636,
-              mid_theta4_613c8f46c659f636,
+              mid_theta1_81520b552cb3fa26,
+              mid_theta2_81520b552cb3fa26,
+              mid_theta3_81520b552cb3fa26,
+              mid_theta4_81520b552cb3fa26,
               max_mid
             };
 

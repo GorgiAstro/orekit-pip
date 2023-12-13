@@ -12,17 +12,17 @@ namespace org {
     }
   }
   namespace orekit {
-    namespace orbits {
-      class OrbitType;
-      class PositionAngleType;
-      class Orbit;
-    }
-    namespace time {
-      class TimeInterpolator;
-    }
     namespace frames {
       class LOFType;
       class Frame;
+    }
+    namespace orbits {
+      class Orbit;
+      class PositionAngleType;
+      class OrbitType;
+    }
+    namespace time {
+      class TimeInterpolator;
     }
   }
 }
@@ -40,9 +40,9 @@ namespace org {
       class StateCovarianceBlender : public ::org::orekit::propagation::AbstractStateCovarianceInterpolator {
        public:
         enum {
-          mid_init$_4c0eb030f755b484,
-          mid_init$_9518e74cf0516047,
-          mid_computeInterpolatedCovarianceInOrbitFrame_1da586432f5e847a,
+          mid_init$_0c39569b67ad4297,
+          mid_init$_804bce5809bbc06f,
+          mid_computeInterpolatedCovarianceInOrbitFrame_6e94f93e19d6364d,
           max_mid
         };
 

@@ -3,16 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace lang {
-    class Appendable;
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -26,6 +16,16 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace io {
+    class IOException;
+  }
+  namespace lang {
+    class Appendable;
+    class Class;
+    class String;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -36,10 +36,10 @@ namespace org {
         class StreamingCpfWriter$HeaderLineWriter : public ::java::lang::Enum {
          public:
           enum {
-            mid_getIdentifier_3cffd47377eca18a,
-            mid_valueOf_1b3efe879e7f1d29,
-            mid_values_add654cae3f6f9cd,
-            mid_write_900728190d5e0bec,
+            mid_getIdentifier_1c1fa1e935d6cdcf,
+            mid_valueOf_b5389b625872772a,
+            mid_values_afe2856f4377f9d1,
+            mid_write_1a2e19922e339da8,
             max_mid
           };
 

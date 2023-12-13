@@ -5,6 +5,9 @@
 
 namespace org {
   namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
     namespace propagation {
       class PropagationType;
       class SpacecraftState;
@@ -18,9 +21,6 @@ namespace org {
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
     }
   }
 }
@@ -40,13 +40,13 @@ namespace org {
         class PythonStateMapper : public ::org::orekit::propagation::integration::StateMapper {
          public:
           enum {
-            mid_init$_f250d8aaa74478ce,
-            mid_finalize_0640e6acf969ed28,
-            mid_mapArrayToState_f38e2174d37ac0d2,
-            mid_mapStateToArray_c6e78d5a2304799f,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
+            mid_init$_953cf0ff7e5d2055,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_mapArrayToState_99fed456829e6a47,
+            mid_mapStateToArray_915c7d1930588394,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
             max_mid
           };
 

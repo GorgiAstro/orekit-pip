@@ -29,8 +29,8 @@ namespace org {
           class ObjectiveFunction : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_340593e5d648b757,
-              mid_getObjectiveFunction_9677e7d77366ec50,
+              mid_init$_03ca3c35dcd2022b,
+              mid_getObjectiveFunction_826b9148fa764579,
               max_mid
             };
 

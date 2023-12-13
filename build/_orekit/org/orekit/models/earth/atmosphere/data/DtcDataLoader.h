@@ -3,24 +3,11 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class IOException;
-    class InputStream;
-  }
-  namespace text {
-    class ParseException;
-  }
-  namespace util {
-    class SortedSet;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataLoader;
+    }
     namespace models {
       namespace earth {
         namespace atmosphere {
@@ -33,13 +20,26 @@ namespace org {
     namespace errors {
       class OrekitException;
     }
-    namespace data {
-      class DataLoader;
-    }
     namespace time {
       class AbsoluteDate;
       class TimeScale;
     }
+  }
+}
+namespace java {
+  namespace io {
+    class InputStream;
+    class IOException;
+  }
+  namespace text {
+    class ParseException;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+  namespace util {
+    class SortedSet;
   }
 }
 template<class T> class JArray;
@@ -54,12 +54,12 @@ namespace org {
             class DtcDataLoader : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_3e3301925c0131d4,
-                mid_getDataSet_c6b6a992db588a51,
-                mid_getMaxDate_7a97f7e149e79afb,
-                mid_getMinDate_7a97f7e149e79afb,
-                mid_loadData_15770e8d8949a557,
-                mid_stillAcceptsData_89b302893bdbe1f1,
+                mid_init$_cae5d0c3721eff67,
+                mid_getDataSet_7961e54fd3a47d94,
+                mid_getMaxDate_c325492395d89b24,
+                mid_getMinDate_c325492395d89b24,
+                mid_loadData_360461e719fb564c,
+                mid_stillAcceptsData_9ab94ac1dc23b105,
                 max_mid
               };
 

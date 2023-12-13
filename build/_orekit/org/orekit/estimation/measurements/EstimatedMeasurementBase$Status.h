@@ -3,6 +3,12 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace estimation {
@@ -10,12 +16,6 @@ namespace org {
         class EstimatedMeasurementBase$Status;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,8 +28,8 @@ namespace org {
         class EstimatedMeasurementBase$Status : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_9a1f988d76329bdc,
-            mid_values_751cba6d58d07a78,
+            mid_valueOf_a623848866cc27aa,
+            mid_values_c981a3ddee93d7f9,
             max_mid
           };
 

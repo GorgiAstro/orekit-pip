@@ -5,8 +5,8 @@
 
 namespace java {
   namespace io {
-    class IOException;
     class InputStream;
+    class IOException;
   }
   namespace text {
     class ParseException;
@@ -32,12 +32,12 @@ namespace org {
       class InterpolationTableLoader : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_getAbscissaGrid_a53a7513ecedada2,
-          mid_getOrdinateGrid_a53a7513ecedada2,
-          mid_getValuesSamples_8cf5267aa13a77f3,
-          mid_loadData_15770e8d8949a557,
-          mid_stillAcceptsData_89b302893bdbe1f1,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_getAbscissaGrid_25e1757a36c4dde2,
+          mid_getOrdinateGrid_25e1757a36c4dde2,
+          mid_getValuesSamples_3b7b373db8e7887f,
+          mid_loadData_360461e719fb564c,
+          mid_stillAcceptsData_9ab94ac1dc23b105,
           max_mid
         };
 

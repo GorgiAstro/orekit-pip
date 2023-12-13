@@ -3,6 +3,18 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace time {
+      class TimeStamped;
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ImmutableTimeStampedCache;
+      class TimeStampedCache;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -16,18 +28,6 @@ namespace java {
     class String;
   }
 }
-namespace org {
-  namespace orekit {
-    namespace utils {
-      class TimeStampedCache;
-      class ImmutableTimeStampedCache;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class TimeStamped;
-    }
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -37,14 +37,14 @@ namespace org {
       class ImmutableTimeStampedCache : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7eb5c0f6d06d97ea,
-          mid_emptyCache_86a357074a1a5ab9,
-          mid_getAll_0d9551367f7ecdef,
-          mid_getEarliest_da8f710d3d2958bf,
-          mid_getLatest_da8f710d3d2958bf,
-          mid_getMaxNeighborsSize_412668abc8d889e9,
-          mid_getNeighbors_b9470a4d1609cf1f,
-          mid_toString_3cffd47377eca18a,
+          mid_init$_36a24b5e65508672,
+          mid_emptyCache_2902dff7f102e3bf,
+          mid_getAll_e62d3bb06d56d7e3,
+          mid_getEarliest_a63f3f151ca9e302,
+          mid_getLatest_a63f3f151ca9e302,
+          mid_getMaxNeighborsSize_55546ef6a647f39b,
+          mid_getNeighbors_70177eb25c19b8d4,
+          mid_toString_1c1fa1e935d6cdcf,
           max_mid
         };
 

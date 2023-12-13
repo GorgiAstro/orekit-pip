@@ -3,33 +3,6 @@
 
 #include "org/orekit/time/AbstractFieldTimeInterpolator.h"
 
-namespace org {
-  namespace orekit {
-    namespace utils {
-      class FieldAbsolutePVCoordinates;
-      class AngularDerivativesFilter;
-      class CartesianDerivativesFilter;
-    }
-    namespace propagation {
-      class FieldSpacecraftState;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class FieldTimeInterpolator;
-      class TimeStampedField;
-      class FieldTimeStamped;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace attitudes {
-      class FieldAttitude;
-    }
-    namespace orbits {
-      class FieldOrbit;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -38,6 +11,33 @@ namespace java {
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+      class FieldTimeInterpolator;
+      class FieldTimeStamped;
+      class TimeStampedField;
+    }
+    namespace attitudes {
+      class FieldAttitude;
+    }
+    namespace orbits {
+      class FieldOrbit;
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace utils {
+      class FieldAbsolutePVCoordinates;
+      class AngularDerivativesFilter;
+      class CartesianDerivativesFilter;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+    }
   }
 }
 template<class T> class JArray;
@@ -49,22 +49,22 @@ namespace org {
       class FieldSpacecraftStateInterpolator : public ::org::orekit::time::AbstractFieldTimeInterpolator {
        public:
         enum {
-          mid_init$_535d1f91a93c8b4d,
-          mid_init$_03d00ffd0ee81fe0,
-          mid_init$_e69fe3991d4122f6,
-          mid_init$_3eb98fb434e9f71a,
-          mid_init$_93057eaba5c5145b,
-          mid_init$_08bab9dd5568148d,
-          mid_getAbsPVAInterpolator_d0ccac9b4c6bdd55,
-          mid_getAdditionalStateInterpolator_d0ccac9b4c6bdd55,
-          mid_getAttitudeInterpolator_d0ccac9b4c6bdd55,
-          mid_getMassInterpolator_d0ccac9b4c6bdd55,
-          mid_getNbInterpolationPoints_412668abc8d889e9,
-          mid_getOrbitInterpolator_d0ccac9b4c6bdd55,
-          mid_getOutputFrame_6c9bc0a928c56d4e,
-          mid_getSubInterpolators_0d9551367f7ecdef,
-          mid_interpolate_8216054f5ace4033,
-          mid_interpolate_d78defbfa7b71041,
+          mid_init$_237ae1c2ddd68062,
+          mid_init$_92e0516c51076c2f,
+          mid_init$_9fa6786ed88e4116,
+          mid_init$_9188826e4203adb2,
+          mid_init$_4e698ca934323ab9,
+          mid_init$_f14b078adca14f3b,
+          mid_getAbsPVAInterpolator_9fe5189c8c3b230d,
+          mid_getAdditionalStateInterpolator_9fe5189c8c3b230d,
+          mid_getAttitudeInterpolator_9fe5189c8c3b230d,
+          mid_getMassInterpolator_9fe5189c8c3b230d,
+          mid_getNbInterpolationPoints_55546ef6a647f39b,
+          mid_getOrbitInterpolator_9fe5189c8c3b230d,
+          mid_getOutputFrame_2c51111cc6894ba1,
+          mid_getSubInterpolators_e62d3bb06d56d7e3,
+          mid_interpolate_c544f35060fb7c93,
+          mid_interpolate_00b61fcbde9783bc,
           max_mid
         };
 

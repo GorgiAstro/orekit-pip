@@ -30,9 +30,9 @@ namespace org {
             class JacobiPolynomials : public ::java::lang::Object {
              public:
               enum {
-                mid_getValue_cf9cd6d4aea42e11,
-                mid_getValue_feba4baa7091dd05,
-                mid_getValueAndDerivative_de167a4ebcb09657,
+                mid_getValue_d4d597110f333b5c,
+                mid_getValue_80bd96a970c18743,
+                mid_getValueAndDerivative_e5f4d4b0510a0965,
                 max_mid
               };
 

@@ -5,6 +5,9 @@
 
 namespace org {
   namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
     namespace propagation {
       namespace integration {
         class StateMapper;
@@ -13,17 +16,14 @@ namespace org {
       class PropagationType;
     }
     namespace orbits {
-      class OrbitType;
       class PositionAngleType;
+      class OrbitType;
     }
     namespace frames {
       class Frame;
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
     }
   }
   namespace hipparchus {
@@ -48,13 +48,13 @@ namespace org {
         class PythonAbstractIntegratedPropagator : public ::org::orekit::propagation::integration::AbstractIntegratedPropagator {
          public:
           enum {
-            mid_init$_f9a0f6f49e4bc2f0,
-            mid_createMapper_31b084497c320ed2,
-            mid_finalize_0640e6acf969ed28,
-            mid_getMainStateEquations_4a2f137b7a0c1747,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
+            mid_init$_f0d3d6e737d787ad,
+            mid_createMapper_74f07e2c0845997b,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_getMainStateEquations_8e0da39ae64099e8,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
             max_mid
           };
 

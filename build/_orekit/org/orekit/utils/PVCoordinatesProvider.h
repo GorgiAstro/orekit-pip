@@ -14,14 +14,14 @@ namespace org {
     }
   }
   namespace orekit {
+    namespace utils {
+      class TimeStampedPVCoordinates;
+    }
     namespace frames {
       class Frame;
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace utils {
-      class TimeStampedPVCoordinates;
     }
   }
 }
@@ -39,8 +39,8 @@ namespace org {
       class PVCoordinatesProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getPVCoordinates_17742a9a6655bdb1,
-          mid_getPosition_7ca40559664606d9,
+          mid_getPVCoordinates_e5d15ef236cd9ffe,
+          mid_getPosition_42ef2ff6aede2782,
           max_mid
         };
 

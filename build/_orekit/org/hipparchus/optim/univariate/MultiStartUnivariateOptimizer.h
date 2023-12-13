@@ -31,11 +31,11 @@ namespace org {
         class MultiStartUnivariateOptimizer : public ::org::hipparchus::optim::univariate::UnivariateOptimizer {
          public:
           enum {
-            mid_init$_476856d81f2a6382,
-            mid_getEvaluations_412668abc8d889e9,
-            mid_getOptima_029a38928c7fa632,
-            mid_optimize_749f41c4a1b59e75,
-            mid_doOptimize_31fa57ee28e1174a,
+            mid_init$_a78c75185c7638d5,
+            mid_getEvaluations_55546ef6a647f39b,
+            mid_getOptima_ee0ed3212bd1fad1,
+            mid_optimize_369e9441b694b1bf,
+            mid_doOptimize_4a799806e31c160d,
             max_mid
           };
 

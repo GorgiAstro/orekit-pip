@@ -3,20 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace org {
-  namespace orekit {
-    namespace gnss {
-      namespace metric {
-        namespace ntrip {
-          class Type;
-        }
-        namespace parser {
-          class MessagesParser;
-        }
-      }
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -25,6 +11,20 @@ namespace java {
     class Integer;
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace gnss {
+      namespace metric {
+        namespace parser {
+          class MessagesParser;
+        }
+        namespace ntrip {
+          class Type;
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -38,9 +38,9 @@ namespace org {
           class Type : public ::java::lang::Enum {
            public:
             enum {
-              mid_getParser_cb391f06aa7575be,
-              mid_valueOf_d6743ba685a1bb89,
-              mid_values_3895cfc6b44fe855,
+              mid_getParser_1cc26214b1e2c708,
+              mid_valueOf_9244764a4bbee0b9,
+              mid_values_75adff9a0344f94e,
               max_mid
             };
 

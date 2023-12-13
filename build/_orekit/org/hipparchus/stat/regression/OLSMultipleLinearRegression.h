@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace linear {
-      class RealMatrix;
-    }
     namespace exception {
       class MathIllegalArgumentException;
+    }
+    namespace linear {
+      class RealMatrix;
     }
   }
 }
@@ -28,18 +28,18 @@ namespace org {
         class OLSMultipleLinearRegression : public ::org::hipparchus::stat::regression::AbstractMultipleLinearRegression {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_init$_10f281d777284cea,
-            mid_calculateAdjustedRSquared_557b8123390d8d0c,
-            mid_calculateHat_70a207fcbc031df2,
-            mid_calculateRSquared_557b8123390d8d0c,
-            mid_calculateResidualSumOfSquares_557b8123390d8d0c,
-            mid_calculateTotalSumOfSquares_557b8123390d8d0c,
-            mid_newSampleData_d28c10701e55f94c,
-            mid_newSampleData_91b51b3c05127ead,
-            mid_newXSampleData_edb361bfdd1ad9ae,
-            mid_calculateBeta_75d50d73180655b4,
-            mid_calculateBetaVariance_70a207fcbc031df2,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_init$_8ba9fe7a847cecad,
+            mid_calculateAdjustedRSquared_b74f83833fdad017,
+            mid_calculateHat_f77d745f2128c391,
+            mid_calculateRSquared_b74f83833fdad017,
+            mid_calculateResidualSumOfSquares_b74f83833fdad017,
+            mid_calculateTotalSumOfSquares_b74f83833fdad017,
+            mid_newSampleData_134a5d9f7619d4a2,
+            mid_newSampleData_4484ad1f15b73c7a,
+            mid_newXSampleData_07adb42ffaa97d31,
+            mid_calculateBeta_3a10cc75bd070d84,
+            mid_calculateBetaVariance_f77d745f2128c391,
             max_mid
           };
 

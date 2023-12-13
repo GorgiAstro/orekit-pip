@@ -6,13 +6,13 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathIllegalArgumentException;
       class NullArgumentException;
+      class MathIllegalArgumentException;
     }
     namespace linear {
       class DiagonalMatrix;
-      class RealMatrix;
       class RealVector;
+      class RealMatrix;
     }
   }
 }
@@ -33,33 +33,33 @@ namespace org {
       class DiagonalMatrix : public ::org::hipparchus::linear::AbstractRealMatrix {
        public:
         enum {
-          mid_init$_cc18240f4a737f14,
-          mid_init$_a3da1a935cb37f7b,
-          mid_init$_bdd4888f749f6b83,
-          mid_add_22eb29f902e0135d,
-          mid_addToEntry_754312f3734d6e2f,
-          mid_copy_70a207fcbc031df2,
-          mid_createMatrix_e8546415f980523f,
-          mid_getColumnDimension_412668abc8d889e9,
-          mid_getData_8cf5267aa13a77f3,
-          mid_getDataRef_a53a7513ecedada2,
-          mid_getEntry_21b81d54c06b64b0,
-          mid_getRowDimension_412668abc8d889e9,
-          mid_inverse_b1a245683de9728d,
-          mid_inverse_b27f94a2ca88181f,
-          mid_isSingular_dd69c3ab2404bb71,
-          mid_multiply_22eb29f902e0135d,
-          mid_multiply_340b47d21842d02c,
-          mid_multiplyEntry_754312f3734d6e2f,
-          mid_multiplyTransposed_22eb29f902e0135d,
-          mid_multiplyTransposed_340b47d21842d02c,
-          mid_operate_1db7c087750eaffe,
-          mid_preMultiply_1db7c087750eaffe,
-          mid_preMultiply_342d5b01463e0dc5,
-          mid_setEntry_754312f3734d6e2f,
-          mid_subtract_22eb29f902e0135d,
-          mid_transposeMultiply_22eb29f902e0135d,
-          mid_transposeMultiply_340b47d21842d02c,
+          mid_init$_ab69da052b88f50c,
+          mid_init$_44ed599e93e8a30c,
+          mid_init$_2808bdf785b578a3,
+          mid_add_3adfc6ce6721ddc7,
+          mid_addToEntry_94fe8d9ffeb50676,
+          mid_copy_f77d745f2128c391,
+          mid_createMatrix_28a444e31666746c,
+          mid_getColumnDimension_55546ef6a647f39b,
+          mid_getData_3b7b373db8e7887f,
+          mid_getDataRef_25e1757a36c4dde2,
+          mid_getEntry_cad98089d00f8a5b,
+          mid_getRowDimension_55546ef6a647f39b,
+          mid_inverse_2d4bea390f44a6ac,
+          mid_inverse_23675d63ec185d00,
+          mid_isSingular_716249baa52d209e,
+          mid_multiply_3adfc6ce6721ddc7,
+          mid_multiply_be124f4006dc9f69,
+          mid_multiplyEntry_94fe8d9ffeb50676,
+          mid_multiplyTransposed_3adfc6ce6721ddc7,
+          mid_multiplyTransposed_be124f4006dc9f69,
+          mid_operate_14dee4cb8cc3e959,
+          mid_preMultiply_14dee4cb8cc3e959,
+          mid_preMultiply_d5f1d017fd25113b,
+          mid_setEntry_94fe8d9ffeb50676,
+          mid_subtract_3adfc6ce6721ddc7,
+          mid_transposeMultiply_3adfc6ce6721ddc7,
+          mid_transposeMultiply_be124f4006dc9f69,
           max_mid
         };
 

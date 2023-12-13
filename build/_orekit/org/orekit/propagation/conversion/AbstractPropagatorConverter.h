@@ -3,16 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class IllegalArgumentException;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -22,6 +12,16 @@ namespace org {
       class Propagator;
       class SpacecraftState;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class IllegalArgumentException;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -34,19 +34,19 @@ namespace org {
         class AbstractPropagatorConverter : public ::java::lang::Object {
          public:
           enum {
-            mid_convert_aca0727def0bdfc3,
-            mid_convert_e823fa7f61b08ee5,
-            mid_convert_45d78d4eb2e28b70,
-            mid_convert_5aea72ca01fda79c,
-            mid_getAdaptedPropagator_8d6cf3295e825916,
-            mid_getEvaluations_412668abc8d889e9,
-            mid_getRMS_557b8123390d8d0c,
-            mid_getFrame_6c9bc0a928c56d4e,
-            mid_getModel_e31bcbfb9203b3a6,
-            mid_getObjectiveFunction_88ca328d89915cf7,
-            mid_getTargetSize_412668abc8d889e9,
-            mid_getSample_0d9551367f7ecdef,
-            mid_isOnlyPosition_89b302893bdbe1f1,
+            mid_convert_1085fbc3099561ad,
+            mid_convert_ed49a95e057deeb1,
+            mid_convert_8c138e9dd275b235,
+            mid_convert_439cb7b3f99fe6c0,
+            mid_getAdaptedPropagator_75ab23d3f479a59b,
+            mid_getEvaluations_55546ef6a647f39b,
+            mid_getRMS_b74f83833fdad017,
+            mid_getFrame_2c51111cc6894ba1,
+            mid_getModel_6a20d4ddc607b9bb,
+            mid_getTargetSize_55546ef6a647f39b,
+            mid_getSample_e62d3bb06d56d7e3,
+            mid_isOnlyPosition_9ab94ac1dc23b105,
+            mid_getObjectiveFunction_72c2cddd79f92b83,
             max_mid
           };
 

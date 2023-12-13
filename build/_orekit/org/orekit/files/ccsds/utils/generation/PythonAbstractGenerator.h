@@ -4,9 +4,6 @@
 #include "org/orekit/files/ccsds/utils/generation/AbstractGenerator.h"
 
 namespace java {
-  namespace io {
-    class IOException;
-  }
   namespace util {
     class List;
   }
@@ -15,6 +12,9 @@ namespace java {
     class Appendable;
     class Class;
     class String;
+  }
+  namespace io {
+    class IOException;
   }
 }
 namespace org {
@@ -45,16 +45,16 @@ namespace org {
             class PythonAbstractGenerator : public ::org::orekit::files::ccsds::utils::generation::AbstractGenerator {
              public:
               enum {
-                mid_init$_6e7c6a479ca124c5,
-                mid_endMessage_f5ffdf29129ef90a,
-                mid_finalize_0640e6acf969ed28,
-                mid_getFormat_c3a4c5f37e67a25e,
-                mid_pythonDecRef_0640e6acf969ed28,
-                mid_pythonExtension_9e26256fb0d384a2,
-                mid_pythonExtension_3cd6a6b354c6aa22,
-                mid_startMessage_9547058464ed819e,
-                mid_writeComments_4ccaedadb068bdeb,
-                mid_writeEntry_a717407bcf2f477f,
+                mid_init$_c8f0b9579f6d133f,
+                mid_endMessage_734b91ac30d5f9b4,
+                mid_finalize_a1fa5dae97ea5ed2,
+                mid_getFormat_e4c64bde02ca34c3,
+                mid_pythonDecRef_a1fa5dae97ea5ed2,
+                mid_pythonExtension_6c0ce7e438e5ded4,
+                mid_pythonExtension_3d7dd2314a0dd456,
+                mid_startMessage_03ff9b80a9f63d81,
+                mid_writeComments_0e7c3032c7c93ed3,
+                mid_writeEntry_bae21004607fffc6,
                 max_mid
               };
 

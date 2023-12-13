@@ -3,15 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-  namespace util {
-    class List;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -19,6 +10,15 @@ namespace org {
         class CRD$CRDDataBlock;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+  namespace util {
+    class List;
   }
 }
 template<class T> class JArray;
@@ -31,12 +31,12 @@ namespace org {
         class CRD : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_addDataBlock_8144a496fd0af892,
-            mid_formatIntegerOrNaN_637f0334ff6ee92d,
-            mid_getComments_0d9551367f7ecdef,
-            mid_getDataBlocks_0d9551367f7ecdef,
-            mid_handleNaN_60bb1b490b673cbf,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_addDataBlock_6ef04013095a0c71,
+            mid_formatIntegerOrNaN_e91e53c42d39aef9,
+            mid_getComments_e62d3bb06d56d7e3,
+            mid_getDataBlocks_e62d3bb06d56d7e3,
+            mid_handleNaN_6f0f3576df9f75ee,
             max_mid
           };
 

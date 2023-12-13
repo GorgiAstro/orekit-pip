@@ -7,26 +7,26 @@ namespace org {
   namespace hipparchus {
     namespace optim {
       class PointVectorValuePair;
+      class ConvergenceChecker;
       namespace nonlinear {
         namespace vector {
           namespace leastsquares {
-            class MultivariateJacobianFunction;
             class ParameterValidator;
-            class LeastSquaresProblem;
             class LeastSquaresBuilder;
             class LeastSquaresProblem$Evaluation;
+            class MultivariateJacobianFunction;
+            class LeastSquaresProblem;
           }
         }
       }
-      class ConvergenceChecker;
-    }
-    namespace linear {
-      class RealMatrix;
-      class RealVector;
     }
     namespace analysis {
       class MultivariateVectorFunction;
       class MultivariateMatrixFunction;
+    }
+    namespace linear {
+      class RealVector;
+      class RealMatrix;
     }
   }
 }
@@ -47,21 +47,21 @@ namespace org {
             class LeastSquaresBuilder : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0640e6acf969ed28,
-                mid_build_8da872a04cfd1f82,
-                mid_checker_8090e166d4e37735,
-                mid_checkerPair_8090e166d4e37735,
-                mid_lazyEvaluation_0db757a98266db03,
-                mid_maxEvaluations_efa40d0a1aad0d92,
-                mid_maxIterations_efa40d0a1aad0d92,
-                mid_model_6708cccdc8fcfe7e,
-                mid_model_edc12bfa90530a42,
-                mid_parameterValidator_2b3007103af5764e,
-                mid_start_74dfefa6c4207905,
-                mid_start_37ec8a2db0e944dd,
-                mid_target_74dfefa6c4207905,
-                mid_target_37ec8a2db0e944dd,
-                mid_weight_8bc210f82cb3a9f1,
+                mid_init$_a1fa5dae97ea5ed2,
+                mid_build_00bdcaec353b70ba,
+                mid_checker_0f571033218bc643,
+                mid_checkerPair_0f571033218bc643,
+                mid_lazyEvaluation_a8aa9a0ab753ee72,
+                mid_maxEvaluations_0ae4a82fce2b6f66,
+                mid_maxIterations_0ae4a82fce2b6f66,
+                mid_model_dd37728866f56fe4,
+                mid_model_e0f6a3e65c5e4d40,
+                mid_parameterValidator_7b494e394ef83b4d,
+                mid_start_dd7620b63ee35e61,
+                mid_start_83e5093ddc424384,
+                mid_target_dd7620b63ee35e61,
+                mid_target_83e5093ddc424384,
+                mid_weight_d83f45543005ce21,
                 max_mid
               };
 

@@ -3,21 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class ObservedMeasurement;
-        class EstimatedMeasurement;
-        class EstimatedMeasurementBase;
-        class EstimationModifier;
-      }
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -25,6 +10,21 @@ namespace java {
   namespace lang {
     class Throwable;
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class EstimationModifier;
+        class EstimatedMeasurementBase;
+        class ObservedMeasurement;
+        class EstimatedMeasurement;
+      }
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
   }
 }
 template<class T> class JArray;
@@ -37,14 +37,14 @@ namespace org {
         class PythonEstimationModifier : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_finalize_0640e6acf969ed28,
-            mid_getParametersDrivers_0d9551367f7ecdef,
-            mid_modify_0054a497255e8220,
-            mid_modifyWithoutDerivatives_e471490df8741b73,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_modify_f784f7724d44a90a,
+            mid_modifyWithoutDerivatives_308087fabc1d7f66,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
             max_mid
           };
 

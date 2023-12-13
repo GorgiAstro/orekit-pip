@@ -5,9 +5,9 @@
 
 namespace java {
   namespace io {
-    class IOException;
     class Serializable;
     class InputStream;
+    class IOException;
   }
   namespace lang {
     class Class;
@@ -25,28 +25,28 @@ namespace java {
     class URL : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_f5ffdf29129ef90a,
-        mid_init$_32bdaa4e65948a48,
-        mid_init$_f5c244a0f15376be,
-        mid_init$_b0f225a9496425dc,
-        mid_equals_221e8e85cb385209,
-        mid_getAuthority_3cffd47377eca18a,
-        mid_getContent_e661fe3ba2fafb22,
-        mid_getContent_12039b90b25ec342,
-        mid_getDefaultPort_412668abc8d889e9,
-        mid_getFile_3cffd47377eca18a,
-        mid_getHost_3cffd47377eca18a,
-        mid_getPath_3cffd47377eca18a,
-        mid_getPort_412668abc8d889e9,
-        mid_getProtocol_3cffd47377eca18a,
-        mid_getQuery_3cffd47377eca18a,
-        mid_getRef_3cffd47377eca18a,
-        mid_getUserInfo_3cffd47377eca18a,
-        mid_hashCode_412668abc8d889e9,
-        mid_openStream_ce4348991af8a1a1,
-        mid_sameFile_f24d92f382df2fc3,
-        mid_toExternalForm_3cffd47377eca18a,
-        mid_toString_3cffd47377eca18a,
+        mid_init$_734b91ac30d5f9b4,
+        mid_init$_15e1af85a4dfcb77,
+        mid_init$_ee9345b4af8c40df,
+        mid_init$_0fa1d5c018fc6528,
+        mid_equals_460c5e2d9d51c6cc,
+        mid_getAuthority_1c1fa1e935d6cdcf,
+        mid_getContent_541690f9ee81d3ad,
+        mid_getContent_de4df9dfd38c3157,
+        mid_getDefaultPort_55546ef6a647f39b,
+        mid_getFile_1c1fa1e935d6cdcf,
+        mid_getHost_1c1fa1e935d6cdcf,
+        mid_getPath_1c1fa1e935d6cdcf,
+        mid_getPort_55546ef6a647f39b,
+        mid_getProtocol_1c1fa1e935d6cdcf,
+        mid_getQuery_1c1fa1e935d6cdcf,
+        mid_getRef_1c1fa1e935d6cdcf,
+        mid_getUserInfo_1c1fa1e935d6cdcf,
+        mid_hashCode_55546ef6a647f39b,
+        mid_openStream_6c37d64ac8173086,
+        mid_sameFile_72310db42813c777,
+        mid_toExternalForm_1c1fa1e935d6cdcf,
+        mid_toString_1c1fa1e935d6cdcf,
         max_mid
       };
 

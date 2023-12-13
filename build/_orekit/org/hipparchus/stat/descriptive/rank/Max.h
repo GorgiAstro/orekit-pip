@@ -7,10 +7,10 @@ namespace org {
   namespace hipparchus {
     namespace stat {
       namespace descriptive {
+        class AggregatableStatistic;
         namespace rank {
           class Max;
         }
-        class AggregatableStatistic;
       }
     }
     namespace exception {
@@ -37,14 +37,14 @@ namespace org {
           class Max : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_aggregate_1f02a0aeaa94b22d,
-              mid_clear_0640e6acf969ed28,
-              mid_copy_2755e5ad258aab4f,
-              mid_evaluate_9eeeb1ae977f525d,
-              mid_getN_9e26256fb0d384a2,
-              mid_getResult_557b8123390d8d0c,
-              mid_increment_10f281d777284cea,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_aggregate_0436fee875157bff,
+              mid_clear_a1fa5dae97ea5ed2,
+              mid_copy_e4970a39a0905c8e,
+              mid_evaluate_1567a80062adb31b,
+              mid_getN_6c0ce7e438e5ded4,
+              mid_getResult_b74f83833fdad017,
+              mid_increment_8ba9fe7a847cecad,
               max_mid
             };
 

@@ -29,12 +29,12 @@ namespace org {
         class FieldUnivariateDerivative2Field : public ::java::lang::Object {
          public:
           enum {
-            mid_equals_221e8e85cb385209,
-            mid_getOne_aee8d6ce5ed6f574,
-            mid_getRuntimeClass_d4b191ff8147475d,
-            mid_getUnivariateDerivative2Field_266461907de0091e,
-            mid_getZero_aee8d6ce5ed6f574,
-            mid_hashCode_412668abc8d889e9,
+            mid_equals_460c5e2d9d51c6cc,
+            mid_getOne_43add0d5ea3aedb5,
+            mid_getRuntimeClass_1aeb0737a960d371,
+            mid_getUnivariateDerivative2Field_e3d78b0a9f58caf1,
+            mid_getZero_43add0d5ea3aedb5,
+            mid_hashCode_55546ef6a647f39b,
             max_mid
           };
 

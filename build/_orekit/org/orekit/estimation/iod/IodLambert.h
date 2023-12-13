@@ -14,6 +14,9 @@ namespace org {
     }
   }
   namespace orekit {
+    namespace orbits {
+      class Orbit;
+    }
     namespace estimation {
       namespace measurements {
         class PV;
@@ -25,9 +28,6 @@ namespace org {
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace orbits {
-      class Orbit;
     }
   }
 }
@@ -46,10 +46,10 @@ namespace org {
         class IodLambert : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_10f281d777284cea,
-            mid_estimate_97d585120c036b5c,
-            mid_estimate_a8ed81a24acd9429,
-            mid_estimate_e55c506cadfed3ee,
+            mid_init$_8ba9fe7a847cecad,
+            mid_estimate_d38177db26866f22,
+            mid_estimate_3ef8ea131d5aef8a,
+            mid_estimate_2e3d5773c6019239,
             max_mid
           };
 

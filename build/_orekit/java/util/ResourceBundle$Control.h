@@ -5,13 +5,10 @@
 
 namespace java {
   namespace util {
-    class ResourceBundle$Control;
     class Locale;
     class List;
     class ResourceBundle;
-  }
-  namespace io {
-    class IOException;
+    class ResourceBundle$Control;
   }
   namespace lang {
     class InstantiationException;
@@ -19,6 +16,9 @@ namespace java {
     class Class;
     class String;
     class ClassLoader;
+  }
+  namespace io {
+    class IOException;
   }
 }
 template<class T> class JArray;
@@ -29,16 +29,16 @@ namespace java {
     class ResourceBundle$Control : public ::java::lang::Object {
      public:
       enum {
-        mid_getCandidateLocales_31d5ff3a82e11577,
-        mid_getControl_5a94baa170b5bb61,
-        mid_getFallbackLocale_5b93a5dd19b99d50,
-        mid_getFormats_112f9b169ddc4fbe,
-        mid_getNoFallbackControl_5a94baa170b5bb61,
-        mid_getTimeToLive_5b4fedcee16880a3,
-        mid_needsReload_65cfc4d7faf66b3e,
-        mid_newBundle_c5caa61954589488,
-        mid_toBundleName_23e0ac6ff2600e8d,
-        mid_toResourceName_495add03b8c9417b,
+        mid_getCandidateLocales_0ce6fdc79798094e,
+        mid_getControl_0f34a07e65cacad0,
+        mid_getFallbackLocale_735143ee48f37be6,
+        mid_getFormats_abe6e889bc24795d,
+        mid_getNoFallbackControl_0f34a07e65cacad0,
+        mid_getTimeToLive_e68533389ce9fba8,
+        mid_needsReload_5007a333490ad2f4,
+        mid_newBundle_8ca50bd8ea3c1503,
+        mid_toBundleName_9c65f36218adb4b6,
+        mid_toResourceName_88f2f8c619f3cbd0,
         max_mid
       };
 

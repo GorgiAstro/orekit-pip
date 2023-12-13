@@ -3,21 +3,6 @@
 
 #include "org/orekit/propagation/events/AbstractDetector.h"
 
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace events {
-        class NegateDetector;
-        class BooleanDetector;
-        class EventDetector;
-      }
-      class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -25,6 +10,21 @@ namespace java {
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace events {
+        class NegateDetector;
+        class EventDetector;
+        class BooleanDetector;
+      }
+      class SpacecraftState;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
   }
 }
 template<class T> class JArray;
@@ -37,15 +37,15 @@ namespace org {
         class BooleanDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_andCombine_39beb87557d816ae,
-            mid_andCombine_31d87b9a37beb770,
-            mid_g_1bbf81d80c47ecdd,
-            mid_getDetectors_0d9551367f7ecdef,
-            mid_init_0472264ad6f40bc2,
-            mid_notCombine_b68ec1f6b42d104e,
-            mid_orCombine_39beb87557d816ae,
-            mid_orCombine_31d87b9a37beb770,
-            mid_create_48212894f8dc62b9,
+            mid_andCombine_8625f04dc0369264,
+            mid_andCombine_b628a3dc9e91fa01,
+            mid_g_a17ea857ce74d258,
+            mid_getDetectors_e62d3bb06d56d7e3,
+            mid_init_2d7f9a496c7e9781,
+            mid_notCombine_0119b0d604ebe1fb,
+            mid_orCombine_8625f04dc0369264,
+            mid_orCombine_b628a3dc9e91fa01,
+            mid_create_9018219b512ae905,
             max_mid
           };
 

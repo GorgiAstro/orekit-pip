@@ -7,10 +7,10 @@ namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
-        class AdaptableInterval;
         namespace handlers {
           class EventHandler;
         }
+        class AdaptableInterval;
       }
       class SpacecraftState;
     }
@@ -34,12 +34,12 @@ namespace org {
         class EventDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_g_1bbf81d80c47ecdd,
-            mid_getHandler_9cfb09a569a3f330,
-            mid_getMaxCheckInterval_b5b0f3e235bdd705,
-            mid_getMaxIterationCount_412668abc8d889e9,
-            mid_getThreshold_557b8123390d8d0c,
-            mid_init_0472264ad6f40bc2,
+            mid_g_a17ea857ce74d258,
+            mid_getHandler_0c96c441e92b6ffa,
+            mid_getMaxCheckInterval_014eea600d2cdae8,
+            mid_getMaxIterationCount_55546ef6a647f39b,
+            mid_getThreshold_b74f83833fdad017,
+            mid_init_2d7f9a496c7e9781,
             max_mid
           };
 

@@ -34,7 +34,7 @@ namespace org {
             class LeastSquaresOptimizer : public ::java::lang::Object {
              public:
               enum {
-                mid_optimize_07184cacaaa6a451,
+                mid_optimize_b4aa3e5bf3a16dc8,
                 max_mid
               };
 

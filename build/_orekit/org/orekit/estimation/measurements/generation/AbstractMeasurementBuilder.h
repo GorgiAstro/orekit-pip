@@ -3,29 +3,29 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class ObservedMeasurement;
-        namespace generation {
-          class MeasurementBuilder;
-        }
-        class ObservableSatellite;
-        class EstimationModifier;
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class EstimationModifier;
+        class ObservedMeasurement;
+        class ObservableSatellite;
+        namespace generation {
+          class MeasurementBuilder;
+        }
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
   }
 }
 template<class T> class JArray;
@@ -39,15 +39,15 @@ namespace org {
           class AbstractMeasurementBuilder : public ::java::lang::Object {
            public:
             enum {
-              mid_addModifier_6f472135bf397672,
-              mid_getModifiers_0d9551367f7ecdef,
-              mid_getSatellites_b8c09fefa9db3b83,
-              mid_init_d5db9a5f2035671b,
-              mid_getEnd_7a97f7e149e79afb,
-              mid_getStart_7a97f7e149e79afb,
-              mid_getTheoreticalStandardDeviation_a53a7513ecedada2,
-              mid_getBaseWeight_a53a7513ecedada2,
-              mid_getNoise_a53a7513ecedada2,
+              mid_addModifier_cb38ed914ba48f20,
+              mid_getModifiers_e62d3bb06d56d7e3,
+              mid_getSatellites_eb47c48e4fca882c,
+              mid_init_f89af00fc113b524,
+              mid_getStart_c325492395d89b24,
+              mid_getEnd_c325492395d89b24,
+              mid_getTheoreticalStandardDeviation_25e1757a36c4dde2,
+              mid_getBaseWeight_25e1757a36c4dde2,
+              mid_getNoise_25e1757a36c4dde2,
               max_mid
             };
 

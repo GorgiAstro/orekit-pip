@@ -5,16 +5,16 @@
 
 namespace org {
   namespace orekit {
+    namespace utils {
+      class PVCoordinatesProvider;
+    }
     namespace estimation {
       namespace measurements {
-        class ObservableSatellite;
         namespace gnss {
           class OneWayGNSSRange;
         }
+        class ObservableSatellite;
       }
-    }
-    namespace utils {
-      class PVCoordinatesProvider;
     }
     namespace time {
       class AbsoluteDate;
@@ -38,9 +38,9 @@ namespace org {
           class OneWayGNSSRange : public ::org::orekit::estimation::measurements::AbstractMeasurement {
            public:
             enum {
-              mid_init$_fc3274e847746678,
-              mid_theoreticalEvaluationWithoutDerivatives_71d69ca0f7c280a7,
-              mid_theoreticalEvaluation_eae039ee8c8a4a4d,
+              mid_init$_4cb1dcd15ede25ec,
+              mid_theoreticalEvaluationWithoutDerivatives_9347cf3b1f0dd85a,
+              mid_theoreticalEvaluation_d598991c5cac8ab0,
               max_mid
             };
 

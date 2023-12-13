@@ -3,31 +3,8 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
-    }
-    namespace data {
-      class DataSource;
-      class DataProvidersManager;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace frames {
-      class TopocentricFrame;
-    }
     namespace models {
       namespace earth {
         namespace ionosphere {
@@ -35,12 +12,35 @@ namespace org {
         }
       }
     }
+    namespace data {
+      class DataSource;
+      class DataProvidersManager;
+    }
+    namespace frames {
+      class TopocentricFrame;
+    }
+    namespace propagation {
+      class SpacecraftState;
+      class FieldSpacecraftState;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
     namespace time {
       class TimeScale;
     }
   }
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -54,12 +54,12 @@ namespace org {
           class GlobalIonosphereMapModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_f5ffdf29129ef90a,
-              mid_init$_57dc6ad440197703,
-              mid_init$_d8fcbe65f280bc96,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_pathDelay_e09499dc3d690830,
-              mid_pathDelay_8fbdb07bb0b935f0,
+              mid_init$_734b91ac30d5f9b4,
+              mid_init$_da507b2a8ca38fd6,
+              mid_init$_41d9572e040b2cb7,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_pathDelay_5e4bace87c721642,
+              mid_pathDelay_0c51f26f37c66719,
               max_mid
             };
 

@@ -3,17 +3,17 @@
 
 #include "org/hipparchus/analysis/integration/BaseAbstractFieldUnivariateIntegrator.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
     class Field;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,10 +26,10 @@ namespace org {
         class FieldRombergIntegrator : public ::org::hipparchus::analysis::integration::BaseAbstractFieldUnivariateIntegrator {
          public:
           enum {
-            mid_init$_979ae7f57a96b096,
-            mid_init$_a9ccb012d4cb48bd,
-            mid_init$_54078aff55a90bb9,
-            mid_doIntegrate_613c8f46c659f636,
+            mid_init$_02ab84aa7626616d,
+            mid_init$_b6c946d1cbf160f0,
+            mid_init$_287374284b786369,
+            mid_doIntegrate_81520b552cb3fa26,
             max_mid
           };
 

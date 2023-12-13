@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace propagation {
-      class SpacecraftState;
       class Propagator;
+      class SpacecraftState;
     }
   }
 }
@@ -26,8 +26,8 @@ namespace org {
         class OsculatingToMeanElementsConverter : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_23a67b35bf21685c,
-            mid_convert_15e85d5301b90ef8,
+            mid_init$_09213e1af131873d,
+            mid_convert_9d155cc8314c99cf,
             max_mid
           };
 

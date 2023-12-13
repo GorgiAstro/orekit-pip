@@ -3,6 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace frames {
+      class TransformProvider;
+      class Transform;
+      class OrphanFrame;
+      class Frame;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -15,16 +25,6 @@ namespace java {
     class String;
   }
 }
-namespace org {
-  namespace orekit {
-    namespace frames {
-      class TransformProvider;
-      class Transform;
-      class OrphanFrame;
-      class Frame;
-    }
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -34,14 +34,14 @@ namespace org {
       class OrphanFrame : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_f5ffdf29129ef90a,
-          mid_addChild_d14538095eb65eb2,
-          mid_addChild_fe4747d99aba0941,
-          mid_attachTo_aa22850365ea11c9,
-          mid_attachTo_d01074a86371b1f2,
-          mid_getChildren_0d9551367f7ecdef,
-          mid_getFrame_6c9bc0a928c56d4e,
-          mid_toString_3cffd47377eca18a,
+          mid_init$_734b91ac30d5f9b4,
+          mid_addChild_55457428e103e443,
+          mid_addChild_2f2ff8e343e2ff3d,
+          mid_attachTo_8aedde5212fef9e7,
+          mid_attachTo_7a4ba1fb340669bc,
+          mid_getChildren_e62d3bb06d56d7e3,
+          mid_getFrame_2c51111cc6894ba1,
+          mid_toString_1c1fa1e935d6cdcf,
           max_mid
         };
 

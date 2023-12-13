@@ -5,18 +5,18 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace analysis {
-      namespace interpolation {
-        class FieldUnivariateInterpolator;
-        class UnivariateInterpolator;
-      }
       namespace polynomials {
         class PolynomialSplineFunction;
         class FieldPolynomialSplineFunction;
       }
+      namespace interpolation {
+        class FieldUnivariateInterpolator;
+        class UnivariateInterpolator;
+      }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
     class CalculusFieldElement;
   }
@@ -36,9 +36,9 @@ namespace org {
         class LinearInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_interpolate_c07bcf24349320f1,
-            mid_interpolate_9d9c0e5a6bca3c07,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_interpolate_4b522051166e7218,
+            mid_interpolate_a8efc421c988dfdd,
             max_mid
           };
 

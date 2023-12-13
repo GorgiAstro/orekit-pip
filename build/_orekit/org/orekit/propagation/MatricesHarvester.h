@@ -37,12 +37,12 @@ namespace org {
       class MatricesHarvester : public ::java::lang::Object {
        public:
         enum {
-          mid_getJacobiansColumnsNames_0d9551367f7ecdef,
-          mid_getOrbitType_2cea2a2cb3e02091,
-          mid_getParametersJacobian_fc9cdfa83c55d6b2,
-          mid_getPositionAngleType_f4984aee71df4c19,
-          mid_getStateTransitionMatrix_fc9cdfa83c55d6b2,
-          mid_setReferenceState_8655761ebf04b503,
+          mid_getJacobiansColumnsNames_e62d3bb06d56d7e3,
+          mid_getOrbitType_c7d4737d7afca612,
+          mid_getParametersJacobian_b7aa5791b069a41f,
+          mid_getPositionAngleType_c25055891f180348,
+          mid_getStateTransitionMatrix_b7aa5791b069a41f,
+          mid_setReferenceState_280c3390961e0a50,
           max_mid
         };
 

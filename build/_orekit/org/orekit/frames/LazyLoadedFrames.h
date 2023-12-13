@@ -5,19 +5,19 @@
 
 namespace org {
   namespace orekit {
+    namespace utils {
+      class IERSConventions;
+    }
     namespace bodies {
       class CelestialBodies;
     }
     namespace frames {
+      class EOPHistory;
       class EopHistoryLoader;
       class LazyLoadedEop;
-      class EOPHistory;
     }
     namespace time {
       class TimeScales;
-    }
-    namespace utils {
-      class IERSConventions;
     }
   }
 }
@@ -36,13 +36,13 @@ namespace org {
       class LazyLoadedFrames : public ::org::orekit::frames::AbstractFrames {
        public:
         enum {
-          mid_init$_4696d6f2ff01a637,
-          mid_addDefaultEOP1980HistoryLoaders_7ef3cb05fa691170,
-          mid_addDefaultEOP2000HistoryLoaders_7ef3cb05fa691170,
-          mid_addEOPHistoryLoader_4f61b75864dcff87,
-          mid_clearEOPHistoryLoaders_0640e6acf969ed28,
-          mid_getEOPHistory_9cf4a1ec2e53bbd3,
-          mid_setEOPContinuityThreshold_10f281d777284cea,
+          mid_init$_a562e213c7979e22,
+          mid_addDefaultEOP1980HistoryLoaders_e39b9463875d2aea,
+          mid_addDefaultEOP2000HistoryLoaders_e39b9463875d2aea,
+          mid_addEOPHistoryLoader_f075adbabba5d6bc,
+          mid_clearEOPHistoryLoaders_a1fa5dae97ea5ed2,
+          mid_getEOPHistory_a77e9d6bc0da2439,
+          mid_setEOPContinuityThreshold_8ba9fe7a847cecad,
           max_mid
         };
 

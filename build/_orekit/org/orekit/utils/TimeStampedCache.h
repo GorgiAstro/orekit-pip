@@ -3,6 +3,14 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace time {
+      class TimeStamped;
+      class AbsoluteDate;
+    }
+  }
+}
 namespace java {
   namespace lang {
     class IllegalStateException;
@@ -11,14 +19,6 @@ namespace java {
   namespace util {
     namespace stream {
       class Stream;
-    }
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-      class TimeStamped;
     }
   }
 }
@@ -31,11 +31,11 @@ namespace org {
       class TimeStampedCache : public ::java::lang::Object {
        public:
         enum {
-          mid_getEarliest_da8f710d3d2958bf,
-          mid_getLatest_da8f710d3d2958bf,
-          mid_getMaxNeighborsSize_412668abc8d889e9,
-          mid_getNeighbors_0545d4cc79d2fdd1,
-          mid_getNeighbors_b9470a4d1609cf1f,
+          mid_getEarliest_a63f3f151ca9e302,
+          mid_getLatest_a63f3f151ca9e302,
+          mid_getMaxNeighborsSize_55546ef6a647f39b,
+          mid_getNeighbors_1fe1e227b3891e66,
+          mid_getNeighbors_70177eb25c19b8d4,
           max_mid
         };
 

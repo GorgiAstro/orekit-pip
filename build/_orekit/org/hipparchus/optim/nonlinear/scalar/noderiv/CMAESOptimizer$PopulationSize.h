@@ -31,8 +31,8 @@ namespace org {
             class CMAESOptimizer$PopulationSize : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a3da1a935cb37f7b,
-                mid_getPopulationSize_412668abc8d889e9,
+                mid_init$_44ed599e93e8a30c,
+                mid_getPopulationSize_55546ef6a647f39b,
                 max_mid
               };
 

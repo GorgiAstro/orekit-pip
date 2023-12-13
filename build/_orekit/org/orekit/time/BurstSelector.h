@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
@@ -18,6 +10,14 @@ namespace org {
       class AbsoluteDate;
       class TimeScale;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -29,8 +29,8 @@ namespace org {
       class BurstSelector : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_972baebc39fce160,
-          mid_selectDates_c5683b8e06424542,
+          mid_init$_cb615059ae60dc02,
+          mid_selectDates_50850a0bb1306a34,
           max_mid
         };
 

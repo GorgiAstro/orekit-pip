@@ -3,6 +3,14 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -18,14 +26,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -36,12 +36,12 @@ namespace org {
         class MultisatStepNormalizer : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_26b8003b7e15d197,
-            mid_finish_4ccaedadb068bdeb,
-            mid_getFixedStepHandler_3a1aa72f37e261e7,
-            mid_getFixedTimeStep_557b8123390d8d0c,
-            mid_handleStep_4ccaedadb068bdeb,
-            mid_init_98fa7d48d3b7f88a,
+            mid_init$_02c043bb1395e1f8,
+            mid_finish_0e7c3032c7c93ed3,
+            mid_getFixedStepHandler_d37df4d2f5d5d6ce,
+            mid_getFixedTimeStep_b74f83833fdad017,
+            mid_handleStep_0e7c3032c7c93ed3,
+            mid_init_0365da66b6e36325,
             max_mid
           };
 

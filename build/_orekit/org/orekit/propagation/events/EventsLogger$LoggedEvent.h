@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class TimeStamped;
+      class AbsoluteDate;
+    }
     namespace propagation {
       namespace events {
         class EventDetector;
       }
       class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class TimeStamped;
     }
   }
 }
@@ -32,10 +32,10 @@ namespace org {
         class EventsLogger$LoggedEvent : public ::java::lang::Object {
          public:
           enum {
-            mid_getDate_7a97f7e149e79afb,
-            mid_getEventDetector_0701b00b25822fff,
-            mid_getState_15e85d5301b90ef8,
-            mid_isIncreasing_89b302893bdbe1f1,
+            mid_getDate_c325492395d89b24,
+            mid_getEventDetector_9ada55f07f5a223c,
+            mid_getState_9d155cc8314c99cf,
+            mid_isIncreasing_9ab94ac1dc23b105,
             max_mid
           };
 

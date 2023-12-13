@@ -24,9 +24,9 @@ namespace org {
       class ComplexOrdinaryDifferentialEquation : public ::java::lang::Object {
        public:
         enum {
-          mid_computeDerivatives_c9ff5d1adec2e866,
-          mid_getDimension_412668abc8d889e9,
-          mid_init_258a505202ccd7d6,
+          mid_computeDerivatives_6e8ed7c1b9744549,
+          mid_getDimension_55546ef6a647f39b,
+          mid_init_fa5e0f2ce68236ca,
           max_mid
         };
 

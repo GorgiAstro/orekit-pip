@@ -7,19 +7,19 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace ndm {
+          namespace odm {
+            namespace ocm {
+              class TrajectoryStateHistoryMetadata;
+              class TrajectoryStateHistoryMetadataKey;
+            }
+          }
+        }
         namespace utils {
           namespace lexical {
             class ParseToken;
           }
           class ContextBinding;
-        }
-        namespace ndm {
-          namespace odm {
-            namespace ocm {
-              class TrajectoryStateHistoryMetadataKey;
-              class TrajectoryStateHistoryMetadata;
-            }
-          }
         }
       }
     }
@@ -44,9 +44,9 @@ namespace org {
               class TrajectoryStateHistoryMetadataKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_e4f3211c25f686c8,
-                  mid_valueOf_ca5aa833406c3b61,
-                  mid_values_9208e883581135e9,
+                  mid_process_8c8f0a5e94dda5b0,
+                  mid_valueOf_4d26094f8427f52a,
+                  mid_values_038f89727dd84076,
                   max_mid
                 };
 

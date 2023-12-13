@@ -4,16 +4,16 @@
 #include "org/orekit/propagation/conversion/AbstractVariableStepFieldIntegratorBuilder.h"
 
 namespace org {
+  namespace orekit {
+    namespace orbits {
+      class Orbit;
+      class OrbitType;
+    }
+  }
   namespace hipparchus {
     class Field;
     namespace ode {
       class AbstractFieldIntegrator;
-    }
-  }
-  namespace orekit {
-    namespace orbits {
-      class OrbitType;
-      class Orbit;
     }
   }
 }
@@ -32,8 +32,8 @@ namespace org {
         class DormandPrince853FieldIntegratorBuilder : public ::org::orekit::propagation::conversion::AbstractVariableStepFieldIntegratorBuilder {
          public:
           enum {
-            mid_init$_87096e3fd8086100,
-            mid_buildIntegrator_3a1ee7ebe4f0e344,
+            mid_init$_b5167f35b2521627,
+            mid_buildIntegrator_ce58c6ef4cfb23c4,
             max_mid
           };
 

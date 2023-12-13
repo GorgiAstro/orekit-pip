@@ -11,17 +11,17 @@ namespace org {
       }
       namespace descriptive {
         namespace rank {
-          class Percentile$EstimationType;
           class Percentile;
+          class Percentile$EstimationType;
         }
       }
     }
+    namespace util {
+      class PivotingStrategy;
+      class KthSelector;
+    }
     namespace exception {
       class MathIllegalArgumentException;
-    }
-    namespace util {
-      class KthSelector;
-      class PivotingStrategy;
     }
   }
 }
@@ -44,25 +44,25 @@ namespace org {
           class Percentile : public ::org::hipparchus::stat::descriptive::AbstractUnivariateStatistic {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_init$_10f281d777284cea,
-              mid_copy_8a657a7f00135d6d,
-              mid_evaluate_7e960cd6eee376d8,
-              mid_evaluate_05f591cf0826202b,
-              mid_evaluate_9eeeb1ae977f525d,
-              mid_evaluate_52cb74c4004a744d,
-              mid_getEstimationType_4612cef7d7be3067,
-              mid_getKthSelector_e3d4c2054ef00f3b,
-              mid_getNaNStrategy_771b1218ed87a53c,
-              mid_getPivotingStrategy_b6c90f164ea1e1c5,
-              mid_getQuantile_557b8123390d8d0c,
-              mid_setData_cc18240f4a737f14,
-              mid_setData_91b51b3c05127ead,
-              mid_setQuantile_10f281d777284cea,
-              mid_withEstimationType_a8a5642985133f18,
-              mid_withKthSelector_4905375d0b810005,
-              mid_withNaNStrategy_64d279e273ef2dde,
-              mid_getWorkArray_3a89ed5ea3adefb8,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_init$_8ba9fe7a847cecad,
+              mid_copy_6f8e2276efd5ffa7,
+              mid_evaluate_04fd0666b613d2ab,
+              mid_evaluate_79e4db9e1e3d84c9,
+              mid_evaluate_1567a80062adb31b,
+              mid_evaluate_86463cae6c6d5697,
+              mid_getEstimationType_243f7211bd3660bc,
+              mid_getKthSelector_5930553957d5187e,
+              mid_getNaNStrategy_9ae875326a45f3e9,
+              mid_getPivotingStrategy_ba4eca3a4b36ce9e,
+              mid_getQuantile_b74f83833fdad017,
+              mid_setData_ab69da052b88f50c,
+              mid_setData_4484ad1f15b73c7a,
+              mid_setQuantile_8ba9fe7a847cecad,
+              mid_withEstimationType_1ec06e0f941503f2,
+              mid_withKthSelector_43dbccb83ddf0e67,
+              mid_withNaNStrategy_4c4577d1348367d8,
+              mid_getWorkArray_4ab5393b410e04fc,
               max_mid
             };
 

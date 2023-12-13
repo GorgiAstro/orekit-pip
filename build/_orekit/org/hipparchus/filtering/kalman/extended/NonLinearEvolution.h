@@ -27,12 +27,12 @@ namespace org {
           class NonLinearEvolution : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_2da50945bbf8d424,
-              mid_getCurrentState_75d50d73180655b4,
-              mid_getCurrentTime_557b8123390d8d0c,
-              mid_getMeasurementJacobian_70a207fcbc031df2,
-              mid_getProcessNoiseMatrix_70a207fcbc031df2,
-              mid_getStateTransitionMatrix_70a207fcbc031df2,
+              mid_init$_5f7165eb5b30b8f1,
+              mid_getCurrentState_3a10cc75bd070d84,
+              mid_getCurrentTime_b74f83833fdad017,
+              mid_getMeasurementJacobian_f77d745f2128c391,
+              mid_getProcessNoiseMatrix_f77d745f2128c391,
+              mid_getStateTransitionMatrix_f77d745f2128c391,
               max_mid
             };
 

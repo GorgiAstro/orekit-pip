@@ -34,8 +34,8 @@ namespace org {
           class ResidualFilter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_10f281d777284cea,
-              mid_filter_87933cc299a70778,
+              mid_init$_8ba9fe7a847cecad,
+              mid_filter_5714f5cbb8239657,
               max_mid
             };
 

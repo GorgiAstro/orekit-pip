@@ -3,6 +3,14 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class SortedSet;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace frames {
@@ -11,14 +19,6 @@ namespace org {
     namespace utils {
       class IERSConventions$NutationCorrectionConverter;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
-  }
-  namespace util {
-    class SortedSet;
   }
 }
 template<class T> class JArray;
@@ -30,7 +30,7 @@ namespace org {
       class EopHistoryLoader : public ::java::lang::Object {
        public:
         enum {
-          mid_fillHistory_dc8806c52abe2b9d,
+          mid_fillHistory_f091b90ef4456eb3,
           max_mid
         };
 

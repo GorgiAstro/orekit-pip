@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
-    class Field;
     namespace analysis {
       namespace differentiation {
-        class FieldGradientField;
         class FieldGradient;
+        class FieldGradientField;
       }
     }
+    class Field;
   }
 }
 namespace java {
@@ -29,12 +29,12 @@ namespace org {
         class FieldGradientField : public ::java::lang::Object {
          public:
           enum {
-            mid_equals_221e8e85cb385209,
-            mid_getField_b172e05bf38ec4f1,
-            mid_getOne_fc34f2fa32af76f3,
-            mid_getRuntimeClass_d4b191ff8147475d,
-            mid_getZero_fc34f2fa32af76f3,
-            mid_hashCode_412668abc8d889e9,
+            mid_equals_460c5e2d9d51c6cc,
+            mid_getField_93f57fcb2194069f,
+            mid_getOne_f418c9d91aa473ef,
+            mid_getRuntimeClass_1aeb0737a960d371,
+            mid_getZero_f418c9d91aa473ef,
+            mid_hashCode_55546ef6a647f39b,
             max_mid
           };
 

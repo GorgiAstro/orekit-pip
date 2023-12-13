@@ -23,8 +23,8 @@ namespace org {
             class RtcmMessage : public ::org::orekit::gnss::metric::messages::ParsedMessage {
              public:
               enum {
-                mid_init$_f6c1c7b1dc8e1344,
-                mid_getData_0d9551367f7ecdef,
+                mid_init$_6a13329ba9fb80e7,
+                mid_getData_e62d3bb06d56d7e3,
                 max_mid
               };
 

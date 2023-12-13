@@ -3,21 +3,7 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
-  namespace orekit {
-    namespace bodies {
-      class GeodeticPoint;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -26,6 +12,20 @@ namespace org {
         }
       }
     }
+  }
+  namespace orekit {
+    namespace bodies {
+      class GeodeticPoint;
+    }
+  }
+}
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -37,19 +37,19 @@ namespace org {
       class GeodeticPoint : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_87096e3fd8086100,
-          mid_equals_221e8e85cb385209,
-          mid_getAltitude_557b8123390d8d0c,
-          mid_getEast_f88961cca75a2c0a,
-          mid_getLatitude_557b8123390d8d0c,
-          mid_getLongitude_557b8123390d8d0c,
-          mid_getNadir_f88961cca75a2c0a,
-          mid_getNorth_f88961cca75a2c0a,
-          mid_getSouth_f88961cca75a2c0a,
-          mid_getWest_f88961cca75a2c0a,
-          mid_getZenith_f88961cca75a2c0a,
-          mid_hashCode_412668abc8d889e9,
-          mid_toString_3cffd47377eca18a,
+          mid_init$_b5167f35b2521627,
+          mid_equals_460c5e2d9d51c6cc,
+          mid_getAltitude_b74f83833fdad017,
+          mid_getEast_8b724f8b4fdad1a2,
+          mid_getLatitude_b74f83833fdad017,
+          mid_getLongitude_b74f83833fdad017,
+          mid_getNadir_8b724f8b4fdad1a2,
+          mid_getNorth_8b724f8b4fdad1a2,
+          mid_getSouth_8b724f8b4fdad1a2,
+          mid_getWest_8b724f8b4fdad1a2,
+          mid_getZenith_8b724f8b4fdad1a2,
+          mid_hashCode_55546ef6a647f39b,
+          mid_toString_1c1fa1e935d6cdcf,
           max_mid
         };
 

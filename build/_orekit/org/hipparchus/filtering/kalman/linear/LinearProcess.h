@@ -7,10 +7,10 @@ namespace org {
   namespace hipparchus {
     namespace filtering {
       namespace kalman {
+        class Measurement;
         namespace linear {
           class LinearEvolution;
         }
-        class Measurement;
       }
     }
   }
@@ -31,7 +31,7 @@ namespace org {
           class LinearProcess : public ::java::lang::Object {
            public:
             enum {
-              mid_getEvolution_2138a21d0289f4f7,
+              mid_getEvolution_c2e3f1b8f4d64185,
               max_mid
             };
 

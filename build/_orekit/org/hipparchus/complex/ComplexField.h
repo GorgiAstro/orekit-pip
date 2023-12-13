@@ -3,21 +3,21 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace complex {
-      class ComplexField;
-      class Complex;
-    }
-    class Field;
-  }
-}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    class Field;
+    namespace complex {
+      class Complex;
+      class ComplexField;
+    }
   }
 }
 template<class T> class JArray;
@@ -29,12 +29,12 @@ namespace org {
       class ComplexField : public ::java::lang::Object {
        public:
         enum {
-          mid_equals_221e8e85cb385209,
-          mid_getInstance_d1dc7459146fba31,
-          mid_getOne_921a2f30ecc499e5,
-          mid_getRuntimeClass_d4b191ff8147475d,
-          mid_getZero_921a2f30ecc499e5,
-          mid_hashCode_412668abc8d889e9,
+          mid_equals_460c5e2d9d51c6cc,
+          mid_getInstance_74589e1538dd146b,
+          mid_getOne_2f0868cbf8c045d4,
+          mid_getRuntimeClass_1aeb0737a960d371,
+          mid_getZero_2f0868cbf8c045d4,
+          mid_hashCode_55546ef6a647f39b,
           max_mid
         };
 

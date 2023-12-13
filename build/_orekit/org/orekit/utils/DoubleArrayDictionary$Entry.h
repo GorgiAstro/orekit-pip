@@ -3,6 +3,13 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace utils {
+      class DoubleArrayDictionary$Entry;
+    }
+  }
+}
 namespace java {
   namespace lang {
     class String;
@@ -10,13 +17,6 @@ namespace java {
   }
   namespace io {
     class Serializable;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace utils {
-      class DoubleArrayDictionary$Entry;
-    }
   }
 }
 template<class T> class JArray;
@@ -28,12 +28,12 @@ namespace org {
       class DoubleArrayDictionary$Entry : public ::java::lang::Object {
        public:
         enum {
-          mid_getKey_3cffd47377eca18a,
-          mid_getValue_a53a7513ecedada2,
-          mid_increment_cc18240f4a737f14,
-          mid_scaledIncrement_08f180e87df7be95,
-          mid_size_412668abc8d889e9,
-          mid_zero_0640e6acf969ed28,
+          mid_getKey_1c1fa1e935d6cdcf,
+          mid_getValue_25e1757a36c4dde2,
+          mid_increment_ab69da052b88f50c,
+          mid_scaledIncrement_0ed2f42ee710b1b6,
+          mid_size_55546ef6a647f39b,
+          mid_zero_a1fa5dae97ea5ed2,
           max_mid
         };
 

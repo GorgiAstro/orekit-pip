@@ -33,8 +33,8 @@ namespace org {
           class LineSearch : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_ea6794cdd5f32d78,
-              mid_search_25610de547d01255,
+              mid_init$_5dd6771805fad5cf,
+              mid_search_b6b7b19b6c5ffebb,
               max_mid
             };
 

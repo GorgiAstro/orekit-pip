@@ -4,10 +4,18 @@
 #include "org/orekit/propagation/integration/FieldAbstractIntegratedPropagator.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace ode {
+      class FieldODEIntegrator;
+    }
+    class Field;
+    class CalculusFieldElement;
+  }
   namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
     namespace propagation {
-      class FieldSpacecraftState;
-      class PropagationType;
       namespace semianalytical {
         namespace dsst {
           namespace forces {
@@ -15,21 +23,13 @@ namespace org {
           }
         }
       }
+      class PropagationType;
+      class FieldSpacecraftState;
     }
     namespace orbits {
-      class OrbitType;
-      class PositionAngleType;
       class FieldOrbit;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
-    class Field;
-    namespace ode {
-      class FieldODEIntegrator;
+      class PositionAngleType;
+      class OrbitType;
     }
   }
 }
@@ -55,37 +55,37 @@ namespace org {
           class FieldDSSTPropagator : public ::org::orekit::propagation::integration::FieldAbstractIntegratedPropagator {
            public:
             enum {
-              mid_init$_68cc2850ac8c3b8a,
-              mid_init$_d00ce4881929b1dd,
-              mid_init$_5fd536ebd2e543f8,
-              mid_init$_ae4c2f2efe8d710a,
-              mid_addForceModel_2a559dedc6480c51,
-              mid_computeMeanState_187529c751235134,
-              mid_computeMeanState_13d36b3f0ae97f91,
-              mid_computeOsculatingState_187529c751235134,
-              mid_getAllForceModels_0d9551367f7ecdef,
-              mid_getOrbitType_2cea2a2cb3e02091,
-              mid_getPositionAngleType_f4984aee71df4c19,
-              mid_getSatelliteRevolution_412668abc8d889e9,
-              mid_getSelectedCoefficients_2dfcbd371d62f4e1,
-              mid_initialIsOsculating_89b302893bdbe1f1,
-              mid_removeForceModels_0640e6acf969ed28,
-              mid_resetInitialState_b66c84a5711243d5,
-              mid_setAttitudeProvider_8fa6c0c067ead7b2,
-              mid_setInitialState_b66c84a5711243d5,
-              mid_setInitialState_9c62e0ce1624c4ca,
-              mid_setInterpolationGridToFixedNumberOfPoints_a3da1a935cb37f7b,
-              mid_setInterpolationGridToMaxTimeGap_1ee4bed350fde589,
-              mid_setMu_1ee4bed350fde589,
-              mid_setSatelliteRevolution_a3da1a935cb37f7b,
-              mid_setSelectedCoefficients_d05f6817e35222f6,
-              mid_tolerances_308f592d4493a9ec,
-              mid_tolerances_77222708c227fa61,
-              mid_createMapper_ad7c2ac9dfe2008b,
-              mid_getInitialIntegrationState_381b3e011cde018d,
-              mid_beforeIntegration_811e49dad2467b67,
-              mid_afterIntegration_0640e6acf969ed28,
-              mid_getMainStateEquations_c822d3b1a2fa150a,
+              mid_init$_b32dfc76ba0d0dfd,
+              mid_init$_85033171501dd1b3,
+              mid_init$_fb37e725b65dfde5,
+              mid_init$_e0343c2c388bd762,
+              mid_addForceModel_d24de896ffe1d07a,
+              mid_computeMeanState_042e6dd80dea32d3,
+              mid_computeMeanState_45ec3e9f52e63efd,
+              mid_computeOsculatingState_042e6dd80dea32d3,
+              mid_getAllForceModels_e62d3bb06d56d7e3,
+              mid_getOrbitType_c7d4737d7afca612,
+              mid_getPositionAngleType_c25055891f180348,
+              mid_getSatelliteRevolution_55546ef6a647f39b,
+              mid_getSelectedCoefficients_7e8f11dd23d1142c,
+              mid_initialIsOsculating_9ab94ac1dc23b105,
+              mid_removeForceModels_a1fa5dae97ea5ed2,
+              mid_resetInitialState_54d9efbf99822980,
+              mid_setAttitudeProvider_8e4d3ea100bc0095,
+              mid_setInitialState_54d9efbf99822980,
+              mid_setInitialState_8d1259686cbbe3a1,
+              mid_setInterpolationGridToFixedNumberOfPoints_44ed599e93e8a30c,
+              mid_setInterpolationGridToMaxTimeGap_f2b4bfa0af1007e8,
+              mid_setMu_f2b4bfa0af1007e8,
+              mid_setSatelliteRevolution_44ed599e93e8a30c,
+              mid_setSelectedCoefficients_4d8d93045ba4dc2c,
+              mid_tolerances_725d262c7a2ce0e1,
+              mid_tolerances_e9446c2dc4d08ee3,
+              mid_createMapper_23e677752bbdcbdf,
+              mid_getMainStateEquations_f48ddce9ae4b38bb,
+              mid_getInitialIntegrationState_fba6d56f8dbc98d0,
+              mid_beforeIntegration_96d019f392abf918,
+              mid_afterIntegration_a1fa5dae97ea5ed2,
               max_mid
             };
 

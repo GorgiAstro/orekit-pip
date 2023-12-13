@@ -3,14 +3,14 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -22,10 +22,10 @@ namespace org {
       class FieldTrackingCoordinates : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0f27b0249abd6c51,
-          mid_getAzimuth_613c8f46c659f636,
-          mid_getElevation_613c8f46c659f636,
-          mid_getRange_613c8f46c659f636,
+          mid_init$_baa1ed35ace5d036,
+          mid_getAzimuth_81520b552cb3fa26,
+          mid_getElevation_81520b552cb3fa26,
+          mid_getRange_81520b552cb3fa26,
           max_mid
         };
 

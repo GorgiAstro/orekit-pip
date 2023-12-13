@@ -14,19 +14,6 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace bodies {
-      class GeodeticPoint;
-      class FieldGeodeticPoint;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-      class TimeScale;
-    }
-    namespace utils {
-      class ParameterDriver;
-      class TimeSpanMap$Span;
-    }
     namespace models {
       namespace earth {
         namespace troposphere {
@@ -34,6 +21,19 @@ namespace org {
           class EstimatedTroposphericModel;
         }
       }
+    }
+    namespace utils {
+      class TimeSpanMap$Span;
+      class ParameterDriver;
+    }
+    namespace bodies {
+      class FieldGeodeticPoint;
+      class GeodeticPoint;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+      class TimeScale;
     }
   }
   namespace hipparchus {
@@ -51,17 +51,17 @@ namespace org {
           class TimeSpanEstimatedTroposphericModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_f96d1a03a603be44,
-              mid_init$_73f1c37454d76b46,
-              mid_addTroposphericModelValidAfter_476a18f671c64533,
-              mid_addTroposphericModelValidBefore_476a18f671c64533,
-              mid_extractParameters_2a4cb51cb18e4e8b,
-              mid_extractParameters_32c7759b5aba450d,
-              mid_getFirstSpan_2a24ed7b7f6cbca3,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_getTroposphericModel_e45f8fce45533b23,
-              mid_pathDelay_a4fdd877b349d4a6,
-              mid_pathDelay_129678f244f63094,
+              mid_init$_e4decacb2b1b0d4e,
+              mid_init$_da6156174acb8778,
+              mid_addTroposphericModelValidAfter_ad0495186ecc4e93,
+              mid_addTroposphericModelValidBefore_ad0495186ecc4e93,
+              mid_extractParameters_5417afc1212505b6,
+              mid_extractParameters_afb90c8392ccc216,
+              mid_getFirstSpan_5290b219f9ebfd63,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_getTroposphericModel_b8fed425d07d8042,
+              mid_pathDelay_6f66c6b7094d6f08,
+              mid_pathDelay_2edbfa177156ee09,
               max_mid
             };
 

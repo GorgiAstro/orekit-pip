@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-    }
     namespace bodies {
       class OneAxisEllipsoid;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
     }
   }
   namespace hipparchus {
@@ -32,12 +32,12 @@ namespace org {
         class FieldLatitudeCrossingDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_1287f091a4811e16,
-            mid_init$_a783394cef2e1482,
-            mid_g_de1c2d709eb2829c,
-            mid_getBody_0c55bd1adf955c4c,
-            mid_getLatitude_557b8123390d8d0c,
-            mid_create_a84be14494f527bd,
+            mid_init$_5aa113c8ea2c3853,
+            mid_init$_3a020ed83ff3efcb,
+            mid_g_2203631097e94c79,
+            mid_getBody_dd5c4288aa5a3dd8,
+            mid_getLatitude_b74f83833fdad017,
+            mid_create_5169047ad44c10c0,
             max_mid
           };
 

@@ -3,16 +3,16 @@
 
 #include "org/hipparchus/analysis/integration/BaseAbstractUnivariateIntegrator.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,10 +25,10 @@ namespace org {
         class IterativeLegendreGaussIntegrator : public ::org::hipparchus::analysis::integration::BaseAbstractUnivariateIntegrator {
          public:
           enum {
-            mid_init$_79cfe3f564275380,
-            mid_init$_3796b665437eba81,
-            mid_init$_9a6afb5be949e9a1,
-            mid_doIntegrate_557b8123390d8d0c,
+            mid_init$_cdd9dee35d124091,
+            mid_init$_a0df4b8e4ed3805e,
+            mid_init$_e7cf6a4a381d2431,
+            mid_doIntegrate_b74f83833fdad017,
             max_mid
           };
 

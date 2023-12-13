@@ -8,26 +8,26 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
     class CalculusFieldElement;
   }
   namespace orekit {
+    namespace forces {
+      class ForceModel;
+    }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
-    namespace bodies {
-      class CelestialBody;
-    }
     namespace utils {
       class ParameterDriver;
     }
-    namespace forces {
-      class ForceModel;
+    namespace bodies {
+      class CelestialBody;
     }
   }
 }
@@ -50,11 +50,11 @@ namespace org {
         class ThirdBodyAttraction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_971db345b01a6cfa,
-            mid_acceleration_b61fb59a041240c6,
-            mid_acceleration_61944e27a39e8290,
-            mid_dependsOnPositionOnly_89b302893bdbe1f1,
-            mid_getParametersDrivers_0d9551367f7ecdef,
+            mid_init$_b5b078eb816ea0c4,
+            mid_acceleration_20bded0292328743,
+            mid_acceleration_0ce449c67b5ffd9c,
+            mid_dependsOnPositionOnly_9ab94ac1dc23b105,
+            mid_getParametersDrivers_e62d3bb06d56d7e3,
             max_mid
           };
 
@@ -73,8 +73,8 @@ namespace org {
 
           ThirdBodyAttraction(const ::org::orekit::bodies::CelestialBody &);
 
-          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
+          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           jboolean dependsOnPositionOnly() const;
           ::java::util::List getParametersDrivers() const;
         };

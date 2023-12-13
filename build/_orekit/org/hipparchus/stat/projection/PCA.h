@@ -27,17 +27,17 @@ namespace org {
         class PCA : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a3da1a935cb37f7b,
-            mid_init$_9b50b4169e00a9a7,
-            mid_fit_08e8cc218c0c12b9,
-            mid_fitAndTransform_2b7f9de2d1ea1ddb,
-            mid_getCenter_a53a7513ecedada2,
-            mid_getComponents_8cf5267aa13a77f3,
-            mid_getNumComponents_412668abc8d889e9,
-            mid_getVariance_a53a7513ecedada2,
-            mid_isBiasCorrection_89b302893bdbe1f1,
-            mid_isScale_89b302893bdbe1f1,
-            mid_transform_2b7f9de2d1ea1ddb,
+            mid_init$_44ed599e93e8a30c,
+            mid_init$_79d569e065493120,
+            mid_fit_a97c2eb77f399243,
+            mid_fitAndTransform_fa7294d53f56a3e3,
+            mid_getCenter_25e1757a36c4dde2,
+            mid_getComponents_3b7b373db8e7887f,
+            mid_getNumComponents_55546ef6a647f39b,
+            mid_getVariance_25e1757a36c4dde2,
+            mid_isBiasCorrection_9ab94ac1dc23b105,
+            mid_isScale_9ab94ac1dc23b105,
+            mid_transform_fa7294d53f56a3e3,
             max_mid
           };
 

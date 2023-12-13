@@ -3,17 +3,17 @@
 
 #include "org/orekit/errors/OrekitException.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+    class Object;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class Localizable;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
-    class Object;
   }
 }
 template<class T> class JArray;
@@ -25,7 +25,7 @@ namespace org {
       class FrameAncestorException : public ::org::orekit::errors::OrekitException {
        public:
         enum {
-          mid_init$_4fde7f3f87bbd6f7,
+          mid_init$_9b3ada3301b0db8c,
           max_mid
         };
 

@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace analysis {
       namespace solvers {
         class AllowedSolution;
       }
     }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -28,12 +28,12 @@ namespace org {
         class BracketedRealFieldUnivariateSolver$Interval : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_56d3d4aaadd7d7a1,
-            mid_getLeftAbscissa_613c8f46c659f636,
-            mid_getLeftValue_613c8f46c659f636,
-            mid_getRightAbscissa_613c8f46c659f636,
-            mid_getRightValue_613c8f46c659f636,
-            mid_getSide_96d774d32e5e5661,
+            mid_init$_c6084435a35e7162,
+            mid_getLeftAbscissa_81520b552cb3fa26,
+            mid_getLeftValue_81520b552cb3fa26,
+            mid_getRightAbscissa_81520b552cb3fa26,
+            mid_getRightValue_81520b552cb3fa26,
+            mid_getSide_cb62b191271bd043,
             max_mid
           };
 

@@ -5,8 +5,8 @@
 
 namespace java {
   namespace util {
-    class ConcurrentModificationException;
     class NoSuchElementException;
+    class ConcurrentModificationException;
   }
   namespace lang {
     class Class;
@@ -21,10 +21,10 @@ namespace org {
       class OpenIntToDoubleHashMap$Iterator : public ::java::lang::Object {
        public:
         enum {
-          mid_advance_0640e6acf969ed28,
-          mid_hasNext_89b302893bdbe1f1,
-          mid_key_412668abc8d889e9,
-          mid_value_557b8123390d8d0c,
+          mid_advance_a1fa5dae97ea5ed2,
+          mid_hasNext_9ab94ac1dc23b105,
+          mid_key_55546ef6a647f39b,
+          mid_value_b74f83833fdad017,
           max_mid
         };
 

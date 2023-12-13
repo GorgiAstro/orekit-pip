@@ -17,24 +17,24 @@ namespace org {
     namespace models {
       namespace earth {
         namespace troposphere {
-          class SaastamoinenModel;
           class DiscreteTroposphericModel;
+          class SaastamoinenModel;
         }
       }
     }
     namespace bodies {
-      class GeodeticPoint;
       class FieldGeodeticPoint;
+      class GeodeticPoint;
     }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
     }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace data {
       class DataProvidersManager;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
   namespace hipparchus {
@@ -52,15 +52,15 @@ namespace org {
           class SaastamoinenModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_87096e3fd8086100,
-              mid_init$_cd0a6cb6bf2555a1,
-              mid_init$_6715d5a727bb2ee9,
-              mid_getLowElevationThreshold_557b8123390d8d0c,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_getStandardModel_f1fd9d673b2eb4b0,
-              mid_pathDelay_a4fdd877b349d4a6,
-              mid_pathDelay_129678f244f63094,
-              mid_setLowElevationThreshold_10f281d777284cea,
+              mid_init$_b5167f35b2521627,
+              mid_init$_86e04e54e74f419a,
+              mid_init$_b722bf633ce1eb32,
+              mid_getLowElevationThreshold_b74f83833fdad017,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_getStandardModel_21d2c53891518209,
+              mid_pathDelay_6f66c6b7094d6f08,
+              mid_pathDelay_2edbfa177156ee09,
+              mid_setLowElevationThreshold_8ba9fe7a847cecad,
               max_mid
             };
 

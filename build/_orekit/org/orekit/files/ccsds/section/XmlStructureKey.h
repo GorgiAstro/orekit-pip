@@ -40,9 +40,9 @@ namespace org {
           class XmlStructureKey : public ::java::lang::Enum {
            public:
             enum {
-              mid_process_3a6d8178bc93b34b,
-              mid_valueOf_065e92b6996e1984,
-              mid_values_d3069318da798eeb,
+              mid_process_c095c1ee2f4787f7,
+              mid_valueOf_0b9382c41a0848a3,
+              mid_values_e3aca9dd761c678c,
               max_mid
             };
 

@@ -34,10 +34,10 @@ namespace org {
           class RinexClock$ClockDataType : public ::java::lang::Enum {
            public:
             enum {
-              mid_getKey_3cffd47377eca18a,
-              mid_parseClockDataType_1d67ae2b29bedc82,
-              mid_valueOf_1d67ae2b29bedc82,
-              mid_values_3fbbe72316e776a8,
+              mid_getKey_1c1fa1e935d6cdcf,
+              mid_parseClockDataType_dcaf1464da324041,
+              mid_valueOf_dcaf1464da324041,
+              mid_values_4a99278d55545989,
               max_mid
             };
 

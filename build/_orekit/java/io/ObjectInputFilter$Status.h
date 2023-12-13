@@ -20,8 +20,8 @@ namespace java {
     class ObjectInputFilter$Status : public ::java::lang::Enum {
      public:
       enum {
-        mid_valueOf_e8a6b88739241593,
-        mid_values_69aa11d66d4db3e4,
+        mid_valueOf_2f091d648ef5c66a,
+        mid_values_58dfdde44b6e9f1e,
         max_mid
       };
 

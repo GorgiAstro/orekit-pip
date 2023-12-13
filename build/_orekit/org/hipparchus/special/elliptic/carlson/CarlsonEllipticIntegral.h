@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace complex {
-      class Complex;
-      class FieldComplex;
-    }
     class CalculusFieldElement;
+    namespace complex {
+      class FieldComplex;
+      class Complex;
+    }
   }
 }
 namespace java {
@@ -28,30 +28,30 @@ namespace org {
           class CarlsonEllipticIntegral : public ::java::lang::Object {
            public:
             enum {
-              mid_rC_600605bb97069728,
-              mid_rC_c07eaa4a298b48d0,
-              mid_rC_2268d18be49a6087,
-              mid_rC_d5f58731bcb8a011,
-              mid_rD_6156fa5f0dbd9ed3,
-              mid_rD_97a60df2e559f4a4,
-              mid_rD_8d02ba458f22e508,
-              mid_rD_d181e731358aa045,
-              mid_rF_6156fa5f0dbd9ed3,
-              mid_rF_97a60df2e559f4a4,
-              mid_rF_8d02ba458f22e508,
-              mid_rF_d181e731358aa045,
-              mid_rG_6156fa5f0dbd9ed3,
-              mid_rG_97a60df2e559f4a4,
-              mid_rG_8d02ba458f22e508,
-              mid_rG_d181e731358aa045,
-              mid_rJ_7d14c7027947a4b0,
-              mid_rJ_bb0e7d413a12990c,
-              mid_rJ_79d60f5d1a9d8623,
-              mid_rJ_b36bbc15a8c16f64,
-              mid_rJ_966a0b2762c4840a,
-              mid_rJ_fdfcd218305d4c4f,
-              mid_rJ_765cc6b7207cf0fc,
-              mid_rJ_10a75391cb060c92,
+              mid_rC_66a05841a47df944,
+              mid_rC_ffc2a92390051f74,
+              mid_rC_99e3200dafc19573,
+              mid_rC_c6408fdce2cc6c1a,
+              mid_rD_ea3ba47e5616cb34,
+              mid_rD_2ff0fd08cf0de215,
+              mid_rD_f804f816b79164cb,
+              mid_rD_8a93710b1b1536a6,
+              mid_rF_ea3ba47e5616cb34,
+              mid_rF_2ff0fd08cf0de215,
+              mid_rF_f804f816b79164cb,
+              mid_rF_8a93710b1b1536a6,
+              mid_rG_ea3ba47e5616cb34,
+              mid_rG_2ff0fd08cf0de215,
+              mid_rG_f804f816b79164cb,
+              mid_rG_8a93710b1b1536a6,
+              mid_rJ_08e384c3474bdd1c,
+              mid_rJ_d9560f48e4b68b28,
+              mid_rJ_08eba2463884b341,
+              mid_rJ_0a337cffdfb74cd1,
+              mid_rJ_e258a6370f9fab08,
+              mid_rJ_0d5b508e91e7f94d,
+              mid_rJ_8a4a2aacccac4925,
+              mid_rJ_9418fc4466f489ae,
               max_mid
             };
 

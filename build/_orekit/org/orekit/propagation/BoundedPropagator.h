@@ -3,16 +3,16 @@
 
 #include "org/orekit/propagation/Propagator.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,8 +24,8 @@ namespace org {
       class BoundedPropagator : public ::org::orekit::propagation::Propagator {
        public:
         enum {
-          mid_getMaxDate_7a97f7e149e79afb,
-          mid_getMinDate_7a97f7e149e79afb,
+          mid_getMaxDate_c325492395d89b24,
+          mid_getMinDate_c325492395d89b24,
           max_mid
         };
 

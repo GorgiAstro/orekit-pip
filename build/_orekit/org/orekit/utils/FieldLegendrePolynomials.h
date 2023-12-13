@@ -3,14 +3,14 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -22,8 +22,8 @@ namespace org {
       class FieldLegendrePolynomials : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_1c8164bd91d5a690,
-          mid_getPnm_f548ed78c2486137,
+          mid_init$_859cebb55f4be973,
+          mid_getPnm_431f825c752f7b4c,
           max_mid
         };
 

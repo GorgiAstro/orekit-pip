@@ -8,8 +8,8 @@ namespace org {
     namespace stat {
       namespace ranking {
         class NaNStrategy;
-        class TiesStrategy;
         class RankingAlgorithm;
+        class TiesStrategy;
       }
     }
     namespace random {
@@ -32,15 +32,15 @@ namespace org {
         class NaturalRanking : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_init$_9a0bb4846d6220d9,
-            mid_init$_8895955433ec1a4f,
-            mid_init$_19e7f6e95a4dc08e,
-            mid_init$_08eff940a3336a45,
-            mid_init$_da68996d2e70adaf,
-            mid_getNanStrategy_771b1218ed87a53c,
-            mid_getTiesStrategy_31f335b655a6e105,
-            mid_rank_1db7c087750eaffe,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_init$_762a548744e64bc1,
+            mid_init$_12e7f930f26d954d,
+            mid_init$_f1c8159898f25396,
+            mid_init$_c6e936703eef190b,
+            mid_init$_9ea9143ae8bc6296,
+            mid_getNanStrategy_9ae875326a45f3e9,
+            mid_getTiesStrategy_89158e6cc63b090c,
+            mid_rank_14dee4cb8cc3e959,
             max_mid
           };
 

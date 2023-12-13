@@ -32,17 +32,17 @@ namespace org {
         class BracketFinder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_init$_47602ef8408ea361,
-            mid_getEvaluations_412668abc8d889e9,
-            mid_getFHi_557b8123390d8d0c,
-            mid_getFLo_557b8123390d8d0c,
-            mid_getFMid_557b8123390d8d0c,
-            mid_getHi_557b8123390d8d0c,
-            mid_getLo_557b8123390d8d0c,
-            mid_getMaxEvaluations_412668abc8d889e9,
-            mid_getMid_557b8123390d8d0c,
-            mid_search_33db5f32c3aed894,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_init$_1af1b4c263b48b0c,
+            mid_getEvaluations_55546ef6a647f39b,
+            mid_getFHi_b74f83833fdad017,
+            mid_getFLo_b74f83833fdad017,
+            mid_getFMid_b74f83833fdad017,
+            mid_getHi_b74f83833fdad017,
+            mid_getLo_b74f83833fdad017,
+            mid_getMaxEvaluations_55546ef6a647f39b,
+            mid_getMid_b74f83833fdad017,
+            mid_search_1cf84de2aa39fddf,
             max_mid
           };
 

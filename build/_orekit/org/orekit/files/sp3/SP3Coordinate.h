@@ -4,6 +4,15 @@
 #include "org/orekit/utils/TimeStampedPVCoordinates.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace files {
       namespace sp3 {
@@ -12,15 +21,6 @@ namespace org {
     }
     namespace time {
       class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
     }
   }
 }
@@ -39,17 +39,17 @@ namespace org {
         class SP3Coordinate : public ::org::orekit::utils::TimeStampedPVCoordinates {
          public:
           enum {
-            mid_init$_a59e7ab90f97ad08,
-            mid_getClockAccuracy_557b8123390d8d0c,
-            mid_getClockCorrection_557b8123390d8d0c,
-            mid_getClockRateAccuracy_557b8123390d8d0c,
-            mid_getClockRateChange_557b8123390d8d0c,
-            mid_getPositionAccuracy_f88961cca75a2c0a,
-            mid_getVelocityAccuracy_f88961cca75a2c0a,
-            mid_hasClockEvent_89b302893bdbe1f1,
-            mid_hasClockPrediction_89b302893bdbe1f1,
-            mid_hasOrbitManeuverEvent_89b302893bdbe1f1,
-            mid_hasOrbitPrediction_89b302893bdbe1f1,
+            mid_init$_ad58f8869eeeecbb,
+            mid_getClockAccuracy_b74f83833fdad017,
+            mid_getClockCorrection_b74f83833fdad017,
+            mid_getClockRateAccuracy_b74f83833fdad017,
+            mid_getClockRateChange_b74f83833fdad017,
+            mid_getPositionAccuracy_8b724f8b4fdad1a2,
+            mid_getVelocityAccuracy_8b724f8b4fdad1a2,
+            mid_hasClockEvent_9ab94ac1dc23b105,
+            mid_hasClockPrediction_9ab94ac1dc23b105,
+            mid_hasOrbitManeuverEvent_9ab94ac1dc23b105,
+            mid_hasOrbitPrediction_9ab94ac1dc23b105,
             max_mid
           };
 

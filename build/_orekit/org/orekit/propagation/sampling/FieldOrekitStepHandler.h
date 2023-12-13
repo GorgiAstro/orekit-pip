@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace propagation {
       class FieldSpacecraftState;
       namespace sampling {
         class FieldOrekitStepInterpolator;
       }
+    }
+    namespace time {
+      class FieldAbsoluteDate;
     }
   }
 }
@@ -31,9 +31,9 @@ namespace org {
         class FieldOrekitStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_finish_b66c84a5711243d5,
-            mid_handleStep_c006764357a9d9b2,
-            mid_init_811e49dad2467b67,
+            mid_finish_54d9efbf99822980,
+            mid_handleStep_fa82adff12d70536,
+            mid_init_96d019f392abf918,
             max_mid
           };
 

@@ -4,12 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace attitudes {
-      class InertiaAxis;
-      class Inertia;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -17,6 +11,12 @@ namespace org {
           class Vector3D;
         }
       }
+    }
+  }
+  namespace orekit {
+    namespace attitudes {
+      class InertiaAxis;
+      class Inertia;
     }
   }
 }
@@ -34,13 +34,13 @@ namespace org {
       class Inertia : public ::java::lang::Object {
        public:
         enum {
-          mid_getInertiaAxis1_b822d9cbafca1aaf,
-          mid_getInertiaAxis2_b822d9cbafca1aaf,
-          mid_getInertiaAxis3_b822d9cbafca1aaf,
-          mid_momentum_b48aa9aef740fa79,
-          mid_swap12_0c35e3e78a73a076,
-          mid_swap13_0c35e3e78a73a076,
-          mid_swap23_0c35e3e78a73a076,
+          mid_getInertiaAxis1_939384575c8392d2,
+          mid_getInertiaAxis2_939384575c8392d2,
+          mid_getInertiaAxis3_939384575c8392d2,
+          mid_momentum_f21507e4850a184e,
+          mid_swap12_5cd6be00a4c2be15,
+          mid_swap13_5cd6be00a4c2be15,
+          mid_swap23_5cd6be00a4c2be15,
           max_mid
         };
 

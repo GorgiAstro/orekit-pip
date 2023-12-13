@@ -44,9 +44,9 @@ namespace org {
               class OrbitDeterminationKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_106ad4cf2988349f,
-                  mid_valueOf_6aedeeb40c743b6d,
-                  mid_values_6315d5d95b5ccc70,
+                  mid_process_22f0fccb35944945,
+                  mid_valueOf_9354acd6506346ad,
+                  mid_values_1ed7791c9e6b718f,
                   max_mid
                 };
 

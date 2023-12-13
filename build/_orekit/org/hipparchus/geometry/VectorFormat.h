@@ -5,26 +5,26 @@
 
 namespace java {
   namespace text {
+    class FieldPosition;
     class ParsePosition;
     class NumberFormat;
-    class FieldPosition;
   }
   namespace util {
     class Locale;
   }
   namespace lang {
-    class Class;
     class StringBuffer;
+    class Class;
     class String;
   }
 }
 namespace org {
   namespace hipparchus {
-    namespace geometry {
-      class Vector;
-    }
     namespace exception {
       class MathIllegalStateException;
+    }
+    namespace geometry {
+      class Vector;
     }
   }
 }
@@ -37,17 +37,17 @@ namespace org {
       class VectorFormat : public ::java::lang::Object {
        public:
         enum {
-          mid_format_fbc9c473747e1713,
-          mid_format_6f1f6993f3124ea0,
-          mid_getAvailableLocales_85ff0d07ca843902,
-          mid_getFormat_001645e916bd626d,
-          mid_getPrefix_3cffd47377eca18a,
-          mid_getSeparator_3cffd47377eca18a,
-          mid_getSuffix_3cffd47377eca18a,
-          mid_parse_7236b6f35bbe732b,
-          mid_parse_a9ea402cd0957b38,
-          mid_parseCoordinates_cb64af18199b2965,
-          mid_format_fa4f8fe137c30573,
+          mid_format_e9d419993c8be639,
+          mid_format_4b712c2465e37e54,
+          mid_getAvailableLocales_8d2cd0b971cc7b85,
+          mid_getFormat_87ffffc449cd25a5,
+          mid_getPrefix_1c1fa1e935d6cdcf,
+          mid_getSeparator_1c1fa1e935d6cdcf,
+          mid_getSuffix_1c1fa1e935d6cdcf,
+          mid_parse_1a4fc7b3db50e8cd,
+          mid_parse_b176351865ef534b,
+          mid_parseCoordinates_bc56ec5488ce916c,
+          mid_format_782445f761dc1740,
           max_mid
         };
 

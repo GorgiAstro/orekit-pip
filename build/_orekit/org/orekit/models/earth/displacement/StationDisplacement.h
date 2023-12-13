@@ -38,7 +38,7 @@ namespace org {
           class StationDisplacement : public ::java::lang::Object {
            public:
             enum {
-              mid_displacement_2092c3958d15642d,
+              mid_displacement_729c7f08824f83c6,
               max_mid
             };
 

@@ -29,10 +29,10 @@ namespace org {
       class TimeStampedField : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_d5f4c75911571e7f,
-          mid_init$_a4d7862fdbde3885,
-          mid_getDate_f1fe4daf77c66560,
-          mid_getValue_613c8f46c659f636,
+          mid_init$_7f1905037abc4455,
+          mid_init$_bd45115a05f012cf,
+          mid_getDate_fa23a4301b9c83e7,
+          mid_getValue_81520b552cb3fa26,
           max_mid
         };
 

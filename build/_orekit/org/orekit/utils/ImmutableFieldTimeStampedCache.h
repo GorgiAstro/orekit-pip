@@ -28,8 +28,8 @@ namespace org {
     }
   }
   namespace hipparchus {
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -41,14 +41,14 @@ namespace org {
       class ImmutableFieldTimeStampedCache : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7eb5c0f6d06d97ea,
-          mid_emptyCache_9f9530342ec23b16,
-          mid_getAll_0d9551367f7ecdef,
-          mid_getEarliest_d840ecaffb3bbf7f,
-          mid_getLatest_d840ecaffb3bbf7f,
-          mid_getNeighbors_d2b16151ed8cc73c,
-          mid_getNeighborsSize_412668abc8d889e9,
-          mid_toString_3cffd47377eca18a,
+          mid_init$_36a24b5e65508672,
+          mid_emptyCache_14972a5b95f969fe,
+          mid_getAll_e62d3bb06d56d7e3,
+          mid_getEarliest_e7a49be0190c3b40,
+          mid_getLatest_e7a49be0190c3b40,
+          mid_getNeighbors_fe526c9a9cb8189c,
+          mid_getNeighborsSize_55546ef6a647f39b,
+          mid_toString_1c1fa1e935d6cdcf,
           max_mid
         };
 

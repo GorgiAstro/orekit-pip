@@ -20,8 +20,8 @@ namespace org {
       class ElevationMask : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_edb361bfdd1ad9ae,
-          mid_getElevation_7e960cd6eee376d8,
+          mid_init$_07adb42ffaa97d31,
+          mid_getElevation_04fd0666b613d2ab,
           max_mid
         };
 

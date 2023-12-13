@@ -43,9 +43,9 @@ namespace org {
               class OcmDataSubStructureKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_bf06d30c4975f5ed,
-                  mid_valueOf_7121bc0aab7978c0,
-                  mid_values_cb31fddb8b956040,
+                  mid_process_aff651a5d18925d2,
+                  mid_valueOf_f1cae8b8dd8bfea3,
+                  mid_values_f7e96f4471e5bc91,
                   max_mid
                 };
 

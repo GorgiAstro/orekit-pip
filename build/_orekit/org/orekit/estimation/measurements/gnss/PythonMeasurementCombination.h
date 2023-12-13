@@ -40,13 +40,13 @@ namespace org {
           class PythonMeasurementCombination : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_combine_82c5de1a9cc4c5da,
-              mid_finalize_0640e6acf969ed28,
-              mid_getName_3cffd47377eca18a,
-              mid_pythonDecRef_0640e6acf969ed28,
-              mid_pythonExtension_9e26256fb0d384a2,
-              mid_pythonExtension_3cd6a6b354c6aa22,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_combine_12b3dc80befaeb6c,
+              mid_finalize_a1fa5dae97ea5ed2,
+              mid_getName_1c1fa1e935d6cdcf,
+              mid_pythonDecRef_a1fa5dae97ea5ed2,
+              mid_pythonExtension_6c0ce7e438e5ded4,
+              mid_pythonExtension_3d7dd2314a0dd456,
               max_mid
             };
 

@@ -3,8 +3,16 @@
 
 #include "org/orekit/files/ccsds/ndm/odm/OdmCommonMetadata.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -16,14 +24,6 @@ namespace org {
         }
       }
     }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -39,20 +39,20 @@ namespace org {
               class OemMetadata : public ::org::orekit::files::ccsds::ndm::odm::OdmCommonMetadata {
                public:
                 enum {
-                  mid_init$_a3da1a935cb37f7b,
-                  mid_getInterpolationDegree_412668abc8d889e9,
-                  mid_getInterpolationMethod_8efb284b7b2c86d2,
-                  mid_getStartTime_7a97f7e149e79afb,
-                  mid_getStopTime_7a97f7e149e79afb,
-                  mid_getUseableStartTime_7a97f7e149e79afb,
-                  mid_getUseableStopTime_7a97f7e149e79afb,
-                  mid_setInterpolationDegree_a3da1a935cb37f7b,
-                  mid_setInterpolationMethod_db5b325923fed9a5,
-                  mid_setStartTime_20affcbd28542333,
-                  mid_setStopTime_20affcbd28542333,
-                  mid_setUseableStartTime_20affcbd28542333,
-                  mid_setUseableStopTime_20affcbd28542333,
-                  mid_validate_10f281d777284cea,
+                  mid_init$_44ed599e93e8a30c,
+                  mid_getInterpolationDegree_55546ef6a647f39b,
+                  mid_getInterpolationMethod_0f2522b3fe45d99f,
+                  mid_getStartTime_c325492395d89b24,
+                  mid_getStopTime_c325492395d89b24,
+                  mid_getUseableStartTime_c325492395d89b24,
+                  mid_getUseableStopTime_c325492395d89b24,
+                  mid_setInterpolationDegree_44ed599e93e8a30c,
+                  mid_setInterpolationMethod_da218530d7e28b54,
+                  mid_setStartTime_02135a6ef25adb4b,
+                  mid_setStopTime_02135a6ef25adb4b,
+                  mid_setUseableStartTime_02135a6ef25adb4b,
+                  mid_setUseableStopTime_02135a6ef25adb4b,
+                  mid_validate_8ba9fe7a847cecad,
                   max_mid
                 };
 

@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace frames {
-      class ItrfVersionProvider;
       class ITRFVersionLoader$ITRFVersionConfiguration;
+      class ItrfVersionProvider;
     }
     namespace data {
       class DataProvidersManager;
@@ -29,10 +29,10 @@ namespace org {
       class ITRFVersionLoader : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_init$_f5ffdf29129ef90a,
-          mid_init$_28c7bdc075bb74e8,
-          mid_getConfiguration_a005f84471bdab98,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_init$_734b91ac30d5f9b4,
+          mid_init$_0343d25c5af74eca,
+          mid_getConfiguration_c175c26b8f14b277,
           max_mid
         };
 

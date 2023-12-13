@@ -15,8 +15,8 @@ namespace org {
     namespace exception {
       class MathIllegalArgumentException;
     }
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -34,16 +34,16 @@ namespace org {
         class FDSFactory : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a9ccb012d4cb48bd,
-            mid_build_1e72ceb97300ff53,
-            mid_build_276eb72cb82e871b,
-            mid_constant_16af759261ef50b4,
-            mid_constant_bcb3f877ec28ee10,
-            mid_getCompiler_dfc048d343f51ab1,
-            mid_getDerivativeField_2ed566e60939f4ee,
-            mid_getValueField_20f98801541dcec1,
-            mid_variable_a73597f593036083,
-            mid_variable_7e11caf716d163b9,
+            mid_init$_b6c946d1cbf160f0,
+            mid_build_b2e42be64b624f3f,
+            mid_build_1a7f741fb94c3273,
+            mid_constant_7aeeac85ca41e793,
+            mid_constant_af5f7afd2fa6e7d1,
+            mid_getCompiler_e0888effe8b453a6,
+            mid_getDerivativeField_21a69e1beba00e8c,
+            mid_getValueField_04d1f63e17d5c5d4,
+            mid_variable_21d34149fde44727,
+            mid_variable_d130203cc430a767,
             max_mid
           };
 

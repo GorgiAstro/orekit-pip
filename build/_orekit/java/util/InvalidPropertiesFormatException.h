@@ -18,8 +18,8 @@ namespace java {
     class InvalidPropertiesFormatException : public ::java::io::IOException {
      public:
       enum {
-        mid_init$_f5ffdf29129ef90a,
-        mid_init$_7d9320fd2ea36122,
+        mid_init$_734b91ac30d5f9b4,
+        mid_init$_c5d3549d4f245728,
         max_mid
       };
 

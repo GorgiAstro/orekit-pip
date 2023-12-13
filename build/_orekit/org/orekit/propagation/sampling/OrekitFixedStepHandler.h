@@ -28,9 +28,9 @@ namespace org {
         class OrekitFixedStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_finish_8655761ebf04b503,
-            mid_handleStep_8655761ebf04b503,
-            mid_init_a423d7aa7c2fe850,
+            mid_finish_280c3390961e0a50,
+            mid_handleStep_280c3390961e0a50,
+            mid_init_3189c7446dbbb87e,
             max_mid
           };
 

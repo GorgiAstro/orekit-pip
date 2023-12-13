@@ -3,30 +3,7 @@
 
 #include "org/orekit/geometry/fov/AbstractFieldOfView.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
-  namespace orekit {
-    namespace frames {
-      class Transform;
-    }
-    namespace bodies {
-      class GeodeticPoint;
-      class OneAxisEllipsoid;
-    }
-    namespace propagation {
-      namespace events {
-        class VisibilityTrigger;
-      }
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -35,6 +12,29 @@ namespace org {
         }
       }
     }
+  }
+  namespace orekit {
+    namespace bodies {
+      class GeodeticPoint;
+      class OneAxisEllipsoid;
+    }
+    namespace frames {
+      class Transform;
+    }
+    namespace propagation {
+      namespace events {
+        class VisibilityTrigger;
+      }
+    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -47,14 +47,14 @@ namespace org {
         class PythonAbstractFieldOfView : public ::org::orekit::geometry::fov::AbstractFieldOfView {
          public:
           enum {
-            mid_init$_10f281d777284cea,
-            mid_finalize_0640e6acf969ed28,
-            mid_getFootprint_37f5cab3ae6d781a,
-            mid_offsetFromBoundary_d0bb3aecf00cc465,
-            mid_projectToBoundary_b48aa9aef740fa79,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
+            mid_init$_8ba9fe7a847cecad,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_getFootprint_f20a8500298f8a78,
+            mid_offsetFromBoundary_927580832e9083f9,
+            mid_projectToBoundary_f21507e4850a184e,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
             max_mid
           };
 

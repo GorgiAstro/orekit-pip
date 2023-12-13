@@ -8,8 +8,8 @@ namespace java {
     class Map$Entry;
     class Map;
     class Collection;
-    class Set;
     class Enumeration;
+    class Set;
   }
   namespace io {
     class Serializable;
@@ -29,35 +29,35 @@ namespace java {
     class Hashtable : public ::java::util::Dictionary {
      public:
       enum {
-        mid_init$_0640e6acf969ed28,
-        mid_init$_a3da1a935cb37f7b,
-        mid_init$_6ba01303bcce0307,
-        mid_init$_7c1037ab599ac362,
-        mid_clear_0640e6acf969ed28,
-        mid_clone_e661fe3ba2fafb22,
-        mid_contains_221e8e85cb385209,
-        mid_containsKey_221e8e85cb385209,
-        mid_containsValue_221e8e85cb385209,
-        mid_elements_00b99a423cfc29b8,
-        mid_entrySet_2dfcbd371d62f4e1,
-        mid_equals_221e8e85cb385209,
-        mid_get_65d69db95c5eb156,
-        mid_getOrDefault_e9b6f8dd03d71e12,
-        mid_hashCode_412668abc8d889e9,
-        mid_isEmpty_89b302893bdbe1f1,
-        mid_keySet_2dfcbd371d62f4e1,
-        mid_keys_00b99a423cfc29b8,
-        mid_put_e9b6f8dd03d71e12,
-        mid_putAll_6ba01303bcce0307,
-        mid_putIfAbsent_e9b6f8dd03d71e12,
-        mid_remove_65d69db95c5eb156,
-        mid_remove_5f964797772d10ff,
-        mid_replace_e9b6f8dd03d71e12,
-        mid_replace_5c8006f3f1f9c96f,
-        mid_size_412668abc8d889e9,
-        mid_toString_3cffd47377eca18a,
-        mid_values_12ee61573a18f417,
-        mid_rehash_0640e6acf969ed28,
+        mid_init$_a1fa5dae97ea5ed2,
+        mid_init$_44ed599e93e8a30c,
+        mid_init$_6648520b18d8ef1d,
+        mid_init$_71c8ec50293ab209,
+        mid_clear_a1fa5dae97ea5ed2,
+        mid_clone_541690f9ee81d3ad,
+        mid_contains_460c5e2d9d51c6cc,
+        mid_containsKey_460c5e2d9d51c6cc,
+        mid_containsValue_460c5e2d9d51c6cc,
+        mid_elements_57aeac8743844cd2,
+        mid_entrySet_7e8f11dd23d1142c,
+        mid_equals_460c5e2d9d51c6cc,
+        mid_get_5804c890f94a02b6,
+        mid_getOrDefault_2329cf24e33e570d,
+        mid_hashCode_55546ef6a647f39b,
+        mid_isEmpty_9ab94ac1dc23b105,
+        mid_keySet_7e8f11dd23d1142c,
+        mid_keys_57aeac8743844cd2,
+        mid_put_2329cf24e33e570d,
+        mid_putAll_6648520b18d8ef1d,
+        mid_putIfAbsent_2329cf24e33e570d,
+        mid_remove_5804c890f94a02b6,
+        mid_remove_b13624253707cc45,
+        mid_replace_2329cf24e33e570d,
+        mid_replace_9e90e99288cb1520,
+        mid_size_55546ef6a647f39b,
+        mid_toString_1c1fa1e935d6cdcf,
+        mid_values_cb666ea1a15f5210,
+        mid_rehash_a1fa5dae97ea5ed2,
         max_mid
       };
 

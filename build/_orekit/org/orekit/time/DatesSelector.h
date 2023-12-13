@@ -3,19 +3,19 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
   }
 }
 template<class T> class JArray;
@@ -27,7 +27,7 @@ namespace org {
       class DatesSelector : public ::java::lang::Object {
        public:
         enum {
-          mid_selectDates_c5683b8e06424542,
+          mid_selectDates_50850a0bb1306a34,
           max_mid
         };
 

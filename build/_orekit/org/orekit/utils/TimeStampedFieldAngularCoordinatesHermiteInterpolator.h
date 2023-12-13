@@ -3,16 +3,16 @@
 
 #include "org/orekit/time/AbstractFieldTimeInterpolator.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace utils {
       class AngularDerivativesFilter;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,12 +24,12 @@ namespace org {
       class TimeStampedFieldAngularCoordinatesHermiteInterpolator : public ::org::orekit::time::AbstractFieldTimeInterpolator {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_init$_a3da1a935cb37f7b,
-          mid_init$_8d65f6d089410d57,
-          mid_init$_a97116b9f853f824,
-          mid_getFilter_c2e9b2b1c0db39b3,
-          mid_interpolate_6a1647523266017e,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_init$_44ed599e93e8a30c,
+          mid_init$_b6d0b49c4659d5f2,
+          mid_init$_84faa23834a0f7e9,
+          mid_getFilter_33d67d456ec94a0c,
+          mid_interpolate_87169f0715901448,
           max_mid
         };
 

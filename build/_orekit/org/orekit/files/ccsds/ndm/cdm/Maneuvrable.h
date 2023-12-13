@@ -3,12 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -20,6 +14,12 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,11 +34,11 @@ namespace org {
             class Maneuvrable : public ::java::lang::Enum {
              public:
               enum {
-                mid_getEnum_a5c030f165f63ebf,
-                mid_getValue_3cffd47377eca18a,
-                mid_toString_3cffd47377eca18a,
-                mid_valueOf_a5c030f165f63ebf,
-                mid_values_451781cf4dc785fe,
+                mid_getEnum_c48bbcf271102c5c,
+                mid_getValue_1c1fa1e935d6cdcf,
+                mid_toString_1c1fa1e935d6cdcf,
+                mid_valueOf_c48bbcf271102c5c,
+                mid_values_2ccb0c302483ecc6,
                 max_mid
               };
 

@@ -18,8 +18,8 @@ namespace org {
         class DumpReplayer$Result : public ::java::lang::Object {
          public:
           enum {
-            mid_getExpected_e661fe3ba2fafb22,
-            mid_getReplayed_e661fe3ba2fafb22,
+            mid_getExpected_541690f9ee81d3ad,
+            mid_getReplayed_541690f9ee81d3ad,
             max_mid
           };
 

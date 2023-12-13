@@ -43,9 +43,9 @@ namespace org {
               class AcmDataSubStructureKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_318bdda3c4276f03,
-                  mid_valueOf_6e5812972d939fcb,
-                  mid_values_706b0ea4d837aa33,
+                  mid_process_9b81d444de082020,
+                  mid_valueOf_e4a074e8d208268f,
+                  mid_values_82b62fb529b8e06e,
                   max_mid
                 };
 

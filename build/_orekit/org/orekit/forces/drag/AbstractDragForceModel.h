@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace forces {
       class ForceModel;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,13 +25,13 @@ namespace org {
         class AbstractDragForceModel : public ::java::lang::Object {
          public:
           enum {
-            mid_dependsOnPositionOnly_89b302893bdbe1f1,
-            mid_isVariable_671750bd736baae4,
-            mid_isVariable_f16a8b8a0c3e99f0,
-            mid_isGradientStateDerivative_4fda3059ab91dbfe,
-            mid_getGradientDensityWrtStateUsingFiniteDifferences_e6db39fb1a2970fb,
-            mid_isDSStateDerivative_4fda3059ab91dbfe,
-            mid_getDSDensityWrtStateUsingFiniteDifferences_8ec02c77a9188017,
+            mid_dependsOnPositionOnly_9ab94ac1dc23b105,
+            mid_isVariable_cb8809386317d9d1,
+            mid_isVariable_e694c750b6d47f11,
+            mid_isDSStateDerivative_e6d9e841ca2e035c,
+            mid_isGradientStateDerivative_e6d9e841ca2e035c,
+            mid_getDSDensityWrtStateUsingFiniteDifferences_f0f464f712250667,
+            mid_getGradientDensityWrtStateUsingFiniteDifferences_ef723df1fde38524,
             max_mid
           };
 

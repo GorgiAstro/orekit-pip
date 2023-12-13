@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace linear {
       class FieldMatrix;
       class FieldDecompositionSolver;
     }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -26,15 +26,15 @@ namespace org {
       class FieldQRDecomposition : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_33e6ddbf6bb140a5,
-          mid_init$_d4fad8a5c8b974bd,
-          mid_getH_1d6b27621d7bea96,
-          mid_getQ_1d6b27621d7bea96,
-          mid_getQT_1d6b27621d7bea96,
-          mid_getR_1d6b27621d7bea96,
-          mid_getSolver_a465c42b6ee7c97a,
-          mid_decompose_d1783084d145e9ca,
-          mid_performHouseholderReflection_568124237407ef5b,
+          mid_init$_3c04247304967ec8,
+          mid_init$_f4b7eb9fa427ae68,
+          mid_getH_81d49643ce3a3c0b,
+          mid_getQ_81d49643ce3a3c0b,
+          mid_getQT_81d49643ce3a3c0b,
+          mid_getR_81d49643ce3a3c0b,
+          mid_getSolver_61721a02c0d2f3a9,
+          mid_decompose_f3f5764495a272b1,
+          mid_performHouseholderReflection_d5ea180418cdb6e6,
           max_mid
         };
 

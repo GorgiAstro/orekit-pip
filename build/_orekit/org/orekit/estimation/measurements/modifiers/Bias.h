@@ -3,21 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class ObservedMeasurement;
-        class EstimatedMeasurement;
-        class EstimatedMeasurementBase;
-        class EstimationModifier;
-      }
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -25,6 +10,21 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class EstimationModifier;
+        class EstimatedMeasurementBase;
+        class ObservedMeasurement;
+        class EstimatedMeasurement;
+      }
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
   }
 }
 template<class T> class JArray;
@@ -38,10 +38,10 @@ namespace org {
           class Bias : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_bb21d3aa0a3a1674,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_modify_0054a497255e8220,
-              mid_modifyWithoutDerivatives_e471490df8741b73,
+              mid_init$_bcdc5583e798238f,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_modify_f784f7724d44a90a,
+              mid_modifyWithoutDerivatives_308087fabc1d7f66,
               max_mid
             };
 

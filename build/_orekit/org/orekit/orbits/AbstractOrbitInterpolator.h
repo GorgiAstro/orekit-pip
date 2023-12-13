@@ -13,14 +13,14 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace orbits {
+      class Orbit;
+    }
     namespace frames {
       class Frame;
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace orbits {
-      class Orbit;
     }
   }
 }
@@ -33,10 +33,10 @@ namespace org {
       class AbstractOrbitInterpolator : public ::org::orekit::time::AbstractTimeInterpolator {
        public:
         enum {
-          mid_init$_fc65bf318d004af6,
-          mid_checkOrbitsConsistency_3abde0be9b9c9773,
-          mid_getOutputInertialFrame_6c9bc0a928c56d4e,
-          mid_interpolate_5e9e8aa4ef832981,
+          mid_init$_5b6571101ec263f4,
+          mid_checkOrbitsConsistency_7d8f123763cd893c,
+          mid_getOutputInertialFrame_2c51111cc6894ba1,
+          mid_interpolate_dad08f2bf89e54ab,
           max_mid
         };
 

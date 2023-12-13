@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class AbsoluteDate;
       class TimeStamped;
+      class AbsoluteDate;
     }
   }
 }
@@ -31,9 +31,9 @@ namespace org {
             class DtcDataLoader$LineParameters : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_f22bef3f7be90029,
-                mid_getDSTDTC_557b8123390d8d0c,
-                mid_getDate_7a97f7e149e79afb,
+                mid_init$_3dd4638451e09a7f,
+                mid_getDSTDTC_b74f83833fdad017,
+                mid_getDate_c325492395d89b24,
                 max_mid
               };
 

@@ -3,34 +3,34 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+        namespace twod {
+          class Vector2D;
+        }
+      }
+    }
+  }
+  namespace orekit {
+    namespace utils {
+      class TimeStampedPVCoordinates;
+    }
+    namespace frames {
+      class Frame;
+    }
+  }
+}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace twod {
-          class Vector2D;
-        }
-        namespace threed {
-          class Vector3D;
-        }
-      }
-    }
-  }
-  namespace orekit {
-    namespace frames {
-      class Frame;
-    }
-    namespace utils {
-      class TimeStampedPVCoordinates;
-    }
   }
 }
 template<class T> class JArray;
@@ -42,19 +42,19 @@ namespace org {
       class Ellipse : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_ce1f0f7b19db1321,
-          mid_getA_557b8123390d8d0c,
-          mid_getB_557b8123390d8d0c,
-          mid_getCenter_f88961cca75a2c0a,
-          mid_getCenterOfCurvature_990490e7ef486e74,
-          mid_getFrame_6c9bc0a928c56d4e,
-          mid_getU_f88961cca75a2c0a,
-          mid_getV_f88961cca75a2c0a,
-          mid_pointAt_20de5f9d51c6611f,
-          mid_projectToEllipse_fc4b100c90055253,
-          mid_projectToEllipse_990490e7ef486e74,
-          mid_toPlane_3b3b6a3c97d1f7fa,
-          mid_toSpace_ac3ac1fb666bf55b,
+          mid_init$_62b9ceaa2d203299,
+          mid_getA_b74f83833fdad017,
+          mid_getB_b74f83833fdad017,
+          mid_getCenter_8b724f8b4fdad1a2,
+          mid_getCenterOfCurvature_3e1d04f71eb7f673,
+          mid_getFrame_2c51111cc6894ba1,
+          mid_getU_8b724f8b4fdad1a2,
+          mid_getV_8b724f8b4fdad1a2,
+          mid_pointAt_498f52cd8e5a7072,
+          mid_projectToEllipse_b59fe39c52b8d345,
+          mid_projectToEllipse_3e1d04f71eb7f673,
+          mid_toPlane_9d707d8812de06bd,
+          mid_toSpace_66b5e411a7caffe0,
           max_mid
         };
 

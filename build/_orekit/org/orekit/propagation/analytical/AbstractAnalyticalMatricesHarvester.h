@@ -3,6 +3,26 @@
 
 #include "org/orekit/propagation/AbstractMatricesHarvester.h"
 
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      class AdditionalStateProvider;
+      namespace analytical {
+        class AbstractAnalyticalGradientConverter;
+      }
+      class SpacecraftState;
+    }
+    namespace orbits {
+      class PositionAngleType;
+      class OrbitType;
+    }
+  }
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,26 +30,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace orbits {
-      class OrbitType;
-      class PositionAngleType;
-    }
-    namespace propagation {
-      namespace analytical {
-        class AbstractAnalyticalGradientConverter;
-      }
-      class SpacecraftState;
-      class AdditionalStateProvider;
-    }
-  }
-  namespace hipparchus {
-    namespace linear {
-      class RealMatrix;
-    }
   }
 }
 template<class T> class JArray;
@@ -42,16 +42,16 @@ namespace org {
         class AbstractAnalyticalMatricesHarvester : public ::org::orekit::propagation::AbstractMatricesHarvester {
          public:
           enum {
-            mid_freezeColumnsNames_0640e6acf969ed28,
-            mid_getAdditionalState_2a145999b8c9a41d,
-            mid_getGradientConverter_ad82abd02e8e26ae,
-            mid_getJacobiansColumnsNames_0d9551367f7ecdef,
-            mid_getName_3cffd47377eca18a,
-            mid_getOrbitType_2cea2a2cb3e02091,
-            mid_getParametersJacobian_fc9cdfa83c55d6b2,
-            mid_getPositionAngleType_f4984aee71df4c19,
-            mid_getStateTransitionMatrix_fc9cdfa83c55d6b2,
-            mid_setReferenceState_8655761ebf04b503,
+            mid_freezeColumnsNames_a1fa5dae97ea5ed2,
+            mid_getAdditionalState_f227e5f48720b798,
+            mid_getGradientConverter_3c9b6f24c90a46d6,
+            mid_getJacobiansColumnsNames_e62d3bb06d56d7e3,
+            mid_getName_1c1fa1e935d6cdcf,
+            mid_getOrbitType_c7d4737d7afca612,
+            mid_getParametersJacobian_b7aa5791b069a41f,
+            mid_getPositionAngleType_c25055891f180348,
+            mid_getStateTransitionMatrix_b7aa5791b069a41f,
+            mid_setReferenceState_280c3390961e0a50,
             max_mid
           };
 

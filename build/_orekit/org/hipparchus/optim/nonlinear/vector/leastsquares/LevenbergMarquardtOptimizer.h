@@ -9,10 +9,10 @@ namespace org {
       namespace nonlinear {
         namespace vector {
           namespace leastsquares {
-            class LeastSquaresOptimizer;
             class LeastSquaresOptimizer$Optimum;
-            class LeastSquaresProblem;
             class LevenbergMarquardtOptimizer;
+            class LeastSquaresOptimizer;
+            class LeastSquaresProblem;
           }
         }
       }
@@ -36,19 +36,19 @@ namespace org {
             class LevenbergMarquardtOptimizer : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0640e6acf969ed28,
-                mid_init$_348987770fc6c791,
-                mid_getCostRelativeTolerance_557b8123390d8d0c,
-                mid_getInitialStepBoundFactor_557b8123390d8d0c,
-                mid_getOrthoTolerance_557b8123390d8d0c,
-                mid_getParameterRelativeTolerance_557b8123390d8d0c,
-                mid_getRankingThreshold_557b8123390d8d0c,
-                mid_optimize_07184cacaaa6a451,
-                mid_withCostRelativeTolerance_aaab0b2a95bd4fc0,
-                mid_withInitialStepBoundFactor_aaab0b2a95bd4fc0,
-                mid_withOrthoTolerance_aaab0b2a95bd4fc0,
-                mid_withParameterRelativeTolerance_aaab0b2a95bd4fc0,
-                mid_withRankingThreshold_aaab0b2a95bd4fc0,
+                mid_init$_a1fa5dae97ea5ed2,
+                mid_init$_aeb39721bc4af7d2,
+                mid_getCostRelativeTolerance_b74f83833fdad017,
+                mid_getInitialStepBoundFactor_b74f83833fdad017,
+                mid_getOrthoTolerance_b74f83833fdad017,
+                mid_getParameterRelativeTolerance_b74f83833fdad017,
+                mid_getRankingThreshold_b74f83833fdad017,
+                mid_optimize_b4aa3e5bf3a16dc8,
+                mid_withCostRelativeTolerance_0e4d538b02151a51,
+                mid_withInitialStepBoundFactor_0e4d538b02151a51,
+                mid_withOrthoTolerance_0e4d538b02151a51,
+                mid_withParameterRelativeTolerance_0e4d538b02151a51,
+                mid_withRankingThreshold_0e4d538b02151a51,
                 max_mid
               };
 

@@ -3,25 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ccsds {
-        namespace utils {
-          namespace lexical {
-            class ParseToken;
-            class XmlTokenBuilder;
-            class MessageParser;
-          }
-          class FileFormat;
-        }
-      }
-    }
-    namespace data {
-      class DataSource;
-    }
-  }
-}
 namespace java {
   namespace util {
     class Map;
@@ -30,6 +11,25 @@ namespace java {
     class Throwable;
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace data {
+      class DataSource;
+    }
+    namespace files {
+      namespace ccsds {
+        namespace utils {
+          namespace lexical {
+            class XmlTokenBuilder;
+            class ParseToken;
+            class MessageParser;
+          }
+          class FileFormat;
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -44,18 +44,18 @@ namespace org {
             class PythonMessageParser : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0640e6acf969ed28,
-                mid_build_e661fe3ba2fafb22,
-                mid_finalize_0640e6acf969ed28,
-                mid_getFileFormat_c3a4c5f37e67a25e,
-                mid_getFormatVersionKey_3cffd47377eca18a,
-                mid_getSpecialXmlElementsBuilders_1e62c2f73fbdd1c4,
-                mid_parseMessage_850ca290e1713a38,
-                mid_process_1eac6345cb6bda02,
-                mid_pythonDecRef_0640e6acf969ed28,
-                mid_pythonExtension_9e26256fb0d384a2,
-                mid_pythonExtension_3cd6a6b354c6aa22,
-                mid_reset_a580586827f4ec13,
+                mid_init$_a1fa5dae97ea5ed2,
+                mid_build_541690f9ee81d3ad,
+                mid_finalize_a1fa5dae97ea5ed2,
+                mid_getFileFormat_e4c64bde02ca34c3,
+                mid_getFormatVersionKey_1c1fa1e935d6cdcf,
+                mid_getSpecialXmlElementsBuilders_810bed48fafb0b9a,
+                mid_parseMessage_653fe7fd2fcbf113,
+                mid_process_19d473d3b0277de6,
+                mid_pythonDecRef_a1fa5dae97ea5ed2,
+                mid_pythonExtension_6c0ce7e438e5ded4,
+                mid_pythonExtension_3d7dd2314a0dd456,
+                mid_reset_28163d47221b3cf7,
                 max_mid
               };
 

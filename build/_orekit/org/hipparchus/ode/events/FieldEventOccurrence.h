@@ -6,10 +6,10 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
-      class FieldODEState;
       namespace events {
         class Action;
       }
+      class FieldODEState;
     }
     class CalculusFieldElement;
   }
@@ -29,10 +29,10 @@ namespace org {
         class FieldEventOccurrence : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_f5fc17a229c6925f,
-            mid_getAction_2ecf57a2edb373ef,
-            mid_getNewState_f6fb52dfb87d3553,
-            mid_getStopTime_613c8f46c659f636,
+            mid_init$_01ca61c1289311a5,
+            mid_getAction_0afc8c14772bbac8,
+            mid_getNewState_fa7b8b5f8bf2a1ec,
+            mid_getStopTime_81520b552cb3fa26,
             max_mid
           };
 

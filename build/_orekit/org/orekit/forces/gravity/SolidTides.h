@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
@@ -17,34 +17,34 @@ namespace org {
     class CalculusFieldElement;
   }
   namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-      namespace events {
-        class EventDetector;
-        class FieldEventDetector;
-      }
-      class SpacecraftState;
-    }
-    namespace bodies {
-      class CelestialBody;
+    namespace utils {
+      class IERSConventions;
+      class ParameterDriver;
     }
     namespace forces {
+      class ForceModel;
       namespace gravity {
         namespace potential {
           class TideSystem;
         }
       }
-      class ForceModel;
     }
-    namespace utils {
-      class ParameterDriver;
-      class IERSConventions;
+    namespace propagation {
+      class FieldSpacecraftState;
+      namespace events {
+        class FieldEventDetector;
+        class EventDetector;
+      }
+      class SpacecraftState;
     }
     namespace time {
       class UT1Scale;
     }
     namespace frames {
       class Frame;
+    }
+    namespace bodies {
+      class CelestialBody;
     }
   }
 }
@@ -69,14 +69,14 @@ namespace org {
         class SolidTides : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_dc6d7777df2d1607,
-            mid_init$_38f73b113c0a4fc1,
-            mid_acceleration_61944e27a39e8290,
-            mid_acceleration_b61fb59a041240c6,
-            mid_dependsOnPositionOnly_89b302893bdbe1f1,
-            mid_getEventDetectors_d7cce92225eb0db2,
-            mid_getFieldEventDetectors_8130af76f6998f44,
-            mid_getParametersDrivers_0d9551367f7ecdef,
+            mid_init$_273da68e0002e582,
+            mid_init$_ebc119cf1633fa6f,
+            mid_acceleration_0ce449c67b5ffd9c,
+            mid_acceleration_20bded0292328743,
+            mid_dependsOnPositionOnly_9ab94ac1dc23b105,
+            mid_getEventDetectors_14e21bf777ff0ccf,
+            mid_getFieldEventDetectors_283ad33581c047a0,
+            mid_getParametersDrivers_e62d3bb06d56d7e3,
             max_mid
           };
 
@@ -97,8 +97,8 @@ namespace org {
           SolidTides(const ::org::orekit::frames::Frame &, jdouble, jdouble, const ::org::orekit::forces::gravity::potential::TideSystem &, const ::org::orekit::utils::IERSConventions &, const ::org::orekit::time::UT1Scale &, const JArray< ::org::orekit::bodies::CelestialBody > &);
           SolidTides(const ::org::orekit::frames::Frame &, jdouble, jdouble, const ::org::orekit::forces::gravity::potential::TideSystem &, jboolean, jdouble, jint, const ::org::orekit::utils::IERSConventions &, const ::org::orekit::time::UT1Scale &, const JArray< ::org::orekit::bodies::CelestialBody > &);
 
-          ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
           ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
+          ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
           jboolean dependsOnPositionOnly() const;
           ::java::util::stream::Stream getEventDetectors() const;
           ::java::util::stream::Stream getFieldEventDetectors(const ::org::hipparchus::Field &) const;

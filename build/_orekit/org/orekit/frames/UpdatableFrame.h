@@ -29,9 +29,9 @@ namespace org {
       class UpdatableFrame : public ::org::orekit::frames::Frame {
        public:
         enum {
-          mid_init$_d8cb329c586d12d2,
-          mid_init$_616b39805dc3fd53,
-          mid_updateTransform_631fbf5c95997550,
+          mid_init$_c6446c6a66066a58,
+          mid_init$_9ce69abbd2d1e9a2,
+          mid_updateTransform_4bab67e94de5451c,
           max_mid
         };
 

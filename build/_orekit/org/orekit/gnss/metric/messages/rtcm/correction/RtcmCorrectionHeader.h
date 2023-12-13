@@ -34,21 +34,21 @@ namespace org {
               class RtcmCorrectionHeader : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_0640e6acf969ed28,
-                  mid_getEpochTime1s_557b8123390d8d0c,
-                  mid_getIodSsr_412668abc8d889e9,
-                  mid_getMultipleMessageIndicator_412668abc8d889e9,
-                  mid_getNumberOfSatellites_412668abc8d889e9,
-                  mid_getSsrProviderId_412668abc8d889e9,
-                  mid_getSsrSolutionId_412668abc8d889e9,
-                  mid_getSsrUpdateInterval_bdb56644ae226ace,
-                  mid_setEpochTime1s_10f281d777284cea,
-                  mid_setIodSsr_a3da1a935cb37f7b,
-                  mid_setMultipleMessageIndicator_a3da1a935cb37f7b,
-                  mid_setNumberOfSatellites_a3da1a935cb37f7b,
-                  mid_setSsrProviderId_a3da1a935cb37f7b,
-                  mid_setSsrSolutionId_a3da1a935cb37f7b,
-                  mid_setSsrUpdateInterval_ea1bc450da024121,
+                  mid_init$_a1fa5dae97ea5ed2,
+                  mid_getEpochTime1s_b74f83833fdad017,
+                  mid_getIodSsr_55546ef6a647f39b,
+                  mid_getMultipleMessageIndicator_55546ef6a647f39b,
+                  mid_getNumberOfSatellites_55546ef6a647f39b,
+                  mid_getSsrProviderId_55546ef6a647f39b,
+                  mid_getSsrSolutionId_55546ef6a647f39b,
+                  mid_getSsrUpdateInterval_e95bdd4f78fe76e4,
+                  mid_setEpochTime1s_8ba9fe7a847cecad,
+                  mid_setIodSsr_44ed599e93e8a30c,
+                  mid_setMultipleMessageIndicator_44ed599e93e8a30c,
+                  mid_setNumberOfSatellites_44ed599e93e8a30c,
+                  mid_setSsrProviderId_44ed599e93e8a30c,
+                  mid_setSsrSolutionId_44ed599e93e8a30c,
+                  mid_setSsrUpdateInterval_729bbcfae2c9c3bb,
                   max_mid
                 };
 

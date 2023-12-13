@@ -31,7 +31,7 @@ namespace org {
         class AttitudeEphemerisFile : public ::java::lang::Object {
          public:
           enum {
-            mid_getSatellites_1e62c2f73fbdd1c4,
+            mid_getSatellites_810bed48fafb0b9a,
             max_mid
           };
 

@@ -6,15 +6,15 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      namespace enclosing {
-        class SupportBallGenerator;
-        class EnclosingBall;
-      }
       namespace euclidean {
         namespace threed {
           class Vector3D;
           class Euclidean3D;
         }
+      }
+      namespace enclosing {
+        class EnclosingBall;
+        class SupportBallGenerator;
       }
     }
   }
@@ -38,8 +38,8 @@ namespace org {
           class SphereGenerator : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_ballOnSupport_7c06e55e72f854ed,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_ballOnSupport_1093dd6e31c1164f,
               max_mid
             };
 

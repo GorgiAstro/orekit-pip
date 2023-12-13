@@ -5,9 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace stat {
       namespace descriptive {
         namespace moment {
@@ -15,6 +12,9 @@ namespace org {
           class SecondMoment;
         }
       }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -37,20 +37,20 @@ namespace org {
           class StandardDeviation : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_init$_b42241ac9de9fb3c,
-              mid_init$_ed2afdb8506b9742,
-              mid_init$_466cd392a0f97ab1,
-              mid_clear_0640e6acf969ed28,
-              mid_copy_7712cb22347034aa,
-              mid_evaluate_05f591cf0826202b,
-              mid_evaluate_9eeeb1ae977f525d,
-              mid_evaluate_134920ed0a3e958a,
-              mid_getN_9e26256fb0d384a2,
-              mid_getResult_557b8123390d8d0c,
-              mid_increment_10f281d777284cea,
-              mid_isBiasCorrected_89b302893bdbe1f1,
-              mid_withBiasCorrection_31819963ee766f94,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_init$_b3f951b64db17420,
+              mid_init$_fcb96c98de6fad04,
+              mid_init$_22c546af386a65f5,
+              mid_clear_a1fa5dae97ea5ed2,
+              mid_copy_8159df5c2270dba4,
+              mid_evaluate_79e4db9e1e3d84c9,
+              mid_evaluate_1567a80062adb31b,
+              mid_evaluate_f09b11d2a075df86,
+              mid_getN_6c0ce7e438e5ded4,
+              mid_getResult_b74f83833fdad017,
+              mid_increment_8ba9fe7a847cecad,
+              mid_isBiasCorrected_9ab94ac1dc23b105,
+              mid_withBiasCorrection_0810dcb67b9fc23a,
               max_mid
             };
 

@@ -4,18 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class FieldVector3D;
-          class Vector3D;
-        }
-      }
-    }
-    class CalculusFieldElement;
-    class Field;
-  }
   namespace orekit {
     namespace propagation {
       namespace numerical {
@@ -25,6 +13,9 @@ namespace org {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
+    namespace forces {
+      class ForceModel;
+    }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
@@ -32,9 +23,18 @@ namespace org {
     namespace utils {
       class ParameterDriver;
     }
-    namespace forces {
-      class ForceModel;
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+          class FieldVector3D;
+        }
+      }
     }
+    class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -56,15 +56,15 @@ namespace org {
         class NewtonianAttraction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_10f281d777284cea,
-            mid_acceleration_b61fb59a041240c6,
-            mid_acceleration_61944e27a39e8290,
-            mid_addContribution_0f28031d74393af0,
-            mid_addContribution_9ecc165cc3358de0,
-            mid_dependsOnPositionOnly_89b302893bdbe1f1,
-            mid_getMu_b0b988f941da47d8,
-            mid_getMu_81cbf1832c7c6864,
-            mid_getParametersDrivers_0d9551367f7ecdef,
+            mid_init$_8ba9fe7a847cecad,
+            mid_acceleration_0ce449c67b5ffd9c,
+            mid_acceleration_20bded0292328743,
+            mid_addContribution_6aa2b69cacacea60,
+            mid_addContribution_ab5e59960ebc27c2,
+            mid_dependsOnPositionOnly_9ab94ac1dc23b105,
+            mid_getMu_fd347811007a6ba3,
+            mid_getMu_e85ef2b890908344,
+            mid_getParametersDrivers_e62d3bb06d56d7e3,
             max_mid
           };
 

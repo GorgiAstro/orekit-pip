@@ -14,17 +14,6 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace bodies {
-      class GeodeticPoint;
-      class FieldGeodeticPoint;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace models {
       namespace earth {
         namespace troposphere {
@@ -33,8 +22,19 @@ namespace org {
         }
       }
     }
+    namespace bodies {
+      class FieldGeodeticPoint;
+      class GeodeticPoint;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
     namespace data {
       class DataProvidersManager;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
   namespace hipparchus {
@@ -52,13 +52,13 @@ namespace org {
           class FixedTroposphericDelay : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_f5ffdf29129ef90a,
-              mid_init$_28c7bdc075bb74e8,
-              mid_init$_fa8d638c79b33265,
-              mid_getDefaultModel_f6291ba3968b7789,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_pathDelay_a4fdd877b349d4a6,
-              mid_pathDelay_129678f244f63094,
+              mid_init$_734b91ac30d5f9b4,
+              mid_init$_0343d25c5af74eca,
+              mid_init$_3f7c4bf9d0d94a6c,
+              mid_getDefaultModel_7073151b6b851b50,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_pathDelay_6f66c6b7094d6f08,
+              mid_pathDelay_2edbfa177156ee09,
               max_mid
             };
 

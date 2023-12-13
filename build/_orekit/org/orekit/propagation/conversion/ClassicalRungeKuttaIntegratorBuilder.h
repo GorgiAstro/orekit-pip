@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace orbits {
-      class OrbitType;
       class Orbit;
+      class OrbitType;
     }
     namespace propagation {
       namespace conversion {
@@ -36,8 +36,8 @@ namespace org {
         class ClassicalRungeKuttaIntegratorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_10f281d777284cea,
-            mid_buildIntegrator_f50d555477b898d8,
+            mid_init$_8ba9fe7a847cecad,
+            mid_buildIntegrator_916fa199ca08d656,
             max_mid
           };
 

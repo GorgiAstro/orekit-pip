@@ -26,8 +26,8 @@ namespace org {
         class HatanakaCompressFilter : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_filter_d33f4b0b3a1030ad,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_filter_bbc30294b1b0b691,
             max_mid
           };
 

@@ -8,37 +8,37 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
     class CalculusFieldElement;
   }
   namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
-    }
     namespace forces {
+      class ForceModel;
       namespace gravity {
         namespace potential {
+          class NormalizedSphericalHarmonicsProvider;
           class TideSystemProvider;
           class TideSystem;
-          class NormalizedSphericalHarmonicsProvider;
         }
       }
-      class ForceModel;
     }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
     }
+    namespace frames {
+      class Frame;
+    }
     namespace utils {
       class ParameterDriver;
     }
-    namespace frames {
-      class Frame;
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
     }
   }
 }
@@ -60,18 +60,18 @@ namespace org {
         class HolmesFeatherstoneAttractionModel : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_cb3e6c602ff511eb,
-            mid_acceleration_b61fb59a041240c6,
-            mid_acceleration_61944e27a39e8290,
-            mid_dependsOnPositionOnly_89b302893bdbe1f1,
-            mid_getMu_557b8123390d8d0c,
-            mid_getMu_b0b988f941da47d8,
-            mid_getParametersDrivers_0d9551367f7ecdef,
-            mid_getTideSystem_7d9a2a298dcb49fa,
-            mid_gradient_67cb4b664c333873,
-            mid_gradient_e6b613f6a8d3aa0e,
-            mid_nonCentralPart_53ff1fab7c351985,
-            mid_value_53ff1fab7c351985,
+            mid_init$_bb1db3646718fb67,
+            mid_acceleration_0ce449c67b5ffd9c,
+            mid_acceleration_20bded0292328743,
+            mid_dependsOnPositionOnly_9ab94ac1dc23b105,
+            mid_getMu_b74f83833fdad017,
+            mid_getMu_fd347811007a6ba3,
+            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_getTideSystem_b2b14af197a8eaf6,
+            mid_gradient_35fa29941c7f6542,
+            mid_gradient_8b9044e5f4efdb74,
+            mid_nonCentralPart_f361b0df99f3dc75,
+            mid_value_f361b0df99f3dc75,
             max_mid
           };
 

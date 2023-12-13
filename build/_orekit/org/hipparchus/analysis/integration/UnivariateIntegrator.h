@@ -6,9 +6,9 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathIllegalArgumentException;
       class NullArgumentException;
       class MathIllegalStateException;
+      class MathIllegalArgumentException;
     }
     namespace analysis {
       class UnivariateFunction;
@@ -30,13 +30,13 @@ namespace org {
         class UnivariateIntegrator : public ::java::lang::Object {
          public:
           enum {
-            mid_getAbsoluteAccuracy_557b8123390d8d0c,
-            mid_getEvaluations_412668abc8d889e9,
-            mid_getIterations_412668abc8d889e9,
-            mid_getMaximalIterationCount_412668abc8d889e9,
-            mid_getMinimalIterationCount_412668abc8d889e9,
-            mid_getRelativeAccuracy_557b8123390d8d0c,
-            mid_integrate_277b266ef2505d2d,
+            mid_getAbsoluteAccuracy_b74f83833fdad017,
+            mid_getEvaluations_55546ef6a647f39b,
+            mid_getIterations_55546ef6a647f39b,
+            mid_getMaximalIterationCount_55546ef6a647f39b,
+            mid_getMinimalIterationCount_55546ef6a647f39b,
+            mid_getRelativeAccuracy_b74f83833fdad017,
+            mid_integrate_076ce9f904fe1577,
             max_mid
           };
 

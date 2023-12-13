@@ -29,11 +29,11 @@ namespace org {
         class EventSlopeFilter : public ::org::hipparchus::ode::events::AbstractODEDetector {
          public:
           enum {
-            mid_init$_a1c678be6043be8d,
-            mid_g_4a3e96b6f1af9d91,
-            mid_getDetector_4e8fbf7207a2f82a,
-            mid_init_7e69c83de8052a2b,
-            mid_create_7b8a81f21fec5a65,
+            mid_init$_333967efab539499,
+            mid_g_038ef328b98483a2,
+            mid_getDetector_4cf067cf8dc74d67,
+            mid_init_a7556bd72cab73f1,
+            mid_create_c25ec5db10655848,
             max_mid
           };
 

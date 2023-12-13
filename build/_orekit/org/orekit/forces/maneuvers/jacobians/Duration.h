@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace propagation {
-      class SpacecraftState;
       class AdditionalStateProvider;
+      class SpacecraftState;
     }
   }
 }
@@ -28,10 +28,10 @@ namespace org {
           class Duration : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_f5c244a0f15376be,
-              mid_getAdditionalState_2a145999b8c9a41d,
-              mid_getName_3cffd47377eca18a,
-              mid_yields_abdf3beb789bbd4e,
+              mid_init$_ee9345b4af8c40df,
+              mid_getAdditionalState_f227e5f48720b798,
+              mid_getName_1c1fa1e935d6cdcf,
+              mid_yields_97df9017614a1945,
               max_mid
             };
 

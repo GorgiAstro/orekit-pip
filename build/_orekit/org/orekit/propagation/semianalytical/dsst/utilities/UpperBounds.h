@@ -3,14 +3,14 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,10 +25,10 @@ namespace org {
             class UpperBounds : public ::java::lang::Object {
              public:
               enum {
-                mid_getDnl_371a292f2bee3e78,
-                mid_getDnl_7f3419f66cc4ac78,
-                mid_getRnml_49754d423a4d6db5,
-                mid_getRnml_b3b8a2f485300a3f,
+                mid_getDnl_d25194b4f827d7c5,
+                mid_getDnl_34b1c27dc860e066,
+                mid_getRnml_afb4449d3b8211f3,
+                mid_getRnml_079d686a67b20272,
                 max_mid
               };
 

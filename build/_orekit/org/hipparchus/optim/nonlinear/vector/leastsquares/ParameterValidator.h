@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace linear {
       class RealVector;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,7 +27,7 @@ namespace org {
             class ParameterValidator : public ::java::lang::Object {
              public:
               enum {
-                mid_validate_342d5b01463e0dc5,
+                mid_validate_d5f1d017fd25113b,
                 max_mid
               };
 

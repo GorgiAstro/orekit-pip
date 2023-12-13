@@ -3,19 +3,19 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+  }
+}
 namespace java {
   namespace lang {
     class Class;
   }
   namespace io {
     class Serializable;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
   }
 }
 template<class T> class JArray;
@@ -28,11 +28,11 @@ namespace org {
         class GridAxis : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_3496521775f3fd31,
-            mid_getN_412668abc8d889e9,
-            mid_interpolationIndex_abbeb9db7144ca23,
-            mid_node_69cfb132c661aca4,
-            mid_size_412668abc8d889e9,
+            mid_init$_d15a39e204aa8e61,
+            mid_getN_55546ef6a647f39b,
+            mid_interpolationIndex_2af4736545087009,
+            mid_node_2afcbc21f4e57ab2,
+            mid_size_55546ef6a647f39b,
             max_mid
           };
 

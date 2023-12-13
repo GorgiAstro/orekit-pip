@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class TimeStampedFieldPVCoordinates;
-      class PVCoordinatesProvider;
-      class FieldPVCoordinatesProvider;
-      class TimeStampedPVCoordinates;
-    }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
+    }
+    namespace utils {
+      class TimeStampedPVCoordinates;
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
+      class TimeStampedFieldPVCoordinates;
     }
     namespace frames {
       class Frame;
@@ -35,13 +35,13 @@ namespace org {
       class PythonGroundPointing : public ::org::orekit::attitudes::GroundPointing {
        public:
         enum {
-          mid_init$_16d9dfdcb9768806,
-          mid_finalize_0640e6acf969ed28,
-          mid_getTargetPV_ee00ab612436435b,
-          mid_getTargetPV_9e0119a6fef31431,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_init$_c2861e84272185b6,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_getTargetPV_0c9a6603286e7c6f,
+          mid_getTargetPV_4a6b199bd28f952f,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
           max_mid
         };
 

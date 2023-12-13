@@ -28,8 +28,8 @@ namespace org {
         class EllipsoidId : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_0d9db86e6ee57f0e,
-            mid_values_3b54e0df6d3693fe,
+            mid_valueOf_c5aee1fe2d2805ec,
+            mid_values_61c42d93d894b6f1,
             max_mid
           };
 

@@ -33,16 +33,16 @@ namespace org {
             class AbstractAlmanac : public ::org::orekit::propagation::analytical::gnss::data::CommonGnssData {
              public:
               enum {
-                mid_init$_427af08acba367ca,
-                mid_getAf2_557b8123390d8d0c,
-                mid_getCic_557b8123390d8d0c,
-                mid_getCis_557b8123390d8d0c,
-                mid_getCrc_557b8123390d8d0c,
-                mid_getCrs_557b8123390d8d0c,
-                mid_getCuc_557b8123390d8d0c,
-                mid_getCus_557b8123390d8d0c,
-                mid_getIDot_557b8123390d8d0c,
-                mid_getMeanMotion_557b8123390d8d0c,
+                mid_init$_2aa803b9073e6a76,
+                mid_getAf2_b74f83833fdad017,
+                mid_getCic_b74f83833fdad017,
+                mid_getCis_b74f83833fdad017,
+                mid_getCrc_b74f83833fdad017,
+                mid_getCrs_b74f83833fdad017,
+                mid_getCuc_b74f83833fdad017,
+                mid_getCus_b74f83833fdad017,
+                mid_getIDot_b74f83833fdad017,
+                mid_getMeanMotion_b74f83833fdad017,
                 max_mid
               };
 

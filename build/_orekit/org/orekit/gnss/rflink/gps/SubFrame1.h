@@ -19,21 +19,21 @@ namespace org {
           class SubFrame1 : public ::org::orekit::gnss::rflink::gps::SubFrame {
            public:
             enum {
-              mid_getAF0_557b8123390d8d0c,
-              mid_getAF1_557b8123390d8d0c,
-              mid_getAF2_557b8123390d8d0c,
-              mid_getCaOrPFlag_412668abc8d889e9,
-              mid_getIODC_412668abc8d889e9,
-              mid_getL2PDataFlag_412668abc8d889e9,
-              mid_getReserved04_412668abc8d889e9,
-              mid_getReserved05_412668abc8d889e9,
-              mid_getReserved06_412668abc8d889e9,
-              mid_getReserved07_412668abc8d889e9,
-              mid_getSvHealth_412668abc8d889e9,
-              mid_getTGD_412668abc8d889e9,
-              mid_getTOC_412668abc8d889e9,
-              mid_getUraIndex_412668abc8d889e9,
-              mid_getWeekNumber_412668abc8d889e9,
+              mid_getAF0_b74f83833fdad017,
+              mid_getAF1_b74f83833fdad017,
+              mid_getAF2_b74f83833fdad017,
+              mid_getCaOrPFlag_55546ef6a647f39b,
+              mid_getIODC_55546ef6a647f39b,
+              mid_getL2PDataFlag_55546ef6a647f39b,
+              mid_getReserved04_55546ef6a647f39b,
+              mid_getReserved05_55546ef6a647f39b,
+              mid_getReserved06_55546ef6a647f39b,
+              mid_getReserved07_55546ef6a647f39b,
+              mid_getSvHealth_55546ef6a647f39b,
+              mid_getTGD_55546ef6a647f39b,
+              mid_getTOC_55546ef6a647f39b,
+              mid_getUraIndex_55546ef6a647f39b,
+              mid_getWeekNumber_55546ef6a647f39b,
               max_mid
             };
 

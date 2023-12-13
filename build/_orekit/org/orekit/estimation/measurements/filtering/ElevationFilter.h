@@ -35,8 +35,8 @@ namespace org {
           class ElevationFilter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_41e1db373f7bd180,
-              mid_filter_87933cc299a70778,
+              mid_init$_32ec6e08b820ba55,
+              mid_filter_5714f5cbb8239657,
               max_mid
             };
 

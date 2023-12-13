@@ -13,12 +13,12 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace optim {
-      class PointValuePair;
-      class OptimizationData;
-    }
     namespace analysis {
       class MultivariateFunction;
+    }
+    namespace optim {
+      class OptimizationData;
+      class PointValuePair;
     }
   }
 }
@@ -34,16 +34,16 @@ namespace org {
             class AbstractSimplex : public ::java::lang::Object {
              public:
               enum {
-                mid_build_cc18240f4a737f14,
-                mid_evaluate_5af60315979aa937,
-                mid_getDimension_412668abc8d889e9,
-                mid_getPoint_c5386e3be8fe4b1f,
-                mid_getPoints_80ecb9f5bff58fab,
-                mid_getSize_412668abc8d889e9,
-                mid_iterate_5af60315979aa937,
-                mid_setPoints_9f3fadcfcf4c9661,
-                mid_setPoint_0be91cb02ac86354,
-                mid_replaceWorstPoint_69d0572cc39ea708,
+                mid_build_ab69da052b88f50c,
+                mid_evaluate_7c5f20de6989de35,
+                mid_getDimension_55546ef6a647f39b,
+                mid_getPoint_e9b1472253148099,
+                mid_getPoints_326f59a2f136a3de,
+                mid_getSize_55546ef6a647f39b,
+                mid_iterate_7c5f20de6989de35,
+                mid_setPoints_69be9412a3623a09,
+                mid_setPoint_0edefa101b8dfd74,
+                mid_replaceWorstPoint_c18bea1c44829a53,
                 max_mid
               };
 

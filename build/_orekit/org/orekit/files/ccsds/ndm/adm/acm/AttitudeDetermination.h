@@ -3,15 +3,6 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -20,9 +11,9 @@ namespace org {
           namespace adm {
             namespace acm {
               class RateElementsType;
-              class AttitudeCovarianceType;
               class AttitudeElementsType;
               class AttitudeDeterminationSensor;
+              class AttitudeCovarianceType;
             }
             class AttitudeEndpoints;
           }
@@ -43,6 +34,15 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -56,35 +56,35 @@ namespace org {
               class AttitudeDetermination : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_0640e6acf969ed28,
-                  mid_addSensor_d19ab97a0ba117d7,
-                  mid_getAttitudeStates_5db4fed82a3253b8,
-                  mid_getCovarianceType_270107b6f5cd254c,
-                  mid_getEndpoints_c66f753ddee38944,
-                  mid_getEulerRotSeq_cd8353278e08930b,
-                  mid_getId_3cffd47377eca18a,
-                  mid_getMethod_da536d3d7c70db0c,
-                  mid_getNbStates_412668abc8d889e9,
-                  mid_getPrevId_3cffd47377eca18a,
-                  mid_getRateProcessNoiseStdDev_557b8123390d8d0c,
-                  mid_getRateStates_232ed199566358d9,
-                  mid_getSensorsUsed_0d9551367f7ecdef,
-                  mid_getSigmaU_557b8123390d8d0c,
-                  mid_getSigmaV_557b8123390d8d0c,
-                  mid_getSource_3cffd47377eca18a,
-                  mid_setAttitudeStates_a785d3c67d2cf110,
-                  mid_setCovarianceType_424aa6ac7cc5c170,
-                  mid_setEulerRotSeq_8b9f97be929dfd52,
-                  mid_setId_f5ffdf29129ef90a,
-                  mid_setMethod_7100c7873fbfaf4d,
-                  mid_setNbStates_a3da1a935cb37f7b,
-                  mid_setPrevId_f5ffdf29129ef90a,
-                  mid_setRateProcessNoiseStdDev_10f281d777284cea,
-                  mid_setRateStates_2a73a81936748923,
-                  mid_setSigmaU_10f281d777284cea,
-                  mid_setSigmaV_10f281d777284cea,
-                  mid_setSource_f5ffdf29129ef90a,
-                  mid_validate_10f281d777284cea,
+                  mid_init$_a1fa5dae97ea5ed2,
+                  mid_addSensor_4e458b36c7297083,
+                  mid_getAttitudeStates_53d1d57d6e9487ac,
+                  mid_getCovarianceType_49fb04b3e4992396,
+                  mid_getEndpoints_c60ad1d207bc8e06,
+                  mid_getEulerRotSeq_513511eeab1350d5,
+                  mid_getId_1c1fa1e935d6cdcf,
+                  mid_getMethod_3f186886b06461a4,
+                  mid_getNbStates_55546ef6a647f39b,
+                  mid_getPrevId_1c1fa1e935d6cdcf,
+                  mid_getRateProcessNoiseStdDev_b74f83833fdad017,
+                  mid_getRateStates_7f391c24fe2095f0,
+                  mid_getSensorsUsed_e62d3bb06d56d7e3,
+                  mid_getSigmaU_b74f83833fdad017,
+                  mid_getSigmaV_b74f83833fdad017,
+                  mid_getSource_1c1fa1e935d6cdcf,
+                  mid_setAttitudeStates_2fd9a6a10148e91b,
+                  mid_setCovarianceType_8563e2f42c19e56b,
+                  mid_setEulerRotSeq_062f1951e591952f,
+                  mid_setId_734b91ac30d5f9b4,
+                  mid_setMethod_801f7c356502c653,
+                  mid_setNbStates_44ed599e93e8a30c,
+                  mid_setPrevId_734b91ac30d5f9b4,
+                  mid_setRateProcessNoiseStdDev_8ba9fe7a847cecad,
+                  mid_setRateStates_6e45359e1a7bacd4,
+                  mid_setSigmaU_8ba9fe7a847cecad,
+                  mid_setSigmaV_8ba9fe7a847cecad,
+                  mid_setSource_734b91ac30d5f9b4,
+                  mid_validate_8ba9fe7a847cecad,
                   max_mid
                 };
 

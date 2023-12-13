@@ -31,7 +31,7 @@ namespace org {
           class MessageObserver : public ::java::lang::Object {
            public:
             enum {
-              mid_messageAvailable_5e983d1774bbd3db,
+              mid_messageAvailable_1a4f1f18b22ebdb4,
               max_mid
             };
 

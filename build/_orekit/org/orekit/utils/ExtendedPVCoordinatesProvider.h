@@ -4,6 +4,18 @@
 #include "org/orekit/utils/PVCoordinatesProvider.h"
 
 namespace org {
+  namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace utils {
+      class FieldPVCoordinatesProvider;
+      class TimeStampedFieldPVCoordinates;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -13,18 +25,6 @@ namespace org {
       }
     }
     class Field;
-  }
-  namespace orekit {
-    namespace utils {
-      class TimeStampedFieldPVCoordinates;
-      class FieldPVCoordinatesProvider;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
-    namespace frames {
-      class Frame;
-    }
   }
 }
 namespace java {
@@ -41,9 +41,9 @@ namespace org {
       class ExtendedPVCoordinatesProvider : public ::org::orekit::utils::PVCoordinatesProvider {
        public:
         enum {
-          mid_getPVCoordinates_4ac52e75113a03db,
-          mid_getPosition_8fac774a8fbb3d99,
-          mid_toFieldPVCoordinatesProvider_cdcdbddb8a8cc591,
+          mid_getPVCoordinates_294c5c99690f2356,
+          mid_getPosition_d0d70a58ee20218b,
+          mid_toFieldPVCoordinatesProvider_9516b47d48320472,
           max_mid
         };
 

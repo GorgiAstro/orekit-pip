@@ -35,15 +35,15 @@ namespace org {
             class DSSTSolarRadiationPressure : public ::org::orekit::propagation::semianalytical::dsst::forces::AbstractGaussianContribution {
              public:
               enum {
-                mid_init$_14a378572b7eca58,
-                mid_init$_84dee32dce7f9fa5,
-                mid_init$_9858768d9a9d55aa,
-                mid_init$_6e5ce588856634e5,
-                mid_getEquatorialRadius_557b8123390d8d0c,
-                mid_getSpacecraft_6d06026db8c77c35,
-                mid_getLLimits_8babb6fb34d6b24d,
-                mid_getLLimits_233f032b171b49d2,
-                mid_getParametersDriversWithoutMu_0d9551367f7ecdef,
+                mid_init$_c2d149dbf242a70a,
+                mid_init$_469b9d23c5967fa5,
+                mid_init$_930c2f779352a514,
+                mid_init$_14afa2a4075b1e1e,
+                mid_getEquatorialRadius_b74f83833fdad017,
+                mid_getSpacecraft_6c4eac88f18322d9,
+                mid_getLLimits_9b6fd6b3a2b07f62,
+                mid_getLLimits_1abf2eee80dffc68,
+                mid_getParametersDriversWithoutMu_e62d3bb06d56d7e3,
                 max_mid
               };
 

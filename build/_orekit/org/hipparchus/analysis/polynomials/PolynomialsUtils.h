@@ -27,12 +27,12 @@ namespace org {
         class PolynomialsUtils : public ::java::lang::Object {
          public:
           enum {
-            mid_createChebyshevPolynomial_2222e2447cbba34e,
-            mid_createHermitePolynomial_2222e2447cbba34e,
-            mid_createJacobiPolynomial_9aa75c0d42a2437d,
-            mid_createLaguerrePolynomial_2222e2447cbba34e,
-            mid_createLegendrePolynomial_2222e2447cbba34e,
-            mid_shift_59ea33beffed37b5,
+            mid_createChebyshevPolynomial_4f5b8bf5df9f3665,
+            mid_createHermitePolynomial_4f5b8bf5df9f3665,
+            mid_createJacobiPolynomial_8c67abe8da27c9da,
+            mid_createLaguerrePolynomial_4f5b8bf5df9f3665,
+            mid_createLegendrePolynomial_4f5b8bf5df9f3665,
+            mid_shift_ffc9125fb767957a,
             max_mid
           };
 

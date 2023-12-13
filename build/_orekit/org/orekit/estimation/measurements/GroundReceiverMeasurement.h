@@ -4,23 +4,6 @@
 #include "org/orekit/estimation/measurements/AbstractMeasurement.h"
 
 namespace org {
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class ObservableSatellite;
-        class GroundStation;
-      }
-    }
-    namespace utils {
-      class PVCoordinates;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -28,6 +11,23 @@ namespace org {
           class Vector3D;
         }
       }
+    }
+  }
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class GroundStation;
+        class ObservableSatellite;
+      }
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class PVCoordinates;
     }
   }
 }
@@ -46,14 +46,14 @@ namespace org {
         class GroundReceiverMeasurement : public ::org::orekit::estimation::measurements::AbstractMeasurement {
          public:
           enum {
-            mid_init$_cc77f77ecf3467f7,
-            mid_init$_0c97652d522ed1b8,
-            mid_getGroundStationCoordinates_2608b7929cfe65be,
-            mid_getGroundStationPosition_8386213426308de8,
-            mid_getStation_2161f2a4a8c885ec,
-            mid_isTwoWay_89b302893bdbe1f1,
-            mid_computeCommonParametersWithout_eb2352b23f22469e,
-            mid_computeCommonParametersWithDerivatives_e0d35cbb5d453f3a,
+            mid_init$_d9bdb0407e3974de,
+            mid_init$_30a9252c5d1ad83a,
+            mid_getGroundStationCoordinates_07353af99808c203,
+            mid_getGroundStationPosition_982d534f80d70918,
+            mid_getStation_e5278a7660eeb13f,
+            mid_isTwoWay_9ab94ac1dc23b105,
+            mid_computeCommonParametersWithout_bba369b69f68b754,
+            mid_computeCommonParametersWithDerivatives_8bea93b45382b3fc,
             max_mid
           };
 

@@ -31,9 +31,9 @@ namespace org {
         class OrekitStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_finish_8655761ebf04b503,
-            mid_handleStep_729a66b1e94503de,
-            mid_init_0472264ad6f40bc2,
+            mid_finish_280c3390961e0a50,
+            mid_handleStep_13c351c10f00bcd7,
+            mid_init_2d7f9a496c7e9781,
             max_mid
           };
 

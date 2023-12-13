@@ -5,8 +5,8 @@
 
 namespace java {
   namespace io {
-    class Reader;
     class IOException;
+    class Reader;
     class InputStream;
   }
   namespace lang {
@@ -22,9 +22,9 @@ namespace org {
       class DataSource$Opener : public ::java::lang::Object {
        public:
         enum {
-          mid_openReaderOnce_db817b1afec8e8b3,
-          mid_openStreamOnce_ce4348991af8a1a1,
-          mid_rawDataIsBinary_89b302893bdbe1f1,
+          mid_openReaderOnce_b2bc6d3e210c2dd4,
+          mid_openStreamOnce_6c37d64ac8173086,
+          mid_rawDataIsBinary_9ab94ac1dc23b105,
           max_mid
         };
 

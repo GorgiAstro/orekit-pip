@@ -14,14 +14,14 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace propagation {
-      class FieldSpacecraftState;
       namespace events {
+        class FieldEventDetector;
         namespace handlers {
           class FieldEventHandler;
           class FieldRecordAndContinue$Event;
         }
-        class FieldEventDetector;
       }
+      class FieldSpacecraftState;
     }
   }
   namespace hipparchus {
@@ -44,11 +44,11 @@ namespace org {
           class FieldRecordAndContinue : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_init$_4ccaedadb068bdeb,
-              mid_clear_0640e6acf969ed28,
-              mid_eventOccurred_061886b33964a9af,
-              mid_getEvents_0d9551367f7ecdef,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_init$_0e7c3032c7c93ed3,
+              mid_clear_a1fa5dae97ea5ed2,
+              mid_eventOccurred_839b1f3ec2c4fbf6,
+              mid_getEvents_e62d3bb06d56d7e3,
               max_mid
             };
 

@@ -3,22 +3,22 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace gnss {
       namespace metric {
         namespace parser {
-          class MessageType;
           class RtcmMessageType;
+          class MessageType;
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -32,9 +32,9 @@ namespace org {
           class RtcmMessageType : public ::java::lang::Enum {
            public:
             enum {
-              mid_getMessageType_612aa70df0f31133,
-              mid_valueOf_612aa70df0f31133,
-              mid_values_12551cba4bfbd81d,
+              mid_getMessageType_8b512a2b046ef221,
+              mid_valueOf_8b512a2b046ef221,
+              mid_values_1e2db6a966d14617,
               max_mid
             };
 

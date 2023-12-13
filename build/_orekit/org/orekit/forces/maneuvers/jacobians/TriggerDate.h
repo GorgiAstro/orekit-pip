@@ -5,23 +5,23 @@
 
 namespace org {
   namespace orekit {
+    namespace propagation {
+      class AdditionalStateProvider;
+      class SpacecraftState;
+    }
     namespace forces {
       namespace maneuvers {
         class Maneuver;
-        namespace jacobians {
-          class MassDepletionDelay;
-        }
         namespace trigger {
           class ManeuverTriggersResetter;
+        }
+        namespace jacobians {
+          class MassDepletionDelay;
         }
       }
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace propagation {
-      class SpacecraftState;
-      class AdditionalStateProvider;
     }
   }
 }
@@ -42,14 +42,14 @@ namespace org {
           class TriggerDate : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_e40cbcd903d0f619,
-              mid_getAdditionalState_2a145999b8c9a41d,
-              mid_getMassDepletionDelay_6370f272e5bf9b88,
-              mid_getName_3cffd47377eca18a,
-              mid_init_0472264ad6f40bc2,
-              mid_maneuverTriggered_45bf76e836befe86,
-              mid_resetState_2c4cc16b11f79a6c,
-              mid_yields_abdf3beb789bbd4e,
+              mid_init$_5e483594d266cbbc,
+              mid_getAdditionalState_f227e5f48720b798,
+              mid_getMassDepletionDelay_317d678e51746add,
+              mid_getName_1c1fa1e935d6cdcf,
+              mid_init_2d7f9a496c7e9781,
+              mid_maneuverTriggered_1c47c97cdbc7e206,
+              mid_resetState_c3c52b1257139045,
+              mid_yields_97df9017614a1945,
               max_mid
             };
 

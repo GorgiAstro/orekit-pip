@@ -6,9 +6,9 @@
 namespace org {
   namespace orekit {
     namespace utils {
-      class AggregatedPVCoordinatesProvider;
-      class PVCoordinatesProvider;
       class AggregatedPVCoordinatesProvider$Builder;
+      class PVCoordinatesProvider;
+      class AggregatedPVCoordinatesProvider;
     }
     namespace time {
       class AbsoluteDate;
@@ -29,13 +29,13 @@ namespace org {
       class AggregatedPVCoordinatesProvider$Builder : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_init$_89227d950841a6f5,
-          mid_addPVProviderAfter_91816397f6065003,
-          mid_addPVProviderBefore_91816397f6065003,
-          mid_build_5950ada932adf178,
-          mid_invalidAfter_034efa53a4f26e25,
-          mid_invalidBefore_034efa53a4f26e25,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_init$_d5a0feed7c9d2c33,
+          mid_addPVProviderAfter_5ee9810a7b70e76b,
+          mid_addPVProviderBefore_5ee9810a7b70e76b,
+          mid_build_19d57e29865e7504,
+          mid_invalidAfter_b136003bbc44e0bf,
+          mid_invalidBefore_b136003bbc44e0bf,
           max_mid
         };
 

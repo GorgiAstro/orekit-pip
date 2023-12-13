@@ -25,8 +25,8 @@ namespace org {
       class MeasurementType : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_1d7c25a01ab77957,
-          mid_values_5b6bc0bb7233141b,
+          mid_valueOf_0b2563d63aef9622,
+          mid_values_954cb2d0a1dfac84,
           max_mid
         };
 

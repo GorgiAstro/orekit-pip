@@ -19,9 +19,9 @@ namespace org {
           class ByteArrayEncodedMessage : public ::org::orekit::gnss::metric::parser::AbstractEncodedMessage {
            public:
             enum {
-              mid_init$_d759c70c6670fd89,
-              mid_start_0640e6acf969ed28,
-              mid_fetchByte_412668abc8d889e9,
+              mid_init$_459771b03534868e,
+              mid_start_a1fa5dae97ea5ed2,
+              mid_fetchByte_55546ef6a647f39b,
               max_mid
             };
 

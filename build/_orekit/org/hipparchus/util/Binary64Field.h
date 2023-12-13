@@ -13,11 +13,11 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    class Field;
     namespace util {
-      class Binary64;
       class Binary64Field;
+      class Binary64;
     }
+    class Field;
   }
 }
 template<class T> class JArray;
@@ -29,12 +29,12 @@ namespace org {
       class Binary64Field : public ::java::lang::Object {
        public:
         enum {
-          mid_equals_221e8e85cb385209,
-          mid_getInstance_7ba053ac589e30fa,
-          mid_getOne_2ca6539856dec86f,
-          mid_getRuntimeClass_d4b191ff8147475d,
-          mid_getZero_2ca6539856dec86f,
-          mid_hashCode_412668abc8d889e9,
+          mid_equals_460c5e2d9d51c6cc,
+          mid_getInstance_dab962c4ddcd5467,
+          mid_getOne_08945ef61eb92dcf,
+          mid_getRuntimeClass_1aeb0737a960d371,
+          mid_getZero_08945ef61eb92dcf,
+          mid_hashCode_55546ef6a647f39b,
           max_mid
         };
 

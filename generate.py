@@ -62,7 +62,7 @@ vanilla_java_classes = [
     'java.util.function.Supplier',
 ]
 py_src_files = ['pyhelpers.py']
-reserved_keywords = ['INFINITE', 'ERROR', 'OVERFLOW', 'NO_DATA', 'NAN', 'min', 'max', 'mean', 'SNAN','get']
+reserved_keywords = ['INFINITE', 'ERROR', 'OVERFLOW', 'NO_DATA', 'NAN', 'min', 'max', 'mean', 'SNAN','get', 'PASCAL', 'PERCENT']
 #classpath = [tools_jar_path]
 classpath = []
 classes_exclude = ['org.hipparchus.util.RosenNumberPartitionIterator', 'org.orekit.compiler.plugin.DefaultDataContextPlugin']

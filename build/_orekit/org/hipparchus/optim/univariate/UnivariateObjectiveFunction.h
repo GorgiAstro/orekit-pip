@@ -28,8 +28,8 @@ namespace org {
         class UnivariateObjectiveFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_bab54d5ff2104d15,
-            mid_getObjectiveFunction_7713b1053b31306c,
+            mid_init$_deed7b219c540ba8,
+            mid_getObjectiveFunction_afbbf84db2f6c27e,
             max_mid
           };
 

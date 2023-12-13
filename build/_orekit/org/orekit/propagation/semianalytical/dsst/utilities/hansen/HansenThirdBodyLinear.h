@@ -21,10 +21,10 @@ namespace org {
               class HansenThirdBodyLinear : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_a84c9a223722150c,
-                  mid_computeInitValues_87096e3fd8086100,
-                  mid_getDerivative_77f9e227e4cf04b4,
-                  mid_getValue_77f9e227e4cf04b4,
+                  mid_init$_3313c75e3e16c428,
+                  mid_computeInitValues_b5167f35b2521627,
+                  mid_getDerivative_98e10c261c066ee7,
+                  mid_getValue_98e10c261c066ee7,
                   max_mid
                 };
 

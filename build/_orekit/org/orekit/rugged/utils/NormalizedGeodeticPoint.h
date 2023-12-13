@@ -19,10 +19,10 @@ namespace org {
         class NormalizedGeodeticPoint : public ::org::orekit::bodies::GeodeticPoint {
          public:
           enum {
-            mid_init$_bc3712e794ac7a81,
-            mid_equals_221e8e85cb385209,
-            mid_getLongitude_557b8123390d8d0c,
-            mid_hashCode_412668abc8d889e9,
+            mid_init$_49f4b5153d696ea5,
+            mid_equals_460c5e2d9d51c6cc,
+            mid_getLongitude_b74f83833fdad017,
+            mid_hashCode_55546ef6a647f39b,
             max_mid
           };
 

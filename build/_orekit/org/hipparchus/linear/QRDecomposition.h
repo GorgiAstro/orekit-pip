@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace linear {
-      class DecompositionSolver;
-      class RealMatrix;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
+      class DecompositionSolver;
+    }
   }
 }
 template<class T> class JArray;
@@ -25,15 +25,15 @@ namespace org {
       class QRDecomposition : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_f3731847577f13e6,
-          mid_init$_08eaf415db10314f,
-          mid_getH_70a207fcbc031df2,
-          mid_getQ_70a207fcbc031df2,
-          mid_getQT_70a207fcbc031df2,
-          mid_getR_70a207fcbc031df2,
-          mid_getSolver_ccd666b17ae2e6eb,
-          mid_decompose_edb361bfdd1ad9ae,
-          mid_performHouseholderReflection_03f9d79d0168ba0b,
+          mid_init$_84bd15e0995d0c79,
+          mid_init$_5c88fbe0835e7c85,
+          mid_getH_f77d745f2128c391,
+          mid_getQ_f77d745f2128c391,
+          mid_getQT_f77d745f2128c391,
+          mid_getR_f77d745f2128c391,
+          mid_getSolver_5823fb909376de2c,
+          mid_decompose_07adb42ffaa97d31,
+          mid_performHouseholderReflection_fd10cb359d67ca83,
           max_mid
         };
 

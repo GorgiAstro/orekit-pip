@@ -34,8 +34,8 @@ namespace org {
             class TokenType : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_de46747ae9eeb6d9,
-                mid_values_6023496df8ab390b,
+                mid_valueOf_ce3cd2b65e1aed22,
+                mid_values_cdf6af80eac5bfd5,
                 max_mid
               };
 

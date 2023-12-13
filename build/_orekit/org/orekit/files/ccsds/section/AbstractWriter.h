@@ -17,11 +17,11 @@ namespace org {
   }
 }
 namespace java {
-  namespace io {
-    class IOException;
-  }
   namespace lang {
     class Class;
+  }
+  namespace io {
+    class IOException;
   }
 }
 template<class T> class JArray;
@@ -35,11 +35,11 @@ namespace org {
           class AbstractWriter : public ::java::lang::Object {
            public:
             enum {
-              mid_enterSection_0503da09b1f1eb3c,
-              mid_exitSection_0503da09b1f1eb3c,
-              mid_write_0503da09b1f1eb3c,
-              mid_writeContent_0503da09b1f1eb3c,
-              mid_intArrayToString_ae74174caf679503,
+              mid_enterSection_fb222e851cd27682,
+              mid_exitSection_fb222e851cd27682,
+              mid_write_fb222e851cd27682,
+              mid_intArrayToString_e06025bc23ba70af,
+              mid_writeContent_fb222e851cd27682,
               max_mid
             };
 

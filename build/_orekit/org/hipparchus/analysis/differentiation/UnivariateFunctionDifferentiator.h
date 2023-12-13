@@ -28,7 +28,7 @@ namespace org {
         class UnivariateFunctionDifferentiator : public ::java::lang::Object {
          public:
           enum {
-            mid_differentiate_8233aa57faace755,
+            mid_differentiate_220981d5dd65e2eb,
             max_mid
           };
 

@@ -5,6 +5,7 @@
 
 namespace org {
   namespace hipparchus {
+    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -12,7 +13,6 @@ namespace org {
         }
       }
     }
-    class CalculusFieldElement;
   }
   namespace orekit {
     namespace attitudes {
@@ -34,10 +34,10 @@ namespace org {
       class FieldInertiaAxis : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_bc0c6bda4a59e038,
-          mid_getA_2d64addf4c3391d9,
-          mid_getI_613c8f46c659f636,
-          mid_negate_4745cc6d841a74c0,
+          mid_init$_0602f39e097cca02,
+          mid_getA_ff5ac73a7b43eddd,
+          mid_getI_81520b552cb3fa26,
+          mid_negate_4039efd27b3cc788,
           max_mid
         };
 

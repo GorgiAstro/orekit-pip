@@ -5,16 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace models {
-      namespace earth {
-        class GeoMagneticField;
-      }
-    }
-    namespace frames {
-      class LOF;
-      class LocalMagneticFieldFrame$LOFBuilderVector;
-      class Frame;
-    }
     namespace utils {
       class FieldPVCoordinates;
       class PVCoordinates;
@@ -23,13 +13,23 @@ namespace org {
       class FieldAbsoluteDate;
       class AbsoluteDate;
     }
+    namespace frames {
+      class LocalMagneticFieldFrame$LOFBuilderVector;
+      class LOF;
+      class Frame;
+    }
+    namespace models {
+      namespace earth {
+        class GeoMagneticField;
+      }
+    }
   }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Rotation;
           class FieldRotation;
+          class Rotation;
         }
       }
     }
@@ -51,13 +51,13 @@ namespace org {
       class LocalMagneticFieldFrame : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_61dfbe8afb534db1,
-          mid_init$_81aa3b2ad79095bc,
-          mid_getInertialFrame_6c9bc0a928c56d4e,
-          mid_getMagneticField_2d6050bd3aec87f1,
-          mid_getName_3cffd47377eca18a,
-          mid_rotationFromInertial_9b71bf39454b4a07,
-          mid_rotationFromInertial_1022f468fb3d1015,
+          mid_init$_86179a66f95f2dd8,
+          mid_init$_a0d185198633bdd4,
+          mid_getInertialFrame_2c51111cc6894ba1,
+          mid_getMagneticField_7e28d517d0d29909,
+          mid_getName_1c1fa1e935d6cdcf,
+          mid_rotationFromInertial_9c03210e4a66b8b3,
+          mid_rotationFromInertial_8f928c19e9edde2b,
           max_mid
         };
 

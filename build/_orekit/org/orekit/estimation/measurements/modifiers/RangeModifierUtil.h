@@ -7,9 +7,9 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
+        class EstimatedMeasurementBase;
         class GroundStation;
         class EstimatedMeasurement;
-        class EstimatedMeasurementBase;
       }
     }
     namespace propagation {

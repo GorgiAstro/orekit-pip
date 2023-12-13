@@ -14,6 +14,11 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace utils {
+      namespace units {
+        class Unit;
+      }
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -23,11 +28,6 @@ namespace org {
             }
           }
         }
-      }
-    }
-    namespace utils {
-      namespace units {
-        class Unit;
       }
     }
   }
@@ -45,9 +45,9 @@ namespace org {
               class AttitudeCovarianceType : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_getUnits_0d9551367f7ecdef,
-                  mid_valueOf_4a369d52f221ceec,
-                  mid_values_5d4cb66d35fd1994,
+                  mid_getUnits_e62d3bb06d56d7e3,
+                  mid_valueOf_ace24d354abfff27,
+                  mid_values_cc7e51b05fabaec9,
                   max_mid
                 };
 

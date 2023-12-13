@@ -4,6 +4,13 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace numerical {
+        class FieldTimeDerivativesEquations;
+      }
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -13,13 +20,6 @@ namespace org {
       }
     }
     class CalculusFieldElement;
-  }
-  namespace orekit {
-    namespace propagation {
-      namespace numerical {
-        class FieldTimeDerivativesEquations;
-      }
-    }
   }
 }
 namespace java {
@@ -38,14 +38,14 @@ namespace org {
         class PythonFieldTimeDerivativesEquations : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_addKeplerContribution_1ee4bed350fde589,
-            mid_addMassDerivative_1ee4bed350fde589,
-            mid_addNonKeplerianAcceleration_282cea09b82f4134,
-            mid_finalize_0640e6acf969ed28,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_addKeplerContribution_f2b4bfa0af1007e8,
+            mid_addMassDerivative_f2b4bfa0af1007e8,
+            mid_addNonKeplerianAcceleration_c9e829dd925c6618,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
             max_mid
           };
 

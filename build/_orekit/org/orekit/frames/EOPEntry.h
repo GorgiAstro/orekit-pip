@@ -3,23 +3,23 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace time {
+      class TimeStamped;
+      class AbsoluteDate;
+    }
+    namespace frames {
+      class ITRFVersion;
+    }
+  }
+}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-      class TimeStamped;
-    }
-    namespace frames {
-      class ITRFVersion;
-    }
   }
 }
 template<class T> class JArray;
@@ -31,20 +31,20 @@ namespace org {
       class EOPEntry : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_3c622621d4e330b6,
-          mid_getDate_7a97f7e149e79afb,
-          mid_getDdEps_557b8123390d8d0c,
-          mid_getDdPsi_557b8123390d8d0c,
-          mid_getDx_557b8123390d8d0c,
-          mid_getDy_557b8123390d8d0c,
-          mid_getITRFType_b311296551ce8af2,
-          mid_getLOD_557b8123390d8d0c,
-          mid_getMjd_412668abc8d889e9,
-          mid_getUT1MinusUTC_557b8123390d8d0c,
-          mid_getX_557b8123390d8d0c,
-          mid_getXRate_557b8123390d8d0c,
-          mid_getY_557b8123390d8d0c,
-          mid_getYRate_557b8123390d8d0c,
+          mid_init$_c784ea63fb85b5ed,
+          mid_getDate_c325492395d89b24,
+          mid_getDdEps_b74f83833fdad017,
+          mid_getDdPsi_b74f83833fdad017,
+          mid_getDx_b74f83833fdad017,
+          mid_getDy_b74f83833fdad017,
+          mid_getITRFType_8bcdfad365f6d36a,
+          mid_getLOD_b74f83833fdad017,
+          mid_getMjd_55546ef6a647f39b,
+          mid_getUT1MinusUTC_b74f83833fdad017,
+          mid_getX_b74f83833fdad017,
+          mid_getXRate_b74f83833fdad017,
+          mid_getY_b74f83833fdad017,
+          mid_getYRate_b74f83833fdad017,
           max_mid
         };
 

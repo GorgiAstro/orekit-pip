@@ -3,16 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
-    namespace complex {
-      class Quaternion;
-    }
-  }
-}
 namespace java {
   namespace io {
     class Serializable;
@@ -20,6 +10,16 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace complex {
+      class Quaternion;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
   }
 }
 template<class T> class JArray;
@@ -31,35 +31,35 @@ namespace org {
       class Quaternion : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_cc18240f4a737f14,
-          mid_init$_092013acd44a9e63,
-          mid_init$_bc3712e794ac7a81,
-          mid_add_37c713f90f85ec7a,
-          mid_add_d60006ca19659f21,
-          mid_dotProduct_df61a033821d7ce9,
-          mid_dotProduct_4e92dca16a9ca947,
-          mid_equals_221e8e85cb385209,
-          mid_equals_d9091f6e7df43c9e,
-          mid_getConjugate_ed563d4dda2b9f62,
-          mid_getInverse_ed563d4dda2b9f62,
-          mid_getNorm_557b8123390d8d0c,
-          mid_getPositivePolarForm_ed563d4dda2b9f62,
-          mid_getQ0_557b8123390d8d0c,
-          mid_getQ1_557b8123390d8d0c,
-          mid_getQ2_557b8123390d8d0c,
-          mid_getQ3_557b8123390d8d0c,
-          mid_getScalarPart_557b8123390d8d0c,
-          mid_getVectorPart_a53a7513ecedada2,
-          mid_hashCode_412668abc8d889e9,
-          mid_isPureQuaternion_dd69c3ab2404bb71,
-          mid_isUnitQuaternion_dd69c3ab2404bb71,
-          mid_multiply_37c713f90f85ec7a,
-          mid_multiply_e6749c879fbbeb60,
-          mid_multiply_d60006ca19659f21,
-          mid_normalize_ed563d4dda2b9f62,
-          mid_subtract_37c713f90f85ec7a,
-          mid_subtract_d60006ca19659f21,
-          mid_toString_3cffd47377eca18a,
+          mid_init$_ab69da052b88f50c,
+          mid_init$_d606d0c99c70c093,
+          mid_init$_49f4b5153d696ea5,
+          mid_add_01ac48796580219f,
+          mid_add_b69a97c51c98fa2e,
+          mid_dotProduct_24198900daf3a400,
+          mid_dotProduct_da75e7ed21a401a1,
+          mid_equals_460c5e2d9d51c6cc,
+          mid_equals_63b840827824f2cb,
+          mid_getConjugate_6890e724ec73e493,
+          mid_getInverse_6890e724ec73e493,
+          mid_getNorm_b74f83833fdad017,
+          mid_getPositivePolarForm_6890e724ec73e493,
+          mid_getQ0_b74f83833fdad017,
+          mid_getQ1_b74f83833fdad017,
+          mid_getQ2_b74f83833fdad017,
+          mid_getQ3_b74f83833fdad017,
+          mid_getScalarPart_b74f83833fdad017,
+          mid_getVectorPart_25e1757a36c4dde2,
+          mid_hashCode_55546ef6a647f39b,
+          mid_isPureQuaternion_716249baa52d209e,
+          mid_isUnitQuaternion_716249baa52d209e,
+          mid_multiply_01ac48796580219f,
+          mid_multiply_91809ff51dea6aaf,
+          mid_multiply_b69a97c51c98fa2e,
+          mid_normalize_6890e724ec73e493,
+          mid_subtract_01ac48796580219f,
+          mid_subtract_b69a97c51c98fa2e,
+          mid_toString_1c1fa1e935d6cdcf,
           max_mid
         };
 

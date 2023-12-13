@@ -3,17 +3,6 @@
 
 #include "org/hipparchus/ode/OrdinaryDifferentialEquation.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace ode {
-      class NamedParameterJacobianProvider;
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-      class MathIllegalStateException;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -21,6 +10,17 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
+    }
+    namespace ode {
+      class NamedParameterJacobianProvider;
+    }
   }
 }
 template<class T> class JArray;
@@ -32,10 +32,10 @@ namespace org {
       class ODEJacobiansProvider : public ::org::hipparchus::ode::OrdinaryDifferentialEquation {
        public:
         enum {
-          mid_computeMainStateJacobian_bd7192e808ddb91f,
-          mid_computeParameterJacobian_b987435e157df371,
-          mid_getParametersNames_0d9551367f7ecdef,
-          mid_isSupported_fd2162b8a05a22fe,
+          mid_computeMainStateJacobian_48051c73015abecf,
+          mid_computeParameterJacobian_c668528785bd21ab,
+          mid_getParametersNames_e62d3bb06d56d7e3,
+          mid_isSupported_cde6b28e15c96b75,
           max_mid
         };
 

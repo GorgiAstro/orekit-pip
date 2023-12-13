@@ -3,6 +3,12 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
@@ -14,12 +20,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,8 +34,8 @@ namespace org {
             class AngleType : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_642401b5b2e502af,
-                mid_values_98c7ddb14a6d13ed,
+                mid_valueOf_a7c7cd73878b4ee4,
+                mid_values_913f00c83a5d1f87,
                 max_mid
               };
 

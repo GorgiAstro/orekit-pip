@@ -34,8 +34,8 @@ namespace org {
             class NonLinearConjugateGradientOptimizer$IdentityPreconditioner : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0640e6acf969ed28,
-                mid_precondition_d2593442847fe350,
+                mid_init$_a1fa5dae97ea5ed2,
+                mid_precondition_1badeb24cd1b9588,
                 max_mid
               };
 

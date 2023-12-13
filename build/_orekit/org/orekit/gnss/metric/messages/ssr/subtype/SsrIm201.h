@@ -13,13 +13,6 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace models {
-      namespace earth {
-        namespace ionosphere {
-          class SsrVtecIonosphericModel;
-        }
-      }
-    }
     namespace gnss {
       namespace metric {
         namespace messages {
@@ -29,6 +22,13 @@ namespace org {
               class SsrIm201Data;
             }
           }
+        }
+      }
+    }
+    namespace models {
+      namespace earth {
+        namespace ionosphere {
+          class SsrVtecIonosphericModel;
         }
       }
     }
@@ -47,8 +47,8 @@ namespace org {
               class SsrIm201 : public ::org::orekit::gnss::metric::messages::ssr::SsrMessage {
                public:
                 enum {
-                  mid_init$_d4f7898df41412b2,
-                  mid_getIonosphericModel_8a2de859f3c55f13,
+                  mid_init$_961b35617787643b,
+                  mid_getIonosphericModel_45bd2d7260a3238b,
                   max_mid
                 };
 

@@ -4,6 +4,9 @@
 #include "org/orekit/propagation/events/FieldAbstractDetector.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace propagation {
       class FieldSpacecraftState;
@@ -11,9 +14,6 @@ namespace org {
     namespace orbits {
       class FieldOrbit;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -31,10 +31,10 @@ namespace org {
         class FieldApsideDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_8c98afebb6212490,
-            mid_init$_aaab803ef8769023,
-            mid_g_de1c2d709eb2829c,
-            mid_create_9a8291c9838e8605,
+            mid_init$_01b80e5fc8224f27,
+            mid_init$_5e1983e19d92fe51,
+            mid_g_2203631097e94c79,
+            mid_create_b191d53830706160,
             max_mid
           };
 

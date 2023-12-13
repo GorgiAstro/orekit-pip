@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace optim {
-      class OptimizationData;
       class MaxIter;
+      class OptimizationData;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,9 +25,9 @@ namespace org {
       class MaxIter : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a3da1a935cb37f7b,
-          mid_getMaxIter_412668abc8d889e9,
-          mid_unlimited_fd582a77ea2c8591,
+          mid_init$_44ed599e93e8a30c,
+          mid_getMaxIter_55546ef6a647f39b,
+          mid_unlimited_68e420291d6ad5b1,
           max_mid
         };
 

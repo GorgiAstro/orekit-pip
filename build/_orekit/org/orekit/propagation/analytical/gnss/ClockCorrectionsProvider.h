@@ -3,15 +3,10 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
+      class AdditionalStateProvider;
       class SpacecraftState;
       namespace analytical {
         namespace gnss {
@@ -20,8 +15,13 @@ namespace org {
           }
         }
       }
-      class AdditionalStateProvider;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -35,9 +35,9 @@ namespace org {
           class ClockCorrectionsProvider : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_5cef906e9aa1346a,
-              mid_getAdditionalState_2a145999b8c9a41d,
-              mid_getName_3cffd47377eca18a,
+              mid_init$_362abc6838ec54fa,
+              mid_getAdditionalState_f227e5f48720b798,
+              mid_getName_1c1fa1e935d6cdcf,
               max_mid
             };
 

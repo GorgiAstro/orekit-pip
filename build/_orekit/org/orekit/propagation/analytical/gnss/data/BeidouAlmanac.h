@@ -20,11 +20,11 @@ namespace org {
             class BeidouAlmanac : public ::org::orekit::propagation::analytical::gnss::data::AbstractAlmanac {
              public:
               enum {
-                mid_init$_0640e6acf969ed28,
-                mid_getHealth_412668abc8d889e9,
-                mid_setHealth_a3da1a935cb37f7b,
-                mid_setI0_ab23f4ae0fb33968,
-                mid_setSqrtA_10f281d777284cea,
+                mid_init$_a1fa5dae97ea5ed2,
+                mid_getHealth_55546ef6a647f39b,
+                mid_setHealth_44ed599e93e8a30c,
+                mid_setI0_369b4c97255d5afa,
+                mid_setSqrtA_8ba9fe7a847cecad,
                 max_mid
               };
 

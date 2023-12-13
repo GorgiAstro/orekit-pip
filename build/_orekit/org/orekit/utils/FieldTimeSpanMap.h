@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class SortedSet;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
@@ -24,6 +16,14 @@ namespace org {
     class Field;
   }
 }
+namespace java {
+  namespace lang {
+    class Class;
+  }
+  namespace util {
+    class SortedSet;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -33,11 +33,11 @@ namespace org {
       class FieldTimeSpanMap : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7384cc2619eea255,
-          mid_addValidAfter_5620e6c4fac9acfa,
-          mid_addValidBefore_5620e6c4fac9acfa,
-          mid_get_84ba864745aad457,
-          mid_getTransitions_c6b6a992db588a51,
+          mid_init$_13b43261a6378381,
+          mid_addValidAfter_d24593f3082d9180,
+          mid_addValidBefore_d24593f3082d9180,
+          mid_get_46cdd7aa42a0075d,
+          mid_getTransitions_7961e54fd3a47d94,
           max_mid
         };
 

@@ -29,10 +29,10 @@ namespace org {
       class LocalizedCoreFormats : public ::java::lang::Enum {
        public:
         enum {
-          mid_getLocalizedString_4b51060c6b7ea981,
-          mid_getSourceString_3cffd47377eca18a,
-          mid_valueOf_30ae7f322f00437e,
-          mid_values_55f7aeabb1f44e95,
+          mid_getLocalizedString_26070c28e6ea354d,
+          mid_getSourceString_1c1fa1e935d6cdcf,
+          mid_valueOf_1901a79c99fdd24b,
+          mid_values_f5fc18211f4b5bc7,
           max_mid
         };
 

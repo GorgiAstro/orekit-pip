@@ -24,10 +24,10 @@ namespace org {
       class PolynomialCurveFitter : public ::org::hipparchus::fitting::AbstractCurveFitter {
        public:
         enum {
-          mid_create_3cbe57f974583b20,
-          mid_withMaxIterations_3cbe57f974583b20,
-          mid_withStartPoint_771fe95b412a62a4,
-          mid_getProblem_cf073573d4101d89,
+          mid_create_f152e35f67d67b00,
+          mid_withMaxIterations_f152e35f67d67b00,
+          mid_withStartPoint_04894880c4c032ca,
+          mid_getProblem_067ae4e9e4e5b47a,
           max_mid
         };
 

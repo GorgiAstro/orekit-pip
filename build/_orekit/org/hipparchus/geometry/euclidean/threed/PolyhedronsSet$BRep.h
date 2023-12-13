@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -26,6 +18,14 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -37,9 +37,9 @@ namespace org {
           class PolyhedronsSet$BRep : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_aaa4588ba4c2491b,
-              mid_getFacets_0d9551367f7ecdef,
-              mid_getVertices_0d9551367f7ecdef,
+              mid_init$_29c3e061cbeaa98b,
+              mid_getFacets_e62d3bb06d56d7e3,
+              mid_getVertices_e62d3bb06d56d7e3,
               max_mid
             };
 

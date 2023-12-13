@@ -5,9 +5,9 @@
 
 namespace java {
   namespace lang {
+    class System$Logger$Level;
     class String;
     class Class;
-    class System$Logger$Level;
   }
 }
 template<class T> class JArray;
@@ -18,10 +18,10 @@ namespace java {
     class System$Logger$Level : public ::java::lang::Enum {
      public:
       enum {
-        mid_getName_3cffd47377eca18a,
-        mid_getSeverity_412668abc8d889e9,
-        mid_valueOf_0df800252628b85f,
-        mid_values_de06acb541c2af58,
+        mid_getName_1c1fa1e935d6cdcf,
+        mid_getSeverity_55546ef6a647f39b,
+        mid_valueOf_2f7e7c2d3ff0da17,
+        mid_values_bf7b9861e0839e00,
         max_mid
       };
 

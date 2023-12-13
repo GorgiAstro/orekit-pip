@@ -33,12 +33,12 @@ namespace org {
           class SensorMapping : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_f5ffdf29129ef90a,
-              mid_init$_630071dd94c59169,
-              mid_addMapping_2f09be1ae7695efd,
-              mid_getMapping_2dfcbd371d62f4e1,
-              mid_getRuggedName_3cffd47377eca18a,
-              mid_getSensorName_3cffd47377eca18a,
+              mid_init$_734b91ac30d5f9b4,
+              mid_init$_a627ad9c5959309d,
+              mid_addMapping_cbab5cd1ea853e18,
+              mid_getMapping_7e8f11dd23d1142c,
+              mid_getRuggedName_1c1fa1e935d6cdcf,
+              mid_getSensorName_1c1fa1e935d6cdcf,
               max_mid
             };
 

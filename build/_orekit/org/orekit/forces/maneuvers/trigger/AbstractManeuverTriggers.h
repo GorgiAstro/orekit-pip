@@ -9,10 +9,14 @@ namespace org {
       namespace maneuvers {
         namespace trigger {
           class FieldManeuverTriggersResetter;
-          class ManeuverTriggers;
           class ManeuverTriggersResetter;
+          class ManeuverTriggers;
         }
       }
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
     namespace utils {
       class TimeSpanMap;
@@ -20,10 +24,6 @@ namespace org {
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -33,8 +33,8 @@ namespace org {
 }
 namespace java {
   namespace lang {
-    class Class;
     class Boolean;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -48,20 +48,20 @@ namespace org {
           class AbstractManeuverTriggers : public ::java::lang::Object {
            public:
             enum {
-              mid_addResetter_6c2e9e35ba95043d,
-              mid_addResetter_17259cc5ef51ebf7,
-              mid_getFirings_d26bd874ee319049,
-              mid_init_811e49dad2467b67,
-              mid_init_0472264ad6f40bc2,
-              mid_isFiring_cf913265ec3c3fe7,
-              mid_isFiring_7ccb736f2a8bfc30,
-              mid_initializeResetters_0472264ad6f40bc2,
-              mid_initializeResetters_811e49dad2467b67,
-              mid_notifyResetters_585702d5a402c590,
-              mid_notifyResetters_45bf76e836befe86,
-              mid_applyResetters_2c4cc16b11f79a6c,
-              mid_applyResetters_4f12774dd382c6f4,
-              mid_isFiringOnInitialState_1e4c79a00429445e,
+              mid_addResetter_88f6b3eca6f2ace7,
+              mid_addResetter_7abb1f925b31f873,
+              mid_getFirings_2f46b86c016957a0,
+              mid_init_2d7f9a496c7e9781,
+              mid_init_96d019f392abf918,
+              mid_isFiring_430b36eccbd3b265,
+              mid_isFiring_d98e2ca7f972ae8c,
+              mid_notifyResetters_1c47c97cdbc7e206,
+              mid_notifyResetters_871885b409df9d57,
+              mid_isFiringOnInitialState_4ef3ef34329e6316,
+              mid_initializeResetters_96d019f392abf918,
+              mid_initializeResetters_2d7f9a496c7e9781,
+              mid_applyResetters_c3c52b1257139045,
+              mid_applyResetters_370b1acde6244b7e,
               max_mid
             };
 
@@ -79,8 +79,8 @@ namespace org {
             void addResetter(const ::org::orekit::forces::maneuvers::trigger::ManeuverTriggersResetter &) const;
             void addResetter(const ::org::hipparchus::Field &, const ::org::orekit::forces::maneuvers::trigger::FieldManeuverTriggersResetter &) const;
             ::org::orekit::utils::TimeSpanMap getFirings() const;
-            void init(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::time::FieldAbsoluteDate &) const;
             void init(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::time::AbsoluteDate &) const;
+            void init(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::time::FieldAbsoluteDate &) const;
             jboolean isFiring(const ::org::orekit::time::AbsoluteDate &, const JArray< jdouble > &) const;
             jboolean isFiring(const ::org::orekit::time::FieldAbsoluteDate &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           };

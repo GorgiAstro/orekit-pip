@@ -6,9 +6,9 @@
 namespace org {
   namespace orekit {
     namespace data {
-      class SeriesTerm;
-      class BodiesElements;
       class FieldBodiesElements;
+      class BodiesElements;
+      class SeriesTerm;
     }
   }
   namespace hipparchus {
@@ -29,19 +29,19 @@ namespace org {
       class SeriesTerm : public ::java::lang::Object {
        public:
         enum {
-          mid_add_8f08153945634de4,
-          mid_buildTerm_9e48c9dd795854c8,
-          mid_derivative_c933bd8b3b01b6fa,
-          mid_derivative_19d2f680a2dd5e54,
-          mid_getCosCoeff_21b81d54c06b64b0,
-          mid_getDegree_0092017e99012694,
-          mid_getSinCoeff_21b81d54c06b64b0,
-          mid_value_c933bd8b3b01b6fa,
-          mid_value_19d2f680a2dd5e54,
-          mid_argumentDerivative_3e0ce57516456e43,
-          mid_argumentDerivative_645226ccf45fca25,
-          mid_argument_3e0ce57516456e43,
-          mid_argument_645226ccf45fca25,
+          mid_add_97e33498326f7285,
+          mid_buildTerm_5b820596e89d1f17,
+          mid_derivative_385587d041c81b1f,
+          mid_derivative_8e0d8ae8849d1551,
+          mid_getCosCoeff_cad98089d00f8a5b,
+          mid_getDegree_0e7cf35192c3effe,
+          mid_getSinCoeff_cad98089d00f8a5b,
+          mid_value_385587d041c81b1f,
+          mid_value_8e0d8ae8849d1551,
+          mid_argumentDerivative_6d9bdfdb86170f1b,
+          mid_argumentDerivative_e5a6deebdf7be070,
+          mid_argument_6d9bdfdb86170f1b,
+          mid_argument_e5a6deebdf7be070,
           max_mid
         };
 

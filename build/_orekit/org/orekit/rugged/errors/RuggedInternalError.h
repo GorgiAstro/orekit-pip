@@ -17,8 +17,8 @@ namespace java {
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class LocalizedException;
       class Localizable;
+      class LocalizedException;
     }
   }
 }
@@ -32,12 +32,12 @@ namespace org {
         class RuggedInternalError : public ::java::lang::RuntimeException {
          public:
           enum {
-            mid_init$_7d9320fd2ea36122,
-            mid_getLocalizedMessage_3cffd47377eca18a,
-            mid_getMessage_3cffd47377eca18a,
-            mid_getMessage_4b51060c6b7ea981,
-            mid_getParts_6555a5198c71b73a,
-            mid_getSpecifier_a86d7419cf3241b7,
+            mid_init$_c5d3549d4f245728,
+            mid_getLocalizedMessage_1c1fa1e935d6cdcf,
+            mid_getMessage_1c1fa1e935d6cdcf,
+            mid_getMessage_26070c28e6ea354d,
+            mid_getParts_24e2edd6319f4c5a,
+            mid_getSpecifier_d8f5056e4f45c9a6,
             max_mid
           };
 

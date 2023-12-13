@@ -31,9 +31,9 @@ namespace org {
           class SmoothedObservationDataSet : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_95b4b21ffaf71469,
-              mid_getDataSet_438dd48fa809cabc,
-              mid_getSmoothedData_35f670e1101632be,
+              mid_init$_4b648d7fa46ce37e,
+              mid_getDataSet_c6a7cfb733f1aa1d,
+              mid_getSmoothedData_06e77e07a1ad960a,
               max_mid
             };
 

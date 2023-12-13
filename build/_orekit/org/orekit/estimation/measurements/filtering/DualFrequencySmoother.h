@@ -5,23 +5,23 @@
 
 namespace org {
   namespace orekit {
+    namespace gnss {
+      class SatelliteSystem;
+      class ObservationType;
+    }
+    namespace estimation {
+      namespace measurements {
+        namespace filtering {
+          class DualFrequencyHatchFilter;
+          class SmoothedObservationDataSet;
+        }
+      }
+    }
     namespace files {
       namespace rinex {
         namespace observation {
           class ObservationData;
           class ObservationDataSet;
-        }
-      }
-    }
-    namespace gnss {
-      class ObservationType;
-      class SatelliteSystem;
-    }
-    namespace estimation {
-      namespace measurements {
-        namespace filtering {
-          class SmoothedObservationDataSet;
-          class DualFrequencyHatchFilter;
         }
       }
     }
@@ -47,12 +47,12 @@ namespace org {
           class DualFrequencySmoother : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_47602ef8408ea361,
-              mid_copyObservationData_f6f450be0ab92fea,
-              mid_createFilter_7a832b0eff2a17cf,
-              mid_filterDataSet_1a7469cb8fc0bf06,
-              mid_getFilteredDataMap_2bd3906654d055d1,
-              mid_getMapFilters_2bd3906654d055d1,
+              mid_init$_1af1b4c263b48b0c,
+              mid_copyObservationData_5627f6437b3ab888,
+              mid_createFilter_1ed4e8277b5c5099,
+              mid_filterDataSet_6eed97de121df5d2,
+              mid_getFilteredDataMap_f21c52aaf6a29827,
+              mid_getMapFilters_f21c52aaf6a29827,
               max_mid
             };
 

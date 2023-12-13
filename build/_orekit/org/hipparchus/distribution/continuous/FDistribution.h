@@ -3,16 +3,16 @@
 
 #include "org/hipparchus/distribution/continuous/AbstractRealDistribution.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,18 +25,18 @@ namespace org {
         class FDistribution : public ::org::hipparchus::distribution::continuous::AbstractRealDistribution {
          public:
           enum {
-            mid_init$_ab23f4ae0fb33968,
-            mid_init$_87096e3fd8086100,
-            mid_cumulativeProbability_7e960cd6eee376d8,
-            mid_density_7e960cd6eee376d8,
-            mid_getDenominatorDegreesOfFreedom_557b8123390d8d0c,
-            mid_getNumeratorDegreesOfFreedom_557b8123390d8d0c,
-            mid_getNumericalMean_557b8123390d8d0c,
-            mid_getNumericalVariance_557b8123390d8d0c,
-            mid_getSupportLowerBound_557b8123390d8d0c,
-            mid_getSupportUpperBound_557b8123390d8d0c,
-            mid_isSupportConnected_89b302893bdbe1f1,
-            mid_logDensity_7e960cd6eee376d8,
+            mid_init$_369b4c97255d5afa,
+            mid_init$_b5167f35b2521627,
+            mid_cumulativeProbability_04fd0666b613d2ab,
+            mid_density_04fd0666b613d2ab,
+            mid_getDenominatorDegreesOfFreedom_b74f83833fdad017,
+            mid_getNumeratorDegreesOfFreedom_b74f83833fdad017,
+            mid_getNumericalMean_b74f83833fdad017,
+            mid_getNumericalVariance_b74f83833fdad017,
+            mid_getSupportLowerBound_b74f83833fdad017,
+            mid_getSupportUpperBound_b74f83833fdad017,
+            mid_isSupportConnected_9ab94ac1dc23b105,
+            mid_logDensity_04fd0666b613d2ab,
             max_mid
           };
 

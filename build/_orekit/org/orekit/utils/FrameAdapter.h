@@ -6,9 +6,9 @@
 namespace org {
   namespace orekit {
     namespace utils {
-      class TimeStampedFieldPVCoordinates;
-      class ExtendedPVCoordinatesProvider;
       class TimeStampedPVCoordinates;
+      class ExtendedPVCoordinatesProvider;
+      class TimeStampedFieldPVCoordinates;
     }
     namespace time {
       class FieldAbsoluteDate;
@@ -33,9 +33,9 @@ namespace org {
       class FrameAdapter : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_535d1f91a93c8b4d,
-          mid_getPVCoordinates_17742a9a6655bdb1,
-          mid_getPVCoordinates_4ac52e75113a03db,
+          mid_init$_237ae1c2ddd68062,
+          mid_getPVCoordinates_e5d15ef236cd9ffe,
+          mid_getPVCoordinates_294c5c99690f2356,
           max_mid
         };
 

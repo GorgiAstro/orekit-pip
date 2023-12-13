@@ -3,12 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace ode {
@@ -16,6 +10,12 @@ namespace org {
         class StepNormalizerMode;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,8 +28,8 @@ namespace org {
         class StepNormalizerMode : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_568f78fa7a294eb3,
-            mid_values_49ed94367b46bd6a,
+            mid_valueOf_5210eb97c181891e,
+            mid_values_4e88c687f0832d68,
             max_mid
           };
 

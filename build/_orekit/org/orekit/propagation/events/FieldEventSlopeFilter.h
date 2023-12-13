@@ -6,11 +6,11 @@
 namespace org {
   namespace orekit {
     namespace propagation {
-      class FieldSpacecraftState;
       namespace events {
-        class FieldEventDetector;
         class FilterType;
+        class FieldEventDetector;
       }
+      class FieldSpacecraftState;
     }
     namespace time {
       class FieldAbsoluteDate;
@@ -35,11 +35,11 @@ namespace org {
         class FieldEventSlopeFilter : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_01f5275106470eda,
-            mid_g_de1c2d709eb2829c,
-            mid_getDetector_07d9256595c42b86,
-            mid_init_811e49dad2467b67,
-            mid_create_73f982e59ae3acff,
+            mid_init$_0eea4ce3fbabb3da,
+            mid_g_2203631097e94c79,
+            mid_getDetector_e78af9d734a5fbe1,
+            mid_init_96d019f392abf918,
+            mid_create_562d2ef857953f3f,
             max_mid
           };
 

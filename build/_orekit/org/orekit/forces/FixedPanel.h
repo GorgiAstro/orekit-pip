@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
@@ -35,9 +35,9 @@ namespace org {
       class FixedPanel : public ::org::orekit::forces::Panel {
        public:
         enum {
-          mid_init$_e54897e1e1283021,
-          mid_getNormal_503a254311e5da95,
-          mid_getNormal_3fff8c49d4e2dc6b,
+          mid_init$_02d75209aa5e44fd,
+          mid_getNormal_de3c04262e60a5b3,
+          mid_getNormal_9019a5b32b11453a,
           max_mid
         };
 

@@ -20,11 +20,11 @@ namespace org {
     namespace utils {
       class IERSConventions;
     }
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace data {
       class DataContext;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -46,8 +46,8 @@ namespace org {
               class OpmWriter : public ::org::orekit::files::ccsds::utils::generation::AbstractMessageWriter {
                public:
                 enum {
-                  mid_init$_170ee021ab23bf06,
-                  mid_writeSegmentContent_e9836ce27ccfe3b9,
+                  mid_init$_751257c373115a80,
+                  mid_writeSegmentContent_309d7ce7156c8c23,
                   max_mid
                 };
 

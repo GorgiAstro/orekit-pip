@@ -4,15 +4,15 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace orbits {
-      class Orbit;
-      class OrbitType;
-    }
-  }
   namespace hipparchus {
     namespace ode {
       class AbstractIntegrator;
+    }
+  }
+  namespace orekit {
+    namespace orbits {
+      class OrbitType;
+      class Orbit;
     }
   }
 }
@@ -31,7 +31,7 @@ namespace org {
         class ODEIntegratorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_buildIntegrator_f50d555477b898d8,
+            mid_buildIntegrator_916fa199ca08d656,
             max_mid
           };
 

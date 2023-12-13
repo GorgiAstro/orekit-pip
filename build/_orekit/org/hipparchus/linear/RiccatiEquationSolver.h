@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace linear {
       class RealMatrix;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,8 +24,8 @@ namespace org {
       class RiccatiEquationSolver : public ::java::lang::Object {
        public:
         enum {
-          mid_getK_70a207fcbc031df2,
-          mid_getP_70a207fcbc031df2,
+          mid_getK_f77d745f2128c391,
+          mid_getP_f77d745f2128c391,
           max_mid
         };
 

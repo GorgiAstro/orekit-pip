@@ -7,9 +7,9 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class ObservableSatellite;
-        class GroundStation;
         class Range;
+        class GroundStation;
+        class ObservableSatellite;
       }
     }
     namespace time {
@@ -33,9 +33,9 @@ namespace org {
         class Range : public ::org::orekit::estimation::measurements::GroundReceiverMeasurement {
          public:
           enum {
-            mid_init$_0c97652d522ed1b8,
-            mid_theoreticalEvaluationWithoutDerivatives_71d69ca0f7c280a7,
-            mid_theoreticalEvaluation_eae039ee8c8a4a4d,
+            mid_init$_30a9252c5d1ad83a,
+            mid_theoreticalEvaluationWithoutDerivatives_9347cf3b1f0dd85a,
+            mid_theoreticalEvaluation_d598991c5cac8ab0,
             max_mid
           };
 

@@ -15,10 +15,10 @@ namespace org {
   namespace orekit {
     namespace propagation {
       namespace numerical {
-        class NumericalPropagator;
         namespace cr3bp {
           class STMEquations;
         }
+        class NumericalPropagator;
       }
       class SpacecraftState;
     }
@@ -35,15 +35,15 @@ namespace org {
           class CR3BPMultipleShooter : public ::org::orekit::utils::AbstractMultipleShooting {
            public:
             enum {
-              mid_init$_56e88fd08b255763,
-              mid_setClosedOrbitConstraint_ed2afdb8506b9742,
-              mid_setEpochFreedom_746492bb94848925,
-              mid_setScaleLength_10f281d777284cea,
-              mid_setScaleTime_10f281d777284cea,
-              mid_computeAdditionalConstraints_1122e29f2a25b86f,
-              mid_computeAdditionalJacobianMatrix_29dc26d4c6c7bd43,
-              mid_getAugmentedInitialState_d91edcd61f36fecc,
-              mid_getNumberOfConstraints_412668abc8d889e9,
+              mid_init$_2381028a34dd7d63,
+              mid_setClosedOrbitConstraint_fcb96c98de6fad04,
+              mid_setEpochFreedom_34742154de10200a,
+              mid_setScaleLength_8ba9fe7a847cecad,
+              mid_setScaleTime_8ba9fe7a847cecad,
+              mid_getAugmentedInitialState_f4730dd89e9880a0,
+              mid_getNumberOfConstraints_55546ef6a647f39b,
+              mid_computeAdditionalConstraints_a16345554cd829da,
+              mid_computeAdditionalJacobianMatrix_223f424c780300ce,
               max_mid
             };
 

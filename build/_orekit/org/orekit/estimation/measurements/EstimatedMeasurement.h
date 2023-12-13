@@ -5,18 +5,18 @@
 
 namespace org {
   namespace orekit {
+    namespace errors {
+      class OrekitIllegalArgumentException;
+    }
     namespace utils {
+      class TimeStampedPVCoordinates;
       class TimeSpanMap;
       class ParameterDriver;
-      class TimeStampedPVCoordinates;
     }
     namespace estimation {
       namespace measurements {
         class ObservedMeasurement;
       }
-    }
-    namespace errors {
-      class OrekitIllegalArgumentException;
     }
     namespace time {
       class AbsoluteDate;
@@ -46,15 +46,15 @@ namespace org {
         class EstimatedMeasurement : public ::org::orekit::estimation::measurements::EstimatedMeasurementBase {
          public:
           enum {
-            mid_init$_f92fd0d275c4d59c,
-            mid_getDerivativesDrivers_d7cce92225eb0db2,
-            mid_getParameterDerivatives_00b2044be7a3a4c5,
-            mid_getParameterDerivatives_d8cf911e614780c8,
-            mid_getStateDerivatives_ace8110626df0bb8,
-            mid_getStateSize_412668abc8d889e9,
-            mid_setParameterDerivatives_fdd3af5690b10570,
-            mid_setParameterDerivatives_83d85c8b9fde2e36,
-            mid_setStateDerivatives_03f9d79d0168ba0b,
+            mid_init$_1751916beaa99c3d,
+            mid_getDerivativesDrivers_14e21bf777ff0ccf,
+            mid_getParameterDerivatives_3822ea7ff73f87e7,
+            mid_getParameterDerivatives_9b6ae2200890bc5e,
+            mid_getStateDerivatives_23a0aa7ddbf2fcc5,
+            mid_getStateSize_55546ef6a647f39b,
+            mid_setParameterDerivatives_0f81e0b84a8be2d3,
+            mid_setParameterDerivatives_5f1452ec188801bb,
+            mid_setStateDerivatives_fd10cb359d67ca83,
             max_mid
           };
 

@@ -3,14 +3,14 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -22,18 +22,18 @@ namespace org {
       class FieldKeplerianAnomalyUtility : public ::java::lang::Object {
        public:
         enum {
-          mid_ellipticEccentricToMean_d5f58731bcb8a011,
-          mid_ellipticEccentricToTrue_d5f58731bcb8a011,
-          mid_ellipticMeanToEccentric_d5f58731bcb8a011,
-          mid_ellipticMeanToTrue_d5f58731bcb8a011,
-          mid_ellipticTrueToEccentric_d5f58731bcb8a011,
-          mid_ellipticTrueToMean_d5f58731bcb8a011,
-          mid_hyperbolicEccentricToMean_d5f58731bcb8a011,
-          mid_hyperbolicEccentricToTrue_d5f58731bcb8a011,
-          mid_hyperbolicMeanToEccentric_d5f58731bcb8a011,
-          mid_hyperbolicMeanToTrue_d5f58731bcb8a011,
-          mid_hyperbolicTrueToEccentric_d5f58731bcb8a011,
-          mid_hyperbolicTrueToMean_d5f58731bcb8a011,
+          mid_ellipticEccentricToMean_c6408fdce2cc6c1a,
+          mid_ellipticEccentricToTrue_c6408fdce2cc6c1a,
+          mid_ellipticMeanToEccentric_c6408fdce2cc6c1a,
+          mid_ellipticMeanToTrue_c6408fdce2cc6c1a,
+          mid_ellipticTrueToEccentric_c6408fdce2cc6c1a,
+          mid_ellipticTrueToMean_c6408fdce2cc6c1a,
+          mid_hyperbolicEccentricToMean_c6408fdce2cc6c1a,
+          mid_hyperbolicEccentricToTrue_c6408fdce2cc6c1a,
+          mid_hyperbolicMeanToEccentric_c6408fdce2cc6c1a,
+          mid_hyperbolicMeanToTrue_c6408fdce2cc6c1a,
+          mid_hyperbolicTrueToEccentric_c6408fdce2cc6c1a,
+          mid_hyperbolicTrueToMean_c6408fdce2cc6c1a,
           max_mid
         };
 

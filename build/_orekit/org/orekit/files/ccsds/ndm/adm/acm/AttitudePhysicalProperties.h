@@ -17,15 +17,15 @@ namespace org {
     }
   }
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace files {
       namespace ccsds {
         namespace definitions {
           class FrameFacade;
         }
       }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -47,22 +47,22 @@ namespace org {
               class AttitudePhysicalProperties : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_20affcbd28542333,
-                  mid_getCenterOfPressure_f88961cca75a2c0a,
-                  mid_getCenterOfPressureReferenceFrame_98f5fcaff3e3f9d2,
-                  mid_getDragCoefficient_557b8123390d8d0c,
-                  mid_getDryMass_557b8123390d8d0c,
-                  mid_getInertiaMatrix_70a207fcbc031df2,
-                  mid_getInertiaReferenceFrame_98f5fcaff3e3f9d2,
-                  mid_getWetMass_557b8123390d8d0c,
-                  mid_setCenterOfPressure_2810d2bec90e7b1c,
-                  mid_setCenterOfPressureReferenceFrame_f55eee1236275bb1,
-                  mid_setDragCoefficient_10f281d777284cea,
-                  mid_setDryMass_10f281d777284cea,
-                  mid_setInertiaMatrixEntry_754312f3734d6e2f,
-                  mid_setInertiaReferenceFrame_f55eee1236275bb1,
-                  mid_setWetMass_10f281d777284cea,
-                  mid_validate_10f281d777284cea,
+                  mid_init$_02135a6ef25adb4b,
+                  mid_getCenterOfPressure_8b724f8b4fdad1a2,
+                  mid_getCenterOfPressureReferenceFrame_69d8be1b6b0a1a94,
+                  mid_getDragCoefficient_b74f83833fdad017,
+                  mid_getDryMass_b74f83833fdad017,
+                  mid_getInertiaMatrix_f77d745f2128c391,
+                  mid_getInertiaReferenceFrame_69d8be1b6b0a1a94,
+                  mid_getWetMass_b74f83833fdad017,
+                  mid_setCenterOfPressure_1844f891addbac57,
+                  mid_setCenterOfPressureReferenceFrame_4755133c5c4c59be,
+                  mid_setDragCoefficient_8ba9fe7a847cecad,
+                  mid_setDryMass_8ba9fe7a847cecad,
+                  mid_setInertiaMatrixEntry_94fe8d9ffeb50676,
+                  mid_setInertiaReferenceFrame_4755133c5c4c59be,
+                  mid_setWetMass_8ba9fe7a847cecad,
+                  mid_validate_8ba9fe7a847cecad,
                   max_mid
                 };
 

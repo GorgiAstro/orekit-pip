@@ -5,36 +5,36 @@
 
 namespace org {
   namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+    namespace utils {
+      class ParameterDriversList;
+    }
     namespace propagation {
-      namespace conversion {
-        class PropagatorBuilder;
-        class EphemerisPropagatorBuilder;
-      }
       class StateCovariance;
       class Propagator;
+      namespace conversion {
+        class EphemerisPropagatorBuilder;
+        class PropagatorBuilder;
+      }
       class SpacecraftState;
     }
     namespace estimation {
       namespace leastsquares {
-        class ModelObserver;
         class AbstractBatchLSModel;
+        class ModelObserver;
       }
       namespace measurements {
         class ObservedMeasurement;
       }
     }
-    namespace utils {
-      class ParameterDriversList;
-    }
-    namespace time {
-      class TimeInterpolator;
-      class TimeStampedPair;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
     namespace orbits {
       class Orbit;
+    }
+    namespace time {
+      class TimeStampedPair;
+      class TimeInterpolator;
     }
   }
 }
@@ -57,13 +57,13 @@ namespace org {
         class EphemerisPropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_2ee441fbc689b748,
-            mid_init$_d43f63068c548b32,
-            mid_init$_df8ca70857921fcd,
-            mid_init$_99a5fbadd0cd572e,
-            mid_buildLeastSquaresModel_4fca41eef9d750a6,
-            mid_buildPropagator_5ad9cbd11735eecd,
-            mid_copy_1c6dea8ee82902cf,
+            mid_init$_a270f372b14e8ccf,
+            mid_init$_76b7d84534d086f1,
+            mid_init$_29c95222b0ba8aa4,
+            mid_init$_1984a4ea061303a5,
+            mid_buildLeastSquaresModel_1a4dd1f247347a8f,
+            mid_buildPropagator_708cc138373fff03,
+            mid_copy_f0747279000167ed,
             max_mid
           };
 

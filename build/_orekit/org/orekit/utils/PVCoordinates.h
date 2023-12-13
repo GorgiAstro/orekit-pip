@@ -4,29 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class FieldVector3D;
-          class Vector3D;
-        }
-      }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
-    namespace analysis {
-      namespace differentiation {
-        class DerivativeStructure;
-        class UnivariateDerivative1;
-        class UnivariateDerivative2;
-      }
-    }
-    namespace util {
-      class Blendable;
-    }
-  }
   namespace orekit {
     namespace utils {
       class FieldPVCoordinates;
@@ -34,6 +11,29 @@ namespace org {
     }
     namespace time {
       class TimeShiftable;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+          class FieldVector3D;
+        }
+      }
+    }
+    namespace analysis {
+      namespace differentiation {
+        class UnivariateDerivative1;
+        class UnivariateDerivative2;
+        class DerivativeStructure;
+      }
+    }
+    namespace util {
+      class Blendable;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -55,35 +55,35 @@ namespace org {
       class PVCoordinates : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_init$_282cea09b82f4134,
-          mid_init$_2810d2bec90e7b1c,
-          mid_init$_be9548a8a583a03d,
-          mid_init$_ef872cbae0d10840,
-          mid_init$_7dc25758da124f3f,
-          mid_init$_d63e82e7c0b1aa2f,
-          mid_init$_a59f54e2ae2d05cf,
-          mid_init$_46870da220391655,
-          mid_init$_2b97db16ec2b21f9,
-          mid_blendArithmeticallyWith_e84a973ee276ff40,
-          mid_crossProduct_f04a629f07d17851,
-          mid_estimateVelocity_28192f68d01b7004,
-          mid_getAcceleration_f88961cca75a2c0a,
-          mid_getAngularVelocity_f88961cca75a2c0a,
-          mid_getMomentum_f88961cca75a2c0a,
-          mid_getPosition_f88961cca75a2c0a,
-          mid_getVelocity_f88961cca75a2c0a,
-          mid_negate_77bd7b3cdab2713e,
-          mid_normalize_77bd7b3cdab2713e,
-          mid_positionShiftedBy_20de5f9d51c6611f,
-          mid_shiftedBy_9237689b200d23a6,
-          mid_toDerivativeStructurePV_c4ba5dc533a7295c,
-          mid_toDerivativeStructureVector_57f172e29ab8adbf,
-          mid_toString_3cffd47377eca18a,
-          mid_toUnivariateDerivative1PV_950575861e9716b3,
-          mid_toUnivariateDerivative1Vector_2d64addf4c3391d9,
-          mid_toUnivariateDerivative2PV_950575861e9716b3,
-          mid_toUnivariateDerivative2Vector_2d64addf4c3391d9,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_init$_c9e829dd925c6618,
+          mid_init$_1844f891addbac57,
+          mid_init$_b651b5ef96594ce8,
+          mid_init$_0773768711c29aaf,
+          mid_init$_3e5c7ece8fe50647,
+          mid_init$_861a083234734422,
+          mid_init$_4f2f4e9b469da4d6,
+          mid_init$_3504eb0f25931ec1,
+          mid_init$_be9a0aa1438157c0,
+          mid_blendArithmeticallyWith_13fe4b7b671cdfde,
+          mid_crossProduct_0179475057507e12,
+          mid_estimateVelocity_21c804d1eea56b9e,
+          mid_getAcceleration_8b724f8b4fdad1a2,
+          mid_getAngularVelocity_8b724f8b4fdad1a2,
+          mid_getMomentum_8b724f8b4fdad1a2,
+          mid_getPosition_8b724f8b4fdad1a2,
+          mid_getVelocity_8b724f8b4fdad1a2,
+          mid_negate_180fb117720acb76,
+          mid_normalize_180fb117720acb76,
+          mid_positionShiftedBy_498f52cd8e5a7072,
+          mid_shiftedBy_07c38118aecc9309,
+          mid_toDerivativeStructurePV_2d4908cd9204fb9d,
+          mid_toDerivativeStructureVector_87f39fdae6ed156b,
+          mid_toString_1c1fa1e935d6cdcf,
+          mid_toUnivariateDerivative1PV_3bf1e58d8bf42589,
+          mid_toUnivariateDerivative1Vector_ff5ac73a7b43eddd,
+          mid_toUnivariateDerivative2PV_3bf1e58d8bf42589,
+          mid_toUnivariateDerivative2Vector_ff5ac73a7b43eddd,
           max_mid
         };
 

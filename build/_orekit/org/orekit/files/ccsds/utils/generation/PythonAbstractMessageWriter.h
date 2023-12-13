@@ -3,32 +3,32 @@
 
 #include "org/orekit/files/ccsds/utils/generation/AbstractMessageWriter.h"
 
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-    class Object;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
         namespace utils {
-          class ContextBinding;
           namespace generation {
             class Generator;
           }
+          class ContextBinding;
         }
         namespace section {
           class Segment;
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+    class Object;
+    class String;
+  }
+  namespace io {
+    class IOException;
   }
 }
 template<class T> class JArray;
@@ -43,12 +43,12 @@ namespace org {
             class PythonAbstractMessageWriter : public ::org::orekit::files::ccsds::utils::generation::AbstractMessageWriter {
              public:
               enum {
-                mid_init$_17d2c89957221da8,
-                mid_finalize_0640e6acf969ed28,
-                mid_pythonDecRef_0640e6acf969ed28,
-                mid_pythonExtension_9e26256fb0d384a2,
-                mid_pythonExtension_3cd6a6b354c6aa22,
-                mid_writeSegmentContent_e9836ce27ccfe3b9,
+                mid_init$_171dbda6f9dc03f2,
+                mid_finalize_a1fa5dae97ea5ed2,
+                mid_pythonDecRef_a1fa5dae97ea5ed2,
+                mid_pythonExtension_6c0ce7e438e5ded4,
+                mid_pythonExtension_3d7dd2314a0dd456,
+                mid_writeSegmentContent_309d7ce7156c8c23,
                 max_mid
               };
 

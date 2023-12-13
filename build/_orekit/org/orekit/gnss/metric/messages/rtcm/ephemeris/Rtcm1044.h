@@ -36,7 +36,7 @@ namespace org {
               class Rtcm1044 : public ::org::orekit::gnss::metric::messages::rtcm::ephemeris::RtcmEphemerisMessage {
                public:
                 enum {
-                  mid_init$_9677d77b5970d147,
+                  mid_init$_1252886574498b6a,
                   max_mid
                 };
 

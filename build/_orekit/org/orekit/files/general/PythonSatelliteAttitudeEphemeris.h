@@ -3,16 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -21,12 +11,22 @@ namespace org {
         class AttitudeEphemerisFile$SatelliteAttitudeEphemeris;
       }
     }
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace attitudes {
       class BoundedAttitudeProvider;
     }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -39,16 +39,16 @@ namespace org {
         class PythonSatelliteAttitudeEphemeris : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_finalize_0640e6acf969ed28,
-            mid_getAttitudeProvider_b44a04493534d299,
-            mid_getId_3cffd47377eca18a,
-            mid_getSegments_0d9551367f7ecdef,
-            mid_getStart_7a97f7e149e79afb,
-            mid_getStop_7a97f7e149e79afb,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_getAttitudeProvider_fcce29ba1cf2a05e,
+            mid_getId_1c1fa1e935d6cdcf,
+            mid_getSegments_e62d3bb06d56d7e3,
+            mid_getStart_c325492395d89b24,
+            mid_getStop_c325492395d89b24,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
             max_mid
           };
 

@@ -3,20 +3,14 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
-        class EventDetector;
         namespace handlers {
           class EventHandler;
         }
+        class EventDetector;
       }
       class SpacecraftState;
     }
@@ -32,6 +26,12 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -43,14 +43,14 @@ namespace org {
           class PythonEventHandler : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_eventOccurred_c85ac59cb25f2670,
-              mid_finalize_0640e6acf969ed28,
-              mid_init_e0491fcf7b1e4288,
-              mid_pythonDecRef_0640e6acf969ed28,
-              mid_pythonExtension_9e26256fb0d384a2,
-              mid_pythonExtension_3cd6a6b354c6aa22,
-              mid_resetState_ce9bc9b3806ce3d4,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_eventOccurred_ae9b0131fefe6c67,
+              mid_finalize_a1fa5dae97ea5ed2,
+              mid_init_0ac7022abb4b9f0c,
+              mid_pythonDecRef_a1fa5dae97ea5ed2,
+              mid_pythonExtension_6c0ce7e438e5ded4,
+              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_resetState_ec159c1171338d74,
               max_mid
             };
 

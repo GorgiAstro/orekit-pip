@@ -7,8 +7,8 @@ namespace org {
   namespace hipparchus {
     namespace geometry {
       namespace partitioning {
-        class Hyperplane;
         class SubHyperplane$SplitSubHyperplane;
+        class Hyperplane;
         class Region;
       }
       namespace euclidean {
@@ -38,9 +38,9 @@ namespace org {
           class SubPlane : public ::org::hipparchus::geometry::partitioning::AbstractSubHyperplane {
            public:
             enum {
-              mid_init$_08c86faf9fec8eaa,
-              mid_split_ae8e2bbf2389e86e,
-              mid_buildNew_0ffd07a16ed53139,
+              mid_init$_6ae2db4be0bbe390,
+              mid_split_30674c36ae2fcf9f,
+              mid_buildNew_3d919cfe5b11c3d0,
               max_mid
             };
 

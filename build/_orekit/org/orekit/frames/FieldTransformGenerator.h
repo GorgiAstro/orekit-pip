@@ -3,19 +3,11 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace frames {
-      class TransformProvider;
       class FieldTransform;
+      class TransformProvider;
     }
     namespace utils {
       class TimeStampedGenerator;
@@ -28,6 +20,14 @@ namespace org {
     class Field;
   }
 }
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -37,8 +37,8 @@ namespace org {
       class FieldTransformGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_945544b7f70792c9,
-          mid_generate_c5683b8e06424542,
+          mid_init$_85b9a58c5d3d9cea,
+          mid_generate_50850a0bb1306a34,
           max_mid
         };
 

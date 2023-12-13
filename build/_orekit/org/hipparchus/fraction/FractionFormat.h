@@ -5,29 +5,29 @@
 
 namespace java {
   namespace text {
+    class FieldPosition;
     class ParsePosition;
     class NumberFormat;
-    class FieldPosition;
   }
   namespace util {
     class Locale;
   }
   namespace lang {
-    class Class;
     class StringBuffer;
+    class Class;
     class Object;
     class String;
   }
 }
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-      class MathIllegalStateException;
-    }
     namespace fraction {
       class FractionFormat;
       class Fraction;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
     }
   }
 }
@@ -40,20 +40,20 @@ namespace org {
       class FractionFormat : public ::org::hipparchus::fraction::AbstractFormat {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_init$_d53859bd7ba1b247,
-          mid_init$_3190c52142e043eb,
-          mid_format_c8dfafe6701753f2,
-          mid_format_60ec49fc2ad8aa0e,
-          mid_formatFraction_cd71994417403199,
-          mid_getAvailableLocales_85ff0d07ca843902,
-          mid_getImproperInstance_db0cd7373497d40e,
-          mid_getImproperInstance_b176843742057e70,
-          mid_getProperInstance_db0cd7373497d40e,
-          mid_getProperInstance_b176843742057e70,
-          mid_parse_a402f8f864ba9db4,
-          mid_parse_fb155efb3cdca00d,
-          mid_getDefaultNumberFormat_001645e916bd626d,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_init$_b7f3d50b51ef7518,
+          mid_init$_a87510accfde9c74,
+          mid_format_87568a31a08a12c5,
+          mid_format_b972afa1d89f0ad4,
+          mid_formatFraction_ce23704a3b231ba8,
+          mid_getAvailableLocales_8d2cd0b971cc7b85,
+          mid_getImproperInstance_a5d7d4d1f08eb9e1,
+          mid_getImproperInstance_229a8f966d65f9e8,
+          mid_getProperInstance_a5d7d4d1f08eb9e1,
+          mid_getProperInstance_229a8f966d65f9e8,
+          mid_parse_8370e0913d422863,
+          mid_parse_813491fbcb23677d,
+          mid_getDefaultNumberFormat_87ffffc449cd25a5,
           max_mid
         };
 

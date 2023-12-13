@@ -13,11 +13,11 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace analysis {
-      class MultivariateFunction;
-    }
     namespace optim {
       class PointValuePair;
+    }
+    namespace analysis {
+      class MultivariateFunction;
     }
   }
 }
@@ -33,15 +33,15 @@ namespace org {
             class NelderMeadSimplex : public ::org::hipparchus::optim::nonlinear::scalar::noderiv::AbstractSimplex {
              public:
               enum {
-                mid_init$_cc18240f4a737f14,
-                mid_init$_edb361bfdd1ad9ae,
-                mid_init$_a3da1a935cb37f7b,
-                mid_init$_89aad365fb0ed8da,
-                mid_init$_0536af1b89c263e5,
-                mid_init$_b2e19060b99cf780,
-                mid_init$_0d23f64daa74287b,
-                mid_init$_850a0e81dbd48ad1,
-                mid_iterate_5af60315979aa937,
+                mid_init$_ab69da052b88f50c,
+                mid_init$_07adb42ffaa97d31,
+                mid_init$_44ed599e93e8a30c,
+                mid_init$_d5322b8b512aeb26,
+                mid_init$_4a296642ea3db7d7,
+                mid_init$_05d8adfe90de18ea,
+                mid_init$_f688d28255ba75ab,
+                mid_init$_83f8fa9221fe9dc2,
+                mid_iterate_7c5f20de6989de35,
                 max_mid
               };
 

@@ -6,9 +6,9 @@
 namespace java {
   namespace lang {
     class ModuleLayer;
+    class ModuleLayer$Controller;
     class Module;
     class Class;
-    class ModuleLayer$Controller;
     class String;
   }
 }
@@ -20,10 +20,10 @@ namespace java {
     class ModuleLayer$Controller : public ::java::lang::Object {
      public:
       enum {
-        mid_addExports_d8130dcb512da5ee,
-        mid_addOpens_d8130dcb512da5ee,
-        mid_addReads_3fb90a8c9cf73541,
-        mid_layer_a9837dd004e81a19,
+        mid_addExports_0d8ace6424583464,
+        mid_addOpens_0d8ace6424583464,
+        mid_addReads_bd6a30f240548966,
+        mid_layer_c147713285b11692,
         max_mid
       };
 

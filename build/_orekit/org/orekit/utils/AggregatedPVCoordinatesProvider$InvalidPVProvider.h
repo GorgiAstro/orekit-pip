@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace utils {
-      class PVCoordinatesProvider;
       class TimeStampedPVCoordinates;
+      class PVCoordinatesProvider;
     }
     namespace frames {
       class Frame;
@@ -31,8 +31,8 @@ namespace org {
       class AggregatedPVCoordinatesProvider$InvalidPVProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_getPVCoordinates_17742a9a6655bdb1,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_getPVCoordinates_e5d15ef236cd9ffe,
           max_mid
         };
 

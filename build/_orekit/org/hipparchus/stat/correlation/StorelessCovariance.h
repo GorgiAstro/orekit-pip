@@ -5,14 +5,14 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-      class MathRuntimeException;
-    }
     namespace stat {
       namespace correlation {
         class StorelessCovariance;
       }
+    }
+    namespace exception {
+      class MathRuntimeException;
+      class MathIllegalArgumentException;
     }
     namespace linear {
       class RealMatrix;
@@ -34,14 +34,14 @@ namespace org {
         class StorelessCovariance : public ::org::hipparchus::stat::correlation::Covariance {
          public:
           enum {
-            mid_init$_a3da1a935cb37f7b,
-            mid_init$_746492bb94848925,
-            mid_append_f4663404551d300b,
-            mid_getCovariance_21b81d54c06b64b0,
-            mid_getCovarianceMatrix_70a207fcbc031df2,
-            mid_getData_8cf5267aa13a77f3,
-            mid_getN_412668abc8d889e9,
-            mid_increment_cc18240f4a737f14,
+            mid_init$_44ed599e93e8a30c,
+            mid_init$_34742154de10200a,
+            mid_append_a6bf97afc932971f,
+            mid_getCovariance_cad98089d00f8a5b,
+            mid_getCovarianceMatrix_f77d745f2128c391,
+            mid_getData_3b7b373db8e7887f,
+            mid_getN_55546ef6a647f39b,
+            mid_increment_ab69da052b88f50c,
             max_mid
           };
 

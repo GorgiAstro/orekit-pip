@@ -22,18 +22,18 @@ namespace org {
               class AttitudeDeterminationSensor : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_0640e6acf969ed28,
-                  mid_getNbSensorNoiseCovariance_412668abc8d889e9,
-                  mid_getSensorFrequency_557b8123390d8d0c,
-                  mid_getSensorNoiseCovariance_a53a7513ecedada2,
-                  mid_getSensorNumber_412668abc8d889e9,
-                  mid_getSensorUsed_3cffd47377eca18a,
-                  mid_setNbSensorNoiseCovariance_a3da1a935cb37f7b,
-                  mid_setSensorFrequency_10f281d777284cea,
-                  mid_setSensorNoiseCovariance_cc18240f4a737f14,
-                  mid_setSensorNumber_a3da1a935cb37f7b,
-                  mid_setSensorUsed_f5ffdf29129ef90a,
-                  mid_validate_10f281d777284cea,
+                  mid_init$_a1fa5dae97ea5ed2,
+                  mid_getNbSensorNoiseCovariance_55546ef6a647f39b,
+                  mid_getSensorFrequency_b74f83833fdad017,
+                  mid_getSensorNoiseCovariance_25e1757a36c4dde2,
+                  mid_getSensorNumber_55546ef6a647f39b,
+                  mid_getSensorUsed_1c1fa1e935d6cdcf,
+                  mid_setNbSensorNoiseCovariance_44ed599e93e8a30c,
+                  mid_setSensorFrequency_8ba9fe7a847cecad,
+                  mid_setSensorNoiseCovariance_ab69da052b88f50c,
+                  mid_setSensorNumber_44ed599e93e8a30c,
+                  mid_setSensorUsed_734b91ac30d5f9b4,
+                  mid_validate_8ba9fe7a847cecad,
                   max_mid
                 };
 

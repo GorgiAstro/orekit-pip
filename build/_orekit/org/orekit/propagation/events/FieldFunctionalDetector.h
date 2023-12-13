@@ -6,15 +6,15 @@
 namespace org {
   namespace orekit {
     namespace propagation {
-      class FieldSpacecraftState;
       namespace events {
         class FieldFunctionalDetector;
       }
+      class FieldSpacecraftState;
     }
   }
   namespace hipparchus {
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -32,9 +32,9 @@ namespace org {
         class FieldFunctionalDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_979ae7f57a96b096,
-            mid_g_de1c2d709eb2829c,
-            mid_create_7866f1fd33c539a5,
+            mid_init$_02ab84aa7626616d,
+            mid_g_2203631097e94c79,
+            mid_create_a5422a32ae444df9,
             max_mid
           };
 

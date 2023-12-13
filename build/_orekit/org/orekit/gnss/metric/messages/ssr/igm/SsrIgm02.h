@@ -3,6 +3,23 @@
 
 #include "org/orekit/gnss/metric/messages/ssr/igm/SsrIgmMessage.h"
 
+namespace org {
+  namespace orekit {
+    namespace gnss {
+      class SatelliteSystem;
+      namespace metric {
+        namespace messages {
+          namespace ssr {
+            namespace igm {
+              class SsrIgm02Header;
+              class SsrIgm02Data;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -11,23 +28,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace gnss {
-      namespace metric {
-        namespace messages {
-          namespace ssr {
-            namespace igm {
-              class SsrIgm02Data;
-              class SsrIgm02Header;
-            }
-          }
-        }
-      }
-      class SatelliteSystem;
-    }
   }
 }
 template<class T> class JArray;
@@ -43,8 +43,8 @@ namespace org {
               class SsrIgm02 : public ::org::orekit::gnss::metric::messages::ssr::igm::SsrIgmMessage {
                public:
                 enum {
-                  mid_init$_87eda0b52690e3d3,
-                  mid_getSsrIgm02Data_1e62c2f73fbdd1c4,
+                  mid_init$_d186280b3ba694f4,
+                  mid_getSsrIgm02Data_810bed48fafb0b9a,
                   max_mid
                 };
 

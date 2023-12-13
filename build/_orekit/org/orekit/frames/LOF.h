@@ -6,9 +6,9 @@
 namespace org {
   namespace orekit {
     namespace frames {
-      class LOF;
-      class Transform;
       class FieldTransform;
+      class Transform;
+      class LOF;
     }
     namespace utils {
       class FieldPVCoordinates;
@@ -23,8 +23,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Rotation;
           class FieldRotation;
+          class Rotation;
         }
       }
     }
@@ -46,20 +46,20 @@ namespace org {
       class LOF : public ::java::lang::Object {
        public:
         enum {
-          mid_getName_3cffd47377eca18a,
-          mid_isQuasiInertial_89b302893bdbe1f1,
-          mid_rotationFromInertial_9b71bf39454b4a07,
-          mid_rotationFromInertial_1022f468fb3d1015,
-          mid_rotationFromLOF_4589fd7f02974794,
-          mid_rotationFromLOF_3d58d3c4fbbdd666,
-          mid_rotationFromLOFInToLOFOut_9a9c25ec3dddff77,
-          mid_rotationFromLOFInToLOFOut_dc0beda38c449646,
-          mid_transformFromInertial_2a23f2d721e3dbf7,
-          mid_transformFromInertial_770b64ef6abe3e27,
-          mid_transformFromLOF_c10a26e3ee070a26,
-          mid_transformFromLOF_434b8bd008c153c5,
-          mid_transformFromLOFInToLOFOut_0b931f6337724e6c,
-          mid_transformFromLOFInToLOFOut_fbf49304709710af,
+          mid_getName_1c1fa1e935d6cdcf,
+          mid_isQuasiInertial_9ab94ac1dc23b105,
+          mid_rotationFromInertial_9c03210e4a66b8b3,
+          mid_rotationFromInertial_8f928c19e9edde2b,
+          mid_rotationFromLOF_a4b25c0232d43859,
+          mid_rotationFromLOF_68a01a5cb563ead4,
+          mid_rotationFromLOFInToLOFOut_885e11fa763be356,
+          mid_rotationFromLOFInToLOFOut_71053c63fef56b06,
+          mid_transformFromInertial_e4502aed5587981a,
+          mid_transformFromInertial_b95ac950aa1cdd61,
+          mid_transformFromLOF_28d6d2ecbe474174,
+          mid_transformFromLOF_484988e303f6b17e,
+          mid_transformFromLOFInToLOFOut_575ca9c31554eb21,
+          mid_transformFromLOFInToLOFOut_61f6e71d06b6e152,
           max_mid
         };
 
@@ -82,10 +82,10 @@ namespace org {
         ::org::hipparchus::geometry::euclidean::threed::FieldRotation rotationFromLOF(const ::org::hipparchus::Field &, const LOF &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::utils::FieldPVCoordinates &) const;
         static ::org::hipparchus::geometry::euclidean::threed::Rotation rotationFromLOFInToLOFOut(const LOF &, const LOF &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::utils::PVCoordinates &);
         static ::org::hipparchus::geometry::euclidean::threed::FieldRotation rotationFromLOFInToLOFOut(const ::org::hipparchus::Field &, const LOF &, const LOF &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::utils::FieldPVCoordinates &);
-        ::org::orekit::frames::Transform transformFromInertial(const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::utils::PVCoordinates &) const;
         ::org::orekit::frames::FieldTransform transformFromInertial(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::utils::FieldPVCoordinates &) const;
-        ::org::orekit::frames::FieldTransform transformFromLOF(const LOF &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::utils::FieldPVCoordinates &) const;
+        ::org::orekit::frames::Transform transformFromInertial(const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::utils::PVCoordinates &) const;
         ::org::orekit::frames::Transform transformFromLOF(const LOF &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::utils::PVCoordinates &) const;
+        ::org::orekit::frames::FieldTransform transformFromLOF(const LOF &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::utils::FieldPVCoordinates &) const;
         static ::org::orekit::frames::Transform transformFromLOFInToLOFOut(const LOF &, const LOF &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::utils::PVCoordinates &);
         static ::org::orekit::frames::FieldTransform transformFromLOFInToLOFOut(const LOF &, const LOF &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::utils::FieldPVCoordinates &);
       };

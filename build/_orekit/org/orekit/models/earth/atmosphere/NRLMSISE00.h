@@ -4,16 +4,24 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace bodies {
-      class BodyShape;
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+          class FieldVector3D;
+        }
+      }
     }
+    class CalculusFieldElement;
+  }
+  namespace orekit {
     namespace models {
       namespace earth {
         namespace atmosphere {
-          class NRLMSISE00InputParameters;
           class NRLMSISE00;
           class Atmosphere;
+          class NRLMSISE00InputParameters;
         }
       }
     }
@@ -28,17 +36,9 @@ namespace org {
     namespace frames {
       class Frame;
     }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class FieldVector3D;
-          class Vector3D;
-        }
-      }
+    namespace bodies {
+      class BodyShape;
     }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -57,12 +57,12 @@ namespace org {
           class NRLMSISE00 : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_e99c95858c97e349,
-              mid_init$_7d34f4ef06631494,
-              mid_getDensity_818999d9e7960fd1,
-              mid_getDensity_57dd506d2d9ba196,
-              mid_getFrame_6c9bc0a928c56d4e,
-              mid_withSwitch_8bc8fb0092c9c486,
+              mid_init$_9b35b29291dae8d1,
+              mid_init$_788a8952f1bb6937,
+              mid_getDensity_e9a4fc2340b58984,
+              mid_getDensity_58866e32a1c9318b,
+              mid_getFrame_2c51111cc6894ba1,
+              mid_withSwitch_dc60ac44bfc06b8d,
               max_mid
             };
 

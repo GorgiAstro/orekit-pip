@@ -3,20 +3,20 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace utils {
       namespace units {
-        class Unit;
         class UnitsConverter;
+        class Unit;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -29,11 +29,11 @@ namespace org {
         class UnitsConverter : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_dc8dedbc90d2894e,
-            mid_convert_7e960cd6eee376d8,
-            mid_getFrom_3267fc1a8500bfc2,
-            mid_getTo_3267fc1a8500bfc2,
-            mid_toString_3cffd47377eca18a,
+            mid_init$_4d5ce5d361e6f129,
+            mid_convert_04fd0666b613d2ab,
+            mid_getFrom_6466188dbb1eea22,
+            mid_getTo_6466188dbb1eea22,
+            mid_toString_1c1fa1e935d6cdcf,
             max_mid
           };
 

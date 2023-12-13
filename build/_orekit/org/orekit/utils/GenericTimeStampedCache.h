@@ -5,20 +5,20 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class TimeStampedGenerator;
-      class TimeStampedCache;
-    }
     namespace time {
-      class AbsoluteDate;
       class TimeStamped;
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class TimeStampedCache;
+      class TimeStampedGenerator;
     }
   }
 }
 namespace java {
   namespace lang {
-    class IllegalStateException;
     class Class;
+    class IllegalStateException;
   }
   namespace util {
     namespace stream {
@@ -35,21 +35,21 @@ namespace org {
       class GenericTimeStampedCache : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0f6126ec31c23fbe,
-          mid_init$_7dccdc905f2755d6,
-          mid_getEarliest_da8f710d3d2958bf,
-          mid_getEntries_412668abc8d889e9,
-          mid_getGenerateCalls_412668abc8d889e9,
-          mid_getGenerator_2c8890bb845f5c9a,
-          mid_getGetNeighborsCalls_412668abc8d889e9,
-          mid_getLatest_da8f710d3d2958bf,
-          mid_getMaxNeighborsSize_412668abc8d889e9,
-          mid_getMaxSlots_412668abc8d889e9,
-          mid_getMaxSpan_557b8123390d8d0c,
-          mid_getNeighbors_b9470a4d1609cf1f,
-          mid_getNewSlotQuantumGap_557b8123390d8d0c,
-          mid_getSlots_412668abc8d889e9,
-          mid_getSlotsEvictions_412668abc8d889e9,
+          mid_init$_3b3b184c420a6a62,
+          mid_init$_afe6b7a902b9406a,
+          mid_getEarliest_a63f3f151ca9e302,
+          mid_getEntries_55546ef6a647f39b,
+          mid_getGenerateCalls_55546ef6a647f39b,
+          mid_getGenerator_2a7005c2a7bbbe6e,
+          mid_getGetNeighborsCalls_55546ef6a647f39b,
+          mid_getLatest_a63f3f151ca9e302,
+          mid_getMaxNeighborsSize_55546ef6a647f39b,
+          mid_getMaxSlots_55546ef6a647f39b,
+          mid_getMaxSpan_b74f83833fdad017,
+          mid_getNeighbors_70177eb25c19b8d4,
+          mid_getNewSlotQuantumGap_b74f83833fdad017,
+          mid_getSlots_55546ef6a647f39b,
+          mid_getSlotsEvictions_55546ef6a647f39b,
           max_mid
         };
 

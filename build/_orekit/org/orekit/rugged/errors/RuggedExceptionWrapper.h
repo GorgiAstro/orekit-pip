@@ -27,8 +27,8 @@ namespace org {
         class RuggedExceptionWrapper : public ::java::lang::RuntimeException {
          public:
           enum {
-            mid_init$_e8f16eb16464d495,
-            mid_getException_f134d5c5de78cfc2,
+            mid_init$_fefacca744cd46c6,
+            mid_getException_3fe1f0c20143accc,
             max_mid
           };
 

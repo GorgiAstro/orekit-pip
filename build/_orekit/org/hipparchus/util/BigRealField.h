@@ -3,21 +3,21 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace util {
-      class BigReal;
-      class BigRealField;
-    }
-    class Field;
-  }
-}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace util {
+      class BigRealField;
+      class BigReal;
+    }
+    class Field;
   }
 }
 template<class T> class JArray;
@@ -29,12 +29,12 @@ namespace org {
       class BigRealField : public ::java::lang::Object {
        public:
         enum {
-          mid_equals_221e8e85cb385209,
-          mid_getInstance_5a46ddf8e02ff43d,
-          mid_getOne_2073e31f7b6bcf19,
-          mid_getRuntimeClass_d4b191ff8147475d,
-          mid_getZero_2073e31f7b6bcf19,
-          mid_hashCode_412668abc8d889e9,
+          mid_equals_460c5e2d9d51c6cc,
+          mid_getInstance_ab1f2b526cc00b23,
+          mid_getOne_152d3c51a3e6d94d,
+          mid_getRuntimeClass_1aeb0737a960d371,
+          mid_getZero_152d3c51a3e6d94d,
+          mid_hashCode_55546ef6a647f39b,
           max_mid
         };
 

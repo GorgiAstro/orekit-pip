@@ -14,21 +14,21 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace utils {
+      class TimeStampedAngularCoordinates;
+      class AngularDerivativesFilter;
+    }
+    namespace propagation {
+      class SpacecraftState;
+    }
     namespace files {
       namespace general {
-        class AttitudeEphemerisFile$SatelliteAttitudeEphemeris;
         class OrekitAttitudeEphemerisFile$OrekitAttitudeEphemerisSegment;
+        class AttitudeEphemerisFile$SatelliteAttitudeEphemeris;
       }
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace utils {
-      class AngularDerivativesFilter;
-      class TimeStampedAngularCoordinates;
-    }
-    namespace propagation {
-      class SpacecraftState;
     }
   }
 }
@@ -42,12 +42,12 @@ namespace org {
         class OrekitAttitudeEphemerisFile$OrekitSatelliteAttitudeEphemeris : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_f5ffdf29129ef90a,
-            mid_addNewSegment_72d5ae0b9255b495,
-            mid_getId_3cffd47377eca18a,
-            mid_getSegments_0d9551367f7ecdef,
-            mid_getStart_7a97f7e149e79afb,
-            mid_getStop_7a97f7e149e79afb,
+            mid_init$_734b91ac30d5f9b4,
+            mid_addNewSegment_c86c123a1bef01e6,
+            mid_getId_1c1fa1e935d6cdcf,
+            mid_getSegments_e62d3bb06d56d7e3,
+            mid_getStart_c325492395d89b24,
+            mid_getStop_c325492395d89b24,
             max_mid
           };
 

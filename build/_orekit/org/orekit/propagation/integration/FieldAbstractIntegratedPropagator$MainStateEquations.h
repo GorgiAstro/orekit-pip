@@ -4,16 +4,16 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace propagation {
       class FieldSpacecraftState;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
+    namespace time {
+      class FieldAbsoluteDate;
+    }
   }
 }
 namespace java {
@@ -31,8 +31,8 @@ namespace org {
         class FieldAbstractIntegratedPropagator$MainStateEquations : public ::java::lang::Object {
          public:
           enum {
-            mid_computeDerivatives_00d4758be4cee3ce,
-            mid_init_811e49dad2467b67,
+            mid_computeDerivatives_eaf6bc2191c5b1b4,
+            mid_init_96d019f392abf918,
             max_mid
           };
 

@@ -3,6 +3,14 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace models {
@@ -15,8 +23,8 @@ namespace org {
       }
     }
     namespace bodies {
-      class GeodeticPoint;
       class FieldGeodeticPoint;
+      class GeodeticPoint;
     }
     namespace time {
       class FieldAbsoluteDate;
@@ -30,14 +38,6 @@ namespace org {
     class CalculusFieldElement;
   }
 }
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -49,15 +49,15 @@ namespace org {
           class MendesPavlisModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_bc3712e794ac7a81,
-              mid_computeZenithDelay_fd96fda04d407b93,
-              mid_computeZenithDelay_006dc50aa6e193b5,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_getStandardModel_8facfaf27f8256a8,
-              mid_mappingFactors_964dc353437b5da2,
-              mid_mappingFactors_e6ce6b157ff98280,
-              mid_pathDelay_a4fdd877b349d4a6,
-              mid_pathDelay_129678f244f63094,
+              mid_init$_49f4b5153d696ea5,
+              mid_computeZenithDelay_90983db312f6218b,
+              mid_computeZenithDelay_0b467d379fb3f504,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_getStandardModel_ec7740424c9ae069,
+              mid_mappingFactors_6e118a7a5998051c,
+              mid_mappingFactors_6dcded9cb7dee3c2,
+              mid_pathDelay_2edbfa177156ee09,
+              mid_pathDelay_6f66c6b7094d6f08,
               max_mid
             };
 
@@ -74,14 +74,14 @@ namespace org {
 
             MendesPavlisModel(jdouble, jdouble, jdouble, jdouble);
 
-            JArray< jdouble > computeZenithDelay(const ::org::orekit::bodies::GeodeticPoint &, const JArray< jdouble > &, const ::org::orekit::time::AbsoluteDate &) const;
             JArray< ::org::hipparchus::CalculusFieldElement > computeZenithDelay(const ::org::orekit::bodies::FieldGeodeticPoint &, const JArray< ::org::hipparchus::CalculusFieldElement > &, const ::org::orekit::time::FieldAbsoluteDate &) const;
+            JArray< jdouble > computeZenithDelay(const ::org::orekit::bodies::GeodeticPoint &, const JArray< jdouble > &, const ::org::orekit::time::AbsoluteDate &) const;
             ::java::util::List getParametersDrivers() const;
             static MendesPavlisModel getStandardModel(jdouble);
-            JArray< jdouble > mappingFactors(jdouble, const ::org::orekit::bodies::GeodeticPoint &, const ::org::orekit::time::AbsoluteDate &) const;
             JArray< ::org::hipparchus::CalculusFieldElement > mappingFactors(const ::org::hipparchus::CalculusFieldElement &, const ::org::orekit::bodies::FieldGeodeticPoint &, const ::org::orekit::time::FieldAbsoluteDate &) const;
-            ::org::hipparchus::CalculusFieldElement pathDelay(const ::org::hipparchus::CalculusFieldElement &, const ::org::orekit::bodies::FieldGeodeticPoint &, const JArray< ::org::hipparchus::CalculusFieldElement > &, const ::org::orekit::time::FieldAbsoluteDate &) const;
+            JArray< jdouble > mappingFactors(jdouble, const ::org::orekit::bodies::GeodeticPoint &, const ::org::orekit::time::AbsoluteDate &) const;
             jdouble pathDelay(jdouble, const ::org::orekit::bodies::GeodeticPoint &, const JArray< jdouble > &, const ::org::orekit::time::AbsoluteDate &) const;
+            ::org::hipparchus::CalculusFieldElement pathDelay(const ::org::hipparchus::CalculusFieldElement &, const ::org::orekit::bodies::FieldGeodeticPoint &, const JArray< ::org::hipparchus::CalculusFieldElement > &, const ::org::orekit::time::FieldAbsoluteDate &) const;
           };
         }
       }

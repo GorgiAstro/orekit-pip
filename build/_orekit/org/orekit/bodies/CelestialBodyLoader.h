@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace bodies {
       class CelestialBody;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,7 +25,7 @@ namespace org {
       class CelestialBodyLoader : public ::java::lang::Object {
        public:
         enum {
-          mid_loadCelestialBody_47d89fc2b3d16fd5,
+          mid_loadCelestialBody_7eb4325e211386e9,
           max_mid
         };
 

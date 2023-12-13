@@ -6,13 +6,14 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
+      class Point;
       namespace euclidean {
         namespace twod {
-          class PolygonsSet;
-          class Line;
           class Vector2D;
-          class Euclidean2D;
+          class Line;
+          class PolygonsSet;
           class SubLine;
+          class Euclidean2D;
         }
         namespace oned {
           class Euclidean1D;
@@ -20,11 +21,10 @@ namespace org {
         }
       }
       namespace partitioning {
-        class Transform;
-        class Hyperplane;
         class Embedding;
+        class Hyperplane;
+        class Transform;
       }
-      class Point;
       class Vector;
     }
     namespace exception {
@@ -48,37 +48,37 @@ namespace org {
           class Line : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_b2fa07e96193ae69,
-              mid_init$_305e00e57a81d096,
-              mid_contains_3a693ebb932d4aff,
-              mid_copySelf_e207c2684f5ea968,
-              mid_distance_f29c6927714cda74,
-              mid_emptyHyperplane_c6d04aa189a69292,
-              mid_getAngle_557b8123390d8d0c,
-              mid_getOffset_2ee22a1420c3a4b8,
-              mid_getOffset_cf1fec2b7b1c0efe,
-              mid_getOffset_b540ea36818b5810,
-              mid_getOriginOffset_557b8123390d8d0c,
-              mid_getPointAt_37d36001218f4374,
-              mid_getReverse_e207c2684f5ea968,
-              mid_getTolerance_557b8123390d8d0c,
-              mid_getTransform_ed7f83d18c2135d3,
-              mid_intersection_a9dc84df4c4b4411,
-              mid_isParallelTo_7009eecb33826b22,
-              mid_project_328d0d966eeb9668,
-              mid_reset_aa286ab7725055db,
-              mid_reset_c3edcc9ac6d6b0fb,
-              mid_revertSelf_0640e6acf969ed28,
-              mid_sameOrientationAs_cb9274a363000a77,
-              mid_setAngle_10f281d777284cea,
-              mid_setOriginOffset_10f281d777284cea,
-              mid_toSpace_52abee4ee839df65,
-              mid_toSpace_adc34d508fd7001c,
-              mid_toSubSpace_42ff1f7fd4bd45c4,
-              mid_toSubSpace_be3d5e0f525cd980,
-              mid_translateToPoint_086d06980fa26fc1,
-              mid_wholeHyperplane_c6d04aa189a69292,
-              mid_wholeSpace_14eed69045150761,
+              mid_init$_14bec7b2bdc550d3,
+              mid_init$_bd9cd5e56b659d61,
+              mid_contains_7f9cee33caf2d2df,
+              mid_copySelf_f76ed72539e37ce2,
+              mid_distance_a7f439b8ba8ffc55,
+              mid_emptyHyperplane_dbab5bf6f6485ce8,
+              mid_getAngle_b74f83833fdad017,
+              mid_getOffset_991880b3f2f7e107,
+              mid_getOffset_f0dd8cb59ea09794,
+              mid_getOffset_2f915fa9762130df,
+              mid_getOriginOffset_b74f83833fdad017,
+              mid_getPointAt_22a6b58b73b3753b,
+              mid_getReverse_f76ed72539e37ce2,
+              mid_getTolerance_b74f83833fdad017,
+              mid_getTransform_677c2cd6ff5569fd,
+              mid_intersection_f461b019c08ce2f9,
+              mid_isParallelTo_88eea5997cf84611,
+              mid_project_2214f7ad5b6ca158,
+              mid_reset_19aaf4ce06642948,
+              mid_reset_0458ed3c331169c7,
+              mid_revertSelf_a1fa5dae97ea5ed2,
+              mid_sameOrientationAs_806ecfbca1984226,
+              mid_setAngle_8ba9fe7a847cecad,
+              mid_setOriginOffset_8ba9fe7a847cecad,
+              mid_toSpace_541d7608593f5738,
+              mid_toSpace_4f90fdb34b7d1107,
+              mid_toSubSpace_b2178ad896cd2546,
+              mid_toSubSpace_b1d2ab531c8e2a03,
+              mid_translateToPoint_e94ae32a63c9501d,
+              mid_wholeHyperplane_dbab5bf6f6485ce8,
+              mid_wholeSpace_f9a97598fbca1de4,
               max_mid
             };
 

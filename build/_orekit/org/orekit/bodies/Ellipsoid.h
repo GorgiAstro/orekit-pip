@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
@@ -18,12 +18,12 @@ namespace org {
     }
   }
   namespace orekit {
-    namespace frames {
-      class Frame;
-    }
     namespace bodies {
       class FieldEllipse;
       class Ellipse;
+    }
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -44,17 +44,17 @@ namespace org {
       class Ellipsoid : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_563f09c906576b6f,
-          mid_getA_557b8123390d8d0c,
-          mid_getB_557b8123390d8d0c,
-          mid_getC_557b8123390d8d0c,
-          mid_getFrame_6c9bc0a928c56d4e,
-          mid_getPlaneSection_8bcf26874b6ac495,
-          mid_getPlaneSection_0c53fe7c07ad58f7,
-          mid_isInside_7a86ea6adaa11bf8,
-          mid_isInside_7ccf3b3f40d5fcd3,
-          mid_pointOnLimb_b3579c1d2113481e,
-          mid_pointOnLimb_720ad0a891308b00,
+          mid_init$_736cb871345d6087,
+          mid_getA_b74f83833fdad017,
+          mid_getB_b74f83833fdad017,
+          mid_getC_b74f83833fdad017,
+          mid_getFrame_2c51111cc6894ba1,
+          mid_getPlaneSection_fc24a7c1bc5c2624,
+          mid_getPlaneSection_af7d57647b7c1409,
+          mid_isInside_f7871dc9552d25d0,
+          mid_isInside_82d995e738c9e027,
+          mid_pointOnLimb_f9c086f1066c613d,
+          mid_pointOnLimb_301a09f2b4c627de,
           max_mid
         };
 

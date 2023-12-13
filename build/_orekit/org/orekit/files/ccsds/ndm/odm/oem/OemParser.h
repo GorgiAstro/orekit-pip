@@ -25,12 +25,12 @@ namespace org {
         class EphemerisFileParser;
       }
     }
+    namespace utils {
+      class IERSConventions;
+    }
     namespace data {
       class DataSource;
       class DataContext;
-    }
-    namespace utils {
-      class IERSConventions;
     }
     namespace time {
       class AbsoluteDate;
@@ -55,19 +55,19 @@ namespace org {
               class OemParser : public ::org::orekit::files::ccsds::ndm::odm::OdmParser {
                public:
                 enum {
-                  mid_build_22885fb1ea7d5833,
-                  mid_finalizeData_89b302893bdbe1f1,
-                  mid_finalizeHeader_89b302893bdbe1f1,
-                  mid_finalizeMetadata_89b302893bdbe1f1,
-                  mid_getHeader_d7722dc369ae0874,
-                  mid_inData_89b302893bdbe1f1,
-                  mid_inHeader_89b302893bdbe1f1,
-                  mid_inMetadata_89b302893bdbe1f1,
-                  mid_parse_b41e0aee65ea46fa,
-                  mid_prepareData_89b302893bdbe1f1,
-                  mid_prepareHeader_89b302893bdbe1f1,
-                  mid_prepareMetadata_89b302893bdbe1f1,
-                  mid_reset_a580586827f4ec13,
+                  mid_build_822f8bd254a8fa1e,
+                  mid_finalizeData_9ab94ac1dc23b105,
+                  mid_finalizeHeader_9ab94ac1dc23b105,
+                  mid_finalizeMetadata_9ab94ac1dc23b105,
+                  mid_getHeader_de29107d9fd9c097,
+                  mid_inData_9ab94ac1dc23b105,
+                  mid_inHeader_9ab94ac1dc23b105,
+                  mid_inMetadata_9ab94ac1dc23b105,
+                  mid_parse_437e74bd1ebc510d,
+                  mid_prepareData_9ab94ac1dc23b105,
+                  mid_prepareHeader_9ab94ac1dc23b105,
+                  mid_prepareMetadata_9ab94ac1dc23b105,
+                  mid_reset_28163d47221b3cf7,
                   max_mid
                 };
 

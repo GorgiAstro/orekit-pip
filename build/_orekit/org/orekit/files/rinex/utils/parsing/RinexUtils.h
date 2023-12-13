@@ -5,9 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeScales;
-    }
     namespace files {
       namespace rinex {
         class RinexFile;
@@ -15,6 +12,9 @@ namespace org {
           class RinexBaseHeader;
         }
       }
+    }
+    namespace time {
+      class TimeScales;
     }
   }
 }
@@ -36,15 +36,15 @@ namespace org {
             class RinexUtils : public ::java::lang::Object {
              public:
               enum {
-                mid_convert2DigitsYear_0092017e99012694,
-                mid_getLabel_60bb1b490b673cbf,
-                mid_matchesLabel_64c9e5626fbef1d6,
-                mid_parseComment_e76e76329b477742,
-                mid_parseDouble_9b73674a2b24fce0,
-                mid_parseInt_c5ebe9457f5c54f8,
-                mid_parseProgramRunByDate_c3775fbe3016c9f8,
-                mid_parseString_5ef851871fdd5040,
-                mid_parseVersionFileTypeSatelliteSystem_469c8644f4d64922,
+                mid_convert2DigitsYear_0e7cf35192c3effe,
+                mid_getLabel_6f0f3576df9f75ee,
+                mid_matchesLabel_e7bf5b93f9300a4f,
+                mid_parseComment_f2c374ea04e18089,
+                mid_parseDouble_7d79724e4f59c240,
+                mid_parseInt_2e817907107bad64,
+                mid_parseProgramRunByDate_29ae31375ddb62b3,
+                mid_parseString_25c58a005fb431eb,
+                mid_parseVersionFileTypeSatelliteSystem_14bfb28ba8b3d689,
                 max_mid
               };
 

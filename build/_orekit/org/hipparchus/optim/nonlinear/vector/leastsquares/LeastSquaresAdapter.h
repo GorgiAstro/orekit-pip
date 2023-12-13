@@ -8,10 +8,8 @@ namespace org {
     namespace util {
       class Incrementor;
     }
-    namespace linear {
-      class RealVector;
-    }
     namespace optim {
+      class ConvergenceChecker;
       namespace nonlinear {
         namespace vector {
           namespace leastsquares {
@@ -20,7 +18,9 @@ namespace org {
           }
         }
       }
-      class ConvergenceChecker;
+    }
+    namespace linear {
+      class RealVector;
     }
   }
 }
@@ -41,14 +41,14 @@ namespace org {
             class LeastSquaresAdapter : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_48c4478f5a3e6b22,
-                mid_evaluate_45332b266cdd66d4,
-                mid_getConvergenceChecker_4c680323f2c08379,
-                mid_getEvaluationCounter_d3591c1ea177be92,
-                mid_getIterationCounter_d3591c1ea177be92,
-                mid_getObservationSize_412668abc8d889e9,
-                mid_getParameterSize_412668abc8d889e9,
-                mid_getStart_75d50d73180655b4,
+                mid_init$_d28f702b40eb4b04,
+                mid_evaluate_44eae3a43792b738,
+                mid_getConvergenceChecker_cae0efb5080a73b8,
+                mid_getEvaluationCounter_3c86b06a86576583,
+                mid_getIterationCounter_3c86b06a86576583,
+                mid_getObservationSize_55546ef6a647f39b,
+                mid_getParameterSize_55546ef6a647f39b,
+                mid_getStart_3a10cc75bd070d84,
                 max_mid
               };
 

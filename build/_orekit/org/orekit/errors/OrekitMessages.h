@@ -33,10 +33,10 @@ namespace org {
       class OrekitMessages : public ::java::lang::Enum {
        public:
         enum {
-          mid_getLocalizedString_4b51060c6b7ea981,
-          mid_getSourceString_3cffd47377eca18a,
-          mid_valueOf_a03c9bb7372453b6,
-          mid_values_558c1f138f9d0ab9,
+          mid_getLocalizedString_26070c28e6ea354d,
+          mid_getSourceString_1c1fa1e935d6cdcf,
+          mid_valueOf_43a6a332bae68a73,
+          mid_values_3489d3ecfa550bc0,
           max_mid
         };
 

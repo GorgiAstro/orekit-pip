@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace models {
@@ -22,8 +14,8 @@ namespace org {
       }
     }
     namespace bodies {
-      class GeodeticPoint;
       class FieldGeodeticPoint;
+      class GeodeticPoint;
     }
     namespace time {
       class FieldAbsoluteDate;
@@ -37,6 +29,14 @@ namespace org {
     class CalculusFieldElement;
   }
 }
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -48,11 +48,11 @@ namespace org {
           class MariniMurrayModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_bc3712e794ac7a81,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_getStandardModel_885bd0311205fa21,
-              mid_pathDelay_129678f244f63094,
-              mid_pathDelay_a4fdd877b349d4a6,
+              mid_init$_49f4b5153d696ea5,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_getStandardModel_1781709fdef80e4c,
+              mid_pathDelay_2edbfa177156ee09,
+              mid_pathDelay_6f66c6b7094d6f08,
               max_mid
             };
 

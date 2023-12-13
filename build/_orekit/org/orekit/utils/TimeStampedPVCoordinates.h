@@ -4,28 +4,28 @@
 #include "org/orekit/utils/PVCoordinates.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class FieldVector3D;
-          class Vector3D;
-        }
-      }
-    }
-  }
   namespace orekit {
+    namespace time {
+      class TimeStamped;
+      class AbsoluteDate;
+      class TimeScale;
+    }
     namespace utils {
-      class PVCoordinatesProvider;
       class TimeStampedPVCoordinates;
+      class PVCoordinatesProvider;
     }
     namespace frames {
       class Frame;
     }
-    namespace time {
-      class AbsoluteDate;
-      class TimeScale;
-      class TimeStamped;
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+          class FieldVector3D;
+        }
+      }
     }
   }
 }
@@ -44,20 +44,20 @@ namespace org {
       class TimeStampedPVCoordinates : public ::org::orekit::utils::PVCoordinates {
        public:
         enum {
-          mid_init$_8b5236185db73aff,
-          mid_init$_a1f5dc554250f77b,
-          mid_init$_8a280baa525bbe55,
-          mid_init$_d1b18387f266ab27,
-          mid_init$_cbd37fa90c15dcc5,
-          mid_init$_06f788959c496621,
-          mid_init$_ab5c1802aae2e873,
-          mid_init$_c3b70466f3a2d583,
-          mid_init$_bfa9bec6e182d19e,
-          mid_getDate_7a97f7e149e79afb,
-          mid_shiftedBy_abc572ee9de7b188,
-          mid_toString_3cffd47377eca18a,
-          mid_toString_8873a127a4f312ad,
-          mid_toTaylorProvider_2f9a95aa9dd20b18,
+          mid_init$_8efeb57fde24921f,
+          mid_init$_a6070c42868c5d8c,
+          mid_init$_851a055d87a1592a,
+          mid_init$_1e47dd5ffc56db57,
+          mid_init$_82104ca8525f109d,
+          mid_init$_e4bf4a0667705a20,
+          mid_init$_1a989c3a0adebecc,
+          mid_init$_ce6aad1c634aaa44,
+          mid_init$_7963227a1d3edf49,
+          mid_getDate_c325492395d89b24,
+          mid_shiftedBy_b32704ef18d6aef9,
+          mid_toString_1c1fa1e935d6cdcf,
+          mid_toString_2ee13d9bd10373d0,
+          mid_toTaylorProvider_2d5eb094f644b70b,
           max_mid
         };
 

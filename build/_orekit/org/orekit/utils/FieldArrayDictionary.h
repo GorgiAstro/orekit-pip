@@ -16,13 +16,13 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace utils {
-      class FieldArrayDictionary$Entry;
       class FieldArrayDictionary;
+      class FieldArrayDictionary$Entry;
     }
   }
   namespace hipparchus {
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -34,23 +34,23 @@ namespace org {
       class FieldArrayDictionary : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_979ae7f57a96b096,
-          mid_init$_f89bf3117923cd08,
-          mid_init$_694b97800b8b07ac,
-          mid_clear_0640e6acf969ed28,
-          mid_get_4acd5b0987a64fc1,
-          mid_getData_0d9551367f7ecdef,
-          mid_getEntry_7750c55ea2bf389f,
-          mid_getField_20f98801541dcec1,
-          mid_put_7d8c14f144e3f080,
-          mid_put_83a3b21e73294ddc,
-          mid_putAll_e30d6d9efab7b075,
-          mid_putAll_6ba01303bcce0307,
-          mid_remove_fd2162b8a05a22fe,
-          mid_size_412668abc8d889e9,
-          mid_toMap_1e62c2f73fbdd1c4,
-          mid_toString_3cffd47377eca18a,
-          mid_unmodifiableView_e712b7d773a9bf41,
+          mid_init$_02ab84aa7626616d,
+          mid_init$_9127f23cedcce237,
+          mid_init$_07915b48270dec6b,
+          mid_clear_a1fa5dae97ea5ed2,
+          mid_get_f25dcdbfa4b24501,
+          mid_getData_e62d3bb06d56d7e3,
+          mid_getEntry_bf08c4a3bb93e7cd,
+          mid_getField_04d1f63e17d5c5d4,
+          mid_put_6fb36758267c5870,
+          mid_put_0090afa924af0a2d,
+          mid_putAll_acb615aad9f2aad9,
+          mid_putAll_6648520b18d8ef1d,
+          mid_remove_cde6b28e15c96b75,
+          mid_size_55546ef6a647f39b,
+          mid_toMap_810bed48fafb0b9a,
+          mid_toString_1c1fa1e935d6cdcf,
+          mid_unmodifiableView_7c5d47860532e9d9,
           max_mid
         };
 

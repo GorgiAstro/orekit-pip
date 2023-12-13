@@ -33,7 +33,7 @@ namespace org {
         class ConvexHullGenerator : public ::java::lang::Object {
          public:
           enum {
-            mid_generate_d844e4c56610f659,
+            mid_generate_9887d48e452c3401,
             max_mid
           };
 

@@ -34,12 +34,12 @@ namespace org {
           class Percentile$EstimationType : public ::java::lang::Enum {
            public:
             enum {
-              mid_evaluate_410ace8c42ca117d,
-              mid_valueOf_e716c3c8388eb5c6,
-              mid_values_77b1215abe0ed765,
-              mid_evaluate_d070edde8081c1de,
-              mid_estimate_5a36c9138b3295b6,
-              mid_index_156ae9d72f1c8533,
+              mid_evaluate_277b4197ae8b11e0,
+              mid_valueOf_dc3b80bb31d9b228,
+              mid_values_24f41f3feae5d2c6,
+              mid_evaluate_2cc81657fa5be2fc,
+              mid_estimate_e9cab51bdf58a786,
+              mid_index_2eeda88661ae34d3,
               max_mid
             };
 

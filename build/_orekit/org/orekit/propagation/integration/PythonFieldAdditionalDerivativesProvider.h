@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+    }
     namespace propagation {
       class FieldSpacecraftState;
       namespace integration {
         class FieldCombinedDerivatives;
         class FieldAdditionalDerivativesProvider;
       }
-    }
-    namespace time {
-      class FieldAbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -37,16 +37,16 @@ namespace org {
         class PythonFieldAdditionalDerivativesProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_combinedDerivatives_33912551ee5141fb,
-            mid_finalize_0640e6acf969ed28,
-            mid_getDimension_412668abc8d889e9,
-            mid_getName_3cffd47377eca18a,
-            mid_init_811e49dad2467b67,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
-            mid_yields_4fda3059ab91dbfe,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_combinedDerivatives_65b59abf328f3f4b,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_getDimension_55546ef6a647f39b,
+            mid_getName_1c1fa1e935d6cdcf,
+            mid_init_96d019f392abf918,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_yields_e6d9e841ca2e035c,
             max_mid
           };
 

@@ -38,9 +38,9 @@ namespace org {
             class FieldShortPeriodTerms : public ::java::lang::Object {
              public:
               enum {
-                mid_getCoefficients_34654a764ba0e833,
-                mid_getCoefficientsKeyPrefix_3cffd47377eca18a,
-                mid_value_e1d65e2f6c9d2422,
+                mid_getCoefficients_ba34939e32c530ba,
+                mid_getCoefficientsKeyPrefix_1c1fa1e935d6cdcf,
+                mid_value_738d63f4c1fff02e,
                 max_mid
               };
 

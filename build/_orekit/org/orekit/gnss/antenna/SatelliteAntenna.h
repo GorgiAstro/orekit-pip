@@ -15,12 +15,12 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace gnss {
+      class SatelliteSystem;
       namespace antenna {
-        class SatelliteType;
         class FrequencyPattern;
+        class SatelliteType;
       }
       class Frequency;
-      class SatelliteSystem;
     }
     namespace time {
       class AbsoluteDate;
@@ -37,14 +37,14 @@ namespace org {
         class SatelliteAntenna : public ::org::orekit::gnss::antenna::Antenna {
          public:
           enum {
-            mid_init$_8b5f9f5c5308cf84,
-            mid_getCosparID_3cffd47377eca18a,
-            mid_getPrnNumber_412668abc8d889e9,
-            mid_getSatelliteCode_412668abc8d889e9,
-            mid_getSatelliteSystem_8b86408cc2633961,
-            mid_getSatelliteType_6ecd2389ea008bcc,
-            mid_getValidFrom_7a97f7e149e79afb,
-            mid_getValidUntil_7a97f7e149e79afb,
+            mid_init$_012ca6d350718374,
+            mid_getCosparID_1c1fa1e935d6cdcf,
+            mid_getPrnNumber_55546ef6a647f39b,
+            mid_getSatelliteCode_55546ef6a647f39b,
+            mid_getSatelliteSystem_21bd759cc4a81606,
+            mid_getSatelliteType_0385bced532642ea,
+            mid_getValidFrom_c325492395d89b24,
+            mid_getValidUntil_c325492395d89b24,
             max_mid
           };
 

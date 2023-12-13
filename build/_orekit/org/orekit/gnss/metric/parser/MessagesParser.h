@@ -16,11 +16,11 @@ namespace org {
   namespace orekit {
     namespace gnss {
       namespace metric {
-        namespace messages {
-          class ParsedMessage;
-        }
         namespace parser {
           class EncodedMessage;
+        }
+        namespace messages {
+          class ParsedMessage;
         }
       }
     }
@@ -37,10 +37,10 @@ namespace org {
           class MessagesParser : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_4ccaedadb068bdeb,
-              mid_parse_ec52da06f229b101,
-              mid_getMessageType_ceeebd64fcb1f2de,
-              mid_parseMessageNumber_2ab051b27e6414f5,
+              mid_init$_0e7c3032c7c93ed3,
+              mid_parse_21aa1427b4282155,
+              mid_getMessageType_7fab758a818e0182,
+              mid_parseMessageNumber_c7387344adbf63af,
               max_mid
             };
 

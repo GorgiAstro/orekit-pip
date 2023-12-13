@@ -19,11 +19,11 @@ namespace org {
         class ParameterDrivenDateIntervalDetector;
       }
     }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
 }
@@ -38,14 +38,14 @@ namespace org {
           class DateBasedManeuverTriggers : public ::org::orekit::forces::maneuvers::trigger::IntervalEventTrigger {
            public:
             enum {
-              mid_init$_f22bef3f7be90029,
-              mid_init$_c68a5ca0cc166e0d,
-              mid_getDuration_557b8123390d8d0c,
-              mid_getEndDate_7a97f7e149e79afb,
-              mid_getName_3cffd47377eca18a,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_getStartDate_7a97f7e149e79afb,
-              mid_convertIntervalDetector_11c11f8a5b36a3f9,
+              mid_init$_3dd4638451e09a7f,
+              mid_init$_f707b8d915bcbfb2,
+              mid_getDuration_b74f83833fdad017,
+              mid_getEndDate_c325492395d89b24,
+              mid_getName_1c1fa1e935d6cdcf,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_getStartDate_c325492395d89b24,
+              mid_convertIntervalDetector_600bd35d7400e841,
               max_mid
             };
 

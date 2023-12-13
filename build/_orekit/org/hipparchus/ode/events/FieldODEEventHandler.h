@@ -6,11 +6,11 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
-      class FieldODEStateAndDerivative;
       class FieldODEState;
+      class FieldODEStateAndDerivative;
       namespace events {
-        class FieldODEEventDetector;
         class Action;
+        class FieldODEEventDetector;
       }
     }
     class CalculusFieldElement;
@@ -31,9 +31,9 @@ namespace org {
         class FieldODEEventHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_eventOccurred_8cd57f25ffb2a49d,
-            mid_init_cde3ce643bd77a29,
-            mid_resetState_89a2130370baafc4,
+            mid_eventOccurred_f1dbd383a31b3ed3,
+            mid_init_8dc7bea9703d6e01,
+            mid_resetState_c6c237e7ee1f70c4,
             max_mid
           };
 

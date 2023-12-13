@@ -7,17 +7,17 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace utils {
-          namespace lexical {
-            class ParseToken;
-          }
-          class ContextBinding;
-        }
         namespace ndm {
           namespace cdm {
             class XYZCovariance;
             class XYZCovarianceKey;
           }
+        }
+        namespace utils {
+          namespace lexical {
+            class ParseToken;
+          }
+          class ContextBinding;
         }
       }
     }
@@ -41,9 +41,9 @@ namespace org {
             class XYZCovarianceKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_afff6bd2ad22bfe3,
-                mid_valueOf_65059a2eee4f2a20,
-                mid_values_a7ba73299736a933,
+                mid_process_e1ceb9257882a2ec,
+                mid_valueOf_303705d5277025e6,
+                mid_values_45de6fde0fa6fae2,
                 max_mid
               };
 

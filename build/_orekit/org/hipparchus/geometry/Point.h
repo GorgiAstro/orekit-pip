@@ -25,9 +25,9 @@ namespace org {
       class Point : public ::java::io::Serializable {
        public:
         enum {
-          mid_distance_cf1fec2b7b1c0efe,
-          mid_getSpace_cf9410d213a7cbb9,
-          mid_isNaN_89b302893bdbe1f1,
+          mid_distance_f0dd8cb59ea09794,
+          mid_getSpace_9afbccb68c8e9ef8,
+          mid_isNaN_9ab94ac1dc23b105,
           max_mid
         };
 

@@ -17,14 +17,14 @@ namespace org {
     namespace forces {
       namespace gravity {
         namespace potential {
-          class TideSystem;
-          class UnnormalizedSphericalHarmonicsProvider;
-          class OceanTidesReader;
-          class OceanTidesWave;
           class PotentialCoefficientsReader;
           class NormalizedSphericalHarmonicsProvider;
           class LazyLoadedGravityFields;
+          class OceanTidesWave;
+          class UnnormalizedSphericalHarmonicsProvider;
           class OceanLoadDeformationCoefficients;
+          class OceanTidesReader;
+          class TideSystem;
         }
       }
     }
@@ -44,26 +44,26 @@ namespace org {
           class GravityFieldFactory : public ::java::lang::Object {
            public:
             enum {
-              mid_addDefaultOceanTidesReaders_0640e6acf969ed28,
-              mid_addDefaultPotentialCoefficientsReaders_0640e6acf969ed28,
-              mid_addOceanTidesReader_53a9275b0b397970,
-              mid_addPotentialCoefficientsReader_5853b49c202b050b,
-              mid_clearOceanTidesReaders_0640e6acf969ed28,
-              mid_clearPotentialCoefficientsReaders_0640e6acf969ed28,
-              mid_configureOceanLoadDeformationCoefficients_48fb5ba519b6ce93,
-              mid_getConstantNormalizedProvider_0c77c94a83049da8,
-              mid_getConstantUnnormalizedProvider_eb1ce3dfed700512,
-              mid_getGravityFields_0d8a4be514230626,
-              mid_getNormalizedProvider_003cf918a8e938f4,
-              mid_getNormalizedProvider_79759f2115f6836e,
-              mid_getNormalizedProvider_9108cf7f45bb896a,
-              mid_getOceanLoadDeformationCoefficients_5e90d7425c16a9f8,
-              mid_getOceanTidesWaves_db6a96225c690c76,
-              mid_getUnnormalizationFactors_c5a249365f81f631,
-              mid_getUnnormalizedProvider_d395c492ef90bcf1,
-              mid_getUnnormalizedProvider_2609e3e741b941bf,
-              mid_getUnnormalizedProvider_016911f22f84e125,
-              mid_readGravityField_88cf88e8bd59d4fa,
+              mid_addDefaultOceanTidesReaders_a1fa5dae97ea5ed2,
+              mid_addDefaultPotentialCoefficientsReaders_a1fa5dae97ea5ed2,
+              mid_addOceanTidesReader_8553ac96c69b089e,
+              mid_addPotentialCoefficientsReader_a78d658c1995df90,
+              mid_clearOceanTidesReaders_a1fa5dae97ea5ed2,
+              mid_clearPotentialCoefficientsReaders_a1fa5dae97ea5ed2,
+              mid_configureOceanLoadDeformationCoefficients_245a505170348b26,
+              mid_getConstantNormalizedProvider_405c10e81094d951,
+              mid_getConstantUnnormalizedProvider_3d381fbe1e441e33,
+              mid_getGravityFields_7edff6ac38775a4d,
+              mid_getNormalizedProvider_c13ce70d0d253382,
+              mid_getNormalizedProvider_a686ea82e96d2c01,
+              mid_getNormalizedProvider_2e45d418bc95ef10,
+              mid_getOceanLoadDeformationCoefficients_69ab25dc2098be80,
+              mid_getOceanTidesWaves_39b43a702bd6611c,
+              mid_getUnnormalizationFactors_4bd4edddfa48c3b3,
+              mid_getUnnormalizedProvider_d5f7c11565985cd3,
+              mid_getUnnormalizedProvider_fbbe2c197b102dc9,
+              mid_getUnnormalizedProvider_3cf900d10629a5ef,
+              mid_readGravityField_f43b948b764d44fc,
               max_mid
             };
 

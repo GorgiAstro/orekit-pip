@@ -39,8 +39,8 @@ namespace org {
           class MelbourneWubbenaCombination : public ::java::lang::Object {
            public:
             enum {
-              mid_combine_82c5de1a9cc4c5da,
-              mid_getName_3cffd47377eca18a,
+              mid_combine_12b3dc80befaeb6c,
+              mid_getName_1c1fa1e935d6cdcf,
               max_mid
             };
 

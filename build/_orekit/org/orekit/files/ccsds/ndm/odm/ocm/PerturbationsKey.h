@@ -10,8 +10,8 @@ namespace org {
         namespace ndm {
           namespace odm {
             namespace ocm {
-              class PerturbationsKey;
               class Perturbations;
+              class PerturbationsKey;
             }
           }
         }
@@ -44,9 +44,9 @@ namespace org {
               class PerturbationsKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_5e0e8ad62a45aa65,
-                  mid_valueOf_9f45414097b601c3,
-                  mid_values_d84de0734e3601d8,
+                  mid_process_27d6c060f7d3020f,
+                  mid_valueOf_849a26fbce6aef68,
+                  mid_values_bfe673c4ffe500a9,
                   max_mid
                 };
 

@@ -4,16 +4,16 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace propagation {
       class FieldSpacecraftState;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
+    namespace time {
+      class FieldAbsoluteDate;
+    }
   }
 }
 namespace java {
@@ -31,9 +31,9 @@ namespace org {
         class FieldOrekitFixedStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_finish_b66c84a5711243d5,
-            mid_handleStep_b66c84a5711243d5,
-            mid_init_1b5a30d717840b16,
+            mid_finish_54d9efbf99822980,
+            mid_handleStep_54d9efbf99822980,
+            mid_init_6c5f4137442325ee,
             max_mid
           };
 

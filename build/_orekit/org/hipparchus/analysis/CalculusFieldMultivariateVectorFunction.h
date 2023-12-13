@@ -3,14 +3,14 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -22,7 +22,7 @@ namespace org {
       class CalculusFieldMultivariateVectorFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_value_a126e91ca3e53df2,
+          mid_value_1cc99f34da9b4a7b,
           max_mid
         };
 

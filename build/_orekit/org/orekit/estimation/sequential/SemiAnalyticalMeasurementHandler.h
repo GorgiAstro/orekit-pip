@@ -4,7 +4,23 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace filtering {
+      namespace kalman {
+        class KalmanFilter;
+      }
+    }
+  }
   namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class ObservedMeasurement;
+      }
+      namespace sequential {
+        class SemiAnalyticalProcess;
+        class MeasurementDecorator;
+      }
+    }
     namespace propagation {
       namespace sampling {
         class OrekitStepInterpolator;
@@ -12,24 +28,8 @@ namespace org {
       }
       class SpacecraftState;
     }
-    namespace estimation {
-      namespace measurements {
-        class ObservedMeasurement;
-      }
-      namespace sequential {
-        class MeasurementDecorator;
-        class SemiAnalyticalProcess;
-      }
-    }
     namespace time {
       class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    namespace filtering {
-      namespace kalman {
-        class KalmanFilter;
-      }
     }
   }
 }
@@ -51,10 +51,10 @@ namespace org {
         class SemiAnalyticalMeasurementHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_9053bb5f9077f088,
-            mid_init$_bcee30128220ba56,
-            mid_handleStep_729a66b1e94503de,
-            mid_init_0472264ad6f40bc2,
+            mid_init$_576e684ce95b43e9,
+            mid_init$_d3a3df9f88279d79,
+            mid_handleStep_13c351c10f00bcd7,
+            mid_init_2d7f9a496c7e9781,
             max_mid
           };
 

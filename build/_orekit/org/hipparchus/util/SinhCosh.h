@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace util {
       class SinhCosh;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,10 +24,10 @@ namespace org {
       class SinhCosh : public ::java::lang::Object {
        public:
         enum {
-          mid_cosh_557b8123390d8d0c,
-          mid_difference_add2402b81ab1dda,
-          mid_sinh_557b8123390d8d0c,
-          mid_sum_add2402b81ab1dda,
+          mid_cosh_b74f83833fdad017,
+          mid_difference_55e7b40766cde944,
+          mid_sinh_b74f83833fdad017,
+          mid_sum_55e7b40766cde944,
           max_mid
         };
 

@@ -3,6 +3,15 @@
 
 #include "org/orekit/estimation/measurements/filtering/HatchFilter.h"
 
+namespace java {
+  namespace util {
+    class ArrayList;
+  }
+  namespace lang {
+    class Class;
+    class Double;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
@@ -12,15 +21,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace util {
-    class ArrayList;
-  }
-  namespace lang {
-    class Class;
-    class Double;
   }
 }
 template<class T> class JArray;
@@ -34,10 +34,10 @@ namespace org {
           class DualFrequencyHatchFilter : public ::org::orekit::estimation::measurements::filtering::HatchFilter {
            public:
             enum {
-              mid_init$_a3353ef76be92d8b,
-              mid_filterData_97f9c68e98daab4e,
-              mid_getFirstFrequencyPhaseHistory_897d94db124f72e1,
-              mid_getSecondFrequencyPhaseHistory_897d94db124f72e1,
+              mid_init$_97f95739029128c6,
+              mid_filterData_cd95911c206f8ad1,
+              mid_getFirstFrequencyPhaseHistory_664cae6eaa0e211a,
+              mid_getSecondFrequencyPhaseHistory_664cae6eaa0e211a,
               max_mid
             };
 

@@ -4,15 +4,23 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace bodies {
-      class BodyShape;
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+          class FieldVector3D;
+        }
+      }
     }
+    class CalculusFieldElement;
+  }
+  namespace orekit {
     namespace models {
       namespace earth {
         namespace atmosphere {
-          class JB2008InputParameters;
           class Atmosphere;
+          class JB2008InputParameters;
         }
       }
     }
@@ -27,17 +35,9 @@ namespace org {
     namespace frames {
       class Frame;
     }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class FieldVector3D;
-          class Vector3D;
-        }
-      }
+    namespace bodies {
+      class BodyShape;
     }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -56,13 +56,13 @@ namespace org {
           class JB2008 : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_e7a1189cc9b12fae,
-              mid_init$_3e36eaa773f82fe8,
-              mid_getDensity_818999d9e7960fd1,
-              mid_getDensity_57dd506d2d9ba196,
-              mid_getDensity_88d18a18f8513830,
-              mid_getDensity_32da7eaa37881d06,
-              mid_getFrame_6c9bc0a928c56d4e,
+              mid_init$_ce95f715917b7e8f,
+              mid_init$_523c73ffda77d072,
+              mid_getDensity_e9a4fc2340b58984,
+              mid_getDensity_58866e32a1c9318b,
+              mid_getDensity_d60833e998e30fd8,
+              mid_getDensity_8ad3e640311f3919,
+              mid_getFrame_2c51111cc6894ba1,
               max_mid
             };
 

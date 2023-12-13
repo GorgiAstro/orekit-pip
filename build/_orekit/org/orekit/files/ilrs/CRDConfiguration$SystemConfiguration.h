@@ -22,15 +22,15 @@ namespace org {
         class CRDConfiguration$SystemConfiguration : public ::org::orekit::files::ilrs::CRDConfiguration$BaseConfiguration {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_getComponents_0d9551367f7ecdef,
-            mid_getSystemId_3cffd47377eca18a,
-            mid_getWavelength_557b8123390d8d0c,
-            mid_setComponents_cb4082327a3ebdc5,
-            mid_setSystemId_f5ffdf29129ef90a,
-            mid_setWavelength_10f281d777284cea,
-            mid_toCrdString_3cffd47377eca18a,
-            mid_toString_3cffd47377eca18a,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_getComponents_e62d3bb06d56d7e3,
+            mid_getSystemId_1c1fa1e935d6cdcf,
+            mid_getWavelength_b74f83833fdad017,
+            mid_setComponents_4f1e9165cc3f09e7,
+            mid_setSystemId_734b91ac30d5f9b4,
+            mid_setWavelength_8ba9fe7a847cecad,
+            mid_toCrdString_1c1fa1e935d6cdcf,
+            mid_toString_1c1fa1e935d6cdcf,
             max_mid
           };
 

@@ -41,14 +41,14 @@ namespace org {
               class PythonAbstractAlfriend1999 : public ::org::orekit::ssa::collision::shorttermencounter::probability::twod::AbstractAlfriend1999 {
                public:
                 enum {
-                  mid_init$_f5ffdf29129ef90a,
-                  mid_computeValue_8d02ba458f22e508,
-                  mid_computeValue_d181e731358aa045,
-                  mid_finalize_0640e6acf969ed28,
-                  mid_getType_4b8bf2bb84f7480e,
-                  mid_pythonDecRef_0640e6acf969ed28,
-                  mid_pythonExtension_9e26256fb0d384a2,
-                  mid_pythonExtension_3cd6a6b354c6aa22,
+                  mid_init$_734b91ac30d5f9b4,
+                  mid_computeValue_f804f816b79164cb,
+                  mid_computeValue_8a93710b1b1536a6,
+                  mid_finalize_a1fa5dae97ea5ed2,
+                  mid_getType_8397a286d982b383,
+                  mid_pythonDecRef_a1fa5dae97ea5ed2,
+                  mid_pythonExtension_6c0ce7e438e5ded4,
+                  mid_pythonExtension_3d7dd2314a0dd456,
                   max_mid
                 };
 

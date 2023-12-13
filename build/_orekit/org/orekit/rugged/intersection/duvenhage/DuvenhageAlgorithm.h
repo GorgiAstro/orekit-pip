@@ -6,18 +6,18 @@
 namespace org {
   namespace orekit {
     namespace rugged {
-      namespace utils {
-        class NormalizedGeodeticPoint;
-        class ExtendedEllipsoid;
+      namespace intersection {
+        class IntersectionAlgorithm;
       }
-      namespace raster {
-        class TileUpdater;
+      namespace utils {
+        class ExtendedEllipsoid;
+        class NormalizedGeodeticPoint;
       }
       namespace api {
         class AlgorithmId;
       }
-      namespace intersection {
-        class IntersectionAlgorithm;
+      namespace raster {
+        class TileUpdater;
       }
     }
   }
@@ -47,11 +47,11 @@ namespace org {
           class DuvenhageAlgorithm : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a25fc061142e5dd5,
-              mid_getAlgorithmId_58f1b48b3d6060f9,
-              mid_getElevation_2268d18be49a6087,
-              mid_intersection_bffffb02b1b74895,
-              mid_refineIntersection_5fc8cb427a1ada2e,
+              mid_init$_c95673eda778070f,
+              mid_getAlgorithmId_d67e2fdbea04a3ee,
+              mid_getElevation_99e3200dafc19573,
+              mid_intersection_7819c980b8c560ad,
+              mid_refineIntersection_882cf21796738f1c,
               max_mid
             };
 

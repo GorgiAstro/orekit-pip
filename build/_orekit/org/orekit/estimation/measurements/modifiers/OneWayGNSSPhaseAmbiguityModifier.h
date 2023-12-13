@@ -3,29 +3,29 @@
 
 #include "org/orekit/estimation/measurements/modifiers/AbstractAmbiguityModifier.h"
 
-namespace org {
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        namespace gnss {
-          class OneWayGNSSPhase;
-        }
-        class EstimatedMeasurement;
-        class EstimatedMeasurementBase;
-        class EstimationModifier;
-      }
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class EstimationModifier;
+        namespace gnss {
+          class OneWayGNSSPhase;
+        }
+        class EstimatedMeasurementBase;
+        class EstimatedMeasurement;
+      }
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
   }
 }
 template<class T> class JArray;
@@ -39,10 +39,10 @@ namespace org {
           class OneWayGNSSPhaseAmbiguityModifier : public ::org::orekit::estimation::measurements::modifiers::AbstractAmbiguityModifier {
            public:
             enum {
-              mid_init$_89aad365fb0ed8da,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_modify_0054a497255e8220,
-              mid_modifyWithoutDerivatives_e471490df8741b73,
+              mid_init$_d5322b8b512aeb26,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_modify_f784f7724d44a90a,
+              mid_modifyWithoutDerivatives_308087fabc1d7f66,
               max_mid
             };
 

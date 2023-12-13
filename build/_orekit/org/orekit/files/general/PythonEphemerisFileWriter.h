@@ -4,22 +4,22 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace io {
-    class IOException;
-  }
   namespace lang {
     class Throwable;
     class Appendable;
     class Class;
     class String;
   }
+  namespace io {
+    class IOException;
+  }
 }
 namespace org {
   namespace orekit {
     namespace files {
       namespace general {
-        class EphemerisFile;
         class EphemerisFileWriter;
+        class EphemerisFile;
       }
     }
   }
@@ -34,13 +34,13 @@ namespace org {
         class PythonEphemerisFileWriter : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_finalize_0640e6acf969ed28,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
-            mid_write_507409137616ad7b,
-            mid_write_0fa910eb9c2e844e,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_write_cb06ae4b8b65b727,
+            mid_write_b257e3ad1002b2a9,
             max_mid
           };
 

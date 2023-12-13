@@ -3,28 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace sampling {
-        class OrekitStepInterpolator;
-      }
-    }
-    namespace estimation {
-      namespace measurements {
-        class MultiplexedMeasurement;
-        namespace generation {
-          class MeasurementBuilder;
-        }
-        class ObservableSatellite;
-        class EstimationModifier;
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -32,6 +10,28 @@ namespace java {
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class EstimationModifier;
+        class MultiplexedMeasurement;
+        class ObservableSatellite;
+        namespace generation {
+          class MeasurementBuilder;
+        }
+      }
+    }
+    namespace propagation {
+      namespace sampling {
+        class OrekitStepInterpolator;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
   }
 }
 template<class T> class JArray;
@@ -45,12 +45,12 @@ namespace org {
           class MultiplexedMeasurementBuilder : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_4ccaedadb068bdeb,
-              mid_addModifier_6f472135bf397672,
-              mid_build_6fd4734691683ef8,
-              mid_getModifiers_0d9551367f7ecdef,
-              mid_getSatellites_b8c09fefa9db3b83,
-              mid_init_d5db9a5f2035671b,
+              mid_init$_0e7c3032c7c93ed3,
+              mid_addModifier_cb38ed914ba48f20,
+              mid_build_2029b055d5cf26b6,
+              mid_getModifiers_e62d3bb06d56d7e3,
+              mid_getSatellites_eb47c48e4fca882c,
+              mid_init_f89af00fc113b524,
               max_mid
             };
 

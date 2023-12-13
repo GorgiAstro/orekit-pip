@@ -3,31 +3,6 @@
 
 #include "org/orekit/propagation/semianalytical/dsst/forces/AbstractGaussianContribution.h"
 
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-      namespace semianalytical {
-        namespace dsst {
-          namespace utilities {
-            class AuxiliaryElements;
-            class FieldAuxiliaryElements;
-          }
-        }
-      }
-      class SpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace forces {
-      class ForceModel;
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -36,6 +11,31 @@ namespace java {
     class Throwable;
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace forces {
+      class ForceModel;
+    }
+    namespace propagation {
+      class SpacecraftState;
+      class FieldSpacecraftState;
+      namespace semianalytical {
+        namespace dsst {
+          namespace utilities {
+            class FieldAuxiliaryElements;
+            class AuxiliaryElements;
+          }
+        }
+      }
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -50,14 +50,14 @@ namespace org {
             class PythonAbstractGaussianContribution : public ::org::orekit::propagation::semianalytical::dsst::forces::AbstractGaussianContribution {
              public:
               enum {
-                mid_init$_9fd79603d9e48fb7,
-                mid_finalize_0640e6acf969ed28,
-                mid_getLLimits_8babb6fb34d6b24d,
-                mid_getLLimits_233f032b171b49d2,
-                mid_getParametersDriversWithoutMu_0d9551367f7ecdef,
-                mid_pythonDecRef_0640e6acf969ed28,
-                mid_pythonExtension_9e26256fb0d384a2,
-                mid_pythonExtension_3cd6a6b354c6aa22,
+                mid_init$_d5ff3cc52c55df24,
+                mid_finalize_a1fa5dae97ea5ed2,
+                mid_getLLimits_9b6fd6b3a2b07f62,
+                mid_getLLimits_1abf2eee80dffc68,
+                mid_getParametersDriversWithoutMu_e62d3bb06d56d7e3,
+                mid_pythonDecRef_a1fa5dae97ea5ed2,
+                mid_pythonExtension_6c0ce7e438e5ded4,
+                mid_pythonExtension_3d7dd2314a0dd456,
                 max_mid
               };
 

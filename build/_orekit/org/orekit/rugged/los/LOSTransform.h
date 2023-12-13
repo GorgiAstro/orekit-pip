@@ -8,23 +8,23 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
   }
   namespace orekit {
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace rugged {
       namespace utils {
         class DerivativeGenerator;
       }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
 }
@@ -48,9 +48,9 @@ namespace org {
         class LOSTransform : public ::java::lang::Object {
          public:
           enum {
-            mid_getParametersDrivers_d7cce92225eb0db2,
-            mid_transformLOS_193bcb23df54ca95,
-            mid_transformLOS_da5b61aadada7c1f,
+            mid_getParametersDrivers_14e21bf777ff0ccf,
+            mid_transformLOS_355979cbd37ce923,
+            mid_transformLOS_d764ada7ab62136f,
             max_mid
           };
 

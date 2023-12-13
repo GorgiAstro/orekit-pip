@@ -4,13 +4,13 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace utils {
       class FieldArrayDictionary$Entry;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -28,14 +28,14 @@ namespace org {
       class FieldArrayDictionary$Entry : public ::java::lang::Object {
        public:
         enum {
-          mid_getKey_3cffd47377eca18a,
-          mid_getValue_41762fd4377ff26e,
-          mid_increment_cc18240f4a737f14,
-          mid_increment_5d9c9afaca2e497c,
-          mid_scaledIncrement_dbfb7d53d6018f6f,
-          mid_scaledIncrement_14f13c9f5bb765bd,
-          mid_size_412668abc8d889e9,
-          mid_zero_0640e6acf969ed28,
+          mid_getKey_1c1fa1e935d6cdcf,
+          mid_getValue_883be608cfc68c26,
+          mid_increment_ab69da052b88f50c,
+          mid_increment_8b0f7facc8a6a46e,
+          mid_scaledIncrement_b116e64aa0ba0a46,
+          mid_scaledIncrement_0502d7660b56782c,
+          mid_size_55546ef6a647f39b,
+          mid_zero_a1fa5dae97ea5ed2,
           max_mid
         };
 

@@ -34,8 +34,8 @@ namespace org {
         class SP3Parser : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_parse_ea0a0988ed14fe01,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_parse_623ea2851dad0ac0,
             max_mid
           };
 

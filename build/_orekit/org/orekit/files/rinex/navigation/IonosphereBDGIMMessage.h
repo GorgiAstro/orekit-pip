@@ -27,9 +27,9 @@ namespace org {
           class IonosphereBDGIMMessage : public ::org::orekit::files::rinex::navigation::IonosphereBaseMessage {
            public:
             enum {
-              mid_init$_e1b2f7b885c85083,
-              mid_getAlpha_a53a7513ecedada2,
-              mid_setAlphaI_89aad365fb0ed8da,
+              mid_init$_2f7855eb8fb85f32,
+              mid_getAlpha_25e1757a36c4dde2,
+              mid_setAlphaI_d5322b8b512aeb26,
               max_mid
             };
 

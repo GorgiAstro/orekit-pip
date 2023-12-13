@@ -8,14 +8,14 @@ namespace org {
     namespace ode {
       class DenseOutputModel;
       namespace sampling {
-        class ODEStepHandler;
         class ODEStateInterpolator;
+        class ODEStepHandler;
       }
       class ODEStateAndDerivative;
     }
     namespace exception {
-      class MathIllegalArgumentException;
       class MathIllegalStateException;
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -36,14 +36,14 @@ namespace org {
       class DenseOutputModel : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_append_52c12c88abdf5d69,
-          mid_finish_b79fdee299d79fcc,
-          mid_getFinalTime_557b8123390d8d0c,
-          mid_getInitialTime_557b8123390d8d0c,
-          mid_getInterpolatedState_0a47e68426cfc9cf,
-          mid_handleStep_b272ebb5ead79c81,
-          mid_init_7e69c83de8052a2b,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_append_d48382c52c974b04,
+          mid_finish_d2d966b8a9c77b61,
+          mid_getFinalTime_b74f83833fdad017,
+          mid_getInitialTime_b74f83833fdad017,
+          mid_getInterpolatedState_cf0061d2765ae5a3,
+          mid_handleStep_197c5aaefd855810,
+          mid_init_a7556bd72cab73f1,
           max_mid
         };
 

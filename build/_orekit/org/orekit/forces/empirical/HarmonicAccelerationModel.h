@@ -3,6 +3,28 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace forces {
+      namespace empirical {
+        class AccelerationModel;
+      }
+    }
+    namespace propagation {
+      class SpacecraftState;
+      class FieldSpacecraftState;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,28 +32,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace forces {
-      namespace empirical {
-        class AccelerationModel;
-      }
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -44,11 +44,11 @@ namespace org {
         class HarmonicAccelerationModel : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_dda4b4bb0ac4a0dc,
-            mid_getParametersDrivers_0d9551367f7ecdef,
-            mid_init_0472264ad6f40bc2,
-            mid_signedAmplitude_4ad317f7598a10a9,
-            mid_signedAmplitude_810dcb8f9f5d191a,
+            mid_init$_a56f4082b93e7815,
+            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_init_2d7f9a496c7e9781,
+            mid_signedAmplitude_f867476668f8eb00,
+            mid_signedAmplitude_8e86371c61460f23,
             max_mid
           };
 

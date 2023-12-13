@@ -8,23 +8,23 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
   }
   namespace orekit {
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace rugged {
-      namespace los {
-        class TimeIndependentLOSTransform;
-      }
       namespace utils {
         class DerivativeGenerator;
       }
+      namespace los {
+        class TimeIndependentLOSTransform;
+      }
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
 }
@@ -49,10 +49,10 @@ namespace org {
         class FixedRotation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_b345141f3bdd1b46,
-            mid_getParametersDrivers_d7cce92225eb0db2,
-            mid_transformLOS_871f750b8782ea1a,
-            mid_transformLOS_1f552c4ec2328a5b,
+            mid_init$_6eefa251775077b6,
+            mid_getParametersDrivers_14e21bf777ff0ccf,
+            mid_transformLOS_23b7762b1a728d4c,
+            mid_transformLOS_624b61103e61016a,
             max_mid
           };
 

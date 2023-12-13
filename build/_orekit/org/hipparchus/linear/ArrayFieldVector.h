@@ -5,20 +5,20 @@
 
 namespace org {
   namespace hipparchus {
-    class FieldElement;
     namespace exception {
-      class MathIllegalArgumentException;
       class NullArgumentException;
+      class MathIllegalArgumentException;
       class MathRuntimeException;
     }
     namespace linear {
-      class FieldVector;
+      class ArrayFieldVector;
+      class FieldVectorPreservingVisitor;
       class FieldVectorChangingVisitor;
       class FieldMatrix;
-      class FieldVectorPreservingVisitor;
-      class ArrayFieldVector;
+      class FieldVector;
     }
     class Field;
+    class FieldElement;
   }
 }
 namespace java {
@@ -39,73 +39,73 @@ namespace org {
       class ArrayFieldVector : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_b21b5587abda5ee9,
-          mid_init$_979ae7f57a96b096,
-          mid_init$_4ae1c7672d20bfa1,
-          mid_init$_7bc542994fc2f915,
-          mid_init$_0fd9ea2bb1f66bfb,
-          mid_init$_b19b4cfb9aa4498b,
-          mid_init$_72be9826404dd64a,
-          mid_init$_1b9cf9fe2f8d539c,
-          mid_init$_35646f9483fed933,
-          mid_init$_d23b1b48c6bca206,
-          mid_init$_f89bf3117923cd08,
-          mid_init$_75116bc6ab3568ce,
-          mid_init$_d4a6fa10f81643b2,
-          mid_init$_cabe16a784b00aed,
-          mid_init$_7f004047d24178f7,
-          mid_init$_50e98ebb6b2854f4,
-          mid_add_887c3a8a43dc43d5,
-          mid_add_a7c6926a425759ad,
-          mid_append_887c3a8a43dc43d5,
-          mid_append_9c0263b78fe30ac4,
-          mid_append_a7c6926a425759ad,
-          mid_copy_f39e0d3c1ce991ac,
-          mid_dotProduct_1073206769d7032b,
-          mid_dotProduct_3954878560819a96,
-          mid_ebeDivide_887c3a8a43dc43d5,
-          mid_ebeDivide_a7c6926a425759ad,
-          mid_ebeMultiply_887c3a8a43dc43d5,
-          mid_ebeMultiply_a7c6926a425759ad,
-          mid_equals_221e8e85cb385209,
-          mid_getDataRef_7a985a773168dff8,
-          mid_getDimension_412668abc8d889e9,
-          mid_getEntry_d40ba91356b6a058,
-          mid_getField_20f98801541dcec1,
-          mid_getSubVector_6244d57986a4c96a,
-          mid_hashCode_412668abc8d889e9,
-          mid_mapAdd_9c0263b78fe30ac4,
-          mid_mapAddToSelf_9c0263b78fe30ac4,
-          mid_mapDivide_9c0263b78fe30ac4,
-          mid_mapDivideToSelf_9c0263b78fe30ac4,
-          mid_mapInv_f39e0d3c1ce991ac,
-          mid_mapInvToSelf_f39e0d3c1ce991ac,
-          mid_mapMultiply_9c0263b78fe30ac4,
-          mid_mapMultiplyToSelf_9c0263b78fe30ac4,
-          mid_mapSubtract_9c0263b78fe30ac4,
-          mid_mapSubtractToSelf_9c0263b78fe30ac4,
-          mid_outerProduct_fddb7f739bb2af31,
-          mid_outerProduct_2284af949fc5e425,
-          mid_projection_887c3a8a43dc43d5,
-          mid_projection_a7c6926a425759ad,
-          mid_set_b906415fb0b2ba27,
-          mid_set_db042c11dacf50d1,
-          mid_setEntry_d23b1b48c6bca206,
-          mid_setSubVector_502f8ed205bebebd,
-          mid_subtract_887c3a8a43dc43d5,
-          mid_subtract_a7c6926a425759ad,
-          mid_toArray_7a985a773168dff8,
-          mid_toString_3cffd47377eca18a,
-          mid_walkInDefaultOrder_a4b00f8c7fc7e690,
-          mid_walkInDefaultOrder_1915435d849c895c,
-          mid_walkInDefaultOrder_3d5cadff5023e9d0,
-          mid_walkInDefaultOrder_57525d52a5913d3a,
-          mid_walkInOptimizedOrder_a4b00f8c7fc7e690,
-          mid_walkInOptimizedOrder_1915435d849c895c,
-          mid_walkInOptimizedOrder_3d5cadff5023e9d0,
-          mid_walkInOptimizedOrder_57525d52a5913d3a,
-          mid_checkVectorDimensions_4ae1c7672d20bfa1,
-          mid_checkVectorDimensions_a3da1a935cb37f7b,
+          mid_init$_17c98b43bf9b6f78,
+          mid_init$_02ab84aa7626616d,
+          mid_init$_a8d98eabf09c8ea2,
+          mid_init$_1486600bdee8133c,
+          mid_init$_481de9c265f62927,
+          mid_init$_9b3d853322fd9fe9,
+          mid_init$_725c6c034d3c6989,
+          mid_init$_a1e449a87301face,
+          mid_init$_3eaa072375f129cf,
+          mid_init$_3e5e9beae9eb3b27,
+          mid_init$_9127f23cedcce237,
+          mid_init$_60da158123e92bc0,
+          mid_init$_a09aa6877659ff5b,
+          mid_init$_0076bcc9a075d436,
+          mid_init$_33f797f484c0333b,
+          mid_init$_e9bbcf3500fc779d,
+          mid_add_0875bb37f8462e6f,
+          mid_add_0c912ec1e9dd9ed7,
+          mid_append_0875bb37f8462e6f,
+          mid_append_9105020ef45172b7,
+          mid_append_0c912ec1e9dd9ed7,
+          mid_copy_b8b88195d3642875,
+          mid_dotProduct_ecb2c24e32602813,
+          mid_dotProduct_8b189f525aa86de4,
+          mid_ebeDivide_0875bb37f8462e6f,
+          mid_ebeDivide_0c912ec1e9dd9ed7,
+          mid_ebeMultiply_0875bb37f8462e6f,
+          mid_ebeMultiply_0c912ec1e9dd9ed7,
+          mid_equals_460c5e2d9d51c6cc,
+          mid_getDataRef_ae860dc2d782e386,
+          mid_getDimension_55546ef6a647f39b,
+          mid_getEntry_6c5caf579ccf9ce5,
+          mid_getField_04d1f63e17d5c5d4,
+          mid_getSubVector_b42960a5471f10ed,
+          mid_hashCode_55546ef6a647f39b,
+          mid_mapAdd_9105020ef45172b7,
+          mid_mapAddToSelf_9105020ef45172b7,
+          mid_mapDivide_9105020ef45172b7,
+          mid_mapDivideToSelf_9105020ef45172b7,
+          mid_mapInv_b8b88195d3642875,
+          mid_mapInvToSelf_b8b88195d3642875,
+          mid_mapMultiply_9105020ef45172b7,
+          mid_mapMultiplyToSelf_9105020ef45172b7,
+          mid_mapSubtract_9105020ef45172b7,
+          mid_mapSubtractToSelf_9105020ef45172b7,
+          mid_outerProduct_6b83ce54dd732da9,
+          mid_outerProduct_8dfd3dc5a728ee60,
+          mid_projection_0875bb37f8462e6f,
+          mid_projection_0c912ec1e9dd9ed7,
+          mid_set_8d8d85cc6e14d2f7,
+          mid_set_5ca7010e88d42feb,
+          mid_setEntry_3e5e9beae9eb3b27,
+          mid_setSubVector_cd62bfbc5992c85f,
+          mid_subtract_0875bb37f8462e6f,
+          mid_subtract_0c912ec1e9dd9ed7,
+          mid_toArray_ae860dc2d782e386,
+          mid_toString_1c1fa1e935d6cdcf,
+          mid_walkInDefaultOrder_902d02ebed1c011e,
+          mid_walkInDefaultOrder_7d08c02ef3ca9df3,
+          mid_walkInDefaultOrder_07dcd460c79c870d,
+          mid_walkInDefaultOrder_5b32a72c59f76929,
+          mid_walkInOptimizedOrder_902d02ebed1c011e,
+          mid_walkInOptimizedOrder_7d08c02ef3ca9df3,
+          mid_walkInOptimizedOrder_07dcd460c79c870d,
+          mid_walkInOptimizedOrder_5b32a72c59f76929,
+          mid_checkVectorDimensions_44ed599e93e8a30c,
+          mid_checkVectorDimensions_a8d98eabf09c8ea2,
           max_mid
         };
 

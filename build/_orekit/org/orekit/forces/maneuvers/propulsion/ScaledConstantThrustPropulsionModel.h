@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
@@ -44,16 +44,16 @@ namespace org {
           class ScaledConstantThrustPropulsionModel : public ::org::orekit::forces::maneuvers::propulsion::AbstractConstantThrustPropulsionModel {
            public:
             enum {
-              mid_init$_cf2d903473e9fd3b,
-              mid_getFlowRate_557b8123390d8d0c,
-              mid_getFlowRate_86c4a0582e0747ce,
-              mid_getFlowRate_e3919ad898361abd,
-              mid_getFlowRate_b0b988f941da47d8,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_getThrustVector_f88961cca75a2c0a,
-              mid_getThrustVector_b4c4f24efa81746b,
-              mid_getThrustVector_73a8498c189497cd,
-              mid_getThrustVector_3df461fe15362b2b,
+              mid_init$_c0d617667838be49,
+              mid_getFlowRate_b74f83833fdad017,
+              mid_getFlowRate_b060e4326765ccf1,
+              mid_getFlowRate_ba5ea64a789ad864,
+              mid_getFlowRate_fd347811007a6ba3,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_getThrustVector_8b724f8b4fdad1a2,
+              mid_getThrustVector_5dc321c3ba065f30,
+              mid_getThrustVector_b7e5bd35daed8b40,
+              mid_getThrustVector_082e6346b274f880,
               max_mid
             };
 

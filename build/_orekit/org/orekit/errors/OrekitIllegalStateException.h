@@ -14,14 +14,14 @@ namespace java {
   }
 }
 namespace org {
-  namespace orekit {
-    namespace errors {
-      class LocalizedException;
-    }
-  }
   namespace hipparchus {
     namespace exception {
       class Localizable;
+    }
+  }
+  namespace orekit {
+    namespace errors {
+      class LocalizedException;
     }
   }
 }
@@ -34,12 +34,12 @@ namespace org {
       class OrekitIllegalStateException : public ::java::lang::IllegalStateException {
        public:
         enum {
-          mid_init$_4fde7f3f87bbd6f7,
-          mid_getLocalizedMessage_3cffd47377eca18a,
-          mid_getMessage_3cffd47377eca18a,
-          mid_getMessage_4b51060c6b7ea981,
-          mid_getParts_6555a5198c71b73a,
-          mid_getSpecifier_a86d7419cf3241b7,
+          mid_init$_9b3ada3301b0db8c,
+          mid_getLocalizedMessage_1c1fa1e935d6cdcf,
+          mid_getMessage_1c1fa1e935d6cdcf,
+          mid_getMessage_26070c28e6ea354d,
+          mid_getParts_24e2edd6319f4c5a,
+          mid_getSpecifier_d8f5056e4f45c9a6,
           max_mid
         };
 

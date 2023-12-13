@@ -8,32 +8,32 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
     class CalculusFieldElement;
   }
   namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace forces {
-      namespace drag {
-        class DragSensitive;
-      }
-    }
     namespace models {
       namespace earth {
         namespace atmosphere {
           class Atmosphere;
         }
       }
+    }
+    namespace forces {
+      namespace drag {
+        class DragSensitive;
+      }
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
     }
   }
 }
@@ -55,12 +55,12 @@ namespace org {
         class DragForce : public ::org::orekit::forces::drag::AbstractDragForceModel {
          public:
           enum {
-            mid_init$_36405303e879e795,
-            mid_acceleration_61944e27a39e8290,
-            mid_acceleration_b61fb59a041240c6,
-            mid_getAtmosphere_344c414ab8fc3e7e,
-            mid_getParametersDrivers_0d9551367f7ecdef,
-            mid_getSpacecraft_5af7812abe9360ec,
+            mid_init$_9d51f29c5e5b1e8b,
+            mid_acceleration_20bded0292328743,
+            mid_acceleration_0ce449c67b5ffd9c,
+            mid_getAtmosphere_51e24dc1f47828d4,
+            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_getSpacecraft_bf04d13a51559009,
             max_mid
           };
 

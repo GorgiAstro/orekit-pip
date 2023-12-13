@@ -38,9 +38,9 @@ namespace org {
               class AemData : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_0640e6acf969ed28,
-                  mid_addData_1adeff44d5ae21ba,
-                  mid_getAngularCoordinates_0d9551367f7ecdef,
+                  mid_init$_a1fa5dae97ea5ed2,
+                  mid_addData_af218a95dcec5785,
+                  mid_getAngularCoordinates_e62d3bb06d56d7e3,
                   max_mid
                 };
 

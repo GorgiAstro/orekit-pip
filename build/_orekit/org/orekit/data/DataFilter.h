@@ -4,11 +4,11 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace io {
-    class IOException;
-  }
   namespace lang {
     class Class;
+  }
+  namespace io {
+    class IOException;
   }
 }
 namespace org {
@@ -27,7 +27,7 @@ namespace org {
       class DataFilter : public ::java::lang::Object {
        public:
         enum {
-          mid_filter_d33f4b0b3a1030ad,
+          mid_filter_bbc30294b1b0b691,
           max_mid
         };
 

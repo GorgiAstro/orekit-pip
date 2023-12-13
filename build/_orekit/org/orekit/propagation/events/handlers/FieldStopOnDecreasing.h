@@ -6,13 +6,13 @@
 namespace org {
   namespace orekit {
     namespace propagation {
-      class FieldSpacecraftState;
       namespace events {
+        class FieldEventDetector;
         namespace handlers {
           class FieldEventHandler;
         }
-        class FieldEventDetector;
       }
+      class FieldSpacecraftState;
     }
   }
   namespace hipparchus {
@@ -40,8 +40,8 @@ namespace org {
           class FieldStopOnDecreasing : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_eventOccurred_061886b33964a9af,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_eventOccurred_839b1f3ec2c4fbf6,
               max_mid
             };
 

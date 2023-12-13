@@ -8,18 +8,18 @@ namespace org {
     namespace frames {
       class Frames;
     }
-    namespace data {
-      class DataSource;
-    }
     namespace utils {
       class IERSConventions;
     }
+    namespace data {
+      class DataSource;
+    }
     namespace files {
-      namespace ilrs {
-        class CPF;
-      }
       namespace general {
         class EphemerisFileParser;
+      }
+      namespace ilrs {
+        class CPF;
       }
     }
     namespace time {
@@ -42,9 +42,9 @@ namespace org {
         class CPFParser : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_init$_68896d89ab6fb140,
-            mid_parse_f7d59a031651200d,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_init$_97dd586bbeb15f85,
+            mid_parse_fe547806e2e2f4f0,
             max_mid
           };
 

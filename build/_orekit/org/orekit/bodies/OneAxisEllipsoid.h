@@ -4,41 +4,41 @@
 #include "org/orekit/bodies/Ellipsoid.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+          class FieldVector3D;
+          class FieldLine;
+          class Line;
+        }
+      }
+    }
+    class CalculusFieldElement;
+    namespace analysis {
+      namespace differentiation {
+        class DerivativeStructure;
+      }
+    }
+  }
   namespace orekit {
     namespace bodies {
-      class BodyShape;
-      class GeodeticPoint;
       class FieldGeodeticPoint;
+      class GeodeticPoint;
+      class BodyShape;
     }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
     }
     namespace utils {
-      class PVCoordinates;
       class TimeStampedPVCoordinates;
+      class PVCoordinates;
     }
     namespace frames {
       class Frame;
     }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class FieldVector3D;
-          class Line;
-          class Vector3D;
-          class FieldLine;
-        }
-      }
-    }
-    namespace analysis {
-      namespace differentiation {
-        class DerivativeStructure;
-      }
-    }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -55,30 +55,30 @@ namespace org {
       class OneAxisEllipsoid : public ::org::orekit::bodies::Ellipsoid {
        public:
         enum {
-          mid_init$_77eb4a8c540c1776,
-          mid_azimuthBetweenPoints_c12f05cc315a69e3,
-          mid_azimuthBetweenPoints_f8a18075cef9d5b5,
-          mid_geodeticToIsometricLatitude_7e960cd6eee376d8,
-          mid_geodeticToIsometricLatitude_6672ad854985cb64,
-          mid_getBodyFrame_6c9bc0a928c56d4e,
-          mid_getCartesianIntersectionPoint_9e2216b0767a7217,
-          mid_getCartesianIntersectionPoint_5b94a85bc390db61,
-          mid_getEccentricity_557b8123390d8d0c,
-          mid_getEccentricitySquared_557b8123390d8d0c,
-          mid_getEquatorialRadius_557b8123390d8d0c,
-          mid_getFlattening_557b8123390d8d0c,
-          mid_getIntersectionPoint_6391bd6fdaac29a3,
-          mid_getIntersectionPoint_884873e1d3d77c4e,
-          mid_lowestAltitudeIntermediate_0a6051973c8e743d,
-          mid_lowestAltitudeIntermediate_4d15c4bf1b2cd849,
-          mid_projectToGround_3d4e9a6447a03aa9,
-          mid_projectToGround_4c5eeaf1ff845fca,
-          mid_setAngularThreshold_10f281d777284cea,
-          mid_transform_8b70a50ea3e1f728,
-          mid_transform_8b264141c1de262c,
-          mid_transform_50a4031074ed92da,
-          mid_transform_8e052cb77f98e021,
-          mid_transform_4dfad8dc678d42b2,
+          mid_init$_9105dccfcf1a0a84,
+          mid_azimuthBetweenPoints_ed6298241367a2ac,
+          mid_azimuthBetweenPoints_75a809c1a78684c5,
+          mid_geodeticToIsometricLatitude_04fd0666b613d2ab,
+          mid_geodeticToIsometricLatitude_6e00dc5eb352fe51,
+          mid_getBodyFrame_2c51111cc6894ba1,
+          mid_getCartesianIntersectionPoint_7d6dd31d54156357,
+          mid_getCartesianIntersectionPoint_96cf0438ee7c1d65,
+          mid_getEccentricity_b74f83833fdad017,
+          mid_getEccentricitySquared_b74f83833fdad017,
+          mid_getEquatorialRadius_b74f83833fdad017,
+          mid_getFlattening_b74f83833fdad017,
+          mid_getIntersectionPoint_f1db6d4c78519d48,
+          mid_getIntersectionPoint_66b39d6d84447197,
+          mid_lowestAltitudeIntermediate_15e1a026853612be,
+          mid_lowestAltitudeIntermediate_820cc059309969e2,
+          mid_projectToGround_3cbe213b2c291f18,
+          mid_projectToGround_feded476b8bdfcfc,
+          mid_setAngularThreshold_8ba9fe7a847cecad,
+          mid_transform_6aa36b82e3b80b58,
+          mid_transform_a840d9913a98925f,
+          mid_transform_93de77ed9854e321,
+          mid_transform_f67fa82bac3192f0,
+          mid_transform_1f5aa9741e58fa64,
           max_mid
         };
 
@@ -100,8 +100,8 @@ namespace org {
         jdouble geodeticToIsometricLatitude(jdouble) const;
         ::org::hipparchus::CalculusFieldElement geodeticToIsometricLatitude(const ::org::hipparchus::CalculusFieldElement &) const;
         ::org::orekit::frames::Frame getBodyFrame() const;
-        ::org::hipparchus::geometry::euclidean::threed::FieldVector3D getCartesianIntersectionPoint(const ::org::hipparchus::geometry::euclidean::threed::FieldLine &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::FieldAbsoluteDate &) const;
         ::org::hipparchus::geometry::euclidean::threed::Vector3D getCartesianIntersectionPoint(const ::org::hipparchus::geometry::euclidean::threed::Line &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::AbsoluteDate &) const;
+        ::org::hipparchus::geometry::euclidean::threed::FieldVector3D getCartesianIntersectionPoint(const ::org::hipparchus::geometry::euclidean::threed::FieldLine &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::FieldAbsoluteDate &) const;
         jdouble getEccentricity() const;
         jdouble getEccentricitySquared() const;
         jdouble getEquatorialRadius() const;
@@ -115,9 +115,9 @@ namespace org {
         void setAngularThreshold(jdouble) const;
         ::org::hipparchus::geometry::euclidean::threed::FieldVector3D transform(const ::org::orekit::bodies::FieldGeodeticPoint &) const;
         ::org::hipparchus::geometry::euclidean::threed::Vector3D transform(const ::org::orekit::bodies::GeodeticPoint &) const;
-        ::org::orekit::bodies::FieldGeodeticPoint transform(const ::org::orekit::utils::PVCoordinates &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::AbsoluteDate &) const;
         ::org::orekit::bodies::FieldGeodeticPoint transform(const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::FieldAbsoluteDate &) const;
         ::org::orekit::bodies::GeodeticPoint transform(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::AbsoluteDate &) const;
+        ::org::orekit::bodies::FieldGeodeticPoint transform(const ::org::orekit::utils::PVCoordinates &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::AbsoluteDate &) const;
       };
     }
   }

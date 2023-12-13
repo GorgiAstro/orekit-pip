@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace twod {
-          class Line;
           class Vector2D;
+          class Line;
         }
       }
     }
@@ -31,13 +31,13 @@ namespace org {
           class Segment : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_cfb070b7ebe3030b,
-              mid_init$_b2fa07e96193ae69,
-              mid_distance_f29c6927714cda74,
-              mid_getEnd_f681f2fc9cdfab57,
-              mid_getLength_557b8123390d8d0c,
-              mid_getLine_e207c2684f5ea968,
-              mid_getStart_f681f2fc9cdfab57,
+              mid_init$_e8ab8fc14564dfe7,
+              mid_init$_14bec7b2bdc550d3,
+              mid_distance_a7f439b8ba8ffc55,
+              mid_getEnd_9cb1572c1d4936cf,
+              mid_getLength_b74f83833fdad017,
+              mid_getLine_f76ed72539e37ce2,
+              mid_getStart_9cb1572c1d4936cf,
               max_mid
             };
 

@@ -5,9 +5,9 @@
 
 namespace org {
   namespace orekit {
-    namespace orbits {
-      class CartesianOrbit;
-      class KeplerianOrbit;
+    namespace time {
+      class TimeStamped;
+      class AbsoluteDate;
     }
     namespace files {
       namespace ccsds {
@@ -15,8 +15,8 @@ namespace org {
           namespace odm {
             class OdmCommonMetadata;
             namespace opm {
-              class OpmData;
               class Maneuver;
+              class OpmData;
             }
             class OdmHeader;
           }
@@ -26,16 +26,16 @@ namespace org {
         }
       }
     }
-    namespace time {
-      class TimeStamped;
-      class AbsoluteDate;
-    }
     namespace utils {
       class IERSConventions;
       class TimeStampedPVCoordinates;
     }
     namespace data {
       class DataContext;
+    }
+    namespace orbits {
+      class KeplerianOrbit;
+      class CartesianOrbit;
     }
     namespace propagation {
       class SpacecraftState;
@@ -64,18 +64,18 @@ namespace org {
               class Opm : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
                public:
                 enum {
-                  mid_init$_66443a7cc3b43b5d,
-                  mid_generateCartesianOrbit_0b5f23f972fe7789,
-                  mid_generateKeplerianOrbit_48360cd036a5e97b,
-                  mid_generateSpacecraftState_15e85d5301b90ef8,
-                  mid_getData_2b9b4229a136e2bd,
-                  mid_getDate_7a97f7e149e79afb,
-                  mid_getManeuver_8f5fc12e3129007b,
-                  mid_getManeuvers_0d9551367f7ecdef,
-                  mid_getMetadata_ece27d931e37ca4f,
-                  mid_getNbManeuvers_412668abc8d889e9,
-                  mid_getPVCoordinates_daf15abc21907508,
-                  mid_hasManeuvers_89b302893bdbe1f1,
+                  mid_init$_9639e27fba1a1f36,
+                  mid_generateCartesianOrbit_0e89356511a1622a,
+                  mid_generateKeplerianOrbit_f50f1bbccaeb207e,
+                  mid_generateSpacecraftState_9d155cc8314c99cf,
+                  mid_getData_6abd8fe67a2faefe,
+                  mid_getDate_c325492395d89b24,
+                  mid_getManeuver_b5f4acb06008530a,
+                  mid_getManeuvers_e62d3bb06d56d7e3,
+                  mid_getMetadata_c7fe65359339297c,
+                  mid_getNbManeuvers_55546ef6a647f39b,
+                  mid_getPVCoordinates_136cc8ba23b21c29,
+                  mid_hasManeuvers_9ab94ac1dc23b105,
                   max_mid
                 };
 

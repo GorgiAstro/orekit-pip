@@ -3,25 +3,25 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace definitions {
+          class FrameFacade;
+        }
         namespace ndm {
           namespace adm {
             class AttitudeEndpoints;
           }
         }
-        namespace definitions {
-          class FrameFacade;
-        }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -37,17 +37,17 @@ namespace org {
               class AngularVelocity : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_0640e6acf969ed28,
-                  mid_getAngVelX_557b8123390d8d0c,
-                  mid_getAngVelY_557b8123390d8d0c,
-                  mid_getAngVelZ_557b8123390d8d0c,
-                  mid_getEndpoints_c66f753ddee38944,
-                  mid_getFrame_98f5fcaff3e3f9d2,
-                  mid_setAngVelX_10f281d777284cea,
-                  mid_setAngVelY_10f281d777284cea,
-                  mid_setAngVelZ_10f281d777284cea,
-                  mid_setFrame_f55eee1236275bb1,
-                  mid_validate_10f281d777284cea,
+                  mid_init$_a1fa5dae97ea5ed2,
+                  mid_getAngVelX_b74f83833fdad017,
+                  mid_getAngVelY_b74f83833fdad017,
+                  mid_getAngVelZ_b74f83833fdad017,
+                  mid_getEndpoints_c60ad1d207bc8e06,
+                  mid_getFrame_69d8be1b6b0a1a94,
+                  mid_setAngVelX_8ba9fe7a847cecad,
+                  mid_setAngVelY_8ba9fe7a847cecad,
+                  mid_setAngVelZ_8ba9fe7a847cecad,
+                  mid_setFrame_4755133c5c4c59be,
+                  mid_validate_8ba9fe7a847cecad,
                   max_mid
                 };
 

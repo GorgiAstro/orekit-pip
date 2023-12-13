@@ -5,29 +5,29 @@
 
 namespace org {
   namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
     namespace propagation {
-      class PropagationType;
       namespace semianalytical {
         namespace dsst {
-          namespace utilities {
-            class AuxiliaryElements;
-            class FieldAuxiliaryElements;
-          }
           namespace forces {
             class FieldShortPeriodTerms;
-            class ShortPeriodTerms;
             class DSSTForceModel;
+            class ShortPeriodTerms;
+          }
+          namespace utilities {
+            class FieldAuxiliaryElements;
+            class AuxiliaryElements;
           }
         }
       }
-      class FieldSpacecraftState;
+      class PropagationType;
       class SpacecraftState;
+      class FieldSpacecraftState;
     }
     namespace utils {
       class ParameterDriver;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
     }
   }
   namespace hipparchus {
@@ -55,19 +55,19 @@ namespace org {
             class PythonDSSTForceModel : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0640e6acf969ed28,
-                mid_finalize_0640e6acf969ed28,
-                mid_getMeanElementRate_3573019cca22a7a6,
-                mid_getMeanElementRate_6930c150caff50e0,
-                mid_getParametersDrivers_0d9551367f7ecdef,
-                mid_initializeShortPeriodTerms_57b295149dcd4abd,
-                mid_initializeShortPeriodTerms_0791dbeb06a23554,
-                mid_pythonDecRef_0640e6acf969ed28,
-                mid_pythonExtension_9e26256fb0d384a2,
-                mid_pythonExtension_3cd6a6b354c6aa22,
-                mid_registerAttitudeProvider_8fa6c0c067ead7b2,
-                mid_updateShortPeriodTerms_a9be3da5be85857d,
-                mid_updateShortPeriodTerms_114c99ef73dfde56,
+                mid_init$_a1fa5dae97ea5ed2,
+                mid_finalize_a1fa5dae97ea5ed2,
+                mid_getMeanElementRate_0483a0f94731abef,
+                mid_getMeanElementRate_7d3eb19aa1e75a63,
+                mid_getParametersDrivers_e62d3bb06d56d7e3,
+                mid_initializeShortPeriodTerms_6fb0c582e8925f89,
+                mid_initializeShortPeriodTerms_3144241334d46411,
+                mid_pythonDecRef_a1fa5dae97ea5ed2,
+                mid_pythonExtension_6c0ce7e438e5ded4,
+                mid_pythonExtension_3d7dd2314a0dd456,
+                mid_registerAttitudeProvider_8e4d3ea100bc0095,
+                mid_updateShortPeriodTerms_62f1ad39eb6f1276,
+                mid_updateShortPeriodTerms_5401e749436ec3b7,
                 max_mid
               };
 
@@ -85,8 +85,8 @@ namespace org {
               PythonDSSTForceModel();
 
               void finalize() const;
-              JArray< ::org::hipparchus::CalculusFieldElement > getMeanElementRate(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::FieldAuxiliaryElements &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
               JArray< jdouble > getMeanElementRate(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::AuxiliaryElements &, const JArray< jdouble > &) const;
+              JArray< ::org::hipparchus::CalculusFieldElement > getMeanElementRate(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::FieldAuxiliaryElements &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
               ::java::util::List getParametersDrivers() const;
               ::java::util::List initializeShortPeriodTerms(const ::org::orekit::propagation::semianalytical::dsst::utilities::AuxiliaryElements &, const ::org::orekit::propagation::PropagationType &, const JArray< jdouble > &) const;
               ::java::util::List initializeShortPeriodTerms(const ::org::orekit::propagation::semianalytical::dsst::utilities::FieldAuxiliaryElements &, const ::org::orekit::propagation::PropagationType &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
@@ -94,8 +94,8 @@ namespace org {
               jlong pythonExtension() const;
               void pythonExtension(jlong) const;
               void registerAttitudeProvider(const ::org::orekit::attitudes::AttitudeProvider &) const;
-              void updateShortPeriodTerms(const JArray< jdouble > &, const JArray< ::org::orekit::propagation::SpacecraftState > &) const;
               void updateShortPeriodTerms(const JArray< ::org::hipparchus::CalculusFieldElement > &, const JArray< ::org::orekit::propagation::FieldSpacecraftState > &) const;
+              void updateShortPeriodTerms(const JArray< jdouble > &, const JArray< ::org::orekit::propagation::SpacecraftState > &) const;
             };
           }
         }

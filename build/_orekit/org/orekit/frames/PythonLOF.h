@@ -5,9 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class LOF;
-    }
     namespace utils {
       class FieldPVCoordinates;
       class PVCoordinates;
@@ -16,13 +13,16 @@ namespace org {
       class FieldAbsoluteDate;
       class AbsoluteDate;
     }
+    namespace frames {
+      class LOF;
+    }
   }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Rotation;
           class FieldRotation;
+          class Rotation;
         }
       }
     }
@@ -45,14 +45,14 @@ namespace org {
       class PythonLOF : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_finalize_0640e6acf969ed28,
-          mid_getName_3cffd47377eca18a,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
-          mid_rotationFromInertial_9b71bf39454b4a07,
-          mid_rotationFromInertial_1022f468fb3d1015,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_getName_1c1fa1e935d6cdcf,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_rotationFromInertial_9c03210e4a66b8b3,
+          mid_rotationFromInertial_8f928c19e9edde2b,
           max_mid
         };
 

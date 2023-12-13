@@ -4,14 +4,14 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace data {
-      class BodiesElements;
-      class FieldBodiesElements;
-    }
-  }
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+  namespace orekit {
+    namespace data {
+      class FieldBodiesElements;
+      class BodiesElements;
+    }
   }
 }
 namespace java {
@@ -28,10 +28,10 @@ namespace org {
       class PoissonSeries$CompiledSeries : public ::java::lang::Object {
        public:
         enum {
-          mid_derivative_c933bd8b3b01b6fa,
-          mid_derivative_19d2f680a2dd5e54,
-          mid_value_c933bd8b3b01b6fa,
-          mid_value_19d2f680a2dd5e54,
+          mid_derivative_385587d041c81b1f,
+          mid_derivative_8e0d8ae8849d1551,
+          mid_value_385587d041c81b1f,
+          mid_value_8e0d8ae8849d1551,
           max_mid
         };
 

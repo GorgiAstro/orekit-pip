@@ -5,13 +5,13 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class IERSConventions$NutationCorrectionConverter;
-    }
     namespace time {
+      class TimeStamped;
       class AbsoluteDate;
       class TimeScale;
-      class TimeStamped;
+    }
+    namespace utils {
+      class IERSConventions$NutationCorrectionConverter;
     }
     namespace frames {
       class EOPEntry;
@@ -34,25 +34,25 @@ namespace org {
         class SinexEopEntry : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_20affcbd28542333,
-            mid_getDate_7a97f7e149e79afb,
-            mid_getLod_557b8123390d8d0c,
-            mid_getNutLn_557b8123390d8d0c,
-            mid_getNutOb_557b8123390d8d0c,
-            mid_getNutX_557b8123390d8d0c,
-            mid_getNutY_557b8123390d8d0c,
-            mid_getUt1MinusUtc_557b8123390d8d0c,
-            mid_getXPo_557b8123390d8d0c,
-            mid_getYPo_557b8123390d8d0c,
-            mid_setLod_10f281d777284cea,
-            mid_setNutLn_10f281d777284cea,
-            mid_setNutOb_10f281d777284cea,
-            mid_setNutX_10f281d777284cea,
-            mid_setNutY_10f281d777284cea,
-            mid_setUt1MinusUtc_10f281d777284cea,
-            mid_setxPo_10f281d777284cea,
-            mid_setyPo_10f281d777284cea,
-            mid_toEopEntry_29ec6104a94c2ddc,
+            mid_init$_02135a6ef25adb4b,
+            mid_getDate_c325492395d89b24,
+            mid_getLod_b74f83833fdad017,
+            mid_getNutLn_b74f83833fdad017,
+            mid_getNutOb_b74f83833fdad017,
+            mid_getNutX_b74f83833fdad017,
+            mid_getNutY_b74f83833fdad017,
+            mid_getUt1MinusUtc_b74f83833fdad017,
+            mid_getXPo_b74f83833fdad017,
+            mid_getYPo_b74f83833fdad017,
+            mid_setLod_8ba9fe7a847cecad,
+            mid_setNutLn_8ba9fe7a847cecad,
+            mid_setNutOb_8ba9fe7a847cecad,
+            mid_setNutX_8ba9fe7a847cecad,
+            mid_setNutY_8ba9fe7a847cecad,
+            mid_setUt1MinusUtc_8ba9fe7a847cecad,
+            mid_setxPo_8ba9fe7a847cecad,
+            mid_setyPo_8ba9fe7a847cecad,
+            mid_toEopEntry_5d6fc5e7d7649a1f,
             max_mid
           };
 

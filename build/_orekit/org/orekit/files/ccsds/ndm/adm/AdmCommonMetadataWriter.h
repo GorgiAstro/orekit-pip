@@ -33,8 +33,8 @@ namespace org {
             class AdmCommonMetadataWriter : public ::org::orekit::files::ccsds::section::AbstractWriter {
              public:
               enum {
-                mid_init$_27cf97d3f8749865,
-                mid_writeContent_0503da09b1f1eb3c,
+                mid_init$_fd63369ca1bc1f43,
+                mid_writeContent_fb222e851cd27682,
                 max_mid
               };
 

@@ -5,20 +5,20 @@
 
 namespace org {
   namespace hipparchus {
-    class FieldElement;
     namespace exception {
-      class MathIllegalArgumentException;
       class NullArgumentException;
       class MathRuntimeException;
+      class MathIllegalArgumentException;
     }
     namespace linear {
-      class FieldVector;
-      class SparseFieldVector;
-      class FieldVectorChangingVisitor;
-      class FieldMatrix;
       class FieldVectorPreservingVisitor;
+      class FieldVectorChangingVisitor;
+      class SparseFieldVector;
+      class FieldMatrix;
+      class FieldVector;
     }
     class Field;
+    class FieldElement;
   }
 }
 namespace java {
@@ -38,53 +38,53 @@ namespace org {
       class SparseFieldVector : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_979ae7f57a96b096,
-          mid_init$_1b9cf9fe2f8d539c,
-          mid_init$_f89bf3117923cd08,
-          mid_init$_a9ccb012d4cb48bd,
-          mid_add_d67ce590c75ba943,
-          mid_add_a7c6926a425759ad,
-          mid_append_d67ce590c75ba943,
-          mid_append_9c0263b78fe30ac4,
-          mid_append_a7c6926a425759ad,
-          mid_copy_f39e0d3c1ce991ac,
-          mid_dotProduct_3954878560819a96,
-          mid_ebeDivide_a7c6926a425759ad,
-          mid_ebeMultiply_a7c6926a425759ad,
-          mid_equals_221e8e85cb385209,
-          mid_getDimension_412668abc8d889e9,
-          mid_getEntry_d40ba91356b6a058,
-          mid_getField_20f98801541dcec1,
-          mid_getSubVector_6244d57986a4c96a,
-          mid_hashCode_412668abc8d889e9,
-          mid_mapAdd_9c0263b78fe30ac4,
-          mid_mapAddToSelf_9c0263b78fe30ac4,
-          mid_mapDivide_9c0263b78fe30ac4,
-          mid_mapDivideToSelf_9c0263b78fe30ac4,
-          mid_mapInv_f39e0d3c1ce991ac,
-          mid_mapInvToSelf_f39e0d3c1ce991ac,
-          mid_mapMultiply_9c0263b78fe30ac4,
-          mid_mapMultiplyToSelf_9c0263b78fe30ac4,
-          mid_mapSubtract_9c0263b78fe30ac4,
-          mid_mapSubtractToSelf_9c0263b78fe30ac4,
-          mid_outerProduct_05ccbe5320838a83,
-          mid_outerProduct_2284af949fc5e425,
-          mid_projection_a7c6926a425759ad,
-          mid_set_b906415fb0b2ba27,
-          mid_setEntry_d23b1b48c6bca206,
-          mid_setSubVector_502f8ed205bebebd,
-          mid_subtract_c8e2f1a6e8745452,
-          mid_subtract_a7c6926a425759ad,
-          mid_toArray_7a985a773168dff8,
-          mid_walkInDefaultOrder_a4b00f8c7fc7e690,
-          mid_walkInDefaultOrder_1915435d849c895c,
-          mid_walkInDefaultOrder_3d5cadff5023e9d0,
-          mid_walkInDefaultOrder_57525d52a5913d3a,
-          mid_walkInOptimizedOrder_a4b00f8c7fc7e690,
-          mid_walkInOptimizedOrder_1915435d849c895c,
-          mid_walkInOptimizedOrder_3d5cadff5023e9d0,
-          mid_walkInOptimizedOrder_57525d52a5913d3a,
-          mid_checkVectorDimensions_a3da1a935cb37f7b,
+          mid_init$_02ab84aa7626616d,
+          mid_init$_a1e449a87301face,
+          mid_init$_9127f23cedcce237,
+          mid_init$_b6c946d1cbf160f0,
+          mid_add_850938212cbcebbc,
+          mid_add_0c912ec1e9dd9ed7,
+          mid_append_850938212cbcebbc,
+          mid_append_9105020ef45172b7,
+          mid_append_0c912ec1e9dd9ed7,
+          mid_copy_b8b88195d3642875,
+          mid_dotProduct_8b189f525aa86de4,
+          mid_ebeDivide_0c912ec1e9dd9ed7,
+          mid_ebeMultiply_0c912ec1e9dd9ed7,
+          mid_equals_460c5e2d9d51c6cc,
+          mid_getDimension_55546ef6a647f39b,
+          mid_getEntry_6c5caf579ccf9ce5,
+          mid_getField_04d1f63e17d5c5d4,
+          mid_getSubVector_b42960a5471f10ed,
+          mid_hashCode_55546ef6a647f39b,
+          mid_mapAdd_9105020ef45172b7,
+          mid_mapAddToSelf_9105020ef45172b7,
+          mid_mapDivide_9105020ef45172b7,
+          mid_mapDivideToSelf_9105020ef45172b7,
+          mid_mapInv_b8b88195d3642875,
+          mid_mapInvToSelf_b8b88195d3642875,
+          mid_mapMultiply_9105020ef45172b7,
+          mid_mapMultiplyToSelf_9105020ef45172b7,
+          mid_mapSubtract_9105020ef45172b7,
+          mid_mapSubtractToSelf_9105020ef45172b7,
+          mid_outerProduct_00df9023db23fdc5,
+          mid_outerProduct_8dfd3dc5a728ee60,
+          mid_projection_0c912ec1e9dd9ed7,
+          mid_set_8d8d85cc6e14d2f7,
+          mid_setEntry_3e5e9beae9eb3b27,
+          mid_setSubVector_cd62bfbc5992c85f,
+          mid_subtract_546a6c273c5fbab3,
+          mid_subtract_0c912ec1e9dd9ed7,
+          mid_toArray_ae860dc2d782e386,
+          mid_walkInDefaultOrder_902d02ebed1c011e,
+          mid_walkInDefaultOrder_7d08c02ef3ca9df3,
+          mid_walkInDefaultOrder_07dcd460c79c870d,
+          mid_walkInDefaultOrder_5b32a72c59f76929,
+          mid_walkInOptimizedOrder_902d02ebed1c011e,
+          mid_walkInOptimizedOrder_7d08c02ef3ca9df3,
+          mid_walkInOptimizedOrder_07dcd460c79c870d,
+          mid_walkInOptimizedOrder_5b32a72c59f76929,
+          mid_checkVectorDimensions_44ed599e93e8a30c,
           max_mid
         };
 

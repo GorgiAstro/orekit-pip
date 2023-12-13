@@ -5,18 +5,18 @@
 
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataSource;
+    }
     namespace files {
       namespace ccsds {
         namespace utils {
           namespace lexical {
-            class LexicalAnalyzer;
             class MessageParser;
+            class LexicalAnalyzer;
           }
         }
       }
-    }
-    namespace data {
-      class DataSource;
     }
   }
 }
@@ -37,8 +37,8 @@ namespace org {
             class XmlLexicalAnalyzer : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_562a84d0b1d0d772,
-                mid_accept_dc31073a650e82af,
+                mid_init$_4345325324782fee,
+                mid_accept_315581e8824888b8,
                 max_mid
               };
 

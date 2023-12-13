@@ -4,24 +4,24 @@
 #include "org/orekit/frames/encounter/AbstractEncounterLOF.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class FieldVector3D;
-          class Vector3D;
-          class Rotation;
-          class FieldRotation;
-        }
-      }
-    }
-    class Field;
-  }
   namespace orekit {
     namespace utils {
       class FieldPVCoordinates;
       class PVCoordinates;
     }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+          class FieldRotation;
+          class FieldVector3D;
+          class Rotation;
+        }
+      }
+    }
+    class Field;
   }
 }
 namespace java {
@@ -41,16 +41,16 @@ namespace org {
         class PythonAbstractEncounterLOF : public ::org::orekit::frames::encounter::AbstractEncounterLOF {
          public:
           enum {
-            mid_init$_dd80faf626f5319e,
-            mid_finalize_0640e6acf969ed28,
-            mid_getAxisNormalToCollisionPlane_f88961cca75a2c0a,
-            mid_getAxisNormalToCollisionPlane_3a465a0c08d1dbdf,
-            mid_getName_3cffd47377eca18a,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
-            mid_rotationFromInertial_0158ab79fb625627,
-            mid_rotationFromInertial_ea6e3434436b926f,
+            mid_init$_e7272d224e58d28f,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_getAxisNormalToCollisionPlane_8b724f8b4fdad1a2,
+            mid_getAxisNormalToCollisionPlane_98221d2e63674019,
+            mid_getName_1c1fa1e935d6cdcf,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_rotationFromInertial_bf95090cc5e2a8d4,
+            mid_rotationFromInertial_8851faa33644affd,
             max_mid
           };
 

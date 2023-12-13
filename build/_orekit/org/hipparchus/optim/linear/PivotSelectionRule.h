@@ -12,10 +12,10 @@ namespace java {
 namespace org {
   namespace hipparchus {
     namespace optim {
-      class OptimizationData;
       namespace linear {
         class PivotSelectionRule;
       }
+      class OptimizationData;
     }
   }
 }
@@ -29,8 +29,8 @@ namespace org {
         class PivotSelectionRule : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_38351e9a2dcdfc31,
-            mid_values_ba3eade62c43952a,
+            mid_valueOf_998de040fdbee165,
+            mid_values_106e9355d9d13083,
             max_mid
           };
 

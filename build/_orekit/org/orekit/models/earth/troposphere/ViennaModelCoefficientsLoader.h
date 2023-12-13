@@ -3,28 +3,8 @@
 
 #include "org/orekit/data/AbstractSelfFeedingLoader.h"
 
-namespace java {
-  namespace io {
-    class IOException;
-    class InputStream;
-  }
-  namespace text {
-    class ParseException;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace models {
-      namespace earth {
-        namespace troposphere {
-          class ViennaModelType;
-        }
-      }
-    }
     namespace data {
       class DataLoader;
       class DataProvidersManager;
@@ -32,6 +12,26 @@ namespace org {
     namespace time {
       class DateTimeComponents;
     }
+    namespace models {
+      namespace earth {
+        namespace troposphere {
+          class ViennaModelType;
+        }
+      }
+    }
+  }
+}
+namespace java {
+  namespace io {
+    class InputStream;
+    class IOException;
+  }
+  namespace text {
+    class ParseException;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -45,16 +45,16 @@ namespace org {
           class ViennaModelCoefficientsLoader : public ::org::orekit::data::AbstractSelfFeedingLoader {
            public:
             enum {
-              mid_init$_7c93207b27c1d5d1,
-              mid_init$_7decaa8221e502f9,
-              mid_init$_e8b83fa5b312fd3e,
-              mid_getA_a53a7513ecedada2,
-              mid_getSupportedNames_3cffd47377eca18a,
-              mid_getZenithDelay_a53a7513ecedada2,
-              mid_loadData_15770e8d8949a557,
-              mid_loadViennaCoefficients_0640e6acf969ed28,
-              mid_loadViennaCoefficients_f86c144703aac3d6,
-              mid_stillAcceptsData_89b302893bdbe1f1,
+              mid_init$_94a432a96b6f2908,
+              mid_init$_10c8955a59d23838,
+              mid_init$_293ce9451bede7f1,
+              mid_getA_25e1757a36c4dde2,
+              mid_getSupportedNames_1c1fa1e935d6cdcf,
+              mid_getZenithDelay_25e1757a36c4dde2,
+              mid_loadData_360461e719fb564c,
+              mid_loadViennaCoefficients_a1fa5dae97ea5ed2,
+              mid_loadViennaCoefficients_0ae14a6b384129f2,
+              mid_stillAcceptsData_9ab94ac1dc23b105,
               max_mid
             };
 

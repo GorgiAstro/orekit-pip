@@ -28,12 +28,12 @@ namespace org {
             class MarshallSolarActivityFutureEstimationLoader$LineParameters : public ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityDataLoader$LineParameters {
              public:
               enum {
-                mid_compareTo_2ef76e9305253641,
-                mid_equals_221e8e85cb385209,
-                mid_getAp_557b8123390d8d0c,
-                mid_getF107_557b8123390d8d0c,
-                mid_getFileDate_ef81839d8717cc3a,
-                mid_hashCode_412668abc8d889e9,
+                mid_compareTo_73ef5c88fa79f2d9,
+                mid_equals_460c5e2d9d51c6cc,
+                mid_getAp_b74f83833fdad017,
+                mid_getF107_b74f83833fdad017,
+                mid_getFileDate_357436921b6db81c,
+                mid_hashCode_55546ef6a647f39b,
                 max_mid
               };
 

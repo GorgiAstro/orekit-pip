@@ -6,9 +6,9 @@
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class DecompositionSolver;
       class MatrixDecomposer;
       class RealMatrix;
+      class DecompositionSolver;
     }
   }
 }
@@ -26,8 +26,8 @@ namespace org {
       class CholeskyDecomposer : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_ab23f4ae0fb33968,
-          mid_decompose_3f89101650640015,
+          mid_init$_369b4c97255d5afa,
+          mid_decompose_8def7320d620ddc9,
           max_mid
         };
 

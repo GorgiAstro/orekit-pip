@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
+    namespace frames {
+      class Frame;
+    }
     namespace models {
       namespace earth {
         class ReferenceEllipsoid;
         class EarthShape;
       }
-    }
-    namespace frames {
-      class Frame;
     }
   }
 }
@@ -31,18 +31,18 @@ namespace org {
         class ReferenceEllipsoid : public ::org::orekit::bodies::OneAxisEllipsoid {
          public:
           enum {
-            mid_init$_dc7300a4d004d885,
-            mid_getC2n0_69cfb132c661aca4,
-            mid_getEllipsoid_576f0b44e8384336,
-            mid_getGM_557b8123390d8d0c,
-            mid_getGrs80_039ba5d4c7fe1b86,
-            mid_getIers2003_039ba5d4c7fe1b86,
-            mid_getIers2010_039ba5d4c7fe1b86,
-            mid_getIers96_039ba5d4c7fe1b86,
-            mid_getNormalGravity_7e960cd6eee376d8,
-            mid_getPolarRadius_557b8123390d8d0c,
-            mid_getSpin_557b8123390d8d0c,
-            mid_getWgs84_039ba5d4c7fe1b86,
+            mid_init$_29f310580315bd62,
+            mid_getC2n0_2afcbc21f4e57ab2,
+            mid_getEllipsoid_aa643af2699b886e,
+            mid_getGM_b74f83833fdad017,
+            mid_getGrs80_ede34de05fdfe414,
+            mid_getIers2003_ede34de05fdfe414,
+            mid_getIers2010_ede34de05fdfe414,
+            mid_getIers96_ede34de05fdfe414,
+            mid_getNormalGravity_04fd0666b613d2ab,
+            mid_getPolarRadius_b74f83833fdad017,
+            mid_getSpin_b74f83833fdad017,
+            mid_getWgs84_ede34de05fdfe414,
             max_mid
           };
 

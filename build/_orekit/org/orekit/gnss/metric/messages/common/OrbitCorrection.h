@@ -20,13 +20,13 @@ namespace org {
             class OrbitCorrection : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_3869a36d565fbc00,
-                mid_getDeltaOrbitAlongTrack_557b8123390d8d0c,
-                mid_getDeltaOrbitCrossTrack_557b8123390d8d0c,
-                mid_getDeltaOrbitRadial_557b8123390d8d0c,
-                mid_getDotOrbitDeltaAlongTrack_557b8123390d8d0c,
-                mid_getDotOrbitDeltaCrossTrack_557b8123390d8d0c,
-                mid_getDotOrbitDeltaRadial_557b8123390d8d0c,
+                mid_init$_5efe929945898acc,
+                mid_getDeltaOrbitAlongTrack_b74f83833fdad017,
+                mid_getDeltaOrbitCrossTrack_b74f83833fdad017,
+                mid_getDeltaOrbitRadial_b74f83833fdad017,
+                mid_getDotOrbitDeltaAlongTrack_b74f83833fdad017,
+                mid_getDotOrbitDeltaCrossTrack_b74f83833fdad017,
+                mid_getDotOrbitDeltaRadial_b74f83833fdad017,
                 max_mid
               };
 

@@ -3,14 +3,6 @@
 
 #include "org/hipparchus/geometry/hull/ConvexHullGenerator.h"
 
-namespace java {
-  namespace util {
-    class Collection;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -29,6 +21,14 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class Collection;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -41,7 +41,7 @@ namespace org {
             class ConvexHullGenerator2D : public ::org::hipparchus::geometry::hull::ConvexHullGenerator {
              public:
               enum {
-                mid_generate_b7d73bd07a9bc56d,
+                mid_generate_ae326bc9ed5d7af0,
                 max_mid
               };
 

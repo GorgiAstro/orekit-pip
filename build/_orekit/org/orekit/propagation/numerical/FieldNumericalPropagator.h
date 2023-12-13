@@ -4,36 +4,36 @@
 #include "org/orekit/propagation/integration/FieldAbstractIntegratedPropagator.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace ode {
+      class FieldODEIntegrator;
+    }
+    class Field;
+    class CalculusFieldElement;
+  }
   namespace orekit {
-    namespace utils {
-      class TimeStampedFieldPVCoordinates;
-    }
-    namespace propagation {
-      class FieldSpacecraftState;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
-    namespace orbits {
-      class OrbitType;
-      class PositionAngleType;
-      class FieldOrbit;
-    }
-    namespace frames {
-      class Frame;
-    }
     namespace attitudes {
       class AttitudeProvider;
     }
     namespace forces {
       class ForceModel;
     }
-  }
-  namespace hipparchus {
-    class Field;
-    class CalculusFieldElement;
-    namespace ode {
-      class FieldODEIntegrator;
+    namespace time {
+      class FieldAbsoluteDate;
+    }
+    namespace orbits {
+      class FieldOrbit;
+      class PositionAngleType;
+      class OrbitType;
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+    }
+    namespace utils {
+      class TimeStampedFieldPVCoordinates;
     }
   }
 }
@@ -55,24 +55,24 @@ namespace org {
         class FieldNumericalPropagator : public ::org::orekit::propagation::integration::FieldAbstractIntegratedPropagator {
          public:
           enum {
-            mid_init$_68cc2850ac8c3b8a,
-            mid_init$_5fd536ebd2e543f8,
-            mid_addForceModel_e37f41a34246ae45,
-            mid_getAllForceModels_0d9551367f7ecdef,
-            mid_getOrbitType_2cea2a2cb3e02091,
-            mid_getPVCoordinates_4ac52e75113a03db,
-            mid_getPositionAngleType_f4984aee71df4c19,
-            mid_removeForceModels_0640e6acf969ed28,
-            mid_resetInitialState_b66c84a5711243d5,
-            mid_setIgnoreCentralAttraction_ed2afdb8506b9742,
-            mid_setInitialState_b66c84a5711243d5,
-            mid_setMu_1ee4bed350fde589,
-            mid_setOrbitType_6ccfc646a24c9722,
-            mid_setPositionAngleType_44c283653315b1a7,
-            mid_tolerances_89f225076cfe8a9a,
-            mid_tolerances_f1caea89d67ed2a2,
-            mid_createMapper_ad7c2ac9dfe2008b,
-            mid_getMainStateEquations_c822d3b1a2fa150a,
+            mid_init$_b32dfc76ba0d0dfd,
+            mid_init$_fb37e725b65dfde5,
+            mid_addForceModel_43775e92e64180fc,
+            mid_getAllForceModels_e62d3bb06d56d7e3,
+            mid_getOrbitType_c7d4737d7afca612,
+            mid_getPVCoordinates_294c5c99690f2356,
+            mid_getPositionAngleType_c25055891f180348,
+            mid_removeForceModels_a1fa5dae97ea5ed2,
+            mid_resetInitialState_54d9efbf99822980,
+            mid_setIgnoreCentralAttraction_fcb96c98de6fad04,
+            mid_setInitialState_54d9efbf99822980,
+            mid_setMu_f2b4bfa0af1007e8,
+            mid_setOrbitType_2fa1f3b8966f0286,
+            mid_setPositionAngleType_778d09854443b806,
+            mid_tolerances_17b6398a327a83bc,
+            mid_tolerances_0a58f8dda5b45b16,
+            mid_createMapper_23e677752bbdcbdf,
+            mid_getMainStateEquations_f48ddce9ae4b38bb,
             max_mid
           };
 

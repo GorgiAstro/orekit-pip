@@ -3,17 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        namespace gnss {
-          class IntegerLeastSquareSolution;
-        }
-      }
-    }
-  }
-}
 namespace java {
   namespace util {
     class Comparator;
@@ -23,6 +12,17 @@ namespace java {
   }
   namespace io {
     class Serializable;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        namespace gnss {
+          class IntegerLeastSquareSolution;
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -36,8 +36,8 @@ namespace org {
           class IntegerLeastSquareComparator : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_compare_b55c09687809027d,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_compare_85e1b22222045925,
               max_mid
             };
 

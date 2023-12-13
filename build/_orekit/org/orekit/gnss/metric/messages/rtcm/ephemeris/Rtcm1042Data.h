@@ -5,9 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeScales;
-    }
     namespace propagation {
       namespace analytical {
         namespace gnss {
@@ -16,6 +13,9 @@ namespace org {
           }
         }
       }
+    }
+    namespace time {
+      class TimeScales;
     }
   }
 }
@@ -37,14 +37,14 @@ namespace org {
               class Rtcm1042Data : public ::org::orekit::gnss::metric::messages::rtcm::ephemeris::RtcmEphemerisData {
                public:
                 enum {
-                  mid_init$_0640e6acf969ed28,
-                  mid_getBeidouNavigationMessage_006e221904e033c6,
-                  mid_getBeidouNavigationMessage_0da0f002b5100811,
-                  mid_getBeidouToc_557b8123390d8d0c,
-                  mid_getSvHealth_557b8123390d8d0c,
-                  mid_setBeidouNavigationMessage_b3ed48b5bc32689f,
-                  mid_setBeidouToc_10f281d777284cea,
-                  mid_setSvHealth_10f281d777284cea,
+                  mid_init$_a1fa5dae97ea5ed2,
+                  mid_getBeidouNavigationMessage_13d1af32939a6e9c,
+                  mid_getBeidouNavigationMessage_a0991862b918be40,
+                  mid_getBeidouToc_b74f83833fdad017,
+                  mid_getSvHealth_b74f83833fdad017,
+                  mid_setBeidouNavigationMessage_3bdf636f6ee36324,
+                  mid_setBeidouToc_8ba9fe7a847cecad,
+                  mid_setSvHealth_8ba9fe7a847cecad,
                   max_mid
                 };
 

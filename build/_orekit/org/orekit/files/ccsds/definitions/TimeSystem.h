@@ -35,10 +35,10 @@ namespace org {
           class TimeSystem : public ::java::lang::Enum {
            public:
             enum {
-              mid_getConverter_3e4357fb6d159cb2,
-              mid_parse_33d2ec705c4e43f1,
-              mid_valueOf_33d2ec705c4e43f1,
-              mid_values_30b6d18ee57e2905,
+              mid_getConverter_45ac3c12f126fa2a,
+              mid_parse_67204ebc4d451065,
+              mid_valueOf_67204ebc4d451065,
+              mid_values_893f34a3cc18ea0d,
               max_mid
             };
 

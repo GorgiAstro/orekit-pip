@@ -5,21 +5,21 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class LOF;
-      class Frame;
-    }
-    namespace orbits {
-      class OrbitType;
-      class PositionAngleType;
-      class Orbit;
-    }
     namespace time {
-      class AbsoluteDate;
       class TimeStamped;
+      class AbsoluteDate;
     }
     namespace propagation {
       class StateCovariance;
+    }
+    namespace orbits {
+      class Orbit;
+      class PositionAngleType;
+      class OrbitType;
+    }
+    namespace frames {
+      class LOF;
+      class Frame;
     }
   }
   namespace hipparchus {
@@ -42,20 +42,20 @@ namespace org {
       class StateCovariance : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_b1688c6adc38bffb,
-          mid_init$_ab299c366767a21a,
-          mid_changeCovarianceFrame_f34a2de6a1678f3a,
-          mid_changeCovarianceFrame_0326c1621cadb083,
-          mid_changeCovarianceType_9bc86cc0bda1675d,
-          mid_checkFrameAndOrbitTypeConsistency_fa21e9c7a1011dd1,
-          mid_getDate_7a97f7e149e79afb,
-          mid_getFrame_6c9bc0a928c56d4e,
-          mid_getLOF_13b82f8eb71f0f31,
-          mid_getMatrix_70a207fcbc031df2,
-          mid_getOrbitType_2cea2a2cb3e02091,
-          mid_getPositionAngleType_f4984aee71df4c19,
-          mid_getStm_4ff3f8635ed236f0,
-          mid_shiftedBy_521921f1a20e36e2,
+          mid_init$_a3e43bb509386d88,
+          mid_init$_dc92e4260cab11aa,
+          mid_changeCovarianceFrame_b6bbba5f1b0fd523,
+          mid_changeCovarianceFrame_962ea77ed517818a,
+          mid_changeCovarianceType_3fba55e1218cf3cb,
+          mid_checkFrameAndOrbitTypeConsistency_41a17ca6d6e11fdb,
+          mid_getDate_c325492395d89b24,
+          mid_getFrame_2c51111cc6894ba1,
+          mid_getLOF_f6a236b1948152b5,
+          mid_getMatrix_f77d745f2128c391,
+          mid_getOrbitType_c7d4737d7afca612,
+          mid_getPositionAngleType_c25055891f180348,
+          mid_getStm_dcf4bbb08852992a,
+          mid_shiftedBy_a7b1244c930324e1,
           max_mid
         };
 

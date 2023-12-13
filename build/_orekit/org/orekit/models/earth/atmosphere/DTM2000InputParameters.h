@@ -3,16 +3,16 @@
 
 #include "java/io/Serializable.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,12 +26,12 @@ namespace org {
           class DTM2000InputParameters : public ::java::io::Serializable {
            public:
             enum {
-              mid_get24HoursKp_b0b988f941da47d8,
-              mid_getInstantFlux_b0b988f941da47d8,
-              mid_getMaxDate_7a97f7e149e79afb,
-              mid_getMeanFlux_b0b988f941da47d8,
-              mid_getMinDate_7a97f7e149e79afb,
-              mid_getThreeHourlyKP_b0b988f941da47d8,
+              mid_get24HoursKp_fd347811007a6ba3,
+              mid_getInstantFlux_fd347811007a6ba3,
+              mid_getMaxDate_c325492395d89b24,
+              mid_getMeanFlux_fd347811007a6ba3,
+              mid_getMinDate_c325492395d89b24,
+              mid_getThreeHourlyKP_fd347811007a6ba3,
               max_mid
             };
 

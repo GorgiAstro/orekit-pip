@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class RealMatrix;
       class RealVector;
+      class RealMatrix;
     }
   }
 }
@@ -26,9 +26,9 @@ namespace org {
         class Measurement : public ::java::lang::Object {
          public:
           enum {
-            mid_getCovariance_70a207fcbc031df2,
-            mid_getTime_557b8123390d8d0c,
-            mid_getValue_75d50d73180655b4,
+            mid_getCovariance_f77d745f2128c391,
+            mid_getTime_b74f83833fdad017,
+            mid_getValue_3a10cc75bd070d84,
             max_mid
           };
 

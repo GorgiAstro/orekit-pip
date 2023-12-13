@@ -31,10 +31,10 @@ namespace org {
         class Sinc : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_init$_ed2afdb8506b9742,
-            mid_value_7e960cd6eee376d8,
-            mid_value_3eb2b84dba0ab7d2,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_init$_fcb96c98de6fad04,
+            mid_value_04fd0666b613d2ab,
+            mid_value_a5332de4d4d64b08,
             max_mid
           };
 

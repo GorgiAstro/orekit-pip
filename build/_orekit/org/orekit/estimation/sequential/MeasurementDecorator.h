@@ -4,6 +4,17 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace linear {
+      class RealVector;
+      class RealMatrix;
+    }
+    namespace filtering {
+      namespace kalman {
+        class Measurement;
+      }
+    }
+  }
   namespace orekit {
     namespace estimation {
       namespace measurements {
@@ -12,17 +23,6 @@ namespace org {
     }
     namespace time {
       class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    namespace filtering {
-      namespace kalman {
-        class Measurement;
-      }
-    }
-    namespace linear {
-      class RealMatrix;
-      class RealVector;
     }
   }
 }
@@ -41,11 +41,11 @@ namespace org {
         class MeasurementDecorator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_6b3d9251175727b2,
-            mid_getCovariance_70a207fcbc031df2,
-            mid_getObservedMeasurement_1217c497a513de4c,
-            mid_getTime_557b8123390d8d0c,
-            mid_getValue_75d50d73180655b4,
+            mid_init$_7175a655de352e84,
+            mid_getCovariance_f77d745f2128c391,
+            mid_getObservedMeasurement_a902d8547365f415,
+            mid_getTime_b74f83833fdad017,
+            mid_getValue_3a10cc75bd070d84,
             max_mid
           };
 

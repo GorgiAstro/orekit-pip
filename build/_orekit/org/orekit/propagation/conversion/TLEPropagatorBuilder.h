@@ -5,38 +5,38 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      namespace conversion {
-        class PropagatorBuilder;
-        class TLEPropagatorBuilder;
-      }
-      namespace analytical {
-        namespace tle {
-          class TLEPropagator;
-          class TLE;
-          namespace generation {
-            class TleGenerationAlgorithm;
-          }
-        }
-      }
+    namespace utils {
+      class ParameterDriversList;
+    }
+    namespace data {
+      class DataContext;
     }
     namespace estimation {
       namespace leastsquares {
-        class ModelObserver;
         class AbstractBatchLSModel;
+        class ModelObserver;
       }
       namespace measurements {
         class ObservedMeasurement;
       }
     }
-    namespace utils {
-      class ParameterDriversList;
+    namespace propagation {
+      namespace analytical {
+        namespace tle {
+          class TLE;
+          class TLEPropagator;
+          namespace generation {
+            class TleGenerationAlgorithm;
+          }
+        }
+      }
+      namespace conversion {
+        class TLEPropagatorBuilder;
+        class PropagatorBuilder;
+      }
     }
     namespace orbits {
       class PositionAngleType;
-    }
-    namespace data {
-      class DataContext;
     }
   }
 }
@@ -59,12 +59,12 @@ namespace org {
         class TLEPropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_4719a996de68c182,
-            mid_init$_1dff286f8dcbaaee,
-            mid_buildLeastSquaresModel_4fca41eef9d750a6,
-            mid_buildPropagator_c186d77d7194bb8c,
-            mid_copy_9adeea3e8a1b28d1,
-            mid_getTemplateTLE_67f978062a0fd0e7,
+            mid_init$_cb396584af19332c,
+            mid_init$_c9527380c71353fc,
+            mid_buildLeastSquaresModel_1a4dd1f247347a8f,
+            mid_buildPropagator_def703a4cd204ea8,
+            mid_copy_f0f088b56f464362,
+            mid_getTemplateTLE_1c01e307dcced049,
             max_mid
           };
 

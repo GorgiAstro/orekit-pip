@@ -3,15 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-  namespace io {
-    class Serializable;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -21,6 +12,15 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+  namespace io {
+    class Serializable;
   }
 }
 template<class T> class JArray;
@@ -33,13 +33,13 @@ namespace org {
         class GeoMagneticElements : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_2810d2bec90e7b1c,
-            mid_getDeclination_557b8123390d8d0c,
-            mid_getFieldVector_f88961cca75a2c0a,
-            mid_getHorizontalIntensity_557b8123390d8d0c,
-            mid_getInclination_557b8123390d8d0c,
-            mid_getTotalIntensity_557b8123390d8d0c,
-            mid_toString_3cffd47377eca18a,
+            mid_init$_1844f891addbac57,
+            mid_getDeclination_b74f83833fdad017,
+            mid_getFieldVector_8b724f8b4fdad1a2,
+            mid_getHorizontalIntensity_b74f83833fdad017,
+            mid_getInclination_b74f83833fdad017,
+            mid_getTotalIntensity_b74f83833fdad017,
+            mid_toString_1c1fa1e935d6cdcf,
             max_mid
           };
 

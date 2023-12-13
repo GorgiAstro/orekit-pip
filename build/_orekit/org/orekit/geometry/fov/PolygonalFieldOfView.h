@@ -6,30 +6,30 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      namespace spherical {
-        namespace twod {
-          class SphericalPolygonsSet;
-        }
-      }
       namespace euclidean {
         namespace threed {
           class Vector3D;
         }
       }
+      namespace spherical {
+        namespace twod {
+          class SphericalPolygonsSet;
+        }
+      }
     }
   }
   namespace orekit {
-    namespace geometry {
-      namespace fov {
-        class PolygonalFieldOfView$DefiningConeType;
-      }
+    namespace bodies {
+      class GeodeticPoint;
+      class OneAxisEllipsoid;
     }
     namespace frames {
       class Transform;
     }
-    namespace bodies {
-      class GeodeticPoint;
-      class OneAxisEllipsoid;
+    namespace geometry {
+      namespace fov {
+        class PolygonalFieldOfView$DefiningConeType;
+      }
     }
     namespace propagation {
       namespace events {
@@ -56,12 +56,12 @@ namespace org {
         class PolygonalFieldOfView : public ::org::orekit::geometry::fov::AbstractFieldOfView {
          public:
           enum {
-            mid_init$_5d74c35edd4a312a,
-            mid_init$_6e7a41e023f7503b,
-            mid_getFootprint_37f5cab3ae6d781a,
-            mid_getZone_1223d06efa3ccad7,
-            mid_offsetFromBoundary_d0bb3aecf00cc465,
-            mid_projectToBoundary_b48aa9aef740fa79,
+            mid_init$_e7bf98f3a1c4d4a1,
+            mid_init$_3eff6b21956b60d6,
+            mid_getFootprint_f20a8500298f8a78,
+            mid_getZone_bf39bb9c5825f40e,
+            mid_offsetFromBoundary_927580832e9083f9,
+            mid_projectToBoundary_f21507e4850a184e,
             max_mid
           };
 

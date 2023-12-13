@@ -4,28 +4,21 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace analysis {
-      namespace differentiation {
-        class Gradient;
-      }
-    }
-  }
   namespace orekit {
     namespace frames {
-      class Transform;
-      class Frame;
       class FieldTransform;
       class EOPHistory;
+      class Transform;
       class TopocentricFrame;
-    }
-    namespace bodies {
-      class GeodeticPoint;
+      class Frame;
     }
     namespace time {
       class FieldAbsoluteDate;
       class UT1Scale;
       class AbsoluteDate;
+    }
+    namespace bodies {
+      class GeodeticPoint;
     }
     namespace utils {
       class ParameterDriver;
@@ -35,6 +28,13 @@ namespace org {
         namespace displacement {
           class StationDisplacement;
         }
+      }
+    }
+  }
+  namespace hipparchus {
+    namespace analysis {
+      namespace differentiation {
+        class Gradient;
       }
     }
   }
@@ -59,27 +59,27 @@ namespace org {
         class GroundStation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a649bdeaffd47ec2,
-            mid_init$_60459a6516c52e90,
-            mid_getBaseFrame_2bb3e750d93d59cc,
-            mid_getClockDriftDriver_4194657b5e280ddc,
-            mid_getClockOffsetDriver_4194657b5e280ddc,
-            mid_getDisplacements_1d5cad14381c93b4,
-            mid_getEastOffsetDriver_4194657b5e280ddc,
-            mid_getEstimatedEarthFrame_6c9bc0a928c56d4e,
-            mid_getEstimatedUT1_22bf001d2b53d119,
-            mid_getNorthOffsetDriver_4194657b5e280ddc,
-            mid_getOffsetGeodeticPoint_999793d0df1eca2f,
-            mid_getOffsetToInertial_0f4fe59b7c3f7001,
-            mid_getOffsetToInertial_8dcac9b165b89489,
-            mid_getOffsetToInertial_8cad1e5bac6f50a9,
-            mid_getPolarDriftXDriver_4194657b5e280ddc,
-            mid_getPolarDriftYDriver_4194657b5e280ddc,
-            mid_getPolarOffsetXDriver_4194657b5e280ddc,
-            mid_getPolarOffsetYDriver_4194657b5e280ddc,
-            mid_getPrimeMeridianDriftDriver_4194657b5e280ddc,
-            mid_getPrimeMeridianOffsetDriver_4194657b5e280ddc,
-            mid_getZenithOffsetDriver_4194657b5e280ddc,
+            mid_init$_153388b9c226b897,
+            mid_init$_2a576616b9e520cb,
+            mid_getBaseFrame_c2b113ddceb69262,
+            mid_getClockDriftDriver_a59daa5e273117e1,
+            mid_getClockOffsetDriver_a59daa5e273117e1,
+            mid_getDisplacements_ab135c4e373d337c,
+            mid_getEastOffsetDriver_a59daa5e273117e1,
+            mid_getEstimatedEarthFrame_2c51111cc6894ba1,
+            mid_getEstimatedUT1_03c3c9443d7f95bb,
+            mid_getNorthOffsetDriver_a59daa5e273117e1,
+            mid_getOffsetGeodeticPoint_2f2ea1b3ce15a97a,
+            mid_getOffsetToInertial_d366b6c6071d64e1,
+            mid_getOffsetToInertial_b7a75136987e4aae,
+            mid_getOffsetToInertial_e929bc1c2d83ca7b,
+            mid_getPolarDriftXDriver_a59daa5e273117e1,
+            mid_getPolarDriftYDriver_a59daa5e273117e1,
+            mid_getPolarOffsetXDriver_a59daa5e273117e1,
+            mid_getPolarOffsetYDriver_a59daa5e273117e1,
+            mid_getPrimeMeridianDriftDriver_a59daa5e273117e1,
+            mid_getPrimeMeridianOffsetDriver_a59daa5e273117e1,
+            mid_getZenithOffsetDriver_a59daa5e273117e1,
             max_mid
           };
 

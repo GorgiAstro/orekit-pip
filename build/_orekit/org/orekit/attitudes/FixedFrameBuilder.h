@@ -5,16 +5,16 @@
 
 namespace org {
   namespace orekit {
-    namespace attitudes {
-      class AttitudeBuilder;
-      class FieldAttitude;
-      class Attitude;
-    }
     namespace utils {
-      class TimeStampedFieldAngularCoordinates;
+      class TimeStampedAngularCoordinates;
       class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
-      class TimeStampedAngularCoordinates;
+      class TimeStampedFieldAngularCoordinates;
+    }
+    namespace attitudes {
+      class FieldAttitude;
+      class AttitudeBuilder;
+      class Attitude;
     }
     namespace frames {
       class Frame;
@@ -35,9 +35,9 @@ namespace org {
       class FixedFrameBuilder : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_535d1f91a93c8b4d,
-          mid_build_4329b81cdba13b7b,
-          mid_build_76e687ee866bdc48,
+          mid_init$_237ae1c2ddd68062,
+          mid_build_52f3b2bb0d5542f2,
+          mid_build_ac690f9e371807c4,
           max_mid
         };
 

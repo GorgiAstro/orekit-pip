@@ -16,15 +16,15 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace utils {
+      class IERSConventions;
+    }
     namespace frames {
-      class Frame;
       class EOPHistory;
+      class Frame;
     }
     namespace time {
       class TimeScales;
-    }
-    namespace utils {
-      class IERSConventions;
     }
   }
 }
@@ -37,12 +37,12 @@ namespace org {
       class PythonAbstractFrames : public ::org::orekit::frames::AbstractFrames {
        public:
         enum {
-          mid_init$_079a6d283d35a519,
-          mid_finalize_0640e6acf969ed28,
-          mid_getEOPHistory_9cf4a1ec2e53bbd3,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_init$_49fbab41a915bed1,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_getEOPHistory_a77e9d6bc0da2439,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
           max_mid
         };
 

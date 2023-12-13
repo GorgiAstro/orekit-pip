@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
@@ -42,9 +42,9 @@ namespace org {
           class PolynomialThrustSegment : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_b857e5cc8567e4ee,
-              mid_getThrustVector_3df461fe15362b2b,
-              mid_getThrustVector_3343973a86caeaa4,
+              mid_init$_d8b9ab520b52e3e3,
+              mid_getThrustVector_082e6346b274f880,
+              mid_getThrustVector_362941be972fb4b5,
               max_mid
             };
 

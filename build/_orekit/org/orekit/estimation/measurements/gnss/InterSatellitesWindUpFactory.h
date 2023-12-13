@@ -5,16 +5,16 @@
 
 namespace org {
   namespace orekit {
+    namespace gnss {
+      class SatelliteSystem;
+    }
     namespace estimation {
       namespace measurements {
         namespace gnss {
-          class InterSatellitesWindUp;
           class Dipole;
+          class InterSatellitesWindUp;
         }
       }
-    }
-    namespace gnss {
-      class SatelliteSystem;
     }
   }
 }
@@ -34,8 +34,8 @@ namespace org {
           class InterSatellitesWindUpFactory : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_getWindUp_8cbc5ddb9df3a024,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_getWindUp_d43e329098b8b3ea,
               max_mid
             };
 

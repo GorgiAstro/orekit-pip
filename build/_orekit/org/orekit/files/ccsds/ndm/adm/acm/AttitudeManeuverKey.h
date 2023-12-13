@@ -10,8 +10,8 @@ namespace org {
         namespace ndm {
           namespace adm {
             namespace acm {
-              class AttitudeManeuverKey;
               class AttitudeManeuver;
+              class AttitudeManeuverKey;
             }
           }
         }
@@ -44,9 +44,9 @@ namespace org {
               class AttitudeManeuverKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_0d19cfc750cef9e3,
-                  mid_valueOf_55f378a0290449fd,
-                  mid_values_fe8b7d4a129438b3,
+                  mid_process_85913089ad7b1168,
+                  mid_valueOf_41811bddf1c5b0f2,
+                  mid_values_c566490e76b0478b,
                   max_mid
                 };
 

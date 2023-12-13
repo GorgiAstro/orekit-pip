@@ -3,6 +3,11 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace stat {
@@ -10,11 +15,6 @@ namespace org {
         class AlternativeHypothesis;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,9 +27,9 @@ namespace org {
         class BinomialTest : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_binomialTest_d7ff5d93e82bbe26,
-            mid_binomialTest_088090df4f38c4c6,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_binomialTest_ef14050dc3cba91c,
+            mid_binomialTest_4cd1fa164d4ccb63,
             max_mid
           };
 

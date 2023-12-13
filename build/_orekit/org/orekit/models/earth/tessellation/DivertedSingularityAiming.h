@@ -6,28 +6,28 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      namespace spherical {
-        namespace twod {
-          class SphericalPolygonsSet;
-        }
-      }
       namespace euclidean {
         namespace threed {
           class Vector3D;
         }
       }
+      namespace spherical {
+        namespace twod {
+          class SphericalPolygonsSet;
+        }
+      }
     }
   }
   namespace orekit {
+    namespace bodies {
+      class GeodeticPoint;
+    }
     namespace models {
       namespace earth {
         namespace tessellation {
           class TileAiming;
         }
       }
-    }
-    namespace bodies {
-      class GeodeticPoint;
     }
   }
 }
@@ -50,9 +50,9 @@ namespace org {
           class DivertedSingularityAiming : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_64f9d0c569c80ccb,
-              mid_alongTileDirection_94d0bf825c02adfa,
-              mid_getSingularPoints_0d9551367f7ecdef,
+              mid_init$_88fcdb5a5fbf7a17,
+              mid_alongTileDirection_636e2b82319b8646,
+              mid_getSingularPoints_e62d3bb06d56d7e3,
               max_mid
             };
 

@@ -3,6 +3,25 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace forces {
+      namespace empirical {
+        class AccelerationModel;
+      }
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,25 +29,6 @@ namespace java {
   namespace lang {
     class Throwable;
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace forces {
-      namespace empirical {
-        class AccelerationModel;
-      }
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -41,14 +41,14 @@ namespace org {
         class PythonAccelerationModel : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_finalize_0640e6acf969ed28,
-            mid_getParametersDrivers_0d9551367f7ecdef,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
-            mid_signedAmplitude_810dcb8f9f5d191a,
-            mid_signedAmplitude_4ad317f7598a10a9,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_signedAmplitude_8e86371c61460f23,
+            mid_signedAmplitude_f867476668f8eb00,
             max_mid
           };
 

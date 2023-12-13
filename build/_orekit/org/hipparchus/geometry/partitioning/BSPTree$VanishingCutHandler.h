@@ -27,7 +27,7 @@ namespace org {
         class BSPTree$VanishingCutHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_fixNode_bf59e8c45d4e589e,
+            mid_fixNode_00f0f0312191ba7e,
             max_mid
           };
 

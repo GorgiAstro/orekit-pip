@@ -3,15 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
-    namespace files {
-      namespace rinex {
-        namespace observation {
-          class ObservationData;
-        }
-      }
-    }
     namespace gnss {
       class MeasurementType;
     }
@@ -22,14 +23,13 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
+    namespace files {
+      namespace rinex {
+        namespace observation {
+          class ObservationData;
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -43,12 +43,12 @@ namespace org {
           class CombinedObservationData : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_e33a53c7689ac28c,
-              mid_getCombinationType_ad3ea7f7acc4745a,
-              mid_getCombinedMHzFrequency_557b8123390d8d0c,
-              mid_getMeasurementType_f61bec61c77ea492,
-              mid_getUsedObservationData_0d9551367f7ecdef,
-              mid_getValue_557b8123390d8d0c,
+              mid_init$_50cb3dba42c774b2,
+              mid_getCombinationType_17afe4fde34d17a8,
+              mid_getCombinedMHzFrequency_b74f83833fdad017,
+              mid_getMeasurementType_8c0a6decf9468215,
+              mid_getUsedObservationData_e62d3bb06d56d7e3,
+              mid_getValue_b74f83833fdad017,
               max_mid
             };
 

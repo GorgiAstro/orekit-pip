@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class RealMatrix;
       class RealVector;
+      class RealMatrix;
     }
     namespace exception {
       class MathIllegalArgumentException;
@@ -28,12 +28,12 @@ namespace org {
       class DecompositionSolver : public ::java::lang::Object {
        public:
         enum {
-          mid_getColumnDimension_412668abc8d889e9,
-          mid_getInverse_70a207fcbc031df2,
-          mid_getRowDimension_412668abc8d889e9,
-          mid_isNonSingular_89b302893bdbe1f1,
-          mid_solve_342d5b01463e0dc5,
-          mid_solve_340b47d21842d02c,
+          mid_getColumnDimension_55546ef6a647f39b,
+          mid_getInverse_f77d745f2128c391,
+          mid_getRowDimension_55546ef6a647f39b,
+          mid_isNonSingular_9ab94ac1dc23b105,
+          mid_solve_d5f1d017fd25113b,
+          mid_solve_be124f4006dc9f69,
           max_mid
         };
 

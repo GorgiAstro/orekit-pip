@@ -28,13 +28,13 @@ namespace org {
       class BaseMultiStartMultivariateOptimizer : public ::org::hipparchus::optim::BaseMultivariateOptimizer {
        public:
         enum {
-          mid_init$_7ce13107fac339ad,
-          mid_getEvaluations_412668abc8d889e9,
-          mid_getOptima_6555a5198c71b73a,
-          mid_optimize_531d71f92ce59bee,
-          mid_doOptimize_e661fe3ba2fafb22,
-          mid_clear_0640e6acf969ed28,
-          mid_store_009757f2c0fd9090,
+          mid_init$_9a27d203de71052f,
+          mid_getEvaluations_55546ef6a647f39b,
+          mid_getOptima_24e2edd6319f4c5a,
+          mid_optimize_91381cab165160dc,
+          mid_doOptimize_541690f9ee81d3ad,
+          mid_clear_a1fa5dae97ea5ed2,
+          mid_store_55f3c894852c27a3,
           max_mid
         };
 

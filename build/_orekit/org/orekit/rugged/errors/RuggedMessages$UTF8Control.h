@@ -4,12 +4,12 @@
 #include "java/util/ResourceBundle$Control.h"
 
 namespace java {
-  namespace io {
-    class IOException;
-  }
   namespace util {
     class Locale;
     class ResourceBundle;
+  }
+  namespace io {
+    class IOException;
   }
   namespace lang {
     class Class;
@@ -36,8 +36,8 @@ namespace org {
         class RuggedMessages$UTF8Control : public ::java::util::ResourceBundle$Control {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_newBundle_c5caa61954589488,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_newBundle_8ca50bd8ea3c1503,
             max_mid
           };
 

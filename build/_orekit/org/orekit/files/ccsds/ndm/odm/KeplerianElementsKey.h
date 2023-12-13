@@ -41,9 +41,9 @@ namespace org {
             class KeplerianElementsKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_608c7d6f2374fc7c,
-                mid_valueOf_820830e27036f17a,
-                mid_values_47f2621d2489ee68,
+                mid_process_5724598d97234a33,
+                mid_valueOf_7cef80353448408d,
+                mid_values_86e094ae356316e9,
                 max_mid
               };
 

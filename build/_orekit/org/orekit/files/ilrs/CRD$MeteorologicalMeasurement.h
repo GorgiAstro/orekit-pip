@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class AbsoluteDate;
       class TimeStamped;
+      class AbsoluteDate;
     }
   }
 }
@@ -27,15 +27,15 @@ namespace org {
         class CRD$MeteorologicalMeasurement : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_8509f4f9f0fe609c,
-            mid_init$_6c8b9bcd18b0a073,
-            mid_getDate_7a97f7e149e79afb,
-            mid_getHumidity_557b8123390d8d0c,
-            mid_getOriginOfValues_412668abc8d889e9,
-            mid_getPressure_557b8123390d8d0c,
-            mid_getTemperature_557b8123390d8d0c,
-            mid_toCrdString_3cffd47377eca18a,
-            mid_toString_3cffd47377eca18a,
+            mid_init$_e314b98c669ecc36,
+            mid_init$_0f8eda121d1fd894,
+            mid_getDate_c325492395d89b24,
+            mid_getHumidity_b74f83833fdad017,
+            mid_getOriginOfValues_55546ef6a647f39b,
+            mid_getPressure_b74f83833fdad017,
+            mid_getTemperature_b74f83833fdad017,
+            mid_toCrdString_1c1fa1e935d6cdcf,
+            mid_toString_1c1fa1e935d6cdcf,
             max_mid
           };
 

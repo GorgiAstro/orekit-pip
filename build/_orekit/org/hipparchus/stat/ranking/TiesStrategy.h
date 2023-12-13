@@ -28,8 +28,8 @@ namespace org {
         class TiesStrategy : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_9e07525c5046ba38,
-            mid_values_2366d1ed29343f5a,
+            mid_valueOf_945f6f2e5278395c,
+            mid_values_430f0c464ac95da6,
             max_mid
           };
 

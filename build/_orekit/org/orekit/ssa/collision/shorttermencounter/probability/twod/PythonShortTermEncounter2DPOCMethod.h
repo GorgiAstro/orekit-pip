@@ -5,6 +5,32 @@
 
 namespace org {
   namespace orekit {
+    namespace propagation {
+      class FieldStateCovariance;
+      class StateCovariance;
+    }
+    namespace ssa {
+      namespace collision {
+        namespace shorttermencounter {
+          namespace probability {
+            namespace twod {
+              class ShortTermEncounter2DPOCMethod;
+              class ShortTermEncounter2DPOCMethodType;
+              class ShortTermEncounter2DDefinition;
+              class FieldShortTermEncounter2DDefinition;
+            }
+          }
+        }
+      }
+      namespace metrics {
+        class FieldProbabilityOfCollision;
+        class ProbabilityOfCollision;
+      }
+    }
+    namespace orbits {
+      class Orbit;
+      class FieldOrbit;
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -13,32 +39,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace ssa {
-      namespace metrics {
-        class FieldProbabilityOfCollision;
-        class ProbabilityOfCollision;
-      }
-      namespace collision {
-        namespace shorttermencounter {
-          namespace probability {
-            namespace twod {
-              class ShortTermEncounter2DPOCMethodType;
-              class FieldShortTermEncounter2DDefinition;
-              class ShortTermEncounter2DPOCMethod;
-              class ShortTermEncounter2DDefinition;
-            }
-          }
-        }
-      }
-    }
-    namespace orbits {
-      class Orbit;
-      class FieldOrbit;
-    }
-    namespace propagation {
-      class FieldStateCovariance;
-      class StateCovariance;
     }
   }
   namespace hipparchus {
@@ -65,22 +65,22 @@ namespace org {
               class PythonShortTermEncounter2DPOCMethod : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_0640e6acf969ed28,
-                  mid_compute_7917f8d0fe4dcee2,
-                  mid_compute_5bd7443246955087,
-                  mid_compute_d4afe7edfd93d28b,
-                  mid_compute_54a027380ebb9f4f,
-                  mid_compute_ddf22cd33bfe153c,
-                  mid_compute_8d09da96ce925a0b,
-                  mid_compute_51013759c7807d3e,
-                  mid_compute_0fff86b0133b54f7,
-                  mid_finalize_0640e6acf969ed28,
-                  mid_getName_3cffd47377eca18a,
-                  mid_getType_4b8bf2bb84f7480e,
-                  mid_isAMaximumProbabilityOfCollisionMethod_89b302893bdbe1f1,
-                  mid_pythonDecRef_0640e6acf969ed28,
-                  mid_pythonExtension_9e26256fb0d384a2,
-                  mid_pythonExtension_3cd6a6b354c6aa22,
+                  mid_init$_a1fa5dae97ea5ed2,
+                  mid_compute_cac25f7dbaea842d,
+                  mid_compute_613925b61b739417,
+                  mid_compute_a0489c76be101130,
+                  mid_compute_6829aad0a64a3436,
+                  mid_compute_a73e6347f5238a63,
+                  mid_compute_11689cd07cf55453,
+                  mid_compute_619a70d6b0e36c90,
+                  mid_compute_f98b4f489decc901,
+                  mid_finalize_a1fa5dae97ea5ed2,
+                  mid_getName_1c1fa1e935d6cdcf,
+                  mid_getType_8397a286d982b383,
+                  mid_isAMaximumProbabilityOfCollisionMethod_9ab94ac1dc23b105,
+                  mid_pythonDecRef_a1fa5dae97ea5ed2,
+                  mid_pythonExtension_6c0ce7e438e5ded4,
+                  mid_pythonExtension_3d7dd2314a0dd456,
                   max_mid
                 };
 

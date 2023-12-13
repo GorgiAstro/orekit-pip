@@ -8,8 +8,8 @@ namespace org {
     class Field;
     namespace analysis {
       namespace differentiation {
-        class FieldUnivariateDerivative1Field;
         class FieldUnivariateDerivative1;
+        class FieldUnivariateDerivative1Field;
       }
     }
   }
@@ -29,12 +29,12 @@ namespace org {
         class FieldUnivariateDerivative1Field : public ::java::lang::Object {
          public:
           enum {
-            mid_equals_221e8e85cb385209,
-            mid_getOne_b4ea14898e256f1c,
-            mid_getRuntimeClass_d4b191ff8147475d,
-            mid_getUnivariateDerivative1Field_4e6c8ebf6177b346,
-            mid_getZero_b4ea14898e256f1c,
-            mid_hashCode_412668abc8d889e9,
+            mid_equals_460c5e2d9d51c6cc,
+            mid_getOne_b6c5666e0fb56c6c,
+            mid_getRuntimeClass_1aeb0737a960d371,
+            mid_getUnivariateDerivative1Field_d08ba09bfcc21d71,
+            mid_getZero_b6c5666e0fb56c6c,
+            mid_hashCode_55546ef6a647f39b,
             max_mid
           };
 

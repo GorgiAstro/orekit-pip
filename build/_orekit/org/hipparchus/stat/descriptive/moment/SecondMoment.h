@@ -31,12 +31,12 @@ namespace org {
           class SecondMoment : public ::org::hipparchus::stat::descriptive::moment::FirstMoment {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_aggregate_b42241ac9de9fb3c,
-              mid_clear_0640e6acf969ed28,
-              mid_copy_c2d7ba6b29d60a37,
-              mid_getResult_557b8123390d8d0c,
-              mid_increment_10f281d777284cea,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_aggregate_b3f951b64db17420,
+              mid_clear_a1fa5dae97ea5ed2,
+              mid_copy_ae4c271bec5aae13,
+              mid_getResult_b74f83833fdad017,
+              mid_increment_8ba9fe7a847cecad,
               max_mid
             };
 

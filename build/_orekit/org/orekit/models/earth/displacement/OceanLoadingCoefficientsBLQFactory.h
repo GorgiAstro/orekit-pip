@@ -37,10 +37,10 @@ namespace org {
           class OceanLoadingCoefficientsBLQFactory : public ::org::orekit::data::AbstractSelfFeedingLoader {
            public:
             enum {
-              mid_init$_f5ffdf29129ef90a,
-              mid_init$_28c7bdc075bb74e8,
-              mid_getCoefficients_6d7582e003e3fca2,
-              mid_getSites_0d9551367f7ecdef,
+              mid_init$_734b91ac30d5f9b4,
+              mid_init$_0343d25c5af74eca,
+              mid_getCoefficients_2e5caba2c57755ee,
+              mid_getSites_e62d3bb06d56d7e3,
               max_mid
             };
 

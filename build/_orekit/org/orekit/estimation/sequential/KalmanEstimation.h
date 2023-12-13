@@ -22,8 +22,8 @@ namespace org {
   }
   namespace hipparchus {
     namespace linear {
-      class RealMatrix;
       class RealVector;
+      class RealMatrix;
     }
   }
 }
@@ -42,21 +42,21 @@ namespace org {
         class KalmanEstimation : public ::java::lang::Object {
          public:
           enum {
-            mid_getCorrectedMeasurement_95a396fe45ccbbc0,
-            mid_getCorrectedSpacecraftStates_5dccf571345671af,
-            mid_getCurrentDate_7a97f7e149e79afb,
-            mid_getCurrentMeasurementNumber_412668abc8d889e9,
-            mid_getEstimatedMeasurementsParameters_467d574a7997e53a,
-            mid_getEstimatedOrbitalParameters_467d574a7997e53a,
-            mid_getEstimatedPropagationParameters_467d574a7997e53a,
-            mid_getPhysicalEstimatedCovarianceMatrix_70a207fcbc031df2,
-            mid_getPhysicalEstimatedState_75d50d73180655b4,
-            mid_getPhysicalInnovationCovarianceMatrix_70a207fcbc031df2,
-            mid_getPhysicalKalmanGain_70a207fcbc031df2,
-            mid_getPhysicalMeasurementJacobian_70a207fcbc031df2,
-            mid_getPhysicalStateTransitionMatrix_70a207fcbc031df2,
-            mid_getPredictedMeasurement_95a396fe45ccbbc0,
-            mid_getPredictedSpacecraftStates_5dccf571345671af,
+            mid_getCorrectedMeasurement_9927c8980e79c922,
+            mid_getCorrectedSpacecraftStates_3807ff088e7ce821,
+            mid_getCurrentDate_c325492395d89b24,
+            mid_getCurrentMeasurementNumber_55546ef6a647f39b,
+            mid_getEstimatedMeasurementsParameters_cfb822366e8ab425,
+            mid_getEstimatedOrbitalParameters_cfb822366e8ab425,
+            mid_getEstimatedPropagationParameters_cfb822366e8ab425,
+            mid_getPhysicalEstimatedCovarianceMatrix_f77d745f2128c391,
+            mid_getPhysicalEstimatedState_3a10cc75bd070d84,
+            mid_getPhysicalInnovationCovarianceMatrix_f77d745f2128c391,
+            mid_getPhysicalKalmanGain_f77d745f2128c391,
+            mid_getPhysicalMeasurementJacobian_f77d745f2128c391,
+            mid_getPhysicalStateTransitionMatrix_f77d745f2128c391,
+            mid_getPredictedMeasurement_9927c8980e79c922,
+            mid_getPredictedSpacecraftStates_3807ff088e7ce821,
             max_mid
           };
 

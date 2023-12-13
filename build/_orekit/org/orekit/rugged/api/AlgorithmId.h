@@ -3,12 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace rugged {
@@ -16,6 +10,12 @@ namespace org {
         class AlgorithmId;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,8 +28,8 @@ namespace org {
         class AlgorithmId : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_4dd032d6be1cc9d4,
-            mid_values_739a706506ae4ced,
+            mid_valueOf_d68a8ab70ae36ede,
+            mid_values_0f999a18f81d1f10,
             max_mid
           };
 

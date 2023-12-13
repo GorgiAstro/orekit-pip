@@ -6,9 +6,9 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class UTCScale;
       class FieldAbsoluteDate;
       class AbsoluteDate;
+      class UTCScale;
       class TimeScale;
     }
     namespace frames {
@@ -34,12 +34,12 @@ namespace org {
       class UT1Scale : public ::java::lang::Object {
        public:
         enum {
-          mid_getEOPHistory_9a64cc378cf7ab6b,
-          mid_getName_3cffd47377eca18a,
-          mid_getUTCScale_81e037be1ebdb551,
-          mid_offsetFromTAI_b0b988f941da47d8,
-          mid_offsetFromTAI_b884068a2c99f6ca,
-          mid_toString_3cffd47377eca18a,
+          mid_getEOPHistory_f9d30be358d43685,
+          mid_getName_1c1fa1e935d6cdcf,
+          mid_getUTCScale_1e4acbbebd50858e,
+          mid_offsetFromTAI_fd347811007a6ba3,
+          mid_offsetFromTAI_140b8964300ddedf,
+          mid_toString_1c1fa1e935d6cdcf,
           max_mid
         };
 

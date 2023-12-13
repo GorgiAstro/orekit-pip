@@ -5,21 +5,32 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      namespace conversion {
-        class PropagatorBuilder;
-        class EcksteinHechlerPropagatorBuilder;
-      }
-      class Propagator;
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+    namespace utils {
+      class ParameterDriversList;
     }
     namespace estimation {
       namespace leastsquares {
-        class ModelObserver;
         class AbstractBatchLSModel;
+        class ModelObserver;
       }
       namespace measurements {
         class ObservedMeasurement;
       }
+    }
+    namespace propagation {
+      namespace conversion {
+        class EcksteinHechlerPropagatorBuilder;
+        class PropagatorBuilder;
+      }
+      class Propagator;
+    }
+    namespace orbits {
+      class Orbit;
+      class PositionAngleType;
+      class OrbitType;
     }
     namespace forces {
       namespace gravity {
@@ -28,17 +39,6 @@ namespace org {
           class TideSystem;
         }
       }
-    }
-    namespace utils {
-      class ParameterDriversList;
-    }
-    namespace orbits {
-      class PositionAngleType;
-      class OrbitType;
-      class Orbit;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
     }
   }
 }
@@ -61,12 +61,12 @@ namespace org {
         class EcksteinHechlerPropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_23f5f76d05add5ec,
-            mid_init$_cae68c54ce4b2fd0,
-            mid_init$_4075f501d5fbb493,
-            mid_buildLeastSquaresModel_4fca41eef9d750a6,
-            mid_buildPropagator_5ad9cbd11735eecd,
-            mid_copy_8997f3f06dd892ce,
+            mid_init$_bf0ef0419ba5e85f,
+            mid_init$_3447fabd0e491d80,
+            mid_init$_d6ba313b6b5b1808,
+            mid_buildLeastSquaresModel_1a4dd1f247347a8f,
+            mid_buildPropagator_708cc138373fff03,
+            mid_copy_0dbb96a0c5ab31f7,
             max_mid
           };
 

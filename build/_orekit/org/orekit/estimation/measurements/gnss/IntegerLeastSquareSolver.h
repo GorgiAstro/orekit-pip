@@ -4,6 +4,11 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
+    }
+  }
   namespace orekit {
     namespace estimation {
       namespace measurements {
@@ -11,11 +16,6 @@ namespace org {
           class IntegerLeastSquareSolution;
         }
       }
-    }
-  }
-  namespace hipparchus {
-    namespace linear {
-      class RealMatrix;
     }
   }
 }
@@ -35,7 +35,7 @@ namespace org {
           class IntegerLeastSquareSolver : public ::java::lang::Object {
            public:
             enum {
-              mid_solveILS_1580c6ee6b7d56ce,
+              mid_solveILS_78e4e9f588c2bfe0,
               max_mid
             };
 

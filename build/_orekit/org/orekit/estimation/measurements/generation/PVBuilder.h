@@ -10,15 +10,15 @@ namespace org {
     }
   }
   namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class PV;
+        class ObservableSatellite;
+      }
+    }
     namespace propagation {
       namespace sampling {
         class OrekitStepInterpolator;
-      }
-    }
-    namespace estimation {
-      namespace measurements {
-        class ObservableSatellite;
-        class PV;
       }
     }
     namespace time {
@@ -45,8 +45,8 @@ namespace org {
           class PVBuilder : public ::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder {
            public:
             enum {
-              mid_init$_2d62f87042236ab6,
-              mid_build_b7a095bbb9aad293,
+              mid_init$_28838a84151921e1,
+              mid_build_c861ca2d3226ec08,
               max_mid
             };
 

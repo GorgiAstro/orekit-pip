@@ -5,17 +5,17 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-      class MathIllegalStateException;
-    }
     namespace analysis {
       namespace solvers {
+        class BracketedUnivariateSolver;
         class BracketedUnivariateSolver$Interval;
         class AllowedSolution;
-        class BracketedUnivariateSolver;
       }
       class UnivariateFunction;
+    }
+    namespace exception {
+      class MathIllegalStateException;
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -34,12 +34,12 @@ namespace org {
         class BaseSecantSolver : public ::org::hipparchus::analysis::solvers::AbstractUnivariateSolver {
          public:
           enum {
-            mid_solve_63a1fb60fcca1695,
-            mid_solve_50fe689dc1cd3df5,
-            mid_solve_d706f5f2b1b08d5d,
-            mid_solveInterval_d50558ec42f23049,
-            mid_doSolve_557b8123390d8d0c,
-            mid_doSolveInterval_ca1621db2f37d4e2,
+            mid_solve_95e80d55b360a35f,
+            mid_solve_82bbd98edb095e2c,
+            mid_solve_adfe53463c8924a7,
+            mid_solveInterval_56a10f62288dcd3e,
+            mid_doSolve_b74f83833fdad017,
+            mid_doSolveInterval_e5c64c32be09ef5b,
             max_mid
           };
 

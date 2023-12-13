@@ -5,6 +5,12 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+    }
+    namespace frames {
+      class Frame;
+    }
     namespace propagation {
       class FieldSpacecraftState;
       namespace sampling {
@@ -13,12 +19,6 @@ namespace org {
     }
     namespace utils {
       class TimeStampedFieldPVCoordinates;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
-    namespace frames {
-      class Frame;
     }
   }
   namespace hipparchus {
@@ -40,12 +40,12 @@ namespace org {
         class FieldOrekitStepInterpolator : public ::org::orekit::utils::FieldPVCoordinatesProvider {
          public:
           enum {
-            mid_getCurrentState_381b3e011cde018d,
-            mid_getInterpolatedState_5324cbf9e5ce58fe,
-            mid_getPVCoordinates_4ac52e75113a03db,
-            mid_getPreviousState_381b3e011cde018d,
-            mid_isForward_89b302893bdbe1f1,
-            mid_restrictStep_b313908ffec3e8d3,
+            mid_getCurrentState_fba6d56f8dbc98d0,
+            mid_getInterpolatedState_70fecd201ca47d3b,
+            mid_getPVCoordinates_294c5c99690f2356,
+            mid_getPreviousState_fba6d56f8dbc98d0,
+            mid_isForward_9ab94ac1dc23b105,
+            mid_restrictStep_d6beee8426de96e6,
             max_mid
           };
 

@@ -27,8 +27,8 @@ namespace org {
         class MaxSelector : public ::org::orekit::rugged::utils::Selector {
          public:
           enum {
-            mid_getInstance_dea02f2400e8d564,
-            mid_selectFirst_41fce65646328eb2,
+            mid_getInstance_b6c6419d1173ee4c,
+            mid_selectFirst_cd8da52a7e84190c,
             max_mid
           };
 

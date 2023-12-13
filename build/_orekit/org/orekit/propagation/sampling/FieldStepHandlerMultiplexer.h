@@ -3,30 +3,30 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace sampling {
-        class FieldOrekitFixedStepHandler;
-        class FieldOrekitStepInterpolator;
-        class FieldOrekitStepHandler;
-      }
-      class FieldSpacecraftState;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+    }
+    namespace propagation {
+      namespace sampling {
+        class FieldOrekitFixedStepHandler;
+        class FieldOrekitStepHandler;
+        class FieldOrekitStepInterpolator;
+      }
+      class FieldSpacecraftState;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -39,16 +39,16 @@ namespace org {
         class FieldStepHandlerMultiplexer : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_add_69a7e501f9a938a3,
-            mid_add_c9f4018f814d2514,
-            mid_clear_0640e6acf969ed28,
-            mid_finish_b66c84a5711243d5,
-            mid_getHandlers_0d9551367f7ecdef,
-            mid_handleStep_c006764357a9d9b2,
-            mid_init_811e49dad2467b67,
-            mid_remove_a1360aa6c3a89612,
-            mid_remove_69a7e501f9a938a3,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_add_a80810763ccddce2,
+            mid_add_73fc248bc2640832,
+            mid_clear_a1fa5dae97ea5ed2,
+            mid_finish_54d9efbf99822980,
+            mid_getHandlers_e62d3bb06d56d7e3,
+            mid_handleStep_fa82adff12d70536,
+            mid_init_96d019f392abf918,
+            mid_remove_d5fcb644d05f317c,
+            mid_remove_a80810763ccddce2,
             max_mid
           };
 

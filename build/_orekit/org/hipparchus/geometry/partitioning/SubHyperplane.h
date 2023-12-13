@@ -7,8 +7,8 @@ namespace org {
   namespace hipparchus {
     namespace geometry {
       namespace partitioning {
-        class SubHyperplane;
         class SubHyperplane$SplitSubHyperplane;
+        class SubHyperplane;
         class Hyperplane;
       }
     }
@@ -29,12 +29,12 @@ namespace org {
         class SubHyperplane : public ::java::lang::Object {
          public:
           enum {
-            mid_copySelf_0629297ff6ae927a,
-            mid_getHyperplane_db5d0f7cdc937b69,
-            mid_getSize_557b8123390d8d0c,
-            mid_isEmpty_89b302893bdbe1f1,
-            mid_reunite_90bd3924ff8382db,
-            mid_split_ae8e2bbf2389e86e,
+            mid_copySelf_0417f9f9ce6ee466,
+            mid_getHyperplane_40a20a6ecfa9e745,
+            mid_getSize_b74f83833fdad017,
+            mid_isEmpty_9ab94ac1dc23b105,
+            mid_reunite_263a5980faef7dc3,
+            mid_split_30674c36ae2fcf9f,
             max_mid
           };
 

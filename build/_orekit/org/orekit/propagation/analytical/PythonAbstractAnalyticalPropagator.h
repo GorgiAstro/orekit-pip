@@ -3,26 +3,26 @@
 
 #include "org/orekit/propagation/analytical/AbstractAnalyticalPropagator.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace attitudes {
       class AttitudeProvider;
     }
     namespace orbits {
       class Orbit;
     }
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace propagation {
       class SpacecraftState;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -35,14 +35,14 @@ namespace org {
         class PythonAbstractAnalyticalPropagator : public ::org::orekit::propagation::analytical::AbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_8fa6c0c067ead7b2,
-            mid_finalize_0640e6acf969ed28,
-            mid_getMass_b0b988f941da47d8,
-            mid_propagateOrbit_9e937c0ae63d8022,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
-            mid_resetIntermediateState_45bf76e836befe86,
+            mid_init$_8e4d3ea100bc0095,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_getMass_fd347811007a6ba3,
+            mid_propagateOrbit_5df6dcb5c4123339,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_resetIntermediateState_1c47c97cdbc7e206,
             max_mid
           };
 

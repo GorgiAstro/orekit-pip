@@ -25,9 +25,9 @@ namespace org {
       class Predefined : public ::java::lang::Enum {
        public:
         enum {
-          mid_getName_3cffd47377eca18a,
-          mid_valueOf_6474844639abc62c,
-          mid_values_5a113eb816ce385d,
+          mid_getName_1c1fa1e935d6cdcf,
+          mid_valueOf_a3603354cd0de070,
+          mid_values_1349eee6ecb9cac6,
           max_mid
         };
 

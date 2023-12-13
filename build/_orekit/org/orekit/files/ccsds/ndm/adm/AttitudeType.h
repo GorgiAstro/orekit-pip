@@ -7,22 +7,22 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace utils {
-          class ContextBinding;
-        }
         namespace ndm {
           namespace adm {
             class AttitudeType;
           }
         }
+        namespace utils {
+          class ContextBinding;
+        }
       }
+    }
+    namespace utils {
+      class TimeStampedAngularCoordinates;
+      class AngularDerivativesFilter;
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace utils {
-      class AngularDerivativesFilter;
-      class TimeStampedAngularCoordinates;
     }
   }
   namespace hipparchus {
@@ -53,16 +53,16 @@ namespace org {
             class AttitudeType : public ::java::lang::Enum {
              public:
               enum {
-                mid_build_884ded5c9bf06e41,
-                mid_createDataFields_046bca203a3b7380,
-                mid_generateData_e8d7c2eca9f2e13a,
-                mid_getAngularDerivativesFilter_c2e9b2b1c0db39b3,
-                mid_getName_c03a7791f2fcb1f1,
-                mid_parse_1772366e535be56e,
-                mid_parseType_e8951a69baaf9d76,
-                mid_toString_3cffd47377eca18a,
-                mid_valueOf_e8951a69baaf9d76,
-                mid_values_ccbb61b1e458cec5,
+                mid_build_7b3d6c8ed92f41f2,
+                mid_createDataFields_6e76615305e1bf27,
+                mid_generateData_e56ec5c65fa92cc2,
+                mid_getAngularDerivativesFilter_33d67d456ec94a0c,
+                mid_getName_11ae2994efd15504,
+                mid_parse_b6ef4ae5dfdd231d,
+                mid_parseType_3abfc2fb05e5fcd5,
+                mid_toString_1c1fa1e935d6cdcf,
+                mid_valueOf_3abfc2fb05e5fcd5,
+                mid_values_57a71570a155d664,
                 max_mid
               };
 

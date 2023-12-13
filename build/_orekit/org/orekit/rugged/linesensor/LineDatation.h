@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,9 +25,9 @@ namespace org {
         class LineDatation : public ::java::lang::Object {
          public:
           enum {
-            mid_getDate_8ef471ef852a9678,
-            mid_getLine_b0b988f941da47d8,
-            mid_getRate_7e960cd6eee376d8,
+            mid_getDate_f359a0110559347a,
+            mid_getLine_fd347811007a6ba3,
+            mid_getRate_04fd0666b613d2ab,
             max_mid
           };
 

@@ -33,7 +33,7 @@ namespace org {
             class LexicalAnalyzer : public ::java::lang::Object {
              public:
               enum {
-                mid_accept_dc31073a650e82af,
+                mid_accept_315581e8824888b8,
                 max_mid
               };
 

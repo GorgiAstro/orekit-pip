@@ -33,9 +33,9 @@ namespace org {
           class PhaseCentersGroundReceiverBaseModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_59cfeb08e5a13ccd,
-              mid_oneWayDistanceModification_af5b76ca8791af38,
-              mid_twoWayDistanceModification_af5b76ca8791af38,
+              mid_init$_c749d199d359fa63,
+              mid_oneWayDistanceModification_2fa6405c70ee6844,
+              mid_twoWayDistanceModification_2fa6405c70ee6844,
               max_mid
             };
 

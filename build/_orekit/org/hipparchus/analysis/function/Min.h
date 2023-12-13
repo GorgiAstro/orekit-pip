@@ -25,8 +25,8 @@ namespace org {
         class Min : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_value_2268d18be49a6087,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_value_99e3200dafc19573,
             max_mid
           };
 

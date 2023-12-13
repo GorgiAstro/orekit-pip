@@ -20,11 +20,11 @@ namespace org {
       class ISAACRandom : public ::org::hipparchus::random::IntRandomGenerator {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_init$_ec63cb8a58ef5a54,
-          mid_init$_3cd6a6b354c6aa22,
-          mid_nextInt_412668abc8d889e9,
-          mid_setSeed_ec63cb8a58ef5a54,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_init$_86a2769cb881d388,
+          mid_init$_3d7dd2314a0dd456,
+          mid_nextInt_55546ef6a647f39b,
+          mid_setSeed_86a2769cb881d388,
           max_mid
         };
 

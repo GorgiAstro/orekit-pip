@@ -15,14 +15,14 @@ namespace org {
         class OrekitStepInterpolator;
       }
     }
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace estimation {
       namespace measurements {
         class ObservableSatellite;
         class Position;
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -45,8 +45,8 @@ namespace org {
           class PositionBuilder : public ::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder {
            public:
             enum {
-              mid_init$_c6d5bf8c476330d3,
-              mid_build_5812c2d3106b1048,
+              mid_init$_d09d78436196ce11,
+              mid_build_142e7d4ebe4773b3,
               max_mid
             };
 

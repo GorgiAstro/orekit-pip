@@ -14,11 +14,11 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace attitudes {
       class BoundedAttitudeProvider;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -32,11 +32,11 @@ namespace org {
         class AttitudeEphemerisFile$SatelliteAttitudeEphemeris : public ::java::lang::Object {
          public:
           enum {
-            mid_getAttitudeProvider_b44a04493534d299,
-            mid_getId_3cffd47377eca18a,
-            mid_getSegments_0d9551367f7ecdef,
-            mid_getStart_7a97f7e149e79afb,
-            mid_getStop_7a97f7e149e79afb,
+            mid_getAttitudeProvider_fcce29ba1cf2a05e,
+            mid_getId_1c1fa1e935d6cdcf,
+            mid_getSegments_e62d3bb06d56d7e3,
+            mid_getStart_c325492395d89b24,
+            mid_getStop_c325492395d89b24,
             max_mid
           };
 

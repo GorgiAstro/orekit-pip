@@ -3,7 +3,19 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
+  namespace hipparchus {
+    namespace analysis {
+      namespace polynomials {
+        class PolynomialFunction;
+      }
+    }
+  }
   namespace orekit {
     namespace propagation {
       namespace semianalytical {
@@ -16,18 +28,6 @@ namespace org {
         }
       }
     }
-  }
-  namespace hipparchus {
-    namespace analysis {
-      namespace polynomials {
-        class PolynomialFunction;
-      }
-    }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -43,10 +43,10 @@ namespace org {
               class HansenUtilities : public ::java::lang::Object {
                public:
                 enum {
-                  mid_buildIdentityMatrix2_ef135d501ad62bfc,
-                  mid_buildIdentityMatrix4_ef135d501ad62bfc,
-                  mid_buildZeroMatrix2_ef135d501ad62bfc,
-                  mid_buildZeroMatrix4_ef135d501ad62bfc,
+                  mid_buildIdentityMatrix2_83f3832922dd475f,
+                  mid_buildIdentityMatrix4_83f3832922dd475f,
+                  mid_buildZeroMatrix2_83f3832922dd475f,
+                  mid_buildZeroMatrix4_83f3832922dd475f,
                   max_mid
                 };
 

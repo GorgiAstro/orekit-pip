@@ -13,10 +13,10 @@ namespace org {
   }
   namespace orekit {
     namespace propagation {
-      class FieldSpacecraftState;
       namespace analytical {
         class FieldAbstractAnalyticalPropagator;
       }
+      class FieldSpacecraftState;
     }
     namespace utils {
       class ParameterDriversProvider;
@@ -38,8 +38,8 @@ namespace org {
         class AbstractAnalyticalGradientConverter : public ::org::orekit::propagation::integration::AbstractGradientConverter {
          public:
           enum {
-            mid_getPropagator_733af95624ce3e55,
-            mid_getState_381b3e011cde018d,
+            mid_getPropagator_50636e1e84d390e7,
+            mid_getState_fba6d56f8dbc98d0,
             max_mid
           };
 

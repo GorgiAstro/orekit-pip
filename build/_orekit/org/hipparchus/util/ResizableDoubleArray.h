@@ -3,25 +3,25 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace util {
-      class ResizableDoubleArray;
-      class ResizableDoubleArray$ExpansionMode;
-      class MathArrays$Function;
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-      class MathIllegalStateException;
-    }
-  }
-}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace util {
+      class MathArrays$Function;
+      class ResizableDoubleArray$ExpansionMode;
+      class ResizableDoubleArray;
+    }
+    namespace exception {
+      class MathIllegalStateException;
+      class MathIllegalArgumentException;
+    }
   }
 }
 template<class T> class JArray;
@@ -33,37 +33,37 @@ namespace org {
       class ResizableDoubleArray : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_init$_cc18240f4a737f14,
-          mid_init$_a3da1a935cb37f7b,
-          mid_init$_89aad365fb0ed8da,
-          mid_init$_79cfe3f564275380,
-          mid_init$_15b0310ad3557c3c,
-          mid_addElement_10f281d777284cea,
-          mid_addElementRolling_7e960cd6eee376d8,
-          mid_addElements_cc18240f4a737f14,
-          mid_clear_0640e6acf969ed28,
-          mid_compute_23a245537fd5b882,
-          mid_contract_0640e6acf969ed28,
-          mid_copy_1ec432f6c6474a51,
-          mid_discardFrontElements_a3da1a935cb37f7b,
-          mid_discardMostRecentElements_a3da1a935cb37f7b,
-          mid_equals_221e8e85cb385209,
-          mid_getCapacity_412668abc8d889e9,
-          mid_getContractionCriterion_557b8123390d8d0c,
-          mid_getElement_69cfb132c661aca4,
-          mid_getElements_a53a7513ecedada2,
-          mid_getExpansionFactor_557b8123390d8d0c,
-          mid_getExpansionMode_c799c969d6a3c220,
-          mid_getNumElements_412668abc8d889e9,
-          mid_hashCode_412668abc8d889e9,
-          mid_setElement_89aad365fb0ed8da,
-          mid_setNumElements_a3da1a935cb37f7b,
-          mid_substituteMostRecentElement_7e960cd6eee376d8,
-          mid_checkContractExpand_ab23f4ae0fb33968,
-          mid_getArrayRef_a53a7513ecedada2,
-          mid_getStartIndex_412668abc8d889e9,
-          mid_expand_0640e6acf969ed28,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_init$_ab69da052b88f50c,
+          mid_init$_44ed599e93e8a30c,
+          mid_init$_d5322b8b512aeb26,
+          mid_init$_cdd9dee35d124091,
+          mid_init$_14e7cb2d05650bff,
+          mid_addElement_8ba9fe7a847cecad,
+          mid_addElementRolling_04fd0666b613d2ab,
+          mid_addElements_ab69da052b88f50c,
+          mid_clear_a1fa5dae97ea5ed2,
+          mid_compute_e0041a7a3b51fe97,
+          mid_contract_a1fa5dae97ea5ed2,
+          mid_copy_50ed3e24b16184cd,
+          mid_discardFrontElements_44ed599e93e8a30c,
+          mid_discardMostRecentElements_44ed599e93e8a30c,
+          mid_equals_460c5e2d9d51c6cc,
+          mid_getCapacity_55546ef6a647f39b,
+          mid_getContractionCriterion_b74f83833fdad017,
+          mid_getElement_2afcbc21f4e57ab2,
+          mid_getElements_25e1757a36c4dde2,
+          mid_getExpansionFactor_b74f83833fdad017,
+          mid_getExpansionMode_630c36c2fb1d7068,
+          mid_getNumElements_55546ef6a647f39b,
+          mid_hashCode_55546ef6a647f39b,
+          mid_setElement_d5322b8b512aeb26,
+          mid_setNumElements_44ed599e93e8a30c,
+          mid_substituteMostRecentElement_04fd0666b613d2ab,
+          mid_checkContractExpand_369b4c97255d5afa,
+          mid_getArrayRef_25e1757a36c4dde2,
+          mid_getStartIndex_55546ef6a647f39b,
+          mid_expand_a1fa5dae97ea5ed2,
           max_mid
         };
 

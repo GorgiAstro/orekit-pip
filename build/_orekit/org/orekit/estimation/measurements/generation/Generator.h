@@ -38,12 +38,12 @@ namespace org {
           class Generator : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_addPropagator_007497abc1d6b5f9,
-              mid_addScheduler_8ab15ab86df361ae,
-              mid_addSubscriber_d079e7078bf73ceb,
-              mid_generate_d5db9a5f2035671b,
-              mid_getPropagator_3290d3d97e59e59d,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_addPropagator_1aa89687d48bd874,
+              mid_addScheduler_fc41c8f2b7981560,
+              mid_addSubscriber_e8027b9d7a84d897,
+              mid_generate_f89af00fc113b524,
+              mid_getPropagator_49719abd0d4a2fa6,
               max_mid
             };
 

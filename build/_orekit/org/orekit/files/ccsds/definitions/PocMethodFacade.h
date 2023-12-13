@@ -3,22 +3,22 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
         namespace definitions {
-          class PocMethodType;
           class PocMethodFacade;
+          class PocMethodType;
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -32,10 +32,10 @@ namespace org {
           class PocMethodFacade : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_94701ab674aa32f2,
-              mid_getName_3cffd47377eca18a,
-              mid_getType_02085b86725642db,
-              mid_parse_589a3825a8dd2867,
+              mid_init$_73a90f8ff776469b,
+              mid_getName_1c1fa1e935d6cdcf,
+              mid_getType_ba099cb817b72494,
+              mid_parse_ea2ca721d8d2bb9a,
               max_mid
             };
 

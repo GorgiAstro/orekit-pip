@@ -15,8 +15,8 @@ namespace org {
   namespace hipparchus {
     namespace stat {
       namespace descriptive {
-        class StorelessMultivariateStatistic;
         class StorelessUnivariateStatistic;
+        class StorelessMultivariateStatistic;
       }
     }
   }
@@ -32,14 +32,14 @@ namespace org {
           class VectorialStorelessStatistic : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_87f7acbd7d5116c5,
-              mid_clear_0640e6acf969ed28,
-              mid_equals_221e8e85cb385209,
-              mid_getDimension_412668abc8d889e9,
-              mid_getN_9e26256fb0d384a2,
-              mid_getResult_a53a7513ecedada2,
-              mid_hashCode_412668abc8d889e9,
-              mid_increment_cc18240f4a737f14,
+              mid_init$_f5608c45922443b4,
+              mid_clear_a1fa5dae97ea5ed2,
+              mid_equals_460c5e2d9d51c6cc,
+              mid_getDimension_55546ef6a647f39b,
+              mid_getN_6c0ce7e438e5ded4,
+              mid_getResult_25e1757a36c4dde2,
+              mid_hashCode_55546ef6a647f39b,
+              mid_increment_ab69da052b88f50c,
               max_mid
             };
 

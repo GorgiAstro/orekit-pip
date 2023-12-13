@@ -5,9 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeScales;
-    }
     namespace propagation {
       namespace analytical {
         namespace gnss {
@@ -16,6 +13,9 @@ namespace org {
           }
         }
       }
+    }
+    namespace time {
+      class TimeScales;
     }
   }
 }
@@ -37,16 +37,16 @@ namespace org {
               class Rtcm1044Data : public ::org::orekit::gnss::metric::messages::rtcm::ephemeris::RtcmEphemerisData {
                public:
                 enum {
-                  mid_init$_0640e6acf969ed28,
-                  mid_getQzssCodeOnL2_412668abc8d889e9,
-                  mid_getQzssFitInterval_412668abc8d889e9,
-                  mid_getQzssNavigationMessage_5621ad583d1821c9,
-                  mid_getQzssNavigationMessage_069f72d6c5d950eb,
-                  mid_getQzssToc_557b8123390d8d0c,
-                  mid_setQzssCodeOnL2_a3da1a935cb37f7b,
-                  mid_setQzssFitInterval_a3da1a935cb37f7b,
-                  mid_setQzssNavigationMessage_0219a485357a5d22,
-                  mid_setQzssToc_10f281d777284cea,
+                  mid_init$_a1fa5dae97ea5ed2,
+                  mid_getQzssCodeOnL2_55546ef6a647f39b,
+                  mid_getQzssFitInterval_55546ef6a647f39b,
+                  mid_getQzssNavigationMessage_a5fec3268c180e7d,
+                  mid_getQzssNavigationMessage_b9fd83189482f0bf,
+                  mid_getQzssToc_b74f83833fdad017,
+                  mid_setQzssCodeOnL2_44ed599e93e8a30c,
+                  mid_setQzssFitInterval_44ed599e93e8a30c,
+                  mid_setQzssNavigationMessage_a62013e28777a8da,
+                  mid_setQzssToc_8ba9fe7a847cecad,
                   max_mid
                 };
 

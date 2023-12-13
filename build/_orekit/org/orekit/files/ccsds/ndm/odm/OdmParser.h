@@ -3,16 +3,16 @@
 
 #include "org/orekit/files/ccsds/utils/parsing/AbstractConstituentParser.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,11 +27,11 @@ namespace org {
             class OdmParser : public ::org::orekit::files::ccsds::utils::parsing::AbstractConstituentParser {
              public:
               enum {
-                mid_getMissionReferenceDate_7a97f7e149e79afb,
-                mid_getSelectedMu_557b8123390d8d0c,
-                mid_setMuCreated_10f281d777284cea,
-                mid_setMuParsed_10f281d777284cea,
-                mid_getMuSet_557b8123390d8d0c,
+                mid_getMissionReferenceDate_c325492395d89b24,
+                mid_getSelectedMu_b74f83833fdad017,
+                mid_setMuParsed_8ba9fe7a847cecad,
+                mid_setMuCreated_8ba9fe7a847cecad,
+                mid_getMuSet_b74f83833fdad017,
                 max_mid
               };
 

@@ -3,6 +3,11 @@
 
 #include "org/orekit/bodies/BodyShape.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace models {
@@ -10,11 +15,6 @@ namespace org {
         class ReferenceEllipsoid;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,7 +27,7 @@ namespace org {
         class EarthShape : public ::org::orekit::bodies::BodyShape {
          public:
           enum {
-            mid_getEllipsoid_576f0b44e8384336,
+            mid_getEllipsoid_aa643af2699b886e,
             max_mid
           };
 

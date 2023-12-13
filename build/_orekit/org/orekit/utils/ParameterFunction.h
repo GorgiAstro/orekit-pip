@@ -27,7 +27,7 @@ namespace org {
       class ParameterFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_value_ceb9685d0630065e,
+          mid_value_863711af540c36c0,
           max_mid
         };
 

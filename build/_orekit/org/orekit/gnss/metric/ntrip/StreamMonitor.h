@@ -15,9 +15,9 @@ namespace org {
     namespace gnss {
       namespace metric {
         namespace ntrip {
-          class Type;
-          class MessageObserver;
           class NtripClient;
+          class MessageObserver;
+          class Type;
         }
       }
     }
@@ -37,12 +37,12 @@ namespace org {
           class StreamMonitor : public ::org::orekit::gnss::metric::parser::AbstractEncodedMessage {
            public:
             enum {
-              mid_init$_1b25a01a27e47695,
-              mid_addObserver_2fd2308d42ce0a43,
-              mid_getException_5062f2ffb53bc0b4,
-              mid_run_0640e6acf969ed28,
-              mid_stopMonitoring_0640e6acf969ed28,
-              mid_fetchByte_412668abc8d889e9,
+              mid_init$_2112f85aabdccc46,
+              mid_addObserver_73b46a1f96d253c0,
+              mid_getException_22e7e02500f6b5b8,
+              mid_run_a1fa5dae97ea5ed2,
+              mid_stopMonitoring_a1fa5dae97ea5ed2,
+              mid_fetchByte_55546ef6a647f39b,
               max_mid
             };
 

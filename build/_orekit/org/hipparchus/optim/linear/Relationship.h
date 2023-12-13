@@ -3,12 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace optim {
@@ -16,6 +10,12 @@ namespace org {
         class Relationship;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,10 +28,10 @@ namespace org {
         class Relationship : public ::java::lang::Enum {
          public:
           enum {
-            mid_oppositeRelationship_c55cd9ad2e6d5653,
-            mid_toString_3cffd47377eca18a,
-            mid_valueOf_51a36101421c2ddf,
-            mid_values_6c1ba400cea315d2,
+            mid_oppositeRelationship_8ee3b6cbb19ddabb,
+            mid_toString_1c1fa1e935d6cdcf,
+            mid_valueOf_65f671fb37201130,
+            mid_values_0cef10505569983a,
             max_mid
           };
 

@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace estimation {
@@ -15,6 +10,11 @@ namespace org {
         class EstimatedMeasurement;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,8 +27,8 @@ namespace org {
         class EstimationsProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_getEstimatedMeasurement_6247f00f8564bd44,
-            mid_getNumber_412668abc8d889e9,
+            mid_getEstimatedMeasurement_9e3faa50e0df43fe,
+            mid_getNumber_55546ef6a647f39b,
             max_mid
           };
 

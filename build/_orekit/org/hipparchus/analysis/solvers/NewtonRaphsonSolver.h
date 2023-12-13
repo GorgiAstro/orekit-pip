@@ -30,10 +30,10 @@ namespace org {
         class NewtonRaphsonSolver : public ::org::hipparchus::analysis::solvers::AbstractUnivariateDifferentiableSolver {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_init$_10f281d777284cea,
-            mid_solve_7b748874f0ce038f,
-            mid_doSolve_557b8123390d8d0c,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_init$_8ba9fe7a847cecad,
+            mid_solve_2664d0382d222353,
+            mid_doSolve_b74f83833fdad017,
             max_mid
           };
 

@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ilrs {
-        class CPF$CPFCoordinate;
         class CPFHeader;
+        class CPF$CPFCoordinate;
         class CPF$CPFEphemeris;
       }
       namespace general {
@@ -52,18 +52,18 @@ namespace org {
         class CPF : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_addSatelliteCoordinate_a156272b8409e571,
-            mid_addSatelliteCoordinates_013b264b441f07a2,
-            mid_addSatelliteVelocityToCPFCoordinate_e74a95e87acc49f8,
-            mid_getComments_0d9551367f7ecdef,
-            mid_getHeader_c18325609dc27f44,
-            mid_getSatellites_1e62c2f73fbdd1c4,
-            mid_getTimeScale_527ee9dde1a96470,
-            mid_setFilter_fd4d3944a3fb1083,
-            mid_setInterpolationSample_a3da1a935cb37f7b,
-            mid_setMu_10f281d777284cea,
-            mid_setTimeScale_3e3301925c0131d4,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_addSatelliteCoordinate_2dc5dc28da034a2b,
+            mid_addSatelliteCoordinates_9c78226ca1e428f3,
+            mid_addSatelliteVelocityToCPFCoordinate_d89905a56d6347be,
+            mid_getComments_e62d3bb06d56d7e3,
+            mid_getHeader_2eab44e7dfda30f7,
+            mid_getSatellites_810bed48fafb0b9a,
+            mid_getTimeScale_34d3bda0a8989e3e,
+            mid_setFilter_6ac810da33942183,
+            mid_setInterpolationSample_44ed599e93e8a30c,
+            mid_setMu_8ba9fe7a847cecad,
+            mid_setTimeScale_cae5d0c3721eff67,
             max_mid
           };
 

@@ -4,12 +4,12 @@
 #include "org/orekit/gnss/metric/messages/ssr/igm/SsrIgmData.h"
 
 namespace java {
+  namespace lang {
+    class Integer;
+    class Class;
+  }
   namespace util {
     class Map;
-  }
-  namespace lang {
-    class Class;
-    class Integer;
   }
 }
 namespace org {
@@ -38,12 +38,12 @@ namespace org {
               class SsrIgm05Data : public ::org::orekit::gnss::metric::messages::ssr::igm::SsrIgmData {
                public:
                 enum {
-                  mid_init$_0640e6acf969ed28,
-                  mid_addCodeBias_801fe9b6b70a536c,
-                  mid_getCodeBias_80df61932c3adcb9,
-                  mid_getCodeBiases_1e62c2f73fbdd1c4,
-                  mid_getNumberOfBiasesProcessed_412668abc8d889e9,
-                  mid_setNumberOfBiasesProcessed_a3da1a935cb37f7b,
+                  mid_init$_a1fa5dae97ea5ed2,
+                  mid_addCodeBias_60ac0826d948b529,
+                  mid_getCodeBias_aad40fde1ab180ca,
+                  mid_getCodeBiases_810bed48fafb0b9a,
+                  mid_getNumberOfBiasesProcessed_55546ef6a647f39b,
+                  mid_setNumberOfBiasesProcessed_44ed599e93e8a30c,
                   max_mid
                 };
 

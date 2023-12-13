@@ -3,22 +3,6 @@
 
 #include "org/orekit/gnss/metric/ntrip/Record.h"
 
-namespace org {
-  namespace orekit {
-    namespace gnss {
-      namespace metric {
-        namespace ntrip {
-          class StreamedMessage;
-          class NavigationSystem;
-          class DataFormat;
-          class CarrierPhase;
-          class Authentication;
-          class RecordType;
-        }
-      }
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -26,6 +10,22 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace gnss {
+      namespace metric {
+        namespace ntrip {
+          class StreamedMessage;
+          class NavigationSystem;
+          class RecordType;
+          class Authentication;
+          class DataFormat;
+          class CarrierPhase;
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -39,25 +39,25 @@ namespace org {
           class DataStreamRecord : public ::org::orekit::gnss::metric::ntrip::Record {
            public:
             enum {
-              mid_init$_f5ffdf29129ef90a,
-              mid_areFeesRequired_89b302893bdbe1f1,
-              mid_getAuthentication_c5e2d1332c099f0d,
-              mid_getBitRate_412668abc8d889e9,
-              mid_getCarrierPhase_599f6ea2a23b069a,
-              mid_getCompressionEncryption_3cffd47377eca18a,
-              mid_getCountry_3cffd47377eca18a,
-              mid_getFormat_bb02fb13bbd4a601,
-              mid_getFormatDetails_0d9551367f7ecdef,
-              mid_getGenerator_3cffd47377eca18a,
-              mid_getLatitude_557b8123390d8d0c,
-              mid_getLongitude_557b8123390d8d0c,
-              mid_getMountPoint_3cffd47377eca18a,
-              mid_getNavigationSystems_0d9551367f7ecdef,
-              mid_getNetwork_3cffd47377eca18a,
-              mid_getRecordType_2923d5139aa846c0,
-              mid_getSourceIdentifier_3cffd47377eca18a,
-              mid_isNMEARequired_89b302893bdbe1f1,
-              mid_isNetworked_89b302893bdbe1f1,
+              mid_init$_734b91ac30d5f9b4,
+              mid_areFeesRequired_9ab94ac1dc23b105,
+              mid_getAuthentication_94d108ef01c519e6,
+              mid_getBitRate_55546ef6a647f39b,
+              mid_getCarrierPhase_684b70c06f5630be,
+              mid_getCompressionEncryption_1c1fa1e935d6cdcf,
+              mid_getCountry_1c1fa1e935d6cdcf,
+              mid_getFormat_be80987a68694316,
+              mid_getFormatDetails_e62d3bb06d56d7e3,
+              mid_getGenerator_1c1fa1e935d6cdcf,
+              mid_getLatitude_b74f83833fdad017,
+              mid_getLongitude_b74f83833fdad017,
+              mid_getMountPoint_1c1fa1e935d6cdcf,
+              mid_getNavigationSystems_e62d3bb06d56d7e3,
+              mid_getNetwork_1c1fa1e935d6cdcf,
+              mid_getRecordType_3f153b7c7459a9e2,
+              mid_getSourceIdentifier_1c1fa1e935d6cdcf,
+              mid_isNMEARequired_9ab94ac1dc23b105,
+              mid_isNetworked_9ab94ac1dc23b105,
               max_mid
             };
 

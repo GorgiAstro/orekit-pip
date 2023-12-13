@@ -3,27 +3,27 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace sampling {
-        class MultiSatFixedStepHandler;
-        class MultiSatStepHandler;
-      }
-      class Propagator;
-      class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      class Propagator;
+      class SpacecraftState;
+      namespace sampling {
+        class MultiSatStepHandler;
+        class MultiSatFixedStepHandler;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
   }
 }
 template<class T> class JArray;
@@ -35,10 +35,10 @@ namespace org {
       class PropagatorsParallelizer : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_9720e6d1873130df,
-          mid_init$_43832b78aa0998e4,
-          mid_getPropagators_0d9551367f7ecdef,
-          mid_propagate_c5683b8e06424542,
+          mid_init$_abc744124d2b6749,
+          mid_init$_26b8daacb4055ae8,
+          mid_getPropagators_e62d3bb06d56d7e3,
+          mid_propagate_50850a0bb1306a34,
           max_mid
         };
 

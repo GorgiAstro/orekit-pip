@@ -28,7 +28,7 @@ namespace org {
       class UnsupportedParameterException : public ::org::orekit::errors::OrekitException {
        public:
         enum {
-          mid_init$_013b264b441f07a2,
+          mid_init$_9c78226ca1e428f3,
           max_mid
         };
 

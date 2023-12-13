@@ -8,27 +8,27 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
     class CalculusFieldElement;
   }
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-    namespace frames {
-      class Frame;
-    }
     namespace models {
       namespace earth {
         namespace atmosphere {
           class Atmosphere;
         }
       }
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+    }
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -49,16 +49,16 @@ namespace org {
           class PythonAtmosphere : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_finalize_0640e6acf969ed28,
-              mid_getDensity_57dd506d2d9ba196,
-              mid_getDensity_818999d9e7960fd1,
-              mid_getFrame_6c9bc0a928c56d4e,
-              mid_getVelocity_12776b6e8e044274,
-              mid_getVelocity_4b2e058d0b26ef39,
-              mid_pythonDecRef_0640e6acf969ed28,
-              mid_pythonExtension_9e26256fb0d384a2,
-              mid_pythonExtension_3cd6a6b354c6aa22,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_finalize_a1fa5dae97ea5ed2,
+              mid_getDensity_58866e32a1c9318b,
+              mid_getDensity_e9a4fc2340b58984,
+              mid_getFrame_2c51111cc6894ba1,
+              mid_getVelocity_2e30102aa3d53198,
+              mid_getVelocity_b79629c6a3fafdaa,
+              mid_pythonDecRef_a1fa5dae97ea5ed2,
+              mid_pythonExtension_6c0ce7e438e5ded4,
+              mid_pythonExtension_3d7dd2314a0dd456,
               max_mid
             };
 

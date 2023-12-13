@@ -6,11 +6,11 @@
 namespace org {
   namespace hipparchus {
     namespace stat {
-      namespace correlation {
-        class PearsonsCorrelation;
-      }
       namespace ranking {
         class RankingAlgorithm;
+      }
+      namespace correlation {
+        class PearsonsCorrelation;
       }
     }
     namespace exception {
@@ -36,15 +36,15 @@ namespace org {
         class SpearmansCorrelation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_init$_f3731847577f13e6,
-            mid_init$_0fe311cb60090149,
-            mid_init$_e1d0e44c82eb93d9,
-            mid_computeCorrelationMatrix_05cc2960cde80114,
-            mid_computeCorrelationMatrix_340b47d21842d02c,
-            mid_correlation_628a76297e217f13,
-            mid_getCorrelationMatrix_70a207fcbc031df2,
-            mid_getRankCorrelation_2954887f1895106d,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_init$_84bd15e0995d0c79,
+            mid_init$_189a9187f1b87acf,
+            mid_init$_7d9c97be304480a2,
+            mid_computeCorrelationMatrix_2d1b7d41dfd6b278,
+            mid_computeCorrelationMatrix_be124f4006dc9f69,
+            mid_correlation_3207f9c2ae7271d9,
+            mid_getCorrelationMatrix_f77d745f2128c391,
+            mid_getRankCorrelation_1a1aafc4780288e5,
             max_mid
           };
 

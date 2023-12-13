@@ -4,14 +4,14 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-      class FieldTimeStamped;
-    }
-  }
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+  namespace orekit {
+    namespace time {
+      class FieldTimeStamped;
+      class FieldAbsoluteDate;
+    }
   }
 }
 namespace java {
@@ -28,8 +28,8 @@ namespace org {
       class FieldTimeStamped : public ::java::lang::Object {
        public:
         enum {
-          mid_durationFrom_57047f23e148cea9,
-          mid_getDate_f1fe4daf77c66560,
+          mid_durationFrom_c22d3b6894667603,
+          mid_getDate_fa23a4301b9c83e7,
           max_mid
         };
 

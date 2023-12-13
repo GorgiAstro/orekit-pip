@@ -3,6 +3,16 @@
 
 #include "org/hipparchus/distribution/discrete/AbstractIntegerDistribution.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace util {
+      class Pair;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -11,16 +21,6 @@ namespace java {
     class Integer;
     class Double;
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
-    namespace util {
-      class Pair;
-    }
   }
 }
 template<class T> class JArray;
@@ -33,16 +33,16 @@ namespace org {
         class EnumeratedIntegerDistribution : public ::org::hipparchus::distribution::discrete::AbstractIntegerDistribution {
          public:
           enum {
-            mid_init$_ec63cb8a58ef5a54,
-            mid_init$_dfab3c2e0858359f,
-            mid_cumulativeProbability_69cfb132c661aca4,
-            mid_getNumericalMean_557b8123390d8d0c,
-            mid_getNumericalVariance_557b8123390d8d0c,
-            mid_getPmf_0d9551367f7ecdef,
-            mid_getSupportLowerBound_412668abc8d889e9,
-            mid_getSupportUpperBound_412668abc8d889e9,
-            mid_isSupportConnected_89b302893bdbe1f1,
-            mid_probability_69cfb132c661aca4,
+            mid_init$_86a2769cb881d388,
+            mid_init$_37d92a29080bb9ce,
+            mid_cumulativeProbability_2afcbc21f4e57ab2,
+            mid_getNumericalMean_b74f83833fdad017,
+            mid_getNumericalVariance_b74f83833fdad017,
+            mid_getPmf_e62d3bb06d56d7e3,
+            mid_getSupportLowerBound_55546ef6a647f39b,
+            mid_getSupportUpperBound_55546ef6a647f39b,
+            mid_isSupportConnected_9ab94ac1dc23b105,
+            mid_probability_2afcbc21f4e57ab2,
             max_mid
           };
 

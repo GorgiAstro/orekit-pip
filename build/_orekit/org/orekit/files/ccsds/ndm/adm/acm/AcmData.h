@@ -13,11 +13,11 @@ namespace org {
           }
           namespace adm {
             namespace acm {
-              class AttitudeCovarianceHistory;
-              class AttitudePhysicalProperties;
               class AttitudeStateHistory;
-              class AttitudeDetermination;
               class AttitudeManeuver;
+              class AttitudePhysicalProperties;
+              class AttitudeDetermination;
+              class AttitudeCovarianceHistory;
             }
           }
         }
@@ -49,14 +49,14 @@ namespace org {
               class AcmData : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_1724940ac42f3f73,
-                  mid_getAttitudeBlocks_0d9551367f7ecdef,
-                  mid_getAttitudeDeterminationBlock_d40e46e33d1586b5,
-                  mid_getCovarianceBlocks_0d9551367f7ecdef,
-                  mid_getManeuverBlocks_0d9551367f7ecdef,
-                  mid_getPhysicBlock_1419754bb1060497,
-                  mid_getUserDefinedBlock_e8dd2483e310f990,
-                  mid_validate_10f281d777284cea,
+                  mid_init$_6ce4ddf0ec24098a,
+                  mid_getAttitudeBlocks_e62d3bb06d56d7e3,
+                  mid_getAttitudeDeterminationBlock_adfc0fd0f6504ca8,
+                  mid_getCovarianceBlocks_e62d3bb06d56d7e3,
+                  mid_getManeuverBlocks_e62d3bb06d56d7e3,
+                  mid_getPhysicBlock_3f83339f870dc50a,
+                  mid_getUserDefinedBlock_757fcfae3141e23d,
+                  mid_validate_8ba9fe7a847cecad,
                   max_mid
                 };
 

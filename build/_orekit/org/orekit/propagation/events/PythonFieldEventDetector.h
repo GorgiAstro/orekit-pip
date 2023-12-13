@@ -5,18 +5,18 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+    }
     namespace propagation {
-      class FieldSpacecraftState;
       namespace events {
+        class FieldAdaptableInterval;
+        class FieldEventDetector;
         namespace handlers {
           class FieldEventHandler;
         }
-        class FieldAdaptableInterval;
-        class FieldEventDetector;
       }
-    }
-    namespace time {
-      class FieldAbsoluteDate;
+      class FieldSpacecraftState;
     }
   }
   namespace hipparchus {
@@ -39,17 +39,17 @@ namespace org {
         class PythonFieldEventDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_finalize_0640e6acf969ed28,
-            mid_g_de1c2d709eb2829c,
-            mid_getHandler_ae75cc14adc9e750,
-            mid_getMaxCheckInterval_24041a63d01af092,
-            mid_getMaxIterationCount_412668abc8d889e9,
-            mid_getThreshold_613c8f46c659f636,
-            mid_init_811e49dad2467b67,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_g_2203631097e94c79,
+            mid_getHandler_3449c57ae1fbceff,
+            mid_getMaxCheckInterval_d0b60c59a7966d59,
+            mid_getMaxIterationCount_55546ef6a647f39b,
+            mid_getThreshold_81520b552cb3fa26,
+            mid_init_96d019f392abf918,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
             max_mid
           };
 

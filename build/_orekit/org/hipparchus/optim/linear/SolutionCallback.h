@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace optim {
       class PointValuePair;
       class OptimizationData;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,9 +26,9 @@ namespace org {
         class SolutionCallback : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_getSolution_adf293b2643f22b0,
-            mid_isSolutionOptimal_89b302893bdbe1f1,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_getSolution_35ff88cac3217ca3,
+            mid_isSolutionOptimal_9ab94ac1dc23b105,
             max_mid
           };
 

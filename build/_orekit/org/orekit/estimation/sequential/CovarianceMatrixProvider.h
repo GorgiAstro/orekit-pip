@@ -4,14 +4,14 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace linear {
-      class RealMatrix;
-    }
-  }
   namespace orekit {
     namespace propagation {
       class SpacecraftState;
+    }
+  }
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
     }
   }
 }
@@ -30,8 +30,8 @@ namespace org {
         class CovarianceMatrixProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_getInitialCovarianceMatrix_fc9cdfa83c55d6b2,
-            mid_getProcessNoiseMatrix_158686209bf6089c,
+            mid_getInitialCovarianceMatrix_b7aa5791b069a41f,
+            mid_getProcessNoiseMatrix_18b28191c1378912,
             max_mid
           };
 

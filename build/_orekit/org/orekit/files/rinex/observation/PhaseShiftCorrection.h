@@ -14,8 +14,8 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace gnss {
-      class ObservationType;
       class SatelliteSystem;
+      class ObservationType;
       class SatInSystem;
     }
   }
@@ -31,11 +31,11 @@ namespace org {
           class PhaseShiftCorrection : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_619d8bfe3fe192c8,
-              mid_getCorrection_557b8123390d8d0c,
-              mid_getSatelliteSystem_8b86408cc2633961,
-              mid_getSatsCorrected_0d9551367f7ecdef,
-              mid_getTypeObs_40f193b60caef501,
+              mid_init$_125d8c5f455d179a,
+              mid_getCorrection_b74f83833fdad017,
+              mid_getSatelliteSystem_21bd759cc4a81606,
+              mid_getSatsCorrected_e62d3bb06d56d7e3,
+              mid_getTypeObs_eeb5027d2516140e,
               max_mid
             };
 

@@ -3,29 +3,19 @@
 
 #include "org/orekit/files/ccsds/ndm/NdmConstituent.h"
 
-namespace java {
-  namespace util {
-    class List;
-    class Map;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
         namespace ndm {
           namespace adm {
-            namespace acm {
-              class AcmSatelliteEphemeris;
-              class AttitudeStateHistory;
-              class AcmData;
-              class AcmMetadata;
-            }
             class AdmHeader;
+            namespace acm {
+              class AttitudeStateHistory;
+              class AcmSatelliteEphemeris;
+              class AcmMetadata;
+              class AcmData;
+            }
           }
         }
         namespace section {
@@ -45,6 +35,16 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class List;
+    class Map;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -58,10 +58,10 @@ namespace org {
               class Acm : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
                public:
                 enum {
-                  mid_init$_f4c63464eb8f0477,
-                  mid_getData_81e808cfcd4865bd,
-                  mid_getMetadata_a46adf9d544d27b7,
-                  mid_getSatellites_1e62c2f73fbdd1c4,
+                  mid_init$_9603b9963356e980,
+                  mid_getData_efaea2325d549369,
+                  mid_getMetadata_0253132f83eae763,
+                  mid_getSatellites_810bed48fafb0b9a,
                   max_mid
                 };
 

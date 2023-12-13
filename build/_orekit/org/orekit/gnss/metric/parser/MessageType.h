@@ -33,7 +33,7 @@ namespace org {
           class MessageType : public ::java::lang::Object {
            public:
             enum {
-              mid_parse_0a827faad8220c1a,
+              mid_parse_9c30feea4fe836ce,
               max_mid
             };
 

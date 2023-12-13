@@ -3,12 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -21,12 +15,18 @@ namespace org {
     }
   }
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace frames {
       class StaticTransform;
     }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
+}
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -38,15 +38,15 @@ namespace org {
       class PythonStaticTransform : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_finalize_0640e6acf969ed28,
-          mid_getDate_7a97f7e149e79afb,
-          mid_getInverse_f798b00aed778de3,
-          mid_getRotation_1e0dc1a6788897b9,
-          mid_getTranslation_f88961cca75a2c0a,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_getDate_c325492395d89b24,
+          mid_getInverse_00930874428900c5,
+          mid_getRotation_ff298a39b3cae5da,
+          mid_getTranslation_8b724f8b4fdad1a2,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
           max_mid
         };
 

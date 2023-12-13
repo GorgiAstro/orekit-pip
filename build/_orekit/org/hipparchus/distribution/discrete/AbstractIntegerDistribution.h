@@ -31,11 +31,11 @@ namespace org {
         class AbstractIntegerDistribution : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_inverseCumulativeProbability_abbeb9db7144ca23,
-            mid_logProbability_69cfb132c661aca4,
-            mid_probability_21b81d54c06b64b0,
-            mid_solveInverseCumulativeProbability_fcd4fd665c5a481d,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_inverseCumulativeProbability_2af4736545087009,
+            mid_logProbability_2afcbc21f4e57ab2,
+            mid_probability_cad98089d00f8a5b,
+            mid_solveInverseCumulativeProbability_a9fca030171c8f92,
             max_mid
           };
 

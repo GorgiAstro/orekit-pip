@@ -6,15 +6,15 @@
 namespace org {
   namespace hipparchus {
     namespace distribution {
-      class RealDistribution;
       class IntegerDistribution;
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
+      class RealDistribution;
     }
     namespace random {
       class RandomGenerator;
       class RandomDataGenerator;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -40,29 +40,29 @@ namespace org {
       class RandomDataGenerator : public ::org::hipparchus::random::ForwardingRandomGenerator {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_init$_3cd6a6b354c6aa22,
-          mid_nextBeta_2268d18be49a6087,
-          mid_nextDeviate_769ab1e031b83fa6,
-          mid_nextDeviate_e2283b5af8ea84db,
-          mid_nextDeviates_3885143c3870d976,
-          mid_nextDeviates_266304a22b47de3b,
-          mid_nextExponential_7e960cd6eee376d8,
-          mid_nextGamma_2268d18be49a6087,
-          mid_nextHexString_0f10d4a5e06f61c0,
-          mid_nextInt_5625cf3db98dadc1,
-          mid_nextLogNormal_2268d18be49a6087,
-          mid_nextLong_c18ab8eab0c49f84,
-          mid_nextNormal_2268d18be49a6087,
-          mid_nextPermutation_e2b10810209e9407,
-          mid_nextPoisson_abbeb9db7144ca23,
-          mid_nextSample_07b003307208ca7c,
-          mid_nextSample_e1c657623dd8ba44,
-          mid_nextSampleWithReplacement_d36a547e4410f3b1,
-          mid_nextUniform_2268d18be49a6087,
-          mid_nextZipf_36a7cf95cc3d8465,
-          mid_of_9bdc5c0c9ae623bb,
-          mid_delegate_94b7a5da78ee3cfb,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_init$_3d7dd2314a0dd456,
+          mid_nextBeta_99e3200dafc19573,
+          mid_nextDeviate_5fecc2a42e661b90,
+          mid_nextDeviate_a0bd8115919ecebe,
+          mid_nextDeviates_c9813930cbc8e412,
+          mid_nextDeviates_d2c3d2f05bc19854,
+          mid_nextExponential_04fd0666b613d2ab,
+          mid_nextGamma_99e3200dafc19573,
+          mid_nextHexString_2a9bffd3d5397f7c,
+          mid_nextInt_92ecd94558bf0c68,
+          mid_nextLogNormal_99e3200dafc19573,
+          mid_nextLong_8f345e4204401ff5,
+          mid_nextNormal_99e3200dafc19573,
+          mid_nextPermutation_56647843f75c9c90,
+          mid_nextPoisson_2af4736545087009,
+          mid_nextSample_fdbebc837979003b,
+          mid_nextSample_fa2fc463781cf6fd,
+          mid_nextSampleWithReplacement_d70eda2deeff41f6,
+          mid_nextUniform_99e3200dafc19573,
+          mid_nextZipf_008fbfbfedda2d57,
+          mid_of_d585beb78f2e2564,
+          mid_delegate_9c758ae03d1b398a,
           max_mid
         };
 

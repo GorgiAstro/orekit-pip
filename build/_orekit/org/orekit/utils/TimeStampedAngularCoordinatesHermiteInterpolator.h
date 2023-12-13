@@ -25,12 +25,12 @@ namespace org {
       class TimeStampedAngularCoordinatesHermiteInterpolator : public ::org::orekit::time::AbstractTimeInterpolator {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_init$_a3da1a935cb37f7b,
-          mid_init$_8d65f6d089410d57,
-          mid_init$_a97116b9f853f824,
-          mid_getFilter_c2e9b2b1c0db39b3,
-          mid_interpolate_40509368b5f3fdda,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_init$_44ed599e93e8a30c,
+          mid_init$_b6d0b49c4659d5f2,
+          mid_init$_84faa23834a0f7e9,
+          mid_getFilter_33d67d456ec94a0c,
+          mid_interpolate_6ccee58ca07f59cc,
           max_mid
         };
 

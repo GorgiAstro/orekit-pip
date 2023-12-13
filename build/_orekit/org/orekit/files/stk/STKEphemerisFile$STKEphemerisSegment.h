@@ -3,31 +3,31 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace general {
-        class EphemerisFile$EphemerisSegment;
-      }
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class CartesianDerivativesFilter;
-      class TimeStampedPVCoordinates;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace utils {
+      class TimeStampedPVCoordinates;
+      class CartesianDerivativesFilter;
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace files {
+      namespace general {
+        class EphemerisFile$EphemerisSegment;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
   }
 }
 template<class T> class JArray;
@@ -40,14 +40,14 @@ namespace org {
         class STKEphemerisFile$STKEphemerisSegment : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_b15605e7b8590c64,
-            mid_getAvailableDerivatives_6c4898d6ec0c3837,
-            mid_getCoordinates_0d9551367f7ecdef,
-            mid_getFrame_6c9bc0a928c56d4e,
-            mid_getInterpolationSamples_412668abc8d889e9,
-            mid_getMu_557b8123390d8d0c,
-            mid_getStart_7a97f7e149e79afb,
-            mid_getStop_7a97f7e149e79afb,
+            mid_init$_e30f26dea5e0c0aa,
+            mid_getAvailableDerivatives_63bfdcc4b7a0536c,
+            mid_getCoordinates_e62d3bb06d56d7e3,
+            mid_getFrame_2c51111cc6894ba1,
+            mid_getInterpolationSamples_55546ef6a647f39b,
+            mid_getMu_b74f83833fdad017,
+            mid_getStart_c325492395d89b24,
+            mid_getStop_c325492395d89b24,
             max_mid
           };
 

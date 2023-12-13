@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,7 +26,7 @@ namespace org {
           class WeatherModel : public ::java::lang::Object {
            public:
             enum {
-              mid_weatherParameters_4ca6118c75b70100,
+              mid_weatherParameters_98ef3c02384a4218,
               max_mid
             };
 

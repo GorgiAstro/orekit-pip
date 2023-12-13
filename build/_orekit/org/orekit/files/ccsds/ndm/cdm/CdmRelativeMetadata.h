@@ -4,26 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ccsds {
-        namespace ndm {
-          namespace cdm {
-            class ScreenVolumeShape;
-            class ScreenType;
-            class ScreenVolumeFrame;
-          }
-        }
-        namespace definitions {
-          class TimeSystem;
-          class PocMethodFacade;
-        }
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -31,6 +11,26 @@ namespace org {
           class Vector3D;
         }
       }
+    }
+  }
+  namespace orekit {
+    namespace files {
+      namespace ccsds {
+        namespace definitions {
+          class TimeSystem;
+          class PocMethodFacade;
+        }
+        namespace ndm {
+          namespace cdm {
+            class ScreenVolumeShape;
+            class ScreenType;
+            class ScreenVolumeFrame;
+          }
+        }
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -56,80 +56,80 @@ namespace org {
             class CdmRelativeMetadata : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0640e6acf969ed28,
-                mid_addComment_f5ffdf29129ef90a,
-                mid_checkNotNull_95e2f439e3918f51,
-                mid_checkScreenVolumeConditions_0640e6acf969ed28,
-                mid_getApproachAngle_557b8123390d8d0c,
-                mid_getCollisionPercentile_1b41cf9ebf653611,
-                mid_getCollisionProbaMethod_33122f5a676c9ebb,
-                mid_getCollisionProbability_557b8123390d8d0c,
-                mid_getComment_0d9551367f7ecdef,
-                mid_getConjunctionId_3cffd47377eca18a,
-                mid_getMahalanobisDistance_557b8123390d8d0c,
-                mid_getMaxCollisionProbability_557b8123390d8d0c,
-                mid_getMaxCollisionProbabilityMethod_33122f5a676c9ebb,
-                mid_getMissDistance_557b8123390d8d0c,
-                mid_getNextMessageEpoch_7a97f7e149e79afb,
-                mid_getPreviousMessageEpoch_7a97f7e149e79afb,
-                mid_getPreviousMessageId_3cffd47377eca18a,
-                mid_getRelativePosition_f88961cca75a2c0a,
-                mid_getRelativeSpeed_557b8123390d8d0c,
-                mid_getRelativeVelocity_f88961cca75a2c0a,
-                mid_getScreenEntryTime_7a97f7e149e79afb,
-                mid_getScreenExitTime_7a97f7e149e79afb,
-                mid_getScreenPcThreshold_557b8123390d8d0c,
-                mid_getScreenType_5ee5e7f48ab31b92,
-                mid_getScreenVolumeFrame_8ac667bf5c4e7023,
-                mid_getScreenVolumeRadius_557b8123390d8d0c,
-                mid_getScreenVolumeShape_c6cf0c4d1af7e9b9,
-                mid_getScreenVolumeX_557b8123390d8d0c,
-                mid_getScreenVolumeY_557b8123390d8d0c,
-                mid_getScreenVolumeZ_557b8123390d8d0c,
-                mid_getSefiCollisionProbability_557b8123390d8d0c,
-                mid_getSefiCollisionProbabilityMethod_33122f5a676c9ebb,
-                mid_getSefiFragmentationModel_3cffd47377eca18a,
-                mid_getStartScreenPeriod_7a97f7e149e79afb,
-                mid_getStopScreenPeriod_7a97f7e149e79afb,
-                mid_getTca_7a97f7e149e79afb,
-                mid_getTimeSystem_d0d0dc777cc1d8f8,
-                mid_setApproachAngle_10f281d777284cea,
-                mid_setCollisionPercentile_ec63cb8a58ef5a54,
-                mid_setCollisionProbaMethod_24f4275bd75d1e11,
-                mid_setCollisionProbability_10f281d777284cea,
-                mid_setConjunctionId_f5ffdf29129ef90a,
-                mid_setMahalanobisDistance_10f281d777284cea,
-                mid_setMaxCollisionProbability_10f281d777284cea,
-                mid_setMaxCollisionProbabilityMethod_24f4275bd75d1e11,
-                mid_setMissDistance_10f281d777284cea,
-                mid_setNextMessageEpoch_20affcbd28542333,
-                mid_setPreviousMessageEpoch_20affcbd28542333,
-                mid_setPreviousMessageId_f5ffdf29129ef90a,
-                mid_setRelativePositionN_10f281d777284cea,
-                mid_setRelativePositionR_10f281d777284cea,
-                mid_setRelativePositionT_10f281d777284cea,
-                mid_setRelativeSpeed_10f281d777284cea,
-                mid_setRelativeVelocityN_10f281d777284cea,
-                mid_setRelativeVelocityR_10f281d777284cea,
-                mid_setRelativeVelocityT_10f281d777284cea,
-                mid_setScreenEntryTime_20affcbd28542333,
-                mid_setScreenExitTime_20affcbd28542333,
-                mid_setScreenPcThreshold_10f281d777284cea,
-                mid_setScreenType_5f8f3fff9ebb0d5f,
-                mid_setScreenVolumeFrame_91aabd8787541b18,
-                mid_setScreenVolumeRadius_10f281d777284cea,
-                mid_setScreenVolumeShape_c79d3dc23a8b505b,
-                mid_setScreenVolumeX_10f281d777284cea,
-                mid_setScreenVolumeY_10f281d777284cea,
-                mid_setScreenVolumeZ_10f281d777284cea,
-                mid_setSefiCollisionProbability_10f281d777284cea,
-                mid_setSefiCollisionProbabilityMethod_24f4275bd75d1e11,
-                mid_setSefiFragmentationModel_f5ffdf29129ef90a,
-                mid_setStartScreenPeriod_20affcbd28542333,
-                mid_setStopScreenPeriod_20affcbd28542333,
-                mid_setTca_20affcbd28542333,
-                mid_setTimeSystem_dcfc8f760c17d3b6,
-                mid_validate_0640e6acf969ed28,
+                mid_init$_a1fa5dae97ea5ed2,
+                mid_addComment_734b91ac30d5f9b4,
+                mid_checkNotNull_df2b565e99c3c541,
+                mid_checkScreenVolumeConditions_a1fa5dae97ea5ed2,
+                mid_getApproachAngle_b74f83833fdad017,
+                mid_getCollisionPercentile_4d095d7a08163110,
+                mid_getCollisionProbaMethod_2ddd040a83ad32b1,
+                mid_getCollisionProbability_b74f83833fdad017,
+                mid_getComment_e62d3bb06d56d7e3,
+                mid_getConjunctionId_1c1fa1e935d6cdcf,
+                mid_getMahalanobisDistance_b74f83833fdad017,
+                mid_getMaxCollisionProbability_b74f83833fdad017,
+                mid_getMaxCollisionProbabilityMethod_2ddd040a83ad32b1,
+                mid_getMissDistance_b74f83833fdad017,
+                mid_getNextMessageEpoch_c325492395d89b24,
+                mid_getPreviousMessageEpoch_c325492395d89b24,
+                mid_getPreviousMessageId_1c1fa1e935d6cdcf,
+                mid_getRelativePosition_8b724f8b4fdad1a2,
+                mid_getRelativeSpeed_b74f83833fdad017,
+                mid_getRelativeVelocity_8b724f8b4fdad1a2,
+                mid_getScreenEntryTime_c325492395d89b24,
+                mid_getScreenExitTime_c325492395d89b24,
+                mid_getScreenPcThreshold_b74f83833fdad017,
+                mid_getScreenType_b67da540ddec6964,
+                mid_getScreenVolumeFrame_9c3a026fec3db9c9,
+                mid_getScreenVolumeRadius_b74f83833fdad017,
+                mid_getScreenVolumeShape_443628f95af03066,
+                mid_getScreenVolumeX_b74f83833fdad017,
+                mid_getScreenVolumeY_b74f83833fdad017,
+                mid_getScreenVolumeZ_b74f83833fdad017,
+                mid_getSefiCollisionProbability_b74f83833fdad017,
+                mid_getSefiCollisionProbabilityMethod_2ddd040a83ad32b1,
+                mid_getSefiFragmentationModel_1c1fa1e935d6cdcf,
+                mid_getStartScreenPeriod_c325492395d89b24,
+                mid_getStopScreenPeriod_c325492395d89b24,
+                mid_getTca_c325492395d89b24,
+                mid_getTimeSystem_91b7f51e80ad440f,
+                mid_setApproachAngle_8ba9fe7a847cecad,
+                mid_setCollisionPercentile_86a2769cb881d388,
+                mid_setCollisionProbaMethod_3d87a594d72256e8,
+                mid_setCollisionProbability_8ba9fe7a847cecad,
+                mid_setConjunctionId_734b91ac30d5f9b4,
+                mid_setMahalanobisDistance_8ba9fe7a847cecad,
+                mid_setMaxCollisionProbability_8ba9fe7a847cecad,
+                mid_setMaxCollisionProbabilityMethod_3d87a594d72256e8,
+                mid_setMissDistance_8ba9fe7a847cecad,
+                mid_setNextMessageEpoch_02135a6ef25adb4b,
+                mid_setPreviousMessageEpoch_02135a6ef25adb4b,
+                mid_setPreviousMessageId_734b91ac30d5f9b4,
+                mid_setRelativePositionN_8ba9fe7a847cecad,
+                mid_setRelativePositionR_8ba9fe7a847cecad,
+                mid_setRelativePositionT_8ba9fe7a847cecad,
+                mid_setRelativeSpeed_8ba9fe7a847cecad,
+                mid_setRelativeVelocityN_8ba9fe7a847cecad,
+                mid_setRelativeVelocityR_8ba9fe7a847cecad,
+                mid_setRelativeVelocityT_8ba9fe7a847cecad,
+                mid_setScreenEntryTime_02135a6ef25adb4b,
+                mid_setScreenExitTime_02135a6ef25adb4b,
+                mid_setScreenPcThreshold_8ba9fe7a847cecad,
+                mid_setScreenType_81521600a2b31dc8,
+                mid_setScreenVolumeFrame_aa1003a1d7d3878a,
+                mid_setScreenVolumeRadius_8ba9fe7a847cecad,
+                mid_setScreenVolumeShape_08871fc1aa7bd48b,
+                mid_setScreenVolumeX_8ba9fe7a847cecad,
+                mid_setScreenVolumeY_8ba9fe7a847cecad,
+                mid_setScreenVolumeZ_8ba9fe7a847cecad,
+                mid_setSefiCollisionProbability_8ba9fe7a847cecad,
+                mid_setSefiCollisionProbabilityMethod_3d87a594d72256e8,
+                mid_setSefiFragmentationModel_734b91ac30d5f9b4,
+                mid_setStartScreenPeriod_02135a6ef25adb4b,
+                mid_setStopScreenPeriod_02135a6ef25adb4b,
+                mid_setTca_02135a6ef25adb4b,
+                mid_setTimeSystem_00f5ccc3311d9b97,
+                mid_validate_a1fa5dae97ea5ed2,
                 max_mid
               };
 

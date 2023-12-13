@@ -5,9 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace propagation {
       namespace analytical {
         namespace gnss {
@@ -16,6 +13,9 @@ namespace org {
           }
         }
       }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -37,28 +37,28 @@ namespace org {
             class PythonSBASOrbitalElements : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0640e6acf969ed28,
-                mid_finalize_0640e6acf969ed28,
-                mid_getAGf0_557b8123390d8d0c,
-                mid_getAGf1_557b8123390d8d0c,
-                mid_getDate_7a97f7e149e79afb,
-                mid_getIODN_412668abc8d889e9,
-                mid_getPRN_412668abc8d889e9,
-                mid_getTime_557b8123390d8d0c,
-                mid_getToc_557b8123390d8d0c,
-                mid_getWeek_412668abc8d889e9,
-                mid_getX_557b8123390d8d0c,
-                mid_getXDot_557b8123390d8d0c,
-                mid_getXDotDot_557b8123390d8d0c,
-                mid_getY_557b8123390d8d0c,
-                mid_getYDot_557b8123390d8d0c,
-                mid_getYDotDot_557b8123390d8d0c,
-                mid_getZ_557b8123390d8d0c,
-                mid_getZDot_557b8123390d8d0c,
-                mid_getZDotDot_557b8123390d8d0c,
-                mid_pythonDecRef_0640e6acf969ed28,
-                mid_pythonExtension_9e26256fb0d384a2,
-                mid_pythonExtension_3cd6a6b354c6aa22,
+                mid_init$_a1fa5dae97ea5ed2,
+                mid_finalize_a1fa5dae97ea5ed2,
+                mid_getAGf0_b74f83833fdad017,
+                mid_getAGf1_b74f83833fdad017,
+                mid_getDate_c325492395d89b24,
+                mid_getIODN_55546ef6a647f39b,
+                mid_getPRN_55546ef6a647f39b,
+                mid_getTime_b74f83833fdad017,
+                mid_getToc_b74f83833fdad017,
+                mid_getWeek_55546ef6a647f39b,
+                mid_getX_b74f83833fdad017,
+                mid_getXDot_b74f83833fdad017,
+                mid_getXDotDot_b74f83833fdad017,
+                mid_getY_b74f83833fdad017,
+                mid_getYDot_b74f83833fdad017,
+                mid_getYDotDot_b74f83833fdad017,
+                mid_getZ_b74f83833fdad017,
+                mid_getZDot_b74f83833fdad017,
+                mid_getZDotDot_b74f83833fdad017,
+                mid_pythonDecRef_a1fa5dae97ea5ed2,
+                mid_pythonExtension_6c0ce7e438e5ded4,
+                mid_pythonExtension_3d7dd2314a0dd456,
                 max_mid
               };
 

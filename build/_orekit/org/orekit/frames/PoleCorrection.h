@@ -27,9 +27,9 @@ namespace org {
       class PoleCorrection : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_ab23f4ae0fb33968,
-          mid_getXp_557b8123390d8d0c,
-          mid_getYp_557b8123390d8d0c,
+          mid_init$_369b4c97255d5afa,
+          mid_getXp_b74f83833fdad017,
+          mid_getYp_b74f83833fdad017,
           max_mid
         };
 

@@ -5,8 +5,8 @@
 
 namespace java {
   namespace util {
-    class ConcurrentModificationException;
     class NoSuchElementException;
+    class ConcurrentModificationException;
   }
   namespace lang {
     class Class;
@@ -26,10 +26,10 @@ namespace org {
       class OpenIntToFieldHashMap$Iterator : public ::java::lang::Object {
        public:
         enum {
-          mid_advance_0640e6acf969ed28,
-          mid_hasNext_89b302893bdbe1f1,
-          mid_key_412668abc8d889e9,
-          mid_value_ce0470d468f80a56,
+          mid_advance_a1fa5dae97ea5ed2,
+          mid_hasNext_9ab94ac1dc23b105,
+          mid_key_55546ef6a647f39b,
+          mid_value_2ff8de927fda4153,
           max_mid
         };
 

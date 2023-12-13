@@ -5,19 +5,19 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      namespace analytical {
-        class FieldAbstractAnalyticalPropagator;
-      }
-    }
-    namespace time {
-      class AbstractFieldTimeInterpolator$InterpolationData;
+    namespace orbits {
+      class FieldOrbit;
     }
     namespace frames {
       class Frame;
     }
-    namespace orbits {
-      class FieldOrbit;
+    namespace time {
+      class AbstractFieldTimeInterpolator$InterpolationData;
+    }
+    namespace propagation {
+      namespace analytical {
+        class FieldAbstractAnalyticalPropagator;
+      }
     }
   }
   namespace hipparchus {
@@ -42,8 +42,8 @@ namespace org {
       class FieldOrbitBlender : public ::org::orekit::orbits::AbstractFieldOrbitInterpolator {
        public:
         enum {
-          mid_init$_e9daf8d337364749,
-          mid_interpolate_1240468fb80feea5,
+          mid_init$_ad76cc6d71d07b73,
+          mid_interpolate_1f8205afa87236ec,
           max_mid
         };
 

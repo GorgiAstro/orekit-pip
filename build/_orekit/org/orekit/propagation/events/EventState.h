@@ -6,12 +6,12 @@
 namespace org {
   namespace orekit {
     namespace propagation {
+      namespace events {
+        class EventState$EventOccurrence;
+        class EventDetector;
+      }
       namespace sampling {
         class OrekitStepInterpolator;
-      }
-      namespace events {
-        class EventDetector;
-        class EventState$EventOccurrence;
       }
       class SpacecraftState;
     }
@@ -40,14 +40,14 @@ namespace org {
         class EventState : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_2e2dfaf38ed50d1d,
-            mid_doEvent_fb65fa9c10878675,
-            mid_evaluateStep_fceb501d76c6c874,
-            mid_getEventDate_7a97f7e149e79afb,
-            mid_getEventDetector_0701b00b25822fff,
-            mid_init_0472264ad6f40bc2,
-            mid_reinitializeBegin_729a66b1e94503de,
-            mid_tryAdvance_b6dd29b1bf01f21f,
+            mid_init$_e13564f833403504,
+            mid_doEvent_ea036e102af9abe9,
+            mid_evaluateStep_33229803b1a9d740,
+            mid_getEventDate_c325492395d89b24,
+            mid_getEventDetector_9ada55f07f5a223c,
+            mid_init_2d7f9a496c7e9781,
+            mid_reinitializeBegin_13c351c10f00bcd7,
+            mid_tryAdvance_1a1fd848268a091f,
             max_mid
           };
 

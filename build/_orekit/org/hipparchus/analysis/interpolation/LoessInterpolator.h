@@ -5,16 +5,16 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace analysis {
-      namespace interpolation {
-        class UnivariateInterpolator;
-      }
       namespace polynomials {
         class PolynomialSplineFunction;
       }
+      namespace interpolation {
+        class UnivariateInterpolator;
+      }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -36,12 +36,12 @@ namespace org {
         class LoessInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_init$_47602ef8408ea361,
-            mid_init$_3191da1710a102eb,
-            mid_interpolate_c07bcf24349320f1,
-            mid_smooth_d2593442847fe350,
-            mid_smooth_79894073e73ed985,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_init$_1af1b4c263b48b0c,
+            mid_init$_d2215b3b0e5c9451,
+            mid_interpolate_4b522051166e7218,
+            mid_smooth_1badeb24cd1b9588,
+            mid_smooth_73e979d38ef87a99,
             max_mid
           };
 

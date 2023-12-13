@@ -4,7 +4,13 @@
 #include "org/orekit/propagation/semianalytical/dsst/forces/FieldForceModelContext.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
+    namespace bodies {
+      class CelestialBody;
+    }
     namespace propagation {
       namespace semianalytical {
         namespace dsst {
@@ -14,12 +20,6 @@ namespace org {
         }
       }
     }
-    namespace bodies {
-      class CelestialBody;
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -39,26 +39,26 @@ namespace org {
             class FieldDSSTThirdBodyDynamicContext : public ::org::orekit::propagation::semianalytical::dsst::forces::FieldForceModelContext {
              public:
               enum {
-                mid_init$_5161005972fb7356,
-                mid_getA_613c8f46c659f636,
-                mid_getAlpha_613c8f46c659f636,
-                mid_getBB_613c8f46c659f636,
-                mid_getBBB_613c8f46c659f636,
-                mid_getBeta_613c8f46c659f636,
-                mid_getBoA_613c8f46c659f636,
-                mid_getBoABpo_613c8f46c659f636,
-                mid_getGamma_613c8f46c659f636,
-                mid_getHXXX_613c8f46c659f636,
-                mid_getKXXX_613c8f46c659f636,
-                mid_getM2aoA_613c8f46c659f636,
-                mid_getMCo2AB_613c8f46c659f636,
-                mid_getMeanMotion_613c8f46c659f636,
-                mid_getMuoR3_613c8f46c659f636,
-                mid_getOoAB_613c8f46c659f636,
-                mid_getR3_613c8f46c659f636,
-                mid_getX_613c8f46c659f636,
-                mid_getXX_613c8f46c659f636,
-                mid_getb_613c8f46c659f636,
+                mid_init$_7d613228456ec52a,
+                mid_getA_81520b552cb3fa26,
+                mid_getAlpha_81520b552cb3fa26,
+                mid_getBB_81520b552cb3fa26,
+                mid_getBBB_81520b552cb3fa26,
+                mid_getBeta_81520b552cb3fa26,
+                mid_getBoA_81520b552cb3fa26,
+                mid_getBoABpo_81520b552cb3fa26,
+                mid_getGamma_81520b552cb3fa26,
+                mid_getHXXX_81520b552cb3fa26,
+                mid_getKXXX_81520b552cb3fa26,
+                mid_getM2aoA_81520b552cb3fa26,
+                mid_getMCo2AB_81520b552cb3fa26,
+                mid_getMeanMotion_81520b552cb3fa26,
+                mid_getMuoR3_81520b552cb3fa26,
+                mid_getOoAB_81520b552cb3fa26,
+                mid_getR3_81520b552cb3fa26,
+                mid_getX_81520b552cb3fa26,
+                mid_getXX_81520b552cb3fa26,
+                mid_getb_81520b552cb3fa26,
                 max_mid
               };
 

@@ -25,7 +25,7 @@ namespace org {
       class ItrfVersionProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getConfiguration_a005f84471bdab98,
+          mid_getConfiguration_c175c26b8f14b277,
           max_mid
         };
 

@@ -13,9 +13,17 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace models {
+      namespace earth {
+        namespace troposphere {
+          class DiscreteTroposphericModel;
+          class MappingFunction;
+        }
+      }
+    }
     namespace bodies {
-      class GeodeticPoint;
       class FieldGeodeticPoint;
+      class GeodeticPoint;
     }
     namespace time {
       class FieldAbsoluteDate;
@@ -24,14 +32,6 @@ namespace org {
     }
     namespace utils {
       class ParameterDriver;
-    }
-    namespace models {
-      namespace earth {
-        namespace troposphere {
-          class DiscreteTroposphericModel;
-          class MappingFunction;
-        }
-      }
     }
   }
   namespace hipparchus {
@@ -49,15 +49,15 @@ namespace org {
           class ViennaThreeModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_ab4840ba016ef1da,
-              mid_init$_efb1066fada7736f,
-              mid_computeZenithDelay_fd96fda04d407b93,
-              mid_computeZenithDelay_006dc50aa6e193b5,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_mappingFactors_e6ce6b157ff98280,
-              mid_mappingFactors_964dc353437b5da2,
-              mid_pathDelay_a4fdd877b349d4a6,
-              mid_pathDelay_129678f244f63094,
+              mid_init$_b15baa0161a4e9c7,
+              mid_init$_0559b4bd8fb5191f,
+              mid_computeZenithDelay_90983db312f6218b,
+              mid_computeZenithDelay_0b467d379fb3f504,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_mappingFactors_6e118a7a5998051c,
+              mid_mappingFactors_6dcded9cb7dee3c2,
+              mid_pathDelay_6f66c6b7094d6f08,
+              mid_pathDelay_2edbfa177156ee09,
               max_mid
             };
 
@@ -75,8 +75,8 @@ namespace org {
             ViennaThreeModel(const JArray< jdouble > &, const JArray< jdouble > &);
             ViennaThreeModel(const JArray< jdouble > &, const JArray< jdouble > &, const ::org::orekit::time::TimeScale &);
 
-            JArray< jdouble > computeZenithDelay(const ::org::orekit::bodies::GeodeticPoint &, const JArray< jdouble > &, const ::org::orekit::time::AbsoluteDate &) const;
             JArray< ::org::hipparchus::CalculusFieldElement > computeZenithDelay(const ::org::orekit::bodies::FieldGeodeticPoint &, const JArray< ::org::hipparchus::CalculusFieldElement > &, const ::org::orekit::time::FieldAbsoluteDate &) const;
+            JArray< jdouble > computeZenithDelay(const ::org::orekit::bodies::GeodeticPoint &, const JArray< jdouble > &, const ::org::orekit::time::AbsoluteDate &) const;
             ::java::util::List getParametersDrivers() const;
             JArray< ::org::hipparchus::CalculusFieldElement > mappingFactors(const ::org::hipparchus::CalculusFieldElement &, const ::org::orekit::bodies::FieldGeodeticPoint &, const ::org::orekit::time::FieldAbsoluteDate &) const;
             JArray< jdouble > mappingFactors(jdouble, const ::org::orekit::bodies::GeodeticPoint &, const ::org::orekit::time::AbsoluteDate &) const;

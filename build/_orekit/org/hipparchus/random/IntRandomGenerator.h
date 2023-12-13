@@ -17,13 +17,13 @@ namespace org {
       class IntRandomGenerator : public ::org::hipparchus::random::BaseRandomGenerator {
        public:
         enum {
-          mid_nextBoolean_89b302893bdbe1f1,
-          mid_nextBytes_d759c70c6670fd89,
-          mid_nextBytes_ac782c7077255dd3,
-          mid_nextDouble_557b8123390d8d0c,
-          mid_nextFloat_04fe014f7609dc26,
-          mid_nextInt_412668abc8d889e9,
-          mid_nextLong_9e26256fb0d384a2,
+          mid_nextBoolean_9ab94ac1dc23b105,
+          mid_nextBytes_459771b03534868e,
+          mid_nextBytes_a9fddc59b07ce512,
+          mid_nextDouble_b74f83833fdad017,
+          mid_nextFloat_1fb1bf0772ae5db7,
+          mid_nextInt_55546ef6a647f39b,
+          mid_nextLong_6c0ce7e438e5ded4,
           max_mid
         };
 

@@ -3,6 +3,12 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace rugged {
@@ -10,12 +16,6 @@ namespace org {
         class InertialFrameId;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,8 +28,8 @@ namespace org {
         class InertialFrameId : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_8368c8e86423f205,
-            mid_values_d35bcdfa55e31363,
+            mid_valueOf_6b9cec60444c160a,
+            mid_values_1ac67992fbac2c1e,
             max_mid
           };
 

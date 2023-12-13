@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class TimeStampedFieldPVCoordinates;
-      class PVCoordinatesProvider;
-      class FieldPVCoordinatesProvider;
-      class TimeStampedPVCoordinates;
-    }
     namespace bodies {
       class Ellipsoid;
+    }
+    namespace utils {
+      class TimeStampedPVCoordinates;
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
+      class TimeStampedFieldPVCoordinates;
     }
     namespace time {
       class FieldAbsoluteDate;
@@ -37,9 +37,9 @@ namespace org {
       class BodyCenterPointing : public ::org::orekit::attitudes::GroundPointing {
        public:
         enum {
-          mid_init$_f9d5e998a0fdbd09,
-          mid_getTargetPV_9e0119a6fef31431,
-          mid_getTargetPV_ee00ab612436435b,
+          mid_init$_8bf3e19b17f5b364,
+          mid_getTargetPV_4a6b199bd28f952f,
+          mid_getTargetPV_0c9a6603286e7c6f,
           max_mid
         };
 

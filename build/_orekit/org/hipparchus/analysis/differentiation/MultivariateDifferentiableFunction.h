@@ -30,7 +30,7 @@ namespace org {
         class MultivariateDifferentiableFunction : public ::org::hipparchus::analysis::MultivariateFunction {
          public:
           enum {
-            mid_value_8bdb7c411329c668,
+            mid_value_a789982882efd99b,
             max_mid
           };
 

@@ -11,10 +11,10 @@ namespace org {
         class SmoothStepFactory$FieldSmoothStepFunction;
       }
     }
+    class Field;
     namespace exception {
       class MathIllegalArgumentException;
     }
-    class Field;
   }
 }
 namespace java {
@@ -32,17 +32,17 @@ namespace org {
         class SmoothStepFactory : public ::java::lang::Object {
          public:
           enum {
-            mid_checkBetweenZeroAndOneIncluded_10f281d777284cea,
-            mid_getClamp_eedc0df51e79adef,
-            mid_getClamp_0b6c279ce81f402f,
-            mid_getCubic_eedc0df51e79adef,
-            mid_getCubic_0b6c279ce81f402f,
-            mid_getFieldGeneralOrder_cb2318af5f79fd6a,
-            mid_getGeneralOrder_f63e16b76ec0adac,
-            mid_getQuadratic_eedc0df51e79adef,
-            mid_getQuadratic_0b6c279ce81f402f,
-            mid_getQuintic_eedc0df51e79adef,
-            mid_getQuintic_0b6c279ce81f402f,
+            mid_checkBetweenZeroAndOneIncluded_8ba9fe7a847cecad,
+            mid_getClamp_08006f6c9018216e,
+            mid_getClamp_c81f7e343d53e75f,
+            mid_getCubic_08006f6c9018216e,
+            mid_getCubic_c81f7e343d53e75f,
+            mid_getFieldGeneralOrder_be398f450d2cffc9,
+            mid_getGeneralOrder_a28686a10ca4c52e,
+            mid_getQuadratic_08006f6c9018216e,
+            mid_getQuadratic_c81f7e343d53e75f,
+            mid_getQuintic_08006f6c9018216e,
+            mid_getQuintic_c81f7e343d53e75f,
             max_mid
           };
 

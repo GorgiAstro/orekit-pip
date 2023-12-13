@@ -5,18 +5,18 @@
 
 namespace org {
   namespace hipparchus {
-    class FieldElement;
     namespace exception {
-      class MathIllegalArgumentException;
       class NullArgumentException;
-      class MathRuntimeException;
       class Localizable;
+      class MathRuntimeException;
+      class MathIllegalArgumentException;
     }
+    class CalculusFieldElement;
     namespace util {
       class MathUtils$FieldSumAndResidual;
       class MathUtils$SumAndResidual;
     }
-    class CalculusFieldElement;
+    class FieldElement;
   }
 }
 namespace java {
@@ -33,27 +33,27 @@ namespace org {
       class MathUtils : public ::java::lang::Object {
        public:
         enum {
-          mid_checkDimension_a84c9a223722150c,
-          mid_checkFinite_cc18240f4a737f14,
-          mid_checkFinite_10f281d777284cea,
-          mid_checkNotNull_009757f2c0fd9090,
-          mid_checkNotNull_08c441469d673017,
-          mid_checkRangeInclusive_87096e3fd8086100,
-          mid_checkRangeInclusive_b35198c41fa72398,
-          mid_copySign_b0a3501566648d40,
-          mid_copySign_5625cf3db98dadc1,
-          mid_copySign_c18ab8eab0c49f84,
-          mid_copySign_110523af027099dd,
-          mid_equals_41fce65646328eb2,
-          mid_hash_02c575777cd113f8,
-          mid_hash_abbeb9db7144ca23,
-          mid_max_d5f58731bcb8a011,
-          mid_min_d5f58731bcb8a011,
-          mid_normalizeAngle_2268d18be49a6087,
-          mid_normalizeAngle_d5f58731bcb8a011,
-          mid_reduce_8d02ba458f22e508,
-          mid_twoSum_22ddad23a8920c5c,
-          mid_twoSum_171ca3f4012afa76,
+          mid_checkDimension_3313c75e3e16c428,
+          mid_checkFinite_ab69da052b88f50c,
+          mid_checkFinite_8ba9fe7a847cecad,
+          mid_checkNotNull_55f3c894852c27a3,
+          mid_checkNotNull_b40ae6e2feb49504,
+          mid_checkRangeInclusive_b5167f35b2521627,
+          mid_checkRangeInclusive_84e3a5649e949acb,
+          mid_copySign_75b669519a90ffd0,
+          mid_copySign_92ecd94558bf0c68,
+          mid_copySign_8f345e4204401ff5,
+          mid_copySign_7ef7cc415580895c,
+          mid_equals_cd8da52a7e84190c,
+          mid_hash_f4eedf29a683816e,
+          mid_hash_2af4736545087009,
+          mid_max_c6408fdce2cc6c1a,
+          mid_min_c6408fdce2cc6c1a,
+          mid_normalizeAngle_99e3200dafc19573,
+          mid_normalizeAngle_c6408fdce2cc6c1a,
+          mid_reduce_f804f816b79164cb,
+          mid_twoSum_4115efd6b05d8036,
+          mid_twoSum_1d2a4451bfe8222b,
           max_mid
         };
 

@@ -3,21 +3,21 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class IOException;
+namespace org {
+  namespace orekit {
+    namespace data {
+      class DataFilter;
+      class DataSource;
+    }
   }
+}
+namespace java {
   namespace lang {
     class Throwable;
     class Class;
   }
-}
-namespace org {
-  namespace orekit {
-    namespace data {
-      class DataSource;
-      class DataFilter;
-    }
+  namespace io {
+    class IOException;
   }
 }
 template<class T> class JArray;
@@ -29,12 +29,12 @@ namespace org {
       class PythonDataFilter : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_filter_d33f4b0b3a1030ad,
-          mid_finalize_0640e6acf969ed28,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_filter_bbc30294b1b0b691,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
           max_mid
         };
 

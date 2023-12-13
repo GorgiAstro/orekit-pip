@@ -5,18 +5,18 @@
 
 namespace org {
   namespace orekit {
-    namespace attitudes {
-      class Attitude;
-      class FieldAttitude;
-    }
     namespace utils {
       class TimeStampedFieldAngularCoordinates;
       class FieldAngularCoordinates;
     }
     namespace time {
+      class FieldTimeShiftable;
       class FieldAbsoluteDate;
       class FieldTimeStamped;
-      class FieldTimeShiftable;
+    }
+    namespace attitudes {
+      class Attitude;
+      class FieldAttitude;
     }
     namespace frames {
       class Frame;
@@ -26,10 +26,10 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
-          class Vector3D;
           class Rotation;
+          class Vector3D;
           class FieldRotation;
+          class FieldVector3D;
         }
       }
     }
@@ -51,21 +51,21 @@ namespace org {
       class FieldAttitude : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_d19b0669806052fb,
-          mid_init$_5dfce6dcb2f2f4fa,
-          mid_init$_ff527da09f82b6d2,
-          mid_init$_8dfe6ba809ac1d2d,
-          mid_init$_0de1d014cc09f042,
-          mid_getDate_f1fe4daf77c66560,
-          mid_getOrientation_6ee4b6b8d0c547ac,
-          mid_getReferenceFrame_6c9bc0a928c56d4e,
-          mid_getRotation_73da4eeccf2b7e14,
-          mid_getRotationAcceleration_2d64addf4c3391d9,
-          mid_getSpin_2d64addf4c3391d9,
-          mid_shiftedBy_7f36c3f6f9d790d4,
-          mid_shiftedBy_2ba1b5f5b87774e7,
-          mid_toAttitude_ed1eef73b5133690,
-          mid_withReferenceFrame_708b51366c08d226,
+          mid_init$_1bc951f35febb40d,
+          mid_init$_bfc56c8bb2c571c3,
+          mid_init$_66a409719d3da56b,
+          mid_init$_8c1049989487e742,
+          mid_init$_6f0f05cb4f827357,
+          mid_getDate_fa23a4301b9c83e7,
+          mid_getOrientation_508aa3ee9876a7be,
+          mid_getReferenceFrame_2c51111cc6894ba1,
+          mid_getRotation_1e54a5caa5199c2e,
+          mid_getRotationAcceleration_ff5ac73a7b43eddd,
+          mid_getSpin_ff5ac73a7b43eddd,
+          mid_shiftedBy_0d906c51b1e0b7ab,
+          mid_shiftedBy_9b2f89e5c043156c,
+          mid_toAttitude_9d85ee1243dd5d25,
+          mid_withReferenceFrame_07f6f41a69716d83,
           max_mid
         };
 

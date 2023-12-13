@@ -3,13 +3,19 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
       namespace analytical {
         namespace tle {
-          class FieldTLE;
           class TLE;
+          class FieldTLE;
           namespace generation {
             class TleGenerationAlgorithm;
           }
@@ -18,12 +24,6 @@ namespace org {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -38,13 +38,13 @@ namespace org {
             class PythonTleGenerationAlgorithm : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0640e6acf969ed28,
-                mid_finalize_0640e6acf969ed28,
-                mid_generate_d1897b6bbe0a4251,
-                mid_generate_e9ff15b430a2bfc5,
-                mid_pythonDecRef_0640e6acf969ed28,
-                mid_pythonExtension_9e26256fb0d384a2,
-                mid_pythonExtension_3cd6a6b354c6aa22,
+                mid_init$_a1fa5dae97ea5ed2,
+                mid_finalize_a1fa5dae97ea5ed2,
+                mid_generate_6e4ccfee7888f727,
+                mid_generate_7dac79832039ea3a,
+                mid_pythonDecRef_a1fa5dae97ea5ed2,
+                mid_pythonExtension_6c0ce7e438e5ded4,
+                mid_pythonExtension_3d7dd2314a0dd456,
                 max_mid
               };
 

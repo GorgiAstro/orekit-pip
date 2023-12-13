@@ -13,14 +13,11 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace estimation {
       namespace measurements {
-        class EstimatedMeasurementBase;
-        class AngularAzEl;
         class EstimationModifier;
+        class AngularAzEl;
+        class EstimatedMeasurementBase;
       }
     }
     namespace models {
@@ -29,6 +26,9 @@ namespace org {
           class IonosphericModel;
         }
       }
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
 }
@@ -43,9 +43,9 @@ namespace org {
           class AngularIonosphericDelayModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_69c6b2cabec159dd,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_modifyWithoutDerivatives_e471490df8741b73,
+              mid_init$_c3c7040adbf9e5f8,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_modifyWithoutDerivatives_308087fabc1d7f66,
               max_mid
             };
 

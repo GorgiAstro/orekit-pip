@@ -5,16 +5,16 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class TimeStamped;
+      class AbsoluteDate;
+    }
     namespace files {
       namespace ccsds {
         namespace definitions {
           class OnOff;
         }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
-      class TimeStamped;
     }
   }
   namespace hipparchus {
@@ -46,53 +46,53 @@ namespace org {
               class OrbitManeuver : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_0640e6acf969ed28,
-                  mid_getAcceleration_f88961cca75a2c0a,
-                  mid_getAccelerationDirectionSigma_557b8123390d8d0c,
-                  mid_getAccelerationInterpolation_bc635c6bda6df121,
-                  mid_getAccelerationMagnitudeSigma_557b8123390d8d0c,
-                  mid_getDate_7a97f7e149e79afb,
-                  mid_getDeltaMass_557b8123390d8d0c,
-                  mid_getDeployDirSigma_557b8123390d8d0c,
-                  mid_getDeployDv_f88961cca75a2c0a,
-                  mid_getDeployDvCda_557b8123390d8d0c,
-                  mid_getDeployDvRatio_557b8123390d8d0c,
-                  mid_getDeployDvSigma_557b8123390d8d0c,
-                  mid_getDeployId_3cffd47377eca18a,
-                  mid_getDeployMass_557b8123390d8d0c,
-                  mid_getDuration_557b8123390d8d0c,
-                  mid_getDv_f88961cca75a2c0a,
-                  mid_getDvDirSigma_557b8123390d8d0c,
-                  mid_getDvMagSigma_557b8123390d8d0c,
-                  mid_getThrust_f88961cca75a2c0a,
-                  mid_getThrustDirectionSigma_557b8123390d8d0c,
-                  mid_getThrustEfficiency_557b8123390d8d0c,
-                  mid_getThrustInterpolation_bc635c6bda6df121,
-                  mid_getThrustIsp_557b8123390d8d0c,
-                  mid_getThrustMagnitudeSigma_557b8123390d8d0c,
-                  mid_setAcceleration_89aad365fb0ed8da,
-                  mid_setAccelerationDirectionSigma_10f281d777284cea,
-                  mid_setAccelerationInterpolation_479e4073dd1c825d,
-                  mid_setAccelerationMagnitudeSigma_10f281d777284cea,
-                  mid_setDate_20affcbd28542333,
-                  mid_setDeltaMass_10f281d777284cea,
-                  mid_setDeployDirSigma_10f281d777284cea,
-                  mid_setDeployDv_89aad365fb0ed8da,
-                  mid_setDeployDvCda_10f281d777284cea,
-                  mid_setDeployDvRatio_10f281d777284cea,
-                  mid_setDeployDvSigma_10f281d777284cea,
-                  mid_setDeployId_f5ffdf29129ef90a,
-                  mid_setDeployMass_10f281d777284cea,
-                  mid_setDuration_10f281d777284cea,
-                  mid_setDv_89aad365fb0ed8da,
-                  mid_setDvDirSigma_10f281d777284cea,
-                  mid_setDvMagSigma_10f281d777284cea,
-                  mid_setThrust_89aad365fb0ed8da,
-                  mid_setThrustDirectionSigma_10f281d777284cea,
-                  mid_setThrustEfficiency_10f281d777284cea,
-                  mid_setThrustInterpolation_479e4073dd1c825d,
-                  mid_setThrustIsp_10f281d777284cea,
-                  mid_setThrustMagnitudeSigma_10f281d777284cea,
+                  mid_init$_a1fa5dae97ea5ed2,
+                  mid_getAcceleration_8b724f8b4fdad1a2,
+                  mid_getAccelerationDirectionSigma_b74f83833fdad017,
+                  mid_getAccelerationInterpolation_ae5979149ea75603,
+                  mid_getAccelerationMagnitudeSigma_b74f83833fdad017,
+                  mid_getDate_c325492395d89b24,
+                  mid_getDeltaMass_b74f83833fdad017,
+                  mid_getDeployDirSigma_b74f83833fdad017,
+                  mid_getDeployDv_8b724f8b4fdad1a2,
+                  mid_getDeployDvCda_b74f83833fdad017,
+                  mid_getDeployDvRatio_b74f83833fdad017,
+                  mid_getDeployDvSigma_b74f83833fdad017,
+                  mid_getDeployId_1c1fa1e935d6cdcf,
+                  mid_getDeployMass_b74f83833fdad017,
+                  mid_getDuration_b74f83833fdad017,
+                  mid_getDv_8b724f8b4fdad1a2,
+                  mid_getDvDirSigma_b74f83833fdad017,
+                  mid_getDvMagSigma_b74f83833fdad017,
+                  mid_getThrust_8b724f8b4fdad1a2,
+                  mid_getThrustDirectionSigma_b74f83833fdad017,
+                  mid_getThrustEfficiency_b74f83833fdad017,
+                  mid_getThrustInterpolation_ae5979149ea75603,
+                  mid_getThrustIsp_b74f83833fdad017,
+                  mid_getThrustMagnitudeSigma_b74f83833fdad017,
+                  mid_setAcceleration_d5322b8b512aeb26,
+                  mid_setAccelerationDirectionSigma_8ba9fe7a847cecad,
+                  mid_setAccelerationInterpolation_9e83239fe51dc6dd,
+                  mid_setAccelerationMagnitudeSigma_8ba9fe7a847cecad,
+                  mid_setDate_02135a6ef25adb4b,
+                  mid_setDeltaMass_8ba9fe7a847cecad,
+                  mid_setDeployDirSigma_8ba9fe7a847cecad,
+                  mid_setDeployDv_d5322b8b512aeb26,
+                  mid_setDeployDvCda_8ba9fe7a847cecad,
+                  mid_setDeployDvRatio_8ba9fe7a847cecad,
+                  mid_setDeployDvSigma_8ba9fe7a847cecad,
+                  mid_setDeployId_734b91ac30d5f9b4,
+                  mid_setDeployMass_8ba9fe7a847cecad,
+                  mid_setDuration_8ba9fe7a847cecad,
+                  mid_setDv_d5322b8b512aeb26,
+                  mid_setDvDirSigma_8ba9fe7a847cecad,
+                  mid_setDvMagSigma_8ba9fe7a847cecad,
+                  mid_setThrust_d5322b8b512aeb26,
+                  mid_setThrustDirectionSigma_8ba9fe7a847cecad,
+                  mid_setThrustEfficiency_8ba9fe7a847cecad,
+                  mid_setThrustInterpolation_9e83239fe51dc6dd,
+                  mid_setThrustIsp_8ba9fe7a847cecad,
+                  mid_setThrustMagnitudeSigma_8ba9fe7a847cecad,
                   max_mid
                 };
 

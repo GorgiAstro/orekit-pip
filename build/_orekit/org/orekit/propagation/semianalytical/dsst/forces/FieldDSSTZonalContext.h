@@ -3,14 +3,14 @@
 
 #include "org/orekit/propagation/semianalytical/dsst/forces/FieldForceModelContext.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,26 +25,26 @@ namespace org {
             class FieldDSSTZonalContext : public ::org::orekit::propagation::semianalytical::dsst::forces::FieldForceModelContext {
              public:
               enum {
-                mid_getBB_613c8f46c659f636,
-                mid_getBoA_613c8f46c659f636,
-                mid_getBoABpo_613c8f46c659f636,
-                mid_getCXO2N2A2_613c8f46c659f636,
-                mid_getHK_613c8f46c659f636,
-                mid_getK2MH2_613c8f46c659f636,
-                mid_getK2MH2O2_613c8f46c659f636,
-                mid_getM2aoA_613c8f46c659f636,
-                mid_getMCo2AB_613c8f46c659f636,
-                mid_getMeanMotion_613c8f46c659f636,
-                mid_getMuoa_613c8f46c659f636,
-                mid_getOON2A2_613c8f46c659f636,
-                mid_getOoAB_613c8f46c659f636,
-                mid_getRoa_613c8f46c659f636,
-                mid_getX_613c8f46c659f636,
-                mid_getX2ON2A2XP1_613c8f46c659f636,
-                mid_getX3ON2A_613c8f46c659f636,
-                mid_getXON2A2_613c8f46c659f636,
-                mid_getXX_613c8f46c659f636,
-                mid_getXXX_613c8f46c659f636,
+                mid_getBB_81520b552cb3fa26,
+                mid_getBoA_81520b552cb3fa26,
+                mid_getBoABpo_81520b552cb3fa26,
+                mid_getCXO2N2A2_81520b552cb3fa26,
+                mid_getHK_81520b552cb3fa26,
+                mid_getK2MH2_81520b552cb3fa26,
+                mid_getK2MH2O2_81520b552cb3fa26,
+                mid_getM2aoA_81520b552cb3fa26,
+                mid_getMCo2AB_81520b552cb3fa26,
+                mid_getMeanMotion_81520b552cb3fa26,
+                mid_getMuoa_81520b552cb3fa26,
+                mid_getOON2A2_81520b552cb3fa26,
+                mid_getOoAB_81520b552cb3fa26,
+                mid_getRoa_81520b552cb3fa26,
+                mid_getX_81520b552cb3fa26,
+                mid_getX2ON2A2XP1_81520b552cb3fa26,
+                mid_getX3ON2A_81520b552cb3fa26,
+                mid_getXON2A2_81520b552cb3fa26,
+                mid_getXX_81520b552cb3fa26,
+                mid_getXXX_81520b552cb3fa26,
                 max_mid
               };
 

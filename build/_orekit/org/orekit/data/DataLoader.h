@@ -5,8 +5,8 @@
 
 namespace java {
   namespace io {
-    class IOException;
     class InputStream;
+    class IOException;
   }
   namespace text {
     class ParseException;
@@ -25,8 +25,8 @@ namespace org {
       class DataLoader : public ::java::lang::Object {
        public:
         enum {
-          mid_loadData_15770e8d8949a557,
-          mid_stillAcceptsData_89b302893bdbe1f1,
+          mid_loadData_360461e719fb564c,
+          mid_stillAcceptsData_9ab94ac1dc23b105,
           max_mid
         };
 

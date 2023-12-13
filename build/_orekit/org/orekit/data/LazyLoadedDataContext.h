@@ -5,16 +5,9 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class LazyLoadedFrames;
-    }
-    namespace models {
-      namespace earth {
-        class LazyLoadedGeoMagneticFields;
-      }
-    }
-    namespace bodies {
-      class LazyLoadedCelestialBodies;
+    namespace data {
+      class DataContext;
+      class DataProvidersManager;
     }
     namespace forces {
       namespace gravity {
@@ -23,12 +16,19 @@ namespace org {
         }
       }
     }
-    namespace data {
-      class DataContext;
-      class DataProvidersManager;
-    }
     namespace time {
       class LazyLoadedTimeScales;
+    }
+    namespace frames {
+      class LazyLoadedFrames;
+    }
+    namespace bodies {
+      class LazyLoadedCelestialBodies;
+    }
+    namespace models {
+      namespace earth {
+        class LazyLoadedGeoMagneticFields;
+      }
     }
   }
 }
@@ -46,13 +46,13 @@ namespace org {
       class LazyLoadedDataContext : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_getCelestialBodies_2192d5132b3243a4,
-          mid_getDataProvidersManager_090dc74a0d7a5aef,
-          mid_getFrames_19dab31df3f9900d,
-          mid_getGeoMagneticFields_f938ea66f56d3454,
-          mid_getGravityFields_0d8a4be514230626,
-          mid_getTimeScales_52cbe31230c76b6b,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_getCelestialBodies_6bb03bd1907ccb0e,
+          mid_getDataProvidersManager_58cee34d9bd73f33,
+          mid_getFrames_5dce20e74866c277,
+          mid_getGeoMagneticFields_d89697effe31d95a,
+          mid_getGravityFields_7edff6ac38775a4d,
+          mid_getTimeScales_aca7b99124f1f289,
           max_mid
         };
 

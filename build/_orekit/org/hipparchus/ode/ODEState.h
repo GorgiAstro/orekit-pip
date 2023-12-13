@@ -20,17 +20,17 @@ namespace org {
       class ODEState : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_092013acd44a9e63,
-          mid_init$_8a53459a4359f093,
-          mid_getCompleteState_a53a7513ecedada2,
-          mid_getCompleteStateDimension_412668abc8d889e9,
-          mid_getNumberOfSecondaryStates_412668abc8d889e9,
-          mid_getPrimaryState_a53a7513ecedada2,
-          mid_getPrimaryStateDimension_412668abc8d889e9,
-          mid_getSecondaryState_1da5c9e77f24f269,
-          mid_getSecondaryStateDimension_0092017e99012694,
-          mid_getTime_557b8123390d8d0c,
-          mid_copy_2b7f9de2d1ea1ddb,
+          mid_init$_d606d0c99c70c093,
+          mid_init$_f623356e6846cf02,
+          mid_getCompleteState_25e1757a36c4dde2,
+          mid_getCompleteStateDimension_55546ef6a647f39b,
+          mid_getNumberOfSecondaryStates_55546ef6a647f39b,
+          mid_getPrimaryState_25e1757a36c4dde2,
+          mid_getPrimaryStateDimension_55546ef6a647f39b,
+          mid_getSecondaryState_bb2a44a76ad252f7,
+          mid_getSecondaryStateDimension_0e7cf35192c3effe,
+          mid_getTime_b74f83833fdad017,
+          mid_copy_fa7294d53f56a3e3,
           max_mid
         };
 

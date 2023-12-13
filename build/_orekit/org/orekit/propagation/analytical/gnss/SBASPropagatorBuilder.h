@@ -5,20 +5,20 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frames;
-      class Frame;
-    }
     namespace propagation {
       namespace analytical {
         namespace gnss {
-          class SBASPropagatorBuilder;
           namespace data {
             class SBASOrbitalElements;
           }
+          class SBASPropagatorBuilder;
           class SBASPropagator;
         }
       }
+    }
+    namespace frames {
+      class Frames;
+      class Frame;
     }
     namespace attitudes {
       class AttitudeProvider;
@@ -41,14 +41,14 @@ namespace org {
           class SBASPropagatorBuilder : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_87df8357a61486e2,
-              mid_init$_4c7e21fae59e307a,
-              mid_attitudeProvider_9a3d3b897b0e774d,
-              mid_build_21e9d28a362393d1,
-              mid_ecef_241de516bb56d0cf,
-              mid_eci_241de516bb56d0cf,
-              mid_mass_ed67a0d366e1e069,
-              mid_mu_ed67a0d366e1e069,
+              mid_init$_bcabaa1c0b83cdfe,
+              mid_init$_401531036ac71b2b,
+              mid_attitudeProvider_186305368444097e,
+              mid_build_52115c132377a3e0,
+              mid_ecef_482b0474ebd9523e,
+              mid_eci_482b0474ebd9523e,
+              mid_mass_fbd3e053e28d0b2c,
+              mid_mu_fbd3e053e28d0b2c,
               max_mid
             };
 

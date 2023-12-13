@@ -5,8 +5,8 @@
 
 namespace java {
   namespace io {
-    class SyncFailedException;
     class FileDescriptor;
+    class SyncFailedException;
   }
   namespace lang {
     class Class;
@@ -20,9 +20,9 @@ namespace java {
     class FileDescriptor : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_0640e6acf969ed28,
-        mid_sync_0640e6acf969ed28,
-        mid_valid_89b302893bdbe1f1,
+        mid_init$_a1fa5dae97ea5ed2,
+        mid_sync_a1fa5dae97ea5ed2,
+        mid_valid_9ab94ac1dc23b105,
         max_mid
       };
 

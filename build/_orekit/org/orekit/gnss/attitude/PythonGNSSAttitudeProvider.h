@@ -3,22 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
     namespace gnss {
       namespace attitude {
         class GNSSAttitudeProvider;
       }
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
     }
     namespace utils {
       class PVCoordinatesProvider;
@@ -33,6 +27,12 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -43,15 +43,15 @@ namespace org {
         class PythonGNSSAttitudeProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_finalize_0640e6acf969ed28,
-            mid_getAttitude_77e3383de01f3e48,
-            mid_getAttitude_1306ac39e1d2de3f,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
-            mid_validityEnd_7a97f7e149e79afb,
-            mid_validityStart_7a97f7e149e79afb,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_getAttitude_896ee4d68989b1e8,
+            mid_getAttitude_21845cfb0034fe1c,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_validityEnd_c325492395d89b24,
+            mid_validityStart_c325492395d89b24,
             max_mid
           };
 

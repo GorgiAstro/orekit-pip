@@ -3,6 +3,12 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -12,12 +18,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,10 +31,10 @@ namespace org {
           class DataField : public ::java::lang::Object {
            public:
             enum {
-              mid_booleanValue_39cbdf35e32a2f54,
-              mid_doubleValue_49101b3b25e10784,
-              mid_intValue_568a853585242248,
-              mid_stringValue_f24c993303238595,
+              mid_booleanValue_48774c94bd8c4a87,
+              mid_doubleValue_432edfcc4f1507d3,
+              mid_intValue_de61c6e3a3951a65,
+              mid_stringValue_09ee8aa78e45f22c,
               max_mid
             };
 

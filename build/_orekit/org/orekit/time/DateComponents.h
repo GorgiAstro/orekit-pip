@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class DateComponents;
       class Month;
+      class DateComponents;
     }
   }
 }
@@ -31,26 +31,26 @@ namespace org {
       class DateComponents : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a3da1a935cb37f7b,
-          mid_init$_2cfd6eaa6758b3d2,
-          mid_init$_a84c9a223722150c,
-          mid_init$_c01975213386f6a3,
-          mid_init$_3796b665437eba81,
-          mid_compareTo_5817c4aa2dc92c4a,
-          mid_createFromWeekComponents_e03baeb1c97a53a6,
-          mid_equals_221e8e85cb385209,
-          mid_getCalendarWeek_412668abc8d889e9,
-          mid_getDay_412668abc8d889e9,
-          mid_getDayOfWeek_412668abc8d889e9,
-          mid_getDayOfYear_412668abc8d889e9,
-          mid_getJ2000Day_412668abc8d889e9,
-          mid_getMJD_412668abc8d889e9,
-          mid_getMonth_412668abc8d889e9,
-          mid_getMonthEnum_a41927702314cdb7,
-          mid_getYear_412668abc8d889e9,
-          mid_hashCode_412668abc8d889e9,
-          mid_parseDate_81fc007c2df84b76,
-          mid_toString_3cffd47377eca18a,
+          mid_init$_44ed599e93e8a30c,
+          mid_init$_f29ffa06e1edc0fc,
+          mid_init$_3313c75e3e16c428,
+          mid_init$_cb5fad2f35fdd552,
+          mid_init$_a0df4b8e4ed3805e,
+          mid_compareTo_e788f54a1ca1c9dc,
+          mid_createFromWeekComponents_25e1535294bfc9e8,
+          mid_equals_460c5e2d9d51c6cc,
+          mid_getCalendarWeek_55546ef6a647f39b,
+          mid_getDay_55546ef6a647f39b,
+          mid_getDayOfWeek_55546ef6a647f39b,
+          mid_getDayOfYear_55546ef6a647f39b,
+          mid_getJ2000Day_55546ef6a647f39b,
+          mid_getMJD_55546ef6a647f39b,
+          mid_getMonth_55546ef6a647f39b,
+          mid_getMonthEnum_427cb53b38e1e5c8,
+          mid_getYear_55546ef6a647f39b,
+          mid_hashCode_55546ef6a647f39b,
+          mid_parseDate_007f42f756105ee4,
+          mid_toString_1c1fa1e935d6cdcf,
           max_mid
         };
 

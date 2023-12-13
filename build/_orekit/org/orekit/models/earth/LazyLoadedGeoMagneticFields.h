@@ -7,9 +7,9 @@ namespace org {
   namespace orekit {
     namespace models {
       namespace earth {
-        class GeoMagneticFieldFactory$FieldModel;
-        class GeoMagneticField;
         class GeoMagneticFields;
+        class GeoMagneticField;
+        class GeoMagneticFieldFactory$FieldModel;
       }
     }
     namespace data {
@@ -32,10 +32,10 @@ namespace org {
         class LazyLoadedGeoMagneticFields : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_451bc3479d2995cd,
-            mid_getField_a3e70fb66ee864fe,
-            mid_getIGRF_7100d3672aa999e4,
-            mid_getWMM_7100d3672aa999e4,
+            mid_init$_71b020e53c8af149,
+            mid_getField_63411221dee4d2d9,
+            mid_getIGRF_0b71ae56f8fa5718,
+            mid_getWMM_0b71ae56f8fa5718,
             max_mid
           };
 

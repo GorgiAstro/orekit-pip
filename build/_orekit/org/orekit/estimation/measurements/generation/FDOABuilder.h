@@ -10,16 +10,16 @@ namespace org {
     }
   }
   namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class FDOA;
+        class GroundStation;
+        class ObservableSatellite;
+      }
+    }
     namespace propagation {
       namespace sampling {
         class OrekitStepInterpolator;
-      }
-    }
-    namespace estimation {
-      namespace measurements {
-        class ObservableSatellite;
-        class GroundStation;
-        class FDOA;
       }
     }
     namespace time {
@@ -46,8 +46,8 @@ namespace org {
           class FDOABuilder : public ::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder {
            public:
             enum {
-              mid_init$_7292f02938ec8cc8,
-              mid_build_888d88cdd98bf4f2,
+              mid_init$_0ca6a68995d89781,
+              mid_build_7088be0b1e29a5c1,
               max_mid
             };
 

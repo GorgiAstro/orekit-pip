@@ -4,26 +4,26 @@
 #include "org/orekit/rugged/refraction/AtmosphericRefraction.h"
 
 namespace org {
-  namespace orekit {
-    namespace rugged {
-      namespace utils {
-        class NormalizedGeodeticPoint;
-        class ExtendedEllipsoid;
-      }
-      namespace intersection {
-        class IntersectionAlgorithm;
-      }
-      namespace refraction {
-        class ConstantRefractionLayer;
-      }
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
           class Vector3D;
         }
+      }
+    }
+  }
+  namespace orekit {
+    namespace rugged {
+      namespace utils {
+        class ExtendedEllipsoid;
+        class NormalizedGeodeticPoint;
+      }
+      namespace intersection {
+        class IntersectionAlgorithm;
+      }
+      namespace refraction {
+        class ConstantRefractionLayer;
       }
     }
   }
@@ -46,9 +46,9 @@ namespace org {
         class MultiLayerModel : public ::org::orekit::rugged::refraction::AtmosphericRefraction {
          public:
           enum {
-            mid_init$_224b23f8eb5eaad9,
-            mid_init$_c11240812b3a0202,
-            mid_applyCorrection_981eb3dc755df9fc,
+            mid_init$_035235491296adca,
+            mid_init$_129da8e177ba9d38,
+            mid_applyCorrection_88676b739a4ea0ca,
             max_mid
           };
 

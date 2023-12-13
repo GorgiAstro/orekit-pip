@@ -31,7 +31,7 @@ namespace org {
             class ParseToken$CenterConsumer : public ::java::lang::Object {
              public:
               enum {
-                mid_accept_e6f755c267d91c26,
+                mid_accept_564458ee450fa323,
                 max_mid
               };
 

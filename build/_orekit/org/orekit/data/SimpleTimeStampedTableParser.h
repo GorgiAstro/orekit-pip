@@ -31,8 +31,8 @@ namespace org {
       class SimpleTimeStampedTableParser : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_fc57161375601049,
-          mid_parse_e3101d06c7a1bcab,
+          mid_init$_5ecbee45ad4075cb,
+          mid_parse_7b8887374449b257,
           max_mid
         };
 

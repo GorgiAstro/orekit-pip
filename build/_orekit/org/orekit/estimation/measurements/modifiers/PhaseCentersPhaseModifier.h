@@ -3,33 +3,33 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace utils {
-      class ParameterDriver;
+    namespace estimation {
+      namespace measurements {
+        namespace gnss {
+          class Phase;
+        }
+        class EstimationModifier;
+        class EstimatedMeasurementBase;
+      }
     }
     namespace gnss {
       namespace antenna {
         class FrequencyPattern;
       }
     }
-    namespace estimation {
-      namespace measurements {
-        class EstimatedMeasurementBase;
-        class EstimationModifier;
-        namespace gnss {
-          class Phase;
-        }
-      }
+    namespace utils {
+      class ParameterDriver;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -43,9 +43,9 @@ namespace org {
           class PhaseCentersPhaseModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_59cfeb08e5a13ccd,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_modifyWithoutDerivatives_e471490df8741b73,
+              mid_init$_c749d199d359fa63,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_modifyWithoutDerivatives_308087fabc1d7f66,
               max_mid
             };
 

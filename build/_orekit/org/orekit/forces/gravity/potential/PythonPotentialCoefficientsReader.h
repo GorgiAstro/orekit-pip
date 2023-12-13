@@ -5,16 +5,16 @@
 
 namespace java {
   namespace io {
-    class IOException;
     class InputStream;
-  }
-  namespace text {
-    class ParseException;
+    class IOException;
   }
   namespace lang {
     class Throwable;
     class Class;
     class String;
+  }
+  namespace text {
+    class ParseException;
   }
 }
 namespace org {
@@ -45,14 +45,14 @@ namespace org {
           class PythonPotentialCoefficientsReader : public ::org::orekit::forces::gravity::potential::PotentialCoefficientsReader {
            public:
             enum {
-              mid_init$_e5ca4b97ee6bd2b6,
-              mid_init$_738db7d6574836ac,
-              mid_finalize_0640e6acf969ed28,
-              mid_getProvider_f0b357b475e18957,
-              mid_loadData_15770e8d8949a557,
-              mid_pythonDecRef_0640e6acf969ed28,
-              mid_pythonExtension_9e26256fb0d384a2,
-              mid_pythonExtension_3cd6a6b354c6aa22,
+              mid_init$_76cf8b957ccb7ae1,
+              mid_init$_f201530b2ce67e89,
+              mid_finalize_a1fa5dae97ea5ed2,
+              mid_getProvider_752316a4c911183b,
+              mid_loadData_360461e719fb564c,
+              mid_pythonDecRef_a1fa5dae97ea5ed2,
+              mid_pythonExtension_6c0ce7e438e5ded4,
+              mid_pythonExtension_3d7dd2314a0dd456,
               max_mid
             };
 

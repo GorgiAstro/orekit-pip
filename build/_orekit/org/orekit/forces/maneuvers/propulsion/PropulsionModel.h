@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
@@ -17,15 +17,6 @@ namespace org {
     class CalculusFieldElement;
   }
   namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-      namespace events {
-        class EventDetectorsProvider;
-        class EventDetector;
-        class FieldEventDetector;
-      }
-      class SpacecraftState;
-    }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
@@ -38,6 +29,15 @@ namespace org {
       namespace maneuvers {
         class Control3DVectorCostType;
       }
+    }
+    namespace propagation {
+      namespace events {
+        class FieldEventDetector;
+        class EventDetector;
+        class EventDetectorsProvider;
+      }
+      class FieldSpacecraftState;
+      class SpacecraftState;
     }
   }
 }
@@ -63,16 +63,16 @@ namespace org {
           class PropulsionModel : public ::org::orekit::utils::ParameterDriversProvider {
            public:
             enum {
-              mid_getAcceleration_53d7cdec4a9e3cd4,
-              mid_getAcceleration_28694fea3dbf2005,
-              mid_getControl3DVectorCostType_601f05e5d0c82ad9,
-              mid_getEventDetectors_d7cce92225eb0db2,
-              mid_getFieldEventDetectors_8130af76f6998f44,
-              mid_getMassDerivatives_810dcb8f9f5d191a,
-              mid_getMassDerivatives_4ad317f7598a10a9,
-              mid_getName_3cffd47377eca18a,
-              mid_init_811e49dad2467b67,
-              mid_init_0472264ad6f40bc2,
+              mid_getAcceleration_e58d235f532e1fec,
+              mid_getAcceleration_fa24c1d0852b99d1,
+              mid_getControl3DVectorCostType_2eba60c257188b83,
+              mid_getEventDetectors_14e21bf777ff0ccf,
+              mid_getFieldEventDetectors_283ad33581c047a0,
+              mid_getMassDerivatives_8e86371c61460f23,
+              mid_getMassDerivatives_f867476668f8eb00,
+              mid_getName_1c1fa1e935d6cdcf,
+              mid_init_96d019f392abf918,
+              mid_init_2d7f9a496c7e9781,
               max_mid
             };
 

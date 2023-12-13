@@ -19,8 +19,8 @@ namespace org {
           class WideLaneCombination : public ::org::orekit::estimation::measurements::gnss::AbstractDualFrequencyCombination {
            public:
             enum {
-              mid_getCombinedValue_1aca6111050d8282,
-              mid_getCombinedFrequency_ec5e21d51ba3cb9a,
+              mid_getCombinedValue_67abdaf53ea90950,
+              mid_getCombinedFrequency_7bbbdc452eac601c,
               max_mid
             };
 

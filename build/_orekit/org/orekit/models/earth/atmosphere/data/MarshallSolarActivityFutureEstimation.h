@@ -5,25 +5,25 @@
 
 namespace org {
   namespace orekit {
-    namespace models {
-      namespace earth {
-        namespace atmosphere {
-          namespace data {
-            class MarshallSolarActivityFutureEstimation$StrengthLevel;
-            class MarshallSolarActivityFutureEstimationLoader$LineParameters;
-            class MarshallSolarActivityFutureEstimationLoader;
-          }
-        }
-      }
+    namespace data {
+      class DataSource;
+      class DataProvidersManager;
     }
     namespace time {
       class DateComponents;
       class AbsoluteDate;
       class TimeScale;
     }
-    namespace data {
-      class DataSource;
-      class DataProvidersManager;
+    namespace models {
+      namespace earth {
+        namespace atmosphere {
+          namespace data {
+            class MarshallSolarActivityFutureEstimationLoader;
+            class MarshallSolarActivityFutureEstimation$StrengthLevel;
+            class MarshallSolarActivityFutureEstimationLoader$LineParameters;
+          }
+        }
+      }
     }
   }
 }
@@ -45,21 +45,21 @@ namespace org {
             class MarshallSolarActivityFutureEstimation : public ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityData {
              public:
               enum {
-                mid_init$_3ec7eea9830771ac,
-                mid_init$_e392516865664de5,
-                mid_init$_c4c299c8a306aef5,
-                mid_init$_689592c643358bb5,
-                mid_init$_476b77da02fe834a,
-                mid_init$_0456b112dff413d3,
-                mid_get24HoursKp_b0b988f941da47d8,
-                mid_getAp_89e8b78e4211e023,
-                mid_getAverageFlux_b0b988f941da47d8,
-                mid_getDailyFlux_b0b988f941da47d8,
-                mid_getFileDate_cbc22955a45bd9a2,
-                mid_getInstantFlux_b0b988f941da47d8,
-                mid_getMeanFlux_b0b988f941da47d8,
-                mid_getStrengthLevel_ca23ece2c9c96552,
-                mid_getThreeHourlyKP_b0b988f941da47d8,
+                mid_init$_7e72ad6eafa6d582,
+                mid_init$_ef802e0c23b66f0d,
+                mid_init$_e66f71105553a75f,
+                mid_init$_61bbdd830b8c197a,
+                mid_init$_73226d27f976c826,
+                mid_init$_1b3a268b601b1d33,
+                mid_get24HoursKp_fd347811007a6ba3,
+                mid_getAp_27b701db396ade01,
+                mid_getAverageFlux_fd347811007a6ba3,
+                mid_getDailyFlux_fd347811007a6ba3,
+                mid_getFileDate_5f414e4f345d9daa,
+                mid_getInstantFlux_fd347811007a6ba3,
+                mid_getMeanFlux_fd347811007a6ba3,
+                mid_getStrengthLevel_f490cf9edac89aac,
+                mid_getThreeHourlyKP_fd347811007a6ba3,
                 max_mid
               };
 

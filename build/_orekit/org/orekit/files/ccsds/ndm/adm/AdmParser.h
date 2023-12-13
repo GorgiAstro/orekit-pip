@@ -40,8 +40,8 @@ namespace org {
             class AdmParser : public ::org::orekit::files::ccsds::utils::parsing::AbstractConstituentParser {
              public:
               enum {
-                mid_getMissionReferenceDate_7a97f7e149e79afb,
-                mid_getSpecialXmlElementsBuilders_1e62c2f73fbdd1c4,
+                mid_getMissionReferenceDate_c325492395d89b24,
+                mid_getSpecialXmlElementsBuilders_810bed48fafb0b9a,
                 max_mid
               };
 

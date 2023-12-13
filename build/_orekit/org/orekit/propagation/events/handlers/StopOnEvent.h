@@ -7,10 +7,10 @@ namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
-        class EventDetector;
         namespace handlers {
           class EventHandler;
         }
+        class EventDetector;
       }
       class SpacecraftState;
     }
@@ -39,8 +39,8 @@ namespace org {
           class StopOnEvent : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_eventOccurred_c85ac59cb25f2670,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_eventOccurred_ae9b0131fefe6c67,
               max_mid
             };
 

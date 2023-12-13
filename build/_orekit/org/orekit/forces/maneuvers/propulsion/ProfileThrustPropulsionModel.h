@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
@@ -21,14 +21,6 @@ namespace org {
       class TimeSpanMap;
       class ParameterDriver;
     }
-    namespace propagation {
-      class FieldSpacecraftState;
-      namespace events {
-        class EventDetector;
-        class FieldEventDetector;
-      }
-      class SpacecraftState;
-    }
     namespace forces {
       namespace maneuvers {
         namespace propulsion {
@@ -37,6 +29,14 @@ namespace org {
         }
         class Control3DVectorCostType;
       }
+    }
+    namespace propagation {
+      namespace events {
+        class FieldEventDetector;
+        class EventDetector;
+      }
+      class SpacecraftState;
+      class FieldSpacecraftState;
     }
   }
 }
@@ -63,18 +63,18 @@ namespace org {
           class ProfileThrustPropulsionModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_695d3f43be2dface,
-              mid_getControl3DVectorCostType_601f05e5d0c82ad9,
-              mid_getEventDetectors_d7cce92225eb0db2,
-              mid_getFieldEventDetectors_8130af76f6998f44,
-              mid_getFlowRate_1bbf81d80c47ecdd,
-              mid_getFlowRate_810dcb8f9f5d191a,
-              mid_getFlowRate_4ad317f7598a10a9,
-              mid_getName_3cffd47377eca18a,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_getThrustVector_3fff8c49d4e2dc6b,
-              mid_getThrustVector_b61fb59a041240c6,
-              mid_getThrustVector_61944e27a39e8290,
+              mid_init$_b86ecb38dfd5497e,
+              mid_getControl3DVectorCostType_2eba60c257188b83,
+              mid_getEventDetectors_14e21bf777ff0ccf,
+              mid_getFieldEventDetectors_283ad33581c047a0,
+              mid_getFlowRate_a17ea857ce74d258,
+              mid_getFlowRate_f867476668f8eb00,
+              mid_getFlowRate_8e86371c61460f23,
+              mid_getName_1c1fa1e935d6cdcf,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_getThrustVector_9019a5b32b11453a,
+              mid_getThrustVector_0ce449c67b5ffd9c,
+              mid_getThrustVector_20bded0292328743,
               max_mid
             };
 
@@ -95,8 +95,8 @@ namespace org {
             ::java::util::stream::Stream getEventDetectors() const;
             ::java::util::stream::Stream getFieldEventDetectors(const ::org::hipparchus::Field &) const;
             jdouble getFlowRate(const ::org::orekit::propagation::SpacecraftState &) const;
-            jdouble getFlowRate(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
             ::org::hipparchus::CalculusFieldElement getFlowRate(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
+            jdouble getFlowRate(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
             ::java::lang::String getName() const;
             ::java::util::List getParametersDrivers() const;
             ::org::hipparchus::geometry::euclidean::threed::Vector3D getThrustVector(const ::org::orekit::propagation::SpacecraftState &) const;

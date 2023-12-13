@@ -8,16 +8,16 @@ namespace org {
     namespace ode {
       class FieldODEStateAndDerivative;
       namespace events {
-        class FieldAdaptableInterval;
         class FieldODEEventHandler;
+        class FieldAdaptableInterval;
       }
     }
+    class CalculusFieldElement;
     namespace analysis {
       namespace solvers {
         class BracketedRealFieldUnivariateSolver;
       }
     }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -35,12 +35,12 @@ namespace org {
         class FieldODEEventDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_g_8677e670f9e68e2e,
-            mid_getHandler_b77ca012966a5dd0,
-            mid_getMaxCheckInterval_e651d05ccb464edb,
-            mid_getMaxIterationCount_412668abc8d889e9,
-            mid_getSolver_f12d4ed2528168bc,
-            mid_init_f808a4f21f8be825,
+            mid_g_751903dc38e0b7e8,
+            mid_getHandler_daa4dcd20dd895b8,
+            mid_getMaxCheckInterval_9e96a56f8b6efe47,
+            mid_getMaxIterationCount_55546ef6a647f39b,
+            mid_getSolver_95522f52875c5391,
+            mid_init_55fdeef582303a99,
             max_mid
           };
 

@@ -4,6 +4,9 @@
 #include "org/orekit/ssa/collision/shorttermencounter/probability/twod/AbstractAlfriend1999.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace ssa {
       namespace collision {
@@ -16,9 +19,6 @@ namespace org {
         }
       }
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -39,11 +39,11 @@ namespace org {
               class Alfriend1999Max : public ::org::orekit::ssa::collision::shorttermencounter::probability::twod::AbstractAlfriend1999 {
                public:
                 enum {
-                  mid_init$_0640e6acf969ed28,
-                  mid_computeValue_8d02ba458f22e508,
-                  mid_computeValue_d181e731358aa045,
-                  mid_getType_4b8bf2bb84f7480e,
-                  mid_isAMaximumProbabilityOfCollisionMethod_89b302893bdbe1f1,
+                  mid_init$_a1fa5dae97ea5ed2,
+                  mid_computeValue_f804f816b79164cb,
+                  mid_computeValue_8a93710b1b1536a6,
+                  mid_getType_8397a286d982b383,
+                  mid_isAMaximumProbabilityOfCollisionMethod_9ab94ac1dc23b105,
                   max_mid
                 };
 

@@ -25,8 +25,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Rotation;
           class FieldRotation;
+          class Rotation;
         }
       }
     }
@@ -46,10 +46,10 @@ namespace org {
       class AttitudeProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getAttitude_77e3383de01f3e48,
-          mid_getAttitude_1306ac39e1d2de3f,
-          mid_getAttitudeRotation_5c74bfcf2d42825a,
-          mid_getAttitudeRotation_85bb0a19efdadc1d,
+          mid_getAttitude_896ee4d68989b1e8,
+          mid_getAttitude_21845cfb0034fe1c,
+          mid_getAttitudeRotation_6acae55a2f5d3ab4,
+          mid_getAttitudeRotation_1bc07ea175743b30,
           max_mid
         };
 

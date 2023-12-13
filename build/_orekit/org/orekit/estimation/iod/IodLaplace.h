@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class PVCoordinates;
-    }
     namespace estimation {
       namespace measurements {
-        class AngularAzEl;
         class AngularRaDec;
+        class AngularAzEl;
       }
+    }
+    namespace orbits {
+      class Orbit;
     }
     namespace frames {
       class Frame;
@@ -20,8 +20,8 @@ namespace org {
     namespace time {
       class AbsoluteDate;
     }
-    namespace orbits {
-      class Orbit;
+    namespace utils {
+      class PVCoordinates;
     }
   }
   namespace hipparchus {
@@ -49,10 +49,10 @@ namespace org {
         class IodLaplace : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_10f281d777284cea,
-            mid_estimate_3e39f730636f7cb8,
-            mid_estimate_826da74c81b95475,
-            mid_estimate_0f30588d6f69b08f,
+            mid_init$_8ba9fe7a847cecad,
+            mid_estimate_14e3a21de9c1f0bf,
+            mid_estimate_2c2b31d5e422b743,
+            mid_estimate_9b736fa65cce9916,
             max_mid
           };
 

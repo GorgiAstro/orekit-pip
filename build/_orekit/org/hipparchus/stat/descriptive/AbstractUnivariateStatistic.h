@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
@@ -20,6 +15,11 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -30,13 +30,13 @@ namespace org {
         class AbstractUnivariateStatistic : public ::java::lang::Object {
          public:
           enum {
-            mid_copy_98b5288d1f202841,
-            mid_evaluate_557b8123390d8d0c,
-            mid_evaluate_9eeeb1ae977f525d,
-            mid_getData_a53a7513ecedada2,
-            mid_setData_cc18240f4a737f14,
-            mid_setData_91b51b3c05127ead,
-            mid_getDataRef_a53a7513ecedada2,
+            mid_copy_04f2e677f90ab735,
+            mid_evaluate_b74f83833fdad017,
+            mid_evaluate_1567a80062adb31b,
+            mid_getData_25e1757a36c4dde2,
+            mid_setData_ab69da052b88f50c,
+            mid_setData_4484ad1f15b73c7a,
+            mid_getDataRef_25e1757a36c4dde2,
             max_mid
           };
 

@@ -33,7 +33,7 @@ namespace org {
             class ProcessingState : public ::java::lang::Object {
              public:
               enum {
-                mid_processToken_7f6d4ab73f1deb26,
+                mid_processToken_5949d4df22f33350,
                 max_mid
               };
 

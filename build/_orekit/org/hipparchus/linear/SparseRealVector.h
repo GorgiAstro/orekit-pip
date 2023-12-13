@@ -17,7 +17,7 @@ namespace org {
       class SparseRealVector : public ::org::hipparchus::linear::RealVector {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
+          mid_init$_a1fa5dae97ea5ed2,
           max_mid
         };
 

@@ -3,24 +3,24 @@
 
 #include "org/orekit/files/rinex/section/RinexBaseHeader.h"
 
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace rinex {
+        namespace navigation {
+          class IonosphericCorrectionType;
+          class TimeSystemCorrection;
+        }
+      }
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace rinex {
-        namespace navigation {
-          class TimeSystemCorrection;
-          class IonosphericCorrectionType;
-        }
-      }
-    }
   }
 }
 template<class T> class JArray;
@@ -34,15 +34,15 @@ namespace org {
           class RinexNavigationHeader : public ::org::orekit::files::rinex::section::RinexBaseHeader {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_addTimeSystemCorrections_c58230bb9bf03e26,
-              mid_getIonosphericCorrectionType_274c47bda8a7356f,
-              mid_getMergedFiles_412668abc8d889e9,
-              mid_getNumberOfLeapSeconds_412668abc8d889e9,
-              mid_getTimeSystemCorrections_0d9551367f7ecdef,
-              mid_setIonosphericCorrectionType_2b2777839ed697bc,
-              mid_setMergedFiles_a3da1a935cb37f7b,
-              mid_setNumberOfLeapSeconds_a3da1a935cb37f7b,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_addTimeSystemCorrections_29ed96c27f0f2439,
+              mid_getIonosphericCorrectionType_1b135730fc8e8e35,
+              mid_getMergedFiles_55546ef6a647f39b,
+              mid_getNumberOfLeapSeconds_55546ef6a647f39b,
+              mid_getTimeSystemCorrections_e62d3bb06d56d7e3,
+              mid_setIonosphericCorrectionType_6012e3da3fe0033b,
+              mid_setMergedFiles_44ed599e93e8a30c,
+              mid_setNumberOfLeapSeconds_44ed599e93e8a30c,
               max_mid
             };
 

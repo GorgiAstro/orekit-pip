@@ -29,10 +29,10 @@ namespace org {
           class BaseRangeIonosphericDelayModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_getIonoModel_d442018e79d7cb97,
-              mid_rangeErrorIonosphericModel_81f653af97ea34a8,
-              mid_rangeErrorIonosphericModel_17bae2e3aa9bc870,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_rangeErrorIonosphericModel_9a2cbda6eb51ddd8,
+              mid_rangeErrorIonosphericModel_b8971448fff75978,
+              mid_getIonoModel_dc0fc518b17a44cd,
               max_mid
             };
 

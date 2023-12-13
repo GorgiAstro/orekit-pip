@@ -3,16 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace lang {
-    class Appendable;
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -32,10 +22,20 @@ namespace org {
         }
       }
       namespace general {
-        class EphemerisFile;
         class EphemerisFileWriter;
+        class EphemerisFile;
       }
     }
+  }
+}
+namespace java {
+  namespace io {
+    class IOException;
+  }
+  namespace lang {
+    class Appendable;
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -51,8 +51,8 @@ namespace org {
               class EphemerisOcmWriter : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_0561a19387a0a30f,
-                  mid_write_0fa910eb9c2e844e,
+                  mid_init$_327daf74e29d7521,
+                  mid_write_b257e3ad1002b2a9,
                   max_mid
                 };
 

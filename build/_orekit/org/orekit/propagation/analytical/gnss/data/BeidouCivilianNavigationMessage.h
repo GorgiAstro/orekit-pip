@@ -5,6 +5,9 @@
 
 namespace org {
   namespace orekit {
+    namespace gnss {
+      class Frequency;
+    }
     namespace propagation {
       namespace analytical {
         namespace gnss {
@@ -13,9 +16,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace gnss {
-      class Frequency;
     }
   }
 }
@@ -37,44 +37,44 @@ namespace org {
             class BeidouCivilianNavigationMessage : public ::org::orekit::propagation::analytical::gnss::data::AbstractNavigationMessage {
              public:
               enum {
-                mid_init$_515034c1b6155c70,
-                mid_getADot_557b8123390d8d0c,
-                mid_getDeltaN0Dot_557b8123390d8d0c,
-                mid_getHealth_412668abc8d889e9,
-                mid_getIODC_412668abc8d889e9,
-                mid_getIODE_412668abc8d889e9,
-                mid_getIntegrityFlags_412668abc8d889e9,
-                mid_getIscB1CD_557b8123390d8d0c,
-                mid_getIscB1CP_557b8123390d8d0c,
-                mid_getIscB2AD_557b8123390d8d0c,
-                mid_getSatelliteType_484c37600ee33628,
-                mid_getSignal_2cc7b050a39077eb,
-                mid_getSisaiOc1_412668abc8d889e9,
-                mid_getSisaiOc2_412668abc8d889e9,
-                mid_getSisaiOcb_412668abc8d889e9,
-                mid_getSisaiOe_412668abc8d889e9,
-                mid_getSismai_412668abc8d889e9,
-                mid_getTgdB1Cp_557b8123390d8d0c,
-                mid_getTgdB2ap_557b8123390d8d0c,
-                mid_getTgdB2bI_557b8123390d8d0c,
-                mid_setADot_10f281d777284cea,
-                mid_setDeltaN0Dot_10f281d777284cea,
-                mid_setHealth_a3da1a935cb37f7b,
-                mid_setIODC_a3da1a935cb37f7b,
-                mid_setIODE_a3da1a935cb37f7b,
-                mid_setIntegrityFlags_a3da1a935cb37f7b,
-                mid_setIscB1CD_10f281d777284cea,
-                mid_setIscB1CP_10f281d777284cea,
-                mid_setIscB2AD_10f281d777284cea,
-                mid_setSatelliteType_210804240f1f93d6,
-                mid_setSisaiOc1_a3da1a935cb37f7b,
-                mid_setSisaiOc2_a3da1a935cb37f7b,
-                mid_setSisaiOcb_a3da1a935cb37f7b,
-                mid_setSisaiOe_a3da1a935cb37f7b,
-                mid_setSismai_a3da1a935cb37f7b,
-                mid_setTgdB1Cp_10f281d777284cea,
-                mid_setTgdB2ap_10f281d777284cea,
-                mid_setTgdB2bI_10f281d777284cea,
+                mid_init$_aacf6092a9eb11f7,
+                mid_getADot_b74f83833fdad017,
+                mid_getDeltaN0Dot_b74f83833fdad017,
+                mid_getHealth_55546ef6a647f39b,
+                mid_getIODC_55546ef6a647f39b,
+                mid_getIODE_55546ef6a647f39b,
+                mid_getIntegrityFlags_55546ef6a647f39b,
+                mid_getIscB1CD_b74f83833fdad017,
+                mid_getIscB1CP_b74f83833fdad017,
+                mid_getIscB2AD_b74f83833fdad017,
+                mid_getSatelliteType_24565fd6cf1b58ad,
+                mid_getSignal_35d188bf58b06cba,
+                mid_getSisaiOc1_55546ef6a647f39b,
+                mid_getSisaiOc2_55546ef6a647f39b,
+                mid_getSisaiOcb_55546ef6a647f39b,
+                mid_getSisaiOe_55546ef6a647f39b,
+                mid_getSismai_55546ef6a647f39b,
+                mid_getTgdB1Cp_b74f83833fdad017,
+                mid_getTgdB2ap_b74f83833fdad017,
+                mid_getTgdB2bI_b74f83833fdad017,
+                mid_setADot_8ba9fe7a847cecad,
+                mid_setDeltaN0Dot_8ba9fe7a847cecad,
+                mid_setHealth_44ed599e93e8a30c,
+                mid_setIODC_44ed599e93e8a30c,
+                mid_setIODE_44ed599e93e8a30c,
+                mid_setIntegrityFlags_44ed599e93e8a30c,
+                mid_setIscB1CD_8ba9fe7a847cecad,
+                mid_setIscB1CP_8ba9fe7a847cecad,
+                mid_setIscB2AD_8ba9fe7a847cecad,
+                mid_setSatelliteType_a4d0cb8da0a03811,
+                mid_setSisaiOc1_44ed599e93e8a30c,
+                mid_setSisaiOc2_44ed599e93e8a30c,
+                mid_setSisaiOcb_44ed599e93e8a30c,
+                mid_setSisaiOe_44ed599e93e8a30c,
+                mid_setSismai_44ed599e93e8a30c,
+                mid_setTgdB1Cp_8ba9fe7a847cecad,
+                mid_setTgdB2ap_8ba9fe7a847cecad,
+                mid_setTgdB2bI_8ba9fe7a847cecad,
                 max_mid
               };
 

@@ -27,7 +27,7 @@ namespace org {
       class UTCTAIOffsetsLoader : public ::java::lang::Object {
        public:
         enum {
-          mid_loadOffsets_0d9551367f7ecdef,
+          mid_loadOffsets_e62d3bb06d56d7e3,
           max_mid
         };
 

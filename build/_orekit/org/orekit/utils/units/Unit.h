@@ -40,31 +40,31 @@ namespace org {
         class Unit : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_b16b3ca24ef84a46,
-            mid_alias_6064fb71696445b4,
-            mid_divide_b7cb09052488414f,
-            mid_ensureCompatible_b97989e6df290f92,
-            mid_equals_221e8e85cb385209,
-            mid_fromSI_7bf26ec4ddf8c9fa,
-            mid_fromSI_7e960cd6eee376d8,
-            mid_getAngle_78ed58163a805805,
-            mid_getCurrent_78ed58163a805805,
-            mid_getLength_78ed58163a805805,
-            mid_getMass_78ed58163a805805,
-            mid_getName_3cffd47377eca18a,
-            mid_getScale_557b8123390d8d0c,
-            mid_getTime_78ed58163a805805,
-            mid_hashCode_412668abc8d889e9,
-            mid_multiply_b7cb09052488414f,
-            mid_parse_6064fb71696445b4,
-            mid_power_83fc4153c8f1d423,
-            mid_sameDimension_3afc691233085be6,
-            mid_sameDimensionSI_3267fc1a8500bfc2,
-            mid_scale_29d901a5b3134e99,
-            mid_sqrt_6064fb71696445b4,
-            mid_toSI_7bf26ec4ddf8c9fa,
-            mid_toSI_7e960cd6eee376d8,
-            mid_toString_3cffd47377eca18a,
+            mid_init$_3f21e2df8fcb2b32,
+            mid_alias_d901bfc45b4f4fe6,
+            mid_divide_a71cf563e58a7ac6,
+            mid_ensureCompatible_183e875889e6ba2f,
+            mid_equals_460c5e2d9d51c6cc,
+            mid_fromSI_53da1ceb0da32c64,
+            mid_fromSI_04fd0666b613d2ab,
+            mid_getAngle_7ab72bcbb3909669,
+            mid_getCurrent_7ab72bcbb3909669,
+            mid_getLength_7ab72bcbb3909669,
+            mid_getMass_7ab72bcbb3909669,
+            mid_getName_1c1fa1e935d6cdcf,
+            mid_getScale_b74f83833fdad017,
+            mid_getTime_7ab72bcbb3909669,
+            mid_hashCode_55546ef6a647f39b,
+            mid_multiply_a71cf563e58a7ac6,
+            mid_parse_d901bfc45b4f4fe6,
+            mid_power_024c7df38ac4c192,
+            mid_sameDimension_c4dae8f6c826c849,
+            mid_sameDimensionSI_6466188dbb1eea22,
+            mid_scale_ccd54d8c74d5128b,
+            mid_sqrt_d901bfc45b4f4fe6,
+            mid_toSI_53da1ceb0da32c64,
+            mid_toSI_04fd0666b613d2ab,
+            mid_toString_1c1fa1e935d6cdcf,
             max_mid
           };
 
@@ -99,8 +99,8 @@ namespace org {
           static Unit *NONE;
           static Unit *OHM;
           static Unit *ONE;
-          static Unit *PASCAL;
-          static Unit *PERCENT;
+          static Unit *PASCAL$;
+          static Unit *PERCENT$;
           static Unit *RADIAN;
           static Unit *REVOLUTION;
           static Unit *SECOND;

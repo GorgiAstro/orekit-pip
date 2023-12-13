@@ -12,8 +12,8 @@ namespace org {
       class MathRuntimeException;
     }
     namespace linear {
-      class FieldVector;
       class RealMatrix;
+      class FieldVector;
     }
   }
 }
@@ -31,16 +31,16 @@ namespace org {
       class EigenDecompositionNonSymmetric : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_f3731847577f13e6,
-          mid_init$_08eaf415db10314f,
-          mid_getD_70a207fcbc031df2,
-          mid_getDeterminant_921a2f30ecc499e5,
-          mid_getEigenvalue_49c3af23f72848c1,
-          mid_getEigenvalues_cdf70bdb2a575f18,
-          mid_getEigenvector_6f1c886add96d5a0,
-          mid_getEpsilon_557b8123390d8d0c,
-          mid_getV_70a207fcbc031df2,
-          mid_getVInv_70a207fcbc031df2,
+          mid_init$_84bd15e0995d0c79,
+          mid_init$_5c88fbe0835e7c85,
+          mid_getD_f77d745f2128c391,
+          mid_getDeterminant_2f0868cbf8c045d4,
+          mid_getEigenvalue_98a65fafe34db74b,
+          mid_getEigenvalues_24cc06122e1087cf,
+          mid_getEigenvector_06abfeddf4c4a28c,
+          mid_getEpsilon_b74f83833fdad017,
+          mid_getV_f77d745f2128c391,
+          mid_getVInv_f77d745f2128c391,
           max_mid
         };
 

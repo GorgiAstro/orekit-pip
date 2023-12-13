@@ -5,16 +5,16 @@
 
 namespace java {
   namespace text {
+    class FieldPosition;
     class ParsePosition;
     class NumberFormat;
-    class FieldPosition;
   }
   namespace util {
     class Locale;
   }
   namespace lang {
-    class Class;
     class StringBuffer;
+    class Class;
     class String;
   }
 }
@@ -36,21 +36,21 @@ namespace org {
       class RealVectorFormat : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_init$_d53859bd7ba1b247,
-          mid_init$_f5c244a0f15376be,
-          mid_init$_5f051ed7add2b099,
-          mid_format_c0171abb3ba0b023,
-          mid_format_a6e853369bf753b4,
-          mid_getAvailableLocales_85ff0d07ca843902,
-          mid_getFormat_001645e916bd626d,
-          mid_getPrefix_3cffd47377eca18a,
-          mid_getRealVectorFormat_f6c83731ab02792b,
-          mid_getRealVectorFormat_dd3046636f0c2838,
-          mid_getSeparator_3cffd47377eca18a,
-          mid_getSuffix_3cffd47377eca18a,
-          mid_parse_f3a541aea0c3b97f,
-          mid_parse_26152c0fd0d0312a,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_init$_b7f3d50b51ef7518,
+          mid_init$_ee9345b4af8c40df,
+          mid_init$_d047b7641facca84,
+          mid_format_f977a35aa156a8cf,
+          mid_format_abe2e36bc146cee2,
+          mid_getAvailableLocales_8d2cd0b971cc7b85,
+          mid_getFormat_87ffffc449cd25a5,
+          mid_getPrefix_1c1fa1e935d6cdcf,
+          mid_getRealVectorFormat_66f031d367cbb5ab,
+          mid_getRealVectorFormat_b8faa7141586f40a,
+          mid_getSeparator_1c1fa1e935d6cdcf,
+          mid_getSuffix_1c1fa1e935d6cdcf,
+          mid_parse_73de0b2a5c7b5aad,
+          mid_parse_b466216443db2b86,
           max_mid
         };
 

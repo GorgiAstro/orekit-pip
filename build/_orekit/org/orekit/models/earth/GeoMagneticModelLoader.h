@@ -5,14 +5,14 @@
 
 namespace java {
   namespace io {
-    class IOException;
     class InputStream;
-  }
-  namespace text {
-    class ParseException;
+    class IOException;
   }
   namespace util {
     class Collection;
+  }
+  namespace text {
+    class ParseException;
   }
   namespace lang {
     class Class;
@@ -21,13 +21,13 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataLoader;
+    }
     namespace models {
       namespace earth {
         class GeoMagneticField;
       }
-    }
-    namespace data {
-      class DataLoader;
     }
   }
 }
@@ -41,10 +41,10 @@ namespace org {
         class GeoMagneticModelLoader : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_getModels_12ee61573a18f417,
-            mid_loadData_15770e8d8949a557,
-            mid_stillAcceptsData_89b302893bdbe1f1,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_getModels_cb666ea1a15f5210,
+            mid_loadData_360461e719fb564c,
+            mid_stillAcceptsData_9ab94ac1dc23b105,
             max_mid
           };
 

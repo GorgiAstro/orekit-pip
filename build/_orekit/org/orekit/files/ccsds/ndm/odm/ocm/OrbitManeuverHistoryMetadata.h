@@ -3,44 +3,7 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ccsds {
-        namespace definitions {
-          class BodyFacade;
-          class DutyCycleType;
-          class SpacecraftBodyFrame;
-          class FrameFacade;
-        }
-        namespace ndm {
-          namespace odm {
-            namespace ocm {
-              class ManBasis;
-              class ManeuverFieldType;
-            }
-          }
-        }
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace utils {
-      namespace units {
-        class Unit;
-      }
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -49,6 +12,43 @@ namespace org {
         }
       }
     }
+  }
+  namespace orekit {
+    namespace files {
+      namespace ccsds {
+        namespace ndm {
+          namespace odm {
+            namespace ocm {
+              class ManeuverFieldType;
+              class ManBasis;
+            }
+          }
+        }
+        namespace definitions {
+          class DutyCycleType;
+          class FrameFacade;
+          class BodyFacade;
+          class SpacecraftBodyFrame;
+        }
+      }
+    }
+    namespace utils {
+      namespace units {
+        class Unit;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -64,68 +64,68 @@ namespace org {
               class OrbitManeuverHistoryMetadata : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_20affcbd28542333,
-                  mid_getDcBodyFrame_f86371e743965d5e,
-                  mid_getDcBodyTrigger_f88961cca75a2c0a,
-                  mid_getDcExecStart_7a97f7e149e79afb,
-                  mid_getDcExecStop_7a97f7e149e79afb,
-                  mid_getDcMaxCycles_412668abc8d889e9,
-                  mid_getDcMinCycles_412668abc8d889e9,
-                  mid_getDcPhaseStartAngle_557b8123390d8d0c,
-                  mid_getDcPhaseStopAngle_557b8123390d8d0c,
-                  mid_getDcRefDir_f88961cca75a2c0a,
-                  mid_getDcRefTime_7a97f7e149e79afb,
-                  mid_getDcTimePulseDuration_557b8123390d8d0c,
-                  mid_getDcTimePulsePeriod_557b8123390d8d0c,
-                  mid_getDcType_f6ee7f5f33e09f00,
-                  mid_getDcWindowClose_7a97f7e149e79afb,
-                  mid_getDcWindowOpen_7a97f7e149e79afb,
-                  mid_getGravitationalAssist_c642bce266d6d89a,
-                  mid_getManBasis_1929aa09b0efe5e6,
-                  mid_getManBasisID_3cffd47377eca18a,
-                  mid_getManComposition_0d9551367f7ecdef,
-                  mid_getManDeviceID_3cffd47377eca18a,
-                  mid_getManFrameEpoch_7a97f7e149e79afb,
-                  mid_getManID_3cffd47377eca18a,
-                  mid_getManNextEpoch_7a97f7e149e79afb,
-                  mid_getManNextID_3cffd47377eca18a,
-                  mid_getManPredSource_3cffd47377eca18a,
-                  mid_getManPrevEpoch_7a97f7e149e79afb,
-                  mid_getManPrevID_3cffd47377eca18a,
-                  mid_getManPurpose_0d9551367f7ecdef,
-                  mid_getManReferenceFrame_98f5fcaff3e3f9d2,
-                  mid_getManUnits_0d9551367f7ecdef,
-                  mid_setDcBodyFrame_cd9779da9f153284,
-                  mid_setDcBodyTrigger_2810d2bec90e7b1c,
-                  mid_setDcExecStart_20affcbd28542333,
-                  mid_setDcExecStop_20affcbd28542333,
-                  mid_setDcMaxCycles_a3da1a935cb37f7b,
-                  mid_setDcMinCycles_a3da1a935cb37f7b,
-                  mid_setDcPhaseStartAngle_10f281d777284cea,
-                  mid_setDcPhaseStopAngle_10f281d777284cea,
-                  mid_setDcRefDir_2810d2bec90e7b1c,
-                  mid_setDcRefTime_20affcbd28542333,
-                  mid_setDcTimePulseDuration_10f281d777284cea,
-                  mid_setDcTimePulsePeriod_10f281d777284cea,
-                  mid_setDcType_4d69b82588c717d8,
-                  mid_setDcWindowClose_20affcbd28542333,
-                  mid_setDcWindowOpen_20affcbd28542333,
-                  mid_setGravitationalAssist_e6f755c267d91c26,
-                  mid_setManBasis_5c26ac53f1ec8457,
-                  mid_setManBasisID_f5ffdf29129ef90a,
-                  mid_setManComposition_4ccaedadb068bdeb,
-                  mid_setManDeviceID_f5ffdf29129ef90a,
-                  mid_setManFrameEpoch_20affcbd28542333,
-                  mid_setManID_f5ffdf29129ef90a,
-                  mid_setManNextEpoch_20affcbd28542333,
-                  mid_setManNextID_f5ffdf29129ef90a,
-                  mid_setManPredSource_f5ffdf29129ef90a,
-                  mid_setManPrevEpoch_20affcbd28542333,
-                  mid_setManPrevID_f5ffdf29129ef90a,
-                  mid_setManPurpose_4ccaedadb068bdeb,
-                  mid_setManReferenceFrame_f55eee1236275bb1,
-                  mid_setManUnits_4ccaedadb068bdeb,
-                  mid_validate_10f281d777284cea,
+                  mid_init$_02135a6ef25adb4b,
+                  mid_getDcBodyFrame_24772727764a5aad,
+                  mid_getDcBodyTrigger_8b724f8b4fdad1a2,
+                  mid_getDcExecStart_c325492395d89b24,
+                  mid_getDcExecStop_c325492395d89b24,
+                  mid_getDcMaxCycles_55546ef6a647f39b,
+                  mid_getDcMinCycles_55546ef6a647f39b,
+                  mid_getDcPhaseStartAngle_b74f83833fdad017,
+                  mid_getDcPhaseStopAngle_b74f83833fdad017,
+                  mid_getDcRefDir_8b724f8b4fdad1a2,
+                  mid_getDcRefTime_c325492395d89b24,
+                  mid_getDcTimePulseDuration_b74f83833fdad017,
+                  mid_getDcTimePulsePeriod_b74f83833fdad017,
+                  mid_getDcType_e5e4c5e790c9f5ca,
+                  mid_getDcWindowClose_c325492395d89b24,
+                  mid_getDcWindowOpen_c325492395d89b24,
+                  mid_getGravitationalAssist_52253a5b5c02abfe,
+                  mid_getManBasis_a516a2e871bea30b,
+                  mid_getManBasisID_1c1fa1e935d6cdcf,
+                  mid_getManComposition_e62d3bb06d56d7e3,
+                  mid_getManDeviceID_1c1fa1e935d6cdcf,
+                  mid_getManFrameEpoch_c325492395d89b24,
+                  mid_getManID_1c1fa1e935d6cdcf,
+                  mid_getManNextEpoch_c325492395d89b24,
+                  mid_getManNextID_1c1fa1e935d6cdcf,
+                  mid_getManPredSource_1c1fa1e935d6cdcf,
+                  mid_getManPrevEpoch_c325492395d89b24,
+                  mid_getManPrevID_1c1fa1e935d6cdcf,
+                  mid_getManPurpose_e62d3bb06d56d7e3,
+                  mid_getManReferenceFrame_69d8be1b6b0a1a94,
+                  mid_getManUnits_e62d3bb06d56d7e3,
+                  mid_setDcBodyFrame_800c6f740bef7b6b,
+                  mid_setDcBodyTrigger_1844f891addbac57,
+                  mid_setDcExecStart_02135a6ef25adb4b,
+                  mid_setDcExecStop_02135a6ef25adb4b,
+                  mid_setDcMaxCycles_44ed599e93e8a30c,
+                  mid_setDcMinCycles_44ed599e93e8a30c,
+                  mid_setDcPhaseStartAngle_8ba9fe7a847cecad,
+                  mid_setDcPhaseStopAngle_8ba9fe7a847cecad,
+                  mid_setDcRefDir_1844f891addbac57,
+                  mid_setDcRefTime_02135a6ef25adb4b,
+                  mid_setDcTimePulseDuration_8ba9fe7a847cecad,
+                  mid_setDcTimePulsePeriod_8ba9fe7a847cecad,
+                  mid_setDcType_0249fbee5d8c189b,
+                  mid_setDcWindowClose_02135a6ef25adb4b,
+                  mid_setDcWindowOpen_02135a6ef25adb4b,
+                  mid_setGravitationalAssist_564458ee450fa323,
+                  mid_setManBasis_44d71a583450b179,
+                  mid_setManBasisID_734b91ac30d5f9b4,
+                  mid_setManComposition_0e7c3032c7c93ed3,
+                  mid_setManDeviceID_734b91ac30d5f9b4,
+                  mid_setManFrameEpoch_02135a6ef25adb4b,
+                  mid_setManID_734b91ac30d5f9b4,
+                  mid_setManNextEpoch_02135a6ef25adb4b,
+                  mid_setManNextID_734b91ac30d5f9b4,
+                  mid_setManPredSource_734b91ac30d5f9b4,
+                  mid_setManPrevEpoch_02135a6ef25adb4b,
+                  mid_setManPrevID_734b91ac30d5f9b4,
+                  mid_setManPurpose_0e7c3032c7c93ed3,
+                  mid_setManReferenceFrame_4755133c5c4c59be,
+                  mid_setManUnits_0e7c3032c7c93ed3,
+                  mid_validate_8ba9fe7a847cecad,
                   max_mid
                 };
 

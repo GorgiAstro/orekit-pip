@@ -3,12 +3,6 @@
 
 #include "org/orekit/estimation/measurements/gnss/AbstractSingleFrequencyCombination.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -23,6 +17,12 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Class;
+    class Throwable;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -34,12 +34,12 @@ namespace org {
           class PythonAbstractSingleFrequencyCombination : public ::org::orekit::estimation::measurements::gnss::AbstractSingleFrequencyCombination {
            public:
             enum {
-              mid_init$_e2286686e76d4599,
-              mid_finalize_0640e6acf969ed28,
-              mid_getCombinedValue_2268d18be49a6087,
-              mid_pythonDecRef_0640e6acf969ed28,
-              mid_pythonExtension_9e26256fb0d384a2,
-              mid_pythonExtension_3cd6a6b354c6aa22,
+              mid_init$_1af956d1b87222ce,
+              mid_finalize_a1fa5dae97ea5ed2,
+              mid_getCombinedValue_99e3200dafc19573,
+              mid_pythonDecRef_a1fa5dae97ea5ed2,
+              mid_pythonExtension_6c0ce7e438e5ded4,
+              mid_pythonExtension_3d7dd2314a0dd456,
               max_mid
             };
 

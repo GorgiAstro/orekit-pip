@@ -5,6 +5,9 @@
 
 namespace org {
   namespace orekit {
+    namespace gnss {
+      class SatelliteSystem;
+    }
     namespace estimation {
       namespace measurements {
         namespace gnss {
@@ -12,9 +15,6 @@ namespace org {
           class WindUp;
         }
       }
-    }
-    namespace gnss {
-      class SatelliteSystem;
     }
   }
 }
@@ -35,8 +35,8 @@ namespace org {
           class WindUpFactory : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_getWindUp_59cd264d3e277df8,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_getWindUp_614a666a11e0ff22,
               max_mid
             };
 

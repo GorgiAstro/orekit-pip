@@ -17,7 +17,7 @@ namespace org {
       class NormalizedRandomGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_nextNormalizedDouble_557b8123390d8d0c,
+          mid_nextNormalizedDouble_b74f83833fdad017,
           max_mid
         };
 

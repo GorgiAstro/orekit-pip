@@ -3,14 +3,14 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -22,9 +22,9 @@ namespace org {
       class OccultationEngine$FieldOccultationAngles : public ::java::lang::Object {
        public:
         enum {
-          mid_getLimbRadius_613c8f46c659f636,
-          mid_getOccultedApparentRadius_613c8f46c659f636,
-          mid_getSeparation_613c8f46c659f636,
+          mid_getLimbRadius_81520b552cb3fa26,
+          mid_getOccultedApparentRadius_81520b552cb3fa26,
+          mid_getSeparation_81520b552cb3fa26,
           max_mid
         };
 

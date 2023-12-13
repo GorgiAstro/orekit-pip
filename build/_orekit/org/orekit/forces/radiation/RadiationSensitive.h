@@ -8,20 +8,20 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
     class CalculusFieldElement;
   }
   namespace orekit {
+    namespace utils {
+      class ParameterDriver;
+    }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
     }
   }
 }
@@ -44,9 +44,9 @@ namespace org {
         class RadiationSensitive : public ::java::lang::Object {
          public:
           enum {
-            mid_getRadiationParametersDrivers_0d9551367f7ecdef,
-            mid_radiationPressureAcceleration_a910b2c2e7db1f82,
-            mid_radiationPressureAcceleration_122b60d0431fddf5,
+            mid_getRadiationParametersDrivers_e62d3bb06d56d7e3,
+            mid_radiationPressureAcceleration_a230d7bdb943f733,
+            mid_radiationPressureAcceleration_a99eceb06c3864f8,
             max_mid
           };
 

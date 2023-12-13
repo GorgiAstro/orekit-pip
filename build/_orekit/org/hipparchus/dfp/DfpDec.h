@@ -18,18 +18,18 @@ namespace org {
       class DfpDec : public ::org::hipparchus::dfp::Dfp {
        public:
         enum {
-          mid_init$_9e05f0ac249e16a6,
-          mid_newInstance_dce9a968b1de6538,
-          mid_newInstance_4cf97baa750c9172,
-          mid_newInstance_f081bcbf4bd8f1ad,
-          mid_newInstance_e45f329aeeedfd27,
-          mid_newInstance_48c0a79cfaaf4ea7,
-          mid_newInstance_8418d0fac935c091,
-          mid_newInstance_521fd622f2a09126,
-          mid_newInstance_7b144e66c7452202,
-          mid_nextAfter_f081bcbf4bd8f1ad,
-          mid_getDecimalDigits_412668abc8d889e9,
-          mid_round_0092017e99012694,
+          mid_init$_d77491573342a7ca,
+          mid_newInstance_2b93193437c3f00d,
+          mid_newInstance_844df78cba5c1168,
+          mid_newInstance_a714269abf022321,
+          mid_newInstance_3dbae42c27edb89e,
+          mid_newInstance_757f32f1791cffc4,
+          mid_newInstance_026cdd2d1c22b25b,
+          mid_newInstance_a276979b31da24ca,
+          mid_newInstance_65a23ba49b68f64d,
+          mid_nextAfter_a714269abf022321,
+          mid_getDecimalDigits_55546ef6a647f39b,
+          mid_round_0e7cf35192c3effe,
           max_mid
         };
 

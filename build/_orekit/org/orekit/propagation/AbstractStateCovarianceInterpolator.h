@@ -5,22 +5,22 @@
 
 namespace org {
   namespace orekit {
-    namespace orbits {
-      class Orbit;
-      class OrbitType;
-      class PositionAngleType;
-    }
-    namespace time {
-      class TimeInterpolator;
-      class AbstractTimeInterpolator$InterpolationData;
-      class TimeStampedPair;
-    }
-    namespace frames {
-      class Frame;
-      class LOFType;
-    }
     namespace propagation {
       class StateCovariance;
+    }
+    namespace frames {
+      class LOFType;
+      class Frame;
+    }
+    namespace orbits {
+      class Orbit;
+      class PositionAngleType;
+      class OrbitType;
+    }
+    namespace time {
+      class TimeStampedPair;
+      class AbstractTimeInterpolator$InterpolationData;
+      class TimeInterpolator;
     }
   }
 }
@@ -38,17 +38,17 @@ namespace org {
       class AbstractStateCovarianceInterpolator : public ::org::orekit::time::AbstractTimeInterpolator {
        public:
         enum {
-          mid_init$_49155443553009e5,
-          mid_init$_3d20fdce58d11197,
-          mid_getOrbitInterpolator_1bb20e7ea407bfce,
-          mid_getOutFrame_6c9bc0a928c56d4e,
-          mid_getOutLOF_fc5c5809abf07d72,
-          mid_getOutOrbitType_2cea2a2cb3e02091,
-          mid_getOutPositionAngleType_f4984aee71df4c19,
-          mid_interpolate_78e9037c485fbff2,
-          mid_computeInterpolatedCovarianceInOrbitFrame_1da586432f5e847a,
-          mid_interpolateOrbit_f6ee768c3d6032b8,
-          mid_expressCovarianceInDesiredOutput_808f2b09b980aa21,
+          mid_init$_772c854c91c60aaa,
+          mid_init$_50c4488e189fba59,
+          mid_getOrbitInterpolator_04638ce011c1f261,
+          mid_getOutFrame_2c51111cc6894ba1,
+          mid_getOutLOF_f183bcc89f4a1412,
+          mid_getOutOrbitType_c7d4737d7afca612,
+          mid_getOutPositionAngleType_c25055891f180348,
+          mid_interpolate_74ea3235d4212fcd,
+          mid_computeInterpolatedCovarianceInOrbitFrame_6e94f93e19d6364d,
+          mid_interpolateOrbit_324b5a3a2e7a2f29,
+          mid_expressCovarianceInDesiredOutput_1344e03f312298d5,
           max_mid
         };
 

@@ -5,9 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace stat {
       namespace descriptive {
         class AggregatableStatistic;
@@ -18,6 +15,9 @@ namespace org {
           class GeometricMean;
         }
       }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -40,15 +40,15 @@ namespace org {
           class GeometricMean : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_init$_6a62c6cf36c34733,
-              mid_aggregate_b7317f18b8318562,
-              mid_clear_0640e6acf969ed28,
-              mid_copy_942e62182ea7f28a,
-              mid_evaluate_9eeeb1ae977f525d,
-              mid_getN_9e26256fb0d384a2,
-              mid_getResult_557b8123390d8d0c,
-              mid_increment_10f281d777284cea,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_init$_2f567ea6ff0bfe8c,
+              mid_aggregate_5166cc86b987c86c,
+              mid_clear_a1fa5dae97ea5ed2,
+              mid_copy_eb837c17e27d7de9,
+              mid_evaluate_1567a80062adb31b,
+              mid_getN_6c0ce7e438e5ded4,
+              mid_getResult_b74f83833fdad017,
+              mid_increment_8ba9fe7a847cecad,
               max_mid
             };
 

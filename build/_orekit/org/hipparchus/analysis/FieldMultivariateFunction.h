@@ -26,8 +26,8 @@ namespace org {
       class FieldMultivariateFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_toCalculusFieldMultivariateFunction_a3136e7716fb5ee4,
-          mid_value_e3919ad898361abd,
+          mid_toCalculusFieldMultivariateFunction_0d04248a9e90108a,
+          mid_value_ba5ea64a789ad864,
           max_mid
         };
 

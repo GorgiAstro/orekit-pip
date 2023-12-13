@@ -5,17 +5,17 @@
 
 namespace org {
   namespace hipparchus {
+    namespace linear {
+      class RealVector;
+      class RealMatrix;
+    }
     namespace filtering {
       namespace kalman {
-        class Measurement;
         namespace unscented {
           class UnscentedEvolution;
         }
+        class Measurement;
       }
-    }
-    namespace linear {
-      class RealMatrix;
-      class RealVector;
     }
   }
 }
@@ -35,9 +35,9 @@ namespace org {
           class UnscentedProcess : public ::java::lang::Object {
            public:
             enum {
-              mid_getEvolution_8e425e58bb2a83f0,
-              mid_getInnovation_6a4a5c74ef8d43ce,
-              mid_getPredictedMeasurements_931364fe1c4f8ccf,
+              mid_getEvolution_cf565fd974ca9890,
+              mid_getInnovation_aebb6a0d3a23268d,
+              mid_getPredictedMeasurements_7d8475bf1deceac6,
               max_mid
             };
 

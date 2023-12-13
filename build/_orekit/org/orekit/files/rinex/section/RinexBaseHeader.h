@@ -8,16 +8,16 @@ namespace org {
     namespace gnss {
       class SatelliteSystem;
     }
+    namespace time {
+      class DateTimeComponents;
+      class AbsoluteDate;
+    }
     namespace files {
       namespace rinex {
         namespace utils {
           class RinexFileType;
         }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
-      class DateTimeComponents;
     }
   }
 }
@@ -38,27 +38,27 @@ namespace org {
           class RinexBaseHeader : public ::java::lang::Object {
            public:
             enum {
-              mid_getCreationDate_7a97f7e149e79afb,
-              mid_getCreationDateComponents_36ab2bc94e6368bd,
-              mid_getCreationTimeZone_3cffd47377eca18a,
-              mid_getDoi_3cffd47377eca18a,
-              mid_getFileType_398c2b7f7227cc4c,
-              mid_getFormatVersion_557b8123390d8d0c,
-              mid_getLicense_3cffd47377eca18a,
-              mid_getProgramName_3cffd47377eca18a,
-              mid_getRunByName_3cffd47377eca18a,
-              mid_getSatelliteSystem_8b86408cc2633961,
-              mid_getStationInformation_3cffd47377eca18a,
-              mid_setCreationDate_20affcbd28542333,
-              mid_setCreationDateComponents_f86c144703aac3d6,
-              mid_setCreationTimeZone_f5ffdf29129ef90a,
-              mid_setDoi_f5ffdf29129ef90a,
-              mid_setFormatVersion_10f281d777284cea,
-              mid_setLicense_f5ffdf29129ef90a,
-              mid_setProgramName_f5ffdf29129ef90a,
-              mid_setRunByName_f5ffdf29129ef90a,
-              mid_setSatelliteSystem_b744026f46deda44,
-              mid_setStationInformation_f5ffdf29129ef90a,
+              mid_getCreationDate_c325492395d89b24,
+              mid_getCreationDateComponents_e6d4d2bcc05de999,
+              mid_getCreationTimeZone_1c1fa1e935d6cdcf,
+              mid_getDoi_1c1fa1e935d6cdcf,
+              mid_getFileType_0bcb8d05df71c050,
+              mid_getFormatVersion_b74f83833fdad017,
+              mid_getLicense_1c1fa1e935d6cdcf,
+              mid_getProgramName_1c1fa1e935d6cdcf,
+              mid_getRunByName_1c1fa1e935d6cdcf,
+              mid_getSatelliteSystem_21bd759cc4a81606,
+              mid_getStationInformation_1c1fa1e935d6cdcf,
+              mid_setCreationDate_02135a6ef25adb4b,
+              mid_setCreationDateComponents_0ae14a6b384129f2,
+              mid_setCreationTimeZone_734b91ac30d5f9b4,
+              mid_setDoi_734b91ac30d5f9b4,
+              mid_setFormatVersion_8ba9fe7a847cecad,
+              mid_setLicense_734b91ac30d5f9b4,
+              mid_setProgramName_734b91ac30d5f9b4,
+              mid_setRunByName_734b91ac30d5f9b4,
+              mid_setSatelliteSystem_cfddc646eebc7104,
+              mid_setStationInformation_734b91ac30d5f9b4,
               max_mid
             };
 

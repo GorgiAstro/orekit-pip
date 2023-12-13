@@ -4,11 +4,11 @@
 #include "java/lang/AutoCloseable.h"
 
 namespace java {
-  namespace io {
-    class IOException;
-  }
   namespace lang {
     class Class;
+  }
+  namespace io {
+    class IOException;
   }
 }
 template<class T> class JArray;
@@ -19,7 +19,7 @@ namespace java {
     class Closeable : public ::java::lang::AutoCloseable {
      public:
       enum {
-        mid_close_0640e6acf969ed28,
+        mid_close_a1fa5dae97ea5ed2,
         max_mid
       };
 

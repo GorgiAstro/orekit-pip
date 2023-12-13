@@ -20,7 +20,7 @@ namespace org {
       class AbstractWell : public ::org::hipparchus::random::IntRandomGenerator {
        public:
         enum {
-          mid_setSeed_ec63cb8a58ef5a54,
+          mid_setSeed_86a2769cb881d388,
           max_mid
         };
 

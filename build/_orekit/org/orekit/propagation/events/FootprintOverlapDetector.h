@@ -5,20 +5,20 @@
 
 namespace org {
   namespace orekit {
+    namespace geometry {
+      namespace fov {
+        class FieldOfView;
+      }
+    }
     namespace bodies {
-      class BodyShape;
       class OneAxisEllipsoid;
+      class BodyShape;
     }
     namespace propagation {
       namespace events {
         class FootprintOverlapDetector;
       }
       class SpacecraftState;
-    }
-    namespace geometry {
-      namespace fov {
-        class FieldOfView;
-      }
     }
   }
   namespace hipparchus {
@@ -46,12 +46,12 @@ namespace org {
         class FootprintOverlapDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_3a57658c194bc215,
-            mid_g_1bbf81d80c47ecdd,
-            mid_getBody_f166528db337c659,
-            mid_getFOV_0cb1db9d43d06211,
-            mid_getZone_1223d06efa3ccad7,
-            mid_create_c630f2cd60d6e5cf,
+            mid_init$_fe9b3eeb49751d68,
+            mid_g_a17ea857ce74d258,
+            mid_getBody_95d324082d4f411b,
+            mid_getFOV_f16dd2df58a56a14,
+            mid_getZone_bf39bb9c5825f40e,
+            mid_create_257a941781dd43fc,
             max_mid
           };
 

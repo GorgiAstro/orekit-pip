@@ -3,6 +3,11 @@
 
 #include "org/orekit/gnss/metric/messages/rtcm/ephemeris/RtcmEphemerisMessage.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -18,11 +23,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -36,7 +36,7 @@ namespace org {
               class Rtcm1045 : public ::org::orekit::gnss::metric::messages::rtcm::ephemeris::RtcmEphemerisMessage {
                public:
                 enum {
-                  mid_init$_4dabbc6c0055c54f,
+                  mid_init$_83e4b1ee71d7636f,
                   max_mid
                 };
 

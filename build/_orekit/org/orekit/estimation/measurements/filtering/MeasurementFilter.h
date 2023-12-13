@@ -31,7 +31,7 @@ namespace org {
           class MeasurementFilter : public ::java::lang::Object {
            public:
             enum {
-              mid_filter_87933cc299a70778,
+              mid_filter_5714f5cbb8239657,
               max_mid
             };
 

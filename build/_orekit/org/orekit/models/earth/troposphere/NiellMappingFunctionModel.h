@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace bodies {
-      class GeodeticPoint;
       class FieldGeodeticPoint;
+      class GeodeticPoint;
     }
     namespace time {
       class FieldAbsoluteDate;
@@ -42,10 +42,10 @@ namespace org {
           class NiellMappingFunctionModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_init$_3e3301925c0131d4,
-              mid_mappingFactors_e6ce6b157ff98280,
-              mid_mappingFactors_964dc353437b5da2,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_init$_cae5d0c3721eff67,
+              mid_mappingFactors_6e118a7a5998051c,
+              mid_mappingFactors_6dcded9cb7dee3c2,
               max_mid
             };
 

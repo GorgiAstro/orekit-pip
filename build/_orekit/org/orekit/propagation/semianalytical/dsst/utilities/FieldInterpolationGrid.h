@@ -3,14 +3,14 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,7 +25,7 @@ namespace org {
             class FieldInterpolationGrid : public ::java::lang::Object {
              public:
               enum {
-                mid_getGridPoints_4a8c729a6fb08a74,
+                mid_getGridPoints_396bc2ac62d7d47a,
                 max_mid
               };
 

@@ -23,9 +23,9 @@ namespace java {
     class Spliterator$OfLong : public ::java::util::Spliterator$OfPrimitive {
      public:
       enum {
-        mid_forEachRemaining_a56bae4b5f62e5a5,
-        mid_tryAdvance_1d76b3f69ae99417,
-        mid_trySplit_378e0cf6aa1248d2,
+        mid_forEachRemaining_e8b2ec59438c8d3d,
+        mid_tryAdvance_ebaab0d50a7f2556,
+        mid_trySplit_8fe5a3c44d68fdf2,
         max_mid
       };
 

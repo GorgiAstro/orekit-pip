@@ -8,35 +8,35 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
     class CalculusFieldElement;
   }
   namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace forces {
       namespace maneuvers {
-        class Control3DVectorCostType;
         namespace propulsion {
           class PropulsionModel;
         }
+        class Control3DVectorCostType;
       }
     }
     namespace attitudes {
       class FieldAttitude;
       class Attitude;
     }
+    namespace utils {
+      class ParameterDriver;
+    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
     }
   }
 }
@@ -61,19 +61,19 @@ namespace org {
           class PythonPropulsionModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_finalize_0640e6acf969ed28,
-              mid_getAcceleration_53d7cdec4a9e3cd4,
-              mid_getAcceleration_28694fea3dbf2005,
-              mid_getControl3DVectorCostType_601f05e5d0c82ad9,
-              mid_getMassDerivatives_810dcb8f9f5d191a,
-              mid_getMassDerivatives_4ad317f7598a10a9,
-              mid_getName_3cffd47377eca18a,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_init_0472264ad6f40bc2,
-              mid_pythonDecRef_0640e6acf969ed28,
-              mid_pythonExtension_9e26256fb0d384a2,
-              mid_pythonExtension_3cd6a6b354c6aa22,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_finalize_a1fa5dae97ea5ed2,
+              mid_getAcceleration_e58d235f532e1fec,
+              mid_getAcceleration_fa24c1d0852b99d1,
+              mid_getControl3DVectorCostType_2eba60c257188b83,
+              mid_getMassDerivatives_8e86371c61460f23,
+              mid_getMassDerivatives_f867476668f8eb00,
+              mid_getName_1c1fa1e935d6cdcf,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_init_2d7f9a496c7e9781,
+              mid_pythonDecRef_a1fa5dae97ea5ed2,
+              mid_pythonExtension_6c0ce7e438e5ded4,
+              mid_pythonExtension_3d7dd2314a0dd456,
               max_mid
             };
 

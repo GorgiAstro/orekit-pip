@@ -4,10 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class Field;
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
       namespace semianalytical {
@@ -18,6 +14,10 @@ namespace org {
         }
       }
     }
+  }
+  namespace hipparchus {
+    class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -41,9 +41,9 @@ namespace org {
             class FieldLnsCoefficients : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_4c0834ee3b889e07,
-                mid_getLns_f548ed78c2486137,
-                mid_getdLnsdGamma_f548ed78c2486137,
+                mid_init$_fe5b6ba414e50d1c,
+                mid_getLns_431f825c752f7b4c,
+                mid_getdLnsdGamma_431f825c752f7b4c,
                 max_mid
               };
 

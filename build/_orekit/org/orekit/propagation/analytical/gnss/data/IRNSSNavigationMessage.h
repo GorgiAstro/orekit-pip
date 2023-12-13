@@ -20,15 +20,15 @@ namespace org {
             class IRNSSNavigationMessage : public ::org::orekit::propagation::analytical::gnss::data::AbstractNavigationMessage {
              public:
               enum {
-                mid_init$_0640e6acf969ed28,
-                mid_getIODEC_412668abc8d889e9,
-                mid_getSvHealth_557b8123390d8d0c,
-                mid_getTGD_557b8123390d8d0c,
-                mid_getURA_557b8123390d8d0c,
-                mid_setIODEC_10f281d777284cea,
-                mid_setSvHealth_10f281d777284cea,
-                mid_setTGD_10f281d777284cea,
-                mid_setURA_10f281d777284cea,
+                mid_init$_a1fa5dae97ea5ed2,
+                mid_getIODEC_55546ef6a647f39b,
+                mid_getSvHealth_b74f83833fdad017,
+                mid_getTGD_b74f83833fdad017,
+                mid_getURA_b74f83833fdad017,
+                mid_setIODEC_8ba9fe7a847cecad,
+                mid_setSvHealth_8ba9fe7a847cecad,
+                mid_setTGD_8ba9fe7a847cecad,
+                mid_setURA_8ba9fe7a847cecad,
                 max_mid
               };
 

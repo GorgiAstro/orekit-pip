@@ -5,26 +5,26 @@
 
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataContext;
-    }
     namespace files {
       namespace ccsds {
         namespace definitions {
-          class CelestialBodyFrame;
-          class SpacecraftBodyFrame;
-          class FrameFacade;
           class OrbitRelativeFrame;
+          class CelestialBodyFrame;
+          class FrameFacade;
+          class SpacecraftBodyFrame;
         }
       }
+    }
+    namespace utils {
+      class IERSConventions;
+      class PVCoordinatesProvider;
+    }
+    namespace data {
+      class DataContext;
     }
     namespace frames {
       class Transform;
       class Frame;
-    }
-    namespace utils {
-      class PVCoordinatesProvider;
-      class IERSConventions;
     }
     namespace time {
       class AbsoluteDate;
@@ -48,15 +48,15 @@ namespace org {
           class FrameFacade : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_6272cf6621b4982f,
-              mid_asCelestialBodyFrame_31bca1b16d563f2b,
-              mid_asFrame_6c9bc0a928c56d4e,
-              mid_asOrbitRelativeFrame_8f84f1568afeba4e,
-              mid_asSpacecraftBodyFrame_f86371e743965d5e,
-              mid_getName_3cffd47377eca18a,
-              mid_getTransform_ae53bb0c5f8772f0,
-              mid_map_447d75fca7063cf4,
-              mid_parse_06aac91ca02a85e1,
+              mid_init$_85fa769e8cc15eaf,
+              mid_asCelestialBodyFrame_5ac4f33db9e11fd5,
+              mid_asFrame_2c51111cc6894ba1,
+              mid_asOrbitRelativeFrame_77481b528a1ae805,
+              mid_asSpacecraftBodyFrame_24772727764a5aad,
+              mid_getName_1c1fa1e935d6cdcf,
+              mid_getTransform_43c8dcf3729902ff,
+              mid_map_bff8ea121086e3b2,
+              mid_parse_c6da9d98f548ff6b,
               max_mid
             };
 

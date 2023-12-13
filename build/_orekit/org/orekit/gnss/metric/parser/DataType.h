@@ -8,8 +8,8 @@ namespace org {
     namespace gnss {
       namespace metric {
         namespace parser {
-          class DataType;
           class EncodedMessage;
+          class DataType;
         }
       }
     }
@@ -18,8 +18,8 @@ namespace org {
 namespace java {
   namespace lang {
     class Class;
-    class String;
     class Long;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -33,9 +33,9 @@ namespace org {
           class DataType : public ::java::lang::Enum {
            public:
             enum {
-              mid_decode_456bd522167fca80,
-              mid_valueOf_0fce2f16adddc80d,
-              mid_values_3714311a45906658,
+              mid_decode_a2b468540cedecd5,
+              mid_valueOf_13cfb1d27c4b8205,
+              mid_values_7d548b9b0a22cf33,
               max_mid
             };
 

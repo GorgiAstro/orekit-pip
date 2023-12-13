@@ -15,10 +15,10 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace gnss {
-      class Frequency;
       namespace antenna {
         class FrequencyPattern;
       }
+      class Frequency;
     }
   }
 }
@@ -32,8 +32,8 @@ namespace org {
         class ReceiverAntenna : public ::org::orekit::gnss::antenna::Antenna {
          public:
           enum {
-            mid_init$_c359e1fbddf80f23,
-            mid_getSerialNumber_3cffd47377eca18a,
+            mid_init$_fb219eac71c34b18,
+            mid_getSerialNumber_1c1fa1e935d6cdcf,
             max_mid
           };
 

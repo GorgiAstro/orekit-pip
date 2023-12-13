@@ -14,11 +14,11 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class Localizable;
-    }
     namespace geometry {
       class LocalizedGeometryFormats;
+    }
+    namespace exception {
+      class Localizable;
     }
   }
 }
@@ -31,10 +31,10 @@ namespace org {
       class LocalizedGeometryFormats : public ::java::lang::Enum {
        public:
         enum {
-          mid_getLocalizedString_4b51060c6b7ea981,
-          mid_getSourceString_3cffd47377eca18a,
-          mid_valueOf_ceb47c6cc8ab06f0,
-          mid_values_cdbb912e532cf4f9,
+          mid_getLocalizedString_26070c28e6ea354d,
+          mid_getSourceString_1c1fa1e935d6cdcf,
+          mid_valueOf_caa6b78ce82a35d8,
+          mid_values_ea6a946c0203fef0,
           max_mid
         };
 

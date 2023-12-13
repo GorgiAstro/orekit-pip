@@ -4,13 +4,13 @@
 #include "org/orekit/data/FieldDelaunayArguments.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace time {
       class FieldAbsoluteDate;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -27,25 +27,25 @@ namespace org {
       class FieldBodiesElements : public ::org::orekit::data::FieldDelaunayArguments {
        public:
         enum {
-          mid_init$_e15296bba89d8c64,
-          mid_getLE_613c8f46c659f636,
-          mid_getLEDot_613c8f46c659f636,
-          mid_getLJu_613c8f46c659f636,
-          mid_getLJuDot_613c8f46c659f636,
-          mid_getLMa_613c8f46c659f636,
-          mid_getLMaDot_613c8f46c659f636,
-          mid_getLMe_613c8f46c659f636,
-          mid_getLMeDot_613c8f46c659f636,
-          mid_getLNe_613c8f46c659f636,
-          mid_getLNeDot_613c8f46c659f636,
-          mid_getLSa_613c8f46c659f636,
-          mid_getLSaDot_613c8f46c659f636,
-          mid_getLUr_613c8f46c659f636,
-          mid_getLUrDot_613c8f46c659f636,
-          mid_getLVe_613c8f46c659f636,
-          mid_getLVeDot_613c8f46c659f636,
-          mid_getPa_613c8f46c659f636,
-          mid_getPaDot_613c8f46c659f636,
+          mid_init$_93a3fd3c2b82dfe5,
+          mid_getLE_81520b552cb3fa26,
+          mid_getLEDot_81520b552cb3fa26,
+          mid_getLJu_81520b552cb3fa26,
+          mid_getLJuDot_81520b552cb3fa26,
+          mid_getLMa_81520b552cb3fa26,
+          mid_getLMaDot_81520b552cb3fa26,
+          mid_getLMe_81520b552cb3fa26,
+          mid_getLMeDot_81520b552cb3fa26,
+          mid_getLNe_81520b552cb3fa26,
+          mid_getLNeDot_81520b552cb3fa26,
+          mid_getLSa_81520b552cb3fa26,
+          mid_getLSaDot_81520b552cb3fa26,
+          mid_getLUr_81520b552cb3fa26,
+          mid_getLUrDot_81520b552cb3fa26,
+          mid_getLVe_81520b552cb3fa26,
+          mid_getLVeDot_81520b552cb3fa26,
+          mid_getPa_81520b552cb3fa26,
+          mid_getPaDot_81520b552cb3fa26,
           max_mid
         };
 

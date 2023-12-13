@@ -15,6 +15,10 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace utils {
+      class IERSConventions;
+      class TimeStampedPVCoordinates;
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -30,10 +34,6 @@ namespace org {
       namespace general {
         class EphemerisFile;
       }
-    }
-    namespace utils {
-      class IERSConventions;
-      class TimeStampedPVCoordinates;
     }
     namespace data {
       class DataContext;
@@ -53,9 +53,9 @@ namespace org {
               class Oem : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
                public:
                 enum {
-                  mid_init$_66443a7cc3b43b5d,
-                  mid_checkTimeSystems_0640e6acf969ed28,
-                  mid_getSatellites_1e62c2f73fbdd1c4,
+                  mid_init$_9639e27fba1a1f36,
+                  mid_checkTimeSystems_a1fa5dae97ea5ed2,
+                  mid_getSatellites_810bed48fafb0b9a,
                   max_mid
                 };
 

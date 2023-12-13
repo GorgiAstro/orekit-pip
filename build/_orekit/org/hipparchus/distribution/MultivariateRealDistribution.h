@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,11 +24,11 @@ namespace org {
       class MultivariateRealDistribution : public ::java::lang::Object {
        public:
         enum {
-          mid_density_86c4a0582e0747ce,
-          mid_getDimension_412668abc8d889e9,
-          mid_reseedRandomGenerator_3cd6a6b354c6aa22,
-          mid_sample_a53a7513ecedada2,
-          mid_sample_ace8110626df0bb8,
+          mid_density_b060e4326765ccf1,
+          mid_getDimension_55546ef6a647f39b,
+          mid_reseedRandomGenerator_3d7dd2314a0dd456,
+          mid_sample_25e1757a36c4dde2,
+          mid_sample_23a0aa7ddbf2fcc5,
           max_mid
         };
 

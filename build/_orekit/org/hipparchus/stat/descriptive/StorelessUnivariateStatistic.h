@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace stat {
       namespace descriptive {
         class StorelessUnivariateStatistic;
       }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -35,15 +35,15 @@ namespace org {
         class StorelessUnivariateStatistic : public ::org::hipparchus::stat::descriptive::UnivariateStatistic {
          public:
           enum {
-            mid_accept_10f281d777284cea,
-            mid_clear_0640e6acf969ed28,
-            mid_copy_0a0ee925e68176d0,
-            mid_evaluate_9eeeb1ae977f525d,
-            mid_getN_9e26256fb0d384a2,
-            mid_getResult_557b8123390d8d0c,
-            mid_increment_10f281d777284cea,
-            mid_incrementAll_cc18240f4a737f14,
-            mid_incrementAll_91b51b3c05127ead,
+            mid_accept_8ba9fe7a847cecad,
+            mid_clear_a1fa5dae97ea5ed2,
+            mid_copy_2b25c166f19a0def,
+            mid_evaluate_1567a80062adb31b,
+            mid_getN_6c0ce7e438e5ded4,
+            mid_getResult_b74f83833fdad017,
+            mid_increment_8ba9fe7a847cecad,
+            mid_incrementAll_ab69da052b88f50c,
+            mid_incrementAll_4484ad1f15b73c7a,
             max_mid
           };
 

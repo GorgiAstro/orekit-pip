@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class AbsoluteDate;
       class TimeStamped;
+      class AbsoluteDate;
     }
   }
 }
@@ -28,21 +28,21 @@ namespace org {
       class DelaunayArguments : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_93cd117b5bd418cf,
-          mid_getD_557b8123390d8d0c,
-          mid_getDDot_557b8123390d8d0c,
-          mid_getDate_7a97f7e149e79afb,
-          mid_getF_557b8123390d8d0c,
-          mid_getFDot_557b8123390d8d0c,
-          mid_getGamma_557b8123390d8d0c,
-          mid_getGammaDot_557b8123390d8d0c,
-          mid_getL_557b8123390d8d0c,
-          mid_getLDot_557b8123390d8d0c,
-          mid_getLPrime_557b8123390d8d0c,
-          mid_getLPrimeDot_557b8123390d8d0c,
-          mid_getOmega_557b8123390d8d0c,
-          mid_getOmegaDot_557b8123390d8d0c,
-          mid_getTC_557b8123390d8d0c,
+          mid_init$_9feca7a39f4fa032,
+          mid_getD_b74f83833fdad017,
+          mid_getDDot_b74f83833fdad017,
+          mid_getDate_c325492395d89b24,
+          mid_getF_b74f83833fdad017,
+          mid_getFDot_b74f83833fdad017,
+          mid_getGamma_b74f83833fdad017,
+          mid_getGammaDot_b74f83833fdad017,
+          mid_getL_b74f83833fdad017,
+          mid_getLDot_b74f83833fdad017,
+          mid_getLPrime_b74f83833fdad017,
+          mid_getLPrimeDot_b74f83833fdad017,
+          mid_getOmega_b74f83833fdad017,
+          mid_getOmegaDot_b74f83833fdad017,
+          mid_getTC_b74f83833fdad017,
           max_mid
         };
 

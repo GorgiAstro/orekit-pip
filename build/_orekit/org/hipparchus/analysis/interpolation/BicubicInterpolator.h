@@ -7,8 +7,8 @@ namespace org {
   namespace hipparchus {
     namespace analysis {
       namespace interpolation {
-        class BicubicInterpolatingFunction;
         class BivariateGridInterpolator;
+        class BicubicInterpolatingFunction;
       }
     }
     namespace exception {
@@ -31,8 +31,8 @@ namespace org {
         class BicubicInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_interpolate_78b4fa08d8d71630,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_interpolate_42c8578f32117181,
             max_mid
           };
 

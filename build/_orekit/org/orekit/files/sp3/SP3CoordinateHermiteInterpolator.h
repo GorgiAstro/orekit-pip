@@ -27,8 +27,8 @@ namespace org {
         class SP3CoordinateHermiteInterpolator : public ::org::orekit::time::AbstractTimeInterpolator {
          public:
           enum {
-            mid_init$_bcaf7e2c67482688,
-            mid_interpolate_53534de4d71bb107,
+            mid_init$_911582bb3a73ac58,
+            mid_interpolate_9c4ea1413f991f07,
             max_mid
           };
 

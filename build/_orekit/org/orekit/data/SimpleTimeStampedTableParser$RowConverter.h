@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class TimeStamped;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,7 +24,7 @@ namespace org {
       class SimpleTimeStampedTableParser$RowConverter : public ::java::lang::Object {
        public:
         enum {
-          mid_convert_882a135460ccee29,
+          mid_convert_890086619e436572,
           max_mid
         };
 

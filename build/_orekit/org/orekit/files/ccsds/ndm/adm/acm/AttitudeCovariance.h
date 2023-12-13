@@ -5,6 +5,10 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class TimeStamped;
+      class AbsoluteDate;
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -15,10 +19,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
-      class TimeStamped;
     }
   }
   namespace hipparchus {
@@ -46,10 +46,10 @@ namespace org {
               class AttitudeCovariance : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_bb99cd754d655876,
-                  mid_getDate_7a97f7e149e79afb,
-                  mid_getMatrix_b1a245683de9728d,
-                  mid_getType_270107b6f5cd254c,
+                  mid_init$_2e14852685fa5522,
+                  mid_getDate_c325492395d89b24,
+                  mid_getMatrix_2d4bea390f44a6ac,
+                  mid_getType_49fb04b3e4992396,
                   max_mid
                 };
 

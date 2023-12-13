@@ -6,9 +6,6 @@
 namespace org {
   namespace orekit {
     namespace files {
-      namespace general {
-        class EphemerisFile$EphemerisSegment;
-      }
       namespace ccsds {
         namespace ndm {
           namespace odm {
@@ -19,19 +16,22 @@ namespace org {
           }
         }
       }
+      namespace general {
+        class EphemerisFile$EphemerisSegment;
+      }
+    }
+    namespace utils {
+      class TimeStampedPVCoordinates;
+      class CartesianDerivativesFilter;
+    }
+    namespace bodies {
+      class OneAxisEllipsoid;
     }
     namespace frames {
       class Frame;
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace bodies {
-      class OneAxisEllipsoid;
-    }
-    namespace utils {
-      class CartesianDerivativesFilter;
-      class TimeStampedPVCoordinates;
     }
   }
 }
@@ -56,17 +56,17 @@ namespace org {
               class TrajectoryStateHistory : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_8aabf9afabae729c,
-                  mid_getAvailableDerivatives_6c4898d6ec0c3837,
-                  mid_getBody_0c55bd1adf955c4c,
-                  mid_getCoordinates_0d9551367f7ecdef,
-                  mid_getFrame_6c9bc0a928c56d4e,
-                  mid_getInterpolationSamples_412668abc8d889e9,
-                  mid_getMetadata_1911a405d6451e8c,
-                  mid_getMu_557b8123390d8d0c,
-                  mid_getStart_7a97f7e149e79afb,
-                  mid_getStop_7a97f7e149e79afb,
-                  mid_getTrajectoryStates_0d9551367f7ecdef,
+                  mid_init$_c790d28536d77682,
+                  mid_getAvailableDerivatives_63bfdcc4b7a0536c,
+                  mid_getBody_dd5c4288aa5a3dd8,
+                  mid_getCoordinates_e62d3bb06d56d7e3,
+                  mid_getFrame_2c51111cc6894ba1,
+                  mid_getInterpolationSamples_55546ef6a647f39b,
+                  mid_getMetadata_81764a8f1cf7116d,
+                  mid_getMu_b74f83833fdad017,
+                  mid_getStart_c325492395d89b24,
+                  mid_getStop_c325492395d89b24,
+                  mid_getTrajectoryStates_e62d3bb06d56d7e3,
                   max_mid
                 };
 

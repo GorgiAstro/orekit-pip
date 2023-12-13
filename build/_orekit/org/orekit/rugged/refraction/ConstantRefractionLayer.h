@@ -18,9 +18,9 @@ namespace org {
         class ConstantRefractionLayer : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_ab23f4ae0fb33968,
-            mid_getLowestAltitude_557b8123390d8d0c,
-            mid_getRefractiveIndex_557b8123390d8d0c,
+            mid_init$_369b4c97255d5afa,
+            mid_getLowestAltitude_b74f83833fdad017,
+            mid_getRefractiveIndex_b74f83833fdad017,
             max_mid
           };
 

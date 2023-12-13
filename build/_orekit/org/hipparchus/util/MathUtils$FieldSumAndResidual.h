@@ -22,8 +22,8 @@ namespace org {
       class MathUtils$FieldSumAndResidual : public ::java::lang::Object {
        public:
         enum {
-          mid_getResidual_ce0470d468f80a56,
-          mid_getSum_ce0470d468f80a56,
+          mid_getResidual_2ff8de927fda4153,
+          mid_getSum_2ff8de927fda4153,
           max_mid
         };
 

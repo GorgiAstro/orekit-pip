@@ -17,7 +17,7 @@ namespace org {
       class BivariateFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_value_2268d18be49a6087,
+          mid_value_99e3200dafc19573,
           max_mid
         };
 

@@ -5,19 +5,19 @@
 
 namespace org {
   namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class EstimatedMeasurement;
-        class EstimatedMeasurementBase;
-        class Range;
-        class EstimationModifier;
-      }
-    }
     namespace models {
       namespace earth {
         namespace ionosphere {
           class IonosphericModel;
         }
+      }
+    }
+    namespace estimation {
+      namespace measurements {
+        class EstimationModifier;
+        class EstimatedMeasurementBase;
+        class Range;
+        class EstimatedMeasurement;
       }
     }
   }
@@ -38,9 +38,9 @@ namespace org {
           class RangeIonosphericDelayModifier : public ::org::orekit::estimation::measurements::modifiers::BaseRangeIonosphericDelayModifier {
            public:
             enum {
-              mid_init$_69c6b2cabec159dd,
-              mid_modify_0054a497255e8220,
-              mid_modifyWithoutDerivatives_e471490df8741b73,
+              mid_init$_c3c7040adbf9e5f8,
+              mid_modify_f784f7724d44a90a,
+              mid_modifyWithoutDerivatives_308087fabc1d7f66,
               max_mid
             };
 

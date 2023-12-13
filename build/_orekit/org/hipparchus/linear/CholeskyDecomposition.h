@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace linear {
-      class DecompositionSolver;
-      class RealMatrix;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
+      class DecompositionSolver;
+    }
   }
 }
 template<class T> class JArray;
@@ -25,12 +25,12 @@ namespace org {
       class CholeskyDecomposition : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_f3731847577f13e6,
-          mid_init$_a691527537def442,
-          mid_getDeterminant_557b8123390d8d0c,
-          mid_getL_70a207fcbc031df2,
-          mid_getLT_70a207fcbc031df2,
-          mid_getSolver_ccd666b17ae2e6eb,
+          mid_init$_84bd15e0995d0c79,
+          mid_init$_38031a98bff21122,
+          mid_getDeterminant_b74f83833fdad017,
+          mid_getL_f77d745f2128c391,
+          mid_getLT_f77d745f2128c391,
+          mid_getSolver_5823fb909376de2c,
           max_mid
         };
 

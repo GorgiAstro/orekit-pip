@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class AbsoluteDate;
       class TimeStamped;
+      class AbsoluteDate;
     }
   }
 }
@@ -27,26 +27,26 @@ namespace org {
         class CRD$Calibration : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_eafe5b3d04932887,
-            mid_getDate_7a97f7e149e79afb,
-            mid_getDelayShift_557b8123390d8d0c,
-            mid_getDetectorChannel_412668abc8d889e9,
-            mid_getKurtosis_557b8123390d8d0c,
-            mid_getNumberOfPointsRecorded_412668abc8d889e9,
-            mid_getNumberOfPointsUsed_412668abc8d889e9,
-            mid_getOneWayDistance_557b8123390d8d0c,
-            mid_getPeakMinusMean_557b8123390d8d0c,
-            mid_getReturnRate_557b8123390d8d0c,
-            mid_getRms_557b8123390d8d0c,
-            mid_getShiftTypeIndicator_412668abc8d889e9,
-            mid_getSkew_557b8123390d8d0c,
-            mid_getSpan_412668abc8d889e9,
-            mid_getSystemConfigurationId_3cffd47377eca18a,
-            mid_getSystemDelay_557b8123390d8d0c,
-            mid_getTypeIndicator_412668abc8d889e9,
-            mid_getTypeOfData_412668abc8d889e9,
-            mid_toCrdString_3cffd47377eca18a,
-            mid_toString_3cffd47377eca18a,
+            mid_init$_962a82a1818ef660,
+            mid_getDate_c325492395d89b24,
+            mid_getDelayShift_b74f83833fdad017,
+            mid_getDetectorChannel_55546ef6a647f39b,
+            mid_getKurtosis_b74f83833fdad017,
+            mid_getNumberOfPointsRecorded_55546ef6a647f39b,
+            mid_getNumberOfPointsUsed_55546ef6a647f39b,
+            mid_getOneWayDistance_b74f83833fdad017,
+            mid_getPeakMinusMean_b74f83833fdad017,
+            mid_getReturnRate_b74f83833fdad017,
+            mid_getRms_b74f83833fdad017,
+            mid_getShiftTypeIndicator_55546ef6a647f39b,
+            mid_getSkew_b74f83833fdad017,
+            mid_getSpan_55546ef6a647f39b,
+            mid_getSystemConfigurationId_1c1fa1e935d6cdcf,
+            mid_getSystemDelay_b74f83833fdad017,
+            mid_getTypeIndicator_55546ef6a647f39b,
+            mid_getTypeOfData_55546ef6a647f39b,
+            mid_toCrdString_1c1fa1e935d6cdcf,
+            mid_toString_1c1fa1e935d6cdcf,
             max_mid
           };
 

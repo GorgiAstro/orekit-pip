@@ -3,28 +3,7 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
-  namespace orekit {
-    namespace models {
-      namespace earth {
-        namespace tessellation {
-          class TileAiming;
-        }
-      }
-    }
-    namespace bodies {
-      class GeodeticPoint;
-      class OneAxisEllipsoid;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -33,6 +12,27 @@ namespace org {
         }
       }
     }
+  }
+  namespace orekit {
+    namespace bodies {
+      class GeodeticPoint;
+      class OneAxisEllipsoid;
+    }
+    namespace models {
+      namespace earth {
+        namespace tessellation {
+          class TileAiming;
+        }
+      }
+    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -46,9 +46,9 @@ namespace org {
           class ConstantAzimuthAiming : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_cee3325573481ef4,
-              mid_alongTileDirection_94d0bf825c02adfa,
-              mid_getSingularPoints_0d9551367f7ecdef,
+              mid_init$_d11e39be76d848c0,
+              mid_alongTileDirection_636e2b82319b8646,
+              mid_getSingularPoints_e62d3bb06d56d7e3,
               max_mid
             };
 

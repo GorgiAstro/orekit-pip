@@ -3,19 +3,19 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+  }
+}
 namespace java {
   namespace lang {
     class Class;
   }
   namespace io {
     class Serializable;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
   }
 }
 template<class T> class JArray;
@@ -28,21 +28,21 @@ namespace org {
         class RegressionResults : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_774e2a371b452292,
-            mid_getAdjustedRSquared_557b8123390d8d0c,
-            mid_getCovarianceOfParameters_21b81d54c06b64b0,
-            mid_getErrorSumSquares_557b8123390d8d0c,
-            mid_getMeanSquareError_557b8123390d8d0c,
-            mid_getN_9e26256fb0d384a2,
-            mid_getNumberOfParameters_412668abc8d889e9,
-            mid_getParameterEstimate_69cfb132c661aca4,
-            mid_getParameterEstimates_a53a7513ecedada2,
-            mid_getRSquared_557b8123390d8d0c,
-            mid_getRegressionSumSquares_557b8123390d8d0c,
-            mid_getStdErrorOfEstimate_69cfb132c661aca4,
-            mid_getStdErrorOfEstimates_a53a7513ecedada2,
-            mid_getTotalSumSquares_557b8123390d8d0c,
-            mid_hasIntercept_89b302893bdbe1f1,
+            mid_init$_9d4bc8dcfca683ea,
+            mid_getAdjustedRSquared_b74f83833fdad017,
+            mid_getCovarianceOfParameters_cad98089d00f8a5b,
+            mid_getErrorSumSquares_b74f83833fdad017,
+            mid_getMeanSquareError_b74f83833fdad017,
+            mid_getN_6c0ce7e438e5ded4,
+            mid_getNumberOfParameters_55546ef6a647f39b,
+            mid_getParameterEstimate_2afcbc21f4e57ab2,
+            mid_getParameterEstimates_25e1757a36c4dde2,
+            mid_getRSquared_b74f83833fdad017,
+            mid_getRegressionSumSquares_b74f83833fdad017,
+            mid_getStdErrorOfEstimate_2afcbc21f4e57ab2,
+            mid_getStdErrorOfEstimates_25e1757a36c4dde2,
+            mid_getTotalSumSquares_b74f83833fdad017,
+            mid_hasIntercept_9ab94ac1dc23b105,
             max_mid
           };
 

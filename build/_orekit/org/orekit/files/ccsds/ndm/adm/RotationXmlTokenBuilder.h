@@ -3,20 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ccsds {
-        namespace utils {
-          namespace lexical {
-            class ParseToken;
-            class XmlTokenBuilder;
-          }
-        }
-      }
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -25,6 +11,20 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace ccsds {
+        namespace utils {
+          namespace lexical {
+            class XmlTokenBuilder;
+            class ParseToken;
+          }
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -39,8 +39,8 @@ namespace org {
             class RotationXmlTokenBuilder : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0640e6acf969ed28,
-                mid_buildTokens_5a8e94497b45a4c0,
+                mid_init$_a1fa5dae97ea5ed2,
+                mid_buildTokens_2c588550a962bd9d,
                 max_mid
               };
 

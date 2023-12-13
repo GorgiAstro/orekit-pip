@@ -5,6 +5,9 @@
 
 namespace org {
   namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
     namespace propagation {
       namespace analytical {
         namespace tle {
@@ -14,9 +17,6 @@ namespace org {
     }
     namespace frames {
       class Frame;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
     }
   }
 }
@@ -37,14 +37,14 @@ namespace org {
           class PythonTLEPropagator : public ::org::orekit::propagation::analytical::tle::TLEPropagator {
            public:
             enum {
-              mid_init$_c15edfeff3b77424,
-              mid_init$_2f68d31a9dcd927c,
-              mid_finalize_0640e6acf969ed28,
-              mid_pythonDecRef_0640e6acf969ed28,
-              mid_pythonExtension_9e26256fb0d384a2,
-              mid_pythonExtension_3cd6a6b354c6aa22,
-              mid_sxpInitialize_0640e6acf969ed28,
-              mid_sxpPropagate_10f281d777284cea,
+              mid_init$_7a5e69c032c7e921,
+              mid_init$_3b79aaf1b59208bb,
+              mid_finalize_a1fa5dae97ea5ed2,
+              mid_pythonDecRef_a1fa5dae97ea5ed2,
+              mid_pythonExtension_6c0ce7e438e5ded4,
+              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_sxpInitialize_a1fa5dae97ea5ed2,
+              mid_sxpPropagate_8ba9fe7a847cecad,
               max_mid
             };
 

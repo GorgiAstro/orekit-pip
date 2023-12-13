@@ -7,16 +7,12 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class RangeRate;
-        class GroundStation;
-        class EstimatedMeasurement;
-        class EstimatedMeasurementBase;
         class EstimationModifier;
+        class EstimatedMeasurementBase;
+        class RangeRate;
+        class EstimatedMeasurement;
+        class GroundStation;
       }
-    }
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
     }
     namespace models {
       namespace earth {
@@ -24,6 +20,10 @@ namespace org {
           class DiscreteTroposphericModel;
         }
       }
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
     }
   }
   namespace hipparchus {
@@ -46,11 +46,11 @@ namespace org {
           class RangeRateTroposphericDelayModifier : public ::org::orekit::estimation::measurements::modifiers::BaseRangeRateTroposphericDelayModifier {
            public:
             enum {
-              mid_init$_2e9593028b0eebf7,
-              mid_modify_0054a497255e8220,
-              mid_modifyWithoutDerivatives_e471490df8741b73,
-              mid_rangeRateErrorTroposphericModel_17bae2e3aa9bc870,
-              mid_rangeRateErrorTroposphericModel_81f653af97ea34a8,
+              mid_init$_4aec4a8aa42e6a4d,
+              mid_modify_f784f7724d44a90a,
+              mid_modifyWithoutDerivatives_308087fabc1d7f66,
+              mid_rangeRateErrorTroposphericModel_b8971448fff75978,
+              mid_rangeRateErrorTroposphericModel_9a2cbda6eb51ddd8,
               max_mid
             };
 

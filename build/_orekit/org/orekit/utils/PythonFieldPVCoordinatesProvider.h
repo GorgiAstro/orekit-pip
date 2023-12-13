@@ -5,12 +5,12 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class TimeStampedFieldPVCoordinates;
-      class FieldPVCoordinatesProvider;
-    }
     namespace time {
       class FieldAbsoluteDate;
+    }
+    namespace utils {
+      class FieldPVCoordinatesProvider;
+      class TimeStampedFieldPVCoordinates;
     }
     namespace frames {
       class Frame;
@@ -35,12 +35,12 @@ namespace org {
       class PythonFieldPVCoordinatesProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_finalize_0640e6acf969ed28,
-          mid_getPVCoordinates_4ac52e75113a03db,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_getPVCoordinates_294c5c99690f2356,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
           max_mid
         };
 

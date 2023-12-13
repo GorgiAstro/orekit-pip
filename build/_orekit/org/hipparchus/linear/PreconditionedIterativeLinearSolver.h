@@ -6,16 +6,16 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathIllegalArgumentException;
       class NullArgumentException;
       class MathIllegalStateException;
+      class MathIllegalArgumentException;
     }
     namespace util {
       class IterationManager;
     }
     namespace linear {
-      class RealVector;
       class RealLinearOperator;
+      class RealVector;
     }
   }
 }
@@ -33,15 +33,15 @@ namespace org {
       class PreconditionedIterativeLinearSolver : public ::org::hipparchus::linear::IterativeLinearSolver {
        public:
         enum {
-          mid_init$_5620df2219299797,
-          mid_init$_a3da1a935cb37f7b,
-          mid_solve_6b479a0f30bd3d0f,
-          mid_solve_2afa71936b186c26,
-          mid_solve_5846c18557c7b879,
-          mid_solve_794cf6c78f8f4b2d,
-          mid_solveInPlace_2afa71936b186c26,
-          mid_solveInPlace_794cf6c78f8f4b2d,
-          mid_checkParameters_8a2752c0ac4ba040,
+          mid_init$_c5c01059ddc6554a,
+          mid_init$_44ed599e93e8a30c,
+          mid_solve_756296b1f68e7038,
+          mid_solve_8e7f7f43cd6eb914,
+          mid_solve_3a7358168b964bea,
+          mid_solve_0f4c606f88ffcaeb,
+          mid_solveInPlace_8e7f7f43cd6eb914,
+          mid_solveInPlace_0f4c606f88ffcaeb,
+          mid_checkParameters_5c418ed0a0a3e6f3,
           max_mid
         };
 

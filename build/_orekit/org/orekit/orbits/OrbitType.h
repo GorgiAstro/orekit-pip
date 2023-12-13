@@ -4,27 +4,27 @@
 #include "java/lang/Enum.h"
 
 namespace org {
-  namespace hipparchus {
-    class Field;
-    class CalculusFieldElement;
-  }
   namespace orekit {
+    namespace utils {
+      class ParameterDriversList;
+    }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
     }
-    namespace utils {
-      class ParameterDriversList;
-    }
     namespace orbits {
-      class PositionAngleType;
-      class OrbitType;
       class Orbit;
       class FieldOrbit;
+      class PositionAngleType;
+      class OrbitType;
     }
     namespace frames {
       class Frame;
     }
+  }
+  namespace hipparchus {
+    class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -42,20 +42,20 @@ namespace org {
       class OrbitType : public ::java::lang::Enum {
        public:
         enum {
-          mid_convertToFieldOrbit_e9be6c9886c2ede1,
-          mid_convertType_8e5d41efd1316adf,
-          mid_convertType_f66341a46b0a495a,
-          mid_getDrivers_2dc678382be03f90,
-          mid_isPositionAngleBased_89b302893bdbe1f1,
-          mid_mapArrayToOrbit_ac083376e9e49863,
-          mid_mapArrayToOrbit_b8f94d8b89c37228,
-          mid_mapOrbitToArray_9d78f2b469e9d210,
-          mid_mapOrbitToArray_eae83fc342f0eb92,
-          mid_normalize_9a9f168ee5c82859,
-          mid_normalize_b2a35539461bc5cf,
-          mid_valueOf_1887b258ce5f94b2,
-          mid_values_fc02321a93006dba,
-          mid_scale_447de1222ff10980,
+          mid_convertToFieldOrbit_9b0122682636b413,
+          mid_convertType_fc86977d2ef95d47,
+          mid_convertType_17366d6f28f0e9a3,
+          mid_getDrivers_a90b7a96bd02cc69,
+          mid_isPositionAngleBased_9ab94ac1dc23b105,
+          mid_mapArrayToOrbit_f8e2268a540708cf,
+          mid_mapArrayToOrbit_3a36966952a8c249,
+          mid_mapOrbitToArray_cdbe0480fba9da5e,
+          mid_mapOrbitToArray_dd1f1433d867eeb8,
+          mid_normalize_44e06ea15412cf58,
+          mid_normalize_4b9fe4c623440067,
+          mid_valueOf_669d078c7e4c9b0b,
+          mid_values_edeedd4e4e0b4870,
+          mid_scale_8734a085c2c31141,
           max_mid
         };
 
@@ -106,8 +106,8 @@ namespace org {
         jboolean isPositionAngleBased() const;
         ::org::orekit::orbits::Orbit mapArrayToOrbit(const JArray< jdouble > &, const JArray< jdouble > &, const ::org::orekit::orbits::PositionAngleType &, const ::org::orekit::time::AbsoluteDate &, jdouble, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::orbits::FieldOrbit mapArrayToOrbit(const JArray< ::org::hipparchus::CalculusFieldElement > &, const JArray< ::org::hipparchus::CalculusFieldElement > &, const ::org::orekit::orbits::PositionAngleType &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::hipparchus::CalculusFieldElement &, const ::org::orekit::frames::Frame &) const;
-        void mapOrbitToArray(const ::org::orekit::orbits::Orbit &, const ::org::orekit::orbits::PositionAngleType &, const JArray< jdouble > &, const JArray< jdouble > &) const;
         void mapOrbitToArray(const ::org::orekit::orbits::FieldOrbit &, const ::org::orekit::orbits::PositionAngleType &, const JArray< ::org::hipparchus::CalculusFieldElement > &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
+        void mapOrbitToArray(const ::org::orekit::orbits::Orbit &, const ::org::orekit::orbits::PositionAngleType &, const JArray< jdouble > &, const JArray< jdouble > &) const;
         ::org::orekit::orbits::FieldOrbit normalize(const ::org::orekit::orbits::FieldOrbit &, const ::org::orekit::orbits::FieldOrbit &) const;
         ::org::orekit::orbits::Orbit normalize(const ::org::orekit::orbits::Orbit &, const ::org::orekit::orbits::Orbit &) const;
         static OrbitType valueOf(const ::java::lang::String &);

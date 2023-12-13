@@ -27,7 +27,7 @@ namespace org {
       class MultipleShooting : public ::java::lang::Object {
        public:
         enum {
-          mid_compute_0d9551367f7ecdef,
+          mid_compute_e62d3bb06d56d7e3,
           max_mid
         };
 

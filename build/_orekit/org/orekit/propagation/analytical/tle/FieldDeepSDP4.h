@@ -5,18 +5,18 @@
 
 namespace org {
   namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+    namespace frames {
+      class Frame;
+    }
     namespace propagation {
       namespace analytical {
         namespace tle {
           class FieldTLE;
         }
       }
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
     }
   }
   namespace hipparchus {
@@ -39,11 +39,11 @@ namespace org {
           class FieldDeepSDP4 : public ::org::orekit::propagation::analytical::tle::FieldSDP4 {
            public:
             enum {
-              mid_init$_506aefaa51ea8c08,
-              mid_init$_09515132f38e5487,
-              mid_luniSolarTermsComputation_0640e6acf969ed28,
-              mid_deepSecularEffects_1ee4bed350fde589,
-              mid_deepPeriodicEffects_1ee4bed350fde589,
+              mid_init$_8d1f9859c5514da2,
+              mid_init$_5459c6c0c91f1c96,
+              mid_luniSolarTermsComputation_a1fa5dae97ea5ed2,
+              mid_deepSecularEffects_f2b4bfa0af1007e8,
+              mid_deepPeriodicEffects_f2b4bfa0af1007e8,
               max_mid
             };
 

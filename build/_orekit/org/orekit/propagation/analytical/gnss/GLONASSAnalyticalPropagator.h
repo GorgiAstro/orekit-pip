@@ -5,17 +5,7 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class PVCoordinates;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace propagation {
-      class SpacecraftState;
       namespace analytical {
         namespace gnss {
           namespace data {
@@ -23,6 +13,16 @@ namespace org {
           }
         }
       }
+      class SpacecraftState;
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class PVCoordinates;
     }
   }
 }
@@ -42,16 +42,16 @@ namespace org {
           class GLONASSAnalyticalPropagator : public ::org::orekit::propagation::analytical::AbstractAnalyticalPropagator {
            public:
             enum {
-              mid_getECEF_6c9bc0a928c56d4e,
-              mid_getECI_6c9bc0a928c56d4e,
-              mid_getFrame_6c9bc0a928c56d4e,
-              mid_getGLONASSOrbitalElements_19faff6f6b9c4979,
-              mid_getMU_557b8123390d8d0c,
-              mid_propagateInEcef_f00f0e7ea285c370,
-              mid_resetInitialState_8655761ebf04b503,
-              mid_propagateOrbit_9e937c0ae63d8022,
-              mid_resetIntermediateState_45bf76e836befe86,
-              mid_getMass_b0b988f941da47d8,
+              mid_getECEF_2c51111cc6894ba1,
+              mid_getECI_2c51111cc6894ba1,
+              mid_getFrame_2c51111cc6894ba1,
+              mid_getGLONASSOrbitalElements_ecd6853fd3b2ef73,
+              mid_getMU_b74f83833fdad017,
+              mid_propagateInEcef_686d17b8cfdd0634,
+              mid_resetInitialState_280c3390961e0a50,
+              mid_getMass_fd347811007a6ba3,
+              mid_resetIntermediateState_1c47c97cdbc7e206,
+              mid_propagateOrbit_5df6dcb5c4123339,
               max_mid
             };
 

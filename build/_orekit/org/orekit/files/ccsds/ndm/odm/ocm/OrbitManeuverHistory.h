@@ -10,8 +10,8 @@ namespace org {
         namespace ndm {
           namespace odm {
             namespace ocm {
-              class OrbitManeuverHistoryMetadata;
               class OrbitManeuver;
+              class OrbitManeuverHistoryMetadata;
             }
           }
         }
@@ -40,9 +40,9 @@ namespace org {
               class OrbitManeuverHistory : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_9b5d2eef65de2111,
-                  mid_getManeuvers_0d9551367f7ecdef,
-                  mid_getMetadata_3be9b3636297daeb,
+                  mid_init$_c0fd51ac6991aec1,
+                  mid_getManeuvers_e62d3bb06d56d7e3,
+                  mid_getMetadata_d26c66d71d87c322,
                   max_mid
                 };
 

@@ -28,9 +28,9 @@ namespace org {
         class BrentOptimizer : public ::org::hipparchus::optim::univariate::UnivariateOptimizer {
          public:
           enum {
-            mid_init$_ab23f4ae0fb33968,
-            mid_init$_b2b4889b70ee50e3,
-            mid_doOptimize_31fa57ee28e1174a,
+            mid_init$_369b4c97255d5afa,
+            mid_init$_b6324221e091bb31,
+            mid_doOptimize_4a799806e31c160d,
             max_mid
           };
 

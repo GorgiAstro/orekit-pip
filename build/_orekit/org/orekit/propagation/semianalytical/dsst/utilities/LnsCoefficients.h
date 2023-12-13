@@ -4,12 +4,12 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace lang {
-    class Double;
-    class Class;
-  }
   namespace util {
     class SortedMap;
+  }
+  namespace lang {
+    class Class;
+    class Double;
   }
 }
 namespace org {
@@ -37,9 +37,9 @@ namespace org {
             class LnsCoefficients : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_75c0bd93df30ee67,
-                mid_getLns_21b81d54c06b64b0,
-                mid_getdLnsdGamma_21b81d54c06b64b0,
+                mid_init$_91749d1b642bb169,
+                mid_getLns_cad98089d00f8a5b,
+                mid_getdLnsdGamma_cad98089d00f8a5b,
                 max_mid
               };
 

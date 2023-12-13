@@ -34,8 +34,8 @@ namespace org {
             class RangeUnits : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_4c7cc8df198ddf6b,
-                mid_values_330e0605ebb61bd3,
+                mid_valueOf_23c5752b6e8d9c07,
+                mid_values_cb64de91172f517e,
                 max_mid
               };
 

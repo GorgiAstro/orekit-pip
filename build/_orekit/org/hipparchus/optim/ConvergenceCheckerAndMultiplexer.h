@@ -3,19 +3,19 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace optim {
+      class ConvergenceChecker;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace optim {
-      class ConvergenceChecker;
-    }
   }
 }
 template<class T> class JArray;
@@ -27,8 +27,8 @@ namespace org {
       class ConvergenceCheckerAndMultiplexer : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_4ccaedadb068bdeb,
-          mid_converged_a643aa1e5ed43cf0,
+          mid_init$_0e7c3032c7c93ed3,
+          mid_converged_061aaa68e115701e,
           max_mid
         };
 

@@ -3,18 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class IllegalStateException;
-    class Class;
-  }
-  namespace util {
-    namespace stream {
-      class Stream;
-    }
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
@@ -29,6 +17,18 @@ namespace org {
     class CalculusFieldElement;
   }
 }
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+    class IllegalStateException;
+  }
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -38,15 +38,15 @@ namespace org {
       class PythonFieldTimeStampedCache : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_finalize_0640e6acf969ed28,
-          mid_getEarliest_d840ecaffb3bbf7f,
-          mid_getLatest_d840ecaffb3bbf7f,
-          mid_getNeighbors_d2b16151ed8cc73c,
-          mid_getNeighborsSize_412668abc8d889e9,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_getEarliest_e7a49be0190c3b40,
+          mid_getLatest_e7a49be0190c3b40,
+          mid_getNeighbors_fe526c9a9cb8189c,
+          mid_getNeighborsSize_55546ef6a647f39b,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
           max_mid
         };
 

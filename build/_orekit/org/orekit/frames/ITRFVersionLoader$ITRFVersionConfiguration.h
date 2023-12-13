@@ -25,10 +25,10 @@ namespace org {
       class ITRFVersionLoader$ITRFVersionConfiguration : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0faa264352fa9521,
-          mid_appliesTo_fd2162b8a05a22fe,
-          mid_getVersion_b311296551ce8af2,
-          mid_isValid_e034cac2b514bb09,
+          mid_init$_e9ff5fabd0096151,
+          mid_appliesTo_cde6b28e15c96b75,
+          mid_getVersion_8bcdfad365f6d36a,
+          mid_isValid_96f51a3f36d3a2a7,
           max_mid
         };
 

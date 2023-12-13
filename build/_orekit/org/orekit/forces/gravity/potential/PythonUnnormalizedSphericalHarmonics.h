@@ -34,14 +34,14 @@ namespace org {
           class PythonUnnormalizedSphericalHarmonics : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_finalize_0640e6acf969ed28,
-              mid_getDate_7a97f7e149e79afb,
-              mid_getUnnormalizedCnm_21b81d54c06b64b0,
-              mid_getUnnormalizedSnm_21b81d54c06b64b0,
-              mid_pythonDecRef_0640e6acf969ed28,
-              mid_pythonExtension_9e26256fb0d384a2,
-              mid_pythonExtension_3cd6a6b354c6aa22,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_finalize_a1fa5dae97ea5ed2,
+              mid_getDate_c325492395d89b24,
+              mid_getUnnormalizedCnm_cad98089d00f8a5b,
+              mid_getUnnormalizedSnm_cad98089d00f8a5b,
+              mid_pythonDecRef_a1fa5dae97ea5ed2,
+              mid_pythonExtension_6c0ce7e438e5ded4,
+              mid_pythonExtension_3d7dd2314a0dd456,
               max_mid
             };
 

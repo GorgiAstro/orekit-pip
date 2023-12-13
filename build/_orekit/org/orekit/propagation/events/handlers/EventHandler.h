@@ -4,6 +4,13 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace ode {
+      namespace events {
+        class Action;
+      }
+    }
+  }
   namespace orekit {
     namespace propagation {
       namespace events {
@@ -13,13 +20,6 @@ namespace org {
     }
     namespace time {
       class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    namespace ode {
-      namespace events {
-        class Action;
-      }
     }
   }
 }
@@ -39,9 +39,9 @@ namespace org {
           class EventHandler : public ::java::lang::Object {
            public:
             enum {
-              mid_eventOccurred_c85ac59cb25f2670,
-              mid_init_e0491fcf7b1e4288,
-              mid_resetState_ce9bc9b3806ce3d4,
+              mid_eventOccurred_ae9b0131fefe6c67,
+              mid_init_0ac7022abb4b9f0c,
+              mid_resetState_ec159c1171338d74,
               max_mid
             };
 

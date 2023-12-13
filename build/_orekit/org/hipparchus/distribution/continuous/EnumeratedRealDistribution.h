@@ -3,6 +3,16 @@
 
 #include "org/hipparchus/distribution/continuous/AbstractRealDistribution.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace util {
+      class Pair;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,16 +20,6 @@ namespace java {
   namespace lang {
     class Double;
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
-    namespace util {
-      class Pair;
-    }
   }
 }
 template<class T> class JArray;
@@ -32,18 +32,18 @@ namespace org {
         class EnumeratedRealDistribution : public ::org::hipparchus::distribution::continuous::AbstractRealDistribution {
          public:
           enum {
-            mid_init$_cc18240f4a737f14,
-            mid_init$_ab4840ba016ef1da,
-            mid_cumulativeProbability_7e960cd6eee376d8,
-            mid_density_7e960cd6eee376d8,
-            mid_getNumericalMean_557b8123390d8d0c,
-            mid_getNumericalVariance_557b8123390d8d0c,
-            mid_getPmf_0d9551367f7ecdef,
-            mid_getSupportLowerBound_557b8123390d8d0c,
-            mid_getSupportUpperBound_557b8123390d8d0c,
-            mid_inverseCumulativeProbability_7e960cd6eee376d8,
-            mid_isSupportConnected_89b302893bdbe1f1,
-            mid_probability_7e960cd6eee376d8,
+            mid_init$_ab69da052b88f50c,
+            mid_init$_b15baa0161a4e9c7,
+            mid_cumulativeProbability_04fd0666b613d2ab,
+            mid_density_04fd0666b613d2ab,
+            mid_getNumericalMean_b74f83833fdad017,
+            mid_getNumericalVariance_b74f83833fdad017,
+            mid_getPmf_e62d3bb06d56d7e3,
+            mid_getSupportLowerBound_b74f83833fdad017,
+            mid_getSupportUpperBound_b74f83833fdad017,
+            mid_inverseCumulativeProbability_04fd0666b613d2ab,
+            mid_isSupportConnected_9ab94ac1dc23b105,
+            mid_probability_04fd0666b613d2ab,
             max_mid
           };
 

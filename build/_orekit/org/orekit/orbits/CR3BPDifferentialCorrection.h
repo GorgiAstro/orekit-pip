@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
+    namespace orbits {
+      class LibrationOrbitType;
+    }
     namespace bodies {
       class CR3BPSystem;
     }
     namespace utils {
       class PVCoordinates;
-    }
-    namespace orbits {
-      class LibrationOrbitType;
     }
   }
 }
@@ -30,10 +30,10 @@ namespace org {
       class CR3BPDifferentialCorrection : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_8f03eba65c494143,
-          mid_compute_27f12804cfd1d93f,
-          mid_computeLyapunov_77bd7b3cdab2713e,
-          mid_getOrbitalPeriod_557b8123390d8d0c,
+          mid_init$_ca22d3696294da25,
+          mid_compute_36376aefc9347e81,
+          mid_computeLyapunov_180fb117720acb76,
+          mid_getOrbitalPeriod_b74f83833fdad017,
           max_mid
         };
 

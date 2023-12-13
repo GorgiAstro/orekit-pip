@@ -17,7 +17,7 @@ namespace java {
     class AutoCloseable : public ::java::lang::Object {
      public:
       enum {
-        mid_close_0640e6acf969ed28,
+        mid_close_a1fa5dae97ea5ed2,
         max_mid
       };
 

@@ -4,22 +4,7 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class FieldVector3D;
-          class Vector3D;
-        }
-      }
-    }
-    class CalculusFieldElement;
-  }
   namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
-    }
     namespace forces {
       namespace radiation {
         class RadiationSensitive;
@@ -28,6 +13,21 @@ namespace org {
     namespace utils {
       class ParameterDriver;
     }
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+          class FieldVector3D;
+        }
+      }
+    }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -49,14 +49,14 @@ namespace org {
         class PythonRadiationSensitive : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_finalize_0640e6acf969ed28,
-            mid_getRadiationParametersDrivers_0d9551367f7ecdef,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
-            mid_radiationPressureAcceleration_a910b2c2e7db1f82,
-            mid_radiationPressureAcceleration_122b60d0431fddf5,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_getRadiationParametersDrivers_e62d3bb06d56d7e3,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_radiationPressureAcceleration_a230d7bdb943f733,
+            mid_radiationPressureAcceleration_a99eceb06c3864f8,
             max_mid
           };
 

@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace models {
       namespace earth {
-        class GeoMagneticElements;
         class GeoMagneticField;
+        class GeoMagneticElements;
       }
     }
   }
@@ -29,17 +29,17 @@ namespace org {
         class GeoMagneticField : public ::java::lang::Object {
          public:
           enum {
-            mid_calculateField_115cc5c8f9d6f38b,
-            mid_getDecimalYear_093995dc5657c18c,
-            mid_getEpoch_557b8123390d8d0c,
-            mid_getModelName_3cffd47377eca18a,
-            mid_supportsTimeTransform_89b302893bdbe1f1,
-            mid_transformModel_7100d3672aa999e4,
-            mid_transformModel_64649f752fe0c2a3,
-            mid_validFrom_557b8123390d8d0c,
-            mid_validTo_557b8123390d8d0c,
-            mid_setMainFieldCoefficients_8f08153945634de4,
-            mid_setSecularVariationCoefficients_8f08153945634de4,
+            mid_calculateField_54d6c2ca75c55cb8,
+            mid_getDecimalYear_2f53baea9459d443,
+            mid_getEpoch_b74f83833fdad017,
+            mid_getModelName_1c1fa1e935d6cdcf,
+            mid_supportsTimeTransform_9ab94ac1dc23b105,
+            mid_transformModel_0b71ae56f8fa5718,
+            mid_transformModel_e0a954d9b53a7db9,
+            mid_validFrom_b74f83833fdad017,
+            mid_validTo_b74f83833fdad017,
+            mid_setMainFieldCoefficients_97e33498326f7285,
+            mid_setSecularVariationCoefficients_97e33498326f7285,
             max_mid
           };
 

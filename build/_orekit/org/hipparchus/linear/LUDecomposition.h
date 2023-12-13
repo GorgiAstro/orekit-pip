@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace linear {
-      class DecompositionSolver;
-      class RealMatrix;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
+      class DecompositionSolver;
+    }
   }
 }
 template<class T> class JArray;
@@ -25,14 +25,14 @@ namespace org {
       class LUDecomposition : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_f3731847577f13e6,
-          mid_init$_08eaf415db10314f,
-          mid_getDeterminant_557b8123390d8d0c,
-          mid_getL_70a207fcbc031df2,
-          mid_getP_70a207fcbc031df2,
-          mid_getPivot_1b41cf9ebf653611,
-          mid_getSolver_ccd666b17ae2e6eb,
-          mid_getU_70a207fcbc031df2,
+          mid_init$_84bd15e0995d0c79,
+          mid_init$_5c88fbe0835e7c85,
+          mid_getDeterminant_b74f83833fdad017,
+          mid_getL_f77d745f2128c391,
+          mid_getP_f77d745f2128c391,
+          mid_getPivot_4d095d7a08163110,
+          mid_getSolver_5823fb909376de2c,
+          mid_getU_f77d745f2128c391,
           max_mid
         };
 

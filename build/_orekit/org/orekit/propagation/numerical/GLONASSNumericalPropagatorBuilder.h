@@ -18,14 +18,14 @@ namespace org {
         }
       }
     }
-    namespace frames {
-      class Frame;
-    }
     namespace attitudes {
       class AttitudeProvider;
     }
     namespace data {
       class DataContext;
+    }
+    namespace frames {
+      class Frame;
     }
   }
   namespace hipparchus {
@@ -51,12 +51,12 @@ namespace org {
         class GLONASSNumericalPropagatorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_c4f5084529b2630a,
-            mid_init$_fe060e7d2340011c,
-            mid_attitudeProvider_b8e20793d178ef3e,
-            mid_build_66895542a8da4316,
-            mid_eci_d85d69f2cf281f4c,
-            mid_mass_1e4b091bb86c38aa,
+            mid_init$_5a157716d99d2dba,
+            mid_init$_f806e2b3093232f1,
+            mid_attitudeProvider_7169e102dfc73eee,
+            mid_build_07f50350551620b7,
+            mid_eci_15065cfa26ddd9c8,
+            mid_mass_d0621a951657be02,
             max_mid
           };
 

@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
+    namespace errors {
+      class OrekitIllegalArgumentException;
+    }
     namespace files {
       namespace rinex {
         namespace navigation {
           class UtcId;
         }
       }
-    }
-    namespace errors {
-      class OrekitIllegalArgumentException;
     }
   }
 }
@@ -34,9 +34,9 @@ namespace org {
           class UtcId : public ::java::lang::Enum {
            public:
             enum {
-              mid_parseUtcId_9f2eee73709b5560,
-              mid_valueOf_9f2eee73709b5560,
-              mid_values_196341a182645da7,
+              mid_parseUtcId_247a95328cebe570,
+              mid_valueOf_247a95328cebe570,
+              mid_values_9aef199c9510dba2,
               max_mid
             };
 

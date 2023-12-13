@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace data {
       class DataSource$StreamOpener;
-      class DataSource$ReaderOpener;
       class DataSource$Opener;
+      class DataSource$ReaderOpener;
     }
   }
 }
@@ -30,12 +30,12 @@ namespace org {
       class DataSource : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_5d6bcca91ae998ee,
-          mid_init$_f5ffdf29129ef90a,
-          mid_init$_d78fe12c98ba1e42,
-          mid_init$_e3be660e5a2ef485,
-          mid_getName_3cffd47377eca18a,
-          mid_getOpener_4793c6fb0a9a9512,
+          mid_init$_7e1d51614d5d6a43,
+          mid_init$_734b91ac30d5f9b4,
+          mid_init$_11e27b54ddfbe464,
+          mid_init$_01c9671fbea49908,
+          mid_getName_1c1fa1e935d6cdcf,
+          mid_getOpener_6ab2f1362b4cc067,
           max_mid
         };
 

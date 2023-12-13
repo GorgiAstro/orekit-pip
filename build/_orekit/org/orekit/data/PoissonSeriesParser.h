@@ -6,9 +6,9 @@
 namespace org {
   namespace orekit {
     namespace data {
-      class PoissonSeriesParser;
       class PoissonSeries;
       class PolynomialParser$Unit;
+      class PoissonSeriesParser;
     }
   }
 }
@@ -30,15 +30,15 @@ namespace org {
       class PoissonSeriesParser : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a3da1a935cb37f7b,
-          mid_parse_7bc0c72c38f7f723,
-          mid_withDoodson_26b8a2a75a89e12b,
-          mid_withFirstDelaunay_2098ad57f676ba38,
-          mid_withFirstPlanetary_2098ad57f676ba38,
-          mid_withGamma_2098ad57f676ba38,
-          mid_withOptionalColumn_2098ad57f676ba38,
-          mid_withPolynomialPart_fc61e1684ac4d72c,
-          mid_withSinCos_12c525c604f68c4f,
+          mid_init$_44ed599e93e8a30c,
+          mid_parse_d3d2c20e86656cb1,
+          mid_withDoodson_71e486f1e2a3f81a,
+          mid_withFirstDelaunay_23a9dcacefe9d395,
+          mid_withFirstPlanetary_23a9dcacefe9d395,
+          mid_withGamma_23a9dcacefe9d395,
+          mid_withOptionalColumn_23a9dcacefe9d395,
+          mid_withPolynomialPart_87e4a7d7691b030f,
+          mid_withSinCos_8d1ffe23bafb05dc,
           max_mid
         };
 

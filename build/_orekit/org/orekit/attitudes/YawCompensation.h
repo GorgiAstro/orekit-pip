@@ -6,20 +6,20 @@
 namespace org {
   namespace orekit {
     namespace attitudes {
-      class Attitude;
-      class FieldAttitude;
       class AttitudeProvider;
+      class FieldAttitude;
       class AttitudeProviderModifier;
-    }
-    namespace utils {
-      class TimeStampedFieldPVCoordinates;
-      class PVCoordinatesProvider;
-      class FieldPVCoordinatesProvider;
-      class TimeStampedPVCoordinates;
+      class Attitude;
     }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
+    }
+    namespace utils {
+      class TimeStampedPVCoordinates;
+      class PVCoordinatesProvider;
+      class FieldPVCoordinatesProvider;
+      class TimeStampedFieldPVCoordinates;
     }
     namespace frames {
       class Frame;
@@ -43,16 +43,16 @@ namespace org {
       class YawCompensation : public ::org::orekit::attitudes::GroundPointing {
        public:
         enum {
-          mid_init$_e52dd4acf08c7383,
-          mid_getAttitude_1306ac39e1d2de3f,
-          mid_getAttitude_77e3383de01f3e48,
-          mid_getBaseState_1306ac39e1d2de3f,
-          mid_getBaseState_77e3383de01f3e48,
-          mid_getTargetPV_ee00ab612436435b,
-          mid_getTargetPV_9e0119a6fef31431,
-          mid_getUnderlyingAttitudeProvider_6df6b78ab9377151,
-          mid_getYawAngle_943fd94a25b2c056,
-          mid_getYawAngle_b6c12af81c60eb89,
+          mid_init$_4fd6b68216eca075,
+          mid_getAttitude_21845cfb0034fe1c,
+          mid_getAttitude_896ee4d68989b1e8,
+          mid_getBaseState_896ee4d68989b1e8,
+          mid_getBaseState_21845cfb0034fe1c,
+          mid_getTargetPV_0c9a6603286e7c6f,
+          mid_getTargetPV_4a6b199bd28f952f,
+          mid_getUnderlyingAttitudeProvider_331f12bb6017243b,
+          mid_getYawAngle_d53e9b0dc6051605,
+          mid_getYawAngle_b886623ec50269a5,
           max_mid
         };
 
@@ -71,13 +71,13 @@ namespace org {
 
         ::org::orekit::attitudes::Attitude getAttitude(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::attitudes::FieldAttitude getAttitude(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
-        ::org::orekit::attitudes::Attitude getBaseState(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::attitudes::FieldAttitude getBaseState(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
+        ::org::orekit::attitudes::Attitude getBaseState(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::utils::TimeStampedPVCoordinates getTargetPV(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::utils::TimeStampedFieldPVCoordinates getTargetPV(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::attitudes::AttitudeProvider getUnderlyingAttitudeProvider() const;
-        jdouble getYawAngle(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::hipparchus::CalculusFieldElement getYawAngle(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
+        jdouble getYawAngle(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
       };
     }
   }

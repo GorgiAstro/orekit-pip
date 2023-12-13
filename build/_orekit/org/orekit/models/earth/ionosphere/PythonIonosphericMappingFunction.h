@@ -34,14 +34,14 @@ namespace org {
           class PythonIonosphericMappingFunction : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_finalize_0640e6acf969ed28,
-              mid_mappingFactor_7e960cd6eee376d8,
-              mid_mappingFactor_6672ad854985cb64,
-              mid_mappingFactor_T_6672ad854985cb64,
-              mid_pythonDecRef_0640e6acf969ed28,
-              mid_pythonExtension_9e26256fb0d384a2,
-              mid_pythonExtension_3cd6a6b354c6aa22,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_finalize_a1fa5dae97ea5ed2,
+              mid_mappingFactor_04fd0666b613d2ab,
+              mid_mappingFactor_6e00dc5eb352fe51,
+              mid_mappingFactor_T_6e00dc5eb352fe51,
+              mid_pythonDecRef_a1fa5dae97ea5ed2,
+              mid_pythonExtension_6c0ce7e438e5ded4,
+              mid_pythonExtension_3d7dd2314a0dd456,
               max_mid
             };
 

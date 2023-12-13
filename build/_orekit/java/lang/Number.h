@@ -19,13 +19,13 @@ namespace java {
     class Number : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_0640e6acf969ed28,
-        mid_byteValue_acadfed42a0dbd0d,
-        mid_doubleValue_557b8123390d8d0c,
-        mid_floatValue_04fe014f7609dc26,
-        mid_intValue_412668abc8d889e9,
-        mid_longValue_9e26256fb0d384a2,
-        mid_shortValue_2554afc868a7ba2a,
+        mid_init$_a1fa5dae97ea5ed2,
+        mid_byteValue_82ba37184c5152a3,
+        mid_doubleValue_b74f83833fdad017,
+        mid_floatValue_1fb1bf0772ae5db7,
+        mid_intValue_55546ef6a647f39b,
+        mid_longValue_6c0ce7e438e5ded4,
+        mid_shortValue_02a2271f89f4492b,
         max_mid
       };
 

@@ -25,8 +25,8 @@ namespace org {
       class ResizableDoubleArray$ExpansionMode : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_1e6e93add2b577b2,
-          mid_values_ba69dfce75e1a513,
+          mid_valueOf_4fa45af8c84d4bc5,
+          mid_values_d78002359672310a,
           max_mid
         };
 

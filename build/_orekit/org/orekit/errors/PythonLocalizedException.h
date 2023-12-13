@@ -14,14 +14,14 @@ namespace java {
   }
 }
 namespace org {
-  namespace orekit {
-    namespace errors {
-      class LocalizedException;
-    }
-  }
   namespace hipparchus {
     namespace exception {
       class Localizable;
+    }
+  }
+  namespace orekit {
+    namespace errors {
+      class LocalizedException;
     }
   }
 }
@@ -34,14 +34,14 @@ namespace org {
       class PythonLocalizedException : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_finalize_0640e6acf969ed28,
-          mid_getMessage_4b51060c6b7ea981,
-          mid_getParts_6555a5198c71b73a,
-          mid_getSpecifier_a86d7419cf3241b7,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_getMessage_26070c28e6ea354d,
+          mid_getParts_24e2edd6319f4c5a,
+          mid_getSpecifier_d8f5056e4f45c9a6,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
           max_mid
         };
 

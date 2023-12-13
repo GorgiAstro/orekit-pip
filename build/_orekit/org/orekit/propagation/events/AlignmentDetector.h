@@ -12,10 +12,10 @@ namespace org {
       class Orbit;
     }
     namespace propagation {
-      class SpacecraftState;
       namespace events {
         class AlignmentDetector;
       }
+      class SpacecraftState;
     }
   }
 }
@@ -34,13 +34,13 @@ namespace org {
         class AlignmentDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_aed1e5e2c0bb6357,
-            mid_init$_17eb6f22d90ddf81,
-            mid_init$_4bdbf08a39a739b6,
-            mid_g_1bbf81d80c47ecdd,
-            mid_getAlignAngle_557b8123390d8d0c,
-            mid_getPVCoordinatesProvider_dec199e86bf037eb,
-            mid_create_9a047e0db722d0f0,
+            mid_init$_0f26039f723423f9,
+            mid_init$_45fbe9bb503ae085,
+            mid_init$_a7aae65c472927ce,
+            mid_g_a17ea857ce74d258,
+            mid_getAlignAngle_b74f83833fdad017,
+            mid_getPVCoordinatesProvider_8a41319e47f3bd7c,
+            mid_create_2b5e486a53cc56d8,
             max_mid
           };
 

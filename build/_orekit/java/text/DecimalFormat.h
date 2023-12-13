@@ -5,15 +5,15 @@
 
 namespace java {
   namespace text {
-    class ParsePosition;
-    class DecimalFormatSymbols;
-    class AttributedCharacterIterator;
     class FieldPosition;
+    class ParsePosition;
+    class AttributedCharacterIterator;
+    class DecimalFormatSymbols;
   }
   namespace lang {
     class Number;
-    class Class;
     class StringBuffer;
+    class Class;
     class Object;
     class String;
   }
@@ -29,50 +29,50 @@ namespace java {
     class DecimalFormat : public ::java::text::NumberFormat {
      public:
       enum {
-        mid_init$_0640e6acf969ed28,
-        mid_init$_f5ffdf29129ef90a,
-        mid_init$_84c59652ea37ae90,
-        mid_applyLocalizedPattern_f5ffdf29129ef90a,
-        mid_applyPattern_f5ffdf29129ef90a,
-        mid_clone_e661fe3ba2fafb22,
-        mid_equals_221e8e85cb385209,
-        mid_format_12b2fbc0c0cefa8d,
-        mid_format_60ec49fc2ad8aa0e,
-        mid_format_d9d8c4aa92e35cdf,
-        mid_formatToCharacterIterator_67523d7667ad62e2,
-        mid_getCurrency_e0e11425d6f25aed,
-        mid_getDecimalFormatSymbols_42697fd6214b108c,
-        mid_getGroupingSize_412668abc8d889e9,
-        mid_getMaximumFractionDigits_412668abc8d889e9,
-        mid_getMaximumIntegerDigits_412668abc8d889e9,
-        mid_getMinimumFractionDigits_412668abc8d889e9,
-        mid_getMinimumIntegerDigits_412668abc8d889e9,
-        mid_getMultiplier_412668abc8d889e9,
-        mid_getNegativePrefix_3cffd47377eca18a,
-        mid_getNegativeSuffix_3cffd47377eca18a,
-        mid_getPositivePrefix_3cffd47377eca18a,
-        mid_getPositiveSuffix_3cffd47377eca18a,
-        mid_hashCode_412668abc8d889e9,
-        mid_isDecimalSeparatorAlwaysShown_89b302893bdbe1f1,
-        mid_isParseBigDecimal_89b302893bdbe1f1,
-        mid_parse_5536e661c34c19f2,
-        mid_setCurrency_f72be4c0db9df8b9,
-        mid_setDecimalFormatSymbols_b786b2c477d2681b,
-        mid_setDecimalSeparatorAlwaysShown_ed2afdb8506b9742,
-        mid_setGroupingSize_a3da1a935cb37f7b,
-        mid_setGroupingUsed_ed2afdb8506b9742,
-        mid_setMaximumFractionDigits_a3da1a935cb37f7b,
-        mid_setMaximumIntegerDigits_a3da1a935cb37f7b,
-        mid_setMinimumFractionDigits_a3da1a935cb37f7b,
-        mid_setMinimumIntegerDigits_a3da1a935cb37f7b,
-        mid_setMultiplier_a3da1a935cb37f7b,
-        mid_setNegativePrefix_f5ffdf29129ef90a,
-        mid_setNegativeSuffix_f5ffdf29129ef90a,
-        mid_setParseBigDecimal_ed2afdb8506b9742,
-        mid_setPositivePrefix_f5ffdf29129ef90a,
-        mid_setPositiveSuffix_f5ffdf29129ef90a,
-        mid_toLocalizedPattern_3cffd47377eca18a,
-        mid_toPattern_3cffd47377eca18a,
+        mid_init$_a1fa5dae97ea5ed2,
+        mid_init$_734b91ac30d5f9b4,
+        mid_init$_5abfc95260fd6c6b,
+        mid_applyLocalizedPattern_734b91ac30d5f9b4,
+        mid_applyPattern_734b91ac30d5f9b4,
+        mid_clone_541690f9ee81d3ad,
+        mid_equals_460c5e2d9d51c6cc,
+        mid_format_cdee9bc08b68d2f3,
+        mid_format_b972afa1d89f0ad4,
+        mid_format_1d561f51d282798c,
+        mid_formatToCharacterIterator_1e9e330ed3e6edfe,
+        mid_getCurrency_5c4bce1ad9114b42,
+        mid_getDecimalFormatSymbols_36ca27640d647410,
+        mid_getGroupingSize_55546ef6a647f39b,
+        mid_getMaximumFractionDigits_55546ef6a647f39b,
+        mid_getMaximumIntegerDigits_55546ef6a647f39b,
+        mid_getMinimumFractionDigits_55546ef6a647f39b,
+        mid_getMinimumIntegerDigits_55546ef6a647f39b,
+        mid_getMultiplier_55546ef6a647f39b,
+        mid_getNegativePrefix_1c1fa1e935d6cdcf,
+        mid_getNegativeSuffix_1c1fa1e935d6cdcf,
+        mid_getPositivePrefix_1c1fa1e935d6cdcf,
+        mid_getPositiveSuffix_1c1fa1e935d6cdcf,
+        mid_hashCode_55546ef6a647f39b,
+        mid_isDecimalSeparatorAlwaysShown_9ab94ac1dc23b105,
+        mid_isParseBigDecimal_9ab94ac1dc23b105,
+        mid_parse_a972e28e38f8fd3f,
+        mid_setCurrency_4943c1e384d46623,
+        mid_setDecimalFormatSymbols_e702ad65752cd8ec,
+        mid_setDecimalSeparatorAlwaysShown_fcb96c98de6fad04,
+        mid_setGroupingSize_44ed599e93e8a30c,
+        mid_setGroupingUsed_fcb96c98de6fad04,
+        mid_setMaximumFractionDigits_44ed599e93e8a30c,
+        mid_setMaximumIntegerDigits_44ed599e93e8a30c,
+        mid_setMinimumFractionDigits_44ed599e93e8a30c,
+        mid_setMinimumIntegerDigits_44ed599e93e8a30c,
+        mid_setMultiplier_44ed599e93e8a30c,
+        mid_setNegativePrefix_734b91ac30d5f9b4,
+        mid_setNegativeSuffix_734b91ac30d5f9b4,
+        mid_setParseBigDecimal_fcb96c98de6fad04,
+        mid_setPositivePrefix_734b91ac30d5f9b4,
+        mid_setPositiveSuffix_734b91ac30d5f9b4,
+        mid_toLocalizedPattern_1c1fa1e935d6cdcf,
+        mid_toPattern_1c1fa1e935d6cdcf,
         max_mid
       };
 

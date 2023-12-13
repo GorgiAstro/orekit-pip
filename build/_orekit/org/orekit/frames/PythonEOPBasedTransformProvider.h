@@ -3,24 +3,24 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace frames {
-      class Transform;
-      class EOPBasedTransformProvider;
       class FieldTransform;
+      class EOPBasedTransformProvider;
+      class Transform;
       class EOPHistory;
     }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -32,15 +32,15 @@ namespace org {
       class PythonEOPBasedTransformProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_finalize_0640e6acf969ed28,
-          mid_getEOPHistory_9a64cc378cf7ab6b,
-          mid_getNonInterpolatingProvider_6eea5bc11bda953b,
-          mid_getTransform_df04e3927954349e,
-          mid_getTransform_e70631ba002d9a32,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_getEOPHistory_f9d30be358d43685,
+          mid_getNonInterpolatingProvider_8b3864a3bd1af1da,
+          mid_getTransform_976d4bc81671ce42,
+          mid_getTransform_7a8ca6856fe3fc9e,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
           max_mid
         };
 

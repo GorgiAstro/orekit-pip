@@ -3,12 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
@@ -16,8 +10,8 @@ namespace org {
       class AbsoluteDate;
     }
     namespace attitudes {
-      class BoundedAttitudeProvider;
       class FieldAttitude;
+      class BoundedAttitudeProvider;
       class Attitude;
     }
     namespace utils {
@@ -29,6 +23,12 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -38,15 +38,15 @@ namespace org {
       class PythonBoundedAttitudeProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_finalize_0640e6acf969ed28,
-          mid_getAttitude_77e3383de01f3e48,
-          mid_getAttitude_1306ac39e1d2de3f,
-          mid_getMaxDate_7a97f7e149e79afb,
-          mid_getMinDate_7a97f7e149e79afb,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_getAttitude_21845cfb0034fe1c,
+          mid_getAttitude_896ee4d68989b1e8,
+          mid_getMaxDate_c325492395d89b24,
+          mid_getMinDate_c325492395d89b24,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
           max_mid
         };
 
@@ -64,8 +64,8 @@ namespace org {
         PythonBoundedAttitudeProvider();
 
         void finalize() const;
-        ::org::orekit::attitudes::FieldAttitude getAttitude(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::attitudes::Attitude getAttitude(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
+        ::org::orekit::attitudes::FieldAttitude getAttitude(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::time::AbsoluteDate getMaxDate() const;
         ::org::orekit::time::AbsoluteDate getMinDate() const;
         void pythonDecRef() const;

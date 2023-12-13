@@ -5,20 +5,20 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class TimeStampedFieldPVCoordinates;
-      class FieldPVCoordinatesProvider;
-      class TimeStampedPVCoordinates;
-    }
-    namespace bodies {
-      class CelestialBody;
-    }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
     }
+    namespace utils {
+      class TimeStampedPVCoordinates;
+      class FieldPVCoordinatesProvider;
+      class TimeStampedFieldPVCoordinates;
+    }
     namespace frames {
       class Frame;
+    }
+    namespace bodies {
+      class CelestialBody;
     }
   }
   namespace hipparchus {
@@ -41,18 +41,18 @@ namespace org {
       class PythonCelestialBody : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_finalize_0640e6acf969ed28,
-          mid_getBodyOrientedFrame_6c9bc0a928c56d4e,
-          mid_getGM_557b8123390d8d0c,
-          mid_getInertiallyOrientedFrame_6c9bc0a928c56d4e,
-          mid_getName_3cffd47377eca18a,
-          mid_getPVCoordinates_17742a9a6655bdb1,
-          mid_getPVCoordinates_4ac52e75113a03db,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
-          mid_toFieldPVCoordinatesProvider_cdcdbddb8a8cc591,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_getBodyOrientedFrame_2c51111cc6894ba1,
+          mid_getGM_b74f83833fdad017,
+          mid_getInertiallyOrientedFrame_2c51111cc6894ba1,
+          mid_getName_1c1fa1e935d6cdcf,
+          mid_getPVCoordinates_e5d15ef236cd9ffe,
+          mid_getPVCoordinates_294c5c99690f2356,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_toFieldPVCoordinatesProvider_9516b47d48320472,
           max_mid
         };
 

@@ -14,14 +14,14 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace propagation {
       namespace sampling {
         class MultiSatFixedStepHandler;
       }
       class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -35,14 +35,14 @@ namespace org {
         class PythonMultiSatFixedStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_finalize_0640e6acf969ed28,
-            mid_finish_4ccaedadb068bdeb,
-            mid_handleStep_4ccaedadb068bdeb,
-            mid_init_fefad6c1f262d1e2,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_finish_0e7c3032c7c93ed3,
+            mid_handleStep_0e7c3032c7c93ed3,
+            mid_init_153af04ac8851d6f,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
             max_mid
           };
 

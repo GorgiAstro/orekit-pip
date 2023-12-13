@@ -5,19 +5,19 @@
 
 namespace org {
   namespace orekit {
+    namespace errors {
+      class OrekitIllegalArgumentException;
+    }
     namespace gnss {
-      namespace antenna {
-        class SatelliteType;
-      }
       namespace attitude {
         class GNSSAttitudeProvider;
+      }
+      namespace antenna {
+        class SatelliteType;
       }
     }
     namespace utils {
       class ExtendedPVCoordinatesProvider;
-    }
-    namespace errors {
-      class OrekitIllegalArgumentException;
     }
     namespace frames {
       class Frame;
@@ -43,11 +43,11 @@ namespace org {
         class SatelliteType : public ::java::lang::Enum {
          public:
           enum {
-            mid_buildAttitudeProvider_100eafc913713295,
-            mid_getName_3cffd47377eca18a,
-            mid_parseSatelliteType_d3855400a5de9c88,
-            mid_valueOf_d3855400a5de9c88,
-            mid_values_a783438e9dd7dd05,
+            mid_buildAttitudeProvider_638d87bbeb692ef8,
+            mid_getName_1c1fa1e935d6cdcf,
+            mid_parseSatelliteType_4c8fc709a887ef27,
+            mid_valueOf_4c8fc709a887ef27,
+            mid_values_42614b441f541c9a,
             max_mid
           };
 

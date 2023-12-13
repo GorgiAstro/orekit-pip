@@ -3,26 +3,26 @@
 
 #include "org/orekit/propagation/events/FieldAbstractDetector.h"
 
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-      namespace events {
-        namespace handlers {
-          class FieldEventHandler;
-        }
-        class FieldAdaptableInterval;
-      }
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-}
 namespace java {
   namespace lang {
     class Throwable;
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace events {
+        class FieldAdaptableInterval;
+        namespace handlers {
+          class FieldEventHandler;
+        }
+      }
+      class FieldSpacecraftState;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -35,13 +35,13 @@ namespace org {
         class PythonFieldAbstractDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_60ba095ed62a3683,
-            mid_create_ac1c597f89a746d9,
-            mid_finalize_0640e6acf969ed28,
-            mid_g_de1c2d709eb2829c,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
+            mid_init$_f96af71e81af8c64,
+            mid_create_106f52de5ffac709,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_g_2203631097e94c79,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
             max_mid
           };
 

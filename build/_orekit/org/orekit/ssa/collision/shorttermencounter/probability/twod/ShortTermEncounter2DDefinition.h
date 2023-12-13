@@ -4,26 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace frames {
-      namespace encounter {
-        class EncounterLOF;
-        class EncounterLOFType;
-      }
-    }
-    namespace utils {
-      class PVCoordinates;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace orbits {
-      class Orbit;
-    }
-    namespace propagation {
-      class StateCovariance;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -34,6 +14,26 @@ namespace org {
     }
     namespace linear {
       class RealMatrix;
+    }
+  }
+  namespace orekit {
+    namespace propagation {
+      class StateCovariance;
+    }
+    namespace frames {
+      namespace encounter {
+        class EncounterLOF;
+        class EncounterLOFType;
+      }
+    }
+    namespace orbits {
+      class Orbit;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class PVCoordinates;
     }
   }
 }
@@ -55,34 +55,34 @@ namespace org {
               class ShortTermEncounter2DDefinition : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_45b4ee740e8d45ab,
-                  mid_init$_c946a44e40dff7f4,
-                  mid_init$_fe93df6ed6c46598,
-                  mid_init$_4f9dd48a8d0a9867,
-                  mid_computeCombinedCovarianceInEncounterFrame_8e9af39b29713242,
-                  mid_computeCombinedCovarianceInReferenceTNW_8e9af39b29713242,
-                  mid_computeCoppolaEncounterDuration_557b8123390d8d0c,
-                  mid_computeMahalanobisDistance_557b8123390d8d0c,
-                  mid_computeMahalanobisDistance_7e960cd6eee376d8,
-                  mid_computeMissDistance_557b8123390d8d0c,
-                  mid_computeOtherPositionInCollisionPlane_f681f2fc9cdfab57,
-                  mid_computeOtherPositionInRotatedCollisionPlane_f681f2fc9cdfab57,
-                  mid_computeOtherPositionInRotatedCollisionPlane_1b4c0a5fd68f3ffb,
-                  mid_computeOtherRelativeToReferencePVInReferenceInertial_77bd7b3cdab2713e,
-                  mid_computeProjectedAndDiagonalizedCombinedPositionalCovarianceMatrix_70a207fcbc031df2,
-                  mid_computeProjectedCombinedPositionalCovarianceMatrix_70a207fcbc031df2,
-                  mid_computeReferenceInertialToCollisionPlaneProjectionMatrix_70a207fcbc031df2,
-                  mid_computeSquaredMahalanobisDistance_557b8123390d8d0c,
-                  mid_computeSquaredMahalanobisDistance_7e960cd6eee376d8,
-                  mid_computeSquaredMahalanobisDistance_ee5b345ac15668c2,
-                  mid_computeSquaredMahalanobisDistance_79d60f5d1a9d8623,
-                  mid_getCombinedRadius_557b8123390d8d0c,
-                  mid_getEncounterFrame_ebfb39c00facd535,
-                  mid_getOtherAtTCA_71f9c54b5f482a59,
-                  mid_getOtherCovariance_8e9af39b29713242,
-                  mid_getReferenceAtTCA_71f9c54b5f482a59,
-                  mid_getReferenceCovariance_8e9af39b29713242,
-                  mid_getTca_7a97f7e149e79afb,
+                  mid_init$_6e070423a9774ddb,
+                  mid_init$_16bbc50d7e41fe28,
+                  mid_init$_86821b70ee5fe2a3,
+                  mid_init$_916cb8d64b395e25,
+                  mid_computeCombinedCovarianceInEncounterFrame_6c7ec62384a674b1,
+                  mid_computeCombinedCovarianceInReferenceTNW_6c7ec62384a674b1,
+                  mid_computeCoppolaEncounterDuration_b74f83833fdad017,
+                  mid_computeMahalanobisDistance_b74f83833fdad017,
+                  mid_computeMahalanobisDistance_04fd0666b613d2ab,
+                  mid_computeMissDistance_b74f83833fdad017,
+                  mid_computeOtherPositionInCollisionPlane_9cb1572c1d4936cf,
+                  mid_computeOtherPositionInRotatedCollisionPlane_9cb1572c1d4936cf,
+                  mid_computeOtherPositionInRotatedCollisionPlane_32a32febf6739dcf,
+                  mid_computeOtherRelativeToReferencePVInReferenceInertial_180fb117720acb76,
+                  mid_computeProjectedAndDiagonalizedCombinedPositionalCovarianceMatrix_f77d745f2128c391,
+                  mid_computeProjectedCombinedPositionalCovarianceMatrix_f77d745f2128c391,
+                  mid_computeReferenceInertialToCollisionPlaneProjectionMatrix_f77d745f2128c391,
+                  mid_computeSquaredMahalanobisDistance_b74f83833fdad017,
+                  mid_computeSquaredMahalanobisDistance_04fd0666b613d2ab,
+                  mid_computeSquaredMahalanobisDistance_db335e3aaf683d13,
+                  mid_computeSquaredMahalanobisDistance_08eba2463884b341,
+                  mid_getCombinedRadius_b74f83833fdad017,
+                  mid_getEncounterFrame_b4b6e345de2c2267,
+                  mid_getOtherAtTCA_b6e68c5f730fb347,
+                  mid_getOtherCovariance_6c7ec62384a674b1,
+                  mid_getReferenceAtTCA_b6e68c5f730fb347,
+                  mid_getReferenceCovariance_6c7ec62384a674b1,
+                  mid_getTca_c325492395d89b24,
                   max_mid
                 };
 

@@ -5,20 +5,20 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-      class MathRuntimeException;
-      class MathIllegalStateException;
-    }
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
-          class Rotation;
           class RotationConvention;
+          class Vector3D;
           class RotationOrder;
+          class Rotation;
         }
       }
+    }
+    namespace exception {
+      class MathIllegalStateException;
+      class MathRuntimeException;
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -41,30 +41,30 @@ namespace org {
           class Rotation : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_be9548a8a583a03d,
-              mid_init$_ed1ea3c88bfc4c0e,
-              mid_init$_053676e45631ca1c,
-              mid_init$_2de057303d403e96,
-              mid_init$_107e6f6bd1deddd4,
-              mid_init$_5a3f2614d84ea74f,
-              mid_applyInverseTo_e81f5abfd2c7d09d,
-              mid_applyInverseTo_b48aa9aef740fa79,
-              mid_applyInverseTo_ab4840ba016ef1da,
-              mid_applyTo_e81f5abfd2c7d09d,
-              mid_applyTo_b48aa9aef740fa79,
-              mid_applyTo_ab4840ba016ef1da,
-              mid_compose_c32f9fe35e571dfa,
-              mid_composeInverse_c32f9fe35e571dfa,
-              mid_distance_111ab3ebc4d0d9bb,
-              mid_getAngle_557b8123390d8d0c,
-              mid_getAngles_c40c4543275315f0,
-              mid_getAxis_096b5df9e235dcab,
-              mid_getMatrix_8cf5267aa13a77f3,
-              mid_getQ0_557b8123390d8d0c,
-              mid_getQ1_557b8123390d8d0c,
-              mid_getQ2_557b8123390d8d0c,
-              mid_getQ3_557b8123390d8d0c,
-              mid_revert_1e0dc1a6788897b9,
+              mid_init$_b651b5ef96594ce8,
+              mid_init$_9362f21bee0a3b93,
+              mid_init$_7005c718acc6ad99,
+              mid_init$_f6f8af5f1648b06a,
+              mid_init$_1c51932bc6cfcbf6,
+              mid_init$_e1234700c30e734e,
+              mid_applyInverseTo_ee28de9af47f5c59,
+              mid_applyInverseTo_f21507e4850a184e,
+              mid_applyInverseTo_b15baa0161a4e9c7,
+              mid_applyTo_ee28de9af47f5c59,
+              mid_applyTo_f21507e4850a184e,
+              mid_applyTo_b15baa0161a4e9c7,
+              mid_compose_6d8395e667c69471,
+              mid_composeInverse_6d8395e667c69471,
+              mid_distance_1fa547ea9a0201c5,
+              mid_getAngle_b74f83833fdad017,
+              mid_getAngles_400c30dc94b4a4c2,
+              mid_getAxis_ff3972e7a0715932,
+              mid_getMatrix_3b7b373db8e7887f,
+              mid_getQ0_b74f83833fdad017,
+              mid_getQ1_b74f83833fdad017,
+              mid_getQ2_b74f83833fdad017,
+              mid_getQ3_b74f83833fdad017,
+              mid_revert_ff298a39b3cae5da,
               max_mid
             };
 

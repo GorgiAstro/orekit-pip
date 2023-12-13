@@ -24,11 +24,11 @@ namespace org {
       class ComplexODEStateAndDerivative : public ::org::hipparchus::ode::ComplexODEState {
        public:
         enum {
-          mid_init$_372f25aed1be170d,
-          mid_init$_1010734d16ad58e8,
-          mid_getCompleteDerivative_cdf70bdb2a575f18,
-          mid_getPrimaryDerivative_cdf70bdb2a575f18,
-          mid_getSecondaryDerivative_3c568c3957abbd69,
+          mid_init$_e2fe458c1bfd60e4,
+          mid_init$_45c34c937b096403,
+          mid_getCompleteDerivative_24cc06122e1087cf,
+          mid_getPrimaryDerivative_24cc06122e1087cf,
+          mid_getSecondaryDerivative_1f034b9f28067a63,
           max_mid
         };
 

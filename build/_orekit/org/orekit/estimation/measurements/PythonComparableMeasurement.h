@@ -3,6 +3,12 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace time {
@@ -15,12 +21,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -31,14 +31,14 @@ namespace org {
         class PythonComparableMeasurement : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_compareTo_0a393ed00cc2801f,
-            mid_finalize_0640e6acf969ed28,
-            mid_getDate_7a97f7e149e79afb,
-            mid_getObservedValue_a53a7513ecedada2,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_compareTo_6343361fedc17b25,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_getDate_c325492395d89b24,
+            mid_getObservedValue_25e1757a36c4dde2,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
             max_mid
           };
 

@@ -4,12 +4,21 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace attitudes {
-      class Attitude;
       class AttitudeProvider;
       class FieldAttitude;
       class AttitudeProviderModifier;
+      class Attitude;
     }
     namespace time {
       class FieldAbsoluteDate;
@@ -21,15 +30,6 @@ namespace org {
     }
     namespace frames {
       class Frame;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
     }
   }
 }
@@ -47,10 +47,10 @@ namespace org {
       class SpinStabilized : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_8f0a7a57ebfb39ba,
-          mid_getAttitude_1306ac39e1d2de3f,
-          mid_getAttitude_77e3383de01f3e48,
-          mid_getUnderlyingAttitudeProvider_6df6b78ab9377151,
+          mid_init$_e16a13c4339393db,
+          mid_getAttitude_21845cfb0034fe1c,
+          mid_getAttitude_896ee4d68989b1e8,
+          mid_getUnderlyingAttitudeProvider_331f12bb6017243b,
           max_mid
         };
 

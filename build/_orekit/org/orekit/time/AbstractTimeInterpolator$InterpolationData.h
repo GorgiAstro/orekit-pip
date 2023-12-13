@@ -3,22 +3,22 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace utils {
-      class ImmutableTimeStampedCache;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ImmutableTimeStampedCache;
+    }
   }
 }
 template<class T> class JArray;
@@ -30,10 +30,10 @@ namespace org {
       class AbstractTimeInterpolator$InterpolationData : public ::java::lang::Object {
        public:
         enum {
-          mid_getCachedSamples_86a357074a1a5ab9,
-          mid_getInterpolationDate_7a97f7e149e79afb,
-          mid_getNeighborList_0d9551367f7ecdef,
-          mid_getCentralDate_57daf0c769dbd44f,
+          mid_getCachedSamples_2902dff7f102e3bf,
+          mid_getInterpolationDate_c325492395d89b24,
+          mid_getNeighborList_e62d3bb06d56d7e3,
+          mid_getCentralDate_bcf1d4e6f5b4821b,
           max_mid
         };
 

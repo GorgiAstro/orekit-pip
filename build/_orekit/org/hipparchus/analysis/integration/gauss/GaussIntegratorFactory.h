@@ -8,8 +8,8 @@ namespace org {
     namespace analysis {
       namespace integration {
         namespace gauss {
-          class GaussIntegrator;
           class SymmetricGaussIntegrator;
+          class GaussIntegrator;
         }
       }
     }
@@ -34,14 +34,14 @@ namespace org {
           class GaussIntegratorFactory : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_init$_a3da1a935cb37f7b,
-              mid_hermite_23e9f34c02f0a4e5,
-              mid_laguerre_5f3aabdbfc0193e2,
-              mid_legendre_5f3aabdbfc0193e2,
-              mid_legendre_db871802ef5ea1e9,
-              mid_legendreHighPrecision_5f3aabdbfc0193e2,
-              mid_legendreHighPrecision_db871802ef5ea1e9,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_init$_44ed599e93e8a30c,
+              mid_hermite_a6e7a9f494780876,
+              mid_laguerre_7b26da4847fc245c,
+              mid_legendre_7b26da4847fc245c,
+              mid_legendre_3010934f1f4f591c,
+              mid_legendreHighPrecision_7b26da4847fc245c,
+              mid_legendreHighPrecision_3010934f1f4f591c,
               max_mid
             };
 

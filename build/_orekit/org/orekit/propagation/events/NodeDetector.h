@@ -11,11 +11,11 @@ namespace org {
       }
       class SpacecraftState;
     }
-    namespace frames {
-      class Frame;
-    }
     namespace orbits {
       class Orbit;
+    }
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -34,12 +34,12 @@ namespace org {
         class NodeDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_535d1f91a93c8b4d,
-            mid_init$_1e7bd0ad52fbd83d,
-            mid_init$_34e9e7d7cb5fe7ac,
-            mid_g_1bbf81d80c47ecdd,
-            mid_getFrame_6c9bc0a928c56d4e,
-            mid_create_d9545ab0373921cb,
+            mid_init$_237ae1c2ddd68062,
+            mid_init$_d3dbf4fc80920e87,
+            mid_init$_6b314fb0882c34c5,
+            mid_g_a17ea857ce74d258,
+            mid_getFrame_2c51111cc6894ba1,
+            mid_create_2ec15de5a48d92d0,
             max_mid
           };
 

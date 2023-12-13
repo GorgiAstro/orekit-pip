@@ -44,9 +44,9 @@ namespace org {
               class ManeuverKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_a90fd8465f7bd9c2,
-                  mid_valueOf_44af345398f19e9b,
-                  mid_values_0a719a076a5e2b38,
+                  mid_process_fbaf6a77a0e2a2da,
+                  mid_valueOf_a5a58c398ee66a96,
+                  mid_values_6479885f50a3f609,
                   max_mid
                 };
 

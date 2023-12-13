@@ -3,21 +3,13 @@
 
 #include "org/orekit/propagation/AbstractPropagator.h"
 
-namespace java {
-  namespace util {
-    class Collection;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
+      class EphemerisGenerator;
       namespace events {
         class EventDetector;
       }
-      class EphemerisGenerator;
       class SpacecraftState;
     }
     namespace utils {
@@ -26,6 +18,14 @@ namespace org {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class Collection;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -38,18 +38,18 @@ namespace org {
         class AbstractAnalyticalPropagator : public ::org::orekit::propagation::AbstractPropagator {
          public:
           enum {
-            mid_addEventDetector_2e2dfaf38ed50d1d,
-            mid_clearEventsDetectors_0640e6acf969ed28,
-            mid_getEphemerisGenerator_6a3edfe13bcee780,
-            mid_getEventsDetectors_12ee61573a18f417,
-            mid_getPvProvider_dec199e86bf037eb,
-            mid_propagate_b96c0d97a162784d,
-            mid_getJacobiansColumnsNames_0d9551367f7ecdef,
-            mid_propagateOrbit_9e937c0ae63d8022,
-            mid_resetIntermediateState_45bf76e836befe86,
-            mid_getMass_b0b988f941da47d8,
-            mid_basicPropagate_15e0d02372b1347b,
-            mid_acceptStep_5c22a6e0fde1ed6a,
+            mid_addEventDetector_e13564f833403504,
+            mid_clearEventsDetectors_a1fa5dae97ea5ed2,
+            mid_getEphemerisGenerator_5df44e253e7e7782,
+            mid_getEventsDetectors_cb666ea1a15f5210,
+            mid_getPvProvider_8a41319e47f3bd7c,
+            mid_propagate_6845ec704c846b03,
+            mid_acceptStep_40f13975bd10671f,
+            mid_getMass_fd347811007a6ba3,
+            mid_basicPropagate_4f0008999861ca31,
+            mid_getJacobiansColumnsNames_e62d3bb06d56d7e3,
+            mid_resetIntermediateState_1c47c97cdbc7e206,
+            mid_propagateOrbit_5df6dcb5c4123339,
             max_mid
           };
 

@@ -5,21 +5,28 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class TimeStamped;
+      class AbsoluteDate;
+    }
     namespace files {
       namespace ccsds {
+        namespace section {
+          class Segment;
+        }
         namespace ndm {
           namespace odm {
             namespace omm {
-              class OmmMetadata;
               class OmmData;
+              class OmmMetadata;
             }
             class OdmHeader;
           }
         }
-        namespace section {
-          class Segment;
-        }
       }
+    }
+    namespace utils {
+      class IERSConventions;
     }
     namespace data {
       class DataContext;
@@ -34,13 +41,6 @@ namespace org {
     }
     namespace orbits {
       class KeplerianOrbit;
-    }
-    namespace time {
-      class TimeStamped;
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class IERSConventions;
     }
   }
 }
@@ -66,13 +66,13 @@ namespace org {
               class Omm : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
                public:
                 enum {
-                  mid_init$_25fe3f0c23ce561a,
-                  mid_generateKeplerianOrbit_48360cd036a5e97b,
-                  mid_generateSpacecraftState_15e85d5301b90ef8,
-                  mid_generateTLE_67f978062a0fd0e7,
-                  mid_getData_374ab60b26a12851,
-                  mid_getDate_7a97f7e149e79afb,
-                  mid_getMetadata_8a5287d2a9885a95,
+                  mid_init$_e9fd06990bf04fcd,
+                  mid_generateKeplerianOrbit_f50f1bbccaeb207e,
+                  mid_generateSpacecraftState_9d155cc8314c99cf,
+                  mid_generateTLE_1c01e307dcced049,
+                  mid_getData_46cfa2da7d09d8dc,
+                  mid_getDate_c325492395d89b24,
+                  mid_getMetadata_85abb0ab995423bf,
                   max_mid
                 };
 

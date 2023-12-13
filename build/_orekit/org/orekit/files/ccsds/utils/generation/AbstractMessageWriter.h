@@ -7,16 +7,16 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace section {
-          class Header;
-          class Segment;
-        }
         namespace utils {
-          class ContextBinding;
           namespace generation {
-            class MessageWriter;
             class Generator;
+            class MessageWriter;
           }
+          class ContextBinding;
+        }
+        namespace section {
+          class Segment;
+          class Header;
         }
         namespace definitions {
           class TimeConverter;
@@ -49,18 +49,18 @@ namespace org {
             class AbstractMessageWriter : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_17d2c89957221da8,
-                mid_getContext_cfb32720392d108f,
-                mid_getDefaultVersion_557b8123390d8d0c,
-                mid_getFormatVersionKey_3cffd47377eca18a,
-                mid_getRoot_3cffd47377eca18a,
-                mid_getTimeConverter_98138020b4258bf0,
-                mid_getVersion_557b8123390d8d0c,
-                mid_setContext_f673e6e131e83586,
-                mid_writeFooter_0503da09b1f1eb3c,
-                mid_writeHeader_9c5c2ece653aa3f3,
-                mid_writeSegment_c15b5f80625a03e0,
-                mid_writeSegmentContent_e9836ce27ccfe3b9,
+                mid_init$_171dbda6f9dc03f2,
+                mid_getContext_f24ed3335bf508bc,
+                mid_getDefaultVersion_b74f83833fdad017,
+                mid_getFormatVersionKey_1c1fa1e935d6cdcf,
+                mid_getRoot_1c1fa1e935d6cdcf,
+                mid_getTimeConverter_cf100f800540ff49,
+                mid_getVersion_b74f83833fdad017,
+                mid_setContext_db5d6d07a090d1f4,
+                mid_writeFooter_fb222e851cd27682,
+                mid_writeHeader_5f2a5114115bbdb2,
+                mid_writeSegment_1cabdf4a5e993579,
+                mid_writeSegmentContent_309d7ce7156c8c23,
                 max_mid
               };
 

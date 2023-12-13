@@ -24,15 +24,15 @@ namespace java {
     class SortedMap : public ::java::util::Map {
      public:
       enum {
-        mid_comparator_b0b551d4a54c7150,
-        mid_entrySet_2dfcbd371d62f4e1,
-        mid_firstKey_e661fe3ba2fafb22,
-        mid_headMap_a274b6b212194ae4,
-        mid_keySet_2dfcbd371d62f4e1,
-        mid_lastKey_e661fe3ba2fafb22,
-        mid_subMap_4cc139291973b971,
-        mid_tailMap_a274b6b212194ae4,
-        mid_values_12ee61573a18f417,
+        mid_comparator_127b1bec8b0c3ae1,
+        mid_entrySet_7e8f11dd23d1142c,
+        mid_firstKey_541690f9ee81d3ad,
+        mid_headMap_c34ad1b261346963,
+        mid_keySet_7e8f11dd23d1142c,
+        mid_lastKey_541690f9ee81d3ad,
+        mid_subMap_a2a04c1f48ab1459,
+        mid_tailMap_c34ad1b261346963,
+        mid_values_cb666ea1a15f5210,
         max_mid
       };
 

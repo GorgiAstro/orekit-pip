@@ -3,20 +3,20 @@
 
 #include "org/orekit/files/rinex/navigation/TypeSvMessage.h"
 
-namespace org {
-  namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace gnss {
-      class SatelliteSystem;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class String;
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace gnss {
+      class SatelliteSystem;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
   }
 }
 template<class T> class JArray;
@@ -30,9 +30,9 @@ namespace org {
           class IonosphereBaseMessage : public ::org::orekit::files::rinex::navigation::TypeSvMessage {
            public:
             enum {
-              mid_init$_e1b2f7b885c85083,
-              mid_getTransmitTime_7a97f7e149e79afb,
-              mid_setTransmitTime_20affcbd28542333,
+              mid_init$_2f7855eb8fb85f32,
+              mid_getTransmitTime_c325492395d89b24,
+              mid_setTransmitTime_02135a6ef25adb4b,
               max_mid
             };
 

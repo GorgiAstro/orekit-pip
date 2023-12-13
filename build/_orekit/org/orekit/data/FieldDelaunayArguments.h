@@ -4,14 +4,14 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-      class FieldTimeStamped;
-    }
-  }
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+  namespace orekit {
+    namespace time {
+      class FieldTimeStamped;
+      class FieldAbsoluteDate;
+    }
   }
 }
 namespace java {
@@ -28,21 +28,21 @@ namespace org {
       class FieldDelaunayArguments : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_aa952c80edca6122,
-          mid_getD_613c8f46c659f636,
-          mid_getDDot_613c8f46c659f636,
-          mid_getDate_f1fe4daf77c66560,
-          mid_getF_613c8f46c659f636,
-          mid_getFDot_613c8f46c659f636,
-          mid_getGamma_613c8f46c659f636,
-          mid_getGammaDot_613c8f46c659f636,
-          mid_getL_613c8f46c659f636,
-          mid_getLDot_613c8f46c659f636,
-          mid_getLPrime_613c8f46c659f636,
-          mid_getLPrimeDot_613c8f46c659f636,
-          mid_getOmega_613c8f46c659f636,
-          mid_getOmegaDot_613c8f46c659f636,
-          mid_getTC_613c8f46c659f636,
+          mid_init$_c20d8d65da2ce077,
+          mid_getD_81520b552cb3fa26,
+          mid_getDDot_81520b552cb3fa26,
+          mid_getDate_fa23a4301b9c83e7,
+          mid_getF_81520b552cb3fa26,
+          mid_getFDot_81520b552cb3fa26,
+          mid_getGamma_81520b552cb3fa26,
+          mid_getGammaDot_81520b552cb3fa26,
+          mid_getL_81520b552cb3fa26,
+          mid_getLDot_81520b552cb3fa26,
+          mid_getLPrime_81520b552cb3fa26,
+          mid_getLPrimeDot_81520b552cb3fa26,
+          mid_getOmega_81520b552cb3fa26,
+          mid_getOmegaDot_81520b552cb3fa26,
+          mid_getTC_81520b552cb3fa26,
           max_mid
         };
 

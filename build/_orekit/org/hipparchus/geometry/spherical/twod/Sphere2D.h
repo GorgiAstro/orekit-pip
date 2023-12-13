@@ -5,10 +5,8 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace geometry {
+      class Space;
       namespace spherical {
         namespace oned {
           class Sphere1D;
@@ -17,7 +15,9 @@ namespace org {
           class Sphere2D;
         }
       }
-      class Space;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -40,10 +40,10 @@ namespace org {
           class Sphere2D : public ::java::lang::Object {
            public:
             enum {
-              mid_checkTolerance_10f281d777284cea,
-              mid_getDimension_412668abc8d889e9,
-              mid_getInstance_4455c3f474f340d7,
-              mid_getSubSpace_1c4d3de89e8bc553,
+              mid_checkTolerance_8ba9fe7a847cecad,
+              mid_getDimension_55546ef6a647f39b,
+              mid_getInstance_9869ff45c1c8d145,
+              mid_getSubSpace_198c463f919fa90a,
               max_mid
             };
 

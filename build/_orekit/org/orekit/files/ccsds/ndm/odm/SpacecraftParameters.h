@@ -31,18 +31,18 @@ namespace org {
             class SpacecraftParameters : public ::org::orekit::files::ccsds::section::CommentsContainer {
              public:
               enum {
-                mid_init$_0640e6acf969ed28,
-                mid_getDragArea_557b8123390d8d0c,
-                mid_getDragCoeff_557b8123390d8d0c,
-                mid_getMass_557b8123390d8d0c,
-                mid_getSolarRadArea_557b8123390d8d0c,
-                mid_getSolarRadCoeff_557b8123390d8d0c,
-                mid_setDragArea_10f281d777284cea,
-                mid_setDragCoeff_10f281d777284cea,
-                mid_setMass_10f281d777284cea,
-                mid_setSolarRadArea_10f281d777284cea,
-                mid_setSolarRadCoeff_10f281d777284cea,
-                mid_validate_10f281d777284cea,
+                mid_init$_a1fa5dae97ea5ed2,
+                mid_getDragArea_b74f83833fdad017,
+                mid_getDragCoeff_b74f83833fdad017,
+                mid_getMass_b74f83833fdad017,
+                mid_getSolarRadArea_b74f83833fdad017,
+                mid_getSolarRadCoeff_b74f83833fdad017,
+                mid_setDragArea_8ba9fe7a847cecad,
+                mid_setDragCoeff_8ba9fe7a847cecad,
+                mid_setMass_8ba9fe7a847cecad,
+                mid_setSolarRadArea_8ba9fe7a847cecad,
+                mid_setSolarRadCoeff_8ba9fe7a847cecad,
+                mid_validate_8ba9fe7a847cecad,
                 max_mid
               };
 

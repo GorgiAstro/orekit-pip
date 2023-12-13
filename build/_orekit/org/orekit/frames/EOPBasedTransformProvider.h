@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace frames {
-      class EOPHistory;
       class EOPBasedTransformProvider;
+      class EOPHistory;
     }
   }
 }
@@ -25,8 +25,8 @@ namespace org {
       class EOPBasedTransformProvider : public ::org::orekit::frames::TransformProvider {
        public:
         enum {
-          mid_getEOPHistory_9a64cc378cf7ab6b,
-          mid_getNonInterpolatingProvider_6eea5bc11bda953b,
+          mid_getEOPHistory_f9d30be358d43685,
+          mid_getNonInterpolatingProvider_8b3864a3bd1af1da,
           max_mid
         };
 

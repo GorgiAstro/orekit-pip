@@ -41,9 +41,9 @@ namespace org {
             class CdmHeaderKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_67121ab4d9b3519d,
-                mid_valueOf_609d0da771ba4943,
-                mid_values_0f777799d9c5548e,
+                mid_process_382b23642df2dc22,
+                mid_valueOf_cd1758a76ae4fa4b,
+                mid_values_742939562d8f37df,
                 max_mid
               };
 

@@ -3,19 +3,19 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace distribution {
-      class RealDistribution;
-    }
-    namespace exception {
-      class MathRuntimeException;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class MathRuntimeException;
+    }
+    namespace distribution {
+      class RealDistribution;
+    }
   }
 }
 template<class T> class JArray;
@@ -28,24 +28,24 @@ namespace org {
         class KolmogorovSmirnovTest : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_init$_3cd6a6b354c6aa22,
-            mid_approximateP_5b7edc654bd4c638,
-            mid_bootstrap_a7af9b8e2bb5e099,
-            mid_bootstrap_6a5e1519e571e53d,
-            mid_cdf_156ae9d72f1c8533,
-            mid_cdf_3e2cba7ad7d970a7,
-            mid_cdfExact_156ae9d72f1c8533,
-            mid_exactP_4cb0bd459cea3c08,
-            mid_kolmogorovSmirnovStatistic_628a76297e217f13,
-            mid_kolmogorovSmirnovStatistic_25a541813dc79893,
-            mid_kolmogorovSmirnovTest_628a76297e217f13,
-            mid_kolmogorovSmirnovTest_25a541813dc79893,
-            mid_kolmogorovSmirnovTest_81226d0b24750fea,
-            mid_kolmogorovSmirnovTest_7ce25eee88719bea,
-            mid_kolmogorovSmirnovTest_3766a811638b85f8,
-            mid_ksSum_63ce51364ee6da7c,
-            mid_pelzGood_156ae9d72f1c8533,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_init$_3d7dd2314a0dd456,
+            mid_approximateP_3ea86aad626e7047,
+            mid_bootstrap_7c3653754c574cea,
+            mid_bootstrap_a99de3bb0d946e5b,
+            mid_cdf_2eeda88661ae34d3,
+            mid_cdf_89b1da4f594623f7,
+            mid_cdfExact_2eeda88661ae34d3,
+            mid_exactP_66797b2e6bbebeee,
+            mid_kolmogorovSmirnovStatistic_3207f9c2ae7271d9,
+            mid_kolmogorovSmirnovStatistic_27f681af35b4baa1,
+            mid_kolmogorovSmirnovTest_3207f9c2ae7271d9,
+            mid_kolmogorovSmirnovTest_27f681af35b4baa1,
+            mid_kolmogorovSmirnovTest_0c373dc781edcf2f,
+            mid_kolmogorovSmirnovTest_cc1786ac1add8fe8,
+            mid_kolmogorovSmirnovTest_208417a15884b969,
+            mid_ksSum_c35488bf93c357d0,
+            mid_pelzGood_2eeda88661ae34d3,
             max_mid
           };
 

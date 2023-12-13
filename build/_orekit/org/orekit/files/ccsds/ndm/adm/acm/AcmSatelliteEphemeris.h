@@ -3,15 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -28,12 +19,21 @@ namespace org {
         class AttitudeEphemerisFile$SatelliteAttitudeEphemeris;
       }
     }
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace utils {
       class TimeStampedAngularCoordinates;
     }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -49,11 +49,11 @@ namespace org {
               class AcmSatelliteEphemeris : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_013b264b441f07a2,
-                  mid_getId_3cffd47377eca18a,
-                  mid_getSegments_0d9551367f7ecdef,
-                  mid_getStart_7a97f7e149e79afb,
-                  mid_getStop_7a97f7e149e79afb,
+                  mid_init$_9c78226ca1e428f3,
+                  mid_getId_1c1fa1e935d6cdcf,
+                  mid_getSegments_e62d3bb06d56d7e3,
+                  mid_getStart_c325492395d89b24,
+                  mid_getStop_c325492395d89b24,
                   max_mid
                 };
 

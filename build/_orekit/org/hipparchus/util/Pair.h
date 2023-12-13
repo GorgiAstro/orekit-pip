@@ -25,15 +25,15 @@ namespace org {
       class Pair : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_cdf90f5ab4b39eca,
-          mid_create_5eabaec61bd4b330,
-          mid_equals_221e8e85cb385209,
-          mid_getFirst_e661fe3ba2fafb22,
-          mid_getKey_e661fe3ba2fafb22,
-          mid_getSecond_e661fe3ba2fafb22,
-          mid_getValue_e661fe3ba2fafb22,
-          mid_hashCode_412668abc8d889e9,
-          mid_toString_3cffd47377eca18a,
+          mid_init$_cb233f2d837bf6b7,
+          mid_create_ae46ab030a4d494a,
+          mid_equals_460c5e2d9d51c6cc,
+          mid_getFirst_541690f9ee81d3ad,
+          mid_getKey_541690f9ee81d3ad,
+          mid_getSecond_541690f9ee81d3ad,
+          mid_getValue_541690f9ee81d3ad,
+          mid_hashCode_55546ef6a647f39b,
+          mid_toString_1c1fa1e935d6cdcf,
           max_mid
         };
 

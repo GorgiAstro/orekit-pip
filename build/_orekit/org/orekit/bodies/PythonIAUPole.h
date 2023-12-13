@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
@@ -40,17 +40,17 @@ namespace org {
       class PythonIAUPole : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_finalize_0640e6acf969ed28,
-          mid_getNode_3df461fe15362b2b,
-          mid_getNode_3343973a86caeaa4,
-          mid_getPole_3df461fe15362b2b,
-          mid_getPole_3343973a86caeaa4,
-          mid_getPrimeMeridianAngle_b0b988f941da47d8,
-          mid_getPrimeMeridianAngle_b884068a2c99f6ca,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_getNode_082e6346b274f880,
+          mid_getNode_362941be972fb4b5,
+          mid_getPole_082e6346b274f880,
+          mid_getPole_362941be972fb4b5,
+          mid_getPrimeMeridianAngle_fd347811007a6ba3,
+          mid_getPrimeMeridianAngle_140b8964300ddedf,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
           max_mid
         };
 

@@ -34,12 +34,12 @@ namespace org {
             class PythonAbstractMessageParser : public ::org::orekit::files::ccsds::utils::parsing::AbstractMessageParser {
              public:
               enum {
-                mid_build_e661fe3ba2fafb22,
-                mid_finalize_0640e6acf969ed28,
-                mid_pythonDecRef_0640e6acf969ed28,
-                mid_pythonExtension_9e26256fb0d384a2,
-                mid_pythonExtension_3cd6a6b354c6aa22,
-                mid_reset_a580586827f4ec13,
+                mid_build_541690f9ee81d3ad,
+                mid_finalize_a1fa5dae97ea5ed2,
+                mid_pythonDecRef_a1fa5dae97ea5ed2,
+                mid_pythonExtension_6c0ce7e438e5ded4,
+                mid_pythonExtension_3d7dd2314a0dd456,
+                mid_reset_28163d47221b3cf7,
                 max_mid
               };
 

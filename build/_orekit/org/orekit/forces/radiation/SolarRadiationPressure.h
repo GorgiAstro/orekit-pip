@@ -4,34 +4,34 @@
 #include "org/orekit/forces/radiation/AbstractRadiationForceModel.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class FieldVector3D;
-          class Vector3D;
-        }
-      }
-    }
-    class CalculusFieldElement;
-  }
   namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
-    }
-    namespace utils {
-      class ExtendedPVCoordinatesProvider;
-      class ParameterDriver;
-    }
     namespace forces {
       namespace radiation {
         class RadiationSensitive;
       }
     }
+    namespace utils {
+      class ExtendedPVCoordinatesProvider;
+      class ParameterDriver;
+    }
     namespace bodies {
       class OneAxisEllipsoid;
     }
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+          class FieldVector3D;
+        }
+      }
+    }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -52,13 +52,13 @@ namespace org {
         class SolarRadiationPressure : public ::org::orekit::forces::radiation::AbstractRadiationForceModel {
          public:
           enum {
-            mid_init$_d555dbd04a0c182e,
-            mid_init$_3e673fd4ea8e449d,
-            mid_acceleration_b61fb59a041240c6,
-            mid_acceleration_61944e27a39e8290,
-            mid_getLightingRatio_de1c2d709eb2829c,
-            mid_getLightingRatio_1bbf81d80c47ecdd,
-            mid_getParametersDrivers_0d9551367f7ecdef,
+            mid_init$_58f40e4787bd647f,
+            mid_init$_c9a73f6ea5ff1d2c,
+            mid_acceleration_0ce449c67b5ffd9c,
+            mid_acceleration_20bded0292328743,
+            mid_getLightingRatio_2203631097e94c79,
+            mid_getLightingRatio_a17ea857ce74d258,
+            mid_getParametersDrivers_e62d3bb06d56d7e3,
             max_mid
           };
 

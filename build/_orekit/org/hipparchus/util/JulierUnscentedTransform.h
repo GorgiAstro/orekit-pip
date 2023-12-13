@@ -3,16 +3,16 @@
 
 #include "org/hipparchus/util/AbstractUnscentedTransform.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace linear {
       class RealVector;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,11 +24,11 @@ namespace org {
       class JulierUnscentedTransform : public ::org::hipparchus::util::AbstractUnscentedTransform {
        public:
         enum {
-          mid_init$_a3da1a935cb37f7b,
-          mid_init$_89aad365fb0ed8da,
-          mid_getWc_75d50d73180655b4,
-          mid_getWm_75d50d73180655b4,
-          mid_getMultiplicationFactor_557b8123390d8d0c,
+          mid_init$_44ed599e93e8a30c,
+          mid_init$_d5322b8b512aeb26,
+          mid_getWc_3a10cc75bd070d84,
+          mid_getWm_3a10cc75bd070d84,
+          mid_getMultiplicationFactor_b74f83833fdad017,
           max_mid
         };
 

@@ -6,10 +6,10 @@
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class DecompositionSolver;
       class DiagonalMatrix;
-      class RealMatrix;
+      class DecompositionSolver;
       class RealVector;
+      class RealMatrix;
     }
     namespace exception {
       class MathRuntimeException;
@@ -30,20 +30,20 @@ namespace org {
       class EigenDecompositionSymmetric : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_f3731847577f13e6,
-          mid_init$_ab4840ba016ef1da,
-          mid_init$_417b55dd6524da33,
-          mid_init$_78a5b4f63390ed29,
-          mid_getD_b1a245683de9728d,
-          mid_getDeterminant_557b8123390d8d0c,
-          mid_getEigenvalue_69cfb132c661aca4,
-          mid_getEigenvalues_a53a7513ecedada2,
-          mid_getEigenvector_2a32cae841870443,
-          mid_getEpsilon_557b8123390d8d0c,
-          mid_getSolver_ccd666b17ae2e6eb,
-          mid_getSquareRoot_70a207fcbc031df2,
-          mid_getV_70a207fcbc031df2,
-          mid_getVT_70a207fcbc031df2,
+          mid_init$_84bd15e0995d0c79,
+          mid_init$_b15baa0161a4e9c7,
+          mid_init$_0e952c4cd7ebe1d5,
+          mid_init$_ae4be200efff3af7,
+          mid_getD_2d4bea390f44a6ac,
+          mid_getDeterminant_b74f83833fdad017,
+          mid_getEigenvalue_2afcbc21f4e57ab2,
+          mid_getEigenvalues_25e1757a36c4dde2,
+          mid_getEigenvector_b50dc3915c68ddbc,
+          mid_getEpsilon_b74f83833fdad017,
+          mid_getSolver_5823fb909376de2c,
+          mid_getSquareRoot_f77d745f2128c391,
+          mid_getV_f77d745f2128c391,
+          mid_getVT_f77d745f2128c391,
           max_mid
         };
 

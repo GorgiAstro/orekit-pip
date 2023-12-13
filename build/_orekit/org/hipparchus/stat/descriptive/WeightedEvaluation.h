@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,8 +25,8 @@ namespace org {
         class WeightedEvaluation : public ::java::lang::Object {
          public:
           enum {
-            mid_evaluate_628a76297e217f13,
-            mid_evaluate_579f1672894f464a,
+            mid_evaluate_3207f9c2ae7271d9,
+            mid_evaluate_0f0d79795aa485ac,
             max_mid
           };
 

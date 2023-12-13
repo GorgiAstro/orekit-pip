@@ -6,10 +6,10 @@
 namespace org {
   namespace hipparchus {
     namespace analysis {
-      class UnivariateFunction;
       namespace solvers {
         class UnivariateSolver;
       }
+      class UnivariateFunction;
     }
   }
 }

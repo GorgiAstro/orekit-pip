@@ -13,8 +13,12 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace utils {
-      class ParameterDriver;
+    namespace estimation {
+      namespace measurements {
+        class EstimationModifier;
+        class AngularAzEl;
+        class EstimatedMeasurementBase;
+      }
     }
     namespace models {
       namespace earth {
@@ -23,12 +27,8 @@ namespace org {
         }
       }
     }
-    namespace estimation {
-      namespace measurements {
-        class EstimatedMeasurementBase;
-        class AngularAzEl;
-        class EstimationModifier;
-      }
+    namespace utils {
+      class ParameterDriver;
     }
   }
 }
@@ -43,9 +43,9 @@ namespace org {
           class AngularTroposphericDelayModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_b6cf54f3c9220bc7,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_modifyWithoutDerivatives_e471490df8741b73,
+              mid_init$_516bd20115aa9d9d,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_modifyWithoutDerivatives_308087fabc1d7f66,
               max_mid
             };
 

@@ -3,25 +3,25 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class ObservedMeasurement;
-        class EstimatedMeasurement;
-      }
-    }
-    namespace orbits {
-      class Orbit;
-    }
-  }
-}
 namespace java {
   namespace util {
     class Map;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace orbits {
+      class Orbit;
+    }
+    namespace estimation {
+      namespace measurements {
+        class ObservedMeasurement;
+        class EstimatedMeasurement;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -34,7 +34,7 @@ namespace org {
         class ModelObserver : public ::java::lang::Object {
          public:
           enum {
-            mid_modelCalled_b94f4715223105a5,
+            mid_modelCalled_cc0ac39e38c56725,
             max_mid
           };
 

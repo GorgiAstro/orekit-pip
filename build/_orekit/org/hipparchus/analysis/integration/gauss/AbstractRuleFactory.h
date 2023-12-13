@@ -5,18 +5,18 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
-    namespace util {
-      class Pair;
-    }
     namespace analysis {
       namespace integration {
         namespace gauss {
           class RuleFactory;
         }
       }
+    }
+    namespace util {
+      class Pair;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -36,11 +36,11 @@ namespace org {
           class AbstractRuleFactory : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_getRule_9a5adfb225849173,
-              mid_computeRule_9a5adfb225849173,
-              mid_findRoots_a458920118f0992d,
-              mid_enforceSymmetry_cc18240f4a737f14,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_getRule_acde278e36767299,
+              mid_computeRule_acde278e36767299,
+              mid_findRoots_c3f2f38783a7b048,
+              mid_enforceSymmetry_ab69da052b88f50c,
               max_mid
             };
 

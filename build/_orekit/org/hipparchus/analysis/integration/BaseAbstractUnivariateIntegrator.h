@@ -6,9 +6,9 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathIllegalArgumentException;
       class NullArgumentException;
       class MathIllegalStateException;
+      class MathIllegalArgumentException;
     }
     namespace analysis {
       class UnivariateFunction;
@@ -33,18 +33,18 @@ namespace org {
         class BaseAbstractUnivariateIntegrator : public ::java::lang::Object {
          public:
           enum {
-            mid_getAbsoluteAccuracy_557b8123390d8d0c,
-            mid_getEvaluations_412668abc8d889e9,
-            mid_getIterations_412668abc8d889e9,
-            mid_getMaximalIterationCount_412668abc8d889e9,
-            mid_getMinimalIterationCount_412668abc8d889e9,
-            mid_getRelativeAccuracy_557b8123390d8d0c,
-            mid_integrate_277b266ef2505d2d,
-            mid_getMin_557b8123390d8d0c,
-            mid_getMax_557b8123390d8d0c,
-            mid_computeObjectiveValue_7e960cd6eee376d8,
-            mid_doIntegrate_557b8123390d8d0c,
-            mid_setup_1c22c5d1ce93543d,
+            mid_getAbsoluteAccuracy_b74f83833fdad017,
+            mid_getEvaluations_55546ef6a647f39b,
+            mid_getIterations_55546ef6a647f39b,
+            mid_getMaximalIterationCount_55546ef6a647f39b,
+            mid_getMinimalIterationCount_55546ef6a647f39b,
+            mid_getRelativeAccuracy_b74f83833fdad017,
+            mid_integrate_076ce9f904fe1577,
+            mid_doIntegrate_b74f83833fdad017,
+            mid_getMin_b74f83833fdad017,
+            mid_getMax_b74f83833fdad017,
+            mid_computeObjectiveValue_04fd0666b613d2ab,
+            mid_setup_c0740661ca309f10,
             max_mid
           };
 

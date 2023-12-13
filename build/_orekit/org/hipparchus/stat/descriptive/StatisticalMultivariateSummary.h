@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace linear {
       class RealMatrix;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,17 +25,17 @@ namespace org {
         class StatisticalMultivariateSummary : public ::java::lang::Object {
          public:
           enum {
-            mid_getCovariance_70a207fcbc031df2,
-            mid_getDimension_412668abc8d889e9,
-            mid_getGeometricMean_a53a7513ecedada2,
-            mid_getMax_a53a7513ecedada2,
-            mid_getMean_a53a7513ecedada2,
-            mid_getMin_a53a7513ecedada2,
-            mid_getN_9e26256fb0d384a2,
-            mid_getStandardDeviation_a53a7513ecedada2,
-            mid_getSum_a53a7513ecedada2,
-            mid_getSumLog_a53a7513ecedada2,
-            mid_getSumSq_a53a7513ecedada2,
+            mid_getCovariance_f77d745f2128c391,
+            mid_getDimension_55546ef6a647f39b,
+            mid_getGeometricMean_25e1757a36c4dde2,
+            mid_getMax_25e1757a36c4dde2,
+            mid_getMean_25e1757a36c4dde2,
+            mid_getMin_25e1757a36c4dde2,
+            mid_getN_6c0ce7e438e5ded4,
+            mid_getStandardDeviation_25e1757a36c4dde2,
+            mid_getSum_25e1757a36c4dde2,
+            mid_getSumLog_25e1757a36c4dde2,
+            mid_getSumSq_25e1757a36c4dde2,
             max_mid
           };
 

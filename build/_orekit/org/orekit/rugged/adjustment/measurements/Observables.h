@@ -35,14 +35,14 @@ namespace org {
           class Observables : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a3da1a935cb37f7b,
-              mid_addGroundMapping_20b2c0aea4daece7,
-              mid_addInterMapping_7e4266e4836752ff,
-              mid_getGroundMapping_276bf3c3705258c9,
-              mid_getGroundMappings_12ee61573a18f417,
-              mid_getInterMapping_67d9a3f0c5fca42f,
-              mid_getInterMappings_12ee61573a18f417,
-              mid_getNbModels_412668abc8d889e9,
+              mid_init$_44ed599e93e8a30c,
+              mid_addGroundMapping_8e6e13960e940d33,
+              mid_addInterMapping_33f55f90ed9a2941,
+              mid_getGroundMapping_1d3ad911c8b09b5e,
+              mid_getGroundMappings_cb666ea1a15f5210,
+              mid_getInterMapping_280eb85d4190bd68,
+              mid_getInterMappings_cb666ea1a15f5210,
+              mid_getNbModels_55546ef6a647f39b,
               max_mid
             };
 

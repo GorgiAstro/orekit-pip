@@ -6,16 +6,16 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathIllegalArgumentException;
       class NullArgumentException;
+      class MathIllegalArgumentException;
     }
     namespace analysis {
+      namespace solvers {
+        class BracketedUnivariateSolver;
+        class AllowedSolution;
+      }
       class UnivariateFunction;
       class CalculusFieldUnivariateFunction;
-      namespace solvers {
-        class AllowedSolution;
-        class BracketedUnivariateSolver;
-      }
     }
     class CalculusFieldElement;
   }
@@ -35,21 +35,21 @@ namespace org {
         class UnivariateSolverUtils : public ::java::lang::Object {
          public:
           enum {
-            mid_bracket_1ce1584b4c4d1aa0,
-            mid_bracket_2da5bc955995af72,
-            mid_bracket_5d2b1d16d63bbb70,
-            mid_bracket_c858898bfc3913a1,
-            mid_bracket_e007deb4884f124c,
-            mid_bracket_93c2be7897d91e00,
-            mid_forceSide_74679e43d1154a2a,
-            mid_isBracketing_d4e7a619be4735dd,
-            mid_isSequence_3d7c70c33c048085,
-            mid_midpoint_2268d18be49a6087,
-            mid_solve_588f35b6905f1239,
-            mid_solve_9d0d6e0b2f32c6e6,
-            mid_verifyBracketing_ac068e084ec85d06,
-            mid_verifyInterval_ab23f4ae0fb33968,
-            mid_verifySequence_87096e3fd8086100,
+            mid_bracket_26c61f283b74355e,
+            mid_bracket_ecb059e7a302e82b,
+            mid_bracket_a571d14e2a719f43,
+            mid_bracket_c1721adb193fa0da,
+            mid_bracket_d41ccbfa744c4e3e,
+            mid_bracket_e3d8316b64f6e8ef,
+            mid_forceSide_c334e0ee1dc3b91e,
+            mid_isBracketing_8833bdb865ca4110,
+            mid_isSequence_bf10cceb76af8f9c,
+            mid_midpoint_99e3200dafc19573,
+            mid_solve_0313652d45b9425b,
+            mid_solve_c3fe2f21161f2c00,
+            mid_verifyBracketing_9d8b62edc3c4b123,
+            mid_verifyInterval_369b4c97255d5afa,
+            mid_verifySequence_b5167f35b2521627,
             max_mid
           };
 

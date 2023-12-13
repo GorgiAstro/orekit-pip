@@ -3,6 +3,11 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -10,11 +15,6 @@ namespace org {
         class PhaseCenterVariationFunction;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,8 +27,8 @@ namespace org {
         class TwoDVariation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_ef70b75875e99c97,
-            mid_value_2268d18be49a6087,
+            mid_init$_2b694b5e2fbd217b,
+            mid_value_99e3200dafc19573,
             max_mid
           };
 

@@ -5,18 +5,15 @@
 
 namespace org {
   namespace orekit {
-    namespace attitudes {
-      class Attitude;
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
           namespace adm {
+            class AdmHeader;
+            class AdmMetadata;
             namespace apm {
               class ApmData;
             }
-            class AdmMetadata;
-            class AdmHeader;
           }
         }
         namespace section {
@@ -25,14 +22,17 @@ namespace org {
       }
     }
     namespace utils {
-      class PVCoordinatesProvider;
       class IERSConventions;
+      class PVCoordinatesProvider;
+    }
+    namespace data {
+      class DataContext;
     }
     namespace frames {
       class Frame;
     }
-    namespace data {
-      class DataContext;
+    namespace attitudes {
+      class Attitude;
     }
   }
 }
@@ -58,10 +58,10 @@ namespace org {
               class Apm : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
                public:
                 enum {
-                  mid_init$_f4c63464eb8f0477,
-                  mid_getAttitude_01bb94f66a53b35f,
-                  mid_getData_da1d576fd2e75a4a,
-                  mid_getMetadata_7dc122883bd588a3,
+                  mid_init$_9603b9963356e980,
+                  mid_getAttitude_0aeff0f42eb90e75,
+                  mid_getData_4a6a5b4c1dc4980d,
+                  mid_getMetadata_ced3497936df7291,
                   max_mid
                 };
 

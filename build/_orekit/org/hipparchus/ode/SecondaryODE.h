@@ -25,9 +25,9 @@ namespace org {
       class SecondaryODE : public ::java::lang::Object {
        public:
         enum {
-          mid_computeDerivatives_6fd4242fb5dae63c,
-          mid_getDimension_412668abc8d889e9,
-          mid_init_2e25eaf0e03aa89f,
+          mid_computeDerivatives_38c4aceeacb4f117,
+          mid_getDimension_55546ef6a647f39b,
+          mid_init_b21d723b0324dcb8,
           max_mid
         };
 

@@ -3,6 +3,20 @@
 
 #include "org/orekit/propagation/AbstractPropagator.h"
 
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      class EphemerisGenerator;
+      namespace events {
+        class EventDetector;
+      }
+      class SpacecraftState;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
+}
 namespace java {
   namespace lang {
     class Throwable;
@@ -10,20 +24,6 @@ namespace java {
   }
   namespace util {
     class Collection;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace events {
-        class EventDetector;
-      }
-      class EphemerisGenerator;
-      class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
   }
 }
 template<class T> class JArray;
@@ -35,16 +35,16 @@ namespace org {
       class PythonAbstractPropagator : public ::org::orekit::propagation::AbstractPropagator {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_addEventDetector_2e2dfaf38ed50d1d,
-          mid_clearEventsDetectors_0640e6acf969ed28,
-          mid_finalize_0640e6acf969ed28,
-          mid_getEphemerisGenerator_6a3edfe13bcee780,
-          mid_getEventsDetectors_12ee61573a18f417,
-          mid_propagate_b96c0d97a162784d,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_addEventDetector_e13564f833403504,
+          mid_clearEventsDetectors_a1fa5dae97ea5ed2,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_getEphemerisGenerator_5df44e253e7e7782,
+          mid_getEventsDetectors_cb666ea1a15f5210,
+          mid_propagate_6845ec704c846b03,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
           max_mid
         };
 

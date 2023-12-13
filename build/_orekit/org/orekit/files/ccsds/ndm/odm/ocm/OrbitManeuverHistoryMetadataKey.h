@@ -44,9 +44,9 @@ namespace org {
               class OrbitManeuverHistoryMetadataKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_3517cd74997ab541,
-                  mid_valueOf_ed5ef9b1a8d2aa87,
-                  mid_values_9130ba061cc1fd00,
+                  mid_process_13ba7e66b60ab39f,
+                  mid_valueOf_dbbc817678e3e033,
+                  mid_values_a1b242dceb8e7049,
                   max_mid
                 };
 

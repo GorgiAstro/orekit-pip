@@ -6,32 +6,32 @@
 namespace org {
   namespace orekit {
     namespace files {
+      namespace general {
+        class AttitudeEphemerisFile$AttitudeEphemerisSegment;
+      }
       namespace ccsds {
         namespace ndm {
           namespace adm {
             namespace acm {
-              class AttitudeState;
               class AttitudeStateHistoryMetadata;
+              class AttitudeState;
             }
           }
         }
       }
-      namespace general {
-        class AttitudeEphemerisFile$AttitudeEphemerisSegment;
-      }
+    }
+    namespace utils {
+      class TimeStampedAngularCoordinates;
+      class AngularDerivativesFilter;
+    }
+    namespace attitudes {
+      class BoundedAttitudeProvider;
     }
     namespace frames {
       class Frame;
     }
     namespace time {
       class AbsoluteDate;
-    }
-    namespace utils {
-      class AngularDerivativesFilter;
-      class TimeStampedAngularCoordinates;
-    }
-    namespace attitudes {
-      class BoundedAttitudeProvider;
     }
   }
 }
@@ -57,17 +57,17 @@ namespace org {
               class AttitudeStateHistory : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_83dfe7ef1f8f7703,
-                  mid_getAngularCoordinates_0d9551367f7ecdef,
-                  mid_getAttitudeProvider_b44a04493534d299,
-                  mid_getAttitudeStates_0d9551367f7ecdef,
-                  mid_getAvailableDerivatives_c2e9b2b1c0db39b3,
-                  mid_getInterpolationMethod_3cffd47377eca18a,
-                  mid_getInterpolationSamples_412668abc8d889e9,
-                  mid_getMetadata_81be42d28961bd53,
-                  mid_getReferenceFrame_6c9bc0a928c56d4e,
-                  mid_getStart_7a97f7e149e79afb,
-                  mid_getStop_7a97f7e149e79afb,
+                  mid_init$_e50dbd2c00143db4,
+                  mid_getAngularCoordinates_e62d3bb06d56d7e3,
+                  mid_getAttitudeProvider_fcce29ba1cf2a05e,
+                  mid_getAttitudeStates_e62d3bb06d56d7e3,
+                  mid_getAvailableDerivatives_33d67d456ec94a0c,
+                  mid_getInterpolationMethod_1c1fa1e935d6cdcf,
+                  mid_getInterpolationSamples_55546ef6a647f39b,
+                  mid_getMetadata_131acac04ad2d884,
+                  mid_getReferenceFrame_2c51111cc6894ba1,
+                  mid_getStart_c325492395d89b24,
+                  mid_getStop_c325492395d89b24,
                   max_mid
                 };
 

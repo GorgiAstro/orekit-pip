@@ -28,8 +28,8 @@ namespace org {
         class ComparableMeasurement : public ::org::orekit::time::TimeStamped {
          public:
           enum {
-            mid_compareTo_0a393ed00cc2801f,
-            mid_getObservedValue_a53a7513ecedada2,
+            mid_compareTo_6343361fedc17b25,
+            mid_getObservedValue_25e1757a36c4dde2,
             max_mid
           };
 

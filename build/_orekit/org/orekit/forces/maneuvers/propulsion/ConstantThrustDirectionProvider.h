@@ -4,24 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace forces {
-      namespace maneuvers {
-        namespace propulsion {
-          class ThrustDirectionProvider;
-        }
-      }
-    }
-    namespace utils {
-      class PVCoordinatesProvider;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -29,6 +11,24 @@ namespace org {
           class Vector3D;
         }
       }
+    }
+  }
+  namespace orekit {
+    namespace utils {
+      class PVCoordinatesProvider;
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace forces {
+      namespace maneuvers {
+        namespace propulsion {
+          class ThrustDirectionProvider;
+        }
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -48,8 +48,8 @@ namespace org {
           class ConstantThrustDirectionProvider : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_2810d2bec90e7b1c,
-              mid_computeThrustDirection_102e5d95cb32da9e,
+              mid_init$_1844f891addbac57,
+              mid_computeThrustDirection_ec4cfef21ca9ef1f,
               max_mid
             };
 

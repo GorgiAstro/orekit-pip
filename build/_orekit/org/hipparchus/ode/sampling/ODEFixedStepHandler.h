@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace ode {
       class ODEStateAndDerivative;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,8 +25,8 @@ namespace org {
         class ODEFixedStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_handleStep_2a375bce4b32792c,
-            mid_init_7e69c83de8052a2b,
+            mid_handleStep_55b681844909c935,
+            mid_init_a7556bd72cab73f1,
             max_mid
           };
 

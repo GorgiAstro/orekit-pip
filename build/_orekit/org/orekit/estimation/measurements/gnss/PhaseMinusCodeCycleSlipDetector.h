@@ -19,8 +19,8 @@ namespace org {
           class PhaseMinusCodeCycleSlipDetector : public ::org::orekit::estimation::measurements::gnss::AbstractCycleSlipDetector {
            public:
             enum {
-              mid_init$_8ceb2936471aec5d,
-              mid_manageData_7cae3eafa8e6978c,
+              mid_init$_5408957787adf55f,
+              mid_manageData_e95b94a72b1c921a,
               max_mid
             };
 

@@ -3,21 +3,21 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace time {
+      class TimeStamped;
+      class AbsoluteDate;
+      class TimeScale;
+    }
+  }
+}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-      class TimeScale;
-      class TimeStamped;
-    }
   }
 }
 template<class T> class JArray;
@@ -29,16 +29,16 @@ namespace org {
       class GLONASSDate : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_20affcbd28542333,
-          mid_init$_9d31fbd7d3d72cec,
-          mid_init$_754312f3734d6e2f,
-          mid_init$_8b3ae84c27acbc02,
-          mid_getDate_7a97f7e149e79afb,
-          mid_getDayNumber_412668abc8d889e9,
-          mid_getGMST_557b8123390d8d0c,
-          mid_getIntervalNumber_412668abc8d889e9,
-          mid_getJD0_557b8123390d8d0c,
-          mid_getSecInDay_557b8123390d8d0c,
+          mid_init$_02135a6ef25adb4b,
+          mid_init$_805befaa637d6dd5,
+          mid_init$_94fe8d9ffeb50676,
+          mid_init$_3d28d2f6b328edfa,
+          mid_getDate_c325492395d89b24,
+          mid_getDayNumber_55546ef6a647f39b,
+          mid_getGMST_b74f83833fdad017,
+          mid_getIntervalNumber_55546ef6a647f39b,
+          mid_getJD0_b74f83833fdad017,
+          mid_getSecInDay_b74f83833fdad017,
           max_mid
         };
 

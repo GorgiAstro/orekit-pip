@@ -3,15 +3,16 @@
 
 #include "org/orekit/geometry/fov/AbstractFieldOfView.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace frames {
       class Transform;
@@ -21,14 +22,13 @@ namespace org {
       class OneAxisEllipsoid;
     }
   }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-    }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -41,12 +41,12 @@ namespace org {
         class SmoothFieldOfView : public ::org::orekit::geometry::fov::AbstractFieldOfView {
          public:
           enum {
-            mid_getCenter_f88961cca75a2c0a,
-            mid_getFootprint_37f5cab3ae6d781a,
-            mid_getX_f88961cca75a2c0a,
-            mid_getY_f88961cca75a2c0a,
-            mid_getZ_f88961cca75a2c0a,
-            mid_directionAt_20de5f9d51c6611f,
+            mid_getCenter_8b724f8b4fdad1a2,
+            mid_getFootprint_f20a8500298f8a78,
+            mid_getX_8b724f8b4fdad1a2,
+            mid_getY_8b724f8b4fdad1a2,
+            mid_getZ_8b724f8b4fdad1a2,
+            mid_directionAt_498f52cd8e5a7072,
             max_mid
           };
 

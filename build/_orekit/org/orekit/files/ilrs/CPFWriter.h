@@ -3,6 +3,22 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace ilrs {
+        class CPFHeader;
+      }
+      namespace general {
+        class EphemerisFileWriter;
+        class EphemerisFile;
+      }
+    }
+    namespace time {
+      class TimeScale;
+    }
+  }
+}
 namespace java {
   namespace io {
     class IOException;
@@ -10,22 +26,6 @@ namespace java {
   namespace lang {
     class Appendable;
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace time {
-      class TimeScale;
-    }
-    namespace files {
-      namespace general {
-        class EphemerisFile;
-        class EphemerisFileWriter;
-      }
-      namespace ilrs {
-        class CPFHeader;
-      }
-    }
   }
 }
 template<class T> class JArray;
@@ -38,9 +38,9 @@ namespace org {
         class CPFWriter : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_07a3276b4776920d,
-            mid_init$_377629c5718b541b,
-            mid_write_0fa910eb9c2e844e,
+            mid_init$_cebeba69e4eb8c33,
+            mid_init$_fadbe4ef40d3e215,
+            mid_write_b257e3ad1002b2a9,
             max_mid
           };
 

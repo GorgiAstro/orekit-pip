@@ -27,9 +27,9 @@ namespace org {
         class FiniteDifferencePropagatorConverter : public ::org::orekit::propagation::conversion::AbstractPropagatorConverter {
          public:
           enum {
-            mid_init$_2a2776403255b5f4,
-            mid_getModel_e31bcbfb9203b3a6,
-            mid_getObjectiveFunction_88ca328d89915cf7,
+            mid_init$_91f1a39ce0677121,
+            mid_getModel_6a20d4ddc607b9bb,
+            mid_getObjectiveFunction_72c2cddd79f92b83,
             max_mid
           };
 

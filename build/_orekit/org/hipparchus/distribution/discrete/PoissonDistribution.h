@@ -3,16 +3,16 @@
 
 #include "org/hipparchus/distribution/discrete/AbstractIntegerDistribution.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,20 +25,20 @@ namespace org {
         class PoissonDistribution : public ::org::hipparchus::distribution::discrete::AbstractIntegerDistribution {
          public:
           enum {
-            mid_init$_10f281d777284cea,
-            mid_init$_ab23f4ae0fb33968,
-            mid_init$_47602ef8408ea361,
-            mid_init$_427af08acba367ca,
-            mid_cumulativeProbability_69cfb132c661aca4,
-            mid_getMean_557b8123390d8d0c,
-            mid_getNumericalMean_557b8123390d8d0c,
-            mid_getNumericalVariance_557b8123390d8d0c,
-            mid_getSupportLowerBound_412668abc8d889e9,
-            mid_getSupportUpperBound_412668abc8d889e9,
-            mid_isSupportConnected_89b302893bdbe1f1,
-            mid_logProbability_69cfb132c661aca4,
-            mid_normalApproximateProbability_69cfb132c661aca4,
-            mid_probability_69cfb132c661aca4,
+            mid_init$_8ba9fe7a847cecad,
+            mid_init$_369b4c97255d5afa,
+            mid_init$_1af1b4c263b48b0c,
+            mid_init$_2aa803b9073e6a76,
+            mid_cumulativeProbability_2afcbc21f4e57ab2,
+            mid_getMean_b74f83833fdad017,
+            mid_getNumericalMean_b74f83833fdad017,
+            mid_getNumericalVariance_b74f83833fdad017,
+            mid_getSupportLowerBound_55546ef6a647f39b,
+            mid_getSupportUpperBound_55546ef6a647f39b,
+            mid_isSupportConnected_9ab94ac1dc23b105,
+            mid_logProbability_2afcbc21f4e57ab2,
+            mid_normalApproximateProbability_2afcbc21f4e57ab2,
+            mid_probability_2afcbc21f4e57ab2,
             max_mid
           };
 

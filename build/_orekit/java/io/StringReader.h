@@ -4,12 +4,12 @@
 #include "java/io/Reader.h"
 
 namespace java {
-  namespace io {
-    class IOException;
-  }
   namespace lang {
     class String;
     class Class;
+  }
+  namespace io {
+    class IOException;
   }
 }
 template<class T> class JArray;
@@ -20,15 +20,15 @@ namespace java {
     class StringReader : public ::java::io::Reader {
      public:
       enum {
-        mid_init$_f5ffdf29129ef90a,
-        mid_close_0640e6acf969ed28,
-        mid_mark_a3da1a935cb37f7b,
-        mid_markSupported_89b302893bdbe1f1,
-        mid_read_412668abc8d889e9,
-        mid_read_f0b052b9721148b0,
-        mid_ready_89b302893bdbe1f1,
-        mid_reset_0640e6acf969ed28,
-        mid_skip_f4ad805a81234b49,
+        mid_init$_734b91ac30d5f9b4,
+        mid_close_a1fa5dae97ea5ed2,
+        mid_mark_44ed599e93e8a30c,
+        mid_markSupported_9ab94ac1dc23b105,
+        mid_read_55546ef6a647f39b,
+        mid_read_a45a4db28976f262,
+        mid_ready_9ab94ac1dc23b105,
+        mid_reset_a1fa5dae97ea5ed2,
+        mid_skip_9db63109f74a74fc,
         max_mid
       };
 

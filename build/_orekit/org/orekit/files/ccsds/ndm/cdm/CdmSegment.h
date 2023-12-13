@@ -34,7 +34,7 @@ namespace org {
             class CdmSegment : public ::org::orekit::files::ccsds::section::Segment {
              public:
               enum {
-                mid_init$_e13e9cba5eb5a215,
+                mid_init$_5697c2b09dee8814,
                 max_mid
               };
 

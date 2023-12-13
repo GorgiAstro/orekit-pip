@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class RealMatrix;
       class RealVector;
+      class RealMatrix;
     }
     namespace optim {
       namespace nonlinear {
@@ -37,13 +37,13 @@ namespace org {
             class AbstractEvaluation : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a3da1a935cb37f7b,
-                mid_getChiSquare_557b8123390d8d0c,
-                mid_getCost_557b8123390d8d0c,
-                mid_getCovariances_e95e381257af03e9,
-                mid_getRMS_557b8123390d8d0c,
-                mid_getReducedChiSquare_69cfb132c661aca4,
-                mid_getSigma_6041102868c92dbb,
+                mid_init$_44ed599e93e8a30c,
+                mid_getChiSquare_b74f83833fdad017,
+                mid_getCost_b74f83833fdad017,
+                mid_getCovariances_f5dd9d6021dc9dae,
+                mid_getRMS_b74f83833fdad017,
+                mid_getReducedChiSquare_2afcbc21f4e57ab2,
+                mid_getSigma_0af7505d8931441d,
                 max_mid
               };
 

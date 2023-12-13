@@ -4,7 +4,21 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+      class FieldAttitude;
+      class Attitude;
+    }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
@@ -13,22 +27,8 @@ namespace org {
       class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
     }
-    namespace attitudes {
-      class FieldAttitude;
-      class AttitudeProvider;
-      class Attitude;
-    }
     namespace frames {
       class Frame;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
     }
   }
 }
@@ -46,9 +46,9 @@ namespace org {
       class CelestialBodyPointed : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_2a842241179c7b7e,
-          mid_getAttitude_77e3383de01f3e48,
-          mid_getAttitude_1306ac39e1d2de3f,
+          mid_init$_3301cfd3f7e199e1,
+          mid_getAttitude_896ee4d68989b1e8,
+          mid_getAttitude_21845cfb0034fe1c,
           max_mid
         };
 

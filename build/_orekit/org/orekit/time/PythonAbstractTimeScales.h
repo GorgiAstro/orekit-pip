@@ -6,19 +6,19 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class TTScale;
-      class TAIScale;
-      class UTCScale;
-      class GLONASSScale;
-      class GPSScale;
-      class QZSSScale;
-      class UT1Scale;
-      class IRNSSScale;
       class TDBScale;
-      class GalileoScale;
-      class TCBScale;
+      class GLONASSScale;
+      class IRNSSScale;
       class TCGScale;
+      class TAIScale;
+      class UT1Scale;
+      class TCBScale;
+      class GPSScale;
       class BDTScale;
+      class TTScale;
+      class UTCScale;
+      class GalileoScale;
+      class QZSSScale;
     }
     namespace utils {
       class IERSConventions;
@@ -43,25 +43,25 @@ namespace org {
       class PythonAbstractTimeScales : public ::org::orekit::time::AbstractTimeScales {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_finalize_0640e6acf969ed28,
-          mid_getBDT_9391834b1a937fd3,
-          mid_getEopHistory_9cf4a1ec2e53bbd3,
-          mid_getGLONASS_237364a28a8cf0b4,
-          mid_getGPS_0cd5c45ac1466124,
-          mid_getGST_3eb0a3a9b450fe42,
-          mid_getIRNSS_64d2db466ba002ef,
-          mid_getQZSS_513baddf28d44704,
-          mid_getTAI_d5c1bf5214e95dd6,
-          mid_getTCB_1561497728a78b6a,
-          mid_getTCG_2cdd0fa7c8f02aa9,
-          mid_getTDB_777ef8538a45134b,
-          mid_getTT_f6e670da699ff3f8,
-          mid_getUT1_c21aaa13d4f3f95e,
-          mid_getUTC_81e037be1ebdb551,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_getBDT_e66ecc29d9b0858a,
+          mid_getEopHistory_a77e9d6bc0da2439,
+          mid_getGLONASS_75a06d4a3e06af34,
+          mid_getGPS_a74060fc815076a7,
+          mid_getGST_935fd284aa6ccd53,
+          mid_getIRNSS_d7fbef15a3374e78,
+          mid_getQZSS_f801e6f0b9a78872,
+          mid_getTAI_700cdb40469496d6,
+          mid_getTCB_e0443055c5547bea,
+          mid_getTCG_9ccd709f9ae42bbc,
+          mid_getTDB_61ba58ac615801fa,
+          mid_getTT_68d743a8c670f6cb,
+          mid_getUT1_0d98cf69977e0c28,
+          mid_getUTC_1e4acbbebd50858e,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
           max_mid
         };
 

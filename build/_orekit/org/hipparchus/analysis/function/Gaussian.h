@@ -31,11 +31,11 @@ namespace org {
         class Gaussian : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_init$_ab23f4ae0fb33968,
-            mid_init$_87096e3fd8086100,
-            mid_value_7e960cd6eee376d8,
-            mid_value_3eb2b84dba0ab7d2,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_init$_369b4c97255d5afa,
+            mid_init$_b5167f35b2521627,
+            mid_value_04fd0666b613d2ab,
+            mid_value_a5332de4d4d64b08,
             max_mid
           };
 

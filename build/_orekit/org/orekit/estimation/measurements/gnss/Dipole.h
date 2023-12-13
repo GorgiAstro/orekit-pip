@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace estimation {
@@ -28,6 +23,11 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -39,8 +39,8 @@ namespace org {
           class Dipole : public ::java::lang::Object {
            public:
             enum {
-              mid_getPrimary_f88961cca75a2c0a,
-              mid_getSecondary_f88961cca75a2c0a,
+              mid_getPrimary_8b724f8b4fdad1a2,
+              mid_getSecondary_8b724f8b4fdad1a2,
               max_mid
             };
 

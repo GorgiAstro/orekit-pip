@@ -4,17 +4,7 @@
 #include "org/orekit/estimation/measurements/generation/AbstractMeasurementBuilder.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace random {
-      class CorrelatedRandomVectorGenerator;
-    }
-  }
   namespace orekit {
-    namespace propagation {
-      namespace sampling {
-        class OrekitStepInterpolator;
-      }
-    }
     namespace estimation {
       namespace measurements {
         namespace gnss {
@@ -23,8 +13,18 @@ namespace org {
         class ObservableSatellite;
       }
     }
+    namespace propagation {
+      namespace sampling {
+        class OrekitStepInterpolator;
+      }
+    }
     namespace time {
       class AbsoluteDate;
+    }
+  }
+  namespace hipparchus {
+    namespace random {
+      class CorrelatedRandomVectorGenerator;
     }
   }
 }
@@ -47,7 +47,7 @@ namespace org {
           class OneWayGNSSPhaseBuilder : public ::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder {
            public:
             enum {
-              mid_build_6de94fdf3d4eb161,
+              mid_build_29252f083e0782b7,
               max_mid
             };
 

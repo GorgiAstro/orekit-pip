@@ -6,10 +6,10 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class DateComponents;
       class FieldAbsoluteDate;
-      class TimeComponents;
+      class DateComponents;
       class AbsoluteDate;
+      class TimeComponents;
       class TimeScale;
     }
   }
@@ -32,11 +32,11 @@ namespace org {
       class QZSSScale : public ::java::lang::Object {
        public:
         enum {
-          mid_getName_3cffd47377eca18a,
-          mid_offsetFromTAI_b0b988f941da47d8,
-          mid_offsetFromTAI_b884068a2c99f6ca,
-          mid_offsetToTAI_e4171ab80e571373,
-          mid_toString_3cffd47377eca18a,
+          mid_getName_1c1fa1e935d6cdcf,
+          mid_offsetFromTAI_fd347811007a6ba3,
+          mid_offsetFromTAI_140b8964300ddedf,
+          mid_offsetToTAI_e7a49f02c43fd893,
+          mid_toString_1c1fa1e935d6cdcf,
           max_mid
         };
 

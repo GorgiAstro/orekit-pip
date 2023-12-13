@@ -3,16 +3,16 @@
 
 #include "org/hipparchus/analysis/polynomials/SmoothStepFactory$SmoothStepFunction.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,8 +25,8 @@ namespace org {
         class SmoothStepFactory$QuadraticSmoothStepFunction : public ::org::hipparchus::analysis::polynomials::SmoothStepFactory$SmoothStepFunction {
          public:
           enum {
-            mid_value_7e960cd6eee376d8,
-            mid_value_8d02ba458f22e508,
+            mid_value_04fd0666b613d2ab,
+            mid_value_f804f816b79164cb,
             max_mid
           };
 

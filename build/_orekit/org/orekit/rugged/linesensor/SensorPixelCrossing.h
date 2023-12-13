@@ -4,16 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace rugged {
-      namespace linesensor {
-        class LineSensor;
-      }
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -21,6 +11,16 @@ namespace org {
           class Vector3D;
         }
       }
+    }
+  }
+  namespace orekit {
+    namespace rugged {
+      namespace linesensor {
+        class LineSensor;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -39,8 +39,8 @@ namespace org {
         class SensorPixelCrossing : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_f4fc95bc6bb270ba,
-            mid_locatePixel_b0b988f941da47d8,
+            mid_init$_35f5a2e1ca0694c4,
+            mid_locatePixel_fd347811007a6ba3,
             max_mid
           };
 

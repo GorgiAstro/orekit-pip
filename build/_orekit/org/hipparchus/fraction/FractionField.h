@@ -13,11 +13,11 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    class Field;
     namespace fraction {
       class FractionField;
       class Fraction;
     }
+    class Field;
   }
 }
 template<class T> class JArray;
@@ -29,12 +29,12 @@ namespace org {
       class FractionField : public ::java::lang::Object {
        public:
         enum {
-          mid_equals_221e8e85cb385209,
-          mid_getInstance_1840755d7868de7a,
-          mid_getOne_78ed58163a805805,
-          mid_getRuntimeClass_d4b191ff8147475d,
-          mid_getZero_78ed58163a805805,
-          mid_hashCode_412668abc8d889e9,
+          mid_equals_460c5e2d9d51c6cc,
+          mid_getInstance_1e2decbb84e0a2b6,
+          mid_getOne_7ab72bcbb3909669,
+          mid_getRuntimeClass_1aeb0737a960d371,
+          mid_getZero_7ab72bcbb3909669,
+          mid_hashCode_55546ef6a647f39b,
           max_mid
         };
 

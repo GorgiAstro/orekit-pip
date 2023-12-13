@@ -14,10 +14,10 @@ namespace java {
 namespace org {
   namespace hipparchus {
     namespace optim {
-      class OptimizationData;
       namespace linear {
         class LinearConstraint;
       }
+      class OptimizationData;
     }
   }
 }
@@ -31,9 +31,9 @@ namespace org {
         class LinearConstraintSet : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_c3f07fb0fd6d2519,
-            mid_init$_3abde0be9b9c9773,
-            mid_getConstraints_12ee61573a18f417,
+            mid_init$_e4a9ddaf437755d1,
+            mid_init$_7d8f123763cd893c,
+            mid_getConstraints_cb666ea1a15f5210,
             max_mid
           };
 

@@ -10,8 +10,8 @@ namespace org {
         namespace ndm {
           namespace adm {
             namespace acm {
-              class AttitudeStateHistoryMetadataKey;
               class AttitudeStateHistoryMetadata;
+              class AttitudeStateHistoryMetadataKey;
             }
           }
         }
@@ -44,9 +44,9 @@ namespace org {
               class AttitudeStateHistoryMetadataKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_5d44bf4d68707328,
-                  mid_valueOf_6b45aeb714266abd,
-                  mid_values_e75632f7806315e8,
+                  mid_process_03afc684bf6d2e03,
+                  mid_valueOf_7f935491e35f3cbe,
+                  mid_values_17b3436d1a038052,
                   max_mid
                 };
 

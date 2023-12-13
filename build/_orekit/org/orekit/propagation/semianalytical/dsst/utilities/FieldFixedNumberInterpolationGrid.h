@@ -4,6 +4,10 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+    class Field;
+  }
   namespace orekit {
     namespace propagation {
       namespace semianalytical {
@@ -14,10 +18,6 @@ namespace org {
         }
       }
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
-    class Field;
   }
 }
 namespace java {
@@ -37,8 +37,8 @@ namespace org {
             class FieldFixedNumberInterpolationGrid : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_f89bf3117923cd08,
-                mid_getGridPoints_4a8c729a6fb08a74,
+                mid_init$_9127f23cedcce237,
+                mid_getGridPoints_396bc2ac62d7d47a,
                 max_mid
               };
 

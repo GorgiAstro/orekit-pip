@@ -39,16 +39,16 @@ namespace org {
           class Mean : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_init$_4588de4772df8531,
-              mid_aggregate_d935e5680b15378b,
-              mid_clear_0640e6acf969ed28,
-              mid_copy_21710564dc90c0ac,
-              mid_evaluate_9eeeb1ae977f525d,
-              mid_evaluate_579f1672894f464a,
-              mid_getN_9e26256fb0d384a2,
-              mid_getResult_557b8123390d8d0c,
-              mid_increment_10f281d777284cea,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_init$_5f13a5ee5da004b6,
+              mid_aggregate_b67a722ddd23d319,
+              mid_clear_a1fa5dae97ea5ed2,
+              mid_copy_596ad18729073ae5,
+              mid_evaluate_1567a80062adb31b,
+              mid_evaluate_0f0d79795aa485ac,
+              mid_getN_6c0ce7e438e5ded4,
+              mid_getResult_b74f83833fdad017,
+              mid_increment_8ba9fe7a847cecad,
               max_mid
             };
 

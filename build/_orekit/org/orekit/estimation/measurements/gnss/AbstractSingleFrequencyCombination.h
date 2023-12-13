@@ -8,9 +8,9 @@ namespace org {
     namespace estimation {
       namespace measurements {
         namespace gnss {
+          class CombinedObservationData;
           class MeasurementCombination;
           class CombinedObservationDataSet;
-          class CombinedObservationData;
         }
       }
     }
@@ -41,10 +41,10 @@ namespace org {
           class AbstractSingleFrequencyCombination : public ::java::lang::Object {
            public:
             enum {
-              mid_combine_82c5de1a9cc4c5da,
-              mid_combine_54b5aea6b6555487,
-              mid_getName_3cffd47377eca18a,
-              mid_getCombinedValue_2268d18be49a6087,
+              mid_combine_12b3dc80befaeb6c,
+              mid_combine_74c648c2fd092da1,
+              mid_getName_1c1fa1e935d6cdcf,
+              mid_getCombinedValue_99e3200dafc19573,
               max_mid
             };
 

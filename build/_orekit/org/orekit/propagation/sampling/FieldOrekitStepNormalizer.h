@@ -5,16 +5,16 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class FieldAbsoluteDate;
+    }
     namespace propagation {
       namespace sampling {
         class FieldOrekitFixedStepHandler;
-        class FieldOrekitStepInterpolator;
         class FieldOrekitStepHandler;
+        class FieldOrekitStepInterpolator;
       }
       class FieldSpacecraftState;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -36,13 +36,13 @@ namespace org {
         class FieldOrekitStepNormalizer : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_c9f4018f814d2514,
-            mid_finish_b66c84a5711243d5,
-            mid_getFixedStepHandler_a49ed83bbdd0eefd,
-            mid_getFixedTimeStep_613c8f46c659f636,
-            mid_handleStep_c006764357a9d9b2,
-            mid_init_811e49dad2467b67,
-            mid_requiresDenseOutput_89b302893bdbe1f1,
+            mid_init$_73fc248bc2640832,
+            mid_finish_54d9efbf99822980,
+            mid_getFixedStepHandler_61ae3f77f3cce6dd,
+            mid_getFixedTimeStep_81520b552cb3fa26,
+            mid_handleStep_fa82adff12d70536,
+            mid_init_96d019f392abf918,
+            mid_requiresDenseOutput_9ab94ac1dc23b105,
             max_mid
           };
 

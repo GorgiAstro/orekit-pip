@@ -6,9 +6,9 @@
 namespace org {
   namespace orekit {
     namespace frames {
+      class FieldTransform;
       class TransformProvider;
       class Transform;
-      class FieldTransform;
     }
     namespace time {
       class FieldAbsoluteDate;
@@ -34,12 +34,12 @@ namespace org {
       class InterpolatingTransformProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_eb9cd2c2bb77ce9f,
-          mid_getGridPoints_412668abc8d889e9,
-          mid_getRawProvider_5b1059d129debef8,
-          mid_getStep_557b8123390d8d0c,
-          mid_getTransform_df04e3927954349e,
-          mid_getTransform_e70631ba002d9a32,
+          mid_init$_b5ee83e9cfd012af,
+          mid_getGridPoints_55546ef6a647f39b,
+          mid_getRawProvider_51018934a5745bab,
+          mid_getStep_b74f83833fdad017,
+          mid_getTransform_976d4bc81671ce42,
+          mid_getTransform_7a8ca6856fe3fc9e,
           max_mid
         };
 

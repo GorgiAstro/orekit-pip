@@ -3,15 +3,15 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
     class Field;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,10 +25,10 @@ namespace org {
           class TroposphericModelUtils : public ::java::lang::Object {
            public:
             enum {
-              mid_computeHeightCorrection_2268d18be49a6087,
-              mid_computeHeightCorrection_1abe48422844d9d9,
-              mid_mappingFunction_79d60f5d1a9d8623,
-              mid_mappingFunction_b36bbc15a8c16f64,
+              mid_computeHeightCorrection_99e3200dafc19573,
+              mid_computeHeightCorrection_3d637a35454b0975,
+              mid_mappingFunction_08eba2463884b341,
+              mid_mappingFunction_0a337cffdfb74cd1,
               max_mid
             };
 

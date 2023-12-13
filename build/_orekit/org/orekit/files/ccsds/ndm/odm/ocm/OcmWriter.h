@@ -15,10 +15,10 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace odm {
+            class OdmHeader;
             namespace ocm {
               class Ocm;
             }
-            class OdmHeader;
           }
         }
       }
@@ -43,10 +43,10 @@ namespace org {
               class OcmWriter : public ::org::orekit::files::ccsds::utils::generation::AbstractMessageWriter {
                public:
                 enum {
-                  mid_init$_6e7dc3e42ba012e7,
-                  mid_getEquatorialRadius_557b8123390d8d0c,
-                  mid_getFlattening_557b8123390d8d0c,
-                  mid_writeSegmentContent_e9836ce27ccfe3b9,
+                  mid_init$_ec721292a5bded45,
+                  mid_getEquatorialRadius_b74f83833fdad017,
+                  mid_getFlattening_b74f83833fdad017,
+                  mid_writeSegmentContent_309d7ce7156c8c23,
                   max_mid
                 };
 

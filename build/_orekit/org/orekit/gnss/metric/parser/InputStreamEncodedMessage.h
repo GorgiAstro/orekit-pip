@@ -22,8 +22,8 @@ namespace org {
           class InputStreamEncodedMessage : public ::org::orekit::gnss::metric::parser::AbstractEncodedMessage {
            public:
             enum {
-              mid_init$_115bc9fcd812647a,
-              mid_fetchByte_412668abc8d889e9,
+              mid_init$_471a178453aa39ad,
+              mid_fetchByte_55546ef6a647f39b,
               max_mid
             };
 

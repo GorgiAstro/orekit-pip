@@ -8,8 +8,8 @@ namespace java {
     class Double;
     class Class;
     class Object;
-    class String;
     class NumberFormatException;
+    class String;
     class Comparable;
   }
 }
@@ -21,36 +21,36 @@ namespace java {
     class Double : public ::java::lang::Number {
      public:
       enum {
-        mid_init$_f5ffdf29129ef90a,
-        mid_init$_10f281d777284cea,
-        mid_byteValue_acadfed42a0dbd0d,
-        mid_compare_4dfe98c34ce8e2ad,
-        mid_compareTo_39609b8954e7e0eb,
-        mid_doubleToLongBits_9d550dd06216a860,
-        mid_doubleToRawLongBits_9d550dd06216a860,
-        mid_doubleValue_557b8123390d8d0c,
-        mid_equals_221e8e85cb385209,
-        mid_floatValue_04fe014f7609dc26,
-        mid_hashCode_412668abc8d889e9,
-        mid_hashCode_abbeb9db7144ca23,
-        mid_intValue_412668abc8d889e9,
-        mid_isFinite_dd69c3ab2404bb71,
-        mid_isInfinite_89b302893bdbe1f1,
-        mid_isInfinite_dd69c3ab2404bb71,
-        mid_isNaN_89b302893bdbe1f1,
-        mid_isNaN_dd69c3ab2404bb71,
-        mid_longBitsToDouble_32ecb089f4c907e7,
-        mid_longValue_9e26256fb0d384a2,
-        mid_max_2268d18be49a6087,
-        mid_min_2268d18be49a6087,
-        mid_parseDouble_071554b5f5a6b17b,
-        mid_shortValue_2554afc868a7ba2a,
-        mid_sum_2268d18be49a6087,
-        mid_toHexString_c03a7791f2fcb1f1,
-        mid_toString_3cffd47377eca18a,
-        mid_toString_c03a7791f2fcb1f1,
-        mid_valueOf_3471f90efebfeabb,
-        mid_valueOf_229e479e8962b1c5,
+        mid_init$_734b91ac30d5f9b4,
+        mid_init$_8ba9fe7a847cecad,
+        mid_byteValue_82ba37184c5152a3,
+        mid_compare_a390351c2ab3d097,
+        mid_compareTo_a8e655ea2fbadf43,
+        mid_doubleToLongBits_12ed7e7112604870,
+        mid_doubleToRawLongBits_12ed7e7112604870,
+        mid_doubleValue_b74f83833fdad017,
+        mid_equals_460c5e2d9d51c6cc,
+        mid_floatValue_1fb1bf0772ae5db7,
+        mid_hashCode_55546ef6a647f39b,
+        mid_hashCode_2af4736545087009,
+        mid_intValue_55546ef6a647f39b,
+        mid_isFinite_716249baa52d209e,
+        mid_isInfinite_9ab94ac1dc23b105,
+        mid_isInfinite_716249baa52d209e,
+        mid_isNaN_9ab94ac1dc23b105,
+        mid_isNaN_716249baa52d209e,
+        mid_longBitsToDouble_8caf38275755b2fd,
+        mid_longValue_6c0ce7e438e5ded4,
+        mid_max_99e3200dafc19573,
+        mid_min_99e3200dafc19573,
+        mid_parseDouble_a84f304e8cd7ce1b,
+        mid_shortValue_02a2271f89f4492b,
+        mid_sum_99e3200dafc19573,
+        mid_toHexString_11ae2994efd15504,
+        mid_toString_1c1fa1e935d6cdcf,
+        mid_toString_11ae2994efd15504,
+        mid_valueOf_76ce52eb492100d7,
+        mid_valueOf_296806f10627d10c,
         max_mid
       };
 

@@ -19,8 +19,8 @@ namespace org {
           class EncodedMessage : public ::java::lang::Object {
            public:
             enum {
-              mid_extractBits_4f6383d3e31ab417,
-              mid_start_0640e6acf969ed28,
+              mid_extractBits_f4947a88f79e0725,
+              mid_start_a1fa5dae97ea5ed2,
               max_mid
             };
 

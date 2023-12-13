@@ -6,10 +6,6 @@
 namespace org {
   namespace orekit {
     namespace ssa {
-      namespace metrics {
-        class FieldProbabilityOfCollision;
-        class ProbabilityOfCollision;
-      }
       namespace collision {
         namespace shorttermencounter {
           namespace probability {
@@ -18,6 +14,10 @@ namespace org {
             }
           }
         }
+      }
+      namespace metrics {
+        class FieldProbabilityOfCollision;
+        class ProbabilityOfCollision;
       }
     }
   }
@@ -43,10 +43,10 @@ namespace org {
               class Chan1997 : public ::org::orekit::ssa::collision::shorttermencounter::probability::twod::AbstractShortTermEncounter2DPOCMethod {
                public:
                 enum {
-                  mid_init$_0640e6acf969ed28,
-                  mid_compute_ddf22cd33bfe153c,
-                  mid_compute_8d09da96ce925a0b,
-                  mid_getType_4b8bf2bb84f7480e,
+                  mid_init$_a1fa5dae97ea5ed2,
+                  mid_compute_a73e6347f5238a63,
+                  mid_compute_11689cd07cf55453,
+                  mid_getType_8397a286d982b383,
                   max_mid
                 };
 

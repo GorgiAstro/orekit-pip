@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class RotationOrder;
           class Vector3D;
+          class RotationOrder;
         }
       }
     }
@@ -32,13 +32,13 @@ namespace org {
           class RotationOrder : public ::java::lang::Enum {
            public:
             enum {
-              mid_getA1_f88961cca75a2c0a,
-              mid_getA2_f88961cca75a2c0a,
-              mid_getA3_f88961cca75a2c0a,
-              mid_getRotationOrder_0adbda9cfecaf135,
-              mid_toString_3cffd47377eca18a,
-              mid_valueOf_0adbda9cfecaf135,
-              mid_values_cb69e5301b76856d,
+              mid_getA1_8b724f8b4fdad1a2,
+              mid_getA2_8b724f8b4fdad1a2,
+              mid_getA3_8b724f8b4fdad1a2,
+              mid_getRotationOrder_c58ffe7d0f427750,
+              mid_toString_1c1fa1e935d6cdcf,
+              mid_valueOf_c58ffe7d0f427750,
+              mid_values_e32bcf1fa8ee5bf1,
               max_mid
             };
 

@@ -6,9 +6,9 @@
 namespace org {
   namespace orekit {
     namespace attitudes {
-      class Attitude;
       class AttitudeProvider;
       class FieldAttitude;
+      class Attitude;
     }
     namespace time {
       class FieldAbsoluteDate;
@@ -26,8 +26,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Rotation;
           class FieldRotation;
+          class Rotation;
         }
       }
     }
@@ -47,14 +47,14 @@ namespace org {
       class FrameAlignedProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_cffe2196131a8abb,
-          mid_init$_535d1f91a93c8b4d,
-          mid_init$_5aed8d3c9ea07a80,
-          mid_getAttitude_1306ac39e1d2de3f,
-          mid_getAttitude_77e3383de01f3e48,
-          mid_getAttitudeRotation_85bb0a19efdadc1d,
-          mid_getAttitudeRotation_5c74bfcf2d42825a,
-          mid_of_cdc4e41e4b95cd96,
+          mid_init$_f32de4638c68c05a,
+          mid_init$_237ae1c2ddd68062,
+          mid_init$_f43ca627e733b5ae,
+          mid_getAttitude_21845cfb0034fe1c,
+          mid_getAttitude_896ee4d68989b1e8,
+          mid_getAttitudeRotation_1bc07ea175743b30,
+          mid_getAttitudeRotation_6acae55a2f5d3ab4,
+          mid_of_90b35c894f9743d5,
           max_mid
         };
 

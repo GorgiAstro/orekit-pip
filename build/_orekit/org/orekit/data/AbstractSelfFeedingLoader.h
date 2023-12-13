@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace data {
       class DataProvidersManager;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,11 +25,11 @@ namespace org {
       class AbstractSelfFeedingLoader : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_28c7bdc075bb74e8,
-          mid_getDataProvidersManager_090dc74a0d7a5aef,
-          mid_feed_8002d1bd7ca19a7b,
-          mid_getSupportedNames_3cffd47377eca18a,
-          mid_setSupportedNames_f5ffdf29129ef90a,
+          mid_init$_0343d25c5af74eca,
+          mid_getSupportedNames_1c1fa1e935d6cdcf,
+          mid_getDataProvidersManager_58cee34d9bd73f33,
+          mid_feed_e85cadd85939e324,
+          mid_setSupportedNames_734b91ac30d5f9b4,
           max_mid
         };
 

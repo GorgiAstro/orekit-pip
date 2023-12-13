@@ -3,26 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace sampling {
-        class OrekitStepInterpolator;
-      }
-    }
-    namespace estimation {
-      namespace measurements {
-        namespace generation {
-          class MeasurementBuilder;
-        }
-        class ObservableSatellite;
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class Map;
@@ -30,6 +10,26 @@ namespace java {
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace sampling {
+        class OrekitStepInterpolator;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace estimation {
+      namespace measurements {
+        class ObservableSatellite;
+        namespace generation {
+          class MeasurementBuilder;
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -43,9 +43,9 @@ namespace org {
           class Scheduler : public ::java::lang::Object {
            public:
             enum {
-              mid_generate_efa69a4463f8239b,
-              mid_getBuilder_73d2d5822258be13,
-              mid_init_d5db9a5f2035671b,
+              mid_generate_3d5d4740e56d31ff,
+              mid_getBuilder_45574e80a4b0eb29,
+              mid_init_f89af00fc113b524,
               max_mid
             };
 

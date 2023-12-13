@@ -31,10 +31,10 @@ namespace org {
         class NodesSet : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_add_5865d893f5a7dd72,
-            mid_addAll_f63faef051c62dc2,
-            mid_iterator_834a3801c426326d,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_add_3a739bdb8ed3db11,
+            mid_addAll_bc29b133e9ea6ed1,
+            mid_iterator_fc7780bc5d5b73b0,
             max_mid
           };
 

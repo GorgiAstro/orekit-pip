@@ -3,14 +3,14 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,8 +24,8 @@ namespace org {
           class IonosphericMappingFunction : public ::java::lang::Object {
            public:
             enum {
-              mid_mappingFactor_7e960cd6eee376d8,
-              mid_mappingFactor_6672ad854985cb64,
+              mid_mappingFactor_04fd0666b613d2ab,
+              mid_mappingFactor_6e00dc5eb352fe51,
               max_mid
             };
 

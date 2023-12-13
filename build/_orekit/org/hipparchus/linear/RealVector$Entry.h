@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace linear {
       class RealVector;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,11 +24,11 @@ namespace org {
       class RealVector$Entry : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_87d15d6564ad754f,
-          mid_getIndex_412668abc8d889e9,
-          mid_getValue_557b8123390d8d0c,
-          mid_setIndex_a3da1a935cb37f7b,
-          mid_setValue_10f281d777284cea,
+          mid_init$_872f190ac7ffe0f7,
+          mid_getIndex_55546ef6a647f39b,
+          mid_getValue_b74f83833fdad017,
+          mid_setIndex_44ed599e93e8a30c,
+          mid_setValue_8ba9fe7a847cecad,
           max_mid
         };
 

@@ -8,20 +8,20 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
     class CalculusFieldElement;
   }
   namespace orekit {
+    namespace utils {
+      class ParameterDriver;
+    }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
     }
   }
 }
@@ -44,9 +44,9 @@ namespace org {
         class DragSensitive : public ::java::lang::Object {
          public:
           enum {
-            mid_dragAcceleration_59d392869e8fa633,
-            mid_dragAcceleration_bc16b30ecfb3a4cc,
-            mid_getDragParametersDrivers_0d9551367f7ecdef,
+            mid_dragAcceleration_7a2b875d7cdeb947,
+            mid_dragAcceleration_c95e6c4bf4979a1a,
+            mid_getDragParametersDrivers_e62d3bb06d56d7e3,
             max_mid
           };
 

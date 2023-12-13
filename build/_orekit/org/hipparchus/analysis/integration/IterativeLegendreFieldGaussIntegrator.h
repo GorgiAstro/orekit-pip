@@ -3,17 +3,17 @@
 
 #include "org/hipparchus/analysis/integration/BaseAbstractFieldUnivariateIntegrator.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
     class Field;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,10 +26,10 @@ namespace org {
         class IterativeLegendreFieldGaussIntegrator : public ::org::hipparchus::analysis::integration::BaseAbstractFieldUnivariateIntegrator {
          public:
           enum {
-            mid_init$_cf1ad140044f1125,
-            mid_init$_a4259b5830086408,
-            mid_init$_f0a2b9d548f5bbaa,
-            mid_doIntegrate_613c8f46c659f636,
+            mid_init$_eb0a957f0424f345,
+            mid_init$_aa3d598d86c9a2b6,
+            mid_init$_c0b68a8af6ee9ffc,
+            mid_doIntegrate_81520b552cb3fa26,
             max_mid
           };
 

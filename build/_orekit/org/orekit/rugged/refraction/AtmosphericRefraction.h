@@ -6,18 +6,18 @@
 namespace org {
   namespace orekit {
     namespace rugged {
-      namespace utils {
-        class NormalizedGeodeticPoint;
-      }
-      namespace linesensor {
-        class SensorPixel;
-        class LineSensor;
-      }
       namespace intersection {
         class IntersectionAlgorithm;
       }
+      namespace linesensor {
+        class LineSensor;
+        class SensorPixel;
+      }
       namespace refraction {
         class AtmosphericComputationParameters;
+      }
+      namespace utils {
+        class NormalizedGeodeticPoint;
       }
     }
   }
@@ -53,18 +53,18 @@ namespace org {
         class AtmosphericRefraction : public ::java::lang::Object {
          public:
           enum {
-            mid_applyCorrection_981eb3dc755df9fc,
-            mid_computeGridCorrectionFunctions_7f8f3b09c1fc49ca,
-            mid_configureCorrectionGrid_03c83376fa653679,
-            mid_deactivateComputation_0640e6acf969ed28,
-            mid_getBifLine_21978c3787844e9d,
-            mid_getBifPixel_21978c3787844e9d,
-            mid_getComputationParameters_68f95f8b3d5bc1b9,
-            mid_isSameContext_81615cd59e7dd174,
-            mid_mustBeComputed_89b302893bdbe1f1,
-            mid_reactivateComputation_0640e6acf969ed28,
-            mid_setGridSteps_a84c9a223722150c,
-            mid_setInverseLocMargin_10f281d777284cea,
+            mid_applyCorrection_88676b739a4ea0ca,
+            mid_computeGridCorrectionFunctions_100b59f5a1608878,
+            mid_configureCorrectionGrid_6998202d78aaf9b3,
+            mid_deactivateComputation_a1fa5dae97ea5ed2,
+            mid_getBifLine_39d5e04e66a73298,
+            mid_getBifPixel_39d5e04e66a73298,
+            mid_getComputationParameters_c0286b645a347da0,
+            mid_isSameContext_dd98a0a85f82fe3f,
+            mid_mustBeComputed_9ab94ac1dc23b105,
+            mid_reactivateComputation_a1fa5dae97ea5ed2,
+            mid_setGridSteps_3313c75e3e16c428,
+            mid_setInverseLocMargin_8ba9fe7a847cecad,
             max_mid
           };
 

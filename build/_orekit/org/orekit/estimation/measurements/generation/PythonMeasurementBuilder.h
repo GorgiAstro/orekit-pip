@@ -3,28 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace sampling {
-        class OrekitStepInterpolator;
-      }
-    }
-    namespace estimation {
-      namespace measurements {
-        class ObservedMeasurement;
-        namespace generation {
-          class MeasurementBuilder;
-        }
-        class ObservableSatellite;
-        class EstimationModifier;
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -33,6 +11,28 @@ namespace java {
   namespace lang {
     class Throwable;
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class EstimationModifier;
+        class ObservedMeasurement;
+        class ObservableSatellite;
+        namespace generation {
+          class MeasurementBuilder;
+        }
+      }
+    }
+    namespace propagation {
+      namespace sampling {
+        class OrekitStepInterpolator;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
   }
 }
 template<class T> class JArray;
@@ -46,16 +46,16 @@ namespace org {
           class PythonMeasurementBuilder : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_addModifier_6f472135bf397672,
-              mid_build_9bd3ff0754feb0c8,
-              mid_finalize_0640e6acf969ed28,
-              mid_getModifiers_0d9551367f7ecdef,
-              mid_getSatellites_b8c09fefa9db3b83,
-              mid_init_d5db9a5f2035671b,
-              mid_pythonDecRef_0640e6acf969ed28,
-              mid_pythonExtension_9e26256fb0d384a2,
-              mid_pythonExtension_3cd6a6b354c6aa22,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_addModifier_cb38ed914ba48f20,
+              mid_build_121e4e49170b7802,
+              mid_finalize_a1fa5dae97ea5ed2,
+              mid_getModifiers_e62d3bb06d56d7e3,
+              mid_getSatellites_eb47c48e4fca882c,
+              mid_init_f89af00fc113b524,
+              mid_pythonDecRef_a1fa5dae97ea5ed2,
+              mid_pythonExtension_6c0ce7e438e5ded4,
+              mid_pythonExtension_3d7dd2314a0dd456,
               max_mid
             };
 

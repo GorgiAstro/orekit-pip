@@ -6,14 +6,14 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      namespace spherical {
-        namespace twod {
-          class S2Point;
-        }
-      }
       namespace euclidean {
         namespace threed {
           class Vector3D;
+        }
+      }
+      namespace spherical {
+        namespace twod {
+          class S2Point;
         }
       }
     }
@@ -35,16 +35,16 @@ namespace org {
           class Mesh$Node : public ::java::lang::Object {
            public:
             enum {
-              mid_getAcross_f88961cca75a2c0a,
-              mid_getAcrossIndex_412668abc8d889e9,
-              mid_getAlong_f88961cca75a2c0a,
-              mid_getAlongIndex_412668abc8d889e9,
-              mid_getS2P_0ba7e0560ff59fd8,
-              mid_getV_f88961cca75a2c0a,
-              mid_isEnabled_89b302893bdbe1f1,
-              mid_isInside_89b302893bdbe1f1,
-              mid_move_0ed238223dd4eabc,
-              mid_setEnabled_0640e6acf969ed28,
+              mid_getAcross_8b724f8b4fdad1a2,
+              mid_getAcrossIndex_55546ef6a647f39b,
+              mid_getAlong_8b724f8b4fdad1a2,
+              mid_getAlongIndex_55546ef6a647f39b,
+              mid_getS2P_cf0fa877996d1fcc,
+              mid_getV_8b724f8b4fdad1a2,
+              mid_isEnabled_9ab94ac1dc23b105,
+              mid_isInside_9ab94ac1dc23b105,
+              mid_move_4fef341749b9ef99,
+              mid_setEnabled_a1fa5dae97ea5ed2,
               max_mid
             };
 

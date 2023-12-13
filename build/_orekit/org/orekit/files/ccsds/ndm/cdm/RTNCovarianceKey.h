@@ -7,17 +7,17 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace ndm {
+          namespace cdm {
+            class RTNCovarianceKey;
+            class RTNCovariance;
+          }
+        }
         namespace utils {
           namespace lexical {
             class ParseToken;
           }
           class ContextBinding;
-        }
-        namespace ndm {
-          namespace cdm {
-            class RTNCovariance;
-            class RTNCovarianceKey;
-          }
         }
       }
     }
@@ -41,9 +41,9 @@ namespace org {
             class RTNCovarianceKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_c93747e68be263a4,
-                mid_valueOf_89ea04f00a2b6f17,
-                mid_values_ce840628a444c420,
+                mid_process_de46bf683f387688,
+                mid_valueOf_19f1783447388dba,
+                mid_values_689b9b68e9226995,
                 max_mid
               };
 

@@ -8,23 +8,23 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
   }
   namespace orekit {
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace rugged {
       namespace utils {
         class DerivativeGenerator;
       }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
 }
@@ -48,10 +48,10 @@ namespace org {
         class TimeDependentLOS : public ::java::lang::Object {
          public:
           enum {
-            mid_getLOS_52dc17f61c395eb1,
-            mid_getLOSDerivatives_a599f72f961ecf99,
-            mid_getNbPixels_412668abc8d889e9,
-            mid_getParametersDrivers_d7cce92225eb0db2,
+            mid_getLOS_3533789b6b080f9a,
+            mid_getLOSDerivatives_567235bef337e7c5,
+            mid_getNbPixels_55546ef6a647f39b,
+            mid_getParametersDrivers_14e21bf777ff0ccf,
             max_mid
           };
 

@@ -3,16 +3,16 @@
 
 #include "org/hipparchus/analysis/integration/BaseAbstractUnivariateIntegrator.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,10 +25,10 @@ namespace org {
         class SimpsonIntegrator : public ::org::hipparchus::analysis::integration::BaseAbstractUnivariateIntegrator {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_init$_a84c9a223722150c,
-            mid_init$_8ceb2936471aec5d,
-            mid_doIntegrate_557b8123390d8d0c,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_init$_3313c75e3e16c428,
+            mid_init$_5408957787adf55f,
+            mid_doIntegrate_b74f83833fdad017,
             max_mid
           };
 

@@ -19,10 +19,10 @@ namespace org {
           class AbstractAmbiguityModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_89aad365fb0ed8da,
-              mid_getDrivers_0d9551367f7ecdef,
-              mid_doModify_0054a497255e8220,
-              mid_doModifyWithoutDerivatives_e471490df8741b73,
+              mid_init$_d5322b8b512aeb26,
+              mid_doModify_f784f7724d44a90a,
+              mid_getDrivers_e62d3bb06d56d7e3,
+              mid_doModifyWithoutDerivatives_308087fabc1d7f66,
               max_mid
             };
 

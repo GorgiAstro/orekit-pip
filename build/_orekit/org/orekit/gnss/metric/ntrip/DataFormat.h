@@ -31,9 +31,9 @@ namespace org {
           class DataFormat : public ::java::lang::Enum {
            public:
             enum {
-              mid_getDataFormat_268f6f5bf26db0c3,
-              mid_valueOf_268f6f5bf26db0c3,
-              mid_values_5542ae08d129ed1a,
+              mid_getDataFormat_09163b69fefc729e,
+              mid_valueOf_09163b69fefc729e,
+              mid_values_e867222b4082b80e,
               max_mid
             };
 

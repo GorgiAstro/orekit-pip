@@ -3,8 +3,27 @@
 
 #include "org/orekit/models/earth/atmosphere/data/AbstractSolarActivityDataLoader.h"
 
+namespace java {
+  namespace io {
+    class InputStream;
+    class IOException;
+  }
+  namespace text {
+    class ParseException;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+  namespace util {
+    class SortedSet;
+  }
+}
 namespace org {
   namespace orekit {
+    namespace errors {
+      class OrekitException;
+    }
     namespace models {
       namespace earth {
         namespace atmosphere {
@@ -15,28 +34,9 @@ namespace org {
         }
       }
     }
-    namespace errors {
-      class OrekitException;
-    }
     namespace time {
       class TimeScale;
     }
-  }
-}
-namespace java {
-  namespace io {
-    class IOException;
-    class InputStream;
-  }
-  namespace text {
-    class ParseException;
-  }
-  namespace util {
-    class SortedSet;
-  }
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -51,10 +51,10 @@ namespace org {
             class MarshallSolarActivityFutureEstimationLoader : public ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityDataLoader {
              public:
               enum {
-                mid_init$_d5799c4b988fa7a5,
-                mid_init$_914ef2e902d54760,
-                mid_getDataSet_c6b6a992db588a51,
-                mid_loadData_15770e8d8949a557,
+                mid_init$_7bade9164d1f84b1,
+                mid_init$_2110432f762213c9,
+                mid_getDataSet_7961e54fd3a47d94,
+                mid_loadData_360461e719fb564c,
                 max_mid
               };
 

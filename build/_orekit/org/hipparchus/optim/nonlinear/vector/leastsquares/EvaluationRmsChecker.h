@@ -3,14 +3,10 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace optim {
+      class ConvergenceChecker;
       namespace nonlinear {
         namespace vector {
           namespace leastsquares {
@@ -18,8 +14,12 @@ namespace org {
           }
         }
       }
-      class ConvergenceChecker;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,9 +34,9 @@ namespace org {
             class EvaluationRmsChecker : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_10f281d777284cea,
-                mid_init$_ab23f4ae0fb33968,
-                mid_converged_a1dcadd71f86feaa,
+                mid_init$_8ba9fe7a847cecad,
+                mid_init$_369b4c97255d5afa,
+                mid_converged_f1442df915756c9e,
                 max_mid
               };
 

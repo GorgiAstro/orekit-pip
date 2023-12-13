@@ -6,28 +6,28 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class TTScale;
-      class TAIScale;
-      class GMSTScale;
-      class GLONASSScale;
-      class UT1Scale;
-      class IRNSSScale;
       class TDBScale;
-      class BDTScale;
-      class UTCScale;
-      class UTCTAIOffsetsLoader;
-      class GPSScale;
+      class GLONASSScale;
+      class IRNSSScale;
+      class UT1Scale;
+      class GMSTScale;
       class LazyLoadedTimeScales;
-      class GalileoScale;
+      class TTScale;
+      class UTCTAIOffsetsLoader;
       class QZSSScale;
+      class TAIScale;
       class TCBScale;
+      class UTCScale;
       class TCGScale;
-    }
-    namespace utils {
-      class IERSConventions;
+      class GPSScale;
+      class BDTScale;
+      class GalileoScale;
     }
     namespace frames {
       class EOPHistory;
+    }
+    namespace utils {
+      class IERSConventions;
     }
   }
 }
@@ -48,25 +48,25 @@ namespace org {
       class TimeScalesFactory : public ::java::lang::Object {
        public:
         enum {
-          mid_addDefaultUTCTAIOffsetsLoaders_0640e6acf969ed28,
-          mid_addUTCTAIOffsetsLoader_e93935f5cbbffcd2,
-          mid_clearUTCTAIOffsetsLoaders_0640e6acf969ed28,
-          mid_getBDT_9391834b1a937fd3,
-          mid_getGLONASS_237364a28a8cf0b4,
-          mid_getGMST_265dd6a5eaf62dee,
-          mid_getGPS_0cd5c45ac1466124,
-          mid_getGST_3eb0a3a9b450fe42,
-          mid_getIRNSS_64d2db466ba002ef,
-          mid_getQZSS_513baddf28d44704,
-          mid_getTAI_d5c1bf5214e95dd6,
-          mid_getTCB_1561497728a78b6a,
-          mid_getTCG_2cdd0fa7c8f02aa9,
-          mid_getTDB_777ef8538a45134b,
-          mid_getTT_f6e670da699ff3f8,
-          mid_getTimeScales_52cbe31230c76b6b,
-          mid_getUT1_c21aaa13d4f3f95e,
-          mid_getUT1_672057b4f848abf0,
-          mid_getUTC_81e037be1ebdb551,
+          mid_addDefaultUTCTAIOffsetsLoaders_a1fa5dae97ea5ed2,
+          mid_addUTCTAIOffsetsLoader_1237785d9625f10b,
+          mid_clearUTCTAIOffsetsLoaders_a1fa5dae97ea5ed2,
+          mid_getBDT_e66ecc29d9b0858a,
+          mid_getGLONASS_75a06d4a3e06af34,
+          mid_getGMST_375ab849f7e3d9ee,
+          mid_getGPS_a74060fc815076a7,
+          mid_getGST_935fd284aa6ccd53,
+          mid_getIRNSS_d7fbef15a3374e78,
+          mid_getQZSS_f801e6f0b9a78872,
+          mid_getTAI_700cdb40469496d6,
+          mid_getTCB_e0443055c5547bea,
+          mid_getTCG_9ccd709f9ae42bbc,
+          mid_getTDB_61ba58ac615801fa,
+          mid_getTT_68d743a8c670f6cb,
+          mid_getTimeScales_aca7b99124f1f289,
+          mid_getUT1_0d98cf69977e0c28,
+          mid_getUT1_246820b70f2cddeb,
+          mid_getUTC_1e4acbbebd50858e,
           max_mid
         };
 

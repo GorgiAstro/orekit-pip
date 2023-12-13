@@ -42,10 +42,10 @@ namespace org {
           class PocMethodType : public ::java::lang::Enum {
            public:
             enum {
-              mid_getCCSDSName_3cffd47377eca18a,
-              mid_getMethodType_4b8bf2bb84f7480e,
-              mid_valueOf_9043b81e77df60c7,
-              mid_values_d5e436107b529acf,
+              mid_getCCSDSName_1c1fa1e935d6cdcf,
+              mid_getMethodType_8397a286d982b383,
+              mid_valueOf_f1e8a83ff45730d8,
+              mid_values_427018704bdaaf43,
               max_mid
             };
 

@@ -3,16 +3,16 @@
 
 #include "org/hipparchus/distribution/discrete/AbstractIntegerDistribution.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,17 +25,17 @@ namespace org {
         class BinomialDistribution : public ::org::hipparchus::distribution::discrete::AbstractIntegerDistribution {
          public:
           enum {
-            mid_init$_89aad365fb0ed8da,
-            mid_cumulativeProbability_69cfb132c661aca4,
-            mid_getNumberOfTrials_412668abc8d889e9,
-            mid_getNumericalMean_557b8123390d8d0c,
-            mid_getNumericalVariance_557b8123390d8d0c,
-            mid_getProbabilityOfSuccess_557b8123390d8d0c,
-            mid_getSupportLowerBound_412668abc8d889e9,
-            mid_getSupportUpperBound_412668abc8d889e9,
-            mid_isSupportConnected_89b302893bdbe1f1,
-            mid_logProbability_69cfb132c661aca4,
-            mid_probability_69cfb132c661aca4,
+            mid_init$_d5322b8b512aeb26,
+            mid_cumulativeProbability_2afcbc21f4e57ab2,
+            mid_getNumberOfTrials_55546ef6a647f39b,
+            mid_getNumericalMean_b74f83833fdad017,
+            mid_getNumericalVariance_b74f83833fdad017,
+            mid_getProbabilityOfSuccess_b74f83833fdad017,
+            mid_getSupportLowerBound_55546ef6a647f39b,
+            mid_getSupportUpperBound_55546ef6a647f39b,
+            mid_isSupportConnected_9ab94ac1dc23b105,
+            mid_logProbability_2afcbc21f4e57ab2,
+            mid_probability_2afcbc21f4e57ab2,
             max_mid
           };
 

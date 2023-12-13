@@ -3,6 +3,11 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -12,11 +17,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -30,10 +30,10 @@ namespace org {
           class AbstractEncodedMessage : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_extractBits_4f6383d3e31ab417,
-              mid_start_0640e6acf969ed28,
-              mid_fetchByte_412668abc8d889e9,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_extractBits_f4947a88f79e0725,
+              mid_start_a1fa5dae97ea5ed2,
+              mid_fetchByte_55546ef6a647f39b,
               max_mid
             };
 

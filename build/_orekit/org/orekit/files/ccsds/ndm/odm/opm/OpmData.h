@@ -11,11 +11,11 @@ namespace org {
           namespace odm {
             class UserDefined;
             class StateVector;
-            class SpacecraftParameters;
             namespace opm {
               class Maneuver;
             }
             class CartesianCovariance;
+            class SpacecraftParameters;
             class KeplerianElements;
           }
         }
@@ -47,18 +47,18 @@ namespace org {
               class OpmData : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_ef88bee09a3b5466,
-                  mid_getCovarianceBlock_ab1f5bcd3006ffba,
-                  mid_getKeplerianElementsBlock_a7b00de16bb05023,
-                  mid_getManeuver_8f5fc12e3129007b,
-                  mid_getManeuvers_0d9551367f7ecdef,
-                  mid_getMass_557b8123390d8d0c,
-                  mid_getNbManeuvers_412668abc8d889e9,
-                  mid_getSpacecraftParametersBlock_ac68c68a22df72d8,
-                  mid_getStateVectorBlock_76c5443b4a833bb4,
-                  mid_getUserDefinedBlock_e8dd2483e310f990,
-                  mid_hasManeuvers_89b302893bdbe1f1,
-                  mid_validate_10f281d777284cea,
+                  mid_init$_d04007a8638a42f5,
+                  mid_getCovarianceBlock_e10d3bdd874e7ebe,
+                  mid_getKeplerianElementsBlock_8313e8e884b218d3,
+                  mid_getManeuver_b5f4acb06008530a,
+                  mid_getManeuvers_e62d3bb06d56d7e3,
+                  mid_getMass_b74f83833fdad017,
+                  mid_getNbManeuvers_55546ef6a647f39b,
+                  mid_getSpacecraftParametersBlock_ccfacaad97346180,
+                  mid_getStateVectorBlock_22b74842fb82ffba,
+                  mid_getUserDefinedBlock_757fcfae3141e23d,
+                  mid_hasManeuvers_9ab94ac1dc23b105,
+                  mid_validate_8ba9fe7a847cecad,
                   max_mid
                 };
 

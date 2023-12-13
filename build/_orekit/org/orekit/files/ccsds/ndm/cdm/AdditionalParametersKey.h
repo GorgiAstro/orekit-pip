@@ -9,8 +9,8 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace cdm {
-            class AdditionalParameters;
             class AdditionalParametersKey;
+            class AdditionalParameters;
           }
         }
         namespace utils {
@@ -41,9 +41,9 @@ namespace org {
             class AdditionalParametersKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_4dded83b8b2e78c2,
-                mid_valueOf_11fe4c995a2893ab,
-                mid_values_ef7ca7f6f85c90c1,
+                mid_process_0de97cc9f389c4ab,
+                mid_valueOf_07478531a056f7cd,
+                mid_values_bf0d4550d9ad0468,
                 max_mid
               };
 

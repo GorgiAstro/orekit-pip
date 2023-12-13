@@ -5,21 +5,21 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace analysis {
+      namespace differentiation {
+        class UnivariateDifferentiableFunction;
+        class UnivariateMatrixFunctionDifferentiator;
+        class UnivariateVectorFunctionDifferentiator;
+        class UnivariateDifferentiableVectorFunction;
+        class UnivariateDifferentiableMatrixFunction;
+        class UnivariateFunctionDifferentiator;
+      }
       class UnivariateFunction;
       class UnivariateVectorFunction;
-      namespace differentiation {
-        class UnivariateDifferentiableMatrixFunction;
-        class UnivariateMatrixFunctionDifferentiator;
-        class UnivariateDifferentiableVectorFunction;
-        class UnivariateFunctionDifferentiator;
-        class UnivariateDifferentiableFunction;
-        class UnivariateVectorFunctionDifferentiator;
-      }
       class UnivariateMatrixFunction;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -41,13 +41,13 @@ namespace org {
         class FiniteDifferencesDifferentiator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_89aad365fb0ed8da,
-            mid_init$_c4eb928bd0dae600,
-            mid_differentiate_8233aa57faace755,
-            mid_differentiate_6ca090d927b88e04,
-            mid_differentiate_4cf1016d87eb18ab,
-            mid_getNbPoints_412668abc8d889e9,
-            mid_getStepSize_557b8123390d8d0c,
+            mid_init$_d5322b8b512aeb26,
+            mid_init$_390258812740a16c,
+            mid_differentiate_220981d5dd65e2eb,
+            mid_differentiate_3622054ab553d5e4,
+            mid_differentiate_3e92258d2209079c,
+            mid_getNbPoints_55546ef6a647f39b,
+            mid_getStepSize_b74f83833fdad017,
             max_mid
           };
 

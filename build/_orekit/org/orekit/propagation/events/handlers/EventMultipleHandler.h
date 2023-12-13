@@ -15,11 +15,11 @@ namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
-        class EventDetector;
         namespace handlers {
           class EventHandler;
           class EventMultipleHandler;
         }
+        class EventDetector;
       }
       class SpacecraftState;
     }
@@ -46,14 +46,14 @@ namespace org {
           class EventMultipleHandler : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_addHandler_59ed1088e47ce19e,
-              mid_addHandlers_b99a1af3df83b323,
-              mid_eventOccurred_c85ac59cb25f2670,
-              mid_getHandlers_0d9551367f7ecdef,
-              mid_init_e0491fcf7b1e4288,
-              mid_resetState_ce9bc9b3806ce3d4,
-              mid_setHandlers_4ccaedadb068bdeb,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_addHandler_2c3a580824587767,
+              mid_addHandlers_66864790fef57ca5,
+              mid_eventOccurred_ae9b0131fefe6c67,
+              mid_getHandlers_e62d3bb06d56d7e3,
+              mid_init_0ac7022abb4b9f0c,
+              mid_resetState_ec159c1171338d74,
+              mid_setHandlers_0e7c3032c7c93ed3,
               max_mid
             };
 

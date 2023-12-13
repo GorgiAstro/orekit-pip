@@ -3,27 +3,21 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace utils {
       class ParameterDriversList;
     }
+    namespace orbits {
+      class Orbit;
+    }
     namespace estimation {
-      namespace leastsquares {
-        class BatchLSObserver;
-      }
       namespace measurements {
         class EstimationsProvider;
       }
-    }
-    namespace orbits {
-      class Orbit;
+      namespace leastsquares {
+        class BatchLSObserver;
+      }
     }
   }
   namespace hipparchus {
@@ -38,6 +32,12 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -48,12 +48,12 @@ namespace org {
         class PythonBatchLSObserver : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_evaluationPerformed_4d8a932bdf6a0b43,
-            mid_finalize_0640e6acf969ed28,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_evaluationPerformed_d4b8efc731d06215,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
             max_mid
           };
 

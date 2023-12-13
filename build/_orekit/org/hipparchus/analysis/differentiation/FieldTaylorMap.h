@@ -11,11 +11,11 @@ namespace org {
         class FieldTaylorMap;
       }
     }
+    class Field;
+    class CalculusFieldElement;
     namespace linear {
       class FieldMatrixDecomposer;
     }
-    class CalculusFieldElement;
-    class Field;
   }
 }
 namespace java {
@@ -33,16 +33,16 @@ namespace org {
         class FieldTaylorMap : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_dc508ff654a63001,
-            mid_init$_a4259b5830086408,
-            mid_compose_8a705bca13fda9e9,
-            mid_getFunction_40193fcf634e0858,
-            mid_getNbFunctions_412668abc8d889e9,
-            mid_getNbParameters_412668abc8d889e9,
-            mid_getPoint_41762fd4377ff26e,
-            mid_invert_478258a7e7861983,
-            mid_value_0d5d57abd8dbe925,
-            mid_value_a126e91ca3e53df2,
+            mid_init$_8356de26692c5649,
+            mid_init$_aa3d598d86c9a2b6,
+            mid_compose_965d6f38bf560791,
+            mid_getFunction_1a54109df9c15fac,
+            mid_getNbFunctions_55546ef6a647f39b,
+            mid_getNbParameters_55546ef6a647f39b,
+            mid_getPoint_883be608cfc68c26,
+            mid_invert_8fe79baf5efe64ab,
+            mid_value_d36b5f4f656d870d,
+            mid_value_1cc99f34da9b4a7b,
             max_mid
           };
 

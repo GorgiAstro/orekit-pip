@@ -3,6 +3,12 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Iterable;
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -10,12 +16,6 @@ namespace org {
         class EnclosingBall;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Iterable;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,7 +28,7 @@ namespace org {
         class Encloser : public ::java::lang::Object {
          public:
           enum {
-            mid_enclose_60fb4b68643b7fe8,
+            mid_enclose_11758fc9a7169c2c,
             max_mid
           };
 

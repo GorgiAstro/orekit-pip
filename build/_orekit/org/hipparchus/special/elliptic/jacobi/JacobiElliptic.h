@@ -9,9 +9,9 @@ namespace org {
       namespace elliptic {
         namespace jacobi {
           class CopolarD;
-          class CopolarN;
-          class CopolarS;
           class CopolarC;
+          class CopolarS;
+          class CopolarN;
         }
       }
     }
@@ -33,23 +33,23 @@ namespace org {
           class JacobiElliptic : public ::java::lang::Object {
            public:
             enum {
-              mid_arccd_7e960cd6eee376d8,
-              mid_arccn_7e960cd6eee376d8,
-              mid_arccs_7e960cd6eee376d8,
-              mid_arcdc_7e960cd6eee376d8,
-              mid_arcdn_7e960cd6eee376d8,
-              mid_arcds_7e960cd6eee376d8,
-              mid_arcnc_7e960cd6eee376d8,
-              mid_arcnd_7e960cd6eee376d8,
-              mid_arcns_7e960cd6eee376d8,
-              mid_arcsc_7e960cd6eee376d8,
-              mid_arcsd_7e960cd6eee376d8,
-              mid_arcsn_7e960cd6eee376d8,
-              mid_getM_557b8123390d8d0c,
-              mid_valuesC_e345c4dd0533650e,
-              mid_valuesD_408502db7d0db10a,
-              mid_valuesN_329a9c1ed260f19a,
-              mid_valuesS_1972a62e923c15d4,
+              mid_arccd_04fd0666b613d2ab,
+              mid_arccn_04fd0666b613d2ab,
+              mid_arccs_04fd0666b613d2ab,
+              mid_arcdc_04fd0666b613d2ab,
+              mid_arcdn_04fd0666b613d2ab,
+              mid_arcds_04fd0666b613d2ab,
+              mid_arcnc_04fd0666b613d2ab,
+              mid_arcnd_04fd0666b613d2ab,
+              mid_arcns_04fd0666b613d2ab,
+              mid_arcsc_04fd0666b613d2ab,
+              mid_arcsd_04fd0666b613d2ab,
+              mid_arcsn_04fd0666b613d2ab,
+              mid_getM_b74f83833fdad017,
+              mid_valuesC_545caebfa28309a9,
+              mid_valuesD_6a4049a0051db77c,
+              mid_valuesN_222bbb96d14af314,
+              mid_valuesS_b422a8107f59c4c9,
               max_mid
             };
 

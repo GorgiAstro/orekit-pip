@@ -3,14 +3,20 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
         namespace ndm {
           namespace tdm {
-            class RangeUnitsConverter;
             class TdmMetadata;
+            class RangeUnitsConverter;
           }
         }
       }
@@ -18,12 +24,6 @@ namespace org {
     namespace time {
       class AbsoluteDate;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -38,13 +38,13 @@ namespace org {
             class PythonRangeUnitsConverter : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0640e6acf969ed28,
-                mid_finalize_0640e6acf969ed28,
-                mid_metersToRu_5e4513d7d070fbb0,
-                mid_pythonDecRef_0640e6acf969ed28,
-                mid_pythonExtension_9e26256fb0d384a2,
-                mid_pythonExtension_3cd6a6b354c6aa22,
-                mid_ruToMeters_5e4513d7d070fbb0,
+                mid_init$_a1fa5dae97ea5ed2,
+                mid_finalize_a1fa5dae97ea5ed2,
+                mid_metersToRu_382e9a92dc257319,
+                mid_pythonDecRef_a1fa5dae97ea5ed2,
+                mid_pythonExtension_6c0ce7e438e5ded4,
+                mid_pythonExtension_3d7dd2314a0dd456,
+                mid_ruToMeters_382e9a92dc257319,
                 max_mid
               };
 

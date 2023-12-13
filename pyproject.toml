@@ -12,4 +12,5 @@ build-backend = "setuptools.build_meta"
 name = "orekit"
 version = "12.0"
 dependencies = [
+    "jcchelpers @ git+https://github.com/GorgiAstro/jcchelpers",
 ]

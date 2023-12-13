@@ -3,6 +3,34 @@
 
 #include "org/orekit/propagation/analytical/AbstractAnalyticalPropagator.h"
 
+namespace org {
+  namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+    namespace propagation {
+      class StateCovariance;
+      class BoundedPropagator;
+      class SpacecraftState;
+    }
+    namespace orbits {
+      class Orbit;
+    }
+    namespace time {
+      class TimeStampedPair;
+      class AbsoluteDate;
+      class TimeInterpolator;
+    }
+    namespace frames {
+      class Frame;
+    }
+  }
+  namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -11,34 +39,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      class StateCovariance;
-      class BoundedPropagator;
-      class SpacecraftState;
-    }
-    namespace time {
-      class TimeInterpolator;
-      class AbsoluteDate;
-      class TimeStampedPair;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-    namespace orbits {
-      class Orbit;
-    }
-  }
-  namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
   }
 }
 template<class T> class JArray;
@@ -51,28 +51,28 @@ namespace org {
         class Ephemeris : public ::org::orekit::propagation::analytical::AbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_7e65a9ed6be4bebc,
-            mid_init$_2ee441fbc689b748,
-            mid_init$_d43f63068c548b32,
-            mid_init$_df8ca70857921fcd,
-            mid_init$_99a5fbadd0cd572e,
-            mid_basicPropagate_15e0d02372b1347b,
-            mid_checkInputConsistency_df8ca70857921fcd,
-            mid_checkStatesAndCovariancesConsistency_aaa4588ba4c2491b,
-            mid_getCovariance_85b6ecc270268e0d,
-            mid_getCovarianceInterpolator_d0ccac9b4c6bdd55,
-            mid_getFrame_6c9bc0a928c56d4e,
-            mid_getInitialState_15e85d5301b90ef8,
-            mid_getManagedAdditionalStates_5d7d8c500345981d,
-            mid_getMaxDate_7a97f7e149e79afb,
-            mid_getMinDate_7a97f7e149e79afb,
-            mid_getStateInterpolator_1bb20e7ea407bfce,
-            mid_isAdditionalStateManaged_fd2162b8a05a22fe,
-            mid_resetInitialState_8655761ebf04b503,
-            mid_propagateOrbit_9e937c0ae63d8022,
-            mid_resetIntermediateState_45bf76e836befe86,
-            mid_getMass_b0b988f941da47d8,
-            mid_createHarvester_5f0409a66c29e9c1,
+            mid_init$_33800eba82168d94,
+            mid_init$_a270f372b14e8ccf,
+            mid_init$_76b7d84534d086f1,
+            mid_init$_29c95222b0ba8aa4,
+            mid_init$_1984a4ea061303a5,
+            mid_basicPropagate_4f0008999861ca31,
+            mid_checkInputConsistency_29c95222b0ba8aa4,
+            mid_checkStatesAndCovariancesConsistency_29c3e061cbeaa98b,
+            mid_getCovariance_9a244c8ef0b05dc0,
+            mid_getCovarianceInterpolator_9fe5189c8c3b230d,
+            mid_getFrame_2c51111cc6894ba1,
+            mid_getInitialState_9d155cc8314c99cf,
+            mid_getManagedAdditionalStates_0f94e41879ab7062,
+            mid_getMaxDate_c325492395d89b24,
+            mid_getMinDate_c325492395d89b24,
+            mid_getStateInterpolator_04638ce011c1f261,
+            mid_isAdditionalStateManaged_cde6b28e15c96b75,
+            mid_resetInitialState_280c3390961e0a50,
+            mid_getMass_fd347811007a6ba3,
+            mid_resetIntermediateState_1c47c97cdbc7e206,
+            mid_propagateOrbit_5df6dcb5c4123339,
+            mid_createHarvester_f85b53b28e0fe6bb,
             max_mid
           };
 

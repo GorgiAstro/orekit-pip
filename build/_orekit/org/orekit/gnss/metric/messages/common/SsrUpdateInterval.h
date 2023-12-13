@@ -20,8 +20,8 @@ namespace org {
             class SsrUpdateInterval : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a3da1a935cb37f7b,
-                mid_getUpdateInterval_557b8123390d8d0c,
+                mid_init$_44ed599e93e8a30c,
+                mid_getUpdateInterval_b74f83833fdad017,
                 max_mid
               };
 

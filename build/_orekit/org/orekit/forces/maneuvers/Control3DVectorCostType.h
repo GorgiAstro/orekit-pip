@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
@@ -39,10 +39,10 @@ namespace org {
         class Control3DVectorCostType : public ::java::lang::Enum {
          public:
           enum {
-            mid_evaluate_b2798c156647508e,
-            mid_evaluate_8ddca7bd73e586da,
-            mid_valueOf_416610b402bb077c,
-            mid_values_c44b5897b1d29c77,
+            mid_evaluate_f475fa22e4944acc,
+            mid_evaluate_f75a63670951da8a,
+            mid_valueOf_29696c228e5793fa,
+            mid_values_a36753d641c562a8,
             max_mid
           };
 

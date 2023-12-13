@@ -29,9 +29,9 @@ namespace org {
         class Logistic$Parametric : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_gradient_31b9a2982d73e37a,
-            mid_value_1bc40469b56f2c3c,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_gradient_91fbb4072ae7ce9a,
+            mid_value_e45651f63bcd931a,
             max_mid
           };
 

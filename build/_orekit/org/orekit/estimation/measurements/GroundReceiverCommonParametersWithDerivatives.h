@@ -4,22 +4,22 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace analysis {
-      namespace differentiation {
-        class Gradient;
-      }
-    }
-  }
   namespace orekit {
-    namespace utils {
-      class TimeStampedFieldPVCoordinates;
-    }
     namespace frames {
       class FieldTransform;
     }
     namespace propagation {
       class SpacecraftState;
+    }
+    namespace utils {
+      class TimeStampedFieldPVCoordinates;
+    }
+  }
+  namespace hipparchus {
+    namespace analysis {
+      namespace differentiation {
+        class Gradient;
+      }
     }
   }
 }
@@ -43,14 +43,14 @@ namespace org {
         class GroundReceiverCommonParametersWithDerivatives : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_dcfb87c8aad36676,
-            mid_getIndices_1e62c2f73fbdd1c4,
-            mid_getOffsetToInertialDownlink_88fa1fad93ade5d3,
-            mid_getState_15e85d5301b90ef8,
-            mid_getStationDownlink_232470f1b769250c,
-            mid_getTauD_b157bc83ac48b3b3,
-            mid_getTransitPV_232470f1b769250c,
-            mid_getTransitState_15e85d5301b90ef8,
+            mid_init$_c00889d98498158a,
+            mid_getIndices_810bed48fafb0b9a,
+            mid_getOffsetToInertialDownlink_b8c22ddb6f9598ea,
+            mid_getState_9d155cc8314c99cf,
+            mid_getStationDownlink_243debd9cc1dd623,
+            mid_getTauD_9ebd7c8cd097159e,
+            mid_getTransitPV_243debd9cc1dd623,
+            mid_getTransitState_9d155cc8314c99cf,
             max_mid
           };
 

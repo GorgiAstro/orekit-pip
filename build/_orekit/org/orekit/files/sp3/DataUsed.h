@@ -28,10 +28,10 @@ namespace org {
         class DataUsed : public ::java::lang::Enum {
          public:
           enum {
-            mid_getKey_3cffd47377eca18a,
-            mid_parse_5ef1d1163e3cb4d1,
-            mid_valueOf_7bddb3b32daf38fa,
-            mid_values_6f6c5e41dcb65237,
+            mid_getKey_1c1fa1e935d6cdcf,
+            mid_parse_f4e648268d1df76b,
+            mid_valueOf_16a7ca151d842fbd,
+            mid_values_2bb59ab87b23a09c,
             max_mid
           };
 

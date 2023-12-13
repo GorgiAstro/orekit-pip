@@ -5,19 +5,19 @@
 
 namespace org {
   namespace orekit {
-    namespace bodies {
-      class CelestialBody;
-    }
     namespace frames {
+      class FieldTransform;
       class TransformProvider;
       class Transform;
       class FieldStaticTransform;
       class StaticTransform;
-      class FieldTransform;
     }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
+    }
+    namespace bodies {
+      class CelestialBody;
     }
   }
 }
@@ -35,11 +35,11 @@ namespace org {
       class L1TransformProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_9a72c2af019e2130,
-          mid_getStaticTransform_7265a2d9c3b9a38a,
-          mid_getStaticTransform_68fd5b9bb9184393,
-          mid_getTransform_df04e3927954349e,
-          mid_getTransform_e70631ba002d9a32,
+          mid_init$_8e55d90b2c31e510,
+          mid_getStaticTransform_5f13614b572308e8,
+          mid_getStaticTransform_09ace34b8a3460b2,
+          mid_getTransform_976d4bc81671ce42,
+          mid_getTransform_7a8ca6856fe3fc9e,
           max_mid
         };
 

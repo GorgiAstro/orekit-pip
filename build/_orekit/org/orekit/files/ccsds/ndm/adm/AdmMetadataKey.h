@@ -7,17 +7,17 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace ndm {
+          namespace adm {
+            class AdmMetadataKey;
+            class AdmMetadata;
+          }
+        }
         namespace utils {
           namespace lexical {
             class ParseToken;
           }
           class ContextBinding;
-        }
-        namespace ndm {
-          namespace adm {
-            class AdmMetadata;
-            class AdmMetadataKey;
-          }
         }
       }
     }
@@ -41,9 +41,9 @@ namespace org {
             class AdmMetadataKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_cfa125da71219f08,
-                mid_valueOf_6a09891492e31266,
-                mid_values_b7d60a2274250787,
+                mid_process_4c13edf1d74f1440,
+                mid_valueOf_b4b69c47f5e21fec,
+                mid_values_8841ccfed51a69b7,
                 max_mid
               };
 

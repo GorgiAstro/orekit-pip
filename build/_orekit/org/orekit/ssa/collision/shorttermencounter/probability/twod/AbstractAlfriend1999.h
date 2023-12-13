@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace ssa {
       namespace metrics {
-        class ProbabilityOfCollision;
         class FieldProbabilityOfCollision;
+        class ProbabilityOfCollision;
       }
     }
   }
@@ -34,8 +34,8 @@ namespace org {
               class AbstractAlfriend1999 : public ::org::orekit::ssa::collision::shorttermencounter::probability::twod::AbstractShortTermEncounter2DPOCMethod {
                public:
                 enum {
-                  mid_compute_ddf22cd33bfe153c,
-                  mid_compute_8d09da96ce925a0b,
+                  mid_compute_a73e6347f5238a63,
+                  mid_compute_11689cd07cf55453,
                   max_mid
                 };
 

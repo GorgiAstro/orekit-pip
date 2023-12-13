@@ -31,10 +31,10 @@ namespace org {
       class FieldTimeStampedCache : public ::java::lang::Object {
        public:
         enum {
-          mid_getEarliest_d840ecaffb3bbf7f,
-          mid_getLatest_d840ecaffb3bbf7f,
-          mid_getNeighbors_d2b16151ed8cc73c,
-          mid_getNeighborsSize_412668abc8d889e9,
+          mid_getEarliest_e7a49be0190c3b40,
+          mid_getLatest_e7a49be0190c3b40,
+          mid_getNeighbors_fe526c9a9cb8189c,
+          mid_getNeighborsSize_55546ef6a647f39b,
           max_mid
         };
 

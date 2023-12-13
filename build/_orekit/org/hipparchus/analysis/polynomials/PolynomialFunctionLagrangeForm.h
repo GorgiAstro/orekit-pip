@@ -28,15 +28,15 @@ namespace org {
         class PolynomialFunctionLagrangeForm : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_ab4840ba016ef1da,
-            mid_degree_412668abc8d889e9,
-            mid_evaluate_abf45904c34f3045,
-            mid_getCoefficients_a53a7513ecedada2,
-            mid_getInterpolatingPoints_a53a7513ecedada2,
-            mid_getInterpolatingValues_a53a7513ecedada2,
-            mid_value_7e960cd6eee376d8,
-            mid_verifyInterpolationArray_e4da1fc662513bd0,
-            mid_computeCoefficients_0640e6acf969ed28,
+            mid_init$_b15baa0161a4e9c7,
+            mid_degree_55546ef6a647f39b,
+            mid_evaluate_5427cadc72cd59f7,
+            mid_getCoefficients_25e1757a36c4dde2,
+            mid_getInterpolatingPoints_25e1757a36c4dde2,
+            mid_getInterpolatingValues_25e1757a36c4dde2,
+            mid_value_04fd0666b613d2ab,
+            mid_verifyInterpolationArray_393011d94d739a17,
+            mid_computeCoefficients_a1fa5dae97ea5ed2,
             max_mid
           };
 

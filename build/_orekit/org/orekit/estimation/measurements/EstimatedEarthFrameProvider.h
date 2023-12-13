@@ -4,20 +4,13 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace analysis {
-      namespace differentiation {
-        class Gradient;
-      }
-    }
-  }
   namespace orekit {
     namespace frames {
+      class FieldTransform;
       class TransformProvider;
       class Transform;
       class FieldStaticTransform;
       class StaticTransform;
-      class FieldTransform;
     }
     namespace time {
       class FieldAbsoluteDate;
@@ -26,6 +19,13 @@ namespace org {
     }
     namespace utils {
       class ParameterDriver;
+    }
+  }
+  namespace hipparchus {
+    namespace analysis {
+      namespace differentiation {
+        class Gradient;
+      }
     }
   }
 }
@@ -49,19 +49,19 @@ namespace org {
         class EstimatedEarthFrameProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_397cb98b48a45c7c,
-            mid_getEstimatedUT1_22bf001d2b53d119,
-            mid_getPolarDriftXDriver_4194657b5e280ddc,
-            mid_getPolarDriftYDriver_4194657b5e280ddc,
-            mid_getPolarOffsetXDriver_4194657b5e280ddc,
-            mid_getPolarOffsetYDriver_4194657b5e280ddc,
-            mid_getPrimeMeridianDriftDriver_4194657b5e280ddc,
-            mid_getPrimeMeridianOffsetDriver_4194657b5e280ddc,
-            mid_getStaticTransform_7265a2d9c3b9a38a,
-            mid_getStaticTransform_68fd5b9bb9184393,
-            mid_getTransform_df04e3927954349e,
-            mid_getTransform_e70631ba002d9a32,
-            mid_getTransform_4c0f713f503cbfed,
+            mid_init$_e5fa6e9d2e3c3072,
+            mid_getEstimatedUT1_03c3c9443d7f95bb,
+            mid_getPolarDriftXDriver_a59daa5e273117e1,
+            mid_getPolarDriftYDriver_a59daa5e273117e1,
+            mid_getPolarOffsetXDriver_a59daa5e273117e1,
+            mid_getPolarOffsetYDriver_a59daa5e273117e1,
+            mid_getPrimeMeridianDriftDriver_a59daa5e273117e1,
+            mid_getPrimeMeridianOffsetDriver_a59daa5e273117e1,
+            mid_getStaticTransform_5f13614b572308e8,
+            mid_getStaticTransform_09ace34b8a3460b2,
+            mid_getTransform_976d4bc81671ce42,
+            mid_getTransform_7a8ca6856fe3fc9e,
+            mid_getTransform_dc749462c96219b1,
             max_mid
           };
 

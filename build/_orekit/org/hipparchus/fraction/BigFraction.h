@@ -5,26 +5,26 @@
 
 namespace org {
   namespace hipparchus {
-    class FieldElement;
+    namespace util {
+      class Pair;
+    }
     namespace fraction {
-      class BigFraction;
       class BigFraction$ConvergenceTest;
       class BigFractionField;
+      class BigFraction;
     }
     namespace exception {
       class MathIllegalArgumentException;
       class MathIllegalStateException;
     }
-    namespace util {
-      class Pair;
-    }
+    class FieldElement;
   }
 }
 namespace java {
   namespace lang {
     class Class;
-    class Boolean;
     class Object;
+    class Boolean;
     class String;
     class Comparable;
   }
@@ -43,52 +43,52 @@ namespace org {
       class BigFraction : public ::java::lang::Number {
        public:
         enum {
-          mid_init$_10f281d777284cea,
-          mid_init$_a3da1a935cb37f7b,
-          mid_init$_3cd6a6b354c6aa22,
-          mid_init$_a84c9a223722150c,
-          mid_init$_b6065b86e67f80de,
-          mid_init$_84a4ee84786818cf,
-          mid_init$_427af08acba367ca,
-          mid_abs_92546681fd225453,
-          mid_add_df625784438fce94,
-          mid_add_d98aa95d9530f843,
-          mid_add_75d24c38a9b7b29b,
-          mid_compareTo_83725ddd1b989a7e,
-          mid_convergent_2f108a8fda179cc0,
-          mid_convergents_9f7d72ee529fa4ce,
-          mid_divide_df625784438fce94,
-          mid_divide_d98aa95d9530f843,
-          mid_divide_75d24c38a9b7b29b,
-          mid_doubleValue_557b8123390d8d0c,
-          mid_equals_221e8e85cb385209,
-          mid_floatValue_04fe014f7609dc26,
-          mid_getDenominatorAsInt_412668abc8d889e9,
-          mid_getDenominatorAsLong_9e26256fb0d384a2,
-          mid_getField_b141d0462bc50421,
-          mid_getNumeratorAsInt_412668abc8d889e9,
-          mid_getNumeratorAsLong_9e26256fb0d384a2,
-          mid_getReal_557b8123390d8d0c,
-          mid_getReducedFraction_3c5825c429555f3b,
-          mid_hashCode_412668abc8d889e9,
-          mid_intValue_412668abc8d889e9,
-          mid_isInteger_89b302893bdbe1f1,
-          mid_longValue_9e26256fb0d384a2,
-          mid_multiply_df625784438fce94,
-          mid_multiply_d98aa95d9530f843,
-          mid_multiply_75d24c38a9b7b29b,
-          mid_negate_92546681fd225453,
-          mid_percentageValue_557b8123390d8d0c,
-          mid_pow_7e960cd6eee376d8,
-          mid_pow_d98aa95d9530f843,
-          mid_pow_75d24c38a9b7b29b,
-          mid_reciprocal_92546681fd225453,
-          mid_reduce_92546681fd225453,
-          mid_signum_412668abc8d889e9,
-          mid_subtract_df625784438fce94,
-          mid_subtract_d98aa95d9530f843,
-          mid_subtract_75d24c38a9b7b29b,
-          mid_toString_3cffd47377eca18a,
+          mid_init$_8ba9fe7a847cecad,
+          mid_init$_44ed599e93e8a30c,
+          mid_init$_3d7dd2314a0dd456,
+          mid_init$_3313c75e3e16c428,
+          mid_init$_bdc6c8322b49cc04,
+          mid_init$_3246a605cef69701,
+          mid_init$_2aa803b9073e6a76,
+          mid_abs_7369b54299dcf892,
+          mid_add_5b32b9d46e03e856,
+          mid_add_e1eafac49c6f04c1,
+          mid_add_5e5367a598c17c54,
+          mid_compareTo_a8f11b01dfcd000b,
+          mid_convergent_7f045a1e9d117075,
+          mid_convergents_0df0904681fc943b,
+          mid_divide_5b32b9d46e03e856,
+          mid_divide_e1eafac49c6f04c1,
+          mid_divide_5e5367a598c17c54,
+          mid_doubleValue_b74f83833fdad017,
+          mid_equals_460c5e2d9d51c6cc,
+          mid_floatValue_1fb1bf0772ae5db7,
+          mid_getDenominatorAsInt_55546ef6a647f39b,
+          mid_getDenominatorAsLong_6c0ce7e438e5ded4,
+          mid_getField_23be7e86283dd98a,
+          mid_getNumeratorAsInt_55546ef6a647f39b,
+          mid_getNumeratorAsLong_6c0ce7e438e5ded4,
+          mid_getReal_b74f83833fdad017,
+          mid_getReducedFraction_4b1511d974d66351,
+          mid_hashCode_55546ef6a647f39b,
+          mid_intValue_55546ef6a647f39b,
+          mid_isInteger_9ab94ac1dc23b105,
+          mid_longValue_6c0ce7e438e5ded4,
+          mid_multiply_5b32b9d46e03e856,
+          mid_multiply_e1eafac49c6f04c1,
+          mid_multiply_5e5367a598c17c54,
+          mid_negate_7369b54299dcf892,
+          mid_percentageValue_b74f83833fdad017,
+          mid_pow_04fd0666b613d2ab,
+          mid_pow_e1eafac49c6f04c1,
+          mid_pow_5e5367a598c17c54,
+          mid_reciprocal_7369b54299dcf892,
+          mid_reduce_7369b54299dcf892,
+          mid_signum_55546ef6a647f39b,
+          mid_subtract_5b32b9d46e03e856,
+          mid_subtract_e1eafac49c6f04c1,
+          mid_subtract_5e5367a598c17c54,
+          mid_toString_1c1fa1e935d6cdcf,
           max_mid
         };
 

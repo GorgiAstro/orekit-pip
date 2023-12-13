@@ -3,11 +3,6 @@
 
 #include "org/orekit/estimation/measurements/modifiers/OutlierFilter.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace estimation {
@@ -15,6 +10,11 @@ namespace org {
         class EstimatedMeasurement;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,10 +28,10 @@ namespace org {
           class DynamicOutlierFilter : public ::org::orekit::estimation::measurements::modifiers::OutlierFilter {
            public:
             enum {
-              mid_init$_89aad365fb0ed8da,
-              mid_getSigma_a53a7513ecedada2,
-              mid_modify_0054a497255e8220,
-              mid_setSigma_cc18240f4a737f14,
+              mid_init$_d5322b8b512aeb26,
+              mid_getSigma_25e1757a36c4dde2,
+              mid_modify_f784f7724d44a90a,
+              mid_setSigma_ab69da052b88f50c,
               max_mid
             };
 

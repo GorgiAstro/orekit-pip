@@ -3,29 +3,29 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
-    namespace bodies {
-      class CR3BPSystem;
-    }
     namespace propagation {
       namespace integration {
-        class CombinedDerivatives;
         class AdditionalDerivativesProvider;
+        class CombinedDerivatives;
       }
       class SpacecraftState;
+    }
+    namespace bodies {
+      class CR3BPSystem;
     }
   }
   namespace hipparchus {
     namespace linear {
       class RealMatrix;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -39,12 +39,12 @@ namespace org {
           class STMEquations : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_f1c6590d5c8242d6,
-              mid_combinedDerivatives_5fc55a092d474e7c,
-              mid_getDimension_412668abc8d889e9,
-              mid_getName_3cffd47377eca18a,
-              mid_getStateTransitionMatrix_fc9cdfa83c55d6b2,
-              mid_setInitialPhi_2c4cc16b11f79a6c,
+              mid_init$_572e4de529747211,
+              mid_combinedDerivatives_f7e02f1d7093fbbb,
+              mid_getDimension_55546ef6a647f39b,
+              mid_getName_1c1fa1e935d6cdcf,
+              mid_getStateTransitionMatrix_b7aa5791b069a41f,
+              mid_setInitialPhi_c3c52b1257139045,
               max_mid
             };
 

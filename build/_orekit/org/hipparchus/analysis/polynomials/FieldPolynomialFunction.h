@@ -6,17 +6,17 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class MathIllegalArgumentException;
       class NullArgumentException;
+      class MathIllegalArgumentException;
     }
     namespace analysis {
-      class CalculusFieldUnivariateFunction;
       namespace polynomials {
         class FieldPolynomialFunction;
       }
+      class CalculusFieldUnivariateFunction;
     }
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -34,22 +34,22 @@ namespace org {
         class FieldPolynomialFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_5d9c9afaca2e497c,
-            mid_add_56800b7225457744,
-            mid_antiDerivative_30587ce6268a4343,
-            mid_degree_412668abc8d889e9,
-            mid_getCoefficients_41762fd4377ff26e,
-            mid_getField_20f98801541dcec1,
-            mid_integrate_b42a276fbe83c342,
-            mid_integrate_d5f58731bcb8a011,
-            mid_multiply_56800b7225457744,
-            mid_negate_30587ce6268a4343,
-            mid_polynomialDerivative_30587ce6268a4343,
-            mid_subtract_56800b7225457744,
-            mid_value_94d37e81a3238af8,
-            mid_value_6672ad854985cb64,
-            mid_evaluate_89721435ed03bed1,
-            mid_differentiate_a126e91ca3e53df2,
+            mid_init$_8b0f7facc8a6a46e,
+            mid_add_3540fbdca36a9a2d,
+            mid_antiDerivative_8acb8b6f60143fc2,
+            mid_degree_55546ef6a647f39b,
+            mid_getCoefficients_883be608cfc68c26,
+            mid_getField_04d1f63e17d5c5d4,
+            mid_integrate_7cdd86319cd5fd7c,
+            mid_integrate_c6408fdce2cc6c1a,
+            mid_multiply_3540fbdca36a9a2d,
+            mid_negate_8acb8b6f60143fc2,
+            mid_polynomialDerivative_8acb8b6f60143fc2,
+            mid_subtract_3540fbdca36a9a2d,
+            mid_value_1d3e368d09a6f8a6,
+            mid_value_6e00dc5eb352fe51,
+            mid_evaluate_a753398bd4e84b37,
+            mid_differentiate_1cc99f34da9b4a7b,
             max_mid
           };
 

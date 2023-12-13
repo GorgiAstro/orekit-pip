@@ -27,8 +27,8 @@ namespace org {
         class InterpolatingMicrosphere2D : public ::org::hipparchus::analysis::interpolation::InterpolatingMicrosphere {
          public:
           enum {
-            mid_init$_c4eb928bd0dae600,
-            mid_copy_d9b2fb455c013e7e,
+            mid_init$_390258812740a16c,
+            mid_copy_8647effe2b9c12a8,
             max_mid
           };
 

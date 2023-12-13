@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace optim {
       class ConvergenceChecker;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,10 +24,10 @@ namespace org {
       class AbstractConvergenceChecker : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_ab23f4ae0fb33968,
-          mid_converged_a643aa1e5ed43cf0,
-          mid_getAbsoluteThreshold_557b8123390d8d0c,
-          mid_getRelativeThreshold_557b8123390d8d0c,
+          mid_init$_369b4c97255d5afa,
+          mid_converged_061aaa68e115701e,
+          mid_getAbsoluteThreshold_b74f83833fdad017,
+          mid_getRelativeThreshold_b74f83833fdad017,
           max_mid
         };
 

@@ -5,18 +5,18 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-      class MathIllegalStateException;
-    }
     namespace ode {
       namespace sampling {
         class ODEStateInterpolator;
       }
+      class ODEStateAndDerivative;
       namespace events {
         class EventOccurrence;
       }
-      class ODEStateAndDerivative;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
     }
   }
 }
@@ -35,10 +35,10 @@ namespace org {
         class EventState : public ::java::lang::Object {
          public:
           enum {
-            mid_doEvent_6006b945607419cb,
-            mid_evaluateStep_8380759ad65b5b06,
-            mid_getEventTime_557b8123390d8d0c,
-            mid_init_7e69c83de8052a2b,
+            mid_doEvent_1eca994d89f760c7,
+            mid_evaluateStep_f2bd5620f6269916,
+            mid_getEventTime_b74f83833fdad017,
+            mid_init_a7556bd72cab73f1,
             max_mid
           };
 

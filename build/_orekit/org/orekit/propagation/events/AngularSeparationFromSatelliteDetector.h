@@ -6,10 +6,10 @@
 namespace org {
   namespace orekit {
     namespace propagation {
-      class SpacecraftState;
       namespace events {
         class AngularSeparationFromSatelliteDetector;
       }
+      class SpacecraftState;
     }
     namespace utils {
       class PVCoordinatesProvider;
@@ -31,12 +31,12 @@ namespace org {
         class AngularSeparationFromSatelliteDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_d026d5c1d05f1112,
-            mid_g_1bbf81d80c47ecdd,
-            mid_getPrimaryObject_dec199e86bf037eb,
-            mid_getProximityAngle_557b8123390d8d0c,
-            mid_getSecondaryObject_dec199e86bf037eb,
-            mid_create_5636a7936e1f1639,
+            mid_init$_fd7c2e53f14940e1,
+            mid_g_a17ea857ce74d258,
+            mid_getPrimaryObject_8a41319e47f3bd7c,
+            mid_getProximityAngle_b74f83833fdad017,
+            mid_getSecondaryObject_8a41319e47f3bd7c,
+            mid_create_c866229f17fb160d,
             max_mid
           };
 

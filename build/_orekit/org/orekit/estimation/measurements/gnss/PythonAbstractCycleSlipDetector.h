@@ -17,8 +17,15 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace gnss {
-      class Frequency;
       class SatelliteSystem;
+      class Frequency;
+    }
+    namespace files {
+      namespace rinex {
+        namespace observation {
+          class ObservationDataSet;
+        }
+      }
     }
     namespace time {
       class AbsoluteDate;
@@ -27,13 +34,6 @@ namespace org {
       namespace measurements {
         namespace gnss {
           class CycleSlipDetectorResults;
-        }
-      }
-    }
-    namespace files {
-      namespace rinex {
-        namespace observation {
-          class ObservationDataSet;
         }
       }
     }
@@ -50,16 +50,16 @@ namespace org {
           class PythonAbstractCycleSlipDetector : public ::org::orekit::estimation::measurements::gnss::AbstractCycleSlipDetector {
            public:
             enum {
-              mid_cycleSlipDataSet_7660552c05323b39,
-              mid_finalize_0640e6acf969ed28,
-              mid_getMaxTimeBeetween2Measurement_557b8123390d8d0c,
-              mid_getMinMeasurementNumber_412668abc8d889e9,
-              mid_getResults_0d9551367f7ecdef,
-              mid_manageData_7cae3eafa8e6978c,
-              mid_pythonDecRef_0640e6acf969ed28,
-              mid_pythonExtension_9e26256fb0d384a2,
-              mid_pythonExtension_3cd6a6b354c6aa22,
-              mid_setName_3232b7e9138747dc,
+              mid_cycleSlipDataSet_6ac7265223ac326f,
+              mid_finalize_a1fa5dae97ea5ed2,
+              mid_getMaxTimeBeetween2Measurement_b74f83833fdad017,
+              mid_getMinMeasurementNumber_55546ef6a647f39b,
+              mid_getResults_e62d3bb06d56d7e3,
+              mid_manageData_e95b94a72b1c921a,
+              mid_pythonDecRef_a1fa5dae97ea5ed2,
+              mid_pythonExtension_6c0ce7e438e5ded4,
+              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_setName_c8f78fa2214ae788,
               max_mid
             };
 

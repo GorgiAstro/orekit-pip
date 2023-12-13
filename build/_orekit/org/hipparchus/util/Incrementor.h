@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace util {
-      class Incrementor;
       class Incrementor$MaxCountExceededCallback;
+      class Incrementor;
     }
     namespace exception {
       class NullArgumentException;
@@ -28,19 +28,19 @@ namespace org {
       class Incrementor : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_init$_a3da1a935cb37f7b,
-          mid_init$_6115a254f339da5a,
-          mid_canIncrement_89b302893bdbe1f1,
-          mid_canIncrement_e034cac2b514bb09,
-          mid_getCount_412668abc8d889e9,
-          mid_getMaximalCount_412668abc8d889e9,
-          mid_increment_0640e6acf969ed28,
-          mid_increment_a3da1a935cb37f7b,
-          mid_reset_0640e6acf969ed28,
-          mid_withCallback_7d206f2689e80805,
-          mid_withCount_332fb07b2e329de7,
-          mid_withMaximalCount_332fb07b2e329de7,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_init$_44ed599e93e8a30c,
+          mid_init$_435c21a2398bab3e,
+          mid_canIncrement_9ab94ac1dc23b105,
+          mid_canIncrement_96f51a3f36d3a2a7,
+          mid_getCount_55546ef6a647f39b,
+          mid_getMaximalCount_55546ef6a647f39b,
+          mid_increment_a1fa5dae97ea5ed2,
+          mid_increment_44ed599e93e8a30c,
+          mid_reset_a1fa5dae97ea5ed2,
+          mid_withCallback_9888a6776bef88ed,
+          mid_withCount_260714b254a0ceb0,
+          mid_withMaximalCount_260714b254a0ceb0,
           max_mid
         };
 

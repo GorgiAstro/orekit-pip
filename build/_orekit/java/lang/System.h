@@ -16,9 +16,9 @@ namespace java {
   }
   namespace lang {
     class System$Logger;
+    class SecurityManager;
     class Class;
     class String;
-    class SecurityManager;
   }
 }
 template<class T> class JArray;
@@ -29,33 +29,33 @@ namespace java {
     class System : public ::java::lang::Object {
      public:
       enum {
-        mid_arraycopy_9c85428faa953ae4,
-        mid_clearProperty_60bb1b490b673cbf,
-        mid_console_d6f040d5f1d89911,
-        mid_currentTimeMillis_9e26256fb0d384a2,
-        mid_exit_a3da1a935cb37f7b,
-        mid_gc_0640e6acf969ed28,
-        mid_getLogger_04e24e1cf8b5e4f4,
-        mid_getLogger_959e52365d007adc,
-        mid_getProperties_61e0a00d9f74111b,
-        mid_getProperty_60bb1b490b673cbf,
-        mid_getProperty_495add03b8c9417b,
-        mid_getSecurityManager_5be429c4111838b6,
-        mid_getenv_1e62c2f73fbdd1c4,
-        mid_getenv_60bb1b490b673cbf,
-        mid_identityHashCode_38a1845c8d44a9b0,
-        mid_lineSeparator_3cffd47377eca18a,
-        mid_load_f5ffdf29129ef90a,
-        mid_loadLibrary_f5ffdf29129ef90a,
-        mid_mapLibraryName_60bb1b490b673cbf,
-        mid_nanoTime_9e26256fb0d384a2,
-        mid_runFinalization_0640e6acf969ed28,
-        mid_setErr_bbeebf9dbb580a3d,
-        mid_setIn_115bc9fcd812647a,
-        mid_setOut_bbeebf9dbb580a3d,
-        mid_setProperties_23f27d9a9ce3d8dc,
-        mid_setProperty_495add03b8c9417b,
-        mid_setSecurityManager_7edea743404d3596,
+        mid_arraycopy_5ef86faafe5c5319,
+        mid_clearProperty_6f0f3576df9f75ee,
+        mid_console_b356a13e79791853,
+        mid_currentTimeMillis_6c0ce7e438e5ded4,
+        mid_exit_44ed599e93e8a30c,
+        mid_gc_a1fa5dae97ea5ed2,
+        mid_getLogger_166034580d25badb,
+        mid_getLogger_95c3b777b3e0ddbd,
+        mid_getProperties_445d7f36702bb006,
+        mid_getProperty_6f0f3576df9f75ee,
+        mid_getProperty_88f2f8c619f3cbd0,
+        mid_getSecurityManager_b096220aecda9b75,
+        mid_getenv_810bed48fafb0b9a,
+        mid_getenv_6f0f3576df9f75ee,
+        mid_identityHashCode_b7898c5e94612125,
+        mid_lineSeparator_1c1fa1e935d6cdcf,
+        mid_load_734b91ac30d5f9b4,
+        mid_loadLibrary_734b91ac30d5f9b4,
+        mid_mapLibraryName_6f0f3576df9f75ee,
+        mid_nanoTime_6c0ce7e438e5ded4,
+        mid_runFinalization_a1fa5dae97ea5ed2,
+        mid_setErr_5820b90479773400,
+        mid_setIn_471a178453aa39ad,
+        mid_setOut_5820b90479773400,
+        mid_setProperties_8d64b213c25ee01e,
+        mid_setProperty_88f2f8c619f3cbd0,
+        mid_setSecurityManager_d90250d0a4a5dad5,
         max_mid
       };
 

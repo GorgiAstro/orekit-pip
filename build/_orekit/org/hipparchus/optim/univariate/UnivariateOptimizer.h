@@ -36,13 +36,13 @@ namespace org {
         class UnivariateOptimizer : public ::org::hipparchus::optim::BaseOptimizer {
          public:
           enum {
-            mid_getGoalType_bd7f7e2869c755fb,
-            mid_getMax_557b8123390d8d0c,
-            mid_getMin_557b8123390d8d0c,
-            mid_getStartValue_557b8123390d8d0c,
-            mid_optimize_749f41c4a1b59e75,
-            mid_computeObjectiveValue_7e960cd6eee376d8,
-            mid_parseOptimizationData_946a92401917c130,
+            mid_getGoalType_cf6b21746452ef78,
+            mid_getMax_b74f83833fdad017,
+            mid_getMin_b74f83833fdad017,
+            mid_getStartValue_b74f83833fdad017,
+            mid_optimize_369e9441b694b1bf,
+            mid_computeObjectiveValue_04fd0666b613d2ab,
+            mid_parseOptimizationData_14193ddbce7a2cc0,
             max_mid
           };
 

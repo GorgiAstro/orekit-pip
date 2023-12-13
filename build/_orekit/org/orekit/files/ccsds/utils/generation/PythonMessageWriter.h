@@ -7,31 +7,31 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace utils {
+          namespace generation {
+            class Generator;
+            class MessageWriter;
+          }
+        }
         namespace section {
-          class Header;
           class Segment;
+          class Header;
         }
         namespace ndm {
           class NdmConstituent;
-        }
-        namespace utils {
-          namespace generation {
-            class MessageWriter;
-            class Generator;
-          }
         }
       }
     }
   }
 }
 namespace java {
-  namespace io {
-    class IOException;
-  }
   namespace lang {
     class Throwable;
     class Class;
     class String;
+  }
+  namespace io {
+    class IOException;
   }
 }
 template<class T> class JArray;
@@ -46,17 +46,17 @@ namespace org {
             class PythonMessageWriter : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0640e6acf969ed28,
-                mid_finalize_0640e6acf969ed28,
-                mid_getFormatVersionKey_3cffd47377eca18a,
-                mid_getRoot_3cffd47377eca18a,
-                mid_getVersion_557b8123390d8d0c,
-                mid_pythonDecRef_0640e6acf969ed28,
-                mid_pythonExtension_9e26256fb0d384a2,
-                mid_pythonExtension_3cd6a6b354c6aa22,
-                mid_writeFooter_0503da09b1f1eb3c,
-                mid_writeHeader_9c5c2ece653aa3f3,
-                mid_writeSegment_c15b5f80625a03e0,
+                mid_init$_a1fa5dae97ea5ed2,
+                mid_finalize_a1fa5dae97ea5ed2,
+                mid_getFormatVersionKey_1c1fa1e935d6cdcf,
+                mid_getRoot_1c1fa1e935d6cdcf,
+                mid_getVersion_b74f83833fdad017,
+                mid_pythonDecRef_a1fa5dae97ea5ed2,
+                mid_pythonExtension_6c0ce7e438e5ded4,
+                mid_pythonExtension_3d7dd2314a0dd456,
+                mid_writeFooter_fb222e851cd27682,
+                mid_writeHeader_5f2a5114115bbdb2,
+                mid_writeSegment_1cabdf4a5e993579,
                 max_mid
               };
 

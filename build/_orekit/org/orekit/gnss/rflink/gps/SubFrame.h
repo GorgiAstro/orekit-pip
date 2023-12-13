@@ -3,25 +3,25 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace gnss {
-      namespace rflink {
-        namespace gps {
-          class SubFrame;
-        }
-      }
       namespace metric {
         namespace parser {
           class EncodedMessage;
         }
       }
+      namespace rflink {
+        namespace gps {
+          class SubFrame;
+        }
+      }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -35,19 +35,19 @@ namespace org {
           class SubFrame : public ::java::lang::Object {
            public:
             enum {
-              mid_checkParity_1e0f61f59fdd7111,
-              mid_getAlert_412668abc8d889e9,
-              mid_getAntiSpoofing_412668abc8d889e9,
-              mid_getId_412668abc8d889e9,
-              mid_getIntegrityStatus_412668abc8d889e9,
-              mid_getMessage_412668abc8d889e9,
-              mid_getPreamble_412668abc8d889e9,
-              mid_getTow_412668abc8d889e9,
-              mid_hasParityErrors_89b302893bdbe1f1,
-              mid_parse_80def97abbda8bbb,
-              mid_setField_95509ae0fa83b970,
-              mid_setField_a9571382e1de1e93,
-              mid_getField_0092017e99012694,
+              mid_checkParity_75f431eefaad4f32,
+              mid_getAlert_55546ef6a647f39b,
+              mid_getAntiSpoofing_55546ef6a647f39b,
+              mid_getId_55546ef6a647f39b,
+              mid_getIntegrityStatus_55546ef6a647f39b,
+              mid_getMessage_55546ef6a647f39b,
+              mid_getPreamble_55546ef6a647f39b,
+              mid_getTow_55546ef6a647f39b,
+              mid_hasParityErrors_9ab94ac1dc23b105,
+              mid_parse_5d8d319ba7c11045,
+              mid_setField_d001b9440055cbbc,
+              mid_setField_28f32421fe0b8040,
+              mid_getField_0e7cf35192c3effe,
               max_mid
             };
 

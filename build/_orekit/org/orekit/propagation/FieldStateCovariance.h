@@ -5,30 +5,30 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class LOF;
-      class Frame;
+    namespace propagation {
+      class FieldStateCovariance;
+      class StateCovariance;
     }
     namespace time {
       class FieldAbsoluteDate;
       class FieldTimeStamped;
+    }
+    namespace frames {
+      class LOF;
+      class Frame;
     }
     namespace orbits {
       class OrbitType;
       class PositionAngleType;
       class FieldOrbit;
     }
-    namespace propagation {
-      class FieldStateCovariance;
-      class StateCovariance;
-    }
   }
   namespace hipparchus {
+    class Field;
+    class CalculusFieldElement;
     namespace linear {
       class FieldMatrix;
     }
-    class CalculusFieldElement;
-    class Field;
   }
 }
 namespace java {
@@ -45,19 +45,19 @@ namespace org {
       class FieldStateCovariance : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_e793e31fd7661d04,
-          mid_init$_5d99d74ed1c760dc,
-          mid_changeCovarianceFrame_27b207a35c9e1194,
-          mid_changeCovarianceFrame_b0e3ac315d7b5d79,
-          mid_changeCovarianceType_bbfc7ef621f6c573,
-          mid_getDate_f1fe4daf77c66560,
-          mid_getFrame_6c9bc0a928c56d4e,
-          mid_getLOF_13b82f8eb71f0f31,
-          mid_getMatrix_1d6b27621d7bea96,
-          mid_getOrbitType_2cea2a2cb3e02091,
-          mid_getPositionAngleType_f4984aee71df4c19,
-          mid_shiftedBy_af70d7fbde9f1d5c,
-          mid_toStateCovariance_8e9af39b29713242,
+          mid_init$_2441c6f01a3ea850,
+          mid_init$_b4a10c6f7c6d914d,
+          mid_changeCovarianceFrame_3dbaa923bdea8ccc,
+          mid_changeCovarianceFrame_ec8ad61492c0cb3f,
+          mid_changeCovarianceType_7b9dbe8595640301,
+          mid_getDate_fa23a4301b9c83e7,
+          mid_getFrame_2c51111cc6894ba1,
+          mid_getLOF_f6a236b1948152b5,
+          mid_getMatrix_81d49643ce3a3c0b,
+          mid_getOrbitType_c7d4737d7afca612,
+          mid_getPositionAngleType_c25055891f180348,
+          mid_shiftedBy_79f4fe4d73401b44,
+          mid_toStateCovariance_6c7ec62384a674b1,
           max_mid
         };
 

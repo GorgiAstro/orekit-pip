@@ -9,17 +9,17 @@ namespace org {
       class OccultationEngine;
       class ExtendedPVCoordinatesProvider;
     }
-    namespace propagation {
-      namespace events {
-        class EventDetector;
-        class FieldEventDetector;
-      }
-    }
     namespace forces {
       class ForceModel;
     }
     namespace bodies {
       class OneAxisEllipsoid;
+    }
+    namespace propagation {
+      namespace events {
+        class FieldEventDetector;
+        class EventDetector;
+      }
     }
   }
   namespace hipparchus {
@@ -47,14 +47,14 @@ namespace org {
         class AbstractRadiationForceModel : public ::java::lang::Object {
          public:
           enum {
-            mid_addOccultingBody_fee9aa8bf77f755f,
-            mid_addOccultingBody_b94c0ae4ac2adae8,
-            mid_dependsOnPositionOnly_89b302893bdbe1f1,
-            mid_getEventDetectors_d7cce92225eb0db2,
-            mid_getFieldEventDetectors_8130af76f6998f44,
-            mid_getOccultingBodies_0d9551367f7ecdef,
-            mid_getGeneralEclipseAngles_4c10288a24106aac,
-            mid_getGeneralEclipseAngles_e9034d16e917beab,
+            mid_addOccultingBody_fe488c9958f1d2fe,
+            mid_addOccultingBody_d69eafd654818556,
+            mid_dependsOnPositionOnly_9ab94ac1dc23b105,
+            mid_getEventDetectors_14e21bf777ff0ccf,
+            mid_getFieldEventDetectors_283ad33581c047a0,
+            mid_getOccultingBodies_e62d3bb06d56d7e3,
+            mid_getGeneralEclipseAngles_db4fc232a30d5f8e,
+            mid_getGeneralEclipseAngles_1316a94eb2b77b43,
             max_mid
           };
 

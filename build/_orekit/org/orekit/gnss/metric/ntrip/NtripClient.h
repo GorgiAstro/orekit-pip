@@ -8,9 +8,9 @@ namespace org {
     namespace gnss {
       namespace metric {
         namespace ntrip {
-          class Type;
-          class MessageObserver;
           class SourceTable;
+          class MessageObserver;
+          class Type;
         }
       }
     }
@@ -33,17 +33,17 @@ namespace org {
           class NtripClient : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_358501078068b45e,
-              mid_addObserver_f1b130fed25f6d15,
-              mid_checkException_0640e6acf969ed28,
-              mid_getHost_3cffd47377eca18a,
-              mid_getPort_412668abc8d889e9,
-              mid_getSourceTable_9eeab043e130dbaf,
-              mid_setFix_4df038e269200899,
-              mid_setReconnectParameters_427af08acba367ca,
-              mid_setTimeout_a3da1a935cb37f7b,
-              mid_startStreaming_9e7ab8752977c081,
-              mid_stopStreaming_a3da1a935cb37f7b,
+              mid_init$_02c6e5855745e0e2,
+              mid_addObserver_69de4858924803c0,
+              mid_checkException_a1fa5dae97ea5ed2,
+              mid_getHost_1c1fa1e935d6cdcf,
+              mid_getPort_55546ef6a647f39b,
+              mid_getSourceTable_53fc9c4acee8b189,
+              mid_setFix_bdda379340ba5018,
+              mid_setReconnectParameters_2aa803b9073e6a76,
+              mid_setTimeout_44ed599e93e8a30c,
+              mid_startStreaming_e512c14c09c16a66,
+              mid_stopStreaming_44ed599e93e8a30c,
               max_mid
             };
 

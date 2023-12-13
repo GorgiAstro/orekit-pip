@@ -3,6 +3,12 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace estimation {
@@ -12,12 +18,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,9 +31,9 @@ namespace org {
           class SignSemantic : public ::java::lang::Enum {
            public:
             enum {
-              mid_measurementIsFeasible_dd69c3ab2404bb71,
-              mid_valueOf_6eb2bdb9f9e4160e,
-              mid_values_2b60a43b42635daf,
+              mid_measurementIsFeasible_716249baa52d209e,
+              mid_valueOf_4fc43fd18b980bd4,
+              mid_values_55196758e1f22b2c,
               max_mid
             };
 

@@ -12,14 +12,14 @@ namespace org {
         }
       }
     }
-    namespace frames {
-      class Frame;
-    }
     namespace utils {
       class IERSConventions;
     }
     namespace data {
       class DataContext;
+    }
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -40,13 +40,13 @@ namespace org {
           class CelestialBodyFrame : public ::java::lang::Enum {
            public:
             enum {
-              mid_getFrame_27072b92c7530322,
-              mid_getName_3cffd47377eca18a,
-              mid_guessFrame_1fb9161cbce7f53e,
-              mid_map_eb632e2b819d1e95,
-              mid_parse_3e303cc1781714bf,
-              mid_valueOf_3e303cc1781714bf,
-              mid_values_fda49998e05fb093,
+              mid_getFrame_585ac99dc61d3871,
+              mid_getName_1c1fa1e935d6cdcf,
+              mid_guessFrame_e2e1dd08ff42c311,
+              mid_map_d54827376d276157,
+              mid_parse_04f54e6de2e14bec,
+              mid_valueOf_04f54e6de2e14bec,
+              mid_values_a9d376871d4e60d5,
               max_mid
             };
 

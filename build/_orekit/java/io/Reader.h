@@ -4,15 +4,15 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace io {
-    class IOException;
-    class Reader;
-    class Closeable;
-    class Writer;
-  }
   namespace lang {
     class Readable;
     class Class;
+  }
+  namespace io {
+    class Reader;
+    class IOException;
+    class Closeable;
+    class Writer;
   }
 }
 template<class T> class JArray;
@@ -23,17 +23,17 @@ namespace java {
     class Reader : public ::java::lang::Object {
      public:
       enum {
-        mid_close_0640e6acf969ed28,
-        mid_mark_a3da1a935cb37f7b,
-        mid_markSupported_89b302893bdbe1f1,
-        mid_nullReader_db817b1afec8e8b3,
-        mid_read_412668abc8d889e9,
-        mid_read_25cfe021b074188a,
-        mid_read_f0b052b9721148b0,
-        mid_ready_89b302893bdbe1f1,
-        mid_reset_0640e6acf969ed28,
-        mid_skip_f4ad805a81234b49,
-        mid_transferTo_d97a4dacf4792294,
+        mid_close_a1fa5dae97ea5ed2,
+        mid_mark_44ed599e93e8a30c,
+        mid_markSupported_9ab94ac1dc23b105,
+        mid_nullReader_b2bc6d3e210c2dd4,
+        mid_read_55546ef6a647f39b,
+        mid_read_cedc4c6898e22fb4,
+        mid_read_a45a4db28976f262,
+        mid_ready_9ab94ac1dc23b105,
+        mid_reset_a1fa5dae97ea5ed2,
+        mid_skip_9db63109f74a74fc,
+        mid_transferTo_1da1e24641b39913,
         max_mid
       };
 

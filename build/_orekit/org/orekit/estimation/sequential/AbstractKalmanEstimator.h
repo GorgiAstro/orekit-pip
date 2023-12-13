@@ -14,8 +14,8 @@ namespace org {
   }
   namespace hipparchus {
     namespace linear {
-      class RealMatrix;
       class RealVector;
+      class RealMatrix;
     }
   }
 }
@@ -34,14 +34,14 @@ namespace org {
         class AbstractKalmanEstimator : public ::java::lang::Object {
          public:
           enum {
-            mid_getCurrentDate_7a97f7e149e79afb,
-            mid_getCurrentMeasurementNumber_412668abc8d889e9,
-            mid_getEstimatedMeasurementsParameters_467d574a7997e53a,
-            mid_getOrbitalParametersDrivers_4f6dd8cf21dd8817,
-            mid_getPhysicalEstimatedCovarianceMatrix_70a207fcbc031df2,
-            mid_getPhysicalEstimatedState_75d50d73180655b4,
-            mid_getPropagationParametersDrivers_4f6dd8cf21dd8817,
-            mid_getKalmanEstimation_32faeba2996c6566,
+            mid_getCurrentDate_c325492395d89b24,
+            mid_getCurrentMeasurementNumber_55546ef6a647f39b,
+            mid_getEstimatedMeasurementsParameters_cfb822366e8ab425,
+            mid_getOrbitalParametersDrivers_f4ab92625193d439,
+            mid_getPhysicalEstimatedCovarianceMatrix_f77d745f2128c391,
+            mid_getPhysicalEstimatedState_3a10cc75bd070d84,
+            mid_getPropagationParametersDrivers_f4ab92625193d439,
+            mid_getKalmanEstimation_10690b877ea302f7,
             max_mid
           };
 

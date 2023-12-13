@@ -10,8 +10,8 @@ namespace org {
         namespace oned {
           class OrientedPoint;
           class Euclidean1D;
-          class IntervalsSet;
           class Vector1D;
+          class IntervalsSet;
           class SubOrientedPoint;
         }
       }
@@ -39,19 +39,19 @@ namespace org {
           class OrientedPoint : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_f039d136ebc28ae8,
-              mid_copySelf_7b945166bba626c5,
-              mid_emptyHyperplane_34496686a79d41d6,
-              mid_getLocation_466c0ad242ce3f41,
-              mid_getOffset_cf1fec2b7b1c0efe,
-              mid_getOffset_b540ea36818b5810,
-              mid_getTolerance_557b8123390d8d0c,
-              mid_isDirect_89b302893bdbe1f1,
-              mid_project_328d0d966eeb9668,
-              mid_revertSelf_0640e6acf969ed28,
-              mid_sameOrientationAs_cb9274a363000a77,
-              mid_wholeHyperplane_34496686a79d41d6,
-              mid_wholeSpace_49a234ce53c00b25,
+              mid_init$_9cfe050a265de486,
+              mid_copySelf_5f8b6db3a8315733,
+              mid_emptyHyperplane_a59721c72afcee95,
+              mid_getLocation_62608abb8b57a58e,
+              mid_getOffset_f0dd8cb59ea09794,
+              mid_getOffset_2f915fa9762130df,
+              mid_getTolerance_b74f83833fdad017,
+              mid_isDirect_9ab94ac1dc23b105,
+              mid_project_2214f7ad5b6ca158,
+              mid_revertSelf_a1fa5dae97ea5ed2,
+              mid_sameOrientationAs_806ecfbca1984226,
+              mid_wholeHyperplane_a59721c72afcee95,
+              mid_wholeSpace_9520063cff244850,
               max_mid
             };
 

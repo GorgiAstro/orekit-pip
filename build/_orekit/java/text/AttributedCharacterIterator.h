@@ -4,12 +4,12 @@
 #include "java/text/CharacterIterator.h"
 
 namespace java {
-  namespace text {
-    class AttributedCharacterIterator$Attribute;
-  }
   namespace util {
     class Map;
     class Set;
+  }
+  namespace text {
+    class AttributedCharacterIterator$Attribute;
   }
   namespace lang {
     class Class;
@@ -24,15 +24,15 @@ namespace java {
     class AttributedCharacterIterator : public ::java::text::CharacterIterator {
      public:
       enum {
-        mid_getAllAttributeKeys_2dfcbd371d62f4e1,
-        mid_getAttribute_9787e68ba2c9c1c9,
-        mid_getAttributes_1e62c2f73fbdd1c4,
-        mid_getRunLimit_412668abc8d889e9,
-        mid_getRunLimit_f0718cf8fe2061ba,
-        mid_getRunLimit_709858000440f433,
-        mid_getRunStart_412668abc8d889e9,
-        mid_getRunStart_f0718cf8fe2061ba,
-        mid_getRunStart_709858000440f433,
+        mid_getAllAttributeKeys_7e8f11dd23d1142c,
+        mid_getAttribute_35104434eb6bd0ee,
+        mid_getAttributes_810bed48fafb0b9a,
+        mid_getRunLimit_55546ef6a647f39b,
+        mid_getRunLimit_b0eeda8f546a1c45,
+        mid_getRunLimit_9dfa3140bb9ea2c1,
+        mid_getRunStart_55546ef6a647f39b,
+        mid_getRunStart_b0eeda8f546a1c45,
+        mid_getRunStart_9dfa3140bb9ea2c1,
         max_mid
       };
 

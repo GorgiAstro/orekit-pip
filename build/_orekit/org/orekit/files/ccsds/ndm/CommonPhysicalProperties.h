@@ -4,21 +4,21 @@
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace complex {
-      class Quaternion;
-    }
-  }
   namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace files {
       namespace ccsds {
         namespace definitions {
           class FrameFacade;
         }
       }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
+  namespace hipparchus {
+    namespace complex {
+      class Quaternion;
     }
   }
 }
@@ -38,42 +38,42 @@ namespace org {
           class CommonPhysicalProperties : public ::org::orekit::files::ccsds::section::CommentsContainer {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_getMaxRcs_557b8123390d8d0c,
-              mid_getMinRcs_557b8123390d8d0c,
-              mid_getOebAreaAlongIntermediate_557b8123390d8d0c,
-              mid_getOebAreaAlongMax_557b8123390d8d0c,
-              mid_getOebAreaAlongMin_557b8123390d8d0c,
-              mid_getOebIntermediate_557b8123390d8d0c,
-              mid_getOebMax_557b8123390d8d0c,
-              mid_getOebMin_557b8123390d8d0c,
-              mid_getOebParentFrame_98f5fcaff3e3f9d2,
-              mid_getOebParentFrameEpoch_7a97f7e149e79afb,
-              mid_getOebQ_ed563d4dda2b9f62,
-              mid_getRcs_557b8123390d8d0c,
-              mid_getReflectance_557b8123390d8d0c,
-              mid_getVmAbsolute_557b8123390d8d0c,
-              mid_getVmApparent_557b8123390d8d0c,
-              mid_getVmApparentMax_557b8123390d8d0c,
-              mid_getVmApparentMin_557b8123390d8d0c,
-              mid_setMaxRcs_10f281d777284cea,
-              mid_setMinRcs_10f281d777284cea,
-              mid_setOebAreaAlongIntermediate_10f281d777284cea,
-              mid_setOebAreaAlongMax_10f281d777284cea,
-              mid_setOebAreaAlongMin_10f281d777284cea,
-              mid_setOebIntermediate_10f281d777284cea,
-              mid_setOebMax_10f281d777284cea,
-              mid_setOebMin_10f281d777284cea,
-              mid_setOebParentFrame_f55eee1236275bb1,
-              mid_setOebParentFrameEpoch_20affcbd28542333,
-              mid_setOebQ_89aad365fb0ed8da,
-              mid_setRcs_10f281d777284cea,
-              mid_setReflectance_10f281d777284cea,
-              mid_setVmAbsolute_10f281d777284cea,
-              mid_setVmApparent_10f281d777284cea,
-              mid_setVmApparentMax_10f281d777284cea,
-              mid_setVmApparentMin_10f281d777284cea,
-              mid_validate_10f281d777284cea,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_getMaxRcs_b74f83833fdad017,
+              mid_getMinRcs_b74f83833fdad017,
+              mid_getOebAreaAlongIntermediate_b74f83833fdad017,
+              mid_getOebAreaAlongMax_b74f83833fdad017,
+              mid_getOebAreaAlongMin_b74f83833fdad017,
+              mid_getOebIntermediate_b74f83833fdad017,
+              mid_getOebMax_b74f83833fdad017,
+              mid_getOebMin_b74f83833fdad017,
+              mid_getOebParentFrame_69d8be1b6b0a1a94,
+              mid_getOebParentFrameEpoch_c325492395d89b24,
+              mid_getOebQ_6890e724ec73e493,
+              mid_getRcs_b74f83833fdad017,
+              mid_getReflectance_b74f83833fdad017,
+              mid_getVmAbsolute_b74f83833fdad017,
+              mid_getVmApparent_b74f83833fdad017,
+              mid_getVmApparentMax_b74f83833fdad017,
+              mid_getVmApparentMin_b74f83833fdad017,
+              mid_setMaxRcs_8ba9fe7a847cecad,
+              mid_setMinRcs_8ba9fe7a847cecad,
+              mid_setOebAreaAlongIntermediate_8ba9fe7a847cecad,
+              mid_setOebAreaAlongMax_8ba9fe7a847cecad,
+              mid_setOebAreaAlongMin_8ba9fe7a847cecad,
+              mid_setOebIntermediate_8ba9fe7a847cecad,
+              mid_setOebMax_8ba9fe7a847cecad,
+              mid_setOebMin_8ba9fe7a847cecad,
+              mid_setOebParentFrame_4755133c5c4c59be,
+              mid_setOebParentFrameEpoch_02135a6ef25adb4b,
+              mid_setOebQ_d5322b8b512aeb26,
+              mid_setRcs_8ba9fe7a847cecad,
+              mid_setReflectance_8ba9fe7a847cecad,
+              mid_setVmAbsolute_8ba9fe7a847cecad,
+              mid_setVmApparent_8ba9fe7a847cecad,
+              mid_setVmApparentMax_8ba9fe7a847cecad,
+              mid_setVmApparentMin_8ba9fe7a847cecad,
+              mid_validate_8ba9fe7a847cecad,
               max_mid
             };
 

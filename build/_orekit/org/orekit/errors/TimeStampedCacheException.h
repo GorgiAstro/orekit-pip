@@ -18,8 +18,8 @@ namespace org {
   }
   namespace hipparchus {
     namespace exception {
-      class MathRuntimeException;
       class Localizable;
+      class MathRuntimeException;
     }
   }
 }
@@ -32,12 +32,12 @@ namespace org {
       class TimeStampedCacheException : public ::org::orekit::errors::OrekitException {
        public:
         enum {
-          mid_init$_5a362f030f21d160,
-          mid_init$_6cecc4ef7f063ebe,
-          mid_init$_4fde7f3f87bbd6f7,
-          mid_init$_0ff5a331e85ddf14,
-          mid_unwrap_e56989996ecbae32,
-          mid_unwrap_a2e2492d9d6ade54,
+          mid_init$_5156a99a29d65d29,
+          mid_init$_554667b9a6ae8d23,
+          mid_init$_9b3ada3301b0db8c,
+          mid_init$_4d462b77e7e55a0d,
+          mid_unwrap_a5feb75f1014fda3,
+          mid_unwrap_4b6b5735a3621a84,
           max_mid
         };
 

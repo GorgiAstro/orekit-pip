@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace spherical {
         namespace twod {
-          class Circle;
           class Vertex;
+          class Circle;
         }
       }
       namespace euclidean {
@@ -36,11 +36,11 @@ namespace org {
           class Edge : public ::java::lang::Object {
            public:
             enum {
-              mid_getCircle_7e98cfa0ffbe686f,
-              mid_getEnd_3a3b22b9c96e532e,
-              mid_getLength_557b8123390d8d0c,
-              mid_getPointAt_20de5f9d51c6611f,
-              mid_getStart_3a3b22b9c96e532e,
+              mid_getCircle_394360bc4f7bf853,
+              mid_getEnd_4bad8eaaf8f5ef91,
+              mid_getLength_b74f83833fdad017,
+              mid_getPointAt_498f52cd8e5a7072,
+              mid_getStart_4bad8eaaf8f5ef91,
               max_mid
             };
 

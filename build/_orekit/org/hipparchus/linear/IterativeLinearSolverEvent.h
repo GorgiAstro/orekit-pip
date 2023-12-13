@@ -3,17 +3,17 @@
 
 #include "org/hipparchus/util/IterationEvent.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+    class Object;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace linear {
       class RealVector;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
-    class Object;
   }
 }
 template<class T> class JArray;
@@ -25,12 +25,12 @@ namespace org {
       class IterativeLinearSolverEvent : public ::org::hipparchus::util::IterationEvent {
        public:
         enum {
-          mid_init$_3b6b1ab3a4013647,
-          mid_getNormOfResidual_557b8123390d8d0c,
-          mid_getResidual_75d50d73180655b4,
-          mid_getRightHandSideVector_75d50d73180655b4,
-          mid_getSolution_75d50d73180655b4,
-          mid_providesResidual_89b302893bdbe1f1,
+          mid_init$_1b148ccb530f535f,
+          mid_getNormOfResidual_b74f83833fdad017,
+          mid_getResidual_3a10cc75bd070d84,
+          mid_getRightHandSideVector_3a10cc75bd070d84,
+          mid_getSolution_3a10cc75bd070d84,
+          mid_providesResidual_9ab94ac1dc23b105,
           max_mid
         };
 

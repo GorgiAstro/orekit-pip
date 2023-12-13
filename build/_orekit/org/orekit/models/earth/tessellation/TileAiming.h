@@ -4,11 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace bodies {
-      class GeodeticPoint;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -16,6 +11,11 @@ namespace org {
           class Vector3D;
         }
       }
+    }
+  }
+  namespace orekit {
+    namespace bodies {
+      class GeodeticPoint;
     }
   }
 }
@@ -38,8 +38,8 @@ namespace org {
           class TileAiming : public ::java::lang::Object {
            public:
             enum {
-              mid_alongTileDirection_94d0bf825c02adfa,
-              mid_getSingularPoints_0d9551367f7ecdef,
+              mid_alongTileDirection_636e2b82319b8646,
+              mid_getSingularPoints_e62d3bb06d56d7e3,
               max_mid
             };
 

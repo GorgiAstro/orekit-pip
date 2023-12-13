@@ -4,14 +4,14 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace linear {
-      class RealMatrix;
-    }
-  }
   namespace orekit {
     namespace propagation {
       class SpacecraftState;
+    }
+  }
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
     }
   }
 }
@@ -31,7 +31,7 @@ namespace org {
           class DSSTStateTransitionMatrixGenerator$DSSTPartialsObserver : public ::java::lang::Object {
            public:
             enum {
-              mid_partialsComputed_deea883a52231bef,
+              mid_partialsComputed_502cf79b50556673,
               max_mid
             };
 

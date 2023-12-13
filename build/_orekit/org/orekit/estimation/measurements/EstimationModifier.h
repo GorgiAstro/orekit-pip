@@ -3,11 +3,6 @@
 
 #include "org/orekit/utils/ParameterDriversProvider.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace estimation {
@@ -16,6 +11,11 @@ namespace org {
         class EstimatedMeasurement;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,8 +28,8 @@ namespace org {
         class EstimationModifier : public ::org::orekit::utils::ParameterDriversProvider {
          public:
           enum {
-            mid_modify_0054a497255e8220,
-            mid_modifyWithoutDerivatives_e471490df8741b73,
+            mid_modify_f784f7724d44a90a,
+            mid_modifyWithoutDerivatives_308087fabc1d7f66,
             max_mid
           };
 

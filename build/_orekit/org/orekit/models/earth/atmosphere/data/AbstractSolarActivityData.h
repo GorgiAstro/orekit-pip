@@ -11,11 +11,11 @@ namespace org {
     namespace models {
       namespace earth {
         namespace atmosphere {
+          class DTM2000InputParameters;
           class NRLMSISE00InputParameters;
           namespace data {
             class AbstractSolarActivityDataLoader;
           }
-          class DTM2000InputParameters;
         }
       }
     }
@@ -46,14 +46,14 @@ namespace org {
             class AbstractSolarActivityData : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_f18ad75b06fddccc,
-                mid_getCache_792741bd4cbd4052,
-                mid_getMaxDate_7a97f7e149e79afb,
-                mid_getMinDate_7a97f7e149e79afb,
-                mid_getSupportedNames_3cffd47377eca18a,
-                mid_getUTC_527ee9dde1a96470,
-                mid_getLinearInterpolation_8d3b4fd3f0562a0f,
-                mid_getLinearInterpolation_090c96d685adecf6,
+                mid_init$_54b84112f8bb03a0,
+                mid_getCache_ee138515519e3364,
+                mid_getMaxDate_c325492395d89b24,
+                mid_getMinDate_c325492395d89b24,
+                mid_getSupportedNames_1c1fa1e935d6cdcf,
+                mid_getUTC_34d3bda0a8989e3e,
+                mid_getLinearInterpolation_85e68520109cae31,
+                mid_getLinearInterpolation_6bb0710628614626,
                 max_mid
               };
 

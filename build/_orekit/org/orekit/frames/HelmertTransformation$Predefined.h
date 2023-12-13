@@ -6,9 +6,9 @@
 namespace org {
   namespace orekit {
     namespace frames {
-      class HelmertTransformation;
       class HelmertTransformation$Predefined;
       class Frame;
+      class HelmertTransformation;
       class ITRFVersion;
     }
     namespace time {
@@ -31,15 +31,15 @@ namespace org {
       class HelmertTransformation$Predefined : public ::java::lang::Enum {
        public:
         enum {
-          mid_createTransformedITRF_be8eab9f6f8c1262,
-          mid_createTransformedITRF_3421bf0922818af1,
-          mid_getDestination_b311296551ce8af2,
-          mid_getOrigin_b311296551ce8af2,
-          mid_getTransformation_685acbd1c11a45e2,
-          mid_getTransformation_95565310de8c1bab,
-          mid_selectPredefined_d3cd54fb21c16fef,
-          mid_valueOf_a382223668cf3823,
-          mid_values_4d6128b387e04c2c,
+          mid_createTransformedITRF_fcaa873d7a925322,
+          mid_createTransformedITRF_eec78388a944cd82,
+          mid_getDestination_8bcdfad365f6d36a,
+          mid_getOrigin_8bcdfad365f6d36a,
+          mid_getTransformation_c35844ad436bf6ad,
+          mid_getTransformation_a7295ba5220485f5,
+          mid_selectPredefined_3fe0e3a93eec16df,
+          mid_valueOf_561b63cf182d7094,
+          mid_values_585b558730d6c9b4,
           max_mid
         };
 

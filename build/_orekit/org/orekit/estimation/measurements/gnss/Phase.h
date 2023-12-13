@@ -7,18 +7,18 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class ObservableSatellite;
-        class GroundStation;
         namespace gnss {
           class Phase;
         }
+        class GroundStation;
+        class ObservableSatellite;
       }
-    }
-    namespace utils {
-      class ParameterDriver;
     }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
 }
@@ -39,11 +39,11 @@ namespace org {
           class Phase : public ::org::orekit::estimation::measurements::GroundReceiverMeasurement {
            public:
             enum {
-              mid_init$_341933c95b79307d,
-              mid_getAmbiguityDriver_4194657b5e280ddc,
-              mid_getWavelength_557b8123390d8d0c,
-              mid_theoreticalEvaluationWithoutDerivatives_71d69ca0f7c280a7,
-              mid_theoreticalEvaluation_eae039ee8c8a4a4d,
+              mid_init$_c0ea0d1675f02f42,
+              mid_getAmbiguityDriver_a59daa5e273117e1,
+              mid_getWavelength_b74f83833fdad017,
+              mid_theoreticalEvaluationWithoutDerivatives_9347cf3b1f0dd85a,
+              mid_theoreticalEvaluation_d598991c5cac8ab0,
               max_mid
             };
 

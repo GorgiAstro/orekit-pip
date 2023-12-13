@@ -3,14 +3,14 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,27 +25,27 @@ namespace org {
             class FieldGHIJjsPolynomials : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_56d3d4aaadd7d7a1,
-                mid_getGjs_f548ed78c2486137,
-                mid_getHjs_f548ed78c2486137,
-                mid_getIjs_f548ed78c2486137,
-                mid_getJjs_f548ed78c2486137,
-                mid_getdGjsdAlpha_f548ed78c2486137,
-                mid_getdGjsdBeta_f548ed78c2486137,
-                mid_getdGjsdh_f548ed78c2486137,
-                mid_getdGjsdk_f548ed78c2486137,
-                mid_getdHjsdAlpha_f548ed78c2486137,
-                mid_getdHjsdBeta_f548ed78c2486137,
-                mid_getdHjsdh_f548ed78c2486137,
-                mid_getdHjsdk_f548ed78c2486137,
-                mid_getdIjsdAlpha_f548ed78c2486137,
-                mid_getdIjsdBeta_f548ed78c2486137,
-                mid_getdIjsdh_f548ed78c2486137,
-                mid_getdIjsdk_f548ed78c2486137,
-                mid_getdJjsdAlpha_f548ed78c2486137,
-                mid_getdJjsdBeta_f548ed78c2486137,
-                mid_getdJjsdh_f548ed78c2486137,
-                mid_getdJjsdk_f548ed78c2486137,
+                mid_init$_c6084435a35e7162,
+                mid_getGjs_431f825c752f7b4c,
+                mid_getHjs_431f825c752f7b4c,
+                mid_getIjs_431f825c752f7b4c,
+                mid_getJjs_431f825c752f7b4c,
+                mid_getdGjsdAlpha_431f825c752f7b4c,
+                mid_getdGjsdBeta_431f825c752f7b4c,
+                mid_getdGjsdh_431f825c752f7b4c,
+                mid_getdGjsdk_431f825c752f7b4c,
+                mid_getdHjsdAlpha_431f825c752f7b4c,
+                mid_getdHjsdBeta_431f825c752f7b4c,
+                mid_getdHjsdh_431f825c752f7b4c,
+                mid_getdHjsdk_431f825c752f7b4c,
+                mid_getdIjsdAlpha_431f825c752f7b4c,
+                mid_getdIjsdBeta_431f825c752f7b4c,
+                mid_getdIjsdh_431f825c752f7b4c,
+                mid_getdIjsdk_431f825c752f7b4c,
+                mid_getdJjsdAlpha_431f825c752f7b4c,
+                mid_getdJjsdBeta_431f825c752f7b4c,
+                mid_getdJjsdh_431f825c752f7b4c,
+                mid_getdJjsdk_431f825c752f7b4c,
                 max_mid
               };
 

@@ -3,14 +3,20 @@
 
 #include "org/orekit/estimation/measurements/gnss/AbstractWindUp.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
+        class EstimatedMeasurementBase;
         namespace gnss {
           class Dipole;
         }
-        class EstimatedMeasurementBase;
       }
     }
   }
@@ -24,12 +30,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -41,13 +41,13 @@ namespace org {
           class PythonAbstractWindUp : public ::org::orekit::estimation::measurements::gnss::AbstractWindUp {
            public:
             enum {
-              mid_init$_a32f2a0e5c93d0ee,
-              mid_emitterToInert_d9b98e1ca49f6e0d,
-              mid_finalize_0640e6acf969ed28,
-              mid_pythonDecRef_0640e6acf969ed28,
-              mid_pythonExtension_9e26256fb0d384a2,
-              mid_pythonExtension_3cd6a6b354c6aa22,
-              mid_receiverToInert_d9b98e1ca49f6e0d,
+              mid_init$_a460ca1565b8ffe9,
+              mid_emitterToInert_3b9f748b89094cc6,
+              mid_finalize_a1fa5dae97ea5ed2,
+              mid_pythonDecRef_a1fa5dae97ea5ed2,
+              mid_pythonExtension_6c0ce7e438e5ded4,
+              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_receiverToInert_3b9f748b89094cc6,
               max_mid
             };
 

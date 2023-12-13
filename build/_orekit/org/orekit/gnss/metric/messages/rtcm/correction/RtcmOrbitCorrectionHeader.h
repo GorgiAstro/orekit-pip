@@ -21,9 +21,9 @@ namespace org {
               class RtcmOrbitCorrectionHeader : public ::org::orekit::gnss::metric::messages::rtcm::correction::RtcmCorrectionHeader {
                public:
                 enum {
-                  mid_init$_0640e6acf969ed28,
-                  mid_getSatelliteReferenceDatum_412668abc8d889e9,
-                  mid_setSatelliteReferenceDatum_a3da1a935cb37f7b,
+                  mid_init$_a1fa5dae97ea5ed2,
+                  mid_getSatelliteReferenceDatum_55546ef6a647f39b,
+                  mid_setSatelliteReferenceDatum_44ed599e93e8a30c,
                   max_mid
                 };
 

@@ -20,11 +20,11 @@ namespace org {
             class SigmaEigenvectorsCovariance : public ::org::orekit::files::ccsds::section::CommentsContainer {
              public:
               enum {
-                mid_init$_ed2afdb8506b9742,
-                mid_getCsig3eigvec3_a53a7513ecedada2,
-                mid_isAltCovFlagSet_89b302893bdbe1f1,
-                mid_setCsig3eigvec3_cc18240f4a737f14,
-                mid_validate_10f281d777284cea,
+                mid_init$_fcb96c98de6fad04,
+                mid_getCsig3eigvec3_25e1757a36c4dde2,
+                mid_isAltCovFlagSet_9ab94ac1dc23b105,
+                mid_setCsig3eigvec3_ab69da052b88f50c,
+                mid_validate_8ba9fe7a847cecad,
                 max_mid
               };
 

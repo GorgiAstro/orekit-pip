@@ -5,21 +5,8 @@
 
 namespace org {
   namespace orekit {
-    namespace forces {
-      namespace gravity {
-        namespace potential {
-          class GravityFields;
-        }
-      }
-    }
     namespace frames {
       class Frames;
-    }
-    namespace data {
-      class LazyLoadedDataContext;
-    }
-    namespace time {
-      class TimeScales;
     }
     namespace models {
       namespace earth {
@@ -28,6 +15,19 @@ namespace org {
     }
     namespace bodies {
       class CelestialBodies;
+    }
+    namespace forces {
+      namespace gravity {
+        namespace potential {
+          class GravityFields;
+        }
+      }
+    }
+    namespace data {
+      class LazyLoadedDataContext;
+    }
+    namespace time {
+      class TimeScales;
     }
   }
 }
@@ -45,13 +45,13 @@ namespace org {
       class DataContext : public ::java::lang::Object {
        public:
         enum {
-          mid_getCelestialBodies_a9d31e254defc040,
-          mid_getDefault_df499ec1a8491644,
-          mid_getFrames_efd6f6d0fc89f7ce,
-          mid_getGeoMagneticFields_ac4b7520cc429937,
-          mid_getGravityFields_d0ea355ca6d68d00,
-          mid_getTimeScales_ac9ef17f951ae11a,
-          mid_setDefault_e1b39bbe28030bc1,
+          mid_getCelestialBodies_379576bb08948576,
+          mid_getDefault_f2d5dcb77667b80d,
+          mid_getFrames_19f184be91611afc,
+          mid_getGeoMagneticFields_78e2356802c487c4,
+          mid_getGravityFields_045bd2a3a054f1f1,
+          mid_getTimeScales_d1a571f8b033e2d3,
+          mid_setDefault_cb1436d190ab0111,
           max_mid
         };
 

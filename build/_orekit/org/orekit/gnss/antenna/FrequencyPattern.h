@@ -4,20 +4,20 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace gnss {
-      namespace antenna {
-        class PhaseCenterVariationFunction;
-        class FrequencyPattern;
-      }
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
           class Vector3D;
         }
+      }
+    }
+  }
+  namespace orekit {
+    namespace gnss {
+      namespace antenna {
+        class PhaseCenterVariationFunction;
+        class FrequencyPattern;
       }
     }
   }
@@ -37,10 +37,10 @@ namespace org {
         class FrequencyPattern : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_5101e04ba5dafe45,
-            mid_getEccentricities_f88961cca75a2c0a,
-            mid_getPhaseCenterVariation_8ddca7bd73e586da,
-            mid_getPhaseCenterVariationFunction_12a1f278a2ab1218,
+            mid_init$_6ac45c4ed39b5155,
+            mid_getEccentricities_8b724f8b4fdad1a2,
+            mid_getPhaseCenterVariation_f75a63670951da8a,
+            mid_getPhaseCenterVariationFunction_aff2fdaed3c97e17,
             max_mid
           };
 

@@ -3,16 +3,16 @@
 
 #include "java/util/EventListener.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace util {
       class IterationEvent;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,10 +24,10 @@ namespace org {
       class IterationListener : public ::java::util::EventListener {
        public:
         enum {
-          mid_initializationPerformed_68991010a72f5d93,
-          mid_iterationPerformed_68991010a72f5d93,
-          mid_iterationStarted_68991010a72f5d93,
-          mid_terminationPerformed_68991010a72f5d93,
+          mid_initializationPerformed_28fca0f2afbc79c2,
+          mid_iterationPerformed_28fca0f2afbc79c2,
+          mid_iterationStarted_28fca0f2afbc79c2,
+          mid_terminationPerformed_28fca0f2afbc79c2,
           max_mid
         };
 

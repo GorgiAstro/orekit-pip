@@ -15,8 +15,8 @@ namespace org {
         }
         namespace ndm {
           namespace tdm {
-            class ObservationsBlock;
             class TdmDataKey;
+            class ObservationsBlock;
           }
         }
       }
@@ -41,9 +41,9 @@ namespace org {
             class TdmDataKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_ecebd077d5e99789,
-                mid_valueOf_f2d608ce921e7f7a,
-                mid_values_ee598c15726670bc,
+                mid_process_1696be5353f5ec5d,
+                mid_valueOf_801e99a0474a36cb,
+                mid_values_5ebc4968bb5ef672,
                 max_mid
               };
 

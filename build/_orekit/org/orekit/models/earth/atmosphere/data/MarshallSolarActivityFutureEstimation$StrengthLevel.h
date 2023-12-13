@@ -3,6 +3,12 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace models {
@@ -14,12 +20,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,8 +34,8 @@ namespace org {
             class MarshallSolarActivityFutureEstimation$StrengthLevel : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_2278adfb7eaf3b82,
-                mid_values_3bcc67bf82b2118a,
+                mid_valueOf_1eb88851bd3d031e,
+                mid_values_08d490781d442ba9,
                 max_mid
               };
 

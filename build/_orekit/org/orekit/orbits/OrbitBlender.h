@@ -12,14 +12,14 @@ namespace org {
     }
   }
   namespace orekit {
+    namespace orbits {
+      class Orbit;
+    }
     namespace propagation {
       class Propagator;
     }
     namespace frames {
       class Frame;
-    }
-    namespace orbits {
-      class Orbit;
     }
   }
 }
@@ -37,8 +37,8 @@ namespace org {
       class OrbitBlender : public ::org::orekit::orbits::AbstractOrbitInterpolator {
        public:
         enum {
-          mid_init$_4ca5c927f45b7b66,
-          mid_interpolate_633c02f6304af1cb,
+          mid_init$_0b8cd9596e67e602,
+          mid_interpolate_ea364fd17b3fd043,
           max_mid
         };
 

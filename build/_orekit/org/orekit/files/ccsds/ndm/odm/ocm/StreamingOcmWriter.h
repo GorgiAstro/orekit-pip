@@ -7,20 +7,20 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace ndm {
-          namespace odm {
-            namespace ocm {
-              class StreamingOcmWriter$BlockWriter;
-              class OcmMetadata;
-              class TrajectoryStateHistoryMetadata;
-              class OcmWriter;
-            }
-            class OdmHeader;
-          }
-        }
         namespace utils {
           namespace generation {
             class Generator;
+          }
+        }
+        namespace ndm {
+          namespace odm {
+            namespace ocm {
+              class OcmMetadata;
+              class TrajectoryStateHistoryMetadata;
+              class StreamingOcmWriter$BlockWriter;
+              class OcmWriter;
+            }
+            class OdmHeader;
           }
         }
       }
@@ -28,12 +28,12 @@ namespace org {
   }
 }
 namespace java {
-  namespace io {
-    class IOException;
-  }
   namespace lang {
     class AutoCloseable;
     class Class;
+  }
+  namespace io {
+    class IOException;
   }
 }
 template<class T> class JArray;
@@ -49,10 +49,10 @@ namespace org {
               class StreamingOcmWriter : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_351dfc3ade83fe24,
-                  mid_init$_219f77940e63ab66,
-                  mid_close_0640e6acf969ed28,
-                  mid_newBlock_299afe41b2afd6dd,
+                  mid_init$_d22074dea2788852,
+                  mid_init$_6e2719a7f64ba2e5,
+                  mid_close_a1fa5dae97ea5ed2,
+                  mid_newBlock_a12f324dd1b48d02,
                   max_mid
                 };
 

@@ -25,8 +25,8 @@ namespace org {
       class JPLEphemeridesLoader$EphemerisType : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_abdae26a1ce2029f,
-          mid_values_fc935065f80840c7,
+          mid_valueOf_41a226c97d57c2c1,
+          mid_values_c0900b331cfbeda7,
           max_mid
         };
 

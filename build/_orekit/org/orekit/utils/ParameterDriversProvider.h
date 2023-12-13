@@ -23,8 +23,8 @@ namespace org {
     }
   }
   namespace hipparchus {
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -36,16 +36,16 @@ namespace org {
       class ParameterDriversProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getNbParametersDriversValue_412668abc8d889e9,
-          mid_getParameterDriver_068d3bba04590913,
-          mid_getParameters_a53a7513ecedada2,
-          mid_getParameters_89e8b78e4211e023,
-          mid_getParameters_4ab353685404cfce,
-          mid_getParameters_d0cf7ce7c5c441df,
-          mid_getParametersAllValues_a53a7513ecedada2,
-          mid_getParametersAllValues_4ab353685404cfce,
-          mid_getParametersDrivers_0d9551367f7ecdef,
-          mid_isSupported_fd2162b8a05a22fe,
+          mid_getNbParametersDriversValue_55546ef6a647f39b,
+          mid_getParameterDriver_1ab2f25935933fb2,
+          mid_getParameters_25e1757a36c4dde2,
+          mid_getParameters_27b701db396ade01,
+          mid_getParameters_5286daa2a5b3d227,
+          mid_getParameters_364812530234ae59,
+          mid_getParametersAllValues_25e1757a36c4dde2,
+          mid_getParametersAllValues_5286daa2a5b3d227,
+          mid_getParametersDrivers_e62d3bb06d56d7e3,
+          mid_isSupported_cde6b28e15c96b75,
           max_mid
         };
 

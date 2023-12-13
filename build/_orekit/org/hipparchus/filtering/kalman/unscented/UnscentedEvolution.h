@@ -27,10 +27,10 @@ namespace org {
           class UnscentedEvolution : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_17bdf0024ef4437b,
-              mid_getCurrentStates_b35c11fbcd8e8f7e,
-              mid_getCurrentTime_557b8123390d8d0c,
-              mid_getProcessNoiseMatrix_70a207fcbc031df2,
+              mid_init$_cfd2c29a5d5d287b,
+              mid_getCurrentStates_d80cfd4abb977b5c,
+              mid_getCurrentTime_b74f83833fdad017,
+              mid_getProcessNoiseMatrix_f77d745f2128c391,
               max_mid
             };
 

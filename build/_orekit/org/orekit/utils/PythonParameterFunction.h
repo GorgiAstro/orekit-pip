@@ -12,8 +12,8 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace utils {
-      class ParameterFunction;
       class ParameterDriver;
+      class ParameterFunction;
     }
     namespace time {
       class AbsoluteDate;
@@ -29,12 +29,12 @@ namespace org {
       class PythonParameterFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_finalize_0640e6acf969ed28,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
-          mid_value_ceb9685d0630065e,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_value_863711af540c36c0,
           max_mid
         };
 

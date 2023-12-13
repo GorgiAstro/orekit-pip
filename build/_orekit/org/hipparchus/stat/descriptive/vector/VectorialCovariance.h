@@ -3,6 +3,14 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace exception {
@@ -11,14 +19,6 @@ namespace org {
     namespace linear {
       class RealMatrix;
     }
-  }
-}
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -32,13 +32,13 @@ namespace org {
           class VectorialCovariance : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_746492bb94848925,
-              mid_clear_0640e6acf969ed28,
-              mid_equals_221e8e85cb385209,
-              mid_getN_9e26256fb0d384a2,
-              mid_getResult_70a207fcbc031df2,
-              mid_hashCode_412668abc8d889e9,
-              mid_increment_cc18240f4a737f14,
+              mid_init$_34742154de10200a,
+              mid_clear_a1fa5dae97ea5ed2,
+              mid_equals_460c5e2d9d51c6cc,
+              mid_getN_6c0ce7e438e5ded4,
+              mid_getResult_f77d745f2128c391,
+              mid_hashCode_55546ef6a647f39b,
+              mid_increment_ab69da052b88f50c,
               max_mid
             };
 

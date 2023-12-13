@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+    class CharSequence;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace fraction {
       class Fraction;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
-    class CharSequence;
   }
 }
 template<class T> class JArray;
@@ -26,9 +26,9 @@ namespace org {
         class PowerTerm : public ::java::lang::Object {
          public:
           enum {
-            mid_getBase_a1a7f0c25ade1939,
-            mid_getExponent_78ed58163a805805,
-            mid_getScale_557b8123390d8d0c,
+            mid_getBase_9736b107de4781a2,
+            mid_getExponent_7ab72bcbb3909669,
+            mid_getScale_b74f83833fdad017,
             max_mid
           };
 

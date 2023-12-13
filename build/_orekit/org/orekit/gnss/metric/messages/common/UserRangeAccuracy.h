@@ -33,8 +33,8 @@ namespace org {
             class UserRangeAccuracy : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a3da1a935cb37f7b,
-                mid_getAccuracy_557b8123390d8d0c,
+                mid_init$_44ed599e93e8a30c,
+                mid_getAccuracy_b74f83833fdad017,
                 max_mid
               };
 

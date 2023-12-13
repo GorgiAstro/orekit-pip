@@ -5,19 +5,19 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class NullArgumentException;
+      class MathIllegalStateException;
+      class MathIllegalArgumentException;
+    }
+    class Field;
+    class CalculusFieldElement;
     namespace analysis {
+      class CalculusFieldUnivariateFunction;
       namespace integration {
         class FieldUnivariateIntegrator;
       }
-      class CalculusFieldUnivariateFunction;
     }
-    namespace exception {
-      class MathIllegalArgumentException;
-      class NullArgumentException;
-      class MathIllegalStateException;
-    }
-    class CalculusFieldElement;
-    class Field;
   }
 }
 namespace java {
@@ -35,19 +35,19 @@ namespace org {
         class BaseAbstractFieldUnivariateIntegrator : public ::java::lang::Object {
          public:
           enum {
-            mid_getAbsoluteAccuracy_557b8123390d8d0c,
-            mid_getEvaluations_412668abc8d889e9,
-            mid_getField_20f98801541dcec1,
-            mid_getIterations_412668abc8d889e9,
-            mid_getMaximalIterationCount_412668abc8d889e9,
-            mid_getMinimalIterationCount_412668abc8d889e9,
-            mid_getRelativeAccuracy_557b8123390d8d0c,
-            mid_integrate_febca2424e26c993,
-            mid_getMin_613c8f46c659f636,
-            mid_getMax_613c8f46c659f636,
-            mid_computeObjectiveValue_6672ad854985cb64,
-            mid_doIntegrate_613c8f46c659f636,
-            mid_setup_c5866c4f44a777c3,
+            mid_getAbsoluteAccuracy_b74f83833fdad017,
+            mid_getEvaluations_55546ef6a647f39b,
+            mid_getField_04d1f63e17d5c5d4,
+            mid_getIterations_55546ef6a647f39b,
+            mid_getMaximalIterationCount_55546ef6a647f39b,
+            mid_getMinimalIterationCount_55546ef6a647f39b,
+            mid_getRelativeAccuracy_b74f83833fdad017,
+            mid_integrate_6b15562ea2d5cce9,
+            mid_doIntegrate_81520b552cb3fa26,
+            mid_getMin_81520b552cb3fa26,
+            mid_getMax_81520b552cb3fa26,
+            mid_computeObjectiveValue_6e00dc5eb352fe51,
+            mid_setup_2ce989e8ed78a18c,
             max_mid
           };
 

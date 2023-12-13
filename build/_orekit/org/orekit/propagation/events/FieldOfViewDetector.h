@@ -5,20 +5,20 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      namespace events {
-        class FieldOfViewDetector;
-        class VisibilityTrigger;
-      }
-      class SpacecraftState;
-    }
-    namespace utils {
-      class PVCoordinatesProvider;
-    }
     namespace geometry {
       namespace fov {
         class FieldOfView;
       }
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
+    }
+    namespace propagation {
+      namespace events {
+        class VisibilityTrigger;
+        class FieldOfViewDetector;
+      }
+      class SpacecraftState;
     }
   }
 }
@@ -37,12 +37,12 @@ namespace org {
         class FieldOfViewDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_6c681b191ca832f2,
-            mid_init$_fe0bb2231c861b04,
-            mid_g_1bbf81d80c47ecdd,
-            mid_getFOV_0cb1db9d43d06211,
-            mid_getPVTarget_dec199e86bf037eb,
-            mid_create_98c6297a1b069502,
+            mid_init$_8d7a38bdadb78aae,
+            mid_init$_d5b4913b1a211725,
+            mid_g_a17ea857ce74d258,
+            mid_getFOV_f16dd2df58a56a14,
+            mid_getPVTarget_8a41319e47f3bd7c,
+            mid_create_aa1eca89cc481895,
             max_mid
           };
 

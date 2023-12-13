@@ -3,17 +3,17 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace util {
       class MathArrays$OrderDirection;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,8 +25,8 @@ namespace org {
       class MathArrays$OrderDirection : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_dc8716f3b3d915c3,
-          mid_values_dd3beab7185fa5a4,
+          mid_valueOf_81c61d1c0647dcec,
+          mid_values_999fb29f019cb7c4,
           max_mid
         };
 

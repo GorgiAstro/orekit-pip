@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class GMSTScale;
-      class UT1Scale;
-      class TimeScales;
-      class AbsoluteDate;
-    }
     namespace utils {
       class IERSConventions;
+    }
+    namespace time {
+      class UT1Scale;
+      class GMSTScale;
+      class AbsoluteDate;
+      class TimeScales;
     }
   }
 }
@@ -30,27 +30,27 @@ namespace org {
       class AbstractTimeScales : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_createBesselianEpoch_8ef471ef852a9678,
-          mid_createJulianEpoch_8ef471ef852a9678,
-          mid_getBeidouEpoch_7a97f7e149e79afb,
-          mid_getCcsdsEpoch_7a97f7e149e79afb,
-          mid_getFiftiesEpoch_7a97f7e149e79afb,
-          mid_getFutureInfinity_7a97f7e149e79afb,
-          mid_getGMST_265dd6a5eaf62dee,
-          mid_getGalileoEpoch_7a97f7e149e79afb,
-          mid_getGlonassEpoch_7a97f7e149e79afb,
-          mid_getGpsEpoch_7a97f7e149e79afb,
-          mid_getIrnssEpoch_7a97f7e149e79afb,
-          mid_getJ2000Epoch_7a97f7e149e79afb,
-          mid_getJavaEpoch_7a97f7e149e79afb,
-          mid_getJulianEpoch_7a97f7e149e79afb,
-          mid_getModifiedJulianEpoch_7a97f7e149e79afb,
-          mid_getPastInfinity_7a97f7e149e79afb,
-          mid_getQzssEpoch_7a97f7e149e79afb,
-          mid_getUT1_672057b4f848abf0,
-          mid_getUT1_c21aaa13d4f3f95e,
-          mid_getEopHistory_9cf4a1ec2e53bbd3,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_createBesselianEpoch_f359a0110559347a,
+          mid_createJulianEpoch_f359a0110559347a,
+          mid_getBeidouEpoch_c325492395d89b24,
+          mid_getCcsdsEpoch_c325492395d89b24,
+          mid_getFiftiesEpoch_c325492395d89b24,
+          mid_getFutureInfinity_c325492395d89b24,
+          mid_getGMST_375ab849f7e3d9ee,
+          mid_getGalileoEpoch_c325492395d89b24,
+          mid_getGlonassEpoch_c325492395d89b24,
+          mid_getGpsEpoch_c325492395d89b24,
+          mid_getIrnssEpoch_c325492395d89b24,
+          mid_getJ2000Epoch_c325492395d89b24,
+          mid_getJavaEpoch_c325492395d89b24,
+          mid_getJulianEpoch_c325492395d89b24,
+          mid_getModifiedJulianEpoch_c325492395d89b24,
+          mid_getPastInfinity_c325492395d89b24,
+          mid_getQzssEpoch_c325492395d89b24,
+          mid_getUT1_246820b70f2cddeb,
+          mid_getUT1_0d98cf69977e0c28,
+          mid_getEopHistory_a77e9d6bc0da2439,
           max_mid
         };
 

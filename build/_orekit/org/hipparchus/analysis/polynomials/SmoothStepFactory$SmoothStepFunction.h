@@ -3,16 +3,16 @@
 
 #include "org/hipparchus/analysis/polynomials/PolynomialFunction.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
       class MathIllegalArgumentException;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,11 +25,11 @@ namespace org {
         class SmoothStepFactory$SmoothStepFunction : public ::org::hipparchus::analysis::polynomials::PolynomialFunction {
          public:
           enum {
-            mid_value_7e960cd6eee376d8,
-            mid_value_8d02ba458f22e508,
-            mid_checkInputEdges_ab23f4ae0fb33968,
-            mid_clampInput_8d02ba458f22e508,
-            mid_normalizeInput_8d02ba458f22e508,
+            mid_value_04fd0666b613d2ab,
+            mid_value_f804f816b79164cb,
+            mid_checkInputEdges_369b4c97255d5afa,
+            mid_clampInput_f804f816b79164cb,
+            mid_normalizeInput_f804f816b79164cb,
             max_mid
           };
 

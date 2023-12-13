@@ -5,8 +5,8 @@
 
 namespace java {
   namespace io {
-    class IOException;
     class ObjectOutput;
+    class IOException;
   }
   namespace lang {
     class Class;
@@ -21,17 +21,17 @@ namespace java {
     class ObjectOutputStream$PutField : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_0640e6acf969ed28,
-        mid_put_e5ca4b97ee6bd2b6,
-        mid_put_fdad7d6aa0478537,
-        mid_put_a1bc3d9ec64c6ced,
-        mid_put_c6843ef8200b1ede,
-        mid_put_3fef71434b554c3e,
-        mid_put_358501078068b45e,
-        mid_put_53d92541fcec0ec7,
-        mid_put_09a9cf7c5fc0949e,
-        mid_put_ce81d28a4d5a5313,
-        mid_write_e0a1f7a61289c095,
+        mid_init$_a1fa5dae97ea5ed2,
+        mid_put_76cf8b957ccb7ae1,
+        mid_put_c99a0c15b2cc0a3e,
+        mid_put_165c6e94f6289825,
+        mid_put_b7ec643e4edd96c5,
+        mid_put_d859a3ff51dc23ad,
+        mid_put_02c6e5855745e0e2,
+        mid_put_2bd6b3882bcba51f,
+        mid_put_1d7f34ba2f8998cc,
+        mid_put_2b983c9d6fbe6a27,
+        mid_write_765c1712f3f1ff4b,
         max_mid
       };
 

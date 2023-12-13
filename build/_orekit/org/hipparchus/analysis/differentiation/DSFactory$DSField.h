@@ -28,12 +28,12 @@ namespace org {
         class DSFactory$DSField : public ::java::lang::Object {
          public:
           enum {
-            mid_equals_221e8e85cb385209,
-            mid_getOne_9f40c2a430225d38,
-            mid_getPi_9f40c2a430225d38,
-            mid_getRuntimeClass_d4b191ff8147475d,
-            mid_getZero_9f40c2a430225d38,
-            mid_hashCode_412668abc8d889e9,
+            mid_equals_460c5e2d9d51c6cc,
+            mid_getOne_57983c4d4b4a2f7f,
+            mid_getPi_57983c4d4b4a2f7f,
+            mid_getRuntimeClass_1aeb0737a960d371,
+            mid_getZero_57983c4d4b4a2f7f,
+            mid_hashCode_55546ef6a647f39b,
             max_mid
           };
 

@@ -5,9 +5,9 @@
 
 namespace java {
   namespace lang {
-    class Thread$State;
     class String;
     class Class;
+    class Thread$State;
   }
 }
 template<class T> class JArray;
@@ -18,8 +18,8 @@ namespace java {
     class Thread$State : public ::java::lang::Enum {
      public:
       enum {
-        mid_valueOf_ec547e262f3fc5e7,
-        mid_values_ceba256230d063b4,
+        mid_valueOf_2e00d81d01570f38,
+        mid_values_7a4de42ee0c3d8dc,
         max_mid
       };
 

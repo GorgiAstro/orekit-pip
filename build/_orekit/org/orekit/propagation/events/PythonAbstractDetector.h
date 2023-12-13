@@ -3,23 +3,23 @@
 
 #include "org/orekit/propagation/events/AbstractDetector.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
-        class AdaptableInterval;
         namespace handlers {
           class EventHandler;
         }
+        class AdaptableInterval;
       }
       class SpacecraftState;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -32,13 +32,13 @@ namespace org {
         class PythonAbstractDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_cdcad1dd6e5e97de,
-            mid_create_dfefb60c85fe348c,
-            mid_finalize_0640e6acf969ed28,
-            mid_g_1bbf81d80c47ecdd,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
+            mid_init$_413caef65c5524ff,
+            mid_create_193e21d57a66206a,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_g_a17ea857ce74d258,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
             max_mid
           };
 

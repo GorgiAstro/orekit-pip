@@ -5,18 +5,18 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      namespace events {
-        class GroundFieldOfViewDetector;
+    namespace geometry {
+      namespace fov {
+        class FieldOfView;
       }
-      class SpacecraftState;
     }
     namespace frames {
       class Frame;
     }
-    namespace geometry {
-      namespace fov {
-        class FieldOfView;
+    namespace propagation {
+      class SpacecraftState;
+      namespace events {
+        class GroundFieldOfViewDetector;
       }
     }
   }
@@ -36,11 +36,11 @@ namespace org {
         class GroundFieldOfViewDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_9308ec53382db087,
-            mid_g_1bbf81d80c47ecdd,
-            mid_getFOV_0cb1db9d43d06211,
-            mid_getFrame_6c9bc0a928c56d4e,
-            mid_create_b54b7a336af66215,
+            mid_init$_a2f801ddbcf6ba72,
+            mid_g_a17ea857ce74d258,
+            mid_getFOV_f16dd2df58a56a14,
+            mid_getFrame_2c51111cc6894ba1,
+            mid_create_a8e73d44912c4f7d,
             max_mid
           };
 

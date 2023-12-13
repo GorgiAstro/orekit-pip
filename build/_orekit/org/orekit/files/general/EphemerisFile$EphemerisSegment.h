@@ -3,31 +3,31 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+    namespace propagation {
+      class BoundedPropagator;
+    }
     namespace frames {
       class Frame;
     }
     namespace time {
       class AbsoluteDate;
     }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
     namespace utils {
       class CartesianDerivativesFilter;
     }
-    namespace propagation {
-      class BoundedPropagator;
-    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -40,16 +40,16 @@ namespace org {
         class EphemerisFile$EphemerisSegment : public ::java::lang::Object {
          public:
           enum {
-            mid_getAvailableDerivatives_6c4898d6ec0c3837,
-            mid_getCoordinates_0d9551367f7ecdef,
-            mid_getFrame_6c9bc0a928c56d4e,
-            mid_getInertialFrame_6c9bc0a928c56d4e,
-            mid_getInterpolationSamples_412668abc8d889e9,
-            mid_getMu_557b8123390d8d0c,
-            mid_getPropagator_fa108fc36df3791a,
-            mid_getPropagator_587eea156586204f,
-            mid_getStart_7a97f7e149e79afb,
-            mid_getStop_7a97f7e149e79afb,
+            mid_getAvailableDerivatives_63bfdcc4b7a0536c,
+            mid_getCoordinates_e62d3bb06d56d7e3,
+            mid_getFrame_2c51111cc6894ba1,
+            mid_getInertialFrame_2c51111cc6894ba1,
+            mid_getInterpolationSamples_55546ef6a647f39b,
+            mid_getMu_b74f83833fdad017,
+            mid_getPropagator_2d80cda3dc1f1422,
+            mid_getPropagator_9e515362e8de0afe,
+            mid_getStart_c325492395d89b24,
+            mid_getStop_c325492395d89b24,
             max_mid
           };
 

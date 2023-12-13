@@ -7,23 +7,23 @@ namespace org {
   namespace hipparchus {
     namespace filtering {
       namespace kalman {
+        class KalmanFilter;
         namespace unscented {
           class UnscentedProcess;
         }
-        class Measurement;
         class ProcessEstimate;
-        class KalmanFilter;
+        class Measurement;
       }
-    }
-    namespace linear {
-      class MatrixDecomposer;
-      class RealVector;
-    }
-    namespace exception {
-      class MathRuntimeException;
     }
     namespace util {
       class UnscentedTransformProvider;
+    }
+    namespace linear {
+      class RealVector;
+      class MatrixDecomposer;
+    }
+    namespace exception {
+      class MathRuntimeException;
     }
   }
 }
@@ -43,12 +43,12 @@ namespace org {
           class UnscentedKalmanFilter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_da60c12455e60f25,
-              mid_estimationStep_8438f0b1b3460266,
-              mid_getCorrected_55b445719d7de2a7,
-              mid_getPredicted_55b445719d7de2a7,
-              mid_getUnscentedTransformProvider_8c4a909424e66af4,
-              mid_predictionAndCorrectionSteps_c773c6d72a608e00,
+              mid_init$_3e8061266b2d841f,
+              mid_estimationStep_de0fd16eb0d97034,
+              mid_getCorrected_e37ac5ac73cc5311,
+              mid_getPredicted_e37ac5ac73cc5311,
+              mid_getUnscentedTransformProvider_1f9cf67cc583b093,
+              mid_predictionAndCorrectionSteps_7ac28e2addcd7489,
               max_mid
             };
 

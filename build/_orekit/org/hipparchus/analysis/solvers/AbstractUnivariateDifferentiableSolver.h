@@ -6,11 +6,11 @@
 namespace org {
   namespace hipparchus {
     namespace analysis {
-      namespace differentiation {
-        class UnivariateDifferentiableFunction;
-      }
       namespace solvers {
         class UnivariateDifferentiableSolver;
+      }
+      namespace differentiation {
+        class UnivariateDifferentiableFunction;
       }
     }
   }
@@ -30,8 +30,8 @@ namespace org {
         class AbstractUnivariateDifferentiableSolver : public ::org::hipparchus::analysis::solvers::BaseAbstractUnivariateSolver {
          public:
           enum {
-            mid_computeObjectiveValueAndDerivative_e5494538980257b4,
-            mid_setup_7417e00c8aefca3d,
+            mid_computeObjectiveValueAndDerivative_d33302169f933b5a,
+            mid_setup_374759125eb77000,
             max_mid
           };
 

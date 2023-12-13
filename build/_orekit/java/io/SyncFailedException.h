@@ -17,7 +17,7 @@ namespace java {
     class SyncFailedException : public ::java::io::IOException {
      public:
       enum {
-        mid_init$_f5ffdf29129ef90a,
+        mid_init$_734b91ac30d5f9b4,
         max_mid
       };
 

@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-      class MathRuntimeException;
-    }
     namespace geometry {
       class Space;
       class Vector;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathRuntimeException;
     }
     namespace util {
       class Blendable;
@@ -36,25 +36,25 @@ namespace org {
       class Vector : public ::org::hipparchus::geometry::Point {
        public:
         enum {
-          mid_add_f7a4efaba53779c7,
-          mid_add_6b34b40fdcec0c86,
-          mid_blendArithmeticallyWith_5c22e92d5e6381f9,
-          mid_distance1_b540ea36818b5810,
-          mid_distanceInf_b540ea36818b5810,
-          mid_distanceSq_b540ea36818b5810,
-          mid_dotProduct_b540ea36818b5810,
-          mid_getNorm_557b8123390d8d0c,
-          mid_getNorm1_557b8123390d8d0c,
-          mid_getNormInf_557b8123390d8d0c,
-          mid_getNormSq_557b8123390d8d0c,
-          mid_getZero_4a9532ebbfbd85bb,
-          mid_isInfinite_89b302893bdbe1f1,
-          mid_negate_4a9532ebbfbd85bb,
-          mid_normalize_4a9532ebbfbd85bb,
-          mid_scalarMultiply_ec102594070df17d,
-          mid_subtract_f7a4efaba53779c7,
-          mid_subtract_6b34b40fdcec0c86,
-          mid_toString_8d9667e91d8ffa97,
+          mid_add_3f686c47147ab48a,
+          mid_add_56102f789d856c67,
+          mid_blendArithmeticallyWith_3b0c7c9516ccca41,
+          mid_distance1_2f915fa9762130df,
+          mid_distanceInf_2f915fa9762130df,
+          mid_distanceSq_2f915fa9762130df,
+          mid_dotProduct_2f915fa9762130df,
+          mid_getNorm_b74f83833fdad017,
+          mid_getNorm1_b74f83833fdad017,
+          mid_getNormInf_b74f83833fdad017,
+          mid_getNormSq_b74f83833fdad017,
+          mid_getZero_5567482e203105d0,
+          mid_isInfinite_9ab94ac1dc23b105,
+          mid_negate_5567482e203105d0,
+          mid_normalize_5567482e203105d0,
+          mid_scalarMultiply_69250424ea4f6edf,
+          mid_subtract_3f686c47147ab48a,
+          mid_subtract_56102f789d856c67,
+          mid_toString_a9120cb5e83d0986,
           max_mid
         };
 

@@ -31,8 +31,8 @@ namespace org {
           class SpacecraftBodyFrame$BaseEquipment : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_c8984490c8242543,
-              mid_values_e05bad2d79518e43,
+              mid_valueOf_c2d81f675eebcce6,
+              mid_values_250ddefb6ebe6a52,
               max_mid
             };
 

@@ -17,7 +17,7 @@ namespace org {
       class UnivariateFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_value_7e960cd6eee376d8,
+          mid_value_04fd0666b613d2ab,
           max_mid
         };
 

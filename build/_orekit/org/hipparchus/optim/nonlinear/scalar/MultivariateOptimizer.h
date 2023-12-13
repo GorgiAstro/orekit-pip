@@ -5,17 +5,17 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalStateException;
-    }
     namespace optim {
-      class PointValuePair;
       class OptimizationData;
       namespace nonlinear {
         namespace scalar {
           class GoalType;
         }
       }
+      class PointValuePair;
+    }
+    namespace exception {
+      class MathIllegalStateException;
     }
   }
 }
@@ -35,10 +35,10 @@ namespace org {
           class MultivariateOptimizer : public ::org::hipparchus::optim::BaseMultivariateOptimizer {
            public:
             enum {
-              mid_computeObjectiveValue_86c4a0582e0747ce,
-              mid_getGoalType_bd7f7e2869c755fb,
-              mid_optimize_428d2547a0c45016,
-              mid_parseOptimizationData_946a92401917c130,
+              mid_computeObjectiveValue_b060e4326765ccf1,
+              mid_getGoalType_cf6b21746452ef78,
+              mid_optimize_9d04816d74472b44,
+              mid_parseOptimizationData_14193ddbce7a2cc0,
               max_mid
             };
 

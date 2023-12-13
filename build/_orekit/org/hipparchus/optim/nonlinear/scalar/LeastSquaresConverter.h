@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
+    namespace analysis {
+      class MultivariateVectorFunction;
+      class MultivariateFunction;
+    }
     namespace linear {
       class RealMatrix;
-    }
-    namespace analysis {
-      class MultivariateFunction;
-      class MultivariateVectorFunction;
     }
   }
 }
@@ -30,10 +30,10 @@ namespace org {
           class LeastSquaresConverter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_9cb9668045142b5a,
-              mid_init$_4bc5aeb9e9e93295,
-              mid_init$_39c91493eebe07c4,
-              mid_value_86c4a0582e0747ce,
+              mid_init$_f1031fef074cb1b3,
+              mid_init$_320ab255c7d24db5,
+              mid_init$_43c579500c4567be,
+              mid_value_b060e4326765ccf1,
               max_mid
             };
 

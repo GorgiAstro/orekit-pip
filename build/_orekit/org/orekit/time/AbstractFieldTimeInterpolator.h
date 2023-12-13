@@ -36,16 +36,16 @@ namespace org {
       class AbstractFieldTimeInterpolator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_89aad365fb0ed8da,
-          mid_checkInterpolatorCompatibilityWithSampleSize_8c13907d579f7554,
-          mid_getExtrapolationThreshold_557b8123390d8d0c,
-          mid_getNbInterpolationPoints_412668abc8d889e9,
-          mid_getSubInterpolators_0d9551367f7ecdef,
-          mid_interpolate_cc27df3dc8f597ed,
-          mid_interpolate_a061c10693b292f5,
-          mid_interpolate_43d454da912ece22,
-          mid_addOptionalSubInterpolatorIfDefined_186bcaa418c2f7bb,
-          mid_getTimeParameter_87e809fd5a2def41,
+          mid_init$_d5322b8b512aeb26,
+          mid_checkInterpolatorCompatibilityWithSampleSize_088f0158548a8c3c,
+          mid_getExtrapolationThreshold_b74f83833fdad017,
+          mid_getNbInterpolationPoints_55546ef6a647f39b,
+          mid_getSubInterpolators_e62d3bb06d56d7e3,
+          mid_interpolate_1b1c8c532c82f5d0,
+          mid_interpolate_f9931e17105657a3,
+          mid_interpolate_b5e65e4880f65e9b,
+          mid_addOptionalSubInterpolatorIfDefined_4196fcb287c723cd,
+          mid_getTimeParameter_794ba5c4a0bdcb26,
           max_mid
         };
 

@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class MultipleShooting;
-    }
     namespace propagation {
       class SpacecraftState;
+    }
+    namespace utils {
+      class MultipleShooting;
     }
   }
 }
@@ -30,23 +30,23 @@ namespace org {
       class AbstractMultipleShooting : public ::java::lang::Object {
        public:
         enum {
-          mid_addConstraint_754312f3734d6e2f,
-          mid_compute_0d9551367f7ecdef,
-          mid_setEpochFreedom_746492bb94848925,
-          mid_setPatchPointComponentFreedom_aa803303853defd6,
-          mid_setScaleLength_10f281d777284cea,
-          mid_setScaleTime_10f281d777284cea,
-          mid_computeAdditionalConstraints_1122e29f2a25b86f,
-          mid_computeAdditionalJacobianMatrix_29dc26d4c6c7bd43,
-          mid_getAugmentedInitialState_d91edcd61f36fecc,
-          mid_getNumberOfConstraints_412668abc8d889e9,
-          mid_computeEpochJacobianMatrix_29dc26d4c6c7bd43,
-          mid_getConstraintsMap_1e62c2f73fbdd1c4,
-          mid_getPatchedSpacecraftState_0d9551367f7ecdef,
-          mid_getPatchPoint_d91edcd61f36fecc,
-          mid_updateAdditionalConstraints_3246bd31f432242d,
-          mid_getNumberOfFreeComponents_412668abc8d889e9,
-          mid_getFreeCompsMap_ae6d76260f541aef,
+          mid_addConstraint_94fe8d9ffeb50676,
+          mid_compute_e62d3bb06d56d7e3,
+          mid_setEpochFreedom_34742154de10200a,
+          mid_setPatchPointComponentFreedom_90b0dcc6277c0236,
+          mid_setScaleLength_8ba9fe7a847cecad,
+          mid_setScaleTime_8ba9fe7a847cecad,
+          mid_getAugmentedInitialState_f4730dd89e9880a0,
+          mid_getNumberOfConstraints_55546ef6a647f39b,
+          mid_computeEpochJacobianMatrix_223f424c780300ce,
+          mid_computeAdditionalConstraints_a16345554cd829da,
+          mid_computeAdditionalJacobianMatrix_223f424c780300ce,
+          mid_getConstraintsMap_810bed48fafb0b9a,
+          mid_getPatchedSpacecraftState_e62d3bb06d56d7e3,
+          mid_getPatchPoint_f4730dd89e9880a0,
+          mid_updateAdditionalConstraints_75061e5f5bbace93,
+          mid_getNumberOfFreeComponents_55546ef6a647f39b,
+          mid_getFreeCompsMap_61a28961b8c39fbd,
           max_mid
         };
 

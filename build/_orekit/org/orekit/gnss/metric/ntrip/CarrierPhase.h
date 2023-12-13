@@ -3,12 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -18,6 +12,12 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,9 +31,9 @@ namespace org {
           class CarrierPhase : public ::java::lang::Enum {
            public:
             enum {
-              mid_getCarrierPhase_14ce0488740d6593,
-              mid_valueOf_14ce0488740d6593,
-              mid_values_afb61100453b72d7,
+              mid_getCarrierPhase_7692c1efa91724b9,
+              mid_valueOf_7692c1efa91724b9,
+              mid_values_1e83cc361837022c,
               max_mid
             };
 

@@ -4,41 +4,41 @@
 #include "org/orekit/estimation/leastsquares/AbstractBatchLSModel.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace util {
+      class Pair;
+      class Incrementor;
+    }
+    namespace linear {
+      class RealVector;
+      class RealMatrix;
+    }
+  }
   namespace orekit {
+    namespace utils {
+      class ParameterDriversList;
+    }
     namespace propagation {
-      namespace conversion {
-        class PropagatorBuilder;
-      }
       class MatricesHarvester;
-      class Propagator;
       namespace integration {
         class AbstractIntegratedPropagator;
       }
-    }
-    namespace estimation {
-      namespace leastsquares {
-        class ModelObserver;
-      }
-      namespace measurements {
-        class ObservedMeasurement;
-        class EstimatedMeasurement;
+      class Propagator;
+      namespace conversion {
+        class PropagatorBuilder;
       }
     }
     namespace orbits {
       class Orbit;
     }
-    namespace utils {
-      class ParameterDriversList;
-    }
-  }
-  namespace hipparchus {
-    namespace util {
-      class Incrementor;
-      class Pair;
-    }
-    namespace linear {
-      class RealMatrix;
-      class RealVector;
+    namespace estimation {
+      namespace measurements {
+        class ObservedMeasurement;
+        class EstimatedMeasurement;
+      }
+      namespace leastsquares {
+        class ModelObserver;
+      }
     }
   }
 }
@@ -62,22 +62,22 @@ namespace org {
         class PythonAbstractBatchLSModel : public ::org::orekit::estimation::leastsquares::AbstractBatchLSModel {
          public:
           enum {
-            mid_init$_2406e4cf7f21e166,
-            mid_configureHarvester_58ff847451f5cf92,
-            mid_configureOrbits_614fe55969c9646f,
-            mid_createPropagators_30bf62a3dd22b244,
-            mid_fetchEvaluatedMeasurement_e484126dd163b386,
-            mid_finalize_0640e6acf969ed28,
-            mid_getEvaluationsCount_412668abc8d889e9,
-            mid_getIterationsCount_412668abc8d889e9,
-            mid_getSelectedPropagationDriversForBuilder_b63a8ff72f9e46a4,
-            mid_isForwardPropagation_89b302893bdbe1f1,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
-            mid_setEvaluationsCounter_7852dd173b858d1b,
-            mid_setIterationsCounter_7852dd173b858d1b,
-            mid_value_77538fd880505017,
+            mid_init$_244486d6f58d6cbc,
+            mid_configureHarvester_dafc362fdc9e50eb,
+            mid_configureOrbits_3575848f266bfbed,
+            mid_createPropagators_de752d9f8766f8f3,
+            mid_fetchEvaluatedMeasurement_e26746051feca807,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_getEvaluationsCount_55546ef6a647f39b,
+            mid_getIterationsCount_55546ef6a647f39b,
+            mid_getSelectedPropagationDriversForBuilder_d30ee09a585504b1,
+            mid_isForwardPropagation_9ab94ac1dc23b105,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_setEvaluationsCounter_29712264b86e4d61,
+            mid_setIterationsCounter_29712264b86e4d61,
+            mid_value_75baf79414a7355b,
             max_mid
           };
 

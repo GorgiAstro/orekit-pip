@@ -18,11 +18,11 @@ namespace java {
     class ClassNotFoundException : public ::java::lang::ReflectiveOperationException {
      public:
       enum {
-        mid_init$_0640e6acf969ed28,
-        mid_init$_f5ffdf29129ef90a,
-        mid_init$_0701bef404aae0c6,
-        mid_getCause_1541e293f3dffabf,
-        mid_getException_1541e293f3dffabf,
+        mid_init$_a1fa5dae97ea5ed2,
+        mid_init$_734b91ac30d5f9b4,
+        mid_init$_9d7a6ef9713b9df2,
+        mid_getCause_8ccc799e0abbc77e,
+        mid_getException_8ccc799e0abbc77e,
         max_mid
       };
 

@@ -24,7 +24,7 @@ namespace org {
       class FieldEphemerisGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_getGeneratedEphemeris_5671a4f762a73711,
+          mid_getGeneratedEphemeris_a6ef4ff996c2247f,
           max_mid
         };
 

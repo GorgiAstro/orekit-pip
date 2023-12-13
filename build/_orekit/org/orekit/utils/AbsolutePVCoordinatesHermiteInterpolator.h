@@ -5,12 +5,12 @@
 
 namespace org {
   namespace orekit {
+    namespace frames {
+      class Frame;
+    }
     namespace utils {
       class CartesianDerivativesFilter;
       class AbsolutePVCoordinates;
-    }
-    namespace frames {
-      class Frame;
     }
   }
 }
@@ -28,13 +28,13 @@ namespace org {
       class AbsolutePVCoordinatesHermiteInterpolator : public ::org::orekit::time::AbstractTimeInterpolator {
        public:
         enum {
-          mid_init$_535d1f91a93c8b4d,
-          mid_init$_03d00ffd0ee81fe0,
-          mid_init$_51c833c667e08e0f,
-          mid_init$_824f93e8d6b45930,
-          mid_getFilter_6c4898d6ec0c3837,
-          mid_getOutputFrame_6c9bc0a928c56d4e,
-          mid_interpolate_0403458fb3410429,
+          mid_init$_237ae1c2ddd68062,
+          mid_init$_92e0516c51076c2f,
+          mid_init$_5295144d3ac34660,
+          mid_init$_7f6d7ca3076fa7fe,
+          mid_getFilter_63bfdcc4b7a0536c,
+          mid_getOutputFrame_2c51111cc6894ba1,
+          mid_interpolate_350bdb8501ef57d7,
           max_mid
         };
 

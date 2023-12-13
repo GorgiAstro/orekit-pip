@@ -6,13 +6,13 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
+      class Space;
       namespace euclidean {
         namespace oned {
-          class Euclidean1D;
           class Euclidean1D$NoSubSpaceException;
+          class Euclidean1D;
         }
       }
-      class Space;
     }
   }
 }
@@ -35,9 +35,9 @@ namespace org {
           class Euclidean1D : public ::java::lang::Object {
            public:
             enum {
-              mid_getDimension_412668abc8d889e9,
-              mid_getInstance_81c8ae54d6b9890c,
-              mid_getSubSpace_cf9410d213a7cbb9,
+              mid_getDimension_55546ef6a647f39b,
+              mid_getInstance_80ec234213ca3d44,
+              mid_getSubSpace_9afbccb68c8e9ef8,
               max_mid
             };
 

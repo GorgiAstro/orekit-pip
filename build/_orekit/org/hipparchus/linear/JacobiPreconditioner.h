@@ -7,8 +7,8 @@ namespace org {
   namespace hipparchus {
     namespace linear {
       class JacobiPreconditioner;
-      class RealVector;
       class RealLinearOperator;
+      class RealVector;
     }
     namespace exception {
       class MathIllegalArgumentException;
@@ -29,12 +29,12 @@ namespace org {
       class JacobiPreconditioner : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_bdd4888f749f6b83,
-          mid_create_7673b5dd706b64d2,
-          mid_getColumnDimension_412668abc8d889e9,
-          mid_getRowDimension_412668abc8d889e9,
-          mid_operate_342d5b01463e0dc5,
-          mid_sqrt_89223020fe450792,
+          mid_init$_2808bdf785b578a3,
+          mid_create_f81e8324397286d3,
+          mid_getColumnDimension_55546ef6a647f39b,
+          mid_getRowDimension_55546ef6a647f39b,
+          mid_operate_d5f1d017fd25113b,
+          mid_sqrt_68c74764af0bb4df,
           max_mid
         };
 

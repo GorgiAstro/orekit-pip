@@ -3,18 +3,6 @@
 
 #include "org/orekit/estimation/measurements/AbstractMeasurement.h"
 
-namespace org {
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class MultiplexedMeasurement;
-        class ObservedMeasurement;
-        class EstimatedMeasurement;
-        class EstimatedMeasurementBase;
-      }
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -23,6 +11,18 @@ namespace java {
     class Class;
     class Object;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class EstimatedMeasurementBase;
+        class ObservedMeasurement;
+        class MultiplexedMeasurement;
+        class EstimatedMeasurement;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -35,12 +35,12 @@ namespace org {
         class MultiplexedMeasurement : public ::org::orekit::estimation::measurements::AbstractMeasurement {
          public:
           enum {
-            mid_init$_4ccaedadb068bdeb,
-            mid_getEstimatedMeasurements_0d9551367f7ecdef,
-            mid_getEstimatedMeasurementsWithoutDerivatives_0d9551367f7ecdef,
-            mid_getMeasurements_0d9551367f7ecdef,
-            mid_theoreticalEvaluationWithoutDerivatives_71d69ca0f7c280a7,
-            mid_theoreticalEvaluation_eae039ee8c8a4a4d,
+            mid_init$_0e7c3032c7c93ed3,
+            mid_getEstimatedMeasurements_e62d3bb06d56d7e3,
+            mid_getEstimatedMeasurementsWithoutDerivatives_e62d3bb06d56d7e3,
+            mid_getMeasurements_e62d3bb06d56d7e3,
+            mid_theoreticalEvaluationWithoutDerivatives_9347cf3b1f0dd85a,
+            mid_theoreticalEvaluation_d598991c5cac8ab0,
             max_mid
           };
 

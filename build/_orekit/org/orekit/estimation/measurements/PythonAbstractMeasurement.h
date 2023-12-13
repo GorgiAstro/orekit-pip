@@ -16,16 +16,16 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class ObservableSatellite;
-        class EstimatedMeasurement;
         class EstimatedMeasurementBase;
+        class EstimatedMeasurement;
+        class ObservableSatellite;
       }
-    }
-    namespace utils {
-      class ParameterDriver;
     }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
     namespace propagation {
       class SpacecraftState;
@@ -42,14 +42,14 @@ namespace org {
         class PythonAbstractMeasurement : public ::org::orekit::estimation::measurements::AbstractMeasurement {
          public:
           enum {
-            mid_init$_5871f304bea5be3f,
-            mid_addParameterDriver_558cfe74a49f563f,
-            mid_finalize_0640e6acf969ed28,
-            mid_pythonDecRef_0640e6acf969ed28,
-            mid_pythonExtension_9e26256fb0d384a2,
-            mid_pythonExtension_3cd6a6b354c6aa22,
-            mid_theoreticalEvaluation_eae039ee8c8a4a4d,
-            mid_theoreticalEvaluationWithoutDerivatives_71d69ca0f7c280a7,
+            mid_init$_1b561c9d2427f59f,
+            mid_addParameterDriver_5791d10af4720a8e,
+            mid_finalize_a1fa5dae97ea5ed2,
+            mid_pythonDecRef_a1fa5dae97ea5ed2,
+            mid_pythonExtension_6c0ce7e438e5ded4,
+            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_theoreticalEvaluation_d598991c5cac8ab0,
+            mid_theoreticalEvaluationWithoutDerivatives_9347cf3b1f0dd85a,
             max_mid
           };
 

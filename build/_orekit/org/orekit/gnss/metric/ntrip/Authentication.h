@@ -31,9 +31,9 @@ namespace org {
           class Authentication : public ::java::lang::Enum {
            public:
             enum {
-              mid_getAuthentication_5be94ee2ae80af8b,
-              mid_valueOf_5be94ee2ae80af8b,
-              mid_values_5992da16d181ef32,
+              mid_getAuthentication_8094c921fde19441,
+              mid_valueOf_8094c921fde19441,
+              mid_values_681a9ac7b396cda5,
               max_mid
             };
 

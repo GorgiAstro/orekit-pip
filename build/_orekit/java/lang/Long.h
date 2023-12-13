@@ -5,13 +5,13 @@
 
 namespace java {
   namespace lang {
-    class Comparable;
     class CharSequence;
     class Class;
     class Object;
-    class String;
-    class NumberFormatException;
     class Long;
+    class NumberFormatException;
+    class String;
+    class Comparable;
   }
 }
 template<class T> class JArray;
@@ -22,56 +22,56 @@ namespace java {
     class Long : public ::java::lang::Number {
      public:
       enum {
-        mid_init$_f5ffdf29129ef90a,
-        mid_init$_3cd6a6b354c6aa22,
-        mid_bitCount_06110d73d878b7ae,
-        mid_byteValue_acadfed42a0dbd0d,
-        mid_compare_1abbfee4f30dfe0a,
-        mid_compareTo_f77dca0e234de4f8,
-        mid_compareUnsigned_1abbfee4f30dfe0a,
-        mid_decode_7f2060733966aef7,
-        mid_divideUnsigned_c18ab8eab0c49f84,
-        mid_doubleValue_557b8123390d8d0c,
-        mid_equals_221e8e85cb385209,
-        mid_floatValue_04fe014f7609dc26,
-        mid_getLong_7f2060733966aef7,
-        mid_getLong_90d76fd0b429d420,
-        mid_getLong_0aafc93534471333,
-        mid_hashCode_412668abc8d889e9,
-        mid_hashCode_06110d73d878b7ae,
-        mid_highestOneBit_f4ad805a81234b49,
-        mid_intValue_412668abc8d889e9,
-        mid_longValue_9e26256fb0d384a2,
-        mid_lowestOneBit_f4ad805a81234b49,
-        mid_max_c18ab8eab0c49f84,
-        mid_min_c18ab8eab0c49f84,
-        mid_numberOfLeadingZeros_06110d73d878b7ae,
-        mid_numberOfTrailingZeros_06110d73d878b7ae,
-        mid_parseLong_8524bc32bc995ef2,
-        mid_parseLong_77139396af4e84c5,
-        mid_parseLong_154996cf4a3d855d,
-        mid_parseUnsignedLong_8524bc32bc995ef2,
-        mid_parseUnsignedLong_77139396af4e84c5,
-        mid_parseUnsignedLong_154996cf4a3d855d,
-        mid_remainderUnsigned_c18ab8eab0c49f84,
-        mid_reverse_f4ad805a81234b49,
-        mid_reverseBytes_f4ad805a81234b49,
-        mid_rotateLeft_974ee1cf526db4b7,
-        mid_rotateRight_974ee1cf526db4b7,
-        mid_shortValue_2554afc868a7ba2a,
-        mid_signum_06110d73d878b7ae,
-        mid_sum_c18ab8eab0c49f84,
-        mid_toBinaryString_dffed0dde596e613,
-        mid_toHexString_dffed0dde596e613,
-        mid_toOctalString_dffed0dde596e613,
-        mid_toString_3cffd47377eca18a,
-        mid_toString_dffed0dde596e613,
-        mid_toString_eeb517e6e503fbb7,
-        mid_toUnsignedString_dffed0dde596e613,
-        mid_toUnsignedString_eeb517e6e503fbb7,
-        mid_valueOf_7f2060733966aef7,
-        mid_valueOf_214cbd70b5088f3f,
-        mid_valueOf_a76026f05215f715,
+        mid_init$_734b91ac30d5f9b4,
+        mid_init$_3d7dd2314a0dd456,
+        mid_bitCount_da24d9dc605e436c,
+        mid_byteValue_82ba37184c5152a3,
+        mid_compare_a475dff09c4a8036,
+        mid_compareTo_697efac7c416888c,
+        mid_compareUnsigned_a475dff09c4a8036,
+        mid_decode_63948a43f8a26139,
+        mid_divideUnsigned_8f345e4204401ff5,
+        mid_doubleValue_b74f83833fdad017,
+        mid_equals_460c5e2d9d51c6cc,
+        mid_floatValue_1fb1bf0772ae5db7,
+        mid_getLong_63948a43f8a26139,
+        mid_getLong_4e0df24b8d07cee1,
+        mid_getLong_c458fe919015d2a1,
+        mid_hashCode_55546ef6a647f39b,
+        mid_hashCode_da24d9dc605e436c,
+        mid_highestOneBit_9db63109f74a74fc,
+        mid_intValue_55546ef6a647f39b,
+        mid_longValue_6c0ce7e438e5ded4,
+        mid_lowestOneBit_9db63109f74a74fc,
+        mid_max_8f345e4204401ff5,
+        mid_min_8f345e4204401ff5,
+        mid_numberOfLeadingZeros_da24d9dc605e436c,
+        mid_numberOfTrailingZeros_da24d9dc605e436c,
+        mid_parseLong_cbeeb2314499c200,
+        mid_parseLong_2ff283f35c90efa5,
+        mid_parseLong_b497eb3ab4c913a6,
+        mid_parseUnsignedLong_cbeeb2314499c200,
+        mid_parseUnsignedLong_2ff283f35c90efa5,
+        mid_parseUnsignedLong_b497eb3ab4c913a6,
+        mid_remainderUnsigned_8f345e4204401ff5,
+        mid_reverse_9db63109f74a74fc,
+        mid_reverseBytes_9db63109f74a74fc,
+        mid_rotateLeft_a60a6e0b1c5dfa26,
+        mid_rotateRight_a60a6e0b1c5dfa26,
+        mid_shortValue_02a2271f89f4492b,
+        mid_signum_da24d9dc605e436c,
+        mid_sum_8f345e4204401ff5,
+        mid_toBinaryString_9078858c11a58b1e,
+        mid_toHexString_9078858c11a58b1e,
+        mid_toOctalString_9078858c11a58b1e,
+        mid_toString_1c1fa1e935d6cdcf,
+        mid_toString_9078858c11a58b1e,
+        mid_toString_16178c1d99d0765d,
+        mid_toUnsignedString_9078858c11a58b1e,
+        mid_toUnsignedString_16178c1d99d0765d,
+        mid_valueOf_63948a43f8a26139,
+        mid_valueOf_30f988f295a635df,
+        mid_valueOf_439108b9ef2718bd,
         max_mid
       };
 

@@ -5,18 +5,18 @@
 
 namespace org {
   namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+    namespace frames {
+      class Frame;
+    }
     namespace propagation {
       namespace analytical {
         namespace tle {
           class FieldTLE;
         }
       }
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
     }
   }
   namespace hipparchus {
@@ -39,10 +39,10 @@ namespace org {
           class FieldSGP4 : public ::org::orekit::propagation::analytical::tle::FieldTLEPropagator {
            public:
             enum {
-              mid_init$_506aefaa51ea8c08,
-              mid_init$_09515132f38e5487,
-              mid_sxpInitialize_5d9c9afaca2e497c,
-              mid_sxpPropagate_960efa47e0a8eec2,
+              mid_init$_8d1f9859c5514da2,
+              mid_init$_5459c6c0c91f1c96,
+              mid_sxpInitialize_8b0f7facc8a6a46e,
+              mid_sxpPropagate_1d66803ed368a800,
               max_mid
             };
 

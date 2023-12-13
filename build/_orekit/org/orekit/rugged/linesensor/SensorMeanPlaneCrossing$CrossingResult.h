@@ -4,11 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -16,6 +11,11 @@ namespace org {
           class Vector3D;
         }
       }
+    }
+  }
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
     }
   }
 }
@@ -34,12 +34,12 @@ namespace org {
         class SensorMeanPlaneCrossing$CrossingResult : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_5ee75d1abe7eae30,
-            mid_getDate_7a97f7e149e79afb,
-            mid_getLine_557b8123390d8d0c,
-            mid_getTarget_f88961cca75a2c0a,
-            mid_getTargetDirection_f88961cca75a2c0a,
-            mid_getTargetDirectionDerivative_f88961cca75a2c0a,
+            mid_init$_cf79ac3fac47228f,
+            mid_getDate_c325492395d89b24,
+            mid_getLine_b74f83833fdad017,
+            mid_getTarget_8b724f8b4fdad1a2,
+            mid_getTargetDirection_8b724f8b4fdad1a2,
+            mid_getTargetDirectionDerivative_8b724f8b4fdad1a2,
             max_mid
           };
 

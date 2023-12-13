@@ -3,25 +3,25 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace io {
-    class IOException;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
+    namespace utils {
+      class TimeStampedPVCoordinates;
+    }
     namespace propagation {
       namespace sampling {
         class OrekitFixedStepHandler;
       }
       class SpacecraftState;
     }
-    namespace utils {
-      class TimeStampedPVCoordinates;
-    }
+  }
+}
+namespace java {
+  namespace io {
+    class IOException;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,9 +34,9 @@ namespace org {
         class StreamingCpfWriter$Segment : public ::java::lang::Object {
          public:
           enum {
-            mid_finish_8655761ebf04b503,
-            mid_handleStep_8655761ebf04b503,
-            mid_writeEphemerisLine_72ab8dadb04e6687,
+            mid_finish_280c3390961e0a50,
+            mid_handleStep_280c3390961e0a50,
+            mid_writeEphemerisLine_be80243d6885d1b6,
             max_mid
           };
 

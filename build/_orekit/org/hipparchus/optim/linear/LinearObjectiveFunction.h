@@ -13,14 +13,14 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace linear {
-      class RealVector;
-    }
     namespace optim {
       class OptimizationData;
     }
     namespace analysis {
       class MultivariateFunction;
+    }
+    namespace linear {
+      class RealVector;
     }
   }
 }
@@ -34,14 +34,14 @@ namespace org {
         class LinearObjectiveFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_3682f2e0c8382fe5,
-            mid_init$_9af10d94e4b8cd04,
-            mid_equals_221e8e85cb385209,
-            mid_getCoefficients_75d50d73180655b4,
-            mid_getConstantTerm_557b8123390d8d0c,
-            mid_hashCode_412668abc8d889e9,
-            mid_value_86c4a0582e0747ce,
-            mid_value_4062041acf71098b,
+            mid_init$_334f245ec9cee46b,
+            mid_init$_548cc85227212ca8,
+            mid_equals_460c5e2d9d51c6cc,
+            mid_getCoefficients_3a10cc75bd070d84,
+            mid_getConstantTerm_b74f83833fdad017,
+            mid_hashCode_55546ef6a647f39b,
+            mid_value_b060e4326765ccf1,
+            mid_value_532b95759e51e831,
             max_mid
           };
 

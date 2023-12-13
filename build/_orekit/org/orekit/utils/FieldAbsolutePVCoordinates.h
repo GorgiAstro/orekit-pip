@@ -6,10 +6,10 @@
 namespace org {
   namespace orekit {
     namespace utils {
-      class FieldAbsolutePVCoordinates;
       class FieldPVCoordinates;
       class AbsolutePVCoordinates;
       class FieldPVCoordinatesProvider;
+      class FieldAbsolutePVCoordinates;
     }
     namespace time {
       class FieldAbsoluteDate;
@@ -43,25 +43,25 @@ namespace org {
       class FieldAbsolutePVCoordinates : public ::org::orekit::utils::TimeStampedFieldPVCoordinates {
        public:
         enum {
-          mid_init$_6c77220cdb0ea6df,
-          mid_init$_31f1fe93c62865b4,
-          mid_init$_ffffc3b35edcf862,
-          mid_init$_1ecbc58634d61ebe,
-          mid_init$_dcce67c0d72933b9,
-          mid_init$_c33d21628d91e570,
-          mid_init$_237419b68b55edce,
-          mid_init$_4bbfe40ca6a1fb24,
-          mid_init$_2ab935b9a04a47e7,
-          mid_init$_8a8f4d2c2758b365,
-          mid_getFrame_6c9bc0a928c56d4e,
-          mid_getPVCoordinates_232470f1b769250c,
-          mid_getPVCoordinates_52ae651ad18178ce,
-          mid_getPVCoordinates_4ac52e75113a03db,
-          mid_getPosition_b026e433cf2ed2d1,
-          mid_shiftedBy_7bd46244f7d046c7,
-          mid_shiftedBy_da445f13ea5e4505,
-          mid_toAbsolutePVCoordinates_424b08369c4f1f64,
-          mid_toTaylorProvider_dffb82756006eef9,
+          mid_init$_3c9a81ca81006017,
+          mid_init$_aa8c722bf91af587,
+          mid_init$_d709f1a99e8f728c,
+          mid_init$_dbb5cbfe1e0f7743,
+          mid_init$_ec297e7d63958cff,
+          mid_init$_a579737bd7b3a2fc,
+          mid_init$_cc8c6789cd732e7b,
+          mid_init$_0c532ebd3e17863c,
+          mid_init$_a82918c7573e9c77,
+          mid_init$_803de8b4e87e6ba6,
+          mid_getFrame_2c51111cc6894ba1,
+          mid_getPVCoordinates_243debd9cc1dd623,
+          mid_getPVCoordinates_dda5a3346286675e,
+          mid_getPVCoordinates_294c5c99690f2356,
+          mid_getPosition_566ff18e6be34b64,
+          mid_shiftedBy_6ce2d639ee84cd5a,
+          mid_shiftedBy_4eea64d82cd4330d,
+          mid_toAbsolutePVCoordinates_900ea521fabf17ca,
+          mid_toTaylorProvider_0d134b6a2504033c,
           max_mid
         };
 

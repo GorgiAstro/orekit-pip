@@ -4,7 +4,40 @@
 #include "org/orekit/ssa/collision/shorttermencounter/probability/twod/AbstractShortTermEncounter2DPOCMethod.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace analysis {
+      namespace integration {
+        class UnivariateIntegrator;
+        class FieldUnivariateIntegrator;
+      }
+    }
+    class CalculusFieldElement;
+  }
   namespace orekit {
+    namespace propagation {
+      class FieldStateCovariance;
+      class StateCovariance;
+    }
+    namespace ssa {
+      namespace collision {
+        namespace shorttermencounter {
+          namespace probability {
+            namespace twod {
+              class ShortTermEncounter2DDefinition;
+              class FieldShortTermEncounter2DDefinition;
+            }
+          }
+        }
+      }
+      namespace metrics {
+        class FieldProbabilityOfCollision;
+        class ProbabilityOfCollision;
+      }
+    }
+    namespace orbits {
+      class Orbit;
+      class FieldOrbit;
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -14,39 +47,6 @@ namespace org {
         }
       }
     }
-    namespace ssa {
-      namespace metrics {
-        class FieldProbabilityOfCollision;
-        class ProbabilityOfCollision;
-      }
-      namespace collision {
-        namespace shorttermencounter {
-          namespace probability {
-            namespace twod {
-              class FieldShortTermEncounter2DDefinition;
-              class ShortTermEncounter2DDefinition;
-            }
-          }
-        }
-      }
-    }
-    namespace propagation {
-      class FieldStateCovariance;
-      class StateCovariance;
-    }
-    namespace orbits {
-      class Orbit;
-      class FieldOrbit;
-    }
-  }
-  namespace hipparchus {
-    namespace analysis {
-      namespace integration {
-        class FieldUnivariateIntegrator;
-        class UnivariateIntegrator;
-      }
-    }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -67,16 +67,16 @@ namespace org {
               class AbstractShortTermEncounter1DNumerical2DPOCMethod : public ::org::orekit::ssa::collision::shorttermencounter::probability::twod::AbstractShortTermEncounter2DPOCMethod {
                public:
                 enum {
-                  mid_compute_14f91c678f061a03,
-                  mid_compute_f877168372b32c50,
-                  mid_compute_ddf22cd33bfe153c,
-                  mid_compute_8d09da96ce925a0b,
-                  mid_compute_3d70d87c0479b567,
-                  mid_compute_b7a68961992b1c2b,
-                  mid_compute_4b0f59ff7b8720f9,
-                  mid_compute_376cdf1ab01ad011,
-                  mid_compute_022642671171e46b,
-                  mid_compute_d8ac2a1aa9301861,
+                  mid_compute_6757b86d565adb5e,
+                  mid_compute_993978379571fdc8,
+                  mid_compute_a73e6347f5238a63,
+                  mid_compute_11689cd07cf55453,
+                  mid_compute_a0013bb9d172a4e4,
+                  mid_compute_0a5a6093c066b904,
+                  mid_compute_978e207e20e445e6,
+                  mid_compute_f84396b6984702e2,
+                  mid_compute_450667d4c5114463,
+                  mid_compute_86700ab09b80a1e9,
                   max_mid
                 };
 

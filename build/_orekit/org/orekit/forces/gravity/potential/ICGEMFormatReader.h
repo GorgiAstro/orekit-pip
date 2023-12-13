@@ -5,8 +5,8 @@
 
 namespace java {
   namespace io {
-    class IOException;
     class InputStream;
+    class IOException;
   }
   namespace text {
     class ParseException;
@@ -44,10 +44,10 @@ namespace org {
           class ICGEMFormatReader : public ::org::orekit::forces::gravity::potential::PotentialCoefficientsReader {
            public:
             enum {
-              mid_init$_e5ca4b97ee6bd2b6,
-              mid_init$_738db7d6574836ac,
-              mid_getProvider_f0b357b475e18957,
-              mid_loadData_15770e8d8949a557,
+              mid_init$_76cf8b957ccb7ae1,
+              mid_init$_f201530b2ce67e89,
+              mid_getProvider_752316a4c911183b,
+              mid_loadData_360461e719fb564c,
               max_mid
             };
 

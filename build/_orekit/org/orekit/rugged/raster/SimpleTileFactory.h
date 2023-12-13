@@ -28,8 +28,8 @@ namespace org {
         class SimpleTileFactory : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_createTile_cae927382788fc7b,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_createTile_669e0c011750e305,
             max_mid
           };
 

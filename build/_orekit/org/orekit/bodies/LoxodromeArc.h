@@ -25,11 +25,11 @@ namespace org {
       class LoxodromeArc : public ::org::orekit::bodies::Loxodrome {
        public:
         enum {
-          mid_init$_51c0ede7fd3ca4a5,
-          mid_init$_8edee3a2b13af932,
-          mid_calculatePointAlongArc_fdfcc3c813d87498,
-          mid_getDistance_557b8123390d8d0c,
-          mid_getFinalPoint_8672b163b0e4a5a3,
+          mid_init$_ea24656e424c71b9,
+          mid_init$_34b55d8fdce3d642,
+          mid_calculatePointAlongArc_11599325d56b0055,
+          mid_getDistance_b74f83833fdad017,
+          mid_getFinalPoint_963915d358b1e63a,
           max_mid
         };
 

@@ -18,9 +18,9 @@ namespace org {
         class Selector : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0640e6acf969ed28,
-            mid_select_2268d18be49a6087,
-            mid_selectFirst_41fce65646328eb2,
+            mid_init$_a1fa5dae97ea5ed2,
+            mid_select_99e3200dafc19573,
+            mid_selectFirst_cd8da52a7e84190c,
             max_mid
           };
 

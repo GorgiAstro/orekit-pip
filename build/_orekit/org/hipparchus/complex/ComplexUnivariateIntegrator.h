@@ -30,9 +30,9 @@ namespace org {
       class ComplexUnivariateIntegrator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_ad92e6ddde52d3ab,
-          mid_integrate_9e044a3280202960,
-          mid_integrate_7587b226958b23ce,
+          mid_init$_9ca2632f9ce274a9,
+          mid_integrate_d17dd63a7bac258e,
+          mid_integrate_e9e2d176e3b36b59,
           max_mid
         };
 

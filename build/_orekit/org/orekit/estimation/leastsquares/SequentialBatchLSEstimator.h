@@ -38,7 +38,7 @@ namespace org {
         class SequentialBatchLSEstimator : public ::org::orekit::estimation::leastsquares::BatchLSEstimator {
          public:
           enum {
-            mid_init$_8fb72d5a0f261f0c,
+            mid_init$_8d0ec979a38c50bc,
             max_mid
           };
 

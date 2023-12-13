@@ -8,10 +8,10 @@ namespace org {
     namespace ode {
       class FieldODEStateAndDerivative;
     }
+    class CalculusFieldElement;
     namespace exception {
       class MathIllegalArgumentException;
     }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -31,11 +31,11 @@ namespace org {
       class FieldEquationsMapper : public ::java::lang::Object {
        public:
         enum {
-          mid_extractEquationData_2bfb9a29e7d7770a,
-          mid_getNumberOfEquations_412668abc8d889e9,
-          mid_getTotalDimension_412668abc8d889e9,
-          mid_insertEquationData_270f73898b4ef6d7,
-          mid_mapStateAndDerivative_4a44960527a4a78a,
+          mid_extractEquationData_a513190ee23c08a2,
+          mid_getNumberOfEquations_55546ef6a647f39b,
+          mid_getTotalDimension_55546ef6a647f39b,
+          mid_insertEquationData_d2db5bedc2716798,
+          mid_mapStateAndDerivative_3bcb34e82e5225d3,
           max_mid
         };
 

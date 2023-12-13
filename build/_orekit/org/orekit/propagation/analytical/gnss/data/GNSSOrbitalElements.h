@@ -5,19 +5,19 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      namespace analytical {
-        namespace gnss {
-          class GNSSPropagator;
-        }
-      }
-    }
     namespace frames {
       class Frames;
       class Frame;
     }
     namespace attitudes {
       class AttitudeProvider;
+    }
+    namespace propagation {
+      namespace analytical {
+        namespace gnss {
+          class GNSSPropagator;
+        }
+      }
     }
   }
 }
@@ -38,30 +38,30 @@ namespace org {
             class GNSSOrbitalElements : public ::org::orekit::time::TimeStamped {
              public:
               enum {
-                mid_getAngularVelocity_557b8123390d8d0c,
-                mid_getCic_557b8123390d8d0c,
-                mid_getCis_557b8123390d8d0c,
-                mid_getCrc_557b8123390d8d0c,
-                mid_getCrs_557b8123390d8d0c,
-                mid_getCuc_557b8123390d8d0c,
-                mid_getCus_557b8123390d8d0c,
-                mid_getCycleDuration_557b8123390d8d0c,
-                mid_getE_557b8123390d8d0c,
-                mid_getI0_557b8123390d8d0c,
-                mid_getIDot_557b8123390d8d0c,
-                mid_getM0_557b8123390d8d0c,
-                mid_getMeanMotion_557b8123390d8d0c,
-                mid_getMu_557b8123390d8d0c,
-                mid_getOmega0_557b8123390d8d0c,
-                mid_getOmegaDot_557b8123390d8d0c,
-                mid_getPRN_412668abc8d889e9,
-                mid_getPa_557b8123390d8d0c,
-                mid_getPropagator_2d63e0224266d4a7,
-                mid_getPropagator_fd9ba085897912c9,
-                mid_getPropagator_8c43a154c6c41be9,
-                mid_getSma_557b8123390d8d0c,
-                mid_getTime_557b8123390d8d0c,
-                mid_getWeek_412668abc8d889e9,
+                mid_getAngularVelocity_b74f83833fdad017,
+                mid_getCic_b74f83833fdad017,
+                mid_getCis_b74f83833fdad017,
+                mid_getCrc_b74f83833fdad017,
+                mid_getCrs_b74f83833fdad017,
+                mid_getCuc_b74f83833fdad017,
+                mid_getCus_b74f83833fdad017,
+                mid_getCycleDuration_b74f83833fdad017,
+                mid_getE_b74f83833fdad017,
+                mid_getI0_b74f83833fdad017,
+                mid_getIDot_b74f83833fdad017,
+                mid_getM0_b74f83833fdad017,
+                mid_getMeanMotion_b74f83833fdad017,
+                mid_getMu_b74f83833fdad017,
+                mid_getOmega0_b74f83833fdad017,
+                mid_getOmegaDot_b74f83833fdad017,
+                mid_getPRN_55546ef6a647f39b,
+                mid_getPa_b74f83833fdad017,
+                mid_getPropagator_8528f550d471e3fb,
+                mid_getPropagator_b4ee63e071e2baaa,
+                mid_getPropagator_0454d94a691f8539,
+                mid_getSma_b74f83833fdad017,
+                mid_getTime_b74f83833fdad017,
+                mid_getWeek_55546ef6a647f39b,
                 max_mid
               };
 

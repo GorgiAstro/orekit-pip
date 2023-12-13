@@ -3,38 +3,26 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace definitions {
-          class BodyFacade;
-          class FrameFacade;
-        }
         namespace ndm {
           namespace odm {
             namespace ocm {
-              class TrajectoryStateHistoryMetadata;
               class OrbitElementsType;
+              class TrajectoryStateHistoryMetadata;
             }
             namespace oem {
               class InterpolationMethod;
             }
           }
         }
+        namespace definitions {
+          class FrameFacade;
+          class BodyFacade;
+        }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
     namespace utils {
       namespace units {
@@ -44,6 +32,18 @@ namespace org {
     namespace data {
       class DataContext;
     }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -59,46 +59,46 @@ namespace org {
               class TrajectoryStateHistoryMetadata : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_11edd4fa0b5a3eaf,
-                  mid_copy_3a8876e04e4abfef,
-                  mid_getCenter_c642bce266d6d89a,
-                  mid_getInterpolationDegree_412668abc8d889e9,
-                  mid_getInterpolationMethod_8efb284b7b2c86d2,
-                  mid_getOrbAveraging_3cffd47377eca18a,
-                  mid_getOrbRevNum_412668abc8d889e9,
-                  mid_getOrbRevNumBasis_412668abc8d889e9,
-                  mid_getPropagator_3cffd47377eca18a,
-                  mid_getTrajBasis_3cffd47377eca18a,
-                  mid_getTrajBasisID_3cffd47377eca18a,
-                  mid_getTrajFrameEpoch_7a97f7e149e79afb,
-                  mid_getTrajID_3cffd47377eca18a,
-                  mid_getTrajNextID_3cffd47377eca18a,
-                  mid_getTrajPrevID_3cffd47377eca18a,
-                  mid_getTrajReferenceFrame_98f5fcaff3e3f9d2,
-                  mid_getTrajType_ada74ce902d29422,
-                  mid_getTrajUnits_0d9551367f7ecdef,
-                  mid_getUseableStartTime_7a97f7e149e79afb,
-                  mid_getUseableStopTime_7a97f7e149e79afb,
-                  mid_incrementTrajID_60bb1b490b673cbf,
-                  mid_setCenter_e6f755c267d91c26,
-                  mid_setInterpolationDegree_a3da1a935cb37f7b,
-                  mid_setInterpolationMethod_db5b325923fed9a5,
-                  mid_setOrbAveraging_f5ffdf29129ef90a,
-                  mid_setOrbRevNum_a3da1a935cb37f7b,
-                  mid_setOrbRevNumBasis_a3da1a935cb37f7b,
-                  mid_setPropagator_f5ffdf29129ef90a,
-                  mid_setTrajBasis_f5ffdf29129ef90a,
-                  mid_setTrajBasisID_f5ffdf29129ef90a,
-                  mid_setTrajFrameEpoch_20affcbd28542333,
-                  mid_setTrajID_f5ffdf29129ef90a,
-                  mid_setTrajNextID_f5ffdf29129ef90a,
-                  mid_setTrajPrevID_f5ffdf29129ef90a,
-                  mid_setTrajReferenceFrame_f55eee1236275bb1,
-                  mid_setTrajType_94fd56ae4b55b80e,
-                  mid_setTrajUnits_4ccaedadb068bdeb,
-                  mid_setUseableStartTime_20affcbd28542333,
-                  mid_setUseableStopTime_20affcbd28542333,
-                  mid_validate_10f281d777284cea,
+                  mid_init$_f14f121ad3022904,
+                  mid_copy_dd0ebaaba4228d02,
+                  mid_getCenter_52253a5b5c02abfe,
+                  mid_getInterpolationDegree_55546ef6a647f39b,
+                  mid_getInterpolationMethod_0f2522b3fe45d99f,
+                  mid_getOrbAveraging_1c1fa1e935d6cdcf,
+                  mid_getOrbRevNum_55546ef6a647f39b,
+                  mid_getOrbRevNumBasis_55546ef6a647f39b,
+                  mid_getPropagator_1c1fa1e935d6cdcf,
+                  mid_getTrajBasis_1c1fa1e935d6cdcf,
+                  mid_getTrajBasisID_1c1fa1e935d6cdcf,
+                  mid_getTrajFrameEpoch_c325492395d89b24,
+                  mid_getTrajID_1c1fa1e935d6cdcf,
+                  mid_getTrajNextID_1c1fa1e935d6cdcf,
+                  mid_getTrajPrevID_1c1fa1e935d6cdcf,
+                  mid_getTrajReferenceFrame_69d8be1b6b0a1a94,
+                  mid_getTrajType_4eb559a63ad8d46d,
+                  mid_getTrajUnits_e62d3bb06d56d7e3,
+                  mid_getUseableStartTime_c325492395d89b24,
+                  mid_getUseableStopTime_c325492395d89b24,
+                  mid_incrementTrajID_6f0f3576df9f75ee,
+                  mid_setCenter_564458ee450fa323,
+                  mid_setInterpolationDegree_44ed599e93e8a30c,
+                  mid_setInterpolationMethod_da218530d7e28b54,
+                  mid_setOrbAveraging_734b91ac30d5f9b4,
+                  mid_setOrbRevNum_44ed599e93e8a30c,
+                  mid_setOrbRevNumBasis_44ed599e93e8a30c,
+                  mid_setPropagator_734b91ac30d5f9b4,
+                  mid_setTrajBasis_734b91ac30d5f9b4,
+                  mid_setTrajBasisID_734b91ac30d5f9b4,
+                  mid_setTrajFrameEpoch_02135a6ef25adb4b,
+                  mid_setTrajID_734b91ac30d5f9b4,
+                  mid_setTrajNextID_734b91ac30d5f9b4,
+                  mid_setTrajPrevID_734b91ac30d5f9b4,
+                  mid_setTrajReferenceFrame_4755133c5c4c59be,
+                  mid_setTrajType_c891909ddae6c021,
+                  mid_setTrajUnits_0e7c3032c7c93ed3,
+                  mid_setUseableStartTime_02135a6ef25adb4b,
+                  mid_setUseableStopTime_02135a6ef25adb4b,
+                  mid_validate_8ba9fe7a847cecad,
                   max_mid
                 };
 

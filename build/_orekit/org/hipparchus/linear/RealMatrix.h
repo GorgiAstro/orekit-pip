@@ -5,15 +5,15 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class NullArgumentException;
+      class MathIllegalArgumentException;
+    }
     namespace linear {
       class RealMatrixChangingVisitor;
       class RealMatrixPreservingVisitor;
-      class RealMatrix;
       class RealVector;
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-      class NullArgumentException;
+      class RealMatrix;
     }
     namespace analysis {
       class UnivariateFunction;
@@ -37,63 +37,63 @@ namespace org {
       class RealMatrix : public ::org::hipparchus::linear::AnyMatrix {
        public:
         enum {
-          mid_add_340b47d21842d02c,
-          mid_addToEntry_754312f3734d6e2f,
-          mid_blendArithmeticallyWith_a5ade44f7c8eaa17,
-          mid_copy_70a207fcbc031df2,
-          mid_copySubMatrix_d61768f3ffd9b2b0,
-          mid_copySubMatrix_275b967e785238bf,
-          mid_createMatrix_e8546415f980523f,
-          mid_getColumn_1da5c9e77f24f269,
-          mid_getColumnMatrix_aec3de0a701ae468,
-          mid_getColumnVector_2a32cae841870443,
-          mid_getData_8cf5267aa13a77f3,
-          mid_getEntry_21b81d54c06b64b0,
-          mid_getFrobeniusNorm_557b8123390d8d0c,
-          mid_getNorm1_557b8123390d8d0c,
-          mid_getNormInfty_557b8123390d8d0c,
-          mid_getRow_1da5c9e77f24f269,
-          mid_getRowMatrix_aec3de0a701ae468,
-          mid_getRowVector_2a32cae841870443,
-          mid_getSubMatrix_5948417ecf6c62f4,
-          mid_getSubMatrix_dd66ee2a79d86a98,
-          mid_getTrace_557b8123390d8d0c,
-          mid_map_3634b37a29ba1206,
-          mid_mapToSelf_3634b37a29ba1206,
-          mid_multiply_340b47d21842d02c,
-          mid_multiplyEntry_754312f3734d6e2f,
-          mid_multiplyTransposed_340b47d21842d02c,
-          mid_operate_1db7c087750eaffe,
-          mid_operate_342d5b01463e0dc5,
-          mid_power_aec3de0a701ae468,
-          mid_preMultiply_1db7c087750eaffe,
-          mid_preMultiply_342d5b01463e0dc5,
-          mid_preMultiply_340b47d21842d02c,
-          mid_scalarAdd_e95e381257af03e9,
-          mid_scalarMultiply_e95e381257af03e9,
-          mid_setColumn_3246bd31f432242d,
-          mid_setColumnMatrix_4fd5e02248c1a963,
-          mid_setColumnVector_a967cf1fffd0038f,
-          mid_setEntry_754312f3734d6e2f,
-          mid_setRow_3246bd31f432242d,
-          mid_setRowMatrix_4fd5e02248c1a963,
-          mid_setRowVector_a967cf1fffd0038f,
-          mid_setSubMatrix_672f554eb45cea1a,
-          mid_subtract_340b47d21842d02c,
-          mid_transpose_70a207fcbc031df2,
-          mid_transposeMultiply_340b47d21842d02c,
-          mid_walkInColumnOrder_f151009359824fc3,
-          mid_walkInColumnOrder_3f821bf796d1a7b4,
-          mid_walkInColumnOrder_ab19ce00fffb9224,
-          mid_walkInColumnOrder_b64b35af60f84c7f,
-          mid_walkInOptimizedOrder_f151009359824fc3,
-          mid_walkInOptimizedOrder_3f821bf796d1a7b4,
-          mid_walkInOptimizedOrder_ab19ce00fffb9224,
-          mid_walkInOptimizedOrder_b64b35af60f84c7f,
-          mid_walkInRowOrder_f151009359824fc3,
-          mid_walkInRowOrder_3f821bf796d1a7b4,
-          mid_walkInRowOrder_ab19ce00fffb9224,
-          mid_walkInRowOrder_b64b35af60f84c7f,
+          mid_add_be124f4006dc9f69,
+          mid_addToEntry_94fe8d9ffeb50676,
+          mid_blendArithmeticallyWith_514e92b8dbd002ec,
+          mid_copy_f77d745f2128c391,
+          mid_copySubMatrix_c11e3fd762bd0fee,
+          mid_copySubMatrix_ac682e6a44042af2,
+          mid_createMatrix_28a444e31666746c,
+          mid_getColumn_bb2a44a76ad252f7,
+          mid_getColumnMatrix_2a3e0c79a1b41fe4,
+          mid_getColumnVector_b50dc3915c68ddbc,
+          mid_getData_3b7b373db8e7887f,
+          mid_getEntry_cad98089d00f8a5b,
+          mid_getFrobeniusNorm_b74f83833fdad017,
+          mid_getNorm1_b74f83833fdad017,
+          mid_getNormInfty_b74f83833fdad017,
+          mid_getRow_bb2a44a76ad252f7,
+          mid_getRowMatrix_2a3e0c79a1b41fe4,
+          mid_getRowVector_b50dc3915c68ddbc,
+          mid_getSubMatrix_c330dd232db3f25c,
+          mid_getSubMatrix_f6333def4d085867,
+          mid_getTrace_b74f83833fdad017,
+          mid_map_9b393edf928ccf8a,
+          mid_mapToSelf_9b393edf928ccf8a,
+          mid_multiply_be124f4006dc9f69,
+          mid_multiplyEntry_94fe8d9ffeb50676,
+          mid_multiplyTransposed_be124f4006dc9f69,
+          mid_operate_14dee4cb8cc3e959,
+          mid_operate_d5f1d017fd25113b,
+          mid_power_2a3e0c79a1b41fe4,
+          mid_preMultiply_14dee4cb8cc3e959,
+          mid_preMultiply_d5f1d017fd25113b,
+          mid_preMultiply_be124f4006dc9f69,
+          mid_scalarAdd_f5dd9d6021dc9dae,
+          mid_scalarMultiply_f5dd9d6021dc9dae,
+          mid_setColumn_75061e5f5bbace93,
+          mid_setColumnMatrix_74dda270996520c8,
+          mid_setColumnVector_9fe1e9c5bee9d07c,
+          mid_setEntry_94fe8d9ffeb50676,
+          mid_setRow_75061e5f5bbace93,
+          mid_setRowMatrix_74dda270996520c8,
+          mid_setRowVector_9fe1e9c5bee9d07c,
+          mid_setSubMatrix_f12104c26dcf5b23,
+          mid_subtract_be124f4006dc9f69,
+          mid_transpose_f77d745f2128c391,
+          mid_transposeMultiply_be124f4006dc9f69,
+          mid_walkInColumnOrder_e9eacc024b91638e,
+          mid_walkInColumnOrder_8c777cbbebb3f320,
+          mid_walkInColumnOrder_7a8f404d3cc13545,
+          mid_walkInColumnOrder_0efcec2037689a79,
+          mid_walkInOptimizedOrder_e9eacc024b91638e,
+          mid_walkInOptimizedOrder_8c777cbbebb3f320,
+          mid_walkInOptimizedOrder_7a8f404d3cc13545,
+          mid_walkInOptimizedOrder_0efcec2037689a79,
+          mid_walkInRowOrder_e9eacc024b91638e,
+          mid_walkInRowOrder_8c777cbbebb3f320,
+          mid_walkInRowOrder_7a8f404d3cc13545,
+          mid_walkInRowOrder_0efcec2037689a79,
           max_mid
         };
 

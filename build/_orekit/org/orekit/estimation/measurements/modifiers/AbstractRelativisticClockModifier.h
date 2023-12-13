@@ -19,9 +19,9 @@ namespace org {
           class AbstractRelativisticClockModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_getScaleFactor_557b8123390d8d0c,
-              mid_relativisticCorrection_af5b76ca8791af38,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_relativisticCorrection_2fa6405c70ee6844,
+              mid_getScaleFactor_b74f83833fdad017,
               max_mid
             };
 

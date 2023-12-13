@@ -8,13 +8,13 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class SubPlane;
-          class Plane;
           class Vector3D;
           class Line;
           class Euclidean3D;
-          class PolyhedronsSet;
+          class Plane;
+          class SubPlane;
           class Rotation;
+          class PolyhedronsSet;
         }
         namespace twod {
           class Vector2D;
@@ -23,8 +23,8 @@ namespace org {
       }
       class Point;
       namespace partitioning {
-        class Hyperplane;
         class Embedding;
+        class Hyperplane;
       }
       class Vector;
     }
@@ -49,38 +49,38 @@ namespace org {
           class Plane : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_9eca765a47180abb,
-              mid_init$_8a3775c012d81228,
-              mid_init$_7b8560643974313c,
-              mid_contains_7ccf3b3f40d5fcd3,
-              mid_copySelf_1fd0e17d0272ad27,
-              mid_emptyHyperplane_45d5677cf604b36e,
-              mid_getNormal_f88961cca75a2c0a,
-              mid_getOffset_6c5cc1f7d7387606,
-              mid_getOffset_cf1fec2b7b1c0efe,
-              mid_getOffset_b540ea36818b5810,
-              mid_getOrigin_f88961cca75a2c0a,
-              mid_getPointAt_a18591be60e2d678,
-              mid_getTolerance_557b8123390d8d0c,
-              mid_getU_f88961cca75a2c0a,
-              mid_getV_f88961cca75a2c0a,
-              mid_intersection_915d07ea0c621755,
-              mid_intersection_1adc2918a6a6e897,
-              mid_intersection_6cfbbc81cf155b3e,
-              mid_isSimilarTo_ba626117b2392f64,
-              mid_project_328d0d966eeb9668,
-              mid_reset_c6c929e9e9af7f84,
-              mid_reset_be9548a8a583a03d,
-              mid_revertSelf_0640e6acf969ed28,
-              mid_rotate_5aeea1a6b4a20ee8,
-              mid_sameOrientationAs_cb9274a363000a77,
-              mid_toSpace_78d94b5fd2b1ad0c,
-              mid_toSpace_5d6b94fad5d111c4,
-              mid_toSubSpace_52abee4ee839df65,
-              mid_toSubSpace_adc34d508fd7001c,
-              mid_translate_7bc527dfa6d63039,
-              mid_wholeHyperplane_45d5677cf604b36e,
-              mid_wholeSpace_fb1aab73a260a0e4,
+              mid_init$_4f2529905f184526,
+              mid_init$_4fbea8fa1cddeb2d,
+              mid_init$_0035d60a845c4ec5,
+              mid_contains_82d995e738c9e027,
+              mid_copySelf_b56871b2e706380d,
+              mid_emptyHyperplane_25ec594b320f384f,
+              mid_getNormal_8b724f8b4fdad1a2,
+              mid_getOffset_194128a9734e96f1,
+              mid_getOffset_f0dd8cb59ea09794,
+              mid_getOffset_2f915fa9762130df,
+              mid_getOrigin_8b724f8b4fdad1a2,
+              mid_getPointAt_a46843b09338a6b2,
+              mid_getTolerance_b74f83833fdad017,
+              mid_getU_8b724f8b4fdad1a2,
+              mid_getV_8b724f8b4fdad1a2,
+              mid_intersection_e47e722c2bd142aa,
+              mid_intersection_9a2d2d972a13926d,
+              mid_intersection_c1a28ed04e77e58a,
+              mid_isSimilarTo_0ce9611235040c3a,
+              mid_project_2214f7ad5b6ca158,
+              mid_reset_f1cc4a0d1d70e436,
+              mid_reset_b651b5ef96594ce8,
+              mid_revertSelf_a1fa5dae97ea5ed2,
+              mid_rotate_8cce0f7fbdd637a5,
+              mid_sameOrientationAs_806ecfbca1984226,
+              mid_toSpace_c015d3ffc61ff7f9,
+              mid_toSpace_e21381ba36e4ea13,
+              mid_toSubSpace_541d7608593f5738,
+              mid_toSubSpace_4f90fdb34b7d1107,
+              mid_translate_80ab4636868c985a,
+              mid_wholeHyperplane_25ec594b320f384f,
+              mid_wholeSpace_9d13f34dd62656fc,
               max_mid
             };
 

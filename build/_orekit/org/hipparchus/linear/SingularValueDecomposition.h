@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace linear {
-      class DecompositionSolver;
-      class RealMatrix;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
+      class DecompositionSolver;
+    }
   }
 }
 template<class T> class JArray;
@@ -25,19 +25,19 @@ namespace org {
       class SingularValueDecomposition : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_f3731847577f13e6,
-          mid_getConditionNumber_557b8123390d8d0c,
-          mid_getCovariance_e95e381257af03e9,
-          mid_getInverseConditionNumber_557b8123390d8d0c,
-          mid_getNorm_557b8123390d8d0c,
-          mid_getRank_412668abc8d889e9,
-          mid_getS_70a207fcbc031df2,
-          mid_getSingularValues_a53a7513ecedada2,
-          mid_getSolver_ccd666b17ae2e6eb,
-          mid_getU_70a207fcbc031df2,
-          mid_getUT_70a207fcbc031df2,
-          mid_getV_70a207fcbc031df2,
-          mid_getVT_70a207fcbc031df2,
+          mid_init$_84bd15e0995d0c79,
+          mid_getConditionNumber_b74f83833fdad017,
+          mid_getCovariance_f5dd9d6021dc9dae,
+          mid_getInverseConditionNumber_b74f83833fdad017,
+          mid_getNorm_b74f83833fdad017,
+          mid_getRank_55546ef6a647f39b,
+          mid_getS_f77d745f2128c391,
+          mid_getSingularValues_25e1757a36c4dde2,
+          mid_getSolver_5823fb909376de2c,
+          mid_getU_f77d745f2128c391,
+          mid_getUT_f77d745f2128c391,
+          mid_getV_f77d745f2128c391,
+          mid_getVT_f77d745f2128c391,
           max_mid
         };
 

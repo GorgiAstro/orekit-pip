@@ -25,8 +25,8 @@ namespace org {
       class PropagationType : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_25b190766836d732,
-          mid_values_c7e1b07703a6d148,
+          mid_valueOf_c82481982cc2f4b7,
+          mid_values_387f389f53924998,
           max_mid
         };
 

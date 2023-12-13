@@ -8,14 +8,21 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
     class CalculusFieldElement;
   }
   namespace orekit {
+    namespace models {
+      namespace earth {
+        namespace atmosphere {
+          class Atmosphere;
+        }
+      }
+    }
     namespace time {
       class FieldAbsoluteDate;
       class AbsoluteDate;
@@ -23,18 +30,11 @@ namespace org {
     namespace utils {
       class PVCoordinatesProvider;
     }
-    namespace frames {
-      class Frame;
-    }
     namespace bodies {
       class OneAxisEllipsoid;
     }
-    namespace models {
-      namespace earth {
-        namespace atmosphere {
-          class Atmosphere;
-        }
-      }
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -54,18 +54,18 @@ namespace org {
           class HarrisPriester : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_ba2837ebacb842b1,
-              mid_init$_b65c475fba40cde4,
-              mid_init$_e522dd141110feeb,
-              mid_init$_2852904c6199ecb5,
-              mid_getDensity_b464f829e6652655,
-              mid_getDensity_80610bac160dfa0e,
-              mid_getDensity_57dd506d2d9ba196,
-              mid_getDensity_818999d9e7960fd1,
-              mid_getFrame_6c9bc0a928c56d4e,
-              mid_getMaxAlt_557b8123390d8d0c,
-              mid_getMinAlt_557b8123390d8d0c,
-              mid_getTabDensity_8cf5267aa13a77f3,
+              mid_init$_d5c8b1824fbf91f0,
+              mid_init$_230a9059691aacfa,
+              mid_init$_d475a351bb1fadbf,
+              mid_init$_c2d4d65daa179eba,
+              mid_getDensity_b71939b8275fb620,
+              mid_getDensity_4d0eb4d30dbd9ad9,
+              mid_getDensity_58866e32a1c9318b,
+              mid_getDensity_e9a4fc2340b58984,
+              mid_getFrame_2c51111cc6894ba1,
+              mid_getMaxAlt_b74f83833fdad017,
+              mid_getMinAlt_b74f83833fdad017,
+              mid_getTabDensity_3b7b373db8e7887f,
               max_mid
             };
 

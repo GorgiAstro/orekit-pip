@@ -33,14 +33,14 @@ namespace org {
           class SphericalCoordinates : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_2810d2bec90e7b1c,
-              mid_init$_87096e3fd8086100,
-              mid_getCartesian_f88961cca75a2c0a,
-              mid_getPhi_557b8123390d8d0c,
-              mid_getR_557b8123390d8d0c,
-              mid_getTheta_557b8123390d8d0c,
-              mid_toCartesianGradient_1db7c087750eaffe,
-              mid_toCartesianHessian_31bf75c889c32990,
+              mid_init$_1844f891addbac57,
+              mid_init$_b5167f35b2521627,
+              mid_getCartesian_8b724f8b4fdad1a2,
+              mid_getPhi_b74f83833fdad017,
+              mid_getR_b74f83833fdad017,
+              mid_getTheta_b74f83833fdad017,
+              mid_toCartesianGradient_14dee4cb8cc3e959,
+              mid_toCartesianHessian_2ab9ee924fc53a1e,
               max_mid
             };
 

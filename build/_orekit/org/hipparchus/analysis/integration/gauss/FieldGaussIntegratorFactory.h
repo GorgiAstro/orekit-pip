@@ -8,6 +8,8 @@ namespace org {
     namespace exception {
       class MathIllegalArgumentException;
     }
+    class Field;
+    class CalculusFieldElement;
     namespace analysis {
       namespace integration {
         namespace gauss {
@@ -16,8 +18,6 @@ namespace org {
         }
       }
     }
-    class CalculusFieldElement;
-    class Field;
   }
 }
 namespace java {
@@ -36,11 +36,11 @@ namespace org {
           class FieldGaussIntegratorFactory : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_979ae7f57a96b096,
-              mid_hermite_1add97ebd5646b46,
-              mid_laguerre_38b31531f10ee94c,
-              mid_legendre_38b31531f10ee94c,
-              mid_legendre_50eeb305783de1a7,
+              mid_init$_02ab84aa7626616d,
+              mid_hermite_59323a8d3768d228,
+              mid_laguerre_870530ab01549db9,
+              mid_legendre_870530ab01549db9,
+              mid_legendre_2a386e29451ec796,
               max_mid
             };
 

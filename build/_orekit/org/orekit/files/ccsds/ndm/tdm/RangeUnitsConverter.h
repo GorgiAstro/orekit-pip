@@ -36,8 +36,8 @@ namespace org {
             class RangeUnitsConverter : public ::java::lang::Object {
              public:
               enum {
-                mid_metersToRu_5e4513d7d070fbb0,
-                mid_ruToMeters_5e4513d7d070fbb0,
+                mid_metersToRu_382e9a92dc257319,
+                mid_ruToMeters_382e9a92dc257319,
                 max_mid
               };
 

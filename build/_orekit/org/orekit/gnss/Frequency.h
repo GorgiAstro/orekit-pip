@@ -3,18 +3,18 @@
 
 #include "java/lang/Enum.h"
 
+namespace org {
+  namespace orekit {
+    namespace gnss {
+      class Frequency;
+      class SatelliteSystem;
+    }
+  }
+}
 namespace java {
   namespace lang {
     class String;
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace gnss {
-      class SatelliteSystem;
-      class Frequency;
-    }
   }
 }
 template<class T> class JArray;
@@ -26,13 +26,13 @@ namespace org {
       class Frequency : public ::java::lang::Enum {
        public:
         enum {
-          mid_getMHzFrequency_557b8123390d8d0c,
-          mid_getName_3cffd47377eca18a,
-          mid_getRatio_557b8123390d8d0c,
-          mid_getSatelliteSystem_8b86408cc2633961,
-          mid_getWavelength_557b8123390d8d0c,
-          mid_valueOf_f9a1573446bcb1a9,
-          mid_values_196803915cb3dc3b,
+          mid_getMHzFrequency_b74f83833fdad017,
+          mid_getName_1c1fa1e935d6cdcf,
+          mid_getRatio_b74f83833fdad017,
+          mid_getSatelliteSystem_21bd759cc4a81606,
+          mid_getWavelength_b74f83833fdad017,
+          mid_valueOf_572e5211bb5806db,
+          mid_values_5ed00b86a3a6d446,
           max_mid
         };
 

@@ -13,31 +13,31 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
-    }
-    namespace bodies {
-      class GeodeticPoint;
-      class FieldGeodeticPoint;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-      class TimeScale;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace frames {
-      class TopocentricFrame;
-    }
     namespace models {
       namespace earth {
         namespace ionosphere {
           class IonosphericModel;
         }
       }
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+      class AbsoluteDate;
+      class TimeScale;
+    }
+    namespace bodies {
+      class FieldGeodeticPoint;
+      class GeodeticPoint;
+    }
+    namespace frames {
+      class TopocentricFrame;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
     }
   }
   namespace hipparchus {
@@ -55,13 +55,13 @@ namespace org {
           class NeQuickModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_cc18240f4a737f14,
-              mid_init$_dbb457b725e3379e,
-              mid_getParametersDrivers_0d9551367f7ecdef,
-              mid_pathDelay_e09499dc3d690830,
-              mid_pathDelay_8fbdb07bb0b935f0,
-              mid_stec_680ec225edbd0868,
-              mid_stec_65692c27b4e040bd,
+              mid_init$_ab69da052b88f50c,
+              mid_init$_ab209154e092923e,
+              mid_getParametersDrivers_e62d3bb06d56d7e3,
+              mid_pathDelay_5e4bace87c721642,
+              mid_pathDelay_0c51f26f37c66719,
+              mid_stec_169e6417d6979e44,
+              mid_stec_261047037e884cea,
               max_mid
             };
 

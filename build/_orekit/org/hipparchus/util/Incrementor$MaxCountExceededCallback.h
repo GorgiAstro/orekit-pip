@@ -24,7 +24,7 @@ namespace org {
       class Incrementor$MaxCountExceededCallback : public ::java::lang::Object {
        public:
         enum {
-          mid_trigger_a3da1a935cb37f7b,
+          mid_trigger_44ed599e93e8a30c,
           max_mid
         };
 

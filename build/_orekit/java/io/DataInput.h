@@ -4,12 +4,12 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace io {
-    class IOException;
-  }
   namespace lang {
     class String;
     class Class;
+  }
+  namespace io {
+    class IOException;
   }
 }
 template<class T> class JArray;
@@ -20,21 +20,21 @@ namespace java {
     class DataInput : public ::java::lang::Object {
      public:
       enum {
-        mid_readBoolean_89b302893bdbe1f1,
-        mid_readByte_acadfed42a0dbd0d,
-        mid_readChar_d156d1ce330f6993,
-        mid_readDouble_557b8123390d8d0c,
-        mid_readFloat_04fe014f7609dc26,
-        mid_readFully_d759c70c6670fd89,
-        mid_readFully_ac782c7077255dd3,
-        mid_readInt_412668abc8d889e9,
-        mid_readLine_3cffd47377eca18a,
-        mid_readLong_9e26256fb0d384a2,
-        mid_readShort_2554afc868a7ba2a,
-        mid_readUTF_3cffd47377eca18a,
-        mid_readUnsignedByte_412668abc8d889e9,
-        mid_readUnsignedShort_412668abc8d889e9,
-        mid_skipBytes_0092017e99012694,
+        mid_readBoolean_9ab94ac1dc23b105,
+        mid_readByte_82ba37184c5152a3,
+        mid_readChar_5e2f8fc4d7c03fbd,
+        mid_readDouble_b74f83833fdad017,
+        mid_readFloat_1fb1bf0772ae5db7,
+        mid_readFully_459771b03534868e,
+        mid_readFully_a9fddc59b07ce512,
+        mid_readInt_55546ef6a647f39b,
+        mid_readLine_1c1fa1e935d6cdcf,
+        mid_readLong_6c0ce7e438e5ded4,
+        mid_readShort_02a2271f89f4492b,
+        mid_readUTF_1c1fa1e935d6cdcf,
+        mid_readUnsignedByte_55546ef6a647f39b,
+        mid_readUnsignedShort_55546ef6a647f39b,
+        mid_skipBytes_0e7cf35192c3effe,
         max_mid
       };
 

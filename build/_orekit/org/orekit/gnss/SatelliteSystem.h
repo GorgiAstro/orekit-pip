@@ -29,12 +29,12 @@ namespace org {
       class SatelliteSystem : public ::java::lang::Enum {
        public:
         enum {
-          mid_getKey_d156d1ce330f6993,
-          mid_getObservationTimeScale_31010a40d5712240,
-          mid_parseSatelliteSystem_b7e1b4a14c398762,
-          mid_parseSatelliteSystemWithGPSDefault_b7e1b4a14c398762,
-          mid_valueOf_b7e1b4a14c398762,
-          mid_values_998ced82a595eb30,
+          mid_getKey_5e2f8fc4d7c03fbd,
+          mid_getObservationTimeScale_5d38f72c5e775c9f,
+          mid_parseSatelliteSystem_7a28fea3a0cdf75b,
+          mid_parseSatelliteSystemWithGPSDefault_7a28fea3a0cdf75b,
+          mid_valueOf_7a28fea3a0cdf75b,
+          mid_values_c7603d4d5e059202,
           max_mid
         };
 

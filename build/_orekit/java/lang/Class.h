@@ -5,13 +5,13 @@
 
 namespace java {
   namespace lang {
-    class SecurityException;
     class InstantiationException;
     class IllegalAccessException;
+    class ClassNotFoundException;
+    class Package;
+    class SecurityException;
     class Module;
     class Class;
-    class Package;
-    class ClassNotFoundException;
     class String;
     class ClassLoader;
   }
@@ -31,49 +31,49 @@ namespace java {
     class Class : public ::java::lang::Object {
      public:
       enum {
-        mid_asSubclass_c1bd0f9c0c5cc3c8,
-        mid_cast_65d69db95c5eb156,
-        mid_desiredAssertionStatus_89b302893bdbe1f1,
-        mid_forName_33271d9fced271c1,
-        mid_forName_3eb86302ebf8d401,
-        mid_forName_71c1e5b35d89d3a9,
-        mid_getCanonicalName_3cffd47377eca18a,
-        mid_getClassLoader_822bf82dfc5992ba,
-        mid_getClasses_c988485cdace3d64,
-        mid_getComponentType_d4b191ff8147475d,
-        mid_getDeclaredClasses_c988485cdace3d64,
-        mid_getDeclaringClass_d4b191ff8147475d,
-        mid_getEnclosingClass_d4b191ff8147475d,
-        mid_getEnumConstants_6555a5198c71b73a,
-        mid_getInterfaces_c988485cdace3d64,
-        mid_getModifiers_412668abc8d889e9,
-        mid_getModule_04458a8861f7bacc,
-        mid_getName_3cffd47377eca18a,
-        mid_getNestHost_d4b191ff8147475d,
-        mid_getNestMembers_c988485cdace3d64,
-        mid_getPackage_2272e6eee5532c62,
-        mid_getPackageName_3cffd47377eca18a,
-        mid_getResource_b738586de9814931,
-        mid_getResourceAsStream_425095ef57e6735b,
-        mid_getSigners_6555a5198c71b73a,
-        mid_getSimpleName_3cffd47377eca18a,
-        mid_getSuperclass_d4b191ff8147475d,
-        mid_getTypeName_3cffd47377eca18a,
-        mid_isAnnotation_89b302893bdbe1f1,
-        mid_isAnonymousClass_89b302893bdbe1f1,
-        mid_isArray_89b302893bdbe1f1,
-        mid_isAssignableFrom_0580a8a10aabb274,
-        mid_isEnum_89b302893bdbe1f1,
-        mid_isInstance_221e8e85cb385209,
-        mid_isInterface_89b302893bdbe1f1,
-        mid_isLocalClass_89b302893bdbe1f1,
-        mid_isMemberClass_89b302893bdbe1f1,
-        mid_isNestmateOf_0580a8a10aabb274,
-        mid_isPrimitive_89b302893bdbe1f1,
-        mid_isSynthetic_89b302893bdbe1f1,
-        mid_newInstance_e661fe3ba2fafb22,
-        mid_toGenericString_3cffd47377eca18a,
-        mid_toString_3cffd47377eca18a,
+        mid_asSubclass_8796c3559c3e2023,
+        mid_cast_5804c890f94a02b6,
+        mid_desiredAssertionStatus_9ab94ac1dc23b105,
+        mid_forName_19d7740902dbd288,
+        mid_forName_914052f7ac73009e,
+        mid_forName_17a93706411190d2,
+        mid_getCanonicalName_1c1fa1e935d6cdcf,
+        mid_getClassLoader_fb951be34fc77929,
+        mid_getClasses_5aec5e13d1a5cd63,
+        mid_getComponentType_1aeb0737a960d371,
+        mid_getDeclaredClasses_5aec5e13d1a5cd63,
+        mid_getDeclaringClass_1aeb0737a960d371,
+        mid_getEnclosingClass_1aeb0737a960d371,
+        mid_getEnumConstants_24e2edd6319f4c5a,
+        mid_getInterfaces_5aec5e13d1a5cd63,
+        mid_getModifiers_55546ef6a647f39b,
+        mid_getModule_a1af2f56cbb446b6,
+        mid_getName_1c1fa1e935d6cdcf,
+        mid_getNestHost_1aeb0737a960d371,
+        mid_getNestMembers_5aec5e13d1a5cd63,
+        mid_getPackage_3638481b62f070b2,
+        mid_getPackageName_1c1fa1e935d6cdcf,
+        mid_getResource_4872b6a8d8971899,
+        mid_getResourceAsStream_6831515bfd9973e1,
+        mid_getSigners_24e2edd6319f4c5a,
+        mid_getSimpleName_1c1fa1e935d6cdcf,
+        mid_getSuperclass_1aeb0737a960d371,
+        mid_getTypeName_1c1fa1e935d6cdcf,
+        mid_isAnnotation_9ab94ac1dc23b105,
+        mid_isAnonymousClass_9ab94ac1dc23b105,
+        mid_isArray_9ab94ac1dc23b105,
+        mid_isAssignableFrom_a24f4963f111aa48,
+        mid_isEnum_9ab94ac1dc23b105,
+        mid_isInstance_460c5e2d9d51c6cc,
+        mid_isInterface_9ab94ac1dc23b105,
+        mid_isLocalClass_9ab94ac1dc23b105,
+        mid_isMemberClass_9ab94ac1dc23b105,
+        mid_isNestmateOf_a24f4963f111aa48,
+        mid_isPrimitive_9ab94ac1dc23b105,
+        mid_isSynthetic_9ab94ac1dc23b105,
+        mid_newInstance_541690f9ee81d3ad,
+        mid_toGenericString_1c1fa1e935d6cdcf,
+        mid_toString_1c1fa1e935d6cdcf,
         max_mid
       };
 

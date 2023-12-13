@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldVector3D;
           class Vector3D;
+          class FieldVector3D;
         }
       }
     }
@@ -21,18 +21,18 @@ namespace org {
   }
   namespace orekit {
     namespace rugged {
-      namespace los {
-        class LOSTransform;
-      }
       namespace utils {
         class DerivativeGenerator;
       }
-    }
-    namespace utils {
-      class ParameterDriver;
+      namespace los {
+        class LOSTransform;
+      }
     }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
 }
@@ -57,11 +57,11 @@ namespace org {
         class PolynomialRotation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7a08d7c8afe9826d,
-            mid_init$_1bc215ef4b343331,
-            mid_getParametersDrivers_d7cce92225eb0db2,
-            mid_transformLOS_193bcb23df54ca95,
-            mid_transformLOS_da5b61aadada7c1f,
+            mid_init$_55952f809071fe32,
+            mid_init$_35036eebee87138e,
+            mid_getParametersDrivers_14e21bf777ff0ccf,
+            mid_transformLOS_355979cbd37ce923,
+            mid_transformLOS_d764ada7ab62136f,
             max_mid
           };
 

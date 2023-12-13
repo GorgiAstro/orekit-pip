@@ -3,6 +3,18 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace time {
+      class TimeScales;
+    }
+    namespace files {
+      namespace sp3 {
+        class SP3;
+      }
+    }
+  }
+}
 namespace java {
   namespace io {
     class IOException;
@@ -11,18 +23,6 @@ namespace java {
     class Appendable;
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace sp3 {
-        class SP3;
-      }
-    }
-    namespace time {
-      class TimeScales;
-    }
   }
 }
 template<class T> class JArray;
@@ -35,8 +35,8 @@ namespace org {
         class SP3Writer : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7db31472897430b1,
-            mid_write_5e3a00a527a3c075,
+            mid_init$_4a8a93da906aeadb,
+            mid_write_3350f7bf9bffa448,
             max_mid
           };
 

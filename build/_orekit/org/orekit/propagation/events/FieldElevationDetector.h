@@ -5,25 +5,25 @@
 
 namespace org {
   namespace orekit {
+    namespace models {
+      class AtmosphericRefractionModel;
+    }
     namespace propagation {
-      class FieldSpacecraftState;
       namespace events {
         class FieldElevationDetector;
       }
-    }
-    namespace utils {
-      class ElevationMask;
+      class FieldSpacecraftState;
     }
     namespace frames {
       class TopocentricFrame;
     }
-    namespace models {
-      class AtmosphericRefractionModel;
+    namespace utils {
+      class ElevationMask;
     }
   }
   namespace hipparchus {
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -41,17 +41,17 @@ namespace org {
         class FieldElevationDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_5ad0e9bb8a1deb62,
-            mid_init$_d8af0e993415b2eb,
-            mid_g_de1c2d709eb2829c,
-            mid_getElevationMask_d8e21ec66d7f6ed7,
-            mid_getMinElevation_557b8123390d8d0c,
-            mid_getRefractionModel_9124ab694682a769,
-            mid_getTopocentricFrame_2bb3e750d93d59cc,
-            mid_withConstantElevation_b9a578648b0acaab,
-            mid_withElevationMask_7455425acfa093e7,
-            mid_withRefraction_8bb5322c8d1891db,
-            mid_create_27ce6ca4fbdc0588,
+            mid_init$_c973085a7c4e0fab,
+            mid_init$_8f6abd8bda6d7bf0,
+            mid_g_2203631097e94c79,
+            mid_getElevationMask_ff9e909fac3867c7,
+            mid_getMinElevation_b74f83833fdad017,
+            mid_getRefractionModel_27f78fdf143ae88f,
+            mid_getTopocentricFrame_c2b113ddceb69262,
+            mid_withConstantElevation_fa443b12dce07dda,
+            mid_withElevationMask_4169e22902c46375,
+            mid_withRefraction_29e4a87242e1e2b4,
+            mid_create_2e347afec08846f1,
             max_mid
           };
 

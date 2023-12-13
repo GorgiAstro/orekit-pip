@@ -5,16 +5,16 @@
 
 namespace java {
   namespace text {
+    class FieldPosition;
     class ParsePosition;
     class NumberFormat;
-    class FieldPosition;
   }
   namespace util {
     class Locale;
   }
   namespace lang {
-    class Class;
     class StringBuffer;
+    class Class;
     class String;
   }
 }
@@ -35,24 +35,24 @@ namespace org {
       class RealMatrixFormat : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_init$_d53859bd7ba1b247,
-          mid_init$_7ef3cb05fa691170,
-          mid_init$_27cbbcdef5ceb319,
-          mid_format_d9d9257bc38f92d9,
-          mid_format_f5a59753aa65c5c2,
-          mid_getAvailableLocales_85ff0d07ca843902,
-          mid_getColumnSeparator_3cffd47377eca18a,
-          mid_getFormat_001645e916bd626d,
-          mid_getPrefix_3cffd47377eca18a,
-          mid_getRealMatrixFormat_585ececd2b2dc96d,
-          mid_getRealMatrixFormat_9305d502db00d8a7,
-          mid_getRowPrefix_3cffd47377eca18a,
-          mid_getRowSeparator_3cffd47377eca18a,
-          mid_getRowSuffix_3cffd47377eca18a,
-          mid_getSuffix_3cffd47377eca18a,
-          mid_parse_f40bf79e7cf80d97,
-          mid_parse_89d35fd76436d8a2,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_init$_b7f3d50b51ef7518,
+          mid_init$_e39b9463875d2aea,
+          mid_init$_c96fc87aa2f40e42,
+          mid_format_51220323ff2ddb56,
+          mid_format_b0b951c748fccbee,
+          mid_getAvailableLocales_8d2cd0b971cc7b85,
+          mid_getColumnSeparator_1c1fa1e935d6cdcf,
+          mid_getFormat_87ffffc449cd25a5,
+          mid_getPrefix_1c1fa1e935d6cdcf,
+          mid_getRealMatrixFormat_45ea15869ae5e87f,
+          mid_getRealMatrixFormat_1a7724022b3f9dd3,
+          mid_getRowPrefix_1c1fa1e935d6cdcf,
+          mid_getRowSeparator_1c1fa1e935d6cdcf,
+          mid_getRowSuffix_1c1fa1e935d6cdcf,
+          mid_getSuffix_1c1fa1e935d6cdcf,
+          mid_parse_6473eeaad285ae36,
+          mid_parse_ed9629889638c09b,
           max_mid
         };
 

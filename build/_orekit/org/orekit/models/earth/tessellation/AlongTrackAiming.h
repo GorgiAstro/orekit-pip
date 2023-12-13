@@ -3,31 +3,7 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
-  namespace orekit {
-    namespace models {
-      namespace earth {
-        namespace tessellation {
-          class TileAiming;
-        }
-      }
-    }
-    namespace bodies {
-      class GeodeticPoint;
-      class OneAxisEllipsoid;
-    }
-    namespace orbits {
-      class Orbit;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -36,6 +12,30 @@ namespace org {
         }
       }
     }
+  }
+  namespace orekit {
+    namespace bodies {
+      class OneAxisEllipsoid;
+      class GeodeticPoint;
+    }
+    namespace orbits {
+      class Orbit;
+    }
+    namespace models {
+      namespace earth {
+        namespace tessellation {
+          class TileAiming;
+        }
+      }
+    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -49,9 +49,9 @@ namespace org {
           class AlongTrackAiming : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_fd61481c6ffa4d1e,
-              mid_alongTileDirection_94d0bf825c02adfa,
-              mid_getSingularPoints_0d9551367f7ecdef,
+              mid_init$_528c9375c20215da,
+              mid_alongTileDirection_636e2b82319b8646,
+              mid_getSingularPoints_e62d3bb06d56d7e3,
               max_mid
             };
 

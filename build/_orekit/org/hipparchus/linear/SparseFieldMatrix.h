@@ -5,6 +5,7 @@
 
 namespace org {
   namespace hipparchus {
+    class Field;
     class FieldElement;
     namespace exception {
       class MathIllegalArgumentException;
@@ -12,7 +13,6 @@ namespace org {
     namespace linear {
       class FieldMatrix;
     }
-    class Field;
   }
 }
 namespace java {
@@ -29,19 +29,19 @@ namespace org {
       class SparseFieldMatrix : public ::org::hipparchus::linear::AbstractFieldMatrix {
        public:
         enum {
-          mid_init$_979ae7f57a96b096,
-          mid_init$_33e6ddbf6bb140a5,
-          mid_init$_a9ccb012d4cb48bd,
-          mid_addToEntry_a6d8caed839ba827,
-          mid_copy_1d6b27621d7bea96,
-          mid_createMatrix_f57999d9fe0fa8c7,
-          mid_getColumnDimension_412668abc8d889e9,
-          mid_getEntry_a7f16df0741fd579,
-          mid_getRowDimension_412668abc8d889e9,
-          mid_multiplyEntry_a6d8caed839ba827,
-          mid_multiplyTransposed_60dc3401cb1a0936,
-          mid_setEntry_a6d8caed839ba827,
-          mid_transposeMultiply_60dc3401cb1a0936,
+          mid_init$_02ab84aa7626616d,
+          mid_init$_3c04247304967ec8,
+          mid_init$_b6c946d1cbf160f0,
+          mid_addToEntry_c2695120fce254e7,
+          mid_copy_81d49643ce3a3c0b,
+          mid_createMatrix_add2e370542edc2f,
+          mid_getColumnDimension_55546ef6a647f39b,
+          mid_getEntry_d0f2803baa5859d6,
+          mid_getRowDimension_55546ef6a647f39b,
+          mid_multiplyEntry_c2695120fce254e7,
+          mid_multiplyTransposed_e74c5d5fdc2ea025,
+          mid_setEntry_c2695120fce254e7,
+          mid_transposeMultiply_e74c5d5fdc2ea025,
           max_mid
         };
 

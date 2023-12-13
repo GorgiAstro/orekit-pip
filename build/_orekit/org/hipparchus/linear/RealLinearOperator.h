@@ -11,11 +11,11 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace linear {
-      class RealVector;
-    }
     namespace exception {
       class MathIllegalArgumentException;
+    }
+    namespace linear {
+      class RealVector;
     }
   }
 }
@@ -28,11 +28,11 @@ namespace org {
       class RealLinearOperator : public ::java::lang::Object {
        public:
         enum {
-          mid_getColumnDimension_412668abc8d889e9,
-          mid_getRowDimension_412668abc8d889e9,
-          mid_isTransposable_89b302893bdbe1f1,
-          mid_operate_342d5b01463e0dc5,
-          mid_operateTranspose_342d5b01463e0dc5,
+          mid_getColumnDimension_55546ef6a647f39b,
+          mid_getRowDimension_55546ef6a647f39b,
+          mid_isTransposable_9ab94ac1dc23b105,
+          mid_operate_d5f1d017fd25113b,
+          mid_operateTranspose_d5f1d017fd25113b,
           max_mid
         };
 

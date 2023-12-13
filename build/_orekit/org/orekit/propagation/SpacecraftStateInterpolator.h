@@ -5,17 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace attitudes {
-      class Attitude;
-    }
     namespace time {
-      class TimeInterpolator;
+      class TimeStamped;
       class TimeStampedDouble;
       class AbsoluteDate;
-      class TimeStamped;
-    }
-    namespace frames {
-      class Frame;
+      class TimeInterpolator;
     }
     namespace utils {
       class AbsolutePVCoordinates;
@@ -25,8 +19,14 @@ namespace org {
     namespace orbits {
       class Orbit;
     }
+    namespace frames {
+      class Frame;
+    }
     namespace propagation {
       class SpacecraftState;
+    }
+    namespace attitudes {
+      class Attitude;
     }
   }
 }
@@ -49,24 +49,24 @@ namespace org {
       class SpacecraftStateInterpolator : public ::org::orekit::time::AbstractTimeInterpolator {
        public:
         enum {
-          mid_init$_535d1f91a93c8b4d,
-          mid_init$_03d00ffd0ee81fe0,
-          mid_init$_e69fe3991d4122f6,
-          mid_init$_3eb98fb434e9f71a,
-          mid_init$_93057eaba5c5145b,
-          mid_init$_046c155e813ab99f,
-          mid_checkSampleAndInterpolatorConsistency_9f392c0fc938feab,
-          mid_checkStatesDefinitionsConsistency_4ccaedadb068bdeb,
-          mid_getAbsPVAInterpolator_d0ccac9b4c6bdd55,
-          mid_getAdditionalStateInterpolator_d0ccac9b4c6bdd55,
-          mid_getAttitudeInterpolator_d0ccac9b4c6bdd55,
-          mid_getMassInterpolator_d0ccac9b4c6bdd55,
-          mid_getNbInterpolationPoints_412668abc8d889e9,
-          mid_getOrbitInterpolator_d0ccac9b4c6bdd55,
-          mid_getOutputFrame_6c9bc0a928c56d4e,
-          mid_getSubInterpolators_0d9551367f7ecdef,
-          mid_interpolate_a72036e732076565,
-          mid_interpolate_a8fed498836089d5,
+          mid_init$_237ae1c2ddd68062,
+          mid_init$_92e0516c51076c2f,
+          mid_init$_9fa6786ed88e4116,
+          mid_init$_9188826e4203adb2,
+          mid_init$_4e698ca934323ab9,
+          mid_init$_47a06a543038ccdd,
+          mid_checkSampleAndInterpolatorConsistency_175e0bdab326549a,
+          mid_checkStatesDefinitionsConsistency_0e7c3032c7c93ed3,
+          mid_getAbsPVAInterpolator_9fe5189c8c3b230d,
+          mid_getAdditionalStateInterpolator_9fe5189c8c3b230d,
+          mid_getAttitudeInterpolator_9fe5189c8c3b230d,
+          mid_getMassInterpolator_9fe5189c8c3b230d,
+          mid_getNbInterpolationPoints_55546ef6a647f39b,
+          mid_getOrbitInterpolator_9fe5189c8c3b230d,
+          mid_getOutputFrame_2c51111cc6894ba1,
+          mid_getSubInterpolators_e62d3bb06d56d7e3,
+          mid_interpolate_96a2305a7aa752cc,
+          mid_interpolate_5f913ee7dc803ec0,
           max_mid
         };
 

@@ -5,16 +5,16 @@
 
 namespace java {
   namespace text {
+    class FieldPosition;
     class ParsePosition;
     class NumberFormat;
-    class FieldPosition;
   }
   namespace util {
     class Locale;
   }
   namespace lang {
-    class Class;
     class StringBuffer;
+    class Class;
     class Object;
     class String;
   }
@@ -22,8 +22,8 @@ namespace java {
 namespace org {
   namespace hipparchus {
     namespace fraction {
-      class BigFraction;
       class BigFractionFormat;
+      class BigFraction;
     }
     namespace exception {
       class MathIllegalStateException;
@@ -39,20 +39,20 @@ namespace org {
       class BigFractionFormat : public ::org::hipparchus::fraction::AbstractFormat {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_init$_d53859bd7ba1b247,
-          mid_init$_3190c52142e043eb,
-          mid_format_c2b55dec3da6da3b,
-          mid_format_60ec49fc2ad8aa0e,
-          mid_formatBigFraction_2ba58cfcdb4d7c4d,
-          mid_getAvailableLocales_85ff0d07ca843902,
-          mid_getImproperInstance_c6caa9e9613ff5ca,
-          mid_getImproperInstance_f9a33f8d0aaa98e2,
-          mid_getProperInstance_c6caa9e9613ff5ca,
-          mid_getProperInstance_f9a33f8d0aaa98e2,
-          mid_parse_b376adea91da912d,
-          mid_parse_38d74adaa6fcd6d8,
-          mid_parseNextBigInteger_4b48e273de83bda2,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_init$_b7f3d50b51ef7518,
+          mid_init$_a87510accfde9c74,
+          mid_format_face461ae8942182,
+          mid_format_b972afa1d89f0ad4,
+          mid_formatBigFraction_f2a5a6219e7b12b7,
+          mid_getAvailableLocales_8d2cd0b971cc7b85,
+          mid_getImproperInstance_8c1c73722be22f6f,
+          mid_getImproperInstance_988fa2a63a10ed31,
+          mid_getProperInstance_8c1c73722be22f6f,
+          mid_getProperInstance_988fa2a63a10ed31,
+          mid_parse_77110530074039ea,
+          mid_parse_9c54536a71758022,
+          mid_parseNextBigInteger_01d91a5ef6747752,
           max_mid
         };
 

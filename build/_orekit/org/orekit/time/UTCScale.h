@@ -6,12 +6,12 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class DateComponents;
-      class FieldAbsoluteDate;
-      class TimeComponents;
-      class OffsetModel;
-      class AbsoluteDate;
       class UTCTAIOffset;
+      class FieldAbsoluteDate;
+      class OffsetModel;
+      class DateComponents;
+      class AbsoluteDate;
+      class TimeComponents;
       class TimeScale;
     }
   }
@@ -38,21 +38,21 @@ namespace org {
       class UTCScale : public ::java::lang::Object {
        public:
         enum {
-          mid_getBaseOffsets_12ee61573a18f417,
-          mid_getFirstKnownLeapSecond_7a97f7e149e79afb,
-          mid_getLastKnownLeapSecond_7a97f7e149e79afb,
-          mid_getLeap_b0b988f941da47d8,
-          mid_getLeap_b884068a2c99f6ca,
-          mid_getName_3cffd47377eca18a,
-          mid_getUTCTAIOffsets_0d9551367f7ecdef,
-          mid_insideLeap_981023bfa4a8a093,
-          mid_insideLeap_f02ea951706eaf64,
-          mid_minuteDuration_7488878b3477b7fd,
-          mid_minuteDuration_2c4b5d48930cdcbe,
-          mid_offsetFromTAI_b0b988f941da47d8,
-          mid_offsetFromTAI_b884068a2c99f6ca,
-          mid_offsetToTAI_e4171ab80e571373,
-          mid_toString_3cffd47377eca18a,
+          mid_getBaseOffsets_cb666ea1a15f5210,
+          mid_getFirstKnownLeapSecond_c325492395d89b24,
+          mid_getLastKnownLeapSecond_c325492395d89b24,
+          mid_getLeap_fd347811007a6ba3,
+          mid_getLeap_140b8964300ddedf,
+          mid_getName_1c1fa1e935d6cdcf,
+          mid_getUTCTAIOffsets_e62d3bb06d56d7e3,
+          mid_insideLeap_a35647bda2901f54,
+          mid_insideLeap_42be643fd1505244,
+          mid_minuteDuration_b977b1a10a6965aa,
+          mid_minuteDuration_e6b8e60343f2c829,
+          mid_offsetFromTAI_fd347811007a6ba3,
+          mid_offsetFromTAI_140b8964300ddedf,
+          mid_offsetToTAI_e7a49f02c43fd893,
+          mid_toString_1c1fa1e935d6cdcf,
           max_mid
         };
 

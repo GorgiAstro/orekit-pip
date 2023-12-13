@@ -5,12 +5,12 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      class FieldSpacecraftState;
-      class FieldAdditionalStateProvider;
-    }
     namespace time {
       class FieldAbsoluteDate;
+    }
+    namespace propagation {
+      class FieldAdditionalStateProvider;
+      class FieldSpacecraftState;
     }
   }
   namespace hipparchus {
@@ -33,16 +33,16 @@ namespace org {
       class PythonFieldAdditionalStateProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0640e6acf969ed28,
-          mid_finalize_0640e6acf969ed28,
-          mid_getAdditionalState_00d4758be4cee3ce,
-          mid_getName_3cffd47377eca18a,
-          mid_init_811e49dad2467b67,
-          mid_pythonDecRef_0640e6acf969ed28,
-          mid_pythonExtension_9e26256fb0d384a2,
-          mid_pythonExtension_3cd6a6b354c6aa22,
-          mid_yield_4fda3059ab91dbfe,
-          mid_yield__4fda3059ab91dbfe,
+          mid_init$_a1fa5dae97ea5ed2,
+          mid_finalize_a1fa5dae97ea5ed2,
+          mid_getAdditionalState_eaf6bc2191c5b1b4,
+          mid_getName_1c1fa1e935d6cdcf,
+          mid_init_96d019f392abf918,
+          mid_pythonDecRef_a1fa5dae97ea5ed2,
+          mid_pythonExtension_6c0ce7e438e5ded4,
+          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_yield_e6d9e841ca2e035c,
+          mid_yield__e6d9e841ca2e035c,
           max_mid
         };
 

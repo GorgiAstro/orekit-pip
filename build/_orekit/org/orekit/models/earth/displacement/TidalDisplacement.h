@@ -4,13 +4,22 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace data {
       class BodiesElements;
     }
     namespace utils {
-      class PVCoordinatesProvider;
       class IERSConventions;
+      class PVCoordinatesProvider;
     }
     namespace frames {
       class Frame;
@@ -19,15 +28,6 @@ namespace org {
       namespace earth {
         namespace displacement {
           class StationDisplacement;
-        }
-      }
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
         }
       }
     }
@@ -49,8 +49,8 @@ namespace org {
           class TidalDisplacement : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_c8975a7ccf324a90,
-              mid_displacement_2092c3958d15642d,
+              mid_init$_9670f13f16a3e9aa,
+              mid_displacement_729c7f08824f83c6,
               max_mid
             };
 

@@ -5,13 +5,13 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class PVCoordinates;
-      class TimeStampedAngularCoordinates;
-    }
     namespace time {
-      class AbsoluteDate;
       class TimeStamped;
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class TimeStampedAngularCoordinates;
+      class PVCoordinates;
     }
   }
   namespace hipparchus {
@@ -19,8 +19,8 @@ namespace org {
       namespace euclidean {
         namespace threed {
           class Vector3D;
-          class Rotation;
           class FieldRotation;
+          class Rotation;
         }
       }
     }
@@ -40,15 +40,15 @@ namespace org {
       class TimeStampedAngularCoordinates : public ::org::orekit::utils::AngularCoordinates {
        public:
         enum {
-          mid_init$_ddc6f315d1e488b6,
-          mid_init$_d1b18387f266ab27,
-          mid_init$_ab40439ce57e4b27,
-          mid_init$_b580f4c150431d88,
-          mid_addOffset_532e84b28850f6ea,
-          mid_getDate_7a97f7e149e79afb,
-          mid_revert_99d3c751073fda6d,
-          mid_shiftedBy_0ac736191f55005c,
-          mid_subtractOffset_532e84b28850f6ea,
+          mid_init$_5cdceeb17ad9585c,
+          mid_init$_1e47dd5ffc56db57,
+          mid_init$_a592ae8491041610,
+          mid_init$_6b36e41f0ff6a962,
+          mid_addOffset_a6d2f335ff825b52,
+          mid_getDate_c325492395d89b24,
+          mid_revert_9825c51fb1940671,
+          mid_shiftedBy_a35c7d9d944e9ca5,
+          mid_subtractOffset_a6d2f335ff825b52,
           max_mid
         };
 

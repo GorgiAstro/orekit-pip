@@ -25,9 +25,9 @@ namespace org {
       class MaxEval : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a3da1a935cb37f7b,
-          mid_getMaxEval_412668abc8d889e9,
-          mid_unlimited_df65f975db0d1d75,
+          mid_init$_44ed599e93e8a30c,
+          mid_getMaxEval_55546ef6a647f39b,
+          mid_unlimited_fd63f0d1032231c6,
           max_mid
         };
 

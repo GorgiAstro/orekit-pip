@@ -7,10 +7,10 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class ObservedMeasurement;
         namespace generation {
           class GeneratedMeasurementSubscriber;
         }
+        class ObservedMeasurement;
       }
     }
     namespace time {
@@ -19,11 +19,11 @@ namespace org {
   }
 }
 namespace java {
-  namespace util {
-    class SortedSet;
-  }
   namespace lang {
     class Class;
+  }
+  namespace util {
+    class SortedSet;
   }
 }
 template<class T> class JArray;
@@ -37,10 +37,10 @@ namespace org {
           class GatheringSubscriber : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_0640e6acf969ed28,
-              mid_getGeneratedMeasurements_c6b6a992db588a51,
-              mid_handleGeneratedMeasurement_4063373aad443d2b,
-              mid_init_d5db9a5f2035671b,
+              mid_init$_a1fa5dae97ea5ed2,
+              mid_getGeneratedMeasurements_7961e54fd3a47d94,
+              mid_handleGeneratedMeasurement_1640bf51befb0c77,
+              mid_init_f89af00fc113b524,
               max_mid
             };
 

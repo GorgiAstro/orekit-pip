@@ -14,11 +14,11 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace stat {
-      class LocalizedStatFormats;
-    }
     namespace exception {
       class Localizable;
+    }
+    namespace stat {
+      class LocalizedStatFormats;
     }
   }
 }
@@ -31,10 +31,10 @@ namespace org {
       class LocalizedStatFormats : public ::java::lang::Enum {
        public:
         enum {
-          mid_getLocalizedString_4b51060c6b7ea981,
-          mid_getSourceString_3cffd47377eca18a,
-          mid_valueOf_c8d2c9e037b43e18,
-          mid_values_17b3b60ab534a8f7,
+          mid_getLocalizedString_26070c28e6ea354d,
+          mid_getSourceString_1c1fa1e935d6cdcf,
+          mid_valueOf_d041baffb5a2012d,
+          mid_values_478ea5484309000f,
           max_mid
         };
 

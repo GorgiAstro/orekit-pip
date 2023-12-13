@@ -6,10 +6,10 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class DateComponents;
       class FieldAbsoluteDate;
-      class TimeComponents;
+      class DateComponents;
       class AbsoluteDate;
+      class TimeComponents;
       class TimeScale;
     }
   }
@@ -32,14 +32,14 @@ namespace org {
       class SatelliteClockScale : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a44bd2f874dc9b6c,
-          mid_countAtDate_b0b988f941da47d8,
-          mid_dateAtCount_8ef471ef852a9678,
-          mid_getName_3cffd47377eca18a,
-          mid_offsetFromTAI_b0b988f941da47d8,
-          mid_offsetFromTAI_b884068a2c99f6ca,
-          mid_offsetToTAI_e4171ab80e571373,
-          mid_toString_3cffd47377eca18a,
+          mid_init$_8758d42b4c12e1cc,
+          mid_countAtDate_fd347811007a6ba3,
+          mid_dateAtCount_f359a0110559347a,
+          mid_getName_1c1fa1e935d6cdcf,
+          mid_offsetFromTAI_fd347811007a6ba3,
+          mid_offsetFromTAI_140b8964300ddedf,
+          mid_offsetToTAI_e7a49f02c43fd893,
+          mid_toString_1c1fa1e935d6cdcf,
           max_mid
         };
 
