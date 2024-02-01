@@ -40,12 +40,12 @@ namespace org {
             class DSSTJ2SquaredClosedFormContext : public ::org::orekit::propagation::semianalytical::dsst::forces::ForceModelContext {
              public:
               enum {
-                mid_init$_30f8c8d6272440f5,
-                mid_getA4_b74f83833fdad017,
-                mid_getAlpha4_b74f83833fdad017,
-                mid_getC_b74f83833fdad017,
-                mid_getEta_b74f83833fdad017,
-                mid_getS2_b74f83833fdad017,
+                mid_init$_3392e009995cba69,
+                mid_getA4_9981f74b2d109da6,
+                mid_getAlpha4_9981f74b2d109da6,
+                mid_getC_9981f74b2d109da6,
+                mid_getEta_9981f74b2d109da6,
+                mid_getS2_9981f74b2d109da6,
                 max_mid
               };
 

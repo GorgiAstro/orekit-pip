@@ -6,13 +6,13 @@
 namespace org {
   namespace hipparchus {
     namespace analysis {
-      namespace polynomials {
-        class PolynomialSplineFunction;
-        class FieldPolynomialSplineFunction;
-      }
       namespace interpolation {
-        class FieldUnivariateInterpolator;
         class UnivariateInterpolator;
+        class FieldUnivariateInterpolator;
+      }
+      namespace polynomials {
+        class FieldPolynomialSplineFunction;
+        class PolynomialSplineFunction;
       }
     }
     namespace exception {
@@ -36,9 +36,9 @@ namespace org {
         class LinearInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_interpolate_4b522051166e7218,
-            mid_interpolate_a8efc421c988dfdd,
+            mid_init$_ff7cb6c242604316,
+            mid_interpolate_d112b93e44ec98b7,
+            mid_interpolate_675f76d3ea97467b,
             max_mid
           };
 

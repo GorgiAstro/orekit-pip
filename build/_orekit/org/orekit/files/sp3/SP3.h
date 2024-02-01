@@ -8,10 +8,10 @@ namespace org {
     namespace files {
       namespace sp3 {
         class SP3Header;
-        class SP3Ephemeris;
         class SP3;
         class SP3Coordinate;
         class SP3Segment;
+        class SP3Ephemeris;
       }
       namespace general {
         class EphemerisFile;
@@ -45,16 +45,16 @@ namespace org {
         class SP3 : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_5bc611b73af713e4,
-            mid_addSatellite_734b91ac30d5f9b4,
-            mid_containsSatellite_cde6b28e15c96b75,
-            mid_getEphemeris_322c10af64e18348,
-            mid_getEphemeris_a4b1793a2b7b47f0,
-            mid_getHeader_13873367895735a8,
-            mid_getSatelliteCount_55546ef6a647f39b,
-            mid_getSatellites_810bed48fafb0b9a,
-            mid_splice_b100017156b78afe,
-            mid_validate_4f735758fe3ca010,
+            mid_init$_94ed63e1549d491c,
+            mid_addSatellite_105e1eadb709d9ac,
+            mid_containsSatellite_df4c65b2aede5c41,
+            mid_getEphemeris_96dd0b3f83cc607f,
+            mid_getEphemeris_decb43723338ca58,
+            mid_getHeader_b3570a3260d46482,
+            mid_getSatelliteCount_d6ab429752e7c267,
+            mid_getSatellites_dbcb8bbac6b35e0d,
+            mid_splice_95d9e9c9aae457c1,
+            mid_validate_46b5f89dc9dc4b89,
             max_mid
           };
 

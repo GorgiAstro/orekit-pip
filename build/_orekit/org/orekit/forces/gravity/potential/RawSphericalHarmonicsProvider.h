@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace forces {
       namespace gravity {
         namespace potential {
           class RawSphericalHarmonicsProvider$RawSphericalHarmonics;
         }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -33,7 +33,7 @@ namespace org {
           class RawSphericalHarmonicsProvider : public ::org::orekit::forces::gravity::potential::SphericalHarmonicsProvider {
            public:
             enum {
-              mid_onDate_45f17e7d0917d2cb,
+              mid_onDate_43fc6321576a98a9,
               max_mid
             };
 

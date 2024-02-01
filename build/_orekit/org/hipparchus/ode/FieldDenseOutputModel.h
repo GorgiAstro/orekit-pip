@@ -5,19 +5,19 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
+    }
     namespace ode {
+      namespace sampling {
+        class FieldODEStateInterpolator;
+        class FieldODEStepHandler;
+      }
       class FieldODEStateAndDerivative;
       class FieldDenseOutputModel;
-      namespace sampling {
-        class FieldODEStepHandler;
-        class FieldODEStateInterpolator;
-      }
     }
     class CalculusFieldElement;
-    namespace exception {
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
-    }
   }
 }
 namespace java {
@@ -34,14 +34,14 @@ namespace org {
       class FieldDenseOutputModel : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_append_94b833ec8c7c437c,
-          mid_finish_5b8144cf9ccecc03,
-          mid_getFinalTime_81520b552cb3fa26,
-          mid_getInitialTime_81520b552cb3fa26,
-          mid_getInterpolatedState_285853fa8f6e2f48,
-          mid_handleStep_bd804f650c074774,
-          mid_init_55fdeef582303a99,
+          mid_init$_ff7cb6c242604316,
+          mid_append_3bf65271b4e628fe,
+          mid_finish_380a9edd05c82300,
+          mid_getFinalTime_08d37e3f77b7239d,
+          mid_getInitialTime_08d37e3f77b7239d,
+          mid_getInterpolatedState_7a35201efb2d5095,
+          mid_handleStep_d5c9193ad6d936b3,
+          mid_init_2a077928ff78cfcb,
           max_mid
         };
 

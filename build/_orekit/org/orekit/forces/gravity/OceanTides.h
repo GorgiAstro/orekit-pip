@@ -3,34 +3,22 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
     }
-    class Field;
-    class CalculusFieldElement;
+    class List;
   }
+  namespace lang {
+    class Class;
+  }
+}
+namespace org {
   namespace orekit {
     namespace utils {
-      class IERSConventions;
       class ParameterDriver;
-    }
-    namespace forces {
-      class ForceModel;
-      namespace gravity {
-        namespace potential {
-          class GravityFields;
-        }
-      }
-    }
-    namespace time {
-      class UT1Scale;
+      class IERSConventions;
     }
     namespace propagation {
       namespace events {
@@ -40,20 +28,32 @@ namespace org {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
+    namespace forces {
+      namespace gravity {
+        namespace potential {
+          class GravityFields;
+        }
+      }
+      class ForceModel;
+    }
+    namespace time {
+      class UT1Scale;
+    }
     namespace frames {
       class Frame;
     }
   }
-}
-namespace java {
-  namespace util {
-    class List;
-    namespace stream {
-      class Stream;
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
     }
-  }
-  namespace lang {
-    class Class;
+    class Field;
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -66,15 +66,15 @@ namespace org {
         class OceanTides : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_b969bee9b70083a9,
-            mid_init$_068d507e061d4ea6,
-            mid_init$_1dd2a1faf37eb57e,
-            mid_acceleration_0ce449c67b5ffd9c,
-            mid_acceleration_20bded0292328743,
-            mid_dependsOnPositionOnly_9ab94ac1dc23b105,
-            mid_getEventDetectors_14e21bf777ff0ccf,
-            mid_getFieldEventDetectors_283ad33581c047a0,
-            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_init$_4ec4d79c3f1a5fea,
+            mid_init$_4b789182888c9d81,
+            mid_init$_88d634625dc0aa67,
+            mid_acceleration_5e147f44c28a35c9,
+            mid_acceleration_9816b8f76e94356a,
+            mid_dependsOnPositionOnly_eee3de00fe971136,
+            mid_getEventDetectors_11e4ca8182c1933d,
+            mid_getFieldEventDetectors_d3db121d9deb0312,
+            mid_getParametersDrivers_d751c1a57012b438,
             max_mid
           };
 
@@ -96,8 +96,8 @@ namespace org {
           OceanTides(const ::org::orekit::frames::Frame &, jdouble, jdouble, jboolean, jdouble, jint, jint, jint, const ::org::orekit::utils::IERSConventions &, const ::org::orekit::time::UT1Scale &);
           OceanTides(const ::org::orekit::frames::Frame &, jdouble, jdouble, jboolean, jdouble, jint, jint, jint, const ::org::orekit::utils::IERSConventions &, const ::org::orekit::time::UT1Scale &, const ::org::orekit::forces::gravity::potential::GravityFields &);
 
-          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
+          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           jboolean dependsOnPositionOnly() const;
           ::java::util::stream::Stream getEventDetectors() const;
           ::java::util::stream::Stream getFieldEventDetectors(const ::org::hipparchus::Field &) const;

@@ -48,14 +48,14 @@ namespace org {
             class PythonFieldShortPeriodTerms : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_finalize_a1fa5dae97ea5ed2,
-                mid_getCoefficients_ba34939e32c530ba,
-                mid_getCoefficientsKeyPrefix_1c1fa1e935d6cdcf,
-                mid_pythonDecRef_a1fa5dae97ea5ed2,
-                mid_pythonExtension_6c0ce7e438e5ded4,
-                mid_pythonExtension_3d7dd2314a0dd456,
-                mid_value_738d63f4c1fff02e,
+                mid_init$_ff7cb6c242604316,
+                mid_finalize_ff7cb6c242604316,
+                mid_getCoefficients_832491c80c3ebc6f,
+                mid_getCoefficientsKeyPrefix_d2c8eb4129821f0e,
+                mid_pythonDecRef_ff7cb6c242604316,
+                mid_pythonExtension_42c72b98e3c2e08a,
+                mid_pythonExtension_f5bbab7e97879358,
+                mid_value_9f757583fee38862,
                 max_mid
               };
 

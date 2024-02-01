@@ -5,24 +5,24 @@
 
 namespace org {
   namespace hipparchus {
-    namespace linear {
-      class RealVector;
-      class RealMatrix;
-    }
     namespace filtering {
       namespace kalman {
         class Measurement;
       }
     }
+    namespace linear {
+      class RealMatrix;
+      class RealVector;
+    }
   }
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace estimation {
       namespace measurements {
         class ObservedMeasurement;
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -41,11 +41,11 @@ namespace org {
         class MeasurementDecorator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7175a655de352e84,
-            mid_getCovariance_f77d745f2128c391,
-            mid_getObservedMeasurement_a902d8547365f415,
-            mid_getTime_b74f83833fdad017,
-            mid_getValue_3a10cc75bd070d84,
+            mid_init$_a1c31b7db2619902,
+            mid_getCovariance_b2eebabce70526d8,
+            mid_getObservedMeasurement_2198162c3cb7b73f,
+            mid_getTime_9981f74b2d109da6,
+            mid_getValue_92d7e8d8d3f1dfcf,
             max_mid
           };
 

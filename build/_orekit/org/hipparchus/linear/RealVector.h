@@ -13,19 +13,19 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathRuntimeException;
+      class MathIllegalArgumentException;
+    }
     namespace analysis {
       class UnivariateFunction;
     }
     namespace linear {
-      class RealVectorPreservingVisitor;
-      class RealVector;
-      class RealVector$Entry;
       class RealVectorChangingVisitor;
+      class RealVector$Entry;
+      class RealVectorPreservingVisitor;
       class RealMatrix;
-    }
-    namespace exception {
-      class MathRuntimeException;
-      class MathIllegalArgumentException;
+      class RealVector;
     }
   }
 }
@@ -38,69 +38,69 @@ namespace org {
       class RealVector : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_add_d5f1d017fd25113b,
-          mid_addToEntry_d5322b8b512aeb26,
-          mid_append_d5f1d017fd25113b,
-          mid_append_0af7505d8931441d,
-          mid_combine_60c5136b129a75b0,
-          mid_combineToSelf_60c5136b129a75b0,
-          mid_copy_3a10cc75bd070d84,
-          mid_cosine_532b95759e51e831,
-          mid_dotProduct_532b95759e51e831,
-          mid_ebeDivide_d5f1d017fd25113b,
-          mid_ebeMultiply_d5f1d017fd25113b,
-          mid_equals_460c5e2d9d51c6cc,
-          mid_getDimension_55546ef6a647f39b,
-          mid_getDistance_532b95759e51e831,
-          mid_getEntry_2afcbc21f4e57ab2,
-          mid_getL1Distance_532b95759e51e831,
-          mid_getL1Norm_b74f83833fdad017,
-          mid_getLInfDistance_532b95759e51e831,
-          mid_getLInfNorm_b74f83833fdad017,
-          mid_getMaxIndex_55546ef6a647f39b,
-          mid_getMaxValue_b74f83833fdad017,
-          mid_getMinIndex_55546ef6a647f39b,
-          mid_getMinValue_b74f83833fdad017,
-          mid_getNorm_b74f83833fdad017,
-          mid_getSubVector_71fee5b03bacb96b,
-          mid_hashCode_55546ef6a647f39b,
-          mid_isInfinite_9ab94ac1dc23b105,
-          mid_isNaN_9ab94ac1dc23b105,
-          mid_iterator_fc7780bc5d5b73b0,
-          mid_map_d81d16e6299b5dc0,
-          mid_mapAdd_0af7505d8931441d,
-          mid_mapAddToSelf_0af7505d8931441d,
-          mid_mapDivide_0af7505d8931441d,
-          mid_mapDivideToSelf_0af7505d8931441d,
-          mid_mapMultiply_0af7505d8931441d,
-          mid_mapMultiplyToSelf_0af7505d8931441d,
-          mid_mapSubtract_0af7505d8931441d,
-          mid_mapSubtractToSelf_0af7505d8931441d,
-          mid_mapToSelf_d81d16e6299b5dc0,
-          mid_outerProduct_847a33a82b65c746,
-          mid_projection_d5f1d017fd25113b,
-          mid_set_8ba9fe7a847cecad,
-          mid_setEntry_d5322b8b512aeb26,
-          mid_setSubVector_9fe1e9c5bee9d07c,
-          mid_sparseIterator_fc7780bc5d5b73b0,
-          mid_subtract_d5f1d017fd25113b,
-          mid_toArray_25e1757a36c4dde2,
-          mid_unitVector_3a10cc75bd070d84,
-          mid_unitize_a1fa5dae97ea5ed2,
-          mid_unmodifiableRealVector_d5f1d017fd25113b,
-          mid_walkInDefaultOrder_3b0a64df0d6d5970,
-          mid_walkInDefaultOrder_5765b86ec2dc0005,
-          mid_walkInDefaultOrder_e0df9aff405997ab,
-          mid_walkInDefaultOrder_dc41fc18b07911cf,
-          mid_walkInOptimizedOrder_3b0a64df0d6d5970,
-          mid_walkInOptimizedOrder_5765b86ec2dc0005,
-          mid_walkInOptimizedOrder_e0df9aff405997ab,
-          mid_walkInOptimizedOrder_dc41fc18b07911cf,
-          mid_checkVectorDimensions_872f190ac7ffe0f7,
-          mid_checkVectorDimensions_44ed599e93e8a30c,
-          mid_checkIndices_3313c75e3e16c428,
-          mid_checkIndex_44ed599e93e8a30c,
+          mid_init$_ff7cb6c242604316,
+          mid_add_bf8d75e459632544,
+          mid_addToEntry_4320462275d66e78,
+          mid_append_bf8d75e459632544,
+          mid_append_2fd46ead8ae05f47,
+          mid_combine_7bd6dbc1df2b3199,
+          mid_combineToSelf_7bd6dbc1df2b3199,
+          mid_copy_92d7e8d8d3f1dfcf,
+          mid_cosine_510dfb60b80a1bc5,
+          mid_dotProduct_510dfb60b80a1bc5,
+          mid_ebeDivide_bf8d75e459632544,
+          mid_ebeMultiply_bf8d75e459632544,
+          mid_equals_72faff9b05f5ed5e,
+          mid_getDimension_d6ab429752e7c267,
+          mid_getDistance_510dfb60b80a1bc5,
+          mid_getEntry_ce4c02d583456bc9,
+          mid_getL1Distance_510dfb60b80a1bc5,
+          mid_getL1Norm_9981f74b2d109da6,
+          mid_getLInfDistance_510dfb60b80a1bc5,
+          mid_getLInfNorm_9981f74b2d109da6,
+          mid_getMaxIndex_d6ab429752e7c267,
+          mid_getMaxValue_9981f74b2d109da6,
+          mid_getMinIndex_d6ab429752e7c267,
+          mid_getMinValue_9981f74b2d109da6,
+          mid_getNorm_9981f74b2d109da6,
+          mid_getSubVector_b1d2e600b579c4fa,
+          mid_hashCode_d6ab429752e7c267,
+          mid_isInfinite_eee3de00fe971136,
+          mid_isNaN_eee3de00fe971136,
+          mid_iterator_4f613ccd2f803b4b,
+          mid_map_04dd574c30a3533b,
+          mid_mapAdd_2fd46ead8ae05f47,
+          mid_mapAddToSelf_2fd46ead8ae05f47,
+          mid_mapDivide_2fd46ead8ae05f47,
+          mid_mapDivideToSelf_2fd46ead8ae05f47,
+          mid_mapMultiply_2fd46ead8ae05f47,
+          mid_mapMultiplyToSelf_2fd46ead8ae05f47,
+          mid_mapSubtract_2fd46ead8ae05f47,
+          mid_mapSubtractToSelf_2fd46ead8ae05f47,
+          mid_mapToSelf_04dd574c30a3533b,
+          mid_outerProduct_628dcdd789dfced9,
+          mid_projection_bf8d75e459632544,
+          mid_set_1ad26e8c8c0cd65b,
+          mid_setEntry_4320462275d66e78,
+          mid_setSubVector_543485b1a87e5329,
+          mid_sparseIterator_4f613ccd2f803b4b,
+          mid_subtract_bf8d75e459632544,
+          mid_toArray_be783177b060994b,
+          mid_unitVector_92d7e8d8d3f1dfcf,
+          mid_unitize_ff7cb6c242604316,
+          mid_unmodifiableRealVector_bf8d75e459632544,
+          mid_walkInDefaultOrder_8785ef13fe18157c,
+          mid_walkInDefaultOrder_5b6053a1b36387e3,
+          mid_walkInDefaultOrder_a2c6d27191254d22,
+          mid_walkInDefaultOrder_710a99d12629b412,
+          mid_walkInOptimizedOrder_8785ef13fe18157c,
+          mid_walkInOptimizedOrder_5b6053a1b36387e3,
+          mid_walkInOptimizedOrder_a2c6d27191254d22,
+          mid_walkInOptimizedOrder_710a99d12629b412,
+          mid_checkVectorDimensions_8fd427ab23829bf5,
+          mid_checkVectorDimensions_99bb541b0ecf3230,
+          mid_checkIndices_b5d23e6c0858e8ed,
+          mid_checkIndex_8fd427ab23829bf5,
           max_mid
         };
 

@@ -13,14 +13,14 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace propagation {
       namespace sampling {
         class OrekitStepInterpolator;
       }
       class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -34,9 +34,9 @@ namespace org {
         class MultiSatStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_finish_0e7c3032c7c93ed3,
-            mid_handleStep_0e7c3032c7c93ed3,
-            mid_init_0365da66b6e36325,
+            mid_finish_aa335fea495d60e0,
+            mid_handleStep_aa335fea495d60e0,
+            mid_init_0b0c18b32ea71a29,
             max_mid
           };
 

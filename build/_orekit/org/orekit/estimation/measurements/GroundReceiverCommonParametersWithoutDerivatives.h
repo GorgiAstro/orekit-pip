@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Transform;
-    }
     namespace propagation {
       class SpacecraftState;
+    }
+    namespace frames {
+      class Transform;
     }
     namespace utils {
       class TimeStampedPVCoordinates;
@@ -31,13 +31,13 @@ namespace org {
         class GroundReceiverCommonParametersWithoutDerivatives : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_07c57a746e2cf86f,
-            mid_getOffsetToInertialDownlink_417755e67b7f769d,
-            mid_getState_9d155cc8314c99cf,
-            mid_getStationDownlink_136cc8ba23b21c29,
-            mid_getTauD_b74f83833fdad017,
-            mid_getTransitPV_136cc8ba23b21c29,
-            mid_getTransitState_9d155cc8314c99cf,
+            mid_init$_6779991549f9fde6,
+            mid_getOffsetToInertialDownlink_da06dd761109637f,
+            mid_getState_8fbfa58855031235,
+            mid_getStationDownlink_674031698a428ce8,
+            mid_getTauD_9981f74b2d109da6,
+            mid_getTransitPV_674031698a428ce8,
+            mid_getTransitState_8fbfa58855031235,
             max_mid
           };
 

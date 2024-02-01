@@ -4,30 +4,30 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace models {
+      namespace earth {
+        namespace displacement {
+          class StationDisplacement;
+          class OceanLoadingCoefficients;
+        }
+      }
+    }
+    namespace bodies {
+      class OneAxisEllipsoid;
+    }
+    namespace data {
+      class BodiesElements;
+    }
+    namespace frames {
+      class Frame;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
           class Vector3D;
-        }
-      }
-    }
-  }
-  namespace orekit {
-    namespace data {
-      class BodiesElements;
-    }
-    namespace bodies {
-      class OneAxisEllipsoid;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace models {
-      namespace earth {
-        namespace displacement {
-          class OceanLoadingCoefficients;
-          class StationDisplacement;
         }
       }
     }
@@ -49,8 +49,8 @@ namespace org {
           class OceanLoading : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_00ff291b7fe1d773,
-              mid_displacement_729c7f08824f83c6,
+              mid_init$_6901ef30d5a1a8de,
+              mid_displacement_44ddfc2adc2cc28a,
               max_mid
             };
 

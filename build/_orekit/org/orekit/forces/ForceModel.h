@@ -3,47 +3,47 @@
 
 #include "org/orekit/utils/ParameterDriversProvider.h"
 
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
-      namespace numerical {
-        class FieldTimeDerivativesEquations;
-        class TimeDerivativesEquations;
-      }
       namespace events {
         class FieldEventDetector;
-        class EventDetector;
         class EventDetectorsProvider;
+        class EventDetector;
+      }
+      namespace numerical {
+        class TimeDerivativesEquations;
+        class FieldTimeDerivativesEquations;
       }
       class FieldSpacecraftState;
       class SpacecraftState;
     }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
   }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
     class Field;
     class CalculusFieldElement;
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
-  }
-  namespace util {
-    namespace stream {
-      class Stream;
-    }
   }
 }
 template<class T> class JArray;
@@ -55,15 +55,15 @@ namespace org {
       class ForceModel : public ::org::orekit::utils::ParameterDriversProvider {
        public:
         enum {
-          mid_acceleration_0ce449c67b5ffd9c,
-          mid_acceleration_20bded0292328743,
-          mid_addContribution_6aa2b69cacacea60,
-          mid_addContribution_ab5e59960ebc27c2,
-          mid_dependsOnPositionOnly_9ab94ac1dc23b105,
-          mid_getEventDetectors_14e21bf777ff0ccf,
-          mid_getFieldEventDetectors_283ad33581c047a0,
-          mid_init_96d019f392abf918,
-          mid_init_2d7f9a496c7e9781,
+          mid_acceleration_5e147f44c28a35c9,
+          mid_acceleration_9816b8f76e94356a,
+          mid_addContribution_05bb906f491bab6b,
+          mid_addContribution_2fcaaed225365615,
+          mid_dependsOnPositionOnly_eee3de00fe971136,
+          mid_getEventDetectors_11e4ca8182c1933d,
+          mid_getFieldEventDetectors_d3db121d9deb0312,
+          mid_init_14deaae988292d42,
+          mid_init_357211ab77703f3f,
           max_mid
         };
 
@@ -78,15 +78,15 @@ namespace org {
         }
         ForceModel(const ForceModel& obj) : ::org::orekit::utils::ParameterDriversProvider(obj) {}
 
-        ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
         ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
+        ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
         void addContribution(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::propagation::numerical::FieldTimeDerivativesEquations &) const;
         void addContribution(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::propagation::numerical::TimeDerivativesEquations &) const;
         jboolean dependsOnPositionOnly() const;
         ::java::util::stream::Stream getEventDetectors() const;
         ::java::util::stream::Stream getFieldEventDetectors(const ::org::hipparchus::Field &) const;
-        void init(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::time::FieldAbsoluteDate &) const;
         void init(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::time::AbsoluteDate &) const;
+        void init(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::time::FieldAbsoluteDate &) const;
       };
     }
   }

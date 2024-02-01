@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace gnss {
       class TimeSystem;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,17 +26,17 @@ namespace org {
         class DcbDescription : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_getBiasMode_1c1fa1e935d6cdcf,
-            mid_getDeterminationMethod_1c1fa1e935d6cdcf,
-            mid_getObservationSampling_55546ef6a647f39b,
-            mid_getParameterSpacing_55546ef6a647f39b,
-            mid_getTimeSystem_28830357acffb3e1,
-            mid_setBiasMode_734b91ac30d5f9b4,
-            mid_setDeterminationMethod_734b91ac30d5f9b4,
-            mid_setObservationSampling_44ed599e93e8a30c,
-            mid_setParameterSpacing_44ed599e93e8a30c,
-            mid_setTimeSystem_885124f6a0a748ea,
+            mid_init$_ff7cb6c242604316,
+            mid_getBiasMode_d2c8eb4129821f0e,
+            mid_getDeterminationMethod_d2c8eb4129821f0e,
+            mid_getObservationSampling_d6ab429752e7c267,
+            mid_getParameterSpacing_d6ab429752e7c267,
+            mid_getTimeSystem_6110a08bedf3a63d,
+            mid_setBiasMode_105e1eadb709d9ac,
+            mid_setDeterminationMethod_105e1eadb709d9ac,
+            mid_setObservationSampling_8fd427ab23829bf5,
+            mid_setParameterSpacing_8fd427ab23829bf5,
+            mid_setTimeSystem_70481f478101edcd,
             max_mid
           };
 

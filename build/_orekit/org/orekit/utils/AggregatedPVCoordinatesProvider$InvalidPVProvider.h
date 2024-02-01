@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace utils {
       class TimeStampedPVCoordinates;
       class PVCoordinatesProvider;
     }
     namespace frames {
       class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -31,8 +31,8 @@ namespace org {
       class AggregatedPVCoordinatesProvider$InvalidPVProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_getPVCoordinates_e5d15ef236cd9ffe,
+          mid_init$_ff7cb6c242604316,
+          mid_getPVCoordinates_6236a35378ed47a5,
           max_mid
         };
 

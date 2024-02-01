@@ -32,13 +32,13 @@ namespace org {
           class RotationOrder : public ::java::lang::Enum {
            public:
             enum {
-              mid_getA1_8b724f8b4fdad1a2,
-              mid_getA2_8b724f8b4fdad1a2,
-              mid_getA3_8b724f8b4fdad1a2,
-              mid_getRotationOrder_c58ffe7d0f427750,
-              mid_toString_1c1fa1e935d6cdcf,
-              mid_valueOf_c58ffe7d0f427750,
-              mid_values_e32bcf1fa8ee5bf1,
+              mid_getA1_032312bdeb3f2f93,
+              mid_getA2_032312bdeb3f2f93,
+              mid_getA3_032312bdeb3f2f93,
+              mid_getRotationOrder_0bcd104247064e9d,
+              mid_toString_d2c8eb4129821f0e,
+              mid_valueOf_0bcd104247064e9d,
+              mid_values_194c5c6c115fa067,
               max_mid
             };
 

@@ -30,10 +30,10 @@ namespace org {
           class AbstractEncodedMessage : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_extractBits_f4947a88f79e0725,
-              mid_start_a1fa5dae97ea5ed2,
-              mid_fetchByte_55546ef6a647f39b,
+              mid_init$_ff7cb6c242604316,
+              mid_extractBits_3453f750066710ab,
+              mid_start_ff7cb6c242604316,
+              mid_fetchByte_d6ab429752e7c267,
               max_mid
             };
 

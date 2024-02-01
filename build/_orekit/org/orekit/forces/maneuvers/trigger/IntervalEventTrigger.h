@@ -3,28 +3,28 @@
 
 #include "org/orekit/forces/maneuvers/trigger/AbstractManeuverTriggers.h"
 
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
-        class AbstractDetector;
         class FieldEventDetector;
+        class AbstractDetector;
         class EventDetector;
       }
     }
   }
   namespace hipparchus {
     class Field;
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
-  }
-  namespace util {
-    namespace stream {
-      class Stream;
-    }
   }
 }
 template<class T> class JArray;
@@ -38,12 +38,12 @@ namespace org {
           class IntervalEventTrigger : public ::org::orekit::forces::maneuvers::trigger::AbstractManeuverTriggers {
            public:
             enum {
-              mid_init$_83e63d3f64ed1c29,
-              mid_getEventDetectors_14e21bf777ff0ccf,
-              mid_getFieldEventDetectors_283ad33581c047a0,
-              mid_getFiringIntervalDetector_e060948c985b754b,
-              mid_convertIntervalDetector_323adeb6f2939c8a,
-              mid_isFiringOnInitialState_4ef3ef34329e6316,
+              mid_init$_a38fc05f525605c3,
+              mid_getEventDetectors_11e4ca8182c1933d,
+              mid_getFieldEventDetectors_d3db121d9deb0312,
+              mid_getFiringIntervalDetector_adbfb38205dfa1c9,
+              mid_isFiringOnInitialState_145801f71fbbc869,
+              mid_convertIntervalDetector_2778b7032ad3e419,
               max_mid
             };
 

@@ -3,11 +3,6 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
@@ -16,6 +11,11 @@ namespace org {
     namespace utils {
       class TimeStampedPVCoordinates;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -30,15 +30,15 @@ namespace org {
             class StateVector : public ::org::orekit::files::ccsds::section::CommentsContainer {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_getEpoch_c325492395d89b24,
-                mid_hasAcceleration_9ab94ac1dc23b105,
-                mid_setA_d5322b8b512aeb26,
-                mid_setEpoch_02135a6ef25adb4b,
-                mid_setP_d5322b8b512aeb26,
-                mid_setV_d5322b8b512aeb26,
-                mid_toTimeStampedPVCoordinates_136cc8ba23b21c29,
-                mid_validate_8ba9fe7a847cecad,
+                mid_init$_ff7cb6c242604316,
+                mid_getEpoch_80e11148db499dda,
+                mid_hasAcceleration_eee3de00fe971136,
+                mid_setA_4320462275d66e78,
+                mid_setEpoch_8497861b879c83f7,
+                mid_setP_4320462275d66e78,
+                mid_setV_4320462275d66e78,
+                mid_toTimeStampedPVCoordinates_674031698a428ce8,
+                mid_validate_1ad26e8c8c0cd65b,
                 max_mid
               };
 

@@ -11,13 +11,13 @@ namespace org {
     }
     namespace forces {
       namespace maneuvers {
-        class Maneuver;
-        namespace trigger {
-          class ManeuverTriggersResetter;
-        }
         namespace jacobians {
           class MassDepletionDelay;
         }
+        namespace trigger {
+          class ManeuverTriggersResetter;
+        }
+        class Maneuver;
       }
     }
     namespace time {
@@ -42,14 +42,14 @@ namespace org {
           class TriggerDate : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_5e483594d266cbbc,
-              mid_getAdditionalState_f227e5f48720b798,
-              mid_getMassDepletionDelay_317d678e51746add,
-              mid_getName_1c1fa1e935d6cdcf,
-              mid_init_2d7f9a496c7e9781,
-              mid_maneuverTriggered_1c47c97cdbc7e206,
-              mid_resetState_c3c52b1257139045,
-              mid_yields_97df9017614a1945,
+              mid_init$_e6d2ec59887c22e7,
+              mid_getAdditionalState_e8a4ac02afc72623,
+              mid_getMassDepletionDelay_bb641ba3c743507a,
+              mid_getName_d2c8eb4129821f0e,
+              mid_init_14deaae988292d42,
+              mid_maneuverTriggered_b69b5541e48d21c0,
+              mid_resetState_ed3fe207e6fde26f,
+              mid_yields_34f098c1d43e614c,
               max_mid
             };
 

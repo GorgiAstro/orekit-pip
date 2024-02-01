@@ -4,9 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
       class FieldSpacecraftState;
@@ -14,6 +11,9 @@ namespace org {
         class FieldEventDetector;
       }
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -31,7 +31,7 @@ namespace org {
         class FieldEnablingPredicate : public ::java::lang::Object {
          public:
           enum {
-            mid_eventIsEnabled_998abd1e19002665,
+            mid_eventIsEnabled_f8fad546fff5b1a3,
             max_mid
           };
 

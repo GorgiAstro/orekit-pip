@@ -3,12 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace files {
@@ -24,6 +18,12 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -37,9 +37,9 @@ namespace org {
               class OrbitCategory : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_toString_1c1fa1e935d6cdcf,
-                  mid_valueOf_b687ea984f4d4377,
-                  mid_values_fb1dd1d00e06db3d,
+                  mid_toString_d2c8eb4129821f0e,
+                  mid_valueOf_ab2292c2cb6a8e96,
+                  mid_values_fe8b443d956be8cd,
                   max_mid
                 };
 

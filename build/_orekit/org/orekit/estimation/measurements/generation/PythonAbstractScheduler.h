@@ -3,11 +3,17 @@
 
 #include "org/orekit/estimation/measurements/generation/AbstractScheduler.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace time {
-      class DatesSelector;
       class AbsoluteDate;
+      class DatesSelector;
     }
     namespace estimation {
       namespace measurements {
@@ -16,12 +22,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -35,12 +35,12 @@ namespace org {
           class PythonAbstractScheduler : public ::org::orekit::estimation::measurements::generation::AbstractScheduler {
            public:
             enum {
-              mid_init$_1c3d87302302feaf,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_measurementIsFeasible_a35647bda2901f54,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_init$_3ea802fb076b80a8,
+              mid_finalize_ff7cb6c242604316,
+              mid_measurementIsFeasible_b16e79ba1b2830a1,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
               max_mid
             };
 

@@ -25,20 +25,20 @@ namespace org {
         class PoissonDistribution : public ::org::hipparchus::distribution::discrete::AbstractIntegerDistribution {
          public:
           enum {
-            mid_init$_8ba9fe7a847cecad,
-            mid_init$_369b4c97255d5afa,
-            mid_init$_1af1b4c263b48b0c,
-            mid_init$_2aa803b9073e6a76,
-            mid_cumulativeProbability_2afcbc21f4e57ab2,
-            mid_getMean_b74f83833fdad017,
-            mid_getNumericalMean_b74f83833fdad017,
-            mid_getNumericalVariance_b74f83833fdad017,
-            mid_getSupportLowerBound_55546ef6a647f39b,
-            mid_getSupportUpperBound_55546ef6a647f39b,
-            mid_isSupportConnected_9ab94ac1dc23b105,
-            mid_logProbability_2afcbc21f4e57ab2,
-            mid_normalApproximateProbability_2afcbc21f4e57ab2,
-            mid_probability_2afcbc21f4e57ab2,
+            mid_init$_1ad26e8c8c0cd65b,
+            mid_init$_13edac039e8cc967,
+            mid_init$_0fd8efd9eecb8663,
+            mid_init$_905e65280a4e6722,
+            mid_cumulativeProbability_ce4c02d583456bc9,
+            mid_getMean_9981f74b2d109da6,
+            mid_getNumericalMean_9981f74b2d109da6,
+            mid_getNumericalVariance_9981f74b2d109da6,
+            mid_getSupportLowerBound_d6ab429752e7c267,
+            mid_getSupportUpperBound_d6ab429752e7c267,
+            mid_isSupportConnected_eee3de00fe971136,
+            mid_logProbability_ce4c02d583456bc9,
+            mid_normalApproximateProbability_ce4c02d583456bc9,
+            mid_probability_ce4c02d583456bc9,
             max_mid
           };
 

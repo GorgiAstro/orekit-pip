@@ -30,18 +30,18 @@ namespace org {
         class PearsonsCorrelation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_init$_07adb42ffaa97d31,
-            mid_init$_e58fef422968212a,
-            mid_init$_84bd15e0995d0c79,
-            mid_init$_e0e047388507c76a,
-            mid_computeCorrelationMatrix_2d1b7d41dfd6b278,
-            mid_computeCorrelationMatrix_be124f4006dc9f69,
-            mid_correlation_3207f9c2ae7271d9,
-            mid_covarianceToCorrelation_be124f4006dc9f69,
-            mid_getCorrelationMatrix_f77d745f2128c391,
-            mid_getCorrelationPValues_f77d745f2128c391,
-            mid_getCorrelationStandardErrors_f77d745f2128c391,
+            mid_init$_ff7cb6c242604316,
+            mid_init$_11ecdbb5af7ed67d,
+            mid_init$_4f6cba88847b2fef,
+            mid_init$_f5364c9a9d9cbd53,
+            mid_init$_56802cbfc5b9e059,
+            mid_computeCorrelationMatrix_a50478fa84afaa43,
+            mid_computeCorrelationMatrix_5a8a8185eb309db7,
+            mid_correlation_b01af8a77d4df96f,
+            mid_covarianceToCorrelation_5a8a8185eb309db7,
+            mid_getCorrelationMatrix_b2eebabce70526d8,
+            mid_getCorrelationPValues_b2eebabce70526d8,
+            mid_getCorrelationStandardErrors_b2eebabce70526d8,
             max_mid
           };
 

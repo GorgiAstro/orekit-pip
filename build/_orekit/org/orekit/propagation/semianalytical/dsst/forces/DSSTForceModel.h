@@ -3,18 +3,20 @@
 
 #include "org/orekit/utils/ParameterDriversProvider.h"
 
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
     namespace propagation {
-      namespace events {
-        class EventDetector;
-        class EventDetectorsProvider;
-        class FieldEventDetector;
-      }
       namespace semianalytical {
         namespace dsst {
           namespace utilities {
@@ -22,14 +24,23 @@ namespace org {
             class AuxiliaryElements;
           }
           namespace forces {
-            class FieldShortPeriodTerms;
             class ShortPeriodTerms;
+            class FieldShortPeriodTerms;
           }
         }
       }
-      class PropagationType;
+      namespace events {
+        class EventDetector;
+        class EventDetectorsProvider;
+        class FieldEventDetector;
+      }
       class FieldSpacecraftState;
       class SpacecraftState;
+      class PropagationType;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
     namespace attitudes {
       class AttitudeProvider;
@@ -38,17 +49,6 @@ namespace org {
   namespace hipparchus {
     class Field;
     class CalculusFieldElement;
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
-  }
-  namespace util {
-    namespace stream {
-      class Stream;
-    }
-    class List;
   }
 }
 template<class T> class JArray;
@@ -63,19 +63,19 @@ namespace org {
             class DSSTForceModel : public ::org::orekit::utils::ParameterDriversProvider {
              public:
               enum {
-                mid_extractParameters_5417afc1212505b6,
-                mid_extractParameters_afb90c8392ccc216,
-                mid_getEventDetectors_14e21bf777ff0ccf,
-                mid_getFieldEventDetectors_283ad33581c047a0,
-                mid_getMeanElementRate_0483a0f94731abef,
-                mid_getMeanElementRate_7d3eb19aa1e75a63,
-                mid_init_2d7f9a496c7e9781,
-                mid_init_96d019f392abf918,
-                mid_initializeShortPeriodTerms_6fb0c582e8925f89,
-                mid_initializeShortPeriodTerms_3144241334d46411,
-                mid_registerAttitudeProvider_8e4d3ea100bc0095,
-                mid_updateShortPeriodTerms_5401e749436ec3b7,
-                mid_updateShortPeriodTerms_62f1ad39eb6f1276,
+                mid_extractParameters_f6f6c8fcf1e496fb,
+                mid_extractParameters_f4e70a6b1a1cf5f6,
+                mid_getEventDetectors_11e4ca8182c1933d,
+                mid_getFieldEventDetectors_d3db121d9deb0312,
+                mid_getMeanElementRate_3eb9526d5d611f82,
+                mid_getMeanElementRate_43ba9f5eaba95dbb,
+                mid_init_357211ab77703f3f,
+                mid_init_14deaae988292d42,
+                mid_initializeShortPeriodTerms_1d563346dd4410fc,
+                mid_initializeShortPeriodTerms_29410e2fe048cdd6,
+                mid_registerAttitudeProvider_fddd0a7d9f33bafa,
+                mid_updateShortPeriodTerms_49390f5c28b648db,
+                mid_updateShortPeriodTerms_61d4f27408b30d56,
                 max_mid
               };
 
@@ -94,10 +94,10 @@ namespace org {
               JArray< ::org::hipparchus::CalculusFieldElement > extractParameters(const JArray< ::org::hipparchus::CalculusFieldElement > &, const ::org::orekit::time::FieldAbsoluteDate &) const;
               ::java::util::stream::Stream getEventDetectors() const;
               ::java::util::stream::Stream getFieldEventDetectors(const ::org::hipparchus::Field &) const;
-              JArray< jdouble > getMeanElementRate(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::AuxiliaryElements &, const JArray< jdouble > &) const;
               JArray< ::org::hipparchus::CalculusFieldElement > getMeanElementRate(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::FieldAuxiliaryElements &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
-              void init(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::time::AbsoluteDate &) const;
+              JArray< jdouble > getMeanElementRate(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::AuxiliaryElements &, const JArray< jdouble > &) const;
               void init(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::time::FieldAbsoluteDate &) const;
+              void init(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::time::AbsoluteDate &) const;
               ::java::util::List initializeShortPeriodTerms(const ::org::orekit::propagation::semianalytical::dsst::utilities::AuxiliaryElements &, const ::org::orekit::propagation::PropagationType &, const JArray< jdouble > &) const;
               ::java::util::List initializeShortPeriodTerms(const ::org::orekit::propagation::semianalytical::dsst::utilities::FieldAuxiliaryElements &, const ::org::orekit::propagation::PropagationType &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
               void registerAttitudeProvider(const ::org::orekit::attitudes::AttitudeProvider &) const;

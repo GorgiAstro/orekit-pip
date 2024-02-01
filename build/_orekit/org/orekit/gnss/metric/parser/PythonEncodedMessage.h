@@ -5,8 +5,8 @@
 
 namespace java {
   namespace lang {
-    class Class;
     class Throwable;
+    class Class;
   }
 }
 namespace org {
@@ -31,12 +31,12 @@ namespace org {
           class PythonEncodedMessage : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_extractBits_f4947a88f79e0725,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_init$_ff7cb6c242604316,
+              mid_extractBits_3453f750066710ab,
+              mid_finalize_ff7cb6c242604316,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
               max_mid
             };
 

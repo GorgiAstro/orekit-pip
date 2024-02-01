@@ -3,15 +3,6 @@
 
 #include "org/orekit/estimation/sequential/AbstractKalmanEstimator.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class Object;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -31,6 +22,15 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class Object;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -41,9 +41,9 @@ namespace org {
         class SemiAnalyticalUnscentedKalmanEstimator : public ::org::orekit::estimation::sequential::AbstractKalmanEstimator {
          public:
           enum {
-            mid_processMeasurements_63b6806abfbbcee4,
-            mid_setObserver_578d9ba5b3b8b483,
-            mid_getKalmanEstimation_10690b877ea302f7,
+            mid_processMeasurements_7d4c616f81e4b6b1,
+            mid_setObserver_2002169216358a3a,
+            mid_getKalmanEstimation_e73dd18a212e3cd0,
             max_mid
           };
 

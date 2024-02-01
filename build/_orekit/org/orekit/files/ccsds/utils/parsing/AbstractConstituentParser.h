@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class IERSConventions;
-    }
     namespace data {
       class DataContext;
+    }
+    namespace utils {
+      class IERSConventions;
     }
     namespace files {
       namespace ccsds {
@@ -40,20 +40,20 @@ namespace org {
             class AbstractConstituentParser : public ::org::orekit::files::ccsds::utils::parsing::AbstractMessageParser {
              public:
               enum {
-                mid_finalizeData_9ab94ac1dc23b105,
-                mid_finalizeHeader_9ab94ac1dc23b105,
-                mid_finalizeMetadata_9ab94ac1dc23b105,
-                mid_getConventions_53aaf70620a914af,
-                mid_getDataContext_687c2d3d1010744e,
-                mid_getHeader_e6dd83960ea2d5d6,
-                mid_getParsedUnitsBehavior_b86f6bf8371fab43,
-                mid_inData_9ab94ac1dc23b105,
-                mid_inHeader_9ab94ac1dc23b105,
-                mid_inMetadata_9ab94ac1dc23b105,
-                mid_isSimpleEOP_9ab94ac1dc23b105,
-                mid_prepareData_9ab94ac1dc23b105,
-                mid_prepareHeader_9ab94ac1dc23b105,
-                mid_prepareMetadata_9ab94ac1dc23b105,
+                mid_finalizeData_eee3de00fe971136,
+                mid_finalizeHeader_eee3de00fe971136,
+                mid_finalizeMetadata_eee3de00fe971136,
+                mid_getConventions_635853a14837ea6f,
+                mid_getDataContext_66ee964ea58dd871,
+                mid_getHeader_a5bdfcd14307795f,
+                mid_getParsedUnitsBehavior_2cdcf2c78bfe02b7,
+                mid_inData_eee3de00fe971136,
+                mid_inHeader_eee3de00fe971136,
+                mid_inMetadata_eee3de00fe971136,
+                mid_isSimpleEOP_eee3de00fe971136,
+                mid_prepareData_eee3de00fe971136,
+                mid_prepareHeader_eee3de00fe971136,
+                mid_prepareMetadata_eee3de00fe971136,
                 max_mid
               };
 

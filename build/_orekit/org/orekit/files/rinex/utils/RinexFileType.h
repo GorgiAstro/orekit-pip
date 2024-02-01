@@ -31,9 +31,9 @@ namespace org {
           class RinexFileType : public ::java::lang::Enum {
            public:
             enum {
-              mid_parseRinexFileType_e8eeb81083fcf906,
-              mid_valueOf_e8eeb81083fcf906,
-              mid_values_89301cac4890840c,
+              mid_parseRinexFileType_176e3ba58e1dca50,
+              mid_valueOf_176e3ba58e1dca50,
+              mid_values_6e8dd7f88554d8b1,
               max_mid
             };
 

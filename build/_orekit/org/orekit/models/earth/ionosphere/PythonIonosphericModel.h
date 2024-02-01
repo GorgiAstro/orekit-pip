@@ -14,6 +14,13 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace frames {
+      class TopocentricFrame;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
+    }
     namespace models {
       namespace earth {
         namespace ionosphere {
@@ -21,15 +28,8 @@ namespace org {
         }
       }
     }
-    namespace frames {
-      class TopocentricFrame;
-    }
     namespace utils {
       class ParameterDriver;
-    }
-    namespace propagation {
-      class FieldSpacecraftState;
-      class SpacecraftState;
     }
   }
   namespace hipparchus {
@@ -48,16 +48,16 @@ namespace org {
           class PythonIonosphericModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_getParameters_25e1757a36c4dde2,
-              mid_getParameters_5286daa2a5b3d227,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_pathDelay_5e4bace87c721642,
-              mid_pathDelay_0c51f26f37c66719,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_init$_ff7cb6c242604316,
+              mid_finalize_ff7cb6c242604316,
+              mid_getParameters_be783177b060994b,
+              mid_getParameters_84f929c42eeec397,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_pathDelay_d2f5e0e8b7e00e80,
+              mid_pathDelay_c84aeff9124fe654,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
               max_mid
             };
 

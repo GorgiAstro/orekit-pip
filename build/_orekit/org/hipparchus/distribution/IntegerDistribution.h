@@ -24,16 +24,16 @@ namespace org {
       class IntegerDistribution : public ::java::lang::Object {
        public:
         enum {
-          mid_cumulativeProbability_2afcbc21f4e57ab2,
-          mid_getNumericalMean_b74f83833fdad017,
-          mid_getNumericalVariance_b74f83833fdad017,
-          mid_getSupportLowerBound_55546ef6a647f39b,
-          mid_getSupportUpperBound_55546ef6a647f39b,
-          mid_inverseCumulativeProbability_2af4736545087009,
-          mid_isSupportConnected_9ab94ac1dc23b105,
-          mid_logProbability_2afcbc21f4e57ab2,
-          mid_probability_2afcbc21f4e57ab2,
-          mid_probability_cad98089d00f8a5b,
+          mid_cumulativeProbability_ce4c02d583456bc9,
+          mid_getNumericalMean_9981f74b2d109da6,
+          mid_getNumericalVariance_9981f74b2d109da6,
+          mid_getSupportLowerBound_d6ab429752e7c267,
+          mid_getSupportUpperBound_d6ab429752e7c267,
+          mid_inverseCumulativeProbability_9e72cb20adb363fb,
+          mid_isSupportConnected_eee3de00fe971136,
+          mid_logProbability_ce4c02d583456bc9,
+          mid_probability_ce4c02d583456bc9,
+          mid_probability_6d920aab27f0a3d2,
           max_mid
         };
 

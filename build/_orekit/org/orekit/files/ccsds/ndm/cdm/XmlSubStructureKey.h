@@ -14,8 +14,8 @@ namespace org {
         }
         namespace ndm {
           namespace cdm {
-            class XmlSubStructureKey;
             class CdmParser;
+            class XmlSubStructureKey;
           }
         }
       }
@@ -40,9 +40,9 @@ namespace org {
             class XmlSubStructureKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_30f963975530d507,
-                mid_valueOf_b6ed3701a12d8506,
-                mid_values_f3628dfe8b48d95e,
+                mid_process_eca7b964a4675051,
+                mid_valueOf_5370d6bade69311c,
+                mid_values_0d8e5a273baf0374,
                 max_mid
               };
 

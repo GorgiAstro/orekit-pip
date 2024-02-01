@@ -5,6 +5,9 @@
 
 namespace org {
   namespace orekit {
+    namespace utils {
+      class TimeSpanMap;
+    }
     namespace gnss {
       class SatelliteSystem;
       namespace antenna {
@@ -15,9 +18,6 @@ namespace org {
     namespace data {
       class DataSource;
       class DataProvidersManager;
-    }
-    namespace utils {
-      class TimeSpanMap;
     }
     namespace time {
       class TimeScale;
@@ -43,12 +43,12 @@ namespace org {
         class AntexLoader : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_734b91ac30d5f9b4,
-            mid_init$_e81bfdc1c9755e45,
-            mid_init$_41d9572e040b2cb7,
-            mid_findSatelliteAntenna_ff170e96d84d4099,
-            mid_getReceiversAntennas_e62d3bb06d56d7e3,
-            mid_getSatellitesAntennas_e62d3bb06d56d7e3,
+            mid_init$_105e1eadb709d9ac,
+            mid_init$_b9046d0be8f2b6e0,
+            mid_init$_ab02e9635eee86ad,
+            mid_findSatelliteAntenna_b76719579cd012cc,
+            mid_getReceiversAntennas_d751c1a57012b438,
+            mid_getSatellitesAntennas_d751c1a57012b438,
             max_mid
           };
 

@@ -42,13 +42,13 @@ namespace org {
         class PythonAbstractPropagatorConverter : public ::org::orekit::propagation::conversion::AbstractPropagatorConverter {
          public:
           enum {
-            mid_init$_91f1a39ce0677121,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getModel_6a20d4ddc607b9bb,
-            mid_getObjectiveFunction_72c2cddd79f92b83,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_11ca02e6564da71d,
+            mid_finalize_ff7cb6c242604316,
+            mid_getModel_b9638c47db64ddc7,
+            mid_getObjectiveFunction_0a4097997512db0b,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

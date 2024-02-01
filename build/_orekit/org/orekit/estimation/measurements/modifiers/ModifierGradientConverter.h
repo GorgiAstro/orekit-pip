@@ -29,7 +29,7 @@ namespace org {
           class ModifierGradientConverter : public ::org::orekit::propagation::integration::AbstractGradientConverter {
            public:
             enum {
-              mid_init$_f9fee79f1d2ae5a2,
+              mid_init$_15fc1578d17e78a4,
               max_mid
             };
 

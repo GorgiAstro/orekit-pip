@@ -24,10 +24,10 @@ namespace org {
       class HessenbergTransformer : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_84bd15e0995d0c79,
-          mid_getH_f77d745f2128c391,
-          mid_getP_f77d745f2128c391,
-          mid_getPT_f77d745f2128c391,
+          mid_init$_f5364c9a9d9cbd53,
+          mid_getH_b2eebabce70526d8,
+          mid_getP_b2eebabce70526d8,
+          mid_getPT_b2eebabce70526d8,
           max_mid
         };
 

@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace random {
-      class RandomGenerator;
       class NormalizedRandomGenerator;
+      class RandomGenerator;
     }
   }
 }
@@ -25,8 +25,8 @@ namespace org {
       class GaussianRandomGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_f1c8159898f25396,
-          mid_nextNormalizedDouble_b74f83833fdad017,
+          mid_init$_e24b125c6ff6cc8c,
+          mid_nextNormalizedDouble_9981f74b2d109da6,
           max_mid
         };
 

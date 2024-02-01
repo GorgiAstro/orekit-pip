@@ -3,25 +3,28 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+    class List;
+    class Collection;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace time {
       class TimeStamped;
-      class AbsoluteDate;
       class TimeInterpolator;
+      class AbsoluteDate;
     }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-    class Collection;
-    namespace stream {
-      class Stream;
+    namespace utils {
+      class ImmutableTimeStampedCache;
     }
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -33,16 +36,17 @@ namespace org {
       class AbstractTimeInterpolator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_d5322b8b512aeb26,
-          mid_checkInterpolatorCompatibilityWithSampleSize_86e8035ddd3b6fb5,
-          mid_getExtrapolationThreshold_b74f83833fdad017,
-          mid_getNbInterpolationPoints_55546ef6a647f39b,
-          mid_getSubInterpolators_e62d3bb06d56d7e3,
-          mid_interpolate_0ccd3950902c0411,
-          mid_interpolate_510d3bf17898cb55,
-          mid_interpolate_7256d27895569924,
-          mid_addOptionalSubInterpolatorIfDefined_4f12b60006b411d5,
-          mid_getTimeParameter_b3f978f59484aa1f,
+          mid_init$_4320462275d66e78,
+          mid_checkInterpolatorCompatibilityWithSampleSize_e0c9304973cf2143,
+          mid_getCentralDate_cc9bc18ecf3c3f53,
+          mid_getExtrapolationThreshold_9981f74b2d109da6,
+          mid_getNbInterpolationPoints_d6ab429752e7c267,
+          mid_getSubInterpolators_d751c1a57012b438,
+          mid_interpolate_96cdbf28d116a6bf,
+          mid_interpolate_12f5cef05abb91a8,
+          mid_interpolate_05cdc96cbb5fa5a5,
+          mid_addOptionalSubInterpolatorIfDefined_b595d182fd7509c4,
+          mid_getTimeParameter_4da9543dba3042e5,
           max_mid
         };
 
@@ -63,6 +67,7 @@ namespace org {
         AbstractTimeInterpolator(jint, jdouble);
 
         static void checkInterpolatorCompatibilityWithSampleSize(const ::org::orekit::time::TimeInterpolator &, jint);
+        static ::org::orekit::time::AbsoluteDate getCentralDate(const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::utils::ImmutableTimeStampedCache &, jdouble);
         jdouble getExtrapolationThreshold() const;
         jint getNbInterpolationPoints() const;
         ::java::util::List getSubInterpolators() const;

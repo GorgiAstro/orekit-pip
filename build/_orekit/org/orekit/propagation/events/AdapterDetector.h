@@ -10,8 +10,8 @@ namespace org {
         namespace handlers {
           class EventHandler;
         }
-        class EventDetector;
         class AdaptableInterval;
+        class EventDetector;
       }
       class SpacecraftState;
     }
@@ -35,14 +35,14 @@ namespace org {
         class AdapterDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_e13564f833403504,
-            mid_g_a17ea857ce74d258,
-            mid_getDetector_9ada55f07f5a223c,
-            mid_getHandler_0c96c441e92b6ffa,
-            mid_getMaxCheckInterval_014eea600d2cdae8,
-            mid_getMaxIterationCount_55546ef6a647f39b,
-            mid_getThreshold_b74f83833fdad017,
-            mid_init_2d7f9a496c7e9781,
+            mid_init$_d5d8be0538a03d97,
+            mid_g_b443ba1cc794b916,
+            mid_getDetector_ebd847a60689999d,
+            mid_getHandler_0e9e72f635f03ea9,
+            mid_getMaxCheckInterval_11bc47e1cbec1a87,
+            mid_getMaxIterationCount_d6ab429752e7c267,
+            mid_getThreshold_9981f74b2d109da6,
+            mid_init_14deaae988292d42,
             max_mid
           };
 

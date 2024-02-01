@@ -28,8 +28,8 @@ namespace org {
         class OptimizerId : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_a3b779e984ade4c5,
-            mid_values_f4fd35e606b96f2e,
+            mid_valueOf_4959f42dfa8d0f54,
+            mid_values_4790b53e33f7172e,
             max_mid
           };
 

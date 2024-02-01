@@ -4,6 +4,26 @@
 #include "org/orekit/propagation/events/AbstractDetector.h"
 
 namespace org {
+  namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace forces {
+      namespace maneuvers {
+        class ImpulseManeuver;
+        class Control3DVectorCostType;
+      }
+    }
+    namespace propagation {
+      class SpacecraftState;
+      namespace events {
+        class EventDetector;
+      }
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -11,26 +31,6 @@ namespace org {
           class Vector3D;
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-    namespace forces {
-      namespace maneuvers {
-        class Control3DVectorCostType;
-        class ImpulseManeuver;
-      }
-    }
-    namespace propagation {
-      namespace events {
-        class EventDetector;
-      }
-      class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -49,17 +49,17 @@ namespace org {
         class ImpulseManeuver : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_026e9c39f96053f1,
-            mid_init$_438004526d4fc079,
-            mid_init$_b94e00e001ca26d6,
-            mid_g_a17ea857ce74d258,
-            mid_getAttitudeOverride_331f12bb6017243b,
-            mid_getControl3DVectorCostType_2eba60c257188b83,
-            mid_getDeltaVSat_8b724f8b4fdad1a2,
-            mid_getIsp_b74f83833fdad017,
-            mid_getTrigger_9ada55f07f5a223c,
-            mid_init_2d7f9a496c7e9781,
-            mid_create_3a8f4feff9431f65,
+            mid_init$_a8adba5582913c96,
+            mid_init$_2de4d267593a16a3,
+            mid_init$_922c32c6eebbf23a,
+            mid_g_b443ba1cc794b916,
+            mid_getAttitudeOverride_2f73d1f4460b8d6c,
+            mid_getControl3DVectorCostType_fc9abda16ef946e0,
+            mid_getDeltaVSat_032312bdeb3f2f93,
+            mid_getIsp_9981f74b2d109da6,
+            mid_getTrigger_ebd847a60689999d,
+            mid_init_14deaae988292d42,
+            mid_create_1ad29cd39384bfba,
             max_mid
           };
 

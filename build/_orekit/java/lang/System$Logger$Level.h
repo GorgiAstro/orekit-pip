@@ -5,8 +5,8 @@
 
 namespace java {
   namespace lang {
-    class System$Logger$Level;
     class String;
+    class System$Logger$Level;
     class Class;
   }
 }
@@ -18,10 +18,10 @@ namespace java {
     class System$Logger$Level : public ::java::lang::Enum {
      public:
       enum {
-        mid_getName_1c1fa1e935d6cdcf,
-        mid_getSeverity_55546ef6a647f39b,
-        mid_valueOf_2f7e7c2d3ff0da17,
-        mid_values_bf7b9861e0839e00,
+        mid_getName_d2c8eb4129821f0e,
+        mid_getSeverity_d6ab429752e7c267,
+        mid_valueOf_23017d20e37f67ca,
+        mid_values_d20c27684a0c8261,
         max_mid
       };
 

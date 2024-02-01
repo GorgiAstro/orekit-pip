@@ -25,13 +25,13 @@ namespace org {
       class Loxodrome : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_374ffa21d0136141,
-          mid_init$_b1d6d9374cba059b,
-          mid_getAltitude_b74f83833fdad017,
-          mid_getAzimuth_b74f83833fdad017,
-          mid_getBody_dd5c4288aa5a3dd8,
-          mid_getPoint_963915d358b1e63a,
-          mid_pointAtDistance_11599325d56b0055,
+          mid_init$_218fd8b99ca99ca0,
+          mid_init$_fae9e6423d088e39,
+          mid_getAltitude_9981f74b2d109da6,
+          mid_getAzimuth_9981f74b2d109da6,
+          mid_getBody_dc8275c31111ad9c,
+          mid_getPoint_bdca252cae79438c,
+          mid_pointAtDistance_ec6f4d2d88b0733c,
           max_mid
         };
 

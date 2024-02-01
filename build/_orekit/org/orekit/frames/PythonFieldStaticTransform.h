@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldRotation;
           class FieldVector3D;
+          class FieldRotation;
         }
       }
     }
@@ -39,15 +39,15 @@ namespace org {
       class PythonFieldStaticTransform : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_getDate_c325492395d89b24,
-          mid_getInverse_f5bae1937d1edbc7,
-          mid_getRotation_1e54a5caa5199c2e,
-          mid_getTranslation_ff5ac73a7b43eddd,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_init$_ff7cb6c242604316,
+          mid_finalize_ff7cb6c242604316,
+          mid_getDate_80e11148db499dda,
+          mid_getInverse_bfbe5d9ed8a9e205,
+          mid_getRotation_5c8e6f300713559c,
+          mid_getTranslation_d1b42a6748e907f9,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
           max_mid
         };
 

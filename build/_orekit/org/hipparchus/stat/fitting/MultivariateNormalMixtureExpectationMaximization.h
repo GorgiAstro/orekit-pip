@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
     namespace distribution {
       namespace multivariate {
         class MixtureMultivariateNormalDistribution;
       }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
     }
   }
 }
@@ -30,12 +30,12 @@ namespace org {
         class MultivariateNormalMixtureExpectationMaximization : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_07adb42ffaa97d31,
-            mid_estimate_2a9aa470bb57f929,
-            mid_fit_7654a02307c9e59a,
-            mid_fit_14b53135a588cc68,
-            mid_getFittedModel_e2481b5744d79323,
-            mid_getLogLikelihood_b74f83833fdad017,
+            mid_init$_11ecdbb5af7ed67d,
+            mid_estimate_68121d2cf13267fb,
+            mid_fit_6987ccda0777c52e,
+            mid_fit_215d2560fb032b06,
+            mid_getFittedModel_b9162572dc92202d,
+            mid_getLogLikelihood_9981f74b2d109da6,
             max_mid
           };
 

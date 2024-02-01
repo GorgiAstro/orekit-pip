@@ -8,14 +8,14 @@ namespace org {
     namespace analysis {
       namespace differentiation {
         class FieldDerivativeStructure;
-        class FieldDerivative;
         class FieldUnivariateDerivative;
+        class FieldDerivative;
       }
     }
-    class CalculusFieldElement;
     namespace exception {
       class MathIllegalArgumentException;
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -33,11 +33,11 @@ namespace org {
         class FieldUnivariateDerivative : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_getDerivative_21e6b3c521b9c768,
-            mid_getFreeParameters_55546ef6a647f39b,
-            mid_getPartialDerivative_8224159d85a4681d,
-            mid_toDerivativeStructure_4b6e77c66fd622c3,
+            mid_init$_ff7cb6c242604316,
+            mid_getDerivative_dfcf702144fd7bc1,
+            mid_getFreeParameters_d6ab429752e7c267,
+            mid_getPartialDerivative_15bad9d0870b63aa,
+            mid_toDerivativeStructure_b363d6ebd90353bf,
             max_mid
           };
 

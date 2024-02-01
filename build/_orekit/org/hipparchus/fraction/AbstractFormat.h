@@ -21,14 +21,14 @@ namespace org {
       class AbstractFormat : public ::java::text::NumberFormat {
        public:
         enum {
-          mid_format_cdee9bc08b68d2f3,
-          mid_format_1d561f51d282798c,
-          mid_getDenominatorFormat_87ffffc449cd25a5,
-          mid_getNumeratorFormat_87ffffc449cd25a5,
-          mid_getDefaultNumberFormat_3c858cd11341b00a,
-          mid_getDefaultNumberFormat_87ffffc449cd25a5,
-          mid_parseAndIgnoreWhitespace_1df84bc342ab1345,
-          mid_parseNextCharacter_ab936c5146b74d5a,
+          mid_format_bd8d8164e076ccaa,
+          mid_format_1f446f5fe940e316,
+          mid_getDenominatorFormat_525709eb5c5b5ea6,
+          mid_getNumeratorFormat_525709eb5c5b5ea6,
+          mid_parseNextCharacter_5ce3a6c37aaf3132,
+          mid_getDefaultNumberFormat_5ed382d8d7b942c5,
+          mid_getDefaultNumberFormat_525709eb5c5b5ea6,
+          mid_parseAndIgnoreWhitespace_63c49683e3fd0aef,
           max_mid
         };
 

@@ -7,19 +7,19 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace ndm {
+          namespace odm {
+            namespace ocm {
+              class OrbitDeterminationKey;
+              class OrbitDetermination;
+            }
+          }
+        }
         namespace utils {
           namespace lexical {
             class ParseToken;
           }
           class ContextBinding;
-        }
-        namespace ndm {
-          namespace odm {
-            namespace ocm {
-              class OrbitDetermination;
-              class OrbitDeterminationKey;
-            }
-          }
         }
       }
     }
@@ -44,9 +44,9 @@ namespace org {
               class OrbitDeterminationKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_22f0fccb35944945,
-                  mid_valueOf_9354acd6506346ad,
-                  mid_values_1ed7791c9e6b718f,
+                  mid_process_0072cda7b17789c4,
+                  mid_valueOf_60748ebb979d4329,
+                  mid_values_82853cd1e5b0e1a3,
                   max_mid
                 };
 

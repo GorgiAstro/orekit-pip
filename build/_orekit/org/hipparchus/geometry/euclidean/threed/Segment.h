@@ -31,10 +31,10 @@ namespace org {
           class Segment : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_4644e9e8a32f72dd,
-              mid_getEnd_8b724f8b4fdad1a2,
-              mid_getLine_26296f26a05c4026,
-              mid_getStart_8b724f8b4fdad1a2,
+              mid_init$_9afd025fd8b6ee2b,
+              mid_getEnd_032312bdeb3f2f93,
+              mid_getLine_9d5e1fb92f24d9b0,
+              mid_getStart_032312bdeb3f2f93,
               max_mid
             };
 

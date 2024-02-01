@@ -37,17 +37,17 @@ namespace org {
               class AngularVelocity : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_a1fa5dae97ea5ed2,
-                  mid_getAngVelX_b74f83833fdad017,
-                  mid_getAngVelY_b74f83833fdad017,
-                  mid_getAngVelZ_b74f83833fdad017,
-                  mid_getEndpoints_c60ad1d207bc8e06,
-                  mid_getFrame_69d8be1b6b0a1a94,
-                  mid_setAngVelX_8ba9fe7a847cecad,
-                  mid_setAngVelY_8ba9fe7a847cecad,
-                  mid_setAngVelZ_8ba9fe7a847cecad,
-                  mid_setFrame_4755133c5c4c59be,
-                  mid_validate_8ba9fe7a847cecad,
+                  mid_init$_ff7cb6c242604316,
+                  mid_getAngVelX_9981f74b2d109da6,
+                  mid_getAngVelY_9981f74b2d109da6,
+                  mid_getAngVelZ_9981f74b2d109da6,
+                  mid_getEndpoints_d67fadc29cf1ce4a,
+                  mid_getFrame_0fc1562b68204151,
+                  mid_setAngVelX_1ad26e8c8c0cd65b,
+                  mid_setAngVelY_1ad26e8c8c0cd65b,
+                  mid_setAngVelZ_1ad26e8c8c0cd65b,
+                  mid_setFrame_2c8b859a72c0094e,
+                  mid_validate_1ad26e8c8c0cd65b,
                   max_mid
                 };
 

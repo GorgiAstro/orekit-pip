@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,36 +27,36 @@ namespace org {
             class CommonGnssData : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_2aa803b9073e6a76,
-                mid_getAf0_b74f83833fdad017,
-                mid_getAf1_b74f83833fdad017,
-                mid_getAngularVelocity_b74f83833fdad017,
-                mid_getCycleDuration_b74f83833fdad017,
-                mid_getDate_c325492395d89b24,
-                mid_getE_b74f83833fdad017,
-                mid_getI0_b74f83833fdad017,
-                mid_getM0_b74f83833fdad017,
-                mid_getMu_b74f83833fdad017,
-                mid_getOmega0_b74f83833fdad017,
-                mid_getOmegaDot_b74f83833fdad017,
-                mid_getPRN_55546ef6a647f39b,
-                mid_getPa_b74f83833fdad017,
-                mid_getSma_b74f83833fdad017,
-                mid_getTime_b74f83833fdad017,
-                mid_getWeek_55546ef6a647f39b,
-                mid_setAf0_8ba9fe7a847cecad,
-                mid_setAf1_8ba9fe7a847cecad,
-                mid_setDate_02135a6ef25adb4b,
-                mid_setE_8ba9fe7a847cecad,
-                mid_setI0_8ba9fe7a847cecad,
-                mid_setM0_8ba9fe7a847cecad,
-                mid_setOmega0_8ba9fe7a847cecad,
-                mid_setOmegaDot_8ba9fe7a847cecad,
-                mid_setPRN_44ed599e93e8a30c,
-                mid_setPa_8ba9fe7a847cecad,
-                mid_setSma_8ba9fe7a847cecad,
-                mid_setTime_8ba9fe7a847cecad,
-                mid_setWeek_44ed599e93e8a30c,
+                mid_init$_905e65280a4e6722,
+                mid_getAf0_9981f74b2d109da6,
+                mid_getAf1_9981f74b2d109da6,
+                mid_getAngularVelocity_9981f74b2d109da6,
+                mid_getCycleDuration_9981f74b2d109da6,
+                mid_getDate_80e11148db499dda,
+                mid_getE_9981f74b2d109da6,
+                mid_getI0_9981f74b2d109da6,
+                mid_getM0_9981f74b2d109da6,
+                mid_getMu_9981f74b2d109da6,
+                mid_getOmega0_9981f74b2d109da6,
+                mid_getOmegaDot_9981f74b2d109da6,
+                mid_getPRN_d6ab429752e7c267,
+                mid_getPa_9981f74b2d109da6,
+                mid_getSma_9981f74b2d109da6,
+                mid_getTime_9981f74b2d109da6,
+                mid_getWeek_d6ab429752e7c267,
+                mid_setAf0_1ad26e8c8c0cd65b,
+                mid_setAf1_1ad26e8c8c0cd65b,
+                mid_setDate_8497861b879c83f7,
+                mid_setE_1ad26e8c8c0cd65b,
+                mid_setI0_1ad26e8c8c0cd65b,
+                mid_setM0_1ad26e8c8c0cd65b,
+                mid_setOmega0_1ad26e8c8c0cd65b,
+                mid_setOmegaDot_1ad26e8c8c0cd65b,
+                mid_setPRN_8fd427ab23829bf5,
+                mid_setPa_1ad26e8c8c0cd65b,
+                mid_setSma_1ad26e8c8c0cd65b,
+                mid_setTime_1ad26e8c8c0cd65b,
+                mid_setWeek_8fd427ab23829bf5,
                 max_mid
               };
 

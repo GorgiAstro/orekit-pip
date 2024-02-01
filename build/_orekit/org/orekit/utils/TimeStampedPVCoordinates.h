@@ -4,6 +4,16 @@
 #include "org/orekit/utils/PVCoordinates.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace time {
       class TimeStamped;
@@ -16,16 +26,6 @@ namespace org {
     }
     namespace frames {
       class Frame;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
     }
   }
 }
@@ -44,20 +44,20 @@ namespace org {
       class TimeStampedPVCoordinates : public ::org::orekit::utils::PVCoordinates {
        public:
         enum {
-          mid_init$_8efeb57fde24921f,
-          mid_init$_a6070c42868c5d8c,
-          mid_init$_851a055d87a1592a,
-          mid_init$_1e47dd5ffc56db57,
-          mid_init$_82104ca8525f109d,
-          mid_init$_e4bf4a0667705a20,
-          mid_init$_1a989c3a0adebecc,
-          mid_init$_ce6aad1c634aaa44,
-          mid_init$_7963227a1d3edf49,
-          mid_getDate_c325492395d89b24,
-          mid_shiftedBy_b32704ef18d6aef9,
-          mid_toString_1c1fa1e935d6cdcf,
-          mid_toString_2ee13d9bd10373d0,
-          mid_toTaylorProvider_2d5eb094f644b70b,
+          mid_init$_5883f20309d382ad,
+          mid_init$_31e6f8c616daea23,
+          mid_init$_9204f9dff7aae59d,
+          mid_init$_74a905f732d238fd,
+          mid_init$_57454fa8af15e738,
+          mid_init$_04ca53ad0bba71dc,
+          mid_init$_0daba8f4c17ab86c,
+          mid_init$_60ceb85117ebbadb,
+          mid_init$_6d066b60bdb16669,
+          mid_getDate_80e11148db499dda,
+          mid_shiftedBy_1d2bc26bd4fe8250,
+          mid_toString_d2c8eb4129821f0e,
+          mid_toString_244ea083ab9940d6,
+          mid_toTaylorProvider_4bf66d6d931a42d4,
           max_mid
         };
 

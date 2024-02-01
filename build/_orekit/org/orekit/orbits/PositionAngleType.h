@@ -25,8 +25,8 @@ namespace org {
       class PositionAngleType : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_095278a04a4b5edf,
-          mid_values_4d2487389e53dd3a,
+          mid_valueOf_75659cc7f48b4c9d,
+          mid_values_31a79bc0f8363ca1,
           max_mid
         };
 

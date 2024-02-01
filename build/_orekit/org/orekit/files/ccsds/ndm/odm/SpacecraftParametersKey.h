@@ -41,9 +41,9 @@ namespace org {
             class SpacecraftParametersKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_9cab59e1b6ed0632,
-                mid_valueOf_873a1ad5148e88e2,
-                mid_values_e7bcac37e80a0c82,
+                mid_process_fce2f4276d4b34ac,
+                mid_valueOf_558e7eae3c7a2f1b,
+                mid_values_6446e9444a35bc1b,
                 max_mid
               };
 

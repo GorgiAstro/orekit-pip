@@ -4,6 +4,23 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+    namespace estimation {
+      namespace measurements {
+        class EstimatedMeasurementBase;
+        namespace gnss {
+          class OneWayGNSSPhase;
+        }
+        class EstimationModifier;
+      }
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -11,23 +28,6 @@ namespace org {
           class Vector3D;
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-    namespace estimation {
-      namespace measurements {
-        namespace gnss {
-          class OneWayGNSSPhase;
-        }
-        class EstimationModifier;
-        class EstimatedMeasurementBase;
-      }
-    }
-    namespace utils {
-      class ParameterDriver;
     }
   }
 }
@@ -50,9 +50,9 @@ namespace org {
           class OnBoardAntennaOneWayGNSSPhaseModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a3f6e98498ad57a5,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_modifyWithoutDerivatives_308087fabc1d7f66,
+              mid_init$_471620e7e7f15fbf,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_modifyWithoutDerivatives_ecce216dce506020,
               max_mid
             };
 

@@ -5,6 +5,10 @@
 
 namespace org {
   namespace orekit {
+    namespace utils {
+      class ParameterDriversProvider;
+      class ParameterDriver;
+    }
     namespace time {
       class TimeStamped;
       class AbsoluteDate;
@@ -13,17 +17,13 @@ namespace org {
     namespace propagation {
       namespace analytical {
         namespace tle {
-          class TLE;
           namespace generation {
             class TleGenerationAlgorithm;
           }
+          class TLE;
         }
       }
       class SpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriversProvider;
-      class ParameterDriver;
     }
   }
 }
@@ -50,38 +50,38 @@ namespace org {
           class TLE : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a627ad9c5959309d,
-              mid_init$_4f379502d89f9700,
-              mid_init$_4b8b0d91b33443f2,
-              mid_init$_aac91b87b74d17d7,
-              mid_equals_460c5e2d9d51c6cc,
-              mid_getBStar_b74f83833fdad017,
-              mid_getBStar_fd347811007a6ba3,
-              mid_getClassification_5e2f8fc4d7c03fbd,
-              mid_getDate_c325492395d89b24,
-              mid_getE_b74f83833fdad017,
-              mid_getElementNumber_55546ef6a647f39b,
-              mid_getEphemerisType_55546ef6a647f39b,
-              mid_getI_b74f83833fdad017,
-              mid_getLaunchNumber_55546ef6a647f39b,
-              mid_getLaunchPiece_1c1fa1e935d6cdcf,
-              mid_getLaunchYear_55546ef6a647f39b,
-              mid_getLine1_1c1fa1e935d6cdcf,
-              mid_getLine2_1c1fa1e935d6cdcf,
-              mid_getMeanAnomaly_b74f83833fdad017,
-              mid_getMeanMotion_b74f83833fdad017,
-              mid_getMeanMotionFirstDerivative_b74f83833fdad017,
-              mid_getMeanMotionSecondDerivative_b74f83833fdad017,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_getPerigeeArgument_b74f83833fdad017,
-              mid_getRaan_b74f83833fdad017,
-              mid_getRevolutionNumberAtEpoch_55546ef6a647f39b,
-              mid_getSatelliteNumber_55546ef6a647f39b,
-              mid_getUtc_34d3bda0a8989e3e,
-              mid_hashCode_55546ef6a647f39b,
-              mid_isFormatOK_e7bf5b93f9300a4f,
-              mid_stateToTLE_2322846e1dcb232d,
-              mid_toString_1c1fa1e935d6cdcf,
+              mid_init$_771aee6c143cc92a,
+              mid_init$_1eedf1e919bbadca,
+              mid_init$_b09cbb0506b96195,
+              mid_init$_9c186c78af2acae0,
+              mid_equals_72faff9b05f5ed5e,
+              mid_getBStar_9981f74b2d109da6,
+              mid_getBStar_209f08246d708042,
+              mid_getClassification_153df32fe8b51cb6,
+              mid_getDate_80e11148db499dda,
+              mid_getE_9981f74b2d109da6,
+              mid_getElementNumber_d6ab429752e7c267,
+              mid_getEphemerisType_d6ab429752e7c267,
+              mid_getI_9981f74b2d109da6,
+              mid_getLaunchNumber_d6ab429752e7c267,
+              mid_getLaunchPiece_d2c8eb4129821f0e,
+              mid_getLaunchYear_d6ab429752e7c267,
+              mid_getLine1_d2c8eb4129821f0e,
+              mid_getLine2_d2c8eb4129821f0e,
+              mid_getMeanAnomaly_9981f74b2d109da6,
+              mid_getMeanMotion_9981f74b2d109da6,
+              mid_getMeanMotionFirstDerivative_9981f74b2d109da6,
+              mid_getMeanMotionSecondDerivative_9981f74b2d109da6,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_getPerigeeArgument_9981f74b2d109da6,
+              mid_getRaan_9981f74b2d109da6,
+              mid_getRevolutionNumberAtEpoch_d6ab429752e7c267,
+              mid_getSatelliteNumber_d6ab429752e7c267,
+              mid_getUtc_5e2cac12ab8da943,
+              mid_hashCode_d6ab429752e7c267,
+              mid_isFormatOK_15b8a96a7eadea1e,
+              mid_stateToTLE_9dc971ea76a5b73a,
+              mid_toString_d2c8eb4129821f0e,
               max_mid
             };
 

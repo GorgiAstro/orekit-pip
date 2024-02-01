@@ -7,12 +7,12 @@ namespace org {
   namespace hipparchus {
     namespace analysis {
       namespace differentiation {
-        class UnivariateDifferentiableFunction;
-        class UnivariateMatrixFunctionDifferentiator;
-        class UnivariateVectorFunctionDifferentiator;
+        class UnivariateFunctionDifferentiator;
         class UnivariateDifferentiableVectorFunction;
         class UnivariateDifferentiableMatrixFunction;
-        class UnivariateFunctionDifferentiator;
+        class UnivariateDifferentiableFunction;
+        class UnivariateVectorFunctionDifferentiator;
+        class UnivariateMatrixFunctionDifferentiator;
       }
       class UnivariateFunction;
       class UnivariateVectorFunction;
@@ -41,13 +41,13 @@ namespace org {
         class FiniteDifferencesDifferentiator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_d5322b8b512aeb26,
-            mid_init$_390258812740a16c,
-            mid_differentiate_220981d5dd65e2eb,
-            mid_differentiate_3622054ab553d5e4,
-            mid_differentiate_3e92258d2209079c,
-            mid_getNbPoints_55546ef6a647f39b,
-            mid_getStepSize_b74f83833fdad017,
+            mid_init$_4320462275d66e78,
+            mid_init$_2baad0ec229f7c27,
+            mid_differentiate_734852731d7ffcb1,
+            mid_differentiate_f183e80ab489f554,
+            mid_differentiate_a60494eeb9105ac5,
+            mid_getNbPoints_d6ab429752e7c267,
+            mid_getStepSize_9981f74b2d109da6,
             max_mid
           };
 

@@ -13,8 +13,8 @@ namespace org {
       class StateCovariance;
     }
     namespace orbits {
-      class Orbit;
       class PositionAngleType;
+      class Orbit;
       class OrbitType;
     }
     namespace frames {
@@ -42,20 +42,20 @@ namespace org {
       class StateCovariance : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a3e43bb509386d88,
-          mid_init$_dc92e4260cab11aa,
-          mid_changeCovarianceFrame_b6bbba5f1b0fd523,
-          mid_changeCovarianceFrame_962ea77ed517818a,
-          mid_changeCovarianceType_3fba55e1218cf3cb,
-          mid_checkFrameAndOrbitTypeConsistency_41a17ca6d6e11fdb,
-          mid_getDate_c325492395d89b24,
-          mid_getFrame_2c51111cc6894ba1,
-          mid_getLOF_f6a236b1948152b5,
-          mid_getMatrix_f77d745f2128c391,
-          mid_getOrbitType_c7d4737d7afca612,
-          mid_getPositionAngleType_c25055891f180348,
-          mid_getStm_dcf4bbb08852992a,
-          mid_shiftedBy_a7b1244c930324e1,
+          mid_init$_364094d938b5284f,
+          mid_init$_1d150244ba48542f,
+          mid_changeCovarianceFrame_05096ea8054f78aa,
+          mid_changeCovarianceFrame_b4ed24579e601754,
+          mid_changeCovarianceType_0b475d17b02f53b1,
+          mid_checkFrameAndOrbitTypeConsistency_4384175164eee214,
+          mid_getDate_80e11148db499dda,
+          mid_getFrame_cb151471db4570f0,
+          mid_getLOF_4b777b7213a5ce76,
+          mid_getMatrix_b2eebabce70526d8,
+          mid_getOrbitType_495f818d3570b7f5,
+          mid_getPositionAngleType_a6db4e6edefda4be,
+          mid_getStm_156b13240f4ab451,
+          mid_shiftedBy_3d494d6bca0f31f7,
           max_mid
         };
 

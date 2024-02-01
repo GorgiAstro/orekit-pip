@@ -10,12 +10,8 @@ namespace org {
     }
     namespace orbits {
       class CircularOrbit;
-      class Orbit;
       class CartesianOrbit;
-    }
-    namespace propagation {
-      class PropagationType;
-      class SpacecraftState;
+      class Orbit;
     }
     namespace forces {
       namespace gravity {
@@ -27,6 +23,10 @@ namespace org {
     }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace propagation {
+      class PropagationType;
+      class SpacecraftState;
     }
   }
 }
@@ -45,34 +45,34 @@ namespace org {
         class EcksteinHechlerPropagator : public ::org::orekit::propagation::analytical::AbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_d3fb9e6c8f7bc2ad,
-            mid_init$_39b04a826c6cca6b,
-            mid_init$_ad6825e713d771e2,
-            mid_init$_15b032b53d9d04df,
-            mid_init$_14f3f383ac8eb751,
-            mid_init$_b149cbd1639c6edc,
-            mid_init$_205af0b682407804,
-            mid_init$_6290118b0dd463b3,
-            mid_init$_aa6e6da4b4001fdc,
-            mid_init$_c2b0e265375635a9,
-            mid_init$_f485802d763f13ed,
-            mid_init$_a5f830cc0aa5c9db,
-            mid_init$_b5d1a67acc742c54,
-            mid_init$_d193b26bab79e1e6,
-            mid_computeMeanOrbit_8585b06d941de09d,
-            mid_computeMeanOrbit_18a84376ed44f182,
-            mid_computeMeanOrbit_7375dddaf35b0ea8,
-            mid_getCk0_25e1757a36c4dde2,
-            mid_getMu_b74f83833fdad017,
-            mid_getReferenceRadius_b74f83833fdad017,
-            mid_propagateOrbit_9fa63a6e974cee23,
-            mid_resetInitialState_280c3390961e0a50,
-            mid_resetInitialState_5cc6a7fd8ae54bf5,
-            mid_resetInitialState_37269bbd67e095aa,
-            mid_getMass_fd347811007a6ba3,
-            mid_resetIntermediateState_1c47c97cdbc7e206,
-            mid_resetIntermediateState_3e9d696c5e44e513,
-            mid_createHarvester_f85b53b28e0fe6bb,
+            mid_init$_4bca5d056f2171ab,
+            mid_init$_21b8c4d4301056aa,
+            mid_init$_b347ebba1de9fc04,
+            mid_init$_6c9c4264b15be175,
+            mid_init$_27bad39efbcf702c,
+            mid_init$_62d0cc98427b4eb5,
+            mid_init$_f8627afae6f0c6f2,
+            mid_init$_68d82ef50a685172,
+            mid_init$_c5477237f92cb418,
+            mid_init$_32e9d1e950a78bc0,
+            mid_init$_9facbb2d63b09a07,
+            mid_init$_5a6b3e62be7f2c62,
+            mid_init$_90f710ee9427b6d0,
+            mid_init$_1a7ee5bda9a1c74a,
+            mid_computeMeanOrbit_956b7e40617b376c,
+            mid_computeMeanOrbit_0eb73714067621de,
+            mid_computeMeanOrbit_956d95065efaec5f,
+            mid_getCk0_be783177b060994b,
+            mid_getMu_9981f74b2d109da6,
+            mid_getReferenceRadius_9981f74b2d109da6,
+            mid_propagateOrbit_9c4726700f694a3c,
+            mid_resetInitialState_72b846eb87f3af9a,
+            mid_resetInitialState_3f94e7a0a2844a08,
+            mid_resetInitialState_5463628f1a7002e0,
+            mid_getMass_209f08246d708042,
+            mid_createHarvester_d0aee1b2c15f4d53,
+            mid_resetIntermediateState_b69b5541e48d21c0,
+            mid_resetIntermediateState_5ecf00e07ef54854,
             max_mid
           };
 

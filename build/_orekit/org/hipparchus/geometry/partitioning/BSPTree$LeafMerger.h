@@ -27,7 +27,7 @@ namespace org {
         class BSPTree$LeafMerger : public ::java::lang::Object {
          public:
           enum {
-            mid_merge_c94b5934b8b7596c,
+            mid_merge_55aed08bd2c5c887,
             max_mid
           };
 

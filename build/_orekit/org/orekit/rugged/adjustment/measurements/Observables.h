@@ -17,8 +17,8 @@ namespace org {
     namespace rugged {
       namespace adjustment {
         namespace measurements {
-          class SensorToGroundMapping;
           class SensorToSensorMapping;
+          class SensorToGroundMapping;
         }
       }
     }
@@ -35,14 +35,14 @@ namespace org {
           class Observables : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_44ed599e93e8a30c,
-              mid_addGroundMapping_8e6e13960e940d33,
-              mid_addInterMapping_33f55f90ed9a2941,
-              mid_getGroundMapping_1d3ad911c8b09b5e,
-              mid_getGroundMappings_cb666ea1a15f5210,
-              mid_getInterMapping_280eb85d4190bd68,
-              mid_getInterMappings_cb666ea1a15f5210,
-              mid_getNbModels_55546ef6a647f39b,
+              mid_init$_8fd427ab23829bf5,
+              mid_addGroundMapping_21e736b4bc384718,
+              mid_addInterMapping_20c9447629790434,
+              mid_getGroundMapping_08c1775566c32e10,
+              mid_getGroundMappings_3bfef5c77ceb081a,
+              mid_getInterMapping_47130451895e05bd,
+              mid_getInterMappings_3bfef5c77ceb081a,
+              mid_getNbModels_d6ab429752e7c267,
               max_mid
             };
 

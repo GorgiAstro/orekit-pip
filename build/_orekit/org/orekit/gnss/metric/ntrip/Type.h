@@ -38,9 +38,9 @@ namespace org {
           class Type : public ::java::lang::Enum {
            public:
             enum {
-              mid_getParser_1cc26214b1e2c708,
-              mid_valueOf_9244764a4bbee0b9,
-              mid_values_75adff9a0344f94e,
+              mid_getParser_805561d5fb16cbab,
+              mid_valueOf_c99d05fb84f7a8ae,
+              mid_values_cf9dcd25953da753,
               max_mid
             };
 

@@ -16,11 +16,11 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataProvidersManager;
-    }
     namespace time {
       class TimeScale;
+    }
+    namespace data {
+      class DataProvidersManager;
     }
   }
 }
@@ -33,8 +33,8 @@ namespace org {
       class AbstractEopLoader : public ::org::orekit::data::AbstractSelfFeedingLoader {
        public:
         enum {
-          mid_init$_14b928924b2794ba,
-          mid_getUtc_34d3bda0a8989e3e,
+          mid_init$_b2466f5f478374ec,
+          mid_getUtc_5e2cac12ab8da943,
           max_mid
         };
 

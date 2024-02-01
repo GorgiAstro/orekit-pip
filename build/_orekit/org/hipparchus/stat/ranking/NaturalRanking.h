@@ -7,9 +7,9 @@ namespace org {
   namespace hipparchus {
     namespace stat {
       namespace ranking {
-        class NaNStrategy;
-        class RankingAlgorithm;
         class TiesStrategy;
+        class RankingAlgorithm;
+        class NaNStrategy;
       }
     }
     namespace random {
@@ -32,15 +32,15 @@ namespace org {
         class NaturalRanking : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_init$_762a548744e64bc1,
-            mid_init$_12e7f930f26d954d,
-            mid_init$_f1c8159898f25396,
-            mid_init$_c6e936703eef190b,
-            mid_init$_9ea9143ae8bc6296,
-            mid_getNanStrategy_9ae875326a45f3e9,
-            mid_getTiesStrategy_89158e6cc63b090c,
-            mid_rank_14dee4cb8cc3e959,
+            mid_init$_ff7cb6c242604316,
+            mid_init$_1a342cfb401ed671,
+            mid_init$_d714e6bd58b104cb,
+            mid_init$_e24b125c6ff6cc8c,
+            mid_init$_49a3c82f9e34fc75,
+            mid_init$_45df11e9d865ae4f,
+            mid_getNanStrategy_7ad66d754bcf87e2,
+            mid_getTiesStrategy_412886e0f6fc9df5,
+            mid_rank_51f624c89851da7e,
             max_mid
           };
 

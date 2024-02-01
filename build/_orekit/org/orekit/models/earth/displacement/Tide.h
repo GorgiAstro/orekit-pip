@@ -33,16 +33,16 @@ namespace org {
           class Tide : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_44ed599e93e8a30c,
-              mid_init$_ea412797eafea800,
-              mid_equals_460c5e2d9d51c6cc,
-              mid_getDelaunayMultipliers_4d095d7a08163110,
-              mid_getDoodsonMultipliers_4d095d7a08163110,
-              mid_getDoodsonNumber_55546ef6a647f39b,
-              mid_getPhase_e5a6deebdf7be070,
-              mid_getRate_e5a6deebdf7be070,
-              mid_getTauMultiplier_55546ef6a647f39b,
-              mid_hashCode_55546ef6a647f39b,
+              mid_init$_8fd427ab23829bf5,
+              mid_init$_ee5da648d666a7a9,
+              mid_equals_72faff9b05f5ed5e,
+              mid_getDelaunayMultipliers_d6f20bd740dd34cd,
+              mid_getDoodsonMultipliers_d6f20bd740dd34cd,
+              mid_getDoodsonNumber_d6ab429752e7c267,
+              mid_getPhase_7212d8ed403494a1,
+              mid_getRate_7212d8ed403494a1,
+              mid_getTauMultiplier_d6ab429752e7c267,
+              mid_hashCode_d6ab429752e7c267,
               max_mid
             };
 

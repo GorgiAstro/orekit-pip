@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace optim {
       class OptimizationData;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,11 +25,11 @@ namespace org {
         class SearchInterval : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_369b4c97255d5afa,
-            mid_init$_b5167f35b2521627,
-            mid_getMax_b74f83833fdad017,
-            mid_getMin_b74f83833fdad017,
-            mid_getStartValue_b74f83833fdad017,
+            mid_init$_13edac039e8cc967,
+            mid_init$_bd28dc6055dc5bbd,
+            mid_getMax_9981f74b2d109da6,
+            mid_getMin_9981f74b2d109da6,
+            mid_getStartValue_9981f74b2d109da6,
             max_mid
           };
 

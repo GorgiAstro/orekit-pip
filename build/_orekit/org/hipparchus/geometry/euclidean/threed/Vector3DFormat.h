@@ -4,11 +4,6 @@
 #include "org/hipparchus/geometry/VectorFormat.h"
 
 namespace java {
-  namespace text {
-    class FieldPosition;
-    class ParsePosition;
-    class NumberFormat;
-  }
   namespace util {
     class Locale;
   }
@@ -17,15 +12,20 @@ namespace java {
     class Class;
     class String;
   }
+  namespace text {
+    class FieldPosition;
+    class NumberFormat;
+    class ParsePosition;
+  }
 }
 namespace org {
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
-          class Euclidean3D;
           class Vector3DFormat;
+          class Euclidean3D;
+          class Vector3D;
         }
       }
       class Vector;
@@ -46,15 +46,15 @@ namespace org {
           class Vector3DFormat : public ::org::hipparchus::geometry::VectorFormat {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_init$_b7f3d50b51ef7518,
-              mid_init$_ee9345b4af8c40df,
-              mid_init$_d047b7641facca84,
-              mid_format_4b712c2465e37e54,
-              mid_getVector3DFormat_43a16a8b4506fabe,
-              mid_getVector3DFormat_1ae216ab37378c98,
-              mid_parse_7a448fc80928d881,
-              mid_parse_1be531ac6832f604,
+              mid_init$_ff7cb6c242604316,
+              mid_init$_327b6d3ae10b544b,
+              mid_init$_56b987237c71cdbb,
+              mid_init$_21a024496acf58f0,
+              mid_format_dbd94d7f7c5c0aa8,
+              mid_getVector3DFormat_f033d7c67942c06b,
+              mid_getVector3DFormat_22cf7c08b192af51,
+              mid_parse_e4728cd839ec795a,
+              mid_parse_d99e3f3b7dc9d7dc,
               max_mid
             };
 

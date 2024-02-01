@@ -4,11 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace text {
-    class FieldPosition;
-    class ParsePosition;
-    class NumberFormat;
-  }
   namespace util {
     class Locale;
   }
@@ -17,13 +12,18 @@ namespace java {
     class Class;
     class String;
   }
+  namespace text {
+    class FieldPosition;
+    class NumberFormat;
+    class ParsePosition;
+  }
 }
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class RealVector;
       class ArrayRealVector;
       class RealVectorFormat;
+      class RealVector;
     }
   }
 }
@@ -36,21 +36,21 @@ namespace org {
       class RealVectorFormat : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_init$_b7f3d50b51ef7518,
-          mid_init$_ee9345b4af8c40df,
-          mid_init$_d047b7641facca84,
-          mid_format_f977a35aa156a8cf,
-          mid_format_abe2e36bc146cee2,
-          mid_getAvailableLocales_8d2cd0b971cc7b85,
-          mid_getFormat_87ffffc449cd25a5,
-          mid_getPrefix_1c1fa1e935d6cdcf,
-          mid_getRealVectorFormat_66f031d367cbb5ab,
-          mid_getRealVectorFormat_b8faa7141586f40a,
-          mid_getSeparator_1c1fa1e935d6cdcf,
-          mid_getSuffix_1c1fa1e935d6cdcf,
-          mid_parse_73de0b2a5c7b5aad,
-          mid_parse_b466216443db2b86,
+          mid_init$_ff7cb6c242604316,
+          mid_init$_327b6d3ae10b544b,
+          mid_init$_56b987237c71cdbb,
+          mid_init$_21a024496acf58f0,
+          mid_format_6983b1b6aa229619,
+          mid_format_78476b49258c2578,
+          mid_getAvailableLocales_faf2576acf90261b,
+          mid_getFormat_525709eb5c5b5ea6,
+          mid_getPrefix_d2c8eb4129821f0e,
+          mid_getRealVectorFormat_0b282b8ef9359020,
+          mid_getRealVectorFormat_e891a93af627cd50,
+          mid_getSeparator_d2c8eb4129821f0e,
+          mid_getSuffix_d2c8eb4129821f0e,
+          mid_parse_07cb04cf78c83004,
+          mid_parse_a81ab6a2d02866ab,
           max_mid
         };
 

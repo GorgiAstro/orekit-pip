@@ -3,28 +3,28 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace utils {
-      class TimeStampedAngularCoordinates;
-      class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
+      class TimeStampedAngularCoordinates;
       class TimeStampedFieldAngularCoordinates;
+      class PVCoordinatesProvider;
+    }
+    namespace frames {
+      class Frame;
     }
     namespace attitudes {
       class FieldAttitude;
       class AttitudeBuilder;
       class Attitude;
     }
-    namespace frames {
-      class Frame;
-    }
+  }
+}
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -36,13 +36,13 @@ namespace org {
       class PythonAttitudeBuilder : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_build_52f3b2bb0d5542f2,
-          mid_build_ac690f9e371807c4,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_init$_ff7cb6c242604316,
+          mid_build_16f6708eb1cda684,
+          mid_build_11d80d4c91effa8b,
+          mid_finalize_ff7cb6c242604316,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
           max_mid
         };
 

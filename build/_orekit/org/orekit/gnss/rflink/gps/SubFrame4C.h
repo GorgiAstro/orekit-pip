@@ -19,7 +19,7 @@ namespace org {
           class SubFrame4C : public ::org::orekit::gnss::rflink::gps::SubFrame45 {
            public:
             enum {
-              mid_getERD_0e7cf35192c3effe,
+              mid_getERD_d938fc64e8c6df2d,
               max_mid
             };
 

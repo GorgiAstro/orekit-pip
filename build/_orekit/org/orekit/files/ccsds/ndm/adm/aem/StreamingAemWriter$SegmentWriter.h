@@ -11,6 +11,9 @@ namespace org {
       }
       class SpacecraftState;
     }
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -21,9 +24,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -45,10 +45,10 @@ namespace org {
               class StreamingAemWriter$SegmentWriter : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_a93b59d1b6b34cee,
-                  mid_finish_280c3390961e0a50,
-                  mid_handleStep_280c3390961e0a50,
-                  mid_init_3189c7446dbbb87e,
+                  mid_init$_2aa9eaae9ca8f3c7,
+                  mid_finish_72b846eb87f3af9a,
+                  mid_handleStep_72b846eb87f3af9a,
+                  mid_init_c410ce24bfc8448e,
                   max_mid
                 };
 

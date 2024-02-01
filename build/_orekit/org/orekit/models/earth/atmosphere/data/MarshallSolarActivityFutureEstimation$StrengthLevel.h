@@ -34,8 +34,8 @@ namespace org {
             class MarshallSolarActivityFutureEstimation$StrengthLevel : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_1eb88851bd3d031e,
-                mid_values_08d490781d442ba9,
+                mid_valueOf_8f96d2faa0bafa40,
+                mid_values_9b43c1971c493e5e,
                 max_mid
               };
 

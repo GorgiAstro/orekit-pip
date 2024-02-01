@@ -4,13 +4,13 @@
 #include "java/io/DataOutput.h"
 
 namespace java {
+  namespace io {
+    class IOException;
+  }
   namespace lang {
     class AutoCloseable;
     class Class;
     class Object;
-  }
-  namespace io {
-    class IOException;
   }
 }
 template<class T> class JArray;
@@ -21,12 +21,12 @@ namespace java {
     class ObjectOutput : public ::java::io::DataOutput {
      public:
       enum {
-        mid_close_a1fa5dae97ea5ed2,
-        mid_flush_a1fa5dae97ea5ed2,
-        mid_write_459771b03534868e,
-        mid_write_44ed599e93e8a30c,
-        mid_write_a9fddc59b07ce512,
-        mid_writeObject_55f3c894852c27a3,
+        mid_close_ff7cb6c242604316,
+        mid_flush_ff7cb6c242604316,
+        mid_write_bba2a19638de22ff,
+        mid_write_8fd427ab23829bf5,
+        mid_write_e4288ba5fbf20d28,
+        mid_writeObject_83ee235bb1e64e94,
         max_mid
       };
 

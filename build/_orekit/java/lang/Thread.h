@@ -5,14 +5,14 @@
 
 namespace java {
   namespace lang {
+    class Thread$State;
     class ThreadGroup;
     class Runnable;
     class Thread$UncaughtExceptionHandler;
-    class InterruptedException;
-    class StackTraceElement;
-    class Thread$State;
     class Thread;
+    class StackTraceElement;
     class Class;
+    class InterruptedException;
     class String;
     class ClassLoader;
   }
@@ -28,57 +28,57 @@ namespace java {
     class Thread : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_a1fa5dae97ea5ed2,
-        mid_init$_734b91ac30d5f9b4,
-        mid_init$_5e38fe117cc20873,
-        mid_init$_c0f56f14913e02e9,
-        mid_init$_7ed972a788392058,
-        mid_init$_96240008f388ac78,
-        mid_init$_b9570bc7961950c4,
-        mid_init$_7977844e3ab4abbb,
-        mid_init$_3f44ea8af58136d8,
-        mid_activeCount_55546ef6a647f39b,
-        mid_checkAccess_a1fa5dae97ea5ed2,
-        mid_countStackFrames_55546ef6a647f39b,
-        mid_currentThread_2740fea5ba8b0c43,
-        mid_dumpStack_a1fa5dae97ea5ed2,
-        mid_enumerate_0e7ff9b56e206905,
-        mid_getAllStackTraces_810bed48fafb0b9a,
-        mid_getContextClassLoader_fb951be34fc77929,
-        mid_getDefaultUncaughtExceptionHandler_a89b963f21517a30,
-        mid_getId_6c0ce7e438e5ded4,
-        mid_getName_1c1fa1e935d6cdcf,
-        mid_getPriority_55546ef6a647f39b,
-        mid_getStackTrace_17c6439d4c7f5646,
-        mid_getState_a3f378fa3bbd0de4,
-        mid_getThreadGroup_4241f87211c845e3,
-        mid_getUncaughtExceptionHandler_a89b963f21517a30,
-        mid_holdsLock_460c5e2d9d51c6cc,
-        mid_interrupt_a1fa5dae97ea5ed2,
-        mid_interrupted_9ab94ac1dc23b105,
-        mid_isAlive_9ab94ac1dc23b105,
-        mid_isDaemon_9ab94ac1dc23b105,
-        mid_isInterrupted_9ab94ac1dc23b105,
-        mid_join_a1fa5dae97ea5ed2,
-        mid_join_3d7dd2314a0dd456,
-        mid_join_c89ec8817ad4d2c6,
-        mid_onSpinWait_a1fa5dae97ea5ed2,
-        mid_resume_a1fa5dae97ea5ed2,
-        mid_run_a1fa5dae97ea5ed2,
-        mid_setContextClassLoader_453dfedd86409b20,
-        mid_setDaemon_fcb96c98de6fad04,
-        mid_setDefaultUncaughtExceptionHandler_e3538aa684020dec,
-        mid_setName_734b91ac30d5f9b4,
-        mid_setPriority_44ed599e93e8a30c,
-        mid_setUncaughtExceptionHandler_e3538aa684020dec,
-        mid_sleep_3d7dd2314a0dd456,
-        mid_sleep_c89ec8817ad4d2c6,
-        mid_start_a1fa5dae97ea5ed2,
-        mid_stop_a1fa5dae97ea5ed2,
-        mid_suspend_a1fa5dae97ea5ed2,
-        mid_toString_1c1fa1e935d6cdcf,
-        mid_yield_a1fa5dae97ea5ed2,
-        mid_clone_541690f9ee81d3ad,
+        mid_init$_ff7cb6c242604316,
+        mid_init$_105e1eadb709d9ac,
+        mid_init$_9069f6f03f0908d6,
+        mid_init$_874e391556ea1b99,
+        mid_init$_bc41391f15bec3a5,
+        mid_init$_2a9d454a383c1167,
+        mid_init$_f6a5a8f1ff0fd9bb,
+        mid_init$_851ebfafe6399ff6,
+        mid_init$_db14b7521dac523b,
+        mid_activeCount_d6ab429752e7c267,
+        mid_checkAccess_ff7cb6c242604316,
+        mid_countStackFrames_d6ab429752e7c267,
+        mid_currentThread_a84f0397998296c9,
+        mid_dumpStack_ff7cb6c242604316,
+        mid_enumerate_156c27ca0b550ad2,
+        mid_getAllStackTraces_dbcb8bbac6b35e0d,
+        mid_getContextClassLoader_7e232a6d8e4f63bc,
+        mid_getDefaultUncaughtExceptionHandler_77594ab3cab0151f,
+        mid_getId_42c72b98e3c2e08a,
+        mid_getName_d2c8eb4129821f0e,
+        mid_getPriority_d6ab429752e7c267,
+        mid_getStackTrace_21f9fd78d23bbd0b,
+        mid_getState_b9c99ad42ec3f57c,
+        mid_getThreadGroup_7b80b98e8a66c9f8,
+        mid_getUncaughtExceptionHandler_77594ab3cab0151f,
+        mid_holdsLock_72faff9b05f5ed5e,
+        mid_interrupt_ff7cb6c242604316,
+        mid_interrupted_eee3de00fe971136,
+        mid_isAlive_eee3de00fe971136,
+        mid_isDaemon_eee3de00fe971136,
+        mid_isInterrupted_eee3de00fe971136,
+        mid_join_ff7cb6c242604316,
+        mid_join_f5bbab7e97879358,
+        mid_join_915640b8c3079553,
+        mid_onSpinWait_ff7cb6c242604316,
+        mid_resume_ff7cb6c242604316,
+        mid_run_ff7cb6c242604316,
+        mid_setContextClassLoader_a61ce527d5e72f5b,
+        mid_setDaemon_b35db77cae58639e,
+        mid_setDefaultUncaughtExceptionHandler_e7c9c19a89809690,
+        mid_setName_105e1eadb709d9ac,
+        mid_setPriority_8fd427ab23829bf5,
+        mid_setUncaughtExceptionHandler_e7c9c19a89809690,
+        mid_sleep_f5bbab7e97879358,
+        mid_sleep_915640b8c3079553,
+        mid_start_ff7cb6c242604316,
+        mid_stop_ff7cb6c242604316,
+        mid_suspend_ff7cb6c242604316,
+        mid_toString_d2c8eb4129821f0e,
+        mid_yield_ff7cb6c242604316,
+        mid_clone_704a5bee58538972,
         max_mid
       };
 

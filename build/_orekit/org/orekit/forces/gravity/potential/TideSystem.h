@@ -3,12 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace forces {
@@ -18,6 +12,12 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,8 +31,8 @@ namespace org {
           class TideSystem : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_c25fab39e503a044,
-              mid_values_3b2c378a4b3ff1b1,
+              mid_valueOf_240b63d405e1af52,
+              mid_values_585beb934297486d,
               max_mid
             };
 

@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace models {
@@ -21,14 +13,14 @@ namespace org {
         }
       }
     }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+      class TimeScale;
+    }
     namespace bodies {
       class FieldGeodeticPoint;
       class GeodeticPoint;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-      class TimeScale;
     }
     namespace utils {
       class ParameterDriver;
@@ -36,6 +28,14 @@ namespace org {
   }
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -49,15 +49,15 @@ namespace org {
           class ViennaOneModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_b15baa0161a4e9c7,
-              mid_init$_0559b4bd8fb5191f,
-              mid_computeZenithDelay_0b467d379fb3f504,
-              mid_computeZenithDelay_90983db312f6218b,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_mappingFactors_6dcded9cb7dee3c2,
-              mid_mappingFactors_6e118a7a5998051c,
-              mid_pathDelay_2edbfa177156ee09,
-              mid_pathDelay_6f66c6b7094d6f08,
+              mid_init$_64100e41ba74de8f,
+              mid_init$_24ca2746f3be6434,
+              mid_computeZenithDelay_cf38abfd6de73cb1,
+              mid_computeZenithDelay_2a8a1978d107f938,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_mappingFactors_7d2717f150c68a9f,
+              mid_mappingFactors_090b631fda469acd,
+              mid_pathDelay_a07808bbc1ebff8d,
+              mid_pathDelay_3e863f8cc7cde633,
               max_mid
             };
 

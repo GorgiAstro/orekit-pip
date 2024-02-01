@@ -4,22 +4,22 @@
 #include "java/text/Format.h"
 
 namespace java {
-  namespace text {
-    class FieldPosition;
-    class ParsePosition;
-    class ParseException;
-    class NumberFormat;
-  }
   namespace util {
     class Locale;
     class Currency;
   }
   namespace lang {
-    class Number;
     class StringBuffer;
+    class Number;
     class Class;
     class Object;
     class String;
+  }
+  namespace text {
+    class ParseException;
+    class FieldPosition;
+    class ParsePosition;
+    class NumberFormat;
   }
 }
 template<class T> class JArray;
@@ -30,42 +30,42 @@ namespace java {
     class NumberFormat : public ::java::text::Format {
      public:
       enum {
-        mid_clone_541690f9ee81d3ad,
-        mid_equals_460c5e2d9d51c6cc,
-        mid_format_11ae2994efd15504,
-        mid_format_9078858c11a58b1e,
-        mid_format_cdee9bc08b68d2f3,
-        mid_format_b972afa1d89f0ad4,
-        mid_format_1d561f51d282798c,
-        mid_getAvailableLocales_8d2cd0b971cc7b85,
-        mid_getCurrency_5c4bce1ad9114b42,
-        mid_getCurrencyInstance_87ffffc449cd25a5,
-        mid_getCurrencyInstance_3c858cd11341b00a,
-        mid_getInstance_87ffffc449cd25a5,
-        mid_getInstance_3c858cd11341b00a,
-        mid_getIntegerInstance_87ffffc449cd25a5,
-        mid_getIntegerInstance_3c858cd11341b00a,
-        mid_getMaximumFractionDigits_55546ef6a647f39b,
-        mid_getMaximumIntegerDigits_55546ef6a647f39b,
-        mid_getMinimumFractionDigits_55546ef6a647f39b,
-        mid_getMinimumIntegerDigits_55546ef6a647f39b,
-        mid_getNumberInstance_87ffffc449cd25a5,
-        mid_getNumberInstance_3c858cd11341b00a,
-        mid_getPercentInstance_87ffffc449cd25a5,
-        mid_getPercentInstance_3c858cd11341b00a,
-        mid_hashCode_55546ef6a647f39b,
-        mid_isGroupingUsed_9ab94ac1dc23b105,
-        mid_isParseIntegerOnly_9ab94ac1dc23b105,
-        mid_parse_3767780c432a8ea3,
-        mid_parse_a972e28e38f8fd3f,
-        mid_parseObject_ad5444510b7b5820,
-        mid_setCurrency_4943c1e384d46623,
-        mid_setGroupingUsed_fcb96c98de6fad04,
-        mid_setMaximumFractionDigits_44ed599e93e8a30c,
-        mid_setMaximumIntegerDigits_44ed599e93e8a30c,
-        mid_setMinimumFractionDigits_44ed599e93e8a30c,
-        mid_setMinimumIntegerDigits_44ed599e93e8a30c,
-        mid_setParseIntegerOnly_fcb96c98de6fad04,
+        mid_clone_704a5bee58538972,
+        mid_equals_72faff9b05f5ed5e,
+        mid_format_e3ac8af686594d08,
+        mid_format_7fdd1777495672ef,
+        mid_format_bd8d8164e076ccaa,
+        mid_format_8a939fb9d04314c2,
+        mid_format_1f446f5fe940e316,
+        mid_getAvailableLocales_faf2576acf90261b,
+        mid_getCurrency_e857dd6f37c7fee3,
+        mid_getCurrencyInstance_525709eb5c5b5ea6,
+        mid_getCurrencyInstance_5ed382d8d7b942c5,
+        mid_getInstance_525709eb5c5b5ea6,
+        mid_getInstance_5ed382d8d7b942c5,
+        mid_getIntegerInstance_525709eb5c5b5ea6,
+        mid_getIntegerInstance_5ed382d8d7b942c5,
+        mid_getMaximumFractionDigits_d6ab429752e7c267,
+        mid_getMaximumIntegerDigits_d6ab429752e7c267,
+        mid_getMinimumFractionDigits_d6ab429752e7c267,
+        mid_getMinimumIntegerDigits_d6ab429752e7c267,
+        mid_getNumberInstance_525709eb5c5b5ea6,
+        mid_getNumberInstance_5ed382d8d7b942c5,
+        mid_getPercentInstance_525709eb5c5b5ea6,
+        mid_getPercentInstance_5ed382d8d7b942c5,
+        mid_hashCode_d6ab429752e7c267,
+        mid_isGroupingUsed_eee3de00fe971136,
+        mid_isParseIntegerOnly_eee3de00fe971136,
+        mid_parse_ab62d11a21abbc99,
+        mid_parse_5a7ce414e545ae55,
+        mid_parseObject_43b97b9c23ff173e,
+        mid_setCurrency_db8d865c2c65c553,
+        mid_setGroupingUsed_b35db77cae58639e,
+        mid_setMaximumFractionDigits_8fd427ab23829bf5,
+        mid_setMaximumIntegerDigits_8fd427ab23829bf5,
+        mid_setMinimumFractionDigits_8fd427ab23829bf5,
+        mid_setMinimumIntegerDigits_8fd427ab23829bf5,
+        mid_setParseIntegerOnly_b35db77cae58639e,
         max_mid
       };
 

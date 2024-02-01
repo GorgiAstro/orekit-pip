@@ -6,11 +6,11 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
-      class FieldODEStateAndDerivative;
       namespace events {
-        class FilterType;
         class FieldODEEventDetector;
+        class FilterType;
       }
+      class FieldODEStateAndDerivative;
     }
     class Field;
     class CalculusFieldElement;
@@ -31,11 +31,11 @@ namespace org {
         class FieldEventSlopeFilter : public ::org::hipparchus::ode::events::AbstractFieldODEDetector {
          public:
           enum {
-            mid_init$_230ecae14305e5ab,
-            mid_g_751903dc38e0b7e8,
-            mid_getDetector_12e77528668ead99,
-            mid_init_55fdeef582303a99,
-            mid_create_c305cfb32393293f,
+            mid_init$_27f5b9f874ab26c9,
+            mid_g_455ff24598d85771,
+            mid_getDetector_99863455dd1dde70,
+            mid_init_2a077928ff78cfcb,
+            mid_create_7ae46bf9328f5ad7,
             max_mid
           };
 

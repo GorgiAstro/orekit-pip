@@ -5,20 +5,20 @@
 
 namespace java {
   namespace io {
-    class NotActiveException;
-    class ObjectInputStream$GetField;
-    class ObjectStreamConstants;
-    class InvalidObjectException;
-    class IOException;
-    class ObjectInputValidation;
-    class ObjectInput;
     class ObjectInputFilter;
+    class IOException;
+    class ObjectInput;
+    class InvalidObjectException;
+    class ObjectInputStream$GetField;
+    class ObjectInputValidation;
+    class NotActiveException;
+    class ObjectStreamConstants;
   }
   namespace lang {
+    class ClassNotFoundException;
     class Class;
     class Object;
     class String;
-    class ClassNotFoundException;
   }
 }
 template<class T> class JArray;
@@ -29,40 +29,40 @@ namespace java {
     class ObjectInputStream : public ::java::io::InputStream {
      public:
       enum {
-        mid_init$_471a178453aa39ad,
-        mid_available_55546ef6a647f39b,
-        mid_close_a1fa5dae97ea5ed2,
-        mid_defaultReadObject_a1fa5dae97ea5ed2,
-        mid_getObjectInputFilter_89c6bdd378c3b156,
-        mid_read_55546ef6a647f39b,
-        mid_read_296dd75c373e2c1d,
-        mid_readBoolean_9ab94ac1dc23b105,
-        mid_readByte_82ba37184c5152a3,
-        mid_readChar_5e2f8fc4d7c03fbd,
-        mid_readDouble_b74f83833fdad017,
-        mid_readFields_84b973d9e9db21eb,
-        mid_readFloat_1fb1bf0772ae5db7,
-        mid_readFully_459771b03534868e,
-        mid_readFully_a9fddc59b07ce512,
-        mid_readInt_55546ef6a647f39b,
-        mid_readLine_1c1fa1e935d6cdcf,
-        mid_readLong_6c0ce7e438e5ded4,
-        mid_readObject_541690f9ee81d3ad,
-        mid_readShort_02a2271f89f4492b,
-        mid_readUTF_1c1fa1e935d6cdcf,
-        mid_readUnshared_541690f9ee81d3ad,
-        mid_readUnsignedByte_55546ef6a647f39b,
-        mid_readUnsignedShort_55546ef6a647f39b,
-        mid_registerValidation_118ce9d62d9df0b6,
-        mid_setObjectInputFilter_53c1740e04034bea,
-        mid_skipBytes_0e7cf35192c3effe,
-        mid_readObjectOverride_541690f9ee81d3ad,
-        mid_resolveProxyClass_f2a5d294c3c46502,
-        mid_resolveObject_5804c890f94a02b6,
-        mid_enableResolveObject_52d2d2523d94d978,
-        mid_readStreamHeader_a1fa5dae97ea5ed2,
-        mid_readClassDescriptor_fb017e274a57c596,
-        mid_resolveClass_073be9f31fb3cb10,
+        mid_init$_8f4bef0679d2f8d5,
+        mid_available_d6ab429752e7c267,
+        mid_close_ff7cb6c242604316,
+        mid_defaultReadObject_ff7cb6c242604316,
+        mid_getObjectInputFilter_cbabae5c581a3f60,
+        mid_read_d6ab429752e7c267,
+        mid_read_1351cbafe5a435a7,
+        mid_readBoolean_eee3de00fe971136,
+        mid_readByte_5bc9c54e4a4e6e3f,
+        mid_readChar_153df32fe8b51cb6,
+        mid_readDouble_9981f74b2d109da6,
+        mid_readFields_4bf4994849ee3af3,
+        mid_readFloat_0e3b995f823d65ff,
+        mid_readFully_bba2a19638de22ff,
+        mid_readFully_e4288ba5fbf20d28,
+        mid_readInt_d6ab429752e7c267,
+        mid_readLine_d2c8eb4129821f0e,
+        mid_readLong_42c72b98e3c2e08a,
+        mid_readObject_704a5bee58538972,
+        mid_readShort_5067fec74ceda473,
+        mid_readUTF_d2c8eb4129821f0e,
+        mid_readUnshared_704a5bee58538972,
+        mid_readUnsignedByte_d6ab429752e7c267,
+        mid_readUnsignedShort_d6ab429752e7c267,
+        mid_registerValidation_c10a52e9d0d47389,
+        mid_setObjectInputFilter_a980436ee9bfb980,
+        mid_skipBytes_d938fc64e8c6df2d,
+        mid_readObjectOverride_704a5bee58538972,
+        mid_resolveProxyClass_82a7d5c3e9692571,
+        mid_resolveObject_05290476c26136d7,
+        mid_enableResolveObject_80aaf3d99b4df682,
+        mid_readStreamHeader_ff7cb6c242604316,
+        mid_readClassDescriptor_bd13c6c1b9563bca,
+        mid_resolveClass_490f3fb6e078c1cd,
         max_mid
       };
 

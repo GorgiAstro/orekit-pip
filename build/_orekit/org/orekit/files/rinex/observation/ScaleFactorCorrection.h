@@ -3,19 +3,19 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace gnss {
-      class ObservationType;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace gnss {
+      class ObservationType;
+    }
   }
 }
 template<class T> class JArray;
@@ -29,9 +29,9 @@ namespace org {
           class ScaleFactorCorrection : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_ff4b669f0c231c8c,
-              mid_getCorrection_b74f83833fdad017,
-              mid_getTypesObsScaled_e62d3bb06d56d7e3,
+              mid_init$_bc12f79c8a19bd0d,
+              mid_getCorrection_9981f74b2d109da6,
+              mid_getTypesObsScaled_d751c1a57012b438,
               max_mid
             };
 

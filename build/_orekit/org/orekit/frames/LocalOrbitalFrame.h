@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class PVCoordinatesProvider;
-    }
     namespace frames {
       class LOF;
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
     }
   }
 }
@@ -29,7 +29,7 @@ namespace org {
       class LocalOrbitalFrame : public ::org::orekit::frames::Frame {
        public:
         enum {
-          mid_init$_9a343e7aff224090,
+          mid_init$_ef7a2708dc956285,
           max_mid
         };
 

@@ -5,25 +5,25 @@
 
 namespace org {
   namespace orekit {
+    namespace utils {
+      class FieldPVCoordinatesProvider;
+      class PVCoordinatesProvider;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
+    namespace frames {
+      class Frame;
+    }
     namespace gnss {
       namespace attitude {
         class GNSSAttitudeProvider;
       }
     }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class PVCoordinatesProvider;
-      class FieldPVCoordinatesProvider;
-    }
     namespace attitudes {
       class FieldAttitude;
       class Attitude;
-    }
-    namespace frames {
-      class Frame;
     }
   }
 }
@@ -43,15 +43,15 @@ namespace org {
         class PythonGNSSAttitudeProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getAttitude_896ee4d68989b1e8,
-            mid_getAttitude_21845cfb0034fe1c,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
-            mid_validityEnd_c325492395d89b24,
-            mid_validityStart_c325492395d89b24,
+            mid_init$_ff7cb6c242604316,
+            mid_finalize_ff7cb6c242604316,
+            mid_getAttitude_aab1c6ab68ffdcbb,
+            mid_getAttitude_a02177519e1b6a45,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
+            mid_validityEnd_80e11148db499dda,
+            mid_validityStart_80e11148db499dda,
             max_mid
           };
 

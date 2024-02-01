@@ -27,8 +27,8 @@ namespace org {
         class EstimationsProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_getEstimatedMeasurement_9e3faa50e0df43fe,
-            mid_getNumber_55546ef6a647f39b,
+            mid_getEstimatedMeasurement_a0080ef23630d9a1,
+            mid_getNumber_d6ab429752e7c267,
             max_mid
           };
 

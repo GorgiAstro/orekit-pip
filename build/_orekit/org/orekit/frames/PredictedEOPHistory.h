@@ -24,7 +24,7 @@ namespace org {
       class PredictedEOPHistory : public ::org::orekit::frames::EOPHistory {
        public:
         enum {
-          mid_init$_7667ee5f039a6d7a,
+          mid_init$_e939fd4491c9559b,
           max_mid
         };
 

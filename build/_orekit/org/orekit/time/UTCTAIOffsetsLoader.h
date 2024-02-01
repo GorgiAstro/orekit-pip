@@ -3,19 +3,19 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace time {
-      class OffsetModel;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class OffsetModel;
+    }
   }
 }
 template<class T> class JArray;
@@ -27,7 +27,7 @@ namespace org {
       class UTCTAIOffsetsLoader : public ::java::lang::Object {
        public:
         enum {
-          mid_loadOffsets_e62d3bb06d56d7e3,
+          mid_loadOffsets_d751c1a57012b438,
           max_mid
         };
 

@@ -24,12 +24,12 @@ namespace org {
       class EOPFittedModel : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_bf629f60ffa6b55f,
-          mid_getDUT1_f0e2f2bf075f7deb,
-          mid_getDx_f0e2f2bf075f7deb,
-          mid_getDy_f0e2f2bf075f7deb,
-          mid_getXp_f0e2f2bf075f7deb,
-          mid_getYp_f0e2f2bf075f7deb,
+          mid_init$_89d11d4da52c1877,
+          mid_getDUT1_0205d332bb159702,
+          mid_getDx_0205d332bb159702,
+          mid_getDy_0205d332bb159702,
+          mid_getXp_0205d332bb159702,
+          mid_getYp_0205d332bb159702,
           max_mid
         };
 

@@ -3,23 +3,23 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-      class TimeScale;
-    }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-}
 namespace java {
   namespace lang {
     class Throwable;
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+      class TimeScale;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -31,14 +31,14 @@ namespace org {
       class PythonTimeScale : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_getName_1c1fa1e935d6cdcf,
-          mid_offsetFromTAI_fd347811007a6ba3,
-          mid_offsetFromTAI_140b8964300ddedf,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_init$_ff7cb6c242604316,
+          mid_finalize_ff7cb6c242604316,
+          mid_getName_d2c8eb4129821f0e,
+          mid_offsetFromTAI_209f08246d708042,
+          mid_offsetFromTAI_cf010978f3c5a913,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
           max_mid
         };
 

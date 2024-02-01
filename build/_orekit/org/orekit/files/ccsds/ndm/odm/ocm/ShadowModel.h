@@ -37,8 +37,8 @@ namespace org {
               class ShadowModel : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_valueOf_43f4a69c4fcd2e8f,
-                  mid_values_cbac0424a5fbdf33,
+                  mid_valueOf_b2d46c28a04d1cfd,
+                  mid_values_6bc056b921233502,
                   max_mid
                 };
 

@@ -3,24 +3,24 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Iterable;
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
+    namespace gnss {
+      class SatelliteSystem;
+    }
     namespace files {
       namespace sinex {
         class DcbDescription;
         class Dcb;
       }
     }
-    namespace gnss {
-      class SatelliteSystem;
-    }
-  }
-}
-namespace java {
-  namespace lang {
-    class Iterable;
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -33,13 +33,13 @@ namespace org {
         class DcbStation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_734b91ac30d5f9b4,
-            mid_addDcb_89b9223a0403fa13,
-            mid_getAvailableSatelliteSystems_2827db9fa97d68f8,
-            mid_getDcbData_919f393398371a59,
-            mid_getDescription_e96c642b778d7ae9,
-            mid_getSiteCode_1c1fa1e935d6cdcf,
-            mid_setDescription_1a571fee8223b5dd,
+            mid_init$_105e1eadb709d9ac,
+            mid_addDcb_c1ef57b50222ddb1,
+            mid_getAvailableSatelliteSystems_4437705486eb88c0,
+            mid_getDcbData_5001bdf17b1c6ae6,
+            mid_getDescription_eaa48fe1591febab,
+            mid_getSiteCode_d2c8eb4129821f0e,
+            mid_setDescription_d9640e5f527b80a1,
             max_mid
           };
 

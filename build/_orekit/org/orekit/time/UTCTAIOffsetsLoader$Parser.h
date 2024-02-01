@@ -8,8 +8,8 @@ namespace java {
     class List;
   }
   namespace io {
-    class InputStream;
     class IOException;
+    class InputStream;
   }
   namespace lang {
     class Class;
@@ -32,7 +32,7 @@ namespace org {
       class UTCTAIOffsetsLoader$Parser : public ::java::lang::Object {
        public:
         enum {
-          mid_parse_7b8887374449b257,
+          mid_parse_cf69cc549132f899,
           max_mid
         };
 

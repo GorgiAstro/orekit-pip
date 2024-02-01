@@ -19,15 +19,15 @@ namespace org {
         class CRD$SessionStatistics : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_63ed8820ae480a9f,
-            mid_getDataQulityIndicator_55546ef6a647f39b,
-            mid_getKurtosis_b74f83833fdad017,
-            mid_getPeakMinusMean_b74f83833fdad017,
-            mid_getRms_b74f83833fdad017,
-            mid_getSkewness_b74f83833fdad017,
-            mid_getSystemConfigurationId_1c1fa1e935d6cdcf,
-            mid_toCrdString_1c1fa1e935d6cdcf,
-            mid_toString_1c1fa1e935d6cdcf,
+            mid_init$_26c12ff8629f0152,
+            mid_getDataQulityIndicator_d6ab429752e7c267,
+            mid_getKurtosis_9981f74b2d109da6,
+            mid_getPeakMinusMean_9981f74b2d109da6,
+            mid_getRms_9981f74b2d109da6,
+            mid_getSkewness_9981f74b2d109da6,
+            mid_getSystemConfigurationId_d2c8eb4129821f0e,
+            mid_toCrdString_d2c8eb4129821f0e,
+            mid_toString_d2c8eb4129821f0e,
             max_mid
           };
 

@@ -25,7 +25,7 @@ namespace org {
             class FieldInterpolationGrid : public ::java::lang::Object {
              public:
               enum {
-                mid_getGridPoints_396bc2ac62d7d47a,
+                mid_getGridPoints_0fb3037dbc9bf797,
                 max_mid
               };
 

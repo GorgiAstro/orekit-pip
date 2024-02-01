@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace exception {
-      class MathIllegalStateException;
       class MathIllegalArgumentException;
+      class MathIllegalStateException;
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -26,9 +26,9 @@ namespace org {
       class FieldSecondaryODE : public ::java::lang::Object {
        public:
         enum {
-          mid_computeDerivatives_226dad2f7657bb74,
-          mid_getDimension_55546ef6a647f39b,
-          mid_init_a78229e29499bff3,
+          mid_computeDerivatives_a9647acde182d143,
+          mid_getDimension_d6ab429752e7c267,
+          mid_init_7b905e39487f1ac1,
           max_mid
         };
 

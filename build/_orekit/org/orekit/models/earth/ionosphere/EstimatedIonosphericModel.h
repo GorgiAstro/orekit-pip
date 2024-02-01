@@ -17,20 +17,20 @@ namespace org {
     namespace models {
       namespace earth {
         namespace ionosphere {
-          class IonosphericModel;
           class IonosphericMappingFunction;
+          class IonosphericModel;
         }
       }
     }
     namespace frames {
       class TopocentricFrame;
     }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
   namespace hipparchus {
@@ -48,12 +48,12 @@ namespace org {
           class EstimatedIonosphericModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_96bc38eb13551139,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_pathDelay_e3546a4ddcf1e47f,
-              mid_pathDelay_77b03b61cb85f44d,
-              mid_pathDelay_5e4bace87c721642,
-              mid_pathDelay_0c51f26f37c66719,
+              mid_init$_a3d97e65b95c5166,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_pathDelay_9e5ad090f1de07ed,
+              mid_pathDelay_2ed554b735897fc8,
+              mid_pathDelay_d2f5e0e8b7e00e80,
+              mid_pathDelay_c84aeff9124fe654,
               max_mid
             };
 

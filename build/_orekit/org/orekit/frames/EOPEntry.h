@@ -31,20 +31,20 @@ namespace org {
       class EOPEntry : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_c784ea63fb85b5ed,
-          mid_getDate_c325492395d89b24,
-          mid_getDdEps_b74f83833fdad017,
-          mid_getDdPsi_b74f83833fdad017,
-          mid_getDx_b74f83833fdad017,
-          mid_getDy_b74f83833fdad017,
-          mid_getITRFType_8bcdfad365f6d36a,
-          mid_getLOD_b74f83833fdad017,
-          mid_getMjd_55546ef6a647f39b,
-          mid_getUT1MinusUTC_b74f83833fdad017,
-          mid_getX_b74f83833fdad017,
-          mid_getXRate_b74f83833fdad017,
-          mid_getY_b74f83833fdad017,
-          mid_getYRate_b74f83833fdad017,
+          mid_init$_0e7468bd511b7d4e,
+          mid_getDate_80e11148db499dda,
+          mid_getDdEps_9981f74b2d109da6,
+          mid_getDdPsi_9981f74b2d109da6,
+          mid_getDx_9981f74b2d109da6,
+          mid_getDy_9981f74b2d109da6,
+          mid_getITRFType_4865f340ec39b9c4,
+          mid_getLOD_9981f74b2d109da6,
+          mid_getMjd_d6ab429752e7c267,
+          mid_getUT1MinusUTC_9981f74b2d109da6,
+          mid_getX_9981f74b2d109da6,
+          mid_getXRate_9981f74b2d109da6,
+          mid_getY_9981f74b2d109da6,
+          mid_getYRate_9981f74b2d109da6,
           max_mid
         };
 

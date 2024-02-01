@@ -7,23 +7,23 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace section {
+          class CommentsContainer;
+          class Data;
+        }
         namespace ndm {
+          namespace cdm {
+            class StateVector;
+            class RTNCovariance;
+            class AdditionalParameters;
+            class XYZCovariance;
+            class SigmaEigenvectorsCovariance;
+            class ODParameters;
+            class AdditionalCovarianceMetadata;
+          }
           namespace odm {
             class UserDefined;
           }
-          namespace cdm {
-            class XYZCovariance;
-            class AdditionalParameters;
-            class StateVector;
-            class AdditionalCovarianceMetadata;
-            class ODParameters;
-            class RTNCovariance;
-            class SigmaEigenvectorsCovariance;
-          }
-        }
-        namespace section {
-          class Data;
-          class CommentsContainer;
         }
       }
     }
@@ -50,24 +50,24 @@ namespace org {
             class CdmData : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_0b71fcd2b4cb438c,
-                mid_init$_49e5b7252dc97c59,
-                mid_init$_92d754c3a78a9806,
-                mid_init$_4e5cb386720290df,
-                mid_getAdditionalCovMetadataBlock_9eabb6f701c4e4fe,
-                mid_getAdditionalParametersBlock_e4566e0d03e79656,
-                mid_getComments_e62d3bb06d56d7e3,
-                mid_getODParametersBlock_cd91ddfcfbea3896,
-                mid_getRTNCovarianceBlock_975a15045a985502,
-                mid_getSig3EigVec3CovarianceBlock_5c069924ff4aa42b,
-                mid_getStateVectorBlock_e063c4a483382013,
-                mid_getUserDefinedBlock_757fcfae3141e23d,
-                mid_getXYZCovarianceBlock_2b6d071b00b37f40,
-                mid_setAdditionalParametersBlock_504202b07f6cff36,
-                mid_setCovarianceMatrixBlock_ba8d39caad7cffba,
-                mid_setODParametersBlock_c67d81394aa7ad4f,
-                mid_setUserDefinedBlock_b829f4a4b34395d9,
-                mid_validate_8ba9fe7a847cecad,
+                mid_init$_8f3b9683135277df,
+                mid_init$_3b0c9b96f90e2c48,
+                mid_init$_55d5a7297993a448,
+                mid_init$_fc96f89513097e1a,
+                mid_getAdditionalCovMetadataBlock_d06bce2b6f32826e,
+                mid_getAdditionalParametersBlock_b7539d838be95deb,
+                mid_getComments_d751c1a57012b438,
+                mid_getODParametersBlock_819b89b22c1391ef,
+                mid_getRTNCovarianceBlock_38c7abd8f1601045,
+                mid_getSig3EigVec3CovarianceBlock_efb6b5e5adb93670,
+                mid_getStateVectorBlock_71fc0f205bb99087,
+                mid_getUserDefinedBlock_b8dba07746e1b089,
+                mid_getXYZCovarianceBlock_a3156916a04233f7,
+                mid_setAdditionalParametersBlock_0f782f0bfc7b0f7a,
+                mid_setCovarianceMatrixBlock_b2b9a4f46dad496a,
+                mid_setODParametersBlock_19de663aec1a19b3,
+                mid_setUserDefinedBlock_2df9715c380cacea,
+                mid_validate_1ad26e8c8c0cd65b,
                 max_mid
               };
 

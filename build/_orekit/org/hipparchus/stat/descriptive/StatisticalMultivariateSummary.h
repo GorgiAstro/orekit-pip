@@ -25,17 +25,17 @@ namespace org {
         class StatisticalMultivariateSummary : public ::java::lang::Object {
          public:
           enum {
-            mid_getCovariance_f77d745f2128c391,
-            mid_getDimension_55546ef6a647f39b,
-            mid_getGeometricMean_25e1757a36c4dde2,
-            mid_getMax_25e1757a36c4dde2,
-            mid_getMean_25e1757a36c4dde2,
-            mid_getMin_25e1757a36c4dde2,
-            mid_getN_6c0ce7e438e5ded4,
-            mid_getStandardDeviation_25e1757a36c4dde2,
-            mid_getSum_25e1757a36c4dde2,
-            mid_getSumLog_25e1757a36c4dde2,
-            mid_getSumSq_25e1757a36c4dde2,
+            mid_getCovariance_b2eebabce70526d8,
+            mid_getDimension_d6ab429752e7c267,
+            mid_getGeometricMean_be783177b060994b,
+            mid_getMax_be783177b060994b,
+            mid_getMean_be783177b060994b,
+            mid_getMin_be783177b060994b,
+            mid_getN_42c72b98e3c2e08a,
+            mid_getStandardDeviation_be783177b060994b,
+            mid_getSum_be783177b060994b,
+            mid_getSumLog_be783177b060994b,
+            mid_getSumSq_be783177b060994b,
             max_mid
           };
 

@@ -28,9 +28,9 @@ namespace org {
         class VisibilityTrigger : public ::java::lang::Enum {
          public:
           enum {
-            mid_radiusCorrection_04fd0666b613d2ab,
-            mid_valueOf_5a1a072746181151,
-            mid_values_75fa6be774bc9359,
+            mid_radiusCorrection_bf28ed64d6e8576b,
+            mid_valueOf_9f580bbb779ebb7c,
+            mid_values_cafe1fd4f98a94e9,
             max_mid
           };
 

@@ -19,8 +19,8 @@ namespace org {
           class LaguerreRuleFactory : public ::org::hipparchus::analysis::integration::gauss::AbstractRuleFactory {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_computeRule_acde278e36767299,
+              mid_init$_ff7cb6c242604316,
+              mid_computeRule_c07c8b9364272960,
               max_mid
             };
 

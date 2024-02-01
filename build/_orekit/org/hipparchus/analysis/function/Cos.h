@@ -7,8 +7,8 @@ namespace org {
   namespace hipparchus {
     namespace analysis {
       namespace differentiation {
-        class UnivariateDifferentiableFunction;
         class Derivative;
+        class UnivariateDifferentiableFunction;
       }
     }
   }
@@ -28,9 +28,9 @@ namespace org {
         class Cos : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_value_04fd0666b613d2ab,
-            mid_value_a5332de4d4d64b08,
+            mid_init$_ff7cb6c242604316,
+            mid_value_bf28ed64d6e8576b,
+            mid_value_ba85b555c6f0b809,
             max_mid
           };
 

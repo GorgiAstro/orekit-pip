@@ -4,14 +4,14 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace time {
       class AbsoluteDate;
       class FieldAbsoluteDate;
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -28,8 +28,8 @@ namespace org {
       class TimeScalarFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_value_fd347811007a6ba3,
-          mid_value_140b8964300ddedf,
+          mid_value_209f08246d708042,
+          mid_value_cf010978f3c5a913,
           max_mid
         };
 

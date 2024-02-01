@@ -47,8 +47,8 @@ namespace org {
               class SsrIm201 : public ::org::orekit::gnss::metric::messages::ssr::SsrMessage {
                public:
                 enum {
-                  mid_init$_961b35617787643b,
-                  mid_getIonosphericModel_45bd2d7260a3238b,
+                  mid_init$_6630119f2ec8d783,
+                  mid_getIonosphericModel_ccd9f2307c146513,
                   max_mid
                 };
 

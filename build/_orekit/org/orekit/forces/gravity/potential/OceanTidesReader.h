@@ -37,18 +37,20 @@ namespace org {
           class OceanTidesReader : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_734b91ac30d5f9b4,
-              mid_canAdd_75f431eefaad4f32,
-              mid_getMaxParseDegree_55546ef6a647f39b,
-              mid_getMaxParseOrder_55546ef6a647f39b,
-              mid_getSupportedNames_1c1fa1e935d6cdcf,
-              mid_getWaves_e62d3bb06d56d7e3,
-              mid_setMaxParseDegree_44ed599e93e8a30c,
-              mid_setMaxParseOrder_44ed599e93e8a30c,
-              mid_stillAcceptsData_9ab94ac1dc23b105,
-              mid_startParse_734b91ac30d5f9b4,
-              mid_addWaveCoefficients_5e9b52046c638255,
-              mid_endParse_a1fa5dae97ea5ed2,
+              mid_init$_105e1eadb709d9ac,
+              mid_canAdd_905dfe1f877a03f0,
+              mid_getMaxAvailableDegree_d6ab429752e7c267,
+              mid_getMaxAvailableOrder_d6ab429752e7c267,
+              mid_getMaxParseDegree_d6ab429752e7c267,
+              mid_getMaxParseOrder_d6ab429752e7c267,
+              mid_getSupportedNames_d2c8eb4129821f0e,
+              mid_getWaves_d751c1a57012b438,
+              mid_setMaxParseDegree_8fd427ab23829bf5,
+              mid_setMaxParseOrder_8fd427ab23829bf5,
+              mid_stillAcceptsData_eee3de00fe971136,
+              mid_startParse_105e1eadb709d9ac,
+              mid_addWaveCoefficients_9eca3480475a73b0,
+              mid_endParse_ff7cb6c242604316,
               max_mid
             };
 
@@ -66,6 +68,8 @@ namespace org {
             OceanTidesReader(const ::java::lang::String &);
 
             jboolean canAdd(jint, jint) const;
+            jint getMaxAvailableDegree() const;
+            jint getMaxAvailableOrder() const;
             jint getMaxParseDegree() const;
             jint getMaxParseOrder() const;
             ::java::lang::String getSupportedNames() const;

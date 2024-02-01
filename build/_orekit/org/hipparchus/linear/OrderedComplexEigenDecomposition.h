@@ -13,12 +13,12 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
+    namespace linear {
+      class FieldMatrix;
+      class RealMatrix;
+    }
     namespace complex {
       class Complex;
-    }
-    namespace linear {
-      class RealMatrix;
-      class FieldMatrix;
     }
   }
 }
@@ -31,10 +31,10 @@ namespace org {
       class OrderedComplexEigenDecomposition : public ::org::hipparchus::linear::ComplexEigenDecomposition {
        public:
         enum {
-          mid_init$_84bd15e0995d0c79,
-          mid_init$_103e61a34f552989,
-          mid_init$_2b9972fbda2b3825,
-          mid_getVT_81d49643ce3a3c0b,
+          mid_init$_f5364c9a9d9cbd53,
+          mid_init$_e834f27fc5021cbd,
+          mid_init$_afce1c5c6e44e1cc,
+          mid_getVT_02883dbbe5db44ac,
           max_mid
         };
 

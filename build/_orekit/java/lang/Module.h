@@ -12,8 +12,8 @@ namespace java {
     class ClassLoader;
   }
   namespace io {
-    class InputStream;
     class IOException;
+    class InputStream;
   }
   namespace util {
     class Set;
@@ -27,23 +27,23 @@ namespace java {
     class Module : public ::java::lang::Object {
      public:
       enum {
-        mid_addExports_d9074c75ac59e276,
-        mid_addOpens_d9074c75ac59e276,
-        mid_addReads_383fc8aab10c350a,
-        mid_addUses_bb473f7885ba10f9,
-        mid_canRead_cc1516eb3a5c7d9f,
-        mid_canUse_a24f4963f111aa48,
-        mid_getClassLoader_fb951be34fc77929,
-        mid_getLayer_c147713285b11692,
-        mid_getName_1c1fa1e935d6cdcf,
-        mid_getPackages_7e8f11dd23d1142c,
-        mid_getResourceAsStream_6831515bfd9973e1,
-        mid_isExported_cde6b28e15c96b75,
-        mid_isExported_879a9d39890cfffe,
-        mid_isNamed_9ab94ac1dc23b105,
-        mid_isOpen_cde6b28e15c96b75,
-        mid_isOpen_879a9d39890cfffe,
-        mid_toString_1c1fa1e935d6cdcf,
+        mid_addExports_fa179762981b12cb,
+        mid_addOpens_fa179762981b12cb,
+        mid_addReads_02bb0c323bdfc90e,
+        mid_addUses_b496a94db6cd6bc6,
+        mid_canRead_1b3f90ed17e1fa61,
+        mid_canUse_2d405d48789924af,
+        mid_getClassLoader_7e232a6d8e4f63bc,
+        mid_getLayer_b270adc69fca1f17,
+        mid_getName_d2c8eb4129821f0e,
+        mid_getPackages_6b191a9b12c1004b,
+        mid_getResourceAsStream_05f5377821499489,
+        mid_isExported_df4c65b2aede5c41,
+        mid_isExported_b16a7971c55e163f,
+        mid_isNamed_eee3de00fe971136,
+        mid_isOpen_df4c65b2aede5c41,
+        mid_isOpen_b16a7971c55e163f,
+        mid_toString_d2c8eb4129821f0e,
         max_mid
       };
 

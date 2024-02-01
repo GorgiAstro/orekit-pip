@@ -3,18 +3,18 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-    class IllegalArgumentException;
-  }
-}
 namespace org {
   namespace orekit {
     namespace utils {
       class CartesianDerivativesFilter;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+    class IllegalArgumentException;
   }
 }
 template<class T> class JArray;
@@ -26,10 +26,10 @@ namespace org {
       class CartesianDerivativesFilter : public ::java::lang::Enum {
        public:
         enum {
-          mid_getFilter_35016476cce1f80e,
-          mid_getMaxOrder_55546ef6a647f39b,
-          mid_valueOf_68447a1d612d4fba,
-          mid_values_d022290f2100b05f,
+          mid_getFilter_4ea55c50f76fe240,
+          mid_getMaxOrder_d6ab429752e7c267,
+          mid_valueOf_77ff8b9facb6c7f0,
+          mid_values_62aac2887a7867fd,
           max_mid
         };
 

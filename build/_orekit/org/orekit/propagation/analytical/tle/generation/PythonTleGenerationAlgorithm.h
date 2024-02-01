@@ -14,11 +14,11 @@ namespace org {
     namespace propagation {
       namespace analytical {
         namespace tle {
-          class TLE;
-          class FieldTLE;
           namespace generation {
             class TleGenerationAlgorithm;
           }
+          class FieldTLE;
+          class TLE;
         }
       }
       class FieldSpacecraftState;
@@ -38,13 +38,13 @@ namespace org {
             class PythonTleGenerationAlgorithm : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_finalize_a1fa5dae97ea5ed2,
-                mid_generate_6e4ccfee7888f727,
-                mid_generate_7dac79832039ea3a,
-                mid_pythonDecRef_a1fa5dae97ea5ed2,
-                mid_pythonExtension_6c0ce7e438e5ded4,
-                mid_pythonExtension_3d7dd2314a0dd456,
+                mid_init$_ff7cb6c242604316,
+                mid_finalize_ff7cb6c242604316,
+                mid_generate_166cccd89c387fd5,
+                mid_generate_f8078c645a12d356,
+                mid_pythonDecRef_ff7cb6c242604316,
+                mid_pythonExtension_42c72b98e3c2e08a,
+                mid_pythonExtension_f5bbab7e97879358,
                 max_mid
               };
 

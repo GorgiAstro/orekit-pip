@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace propagation {
-      class FieldSpacecraftState;
       namespace sampling {
         class FieldOrekitStepInterpolator;
       }
+      class FieldSpacecraftState;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -35,16 +35,16 @@ namespace org {
         class PythonFieldOrekitStepInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getCurrentState_fba6d56f8dbc98d0,
-            mid_getInterpolatedState_70fecd201ca47d3b,
-            mid_getPreviousState_fba6d56f8dbc98d0,
-            mid_isForward_9ab94ac1dc23b105,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
-            mid_restrictStep_d6beee8426de96e6,
+            mid_init$_ff7cb6c242604316,
+            mid_finalize_ff7cb6c242604316,
+            mid_getCurrentState_a74be2e38786f3b6,
+            mid_getInterpolatedState_fb689a9c0f30b938,
+            mid_getPreviousState_a74be2e38786f3b6,
+            mid_isForward_eee3de00fe971136,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
+            mid_restrictStep_accb7476fa222284,
             max_mid
           };
 

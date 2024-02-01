@@ -5,20 +5,20 @@
 
 namespace org {
   namespace hipparchus {
+    namespace linear {
+      class MatrixDecomposer;
+    }
     namespace optim {
       namespace nonlinear {
         namespace vector {
           namespace leastsquares {
-            class LeastSquaresProblem;
             class LeastSquaresOptimizer$Optimum;
             class LeastSquaresOptimizer;
             class GaussNewtonOptimizer;
+            class LeastSquaresProblem;
           }
         }
       }
-    }
-    namespace linear {
-      class MatrixDecomposer;
     }
   }
 }
@@ -40,14 +40,14 @@ namespace org {
             class GaussNewtonOptimizer : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_init$_6a24b5864415ec4c,
-                mid_getDecomposer_777cbca2854e04bd,
-                mid_isFormNormalEquations_9ab94ac1dc23b105,
-                mid_optimize_b4aa3e5bf3a16dc8,
-                mid_toString_1c1fa1e935d6cdcf,
-                mid_withDecomposer_125b5fdb4c804b74,
-                mid_withFormNormalEquations_0a5b3f6fe3c0e19a,
+                mid_init$_ff7cb6c242604316,
+                mid_init$_b8dd78271800be46,
+                mid_getDecomposer_8a28a9a8bab78fab,
+                mid_isFormNormalEquations_eee3de00fe971136,
+                mid_optimize_45e9e6e9254f21c4,
+                mid_toString_d2c8eb4129821f0e,
+                mid_withDecomposer_49dcfa68243d5019,
+                mid_withFormNormalEquations_609117fbd05d2861,
                 max_mid
               };
 

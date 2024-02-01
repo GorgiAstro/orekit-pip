@@ -19,16 +19,16 @@ namespace org {
           class MinMaxTreeTile : public ::org::orekit::rugged::raster::SimpleTile {
            public:
             enum {
-              mid_getCrossedBoundaryColumns_f556b53ccd261e0b,
-              mid_getCrossedBoundaryRows_f556b53ccd261e0b,
-              mid_getLevels_55546ef6a647f39b,
-              mid_getMaxElevation_2f53baea9459d443,
-              mid_getMergeLevel_aad24acd6036a6f1,
-              mid_getMinElevation_2f53baea9459d443,
-              mid_isColumnMerging_96f51a3f36d3a2a7,
-              mid_locateMax_f556b53ccd261e0b,
-              mid_locateMin_f556b53ccd261e0b,
-              mid_processUpdatedElevation_ab69da052b88f50c,
+              mid_getCrossedBoundaryColumns_50ae6a9c9fe285e4,
+              mid_getCrossedBoundaryRows_50ae6a9c9fe285e4,
+              mid_getLevels_d6ab429752e7c267,
+              mid_getMaxElevation_d692aeb156453fed,
+              mid_getMergeLevel_00616f6c287fc4e7,
+              mid_getMinElevation_d692aeb156453fed,
+              mid_isColumnMerging_e24caac814db1df5,
+              mid_locateMax_50ae6a9c9fe285e4,
+              mid_locateMin_50ae6a9c9fe285e4,
+              mid_processUpdatedElevation_a71c45509eaf92d1,
               max_mid
             };
 

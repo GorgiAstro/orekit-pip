@@ -34,12 +34,12 @@ namespace org {
             class PythonAccuracyProvider : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_finalize_a1fa5dae97ea5ed2,
-                mid_getAccuracy_b74f83833fdad017,
-                mid_pythonDecRef_a1fa5dae97ea5ed2,
-                mid_pythonExtension_6c0ce7e438e5ded4,
-                mid_pythonExtension_3d7dd2314a0dd456,
+                mid_init$_ff7cb6c242604316,
+                mid_finalize_ff7cb6c242604316,
+                mid_getAccuracy_9981f74b2d109da6,
+                mid_pythonDecRef_ff7cb6c242604316,
+                mid_pythonExtension_42c72b98e3c2e08a,
+                mid_pythonExtension_f5bbab7e97879358,
                 max_mid
               };
 

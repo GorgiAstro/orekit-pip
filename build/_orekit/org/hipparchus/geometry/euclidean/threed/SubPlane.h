@@ -7,16 +7,16 @@ namespace org {
   namespace hipparchus {
     namespace geometry {
       namespace partitioning {
-        class SubHyperplane$SplitSubHyperplane;
         class Hyperplane;
+        class SubHyperplane$SplitSubHyperplane;
         class Region;
       }
       namespace euclidean {
-        namespace threed {
-          class Euclidean3D;
-        }
         namespace twod {
           class Euclidean2D;
+        }
+        namespace threed {
+          class Euclidean3D;
         }
       }
     }
@@ -38,9 +38,9 @@ namespace org {
           class SubPlane : public ::org::hipparchus::geometry::partitioning::AbstractSubHyperplane {
            public:
             enum {
-              mid_init$_6ae2db4be0bbe390,
-              mid_split_30674c36ae2fcf9f,
-              mid_buildNew_3d919cfe5b11c3d0,
+              mid_init$_5428b0a00a62bde3,
+              mid_split_b587049e19682418,
+              mid_buildNew_35b28ef87fdef21f,
               max_mid
             };
 

@@ -3,11 +3,16 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
-    namespace utils {
-      class TimeStampedAngularCoordinates;
-    }
     namespace files {
       namespace ccsds {
         namespace section {
@@ -15,14 +20,9 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
+    namespace utils {
+      class TimeStampedAngularCoordinates;
+    }
   }
 }
 template<class T> class JArray;
@@ -38,9 +38,9 @@ namespace org {
               class AemData : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_a1fa5dae97ea5ed2,
-                  mid_addData_af218a95dcec5785,
-                  mid_getAngularCoordinates_e62d3bb06d56d7e3,
+                  mid_init$_ff7cb6c242604316,
+                  mid_addData_3e7d890dd879c0ba,
+                  mid_getAngularCoordinates_d751c1a57012b438,
                   max_mid
                 };
 

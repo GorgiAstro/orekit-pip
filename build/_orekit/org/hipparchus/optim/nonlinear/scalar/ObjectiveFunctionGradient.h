@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace analysis {
-      class MultivariateVectorFunction;
-    }
     namespace optim {
       class OptimizationData;
+    }
+    namespace analysis {
+      class MultivariateVectorFunction;
     }
   }
 }
@@ -29,8 +29,8 @@ namespace org {
           class ObjectiveFunctionGradient : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_b318c17b3682075c,
-              mid_getObjectiveFunctionGradient_72c2cddd79f92b83,
+              mid_init$_bf4248752a7ec4dc,
+              mid_getObjectiveFunctionGradient_0a4097997512db0b,
               max_mid
             };
 

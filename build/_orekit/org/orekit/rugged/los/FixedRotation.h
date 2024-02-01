@@ -3,39 +3,39 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
   }
   namespace orekit {
     namespace rugged {
-      namespace utils {
-        class DerivativeGenerator;
-      }
       namespace los {
         class TimeIndependentLOSTransform;
+      }
+      namespace utils {
+        class DerivativeGenerator;
       }
     }
     namespace utils {
       class ParameterDriver;
-    }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
-    class String;
-  }
-  namespace util {
-    namespace stream {
-      class Stream;
     }
   }
 }
@@ -49,10 +49,10 @@ namespace org {
         class FixedRotation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_6eefa251775077b6,
-            mid_getParametersDrivers_14e21bf777ff0ccf,
-            mid_transformLOS_23b7762b1a728d4c,
-            mid_transformLOS_624b61103e61016a,
+            mid_init$_911ca268004e6492,
+            mid_getParametersDrivers_11e4ca8182c1933d,
+            mid_transformLOS_228f1c415ce966c1,
+            mid_transformLOS_abcb5ae819a3f86b,
             max_mid
           };
 

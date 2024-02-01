@@ -25,17 +25,17 @@ namespace org {
         class NakagamiDistribution : public ::org::hipparchus::distribution::continuous::AbstractRealDistribution {
          public:
           enum {
-            mid_init$_369b4c97255d5afa,
-            mid_init$_b5167f35b2521627,
-            mid_cumulativeProbability_04fd0666b613d2ab,
-            mid_density_04fd0666b613d2ab,
-            mid_getNumericalMean_b74f83833fdad017,
-            mid_getNumericalVariance_b74f83833fdad017,
-            mid_getScale_b74f83833fdad017,
-            mid_getShape_b74f83833fdad017,
-            mid_getSupportLowerBound_b74f83833fdad017,
-            mid_getSupportUpperBound_b74f83833fdad017,
-            mid_isSupportConnected_9ab94ac1dc23b105,
+            mid_init$_13edac039e8cc967,
+            mid_init$_bd28dc6055dc5bbd,
+            mid_cumulativeProbability_bf28ed64d6e8576b,
+            mid_density_bf28ed64d6e8576b,
+            mid_getNumericalMean_9981f74b2d109da6,
+            mid_getNumericalVariance_9981f74b2d109da6,
+            mid_getScale_9981f74b2d109da6,
+            mid_getShape_9981f74b2d109da6,
+            mid_getSupportLowerBound_9981f74b2d109da6,
+            mid_getSupportUpperBound_9981f74b2d109da6,
+            mid_isSupportConnected_eee3de00fe971136,
             max_mid
           };
 

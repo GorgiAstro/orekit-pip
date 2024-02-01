@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace forces {
@@ -17,6 +12,11 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -30,7 +30,7 @@ namespace org {
           class TideSystemProvider : public ::java::lang::Object {
            public:
             enum {
-              mid_getTideSystem_b2b14af197a8eaf6,
+              mid_getTideSystem_1e0f912623cd4841,
               max_mid
             };
 

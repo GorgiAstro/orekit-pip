@@ -19,18 +19,18 @@ namespace org {
           class SubFrameAlmanac : public ::org::orekit::gnss::rflink::gps::SubFrame45 {
            public:
             enum {
-              mid_getAF0_b74f83833fdad017,
-              mid_getAF1_b74f83833fdad017,
-              mid_getDeltai_b74f83833fdad017,
-              mid_getE_b74f83833fdad017,
-              mid_getLowercaseOmega_b74f83833fdad017,
-              mid_getM0_b74f83833fdad017,
-              mid_getOmegaDot_b74f83833fdad017,
-              mid_getPRN_55546ef6a647f39b,
-              mid_getSqrtA_b74f83833fdad017,
-              mid_getSvHealth_55546ef6a647f39b,
-              mid_getToaA_55546ef6a647f39b,
-              mid_getUppercaseOmega0_b74f83833fdad017,
+              mid_getAF0_9981f74b2d109da6,
+              mid_getAF1_9981f74b2d109da6,
+              mid_getDeltai_9981f74b2d109da6,
+              mid_getE_9981f74b2d109da6,
+              mid_getLowercaseOmega_9981f74b2d109da6,
+              mid_getM0_9981f74b2d109da6,
+              mid_getOmegaDot_9981f74b2d109da6,
+              mid_getPRN_d6ab429752e7c267,
+              mid_getSqrtA_9981f74b2d109da6,
+              mid_getSvHealth_d6ab429752e7c267,
+              mid_getToaA_d6ab429752e7c267,
+              mid_getUppercaseOmega0_9981f74b2d109da6,
               max_mid
             };
 

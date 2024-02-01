@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
-        class EventDetector;
         class EventsLogger$LoggedEvent;
+        class EventDetector;
       }
     }
   }
@@ -31,10 +31,10 @@ namespace org {
         class EventsLogger : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_clearLoggedEvents_a1fa5dae97ea5ed2,
-            mid_getLoggedEvents_e62d3bb06d56d7e3,
-            mid_monitorDetector_0b41b223640c2799,
+            mid_init$_ff7cb6c242604316,
+            mid_clearLoggedEvents_ff7cb6c242604316,
+            mid_getLoggedEvents_d751c1a57012b438,
+            mid_monitorDetector_2a1c444a738d08c2,
             max_mid
           };
 

@@ -8,18 +8,18 @@ namespace org {
     namespace models {
       namespace earth {
         namespace troposphere {
-          class MariniMurrayModel;
           class DiscreteTroposphericModel;
+          class MariniMurrayModel;
         }
       }
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
     namespace bodies {
       class FieldGeodeticPoint;
       class GeodeticPoint;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
     }
     namespace utils {
       class ParameterDriver;
@@ -48,11 +48,11 @@ namespace org {
           class MariniMurrayModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_49f4b5153d696ea5,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_getStandardModel_1781709fdef80e4c,
-              mid_pathDelay_2edbfa177156ee09,
-              mid_pathDelay_6f66c6b7094d6f08,
+              mid_init$_cd5724127cc72e96,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_getStandardModel_98f67f4fc615fee4,
+              mid_pathDelay_a07808bbc1ebff8d,
+              mid_pathDelay_3e863f8cc7cde633,
               max_mid
             };
 

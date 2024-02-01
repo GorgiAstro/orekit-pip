@@ -33,8 +33,8 @@ namespace org {
             class DSSTNewtonianAttractionContext : public ::org::orekit::propagation::semianalytical::dsst::forces::ForceModelContext {
              public:
               enum {
-                mid_init$_fd1cd6a4cd6e52a8,
-                mid_getGM_b74f83833fdad017,
+                mid_init$_298e39d112c729a1,
+                mid_getGM_9981f74b2d109da6,
                 max_mid
               };
 

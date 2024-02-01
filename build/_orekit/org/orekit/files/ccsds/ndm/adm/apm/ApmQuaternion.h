@@ -39,14 +39,14 @@ namespace org {
               class ApmQuaternion : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_a1fa5dae97ea5ed2,
-                  mid_getEndpoints_c60ad1d207bc8e06,
-                  mid_getQuaternion_6890e724ec73e493,
-                  mid_getQuaternionDot_6890e724ec73e493,
-                  mid_hasRates_9ab94ac1dc23b105,
-                  mid_setQ_d5322b8b512aeb26,
-                  mid_setQDot_d5322b8b512aeb26,
-                  mid_validate_8ba9fe7a847cecad,
+                  mid_init$_ff7cb6c242604316,
+                  mid_getEndpoints_d67fadc29cf1ce4a,
+                  mid_getQuaternion_c78679230082648b,
+                  mid_getQuaternionDot_c78679230082648b,
+                  mid_hasRates_eee3de00fe971136,
+                  mid_setQ_4320462275d66e78,
+                  mid_setQDot_4320462275d66e78,
+                  mid_validate_1ad26e8c8c0cd65b,
                   max_mid
                 };
 

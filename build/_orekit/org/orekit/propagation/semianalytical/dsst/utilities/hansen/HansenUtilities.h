@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace analysis {
@@ -30,6 +25,11 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -43,10 +43,10 @@ namespace org {
               class HansenUtilities : public ::java::lang::Object {
                public:
                 enum {
-                  mid_buildIdentityMatrix2_83f3832922dd475f,
-                  mid_buildIdentityMatrix4_83f3832922dd475f,
-                  mid_buildZeroMatrix2_83f3832922dd475f,
-                  mid_buildZeroMatrix4_83f3832922dd475f,
+                  mid_buildIdentityMatrix2_5c272d1ba9bc3131,
+                  mid_buildIdentityMatrix4_5c272d1ba9bc3131,
+                  mid_buildZeroMatrix2_5c272d1ba9bc3131,
+                  mid_buildZeroMatrix4_5c272d1ba9bc3131,
                   max_mid
                 };
 

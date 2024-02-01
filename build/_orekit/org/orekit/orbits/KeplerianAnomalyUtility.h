@@ -17,18 +17,18 @@ namespace org {
       class KeplerianAnomalyUtility : public ::java::lang::Object {
        public:
         enum {
-          mid_ellipticEccentricToMean_99e3200dafc19573,
-          mid_ellipticEccentricToTrue_99e3200dafc19573,
-          mid_ellipticMeanToEccentric_99e3200dafc19573,
-          mid_ellipticMeanToTrue_99e3200dafc19573,
-          mid_ellipticTrueToEccentric_99e3200dafc19573,
-          mid_ellipticTrueToMean_99e3200dafc19573,
-          mid_hyperbolicEccentricToMean_99e3200dafc19573,
-          mid_hyperbolicEccentricToTrue_99e3200dafc19573,
-          mid_hyperbolicMeanToEccentric_99e3200dafc19573,
-          mid_hyperbolicMeanToTrue_99e3200dafc19573,
-          mid_hyperbolicTrueToEccentric_99e3200dafc19573,
-          mid_hyperbolicTrueToMean_99e3200dafc19573,
+          mid_ellipticEccentricToMean_82f92590f4247da1,
+          mid_ellipticEccentricToTrue_82f92590f4247da1,
+          mid_ellipticMeanToEccentric_82f92590f4247da1,
+          mid_ellipticMeanToTrue_82f92590f4247da1,
+          mid_ellipticTrueToEccentric_82f92590f4247da1,
+          mid_ellipticTrueToMean_82f92590f4247da1,
+          mid_hyperbolicEccentricToMean_82f92590f4247da1,
+          mid_hyperbolicEccentricToTrue_82f92590f4247da1,
+          mid_hyperbolicMeanToEccentric_82f92590f4247da1,
+          mid_hyperbolicMeanToTrue_82f92590f4247da1,
+          mid_hyperbolicTrueToEccentric_82f92590f4247da1,
+          mid_hyperbolicTrueToMean_82f92590f4247da1,
           max_mid
         };
 

@@ -8,11 +8,11 @@ namespace org {
     namespace propagation {
       namespace analytical {
         namespace tle {
-          class TLE;
-          class FieldTLE;
           namespace generation {
             class TleGenerationAlgorithm;
           }
+          class FieldTLE;
+          class TLE;
         }
       }
       class FieldSpacecraftState;
@@ -43,12 +43,12 @@ namespace org {
             class LeastSquaresTleGenerationAlgorithm : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_init$_44ed599e93e8a30c,
-                mid_init$_2598b202d3117bc5,
-                mid_generate_6e4ccfee7888f727,
-                mid_generate_7dac79832039ea3a,
-                mid_getRms_b74f83833fdad017,
+                mid_init$_ff7cb6c242604316,
+                mid_init$_8fd427ab23829bf5,
+                mid_init$_f0e2dd0da2448f94,
+                mid_generate_166cccd89c387fd5,
+                mid_generate_f8078c645a12d356,
+                mid_getRms_9981f74b2d109da6,
                 max_mid
               };
 

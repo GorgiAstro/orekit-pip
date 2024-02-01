@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace optim {
-      class ConvergenceChecker;
       class PointValuePair;
+      class ConvergenceChecker;
       class OptimizationData;
     }
   }
@@ -29,11 +29,11 @@ namespace org {
             class SimplexOptimizer : public ::org::hipparchus::optim::nonlinear::scalar::MultivariateOptimizer {
              public:
               enum {
-                mid_init$_faeab0ed0f5e2304,
-                mid_init$_369b4c97255d5afa,
-                mid_optimize_9d04816d74472b44,
-                mid_parseOptimizationData_14193ddbce7a2cc0,
-                mid_doOptimize_35ff88cac3217ca3,
+                mid_init$_3c3ab50d4a5913f8,
+                mid_init$_13edac039e8cc967,
+                mid_optimize_1912ae5ec9cd8a6c,
+                mid_parseOptimizationData_df324e640da2eeec,
+                mid_doOptimize_a812a1ba2cf9f7b4,
                 max_mid
               };
 

@@ -4,27 +4,27 @@
 #include "org/orekit/orbits/AbstractFieldOrbitInterpolator.h"
 
 namespace org {
-  namespace orekit {
-    namespace orbits {
-      class FieldOrbit;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace time {
-      class AbstractFieldTimeInterpolator$InterpolationData;
-    }
-    namespace propagation {
-      namespace analytical {
-        class FieldAbstractAnalyticalPropagator;
-      }
-    }
-  }
   namespace hipparchus {
     namespace analysis {
       namespace polynomials {
         class SmoothStepFactory$FieldSmoothStepFunction;
       }
+    }
+  }
+  namespace orekit {
+    namespace propagation {
+      namespace analytical {
+        class FieldAbstractAnalyticalPropagator;
+      }
+    }
+    namespace time {
+      class AbstractFieldTimeInterpolator$InterpolationData;
+    }
+    namespace orbits {
+      class FieldOrbit;
+    }
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -42,8 +42,8 @@ namespace org {
       class FieldOrbitBlender : public ::org::orekit::orbits::AbstractFieldOrbitInterpolator {
        public:
         enum {
-          mid_init$_ad76cc6d71d07b73,
-          mid_interpolate_1f8205afa87236ec,
+          mid_init$_f54c9e97b1f263c1,
+          mid_interpolate_cb3bc2d787cce5ef,
           max_mid
         };
 

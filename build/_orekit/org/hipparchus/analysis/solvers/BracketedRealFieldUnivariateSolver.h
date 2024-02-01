@@ -5,18 +5,18 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace analysis {
-      class CalculusFieldUnivariateFunction;
       namespace solvers {
         class BracketedRealFieldUnivariateSolver$Interval;
         class AllowedSolution;
       }
+      class CalculusFieldUnivariateFunction;
     }
     namespace exception {
-      class MathIllegalStateException;
       class MathIllegalArgumentException;
+      class MathIllegalStateException;
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -34,15 +34,15 @@ namespace org {
         class BracketedRealFieldUnivariateSolver : public ::java::lang::Object {
          public:
           enum {
-            mid_getAbsoluteAccuracy_81520b552cb3fa26,
-            mid_getEvaluations_55546ef6a647f39b,
-            mid_getFunctionValueAccuracy_81520b552cb3fa26,
-            mid_getMaxEvaluations_55546ef6a647f39b,
-            mid_getRelativeAccuracy_81520b552cb3fa26,
-            mid_solve_274432d986e24d18,
-            mid_solve_1274323488150eef,
-            mid_solveInterval_8bae008bb0de6f76,
-            mid_solveInterval_01108cb21dc9897d,
+            mid_getAbsoluteAccuracy_08d37e3f77b7239d,
+            mid_getEvaluations_d6ab429752e7c267,
+            mid_getFunctionValueAccuracy_08d37e3f77b7239d,
+            mid_getMaxEvaluations_d6ab429752e7c267,
+            mid_getRelativeAccuracy_08d37e3f77b7239d,
+            mid_solve_6851f2838839ed9a,
+            mid_solve_506031728277a68d,
+            mid_solveInterval_04816f93c95078f7,
+            mid_solveInterval_20e7140a9cf1e1c4,
             max_mid
           };
 

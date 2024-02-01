@@ -11,15 +11,15 @@ namespace org {
       }
       class SpacecraftState;
     }
-    namespace orbits {
-      class Orbit;
-    }
     namespace forces {
       namespace gravity {
         namespace potential {
           class UnnormalizedSphericalHarmonicsProvider;
         }
       }
+    }
+    namespace orbits {
+      class Orbit;
     }
   }
 }
@@ -38,12 +38,12 @@ namespace org {
         class J2DifferentialEffect : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_e48861ead2e64add,
-            mid_init$_c9e3ce9731fe3047,
-            mid_init$_2c773257f1f84283,
-            mid_init$_90d5c8781f3c6810,
-            mid_apply_17366d6f28f0e9a3,
-            mid_apply_c3c52b1257139045,
+            mid_init$_7832982572e8125b,
+            mid_init$_d2c6003da657864c,
+            mid_init$_773b9c3af4cf87de,
+            mid_init$_82b23cc2b1fa0e19,
+            mid_apply_940029672edd5e92,
+            mid_apply_ed3fe207e6fde26f,
             max_mid
           };
 

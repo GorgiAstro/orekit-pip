@@ -3,25 +3,25 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      class Space;
-      namespace euclidean {
-        namespace oned {
-          class Euclidean1D$NoSubSpaceException;
-          class Euclidean1D;
-        }
-      }
-    }
-  }
-}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace oned {
+          class Euclidean1D$NoSubSpaceException;
+          class Euclidean1D;
+        }
+      }
+      class Space;
+    }
   }
 }
 template<class T> class JArray;
@@ -35,9 +35,9 @@ namespace org {
           class Euclidean1D : public ::java::lang::Object {
            public:
             enum {
-              mid_getDimension_55546ef6a647f39b,
-              mid_getInstance_80ec234213ca3d44,
-              mid_getSubSpace_9afbccb68c8e9ef8,
+              mid_getDimension_d6ab429752e7c267,
+              mid_getInstance_5e8604308fdd6caa,
+              mid_getSubSpace_a30bf0b437744017,
               max_mid
             };
 

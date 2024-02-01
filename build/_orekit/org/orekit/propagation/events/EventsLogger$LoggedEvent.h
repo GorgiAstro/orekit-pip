@@ -10,10 +10,10 @@ namespace org {
       class AbsoluteDate;
     }
     namespace propagation {
+      class SpacecraftState;
       namespace events {
         class EventDetector;
       }
-      class SpacecraftState;
     }
   }
 }
@@ -32,10 +32,10 @@ namespace org {
         class EventsLogger$LoggedEvent : public ::java::lang::Object {
          public:
           enum {
-            mid_getDate_c325492395d89b24,
-            mid_getEventDetector_9ada55f07f5a223c,
-            mid_getState_9d155cc8314c99cf,
-            mid_isIncreasing_9ab94ac1dc23b105,
+            mid_getDate_80e11148db499dda,
+            mid_getEventDetector_ebd847a60689999d,
+            mid_getState_8fbfa58855031235,
+            mid_isIncreasing_eee3de00fe971136,
             max_mid
           };
 

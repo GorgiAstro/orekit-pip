@@ -33,8 +33,8 @@ namespace org {
           class MinMaxTreeTileFactory : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_createTile_afa2c7228c4fd74e,
+              mid_init$_ff7cb6c242604316,
+              mid_createTile_1cd19714644063bd,
               max_mid
             };
 

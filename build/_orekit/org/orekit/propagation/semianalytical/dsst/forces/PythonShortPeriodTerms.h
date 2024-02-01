@@ -3,6 +3,17 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class Map;
+    class Set;
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -14,23 +25,12 @@ namespace org {
         }
       }
     }
-    namespace orbits {
-      class Orbit;
-    }
     namespace time {
       class AbsoluteDate;
     }
-  }
-}
-namespace java {
-  namespace util {
-    class Map;
-    class Set;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-    class String;
+    namespace orbits {
+      class Orbit;
+    }
   }
 }
 template<class T> class JArray;
@@ -45,14 +45,14 @@ namespace org {
             class PythonShortPeriodTerms : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_finalize_a1fa5dae97ea5ed2,
-                mid_getCoefficients_92ad788dda1c7643,
-                mid_getCoefficientsKeyPrefix_1c1fa1e935d6cdcf,
-                mid_pythonDecRef_a1fa5dae97ea5ed2,
-                mid_pythonExtension_6c0ce7e438e5ded4,
-                mid_pythonExtension_3d7dd2314a0dd456,
-                mid_value_88da41feb340affc,
+                mid_init$_ff7cb6c242604316,
+                mid_finalize_ff7cb6c242604316,
+                mid_getCoefficients_e36d03a99e00e4c3,
+                mid_getCoefficientsKeyPrefix_d2c8eb4129821f0e,
+                mid_pythonDecRef_ff7cb6c242604316,
+                mid_pythonExtension_42c72b98e3c2e08a,
+                mid_pythonExtension_f5bbab7e97879358,
+                mid_value_12bafed5e5351c0d,
                 max_mid
               };
 

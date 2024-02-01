@@ -6,13 +6,13 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
-      namespace events {
-        class ODEStepEndHandler;
-        class EventState;
-        class EventOccurrence;
-      }
       namespace sampling {
         class ODEStateInterpolator;
+      }
+      namespace events {
+        class ODEStepEndHandler;
+        class EventOccurrence;
+        class EventState;
       }
       class ODEStateAndDerivative;
     }
@@ -33,13 +33,13 @@ namespace org {
         class StepEndEventState : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_00cecfec8aa9403e,
-            mid_doEvent_1eca994d89f760c7,
-            mid_evaluateStep_f2bd5620f6269916,
-            mid_getEventTime_b74f83833fdad017,
-            mid_getHandler_67df44026d6b5e99,
-            mid_init_a7556bd72cab73f1,
-            mid_setStepEnd_8ba9fe7a847cecad,
+            mid_init$_3dff193c3948a094,
+            mid_doEvent_85cb4cee6c2ee34d,
+            mid_evaluateStep_a2d4078e6169b71f,
+            mid_getEventTime_9981f74b2d109da6,
+            mid_getHandler_33c35f2cadb708df,
+            mid_init_25005604bcb94d07,
+            mid_setStepEnd_1ad26e8c8c0cd65b,
             max_mid
           };
 

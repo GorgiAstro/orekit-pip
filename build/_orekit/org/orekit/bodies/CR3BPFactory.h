@@ -3,21 +3,21 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
+    namespace bodies {
+      class CR3BPSystem;
+      class CelestialBody;
+    }
     namespace time {
       class AbsoluteDate;
       class TimeScale;
     }
-    namespace bodies {
-      class CelestialBody;
-      class CR3BPSystem;
-    }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -29,10 +29,10 @@ namespace org {
       class CR3BPFactory : public ::java::lang::Object {
        public:
         enum {
-          mid_getEarthMoonCR3BP_2748a8cb525bb823,
-          mid_getSunEarthCR3BP_61a155c86078c96f,
-          mid_getSunJupiterCR3BP_61a155c86078c96f,
-          mid_getSystem_d00c1cb3e2e0b3f6,
+          mid_getEarthMoonCR3BP_46ee78c3fbfe7bfc,
+          mid_getSunEarthCR3BP_d401ab06b2874e8c,
+          mid_getSunJupiterCR3BP_d401ab06b2874e8c,
+          mid_getSystem_69a62929da6ecbdd,
           max_mid
         };
 

@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
-    namespace complex {
-      class Complex;
-    }
     namespace linear {
-      class RealMatrix;
       class FieldMatrix;
       class FieldVector;
+      class RealMatrix;
+    }
+    namespace complex {
+      class Complex;
     }
   }
 }
@@ -29,19 +29,19 @@ namespace org {
       class ComplexEigenDecomposition : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_84bd15e0995d0c79,
-          mid_init$_103e61a34f552989,
-          mid_getD_81d49643ce3a3c0b,
-          mid_getDeterminant_b74f83833fdad017,
-          mid_getEigenvalues_24cc06122e1087cf,
-          mid_getEigenvector_06abfeddf4c4a28c,
-          mid_getV_81d49643ce3a3c0b,
-          mid_getVT_81d49643ce3a3c0b,
-          mid_hasComplexEigenvalues_9ab94ac1dc23b105,
-          mid_matricesToEigenArrays_a1fa5dae97ea5ed2,
-          mid_findEigenValues_84bd15e0995d0c79,
-          mid_findEigenVectors_3c04247304967ec8,
-          mid_checkDefinition_84bd15e0995d0c79,
+          mid_init$_f5364c9a9d9cbd53,
+          mid_init$_e834f27fc5021cbd,
+          mid_getD_02883dbbe5db44ac,
+          mid_getDeterminant_9981f74b2d109da6,
+          mid_getEigenvalues_6bea1b718c2aa50b,
+          mid_getEigenvector_229c51f1f7aa44e3,
+          mid_getV_02883dbbe5db44ac,
+          mid_getVT_02883dbbe5db44ac,
+          mid_hasComplexEigenvalues_eee3de00fe971136,
+          mid_findEigenVectors_87e4c06eff884f7d,
+          mid_matricesToEigenArrays_ff7cb6c242604316,
+          mid_checkDefinition_f5364c9a9d9cbd53,
+          mid_findEigenValues_f5364c9a9d9cbd53,
           max_mid
         };
 

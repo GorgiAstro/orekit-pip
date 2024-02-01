@@ -31,8 +31,8 @@ namespace org {
           class GeneratedMeasurementSubscriber : public ::java::lang::Object {
            public:
             enum {
-              mid_handleGeneratedMeasurement_1640bf51befb0c77,
-              mid_init_f89af00fc113b524,
+              mid_handleGeneratedMeasurement_ccec3dc40c67aef1,
+              mid_init_ce7d94fe97fdcf55,
               max_mid
             };
 

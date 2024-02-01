@@ -5,17 +5,17 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class WaypointPVBuilder$InterpolationFactory;
-      class PVCoordinatesProvider;
-      class WaypointPVBuilder;
-    }
-    namespace bodies {
-      class GeodeticPoint;
-      class OneAxisEllipsoid;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace utils {
+      class WaypointPVBuilder;
+      class WaypointPVBuilder$InterpolationFactory;
+      class PVCoordinatesProvider;
+    }
+    namespace bodies {
+      class OneAxisEllipsoid;
+      class GeodeticPoint;
     }
   }
 }
@@ -33,18 +33,18 @@ namespace org {
       class WaypointPVBuilder : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_993cc46df621d9cd,
-          mid_addWaypoint_28e0163f5d6e8ccf,
-          mid_build_8a41319e47f3bd7c,
-          mid_cartesianBuilder_240b6619f67611e2,
-          mid_constantAfter_e846a6f6ef5fc3c6,
-          mid_constantBefore_e846a6f6ef5fc3c6,
-          mid_greatCircleBuilder_240b6619f67611e2,
-          mid_invalidAfter_e846a6f6ef5fc3c6,
-          mid_invalidBefore_e846a6f6ef5fc3c6,
-          mid_loxodromeBuilder_240b6619f67611e2,
-          mid_createInitial_d2a94228dd25ab45,
-          mid_createFinal_d2a94228dd25ab45,
+          mid_init$_00e7f44cf802eaa1,
+          mid_addWaypoint_b67b047f21c6c1d4,
+          mid_build_781ab98286dad7d5,
+          mid_cartesianBuilder_526e5739b24da72f,
+          mid_constantAfter_cb2804c8e2e69709,
+          mid_constantBefore_cb2804c8e2e69709,
+          mid_greatCircleBuilder_526e5739b24da72f,
+          mid_invalidAfter_cb2804c8e2e69709,
+          mid_invalidBefore_cb2804c8e2e69709,
+          mid_loxodromeBuilder_526e5739b24da72f,
+          mid_createInitial_f3fa2dad6a61f56c,
+          mid_createFinal_f3fa2dad6a61f56c,
           max_mid
         };
 

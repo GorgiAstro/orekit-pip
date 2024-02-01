@@ -3,23 +3,12 @@
 
 #include "org/orekit/files/ccsds/ndm/NdmConstituent.h"
 
-namespace java {
-  namespace util {
-    class List;
-    class Map;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace utils {
-      class IERSConventions;
-      class TimeStampedPVCoordinates;
-    }
     namespace files {
+      namespace general {
+        class EphemerisFile;
+      }
       namespace ccsds {
         namespace ndm {
           namespace odm {
@@ -31,13 +20,24 @@ namespace org {
           }
         }
       }
-      namespace general {
-        class EphemerisFile;
-      }
     }
     namespace data {
       class DataContext;
     }
+    namespace utils {
+      class IERSConventions;
+      class TimeStampedPVCoordinates;
+    }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+    class Map;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -53,9 +53,9 @@ namespace org {
               class Oem : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
                public:
                 enum {
-                  mid_init$_9639e27fba1a1f36,
-                  mid_checkTimeSystems_a1fa5dae97ea5ed2,
-                  mid_getSatellites_810bed48fafb0b9a,
+                  mid_init$_f1d722872d5900a5,
+                  mid_checkTimeSystems_ff7cb6c242604316,
+                  mid_getSatellites_dbcb8bbac6b35e0d,
                   max_mid
                 };
 

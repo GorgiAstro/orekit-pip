@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace models {
       namespace earth {
         namespace atmosphere {
           class JB2008InputParameters;
         }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -34,22 +34,22 @@ namespace org {
           class PythonJB2008InputParameters : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_getDSTDTC_fd347811007a6ba3,
-              mid_getF10_fd347811007a6ba3,
-              mid_getF10B_fd347811007a6ba3,
-              mid_getMaxDate_c325492395d89b24,
-              mid_getMinDate_c325492395d89b24,
-              mid_getS10_fd347811007a6ba3,
-              mid_getS10B_fd347811007a6ba3,
-              mid_getXM10_fd347811007a6ba3,
-              mid_getXM10B_fd347811007a6ba3,
-              mid_getY10_fd347811007a6ba3,
-              mid_getY10B_fd347811007a6ba3,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_init$_ff7cb6c242604316,
+              mid_finalize_ff7cb6c242604316,
+              mid_getDSTDTC_209f08246d708042,
+              mid_getF10_209f08246d708042,
+              mid_getF10B_209f08246d708042,
+              mid_getMaxDate_80e11148db499dda,
+              mid_getMinDate_80e11148db499dda,
+              mid_getS10_209f08246d708042,
+              mid_getS10B_209f08246d708042,
+              mid_getXM10_209f08246d708042,
+              mid_getXM10B_209f08246d708042,
+              mid_getY10_209f08246d708042,
+              mid_getY10B_209f08246d708042,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
               max_mid
             };
 

@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
@@ -35,14 +35,14 @@ namespace org {
       class Panel : public ::java::lang::Object {
        public:
         enum {
-          mid_getAbsorption_b74f83833fdad017,
-          mid_getArea_b74f83833fdad017,
-          mid_getDrag_b74f83833fdad017,
-          mid_getLiftRatio_b74f83833fdad017,
-          mid_getNormal_de3c04262e60a5b3,
-          mid_getNormal_9019a5b32b11453a,
-          mid_getReflection_b74f83833fdad017,
-          mid_isDoubleSided_9ab94ac1dc23b105,
+          mid_getAbsorption_9981f74b2d109da6,
+          mid_getArea_9981f74b2d109da6,
+          mid_getDrag_9981f74b2d109da6,
+          mid_getLiftRatio_9981f74b2d109da6,
+          mid_getNormal_ee088fe02cdd6745,
+          mid_getNormal_38283c57554889c0,
+          mid_getReflection_9981f74b2d109da6,
+          mid_isDoubleSided_eee3de00fe971136,
           max_mid
         };
 

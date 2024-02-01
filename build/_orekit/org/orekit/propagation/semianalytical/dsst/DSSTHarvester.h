@@ -15,8 +15,8 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace orbits {
-      class PositionAngleType;
       class OrbitType;
+      class PositionAngleType;
     }
     namespace propagation {
       class SpacecraftState;
@@ -39,19 +39,19 @@ namespace org {
           class DSSTHarvester : public ::org::orekit::propagation::AbstractMatricesHarvester {
            public:
             enum {
-              mid_freezeColumnsNames_a1fa5dae97ea5ed2,
-              mid_getB1_f77d745f2128c391,
-              mid_getB2_b7aa5791b069a41f,
-              mid_getB3_b7aa5791b069a41f,
-              mid_getB4_f77d745f2128c391,
-              mid_getJacobiansColumnsNames_e62d3bb06d56d7e3,
-              mid_getOrbitType_c7d4737d7afca612,
-              mid_getParametersJacobian_b7aa5791b069a41f,
-              mid_getPositionAngleType_c25055891f180348,
-              mid_getStateTransitionMatrix_b7aa5791b069a41f,
-              mid_initializeFieldShortPeriodTerms_280c3390961e0a50,
-              mid_setReferenceState_280c3390961e0a50,
-              mid_updateFieldShortPeriodTerms_280c3390961e0a50,
+              mid_freezeColumnsNames_ff7cb6c242604316,
+              mid_getB1_b2eebabce70526d8,
+              mid_getB2_011bf64ebaa4e018,
+              mid_getB3_011bf64ebaa4e018,
+              mid_getB4_b2eebabce70526d8,
+              mid_getJacobiansColumnsNames_d751c1a57012b438,
+              mid_getOrbitType_495f818d3570b7f5,
+              mid_getParametersJacobian_011bf64ebaa4e018,
+              mid_getPositionAngleType_a6db4e6edefda4be,
+              mid_getStateTransitionMatrix_011bf64ebaa4e018,
+              mid_initializeFieldShortPeriodTerms_72b846eb87f3af9a,
+              mid_setReferenceState_72b846eb87f3af9a,
+              mid_updateFieldShortPeriodTerms_72b846eb87f3af9a,
               max_mid
             };
 

@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class NullArgumentException;
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
-    }
     namespace distribution {
       class RealDistribution;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
+      class NullArgumentException;
     }
     namespace stat {
       namespace descriptive {
@@ -38,55 +38,55 @@ namespace org {
         class InferenceTestUtils : public ::java::lang::Object {
          public:
           enum {
-            mid_approximateP_3ea86aad626e7047,
-            mid_chiSquare_54e0c9e47c29aca2,
-            mid_chiSquare_5da72ec1f5d4a740,
-            mid_chiSquareDataSetsComparison_f69626ae7ca2489a,
-            mid_chiSquareTest_54e0c9e47c29aca2,
-            mid_chiSquareTest_5da72ec1f5d4a740,
-            mid_chiSquareTest_446489047f3f1b4f,
-            mid_chiSquareTest_337fdba983c67932,
-            mid_chiSquareTestDataSetsComparison_f69626ae7ca2489a,
-            mid_chiSquareTestDataSetsComparison_05bd0745ca7cc56a,
-            mid_exactP_66797b2e6bbebeee,
-            mid_g_5da72ec1f5d4a740,
-            mid_gDataSetsComparison_f69626ae7ca2489a,
-            mid_gTest_5da72ec1f5d4a740,
-            mid_gTest_337fdba983c67932,
-            mid_gTestDataSetsComparison_f69626ae7ca2489a,
-            mid_gTestDataSetsComparison_05bd0745ca7cc56a,
-            mid_gTestIntrinsic_5da72ec1f5d4a740,
-            mid_homoscedasticT_3207f9c2ae7271d9,
-            mid_homoscedasticT_3aa35fce42f529d9,
-            mid_homoscedasticTTest_3207f9c2ae7271d9,
-            mid_homoscedasticTTest_3aa35fce42f529d9,
-            mid_homoscedasticTTest_899e11e2ec28e6cd,
-            mid_kolmogorovSmirnovStatistic_3207f9c2ae7271d9,
-            mid_kolmogorovSmirnovStatistic_27f681af35b4baa1,
-            mid_kolmogorovSmirnovTest_3207f9c2ae7271d9,
-            mid_kolmogorovSmirnovTest_27f681af35b4baa1,
-            mid_kolmogorovSmirnovTest_0c373dc781edcf2f,
-            mid_kolmogorovSmirnovTest_cc1786ac1add8fe8,
-            mid_kolmogorovSmirnovTest_208417a15884b969,
-            mid_oneWayAnovaFValue_b19699bf13064258,
-            mid_oneWayAnovaPValue_b19699bf13064258,
-            mid_oneWayAnovaTest_9417b0f508298776,
-            mid_pairedT_3207f9c2ae7271d9,
-            mid_pairedTTest_3207f9c2ae7271d9,
-            mid_pairedTTest_899e11e2ec28e6cd,
-            mid_rootLogLikelihoodRatio_84bd267915ec3a91,
-            mid_t_3207f9c2ae7271d9,
-            mid_t_e45651f63bcd931a,
-            mid_t_172f3ca66813c571,
-            mid_t_3aa35fce42f529d9,
-            mid_tTest_3207f9c2ae7271d9,
-            mid_tTest_e45651f63bcd931a,
-            mid_tTest_172f3ca66813c571,
-            mid_tTest_3aa35fce42f529d9,
-            mid_tTest_899e11e2ec28e6cd,
-            mid_tTest_a36fee56beaf3c37,
-            mid_tTest_45e6c9d7ca9c7c3d,
-            mid_tTest_516ad16aed11ab58,
+            mid_approximateP_e8c62577e6af9173,
+            mid_chiSquare_1a9d0eafbd140a5e,
+            mid_chiSquare_f8078c674056fb4a,
+            mid_chiSquareDataSetsComparison_8361d6bcedc1da1a,
+            mid_chiSquareTest_1a9d0eafbd140a5e,
+            mid_chiSquareTest_f8078c674056fb4a,
+            mid_chiSquareTest_61b6a9dae7ed2786,
+            mid_chiSquareTest_8ea380ac7c124df6,
+            mid_chiSquareTestDataSetsComparison_8361d6bcedc1da1a,
+            mid_chiSquareTestDataSetsComparison_0d632518d2300ac8,
+            mid_exactP_23ad5004a7d91208,
+            mid_g_f8078c674056fb4a,
+            mid_gDataSetsComparison_8361d6bcedc1da1a,
+            mid_gTest_f8078c674056fb4a,
+            mid_gTest_8ea380ac7c124df6,
+            mid_gTestDataSetsComparison_8361d6bcedc1da1a,
+            mid_gTestDataSetsComparison_0d632518d2300ac8,
+            mid_gTestIntrinsic_f8078c674056fb4a,
+            mid_homoscedasticT_b01af8a77d4df96f,
+            mid_homoscedasticT_f5214cbd47f47c82,
+            mid_homoscedasticTTest_b01af8a77d4df96f,
+            mid_homoscedasticTTest_f5214cbd47f47c82,
+            mid_homoscedasticTTest_9813d7ac14cb2486,
+            mid_kolmogorovSmirnovStatistic_b01af8a77d4df96f,
+            mid_kolmogorovSmirnovStatistic_163649aa371f5c4c,
+            mid_kolmogorovSmirnovTest_b01af8a77d4df96f,
+            mid_kolmogorovSmirnovTest_163649aa371f5c4c,
+            mid_kolmogorovSmirnovTest_2cf76703ce30b165,
+            mid_kolmogorovSmirnovTest_12a35b6f3eee20af,
+            mid_kolmogorovSmirnovTest_4b4eb130f807dbcc,
+            mid_oneWayAnovaFValue_ce4bc28a12afbddc,
+            mid_oneWayAnovaPValue_ce4bc28a12afbddc,
+            mid_oneWayAnovaTest_9bf4a3edb5ef37bf,
+            mid_pairedT_b01af8a77d4df96f,
+            mid_pairedTTest_b01af8a77d4df96f,
+            mid_pairedTTest_9813d7ac14cb2486,
+            mid_rootLogLikelihoodRatio_b846aea95df710a3,
+            mid_t_b01af8a77d4df96f,
+            mid_t_4f42c7a8793320e4,
+            mid_t_903f0d6f6e0dac90,
+            mid_t_f5214cbd47f47c82,
+            mid_tTest_b01af8a77d4df96f,
+            mid_tTest_4f42c7a8793320e4,
+            mid_tTest_903f0d6f6e0dac90,
+            mid_tTest_f5214cbd47f47c82,
+            mid_tTest_9813d7ac14cb2486,
+            mid_tTest_b1cf28637d6920a8,
+            mid_tTest_fe55a42774f43357,
+            mid_tTest_d0fcfd116c4adb72,
             max_mid
           };
 

@@ -3,12 +3,6 @@
 
 #include "org/orekit/files/rinex/navigation/TypeSvMessage.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -17,6 +11,12 @@ namespace org {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -30,29 +30,29 @@ namespace org {
           class EarthOrientationParameterMessage : public ::org::orekit::files::rinex::navigation::TypeSvMessage {
            public:
             enum {
-              mid_init$_2f7855eb8fb85f32,
-              mid_getDut1_b74f83833fdad017,
-              mid_getDut1Dot_b74f83833fdad017,
-              mid_getDut1DotDot_b74f83833fdad017,
-              mid_getReferenceEpoch_c325492395d89b24,
-              mid_getTransmissionTime_b74f83833fdad017,
-              mid_getXp_b74f83833fdad017,
-              mid_getXpDot_b74f83833fdad017,
-              mid_getXpDotDot_b74f83833fdad017,
-              mid_getYp_b74f83833fdad017,
-              mid_getYpDot_b74f83833fdad017,
-              mid_getYpDotDot_b74f83833fdad017,
-              mid_setDut1_8ba9fe7a847cecad,
-              mid_setDut1Dot_8ba9fe7a847cecad,
-              mid_setDut1DotDot_8ba9fe7a847cecad,
-              mid_setReferenceEpoch_02135a6ef25adb4b,
-              mid_setTransmissionTime_8ba9fe7a847cecad,
-              mid_setXp_8ba9fe7a847cecad,
-              mid_setXpDot_8ba9fe7a847cecad,
-              mid_setXpDotDot_8ba9fe7a847cecad,
-              mid_setYp_8ba9fe7a847cecad,
-              mid_setYpDot_8ba9fe7a847cecad,
-              mid_setYpDotDot_8ba9fe7a847cecad,
+              mid_init$_96a1aa7c5f1486f9,
+              mid_getDut1_9981f74b2d109da6,
+              mid_getDut1Dot_9981f74b2d109da6,
+              mid_getDut1DotDot_9981f74b2d109da6,
+              mid_getReferenceEpoch_80e11148db499dda,
+              mid_getTransmissionTime_9981f74b2d109da6,
+              mid_getXp_9981f74b2d109da6,
+              mid_getXpDot_9981f74b2d109da6,
+              mid_getXpDotDot_9981f74b2d109da6,
+              mid_getYp_9981f74b2d109da6,
+              mid_getYpDot_9981f74b2d109da6,
+              mid_getYpDotDot_9981f74b2d109da6,
+              mid_setDut1_1ad26e8c8c0cd65b,
+              mid_setDut1Dot_1ad26e8c8c0cd65b,
+              mid_setDut1DotDot_1ad26e8c8c0cd65b,
+              mid_setReferenceEpoch_8497861b879c83f7,
+              mid_setTransmissionTime_1ad26e8c8c0cd65b,
+              mid_setXp_1ad26e8c8c0cd65b,
+              mid_setXpDot_1ad26e8c8c0cd65b,
+              mid_setXpDotDot_1ad26e8c8c0cd65b,
+              mid_setYp_1ad26e8c8c0cd65b,
+              mid_setYpDot_1ad26e8c8c0cd65b,
+              mid_setYpDotDot_1ad26e8c8c0cd65b,
               max_mid
             };
 

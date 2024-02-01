@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      class SpacecraftState;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace propagation {
+      class SpacecraftState;
     }
   }
 }
@@ -28,8 +28,8 @@ namespace org {
         class AbstractIntegratedPropagator$MainStateEquations : public ::java::lang::Object {
          public:
           enum {
-            mid_computeDerivatives_f227e5f48720b798,
-            mid_init_2d7f9a496c7e9781,
+            mid_computeDerivatives_e8a4ac02afc72623,
+            mid_init_14deaae988292d42,
             max_mid
           };
 

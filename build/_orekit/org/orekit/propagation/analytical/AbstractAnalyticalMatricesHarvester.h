@@ -13,8 +13,8 @@ namespace org {
       class SpacecraftState;
     }
     namespace orbits {
-      class PositionAngleType;
       class OrbitType;
+      class PositionAngleType;
     }
   }
   namespace hipparchus {
@@ -42,16 +42,16 @@ namespace org {
         class AbstractAnalyticalMatricesHarvester : public ::org::orekit::propagation::AbstractMatricesHarvester {
          public:
           enum {
-            mid_freezeColumnsNames_a1fa5dae97ea5ed2,
-            mid_getAdditionalState_f227e5f48720b798,
-            mid_getGradientConverter_3c9b6f24c90a46d6,
-            mid_getJacobiansColumnsNames_e62d3bb06d56d7e3,
-            mid_getName_1c1fa1e935d6cdcf,
-            mid_getOrbitType_c7d4737d7afca612,
-            mid_getParametersJacobian_b7aa5791b069a41f,
-            mid_getPositionAngleType_c25055891f180348,
-            mid_getStateTransitionMatrix_b7aa5791b069a41f,
-            mid_setReferenceState_280c3390961e0a50,
+            mid_freezeColumnsNames_ff7cb6c242604316,
+            mid_getAdditionalState_e8a4ac02afc72623,
+            mid_getGradientConverter_d2718eefd4d5ae94,
+            mid_getJacobiansColumnsNames_d751c1a57012b438,
+            mid_getName_d2c8eb4129821f0e,
+            mid_getOrbitType_495f818d3570b7f5,
+            mid_getParametersJacobian_011bf64ebaa4e018,
+            mid_getPositionAngleType_a6db4e6edefda4be,
+            mid_getStateTransitionMatrix_011bf64ebaa4e018,
+            mid_setReferenceState_72b846eb87f3af9a,
             max_mid
           };
 

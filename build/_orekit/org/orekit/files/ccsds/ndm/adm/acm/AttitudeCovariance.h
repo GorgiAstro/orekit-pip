@@ -46,10 +46,10 @@ namespace org {
               class AttitudeCovariance : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_2e14852685fa5522,
-                  mid_getDate_c325492395d89b24,
-                  mid_getMatrix_2d4bea390f44a6ac,
-                  mid_getType_49fb04b3e4992396,
+                  mid_init$_671b73630fd8606f,
+                  mid_getDate_80e11148db499dda,
+                  mid_getMatrix_4fb5d9750db49b3f,
+                  mid_getType_74687e132732dee9,
                   max_mid
                 };
 

@@ -17,7 +17,7 @@ namespace org {
       class RandomVectorGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_nextVector_25e1757a36c4dde2,
+          mid_nextVector_be783177b060994b,
           max_mid
         };
 

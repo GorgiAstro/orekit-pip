@@ -37,12 +37,12 @@ namespace org {
               class Inertia : public ::org::orekit::files::ccsds::ndm::CommonPhysicalProperties {
                public:
                 enum {
-                  mid_init$_a1fa5dae97ea5ed2,
-                  mid_getFrame_69d8be1b6b0a1a94,
-                  mid_getInertiaMatrix_f77d745f2128c391,
-                  mid_setFrame_4755133c5c4c59be,
-                  mid_setInertiaMatrixEntry_94fe8d9ffeb50676,
-                  mid_validate_8ba9fe7a847cecad,
+                  mid_init$_ff7cb6c242604316,
+                  mid_getFrame_0fc1562b68204151,
+                  mid_getInertiaMatrix_b2eebabce70526d8,
+                  mid_setFrame_2c8b859a72c0094e,
+                  mid_setInertiaMatrixEntry_e98d7b3e971b6087,
+                  mid_validate_1ad26e8c8c0cd65b,
                   max_mid
                 };
 

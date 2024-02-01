@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace linear {
-      class RealVector;
-      class RealMatrix;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
+      class RealVector;
+    }
   }
 }
 template<class T> class JArray;
@@ -28,15 +28,15 @@ namespace org {
             class LeastSquaresProblem$Evaluation : public ::java::lang::Object {
              public:
               enum {
-                mid_getChiSquare_b74f83833fdad017,
-                mid_getCost_b74f83833fdad017,
-                mid_getCovariances_f5dd9d6021dc9dae,
-                mid_getJacobian_f77d745f2128c391,
-                mid_getPoint_3a10cc75bd070d84,
-                mid_getRMS_b74f83833fdad017,
-                mid_getReducedChiSquare_2afcbc21f4e57ab2,
-                mid_getResiduals_3a10cc75bd070d84,
-                mid_getSigma_0af7505d8931441d,
+                mid_getChiSquare_9981f74b2d109da6,
+                mid_getCost_9981f74b2d109da6,
+                mid_getCovariances_d5a7c13c36e5009c,
+                mid_getJacobian_b2eebabce70526d8,
+                mid_getPoint_92d7e8d8d3f1dfcf,
+                mid_getRMS_9981f74b2d109da6,
+                mid_getReducedChiSquare_ce4c02d583456bc9,
+                mid_getResiduals_92d7e8d8d3f1dfcf,
+                mid_getSigma_2fd46ead8ae05f47,
                 max_mid
               };
 

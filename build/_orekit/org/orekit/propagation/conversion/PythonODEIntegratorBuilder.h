@@ -11,14 +11,14 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace orbits {
-      class Orbit;
-      class OrbitType;
-    }
     namespace propagation {
       namespace conversion {
         class ODEIntegratorBuilder;
       }
+    }
+    namespace orbits {
+      class Orbit;
+      class OrbitType;
     }
   }
   namespace hipparchus {
@@ -37,12 +37,12 @@ namespace org {
         class PythonODEIntegratorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_buildIntegrator_916fa199ca08d656,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_ff7cb6c242604316,
+            mid_buildIntegrator_31c1ebb8b9cbaedc,
+            mid_finalize_ff7cb6c242604316,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

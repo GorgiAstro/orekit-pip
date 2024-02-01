@@ -21,17 +21,17 @@ namespace org {
             class BeidouLegacyNavigationMessage : public ::org::orekit::propagation::analytical::gnss::data::AbstractNavigationMessage {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_getAODC_55546ef6a647f39b,
-                mid_getAODE_55546ef6a647f39b,
-                mid_getSvAccuracy_b74f83833fdad017,
-                mid_getTGD1_b74f83833fdad017,
-                mid_getTGD2_b74f83833fdad017,
-                mid_setAODC_8ba9fe7a847cecad,
-                mid_setAODE_8ba9fe7a847cecad,
-                mid_setSvAccuracy_8ba9fe7a847cecad,
-                mid_setTGD1_8ba9fe7a847cecad,
-                mid_setTGD2_8ba9fe7a847cecad,
+                mid_init$_ff7cb6c242604316,
+                mid_getAODC_d6ab429752e7c267,
+                mid_getAODE_d6ab429752e7c267,
+                mid_getSvAccuracy_9981f74b2d109da6,
+                mid_getTGD1_9981f74b2d109da6,
+                mid_getTGD2_9981f74b2d109da6,
+                mid_setAODC_1ad26e8c8c0cd65b,
+                mid_setAODE_1ad26e8c8c0cd65b,
+                mid_setSvAccuracy_1ad26e8c8c0cd65b,
+                mid_setTGD1_1ad26e8c8c0cd65b,
+                mid_setTGD2_1ad26e8c8c0cd65b,
                 max_mid
               };
 

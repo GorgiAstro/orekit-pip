@@ -20,20 +20,20 @@ namespace org {
             class DSSTTesseralContext : public ::org::orekit::propagation::semianalytical::dsst::forces::ForceModelContext {
              public:
               enum {
-                mid_getAx2oA_b74f83833fdad017,
-                mid_getBoA_b74f83833fdad017,
-                mid_getBoABpo_b74f83833fdad017,
-                mid_getChi_b74f83833fdad017,
-                mid_getChi2_b74f83833fdad017,
-                mid_getCo2AB_b74f83833fdad017,
-                mid_getE2_b74f83833fdad017,
-                mid_getMeanMotion_b74f83833fdad017,
-                mid_getMoa_b74f83833fdad017,
-                mid_getOoAB_b74f83833fdad017,
-                mid_getOrbitPeriod_b74f83833fdad017,
-                mid_getRatio_b74f83833fdad017,
-                mid_getRoa_b74f83833fdad017,
-                mid_getTheta_b74f83833fdad017,
+                mid_getAx2oA_9981f74b2d109da6,
+                mid_getBoA_9981f74b2d109da6,
+                mid_getBoABpo_9981f74b2d109da6,
+                mid_getChi_9981f74b2d109da6,
+                mid_getChi2_9981f74b2d109da6,
+                mid_getCo2AB_9981f74b2d109da6,
+                mid_getE2_9981f74b2d109da6,
+                mid_getMeanMotion_9981f74b2d109da6,
+                mid_getMoa_9981f74b2d109da6,
+                mid_getOoAB_9981f74b2d109da6,
+                mid_getOrbitPeriod_9981f74b2d109da6,
+                mid_getRatio_9981f74b2d109da6,
+                mid_getRoa_9981f74b2d109da6,
+                mid_getTheta_9981f74b2d109da6,
                 max_mid
               };
 

@@ -17,8 +17,8 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace tdm {
-            class Observation;
             class ObservationType;
+            class Observation;
           }
         }
         namespace section {
@@ -43,11 +43,11 @@ namespace org {
             class ObservationsBlock : public ::org::orekit::files::ccsds::section::CommentsContainer {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_addObservation_c0e245b0a20c5c20,
-                mid_addObservation_bf796995512911ef,
-                mid_getObservations_e62d3bb06d56d7e3,
-                mid_setObservations_0e7c3032c7c93ed3,
+                mid_init$_ff7cb6c242604316,
+                mid_addObservation_8a51a670ac73bd8f,
+                mid_addObservation_4de65b6441f7309e,
+                mid_getObservations_d751c1a57012b438,
+                mid_setObservations_aa335fea495d60e0,
                 max_mid
               };
 

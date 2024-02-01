@@ -5,31 +5,34 @@
 
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataContext;
+    }
     namespace time {
       class TimeStamped;
       class AbsoluteDate;
     }
+    namespace utils {
+      class IERSConventions;
+    }
     namespace files {
       namespace ccsds {
-        namespace section {
-          class Segment;
-        }
         namespace ndm {
           namespace odm {
             namespace omm {
-              class OmmData;
               class OmmMetadata;
+              class OmmData;
             }
             class OdmHeader;
           }
         }
+        namespace section {
+          class Segment;
+        }
       }
     }
-    namespace utils {
-      class IERSConventions;
-    }
-    namespace data {
-      class DataContext;
+    namespace orbits {
+      class KeplerianOrbit;
     }
     namespace propagation {
       namespace analytical {
@@ -39,9 +42,6 @@ namespace org {
       }
       class SpacecraftState;
     }
-    namespace orbits {
-      class KeplerianOrbit;
-    }
   }
 }
 namespace java {
@@ -49,8 +49,8 @@ namespace java {
     class List;
   }
   namespace lang {
-    class Class;
     class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -66,13 +66,13 @@ namespace org {
               class Omm : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
                public:
                 enum {
-                  mid_init$_e9fd06990bf04fcd,
-                  mid_generateKeplerianOrbit_f50f1bbccaeb207e,
-                  mid_generateSpacecraftState_9d155cc8314c99cf,
-                  mid_generateTLE_1c01e307dcced049,
-                  mid_getData_46cfa2da7d09d8dc,
-                  mid_getDate_c325492395d89b24,
-                  mid_getMetadata_85abb0ab995423bf,
+                  mid_init$_1acfa5add18c9e6e,
+                  mid_generateKeplerianOrbit_05c9859fe4d10dff,
+                  mid_generateSpacecraftState_8fbfa58855031235,
+                  mid_generateTLE_dacb215ad36dee42,
+                  mid_getData_bdbed63b525fae15,
+                  mid_getDate_80e11148db499dda,
+                  mid_getMetadata_75f0d75e3f76f793,
                   max_mid
                 };
 

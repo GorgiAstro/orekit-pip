@@ -6,12 +6,12 @@
 namespace org {
   namespace orekit {
     namespace forces {
-      namespace radiation {
-        class RadiationSensitive;
-      }
       class Panel;
       namespace drag {
         class DragSensitive;
+      }
+      namespace radiation {
+        class RadiationSensitive;
       }
     }
     namespace utils {
@@ -27,8 +27,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
@@ -52,17 +52,17 @@ namespace org {
       class BoxAndSolarArraySpacecraft : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0e7c3032c7c93ed3,
-          mid_init$_a3477d519f0e75e1,
-          mid_buildBox_6d5fc44237d88733,
-          mid_buildPanels_7d90265de2e24a3d,
-          mid_dragAcceleration_7a2b875d7cdeb947,
-          mid_dragAcceleration_c95e6c4bf4979a1a,
-          mid_getDragParametersDrivers_e62d3bb06d56d7e3,
-          mid_getPanels_e62d3bb06d56d7e3,
-          mid_getRadiationParametersDrivers_e62d3bb06d56d7e3,
-          mid_radiationPressureAcceleration_a99eceb06c3864f8,
-          mid_radiationPressureAcceleration_a230d7bdb943f733,
+          mid_init$_aa335fea495d60e0,
+          mid_init$_30e355b97c9283c7,
+          mid_buildBox_cc97e73ecd766053,
+          mid_buildPanels_59acc07da4226951,
+          mid_dragAcceleration_73bcdbeb8ff641bb,
+          mid_dragAcceleration_4a6ab2502c320936,
+          mid_getDragParametersDrivers_d751c1a57012b438,
+          mid_getPanels_d751c1a57012b438,
+          mid_getRadiationParametersDrivers_d751c1a57012b438,
+          mid_radiationPressureAcceleration_8ba97ba2fcb659fc,
+          mid_radiationPressureAcceleration_b5d2cc91db5ad4cb,
           max_mid
         };
 
@@ -82,8 +82,8 @@ namespace org {
 
         static ::java::util::List buildBox(jdouble, jdouble, jdouble, jdouble, jdouble, jdouble, jdouble);
         static ::java::util::List buildPanels(jdouble, jdouble, jdouble, const ::org::orekit::utils::ExtendedPVCoordinatesProvider &, jdouble, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, jdouble, jdouble, jdouble, jdouble);
-        ::org::hipparchus::geometry::euclidean::threed::FieldVector3D dragAcceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
         ::org::hipparchus::geometry::euclidean::threed::Vector3D dragAcceleration(const ::org::orekit::propagation::SpacecraftState &, jdouble, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const JArray< jdouble > &) const;
+        ::org::hipparchus::geometry::euclidean::threed::FieldVector3D dragAcceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
         ::java::util::List getDragParametersDrivers() const;
         ::java::util::List getPanels() const;
         ::java::util::List getRadiationParametersDrivers() const;

@@ -41,9 +41,9 @@ namespace org {
             class CommonMetadataKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_eec7c7c24b3ba62d,
-                mid_valueOf_36a07c246270fa11,
-                mid_values_c33c87e134eeeb5d,
+                mid_process_245fc75ea43a4a8e,
+                mid_valueOf_d73686f76a80faa8,
+                mid_values_0c07b94e54ede357,
                 max_mid
               };
 

@@ -27,9 +27,9 @@ namespace org {
         class SimpleUnivariateValueChecker : public ::org::hipparchus::optim::AbstractConvergenceChecker {
          public:
           enum {
-            mid_init$_369b4c97255d5afa,
-            mid_init$_2aa803b9073e6a76,
-            mid_converged_5e69550335eac108,
+            mid_init$_13edac039e8cc967,
+            mid_init$_905e65280a4e6722,
+            mid_converged_d40e8b51bbfb148a,
             max_mid
           };
 

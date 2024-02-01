@@ -25,13 +25,13 @@ namespace org {
         class EarthStandardAtmosphereRefraction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_init$_369b4c97255d5afa,
-            mid_getPressure_b74f83833fdad017,
-            mid_getRefraction_04fd0666b613d2ab,
-            mid_getTemperature_b74f83833fdad017,
-            mid_setPressure_8ba9fe7a847cecad,
-            mid_setTemperature_8ba9fe7a847cecad,
+            mid_init$_ff7cb6c242604316,
+            mid_init$_13edac039e8cc967,
+            mid_getPressure_9981f74b2d109da6,
+            mid_getRefraction_bf28ed64d6e8576b,
+            mid_getTemperature_9981f74b2d109da6,
+            mid_setPressure_1ad26e8c8c0cd65b,
+            mid_setTemperature_1ad26e8c8c0cd65b,
             max_mid
           };
 

@@ -7,18 +7,18 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class AngularRaDec;
         class AngularAzEl;
+        class AngularRaDec;
       }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace orbits {
       class Orbit;
     }
     namespace frames {
       class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -46,10 +46,10 @@ namespace org {
         class IodGauss : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_8ba9fe7a847cecad,
-            mid_estimate_14e3a21de9c1f0bf,
-            mid_estimate_2c2b31d5e422b743,
-            mid_estimate_488933f0a2ce410b,
+            mid_init$_1ad26e8c8c0cd65b,
+            mid_estimate_d3a935233cda59ab,
+            mid_estimate_5767f052c979bd65,
+            mid_estimate_e507dfcbdc2e0334,
             max_mid
           };
 

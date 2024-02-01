@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+      class TimeScale;
+    }
     namespace bodies {
       class FieldGeodeticPoint;
       class GeodeticPoint;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-      class TimeScale;
     }
     namespace models {
       namespace earth {
@@ -42,10 +42,10 @@ namespace org {
           class NiellMappingFunctionModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_init$_cae5d0c3721eff67,
-              mid_mappingFactors_6e118a7a5998051c,
-              mid_mappingFactors_6dcded9cb7dee3c2,
+              mid_init$_ff7cb6c242604316,
+              mid_init$_7cb2659f4799e4d2,
+              mid_mappingFactors_090b631fda469acd,
+              mid_mappingFactors_7d2717f150c68a9f,
               max_mid
             };
 

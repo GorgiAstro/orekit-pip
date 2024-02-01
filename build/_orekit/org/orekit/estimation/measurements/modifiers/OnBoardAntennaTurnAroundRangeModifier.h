@@ -4,6 +4,18 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class EstimatedMeasurementBase;
+        class EstimationModifier;
+        class TurnAroundRange;
+      }
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -11,18 +23,6 @@ namespace org {
           class Vector3D;
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class EstimationModifier;
-        class TurnAroundRange;
-        class EstimatedMeasurementBase;
-      }
-    }
-    namespace utils {
-      class ParameterDriver;
     }
   }
 }
@@ -45,9 +45,9 @@ namespace org {
           class OnBoardAntennaTurnAroundRangeModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_1844f891addbac57,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_modifyWithoutDerivatives_308087fabc1d7f66,
+              mid_init$_30f8886dfb88a63c,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_modifyWithoutDerivatives_ecce216dce506020,
               max_mid
             };
 

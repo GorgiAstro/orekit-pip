@@ -4,6 +4,15 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class RotationOrder;
+        }
+      }
+    }
+  }
   namespace orekit {
     namespace time {
       class TimeStamped;
@@ -22,17 +31,8 @@ namespace org {
       }
     }
     namespace utils {
-      class TimeStampedAngularCoordinates;
       class AngularDerivativesFilter;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class RotationOrder;
-        }
-      }
+      class TimeStampedAngularCoordinates;
     }
   }
 }
@@ -55,13 +55,13 @@ namespace org {
               class AttitudeState : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_5d84ed9eff763247,
-                  mid_getAttitudeType_53d1d57d6e9487ac,
-                  mid_getAvailableDerivatives_33d67d456ec94a0c,
-                  mid_getDate_c325492395d89b24,
-                  mid_getElements_25e1757a36c4dde2,
-                  mid_getRateElementsType_7f391c24fe2095f0,
-                  mid_toAngular_138e1d8d5c770a41,
+                  mid_init$_b70e5f4f46b7f371,
+                  mid_getAttitudeType_8cc80fd874f53bfc,
+                  mid_getAvailableDerivatives_410860c8cd87dc25,
+                  mid_getDate_80e11148db499dda,
+                  mid_getElements_be783177b060994b,
+                  mid_getRateElementsType_29a8b143d426bd15,
+                  mid_toAngular_ace5b88456b9b14e,
                   max_mid
                 };
 

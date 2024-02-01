@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
@@ -19,6 +11,14 @@ namespace org {
     namespace utils {
       class ImmutableTimeStampedCache;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -30,10 +30,10 @@ namespace org {
       class AbstractTimeInterpolator$InterpolationData : public ::java::lang::Object {
        public:
         enum {
-          mid_getCachedSamples_2902dff7f102e3bf,
-          mid_getInterpolationDate_c325492395d89b24,
-          mid_getNeighborList_e62d3bb06d56d7e3,
-          mid_getCentralDate_bcf1d4e6f5b4821b,
+          mid_getCachedSamples_2f7820789ca74a92,
+          mid_getInterpolationDate_80e11148db499dda,
+          mid_getNeighborList_d751c1a57012b438,
+          mid_getCentralDate_f339c058a2d6bb5d,
           max_mid
         };
 

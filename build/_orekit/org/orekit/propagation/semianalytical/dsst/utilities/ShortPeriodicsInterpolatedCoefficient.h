@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,10 +27,10 @@ namespace org {
             class ShortPeriodicsInterpolatedCoefficient : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_44ed599e93e8a30c,
-                mid_addGridPoint_9bdf5cd7dd060d54,
-                mid_clearHistory_a1fa5dae97ea5ed2,
-                mid_value_27b701db396ade01,
+                mid_init$_8fd427ab23829bf5,
+                mid_addGridPoint_03daf63e1af251cd,
+                mid_clearHistory_ff7cb6c242604316,
+                mid_value_9b63d19c31941c0f,
                 max_mid
               };
 

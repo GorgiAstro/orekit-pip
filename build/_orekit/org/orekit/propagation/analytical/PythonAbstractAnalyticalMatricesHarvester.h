@@ -3,19 +3,12 @@
 
 #include "org/orekit/propagation/analytical/AbstractAnalyticalMatricesHarvester.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
       namespace analytical {
-        class AbstractAnalyticalPropagator;
         class AbstractAnalyticalGradientConverter;
+        class AbstractAnalyticalPropagator;
       }
     }
     namespace utils {
@@ -28,6 +21,13 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+    class String;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -38,12 +38,12 @@ namespace org {
         class PythonAbstractAnalyticalMatricesHarvester : public ::org::orekit::propagation::analytical::AbstractAnalyticalMatricesHarvester {
          public:
           enum {
-            mid_init$_785d8bc651853d9a,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getGradientConverter_3c9b6f24c90a46d6,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_d249f4485255ccbf,
+            mid_finalize_ff7cb6c242604316,
+            mid_getGradientConverter_d2718eefd4d5ae94,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

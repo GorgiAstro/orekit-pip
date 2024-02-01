@@ -5,10 +5,10 @@
 
 namespace org {
   namespace hipparchus {
-    class FieldElement;
     namespace exception {
       class MathIllegalArgumentException;
     }
+    class FieldElement;
   }
 }
 namespace java {
@@ -25,7 +25,7 @@ namespace org {
       class FieldBlendable : public ::java::lang::Object {
        public:
         enum {
-          mid_blendArithmeticallyWith_9ea0603b1b5dc5e7,
+          mid_blendArithmeticallyWith_3927543110e7683e,
           max_mid
         };
 

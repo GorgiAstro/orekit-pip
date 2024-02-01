@@ -14,6 +14,9 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace files {
       namespace ccsds {
         namespace utils {
@@ -22,9 +25,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -40,8 +40,8 @@ namespace org {
             class AdmParser : public ::org::orekit::files::ccsds::utils::parsing::AbstractConstituentParser {
              public:
               enum {
-                mid_getMissionReferenceDate_c325492395d89b24,
-                mid_getSpecialXmlElementsBuilders_810bed48fafb0b9a,
+                mid_getMissionReferenceDate_80e11148db499dda,
+                mid_getSpecialXmlElementsBuilders_dbcb8bbac6b35e0d,
                 max_mid
               };
 

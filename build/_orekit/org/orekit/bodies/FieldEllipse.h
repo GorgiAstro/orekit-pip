@@ -40,19 +40,19 @@ namespace org {
       class FieldEllipse : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_fb9945b50b3dda96,
-          mid_getA_81520b552cb3fa26,
-          mid_getB_81520b552cb3fa26,
-          mid_getCenter_ff5ac73a7b43eddd,
-          mid_getCenterOfCurvature_352489997a01ac70,
-          mid_getFrame_2c51111cc6894ba1,
-          mid_getU_ff5ac73a7b43eddd,
-          mid_getV_ff5ac73a7b43eddd,
-          mid_pointAt_0e25f993119a02fa,
-          mid_projectToEllipse_176da7a9c87c96a5,
-          mid_projectToEllipse_352489997a01ac70,
-          mid_toPlane_9f54cac39580172c,
-          mid_toSpace_46ed8157ea06215e,
+          mid_init$_7487621e90fe4291,
+          mid_getA_08d37e3f77b7239d,
+          mid_getB_08d37e3f77b7239d,
+          mid_getCenter_d1b42a6748e907f9,
+          mid_getCenterOfCurvature_7942696c79200ea4,
+          mid_getFrame_cb151471db4570f0,
+          mid_getU_d1b42a6748e907f9,
+          mid_getV_d1b42a6748e907f9,
+          mid_pointAt_c2b058e1eb7a8988,
+          mid_projectToEllipse_42f03a1654758e56,
+          mid_projectToEllipse_7942696c79200ea4,
+          mid_toPlane_f59945942a1427c6,
+          mid_toSpace_6c5279bc1e96d3cb,
           max_mid
         };
 

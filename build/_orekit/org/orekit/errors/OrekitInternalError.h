@@ -35,12 +35,12 @@ namespace org {
       class OrekitInternalError : public ::java::lang::IllegalStateException {
        public:
         enum {
-          mid_init$_c5d3549d4f245728,
-          mid_getLocalizedMessage_1c1fa1e935d6cdcf,
-          mid_getMessage_1c1fa1e935d6cdcf,
-          mid_getMessage_26070c28e6ea354d,
-          mid_getParts_24e2edd6319f4c5a,
-          mid_getSpecifier_d8f5056e4f45c9a6,
+          mid_init$_0a70d77e3c5fdad0,
+          mid_getLocalizedMessage_d2c8eb4129821f0e,
+          mid_getMessage_d2c8eb4129821f0e,
+          mid_getMessage_5969ecf7afac3dba,
+          mid_getParts_2ab86268ef7a6631,
+          mid_getSpecifier_667bcd34994d9d31,
           max_mid
         };
 

@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
     namespace stat {
       namespace regression {
         class RegressionResults;
       }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
     }
   }
 }
@@ -30,13 +30,13 @@ namespace org {
         class UpdatingMultipleLinearRegression : public ::java::lang::Object {
          public:
           enum {
-            mid_addObservation_334f245ec9cee46b,
-            mid_addObservations_8a9d29a6bd2c9070,
-            mid_clear_a1fa5dae97ea5ed2,
-            mid_getN_6c0ce7e438e5ded4,
-            mid_hasIntercept_9ab94ac1dc23b105,
-            mid_regress_d38bcfe2c0d5b843,
-            mid_regress_6d4269f398dcfc41,
+            mid_addObservation_19a01fdb4baa56b0,
+            mid_addObservations_f1517d9a21833345,
+            mid_clear_ff7cb6c242604316,
+            mid_getN_42c72b98e3c2e08a,
+            mid_hasIntercept_eee3de00fe971136,
+            mid_regress_b2f062f0fff197c0,
+            mid_regress_54420be6ab2acfca,
             max_mid
           };
 

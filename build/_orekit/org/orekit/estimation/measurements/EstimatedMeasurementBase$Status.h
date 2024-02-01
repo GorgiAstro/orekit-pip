@@ -28,8 +28,8 @@ namespace org {
         class EstimatedMeasurementBase$Status : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_a623848866cc27aa,
-            mid_values_c981a3ddee93d7f9,
+            mid_valueOf_c7251c8717dc84bc,
+            mid_values_a0abe770f275def8,
             max_mid
           };
 

@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-    }
+namespace java {
+  namespace util {
+    class List;
   }
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
+namespace org {
   namespace orekit {
     namespace geometry {
       namespace fov {
@@ -20,8 +20,8 @@ namespace org {
       }
     }
     namespace bodies {
-      class GeodeticPoint;
       class OneAxisEllipsoid;
+      class GeodeticPoint;
     }
     namespace frames {
       class Transform;
@@ -32,14 +32,14 @@ namespace org {
       }
     }
   }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -52,15 +52,15 @@ namespace org {
         class PythonFieldOfView : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getFootprint_f20a8500298f8a78,
-            mid_getMargin_b74f83833fdad017,
-            mid_offsetFromBoundary_927580832e9083f9,
-            mid_projectToBoundary_f21507e4850a184e,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_ff7cb6c242604316,
+            mid_finalize_ff7cb6c242604316,
+            mid_getFootprint_0ed2f5155c3855f6,
+            mid_getMargin_9981f74b2d109da6,
+            mid_offsetFromBoundary_7ed10fb0bfbbf1c4,
+            mid_projectToBoundary_53c542efd8574582,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

@@ -5,8 +5,8 @@
 
 namespace java {
   namespace io {
-    class ObjectStreamClass;
     class IOException;
+    class ObjectStreamClass;
   }
   namespace lang {
     class Class;
@@ -21,18 +21,18 @@ namespace java {
     class ObjectInputStream$GetField : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_a1fa5dae97ea5ed2,
-        mid_defaulted_cde6b28e15c96b75,
-        mid_get_8662498d88818ee3,
-        mid_get_1fd0b55ec77056dd,
-        mid_get_1ef6b35d3cd7a399,
-        mid_get_85b99eeda70b0543,
-        mid_get_e13455b72046a8dc,
-        mid_get_7c969bab81d289ef,
-        mid_get_b3786ea1192ca6c0,
-        mid_get_c6bb8b0197d9599d,
-        mid_get_f6ccb7c40f2a4191,
-        mid_getObjectStreamClass_fb017e274a57c596,
+        mid_init$_ff7cb6c242604316,
+        mid_defaulted_df4c65b2aede5c41,
+        mid_get_4eb9aacd05482ae5,
+        mid_get_296f28f48ee46d22,
+        mid_get_aac5156a81a4da28,
+        mid_get_6249386b87b57efb,
+        mid_get_a27a778907596859,
+        mid_get_36da4b2d3bc5085f,
+        mid_get_171ef0dce466b6cc,
+        mid_get_c0ee6a335f92e4aa,
+        mid_get_c81bea946077ea6e,
+        mid_getObjectStreamClass_bd13c6c1b9563bca,
         max_mid
       };
 

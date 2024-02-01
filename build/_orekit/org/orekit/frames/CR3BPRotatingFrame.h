@@ -3,16 +3,16 @@
 
 #include "org/orekit/frames/Frame.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace bodies {
       class CelestialBody;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,7 +24,7 @@ namespace org {
       class CR3BPRotatingFrame : public ::org::orekit::frames::Frame {
        public:
         enum {
-          mid_init$_349663729d1e0824,
+          mid_init$_5d0679643b2bc625,
           max_mid
         };
 

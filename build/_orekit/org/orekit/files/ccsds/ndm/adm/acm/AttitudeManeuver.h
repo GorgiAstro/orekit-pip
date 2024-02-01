@@ -4,21 +4,21 @@
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class Rotation;
-        }
-      }
-    }
-  }
   namespace orekit {
     namespace files {
       namespace ccsds {
         namespace definitions {
           class FrameFacade;
+        }
+      }
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Rotation;
+          class Vector3D;
         }
       }
     }
@@ -43,30 +43,30 @@ namespace org {
               class AttitudeManeuver : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_a1fa5dae97ea5ed2,
-                  mid_getActuatorUsed_1c1fa1e935d6cdcf,
-                  mid_getBeginTime_b74f83833fdad017,
-                  mid_getDuration_b74f83833fdad017,
-                  mid_getEndTime_b74f83833fdad017,
-                  mid_getID_1c1fa1e935d6cdcf,
-                  mid_getManPurpose_1c1fa1e935d6cdcf,
-                  mid_getPrevID_1c1fa1e935d6cdcf,
-                  mid_getTargetAttitude_ff298a39b3cae5da,
-                  mid_getTargetMomFrame_69d8be1b6b0a1a94,
-                  mid_getTargetMomentum_8b724f8b4fdad1a2,
-                  mid_getTargetSpinRate_b74f83833fdad017,
-                  mid_setActuatorUsed_734b91ac30d5f9b4,
-                  mid_setBeginTime_8ba9fe7a847cecad,
-                  mid_setDuration_8ba9fe7a847cecad,
-                  mid_setEndTime_8ba9fe7a847cecad,
-                  mid_setID_734b91ac30d5f9b4,
-                  mid_setManPurpose_734b91ac30d5f9b4,
-                  mid_setPrevID_734b91ac30d5f9b4,
-                  mid_setTargetAttitude_f32de4638c68c05a,
-                  mid_setTargetMomFrame_4755133c5c4c59be,
-                  mid_setTargetMomentum_1844f891addbac57,
-                  mid_setTargetSpinRate_8ba9fe7a847cecad,
-                  mid_validate_8ba9fe7a847cecad,
+                  mid_init$_ff7cb6c242604316,
+                  mid_getActuatorUsed_d2c8eb4129821f0e,
+                  mid_getBeginTime_9981f74b2d109da6,
+                  mid_getDuration_9981f74b2d109da6,
+                  mid_getEndTime_9981f74b2d109da6,
+                  mid_getID_d2c8eb4129821f0e,
+                  mid_getManPurpose_d2c8eb4129821f0e,
+                  mid_getPrevID_d2c8eb4129821f0e,
+                  mid_getTargetAttitude_4d68cff5f6e4403a,
+                  mid_getTargetMomFrame_0fc1562b68204151,
+                  mid_getTargetMomentum_032312bdeb3f2f93,
+                  mid_getTargetSpinRate_9981f74b2d109da6,
+                  mid_setActuatorUsed_105e1eadb709d9ac,
+                  mid_setBeginTime_1ad26e8c8c0cd65b,
+                  mid_setDuration_1ad26e8c8c0cd65b,
+                  mid_setEndTime_1ad26e8c8c0cd65b,
+                  mid_setID_105e1eadb709d9ac,
+                  mid_setManPurpose_105e1eadb709d9ac,
+                  mid_setPrevID_105e1eadb709d9ac,
+                  mid_setTargetAttitude_c7213d7f3b4952c4,
+                  mid_setTargetMomFrame_2c8b859a72c0094e,
+                  mid_setTargetMomentum_30f8886dfb88a63c,
+                  mid_setTargetSpinRate_1ad26e8c8c0cd65b,
+                  mid_validate_1ad26e8c8c0cd65b,
                   max_mid
                 };
 

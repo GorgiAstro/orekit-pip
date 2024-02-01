@@ -24,10 +24,10 @@ namespace org {
           class FieldTheta : public ::java::lang::Object {
            public:
             enum {
-              mid_theta1_81520b552cb3fa26,
-              mid_theta2_81520b552cb3fa26,
-              mid_theta3_81520b552cb3fa26,
-              mid_theta4_81520b552cb3fa26,
+              mid_theta1_08d37e3f77b7239d,
+              mid_theta2_08d37e3f77b7239d,
+              mid_theta3_08d37e3f77b7239d,
+              mid_theta4_08d37e3f77b7239d,
               max_mid
             };
 

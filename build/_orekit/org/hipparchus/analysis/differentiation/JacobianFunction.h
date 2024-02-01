@@ -28,8 +28,8 @@ namespace org {
         class JacobianFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_8d561d56ecbeac9c,
-            mid_value_7e7c2ec7e6e555ee,
+            mid_init$_4abd329f558403d2,
+            mid_value_2d9ee2fffcc89139,
             max_mid
           };
 

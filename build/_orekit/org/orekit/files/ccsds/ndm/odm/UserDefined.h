@@ -24,9 +24,9 @@ namespace org {
             class UserDefined : public ::org::orekit::files::ccsds::section::CommentsContainer {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_addEntry_a627ad9c5959309d,
-                mid_getParameters_810bed48fafb0b9a,
+                mid_init$_ff7cb6c242604316,
+                mid_addEntry_771aee6c143cc92a,
+                mid_getParameters_dbcb8bbac6b35e0d,
                 max_mid
               };
 

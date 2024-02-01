@@ -13,8 +13,8 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class EstimatedMeasurement;
         class EstimationsProvider;
+        class EstimatedMeasurement;
       }
     }
   }
@@ -29,13 +29,13 @@ namespace org {
         class PythonEstimationsProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getEstimatedMeasurement_9e3faa50e0df43fe,
-            mid_getNumber_55546ef6a647f39b,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_ff7cb6c242604316,
+            mid_finalize_ff7cb6c242604316,
+            mid_getEstimatedMeasurement_a0080ef23630d9a1,
+            mid_getNumber_d6ab429752e7c267,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

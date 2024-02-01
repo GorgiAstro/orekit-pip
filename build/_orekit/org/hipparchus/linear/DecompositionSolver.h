@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
-    namespace linear {
-      class RealVector;
-      class RealMatrix;
-    }
     namespace exception {
       class MathIllegalArgumentException;
+    }
+    namespace linear {
+      class RealMatrix;
+      class RealVector;
     }
   }
 }
@@ -28,12 +28,12 @@ namespace org {
       class DecompositionSolver : public ::java::lang::Object {
        public:
         enum {
-          mid_getColumnDimension_55546ef6a647f39b,
-          mid_getInverse_f77d745f2128c391,
-          mid_getRowDimension_55546ef6a647f39b,
-          mid_isNonSingular_9ab94ac1dc23b105,
-          mid_solve_d5f1d017fd25113b,
-          mid_solve_be124f4006dc9f69,
+          mid_getColumnDimension_d6ab429752e7c267,
+          mid_getInverse_b2eebabce70526d8,
+          mid_getRowDimension_d6ab429752e7c267,
+          mid_isNonSingular_eee3de00fe971136,
+          mid_solve_bf8d75e459632544,
+          mid_solve_5a8a8185eb309db7,
           max_mid
         };
 

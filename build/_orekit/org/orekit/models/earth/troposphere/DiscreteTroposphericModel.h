@@ -5,13 +5,13 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
     namespace bodies {
       class FieldGeodeticPoint;
       class GeodeticPoint;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -34,8 +34,8 @@ namespace org {
           class DiscreteTroposphericModel : public ::org::orekit::utils::ParameterDriversProvider {
            public:
             enum {
-              mid_pathDelay_6f66c6b7094d6f08,
-              mid_pathDelay_2edbfa177156ee09,
+              mid_pathDelay_3e863f8cc7cde633,
+              mid_pathDelay_a07808bbc1ebff8d,
               max_mid
             };
 

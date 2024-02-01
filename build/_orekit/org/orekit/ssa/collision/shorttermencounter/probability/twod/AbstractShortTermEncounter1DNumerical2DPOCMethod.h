@@ -4,15 +4,6 @@
 #include "org/orekit/ssa/collision/shorttermencounter/probability/twod/AbstractShortTermEncounter2DPOCMethod.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace analysis {
-      namespace integration {
-        class UnivariateIntegrator;
-        class FieldUnivariateIntegrator;
-      }
-    }
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
       class FieldStateCovariance;
@@ -34,10 +25,6 @@ namespace org {
         class ProbabilityOfCollision;
       }
     }
-    namespace orbits {
-      class Orbit;
-      class FieldOrbit;
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -47,6 +34,19 @@ namespace org {
         }
       }
     }
+    namespace orbits {
+      class Orbit;
+      class FieldOrbit;
+    }
+  }
+  namespace hipparchus {
+    namespace analysis {
+      namespace integration {
+        class FieldUnivariateIntegrator;
+        class UnivariateIntegrator;
+      }
+    }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -67,16 +67,16 @@ namespace org {
               class AbstractShortTermEncounter1DNumerical2DPOCMethod : public ::org::orekit::ssa::collision::shorttermencounter::probability::twod::AbstractShortTermEncounter2DPOCMethod {
                public:
                 enum {
-                  mid_compute_6757b86d565adb5e,
-                  mid_compute_993978379571fdc8,
-                  mid_compute_a73e6347f5238a63,
-                  mid_compute_11689cd07cf55453,
-                  mid_compute_a0013bb9d172a4e4,
-                  mid_compute_0a5a6093c066b904,
-                  mid_compute_978e207e20e445e6,
-                  mid_compute_f84396b6984702e2,
-                  mid_compute_450667d4c5114463,
-                  mid_compute_86700ab09b80a1e9,
+                  mid_compute_008c28e8fb144fd8,
+                  mid_compute_8b83c2831e1c2f71,
+                  mid_compute_7eae8d8112e983e4,
+                  mid_compute_8edb355cf7d54cf6,
+                  mid_compute_1c7d7a6171c9f40b,
+                  mid_compute_74153d27b77a6dcb,
+                  mid_compute_91f4c05bf9eab1a6,
+                  mid_compute_a89d7889c8c6100d,
+                  mid_compute_590831e96331b68b,
+                  mid_compute_ae2e644072da8e54,
                   max_mid
                 };
 

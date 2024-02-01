@@ -30,16 +30,16 @@ namespace org {
       class PythonAdditionalStateProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_getAdditionalState_f227e5f48720b798,
-          mid_getName_1c1fa1e935d6cdcf,
-          mid_init_2d7f9a496c7e9781,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
-          mid_yield_97df9017614a1945,
-          mid_yield__97df9017614a1945,
+          mid_init$_ff7cb6c242604316,
+          mid_finalize_ff7cb6c242604316,
+          mid_getAdditionalState_e8a4ac02afc72623,
+          mid_getName_d2c8eb4129821f0e,
+          mid_init_14deaae988292d42,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
+          mid_yield_34f098c1d43e614c,
+          mid_yield__34f098c1d43e614c,
           max_mid
         };
 

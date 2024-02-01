@@ -20,8 +20,8 @@ namespace org {
           class StreamedMessage : public ::java::lang::Object {
            public:
             enum {
-              mid_getId_1c1fa1e935d6cdcf,
-              mid_getRate_55546ef6a647f39b,
+              mid_getId_d2c8eb4129821f0e,
+              mid_getRate_d6ab429752e7c267,
               max_mid
             };
 

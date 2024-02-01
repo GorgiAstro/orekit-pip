@@ -8,8 +8,8 @@ namespace org {
     namespace propagation {
       namespace analytical {
         namespace tle {
-          class TLE;
           class FieldTLE;
+          class TLE;
         }
       }
       class FieldSpacecraftState;
@@ -34,8 +34,8 @@ namespace org {
             class TleGenerationAlgorithm : public ::java::lang::Object {
              public:
               enum {
-                mid_generate_6e4ccfee7888f727,
-                mid_generate_7dac79832039ea3a,
+                mid_generate_166cccd89c387fd5,
+                mid_generate_f8078c645a12d356,
                 max_mid
               };
 

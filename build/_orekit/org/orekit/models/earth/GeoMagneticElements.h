@@ -33,13 +33,13 @@ namespace org {
         class GeoMagneticElements : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_1844f891addbac57,
-            mid_getDeclination_b74f83833fdad017,
-            mid_getFieldVector_8b724f8b4fdad1a2,
-            mid_getHorizontalIntensity_b74f83833fdad017,
-            mid_getInclination_b74f83833fdad017,
-            mid_getTotalIntensity_b74f83833fdad017,
-            mid_toString_1c1fa1e935d6cdcf,
+            mid_init$_30f8886dfb88a63c,
+            mid_getDeclination_9981f74b2d109da6,
+            mid_getFieldVector_032312bdeb3f2f93,
+            mid_getHorizontalIntensity_9981f74b2d109da6,
+            mid_getInclination_9981f74b2d109da6,
+            mid_getTotalIntensity_9981f74b2d109da6,
+            mid_toString_d2c8eb4129821f0e,
             max_mid
           };
 

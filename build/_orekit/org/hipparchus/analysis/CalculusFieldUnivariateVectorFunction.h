@@ -22,7 +22,7 @@ namespace org {
       class CalculusFieldUnivariateVectorFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_value_178e06dface5c0c9,
+          mid_value_0e260a9870cb2bbf,
           max_mid
         };
 

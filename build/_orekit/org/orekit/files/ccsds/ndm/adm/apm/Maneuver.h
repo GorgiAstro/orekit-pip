@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace files {
       namespace ccsds {
         namespace definitions {
           class FrameFacade;
         }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -44,18 +44,18 @@ namespace org {
               class Maneuver : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_a1fa5dae97ea5ed2,
-                  mid_getDeltaMass_b74f83833fdad017,
-                  mid_getDuration_b74f83833fdad017,
-                  mid_getEpochStart_c325492395d89b24,
-                  mid_getFrame_69d8be1b6b0a1a94,
-                  mid_getTorque_8b724f8b4fdad1a2,
-                  mid_setDeltaMass_8ba9fe7a847cecad,
-                  mid_setDuration_8ba9fe7a847cecad,
-                  mid_setEpochStart_02135a6ef25adb4b,
-                  mid_setFrame_4755133c5c4c59be,
-                  mid_setTorque_d5322b8b512aeb26,
-                  mid_validate_8ba9fe7a847cecad,
+                  mid_init$_ff7cb6c242604316,
+                  mid_getDeltaMass_9981f74b2d109da6,
+                  mid_getDuration_9981f74b2d109da6,
+                  mid_getEpochStart_80e11148db499dda,
+                  mid_getFrame_0fc1562b68204151,
+                  mid_getTorque_032312bdeb3f2f93,
+                  mid_setDeltaMass_1ad26e8c8c0cd65b,
+                  mid_setDuration_1ad26e8c8c0cd65b,
+                  mid_setEpochStart_8497861b879c83f7,
+                  mid_setFrame_2c8b859a72c0094e,
+                  mid_setTorque_4320462275d66e78,
+                  mid_validate_1ad26e8c8c0cd65b,
                   max_mid
                 };
 

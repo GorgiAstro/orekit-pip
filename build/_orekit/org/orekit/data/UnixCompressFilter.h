@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace data {
-      class DataFilter;
       class DataSource;
+      class DataFilter;
     }
   }
 }
@@ -25,8 +25,8 @@ namespace org {
       class UnixCompressFilter : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_filter_bbc30294b1b0b691,
+          mid_init$_ff7cb6c242604316,
+          mid_filter_4edc3983a04dd819,
           max_mid
         };
 

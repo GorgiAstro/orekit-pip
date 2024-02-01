@@ -40,9 +40,9 @@ namespace org {
               class OrbitCovarianceHistory : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_43e7708d26a0c556,
-                  mid_getCovariances_e62d3bb06d56d7e3,
-                  mid_getMetadata_7f62477a13ef3bfb,
+                  mid_init$_11f077a07eb03f98,
+                  mid_getCovariances_d751c1a57012b438,
+                  mid_getMetadata_31032cacfaa641b0,
                   max_mid
                 };
 

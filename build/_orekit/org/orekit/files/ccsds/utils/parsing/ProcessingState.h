@@ -3,6 +3,11 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
@@ -14,11 +19,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -33,7 +33,7 @@ namespace org {
             class ProcessingState : public ::java::lang::Object {
              public:
               enum {
-                mid_processToken_5949d4df22f33350,
+                mid_processToken_48865e799ebb0b92,
                 max_mid
               };
 

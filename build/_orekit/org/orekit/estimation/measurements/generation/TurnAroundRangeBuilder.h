@@ -12,18 +12,18 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class TurnAroundRange;
-        class GroundStation;
         class ObservableSatellite;
+        class GroundStation;
+        class TurnAroundRange;
       }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace propagation {
       namespace sampling {
         class OrekitStepInterpolator;
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -46,8 +46,8 @@ namespace org {
           class TurnAroundRangeBuilder : public ::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder {
            public:
             enum {
-              mid_init$_3482c99d647cecc6,
-              mid_build_0bffdda4caaf1050,
+              mid_init$_10af0e412dc0df53,
+              mid_build_1fe2e6beaaf42b24,
               max_mid
             };
 

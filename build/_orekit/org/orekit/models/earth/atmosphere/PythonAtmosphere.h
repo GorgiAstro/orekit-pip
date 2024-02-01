@@ -8,24 +8,24 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
     class CalculusFieldElement;
   }
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
     namespace models {
       namespace earth {
         namespace atmosphere {
           class Atmosphere;
         }
       }
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
     }
     namespace frames {
       class Frame;
@@ -49,16 +49,16 @@ namespace org {
           class PythonAtmosphere : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_getDensity_58866e32a1c9318b,
-              mid_getDensity_e9a4fc2340b58984,
-              mid_getFrame_2c51111cc6894ba1,
-              mid_getVelocity_2e30102aa3d53198,
-              mid_getVelocity_b79629c6a3fafdaa,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_init$_ff7cb6c242604316,
+              mid_finalize_ff7cb6c242604316,
+              mid_getDensity_0c5821935d445848,
+              mid_getDensity_65e73ef68b3713d0,
+              mid_getFrame_cb151471db4570f0,
+              mid_getVelocity_9e32d405e56d9d4c,
+              mid_getVelocity_9eb9e27560bce34b,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
               max_mid
             };
 
@@ -76,11 +76,11 @@ namespace org {
             PythonAtmosphere();
 
             void finalize() const;
-            jdouble getDensity(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &) const;
             ::org::hipparchus::CalculusFieldElement getDensity(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &) const;
+            jdouble getDensity(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &) const;
             ::org::orekit::frames::Frame getFrame() const;
-            ::org::hipparchus::geometry::euclidean::threed::FieldVector3D getVelocity(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &) const;
             ::org::hipparchus::geometry::euclidean::threed::Vector3D getVelocity(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &) const;
+            ::org::hipparchus::geometry::euclidean::threed::FieldVector3D getVelocity(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &) const;
             void pythonDecRef() const;
             jlong pythonExtension() const;
             void pythonExtension(jlong) const;

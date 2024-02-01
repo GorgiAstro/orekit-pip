@@ -30,12 +30,12 @@ namespace org {
           class Metadata : public ::org::orekit::files::ccsds::section::CommentsContainer {
            public:
             enum {
-              mid_getTimeSystem_91b7f51e80ad440f,
-              mid_setTimeSystem_00f5ccc3311d9b97,
-              mid_validate_8ba9fe7a847cecad,
-              mid_getLaunchYear_f0ba70671b70c6e5,
-              mid_getLaunchNumber_f0ba70671b70c6e5,
-              mid_getLaunchPiece_6f0f3576df9f75ee,
+              mid_getTimeSystem_d72479bc3d5515c9,
+              mid_setTimeSystem_a052efb9a150bad4,
+              mid_validate_1ad26e8c8c0cd65b,
+              mid_getLaunchYear_84fe1f8fbbcb0268,
+              mid_getLaunchNumber_84fe1f8fbbcb0268,
+              mid_getLaunchPiece_95277969d373e11f,
               max_mid
             };
 

@@ -3,6 +3,11 @@
 
 #include "org/orekit/propagation/conversion/AbstractPropagatorConverter.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -10,11 +15,6 @@ namespace org {
         class PropagatorBuilder;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,9 +27,9 @@ namespace org {
         class FiniteDifferencePropagatorConverter : public ::org::orekit::propagation::conversion::AbstractPropagatorConverter {
          public:
           enum {
-            mid_init$_91f1a39ce0677121,
-            mid_getModel_6a20d4ddc607b9bb,
-            mid_getObjectiveFunction_72c2cddd79f92b83,
+            mid_init$_11ca02e6564da71d,
+            mid_getObjectiveFunction_0a4097997512db0b,
+            mid_getModel_b9638c47db64ddc7,
             max_mid
           };
 

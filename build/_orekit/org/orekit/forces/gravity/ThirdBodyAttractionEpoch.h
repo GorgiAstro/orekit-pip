@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace bodies {
-      class CelestialBody;
-    }
     namespace propagation {
       class SpacecraftState;
+    }
+    namespace bodies {
+      class CelestialBody;
     }
   }
 }
@@ -28,8 +28,8 @@ namespace org {
         class ThirdBodyAttractionEpoch : public ::org::orekit::forces::gravity::ThirdBodyAttraction {
          public:
           enum {
-            mid_init$_b5b078eb816ea0c4,
-            mid_getDerivativesToEpoch_4f09578ce9fbd006,
+            mid_init$_3892f9945e7aba0a,
+            mid_getDerivativesToEpoch_9712600a2eb1aa51,
             max_mid
           };
 

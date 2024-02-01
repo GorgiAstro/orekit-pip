@@ -12,9 +12,6 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataProvidersManager;
-    }
     namespace time {
       class AbsoluteDate;
       class TimeScale;
@@ -27,6 +24,9 @@ namespace org {
           }
         }
       }
+    }
+    namespace data {
+      class DataProvidersManager;
     }
   }
 }
@@ -42,18 +42,18 @@ namespace org {
             class PythonAbstractSolarActivityData : public ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityData {
              public:
               enum {
-                mid_init$_bfb38e1a8275d5c9,
-                mid_finalize_a1fa5dae97ea5ed2,
-                mid_get24HoursKp_fd347811007a6ba3,
-                mid_getAp_27b701db396ade01,
-                mid_getAverageFlux_fd347811007a6ba3,
-                mid_getDailyFlux_fd347811007a6ba3,
-                mid_getInstantFlux_fd347811007a6ba3,
-                mid_getMeanFlux_fd347811007a6ba3,
-                mid_getThreeHourlyKP_fd347811007a6ba3,
-                mid_pythonDecRef_a1fa5dae97ea5ed2,
-                mid_pythonExtension_6c0ce7e438e5ded4,
-                mid_pythonExtension_3d7dd2314a0dd456,
+                mid_init$_cf6f4d8e548d5b58,
+                mid_finalize_ff7cb6c242604316,
+                mid_get24HoursKp_209f08246d708042,
+                mid_getAp_9b63d19c31941c0f,
+                mid_getAverageFlux_209f08246d708042,
+                mid_getDailyFlux_209f08246d708042,
+                mid_getInstantFlux_209f08246d708042,
+                mid_getMeanFlux_209f08246d708042,
+                mid_getThreeHourlyKP_209f08246d708042,
+                mid_pythonDecRef_ff7cb6c242604316,
+                mid_pythonExtension_42c72b98e3c2e08a,
+                mid_pythonExtension_f5bbab7e97879358,
                 max_mid
               };
 

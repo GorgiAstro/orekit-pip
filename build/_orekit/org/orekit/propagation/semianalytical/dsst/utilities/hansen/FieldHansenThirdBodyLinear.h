@@ -5,8 +5,8 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -27,10 +27,10 @@ namespace org {
               class FieldHansenThirdBodyLinear : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_d406983711b212ac,
-                  mid_computeInitValues_baa1ed35ace5d036,
-                  mid_getDerivative_23984a6e38b0b1f2,
-                  mid_getValue_23984a6e38b0b1f2,
+                  mid_init$_3214cb148b0221a6,
+                  mid_computeInitValues_f9ea60a8dc2d69fb,
+                  mid_getDerivative_b23de0cfc61f8f60,
+                  mid_getValue_b23de0cfc61f8f60,
                   max_mid
                 };
 

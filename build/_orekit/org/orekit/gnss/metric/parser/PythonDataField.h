@@ -8,8 +8,8 @@ namespace org {
     namespace gnss {
       namespace metric {
         namespace parser {
-          class EncodedMessage;
           class DataField;
+          class EncodedMessage;
         }
       }
     }
@@ -17,8 +17,8 @@ namespace org {
 }
 namespace java {
   namespace lang {
-    class Class;
     class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -32,12 +32,12 @@ namespace org {
           class PythonDataField : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_booleanValue_48774c94bd8c4a87,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_init$_ff7cb6c242604316,
+              mid_booleanValue_03afc74a55086f49,
+              mid_finalize_ff7cb6c242604316,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
               max_mid
             };
 

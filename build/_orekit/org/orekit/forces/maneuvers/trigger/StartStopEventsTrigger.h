@@ -3,12 +3,22 @@
 
 #include "org/orekit/forces/maneuvers/trigger/AbstractManeuverTriggers.h"
 
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
       namespace events {
-        class AbstractDetector;
         class FieldEventDetector;
+        class AbstractDetector;
         class EventDetector;
       }
       class SpacecraftState;
@@ -19,16 +29,6 @@ namespace org {
   }
   namespace hipparchus {
     class Field;
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
-  }
-  namespace util {
-    namespace stream {
-      class Stream;
-    }
   }
 }
 template<class T> class JArray;
@@ -42,14 +42,14 @@ namespace org {
           class StartStopEventsTrigger : public ::org::orekit::forces::maneuvers::trigger::AbstractManeuverTriggers {
            public:
             enum {
-              mid_getEventDetectors_14e21bf777ff0ccf,
-              mid_getFieldEventDetectors_283ad33581c047a0,
-              mid_getStartDetector_e060948c985b754b,
-              mid_getStopDetector_e060948c985b754b,
-              mid_init_2d7f9a496c7e9781,
-              mid_isFiringOnInitialState_4ef3ef34329e6316,
-              mid_convertStartDetector_323adeb6f2939c8a,
-              mid_convertStopDetector_323adeb6f2939c8a,
+              mid_getEventDetectors_11e4ca8182c1933d,
+              mid_getFieldEventDetectors_d3db121d9deb0312,
+              mid_getStartDetector_adbfb38205dfa1c9,
+              mid_getStopDetector_adbfb38205dfa1c9,
+              mid_init_14deaae988292d42,
+              mid_convertStartDetector_2778b7032ad3e419,
+              mid_convertStopDetector_2778b7032ad3e419,
+              mid_isFiringOnInitialState_145801f71fbbc869,
               max_mid
             };
 

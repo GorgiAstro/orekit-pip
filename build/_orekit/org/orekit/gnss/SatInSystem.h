@@ -24,12 +24,12 @@ namespace org {
       class SatInSystem : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_b25e272a068a28f1,
-          mid_equals_460c5e2d9d51c6cc,
-          mid_getPRN_55546ef6a647f39b,
-          mid_getSystem_21bd759cc4a81606,
-          mid_getTwoDigitsRinexPRN_55546ef6a647f39b,
-          mid_hashCode_55546ef6a647f39b,
+          mid_init$_251a323db6b24aab,
+          mid_equals_72faff9b05f5ed5e,
+          mid_getPRN_d6ab429752e7c267,
+          mid_getSystem_fb0bd27fcc3ba9fc,
+          mid_getTwoDigitsRinexPRN_d6ab429752e7c267,
+          mid_hashCode_d6ab429752e7c267,
           max_mid
         };
 

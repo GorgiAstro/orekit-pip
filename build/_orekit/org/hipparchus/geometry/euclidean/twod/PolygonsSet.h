@@ -3,32 +3,32 @@
 
 #include "org/hipparchus/geometry/partitioning/AbstractRegion.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace partitioning {
-        class BSPTree;
-        class SubHyperplane;
-      }
-      namespace euclidean {
-        namespace twod {
-          class Vector2D;
-          class PolygonsSet;
-          class Euclidean2D;
-        }
-        namespace oned {
-          class Euclidean1D;
-        }
-      }
-    }
-  }
-}
 namespace java {
   namespace util {
     class Collection;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace twod {
+          class Euclidean2D;
+          class Vector2D;
+          class PolygonsSet;
+        }
+        namespace oned {
+          class Euclidean1D;
+        }
+      }
+      namespace partitioning {
+        class BSPTree;
+        class SubHyperplane;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -42,14 +42,14 @@ namespace org {
           class PolygonsSet : public ::org::hipparchus::geometry::partitioning::AbstractRegion {
            public:
             enum {
-              mid_init$_8ba9fe7a847cecad,
-              mid_init$_42b4b0384e7885c8,
-              mid_init$_936ab5386aba1bbf,
-              mid_init$_16deaf08470737f9,
-              mid_init$_aeb39721bc4af7d2,
-              mid_buildNew_bda529a52bd5e417,
-              mid_getVertices_cffdee33260f7ff8,
-              mid_computeGeometricalProperties_a1fa5dae97ea5ed2,
+              mid_init$_1ad26e8c8c0cd65b,
+              mid_init$_13c8781402997e7b,
+              mid_init$_83911a7bf86bdb7d,
+              mid_init$_457d0c956b0d24c0,
+              mid_init$_edc3692668d70430,
+              mid_buildNew_d65d8015a754d547,
+              mid_getVertices_3148fb2528a2077d,
+              mid_computeGeometricalProperties_ff7cb6c242604316,
               max_mid
             };
 

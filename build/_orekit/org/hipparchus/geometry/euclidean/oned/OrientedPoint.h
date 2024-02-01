@@ -6,20 +6,20 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      namespace euclidean {
-        namespace oned {
-          class OrientedPoint;
-          class Euclidean1D;
-          class Vector1D;
-          class IntervalsSet;
-          class SubOrientedPoint;
-        }
-      }
-      class Point;
       namespace partitioning {
         class Hyperplane;
       }
       class Vector;
+      class Point;
+      namespace euclidean {
+        namespace oned {
+          class OrientedPoint;
+          class IntervalsSet;
+          class Vector1D;
+          class Euclidean1D;
+          class SubOrientedPoint;
+        }
+      }
     }
   }
 }
@@ -39,19 +39,19 @@ namespace org {
           class OrientedPoint : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_9cfe050a265de486,
-              mid_copySelf_5f8b6db3a8315733,
-              mid_emptyHyperplane_a59721c72afcee95,
-              mid_getLocation_62608abb8b57a58e,
-              mid_getOffset_f0dd8cb59ea09794,
-              mid_getOffset_2f915fa9762130df,
-              mid_getTolerance_b74f83833fdad017,
-              mid_isDirect_9ab94ac1dc23b105,
-              mid_project_2214f7ad5b6ca158,
-              mid_revertSelf_a1fa5dae97ea5ed2,
-              mid_sameOrientationAs_806ecfbca1984226,
-              mid_wholeHyperplane_a59721c72afcee95,
-              mid_wholeSpace_9520063cff244850,
+              mid_init$_626e303a54ef8cd1,
+              mid_copySelf_94525402f1c54c7a,
+              mid_emptyHyperplane_14c0810a4442ccfe,
+              mid_getLocation_dfd07178ba1b5f7f,
+              mid_getOffset_277cb62c4ec87155,
+              mid_getOffset_54eca2a6b3ac81a2,
+              mid_getTolerance_9981f74b2d109da6,
+              mid_isDirect_eee3de00fe971136,
+              mid_project_ff0c84956c63705d,
+              mid_revertSelf_ff7cb6c242604316,
+              mid_sameOrientationAs_51737f919fe0cf72,
+              mid_wholeHyperplane_14c0810a4442ccfe,
+              mid_wholeSpace_12c95b7fca28f858,
               max_mid
             };
 

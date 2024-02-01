@@ -10,9 +10,9 @@ namespace org {
         class ODEStateInterpolator;
       }
       namespace events {
-        class EventState;
-        class ODEEventDetector;
         class EventOccurrence;
+        class ODEEventDetector;
+        class EventState;
       }
       class ODEStateAndDerivative;
     }
@@ -37,14 +37,14 @@ namespace org {
         class DetectorBasedEventState : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_b3037e2992b522fb,
-            mid_doEvent_1eca994d89f760c7,
-            mid_evaluateStep_f2bd5620f6269916,
-            mid_getEventDetector_4cf067cf8dc74d67,
-            mid_getEventTime_b74f83833fdad017,
-            mid_init_a7556bd72cab73f1,
-            mid_reinitializeBegin_197c5aaefd855810,
-            mid_tryAdvance_709063baedbc9642,
+            mid_init$_4cad2771a2849140,
+            mid_doEvent_85cb4cee6c2ee34d,
+            mid_evaluateStep_a2d4078e6169b71f,
+            mid_getEventDetector_da847cbf3fa2cbbf,
+            mid_getEventTime_9981f74b2d109da6,
+            mid_init_25005604bcb94d07,
+            mid_reinitializeBegin_4f79f5048423f318,
+            mid_tryAdvance_62fc75c986772aad,
             max_mid
           };
 

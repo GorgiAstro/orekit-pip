@@ -31,8 +31,8 @@ namespace org {
           class AdMethodType : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_27aede9d65384f14,
-              mid_values_d3779354ec89c716,
+              mid_valueOf_1202a3f3424f940f,
+              mid_values_54a2fc92157a5b12,
               max_mid
             };
 

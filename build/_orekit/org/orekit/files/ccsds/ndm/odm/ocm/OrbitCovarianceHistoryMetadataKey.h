@@ -10,8 +10,8 @@ namespace org {
         namespace ndm {
           namespace odm {
             namespace ocm {
-              class OrbitCovarianceHistoryMetadataKey;
               class OrbitCovarianceHistoryMetadata;
+              class OrbitCovarianceHistoryMetadataKey;
             }
           }
         }
@@ -44,9 +44,9 @@ namespace org {
               class OrbitCovarianceHistoryMetadataKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_eb8b4456b081202b,
-                  mid_valueOf_6cec7ddbc04fb9fb,
-                  mid_values_f3dd757310f5e8f4,
+                  mid_process_8368abc699891e6c,
+                  mid_valueOf_882144603665f51b,
+                  mid_values_eb7d683725b63c72,
                   max_mid
                 };
 

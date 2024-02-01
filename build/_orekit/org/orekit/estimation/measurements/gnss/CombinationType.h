@@ -3,12 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace estimation {
@@ -18,6 +12,12 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,9 +31,9 @@ namespace org {
           class CombinationType : public ::java::lang::Enum {
            public:
             enum {
-              mid_getName_1c1fa1e935d6cdcf,
-              mid_valueOf_a84d714f094c2269,
-              mid_values_30a74d6e6ea3b3d0,
+              mid_getName_d2c8eb4129821f0e,
+              mid_valueOf_d7d66d7d315002e4,
+              mid_values_b9091cb74b751f30,
               max_mid
             };
 

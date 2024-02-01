@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace models {
       namespace earth {
         namespace atmosphere {
           class NRLMSISE00InputParameters;
         }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -34,16 +34,16 @@ namespace org {
           class PythonNRLMSISE00InputParameters : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_getAp_27b701db396ade01,
-              mid_getAverageFlux_fd347811007a6ba3,
-              mid_getDailyFlux_fd347811007a6ba3,
-              mid_getMaxDate_c325492395d89b24,
-              mid_getMinDate_c325492395d89b24,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_init$_ff7cb6c242604316,
+              mid_finalize_ff7cb6c242604316,
+              mid_getAp_9b63d19c31941c0f,
+              mid_getAverageFlux_209f08246d708042,
+              mid_getDailyFlux_209f08246d708042,
+              mid_getMaxDate_80e11148db499dda,
+              mid_getMinDate_80e11148db499dda,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
               max_mid
             };
 

@@ -3,6 +3,12 @@
 
 #include "org/orekit/frames/Frame.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
@@ -17,12 +23,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -34,9 +34,9 @@ namespace org {
           class ModifiedFrame : public ::org::orekit::frames::Frame {
            public:
             enum {
-              mid_init$_de69c2063d8ea113,
-              mid_getCenterName_1c1fa1e935d6cdcf,
-              mid_getRefFrame_5ac4f33db9e11fd5,
+              mid_init$_6a2eb6e7fadbf63a,
+              mid_getCenterName_d2c8eb4129821f0e,
+              mid_getRefFrame_f7bff9eee7210db3,
               max_mid
             };
 

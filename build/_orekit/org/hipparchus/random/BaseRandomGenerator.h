@@ -26,13 +26,13 @@ namespace org {
       class BaseRandomGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_nextGaussian_b74f83833fdad017,
-          mid_nextInt_0e7cf35192c3effe,
-          mid_nextLong_9db63109f74a74fc,
-          mid_setSeed_44ed599e93e8a30c,
-          mid_setSeed_3d7dd2314a0dd456,
-          mid_toString_1c1fa1e935d6cdcf,
-          mid_clearCache_a1fa5dae97ea5ed2,
+          mid_nextGaussian_9981f74b2d109da6,
+          mid_nextInt_d938fc64e8c6df2d,
+          mid_nextLong_1eaf6eb0a3f3163f,
+          mid_setSeed_8fd427ab23829bf5,
+          mid_setSeed_f5bbab7e97879358,
+          mid_toString_d2c8eb4129821f0e,
+          mid_clearCache_ff7cb6c242604316,
           max_mid
         };
 

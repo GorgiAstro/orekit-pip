@@ -5,8 +5,8 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -25,10 +25,10 @@ namespace org {
           class TroposphericModelUtils : public ::java::lang::Object {
            public:
             enum {
-              mid_computeHeightCorrection_99e3200dafc19573,
-              mid_computeHeightCorrection_3d637a35454b0975,
-              mid_mappingFunction_08eba2463884b341,
-              mid_mappingFunction_0a337cffdfb74cd1,
+              mid_computeHeightCorrection_82f92590f4247da1,
+              mid_computeHeightCorrection_4d53faf529fb585e,
+              mid_mappingFunction_45d926aea7231320,
+              mid_mappingFunction_d2c2bcf9f0e55408,
               max_mid
             };
 

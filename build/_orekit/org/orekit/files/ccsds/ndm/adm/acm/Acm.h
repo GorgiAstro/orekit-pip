@@ -9,13 +9,13 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace adm {
-            class AdmHeader;
             namespace acm {
               class AttitudeStateHistory;
-              class AcmSatelliteEphemeris;
               class AcmMetadata;
+              class AcmSatelliteEphemeris;
               class AcmData;
             }
+            class AdmHeader;
           }
         }
         namespace section {
@@ -26,12 +26,12 @@ namespace org {
         class AttitudeEphemerisFile;
       }
     }
+    namespace data {
+      class DataContext;
+    }
     namespace utils {
       class IERSConventions;
       class TimeStampedAngularCoordinates;
-    }
-    namespace data {
-      class DataContext;
     }
   }
 }
@@ -58,10 +58,10 @@ namespace org {
               class Acm : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
                public:
                 enum {
-                  mid_init$_9603b9963356e980,
-                  mid_getData_efaea2325d549369,
-                  mid_getMetadata_0253132f83eae763,
-                  mid_getSatellites_810bed48fafb0b9a,
+                  mid_init$_8e67c3c744d320a9,
+                  mid_getData_2c161a7d030b81cd,
+                  mid_getMetadata_0d0c5aea49e5906e,
+                  mid_getSatellites_dbcb8bbac6b35e0d,
                   max_mid
                 };
 

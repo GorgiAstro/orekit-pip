@@ -20,19 +20,19 @@ namespace java {
     class StackTraceElement : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_711bd0f43086f576,
-        mid_init$_fd1937e5fdd589c2,
-        mid_equals_460c5e2d9d51c6cc,
-        mid_getClassLoaderName_1c1fa1e935d6cdcf,
-        mid_getClassName_1c1fa1e935d6cdcf,
-        mid_getFileName_1c1fa1e935d6cdcf,
-        mid_getLineNumber_55546ef6a647f39b,
-        mid_getMethodName_1c1fa1e935d6cdcf,
-        mid_getModuleName_1c1fa1e935d6cdcf,
-        mid_getModuleVersion_1c1fa1e935d6cdcf,
-        mid_hashCode_55546ef6a647f39b,
-        mid_isNativeMethod_9ab94ac1dc23b105,
-        mid_toString_1c1fa1e935d6cdcf,
+        mid_init$_65bf29bdb38d0b68,
+        mid_init$_973a3b4f82bdb570,
+        mid_equals_72faff9b05f5ed5e,
+        mid_getClassLoaderName_d2c8eb4129821f0e,
+        mid_getClassName_d2c8eb4129821f0e,
+        mid_getFileName_d2c8eb4129821f0e,
+        mid_getLineNumber_d6ab429752e7c267,
+        mid_getMethodName_d2c8eb4129821f0e,
+        mid_getModuleName_d2c8eb4129821f0e,
+        mid_getModuleVersion_d2c8eb4129821f0e,
+        mid_hashCode_d6ab429752e7c267,
+        mid_isNativeMethod_eee3de00fe971136,
+        mid_toString_d2c8eb4129821f0e,
         max_mid
       };
 

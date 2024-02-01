@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
-    namespace util {
-      class Incrementor;
-    }
     namespace optim {
       class ConvergenceChecker;
       class OptimizationProblem;
+    }
+    namespace util {
+      class Incrementor;
     }
   }
 }
@@ -28,9 +28,9 @@ namespace org {
       class AbstractOptimizationProblem : public ::java::lang::Object {
        public:
         enum {
-          mid_getConvergenceChecker_cae0efb5080a73b8,
-          mid_getEvaluationCounter_3c86b06a86576583,
-          mid_getIterationCounter_3c86b06a86576583,
+          mid_getConvergenceChecker_ecb318336ebe4cc7,
+          mid_getEvaluationCounter_286bd168b7e14166,
+          mid_getIterationCounter_286bd168b7e14166,
           max_mid
         };
 

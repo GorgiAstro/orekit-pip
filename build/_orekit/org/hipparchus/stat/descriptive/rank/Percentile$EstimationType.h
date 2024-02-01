@@ -5,15 +5,15 @@
 
 namespace org {
   namespace hipparchus {
-    namespace util {
-      class KthSelector;
-    }
     namespace stat {
       namespace descriptive {
         namespace rank {
           class Percentile$EstimationType;
         }
       }
+    }
+    namespace util {
+      class KthSelector;
     }
   }
 }
@@ -34,12 +34,12 @@ namespace org {
           class Percentile$EstimationType : public ::java::lang::Enum {
            public:
             enum {
-              mid_evaluate_277b4197ae8b11e0,
-              mid_valueOf_dc3b80bb31d9b228,
-              mid_values_24f41f3feae5d2c6,
-              mid_evaluate_2cc81657fa5be2fc,
-              mid_estimate_e9cab51bdf58a786,
-              mid_index_2eeda88661ae34d3,
+              mid_evaluate_40f8c5a8d896f7d7,
+              mid_valueOf_5f307f0c6bdc5c00,
+              mid_values_1999714e96378d74,
+              mid_estimate_5a9d289d70e241d5,
+              mid_evaluate_7afaa0cf3b64fdce,
+              mid_index_988810e80d644418,
               max_mid
             };
 

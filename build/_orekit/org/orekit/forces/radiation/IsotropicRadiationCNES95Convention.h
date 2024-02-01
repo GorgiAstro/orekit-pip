@@ -4,30 +4,30 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace forces {
       namespace radiation {
         class RadiationSensitive;
       }
     }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
+    namespace utils {
+      class ParameterDriver;
     }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -48,10 +48,10 @@ namespace org {
         class IsotropicRadiationCNES95Convention : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_b5167f35b2521627,
-            mid_getRadiationParametersDrivers_e62d3bb06d56d7e3,
-            mid_radiationPressureAcceleration_a99eceb06c3864f8,
-            mid_radiationPressureAcceleration_a230d7bdb943f733,
+            mid_init$_bd28dc6055dc5bbd,
+            mid_getRadiationParametersDrivers_d751c1a57012b438,
+            mid_radiationPressureAcceleration_8ba97ba2fcb659fc,
+            mid_radiationPressureAcceleration_b5d2cc91db5ad4cb,
             max_mid
           };
 

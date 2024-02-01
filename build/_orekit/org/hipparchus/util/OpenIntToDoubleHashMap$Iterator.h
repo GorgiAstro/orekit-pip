@@ -4,12 +4,12 @@
 #include "java/lang/Object.h"
 
 namespace java {
+  namespace lang {
+    class Class;
+  }
   namespace util {
     class NoSuchElementException;
     class ConcurrentModificationException;
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -21,10 +21,10 @@ namespace org {
       class OpenIntToDoubleHashMap$Iterator : public ::java::lang::Object {
        public:
         enum {
-          mid_advance_a1fa5dae97ea5ed2,
-          mid_hasNext_9ab94ac1dc23b105,
-          mid_key_55546ef6a647f39b,
-          mid_value_b74f83833fdad017,
+          mid_advance_ff7cb6c242604316,
+          mid_hasNext_eee3de00fe971136,
+          mid_key_d6ab429752e7c267,
+          mid_value_9981f74b2d109da6,
           max_mid
         };
 

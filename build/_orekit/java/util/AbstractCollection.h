@@ -21,20 +21,20 @@ namespace java {
     class AbstractCollection : public ::java::lang::Object {
      public:
       enum {
-        mid_add_460c5e2d9d51c6cc,
-        mid_addAll_801a92d34e44726e,
-        mid_clear_a1fa5dae97ea5ed2,
-        mid_contains_460c5e2d9d51c6cc,
-        mid_containsAll_801a92d34e44726e,
-        mid_isEmpty_9ab94ac1dc23b105,
-        mid_iterator_fc7780bc5d5b73b0,
-        mid_remove_460c5e2d9d51c6cc,
-        mid_removeAll_801a92d34e44726e,
-        mid_retainAll_801a92d34e44726e,
-        mid_size_55546ef6a647f39b,
-        mid_toArray_24e2edd6319f4c5a,
-        mid_toArray_70d423ae061f83d5,
-        mid_toString_1c1fa1e935d6cdcf,
+        mid_add_72faff9b05f5ed5e,
+        mid_addAll_61d64368c58b84f3,
+        mid_clear_ff7cb6c242604316,
+        mid_contains_72faff9b05f5ed5e,
+        mid_containsAll_61d64368c58b84f3,
+        mid_isEmpty_eee3de00fe971136,
+        mid_iterator_4f613ccd2f803b4b,
+        mid_remove_72faff9b05f5ed5e,
+        mid_removeAll_61d64368c58b84f3,
+        mid_retainAll_61d64368c58b84f3,
+        mid_size_d6ab429752e7c267,
+        mid_toArray_2ab86268ef7a6631,
+        mid_toArray_f4767af6a3829fbc,
+        mid_toString_d2c8eb4129821f0e,
         max_mid
       };
 

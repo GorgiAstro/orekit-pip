@@ -31,13 +31,13 @@ namespace org {
           class Segment : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_e8ab8fc14564dfe7,
-              mid_init$_14bec7b2bdc550d3,
-              mid_distance_a7f439b8ba8ffc55,
-              mid_getEnd_9cb1572c1d4936cf,
-              mid_getLength_b74f83833fdad017,
-              mid_getLine_f76ed72539e37ce2,
-              mid_getStart_9cb1572c1d4936cf,
+              mid_init$_f46fa5f6c40a5c85,
+              mid_init$_7f7842afd4d898dc,
+              mid_distance_fa70b1ee85089725,
+              mid_getEnd_0490d0574aafb07c,
+              mid_getLength_9981f74b2d109da6,
+              mid_getLine_72d7a4f683ad4a34,
+              mid_getStart_0490d0574aafb07c,
               max_mid
             };
 

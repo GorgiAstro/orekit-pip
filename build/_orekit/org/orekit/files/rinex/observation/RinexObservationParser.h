@@ -5,18 +5,18 @@
 
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataSource;
-    }
-    namespace time {
-      class TimeScales;
-    }
     namespace files {
       namespace rinex {
         namespace observation {
           class RinexObservation;
         }
       }
+    }
+    namespace data {
+      class DataSource;
+    }
+    namespace time {
+      class TimeScales;
     }
   }
 }
@@ -37,9 +37,9 @@ namespace org {
           class RinexObservationParser : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_init$_0473fe41b53e3616,
-              mid_parse_ebb938bbffade864,
+              mid_init$_ff7cb6c242604316,
+              mid_init$_b6b8aa17d4a34a34,
+              mid_parse_355295220c644e15,
               max_mid
             };
 

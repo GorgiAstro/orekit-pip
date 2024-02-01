@@ -3,19 +3,19 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace frames {
-      class PoleCorrection;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class Class;
   }
   namespace io {
     class Serializable;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace frames {
+      class PoleCorrection;
+    }
   }
 }
 template<class T> class JArray;
@@ -27,9 +27,9 @@ namespace org {
       class PoleCorrection : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_369b4c97255d5afa,
-          mid_getXp_b74f83833fdad017,
-          mid_getYp_b74f83833fdad017,
+          mid_init$_13edac039e8cc967,
+          mid_getXp_9981f74b2d109da6,
+          mid_getYp_9981f74b2d109da6,
           max_mid
         };
 

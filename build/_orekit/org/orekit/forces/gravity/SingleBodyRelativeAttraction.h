@@ -8,14 +8,17 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
     class CalculusFieldElement;
   }
   namespace orekit {
+    namespace bodies {
+      class CelestialBody;
+    }
     namespace forces {
       class ForceModel;
     }
@@ -25,9 +28,6 @@ namespace org {
     }
     namespace utils {
       class ParameterDriver;
-    }
-    namespace bodies {
-      class CelestialBody;
     }
   }
 }
@@ -50,11 +50,11 @@ namespace org {
         class SingleBodyRelativeAttraction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_b5b078eb816ea0c4,
-            mid_acceleration_20bded0292328743,
-            mid_acceleration_0ce449c67b5ffd9c,
-            mid_dependsOnPositionOnly_9ab94ac1dc23b105,
-            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_init$_3892f9945e7aba0a,
+            mid_acceleration_5e147f44c28a35c9,
+            mid_acceleration_9816b8f76e94356a,
+            mid_dependsOnPositionOnly_eee3de00fe971136,
+            mid_getParametersDrivers_d751c1a57012b438,
             max_mid
           };
 

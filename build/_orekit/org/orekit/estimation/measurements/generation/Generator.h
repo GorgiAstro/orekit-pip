@@ -14,11 +14,11 @@ namespace org {
         class ObservableSatellite;
       }
     }
-    namespace propagation {
-      class Propagator;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace propagation {
+      class Propagator;
     }
   }
 }
@@ -38,12 +38,12 @@ namespace org {
           class Generator : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_addPropagator_1aa89687d48bd874,
-              mid_addScheduler_fc41c8f2b7981560,
-              mid_addSubscriber_e8027b9d7a84d897,
-              mid_generate_f89af00fc113b524,
-              mid_getPropagator_49719abd0d4a2fa6,
+              mid_init$_ff7cb6c242604316,
+              mid_addPropagator_24da3534b19b4622,
+              mid_addScheduler_4c82e772d674afd6,
+              mid_addSubscriber_b237d6053fe0e3ed,
+              mid_generate_ce7d94fe97fdcf55,
+              mid_getPropagator_bc6ccfd343befb27,
               max_mid
             };
 

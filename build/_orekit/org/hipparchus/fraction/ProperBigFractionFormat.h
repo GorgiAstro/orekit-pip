@@ -4,15 +4,15 @@
 #include "org/hipparchus/fraction/BigFractionFormat.h"
 
 namespace java {
-  namespace text {
-    class FieldPosition;
-    class ParsePosition;
-    class NumberFormat;
-  }
   namespace lang {
     class StringBuffer;
     class Class;
     class String;
+  }
+  namespace text {
+    class FieldPosition;
+    class NumberFormat;
+    class ParsePosition;
   }
 }
 namespace org {
@@ -31,12 +31,12 @@ namespace org {
       class ProperBigFractionFormat : public ::org::hipparchus::fraction::BigFractionFormat {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_init$_b7f3d50b51ef7518,
-          mid_init$_5e266d97253f08b1,
-          mid_format_face461ae8942182,
-          mid_getWholeFormat_87ffffc449cd25a5,
-          mid_parse_9c54536a71758022,
+          mid_init$_ff7cb6c242604316,
+          mid_init$_327b6d3ae10b544b,
+          mid_init$_8803c3bb12b07c13,
+          mid_format_d93e7788c0c83732,
+          mid_getWholeFormat_525709eb5c5b5ea6,
+          mid_parse_b5e88466531b881c,
           max_mid
         };
 

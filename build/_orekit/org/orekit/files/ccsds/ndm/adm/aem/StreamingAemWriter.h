@@ -7,19 +7,19 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace ndm {
+          namespace adm {
+            namespace aem {
+              class StreamingAemWriter$SegmentWriter;
+              class AemWriter;
+              class AemMetadata;
+            }
+            class AdmHeader;
+          }
+        }
         namespace utils {
           namespace generation {
             class Generator;
-          }
-        }
-        namespace ndm {
-          namespace adm {
-            class AdmHeader;
-            namespace aem {
-              class AemMetadata;
-              class AemWriter;
-              class StreamingAemWriter$SegmentWriter;
-            }
           }
         }
       }
@@ -27,12 +27,12 @@ namespace org {
   }
 }
 namespace java {
+  namespace io {
+    class IOException;
+  }
   namespace lang {
     class AutoCloseable;
     class Class;
-  }
-  namespace io {
-    class IOException;
   }
 }
 template<class T> class JArray;
@@ -48,9 +48,9 @@ namespace org {
               class StreamingAemWriter : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_2d375483dc672a96,
-                  mid_close_a1fa5dae97ea5ed2,
-                  mid_newSegment_572930d4f22e8598,
+                  mid_init$_16a519a09c18f681,
+                  mid_close_ff7cb6c242604316,
+                  mid_newSegment_8dfcb5535346dc64,
                   max_mid
                 };
 

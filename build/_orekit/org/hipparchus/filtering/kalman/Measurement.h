@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace linear {
-      class RealVector;
-      class RealMatrix;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
+      class RealVector;
+    }
   }
 }
 template<class T> class JArray;
@@ -26,9 +26,9 @@ namespace org {
         class Measurement : public ::java::lang::Object {
          public:
           enum {
-            mid_getCovariance_f77d745f2128c391,
-            mid_getTime_b74f83833fdad017,
-            mid_getValue_3a10cc75bd070d84,
+            mid_getCovariance_b2eebabce70526d8,
+            mid_getTime_9981f74b2d109da6,
+            mid_getValue_92d7e8d8d3f1dfcf,
             max_mid
           };
 

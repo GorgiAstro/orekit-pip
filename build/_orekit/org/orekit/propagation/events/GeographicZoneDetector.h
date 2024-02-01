@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
+    namespace bodies {
+      class BodyShape;
+    }
     namespace propagation {
+      class SpacecraftState;
       namespace events {
         class GeographicZoneDetector;
       }
-      class SpacecraftState;
-    }
-    namespace bodies {
-      class BodyShape;
     }
   }
   namespace hipparchus {
@@ -40,14 +40,14 @@ namespace org {
         class GeographicZoneDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_a23867f421f4c79b,
-            mid_init$_c5b07d45a6d67924,
-            mid_g_a17ea857ce74d258,
-            mid_getBody_95d324082d4f411b,
-            mid_getMargin_b74f83833fdad017,
-            mid_getZone_bf39bb9c5825f40e,
-            mid_withMargin_7ff54f704ba6a830,
-            mid_create_c838debbc3f65d6c,
+            mid_init$_fe907d784096cf52,
+            mid_init$_f4844a1bc23e7008,
+            mid_g_b443ba1cc794b916,
+            mid_getBody_6f2d25f6f71d01ca,
+            mid_getMargin_9981f74b2d109da6,
+            mid_getZone_17b2f5c9c3ed683f,
+            mid_withMargin_3ead346dc2613e5a,
+            mid_create_0272f2dc6ff8f89b,
             max_mid
           };
 

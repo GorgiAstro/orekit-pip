@@ -3,16 +3,16 @@
 
 #include "org/orekit/attitudes/AttitudeProvider.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,8 +24,8 @@ namespace org {
       class BoundedAttitudeProvider : public ::org::orekit::attitudes::AttitudeProvider {
        public:
         enum {
-          mid_getMaxDate_c325492395d89b24,
-          mid_getMinDate_c325492395d89b24,
+          mid_getMaxDate_80e11148db499dda,
+          mid_getMinDate_80e11148db499dda,
           max_mid
         };
 

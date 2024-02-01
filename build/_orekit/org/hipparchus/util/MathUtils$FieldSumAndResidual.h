@@ -3,14 +3,14 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class FieldElement;
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    class FieldElement;
   }
 }
 template<class T> class JArray;
@@ -22,8 +22,8 @@ namespace org {
       class MathUtils$FieldSumAndResidual : public ::java::lang::Object {
        public:
         enum {
-          mid_getResidual_2ff8de927fda4153,
-          mid_getSum_2ff8de927fda4153,
+          mid_getResidual_f6328613456309a1,
+          mid_getSum_f6328613456309a1,
           max_mid
         };
 

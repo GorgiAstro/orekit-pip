@@ -34,16 +34,16 @@ namespace org {
           class CommentsContainer : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_acceptComments_9ab94ac1dc23b105,
-              mid_addComment_cde6b28e15c96b75,
-              mid_checkAllowed_62d478fa88e6e695,
-              mid_checkNotNaN_e870be4439f1c3c6,
-              mid_checkNotNegative_5817b937d38eafc1,
-              mid_checkNotNull_337032593daab958,
-              mid_getComments_e62d3bb06d56d7e3,
-              mid_refuseFurtherComments_a1fa5dae97ea5ed2,
-              mid_validate_8ba9fe7a847cecad,
+              mid_init$_ff7cb6c242604316,
+              mid_acceptComments_eee3de00fe971136,
+              mid_addComment_df4c65b2aede5c41,
+              mid_checkAllowed_2acd45577021002d,
+              mid_checkNotNaN_1bad5b063c51df2e,
+              mid_checkNotNegative_a3e920ca64bbfb6f,
+              mid_checkNotNull_be4a5a109766127d,
+              mid_getComments_d751c1a57012b438,
+              mid_refuseFurtherComments_ff7cb6c242604316,
+              mid_validate_1ad26e8c8c0cd65b,
               max_mid
             };
 

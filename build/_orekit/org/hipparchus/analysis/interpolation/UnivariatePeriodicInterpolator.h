@@ -31,9 +31,9 @@ namespace org {
         class UnivariatePeriodicInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_f4892ed00738eea6,
-            mid_init$_ec9eb5082c7b8940,
-            mid_interpolate_d166503635bf6802,
+            mid_init$_39191d923302c237,
+            mid_init$_e2fce805bb0688a0,
+            mid_interpolate_06c20aa5e0626867,
             max_mid
           };
 

@@ -5,9 +5,13 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
     namespace utils {
-      class FieldPVCoordinates;
       class PVCoordinates;
+      class FieldPVCoordinates;
     }
     namespace files {
       namespace ccsds {
@@ -16,13 +20,9 @@ namespace org {
         }
       }
     }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
     namespace frames {
-      class LOFType;
       class LOF;
+      class LOFType;
     }
   }
   namespace hipparchus {
@@ -52,16 +52,16 @@ namespace org {
       class LOFType : public ::java::lang::Enum {
        public:
         enum {
-          mid_getName_1c1fa1e935d6cdcf,
-          mid_rotationFromInertial_7e9d52385b0ba3f0,
-          mid_rotationFromInertial_9c03210e4a66b8b3,
-          mid_rotationFromInertial_80cbd49af33092b8,
-          mid_rotationFromInertial_8f928c19e9edde2b,
-          mid_rotationFromLOF_404fd1e1ee7a0f99,
-          mid_rotationFromLOF_8e169a23d8373027,
-          mid_toOrbitRelativeFrame_77481b528a1ae805,
-          mid_valueOf_2862ff6fc1bb5941,
-          mid_values_20b2193d6f06e063,
+          mid_getName_d2c8eb4129821f0e,
+          mid_rotationFromInertial_cc3fb55bcf18d696,
+          mid_rotationFromInertial_7972874aa60c5cbb,
+          mid_rotationFromInertial_5554d692f1f7262c,
+          mid_rotationFromInertial_24d473279eeb35d9,
+          mid_rotationFromLOF_d019077181b15d7c,
+          mid_rotationFromLOF_fe2c3136d84f9aa0,
+          mid_toOrbitRelativeFrame_0b1c57b4ded01423,
+          mid_valueOf_87e2aee94565a158,
+          mid_values_9c1d3d046d18c81c,
           max_mid
         };
 

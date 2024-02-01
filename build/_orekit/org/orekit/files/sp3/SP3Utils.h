@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace utils {
@@ -15,6 +10,11 @@ namespace org {
         class Unit;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,8 +27,8 @@ namespace org {
         class SP3Utils : public ::java::lang::Object {
          public:
           enum {
-            mid_indexAccuracy_34c8a12040a1782d,
-            mid_siAccuracy_05657b63cb3ef35a,
+            mid_indexAccuracy_9cfad3e6c59fc7b3,
+            mid_siAccuracy_c9a09b7292346dba,
             max_mid
           };
 

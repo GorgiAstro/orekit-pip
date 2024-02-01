@@ -5,9 +5,9 @@
 
 namespace java {
   namespace lang {
-    class ClassLoader;
     class String;
     class Class;
+    class ClassLoader;
   }
 }
 namespace org {
@@ -26,8 +26,8 @@ namespace org {
       class ClasspathCrawler : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_4f1e9165cc3f09e7,
-          mid_init$_f83536b325065468,
+          mid_init$_0b0682dc773e1ff1,
+          mid_init$_a5e9406d5aff2e02,
           max_mid
         };
 

@@ -21,8 +21,8 @@ namespace org {
       class Localizable : public ::java::io::Serializable {
        public:
         enum {
-          mid_getLocalizedString_26070c28e6ea354d,
-          mid_getSourceString_1c1fa1e935d6cdcf,
+          mid_getLocalizedString_5969ecf7afac3dba,
+          mid_getSourceString_d2c8eb4129821f0e,
           max_mid
         };
 

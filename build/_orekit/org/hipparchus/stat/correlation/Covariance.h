@@ -28,19 +28,19 @@ namespace org {
         class Covariance : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_init$_07adb42ffaa97d31,
-            mid_init$_84bd15e0995d0c79,
-            mid_init$_30d41d58c8b5e4dc,
-            mid_init$_07bc3fb795eede6d,
-            mid_covariance_3207f9c2ae7271d9,
-            mid_covariance_0c373dc781edcf2f,
-            mid_getCovarianceMatrix_f77d745f2128c391,
-            mid_getN_55546ef6a647f39b,
-            mid_computeCovarianceMatrix_be124f4006dc9f69,
-            mid_computeCovarianceMatrix_3afee3542a0dc560,
-            mid_computeCovarianceMatrix_2d1b7d41dfd6b278,
-            mid_computeCovarianceMatrix_1a55785d25d46a45,
+            mid_init$_ff7cb6c242604316,
+            mid_init$_11ecdbb5af7ed67d,
+            mid_init$_f5364c9a9d9cbd53,
+            mid_init$_1abb553ff9db34ff,
+            mid_init$_40961afdecb20a23,
+            mid_covariance_b01af8a77d4df96f,
+            mid_covariance_2cf76703ce30b165,
+            mid_getCovarianceMatrix_b2eebabce70526d8,
+            mid_getN_d6ab429752e7c267,
+            mid_computeCovarianceMatrix_5a8a8185eb309db7,
+            mid_computeCovarianceMatrix_04e001ecedde68c6,
+            mid_computeCovarianceMatrix_a50478fa84afaa43,
+            mid_computeCovarianceMatrix_62872d3e890d4114,
             max_mid
           };
 

@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
+    class Field;
     namespace analysis {
       namespace differentiation {
         class DerivativeStructure;
       }
     }
-    class Field;
   }
 }
 namespace java {
@@ -28,12 +28,12 @@ namespace org {
         class DSFactory$DSField : public ::java::lang::Object {
          public:
           enum {
-            mid_equals_460c5e2d9d51c6cc,
-            mid_getOne_57983c4d4b4a2f7f,
-            mid_getPi_57983c4d4b4a2f7f,
-            mid_getRuntimeClass_1aeb0737a960d371,
-            mid_getZero_57983c4d4b4a2f7f,
-            mid_hashCode_55546ef6a647f39b,
+            mid_equals_72faff9b05f5ed5e,
+            mid_getOne_ce114c5dd035d753,
+            mid_getPi_ce114c5dd035d753,
+            mid_getRuntimeClass_d5247e4b166c4ce8,
+            mid_getZero_ce114c5dd035d753,
+            mid_hashCode_d6ab429752e7c267,
             max_mid
           };
 

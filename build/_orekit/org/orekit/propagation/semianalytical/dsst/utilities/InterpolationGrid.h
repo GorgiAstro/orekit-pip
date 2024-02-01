@@ -20,7 +20,7 @@ namespace org {
             class InterpolationGrid : public ::java::lang::Object {
              public:
               enum {
-                mid_getGridPoints_eaf2da2173f3569e,
+                mid_getGridPoints_4c8160a53aa8811b,
                 max_mid
               };
 

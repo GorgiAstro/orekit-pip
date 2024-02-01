@@ -10,8 +10,8 @@ namespace org {
         namespace handlers {
           class EventHandler;
         }
-        class EventDetector;
         class AdaptableInterval;
+        class EventDetector;
       }
       class SpacecraftState;
     }
@@ -36,17 +36,17 @@ namespace org {
         class PythonEventDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_g_a17ea857ce74d258,
-            mid_getHandler_0c96c441e92b6ffa,
-            mid_getMaxCheckInterval_014eea600d2cdae8,
-            mid_getMaxIterationCount_55546ef6a647f39b,
-            mid_getThreshold_b74f83833fdad017,
-            mid_init_2d7f9a496c7e9781,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_ff7cb6c242604316,
+            mid_finalize_ff7cb6c242604316,
+            mid_g_b443ba1cc794b916,
+            mid_getHandler_0e9e72f635f03ea9,
+            mid_getMaxCheckInterval_11bc47e1cbec1a87,
+            mid_getMaxIterationCount_d6ab429752e7c267,
+            mid_getThreshold_9981f74b2d109da6,
+            mid_init_14deaae988292d42,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

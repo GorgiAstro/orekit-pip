@@ -5,11 +5,10 @@
 
 namespace org {
   namespace orekit {
-    namespace models {
-      namespace earth {
-        namespace atmosphere {
-          class Atmosphere;
-        }
+    namespace forces {
+      namespace drag {
+        class DragSensitive;
+        class DragForce;
       }
     }
     namespace propagation {
@@ -18,10 +17,11 @@ namespace org {
         class EventDetector;
       }
     }
-    namespace forces {
-      namespace drag {
-        class DragForce;
-        class DragSensitive;
+    namespace models {
+      namespace earth {
+        namespace atmosphere {
+          class Atmosphere;
+        }
       }
     }
   }
@@ -30,13 +30,13 @@ namespace org {
   }
 }
 namespace java {
-  namespace lang {
-    class Class;
-  }
   namespace util {
     namespace stream {
       class Stream;
     }
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -51,18 +51,18 @@ namespace org {
             class DSSTAtmosphericDrag : public ::org::orekit::propagation::semianalytical::dsst::forces::AbstractGaussianContribution {
              public:
               enum {
-                mid_init$_deefd38e570563ff,
-                mid_init$_0ce46920d2f2ff0a,
-                mid_init$_ca5f27c92d1fb19a,
-                mid_getAtmosphere_51e24dc1f47828d4,
-                mid_getDrag_6a0d5872a8149beb,
-                mid_getEventDetectors_14e21bf777ff0ccf,
-                mid_getFieldEventDetectors_283ad33581c047a0,
-                mid_getRbar_b74f83833fdad017,
-                mid_getSpacecraft_bf04d13a51559009,
-                mid_getLLimits_1abf2eee80dffc68,
-                mid_getLLimits_9b6fd6b3a2b07f62,
-                mid_getParametersDriversWithoutMu_e62d3bb06d56d7e3,
+                mid_init$_50f6720994b70dff,
+                mid_init$_6c0cbcb3ef93ae28,
+                mid_init$_3dc53c05eb1b1dd7,
+                mid_getAtmosphere_427d0c98c647ebb8,
+                mid_getDrag_a2ccb814b74de707,
+                mid_getEventDetectors_11e4ca8182c1933d,
+                mid_getFieldEventDetectors_d3db121d9deb0312,
+                mid_getRbar_9981f74b2d109da6,
+                mid_getSpacecraft_e8bdc7a90adb886e,
+                mid_getLLimits_5bf18b5e9ec57652,
+                mid_getLLimits_15451c899b8436e1,
+                mid_getParametersDriversWithoutMu_d751c1a57012b438,
                 max_mid
               };
 

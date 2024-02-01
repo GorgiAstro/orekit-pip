@@ -3,12 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace forces {
@@ -25,6 +19,12 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -36,18 +36,18 @@ namespace org {
           class PythonUnnormalizedSphericalHarmonicsProvider : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_getAe_b74f83833fdad017,
-              mid_getMaxDegree_55546ef6a647f39b,
-              mid_getMaxOrder_55546ef6a647f39b,
-              mid_getMu_b74f83833fdad017,
-              mid_getReferenceDate_c325492395d89b24,
-              mid_getTideSystem_b2b14af197a8eaf6,
-              mid_onDate_c2c9ac25aaca78ce,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_init$_ff7cb6c242604316,
+              mid_finalize_ff7cb6c242604316,
+              mid_getAe_9981f74b2d109da6,
+              mid_getMaxDegree_d6ab429752e7c267,
+              mid_getMaxOrder_d6ab429752e7c267,
+              mid_getMu_9981f74b2d109da6,
+              mid_getReferenceDate_80e11148db499dda,
+              mid_getTideSystem_1e0f912623cd4841,
+              mid_onDate_e3154aa04494b880,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
               max_mid
             };
 

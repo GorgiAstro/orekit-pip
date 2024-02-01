@@ -34,12 +34,12 @@ namespace org {
           class PythonAbstractSingleFrequencyCombination : public ::org::orekit::estimation::measurements::gnss::AbstractSingleFrequencyCombination {
            public:
             enum {
-              mid_init$_1af956d1b87222ce,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_getCombinedValue_99e3200dafc19573,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_init$_43eea351c64a25e1,
+              mid_finalize_ff7cb6c242604316,
+              mid_getCombinedValue_82f92590f4247da1,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
               max_mid
             };
 

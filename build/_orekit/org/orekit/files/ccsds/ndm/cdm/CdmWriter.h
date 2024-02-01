@@ -5,8 +5,21 @@
 
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataContext;
+    }
+    namespace utils {
+      class IERSConventions;
+    }
     namespace files {
       namespace ccsds {
+        namespace ndm {
+          namespace cdm {
+            class CdmRelativeMetadata;
+            class CdmData;
+            class CdmMetadata;
+          }
+        }
         namespace utils {
           namespace generation {
             class Generator;
@@ -15,20 +28,7 @@ namespace org {
         namespace section {
           class Segment;
         }
-        namespace ndm {
-          namespace cdm {
-            class CdmMetadata;
-            class CdmRelativeMetadata;
-            class CdmData;
-          }
-        }
       }
-    }
-    namespace utils {
-      class IERSConventions;
-    }
-    namespace data {
-      class DataContext;
     }
   }
 }
@@ -52,9 +52,9 @@ namespace org {
             class CdmWriter : public ::org::orekit::files::ccsds::ndm::cdm::CdmMessageWriter {
              public:
               enum {
-                mid_init$_5df9b2a3aa97175c,
-                mid_writeRelativeMetadataContent_d31fad1cabdbc982,
-                mid_writeSegmentContent_309d7ce7156c8c23,
+                mid_init$_3fedc1babc120c04,
+                mid_writeRelativeMetadataContent_d892bd325a5da5c3,
+                mid_writeSegmentContent_305aa7864995b122,
                 max_mid
               };
 

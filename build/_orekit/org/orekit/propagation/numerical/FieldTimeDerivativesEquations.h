@@ -5,7 +5,6 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -13,6 +12,7 @@ namespace org {
         }
       }
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -30,9 +30,9 @@ namespace org {
         class FieldTimeDerivativesEquations : public ::java::lang::Object {
          public:
           enum {
-            mid_addKeplerContribution_f2b4bfa0af1007e8,
-            mid_addMassDerivative_f2b4bfa0af1007e8,
-            mid_addNonKeplerianAcceleration_c9e829dd925c6618,
+            mid_addKeplerContribution_f63ca9e3185c722e,
+            mid_addMassDerivative_f63ca9e3185c722e,
+            mid_addNonKeplerianAcceleration_1344cdbf3f0498af,
             max_mid
           };
 

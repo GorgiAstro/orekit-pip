@@ -4,24 +4,24 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace utils {
-      class FieldPVCoordinates;
-      class PVCoordinates;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
+    }
+  }
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
+    namespace utils {
+      class PVCoordinates;
+      class FieldPVCoordinates;
     }
   }
 }
@@ -39,10 +39,10 @@ namespace org {
       class JPLEphemeridesLoader$RawPVProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getRawPV_686d17b8cfdd0634,
-          mid_getRawPV_c8e1d160acb3bee5,
-          mid_getRawPosition_082e6346b274f880,
-          mid_getRawPosition_362941be972fb4b5,
+          mid_getRawPV_37ec40ec795d4b0a,
+          mid_getRawPV_6d49740a5d91eb64,
+          mid_getRawPosition_8b37cafaaf55a3a5,
+          mid_getRawPosition_8e5aead0a4b0cc16,
           max_mid
         };
 

@@ -4,19 +4,19 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace analysis {
+      namespace differentiation {
+        class Gradient;
+      }
+    }
+  }
   namespace orekit {
     namespace propagation {
       class FieldSpacecraftState;
     }
     namespace utils {
       class ParameterDriversProvider;
-    }
-  }
-  namespace hipparchus {
-    namespace analysis {
-      namespace differentiation {
-        class Gradient;
-      }
     }
   }
 }
@@ -35,15 +35,15 @@ namespace org {
         class AbstractGradientConverter : public ::java::lang::Object {
          public:
           enum {
-            mid_getFreeStateParameters_55546ef6a647f39b,
-            mid_getParameters_e5c4a19744e8dd4a,
-            mid_getParametersAtStateDate_e5c4a19744e8dd4a,
-            mid_getState_93902f3744afc0c3,
-            mid_extend_9b74b13fc2b0b45d,
-            mid_extend_3facea1cbc778867,
-            mid_extend_40f2f08546258c9b,
-            mid_initStates_54d9efbf99822980,
-            mid_buildBasicGradientSpacecraftState_29c62c1e3d056b0f,
+            mid_getFreeStateParameters_d6ab429752e7c267,
+            mid_getParameters_5f9ce9db64bfd55a,
+            mid_getParametersAtStateDate_5f9ce9db64bfd55a,
+            mid_getState_33597c46c7186f5d,
+            mid_initStates_8062511934471166,
+            mid_buildBasicGradientSpacecraftState_3c2a8a2dee577dce,
+            mid_extend_ace76047bba91127,
+            mid_extend_b792b7e3fa72c7c6,
+            mid_extend_4e682d3d3cf0cde9,
             max_mid
           };
 

@@ -30,10 +30,10 @@ namespace org {
             class FieldShortPeriodicsInterpolatedCoefficient : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_44ed599e93e8a30c,
-                mid_addGridPoint_5a09560ed34b26ca,
-                mid_clearHistory_a1fa5dae97ea5ed2,
-                mid_value_954ad4b53022f84b,
+                mid_init$_8fd427ab23829bf5,
+                mid_addGridPoint_8810238087e40b6c,
+                mid_clearHistory_ff7cb6c242604316,
+                mid_value_977531d905f4ab3f,
                 max_mid
               };
 

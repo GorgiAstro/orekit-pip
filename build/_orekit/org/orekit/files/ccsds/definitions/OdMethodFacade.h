@@ -32,11 +32,11 @@ namespace org {
           class OdMethodFacade : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_e3d2ae147623baae,
-              mid_getName_1c1fa1e935d6cdcf,
-              mid_getTool_1c1fa1e935d6cdcf,
-              mid_getType_0550450699e266ae,
-              mid_parse_3520f8eb4f4b6e1e,
+              mid_init$_e8b6fbd77ed6283c,
+              mid_getName_d2c8eb4129821f0e,
+              mid_getTool_d2c8eb4129821f0e,
+              mid_getType_14d4abc57833ba12,
+              mid_parse_c6a025084524ed8a,
               max_mid
             };
 

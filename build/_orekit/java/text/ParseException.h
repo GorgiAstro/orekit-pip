@@ -17,8 +17,8 @@ namespace java {
     class ParseException : public ::java::lang::Exception {
      public:
       enum {
-        mid_init$_02c6e5855745e0e2,
-        mid_getErrorOffset_55546ef6a647f39b,
+        mid_init$_409747bddf859341,
+        mid_getErrorOffset_d6ab429752e7c267,
         max_mid
       };
 

@@ -19,18 +19,18 @@ namespace java {
     class Object : public ::JObject {
      public:
       enum {
-        mid_init$_a1fa5dae97ea5ed2,
-        mid_equals_460c5e2d9d51c6cc,
-        mid_getClass_1aeb0737a960d371,
-        mid_hashCode_55546ef6a647f39b,
-        mid_notify_a1fa5dae97ea5ed2,
-        mid_notifyAll_a1fa5dae97ea5ed2,
-        mid_toString_1c1fa1e935d6cdcf,
-        mid_wait_a1fa5dae97ea5ed2,
-        mid_wait_3d7dd2314a0dd456,
-        mid_wait_c89ec8817ad4d2c6,
-        mid_finalize_a1fa5dae97ea5ed2,
-        mid_clone_541690f9ee81d3ad,
+        mid_init$_ff7cb6c242604316,
+        mid_equals_72faff9b05f5ed5e,
+        mid_getClass_d5247e4b166c4ce8,
+        mid_hashCode_d6ab429752e7c267,
+        mid_notify_ff7cb6c242604316,
+        mid_notifyAll_ff7cb6c242604316,
+        mid_toString_d2c8eb4129821f0e,
+        mid_wait_ff7cb6c242604316,
+        mid_wait_f5bbab7e97879358,
+        mid_wait_915640b8c3079553,
+        mid_finalize_ff7cb6c242604316,
+        mid_clone_704a5bee58538972,
         max_mid
       };
 

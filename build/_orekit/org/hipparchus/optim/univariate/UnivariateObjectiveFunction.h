@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace analysis {
-      class UnivariateFunction;
-    }
     namespace optim {
       class OptimizationData;
+    }
+    namespace analysis {
+      class UnivariateFunction;
     }
   }
 }
@@ -28,8 +28,8 @@ namespace org {
         class UnivariateObjectiveFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_deed7b219c540ba8,
-            mid_getObjectiveFunction_afbbf84db2f6c27e,
+            mid_init$_78a50d687cd6d58b,
+            mid_getObjectiveFunction_70756b76e7e5e9dc,
             max_mid
           };
 

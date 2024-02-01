@@ -3,17 +3,17 @@
 
 #include "org/hipparchus/optim/nonlinear/vector/leastsquares/MultivariateJacobianFunction.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace linear {
-      class RealVector;
-      class RealMatrix;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
+      class RealVector;
+    }
   }
 }
 template<class T> class JArray;
@@ -28,8 +28,8 @@ namespace org {
             class ValueAndJacobianFunction : public ::org::hipparchus::optim::nonlinear::vector::leastsquares::MultivariateJacobianFunction {
              public:
               enum {
-                mid_computeJacobian_f4daeeaa8c92c416,
-                mid_computeValue_96f31e3adf588399,
+                mid_computeJacobian_56698d8a4cf94853,
+                mid_computeValue_16e45efbf7373c57,
                 max_mid
               };
 

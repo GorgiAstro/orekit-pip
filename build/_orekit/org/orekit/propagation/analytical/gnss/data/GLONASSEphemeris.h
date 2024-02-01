@@ -5,6 +5,9 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace propagation {
       namespace analytical {
         namespace gnss {
@@ -13,9 +16,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -36,21 +36,21 @@ namespace org {
             class GLONASSEphemeris : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_6b9092a5a5611226,
-                mid_init$_ff8a76f46a0c3d9b,
-                mid_getDate_c325492395d89b24,
-                mid_getN4_55546ef6a647f39b,
-                mid_getNa_55546ef6a647f39b,
-                mid_getTime_b74f83833fdad017,
-                mid_getX_b74f83833fdad017,
-                mid_getXDot_b74f83833fdad017,
-                mid_getXDotDot_b74f83833fdad017,
-                mid_getY_b74f83833fdad017,
-                mid_getYDot_b74f83833fdad017,
-                mid_getYDotDot_b74f83833fdad017,
-                mid_getZ_b74f83833fdad017,
-                mid_getZDot_b74f83833fdad017,
-                mid_getZDotDot_b74f83833fdad017,
+                mid_init$_8cd9834af575f9e0,
+                mid_init$_c7cd1553fc7dd3c6,
+                mid_getDate_80e11148db499dda,
+                mid_getN4_d6ab429752e7c267,
+                mid_getNa_d6ab429752e7c267,
+                mid_getTime_9981f74b2d109da6,
+                mid_getX_9981f74b2d109da6,
+                mid_getXDot_9981f74b2d109da6,
+                mid_getXDotDot_9981f74b2d109da6,
+                mid_getY_9981f74b2d109da6,
+                mid_getYDot_9981f74b2d109da6,
+                mid_getYDotDot_9981f74b2d109da6,
+                mid_getZ_9981f74b2d109da6,
+                mid_getZDot_9981f74b2d109da6,
+                mid_getZDotDot_9981f74b2d109da6,
                 max_mid
               };
 

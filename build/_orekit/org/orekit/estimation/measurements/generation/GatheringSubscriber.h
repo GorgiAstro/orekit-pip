@@ -5,6 +5,9 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace estimation {
       namespace measurements {
         namespace generation {
@@ -13,17 +16,14 @@ namespace org {
         class ObservedMeasurement;
       }
     }
-    namespace time {
-      class AbsoluteDate;
-    }
   }
 }
 namespace java {
-  namespace lang {
-    class Class;
-  }
   namespace util {
     class SortedSet;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -37,10 +37,10 @@ namespace org {
           class GatheringSubscriber : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_getGeneratedMeasurements_7961e54fd3a47d94,
-              mid_handleGeneratedMeasurement_1640bf51befb0c77,
-              mid_init_f89af00fc113b524,
+              mid_init$_ff7cb6c242604316,
+              mid_getGeneratedMeasurements_815c7115fae241c1,
+              mid_handleGeneratedMeasurement_ccec3dc40c67aef1,
+              mid_init_ce7d94fe97fdcf55,
               max_mid
             };
 

@@ -25,8 +25,8 @@ namespace org {
       class MathArrays$OrderDirection : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_81c61d1c0647dcec,
-          mid_values_999fb29f019cb7c4,
+          mid_valueOf_769af153f9265ccf,
+          mid_values_f6897388ac03eb73,
           max_mid
         };
 

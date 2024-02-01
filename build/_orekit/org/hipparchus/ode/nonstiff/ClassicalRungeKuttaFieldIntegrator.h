@@ -5,8 +5,8 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -24,11 +24,11 @@ namespace org {
         class ClassicalRungeKuttaFieldIntegrator : public ::org::hipparchus::ode::nonstiff::RungeKuttaFieldIntegrator {
          public:
           enum {
-            mid_init$_2a6f45ac0878ab87,
-            mid_getA_34ce7b2f6a50059b,
-            mid_getB_883be608cfc68c26,
-            mid_getC_883be608cfc68c26,
-            mid_createInterpolator_ae73d4638fb16e4c,
+            mid_init$_88bffd71fb0313dc,
+            mid_getA_4d010bb8d4780d51,
+            mid_getB_94ed2e0620f8833d,
+            mid_getC_94ed2e0620f8833d,
+            mid_createInterpolator_61c6feaa42dd1d3e,
             max_mid
           };
 

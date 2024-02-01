@@ -14,20 +14,20 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace propagation {
-      namespace sampling {
-        class OrekitStepInterpolator;
-      }
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace estimation {
       namespace measurements {
         class ObservableSatellite;
         namespace generation {
           class MeasurementBuilder;
         }
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace propagation {
+      namespace sampling {
+        class OrekitStepInterpolator;
       }
     }
   }
@@ -43,9 +43,9 @@ namespace org {
           class Scheduler : public ::java::lang::Object {
            public:
             enum {
-              mid_generate_3d5d4740e56d31ff,
-              mid_getBuilder_45574e80a4b0eb29,
-              mid_init_f89af00fc113b524,
+              mid_generate_fda3d30bd0463b72,
+              mid_getBuilder_aa32975499e048dd,
+              mid_init_ce7d94fe97fdcf55,
               max_mid
             };
 

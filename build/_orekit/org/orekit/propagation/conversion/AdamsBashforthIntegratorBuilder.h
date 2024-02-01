@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace orbits {
-      class Orbit;
-      class OrbitType;
-    }
     namespace propagation {
       namespace conversion {
         class ODEIntegratorBuilder;
       }
+    }
+    namespace orbits {
+      class Orbit;
+      class OrbitType;
     }
   }
   namespace hipparchus {
@@ -36,8 +36,8 @@ namespace org {
         class AdamsBashforthIntegratorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_390258812740a16c,
-            mid_buildIntegrator_916fa199ca08d656,
+            mid_init$_2baad0ec229f7c27,
+            mid_buildIntegrator_31c1ebb8b9cbaedc,
             max_mid
           };
 

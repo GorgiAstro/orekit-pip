@@ -31,9 +31,9 @@ namespace org {
       class HaloOrbit : public ::org::orekit::orbits::LibrationOrbit {
        public:
         enum {
-          mid_init$_b82f17c213a6dfa7,
-          mid_init$_61210a58b1c5967a,
-          mid_applyCorrectionOnPV_57264af3b06f967f,
+          mid_init$_77d7e81f8f5ef089,
+          mid_init$_2ace0c1a76c4c810,
+          mid_applyCorrectionOnPV_6705c201ee6823b5,
           max_mid
         };
 

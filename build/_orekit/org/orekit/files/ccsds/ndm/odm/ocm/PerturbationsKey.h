@@ -44,9 +44,9 @@ namespace org {
               class PerturbationsKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_27d6c060f7d3020f,
-                  mid_valueOf_849a26fbce6aef68,
-                  mid_values_bfe673c4ffe500a9,
+                  mid_process_c1d49e251bdbf4cd,
+                  mid_valueOf_1cd89fcc06ad788d,
+                  mid_values_e473c269710650b8,
                   max_mid
                 };
 

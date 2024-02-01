@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,8 +24,8 @@ namespace org {
       class IERSConventions$NutationCorrectionConverter : public ::java::lang::Object {
        public:
         enum {
-          mid_toEquinox_eefe8d37d3bcd210,
-          mid_toNonRotating_eefe8d37d3bcd210,
+          mid_toEquinox_0981d119cdbb4f6a,
+          mid_toNonRotating_0981d119cdbb4f6a,
           max_mid
         };
 

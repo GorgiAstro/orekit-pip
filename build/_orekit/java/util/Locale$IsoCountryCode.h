@@ -4,12 +4,12 @@
 #include "java/lang/Enum.h"
 
 namespace java {
+  namespace util {
+    class Locale$IsoCountryCode;
+  }
   namespace lang {
     class String;
     class Class;
-  }
-  namespace util {
-    class Locale$IsoCountryCode;
   }
 }
 template<class T> class JArray;
@@ -20,8 +20,8 @@ namespace java {
     class Locale$IsoCountryCode : public ::java::lang::Enum {
      public:
       enum {
-        mid_valueOf_f537b6c6d2f21e35,
-        mid_values_b145c1aa93dfe064,
+        mid_valueOf_0d1846a8387d8494,
+        mid_values_dc6e672986bd3e8d,
         max_mid
       };
 

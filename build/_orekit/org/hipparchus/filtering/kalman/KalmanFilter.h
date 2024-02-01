@@ -31,9 +31,9 @@ namespace org {
         class KalmanFilter : public ::java::lang::Object {
          public:
           enum {
-            mid_estimationStep_de0fd16eb0d97034,
-            mid_getCorrected_e37ac5ac73cc5311,
-            mid_getPredicted_e37ac5ac73cc5311,
+            mid_estimationStep_d720d2299c73357d,
+            mid_getCorrected_270f067ba2ecffc6,
+            mid_getPredicted_270f067ba2ecffc6,
             max_mid
           };
 

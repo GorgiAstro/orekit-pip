@@ -33,9 +33,9 @@ namespace org {
             class LeastSquaresOptimizer$Optimum : public ::org::hipparchus::optim::nonlinear::vector::leastsquares::LeastSquaresProblem$Evaluation {
              public:
               enum {
-                mid_getEvaluations_55546ef6a647f39b,
-                mid_getIterations_55546ef6a647f39b,
-                mid_of_e0ec42e661f48cc5,
+                mid_getEvaluations_d6ab429752e7c267,
+                mid_getIterations_d6ab429752e7c267,
+                mid_of_f448db49c708ad34,
                 max_mid
               };
 

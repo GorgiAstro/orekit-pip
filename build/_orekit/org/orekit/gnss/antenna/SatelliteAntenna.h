@@ -3,6 +3,21 @@
 
 #include "org/orekit/gnss/antenna/Antenna.h"
 
+namespace org {
+  namespace orekit {
+    namespace gnss {
+      namespace antenna {
+        class FrequencyPattern;
+        class SatelliteType;
+      }
+      class SatelliteSystem;
+      class Frequency;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
+}
 namespace java {
   namespace util {
     class Map;
@@ -10,21 +25,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace gnss {
-      class SatelliteSystem;
-      namespace antenna {
-        class FrequencyPattern;
-        class SatelliteType;
-      }
-      class Frequency;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
   }
 }
 template<class T> class JArray;
@@ -37,14 +37,14 @@ namespace org {
         class SatelliteAntenna : public ::org::orekit::gnss::antenna::Antenna {
          public:
           enum {
-            mid_init$_012ca6d350718374,
-            mid_getCosparID_1c1fa1e935d6cdcf,
-            mid_getPrnNumber_55546ef6a647f39b,
-            mid_getSatelliteCode_55546ef6a647f39b,
-            mid_getSatelliteSystem_21bd759cc4a81606,
-            mid_getSatelliteType_0385bced532642ea,
-            mid_getValidFrom_c325492395d89b24,
-            mid_getValidUntil_c325492395d89b24,
+            mid_init$_eb7d5b00e00d07e0,
+            mid_getCosparID_d2c8eb4129821f0e,
+            mid_getPrnNumber_d6ab429752e7c267,
+            mid_getSatelliteCode_d6ab429752e7c267,
+            mid_getSatelliteSystem_fb0bd27fcc3ba9fc,
+            mid_getSatelliteType_426eb7147e7b0705,
+            mid_getValidFrom_80e11148db499dda,
+            mid_getValidUntil_80e11148db499dda,
             max_mid
           };
 

@@ -7,8 +7,8 @@ namespace java {
   namespace lang {
     class Short;
     class Class;
-    class Object;
     class NumberFormatException;
+    class Object;
     class String;
     class Comparable;
   }
@@ -21,31 +21,31 @@ namespace java {
     class Short : public ::java::lang::Number {
      public:
       enum {
-        mid_init$_734b91ac30d5f9b4,
-        mid_init$_87fce9dc35ce6b26,
-        mid_byteValue_82ba37184c5152a3,
-        mid_compare_4993d3387235345d,
-        mid_compareTo_93b740fd6c9781cc,
-        mid_compareUnsigned_4993d3387235345d,
-        mid_decode_fe5ef6b9f541b154,
-        mid_doubleValue_b74f83833fdad017,
-        mid_equals_460c5e2d9d51c6cc,
-        mid_floatValue_1fb1bf0772ae5db7,
-        mid_hashCode_55546ef6a647f39b,
-        mid_hashCode_214f93074a0d96b4,
-        mid_intValue_55546ef6a647f39b,
-        mid_longValue_6c0ce7e438e5ded4,
-        mid_parseShort_0db376306b95481b,
-        mid_parseShort_3b213f09839e1e52,
-        mid_reverseBytes_38a362a37e228d3b,
-        mid_shortValue_02a2271f89f4492b,
-        mid_toString_1c1fa1e935d6cdcf,
-        mid_toString_46ad5d9649cd1ffa,
-        mid_toUnsignedInt_214f93074a0d96b4,
-        mid_toUnsignedLong_080dd964855b0700,
-        mid_valueOf_fe5ef6b9f541b154,
-        mid_valueOf_ce83a7f38f80ae65,
-        mid_valueOf_664e4bc5e201c754,
+        mid_init$_105e1eadb709d9ac,
+        mid_init$_82cbebcb79e29516,
+        mid_byteValue_5bc9c54e4a4e6e3f,
+        mid_compare_87d6c106f955819c,
+        mid_compareTo_dbc19978fb9b7a7e,
+        mid_compareUnsigned_87d6c106f955819c,
+        mid_decode_ffa4257f92d944cc,
+        mid_doubleValue_9981f74b2d109da6,
+        mid_equals_72faff9b05f5ed5e,
+        mid_floatValue_0e3b995f823d65ff,
+        mid_hashCode_d6ab429752e7c267,
+        mid_hashCode_4c3f0428308d24f5,
+        mid_intValue_d6ab429752e7c267,
+        mid_longValue_42c72b98e3c2e08a,
+        mid_parseShort_0da62ff94af6a262,
+        mid_parseShort_e68db604a715d9c1,
+        mid_reverseBytes_21fb32c1ab6702d9,
+        mid_shortValue_5067fec74ceda473,
+        mid_toString_d2c8eb4129821f0e,
+        mid_toString_18737a44572c1216,
+        mid_toUnsignedInt_4c3f0428308d24f5,
+        mid_toUnsignedLong_91ec698e3904d68f,
+        mid_valueOf_ffa4257f92d944cc,
+        mid_valueOf_b2c1a3dc5058d398,
+        mid_valueOf_3d3fc87d1502acce,
         max_mid
       };
 

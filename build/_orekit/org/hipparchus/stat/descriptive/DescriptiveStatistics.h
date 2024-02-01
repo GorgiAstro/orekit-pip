@@ -7,9 +7,9 @@ namespace org {
   namespace hipparchus {
     namespace stat {
       namespace descriptive {
+        class DescriptiveStatistics;
         class UnivariateStatistic;
         class StatisticalSummary;
-        class DescriptiveStatistics;
       }
     }
     namespace exception {
@@ -42,36 +42,36 @@ namespace org {
         class DescriptiveStatistics : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_init$_ab69da052b88f50c,
-            mid_init$_44ed599e93e8a30c,
-            mid_accept_8ba9fe7a847cecad,
-            mid_addValue_8ba9fe7a847cecad,
-            mid_apply_99884f42ea39cf31,
-            mid_clear_a1fa5dae97ea5ed2,
-            mid_copy_d6cc319fcebc162c,
-            mid_getElement_2afcbc21f4e57ab2,
-            mid_getGeometricMean_b74f83833fdad017,
-            mid_getKurtosis_b74f83833fdad017,
-            mid_getMax_b74f83833fdad017,
-            mid_getMean_b74f83833fdad017,
-            mid_getMin_b74f83833fdad017,
-            mid_getN_6c0ce7e438e5ded4,
-            mid_getPercentile_04fd0666b613d2ab,
-            mid_getPopulationVariance_b74f83833fdad017,
-            mid_getQuadraticMean_b74f83833fdad017,
-            mid_getSkewness_b74f83833fdad017,
-            mid_getSortedValues_25e1757a36c4dde2,
-            mid_getStandardDeviation_b74f83833fdad017,
-            mid_getSum_b74f83833fdad017,
-            mid_getSumOfSquares_b74f83833fdad017,
-            mid_getValues_25e1757a36c4dde2,
-            mid_getVariance_b74f83833fdad017,
-            mid_getWindowSize_55546ef6a647f39b,
-            mid_removeMostRecentValue_a1fa5dae97ea5ed2,
-            mid_replaceMostRecentValue_04fd0666b613d2ab,
-            mid_setWindowSize_44ed599e93e8a30c,
-            mid_toString_1c1fa1e935d6cdcf,
+            mid_init$_ff7cb6c242604316,
+            mid_init$_a71c45509eaf92d1,
+            mid_init$_8fd427ab23829bf5,
+            mid_accept_1ad26e8c8c0cd65b,
+            mid_addValue_1ad26e8c8c0cd65b,
+            mid_apply_57797f66ddfe155e,
+            mid_clear_ff7cb6c242604316,
+            mid_copy_b954cb56014d0dc4,
+            mid_getElement_ce4c02d583456bc9,
+            mid_getGeometricMean_9981f74b2d109da6,
+            mid_getKurtosis_9981f74b2d109da6,
+            mid_getMax_9981f74b2d109da6,
+            mid_getMean_9981f74b2d109da6,
+            mid_getMin_9981f74b2d109da6,
+            mid_getN_42c72b98e3c2e08a,
+            mid_getPercentile_bf28ed64d6e8576b,
+            mid_getPopulationVariance_9981f74b2d109da6,
+            mid_getQuadraticMean_9981f74b2d109da6,
+            mid_getSkewness_9981f74b2d109da6,
+            mid_getSortedValues_be783177b060994b,
+            mid_getStandardDeviation_9981f74b2d109da6,
+            mid_getSum_9981f74b2d109da6,
+            mid_getSumOfSquares_9981f74b2d109da6,
+            mid_getValues_be783177b060994b,
+            mid_getVariance_9981f74b2d109da6,
+            mid_getWindowSize_d6ab429752e7c267,
+            mid_removeMostRecentValue_ff7cb6c242604316,
+            mid_replaceMostRecentValue_bf28ed64d6e8576b,
+            mid_setWindowSize_8fd427ab23829bf5,
+            mid_toString_d2c8eb4129821f0e,
             max_mid
           };
 

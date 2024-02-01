@@ -12,9 +12,9 @@ namespace org {
       namespace semianalytical {
         namespace dsst {
           namespace forces {
-            class FieldShortPeriodTerms;
             class DSSTForceModel;
             class ShortPeriodTerms;
+            class FieldShortPeriodTerms;
           }
           namespace utilities {
             class FieldAuxiliaryElements;
@@ -23,8 +23,8 @@ namespace org {
         }
       }
       class PropagationType;
-      class SpacecraftState;
       class FieldSpacecraftState;
+      class SpacecraftState;
     }
     namespace forces {
       namespace gravity {
@@ -62,17 +62,17 @@ namespace org {
             class DSSTZonal : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_daf08711fd84cb1b,
-                mid_init$_b37c5f576e1269fd,
-                mid_getMeanElementRate_7d3eb19aa1e75a63,
-                mid_getMeanElementRate_0483a0f94731abef,
-                mid_getParametersDrivers_e62d3bb06d56d7e3,
-                mid_getProvider_35acea483e82034d,
-                mid_initializeShortPeriodTerms_6fb0c582e8925f89,
-                mid_initializeShortPeriodTerms_3144241334d46411,
-                mid_registerAttitudeProvider_8e4d3ea100bc0095,
-                mid_updateShortPeriodTerms_62f1ad39eb6f1276,
-                mid_updateShortPeriodTerms_5401e749436ec3b7,
+                mid_init$_be352c4434e3f895,
+                mid_init$_0ce731c83dc2afee,
+                mid_getMeanElementRate_3eb9526d5d611f82,
+                mid_getMeanElementRate_43ba9f5eaba95dbb,
+                mid_getParametersDrivers_d751c1a57012b438,
+                mid_getProvider_565a812c43763e7b,
+                mid_initializeShortPeriodTerms_1d563346dd4410fc,
+                mid_initializeShortPeriodTerms_29410e2fe048cdd6,
+                mid_registerAttitudeProvider_fddd0a7d9f33bafa,
+                mid_updateShortPeriodTerms_49390f5c28b648db,
+                mid_updateShortPeriodTerms_61d4f27408b30d56,
                 max_mid
               };
 
@@ -99,8 +99,8 @@ namespace org {
               ::java::util::List initializeShortPeriodTerms(const ::org::orekit::propagation::semianalytical::dsst::utilities::AuxiliaryElements &, const ::org::orekit::propagation::PropagationType &, const JArray< jdouble > &) const;
               ::java::util::List initializeShortPeriodTerms(const ::org::orekit::propagation::semianalytical::dsst::utilities::FieldAuxiliaryElements &, const ::org::orekit::propagation::PropagationType &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
               void registerAttitudeProvider(const ::org::orekit::attitudes::AttitudeProvider &) const;
-              void updateShortPeriodTerms(const JArray< ::org::hipparchus::CalculusFieldElement > &, const JArray< ::org::orekit::propagation::FieldSpacecraftState > &) const;
               void updateShortPeriodTerms(const JArray< jdouble > &, const JArray< ::org::orekit::propagation::SpacecraftState > &) const;
+              void updateShortPeriodTerms(const JArray< ::org::hipparchus::CalculusFieldElement > &, const JArray< ::org::orekit::propagation::FieldSpacecraftState > &) const;
             };
           }
         }

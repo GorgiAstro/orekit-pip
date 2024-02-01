@@ -4,34 +4,34 @@
 #include "org/orekit/forces/radiation/AbstractRadiationForceModel.h"
 
 namespace org {
-  namespace orekit {
-    namespace forces {
-      namespace radiation {
-        class RadiationSensitive;
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
       }
+    }
+    class CalculusFieldElement;
+  }
+  namespace orekit {
+    namespace bodies {
+      class OneAxisEllipsoid;
     }
     namespace utils {
       class ExtendedPVCoordinatesProvider;
       class ParameterDriver;
     }
-    namespace bodies {
-      class OneAxisEllipsoid;
+    namespace forces {
+      namespace radiation {
+        class RadiationSensitive;
+      }
     }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -52,13 +52,13 @@ namespace org {
         class SolarRadiationPressure : public ::org::orekit::forces::radiation::AbstractRadiationForceModel {
          public:
           enum {
-            mid_init$_58f40e4787bd647f,
-            mid_init$_c9a73f6ea5ff1d2c,
-            mid_acceleration_0ce449c67b5ffd9c,
-            mid_acceleration_20bded0292328743,
-            mid_getLightingRatio_2203631097e94c79,
-            mid_getLightingRatio_a17ea857ce74d258,
-            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_init$_c3e7e621813faa99,
+            mid_init$_c470d00909701359,
+            mid_acceleration_9816b8f76e94356a,
+            mid_acceleration_5e147f44c28a35c9,
+            mid_getLightingRatio_ac6fccc69d1b2d9e,
+            mid_getLightingRatio_b443ba1cc794b916,
+            mid_getParametersDrivers_d751c1a57012b438,
             max_mid
           };
 

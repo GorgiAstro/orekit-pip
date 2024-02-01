@@ -5,8 +5,8 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -26,13 +26,13 @@ namespace org {
             class FieldCjSjCoefficient : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_63a2f4ebe459f316,
-                mid_getCj_21e6b3c521b9c768,
-                mid_getDcjDh_21e6b3c521b9c768,
-                mid_getDcjDk_21e6b3c521b9c768,
-                mid_getDsjDh_21e6b3c521b9c768,
-                mid_getDsjDk_21e6b3c521b9c768,
-                mid_getSj_21e6b3c521b9c768,
+                mid_init$_127e43313dfa0b55,
+                mid_getCj_dfcf702144fd7bc1,
+                mid_getDcjDh_dfcf702144fd7bc1,
+                mid_getDcjDk_dfcf702144fd7bc1,
+                mid_getDsjDh_dfcf702144fd7bc1,
+                mid_getDsjDk_dfcf702144fd7bc1,
+                mid_getSj_dfcf702144fd7bc1,
                 max_mid
               };
 

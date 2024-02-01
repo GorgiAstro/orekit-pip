@@ -8,8 +8,8 @@ namespace org {
     class Field;
     namespace analysis {
       namespace differentiation {
-        class GradientField;
         class Gradient;
+        class GradientField;
       }
     }
   }
@@ -29,12 +29,12 @@ namespace org {
         class GradientField : public ::java::lang::Object {
          public:
           enum {
-            mid_equals_460c5e2d9d51c6cc,
-            mid_getField_650ef0858157ebd9,
-            mid_getOne_9ebd7c8cd097159e,
-            mid_getRuntimeClass_1aeb0737a960d371,
-            mid_getZero_9ebd7c8cd097159e,
-            mid_hashCode_55546ef6a647f39b,
+            mid_equals_72faff9b05f5ed5e,
+            mid_getField_a9b016a0e8d69230,
+            mid_getOne_9d89382e9667f8f2,
+            mid_getRuntimeClass_d5247e4b166c4ce8,
+            mid_getZero_9d89382e9667f8f2,
+            mid_hashCode_d6ab429752e7c267,
             max_mid
           };
 

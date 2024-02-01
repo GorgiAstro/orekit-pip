@@ -30,10 +30,10 @@ namespace org {
           class FieldRecordAndContinue$Event : public ::java::lang::Object {
            public:
             enum {
-              mid_getDetector_e78af9d734a5fbe1,
-              mid_getState_fba6d56f8dbc98d0,
-              mid_isIncreasing_9ab94ac1dc23b105,
-              mid_toString_1c1fa1e935d6cdcf,
+              mid_getDetector_3146cd1129cf853c,
+              mid_getState_a74be2e38786f3b6,
+              mid_isIncreasing_eee3de00fe971136,
+              mid_toString_d2c8eb4129821f0e,
               max_mid
             };
 

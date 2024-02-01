@@ -5,12 +5,12 @@
 
 namespace org {
   namespace orekit {
+    namespace frames {
+      class SingleParameterFitter;
+      class EOPHistory;
+    }
     namespace utils {
       class SecularAndHarmonic;
-    }
-    namespace frames {
-      class EOPHistory;
-      class SingleParameterFitter;
     }
   }
 }
@@ -31,13 +31,14 @@ namespace org {
       class SingleParameterFitter : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_214d4c524920bcdf,
-          mid_createDefaultDut1FitterLongTermPrediction_ebdd2597d89397de,
-          mid_createDefaultDut1FitterShortTermPrediction_ebdd2597d89397de,
-          mid_createDefaultNutationFitterLongTermPrediction_ebdd2597d89397de,
-          mid_createDefaultNutationFitterShortTermPrediction_ebdd2597d89397de,
-          mid_createDefaultPoleFitterLongTermPrediction_ebdd2597d89397de,
-          mid_createDefaultPoleFitterShortTermPrediction_ebdd2597d89397de,
+          mid_init$_5bb6c9f94e35e86c,
+          mid_init$_79912345a16e5796,
+          mid_createDefaultDut1FitterLongTermPrediction_74f8f946d7a10e10,
+          mid_createDefaultDut1FitterShortTermPrediction_74f8f946d7a10e10,
+          mid_createDefaultNutationFitterLongTermPrediction_74f8f946d7a10e10,
+          mid_createDefaultNutationFitterShortTermPrediction_74f8f946d7a10e10,
+          mid_createDefaultPoleFitterLongTermPrediction_74f8f946d7a10e10,
+          mid_createDefaultPoleFitterShortTermPrediction_74f8f946d7a10e10,
           max_mid
         };
 
@@ -55,6 +56,7 @@ namespace org {
         static jdouble MOON_DRACONIC_PULSATION;
         static jdouble SUN_PULSATION;
 
+        SingleParameterFitter(jdouble, jdouble, jint, const JArray< jdouble > &);
         SingleParameterFitter(jdouble, jdouble, jdouble, jint, const JArray< jdouble > &);
 
         static SingleParameterFitter createDefaultDut1FitterLongTermPrediction();

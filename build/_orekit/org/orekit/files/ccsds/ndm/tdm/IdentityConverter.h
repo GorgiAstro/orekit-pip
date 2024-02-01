@@ -12,8 +12,8 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace tdm {
-            class RangeUnitsConverter;
             class TdmMetadata;
+            class RangeUnitsConverter;
           }
         }
       }
@@ -37,9 +37,9 @@ namespace org {
             class IdentityConverter : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_metersToRu_382e9a92dc257319,
-                mid_ruToMeters_382e9a92dc257319,
+                mid_init$_ff7cb6c242604316,
+                mid_metersToRu_b2dab880055d21ac,
+                mid_ruToMeters_b2dab880055d21ac,
                 max_mid
               };
 

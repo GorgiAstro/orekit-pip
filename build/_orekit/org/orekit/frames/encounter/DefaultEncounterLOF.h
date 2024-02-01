@@ -4,24 +4,24 @@
 #include "org/orekit/frames/encounter/AbstractEncounterLOF.h"
 
 namespace org {
-  namespace orekit {
-    namespace utils {
-      class FieldPVCoordinates;
-      class PVCoordinates;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
-          class FieldRotation;
           class FieldVector3D;
+          class FieldRotation;
           class Rotation;
+          class Vector3D;
         }
       }
     }
     class Field;
+  }
+  namespace orekit {
+    namespace utils {
+      class PVCoordinates;
+      class FieldPVCoordinates;
+    }
   }
 }
 namespace java {
@@ -40,13 +40,13 @@ namespace org {
         class DefaultEncounterLOF : public ::org::orekit::frames::encounter::AbstractEncounterLOF {
          public:
           enum {
-            mid_init$_3e711dd03f656c50,
-            mid_init$_e7272d224e58d28f,
-            mid_getAxisNormalToCollisionPlane_8b724f8b4fdad1a2,
-            mid_getAxisNormalToCollisionPlane_98221d2e63674019,
-            mid_getName_1c1fa1e935d6cdcf,
-            mid_rotationFromInertial_bf95090cc5e2a8d4,
-            mid_rotationFromInertial_8851faa33644affd,
+            mid_init$_b375bc79f588a172,
+            mid_init$_433e87d544ab05d5,
+            mid_getAxisNormalToCollisionPlane_032312bdeb3f2f93,
+            mid_getAxisNormalToCollisionPlane_10f9413c61ea347a,
+            mid_getName_d2c8eb4129821f0e,
+            mid_rotationFromInertial_b6feed19a568aaff,
+            mid_rotationFromInertial_0c632cd592d334d1,
             max_mid
           };
 

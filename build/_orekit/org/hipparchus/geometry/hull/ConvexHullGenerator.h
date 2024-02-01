@@ -13,13 +13,13 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalStateException;
+    }
     namespace geometry {
       namespace hull {
         class ConvexHull;
       }
-    }
-    namespace exception {
-      class MathIllegalStateException;
     }
   }
 }
@@ -33,7 +33,7 @@ namespace org {
         class ConvexHullGenerator : public ::java::lang::Object {
          public:
           enum {
-            mid_generate_9887d48e452c3401,
+            mid_generate_f0192278b7b44179,
             max_mid
           };
 

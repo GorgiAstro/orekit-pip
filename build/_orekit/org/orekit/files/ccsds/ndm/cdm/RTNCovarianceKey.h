@@ -9,8 +9,8 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace cdm {
-            class RTNCovarianceKey;
             class RTNCovariance;
+            class RTNCovarianceKey;
           }
         }
         namespace utils {
@@ -41,9 +41,9 @@ namespace org {
             class RTNCovarianceKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_de46bf683f387688,
-                mid_valueOf_19f1783447388dba,
-                mid_values_689b9b68e9226995,
+                mid_process_913f15eaa3772383,
+                mid_valueOf_475fe4b49fc7a392,
+                mid_values_5a7f4ccb8c7ea5f0,
                 max_mid
               };
 

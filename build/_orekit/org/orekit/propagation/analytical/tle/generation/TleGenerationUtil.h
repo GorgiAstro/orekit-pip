@@ -12,8 +12,8 @@ namespace org {
     namespace propagation {
       namespace analytical {
         namespace tle {
-          class TLE;
           class FieldTLE;
+          class TLE;
         }
       }
     }
@@ -42,8 +42,8 @@ namespace org {
             class TleGenerationUtil : public ::java::lang::Object {
              public:
               enum {
-                mid_newTLE_ef6b956997c61aa5,
-                mid_newTLE_9290bedc5d8adcf1,
+                mid_newTLE_f4a6e7aed2e7f95b,
+                mid_newTLE_3f916788236790e0,
                 max_mid
               };
 

@@ -10,8 +10,8 @@ namespace org {
         namespace messages {
           namespace rtcm {
             namespace correction {
-              class RtcmOrbitCorrectionHeader;
               class RtcmCombinedCorrectionData;
+              class RtcmOrbitCorrectionHeader;
             }
           }
         }
@@ -40,7 +40,7 @@ namespace org {
               class Rtcm1066 : public ::org::orekit::gnss::metric::messages::rtcm::correction::RtcmCorrectionMessage {
                public:
                 enum {
-                  mid_init$_868237effc362640,
+                  mid_init$_a31f35e7af490700,
                   max_mid
                 };
 

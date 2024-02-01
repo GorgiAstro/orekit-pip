@@ -41,9 +41,9 @@ namespace org {
             class CdmRelativeMetadataKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_6d35f793c12d933b,
-                mid_valueOf_f95d47e7388e8ab1,
-                mid_values_5110f31327ccab39,
+                mid_process_c9ceb687ea9a32de,
+                mid_valueOf_935129c15613fccb,
+                mid_values_6b112b29deafd5f8,
                 max_mid
               };
 

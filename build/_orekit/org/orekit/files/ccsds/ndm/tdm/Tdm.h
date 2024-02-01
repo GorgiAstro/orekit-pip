@@ -3,6 +3,30 @@
 
 #include "org/orekit/files/ccsds/ndm/NdmConstituent.h"
 
+namespace org {
+  namespace orekit {
+    namespace data {
+      class DataContext;
+    }
+    namespace files {
+      namespace ccsds {
+        namespace ndm {
+          namespace tdm {
+            class ObservationsBlock;
+            class TdmMetadata;
+            class TdmHeader;
+          }
+        }
+        namespace section {
+          class Segment;
+        }
+      }
+    }
+    namespace utils {
+      class IERSConventions;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,30 +34,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ccsds {
-        namespace section {
-          class Segment;
-        }
-        namespace ndm {
-          namespace tdm {
-            class TdmHeader;
-            class TdmMetadata;
-            class ObservationsBlock;
-          }
-        }
-      }
-    }
-    namespace utils {
-      class IERSConventions;
-    }
-    namespace data {
-      class DataContext;
-    }
   }
 }
 template<class T> class JArray;
@@ -48,7 +48,7 @@ namespace org {
             class Tdm : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
              public:
               enum {
-                mid_init$_ac37bee91ea1886e,
+                mid_init$_5951d78914a837be,
                 max_mid
               };
 

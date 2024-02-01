@@ -34,19 +34,19 @@ namespace org {
             class GPSAlmanac : public ::org::orekit::propagation::analytical::gnss::data::AbstractAlmanac {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_getHealth_55546ef6a647f39b,
-                mid_getSVN_55546ef6a647f39b,
-                mid_getSatConfiguration_55546ef6a647f39b,
-                mid_getSource_1c1fa1e935d6cdcf,
-                mid_getTGD_b74f83833fdad017,
-                mid_getURA_55546ef6a647f39b,
-                mid_setHealth_44ed599e93e8a30c,
-                mid_setSVN_44ed599e93e8a30c,
-                mid_setSatConfiguration_44ed599e93e8a30c,
-                mid_setSource_734b91ac30d5f9b4,
-                mid_setSqrtA_8ba9fe7a847cecad,
-                mid_setURA_44ed599e93e8a30c,
+                mid_init$_ff7cb6c242604316,
+                mid_getHealth_d6ab429752e7c267,
+                mid_getSVN_d6ab429752e7c267,
+                mid_getSatConfiguration_d6ab429752e7c267,
+                mid_getSource_d2c8eb4129821f0e,
+                mid_getTGD_9981f74b2d109da6,
+                mid_getURA_d6ab429752e7c267,
+                mid_setHealth_8fd427ab23829bf5,
+                mid_setSVN_8fd427ab23829bf5,
+                mid_setSatConfiguration_8fd427ab23829bf5,
+                mid_setSource_105e1eadb709d9ac,
+                mid_setSqrtA_1ad26e8c8c0cd65b,
+                mid_setURA_8fd427ab23829bf5,
                 max_mid
               };
 

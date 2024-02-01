@@ -3,6 +3,20 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace general {
+        class OrekitAttitudeEphemerisFile$OrekitSatelliteAttitudeEphemeris;
+        class OrekitAttitudeEphemerisFile$OrekitAttitudeEphemerisSegment;
+        class AttitudeEphemerisFile;
+      }
+    }
+    namespace utils {
+      class TimeStampedAngularCoordinates;
+    }
+  }
+}
 namespace java {
   namespace util {
     class Map;
@@ -10,20 +24,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace utils {
-      class TimeStampedAngularCoordinates;
-    }
-    namespace files {
-      namespace general {
-        class OrekitAttitudeEphemerisFile$OrekitAttitudeEphemerisSegment;
-        class OrekitAttitudeEphemerisFile$OrekitSatelliteAttitudeEphemeris;
-        class AttitudeEphemerisFile;
-      }
-    }
   }
 }
 template<class T> class JArray;
@@ -36,9 +36,9 @@ namespace org {
         class OrekitAttitudeEphemerisFile : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_addSatellite_e9e7f3c1a12ef622,
-            mid_getSatellites_810bed48fafb0b9a,
+            mid_init$_ff7cb6c242604316,
+            mid_addSatellite_67bc7b446e4221eb,
+            mid_getSatellites_dbcb8bbac6b35e0d,
             max_mid
           };
 

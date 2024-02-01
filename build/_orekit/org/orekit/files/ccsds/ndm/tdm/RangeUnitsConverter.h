@@ -5,6 +5,9 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -13,9 +16,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -36,8 +36,8 @@ namespace org {
             class RangeUnitsConverter : public ::java::lang::Object {
              public:
               enum {
-                mid_metersToRu_382e9a92dc257319,
-                mid_ruToMeters_382e9a92dc257319,
+                mid_metersToRu_b2dab880055d21ac,
+                mid_ruToMeters_b2dab880055d21ac,
                 max_mid
               };
 

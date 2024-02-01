@@ -13,16 +13,6 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace models {
-      namespace earth {
-        namespace ionosphere {
-          class IonosphericModel;
-        }
-      }
-    }
-    namespace frames {
-      class TopocentricFrame;
-    }
     namespace gnss {
       namespace metric {
         namespace messages {
@@ -34,12 +24,22 @@ namespace org {
         }
       }
     }
-    namespace utils {
-      class ParameterDriver;
+    namespace frames {
+      class TopocentricFrame;
     }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
+    }
+    namespace models {
+      namespace earth {
+        namespace ionosphere {
+          class IonosphericModel;
+        }
+      }
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
   namespace hipparchus {
@@ -57,10 +57,10 @@ namespace org {
           class SsrVtecIonosphericModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_5bafb67a92804099,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_pathDelay_5e4bace87c721642,
-              mid_pathDelay_0c51f26f37c66719,
+              mid_init$_459c7bf428eba8f4,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_pathDelay_d2f5e0e8b7e00e80,
+              mid_pathDelay_c84aeff9124fe654,
               max_mid
             };
 

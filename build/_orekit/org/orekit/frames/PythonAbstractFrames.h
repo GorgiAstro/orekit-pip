@@ -20,8 +20,8 @@ namespace org {
       class IERSConventions;
     }
     namespace frames {
-      class EOPHistory;
       class Frame;
+      class EOPHistory;
     }
     namespace time {
       class TimeScales;
@@ -37,12 +37,12 @@ namespace org {
       class PythonAbstractFrames : public ::org::orekit::frames::AbstractFrames {
        public:
         enum {
-          mid_init$_49fbab41a915bed1,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_getEOPHistory_a77e9d6bc0da2439,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_init$_d68fa0e4fc7f6cf2,
+          mid_finalize_ff7cb6c242604316,
+          mid_getEOPHistory_5f3b1864e8a02d51,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
           max_mid
         };
 

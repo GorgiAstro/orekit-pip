@@ -16,15 +16,15 @@ namespace java {
 namespace org {
   namespace hipparchus {
     namespace ode {
-      class ODEIntegrator;
       namespace events {
         class ODEStepEndHandler;
         class ODEEventDetector;
       }
-      class ODEStateAndDerivative;
       namespace sampling {
         class ODEStepHandler;
       }
+      class ODEIntegrator;
+      class ODEStateAndDerivative;
     }
     namespace exception {
       class MathIllegalArgumentException;
@@ -41,34 +41,34 @@ namespace org {
       class AbstractIntegrator : public ::java::lang::Object {
        public:
         enum {
-          mid_addEventDetector_b3037e2992b522fb,
-          mid_addStepEndHandler_00cecfec8aa9403e,
-          mid_addStepHandler_cd9b3224c18c683b,
-          mid_clearEventDetectors_a1fa5dae97ea5ed2,
-          mid_clearStepEndHandlers_a1fa5dae97ea5ed2,
-          mid_clearStepHandlers_a1fa5dae97ea5ed2,
-          mid_computeDerivatives_91fbb4072ae7ce9a,
-          mid_getCurrentSignedStepsize_b74f83833fdad017,
-          mid_getEvaluations_55546ef6a647f39b,
-          mid_getEventDetectors_e62d3bb06d56d7e3,
-          mid_getMaxEvaluations_55546ef6a647f39b,
-          mid_getName_1c1fa1e935d6cdcf,
-          mid_getStepEndHandlers_e62d3bb06d56d7e3,
-          mid_getStepHandlers_e62d3bb06d56d7e3,
-          mid_getStepStart_73a804ac72232dd7,
-          mid_setMaxEvaluations_44ed599e93e8a30c,
-          mid_getStepSize_b74f83833fdad017,
-          mid_sanityChecks_9ab16ee510aba086,
-          mid_initIntegration_8cb4bf2a0c64fd92,
-          mid_setStepStart_d2d966b8a9c77b61,
-          mid_setIsLastStep_fcb96c98de6fad04,
-          mid_acceptStep_6f4f6de6bb232b27,
-          mid_isLastStep_9ab94ac1dc23b105,
-          mid_resetOccurred_9ab94ac1dc23b105,
-          mid_setStepSize_8ba9fe7a847cecad,
-          mid_getEvaluationsCounter_3c86b06a86576583,
-          mid_getEquations_f19d9c4799a8baa5,
-          mid_setStateInitialized_fcb96c98de6fad04,
+          mid_addEventDetector_4cad2771a2849140,
+          mid_addStepEndHandler_3dff193c3948a094,
+          mid_addStepHandler_e6ea3ae127d5bfec,
+          mid_clearEventDetectors_ff7cb6c242604316,
+          mid_clearStepEndHandlers_ff7cb6c242604316,
+          mid_clearStepHandlers_ff7cb6c242604316,
+          mid_computeDerivatives_bfc955188bf36f2c,
+          mid_getCurrentSignedStepsize_9981f74b2d109da6,
+          mid_getEvaluations_d6ab429752e7c267,
+          mid_getEventDetectors_d751c1a57012b438,
+          mid_getMaxEvaluations_d6ab429752e7c267,
+          mid_getName_d2c8eb4129821f0e,
+          mid_getStepEndHandlers_d751c1a57012b438,
+          mid_getStepHandlers_d751c1a57012b438,
+          mid_getStepStart_abe7a2bda3ab9237,
+          mid_setMaxEvaluations_8fd427ab23829bf5,
+          mid_sanityChecks_e6ba2f1f75657f6f,
+          mid_initIntegration_3b00c059d3ccb86d,
+          mid_setStepStart_6bfc236263cc281c,
+          mid_setIsLastStep_b35db77cae58639e,
+          mid_setStepSize_1ad26e8c8c0cd65b,
+          mid_getStepSize_9981f74b2d109da6,
+          mid_acceptStep_bcb8bb0d467166bb,
+          mid_isLastStep_eee3de00fe971136,
+          mid_resetOccurred_eee3de00fe971136,
+          mid_getEquations_cfdcf52f10836739,
+          mid_getEvaluationsCounter_286bd168b7e14166,
+          mid_setStateInitialized_b35db77cae58639e,
           max_mid
         };
 

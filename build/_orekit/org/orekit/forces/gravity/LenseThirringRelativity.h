@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
@@ -22,12 +22,12 @@ namespace org {
     namespace frames {
       class Frame;
     }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
 }
@@ -49,11 +49,11 @@ namespace org {
         class LenseThirringRelativity : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_4c11e89002512e6b,
-            mid_acceleration_20bded0292328743,
-            mid_acceleration_0ce449c67b5ffd9c,
-            mid_dependsOnPositionOnly_9ab94ac1dc23b105,
-            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_init$_868ec0d787c86da6,
+            mid_acceleration_5e147f44c28a35c9,
+            mid_acceleration_9816b8f76e94356a,
+            mid_dependsOnPositionOnly_eee3de00fe971136,
+            mid_getParametersDrivers_d751c1a57012b438,
             max_mid
           };
 

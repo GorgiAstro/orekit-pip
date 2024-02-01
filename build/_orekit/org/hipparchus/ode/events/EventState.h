@@ -9,10 +9,10 @@ namespace org {
       namespace sampling {
         class ODEStateInterpolator;
       }
-      class ODEStateAndDerivative;
       namespace events {
         class EventOccurrence;
       }
+      class ODEStateAndDerivative;
     }
     namespace exception {
       class MathIllegalArgumentException;
@@ -35,10 +35,10 @@ namespace org {
         class EventState : public ::java::lang::Object {
          public:
           enum {
-            mid_doEvent_1eca994d89f760c7,
-            mid_evaluateStep_f2bd5620f6269916,
-            mid_getEventTime_b74f83833fdad017,
-            mid_init_a7556bd72cab73f1,
+            mid_doEvent_85cb4cee6c2ee34d,
+            mid_evaluateStep_a2d4078e6169b71f,
+            mid_getEventTime_9981f74b2d109da6,
+            mid_init_25005604bcb94d07,
             max_mid
           };
 

@@ -22,7 +22,7 @@ namespace org {
       class CalculusFieldMultivariateVectorFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_value_1cc99f34da9b4a7b,
+          mid_value_38b803e86c0bea36,
           max_mid
         };
 

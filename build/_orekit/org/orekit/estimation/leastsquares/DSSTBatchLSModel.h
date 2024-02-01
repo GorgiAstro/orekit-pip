@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class ParameterDriversList;
-    }
     namespace propagation {
       class PropagationType;
       namespace conversion {
         class PropagatorBuilder;
       }
+    }
+    namespace utils {
+      class ParameterDriversList;
     }
     namespace estimation {
       namespace measurements {
@@ -43,9 +43,9 @@ namespace org {
         class DSSTBatchLSModel : public ::org::orekit::estimation::leastsquares::AbstractBatchLSModel {
          public:
           enum {
-            mid_init$_10a1e041259ccdae,
-            mid_configureHarvester_dafc362fdc9e50eb,
-            mid_configureOrbits_3575848f266bfbed,
+            mid_init$_a27e0eacaf59d226,
+            mid_configureHarvester_1a5b9825e639ffce,
+            mid_configureOrbits_88ee223eb65bb3ed,
             max_mid
           };
 

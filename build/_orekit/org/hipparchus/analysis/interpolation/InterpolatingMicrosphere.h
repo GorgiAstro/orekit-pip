@@ -30,12 +30,12 @@ namespace org {
         class InterpolatingMicrosphere : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_7c22db685632bea7,
-            mid_copy_a7d66e8901ff57bc,
-            mid_getDimension_55546ef6a647f39b,
-            mid_getSize_55546ef6a647f39b,
-            mid_value_7ccc6a6851373f5c,
-            mid_add_2808bdf785b578a3,
+            mid_init$_582e32e2d074b21a,
+            mid_copy_8b1de7d914573862,
+            mid_getDimension_d6ab429752e7c267,
+            mid_getSize_d6ab429752e7c267,
+            mid_value_491d6bf7da84505c,
+            mid_add_d202a20516e33d93,
             max_mid
           };
 

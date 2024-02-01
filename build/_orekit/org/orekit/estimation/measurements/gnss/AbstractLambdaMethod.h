@@ -16,8 +16,8 @@ namespace org {
     namespace estimation {
       namespace measurements {
         namespace gnss {
-          class IntegerLeastSquareSolver;
           class IntegerLeastSquareSolution;
+          class IntegerLeastSquareSolver;
         }
       }
     }
@@ -39,27 +39,27 @@ namespace org {
           class AbstractLambdaMethod : public ::java::lang::Object {
            public:
             enum {
-              mid_setComparator_2c01874c65d2ef2f,
-              mid_solveILS_78e4e9f588c2bfe0,
-              mid_getDiagReference_25e1757a36c4dde2,
-              mid_getLowReference_25e1757a36c4dde2,
-              mid_getDecorrelatedReference_25e1757a36c4dde2,
-              mid_getZInverseTransformationReference_4d095d7a08163110,
-              mid_zIndex_92ecd94558bf0c68,
-              mid_lIndex_92ecd94558bf0c68,
-              mid_discreteSearch_a1fa5dae97ea5ed2,
-              mid_recoverAmbiguities_992f722e5b5b80cb,
-              mid_permutation_d5322b8b512aeb26,
-              mid_integerGaussTransformation_3313c75e3e16c428,
-              mid_getMaxSolution_55546ef6a647f39b,
-              mid_addSolution_49319a360f3ed64e,
-              mid_getSolutionsSize_55546ef6a647f39b,
-              mid_removeSolution_a1fa5dae97ea5ed2,
-              mid_ltdlDecomposition_a1fa5dae97ea5ed2,
-              mid_reduction_a1fa5dae97ea5ed2,
-              mid_inverseDecomposition_a1fa5dae97ea5ed2,
-              mid_getMaxDistance_b74f83833fdad017,
-              mid_getSize_55546ef6a647f39b,
+              mid_setComparator_bee08e6612998c92,
+              mid_solveILS_c875ff52e2e6fa6c,
+              mid_inverseDecomposition_ff7cb6c242604316,
+              mid_getDiagReference_be783177b060994b,
+              mid_getLowReference_be783177b060994b,
+              mid_getZInverseTransformationReference_d6f20bd740dd34cd,
+              mid_getDecorrelatedReference_be783177b060994b,
+              mid_zIndex_91b9e1e34b2235d5,
+              mid_lIndex_91b9e1e34b2235d5,
+              mid_integerGaussTransformation_b5d23e6c0858e8ed,
+              mid_permutation_4320462275d66e78,
+              mid_getMaxSolution_d6ab429752e7c267,
+              mid_addSolution_0119d689bc5a4d60,
+              mid_getMaxDistance_9981f74b2d109da6,
+              mid_removeSolution_ff7cb6c242604316,
+              mid_getSolutionsSize_d6ab429752e7c267,
+              mid_ltdlDecomposition_ff7cb6c242604316,
+              mid_reduction_ff7cb6c242604316,
+              mid_discreteSearch_ff7cb6c242604316,
+              mid_recoverAmbiguities_bc28affeaa2339a4,
+              mid_getSize_d6ab429752e7c267,
               max_mid
             };
 

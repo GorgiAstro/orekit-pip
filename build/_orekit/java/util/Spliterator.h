@@ -20,12 +20,12 @@ namespace java {
     class Spliterator : public ::java::lang::Object {
      public:
       enum {
-        mid_characteristics_55546ef6a647f39b,
-        mid_estimateSize_6c0ce7e438e5ded4,
-        mid_getComparator_127b1bec8b0c3ae1,
-        mid_getExactSizeIfKnown_6c0ce7e438e5ded4,
-        mid_hasCharacteristics_96f51a3f36d3a2a7,
-        mid_trySplit_fe8f811ebd6e639a,
+        mid_characteristics_d6ab429752e7c267,
+        mid_estimateSize_42c72b98e3c2e08a,
+        mid_getComparator_44d5f0105a5559b7,
+        mid_getExactSizeIfKnown_42c72b98e3c2e08a,
+        mid_hasCharacteristics_e24caac814db1df5,
+        mid_trySplit_74c84c40cacaa7be,
         max_mid
       };
 

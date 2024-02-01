@@ -18,18 +18,18 @@ namespace org {
         class BetaDistribution : public ::org::hipparchus::distribution::continuous::AbstractRealDistribution {
          public:
           enum {
-            mid_init$_369b4c97255d5afa,
-            mid_init$_b5167f35b2521627,
-            mid_cumulativeProbability_04fd0666b613d2ab,
-            mid_density_04fd0666b613d2ab,
-            mid_getAlpha_b74f83833fdad017,
-            mid_getBeta_b74f83833fdad017,
-            mid_getNumericalMean_b74f83833fdad017,
-            mid_getNumericalVariance_b74f83833fdad017,
-            mid_getSupportLowerBound_b74f83833fdad017,
-            mid_getSupportUpperBound_b74f83833fdad017,
-            mid_isSupportConnected_9ab94ac1dc23b105,
-            mid_logDensity_04fd0666b613d2ab,
+            mid_init$_13edac039e8cc967,
+            mid_init$_bd28dc6055dc5bbd,
+            mid_cumulativeProbability_bf28ed64d6e8576b,
+            mid_density_bf28ed64d6e8576b,
+            mid_getAlpha_9981f74b2d109da6,
+            mid_getBeta_9981f74b2d109da6,
+            mid_getNumericalMean_9981f74b2d109da6,
+            mid_getNumericalVariance_9981f74b2d109da6,
+            mid_getSupportLowerBound_9981f74b2d109da6,
+            mid_getSupportUpperBound_9981f74b2d109da6,
+            mid_isSupportConnected_eee3de00fe971136,
+            mid_logDensity_bf28ed64d6e8576b,
             max_mid
           };
 

@@ -7,8 +7,8 @@ namespace java {
   namespace lang {
     class Byte;
     class Class;
-    class Object;
     class NumberFormatException;
+    class Object;
     class String;
     class Comparable;
   }
@@ -21,30 +21,30 @@ namespace java {
     class Byte : public ::java::lang::Number {
      public:
       enum {
-        mid_init$_734b91ac30d5f9b4,
-        mid_init$_693a437249a56ecd,
-        mid_byteValue_82ba37184c5152a3,
-        mid_compare_f794c048a600eb0b,
-        mid_compareTo_3473363a2c415e3d,
-        mid_compareUnsigned_f794c048a600eb0b,
-        mid_decode_aa87ba6c79ccb038,
-        mid_doubleValue_b74f83833fdad017,
-        mid_equals_460c5e2d9d51c6cc,
-        mid_floatValue_1fb1bf0772ae5db7,
-        mid_hashCode_55546ef6a647f39b,
-        mid_hashCode_6aa6edba525f59f6,
-        mid_intValue_55546ef6a647f39b,
-        mid_longValue_6c0ce7e438e5ded4,
-        mid_parseByte_9343b8e301fce9f5,
-        mid_parseByte_c27b8b77830595b4,
-        mid_shortValue_02a2271f89f4492b,
-        mid_toString_1c1fa1e935d6cdcf,
-        mid_toString_f271aa7672b03c42,
-        mid_toUnsignedInt_6aa6edba525f59f6,
-        mid_toUnsignedLong_de8fc968a17e269a,
-        mid_valueOf_aa87ba6c79ccb038,
-        mid_valueOf_0adc4b7056ad497c,
-        mid_valueOf_8d9c7dc0fe337043,
+        mid_init$_105e1eadb709d9ac,
+        mid_init$_c5b50806960ababe,
+        mid_byteValue_5bc9c54e4a4e6e3f,
+        mid_compare_99cc7ebd515197d5,
+        mid_compareTo_c59155d7582bf081,
+        mid_compareUnsigned_99cc7ebd515197d5,
+        mid_decode_ef5aec5cf3811a5d,
+        mid_doubleValue_9981f74b2d109da6,
+        mid_equals_72faff9b05f5ed5e,
+        mid_floatValue_0e3b995f823d65ff,
+        mid_hashCode_d6ab429752e7c267,
+        mid_hashCode_f003b7d37d8f9843,
+        mid_intValue_d6ab429752e7c267,
+        mid_longValue_42c72b98e3c2e08a,
+        mid_parseByte_715a8d0c0cb07484,
+        mid_parseByte_142d028f14d5b71c,
+        mid_shortValue_5067fec74ceda473,
+        mid_toString_d2c8eb4129821f0e,
+        mid_toString_c342f43960e2117c,
+        mid_toUnsignedInt_f003b7d37d8f9843,
+        mid_toUnsignedLong_25347891c3cc3af6,
+        mid_valueOf_ef5aec5cf3811a5d,
+        mid_valueOf_94cdbfda5299f8d3,
+        mid_valueOf_6c43b756d047c483,
         max_mid
       };
 

@@ -3,14 +3,6 @@
 
 #include "org/hipparchus/optim/nonlinear/scalar/noderiv/AbstractSimplex.h"
 
-namespace java {
-  namespace util {
-    class Comparator;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace optim {
@@ -19,6 +11,14 @@ namespace org {
     namespace analysis {
       class MultivariateFunction;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class Comparator;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -33,15 +33,15 @@ namespace org {
             class MultiDirectionalSimplex : public ::org::hipparchus::optim::nonlinear::scalar::noderiv::AbstractSimplex {
              public:
               enum {
-                mid_init$_ab69da052b88f50c,
-                mid_init$_07adb42ffaa97d31,
-                mid_init$_44ed599e93e8a30c,
-                mid_init$_d5322b8b512aeb26,
-                mid_init$_b0ce8bae5fc14fa3,
-                mid_init$_8d45af4d7e484f48,
-                mid_init$_cdd9dee35d124091,
-                mid_init$_390258812740a16c,
-                mid_iterate_7c5f20de6989de35,
+                mid_init$_a71c45509eaf92d1,
+                mid_init$_11ecdbb5af7ed67d,
+                mid_init$_8fd427ab23829bf5,
+                mid_init$_4320462275d66e78,
+                mid_init$_aeadc0559b2462aa,
+                mid_init$_b8114caf5b78071b,
+                mid_init$_aaed259e1b5f1153,
+                mid_init$_2baad0ec229f7c27,
+                mid_iterate_db1894c33fb140cf,
                 max_mid
               };
 

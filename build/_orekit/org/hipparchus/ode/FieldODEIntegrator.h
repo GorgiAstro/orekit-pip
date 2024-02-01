@@ -6,16 +6,16 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
-      class FieldODEState;
-      class FieldExpandableODE;
-      class FieldODEStateAndDerivative;
-      namespace sampling {
-        class FieldODEStepHandler;
-      }
       namespace events {
         class FieldODEEventDetector;
         class FieldODEStepEndHandler;
       }
+      namespace sampling {
+        class FieldODEStepHandler;
+      }
+      class FieldODEStateAndDerivative;
+      class FieldExpandableODE;
+      class FieldODEState;
     }
     namespace exception {
       class MathIllegalArgumentException;
@@ -42,22 +42,22 @@ namespace org {
       class FieldODEIntegrator : public ::java::lang::Object {
        public:
         enum {
-          mid_addEventDetector_7d036dd73a796a18,
-          mid_addStepEndHandler_c7e835482ba4bd87,
-          mid_addStepHandler_cd46d1493dfc3830,
-          mid_clearEventDetectors_a1fa5dae97ea5ed2,
-          mid_clearStepEndHandlers_a1fa5dae97ea5ed2,
-          mid_clearStepHandlers_a1fa5dae97ea5ed2,
-          mid_getCurrentSignedStepsize_81520b552cb3fa26,
-          mid_getEvaluations_55546ef6a647f39b,
-          mid_getEventDetectors_e62d3bb06d56d7e3,
-          mid_getMaxEvaluations_55546ef6a647f39b,
-          mid_getName_1c1fa1e935d6cdcf,
-          mid_getStepEndHandlers_e62d3bb06d56d7e3,
-          mid_getStepHandlers_e62d3bb06d56d7e3,
-          mid_getStepStart_b7aa8b39e4b21836,
-          mid_integrate_75ca69013be095d1,
-          mid_setMaxEvaluations_44ed599e93e8a30c,
+          mid_addEventDetector_1ffd39265a0e340d,
+          mid_addStepEndHandler_0490fb61ed7db186,
+          mid_addStepHandler_d8a2a9c1603c5377,
+          mid_clearEventDetectors_ff7cb6c242604316,
+          mid_clearStepEndHandlers_ff7cb6c242604316,
+          mid_clearStepHandlers_ff7cb6c242604316,
+          mid_getCurrentSignedStepsize_08d37e3f77b7239d,
+          mid_getEvaluations_d6ab429752e7c267,
+          mid_getEventDetectors_d751c1a57012b438,
+          mid_getMaxEvaluations_d6ab429752e7c267,
+          mid_getName_d2c8eb4129821f0e,
+          mid_getStepEndHandlers_d751c1a57012b438,
+          mid_getStepHandlers_d751c1a57012b438,
+          mid_getStepStart_15f5056f2d3c7d41,
+          mid_integrate_7e5884a5ebca9afb,
+          mid_setMaxEvaluations_8fd427ab23829bf5,
           max_mid
         };
 

@@ -44,9 +44,9 @@ namespace org {
               class EulerKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_d2c77080af061b2e,
-                  mid_valueOf_7196adb5e61f0633,
-                  mid_values_ccf306637f182922,
+                  mid_process_c40ec13c52f2408c,
+                  mid_valueOf_21aa8efb583c87d9,
+                  mid_values_587ff68756dc491d,
                   max_mid
                 };
 

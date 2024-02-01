@@ -3,26 +3,26 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
         namespace utils {
-          namespace lexical {
-            class ParseToken;
-          }
           namespace parsing {
             class ProcessingState;
+          }
+          namespace lexical {
+            class ParseToken;
           }
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
-    class Throwable;
   }
 }
 template<class T> class JArray;
@@ -37,12 +37,12 @@ namespace org {
             class PythonProcessingState : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_finalize_a1fa5dae97ea5ed2,
-                mid_processToken_5949d4df22f33350,
-                mid_pythonDecRef_a1fa5dae97ea5ed2,
-                mid_pythonExtension_6c0ce7e438e5ded4,
-                mid_pythonExtension_3d7dd2314a0dd456,
+                mid_init$_ff7cb6c242604316,
+                mid_finalize_ff7cb6c242604316,
+                mid_processToken_48865e799ebb0b92,
+                mid_pythonDecRef_ff7cb6c242604316,
+                mid_pythonExtension_42c72b98e3c2e08a,
+                mid_pythonExtension_f5bbab7e97879358,
                 max_mid
               };
 

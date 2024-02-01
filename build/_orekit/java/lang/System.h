@@ -6,8 +6,8 @@
 namespace java {
   namespace util {
     class Map;
-    class ResourceBundle;
     class Properties;
+    class ResourceBundle;
   }
   namespace io {
     class InputStream;
@@ -15,8 +15,8 @@ namespace java {
     class PrintStream;
   }
   namespace lang {
-    class System$Logger;
     class SecurityManager;
+    class System$Logger;
     class Class;
     class String;
   }
@@ -29,33 +29,33 @@ namespace java {
     class System : public ::java::lang::Object {
      public:
       enum {
-        mid_arraycopy_5ef86faafe5c5319,
-        mid_clearProperty_6f0f3576df9f75ee,
-        mid_console_b356a13e79791853,
-        mid_currentTimeMillis_6c0ce7e438e5ded4,
-        mid_exit_44ed599e93e8a30c,
-        mid_gc_a1fa5dae97ea5ed2,
-        mid_getLogger_166034580d25badb,
-        mid_getLogger_95c3b777b3e0ddbd,
-        mid_getProperties_445d7f36702bb006,
-        mid_getProperty_6f0f3576df9f75ee,
-        mid_getProperty_88f2f8c619f3cbd0,
-        mid_getSecurityManager_b096220aecda9b75,
-        mid_getenv_810bed48fafb0b9a,
-        mid_getenv_6f0f3576df9f75ee,
-        mid_identityHashCode_b7898c5e94612125,
-        mid_lineSeparator_1c1fa1e935d6cdcf,
-        mid_load_734b91ac30d5f9b4,
-        mid_loadLibrary_734b91ac30d5f9b4,
-        mid_mapLibraryName_6f0f3576df9f75ee,
-        mid_nanoTime_6c0ce7e438e5ded4,
-        mid_runFinalization_a1fa5dae97ea5ed2,
-        mid_setErr_5820b90479773400,
-        mid_setIn_471a178453aa39ad,
-        mid_setOut_5820b90479773400,
-        mid_setProperties_8d64b213c25ee01e,
-        mid_setProperty_88f2f8c619f3cbd0,
-        mid_setSecurityManager_d90250d0a4a5dad5,
+        mid_arraycopy_9ffe6c5e265c38cf,
+        mid_clearProperty_95277969d373e11f,
+        mid_console_2beedf7cadcea0bb,
+        mid_currentTimeMillis_42c72b98e3c2e08a,
+        mid_exit_8fd427ab23829bf5,
+        mid_gc_ff7cb6c242604316,
+        mid_getLogger_a9ce29de29c7962d,
+        mid_getLogger_a8ca924d29f1b3ac,
+        mid_getProperties_de246c017ced4e31,
+        mid_getProperty_95277969d373e11f,
+        mid_getProperty_91d6dcf90111829e,
+        mid_getSecurityManager_46900078393b946d,
+        mid_getenv_dbcb8bbac6b35e0d,
+        mid_getenv_95277969d373e11f,
+        mid_identityHashCode_9aa1a0d21cdeb90e,
+        mid_lineSeparator_d2c8eb4129821f0e,
+        mid_load_105e1eadb709d9ac,
+        mid_loadLibrary_105e1eadb709d9ac,
+        mid_mapLibraryName_95277969d373e11f,
+        mid_nanoTime_42c72b98e3c2e08a,
+        mid_runFinalization_ff7cb6c242604316,
+        mid_setErr_7a6583f48fc2663f,
+        mid_setIn_8f4bef0679d2f8d5,
+        mid_setOut_7a6583f48fc2663f,
+        mid_setProperties_7c18cb0182508f57,
+        mid_setProperty_91d6dcf90111829e,
+        mid_setSecurityManager_a905106515538997,
         max_mid
       };
 

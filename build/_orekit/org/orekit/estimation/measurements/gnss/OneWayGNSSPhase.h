@@ -7,18 +7,18 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
+        class ObservableSatellite;
         namespace gnss {
           class OneWayGNSSPhase;
         }
-        class ObservableSatellite;
       }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace utils {
       class PVCoordinatesProvider;
       class ParameterDriver;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -39,11 +39,11 @@ namespace org {
           class OneWayGNSSPhase : public ::org::orekit::estimation::measurements::AbstractMeasurement {
            public:
             enum {
-              mid_init$_74866ddfa1808693,
-              mid_getAmbiguityDriver_a59daa5e273117e1,
-              mid_getWavelength_b74f83833fdad017,
-              mid_theoreticalEvaluationWithoutDerivatives_9347cf3b1f0dd85a,
-              mid_theoreticalEvaluation_d598991c5cac8ab0,
+              mid_init$_c5c19ff9f4a8cd3f,
+              mid_getAmbiguityDriver_7daccb22665e511b,
+              mid_getWavelength_9981f74b2d109da6,
+              mid_theoreticalEvaluationWithoutDerivatives_59954f62fc64aef2,
+              mid_theoreticalEvaluation_eda25b8c88791d9a,
               max_mid
             };
 

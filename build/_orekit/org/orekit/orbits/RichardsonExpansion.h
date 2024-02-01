@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
+    namespace bodies {
+      class CR3BPSystem;
+    }
     namespace orbits {
       class LibrationOrbitFamily;
     }
     namespace utils {
-      class LagrangianPoints;
       class PVCoordinates;
-    }
-    namespace bodies {
-      class CR3BPSystem;
+      class LagrangianPoints;
     }
   }
 }
@@ -31,13 +31,13 @@ namespace org {
       class RichardsonExpansion : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_c4fc8764def20b65,
-          mid_computeHaloFirstGuess_8a5adba960c21b64,
-          mid_computeLyapunovFirstGuess_6acb4642554a452a,
-          mid_getCr3bpSystem_2748a8cb525bb823,
-          mid_getHaloOrbitalPeriod_04fd0666b613d2ab,
-          mid_getLagrangianPoint_7663a5886f588c29,
-          mid_getLyapunovOrbitalPeriod_04fd0666b613d2ab,
+          mid_init$_afa868b056706e58,
+          mid_computeHaloFirstGuess_476e672aac8c4e37,
+          mid_computeLyapunovFirstGuess_02628d3a946752e3,
+          mid_getCr3bpSystem_46ee78c3fbfe7bfc,
+          mid_getHaloOrbitalPeriod_bf28ed64d6e8576b,
+          mid_getLagrangianPoint_633f09b0beab6a42,
+          mid_getLyapunovOrbitalPeriod_bf28ed64d6e8576b,
           max_mid
         };
 

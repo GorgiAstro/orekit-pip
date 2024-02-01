@@ -5,20 +5,20 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class NullArgumentException;
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
-    }
-    class CalculusFieldElement;
     namespace analysis {
-      class CalculusFieldUnivariateFunction;
       namespace solvers {
-        class BracketedRealFieldUnivariateSolver;
         class BracketedRealFieldUnivariateSolver$Interval;
         class AllowedSolution;
+        class BracketedRealFieldUnivariateSolver;
       }
+      class CalculusFieldUnivariateFunction;
     }
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
+      class NullArgumentException;
+    }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -36,16 +36,16 @@ namespace org {
         class FieldBracketingNthOrderBrentSolver : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_acf92559ec8aaacb,
-            mid_getAbsoluteAccuracy_81520b552cb3fa26,
-            mid_getEvaluations_55546ef6a647f39b,
-            mid_getFunctionValueAccuracy_81520b552cb3fa26,
-            mid_getMaxEvaluations_55546ef6a647f39b,
-            mid_getMaximalOrder_55546ef6a647f39b,
-            mid_getRelativeAccuracy_81520b552cb3fa26,
-            mid_solve_274432d986e24d18,
-            mid_solve_1274323488150eef,
-            mid_solveInterval_01108cb21dc9897d,
+            mid_init$_be414b4726c448be,
+            mid_getAbsoluteAccuracy_08d37e3f77b7239d,
+            mid_getEvaluations_d6ab429752e7c267,
+            mid_getFunctionValueAccuracy_08d37e3f77b7239d,
+            mid_getMaxEvaluations_d6ab429752e7c267,
+            mid_getMaximalOrder_d6ab429752e7c267,
+            mid_getRelativeAccuracy_08d37e3f77b7239d,
+            mid_solve_6851f2838839ed9a,
+            mid_solve_506031728277a68d,
+            mid_solveInterval_20e7140a9cf1e1c4,
             max_mid
           };
 

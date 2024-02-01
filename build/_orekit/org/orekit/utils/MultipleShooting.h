@@ -3,19 +3,19 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      class SpacecraftState;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      class SpacecraftState;
+    }
   }
 }
 template<class T> class JArray;
@@ -27,7 +27,7 @@ namespace org {
       class MultipleShooting : public ::java::lang::Object {
        public:
         enum {
-          mid_compute_e62d3bb06d56d7e3,
+          mid_compute_d751c1a57012b438,
           max_mid
         };
 

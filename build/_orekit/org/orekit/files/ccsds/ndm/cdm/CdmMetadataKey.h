@@ -9,8 +9,8 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace cdm {
-            class CdmMetadata;
             class CdmMetadataKey;
+            class CdmMetadata;
           }
         }
         namespace utils {
@@ -41,9 +41,9 @@ namespace org {
             class CdmMetadataKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_fb211c400eff2692,
-                mid_valueOf_b0f560972826b0b8,
-                mid_values_6d420f07df58e24b,
+                mid_process_09ba153477c5d329,
+                mid_valueOf_ed35c0e5072acc3e,
+                mid_values_8eec49f122ddb7f6,
                 max_mid
               };
 

@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      class Space;
       class Point;
+      class Space;
     }
   }
 }
@@ -25,9 +25,9 @@ namespace org {
       class Point : public ::java::io::Serializable {
        public:
         enum {
-          mid_distance_f0dd8cb59ea09794,
-          mid_getSpace_9afbccb68c8e9ef8,
-          mid_isNaN_9ab94ac1dc23b105,
+          mid_distance_277cb62c4ec87155,
+          mid_getSpace_a30bf0b437744017,
+          mid_isNaN_eee3de00fe971136,
           max_mid
         };
 

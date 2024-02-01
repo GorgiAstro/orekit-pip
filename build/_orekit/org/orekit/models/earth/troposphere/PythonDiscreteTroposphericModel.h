@@ -3,15 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace models {
@@ -21,13 +12,13 @@ namespace org {
         }
       }
     }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
     namespace bodies {
       class FieldGeodeticPoint;
       class GeodeticPoint;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
     }
     namespace utils {
       class ParameterDriver;
@@ -36,6 +27,15 @@ namespace org {
   namespace hipparchus {
     class Field;
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -49,16 +49,16 @@ namespace org {
           class PythonDiscreteTroposphericModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_getParameters_25e1757a36c4dde2,
-              mid_getParameters_5286daa2a5b3d227,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_pathDelay_2edbfa177156ee09,
-              mid_pathDelay_6f66c6b7094d6f08,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_init$_ff7cb6c242604316,
+              mid_finalize_ff7cb6c242604316,
+              mid_getParameters_be783177b060994b,
+              mid_getParameters_84f929c42eeec397,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_pathDelay_a07808bbc1ebff8d,
+              mid_pathDelay_3e863f8cc7cde633,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
               max_mid
             };
 

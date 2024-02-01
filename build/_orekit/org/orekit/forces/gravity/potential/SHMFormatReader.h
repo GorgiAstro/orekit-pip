@@ -5,8 +5,8 @@
 
 namespace java {
   namespace io {
-    class InputStream;
     class IOException;
+    class InputStream;
   }
   namespace text {
     class ParseException;
@@ -18,15 +18,15 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace errors {
-      class OrekitException;
-    }
     namespace forces {
       namespace gravity {
         namespace potential {
           class RawSphericalHarmonicsProvider;
         }
       }
+    }
+    namespace errors {
+      class OrekitException;
     }
     namespace time {
       class TimeScale;
@@ -44,10 +44,10 @@ namespace org {
           class SHMFormatReader : public ::org::orekit::forces::gravity::potential::PotentialCoefficientsReader {
            public:
             enum {
-              mid_init$_76cf8b957ccb7ae1,
-              mid_init$_f201530b2ce67e89,
-              mid_getProvider_752316a4c911183b,
-              mid_loadData_360461e719fb564c,
+              mid_init$_c5d48f261709aa3e,
+              mid_init$_13b6194a2a01ad07,
+              mid_getProvider_0c94c2344ee8a0fa,
+              mid_loadData_bec0f846e5ec73da,
               max_mid
             };
 

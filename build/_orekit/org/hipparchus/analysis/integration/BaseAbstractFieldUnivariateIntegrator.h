@@ -6,18 +6,18 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class NullArgumentException;
-      class MathIllegalStateException;
       class MathIllegalArgumentException;
+      class MathIllegalStateException;
+      class NullArgumentException;
     }
-    class Field;
-    class CalculusFieldElement;
     namespace analysis {
-      class CalculusFieldUnivariateFunction;
       namespace integration {
         class FieldUnivariateIntegrator;
       }
+      class CalculusFieldUnivariateFunction;
     }
+    class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -35,19 +35,19 @@ namespace org {
         class BaseAbstractFieldUnivariateIntegrator : public ::java::lang::Object {
          public:
           enum {
-            mid_getAbsoluteAccuracy_b74f83833fdad017,
-            mid_getEvaluations_55546ef6a647f39b,
-            mid_getField_04d1f63e17d5c5d4,
-            mid_getIterations_55546ef6a647f39b,
-            mid_getMaximalIterationCount_55546ef6a647f39b,
-            mid_getMinimalIterationCount_55546ef6a647f39b,
-            mid_getRelativeAccuracy_b74f83833fdad017,
-            mid_integrate_6b15562ea2d5cce9,
-            mid_doIntegrate_81520b552cb3fa26,
-            mid_getMin_81520b552cb3fa26,
-            mid_getMax_81520b552cb3fa26,
-            mid_computeObjectiveValue_6e00dc5eb352fe51,
-            mid_setup_2ce989e8ed78a18c,
+            mid_getAbsoluteAccuracy_9981f74b2d109da6,
+            mid_getEvaluations_d6ab429752e7c267,
+            mid_getField_577649682b9910c1,
+            mid_getIterations_d6ab429752e7c267,
+            mid_getMaximalIterationCount_d6ab429752e7c267,
+            mid_getMinimalIterationCount_d6ab429752e7c267,
+            mid_getRelativeAccuracy_9981f74b2d109da6,
+            mid_integrate_ef1d0d591cd17bf9,
+            mid_getMin_08d37e3f77b7239d,
+            mid_getMax_08d37e3f77b7239d,
+            mid_computeObjectiveValue_a3b854adede8eaaa,
+            mid_doIntegrate_08d37e3f77b7239d,
+            mid_setup_11812be0a0c96fef,
             max_mid
           };
 

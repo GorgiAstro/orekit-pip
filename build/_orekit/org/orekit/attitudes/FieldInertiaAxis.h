@@ -4,8 +4,12 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace attitudes {
+      class FieldInertiaAxis;
+    }
+  }
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace geometry {
       namespace euclidean {
         namespace threed {
@@ -13,11 +17,7 @@ namespace org {
         }
       }
     }
-  }
-  namespace orekit {
-    namespace attitudes {
-      class FieldInertiaAxis;
-    }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -34,10 +34,10 @@ namespace org {
       class FieldInertiaAxis : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0602f39e097cca02,
-          mid_getA_ff5ac73a7b43eddd,
-          mid_getI_81520b552cb3fa26,
-          mid_negate_4039efd27b3cc788,
+          mid_init$_2ca3d0f9cc0458ff,
+          mid_getA_d1b42a6748e907f9,
+          mid_getI_08d37e3f77b7239d,
+          mid_negate_7fbf812b0f49865b,
           max_mid
         };
 

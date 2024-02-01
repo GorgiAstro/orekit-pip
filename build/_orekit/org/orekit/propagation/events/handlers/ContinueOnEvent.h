@@ -4,6 +4,13 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace ode {
+      namespace events {
+        class Action;
+      }
+    }
+  }
   namespace orekit {
     namespace propagation {
       namespace events {
@@ -13,13 +20,6 @@ namespace org {
         class EventDetector;
       }
       class SpacecraftState;
-    }
-  }
-  namespace hipparchus {
-    namespace ode {
-      namespace events {
-        class Action;
-      }
     }
   }
 }
@@ -39,8 +39,8 @@ namespace org {
           class ContinueOnEvent : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_eventOccurred_ae9b0131fefe6c67,
+              mid_init$_ff7cb6c242604316,
+              mid_eventOccurred_66898681536e4202,
               max_mid
             };
 

@@ -5,14 +5,14 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
     namespace stat {
       namespace regression {
         class RegressionResults;
         class UpdatingMultipleLinearRegression;
       }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
     }
   }
 }
@@ -31,19 +31,19 @@ namespace org {
         class MillerUpdatingRegression : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_34742154de10200a,
-            mid_init$_2620dfac41107d35,
-            mid_addObservation_334f245ec9cee46b,
-            mid_addObservations_8a9d29a6bd2c9070,
-            mid_clear_a1fa5dae97ea5ed2,
-            mid_getDiagonalOfHatMatrix_b060e4326765ccf1,
-            mid_getN_6c0ce7e438e5ded4,
-            mid_getOrderOfRegressors_4d095d7a08163110,
-            mid_getPartialCorrelations_bb2a44a76ad252f7,
-            mid_hasIntercept_9ab94ac1dc23b105,
-            mid_regress_d38bcfe2c0d5b843,
-            mid_regress_6d4269f398dcfc41,
-            mid_regress_c9fc7eba9cd71ebd,
+            mid_init$_06c90d8be18d8afa,
+            mid_init$_f749fdf8034f9bd9,
+            mid_addObservation_19a01fdb4baa56b0,
+            mid_addObservations_f1517d9a21833345,
+            mid_clear_ff7cb6c242604316,
+            mid_getDiagonalOfHatMatrix_a40ce4fdf6559ac0,
+            mid_getN_42c72b98e3c2e08a,
+            mid_getOrderOfRegressors_d6f20bd740dd34cd,
+            mid_getPartialCorrelations_81add9fc9d78d5b9,
+            mid_hasIntercept_eee3de00fe971136,
+            mid_regress_b2f062f0fff197c0,
+            mid_regress_54420be6ab2acfca,
+            mid_regress_ce00c0e72893108a,
             max_mid
           };
 

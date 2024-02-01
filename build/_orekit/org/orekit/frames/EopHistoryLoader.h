@@ -3,22 +3,22 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace utils {
+      class IERSConventions$NutationCorrectionConverter;
+    }
+    namespace frames {
+      class EOPEntry;
+    }
+  }
+}
 namespace java {
   namespace util {
     class SortedSet;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace frames {
-      class EOPEntry;
-    }
-    namespace utils {
-      class IERSConventions$NutationCorrectionConverter;
-    }
   }
 }
 template<class T> class JArray;
@@ -30,7 +30,7 @@ namespace org {
       class EopHistoryLoader : public ::java::lang::Object {
        public:
         enum {
-          mid_fillHistory_f091b90ef4456eb3,
+          mid_fillHistory_09d2fc89df23cd1a,
           max_mid
         };
 

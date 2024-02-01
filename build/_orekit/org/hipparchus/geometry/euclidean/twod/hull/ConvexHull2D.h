@@ -6,18 +6,18 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      namespace hull {
-        class ConvexHull;
-      }
       namespace euclidean {
         namespace twod {
-          class Vector2D;
           class Segment;
+          class Vector2D;
           class Euclidean2D;
         }
       }
       namespace partitioning {
         class Region;
+      }
+      namespace hull {
+        class ConvexHull;
       }
     }
     namespace exception {
@@ -45,10 +45,10 @@ namespace org {
             class ConvexHull2D : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_e715a6a566179e6d,
-                mid_createRegion_3698fd1911856e70,
-                mid_getLineSegments_de8474dc301ff82f,
-                mid_getVertices_4d39929bc8263843,
+                mid_init$_2daec3c74ed387fa,
+                mid_createRegion_3069dff3a674defc,
+                mid_getLineSegments_ac566408702c8cf2,
+                mid_getVertices_891663da42637b5a,
                 max_mid
               };
 

@@ -3,29 +3,29 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace bodies {
+      class GeodeticPoint;
+      class OneAxisEllipsoid;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class TimeStampedPVCoordinates;
+    }
+    namespace frames {
+      class Frame;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace utils {
-      class TimeStampedPVCoordinates;
-    }
-    namespace bodies {
-      class OneAxisEllipsoid;
-      class GeodeticPoint;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
   }
 }
 template<class T> class JArray;
@@ -38,8 +38,8 @@ namespace org {
         class RoughVisibilityEstimator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_399876c4baaf92fd,
-            mid_estimateVisibility_5a46fb2cb47f92a5,
+            mid_init$_1a08f636e2eae5cb,
+            mid_estimateVisibility_c0124ed8e33562a0,
             max_mid
           };
 

@@ -5,17 +5,17 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class NullArgumentException;
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
-    }
-    namespace util {
-      class IterationManager;
-    }
     namespace linear {
       class RealLinearOperator;
       class RealVector;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
+      class NullArgumentException;
+    }
+    namespace util {
+      class IterationManager;
     }
   }
 }
@@ -33,18 +33,18 @@ namespace org {
       class SymmLQ : public ::org::hipparchus::linear::PreconditionedIterativeLinearSolver {
        public:
         enum {
-          mid_init$_da450846491b522c,
-          mid_init$_911582bb3a73ac58,
-          mid_shouldCheck_9ab94ac1dc23b105,
-          mid_solve_756296b1f68e7038,
-          mid_solve_8e7f7f43cd6eb914,
-          mid_solve_3a7358168b964bea,
-          mid_solve_0f4c606f88ffcaeb,
-          mid_solve_6a13ae8d5dc12800,
-          mid_solve_78453d0930241759,
-          mid_solveInPlace_8e7f7f43cd6eb914,
-          mid_solveInPlace_0f4c606f88ffcaeb,
-          mid_solveInPlace_7b731b81e5b5e103,
+          mid_init$_c5b1307f8763947a,
+          mid_init$_50acb8bcbb80a276,
+          mid_shouldCheck_eee3de00fe971136,
+          mid_solve_0cdb2b64c2fd2ee5,
+          mid_solve_0299ee26edcac320,
+          mid_solve_9820092a50d54355,
+          mid_solve_35226d9fdc897ac0,
+          mid_solve_0729d74880ac1f87,
+          mid_solve_e0e56b5e51a70a3d,
+          mid_solveInPlace_0299ee26edcac320,
+          mid_solveInPlace_35226d9fdc897ac0,
+          mid_solveInPlace_d1dc9ac8657eea32,
           max_mid
         };
 

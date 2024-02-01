@@ -11,8 +11,8 @@ namespace org {
         namespace handlers {
           class EventHandler;
         }
-        class EventDetector;
         class AdaptableInterval;
+        class EventDetector;
       }
       class SpacecraftState;
     }
@@ -36,19 +36,19 @@ namespace org {
         class AbstractDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_g_a17ea857ce74d258,
-            mid_getHandler_0c96c441e92b6ffa,
-            mid_getMaxCheckInterval_014eea600d2cdae8,
-            mid_getMaxIterationCount_55546ef6a647f39b,
-            mid_getThreshold_b74f83833fdad017,
-            mid_init_2d7f9a496c7e9781,
-            mid_isForward_9ab94ac1dc23b105,
-            mid_withHandler_01f46477a2575207,
-            mid_withMaxCheck_bcdfde6555a3d78d,
-            mid_withMaxCheck_aac8c3658de25d27,
-            mid_withMaxIter_2f9b7a5781ba55d5,
-            mid_withThreshold_bcdfde6555a3d78d,
-            mid_create_193e21d57a66206a,
+            mid_g_b443ba1cc794b916,
+            mid_getHandler_0e9e72f635f03ea9,
+            mid_getMaxCheckInterval_11bc47e1cbec1a87,
+            mid_getMaxIterationCount_d6ab429752e7c267,
+            mid_getThreshold_9981f74b2d109da6,
+            mid_init_14deaae988292d42,
+            mid_isForward_eee3de00fe971136,
+            mid_withHandler_30a1635272b3efbb,
+            mid_withMaxCheck_f6dac0e72bf77fee,
+            mid_withMaxCheck_beb3e829b22ea7a4,
+            mid_withMaxIter_6bba1a5a8d5f4501,
+            mid_withThreshold_f6dac0e72bf77fee,
+            mid_create_23ac4e704dde127b,
             max_mid
           };
 

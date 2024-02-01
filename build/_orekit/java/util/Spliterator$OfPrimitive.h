@@ -4,12 +4,12 @@
 #include "java/util/Spliterator.h"
 
 namespace java {
+  namespace util {
+    class Spliterator$OfPrimitive;
+  }
   namespace lang {
     class Class;
     class Object;
-  }
-  namespace util {
-    class Spliterator$OfPrimitive;
   }
 }
 template<class T> class JArray;
@@ -20,9 +20,9 @@ namespace java {
     class Spliterator$OfPrimitive : public ::java::util::Spliterator {
      public:
       enum {
-        mid_forEachRemaining_55f3c894852c27a3,
-        mid_tryAdvance_460c5e2d9d51c6cc,
-        mid_trySplit_22635de398cddab7,
+        mid_forEachRemaining_83ee235bb1e64e94,
+        mid_tryAdvance_72faff9b05f5ed5e,
+        mid_trySplit_48eac1ec4b1684d8,
         max_mid
       };
 

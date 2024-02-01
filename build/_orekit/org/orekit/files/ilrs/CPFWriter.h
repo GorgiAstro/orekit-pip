@@ -6,12 +6,12 @@
 namespace org {
   namespace orekit {
     namespace files {
+      namespace general {
+        class EphemerisFile;
+        class EphemerisFileWriter;
+      }
       namespace ilrs {
         class CPFHeader;
-      }
-      namespace general {
-        class EphemerisFileWriter;
-        class EphemerisFile;
       }
     }
     namespace time {
@@ -38,9 +38,9 @@ namespace org {
         class CPFWriter : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_cebeba69e4eb8c33,
-            mid_init$_fadbe4ef40d3e215,
-            mid_write_b257e3ad1002b2a9,
+            mid_init$_930ec2644ec1d38b,
+            mid_init$_318d888e2f998fee,
+            mid_write_12ce9ebfe43ac6e6,
             max_mid
           };
 

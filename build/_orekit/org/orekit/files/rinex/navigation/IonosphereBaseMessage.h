@@ -3,12 +3,6 @@
 
 #include "org/orekit/files/rinex/navigation/TypeSvMessage.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -17,6 +11,12 @@ namespace org {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -30,9 +30,9 @@ namespace org {
           class IonosphereBaseMessage : public ::org::orekit::files::rinex::navigation::TypeSvMessage {
            public:
             enum {
-              mid_init$_2f7855eb8fb85f32,
-              mid_getTransmitTime_c325492395d89b24,
-              mid_setTransmitTime_02135a6ef25adb4b,
+              mid_init$_96a1aa7c5f1486f9,
+              mid_getTransmitTime_80e11148db499dda,
+              mid_setTransmitTime_8497861b879c83f7,
               max_mid
             };
 

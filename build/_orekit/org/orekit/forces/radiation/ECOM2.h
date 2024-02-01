@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
@@ -45,10 +45,10 @@ namespace org {
         class ECOM2 : public ::org::orekit::forces::radiation::AbstractRadiationForceModel {
          public:
           enum {
-            mid_init$_691cd6306e23a01e,
-            mid_acceleration_0ce449c67b5ffd9c,
-            mid_acceleration_20bded0292328743,
-            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_init$_85e2aef72c2e015f,
+            mid_acceleration_5e147f44c28a35c9,
+            mid_acceleration_9816b8f76e94356a,
+            mid_getParametersDrivers_d751c1a57012b438,
             max_mid
           };
 
@@ -67,8 +67,8 @@ namespace org {
 
           ECOM2(jint, jint, jdouble, const ::org::orekit::utils::ExtendedPVCoordinatesProvider &, jdouble);
 
-          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
+          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           ::java::util::List getParametersDrivers() const;
         };
       }

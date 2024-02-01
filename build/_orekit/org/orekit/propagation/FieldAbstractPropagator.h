@@ -5,16 +5,16 @@
 
 namespace org {
   namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
     namespace propagation {
+      class FieldAdditionalStateProvider;
       class FieldPropagator;
       namespace sampling {
         class FieldStepHandlerMultiplexer;
       }
-      class FieldAdditionalStateProvider;
       class FieldSpacecraftState;
-    }
-    namespace attitudes {
-      class AttitudeProvider;
     }
     namespace time {
       class FieldAbsoluteDate;
@@ -49,26 +49,26 @@ namespace org {
       class FieldAbstractPropagator : public ::java::lang::Object {
        public:
         enum {
-          mid_addAdditionalStateProvider_6f4fb3fe151ef989,
-          mid_getAdditionalStateProviders_e62d3bb06d56d7e3,
-          mid_getAttitudeProvider_331f12bb6017243b,
-          mid_getField_04d1f63e17d5c5d4,
-          mid_getFrame_2c51111cc6894ba1,
-          mid_getInitialState_fba6d56f8dbc98d0,
-          mid_getManagedAdditionalStates_0f94e41879ab7062,
-          mid_getMultiplexer_bf5be23258085f1c,
-          mid_getPVCoordinates_294c5c99690f2356,
-          mid_isAdditionalStateManaged_cde6b28e15c96b75,
-          mid_propagate_70fecd201ca47d3b,
-          mid_resetInitialState_54d9efbf99822980,
-          mid_setAttitudeProvider_8e4d3ea100bc0095,
-          mid_updateAdditionalStates_370b1acde6244b7e,
-          mid_initializePropagation_a1fa5dae97ea5ed2,
-          mid_initializeAdditionalStates_382e93bb0508f0e4,
-          mid_setStartDate_382e93bb0508f0e4,
-          mid_updateUnmanagedStates_370b1acde6244b7e,
-          mid_getStartDate_fa23a4301b9c83e7,
-          mid_stateChanged_54d9efbf99822980,
+          mid_addAdditionalStateProvider_546488029ed6e282,
+          mid_getAdditionalStateProviders_d751c1a57012b438,
+          mid_getAttitudeProvider_2f73d1f4460b8d6c,
+          mid_getField_577649682b9910c1,
+          mid_getFrame_cb151471db4570f0,
+          mid_getInitialState_a74be2e38786f3b6,
+          mid_getManagedAdditionalStates_f81c0644d57ae495,
+          mid_getMultiplexer_8da2e06aa361bf03,
+          mid_getPVCoordinates_1b1a4229447f7bf7,
+          mid_isAdditionalStateManaged_df4c65b2aede5c41,
+          mid_propagate_fb689a9c0f30b938,
+          mid_resetInitialState_8062511934471166,
+          mid_setAttitudeProvider_fddd0a7d9f33bafa,
+          mid_setStartDate_421e631f14d32a8c,
+          mid_getStartDate_1fea28374011eef5,
+          mid_stateChanged_8062511934471166,
+          mid_updateAdditionalStates_59bc90ab93a43079,
+          mid_initializeAdditionalStates_421e631f14d32a8c,
+          mid_initializePropagation_ff7cb6c242604316,
+          mid_updateUnmanagedStates_59bc90ab93a43079,
           max_mid
         };
 

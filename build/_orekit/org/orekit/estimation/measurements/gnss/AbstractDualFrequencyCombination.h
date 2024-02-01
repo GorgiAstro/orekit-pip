@@ -41,11 +41,11 @@ namespace org {
           class AbstractDualFrequencyCombination : public ::java::lang::Object {
            public:
             enum {
-              mid_combine_12b3dc80befaeb6c,
-              mid_combine_74c648c2fd092da1,
-              mid_getName_1c1fa1e935d6cdcf,
-              mid_getCombinedValue_67abdaf53ea90950,
-              mid_getCombinedFrequency_7bbbdc452eac601c,
+              mid_combine_34f94a0e1855db7e,
+              mid_combine_221f3e8aea4f942e,
+              mid_getName_d2c8eb4129821f0e,
+              mid_getCombinedValue_ac28f5c378fae636,
+              mid_getCombinedFrequency_9364fb0b7015b098,
               max_mid
             };
 

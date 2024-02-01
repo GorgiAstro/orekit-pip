@@ -25,10 +25,10 @@ namespace org {
       class DefaultFieldMatrixChangingVisitor : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_8d8d85cc6e14d2f7,
-          mid_end_2ff8de927fda4153,
-          mid_start_ea412797eafea800,
-          mid_visit_52bb8aebd493cd71,
+          mid_init$_d6f1e197c99df44f,
+          mid_end_f6328613456309a1,
+          mid_start_ee5da648d666a7a9,
+          mid_visit_be2f38076167f47f,
           max_mid
         };
 

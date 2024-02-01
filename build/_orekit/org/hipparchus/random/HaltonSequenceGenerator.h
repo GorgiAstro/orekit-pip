@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class NullArgumentException;
       class MathIllegalArgumentException;
+      class NullArgumentException;
     }
     namespace random {
       class RandomVectorGenerator;
@@ -28,12 +28,12 @@ namespace org {
       class HaltonSequenceGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_44ed599e93e8a30c,
-          mid_init$_5f0ee0ef02547c61,
-          mid_getNextIndex_55546ef6a647f39b,
-          mid_nextVector_25e1757a36c4dde2,
-          mid_skipTo_bb2a44a76ad252f7,
-          mid_scramble_aad24acd6036a6f1,
+          mid_init$_8fd427ab23829bf5,
+          mid_init$_9466c0ef0b32e7e9,
+          mid_getNextIndex_d6ab429752e7c267,
+          mid_nextVector_be783177b060994b,
+          mid_skipTo_81add9fc9d78d5b9,
+          mid_scramble_00616f6c287fc4e7,
           max_mid
         };
 

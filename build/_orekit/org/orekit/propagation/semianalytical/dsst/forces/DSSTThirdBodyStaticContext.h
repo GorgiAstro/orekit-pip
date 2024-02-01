@@ -33,10 +33,10 @@ namespace org {
             class DSSTThirdBodyStaticContext : public ::org::orekit::propagation::semianalytical::dsst::forces::ForceModelContext {
              public:
               enum {
-                mid_init$_3f7d3078b325cb52,
-                mid_getMaxAR3Pow_55546ef6a647f39b,
-                mid_getMaxEccPow_55546ef6a647f39b,
-                mid_getMaxFreqF_55546ef6a647f39b,
+                mid_init$_e2ec8908c6908417,
+                mid_getMaxAR3Pow_d6ab429752e7c267,
+                mid_getMaxEccPow_d6ab429752e7c267,
+                mid_getMaxFreqF_d6ab429752e7c267,
                 max_mid
               };
 

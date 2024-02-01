@@ -6,11 +6,11 @@
 namespace java {
   namespace util {
     class Iterator;
-    class Spliterator;
-    class Collection;
     namespace stream {
       class Stream;
     }
+    class Spliterator;
+    class Collection;
   }
   namespace lang {
     class Class;
@@ -25,24 +25,24 @@ namespace java {
     class Collection : public ::java::lang::Iterable {
      public:
       enum {
-        mid_add_460c5e2d9d51c6cc,
-        mid_addAll_801a92d34e44726e,
-        mid_clear_a1fa5dae97ea5ed2,
-        mid_contains_460c5e2d9d51c6cc,
-        mid_containsAll_801a92d34e44726e,
-        mid_equals_460c5e2d9d51c6cc,
-        mid_hashCode_55546ef6a647f39b,
-        mid_isEmpty_9ab94ac1dc23b105,
-        mid_iterator_fc7780bc5d5b73b0,
-        mid_parallelStream_14e21bf777ff0ccf,
-        mid_remove_460c5e2d9d51c6cc,
-        mid_removeAll_801a92d34e44726e,
-        mid_retainAll_801a92d34e44726e,
-        mid_size_55546ef6a647f39b,
-        mid_spliterator_fe8f811ebd6e639a,
-        mid_stream_14e21bf777ff0ccf,
-        mid_toArray_24e2edd6319f4c5a,
-        mid_toArray_70d423ae061f83d5,
+        mid_add_72faff9b05f5ed5e,
+        mid_addAll_61d64368c58b84f3,
+        mid_clear_ff7cb6c242604316,
+        mid_contains_72faff9b05f5ed5e,
+        mid_containsAll_61d64368c58b84f3,
+        mid_equals_72faff9b05f5ed5e,
+        mid_hashCode_d6ab429752e7c267,
+        mid_isEmpty_eee3de00fe971136,
+        mid_iterator_4f613ccd2f803b4b,
+        mid_parallelStream_11e4ca8182c1933d,
+        mid_remove_72faff9b05f5ed5e,
+        mid_removeAll_61d64368c58b84f3,
+        mid_retainAll_61d64368c58b84f3,
+        mid_size_d6ab429752e7c267,
+        mid_spliterator_74c84c40cacaa7be,
+        mid_stream_11e4ca8182c1933d,
+        mid_toArray_2ab86268ef7a6631,
+        mid_toArray_f4767af6a3829fbc,
         max_mid
       };
 

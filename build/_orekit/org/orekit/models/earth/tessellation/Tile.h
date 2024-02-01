@@ -29,10 +29,10 @@ namespace org {
           class Tile : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_7df029de759df1fc,
-              mid_getCenter_963915d358b1e63a,
-              mid_getInterpolatedPoint_b84fde9522d0f3b2,
-              mid_getVertices_3134137071900945,
+              mid_init$_1db1899da2877d6d,
+              mid_getCenter_bdca252cae79438c,
+              mid_getInterpolatedPoint_41fe83215d7519fd,
+              mid_getVertices_d941db3d29ab8467,
               max_mid
             };
 

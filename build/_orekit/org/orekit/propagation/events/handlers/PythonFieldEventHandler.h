@@ -5,9 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace propagation {
       namespace events {
         class FieldEventDetector;
@@ -17,14 +14,17 @@ namespace org {
       }
       class FieldSpacecraftState;
     }
+    namespace time {
+      class FieldAbsoluteDate;
+    }
   }
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace ode {
       namespace events {
         class Action;
       }
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -44,14 +44,14 @@ namespace org {
           class PythonFieldEventHandler : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_eventOccurred_839b1f3ec2c4fbf6,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_init_0c5b04ee41f00344,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
-              mid_resetState_f13ac1fae17e489e,
+              mid_init$_ff7cb6c242604316,
+              mid_eventOccurred_094737664b369b83,
+              mid_finalize_ff7cb6c242604316,
+              mid_init_09584b3c735adb0f,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
+              mid_resetState_cd642b76f63f95b7,
               max_mid
             };
 

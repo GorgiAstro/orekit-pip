@@ -5,17 +5,17 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
     namespace utils {
       class ParameterDriversList;
     }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
     namespace orbits {
+      class PositionAngleType;
       class Orbit;
       class FieldOrbit;
-      class PositionAngleType;
       class OrbitType;
     }
     namespace frames {
@@ -42,20 +42,20 @@ namespace org {
       class OrbitType : public ::java::lang::Enum {
        public:
         enum {
-          mid_convertToFieldOrbit_9b0122682636b413,
-          mid_convertType_fc86977d2ef95d47,
-          mid_convertType_17366d6f28f0e9a3,
-          mid_getDrivers_a90b7a96bd02cc69,
-          mid_isPositionAngleBased_9ab94ac1dc23b105,
-          mid_mapArrayToOrbit_f8e2268a540708cf,
-          mid_mapArrayToOrbit_3a36966952a8c249,
-          mid_mapOrbitToArray_cdbe0480fba9da5e,
-          mid_mapOrbitToArray_dd1f1433d867eeb8,
-          mid_normalize_44e06ea15412cf58,
-          mid_normalize_4b9fe4c623440067,
-          mid_valueOf_669d078c7e4c9b0b,
-          mid_values_edeedd4e4e0b4870,
-          mid_scale_8734a085c2c31141,
+          mid_convertToFieldOrbit_4e961aad065174c6,
+          mid_convertType_c568d451ffb1bb48,
+          mid_convertType_940029672edd5e92,
+          mid_getDrivers_d5afdace8d02a385,
+          mid_isPositionAngleBased_eee3de00fe971136,
+          mid_mapArrayToOrbit_87ad13bda478956b,
+          mid_mapArrayToOrbit_7b733a130aa7b2a9,
+          mid_mapOrbitToArray_359314ca0bd4c47b,
+          mid_mapOrbitToArray_7691d4a944c88f98,
+          mid_normalize_ecfb098360a0b7b4,
+          mid_normalize_6a3479954288b344,
+          mid_valueOf_5c92cc24cbd933c4,
+          mid_values_468e1e4121a628f0,
+          mid_scale_4c37db72b1fcc356,
           max_mid
         };
 

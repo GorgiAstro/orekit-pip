@@ -19,12 +19,12 @@ namespace org {
         class CRDConfiguration$BaseConfiguration : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_equals_460c5e2d9d51c6cc,
-            mid_getConfigurationId_1c1fa1e935d6cdcf,
-            mid_hashCode_55546ef6a647f39b,
-            mid_setConfigurationId_734b91ac30d5f9b4,
-            mid_toCrdString_1c1fa1e935d6cdcf,
+            mid_init$_ff7cb6c242604316,
+            mid_equals_72faff9b05f5ed5e,
+            mid_getConfigurationId_d2c8eb4129821f0e,
+            mid_hashCode_d6ab429752e7c267,
+            mid_setConfigurationId_105e1eadb709d9ac,
+            mid_toCrdString_d2c8eb4129821f0e,
             max_mid
           };
 

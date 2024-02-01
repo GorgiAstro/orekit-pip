@@ -3,30 +3,30 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class Rotation;
-        }
-      }
-    }
-  }
-  namespace orekit {
-    namespace frames {
-      class StaticTransform;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class Throwable;
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace frames {
+      class StaticTransform;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Rotation;
+          class Vector3D;
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -38,15 +38,15 @@ namespace org {
       class PythonStaticTransform : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_getDate_c325492395d89b24,
-          mid_getInverse_00930874428900c5,
-          mid_getRotation_ff298a39b3cae5da,
-          mid_getTranslation_8b724f8b4fdad1a2,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_init$_ff7cb6c242604316,
+          mid_finalize_ff7cb6c242604316,
+          mid_getDate_80e11148db499dda,
+          mid_getInverse_4707295cf0323d2d,
+          mid_getRotation_4d68cff5f6e4403a,
+          mid_getTranslation_032312bdeb3f2f93,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
           max_mid
         };
 

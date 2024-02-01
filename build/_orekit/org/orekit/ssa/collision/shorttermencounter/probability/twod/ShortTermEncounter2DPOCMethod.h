@@ -14,8 +14,8 @@ namespace org {
         namespace shorttermencounter {
           namespace probability {
             namespace twod {
-              class ShortTermEncounter2DPOCMethodType;
               class ShortTermEncounter2DDefinition;
+              class ShortTermEncounter2DPOCMethodType;
               class FieldShortTermEncounter2DDefinition;
             }
           }
@@ -26,10 +26,6 @@ namespace org {
         class ProbabilityOfCollision;
       }
     }
-    namespace orbits {
-      class Orbit;
-      class FieldOrbit;
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -38,6 +34,10 @@ namespace org {
           }
         }
       }
+    }
+    namespace orbits {
+      class FieldOrbit;
+      class Orbit;
     }
   }
   namespace hipparchus {
@@ -63,26 +63,26 @@ namespace org {
               class ShortTermEncounter2DPOCMethod : public ::java::lang::Object {
                public:
                 enum {
-                  mid_compute_264223a79423072b,
-                  mid_compute_76a9c916ce2b1546,
-                  mid_compute_cac25f7dbaea842d,
-                  mid_compute_75090526d857f3aa,
-                  mid_compute_613925b61b739417,
-                  mid_compute_a0489c76be101130,
-                  mid_compute_1bd00fec4020f6ae,
-                  mid_compute_6829aad0a64a3436,
-                  mid_compute_2b16e16faf82a389,
-                  mid_compute_87c647df3efaccbf,
-                  mid_compute_aa614adc5e98ffe5,
-                  mid_compute_a73e6347f5238a63,
-                  mid_compute_11689cd07cf55453,
-                  mid_compute_619a70d6b0e36c90,
-                  mid_compute_fa6d0cfa8ffe8cdd,
-                  mid_compute_37cbf5ef19b07742,
-                  mid_compute_f98b4f489decc901,
-                  mid_getName_1c1fa1e935d6cdcf,
-                  mid_getType_8397a286d982b383,
-                  mid_isAMaximumProbabilityOfCollisionMethod_9ab94ac1dc23b105,
+                  mid_compute_9bd40bcce0b8580a,
+                  mid_compute_a74d1a5b8aba9c6b,
+                  mid_compute_387945137ebab778,
+                  mid_compute_645a7d53eefd07fb,
+                  mid_compute_0110eb01e8b95b31,
+                  mid_compute_d71c9b0a2a1fa7ea,
+                  mid_compute_0fd9615f2c436717,
+                  mid_compute_fabda52a93cfd27a,
+                  mid_compute_cafc4c7dc2b32f50,
+                  mid_compute_d29d85bd12a1fcb0,
+                  mid_compute_5f7c6ee4f69e1aee,
+                  mid_compute_7eae8d8112e983e4,
+                  mid_compute_8edb355cf7d54cf6,
+                  mid_compute_95dcab374babccc7,
+                  mid_compute_f8fb786438f60361,
+                  mid_compute_fde1912ff911659c,
+                  mid_compute_426d335df18e2f21,
+                  mid_getName_d2c8eb4129821f0e,
+                  mid_getType_592990a91429410c,
+                  mid_isAMaximumProbabilityOfCollisionMethod_eee3de00fe971136,
                   max_mid
                 };
 

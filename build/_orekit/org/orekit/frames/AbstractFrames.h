@@ -3,25 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace frames {
-      class Frames;
-      class VersionedITRF;
-      class Predefined;
-      class Frame;
-      class FactoryManagedFrame;
-      class ITRFVersion;
-    }
-    namespace utils {
-      class IERSConventions;
-    }
-    namespace time {
-      class UT1Scale;
-      class TimeScales;
-    }
-  }
-}
 namespace java {
   namespace util {
     namespace function {
@@ -30,6 +11,25 @@ namespace java {
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace frames {
+      class Predefined;
+      class VersionedITRF;
+      class FactoryManagedFrame;
+      class Frames;
+      class ITRFVersion;
+      class Frame;
+    }
+    namespace utils {
+      class IERSConventions;
+    }
+    namespace time {
+      class UT1Scale;
+      class TimeScales;
+    }
   }
 }
 template<class T> class JArray;
@@ -41,29 +41,29 @@ namespace org {
       class AbstractFrames : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_49fbab41a915bed1,
-          mid_buildUncachedITRF_de25c2adba5180fc,
-          mid_getCIRF_b8f4087626aff39a,
-          mid_getEME2000_38d89ffeb32a6f21,
-          mid_getEcliptic_15d291dcc172f59b,
-          mid_getFrame_acd75386f33c2984,
-          mid_getGCRF_2c51111cc6894ba1,
-          mid_getGTOD_816956b542562f07,
-          mid_getGTOD_b8f4087626aff39a,
-          mid_getICRF_2c51111cc6894ba1,
-          mid_getITRF_b8f4087626aff39a,
-          mid_getITRF_2e00eadcfbf4fef8,
-          mid_getITRFEquinox_b8f4087626aff39a,
-          mid_getMOD_5e99e4a3c4469bb0,
-          mid_getMOD_816956b542562f07,
-          mid_getPZ9011_b8f4087626aff39a,
-          mid_getTEME_38d89ffeb32a6f21,
-          mid_getTIRF_5e99e4a3c4469bb0,
-          mid_getTIRF_b8f4087626aff39a,
-          mid_getTOD_816956b542562f07,
-          mid_getTOD_b8f4087626aff39a,
-          mid_getVeis1950_38d89ffeb32a6f21,
-          mid_getTimeScales_d1a571f8b033e2d3,
+          mid_init$_d68fa0e4fc7f6cf2,
+          mid_buildUncachedITRF_b3c0898cffa17768,
+          mid_getCIRF_84e014d661e18862,
+          mid_getEME2000_449c13dc13254059,
+          mid_getEcliptic_6c55c8e7e159d424,
+          mid_getFrame_2914574e34e220d9,
+          mid_getGCRF_cb151471db4570f0,
+          mid_getGTOD_7aa0049260c7fcad,
+          mid_getGTOD_84e014d661e18862,
+          mid_getICRF_cb151471db4570f0,
+          mid_getITRF_84e014d661e18862,
+          mid_getITRF_8580ffa0332936c5,
+          mid_getITRFEquinox_84e014d661e18862,
+          mid_getMOD_d7c1cc155dc219ec,
+          mid_getMOD_7aa0049260c7fcad,
+          mid_getPZ9011_84e014d661e18862,
+          mid_getTEME_449c13dc13254059,
+          mid_getTIRF_d7c1cc155dc219ec,
+          mid_getTIRF_84e014d661e18862,
+          mid_getTOD_7aa0049260c7fcad,
+          mid_getTOD_84e014d661e18862,
+          mid_getVeis1950_449c13dc13254059,
+          mid_getTimeScales_796d09eb9f0f96ef,
           max_mid
         };
 

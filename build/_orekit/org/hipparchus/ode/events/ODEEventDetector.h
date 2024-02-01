@@ -6,10 +6,10 @@
 namespace org {
   namespace hipparchus {
     namespace analysis {
+      class UnivariateFunction;
       namespace solvers {
         class BracketedUnivariateSolver;
       }
-      class UnivariateFunction;
     }
     namespace ode {
       namespace events {
@@ -35,12 +35,12 @@ namespace org {
         class ODEEventDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_g_038ef328b98483a2,
-            mid_getHandler_7cbaa83091baafae,
-            mid_getMaxCheckInterval_ba458ca302d83bff,
-            mid_getMaxIterationCount_55546ef6a647f39b,
-            mid_getSolver_18aebf44ec9df73a,
-            mid_init_a7556bd72cab73f1,
+            mid_g_c9c83b182b4bb0ba,
+            mid_getHandler_6b3d990c0b31c333,
+            mid_getMaxCheckInterval_356086c80be497a8,
+            mid_getMaxIterationCount_d6ab429752e7c267,
+            mid_getSolver_8fd4d30625048ab7,
+            mid_init_25005604bcb94d07,
             max_mid
           };
 

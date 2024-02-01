@@ -25,8 +25,8 @@ namespace org {
         class Ulp : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_value_04fd0666b613d2ab,
+            mid_init$_ff7cb6c242604316,
+            mid_value_bf28ed64d6e8576b,
             max_mid
           };
 

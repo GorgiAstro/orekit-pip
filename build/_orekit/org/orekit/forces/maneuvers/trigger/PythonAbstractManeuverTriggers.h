@@ -5,10 +5,10 @@
 
 namespace java {
   namespace util {
-    class List;
     namespace stream {
       class Stream;
     }
+    class List;
   }
   namespace lang {
     class Throwable;
@@ -43,15 +43,15 @@ namespace org {
           class PythonAbstractManeuverTriggers : public ::org::orekit::forces::maneuvers::trigger::AbstractManeuverTriggers {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_getEventDetectors_14e21bf777ff0ccf,
-              mid_getFieldEventDetectors_283ad33581c047a0,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_isFiringOnInitialState_4ef3ef34329e6316,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_init$_ff7cb6c242604316,
+              mid_finalize_ff7cb6c242604316,
+              mid_getEventDetectors_11e4ca8182c1933d,
+              mid_getFieldEventDetectors_d3db121d9deb0312,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_isFiringOnInitialState_145801f71fbbc869,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
               max_mid
             };
 

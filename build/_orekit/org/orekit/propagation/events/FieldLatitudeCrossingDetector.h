@@ -32,12 +32,12 @@ namespace org {
         class FieldLatitudeCrossingDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_5aa113c8ea2c3853,
-            mid_init$_3a020ed83ff3efcb,
-            mid_g_2203631097e94c79,
-            mid_getBody_dd5c4288aa5a3dd8,
-            mid_getLatitude_b74f83833fdad017,
-            mid_create_5169047ad44c10c0,
+            mid_init$_2d2108d21f1071ae,
+            mid_init$_7fe9da35cd6952f4,
+            mid_g_ac6fccc69d1b2d9e,
+            mid_getBody_dc8275c31111ad9c,
+            mid_getLatitude_9981f74b2d109da6,
+            mid_create_486415863a3e51f9,
             max_mid
           };
 

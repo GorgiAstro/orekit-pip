@@ -12,9 +12,9 @@ namespace org {
       namespace semianalytical {
         namespace dsst {
           namespace forces {
-            class FieldShortPeriodTerms;
             class DSSTForceModel;
             class ShortPeriodTerms;
+            class FieldShortPeriodTerms;
           }
           namespace utilities {
             class FieldAuxiliaryElements;
@@ -22,15 +22,15 @@ namespace org {
           }
         }
       }
-      class FieldSpacecraftState;
       class PropagationType;
+      class FieldSpacecraftState;
       class SpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriver;
     }
     namespace bodies {
       class CelestialBody;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
   namespace hipparchus {
@@ -58,16 +58,16 @@ namespace org {
             class DSSTThirdBody : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_9fdcf330e0068bec,
-                mid_getBody_5df52e80cbb5eb85,
-                mid_getMeanElementRate_0483a0f94731abef,
-                mid_getMeanElementRate_7d3eb19aa1e75a63,
-                mid_getParametersDrivers_e62d3bb06d56d7e3,
-                mid_initializeShortPeriodTerms_6fb0c582e8925f89,
-                mid_initializeShortPeriodTerms_3144241334d46411,
-                mid_registerAttitudeProvider_8e4d3ea100bc0095,
-                mid_updateShortPeriodTerms_5401e749436ec3b7,
-                mid_updateShortPeriodTerms_62f1ad39eb6f1276,
+                mid_init$_3f064820e25fd3a0,
+                mid_getBody_a1474f5cfab89b5e,
+                mid_getMeanElementRate_43ba9f5eaba95dbb,
+                mid_getMeanElementRate_3eb9526d5d611f82,
+                mid_getParametersDrivers_d751c1a57012b438,
+                mid_initializeShortPeriodTerms_1d563346dd4410fc,
+                mid_initializeShortPeriodTerms_29410e2fe048cdd6,
+                mid_registerAttitudeProvider_fddd0a7d9f33bafa,
+                mid_updateShortPeriodTerms_49390f5c28b648db,
+                mid_updateShortPeriodTerms_61d4f27408b30d56,
                 max_mid
               };
 

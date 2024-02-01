@@ -35,10 +35,10 @@ namespace org {
         class UnscentedKalmanEstimator : public ::org::orekit::estimation::sequential::AbstractKalmanEstimator {
          public:
           enum {
-            mid_estimationStep_9988f04cca62e28c,
-            mid_processMeasurements_3bf4a9b896d49678,
-            mid_setObserver_578d9ba5b3b8b483,
-            mid_getKalmanEstimation_10690b877ea302f7,
+            mid_estimationStep_a6cfa97380122d5a,
+            mid_processMeasurements_87799e9d173bae53,
+            mid_setObserver_2002169216358a3a,
+            mid_getKalmanEstimation_e73dd18a212e3cd0,
             max_mid
           };
 

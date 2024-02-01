@@ -12,22 +12,22 @@ namespace java {
   }
 }
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace estimation {
       namespace measurements {
         class GroundStation;
       }
     }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
+    namespace utils {
+      class ParameterDriver;
+    }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -41,10 +41,10 @@ namespace org {
           class BaseRangeRateTroposphericDelayModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_rangeRateErrorTroposphericModel_b8971448fff75978,
-              mid_rangeRateErrorTroposphericModel_9a2cbda6eb51ddd8,
-              mid_getTropoModel_3c029eb579d11318,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_rangeRateErrorTroposphericModel_29b53a0d2fc3b115,
+              mid_rangeRateErrorTroposphericModel_e648598eaaa5f94d,
+              mid_getTropoModel_793e0852d1c6d57c,
               max_mid
             };
 

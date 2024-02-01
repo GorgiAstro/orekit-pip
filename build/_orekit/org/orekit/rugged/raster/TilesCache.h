@@ -8,8 +8,8 @@ namespace org {
     namespace rugged {
       namespace raster {
         class TileFactory;
-        class Tile;
         class TileUpdater;
+        class Tile;
       }
     }
   }
@@ -29,8 +29,8 @@ namespace org {
         class TilesCache : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_c48a31ee49c73abf,
-            mid_getTile_5edab88b577f0831,
+            mid_init$_c14b32994c471389,
+            mid_getTile_de8760a8a4fbd57b,
             max_mid
           };
 

@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -32,6 +24,14 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -43,12 +43,12 @@ namespace org {
           class CombinedObservationData : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_50cb3dba42c774b2,
-              mid_getCombinationType_17afe4fde34d17a8,
-              mid_getCombinedMHzFrequency_b74f83833fdad017,
-              mid_getMeasurementType_8c0a6decf9468215,
-              mid_getUsedObservationData_e62d3bb06d56d7e3,
-              mid_getValue_b74f83833fdad017,
+              mid_init$_b05419e16af2bb8e,
+              mid_getCombinationType_e3548afeab4652b3,
+              mid_getCombinedMHzFrequency_9981f74b2d109da6,
+              mid_getMeasurementType_0c31fda13b2c1960,
+              mid_getUsedObservationData_d751c1a57012b438,
+              mid_getValue_9981f74b2d109da6,
               max_mid
             };
 

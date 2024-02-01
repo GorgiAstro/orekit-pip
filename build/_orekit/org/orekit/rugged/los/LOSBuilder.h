@@ -3,7 +3,25 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
+  namespace orekit {
+    namespace rugged {
+      namespace los {
+        class LOSBuilder;
+        class TimeDependentLOS;
+        class TimeIndependentLOSTransform;
+        class LOSTransform;
+      }
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -12,24 +30,6 @@ namespace org {
         }
       }
     }
-  }
-  namespace orekit {
-    namespace rugged {
-      namespace los {
-        class TimeDependentLOS;
-        class LOSTransform;
-        class LOSBuilder;
-        class TimeIndependentLOSTransform;
-      }
-    }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -42,10 +42,10 @@ namespace org {
         class LOSBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0e7c3032c7c93ed3,
-            mid_addTransform_8bafb16e6f4ae7cb,
-            mid_addTransform_14f0023edd2a075a,
-            mid_build_7b422055bdf6ad4c,
+            mid_init$_aa335fea495d60e0,
+            mid_addTransform_cd9ed225e90c435e,
+            mid_addTransform_b4678103b0e536e2,
+            mid_build_5623a40dfea509c3,
             max_mid
           };
 

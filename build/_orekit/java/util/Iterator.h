@@ -16,9 +16,9 @@ namespace java {
     class Iterator : public ::java::lang::Object {
      public:
       enum {
-        mid_hasNext_9ab94ac1dc23b105,
-        mid_next_541690f9ee81d3ad,
-        mid_remove_a1fa5dae97ea5ed2,
+        mid_hasNext_eee3de00fe971136,
+        mid_next_704a5bee58538972,
+        mid_remove_ff7cb6c242604316,
         max_mid
       };
 

@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace utils {
-      class FieldPVCoordinates;
       class PVCoordinates;
+      class FieldPVCoordinates;
     }
     namespace frames {
       namespace encounter {
@@ -33,10 +33,10 @@ namespace org {
         class EncounterLOFType : public ::java::lang::Enum {
          public:
           enum {
-            mid_getFrame_ac16d6afadb4c631,
-            mid_getFrame_b8e27c184b1c01f4,
-            mid_valueOf_4789c47c63e254ea,
-            mid_values_4657dfc3f058fcd8,
+            mid_getFrame_abab9a391d13d41e,
+            mid_getFrame_70acedcccb878876,
+            mid_valueOf_cedde1d4636ff382,
+            mid_values_b60c5fb313152ef2,
             max_mid
           };
 

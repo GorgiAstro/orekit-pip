@@ -7,16 +7,16 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace definitions {
+          class TimeConverter;
+        }
         namespace ndm {
           namespace odm {
             namespace ocm {
-              class ManeuverFieldType;
               class OrbitManeuver;
+              class ManeuverFieldType;
             }
           }
-        }
-        namespace definitions {
-          class TimeConverter;
         }
         namespace utils {
           class ContextBinding;
@@ -49,13 +49,13 @@ namespace org {
               class ManeuverFieldType : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_checkUnit_730245a45ba30f8c,
-                  mid_getUnit_6466188dbb1eea22,
-                  mid_isTime_9ab94ac1dc23b105,
-                  mid_outputField_68f42d904f396276,
-                  mid_process_2d87f7458cd57d50,
-                  mid_valueOf_422bdb88ed017510,
-                  mid_values_13eba1f9c3416306,
+                  mid_checkUnit_a7320f681e0b63b1,
+                  mid_getUnit_b1bb36679ea369c9,
+                  mid_isTime_eee3de00fe971136,
+                  mid_outputField_d27e637f2e2af68f,
+                  mid_process_1065b53e148346a5,
+                  mid_valueOf_3eb8bba892d89229,
+                  mid_values_010c404fa2b52dbb,
                   max_mid
                 };
 

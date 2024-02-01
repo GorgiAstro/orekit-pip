@@ -3,13 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -24,6 +17,13 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+    class String;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -34,16 +34,16 @@ namespace org {
         class PythonAdditionalDerivativesProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_combinedDerivatives_f7e02f1d7093fbbb,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getDimension_55546ef6a647f39b,
-            mid_getName_1c1fa1e935d6cdcf,
-            mid_init_2d7f9a496c7e9781,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
-            mid_yields_97df9017614a1945,
+            mid_init$_ff7cb6c242604316,
+            mid_combinedDerivatives_3642c368f508585f,
+            mid_finalize_ff7cb6c242604316,
+            mid_getDimension_d6ab429752e7c267,
+            mid_getName_d2c8eb4129821f0e,
+            mid_init_14deaae988292d42,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
+            mid_yields_34f098c1d43e614c,
             max_mid
           };
 

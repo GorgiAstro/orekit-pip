@@ -3,19 +3,31 @@
 
 #include "org/orekit/forces/drag/AbstractDragForceModel.h"
 
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+      class TimeScale;
+      class FieldAbsoluteDate;
+    }
     namespace models {
       namespace earth {
         namespace atmosphere {
           class Atmosphere;
         }
       }
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-      class TimeScale;
     }
     namespace propagation {
       namespace events {
@@ -26,9 +38,9 @@ namespace org {
       class SpacecraftState;
     }
     namespace utils {
-      class ParameterDriver;
-      class TimeSpanMap$Span;
       class TimeSpanMap;
+      class TimeSpanMap$Span;
+      class ParameterDriver;
     }
     namespace forces {
       namespace drag {
@@ -37,28 +49,16 @@ namespace org {
     }
   }
   namespace hipparchus {
+    class Field;
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
-    class Field;
     class CalculusFieldElement;
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
-    class String;
-  }
-  namespace util {
-    namespace stream {
-      class Stream;
-    }
-    class List;
   }
 }
 template<class T> class JArray;
@@ -71,21 +71,21 @@ namespace org {
         class TimeSpanDragForce : public ::org::orekit::forces::drag::AbstractDragForceModel {
          public:
           enum {
-            mid_init$_9d51f29c5e5b1e8b,
-            mid_init$_f18a516710107195,
-            mid_acceleration_0ce449c67b5ffd9c,
-            mid_acceleration_20bded0292328743,
-            mid_addDragSensitiveValidAfter_a24566f3f23eb049,
-            mid_addDragSensitiveValidBefore_a24566f3f23eb049,
-            mid_extractDragSensitiveRange_2917731b47ff4d6e,
-            mid_extractParameters_5417afc1212505b6,
-            mid_extractParameters_afb90c8392ccc216,
-            mid_getDragSensitive_8dce189cfa5cc5ad,
-            mid_getDragSensitiveSpan_d9699fc4c4f11b26,
-            mid_getEventDetectors_14e21bf777ff0ccf,
-            mid_getFieldEventDetectors_283ad33581c047a0,
-            mid_getFirstSpan_5290b219f9ebfd63,
-            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_init$_f2f0fa9d3d8aa425,
+            mid_init$_508739e3461beebd,
+            mid_acceleration_5e147f44c28a35c9,
+            mid_acceleration_9816b8f76e94356a,
+            mid_addDragSensitiveValidAfter_f34a04b649f6c1dc,
+            mid_addDragSensitiveValidBefore_f34a04b649f6c1dc,
+            mid_extractDragSensitiveRange_d943d113c5f78644,
+            mid_extractParameters_f6f6c8fcf1e496fb,
+            mid_extractParameters_f4e70a6b1a1cf5f6,
+            mid_getDragSensitive_7ecdf335bc4f7d48,
+            mid_getDragSensitiveSpan_7b19e06f3155cde2,
+            mid_getEventDetectors_11e4ca8182c1933d,
+            mid_getFieldEventDetectors_d3db121d9deb0312,
+            mid_getFirstSpan_ea49fa2ad441b95d,
+            mid_getParametersDrivers_d751c1a57012b438,
             max_mid
           };
 
@@ -106,8 +106,8 @@ namespace org {
           TimeSpanDragForce(const ::org::orekit::models::earth::atmosphere::Atmosphere &, const ::org::orekit::forces::drag::DragSensitive &);
           TimeSpanDragForce(const ::org::orekit::models::earth::atmosphere::Atmosphere &, const ::org::orekit::forces::drag::DragSensitive &, const ::org::orekit::time::TimeScale &);
 
-          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
+          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           void addDragSensitiveValidAfter(const ::org::orekit::forces::drag::DragSensitive &, const ::org::orekit::time::AbsoluteDate &) const;
           void addDragSensitiveValidBefore(const ::org::orekit::forces::drag::DragSensitive &, const ::org::orekit::time::AbsoluteDate &) const;
           ::org::orekit::utils::TimeSpanMap extractDragSensitiveRange(const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::time::AbsoluteDate &) const;

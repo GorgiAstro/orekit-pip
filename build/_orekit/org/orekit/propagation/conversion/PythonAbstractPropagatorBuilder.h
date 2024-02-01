@@ -3,32 +3,6 @@
 
 #include "org/orekit/propagation/conversion/AbstractPropagatorBuilder.h"
 
-namespace org {
-  namespace orekit {
-    namespace utils {
-      class ParameterDriversList;
-    }
-    namespace estimation {
-      namespace leastsquares {
-        class AbstractBatchLSModel;
-        class ModelObserver;
-      }
-      namespace measurements {
-        class ObservedMeasurement;
-      }
-    }
-    namespace orbits {
-      class Orbit;
-      class PositionAngleType;
-    }
-    namespace propagation {
-      class Propagator;
-      namespace conversion {
-        class PropagatorBuilder;
-      }
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -37,6 +11,32 @@ namespace java {
     class Throwable;
     class Class;
     class Object;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace conversion {
+        class PropagatorBuilder;
+      }
+      class Propagator;
+    }
+    namespace utils {
+      class ParameterDriversList;
+    }
+    namespace orbits {
+      class PositionAngleType;
+      class Orbit;
+    }
+    namespace estimation {
+      namespace measurements {
+        class ObservedMeasurement;
+      }
+      namespace leastsquares {
+        class AbstractBatchLSModel;
+        class ModelObserver;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -49,14 +49,14 @@ namespace org {
         class PythonAbstractPropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_5827b2bfd5d9ccd9,
-            mid_buildLeastSquaresModel_1a4dd1f247347a8f,
-            mid_buildPropagator_708cc138373fff03,
-            mid_copy_563e3d88178dadb8,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_4cf869ebdedb5ece,
+            mid_buildLeastSquaresModel_434804ad6c6cc8a8,
+            mid_buildPropagator_dbf963913bad78cb,
+            mid_copy_3ae868590960a3fb,
+            mid_finalize_ff7cb6c242604316,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

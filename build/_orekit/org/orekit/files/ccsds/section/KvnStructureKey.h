@@ -40,9 +40,9 @@ namespace org {
           class KvnStructureKey : public ::java::lang::Enum {
            public:
             enum {
-              mid_process_c095c1ee2f4787f7,
-              mid_valueOf_e4fc3efa40952995,
-              mid_values_7d8abb7c3fbe4d9c,
+              mid_process_7dcff8364717845d,
+              mid_valueOf_fd55f36d1cf9d170,
+              mid_values_be224d2d828c5e16,
               max_mid
             };
 

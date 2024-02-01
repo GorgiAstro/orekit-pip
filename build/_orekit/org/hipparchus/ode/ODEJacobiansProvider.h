@@ -14,12 +14,12 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
+    namespace ode {
+      class NamedParameterJacobianProvider;
+    }
     namespace exception {
       class MathIllegalArgumentException;
       class MathIllegalStateException;
-    }
-    namespace ode {
-      class NamedParameterJacobianProvider;
     }
   }
 }
@@ -32,10 +32,10 @@ namespace org {
       class ODEJacobiansProvider : public ::org::hipparchus::ode::OrdinaryDifferentialEquation {
        public:
         enum {
-          mid_computeMainStateJacobian_48051c73015abecf,
-          mid_computeParameterJacobian_c668528785bd21ab,
-          mid_getParametersNames_e62d3bb06d56d7e3,
-          mid_isSupported_cde6b28e15c96b75,
+          mid_computeMainStateJacobian_1548e8a2885a1cd0,
+          mid_computeParameterJacobian_b64c18f49b11902d,
+          mid_getParametersNames_d751c1a57012b438,
+          mid_isSupported_df4c65b2aede5c41,
           max_mid
         };
 

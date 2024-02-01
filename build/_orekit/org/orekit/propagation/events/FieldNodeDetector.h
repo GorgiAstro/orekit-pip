@@ -34,11 +34,11 @@ namespace org {
         class FieldNodeDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_891556684acdd59d,
-            mid_init$_9904853b43bda69b,
-            mid_g_2203631097e94c79,
-            mid_getFrame_2c51111cc6894ba1,
-            mid_create_75ef0f4eb41b3553,
+            mid_init$_3aebf44bf40fb6c1,
+            mid_init$_bf31c9574069ec34,
+            mid_g_ac6fccc69d1b2d9e,
+            mid_getFrame_cb151471db4570f0,
+            mid_create_00687c75c1763127,
             max_mid
           };
 

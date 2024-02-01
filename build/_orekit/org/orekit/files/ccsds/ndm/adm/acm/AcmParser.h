@@ -5,15 +5,19 @@
 
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataContext;
+      class DataSource;
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
           namespace adm {
-            class AdmHeader;
             namespace acm {
-              class AcmParser;
               class Acm;
+              class AcmParser;
             }
+            class AdmHeader;
           }
           class ParsedUnitsBehavior;
         }
@@ -30,10 +34,6 @@ namespace org {
     }
     namespace utils {
       class IERSConventions;
-    }
-    namespace data {
-      class DataSource;
-      class DataContext;
     }
   }
 }
@@ -59,20 +59,20 @@ namespace org {
               class AcmParser : public ::org::orekit::files::ccsds::ndm::adm::AdmParser {
                public:
                 enum {
-                  mid_build_c626d74d226d9e14,
-                  mid_finalizeData_9ab94ac1dc23b105,
-                  mid_finalizeHeader_9ab94ac1dc23b105,
-                  mid_finalizeMetadata_9ab94ac1dc23b105,
-                  mid_getHeader_beec2990b8b4fe1e,
-                  mid_getSpecialXmlElementsBuilders_810bed48fafb0b9a,
-                  mid_inData_9ab94ac1dc23b105,
-                  mid_inHeader_9ab94ac1dc23b105,
-                  mid_inMetadata_9ab94ac1dc23b105,
-                  mid_parse_ba9209e328956daf,
-                  mid_prepareData_9ab94ac1dc23b105,
-                  mid_prepareHeader_9ab94ac1dc23b105,
-                  mid_prepareMetadata_9ab94ac1dc23b105,
-                  mid_reset_28163d47221b3cf7,
+                  mid_build_f1675a7d93255dee,
+                  mid_finalizeData_eee3de00fe971136,
+                  mid_finalizeHeader_eee3de00fe971136,
+                  mid_finalizeMetadata_eee3de00fe971136,
+                  mid_getHeader_6b8c194dac7b9184,
+                  mid_getSpecialXmlElementsBuilders_dbcb8bbac6b35e0d,
+                  mid_inData_eee3de00fe971136,
+                  mid_inHeader_eee3de00fe971136,
+                  mid_inMetadata_eee3de00fe971136,
+                  mid_parse_d60ae6cbf486e902,
+                  mid_prepareData_eee3de00fe971136,
+                  mid_prepareHeader_eee3de00fe971136,
+                  mid_prepareMetadata_eee3de00fe971136,
+                  mid_reset_a23f5f7531d9b583,
                   max_mid
                 };
 

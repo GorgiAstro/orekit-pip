@@ -6,16 +6,16 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
+      class MathRuntimeException;
       class NullArgumentException;
       class MathIllegalArgumentException;
-      class MathRuntimeException;
     }
     namespace linear {
+      class FieldMatrix;
       class ArrayFieldVector;
+      class FieldVector;
       class FieldVectorPreservingVisitor;
       class FieldVectorChangingVisitor;
-      class FieldMatrix;
-      class FieldVector;
     }
     class Field;
     class FieldElement;
@@ -39,73 +39,73 @@ namespace org {
       class ArrayFieldVector : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_17c98b43bf9b6f78,
-          mid_init$_02ab84aa7626616d,
-          mid_init$_a8d98eabf09c8ea2,
-          mid_init$_1486600bdee8133c,
-          mid_init$_481de9c265f62927,
-          mid_init$_9b3d853322fd9fe9,
-          mid_init$_725c6c034d3c6989,
-          mid_init$_a1e449a87301face,
-          mid_init$_3eaa072375f129cf,
-          mid_init$_3e5e9beae9eb3b27,
-          mid_init$_9127f23cedcce237,
-          mid_init$_60da158123e92bc0,
-          mid_init$_a09aa6877659ff5b,
-          mid_init$_0076bcc9a075d436,
-          mid_init$_33f797f484c0333b,
-          mid_init$_e9bbcf3500fc779d,
-          mid_add_0875bb37f8462e6f,
-          mid_add_0c912ec1e9dd9ed7,
-          mid_append_0875bb37f8462e6f,
-          mid_append_9105020ef45172b7,
-          mid_append_0c912ec1e9dd9ed7,
-          mid_copy_b8b88195d3642875,
-          mid_dotProduct_ecb2c24e32602813,
-          mid_dotProduct_8b189f525aa86de4,
-          mid_ebeDivide_0875bb37f8462e6f,
-          mid_ebeDivide_0c912ec1e9dd9ed7,
-          mid_ebeMultiply_0875bb37f8462e6f,
-          mid_ebeMultiply_0c912ec1e9dd9ed7,
-          mid_equals_460c5e2d9d51c6cc,
-          mid_getDataRef_ae860dc2d782e386,
-          mid_getDimension_55546ef6a647f39b,
-          mid_getEntry_6c5caf579ccf9ce5,
-          mid_getField_04d1f63e17d5c5d4,
-          mid_getSubVector_b42960a5471f10ed,
-          mid_hashCode_55546ef6a647f39b,
-          mid_mapAdd_9105020ef45172b7,
-          mid_mapAddToSelf_9105020ef45172b7,
-          mid_mapDivide_9105020ef45172b7,
-          mid_mapDivideToSelf_9105020ef45172b7,
-          mid_mapInv_b8b88195d3642875,
-          mid_mapInvToSelf_b8b88195d3642875,
-          mid_mapMultiply_9105020ef45172b7,
-          mid_mapMultiplyToSelf_9105020ef45172b7,
-          mid_mapSubtract_9105020ef45172b7,
-          mid_mapSubtractToSelf_9105020ef45172b7,
-          mid_outerProduct_6b83ce54dd732da9,
-          mid_outerProduct_8dfd3dc5a728ee60,
-          mid_projection_0875bb37f8462e6f,
-          mid_projection_0c912ec1e9dd9ed7,
-          mid_set_8d8d85cc6e14d2f7,
-          mid_set_5ca7010e88d42feb,
-          mid_setEntry_3e5e9beae9eb3b27,
-          mid_setSubVector_cd62bfbc5992c85f,
-          mid_subtract_0875bb37f8462e6f,
-          mid_subtract_0c912ec1e9dd9ed7,
-          mid_toArray_ae860dc2d782e386,
-          mid_toString_1c1fa1e935d6cdcf,
-          mid_walkInDefaultOrder_902d02ebed1c011e,
-          mid_walkInDefaultOrder_7d08c02ef3ca9df3,
-          mid_walkInDefaultOrder_07dcd460c79c870d,
-          mid_walkInDefaultOrder_5b32a72c59f76929,
-          mid_walkInOptimizedOrder_902d02ebed1c011e,
-          mid_walkInOptimizedOrder_7d08c02ef3ca9df3,
-          mid_walkInOptimizedOrder_07dcd460c79c870d,
-          mid_walkInOptimizedOrder_5b32a72c59f76929,
-          mid_checkVectorDimensions_44ed599e93e8a30c,
-          mid_checkVectorDimensions_a8d98eabf09c8ea2,
+          mid_init$_79693579cf1d6b54,
+          mid_init$_a44abdd035f01345,
+          mid_init$_fde30977c9ff1b4e,
+          mid_init$_fd889dd47d71a554,
+          mid_init$_bc7e8e596a7db6b1,
+          mid_init$_eb6f5cf36a8e5529,
+          mid_init$_4fe17ebc0e6c05cc,
+          mid_init$_739201e4a53e1d39,
+          mid_init$_8b3003ff2f930390,
+          mid_init$_9f3b43c70febfa9a,
+          mid_init$_399daf55ca8a95b8,
+          mid_init$_9230bfe415edd134,
+          mid_init$_39523216e5e5321b,
+          mid_init$_943a3f3b5b2861b9,
+          mid_init$_91a5b42771d1d19d,
+          mid_init$_7bf885858263907b,
+          mid_add_f34d04d7e9738aec,
+          mid_add_17fc5256c635037d,
+          mid_append_f34d04d7e9738aec,
+          mid_append_9576e351eaaaeeff,
+          mid_append_17fc5256c635037d,
+          mid_copy_1f378a1e2fafd4da,
+          mid_dotProduct_ff90c3d463ea7188,
+          mid_dotProduct_a09dcda702fd70fc,
+          mid_ebeDivide_f34d04d7e9738aec,
+          mid_ebeDivide_17fc5256c635037d,
+          mid_ebeMultiply_f34d04d7e9738aec,
+          mid_ebeMultiply_17fc5256c635037d,
+          mid_equals_72faff9b05f5ed5e,
+          mid_getDataRef_eb5e61f0a5585705,
+          mid_getDimension_d6ab429752e7c267,
+          mid_getEntry_bae57aba20797b29,
+          mid_getField_577649682b9910c1,
+          mid_getSubVector_ae1290ffdac268ed,
+          mid_hashCode_d6ab429752e7c267,
+          mid_mapAdd_9576e351eaaaeeff,
+          mid_mapAddToSelf_9576e351eaaaeeff,
+          mid_mapDivide_9576e351eaaaeeff,
+          mid_mapDivideToSelf_9576e351eaaaeeff,
+          mid_mapInv_1f378a1e2fafd4da,
+          mid_mapInvToSelf_1f378a1e2fafd4da,
+          mid_mapMultiply_9576e351eaaaeeff,
+          mid_mapMultiplyToSelf_9576e351eaaaeeff,
+          mid_mapSubtract_9576e351eaaaeeff,
+          mid_mapSubtractToSelf_9576e351eaaaeeff,
+          mid_outerProduct_700a885a9e53a5ec,
+          mid_outerProduct_352168969c692677,
+          mid_projection_f34d04d7e9738aec,
+          mid_projection_17fc5256c635037d,
+          mid_set_d6f1e197c99df44f,
+          mid_set_01f4d4941b9f371e,
+          mid_setEntry_9f3b43c70febfa9a,
+          mid_setSubVector_9f6a0cf723c2763b,
+          mid_subtract_f34d04d7e9738aec,
+          mid_subtract_17fc5256c635037d,
+          mid_toArray_eb5e61f0a5585705,
+          mid_toString_d2c8eb4129821f0e,
+          mid_walkInDefaultOrder_3fb4a592b41cc4b1,
+          mid_walkInDefaultOrder_da260c9bcd5c518a,
+          mid_walkInDefaultOrder_0dbecc976c2f23a8,
+          mid_walkInDefaultOrder_823ce1f3bedac44a,
+          mid_walkInOptimizedOrder_3fb4a592b41cc4b1,
+          mid_walkInOptimizedOrder_da260c9bcd5c518a,
+          mid_walkInOptimizedOrder_0dbecc976c2f23a8,
+          mid_walkInOptimizedOrder_823ce1f3bedac44a,
+          mid_checkVectorDimensions_8fd427ab23829bf5,
+          mid_checkVectorDimensions_fde30977c9ff1b4e,
           max_mid
         };
 
@@ -124,17 +124,17 @@ namespace org {
         ArrayFieldVector(const ::org::hipparchus::Field &);
         ArrayFieldVector(const ::org::hipparchus::linear::FieldVector &);
         ArrayFieldVector(const JArray< ::org::hipparchus::FieldElement > &, const JArray< ::org::hipparchus::FieldElement > &);
-        ArrayFieldVector(const ::org::hipparchus::linear::FieldVector &, const JArray< ::org::hipparchus::FieldElement > &);
-        ArrayFieldVector(const JArray< ::org::hipparchus::FieldElement > &, jboolean);
         ArrayFieldVector(const JArray< ::org::hipparchus::FieldElement > &, const ::org::hipparchus::linear::FieldVector &);
         ArrayFieldVector(const ::org::hipparchus::Field &, const JArray< ::org::hipparchus::FieldElement > &);
+        ArrayFieldVector(const ::org::hipparchus::linear::FieldVector &, const JArray< ::org::hipparchus::FieldElement > &);
+        ArrayFieldVector(const JArray< ::org::hipparchus::FieldElement > &, jboolean);
         ArrayFieldVector(const ArrayFieldVector &, jboolean);
         ArrayFieldVector(jint, const ::org::hipparchus::FieldElement &);
         ArrayFieldVector(const ::org::hipparchus::Field &, jint);
         ArrayFieldVector(const ::org::hipparchus::linear::FieldVector &, const ::org::hipparchus::linear::FieldVector &);
         ArrayFieldVector(const ::org::hipparchus::Field &, const JArray< ::org::hipparchus::FieldElement > &, const JArray< ::org::hipparchus::FieldElement > &);
-        ArrayFieldVector(const ::org::hipparchus::Field &, const JArray< ::org::hipparchus::FieldElement > &, jboolean);
         ArrayFieldVector(const JArray< ::org::hipparchus::FieldElement > &, jint, jint);
+        ArrayFieldVector(const ::org::hipparchus::Field &, const JArray< ::org::hipparchus::FieldElement > &, jboolean);
         ArrayFieldVector(const ::org::hipparchus::Field &, const JArray< ::org::hipparchus::FieldElement > &, jint, jint);
 
         ArrayFieldVector add(const ArrayFieldVector &) const;

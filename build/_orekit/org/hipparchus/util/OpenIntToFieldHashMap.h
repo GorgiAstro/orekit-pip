@@ -3,21 +3,21 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace util {
+      class OpenIntToFieldHashMap$Iterator;
+    }
+    class Field;
+    class FieldElement;
+  }
+}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    class Field;
-    namespace util {
-      class OpenIntToFieldHashMap$Iterator;
-    }
-    class FieldElement;
   }
 }
 template<class T> class JArray;
@@ -29,16 +29,16 @@ namespace org {
       class OpenIntToFieldHashMap : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_02ab84aa7626616d,
-          mid_init$_9127f23cedcce237,
-          mid_init$_937cc4000c29b170,
-          mid_init$_d0202e5a9d07b52f,
-          mid_containsKey_96f51a3f36d3a2a7,
-          mid_get_6c5caf579ccf9ce5,
-          mid_iterator_aa811963c8992453,
-          mid_put_475a3dc033b0d5a5,
-          mid_remove_6c5caf579ccf9ce5,
-          mid_size_55546ef6a647f39b,
+          mid_init$_a44abdd035f01345,
+          mid_init$_399daf55ca8a95b8,
+          mid_init$_caee123f69538f07,
+          mid_init$_b83a083268c0872f,
+          mid_containsKey_e24caac814db1df5,
+          mid_get_bae57aba20797b29,
+          mid_iterator_723bd8aa95f35d38,
+          mid_put_fafd637e37b17b35,
+          mid_remove_bae57aba20797b29,
+          mid_size_d6ab429752e7c267,
           max_mid
         };
 

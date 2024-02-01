@@ -8,8 +8,8 @@ namespace java {
     class List;
   }
   namespace io {
-    class InputStream;
     class IOException;
+    class InputStream;
   }
   namespace lang {
     class Throwable;
@@ -20,8 +20,8 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace time {
-      class OffsetModel;
       class UTCTAIOffsetsLoader$Parser;
+      class OffsetModel;
     }
   }
 }
@@ -34,12 +34,12 @@ namespace org {
       class PythonParser : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_parse_7b8887374449b257,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_init$_ff7cb6c242604316,
+          mid_finalize_ff7cb6c242604316,
+          mid_parse_cf69cc549132f899,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
           max_mid
         };
 

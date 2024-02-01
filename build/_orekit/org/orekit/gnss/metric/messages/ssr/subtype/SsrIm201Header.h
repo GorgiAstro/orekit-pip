@@ -21,11 +21,11 @@ namespace org {
               class SsrIm201Header : public ::org::orekit::gnss::metric::messages::ssr::SsrHeader {
                public:
                 enum {
-                  mid_init$_a1fa5dae97ea5ed2,
-                  mid_getNumberOfIonosphericLayers_55546ef6a647f39b,
-                  mid_getVtecQualityIndicator_b74f83833fdad017,
-                  mid_setNumberOfIonosphericLayers_44ed599e93e8a30c,
-                  mid_setVtecQualityIndicator_8ba9fe7a847cecad,
+                  mid_init$_ff7cb6c242604316,
+                  mid_getNumberOfIonosphericLayers_d6ab429752e7c267,
+                  mid_getVtecQualityIndicator_9981f74b2d109da6,
+                  mid_setNumberOfIonosphericLayers_8fd427ab23829bf5,
+                  mid_setVtecQualityIndicator_1ad26e8c8c0cd65b,
                   max_mid
                 };
 

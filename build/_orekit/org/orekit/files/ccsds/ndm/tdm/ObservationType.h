@@ -7,19 +7,19 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace ndm {
+          namespace tdm {
+            class ObservationsBlock;
+            class ObservationType;
+            class TdmMetadata;
+            class RangeUnitsConverter;
+          }
+        }
         namespace utils {
           namespace lexical {
             class ParseToken;
           }
           class ContextBinding;
-        }
-        namespace ndm {
-          namespace tdm {
-            class TdmMetadata;
-            class RangeUnitsConverter;
-            class ObservationsBlock;
-            class ObservationType;
-          }
         }
       }
     }
@@ -46,11 +46,11 @@ namespace org {
             class ObservationType : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_b7c3708fca3923a9,
-                mid_rawToSI_6d931ca20ddf48e9,
-                mid_siToRaw_6d931ca20ddf48e9,
-                mid_valueOf_fba48979799bc99c,
-                mid_values_2e0e613b66111033,
+                mid_process_43511ead8636d4af,
+                mid_rawToSI_a45d20a4a617d919,
+                mid_siToRaw_a45d20a4a617d919,
+                mid_valueOf_d58973731303ed31,
+                mid_values_70d16f61ee10d689,
                 max_mid
               };
 

@@ -16,12 +16,12 @@ namespace org {
     }
   }
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace ode {
       namespace events {
         class Action;
       }
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -40,8 +40,8 @@ namespace org {
           class FieldStopOnIncreasing : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_eventOccurred_839b1f3ec2c4fbf6,
+              mid_init$_ff7cb6c242604316,
+              mid_eventOccurred_094737664b369b83,
               max_mid
             };
 

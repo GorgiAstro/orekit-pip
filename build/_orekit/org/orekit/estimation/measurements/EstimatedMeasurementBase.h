@@ -5,18 +5,18 @@
 
 namespace org {
   namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class EstimatedMeasurementBase$Status;
-        class ObservedMeasurement;
-        class ComparableMeasurement;
-      }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace utils {
       class TimeStampedPVCoordinates;
     }
-    namespace time {
-      class AbsoluteDate;
+    namespace estimation {
+      namespace measurements {
+        class EstimatedMeasurementBase$Status;
+        class ComparableMeasurement;
+        class ObservedMeasurement;
+      }
     }
     namespace propagation {
       class SpacecraftState;
@@ -38,19 +38,19 @@ namespace org {
         class EstimatedMeasurementBase : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_1751916beaa99c3d,
-            mid_getCount_55546ef6a647f39b,
-            mid_getDate_c325492395d89b24,
-            mid_getEstimatedValue_25e1757a36c4dde2,
-            mid_getIteration_55546ef6a647f39b,
-            mid_getObservedMeasurement_a902d8547365f415,
-            mid_getObservedValue_25e1757a36c4dde2,
-            mid_getParticipants_352b3a127c5ae4d9,
-            mid_getStates_3807ff088e7ce821,
-            mid_getStatus_33e10db37ee6c7fc,
-            mid_getTimeOffset_b74f83833fdad017,
-            mid_setEstimatedValue_ab69da052b88f50c,
-            mid_setStatus_0feae6c71af38e56,
+            mid_init$_047f677485db459a,
+            mid_getCount_d6ab429752e7c267,
+            mid_getDate_80e11148db499dda,
+            mid_getEstimatedValue_be783177b060994b,
+            mid_getIteration_d6ab429752e7c267,
+            mid_getObservedMeasurement_2198162c3cb7b73f,
+            mid_getObservedValue_be783177b060994b,
+            mid_getParticipants_be2ee2a4bff8d504,
+            mid_getStates_598bcd058df23e79,
+            mid_getStatus_abe76ff55126e323,
+            mid_getTimeOffset_9981f74b2d109da6,
+            mid_setEstimatedValue_a71c45509eaf92d1,
+            mid_setStatus_ef35478ae2de02b1,
             max_mid
           };
 

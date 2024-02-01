@@ -3,22 +3,22 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-      class FieldTimeStamped;
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
     }
   }
-}
-namespace java {
   namespace lang {
     class IllegalStateException;
     class Class;
   }
-  namespace util {
-    namespace stream {
-      class Stream;
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class FieldTimeStamped;
+      class FieldAbsoluteDate;
     }
   }
 }
@@ -31,10 +31,10 @@ namespace org {
       class FieldTimeStampedCache : public ::java::lang::Object {
        public:
         enum {
-          mid_getEarliest_e7a49be0190c3b40,
-          mid_getLatest_e7a49be0190c3b40,
-          mid_getNeighbors_fe526c9a9cb8189c,
-          mid_getNeighborsSize_55546ef6a647f39b,
+          mid_getEarliest_eb7a4124bb25f40f,
+          mid_getLatest_eb7a4124bb25f40f,
+          mid_getNeighbors_9de8811782a2be8a,
+          mid_getNeighborsSize_d6ab429752e7c267,
           max_mid
         };
 

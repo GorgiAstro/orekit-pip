@@ -9,9 +9,9 @@ namespace org {
       namespace semianalytical {
         namespace dsst {
           namespace forces {
+            class DSSTJ2SquaredClosedFormContext;
             class J2SquaredModel;
             class FieldDSSTJ2SquaredClosedFormContext;
-            class DSSTJ2SquaredClosedFormContext;
           }
         }
       }
@@ -38,11 +38,11 @@ namespace org {
             class ZeisModel : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_computeC2Z_68d64f9221cf9db4,
-                mid_computeC2Z_1731376d8d9e3d78,
-                mid_computeMeanEquinoctialSecondOrderTerms_9e21a8e72403ad02,
-                mid_computeMeanEquinoctialSecondOrderTerms_4a156b883cf16de2,
+                mid_init$_ff7cb6c242604316,
+                mid_computeC2Z_f4a7c9be2f86cf2e,
+                mid_computeC2Z_18ff530150c50903,
+                mid_computeMeanEquinoctialSecondOrderTerms_639aa05fb2436ba0,
+                mid_computeMeanEquinoctialSecondOrderTerms_614616a5f895b25b,
                 max_mid
               };
 

@@ -4,15 +4,15 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace text {
-    class AttributedCharacterIterator$Attribute;
-  }
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
     class String;
+  }
+  namespace text {
+    class AttributedCharacterIterator$Attribute;
   }
 }
 template<class T> class JArray;
@@ -23,11 +23,11 @@ namespace java {
     class AttributedCharacterIterator$Attribute : public ::java::lang::Object {
      public:
       enum {
-        mid_equals_460c5e2d9d51c6cc,
-        mid_hashCode_55546ef6a647f39b,
-        mid_toString_1c1fa1e935d6cdcf,
-        mid_getName_1c1fa1e935d6cdcf,
-        mid_readResolve_541690f9ee81d3ad,
+        mid_equals_72faff9b05f5ed5e,
+        mid_hashCode_d6ab429752e7c267,
+        mid_toString_d2c8eb4129821f0e,
+        mid_getName_d2c8eb4129821f0e,
+        mid_readResolve_704a5bee58538972,
         max_mid
       };
 

@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class NullArgumentException;
       class MathIllegalArgumentException;
+      class NullArgumentException;
     }
     namespace analysis {
       namespace polynomials {
@@ -34,22 +34,22 @@ namespace org {
         class FieldPolynomialFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_8b0f7facc8a6a46e,
-            mid_add_3540fbdca36a9a2d,
-            mid_antiDerivative_8acb8b6f60143fc2,
-            mid_degree_55546ef6a647f39b,
-            mid_getCoefficients_883be608cfc68c26,
-            mid_getField_04d1f63e17d5c5d4,
-            mid_integrate_7cdd86319cd5fd7c,
-            mid_integrate_c6408fdce2cc6c1a,
-            mid_multiply_3540fbdca36a9a2d,
-            mid_negate_8acb8b6f60143fc2,
-            mid_polynomialDerivative_8acb8b6f60143fc2,
-            mid_subtract_3540fbdca36a9a2d,
-            mid_value_1d3e368d09a6f8a6,
-            mid_value_6e00dc5eb352fe51,
-            mid_evaluate_a753398bd4e84b37,
-            mid_differentiate_1cc99f34da9b4a7b,
+            mid_init$_77e61a645c496adc,
+            mid_add_0f4fc8a8c5782fe0,
+            mid_antiDerivative_ad0e69ebdd54e8db,
+            mid_degree_d6ab429752e7c267,
+            mid_getCoefficients_94ed2e0620f8833d,
+            mid_getField_577649682b9910c1,
+            mid_integrate_44b518e8c914a050,
+            mid_integrate_b5ecd7df9e053968,
+            mid_multiply_0f4fc8a8c5782fe0,
+            mid_negate_ad0e69ebdd54e8db,
+            mid_polynomialDerivative_ad0e69ebdd54e8db,
+            mid_subtract_0f4fc8a8c5782fe0,
+            mid_value_e3d0ff3c0584eadf,
+            mid_value_a3b854adede8eaaa,
+            mid_evaluate_ddfab947e3a8530e,
+            mid_differentiate_38b803e86c0bea36,
             max_mid
           };
 

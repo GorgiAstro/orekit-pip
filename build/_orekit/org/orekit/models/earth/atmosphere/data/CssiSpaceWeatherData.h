@@ -5,16 +5,12 @@
 
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataSource;
-      class DataProvidersManager;
-    }
     namespace models {
       namespace earth {
         namespace atmosphere {
           namespace data {
-            class CssiSpaceWeatherDataLoader;
             class CssiSpaceWeatherDataLoader$LineParameters;
+            class CssiSpaceWeatherDataLoader;
           }
         }
       }
@@ -22,6 +18,10 @@ namespace org {
     namespace time {
       class AbsoluteDate;
       class TimeScale;
+    }
+    namespace data {
+      class DataSource;
+      class DataProvidersManager;
     }
   }
 }
@@ -43,21 +43,21 @@ namespace org {
             class CssiSpaceWeatherData : public ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityData {
              public:
               enum {
-                mid_init$_734b91ac30d5f9b4,
-                mid_init$_4345325324782fee,
-                mid_init$_e81bfdc1c9755e45,
-                mid_init$_6e4602706fa15bb8,
-                mid_init$_41d9572e040b2cb7,
-                mid_init$_0b1b38f7a574edd9,
-                mid_init$_50c1be3b32e426fc,
-                mid_init$_542b9091dd152c5f,
-                mid_get24HoursKp_fd347811007a6ba3,
-                mid_getAp_27b701db396ade01,
-                mid_getAverageFlux_fd347811007a6ba3,
-                mid_getDailyFlux_fd347811007a6ba3,
-                mid_getInstantFlux_fd347811007a6ba3,
-                mid_getMeanFlux_fd347811007a6ba3,
-                mid_getThreeHourlyKP_fd347811007a6ba3,
+                mid_init$_105e1eadb709d9ac,
+                mid_init$_023df3a7dca17c03,
+                mid_init$_b9046d0be8f2b6e0,
+                mid_init$_bb4f7a68dbb10dc1,
+                mid_init$_ab02e9635eee86ad,
+                mid_init$_47fdbe1391664d0d,
+                mid_init$_572f119b81cef4a6,
+                mid_init$_f3a367214324f82d,
+                mid_get24HoursKp_209f08246d708042,
+                mid_getAp_9b63d19c31941c0f,
+                mid_getAverageFlux_209f08246d708042,
+                mid_getDailyFlux_209f08246d708042,
+                mid_getInstantFlux_209f08246d708042,
+                mid_getMeanFlux_209f08246d708042,
+                mid_getThreeHourlyKP_209f08246d708042,
                 max_mid
               };
 

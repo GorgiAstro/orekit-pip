@@ -3,6 +3,12 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -12,12 +18,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,9 +31,9 @@ namespace org {
           class Authentication : public ::java::lang::Enum {
            public:
             enum {
-              mid_getAuthentication_8094c921fde19441,
-              mid_valueOf_8094c921fde19441,
-              mid_values_681a9ac7b396cda5,
+              mid_getAuthentication_f3fe34d14a023c7b,
+              mid_valueOf_f3fe34d14a023c7b,
+              mid_values_2d37d87fc0e7939d,
               max_mid
             };
 

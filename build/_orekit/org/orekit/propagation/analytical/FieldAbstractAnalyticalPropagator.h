@@ -5,19 +5,19 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
+    namespace utils {
+      class ParameterDriversProvider;
+      class FieldPVCoordinatesProvider;
     }
     namespace propagation {
       namespace events {
         class FieldEventDetector;
       }
-      class FieldSpacecraftState;
       class FieldEphemerisGenerator;
+      class FieldSpacecraftState;
     }
-    namespace utils {
-      class FieldPVCoordinatesProvider;
-      class ParameterDriversProvider;
+    namespace time {
+      class FieldAbsoluteDate;
     }
   }
 }
@@ -39,17 +39,17 @@ namespace org {
         class FieldAbstractAnalyticalPropagator : public ::org::orekit::propagation::FieldAbstractPropagator {
          public:
           enum {
-            mid_addEventDetector_ca1d91eb6a3ce219,
-            mid_clearEventsDetectors_a1fa5dae97ea5ed2,
-            mid_getEphemerisGenerator_afe29c55086c638f,
-            mid_getEventsDetectors_cb666ea1a15f5210,
-            mid_getPvProvider_0d134b6a2504033c,
-            mid_propagate_44f88f604c4d00f1,
-            mid_acceptStep_5fb3751baed4c305,
-            mid_getMass_140b8964300ddedf,
-            mid_basicPropagate_70fecd201ca47d3b,
-            mid_resetIntermediateState_871885b409df9d57,
-            mid_propagateOrbit_f34a7a94e111b112,
+            mid_addEventDetector_bb8991c4a46cf56d,
+            mid_clearEventsDetectors_ff7cb6c242604316,
+            mid_getEphemerisGenerator_96c2c30a0b0ad9e4,
+            mid_getEventsDetectors_3bfef5c77ceb081a,
+            mid_getPvProvider_ed886b943b6de8d9,
+            mid_propagate_bcf793a6168805e3,
+            mid_getMass_cf010978f3c5a913,
+            mid_acceptStep_b3f40e8786c1fe19,
+            mid_propagateOrbit_78985b34baac5c8e,
+            mid_basicPropagate_fb689a9c0f30b938,
+            mid_resetIntermediateState_e90aea08a7a0ab5e,
             max_mid
           };
 

@@ -5,17 +5,17 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class StateJacobian;
-      class StateFunction;
-      class ParameterFunction;
-    }
     namespace attitudes {
       class AttitudeProvider;
     }
+    namespace utils {
+      class ParameterFunction;
+      class StateFunction;
+      class StateJacobian;
+    }
     namespace orbits {
-      class PositionAngleType;
       class OrbitType;
+      class PositionAngleType;
     }
   }
 }
@@ -33,8 +33,8 @@ namespace org {
       class Differentiation : public ::java::lang::Object {
        public:
         enum {
-          mid_differentiate_b30e3cbadf26f1f0,
-          mid_differentiate_882fb84cdb525bf3,
+          mid_differentiate_d501cf84d660fc39,
+          mid_differentiate_27efd4db76122faa,
           max_mid
         };
 

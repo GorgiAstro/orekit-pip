@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace linear {
       class RealMatrix;
       class RealVector;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,12 +27,12 @@ namespace org {
           class NonLinearEvolution : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_5f7165eb5b30b8f1,
-              mid_getCurrentState_3a10cc75bd070d84,
-              mid_getCurrentTime_b74f83833fdad017,
-              mid_getMeasurementJacobian_f77d745f2128c391,
-              mid_getProcessNoiseMatrix_f77d745f2128c391,
-              mid_getStateTransitionMatrix_f77d745f2128c391,
+              mid_init$_0f79bfbd7ed738c5,
+              mid_getCurrentState_92d7e8d8d3f1dfcf,
+              mid_getCurrentTime_9981f74b2d109da6,
+              mid_getMeasurementJacobian_b2eebabce70526d8,
+              mid_getProcessNoiseMatrix_b2eebabce70526d8,
+              mid_getStateTransitionMatrix_b2eebabce70526d8,
               max_mid
             };
 

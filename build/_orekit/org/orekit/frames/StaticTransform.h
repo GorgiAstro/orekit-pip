@@ -8,20 +8,20 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
           class Line;
           class Rotation;
+          class Vector3D;
         }
       }
     }
   }
   namespace orekit {
-    namespace frames {
-      class StaticTransform;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace frames {
+      class StaticTransform;
     }
   }
 }
@@ -39,21 +39,21 @@ namespace org {
       class StaticTransform : public ::org::orekit::time::TimeStamped {
        public:
         enum {
-          mid_compose_8d4aa90b08e0a7e3,
-          mid_compositeRotation_caebcd4047ef9312,
-          mid_compositeTranslation_9e300b01ed590b12,
-          mid_getIdentity_00930874428900c5,
-          mid_getInverse_00930874428900c5,
-          mid_getRotation_ff298a39b3cae5da,
-          mid_getTranslation_8b724f8b4fdad1a2,
-          mid_of_119c524e27aa8136,
-          mid_of_967fc4f87ccb447c,
-          mid_of_5349cbaa7f64f62d,
-          mid_transformLine_372f5ec6b8d717a8,
-          mid_transformPosition_49157187b00e5904,
-          mid_transformPosition_f21507e4850a184e,
-          mid_transformVector_49157187b00e5904,
-          mid_transformVector_f21507e4850a184e,
+          mid_compose_6b0bfb2dd341a96e,
+          mid_compositeRotation_ecfeec6247167490,
+          mid_compositeTranslation_0790dea5478dfcd9,
+          mid_getIdentity_4707295cf0323d2d,
+          mid_getInverse_4707295cf0323d2d,
+          mid_getRotation_4d68cff5f6e4403a,
+          mid_getTranslation_032312bdeb3f2f93,
+          mid_of_393b3689e1280c7c,
+          mid_of_46ea5ea7380cdd86,
+          mid_of_8587fe0e07620421,
+          mid_transformLine_450cf7eaaaca6326,
+          mid_transformPosition_df37e4d755ff0467,
+          mid_transformPosition_53c542efd8574582,
+          mid_transformVector_df37e4d755ff0467,
+          mid_transformVector_53c542efd8574582,
           max_mid
         };
 

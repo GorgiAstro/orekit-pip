@@ -3,6 +3,14 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace time {
@@ -21,14 +29,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -40,12 +40,12 @@ namespace org {
           class CombinedObservationDataSet : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_5245c96f5f1b38bd,
-              mid_getDate_c325492395d89b24,
-              mid_getObservationData_e62d3bb06d56d7e3,
-              mid_getPrnNumber_55546ef6a647f39b,
-              mid_getRcvrClkOffset_b74f83833fdad017,
-              mid_getSatelliteSystem_21bd759cc4a81606,
+              mid_init$_13540ceeab23d592,
+              mid_getDate_80e11148db499dda,
+              mid_getObservationData_d751c1a57012b438,
+              mid_getPrnNumber_d6ab429752e7c267,
+              mid_getRcvrClkOffset_9981f74b2d109da6,
+              mid_getSatelliteSystem_fb0bd27fcc3ba9fc,
               max_mid
             };
 

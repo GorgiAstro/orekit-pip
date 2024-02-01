@@ -3,12 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class UnsupportedOperationException;
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace exception {
@@ -17,6 +11,12 @@ namespace org {
     namespace linear {
       class RealVector;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
+    class UnsupportedOperationException;
   }
 }
 template<class T> class JArray;
@@ -28,11 +28,11 @@ namespace org {
       class RealLinearOperator : public ::java::lang::Object {
        public:
         enum {
-          mid_getColumnDimension_55546ef6a647f39b,
-          mid_getRowDimension_55546ef6a647f39b,
-          mid_isTransposable_9ab94ac1dc23b105,
-          mid_operate_d5f1d017fd25113b,
-          mid_operateTranspose_d5f1d017fd25113b,
+          mid_getColumnDimension_d6ab429752e7c267,
+          mid_getRowDimension_d6ab429752e7c267,
+          mid_isTransposable_eee3de00fe971136,
+          mid_operate_bf8d75e459632544,
+          mid_operateTranspose_bf8d75e459632544,
           max_mid
         };
 

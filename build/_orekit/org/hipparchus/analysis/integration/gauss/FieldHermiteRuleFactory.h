@@ -3,14 +3,14 @@
 
 #include "org/hipparchus/analysis/integration/gauss/FieldAbstractRuleFactory.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     class Field;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,8 +24,8 @@ namespace org {
           class FieldHermiteRuleFactory : public ::org::hipparchus::analysis::integration::gauss::FieldAbstractRuleFactory {
            public:
             enum {
-              mid_init$_02ab84aa7626616d,
-              mid_computeRule_acde278e36767299,
+              mid_init$_a44abdd035f01345,
+              mid_computeRule_c07c8b9364272960,
               max_mid
             };
 

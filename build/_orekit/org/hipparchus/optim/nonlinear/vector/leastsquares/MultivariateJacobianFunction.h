@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
-    namespace util {
-      class Pair;
-    }
     namespace linear {
       class RealMatrix;
       class RealVector;
+    }
+    namespace util {
+      class Pair;
     }
   }
 }
@@ -31,7 +31,7 @@ namespace org {
             class MultivariateJacobianFunction : public ::java::lang::Object {
              public:
               enum {
-                mid_value_75baf79414a7355b,
+                mid_value_f5f9cd0684e2ab5e,
                 max_mid
               };
 

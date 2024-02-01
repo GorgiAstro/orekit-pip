@@ -3,16 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
     }
   }
+  namespace lang {
+    class Class;
+  }
+}
+namespace org {
   namespace orekit {
     namespace rugged {
       namespace linesensor {
@@ -24,14 +25,13 @@ namespace org {
       }
     }
   }
-}
-namespace java {
-  namespace lang {
-    class Class;
-  }
-  namespace util {
-    namespace stream {
-      class Stream;
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
     }
   }
 }
@@ -45,17 +45,17 @@ namespace org {
         class SensorMeanPlaneCrossing : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_6c53ed6f01ef0ff8,
-            mid_init$_81e166046bd5bbc1,
-            mid_find_3adb4906e4611107,
-            mid_getAccuracy_b74f83833fdad017,
-            mid_getCachedResults_14e21bf777ff0ccf,
-            mid_getMaxEval_55546ef6a647f39b,
-            mid_getMaxLine_55546ef6a647f39b,
-            mid_getMeanPlaneNormal_8b724f8b4fdad1a2,
-            mid_getMinLine_55546ef6a647f39b,
-            mid_getScToBody_cf686ec38ae38bec,
-            mid_getSensor_57f8f535e0c09b7f,
+            mid_init$_59bbb07cdad689df,
+            mid_init$_cd0bb1e3ab180aa0,
+            mid_find_ce491b6a117d4860,
+            mid_getAccuracy_9981f74b2d109da6,
+            mid_getCachedResults_11e4ca8182c1933d,
+            mid_getMaxEval_d6ab429752e7c267,
+            mid_getMaxLine_d6ab429752e7c267,
+            mid_getMeanPlaneNormal_032312bdeb3f2f93,
+            mid_getMinLine_d6ab429752e7c267,
+            mid_getScToBody_a784fa07890a0e9f,
+            mid_getSensor_98f3dfe0c28ffc3c,
             max_mid
           };
 

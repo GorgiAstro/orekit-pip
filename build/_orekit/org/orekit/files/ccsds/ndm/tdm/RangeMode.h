@@ -34,8 +34,8 @@ namespace org {
             class RangeMode : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_93c501f84396d77e,
-                mid_values_6ba72fa19ac79b98,
+                mid_valueOf_10ff933d7a73fe0d,
+                mid_values_d9b2978c77c12a19,
                 max_mid
               };
 

@@ -33,12 +33,12 @@ namespace org {
         class OrekitStepNormalizer : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_6e0fc70b103d8967,
-            mid_finish_280c3390961e0a50,
-            mid_getFixedStepHandler_a92bd23f1397a8a9,
-            mid_getFixedTimeStep_b74f83833fdad017,
-            mid_handleStep_13c351c10f00bcd7,
-            mid_init_2d7f9a496c7e9781,
+            mid_init$_e1387cf2cfecde7f,
+            mid_finish_72b846eb87f3af9a,
+            mid_getFixedStepHandler_0a2ac70fa622a939,
+            mid_getFixedTimeStep_9981f74b2d109da6,
+            mid_handleStep_9db9d9fe85cac7f9,
+            mid_init_14deaae988292d42,
             max_mid
           };
 

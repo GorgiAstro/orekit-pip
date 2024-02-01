@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace propagation {
       namespace events {
         class NegateDetector;
         class EventDetector;
       }
       class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -32,11 +32,11 @@ namespace org {
         class NegateDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_e13564f833403504,
-            mid_g_a17ea857ce74d258,
-            mid_getOriginal_9ada55f07f5a223c,
-            mid_init_2d7f9a496c7e9781,
-            mid_create_b636b8e6ef44d5d7,
+            mid_init$_d5d8be0538a03d97,
+            mid_g_b443ba1cc794b916,
+            mid_getOriginal_ebd847a60689999d,
+            mid_init_14deaae988292d42,
+            mid_create_a0b81df0c32e8394,
             max_mid
           };
 

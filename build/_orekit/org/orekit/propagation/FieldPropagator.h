@@ -8,21 +8,21 @@ namespace org {
     namespace attitudes {
       class AttitudeProvider;
     }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace propagation {
-      namespace sampling {
-        class FieldOrekitFixedStepHandler;
-        class FieldOrekitStepHandler;
-        class FieldStepHandlerMultiplexer;
-      }
       namespace events {
         class FieldEventDetector;
       }
-      class FieldAdditionalStateProvider;
-      class FieldSpacecraftState;
       class FieldEphemerisGenerator;
+      class FieldAdditionalStateProvider;
+      namespace sampling {
+        class FieldStepHandlerMultiplexer;
+        class FieldOrekitStepHandler;
+        class FieldOrekitFixedStepHandler;
+      }
+      class FieldSpacecraftState;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
     }
     namespace frames {
       class Frame;
@@ -51,25 +51,25 @@ namespace org {
       class FieldPropagator : public ::org::orekit::utils::FieldPVCoordinatesProvider {
        public:
         enum {
-          mid_addAdditionalStateProvider_6f4fb3fe151ef989,
-          mid_addEventDetector_ca1d91eb6a3ce219,
-          mid_clearEventsDetectors_a1fa5dae97ea5ed2,
-          mid_clearStepHandlers_a1fa5dae97ea5ed2,
-          mid_getAdditionalStateProviders_e62d3bb06d56d7e3,
-          mid_getAttitudeProvider_331f12bb6017243b,
-          mid_getEphemerisGenerator_afe29c55086c638f,
-          mid_getEventsDetectors_cb666ea1a15f5210,
-          mid_getFrame_2c51111cc6894ba1,
-          mid_getInitialState_fba6d56f8dbc98d0,
-          mid_getManagedAdditionalStates_0f94e41879ab7062,
-          mid_getMultiplexer_bf5be23258085f1c,
-          mid_isAdditionalStateManaged_cde6b28e15c96b75,
-          mid_propagate_70fecd201ca47d3b,
-          mid_propagate_44f88f604c4d00f1,
-          mid_resetInitialState_54d9efbf99822980,
-          mid_setAttitudeProvider_8e4d3ea100bc0095,
-          mid_setStepHandler_a80810763ccddce2,
-          mid_setStepHandler_73fc248bc2640832,
+          mid_addAdditionalStateProvider_546488029ed6e282,
+          mid_addEventDetector_bb8991c4a46cf56d,
+          mid_clearEventsDetectors_ff7cb6c242604316,
+          mid_clearStepHandlers_ff7cb6c242604316,
+          mid_getAdditionalStateProviders_d751c1a57012b438,
+          mid_getAttitudeProvider_2f73d1f4460b8d6c,
+          mid_getEphemerisGenerator_96c2c30a0b0ad9e4,
+          mid_getEventsDetectors_3bfef5c77ceb081a,
+          mid_getFrame_cb151471db4570f0,
+          mid_getInitialState_a74be2e38786f3b6,
+          mid_getManagedAdditionalStates_f81c0644d57ae495,
+          mid_getMultiplexer_8da2e06aa361bf03,
+          mid_isAdditionalStateManaged_df4c65b2aede5c41,
+          mid_propagate_fb689a9c0f30b938,
+          mid_propagate_bcf793a6168805e3,
+          mid_resetInitialState_8062511934471166,
+          mid_setAttitudeProvider_fddd0a7d9f33bafa,
+          mid_setStepHandler_a9c3be9ee399328f,
+          mid_setStepHandler_b6d4e0fa68ea09a5,
           max_mid
         };
 

@@ -9,17 +9,17 @@ namespace org {
       class OccultationEngine;
       class ExtendedPVCoordinatesProvider;
     }
-    namespace forces {
-      class ForceModel;
-    }
-    namespace bodies {
-      class OneAxisEllipsoid;
-    }
     namespace propagation {
       namespace events {
         class FieldEventDetector;
         class EventDetector;
       }
+    }
+    namespace bodies {
+      class OneAxisEllipsoid;
+    }
+    namespace forces {
+      class ForceModel;
     }
   }
   namespace hipparchus {
@@ -28,10 +28,10 @@ namespace org {
 }
 namespace java {
   namespace util {
-    class List;
     namespace stream {
       class Stream;
     }
+    class List;
   }
   namespace lang {
     class Class;
@@ -47,14 +47,14 @@ namespace org {
         class AbstractRadiationForceModel : public ::java::lang::Object {
          public:
           enum {
-            mid_addOccultingBody_fe488c9958f1d2fe,
-            mid_addOccultingBody_d69eafd654818556,
-            mid_dependsOnPositionOnly_9ab94ac1dc23b105,
-            mid_getEventDetectors_14e21bf777ff0ccf,
-            mid_getFieldEventDetectors_283ad33581c047a0,
-            mid_getOccultingBodies_e62d3bb06d56d7e3,
-            mid_getGeneralEclipseAngles_db4fc232a30d5f8e,
-            mid_getGeneralEclipseAngles_1316a94eb2b77b43,
+            mid_addOccultingBody_b708ea6c2876a9ef,
+            mid_addOccultingBody_16b9140b7ad74f10,
+            mid_dependsOnPositionOnly_eee3de00fe971136,
+            mid_getEventDetectors_11e4ca8182c1933d,
+            mid_getFieldEventDetectors_d3db121d9deb0312,
+            mid_getOccultingBodies_d751c1a57012b438,
+            mid_getGeneralEclipseAngles_f3b4c9095c8966a1,
+            mid_getGeneralEclipseAngles_8fb3d659b51fb192,
             max_mid
           };
 

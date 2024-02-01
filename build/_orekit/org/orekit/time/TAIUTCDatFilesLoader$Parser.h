@@ -8,8 +8,8 @@ namespace java {
     class List;
   }
   namespace io {
-    class InputStream;
     class IOException;
+    class InputStream;
   }
   namespace lang {
     class Class;
@@ -19,8 +19,8 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace time {
-      class OffsetModel;
       class UTCTAIOffsetsLoader$Parser;
+      class OffsetModel;
     }
   }
 }
@@ -33,8 +33,8 @@ namespace org {
       class TAIUTCDatFilesLoader$Parser : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_parse_7b8887374449b257,
+          mid_init$_ff7cb6c242604316,
+          mid_parse_cf69cc549132f899,
           max_mid
         };
 

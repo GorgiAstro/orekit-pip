@@ -3,23 +3,23 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace optim {
+      class PointValuePair;
+      class OptimizationData;
+    }
+    namespace analysis {
+      class MultivariateFunction;
+    }
+  }
+}
 namespace java {
   namespace util {
     class Comparator;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace analysis {
-      class MultivariateFunction;
-    }
-    namespace optim {
-      class OptimizationData;
-      class PointValuePair;
-    }
   }
 }
 template<class T> class JArray;
@@ -34,16 +34,16 @@ namespace org {
             class AbstractSimplex : public ::java::lang::Object {
              public:
               enum {
-                mid_build_ab69da052b88f50c,
-                mid_evaluate_7c5f20de6989de35,
-                mid_getDimension_55546ef6a647f39b,
-                mid_getPoint_e9b1472253148099,
-                mid_getPoints_326f59a2f136a3de,
-                mid_getSize_55546ef6a647f39b,
-                mid_iterate_7c5f20de6989de35,
-                mid_setPoints_69be9412a3623a09,
-                mid_setPoint_0edefa101b8dfd74,
-                mid_replaceWorstPoint_c18bea1c44829a53,
+                mid_build_a71c45509eaf92d1,
+                mid_evaluate_db1894c33fb140cf,
+                mid_getDimension_d6ab429752e7c267,
+                mid_getPoint_89e226ebb8c2b780,
+                mid_getPoints_44a4932cc723b5fb,
+                mid_getSize_d6ab429752e7c267,
+                mid_iterate_db1894c33fb140cf,
+                mid_replaceWorstPoint_02d3a1dbbbd007e4,
+                mid_setPoint_595f0545bc83500b,
+                mid_setPoints_1e8d66e1b71abcd9,
                 max_mid
               };
 

@@ -8,28 +8,28 @@ namespace org {
     namespace attitudes {
       class AttitudeProvider;
     }
-    namespace files {
-      namespace ilrs {
-        class CPF$CPFCoordinate;
-        class CPF$CPFEphemeris;
-        class CPF;
-      }
-      namespace general {
-        class EphemerisFile$EphemerisSegment;
-        class EphemerisFile$SatelliteEphemeris;
-      }
-    }
     namespace propagation {
       class BoundedPropagator;
-    }
-    namespace frames {
-      class Frame;
     }
     namespace time {
       class AbsoluteDate;
     }
     namespace utils {
       class CartesianDerivativesFilter;
+    }
+    namespace files {
+      namespace ilrs {
+        class CPF$CPFEphemeris;
+        class CPF;
+        class CPF$CPFCoordinate;
+      }
+      namespace general {
+        class EphemerisFile$EphemerisSegment;
+        class EphemerisFile$SatelliteEphemeris;
+      }
+    }
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -52,19 +52,19 @@ namespace org {
         class CPF$CPFEphemeris : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_978d3472b061456a,
-            mid_getAvailableDerivatives_63bfdcc4b7a0536c,
-            mid_getCoordinates_e62d3bb06d56d7e3,
-            mid_getEphemeridesDataLines_e62d3bb06d56d7e3,
-            mid_getFrame_2c51111cc6894ba1,
-            mid_getId_1c1fa1e935d6cdcf,
-            mid_getInterpolationSamples_55546ef6a647f39b,
-            mid_getMu_b74f83833fdad017,
-            mid_getPropagator_2d80cda3dc1f1422,
-            mid_getPropagator_9e515362e8de0afe,
-            mid_getSegments_e62d3bb06d56d7e3,
-            mid_getStart_c325492395d89b24,
-            mid_getStop_c325492395d89b24,
+            mid_init$_bd1743e2968161dc,
+            mid_getAvailableDerivatives_b9dfc27d8c56b5de,
+            mid_getCoordinates_d751c1a57012b438,
+            mid_getEphemeridesDataLines_d751c1a57012b438,
+            mid_getFrame_cb151471db4570f0,
+            mid_getId_d2c8eb4129821f0e,
+            mid_getInterpolationSamples_d6ab429752e7c267,
+            mid_getMu_9981f74b2d109da6,
+            mid_getPropagator_6c7bb9da59d24b03,
+            mid_getPropagator_b59efa08d1230cd1,
+            mid_getSegments_d751c1a57012b438,
+            mid_getStart_80e11148db499dda,
+            mid_getStop_80e11148db499dda,
             max_mid
           };
 

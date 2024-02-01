@@ -6,6 +6,10 @@
 namespace org {
   namespace orekit {
     namespace ssa {
+      namespace metrics {
+        class FieldProbabilityOfCollision;
+        class ProbabilityOfCollision;
+      }
       namespace collision {
         namespace shorttermencounter {
           namespace probability {
@@ -15,20 +19,16 @@ namespace org {
           }
         }
       }
-      namespace metrics {
-        class ProbabilityOfCollision;
-        class FieldProbabilityOfCollision;
-      }
     }
   }
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace analysis {
       namespace integration {
         class FieldUnivariateIntegrator;
         class UnivariateIntegrator;
       }
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -51,14 +51,14 @@ namespace org {
               class PythonAbstractShortTermEncounter1DNumerical2DPOCMethod : public ::org::orekit::ssa::collision::shorttermencounter::probability::twod::AbstractShortTermEncounter1DNumerical2DPOCMethod {
                public:
                 enum {
-                  mid_init$_770382c82804b0fb,
-                  mid_compute_f84396b6984702e2,
-                  mid_compute_978e207e20e445e6,
-                  mid_finalize_a1fa5dae97ea5ed2,
-                  mid_getType_8397a286d982b383,
-                  mid_pythonDecRef_a1fa5dae97ea5ed2,
-                  mid_pythonExtension_6c0ce7e438e5ded4,
-                  mid_pythonExtension_3d7dd2314a0dd456,
+                  mid_init$_5ac4dac69cfaea0e,
+                  mid_compute_a89d7889c8c6100d,
+                  mid_compute_91f4c05bf9eab1a6,
+                  mid_finalize_ff7cb6c242604316,
+                  mid_getType_592990a91429410c,
+                  mid_pythonDecRef_ff7cb6c242604316,
+                  mid_pythonExtension_42c72b98e3c2e08a,
+                  mid_pythonExtension_f5bbab7e97879358,
                   max_mid
                 };
 

@@ -19,8 +19,8 @@ namespace org {
           class GeometryFreeCombination : public ::org::orekit::estimation::measurements::gnss::AbstractDualFrequencyCombination {
            public:
             enum {
-              mid_getCombinedValue_67abdaf53ea90950,
-              mid_getCombinedFrequency_7bbbdc452eac601c,
+              mid_getCombinedValue_ac28f5c378fae636,
+              mid_getCombinedFrequency_9364fb0b7015b098,
               max_mid
             };
 

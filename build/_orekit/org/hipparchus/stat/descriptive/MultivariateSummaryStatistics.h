@@ -14,13 +14,13 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace stat {
       namespace descriptive {
         class StatisticalMultivariateSummary;
       }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
     namespace linear {
       class RealMatrix;
@@ -37,24 +37,24 @@ namespace org {
         class MultivariateSummaryStatistics : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_44ed599e93e8a30c,
-            mid_init$_34742154de10200a,
-            mid_addValue_ab69da052b88f50c,
-            mid_clear_a1fa5dae97ea5ed2,
-            mid_equals_460c5e2d9d51c6cc,
-            mid_getCovariance_f77d745f2128c391,
-            mid_getDimension_55546ef6a647f39b,
-            mid_getGeometricMean_25e1757a36c4dde2,
-            mid_getMax_25e1757a36c4dde2,
-            mid_getMean_25e1757a36c4dde2,
-            mid_getMin_25e1757a36c4dde2,
-            mid_getN_6c0ce7e438e5ded4,
-            mid_getStandardDeviation_25e1757a36c4dde2,
-            mid_getSum_25e1757a36c4dde2,
-            mid_getSumLog_25e1757a36c4dde2,
-            mid_getSumSq_25e1757a36c4dde2,
-            mid_hashCode_55546ef6a647f39b,
-            mid_toString_1c1fa1e935d6cdcf,
+            mid_init$_8fd427ab23829bf5,
+            mid_init$_06c90d8be18d8afa,
+            mid_addValue_a71c45509eaf92d1,
+            mid_clear_ff7cb6c242604316,
+            mid_equals_72faff9b05f5ed5e,
+            mid_getCovariance_b2eebabce70526d8,
+            mid_getDimension_d6ab429752e7c267,
+            mid_getGeometricMean_be783177b060994b,
+            mid_getMax_be783177b060994b,
+            mid_getMean_be783177b060994b,
+            mid_getMin_be783177b060994b,
+            mid_getN_42c72b98e3c2e08a,
+            mid_getStandardDeviation_be783177b060994b,
+            mid_getSum_be783177b060994b,
+            mid_getSumLog_be783177b060994b,
+            mid_getSumSq_be783177b060994b,
+            mid_hashCode_d6ab429752e7c267,
+            mid_toString_d2c8eb4129821f0e,
             max_mid
           };
 

@@ -4,13 +4,21 @@
 #include "org/orekit/estimation/measurements/generation/AbstractMeasurementBuilder.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace random {
+      class CorrelatedRandomVectorGenerator;
+    }
+  }
   namespace orekit {
     namespace estimation {
       namespace measurements {
+        class ObservableSatellite;
         class AngularRaDec;
         class GroundStation;
-        class ObservableSatellite;
       }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace propagation {
       namespace sampling {
@@ -19,14 +27,6 @@ namespace org {
     }
     namespace frames {
       class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    namespace random {
-      class CorrelatedRandomVectorGenerator;
     }
   }
 }
@@ -49,8 +49,8 @@ namespace org {
           class AngularRaDecBuilder : public ::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder {
            public:
             enum {
-              mid_init$_e4811cf20d735ff6,
-              mid_build_8b1d2899f4ba6b35,
+              mid_init$_558232e1ff80b524,
+              mid_build_36e4f60d773853f8,
               max_mid
             };
 

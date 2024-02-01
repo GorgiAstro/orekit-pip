@@ -3,12 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -28,6 +22,12 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -39,12 +39,12 @@ namespace org {
           class STMEquations : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_572e4de529747211,
-              mid_combinedDerivatives_f7e02f1d7093fbbb,
-              mid_getDimension_55546ef6a647f39b,
-              mid_getName_1c1fa1e935d6cdcf,
-              mid_getStateTransitionMatrix_b7aa5791b069a41f,
-              mid_setInitialPhi_c3c52b1257139045,
+              mid_init$_d97bf5b01aa2ae7b,
+              mid_combinedDerivatives_3642c368f508585f,
+              mid_getDimension_d6ab429752e7c267,
+              mid_getName_d2c8eb4129821f0e,
+              mid_getStateTransitionMatrix_011bf64ebaa4e018,
+              mid_setInitialPhi_ed3fe207e6fde26f,
               max_mid
             };
 

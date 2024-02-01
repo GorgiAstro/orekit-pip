@@ -31,10 +31,10 @@ namespace org {
       class FieldAdditionalStateProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getAdditionalState_eaf6bc2191c5b1b4,
-          mid_getName_1c1fa1e935d6cdcf,
-          mid_init_96d019f392abf918,
-          mid_yields_e6d9e841ca2e035c,
+          mid_getAdditionalState_d4f2e3295d4ac943,
+          mid_getName_d2c8eb4129821f0e,
+          mid_init_357211ab77703f3f,
+          mid_yields_712e981f67f3ccbe,
           max_mid
         };
 

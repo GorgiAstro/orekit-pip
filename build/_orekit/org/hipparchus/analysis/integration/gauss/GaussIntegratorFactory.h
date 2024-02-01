@@ -5,6 +5,9 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
     namespace analysis {
       namespace integration {
         namespace gauss {
@@ -12,9 +15,6 @@ namespace org {
           class GaussIntegrator;
         }
       }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
     }
   }
 }
@@ -34,14 +34,14 @@ namespace org {
           class GaussIntegratorFactory : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_init$_44ed599e93e8a30c,
-              mid_hermite_a6e7a9f494780876,
-              mid_laguerre_7b26da4847fc245c,
-              mid_legendre_7b26da4847fc245c,
-              mid_legendre_3010934f1f4f591c,
-              mid_legendreHighPrecision_7b26da4847fc245c,
-              mid_legendreHighPrecision_3010934f1f4f591c,
+              mid_init$_ff7cb6c242604316,
+              mid_init$_8fd427ab23829bf5,
+              mid_hermite_d2e2397dcb38b683,
+              mid_laguerre_3cd8f3d4140e4973,
+              mid_legendre_3cd8f3d4140e4973,
+              mid_legendre_2c123b04d0dd210d,
+              mid_legendreHighPrecision_3cd8f3d4140e4973,
+              mid_legendreHighPrecision_2c123b04d0dd210d,
               max_mid
             };
 

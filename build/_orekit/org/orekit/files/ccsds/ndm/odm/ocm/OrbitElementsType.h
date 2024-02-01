@@ -3,8 +3,29 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      namespace units {
+        class Unit;
+      }
+      class TimeStampedPVCoordinates;
+    }
+    namespace bodies {
+      class OneAxisEllipsoid;
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -16,30 +37,9 @@ namespace org {
         }
       }
     }
-    namespace utils {
-      namespace units {
-        class Unit;
-      }
-      class TimeStampedPVCoordinates;
-    }
-    namespace bodies {
-      class OneAxisEllipsoid;
-    }
     namespace frames {
       class Frame;
     }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -55,12 +55,12 @@ namespace org {
               class OrbitElementsType : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_getUnits_e62d3bb06d56d7e3,
-                  mid_toCartesian_4dd85cabf914dbd4,
-                  mid_toRawElements_a845a300da8848fb,
-                  mid_toString_1c1fa1e935d6cdcf,
-                  mid_valueOf_b7fa64eebc34c884,
-                  mid_values_93fc9cf1c7ca8311,
+                  mid_getUnits_d751c1a57012b438,
+                  mid_toCartesian_8bc09b08ce3a501f,
+                  mid_toRawElements_3828301ea6163a12,
+                  mid_toString_d2c8eb4129821f0e,
+                  mid_valueOf_ed63d354babb827b,
+                  mid_values_216373f79d0e0223,
                   max_mid
                 };
 

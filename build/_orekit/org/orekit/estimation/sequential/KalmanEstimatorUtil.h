@@ -5,20 +5,20 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class ParameterDriversList;
+    namespace time {
+      class AbsoluteDate;
     }
     namespace estimation {
-      namespace measurements {
-        class ObservedMeasurement;
-        class EstimatedMeasurement;
-      }
       namespace sequential {
         class MeasurementDecorator;
       }
+      namespace measurements {
+        class EstimatedMeasurement;
+        class ObservedMeasurement;
+      }
     }
-    namespace time {
-      class AbsoluteDate;
+    namespace utils {
+      class ParameterDriversList;
     }
     namespace propagation {
       class SpacecraftState;
@@ -26,8 +26,8 @@ namespace org {
   }
   namespace hipparchus {
     namespace linear {
-      class RealVector;
       class RealMatrix;
+      class RealVector;
     }
   }
 }
@@ -46,19 +46,19 @@ namespace org {
         class KalmanEstimatorUtil : public ::java::lang::Object {
          public:
           enum {
-            mid_applyDynamicOutlierFilter_b27bf6983be17cd5,
-            mid_checkDimension_12d71379b192fd42,
-            mid_computeInnovationVector_ec65c5758c341ab5,
-            mid_computeInnovationVector_f9ff8f3570f5b024,
-            mid_decorate_77e5ff2a058cebc7,
-            mid_decorateUnscented_77e5ff2a058cebc7,
-            mid_filterRelevant_6c3b3d666dfbaac2,
-            mid_normalizeCovarianceMatrix_7639737fe0da56a8,
-            mid_unnormalizeCovarianceMatrix_7639737fe0da56a8,
-            mid_unnormalizeInnovationCovarianceMatrix_7639737fe0da56a8,
-            mid_unnormalizeKalmanGainMatrix_5e632611367b44d1,
-            mid_unnormalizeMeasurementJacobian_5e632611367b44d1,
-            mid_unnormalizeStateTransitionMatrix_7639737fe0da56a8,
+            mid_applyDynamicOutlierFilter_d09e08c6418a1258,
+            mid_checkDimension_cbfea3e6e8388456,
+            mid_computeInnovationVector_7c6de54c62f403d7,
+            mid_computeInnovationVector_e42d51cf83e89d41,
+            mid_decorate_d5c17893ca0d456d,
+            mid_decorateUnscented_d5c17893ca0d456d,
+            mid_filterRelevant_09c715f8a82f1a3a,
+            mid_normalizeCovarianceMatrix_d05ff823d5dfec7c,
+            mid_unnormalizeCovarianceMatrix_d05ff823d5dfec7c,
+            mid_unnormalizeInnovationCovarianceMatrix_d05ff823d5dfec7c,
+            mid_unnormalizeKalmanGainMatrix_aa0dce4c57339931,
+            mid_unnormalizeMeasurementJacobian_aa0dce4c57339931,
+            mid_unnormalizeStateTransitionMatrix_d05ff823d5dfec7c,
             max_mid
           };
 

@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace utils {
-      class FieldPVCoordinates;
       class AbsolutePVCoordinates;
+      class FieldPVCoordinates;
       class FieldPVCoordinatesProvider;
       class FieldAbsolutePVCoordinates;
     }
@@ -43,25 +43,25 @@ namespace org {
       class FieldAbsolutePVCoordinates : public ::org::orekit::utils::TimeStampedFieldPVCoordinates {
        public:
         enum {
-          mid_init$_3c9a81ca81006017,
-          mid_init$_aa8c722bf91af587,
-          mid_init$_d709f1a99e8f728c,
-          mid_init$_dbb5cbfe1e0f7743,
-          mid_init$_ec297e7d63958cff,
-          mid_init$_a579737bd7b3a2fc,
-          mid_init$_cc8c6789cd732e7b,
-          mid_init$_0c532ebd3e17863c,
-          mid_init$_a82918c7573e9c77,
-          mid_init$_803de8b4e87e6ba6,
-          mid_getFrame_2c51111cc6894ba1,
-          mid_getPVCoordinates_243debd9cc1dd623,
-          mid_getPVCoordinates_dda5a3346286675e,
-          mid_getPVCoordinates_294c5c99690f2356,
-          mid_getPosition_566ff18e6be34b64,
-          mid_shiftedBy_6ce2d639ee84cd5a,
-          mid_shiftedBy_4eea64d82cd4330d,
-          mid_toAbsolutePVCoordinates_900ea521fabf17ca,
-          mid_toTaylorProvider_0d134b6a2504033c,
+          mid_init$_52100c6847eaec19,
+          mid_init$_a21a3f679d555370,
+          mid_init$_2a0b4cce78661178,
+          mid_init$_d473bf44c6f0ba81,
+          mid_init$_908dc2ce6b1cd1a1,
+          mid_init$_78bcd70fff2e0c4a,
+          mid_init$_8e6f8770f80ed059,
+          mid_init$_a1f4328f7f5e607a,
+          mid_init$_0e5092b170a8b3e9,
+          mid_init$_acdc2ed2e333ac4b,
+          mid_getFrame_cb151471db4570f0,
+          mid_getPVCoordinates_be698fa91827b9b2,
+          mid_getPVCoordinates_cb22ebaaad002a3b,
+          mid_getPVCoordinates_1b1a4229447f7bf7,
+          mid_getPosition_04c84225ba0acc81,
+          mid_shiftedBy_7d8eb4c884905d3b,
+          mid_shiftedBy_98193c33f95d3c3c,
+          mid_toAbsolutePVCoordinates_0bbeea3cc786f34b,
+          mid_toTaylorProvider_ed886b943b6de8d9,
           max_mid
         };
 

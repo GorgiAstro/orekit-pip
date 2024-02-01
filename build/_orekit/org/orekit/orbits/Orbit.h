@@ -7,16 +7,16 @@ namespace org {
   namespace orekit {
     namespace time {
       class TimeStamped;
-      class AbsoluteDate;
       class TimeShiftable;
+      class AbsoluteDate;
     }
     namespace utils {
       class TimeStampedPVCoordinates;
       class PVCoordinatesProvider;
     }
     namespace orbits {
-      class Orbit;
       class PositionAngleType;
+      class Orbit;
       class OrbitType;
     }
     namespace frames {
@@ -50,56 +50,56 @@ namespace org {
       class Orbit : public ::java::lang::Object {
        public:
         enum {
-          mid_addKeplerContribution_2a5649bc1625306e,
-          mid_getA_b74f83833fdad017,
-          mid_getADot_b74f83833fdad017,
-          mid_getDate_c325492395d89b24,
-          mid_getE_b74f83833fdad017,
-          mid_getEDot_b74f83833fdad017,
-          mid_getEquinoctialEx_b74f83833fdad017,
-          mid_getEquinoctialExDot_b74f83833fdad017,
-          mid_getEquinoctialEy_b74f83833fdad017,
-          mid_getEquinoctialEyDot_b74f83833fdad017,
-          mid_getFrame_2c51111cc6894ba1,
-          mid_getHx_b74f83833fdad017,
-          mid_getHxDot_b74f83833fdad017,
-          mid_getHy_b74f83833fdad017,
-          mid_getHyDot_b74f83833fdad017,
-          mid_getI_b74f83833fdad017,
-          mid_getIDot_b74f83833fdad017,
-          mid_getJacobianWrtCartesian_65c599ca9407e3cd,
-          mid_getJacobianWrtParameters_65c599ca9407e3cd,
-          mid_getKeplerianMeanMotion_b74f83833fdad017,
-          mid_getKeplerianPeriod_b74f83833fdad017,
-          mid_getLE_b74f83833fdad017,
-          mid_getLEDot_b74f83833fdad017,
-          mid_getLM_b74f83833fdad017,
-          mid_getLMDot_b74f83833fdad017,
-          mid_getLv_b74f83833fdad017,
-          mid_getLvDot_b74f83833fdad017,
-          mid_getMeanAnomalyDotWrtA_b74f83833fdad017,
-          mid_getMu_b74f83833fdad017,
-          mid_getPVCoordinates_136cc8ba23b21c29,
-          mid_getPVCoordinates_03c7a0bca588a4f5,
-          mid_getPVCoordinates_e5d15ef236cd9ffe,
-          mid_getPosition_8b724f8b4fdad1a2,
-          mid_getPosition_982d534f80d70918,
-          mid_getType_c7d4737d7afca612,
-          mid_hasDerivatives_9ab94ac1dc23b105,
-          mid_isElliptical_9ab94ac1dc23b105,
-          mid_shiftedBy_93453d78b4f95a28,
-          mid_initPosition_8b724f8b4fdad1a2,
-          mid_initPVCoordinates_136cc8ba23b21c29,
-          mid_computeJacobianMeanWrtCartesian_3b7b373db8e7887f,
-          mid_computeJacobianEccentricWrtCartesian_3b7b373db8e7887f,
-          mid_computeJacobianTrueWrtCartesian_3b7b373db8e7887f,
-          mid_fillHalfRow_9f8cd3edea4f0e61,
-          mid_fillHalfRow_8a5961cf8eb19262,
-          mid_fillHalfRow_44c48a103668461a,
-          mid_fillHalfRow_1c68c597005b904c,
-          mid_fillHalfRow_deb891bf31139295,
-          mid_fillHalfRow_1c3a172681737618,
-          mid_hasNonKeplerianAcceleration_80f28e82741a4d98,
+          mid_addKeplerContribution_3ef35668c0b1580f,
+          mid_getA_9981f74b2d109da6,
+          mid_getADot_9981f74b2d109da6,
+          mid_getDate_80e11148db499dda,
+          mid_getE_9981f74b2d109da6,
+          mid_getEDot_9981f74b2d109da6,
+          mid_getEquinoctialEx_9981f74b2d109da6,
+          mid_getEquinoctialExDot_9981f74b2d109da6,
+          mid_getEquinoctialEy_9981f74b2d109da6,
+          mid_getEquinoctialEyDot_9981f74b2d109da6,
+          mid_getFrame_cb151471db4570f0,
+          mid_getHx_9981f74b2d109da6,
+          mid_getHxDot_9981f74b2d109da6,
+          mid_getHy_9981f74b2d109da6,
+          mid_getHyDot_9981f74b2d109da6,
+          mid_getI_9981f74b2d109da6,
+          mid_getIDot_9981f74b2d109da6,
+          mid_getJacobianWrtCartesian_af600cc7c7a74264,
+          mid_getJacobianWrtParameters_af600cc7c7a74264,
+          mid_getKeplerianMeanMotion_9981f74b2d109da6,
+          mid_getKeplerianPeriod_9981f74b2d109da6,
+          mid_getLE_9981f74b2d109da6,
+          mid_getLEDot_9981f74b2d109da6,
+          mid_getLM_9981f74b2d109da6,
+          mid_getLMDot_9981f74b2d109da6,
+          mid_getLv_9981f74b2d109da6,
+          mid_getLvDot_9981f74b2d109da6,
+          mid_getMeanAnomalyDotWrtA_9981f74b2d109da6,
+          mid_getMu_9981f74b2d109da6,
+          mid_getPVCoordinates_674031698a428ce8,
+          mid_getPVCoordinates_76634063992a70d7,
+          mid_getPVCoordinates_6236a35378ed47a5,
+          mid_getPosition_032312bdeb3f2f93,
+          mid_getPosition_5996cdbecf4f0d06,
+          mid_getType_495f818d3570b7f5,
+          mid_hasDerivatives_eee3de00fe971136,
+          mid_isElliptical_eee3de00fe971136,
+          mid_shiftedBy_d1516833b1f81441,
+          mid_initPosition_032312bdeb3f2f93,
+          mid_initPVCoordinates_674031698a428ce8,
+          mid_computeJacobianMeanWrtCartesian_eda3f19b8225f78f,
+          mid_computeJacobianEccentricWrtCartesian_eda3f19b8225f78f,
+          mid_computeJacobianTrueWrtCartesian_eda3f19b8225f78f,
+          mid_fillHalfRow_a8f7f4c0cc5ceddd,
+          mid_fillHalfRow_1d3f8641aec0478f,
+          mid_fillHalfRow_f3c8562ee4d2f5f7,
+          mid_fillHalfRow_b43fc5b33307d469,
+          mid_fillHalfRow_798e20ec3d655ef5,
+          mid_fillHalfRow_296d5bbbcf8782f7,
+          mid_hasNonKeplerianAcceleration_b214df3c89ce1ac9,
           max_mid
         };
 

@@ -27,10 +27,10 @@ namespace org {
       class SimpleCurveFitter : public ::org::hipparchus::fitting::AbstractCurveFitter {
        public:
         enum {
-          mid_create_5b84779bdc0ef4c0,
-          mid_withMaxIterations_afdc767827473115,
-          mid_withStartPoint_fd8edeb198b632ad,
-          mid_getProblem_067ae4e9e4e5b47a,
+          mid_create_7abc32a3f2924b2d,
+          mid_withMaxIterations_7951426b7700f81e,
+          mid_withStartPoint_b7daaa3b0b731948,
+          mid_getProblem_51e01b60016ab388,
           max_mid
         };
 

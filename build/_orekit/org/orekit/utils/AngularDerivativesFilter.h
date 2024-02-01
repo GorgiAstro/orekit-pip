@@ -26,10 +26,10 @@ namespace org {
       class AngularDerivativesFilter : public ::java::lang::Enum {
        public:
         enum {
-          mid_getFilter_71cb048b3c730036,
-          mid_getMaxOrder_55546ef6a647f39b,
-          mid_valueOf_bee5d2db8fcf7df4,
-          mid_values_22007163d4198fde,
+          mid_getFilter_09a52895b77b39e4,
+          mid_getMaxOrder_d6ab429752e7c267,
+          mid_valueOf_e99a586db3a83c45,
+          mid_values_2d38336887b9d37b,
           max_mid
         };
 

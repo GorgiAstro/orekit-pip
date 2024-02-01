@@ -8,8 +8,8 @@ namespace org {
     namespace files {
       namespace rinex {
         namespace section {
-          class RinexBaseHeader;
           class RinexComment;
+          class RinexBaseHeader;
         }
       }
     }
@@ -33,9 +33,9 @@ namespace org {
         class RinexFile : public ::java::lang::Object {
          public:
           enum {
-            mid_addComment_7a0f38057aceda26,
-            mid_getComments_e62d3bb06d56d7e3,
-            mid_getHeader_8e24ce944a8dde6b,
+            mid_addComment_4025351edffeacb1,
+            mid_getComments_d751c1a57012b438,
+            mid_getHeader_006d72cea1374eb7,
             max_mid
           };
 

@@ -5,11 +5,29 @@
 
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataContext;
+    }
+    namespace propagation {
+      namespace conversion {
+        class PropagatorBuilder;
+        class TLEPropagatorBuilder;
+      }
+      namespace analytical {
+        namespace tle {
+          namespace generation {
+            class TleGenerationAlgorithm;
+          }
+          class TLEPropagator;
+          class TLE;
+        }
+      }
+    }
     namespace utils {
       class ParameterDriversList;
     }
-    namespace data {
-      class DataContext;
+    namespace orbits {
+      class PositionAngleType;
     }
     namespace estimation {
       namespace leastsquares {
@@ -19,24 +37,6 @@ namespace org {
       namespace measurements {
         class ObservedMeasurement;
       }
-    }
-    namespace propagation {
-      namespace analytical {
-        namespace tle {
-          class TLE;
-          class TLEPropagator;
-          namespace generation {
-            class TleGenerationAlgorithm;
-          }
-        }
-      }
-      namespace conversion {
-        class TLEPropagatorBuilder;
-        class PropagatorBuilder;
-      }
-    }
-    namespace orbits {
-      class PositionAngleType;
     }
   }
 }
@@ -59,12 +59,12 @@ namespace org {
         class TLEPropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_cb396584af19332c,
-            mid_init$_c9527380c71353fc,
-            mid_buildLeastSquaresModel_1a4dd1f247347a8f,
-            mid_buildPropagator_def703a4cd204ea8,
-            mid_copy_f0f088b56f464362,
-            mid_getTemplateTLE_1c01e307dcced049,
+            mid_init$_edb8bfbb9c94d0c5,
+            mid_init$_d8ddb83f6cdc6ad6,
+            mid_buildLeastSquaresModel_434804ad6c6cc8a8,
+            mid_buildPropagator_f71c7f606859fe78,
+            mid_copy_359c84901857d78a,
+            mid_getTemplateTLE_dacb215ad36dee42,
             max_mid
           };
 

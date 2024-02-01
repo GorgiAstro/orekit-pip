@@ -6,10 +6,10 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class FieldAbsoluteDate;
-      class DateComponents;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
       class TimeComponents;
+      class DateComponents;
       class TimeScale;
     }
   }
@@ -32,11 +32,11 @@ namespace org {
       class TAIScale : public ::java::lang::Object {
        public:
         enum {
-          mid_getName_1c1fa1e935d6cdcf,
-          mid_offsetFromTAI_fd347811007a6ba3,
-          mid_offsetFromTAI_140b8964300ddedf,
-          mid_offsetToTAI_e7a49f02c43fd893,
-          mid_toString_1c1fa1e935d6cdcf,
+          mid_getName_d2c8eb4129821f0e,
+          mid_offsetFromTAI_209f08246d708042,
+          mid_offsetFromTAI_cf010978f3c5a913,
+          mid_offsetToTAI_50aa1fdea9b81950,
+          mid_toString_d2c8eb4129821f0e,
           max_mid
         };
 

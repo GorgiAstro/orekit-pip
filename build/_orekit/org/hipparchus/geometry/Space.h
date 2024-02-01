@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace geometry {
-      class Space;
-    }
     namespace exception {
       class MathRuntimeException;
+    }
+    namespace geometry {
+      class Space;
     }
   }
 }
@@ -27,8 +27,8 @@ namespace org {
       class Space : public ::java::io::Serializable {
        public:
         enum {
-          mid_getDimension_55546ef6a647f39b,
-          mid_getSubSpace_9afbccb68c8e9ef8,
+          mid_getDimension_d6ab429752e7c267,
+          mid_getSubSpace_a30bf0b437744017,
           max_mid
         };
 

@@ -3,17 +3,17 @@
 
 #include "org/orekit/files/ccsds/section/CommentsContainer.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,18 +27,18 @@ namespace org {
           class Header : public ::org::orekit::files::ccsds::section::CommentsContainer {
            public:
             enum {
-              mid_init$_369b4c97255d5afa,
-              mid_getClassification_1c1fa1e935d6cdcf,
-              mid_getCreationDate_c325492395d89b24,
-              mid_getFormatVersion_b74f83833fdad017,
-              mid_getMessageId_1c1fa1e935d6cdcf,
-              mid_getOriginator_1c1fa1e935d6cdcf,
-              mid_setClassification_734b91ac30d5f9b4,
-              mid_setCreationDate_02135a6ef25adb4b,
-              mid_setFormatVersion_8ba9fe7a847cecad,
-              mid_setMessageId_734b91ac30d5f9b4,
-              mid_setOriginator_734b91ac30d5f9b4,
-              mid_validate_8ba9fe7a847cecad,
+              mid_init$_13edac039e8cc967,
+              mid_getClassification_d2c8eb4129821f0e,
+              mid_getCreationDate_80e11148db499dda,
+              mid_getFormatVersion_9981f74b2d109da6,
+              mid_getMessageId_d2c8eb4129821f0e,
+              mid_getOriginator_d2c8eb4129821f0e,
+              mid_setClassification_105e1eadb709d9ac,
+              mid_setCreationDate_8497861b879c83f7,
+              mid_setFormatVersion_1ad26e8c8c0cd65b,
+              mid_setMessageId_105e1eadb709d9ac,
+              mid_setOriginator_105e1eadb709d9ac,
+              mid_validate_1ad26e8c8c0cd65b,
               max_mid
             };
 

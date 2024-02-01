@@ -3,6 +3,13 @@
 
 #include "org/orekit/ssa/collision/shorttermencounter/probability/twod/AbstractAlfriend1999.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
     namespace ssa {
@@ -21,13 +28,6 @@ namespace org {
     class CalculusFieldElement;
   }
 }
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-    class String;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -41,14 +41,14 @@ namespace org {
               class PythonAbstractAlfriend1999 : public ::org::orekit::ssa::collision::shorttermencounter::probability::twod::AbstractAlfriend1999 {
                public:
                 enum {
-                  mid_init$_734b91ac30d5f9b4,
-                  mid_computeValue_f804f816b79164cb,
-                  mid_computeValue_8a93710b1b1536a6,
-                  mid_finalize_a1fa5dae97ea5ed2,
-                  mid_getType_8397a286d982b383,
-                  mid_pythonDecRef_a1fa5dae97ea5ed2,
-                  mid_pythonExtension_6c0ce7e438e5ded4,
-                  mid_pythonExtension_3d7dd2314a0dd456,
+                  mid_init$_105e1eadb709d9ac,
+                  mid_computeValue_db06d8c3fc3d9670,
+                  mid_computeValue_3130e338b3b4d904,
+                  mid_finalize_ff7cb6c242604316,
+                  mid_getType_592990a91429410c,
+                  mid_pythonDecRef_ff7cb6c242604316,
+                  mid_pythonExtension_42c72b98e3c2e08a,
+                  mid_pythonExtension_f5bbab7e97879358,
                   max_mid
                 };
 

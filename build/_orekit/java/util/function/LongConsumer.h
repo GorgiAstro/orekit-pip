@@ -22,8 +22,8 @@ namespace java {
       class LongConsumer : public ::java::lang::Object {
        public:
         enum {
-          mid_accept_3d7dd2314a0dd456,
-          mid_andThen_b7f23f6be88bace3,
+          mid_accept_f5bbab7e97879358,
+          mid_andThen_e5f704fe4e8df09c,
           max_mid
         };
 

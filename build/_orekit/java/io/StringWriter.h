@@ -5,8 +5,8 @@
 
 namespace java {
   namespace lang {
-    class CharSequence;
     class StringBuffer;
+    class CharSequence;
     class Class;
     class String;
   }
@@ -23,19 +23,19 @@ namespace java {
     class StringWriter : public ::java::io::Writer {
      public:
       enum {
-        mid_init$_a1fa5dae97ea5ed2,
-        mid_init$_44ed599e93e8a30c,
-        mid_append_2fd64e854460fa61,
-        mid_append_75e29451e1add07a,
-        mid_append_8b1c860531051f82,
-        mid_close_a1fa5dae97ea5ed2,
-        mid_flush_a1fa5dae97ea5ed2,
-        mid_getBuffer_9ddc431ab9a0d12b,
-        mid_toString_1c1fa1e935d6cdcf,
-        mid_write_734b91ac30d5f9b4,
-        mid_write_44ed599e93e8a30c,
-        mid_write_d23ba6c655e17478,
-        mid_write_eb74d6dc93e0751e,
+        mid_init$_ff7cb6c242604316,
+        mid_init$_8fd427ab23829bf5,
+        mid_append_ced84d40a330cb87,
+        mid_append_711d0d8909e52768,
+        mid_append_fc72a286a05709d6,
+        mid_close_ff7cb6c242604316,
+        mid_flush_ff7cb6c242604316,
+        mid_getBuffer_eb1ec7cf84c46af7,
+        mid_toString_d2c8eb4129821f0e,
+        mid_write_105e1eadb709d9ac,
+        mid_write_8fd427ab23829bf5,
+        mid_write_6f10578448832e2a,
+        mid_write_c9a77c84756b106b,
         max_mid
       };
 

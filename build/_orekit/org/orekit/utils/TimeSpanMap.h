@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace utils {
       class TimeSpanMap$Span;
-      class TimeSpanMap;
       class TimeSpanMap$Transition;
+      class TimeSpanMap;
     }
     namespace time {
       class AbsoluteDate;
@@ -29,18 +29,18 @@ namespace org {
       class TimeSpanMap : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_55f3c894852c27a3,
-          mid_addValidAfter_8fdd18825f40925f,
-          mid_addValidBefore_8fdd18825f40925f,
-          mid_addValidBetween_3d88095cff705c55,
-          mid_extractRange_2917731b47ff4d6e,
-          mid_get_65e8d6bf93c53df3,
-          mid_getFirstSpan_5290b219f9ebfd63,
-          mid_getFirstTransition_c754c29f2c04a95a,
-          mid_getLastSpan_5290b219f9ebfd63,
-          mid_getLastTransition_c754c29f2c04a95a,
-          mid_getSpan_d9699fc4c4f11b26,
-          mid_getSpansNumber_55546ef6a647f39b,
+          mid_init$_83ee235bb1e64e94,
+          mid_addValidAfter_6a96ca70f196c91a,
+          mid_addValidBefore_6a96ca70f196c91a,
+          mid_addValidBetween_e686ab6fdd0f2c77,
+          mid_extractRange_d943d113c5f78644,
+          mid_get_97aeacdc44f4297e,
+          mid_getFirstSpan_ea49fa2ad441b95d,
+          mid_getFirstTransition_1026700a6787ef22,
+          mid_getLastSpan_ea49fa2ad441b95d,
+          mid_getLastTransition_1026700a6787ef22,
+          mid_getSpan_7b19e06f3155cde2,
+          mid_getSpansNumber_d6ab429752e7c267,
           max_mid
         };
 

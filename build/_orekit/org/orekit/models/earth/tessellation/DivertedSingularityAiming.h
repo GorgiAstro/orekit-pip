@@ -3,6 +3,14 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -31,14 +39,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -50,9 +50,9 @@ namespace org {
           class DivertedSingularityAiming : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_88fcdb5a5fbf7a17,
-              mid_alongTileDirection_636e2b82319b8646,
-              mid_getSingularPoints_e62d3bb06d56d7e3,
+              mid_init$_75a5b53fa8df102b,
+              mid_alongTileDirection_73bb6a45361007eb,
+              mid_getSingularPoints_d751c1a57012b438,
               max_mid
             };
 

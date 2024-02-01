@@ -4,14 +4,29 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+    class Field;
+    class CalculusFieldElement;
+  }
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace propagation {
       namespace numerical {
-        class FieldTimeDerivativesEquations;
         class TimeDerivativesEquations;
+        class FieldTimeDerivativesEquations;
       }
-      class SpacecraftState;
       class FieldSpacecraftState;
+      class SpacecraftState;
     }
     namespace forces {
       class ForceModel;
@@ -19,21 +34,6 @@ namespace org {
     namespace utils {
       class ParameterDriver;
     }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-    class Field;
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -55,22 +55,22 @@ namespace org {
       class PythonForceModel : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_acceleration_0ce449c67b5ffd9c,
-          mid_acceleration_20bded0292328743,
-          mid_addContribution_6aa2b69cacacea60,
-          mid_addContribution_ab5e59960ebc27c2,
-          mid_dependsOnPositionOnly_9ab94ac1dc23b105,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_getParameterDriver_1ab2f25935933fb2,
-          mid_getParameters_25e1757a36c4dde2,
-          mid_getParameters_5286daa2a5b3d227,
-          mid_getParametersDrivers_e62d3bb06d56d7e3,
-          mid_init_2d7f9a496c7e9781,
-          mid_isSupported_cde6b28e15c96b75,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_init$_ff7cb6c242604316,
+          mid_acceleration_9816b8f76e94356a,
+          mid_acceleration_5e147f44c28a35c9,
+          mid_addContribution_05bb906f491bab6b,
+          mid_addContribution_2fcaaed225365615,
+          mid_dependsOnPositionOnly_eee3de00fe971136,
+          mid_finalize_ff7cb6c242604316,
+          mid_getParameterDriver_a75a8a462ead0b8a,
+          mid_getParameters_be783177b060994b,
+          mid_getParameters_84f929c42eeec397,
+          mid_getParametersDrivers_d751c1a57012b438,
+          mid_init_14deaae988292d42,
+          mid_isSupported_df4c65b2aede5c41,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
           max_mid
         };
 

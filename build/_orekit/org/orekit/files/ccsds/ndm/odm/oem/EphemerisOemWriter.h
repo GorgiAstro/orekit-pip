@@ -6,27 +6,27 @@
 namespace org {
   namespace orekit {
     namespace files {
+      namespace general {
+        class EphemerisFile;
+        class EphemerisFile$EphemerisSegment;
+        class EphemerisFileWriter;
+      }
       namespace ccsds {
-        namespace utils {
-          namespace generation {
-            class Generator;
-          }
-          class FileFormat;
-        }
         namespace ndm {
           namespace odm {
             namespace oem {
-              class OemWriter;
               class OemMetadata;
+              class OemWriter;
             }
             class OdmHeader;
           }
         }
-      }
-      namespace general {
-        class EphemerisFileWriter;
-        class EphemerisFile$EphemerisSegment;
-        class EphemerisFile;
+        namespace utils {
+          class FileFormat;
+          namespace generation {
+            class Generator;
+          }
+        }
       }
     }
   }
@@ -54,9 +54,9 @@ namespace org {
               class EphemerisOemWriter : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_50b72ffa74cd56d4,
-                  mid_write_b257e3ad1002b2a9,
-                  mid_writeSegment_4c1c226593ef2df7,
+                  mid_init$_ea551678138489b1,
+                  mid_write_12ce9ebfe43ac6e6,
+                  mid_writeSegment_9fe3766494d1e809,
                   max_mid
                 };
 

@@ -12,13 +12,13 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace utils {
-      class TimeSpanMap;
-      class ParameterObserver;
-      class ParameterDriver;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterObserver;
+      class TimeSpanMap;
+      class ParameterDriver;
     }
   }
 }
@@ -31,13 +31,13 @@ namespace org {
       class PythonParameterObserver : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
-          mid_valueChanged_1213852ac6f6619d,
-          mid_valueSpanMapChanged_a1a4c13d6e36518d,
+          mid_init$_ff7cb6c242604316,
+          mid_finalize_ff7cb6c242604316,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
+          mid_valueChanged_561d325e967ec35c,
+          mid_valueSpanMapChanged_d10bdde76d08bc2c,
           max_mid
         };
 

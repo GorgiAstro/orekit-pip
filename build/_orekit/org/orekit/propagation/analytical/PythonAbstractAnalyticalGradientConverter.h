@@ -3,21 +3,12 @@
 
 #include "org/orekit/propagation/analytical/AbstractAnalyticalGradientConverter.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
       namespace analytical {
-        class AbstractAnalyticalPropagator;
         class FieldAbstractAnalyticalPropagator;
+        class AbstractAnalyticalPropagator;
       }
       class FieldSpacecraftState;
     }
@@ -33,6 +24,15 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -43,13 +43,13 @@ namespace org {
         class PythonAbstractAnalyticalGradientConverter : public ::org::orekit::propagation::analytical::AbstractAnalyticalGradientConverter {
          public:
           enum {
-            mid_init$_296566653f57b5ed,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getParametersDrivers_e62d3bb06d56d7e3,
-            mid_getPropagator_50636e1e84d390e7,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_1966ec07e9760ef3,
+            mid_finalize_ff7cb6c242604316,
+            mid_getParametersDrivers_d751c1a57012b438,
+            mid_getPropagator_4f7a484ba5bae905,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

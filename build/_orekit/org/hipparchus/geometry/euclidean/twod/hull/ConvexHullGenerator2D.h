@@ -9,10 +9,10 @@ namespace org {
       namespace euclidean {
         namespace twod {
           class Vector2D;
+          class Euclidean2D;
           namespace hull {
             class ConvexHull2D;
           }
-          class Euclidean2D;
         }
       }
     }
@@ -41,7 +41,7 @@ namespace org {
             class ConvexHullGenerator2D : public ::org::hipparchus::geometry::hull::ConvexHullGenerator {
              public:
               enum {
-                mid_generate_ae326bc9ed5d7af0,
+                mid_generate_7454961d4f202a9b,
                 max_mid
               };
 

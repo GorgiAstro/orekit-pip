@@ -5,10 +5,10 @@
 
 namespace java {
   namespace util {
-    class List;
     namespace stream {
       class Stream;
     }
+    class List;
   }
   namespace lang {
     class Class;
@@ -40,10 +40,10 @@ namespace org {
         class EventDetectorsProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_getEventDetectors_14e21bf777ff0ccf,
-            mid_getEventDetectors_b6d6fcabc14abaa4,
-            mid_getFieldEventDetectors_283ad33581c047a0,
-            mid_getFieldEventDetectors_cc7121c1f0e78224,
+            mid_getEventDetectors_11e4ca8182c1933d,
+            mid_getEventDetectors_951f9571abe096f0,
+            mid_getFieldEventDetectors_d3db121d9deb0312,
+            mid_getFieldEventDetectors_c431176e53847efa,
             max_mid
           };
 

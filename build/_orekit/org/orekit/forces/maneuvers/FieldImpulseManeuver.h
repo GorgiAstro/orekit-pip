@@ -8,6 +8,12 @@ namespace org {
     namespace attitudes {
       class AttitudeProvider;
     }
+    namespace propagation {
+      namespace events {
+        class FieldEventDetector;
+      }
+      class FieldSpacecraftState;
+    }
     namespace time {
       class FieldAbsoluteDate;
     }
@@ -15,12 +21,6 @@ namespace org {
       namespace maneuvers {
         class Control3DVectorCostType;
       }
-    }
-    namespace propagation {
-      namespace events {
-        class FieldEventDetector;
-      }
-      class FieldSpacecraftState;
     }
   }
   namespace hipparchus {
@@ -49,17 +49,17 @@ namespace org {
         class FieldImpulseManeuver : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_2fe057877dc3cacd,
-            mid_init$_00e409c52b5011bd,
-            mid_init$_5fa6baf09859d34e,
-            mid_g_2203631097e94c79,
-            mid_getAttitudeOverride_331f12bb6017243b,
-            mid_getControl3DVectorCostType_2eba60c257188b83,
-            mid_getDeltaVSat_ff5ac73a7b43eddd,
-            mid_getIsp_81520b552cb3fa26,
-            mid_getTrigger_e78af9d734a5fbe1,
-            mid_init_96d019f392abf918,
-            mid_create_353131f514daeb58,
+            mid_init$_c90a3213a1e71249,
+            mid_init$_719b627d41a71039,
+            mid_init$_687234d408d4818f,
+            mid_g_ac6fccc69d1b2d9e,
+            mid_getAttitudeOverride_2f73d1f4460b8d6c,
+            mid_getControl3DVectorCostType_fc9abda16ef946e0,
+            mid_getDeltaVSat_d1b42a6748e907f9,
+            mid_getIsp_08d37e3f77b7239d,
+            mid_getTrigger_3146cd1129cf853c,
+            mid_init_357211ab77703f3f,
+            mid_create_7bc6fd9145d32828,
             max_mid
           };
 

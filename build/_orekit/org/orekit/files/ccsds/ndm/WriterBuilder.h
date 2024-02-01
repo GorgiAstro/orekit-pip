@@ -5,47 +5,47 @@
 
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataContext;
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
+          namespace cdm {
+            class CdmWriter;
+          }
+          namespace tdm {
+            class TdmWriter;
+          }
           namespace odm {
-            namespace opm {
-              class OpmWriter;
+            namespace oem {
+              class OemWriter;
             }
             namespace omm {
               class OmmWriter;
             }
-            namespace oem {
-              class OemWriter;
-            }
             namespace ocm {
               class OcmWriter;
             }
+            namespace opm {
+              class OpmWriter;
+            }
           }
           namespace adm {
-            namespace aem {
-              class AemWriter;
-            }
             namespace apm {
               class ApmWriter;
             }
             namespace acm {
               class AcmWriter;
             }
+            namespace aem {
+              class AemWriter;
+            }
           }
           class NdmWriter;
-          namespace tdm {
-            class TdmWriter;
-          }
           class WriterBuilder;
-          namespace cdm {
-            class CdmWriter;
-          }
         }
       }
-    }
-    namespace data {
-      class DataContext;
     }
   }
 }
@@ -65,19 +65,19 @@ namespace org {
           class WriterBuilder : public ::org::orekit::files::ccsds::ndm::AbstractBuilder {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_init$_fe20320dccf187ae,
-              mid_buildAcmWriter_fc5d40ba6668d1b5,
-              mid_buildAemWriter_4cbddbbfbad55305,
-              mid_buildApmWriter_184b535474e11b6a,
-              mid_buildCdmWriter_d133dbcd26647dc1,
-              mid_buildNdmWriter_12d79f2835b2f4d6,
-              mid_buildOcmWriter_4c25f8fac6b2b165,
-              mid_buildOemWriter_a1a48572c2d708e8,
-              mid_buildOmmWriter_9813d7360f236031,
-              mid_buildOpmWriter_c889d008210b41ea,
-              mid_buildTdmWriter_26fcb0c241b23af1,
-              mid_create_87cfed1540ee5850,
+              mid_init$_ff7cb6c242604316,
+              mid_init$_e28302a82adb77ed,
+              mid_buildAcmWriter_23c93b609649e631,
+              mid_buildAemWriter_6d0e5cf65744a22d,
+              mid_buildApmWriter_f69cb258ef86a872,
+              mid_buildCdmWriter_522bec80cf151c2b,
+              mid_buildNdmWriter_8b6a196a7d6ed7e5,
+              mid_buildOcmWriter_07ff352b1a29d8b6,
+              mid_buildOemWriter_9a5f31897f9d2b87,
+              mid_buildOmmWriter_26d28c24a57d26a4,
+              mid_buildOpmWriter_860ae140e88023f6,
+              mid_buildTdmWriter_3f510563eaf6f808,
+              mid_create_23cb629edb0279d7,
               max_mid
             };
 

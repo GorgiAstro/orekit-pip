@@ -25,9 +25,9 @@ namespace org {
       class PositionAngleBased : public ::java::lang::Object {
        public:
         enum {
-          mid_getCachedPositionAngleType_c25055891f180348,
-          mid_hasRates_9ab94ac1dc23b105,
-          mid_removeRates_26ab66f50d4bfc93,
+          mid_getCachedPositionAngleType_a6db4e6edefda4be,
+          mid_hasRates_eee3de00fe971136,
+          mid_removeRates_5d34fcf76408ac01,
           max_mid
         };
 

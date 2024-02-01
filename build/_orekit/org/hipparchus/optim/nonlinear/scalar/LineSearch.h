@@ -6,13 +6,13 @@
 namespace org {
   namespace hipparchus {
     namespace optim {
+      namespace univariate {
+        class UnivariatePointValuePair;
+      }
       namespace nonlinear {
         namespace scalar {
           class MultivariateOptimizer;
         }
-      }
-      namespace univariate {
-        class UnivariatePointValuePair;
       }
     }
   }
@@ -33,8 +33,8 @@ namespace org {
           class LineSearch : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_5dd6771805fad5cf,
-              mid_search_b6b7b19b6c5ffebb,
+              mid_init$_56e28449faf12dba,
+              mid_search_eb189cc8ff2c76ea,
               max_mid
             };
 

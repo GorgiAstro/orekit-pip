@@ -5,22 +5,22 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      namespace analytical {
-        namespace gnss {
-          namespace data {
-            class SBASOrbitalElements;
-          }
-          class SBASPropagator;
-        }
-      }
+    namespace attitudes {
+      class AttitudeProvider;
     }
     namespace frames {
       class Frames;
       class Frame;
     }
-    namespace attitudes {
-      class AttitudeProvider;
+    namespace propagation {
+      namespace analytical {
+        namespace gnss {
+          class SBASPropagator;
+          namespace data {
+            class SBASOrbitalElements;
+          }
+        }
+      }
     }
   }
 }
@@ -41,21 +41,21 @@ namespace org {
             class SBASNavigationMessage : public ::org::orekit::propagation::analytical::gnss::data::AbstractEphemerisMessage {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_getAGf0_b74f83833fdad017,
-                mid_getAGf1_b74f83833fdad017,
-                mid_getIODN_55546ef6a647f39b,
-                mid_getPropagator_52115c132377a3e0,
-                mid_getPropagator_1ec3450f4d22f991,
-                mid_getPropagator_eee280a13363e1ef,
-                mid_getTime_b74f83833fdad017,
-                mid_getURA_b74f83833fdad017,
-                mid_getWeek_55546ef6a647f39b,
-                mid_setAGf0_8ba9fe7a847cecad,
-                mid_setAGf1_8ba9fe7a847cecad,
-                mid_setIODN_8ba9fe7a847cecad,
-                mid_setTime_8ba9fe7a847cecad,
-                mid_setURA_8ba9fe7a847cecad,
+                mid_init$_ff7cb6c242604316,
+                mid_getAGf0_9981f74b2d109da6,
+                mid_getAGf1_9981f74b2d109da6,
+                mid_getIODN_d6ab429752e7c267,
+                mid_getPropagator_570e6e91a72444e8,
+                mid_getPropagator_99e31c4392916504,
+                mid_getPropagator_ca5ca79d0cc5a090,
+                mid_getTime_9981f74b2d109da6,
+                mid_getURA_9981f74b2d109da6,
+                mid_getWeek_d6ab429752e7c267,
+                mid_setAGf0_1ad26e8c8c0cd65b,
+                mid_setAGf1_1ad26e8c8c0cd65b,
+                mid_setIODN_1ad26e8c8c0cd65b,
+                mid_setTime_1ad26e8c8c0cd65b,
+                mid_setURA_1ad26e8c8c0cd65b,
                 max_mid
               };
 

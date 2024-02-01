@@ -13,17 +13,17 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace bodies {
-      class GeodeticPoint;
-      class OneAxisEllipsoid;
-    }
     namespace models {
       namespace earth {
         namespace tessellation {
-          class TileAiming;
           class Tile;
+          class TileAiming;
         }
       }
+    }
+    namespace bodies {
+      class OneAxisEllipsoid;
+      class GeodeticPoint;
     }
   }
   namespace hipparchus {
@@ -47,12 +47,12 @@ namespace org {
           class EllipsoidTessellator : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a3d91d49623a90bf,
-              mid_buildSimpleZone_784441ded7dc083f,
-              mid_buildSimpleZone_2bffb02ae52a21cd,
-              mid_sample_847bf4854a4b83cd,
-              mid_tessellate_f423e5687a3d6692,
-              mid_toGeodetic_1767b75db8cabb48,
+              mid_init$_de32548b1c0b8c51,
+              mid_buildSimpleZone_8d71e4724117bcd6,
+              mid_buildSimpleZone_586b06c31e5fe186,
+              mid_sample_5c08085dc08f44c2,
+              mid_tessellate_247336b24d4de700,
+              mid_toGeodetic_2006aa17613f33d7,
               max_mid
             };
 

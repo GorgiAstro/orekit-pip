@@ -7,14 +7,14 @@ namespace java {
   namespace util {
     class List;
   }
+  namespace io {
+    class IOException;
+  }
   namespace lang {
     class Throwable;
     class Appendable;
     class Class;
     class String;
-  }
-  namespace io {
-    class IOException;
   }
 }
 namespace org {
@@ -45,16 +45,16 @@ namespace org {
             class PythonAbstractGenerator : public ::org::orekit::files::ccsds::utils::generation::AbstractGenerator {
              public:
               enum {
-                mid_init$_c8f0b9579f6d133f,
-                mid_endMessage_734b91ac30d5f9b4,
-                mid_finalize_a1fa5dae97ea5ed2,
-                mid_getFormat_e4c64bde02ca34c3,
-                mid_pythonDecRef_a1fa5dae97ea5ed2,
-                mid_pythonExtension_6c0ce7e438e5ded4,
-                mid_pythonExtension_3d7dd2314a0dd456,
-                mid_startMessage_03ff9b80a9f63d81,
-                mid_writeComments_0e7c3032c7c93ed3,
-                mid_writeEntry_bae21004607fffc6,
+                mid_init$_da38cf1e116c8866,
+                mid_endMessage_105e1eadb709d9ac,
+                mid_finalize_ff7cb6c242604316,
+                mid_getFormat_49975b0867f6c97c,
+                mid_pythonDecRef_ff7cb6c242604316,
+                mid_pythonExtension_42c72b98e3c2e08a,
+                mid_pythonExtension_f5bbab7e97879358,
+                mid_startMessage_04f72a78f21743a7,
+                mid_writeComments_aa335fea495d60e0,
+                mid_writeEntry_dbec4ebd43084884,
                 max_mid
               };
 

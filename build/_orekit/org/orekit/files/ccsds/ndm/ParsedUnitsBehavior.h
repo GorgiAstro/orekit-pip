@@ -3,14 +3,13 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
+    namespace utils {
+      namespace units {
+        class Unit;
+      }
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -18,11 +17,12 @@ namespace org {
         }
       }
     }
-    namespace utils {
-      namespace units {
-        class Unit;
-      }
-    }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -36,9 +36,9 @@ namespace org {
           class ParsedUnitsBehavior : public ::java::lang::Enum {
            public:
             enum {
-              mid_select_950d7f19836d06e5,
-              mid_valueOf_58cfe10c82037514,
-              mid_values_9998cd0e4f55bdc4,
+              mid_select_043a672d8cf4a758,
+              mid_valueOf_65a34aee56d67d57,
+              mid_values_607a7e793eabe17d,
               max_mid
             };
 

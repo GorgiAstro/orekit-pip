@@ -3,15 +3,23 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
         namespace twod {
           class Vector2D;
+        }
+        namespace threed {
+          class Vector3D;
         }
       }
     }
@@ -25,14 +33,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -42,19 +42,19 @@ namespace org {
       class Ellipse : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_62b9ceaa2d203299,
-          mid_getA_b74f83833fdad017,
-          mid_getB_b74f83833fdad017,
-          mid_getCenter_8b724f8b4fdad1a2,
-          mid_getCenterOfCurvature_3e1d04f71eb7f673,
-          mid_getFrame_2c51111cc6894ba1,
-          mid_getU_8b724f8b4fdad1a2,
-          mid_getV_8b724f8b4fdad1a2,
-          mid_pointAt_498f52cd8e5a7072,
-          mid_projectToEllipse_b59fe39c52b8d345,
-          mid_projectToEllipse_3e1d04f71eb7f673,
-          mid_toPlane_9d707d8812de06bd,
-          mid_toSpace_66b5e411a7caffe0,
+          mid_init$_2937540ec2093e7d,
+          mid_getA_9981f74b2d109da6,
+          mid_getB_9981f74b2d109da6,
+          mid_getCenter_032312bdeb3f2f93,
+          mid_getCenterOfCurvature_041693b38ced02ad,
+          mid_getFrame_cb151471db4570f0,
+          mid_getU_032312bdeb3f2f93,
+          mid_getV_032312bdeb3f2f93,
+          mid_pointAt_98a3eeef43dce47a,
+          mid_projectToEllipse_d354398d2df6ac32,
+          mid_projectToEllipse_041693b38ced02ad,
+          mid_toPlane_2e7d3e3e3ac549f4,
+          mid_toSpace_0e24ce6d026e4bfd,
           max_mid
         };
 

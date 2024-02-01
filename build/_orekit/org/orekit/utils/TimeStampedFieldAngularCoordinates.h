@@ -4,29 +4,29 @@
 #include "org/orekit/utils/FieldAngularCoordinates.h"
 
 namespace org {
-  namespace orekit {
-    namespace utils {
-      class FieldPVCoordinates;
-      class TimeStampedFieldAngularCoordinates;
-      class TimeStampedAngularCoordinates;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-      class FieldTimeStamped;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldRotation;
           class FieldVector3D;
+          class FieldRotation;
         }
       }
     }
     class Field;
     class CalculusFieldElement;
+  }
+  namespace orekit {
+    namespace time {
+      class FieldTimeStamped;
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
+    namespace utils {
+      class TimeStampedAngularCoordinates;
+      class TimeStampedFieldAngularCoordinates;
+      class FieldPVCoordinates;
+    }
   }
 }
 namespace java {
@@ -43,18 +43,18 @@ namespace org {
       class TimeStampedFieldAngularCoordinates : public ::org::orekit::utils::FieldAngularCoordinates {
        public:
         enum {
-          mid_init$_f8b481461ea8ab39,
-          mid_init$_61cf0823ade6dd93,
-          mid_init$_52727332bd6be5b2,
-          mid_init$_1a460667376305ef,
-          mid_init$_145a04a9f1c56fe2,
-          mid_init$_c1c3e02e01cb1f0e,
-          mid_addOffset_a34ef7d1f116941c,
-          mid_getDate_fa23a4301b9c83e7,
-          mid_revert_508aa3ee9876a7be,
-          mid_shiftedBy_420699eb39f86905,
-          mid_shiftedBy_a6ca19a27632ab4d,
-          mid_subtractOffset_a34ef7d1f116941c,
+          mid_init$_7d09f2d0faf56c24,
+          mid_init$_676022eb1673e53e,
+          mid_init$_87a6951a5af3d263,
+          mid_init$_69ea71c8c9a32ba2,
+          mid_init$_4abaeb2757df3c22,
+          mid_init$_92038f93efa6e128,
+          mid_addOffset_b876eda6b0934506,
+          mid_getDate_1fea28374011eef5,
+          mid_revert_3c739ea1aa8f99e1,
+          mid_shiftedBy_3e397c1726400ba8,
+          mid_shiftedBy_356565215fd243d9,
+          mid_subtractOffset_b876eda6b0934506,
           max_mid
         };
 

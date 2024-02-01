@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace propagation {
       namespace events {
         class FieldEventDetector;
         class FieldEnablingPredicate;
       }
       class FieldSpacecraftState;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -35,11 +35,11 @@ namespace org {
         class FieldEventEnablingPredicateFilter : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_d4e28ddd38f6c1a8,
-            mid_g_2203631097e94c79,
-            mid_getDetector_e78af9d734a5fbe1,
-            mid_init_96d019f392abf918,
-            mid_create_ea597dbd46e47ae8,
+            mid_init$_b1d11f9c2ad251c4,
+            mid_g_ac6fccc69d1b2d9e,
+            mid_getDetector_3146cd1129cf853c,
+            mid_init_357211ab77703f3f,
+            mid_create_b8a21e6c1bd745e4,
             max_mid
           };
 

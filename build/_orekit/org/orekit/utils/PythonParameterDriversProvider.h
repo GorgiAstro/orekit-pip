@@ -3,6 +3,14 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace utils {
+      class ParameterDriversProvider;
+      class ParameterDriver;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,14 +18,6 @@ namespace java {
   namespace lang {
     class Throwable;
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace utils {
-      class ParameterDriver;
-      class ParameterDriversProvider;
-    }
   }
 }
 template<class T> class JArray;
@@ -29,12 +29,12 @@ namespace org {
       class PythonParameterDriversProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_getParametersDrivers_e62d3bb06d56d7e3,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_init$_ff7cb6c242604316,
+          mid_finalize_ff7cb6c242604316,
+          mid_getParametersDrivers_d751c1a57012b438,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
           max_mid
         };
 

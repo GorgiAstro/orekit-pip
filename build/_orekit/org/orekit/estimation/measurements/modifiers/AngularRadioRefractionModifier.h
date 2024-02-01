@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
-    namespace models {
-      class AtmosphericRefractionModel;
-    }
     namespace estimation {
       namespace measurements {
-        class EstimationModifier;
         class AngularAzEl;
         class EstimatedMeasurementBase;
+        class EstimationModifier;
       }
+    }
+    namespace models {
+      class AtmosphericRefractionModel;
     }
     namespace utils {
       class ParameterDriver;
@@ -39,9 +39,9 @@ namespace org {
           class AngularRadioRefractionModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_8a73dfbd4c3170fc,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_modifyWithoutDerivatives_308087fabc1d7f66,
+              mid_init$_70543fade56340ec,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_modifyWithoutDerivatives_ecce216dce506020,
               max_mid
             };
 

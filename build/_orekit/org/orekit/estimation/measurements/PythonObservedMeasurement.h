@@ -3,6 +3,29 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class EstimatedMeasurementBase;
+        class ObservableSatellite;
+        class EstimationModifier;
+        class EstimatedMeasurement;
+        class ComparableMeasurement;
+        class ObservedMeasurement;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace propagation {
+      class SpacecraftState;
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -11,29 +34,6 @@ namespace java {
     class Throwable;
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class EstimationModifier;
-        class EstimatedMeasurementBase;
-        class ObservedMeasurement;
-        class EstimatedMeasurement;
-        class ObservableSatellite;
-        class ComparableMeasurement;
-      }
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace propagation {
-      class SpacecraftState;
-    }
   }
 }
 template<class T> class JArray;
@@ -46,26 +46,26 @@ namespace org {
         class PythonObservedMeasurement : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_addModifier_cb38ed914ba48f20,
-            mid_compareTo_6343361fedc17b25,
-            mid_estimate_d598991c5cac8ab0,
-            mid_estimateWithoutDerivatives_9347cf3b1f0dd85a,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getBaseWeight_25e1757a36c4dde2,
-            mid_getDate_c325492395d89b24,
-            mid_getDimension_55546ef6a647f39b,
-            mid_getMeasurementType_1c1fa1e935d6cdcf,
-            mid_getModifiers_e62d3bb06d56d7e3,
-            mid_getObservedValue_25e1757a36c4dde2,
-            mid_getParametersDrivers_e62d3bb06d56d7e3,
-            mid_getSatellites_e62d3bb06d56d7e3,
-            mid_getTheoreticalStandardDeviation_25e1757a36c4dde2,
-            mid_isEnabled_9ab94ac1dc23b105,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
-            mid_setEnabled_fcb96c98de6fad04,
+            mid_init$_ff7cb6c242604316,
+            mid_addModifier_a3bed5360bec47d0,
+            mid_compareTo_abfadd9b92595ff6,
+            mid_estimate_eda25b8c88791d9a,
+            mid_estimateWithoutDerivatives_59954f62fc64aef2,
+            mid_finalize_ff7cb6c242604316,
+            mid_getBaseWeight_be783177b060994b,
+            mid_getDate_80e11148db499dda,
+            mid_getDimension_d6ab429752e7c267,
+            mid_getMeasurementType_d2c8eb4129821f0e,
+            mid_getModifiers_d751c1a57012b438,
+            mid_getObservedValue_be783177b060994b,
+            mid_getParametersDrivers_d751c1a57012b438,
+            mid_getSatellites_d751c1a57012b438,
+            mid_getTheoreticalStandardDeviation_be783177b060994b,
+            mid_isEnabled_eee3de00fe971136,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
+            mid_setEnabled_b35db77cae58639e,
             max_mid
           };
 

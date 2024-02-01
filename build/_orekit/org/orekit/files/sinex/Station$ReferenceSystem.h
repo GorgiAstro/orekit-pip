@@ -3,6 +3,12 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
@@ -10,12 +16,6 @@ namespace org {
         class Station$ReferenceSystem;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,10 +28,10 @@ namespace org {
         class Station$ReferenceSystem : public ::java::lang::Enum {
          public:
           enum {
-            mid_getEccRefSystem_ac110b3b29acc51f,
-            mid_getName_1c1fa1e935d6cdcf,
-            mid_valueOf_ac110b3b29acc51f,
-            mid_values_93e83c8fff5d4389,
+            mid_getEccRefSystem_c04936d1e4042a0d,
+            mid_getName_d2c8eb4129821f0e,
+            mid_valueOf_c04936d1e4042a0d,
+            mid_values_1847f98486619384,
             max_mid
           };
 

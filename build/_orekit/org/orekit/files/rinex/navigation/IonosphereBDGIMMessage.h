@@ -3,17 +3,17 @@
 
 #include "org/orekit/files/rinex/navigation/IonosphereBaseMessage.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace gnss {
       class SatelliteSystem;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,9 +27,9 @@ namespace org {
           class IonosphereBDGIMMessage : public ::org::orekit::files::rinex::navigation::IonosphereBaseMessage {
            public:
             enum {
-              mid_init$_2f7855eb8fb85f32,
-              mid_getAlpha_25e1757a36c4dde2,
-              mid_setAlphaI_d5322b8b512aeb26,
+              mid_init$_96a1aa7c5f1486f9,
+              mid_getAlpha_be783177b060994b,
+              mid_setAlphaI_4320462275d66e78,
               max_mid
             };
 

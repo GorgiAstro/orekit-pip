@@ -27,8 +27,8 @@ namespace org {
       class HarmonicCurveFitter$ParameterGuesser : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7d8f123763cd893c,
-          mid_guess_25e1757a36c4dde2,
+          mid_init$_82af91bc8dfb5029,
+          mid_guess_be783177b060994b,
           max_mid
         };
 

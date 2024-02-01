@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace propagation {
       namespace events {
         class FieldEventDetector;
       }
-      class FieldSpacecraftState;
       class FieldEphemerisGenerator;
+      class FieldSpacecraftState;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -38,16 +38,16 @@ namespace org {
       class PythonFieldAbstractPropagator : public ::org::orekit::propagation::FieldAbstractPropagator {
        public:
         enum {
-          mid_init$_02ab84aa7626616d,
-          mid_addEventDetector_ca1d91eb6a3ce219,
-          mid_clearEventsDetectors_a1fa5dae97ea5ed2,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_getEphemerisGenerator_afe29c55086c638f,
-          mid_getEventsDetectors_cb666ea1a15f5210,
-          mid_propagate_44f88f604c4d00f1,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_init$_a44abdd035f01345,
+          mid_addEventDetector_bb8991c4a46cf56d,
+          mid_clearEventsDetectors_ff7cb6c242604316,
+          mid_finalize_ff7cb6c242604316,
+          mid_getEphemerisGenerator_96c2c30a0b0ad9e4,
+          mid_getEventsDetectors_3bfef5c77ceb081a,
+          mid_propagate_bcf793a6168805e3,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
           max_mid
         };
 

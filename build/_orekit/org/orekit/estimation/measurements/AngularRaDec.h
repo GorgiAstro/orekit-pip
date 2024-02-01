@@ -7,16 +7,16 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
+        class ObservableSatellite;
         class AngularRaDec;
         class GroundStation;
-        class ObservableSatellite;
       }
-    }
-    namespace frames {
-      class Frame;
     }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace frames {
+      class Frame;
     }
   }
   namespace hipparchus {
@@ -45,11 +45,11 @@ namespace org {
         class AngularRaDec : public ::org::orekit::estimation::measurements::GroundReceiverMeasurement {
          public:
           enum {
-            mid_init$_6e623b0c5c0e1cea,
-            mid_getObservedLineOfSight_982d534f80d70918,
-            mid_getReferenceFrame_2c51111cc6894ba1,
-            mid_theoreticalEvaluationWithoutDerivatives_9347cf3b1f0dd85a,
-            mid_theoreticalEvaluation_d598991c5cac8ab0,
+            mid_init$_a8f532d671f0ec66,
+            mid_getObservedLineOfSight_5996cdbecf4f0d06,
+            mid_getReferenceFrame_cb151471db4570f0,
+            mid_theoreticalEvaluationWithoutDerivatives_59954f62fc64aef2,
+            mid_theoreticalEvaluation_eda25b8c88791d9a,
             max_mid
           };
 

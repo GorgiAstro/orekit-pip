@@ -12,8 +12,8 @@ namespace org {
         }
         namespace ndm {
           namespace adm {
-            class AttitudeType;
             class AttitudeEndpoints;
+            class AttitudeType;
           }
         }
       }
@@ -52,35 +52,35 @@ namespace org {
               class AemMetadata : public ::org::orekit::files::ccsds::ndm::adm::AdmMetadata {
                public:
                 enum {
-                  mid_init$_44ed599e93e8a30c,
-                  mid_getAttitudeType_bcbb9cd2c002f9bf,
-                  mid_getEndpoints_c60ad1d207bc8e06,
-                  mid_getEulerRotSeq_513511eeab1350d5,
-                  mid_getFrameAngvelFrame_69d8be1b6b0a1a94,
-                  mid_getInterpolationDegree_55546ef6a647f39b,
-                  mid_getInterpolationMethod_1c1fa1e935d6cdcf,
-                  mid_getInterpolationSamples_55546ef6a647f39b,
-                  mid_getStart_c325492395d89b24,
-                  mid_getStartTime_c325492395d89b24,
-                  mid_getStop_c325492395d89b24,
-                  mid_getStopTime_c325492395d89b24,
-                  mid_getUseableStartTime_c325492395d89b24,
-                  mid_getUseableStopTime_c325492395d89b24,
-                  mid_isFirst_34d396f05e4572d8,
-                  mid_isSpacecraftBodyRate_9ab94ac1dc23b105,
-                  mid_rateFrameIsA_9ab94ac1dc23b105,
-                  mid_setAngvelFrame_4755133c5c4c59be,
-                  mid_setAttitudeType_99b2da2ae2d39db5,
-                  mid_setEulerRotSeq_062f1951e591952f,
-                  mid_setInterpolationDegree_44ed599e93e8a30c,
-                  mid_setInterpolationMethod_734b91ac30d5f9b4,
-                  mid_setIsFirst_fcb96c98de6fad04,
-                  mid_setRateFrameIsA_fcb96c98de6fad04,
-                  mid_setStartTime_02135a6ef25adb4b,
-                  mid_setStopTime_02135a6ef25adb4b,
-                  mid_setUseableStartTime_02135a6ef25adb4b,
-                  mid_setUseableStopTime_02135a6ef25adb4b,
-                  mid_validate_8ba9fe7a847cecad,
+                  mid_init$_8fd427ab23829bf5,
+                  mid_getAttitudeType_117217196ac7a101,
+                  mid_getEndpoints_d67fadc29cf1ce4a,
+                  mid_getEulerRotSeq_503d51f00fe64860,
+                  mid_getFrameAngvelFrame_0fc1562b68204151,
+                  mid_getInterpolationDegree_d6ab429752e7c267,
+                  mid_getInterpolationMethod_d2c8eb4129821f0e,
+                  mid_getInterpolationSamples_d6ab429752e7c267,
+                  mid_getStart_80e11148db499dda,
+                  mid_getStartTime_80e11148db499dda,
+                  mid_getStop_80e11148db499dda,
+                  mid_getStopTime_80e11148db499dda,
+                  mid_getUseableStartTime_80e11148db499dda,
+                  mid_getUseableStopTime_80e11148db499dda,
+                  mid_isFirst_b55c3109c27b90e3,
+                  mid_isSpacecraftBodyRate_eee3de00fe971136,
+                  mid_rateFrameIsA_eee3de00fe971136,
+                  mid_setAngvelFrame_2c8b859a72c0094e,
+                  mid_setAttitudeType_3b273fe5845fa3ea,
+                  mid_setEulerRotSeq_d6989ad0241efe2c,
+                  mid_setInterpolationDegree_8fd427ab23829bf5,
+                  mid_setInterpolationMethod_105e1eadb709d9ac,
+                  mid_setIsFirst_b35db77cae58639e,
+                  mid_setRateFrameIsA_b35db77cae58639e,
+                  mid_setStartTime_8497861b879c83f7,
+                  mid_setStopTime_8497861b879c83f7,
+                  mid_setUseableStartTime_8497861b879c83f7,
+                  mid_setUseableStopTime_8497861b879c83f7,
+                  mid_validate_1ad26e8c8c0cd65b,
                   max_mid
                 };
 

@@ -5,10 +5,10 @@
 
 namespace org {
   namespace hipparchus {
+    class Field;
     namespace exception {
       class MathIllegalArgumentException;
     }
-    class Field;
   }
 }
 namespace java {
@@ -26,10 +26,10 @@ namespace org {
         class IterativeLegendreFieldGaussIntegrator : public ::org::hipparchus::analysis::integration::BaseAbstractFieldUnivariateIntegrator {
          public:
           enum {
-            mid_init$_eb0a957f0424f345,
-            mid_init$_aa3d598d86c9a2b6,
-            mid_init$_c0b68a8af6ee9ffc,
-            mid_doIntegrate_81520b552cb3fa26,
+            mid_init$_a0aa104363595b82,
+            mid_init$_e2ca6bcdfe4e6004,
+            mid_init$_97cb888a329f1394,
+            mid_doIntegrate_08d37e3f77b7239d,
             max_mid
           };
 

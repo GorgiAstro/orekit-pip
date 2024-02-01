@@ -3,6 +3,12 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace rugged {
@@ -10,12 +16,6 @@ namespace org {
         class LineSensor;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,19 +28,19 @@ namespace org {
         class AtmosphericComputationParameters : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_configureCorrectionGrid_6998202d78aaf9b3,
-            mid_getDefaultInverseLocMargin_b74f83833fdad017,
-            mid_getInverseLocMargin_b74f83833fdad017,
-            mid_getMaxLineSensor_b74f83833fdad017,
-            mid_getMinLineSensor_b74f83833fdad017,
-            mid_getNbLineGrid_55546ef6a647f39b,
-            mid_getNbPixelGrid_55546ef6a647f39b,
-            mid_getSensorName_1c1fa1e935d6cdcf,
-            mid_getUgrid_25e1757a36c4dde2,
-            mid_getVgrid_25e1757a36c4dde2,
-            mid_setGridSteps_3313c75e3e16c428,
-            mid_setInverseLocMargin_8ba9fe7a847cecad,
+            mid_init$_ff7cb6c242604316,
+            mid_configureCorrectionGrid_bb9ef741884b06c3,
+            mid_getDefaultInverseLocMargin_9981f74b2d109da6,
+            mid_getInverseLocMargin_9981f74b2d109da6,
+            mid_getMaxLineSensor_9981f74b2d109da6,
+            mid_getMinLineSensor_9981f74b2d109da6,
+            mid_getNbLineGrid_d6ab429752e7c267,
+            mid_getNbPixelGrid_d6ab429752e7c267,
+            mid_getSensorName_d2c8eb4129821f0e,
+            mid_getUgrid_be783177b060994b,
+            mid_getVgrid_be783177b060994b,
+            mid_setGridSteps_b5d23e6c0858e8ed,
+            mid_setInverseLocMargin_1ad26e8c8c0cd65b,
             max_mid
           };
 

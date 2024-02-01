@@ -8,8 +8,8 @@ namespace org {
     namespace gnss {
       namespace metric {
         namespace parser {
-          class RtcmDataField;
           class DataField;
+          class RtcmDataField;
         }
       }
     }
@@ -32,8 +32,8 @@ namespace org {
           class RtcmDataField : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_a85154f3de9bc0e0,
-              mid_values_e41c0221a6cedd63,
+              mid_valueOf_47697340992c2033,
+              mid_values_8a76d635dea83836,
               max_mid
             };
 

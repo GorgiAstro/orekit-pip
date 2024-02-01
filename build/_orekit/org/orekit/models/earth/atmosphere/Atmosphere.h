@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
@@ -17,8 +17,8 @@ namespace org {
   }
   namespace orekit {
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
     namespace frames {
       class Frame;
@@ -41,11 +41,11 @@ namespace org {
           class Atmosphere : public ::java::io::Serializable {
            public:
             enum {
-              mid_getDensity_e9a4fc2340b58984,
-              mid_getDensity_58866e32a1c9318b,
-              mid_getFrame_2c51111cc6894ba1,
-              mid_getVelocity_2e30102aa3d53198,
-              mid_getVelocity_b79629c6a3fafdaa,
+              mid_getDensity_0c5821935d445848,
+              mid_getDensity_65e73ef68b3713d0,
+              mid_getFrame_cb151471db4570f0,
+              mid_getVelocity_9eb9e27560bce34b,
+              mid_getVelocity_9e32d405e56d9d4c,
               max_mid
             };
 

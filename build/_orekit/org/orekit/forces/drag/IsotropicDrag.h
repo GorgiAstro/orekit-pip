@@ -4,30 +4,30 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace forces {
       namespace drag {
         class DragSensitive;
       }
     }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
+    namespace utils {
+      class ParameterDriver;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -48,11 +48,11 @@ namespace org {
         class IsotropicDrag : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_369b4c97255d5afa,
-            mid_init$_49f4b5153d696ea5,
-            mid_dragAcceleration_7a2b875d7cdeb947,
-            mid_dragAcceleration_c95e6c4bf4979a1a,
-            mid_getDragParametersDrivers_e62d3bb06d56d7e3,
+            mid_init$_13edac039e8cc967,
+            mid_init$_cd5724127cc72e96,
+            mid_dragAcceleration_4a6ab2502c320936,
+            mid_dragAcceleration_73bcdbeb8ff641bb,
+            mid_getDragParametersDrivers_d751c1a57012b438,
             max_mid
           };
 

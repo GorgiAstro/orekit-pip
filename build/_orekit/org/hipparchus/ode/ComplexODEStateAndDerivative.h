@@ -3,16 +3,16 @@
 
 #include "org/hipparchus/ode/ComplexODEState.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace complex {
       class Complex;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,11 +24,11 @@ namespace org {
       class ComplexODEStateAndDerivative : public ::org::hipparchus::ode::ComplexODEState {
        public:
         enum {
-          mid_init$_e2fe458c1bfd60e4,
-          mid_init$_45c34c937b096403,
-          mid_getCompleteDerivative_24cc06122e1087cf,
-          mid_getPrimaryDerivative_24cc06122e1087cf,
-          mid_getSecondaryDerivative_1f034b9f28067a63,
+          mid_init$_7b02893fc4ec5c2d,
+          mid_init$_ac743bbff5834a67,
+          mid_getCompleteDerivative_6bea1b718c2aa50b,
+          mid_getPrimaryDerivative_6bea1b718c2aa50b,
+          mid_getSecondaryDerivative_aeabb9821b423b35,
           max_mid
         };
 

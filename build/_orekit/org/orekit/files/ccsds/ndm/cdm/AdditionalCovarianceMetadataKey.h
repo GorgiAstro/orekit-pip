@@ -7,17 +7,17 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace ndm {
+          namespace cdm {
+            class AdditionalCovarianceMetadataKey;
+            class AdditionalCovarianceMetadata;
+          }
+        }
         namespace utils {
           namespace lexical {
             class ParseToken;
           }
           class ContextBinding;
-        }
-        namespace ndm {
-          namespace cdm {
-            class AdditionalCovarianceMetadata;
-            class AdditionalCovarianceMetadataKey;
-          }
         }
       }
     }
@@ -41,9 +41,9 @@ namespace org {
             class AdditionalCovarianceMetadataKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_f098100daf0b7e97,
-                mid_valueOf_5ccdc9661978f168,
-                mid_values_6cfefcfb61f43e57,
+                mid_process_e4600b5e084f38b1,
+                mid_valueOf_df300428e2364229,
+                mid_values_678e799724d986ff,
                 max_mid
               };
 

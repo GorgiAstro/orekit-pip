@@ -3,12 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace utils {
@@ -16,6 +10,12 @@ namespace org {
         class Unit;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,8 +28,8 @@ namespace org {
         class UnitsCache : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_getUnits_d901bfc45b4f4fe6,
+            mid_init$_ff7cb6c242604316,
+            mid_getUnits_d6c2d8d5a508daeb,
             max_mid
           };
 

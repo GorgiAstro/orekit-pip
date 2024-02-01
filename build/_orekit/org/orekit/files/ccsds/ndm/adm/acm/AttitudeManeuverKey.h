@@ -44,9 +44,9 @@ namespace org {
               class AttitudeManeuverKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_85913089ad7b1168,
-                  mid_valueOf_41811bddf1c5b0f2,
-                  mid_values_c566490e76b0478b,
+                  mid_process_aa58e862a13265bf,
+                  mid_valueOf_28292684dc42143c,
+                  mid_values_5c4e54476f9cfcd1,
                   max_mid
                 };
 

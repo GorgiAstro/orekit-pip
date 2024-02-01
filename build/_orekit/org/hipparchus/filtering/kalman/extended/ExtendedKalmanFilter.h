@@ -7,11 +7,11 @@ namespace org {
   namespace hipparchus {
     namespace filtering {
       namespace kalman {
+        class Measurement;
         namespace extended {
           class NonLinearProcess;
         }
         class ProcessEstimate;
-        class Measurement;
       }
     }
     namespace linear {
@@ -38,8 +38,8 @@ namespace org {
           class ExtendedKalmanFilter : public ::org::hipparchus::filtering::kalman::AbstractKalmanFilter {
            public:
             enum {
-              mid_init$_b7725844b852e1f6,
-              mid_estimationStep_de0fd16eb0d97034,
+              mid_init$_bc88388598771a87,
+              mid_estimationStep_d720d2299c73357d,
               max_mid
             };
 

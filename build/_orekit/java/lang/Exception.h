@@ -17,10 +17,10 @@ namespace java {
     class Exception : public ::java::lang::Throwable {
      public:
       enum {
-        mid_init$_a1fa5dae97ea5ed2,
-        mid_init$_734b91ac30d5f9b4,
-        mid_init$_c5d3549d4f245728,
-        mid_init$_9d7a6ef9713b9df2,
+        mid_init$_ff7cb6c242604316,
+        mid_init$_105e1eadb709d9ac,
+        mid_init$_0a70d77e3c5fdad0,
+        mid_init$_e6096d9f5fb551a3,
         max_mid
       };
 

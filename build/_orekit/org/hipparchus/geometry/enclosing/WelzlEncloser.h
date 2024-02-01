@@ -6,13 +6,13 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      class Space;
-      class Point;
       namespace enclosing {
-        class EnclosingBall;
         class SupportBallGenerator;
         class Encloser;
+        class EnclosingBall;
       }
+      class Point;
+      class Space;
     }
   }
 }
@@ -32,9 +32,9 @@ namespace org {
         class WelzlEncloser : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_c7220a52787016bf,
-            mid_enclose_11758fc9a7169c2c,
-            mid_selectFarthest_882cf829bb92c726,
+            mid_init$_4679422c92ac5620,
+            mid_enclose_fc71bba104f0320f,
+            mid_selectFarthest_077faae7be41ab87,
             max_mid
           };
 

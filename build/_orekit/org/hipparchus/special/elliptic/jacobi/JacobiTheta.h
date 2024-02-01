@@ -5,15 +5,15 @@
 
 namespace org {
   namespace hipparchus {
-    namespace complex {
-      class Complex;
-    }
     namespace special {
       namespace elliptic {
         namespace jacobi {
           class Theta;
         }
       }
+    }
+    namespace complex {
+      class Complex;
     }
   }
 }
@@ -33,9 +33,9 @@ namespace org {
           class JacobiTheta : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_8ba9fe7a847cecad,
-              mid_getQ_b74f83833fdad017,
-              mid_values_bc44a51f1bf17a79,
+              mid_init$_1ad26e8c8c0cd65b,
+              mid_getQ_9981f74b2d109da6,
+              mid_values_14aa4f1bf3429ef3,
               max_mid
             };
 

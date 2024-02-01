@@ -24,9 +24,9 @@ namespace org {
           class FieldCopolarD : public ::java::lang::Object {
            public:
             enum {
-              mid_cd_81520b552cb3fa26,
-              mid_nd_81520b552cb3fa26,
-              mid_sd_81520b552cb3fa26,
+              mid_cd_08d37e3f77b7239d,
+              mid_nd_08d37e3f77b7239d,
+              mid_sd_08d37e3f77b7239d,
               max_mid
             };
 

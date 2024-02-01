@@ -30,13 +30,13 @@ namespace org {
       class NullArgumentException : public ::java::lang::NullPointerException {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_init$_9b3ada3301b0db8c,
-          mid_getLocalizedMessage_1c1fa1e935d6cdcf,
-          mid_getMessage_1c1fa1e935d6cdcf,
-          mid_getMessage_26070c28e6ea354d,
-          mid_getParts_24e2edd6319f4c5a,
-          mid_getSpecifier_d8f5056e4f45c9a6,
+          mid_init$_ff7cb6c242604316,
+          mid_init$_2436a4119ba97d87,
+          mid_getLocalizedMessage_d2c8eb4129821f0e,
+          mid_getMessage_d2c8eb4129821f0e,
+          mid_getMessage_5969ecf7afac3dba,
+          mid_getParts_2ab86268ef7a6631,
+          mid_getSpecifier_667bcd34994d9d31,
           max_mid
         };
 

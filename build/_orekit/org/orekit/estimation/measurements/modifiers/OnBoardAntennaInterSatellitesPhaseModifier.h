@@ -4,20 +4,11 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-    }
-  }
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class EstimationModifier;
         class EstimatedMeasurementBase;
+        class EstimationModifier;
         namespace gnss {
           class InterSatellitesPhase;
         }
@@ -25,6 +16,15 @@ namespace org {
     }
     namespace utils {
       class ParameterDriver;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
     }
   }
 }
@@ -47,9 +47,9 @@ namespace org {
           class OnBoardAntennaInterSatellitesPhaseModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_b651b5ef96594ce8,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_modifyWithoutDerivatives_308087fabc1d7f66,
+              mid_init$_c8e9682f0daaca68,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_modifyWithoutDerivatives_ecce216dce506020,
               max_mid
             };
 

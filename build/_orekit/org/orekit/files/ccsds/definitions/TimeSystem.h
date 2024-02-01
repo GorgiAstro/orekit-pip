@@ -8,8 +8,8 @@ namespace org {
     namespace files {
       namespace ccsds {
         namespace definitions {
-          class TimeSystem;
           class TimeConverter;
+          class TimeSystem;
         }
         namespace utils {
           class ContextBinding;
@@ -35,10 +35,10 @@ namespace org {
           class TimeSystem : public ::java::lang::Enum {
            public:
             enum {
-              mid_getConverter_45ac3c12f126fa2a,
-              mid_parse_67204ebc4d451065,
-              mid_valueOf_67204ebc4d451065,
-              mid_values_893f34a3cc18ea0d,
+              mid_getConverter_ac0c3940bd6a894e,
+              mid_parse_2830b2fcf1ea07ad,
+              mid_valueOf_2830b2fcf1ea07ad,
+              mid_values_61675bd8fde9f409,
               max_mid
             };
 

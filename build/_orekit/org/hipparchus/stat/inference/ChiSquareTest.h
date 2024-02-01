@@ -6,9 +6,9 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class NullArgumentException;
-      class MathIllegalStateException;
       class MathIllegalArgumentException;
+      class MathIllegalStateException;
+      class NullArgumentException;
     }
   }
 }
@@ -27,16 +27,16 @@ namespace org {
         class ChiSquareTest : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_chiSquare_54e0c9e47c29aca2,
-            mid_chiSquare_5da72ec1f5d4a740,
-            mid_chiSquareDataSetsComparison_f69626ae7ca2489a,
-            mid_chiSquareTest_54e0c9e47c29aca2,
-            mid_chiSquareTest_5da72ec1f5d4a740,
-            mid_chiSquareTest_446489047f3f1b4f,
-            mid_chiSquareTest_337fdba983c67932,
-            mid_chiSquareTestDataSetsComparison_f69626ae7ca2489a,
-            mid_chiSquareTestDataSetsComparison_05bd0745ca7cc56a,
+            mid_init$_ff7cb6c242604316,
+            mid_chiSquare_1a9d0eafbd140a5e,
+            mid_chiSquare_f8078c674056fb4a,
+            mid_chiSquareDataSetsComparison_8361d6bcedc1da1a,
+            mid_chiSquareTest_1a9d0eafbd140a5e,
+            mid_chiSquareTest_f8078c674056fb4a,
+            mid_chiSquareTest_61b6a9dae7ed2786,
+            mid_chiSquareTest_8ea380ac7c124df6,
+            mid_chiSquareTestDataSetsComparison_8361d6bcedc1da1a,
+            mid_chiSquareTestDataSetsComparison_0d632518d2300ac8,
             max_mid
           };
 

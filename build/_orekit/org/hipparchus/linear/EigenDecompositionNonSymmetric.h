@@ -5,15 +5,15 @@
 
 namespace org {
   namespace hipparchus {
-    namespace complex {
-      class Complex;
-    }
     namespace exception {
       class MathRuntimeException;
     }
+    namespace complex {
+      class Complex;
+    }
     namespace linear {
-      class RealMatrix;
       class FieldVector;
+      class RealMatrix;
     }
   }
 }
@@ -31,16 +31,16 @@ namespace org {
       class EigenDecompositionNonSymmetric : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_84bd15e0995d0c79,
-          mid_init$_5c88fbe0835e7c85,
-          mid_getD_f77d745f2128c391,
-          mid_getDeterminant_2f0868cbf8c045d4,
-          mid_getEigenvalue_98a65fafe34db74b,
-          mid_getEigenvalues_24cc06122e1087cf,
-          mid_getEigenvector_06abfeddf4c4a28c,
-          mid_getEpsilon_b74f83833fdad017,
-          mid_getV_f77d745f2128c391,
-          mid_getVInv_f77d745f2128c391,
+          mid_init$_f5364c9a9d9cbd53,
+          mid_init$_dc02fdb8767f32bc,
+          mid_getD_b2eebabce70526d8,
+          mid_getDeterminant_847706ebd9444ecb,
+          mid_getEigenvalue_1e8f748d6dce69c5,
+          mid_getEigenvalues_6bea1b718c2aa50b,
+          mid_getEigenvector_229c51f1f7aa44e3,
+          mid_getEpsilon_9981f74b2d109da6,
+          mid_getV_b2eebabce70526d8,
+          mid_getVInv_b2eebabce70526d8,
           max_mid
         };
 

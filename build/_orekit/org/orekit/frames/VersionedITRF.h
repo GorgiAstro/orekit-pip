@@ -24,7 +24,7 @@ namespace org {
       class VersionedITRF : public ::org::orekit::frames::Frame {
        public:
         enum {
-          mid_getITRFVersion_8bcdfad365f6d36a,
+          mid_getITRFVersion_4865f340ec39b9c4,
           max_mid
         };
 

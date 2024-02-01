@@ -3,20 +3,20 @@
 
 #include "java/lang/Enum.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace optim {
+      class OptimizationData;
+      namespace linear {
+        class PivotSelectionRule;
+      }
+    }
+  }
+}
 namespace java {
   namespace lang {
     class String;
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace optim {
-      namespace linear {
-        class PivotSelectionRule;
-      }
-      class OptimizationData;
-    }
   }
 }
 template<class T> class JArray;
@@ -29,8 +29,8 @@ namespace org {
         class PivotSelectionRule : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_998de040fdbee165,
-            mid_values_106e9355d9d13083,
+            mid_valueOf_7ee13544a71c7b55,
+            mid_values_bcdc02e9d3f3499c,
             max_mid
           };
 

@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace utils {
       class FieldTimeSpanMap$Transition;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -17,11 +17,11 @@ namespace org {
   }
 }
 namespace java {
-  namespace lang {
-    class Class;
-  }
   namespace util {
     class SortedSet;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -33,11 +33,11 @@ namespace org {
       class FieldTimeSpanMap : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_13b43261a6378381,
-          mid_addValidAfter_d24593f3082d9180,
-          mid_addValidBefore_d24593f3082d9180,
-          mid_get_46cdd7aa42a0075d,
-          mid_getTransitions_7961e54fd3a47d94,
+          mid_init$_3c8da9512f6f1dce,
+          mid_addValidAfter_e6f20b3cd53c33f7,
+          mid_addValidBefore_e6f20b3cd53c33f7,
+          mid_get_a8583e77f3e41420,
+          mid_getTransitions_815c7115fae241c1,
           max_mid
         };
 

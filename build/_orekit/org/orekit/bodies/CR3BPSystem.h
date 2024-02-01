@@ -4,6 +4,21 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace utils {
+      class AbsolutePVCoordinates;
+      class LagrangianPoints;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace bodies {
+      class CelestialBody;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -11,21 +26,6 @@ namespace org {
           class Vector3D;
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace utils {
-      class AbsolutePVCoordinates;
-      class LagrangianPoints;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace bodies {
-      class CelestialBody;
     }
   }
 }
@@ -44,19 +44,19 @@ namespace org {
       class CR3BPSystem : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_1b562bc47b00844a,
-          mid_init$_50e610073feca062,
-          mid_getDdim_b74f83833fdad017,
-          mid_getGamma_ba8242c61ee7476d,
-          mid_getLPosition_77c4fd1d0b7adeef,
-          mid_getMassRatio_b74f83833fdad017,
-          mid_getName_1c1fa1e935d6cdcf,
-          mid_getPrimary_5df52e80cbb5eb85,
-          mid_getRealAPV_7ffc15c037673c00,
-          mid_getRotatingFrame_2c51111cc6894ba1,
-          mid_getSecondary_5df52e80cbb5eb85,
-          mid_getTdim_b74f83833fdad017,
-          mid_getVdim_b74f83833fdad017,
+          mid_init$_1c5fc8f848b2359d,
+          mid_init$_9638af7be3d21a0e,
+          mid_getDdim_9981f74b2d109da6,
+          mid_getGamma_c86407606b360bbd,
+          mid_getLPosition_859a3c975ebcfbb7,
+          mid_getMassRatio_9981f74b2d109da6,
+          mid_getName_d2c8eb4129821f0e,
+          mid_getPrimary_a1474f5cfab89b5e,
+          mid_getRealAPV_10818cec4200efce,
+          mid_getRotatingFrame_cb151471db4570f0,
+          mid_getSecondary_a1474f5cfab89b5e,
+          mid_getTdim_9981f74b2d109da6,
+          mid_getVdim_9981f74b2d109da6,
           max_mid
         };
 

@@ -9,9 +9,9 @@ namespace org {
       namespace elliptic {
         namespace jacobi {
           class FieldCopolarC;
+          class FieldCopolarS;
           class FieldCopolarD;
           class FieldCopolarN;
-          class FieldCopolarS;
         }
       }
     }
@@ -34,39 +34,39 @@ namespace org {
           class FieldJacobiElliptic : public ::java::lang::Object {
            public:
             enum {
-              mid_arccd_1d3e368d09a6f8a6,
-              mid_arccd_6e00dc5eb352fe51,
-              mid_arccn_1d3e368d09a6f8a6,
-              mid_arccn_6e00dc5eb352fe51,
-              mid_arccs_1d3e368d09a6f8a6,
-              mid_arccs_6e00dc5eb352fe51,
-              mid_arcdc_1d3e368d09a6f8a6,
-              mid_arcdc_6e00dc5eb352fe51,
-              mid_arcdn_1d3e368d09a6f8a6,
-              mid_arcdn_6e00dc5eb352fe51,
-              mid_arcds_1d3e368d09a6f8a6,
-              mid_arcds_6e00dc5eb352fe51,
-              mid_arcnc_1d3e368d09a6f8a6,
-              mid_arcnc_6e00dc5eb352fe51,
-              mid_arcnd_1d3e368d09a6f8a6,
-              mid_arcnd_6e00dc5eb352fe51,
-              mid_arcns_1d3e368d09a6f8a6,
-              mid_arcns_6e00dc5eb352fe51,
-              mid_arcsc_1d3e368d09a6f8a6,
-              mid_arcsc_6e00dc5eb352fe51,
-              mid_arcsd_1d3e368d09a6f8a6,
-              mid_arcsd_6e00dc5eb352fe51,
-              mid_arcsn_1d3e368d09a6f8a6,
-              mid_arcsn_6e00dc5eb352fe51,
-              mid_getM_81520b552cb3fa26,
-              mid_valuesC_8be8c24353f60a26,
-              mid_valuesC_129e43c0421b2a56,
-              mid_valuesD_1fef81187f1d85dd,
-              mid_valuesD_2bcbd7af56ae2ca1,
-              mid_valuesN_728427f2d414bf9f,
-              mid_valuesN_85ecaf8f219fcb2d,
-              mid_valuesS_f895d5daf0fad2a4,
-              mid_valuesS_a43667de5a7880ba,
+              mid_arccd_e3d0ff3c0584eadf,
+              mid_arccd_a3b854adede8eaaa,
+              mid_arccn_e3d0ff3c0584eadf,
+              mid_arccn_a3b854adede8eaaa,
+              mid_arccs_e3d0ff3c0584eadf,
+              mid_arccs_a3b854adede8eaaa,
+              mid_arcdc_e3d0ff3c0584eadf,
+              mid_arcdc_a3b854adede8eaaa,
+              mid_arcdn_e3d0ff3c0584eadf,
+              mid_arcdn_a3b854adede8eaaa,
+              mid_arcds_e3d0ff3c0584eadf,
+              mid_arcds_a3b854adede8eaaa,
+              mid_arcnc_e3d0ff3c0584eadf,
+              mid_arcnc_a3b854adede8eaaa,
+              mid_arcnd_e3d0ff3c0584eadf,
+              mid_arcnd_a3b854adede8eaaa,
+              mid_arcns_e3d0ff3c0584eadf,
+              mid_arcns_a3b854adede8eaaa,
+              mid_arcsc_e3d0ff3c0584eadf,
+              mid_arcsc_a3b854adede8eaaa,
+              mid_arcsd_e3d0ff3c0584eadf,
+              mid_arcsd_a3b854adede8eaaa,
+              mid_arcsn_e3d0ff3c0584eadf,
+              mid_arcsn_a3b854adede8eaaa,
+              mid_getM_08d37e3f77b7239d,
+              mid_valuesC_b7ce9fba56994ed4,
+              mid_valuesC_2b42f4f538709bf3,
+              mid_valuesD_f444413ca237faeb,
+              mid_valuesD_1eaf79f5c38790f7,
+              mid_valuesN_dbaa4efdddec1b3d,
+              mid_valuesN_893396a44a3905f5,
+              mid_valuesS_be3a44280ba2f571,
+              mid_valuesS_83aa5c5a677c95f6,
               max_mid
             };
 

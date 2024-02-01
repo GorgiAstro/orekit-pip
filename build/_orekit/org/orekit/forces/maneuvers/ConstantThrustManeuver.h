@@ -5,26 +5,26 @@
 
 namespace org {
   namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
     namespace forces {
       namespace maneuvers {
+        namespace trigger {
+          class DateBasedManeuverTriggers;
+        }
         namespace propulsion {
           class AbstractConstantThrustPropulsionModel;
         }
         class Control3DVectorCostType;
-        namespace trigger {
-          class DateBasedManeuverTriggers;
-        }
       }
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-    namespace propagation {
-      class SpacecraftState;
-      class FieldSpacecraftState;
     }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace propagation {
+      class FieldSpacecraftState;
+      class SpacecraftState;
     }
   }
   namespace hipparchus {
@@ -53,29 +53,29 @@ namespace org {
         class ConstantThrustManeuver : public ::org::orekit::forces::maneuvers::Maneuver {
          public:
           enum {
-            mid_init$_222f3ac3ba5526f6,
-            mid_init$_b92ace1679db3ad4,
-            mid_init$_1d766a862a2fba89,
-            mid_init$_159216b8eab5f883,
-            mid_init$_421685bf274cf624,
-            mid_init$_b1f761fead489272,
-            mid_init$_2c8f4d747b28c68e,
-            mid_getDirection_8b724f8b4fdad1a2,
-            mid_getDirection_082e6346b274f880,
-            mid_getDuration_b74f83833fdad017,
-            mid_getEndDate_c325492395d89b24,
-            mid_getFlowRate_b74f83833fdad017,
-            mid_getFlowRate_fd347811007a6ba3,
-            mid_getIsp_b74f83833fdad017,
-            mid_getIsp_fd347811007a6ba3,
-            mid_getStartDate_c325492395d89b24,
-            mid_getThrustMagnitude_b74f83833fdad017,
-            mid_getThrustMagnitude_fd347811007a6ba3,
-            mid_getThrustVector_8b724f8b4fdad1a2,
-            mid_getThrustVector_082e6346b274f880,
-            mid_isFiring_e6d9e841ca2e035c,
-            mid_isFiring_97df9017614a1945,
-            mid_isFiring_a35647bda2901f54,
+            mid_init$_74034180fd61f214,
+            mid_init$_db3ac5fd76ec2ad9,
+            mid_init$_7196b47f4b26db4c,
+            mid_init$_ed4aad723e1e1fe5,
+            mid_init$_2f948334f1d5875b,
+            mid_init$_9b205a950ebc27e1,
+            mid_init$_8a4d34e8a5bc498f,
+            mid_getDirection_032312bdeb3f2f93,
+            mid_getDirection_8b37cafaaf55a3a5,
+            mid_getDuration_9981f74b2d109da6,
+            mid_getEndDate_80e11148db499dda,
+            mid_getFlowRate_9981f74b2d109da6,
+            mid_getFlowRate_209f08246d708042,
+            mid_getIsp_9981f74b2d109da6,
+            mid_getIsp_209f08246d708042,
+            mid_getStartDate_80e11148db499dda,
+            mid_getThrustMagnitude_9981f74b2d109da6,
+            mid_getThrustMagnitude_209f08246d708042,
+            mid_getThrustVector_032312bdeb3f2f93,
+            mid_getThrustVector_8b37cafaaf55a3a5,
+            mid_isFiring_712e981f67f3ccbe,
+            mid_isFiring_34f098c1d43e614c,
+            mid_isFiring_b16e79ba1b2830a1,
             max_mid
           };
 

@@ -17,9 +17,9 @@ namespace org {
       class OrdinaryDifferentialEquation : public ::java::lang::Object {
        public:
         enum {
-          mid_computeDerivatives_91fbb4072ae7ce9a,
-          mid_getDimension_55546ef6a647f39b,
-          mid_init_aa54f77f8b71901d,
+          mid_computeDerivatives_bfc955188bf36f2c,
+          mid_getDimension_d6ab429752e7c267,
+          mid_init_e5020eafae188c23,
           max_mid
         };
 

@@ -30,14 +30,14 @@ namespace org {
       class MultidimensionalCounter : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_86a2769cb881d388,
-          mid_getCount_d57a86117ebc55bd,
-          mid_getCounts_7247c1a113e968de,
-          mid_getDimension_55546ef6a647f39b,
-          mid_getSize_55546ef6a647f39b,
-          mid_getSizes_4d095d7a08163110,
-          mid_iterator_3bb401bf17509ee9,
-          mid_toString_1c1fa1e935d6cdcf,
+          mid_init$_d43202153dd284f7,
+          mid_getCount_4c6a473f00540fd2,
+          mid_getCounts_adb0f0485f08dbd0,
+          mid_getDimension_d6ab429752e7c267,
+          mid_getSize_d6ab429752e7c267,
+          mid_getSizes_d6f20bd740dd34cd,
+          mid_iterator_583b7bb7d2617813,
+          mid_toString_d2c8eb4129821f0e,
           max_mid
         };
 

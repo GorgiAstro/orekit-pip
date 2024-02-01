@@ -5,18 +5,18 @@
 
 namespace org {
   namespace hipparchus {
+    namespace util {
+      class MathUtils$SumAndResidual;
+      class MathUtils$FieldSumAndResidual;
+    }
     namespace exception {
-      class NullArgumentException;
-      class Localizable;
       class MathRuntimeException;
       class MathIllegalArgumentException;
-    }
-    class CalculusFieldElement;
-    namespace util {
-      class MathUtils$FieldSumAndResidual;
-      class MathUtils$SumAndResidual;
+      class Localizable;
+      class NullArgumentException;
     }
     class FieldElement;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -33,27 +33,27 @@ namespace org {
       class MathUtils : public ::java::lang::Object {
        public:
         enum {
-          mid_checkDimension_3313c75e3e16c428,
-          mid_checkFinite_ab69da052b88f50c,
-          mid_checkFinite_8ba9fe7a847cecad,
-          mid_checkNotNull_55f3c894852c27a3,
-          mid_checkNotNull_b40ae6e2feb49504,
-          mid_checkRangeInclusive_b5167f35b2521627,
-          mid_checkRangeInclusive_84e3a5649e949acb,
-          mid_copySign_75b669519a90ffd0,
-          mid_copySign_92ecd94558bf0c68,
-          mid_copySign_8f345e4204401ff5,
-          mid_copySign_7ef7cc415580895c,
-          mid_equals_cd8da52a7e84190c,
-          mid_hash_f4eedf29a683816e,
-          mid_hash_2af4736545087009,
-          mid_max_c6408fdce2cc6c1a,
-          mid_min_c6408fdce2cc6c1a,
-          mid_normalizeAngle_99e3200dafc19573,
-          mid_normalizeAngle_c6408fdce2cc6c1a,
-          mid_reduce_f804f816b79164cb,
-          mid_twoSum_4115efd6b05d8036,
-          mid_twoSum_1d2a4451bfe8222b,
+          mid_checkDimension_b5d23e6c0858e8ed,
+          mid_checkFinite_a71c45509eaf92d1,
+          mid_checkFinite_1ad26e8c8c0cd65b,
+          mid_checkNotNull_83ee235bb1e64e94,
+          mid_checkNotNull_1eef9f365bbd2d45,
+          mid_checkRangeInclusive_bd28dc6055dc5bbd,
+          mid_checkRangeInclusive_ca932f9f7e00d3a3,
+          mid_copySign_2808127888b4293b,
+          mid_copySign_91b9e1e34b2235d5,
+          mid_copySign_7912418dc9bc44e3,
+          mid_copySign_38206875b8cc5381,
+          mid_equals_0fc66ee74538f12c,
+          mid_hash_0bbaa89e7f8976bd,
+          mid_hash_9e72cb20adb363fb,
+          mid_max_b5ecd7df9e053968,
+          mid_min_b5ecd7df9e053968,
+          mid_normalizeAngle_82f92590f4247da1,
+          mid_normalizeAngle_b5ecd7df9e053968,
+          mid_reduce_db06d8c3fc3d9670,
+          mid_twoSum_ac565a513efe989e,
+          mid_twoSum_b856fba37b6f9318,
           max_mid
         };
 

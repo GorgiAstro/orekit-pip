@@ -5,9 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class IERSConventions;
-    }
     namespace data {
       class DataContext;
     }
@@ -22,6 +19,9 @@ namespace org {
           }
         }
       }
+    }
+    namespace utils {
+      class IERSConventions;
     }
     namespace time {
       class AbsoluteDate;
@@ -46,8 +46,8 @@ namespace org {
               class OmmWriter : public ::org::orekit::files::ccsds::utils::generation::AbstractMessageWriter {
                public:
                 enum {
-                  mid_init$_751257c373115a80,
-                  mid_writeSegmentContent_309d7ce7156c8c23,
+                  mid_init$_803b88445e6f9607,
+                  mid_writeSegmentContent_305aa7864995b122,
                   max_mid
                 };
 

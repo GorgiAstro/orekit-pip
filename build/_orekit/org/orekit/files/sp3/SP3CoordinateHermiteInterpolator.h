@@ -3,6 +3,11 @@
 
 #include "org/orekit/time/AbstractTimeInterpolator.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
@@ -10,11 +15,6 @@ namespace org {
         class SP3Coordinate;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,8 +27,8 @@ namespace org {
         class SP3CoordinateHermiteInterpolator : public ::org::orekit::time::AbstractTimeInterpolator {
          public:
           enum {
-            mid_init$_911582bb3a73ac58,
-            mid_interpolate_9c4ea1413f991f07,
+            mid_init$_50acb8bcbb80a276,
+            mid_interpolate_23da0fe02dfc8bed,
             max_mid
           };
 

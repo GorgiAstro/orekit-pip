@@ -11,13 +11,13 @@ namespace org {
       class FieldAttitude;
       class Attitude;
     }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
     namespace utils {
-      class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
+      class PVCoordinatesProvider;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
     namespace frames {
       class Frame;
@@ -38,11 +38,11 @@ namespace org {
       class TorqueFree : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_e345ce844a977b8c,
-          mid_getAttitude_896ee4d68989b1e8,
-          mid_getAttitude_21845cfb0034fe1c,
-          mid_getInertia_5cd6be00a4c2be15,
-          mid_getInitialAttitude_9d85ee1243dd5d25,
+          mid_init$_1a2ba29dfab02e0d,
+          mid_getAttitude_aab1c6ab68ffdcbb,
+          mid_getAttitude_a02177519e1b6a45,
+          mid_getInertia_355dbe403ed36c8e,
+          mid_getInitialAttitude_83f44b5ac6431edc,
           max_mid
         };
 

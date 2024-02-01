@@ -5,17 +5,17 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class NullArgumentException;
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
-    }
-    namespace util {
-      class IterationManager;
-    }
     namespace linear {
       class RealLinearOperator;
       class RealVector;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
+      class NullArgumentException;
+    }
+    namespace util {
+      class IterationManager;
     }
   }
 }
@@ -34,10 +34,10 @@ namespace org {
       class ConjugateGradient : public ::org::hipparchus::linear::PreconditionedIterativeLinearSolver {
        public:
         enum {
-          mid_init$_da450846491b522c,
-          mid_init$_911582bb3a73ac58,
-          mid_shouldCheck_9ab94ac1dc23b105,
-          mid_solveInPlace_0f4c606f88ffcaeb,
+          mid_init$_c5b1307f8763947a,
+          mid_init$_50acb8bcbb80a276,
+          mid_shouldCheck_eee3de00fe971136,
+          mid_solveInPlace_35226d9fdc897ac0,
           max_mid
         };
 

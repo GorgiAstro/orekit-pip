@@ -7,14 +7,14 @@ namespace org {
   namespace hipparchus {
     namespace analysis {
       namespace polynomials {
-        class SmoothStepFactory$SmoothStepFunction;
         class SmoothStepFactory$FieldSmoothStepFunction;
+        class SmoothStepFactory$SmoothStepFunction;
       }
     }
-    class Field;
     namespace exception {
       class MathIllegalArgumentException;
     }
+    class Field;
   }
 }
 namespace java {
@@ -32,17 +32,17 @@ namespace org {
         class SmoothStepFactory : public ::java::lang::Object {
          public:
           enum {
-            mid_checkBetweenZeroAndOneIncluded_8ba9fe7a847cecad,
-            mid_getClamp_08006f6c9018216e,
-            mid_getClamp_c81f7e343d53e75f,
-            mid_getCubic_08006f6c9018216e,
-            mid_getCubic_c81f7e343d53e75f,
-            mid_getFieldGeneralOrder_be398f450d2cffc9,
-            mid_getGeneralOrder_a28686a10ca4c52e,
-            mid_getQuadratic_08006f6c9018216e,
-            mid_getQuadratic_c81f7e343d53e75f,
-            mid_getQuintic_08006f6c9018216e,
-            mid_getQuintic_c81f7e343d53e75f,
+            mid_checkBetweenZeroAndOneIncluded_1ad26e8c8c0cd65b,
+            mid_getClamp_1290f283fe267abb,
+            mid_getClamp_802dd99c8beaa14e,
+            mid_getCubic_1290f283fe267abb,
+            mid_getCubic_802dd99c8beaa14e,
+            mid_getFieldGeneralOrder_96427c0eff98a2ae,
+            mid_getGeneralOrder_f55e3a9b179d965a,
+            mid_getQuadratic_1290f283fe267abb,
+            mid_getQuadratic_802dd99c8beaa14e,
+            mid_getQuintic_1290f283fe267abb,
+            mid_getQuintic_802dd99c8beaa14e,
             max_mid
           };
 

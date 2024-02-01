@@ -5,18 +5,18 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace propagation {
       namespace events {
-        class FieldAdaptableInterval;
         class FieldEventDetector;
         namespace handlers {
           class FieldEventHandler;
         }
+        class FieldAdaptableInterval;
       }
       class FieldSpacecraftState;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -38,14 +38,14 @@ namespace org {
         class FieldAdapterDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_ca1d91eb6a3ce219,
-            mid_g_2203631097e94c79,
-            mid_getDetector_e78af9d734a5fbe1,
-            mid_getHandler_3449c57ae1fbceff,
-            mid_getMaxCheckInterval_d0b60c59a7966d59,
-            mid_getMaxIterationCount_55546ef6a647f39b,
-            mid_getThreshold_81520b552cb3fa26,
-            mid_init_96d019f392abf918,
+            mid_init$_bb8991c4a46cf56d,
+            mid_g_ac6fccc69d1b2d9e,
+            mid_getDetector_3146cd1129cf853c,
+            mid_getHandler_ae50020f8bfe1c59,
+            mid_getMaxCheckInterval_0f2b5ee7b716ac92,
+            mid_getMaxIterationCount_d6ab429752e7c267,
+            mid_getThreshold_08d37e3f77b7239d,
+            mid_init_357211ab77703f3f,
             max_mid
           };
 

@@ -3,17 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace utils {
-      class IERSConventions$NutationCorrectionConverter;
-    }
-    namespace frames {
-      class EOPEntry;
-      class EopHistoryLoader;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class Throwable;
@@ -21,6 +10,17 @@ namespace java {
   }
   namespace util {
     class SortedSet;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace frames {
+      class EOPEntry;
+      class EopHistoryLoader;
+    }
+    namespace utils {
+      class IERSConventions$NutationCorrectionConverter;
+    }
   }
 }
 template<class T> class JArray;
@@ -32,12 +32,12 @@ namespace org {
       class PythonEOPHistoryLoader : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_fillHistory_f091b90ef4456eb3,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_init$_ff7cb6c242604316,
+          mid_fillHistory_09d2fc89df23cd1a,
+          mid_finalize_ff7cb6c242604316,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
           max_mid
         };
 

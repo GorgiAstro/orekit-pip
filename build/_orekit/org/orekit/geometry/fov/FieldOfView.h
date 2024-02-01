@@ -3,20 +3,19 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-    }
+namespace java {
+  namespace util {
+    class List;
   }
+  namespace lang {
+    class Class;
+  }
+}
+namespace org {
   namespace orekit {
     namespace bodies {
-      class GeodeticPoint;
       class OneAxisEllipsoid;
+      class GeodeticPoint;
     }
     namespace frames {
       class Transform;
@@ -27,13 +26,14 @@ namespace org {
       }
     }
   }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -46,10 +46,10 @@ namespace org {
         class FieldOfView : public ::java::lang::Object {
          public:
           enum {
-            mid_getFootprint_f20a8500298f8a78,
-            mid_getMargin_b74f83833fdad017,
-            mid_offsetFromBoundary_927580832e9083f9,
-            mid_projectToBoundary_f21507e4850a184e,
+            mid_getFootprint_0ed2f5155c3855f6,
+            mid_getMargin_9981f74b2d109da6,
+            mid_offsetFromBoundary_7ed10fb0bfbbf1c4,
+            mid_projectToBoundary_53c542efd8574582,
             max_mid
           };
 

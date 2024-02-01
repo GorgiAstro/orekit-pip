@@ -8,8 +8,8 @@ namespace java {
     class Map$Entry;
     class Comparator;
     class Collection;
-    class Set;
     class SortedMap;
+    class Set;
   }
   namespace lang {
     class Class;
@@ -24,15 +24,15 @@ namespace java {
     class SortedMap : public ::java::util::Map {
      public:
       enum {
-        mid_comparator_127b1bec8b0c3ae1,
-        mid_entrySet_7e8f11dd23d1142c,
-        mid_firstKey_541690f9ee81d3ad,
-        mid_headMap_c34ad1b261346963,
-        mid_keySet_7e8f11dd23d1142c,
-        mid_lastKey_541690f9ee81d3ad,
-        mid_subMap_a2a04c1f48ab1459,
-        mid_tailMap_c34ad1b261346963,
-        mid_values_cb666ea1a15f5210,
+        mid_comparator_44d5f0105a5559b7,
+        mid_entrySet_6b191a9b12c1004b,
+        mid_firstKey_704a5bee58538972,
+        mid_headMap_35686318c7d1689b,
+        mid_keySet_6b191a9b12c1004b,
+        mid_lastKey_704a5bee58538972,
+        mid_subMap_ba68c05ed4428e11,
+        mid_tailMap_35686318c7d1689b,
+        mid_values_3bfef5c77ceb081a,
         max_mid
       };
 

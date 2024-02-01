@@ -27,10 +27,10 @@ namespace org {
       class RectangularCholeskyDecomposition : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_84bd15e0995d0c79,
-          mid_init$_5c88fbe0835e7c85,
-          mid_getRank_55546ef6a647f39b,
-          mid_getRootMatrix_f77d745f2128c391,
+          mid_init$_f5364c9a9d9cbd53,
+          mid_init$_dc02fdb8767f32bc,
+          mid_getRank_d6ab429752e7c267,
+          mid_getRootMatrix_b2eebabce70526d8,
           max_mid
         };
 

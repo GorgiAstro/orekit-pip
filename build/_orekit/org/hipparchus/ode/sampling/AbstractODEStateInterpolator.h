@@ -29,18 +29,18 @@ namespace org {
         class AbstractODEStateInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_getCurrentState_73a804ac72232dd7,
-            mid_getGlobalCurrentState_73a804ac72232dd7,
-            mid_getGlobalPreviousState_73a804ac72232dd7,
-            mid_getInterpolatedState_cf0061d2765ae5a3,
-            mid_getPreviousState_73a804ac72232dd7,
-            mid_isCurrentStateInterpolated_9ab94ac1dc23b105,
-            mid_isForward_9ab94ac1dc23b105,
-            mid_isPreviousStateInterpolated_9ab94ac1dc23b105,
-            mid_restrictStep_c30f3dfccffcc659,
-            mid_getMapper_d05a9ec8030c7103,
-            mid_computeInterpolatedStateAndDerivatives_95a6c58152853e22,
-            mid_create_39f312cb029323b1,
+            mid_getCurrentState_abe7a2bda3ab9237,
+            mid_getGlobalCurrentState_abe7a2bda3ab9237,
+            mid_getGlobalPreviousState_abe7a2bda3ab9237,
+            mid_getInterpolatedState_dddd5f60deb44228,
+            mid_getPreviousState_abe7a2bda3ab9237,
+            mid_isCurrentStateInterpolated_eee3de00fe971136,
+            mid_isForward_eee3de00fe971136,
+            mid_isPreviousStateInterpolated_eee3de00fe971136,
+            mid_restrictStep_a2f1f68789cc420d,
+            mid_computeInterpolatedStateAndDerivatives_90bc3de9207fd930,
+            mid_getMapper_0209d6833e7fdcb2,
+            mid_create_1bb88e3499976d05,
             max_mid
           };
 

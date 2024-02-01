@@ -3,17 +3,17 @@
 
 #include "org/orekit/files/ilrs/CRD$RangeMeasurement.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,18 +26,18 @@ namespace org {
         class CRD$NptRangeMeasurement : public ::org::orekit::files::ilrs::CRD$RangeMeasurement {
          public:
           enum {
-            mid_init$_ce9c96f5fdc70ab3,
-            mid_init$_ec5895b47419eed5,
-            mid_getBinKurtosis_b74f83833fdad017,
-            mid_getBinPeakMinusMean_b74f83833fdad017,
-            mid_getBinRms_b74f83833fdad017,
-            mid_getBinSkew_b74f83833fdad017,
-            mid_getDetectorChannel_55546ef6a647f39b,
-            mid_getNumberOfRawRanges_55546ef6a647f39b,
-            mid_getReturnRate_b74f83833fdad017,
-            mid_getWindowLength_b74f83833fdad017,
-            mid_toCrdString_1c1fa1e935d6cdcf,
-            mid_toString_1c1fa1e935d6cdcf,
+            mid_init$_cc3de2c8e70eba76,
+            mid_init$_3653e9a749c438d9,
+            mid_getBinKurtosis_9981f74b2d109da6,
+            mid_getBinPeakMinusMean_9981f74b2d109da6,
+            mid_getBinRms_9981f74b2d109da6,
+            mid_getBinSkew_9981f74b2d109da6,
+            mid_getDetectorChannel_d6ab429752e7c267,
+            mid_getNumberOfRawRanges_d6ab429752e7c267,
+            mid_getReturnRate_9981f74b2d109da6,
+            mid_getWindowLength_9981f74b2d109da6,
+            mid_toCrdString_d2c8eb4129821f0e,
+            mid_toString_d2c8eb4129821f0e,
             max_mid
           };
 

@@ -25,19 +25,19 @@ namespace org {
         class HypergeometricDistribution : public ::org::hipparchus::distribution::discrete::AbstractIntegerDistribution {
          public:
           enum {
-            mid_init$_a0df4b8e4ed3805e,
-            mid_cumulativeProbability_2afcbc21f4e57ab2,
-            mid_getNumberOfSuccesses_55546ef6a647f39b,
-            mid_getNumericalMean_b74f83833fdad017,
-            mid_getNumericalVariance_b74f83833fdad017,
-            mid_getPopulationSize_55546ef6a647f39b,
-            mid_getSampleSize_55546ef6a647f39b,
-            mid_getSupportLowerBound_55546ef6a647f39b,
-            mid_getSupportUpperBound_55546ef6a647f39b,
-            mid_isSupportConnected_9ab94ac1dc23b105,
-            mid_logProbability_2afcbc21f4e57ab2,
-            mid_probability_2afcbc21f4e57ab2,
-            mid_upperCumulativeProbability_2afcbc21f4e57ab2,
+            mid_init$_48ca1125d4856a74,
+            mid_cumulativeProbability_ce4c02d583456bc9,
+            mid_getNumberOfSuccesses_d6ab429752e7c267,
+            mid_getNumericalMean_9981f74b2d109da6,
+            mid_getNumericalVariance_9981f74b2d109da6,
+            mid_getPopulationSize_d6ab429752e7c267,
+            mid_getSampleSize_d6ab429752e7c267,
+            mid_getSupportLowerBound_d6ab429752e7c267,
+            mid_getSupportUpperBound_d6ab429752e7c267,
+            mid_isSupportConnected_eee3de00fe971136,
+            mid_logProbability_ce4c02d583456bc9,
+            mid_probability_ce4c02d583456bc9,
+            mid_upperCumulativeProbability_ce4c02d583456bc9,
             max_mid
           };
 

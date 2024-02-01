@@ -3,12 +3,6 @@
 
 #include "org/orekit/files/rinex/navigation/IonosphereBaseMessage.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -19,6 +13,12 @@ namespace org {
         class Unit;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -32,15 +32,15 @@ namespace org {
           class IonosphereNequickGMessage : public ::org::orekit::files::rinex::navigation::IonosphereBaseMessage {
            public:
             enum {
-              mid_init$_2f7855eb8fb85f32,
-              mid_getAi0_b74f83833fdad017,
-              mid_getAi1_b74f83833fdad017,
-              mid_getAi2_b74f83833fdad017,
-              mid_getFlags_55546ef6a647f39b,
-              mid_setAi0_8ba9fe7a847cecad,
-              mid_setAi1_8ba9fe7a847cecad,
-              mid_setAi2_8ba9fe7a847cecad,
-              mid_setFlags_44ed599e93e8a30c,
+              mid_init$_96a1aa7c5f1486f9,
+              mid_getAi0_9981f74b2d109da6,
+              mid_getAi1_9981f74b2d109da6,
+              mid_getAi2_9981f74b2d109da6,
+              mid_getFlags_d6ab429752e7c267,
+              mid_setAi0_1ad26e8c8c0cd65b,
+              mid_setAi1_1ad26e8c8c0cd65b,
+              mid_setAi2_1ad26e8c8c0cd65b,
+              mid_setFlags_8fd427ab23829bf5,
               max_mid
             };
 

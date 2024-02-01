@@ -20,8 +20,11 @@ def clone_orekit_py_artifacts(version):
     print("Successfully cloned git repository")
     return temp_dir
 
-
-orekit_version = [12, 0, 0, 0]  # for instance [11, 3, 3, 1] for Orekit version 11.3.3.1
+"""
+for instance [11, 3, 3, 1] for Orekit version 11.3.3.1
+Check the release tags of https://github.com/petrushy/orekit_python_artifacts
+"""
+orekit_version = [12, 0, 1, 2]
 
 n_cpp_files_split = '90' # Number (in string representation) of C++ files to split. Alternatively 'separate' will create a C++ file for each Java class, can be a lot.
 

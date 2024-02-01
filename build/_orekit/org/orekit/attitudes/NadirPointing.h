@@ -5,21 +5,21 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
+    namespace bodies {
+      class BodyShape;
     }
     namespace utils {
+      class FieldPVCoordinatesProvider;
       class TimeStampedPVCoordinates;
       class PVCoordinatesProvider;
-      class FieldPVCoordinatesProvider;
       class TimeStampedFieldPVCoordinates;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
     namespace frames {
       class Frame;
-    }
-    namespace bodies {
-      class BodyShape;
     }
   }
 }
@@ -37,9 +37,9 @@ namespace org {
       class NadirPointing : public ::org::orekit::attitudes::GroundPointing {
        public:
         enum {
-          mid_init$_33848d83da3704f2,
-          mid_getTargetPV_0c9a6603286e7c6f,
-          mid_getTargetPV_4a6b199bd28f952f,
+          mid_init$_4230f72e1ec009db,
+          mid_getTargetPV_19719ebf0495cd86,
+          mid_getTargetPV_11bfbaf3cce3e66c,
           max_mid
         };
 

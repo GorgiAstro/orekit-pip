@@ -27,10 +27,10 @@ namespace org {
       class AbstractCurveFitter : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_fit_c635a920a1414ef9,
-          mid_getOptimizer_c2c32f8aeab465c5,
-          mid_getProblem_067ae4e9e4e5b47a,
+          mid_init$_ff7cb6c242604316,
+          mid_fit_7816c47352afdb18,
+          mid_getProblem_51e01b60016ab388,
+          mid_getOptimizer_c8ae3ed53e0ae1a5,
           max_mid
         };
 

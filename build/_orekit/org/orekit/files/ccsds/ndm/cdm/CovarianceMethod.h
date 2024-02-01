@@ -34,8 +34,8 @@ namespace org {
             class CovarianceMethod : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_483268284b6a72b6,
-                mid_values_53ceb335c46e8998,
+                mid_valueOf_16e961bbdd83a23c,
+                mid_values_1790d1cbc96b611a,
                 max_mid
               };
 

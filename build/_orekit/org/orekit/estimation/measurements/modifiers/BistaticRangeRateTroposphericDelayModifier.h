@@ -5,19 +5,19 @@
 
 namespace org {
   namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class EstimationModifier;
-        class BistaticRangeRate;
-        class EstimatedMeasurementBase;
-        class EstimatedMeasurement;
-      }
-    }
     namespace models {
       namespace earth {
         namespace troposphere {
           class DiscreteTroposphericModel;
         }
+      }
+    }
+    namespace estimation {
+      namespace measurements {
+        class EstimatedMeasurementBase;
+        class EstimationModifier;
+        class EstimatedMeasurement;
+        class BistaticRangeRate;
       }
     }
   }
@@ -38,9 +38,9 @@ namespace org {
           class BistaticRangeRateTroposphericDelayModifier : public ::org::orekit::estimation::measurements::modifiers::BaseRangeRateTroposphericDelayModifier {
            public:
             enum {
-              mid_init$_516bd20115aa9d9d,
-              mid_modify_f784f7724d44a90a,
-              mid_modifyWithoutDerivatives_308087fabc1d7f66,
+              mid_init$_1f42633debde232b,
+              mid_modify_0f0ae9411e47b72e,
+              mid_modifyWithoutDerivatives_ecce216dce506020,
               max_mid
             };
 

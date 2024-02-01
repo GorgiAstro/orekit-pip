@@ -10,13 +10,13 @@ namespace org {
       class FieldAttitude;
       class Attitude;
     }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
     namespace utils {
-      class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
+      class PVCoordinatesProvider;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
     namespace frames {
       class Frame;
@@ -47,15 +47,15 @@ namespace org {
       class GroundPointing : public ::java::lang::Object {
        public:
         enum {
-          mid_getAttitude_21845cfb0034fe1c,
-          mid_getAttitude_896ee4d68989b1e8,
-          mid_getAttitudeRotation_1bc07ea175743b30,
-          mid_getAttitudeRotation_6acae55a2f5d3ab4,
-          mid_getBodyFrame_2c51111cc6894ba1,
-          mid_getTargetPV_4a6b199bd28f952f,
-          mid_getTargetPV_0c9a6603286e7c6f,
-          mid_getTargetPosition_07759faf76e8b991,
-          mid_getTargetPosition_ec4cfef21ca9ef1f,
+          mid_getAttitude_aab1c6ab68ffdcbb,
+          mid_getAttitude_a02177519e1b6a45,
+          mid_getAttitudeRotation_267252ddff45220c,
+          mid_getAttitudeRotation_494718838b66cf03,
+          mid_getBodyFrame_cb151471db4570f0,
+          mid_getTargetPV_11bfbaf3cce3e66c,
+          mid_getTargetPV_19719ebf0495cd86,
+          mid_getTargetPosition_34b2324cb9b1595f,
+          mid_getTargetPosition_f778d81301c7076a,
           max_mid
         };
 
@@ -70,10 +70,10 @@ namespace org {
         }
         GroundPointing(const GroundPointing& obj) : ::java::lang::Object(obj) {}
 
-        ::org::orekit::attitudes::Attitude getAttitude(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::attitudes::FieldAttitude getAttitude(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
-        ::org::hipparchus::geometry::euclidean::threed::FieldRotation getAttitudeRotation(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
+        ::org::orekit::attitudes::Attitude getAttitude(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::hipparchus::geometry::euclidean::threed::Rotation getAttitudeRotation(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
+        ::org::hipparchus::geometry::euclidean::threed::FieldRotation getAttitudeRotation(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::frames::Frame getBodyFrame() const;
       };
     }

@@ -30,8 +30,8 @@ namespace org {
         class CovarianceMatrixProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_getInitialCovarianceMatrix_b7aa5791b069a41f,
-            mid_getProcessNoiseMatrix_18b28191c1378912,
+            mid_getInitialCovarianceMatrix_011bf64ebaa4e018,
+            mid_getProcessNoiseMatrix_70abd86226561523,
             max_mid
           };
 

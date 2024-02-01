@@ -26,11 +26,11 @@ namespace org {
           class OceanTidesWave : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_f8fd32a223813ce1,
-              mid_addContribution_743ea31a35939e91,
-              mid_getDoodson_55546ef6a647f39b,
-              mid_getMaxDegree_55546ef6a647f39b,
-              mid_getMaxOrder_55546ef6a647f39b,
+              mid_init$_fedaacf1eb9b48b2,
+              mid_addContribution_ce7693dd65ef9f35,
+              mid_getDoodson_d6ab429752e7c267,
+              mid_getMaxDegree_d6ab429752e7c267,
+              mid_getMaxOrder_d6ab429752e7c267,
               max_mid
             };
 

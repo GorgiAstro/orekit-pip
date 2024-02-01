@@ -10,10 +10,10 @@ namespace org {
       class ExtendedPVCoordinatesProvider;
     }
     namespace propagation {
+      class FieldSpacecraftState;
       namespace events {
         class FieldEclipseDetector;
       }
-      class FieldSpacecraftState;
     }
     namespace bodies {
       class OneAxisEllipsoid;
@@ -39,16 +39,16 @@ namespace org {
         class FieldEclipseDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_3979746d0d706f9d,
-            mid_init$_fc567f1ee9fa3873,
-            mid_g_2203631097e94c79,
-            mid_getMargin_81520b552cb3fa26,
-            mid_getOccultationEngine_cf1cac2b0ace2d84,
-            mid_getTotalEclipse_9ab94ac1dc23b105,
-            mid_withMargin_1023bd88f375494d,
-            mid_withPenumbra_44191736a65d260e,
-            mid_withUmbra_44191736a65d260e,
-            mid_create_51c949e45e1de493,
+            mid_init$_0a96eb6a68fe1abe,
+            mid_init$_7b2d1c02d123ea44,
+            mid_g_ac6fccc69d1b2d9e,
+            mid_getMargin_08d37e3f77b7239d,
+            mid_getOccultationEngine_06e3ea62eb505e97,
+            mid_getTotalEclipse_eee3de00fe971136,
+            mid_withMargin_32cc8af9a8d19fdd,
+            mid_withPenumbra_e74bbc9679c66997,
+            mid_withUmbra_e74bbc9679c66997,
+            mid_create_8c04d329cd9e2ad2,
             max_mid
           };
 

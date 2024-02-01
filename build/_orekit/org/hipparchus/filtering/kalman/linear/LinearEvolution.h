@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace linear {
-      class RealVector;
-      class RealMatrix;
-    }
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace linear {
+      class RealMatrix;
+      class RealVector;
+    }
   }
 }
 template<class T> class JArray;
@@ -27,12 +27,12 @@ namespace org {
           class LinearEvolution : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_40d7e6b32a36f1fc,
-              mid_getCommand_3a10cc75bd070d84,
-              mid_getControlMatrix_f77d745f2128c391,
-              mid_getMeasurementJacobian_f77d745f2128c391,
-              mid_getProcessNoiseMatrix_f77d745f2128c391,
-              mid_getStateTransitionMatrix_f77d745f2128c391,
+              mid_init$_d66bc4b134aec93e,
+              mid_getCommand_92d7e8d8d3f1dfcf,
+              mid_getControlMatrix_b2eebabce70526d8,
+              mid_getMeasurementJacobian_b2eebabce70526d8,
+              mid_getProcessNoiseMatrix_b2eebabce70526d8,
+              mid_getStateTransitionMatrix_b2eebabce70526d8,
               max_mid
             };
 

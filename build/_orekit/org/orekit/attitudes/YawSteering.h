@@ -4,6 +4,27 @@
 #include "org/orekit/attitudes/GroundPointing.h"
 
 namespace org {
+  namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+      class AttitudeProviderModifier;
+      class FieldAttitude;
+      class Attitude;
+    }
+    namespace utils {
+      class FieldPVCoordinatesProvider;
+      class TimeStampedPVCoordinates;
+      class TimeStampedFieldPVCoordinates;
+      class PVCoordinatesProvider;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
+    namespace frames {
+      class Frame;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -11,27 +32,6 @@ namespace org {
           class Vector3D;
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace attitudes {
-      class AttitudeProvider;
-      class FieldAttitude;
-      class AttitudeProviderModifier;
-      class Attitude;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class TimeStampedPVCoordinates;
-      class PVCoordinatesProvider;
-      class FieldPVCoordinatesProvider;
-      class TimeStampedFieldPVCoordinates;
-    }
-    namespace frames {
-      class Frame;
     }
   }
 }
@@ -49,14 +49,14 @@ namespace org {
       class YawSteering : public ::org::orekit::attitudes::GroundPointing {
        public:
         enum {
-          mid_init$_9435fe02148b40be,
-          mid_getAttitude_896ee4d68989b1e8,
-          mid_getAttitude_21845cfb0034fe1c,
-          mid_getBaseState_896ee4d68989b1e8,
-          mid_getBaseState_21845cfb0034fe1c,
-          mid_getTargetPV_0c9a6603286e7c6f,
-          mid_getTargetPV_4a6b199bd28f952f,
-          mid_getUnderlyingAttitudeProvider_331f12bb6017243b,
+          mid_init$_3c77f1da360eeb39,
+          mid_getAttitude_a02177519e1b6a45,
+          mid_getAttitude_aab1c6ab68ffdcbb,
+          mid_getBaseState_a02177519e1b6a45,
+          mid_getBaseState_aab1c6ab68ffdcbb,
+          mid_getTargetPV_11bfbaf3cce3e66c,
+          mid_getTargetPV_19719ebf0495cd86,
+          mid_getUnderlyingAttitudeProvider_2f73d1f4460b8d6c,
           max_mid
         };
 
@@ -73,12 +73,12 @@ namespace org {
 
         YawSteering(const ::org::orekit::frames::Frame &, const ::org::orekit::attitudes::GroundPointing &, const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &);
 
-        ::org::orekit::attitudes::FieldAttitude getAttitude(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::attitudes::Attitude getAttitude(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
-        ::org::orekit::attitudes::FieldAttitude getBaseState(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
+        ::org::orekit::attitudes::FieldAttitude getAttitude(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::attitudes::Attitude getBaseState(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
-        ::org::orekit::utils::TimeStampedPVCoordinates getTargetPV(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
+        ::org::orekit::attitudes::FieldAttitude getBaseState(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::utils::TimeStampedFieldPVCoordinates getTargetPV(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
+        ::org::orekit::utils::TimeStampedPVCoordinates getTargetPV(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::attitudes::AttitudeProvider getUnderlyingAttitudeProvider() const;
       };
     }

@@ -15,15 +15,15 @@ namespace org {
       }
       class PropagationType;
     }
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace orbits {
       class PositionAngleType;
       class OrbitType;
     }
     namespace frames {
       class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -48,13 +48,13 @@ namespace org {
         class PythonAbstractIntegratedPropagator : public ::org::orekit::propagation::integration::AbstractIntegratedPropagator {
          public:
           enum {
-            mid_init$_f0d3d6e737d787ad,
-            mid_createMapper_74f07e2c0845997b,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getMainStateEquations_8e0da39ae64099e8,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_9526e1a202c1b9c8,
+            mid_createMapper_5f8935bd082b8966,
+            mid_finalize_ff7cb6c242604316,
+            mid_getMainStateEquations_97764934e3fe735c,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

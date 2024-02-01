@@ -36,16 +36,16 @@ namespace org {
         class StepHandlerMultiplexer : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_add_3c714d0cca30d176,
-            mid_add_6e0fc70b103d8967,
-            mid_clear_a1fa5dae97ea5ed2,
-            mid_finish_280c3390961e0a50,
-            mid_getHandlers_e62d3bb06d56d7e3,
-            mid_handleStep_13c351c10f00bcd7,
-            mid_init_2d7f9a496c7e9781,
-            mid_remove_65541bbc9078acc7,
-            mid_remove_3c714d0cca30d176,
+            mid_init$_ff7cb6c242604316,
+            mid_add_a99d5b52ca8703a8,
+            mid_add_e1387cf2cfecde7f,
+            mid_clear_ff7cb6c242604316,
+            mid_finish_72b846eb87f3af9a,
+            mid_getHandlers_d751c1a57012b438,
+            mid_handleStep_9db9d9fe85cac7f9,
+            mid_init_14deaae988292d42,
+            mid_remove_f2592a12facd1d6e,
+            mid_remove_a99d5b52ca8703a8,
             max_mid
           };
 

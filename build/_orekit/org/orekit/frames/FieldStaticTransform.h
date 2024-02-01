@@ -8,23 +8,23 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
-          class FieldRotation;
           class FieldVector3D;
-          class FieldLine;
           class Line;
+          class FieldRotation;
+          class FieldLine;
+          class Vector3D;
         }
       }
     }
     class Field;
   }
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace frames {
       class FieldStaticTransform;
       class StaticTransform;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
     }
   }
 }
@@ -42,23 +42,23 @@ namespace org {
       class FieldStaticTransform : public ::org::orekit::time::TimeStamped {
        public:
         enum {
-          mid_compose_9105b66daa9d24f1,
-          mid_compositeRotation_2208b259da045dcf,
-          mid_compositeTranslation_6d6daa21bda0ae5f,
-          mid_getIdentity_fcb78665b94e4648,
-          mid_getInverse_f5bae1937d1edbc7,
-          mid_getRotation_1e54a5caa5199c2e,
-          mid_getTranslation_ff5ac73a7b43eddd,
-          mid_of_7dd5a16ee5376cd6,
-          mid_of_48b63227f7d28e46,
-          mid_of_bd0a27faa06d5d8d,
-          mid_of_9fd334eaeb2212b6,
-          mid_transformLine_f23b0a932a8a1dcc,
-          mid_transformLine_2cacbd5ce2a6a87d,
-          mid_transformPosition_49157187b00e5904,
-          mid_transformPosition_356b02aa715afa02,
-          mid_transformVector_49157187b00e5904,
-          mid_transformVector_356b02aa715afa02,
+          mid_compose_ebab87a33ad369ad,
+          mid_compositeRotation_9224249227678983,
+          mid_compositeTranslation_c038933d1378a0bd,
+          mid_getIdentity_36b14e3675d8ede7,
+          mid_getInverse_bfbe5d9ed8a9e205,
+          mid_getRotation_5c8e6f300713559c,
+          mid_getTranslation_d1b42a6748e907f9,
+          mid_of_60fff8a5a742947d,
+          mid_of_4bfdcd3b46c17e93,
+          mid_of_c7d28104fea4ef5c,
+          mid_of_93161fc49a3f70f0,
+          mid_transformLine_2d18eed4cd66eb61,
+          mid_transformLine_e2ca4ae3a4ea3c4a,
+          mid_transformPosition_df37e4d755ff0467,
+          mid_transformPosition_f577b57448bfefd2,
+          mid_transformVector_df37e4d755ff0467,
+          mid_transformVector_f577b57448bfefd2,
           max_mid
         };
 

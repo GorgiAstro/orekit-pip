@@ -31,9 +31,9 @@ namespace org {
         class FieldOrekitStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_finish_54d9efbf99822980,
-            mid_handleStep_fa82adff12d70536,
-            mid_init_96d019f392abf918,
+            mid_finish_8062511934471166,
+            mid_handleStep_33c76379cdb8499a,
+            mid_init_357211ab77703f3f,
             max_mid
           };
 

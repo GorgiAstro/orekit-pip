@@ -3,15 +3,14 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
+  namespace hipparchus {
+    namespace ode {
+      namespace events {
+        class Action;
+      }
+    }
+  }
   namespace orekit {
     namespace propagation {
       namespace events {
@@ -27,12 +26,13 @@ namespace org {
       class AbsoluteDate;
     }
   }
-  namespace hipparchus {
-    namespace ode {
-      namespace events {
-        class Action;
-      }
-    }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -46,14 +46,14 @@ namespace org {
           class EventMultipleHandler : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_addHandler_2c3a580824587767,
-              mid_addHandlers_66864790fef57ca5,
-              mid_eventOccurred_ae9b0131fefe6c67,
-              mid_getHandlers_e62d3bb06d56d7e3,
-              mid_init_0ac7022abb4b9f0c,
-              mid_resetState_ec159c1171338d74,
-              mid_setHandlers_0e7c3032c7c93ed3,
+              mid_init$_ff7cb6c242604316,
+              mid_addHandler_9d7d27130ee65e7b,
+              mid_addHandlers_a1f562ed85ac821b,
+              mid_eventOccurred_66898681536e4202,
+              mid_getHandlers_d751c1a57012b438,
+              mid_init_381d97cc333bc994,
+              mid_resetState_556ad75a8c47fba2,
+              mid_setHandlers_aa335fea495d60e0,
               max_mid
             };
 

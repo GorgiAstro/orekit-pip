@@ -4,6 +4,23 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class PV;
+        class Position;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace orbits {
+      class Orbit;
+    }
+    namespace frames {
+      class Frame;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -11,23 +28,6 @@ namespace org {
           class Vector3D;
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace orbits {
-      class Orbit;
-    }
-    namespace estimation {
-      namespace measurements {
-        class PV;
-        class Position;
-      }
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -46,10 +46,10 @@ namespace org {
         class IodLambert : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_8ba9fe7a847cecad,
-            mid_estimate_d38177db26866f22,
-            mid_estimate_3ef8ea131d5aef8a,
-            mid_estimate_2e3d5773c6019239,
+            mid_init$_1ad26e8c8c0cd65b,
+            mid_estimate_f3a059523fa45d08,
+            mid_estimate_1a9f087f7bb55679,
+            mid_estimate_ad6b3416d9d657ed,
             max_mid
           };
 

@@ -10,8 +10,8 @@ namespace org {
         namespace ndm {
           namespace odm {
             namespace ocm {
-              class TrajectoryStateHistoryMetadata;
               class TrajectoryStateHistoryMetadataKey;
+              class TrajectoryStateHistoryMetadata;
             }
           }
         }
@@ -44,9 +44,9 @@ namespace org {
               class TrajectoryStateHistoryMetadataKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_8c8f0a5e94dda5b0,
-                  mid_valueOf_4d26094f8427f52a,
-                  mid_values_038f89727dd84076,
+                  mid_process_8d0aeaccffd2d007,
+                  mid_valueOf_c39e9ea2d84d5c2f,
+                  mid_values_c824951edf441f16,
                   max_mid
                 };
 
