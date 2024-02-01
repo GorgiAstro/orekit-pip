@@ -7,11 +7,11 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
+        class EstimatedMeasurementBase;
+        class EstimationModifier;
         namespace gnss {
           class Phase;
         }
-        class EstimationModifier;
-        class EstimatedMeasurementBase;
       }
     }
     namespace utils {
@@ -38,9 +38,9 @@ namespace org {
           class RelativisticJ2ClockPhaseModifier : public ::org::orekit::estimation::measurements::modifiers::AbstractRelativisticJ2ClockModifier {
            public:
             enum {
-              mid_init$_b5167f35b2521627,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_modifyWithoutDerivatives_308087fabc1d7f66,
+              mid_init$_bd28dc6055dc5bbd,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_modifyWithoutDerivatives_ecce216dce506020,
               max_mid
             };
 

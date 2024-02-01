@@ -4,19 +4,19 @@
 #include "org/orekit/geometry/fov/SmoothFieldOfView.h"
 
 namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace events {
+        class VisibilityTrigger;
+      }
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
           class Vector3D;
         }
-      }
-    }
-  }
-  namespace orekit {
-    namespace propagation {
-      namespace events {
-        class VisibilityTrigger;
       }
     }
   }
@@ -36,11 +36,11 @@ namespace org {
         class CircularFieldOfView : public ::org::orekit::geometry::fov::SmoothFieldOfView {
          public:
           enum {
-            mid_init$_97a411cae22dcac2,
-            mid_getHalfAperture_b74f83833fdad017,
-            mid_offsetFromBoundary_927580832e9083f9,
-            mid_projectToBoundary_f21507e4850a184e,
-            mid_directionAt_498f52cd8e5a7072,
+            mid_init$_9024e173b17a6d85,
+            mid_getHalfAperture_9981f74b2d109da6,
+            mid_offsetFromBoundary_7ed10fb0bfbbf1c4,
+            mid_projectToBoundary_53c542efd8574582,
+            mid_directionAt_98a3eeef43dce47a,
             max_mid
           };
 

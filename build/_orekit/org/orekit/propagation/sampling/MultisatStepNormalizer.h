@@ -15,8 +15,8 @@ namespace org {
   namespace orekit {
     namespace propagation {
       namespace sampling {
-        class OrekitStepInterpolator;
         class MultiSatFixedStepHandler;
+        class OrekitStepInterpolator;
         class MultiSatStepHandler;
       }
       class SpacecraftState;
@@ -36,12 +36,12 @@ namespace org {
         class MultisatStepNormalizer : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_02c043bb1395e1f8,
-            mid_finish_0e7c3032c7c93ed3,
-            mid_getFixedStepHandler_d37df4d2f5d5d6ce,
-            mid_getFixedTimeStep_b74f83833fdad017,
-            mid_handleStep_0e7c3032c7c93ed3,
-            mid_init_0365da66b6e36325,
+            mid_init$_e0e6a24d3ba91936,
+            mid_finish_aa335fea495d60e0,
+            mid_getFixedStepHandler_9b6b96ed060f0812,
+            mid_getFixedTimeStep_9981f74b2d109da6,
+            mid_handleStep_aa335fea495d60e0,
+            mid_init_0b0c18b32ea71a29,
             max_mid
           };
 

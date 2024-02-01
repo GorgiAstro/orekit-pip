@@ -4,38 +4,38 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-    }
-  }
   namespace orekit {
     namespace attitudes {
       class AttitudeProvider;
       class FieldAttitude;
       class Attitude;
     }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
     namespace utils {
-      class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
+      class PVCoordinatesProvider;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
     namespace frames {
-      class LOF;
       class Frame;
+      class LOF;
     }
     namespace forces {
       namespace maneuvers {
         namespace propulsion {
-          class ThrustDirectionProvider;
           class ThrustDirectionAndAttitudeProvider;
+          class ThrustDirectionProvider;
+        }
+      }
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
         }
       }
     }
@@ -57,15 +57,15 @@ namespace org {
           class ThrustDirectionAndAttitudeProvider : public ::java::lang::Object {
            public:
             enum {
-              mid_buildFromCustomAttitude_a3f64f8717c9511d,
-              mid_buildFromDirectionInFrame_63447e4da4c98de8,
-              mid_buildFromDirectionInLOF_843847f4f0e08985,
-              mid_buildFromFixedDirectionInSatelliteFrame_4df7434fe337ce1b,
-              mid_getAttitude_21845cfb0034fe1c,
-              mid_getAttitude_896ee4d68989b1e8,
-              mid_getManeuverAttitudeProvider_331f12bb6017243b,
-              mid_getThrusterAxisInSatelliteFrame_8b724f8b4fdad1a2,
-              mid_getAttitudeFromFrame_21845cfb0034fe1c,
+              mid_buildFromCustomAttitude_630b12cc4bbba462,
+              mid_buildFromDirectionInFrame_f9da80b6cff579e4,
+              mid_buildFromDirectionInLOF_867467bf597b045b,
+              mid_buildFromFixedDirectionInSatelliteFrame_063651f4feb64ece,
+              mid_getAttitude_aab1c6ab68ffdcbb,
+              mid_getAttitude_a02177519e1b6a45,
+              mid_getManeuverAttitudeProvider_2f73d1f4460b8d6c,
+              mid_getThrusterAxisInSatelliteFrame_032312bdeb3f2f93,
+              mid_getAttitudeFromFrame_a02177519e1b6a45,
               max_mid
             };
 
@@ -84,8 +84,8 @@ namespace org {
             static ThrustDirectionAndAttitudeProvider buildFromDirectionInFrame(const ::org::orekit::frames::Frame &, const ::org::orekit::forces::maneuvers::propulsion::ThrustDirectionProvider &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &);
             static ThrustDirectionAndAttitudeProvider buildFromDirectionInLOF(const ::org::orekit::frames::LOF &, const ::org::orekit::forces::maneuvers::propulsion::ThrustDirectionProvider &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &);
             static ThrustDirectionAndAttitudeProvider buildFromFixedDirectionInSatelliteFrame(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &);
-            ::org::orekit::attitudes::Attitude getAttitude(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
             ::org::orekit::attitudes::FieldAttitude getAttitude(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
+            ::org::orekit::attitudes::Attitude getAttitude(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
             ::org::orekit::attitudes::AttitudeProvider getManeuverAttitudeProvider() const;
             ::org::hipparchus::geometry::euclidean::threed::Vector3D getThrusterAxisInSatelliteFrame() const;
           };

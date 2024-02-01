@@ -5,20 +5,20 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathRuntimeException;
+      class MathIllegalArgumentException;
+    }
     namespace geometry {
-      class Space;
-      class Point;
+      class Vector;
       namespace euclidean {
         namespace twod {
           class Vector2D;
           class Euclidean2D;
         }
       }
-      class Vector;
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-      class MathRuntimeException;
+      class Point;
+      class Space;
     }
   }
 }
@@ -42,46 +42,46 @@ namespace org {
           class Vector2D : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_ab69da052b88f50c,
-              mid_init$_d8b88b24b02865b1,
-              mid_init$_369b4c97255d5afa,
-              mid_init$_a0bb1dda4d070321,
-              mid_init$_7fb6bfd21f9324eb,
-              mid_init$_4ef6123990113253,
-              mid_add_4f90fdb34b7d1107,
-              mid_add_12bf5e1b264beb0a,
-              mid_angle_00cbd9690bb8a91b,
-              mid_crossProduct_00cbd9690bb8a91b,
-              mid_distance_f0dd8cb59ea09794,
-              mid_distance_00cbd9690bb8a91b,
-              mid_distance1_2f915fa9762130df,
-              mid_distance1_00cbd9690bb8a91b,
-              mid_distanceInf_2f915fa9762130df,
-              mid_distanceInf_00cbd9690bb8a91b,
-              mid_distanceSq_2f915fa9762130df,
-              mid_distanceSq_00cbd9690bb8a91b,
-              mid_dotProduct_2f915fa9762130df,
-              mid_equals_460c5e2d9d51c6cc,
-              mid_equalsIeee754_460c5e2d9d51c6cc,
-              mid_getNorm_b74f83833fdad017,
-              mid_getNorm1_b74f83833fdad017,
-              mid_getNormInf_b74f83833fdad017,
-              mid_getNormSq_b74f83833fdad017,
-              mid_getSpace_9afbccb68c8e9ef8,
-              mid_getX_b74f83833fdad017,
-              mid_getY_b74f83833fdad017,
-              mid_getZero_9cb1572c1d4936cf,
-              mid_hashCode_55546ef6a647f39b,
-              mid_isInfinite_9ab94ac1dc23b105,
-              mid_isNaN_9ab94ac1dc23b105,
-              mid_negate_9cb1572c1d4936cf,
-              mid_orientation_4cb54b5cd3974eb4,
-              mid_scalarMultiply_32a32febf6739dcf,
-              mid_subtract_4f90fdb34b7d1107,
-              mid_subtract_12bf5e1b264beb0a,
-              mid_toArray_25e1757a36c4dde2,
-              mid_toString_1c1fa1e935d6cdcf,
-              mid_toString_a9120cb5e83d0986,
+              mid_init$_a71c45509eaf92d1,
+              mid_init$_17caf3ea31472651,
+              mid_init$_13edac039e8cc967,
+              mid_init$_208d350da024ec62,
+              mid_init$_c408028e80098f1b,
+              mid_init$_9333c632f204af9c,
+              mid_add_bf5660dd5343a17c,
+              mid_add_128d62dd1c6c0a55,
+              mid_angle_36879f891eec9695,
+              mid_crossProduct_36879f891eec9695,
+              mid_distance_277cb62c4ec87155,
+              mid_distance_36879f891eec9695,
+              mid_distance1_54eca2a6b3ac81a2,
+              mid_distance1_36879f891eec9695,
+              mid_distanceInf_54eca2a6b3ac81a2,
+              mid_distanceInf_36879f891eec9695,
+              mid_distanceSq_54eca2a6b3ac81a2,
+              mid_distanceSq_36879f891eec9695,
+              mid_dotProduct_54eca2a6b3ac81a2,
+              mid_equals_72faff9b05f5ed5e,
+              mid_equalsIeee754_72faff9b05f5ed5e,
+              mid_getNorm_9981f74b2d109da6,
+              mid_getNorm1_9981f74b2d109da6,
+              mid_getNormInf_9981f74b2d109da6,
+              mid_getNormSq_9981f74b2d109da6,
+              mid_getSpace_a30bf0b437744017,
+              mid_getX_9981f74b2d109da6,
+              mid_getY_9981f74b2d109da6,
+              mid_getZero_0490d0574aafb07c,
+              mid_hashCode_d6ab429752e7c267,
+              mid_isInfinite_eee3de00fe971136,
+              mid_isNaN_eee3de00fe971136,
+              mid_negate_0490d0574aafb07c,
+              mid_orientation_143a69c4b35f658a,
+              mid_scalarMultiply_22e63043f272734b,
+              mid_subtract_bf5660dd5343a17c,
+              mid_subtract_128d62dd1c6c0a55,
+              mid_toArray_be783177b060994b,
+              mid_toString_d2c8eb4129821f0e,
+              mid_toString_aeac32100fe35ffe,
               max_mid
             };
 

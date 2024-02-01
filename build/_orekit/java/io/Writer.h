@@ -5,8 +5,8 @@
 
 namespace java {
   namespace io {
-    class Flushable;
     class IOException;
+    class Flushable;
     class Closeable;
     class Writer;
   }
@@ -25,17 +25,17 @@ namespace java {
     class Writer : public ::java::lang::Object {
      public:
       enum {
-        mid_append_10b49bc9752a6280,
-        mid_append_89d85407f8c3f237,
-        mid_append_36ed35e8f93e8699,
-        mid_close_a1fa5dae97ea5ed2,
-        mid_flush_a1fa5dae97ea5ed2,
-        mid_nullWriter_6c28d34eccb5e13c,
-        mid_write_dd3f254991df5d48,
-        mid_write_734b91ac30d5f9b4,
-        mid_write_44ed599e93e8a30c,
-        mid_write_d23ba6c655e17478,
-        mid_write_eb74d6dc93e0751e,
+        mid_append_b9bb9c1cf9ac79f5,
+        mid_append_28ef4a32b3361ee5,
+        mid_append_e12a3710561f822f,
+        mid_close_ff7cb6c242604316,
+        mid_flush_ff7cb6c242604316,
+        mid_nullWriter_0fa081fa24ab266a,
+        mid_write_e22e96b35f4145e4,
+        mid_write_105e1eadb709d9ac,
+        mid_write_8fd427ab23829bf5,
+        mid_write_6f10578448832e2a,
+        mid_write_c9a77c84756b106b,
         max_mid
       };
 

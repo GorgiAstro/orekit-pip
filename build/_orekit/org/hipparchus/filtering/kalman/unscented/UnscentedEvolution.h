@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace linear {
       class RealMatrix;
       class RealVector;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,10 +27,10 @@ namespace org {
           class UnscentedEvolution : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_cfd2c29a5d5d287b,
-              mid_getCurrentStates_d80cfd4abb977b5c,
-              mid_getCurrentTime_b74f83833fdad017,
-              mid_getProcessNoiseMatrix_f77d745f2128c391,
+              mid_init$_da2445862b64f2d6,
+              mid_getCurrentStates_20e091718f28da3c,
+              mid_getCurrentTime_9981f74b2d109da6,
+              mid_getProcessNoiseMatrix_b2eebabce70526d8,
               max_mid
             };
 

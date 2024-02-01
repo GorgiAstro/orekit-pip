@@ -25,10 +25,10 @@ namespace org {
         class EarthITU453AtmosphereRefraction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_8ba9fe7a847cecad,
-            mid_getRefraction_04fd0666b613d2ab,
-            mid_getTheta0_b74f83833fdad017,
-            mid_getThetaMin_b74f83833fdad017,
+            mid_init$_1ad26e8c8c0cd65b,
+            mid_getRefraction_bf28ed64d6e8576b,
+            mid_getTheta0_9981f74b2d109da6,
+            mid_getThetaMin_9981f74b2d109da6,
             max_mid
           };
 

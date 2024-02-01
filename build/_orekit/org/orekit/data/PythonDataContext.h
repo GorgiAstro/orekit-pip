@@ -5,14 +5,8 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frames;
-    }
     namespace data {
       class DataContext;
-    }
-    namespace bodies {
-      class CelestialBodies;
     }
     namespace models {
       namespace earth {
@@ -26,8 +20,14 @@ namespace org {
         }
       }
     }
+    namespace frames {
+      class Frames;
+    }
     namespace time {
       class TimeScales;
+    }
+    namespace bodies {
+      class CelestialBodies;
     }
   }
 }
@@ -46,16 +46,16 @@ namespace org {
       class PythonDataContext : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_getCelestialBodies_379576bb08948576,
-          mid_getFrames_19f184be91611afc,
-          mid_getGeoMagneticFields_78e2356802c487c4,
-          mid_getGravityFields_045bd2a3a054f1f1,
-          mid_getTimeScales_d1a571f8b033e2d3,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_init$_ff7cb6c242604316,
+          mid_finalize_ff7cb6c242604316,
+          mid_getCelestialBodies_62495cefe741b009,
+          mid_getFrames_34da2547798ee1dc,
+          mid_getGeoMagneticFields_7d1b07207cbeab65,
+          mid_getGravityFields_3af6c17fe31f8686,
+          mid_getTimeScales_796d09eb9f0f96ef,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
           max_mid
         };
 

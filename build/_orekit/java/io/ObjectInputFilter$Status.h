@@ -4,12 +4,12 @@
 #include "java/lang/Enum.h"
 
 namespace java {
-  namespace io {
-    class ObjectInputFilter$Status;
-  }
   namespace lang {
     class String;
     class Class;
+  }
+  namespace io {
+    class ObjectInputFilter$Status;
   }
 }
 template<class T> class JArray;
@@ -20,8 +20,8 @@ namespace java {
     class ObjectInputFilter$Status : public ::java::lang::Enum {
      public:
       enum {
-        mid_valueOf_2f091d648ef5c66a,
-        mid_values_58dfdde44b6e9f1e,
+        mid_valueOf_5116574ce0f70165,
+        mid_values_53c1db742799eb7c,
         max_mid
       };
 

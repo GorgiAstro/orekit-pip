@@ -7,8 +7,8 @@ namespace java {
   namespace util {
     class Locale;
     class List;
-    class ResourceBundle;
     class ResourceBundle$Control;
+    class ResourceBundle;
   }
   namespace lang {
     class InstantiationException;
@@ -29,16 +29,16 @@ namespace java {
     class ResourceBundle$Control : public ::java::lang::Object {
      public:
       enum {
-        mid_getCandidateLocales_0ce6fdc79798094e,
-        mid_getControl_0f34a07e65cacad0,
-        mid_getFallbackLocale_735143ee48f37be6,
-        mid_getFormats_abe6e889bc24795d,
-        mid_getNoFallbackControl_0f34a07e65cacad0,
-        mid_getTimeToLive_e68533389ce9fba8,
-        mid_needsReload_5007a333490ad2f4,
-        mid_newBundle_8ca50bd8ea3c1503,
-        mid_toBundleName_9c65f36218adb4b6,
-        mid_toResourceName_88f2f8c619f3cbd0,
+        mid_getCandidateLocales_35d6013265c82aff,
+        mid_getControl_4600285a79697666,
+        mid_getFallbackLocale_f7f54555048bc2c6,
+        mid_getFormats_7a823e7285fdf3d6,
+        mid_getNoFallbackControl_4600285a79697666,
+        mid_getTimeToLive_c3715d8cc0d3721b,
+        mid_needsReload_455bee464b342eb0,
+        mid_newBundle_9d8ce1b08b92301a,
+        mid_toBundleName_641a8f26d1eabba0,
+        mid_toResourceName_91d6dcf90111829e,
         max_mid
       };
 

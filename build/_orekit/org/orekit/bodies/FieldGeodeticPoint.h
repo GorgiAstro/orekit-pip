@@ -30,19 +30,19 @@ namespace org {
       class FieldGeodeticPoint : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_baa1ed35ace5d036,
-          mid_equals_460c5e2d9d51c6cc,
-          mid_getAltitude_81520b552cb3fa26,
-          mid_getEast_ff5ac73a7b43eddd,
-          mid_getLatitude_81520b552cb3fa26,
-          mid_getLongitude_81520b552cb3fa26,
-          mid_getNadir_ff5ac73a7b43eddd,
-          mid_getNorth_ff5ac73a7b43eddd,
-          mid_getSouth_ff5ac73a7b43eddd,
-          mid_getWest_ff5ac73a7b43eddd,
-          mid_getZenith_ff5ac73a7b43eddd,
-          mid_hashCode_55546ef6a647f39b,
-          mid_toString_1c1fa1e935d6cdcf,
+          mid_init$_f9ea60a8dc2d69fb,
+          mid_equals_72faff9b05f5ed5e,
+          mid_getAltitude_08d37e3f77b7239d,
+          mid_getEast_d1b42a6748e907f9,
+          mid_getLatitude_08d37e3f77b7239d,
+          mid_getLongitude_08d37e3f77b7239d,
+          mid_getNadir_d1b42a6748e907f9,
+          mid_getNorth_d1b42a6748e907f9,
+          mid_getSouth_d1b42a6748e907f9,
+          mid_getWest_d1b42a6748e907f9,
+          mid_getZenith_d1b42a6748e907f9,
+          mid_hashCode_d6ab429752e7c267,
+          mid_toString_d2c8eb4129821f0e,
           max_mid
         };
 

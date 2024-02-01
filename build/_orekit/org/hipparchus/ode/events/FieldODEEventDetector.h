@@ -12,12 +12,12 @@ namespace org {
         class FieldAdaptableInterval;
       }
     }
-    class CalculusFieldElement;
     namespace analysis {
       namespace solvers {
         class BracketedRealFieldUnivariateSolver;
       }
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -35,12 +35,12 @@ namespace org {
         class FieldODEEventDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_g_751903dc38e0b7e8,
-            mid_getHandler_daa4dcd20dd895b8,
-            mid_getMaxCheckInterval_9e96a56f8b6efe47,
-            mid_getMaxIterationCount_55546ef6a647f39b,
-            mid_getSolver_95522f52875c5391,
-            mid_init_55fdeef582303a99,
+            mid_g_455ff24598d85771,
+            mid_getHandler_dbadd838da9b41eb,
+            mid_getMaxCheckInterval_e0c20def93760aa5,
+            mid_getMaxIterationCount_d6ab429752e7c267,
+            mid_getSolver_015c35a97d20bc51,
+            mid_init_2a077928ff78cfcb,
             max_mid
           };
 

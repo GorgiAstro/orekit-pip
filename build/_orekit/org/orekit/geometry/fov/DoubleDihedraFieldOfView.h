@@ -29,7 +29,7 @@ namespace org {
         class DoubleDihedraFieldOfView : public ::org::orekit::geometry::fov::PolygonalFieldOfView {
          public:
           enum {
-            mid_init$_fb2b6a92621f27cc,
+            mid_init$_3d0e4d7ab8d8878b,
             max_mid
           };
 

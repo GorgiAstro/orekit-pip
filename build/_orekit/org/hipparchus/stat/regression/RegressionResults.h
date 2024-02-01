@@ -28,21 +28,21 @@ namespace org {
         class RegressionResults : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_9d4bc8dcfca683ea,
-            mid_getAdjustedRSquared_b74f83833fdad017,
-            mid_getCovarianceOfParameters_cad98089d00f8a5b,
-            mid_getErrorSumSquares_b74f83833fdad017,
-            mid_getMeanSquareError_b74f83833fdad017,
-            mid_getN_6c0ce7e438e5ded4,
-            mid_getNumberOfParameters_55546ef6a647f39b,
-            mid_getParameterEstimate_2afcbc21f4e57ab2,
-            mid_getParameterEstimates_25e1757a36c4dde2,
-            mid_getRSquared_b74f83833fdad017,
-            mid_getRegressionSumSquares_b74f83833fdad017,
-            mid_getStdErrorOfEstimate_2afcbc21f4e57ab2,
-            mid_getStdErrorOfEstimates_25e1757a36c4dde2,
-            mid_getTotalSumSquares_b74f83833fdad017,
-            mid_hasIntercept_9ab94ac1dc23b105,
+            mid_init$_89d75cd07da19c78,
+            mid_getAdjustedRSquared_9981f74b2d109da6,
+            mid_getCovarianceOfParameters_6d920aab27f0a3d2,
+            mid_getErrorSumSquares_9981f74b2d109da6,
+            mid_getMeanSquareError_9981f74b2d109da6,
+            mid_getN_42c72b98e3c2e08a,
+            mid_getNumberOfParameters_d6ab429752e7c267,
+            mid_getParameterEstimate_ce4c02d583456bc9,
+            mid_getParameterEstimates_be783177b060994b,
+            mid_getRSquared_9981f74b2d109da6,
+            mid_getRegressionSumSquares_9981f74b2d109da6,
+            mid_getStdErrorOfEstimate_ce4c02d583456bc9,
+            mid_getStdErrorOfEstimates_be783177b060994b,
+            mid_getTotalSumSquares_9981f74b2d109da6,
+            mid_hasIntercept_eee3de00fe971136,
             max_mid
           };
 

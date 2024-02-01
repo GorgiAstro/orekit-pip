@@ -4,19 +4,7 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-    }
-  }
   namespace orekit {
-    namespace utils {
-      class TimeSpanMap;
-    }
     namespace files {
       namespace sinex {
         class Station$ReferenceSystem;
@@ -24,6 +12,18 @@ namespace org {
     }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace utils {
+      class TimeSpanMap;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
     }
   }
 }
@@ -43,31 +43,31 @@ namespace org {
         class Station : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_addAntennaTypeValidAfter_69175f44c4278084,
-            mid_addAntennaTypeValidBefore_69175f44c4278084,
-            mid_addStationEccentricitiesValidAfter_a8075f582763156e,
-            mid_addStationEccentricitiesValidBefore_a8075f582763156e,
-            mid_getAntennaType_5b3583dbfd578a63,
-            mid_getAntennaTypeTimeSpanMap_2f46b86c016957a0,
-            mid_getDomes_1c1fa1e935d6cdcf,
-            mid_getEccRefSystem_36b40b7b0806d684,
-            mid_getEccentricities_082e6346b274f880,
-            mid_getEccentricitiesTimeSpanMap_2f46b86c016957a0,
-            mid_getEpoch_c325492395d89b24,
-            mid_getPosition_8b724f8b4fdad1a2,
-            mid_getSiteCode_1c1fa1e935d6cdcf,
-            mid_getValidFrom_c325492395d89b24,
-            mid_getValidUntil_c325492395d89b24,
-            mid_getVelocity_8b724f8b4fdad1a2,
-            mid_setDomes_734b91ac30d5f9b4,
-            mid_setEccRefSystem_50e96aa7b370b203,
-            mid_setEpoch_02135a6ef25adb4b,
-            mid_setPosition_1844f891addbac57,
-            mid_setSiteCode_734b91ac30d5f9b4,
-            mid_setValidFrom_02135a6ef25adb4b,
-            mid_setValidUntil_02135a6ef25adb4b,
-            mid_setVelocity_1844f891addbac57,
+            mid_init$_ff7cb6c242604316,
+            mid_addAntennaTypeValidAfter_4bcfb64f3a1ec56d,
+            mid_addAntennaTypeValidBefore_4bcfb64f3a1ec56d,
+            mid_addStationEccentricitiesValidAfter_35db6c8a69ba108a,
+            mid_addStationEccentricitiesValidBefore_35db6c8a69ba108a,
+            mid_getAntennaType_6989a51b7b3249aa,
+            mid_getAntennaTypeTimeSpanMap_d11c7ec0e313e33d,
+            mid_getDomes_d2c8eb4129821f0e,
+            mid_getEccRefSystem_e94be7bb1cd54d88,
+            mid_getEccentricities_8b37cafaaf55a3a5,
+            mid_getEccentricitiesTimeSpanMap_d11c7ec0e313e33d,
+            mid_getEpoch_80e11148db499dda,
+            mid_getPosition_032312bdeb3f2f93,
+            mid_getSiteCode_d2c8eb4129821f0e,
+            mid_getValidFrom_80e11148db499dda,
+            mid_getValidUntil_80e11148db499dda,
+            mid_getVelocity_032312bdeb3f2f93,
+            mid_setDomes_105e1eadb709d9ac,
+            mid_setEccRefSystem_a2d3c26dd0bc26e3,
+            mid_setEpoch_8497861b879c83f7,
+            mid_setPosition_30f8886dfb88a63c,
+            mid_setSiteCode_105e1eadb709d9ac,
+            mid_setValidFrom_8497861b879c83f7,
+            mid_setValidUntil_8497861b879c83f7,
+            mid_setVelocity_30f8886dfb88a63c,
             max_mid
           };
 

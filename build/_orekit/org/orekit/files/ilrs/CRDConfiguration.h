@@ -7,14 +7,14 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ilrs {
-        class CRDConfiguration$TransponderConfiguration;
-        class CRDConfiguration$SoftwareConfiguration;
-        class CRDConfiguration$DetectorConfiguration;
-        class CRDConfiguration$BaseConfiguration;
-        class CRDConfiguration$LaserConfiguration;
         class CRDConfiguration$MeteorologicalConfiguration;
+        class CRDConfiguration$BaseConfiguration;
+        class CRDConfiguration$TransponderConfiguration;
         class CRDConfiguration$SystemConfiguration;
+        class CRDConfiguration$LaserConfiguration;
         class CRDConfiguration$TimingSystemConfiguration;
+        class CRDConfiguration$DetectorConfiguration;
+        class CRDConfiguration$SoftwareConfiguration;
         class CRDConfiguration$CalibrationTargetConfiguration;
       }
     }
@@ -41,29 +41,29 @@ namespace org {
         class CRDConfiguration : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_addConfigurationRecord_f1b594df82bfed08,
-            mid_getCalibrationTargetRecord_db6bb1f1065e5821,
-            mid_getCalibrationTargetRecord_445ac2923880777e,
-            mid_getConfigurationRecord_01eed6bceae98227,
-            mid_getConfigurationRecordMap_810bed48fafb0b9a,
-            mid_getDetectorRecord_fbeba91b97dc9438,
-            mid_getDetectorRecord_7d8ffbbca01ee45d,
-            mid_getLaserRecord_3da64c57c8fb5a61,
-            mid_getLaserRecord_21d3ab247db7335a,
-            mid_getLastSystemRecord_ffed19394f3022ee,
-            mid_getMeteorologicalRecord_90978aa34fe79fd7,
-            mid_getMeteorologicalRecord_f4f67e33c7c208e8,
-            mid_getSoftwareRecord_8e11b72a62138a38,
-            mid_getSoftwareRecord_2d01fb7d10c0c14a,
-            mid_getSystemConfigurationIds_7e8f11dd23d1142c,
-            mid_getSystemConfigurationRecords_e62d3bb06d56d7e3,
-            mid_getSystemRecord_ffed19394f3022ee,
-            mid_getSystemRecord_9bd899069035f776,
-            mid_getTimingRecord_455c4ecc118e8d50,
-            mid_getTimingRecord_8f4aa879682f3fa7,
-            mid_getTransponderRecord_4143a03a9931db89,
-            mid_getTransponderRecord_6397dd21406495e1,
+            mid_init$_ff7cb6c242604316,
+            mid_addConfigurationRecord_11245a520c9c98e7,
+            mid_getCalibrationTargetRecord_6e8e873c75001146,
+            mid_getCalibrationTargetRecord_4b2ea46ed3fc3e9d,
+            mid_getConfigurationRecord_33f8649bcc299ca9,
+            mid_getConfigurationRecordMap_dbcb8bbac6b35e0d,
+            mid_getDetectorRecord_392d35737f512715,
+            mid_getDetectorRecord_e6f973aab4d967f8,
+            mid_getLaserRecord_63d9d008da5c7396,
+            mid_getLaserRecord_0247691365fa7c76,
+            mid_getLastSystemRecord_4483bde962d92750,
+            mid_getMeteorologicalRecord_02c143d56de1a9aa,
+            mid_getMeteorologicalRecord_3eca2340c6fce9fa,
+            mid_getSoftwareRecord_58a9b47752cd2839,
+            mid_getSoftwareRecord_2ee27eb48b772397,
+            mid_getSystemConfigurationIds_6b191a9b12c1004b,
+            mid_getSystemConfigurationRecords_d751c1a57012b438,
+            mid_getSystemRecord_4483bde962d92750,
+            mid_getSystemRecord_37e2c7548a758507,
+            mid_getTimingRecord_3abf7a81b854aeef,
+            mid_getTimingRecord_0f7add600b6f2cb1,
+            mid_getTransponderRecord_fff0218714836f9b,
+            mid_getTransponderRecord_250ed8028bb49849,
             max_mid
           };
 

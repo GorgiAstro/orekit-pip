@@ -41,9 +41,9 @@ namespace org {
             class FieldLnsCoefficients : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_fe5b6ba414e50d1c,
-                mid_getLns_431f825c752f7b4c,
-                mid_getdLnsdGamma_431f825c752f7b4c,
+                mid_init$_e37f9e003e991dea,
+                mid_getLns_89a7d1b6c5e4fe60,
+                mid_getdLnsdGamma_89a7d1b6c5e4fe60,
                 max_mid
               };
 

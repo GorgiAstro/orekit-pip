@@ -5,29 +5,29 @@
 
 namespace java {
   namespace io {
-    class InputStream;
     class IOException;
+    class InputStream;
+  }
+  namespace text {
+    class ParseException;
   }
   namespace lang {
     class Throwable;
     class Class;
     class String;
   }
-  namespace text {
-    class ParseException;
-  }
 }
 namespace org {
   namespace orekit {
-    namespace errors {
-      class OrekitException;
-    }
     namespace forces {
       namespace gravity {
         namespace potential {
           class RawSphericalHarmonicsProvider;
         }
       }
+    }
+    namespace errors {
+      class OrekitException;
     }
     namespace time {
       class TimeScale;
@@ -45,14 +45,14 @@ namespace org {
           class PythonPotentialCoefficientsReader : public ::org::orekit::forces::gravity::potential::PotentialCoefficientsReader {
            public:
             enum {
-              mid_init$_76cf8b957ccb7ae1,
-              mid_init$_f201530b2ce67e89,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_getProvider_752316a4c911183b,
-              mid_loadData_360461e719fb564c,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_init$_c5d48f261709aa3e,
+              mid_init$_13b6194a2a01ad07,
+              mid_finalize_ff7cb6c242604316,
+              mid_getProvider_0c94c2344ee8a0fa,
+              mid_loadData_bec0f846e5ec73da,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
               max_mid
             };
 

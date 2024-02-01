@@ -6,19 +6,19 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      class Point;
-      namespace spherical {
-        namespace oned {
-          class Sphere1D;
-          class S1Point;
-          class ArcsSet;
-          class LimitAngle;
-          class SubLimitAngle;
-        }
-      }
       namespace partitioning {
         class Hyperplane;
       }
+      namespace spherical {
+        namespace oned {
+          class ArcsSet;
+          class Sphere1D;
+          class LimitAngle;
+          class S1Point;
+          class SubLimitAngle;
+        }
+      }
+      class Point;
     }
     namespace exception {
       class MathIllegalArgumentException;
@@ -41,18 +41,18 @@ namespace org {
           class LimitAngle : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_3aa41fceed3d883d,
-              mid_copySelf_cf577dee4ce85ae5,
-              mid_emptyHyperplane_791f9e0d98b5141b,
-              mid_getLocation_633b3f99682591ac,
-              mid_getOffset_f0dd8cb59ea09794,
-              mid_getReverse_cf577dee4ce85ae5,
-              mid_getTolerance_b74f83833fdad017,
-              mid_isDirect_9ab94ac1dc23b105,
-              mid_project_2214f7ad5b6ca158,
-              mid_sameOrientationAs_806ecfbca1984226,
-              mid_wholeHyperplane_791f9e0d98b5141b,
-              mid_wholeSpace_7d64add151265ba7,
+              mid_init$_3444d777ecc41f4a,
+              mid_copySelf_80ab8fd71540f6fc,
+              mid_emptyHyperplane_ed9ca9b2055841e0,
+              mid_getLocation_17e56b7fbf0cddb5,
+              mid_getOffset_277cb62c4ec87155,
+              mid_getReverse_80ab8fd71540f6fc,
+              mid_getTolerance_9981f74b2d109da6,
+              mid_isDirect_eee3de00fe971136,
+              mid_project_ff0c84956c63705d,
+              mid_sameOrientationAs_51737f919fe0cf72,
+              mid_wholeHyperplane_ed9ca9b2055841e0,
+              mid_wholeSpace_04cfacb89407dcdc,
               max_mid
             };
 

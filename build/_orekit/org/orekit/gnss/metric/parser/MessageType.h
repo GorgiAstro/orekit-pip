@@ -3,23 +3,23 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace gnss {
       namespace metric {
-        namespace parser {
-          class EncodedMessage;
-        }
         namespace messages {
           class ParsedMessage;
         }
+        namespace parser {
+          class EncodedMessage;
+        }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -33,7 +33,7 @@ namespace org {
           class MessageType : public ::java::lang::Object {
            public:
             enum {
-              mid_parse_9c30feea4fe836ce,
+              mid_parse_923958375e872406,
               max_mid
             };
 

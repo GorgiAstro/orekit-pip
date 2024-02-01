@@ -4,9 +4,32 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace optim {
+      class ConvergenceChecker;
+      namespace nonlinear {
+        namespace vector {
+          namespace leastsquares {
+            class LeastSquaresOptimizer$Optimum;
+            class LeastSquaresOptimizer;
+            class LeastSquaresProblem$Evaluation;
+          }
+        }
+      }
+    }
+    namespace linear {
+      class RealMatrix;
+    }
+  }
   namespace orekit {
     namespace utils {
       class ParameterDriversList;
+    }
+    namespace propagation {
+      class Propagator;
+      namespace conversion {
+        class PropagatorBuilder;
+      }
     }
     namespace estimation {
       namespace measurements {
@@ -16,29 +39,6 @@ namespace org {
       namespace leastsquares {
         class BatchLSObserver;
       }
-    }
-    namespace propagation {
-      class Propagator;
-      namespace conversion {
-        class PropagatorBuilder;
-      }
-    }
-  }
-  namespace hipparchus {
-    namespace optim {
-      class ConvergenceChecker;
-      namespace nonlinear {
-        namespace vector {
-          namespace leastsquares {
-            class LeastSquaresOptimizer;
-            class LeastSquaresProblem$Evaluation;
-            class LeastSquaresOptimizer$Optimum;
-          }
-        }
-      }
-    }
-    namespace linear {
-      class RealMatrix;
     }
   }
 }
@@ -60,22 +60,22 @@ namespace org {
         class BatchLSEstimator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_4ea528b84c668043,
-            mid_addMeasurement_1640bf51befb0c77,
-            mid_estimate_17493e4ff0ba8a7f,
-            mid_getEvaluationsCount_55546ef6a647f39b,
-            mid_getIterationsCount_55546ef6a647f39b,
-            mid_getLastEstimations_810bed48fafb0b9a,
-            mid_getMeasurementsParametersDrivers_f4ab92625193d439,
-            mid_getOptimum_ae37d9c1ca8671a9,
-            mid_getOrbitalParametersDrivers_f4ab92625193d439,
-            mid_getPhysicalCovariances_f5dd9d6021dc9dae,
-            mid_getPropagatorParametersDrivers_f4ab92625193d439,
-            mid_setConvergenceChecker_faeab0ed0f5e2304,
-            mid_setMaxEvaluations_44ed599e93e8a30c,
-            mid_setMaxIterations_44ed599e93e8a30c,
-            mid_setObserver_656e84af1aeac1c9,
-            mid_setParametersConvergenceThreshold_8ba9fe7a847cecad,
+            mid_init$_8ee4d79a31166120,
+            mid_addMeasurement_ccec3dc40c67aef1,
+            mid_estimate_af093bf37101b796,
+            mid_getEvaluationsCount_d6ab429752e7c267,
+            mid_getIterationsCount_d6ab429752e7c267,
+            mid_getLastEstimations_dbcb8bbac6b35e0d,
+            mid_getMeasurementsParametersDrivers_abc0e43715b72da1,
+            mid_getOptimum_e6c3e173aec0ba47,
+            mid_getOrbitalParametersDrivers_abc0e43715b72da1,
+            mid_getPhysicalCovariances_d5a7c13c36e5009c,
+            mid_getPropagatorParametersDrivers_abc0e43715b72da1,
+            mid_setConvergenceChecker_3c3ab50d4a5913f8,
+            mid_setMaxEvaluations_8fd427ab23829bf5,
+            mid_setMaxIterations_8fd427ab23829bf5,
+            mid_setObserver_9818f9ffb87bd135,
+            mid_setParametersConvergenceThreshold_1ad26e8c8c0cd65b,
             max_mid
           };
 

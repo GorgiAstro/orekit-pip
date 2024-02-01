@@ -5,12 +5,12 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
+    }
     namespace ode {
       class ODEStateAndDerivative;
-    }
-    namespace exception {
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
     }
   }
 }
@@ -30,17 +30,17 @@ namespace org {
         class AdaptiveStepsizeIntegrator : public ::org::hipparchus::ode::AbstractIntegrator {
          public:
           enum {
-            mid_init$_5cf41328bbe9ebd3,
-            mid_init$_3644a0740275e98a,
-            mid_getMaxStep_b74f83833fdad017,
-            mid_getMinStep_b74f83833fdad017,
-            mid_initializeStep_88c6c25d850bcf5e,
-            mid_setInitialStepSize_8ba9fe7a847cecad,
-            mid_setStepSizeControl_aa31b8b89ee72c31,
-            mid_setStepSizeControl_49f4b5153d696ea5,
-            mid_getStepSizeHelper_67c50c21236171f5,
-            mid_sanityChecks_9ab16ee510aba086,
-            mid_resetInternalState_a1fa5dae97ea5ed2,
+            mid_init$_d6318b18b89a5370,
+            mid_init$_628c7a380d836cba,
+            mid_getMaxStep_9981f74b2d109da6,
+            mid_getMinStep_9981f74b2d109da6,
+            mid_initializeStep_aad73fce3c1fe5f2,
+            mid_setInitialStepSize_1ad26e8c8c0cd65b,
+            mid_setStepSizeControl_e3195482263a60ce,
+            mid_setStepSizeControl_cd5724127cc72e96,
+            mid_getStepSizeHelper_4e1e04b2e648c6b6,
+            mid_sanityChecks_e6ba2f1f75657f6f,
+            mid_resetInternalState_ff7cb6c242604316,
             max_mid
           };
 

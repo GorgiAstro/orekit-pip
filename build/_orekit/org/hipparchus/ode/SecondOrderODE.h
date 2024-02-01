@@ -17,8 +17,8 @@ namespace org {
       class SecondOrderODE : public ::java::lang::Object {
        public:
         enum {
-          mid_computeSecondDerivatives_cfe5741fd8aa4262,
-          mid_getDimension_55546ef6a647f39b,
+          mid_computeSecondDerivatives_18ba607b9243309a,
+          mid_getDimension_d6ab429752e7c267,
           max_mid
         };
 

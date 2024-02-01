@@ -3,20 +3,8 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class Map;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataSource;
-    }
     namespace files {
       namespace stk {
         class STKEphemerisFile$STKCoordinateSystem;
@@ -26,12 +14,24 @@ namespace org {
         class EphemerisFileParser;
       }
     }
-    namespace frames {
-      class Frame;
-    }
     namespace time {
       class UTCScale;
     }
+    namespace data {
+      class DataSource;
+    }
+    namespace frames {
+      class Frame;
+    }
+  }
+}
+namespace java {
+  namespace util {
+    class Map;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -44,8 +44,8 @@ namespace org {
         class STKEphemerisFileParser : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_d9add9ff71134116,
-            mid_parse_8357e440a0d0e83c,
+            mid_init$_01ab45d8c3ba0191,
+            mid_parse_419f61288a24c099,
             max_mid
           };
 

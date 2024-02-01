@@ -5,6 +5,9 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace utils {
       class ParameterDriversList;
     }
@@ -13,17 +16,14 @@ namespace org {
         class EstimatedMeasurement;
       }
     }
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace propagation {
       class SpacecraftState;
     }
   }
   namespace hipparchus {
     namespace linear {
-      class RealVector;
       class RealMatrix;
+      class RealVector;
     }
   }
 }
@@ -42,21 +42,21 @@ namespace org {
         class KalmanEstimation : public ::java::lang::Object {
          public:
           enum {
-            mid_getCorrectedMeasurement_9927c8980e79c922,
-            mid_getCorrectedSpacecraftStates_3807ff088e7ce821,
-            mid_getCurrentDate_c325492395d89b24,
-            mid_getCurrentMeasurementNumber_55546ef6a647f39b,
-            mid_getEstimatedMeasurementsParameters_cfb822366e8ab425,
-            mid_getEstimatedOrbitalParameters_cfb822366e8ab425,
-            mid_getEstimatedPropagationParameters_cfb822366e8ab425,
-            mid_getPhysicalEstimatedCovarianceMatrix_f77d745f2128c391,
-            mid_getPhysicalEstimatedState_3a10cc75bd070d84,
-            mid_getPhysicalInnovationCovarianceMatrix_f77d745f2128c391,
-            mid_getPhysicalKalmanGain_f77d745f2128c391,
-            mid_getPhysicalMeasurementJacobian_f77d745f2128c391,
-            mid_getPhysicalStateTransitionMatrix_f77d745f2128c391,
-            mid_getPredictedMeasurement_9927c8980e79c922,
-            mid_getPredictedSpacecraftStates_3807ff088e7ce821,
+            mid_getCorrectedMeasurement_b4478e72a44f53a7,
+            mid_getCorrectedSpacecraftStates_598bcd058df23e79,
+            mid_getCurrentDate_80e11148db499dda,
+            mid_getCurrentMeasurementNumber_d6ab429752e7c267,
+            mid_getEstimatedMeasurementsParameters_7c5a416c83e442be,
+            mid_getEstimatedOrbitalParameters_7c5a416c83e442be,
+            mid_getEstimatedPropagationParameters_7c5a416c83e442be,
+            mid_getPhysicalEstimatedCovarianceMatrix_b2eebabce70526d8,
+            mid_getPhysicalEstimatedState_92d7e8d8d3f1dfcf,
+            mid_getPhysicalInnovationCovarianceMatrix_b2eebabce70526d8,
+            mid_getPhysicalKalmanGain_b2eebabce70526d8,
+            mid_getPhysicalMeasurementJacobian_b2eebabce70526d8,
+            mid_getPhysicalStateTransitionMatrix_b2eebabce70526d8,
+            mid_getPredictedMeasurement_b4478e72a44f53a7,
+            mid_getPredictedSpacecraftStates_598bcd058df23e79,
             max_mid
           };
 

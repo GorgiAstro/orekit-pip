@@ -3,21 +3,21 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace gnss {
+      class SatInSystem;
+      class SatelliteSystem;
+      class ObservationType;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace gnss {
-      class SatelliteSystem;
-      class ObservationType;
-      class SatInSystem;
-    }
   }
 }
 template<class T> class JArray;
@@ -31,11 +31,11 @@ namespace org {
           class PhaseShiftCorrection : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_125d8c5f455d179a,
-              mid_getCorrection_b74f83833fdad017,
-              mid_getSatelliteSystem_21bd759cc4a81606,
-              mid_getSatsCorrected_e62d3bb06d56d7e3,
-              mid_getTypeObs_eeb5027d2516140e,
+              mid_init$_88e029cb2132d0f6,
+              mid_getCorrection_9981f74b2d109da6,
+              mid_getSatelliteSystem_fb0bd27fcc3ba9fc,
+              mid_getSatsCorrected_d751c1a57012b438,
+              mid_getTypeObs_e80ef1520523663f,
               max_mid
             };
 

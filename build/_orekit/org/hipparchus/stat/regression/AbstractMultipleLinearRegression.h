@@ -3,6 +3,11 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace stat {
@@ -10,11 +15,6 @@ namespace org {
         class MultipleLinearRegression;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,28 +27,28 @@ namespace org {
         class AbstractMultipleLinearRegression : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_estimateErrorVariance_b74f83833fdad017,
-            mid_estimateRegressandVariance_b74f83833fdad017,
-            mid_estimateRegressionParameters_25e1757a36c4dde2,
-            mid_estimateRegressionParametersStandardErrors_25e1757a36c4dde2,
-            mid_estimateRegressionParametersVariance_3b7b373db8e7887f,
-            mid_estimateRegressionStandardError_b74f83833fdad017,
-            mid_estimateResiduals_25e1757a36c4dde2,
-            mid_isNoIntercept_9ab94ac1dc23b105,
-            mid_newSampleData_4484ad1f15b73c7a,
-            mid_setNoIntercept_fcb96c98de6fad04,
-            mid_getY_3a10cc75bd070d84,
-            mid_getX_f77d745f2128c391,
-            mid_newXSampleData_07adb42ffaa97d31,
-            mid_calculateBeta_3a10cc75bd070d84,
-            mid_calculateBetaVariance_f77d745f2128c391,
-            mid_validateSampleData_8a9d29a6bd2c9070,
-            mid_newYSampleData_ab69da052b88f50c,
-            mid_calculateResiduals_3a10cc75bd070d84,
-            mid_validateCovarianceData_32c2259f7dd7bcaf,
-            mid_calculateYVariance_b74f83833fdad017,
-            mid_calculateErrorVariance_b74f83833fdad017,
+            mid_init$_ff7cb6c242604316,
+            mid_estimateErrorVariance_9981f74b2d109da6,
+            mid_estimateRegressandVariance_9981f74b2d109da6,
+            mid_estimateRegressionParameters_be783177b060994b,
+            mid_estimateRegressionParametersStandardErrors_be783177b060994b,
+            mid_estimateRegressionParametersVariance_eda3f19b8225f78f,
+            mid_estimateRegressionStandardError_9981f74b2d109da6,
+            mid_estimateResiduals_be783177b060994b,
+            mid_isNoIntercept_eee3de00fe971136,
+            mid_newSampleData_40b495c766d36227,
+            mid_setNoIntercept_b35db77cae58639e,
+            mid_getX_b2eebabce70526d8,
+            mid_getY_92d7e8d8d3f1dfcf,
+            mid_calculateBeta_92d7e8d8d3f1dfcf,
+            mid_calculateBetaVariance_b2eebabce70526d8,
+            mid_calculateErrorVariance_9981f74b2d109da6,
+            mid_validateSampleData_f1517d9a21833345,
+            mid_newYSampleData_a71c45509eaf92d1,
+            mid_newXSampleData_11ecdbb5af7ed67d,
+            mid_validateCovarianceData_5a4cd41298d36845,
+            mid_calculateResiduals_92d7e8d8d3f1dfcf,
+            mid_calculateYVariance_9981f74b2d109da6,
             max_mid
           };
 

@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
+    namespace utils {
+      class ParameterDriver;
+      class ExtendedPVCoordinatesProvider;
+    }
     namespace forces {
       namespace radiation {
         class RadiationSensitive;
       }
       class ForceModel;
-    }
-    namespace utils {
-      class ExtendedPVCoordinatesProvider;
-      class ParameterDriver;
     }
     namespace propagation {
       class FieldSpacecraftState;
@@ -27,8 +27,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
@@ -53,12 +53,12 @@ namespace org {
         class KnockeRediffusedForceModel : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_17d1d2d417a65389,
-            mid_init$_b5f718a016936798,
-            mid_acceleration_0ce449c67b5ffd9c,
-            mid_acceleration_20bded0292328743,
-            mid_dependsOnPositionOnly_9ab94ac1dc23b105,
-            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_init$_acb94c2e2ec7d1c9,
+            mid_init$_eb25af3005fe6192,
+            mid_acceleration_5e147f44c28a35c9,
+            mid_acceleration_9816b8f76e94356a,
+            mid_dependsOnPositionOnly_eee3de00fe971136,
+            mid_getParametersDrivers_d751c1a57012b438,
             max_mid
           };
 
@@ -76,8 +76,8 @@ namespace org {
           KnockeRediffusedForceModel(const ::org::orekit::utils::ExtendedPVCoordinatesProvider &, const ::org::orekit::forces::radiation::RadiationSensitive &, jdouble, jdouble);
           KnockeRediffusedForceModel(const ::org::orekit::utils::ExtendedPVCoordinatesProvider &, const ::org::orekit::forces::radiation::RadiationSensitive &, jdouble, jdouble, const ::org::orekit::time::TimeScale &);
 
-          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
+          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           jboolean dependsOnPositionOnly() const;
           ::java::util::List getParametersDrivers() const;
         };

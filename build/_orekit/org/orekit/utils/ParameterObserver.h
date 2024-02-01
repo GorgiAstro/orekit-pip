@@ -5,12 +5,12 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace utils {
       class TimeSpanMap;
       class ParameterDriver;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -30,16 +30,16 @@ namespace org {
       class ParameterObserver : public ::java::lang::Object {
        public:
         enum {
-          mid_estimationTypeChanged_caa43046eb7c4bed,
-          mid_maxValueChanged_babb3527161a946b,
-          mid_minValueChanged_babb3527161a946b,
-          mid_nameChanged_44e2be0923cad9dd,
-          mid_referenceDateChanged_4d2c7fa440f612ec,
-          mid_referenceValueChanged_babb3527161a946b,
-          mid_scaleChanged_babb3527161a946b,
-          mid_selectionChanged_caa43046eb7c4bed,
-          mid_valueChanged_1213852ac6f6619d,
-          mid_valueSpanMapChanged_a1a4c13d6e36518d,
+          mid_estimationTypeChanged_c75c970d260cd0dc,
+          mid_maxValueChanged_4feb01834768abb1,
+          mid_minValueChanged_4feb01834768abb1,
+          mid_nameChanged_6ace1c82b9fc096f,
+          mid_referenceDateChanged_863636e2c613274c,
+          mid_referenceValueChanged_4feb01834768abb1,
+          mid_scaleChanged_4feb01834768abb1,
+          mid_selectionChanged_c75c970d260cd0dc,
+          mid_valueChanged_561d325e967ec35c,
+          mid_valueSpanMapChanged_d10bdde76d08bc2c,
           max_mid
         };
 

@@ -5,27 +5,27 @@
 
 namespace org {
   namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+      class FieldAttitude;
+      class Attitude;
+      class AttitudesSequence$SwitchHandler;
+    }
+    namespace utils {
+      class FieldPVCoordinatesProvider;
+      class AngularDerivativesFilter;
+      class PVCoordinatesProvider;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
     namespace propagation {
       class FieldPropagator;
       class Propagator;
       namespace events {
         class EventDetector;
       }
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-      class AttitudesSequence$SwitchHandler;
-      class FieldAttitude;
-      class Attitude;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class PVCoordinatesProvider;
-      class FieldPVCoordinatesProvider;
-      class AngularDerivativesFilter;
     }
     namespace frames {
       class Frame;
@@ -57,15 +57,15 @@ namespace org {
       class AttitudesSequence : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_addSwitchingCondition_3344837cede29df1,
-          mid_getAttitude_896ee4d68989b1e8,
-          mid_getAttitude_21845cfb0034fe1c,
-          mid_getAttitudeRotation_6acae55a2f5d3ab4,
-          mid_getAttitudeRotation_1bc07ea175743b30,
-          mid_registerSwitchEvents_7077d4247ef1c4a5,
-          mid_registerSwitchEvents_3fe3cc96d879b6c1,
-          mid_resetActiveProvider_8e4d3ea100bc0095,
+          mid_init$_ff7cb6c242604316,
+          mid_addSwitchingCondition_db5ac9dd692378ee,
+          mid_getAttitude_aab1c6ab68ffdcbb,
+          mid_getAttitude_a02177519e1b6a45,
+          mid_getAttitudeRotation_267252ddff45220c,
+          mid_getAttitudeRotation_494718838b66cf03,
+          mid_registerSwitchEvents_f334dbd717e289d2,
+          mid_registerSwitchEvents_97ccbc8d3d017572,
+          mid_resetActiveProvider_fddd0a7d9f33bafa,
           max_mid
         };
 

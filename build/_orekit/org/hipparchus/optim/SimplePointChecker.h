@@ -3,17 +3,17 @@
 
 #include "org/hipparchus/optim/AbstractConvergenceChecker.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+    class Object;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace util {
       class Pair;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
-    class Object;
   }
 }
 template<class T> class JArray;
@@ -25,9 +25,9 @@ namespace org {
       class SimplePointChecker : public ::org::hipparchus::optim::AbstractConvergenceChecker {
        public:
         enum {
-          mid_init$_369b4c97255d5afa,
-          mid_init$_2aa803b9073e6a76,
-          mid_converged_093700f2f7221ef4,
+          mid_init$_13edac039e8cc967,
+          mid_init$_905e65280a4e6722,
+          mid_converged_5c25e68860d2a05f,
           max_mid
         };
 

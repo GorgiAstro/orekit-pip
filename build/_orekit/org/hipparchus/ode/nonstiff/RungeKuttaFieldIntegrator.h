@@ -6,19 +6,19 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
-      class FieldExpandableODE;
-      class FieldODEState;
-      class FieldODEStateAndDerivative;
       namespace nonstiff {
         class FieldButcherArrayProvider;
       }
       class FieldOrdinaryDifferentialEquation;
+      class FieldODEStateAndDerivative;
+      class FieldExpandableODE;
+      class FieldODEState;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
     }
     class CalculusFieldElement;
-    namespace exception {
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
-    }
   }
 }
 namespace java {
@@ -36,11 +36,11 @@ namespace org {
         class RungeKuttaFieldIntegrator : public ::org::hipparchus::ode::AbstractFieldIntegrator {
          public:
           enum {
-            mid_getDefaultStep_81520b552cb3fa26,
-            mid_integrate_75ca69013be095d1,
-            mid_singleStep_85013ed12cf10d41,
-            mid_createInterpolator_7cba9d9178eefc1d,
-            mid_fraction_431f825c752f7b4c,
+            mid_getDefaultStep_08d37e3f77b7239d,
+            mid_integrate_7e5884a5ebca9afb,
+            mid_singleStep_770e649b440853fc,
+            mid_fraction_89a7d1b6c5e4fe60,
+            mid_createInterpolator_17af2a8a707ea45d,
             max_mid
           };
 

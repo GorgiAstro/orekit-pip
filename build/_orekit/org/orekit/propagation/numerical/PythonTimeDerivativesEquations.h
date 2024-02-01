@@ -4,19 +4,19 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace propagation {
-      namespace numerical {
-        class TimeDerivativesEquations;
-      }
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
           class Vector3D;
         }
+      }
+    }
+  }
+  namespace orekit {
+    namespace propagation {
+      namespace numerical {
+        class TimeDerivativesEquations;
       }
     }
   }
@@ -37,14 +37,14 @@ namespace org {
         class PythonTimeDerivativesEquations : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_addKeplerContribution_8ba9fe7a847cecad,
-            mid_addMassDerivative_8ba9fe7a847cecad,
-            mid_addNonKeplerianAcceleration_1844f891addbac57,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_ff7cb6c242604316,
+            mid_addKeplerContribution_1ad26e8c8c0cd65b,
+            mid_addMassDerivative_1ad26e8c8c0cd65b,
+            mid_addNonKeplerianAcceleration_30f8886dfb88a63c,
+            mid_finalize_ff7cb6c242604316,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

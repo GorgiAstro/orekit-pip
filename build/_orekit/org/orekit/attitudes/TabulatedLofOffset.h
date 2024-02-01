@@ -3,35 +3,35 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace attitudes {
+      class BoundedAttitudeProvider;
+      class FieldAttitude;
+      class Attitude;
+    }
+    namespace utils {
+      class FieldPVCoordinatesProvider;
+      class AngularDerivativesFilter;
+      class TimeStampedAngularCoordinates;
+      class PVCoordinatesProvider;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
+    namespace frames {
+      class LOF;
+      class Frame;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class TimeStampedAngularCoordinates;
-      class PVCoordinatesProvider;
-      class FieldPVCoordinatesProvider;
-      class AngularDerivativesFilter;
-    }
-    namespace attitudes {
-      class FieldAttitude;
-      class BoundedAttitudeProvider;
-      class Attitude;
-    }
-    namespace frames {
-      class LOF;
-      class Frame;
-    }
   }
 }
 template<class T> class JArray;
@@ -43,13 +43,13 @@ namespace org {
       class TabulatedLofOffset : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_2876403b42e11bdd,
-          mid_init$_0a429198a7f4db2d,
-          mid_getAttitude_21845cfb0034fe1c,
-          mid_getAttitude_896ee4d68989b1e8,
-          mid_getMaxDate_c325492395d89b24,
-          mid_getMinDate_c325492395d89b24,
-          mid_getTable_e62d3bb06d56d7e3,
+          mid_init$_86d238ce985844ab,
+          mid_init$_416ded54ccbb07fd,
+          mid_getAttitude_aab1c6ab68ffdcbb,
+          mid_getAttitude_a02177519e1b6a45,
+          mid_getMaxDate_80e11148db499dda,
+          mid_getMinDate_80e11148db499dda,
+          mid_getTable_d751c1a57012b438,
           max_mid
         };
 
@@ -67,8 +67,8 @@ namespace org {
         TabulatedLofOffset(const ::org::orekit::frames::Frame &, const ::org::orekit::frames::LOF &, const ::java::util::List &, jint, const ::org::orekit::utils::AngularDerivativesFilter &);
         TabulatedLofOffset(const ::org::orekit::frames::Frame &, const ::org::orekit::frames::LOF &, const ::java::util::List &, jint, const ::org::orekit::utils::AngularDerivativesFilter &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::time::AbsoluteDate &);
 
-        ::org::orekit::attitudes::Attitude getAttitude(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::attitudes::FieldAttitude getAttitude(const ::org::orekit::utils::FieldPVCoordinatesProvider &, const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::frames::Frame &) const;
+        ::org::orekit::attitudes::Attitude getAttitude(const ::org::orekit::utils::PVCoordinatesProvider &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
         ::org::orekit::time::AbsoluteDate getMaxDate() const;
         ::org::orekit::time::AbsoluteDate getMinDate() const;
         ::java::util::List getTable() const;

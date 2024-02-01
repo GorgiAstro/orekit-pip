@@ -19,7 +19,7 @@ namespace java {
     class ObjectInputValidation : public ::java::lang::Object {
      public:
       enum {
-        mid_validateObject_a1fa5dae97ea5ed2,
+        mid_validateObject_ff7cb6c242604316,
         max_mid
       };
 

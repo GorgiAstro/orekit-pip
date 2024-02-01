@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
@@ -22,18 +22,18 @@ namespace org {
     class CalculusFieldElement;
   }
   namespace orekit {
+    namespace bodies {
+      class CR3BPSystem;
+    }
     namespace forces {
       class ForceModel;
-    }
-    namespace utils {
-      class ParameterDriver;
     }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
-    namespace bodies {
-      class CR3BPSystem;
+    namespace utils {
+      class ParameterDriver;
     }
   }
 }
@@ -57,13 +57,13 @@ namespace org {
           class CR3BPForceModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_572e4de529747211,
-              mid_acceleration_20bded0292328743,
-              mid_acceleration_0ce449c67b5ffd9c,
-              mid_dependsOnPositionOnly_9ab94ac1dc23b105,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_getPotential_70d618f733e9234e,
-              mid_getPotential_ed1f58cbefd22aa8,
+              mid_init$_d97bf5b01aa2ae7b,
+              mid_acceleration_5e147f44c28a35c9,
+              mid_acceleration_9816b8f76e94356a,
+              mid_dependsOnPositionOnly_eee3de00fe971136,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_getPotential_e2c0ea69b49ff127,
+              mid_getPotential_25833e647d701f52,
               max_mid
             };
 

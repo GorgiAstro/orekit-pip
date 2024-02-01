@@ -3,6 +3,12 @@
 
 #include "org/orekit/files/ccsds/section/AbstractWriter.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
@@ -14,12 +20,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,8 +34,8 @@ namespace org {
             class UserDefinedWriter : public ::org::orekit::files::ccsds::section::AbstractWriter {
              public:
               enum {
-                mid_init$_8d5316089ada315a,
-                mid_writeContent_fb222e851cd27682,
+                mid_init$_22bf6791b643d8df,
+                mid_writeContent_05c6d36d73082fa6,
                 max_mid
               };
 

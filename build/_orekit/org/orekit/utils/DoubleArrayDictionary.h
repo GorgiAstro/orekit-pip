@@ -19,8 +19,8 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace utils {
-      class DoubleArrayDictionary$Entry;
       class DoubleArrayDictionary;
+      class DoubleArrayDictionary$Entry;
     }
   }
 }
@@ -33,21 +33,21 @@ namespace org {
       class DoubleArrayDictionary : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_init$_44ed599e93e8a30c,
-          mid_init$_6648520b18d8ef1d,
-          mid_clear_a1fa5dae97ea5ed2,
-          mid_get_1d7f5d54f6c58f85,
-          mid_getData_e62d3bb06d56d7e3,
-          mid_getEntry_c60933ca2e34a5f9,
-          mid_put_6fb36758267c5870,
-          mid_putAll_70dc9a5517cb372a,
-          mid_putAll_6648520b18d8ef1d,
-          mid_remove_cde6b28e15c96b75,
-          mid_size_55546ef6a647f39b,
-          mid_toMap_810bed48fafb0b9a,
-          mid_toString_1c1fa1e935d6cdcf,
-          mid_unmodifiableView_7e78a9fc753e1e5a,
+          mid_init$_ff7cb6c242604316,
+          mid_init$_8fd427ab23829bf5,
+          mid_init$_df2bb61624910c2a,
+          mid_clear_ff7cb6c242604316,
+          mid_get_4bbf10387b1a6128,
+          mid_getData_d751c1a57012b438,
+          mid_getEntry_aec9d34316f710de,
+          mid_put_550be97e760e0f22,
+          mid_putAll_54f7443473e3aa44,
+          mid_putAll_df2bb61624910c2a,
+          mid_remove_df4c65b2aede5c41,
+          mid_size_d6ab429752e7c267,
+          mid_toMap_dbcb8bbac6b35e0d,
+          mid_toString_d2c8eb4129821f0e,
+          mid_unmodifiableView_c1165b139cc27553,
           max_mid
         };
 

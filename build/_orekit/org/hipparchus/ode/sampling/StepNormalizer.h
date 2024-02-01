@@ -7,11 +7,11 @@ namespace org {
   namespace hipparchus {
     namespace ode {
       namespace sampling {
-        class ODEFixedStepHandler;
         class ODEStateInterpolator;
         class StepNormalizerMode;
-        class StepNormalizerBounds;
         class ODEStepHandler;
+        class StepNormalizerBounds;
+        class ODEFixedStepHandler;
       }
       class ODEStateAndDerivative;
     }
@@ -32,13 +32,13 @@ namespace org {
         class StepNormalizer : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_aef956f00e8dabe9,
-            mid_init$_48db2681a14ca9e2,
-            mid_init$_2ecc51857164c598,
-            mid_init$_23f713b0620a4fcb,
-            mid_finish_d2d966b8a9c77b61,
-            mid_handleStep_197c5aaefd855810,
-            mid_init_a7556bd72cab73f1,
+            mid_init$_3ce0a51a49512640,
+            mid_init$_bcd163af3757bc17,
+            mid_init$_cc1ad3d091b10555,
+            mid_init$_941806f817f4c285,
+            mid_finish_6bfc236263cc281c,
+            mid_handleStep_4f79f5048423f318,
+            mid_init_25005604bcb94d07,
             max_mid
           };
 

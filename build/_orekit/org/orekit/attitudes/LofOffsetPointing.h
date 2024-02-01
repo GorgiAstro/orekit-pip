@@ -4,38 +4,38 @@
 #include "org/orekit/attitudes/GroundPointing.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldRotation;
-          class Rotation;
-        }
-      }
-    }
-  }
   namespace orekit {
     namespace attitudes {
       class AttitudeProvider;
       class FieldAttitude;
       class Attitude;
     }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
+    namespace bodies {
+      class BodyShape;
     }
     namespace utils {
-      class TimeStampedPVCoordinates;
-      class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
+      class TimeStampedPVCoordinates;
       class TimeStampedFieldPVCoordinates;
+      class PVCoordinatesProvider;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
     namespace frames {
       class Frame;
     }
-    namespace bodies {
-      class BodyShape;
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldRotation;
+          class Rotation;
+          class Vector3D;
+        }
+      }
     }
   }
 }
@@ -53,13 +53,13 @@ namespace org {
       class LofOffsetPointing : public ::org::orekit::attitudes::GroundPointing {
        public:
         enum {
-          mid_init$_e6ba21119b359ddd,
-          mid_getAttitude_896ee4d68989b1e8,
-          mid_getAttitude_21845cfb0034fe1c,
-          mid_getAttitudeRotation_1bc07ea175743b30,
-          mid_getAttitudeRotation_6acae55a2f5d3ab4,
-          mid_getTargetPV_0c9a6603286e7c6f,
-          mid_getTargetPV_4a6b199bd28f952f,
+          mid_init$_6abc8a02d40636af,
+          mid_getAttitude_aab1c6ab68ffdcbb,
+          mid_getAttitude_a02177519e1b6a45,
+          mid_getAttitudeRotation_494718838b66cf03,
+          mid_getAttitudeRotation_267252ddff45220c,
+          mid_getTargetPV_19719ebf0495cd86,
+          mid_getTargetPV_11bfbaf3cce3e66c,
           max_mid
         };
 

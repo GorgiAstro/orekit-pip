@@ -6,18 +6,18 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      namespace partitioning {
-        class SubHyperplane$SplitSubHyperplane;
-        class Hyperplane;
-        class Region;
-      }
       namespace spherical {
-        namespace oned {
-          class Sphere1D;
-        }
         namespace twod {
           class Sphere2D;
         }
+        namespace oned {
+          class Sphere1D;
+        }
+      }
+      namespace partitioning {
+        class Hyperplane;
+        class SubHyperplane$SplitSubHyperplane;
+        class Region;
       }
     }
   }
@@ -38,9 +38,9 @@ namespace org {
           class SubCircle : public ::org::hipparchus::geometry::partitioning::AbstractSubHyperplane {
            public:
             enum {
-              mid_init$_6ae2db4be0bbe390,
-              mid_split_30674c36ae2fcf9f,
-              mid_buildNew_3d919cfe5b11c3d0,
+              mid_init$_5428b0a00a62bde3,
+              mid_split_b587049e19682418,
+              mid_buildNew_35b28ef87fdef21f,
               max_mid
             };
 

@@ -4,20 +4,20 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace propagation {
       namespace semianalytical {
         namespace dsst {
           namespace forces {
-            class DSSTJ2SquaredClosedFormContext;
             class FieldDSSTJ2SquaredClosedFormContext;
+            class DSSTJ2SquaredClosedFormContext;
           }
         }
       }
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -37,8 +37,8 @@ namespace org {
             class J2SquaredModel : public ::java::lang::Object {
              public:
               enum {
-                mid_computeMeanEquinoctialSecondOrderTerms_9e21a8e72403ad02,
-                mid_computeMeanEquinoctialSecondOrderTerms_4a156b883cf16de2,
+                mid_computeMeanEquinoctialSecondOrderTerms_639aa05fb2436ba0,
+                mid_computeMeanEquinoctialSecondOrderTerms_614616a5f895b25b,
                 max_mid
               };
 

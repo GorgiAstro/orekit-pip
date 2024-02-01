@@ -4,14 +4,14 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
   namespace util {
     namespace stream {
       class Stream;
     }
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
   }
 }
 namespace org {
@@ -19,8 +19,8 @@ namespace org {
     namespace propagation {
       namespace events {
         class FieldEventDetector;
-        class EventDetector;
         class EventDetectorsProvider;
+        class EventDetector;
       }
     }
   }
@@ -38,13 +38,13 @@ namespace org {
         class PythonEventDetectorsProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getEventDetectors_14e21bf777ff0ccf,
-            mid_getFieldEventDetectors_283ad33581c047a0,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_ff7cb6c242604316,
+            mid_finalize_ff7cb6c242604316,
+            mid_getEventDetectors_11e4ca8182c1933d,
+            mid_getFieldEventDetectors_d3db121d9deb0312,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

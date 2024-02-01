@@ -5,8 +5,8 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -27,10 +27,10 @@ namespace org {
               class FieldHansenTesseralLinear : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_67ad229e9005c233,
-                  mid_computeInitValues_baa1ed35ace5d036,
-                  mid_getDerivative_23984a6e38b0b1f2,
-                  mid_getValue_23984a6e38b0b1f2,
+                  mid_init$_3621dda6d262ea2c,
+                  mid_computeInitValues_f9ea60a8dc2d69fb,
+                  mid_getDerivative_b23de0cfc61f8f60,
+                  mid_getValue_b23de0cfc61f8f60,
                   max_mid
                 };
 

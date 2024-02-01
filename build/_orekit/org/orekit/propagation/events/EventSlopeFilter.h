@@ -32,12 +32,12 @@ namespace org {
         class EventSlopeFilter : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_ad8592156f0d09e7,
-            mid_g_a17ea857ce74d258,
-            mid_getDetector_9ada55f07f5a223c,
-            mid_getFilter_1ad5d92370feb87a,
-            mid_init_2d7f9a496c7e9781,
-            mid_create_94951659c0c458e9,
+            mid_init$_482ce33f82f91e55,
+            mid_g_b443ba1cc794b916,
+            mid_getDetector_ebd847a60689999d,
+            mid_getFilter_25839fba67b73b37,
+            mid_init_14deaae988292d42,
+            mid_create_57e65758709f9697,
             max_mid
           };
 

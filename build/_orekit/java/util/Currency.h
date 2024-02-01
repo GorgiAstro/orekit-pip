@@ -6,8 +6,8 @@
 namespace java {
   namespace util {
     class Locale;
-    class Set;
     class Currency;
+    class Set;
   }
   namespace io {
     class Serializable;
@@ -25,18 +25,18 @@ namespace java {
     class Currency : public ::java::lang::Object {
      public:
       enum {
-        mid_getAvailableCurrencies_7e8f11dd23d1142c,
-        mid_getCurrencyCode_1c1fa1e935d6cdcf,
-        mid_getDefaultFractionDigits_55546ef6a647f39b,
-        mid_getDisplayName_1c1fa1e935d6cdcf,
-        mid_getDisplayName_26070c28e6ea354d,
-        mid_getInstance_3e2cd68dc3f32c98,
-        mid_getInstance_38adb3ba9f36a547,
-        mid_getNumericCode_55546ef6a647f39b,
-        mid_getNumericCodeAsString_1c1fa1e935d6cdcf,
-        mid_getSymbol_1c1fa1e935d6cdcf,
-        mid_getSymbol_26070c28e6ea354d,
-        mid_toString_1c1fa1e935d6cdcf,
+        mid_getAvailableCurrencies_6b191a9b12c1004b,
+        mid_getCurrencyCode_d2c8eb4129821f0e,
+        mid_getDefaultFractionDigits_d6ab429752e7c267,
+        mid_getDisplayName_d2c8eb4129821f0e,
+        mid_getDisplayName_5969ecf7afac3dba,
+        mid_getInstance_14444ab181fefaec,
+        mid_getInstance_3359684fedb7adc8,
+        mid_getNumericCode_d6ab429752e7c267,
+        mid_getNumericCodeAsString_d2c8eb4129821f0e,
+        mid_getSymbol_d2c8eb4129821f0e,
+        mid_getSymbol_5969ecf7afac3dba,
+        mid_toString_d2c8eb4129821f0e,
         max_mid
       };
 

@@ -4,38 +4,38 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-          class FieldLine;
-          class Line;
-        }
-      }
-    }
-  }
   namespace orekit {
+    namespace bodies {
+      class GeodeticPoint;
+      class FieldGeodeticPoint;
+    }
     namespace models {
       namespace earth {
-        class EarthShape;
         class ReferenceEllipsoid;
+        class EarthShape;
       }
     }
-    namespace bodies {
-      class FieldGeodeticPoint;
-      class GeodeticPoint;
-    }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
     namespace utils {
       class TimeStampedPVCoordinates;
     }
     namespace frames {
       class Frame;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Line;
+          class FieldLine;
+          class Vector3D;
+        }
+      }
     }
   }
 }
@@ -55,21 +55,21 @@ namespace org {
         class PythonEarthShape : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getBodyFrame_2c51111cc6894ba1,
-            mid_getEllipsoid_aa643af2699b886e,
-            mid_getIntersectionPoint_66b39d6d84447197,
-            mid_getIntersectionPoint_f1db6d4c78519d48,
-            mid_projectToGround_3cbe213b2c291f18,
-            mid_projectToGround_feded476b8bdfcfc,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
-            mid_transform_6aa36b82e3b80b58,
-            mid_transform_a840d9913a98925f,
-            mid_transform_f67fa82bac3192f0,
-            mid_transform_93de77ed9854e321,
+            mid_init$_ff7cb6c242604316,
+            mid_finalize_ff7cb6c242604316,
+            mid_getBodyFrame_cb151471db4570f0,
+            mid_getEllipsoid_cff2eba11ebd2420,
+            mid_getIntersectionPoint_9f0bcc9c00772903,
+            mid_getIntersectionPoint_ade5649cae5a4672,
+            mid_projectToGround_28dd2a6cc35491d2,
+            mid_projectToGround_26b1db430bbeb49e,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
+            mid_transform_f974aaaf2e73b405,
+            mid_transform_0bfc32b1890053a9,
+            mid_transform_52f3336802c12846,
+            mid_transform_82a0f6c52928ba20,
             max_mid
           };
 
@@ -89,8 +89,8 @@ namespace org {
           void finalize() const;
           ::org::orekit::frames::Frame getBodyFrame() const;
           ::org::orekit::models::earth::ReferenceEllipsoid getEllipsoid() const;
-          ::org::orekit::bodies::FieldGeodeticPoint getIntersectionPoint(const ::org::hipparchus::geometry::euclidean::threed::FieldLine &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::FieldAbsoluteDate &) const;
           ::org::orekit::bodies::GeodeticPoint getIntersectionPoint(const ::org::hipparchus::geometry::euclidean::threed::Line &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::AbsoluteDate &) const;
+          ::org::orekit::bodies::FieldGeodeticPoint getIntersectionPoint(const ::org::hipparchus::geometry::euclidean::threed::FieldLine &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::FieldAbsoluteDate &) const;
           ::org::orekit::utils::TimeStampedPVCoordinates projectToGround(const ::org::orekit::utils::TimeStampedPVCoordinates &, const ::org::orekit::frames::Frame &) const;
           ::org::hipparchus::geometry::euclidean::threed::Vector3D projectToGround(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
           void pythonDecRef() const;

@@ -6,10 +6,10 @@
 namespace java {
   namespace util {
     class Locale;
-    class ResourceBundle;
+    class ResourceBundle$Control;
     class Enumeration;
     class Set;
-    class ResourceBundle$Control;
+    class ResourceBundle;
   }
   namespace lang {
     class Module;
@@ -26,28 +26,28 @@ namespace java {
     class ResourceBundle : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_a1fa5dae97ea5ed2,
-        mid_clearCache_a1fa5dae97ea5ed2,
-        mid_clearCache_453dfedd86409b20,
-        mid_containsKey_cde6b28e15c96b75,
-        mid_getBaseBundleName_1c1fa1e935d6cdcf,
-        mid_getBundle_87958702449aa9de,
-        mid_getBundle_f30e31aff086822a,
-        mid_getBundle_492c838d4e514eed,
-        mid_getBundle_91e3a25906092405,
-        mid_getBundle_5732ed4040ee3707,
-        mid_getBundle_d4b10dbe28d13a94,
-        mid_getBundle_e9111f85c389cfab,
-        mid_getBundle_25c01a326a80559e,
-        mid_getKeys_57aeac8743844cd2,
-        mid_getLocale_179409cdd40bde08,
-        mid_getObject_b5bfd4959be00bde,
-        mid_getString_6f0f3576df9f75ee,
-        mid_getStringArray_fb693b259486c655,
-        mid_keySet_7e8f11dd23d1142c,
-        mid_handleGetObject_b5bfd4959be00bde,
-        mid_handleKeySet_7e8f11dd23d1142c,
-        mid_setParent_a5272d4f65ea6ec7,
+        mid_init$_ff7cb6c242604316,
+        mid_clearCache_ff7cb6c242604316,
+        mid_clearCache_a61ce527d5e72f5b,
+        mid_containsKey_df4c65b2aede5c41,
+        mid_getBaseBundleName_d2c8eb4129821f0e,
+        mid_getBundle_28d801a7a9e4fcc5,
+        mid_getBundle_1a5482ec6ba3acfb,
+        mid_getBundle_1e239705ec6f776d,
+        mid_getBundle_07340b09173eae4b,
+        mid_getBundle_5374368a5a436b81,
+        mid_getBundle_f8dd4077cd9fa3df,
+        mid_getBundle_ddcefc58f8bc9f25,
+        mid_getBundle_4345967f9a576955,
+        mid_getKeys_21566f230cac5c4a,
+        mid_getLocale_19f55af8c42f77cb,
+        mid_getObject_bb1ff484ae64c57e,
+        mid_getString_95277969d373e11f,
+        mid_getStringArray_8e8aaefa3268abcf,
+        mid_keySet_6b191a9b12c1004b,
+        mid_handleGetObject_bb1ff484ae64c57e,
+        mid_handleKeySet_6b191a9b12c1004b,
+        mid_setParent_d452cc51c7625c54,
         max_mid
       };
 

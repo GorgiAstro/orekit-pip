@@ -3,6 +3,15 @@
 
 #include "java/lang/RuntimeException.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class MathRuntimeException;
+      class Localizable;
+      class LocalizedException;
+    }
+  }
+}
 namespace java {
   namespace util {
     class Locale;
@@ -14,15 +23,6 @@ namespace java {
     class String;
   }
 }
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class Localizable;
-      class LocalizedException;
-      class MathRuntimeException;
-    }
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -32,15 +32,15 @@ namespace org {
       class MathRuntimeException : public ::java::lang::RuntimeException {
        public:
         enum {
-          mid_init$_9b3ada3301b0db8c,
-          mid_init$_4d462b77e7e55a0d,
-          mid_createInternalError_cfbaba94b4fd4362,
-          mid_createInternalError_4f759f0cc64787fb,
-          mid_getLocalizedMessage_1c1fa1e935d6cdcf,
-          mid_getMessage_1c1fa1e935d6cdcf,
-          mid_getMessage_26070c28e6ea354d,
-          mid_getParts_24e2edd6319f4c5a,
-          mid_getSpecifier_d8f5056e4f45c9a6,
+          mid_init$_2436a4119ba97d87,
+          mid_init$_db158649d786c484,
+          mid_createInternalError_f51081121a8ebb04,
+          mid_createInternalError_875275e2137f37ad,
+          mid_getLocalizedMessage_d2c8eb4129821f0e,
+          mid_getMessage_d2c8eb4129821f0e,
+          mid_getMessage_5969ecf7afac3dba,
+          mid_getParts_2ab86268ef7a6631,
+          mid_getSpecifier_667bcd34994d9d31,
           max_mid
         };
 

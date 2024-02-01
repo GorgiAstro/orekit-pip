@@ -6,6 +6,10 @@
 namespace org {
   namespace orekit {
     namespace ssa {
+      namespace metrics {
+        class FieldProbabilityOfCollision;
+        class ProbabilityOfCollision;
+      }
       namespace collision {
         namespace shorttermencounter {
           namespace probability {
@@ -15,20 +19,16 @@ namespace org {
           }
         }
       }
-      namespace metrics {
-        class ProbabilityOfCollision;
-        class FieldProbabilityOfCollision;
-      }
     }
   }
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace analysis {
       namespace integration {
         class FieldUnivariateIntegrator;
         class UnivariateIntegrator;
       }
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -49,11 +49,11 @@ namespace org {
               class Patera2005 : public ::org::orekit::ssa::collision::shorttermencounter::probability::twod::AbstractShortTermEncounter1DNumerical2DPOCMethod {
                public:
                 enum {
-                  mid_init$_a1fa5dae97ea5ed2,
-                  mid_init$_e1d28ae60eab08d7,
-                  mid_compute_f84396b6984702e2,
-                  mid_compute_978e207e20e445e6,
-                  mid_getType_8397a286d982b383,
+                  mid_init$_ff7cb6c242604316,
+                  mid_init$_7f47577937f891c6,
+                  mid_compute_a89d7889c8c6100d,
+                  mid_compute_91f4c05bf9eab1a6,
+                  mid_getType_592990a91429410c,
                   max_mid
                 };
 

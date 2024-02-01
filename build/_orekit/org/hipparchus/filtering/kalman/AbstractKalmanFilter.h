@@ -8,8 +8,8 @@ namespace org {
     namespace filtering {
       namespace kalman {
         class ProcessEstimate;
-        class KalmanFilter;
         class Measurement;
+        class KalmanFilter;
       }
     }
   }
@@ -29,11 +29,11 @@ namespace org {
         class AbstractKalmanFilter : public ::java::lang::Object {
          public:
           enum {
-            mid_getCorrected_e37ac5ac73cc5311,
-            mid_getPredicted_e37ac5ac73cc5311,
-            mid_predict_d6b77aa52bc10925,
-            mid_computeInnovationCovarianceMatrix_9ea00249b16d58c4,
-            mid_correct_1d2b8a7ddd079f16,
+            mid_getCorrected_270f067ba2ecffc6,
+            mid_getPredicted_270f067ba2ecffc6,
+            mid_predict_757a87fa089054a4,
+            mid_correct_b3f1a36810e108a6,
+            mid_computeInnovationCovarianceMatrix_6412409473265b02,
             max_mid
           };
 

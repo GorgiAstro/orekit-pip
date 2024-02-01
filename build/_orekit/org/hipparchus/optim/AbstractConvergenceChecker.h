@@ -24,10 +24,10 @@ namespace org {
       class AbstractConvergenceChecker : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_369b4c97255d5afa,
-          mid_converged_061aaa68e115701e,
-          mid_getAbsoluteThreshold_b74f83833fdad017,
-          mid_getRelativeThreshold_b74f83833fdad017,
+          mid_init$_13edac039e8cc967,
+          mid_converged_cb974f0dd5d76f8e,
+          mid_getAbsoluteThreshold_9981f74b2d109da6,
+          mid_getRelativeThreshold_9981f74b2d109da6,
           max_mid
         };
 

@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class NullArgumentException;
       class MathRuntimeException;
+      class NullArgumentException;
     }
     class Field;
     class FieldElement;
@@ -26,16 +26,16 @@ namespace org {
     class FieldElement : public ::java::lang::Object {
      public:
       enum {
-        mid_add_392eff94748018d4,
-        mid_divide_392eff94748018d4,
-        mid_getField_04d1f63e17d5c5d4,
-        mid_getReal_b74f83833fdad017,
-        mid_isZero_9ab94ac1dc23b105,
-        mid_multiply_6c5caf579ccf9ce5,
-        mid_multiply_392eff94748018d4,
-        mid_negate_2ff8de927fda4153,
-        mid_reciprocal_2ff8de927fda4153,
-        mid_subtract_392eff94748018d4,
+        mid_add_6c107bef87eef23a,
+        mid_divide_6c107bef87eef23a,
+        mid_getField_577649682b9910c1,
+        mid_getReal_9981f74b2d109da6,
+        mid_isZero_eee3de00fe971136,
+        mid_multiply_bae57aba20797b29,
+        mid_multiply_6c107bef87eef23a,
+        mid_negate_f6328613456309a1,
+        mid_reciprocal_f6328613456309a1,
+        mid_subtract_6c107bef87eef23a,
         max_mid
       };
 

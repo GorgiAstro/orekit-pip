@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace util {
       class Pair;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,15 +25,15 @@ namespace org {
       class Pair : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_cb233f2d837bf6b7,
-          mid_create_ae46ab030a4d494a,
-          mid_equals_460c5e2d9d51c6cc,
-          mid_getFirst_541690f9ee81d3ad,
-          mid_getKey_541690f9ee81d3ad,
-          mid_getSecond_541690f9ee81d3ad,
-          mid_getValue_541690f9ee81d3ad,
-          mid_hashCode_55546ef6a647f39b,
-          mid_toString_1c1fa1e935d6cdcf,
+          mid_init$_b1372600709408bf,
+          mid_create_1528df1106e92169,
+          mid_equals_72faff9b05f5ed5e,
+          mid_getFirst_704a5bee58538972,
+          mid_getKey_704a5bee58538972,
+          mid_getSecond_704a5bee58538972,
+          mid_getValue_704a5bee58538972,
+          mid_hashCode_d6ab429752e7c267,
+          mid_toString_d2c8eb4129821f0e,
           max_mid
         };
 

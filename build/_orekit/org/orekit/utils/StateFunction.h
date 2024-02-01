@@ -24,7 +24,7 @@ namespace org {
       class StateFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_value_f227e5f48720b798,
+          mid_value_e8a4ac02afc72623,
           max_mid
         };
 

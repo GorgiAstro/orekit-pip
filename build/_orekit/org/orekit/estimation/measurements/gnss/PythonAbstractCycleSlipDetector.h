@@ -5,8 +5,8 @@
 
 namespace java {
   namespace util {
-    class List;
     class Map;
+    class List;
   }
   namespace lang {
     class Throwable;
@@ -16,6 +16,9 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace gnss {
       class SatelliteSystem;
       class Frequency;
@@ -26,9 +29,6 @@ namespace org {
           class ObservationDataSet;
         }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
     namespace estimation {
       namespace measurements {
@@ -50,16 +50,16 @@ namespace org {
           class PythonAbstractCycleSlipDetector : public ::org::orekit::estimation::measurements::gnss::AbstractCycleSlipDetector {
            public:
             enum {
-              mid_cycleSlipDataSet_6ac7265223ac326f,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_getMaxTimeBeetween2Measurement_b74f83833fdad017,
-              mid_getMinMeasurementNumber_55546ef6a647f39b,
-              mid_getResults_e62d3bb06d56d7e3,
-              mid_manageData_e95b94a72b1c921a,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
-              mid_setName_c8f78fa2214ae788,
+              mid_cycleSlipDataSet_417cb06bfd27f642,
+              mid_finalize_ff7cb6c242604316,
+              mid_getMaxTimeBeetween2Measurement_9981f74b2d109da6,
+              mid_getMinMeasurementNumber_d6ab429752e7c267,
+              mid_getResults_d751c1a57012b438,
+              mid_manageData_d75e9b743ecf20cb,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
+              mid_setName_69ce224351e794e7,
               max_mid
             };
 

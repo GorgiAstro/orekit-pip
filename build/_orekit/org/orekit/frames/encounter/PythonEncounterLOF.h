@@ -4,29 +4,29 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class FieldRotation;
+          class Rotation;
+          class Vector3D;
+        }
+      }
+    }
+    class Field;
+  }
   namespace orekit {
     namespace utils {
-      class FieldPVCoordinates;
       class PVCoordinates;
+      class FieldPVCoordinates;
     }
     namespace frames {
       namespace encounter {
         class EncounterLOF;
       }
     }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldRotation;
-          class FieldVector3D;
-          class Rotation;
-        }
-      }
-    }
-    class Field;
   }
 }
 namespace java {
@@ -46,18 +46,18 @@ namespace org {
         class PythonEncounterLOF : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getAxisNormalToCollisionPlane_8b724f8b4fdad1a2,
-            mid_getAxisNormalToCollisionPlane_98221d2e63674019,
-            mid_getFieldOther_dac7b66b757e9da0,
-            mid_getName_1c1fa1e935d6cdcf,
-            mid_getOther_180fb117720acb76,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
-            mid_rotationFromInertial_bf95090cc5e2a8d4,
-            mid_rotationFromInertial_8851faa33644affd,
+            mid_init$_ff7cb6c242604316,
+            mid_finalize_ff7cb6c242604316,
+            mid_getAxisNormalToCollisionPlane_032312bdeb3f2f93,
+            mid_getAxisNormalToCollisionPlane_10f9413c61ea347a,
+            mid_getFieldOther_aab2b71a889b2b8a,
+            mid_getName_d2c8eb4129821f0e,
+            mid_getOther_78e01095d7eced90,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
+            mid_rotationFromInertial_b6feed19a568aaff,
+            mid_rotationFromInertial_0c632cd592d334d1,
             max_mid
           };
 

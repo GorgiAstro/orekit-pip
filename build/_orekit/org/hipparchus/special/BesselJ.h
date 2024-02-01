@@ -5,15 +5,15 @@
 
 namespace org {
   namespace hipparchus {
-    namespace special {
-      class BesselJ$BesselJResult;
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
     }
     namespace analysis {
       class UnivariateFunction;
     }
-    namespace exception {
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
+    namespace special {
+      class BesselJ$BesselJResult;
     }
   }
 }
@@ -31,10 +31,10 @@ namespace org {
       class BesselJ : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_8ba9fe7a847cecad,
-          mid_rjBesl_f3a496b684b77e9a,
-          mid_value_04fd0666b613d2ab,
-          mid_value_99e3200dafc19573,
+          mid_init$_1ad26e8c8c0cd65b,
+          mid_rjBesl_dc4e9fb1ab0080b9,
+          mid_value_bf28ed64d6e8576b,
+          mid_value_82f92590f4247da1,
           max_mid
         };
 

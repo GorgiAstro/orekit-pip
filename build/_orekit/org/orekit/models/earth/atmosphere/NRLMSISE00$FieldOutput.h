@@ -24,7 +24,7 @@ namespace org {
           class NRLMSISE00$FieldOutput : public ::java::lang::Object {
            public:
             enum {
-              mid_getDensity_21e6b3c521b9c768,
+              mid_getDensity_dfcf702144fd7bc1,
               max_mid
             };
 

@@ -31,12 +31,12 @@ namespace org {
         class PythonAbstractCovarianceMatrixProvider : public ::org::orekit::estimation::sequential::AbstractCovarianceMatrixProvider {
          public:
           enum {
-            mid_init$_84bd15e0995d0c79,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getProcessNoiseMatrix_18b28191c1378912,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_f5364c9a9d9cbd53,
+            mid_finalize_ff7cb6c242604316,
+            mid_getProcessNoiseMatrix_70abd86226561523,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

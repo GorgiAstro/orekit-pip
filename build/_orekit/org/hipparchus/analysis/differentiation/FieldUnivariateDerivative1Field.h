@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
-    class Field;
     namespace analysis {
       namespace differentiation {
         class FieldUnivariateDerivative1;
         class FieldUnivariateDerivative1Field;
       }
     }
+    class Field;
   }
 }
 namespace java {
@@ -29,12 +29,12 @@ namespace org {
         class FieldUnivariateDerivative1Field : public ::java::lang::Object {
          public:
           enum {
-            mid_equals_460c5e2d9d51c6cc,
-            mid_getOne_b6c5666e0fb56c6c,
-            mid_getRuntimeClass_1aeb0737a960d371,
-            mid_getUnivariateDerivative1Field_d08ba09bfcc21d71,
-            mid_getZero_b6c5666e0fb56c6c,
-            mid_hashCode_55546ef6a647f39b,
+            mid_equals_72faff9b05f5ed5e,
+            mid_getOne_28456803a1233651,
+            mid_getRuntimeClass_d5247e4b166c4ce8,
+            mid_getUnivariateDerivative1Field_bd87e5d0ffac1a29,
+            mid_getZero_28456803a1233651,
+            mid_hashCode_d6ab429752e7c267,
             max_mid
           };
 

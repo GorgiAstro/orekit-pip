@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace sequential {
-        class KalmanObserver;
         class KalmanEstimation;
+        class KalmanObserver;
       }
     }
   }
@@ -29,12 +29,12 @@ namespace org {
         class PythonKalmanObserver : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_evaluationPerformed_406840a7e4ebe025,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_ff7cb6c242604316,
+            mid_evaluationPerformed_f81a8169e0b8e343,
+            mid_finalize_ff7cb6c242604316,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

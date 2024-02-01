@@ -14,11 +14,11 @@ namespace org {
       }
       class SpacecraftState;
     }
-    namespace utils {
-      class PVCoordinatesProvider;
-    }
     namespace frames {
       class TopocentricFrame;
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
     }
   }
 }
@@ -37,9 +37,9 @@ namespace org {
         class GroundAtNightDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_840cb5e02c152cc2,
-            mid_g_a17ea857ce74d258,
-            mid_create_6e7edcf0eae8a286,
+            mid_init$_b2b9eafa71445cd9,
+            mid_g_b443ba1cc794b916,
+            mid_create_c94abe491ef57ce3,
             max_mid
           };
 

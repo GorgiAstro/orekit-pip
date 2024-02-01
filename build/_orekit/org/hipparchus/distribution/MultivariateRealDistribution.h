@@ -24,11 +24,11 @@ namespace org {
       class MultivariateRealDistribution : public ::java::lang::Object {
        public:
         enum {
-          mid_density_b060e4326765ccf1,
-          mid_getDimension_55546ef6a647f39b,
-          mid_reseedRandomGenerator_3d7dd2314a0dd456,
-          mid_sample_25e1757a36c4dde2,
-          mid_sample_23a0aa7ddbf2fcc5,
+          mid_density_a40ce4fdf6559ac0,
+          mid_getDimension_d6ab429752e7c267,
+          mid_reseedRandomGenerator_f5bbab7e97879358,
+          mid_sample_be783177b060994b,
+          mid_sample_45c1754ef74fe1b8,
           max_mid
         };
 

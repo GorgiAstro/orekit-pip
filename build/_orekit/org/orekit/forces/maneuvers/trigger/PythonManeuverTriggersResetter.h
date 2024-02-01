@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
+    namespace propagation {
+      class SpacecraftState;
+    }
     namespace forces {
       namespace maneuvers {
         namespace trigger {
           class ManeuverTriggersResetter;
         }
       }
-    }
-    namespace propagation {
-      class SpacecraftState;
     }
   }
 }
@@ -34,13 +34,13 @@ namespace org {
           class PythonManeuverTriggersResetter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_maneuverTriggered_1c47c97cdbc7e206,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
-              mid_resetState_c3c52b1257139045,
+              mid_init$_ff7cb6c242604316,
+              mid_finalize_ff7cb6c242604316,
+              mid_maneuverTriggered_b69b5541e48d21c0,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
+              mid_resetState_ed3fe207e6fde26f,
               max_mid
             };
 

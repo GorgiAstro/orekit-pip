@@ -6,33 +6,33 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
+      namespace spherical {
+        namespace twod {
+          class Sphere2D;
+          class S2Point;
+          class Vertex;
+          class SphericalPolygonsSet;
+        }
+        namespace oned {
+          class Sphere1D;
+        }
+      }
       namespace partitioning {
         class BSPTree;
         class SubHyperplane;
+      }
+      namespace enclosing {
+        class EnclosingBall;
       }
       namespace euclidean {
         namespace threed {
           class Vector3D;
         }
       }
-      namespace spherical {
-        namespace oned {
-          class Sphere1D;
-        }
-        namespace twod {
-          class Vertex;
-          class Sphere2D;
-          class SphericalPolygonsSet;
-          class S2Point;
-        }
-      }
-      namespace enclosing {
-        class EnclosingBall;
-      }
     }
     namespace exception {
-      class MathIllegalStateException;
       class MathIllegalArgumentException;
+      class MathIllegalStateException;
     }
   }
 }
@@ -56,16 +56,16 @@ namespace org {
           class SphericalPolygonsSet : public ::org::hipparchus::geometry::partitioning::AbstractRegion {
            public:
             enum {
-              mid_init$_8ba9fe7a847cecad,
-              mid_init$_548bdcb959b5c3f1,
-              mid_init$_4f2529905f184526,
-              mid_init$_936ab5386aba1bbf,
-              mid_init$_16deaf08470737f9,
-              mid_init$_57efc05c72ff0405,
-              mid_buildNew_9e4f0b6dbfea3f48,
-              mid_getBoundaryLoops_e62d3bb06d56d7e3,
-              mid_getEnclosingCap_df3b6a7b2f01d1f4,
-              mid_computeGeometricalProperties_a1fa5dae97ea5ed2,
+              mid_init$_1ad26e8c8c0cd65b,
+              mid_init$_67979f0673f03afe,
+              mid_init$_ce07cf20f467033d,
+              mid_init$_83911a7bf86bdb7d,
+              mid_init$_457d0c956b0d24c0,
+              mid_init$_8b5349b7f7c4d1be,
+              mid_buildNew_c88003cfffbb6512,
+              mid_getBoundaryLoops_d751c1a57012b438,
+              mid_getEnclosingCap_be37d2c4f98ba0b4,
+              mid_computeGeometricalProperties_ff7cb6c242604316,
               max_mid
             };
 

@@ -6,15 +6,15 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      namespace spherical {
-        namespace twod {
-          class Vertex;
-          class Circle;
-        }
-      }
       namespace euclidean {
         namespace threed {
           class Vector3D;
+        }
+      }
+      namespace spherical {
+        namespace twod {
+          class Circle;
+          class Vertex;
         }
       }
     }
@@ -36,11 +36,11 @@ namespace org {
           class Edge : public ::java::lang::Object {
            public:
             enum {
-              mid_getCircle_394360bc4f7bf853,
-              mid_getEnd_4bad8eaaf8f5ef91,
-              mid_getLength_b74f83833fdad017,
-              mid_getPointAt_498f52cd8e5a7072,
-              mid_getStart_4bad8eaaf8f5ef91,
+              mid_getCircle_ba6c8cc83fdda773,
+              mid_getEnd_02a6e0408ec403d4,
+              mid_getLength_9981f74b2d109da6,
+              mid_getPointAt_98a3eeef43dce47a,
+              mid_getStart_02a6e0408ec403d4,
               max_mid
             };
 

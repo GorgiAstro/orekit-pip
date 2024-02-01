@@ -32,9 +32,9 @@ namespace org {
         class FieldFunctionalDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_02ab84aa7626616d,
-            mid_g_2203631097e94c79,
-            mid_create_a5422a32ae444df9,
+            mid_init$_a44abdd035f01345,
+            mid_g_ac6fccc69d1b2d9e,
+            mid_create_6f49639bb98a66a3,
             max_mid
           };
 

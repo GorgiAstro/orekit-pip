@@ -23,9 +23,9 @@ namespace org {
         class FieldCombinedDerivatives : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_2d4b2d13ddc9fb6a,
-            mid_getAdditionalDerivatives_883be608cfc68c26,
-            mid_getMainStateDerivativesIncrements_883be608cfc68c26,
+            mid_init$_7709cb51638b2622,
+            mid_getAdditionalDerivatives_94ed2e0620f8833d,
+            mid_getMainStateDerivativesIncrements_94ed2e0620f8833d,
             max_mid
           };
 

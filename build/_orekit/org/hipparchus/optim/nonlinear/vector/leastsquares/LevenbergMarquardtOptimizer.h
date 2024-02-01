@@ -10,8 +10,8 @@ namespace org {
         namespace vector {
           namespace leastsquares {
             class LeastSquaresOptimizer$Optimum;
-            class LevenbergMarquardtOptimizer;
             class LeastSquaresOptimizer;
+            class LevenbergMarquardtOptimizer;
             class LeastSquaresProblem;
           }
         }
@@ -36,19 +36,19 @@ namespace org {
             class LevenbergMarquardtOptimizer : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_init$_aeb39721bc4af7d2,
-                mid_getCostRelativeTolerance_b74f83833fdad017,
-                mid_getInitialStepBoundFactor_b74f83833fdad017,
-                mid_getOrthoTolerance_b74f83833fdad017,
-                mid_getParameterRelativeTolerance_b74f83833fdad017,
-                mid_getRankingThreshold_b74f83833fdad017,
-                mid_optimize_b4aa3e5bf3a16dc8,
-                mid_withCostRelativeTolerance_0e4d538b02151a51,
-                mid_withInitialStepBoundFactor_0e4d538b02151a51,
-                mid_withOrthoTolerance_0e4d538b02151a51,
-                mid_withParameterRelativeTolerance_0e4d538b02151a51,
-                mid_withRankingThreshold_0e4d538b02151a51,
+                mid_init$_ff7cb6c242604316,
+                mid_init$_edc3692668d70430,
+                mid_getCostRelativeTolerance_9981f74b2d109da6,
+                mid_getInitialStepBoundFactor_9981f74b2d109da6,
+                mid_getOrthoTolerance_9981f74b2d109da6,
+                mid_getParameterRelativeTolerance_9981f74b2d109da6,
+                mid_getRankingThreshold_9981f74b2d109da6,
+                mid_optimize_45e9e6e9254f21c4,
+                mid_withCostRelativeTolerance_99697958704e6fa0,
+                mid_withInitialStepBoundFactor_99697958704e6fa0,
+                mid_withOrthoTolerance_99697958704e6fa0,
+                mid_withParameterRelativeTolerance_99697958704e6fa0,
+                mid_withRankingThreshold_99697958704e6fa0,
                 max_mid
               };
 

@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
     namespace utils {
-      class TimeStampedPVCoordinates;
       class FieldPVCoordinatesProvider;
+      class TimeStampedPVCoordinates;
       class TimeStampedFieldPVCoordinates;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
     namespace frames {
       class Frame;
@@ -41,18 +41,18 @@ namespace org {
       class PythonCelestialBody : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_getBodyOrientedFrame_2c51111cc6894ba1,
-          mid_getGM_b74f83833fdad017,
-          mid_getInertiallyOrientedFrame_2c51111cc6894ba1,
-          mid_getName_1c1fa1e935d6cdcf,
-          mid_getPVCoordinates_e5d15ef236cd9ffe,
-          mid_getPVCoordinates_294c5c99690f2356,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
-          mid_toFieldPVCoordinatesProvider_9516b47d48320472,
+          mid_init$_ff7cb6c242604316,
+          mid_finalize_ff7cb6c242604316,
+          mid_getBodyOrientedFrame_cb151471db4570f0,
+          mid_getGM_9981f74b2d109da6,
+          mid_getInertiallyOrientedFrame_cb151471db4570f0,
+          mid_getName_d2c8eb4129821f0e,
+          mid_getPVCoordinates_6236a35378ed47a5,
+          mid_getPVCoordinates_1b1a4229447f7bf7,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
+          mid_toFieldPVCoordinatesProvider_36db2fb93843b2c3,
           max_mid
         };
 

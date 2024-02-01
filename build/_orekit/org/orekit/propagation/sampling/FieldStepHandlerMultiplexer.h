@@ -13,16 +13,16 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace propagation {
       namespace sampling {
-        class FieldOrekitFixedStepHandler;
         class FieldOrekitStepHandler;
         class FieldOrekitStepInterpolator;
+        class FieldOrekitFixedStepHandler;
       }
       class FieldSpacecraftState;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -39,16 +39,16 @@ namespace org {
         class FieldStepHandlerMultiplexer : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_add_a80810763ccddce2,
-            mid_add_73fc248bc2640832,
-            mid_clear_a1fa5dae97ea5ed2,
-            mid_finish_54d9efbf99822980,
-            mid_getHandlers_e62d3bb06d56d7e3,
-            mid_handleStep_fa82adff12d70536,
-            mid_init_96d019f392abf918,
-            mid_remove_d5fcb644d05f317c,
-            mid_remove_a80810763ccddce2,
+            mid_init$_ff7cb6c242604316,
+            mid_add_a9c3be9ee399328f,
+            mid_add_b6d4e0fa68ea09a5,
+            mid_clear_ff7cb6c242604316,
+            mid_finish_8062511934471166,
+            mid_getHandlers_d751c1a57012b438,
+            mid_handleStep_33c76379cdb8499a,
+            mid_init_357211ab77703f3f,
+            mid_remove_bf3e2612211a7ec7,
+            mid_remove_a9c3be9ee399328f,
             max_mid
           };
 

@@ -5,9 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class IERSConventions;
-    }
     namespace data {
       class DataContext;
     }
@@ -15,10 +12,10 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace tdm {
+            class TdmParser;
             class Tdm;
             class TdmHeader;
             class RangeUnitsConverter;
-            class TdmParser;
           }
           class ParsedUnitsBehavior;
         }
@@ -26,6 +23,9 @@ namespace org {
           class FileFormat;
         }
       }
+    }
+    namespace utils {
+      class IERSConventions;
     }
   }
 }
@@ -46,18 +46,18 @@ namespace org {
             class TdmParser : public ::org::orekit::files::ccsds::utils::parsing::AbstractConstituentParser {
              public:
               enum {
-                mid_build_8e653df5aa37bdec,
-                mid_finalizeData_9ab94ac1dc23b105,
-                mid_finalizeHeader_9ab94ac1dc23b105,
-                mid_finalizeMetadata_9ab94ac1dc23b105,
-                mid_getHeader_5744c6bbf5e9d349,
-                mid_inData_9ab94ac1dc23b105,
-                mid_inHeader_9ab94ac1dc23b105,
-                mid_inMetadata_9ab94ac1dc23b105,
-                mid_prepareData_9ab94ac1dc23b105,
-                mid_prepareHeader_9ab94ac1dc23b105,
-                mid_prepareMetadata_9ab94ac1dc23b105,
-                mid_reset_28163d47221b3cf7,
+                mid_build_d36752ff95a8a459,
+                mid_finalizeData_eee3de00fe971136,
+                mid_finalizeHeader_eee3de00fe971136,
+                mid_finalizeMetadata_eee3de00fe971136,
+                mid_getHeader_d6fe92edb6cf381f,
+                mid_inData_eee3de00fe971136,
+                mid_inHeader_eee3de00fe971136,
+                mid_inMetadata_eee3de00fe971136,
+                mid_prepareData_eee3de00fe971136,
+                mid_prepareHeader_eee3de00fe971136,
+                mid_prepareMetadata_eee3de00fe971136,
+                mid_reset_a23f5f7531d9b583,
                 max_mid
               };
 

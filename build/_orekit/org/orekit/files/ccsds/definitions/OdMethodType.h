@@ -31,8 +31,8 @@ namespace org {
           class OdMethodType : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_e1c30b51cd4a3741,
-              mid_values_dd534feb5c92d832,
+              mid_valueOf_2302266ffdb97b74,
+              mid_values_e15e8adbc1722994,
               max_mid
             };
 

@@ -6,13 +6,13 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
-      class ODEStateAndDerivative;
       class ODEState;
       class ExpandableODE;
+      class ODEStateAndDerivative;
     }
     namespace exception {
-      class MathIllegalStateException;
       class MathIllegalArgumentException;
+      class MathIllegalStateException;
     }
   }
 }
@@ -31,13 +31,13 @@ namespace org {
         class GraggBulirschStoerIntegrator : public ::org::hipparchus::ode::nonstiff::AdaptiveStepsizeIntegrator {
          public:
           enum {
-            mid_init$_aa31b8b89ee72c31,
-            mid_init$_49f4b5153d696ea5,
-            mid_integrate_8cb4bf2a0c64fd92,
-            mid_setControlFactors_49f4b5153d696ea5,
-            mid_setInterpolationControl_0c3d2833aead47e0,
-            mid_setOrderControl_cdd9dee35d124091,
-            mid_setStabilityCheck_b80334b524dca5c8,
+            mid_init$_e3195482263a60ce,
+            mid_init$_cd5724127cc72e96,
+            mid_integrate_3b00c059d3ccb86d,
+            mid_setControlFactors_cd5724127cc72e96,
+            mid_setInterpolationControl_9ad18b76c4bb23bb,
+            mid_setOrderControl_aaed259e1b5f1153,
+            mid_setStabilityCheck_7b4ee475caeca5a6,
             max_mid
           };
 

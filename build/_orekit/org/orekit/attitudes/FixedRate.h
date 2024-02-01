@@ -10,13 +10,13 @@ namespace org {
       class FieldAttitude;
       class Attitude;
     }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
     namespace utils {
-      class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
+      class PVCoordinatesProvider;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
     namespace frames {
       class Frame;
@@ -37,10 +37,10 @@ namespace org {
       class FixedRate : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_344a773895e1f1ac,
-          mid_getAttitude_21845cfb0034fe1c,
-          mid_getAttitude_896ee4d68989b1e8,
-          mid_getReferenceAttitude_9d85ee1243dd5d25,
+          mid_init$_77313604038d7c48,
+          mid_getAttitude_a02177519e1b6a45,
+          mid_getAttitude_aab1c6ab68ffdcbb,
+          mid_getReferenceAttitude_83f44b5ac6431edc,
           max_mid
         };
 

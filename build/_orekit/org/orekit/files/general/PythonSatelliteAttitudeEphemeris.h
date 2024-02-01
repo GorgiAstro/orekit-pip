@@ -5,17 +5,17 @@
 
 namespace org {
   namespace orekit {
-    namespace files {
-      namespace general {
-        class AttitudeEphemerisFile$AttitudeEphemerisSegment;
-        class AttitudeEphemerisFile$SatelliteAttitudeEphemeris;
-      }
-    }
     namespace attitudes {
       class BoundedAttitudeProvider;
     }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace files {
+      namespace general {
+        class AttitudeEphemerisFile$SatelliteAttitudeEphemeris;
+        class AttitudeEphemerisFile$AttitudeEphemerisSegment;
+      }
     }
   }
 }
@@ -39,16 +39,16 @@ namespace org {
         class PythonSatelliteAttitudeEphemeris : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getAttitudeProvider_fcce29ba1cf2a05e,
-            mid_getId_1c1fa1e935d6cdcf,
-            mid_getSegments_e62d3bb06d56d7e3,
-            mid_getStart_c325492395d89b24,
-            mid_getStop_c325492395d89b24,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_ff7cb6c242604316,
+            mid_finalize_ff7cb6c242604316,
+            mid_getAttitudeProvider_228bb29d53a1472e,
+            mid_getId_d2c8eb4129821f0e,
+            mid_getSegments_d751c1a57012b438,
+            mid_getStart_80e11148db499dda,
+            mid_getStop_80e11148db499dda,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

@@ -4,34 +4,34 @@
 #include "org/orekit/propagation/integration/FieldAbstractIntegratedPropagator.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace ode {
-      class FieldODEIntegrator;
-    }
-    class Field;
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace attitudes {
       class AttitudeProvider;
     }
+    namespace propagation {
+      namespace integration {
+        class FieldAbstractIntegratedPropagator$MainStateEquations;
+        class FieldStateMapper;
+      }
+      class PropagationType;
+    }
     namespace time {
       class FieldAbsoluteDate;
     }
-    namespace propagation {
-      class PropagationType;
-      namespace integration {
-        class FieldStateMapper;
-        class FieldAbstractIntegratedPropagator$MainStateEquations;
-      }
-    }
     namespace orbits {
-      class OrbitType;
       class PositionAngleType;
+      class OrbitType;
     }
     namespace frames {
       class Frame;
     }
+  }
+  namespace hipparchus {
+    class Field;
+    namespace ode {
+      class FieldODEIntegrator;
+    }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -50,13 +50,13 @@ namespace org {
         class PythonFieldAbstractIntegratedPropagator : public ::org::orekit::propagation::integration::FieldAbstractIntegratedPropagator {
          public:
           enum {
-            mid_init$_85033171501dd1b3,
-            mid_createMapper_23e677752bbdcbdf,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getMainStateEquations_f48ddce9ae4b38bb,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_70cf68a139c55cb1,
+            mid_createMapper_ebf7e979efef9b20,
+            mid_finalize_ff7cb6c242604316,
+            mid_getMainStateEquations_3bc41c7526b7eb7c,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

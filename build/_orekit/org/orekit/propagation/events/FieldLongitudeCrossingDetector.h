@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace bodies {
       class OneAxisEllipsoid;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
     }
     namespace propagation {
       class FieldSpacecraftState;
@@ -35,13 +35,13 @@ namespace org {
         class FieldLongitudeCrossingDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_5aa113c8ea2c3853,
-            mid_init$_3a020ed83ff3efcb,
-            mid_g_2203631097e94c79,
-            mid_getBody_dd5c4288aa5a3dd8,
-            mid_getLongitude_b74f83833fdad017,
-            mid_init_96d019f392abf918,
-            mid_create_5540c3ec4d60c1c6,
+            mid_init$_2d2108d21f1071ae,
+            mid_init$_7fe9da35cd6952f4,
+            mid_g_ac6fccc69d1b2d9e,
+            mid_getBody_dc8275c31111ad9c,
+            mid_getLongitude_9981f74b2d109da6,
+            mid_init_357211ab77703f3f,
+            mid_create_1061f3b179e5c03d,
             max_mid
           };
 

@@ -28,17 +28,17 @@ namespace org {
       class BaseOptimizer : public ::java::lang::Object {
        public:
         enum {
-          mid_getConvergenceChecker_cae0efb5080a73b8,
-          mid_getEvaluations_55546ef6a647f39b,
-          mid_getIterations_55546ef6a647f39b,
-          mid_getMaxEvaluations_55546ef6a647f39b,
-          mid_getMaxIterations_55546ef6a647f39b,
-          mid_optimize_541690f9ee81d3ad,
-          mid_optimize_91381cab165160dc,
-          mid_parseOptimizationData_14193ddbce7a2cc0,
-          mid_doOptimize_541690f9ee81d3ad,
-          mid_incrementEvaluationCount_a1fa5dae97ea5ed2,
-          mid_incrementIterationCount_a1fa5dae97ea5ed2,
+          mid_getConvergenceChecker_ecb318336ebe4cc7,
+          mid_getEvaluations_d6ab429752e7c267,
+          mid_getIterations_d6ab429752e7c267,
+          mid_getMaxEvaluations_d6ab429752e7c267,
+          mid_getMaxIterations_d6ab429752e7c267,
+          mid_optimize_704a5bee58538972,
+          mid_optimize_7c1cfcae8b9ddcfc,
+          mid_parseOptimizationData_df324e640da2eeec,
+          mid_incrementEvaluationCount_ff7cb6c242604316,
+          mid_doOptimize_704a5bee58538972,
+          mid_incrementIterationCount_ff7cb6c242604316,
           max_mid
         };
 

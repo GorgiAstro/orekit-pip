@@ -5,9 +5,9 @@
 
 namespace java {
   namespace util {
+    class Date;
     class Locale;
     class TimeZone;
-    class Date;
   }
   namespace io {
     class Serializable;
@@ -26,28 +26,28 @@ namespace java {
     class TimeZone : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_a1fa5dae97ea5ed2,
-        mid_clone_541690f9ee81d3ad,
-        mid_getAvailableIDs_0f94e41879ab7062,
-        mid_getAvailableIDs_e3e694d37be98bf0,
-        mid_getDSTSavings_55546ef6a647f39b,
-        mid_getDefault_e127b2db209cd4d5,
-        mid_getDisplayName_1c1fa1e935d6cdcf,
-        mid_getDisplayName_26070c28e6ea354d,
-        mid_getDisplayName_16bc9a45a1084794,
-        mid_getDisplayName_7f7535daaf64de9e,
-        mid_getID_1c1fa1e935d6cdcf,
-        mid_getOffset_da24d9dc605e436c,
-        mid_getOffset_cdfca057dbea3f1b,
-        mid_getRawOffset_55546ef6a647f39b,
-        mid_getTimeZone_506a2259b58ff4d1,
-        mid_hasSameRules_265f2b9e996450e2,
-        mid_inDaylightTime_e7dfa6240fa69edb,
-        mid_observesDaylightTime_9ab94ac1dc23b105,
-        mid_setDefault_6ad8873b96f16bda,
-        mid_setID_734b91ac30d5f9b4,
-        mid_setRawOffset_44ed599e93e8a30c,
-        mid_useDaylightTime_9ab94ac1dc23b105,
+        mid_init$_ff7cb6c242604316,
+        mid_clone_704a5bee58538972,
+        mid_getAvailableIDs_f81c0644d57ae495,
+        mid_getAvailableIDs_31ca0f511704e78c,
+        mid_getDSTSavings_d6ab429752e7c267,
+        mid_getDefault_7755099100e77ba2,
+        mid_getDisplayName_d2c8eb4129821f0e,
+        mid_getDisplayName_5969ecf7afac3dba,
+        mid_getDisplayName_0f83359d8cbe4821,
+        mid_getDisplayName_a015903bb3bf1c24,
+        mid_getID_d2c8eb4129821f0e,
+        mid_getOffset_e9d351dcffb1a696,
+        mid_getOffset_45302a2248be8069,
+        mid_getRawOffset_d6ab429752e7c267,
+        mid_getTimeZone_29d7696d4fe6c776,
+        mid_hasSameRules_c6a169791b399bc2,
+        mid_inDaylightTime_aa8a9ab2727cc0c7,
+        mid_observesDaylightTime_eee3de00fe971136,
+        mid_setDefault_f21da9779bf2bfbd,
+        mid_setID_105e1eadb709d9ac,
+        mid_setRawOffset_8fd427ab23829bf5,
+        mid_useDaylightTime_eee3de00fe971136,
         max_mid
       };
 

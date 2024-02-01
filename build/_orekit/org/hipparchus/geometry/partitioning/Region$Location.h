@@ -28,8 +28,8 @@ namespace org {
         class Region$Location : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_52616fafb2f529ee,
-            mid_values_c41a9573ac399820,
+            mid_valueOf_552b3c2bdf5c4ad0,
+            mid_values_e921897a7a3aea14,
             max_mid
           };
 

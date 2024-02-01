@@ -5,8 +5,8 @@
 
 namespace java {
   namespace io {
-    class InputStream;
     class IOException;
+    class InputStream;
   }
   namespace text {
     class ParseException;
@@ -38,16 +38,16 @@ namespace org {
           class KlobucharIonoCoefficientsLoader : public ::org::orekit::data::AbstractSelfFeedingLoader {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_init$_734b91ac30d5f9b4,
-              mid_init$_0343d25c5af74eca,
-              mid_getAlpha_25e1757a36c4dde2,
-              mid_getBeta_25e1757a36c4dde2,
-              mid_getSupportedNames_1c1fa1e935d6cdcf,
-              mid_loadData_360461e719fb564c,
-              mid_loadKlobucharIonosphericCoefficients_a1fa5dae97ea5ed2,
-              mid_loadKlobucharIonosphericCoefficients_a97e9138404c69cd,
-              mid_stillAcceptsData_9ab94ac1dc23b105,
+              mid_init$_ff7cb6c242604316,
+              mid_init$_105e1eadb709d9ac,
+              mid_init$_4c16e57d19ddaa09,
+              mid_getAlpha_be783177b060994b,
+              mid_getBeta_be783177b060994b,
+              mid_getSupportedNames_d2c8eb4129821f0e,
+              mid_loadData_bec0f846e5ec73da,
+              mid_loadKlobucharIonosphericCoefficients_ff7cb6c242604316,
+              mid_loadKlobucharIonosphericCoefficients_badbbe8d1e1c6168,
+              mid_stillAcceptsData_eee3de00fe971136,
               max_mid
             };
 

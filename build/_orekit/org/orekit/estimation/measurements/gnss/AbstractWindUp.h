@@ -3,26 +3,26 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class EstimationModifier;
         class EstimatedMeasurementBase;
+        class EstimationModifier;
         class ObservedMeasurement;
       }
     }
     namespace utils {
       class ParameterDriver;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -36,10 +36,10 @@ namespace org {
           class AbstractWindUp : public ::java::lang::Object {
            public:
             enum {
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_modifyWithoutDerivatives_308087fabc1d7f66,
-              mid_emitterToInert_3b9f748b89094cc6,
-              mid_receiverToInert_3b9f748b89094cc6,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_modifyWithoutDerivatives_ecce216dce506020,
+              mid_emitterToInert_f462106a6ca97aca,
+              mid_receiverToInert_f462106a6ca97aca,
               max_mid
             };
 

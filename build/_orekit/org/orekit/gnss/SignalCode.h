@@ -3,17 +3,17 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace gnss {
       class SignalCode;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,8 +25,8 @@ namespace org {
       class SignalCode : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_c567b9f38a3e11af,
-          mid_values_12006fc515163d83,
+          mid_valueOf_5de96916d4d6653f,
+          mid_values_20d284d4073d5f19,
           max_mid
         };
 

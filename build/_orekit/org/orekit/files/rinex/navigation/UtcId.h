@@ -34,9 +34,9 @@ namespace org {
           class UtcId : public ::java::lang::Enum {
            public:
             enum {
-              mid_parseUtcId_247a95328cebe570,
-              mid_valueOf_247a95328cebe570,
-              mid_values_9aef199c9510dba2,
+              mid_parseUtcId_85e0255bcf2c873a,
+              mid_valueOf_85e0255bcf2c873a,
+              mid_values_a69c9bb180bd5e45,
               max_mid
             };
 

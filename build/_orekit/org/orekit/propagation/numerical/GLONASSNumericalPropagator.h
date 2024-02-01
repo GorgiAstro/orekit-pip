@@ -11,6 +11,9 @@ namespace org {
     namespace data {
       class DataContext;
     }
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace propagation {
       namespace analytical {
         namespace gnss {
@@ -23,9 +26,6 @@ namespace org {
     }
     namespace frames {
       class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -51,11 +51,11 @@ namespace org {
         class GLONASSNumericalPropagator : public ::org::orekit::propagation::integration::AbstractIntegratedPropagator {
          public:
           enum {
-            mid_init$_ebe9ca91f2afbc9f,
-            mid_getGLONASSOrbitalElements_ecd6853fd3b2ef73,
-            mid_propagate_4f0008999861ca31,
-            mid_createMapper_74f07e2c0845997b,
-            mid_getMainStateEquations_8e0da39ae64099e8,
+            mid_init$_49c84b5f74ac8df1,
+            mid_getGLONASSOrbitalElements_96e04bba8548a588,
+            mid_propagate_1e982279849c3b65,
+            mid_createMapper_5f8935bd082b8966,
+            mid_getMainStateEquations_97764934e3fe735c,
             max_mid
           };
 

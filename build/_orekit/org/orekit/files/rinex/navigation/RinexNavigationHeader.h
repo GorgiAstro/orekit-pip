@@ -8,8 +8,8 @@ namespace org {
     namespace files {
       namespace rinex {
         namespace navigation {
-          class IonosphericCorrectionType;
           class TimeSystemCorrection;
+          class IonosphericCorrectionType;
         }
       }
     }
@@ -34,15 +34,15 @@ namespace org {
           class RinexNavigationHeader : public ::org::orekit::files::rinex::section::RinexBaseHeader {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_addTimeSystemCorrections_29ed96c27f0f2439,
-              mid_getIonosphericCorrectionType_1b135730fc8e8e35,
-              mid_getMergedFiles_55546ef6a647f39b,
-              mid_getNumberOfLeapSeconds_55546ef6a647f39b,
-              mid_getTimeSystemCorrections_e62d3bb06d56d7e3,
-              mid_setIonosphericCorrectionType_6012e3da3fe0033b,
-              mid_setMergedFiles_44ed599e93e8a30c,
-              mid_setNumberOfLeapSeconds_44ed599e93e8a30c,
+              mid_init$_ff7cb6c242604316,
+              mid_addTimeSystemCorrections_678e8b1af536568c,
+              mid_getIonosphericCorrectionType_cc9732312393a3cc,
+              mid_getMergedFiles_d6ab429752e7c267,
+              mid_getNumberOfLeapSeconds_d6ab429752e7c267,
+              mid_getTimeSystemCorrections_d751c1a57012b438,
+              mid_setIonosphericCorrectionType_7454a45741606645,
+              mid_setMergedFiles_8fd427ab23829bf5,
+              mid_setNumberOfLeapSeconds_8fd427ab23829bf5,
               max_mid
             };
 

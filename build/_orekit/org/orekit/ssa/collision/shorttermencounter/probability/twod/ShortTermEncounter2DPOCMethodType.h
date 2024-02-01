@@ -10,8 +10,8 @@ namespace org {
         namespace shorttermencounter {
           namespace probability {
             namespace twod {
-              class ShortTermEncounter2DPOCMethod;
               class ShortTermEncounter2DPOCMethodType;
+              class ShortTermEncounter2DPOCMethod;
             }
           }
         }
@@ -45,10 +45,10 @@ namespace org {
               class ShortTermEncounter2DPOCMethodType : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_getCCSDSType_ba099cb817b72494,
-                  mid_getMethod_0d2e432558f4891e,
-                  mid_valueOf_4ee2c2c8e56c695d,
-                  mid_values_c9f0559ced279b3b,
+                  mid_getCCSDSType_8cc529497929859e,
+                  mid_getMethod_f8cf605406ec6a4b,
+                  mid_valueOf_0e15216423e8792b,
+                  mid_values_eaf05542208ae035,
                   max_mid
                 };
 

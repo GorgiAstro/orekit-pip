@@ -15,13 +15,13 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace bodies {
-      class GeodeticPoint;
-    }
     namespace rugged {
       namespace linesensor {
         class SensorPixel;
       }
+    }
+    namespace bodies {
+      class GeodeticPoint;
     }
   }
 }
@@ -36,12 +36,12 @@ namespace org {
           class SensorToGroundMapping : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_734b91ac30d5f9b4,
-              mid_init$_a627ad9c5959309d,
-              mid_addMapping_6ae7cef74e9c794b,
-              mid_getMapping_7e8f11dd23d1142c,
-              mid_getRuggedName_1c1fa1e935d6cdcf,
-              mid_getSensorName_1c1fa1e935d6cdcf,
+              mid_init$_105e1eadb709d9ac,
+              mid_init$_771aee6c143cc92a,
+              mid_addMapping_9bc51464dd5f4881,
+              mid_getMapping_6b191a9b12c1004b,
+              mid_getRuggedName_d2c8eb4129821f0e,
+              mid_getSensorName_d2c8eb4129821f0e,
               max_mid
             };
 

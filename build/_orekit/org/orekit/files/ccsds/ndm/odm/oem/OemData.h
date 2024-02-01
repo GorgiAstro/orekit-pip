@@ -13,10 +13,6 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace utils {
-      class TimeStampedPVCoordinates;
-      class CartesianDerivativesFilter;
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -28,6 +24,10 @@ namespace org {
           class Data;
         }
       }
+    }
+    namespace utils {
+      class CartesianDerivativesFilter;
+      class TimeStampedPVCoordinates;
     }
   }
 }
@@ -44,13 +44,13 @@ namespace org {
               class OemData : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_a1fa5dae97ea5ed2,
-                  mid_addCovarianceMatrix_df1b706a550f4478,
-                  mid_addData_f7cb4011cb2864fe,
-                  mid_getAvailableDerivatives_63bfdcc4b7a0536c,
-                  mid_getCoordinates_e62d3bb06d56d7e3,
-                  mid_getCovarianceMatrices_e62d3bb06d56d7e3,
-                  mid_getEphemeridesDataLines_e62d3bb06d56d7e3,
+                  mid_init$_ff7cb6c242604316,
+                  mid_addCovarianceMatrix_2060160f377cd67c,
+                  mid_addData_a72d7f163f4d4acf,
+                  mid_getAvailableDerivatives_b9dfc27d8c56b5de,
+                  mid_getCoordinates_d751c1a57012b438,
+                  mid_getCovarianceMatrices_d751c1a57012b438,
+                  mid_getEphemeridesDataLines_d751c1a57012b438,
                   max_mid
                 };
 

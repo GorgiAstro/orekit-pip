@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       class Point;
       namespace partitioning {
-        class Hyperplane;
         class SubHyperplane;
+        class Hyperplane;
       }
     }
   }
@@ -29,9 +29,9 @@ namespace org {
         class Transform : public ::java::lang::Object {
          public:
           enum {
-            mid_apply_2214f7ad5b6ca158,
-            mid_apply_8e29b62ae9b3c9fd,
-            mid_apply_19817b868740d9ae,
+            mid_apply_ff0c84956c63705d,
+            mid_apply_981c3409f128e4fe,
+            mid_apply_2191351ef237e3b9,
             max_mid
           };
 

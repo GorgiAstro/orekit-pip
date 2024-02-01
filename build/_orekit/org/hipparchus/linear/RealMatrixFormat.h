@@ -4,11 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace text {
-    class FieldPosition;
-    class ParsePosition;
-    class NumberFormat;
-  }
   namespace util {
     class Locale;
   }
@@ -16,6 +11,11 @@ namespace java {
     class StringBuffer;
     class Class;
     class String;
+  }
+  namespace text {
+    class FieldPosition;
+    class NumberFormat;
+    class ParsePosition;
   }
 }
 namespace org {
@@ -35,24 +35,24 @@ namespace org {
       class RealMatrixFormat : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_init$_b7f3d50b51ef7518,
-          mid_init$_e39b9463875d2aea,
-          mid_init$_c96fc87aa2f40e42,
-          mid_format_51220323ff2ddb56,
-          mid_format_b0b951c748fccbee,
-          mid_getAvailableLocales_8d2cd0b971cc7b85,
-          mid_getColumnSeparator_1c1fa1e935d6cdcf,
-          mid_getFormat_87ffffc449cd25a5,
-          mid_getPrefix_1c1fa1e935d6cdcf,
-          mid_getRealMatrixFormat_45ea15869ae5e87f,
-          mid_getRealMatrixFormat_1a7724022b3f9dd3,
-          mid_getRowPrefix_1c1fa1e935d6cdcf,
-          mid_getRowSeparator_1c1fa1e935d6cdcf,
-          mid_getRowSuffix_1c1fa1e935d6cdcf,
-          mid_getSuffix_1c1fa1e935d6cdcf,
-          mid_parse_6473eeaad285ae36,
-          mid_parse_ed9629889638c09b,
+          mid_init$_ff7cb6c242604316,
+          mid_init$_327b6d3ae10b544b,
+          mid_init$_799a817065a795a1,
+          mid_init$_73dd2d7a47d6eb4e,
+          mid_format_9a8c300d410b936f,
+          mid_format_62e5a2ca96e58f23,
+          mid_getAvailableLocales_faf2576acf90261b,
+          mid_getColumnSeparator_d2c8eb4129821f0e,
+          mid_getFormat_525709eb5c5b5ea6,
+          mid_getPrefix_d2c8eb4129821f0e,
+          mid_getRealMatrixFormat_ba919a7e2a8d4dec,
+          mid_getRealMatrixFormat_15d47cc6f5e552e9,
+          mid_getRowPrefix_d2c8eb4129821f0e,
+          mid_getRowSeparator_d2c8eb4129821f0e,
+          mid_getRowSuffix_d2c8eb4129821f0e,
+          mid_getSuffix_d2c8eb4129821f0e,
+          mid_parse_171665f57cb7cc4c,
+          mid_parse_0b70eda82915d4b5,
           max_mid
         };
 

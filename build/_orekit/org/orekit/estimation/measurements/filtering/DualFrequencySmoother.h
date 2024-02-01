@@ -3,19 +3,20 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+    class HashMap;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace gnss {
       class SatelliteSystem;
       class ObservationType;
-    }
-    namespace estimation {
-      namespace measurements {
-        namespace filtering {
-          class DualFrequencyHatchFilter;
-          class SmoothedObservationDataSet;
-        }
-      }
     }
     namespace files {
       namespace rinex {
@@ -25,15 +26,14 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-    class HashMap;
-  }
-  namespace lang {
-    class Class;
+    namespace estimation {
+      namespace measurements {
+        namespace filtering {
+          class DualFrequencyHatchFilter;
+          class SmoothedObservationDataSet;
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -47,12 +47,12 @@ namespace org {
           class DualFrequencySmoother : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_1af1b4c263b48b0c,
-              mid_copyObservationData_5627f6437b3ab888,
-              mid_createFilter_1ed4e8277b5c5099,
-              mid_filterDataSet_6eed97de121df5d2,
-              mid_getFilteredDataMap_f21c52aaf6a29827,
-              mid_getMapFilters_f21c52aaf6a29827,
+              mid_init$_0fd8efd9eecb8663,
+              mid_copyObservationData_b6125958e639421b,
+              mid_createFilter_dda9fc436d819eda,
+              mid_filterDataSet_20598c1c4feeee36,
+              mid_getFilteredDataMap_215ee6429c05b9a0,
+              mid_getMapFilters_215ee6429c05b9a0,
               max_mid
             };
 

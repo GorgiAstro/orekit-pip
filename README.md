@@ -26,7 +26,7 @@ This can take a couple of minutes because it single-threadingly compiles the Ore
 
 Local installation:
 * git clone this repo
-* `pip install .`. 
+* `pip install .`.
 
 ## Testing
 
@@ -41,6 +41,14 @@ This does the following:
 * Copies the Orekit JARs and some Python additions (from https://github.com/petrushy/orekit_python_artifacts) to the `build/orekit` folder
 * Calls `jcc` to generate Orekit's C++ bindings in the `build/_orekit` folder
     * `jcc` also generates the `setup.py` script which configures the compilation of the Orekit C++ extension. This script will then be called by `setuptools` (together with the definitions in `pyproject.toml`) when running `pip install`
+
+To do that:
+
+* `pip install -r requirements-generate.txt`
+* `python generate.py`
+* Clean up the generated `setup.py` file with a git diff tool (this is still a manual step):
+  * If the `package_data` and `sources` lines changed, accept these changes
+  * Otherwise, discard all the other changes to this file: the include paths and the link and compile arguments are managed by `jcc`
 
 ## Limitations
 

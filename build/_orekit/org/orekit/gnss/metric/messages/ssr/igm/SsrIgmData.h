@@ -21,9 +21,9 @@ namespace org {
               class SsrIgmData : public ::org::orekit::gnss::metric::messages::ssr::SsrData {
                public:
                 enum {
-                  mid_init$_a1fa5dae97ea5ed2,
-                  mid_getSatelliteID_55546ef6a647f39b,
-                  mid_setSatelliteID_44ed599e93e8a30c,
+                  mid_init$_ff7cb6c242604316,
+                  mid_getSatelliteID_d6ab429752e7c267,
+                  mid_setSatelliteID_8fd427ab23829bf5,
                   max_mid
                 };
 

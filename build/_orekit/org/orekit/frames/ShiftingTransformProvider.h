@@ -6,19 +6,19 @@
 namespace org {
   namespace orekit {
     namespace frames {
-      class FieldTransform;
-      class TransformProvider;
-      class Transform;
       class FieldStaticTransform;
+      class FieldTransform;
+      class Transform;
+      class TransformProvider;
       class StaticTransform;
     }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
     namespace utils {
-      class AngularDerivativesFilter;
       class CartesianDerivativesFilter;
+      class AngularDerivativesFilter;
     }
   }
 }
@@ -36,14 +36,14 @@ namespace org {
       class ShiftingTransformProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_b5ee83e9cfd012af,
-          mid_getGridPoints_55546ef6a647f39b,
-          mid_getRawProvider_51018934a5745bab,
-          mid_getStaticTransform_5f13614b572308e8,
-          mid_getStaticTransform_09ace34b8a3460b2,
-          mid_getStep_b74f83833fdad017,
-          mid_getTransform_976d4bc81671ce42,
-          mid_getTransform_7a8ca6856fe3fc9e,
+          mid_init$_f96a885f66859d5c,
+          mid_getGridPoints_d6ab429752e7c267,
+          mid_getRawProvider_fd7cd467d992431a,
+          mid_getStaticTransform_6e492420312934f1,
+          mid_getStaticTransform_3b5ee2ab7cc035a5,
+          mid_getStep_9981f74b2d109da6,
+          mid_getTransform_02ca17ac51b6a4b2,
+          mid_getTransform_286745ef54e0a7f6,
           max_mid
         };
 

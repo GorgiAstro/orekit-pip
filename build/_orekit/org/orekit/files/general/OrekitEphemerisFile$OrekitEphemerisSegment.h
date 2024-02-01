@@ -13,20 +13,20 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace utils {
-      class TimeStampedPVCoordinates;
-      class CartesianDerivativesFilter;
+    namespace time {
+      class AbsoluteDate;
     }
-    namespace frames {
-      class Frame;
+    namespace utils {
+      class CartesianDerivativesFilter;
+      class TimeStampedPVCoordinates;
     }
     namespace files {
       namespace general {
         class EphemerisFile$EphemerisSegment;
       }
     }
-    namespace time {
-      class AbsoluteDate;
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -40,15 +40,15 @@ namespace org {
         class OrekitEphemerisFile$OrekitEphemerisSegment : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0d07e79c01a9eae8,
-            mid_getAvailableDerivatives_63bfdcc4b7a0536c,
-            mid_getCoordinates_e62d3bb06d56d7e3,
-            mid_getFrame_2c51111cc6894ba1,
-            mid_getInertialFrame_2c51111cc6894ba1,
-            mid_getInterpolationSamples_55546ef6a647f39b,
-            mid_getMu_b74f83833fdad017,
-            mid_getStart_c325492395d89b24,
-            mid_getStop_c325492395d89b24,
+            mid_init$_0a80307afd202110,
+            mid_getAvailableDerivatives_b9dfc27d8c56b5de,
+            mid_getCoordinates_d751c1a57012b438,
+            mid_getFrame_cb151471db4570f0,
+            mid_getInertialFrame_cb151471db4570f0,
+            mid_getInterpolationSamples_d6ab429752e7c267,
+            mid_getMu_9981f74b2d109da6,
+            mid_getStart_80e11148db499dda,
+            mid_getStop_80e11148db499dda,
             max_mid
           };
 

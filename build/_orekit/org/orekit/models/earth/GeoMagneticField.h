@@ -3,6 +3,12 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace models {
@@ -11,12 +17,6 @@ namespace org {
         class GeoMagneticElements;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -29,17 +29,17 @@ namespace org {
         class GeoMagneticField : public ::java::lang::Object {
          public:
           enum {
-            mid_calculateField_54d6c2ca75c55cb8,
-            mid_getDecimalYear_2f53baea9459d443,
-            mid_getEpoch_b74f83833fdad017,
-            mid_getModelName_1c1fa1e935d6cdcf,
-            mid_supportsTimeTransform_9ab94ac1dc23b105,
-            mid_transformModel_0b71ae56f8fa5718,
-            mid_transformModel_e0a954d9b53a7db9,
-            mid_validFrom_b74f83833fdad017,
-            mid_validTo_b74f83833fdad017,
-            mid_setMainFieldCoefficients_97e33498326f7285,
-            mid_setSecularVariationCoefficients_97e33498326f7285,
+            mid_calculateField_7b281ab1819631ec,
+            mid_getDecimalYear_d692aeb156453fed,
+            mid_getEpoch_9981f74b2d109da6,
+            mid_getModelName_d2c8eb4129821f0e,
+            mid_supportsTimeTransform_eee3de00fe971136,
+            mid_transformModel_5fbf1330f033ba72,
+            mid_transformModel_5b65d0d05bf28ecf,
+            mid_validFrom_9981f74b2d109da6,
+            mid_validTo_9981f74b2d109da6,
+            mid_setMainFieldCoefficients_c65d45c928e07977,
+            mid_setSecularVariationCoefficients_c65d45c928e07977,
             max_mid
           };
 

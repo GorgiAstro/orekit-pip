@@ -3,26 +3,26 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace time {
       class FieldAbsoluteDate;
     }
     namespace propagation {
+      class FieldSpacecraftState;
       namespace sampling {
         class FieldOrekitFixedStepHandler;
       }
-      class FieldSpacecraftState;
     }
   }
   namespace hipparchus {
     class CalculusFieldElement;
-  }
-}
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -35,14 +35,14 @@ namespace org {
         class PythonFieldOrekitFixedStepHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_finish_54d9efbf99822980,
-            mid_handleStep_54d9efbf99822980,
-            mid_init_6c5f4137442325ee,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_ff7cb6c242604316,
+            mid_finalize_ff7cb6c242604316,
+            mid_finish_8062511934471166,
+            mid_handleStep_8062511934471166,
+            mid_init_8e7d4ddea41a1ea0,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

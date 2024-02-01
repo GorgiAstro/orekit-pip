@@ -4,6 +4,25 @@
 #include "org/orekit/attitudes/GroundPointing.h"
 
 namespace org {
+  namespace orekit {
+    namespace bodies {
+      class GeodeticPoint;
+      class BodyShape;
+    }
+    namespace utils {
+      class FieldPVCoordinatesProvider;
+      class TimeStampedPVCoordinates;
+      class PVCoordinatesProvider;
+      class TimeStampedFieldPVCoordinates;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
+    namespace frames {
+      class Frame;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -11,25 +30,6 @@ namespace org {
           class Vector3D;
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class TimeStampedPVCoordinates;
-      class PVCoordinatesProvider;
-      class FieldPVCoordinatesProvider;
-      class TimeStampedFieldPVCoordinates;
-    }
-    namespace bodies {
-      class GeodeticPoint;
-      class BodyShape;
-    }
-    namespace frames {
-      class Frame;
     }
   }
 }
@@ -47,10 +47,10 @@ namespace org {
       class TargetPointing : public ::org::orekit::attitudes::GroundPointing {
        public:
         enum {
-          mid_init$_868e35d94172e5d0,
-          mid_init$_44b2b0a0619e7060,
-          mid_getTargetPV_0c9a6603286e7c6f,
-          mid_getTargetPV_4a6b199bd28f952f,
+          mid_init$_99d09369fb2c379b,
+          mid_init$_c29af9a8625304e4,
+          mid_getTargetPV_19719ebf0495cd86,
+          mid_getTargetPV_11bfbaf3cce3e66c,
           max_mid
         };
 

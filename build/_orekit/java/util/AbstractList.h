@@ -23,22 +23,22 @@ namespace java {
     class AbstractList : public ::java::util::AbstractCollection {
      public:
       enum {
-        mid_add_460c5e2d9d51c6cc,
-        mid_add_0f5a71e161fd256b,
-        mid_addAll_2c414c0fcc4406f4,
-        mid_clear_a1fa5dae97ea5ed2,
-        mid_equals_460c5e2d9d51c6cc,
-        mid_get_1a3b934d2c285d65,
-        mid_hashCode_55546ef6a647f39b,
-        mid_indexOf_b7898c5e94612125,
-        mid_iterator_fc7780bc5d5b73b0,
-        mid_lastIndexOf_b7898c5e94612125,
-        mid_listIterator_d6d68fe3f5974930,
-        mid_listIterator_008647f8b2408e7c,
-        mid_remove_1a3b934d2c285d65,
-        mid_set_c616ac8dc1767986,
-        mid_subList_39b43a702bd6611c,
-        mid_removeRange_3313c75e3e16c428,
+        mid_add_72faff9b05f5ed5e,
+        mid_add_600fc0bdbd049172,
+        mid_addAll_34282804c6c39090,
+        mid_clear_ff7cb6c242604316,
+        mid_equals_72faff9b05f5ed5e,
+        mid_get_35009debda6d2ece,
+        mid_hashCode_d6ab429752e7c267,
+        mid_indexOf_9aa1a0d21cdeb90e,
+        mid_iterator_4f613ccd2f803b4b,
+        mid_lastIndexOf_9aa1a0d21cdeb90e,
+        mid_listIterator_7bb80a6d83d87d72,
+        mid_listIterator_14737c756caa849d,
+        mid_remove_35009debda6d2ece,
+        mid_set_469b6e93ddb5a642,
+        mid_subList_4e3c0741dd4bb632,
+        mid_removeRange_b5d23e6c0858e8ed,
         max_mid
       };
 

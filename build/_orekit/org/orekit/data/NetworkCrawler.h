@@ -20,12 +20,12 @@ namespace org {
       class NetworkCrawler : public ::org::orekit::data::AbstractListCrawler {
        public:
         enum {
-          mid_init$_71010176ce552a15,
-          mid_setTimeout_44ed599e93e8a30c,
-          mid_getStream_a7576d5d76a89054,
-          mid_getZipJarCrawler_dce0a16ba3296f61,
-          mid_getBaseName_4863d430baae1067,
-          mid_getCompleteName_4863d430baae1067,
+          mid_init$_a060fadda655b8dd,
+          mid_setTimeout_8fd427ab23829bf5,
+          mid_getCompleteName_51f6f7513d4e198f,
+          mid_getBaseName_51f6f7513d4e198f,
+          mid_getZipJarCrawler_3f6467e33f877b63,
+          mid_getStream_bcb2a49a31478ed4,
           max_mid
         };
 

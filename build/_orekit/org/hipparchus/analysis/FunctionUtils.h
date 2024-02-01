@@ -6,14 +6,14 @@
 namespace org {
   namespace hipparchus {
     namespace analysis {
-      namespace differentiation {
-        class UnivariateDifferentiableFunction;
-        class MultivariateDifferentiableFunction;
-      }
       class MultivariateVectorFunction;
+      namespace differentiation {
+        class MultivariateDifferentiableFunction;
+        class UnivariateDifferentiableFunction;
+      }
+      class UnivariateFunction;
       class MultivariateFunction;
       class BivariateFunction;
-      class UnivariateFunction;
     }
     namespace exception {
       class MathIllegalArgumentException;
@@ -34,22 +34,22 @@ namespace org {
       class FunctionUtils : public ::java::lang::Object {
        public:
         enum {
-          mid_add_1d1dea4d2fa5c759,
-          mid_add_689e17eadd7fa7c2,
-          mid_collector_11adc540ecceaf3d,
-          mid_collector_1d48c753d1dcee69,
-          mid_combine_3f08252e15ed56dd,
-          mid_compose_1d1dea4d2fa5c759,
-          mid_compose_689e17eadd7fa7c2,
-          mid_derivative_1cfd32e68d698037,
-          mid_derivative_68d32ee5bac2b20e,
-          mid_fix1stArgument_9e09c654d7549869,
-          mid_fix2ndArgument_9e09c654d7549869,
-          mid_multiply_1d1dea4d2fa5c759,
-          mid_multiply_689e17eadd7fa7c2,
-          mid_sample_5d357094f120ebb4,
-          mid_toDifferentiable_8f826de7259f8a4a,
-          mid_toDifferentiable_467dda28257459c9,
+          mid_add_60424d900a2da66a,
+          mid_add_b09b2cfaecafda87,
+          mid_collector_d1f6b1116648e289,
+          mid_collector_f103380a1ae2a4ea,
+          mid_combine_5e50c33782ed4814,
+          mid_compose_60424d900a2da66a,
+          mid_compose_b09b2cfaecafda87,
+          mid_derivative_41177b4aa083d7ad,
+          mid_derivative_9d36e909144e9c8b,
+          mid_fix1stArgument_0f8a4710f6db6110,
+          mid_fix2ndArgument_0f8a4710f6db6110,
+          mid_multiply_60424d900a2da66a,
+          mid_multiply_b09b2cfaecafda87,
+          mid_sample_0efe32940310510c,
+          mid_toDifferentiable_2106ef1f648a53b5,
+          mid_toDifferentiable_69b5798b043af08d,
           max_mid
         };
 

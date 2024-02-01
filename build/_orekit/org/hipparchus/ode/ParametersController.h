@@ -25,8 +25,8 @@ namespace org {
       class ParametersController : public ::org::hipparchus::ode::Parameterizable {
        public:
         enum {
-          mid_getParameter_a84f304e8cd7ce1b,
-          mid_setParameter_b7ec643e4edd96c5,
+          mid_getParameter_f2fc085ab82846a3,
+          mid_setParameter_4a1c1c41794e71b1,
           max_mid
         };
 

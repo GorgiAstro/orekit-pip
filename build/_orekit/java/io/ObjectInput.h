@@ -4,14 +4,14 @@
 #include "java/io/DataInput.h"
 
 namespace java {
+  namespace io {
+    class IOException;
+  }
   namespace lang {
+    class ClassNotFoundException;
     class AutoCloseable;
     class Class;
     class Object;
-    class ClassNotFoundException;
-  }
-  namespace io {
-    class IOException;
   }
 }
 template<class T> class JArray;
@@ -22,13 +22,13 @@ namespace java {
     class ObjectInput : public ::java::io::DataInput {
      public:
       enum {
-        mid_available_55546ef6a647f39b,
-        mid_close_a1fa5dae97ea5ed2,
-        mid_read_55546ef6a647f39b,
-        mid_read_53324f422c2c7f64,
-        mid_read_296dd75c373e2c1d,
-        mid_readObject_541690f9ee81d3ad,
-        mid_skip_9db63109f74a74fc,
+        mid_available_d6ab429752e7c267,
+        mid_close_ff7cb6c242604316,
+        mid_read_d6ab429752e7c267,
+        mid_read_89e14f411787412a,
+        mid_read_1351cbafe5a435a7,
+        mid_readObject_704a5bee58538972,
+        mid_skip_1eaf6eb0a3f3163f,
         max_mid
       };
 

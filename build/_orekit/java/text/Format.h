@@ -4,20 +4,20 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace text {
-    class FieldPosition;
-    class ParsePosition;
-    class ParseException;
-    class AttributedCharacterIterator;
-  }
-  namespace io {
-    class Serializable;
-  }
   namespace lang {
     class StringBuffer;
     class Class;
     class Cloneable;
     class String;
+  }
+  namespace text {
+    class ParseException;
+    class FieldPosition;
+    class ParsePosition;
+    class AttributedCharacterIterator;
+  }
+  namespace io {
+    class Serializable;
   }
 }
 template<class T> class JArray;
@@ -28,12 +28,12 @@ namespace java {
     class Format : public ::java::lang::Object {
      public:
       enum {
-        mid_clone_541690f9ee81d3ad,
-        mid_format_9a3ac03d9f8571c6,
-        mid_format_b972afa1d89f0ad4,
-        mid_formatToCharacterIterator_1e9e330ed3e6edfe,
-        mid_parseObject_b5bfd4959be00bde,
-        mid_parseObject_ad5444510b7b5820,
+        mid_clone_704a5bee58538972,
+        mid_format_60ee6fc56bffa550,
+        mid_format_8a939fb9d04314c2,
+        mid_formatToCharacterIterator_22f522baf2fb71d1,
+        mid_parseObject_bb1ff484ae64c57e,
+        mid_parseObject_43b97b9c23ff173e,
         max_mid
       };
 

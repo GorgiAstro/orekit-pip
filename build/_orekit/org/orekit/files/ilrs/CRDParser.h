@@ -3,21 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace data {
-      class DataSource;
-    }
-    namespace files {
-      namespace ilrs {
-        class CRD;
-      }
-    }
-    namespace time {
-      class TimeScale;
-    }
-  }
-}
 namespace java {
   namespace io {
     class IOException;
@@ -25,6 +10,21 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace ilrs {
+        class CRD;
+      }
+    }
+    namespace data {
+      class DataSource;
+    }
+    namespace time {
+      class TimeScale;
+    }
   }
 }
 template<class T> class JArray;
@@ -37,10 +37,10 @@ namespace org {
         class CRDParser : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_init$_cae5d0c3721eff67,
-            mid_getTimeScale_34d3bda0a8989e3e,
-            mid_parse_d0ee9288361369fc,
+            mid_init$_ff7cb6c242604316,
+            mid_init$_7cb2659f4799e4d2,
+            mid_getTimeScale_5e2cac12ab8da943,
+            mid_parse_1826a80a322e280c,
             max_mid
           };
 

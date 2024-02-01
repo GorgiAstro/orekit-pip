@@ -5,22 +5,22 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbstractTimeInterpolator$InterpolationData;
+      class TimeInterpolator;
+      class TimeStampedPair;
+    }
     namespace propagation {
       class StateCovariance;
     }
-    namespace frames {
-      class LOFType;
-      class Frame;
-    }
     namespace orbits {
-      class Orbit;
-      class PositionAngleType;
       class OrbitType;
+      class PositionAngleType;
+      class Orbit;
     }
-    namespace time {
-      class TimeStampedPair;
-      class AbstractTimeInterpolator$InterpolationData;
-      class TimeInterpolator;
+    namespace frames {
+      class Frame;
+      class LOFType;
     }
   }
 }
@@ -38,17 +38,17 @@ namespace org {
       class AbstractStateCovarianceInterpolator : public ::org::orekit::time::AbstractTimeInterpolator {
        public:
         enum {
-          mid_init$_772c854c91c60aaa,
-          mid_init$_50c4488e189fba59,
-          mid_getOrbitInterpolator_04638ce011c1f261,
-          mid_getOutFrame_2c51111cc6894ba1,
-          mid_getOutLOF_f183bcc89f4a1412,
-          mid_getOutOrbitType_c7d4737d7afca612,
-          mid_getOutPositionAngleType_c25055891f180348,
-          mid_interpolate_74ea3235d4212fcd,
-          mid_computeInterpolatedCovarianceInOrbitFrame_6e94f93e19d6364d,
-          mid_interpolateOrbit_324b5a3a2e7a2f29,
-          mid_expressCovarianceInDesiredOutput_1344e03f312298d5,
+          mid_init$_4db14975e9e3fa0e,
+          mid_init$_8ac92aa4416c2912,
+          mid_getOrbitInterpolator_73c4976bc58cb3ff,
+          mid_getOutFrame_cb151471db4570f0,
+          mid_getOutLOF_2ef6889b4bcd6216,
+          mid_getOutOrbitType_495f818d3570b7f5,
+          mid_getOutPositionAngleType_a6db4e6edefda4be,
+          mid_interpolate_e9904875752c9f36,
+          mid_interpolateOrbit_a01636d7bf2c86d5,
+          mid_computeInterpolatedCovarianceInOrbitFrame_e7868f37b0ca6b84,
+          mid_expressCovarianceInDesiredOutput_e8a7e9eaceba4489,
           max_mid
         };
 

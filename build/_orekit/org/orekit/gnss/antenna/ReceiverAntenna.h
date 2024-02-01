@@ -3,15 +3,6 @@
 
 #include "org/orekit/gnss/antenna/Antenna.h"
 
-namespace java {
-  namespace util {
-    class Map;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -20,6 +11,15 @@ namespace org {
       }
       class Frequency;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class Map;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -32,8 +32,8 @@ namespace org {
         class ReceiverAntenna : public ::org::orekit::gnss::antenna::Antenna {
          public:
           enum {
-            mid_init$_fb219eac71c34b18,
-            mid_getSerialNumber_1c1fa1e935d6cdcf,
+            mid_init$_2a5ab322b81321ef,
+            mid_getSerialNumber_d2c8eb4129821f0e,
             max_mid
           };
 

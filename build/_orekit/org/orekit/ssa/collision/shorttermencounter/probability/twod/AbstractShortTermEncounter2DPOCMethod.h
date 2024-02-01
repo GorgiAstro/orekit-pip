@@ -14,8 +14,8 @@ namespace org {
         namespace shorttermencounter {
           namespace probability {
             namespace twod {
-              class ShortTermEncounter2DPOCMethod;
               class ShortTermEncounter2DDefinition;
+              class ShortTermEncounter2DPOCMethod;
               class FieldShortTermEncounter2DDefinition;
             }
           }
@@ -26,10 +26,6 @@ namespace org {
         class ProbabilityOfCollision;
       }
     }
-    namespace orbits {
-      class Orbit;
-      class FieldOrbit;
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -38,6 +34,10 @@ namespace org {
           }
         }
       }
+    }
+    namespace orbits {
+      class FieldOrbit;
+      class Orbit;
     }
   }
   namespace hipparchus {
@@ -63,18 +63,18 @@ namespace org {
               class AbstractShortTermEncounter2DPOCMethod : public ::java::lang::Object {
                public:
                 enum {
-                  mid_compute_cac25f7dbaea842d,
-                  mid_compute_613925b61b739417,
-                  mid_compute_a0489c76be101130,
-                  mid_compute_6829aad0a64a3436,
-                  mid_compute_a73e6347f5238a63,
-                  mid_compute_11689cd07cf55453,
-                  mid_compute_619a70d6b0e36c90,
-                  mid_compute_f98b4f489decc901,
-                  mid_getName_1c1fa1e935d6cdcf,
-                  mid_isAMaximumProbabilityOfCollisionMethod_9ab94ac1dc23b105,
-                  mid_getObjectOrbitFromCdm_7396690b8dce48fd,
-                  mid_getObjectStateCovarianceFromCdm_fc96a5f91e86020d,
+                  mid_compute_387945137ebab778,
+                  mid_compute_0110eb01e8b95b31,
+                  mid_compute_d71c9b0a2a1fa7ea,
+                  mid_compute_fabda52a93cfd27a,
+                  mid_compute_7eae8d8112e983e4,
+                  mid_compute_8edb355cf7d54cf6,
+                  mid_compute_95dcab374babccc7,
+                  mid_compute_426d335df18e2f21,
+                  mid_getName_d2c8eb4129821f0e,
+                  mid_isAMaximumProbabilityOfCollisionMethod_eee3de00fe971136,
+                  mid_getObjectOrbitFromCdm_49f4e9a7f009669a,
+                  mid_getObjectStateCovarianceFromCdm_9e411e3026392eb1,
                   max_mid
                 };
 

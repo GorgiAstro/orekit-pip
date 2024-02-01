@@ -5,12 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class ParameterDriver;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace estimation {
       namespace measurements {
         class ObservableSatellite;
@@ -18,6 +12,12 @@ namespace org {
           class InterSatellitesPhase;
         }
       }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
 }
@@ -38,11 +38,11 @@ namespace org {
           class InterSatellitesPhase : public ::org::orekit::estimation::measurements::AbstractMeasurement {
            public:
             enum {
-              mid_init$_0576086b2ba83da9,
-              mid_getAmbiguityDriver_a59daa5e273117e1,
-              mid_getWavelength_b74f83833fdad017,
-              mid_theoreticalEvaluationWithoutDerivatives_9347cf3b1f0dd85a,
-              mid_theoreticalEvaluation_d598991c5cac8ab0,
+              mid_init$_5b8a5193e03c684e,
+              mid_getAmbiguityDriver_7daccb22665e511b,
+              mid_getWavelength_9981f74b2d109da6,
+              mid_theoreticalEvaluationWithoutDerivatives_59954f62fc64aef2,
+              mid_theoreticalEvaluation_eda25b8c88791d9a,
               max_mid
             };
 

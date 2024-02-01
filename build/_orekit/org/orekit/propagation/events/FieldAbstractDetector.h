@@ -5,19 +5,19 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace propagation {
       namespace events {
-        class FieldAdaptableInterval;
-        class FieldAbstractDetector;
         class FieldEventDetector;
         namespace handlers {
           class FieldEventHandler;
         }
+        class FieldAbstractDetector;
+        class FieldAdaptableInterval;
       }
       class FieldSpacecraftState;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -39,19 +39,19 @@ namespace org {
         class FieldAbstractDetector : public ::java::lang::Object {
          public:
           enum {
-            mid_g_2203631097e94c79,
-            mid_getHandler_3449c57ae1fbceff,
-            mid_getMaxCheckInterval_d0b60c59a7966d59,
-            mid_getMaxIterationCount_55546ef6a647f39b,
-            mid_getThreshold_81520b552cb3fa26,
-            mid_init_96d019f392abf918,
-            mid_isForward_9ab94ac1dc23b105,
-            mid_withHandler_4e533893f8ea6535,
-            mid_withMaxCheck_aa7da5fea1950df8,
-            mid_withMaxCheck_72176bdcb26ede5b,
-            mid_withMaxIter_62ae6d133f61525f,
-            mid_withThreshold_cb84c1cb9922f458,
-            mid_create_106f52de5ffac709,
+            mid_g_ac6fccc69d1b2d9e,
+            mid_getHandler_ae50020f8bfe1c59,
+            mid_getMaxCheckInterval_0f2b5ee7b716ac92,
+            mid_getMaxIterationCount_d6ab429752e7c267,
+            mid_getThreshold_08d37e3f77b7239d,
+            mid_init_357211ab77703f3f,
+            mid_isForward_eee3de00fe971136,
+            mid_withHandler_a6ca3a2735927243,
+            mid_withMaxCheck_eaf7dcc877e1e0f1,
+            mid_withMaxCheck_10514b3cc2b64aba,
+            mid_withMaxIter_c24c4034477e75c9,
+            mid_withThreshold_e517eb0f8982f10f,
+            mid_create_6aaef69387f9170d,
             max_mid
           };
 

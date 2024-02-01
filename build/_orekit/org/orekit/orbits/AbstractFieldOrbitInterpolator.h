@@ -3,6 +3,14 @@
 
 #include "org/orekit/time/AbstractFieldTimeInterpolator.h"
 
+namespace java {
+  namespace util {
+    class Collection;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace time {
@@ -16,14 +24,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace util {
-    class Collection;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -33,9 +33,9 @@ namespace org {
       class AbstractFieldOrbitInterpolator : public ::org::orekit::time::AbstractFieldTimeInterpolator {
        public:
         enum {
-          mid_init$_5b6571101ec263f4,
-          mid_getOutputInertialFrame_2c51111cc6894ba1,
-          mid_interpolate_b0a7ad791e031e80,
+          mid_init$_4a8b614955ad3a54,
+          mid_getOutputInertialFrame_cb151471db4570f0,
+          mid_interpolate_62d6f6ecde70d4d7,
           max_mid
         };
 

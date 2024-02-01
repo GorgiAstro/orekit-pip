@@ -4,12 +4,12 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace text {
-    class Format$Field;
-  }
   namespace lang {
     class String;
     class Class;
+  }
+  namespace text {
+    class Format$Field;
   }
 }
 template<class T> class JArray;
@@ -20,18 +20,18 @@ namespace java {
     class FieldPosition : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_6da7a099f2671014,
-        mid_init$_44ed599e93e8a30c,
-        mid_init$_5f99e2d4885e07be,
-        mid_equals_460c5e2d9d51c6cc,
-        mid_getBeginIndex_55546ef6a647f39b,
-        mid_getEndIndex_55546ef6a647f39b,
-        mid_getField_55546ef6a647f39b,
-        mid_getFieldAttribute_7f60d31259f27345,
-        mid_hashCode_55546ef6a647f39b,
-        mid_setBeginIndex_44ed599e93e8a30c,
-        mid_setEndIndex_44ed599e93e8a30c,
-        mid_toString_1c1fa1e935d6cdcf,
+        mid_init$_5d68158e8e002563,
+        mid_init$_8fd427ab23829bf5,
+        mid_init$_6a3fe29d3103856c,
+        mid_equals_72faff9b05f5ed5e,
+        mid_getBeginIndex_d6ab429752e7c267,
+        mid_getEndIndex_d6ab429752e7c267,
+        mid_getField_d6ab429752e7c267,
+        mid_getFieldAttribute_c105e9fa7ecd5265,
+        mid_hashCode_d6ab429752e7c267,
+        mid_setBeginIndex_8fd427ab23829bf5,
+        mid_setEndIndex_8fd427ab23829bf5,
+        mid_toString_d2c8eb4129821f0e,
         max_mid
       };
 

@@ -3,6 +3,12 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace files {
@@ -12,12 +18,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,10 +31,10 @@ namespace org {
           class RinexLabels : public ::java::lang::Enum {
            public:
             enum {
-              mid_getLabel_1c1fa1e935d6cdcf,
-              mid_matches_cde6b28e15c96b75,
-              mid_valueOf_054b20b7c728ef4e,
-              mid_values_9965677b3e03746d,
+              mid_getLabel_d2c8eb4129821f0e,
+              mid_matches_df4c65b2aede5c41,
+              mid_valueOf_3722cdadf8e63cb6,
+              mid_values_d6b73808c6fed872,
               max_mid
             };
 

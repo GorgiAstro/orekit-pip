@@ -41,12 +41,12 @@ namespace org {
             class CoefficientsFactory : public ::java::lang::Object {
              public:
               enum {
-                mid_computeGsHs_9703443b8e98cb65,
-                mid_computeGsHs_0cd7926eec02749e,
-                mid_computeQns_a75b2896a12fb778,
-                mid_computeQns_f9dc0468fd651ea0,
-                mid_computeVns_83270ffe4c2eeea0,
-                mid_getVmns_2f53baea9459d443,
+                mid_computeGsHs_073b9339e81ee0aa,
+                mid_computeGsHs_450199253e5577f8,
+                mid_computeQns_572737d7fc5c7215,
+                mid_computeQns_40bf9ad6b34cfa6d,
+                mid_computeVns_860bad699123b13b,
+                mid_getVmns_d692aeb156453fed,
                 max_mid
               };
 

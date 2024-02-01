@@ -3,16 +3,16 @@
 
 #include "org/hipparchus/optim/nonlinear/scalar/MultivariateOptimizer.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace optim {
       class PointValuePair;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,9 +27,9 @@ namespace org {
             class BOBYQAOptimizer : public ::org::hipparchus::optim::nonlinear::scalar::MultivariateOptimizer {
              public:
               enum {
-                mid_init$_44ed599e93e8a30c,
-                mid_init$_cdd9dee35d124091,
-                mid_doOptimize_35ff88cac3217ca3,
+                mid_init$_8fd427ab23829bf5,
+                mid_init$_aaed259e1b5f1153,
+                mid_doOptimize_a812a1ba2cf9f7b4,
                 max_mid
               };
 

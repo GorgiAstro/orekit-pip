@@ -32,16 +32,16 @@ namespace org {
         class AdapterPropagator : public ::org::orekit::propagation::analytical::AbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_7077d4247ef1c4a5,
-            mid_addEffect_c6b40735d6c87d8a,
-            mid_getEffects_e62d3bb06d56d7e3,
-            mid_getInitialState_9d155cc8314c99cf,
-            mid_getPropagator_75ab23d3f479a59b,
-            mid_resetInitialState_280c3390961e0a50,
-            mid_getMass_fd347811007a6ba3,
-            mid_basicPropagate_4f0008999861ca31,
-            mid_resetIntermediateState_1c47c97cdbc7e206,
-            mid_propagateOrbit_5df6dcb5c4123339,
+            mid_init$_f334dbd717e289d2,
+            mid_addEffect_b9dba4c0ba7dcddb,
+            mid_getEffects_d751c1a57012b438,
+            mid_getInitialState_8fbfa58855031235,
+            mid_getPropagator_605fbba6f75c4d5a,
+            mid_resetInitialState_72b846eb87f3af9a,
+            mid_getMass_209f08246d708042,
+            mid_propagateOrbit_776cca2e85dfe61d,
+            mid_basicPropagate_1e982279849c3b65,
+            mid_resetIntermediateState_b69b5541e48d21c0,
             max_mid
           };
 

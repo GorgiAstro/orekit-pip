@@ -19,7 +19,7 @@ namespace org {
           class GRAPHICCombination : public ::org::orekit::estimation::measurements::gnss::AbstractSingleFrequencyCombination {
            public:
             enum {
-              mid_getCombinedValue_99e3200dafc19573,
+              mid_getCombinedValue_82f92590f4247da1,
               max_mid
             };
 

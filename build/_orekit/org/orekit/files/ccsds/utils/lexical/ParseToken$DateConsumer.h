@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,7 +27,7 @@ namespace org {
             class ParseToken$DateConsumer : public ::java::lang::Object {
              public:
               enum {
-                mid_accept_02135a6ef25adb4b,
+                mid_accept_8497861b879c83f7,
                 max_mid
               };
 

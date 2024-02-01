@@ -5,20 +5,20 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
     namespace utils {
-      class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
+      class PVCoordinatesProvider;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
+    namespace frames {
+      class Frame;
     }
     namespace attitudes {
       class FieldAttitude;
       class Attitude;
-    }
-    namespace frames {
-      class Frame;
     }
   }
   namespace hipparchus {
@@ -46,10 +46,10 @@ namespace org {
       class AttitudeProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getAttitude_896ee4d68989b1e8,
-          mid_getAttitude_21845cfb0034fe1c,
-          mid_getAttitudeRotation_6acae55a2f5d3ab4,
-          mid_getAttitudeRotation_1bc07ea175743b30,
+          mid_getAttitude_aab1c6ab68ffdcbb,
+          mid_getAttitude_a02177519e1b6a45,
+          mid_getAttitudeRotation_267252ddff45220c,
+          mid_getAttitudeRotation_494718838b66cf03,
           max_mid
         };
 

@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class TimeStamped;
       class AbsoluteDate;
+      class TimeStamped;
     }
   }
 }
@@ -25,8 +25,8 @@ namespace org {
       class TimeStamped : public ::java::lang::Object {
        public:
         enum {
-          mid_durationFrom_f034f10a2568dfba,
-          mid_getDate_c325492395d89b24,
+          mid_durationFrom_b779e2963d2e7481,
+          mid_getDate_80e11148db499dda,
           max_mid
         };
 

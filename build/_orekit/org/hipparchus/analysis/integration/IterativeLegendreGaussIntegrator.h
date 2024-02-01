@@ -25,10 +25,10 @@ namespace org {
         class IterativeLegendreGaussIntegrator : public ::org::hipparchus::analysis::integration::BaseAbstractUnivariateIntegrator {
          public:
           enum {
-            mid_init$_cdd9dee35d124091,
-            mid_init$_a0df4b8e4ed3805e,
-            mid_init$_e7cf6a4a381d2431,
-            mid_doIntegrate_b74f83833fdad017,
+            mid_init$_aaed259e1b5f1153,
+            mid_init$_48ca1125d4856a74,
+            mid_init$_afba34ea3008b8dd,
+            mid_doIntegrate_9981f74b2d109da6,
             max_mid
           };
 

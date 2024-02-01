@@ -40,7 +40,7 @@ namespace org {
           class CycleSlipDetectors : public ::java::lang::Object {
            public:
             enum {
-              mid_detect_d1fc3c05f458e1a3,
+              mid_detect_a27502c31bd75a45,
               max_mid
             };
 

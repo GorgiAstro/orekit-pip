@@ -25,20 +25,20 @@ namespace org {
             class FieldDSSTTesseralContext : public ::org::orekit::propagation::semianalytical::dsst::forces::FieldForceModelContext {
              public:
               enum {
-                mid_getAx2oA_81520b552cb3fa26,
-                mid_getBoA_81520b552cb3fa26,
-                mid_getBoABpo_81520b552cb3fa26,
-                mid_getChi_81520b552cb3fa26,
-                mid_getChi2_81520b552cb3fa26,
-                mid_getCo2AB_81520b552cb3fa26,
-                mid_getE2_81520b552cb3fa26,
-                mid_getMeanMotion_81520b552cb3fa26,
-                mid_getMoa_81520b552cb3fa26,
-                mid_getOoAB_81520b552cb3fa26,
-                mid_getOrbitPeriod_81520b552cb3fa26,
-                mid_getRatio_81520b552cb3fa26,
-                mid_getRoa_81520b552cb3fa26,
-                mid_getTheta_81520b552cb3fa26,
+                mid_getAx2oA_08d37e3f77b7239d,
+                mid_getBoA_08d37e3f77b7239d,
+                mid_getBoABpo_08d37e3f77b7239d,
+                mid_getChi_08d37e3f77b7239d,
+                mid_getChi2_08d37e3f77b7239d,
+                mid_getCo2AB_08d37e3f77b7239d,
+                mid_getE2_08d37e3f77b7239d,
+                mid_getMeanMotion_08d37e3f77b7239d,
+                mid_getMoa_08d37e3f77b7239d,
+                mid_getOoAB_08d37e3f77b7239d,
+                mid_getOrbitPeriod_08d37e3f77b7239d,
+                mid_getRatio_08d37e3f77b7239d,
+                mid_getRoa_08d37e3f77b7239d,
+                mid_getTheta_08d37e3f77b7239d,
                 max_mid
               };
 

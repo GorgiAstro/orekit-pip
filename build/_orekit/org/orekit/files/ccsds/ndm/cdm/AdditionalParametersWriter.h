@@ -20,7 +20,7 @@ namespace org {
             class AdditionalParametersWriter : public ::org::orekit::files::ccsds::section::AbstractWriter {
              public:
               enum {
-                mid_writeContent_fb222e851cd27682,
+                mid_writeContent_05c6d36d73082fa6,
                 max_mid
               };
 

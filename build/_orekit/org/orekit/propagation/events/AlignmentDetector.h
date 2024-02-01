@@ -3,11 +3,13 @@
 
 #include "org/orekit/propagation/events/AbstractDetector.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
-    namespace utils {
-      class PVCoordinatesProvider;
-    }
     namespace orbits {
       class Orbit;
     }
@@ -17,11 +19,9 @@ namespace org {
       }
       class SpacecraftState;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
+    namespace utils {
+      class PVCoordinatesProvider;
+    }
   }
 }
 template<class T> class JArray;
@@ -34,13 +34,13 @@ namespace org {
         class AlignmentDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_0f26039f723423f9,
-            mid_init$_45fbe9bb503ae085,
-            mid_init$_a7aae65c472927ce,
-            mid_g_a17ea857ce74d258,
-            mid_getAlignAngle_b74f83833fdad017,
-            mid_getPVCoordinatesProvider_8a41319e47f3bd7c,
-            mid_create_2b5e486a53cc56d8,
+            mid_init$_97d3e3204146d0a6,
+            mid_init$_1ecf54252e404e23,
+            mid_init$_16205098a1d90a78,
+            mid_g_b443ba1cc794b916,
+            mid_getAlignAngle_9981f74b2d109da6,
+            mid_getPVCoordinatesProvider_781ab98286dad7d5,
+            mid_create_b9628636bdd19658,
             max_mid
           };
 

@@ -7,8 +7,8 @@ namespace org {
   namespace hipparchus {
     namespace geometry {
       namespace partitioning {
-        class Hyperplane;
         class Region;
+        class Hyperplane;
       }
     }
   }
@@ -28,13 +28,13 @@ namespace org {
         class RegionFactory : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_buildConvex_e11fc5da91d3c3d2,
-            mid_difference_5ff305d3026725a5,
-            mid_getComplement_116b72ede285c384,
-            mid_intersection_5ff305d3026725a5,
-            mid_union_5ff305d3026725a5,
-            mid_xor_5ff305d3026725a5,
+            mid_init$_ff7cb6c242604316,
+            mid_buildConvex_efbbe39d4ef425e3,
+            mid_difference_edf74652280ab0e5,
+            mid_getComplement_e69fb2865ef3e15d,
+            mid_intersection_edf74652280ab0e5,
+            mid_union_edf74652280ab0e5,
+            mid_xor_edf74652280ab0e5,
             max_mid
           };
 

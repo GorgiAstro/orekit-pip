@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace gnss {
-      class Frequency;
       class SatelliteSystem;
+      class Frequency;
     }
   }
 }
@@ -26,13 +26,13 @@ namespace org {
       class Frequency : public ::java::lang::Enum {
        public:
         enum {
-          mid_getMHzFrequency_b74f83833fdad017,
-          mid_getName_1c1fa1e935d6cdcf,
-          mid_getRatio_b74f83833fdad017,
-          mid_getSatelliteSystem_21bd759cc4a81606,
-          mid_getWavelength_b74f83833fdad017,
-          mid_valueOf_572e5211bb5806db,
-          mid_values_5ed00b86a3a6d446,
+          mid_getMHzFrequency_9981f74b2d109da6,
+          mid_getName_d2c8eb4129821f0e,
+          mid_getRatio_9981f74b2d109da6,
+          mid_getSatelliteSystem_fb0bd27fcc3ba9fc,
+          mid_getWavelength_9981f74b2d109da6,
+          mid_valueOf_5887df6a755c8fc7,
+          mid_values_03bf6276482ee6a8,
           max_mid
         };
 

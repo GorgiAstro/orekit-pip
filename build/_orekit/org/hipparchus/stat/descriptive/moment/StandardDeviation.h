@@ -3,27 +3,27 @@
 
 #include "org/hipparchus/stat/descriptive/AbstractStorelessUnivariateStatistic.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace stat {
-      namespace descriptive {
-        namespace moment {
-          class StandardDeviation;
-          class SecondMoment;
-        }
-      }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
-  }
-}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace stat {
+      namespace descriptive {
+        namespace moment {
+          class SecondMoment;
+          class StandardDeviation;
+        }
+      }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
   }
 }
 template<class T> class JArray;
@@ -37,20 +37,20 @@ namespace org {
           class StandardDeviation : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_init$_b3f951b64db17420,
-              mid_init$_fcb96c98de6fad04,
-              mid_init$_22c546af386a65f5,
-              mid_clear_a1fa5dae97ea5ed2,
-              mid_copy_8159df5c2270dba4,
-              mid_evaluate_79e4db9e1e3d84c9,
-              mid_evaluate_1567a80062adb31b,
-              mid_evaluate_f09b11d2a075df86,
-              mid_getN_6c0ce7e438e5ded4,
-              mid_getResult_b74f83833fdad017,
-              mid_increment_8ba9fe7a847cecad,
-              mid_isBiasCorrected_9ab94ac1dc23b105,
-              mid_withBiasCorrection_0810dcb67b9fc23a,
+              mid_init$_ff7cb6c242604316,
+              mid_init$_4f0cd4b99215b675,
+              mid_init$_b35db77cae58639e,
+              mid_init$_afd6aa27b7bb12b4,
+              mid_clear_ff7cb6c242604316,
+              mid_copy_5f0732edec832d7b,
+              mid_evaluate_02811febb145516c,
+              mid_evaluate_620ea098e5f0da00,
+              mid_evaluate_be090b022ea8e24a,
+              mid_getN_42c72b98e3c2e08a,
+              mid_getResult_9981f74b2d109da6,
+              mid_increment_1ad26e8c8c0cd65b,
+              mid_isBiasCorrected_eee3de00fe971136,
+              mid_withBiasCorrection_a58c238729124c9c,
               max_mid
             };
 

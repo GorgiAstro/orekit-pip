@@ -5,15 +5,15 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class LOFType;
-    }
     namespace files {
       namespace ccsds {
         namespace definitions {
           class OrbitRelativeFrame;
         }
       }
+    }
+    namespace frames {
+      class LOFType;
     }
   }
 }
@@ -34,10 +34,10 @@ namespace org {
           class OrbitRelativeFrame : public ::java::lang::Enum {
            public:
             enum {
-              mid_getLofType_f183bcc89f4a1412,
-              mid_isQuasiInertial_9ab94ac1dc23b105,
-              mid_valueOf_ca9c0b65a5a10e81,
-              mid_values_a251dbe84800b83c,
+              mid_getLofType_2ef6889b4bcd6216,
+              mid_isQuasiInertial_eee3de00fe971136,
+              mid_valueOf_1c26dd15f9c5f2a2,
+              mid_values_c4d360633d15ed4a,
               max_mid
             };
 

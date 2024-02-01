@@ -4,27 +4,27 @@
 #include "org/orekit/utils/TimeStampedPVCoordinates.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-  }
   namespace orekit {
     namespace utils {
       class AbsolutePVCoordinates;
-      class PVCoordinatesProvider;
       class PVCoordinates;
+      class PVCoordinatesProvider;
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace frames {
       class Frame;
     }
-    namespace time {
-      class AbsoluteDate;
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
     }
   }
 }
@@ -42,23 +42,23 @@ namespace org {
       class AbsolutePVCoordinates : public ::org::orekit::utils::TimeStampedPVCoordinates {
        public:
         enum {
-          mid_init$_800c3dd335c0380a,
-          mid_init$_fd2b0750660b1520,
-          mid_init$_72cc8b5e799f1af2,
-          mid_init$_cf7eb6bf40ec2784,
-          mid_init$_863f1b02c8177428,
-          mid_init$_ea4c48813d74fdbb,
-          mid_init$_da876b03b47aa63e,
-          mid_init$_d540dd032c580460,
-          mid_init$_3e48dcefd2485625,
-          mid_init$_57f438b019fb3492,
-          mid_getFrame_2c51111cc6894ba1,
-          mid_getPVCoordinates_136cc8ba23b21c29,
-          mid_getPVCoordinates_03c7a0bca588a4f5,
-          mid_getPVCoordinates_e5d15ef236cd9ffe,
-          mid_getPosition_982d534f80d70918,
-          mid_shiftedBy_e7e789aaa661e1b8,
-          mid_toTaylorProvider_8a41319e47f3bd7c,
+          mid_init$_bf17706d61c7c060,
+          mid_init$_ef9b4c9c65e8f64e,
+          mid_init$_f18c63b6a877017a,
+          mid_init$_73a746b7f0a60196,
+          mid_init$_b2f0b252237d4955,
+          mid_init$_7e4810973426bed8,
+          mid_init$_8a92b49de3c6f304,
+          mid_init$_0903a30af23ba460,
+          mid_init$_52ae6364f8ffb9fd,
+          mid_init$_5015ac2efa5365ae,
+          mid_getFrame_cb151471db4570f0,
+          mid_getPVCoordinates_674031698a428ce8,
+          mid_getPVCoordinates_76634063992a70d7,
+          mid_getPVCoordinates_6236a35378ed47a5,
+          mid_getPosition_5996cdbecf4f0d06,
+          mid_shiftedBy_7e13d9132ca7ef7d,
+          mid_toTaylorProvider_781ab98286dad7d5,
           max_mid
         };
 

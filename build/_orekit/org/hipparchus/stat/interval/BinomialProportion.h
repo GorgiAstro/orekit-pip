@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
     namespace stat {
       namespace interval {
         class ConfidenceInterval;
       }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
     }
   }
 }
@@ -30,10 +30,10 @@ namespace org {
         class BinomialProportion : public ::java::lang::Object {
          public:
           enum {
-            mid_getAgrestiCoullInterval_8296721c4042ec10,
-            mid_getClopperPearsonInterval_8296721c4042ec10,
-            mid_getNormalApproximationInterval_8296721c4042ec10,
-            mid_getWilsonScoreInterval_8296721c4042ec10,
+            mid_getAgrestiCoullInterval_ba2f715f1d18e914,
+            mid_getClopperPearsonInterval_ba2f715f1d18e914,
+            mid_getNormalApproximationInterval_ba2f715f1d18e914,
+            mid_getWilsonScoreInterval_ba2f715f1d18e914,
             max_mid
           };
 

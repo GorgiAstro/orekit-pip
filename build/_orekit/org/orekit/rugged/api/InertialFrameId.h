@@ -28,8 +28,8 @@ namespace org {
         class InertialFrameId : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_6b9cec60444c160a,
-            mid_values_1ac67992fbac2c1e,
+            mid_valueOf_a234814e97fcaa4c,
+            mid_values_2ee22dc185f29a13,
             max_mid
           };
 

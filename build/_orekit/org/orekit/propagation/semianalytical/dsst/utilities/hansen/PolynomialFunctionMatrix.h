@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace analysis {
@@ -30,6 +25,11 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -43,13 +43,13 @@ namespace org {
               class PolynomialFunctionMatrix : public ::java::lang::Object {
                public:
                 enum {
-                  mid_add_ebc4cddf24c32c66,
-                  mid_getElem_1cd2ebb64c826c5c,
-                  mid_getMatrixLine_dee002994800a328,
-                  mid_multiply_ebc4cddf24c32c66,
-                  mid_setElem_19223c9371fb6012,
-                  mid_setMatrix_515fac2355626ee6,
-                  mid_setMatrixLine_285b5bc74aec1ed1,
+                  mid_add_a39e250cb1ed0404,
+                  mid_getElem_4aace0e1cd1edd30,
+                  mid_getMatrixLine_fcfa756790026850,
+                  mid_multiply_a39e250cb1ed0404,
+                  mid_setElem_08c9fe425e068939,
+                  mid_setMatrix_0d308af53609a988,
+                  mid_setMatrixLine_a247c570c3ab5398,
                   max_mid
                 };
 

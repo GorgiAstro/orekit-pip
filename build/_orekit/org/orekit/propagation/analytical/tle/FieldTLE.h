@@ -3,6 +3,35 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace utils {
+      class ParameterDriversProvider;
+      class ParameterDriver;
+    }
+    namespace time {
+      class FieldTimeStamped;
+      class FieldAbsoluteDate;
+      class TimeScale;
+    }
+    namespace propagation {
+      namespace analytical {
+        namespace tle {
+          namespace generation {
+            class TleGenerationAlgorithm;
+          }
+          class FieldTLE;
+          class TLE;
+        }
+      }
+      class FieldSpacecraftState;
+    }
+  }
+  namespace hipparchus {
+    class Field;
+    class CalculusFieldElement;
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -13,35 +42,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-      class FieldTimeStamped;
-      class TimeScale;
-    }
-    namespace propagation {
-      namespace analytical {
-        namespace tle {
-          class TLE;
-          class FieldTLE;
-          namespace generation {
-            class TleGenerationAlgorithm;
-          }
-        }
-      }
-      class FieldSpacecraftState;
-    }
-    namespace utils {
-      class ParameterDriversProvider;
-      class ParameterDriver;
-    }
-  }
-  namespace hipparchus {
-    class Field;
-    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -55,37 +55,37 @@ namespace org {
           class FieldTLE : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_685931cb45816160,
-              mid_init$_eb74d3b04b631428,
-              mid_init$_b516d88ee4c59bdb,
-              mid_init$_aef54e382ffb5bb5,
-              mid_equals_460c5e2d9d51c6cc,
-              mid_getBStar_b74f83833fdad017,
-              mid_getClassification_5e2f8fc4d7c03fbd,
-              mid_getDate_fa23a4301b9c83e7,
-              mid_getE_81520b552cb3fa26,
-              mid_getElementNumber_55546ef6a647f39b,
-              mid_getEphemerisType_55546ef6a647f39b,
-              mid_getI_81520b552cb3fa26,
-              mid_getLaunchNumber_55546ef6a647f39b,
-              mid_getLaunchPiece_1c1fa1e935d6cdcf,
-              mid_getLaunchYear_55546ef6a647f39b,
-              mid_getLine1_1c1fa1e935d6cdcf,
-              mid_getLine2_1c1fa1e935d6cdcf,
-              mid_getMeanAnomaly_81520b552cb3fa26,
-              mid_getMeanMotion_81520b552cb3fa26,
-              mid_getMeanMotionFirstDerivative_81520b552cb3fa26,
-              mid_getMeanMotionSecondDerivative_81520b552cb3fa26,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_getPerigeeArgument_81520b552cb3fa26,
-              mid_getRaan_81520b552cb3fa26,
-              mid_getRevolutionNumberAtEpoch_55546ef6a647f39b,
-              mid_getSatelliteNumber_55546ef6a647f39b,
-              mid_hashCode_55546ef6a647f39b,
-              mid_isFormatOK_e7bf5b93f9300a4f,
-              mid_stateToTLE_12b4ee9532b8e08d,
-              mid_toString_1c1fa1e935d6cdcf,
-              mid_toTLE_1c01e307dcced049,
+              mid_init$_7f0dc0eafede08bd,
+              mid_init$_f7a2e0cb9bc2a0b8,
+              mid_init$_994ea1ea83cebd47,
+              mid_init$_c802499a6e014075,
+              mid_equals_72faff9b05f5ed5e,
+              mid_getBStar_9981f74b2d109da6,
+              mid_getClassification_153df32fe8b51cb6,
+              mid_getDate_1fea28374011eef5,
+              mid_getE_08d37e3f77b7239d,
+              mid_getElementNumber_d6ab429752e7c267,
+              mid_getEphemerisType_d6ab429752e7c267,
+              mid_getI_08d37e3f77b7239d,
+              mid_getLaunchNumber_d6ab429752e7c267,
+              mid_getLaunchPiece_d2c8eb4129821f0e,
+              mid_getLaunchYear_d6ab429752e7c267,
+              mid_getLine1_d2c8eb4129821f0e,
+              mid_getLine2_d2c8eb4129821f0e,
+              mid_getMeanAnomaly_08d37e3f77b7239d,
+              mid_getMeanMotion_08d37e3f77b7239d,
+              mid_getMeanMotionFirstDerivative_08d37e3f77b7239d,
+              mid_getMeanMotionSecondDerivative_08d37e3f77b7239d,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_getPerigeeArgument_08d37e3f77b7239d,
+              mid_getRaan_08d37e3f77b7239d,
+              mid_getRevolutionNumberAtEpoch_d6ab429752e7c267,
+              mid_getSatelliteNumber_d6ab429752e7c267,
+              mid_hashCode_d6ab429752e7c267,
+              mid_isFormatOK_15b8a96a7eadea1e,
+              mid_stateToTLE_4da10b2505db87df,
+              mid_toString_d2c8eb4129821f0e,
+              mid_toTLE_dacb215ad36dee42,
               max_mid
             };
 

@@ -5,13 +5,13 @@
 
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataSource;
+    }
     namespace files {
       namespace general {
         class EphemerisFile;
       }
-    }
-    namespace data {
-      class DataSource;
     }
   }
 }
@@ -30,7 +30,7 @@ namespace org {
         class EphemerisFileParser : public ::java::lang::Object {
          public:
           enum {
-            mid_parse_c2184fda105f33cd,
+            mid_parse_6c877fbfda00edef,
             max_mid
           };
 

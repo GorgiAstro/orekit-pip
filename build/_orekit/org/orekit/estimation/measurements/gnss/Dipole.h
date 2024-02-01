@@ -39,8 +39,8 @@ namespace org {
           class Dipole : public ::java::lang::Object {
            public:
             enum {
-              mid_getPrimary_8b724f8b4fdad1a2,
-              mid_getSecondary_8b724f8b4fdad1a2,
+              mid_getPrimary_032312bdeb3f2f93,
+              mid_getSecondary_032312bdeb3f2f93,
               max_mid
             };
 

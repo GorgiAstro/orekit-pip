@@ -7,8 +7,8 @@ namespace org {
   namespace hipparchus {
     namespace analysis {
       namespace differentiation {
-        class DSCompiler;
         class FieldDerivativeStructure;
+        class DSCompiler;
         class FDSFactory$DerivativeField;
       }
     }
@@ -34,16 +34,16 @@ namespace org {
         class FDSFactory : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_b6c946d1cbf160f0,
-            mid_build_b2e42be64b624f3f,
-            mid_build_1a7f741fb94c3273,
-            mid_constant_7aeeac85ca41e793,
-            mid_constant_af5f7afd2fa6e7d1,
-            mid_getCompiler_e0888effe8b453a6,
-            mid_getDerivativeField_21a69e1beba00e8c,
-            mid_getValueField_04d1f63e17d5c5d4,
-            mid_variable_21d34149fde44727,
-            mid_variable_d130203cc430a767,
+            mid_init$_ddbf374219cf6329,
+            mid_build_73620040306e9955,
+            mid_build_1658e30325c495f4,
+            mid_constant_b9026a046a147de2,
+            mid_constant_ca7a13fcccfd32de,
+            mid_getCompiler_cf2c785981ead135,
+            mid_getDerivativeField_66009d8e2e7d406d,
+            mid_getValueField_577649682b9910c1,
+            mid_variable_59275c3828a531bd,
+            mid_variable_5dc18191805048ae,
             max_mid
           };
 

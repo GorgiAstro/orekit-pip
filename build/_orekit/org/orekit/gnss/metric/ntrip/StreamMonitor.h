@@ -37,12 +37,12 @@ namespace org {
           class StreamMonitor : public ::org::orekit::gnss::metric::parser::AbstractEncodedMessage {
            public:
             enum {
-              mid_init$_2112f85aabdccc46,
-              mid_addObserver_73b46a1f96d253c0,
-              mid_getException_22e7e02500f6b5b8,
-              mid_run_a1fa5dae97ea5ed2,
-              mid_stopMonitoring_a1fa5dae97ea5ed2,
-              mid_fetchByte_55546ef6a647f39b,
+              mid_init$_42c2a5427b044a4d,
+              mid_addObserver_c774afe311205326,
+              mid_getException_96b50f1517830654,
+              mid_run_ff7cb6c242604316,
+              mid_stopMonitoring_ff7cb6c242604316,
+              mid_fetchByte_d6ab429752e7c267,
               max_mid
             };
 

@@ -6,16 +6,16 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
-      class DenseOutputModel;
       namespace sampling {
         class ODEStateInterpolator;
         class ODEStepHandler;
       }
+      class DenseOutputModel;
       class ODEStateAndDerivative;
     }
     namespace exception {
-      class MathIllegalStateException;
       class MathIllegalArgumentException;
+      class MathIllegalStateException;
     }
   }
 }
@@ -36,14 +36,14 @@ namespace org {
       class DenseOutputModel : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_append_d48382c52c974b04,
-          mid_finish_d2d966b8a9c77b61,
-          mid_getFinalTime_b74f83833fdad017,
-          mid_getInitialTime_b74f83833fdad017,
-          mid_getInterpolatedState_cf0061d2765ae5a3,
-          mid_handleStep_197c5aaefd855810,
-          mid_init_a7556bd72cab73f1,
+          mid_init$_ff7cb6c242604316,
+          mid_append_f707b066c165e5ed,
+          mid_finish_6bfc236263cc281c,
+          mid_getFinalTime_9981f74b2d109da6,
+          mid_getInitialTime_9981f74b2d109da6,
+          mid_getInterpolatedState_dddd5f60deb44228,
+          mid_handleStep_4f79f5048423f318,
+          mid_init_25005604bcb94d07,
           max_mid
         };
 

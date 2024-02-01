@@ -28,13 +28,13 @@ namespace org {
       class AbsolutePVCoordinatesHermiteInterpolator : public ::org::orekit::time::AbstractTimeInterpolator {
        public:
         enum {
-          mid_init$_237ae1c2ddd68062,
-          mid_init$_92e0516c51076c2f,
-          mid_init$_5295144d3ac34660,
-          mid_init$_7f6d7ca3076fa7fe,
-          mid_getFilter_63bfdcc4b7a0536c,
-          mid_getOutputFrame_2c51111cc6894ba1,
-          mid_interpolate_350bdb8501ef57d7,
+          mid_init$_9725b246c9e25f68,
+          mid_init$_b744963488fb11c5,
+          mid_init$_77d14de7cb3c9585,
+          mid_init$_d72d0265fbc6575b,
+          mid_getFilter_b9dfc27d8c56b5de,
+          mid_getOutputFrame_cb151471db4570f0,
+          mid_interpolate_853ab71ea613cf4d,
           max_mid
         };
 

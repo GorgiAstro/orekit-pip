@@ -3,6 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -12,16 +22,6 @@ namespace org {
       class Propagator;
       class SpacecraftState;
     }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -34,15 +34,15 @@ namespace org {
         class PythonPropagatorConverter : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_convert_1085fbc3099561ad,
-            mid_convert_ed49a95e057deeb1,
-            mid_convert_8c138e9dd275b235,
-            mid_convert_439cb7b3f99fe6c0,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_ff7cb6c242604316,
+            mid_convert_1713a56b457259e7,
+            mid_convert_94ab750de1114aab,
+            mid_convert_ed6ecec71abaa7e7,
+            mid_convert_f1a727d7b3be4da6,
+            mid_finalize_ff7cb6c242604316,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

@@ -27,7 +27,7 @@ namespace org {
         class TileUpdater : public ::java::lang::Object {
          public:
           enum {
-            mid_updateTile_f975c8aa30d63fc3,
+            mid_updateTile_9be60dc0a7c39204,
             max_mid
           };
 

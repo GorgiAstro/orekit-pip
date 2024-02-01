@@ -14,19 +14,19 @@ namespace java {
   }
 }
 namespace org {
-  namespace orekit {
-    namespace propagation {
-      class MatricesHarvester;
-      class SpacecraftState;
-    }
-    namespace orbits {
-      class PositionAngleType;
-      class OrbitType;
-    }
-  }
   namespace hipparchus {
     namespace linear {
       class RealMatrix;
+    }
+  }
+  namespace orekit {
+    namespace orbits {
+      class OrbitType;
+      class PositionAngleType;
+    }
+    namespace propagation {
+      class SpacecraftState;
+      class MatricesHarvester;
     }
   }
 }
@@ -39,17 +39,17 @@ namespace org {
       class PythonMatricesHarvester : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_getJacobiansColumnsNames_e62d3bb06d56d7e3,
-          mid_getOrbitType_c7d4737d7afca612,
-          mid_getParametersJacobian_b7aa5791b069a41f,
-          mid_getPositionAngleType_c25055891f180348,
-          mid_getStateTransitionMatrix_b7aa5791b069a41f,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
-          mid_setReferenceState_280c3390961e0a50,
+          mid_init$_ff7cb6c242604316,
+          mid_finalize_ff7cb6c242604316,
+          mid_getJacobiansColumnsNames_d751c1a57012b438,
+          mid_getOrbitType_495f818d3570b7f5,
+          mid_getParametersJacobian_011bf64ebaa4e018,
+          mid_getPositionAngleType_a6db4e6edefda4be,
+          mid_getStateTransitionMatrix_011bf64ebaa4e018,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
+          mid_setReferenceState_72b846eb87f3af9a,
           max_mid
         };
 

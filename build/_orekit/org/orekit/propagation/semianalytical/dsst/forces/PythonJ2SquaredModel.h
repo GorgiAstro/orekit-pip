@@ -9,9 +9,9 @@ namespace org {
       namespace semianalytical {
         namespace dsst {
           namespace forces {
+            class DSSTJ2SquaredClosedFormContext;
             class J2SquaredModel;
             class FieldDSSTJ2SquaredClosedFormContext;
-            class DSSTJ2SquaredClosedFormContext;
           }
         }
       }
@@ -39,13 +39,13 @@ namespace org {
             class PythonJ2SquaredModel : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_computeMeanEquinoctialSecondOrderTerms_9e21a8e72403ad02,
-                mid_computeMeanEquinoctialSecondOrderTerms_4a156b883cf16de2,
-                mid_finalize_a1fa5dae97ea5ed2,
-                mid_pythonDecRef_a1fa5dae97ea5ed2,
-                mid_pythonExtension_6c0ce7e438e5ded4,
-                mid_pythonExtension_3d7dd2314a0dd456,
+                mid_init$_ff7cb6c242604316,
+                mid_computeMeanEquinoctialSecondOrderTerms_639aa05fb2436ba0,
+                mid_computeMeanEquinoctialSecondOrderTerms_614616a5f895b25b,
+                mid_finalize_ff7cb6c242604316,
+                mid_pythonDecRef_ff7cb6c242604316,
+                mid_pythonExtension_42c72b98e3c2e08a,
+                mid_pythonExtension_f5bbab7e97879358,
                 max_mid
               };
 

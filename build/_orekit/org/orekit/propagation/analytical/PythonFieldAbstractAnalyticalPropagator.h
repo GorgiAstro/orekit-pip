@@ -14,11 +14,11 @@ namespace org {
     namespace orbits {
       class FieldOrbit;
     }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace propagation {
       class FieldSpacecraftState;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
   }
   namespace hipparchus {
@@ -45,15 +45,15 @@ namespace org {
         class PythonFieldAbstractAnalyticalPropagator : public ::org::orekit::propagation::analytical::FieldAbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_c9d3fc8b6e0fe513,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getMass_140b8964300ddedf,
-            mid_getParametersDrivers_e62d3bb06d56d7e3,
-            mid_propagateOrbit_f34a7a94e111b112,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
-            mid_resetIntermediateState_871885b409df9d57,
+            mid_init$_001311851f02a8f1,
+            mid_finalize_ff7cb6c242604316,
+            mid_getMass_cf010978f3c5a913,
+            mid_getParametersDrivers_d751c1a57012b438,
+            mid_propagateOrbit_78985b34baac5c8e,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
+            mid_resetIntermediateState_e90aea08a7a0ab5e,
             max_mid
           };
 

@@ -24,7 +24,7 @@ namespace org {
       class TimeShiftable : public ::java::lang::Object {
        public:
         enum {
-          mid_shiftedBy_d6d7c40512c5891a,
+          mid_shiftedBy_d6202557abc1fed4,
           max_mid
         };
 

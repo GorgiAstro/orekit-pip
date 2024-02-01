@@ -17,8 +17,8 @@ namespace java {
     class NumberFormatException : public ::java::lang::IllegalArgumentException {
      public:
       enum {
-        mid_init$_a1fa5dae97ea5ed2,
-        mid_init$_734b91ac30d5f9b4,
+        mid_init$_ff7cb6c242604316,
+        mid_init$_105e1eadb709d9ac,
         max_mid
       };
 

@@ -3,17 +3,17 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace util {
       class ResizableDoubleArray$ExpansionMode;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,8 +25,8 @@ namespace org {
       class ResizableDoubleArray$ExpansionMode : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_4fa45af8c84d4bc5,
-          mid_values_d78002359672310a,
+          mid_valueOf_1529ad4334b226bb,
+          mid_values_5c421eac791538f4,
           max_mid
         };
 

@@ -3,14 +3,14 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class FieldElement;
-  }
-}
 namespace java {
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    class FieldElement;
   }
 }
 template<class T> class JArray;
@@ -22,9 +22,9 @@ namespace org {
       class FieldVectorPreservingVisitor : public ::java::lang::Object {
        public:
         enum {
-          mid_end_2ff8de927fda4153,
-          mid_start_a0df4b8e4ed3805e,
-          mid_visit_3e5e9beae9eb3b27,
+          mid_end_f6328613456309a1,
+          mid_start_48ca1125d4856a74,
+          mid_visit_9f3b43c70febfa9a,
           max_mid
         };
 

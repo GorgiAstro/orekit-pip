@@ -8,15 +8,15 @@ namespace java {
     class Locale;
     class ResourceBundle;
   }
+  namespace io {
+    class IOException;
+  }
   namespace lang {
     class InstantiationException;
     class IllegalAccessException;
     class Class;
     class String;
     class ClassLoader;
-  }
-  namespace io {
-    class IOException;
   }
 }
 template<class T> class JArray;
@@ -28,8 +28,8 @@ namespace org {
       class UTF8Control : public ::java::util::ResourceBundle$Control {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_newBundle_8ca50bd8ea3c1503,
+          mid_init$_ff7cb6c242604316,
+          mid_newBundle_9d8ce1b08b92301a,
           max_mid
         };
 

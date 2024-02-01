@@ -4,29 +4,20 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace utils {
-      class FieldPVCoordinates;
-      class PVCoordinates;
-    }
-    namespace time {
-      class TimeShiftable;
-    }
-  }
   namespace hipparchus {
+    namespace analysis {
+      namespace differentiation {
+        class UnivariateDerivative2;
+        class UnivariateDerivative1;
+        class DerivativeStructure;
+      }
+    }
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
-      }
-    }
-    namespace analysis {
-      namespace differentiation {
-        class UnivariateDerivative1;
-        class UnivariateDerivative2;
-        class DerivativeStructure;
       }
     }
     namespace util {
@@ -34,6 +25,15 @@ namespace org {
     }
     namespace exception {
       class MathIllegalArgumentException;
+    }
+  }
+  namespace orekit {
+    namespace time {
+      class TimeShiftable;
+    }
+    namespace utils {
+      class PVCoordinates;
+      class FieldPVCoordinates;
     }
   }
 }
@@ -55,35 +55,35 @@ namespace org {
       class PVCoordinates : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_init$_c9e829dd925c6618,
-          mid_init$_1844f891addbac57,
-          mid_init$_b651b5ef96594ce8,
-          mid_init$_0773768711c29aaf,
-          mid_init$_3e5c7ece8fe50647,
-          mid_init$_861a083234734422,
-          mid_init$_4f2f4e9b469da4d6,
-          mid_init$_3504eb0f25931ec1,
-          mid_init$_be9a0aa1438157c0,
-          mid_blendArithmeticallyWith_13fe4b7b671cdfde,
-          mid_crossProduct_0179475057507e12,
-          mid_estimateVelocity_21c804d1eea56b9e,
-          mid_getAcceleration_8b724f8b4fdad1a2,
-          mid_getAngularVelocity_8b724f8b4fdad1a2,
-          mid_getMomentum_8b724f8b4fdad1a2,
-          mid_getPosition_8b724f8b4fdad1a2,
-          mid_getVelocity_8b724f8b4fdad1a2,
-          mid_negate_180fb117720acb76,
-          mid_normalize_180fb117720acb76,
-          mid_positionShiftedBy_498f52cd8e5a7072,
-          mid_shiftedBy_07c38118aecc9309,
-          mid_toDerivativeStructurePV_2d4908cd9204fb9d,
-          mid_toDerivativeStructureVector_87f39fdae6ed156b,
-          mid_toString_1c1fa1e935d6cdcf,
-          mid_toUnivariateDerivative1PV_3bf1e58d8bf42589,
-          mid_toUnivariateDerivative1Vector_ff5ac73a7b43eddd,
-          mid_toUnivariateDerivative2PV_3bf1e58d8bf42589,
-          mid_toUnivariateDerivative2Vector_ff5ac73a7b43eddd,
+          mid_init$_ff7cb6c242604316,
+          mid_init$_1344cdbf3f0498af,
+          mid_init$_30f8886dfb88a63c,
+          mid_init$_c8e9682f0daaca68,
+          mid_init$_ab901f2964604b53,
+          mid_init$_547a509436999a17,
+          mid_init$_8ba3e710eb629d8c,
+          mid_init$_131430c01af57e0d,
+          mid_init$_c7cd14da3c4e5de3,
+          mid_init$_32d9e21e48d1242a,
+          mid_blendArithmeticallyWith_87ad1491599f0cb1,
+          mid_crossProduct_1f900e1ad2600555,
+          mid_estimateVelocity_ccc9d16c585df973,
+          mid_getAcceleration_032312bdeb3f2f93,
+          mid_getAngularVelocity_032312bdeb3f2f93,
+          mid_getMomentum_032312bdeb3f2f93,
+          mid_getPosition_032312bdeb3f2f93,
+          mid_getVelocity_032312bdeb3f2f93,
+          mid_negate_78e01095d7eced90,
+          mid_normalize_78e01095d7eced90,
+          mid_positionShiftedBy_98a3eeef43dce47a,
+          mid_shiftedBy_bf63196c562daab4,
+          mid_toDerivativeStructurePV_608e82d3b6abf5f8,
+          mid_toDerivativeStructureVector_bd593b3379529ee5,
+          mid_toString_d2c8eb4129821f0e,
+          mid_toUnivariateDerivative1PV_345fc9bafd1687ff,
+          mid_toUnivariateDerivative1Vector_d1b42a6748e907f9,
+          mid_toUnivariateDerivative2PV_345fc9bafd1687ff,
+          mid_toUnivariateDerivative2Vector_d1b42a6748e907f9,
           max_mid
         };
 

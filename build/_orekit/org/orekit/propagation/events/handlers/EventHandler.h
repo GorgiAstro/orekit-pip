@@ -12,14 +12,14 @@ namespace org {
     }
   }
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace propagation {
+      class SpacecraftState;
       namespace events {
         class EventDetector;
       }
-      class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -39,9 +39,9 @@ namespace org {
           class EventHandler : public ::java::lang::Object {
            public:
             enum {
-              mid_eventOccurred_ae9b0131fefe6c67,
-              mid_init_0ac7022abb4b9f0c,
-              mid_resetState_ec159c1171338d74,
+              mid_eventOccurred_66898681536e4202,
+              mid_init_381d97cc333bc994,
+              mid_resetState_556ad75a8c47fba2,
               max_mid
             };
 

@@ -20,19 +20,19 @@ namespace org {
             class SsrHeader : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_getIodSsr_55546ef6a647f39b,
-                mid_getSsrEpoch1s_b74f83833fdad017,
-                mid_getSsrMultipleMessageIndicator_55546ef6a647f39b,
-                mid_getSsrProviderId_55546ef6a647f39b,
-                mid_getSsrSolutionId_55546ef6a647f39b,
-                mid_getSsrUpdateInterval_55546ef6a647f39b,
-                mid_setIodSsr_44ed599e93e8a30c,
-                mid_setSsrEpoch1s_8ba9fe7a847cecad,
-                mid_setSsrMultipleMessageIndicator_44ed599e93e8a30c,
-                mid_setSsrProviderId_44ed599e93e8a30c,
-                mid_setSsrSolutionId_44ed599e93e8a30c,
-                mid_setSsrUpdateInterval_44ed599e93e8a30c,
+                mid_init$_ff7cb6c242604316,
+                mid_getIodSsr_d6ab429752e7c267,
+                mid_getSsrEpoch1s_9981f74b2d109da6,
+                mid_getSsrMultipleMessageIndicator_d6ab429752e7c267,
+                mid_getSsrProviderId_d6ab429752e7c267,
+                mid_getSsrSolutionId_d6ab429752e7c267,
+                mid_getSsrUpdateInterval_d6ab429752e7c267,
+                mid_setIodSsr_8fd427ab23829bf5,
+                mid_setSsrEpoch1s_1ad26e8c8c0cd65b,
+                mid_setSsrMultipleMessageIndicator_8fd427ab23829bf5,
+                mid_setSsrProviderId_8fd427ab23829bf5,
+                mid_setSsrSolutionId_8fd427ab23829bf5,
+                mid_setSsrUpdateInterval_8fd427ab23829bf5,
                 max_mid
               };
 

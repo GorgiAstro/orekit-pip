@@ -3,16 +3,16 @@
 
 #include "org/orekit/data/DelaunayArguments.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,25 +24,25 @@ namespace org {
       class BodiesElements : public ::org::orekit::data::DelaunayArguments {
        public:
         enum {
-          mid_init$_52219a7c17472ec7,
-          mid_getLE_b74f83833fdad017,
-          mid_getLEDot_b74f83833fdad017,
-          mid_getLJu_b74f83833fdad017,
-          mid_getLJuDot_b74f83833fdad017,
-          mid_getLMa_b74f83833fdad017,
-          mid_getLMaDot_b74f83833fdad017,
-          mid_getLMe_b74f83833fdad017,
-          mid_getLMeDot_b74f83833fdad017,
-          mid_getLNe_b74f83833fdad017,
-          mid_getLNeDot_b74f83833fdad017,
-          mid_getLSa_b74f83833fdad017,
-          mid_getLSaDot_b74f83833fdad017,
-          mid_getLUr_b74f83833fdad017,
-          mid_getLUrDot_b74f83833fdad017,
-          mid_getLVe_b74f83833fdad017,
-          mid_getLVeDot_b74f83833fdad017,
-          mid_getPa_b74f83833fdad017,
-          mid_getPaDot_b74f83833fdad017,
+          mid_init$_7476437870c07590,
+          mid_getLE_9981f74b2d109da6,
+          mid_getLEDot_9981f74b2d109da6,
+          mid_getLJu_9981f74b2d109da6,
+          mid_getLJuDot_9981f74b2d109da6,
+          mid_getLMa_9981f74b2d109da6,
+          mid_getLMaDot_9981f74b2d109da6,
+          mid_getLMe_9981f74b2d109da6,
+          mid_getLMeDot_9981f74b2d109da6,
+          mid_getLNe_9981f74b2d109da6,
+          mid_getLNeDot_9981f74b2d109da6,
+          mid_getLSa_9981f74b2d109da6,
+          mid_getLSaDot_9981f74b2d109da6,
+          mid_getLUr_9981f74b2d109da6,
+          mid_getLUrDot_9981f74b2d109da6,
+          mid_getLVe_9981f74b2d109da6,
+          mid_getLVeDot_9981f74b2d109da6,
+          mid_getPa_9981f74b2d109da6,
+          mid_getPaDot_9981f74b2d109da6,
           max_mid
         };
 

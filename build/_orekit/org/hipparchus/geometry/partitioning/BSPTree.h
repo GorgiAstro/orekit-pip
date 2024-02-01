@@ -3,27 +3,27 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace partitioning {
-        class BSPTreeVisitor;
-        class BSPTree;
-        class SubHyperplane;
-        class BSPTree$LeafMerger;
-        class Hyperplane;
-        class BSPTree$VanishingCutHandler;
-      }
-      class Point;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace partitioning {
+        class Hyperplane;
+        class BSPTree;
+        class BSPTreeVisitor;
+        class SubHyperplane;
+        class BSPTree$LeafMerger;
+        class BSPTree$VanishingCutHandler;
+      }
+      class Point;
+    }
   }
 }
 template<class T> class JArray;
@@ -36,24 +36,24 @@ namespace org {
         class BSPTree : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_init$_55f3c894852c27a3,
-            mid_init$_935c58c45f94c5fa,
-            mid_copySelf_f839a360566776b0,
-            mid_getAttribute_541690f9ee81d3ad,
-            mid_getCell_2cf328ec4679b7e5,
-            mid_getCloseCuts_d02a7a3faed5cf00,
-            mid_getCut_0417f9f9ce6ee466,
-            mid_getMinus_f839a360566776b0,
-            mid_getParent_f839a360566776b0,
-            mid_getPlus_f839a360566776b0,
-            mid_insertCut_806ecfbca1984226,
-            mid_insertInTree_9946f3d4e49f1069,
-            mid_merge_e39f58f6e5885e63,
-            mid_pruneAroundConvexCell_c149c90734e740da,
-            mid_setAttribute_55f3c894852c27a3,
-            mid_split_056ecd249b79ab3d,
-            mid_visit_ad25ba9d976eb6ad,
+            mid_init$_ff7cb6c242604316,
+            mid_init$_83ee235bb1e64e94,
+            mid_init$_2376fb9458a8cab3,
+            mid_copySelf_c3378f4554ff6b45,
+            mid_getAttribute_704a5bee58538972,
+            mid_getCell_8dd9c197139bedc4,
+            mid_getCloseCuts_61904aad38223443,
+            mid_getCut_24c5633e830ec593,
+            mid_getMinus_c3378f4554ff6b45,
+            mid_getParent_c3378f4554ff6b45,
+            mid_getPlus_c3378f4554ff6b45,
+            mid_insertCut_51737f919fe0cf72,
+            mid_insertInTree_254fe1807762a1b9,
+            mid_merge_c0fb7b9ce803d4f3,
+            mid_pruneAroundConvexCell_5609764ef0441416,
+            mid_setAttribute_83ee235bb1e64e94,
+            mid_split_ef9a8149f8c25d8e,
+            mid_visit_3be3464833921e33,
             max_mid
           };
 

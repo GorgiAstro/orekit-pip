@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
@@ -42,18 +42,18 @@ namespace org {
           class ThrustPropulsionModel : public ::org::orekit::forces::maneuvers::propulsion::PropulsionModel {
            public:
             enum {
-              mid_getAcceleration_e58d235f532e1fec,
-              mid_getAcceleration_fa24c1d0852b99d1,
-              mid_getDirection_9019a5b32b11453a,
-              mid_getFlowRate_a17ea857ce74d258,
-              mid_getFlowRate_8e86371c61460f23,
-              mid_getFlowRate_f867476668f8eb00,
-              mid_getIsp_a17ea857ce74d258,
-              mid_getMassDerivatives_8e86371c61460f23,
-              mid_getMassDerivatives_f867476668f8eb00,
-              mid_getThrustVector_9019a5b32b11453a,
-              mid_getThrustVector_0ce449c67b5ffd9c,
-              mid_getThrustVector_20bded0292328743,
+              mid_getAcceleration_95da8f0fa460fb9b,
+              mid_getAcceleration_04b081b8909cb072,
+              mid_getDirection_38283c57554889c0,
+              mid_getFlowRate_b443ba1cc794b916,
+              mid_getFlowRate_4222abdadde032f5,
+              mid_getFlowRate_6c8e6cd5d59063ae,
+              mid_getIsp_b443ba1cc794b916,
+              mid_getMassDerivatives_6c8e6cd5d59063ae,
+              mid_getMassDerivatives_4222abdadde032f5,
+              mid_getThrustVector_38283c57554889c0,
+              mid_getThrustVector_9816b8f76e94356a,
+              mid_getThrustVector_5e147f44c28a35c9,
               max_mid
             };
 
@@ -68,15 +68,15 @@ namespace org {
             }
             ThrustPropulsionModel(const ThrustPropulsionModel& obj) : ::org::orekit::forces::maneuvers::propulsion::PropulsionModel(obj) {}
 
-            ::org::hipparchus::geometry::euclidean::threed::FieldVector3D getAcceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::attitudes::FieldAttitude &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
             ::org::hipparchus::geometry::euclidean::threed::Vector3D getAcceleration(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::attitudes::Attitude &, const JArray< jdouble > &) const;
+            ::org::hipparchus::geometry::euclidean::threed::FieldVector3D getAcceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::attitudes::FieldAttitude &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
             ::org::hipparchus::geometry::euclidean::threed::Vector3D getDirection(const ::org::orekit::propagation::SpacecraftState &) const;
             jdouble getFlowRate(const ::org::orekit::propagation::SpacecraftState &) const;
             jdouble getFlowRate(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
             ::org::hipparchus::CalculusFieldElement getFlowRate(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
             jdouble getIsp(const ::org::orekit::propagation::SpacecraftState &) const;
-            jdouble getMassDerivatives(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
             ::org::hipparchus::CalculusFieldElement getMassDerivatives(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
+            jdouble getMassDerivatives(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
             ::org::hipparchus::geometry::euclidean::threed::Vector3D getThrustVector(const ::org::orekit::propagation::SpacecraftState &) const;
             ::org::hipparchus::geometry::euclidean::threed::FieldVector3D getThrustVector(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
             ::org::hipparchus::geometry::euclidean::threed::Vector3D getThrustVector(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;

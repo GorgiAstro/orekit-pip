@@ -5,15 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Frames;
-    }
-    namespace utils {
-      class IERSConventions;
-    }
-    namespace data {
-      class DataSource;
-    }
     namespace files {
       namespace general {
         class EphemerisFileParser;
@@ -21,6 +12,15 @@ namespace org {
       namespace ilrs {
         class CPF;
       }
+    }
+    namespace utils {
+      class IERSConventions;
+    }
+    namespace frames {
+      class Frames;
+    }
+    namespace data {
+      class DataSource;
     }
     namespace time {
       class TimeScale;
@@ -42,9 +42,9 @@ namespace org {
         class CPFParser : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_init$_97dd586bbeb15f85,
-            mid_parse_fe547806e2e2f4f0,
+            mid_init$_ff7cb6c242604316,
+            mid_init$_bcab07fbf8b8473d,
+            mid_parse_185cd140231d0a14,
             max_mid
           };
 

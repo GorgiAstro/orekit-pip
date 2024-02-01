@@ -5,11 +5,11 @@
 
 namespace java {
   namespace util {
-    class List;
-    class Collection;
     namespace stream {
       class Stream;
     }
+    class List;
+    class Collection;
   }
   namespace lang {
     class Class;
@@ -19,8 +19,8 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace time {
-      class FieldAbsoluteDate;
       class FieldTimeStamped;
+      class FieldAbsoluteDate;
     }
     namespace utils {
       class ImmutableFieldTimeStampedCache;
@@ -41,14 +41,14 @@ namespace org {
       class ImmutableFieldTimeStampedCache : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_36a24b5e65508672,
-          mid_emptyCache_14972a5b95f969fe,
-          mid_getAll_e62d3bb06d56d7e3,
-          mid_getEarliest_e7a49be0190c3b40,
-          mid_getLatest_e7a49be0190c3b40,
-          mid_getNeighbors_fe526c9a9cb8189c,
-          mid_getNeighborsSize_55546ef6a647f39b,
-          mid_toString_1c1fa1e935d6cdcf,
+          mid_init$_1d943e35e7f31ea1,
+          mid_emptyCache_bd8b621701a2c22c,
+          mid_getAll_d751c1a57012b438,
+          mid_getEarliest_eb7a4124bb25f40f,
+          mid_getLatest_eb7a4124bb25f40f,
+          mid_getNeighbors_9de8811782a2be8a,
+          mid_getNeighborsSize_d6ab429752e7c267,
+          mid_toString_d2c8eb4129821f0e,
           max_mid
         };
 

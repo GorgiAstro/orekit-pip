@@ -5,9 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace propagation {
-      class SpacecraftState;
-    }
     namespace estimation {
       namespace measurements {
         class ObservedMeasurement;
@@ -15,6 +12,9 @@ namespace org {
           class MeasurementFilter;
         }
       }
+    }
+    namespace propagation {
+      class SpacecraftState;
     }
   }
 }
@@ -34,8 +34,8 @@ namespace org {
           class ResidualFilter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_8ba9fe7a847cecad,
-              mid_filter_5714f5cbb8239657,
+              mid_init$_1ad26e8c8c0cd65b,
+              mid_filter_2b2e233a7bb98272,
               max_mid
             };
 

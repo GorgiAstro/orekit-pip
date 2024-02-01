@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace optim {
-      class MaxIter;
       class OptimizationData;
+      class MaxIter;
     }
   }
 }
@@ -25,9 +25,9 @@ namespace org {
       class MaxIter : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_44ed599e93e8a30c,
-          mid_getMaxIter_55546ef6a647f39b,
-          mid_unlimited_68e420291d6ad5b1,
+          mid_init$_8fd427ab23829bf5,
+          mid_getMaxIter_d6ab429752e7c267,
+          mid_unlimited_2e9af20eca3f586d,
           max_mid
         };
 

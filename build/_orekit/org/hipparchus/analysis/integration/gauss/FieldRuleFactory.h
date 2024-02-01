@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
     namespace util {
       class Pair;
     }
     class FieldElement;
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
   }
 }
 namespace java {
@@ -30,7 +30,7 @@ namespace org {
           class FieldRuleFactory : public ::java::lang::Object {
            public:
             enum {
-              mid_getRule_acde278e36767299,
+              mid_getRule_c07c8b9364272960,
               max_mid
             };
 

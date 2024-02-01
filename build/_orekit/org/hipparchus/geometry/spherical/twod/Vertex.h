@@ -31,9 +31,9 @@ namespace org {
           class Vertex : public ::java::lang::Object {
            public:
             enum {
-              mid_getIncoming_e042a987ddce5121,
-              mid_getLocation_cf0fa877996d1fcc,
-              mid_getOutgoing_e042a987ddce5121,
+              mid_getIncoming_ad6e5fa6096b3414,
+              mid_getLocation_e080ae8a5cf76560,
+              mid_getOutgoing_ad6e5fa6096b3414,
               max_mid
             };
 

@@ -3,49 +3,49 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+    class Collection;
+  }
+  namespace io {
+    class Serializable;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace utils {
-      class FieldPVCoordinates;
       class AngularCoordinates;
+      class PVCoordinates;
+      class CartesianDerivativesFilter;
       class TimeStampedPVCoordinates;
       class AngularDerivativesFilter;
-      class PVCoordinates;
+      class FieldPVCoordinates;
       class TimeStampedFieldPVCoordinates;
-      class CartesianDerivativesFilter;
+    }
+    namespace time {
+      class TimeShiftable;
+      class AbsoluteDate;
     }
     namespace frames {
       class Transform;
       class StaticTransform;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class TimeShiftable;
     }
   }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class Rotation;
+          class Vector3D;
         }
       }
     }
-  }
-}
-namespace java {
-  namespace io {
-    class Serializable;
-  }
-  namespace util {
-    class Collection;
-    namespace stream {
-      class Stream;
-    }
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -57,37 +57,37 @@ namespace org {
       class Transform : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_4973b210c379a6b1,
-          mid_init$_f276cbdae45300cc,
-          mid_init$_e8077287e11d5f05,
-          mid_init$_a6070c42868c5d8c,
-          mid_init$_f1da648c2878262f,
-          mid_init$_851a055d87a1592a,
-          mid_init$_aa897b2f8732b983,
-          mid_init$_ed88fa386c1304b1,
-          mid_init$_a592ae8491041610,
-          mid_init$_e4bf4a0667705a20,
-          mid_freeze_417755e67b7f769d,
-          mid_getAcceleration_8b724f8b4fdad1a2,
-          mid_getAngular_df90fc3151533d81,
-          mid_getCartesian_180fb117720acb76,
-          mid_getDate_c325492395d89b24,
-          mid_getInverse_417755e67b7f769d,
-          mid_getJacobian_6bd398a80aa9b7ce,
-          mid_getRotation_ff298a39b3cae5da,
-          mid_getRotationAcceleration_8b724f8b4fdad1a2,
-          mid_getRotationRate_8b724f8b4fdad1a2,
-          mid_getTranslation_8b724f8b4fdad1a2,
-          mid_getVelocity_8b724f8b4fdad1a2,
-          mid_interpolate_7df603372442182f,
-          mid_interpolate_156dfc208f41012a,
-          mid_shiftedBy_eb3d7c6c384b4dcd,
-          mid_staticShiftedBy_c1bc66353a3f996e,
-          mid_toStaticTransform_00930874428900c5,
-          mid_transformPVCoordinates_176da7a9c87c96a5,
-          mid_transformPVCoordinates_b59fe39c52b8d345,
-          mid_transformPVCoordinates_448b59d288b2a2ff,
-          mid_transformPVCoordinates_78bd106652cc7d0f,
+          mid_init$_53b511dfac966d9d,
+          mid_init$_6cd7edb8044c4c4f,
+          mid_init$_cf5f08326bbab2f8,
+          mid_init$_31e6f8c616daea23,
+          mid_init$_c3bbf60ac4acdc0a,
+          mid_init$_9204f9dff7aae59d,
+          mid_init$_7b623ae2fc3786b5,
+          mid_init$_a2b364081bb4b263,
+          mid_init$_9086b91a3588262e,
+          mid_init$_04ca53ad0bba71dc,
+          mid_freeze_da06dd761109637f,
+          mid_getAcceleration_032312bdeb3f2f93,
+          mid_getAngular_76b9e5ce5fa05103,
+          mid_getCartesian_78e01095d7eced90,
+          mid_getDate_80e11148db499dda,
+          mid_getInverse_da06dd761109637f,
+          mid_getJacobian_fbedb6ce2f15e3cc,
+          mid_getRotation_4d68cff5f6e4403a,
+          mid_getRotationAcceleration_032312bdeb3f2f93,
+          mid_getRotationRate_032312bdeb3f2f93,
+          mid_getTranslation_032312bdeb3f2f93,
+          mid_getVelocity_032312bdeb3f2f93,
+          mid_interpolate_b7c3f2b896f21900,
+          mid_interpolate_3be1861a6dc0cf44,
+          mid_shiftedBy_7fd6858dd2efbc88,
+          mid_staticShiftedBy_214367d2bf1a05d4,
+          mid_toStaticTransform_4707295cf0323d2d,
+          mid_transformPVCoordinates_42f03a1654758e56,
+          mid_transformPVCoordinates_d354398d2df6ac32,
+          mid_transformPVCoordinates_1bd1ef8a7bbb7399,
+          mid_transformPVCoordinates_923313623a7fdc2f,
           max_mid
         };
 

@@ -3,32 +3,24 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace models {
       namespace earth {
         namespace troposphere {
-          class MendesPavlisModel;
           class DiscreteTroposphericModel;
+          class MendesPavlisModel;
           class MappingFunction;
         }
       }
     }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
     namespace bodies {
       class FieldGeodeticPoint;
       class GeodeticPoint;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
     }
     namespace utils {
       class ParameterDriver;
@@ -36,6 +28,14 @@ namespace org {
   }
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -49,15 +49,15 @@ namespace org {
           class MendesPavlisModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_49f4b5153d696ea5,
-              mid_computeZenithDelay_90983db312f6218b,
-              mid_computeZenithDelay_0b467d379fb3f504,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_getStandardModel_ec7740424c9ae069,
-              mid_mappingFactors_6e118a7a5998051c,
-              mid_mappingFactors_6dcded9cb7dee3c2,
-              mid_pathDelay_2edbfa177156ee09,
-              mid_pathDelay_6f66c6b7094d6f08,
+              mid_init$_cd5724127cc72e96,
+              mid_computeZenithDelay_cf38abfd6de73cb1,
+              mid_computeZenithDelay_2a8a1978d107f938,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_getStandardModel_d372e21d3f28e181,
+              mid_mappingFactors_7d2717f150c68a9f,
+              mid_mappingFactors_090b631fda469acd,
+              mid_pathDelay_3e863f8cc7cde633,
+              mid_pathDelay_a07808bbc1ebff8d,
               max_mid
             };
 
@@ -74,14 +74,14 @@ namespace org {
 
             MendesPavlisModel(jdouble, jdouble, jdouble, jdouble);
 
-            JArray< ::org::hipparchus::CalculusFieldElement > computeZenithDelay(const ::org::orekit::bodies::FieldGeodeticPoint &, const JArray< ::org::hipparchus::CalculusFieldElement > &, const ::org::orekit::time::FieldAbsoluteDate &) const;
             JArray< jdouble > computeZenithDelay(const ::org::orekit::bodies::GeodeticPoint &, const JArray< jdouble > &, const ::org::orekit::time::AbsoluteDate &) const;
+            JArray< ::org::hipparchus::CalculusFieldElement > computeZenithDelay(const ::org::orekit::bodies::FieldGeodeticPoint &, const JArray< ::org::hipparchus::CalculusFieldElement > &, const ::org::orekit::time::FieldAbsoluteDate &) const;
             ::java::util::List getParametersDrivers() const;
             static MendesPavlisModel getStandardModel(jdouble);
-            JArray< ::org::hipparchus::CalculusFieldElement > mappingFactors(const ::org::hipparchus::CalculusFieldElement &, const ::org::orekit::bodies::FieldGeodeticPoint &, const ::org::orekit::time::FieldAbsoluteDate &) const;
             JArray< jdouble > mappingFactors(jdouble, const ::org::orekit::bodies::GeodeticPoint &, const ::org::orekit::time::AbsoluteDate &) const;
-            jdouble pathDelay(jdouble, const ::org::orekit::bodies::GeodeticPoint &, const JArray< jdouble > &, const ::org::orekit::time::AbsoluteDate &) const;
+            JArray< ::org::hipparchus::CalculusFieldElement > mappingFactors(const ::org::hipparchus::CalculusFieldElement &, const ::org::orekit::bodies::FieldGeodeticPoint &, const ::org::orekit::time::FieldAbsoluteDate &) const;
             ::org::hipparchus::CalculusFieldElement pathDelay(const ::org::hipparchus::CalculusFieldElement &, const ::org::orekit::bodies::FieldGeodeticPoint &, const JArray< ::org::hipparchus::CalculusFieldElement > &, const ::org::orekit::time::FieldAbsoluteDate &) const;
+            jdouble pathDelay(jdouble, const ::org::orekit::bodies::GeodeticPoint &, const JArray< jdouble > &, const ::org::orekit::time::AbsoluteDate &) const;
           };
         }
       }

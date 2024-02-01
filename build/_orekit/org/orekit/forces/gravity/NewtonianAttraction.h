@@ -5,6 +5,13 @@
 
 namespace org {
   namespace orekit {
+    namespace utils {
+      class ParameterDriver;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
     namespace propagation {
       namespace numerical {
         class FieldTimeDerivativesEquations;
@@ -16,20 +23,13 @@ namespace org {
     namespace forces {
       class ForceModel;
     }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
   }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
@@ -56,15 +56,15 @@ namespace org {
         class NewtonianAttraction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_8ba9fe7a847cecad,
-            mid_acceleration_0ce449c67b5ffd9c,
-            mid_acceleration_20bded0292328743,
-            mid_addContribution_6aa2b69cacacea60,
-            mid_addContribution_ab5e59960ebc27c2,
-            mid_dependsOnPositionOnly_9ab94ac1dc23b105,
-            mid_getMu_fd347811007a6ba3,
-            mid_getMu_e85ef2b890908344,
-            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_init$_1ad26e8c8c0cd65b,
+            mid_acceleration_9816b8f76e94356a,
+            mid_acceleration_5e147f44c28a35c9,
+            mid_addContribution_05bb906f491bab6b,
+            mid_addContribution_2fcaaed225365615,
+            mid_dependsOnPositionOnly_eee3de00fe971136,
+            mid_getMu_209f08246d708042,
+            mid_getMu_a50c21714c368030,
+            mid_getParametersDrivers_d751c1a57012b438,
             max_mid
           };
 

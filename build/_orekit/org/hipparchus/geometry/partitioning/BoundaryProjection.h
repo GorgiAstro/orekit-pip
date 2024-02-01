@@ -25,10 +25,10 @@ namespace org {
         class BoundaryProjection : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_3a73218d4da33cbb,
-            mid_getOffset_b74f83833fdad017,
-            mid_getOriginal_4b90e5ca2d7b0c50,
-            mid_getProjected_4b90e5ca2d7b0c50,
+            mid_init$_b1f3dfec7c533479,
+            mid_getOffset_9981f74b2d109da6,
+            mid_getOriginal_e843ca29d3ae6a7a,
+            mid_getProjected_e843ca29d3ae6a7a,
             max_mid
           };
 

@@ -34,8 +34,8 @@ namespace org {
             class CartesianCovarianceWriter : public ::org::orekit::files::ccsds::section::AbstractWriter {
              public:
               enum {
-                mid_init$_e57e840c8403458a,
-                mid_writeContent_fb222e851cd27682,
+                mid_init$_db5fbd02eabc380d,
+                mid_writeContent_05c6d36d73082fa6,
                 max_mid
               };
 

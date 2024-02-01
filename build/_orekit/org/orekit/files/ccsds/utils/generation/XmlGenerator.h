@@ -44,16 +44,16 @@ namespace org {
             class XmlGenerator : public ::org::orekit::files::ccsds::utils::generation::AbstractGenerator {
              public:
               enum {
-                mid_init$_455a739b3cdb51af,
-                mid_endMessage_734b91ac30d5f9b4,
-                mid_enterSection_734b91ac30d5f9b4,
-                mid_exitSection_1c1fa1e935d6cdcf,
-                mid_getFormat_e4c64bde02ca34c3,
-                mid_startMessage_03ff9b80a9f63d81,
-                mid_writeComments_0e7c3032c7c93ed3,
-                mid_writeEntry_bae21004607fffc6,
-                mid_writeOneAttributeElement_09d55289065fbca9,
-                mid_writeTwoAttributesElement_e39b9463875d2aea,
+                mid_init$_1267b62deec50ea6,
+                mid_endMessage_105e1eadb709d9ac,
+                mid_enterSection_105e1eadb709d9ac,
+                mid_exitSection_d2c8eb4129821f0e,
+                mid_getFormat_49975b0867f6c97c,
+                mid_startMessage_04f72a78f21743a7,
+                mid_writeComments_aa335fea495d60e0,
+                mid_writeEntry_dbec4ebd43084884,
+                mid_writeOneAttributeElement_e0fb351f45d43efa,
+                mid_writeTwoAttributesElement_799a817065a795a1,
                 max_mid
               };
 

@@ -3,17 +3,17 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace frames {
       class Predefined;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,9 +25,9 @@ namespace org {
       class Predefined : public ::java::lang::Enum {
        public:
         enum {
-          mid_getName_1c1fa1e935d6cdcf,
-          mid_valueOf_a3603354cd0de070,
-          mid_values_1349eee6ecb9cac6,
+          mid_getName_d2c8eb4129821f0e,
+          mid_valueOf_e7c3c74dec0eb757,
+          mid_values_a207da75fed6aed4,
           max_mid
         };
 

@@ -45,10 +45,10 @@ namespace org {
               class StreamingOcmWriter$BlockWriter : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_49e1f27a144ceeb4,
-                  mid_finish_280c3390961e0a50,
-                  mid_handleStep_280c3390961e0a50,
-                  mid_init_3189c7446dbbb87e,
+                  mid_init$_f0e7d3990163ed47,
+                  mid_finish_72b846eb87f3af9a,
+                  mid_handleStep_72b846eb87f3af9a,
+                  mid_init_c410ce24bfc8448e,
                   max_mid
                 };
 

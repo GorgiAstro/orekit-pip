@@ -3,26 +3,26 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace time {
-      class TimeStamped;
-      class AbsoluteDate;
-      class TimeInterpolator;
-    }
-  }
-}
 namespace java {
   namespace util {
-    class List;
-    class Collection;
     namespace stream {
       class Stream;
     }
+    class List;
+    class Collection;
   }
   namespace lang {
     class Throwable;
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class TimeStamped;
+      class TimeInterpolator;
+      class AbsoluteDate;
+    }
   }
 }
 template<class T> class JArray;
@@ -34,16 +34,16 @@ namespace org {
       class PythonTimeInterpolator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_getExtrapolationThreshold_b74f83833fdad017,
-          mid_getNbInterpolationPoints_55546ef6a647f39b,
-          mid_getSubInterpolators_e62d3bb06d56d7e3,
-          mid_interpolate_591e6bc1a9dee1c4,
-          mid_interpolate_ca198e91e67fee01,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_init$_ff7cb6c242604316,
+          mid_finalize_ff7cb6c242604316,
+          mid_getExtrapolationThreshold_9981f74b2d109da6,
+          mid_getNbInterpolationPoints_d6ab429752e7c267,
+          mid_getSubInterpolators_d751c1a57012b438,
+          mid_interpolate_1ab634d5d296a86b,
+          mid_interpolate_83796f1a07da3138,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
           max_mid
         };
 

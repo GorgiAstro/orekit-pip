@@ -38,7 +38,7 @@ namespace org {
             class XmlTokenBuilder : public ::java::lang::Object {
              public:
               enum {
-                mid_buildTokens_2c588550a962bd9d,
+                mid_buildTokens_bb6f0a25fbefd346,
                 max_mid
               };
 

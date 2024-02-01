@@ -5,9 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataSource;
-    }
     namespace files {
       namespace ccsds {
         namespace utils {
@@ -17,6 +14,9 @@ namespace org {
           }
         }
       }
+    }
+    namespace data {
+      class DataSource;
     }
   }
 }
@@ -37,8 +37,8 @@ namespace org {
             class KvnLexicalAnalyzer : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_4345325324782fee,
-                mid_accept_315581e8824888b8,
+                mid_init$_023df3a7dca17c03,
+                mid_accept_b478c9bff3268dbb,
                 max_mid
               };
 

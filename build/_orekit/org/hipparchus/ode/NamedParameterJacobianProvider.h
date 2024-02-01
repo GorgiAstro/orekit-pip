@@ -3,18 +3,18 @@
 
 #include "org/hipparchus/ode/Parameterizable.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
+    }
+  }
+}
 namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
-    }
   }
 }
 template<class T> class JArray;
@@ -26,7 +26,7 @@ namespace org {
       class NamedParameterJacobianProvider : public ::org::hipparchus::ode::Parameterizable {
        public:
         enum {
-          mid_computeParameterJacobian_c668528785bd21ab,
+          mid_computeParameterJacobian_b64c18f49b11902d,
           max_mid
         };
 

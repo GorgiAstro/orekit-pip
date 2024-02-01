@@ -9,8 +9,8 @@ namespace org {
       class MathIllegalArgumentException;
     }
     namespace linear {
-      class RealMatrix;
       class DecompositionSolver;
+      class RealMatrix;
     }
   }
 }
@@ -28,7 +28,7 @@ namespace org {
       class MatrixDecomposer : public ::java::lang::Object {
        public:
         enum {
-          mid_decompose_8def7320d620ddc9,
+          mid_decompose_b099faee6eb73725,
           max_mid
         };
 

@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class IERSConventions;
-    }
     namespace data {
       class DataContext;
+    }
+    namespace utils {
+      class IERSConventions;
     }
     namespace time {
       class AbsoluteDate;
@@ -42,12 +42,12 @@ namespace org {
           class PythonAbstractBuilder : public ::org::orekit::files::ccsds::ndm::AbstractBuilder {
            public:
             enum {
-              mid_init$_d9f8a46c51e6c39c,
-              mid_create_c9fe7425468bb64c,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_init$_46bd2dc5f5ed7d55,
+              mid_create_8db1476e15353061,
+              mid_finalize_ff7cb6c242604316,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
               max_mid
             };
 

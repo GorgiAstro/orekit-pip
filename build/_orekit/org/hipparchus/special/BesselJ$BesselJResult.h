@@ -17,9 +17,9 @@ namespace org {
       class BesselJ$BesselJResult : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_d15a39e204aa8e61,
-          mid_getVals_25e1757a36c4dde2,
-          mid_getnVals_55546ef6a647f39b,
+          mid_init$_53d8e8743d02f903,
+          mid_getVals_be783177b060994b,
+          mid_getnVals_d6ab429752e7c267,
           max_mid
         };
 

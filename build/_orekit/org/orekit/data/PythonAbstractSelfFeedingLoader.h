@@ -3,17 +3,17 @@
 
 #include "org/orekit/data/AbstractSelfFeedingLoader.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace data {
       class DataProvidersManager;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,7 +25,7 @@ namespace org {
       class PythonAbstractSelfFeedingLoader : public ::org::orekit::data::AbstractSelfFeedingLoader {
        public:
         enum {
-          mid_init$_0343d25c5af74eca,
+          mid_init$_4c16e57d19ddaa09,
           max_mid
         };
 

@@ -16,24 +16,24 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace time {
-      class FieldAbsoluteDate;
-      class FieldTimeInterpolator;
       class FieldTimeStamped;
       class TimeStampedField;
+      class FieldTimeInterpolator;
+      class FieldAbsoluteDate;
     }
-    namespace attitudes {
-      class FieldAttitude;
+    namespace utils {
+      class CartesianDerivativesFilter;
+      class FieldAbsolutePVCoordinates;
+      class AngularDerivativesFilter;
     }
     namespace orbits {
       class FieldOrbit;
     }
+    namespace attitudes {
+      class FieldAttitude;
+    }
     namespace frames {
       class Frame;
-    }
-    namespace utils {
-      class FieldAbsolutePVCoordinates;
-      class AngularDerivativesFilter;
-      class CartesianDerivativesFilter;
     }
     namespace propagation {
       class FieldSpacecraftState;
@@ -49,22 +49,21 @@ namespace org {
       class FieldSpacecraftStateInterpolator : public ::org::orekit::time::AbstractFieldTimeInterpolator {
        public:
         enum {
-          mid_init$_237ae1c2ddd68062,
-          mid_init$_92e0516c51076c2f,
-          mid_init$_9fa6786ed88e4116,
-          mid_init$_9188826e4203adb2,
-          mid_init$_4e698ca934323ab9,
-          mid_init$_f14b078adca14f3b,
-          mid_getAbsPVAInterpolator_9fe5189c8c3b230d,
-          mid_getAdditionalStateInterpolator_9fe5189c8c3b230d,
-          mid_getAttitudeInterpolator_9fe5189c8c3b230d,
-          mid_getMassInterpolator_9fe5189c8c3b230d,
-          mid_getNbInterpolationPoints_55546ef6a647f39b,
-          mid_getOrbitInterpolator_9fe5189c8c3b230d,
-          mid_getOutputFrame_2c51111cc6894ba1,
-          mid_getSubInterpolators_e62d3bb06d56d7e3,
-          mid_interpolate_c544f35060fb7c93,
-          mid_interpolate_00b61fcbde9783bc,
+          mid_init$_9725b246c9e25f68,
+          mid_init$_b744963488fb11c5,
+          mid_init$_b764253cc264c047,
+          mid_init$_1567a5431e11bb91,
+          mid_init$_0aad11dd3e2442fe,
+          mid_init$_8d82f8ecd070a43b,
+          mid_getAbsPVAInterpolator_aa56605e3771f379,
+          mid_getAdditionalStateInterpolator_aa56605e3771f379,
+          mid_getAttitudeInterpolator_aa56605e3771f379,
+          mid_getMassInterpolator_aa56605e3771f379,
+          mid_getOrbitInterpolator_aa56605e3771f379,
+          mid_getOutputFrame_cb151471db4570f0,
+          mid_getSubInterpolators_d751c1a57012b438,
+          mid_interpolate_e5fc869b7e9ee70d,
+          mid_interpolate_675ec4e0c4a0d4a9,
           max_mid
         };
 
@@ -90,7 +89,6 @@ namespace org {
         ::java::util::Optional getAdditionalStateInterpolator() const;
         ::java::util::Optional getAttitudeInterpolator() const;
         ::java::util::Optional getMassInterpolator() const;
-        jint getNbInterpolationPoints() const;
         ::java::util::Optional getOrbitInterpolator() const;
         ::org::orekit::frames::Frame getOutputFrame() const;
         ::java::util::List getSubInterpolators() const;

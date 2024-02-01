@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace linear {
       class RealMatrix;
       class RealVector;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,15 +26,15 @@ namespace org {
         class ProcessEstimate : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_1cf8bccd56b2fdef,
-            mid_init$_723d077417afab19,
-            mid_getCovariance_f77d745f2128c391,
-            mid_getInnovationCovariance_f77d745f2128c391,
-            mid_getKalmanGain_f77d745f2128c391,
-            mid_getMeasurementJacobian_f77d745f2128c391,
-            mid_getState_3a10cc75bd070d84,
-            mid_getStateTransitionMatrix_f77d745f2128c391,
-            mid_getTime_b74f83833fdad017,
+            mid_init$_66ea8b17e57de689,
+            mid_init$_18624603e9d5cc1c,
+            mid_getCovariance_b2eebabce70526d8,
+            mid_getInnovationCovariance_b2eebabce70526d8,
+            mid_getKalmanGain_b2eebabce70526d8,
+            mid_getMeasurementJacobian_b2eebabce70526d8,
+            mid_getState_92d7e8d8d3f1dfcf,
+            mid_getStateTransitionMatrix_b2eebabce70526d8,
+            mid_getTime_9981f74b2d109da6,
             max_mid
           };
 

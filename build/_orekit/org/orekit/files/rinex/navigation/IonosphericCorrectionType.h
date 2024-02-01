@@ -31,8 +31,8 @@ namespace org {
           class IonosphericCorrectionType : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_7bd07224476383b6,
-              mid_values_2bf5d6902d31e785,
+              mid_valueOf_52e2989b5b291c27,
+              mid_values_68c9b59c91d6ea63,
               max_mid
             };
 

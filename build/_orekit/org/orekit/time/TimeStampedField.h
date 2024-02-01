@@ -6,9 +6,9 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
       class FieldTimeStamped;
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -29,10 +29,10 @@ namespace org {
       class TimeStampedField : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_7f1905037abc4455,
-          mid_init$_bd45115a05f012cf,
-          mid_getDate_fa23a4301b9c83e7,
-          mid_getValue_81520b552cb3fa26,
+          mid_init$_fbe996b6216f8920,
+          mid_init$_077232d878739e12,
+          mid_getDate_1fea28374011eef5,
+          mid_getValue_08d37e3f77b7239d,
           max_mid
         };
 

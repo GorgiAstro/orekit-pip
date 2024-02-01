@@ -4,19 +4,19 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace text {
-    class FieldPosition;
-    class ParsePosition;
-    class NumberFormat;
-  }
   namespace util {
     class Locale;
   }
   namespace lang {
-    class Number;
     class StringBuffer;
+    class Number;
     class Class;
     class String;
+  }
+  namespace text {
+    class FieldPosition;
+    class NumberFormat;
+    class ParsePosition;
   }
 }
 template<class T> class JArray;
@@ -28,13 +28,13 @@ namespace org {
       class CompositeFormat : public ::java::lang::Object {
        public:
         enum {
-          mid_formatDouble_dbb787bb65ee7daa,
-          mid_getDefaultNumberFormat_87ffffc449cd25a5,
-          mid_getDefaultNumberFormat_3c858cd11341b00a,
-          mid_parseAndIgnoreWhitespace_1df84bc342ab1345,
-          mid_parseFixedstring_07decc762bc95813,
-          mid_parseNextCharacter_ab936c5146b74d5a,
-          mid_parseNumber_15d59e9ef502093d,
+          mid_formatDouble_9af170d7b13de246,
+          mid_getDefaultNumberFormat_525709eb5c5b5ea6,
+          mid_getDefaultNumberFormat_5ed382d8d7b942c5,
+          mid_parseAndIgnoreWhitespace_63c49683e3fd0aef,
+          mid_parseFixedstring_cb5d9035704f8693,
+          mid_parseNextCharacter_5ce3a6c37aaf3132,
+          mid_parseNumber_61147cd9424632d0,
           max_mid
         };
 

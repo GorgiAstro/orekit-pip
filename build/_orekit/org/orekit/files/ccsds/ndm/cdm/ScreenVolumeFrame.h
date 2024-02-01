@@ -34,8 +34,8 @@ namespace org {
             class ScreenVolumeFrame : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_7d896a2da0aba315,
-                mid_values_7eec49015dd6c39a,
+                mid_valueOf_2f39602c4f995519,
+                mid_values_843d6c3c2e12cc08,
                 max_mid
               };
 

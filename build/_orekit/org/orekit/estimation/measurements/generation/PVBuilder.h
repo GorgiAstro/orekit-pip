@@ -12,17 +12,17 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class PV;
         class ObservableSatellite;
+        class PV;
       }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace propagation {
       namespace sampling {
         class OrekitStepInterpolator;
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -45,8 +45,8 @@ namespace org {
           class PVBuilder : public ::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder {
            public:
             enum {
-              mid_init$_28838a84151921e1,
-              mid_build_c861ca2d3226ec08,
+              mid_init$_d4b82a73816aea8c,
+              mid_build_e30ffd3613cfb61c,
               max_mid
             };
 

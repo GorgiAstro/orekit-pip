@@ -14,8 +14,8 @@ namespace org {
         namespace ndm {
           namespace odm {
             namespace ocm {
-              class Ordering;
               class OrbitElementsType;
+              class Ordering;
             }
           }
         }
@@ -47,10 +47,10 @@ namespace org {
               class OrbitCovariance : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_daa48da918bb1262,
-                  mid_getDate_c325492395d89b24,
-                  mid_getMatrix_f77d745f2128c391,
-                  mid_getType_4eb559a63ad8d46d,
+                  mid_init$_07cdcdace9ceb3ee,
+                  mid_getDate_80e11148db499dda,
+                  mid_getMatrix_b2eebabce70526d8,
+                  mid_getType_53d3e424bd18099f,
                   max_mid
                 };
 

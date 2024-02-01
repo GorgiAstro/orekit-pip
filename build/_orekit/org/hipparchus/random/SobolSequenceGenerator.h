@@ -3,24 +3,24 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace random {
-      class RandomVectorGenerator;
-    }
-    namespace exception {
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
-    }
-  }
-}
 namespace java {
   namespace io {
-    class InputStream;
     class IOException;
+    class InputStream;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
+    }
+    namespace random {
+      class RandomVectorGenerator;
+    }
   }
 }
 template<class T> class JArray;
@@ -32,11 +32,11 @@ namespace org {
       class SobolSequenceGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_44ed599e93e8a30c,
-          mid_init$_b55216ccbedaec84,
-          mid_getNextIndex_55546ef6a647f39b,
-          mid_nextVector_25e1757a36c4dde2,
-          mid_skipTo_bb2a44a76ad252f7,
+          mid_init$_8fd427ab23829bf5,
+          mid_init$_422fe248e9e08df0,
+          mid_getNextIndex_d6ab429752e7c267,
+          mid_nextVector_be783177b060994b,
+          mid_skipTo_81add9fc9d78d5b9,
           max_mid
         };
 

@@ -11,13 +11,13 @@ namespace org {
     namespace time {
       class FieldAbsoluteDate;
     }
+    namespace orbits {
+      class PositionAngleType;
+      class OrbitType;
+    }
     namespace propagation {
       class PropagationType;
       class FieldSpacecraftState;
-    }
-    namespace orbits {
-      class OrbitType;
-      class PositionAngleType;
     }
     namespace frames {
       class Frame;
@@ -42,19 +42,19 @@ namespace org {
         class FieldStateMapper : public ::java::lang::Object {
          public:
           enum {
-            mid_getAttitudeProvider_331f12bb6017243b,
-            mid_getFrame_2c51111cc6894ba1,
-            mid_getMu_81520b552cb3fa26,
-            mid_getOrbitType_c7d4737d7afca612,
-            mid_getPositionAngleType_c25055891f180348,
-            mid_getReferenceDate_fa23a4301b9c83e7,
-            mid_mapArrayToState_1b9bfe1085235c3b,
-            mid_mapArrayToState_332029ddc6fecef1,
-            mid_mapDateToDouble_140b8964300ddedf,
-            mid_mapDoubleToDate_22e288de5d0d08a6,
-            mid_mapDoubleToDate_ee4cabe6e15ddac3,
-            mid_mapStateToArray_81a15f6754980fa1,
-            mid_setPositionAngleType_a1fa5dae97ea5ed2,
+            mid_getAttitudeProvider_2f73d1f4460b8d6c,
+            mid_getFrame_cb151471db4570f0,
+            mid_getMu_08d37e3f77b7239d,
+            mid_getOrbitType_495f818d3570b7f5,
+            mid_getPositionAngleType_a6db4e6edefda4be,
+            mid_getReferenceDate_1fea28374011eef5,
+            mid_mapArrayToState_0dd5c63fffcaab3c,
+            mid_mapArrayToState_6dd6cd4ddfbb19d2,
+            mid_mapDateToDouble_cf010978f3c5a913,
+            mid_mapDoubleToDate_7e3a2932d2ce0a9d,
+            mid_mapDoubleToDate_41b4f1e9c37882e9,
+            mid_mapStateToArray_0924dbbee225355c,
+            mid_setPositionAngleType_ff7cb6c242604316,
             max_mid
           };
 

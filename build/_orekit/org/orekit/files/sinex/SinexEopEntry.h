@@ -10,12 +10,12 @@ namespace org {
       class AbsoluteDate;
       class TimeScale;
     }
-    namespace utils {
-      class IERSConventions$NutationCorrectionConverter;
-    }
     namespace frames {
       class EOPEntry;
       class ITRFVersion;
+    }
+    namespace utils {
+      class IERSConventions$NutationCorrectionConverter;
     }
   }
 }
@@ -34,25 +34,25 @@ namespace org {
         class SinexEopEntry : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_02135a6ef25adb4b,
-            mid_getDate_c325492395d89b24,
-            mid_getLod_b74f83833fdad017,
-            mid_getNutLn_b74f83833fdad017,
-            mid_getNutOb_b74f83833fdad017,
-            mid_getNutX_b74f83833fdad017,
-            mid_getNutY_b74f83833fdad017,
-            mid_getUt1MinusUtc_b74f83833fdad017,
-            mid_getXPo_b74f83833fdad017,
-            mid_getYPo_b74f83833fdad017,
-            mid_setLod_8ba9fe7a847cecad,
-            mid_setNutLn_8ba9fe7a847cecad,
-            mid_setNutOb_8ba9fe7a847cecad,
-            mid_setNutX_8ba9fe7a847cecad,
-            mid_setNutY_8ba9fe7a847cecad,
-            mid_setUt1MinusUtc_8ba9fe7a847cecad,
-            mid_setxPo_8ba9fe7a847cecad,
-            mid_setyPo_8ba9fe7a847cecad,
-            mid_toEopEntry_5d6fc5e7d7649a1f,
+            mid_init$_8497861b879c83f7,
+            mid_getDate_80e11148db499dda,
+            mid_getLod_9981f74b2d109da6,
+            mid_getNutLn_9981f74b2d109da6,
+            mid_getNutOb_9981f74b2d109da6,
+            mid_getNutX_9981f74b2d109da6,
+            mid_getNutY_9981f74b2d109da6,
+            mid_getUt1MinusUtc_9981f74b2d109da6,
+            mid_getXPo_9981f74b2d109da6,
+            mid_getYPo_9981f74b2d109da6,
+            mid_setLod_1ad26e8c8c0cd65b,
+            mid_setNutLn_1ad26e8c8c0cd65b,
+            mid_setNutOb_1ad26e8c8c0cd65b,
+            mid_setNutX_1ad26e8c8c0cd65b,
+            mid_setNutY_1ad26e8c8c0cd65b,
+            mid_setUt1MinusUtc_1ad26e8c8c0cd65b,
+            mid_setxPo_1ad26e8c8c0cd65b,
+            mid_setyPo_1ad26e8c8c0cd65b,
+            mid_toEopEntry_77d96af09a23fcc3,
             max_mid
           };
 

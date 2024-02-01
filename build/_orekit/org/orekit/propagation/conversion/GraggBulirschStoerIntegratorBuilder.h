@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace orbits {
-      class Orbit;
-      class OrbitType;
-    }
     namespace propagation {
       namespace conversion {
         class ODEIntegratorBuilder;
       }
+    }
+    namespace orbits {
+      class Orbit;
+      class OrbitType;
     }
   }
   namespace hipparchus {
@@ -36,8 +36,8 @@ namespace org {
         class GraggBulirschStoerIntegratorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_b5167f35b2521627,
-            mid_buildIntegrator_916fa199ca08d656,
+            mid_init$_bd28dc6055dc5bbd,
+            mid_buildIntegrator_31c1ebb8b9cbaedc,
             max_mid
           };
 

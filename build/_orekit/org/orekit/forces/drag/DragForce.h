@@ -4,18 +4,12 @@
 #include "org/orekit/forces/drag/AbstractDragForceModel.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
+  namespace orekit {
+    namespace forces {
+      namespace drag {
+        class DragSensitive;
       }
     }
-    class CalculusFieldElement;
-  }
-  namespace orekit {
     namespace models {
       namespace earth {
         namespace atmosphere {
@@ -23,18 +17,24 @@ namespace org {
         }
       }
     }
-    namespace forces {
-      namespace drag {
-        class DragSensitive;
-      }
-    }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
+    namespace utils {
+      class ParameterDriver;
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -55,12 +55,12 @@ namespace org {
         class DragForce : public ::org::orekit::forces::drag::AbstractDragForceModel {
          public:
           enum {
-            mid_init$_9d51f29c5e5b1e8b,
-            mid_acceleration_20bded0292328743,
-            mid_acceleration_0ce449c67b5ffd9c,
-            mid_getAtmosphere_51e24dc1f47828d4,
-            mid_getParametersDrivers_e62d3bb06d56d7e3,
-            mid_getSpacecraft_bf04d13a51559009,
+            mid_init$_f2f0fa9d3d8aa425,
+            mid_acceleration_5e147f44c28a35c9,
+            mid_acceleration_9816b8f76e94356a,
+            mid_getAtmosphere_427d0c98c647ebb8,
+            mid_getParametersDrivers_d751c1a57012b438,
+            mid_getSpacecraft_e8bdc7a90adb886e,
             max_mid
           };
 

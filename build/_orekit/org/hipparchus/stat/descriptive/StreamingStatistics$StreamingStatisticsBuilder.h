@@ -5,14 +5,14 @@
 
 namespace org {
   namespace hipparchus {
-    namespace random {
-      class RandomGenerator;
-    }
     namespace stat {
       namespace descriptive {
-        class StreamingStatistics$StreamingStatisticsBuilder;
         class StreamingStatistics;
+        class StreamingStatistics$StreamingStatisticsBuilder;
       }
+    }
+    namespace random {
+      class RandomGenerator;
     }
   }
 }
@@ -31,13 +31,13 @@ namespace org {
         class StreamingStatistics$StreamingStatisticsBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_build_32dcaf3e8c6a3a28,
-            mid_extrema_b0d6fa13965b2c50,
-            mid_moments_b0d6fa13965b2c50,
-            mid_percentiles_4c8a006128e4bf2a,
-            mid_sumOfLogs_b0d6fa13965b2c50,
-            mid_sumOfSquares_b0d6fa13965b2c50,
+            mid_init$_ff7cb6c242604316,
+            mid_build_e8391c24b9a78230,
+            mid_extrema_4ca83ac5db036547,
+            mid_moments_4ca83ac5db036547,
+            mid_percentiles_b05e8ec52e89e10f,
+            mid_sumOfLogs_4ca83ac5db036547,
+            mid_sumOfSquares_4ca83ac5db036547,
             max_mid
           };
 

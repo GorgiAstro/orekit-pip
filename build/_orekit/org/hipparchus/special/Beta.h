@@ -17,11 +17,11 @@ namespace org {
       class Beta : public ::java::lang::Object {
        public:
         enum {
-          mid_logBeta_99e3200dafc19573,
-          mid_regularizedBeta_f804f816b79164cb,
-          mid_regularizedBeta_08eba2463884b341,
-          mid_regularizedBeta_2d76000a36416433,
-          mid_regularizedBeta_0b772ea14dc134fb,
+          mid_logBeta_82f92590f4247da1,
+          mid_regularizedBeta_db06d8c3fc3d9670,
+          mid_regularizedBeta_45d926aea7231320,
+          mid_regularizedBeta_4ac438d787b160b9,
+          mid_regularizedBeta_4ce565612833d2a2,
           max_mid
         };
 

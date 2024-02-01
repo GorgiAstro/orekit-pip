@@ -5,13 +5,13 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
     namespace bodies {
       class FieldGeodeticPoint;
       class GeodeticPoint;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -34,8 +34,8 @@ namespace org {
           class MappingFunction : public ::java::lang::Object {
            public:
             enum {
-              mid_mappingFactors_6e118a7a5998051c,
-              mid_mappingFactors_6dcded9cb7dee3c2,
+              mid_mappingFactors_090b631fda469acd,
+              mid_mappingFactors_7d2717f150c68a9f,
               max_mid
             };
 

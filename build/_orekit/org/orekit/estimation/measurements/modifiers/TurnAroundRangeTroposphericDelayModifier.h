@@ -3,24 +3,8 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class EstimationModifier;
-        class TurnAroundRange;
-        class EstimatedMeasurementBase;
-        class EstimatedMeasurement;
-      }
-    }
     namespace models {
       namespace earth {
         namespace troposphere {
@@ -28,9 +12,25 @@ namespace org {
         }
       }
     }
+    namespace estimation {
+      namespace measurements {
+        class EstimatedMeasurementBase;
+        class EstimationModifier;
+        class EstimatedMeasurement;
+        class TurnAroundRange;
+      }
+    }
     namespace utils {
       class ParameterDriver;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -44,10 +44,10 @@ namespace org {
           class TurnAroundRangeTroposphericDelayModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_516bd20115aa9d9d,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_modify_f784f7724d44a90a,
-              mid_modifyWithoutDerivatives_308087fabc1d7f66,
+              mid_init$_1f42633debde232b,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_modify_0f0ae9411e47b72e,
+              mid_modifyWithoutDerivatives_ecce216dce506020,
               max_mid
             };
 

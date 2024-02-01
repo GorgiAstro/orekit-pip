@@ -6,8 +6,8 @@
 namespace org {
   namespace orekit {
     namespace frames {
-      class Predefined;
       class TransformProvider;
+      class Predefined;
     }
   }
 }
@@ -25,8 +25,8 @@ namespace org {
       class FactoryManagedFrame : public ::org::orekit::frames::Frame {
        public:
         enum {
-          mid_init$_7d49ab6d45ab1740,
-          mid_getFactoryKey_7015323f485a7303,
+          mid_init$_23a36fa90011475a,
+          mid_getFactoryKey_8676af2d7598517d,
           max_mid
         };
 

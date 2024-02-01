@@ -25,8 +25,8 @@ namespace org {
       class EOPBasedTransformProvider : public ::org::orekit::frames::TransformProvider {
        public:
         enum {
-          mid_getEOPHistory_f9d30be358d43685,
-          mid_getNonInterpolatingProvider_8b3864a3bd1af1da,
+          mid_getEOPHistory_867110817f590882,
+          mid_getNonInterpolatingProvider_9030f9dc3158fc42,
           max_mid
         };
 

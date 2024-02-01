@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace complex {
       class Complex;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,10 +26,10 @@ namespace org {
           class Theta : public ::java::lang::Object {
            public:
             enum {
-              mid_theta1_2f0868cbf8c045d4,
-              mid_theta2_2f0868cbf8c045d4,
-              mid_theta3_2f0868cbf8c045d4,
-              mid_theta4_2f0868cbf8c045d4,
+              mid_theta1_847706ebd9444ecb,
+              mid_theta2_847706ebd9444ecb,
+              mid_theta3_847706ebd9444ecb,
+              mid_theta4_847706ebd9444ecb,
               max_mid
             };
 

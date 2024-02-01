@@ -3,38 +3,38 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
   }
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace rugged {
       namespace utils {
         class DerivativeGenerator;
       }
     }
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace utils {
       class ParameterDriver;
-    }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
-  }
-  namespace util {
-    namespace stream {
-      class Stream;
     }
   }
 }
@@ -48,10 +48,10 @@ namespace org {
         class TimeDependentLOS : public ::java::lang::Object {
          public:
           enum {
-            mid_getLOS_3533789b6b080f9a,
-            mid_getLOSDerivatives_567235bef337e7c5,
-            mid_getNbPixels_55546ef6a647f39b,
-            mid_getParametersDrivers_14e21bf777ff0ccf,
+            mid_getLOS_a5eda1966a92bc34,
+            mid_getLOSDerivatives_f9ac050f4f50d612,
+            mid_getNbPixels_d6ab429752e7c267,
+            mid_getParametersDrivers_11e4ca8182c1933d,
             max_mid
           };
 

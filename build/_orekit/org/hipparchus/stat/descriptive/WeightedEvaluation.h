@@ -25,8 +25,8 @@ namespace org {
         class WeightedEvaluation : public ::java::lang::Object {
          public:
           enum {
-            mid_evaluate_3207f9c2ae7271d9,
-            mid_evaluate_0f0d79795aa485ac,
+            mid_evaluate_b01af8a77d4df96f,
+            mid_evaluate_0b039b932db219bf,
             max_mid
           };
 

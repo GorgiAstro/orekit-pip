@@ -28,9 +28,9 @@ namespace org {
         class SP3OrbitType : public ::java::lang::Enum {
          public:
           enum {
-            mid_parseType_8ce6db4cf2e6cad2,
-            mid_valueOf_8ce6db4cf2e6cad2,
-            mid_values_4fa22ef2b4f22b54,
+            mid_parseType_fbe02680a633f1e4,
+            mid_valueOf_fbe02680a633f1e4,
+            mid_values_cb999f58e81e9da5,
             max_mid
           };
 

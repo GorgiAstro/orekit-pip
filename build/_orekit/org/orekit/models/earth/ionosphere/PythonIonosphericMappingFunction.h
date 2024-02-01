@@ -4,6 +4,9 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace models {
       namespace earth {
@@ -12,9 +15,6 @@ namespace org {
         }
       }
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -34,14 +34,14 @@ namespace org {
           class PythonIonosphericMappingFunction : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_mappingFactor_04fd0666b613d2ab,
-              mid_mappingFactor_6e00dc5eb352fe51,
-              mid_mappingFactor_T_6e00dc5eb352fe51,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_init$_ff7cb6c242604316,
+              mid_finalize_ff7cb6c242604316,
+              mid_mappingFactor_bf28ed64d6e8576b,
+              mid_mappingFactor_a3b854adede8eaaa,
+              mid_mappingFactor_T_a3b854adede8eaaa,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
               max_mid
             };
 

@@ -25,8 +25,8 @@ namespace org {
       class DfpField$RoundingMode : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_6f1e9a27ef3e16cb,
-          mid_values_0ea88ae57111b0dc,
+          mid_valueOf_c4b19bb3cef6712a,
+          mid_values_d4f77f9240a38309,
           max_mid
         };
 

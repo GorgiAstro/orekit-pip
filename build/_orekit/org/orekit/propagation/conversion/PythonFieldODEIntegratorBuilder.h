@@ -10,23 +10,23 @@ namespace java {
   }
 }
 namespace org {
+  namespace hipparchus {
+    namespace ode {
+      class AbstractFieldIntegrator;
+    }
+    class Field;
+    class CalculusFieldElement;
+  }
   namespace orekit {
     namespace orbits {
-      class Orbit;
       class OrbitType;
+      class Orbit;
       class FieldOrbit;
     }
     namespace propagation {
       namespace conversion {
         class FieldODEIntegratorBuilder;
       }
-    }
-  }
-  namespace hipparchus {
-    class Field;
-    class CalculusFieldElement;
-    namespace ode {
-      class AbstractFieldIntegrator;
     }
   }
 }
@@ -40,13 +40,13 @@ namespace org {
         class PythonFieldODEIntegratorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_buildIntegrator_95fca721ff63137c,
-            mid_buildIntegrator_ce58c6ef4cfb23c4,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_ff7cb6c242604316,
+            mid_buildIntegrator_d2b5a7210d9a6d44,
+            mid_buildIntegrator_78d8a25057f42815,
+            mid_finalize_ff7cb6c242604316,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

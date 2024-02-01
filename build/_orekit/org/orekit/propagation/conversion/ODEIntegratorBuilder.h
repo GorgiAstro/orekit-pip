@@ -31,7 +31,7 @@ namespace org {
         class ODEIntegratorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_buildIntegrator_916fa199ca08d656,
+            mid_buildIntegrator_31c1ebb8b9cbaedc,
             max_mid
           };
 

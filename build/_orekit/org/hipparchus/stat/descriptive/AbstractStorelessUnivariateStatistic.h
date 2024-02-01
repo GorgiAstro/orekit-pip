@@ -28,14 +28,14 @@ namespace org {
         class AbstractStorelessUnivariateStatistic : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_clear_a1fa5dae97ea5ed2,
-            mid_copy_2b25c166f19a0def,
-            mid_equals_460c5e2d9d51c6cc,
-            mid_getResult_b74f83833fdad017,
-            mid_hashCode_55546ef6a647f39b,
-            mid_increment_8ba9fe7a847cecad,
-            mid_toString_1c1fa1e935d6cdcf,
+            mid_init$_ff7cb6c242604316,
+            mid_clear_ff7cb6c242604316,
+            mid_copy_2686517d773e76c2,
+            mid_equals_72faff9b05f5ed5e,
+            mid_getResult_9981f74b2d109da6,
+            mid_hashCode_d6ab429752e7c267,
+            mid_increment_1ad26e8c8c0cd65b,
+            mid_toString_d2c8eb4129821f0e,
             max_mid
           };
 

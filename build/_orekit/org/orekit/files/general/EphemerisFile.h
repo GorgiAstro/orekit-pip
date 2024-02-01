@@ -31,7 +31,7 @@ namespace org {
         class EphemerisFile : public ::java::lang::Object {
          public:
           enum {
-            mid_getSatellites_810bed48fafb0b9a,
+            mid_getSatellites_dbcb8bbac6b35e0d,
             max_mid
           };
 

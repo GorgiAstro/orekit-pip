@@ -19,7 +19,7 @@ namespace org {
           class Euclidean1D$NoSubSpaceException : public ::org::hipparchus::exception::MathRuntimeException {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
+              mid_init$_ff7cb6c242604316,
               max_mid
             };
 

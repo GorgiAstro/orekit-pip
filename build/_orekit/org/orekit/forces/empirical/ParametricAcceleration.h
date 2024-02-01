@@ -5,14 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace forces {
-      namespace empirical {
-        class AccelerationModel;
-      }
-      class ForceModel;
-    }
     namespace attitudes {
       class AttitudeProvider;
+    }
+    namespace utils {
+      class ParameterDriver;
     }
     namespace propagation {
       namespace events {
@@ -22,8 +19,11 @@ namespace org {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
-    namespace utils {
-      class ParameterDriver;
+    namespace forces {
+      namespace empirical {
+        class AccelerationModel;
+      }
+      class ForceModel;
     }
     namespace time {
       class AbsoluteDate;
@@ -33,21 +33,21 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
-    class Field;
     class CalculusFieldElement;
+    class Field;
   }
 }
 namespace java {
   namespace util {
-    class List;
     namespace stream {
       class Stream;
     }
+    class List;
   }
   namespace lang {
     class Class;
@@ -63,15 +63,15 @@ namespace org {
         class ParametricAcceleration : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_4c3161fe77d68ecd,
-            mid_init$_5e38cdb9559e0e6a,
-            mid_acceleration_0ce449c67b5ffd9c,
-            mid_acceleration_20bded0292328743,
-            mid_dependsOnPositionOnly_9ab94ac1dc23b105,
-            mid_getEventDetectors_14e21bf777ff0ccf,
-            mid_getFieldEventDetectors_283ad33581c047a0,
-            mid_getParametersDrivers_e62d3bb06d56d7e3,
-            mid_init_2d7f9a496c7e9781,
+            mid_init$_d120eee40e024d34,
+            mid_init$_fb104f3162f22c26,
+            mid_acceleration_9816b8f76e94356a,
+            mid_acceleration_5e147f44c28a35c9,
+            mid_dependsOnPositionOnly_eee3de00fe971136,
+            mid_getEventDetectors_11e4ca8182c1933d,
+            mid_getFieldEventDetectors_d3db121d9deb0312,
+            mid_getParametersDrivers_d751c1a57012b438,
+            mid_init_14deaae988292d42,
             max_mid
           };
 

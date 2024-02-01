@@ -6,11 +6,11 @@
 namespace org {
   namespace orekit {
     namespace gnss {
-      class SignalCode;
-      class SatelliteSystem;
-      class ObservationType;
       class MeasurementType;
+      class SatelliteSystem;
       class Frequency;
+      class SignalCode;
+      class ObservationType;
     }
   }
 }
@@ -29,11 +29,11 @@ namespace org {
       class ObservationType : public ::java::lang::Enum {
        public:
         enum {
-          mid_getFrequency_d6f69a0e1934b6e3,
-          mid_getMeasurementType_8c0a6decf9468215,
-          mid_getSignalCode_c3b819016e2efc95,
-          mid_valueOf_f33e58d3107f7f14,
-          mid_values_7b41c8c7af6242d9,
+          mid_getFrequency_4ed6e66577d34d61,
+          mid_getMeasurementType_0c31fda13b2c1960,
+          mid_getSignalCode_9c91ddd954949465,
+          mid_valueOf_be5bc086d790ae47,
+          mid_values_821406dca9be187b,
           max_mid
         };
 

@@ -15,8 +15,8 @@ namespace org {
         }
         namespace ndm {
           namespace cdm {
-            class SigmaEigenvectorsCovarianceKey;
             class SigmaEigenvectorsCovariance;
+            class SigmaEigenvectorsCovarianceKey;
           }
         }
       }
@@ -41,9 +41,9 @@ namespace org {
             class SigmaEigenvectorsCovarianceKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_8d5c5ac2ef40379b,
-                mid_valueOf_e9902cd69d266fa1,
-                mid_values_df8d0fb21e8c9595,
+                mid_process_95d61c48b1014813,
+                mid_valueOf_0bccf61626e61b97,
+                mid_values_b6c0a9f8c9268f4c,
                 max_mid
               };
 

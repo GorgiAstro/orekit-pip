@@ -8122,7 +8122,6 @@ namespace org {
 #include "org/orekit/files/ccsds/section/KvnStructureProcessingState.h"
 #include "org/orekit/files/ccsds/section/Metadata.h"
 #include "org/orekit/files/ccsds/section/MetadataKey.h"
-#include "org/orekit/files/ccsds/section/PyhonData.h"
 #include "org/orekit/files/ccsds/section/PythonAbstractWriter.h"
 #include "org/orekit/files/ccsds/section/PythonSection.h"
 #include "org/orekit/files/ccsds/section/Section.h"
@@ -8151,7 +8150,6 @@ namespace org {
             t_KvnStructureProcessingState::install(module);
             t_Metadata::install(module);
             t_MetadataKey::install(module);
-            t_PyhonData::install(module);
             t_PythonAbstractWriter::install(module);
             t_PythonSection::install(module);
             t_Section::install(module);
@@ -8174,7 +8172,6 @@ namespace org {
             t_KvnStructureProcessingState::initialize(module);
             t_Metadata::initialize(module);
             t_MetadataKey::initialize(module);
-            t_PyhonData::initialize(module);
             t_PythonAbstractWriter::initialize(module);
             t_PythonSection::initialize(module);
             t_Section::initialize(module);
@@ -13630,6 +13627,7 @@ namespace org {
 #include "org/orekit/rugged/adjustment/LeastSquareAdjuster.h"
 #include "org/orekit/rugged/adjustment/OptimizationProblemBuilder.h"
 #include "org/orekit/rugged/adjustment/OptimizerId.h"
+#include "org/orekit/rugged/adjustment/PythonOptimizationProblemBuilder.h"
 
 namespace org {
   namespace orekit {
@@ -13651,6 +13649,7 @@ namespace org {
           t_LeastSquareAdjuster::install(module);
           t_OptimizationProblemBuilder::install(module);
           t_OptimizerId::install(module);
+          t_PythonOptimizationProblemBuilder::install(module);
           measurements::__install__(module);
         }
 
@@ -13664,6 +13663,7 @@ namespace org {
           t_LeastSquareAdjuster::initialize(module);
           t_OptimizationProblemBuilder::initialize(module);
           t_OptimizerId::initialize(module);
+          t_PythonOptimizationProblemBuilder::initialize(module);
           measurements::__initialize__(module);
         }
       }
@@ -13800,6 +13800,7 @@ namespace org {
 #include "org/orekit/rugged/intersection/ConstantElevationAlgorithm.h"
 #include "org/orekit/rugged/intersection/IgnoreDEMAlgorithm.h"
 #include "org/orekit/rugged/intersection/IntersectionAlgorithm.h"
+#include "org/orekit/rugged/intersection/PythonIntersectionAlgorithmI.h"
 
 namespace org {
   namespace orekit {
@@ -13819,6 +13820,7 @@ namespace org {
           t_ConstantElevationAlgorithm::install(module);
           t_IgnoreDEMAlgorithm::install(module);
           t_IntersectionAlgorithm::install(module);
+          t_PythonIntersectionAlgorithmI::install(module);
           duvenhage::__install__(module);
         }
 
@@ -13830,6 +13832,7 @@ namespace org {
           t_ConstantElevationAlgorithm::initialize(module);
           t_IgnoreDEMAlgorithm::initialize(module);
           t_IntersectionAlgorithm::initialize(module);
+          t_PythonIntersectionAlgorithmI::initialize(module);
           duvenhage::__initialize__(module);
         }
       }
@@ -13874,6 +13877,7 @@ namespace org {
 #include "org/orekit/rugged/linesensor/LineDatation.h"
 #include "org/orekit/rugged/linesensor/LineSensor.h"
 #include "org/orekit/rugged/linesensor/LinearLineDatation.h"
+#include "org/orekit/rugged/linesensor/PythonLineDatation.h"
 #include "org/orekit/rugged/linesensor/SensorMeanPlaneCrossing.h"
 #include "org/orekit/rugged/linesensor/SensorMeanPlaneCrossing$CrossingResult.h"
 #include "org/orekit/rugged/linesensor/SensorPixel.h"
@@ -13892,6 +13896,7 @@ namespace org {
           t_LineDatation::install(module);
           t_LineSensor::install(module);
           t_LinearLineDatation::install(module);
+          t_PythonLineDatation::install(module);
           t_SensorMeanPlaneCrossing::install(module);
           t_SensorMeanPlaneCrossing$CrossingResult::install(module);
           t_SensorPixel::install(module);
@@ -13905,6 +13910,7 @@ namespace org {
           t_LineDatation::initialize(module);
           t_LineSensor::initialize(module);
           t_LinearLineDatation::initialize(module);
+          t_PythonLineDatation::initialize(module);
           t_SensorMeanPlaneCrossing::initialize(module);
           t_SensorMeanPlaneCrossing$CrossingResult::initialize(module);
           t_SensorPixel::initialize(module);
@@ -13920,6 +13926,9 @@ namespace org {
 #include "org/orekit/rugged/los/LOSBuilder.h"
 #include "org/orekit/rugged/los/LOSTransform.h"
 #include "org/orekit/rugged/los/PolynomialRotation.h"
+#include "org/orekit/rugged/los/PythonLOSTransformI.h"
+#include "org/orekit/rugged/los/PythonTimeDependentLOS.h"
+#include "org/orekit/rugged/los/PythonTimeIndependentLOSTransform.h"
 #include "org/orekit/rugged/los/TimeDependentLOS.h"
 #include "org/orekit/rugged/los/TimeIndependentLOSTransform.h"
 
@@ -13938,6 +13947,9 @@ namespace org {
           t_LOSBuilder::install(module);
           t_LOSTransform::install(module);
           t_PolynomialRotation::install(module);
+          t_PythonLOSTransformI::install(module);
+          t_PythonTimeDependentLOS::install(module);
+          t_PythonTimeIndependentLOSTransform::install(module);
           t_TimeDependentLOS::install(module);
           t_TimeIndependentLOSTransform::install(module);
         }
@@ -13951,6 +13963,9 @@ namespace org {
           t_LOSBuilder::initialize(module);
           t_LOSTransform::initialize(module);
           t_PolynomialRotation::initialize(module);
+          t_PythonLOSTransformI::initialize(module);
+          t_PythonTimeDependentLOS::initialize(module);
+          t_PythonTimeIndependentLOSTransform::initialize(module);
           t_TimeDependentLOS::initialize(module);
           t_TimeIndependentLOSTransform::initialize(module);
         }
@@ -13959,6 +13974,10 @@ namespace org {
   }
 }
 
+#include "org/orekit/rugged/raster/PythonTile.h"
+#include "org/orekit/rugged/raster/PythonTileFactory.h"
+#include "org/orekit/rugged/raster/PythonTileUpdater.h"
+#include "org/orekit/rugged/raster/PythonUpdatableTile.h"
 #include "org/orekit/rugged/raster/SimpleTile.h"
 #include "org/orekit/rugged/raster/SimpleTileFactory.h"
 #include "org/orekit/rugged/raster/Tile.h"
@@ -13978,6 +13997,10 @@ namespace org {
         {
           module = getJavaModule(module, "org.orekit.rugged", "raster");
 
+          t_PythonTile::install(module);
+          t_PythonTileFactory::install(module);
+          t_PythonTileUpdater::install(module);
+          t_PythonUpdatableTile::install(module);
           t_SimpleTile::install(module);
           t_SimpleTileFactory::install(module);
           t_Tile::install(module);
@@ -13992,6 +14015,10 @@ namespace org {
         {
           module = getJavaModule(module, "org.orekit.rugged", "raster");
 
+          t_PythonTile::initialize(module);
+          t_PythonTileFactory::initialize(module);
+          t_PythonTileUpdater::initialize(module);
+          t_PythonUpdatableTile::initialize(module);
           t_SimpleTile::initialize(module);
           t_SimpleTileFactory::initialize(module);
           t_Tile::initialize(module);
@@ -14010,6 +14037,7 @@ namespace org {
 #include "org/orekit/rugged/refraction/AtmosphericRefraction.h"
 #include "org/orekit/rugged/refraction/ConstantRefractionLayer.h"
 #include "org/orekit/rugged/refraction/MultiLayerModel.h"
+#include "org/orekit/rugged/refraction/PythonAtmosphericRefraction.h"
 
 namespace org {
   namespace orekit {
@@ -14025,6 +14053,7 @@ namespace org {
           t_AtmosphericRefraction::install(module);
           t_ConstantRefractionLayer::install(module);
           t_MultiLayerModel::install(module);
+          t_PythonAtmosphericRefraction::install(module);
         }
 
         void __initialize__(PyObject *module)
@@ -14035,6 +14064,7 @@ namespace org {
           t_AtmosphericRefraction::initialize(module);
           t_ConstantRefractionLayer::initialize(module);
           t_MultiLayerModel::initialize(module);
+          t_PythonAtmosphericRefraction::initialize(module);
         }
       }
     }
@@ -14048,6 +14078,8 @@ namespace org {
 #include "org/orekit/rugged/utils/MaxSelector.h"
 #include "org/orekit/rugged/utils/MinSelector.h"
 #include "org/orekit/rugged/utils/NormalizedGeodeticPoint.h"
+#include "org/orekit/rugged/utils/PythonDSGenerator.h"
+#include "org/orekit/rugged/utils/PythonSelector.h"
 #include "org/orekit/rugged/utils/RoughVisibilityEstimator.h"
 #include "org/orekit/rugged/utils/Selector.h"
 #include "org/orekit/rugged/utils/SpacecraftToObservedBody.h"
@@ -14069,6 +14101,8 @@ namespace org {
           t_MaxSelector::install(module);
           t_MinSelector::install(module);
           t_NormalizedGeodeticPoint::install(module);
+          t_PythonDSGenerator::install(module);
+          t_PythonSelector::install(module);
           t_RoughVisibilityEstimator::install(module);
           t_Selector::install(module);
           t_SpacecraftToObservedBody::install(module);
@@ -14085,6 +14119,8 @@ namespace org {
           t_MaxSelector::initialize(module);
           t_MinSelector::initialize(module);
           t_NormalizedGeodeticPoint::initialize(module);
+          t_PythonDSGenerator::initialize(module);
+          t_PythonSelector::initialize(module);
           t_RoughVisibilityEstimator::initialize(module);
           t_Selector::initialize(module);
           t_SpacecraftToObservedBody::initialize(module);

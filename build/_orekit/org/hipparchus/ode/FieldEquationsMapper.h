@@ -3,23 +3,23 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace ode {
-      class FieldODEStateAndDerivative;
-    }
-    class CalculusFieldElement;
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
-  }
-}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+    namespace ode {
+      class FieldODEStateAndDerivative;
+    }
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -31,11 +31,11 @@ namespace org {
       class FieldEquationsMapper : public ::java::lang::Object {
        public:
         enum {
-          mid_extractEquationData_a513190ee23c08a2,
-          mid_getNumberOfEquations_55546ef6a647f39b,
-          mid_getTotalDimension_55546ef6a647f39b,
-          mid_insertEquationData_d2db5bedc2716798,
-          mid_mapStateAndDerivative_3bcb34e82e5225d3,
+          mid_extractEquationData_d165cd7576e69a5a,
+          mid_getNumberOfEquations_d6ab429752e7c267,
+          mid_getTotalDimension_d6ab429752e7c267,
+          mid_insertEquationData_7d0026cf0755dda0,
+          mid_mapStateAndDerivative_107457b3d57b6f3a,
           max_mid
         };
 

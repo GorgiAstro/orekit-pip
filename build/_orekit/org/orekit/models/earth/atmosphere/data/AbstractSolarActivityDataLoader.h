@@ -5,21 +5,21 @@
 
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataLoader;
-    }
     namespace time {
       class AbsoluteDate;
       class TimeScale;
     }
+    namespace data {
+      class DataLoader;
+    }
   }
 }
 namespace java {
-  namespace lang {
-    class Class;
-  }
   namespace util {
     class SortedSet;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -34,13 +34,13 @@ namespace org {
             class AbstractSolarActivityDataLoader : public ::java::lang::Object {
              public:
               enum {
-                mid_getDataSet_7961e54fd3a47d94,
-                mid_getMaxDate_c325492395d89b24,
-                mid_getMinDate_c325492395d89b24,
-                mid_getUTC_34d3bda0a8989e3e,
-                mid_setMaxDate_02135a6ef25adb4b,
-                mid_setMinDate_02135a6ef25adb4b,
-                mid_stillAcceptsData_9ab94ac1dc23b105,
+                mid_getDataSet_815c7115fae241c1,
+                mid_getMaxDate_80e11148db499dda,
+                mid_getMinDate_80e11148db499dda,
+                mid_getUTC_5e2cac12ab8da943,
+                mid_setMaxDate_8497861b879c83f7,
+                mid_setMinDate_8497861b879c83f7,
+                mid_stillAcceptsData_eee3de00fe971136,
                 max_mid
               };
 

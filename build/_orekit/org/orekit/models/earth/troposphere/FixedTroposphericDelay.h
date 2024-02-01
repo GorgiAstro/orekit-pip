@@ -3,15 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace models {
@@ -22,13 +13,13 @@ namespace org {
         }
       }
     }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
     namespace bodies {
       class FieldGeodeticPoint;
       class GeodeticPoint;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
     }
     namespace data {
       class DataProvidersManager;
@@ -39,6 +30,15 @@ namespace org {
   }
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -52,13 +52,13 @@ namespace org {
           class FixedTroposphericDelay : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_734b91ac30d5f9b4,
-              mid_init$_0343d25c5af74eca,
-              mid_init$_3f7c4bf9d0d94a6c,
-              mid_getDefaultModel_7073151b6b851b50,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_pathDelay_6f66c6b7094d6f08,
-              mid_pathDelay_2edbfa177156ee09,
+              mid_init$_105e1eadb709d9ac,
+              mid_init$_4c16e57d19ddaa09,
+              mid_init$_3a2cd39ad5830d3b,
+              mid_getDefaultModel_d1fde2ae98884ceb,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_pathDelay_3e863f8cc7cde633,
+              mid_pathDelay_a07808bbc1ebff8d,
               max_mid
             };
 

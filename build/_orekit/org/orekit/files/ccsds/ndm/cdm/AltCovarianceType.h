@@ -34,8 +34,8 @@ namespace org {
             class AltCovarianceType : public ::java::lang::Enum {
              public:
               enum {
-                mid_valueOf_9cabe8c248e80798,
-                mid_values_9864edfe395e44d9,
+                mid_valueOf_1921a40c4d892594,
+                mid_values_9ede11f9e03464a7,
                 max_mid
               };
 

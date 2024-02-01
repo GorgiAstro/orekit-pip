@@ -3,6 +3,14 @@
 
 #include "org/orekit/gnss/metric/messages/ParsedMessage.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -14,14 +22,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -36,9 +36,9 @@ namespace org {
             class SsrMessage : public ::org::orekit::gnss::metric::messages::ParsedMessage {
              public:
               enum {
-                mid_init$_a25730dd3b31fccf,
-                mid_getData_e62d3bb06d56d7e3,
-                mid_getHeader_a5191546aa5c9bd3,
+                mid_init$_53cb67f82def5b02,
+                mid_getData_d751c1a57012b438,
+                mid_getHeader_3921d059e7b157ab,
                 max_mid
               };
 

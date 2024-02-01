@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace analysis {
@@ -15,6 +10,11 @@ namespace org {
         class AllowedSolution;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,12 +27,12 @@ namespace org {
         class BracketedUnivariateSolver$Interval : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_49f4b5153d696ea5,
-            mid_getLeftAbscissa_b74f83833fdad017,
-            mid_getLeftValue_b74f83833fdad017,
-            mid_getRightAbscissa_b74f83833fdad017,
-            mid_getRightValue_b74f83833fdad017,
-            mid_getSide_76453ee02da91cfc,
+            mid_init$_cd5724127cc72e96,
+            mid_getLeftAbscissa_9981f74b2d109da6,
+            mid_getLeftValue_9981f74b2d109da6,
+            mid_getRightAbscissa_9981f74b2d109da6,
+            mid_getRightValue_9981f74b2d109da6,
+            mid_getSide_0037c21353a9ee05,
             max_mid
           };
 

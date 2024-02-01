@@ -6,15 +6,15 @@
 namespace org {
   namespace orekit {
     namespace rugged {
-      namespace intersection {
-        class IntersectionAlgorithm;
+      namespace api {
+        class AlgorithmId;
       }
       namespace utils {
         class ExtendedEllipsoid;
         class NormalizedGeodeticPoint;
       }
-      namespace api {
-        class AlgorithmId;
+      namespace intersection {
+        class IntersectionAlgorithm;
       }
     }
   }
@@ -43,11 +43,11 @@ namespace org {
         class IgnoreDEMAlgorithm : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_getAlgorithmId_d67e2fdbea04a3ee,
-            mid_getElevation_99e3200dafc19573,
-            mid_intersection_7819c980b8c560ad,
-            mid_refineIntersection_882cf21796738f1c,
+            mid_init$_ff7cb6c242604316,
+            mid_getAlgorithmId_65c2eab2e30f9d2d,
+            mid_getElevation_82f92590f4247da1,
+            mid_intersection_5c14acfe95406f7d,
+            mid_refineIntersection_1feab13663326a32,
             max_mid
           };
 

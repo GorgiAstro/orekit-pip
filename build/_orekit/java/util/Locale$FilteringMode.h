@@ -4,12 +4,12 @@
 #include "java/lang/Enum.h"
 
 namespace java {
-  namespace util {
-    class Locale$FilteringMode;
-  }
   namespace lang {
     class String;
     class Class;
+  }
+  namespace util {
+    class Locale$FilteringMode;
   }
 }
 template<class T> class JArray;
@@ -20,8 +20,8 @@ namespace java {
     class Locale$FilteringMode : public ::java::lang::Enum {
      public:
       enum {
-        mid_valueOf_8ea2c58d1dbf75bf,
-        mid_values_16e997a292b175a6,
+        mid_valueOf_bf2c9ff71fbaf386,
+        mid_values_f68d540d6e5314ef,
         max_mid
       };
 

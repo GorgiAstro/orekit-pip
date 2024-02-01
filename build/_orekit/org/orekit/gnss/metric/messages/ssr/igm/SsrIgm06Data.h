@@ -3,15 +3,6 @@
 
 #include "org/orekit/gnss/metric/messages/ssr/igm/SsrIgmData.h"
 
-namespace java {
-  namespace util {
-    class Map;
-  }
-  namespace lang {
-    class Class;
-    class Integer;
-  }
-}
 namespace org {
   namespace orekit {
     namespace gnss {
@@ -23,6 +14,15 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace util {
+    class Map;
+  }
+  namespace lang {
+    class Class;
+    class Integer;
   }
 }
 template<class T> class JArray;
@@ -38,16 +38,16 @@ namespace org {
               class SsrIgm06Data : public ::org::orekit::gnss::metric::messages::ssr::igm::SsrIgmData {
                public:
                 enum {
-                  mid_init$_a1fa5dae97ea5ed2,
-                  mid_addPhaseBias_85312602917c68b3,
-                  mid_getNumberOfBiasesProcessed_55546ef6a647f39b,
-                  mid_getPhaseBias_cd2696e26f8ba219,
-                  mid_getPhaseBiases_810bed48fafb0b9a,
-                  mid_getYawAngle_b74f83833fdad017,
-                  mid_getYawRate_b74f83833fdad017,
-                  mid_setNumberOfBiasesProcessed_44ed599e93e8a30c,
-                  mid_setYawAngle_8ba9fe7a847cecad,
-                  mid_setYawRate_8ba9fe7a847cecad,
+                  mid_init$_ff7cb6c242604316,
+                  mid_addPhaseBias_a74a5094b1655efa,
+                  mid_getNumberOfBiasesProcessed_d6ab429752e7c267,
+                  mid_getPhaseBias_c805432fe36e034e,
+                  mid_getPhaseBiases_dbcb8bbac6b35e0d,
+                  mid_getYawAngle_9981f74b2d109da6,
+                  mid_getYawRate_9981f74b2d109da6,
+                  mid_setNumberOfBiasesProcessed_8fd427ab23829bf5,
+                  mid_setYawAngle_1ad26e8c8c0cd65b,
+                  mid_setYawRate_1ad26e8c8c0cd65b,
                   max_mid
                 };
 

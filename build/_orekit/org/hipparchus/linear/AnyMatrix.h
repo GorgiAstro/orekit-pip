@@ -17,9 +17,9 @@ namespace org {
       class AnyMatrix : public ::java::lang::Object {
        public:
         enum {
-          mid_getColumnDimension_55546ef6a647f39b,
-          mid_getRowDimension_55546ef6a647f39b,
-          mid_isSquare_9ab94ac1dc23b105,
+          mid_getColumnDimension_d6ab429752e7c267,
+          mid_getRowDimension_d6ab429752e7c267,
+          mid_isSquare_eee3de00fe971136,
           max_mid
         };
 

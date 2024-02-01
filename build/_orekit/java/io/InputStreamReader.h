@@ -5,9 +5,9 @@
 
 namespace java {
   namespace io {
+    class IOException;
     class InputStream;
     class UnsupportedEncodingException;
-    class IOException;
   }
   namespace lang {
     class Class;
@@ -22,13 +22,13 @@ namespace java {
     class InputStreamReader : public ::java::io::Reader {
      public:
       enum {
-        mid_init$_471a178453aa39ad,
-        mid_init$_360461e719fb564c,
-        mid_close_a1fa5dae97ea5ed2,
-        mid_getEncoding_1c1fa1e935d6cdcf,
-        mid_read_55546ef6a647f39b,
-        mid_read_a45a4db28976f262,
-        mid_ready_9ab94ac1dc23b105,
+        mid_init$_8f4bef0679d2f8d5,
+        mid_init$_bec0f846e5ec73da,
+        mid_close_ff7cb6c242604316,
+        mid_getEncoding_d2c8eb4129821f0e,
+        mid_read_d6ab429752e7c267,
+        mid_read_1f255a7d724a5165,
+        mid_ready_eee3de00fe971136,
         max_mid
       };
 

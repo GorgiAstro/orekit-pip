@@ -16,10 +16,10 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace propagation {
-      class SpacecraftState;
       namespace numerical {
         class NumericalPropagator;
       }
+      class SpacecraftState;
     }
   }
 }
@@ -32,14 +32,14 @@ namespace org {
       class PythonAbstractMultipleShooting : public ::org::orekit::utils::AbstractMultipleShooting {
        public:
         enum {
-          mid_init$_fcb1b7dcba0178cf,
-          mid_computeAdditionalConstraints_a16345554cd829da,
-          mid_computeAdditionalJacobianMatrix_223f424c780300ce,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_getAugmentedInitialState_f4730dd89e9880a0,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_init$_05850f9fd1cddc8a,
+          mid_computeAdditionalConstraints_f7899d4480f6af2b,
+          mid_computeAdditionalJacobianMatrix_f1fb8031f2a01da7,
+          mid_finalize_ff7cb6c242604316,
+          mid_getAugmentedInitialState_bc8abbf0245ce660,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
           max_mid
         };
 

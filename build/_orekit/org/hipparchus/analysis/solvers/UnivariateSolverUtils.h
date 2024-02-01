@@ -5,17 +5,17 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class NullArgumentException;
-      class MathIllegalArgumentException;
-    }
     namespace analysis {
       namespace solvers {
-        class BracketedUnivariateSolver;
         class AllowedSolution;
+        class BracketedUnivariateSolver;
       }
       class UnivariateFunction;
       class CalculusFieldUnivariateFunction;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+      class NullArgumentException;
     }
     class CalculusFieldElement;
   }
@@ -35,21 +35,21 @@ namespace org {
         class UnivariateSolverUtils : public ::java::lang::Object {
          public:
           enum {
-            mid_bracket_26c61f283b74355e,
-            mid_bracket_ecb059e7a302e82b,
-            mid_bracket_a571d14e2a719f43,
-            mid_bracket_c1721adb193fa0da,
-            mid_bracket_d41ccbfa744c4e3e,
-            mid_bracket_e3d8316b64f6e8ef,
-            mid_forceSide_c334e0ee1dc3b91e,
-            mid_isBracketing_8833bdb865ca4110,
-            mid_isSequence_bf10cceb76af8f9c,
-            mid_midpoint_99e3200dafc19573,
-            mid_solve_0313652d45b9425b,
-            mid_solve_c3fe2f21161f2c00,
-            mid_verifyBracketing_9d8b62edc3c4b123,
-            mid_verifyInterval_369b4c97255d5afa,
-            mid_verifySequence_b5167f35b2521627,
+            mid_bracket_e3f421790ff933be,
+            mid_bracket_e46afa233273adfb,
+            mid_bracket_dddc38e6e775dbf1,
+            mid_bracket_b5a9fea683362dcf,
+            mid_bracket_3ca7c0fdd4b9ad45,
+            mid_bracket_ecf3e65a7cf8fbcf,
+            mid_forceSide_d9f29460303e6086,
+            mid_isBracketing_3128f9dde8ed0864,
+            mid_isSequence_de33958d3e7816c8,
+            mid_midpoint_82f92590f4247da1,
+            mid_solve_fdd56ebd95eae6c2,
+            mid_solve_c95a4e4458ad3d65,
+            mid_verifyBracketing_ea7556216ba6c251,
+            mid_verifyInterval_13edac039e8cc967,
+            mid_verifySequence_bd28dc6055dc5bbd,
             max_mid
           };
 
@@ -68,8 +68,8 @@ namespace org {
           static JArray< ::org::hipparchus::CalculusFieldElement > bracket(const ::org::hipparchus::analysis::CalculusFieldUnivariateFunction &, const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::CalculusFieldElement &);
           static JArray< ::org::hipparchus::CalculusFieldElement > bracket(const ::org::hipparchus::analysis::CalculusFieldUnivariateFunction &, const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::CalculusFieldElement &, jint);
           static JArray< jdouble > bracket(const ::org::hipparchus::analysis::UnivariateFunction &, jdouble, jdouble, jdouble, jint);
-          static JArray< jdouble > bracket(const ::org::hipparchus::analysis::UnivariateFunction &, jdouble, jdouble, jdouble, jdouble, jdouble, jint);
           static JArray< ::org::hipparchus::CalculusFieldElement > bracket(const ::org::hipparchus::analysis::CalculusFieldUnivariateFunction &, const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::CalculusFieldElement &, jint);
+          static JArray< jdouble > bracket(const ::org::hipparchus::analysis::UnivariateFunction &, jdouble, jdouble, jdouble, jdouble, jdouble, jint);
           static jdouble forceSide(jint, const ::org::hipparchus::analysis::UnivariateFunction &, const ::org::hipparchus::analysis::solvers::BracketedUnivariateSolver &, jdouble, jdouble, jdouble, const ::org::hipparchus::analysis::solvers::AllowedSolution &);
           static jboolean isBracketing(const ::org::hipparchus::analysis::UnivariateFunction &, jdouble, jdouble);
           static jboolean isSequence(jdouble, jdouble, jdouble);

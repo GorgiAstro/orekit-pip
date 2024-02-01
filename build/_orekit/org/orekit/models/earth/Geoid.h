@@ -8,10 +8,10 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
-          class FieldLine;
           class Line;
+          class FieldLine;
+          class Vector3D;
         }
       }
     }
@@ -19,9 +19,23 @@ namespace org {
   namespace orekit {
     namespace models {
       namespace earth {
-        class EarthShape;
         class ReferenceEllipsoid;
+        class EarthShape;
       }
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
+    namespace bodies {
+      class FieldGeodeticPoint;
+      class GeodeticPoint;
+    }
+    namespace utils {
+      class TimeStampedPVCoordinates;
+    }
+    namespace frames {
+      class Frame;
     }
     namespace forces {
       namespace gravity {
@@ -29,20 +43,6 @@ namespace org {
           class NormalizedSphericalHarmonicsProvider;
         }
       }
-    }
-    namespace bodies {
-      class FieldGeodeticPoint;
-      class GeodeticPoint;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class TimeStampedPVCoordinates;
-    }
-    namespace frames {
-      class Frame;
     }
   }
 }
@@ -61,18 +61,18 @@ namespace org {
         class Geoid : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_4a44bc3ed7ac722b,
-            mid_getBodyFrame_2c51111cc6894ba1,
-            mid_getEllipsoid_aa643af2699b886e,
-            mid_getIntersectionPoint_66b39d6d84447197,
-            mid_getIntersectionPoint_f1db6d4c78519d48,
-            mid_getUndulation_dab1578b184aa9a9,
-            mid_projectToGround_3cbe213b2c291f18,
-            mid_projectToGround_feded476b8bdfcfc,
-            mid_transform_6aa36b82e3b80b58,
-            mid_transform_a840d9913a98925f,
-            mid_transform_93de77ed9854e321,
-            mid_transform_f67fa82bac3192f0,
+            mid_init$_4df5b2f5167a1585,
+            mid_getBodyFrame_cb151471db4570f0,
+            mid_getEllipsoid_cff2eba11ebd2420,
+            mid_getIntersectionPoint_9f0bcc9c00772903,
+            mid_getIntersectionPoint_ade5649cae5a4672,
+            mid_getUndulation_aae72683f06306ac,
+            mid_projectToGround_28dd2a6cc35491d2,
+            mid_projectToGround_26b1db430bbeb49e,
+            mid_transform_f974aaaf2e73b405,
+            mid_transform_0bfc32b1890053a9,
+            mid_transform_82a0f6c52928ba20,
+            mid_transform_52f3336802c12846,
             max_mid
           };
 
@@ -91,8 +91,8 @@ namespace org {
 
           ::org::orekit::frames::Frame getBodyFrame() const;
           ::org::orekit::models::earth::ReferenceEllipsoid getEllipsoid() const;
-          ::org::orekit::bodies::FieldGeodeticPoint getIntersectionPoint(const ::org::hipparchus::geometry::euclidean::threed::FieldLine &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::FieldAbsoluteDate &) const;
           ::org::orekit::bodies::GeodeticPoint getIntersectionPoint(const ::org::hipparchus::geometry::euclidean::threed::Line &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::AbsoluteDate &) const;
+          ::org::orekit::bodies::FieldGeodeticPoint getIntersectionPoint(const ::org::hipparchus::geometry::euclidean::threed::FieldLine &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::FieldAbsoluteDate &) const;
           jdouble getUndulation(jdouble, jdouble, const ::org::orekit::time::AbsoluteDate &) const;
           ::org::orekit::utils::TimeStampedPVCoordinates projectToGround(const ::org::orekit::utils::TimeStampedPVCoordinates &, const ::org::orekit::frames::Frame &) const;
           ::org::hipparchus::geometry::euclidean::threed::Vector3D projectToGround(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;

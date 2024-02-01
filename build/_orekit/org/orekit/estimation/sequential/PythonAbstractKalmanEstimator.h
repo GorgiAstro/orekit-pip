@@ -36,12 +36,12 @@ namespace org {
         class PythonAbstractKalmanEstimator : public ::org::orekit::estimation::sequential::AbstractKalmanEstimator {
          public:
           enum {
-            mid_init$_0e7c3032c7c93ed3,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getKalmanEstimation_10690b877ea302f7,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_aa335fea495d60e0,
+            mid_finalize_ff7cb6c242604316,
+            mid_getKalmanEstimation_e73dd18a212e3cd0,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

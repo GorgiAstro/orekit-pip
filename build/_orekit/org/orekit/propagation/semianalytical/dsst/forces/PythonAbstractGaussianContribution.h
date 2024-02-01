@@ -3,24 +3,12 @@
 
 #include "org/orekit/propagation/semianalytical/dsst/forces/AbstractGaussianContribution.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
-    namespace forces {
-      class ForceModel;
+    namespace utils {
+      class ParameterDriver;
     }
     namespace propagation {
-      class SpacecraftState;
-      class FieldSpacecraftState;
       namespace semianalytical {
         namespace dsst {
           namespace utilities {
@@ -29,13 +17,25 @@ namespace org {
           }
         }
       }
+      class FieldSpacecraftState;
+      class SpacecraftState;
     }
-    namespace utils {
-      class ParameterDriver;
+    namespace forces {
+      class ForceModel;
     }
   }
   namespace hipparchus {
     class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -50,14 +50,14 @@ namespace org {
             class PythonAbstractGaussianContribution : public ::org::orekit::propagation::semianalytical::dsst::forces::AbstractGaussianContribution {
              public:
               enum {
-                mid_init$_d5ff3cc52c55df24,
-                mid_finalize_a1fa5dae97ea5ed2,
-                mid_getLLimits_9b6fd6b3a2b07f62,
-                mid_getLLimits_1abf2eee80dffc68,
-                mid_getParametersDriversWithoutMu_e62d3bb06d56d7e3,
-                mid_pythonDecRef_a1fa5dae97ea5ed2,
-                mid_pythonExtension_6c0ce7e438e5ded4,
-                mid_pythonExtension_3d7dd2314a0dd456,
+                mid_init$_e31d0f82a9451a32,
+                mid_finalize_ff7cb6c242604316,
+                mid_getLLimits_5bf18b5e9ec57652,
+                mid_getLLimits_15451c899b8436e1,
+                mid_getParametersDriversWithoutMu_d751c1a57012b438,
+                mid_pythonDecRef_ff7cb6c242604316,
+                mid_pythonExtension_42c72b98e3c2e08a,
+                mid_pythonExtension_f5bbab7e97879358,
                 max_mid
               };
 

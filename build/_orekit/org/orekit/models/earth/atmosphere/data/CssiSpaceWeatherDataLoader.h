@@ -5,29 +5,22 @@
 
 namespace java {
   namespace io {
-    class InputStream;
     class IOException;
+    class InputStream;
   }
   namespace text {
     class ParseException;
+  }
+  namespace util {
+    class SortedSet;
   }
   namespace lang {
     class Class;
     class String;
   }
-  namespace util {
-    class SortedSet;
-  }
 }
 namespace org {
   namespace orekit {
-    namespace errors {
-      class OrekitException;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class TimeScale;
-    }
     namespace models {
       namespace earth {
         namespace atmosphere {
@@ -36,6 +29,13 @@ namespace org {
           }
         }
       }
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeScale;
+    }
+    namespace errors {
+      class OrekitException;
     }
   }
 }
@@ -51,11 +51,11 @@ namespace org {
             class CssiSpaceWeatherDataLoader : public ::org::orekit::models::earth::atmosphere::data::AbstractSolarActivityDataLoader {
              public:
               enum {
-                mid_init$_cae5d0c3721eff67,
-                mid_getDataSet_7961e54fd3a47d94,
-                mid_getLastDailyPredictedDate_c325492395d89b24,
-                mid_getLastObservedDate_c325492395d89b24,
-                mid_loadData_360461e719fb564c,
+                mid_init$_7cb2659f4799e4d2,
+                mid_getDataSet_815c7115fae241c1,
+                mid_getLastDailyPredictedDate_80e11148db499dda,
+                mid_getLastObservedDate_80e11148db499dda,
+                mid_loadData_bec0f846e5ec73da,
                 max_mid
               };
 

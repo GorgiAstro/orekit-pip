@@ -26,12 +26,12 @@ namespace org {
         class ObservableSatellite : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_44ed599e93e8a30c,
-            mid_equals_460c5e2d9d51c6cc,
-            mid_getClockDriftDriver_a59daa5e273117e1,
-            mid_getClockOffsetDriver_a59daa5e273117e1,
-            mid_getPropagatorIndex_55546ef6a647f39b,
-            mid_hashCode_55546ef6a647f39b,
+            mid_init$_8fd427ab23829bf5,
+            mid_equals_72faff9b05f5ed5e,
+            mid_getClockDriftDriver_7daccb22665e511b,
+            mid_getClockOffsetDriver_7daccb22665e511b,
+            mid_getPropagatorIndex_d6ab429752e7c267,
+            mid_hashCode_d6ab429752e7c267,
             max_mid
           };
 

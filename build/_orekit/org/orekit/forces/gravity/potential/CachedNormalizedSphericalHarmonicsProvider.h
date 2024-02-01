@@ -5,17 +5,17 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace forces {
       namespace gravity {
         namespace potential {
-          class NormalizedSphericalHarmonicsProvider;
           class NormalizedSphericalHarmonicsProvider$NormalizedSphericalHarmonics;
           class TideSystem;
+          class NormalizedSphericalHarmonicsProvider;
         }
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -35,14 +35,14 @@ namespace org {
           class CachedNormalizedSphericalHarmonicsProvider : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_5f6b6f2b21e32b4e,
-              mid_getAe_b74f83833fdad017,
-              mid_getMaxDegree_55546ef6a647f39b,
-              mid_getMaxOrder_55546ef6a647f39b,
-              mid_getMu_b74f83833fdad017,
-              mid_getReferenceDate_c325492395d89b24,
-              mid_getTideSystem_b2b14af197a8eaf6,
-              mid_onDate_3543a5b2e9e83041,
+              mid_init$_ce34ee8e438d90f5,
+              mid_getAe_9981f74b2d109da6,
+              mid_getMaxDegree_d6ab429752e7c267,
+              mid_getMaxOrder_d6ab429752e7c267,
+              mid_getMu_9981f74b2d109da6,
+              mid_getReferenceDate_80e11148db499dda,
+              mid_getTideSystem_1e0f912623cd4841,
+              mid_onDate_eb84deac0f960db9,
               max_mid
             };
 

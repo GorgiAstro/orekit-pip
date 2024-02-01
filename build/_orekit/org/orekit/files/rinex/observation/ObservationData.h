@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace gnss {
       class ObservationType;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,11 +26,11 @@ namespace org {
           class ObservationData : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_9af4f38a9192ac92,
-              mid_getLossOfLockIndicator_55546ef6a647f39b,
-              mid_getObservationType_eeb5027d2516140e,
-              mid_getSignalStrength_55546ef6a647f39b,
-              mid_getValue_b74f83833fdad017,
+              mid_init$_e0202a1206436143,
+              mid_getLossOfLockIndicator_d6ab429752e7c267,
+              mid_getObservationType_e80ef1520523663f,
+              mid_getSignalStrength_d6ab429752e7c267,
+              mid_getValue_9981f74b2d109da6,
               max_mid
             };
 

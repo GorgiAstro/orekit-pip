@@ -18,8 +18,8 @@ namespace org {
         class UpdatableTile : public ::java::lang::Object {
          public:
           enum {
-            mid_setElevation_94fe8d9ffeb50676,
-            mid_setGeometry_e55884eaad2c5051,
+            mid_setElevation_e98d7b3e971b6087,
+            mid_setGeometry_d690bb44b994cfa6,
             max_mid
           };
 

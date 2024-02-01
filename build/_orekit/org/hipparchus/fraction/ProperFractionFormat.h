@@ -4,15 +4,15 @@
 #include "org/hipparchus/fraction/FractionFormat.h"
 
 namespace java {
-  namespace text {
-    class FieldPosition;
-    class ParsePosition;
-    class NumberFormat;
-  }
   namespace lang {
     class StringBuffer;
     class Class;
     class String;
+  }
+  namespace text {
+    class FieldPosition;
+    class NumberFormat;
+    class ParsePosition;
   }
 }
 namespace org {
@@ -31,12 +31,12 @@ namespace org {
       class ProperFractionFormat : public ::org::hipparchus::fraction::FractionFormat {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_init$_b7f3d50b51ef7518,
-          mid_init$_5e266d97253f08b1,
-          mid_format_87568a31a08a12c5,
-          mid_getWholeFormat_87ffffc449cd25a5,
-          mid_parse_813491fbcb23677d,
+          mid_init$_ff7cb6c242604316,
+          mid_init$_327b6d3ae10b544b,
+          mid_init$_8803c3bb12b07c13,
+          mid_format_fdb3091a5d795ad8,
+          mid_getWholeFormat_525709eb5c5b5ea6,
+          mid_parse_15ac28a32cea3b83,
           max_mid
         };
 

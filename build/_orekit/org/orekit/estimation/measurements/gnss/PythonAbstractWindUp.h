@@ -3,20 +3,14 @@
 
 #include "org/orekit/estimation/measurements/gnss/AbstractWindUp.h"
 
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class EstimatedMeasurementBase;
         namespace gnss {
           class Dipole;
         }
+        class EstimatedMeasurementBase;
       }
     }
   }
@@ -30,6 +24,12 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -41,13 +41,13 @@ namespace org {
           class PythonAbstractWindUp : public ::org::orekit::estimation::measurements::gnss::AbstractWindUp {
            public:
             enum {
-              mid_init$_a460ca1565b8ffe9,
-              mid_emitterToInert_3b9f748b89094cc6,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
-              mid_receiverToInert_3b9f748b89094cc6,
+              mid_init$_9fe7365dd1a516af,
+              mid_emitterToInert_f462106a6ca97aca,
+              mid_finalize_ff7cb6c242604316,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
+              mid_receiverToInert_f462106a6ca97aca,
               max_mid
             };
 

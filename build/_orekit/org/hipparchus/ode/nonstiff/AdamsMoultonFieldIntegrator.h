@@ -3,18 +3,18 @@
 
 #include "org/hipparchus/ode/nonstiff/AdamsFieldIntegrator.h"
 
-namespace java {
-  namespace lang {
-    class IllegalArgumentException;
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
+    class Field;
     namespace exception {
       class MathIllegalArgumentException;
     }
-    class Field;
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
+    class IllegalArgumentException;
   }
 }
 template<class T> class JArray;
@@ -27,10 +27,10 @@ namespace org {
         class AdamsMoultonFieldIntegrator : public ::org::hipparchus::ode::nonstiff::AdamsFieldIntegrator {
          public:
           enum {
-            mid_init$_e901ecf0331569ba,
-            mid_init$_b37354c6de25af2c,
-            mid_errorEstimation_f9ae7f7ac73655c8,
-            mid_finalizeStep_b4c879a61b350879,
+            mid_init$_d184aa390d2d04c4,
+            mid_init$_a87bd547f4148176,
+            mid_errorEstimation_6aa3626a66e9d9b5,
+            mid_finalizeStep_0548923e7e2ccdf5,
             max_mid
           };
 

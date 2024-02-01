@@ -10,15 +10,15 @@ namespace org {
         namespace ndm {
           namespace adm {
             namespace apm {
-              class ApmQuaternionKey;
               class ApmQuaternion;
+              class ApmQuaternionKey;
             }
           }
         }
         namespace utils {
           namespace lexical {
-            class ParseToken$DateConsumer;
             class ParseToken;
+            class ParseToken$DateConsumer;
           }
           class ContextBinding;
         }
@@ -45,9 +45,9 @@ namespace org {
               class ApmQuaternionKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_e4aeed1817fe34ba,
-                  mid_valueOf_357749d95820527f,
-                  mid_values_4ceced6c9e2a346d,
+                  mid_process_cdd21d2aff25c10c,
+                  mid_valueOf_2c96281b843345ce,
+                  mid_values_0299707d41b404bf,
                   max_mid
                 };
 

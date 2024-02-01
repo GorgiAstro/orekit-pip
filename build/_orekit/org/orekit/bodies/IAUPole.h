@@ -8,8 +8,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
@@ -17,8 +17,8 @@ namespace org {
   }
   namespace orekit {
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
   }
 }
@@ -36,12 +36,12 @@ namespace org {
       class IAUPole : public ::java::io::Serializable {
        public:
         enum {
-          mid_getNode_082e6346b274f880,
-          mid_getNode_362941be972fb4b5,
-          mid_getPole_082e6346b274f880,
-          mid_getPole_362941be972fb4b5,
-          mid_getPrimeMeridianAngle_fd347811007a6ba3,
-          mid_getPrimeMeridianAngle_140b8964300ddedf,
+          mid_getNode_8b37cafaaf55a3a5,
+          mid_getNode_8e5aead0a4b0cc16,
+          mid_getPole_8b37cafaaf55a3a5,
+          mid_getPole_8e5aead0a4b0cc16,
+          mid_getPrimeMeridianAngle_209f08246d708042,
+          mid_getPrimeMeridianAngle_cf010978f3c5a913,
           max_mid
         };
 

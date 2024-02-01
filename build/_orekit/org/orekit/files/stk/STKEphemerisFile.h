@@ -3,6 +3,22 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace general {
+        class EphemerisFile;
+      }
+      namespace stk {
+        class STKEphemerisFile$STKEphemeris;
+        class STKEphemerisFile$STKEphemerisSegment;
+      }
+    }
+    namespace utils {
+      class TimeStampedPVCoordinates;
+    }
+  }
+}
 namespace java {
   namespace util {
     class Map;
@@ -10,22 +26,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace utils {
-      class TimeStampedPVCoordinates;
-    }
-    namespace files {
-      namespace stk {
-        class STKEphemerisFile$STKEphemeris;
-        class STKEphemerisFile$STKEphemerisSegment;
-      }
-      namespace general {
-        class EphemerisFile;
-      }
-    }
   }
 }
 template<class T> class JArray;
@@ -38,9 +38,9 @@ namespace org {
         class STKEphemerisFile : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_95a45b28b2bbbb14,
-            mid_getSTKVersion_1c1fa1e935d6cdcf,
-            mid_getSatellites_810bed48fafb0b9a,
+            mid_init$_13dc0383f794fc36,
+            mid_getSTKVersion_d2c8eb4129821f0e,
+            mid_getSatellites_dbcb8bbac6b35e0d,
             max_mid
           };
 

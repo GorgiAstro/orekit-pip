@@ -3,17 +3,17 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace frames {
       class LocalMagneticFieldFrame$LOFBuilderVector;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,8 +25,8 @@ namespace org {
       class LocalMagneticFieldFrame$LOFBuilderVector : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_162f8dd74dfd19a3,
-          mid_values_dff922766d1166ca,
+          mid_valueOf_706cc013fa5f46ac,
+          mid_values_b34dc436fa10625b,
           max_mid
         };
 

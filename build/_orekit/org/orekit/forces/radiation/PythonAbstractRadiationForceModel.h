@@ -8,23 +8,23 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
     class CalculusFieldElement;
   }
   namespace orekit {
-    namespace utils {
-      class ExtendedPVCoordinatesProvider;
-      class ParameterDriver;
+    namespace time {
+      class AbsoluteDate;
     }
     namespace bodies {
       class OneAxisEllipsoid;
     }
-    namespace time {
-      class AbsoluteDate;
+    namespace utils {
+      class ExtendedPVCoordinatesProvider;
+      class ParameterDriver;
     }
     namespace propagation {
       class FieldSpacecraftState;
@@ -50,11 +50,11 @@ namespace org {
         class PythonAbstractRadiationForceModel : public ::org::orekit::forces::radiation::AbstractRadiationForceModel {
          public:
           enum {
-            mid_init$_9ef5443d0ff1b80f,
-            mid_acceleration_20bded0292328743,
-            mid_acceleration_0ce449c67b5ffd9c,
-            mid_getParametersDrivers_e62d3bb06d56d7e3,
-            mid_init_2d7f9a496c7e9781,
+            mid_init$_91e2420e47e6f11a,
+            mid_acceleration_5e147f44c28a35c9,
+            mid_acceleration_9816b8f76e94356a,
+            mid_getParametersDrivers_d751c1a57012b438,
+            mid_init_14deaae988292d42,
             max_mid
           };
 

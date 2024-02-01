@@ -8,17 +8,17 @@ namespace org {
     namespace files {
       namespace ccsds {
         namespace ndm {
-          namespace odm {
-            class UserDefined;
-          }
           namespace adm {
             namespace acm {
               class AttitudeStateHistory;
+              class AttitudeCovarianceHistory;
               class AttitudeManeuver;
               class AttitudePhysicalProperties;
               class AttitudeDetermination;
-              class AttitudeCovarianceHistory;
             }
+          }
+          namespace odm {
+            class UserDefined;
           }
         }
         namespace section {
@@ -49,14 +49,14 @@ namespace org {
               class AcmData : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_6ce4ddf0ec24098a,
-                  mid_getAttitudeBlocks_e62d3bb06d56d7e3,
-                  mid_getAttitudeDeterminationBlock_adfc0fd0f6504ca8,
-                  mid_getCovarianceBlocks_e62d3bb06d56d7e3,
-                  mid_getManeuverBlocks_e62d3bb06d56d7e3,
-                  mid_getPhysicBlock_3f83339f870dc50a,
-                  mid_getUserDefinedBlock_757fcfae3141e23d,
-                  mid_validate_8ba9fe7a847cecad,
+                  mid_init$_1ed124a1eda7d299,
+                  mid_getAttitudeBlocks_d751c1a57012b438,
+                  mid_getAttitudeDeterminationBlock_c13419de6f3bd7e5,
+                  mid_getCovarianceBlocks_d751c1a57012b438,
+                  mid_getManeuverBlocks_d751c1a57012b438,
+                  mid_getPhysicBlock_af975caed36be997,
+                  mid_getUserDefinedBlock_b8dba07746e1b089,
+                  mid_validate_1ad26e8c8c0cd65b,
                   max_mid
                 };
 

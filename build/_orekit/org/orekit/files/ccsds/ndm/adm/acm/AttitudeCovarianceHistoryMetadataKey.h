@@ -7,6 +7,12 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace utils {
+          namespace lexical {
+            class ParseToken;
+          }
+          class ContextBinding;
+        }
         namespace ndm {
           namespace adm {
             namespace acm {
@@ -14,12 +20,6 @@ namespace org {
               class AttitudeCovarianceHistoryMetadata;
             }
           }
-        }
-        namespace utils {
-          namespace lexical {
-            class ParseToken;
-          }
-          class ContextBinding;
         }
       }
     }
@@ -44,9 +44,9 @@ namespace org {
               class AttitudeCovarianceHistoryMetadataKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_fd6ae81ae15d407c,
-                  mid_valueOf_da69b5ebcba70c41,
-                  mid_values_c949f946bb78b56c,
+                  mid_process_1f1fbacba6da77e2,
+                  mid_valueOf_9fc6548b11f261cc,
+                  mid_values_b54a02921be8c5bd,
                   max_mid
                 };
 

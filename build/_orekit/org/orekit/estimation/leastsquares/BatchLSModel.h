@@ -3,8 +3,22 @@
 
 #include "org/orekit/estimation/leastsquares/AbstractBatchLSModel.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class Object;
+  }
+}
 namespace org {
   namespace orekit {
+    namespace propagation {
+      namespace conversion {
+        class PropagatorBuilder;
+      }
+    }
     namespace utils {
       class ParameterDriversList;
     }
@@ -16,20 +30,6 @@ namespace org {
         class ModelObserver;
       }
     }
-    namespace propagation {
-      namespace conversion {
-        class PropagatorBuilder;
-      }
-    }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class Object;
   }
 }
 template<class T> class JArray;
@@ -42,9 +42,9 @@ namespace org {
         class BatchLSModel : public ::org::orekit::estimation::leastsquares::AbstractBatchLSModel {
          public:
           enum {
-            mid_init$_244486d6f58d6cbc,
-            mid_configureHarvester_dafc362fdc9e50eb,
-            mid_configureOrbits_3575848f266bfbed,
+            mid_init$_f278310556712c73,
+            mid_configureHarvester_1a5b9825e639ffce,
+            mid_configureOrbits_88ee223eb65bb3ed,
             max_mid
           };
 

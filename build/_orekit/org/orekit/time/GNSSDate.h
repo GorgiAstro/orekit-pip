@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace time {
       class TimeStamped;
-      class DateComponents;
       class AbsoluteDate;
+      class DateComponents;
       class TimeScales;
     }
     namespace gnss {
@@ -33,17 +33,17 @@ namespace org {
       class GNSSDate : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_460e3cbac92b81c9,
-          mid_init$_c2fc6034b56e038c,
-          mid_init$_de6f9a13eca5764a,
-          mid_init$_eb78c67fa56638d0,
-          mid_init$_c372ae533369c432,
-          mid_getDate_c325492395d89b24,
-          mid_getMilliInWeek_b74f83833fdad017,
-          mid_getRolloverReference_357436921b6db81c,
-          mid_getSecondsInWeek_b74f83833fdad017,
-          mid_getWeekNumber_55546ef6a647f39b,
-          mid_setRolloverReference_a97e9138404c69cd,
+          mid_init$_7695923634acd0ad,
+          mid_init$_bf7567e1d0c046a5,
+          mid_init$_de88248115685977,
+          mid_init$_acb5713e51f8e5e7,
+          mid_init$_d807d8762531da61,
+          mid_getDate_80e11148db499dda,
+          mid_getMilliInWeek_9981f74b2d109da6,
+          mid_getRolloverReference_70bc100457881a79,
+          mid_getSecondsInWeek_9981f74b2d109da6,
+          mid_getWeekNumber_d6ab429752e7c267,
+          mid_setRolloverReference_badbbe8d1e1c6168,
           max_mid
         };
 

@@ -28,10 +28,10 @@ namespace org {
       class CelestialBody : public ::java::io::Serializable {
        public:
         enum {
-          mid_getBodyOrientedFrame_2c51111cc6894ba1,
-          mid_getGM_b74f83833fdad017,
-          mid_getInertiallyOrientedFrame_2c51111cc6894ba1,
-          mid_getName_1c1fa1e935d6cdcf,
+          mid_getBodyOrientedFrame_cb151471db4570f0,
+          mid_getGM_9981f74b2d109da6,
+          mid_getInertiallyOrientedFrame_cb151471db4570f0,
+          mid_getName_d2c8eb4129821f0e,
           max_mid
         };
 

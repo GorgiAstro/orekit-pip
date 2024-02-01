@@ -31,8 +31,8 @@ namespace org {
           class YesNoUnknown : public ::java::lang::Enum {
            public:
             enum {
-              mid_valueOf_1d31839118dfb5d7,
-              mid_values_aad02560f94482df,
+              mid_valueOf_77343c17cd88fecd,
+              mid_values_4745b2960e204098,
               max_mid
             };
 

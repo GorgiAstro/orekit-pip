@@ -6,12 +6,16 @@
 namespace org {
   namespace orekit {
     namespace files {
+      namespace general {
+        class EphemerisFile;
+        class EphemerisFileWriter;
+      }
       namespace ccsds {
         namespace ndm {
           namespace odm {
             namespace ocm {
-              class OcmMetadata;
               class TrajectoryStateHistoryMetadata;
+              class OcmMetadata;
               class OcmWriter;
             }
             class OdmHeader;
@@ -20,10 +24,6 @@ namespace org {
         namespace utils {
           class FileFormat;
         }
-      }
-      namespace general {
-        class EphemerisFileWriter;
-        class EphemerisFile;
       }
     }
   }
@@ -51,8 +51,8 @@ namespace org {
               class EphemerisOcmWriter : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_327daf74e29d7521,
-                  mid_write_b257e3ad1002b2a9,
+                  mid_init$_b841797e4355eabe,
+                  mid_write_12ce9ebfe43ac6e6,
                   max_mid
                 };
 

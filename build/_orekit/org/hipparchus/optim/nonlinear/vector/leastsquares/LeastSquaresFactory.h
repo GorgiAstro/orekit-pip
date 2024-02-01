@@ -5,16 +5,20 @@
 
 namespace org {
   namespace hipparchus {
+    namespace analysis {
+      class MultivariateVectorFunction;
+      class MultivariateMatrixFunction;
+    }
     namespace optim {
-      class PointVectorValuePair;
       class ConvergenceChecker;
+      class PointVectorValuePair;
       namespace nonlinear {
         namespace vector {
           namespace leastsquares {
             class ParameterValidator;
             class MultivariateJacobianFunction;
-            class LeastSquaresProblem$Evaluation;
             class LeastSquaresProblem;
+            class LeastSquaresProblem$Evaluation;
           }
         }
       }
@@ -22,13 +26,9 @@ namespace org {
     namespace util {
       class Incrementor;
     }
-    namespace analysis {
-      class MultivariateVectorFunction;
-      class MultivariateMatrixFunction;
-    }
     namespace linear {
-      class RealVector;
       class RealMatrix;
+      class RealVector;
     }
   }
 }
@@ -49,15 +49,15 @@ namespace org {
             class LeastSquaresFactory : public ::java::lang::Object {
              public:
               enum {
-                mid_countEvaluations_bc3bf0361cf57cc2,
-                mid_create_d73376b7ee9ea4da,
-                mid_create_8439c4332e96ba70,
-                mid_create_a2ad252f198005e9,
-                mid_create_f8d2e8c227588133,
-                mid_evaluationChecker_fd9762d68ea9c296,
-                mid_model_d5a9fe02790fb184,
-                mid_weightDiagonal_e088da43f85317f3,
-                mid_weightMatrix_73812dc734cb49ee,
+                mid_countEvaluations_b27ff71e2dfbc50d,
+                mid_create_5f54f00a5eeef515,
+                mid_create_dfb8e4dfb091f1cf,
+                mid_create_dcfc25f5b61af029,
+                mid_create_c2c3c7c13d83953e,
+                mid_evaluationChecker_54fd72b186a20f21,
+                mid_model_f0d5667160012d0d,
+                mid_weightDiagonal_2615deba242b4f6b,
+                mid_weightMatrix_9ea72f16d18e4245,
                 max_mid
               };
 

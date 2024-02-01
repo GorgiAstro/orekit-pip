@@ -34,10 +34,10 @@ namespace org {
           class DualFrequencyHatchFilter : public ::org::orekit::estimation::measurements::filtering::HatchFilter {
            public:
             enum {
-              mid_init$_97f95739029128c6,
-              mid_filterData_cd95911c206f8ad1,
-              mid_getFirstFrequencyPhaseHistory_664cae6eaa0e211a,
-              mid_getSecondFrequencyPhaseHistory_664cae6eaa0e211a,
+              mid_init$_15ff097e4ab56a61,
+              mid_filterData_acd670ac11837f24,
+              mid_getFirstFrequencyPhaseHistory_4aaa6fa02985280c,
+              mid_getSecondFrequencyPhaseHistory_4aaa6fa02985280c,
               max_mid
             };
 

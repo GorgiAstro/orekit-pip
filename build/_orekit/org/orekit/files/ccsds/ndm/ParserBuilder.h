@@ -8,6 +8,10 @@ namespace org {
     namespace files {
       namespace ccsds {
         namespace ndm {
+          class NdmParser;
+          namespace tdm {
+            class TdmParser;
+          }
           namespace odm {
             namespace oem {
               class OemParser;
@@ -22,8 +26,6 @@ namespace org {
               class OpmParser;
             }
           }
-          class ParserBuilder;
-          class NdmParser;
           namespace adm {
             namespace aem {
               class AemParser;
@@ -35,11 +37,9 @@ namespace org {
               class AcmParser;
             }
           }
+          class ParserBuilder;
           namespace cdm {
             class CdmParser;
-          }
-          namespace tdm {
-            class TdmParser;
           }
           class ParsedUnitsBehavior;
         }
@@ -66,29 +66,29 @@ namespace org {
           class ParserBuilder : public ::org::orekit::files::ccsds::ndm::AbstractBuilder {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_init$_fe20320dccf187ae,
-              mid_buildAcmParser_669e2e607de238d7,
-              mid_buildAemParser_a398cc5ae305c6f3,
-              mid_buildApmParser_4e6ffe5d050aa001,
-              mid_buildCdmParser_8b41e9b19f9e779a,
-              mid_buildNdmParser_016e99a469ccb30f,
-              mid_buildOcmParser_e91e664b24f65476,
-              mid_buildOemParser_4ff941e5dc4793a0,
-              mid_buildOmmParser_718f6f4121095c8e,
-              mid_buildOpmParser_60a67f51f70c42ec,
-              mid_buildTdmParser_977ebf3ca2a0802d,
-              mid_getDefaultInterpolationDegree_55546ef6a647f39b,
-              mid_getDefaultMass_b74f83833fdad017,
-              mid_getMu_b74f83833fdad017,
-              mid_getParsedUnitsBehavior_b86f6bf8371fab43,
-              mid_isSimpleEOP_9ab94ac1dc23b105,
-              mid_withDefaultInterpolationDegree_ddc6bf6bb9ad611f,
-              mid_withDefaultMass_1c5846a8fcbe2f4d,
-              mid_withMu_1c5846a8fcbe2f4d,
-              mid_withParsedUnitsBehavior_68a946424d049c38,
-              mid_withSimpleEOP_c281418a6c58f1a2,
-              mid_create_41d8f1d7beb0fc5e,
+              mid_init$_ff7cb6c242604316,
+              mid_init$_e28302a82adb77ed,
+              mid_buildAcmParser_397557f13593ede8,
+              mid_buildAemParser_eb5f4dc14b29617c,
+              mid_buildApmParser_44724c4e4b854ec2,
+              mid_buildCdmParser_e546a3e931cb5b92,
+              mid_buildNdmParser_cb8a7531c6b49edb,
+              mid_buildOcmParser_e7a3c2d9a62629c6,
+              mid_buildOemParser_a517b0450fdb3998,
+              mid_buildOmmParser_95d92899297688d3,
+              mid_buildOpmParser_e13b341b4f517cd5,
+              mid_buildTdmParser_b124bbfa04761895,
+              mid_getDefaultInterpolationDegree_d6ab429752e7c267,
+              mid_getDefaultMass_9981f74b2d109da6,
+              mid_getMu_9981f74b2d109da6,
+              mid_getParsedUnitsBehavior_2cdcf2c78bfe02b7,
+              mid_isSimpleEOP_eee3de00fe971136,
+              mid_withDefaultInterpolationDegree_4ca1b888c33ecf3c,
+              mid_withDefaultMass_9437dbbc40d5787c,
+              mid_withMu_9437dbbc40d5787c,
+              mid_withParsedUnitsBehavior_6ecc9d16f861fa10,
+              mid_withSimpleEOP_2b37804fccc7a944,
+              mid_create_2e5c29c55da7a1ec,
               max_mid
             };
 

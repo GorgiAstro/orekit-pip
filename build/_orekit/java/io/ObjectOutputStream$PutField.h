@@ -21,17 +21,17 @@ namespace java {
     class ObjectOutputStream$PutField : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_a1fa5dae97ea5ed2,
-        mid_put_76cf8b957ccb7ae1,
-        mid_put_c99a0c15b2cc0a3e,
-        mid_put_165c6e94f6289825,
-        mid_put_b7ec643e4edd96c5,
-        mid_put_d859a3ff51dc23ad,
-        mid_put_02c6e5855745e0e2,
-        mid_put_2bd6b3882bcba51f,
-        mid_put_1d7f34ba2f8998cc,
-        mid_put_2b983c9d6fbe6a27,
-        mid_write_765c1712f3f1ff4b,
+        mid_init$_ff7cb6c242604316,
+        mid_put_c5d48f261709aa3e,
+        mid_put_4e8636a267c9c4c5,
+        mid_put_67ec27f36e12d83b,
+        mid_put_4a1c1c41794e71b1,
+        mid_put_93df5508dbbcb1df,
+        mid_put_409747bddf859341,
+        mid_put_8d1699d8ffa3b892,
+        mid_put_9eb977100dbabed8,
+        mid_put_5fd371a8d3f6eeac,
+        mid_write_7449e564e5e09d65,
         max_mid
       };
 

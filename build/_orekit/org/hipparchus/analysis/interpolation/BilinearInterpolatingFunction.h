@@ -9,10 +9,10 @@ namespace org {
       class FieldBivariateFunction;
       class BivariateFunction;
     }
-    class CalculusFieldElement;
     namespace exception {
       class MathIllegalArgumentException;
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -33,13 +33,13 @@ namespace org {
         class BilinearInterpolatingFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_3f7c4bf9d0d94a6c,
-            mid_getXInf_b74f83833fdad017,
-            mid_getXSup_b74f83833fdad017,
-            mid_getYInf_b74f83833fdad017,
-            mid_getYSup_b74f83833fdad017,
-            mid_value_99e3200dafc19573,
-            mid_value_c6408fdce2cc6c1a,
+            mid_init$_3a2cd39ad5830d3b,
+            mid_getXInf_9981f74b2d109da6,
+            mid_getXSup_9981f74b2d109da6,
+            mid_getYInf_9981f74b2d109da6,
+            mid_getYSup_9981f74b2d109da6,
+            mid_value_82f92590f4247da1,
+            mid_value_b5ecd7df9e053968,
             max_mid
           };
 

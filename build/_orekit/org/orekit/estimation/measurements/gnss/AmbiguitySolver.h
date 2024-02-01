@@ -3,13 +3,21 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
         namespace gnss {
-          class IntegerLeastSquareSolver;
           class AmbiguityAcceptance;
+          class IntegerLeastSquareSolver;
         }
       }
     }
@@ -23,14 +31,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -42,12 +42,12 @@ namespace org {
           class AmbiguitySolver : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_3356cf5f248c9aa7,
-              mid_fixIntegerAmbiguities_28ffeedd0599d7ff,
-              mid_getAllAmbiguityDrivers_e62d3bb06d56d7e3,
-              mid_unFixAmbiguity_5791d10af4720a8e,
-              mid_getFreeAmbiguityDrivers_e62d3bb06d56d7e3,
-              mid_getFreeAmbiguityIndirection_e94c5cd44e918936,
+              mid_init$_194abbe377979f00,
+              mid_fixIntegerAmbiguities_d67dabb42f6c4160,
+              mid_getAllAmbiguityDrivers_d751c1a57012b438,
+              mid_unFixAmbiguity_680e005705d5f0aa,
+              mid_getFreeAmbiguityDrivers_d751c1a57012b438,
+              mid_getFreeAmbiguityIndirection_614db482d0c8bf3b,
               max_mid
             };
 

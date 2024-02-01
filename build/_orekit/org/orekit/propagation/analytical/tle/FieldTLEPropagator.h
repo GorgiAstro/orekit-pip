@@ -5,18 +5,12 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class FieldPVCoordinates;
-      class ParameterDriver;
-    }
     namespace attitudes {
       class AttitudeProvider;
     }
-    namespace time {
-      class FieldAbsoluteDate;
-    }
-    namespace orbits {
-      class FieldOrbit;
+    namespace utils {
+      class FieldPVCoordinates;
+      class ParameterDriver;
     }
     namespace propagation {
       namespace analytical {
@@ -26,6 +20,12 @@ namespace org {
         }
       }
       class FieldSpacecraftState;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
+    }
+    namespace orbits {
+      class FieldOrbit;
     }
     namespace frames {
       class Frame;
@@ -54,21 +54,21 @@ namespace org {
           class FieldTLEPropagator : public ::org::orekit::propagation::analytical::FieldAbstractAnalyticalPropagator {
            public:
             enum {
-              mid_getFrame_2c51111cc6894ba1,
-              mid_getMU_b74f83833fdad017,
-              mid_getPVCoordinates_9d94392a8a6273fa,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_getTLE_6b300e1e872aa544,
-              mid_propagateOrbit_f34a7a94e111b112,
-              mid_resetInitialState_54d9efbf99822980,
-              mid_selectExtrapolator_d26eb822374e5cdc,
-              mid_selectExtrapolator_99422df6de0d8c34,
-              mid_selectExtrapolator_b801e0b1aca569c9,
-              mid_selectExtrapolator_8b98c2aeb28b2aaf,
-              mid_getMass_140b8964300ddedf,
-              mid_resetIntermediateState_871885b409df9d57,
-              mid_sxpInitialize_8b0f7facc8a6a46e,
-              mid_sxpPropagate_1d66803ed368a800,
+              mid_getFrame_cb151471db4570f0,
+              mid_getMU_9981f74b2d109da6,
+              mid_getPVCoordinates_4ef316d943d48c55,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_getTLE_f2ca7288b87b2f7c,
+              mid_propagateOrbit_78985b34baac5c8e,
+              mid_resetInitialState_8062511934471166,
+              mid_selectExtrapolator_2f7a1e2c44d03382,
+              mid_selectExtrapolator_b0f4204af1b344f4,
+              mid_selectExtrapolator_56cd94c915049917,
+              mid_selectExtrapolator_910643d05d65b410,
+              mid_getMass_cf010978f3c5a913,
+              mid_resetIntermediateState_e90aea08a7a0ab5e,
+              mid_sxpInitialize_77e61a645c496adc,
+              mid_sxpPropagate_8556964e7b03aae6,
               max_mid
             };
 

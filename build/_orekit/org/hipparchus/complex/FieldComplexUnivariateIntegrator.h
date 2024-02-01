@@ -9,10 +9,10 @@ namespace org {
       class FieldComplex;
     }
     namespace analysis {
-      class CalculusFieldUnivariateFunction;
       namespace integration {
         class FieldUnivariateIntegrator;
       }
+      class CalculusFieldUnivariateFunction;
     }
   }
 }
@@ -30,9 +30,9 @@ namespace org {
       class FieldComplexUnivariateIntegrator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_bfa8c3de537fe155,
-          mid_integrate_e8b296115a497457,
-          mid_integrate_8daa69e2f042f9b7,
+          mid_init$_0fd15d0f6119eac9,
+          mid_integrate_35c2bcb22914ec3d,
+          mid_integrate_0ec16bac50c3b50a,
           max_mid
         };
 

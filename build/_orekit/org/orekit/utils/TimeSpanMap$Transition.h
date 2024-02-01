@@ -29,13 +29,13 @@ namespace org {
       class TimeSpanMap$Transition : public ::java::lang::Object {
        public:
         enum {
-          mid_getAfter_541690f9ee81d3ad,
-          mid_getBefore_541690f9ee81d3ad,
-          mid_getDate_c325492395d89b24,
-          mid_getSpanAfter_5290b219f9ebfd63,
-          mid_getSpanBefore_5290b219f9ebfd63,
-          mid_next_c754c29f2c04a95a,
-          mid_previous_c754c29f2c04a95a,
+          mid_getAfter_704a5bee58538972,
+          mid_getBefore_704a5bee58538972,
+          mid_getDate_80e11148db499dda,
+          mid_getSpanAfter_ea49fa2ad441b95d,
+          mid_getSpanBefore_ea49fa2ad441b95d,
+          mid_next_1026700a6787ef22,
+          mid_previous_1026700a6787ef22,
           max_mid
         };
 

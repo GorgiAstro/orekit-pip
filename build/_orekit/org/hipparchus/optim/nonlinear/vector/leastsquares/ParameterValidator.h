@@ -27,7 +27,7 @@ namespace org {
             class ParameterValidator : public ::java::lang::Object {
              public:
               enum {
-                mid_validate_d5f1d017fd25113b,
+                mid_validate_bf8d75e459632544,
                 max_mid
               };
 

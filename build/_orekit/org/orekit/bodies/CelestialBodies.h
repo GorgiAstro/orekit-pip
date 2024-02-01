@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace bodies {
       class CelestialBody;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,20 +25,20 @@ namespace org {
       class CelestialBodies : public ::java::lang::Object {
        public:
         enum {
-          mid_getBody_7eb4325e211386e9,
-          mid_getEarth_5df52e80cbb5eb85,
-          mid_getEarthMoonBarycenter_5df52e80cbb5eb85,
-          mid_getJupiter_5df52e80cbb5eb85,
-          mid_getMars_5df52e80cbb5eb85,
-          mid_getMercury_5df52e80cbb5eb85,
-          mid_getMoon_5df52e80cbb5eb85,
-          mid_getNeptune_5df52e80cbb5eb85,
-          mid_getPluto_5df52e80cbb5eb85,
-          mid_getSaturn_5df52e80cbb5eb85,
-          mid_getSolarSystemBarycenter_5df52e80cbb5eb85,
-          mid_getSun_5df52e80cbb5eb85,
-          mid_getUranus_5df52e80cbb5eb85,
-          mid_getVenus_5df52e80cbb5eb85,
+          mid_getBody_0ed99bba3e5bd60c,
+          mid_getEarth_a1474f5cfab89b5e,
+          mid_getEarthMoonBarycenter_a1474f5cfab89b5e,
+          mid_getJupiter_a1474f5cfab89b5e,
+          mid_getMars_a1474f5cfab89b5e,
+          mid_getMercury_a1474f5cfab89b5e,
+          mid_getMoon_a1474f5cfab89b5e,
+          mid_getNeptune_a1474f5cfab89b5e,
+          mid_getPluto_a1474f5cfab89b5e,
+          mid_getSaturn_a1474f5cfab89b5e,
+          mid_getSolarSystemBarycenter_a1474f5cfab89b5e,
+          mid_getSun_a1474f5cfab89b5e,
+          mid_getUranus_a1474f5cfab89b5e,
+          mid_getVenus_a1474f5cfab89b5e,
           max_mid
         };
 

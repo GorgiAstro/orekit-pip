@@ -6,10 +6,10 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class FieldAbsoluteDate;
-      class DateComponents;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
       class TimeComponents;
+      class DateComponents;
     }
   }
   namespace hipparchus {
@@ -31,16 +31,16 @@ namespace org {
       class TimeScale : public ::java::io::Serializable {
        public:
         enum {
-          mid_getLeap_fd347811007a6ba3,
-          mid_getLeap_140b8964300ddedf,
-          mid_getName_1c1fa1e935d6cdcf,
-          mid_insideLeap_a35647bda2901f54,
-          mid_insideLeap_42be643fd1505244,
-          mid_minuteDuration_b977b1a10a6965aa,
-          mid_minuteDuration_e6b8e60343f2c829,
-          mid_offsetFromTAI_fd347811007a6ba3,
-          mid_offsetFromTAI_140b8964300ddedf,
-          mid_offsetToTAI_e7a49f02c43fd893,
+          mid_getLeap_209f08246d708042,
+          mid_getLeap_cf010978f3c5a913,
+          mid_getName_d2c8eb4129821f0e,
+          mid_insideLeap_b16e79ba1b2830a1,
+          mid_insideLeap_ada3024ac7559675,
+          mid_minuteDuration_94772beff3ac8a91,
+          mid_minuteDuration_23ced097258e06b3,
+          mid_offsetFromTAI_209f08246d708042,
+          mid_offsetFromTAI_cf010978f3c5a913,
+          mid_offsetToTAI_50aa1fdea9b81950,
           max_mid
         };
 

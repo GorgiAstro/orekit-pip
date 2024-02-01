@@ -12,9 +12,9 @@ namespace org {
       namespace semianalytical {
         namespace dsst {
           namespace forces {
-            class FieldShortPeriodTerms;
             class DSSTForceModel;
             class ShortPeriodTerms;
+            class FieldShortPeriodTerms;
           }
           namespace utilities {
             class FieldAuxiliaryElements;
@@ -23,8 +23,8 @@ namespace org {
         }
       }
       class PropagationType;
-      class SpacecraftState;
       class FieldSpacecraftState;
+      class SpacecraftState;
     }
     namespace forces {
       namespace gravity {
@@ -65,16 +65,16 @@ namespace org {
             class DSSTTesseral : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_927f9a6706832827,
-                mid_init$_dc03e910a32fe7c5,
-                mid_getMeanElementRate_7d3eb19aa1e75a63,
-                mid_getMeanElementRate_0483a0f94731abef,
-                mid_getParametersDrivers_e62d3bb06d56d7e3,
-                mid_initializeShortPeriodTerms_6fb0c582e8925f89,
-                mid_initializeShortPeriodTerms_3144241334d46411,
-                mid_registerAttitudeProvider_8e4d3ea100bc0095,
-                mid_updateShortPeriodTerms_5401e749436ec3b7,
-                mid_updateShortPeriodTerms_62f1ad39eb6f1276,
+                mid_init$_f71606b50743134e,
+                mid_init$_7954047194b7313f,
+                mid_getMeanElementRate_43ba9f5eaba95dbb,
+                mid_getMeanElementRate_3eb9526d5d611f82,
+                mid_getParametersDrivers_d751c1a57012b438,
+                mid_initializeShortPeriodTerms_1d563346dd4410fc,
+                mid_initializeShortPeriodTerms_29410e2fe048cdd6,
+                mid_registerAttitudeProvider_fddd0a7d9f33bafa,
+                mid_updateShortPeriodTerms_49390f5c28b648db,
+                mid_updateShortPeriodTerms_61d4f27408b30d56,
                 max_mid
               };
 
@@ -96,8 +96,8 @@ namespace org {
               DSSTTesseral(const ::org::orekit::frames::Frame &, jdouble, const ::org::orekit::forces::gravity::potential::UnnormalizedSphericalHarmonicsProvider &);
               DSSTTesseral(const ::org::orekit::frames::Frame &, jdouble, const ::org::orekit::forces::gravity::potential::UnnormalizedSphericalHarmonicsProvider &, jint, jint, jint, jint, jint, jint, jint);
 
-              JArray< ::org::hipparchus::CalculusFieldElement > getMeanElementRate(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::FieldAuxiliaryElements &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
               JArray< jdouble > getMeanElementRate(const ::org::orekit::propagation::SpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::AuxiliaryElements &, const JArray< jdouble > &) const;
+              JArray< ::org::hipparchus::CalculusFieldElement > getMeanElementRate(const ::org::orekit::propagation::FieldSpacecraftState &, const ::org::orekit::propagation::semianalytical::dsst::utilities::FieldAuxiliaryElements &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
               ::java::util::List getParametersDrivers() const;
               ::java::util::List initializeShortPeriodTerms(const ::org::orekit::propagation::semianalytical::dsst::utilities::AuxiliaryElements &, const ::org::orekit::propagation::PropagationType &, const JArray< jdouble > &) const;
               ::java::util::List initializeShortPeriodTerms(const ::org::orekit::propagation::semianalytical::dsst::utilities::FieldAuxiliaryElements &, const ::org::orekit::propagation::PropagationType &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;

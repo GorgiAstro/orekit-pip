@@ -4,14 +4,14 @@
 #include "java/util/PrimitiveIterator.h"
 
 namespace java {
-  namespace lang {
-    class Double;
-    class Class;
-  }
   namespace util {
     namespace function {
       class DoubleConsumer;
     }
+  }
+  namespace lang {
+    class Class;
+    class Double;
   }
 }
 template<class T> class JArray;
@@ -22,9 +22,9 @@ namespace java {
     class PrimitiveIterator$OfDouble : public ::java::util::PrimitiveIterator {
      public:
       enum {
-        mid_forEachRemaining_85691ac11e338ac3,
-        mid_next_3e9d5c8261f8e4a2,
-        mid_nextDouble_b74f83833fdad017,
+        mid_forEachRemaining_a4d506ef5f26a2aa,
+        mid_next_e0ad481f62df706f,
+        mid_nextDouble_9981f74b2d109da6,
         max_mid
       };
 

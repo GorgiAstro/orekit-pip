@@ -6,7 +6,11 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      class Space;
+      namespace euclidean {
+        namespace twod {
+          class Vector2D;
+        }
+      }
       class Point;
       namespace spherical {
         namespace oned {
@@ -14,11 +18,7 @@ namespace org {
           class S1Point;
         }
       }
-      namespace euclidean {
-        namespace twod {
-          class Vector2D;
-        }
-      }
+      class Space;
     }
   }
 }
@@ -38,16 +38,16 @@ namespace org {
           class S1Point : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_8ba9fe7a847cecad,
-              mid_distance_f0dd8cb59ea09794,
-              mid_distance_8c97327622272adf,
-              mid_equals_460c5e2d9d51c6cc,
-              mid_equalsIeee754_460c5e2d9d51c6cc,
-              mid_getAlpha_b74f83833fdad017,
-              mid_getSpace_9afbccb68c8e9ef8,
-              mid_getVector_9cb1572c1d4936cf,
-              mid_hashCode_55546ef6a647f39b,
-              mid_isNaN_9ab94ac1dc23b105,
+              mid_init$_1ad26e8c8c0cd65b,
+              mid_distance_277cb62c4ec87155,
+              mid_distance_ef4e9de8d5b8dce6,
+              mid_equals_72faff9b05f5ed5e,
+              mid_equalsIeee754_72faff9b05f5ed5e,
+              mid_getAlpha_9981f74b2d109da6,
+              mid_getSpace_a30bf0b437744017,
+              mid_getVector_0490d0574aafb07c,
+              mid_hashCode_d6ab429752e7c267,
+              mid_isNaN_eee3de00fe971136,
               max_mid
             };
 

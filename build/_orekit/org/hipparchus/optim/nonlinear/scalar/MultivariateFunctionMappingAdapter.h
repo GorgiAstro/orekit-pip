@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace analysis {
       class MultivariateFunction;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,10 +26,10 @@ namespace org {
           class MultivariateFunctionMappingAdapter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_81369b1ee12447b6,
-              mid_boundedToUnbounded_14dee4cb8cc3e959,
-              mid_unboundedToBounded_14dee4cb8cc3e959,
-              mid_value_b060e4326765ccf1,
+              mid_init$_32541f60a1ef8af6,
+              mid_boundedToUnbounded_51f624c89851da7e,
+              mid_unboundedToBounded_51f624c89851da7e,
+              mid_value_a40ce4fdf6559ac0,
               max_mid
             };
 

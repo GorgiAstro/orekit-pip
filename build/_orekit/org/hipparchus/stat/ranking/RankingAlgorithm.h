@@ -18,7 +18,7 @@ namespace org {
         class RankingAlgorithm : public ::java::lang::Object {
          public:
           enum {
-            mid_rank_14dee4cb8cc3e959,
+            mid_rank_51f624c89851da7e,
             max_mid
           };
 

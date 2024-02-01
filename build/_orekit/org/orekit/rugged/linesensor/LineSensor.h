@@ -3,8 +3,32 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+  }
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace rugged {
       namespace los {
         class TimeDependentLOS;
@@ -16,32 +40,8 @@ namespace org {
         class DerivativeGenerator;
       }
     }
-    namespace time {
-      class AbsoluteDate;
-    }
     namespace utils {
       class ParameterDriver;
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
-    class String;
-  }
-  namespace util {
-    namespace stream {
-      class Stream;
     }
   }
 }
@@ -55,19 +55,19 @@ namespace org {
         class LineSensor : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_1cf725ce5c7fae72,
-            mid_dumpRate_8ba9fe7a847cecad,
-            mid_getDate_f359a0110559347a,
-            mid_getLOS_6fb34ebfd1928e89,
-            mid_getLOS_81db334e9ae8d0f0,
-            mid_getLOSDerivatives_4d0e33e8d7307935,
-            mid_getLOSDerivatives_8c1346b73fbd45ff,
-            mid_getLine_fd347811007a6ba3,
-            mid_getName_1c1fa1e935d6cdcf,
-            mid_getNbPixels_55546ef6a647f39b,
-            mid_getParametersDrivers_14e21bf777ff0ccf,
-            mid_getPosition_8b724f8b4fdad1a2,
-            mid_getRate_04fd0666b613d2ab,
+            mid_init$_e083163155b5335c,
+            mid_dumpRate_1ad26e8c8c0cd65b,
+            mid_getDate_d2854c25a21df51f,
+            mid_getLOS_1f1ccf631d2e4b23,
+            mid_getLOS_d085661cbb0e1601,
+            mid_getLOSDerivatives_2e4776f8f6c99ef4,
+            mid_getLOSDerivatives_fa4b109980b8e155,
+            mid_getLine_209f08246d708042,
+            mid_getName_d2c8eb4129821f0e,
+            mid_getNbPixels_d6ab429752e7c267,
+            mid_getParametersDrivers_11e4ca8182c1933d,
+            mid_getPosition_032312bdeb3f2f93,
+            mid_getRate_bf28ed64d6e8576b,
             max_mid
           };
 

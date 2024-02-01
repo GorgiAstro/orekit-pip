@@ -4,19 +4,19 @@
 #include "org/orekit/geometry/fov/SmoothFieldOfView.h"
 
 namespace org {
+  namespace orekit {
+    namespace propagation {
+      namespace events {
+        class VisibilityTrigger;
+      }
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
           class Vector3D;
         }
-      }
-    }
-  }
-  namespace orekit {
-    namespace propagation {
-      namespace events {
-        class VisibilityTrigger;
       }
     }
   }
@@ -37,14 +37,14 @@ namespace org {
         class PythonSmoothFieldOfView : public ::org::orekit::geometry::fov::SmoothFieldOfView {
          public:
           enum {
-            mid_init$_4fbea8fa1cddeb2d,
-            mid_directionAt_498f52cd8e5a7072,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_offsetFromBoundary_927580832e9083f9,
-            mid_projectToBoundary_f21507e4850a184e,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_dcbb005903c9a2a8,
+            mid_directionAt_98a3eeef43dce47a,
+            mid_finalize_ff7cb6c242604316,
+            mid_offsetFromBoundary_7ed10fb0bfbbf1c4,
+            mid_projectToBoundary_53c542efd8574582,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

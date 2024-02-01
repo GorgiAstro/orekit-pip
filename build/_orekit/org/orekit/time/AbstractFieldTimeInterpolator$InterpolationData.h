@@ -34,13 +34,13 @@ namespace org {
       class AbstractFieldTimeInterpolator$InterpolationData : public ::java::lang::Object {
        public:
         enum {
-          mid_getCachedSamples_dadd4156df1ed960,
-          mid_getField_04d1f63e17d5c5d4,
-          mid_getInterpolationDate_fa23a4301b9c83e7,
-          mid_getNeighborList_e62d3bb06d56d7e3,
-          mid_getOne_81520b552cb3fa26,
-          mid_getZero_81520b552cb3fa26,
-          mid_getCentralDate_5b6d0b7fbadac432,
+          mid_getCachedSamples_7a625cd1a51a51f8,
+          mid_getField_577649682b9910c1,
+          mid_getInterpolationDate_1fea28374011eef5,
+          mid_getNeighborList_d751c1a57012b438,
+          mid_getOne_08d37e3f77b7239d,
+          mid_getZero_08d37e3f77b7239d,
+          mid_getCentralDate_c9ef185fb7cf50ce,
           max_mid
         };
 

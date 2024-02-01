@@ -3,6 +3,18 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class MathRuntimeException;
+    }
+    namespace util {
+      class BigReal;
+    }
+    class Field;
+    class FieldElement;
+  }
+}
 namespace java {
   namespace io {
     class Serializable;
@@ -11,18 +23,6 @@ namespace java {
     class Class;
     class String;
     class Comparable;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    class Field;
-    namespace util {
-      class BigReal;
-    }
-    namespace exception {
-      class MathRuntimeException;
-    }
-    class FieldElement;
   }
 }
 template<class T> class JArray;
@@ -34,27 +34,27 @@ namespace org {
       class BigReal : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_dd3f254991df5d48,
-          mid_init$_734b91ac30d5f9b4,
-          mid_init$_8ba9fe7a847cecad,
-          mid_init$_44ed599e93e8a30c,
-          mid_init$_3d7dd2314a0dd456,
-          mid_init$_d23ba6c655e17478,
-          mid_add_b1de32a042fbe7cc,
-          mid_compareTo_95c7d95b3d60253f,
-          mid_divide_b1de32a042fbe7cc,
-          mid_doubleValue_b74f83833fdad017,
-          mid_equals_460c5e2d9d51c6cc,
-          mid_getField_04d1f63e17d5c5d4,
-          mid_getReal_b74f83833fdad017,
-          mid_getScale_55546ef6a647f39b,
-          mid_hashCode_55546ef6a647f39b,
-          mid_multiply_b1de32a042fbe7cc,
-          mid_multiply_b4ff4a9d70ce8ddb,
-          mid_negate_152d3c51a3e6d94d,
-          mid_reciprocal_152d3c51a3e6d94d,
-          mid_setScale_44ed599e93e8a30c,
-          mid_subtract_b1de32a042fbe7cc,
+          mid_init$_e22e96b35f4145e4,
+          mid_init$_105e1eadb709d9ac,
+          mid_init$_1ad26e8c8c0cd65b,
+          mid_init$_8fd427ab23829bf5,
+          mid_init$_f5bbab7e97879358,
+          mid_init$_6f10578448832e2a,
+          mid_add_25c091a838b6e358,
+          mid_compareTo_9b4c95dcdac4646b,
+          mid_divide_25c091a838b6e358,
+          mid_doubleValue_9981f74b2d109da6,
+          mid_equals_72faff9b05f5ed5e,
+          mid_getField_577649682b9910c1,
+          mid_getReal_9981f74b2d109da6,
+          mid_getScale_d6ab429752e7c267,
+          mid_hashCode_d6ab429752e7c267,
+          mid_multiply_25c091a838b6e358,
+          mid_multiply_d985cb5e0f4ba91f,
+          mid_negate_387b4b2d211c6e82,
+          mid_reciprocal_387b4b2d211c6e82,
+          mid_setScale_8fd427ab23829bf5,
+          mid_subtract_25c091a838b6e358,
           max_mid
         };
 

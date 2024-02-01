@@ -8,8 +8,8 @@ namespace org {
     namespace gnss {
       namespace metric {
         namespace ntrip {
-          class Authentication;
           class RecordType;
+          class Authentication;
         }
       }
     }
@@ -32,15 +32,15 @@ namespace org {
           class NetworkRecord : public ::org::orekit::gnss::metric::ntrip::Record {
            public:
             enum {
-              mid_init$_734b91ac30d5f9b4,
-              mid_areFeesRequired_9ab94ac1dc23b105,
-              mid_getAuthentication_94d108ef01c519e6,
-              mid_getNetworkIdentifier_1c1fa1e935d6cdcf,
-              mid_getNetworkInfoAddress_1c1fa1e935d6cdcf,
-              mid_getOperator_1c1fa1e935d6cdcf,
-              mid_getRecordType_3f153b7c7459a9e2,
-              mid_getRegistrationAddress_1c1fa1e935d6cdcf,
-              mid_getStreamInfoAddress_1c1fa1e935d6cdcf,
+              mid_init$_105e1eadb709d9ac,
+              mid_areFeesRequired_eee3de00fe971136,
+              mid_getAuthentication_6de0606d40023783,
+              mid_getNetworkIdentifier_d2c8eb4129821f0e,
+              mid_getNetworkInfoAddress_d2c8eb4129821f0e,
+              mid_getOperator_d2c8eb4129821f0e,
+              mid_getRecordType_6b1d5e4fef5a106c,
+              mid_getRegistrationAddress_d2c8eb4129821f0e,
+              mid_getStreamInfoAddress_d2c8eb4129821f0e,
               max_mid
             };
 

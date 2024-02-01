@@ -5,32 +5,32 @@
 
 namespace org {
   namespace orekit {
-    namespace files {
-      namespace rinex {
-        class AppliedDCBS;
-        namespace clock {
-          class RinexClock$ClockDataLine;
-          class RinexClock$Receiver;
-          class RinexClock$ClockDataType;
-          class RinexClock$ReferenceClock;
-        }
-        class AppliedPCVS;
-      }
-    }
-    namespace gnss {
-      class SatelliteSystem;
-      class TimeSystem;
-      class ObservationType;
-    }
     namespace utils {
       class TimeSpanMap;
     }
-    namespace frames {
-      class Frame;
+    namespace gnss {
+      class TimeSystem;
+      class SatelliteSystem;
+      class ObservationType;
+    }
+    namespace files {
+      namespace rinex {
+        namespace clock {
+          class RinexClock$ClockDataLine;
+          class RinexClock$Receiver;
+          class RinexClock$ReferenceClock;
+          class RinexClock$ClockDataType;
+        }
+        class AppliedDCBS;
+        class AppliedPCVS;
+      }
     }
     namespace time {
       class AbsoluteDate;
       class TimeScale;
+    }
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -55,66 +55,66 @@ namespace org {
           class RinexClock : public ::java::lang::Object {
            public:
             enum {
-              mid_addAppliedDCBS_0fdf888bd1afbe51,
-              mid_addAppliedPCVS_f61ab6fa49270d08,
-              mid_addClockData_9828908024180d2a,
-              mid_addClockDataType_b2796a169d1d60c5,
-              mid_addComment_734b91ac30d5f9b4,
-              mid_addReceiver_cc20597cc7527128,
-              mid_addReferenceClockList_0365da66b6e36325,
-              mid_addSatellite_734b91ac30d5f9b4,
-              mid_addSystemObservationType_0afc6586e9189025,
-              mid_getAgencyName_1c1fa1e935d6cdcf,
-              mid_getAnalysisCenterID_1c1fa1e935d6cdcf,
-              mid_getAnalysisCenterName_1c1fa1e935d6cdcf,
-              mid_getClockData_810bed48fafb0b9a,
-              mid_getClockDataTypes_e62d3bb06d56d7e3,
-              mid_getComments_1c1fa1e935d6cdcf,
-              mid_getCreationDate_c325492395d89b24,
-              mid_getCreationDateString_1c1fa1e935d6cdcf,
-              mid_getCreationTimeString_1c1fa1e935d6cdcf,
-              mid_getCreationTimeZoneString_1c1fa1e935d6cdcf,
-              mid_getExternalClockReference_1c1fa1e935d6cdcf,
-              mid_getFormatVersion_b74f83833fdad017,
-              mid_getFrame_2c51111cc6894ba1,
-              mid_getFrameName_1c1fa1e935d6cdcf,
-              mid_getListAppliedDCBS_e62d3bb06d56d7e3,
-              mid_getListAppliedPCVS_e62d3bb06d56d7e3,
-              mid_getNumberOfClockDataTypes_55546ef6a647f39b,
-              mid_getNumberOfLeapSeconds_55546ef6a647f39b,
-              mid_getNumberOfLeapSecondsGNSS_55546ef6a647f39b,
-              mid_getNumberOfReceivers_55546ef6a647f39b,
-              mid_getNumberOfSatellites_55546ef6a647f39b,
-              mid_getProgramName_1c1fa1e935d6cdcf,
-              mid_getReceivers_e62d3bb06d56d7e3,
-              mid_getReferenceClocks_2f46b86c016957a0,
-              mid_getSatelliteSystem_21bd759cc4a81606,
-              mid_getSatellites_e62d3bb06d56d7e3,
-              mid_getStationIdentifier_1c1fa1e935d6cdcf,
-              mid_getStationName_1c1fa1e935d6cdcf,
-              mid_getSystemObservationTypes_810bed48fafb0b9a,
-              mid_getTimeScale_34d3bda0a8989e3e,
-              mid_getTimeSystem_28830357acffb3e1,
-              mid_getTotalNumberOfDataLines_55546ef6a647f39b,
-              mid_numberOfObsTypes_927782bd59041992,
-              mid_setAgencyName_734b91ac30d5f9b4,
-              mid_setAnalysisCenterID_734b91ac30d5f9b4,
-              mid_setAnalysisCenterName_734b91ac30d5f9b4,
-              mid_setCreationDate_02135a6ef25adb4b,
-              mid_setCreationDateString_734b91ac30d5f9b4,
-              mid_setCreationTimeString_734b91ac30d5f9b4,
-              mid_setCreationTimeZoneString_734b91ac30d5f9b4,
-              mid_setExternalClockReference_734b91ac30d5f9b4,
-              mid_setFormatVersion_8ba9fe7a847cecad,
-              mid_setFrameName_734b91ac30d5f9b4,
-              mid_setNumberOfLeapSeconds_44ed599e93e8a30c,
-              mid_setNumberOfLeapSecondsGNSS_44ed599e93e8a30c,
-              mid_setProgramName_734b91ac30d5f9b4,
-              mid_setSatelliteSystem_cfddc646eebc7104,
-              mid_setStationIdentifier_734b91ac30d5f9b4,
-              mid_setStationName_734b91ac30d5f9b4,
-              mid_setTimeScale_cae5d0c3721eff67,
-              mid_setTimeSystem_885124f6a0a748ea,
+              mid_addAppliedDCBS_cacb67a9e2822f90,
+              mid_addAppliedPCVS_604ce729c44b1f15,
+              mid_addClockData_5a478c5bc24dd562,
+              mid_addClockDataType_557d45aa8b705c60,
+              mid_addComment_105e1eadb709d9ac,
+              mid_addReceiver_2af1c219bbb11516,
+              mid_addReferenceClockList_0b0c18b32ea71a29,
+              mid_addSatellite_105e1eadb709d9ac,
+              mid_addSystemObservationType_741e751991beec0f,
+              mid_getAgencyName_d2c8eb4129821f0e,
+              mid_getAnalysisCenterID_d2c8eb4129821f0e,
+              mid_getAnalysisCenterName_d2c8eb4129821f0e,
+              mid_getClockData_dbcb8bbac6b35e0d,
+              mid_getClockDataTypes_d751c1a57012b438,
+              mid_getComments_d2c8eb4129821f0e,
+              mid_getCreationDate_80e11148db499dda,
+              mid_getCreationDateString_d2c8eb4129821f0e,
+              mid_getCreationTimeString_d2c8eb4129821f0e,
+              mid_getCreationTimeZoneString_d2c8eb4129821f0e,
+              mid_getExternalClockReference_d2c8eb4129821f0e,
+              mid_getFormatVersion_9981f74b2d109da6,
+              mid_getFrame_cb151471db4570f0,
+              mid_getFrameName_d2c8eb4129821f0e,
+              mid_getListAppliedDCBS_d751c1a57012b438,
+              mid_getListAppliedPCVS_d751c1a57012b438,
+              mid_getNumberOfClockDataTypes_d6ab429752e7c267,
+              mid_getNumberOfLeapSeconds_d6ab429752e7c267,
+              mid_getNumberOfLeapSecondsGNSS_d6ab429752e7c267,
+              mid_getNumberOfReceivers_d6ab429752e7c267,
+              mid_getNumberOfSatellites_d6ab429752e7c267,
+              mid_getProgramName_d2c8eb4129821f0e,
+              mid_getReceivers_d751c1a57012b438,
+              mid_getReferenceClocks_d11c7ec0e313e33d,
+              mid_getSatelliteSystem_fb0bd27fcc3ba9fc,
+              mid_getSatellites_d751c1a57012b438,
+              mid_getStationIdentifier_d2c8eb4129821f0e,
+              mid_getStationName_d2c8eb4129821f0e,
+              mid_getSystemObservationTypes_dbcb8bbac6b35e0d,
+              mid_getTimeScale_5e2cac12ab8da943,
+              mid_getTimeSystem_6110a08bedf3a63d,
+              mid_getTotalNumberOfDataLines_d6ab429752e7c267,
+              mid_numberOfObsTypes_29b0cae2b18a86fb,
+              mid_setAgencyName_105e1eadb709d9ac,
+              mid_setAnalysisCenterID_105e1eadb709d9ac,
+              mid_setAnalysisCenterName_105e1eadb709d9ac,
+              mid_setCreationDate_8497861b879c83f7,
+              mid_setCreationDateString_105e1eadb709d9ac,
+              mid_setCreationTimeString_105e1eadb709d9ac,
+              mid_setCreationTimeZoneString_105e1eadb709d9ac,
+              mid_setExternalClockReference_105e1eadb709d9ac,
+              mid_setFormatVersion_1ad26e8c8c0cd65b,
+              mid_setFrameName_105e1eadb709d9ac,
+              mid_setNumberOfLeapSeconds_8fd427ab23829bf5,
+              mid_setNumberOfLeapSecondsGNSS_8fd427ab23829bf5,
+              mid_setProgramName_105e1eadb709d9ac,
+              mid_setSatelliteSystem_b8157be2fa2780f9,
+              mid_setStationIdentifier_105e1eadb709d9ac,
+              mid_setStationName_105e1eadb709d9ac,
+              mid_setTimeScale_7cb2659f4799e4d2,
+              mid_setTimeSystem_70481f478101edcd,
               max_mid
             };
 

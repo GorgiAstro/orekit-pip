@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace util {
-      class PivotingStrategy;
-    }
     namespace exception {
       class MathIllegalArgumentException;
+    }
+    namespace util {
+      class PivotingStrategy;
     }
   }
 }
@@ -28,9 +28,9 @@ namespace org {
       class PivotingStrategy : public ::java::lang::Enum {
        public:
         enum {
-          mid_pivotIndex_a39b8700a2dab961,
-          mid_valueOf_861337c48a57490d,
-          mid_values_784bb9013e909172,
+          mid_pivotIndex_51377fedbacf0ff8,
+          mid_valueOf_f3092389c23c2790,
+          mid_values_64b9d3ceaaaff394,
           max_mid
         };
 

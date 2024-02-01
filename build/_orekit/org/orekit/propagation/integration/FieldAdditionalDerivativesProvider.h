@@ -32,11 +32,11 @@ namespace org {
         class FieldAdditionalDerivativesProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_combinedDerivatives_65b59abf328f3f4b,
-            mid_getDimension_55546ef6a647f39b,
-            mid_getName_1c1fa1e935d6cdcf,
-            mid_init_96d019f392abf918,
-            mid_yields_e6d9e841ca2e035c,
+            mid_combinedDerivatives_1031021bd411f1f1,
+            mid_getDimension_d6ab429752e7c267,
+            mid_getName_d2c8eb4129821f0e,
+            mid_init_357211ab77703f3f,
+            mid_yields_712e981f67f3ccbe,
             max_mid
           };
 

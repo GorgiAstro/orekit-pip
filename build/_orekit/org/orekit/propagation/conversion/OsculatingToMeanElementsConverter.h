@@ -26,8 +26,8 @@ namespace org {
         class OsculatingToMeanElementsConverter : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_09213e1af131873d,
-            mid_convert_9d155cc8314c99cf,
+            mid_init$_73bfa0df23e443ab,
+            mid_convert_8fbfa58855031235,
             max_mid
           };
 

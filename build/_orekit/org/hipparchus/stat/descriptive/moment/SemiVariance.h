@@ -3,27 +3,27 @@
 
 #include "org/hipparchus/stat/descriptive/AbstractUnivariateStatistic.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace stat {
-      namespace descriptive {
-        namespace moment {
-          class SemiVariance$Direction;
-          class SemiVariance;
-        }
-      }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
-  }
-}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace stat {
+      namespace descriptive {
+        namespace moment {
+          class SemiVariance;
+          class SemiVariance$Direction;
+        }
+      }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
   }
 }
 template<class T> class JArray;
@@ -37,20 +37,20 @@ namespace org {
           class SemiVariance : public ::org::hipparchus::stat::descriptive::AbstractUnivariateStatistic {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_init$_7cf9f8373891ab5c,
-              mid_init$_fcb96c98de6fad04,
-              mid_init$_f9b66e39c7031a0f,
-              mid_copy_975ae770dcc03b8b,
-              mid_evaluate_8dc5ab532196831b,
-              mid_evaluate_79e4db9e1e3d84c9,
-              mid_evaluate_188019cfa585537d,
-              mid_evaluate_1567a80062adb31b,
-              mid_evaluate_e3954d7d6000c211,
-              mid_getVarianceDirection_f2ac1ea2980b3d49,
-              mid_isBiasCorrected_9ab94ac1dc23b105,
-              mid_withBiasCorrected_02dcf3aae142041b,
-              mid_withVarianceDirection_9d387ca5b20ab748,
+              mid_init$_ff7cb6c242604316,
+              mid_init$_79c096891d3e539b,
+              mid_init$_b35db77cae58639e,
+              mid_init$_418b8a246e0c33bd,
+              mid_copy_84a8484e1258ad28,
+              mid_evaluate_229f5c50d878b104,
+              mid_evaluate_02811febb145516c,
+              mid_evaluate_49ff84cd883d84c0,
+              mid_evaluate_620ea098e5f0da00,
+              mid_evaluate_074b17341dec6c01,
+              mid_getVarianceDirection_242f9ad1a2b84bd8,
+              mid_isBiasCorrected_eee3de00fe971136,
+              mid_withBiasCorrected_494831e647e10241,
+              mid_withVarianceDirection_11b511cca7fbbae2,
               max_mid
             };
 

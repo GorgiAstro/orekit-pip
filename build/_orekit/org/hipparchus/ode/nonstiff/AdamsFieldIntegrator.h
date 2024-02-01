@@ -5,20 +5,20 @@
 
 namespace org {
   namespace hipparchus {
-    namespace ode {
-      class FieldExpandableODE;
-      class FieldODEState;
-      class FieldODEStateAndDerivative;
+    namespace linear {
+      class Array2DRowFieldMatrix;
     }
     namespace exception {
       class MathIllegalArgumentException;
       class MathIllegalStateException;
     }
+    namespace ode {
+      class FieldODEStateAndDerivative;
+      class FieldExpandableODE;
+      class FieldODEState;
+    }
     class Field;
     class CalculusFieldElement;
-    namespace linear {
-      class Array2DRowFieldMatrix;
-    }
   }
 }
 namespace java {
@@ -38,14 +38,14 @@ namespace org {
         class AdamsFieldIntegrator : public ::org::hipparchus::ode::MultistepFieldIntegrator {
          public:
           enum {
-            mid_init$_61c3648faaff623b,
-            mid_init$_fa4c97765f187051,
-            mid_integrate_75ca69013be095d1,
-            mid_updateHighOrderDerivativesPhase1_7ec78cb4b1521bd4,
-            mid_updateHighOrderDerivativesPhase2_66608a0c0bb66791,
-            mid_errorEstimation_f9ae7f7ac73655c8,
-            mid_finalizeStep_b4c879a61b350879,
-            mid_initializeHighOrderDerivatives_3c657d6a3baa084a,
+            mid_init$_486a60974fa369d1,
+            mid_init$_d10c4dfa0f90cd91,
+            mid_integrate_7e5884a5ebca9afb,
+            mid_updateHighOrderDerivativesPhase1_51bcd4a8a90d8d6b,
+            mid_updateHighOrderDerivativesPhase2_5846b27571ec7191,
+            mid_initializeHighOrderDerivatives_59a89abbfffc5f1c,
+            mid_errorEstimation_6aa3626a66e9d9b5,
+            mid_finalizeStep_0548923e7e2ccdf5,
             max_mid
           };
 

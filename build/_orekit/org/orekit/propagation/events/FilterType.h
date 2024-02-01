@@ -28,10 +28,10 @@ namespace org {
         class FilterType : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_207671faf4998ddc,
-            mid_values_ade4c95e7676c93d,
-            mid_getTriggeredIncreasing_9ab94ac1dc23b105,
-            mid_selectTransformer_fe5fd6209ed031ee,
+            mid_valueOf_4d2fe7f8ce1b49be,
+            mid_values_26bef6c1c252e0d4,
+            mid_selectTransformer_c337672a17af8697,
+            mid_getTriggeredIncreasing_eee3de00fe971136,
             max_mid
           };
 

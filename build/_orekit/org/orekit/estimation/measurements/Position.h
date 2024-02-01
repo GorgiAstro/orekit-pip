@@ -4,23 +4,23 @@
 #include "org/orekit/estimation/measurements/AbstractMeasurement.h"
 
 namespace org {
+  namespace orekit {
+    namespace estimation {
+      namespace measurements {
+        class ObservableSatellite;
+        class Position;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
           class Vector3D;
         }
-      }
-    }
-  }
-  namespace orekit {
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace estimation {
-      namespace measurements {
-        class ObservableSatellite;
-        class Position;
       }
     }
   }
@@ -41,14 +41,14 @@ namespace org {
         class Position : public ::org::orekit::estimation::measurements::AbstractMeasurement {
          public:
           enum {
-            mid_init$_a1acfe8b36ed0409,
-            mid_init$_23dc943efa00c9f0,
-            mid_init$_de5442b2fe341289,
-            mid_getCorrelationCoefficientsMatrix_3b7b373db8e7887f,
-            mid_getCovarianceMatrix_3b7b373db8e7887f,
-            mid_getPosition_8b724f8b4fdad1a2,
-            mid_theoreticalEvaluationWithoutDerivatives_9347cf3b1f0dd85a,
-            mid_theoreticalEvaluation_d598991c5cac8ab0,
+            mid_init$_60260ec0a1e95694,
+            mid_init$_c435632ebf63e121,
+            mid_init$_d2c02a7162394c9f,
+            mid_getCorrelationCoefficientsMatrix_eda3f19b8225f78f,
+            mid_getCovarianceMatrix_eda3f19b8225f78f,
+            mid_getPosition_032312bdeb3f2f93,
+            mid_theoreticalEvaluationWithoutDerivatives_59954f62fc64aef2,
+            mid_theoreticalEvaluation_eda25b8c88791d9a,
             max_mid
           };
 

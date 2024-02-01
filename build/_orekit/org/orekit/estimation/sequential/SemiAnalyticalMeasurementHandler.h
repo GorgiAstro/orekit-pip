@@ -3,23 +3,18 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace filtering {
-      namespace kalman {
-        class KalmanFilter;
-      }
-    }
+namespace java {
+  namespace util {
+    class List;
   }
+  namespace lang {
+    class Class;
+  }
+}
+namespace org {
   namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class ObservedMeasurement;
-      }
-      namespace sequential {
-        class SemiAnalyticalProcess;
-        class MeasurementDecorator;
-      }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace propagation {
       namespace sampling {
@@ -28,17 +23,22 @@ namespace org {
       }
       class SpacecraftState;
     }
-    namespace time {
-      class AbsoluteDate;
+    namespace estimation {
+      namespace sequential {
+        class MeasurementDecorator;
+        class SemiAnalyticalProcess;
+      }
+      namespace measurements {
+        class ObservedMeasurement;
+      }
     }
   }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
+  namespace hipparchus {
+    namespace filtering {
+      namespace kalman {
+        class KalmanFilter;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -51,10 +51,10 @@ namespace org {
         class SemiAnalyticalMeasurementHandler : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_576e684ce95b43e9,
-            mid_init$_d3a3df9f88279d79,
-            mid_handleStep_13c351c10f00bcd7,
-            mid_init_2d7f9a496c7e9781,
+            mid_init$_038251d17f092e03,
+            mid_init$_36616686aa8cda1a,
+            mid_handleStep_9db9d9fe85cac7f9,
+            mid_init_14deaae988292d42,
             max_mid
           };
 

@@ -45,9 +45,9 @@ namespace org {
               class AttitudeCovarianceType : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_getUnits_e62d3bb06d56d7e3,
-                  mid_valueOf_ace24d354abfff27,
-                  mid_values_cc7e51b05fabaec9,
+                  mid_getUnits_d751c1a57012b438,
+                  mid_valueOf_ea19bd44f1992a2d,
+                  mid_values_10ae62aeb815a9aa,
                   max_mid
                 };
 

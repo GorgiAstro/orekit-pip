@@ -5,8 +5,8 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -26,17 +26,17 @@ namespace org {
             class FieldGHmsjPolynomials : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_dab780a8ee9172eb,
-                mid_getGmsj_fe798a87bc58eca4,
-                mid_getHmsj_fe798a87bc58eca4,
-                mid_getdGmsdAlpha_fe798a87bc58eca4,
-                mid_getdGmsdBeta_fe798a87bc58eca4,
-                mid_getdGmsdh_fe798a87bc58eca4,
-                mid_getdGmsdk_fe798a87bc58eca4,
-                mid_getdHmsdAlpha_fe798a87bc58eca4,
-                mid_getdHmsdBeta_fe798a87bc58eca4,
-                mid_getdHmsdh_fe798a87bc58eca4,
-                mid_getdHmsdk_fe798a87bc58eca4,
+                mid_init$_47ca3d039a9c38c2,
+                mid_getGmsj_641e4ebbc4b1ea55,
+                mid_getHmsj_641e4ebbc4b1ea55,
+                mid_getdGmsdAlpha_641e4ebbc4b1ea55,
+                mid_getdGmsdBeta_641e4ebbc4b1ea55,
+                mid_getdGmsdh_641e4ebbc4b1ea55,
+                mid_getdGmsdk_641e4ebbc4b1ea55,
+                mid_getdHmsdAlpha_641e4ebbc4b1ea55,
+                mid_getdHmsdBeta_641e4ebbc4b1ea55,
+                mid_getdHmsdh_641e4ebbc4b1ea55,
+                mid_getdHmsdk_641e4ebbc4b1ea55,
                 max_mid
               };
 

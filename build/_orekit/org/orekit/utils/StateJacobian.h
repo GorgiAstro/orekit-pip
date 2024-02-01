@@ -24,7 +24,7 @@ namespace org {
       class StateJacobian : public ::java::lang::Object {
        public:
         enum {
-          mid_value_92a90247fa9f7aa3,
+          mid_value_9f1f355491808400,
           max_mid
         };
 

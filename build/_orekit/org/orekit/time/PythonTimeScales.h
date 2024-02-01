@@ -6,22 +6,22 @@
 namespace org {
   namespace orekit {
     namespace time {
-      class TDBScale;
-      class GLONASSScale;
-      class IRNSSScale;
-      class UT1Scale;
-      class GMSTScale;
-      class TTScale;
-      class QZSSScale;
-      class TAIScale;
-      class TCBScale;
+      class AbsoluteDate;
       class UTCScale;
+      class GalileoScale;
+      class TDBScale;
       class TimeScales;
+      class IRNSSScale;
+      class BDTScale;
+      class QZSSScale;
+      class TCBScale;
+      class GLONASSScale;
+      class TTScale;
+      class UT1Scale;
       class TCGScale;
       class GPSScale;
-      class BDTScale;
-      class AbsoluteDate;
-      class GalileoScale;
+      class TAIScale;
+      class GMSTScale;
     }
     namespace utils {
       class IERSConventions;
@@ -43,41 +43,41 @@ namespace org {
       class PythonTimeScales : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_createBesselianEpoch_f359a0110559347a,
-          mid_createJulianEpoch_f359a0110559347a,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_getBDT_e66ecc29d9b0858a,
-          mid_getBeidouEpoch_c325492395d89b24,
-          mid_getCcsdsEpoch_c325492395d89b24,
-          mid_getFiftiesEpoch_c325492395d89b24,
-          mid_getFutureInfinity_c325492395d89b24,
-          mid_getGLONASS_75a06d4a3e06af34,
-          mid_getGMST_375ab849f7e3d9ee,
-          mid_getGPS_a74060fc815076a7,
-          mid_getGST_935fd284aa6ccd53,
-          mid_getGalileoEpoch_c325492395d89b24,
-          mid_getGlonassEpoch_c325492395d89b24,
-          mid_getGpsEpoch_c325492395d89b24,
-          mid_getIRNSS_d7fbef15a3374e78,
-          mid_getIrnssEpoch_c325492395d89b24,
-          mid_getJ2000Epoch_c325492395d89b24,
-          mid_getJavaEpoch_c325492395d89b24,
-          mid_getJulianEpoch_c325492395d89b24,
-          mid_getModifiedJulianEpoch_c325492395d89b24,
-          mid_getPastInfinity_c325492395d89b24,
-          mid_getQZSS_f801e6f0b9a78872,
-          mid_getQzssEpoch_c325492395d89b24,
-          mid_getTAI_700cdb40469496d6,
-          mid_getTCB_e0443055c5547bea,
-          mid_getTCG_9ccd709f9ae42bbc,
-          mid_getTDB_61ba58ac615801fa,
-          mid_getTT_68d743a8c670f6cb,
-          mid_getUT1_246820b70f2cddeb,
-          mid_getUTC_1e4acbbebd50858e,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_init$_ff7cb6c242604316,
+          mid_createBesselianEpoch_d2854c25a21df51f,
+          mid_createJulianEpoch_d2854c25a21df51f,
+          mid_finalize_ff7cb6c242604316,
+          mid_getBDT_9d93fd70217d9218,
+          mid_getBeidouEpoch_80e11148db499dda,
+          mid_getCcsdsEpoch_80e11148db499dda,
+          mid_getFiftiesEpoch_80e11148db499dda,
+          mid_getFutureInfinity_80e11148db499dda,
+          mid_getGLONASS_98a4c7e041a431de,
+          mid_getGMST_3a2e75d759160885,
+          mid_getGPS_bfc706ac1880dab6,
+          mid_getGST_03bea9e4eca66482,
+          mid_getGalileoEpoch_80e11148db499dda,
+          mid_getGlonassEpoch_80e11148db499dda,
+          mid_getGpsEpoch_80e11148db499dda,
+          mid_getIRNSS_4011a9310ce86043,
+          mid_getIrnssEpoch_80e11148db499dda,
+          mid_getJ2000Epoch_80e11148db499dda,
+          mid_getJavaEpoch_80e11148db499dda,
+          mid_getJulianEpoch_80e11148db499dda,
+          mid_getModifiedJulianEpoch_80e11148db499dda,
+          mid_getPastInfinity_80e11148db499dda,
+          mid_getQZSS_af6710830d0f02e7,
+          mid_getQzssEpoch_80e11148db499dda,
+          mid_getTAI_617450d859ecaf8d,
+          mid_getTCB_0a0f63c3aa49765d,
+          mid_getTCG_d96035eea3611111,
+          mid_getTDB_cfeb575714faef31,
+          mid_getTT_3b674fc7b42c8f62,
+          mid_getUT1_ff99e037ad2c3870,
+          mid_getUTC_bdbc31f45ed399a7,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
           max_mid
         };
 

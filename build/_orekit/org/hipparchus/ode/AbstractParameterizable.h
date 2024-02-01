@@ -31,9 +31,9 @@ namespace org {
       class AbstractParameterizable : public ::java::lang::Object {
        public:
         enum {
-          mid_complainIfNotSupported_734b91ac30d5f9b4,
-          mid_getParametersNames_e62d3bb06d56d7e3,
-          mid_isSupported_cde6b28e15c96b75,
+          mid_complainIfNotSupported_105e1eadb709d9ac,
+          mid_getParametersNames_d751c1a57012b438,
+          mid_isSupported_df4c65b2aede5c41,
           max_mid
         };
 

@@ -5,6 +5,10 @@
 
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataContext;
+      class DataSource;
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -27,10 +31,6 @@ namespace org {
     }
     namespace utils {
       class IERSConventions;
-    }
-    namespace data {
-      class DataSource;
-      class DataContext;
     }
     namespace time {
       class AbsoluteDate;
@@ -55,19 +55,19 @@ namespace org {
               class OemParser : public ::org::orekit::files::ccsds::ndm::odm::OdmParser {
                public:
                 enum {
-                  mid_build_822f8bd254a8fa1e,
-                  mid_finalizeData_9ab94ac1dc23b105,
-                  mid_finalizeHeader_9ab94ac1dc23b105,
-                  mid_finalizeMetadata_9ab94ac1dc23b105,
-                  mid_getHeader_de29107d9fd9c097,
-                  mid_inData_9ab94ac1dc23b105,
-                  mid_inHeader_9ab94ac1dc23b105,
-                  mid_inMetadata_9ab94ac1dc23b105,
-                  mid_parse_437e74bd1ebc510d,
-                  mid_prepareData_9ab94ac1dc23b105,
-                  mid_prepareHeader_9ab94ac1dc23b105,
-                  mid_prepareMetadata_9ab94ac1dc23b105,
-                  mid_reset_28163d47221b3cf7,
+                  mid_build_d88ce9523b5b01f9,
+                  mid_finalizeData_eee3de00fe971136,
+                  mid_finalizeHeader_eee3de00fe971136,
+                  mid_finalizeMetadata_eee3de00fe971136,
+                  mid_getHeader_662984e7008bcc88,
+                  mid_inData_eee3de00fe971136,
+                  mid_inHeader_eee3de00fe971136,
+                  mid_inMetadata_eee3de00fe971136,
+                  mid_parse_b9470d453e85f605,
+                  mid_prepareData_eee3de00fe971136,
+                  mid_prepareHeader_eee3de00fe971136,
+                  mid_prepareMetadata_eee3de00fe971136,
+                  mid_reset_a23f5f7531d9b583,
                   max_mid
                 };
 

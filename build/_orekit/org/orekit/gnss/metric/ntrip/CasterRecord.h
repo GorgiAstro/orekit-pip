@@ -31,18 +31,18 @@ namespace org {
           class CasterRecord : public ::org::orekit::gnss::metric::ntrip::Record {
            public:
             enum {
-              mid_init$_734b91ac30d5f9b4,
-              mid_canReceiveNMEA_9ab94ac1dc23b105,
-              mid_getCountry_1c1fa1e935d6cdcf,
-              mid_getFallbackHostOrIPAddress_1c1fa1e935d6cdcf,
-              mid_getFallbackPort_55546ef6a647f39b,
-              mid_getHostOrIPAddress_1c1fa1e935d6cdcf,
-              mid_getLatitude_b74f83833fdad017,
-              mid_getLongitude_b74f83833fdad017,
-              mid_getOperator_1c1fa1e935d6cdcf,
-              mid_getPort_55546ef6a647f39b,
-              mid_getRecordType_3f153b7c7459a9e2,
-              mid_getSourceIdentifier_1c1fa1e935d6cdcf,
+              mid_init$_105e1eadb709d9ac,
+              mid_canReceiveNMEA_eee3de00fe971136,
+              mid_getCountry_d2c8eb4129821f0e,
+              mid_getFallbackHostOrIPAddress_d2c8eb4129821f0e,
+              mid_getFallbackPort_d6ab429752e7c267,
+              mid_getHostOrIPAddress_d2c8eb4129821f0e,
+              mid_getLatitude_9981f74b2d109da6,
+              mid_getLongitude_9981f74b2d109da6,
+              mid_getOperator_d2c8eb4129821f0e,
+              mid_getPort_d6ab429752e7c267,
+              mid_getRecordType_6b1d5e4fef5a106c,
+              mid_getSourceIdentifier_d2c8eb4129821f0e,
               max_mid
             };
 

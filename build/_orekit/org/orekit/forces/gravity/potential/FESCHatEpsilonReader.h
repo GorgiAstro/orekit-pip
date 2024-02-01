@@ -7,15 +7,15 @@ namespace java {
   namespace util {
     class Map;
   }
+  namespace io {
+    class IOException;
+    class InputStream;
+  }
   namespace lang {
     class Integer;
     class Double;
     class Class;
     class String;
-  }
-  namespace io {
-    class InputStream;
-    class IOException;
   }
 }
 namespace org {
@@ -40,8 +40,8 @@ namespace org {
           class FESCHatEpsilonReader : public ::org::orekit::forces::gravity::potential::OceanTidesReader {
            public:
             enum {
-              mid_init$_a858ce5fad253009,
-              mid_loadData_360461e719fb564c,
+              mid_init$_b060ec314fb355d2,
+              mid_loadData_bec0f846e5ec73da,
               max_mid
             };
 

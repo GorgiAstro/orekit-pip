@@ -5,9 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataSource;
-    }
     namespace files {
       namespace ccsds {
         namespace utils {
@@ -17,14 +14,17 @@ namespace org {
         }
       }
     }
+    namespace data {
+      class DataSource;
+    }
   }
 }
 namespace java {
-  namespace lang {
-    class Class;
-  }
   namespace io {
     class IOException;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -39,7 +39,7 @@ namespace org {
             class LexicalAnalyzerSelector : public ::java::lang::Object {
              public:
               enum {
-                mid_select_158cc72d364d1d8f,
+                mid_select_6986ede958a90fcd,
                 max_mid
               };
 

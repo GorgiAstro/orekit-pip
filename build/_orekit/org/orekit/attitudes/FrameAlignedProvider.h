@@ -10,13 +10,13 @@ namespace org {
       class FieldAttitude;
       class Attitude;
     }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
     namespace utils {
-      class PVCoordinatesProvider;
       class FieldPVCoordinatesProvider;
+      class PVCoordinatesProvider;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
     namespace frames {
       class Frame;
@@ -47,14 +47,14 @@ namespace org {
       class FrameAlignedProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_f32de4638c68c05a,
-          mid_init$_237ae1c2ddd68062,
-          mid_init$_f43ca627e733b5ae,
-          mid_getAttitude_21845cfb0034fe1c,
-          mid_getAttitude_896ee4d68989b1e8,
-          mid_getAttitudeRotation_1bc07ea175743b30,
-          mid_getAttitudeRotation_6acae55a2f5d3ab4,
-          mid_of_90b35c894f9743d5,
+          mid_init$_c7213d7f3b4952c4,
+          mid_init$_9725b246c9e25f68,
+          mid_init$_289ae7c901f3113a,
+          mid_getAttitude_a02177519e1b6a45,
+          mid_getAttitude_aab1c6ab68ffdcbb,
+          mid_getAttitudeRotation_494718838b66cf03,
+          mid_getAttitudeRotation_267252ddff45220c,
+          mid_of_19c72d3fcdb5c327,
           max_mid
         };
 

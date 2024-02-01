@@ -16,15 +16,15 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace ndm {
-          class ParserBuilder;
-          class Ndm;
-        }
         namespace utils {
           namespace lexical {
             class XmlTokenBuilder;
           }
           class FileFormat;
+        }
+        namespace ndm {
+          class ParserBuilder;
+          class Ndm;
         }
       }
     }
@@ -41,10 +41,10 @@ namespace org {
           class NdmParser : public ::org::orekit::files::ccsds::utils::parsing::AbstractMessageParser {
            public:
             enum {
-              mid_addComment_cde6b28e15c96b75,
-              mid_build_df9b0d97a1cea4f2,
-              mid_getSpecialXmlElementsBuilders_810bed48fafb0b9a,
-              mid_reset_28163d47221b3cf7,
+              mid_addComment_df4c65b2aede5c41,
+              mid_build_050f767ec488cf7d,
+              mid_getSpecialXmlElementsBuilders_dbcb8bbac6b35e0d,
+              mid_reset_a23f5f7531d9b583,
               max_mid
             };
 

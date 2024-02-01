@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace stat {
       namespace descriptive {
         class UnivariateStatistic;
       }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -30,9 +30,9 @@ namespace org {
         class UnivariateStatistic : public ::org::hipparchus::util::MathArrays$Function {
          public:
           enum {
-            mid_copy_04f2e677f90ab735,
-            mid_evaluate_b060e4326765ccf1,
-            mid_evaluate_1567a80062adb31b,
+            mid_copy_fe1447429c89969b,
+            mid_evaluate_a40ce4fdf6559ac0,
+            mid_evaluate_620ea098e5f0da00,
             max_mid
           };
 

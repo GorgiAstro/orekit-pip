@@ -5,15 +5,15 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
+    }
     namespace analysis {
       class UnivariateFunction;
       namespace solvers {
         class BaseUnivariateSolver;
       }
-    }
-    namespace exception {
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
     }
   }
 }
@@ -32,25 +32,25 @@ namespace org {
         class BaseAbstractUnivariateSolver : public ::java::lang::Object {
          public:
           enum {
-            mid_getAbsoluteAccuracy_b74f83833fdad017,
-            mid_getEvaluations_55546ef6a647f39b,
-            mid_getFunctionValueAccuracy_b74f83833fdad017,
-            mid_getMax_b74f83833fdad017,
-            mid_getMin_b74f83833fdad017,
-            mid_getRelativeAccuracy_b74f83833fdad017,
-            mid_getStartValue_b74f83833fdad017,
-            mid_solve_6fb62642ce3110d4,
-            mid_solve_076ce9f904fe1577,
-            mid_solve_82bbd98edb095e2c,
-            mid_computeObjectiveValue_04fd0666b613d2ab,
-            mid_verifyInterval_369b4c97255d5afa,
-            mid_incrementEvaluationCount_a1fa5dae97ea5ed2,
-            mid_doSolve_b74f83833fdad017,
-            mid_verifySequence_b5167f35b2521627,
-            mid_verifyBracketing_369b4c97255d5afa,
-            mid_isBracketing_cd8da52a7e84190c,
-            mid_isSequence_bf10cceb76af8f9c,
-            mid_setup_6c6e0210841d1026,
+            mid_getAbsoluteAccuracy_9981f74b2d109da6,
+            mid_getEvaluations_d6ab429752e7c267,
+            mid_getFunctionValueAccuracy_9981f74b2d109da6,
+            mid_getMax_9981f74b2d109da6,
+            mid_getMin_9981f74b2d109da6,
+            mid_getRelativeAccuracy_9981f74b2d109da6,
+            mid_getStartValue_9981f74b2d109da6,
+            mid_solve_473ffc752427b240,
+            mid_solve_f8d9b8fc210a2541,
+            mid_solve_fe5bc4a065ab530b,
+            mid_computeObjectiveValue_bf28ed64d6e8576b,
+            mid_incrementEvaluationCount_ff7cb6c242604316,
+            mid_verifyInterval_13edac039e8cc967,
+            mid_doSolve_9981f74b2d109da6,
+            mid_verifyBracketing_13edac039e8cc967,
+            mid_isBracketing_0fc66ee74538f12c,
+            mid_isSequence_de33958d3e7816c8,
+            mid_verifySequence_bd28dc6055dc5bbd,
+            mid_setup_4b5586fe764146e7,
             max_mid
           };
 

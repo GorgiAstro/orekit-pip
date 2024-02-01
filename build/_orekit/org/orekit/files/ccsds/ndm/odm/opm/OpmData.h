@@ -9,14 +9,14 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace odm {
-            class UserDefined;
             class StateVector;
+            class CartesianCovariance;
+            class KeplerianElements;
             namespace opm {
               class Maneuver;
             }
-            class CartesianCovariance;
+            class UserDefined;
             class SpacecraftParameters;
-            class KeplerianElements;
           }
         }
         namespace section {
@@ -47,18 +47,18 @@ namespace org {
               class OpmData : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_d04007a8638a42f5,
-                  mid_getCovarianceBlock_e10d3bdd874e7ebe,
-                  mid_getKeplerianElementsBlock_8313e8e884b218d3,
-                  mid_getManeuver_b5f4acb06008530a,
-                  mid_getManeuvers_e62d3bb06d56d7e3,
-                  mid_getMass_b74f83833fdad017,
-                  mid_getNbManeuvers_55546ef6a647f39b,
-                  mid_getSpacecraftParametersBlock_ccfacaad97346180,
-                  mid_getStateVectorBlock_22b74842fb82ffba,
-                  mid_getUserDefinedBlock_757fcfae3141e23d,
-                  mid_hasManeuvers_9ab94ac1dc23b105,
-                  mid_validate_8ba9fe7a847cecad,
+                  mid_init$_f4ead9c0c743c5d5,
+                  mid_getCovarianceBlock_2b28f441350fd9e6,
+                  mid_getKeplerianElementsBlock_4af716cba10d823b,
+                  mid_getManeuver_20fdf787b4d48b4b,
+                  mid_getManeuvers_d751c1a57012b438,
+                  mid_getMass_9981f74b2d109da6,
+                  mid_getNbManeuvers_d6ab429752e7c267,
+                  mid_getSpacecraftParametersBlock_36c0b14eddf66774,
+                  mid_getStateVectorBlock_a573c85f4a837535,
+                  mid_getUserDefinedBlock_b8dba07746e1b089,
+                  mid_hasManeuvers_eee3de00fe971136,
+                  mid_validate_1ad26e8c8c0cd65b,
                   max_mid
                 };
 

@@ -3,14 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -25,12 +17,20 @@ namespace org {
     }
   }
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace ode {
       namespace events {
         class Action;
       }
     }
+    class CalculusFieldElement;
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -44,11 +44,11 @@ namespace org {
           class FieldRecordAndContinue : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_init$_0e7c3032c7c93ed3,
-              mid_clear_a1fa5dae97ea5ed2,
-              mid_eventOccurred_839b1f3ec2c4fbf6,
-              mid_getEvents_e62d3bb06d56d7e3,
+              mid_init$_ff7cb6c242604316,
+              mid_init$_aa335fea495d60e0,
+              mid_clear_ff7cb6c242604316,
+              mid_eventOccurred_094737664b369b83,
+              mid_getEvents_d751c1a57012b438,
               max_mid
             };
 

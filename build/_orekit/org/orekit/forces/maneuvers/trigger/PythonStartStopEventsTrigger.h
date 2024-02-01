@@ -3,15 +3,6 @@
 
 #include "org/orekit/forces/maneuvers/trigger/StartStopEventsTrigger.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Throwable;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -28,6 +19,15 @@ namespace org {
     class Field;
   }
 }
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -39,14 +39,14 @@ namespace org {
           class PythonStartStopEventsTrigger : public ::org::orekit::forces::maneuvers::trigger::StartStopEventsTrigger {
            public:
             enum {
-              mid_init$_32649cab150bd98e,
-              mid_convertStartDetector_323adeb6f2939c8a,
-              mid_convertStopDetector_323adeb6f2939c8a,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_init$_fd4c1c355b42090d,
+              mid_convertStartDetector_2778b7032ad3e419,
+              mid_convertStopDetector_2778b7032ad3e419,
+              mid_finalize_ff7cb6c242604316,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
               max_mid
             };
 

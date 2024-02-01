@@ -3,7 +3,34 @@
 
 #include "org/orekit/geometry/fov/AbstractFieldOfView.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
+  namespace orekit {
+    namespace bodies {
+      class OneAxisEllipsoid;
+      class GeodeticPoint;
+    }
+    namespace geometry {
+      namespace fov {
+        class PolygonalFieldOfView$DefiningConeType;
+      }
+    }
+    namespace frames {
+      class Transform;
+    }
+    namespace propagation {
+      namespace events {
+        class VisibilityTrigger;
+      }
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -18,33 +45,6 @@ namespace org {
       }
     }
   }
-  namespace orekit {
-    namespace bodies {
-      class GeodeticPoint;
-      class OneAxisEllipsoid;
-    }
-    namespace frames {
-      class Transform;
-    }
-    namespace geometry {
-      namespace fov {
-        class PolygonalFieldOfView$DefiningConeType;
-      }
-    }
-    namespace propagation {
-      namespace events {
-        class VisibilityTrigger;
-      }
-    }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
 }
 template<class T> class JArray;
 
@@ -56,12 +56,12 @@ namespace org {
         class PolygonalFieldOfView : public ::org::orekit::geometry::fov::AbstractFieldOfView {
          public:
           enum {
-            mid_init$_e7bf98f3a1c4d4a1,
-            mid_init$_3eff6b21956b60d6,
-            mid_getFootprint_f20a8500298f8a78,
-            mid_getZone_bf39bb9c5825f40e,
-            mid_offsetFromBoundary_927580832e9083f9,
-            mid_projectToBoundary_f21507e4850a184e,
+            mid_init$_15e7df17631cc5b4,
+            mid_init$_23ec91195dfbe60f,
+            mid_getFootprint_0ed2f5155c3855f6,
+            mid_getZone_17b2f5c9c3ed683f,
+            mid_offsetFromBoundary_7ed10fb0bfbbf1c4,
+            mid_projectToBoundary_53c542efd8574582,
             max_mid
           };
 

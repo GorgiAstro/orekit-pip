@@ -33,7 +33,7 @@ namespace org {
             class ParseToken$ManeuvrableConsumer : public ::java::lang::Object {
              public:
               enum {
-                mid_accept_8b2809315e926f23,
+                mid_accept_62776a7b9220fcf1,
                 max_mid
               };
 

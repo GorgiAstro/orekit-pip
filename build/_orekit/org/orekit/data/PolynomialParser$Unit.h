@@ -25,9 +25,9 @@ namespace org {
       class PolynomialParser$Unit : public ::java::lang::Enum {
        public:
         enum {
-          mid_toSI_04fd0666b613d2ab,
-          mid_valueOf_52f78fb719985f2d,
-          mid_values_bbedfa0aeebf6004,
+          mid_toSI_bf28ed64d6e8576b,
+          mid_valueOf_8540cb4de7aca7c8,
+          mid_values_99f1912d38a28826,
           max_mid
         };
 

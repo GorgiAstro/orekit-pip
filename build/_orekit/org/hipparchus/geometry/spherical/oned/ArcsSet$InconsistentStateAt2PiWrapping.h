@@ -30,7 +30,7 @@ namespace org {
           class ArcsSet$InconsistentStateAt2PiWrapping : public ::org::hipparchus::exception::MathIllegalArgumentException {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
+              mid_init$_ff7cb6c242604316,
               max_mid
             };
 

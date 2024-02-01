@@ -3,29 +3,29 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace frames {
-      class FieldTransform;
-      class TransformProvider;
-    }
-    namespace utils {
-      class TimeStampedGenerator;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    class Field;
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace frames {
+      class FieldTransform;
+      class TransformProvider;
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class TimeStampedGenerator;
+    }
+  }
+  namespace hipparchus {
+    class Field;
   }
 }
 template<class T> class JArray;
@@ -37,8 +37,8 @@ namespace org {
       class FieldTransformGenerator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_85b9a58c5d3d9cea,
-          mid_generate_50850a0bb1306a34,
+          mid_init$_020632ea4950888f,
+          mid_generate_0499dac7e83b853d,
           max_mid
         };
 

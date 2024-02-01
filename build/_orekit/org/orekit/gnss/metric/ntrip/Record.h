@@ -31,10 +31,10 @@ namespace org {
           class Record : public ::java::lang::Object {
            public:
             enum {
-              mid_getMisc_1c1fa1e935d6cdcf,
-              mid_getRecordType_3f153b7c7459a9e2,
-              mid_getFieldsNumber_55546ef6a647f39b,
-              mid_getField_2a9bffd3d5397f7c,
+              mid_getMisc_d2c8eb4129821f0e,
+              mid_getRecordType_6b1d5e4fef5a106c,
+              mid_getFieldsNumber_d6ab429752e7c267,
+              mid_getField_c81987d6b0e2977a,
               max_mid
             };
 

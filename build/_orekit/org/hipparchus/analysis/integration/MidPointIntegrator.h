@@ -25,10 +25,10 @@ namespace org {
         class MidPointIntegrator : public ::org::hipparchus::analysis::integration::BaseAbstractUnivariateIntegrator {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_init$_3313c75e3e16c428,
-            mid_init$_5408957787adf55f,
-            mid_doIntegrate_b74f83833fdad017,
+            mid_init$_ff7cb6c242604316,
+            mid_init$_b5d23e6c0858e8ed,
+            mid_init$_eb6adaa8ce308c89,
+            mid_doIntegrate_9981f74b2d109da6,
             max_mid
           };
 

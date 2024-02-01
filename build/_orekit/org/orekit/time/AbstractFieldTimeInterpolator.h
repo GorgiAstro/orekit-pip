@@ -5,11 +5,11 @@
 
 namespace java {
   namespace util {
-    class List;
-    class Collection;
     namespace stream {
       class Stream;
     }
+    class List;
+    class Collection;
   }
   namespace lang {
     class Class;
@@ -18,9 +18,12 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace time {
+      class FieldTimeStamped;
       class FieldAbsoluteDate;
       class FieldTimeInterpolator;
-      class FieldTimeStamped;
+    }
+    namespace utils {
+      class ImmutableFieldTimeStampedCache;
     }
   }
   namespace hipparchus {
@@ -36,16 +39,17 @@ namespace org {
       class AbstractFieldTimeInterpolator : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_d5322b8b512aeb26,
-          mid_checkInterpolatorCompatibilityWithSampleSize_088f0158548a8c3c,
-          mid_getExtrapolationThreshold_b74f83833fdad017,
-          mid_getNbInterpolationPoints_55546ef6a647f39b,
-          mid_getSubInterpolators_e62d3bb06d56d7e3,
-          mid_interpolate_1b1c8c532c82f5d0,
-          mid_interpolate_f9931e17105657a3,
-          mid_interpolate_b5e65e4880f65e9b,
-          mid_addOptionalSubInterpolatorIfDefined_4196fcb287c723cd,
-          mid_getTimeParameter_794ba5c4a0bdcb26,
+          mid_init$_4320462275d66e78,
+          mid_checkInterpolatorCompatibilityWithSampleSize_35f01709a876513a,
+          mid_getCentralDate_b2f7fe9d83f790e1,
+          mid_getExtrapolationThreshold_9981f74b2d109da6,
+          mid_getNbInterpolationPoints_d6ab429752e7c267,
+          mid_getSubInterpolators_d751c1a57012b438,
+          mid_interpolate_f4186cd94813d116,
+          mid_interpolate_ecda3df535f73158,
+          mid_interpolate_6a638f4b2a02f57a,
+          mid_addOptionalSubInterpolatorIfDefined_c7bd7093c656df75,
+          mid_getTimeParameter_79346064d4531e41,
           max_mid
         };
 
@@ -66,6 +70,7 @@ namespace org {
         AbstractFieldTimeInterpolator(jint, jdouble);
 
         static void checkInterpolatorCompatibilityWithSampleSize(const ::org::orekit::time::FieldTimeInterpolator &, jint);
+        static ::org::orekit::time::FieldAbsoluteDate getCentralDate(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::orekit::utils::ImmutableFieldTimeStampedCache &, jdouble);
         jdouble getExtrapolationThreshold() const;
         jint getNbInterpolationPoints() const;
         ::java::util::List getSubInterpolators() const;

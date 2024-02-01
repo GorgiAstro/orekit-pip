@@ -3,25 +3,25 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace general {
+        class EphemerisFile;
+        class EphemerisFileWriter;
+      }
+    }
+  }
+}
 namespace java {
+  namespace io {
+    class IOException;
+  }
   namespace lang {
     class Throwable;
     class Appendable;
     class Class;
     class String;
-  }
-  namespace io {
-    class IOException;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace general {
-        class EphemerisFileWriter;
-        class EphemerisFile;
-      }
-    }
   }
 }
 template<class T> class JArray;
@@ -34,13 +34,13 @@ namespace org {
         class PythonEphemerisFileWriter : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
-            mid_write_cb06ae4b8b65b727,
-            mid_write_b257e3ad1002b2a9,
+            mid_init$_ff7cb6c242604316,
+            mid_finalize_ff7cb6c242604316,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
+            mid_write_ed9a20a3abb51fd6,
+            mid_write_12ce9ebfe43ac6e6,
             max_mid
           };
 

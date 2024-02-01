@@ -5,8 +5,8 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -24,14 +24,14 @@ namespace org {
         class HighamHall54FieldIntegrator : public ::org::hipparchus::ode::nonstiff::EmbeddedRungeKuttaFieldIntegrator {
          public:
           enum {
-            mid_init$_05ca1b2bf7edc3a6,
-            mid_init$_19be2ee49bc66dd7,
-            mid_getA_34ce7b2f6a50059b,
-            mid_getB_883be608cfc68c26,
-            mid_getC_883be608cfc68c26,
-            mid_getOrder_55546ef6a647f39b,
-            mid_createInterpolator_8afe86b6a7e18fde,
-            mid_estimateError_4b43ddf833459788,
+            mid_init$_00877c251fc4db11,
+            mid_init$_5843d38540497bc2,
+            mid_getA_4d010bb8d4780d51,
+            mid_getB_94ed2e0620f8833d,
+            mid_getC_94ed2e0620f8833d,
+            mid_getOrder_d6ab429752e7c267,
+            mid_createInterpolator_2cdfca06aa7946a1,
+            mid_estimateError_2bb116b8560eb7ee,
             max_mid
           };
 

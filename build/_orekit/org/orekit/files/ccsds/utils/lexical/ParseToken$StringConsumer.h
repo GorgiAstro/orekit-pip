@@ -21,7 +21,7 @@ namespace org {
             class ParseToken$StringConsumer : public ::java::lang::Object {
              public:
               enum {
-                mid_accept_734b91ac30d5f9b4,
+                mid_accept_105e1eadb709d9ac,
                 max_mid
               };
 

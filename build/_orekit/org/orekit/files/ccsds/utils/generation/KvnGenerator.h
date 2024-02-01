@@ -44,14 +44,14 @@ namespace org {
             class KvnGenerator : public ::org::orekit::files::ccsds::utils::generation::AbstractGenerator {
              public:
               enum {
-                mid_init$_19a2dc80984a50af,
-                mid_endMessage_734b91ac30d5f9b4,
-                mid_enterSection_734b91ac30d5f9b4,
-                mid_exitSection_1c1fa1e935d6cdcf,
-                mid_getFormat_e4c64bde02ca34c3,
-                mid_startMessage_03ff9b80a9f63d81,
-                mid_writeComments_0e7c3032c7c93ed3,
-                mid_writeEntry_bae21004607fffc6,
+                mid_init$_c5141c41b8e79a6b,
+                mid_endMessage_105e1eadb709d9ac,
+                mid_enterSection_105e1eadb709d9ac,
+                mid_exitSection_d2c8eb4129821f0e,
+                mid_getFormat_49975b0867f6c97c,
+                mid_startMessage_04f72a78f21743a7,
+                mid_writeComments_aa335fea495d60e0,
+                mid_writeEntry_dbec4ebd43084884,
                 max_mid
               };
 

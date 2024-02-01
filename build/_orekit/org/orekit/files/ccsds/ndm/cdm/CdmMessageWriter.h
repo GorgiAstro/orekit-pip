@@ -7,28 +7,28 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace definitions {
+          class TimeConverter;
+        }
+        namespace ndm {
+          namespace cdm {
+            class CdmSegment;
+            class CdmHeader;
+            class Cdm;
+            class CdmRelativeMetadata;
+            class CdmData;
+            class CdmMetadata;
+          }
+        }
         namespace utils {
           namespace generation {
-            class Generator;
             class MessageWriter;
+            class Generator;
           }
           class ContextBinding;
         }
         namespace section {
           class Segment;
-        }
-        namespace ndm {
-          namespace cdm {
-            class CdmMetadata;
-            class CdmSegment;
-            class CdmRelativeMetadata;
-            class CdmData;
-            class Cdm;
-            class CdmHeader;
-          }
-        }
-        namespace definitions {
-          class TimeConverter;
         }
       }
     }
@@ -55,19 +55,19 @@ namespace org {
             class CdmMessageWriter : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_171dbda6f9dc03f2,
-                mid_getContext_f24ed3335bf508bc,
-                mid_getDefaultVersion_b74f83833fdad017,
-                mid_getFormatVersionKey_1c1fa1e935d6cdcf,
-                mid_getRoot_1c1fa1e935d6cdcf,
-                mid_getTimeConverter_cf100f800540ff49,
-                mid_getVersion_b74f83833fdad017,
-                mid_setContext_db5d6d07a090d1f4,
-                mid_writeFooter_fb222e851cd27682,
-                mid_writeHeader_6a412104eaccbb1b,
-                mid_writeRelativeMetadataContent_d31fad1cabdbc982,
-                mid_writeSegment_9224bf4e294cad7a,
-                mid_writeSegmentContent_309d7ce7156c8c23,
+                mid_init$_3026836a952fe988,
+                mid_getContext_fc8d452549dd65ec,
+                mid_getDefaultVersion_9981f74b2d109da6,
+                mid_getFormatVersionKey_d2c8eb4129821f0e,
+                mid_getRoot_d2c8eb4129821f0e,
+                mid_getTimeConverter_45cb786b56bfc0bf,
+                mid_getVersion_9981f74b2d109da6,
+                mid_setContext_1564c35f88556e3e,
+                mid_writeFooter_05c6d36d73082fa6,
+                mid_writeHeader_c0e1369736d25fb3,
+                mid_writeRelativeMetadataContent_d892bd325a5da5c3,
+                mid_writeSegment_caac2f59668a092a,
+                mid_writeSegmentContent_305aa7864995b122,
                 max_mid
               };
 

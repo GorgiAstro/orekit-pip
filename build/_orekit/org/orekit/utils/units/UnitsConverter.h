@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace utils {
       namespace units {
-        class UnitsConverter;
         class Unit;
+        class UnitsConverter;
       }
     }
   }
@@ -29,11 +29,11 @@ namespace org {
         class UnitsConverter : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_4d5ce5d361e6f129,
-            mid_convert_04fd0666b613d2ab,
-            mid_getFrom_6466188dbb1eea22,
-            mid_getTo_6466188dbb1eea22,
-            mid_toString_1c1fa1e935d6cdcf,
+            mid_init$_978cb4fc5e2f4844,
+            mid_convert_bf28ed64d6e8576b,
+            mid_getFrom_b1bb36679ea369c9,
+            mid_getTo_b1bb36679ea369c9,
+            mid_toString_d2c8eb4129821f0e,
             max_mid
           };
 

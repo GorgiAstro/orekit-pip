@@ -8,15 +8,15 @@ namespace org {
     namespace attitudes {
       class AttitudeProvider;
     }
-    namespace frames {
-      class Frame;
-    }
     namespace propagation {
       namespace analytical {
         namespace tle {
           class FieldTLE;
         }
       }
+    }
+    namespace frames {
+      class Frame;
     }
   }
   namespace hipparchus {
@@ -40,14 +40,14 @@ namespace org {
           class PythonFieldSDP4 : public ::org::orekit::propagation::analytical::tle::FieldSDP4 {
            public:
             enum {
-              mid_init$_5459c6c0c91f1c96,
-              mid_deepPeriodicEffects_f2b4bfa0af1007e8,
-              mid_deepSecularEffects_f2b4bfa0af1007e8,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_luniSolarTermsComputation_a1fa5dae97ea5ed2,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_init$_cb79b5ee065880cd,
+              mid_deepPeriodicEffects_f63ca9e3185c722e,
+              mid_deepSecularEffects_f63ca9e3185c722e,
+              mid_finalize_ff7cb6c242604316,
+              mid_luniSolarTermsComputation_ff7cb6c242604316,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
               max_mid
             };
 

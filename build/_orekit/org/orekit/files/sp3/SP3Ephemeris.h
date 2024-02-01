@@ -14,6 +14,12 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class CartesianDerivativesFilter;
+    }
     namespace files {
       namespace sp3 {
         class SP3Coordinate;
@@ -25,12 +31,6 @@ namespace org {
     }
     namespace frames {
       class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class CartesianDerivativesFilter;
     }
   }
 }
@@ -44,16 +44,16 @@ namespace org {
         class SP3Ephemeris : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_e9c7e5d02848b09d,
-            mid_addCoordinate_cc9684087c360e7f,
-            mid_getAvailableDerivatives_63bfdcc4b7a0536c,
-            mid_getFrame_2c51111cc6894ba1,
-            mid_getId_1c1fa1e935d6cdcf,
-            mid_getInterpolationSamples_55546ef6a647f39b,
-            mid_getMu_b74f83833fdad017,
-            mid_getSegments_e62d3bb06d56d7e3,
-            mid_getStart_c325492395d89b24,
-            mid_getStop_c325492395d89b24,
+            mid_init$_37ff8a5fdc395935,
+            mid_addCoordinate_36568d3d88672861,
+            mid_getAvailableDerivatives_b9dfc27d8c56b5de,
+            mid_getFrame_cb151471db4570f0,
+            mid_getId_d2c8eb4129821f0e,
+            mid_getInterpolationSamples_d6ab429752e7c267,
+            mid_getMu_9981f74b2d109da6,
+            mid_getSegments_d751c1a57012b438,
+            mid_getStart_80e11148db499dda,
+            mid_getStop_80e11148db499dda,
             max_mid
           };
 

@@ -3,6 +3,11 @@
 
 #include "org/hipparchus/analysis/interpolation/InterpolatingMicrosphere.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace analysis {
@@ -10,11 +15,6 @@ namespace org {
         class InterpolatingMicrosphere2D;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,8 +27,8 @@ namespace org {
         class InterpolatingMicrosphere2D : public ::org::hipparchus::analysis::interpolation::InterpolatingMicrosphere {
          public:
           enum {
-            mid_init$_390258812740a16c,
-            mid_copy_8647effe2b9c12a8,
+            mid_init$_2baad0ec229f7c27,
+            mid_copy_9a6b05bfe2798a99,
             max_mid
           };
 

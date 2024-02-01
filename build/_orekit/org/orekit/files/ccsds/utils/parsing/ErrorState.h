@@ -8,11 +8,11 @@ namespace org {
     namespace files {
       namespace ccsds {
         namespace utils {
-          namespace lexical {
-            class ParseToken;
-          }
           namespace parsing {
             class ProcessingState;
+          }
+          namespace lexical {
+            class ParseToken;
           }
         }
       }
@@ -36,8 +36,8 @@ namespace org {
             class ErrorState : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_processToken_5949d4df22f33350,
+                mid_init$_ff7cb6c242604316,
+                mid_processToken_48865e799ebb0b92,
                 max_mid
               };
 

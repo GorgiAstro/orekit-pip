@@ -3,11 +3,13 @@
 
 #include "org/orekit/propagation/semianalytical/dsst/forces/ForceModelContext.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
-    namespace bodies {
-      class CelestialBody;
-    }
     namespace propagation {
       namespace semianalytical {
         namespace dsst {
@@ -17,11 +19,9 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
+    namespace bodies {
+      class CelestialBody;
+    }
   }
 }
 template<class T> class JArray;
@@ -36,26 +36,26 @@ namespace org {
             class DSSTThirdBodyDynamicContext : public ::org::orekit::propagation::semianalytical::dsst::forces::ForceModelContext {
              public:
               enum {
-                mid_init$_0c5b54ae7a4af60a,
-                mid_getA_b74f83833fdad017,
-                mid_getAlpha_b74f83833fdad017,
-                mid_getBB_b74f83833fdad017,
-                mid_getBBB_b74f83833fdad017,
-                mid_getBeta_b74f83833fdad017,
-                mid_getBoA_b74f83833fdad017,
-                mid_getBoABpo_b74f83833fdad017,
-                mid_getGamma_b74f83833fdad017,
-                mid_getHXXX_b74f83833fdad017,
-                mid_getKXXX_b74f83833fdad017,
-                mid_getM2aoA_b74f83833fdad017,
-                mid_getMCo2AB_b74f83833fdad017,
-                mid_getMeanMotion_b74f83833fdad017,
-                mid_getMuoR3_b74f83833fdad017,
-                mid_getOoAB_b74f83833fdad017,
-                mid_getR3_b74f83833fdad017,
-                mid_getX_b74f83833fdad017,
-                mid_getXX_b74f83833fdad017,
-                mid_getb_b74f83833fdad017,
+                mid_init$_747a861def72ab1c,
+                mid_getA_9981f74b2d109da6,
+                mid_getAlpha_9981f74b2d109da6,
+                mid_getBB_9981f74b2d109da6,
+                mid_getBBB_9981f74b2d109da6,
+                mid_getBeta_9981f74b2d109da6,
+                mid_getBoA_9981f74b2d109da6,
+                mid_getBoABpo_9981f74b2d109da6,
+                mid_getGamma_9981f74b2d109da6,
+                mid_getHXXX_9981f74b2d109da6,
+                mid_getKXXX_9981f74b2d109da6,
+                mid_getM2aoA_9981f74b2d109da6,
+                mid_getMCo2AB_9981f74b2d109da6,
+                mid_getMeanMotion_9981f74b2d109da6,
+                mid_getMuoR3_9981f74b2d109da6,
+                mid_getOoAB_9981f74b2d109da6,
+                mid_getR3_9981f74b2d109da6,
+                mid_getX_9981f74b2d109da6,
+                mid_getXX_9981f74b2d109da6,
+                mid_getb_9981f74b2d109da6,
                 max_mid
               };
 

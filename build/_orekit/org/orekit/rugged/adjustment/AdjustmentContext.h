@@ -6,14 +6,14 @@
 namespace org {
   namespace orekit {
     namespace rugged {
-      namespace api {
-        class Rugged;
-      }
       namespace adjustment {
         class OptimizerId;
         namespace measurements {
           class Observables;
         }
+      }
+      namespace api {
+        class Rugged;
       }
     }
   }
@@ -48,9 +48,9 @@ namespace org {
         class AdjustmentContext : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_ebc2314e09dfe0c8,
-            mid_estimateFreeParameters_75fd08e48639cd4b,
-            mid_setOptimizer_c5aa51c2423b63eb,
+            mid_init$_48f32020a10b9fa6,
+            mid_estimateFreeParameters_2218ebbd29fd2c3e,
+            mid_setOptimizer_3baa1ef9d5c66967,
             max_mid
           };
 

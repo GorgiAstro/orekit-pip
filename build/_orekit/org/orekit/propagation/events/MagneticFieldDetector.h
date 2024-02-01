@@ -8,6 +8,9 @@ namespace org {
     namespace data {
       class DataContext;
     }
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace bodies {
       class OneAxisEllipsoid;
     }
@@ -16,9 +19,6 @@ namespace org {
         class MagneticFieldDetector;
       }
       class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
     namespace models {
       namespace earth {
@@ -42,13 +42,13 @@ namespace org {
         class MagneticFieldDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_ed906644adf1627c,
-            mid_init$_ed1263de4577c5a4,
-            mid_init$_bd5544ae44ef5bcc,
-            mid_init$_0576c70d09c1f3bb,
-            mid_g_a17ea857ce74d258,
-            mid_init_2d7f9a496c7e9781,
-            mid_create_74b6d21820f03f8f,
+            mid_init$_ea029b6cf1682d56,
+            mid_init$_b6a40dd499347870,
+            mid_init$_787d50daab686bc3,
+            mid_init$_ad585fabb24f419c,
+            mid_g_b443ba1cc794b916,
+            mid_init_14deaae988292d42,
+            mid_create_af6c8ef2d17ccd69,
             max_mid
           };
 

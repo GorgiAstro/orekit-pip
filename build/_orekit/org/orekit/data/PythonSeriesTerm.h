@@ -29,15 +29,15 @@ namespace org {
       class PythonSeriesTerm : public ::org::orekit::data::SeriesTerm {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_argument_e5a6deebdf7be070,
-          mid_argument_6d9bdfdb86170f1b,
-          mid_argumentDerivative_e5a6deebdf7be070,
-          mid_argumentDerivative_6d9bdfdb86170f1b,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_init$_ff7cb6c242604316,
+          mid_argument_7212d8ed403494a1,
+          mid_argument_3cea1ba38c4e1540,
+          mid_argumentDerivative_7212d8ed403494a1,
+          mid_argumentDerivative_3cea1ba38c4e1540,
+          mid_finalize_ff7cb6c242604316,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
           max_mid
         };
 

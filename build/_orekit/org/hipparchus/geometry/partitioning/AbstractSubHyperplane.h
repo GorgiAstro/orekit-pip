@@ -6,15 +6,15 @@
 namespace org {
   namespace hipparchus {
     namespace geometry {
-      class Space;
       namespace partitioning {
-        class SubHyperplane$SplitSubHyperplane;
-        class SubHyperplane;
         class Hyperplane;
         class AbstractSubHyperplane;
         class Transform;
+        class SubHyperplane$SplitSubHyperplane;
         class Region;
+        class SubHyperplane;
       }
+      class Space;
     }
   }
 }
@@ -33,15 +33,15 @@ namespace org {
         class AbstractSubHyperplane : public ::java::lang::Object {
          public:
           enum {
-            mid_applyTransform_e43d4173d01d86e9,
-            mid_copySelf_3cd648bf55550e6e,
-            mid_getHyperplane_40a20a6ecfa9e745,
-            mid_getRemainingRegion_3698fd1911856e70,
-            mid_getSize_b74f83833fdad017,
-            mid_isEmpty_9ab94ac1dc23b105,
-            mid_reunite_8fc75099ef206f26,
-            mid_split_30674c36ae2fcf9f,
-            mid_buildNew_3d919cfe5b11c3d0,
+            mid_applyTransform_c243fc83137496a6,
+            mid_copySelf_ef6ba3b2a23af72e,
+            mid_getHyperplane_e081ba7b06e71434,
+            mid_getRemainingRegion_3069dff3a674defc,
+            mid_getSize_9981f74b2d109da6,
+            mid_isEmpty_eee3de00fe971136,
+            mid_reunite_a9ff681d42e1a09d,
+            mid_split_b587049e19682418,
+            mid_buildNew_35b28ef87fdef21f,
             max_mid
           };
 

@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace gnss {
       class SatelliteSystem;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -26,10 +26,10 @@ namespace org {
         class AppliedDCBS : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_2ffc5087441db4aa,
-            mid_getProgDCBS_1c1fa1e935d6cdcf,
-            mid_getSatelliteSystem_21bd759cc4a81606,
-            mid_getSourceDCBS_1c1fa1e935d6cdcf,
+            mid_init$_fa93d9a85da578d5,
+            mid_getProgDCBS_d2c8eb4129821f0e,
+            mid_getSatelliteSystem_fb0bd27fcc3ba9fc,
+            mid_getSourceDCBS_d2c8eb4129821f0e,
             max_mid
           };
 

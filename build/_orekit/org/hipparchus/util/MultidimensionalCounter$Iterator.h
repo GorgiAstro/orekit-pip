@@ -21,12 +21,12 @@ namespace org {
       class MultidimensionalCounter$Iterator : public ::java::lang::Object {
        public:
         enum {
-          mid_getCount_55546ef6a647f39b,
-          mid_getCount_0e7cf35192c3effe,
-          mid_getCounts_4d095d7a08163110,
-          mid_hasNext_9ab94ac1dc23b105,
-          mid_next_c1f5a8ce392a14f8,
-          mid_remove_a1fa5dae97ea5ed2,
+          mid_getCount_d6ab429752e7c267,
+          mid_getCount_d938fc64e8c6df2d,
+          mid_getCounts_d6f20bd740dd34cd,
+          mid_hasNext_eee3de00fe971136,
+          mid_next_901c88df9bff1f7c,
+          mid_remove_ff7cb6c242604316,
           max_mid
         };
 

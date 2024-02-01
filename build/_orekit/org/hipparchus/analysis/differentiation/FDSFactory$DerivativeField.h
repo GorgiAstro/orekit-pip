@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     class Field;
@@ -16,6 +11,11 @@ namespace org {
         class FieldDerivativeStructure;
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,12 +28,12 @@ namespace org {
         class FDSFactory$DerivativeField : public ::java::lang::Object {
          public:
           enum {
-            mid_equals_460c5e2d9d51c6cc,
-            mid_getOne_4b6e77c66fd622c3,
-            mid_getPi_4b6e77c66fd622c3,
-            mid_getRuntimeClass_1aeb0737a960d371,
-            mid_getZero_4b6e77c66fd622c3,
-            mid_hashCode_55546ef6a647f39b,
+            mid_equals_72faff9b05f5ed5e,
+            mid_getOne_b363d6ebd90353bf,
+            mid_getPi_b363d6ebd90353bf,
+            mid_getRuntimeClass_d5247e4b166c4ce8,
+            mid_getZero_b363d6ebd90353bf,
+            mid_hashCode_d6ab429752e7c267,
             max_mid
           };
 

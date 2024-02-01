@@ -27,16 +27,16 @@ namespace org {
       class OpenIntToDoubleHashMap : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_init$_8ba9fe7a847cecad,
-          mid_init$_44ed599e93e8a30c,
-          mid_init$_d5322b8b512aeb26,
-          mid_containsKey_96f51a3f36d3a2a7,
-          mid_get_2afcbc21f4e57ab2,
-          mid_iterator_814de4da7c72b3ee,
-          mid_put_98e10c261c066ee7,
-          mid_remove_2afcbc21f4e57ab2,
-          mid_size_55546ef6a647f39b,
+          mid_init$_ff7cb6c242604316,
+          mid_init$_1ad26e8c8c0cd65b,
+          mid_init$_8fd427ab23829bf5,
+          mid_init$_4320462275d66e78,
+          mid_containsKey_e24caac814db1df5,
+          mid_get_ce4c02d583456bc9,
+          mid_iterator_8e10fa69861a3eb8,
+          mid_put_5540210c7d309f18,
+          mid_remove_ce4c02d583456bc9,
+          mid_size_d6ab429752e7c267,
           max_mid
         };
 

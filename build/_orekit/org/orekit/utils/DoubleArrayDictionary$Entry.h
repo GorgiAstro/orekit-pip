@@ -28,12 +28,12 @@ namespace org {
       class DoubleArrayDictionary$Entry : public ::java::lang::Object {
        public:
         enum {
-          mid_getKey_1c1fa1e935d6cdcf,
-          mid_getValue_25e1757a36c4dde2,
-          mid_increment_ab69da052b88f50c,
-          mid_scaledIncrement_0ed2f42ee710b1b6,
-          mid_size_55546ef6a647f39b,
-          mid_zero_a1fa5dae97ea5ed2,
+          mid_getKey_d2c8eb4129821f0e,
+          mid_getValue_be783177b060994b,
+          mid_increment_a71c45509eaf92d1,
+          mid_scaledIncrement_55268aa2a64a56d3,
+          mid_size_d6ab429752e7c267,
+          mid_zero_ff7cb6c242604316,
           max_mid
         };
 

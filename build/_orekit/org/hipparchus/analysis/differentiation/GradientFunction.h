@@ -6,10 +6,10 @@
 namespace org {
   namespace hipparchus {
     namespace analysis {
+      class MultivariateVectorFunction;
       namespace differentiation {
         class MultivariateDifferentiableFunction;
       }
-      class MultivariateVectorFunction;
     }
   }
 }
@@ -28,8 +28,8 @@ namespace org {
         class GradientFunction : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_5edd2cde4e401e53,
-            mid_value_14dee4cb8cc3e959,
+            mid_init$_b0b788d4b5b79345,
+            mid_value_51f624c89851da7e,
             max_mid
           };
 

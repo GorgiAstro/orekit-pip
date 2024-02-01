@@ -6,24 +6,24 @@
 namespace org {
   namespace orekit {
     namespace frames {
-      class FieldTransform;
-      class VersionedITRF;
       class Predefined;
-      class EOPHistory;
-      class Transform;
-      class Frame;
+      class FieldTransform;
       class LazyLoadedFrames;
+      class VersionedITRF;
+      class Transform;
       class FactoryManagedFrame;
       class ITRFVersion;
+      class Frame;
+      class EOPHistory;
       class EopHistoryLoader;
     }
     namespace utils {
       class IERSConventions;
     }
     namespace time {
-      class FieldAbsoluteDate;
       class UTCScale;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
   }
 }
@@ -42,37 +42,37 @@ namespace org {
       class FramesFactory : public ::java::lang::Object {
        public:
         enum {
-          mid_addDefaultEOP1980HistoryLoaders_e39b9463875d2aea,
-          mid_addDefaultEOP2000HistoryLoaders_e39b9463875d2aea,
-          mid_addEOPHistoryLoader_f075adbabba5d6bc,
-          mid_buildUncachedITRF_01e80ae3803485ac,
-          mid_clearEOPHistoryLoaders_a1fa5dae97ea5ed2,
-          mid_findEOP_c247e78135557d7e,
-          mid_getCIRF_b8f4087626aff39a,
-          mid_getEME2000_38d89ffeb32a6f21,
-          mid_getEOPHistory_a77e9d6bc0da2439,
-          mid_getEcliptic_15d291dcc172f59b,
-          mid_getFrame_acd75386f33c2984,
-          mid_getFrames_5dce20e74866c277,
-          mid_getGCRF_2c51111cc6894ba1,
-          mid_getGTOD_816956b542562f07,
-          mid_getGTOD_b8f4087626aff39a,
-          mid_getICRF_2c51111cc6894ba1,
-          mid_getITRF_b8f4087626aff39a,
-          mid_getITRF_2e00eadcfbf4fef8,
-          mid_getITRFEquinox_b8f4087626aff39a,
-          mid_getMOD_5e99e4a3c4469bb0,
-          mid_getMOD_816956b542562f07,
-          mid_getNonInterpolatingTransform_4144c620244f368d,
-          mid_getNonInterpolatingTransform_12e9f713a8248456,
-          mid_getPZ9011_b8f4087626aff39a,
-          mid_getTEME_38d89ffeb32a6f21,
-          mid_getTIRF_5e99e4a3c4469bb0,
-          mid_getTIRF_b8f4087626aff39a,
-          mid_getTOD_816956b542562f07,
-          mid_getTOD_b8f4087626aff39a,
-          mid_getVeis1950_38d89ffeb32a6f21,
-          mid_setEOPContinuityThreshold_8ba9fe7a847cecad,
+          mid_addDefaultEOP1980HistoryLoaders_799a817065a795a1,
+          mid_addDefaultEOP2000HistoryLoaders_799a817065a795a1,
+          mid_addEOPHistoryLoader_de5bd84d562632cf,
+          mid_buildUncachedITRF_3b3b622e31ec9f50,
+          mid_clearEOPHistoryLoaders_ff7cb6c242604316,
+          mid_findEOP_6f32f7ea37e7380b,
+          mid_getCIRF_84e014d661e18862,
+          mid_getEME2000_449c13dc13254059,
+          mid_getEOPHistory_5f3b1864e8a02d51,
+          mid_getEcliptic_6c55c8e7e159d424,
+          mid_getFrame_2914574e34e220d9,
+          mid_getFrames_6b4dd5dc4c932983,
+          mid_getGCRF_cb151471db4570f0,
+          mid_getGTOD_7aa0049260c7fcad,
+          mid_getGTOD_84e014d661e18862,
+          mid_getICRF_cb151471db4570f0,
+          mid_getITRF_84e014d661e18862,
+          mid_getITRF_8580ffa0332936c5,
+          mid_getITRFEquinox_84e014d661e18862,
+          mid_getMOD_d7c1cc155dc219ec,
+          mid_getMOD_7aa0049260c7fcad,
+          mid_getNonInterpolatingTransform_53dc2db7b752bb5e,
+          mid_getNonInterpolatingTransform_8a45f1c7458079da,
+          mid_getPZ9011_84e014d661e18862,
+          mid_getTEME_449c13dc13254059,
+          mid_getTIRF_d7c1cc155dc219ec,
+          mid_getTIRF_84e014d661e18862,
+          mid_getTOD_7aa0049260c7fcad,
+          mid_getTOD_84e014d661e18862,
+          mid_getVeis1950_449c13dc13254059,
+          mid_setEOPContinuityThreshold_1ad26e8c8c0cd65b,
           max_mid
         };
 

@@ -7,8 +7,8 @@ namespace org {
   namespace hipparchus {
     namespace analysis {
       namespace differentiation {
-        class UnivariateDifferentiableFunction;
         class Derivative;
+        class UnivariateDifferentiableFunction;
       }
     }
   }
@@ -28,9 +28,9 @@ namespace org {
         class Power : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_8ba9fe7a847cecad,
-            mid_value_04fd0666b613d2ab,
-            mid_value_a5332de4d4d64b08,
+            mid_init$_1ad26e8c8c0cd65b,
+            mid_value_bf28ed64d6e8576b,
+            mid_value_ba85b555c6f0b809,
             max_mid
           };
 

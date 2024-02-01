@@ -4,17 +4,17 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace util {
-      class Pair;
-    }
-  }
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace gnss {
       class ObservationType;
     }
-    namespace time {
-      class AbsoluteDate;
+  }
+  namespace hipparchus {
+    namespace util {
+      class Pair;
     }
   }
 }
@@ -37,15 +37,15 @@ namespace org {
         class Dcb : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_addDcbLine_04cccaba0f852d8d,
-            mid_getAvailableObservationPairs_eecd1cf6328441dd,
-            mid_getDcb_343280e5d0dc9f9c,
-            mid_getDcb_8626587a670ef0c2,
-            mid_getMaximumValidDateForObservationPair_7a270440aa82b138,
-            mid_getMaximumValidDateForObservationPair_34d1cd66a625fdb5,
-            mid_getMinimumValidDateForObservationPair_7a270440aa82b138,
-            mid_getMinimumValidDateForObservationPair_34d1cd66a625fdb5,
+            mid_init$_ff7cb6c242604316,
+            mid_addDcbLine_fa57b3bfb6279c6a,
+            mid_getAvailableObservationPairs_1998857fa494dab0,
+            mid_getDcb_3fd9035881e68d06,
+            mid_getDcb_59fef3f2ed009dbd,
+            mid_getMaximumValidDateForObservationPair_a436120993303ce2,
+            mid_getMaximumValidDateForObservationPair_8b64bfed1fcdfdd9,
+            mid_getMinimumValidDateForObservationPair_a436120993303ce2,
+            mid_getMinimumValidDateForObservationPair_8b64bfed1fcdfdd9,
             max_mid
           };
 

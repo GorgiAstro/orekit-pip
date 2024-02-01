@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace estimation {
-      namespace measurements {
-        class EstimatedMeasurementBase;
-      }
-    }
     namespace gnss {
       namespace antenna {
         class FrequencyPattern;
+      }
+    }
+    namespace estimation {
+      namespace measurements {
+        class EstimatedMeasurementBase;
       }
     }
   }
@@ -33,9 +33,9 @@ namespace org {
           class PhaseCentersGroundReceiverBaseModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_c749d199d359fa63,
-              mid_oneWayDistanceModification_2fa6405c70ee6844,
-              mid_twoWayDistanceModification_2fa6405c70ee6844,
+              mid_init$_4f6a2e827b6dec38,
+              mid_oneWayDistanceModification_d9ef56512f9ba161,
+              mid_twoWayDistanceModification_d9ef56512f9ba161,
               max_mid
             };
 

@@ -4,6 +4,34 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace rugged {
+      namespace api {
+        class AlgorithmId;
+      }
+      namespace linesensor {
+        class LineSensor;
+        class SensorPixel;
+        class SensorMeanPlaneCrossing;
+      }
+      namespace utils {
+        class ExtendedEllipsoid;
+        class SpacecraftToObservedBody;
+      }
+      namespace raster {
+        class Tile;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace frames {
+      class Transform;
+    }
+    namespace bodies {
+      class GeodeticPoint;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -13,42 +41,14 @@ namespace org {
       }
     }
   }
-  namespace orekit {
-    namespace rugged {
-      namespace linesensor {
-        class LineSensor;
-        class SensorMeanPlaneCrossing;
-        class SensorPixel;
-      }
-      namespace raster {
-        class Tile;
-      }
-      namespace utils {
-        class ExtendedEllipsoid;
-        class SpacecraftToObservedBody;
-      }
-      namespace api {
-        class AlgorithmId;
-      }
-    }
-    namespace bodies {
-      class GeodeticPoint;
-    }
-    namespace frames {
-      class Transform;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-  }
 }
 namespace java {
   namespace io {
     class File;
   }
   namespace lang {
-    class Boolean;
     class Class;
+    class Boolean;
   }
 }
 template<class T> class JArray;
@@ -61,25 +61,25 @@ namespace org {
         class DumpManager : public ::java::lang::Object {
          public:
           enum {
-            mid_activate_7e1d51614d5d6a43,
-            mid_deactivate_a1fa5dae97ea5ed2,
-            mid_dumpAlgorithm_8b1167f41ac4ce3c,
-            mid_dumpAlgorithm_ab51bbc09b28ea88,
-            mid_dumpDirectLocation_e523f1929c3efad0,
-            mid_dumpDirectLocationResult_4515bd5fa75778ac,
-            mid_dumpEllipsoid_035235491296adca,
-            mid_dumpInverseLocation_17488db61991a7ac,
-            mid_dumpInverseLocationResult_adfd45e8c3ea1507,
-            mid_dumpSensorDatation_ecb00474cdf7cdff,
-            mid_dumpSensorLOS_ae8482ec24eee2cc,
-            mid_dumpSensorMeanPlane_8124db4aebed32fc,
-            mid_dumpSensorRate_ee79a3ff95b4595f,
-            mid_dumpTileCell_70369aea716d047a,
-            mid_dumpTransform_67d08d7069a2753f,
-            mid_endNicely_a1fa5dae97ea5ed2,
-            mid_isActive_9ab94ac1dc23b105,
-            mid_resume_55ba007fb2374d45,
-            mid_suspend_34d396f05e4572d8,
+            mid_activate_44d81342f3d8a712,
+            mid_deactivate_ff7cb6c242604316,
+            mid_dumpAlgorithm_65176271965491fa,
+            mid_dumpAlgorithm_e11894221e750207,
+            mid_dumpDirectLocation_540ea62e8e0f3832,
+            mid_dumpDirectLocationResult_1ef3ae5bc44c9ecc,
+            mid_dumpEllipsoid_669bd2fe21c4893e,
+            mid_dumpInverseLocation_80885c8da95da0fd,
+            mid_dumpInverseLocationResult_0b33f8be05e1ae42,
+            mid_dumpSensorDatation_2c90ca3870824978,
+            mid_dumpSensorLOS_a83f84fc2b2b427a,
+            mid_dumpSensorMeanPlane_9befa7185f3ed3e6,
+            mid_dumpSensorRate_3d13afbeee0dc169,
+            mid_dumpTileCell_d7e47d69b20de341,
+            mid_dumpTransform_23a631f1ef960f5e,
+            mid_endNicely_ff7cb6c242604316,
+            mid_isActive_eee3de00fe971136,
+            mid_resume_787cc3f8b789a31f,
+            mid_suspend_b55c3109c27b90e3,
             max_mid
           };
 

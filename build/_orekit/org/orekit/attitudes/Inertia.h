@@ -34,13 +34,13 @@ namespace org {
       class Inertia : public ::java::lang::Object {
        public:
         enum {
-          mid_getInertiaAxis1_939384575c8392d2,
-          mid_getInertiaAxis2_939384575c8392d2,
-          mid_getInertiaAxis3_939384575c8392d2,
-          mid_momentum_f21507e4850a184e,
-          mid_swap12_5cd6be00a4c2be15,
-          mid_swap13_5cd6be00a4c2be15,
-          mid_swap23_5cd6be00a4c2be15,
+          mid_getInertiaAxis1_451b696bc5d42d4b,
+          mid_getInertiaAxis2_451b696bc5d42d4b,
+          mid_getInertiaAxis3_451b696bc5d42d4b,
+          mid_momentum_53c542efd8574582,
+          mid_swap12_355dbe403ed36c8e,
+          mid_swap13_355dbe403ed36c8e,
+          mid_swap23_355dbe403ed36c8e,
           max_mid
         };
 

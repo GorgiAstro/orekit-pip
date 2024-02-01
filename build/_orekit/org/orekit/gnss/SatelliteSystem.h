@@ -5,12 +5,12 @@
 
 namespace org {
   namespace orekit {
-    namespace errors {
-      class OrekitIllegalArgumentException;
-    }
     namespace gnss {
       class SatelliteSystem;
       class ObservationTimeScale;
+    }
+    namespace errors {
+      class OrekitIllegalArgumentException;
     }
   }
 }
@@ -29,12 +29,12 @@ namespace org {
       class SatelliteSystem : public ::java::lang::Enum {
        public:
         enum {
-          mid_getKey_5e2f8fc4d7c03fbd,
-          mid_getObservationTimeScale_5d38f72c5e775c9f,
-          mid_parseSatelliteSystem_7a28fea3a0cdf75b,
-          mid_parseSatelliteSystemWithGPSDefault_7a28fea3a0cdf75b,
-          mid_valueOf_7a28fea3a0cdf75b,
-          mid_values_c7603d4d5e059202,
+          mid_getKey_153df32fe8b51cb6,
+          mid_getObservationTimeScale_ff4c3be08329916c,
+          mid_parseSatelliteSystem_d285b168dff0f6e9,
+          mid_parseSatelliteSystemWithGPSDefault_d285b168dff0f6e9,
+          mid_valueOf_d285b168dff0f6e9,
+          mid_values_4371533a164a4841,
           max_mid
         };
 

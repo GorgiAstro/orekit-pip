@@ -6,17 +6,17 @@
 namespace org {
   namespace orekit {
     namespace data {
-      class DataFilter;
       class DataSource;
+      class DataFilter;
     }
   }
 }
 namespace java {
-  namespace lang {
-    class Class;
-  }
   namespace io {
     class IOException;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,10 +28,10 @@ namespace org {
       class FiltersManager : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_addFilter_fd5e03324dfcf025,
-          mid_applyRelevantFilters_bbc30294b1b0b691,
-          mid_clearFilters_a1fa5dae97ea5ed2,
+          mid_init$_ff7cb6c242604316,
+          mid_addFilter_c5b30e242a2124b9,
+          mid_applyRelevantFilters_4edc3983a04dd819,
+          mid_clearFilters_ff7cb6c242604316,
           max_mid
         };
 

@@ -22,10 +22,10 @@ namespace org {
       class FieldTrackingCoordinates : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_baa1ed35ace5d036,
-          mid_getAzimuth_81520b552cb3fa26,
-          mid_getElevation_81520b552cb3fa26,
-          mid_getRange_81520b552cb3fa26,
+          mid_init$_f9ea60a8dc2d69fb,
+          mid_getAzimuth_08d37e3f77b7239d,
+          mid_getElevation_08d37e3f77b7239d,
+          mid_getRange_08d37e3f77b7239d,
           max_mid
         };
 

@@ -5,13 +5,13 @@
 
 namespace org {
   namespace orekit {
+    namespace propagation {
+      class SpacecraftState;
+    }
     namespace estimation {
       namespace sequential {
         class CovarianceMatrixProvider;
       }
-    }
-    namespace propagation {
-      class SpacecraftState;
     }
   }
   namespace hipparchus {
@@ -35,7 +35,7 @@ namespace org {
         class AbstractCovarianceMatrixProvider : public ::java::lang::Object {
          public:
           enum {
-            mid_getInitialCovarianceMatrix_b7aa5791b069a41f,
+            mid_getInitialCovarianceMatrix_011bf64ebaa4e018,
             max_mid
           };
 

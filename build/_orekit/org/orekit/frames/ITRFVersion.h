@@ -3,12 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
     namespace frames {
@@ -20,6 +14,12 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -29,15 +29,15 @@ namespace org {
       class ITRFVersion : public ::java::lang::Enum {
        public:
         enum {
-          mid_getConverter_ad1e76c5a5e62625,
-          mid_getConverter_3ba4b02a32b22bb8,
-          mid_getITRFVersion_031874fbc127eede,
-          mid_getITRFVersion_611a84321ee92ece,
-          mid_getLast_8bcdfad365f6d36a,
-          mid_getName_1c1fa1e935d6cdcf,
-          mid_getYear_55546ef6a647f39b,
-          mid_valueOf_031874fbc127eede,
-          mid_values_764e284abbfef657,
+          mid_getConverter_8a4ab2ce3d169bb5,
+          mid_getConverter_ad937c11bb9748a4,
+          mid_getITRFVersion_e0fa84c7f77505c0,
+          mid_getITRFVersion_926723985e2777cb,
+          mid_getLast_4865f340ec39b9c4,
+          mid_getName_d2c8eb4129821f0e,
+          mid_getYear_d6ab429752e7c267,
+          mid_valueOf_e0fa84c7f77505c0,
+          mid_values_f692e2a97a822a9b,
           max_mid
         };
 

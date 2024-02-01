@@ -3,26 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ccsds {
-        namespace utils {
-          namespace generation {
-            class Generator;
-          }
-        }
-        namespace section {
-          class Segment;
-          class Header;
-        }
-        namespace ndm {
-          class NdmConstituent;
-        }
-      }
-    }
-  }
-}
 namespace java {
   namespace io {
     class IOException;
@@ -30,6 +10,26 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace ccsds {
+        namespace section {
+          class Header;
+          class Segment;
+        }
+        namespace ndm {
+          class NdmConstituent;
+        }
+        namespace utils {
+          namespace generation {
+            class Generator;
+          }
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -44,13 +44,13 @@ namespace org {
             class MessageWriter : public ::java::lang::Object {
              public:
               enum {
-                mid_getFormatVersionKey_1c1fa1e935d6cdcf,
-                mid_getRoot_1c1fa1e935d6cdcf,
-                mid_getVersion_b74f83833fdad017,
-                mid_writeFooter_fb222e851cd27682,
-                mid_writeHeader_5f2a5114115bbdb2,
-                mid_writeMessage_a4b14e3c29843c15,
-                mid_writeSegment_1cabdf4a5e993579,
+                mid_getFormatVersionKey_d2c8eb4129821f0e,
+                mid_getRoot_d2c8eb4129821f0e,
+                mid_getVersion_9981f74b2d109da6,
+                mid_writeFooter_05c6d36d73082fa6,
+                mid_writeHeader_df6f5cf94f18077d,
+                mid_writeMessage_d663c14e7d793f18,
+                mid_writeSegment_fe05c5cc7a835818,
                 max_mid
               };
 

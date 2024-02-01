@@ -31,7 +31,7 @@ namespace org {
             class ParseToken$TimeSystemConsumer : public ::java::lang::Object {
              public:
               enum {
-                mid_accept_00f5ccc3311d9b97,
+                mid_accept_a052efb9a150bad4,
                 max_mid
               };
 

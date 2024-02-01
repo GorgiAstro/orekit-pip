@@ -15,20 +15,20 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataSource;
-    }
     namespace files {
       namespace ccsds {
         namespace utils {
           namespace lexical {
             class XmlTokenBuilder;
-            class ParseToken;
             class MessageParser;
+            class ParseToken;
           }
           class FileFormat;
         }
       }
+    }
+    namespace data {
+      class DataSource;
     }
   }
 }
@@ -44,18 +44,18 @@ namespace org {
             class PythonMessageParser : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_build_541690f9ee81d3ad,
-                mid_finalize_a1fa5dae97ea5ed2,
-                mid_getFileFormat_e4c64bde02ca34c3,
-                mid_getFormatVersionKey_1c1fa1e935d6cdcf,
-                mid_getSpecialXmlElementsBuilders_810bed48fafb0b9a,
-                mid_parseMessage_653fe7fd2fcbf113,
-                mid_process_19d473d3b0277de6,
-                mid_pythonDecRef_a1fa5dae97ea5ed2,
-                mid_pythonExtension_6c0ce7e438e5ded4,
-                mid_pythonExtension_3d7dd2314a0dd456,
-                mid_reset_28163d47221b3cf7,
+                mid_init$_ff7cb6c242604316,
+                mid_build_704a5bee58538972,
+                mid_finalize_ff7cb6c242604316,
+                mid_getFileFormat_49975b0867f6c97c,
+                mid_getFormatVersionKey_d2c8eb4129821f0e,
+                mid_getSpecialXmlElementsBuilders_dbcb8bbac6b35e0d,
+                mid_parseMessage_7927c1c0838e396d,
+                mid_process_db9439a3eec594be,
+                mid_pythonDecRef_ff7cb6c242604316,
+                mid_pythonExtension_42c72b98e3c2e08a,
+                mid_pythonExtension_f5bbab7e97879358,
+                mid_reset_a23f5f7531d9b583,
                 max_mid
               };
 

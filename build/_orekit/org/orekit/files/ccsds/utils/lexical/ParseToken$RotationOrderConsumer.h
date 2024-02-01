@@ -31,7 +31,7 @@ namespace org {
             class ParseToken$RotationOrderConsumer : public ::java::lang::Object {
              public:
               enum {
-                mid_accept_062f1951e591952f,
+                mid_accept_d6989ad0241efe2c,
                 max_mid
               };
 

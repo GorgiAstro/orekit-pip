@@ -6,6 +6,9 @@
 namespace org {
   namespace orekit {
     namespace files {
+      namespace general {
+        class EphemerisFile;
+      }
       namespace ccsds {
         namespace ndm {
           namespace odm {
@@ -22,16 +25,13 @@ namespace org {
           class Segment;
         }
       }
-      namespace general {
-        class EphemerisFile;
-      }
+    }
+    namespace data {
+      class DataContext;
     }
     namespace utils {
       class IERSConventions;
       class TimeStampedPVCoordinates;
-    }
-    namespace data {
-      class DataContext;
     }
   }
 }
@@ -58,10 +58,10 @@ namespace org {
               class Ocm : public ::org::orekit::files::ccsds::ndm::NdmConstituent {
                public:
                 enum {
-                  mid_init$_9639e27fba1a1f36,
-                  mid_getData_af84f99ccaa2105d,
-                  mid_getMetadata_e957b96fac0918bd,
-                  mid_getSatellites_810bed48fafb0b9a,
+                  mid_init$_f1d722872d5900a5,
+                  mid_getData_40729bd778a88778,
+                  mid_getMetadata_322e8e3321666bbd,
+                  mid_getSatellites_dbcb8bbac6b35e0d,
                   max_mid
                 };
 

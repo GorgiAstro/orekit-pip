@@ -12,18 +12,18 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class TDOA;
-        class GroundStation;
         class ObservableSatellite;
+        class GroundStation;
+        class TDOA;
       }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace propagation {
       namespace sampling {
         class OrekitStepInterpolator;
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -46,8 +46,8 @@ namespace org {
           class TDOABuilder : public ::org::orekit::estimation::measurements::generation::AbstractMeasurementBuilder {
            public:
             enum {
-              mid_init$_3482c99d647cecc6,
-              mid_build_fc6e6664aa75a0c3,
+              mid_init$_10af0e412dc0df53,
+              mid_build_6f29f18e4bebc1ea,
               max_mid
             };
 

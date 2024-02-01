@@ -3,6 +3,12 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Iterable;
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace stat {
@@ -10,12 +16,6 @@ namespace org {
         class StatisticalSummary;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Iterable;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,15 +28,15 @@ namespace org {
         class StatisticalSummary : public ::java::lang::Object {
          public:
           enum {
-            mid_aggregate_b5d4386d9c48f5f3,
-            mid_aggregate_b2572dd77c02dd54,
-            mid_getMax_b74f83833fdad017,
-            mid_getMean_b74f83833fdad017,
-            mid_getMin_b74f83833fdad017,
-            mid_getN_6c0ce7e438e5ded4,
-            mid_getStandardDeviation_b74f83833fdad017,
-            mid_getSum_b74f83833fdad017,
-            mid_getVariance_b74f83833fdad017,
+            mid_aggregate_ff5d74c4ea6f9225,
+            mid_aggregate_5026ee59c02f2252,
+            mid_getMax_9981f74b2d109da6,
+            mid_getMean_9981f74b2d109da6,
+            mid_getMin_9981f74b2d109da6,
+            mid_getN_42c72b98e3c2e08a,
+            mid_getStandardDeviation_9981f74b2d109da6,
+            mid_getSum_9981f74b2d109da6,
+            mid_getVariance_9981f74b2d109da6,
             max_mid
           };
 

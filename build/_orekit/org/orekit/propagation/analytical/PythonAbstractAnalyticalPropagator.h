@@ -8,11 +8,11 @@ namespace org {
     namespace attitudes {
       class AttitudeProvider;
     }
-    namespace orbits {
-      class Orbit;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace orbits {
+      class Orbit;
     }
     namespace propagation {
       class SpacecraftState;
@@ -35,14 +35,14 @@ namespace org {
         class PythonAbstractAnalyticalPropagator : public ::org::orekit::propagation::analytical::AbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_8e4d3ea100bc0095,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getMass_fd347811007a6ba3,
-            mid_propagateOrbit_5df6dcb5c4123339,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
-            mid_resetIntermediateState_1c47c97cdbc7e206,
+            mid_init$_fddd0a7d9f33bafa,
+            mid_finalize_ff7cb6c242604316,
+            mid_getMass_209f08246d708042,
+            mid_propagateOrbit_776cca2e85dfe61d,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
+            mid_resetIntermediateState_b69b5541e48d21c0,
             max_mid
           };
 

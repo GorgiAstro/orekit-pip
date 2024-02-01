@@ -25,10 +25,10 @@ namespace org {
             class UpperBounds : public ::java::lang::Object {
              public:
               enum {
-                mid_getDnl_d25194b4f827d7c5,
-                mid_getDnl_34b1c27dc860e066,
-                mid_getRnml_afb4449d3b8211f3,
-                mid_getRnml_079d686a67b20272,
+                mid_getDnl_1340186f93089476,
+                mid_getDnl_3c0decdc6d452b91,
+                mid_getRnml_f61f9bc72ee2229e,
+                mid_getRnml_3423c1ac4701718a,
                 max_mid
               };
 

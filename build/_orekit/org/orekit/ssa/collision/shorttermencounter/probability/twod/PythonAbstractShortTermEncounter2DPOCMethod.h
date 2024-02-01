@@ -6,6 +6,10 @@
 namespace org {
   namespace orekit {
     namespace ssa {
+      namespace metrics {
+        class FieldProbabilityOfCollision;
+        class ProbabilityOfCollision;
+      }
       namespace collision {
         namespace shorttermencounter {
           namespace probability {
@@ -14,10 +18,6 @@ namespace org {
             }
           }
         }
-      }
-      namespace metrics {
-        class FieldProbabilityOfCollision;
-        class ProbabilityOfCollision;
       }
     }
   }
@@ -45,14 +45,14 @@ namespace org {
               class PythonAbstractShortTermEncounter2DPOCMethod : public ::org::orekit::ssa::collision::shorttermencounter::probability::twod::AbstractShortTermEncounter2DPOCMethod {
                public:
                 enum {
-                  mid_init$_734b91ac30d5f9b4,
-                  mid_compute_a73e6347f5238a63,
-                  mid_compute_11689cd07cf55453,
-                  mid_finalize_a1fa5dae97ea5ed2,
-                  mid_getType_8397a286d982b383,
-                  mid_pythonDecRef_a1fa5dae97ea5ed2,
-                  mid_pythonExtension_6c0ce7e438e5ded4,
-                  mid_pythonExtension_3d7dd2314a0dd456,
+                  mid_init$_105e1eadb709d9ac,
+                  mid_compute_7eae8d8112e983e4,
+                  mid_compute_8edb355cf7d54cf6,
+                  mid_finalize_ff7cb6c242604316,
+                  mid_getType_592990a91429410c,
+                  mid_pythonDecRef_ff7cb6c242604316,
+                  mid_pythonExtension_42c72b98e3c2e08a,
+                  mid_pythonExtension_f5bbab7e97879358,
                   max_mid
                 };
 

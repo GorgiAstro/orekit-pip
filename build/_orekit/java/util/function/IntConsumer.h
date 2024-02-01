@@ -4,13 +4,13 @@
 #include "java/lang/Object.h"
 
 namespace java {
+  namespace lang {
+    class Class;
+  }
   namespace util {
     namespace function {
       class IntConsumer;
     }
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -22,8 +22,8 @@ namespace java {
       class IntConsumer : public ::java::lang::Object {
        public:
         enum {
-          mid_accept_44ed599e93e8a30c,
-          mid_andThen_1933106f8483b048,
+          mid_accept_8fd427ab23829bf5,
+          mid_andThen_9fd967b7c66352b9,
           max_mid
         };
 

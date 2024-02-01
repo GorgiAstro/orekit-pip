@@ -3,16 +3,15 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-    }
+namespace java {
+  namespace util {
+    class List;
   }
+  namespace lang {
+    class Class;
+  }
+}
+namespace org {
   namespace orekit {
     namespace bodies {
       class OneAxisEllipsoid;
@@ -29,13 +28,14 @@ namespace org {
       }
     }
   }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -49,9 +49,9 @@ namespace org {
           class AlongTrackAiming : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_528c9375c20215da,
-              mid_alongTileDirection_636e2b82319b8646,
-              mid_getSingularPoints_e62d3bb06d56d7e3,
+              mid_init$_16ede473df3c00bb,
+              mid_alongTileDirection_73bb6a45361007eb,
+              mid_getSingularPoints_d751c1a57012b438,
               max_mid
             };
 

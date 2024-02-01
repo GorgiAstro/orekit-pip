@@ -3,8 +3,32 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class RotationOrder;
+          class Rotation;
+        }
+      }
+    }
+  }
   namespace orekit {
+    namespace utils {
+      namespace units {
+        class Unit;
+      }
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -16,30 +40,6 @@ namespace org {
         }
       }
     }
-    namespace utils {
-      namespace units {
-        class Unit;
-      }
-    }
-  }
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class RotationOrder;
-          class Rotation;
-        }
-      }
-    }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -55,11 +55,11 @@ namespace org {
               class AttitudeElementsType : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_getUnits_e62d3bb06d56d7e3,
-                  mid_toRotation_47406594fa00ef12,
-                  mid_toString_1c1fa1e935d6cdcf,
-                  mid_valueOf_8c3c0048982055b5,
-                  mid_values_f8c6bd7604adea5c,
+                  mid_getUnits_d751c1a57012b438,
+                  mid_toRotation_8062044b68407315,
+                  mid_toString_d2c8eb4129821f0e,
+                  mid_valueOf_edd7011eeed97934,
+                  mid_values_250af0238b41c79c,
                   max_mid
                 };
 

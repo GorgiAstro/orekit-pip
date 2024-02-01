@@ -14,16 +14,16 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace propagation {
-      namespace events {
-        class NegateDetector;
-        class EventDetector;
-        class BooleanDetector;
-      }
-      class SpacecraftState;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace propagation {
+      namespace events {
+        class BooleanDetector;
+        class NegateDetector;
+        class EventDetector;
+      }
+      class SpacecraftState;
     }
   }
 }
@@ -37,15 +37,15 @@ namespace org {
         class BooleanDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_andCombine_8625f04dc0369264,
-            mid_andCombine_b628a3dc9e91fa01,
-            mid_g_a17ea857ce74d258,
-            mid_getDetectors_e62d3bb06d56d7e3,
-            mid_init_2d7f9a496c7e9781,
-            mid_notCombine_0119b0d604ebe1fb,
-            mid_orCombine_8625f04dc0369264,
-            mid_orCombine_b628a3dc9e91fa01,
-            mid_create_9018219b512ae905,
+            mid_andCombine_8d4639f238877c49,
+            mid_andCombine_c4345c4de3909bcd,
+            mid_g_b443ba1cc794b916,
+            mid_getDetectors_d751c1a57012b438,
+            mid_init_14deaae988292d42,
+            mid_notCombine_d2eee7bb38ccad44,
+            mid_orCombine_8d4639f238877c49,
+            mid_orCombine_c4345c4de3909bcd,
+            mid_create_7dc99b9ec8add83a,
             max_mid
           };
 

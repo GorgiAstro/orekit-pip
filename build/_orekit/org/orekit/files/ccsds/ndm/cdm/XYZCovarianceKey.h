@@ -41,9 +41,9 @@ namespace org {
             class XYZCovarianceKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_e1ceb9257882a2ec,
-                mid_valueOf_303705d5277025e6,
-                mid_values_45de6fde0fa6fae2,
+                mid_process_a87bb454dde4bd0c,
+                mid_valueOf_43054325e87a84d7,
+                mid_values_06cd62e0ea3f3c49,
                 max_mid
               };
 

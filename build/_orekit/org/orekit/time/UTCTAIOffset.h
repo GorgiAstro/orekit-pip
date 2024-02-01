@@ -7,10 +7,10 @@ namespace org {
   namespace orekit {
     namespace time {
       class TimeStamped;
-      class FieldAbsoluteDate;
-      class DateComponents;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
       class TimeComponents;
+      class DateComponents;
     }
   }
   namespace hipparchus {
@@ -34,13 +34,13 @@ namespace org {
       class UTCTAIOffset : public ::java::lang::Object {
        public:
         enum {
-          mid_getDate_c325492395d89b24,
-          mid_getLeap_b74f83833fdad017,
-          mid_getMJD_55546ef6a647f39b,
-          mid_getOffset_fd347811007a6ba3,
-          mid_getOffset_140b8964300ddedf,
-          mid_getOffset_e7a49f02c43fd893,
-          mid_getValidityStart_c325492395d89b24,
+          mid_getDate_80e11148db499dda,
+          mid_getLeap_9981f74b2d109da6,
+          mid_getMJD_d6ab429752e7c267,
+          mid_getOffset_209f08246d708042,
+          mid_getOffset_cf010978f3c5a913,
+          mid_getOffset_50aa1fdea9b81950,
+          mid_getValidityStart_80e11148db499dda,
           max_mid
         };
 

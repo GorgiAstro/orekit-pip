@@ -7,8 +7,8 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class EstimatedMeasurementBase;
         class EstimatedMeasurement;
+        class EstimatedMeasurementBase;
       }
     }
   }
@@ -28,8 +28,8 @@ namespace org {
         class EstimationModifier : public ::org::orekit::utils::ParameterDriversProvider {
          public:
           enum {
-            mid_modify_f784f7724d44a90a,
-            mid_modifyWithoutDerivatives_308087fabc1d7f66,
+            mid_modify_0f0ae9411e47b72e,
+            mid_modifyWithoutDerivatives_ecce216dce506020,
             max_mid
           };
 

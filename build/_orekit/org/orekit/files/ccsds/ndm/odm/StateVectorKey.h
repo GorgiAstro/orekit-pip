@@ -9,8 +9,8 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace odm {
-            class StateVector;
             class StateVectorKey;
+            class StateVector;
           }
         }
         namespace utils {
@@ -41,9 +41,9 @@ namespace org {
             class StateVectorKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_0349d2b1acb06568,
-                mid_valueOf_06d924a8e12f54db,
-                mid_values_4145c94e6d4555b5,
+                mid_process_d3b70508514b1e0b,
+                mid_valueOf_61c33f2f5d747d64,
+                mid_values_30553fdfd684a70e,
                 max_mid
               };
 

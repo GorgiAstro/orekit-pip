@@ -4,6 +4,14 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace gnss {
+      namespace antenna {
+        class FrequencyPattern;
+      }
+      class Frequency;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -11,14 +19,6 @@ namespace org {
           class Vector3D;
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace gnss {
-      namespace antenna {
-        class FrequencyPattern;
-      }
-      class Frequency;
     }
   }
 }
@@ -41,12 +41,12 @@ namespace org {
         class Antenna : public ::java::lang::Object {
          public:
           enum {
-            mid_getEccentricities_d0488333e6550601,
-            mid_getFrequencies_e62d3bb06d56d7e3,
-            mid_getPattern_653181fb59ddf806,
-            mid_getPhaseCenterVariation_3f5cfe9e5195b182,
-            mid_getSinexCode_1c1fa1e935d6cdcf,
-            mid_getType_1c1fa1e935d6cdcf,
+            mid_getEccentricities_86fd4ab836dd60d9,
+            mid_getFrequencies_d751c1a57012b438,
+            mid_getPattern_9514e0cf8151316d,
+            mid_getPhaseCenterVariation_82fe1a9470191ef4,
+            mid_getSinexCode_d2c8eb4129821f0e,
+            mid_getType_d2c8eb4129821f0e,
             max_mid
           };
 

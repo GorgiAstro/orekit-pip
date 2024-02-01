@@ -5,15 +5,15 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace stat {
       namespace descriptive {
         namespace moment {
           class Skewness;
         }
       }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -36,13 +36,13 @@ namespace org {
           class Skewness : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_clear_a1fa5dae97ea5ed2,
-              mid_copy_595538d377a28bc6,
-              mid_evaluate_1567a80062adb31b,
-              mid_getN_6c0ce7e438e5ded4,
-              mid_getResult_b74f83833fdad017,
-              mid_increment_8ba9fe7a847cecad,
+              mid_init$_ff7cb6c242604316,
+              mid_clear_ff7cb6c242604316,
+              mid_copy_0334ba61b9e7f8eb,
+              mid_evaluate_620ea098e5f0da00,
+              mid_getN_42c72b98e3c2e08a,
+              mid_getResult_9981f74b2d109da6,
+              mid_increment_1ad26e8c8c0cd65b,
               max_mid
             };
 

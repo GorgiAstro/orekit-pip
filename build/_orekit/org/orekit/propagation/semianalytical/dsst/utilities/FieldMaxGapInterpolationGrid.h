@@ -5,8 +5,8 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     class Field;
+    class CalculusFieldElement;
   }
   namespace orekit {
     namespace propagation {
@@ -37,8 +37,8 @@ namespace org {
             class FieldMaxGapInterpolationGrid : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_2a6f45ac0878ab87,
-                mid_getGridPoints_396bc2ac62d7d47a,
+                mid_init$_88bffd71fb0313dc,
+                mid_getGridPoints_0fb3037dbc9bf797,
                 max_mid
               };
 

@@ -4,10 +4,6 @@
 #include "org/orekit/propagation/events/FieldAbstractDetector.h"
 
 namespace org {
-  namespace hipparchus {
-    class Field;
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace frames {
       class TopocentricFrame;
@@ -15,6 +11,10 @@ namespace org {
     namespace propagation {
       class FieldSpacecraftState;
     }
+  }
+  namespace hipparchus {
+    class Field;
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -32,12 +32,12 @@ namespace org {
         class FieldElevationExtremumDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_c973085a7c4e0fab,
-            mid_init$_8f6abd8bda6d7bf0,
-            mid_g_2203631097e94c79,
-            mid_getElevation_2203631097e94c79,
-            mid_getTopocentricFrame_c2b113ddceb69262,
-            mid_create_9c6333c0d7f052ab,
+            mid_init$_436068c1e3731f99,
+            mid_init$_81061941a46d050d,
+            mid_g_ac6fccc69d1b2d9e,
+            mid_getElevation_ac6fccc69d1b2d9e,
+            mid_getTopocentricFrame_d0e5c3c9d5578806,
+            mid_create_b0e426ca52aff9f3,
             max_mid
           };
 

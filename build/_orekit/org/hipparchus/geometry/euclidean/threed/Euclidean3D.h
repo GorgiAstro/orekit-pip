@@ -3,27 +3,27 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      class Space;
-      namespace euclidean {
-        namespace threed {
-          class Euclidean3D;
-        }
-        namespace twod {
-          class Euclidean2D;
-        }
-      }
-    }
-  }
-}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace twod {
+          class Euclidean2D;
+        }
+        namespace threed {
+          class Euclidean3D;
+        }
+      }
+      class Space;
+    }
   }
 }
 template<class T> class JArray;
@@ -37,9 +37,9 @@ namespace org {
           class Euclidean3D : public ::java::lang::Object {
            public:
             enum {
-              mid_getDimension_55546ef6a647f39b,
-              mid_getInstance_88ee1c467f3fd489,
-              mid_getSubSpace_378fd1928e817aa0,
+              mid_getDimension_d6ab429752e7c267,
+              mid_getInstance_25549d196321d5e7,
+              mid_getSubSpace_86b463c8efc90624,
               max_mid
             };
 

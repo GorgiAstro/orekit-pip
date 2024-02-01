@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class TimeStampedFieldAngularCoordinates;
-    }
     namespace frames {
       class Frame;
+    }
+    namespace utils {
+      class TimeStampedFieldAngularCoordinates;
     }
     namespace time {
       class FieldTimeInterpolator;
@@ -30,10 +30,10 @@ namespace org {
       class FieldAttitudeInterpolator : public ::org::orekit::time::AbstractFieldTimeInterpolator {
        public:
         enum {
-          mid_init$_d37d1e77bb1e8424,
-          mid_getAngularInterpolator_9cf5e479bf3925c5,
-          mid_getReferenceFrame_2c51111cc6894ba1,
-          mid_interpolate_f0c30115168a83c4,
+          mid_init$_b7710935192f0627,
+          mid_getAngularInterpolator_3f8c23fb3b78d477,
+          mid_getReferenceFrame_cb151471db4570f0,
+          mid_interpolate_ed83676662d8929d,
           max_mid
         };
 

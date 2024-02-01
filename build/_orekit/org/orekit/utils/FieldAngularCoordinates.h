@@ -4,37 +4,37 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace utils {
-      class FieldPVCoordinates;
-      class AngularCoordinates;
-      class TimeStampedPVCoordinates;
-      class PVCoordinates;
-      class FieldAngularCoordinates;
-      class TimeStampedFieldPVCoordinates;
-    }
-    namespace time {
-      class FieldTimeShiftable;
-    }
-  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class FieldRotation;
           class FieldVector3D;
+          class FieldRotation;
         }
       }
     }
     namespace analysis {
       namespace differentiation {
         class FieldDerivativeStructure;
-        class FieldUnivariateDerivative2;
         class FieldUnivariateDerivative1;
+        class FieldUnivariateDerivative2;
       }
     }
     class Field;
     class CalculusFieldElement;
+  }
+  namespace orekit {
+    namespace utils {
+      class AngularCoordinates;
+      class FieldAngularCoordinates;
+      class PVCoordinates;
+      class TimeStampedPVCoordinates;
+      class FieldPVCoordinates;
+      class TimeStampedFieldPVCoordinates;
+    }
+    namespace time {
+      class FieldTimeShiftable;
+    }
   }
 }
 namespace java {
@@ -51,33 +51,33 @@ namespace org {
       class FieldAngularCoordinates : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_dda4fc5052dbc315,
-          mid_init$_006ed17eafc6f566,
-          mid_init$_b48a80a7923c10e7,
-          mid_init$_3e921d7ba937742f,
-          mid_init$_b3548fb4d05156ca,
-          mid_addOffset_b4fca2d41d96dde7,
-          mid_applyTo_176da7a9c87c96a5,
-          mid_applyTo_b9efbea1bca1646b,
-          mid_applyTo_448b59d288b2a2ff,
-          mid_applyTo_56bdb7492041db79,
-          mid_createFromModifiedRodrigues_3765c91cac246fea,
-          mid_estimateRate_fb3f5086e8ab09a4,
-          mid_estimateRate_4aafef0025250c27,
-          mid_getIdentity_f9978acbd91ca763,
-          mid_getModifiedRodrigues_8834de8762278880,
-          mid_getRotation_1e54a5caa5199c2e,
-          mid_getRotationAcceleration_ff5ac73a7b43eddd,
-          mid_getRotationRate_ff5ac73a7b43eddd,
-          mid_revert_c0c63601c9238de5,
-          mid_rotationShiftedBy_2005bf0d8214fe6a,
-          mid_shiftedBy_82d5cf76a7821c9e,
-          mid_shiftedBy_e3acef3b80610ef7,
-          mid_subtractOffset_b4fca2d41d96dde7,
-          mid_toAngularCoordinates_df90fc3151533d81,
-          mid_toDerivativeStructureRotation_33765e3b6b59bed2,
-          mid_toUnivariateDerivative1Rotation_1e54a5caa5199c2e,
-          mid_toUnivariateDerivative2Rotation_1e54a5caa5199c2e,
+          mid_init$_93243f17280cd27c,
+          mid_init$_fbf220282d78d500,
+          mid_init$_9b3177aa0063bfd6,
+          mid_init$_cea7ef07608fc27b,
+          mid_init$_1744820a539d0a5d,
+          mid_addOffset_38895dc8ac761c3b,
+          mid_applyTo_42f03a1654758e56,
+          mid_applyTo_25934c59f051a43a,
+          mid_applyTo_1bd1ef8a7bbb7399,
+          mid_applyTo_bbe671ce7c49d0a3,
+          mid_createFromModifiedRodrigues_9f8340afbe9a0f67,
+          mid_estimateRate_abfbb1e338383f1f,
+          mid_estimateRate_a00e1d2416bbd412,
+          mid_getIdentity_9cc2b9634d93173d,
+          mid_getModifiedRodrigues_a17af817fe464523,
+          mid_getRotation_5c8e6f300713559c,
+          mid_getRotationAcceleration_d1b42a6748e907f9,
+          mid_getRotationRate_d1b42a6748e907f9,
+          mid_revert_f9d057933ad73f59,
+          mid_rotationShiftedBy_bb3ec91d8d6ff7f2,
+          mid_shiftedBy_29cf63b368ce4444,
+          mid_shiftedBy_61bee88ebe869cf4,
+          mid_subtractOffset_38895dc8ac761c3b,
+          mid_toAngularCoordinates_76b9e5ce5fa05103,
+          mid_toDerivativeStructureRotation_6d38f548acbe7c0a,
+          mid_toUnivariateDerivative1Rotation_5c8e6f300713559c,
+          mid_toUnivariateDerivative2Rotation_5c8e6f300713559c,
           max_mid
         };
 

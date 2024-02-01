@@ -5,18 +5,18 @@
 
 namespace java {
   namespace util {
+    namespace stream {
+      class Stream;
+      class DoubleStream;
+    }
     class Spliterator$OfDouble;
     namespace function {
       class Supplier;
       class DoubleConsumer;
     }
-    class OptionalDouble;
     class DoubleSummaryStatistics;
+    class OptionalDouble;
     class PrimitiveIterator$OfDouble;
-    namespace stream {
-      class Stream;
-      class DoubleStream;
-    }
   }
   namespace lang {
     class Double;
@@ -32,31 +32,31 @@ namespace java {
       class DoubleStream : public ::java::lang::Object {
        public:
         enum {
-          mid_average_a58140050545434b,
-          mid_boxed_14e21bf777ff0ccf,
-          mid_concat_bd58ff8c56bbc3be,
-          mid_count_6c0ce7e438e5ded4,
-          mid_distinct_48a8801871033f9c,
-          mid_empty_48a8801871033f9c,
-          mid_findAny_a58140050545434b,
-          mid_findFirst_a58140050545434b,
-          mid_forEach_85691ac11e338ac3,
-          mid_forEachOrdered_85691ac11e338ac3,
-          mid_iterator_a3a18fbc64c0382f,
-          mid_limit_99f9dfe38cac6ad9,
-          mid_max_a58140050545434b,
-          mid_min_a58140050545434b,
-          mid_of_969b847f93a58e14,
-          mid_of_2d5ffbd866d95bb1,
-          mid_parallel_48a8801871033f9c,
-          mid_peek_b9194c52ae4a498c,
-          mid_sequential_48a8801871033f9c,
-          mid_skip_99f9dfe38cac6ad9,
-          mid_sorted_48a8801871033f9c,
-          mid_spliterator_6bd048c33c1b01f9,
-          mid_sum_b74f83833fdad017,
-          mid_summaryStatistics_2007d1a2094827e7,
-          mid_toArray_25e1757a36c4dde2,
+          mid_average_04dba3560d5bf527,
+          mid_boxed_11e4ca8182c1933d,
+          mid_concat_0167487baf7210c4,
+          mid_count_42c72b98e3c2e08a,
+          mid_distinct_98f7f3ef9d3d1b57,
+          mid_empty_98f7f3ef9d3d1b57,
+          mid_findAny_04dba3560d5bf527,
+          mid_findFirst_04dba3560d5bf527,
+          mid_forEach_a4d506ef5f26a2aa,
+          mid_forEachOrdered_a4d506ef5f26a2aa,
+          mid_iterator_a28dcb58dfaadd89,
+          mid_limit_0b951659a4ffdc52,
+          mid_max_04dba3560d5bf527,
+          mid_min_04dba3560d5bf527,
+          mid_of_6c41db567343fc7b,
+          mid_of_848ddad4f9b27f1e,
+          mid_parallel_98f7f3ef9d3d1b57,
+          mid_peek_35f6a3acef2e38ef,
+          mid_sequential_98f7f3ef9d3d1b57,
+          mid_skip_0b951659a4ffdc52,
+          mid_sorted_98f7f3ef9d3d1b57,
+          mid_spliterator_2d06752ec2b10dcc,
+          mid_sum_9981f74b2d109da6,
+          mid_summaryStatistics_199cb26abe5fb0e1,
+          mid_toArray_be783177b060994b,
           max_mid
         };
 

@@ -5,9 +5,9 @@
 
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataSource;
-      class DataProvidersManager;
+    namespace time {
+      class AbsoluteDate;
+      class TimeScale;
     }
     namespace models {
       namespace earth {
@@ -16,9 +16,9 @@ namespace org {
         }
       }
     }
-    namespace time {
-      class AbsoluteDate;
-      class TimeScale;
+    namespace data {
+      class DataSource;
+      class DataProvidersManager;
     }
   }
 }
@@ -40,21 +40,21 @@ namespace org {
             class JB2008SpaceEnvironmentData : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a627ad9c5959309d,
-                mid_init$_62070bed3354d731,
-                mid_init$_15b43ded5c01e378,
-                mid_init$_b6beea6626bd5e48,
-                mid_getDSTDTC_fd347811007a6ba3,
-                mid_getF10_fd347811007a6ba3,
-                mid_getF10B_fd347811007a6ba3,
-                mid_getMaxDate_c325492395d89b24,
-                mid_getMinDate_c325492395d89b24,
-                mid_getS10_fd347811007a6ba3,
-                mid_getS10B_fd347811007a6ba3,
-                mid_getXM10_fd347811007a6ba3,
-                mid_getXM10B_fd347811007a6ba3,
-                mid_getY10_fd347811007a6ba3,
-                mid_getY10B_fd347811007a6ba3,
+                mid_init$_771aee6c143cc92a,
+                mid_init$_0780bc52ba3a7e18,
+                mid_init$_e6cfd5b32b8f78ae,
+                mid_init$_28880648617f24f8,
+                mid_getDSTDTC_209f08246d708042,
+                mid_getF10_209f08246d708042,
+                mid_getF10B_209f08246d708042,
+                mid_getMaxDate_80e11148db499dda,
+                mid_getMinDate_80e11148db499dda,
+                mid_getS10_209f08246d708042,
+                mid_getS10B_209f08246d708042,
+                mid_getXM10_209f08246d708042,
+                mid_getXM10B_209f08246d708042,
+                mid_getY10_209f08246d708042,
+                mid_getY10B_209f08246d708042,
                 max_mid
               };
 

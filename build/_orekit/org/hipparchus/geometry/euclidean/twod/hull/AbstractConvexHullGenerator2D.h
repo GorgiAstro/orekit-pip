@@ -3,6 +3,14 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class Collection;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -21,14 +29,6 @@ namespace org {
     }
   }
 }
-namespace java {
-  namespace util {
-    class Collection;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -41,10 +41,10 @@ namespace org {
             class AbstractConvexHullGenerator2D : public ::java::lang::Object {
              public:
               enum {
-                mid_generate_ae326bc9ed5d7af0,
-                mid_getTolerance_b74f83833fdad017,
-                mid_isIncludeCollinearPoints_9ab94ac1dc23b105,
-                mid_findHullVertices_394fcc3577736ad2,
+                mid_generate_7454961d4f202a9b,
+                mid_getTolerance_9981f74b2d109da6,
+                mid_isIncludeCollinearPoints_eee3de00fe971136,
+                mid_findHullVertices_ca6e223ef3eef34f,
                 max_mid
               };
 

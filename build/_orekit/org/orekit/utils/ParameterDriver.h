@@ -17,13 +17,13 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace utils {
-      class TimeSpanMap;
-      class ParameterObserver;
-      class ParameterDriver;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterObserver;
+      class TimeSpanMap;
+      class ParameterDriver;
     }
   }
   namespace hipparchus {
@@ -43,50 +43,50 @@ namespace org {
       class ParameterDriver : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_3644a0740275e98a,
-          mid_init$_ede0d75970ba1e8b,
-          mid_addObserver_0d369fd1d1233ad6,
-          mid_addSpanAtDate_02135a6ef25adb4b,
-          mid_addSpans_d6176fd55d408ce8,
-          mid_getMaxValue_b74f83833fdad017,
-          mid_getMinValue_b74f83833fdad017,
-          mid_getName_1c1fa1e935d6cdcf,
-          mid_getNameSpan_5b3583dbfd578a63,
-          mid_getNamesSpanMap_2f46b86c016957a0,
-          mid_getNbOfValues_55546ef6a647f39b,
-          mid_getNormalizedValue_b74f83833fdad017,
-          mid_getNormalizedValue_fd347811007a6ba3,
-          mid_getObservers_e62d3bb06d56d7e3,
-          mid_getReferenceDate_c325492395d89b24,
-          mid_getReferenceValue_b74f83833fdad017,
-          mid_getScale_b74f83833fdad017,
-          mid_getTransitionDates_181973466f9ea0c5,
-          mid_getValue_b74f83833fdad017,
-          mid_getValue_fd347811007a6ba3,
-          mid_getValue_1a6b4946b0edd7a2,
-          mid_getValue_6d5abadb2f6328c2,
-          mid_getValueContinuousEstimation_fd347811007a6ba3,
-          mid_getValueSpanMap_2f46b86c016957a0,
-          mid_getValueStepEstimation_fd347811007a6ba3,
-          mid_getValues_25e1757a36c4dde2,
-          mid_isContinuousEstimation_9ab94ac1dc23b105,
-          mid_isSelected_9ab94ac1dc23b105,
-          mid_removeObserver_0d369fd1d1233ad6,
-          mid_replaceObserver_b13cdfbcabe95c73,
-          mid_setContinuousEstimation_fcb96c98de6fad04,
-          mid_setMaxValue_8ba9fe7a847cecad,
-          mid_setMinValue_8ba9fe7a847cecad,
-          mid_setName_734b91ac30d5f9b4,
-          mid_setNormalizedValue_8ba9fe7a847cecad,
-          mid_setNormalizedValue_98ef3c02384a4218,
-          mid_setReferenceDate_02135a6ef25adb4b,
-          mid_setReferenceValue_8ba9fe7a847cecad,
-          mid_setScale_8ba9fe7a847cecad,
-          mid_setSelected_fcb96c98de6fad04,
-          mid_setValue_8ba9fe7a847cecad,
-          mid_setValue_98ef3c02384a4218,
-          mid_setValueSpanMap_5791d10af4720a8e,
-          mid_toString_1c1fa1e935d6cdcf,
+          mid_init$_628c7a380d836cba,
+          mid_init$_ae8d41aac6be4b62,
+          mid_addObserver_527bf64f7d280e07,
+          mid_addSpanAtDate_8497861b879c83f7,
+          mid_addSpans_05fe71f75ead48fc,
+          mid_getMaxValue_9981f74b2d109da6,
+          mid_getMinValue_9981f74b2d109da6,
+          mid_getName_d2c8eb4129821f0e,
+          mid_getNameSpan_6989a51b7b3249aa,
+          mid_getNamesSpanMap_d11c7ec0e313e33d,
+          mid_getNbOfValues_d6ab429752e7c267,
+          mid_getNormalizedValue_9981f74b2d109da6,
+          mid_getNormalizedValue_209f08246d708042,
+          mid_getObservers_d751c1a57012b438,
+          mid_getReferenceDate_80e11148db499dda,
+          mid_getReferenceValue_9981f74b2d109da6,
+          mid_getScale_9981f74b2d109da6,
+          mid_getTransitionDates_1020504549d5f668,
+          mid_getValue_9981f74b2d109da6,
+          mid_getValue_209f08246d708042,
+          mid_getValue_52600281d0133d08,
+          mid_getValue_aef63685d22d4c3c,
+          mid_getValueContinuousEstimation_209f08246d708042,
+          mid_getValueSpanMap_d11c7ec0e313e33d,
+          mid_getValueStepEstimation_209f08246d708042,
+          mid_getValues_be783177b060994b,
+          mid_isContinuousEstimation_eee3de00fe971136,
+          mid_isSelected_eee3de00fe971136,
+          mid_removeObserver_527bf64f7d280e07,
+          mid_replaceObserver_e8442ae8bbe7cb5e,
+          mid_setContinuousEstimation_b35db77cae58639e,
+          mid_setMaxValue_1ad26e8c8c0cd65b,
+          mid_setMinValue_1ad26e8c8c0cd65b,
+          mid_setName_105e1eadb709d9ac,
+          mid_setNormalizedValue_1ad26e8c8c0cd65b,
+          mid_setNormalizedValue_281401e03841f11f,
+          mid_setReferenceDate_8497861b879c83f7,
+          mid_setReferenceValue_1ad26e8c8c0cd65b,
+          mid_setScale_1ad26e8c8c0cd65b,
+          mid_setSelected_b35db77cae58639e,
+          mid_setValue_1ad26e8c8c0cd65b,
+          mid_setValue_281401e03841f11f,
+          mid_setValueSpanMap_680e005705d5f0aa,
+          mid_toString_d2c8eb4129821f0e,
           max_mid
         };
 

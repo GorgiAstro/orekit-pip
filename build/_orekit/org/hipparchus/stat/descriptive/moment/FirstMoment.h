@@ -3,14 +3,6 @@
 
 #include "org/hipparchus/stat/descriptive/AbstractStorelessUnivariateStatistic.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-  namespace io {
-    class Serializable;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace stat {
@@ -20,6 +12,14 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
+  }
+  namespace io {
+    class Serializable;
   }
 }
 template<class T> class JArray;
@@ -33,12 +33,12 @@ namespace org {
           class FirstMoment : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_clear_a1fa5dae97ea5ed2,
-              mid_copy_c99c0278dbbc82c6,
-              mid_getN_6c0ce7e438e5ded4,
-              mid_getResult_b74f83833fdad017,
-              mid_increment_8ba9fe7a847cecad,
-              mid_aggregate_5f13a5ee5da004b6,
+              mid_clear_ff7cb6c242604316,
+              mid_copy_94cbffb9a31e17bb,
+              mid_getN_42c72b98e3c2e08a,
+              mid_getResult_9981f74b2d109da6,
+              mid_increment_1ad26e8c8c0cd65b,
+              mid_aggregate_43fa94dba5c449e7,
               max_mid
             };
 

@@ -28,8 +28,8 @@ namespace org {
         class GeoMagneticFieldFactory$FieldModel : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_3236e0afb527ed24,
-            mid_values_496c39365c848b45,
+            mid_valueOf_ca5b071a97c92d0d,
+            mid_values_381da18d39400f1b,
             max_mid
           };
 

@@ -6,8 +6,8 @@
 namespace org {
   namespace hipparchus {
     namespace optim {
-      class MaxEval;
       class OptimizationData;
+      class MaxEval;
     }
   }
 }
@@ -25,9 +25,9 @@ namespace org {
       class MaxEval : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_44ed599e93e8a30c,
-          mid_getMaxEval_55546ef6a647f39b,
-          mid_unlimited_fd63f0d1032231c6,
+          mid_init$_8fd427ab23829bf5,
+          mid_getMaxEval_d6ab429752e7c267,
+          mid_unlimited_defb83bcd601e076,
           max_mid
         };
 

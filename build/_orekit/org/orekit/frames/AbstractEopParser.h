@@ -24,9 +24,9 @@ namespace org {
       class AbstractEopParser : public ::java::lang::Object {
        public:
         enum {
-          mid_getConverter_4136999951aaddfb,
-          mid_getUtc_34d3bda0a8989e3e,
-          mid_getItrfVersionProvider_6c4234c6ef7ef572,
+          mid_getConverter_55a099913f3c39f3,
+          mid_getUtc_5e2cac12ab8da943,
+          mid_getItrfVersionProvider_a389eb463a1e729c,
           max_mid
         };
 

@@ -22,8 +22,8 @@ namespace org {
       class FieldLegendrePolynomials : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_859cebb55f4be973,
-          mid_getPnm_431f825c752f7b4c,
+          mid_init$_08bd359f79f8d5e2,
+          mid_getPnm_89a7d1b6c5e4fe60,
           max_mid
         };
 

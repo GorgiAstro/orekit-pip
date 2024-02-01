@@ -34,9 +34,9 @@ namespace org {
           class Ndm : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_29c3e061cbeaa98b,
-              mid_getComments_e62d3bb06d56d7e3,
-              mid_getConstituents_e62d3bb06d56d7e3,
+              mid_init$_a7e27987d82c9ab2,
+              mid_getComments_d751c1a57012b438,
+              mid_getConstituents_d751c1a57012b438,
               max_mid
             };
 

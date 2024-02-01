@@ -4,11 +4,6 @@
 #include "org/hipparchus/fraction/AbstractFormat.h"
 
 namespace java {
-  namespace text {
-    class FieldPosition;
-    class ParsePosition;
-    class NumberFormat;
-  }
   namespace util {
     class Locale;
   }
@@ -18,16 +13,21 @@ namespace java {
     class Object;
     class String;
   }
+  namespace text {
+    class FieldPosition;
+    class ParsePosition;
+    class NumberFormat;
+  }
 }
 namespace org {
   namespace hipparchus {
-    namespace fraction {
-      class FractionFormat;
-      class Fraction;
-    }
     namespace exception {
       class MathIllegalArgumentException;
       class MathIllegalStateException;
+    }
+    namespace fraction {
+      class FractionFormat;
+      class Fraction;
     }
   }
 }
@@ -40,20 +40,20 @@ namespace org {
       class FractionFormat : public ::org::hipparchus::fraction::AbstractFormat {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_init$_b7f3d50b51ef7518,
-          mid_init$_a87510accfde9c74,
-          mid_format_87568a31a08a12c5,
-          mid_format_b972afa1d89f0ad4,
-          mid_formatFraction_ce23704a3b231ba8,
-          mid_getAvailableLocales_8d2cd0b971cc7b85,
-          mid_getImproperInstance_a5d7d4d1f08eb9e1,
-          mid_getImproperInstance_229a8f966d65f9e8,
-          mid_getProperInstance_a5d7d4d1f08eb9e1,
-          mid_getProperInstance_229a8f966d65f9e8,
-          mid_parse_8370e0913d422863,
-          mid_parse_813491fbcb23677d,
-          mid_getDefaultNumberFormat_87ffffc449cd25a5,
+          mid_init$_ff7cb6c242604316,
+          mid_init$_327b6d3ae10b544b,
+          mid_init$_2f8f1e4936e49b8d,
+          mid_format_fdb3091a5d795ad8,
+          mid_format_8a939fb9d04314c2,
+          mid_formatFraction_e8c965f9251766d0,
+          mid_getAvailableLocales_faf2576acf90261b,
+          mid_getImproperInstance_ba33004fb7b923c8,
+          mid_getImproperInstance_ad1a698013dd3357,
+          mid_getProperInstance_ba33004fb7b923c8,
+          mid_getProperInstance_ad1a698013dd3357,
+          mid_parse_1f195ee42b3fc431,
+          mid_parse_15ac28a32cea3b83,
+          mid_getDefaultNumberFormat_525709eb5c5b5ea6,
           max_mid
         };
 

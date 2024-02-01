@@ -35,9 +35,9 @@ namespace org {
           class ClockCorrectionsProvider : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_362abc6838ec54fa,
-              mid_getAdditionalState_f227e5f48720b798,
-              mid_getName_1c1fa1e935d6cdcf,
+              mid_init$_4d8844c78275ffbe,
+              mid_getAdditionalState_e8a4ac02afc72623,
+              mid_getName_d2c8eb4129821f0e,
               max_mid
             };
 

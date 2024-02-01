@@ -5,11 +5,11 @@
 
 namespace java {
   namespace util {
-    class List;
-    class Collection;
     namespace stream {
       class Stream;
     }
+    class List;
+    class Collection;
   }
   namespace lang {
     class Class;
@@ -18,10 +18,10 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace time {
+      class FieldTimeStamped;
+      class AbsoluteDate;
       class FieldAbsoluteDate;
       class FieldTimeInterpolator;
-      class AbsoluteDate;
-      class FieldTimeStamped;
     }
   }
 }
@@ -34,13 +34,13 @@ namespace org {
       class FieldTimeInterpolator : public ::java::lang::Object {
        public:
         enum {
-          mid_getExtrapolationThreshold_b74f83833fdad017,
-          mid_getNbInterpolationPoints_55546ef6a647f39b,
-          mid_getSubInterpolators_e62d3bb06d56d7e3,
-          mid_interpolate_4c468c3f574f12a9,
-          mid_interpolate_596f2e40e2200071,
-          mid_interpolate_1b1c8c532c82f5d0,
-          mid_interpolate_f9931e17105657a3,
+          mid_getExtrapolationThreshold_9981f74b2d109da6,
+          mid_getNbInterpolationPoints_d6ab429752e7c267,
+          mid_getSubInterpolators_d751c1a57012b438,
+          mid_interpolate_3e3236a5fd16fc74,
+          mid_interpolate_5e47610c970258e7,
+          mid_interpolate_f4186cd94813d116,
+          mid_interpolate_ecda3df535f73158,
           max_mid
         };
 

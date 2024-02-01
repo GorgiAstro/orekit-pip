@@ -4,19 +4,19 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace propagation {
+      class SpacecraftState;
+    }
+  }
   namespace hipparchus {
     namespace ode {
       namespace events {
         class Action;
       }
-    }
-  }
-  namespace orekit {
-    namespace propagation {
-      class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -35,9 +35,9 @@ namespace org {
         class EventState$EventOccurrence : public ::java::lang::Object {
          public:
           enum {
-            mid_getAction_0afc8c14772bbac8,
-            mid_getNewState_9d155cc8314c99cf,
-            mid_getStopDate_c325492395d89b24,
+            mid_getAction_e01ac4830bcfb38f,
+            mid_getNewState_8fbfa58855031235,
+            mid_getStopDate_80e11148db499dda,
             max_mid
           };
 

@@ -25,11 +25,11 @@ namespace org {
         class BrentSolver : public ::org::hipparchus::analysis::solvers::AbstractUnivariateSolver {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_init$_8ba9fe7a847cecad,
-            mid_init$_369b4c97255d5afa,
-            mid_init$_b5167f35b2521627,
-            mid_doSolve_b74f83833fdad017,
+            mid_init$_ff7cb6c242604316,
+            mid_init$_1ad26e8c8c0cd65b,
+            mid_init$_13edac039e8cc967,
+            mid_init$_bd28dc6055dc5bbd,
+            mid_doSolve_9981f74b2d109da6,
             max_mid
           };
 

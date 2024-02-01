@@ -7,14 +7,14 @@ namespace java {
   namespace util {
     class List;
   }
+  namespace io {
+    class IOException;
+    class InputStream;
+  }
   namespace lang {
     class Integer;
     class Class;
     class String;
-  }
-  namespace io {
-    class InputStream;
-    class IOException;
   }
   namespace text {
     class ParseException;
@@ -22,13 +22,6 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataLoader;
-      class DataProvidersManager;
-    }
-    namespace time {
-      class TimeScales;
-    }
     namespace propagation {
       namespace analytical {
         namespace gnss {
@@ -37,6 +30,13 @@ namespace org {
           }
         }
       }
+    }
+    namespace data {
+      class DataLoader;
+      class DataProvidersManager;
+    }
+    namespace time {
+      class TimeScales;
     }
     namespace errors {
       class OrekitException;
@@ -52,14 +52,14 @@ namespace org {
       class YUMAParser : public ::org::orekit::data::AbstractSelfFeedingLoader {
        public:
         enum {
-          mid_init$_734b91ac30d5f9b4,
-          mid_init$_6d628f04453f432c,
-          mid_getAlmanacs_e62d3bb06d56d7e3,
-          mid_getPRNNumbers_e62d3bb06d56d7e3,
-          mid_getSupportedNames_1c1fa1e935d6cdcf,
-          mid_loadData_a1fa5dae97ea5ed2,
-          mid_loadData_360461e719fb564c,
-          mid_stillAcceptsData_9ab94ac1dc23b105,
+          mid_init$_105e1eadb709d9ac,
+          mid_init$_23ada22a1e61cacc,
+          mid_getAlmanacs_d751c1a57012b438,
+          mid_getPRNNumbers_d751c1a57012b438,
+          mid_getSupportedNames_d2c8eb4129821f0e,
+          mid_loadData_ff7cb6c242604316,
+          mid_loadData_bec0f846e5ec73da,
+          mid_stillAcceptsData_eee3de00fe971136,
           max_mid
         };
 

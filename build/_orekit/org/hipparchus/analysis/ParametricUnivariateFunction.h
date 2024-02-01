@@ -17,8 +17,8 @@ namespace org {
       class ParametricUnivariateFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_gradient_91fbb4072ae7ce9a,
-          mid_value_e45651f63bcd931a,
+          mid_gradient_bfc955188bf36f2c,
+          mid_value_4f42c7a8793320e4,
           max_mid
         };
 

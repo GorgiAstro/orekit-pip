@@ -16,18 +16,18 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
+        class ObservableSatellite;
         class EstimationModifier;
         class ObservedMeasurement;
-        class ObservableSatellite;
       }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace propagation {
       namespace sampling {
         class OrekitStepInterpolator;
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -42,11 +42,11 @@ namespace org {
           class MeasurementBuilder : public ::java::lang::Object {
            public:
             enum {
-              mid_addModifier_cb38ed914ba48f20,
-              mid_build_121e4e49170b7802,
-              mid_getModifiers_e62d3bb06d56d7e3,
-              mid_getSatellites_eb47c48e4fca882c,
-              mid_init_f89af00fc113b524,
+              mid_addModifier_a3bed5360bec47d0,
+              mid_build_9dac2855d37640dd,
+              mid_getModifiers_d751c1a57012b438,
+              mid_getSatellites_27bb228995072af3,
+              mid_init_ce7d94fe97fdcf55,
               max_mid
             };
 

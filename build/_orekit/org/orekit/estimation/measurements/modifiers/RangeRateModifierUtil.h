@@ -5,6 +5,9 @@
 
 namespace org {
   namespace orekit {
+    namespace utils {
+      class ParameterDriversProvider;
+    }
     namespace estimation {
       namespace measurements {
         class EstimatedMeasurementBase;
@@ -16,9 +19,6 @@ namespace org {
       namespace integration {
         class AbstractGradientConverter;
       }
-    }
-    namespace utils {
-      class ParameterDriversProvider;
     }
   }
 }

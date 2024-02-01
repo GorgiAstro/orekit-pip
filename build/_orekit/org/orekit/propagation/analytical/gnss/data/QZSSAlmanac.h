@@ -21,12 +21,12 @@ namespace org {
             class QZSSAlmanac : public ::org::orekit::propagation::analytical::gnss::data::AbstractAlmanac {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_getHealth_55546ef6a647f39b,
-                mid_getSource_1c1fa1e935d6cdcf,
-                mid_setHealth_44ed599e93e8a30c,
-                mid_setSource_734b91ac30d5f9b4,
-                mid_setSqrtA_8ba9fe7a847cecad,
+                mid_init$_ff7cb6c242604316,
+                mid_getHealth_d6ab429752e7c267,
+                mid_getSource_d2c8eb4129821f0e,
+                mid_setHealth_8fd427ab23829bf5,
+                mid_setSource_105e1eadb709d9ac,
+                mid_setSqrtA_1ad26e8c8c0cd65b,
                 max_mid
               };
 

@@ -14,12 +14,12 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    class Field;
     namespace linear {
-      class RealVector;
       class DependentVectorsHandler;
       class FieldVector;
+      class RealVector;
     }
+    class Field;
   }
 }
 template<class T> class JArray;
@@ -31,10 +31,10 @@ namespace org {
       class DependentVectorsHandler : public ::java::lang::Enum {
        public:
         enum {
-          mid_manageDependent_20b0475ecaa6f78f,
-          mid_manageDependent_91c5f5a3a628b8ee,
-          mid_valueOf_1747ed25a6ab74f9,
-          mid_values_795c2a9a023601ca,
+          mid_manageDependent_0d297b4151bde475,
+          mid_manageDependent_5c95edfe52787614,
+          mid_valueOf_83106ef9c7ebd4a1,
+          mid_values_f649ead5b4fac6e3,
           max_mid
         };
 

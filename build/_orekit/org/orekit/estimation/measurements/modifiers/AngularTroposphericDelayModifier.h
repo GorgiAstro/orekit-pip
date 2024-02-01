@@ -3,21 +3,13 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class EstimationModifier;
         class AngularAzEl;
         class EstimatedMeasurementBase;
+        class EstimationModifier;
       }
     }
     namespace models {
@@ -32,6 +24,14 @@ namespace org {
     }
   }
 }
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -43,9 +43,9 @@ namespace org {
           class AngularTroposphericDelayModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_516bd20115aa9d9d,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_modifyWithoutDerivatives_308087fabc1d7f66,
+              mid_init$_1f42633debde232b,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_modifyWithoutDerivatives_ecce216dce506020,
               max_mid
             };
 

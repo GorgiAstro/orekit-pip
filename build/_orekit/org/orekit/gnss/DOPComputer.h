@@ -13,6 +13,12 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ElevationMask;
+    }
     namespace bodies {
       class OneAxisEllipsoid;
       class GeodeticPoint;
@@ -23,12 +29,6 @@ namespace org {
     }
     namespace propagation {
       class Propagator;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class ElevationMask;
     }
   }
 }
@@ -41,12 +41,12 @@ namespace org {
       class DOPComputer : public ::java::lang::Object {
        public:
         enum {
-          mid_compute_41f2bc592159d036,
-          mid_create_ebe106ca9111f890,
-          mid_getElevationMask_ff9e909fac3867c7,
-          mid_getMinElevation_b74f83833fdad017,
-          mid_withElevationMask_f274aee01d896fe8,
-          mid_withMinElevation_2ff824698bb07c27,
+          mid_compute_46cd4086e16ddba4,
+          mid_create_c9d116723f4a2a31,
+          mid_getElevationMask_6e01f84e52d7314a,
+          mid_getMinElevation_9981f74b2d109da6,
+          mid_withElevationMask_39869f1f4c689943,
+          mid_withMinElevation_3c85f30646426402,
           max_mid
         };
 

@@ -7,11 +7,11 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
+        class EstimatedMeasurementBase;
+        class EstimationModifier;
         namespace gnss {
           class Phase;
         }
-        class EstimationModifier;
-        class EstimatedMeasurementBase;
       }
     }
     namespace utils {
@@ -38,9 +38,9 @@ namespace org {
           class ShapiroPhaseModifier : public ::org::orekit::estimation::measurements::modifiers::AbstractShapiroBaseModifier {
            public:
             enum {
-              mid_init$_8ba9fe7a847cecad,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_modifyWithoutDerivatives_308087fabc1d7f66,
+              mid_init$_1ad26e8c8c0cd65b,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_modifyWithoutDerivatives_ecce216dce506020,
               max_mid
             };
 

@@ -3,15 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace util {
-    class SortedMap;
-  }
-  namespace lang {
-    class Class;
-    class Double;
-  }
-}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -23,6 +14,15 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace util {
+    class SortedMap;
+  }
+  namespace lang {
+    class Class;
+    class Double;
   }
 }
 template<class T> class JArray;
@@ -37,9 +37,9 @@ namespace org {
             class LnsCoefficients : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_91749d1b642bb169,
-                mid_getLns_cad98089d00f8a5b,
-                mid_getdLnsdGamma_cad98089d00f8a5b,
+                mid_init$_91456eeebdcf9dcd,
+                mid_getLns_6d920aab27f0a3d2,
+                mid_getdLnsdGamma_6d920aab27f0a3d2,
                 max_mid
               };
 

@@ -8,21 +8,21 @@ namespace org {
     namespace attitudes {
       class AttitudeProvider;
     }
+    namespace time {
+      class TimeInterpolator;
+      class TimeStampedPair;
+      class AbsoluteDate;
+    }
     namespace propagation {
       class StateCovariance;
       class BoundedPropagator;
       class SpacecraftState;
     }
-    namespace orbits {
-      class Orbit;
-    }
-    namespace time {
-      class TimeStampedPair;
-      class AbsoluteDate;
-      class TimeInterpolator;
-    }
     namespace frames {
       class Frame;
+    }
+    namespace orbits {
+      class Orbit;
     }
   }
   namespace hipparchus {
@@ -51,28 +51,28 @@ namespace org {
         class Ephemeris : public ::org::orekit::propagation::analytical::AbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_33800eba82168d94,
-            mid_init$_a270f372b14e8ccf,
-            mid_init$_76b7d84534d086f1,
-            mid_init$_29c95222b0ba8aa4,
-            mid_init$_1984a4ea061303a5,
-            mid_basicPropagate_4f0008999861ca31,
-            mid_checkInputConsistency_29c95222b0ba8aa4,
-            mid_checkStatesAndCovariancesConsistency_29c3e061cbeaa98b,
-            mid_getCovariance_9a244c8ef0b05dc0,
-            mid_getCovarianceInterpolator_9fe5189c8c3b230d,
-            mid_getFrame_2c51111cc6894ba1,
-            mid_getInitialState_9d155cc8314c99cf,
-            mid_getManagedAdditionalStates_0f94e41879ab7062,
-            mid_getMaxDate_c325492395d89b24,
-            mid_getMinDate_c325492395d89b24,
-            mid_getStateInterpolator_04638ce011c1f261,
-            mid_isAdditionalStateManaged_cde6b28e15c96b75,
-            mid_resetInitialState_280c3390961e0a50,
-            mid_getMass_fd347811007a6ba3,
-            mid_resetIntermediateState_1c47c97cdbc7e206,
-            mid_propagateOrbit_5df6dcb5c4123339,
-            mid_createHarvester_f85b53b28e0fe6bb,
+            mid_init$_26a46e5a5c0ee345,
+            mid_init$_a87fec2ffab2c1fc,
+            mid_init$_e8a5aea010c0672d,
+            mid_init$_c346a54c93891220,
+            mid_init$_082ed74cc9efab42,
+            mid_basicPropagate_1e982279849c3b65,
+            mid_checkInputConsistency_c346a54c93891220,
+            mid_checkStatesAndCovariancesConsistency_a7e27987d82c9ab2,
+            mid_getCovariance_0a5b62f83fd7b8a6,
+            mid_getCovarianceInterpolator_aa56605e3771f379,
+            mid_getFrame_cb151471db4570f0,
+            mid_getInitialState_8fbfa58855031235,
+            mid_getManagedAdditionalStates_f81c0644d57ae495,
+            mid_getMaxDate_80e11148db499dda,
+            mid_getMinDate_80e11148db499dda,
+            mid_getStateInterpolator_73c4976bc58cb3ff,
+            mid_isAdditionalStateManaged_df4c65b2aede5c41,
+            mid_resetInitialState_72b846eb87f3af9a,
+            mid_getMass_209f08246d708042,
+            mid_createHarvester_d0aee1b2c15f4d53,
+            mid_propagateOrbit_776cca2e85dfe61d,
+            mid_resetIntermediateState_b69b5541e48d21c0,
             max_mid
           };
 

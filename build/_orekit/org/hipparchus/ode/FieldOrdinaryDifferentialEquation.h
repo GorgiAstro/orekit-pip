@@ -22,9 +22,9 @@ namespace org {
       class FieldOrdinaryDifferentialEquation : public ::java::lang::Object {
        public:
         enum {
-          mid_computeDerivatives_94164e01c2f25701,
-          mid_getDimension_55546ef6a647f39b,
-          mid_init_04a080b674a1ab25,
+          mid_computeDerivatives_31586897e81be81c,
+          mid_getDimension_d6ab429752e7c267,
+          mid_init_5691aa5b67fecd70,
           max_mid
         };
 

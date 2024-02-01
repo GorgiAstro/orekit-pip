@@ -15,8 +15,8 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace time {
-      class OffsetModel;
       class UTCTAIOffsetsLoader;
+      class OffsetModel;
     }
     namespace data {
       class DataProvidersManager;
@@ -32,9 +32,9 @@ namespace org {
       class UTCTAIBulletinAFilesLoader : public ::org::orekit::data::AbstractSelfFeedingLoader {
        public:
         enum {
-          mid_init$_734b91ac30d5f9b4,
-          mid_init$_0343d25c5af74eca,
-          mid_loadOffsets_e62d3bb06d56d7e3,
+          mid_init$_105e1eadb709d9ac,
+          mid_init$_4c16e57d19ddaa09,
+          mid_loadOffsets_d751c1a57012b438,
           max_mid
         };
 

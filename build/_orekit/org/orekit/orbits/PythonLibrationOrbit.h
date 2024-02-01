@@ -3,23 +3,23 @@
 
 #include "org/orekit/orbits/LibrationOrbit.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
-    namespace orbits {
-      class CR3BPDifferentialCorrection;
-    }
     namespace bodies {
       class CR3BPSystem;
     }
     namespace utils {
       class PVCoordinates;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
+    namespace orbits {
+      class CR3BPDifferentialCorrection;
+    }
   }
 }
 template<class T> class JArray;
@@ -31,12 +31,12 @@ namespace org {
       class PythonLibrationOrbit : public ::org::orekit::orbits::LibrationOrbit {
        public:
         enum {
-          mid_init$_61210a58b1c5967a,
-          mid_applyCorrectionOnPV_57264af3b06f967f,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
+          mid_init$_2ace0c1a76c4c810,
+          mid_applyCorrectionOnPV_6705c201ee6823b5,
+          mid_finalize_ff7cb6c242604316,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
           max_mid
         };
 

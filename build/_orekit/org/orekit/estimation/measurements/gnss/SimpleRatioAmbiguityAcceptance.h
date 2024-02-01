@@ -3,11 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace estimation {
@@ -18,6 +13,11 @@ namespace org {
         }
       }
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -31,9 +31,9 @@ namespace org {
           class SimpleRatioAmbiguityAcceptance : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_8ba9fe7a847cecad,
-              mid_accept_77098f4ed257d870,
-              mid_numberOfCandidates_55546ef6a647f39b,
+              mid_init$_1ad26e8c8c0cd65b,
+              mid_accept_5ee686c7fe5c8130,
+              mid_numberOfCandidates_d6ab429752e7c267,
               max_mid
             };
 

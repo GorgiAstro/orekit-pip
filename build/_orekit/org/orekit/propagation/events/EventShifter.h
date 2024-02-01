@@ -32,13 +32,13 @@ namespace org {
         class EventShifter : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_22b333117b3e805e,
-            mid_g_a17ea857ce74d258,
-            mid_getDecreasingTimeShift_b74f83833fdad017,
-            mid_getDetector_9ada55f07f5a223c,
-            mid_getIncreasingTimeShift_b74f83833fdad017,
-            mid_init_2d7f9a496c7e9781,
-            mid_create_f480106a3072748e,
+            mid_init$_8236e5b4e01e61b6,
+            mid_g_b443ba1cc794b916,
+            mid_getDecreasingTimeShift_9981f74b2d109da6,
+            mid_getDetector_ebd847a60689999d,
+            mid_getIncreasingTimeShift_9981f74b2d109da6,
+            mid_init_14deaae988292d42,
+            mid_create_50cb815e3f442e0e,
             max_mid
           };
 

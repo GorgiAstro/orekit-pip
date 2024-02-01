@@ -3,6 +3,42 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace ccsds {
+        namespace section {
+          class CommentsContainer;
+          class Data;
+        }
+        namespace ndm {
+          namespace adm {
+            namespace apm {
+              class Inertia;
+              class AngularVelocity;
+              class Maneuver;
+              class SpinStabilized;
+              class Euler;
+              class ApmQuaternion;
+            }
+          }
+        }
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace frames {
+      class Frame;
+    }
+    namespace attitudes {
+      class Attitude;
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,42 +46,6 @@ namespace java {
   namespace lang {
     class Class;
     class String;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace attitudes {
-      class Attitude;
-    }
-    namespace files {
-      namespace ccsds {
-        namespace ndm {
-          namespace adm {
-            namespace apm {
-              class ApmQuaternion;
-              class SpinStabilized;
-              class Inertia;
-              class Euler;
-              class Maneuver;
-              class AngularVelocity;
-            }
-          }
-        }
-        namespace section {
-          class Data;
-          class CommentsContainer;
-        }
-      }
-    }
-    namespace utils {
-      class PVCoordinatesProvider;
-    }
-    namespace frames {
-      class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
   }
 }
 template<class T> class JArray;
@@ -61,21 +61,21 @@ namespace org {
               class ApmData : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_c9d5491d174d1eb2,
-                  mid_addManeuver_f1ad24c585be4032,
-                  mid_getAngularVelocityBlock_a664b9618d8007a9,
-                  mid_getAttitude_0aeff0f42eb90e75,
-                  mid_getComments_e62d3bb06d56d7e3,
-                  mid_getEpoch_c325492395d89b24,
-                  mid_getEulerBlock_a7c668c67fab35b8,
-                  mid_getInertiaBlock_9d04d713e2db017a,
-                  mid_getManeuver_0a5a3b3bba59a2a1,
-                  mid_getManeuvers_e62d3bb06d56d7e3,
-                  mid_getNbManeuvers_55546ef6a647f39b,
-                  mid_getQuaternionBlock_bfe60d66e480f06b,
-                  mid_getSpinStabilizedBlock_957b702a7fb38e4f,
-                  mid_hasManeuvers_9ab94ac1dc23b105,
-                  mid_validate_8ba9fe7a847cecad,
+                  mid_init$_abbb4aa8bb4f8a57,
+                  mid_addManeuver_14bdf6dc3919ab18,
+                  mid_getAngularVelocityBlock_34c3506af9d52146,
+                  mid_getAttitude_0a584a2048d30c01,
+                  mid_getComments_d751c1a57012b438,
+                  mid_getEpoch_80e11148db499dda,
+                  mid_getEulerBlock_c67a0a2484d37758,
+                  mid_getInertiaBlock_b71face14f681398,
+                  mid_getManeuver_ea5eebdbf9aca7df,
+                  mid_getManeuvers_d751c1a57012b438,
+                  mid_getNbManeuvers_d6ab429752e7c267,
+                  mid_getQuaternionBlock_776042c45e9edc02,
+                  mid_getSpinStabilizedBlock_fa9613ab3e0993aa,
+                  mid_hasManeuvers_eee3de00fe971136,
+                  mid_validate_1ad26e8c8c0cd65b,
                   max_mid
                 };
 

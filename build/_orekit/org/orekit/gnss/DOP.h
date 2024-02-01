@@ -27,15 +27,15 @@ namespace org {
       class DOP : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_9685a2714fd60e95,
-          mid_getDate_c325492395d89b24,
-          mid_getGdop_b74f83833fdad017,
-          mid_getGnssNb_55546ef6a647f39b,
-          mid_getHdop_b74f83833fdad017,
-          mid_getLocation_963915d358b1e63a,
-          mid_getPdop_b74f83833fdad017,
-          mid_getTdop_b74f83833fdad017,
-          mid_getVdop_b74f83833fdad017,
+          mid_init$_3b1384d6cea6ba11,
+          mid_getDate_80e11148db499dda,
+          mid_getGdop_9981f74b2d109da6,
+          mid_getGnssNb_d6ab429752e7c267,
+          mid_getHdop_9981f74b2d109da6,
+          mid_getLocation_bdca252cae79438c,
+          mid_getPdop_9981f74b2d109da6,
+          mid_getTdop_9981f74b2d109da6,
+          mid_getVdop_9981f74b2d109da6,
           max_mid
         };
 

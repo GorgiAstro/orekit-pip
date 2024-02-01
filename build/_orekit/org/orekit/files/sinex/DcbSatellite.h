@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
+    namespace gnss {
+      class SatelliteSystem;
+    }
     namespace files {
       namespace sinex {
         class DcbDescription;
         class Dcb;
       }
-    }
-    namespace gnss {
-      class SatelliteSystem;
     }
   }
 }
@@ -32,12 +32,12 @@ namespace org {
         class DcbSatellite : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_734b91ac30d5f9b4,
-            mid_getDcbData_6576256e2b26ae89,
-            mid_getDescription_e96c642b778d7ae9,
-            mid_getPRN_1c1fa1e935d6cdcf,
-            mid_getSatelliteSytem_21bd759cc4a81606,
-            mid_setDescription_1a571fee8223b5dd,
+            mid_init$_105e1eadb709d9ac,
+            mid_getDcbData_0c360eeb22da4148,
+            mid_getDescription_eaa48fe1591febab,
+            mid_getPRN_d2c8eb4129821f0e,
+            mid_getSatelliteSytem_fb0bd27fcc3ba9fc,
+            mid_setDescription_d9640e5f527b80a1,
             max_mid
           };
 

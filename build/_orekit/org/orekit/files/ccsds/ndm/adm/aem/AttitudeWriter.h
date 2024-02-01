@@ -3,30 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ccsds {
-        namespace ndm {
-          namespace adm {
-            class AdmHeader;
-            namespace aem {
-              class AemMetadata;
-              class AemWriter;
-            }
-          }
-        }
-        namespace utils {
-          class FileFormat;
-        }
-      }
-      namespace general {
-        class AttitudeEphemerisFileWriter;
-        class AttitudeEphemerisFile;
-      }
-    }
-  }
-}
 namespace java {
   namespace io {
     class IOException;
@@ -35,6 +11,30 @@ namespace java {
     class Appendable;
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace ccsds {
+        namespace utils {
+          class FileFormat;
+        }
+        namespace ndm {
+          namespace adm {
+            namespace aem {
+              class AemWriter;
+              class AemMetadata;
+            }
+            class AdmHeader;
+          }
+        }
+      }
+      namespace general {
+        class AttitudeEphemerisFile;
+        class AttitudeEphemerisFileWriter;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -50,8 +50,8 @@ namespace org {
               class AttitudeWriter : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_427bbc8e0954e463,
-                  mid_write_50a488c23b217f54,
+                  mid_init$_c48c8a784d3f8fab,
+                  mid_write_14fbf989f0a2cdb3,
                   max_mid
                 };
 

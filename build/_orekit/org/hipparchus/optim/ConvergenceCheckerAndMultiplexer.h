@@ -27,8 +27,8 @@ namespace org {
       class ConvergenceCheckerAndMultiplexer : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0e7c3032c7c93ed3,
-          mid_converged_061aaa68e115701e,
+          mid_init$_aa335fea495d60e0,
+          mid_converged_cb974f0dd5d76f8e,
           max_mid
         };
 

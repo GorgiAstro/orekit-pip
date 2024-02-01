@@ -20,9 +20,9 @@ namespace java {
     class EventObject : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_55f3c894852c27a3,
-        mid_getSource_541690f9ee81d3ad,
-        mid_toString_1c1fa1e935d6cdcf,
+        mid_init$_83ee235bb1e64e94,
+        mid_getSource_704a5bee58538972,
+        mid_toString_d2c8eb4129821f0e,
         max_mid
       };
 

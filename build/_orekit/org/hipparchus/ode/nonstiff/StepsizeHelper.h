@@ -5,10 +5,10 @@
 
 namespace org {
   namespace hipparchus {
-    class CalculusFieldElement;
     namespace exception {
       class MathIllegalArgumentException;
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -26,20 +26,20 @@ namespace org {
         class StepsizeHelper : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_aa31b8b89ee72c31,
-            mid_init$_49f4b5153d696ea5,
-            mid_filterStep_93e5b8d135427e28,
-            mid_filterStep_5af7161b76f2a836,
-            mid_getDummyStepsize_b74f83833fdad017,
-            mid_getInitialStep_b74f83833fdad017,
-            mid_getMainSetDimension_55546ef6a647f39b,
-            mid_getMaxStep_b74f83833fdad017,
-            mid_getMinStep_b74f83833fdad017,
-            mid_getRelativeTolerance_2afcbc21f4e57ab2,
-            mid_getTolerance_98e10c261c066ee7,
-            mid_getTolerance_23984a6e38b0b1f2,
-            mid_setInitialStepSize_8ba9fe7a847cecad,
-            mid_setMainSetDimension_44ed599e93e8a30c,
+            mid_init$_e3195482263a60ce,
+            mid_init$_cd5724127cc72e96,
+            mid_filterStep_ada0cfabe3e16796,
+            mid_filterStep_a931394f246a1ad5,
+            mid_getDummyStepsize_9981f74b2d109da6,
+            mid_getInitialStep_9981f74b2d109da6,
+            mid_getMainSetDimension_d6ab429752e7c267,
+            mid_getMaxStep_9981f74b2d109da6,
+            mid_getMinStep_9981f74b2d109da6,
+            mid_getRelativeTolerance_ce4c02d583456bc9,
+            mid_getTolerance_5540210c7d309f18,
+            mid_getTolerance_b23de0cfc61f8f60,
+            mid_setInitialStepSize_1ad26e8c8c0cd65b,
+            mid_setMainSetDimension_8fd427ab23829bf5,
             max_mid
           };
 

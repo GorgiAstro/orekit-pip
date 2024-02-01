@@ -4,6 +4,25 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+      class AttitudeProviderModifier;
+      class FieldAttitude;
+      class Attitude;
+    }
+    namespace utils {
+      class FieldPVCoordinatesProvider;
+      class PVCoordinatesProvider;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
+    namespace frames {
+      class Frame;
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -11,25 +30,6 @@ namespace org {
           class Vector3D;
         }
       }
-    }
-  }
-  namespace orekit {
-    namespace attitudes {
-      class AttitudeProvider;
-      class FieldAttitude;
-      class AttitudeProviderModifier;
-      class Attitude;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class PVCoordinatesProvider;
-      class FieldPVCoordinatesProvider;
-    }
-    namespace frames {
-      class Frame;
     }
   }
 }
@@ -47,10 +47,10 @@ namespace org {
       class SpinStabilized : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_e16a13c4339393db,
-          mid_getAttitude_21845cfb0034fe1c,
-          mid_getAttitude_896ee4d68989b1e8,
-          mid_getUnderlyingAttitudeProvider_331f12bb6017243b,
+          mid_init$_a79f3bfa422e2758,
+          mid_getAttitude_a02177519e1b6a45,
+          mid_getAttitude_aab1c6ab68ffdcbb,
+          mid_getUnderlyingAttitudeProvider_2f73d1f4460b8d6c,
           max_mid
         };
 

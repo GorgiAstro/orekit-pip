@@ -12,17 +12,13 @@ namespace java {
   }
 }
 namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
+  }
   namespace orekit {
-    namespace models {
-      namespace earth {
-        namespace ionosphere {
-          class IonosphericModel;
-        }
-      }
-    }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
       class TimeScale;
     }
     namespace bodies {
@@ -32,16 +28,20 @@ namespace org {
     namespace frames {
       class TopocentricFrame;
     }
-    namespace utils {
-      class ParameterDriver;
-    }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
-  }
-  namespace hipparchus {
-    class CalculusFieldElement;
+    namespace models {
+      namespace earth {
+        namespace ionosphere {
+          class IonosphericModel;
+        }
+      }
+    }
+    namespace utils {
+      class ParameterDriver;
+    }
   }
 }
 template<class T> class JArray;
@@ -55,13 +55,13 @@ namespace org {
           class KlobucharIonoModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_b15baa0161a4e9c7,
-              mid_init$_0559b4bd8fb5191f,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_pathDelay_0c51f26f37c66719,
-              mid_pathDelay_5e4bace87c721642,
-              mid_pathDelay_4c566508b4c2e6c1,
-              mid_pathDelay_972d6ed5203e4547,
+              mid_init$_64100e41ba74de8f,
+              mid_init$_24ca2746f3be6434,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_pathDelay_c84aeff9124fe654,
+              mid_pathDelay_d2f5e0e8b7e00e80,
+              mid_pathDelay_c3e1ecc00df5a08c,
+              mid_pathDelay_090a1c7812c03bfb,
               max_mid
             };
 

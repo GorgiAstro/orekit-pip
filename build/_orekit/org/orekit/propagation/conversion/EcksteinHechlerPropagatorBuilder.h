@@ -8,8 +8,20 @@ namespace org {
     namespace attitudes {
       class AttitudeProvider;
     }
-    namespace utils {
-      class ParameterDriversList;
+    namespace forces {
+      namespace gravity {
+        namespace potential {
+          class UnnormalizedSphericalHarmonicsProvider;
+          class TideSystem;
+        }
+      }
+    }
+    namespace propagation {
+      namespace conversion {
+        class PropagatorBuilder;
+        class EcksteinHechlerPropagatorBuilder;
+      }
+      class Propagator;
     }
     namespace estimation {
       namespace leastsquares {
@@ -20,25 +32,13 @@ namespace org {
         class ObservedMeasurement;
       }
     }
-    namespace propagation {
-      namespace conversion {
-        class EcksteinHechlerPropagatorBuilder;
-        class PropagatorBuilder;
-      }
-      class Propagator;
+    namespace utils {
+      class ParameterDriversList;
     }
     namespace orbits {
-      class Orbit;
       class PositionAngleType;
+      class Orbit;
       class OrbitType;
-    }
-    namespace forces {
-      namespace gravity {
-        namespace potential {
-          class UnnormalizedSphericalHarmonicsProvider;
-          class TideSystem;
-        }
-      }
     }
   }
 }
@@ -61,12 +61,12 @@ namespace org {
         class EcksteinHechlerPropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_bf0ef0419ba5e85f,
-            mid_init$_3447fabd0e491d80,
-            mid_init$_d6ba313b6b5b1808,
-            mid_buildLeastSquaresModel_1a4dd1f247347a8f,
-            mid_buildPropagator_708cc138373fff03,
-            mid_copy_0dbb96a0c5ab31f7,
+            mid_init$_1cbbf6cefa3a23d1,
+            mid_init$_6fdc8fac14c18de2,
+            mid_init$_b64c5b5ba3f87fc8,
+            mid_buildLeastSquaresModel_434804ad6c6cc8a8,
+            mid_buildPropagator_dbf963913bad78cb,
+            mid_copy_e21052299cc72e98,
             max_mid
           };
 

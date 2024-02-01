@@ -4,17 +4,17 @@
 #include "java/io/Reader.h"
 
 namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
+    }
+  }
   namespace io {
     class IOException;
   }
   namespace lang {
     class Class;
     class String;
-  }
-  namespace util {
-    namespace stream {
-      class Stream;
-    }
   }
 }
 template<class T> class JArray;
@@ -25,18 +25,18 @@ namespace java {
     class BufferedReader : public ::java::io::Reader {
      public:
       enum {
-        mid_init$_e1a387c1ca9243a3,
-        mid_init$_f4e06c40be13a44b,
-        mid_close_a1fa5dae97ea5ed2,
-        mid_lines_14e21bf777ff0ccf,
-        mid_mark_44ed599e93e8a30c,
-        mid_markSupported_9ab94ac1dc23b105,
-        mid_read_55546ef6a647f39b,
-        mid_read_a45a4db28976f262,
-        mid_readLine_1c1fa1e935d6cdcf,
-        mid_ready_9ab94ac1dc23b105,
-        mid_reset_a1fa5dae97ea5ed2,
-        mid_skip_9db63109f74a74fc,
+        mid_init$_fdff785437afea93,
+        mid_init$_26cc506a7e4e00cb,
+        mid_close_ff7cb6c242604316,
+        mid_lines_11e4ca8182c1933d,
+        mid_mark_8fd427ab23829bf5,
+        mid_markSupported_eee3de00fe971136,
+        mid_read_d6ab429752e7c267,
+        mid_read_1f255a7d724a5165,
+        mid_readLine_d2c8eb4129821f0e,
+        mid_ready_eee3de00fe971136,
+        mid_reset_ff7cb6c242604316,
+        mid_skip_1eaf6eb0a3f3163f,
         max_mid
       };
 

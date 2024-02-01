@@ -41,9 +41,9 @@ namespace org {
             class CartesianCovarianceKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_2b44fd2f7413849c,
-                mid_valueOf_3daea66a7d6e3d6e,
-                mid_values_c22a8ef1b487b41f,
+                mid_process_0bf15d1aa6f3acdf,
+                mid_valueOf_ab032209186096bd,
+                mid_values_85585952912af5d6,
                 max_mid
               };
 

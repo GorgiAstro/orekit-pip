@@ -4,40 +4,29 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-        }
-      }
-    }
-    namespace analysis {
-      namespace differentiation {
-        class Derivative;
-      }
-    }
-  }
   namespace orekit {
     namespace rugged {
-      namespace utils {
-        class ExtendedEllipsoid;
-        class DerivativeGenerator;
-        class SpacecraftToObservedBody;
+      namespace api {
+        class AlgorithmId;
       }
       namespace linesensor {
         class LineSensor;
         class SensorPixel;
       }
-      namespace intersection {
-        class IntersectionAlgorithm;
+      namespace utils {
+        class ExtendedEllipsoid;
+        class DerivativeGenerator;
+        class SpacecraftToObservedBody;
       }
       namespace refraction {
         class AtmosphericRefraction;
       }
-      namespace api {
-        class AlgorithmId;
+      namespace intersection {
+        class IntersectionAlgorithm;
       }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace frames {
       class Transform;
@@ -45,8 +34,19 @@ namespace org {
     namespace bodies {
       class GeodeticPoint;
     }
-    namespace time {
-      class AbsoluteDate;
+  }
+  namespace hipparchus {
+    namespace analysis {
+      namespace differentiation {
+        class Derivative;
+      }
+    }
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class Vector3D;
+        }
+      }
     }
   }
 }
@@ -69,31 +69,31 @@ namespace org {
         class Rugged : public ::java::lang::Object {
          public:
           enum {
-            mid_dateLocation_cb79a54660e78b3c,
-            mid_dateLocation_22120ae0407ca8cb,
-            mid_directLocation_61df8abbfc58115b,
-            mid_directLocation_084fceafe328d082,
-            mid_distanceBetweenLOS_42ebea2f799979f3,
-            mid_distanceBetweenLOSderivatives_c8e3e81530539894,
-            mid_getAlgorithm_81f0b03daeff021f,
-            mid_getAlgorithmId_d67e2fdbea04a3ee,
-            mid_getBodyToInertial_976d4bc81671ce42,
-            mid_getEllipsoid_dd5ed0ce6aa0aa1f,
-            mid_getInertialToBody_976d4bc81671ce42,
-            mid_getLineSensor_4377f7d741e3b8b8,
-            mid_getLineSensors_cb666ea1a15f5210,
-            mid_getMaxDate_c325492395d89b24,
-            mid_getMinDate_c325492395d89b24,
-            mid_getName_1c1fa1e935d6cdcf,
-            mid_getRefractionCorrection_8900d038872ca946,
-            mid_getScToBody_cf686ec38ae38bec,
-            mid_getScToInertial_976d4bc81671ce42,
-            mid_inverseLocation_65ac31aa9f2ff8e2,
-            mid_inverseLocation_de019a270691f75a,
-            mid_inverseLocationDerivatives_4395b3d88792732c,
-            mid_isAberrationOfLightCorrected_9ab94ac1dc23b105,
-            mid_isInRange_a35647bda2901f54,
-            mid_isLightTimeCorrected_9ab94ac1dc23b105,
+            mid_dateLocation_dc12e0e6c5b4455d,
+            mid_dateLocation_3791171da7cdd1eb,
+            mid_directLocation_43ad5867a50451cc,
+            mid_directLocation_537d8ec1682936c5,
+            mid_distanceBetweenLOS_8f1cdea02beae019,
+            mid_distanceBetweenLOSderivatives_064e079069cdbe83,
+            mid_getAlgorithm_dc4cbf7a93096651,
+            mid_getAlgorithmId_65c2eab2e30f9d2d,
+            mid_getBodyToInertial_02ca17ac51b6a4b2,
+            mid_getEllipsoid_bac68fc0dce2fb24,
+            mid_getInertialToBody_02ca17ac51b6a4b2,
+            mid_getLineSensor_3ab0865e486f5c39,
+            mid_getLineSensors_3bfef5c77ceb081a,
+            mid_getMaxDate_80e11148db499dda,
+            mid_getMinDate_80e11148db499dda,
+            mid_getName_d2c8eb4129821f0e,
+            mid_getRefractionCorrection_8a451c1ca0929e53,
+            mid_getScToBody_a784fa07890a0e9f,
+            mid_getScToInertial_02ca17ac51b6a4b2,
+            mid_inverseLocation_92e488e30346bcdc,
+            mid_inverseLocation_da92dc38449d384a,
+            mid_inverseLocationDerivatives_9d08c2713397ffba,
+            mid_isAberrationOfLightCorrected_eee3de00fe971136,
+            mid_isInRange_b16e79ba1b2830a1,
+            mid_isLightTimeCorrected_eee3de00fe971136,
             max_mid
           };
 

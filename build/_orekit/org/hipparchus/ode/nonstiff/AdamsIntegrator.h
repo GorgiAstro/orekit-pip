@@ -5,17 +5,17 @@
 
 namespace org {
   namespace hipparchus {
-    namespace linear {
-      class Array2DRowRealMatrix;
-    }
     namespace ode {
-      class ODEStateAndDerivative;
       class ODEState;
       class ExpandableODE;
+      class ODEStateAndDerivative;
     }
     namespace exception {
       class MathIllegalArgumentException;
       class MathIllegalStateException;
+    }
+    namespace linear {
+      class Array2DRowRealMatrix;
     }
   }
 }
@@ -36,14 +36,14 @@ namespace org {
         class AdamsIntegrator : public ::org::hipparchus::ode::MultistepIntegrator {
          public:
           enum {
-            mid_init$_134c07106b4f374f,
-            mid_init$_b596f7b71fee7a1d,
-            mid_integrate_8cb4bf2a0c64fd92,
-            mid_updateHighOrderDerivativesPhase1_f7e2a664bf09ba0b,
-            mid_updateHighOrderDerivativesPhase2_6416fb10fa003d60,
-            mid_errorEstimation_68d979ce0da3570a,
-            mid_finalizeStep_a753e4b9b86b52dc,
-            mid_initializeHighOrderDerivatives_0830b1db869546c8,
+            mid_init$_b5131bdc677927a0,
+            mid_init$_11caa83b13f15278,
+            mid_integrate_3b00c059d3ccb86d,
+            mid_updateHighOrderDerivativesPhase1_afbfc3ddbfe58d51,
+            mid_updateHighOrderDerivativesPhase2_e958729b32219ba2,
+            mid_initializeHighOrderDerivatives_7145db39e893543c,
+            mid_errorEstimation_37b70b019b7ede26,
+            mid_finalizeStep_26e1f9270ed9200b,
             max_mid
           };
 

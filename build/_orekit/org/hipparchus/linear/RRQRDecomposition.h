@@ -3,17 +3,17 @@
 
 #include "org/hipparchus/linear/QRDecomposition.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace hipparchus {
     namespace linear {
-      class RealMatrix;
       class DecompositionSolver;
+      class RealMatrix;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,13 +25,13 @@ namespace org {
       class RRQRDecomposition : public ::org::hipparchus::linear::QRDecomposition {
        public:
         enum {
-          mid_init$_84bd15e0995d0c79,
-          mid_init$_5c88fbe0835e7c85,
-          mid_getP_f77d745f2128c391,
-          mid_getRank_2af4736545087009,
-          mid_getSolver_5823fb909376de2c,
-          mid_decompose_07adb42ffaa97d31,
-          mid_performHouseholderReflection_fd10cb359d67ca83,
+          mid_init$_f5364c9a9d9cbd53,
+          mid_init$_dc02fdb8767f32bc,
+          mid_getP_b2eebabce70526d8,
+          mid_getRank_9e72cb20adb363fb,
+          mid_getSolver_ac3e6aafa2c6c596,
+          mid_decompose_11ecdbb5af7ed67d,
+          mid_performHouseholderReflection_5f60b0f0790bcf77,
           max_mid
         };
 

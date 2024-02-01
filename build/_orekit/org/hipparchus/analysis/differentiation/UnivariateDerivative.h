@@ -14,15 +14,15 @@ namespace java {
 }
 namespace org {
   namespace hipparchus {
-    namespace analysis {
-      namespace differentiation {
-        class Derivative;
-        class DerivativeStructure;
-        class UnivariateDerivative;
-      }
-    }
     namespace exception {
       class MathIllegalArgumentException;
+    }
+    namespace analysis {
+      namespace differentiation {
+        class DerivativeStructure;
+        class Derivative;
+        class UnivariateDerivative;
+      }
     }
   }
 }
@@ -36,11 +36,11 @@ namespace org {
         class UnivariateDerivative : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_getDerivative_2afcbc21f4e57ab2,
-            mid_getFreeParameters_55546ef6a647f39b,
-            mid_getPartialDerivative_bff393394ab19dc1,
-            mid_toDerivativeStructure_57983c4d4b4a2f7f,
+            mid_init$_ff7cb6c242604316,
+            mid_getDerivative_ce4c02d583456bc9,
+            mid_getFreeParameters_d6ab429752e7c267,
+            mid_getPartialDerivative_7f744e43a2f098aa,
+            mid_toDerivativeStructure_ce114c5dd035d753,
             max_mid
           };
 

@@ -5,6 +5,9 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace propagation {
       namespace events {
         class ParameterDrivenDateIntervalDetector;
@@ -14,9 +17,6 @@ namespace org {
     namespace utils {
       class DateDriver;
       class ParameterDriver;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -36,14 +36,14 @@ namespace org {
         class ParameterDrivenDateIntervalDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_6d40c356abc56b92,
-            mid_init$_f707b8d915bcbfb2,
-            mid_g_a17ea857ce74d258,
-            mid_getDurationDriver_a59daa5e273117e1,
-            mid_getMedianDriver_b77c61c859c7ff3e,
-            mid_getStartDriver_b77c61c859c7ff3e,
-            mid_getStopDriver_b77c61c859c7ff3e,
-            mid_create_d54066f0626c2606,
+            mid_init$_59bf5a7aa18cf98f,
+            mid_init$_738a36cb63fab284,
+            mid_g_b443ba1cc794b916,
+            mid_getDurationDriver_7daccb22665e511b,
+            mid_getMedianDriver_b88c1aa4fa123324,
+            mid_getStartDriver_b88c1aa4fa123324,
+            mid_getStopDriver_b88c1aa4fa123324,
+            mid_create_b770eb996834b639,
             max_mid
           };
 

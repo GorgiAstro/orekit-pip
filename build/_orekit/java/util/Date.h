@@ -4,17 +4,17 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace lang {
-    class Comparable;
-    class Class;
-    class Cloneable;
-    class String;
+  namespace util {
+    class Date;
   }
   namespace io {
     class Serializable;
   }
-  namespace util {
-    class Date;
+  namespace lang {
+    class Class;
+    class Cloneable;
+    class String;
+    class Comparable;
   }
 }
 template<class T> class JArray;
@@ -25,39 +25,39 @@ namespace java {
     class Date : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_a1fa5dae97ea5ed2,
-        mid_init$_734b91ac30d5f9b4,
-        mid_init$_3d7dd2314a0dd456,
-        mid_init$_a0df4b8e4ed3805e,
-        mid_init$_a5f63d2987dd5c80,
-        mid_init$_ea412797eafea800,
-        mid_UTC_93463d78a2f9e946,
-        mid_after_e7dfa6240fa69edb,
-        mid_before_e7dfa6240fa69edb,
-        mid_clone_541690f9ee81d3ad,
-        mid_compareTo_f96b06ef9e3ac00c,
-        mid_equals_460c5e2d9d51c6cc,
-        mid_getDate_55546ef6a647f39b,
-        mid_getDay_55546ef6a647f39b,
-        mid_getHours_55546ef6a647f39b,
-        mid_getMinutes_55546ef6a647f39b,
-        mid_getMonth_55546ef6a647f39b,
-        mid_getSeconds_55546ef6a647f39b,
-        mid_getTime_6c0ce7e438e5ded4,
-        mid_getTimezoneOffset_55546ef6a647f39b,
-        mid_getYear_55546ef6a647f39b,
-        mid_hashCode_55546ef6a647f39b,
-        mid_parse_cbeeb2314499c200,
-        mid_setDate_44ed599e93e8a30c,
-        mid_setHours_44ed599e93e8a30c,
-        mid_setMinutes_44ed599e93e8a30c,
-        mid_setMonth_44ed599e93e8a30c,
-        mid_setSeconds_44ed599e93e8a30c,
-        mid_setTime_3d7dd2314a0dd456,
-        mid_setYear_44ed599e93e8a30c,
-        mid_toGMTString_1c1fa1e935d6cdcf,
-        mid_toLocaleString_1c1fa1e935d6cdcf,
-        mid_toString_1c1fa1e935d6cdcf,
+        mid_init$_ff7cb6c242604316,
+        mid_init$_105e1eadb709d9ac,
+        mid_init$_f5bbab7e97879358,
+        mid_init$_48ca1125d4856a74,
+        mid_init$_cd8b07b153e58289,
+        mid_init$_ee5da648d666a7a9,
+        mid_UTC_af32f82a1a8be01f,
+        mid_after_aa8a9ab2727cc0c7,
+        mid_before_aa8a9ab2727cc0c7,
+        mid_clone_704a5bee58538972,
+        mid_compareTo_d16b285d3cef665d,
+        mid_equals_72faff9b05f5ed5e,
+        mid_getDate_d6ab429752e7c267,
+        mid_getDay_d6ab429752e7c267,
+        mid_getHours_d6ab429752e7c267,
+        mid_getMinutes_d6ab429752e7c267,
+        mid_getMonth_d6ab429752e7c267,
+        mid_getSeconds_d6ab429752e7c267,
+        mid_getTime_42c72b98e3c2e08a,
+        mid_getTimezoneOffset_d6ab429752e7c267,
+        mid_getYear_d6ab429752e7c267,
+        mid_hashCode_d6ab429752e7c267,
+        mid_parse_bd9949f7787fa510,
+        mid_setDate_8fd427ab23829bf5,
+        mid_setHours_8fd427ab23829bf5,
+        mid_setMinutes_8fd427ab23829bf5,
+        mid_setMonth_8fd427ab23829bf5,
+        mid_setSeconds_8fd427ab23829bf5,
+        mid_setTime_f5bbab7e97879358,
+        mid_setYear_8fd427ab23829bf5,
+        mid_toGMTString_d2c8eb4129821f0e,
+        mid_toLocaleString_d2c8eb4129821f0e,
+        mid_toString_d2c8eb4129821f0e,
         max_mid
       };
 

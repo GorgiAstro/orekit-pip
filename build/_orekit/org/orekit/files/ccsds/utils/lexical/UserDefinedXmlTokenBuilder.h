@@ -39,8 +39,8 @@ namespace org {
             class UserDefinedXmlTokenBuilder : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_buildTokens_2c588550a962bd9d,
+                mid_init$_ff7cb6c242604316,
+                mid_buildTokens_bb6f0a25fbefd346,
                 max_mid
               };
 

@@ -5,16 +5,16 @@
 
 namespace java {
   namespace io {
-    class InputStream;
     class IOException;
+    class InputStream;
+  }
+  namespace text {
+    class ParseException;
   }
   namespace lang {
     class Throwable;
     class Class;
     class String;
-  }
-  namespace text {
-    class ParseException;
   }
 }
 namespace org {
@@ -33,13 +33,13 @@ namespace org {
       class PythonDataLoader : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_loadData_360461e719fb564c,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
-          mid_stillAcceptsData_9ab94ac1dc23b105,
+          mid_init$_ff7cb6c242604316,
+          mid_finalize_ff7cb6c242604316,
+          mid_loadData_bec0f846e5ec73da,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
+          mid_stillAcceptsData_eee3de00fe971136,
           max_mid
         };
 

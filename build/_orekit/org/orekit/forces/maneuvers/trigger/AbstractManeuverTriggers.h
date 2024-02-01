@@ -5,21 +5,21 @@
 
 namespace org {
   namespace orekit {
+    namespace utils {
+      class TimeSpanMap;
+    }
     namespace forces {
       namespace maneuvers {
         namespace trigger {
-          class FieldManeuverTriggersResetter;
           class ManeuverTriggersResetter;
+          class FieldManeuverTriggersResetter;
           class ManeuverTriggers;
         }
       }
     }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
-    }
-    namespace utils {
-      class TimeSpanMap;
+      class FieldAbsoluteDate;
     }
     namespace propagation {
       class FieldSpacecraftState;
@@ -33,8 +33,8 @@ namespace org {
 }
 namespace java {
   namespace lang {
-    class Boolean;
     class Class;
+    class Boolean;
   }
 }
 template<class T> class JArray;
@@ -48,20 +48,20 @@ namespace org {
           class AbstractManeuverTriggers : public ::java::lang::Object {
            public:
             enum {
-              mid_addResetter_88f6b3eca6f2ace7,
-              mid_addResetter_7abb1f925b31f873,
-              mid_getFirings_2f46b86c016957a0,
-              mid_init_2d7f9a496c7e9781,
-              mid_init_96d019f392abf918,
-              mid_isFiring_430b36eccbd3b265,
-              mid_isFiring_d98e2ca7f972ae8c,
-              mid_notifyResetters_1c47c97cdbc7e206,
-              mid_notifyResetters_871885b409df9d57,
-              mid_isFiringOnInitialState_4ef3ef34329e6316,
-              mid_initializeResetters_96d019f392abf918,
-              mid_initializeResetters_2d7f9a496c7e9781,
-              mid_applyResetters_c3c52b1257139045,
-              mid_applyResetters_370b1acde6244b7e,
+              mid_addResetter_5392838e44623505,
+              mid_addResetter_8b21453ce137761f,
+              mid_getFirings_d11c7ec0e313e33d,
+              mid_init_14deaae988292d42,
+              mid_init_357211ab77703f3f,
+              mid_isFiring_8083fb6b6fb5ee99,
+              mid_isFiring_10e417873abbceb0,
+              mid_applyResetters_ed3fe207e6fde26f,
+              mid_applyResetters_59bc90ab93a43079,
+              mid_notifyResetters_b69b5541e48d21c0,
+              mid_notifyResetters_e90aea08a7a0ab5e,
+              mid_initializeResetters_357211ab77703f3f,
+              mid_initializeResetters_14deaae988292d42,
+              mid_isFiringOnInitialState_145801f71fbbc869,
               max_mid
             };
 

@@ -25,15 +25,15 @@ namespace org {
         class ConstantRealDistribution : public ::org::hipparchus::distribution::continuous::AbstractRealDistribution {
          public:
           enum {
-            mid_init$_8ba9fe7a847cecad,
-            mid_cumulativeProbability_04fd0666b613d2ab,
-            mid_density_04fd0666b613d2ab,
-            mid_getNumericalMean_b74f83833fdad017,
-            mid_getNumericalVariance_b74f83833fdad017,
-            mid_getSupportLowerBound_b74f83833fdad017,
-            mid_getSupportUpperBound_b74f83833fdad017,
-            mid_inverseCumulativeProbability_04fd0666b613d2ab,
-            mid_isSupportConnected_9ab94ac1dc23b105,
+            mid_init$_1ad26e8c8c0cd65b,
+            mid_cumulativeProbability_bf28ed64d6e8576b,
+            mid_density_bf28ed64d6e8576b,
+            mid_getNumericalMean_9981f74b2d109da6,
+            mid_getNumericalVariance_9981f74b2d109da6,
+            mid_getSupportLowerBound_9981f74b2d109da6,
+            mid_getSupportUpperBound_9981f74b2d109da6,
+            mid_inverseCumulativeProbability_bf28ed64d6e8576b,
+            mid_isSupportConnected_eee3de00fe971136,
             max_mid
           };
 

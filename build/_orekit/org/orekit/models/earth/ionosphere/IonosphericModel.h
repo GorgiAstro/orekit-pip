@@ -4,9 +4,6 @@
 #include "org/orekit/utils/ParameterDriversProvider.h"
 
 namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
   namespace orekit {
     namespace frames {
       class TopocentricFrame;
@@ -15,6 +12,9 @@ namespace org {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
+  }
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -33,8 +33,8 @@ namespace org {
           class IonosphericModel : public ::org::orekit::utils::ParameterDriversProvider {
            public:
             enum {
-              mid_pathDelay_0c51f26f37c66719,
-              mid_pathDelay_5e4bace87c721642,
+              mid_pathDelay_c84aeff9124fe654,
+              mid_pathDelay_d2f5e0e8b7e00e80,
               max_mid
             };
 

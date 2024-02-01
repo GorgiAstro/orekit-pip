@@ -5,8 +5,14 @@
 
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace errors {
       class OrekitIllegalArgumentException;
+    }
+    namespace utils {
+      class ExtendedPVCoordinatesProvider;
     }
     namespace gnss {
       namespace attitude {
@@ -16,14 +22,8 @@ namespace org {
         class SatelliteType;
       }
     }
-    namespace utils {
-      class ExtendedPVCoordinatesProvider;
-    }
     namespace frames {
       class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -43,11 +43,11 @@ namespace org {
         class SatelliteType : public ::java::lang::Enum {
          public:
           enum {
-            mid_buildAttitudeProvider_638d87bbeb692ef8,
-            mid_getName_1c1fa1e935d6cdcf,
-            mid_parseSatelliteType_4c8fc709a887ef27,
-            mid_valueOf_4c8fc709a887ef27,
-            mid_values_42614b441f541c9a,
+            mid_buildAttitudeProvider_65b9722b84c73eea,
+            mid_getName_d2c8eb4129821f0e,
+            mid_parseSatelliteType_eaaec2c2edfa000b,
+            mid_valueOf_eaaec2c2edfa000b,
+            mid_values_1d3fd3b2ef345df5,
             max_mid
           };
 

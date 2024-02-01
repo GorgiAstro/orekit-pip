@@ -22,9 +22,9 @@ namespace org {
       class OccultationEngine$FieldOccultationAngles : public ::java::lang::Object {
        public:
         enum {
-          mid_getLimbRadius_81520b552cb3fa26,
-          mid_getOccultedApparentRadius_81520b552cb3fa26,
-          mid_getSeparation_81520b552cb3fa26,
+          mid_getLimbRadius_08d37e3f77b7239d,
+          mid_getOccultedApparentRadius_08d37e3f77b7239d,
+          mid_getSeparation_08d37e3f77b7239d,
           max_mid
         };
 

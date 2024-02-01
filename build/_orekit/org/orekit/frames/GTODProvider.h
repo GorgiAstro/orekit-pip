@@ -6,17 +6,17 @@
 namespace org {
   namespace orekit {
     namespace frames {
-      class FieldTransform;
       class EOPBasedTransformProvider;
-      class Transform;
-      class EOPHistory;
       class FieldStaticTransform;
-      class StaticTransform;
       class GTODProvider;
+      class FieldTransform;
+      class Transform;
+      class StaticTransform;
+      class EOPHistory;
     }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
   }
 }
@@ -34,12 +34,12 @@ namespace org {
       class GTODProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getEOPHistory_f9d30be358d43685,
-          mid_getNonInterpolatingProvider_ef75ce810ae41bf2,
-          mid_getStaticTransform_5f13614b572308e8,
-          mid_getStaticTransform_09ace34b8a3460b2,
-          mid_getTransform_976d4bc81671ce42,
-          mid_getTransform_7a8ca6856fe3fc9e,
+          mid_getEOPHistory_867110817f590882,
+          mid_getNonInterpolatingProvider_8f82c030e2817dc5,
+          mid_getStaticTransform_6e492420312934f1,
+          mid_getStaticTransform_3b5ee2ab7cc035a5,
+          mid_getTransform_02ca17ac51b6a4b2,
+          mid_getTransform_286745ef54e0a7f6,
           max_mid
         };
 

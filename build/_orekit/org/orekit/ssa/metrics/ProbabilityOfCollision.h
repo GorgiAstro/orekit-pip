@@ -19,14 +19,14 @@ namespace org {
         class ProbabilityOfCollision : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_e870be4439f1c3c6,
-            mid_init$_8ee693d34bd8b671,
-            mid_init$_85334b51b21b2e44,
-            mid_getLowerLimit_b74f83833fdad017,
-            mid_getProbabilityOfCollisionMethodName_1c1fa1e935d6cdcf,
-            mid_getUpperLimit_b74f83833fdad017,
-            mid_getValue_b74f83833fdad017,
-            mid_isMaxProbability_9ab94ac1dc23b105,
+            mid_init$_1bad5b063c51df2e,
+            mid_init$_eb13367e509f91e6,
+            mid_init$_4bbf0b8faa63b7c7,
+            mid_getLowerLimit_9981f74b2d109da6,
+            mid_getProbabilityOfCollisionMethodName_d2c8eb4129821f0e,
+            mid_getUpperLimit_9981f74b2d109da6,
+            mid_getValue_9981f74b2d109da6,
+            mid_isMaxProbability_eee3de00fe971136,
             max_mid
           };
 

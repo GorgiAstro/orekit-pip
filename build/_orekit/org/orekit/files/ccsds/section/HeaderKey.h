@@ -7,15 +7,15 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace section {
+          class HeaderKey;
+          class Header;
+        }
         namespace utils {
           namespace lexical {
             class ParseToken;
           }
           class ContextBinding;
-        }
-        namespace section {
-          class Header;
-          class HeaderKey;
         }
       }
     }
@@ -38,9 +38,9 @@ namespace org {
           class HeaderKey : public ::java::lang::Enum {
            public:
             enum {
-              mid_process_149808c0cf85c37e,
-              mid_valueOf_ff1e64ac0d1e9c2e,
-              mid_values_d8fadf6e84e608fd,
+              mid_process_3e6bd72398e1c72f,
+              mid_valueOf_f10656b9b1305ba3,
+              mid_values_6552e0e5bdf61525,
               max_mid
             };
 

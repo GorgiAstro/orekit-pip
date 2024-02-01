@@ -28,9 +28,9 @@ namespace org {
       class AbstractUnscentedTransform : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_44ed599e93e8a30c,
-          mid_unscentedTransform_d7f36cdbc321d4e6,
-          mid_getMultiplicationFactor_b74f83833fdad017,
+          mid_init$_8fd427ab23829bf5,
+          mid_unscentedTransform_3f6076288b354811,
+          mid_getMultiplicationFactor_9981f74b2d109da6,
           max_mid
         };
 

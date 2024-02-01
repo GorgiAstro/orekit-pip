@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace linear {
       class RealMatrix;
       class RealVector;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,9 +25,9 @@ namespace org {
       class UnscentedTransformProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getWc_3a10cc75bd070d84,
-          mid_getWm_3a10cc75bd070d84,
-          mid_unscentedTransform_d7f36cdbc321d4e6,
+          mid_getWc_92d7e8d8d3f1dfcf,
+          mid_getWm_92d7e8d8d3f1dfcf,
+          mid_unscentedTransform_3f6076288b354811,
           max_mid
         };
 

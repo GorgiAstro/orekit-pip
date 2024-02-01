@@ -16,7 +16,6 @@ namespace java {
 namespace org {
   namespace orekit {
     namespace gnss {
-      class SatelliteSystem;
       namespace metric {
         namespace messages {
           namespace ssr {
@@ -27,6 +26,7 @@ namespace org {
           }
         }
       }
+      class SatelliteSystem;
     }
   }
 }
@@ -43,8 +43,8 @@ namespace org {
               class SsrIgm07 : public ::org::orekit::gnss::metric::messages::ssr::igm::SsrIgmMessage {
                public:
                 enum {
-                  mid_init$_a46db99f5fb71e67,
-                  mid_getSsrIgm07Data_810bed48fafb0b9a,
+                  mid_init$_1ad096180561130b,
+                  mid_getSsrIgm07Data_dbcb8bbac6b35e0d,
                   max_mid
                 };
 

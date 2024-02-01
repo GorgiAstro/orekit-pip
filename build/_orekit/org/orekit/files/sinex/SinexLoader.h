@@ -3,34 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace utils {
-      class IERSConventions$NutationCorrectionConverter;
-    }
-    namespace files {
-      namespace sinex {
-        class DcbSatellite;
-        class SinexEopEntry;
-        class DcbStation;
-        class Station;
-      }
-    }
-    namespace data {
-      class DataSource;
-      class DataProvidersManager;
-    }
-    namespace frames {
-      class EOPEntry;
-      class EopHistoryLoader;
-      class ITRFVersion;
-    }
-    namespace time {
-      class TimeScales;
-      class AbsoluteDate;
-    }
-  }
-}
 namespace java {
   namespace util {
     class Map;
@@ -39,6 +11,34 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace sinex {
+        class Station;
+        class DcbSatellite;
+        class DcbStation;
+        class SinexEopEntry;
+      }
+    }
+    namespace time {
+      class AbsoluteDate;
+      class TimeScales;
+    }
+    namespace frames {
+      class EOPEntry;
+      class ITRFVersion;
+      class EopHistoryLoader;
+    }
+    namespace data {
+      class DataSource;
+      class DataProvidersManager;
+    }
+    namespace utils {
+      class IERSConventions$NutationCorrectionConverter;
+    }
   }
 }
 template<class T> class JArray;
@@ -51,21 +51,21 @@ namespace org {
         class SinexLoader : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_734b91ac30d5f9b4,
-            mid_init$_4345325324782fee,
-            mid_init$_f266484a594a0c99,
-            mid_init$_6d628f04453f432c,
-            mid_fillHistory_f091b90ef4456eb3,
-            mid_getCreationDate_c325492395d89b24,
-            mid_getDcbSatellite_8fdf962db5d73394,
-            mid_getDcbStation_e8c6abf43cbaa30c,
-            mid_getFileEpochEndTime_c325492395d89b24,
-            mid_getFileEpochStartTime_c325492395d89b24,
-            mid_getITRFVersion_8bcdfad365f6d36a,
-            mid_getParsedEop_810bed48fafb0b9a,
-            mid_getStation_d0046006e4a0f7f7,
-            mid_getStations_810bed48fafb0b9a,
-            mid_setITRFVersion_44ed599e93e8a30c,
+            mid_init$_105e1eadb709d9ac,
+            mid_init$_023df3a7dca17c03,
+            mid_init$_71f9c35d068ceff3,
+            mid_init$_23ada22a1e61cacc,
+            mid_fillHistory_09d2fc89df23cd1a,
+            mid_getCreationDate_80e11148db499dda,
+            mid_getDcbSatellite_4b30c7d0b08cbb9f,
+            mid_getDcbStation_ce8e09d11b4ad7bc,
+            mid_getFileEpochEndTime_80e11148db499dda,
+            mid_getFileEpochStartTime_80e11148db499dda,
+            mid_getITRFVersion_4865f340ec39b9c4,
+            mid_getParsedEop_dbcb8bbac6b35e0d,
+            mid_getStation_a57da290771c14bb,
+            mid_getStations_dbcb8bbac6b35e0d,
+            mid_setITRFVersion_8fd427ab23829bf5,
             max_mid
           };
 

@@ -5,6 +5,12 @@
 
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataContext;
+    }
+    namespace utils {
+      class IERSConventions;
+    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -17,12 +23,6 @@ namespace org {
           }
         }
       }
-    }
-    namespace utils {
-      class IERSConventions;
-    }
-    namespace data {
-      class DataContext;
     }
     namespace time {
       class AbsoluteDate;
@@ -48,8 +48,8 @@ namespace org {
               class OemWriter : public ::org::orekit::files::ccsds::utils::generation::AbstractMessageWriter {
                public:
                 enum {
-                  mid_init$_751257c373115a80,
-                  mid_writeSegmentContent_e23c1d500bcfe15e,
+                  mid_init$_803b88445e6f9607,
+                  mid_writeSegmentContent_533c32dcfb2da579,
                   max_mid
                 };
 

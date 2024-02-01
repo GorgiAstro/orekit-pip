@@ -3,26 +3,26 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace exception {
-      class NullArgumentException;
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
-    }
-    namespace stat {
-      namespace descriptive {
-        class StreamingStatistics;
-      }
-    }
-  }
-}
 namespace java {
   namespace util {
     class Collection;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
+      class NullArgumentException;
+    }
+    namespace stat {
+      namespace descriptive {
+        class StreamingStatistics;
+      }
+    }
   }
 }
 template<class T> class JArray;
@@ -35,11 +35,11 @@ namespace org {
         class OneWayAnova : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_anovaFValue_b19699bf13064258,
-            mid_anovaPValue_b19699bf13064258,
-            mid_anovaPValue_84cc8e311072bbb9,
-            mid_anovaTest_9417b0f508298776,
+            mid_init$_ff7cb6c242604316,
+            mid_anovaFValue_ce4bc28a12afbddc,
+            mid_anovaPValue_ce4bc28a12afbddc,
+            mid_anovaPValue_5347d7d7c42ce1ec,
+            mid_anovaTest_9bf4a3edb5ef37bf,
             max_mid
           };
 

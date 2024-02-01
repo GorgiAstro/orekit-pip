@@ -3,20 +3,20 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace propagation {
+      class SpacecraftState;
+    }
+  }
+}
 namespace java {
   namespace lang {
     class String;
     class Class;
-  }
-}
-namespace org {
-  namespace orekit {
-    namespace propagation {
-      class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
-    }
   }
 }
 template<class T> class JArray;
@@ -28,10 +28,10 @@ namespace org {
       class AdditionalStateProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_getAdditionalState_f227e5f48720b798,
-          mid_getName_1c1fa1e935d6cdcf,
-          mid_init_2d7f9a496c7e9781,
-          mid_yields_97df9017614a1945,
+          mid_getAdditionalState_e8a4ac02afc72623,
+          mid_getName_d2c8eb4129821f0e,
+          mid_init_14deaae988292d42,
+          mid_yields_34f098c1d43e614c,
           max_mid
         };
 

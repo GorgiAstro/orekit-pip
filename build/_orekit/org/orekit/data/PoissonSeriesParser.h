@@ -3,15 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace data {
-      class PoissonSeries;
-      class PolynomialParser$Unit;
-      class PoissonSeriesParser;
-    }
-  }
-}
 namespace java {
   namespace io {
     class InputStream;
@@ -19,6 +10,15 @@ namespace java {
   namespace lang {
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace data {
+      class PolynomialParser$Unit;
+      class PoissonSeries;
+      class PoissonSeriesParser;
+    }
   }
 }
 template<class T> class JArray;
@@ -30,15 +30,15 @@ namespace org {
       class PoissonSeriesParser : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_44ed599e93e8a30c,
-          mid_parse_d3d2c20e86656cb1,
-          mid_withDoodson_71e486f1e2a3f81a,
-          mid_withFirstDelaunay_23a9dcacefe9d395,
-          mid_withFirstPlanetary_23a9dcacefe9d395,
-          mid_withGamma_23a9dcacefe9d395,
-          mid_withOptionalColumn_23a9dcacefe9d395,
-          mid_withPolynomialPart_87e4a7d7691b030f,
-          mid_withSinCos_8d1ffe23bafb05dc,
+          mid_init$_8fd427ab23829bf5,
+          mid_parse_276cce9257997802,
+          mid_withDoodson_82b2677399174c90,
+          mid_withFirstDelaunay_a4c7e7a5d2c091a4,
+          mid_withFirstPlanetary_a4c7e7a5d2c091a4,
+          mid_withGamma_a4c7e7a5d2c091a4,
+          mid_withOptionalColumn_a4c7e7a5d2c091a4,
+          mid_withPolynomialPart_1528efaaea485f62,
+          mid_withSinCos_4953f8b52df33eee,
           max_mid
         };
 

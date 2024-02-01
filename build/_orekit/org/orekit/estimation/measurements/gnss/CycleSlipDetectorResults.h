@@ -34,10 +34,10 @@ namespace org {
           class CycleSlipDetectorResults : public ::java::lang::Object {
            public:
             enum {
-              mid_getBeginDate_fe9f6e33a82195ff,
-              mid_getCycleSlipMap_810bed48fafb0b9a,
-              mid_getEndDate_fe9f6e33a82195ff,
-              mid_getSatelliteName_1c1fa1e935d6cdcf,
+              mid_getBeginDate_4350f41a695edc03,
+              mid_getCycleSlipMap_dbcb8bbac6b35e0d,
+              mid_getEndDate_4350f41a695edc03,
+              mid_getSatelliteName_d2c8eb4129821f0e,
               max_mid
             };
 

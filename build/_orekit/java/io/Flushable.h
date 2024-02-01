@@ -4,11 +4,11 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace lang {
-    class Class;
-  }
   namespace io {
     class IOException;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -19,7 +19,7 @@ namespace java {
     class Flushable : public ::java::lang::Object {
      public:
       enum {
-        mid_flush_a1fa5dae97ea5ed2,
+        mid_flush_ff7cb6c242604316,
         max_mid
       };
 

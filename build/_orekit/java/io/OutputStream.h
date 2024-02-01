@@ -5,9 +5,9 @@
 
 namespace java {
   namespace io {
+    class IOException;
     class Flushable;
     class OutputStream;
-    class IOException;
     class Closeable;
   }
   namespace lang {
@@ -22,13 +22,13 @@ namespace java {
     class OutputStream : public ::java::lang::Object {
      public:
       enum {
-        mid_init$_a1fa5dae97ea5ed2,
-        mid_close_a1fa5dae97ea5ed2,
-        mid_flush_a1fa5dae97ea5ed2,
-        mid_nullOutputStream_488b91a3cbd7f201,
-        mid_write_459771b03534868e,
-        mid_write_44ed599e93e8a30c,
-        mid_write_a9fddc59b07ce512,
+        mid_init$_ff7cb6c242604316,
+        mid_close_ff7cb6c242604316,
+        mid_flush_ff7cb6c242604316,
+        mid_nullOutputStream_4eea5cc0056e0066,
+        mid_write_bba2a19638de22ff,
+        mid_write_8fd427ab23829bf5,
+        mid_write_e4288ba5fbf20d28,
         max_mid
       };
 

@@ -3,6 +3,11 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace stat {
@@ -10,11 +15,6 @@ namespace org {
         class PCA;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,17 +27,17 @@ namespace org {
         class PCA : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_44ed599e93e8a30c,
-            mid_init$_79d569e065493120,
-            mid_fit_a97c2eb77f399243,
-            mid_fitAndTransform_fa7294d53f56a3e3,
-            mid_getCenter_25e1757a36c4dde2,
-            mid_getComponents_3b7b373db8e7887f,
-            mid_getNumComponents_55546ef6a647f39b,
-            mid_getVariance_25e1757a36c4dde2,
-            mid_isBiasCorrection_9ab94ac1dc23b105,
-            mid_isScale_9ab94ac1dc23b105,
-            mid_transform_fa7294d53f56a3e3,
+            mid_init$_8fd427ab23829bf5,
+            mid_init$_7894216015228118,
+            mid_fit_7b0eb81c6fb1791c,
+            mid_fitAndTransform_d9fb07d4cbf99fb5,
+            mid_getCenter_be783177b060994b,
+            mid_getComponents_eda3f19b8225f78f,
+            mid_getNumComponents_d6ab429752e7c267,
+            mid_getVariance_be783177b060994b,
+            mid_isBiasCorrection_eee3de00fe971136,
+            mid_isScale_eee3de00fe971136,
+            mid_transform_d9fb07d4cbf99fb5,
             max_mid
           };
 

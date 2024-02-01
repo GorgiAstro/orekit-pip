@@ -29,16 +29,16 @@ namespace org {
       class GLONASSDate : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_02135a6ef25adb4b,
-          mid_init$_805befaa637d6dd5,
-          mid_init$_94fe8d9ffeb50676,
-          mid_init$_3d28d2f6b328edfa,
-          mid_getDate_c325492395d89b24,
-          mid_getDayNumber_55546ef6a647f39b,
-          mid_getGMST_b74f83833fdad017,
-          mid_getIntervalNumber_55546ef6a647f39b,
-          mid_getJD0_b74f83833fdad017,
-          mid_getSecInDay_b74f83833fdad017,
+          mid_init$_8497861b879c83f7,
+          mid_init$_9fe8d849aef9a85f,
+          mid_init$_e98d7b3e971b6087,
+          mid_init$_751ae7c5bf954915,
+          mid_getDate_80e11148db499dda,
+          mid_getDayNumber_d6ab429752e7c267,
+          mid_getGMST_9981f74b2d109da6,
+          mid_getIntervalNumber_d6ab429752e7c267,
+          mid_getJD0_9981f74b2d109da6,
+          mid_getSecInDay_9981f74b2d109da6,
           max_mid
         };
 

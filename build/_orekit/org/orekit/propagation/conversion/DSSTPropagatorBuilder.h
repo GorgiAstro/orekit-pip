@@ -8,9 +8,6 @@ namespace org {
     namespace attitudes {
       class AttitudeProvider;
     }
-    namespace utils {
-      class ParameterDriversList;
-    }
     namespace propagation {
       namespace semianalytical {
         namespace dsst {
@@ -22,22 +19,25 @@ namespace org {
       }
       namespace conversion {
         class DSSTPropagatorBuilder;
-        class ODEIntegratorBuilder;
         class PropagatorBuilder;
+        class ODEIntegratorBuilder;
       }
       class PropagationType;
     }
-    namespace orbits {
-      class Orbit;
+    namespace utils {
+      class ParameterDriversList;
     }
     namespace estimation {
+      namespace leastsquares {
+        class DSSTBatchLSModel;
+        class ModelObserver;
+      }
       namespace measurements {
         class ObservedMeasurement;
       }
-      namespace leastsquares {
-        class ModelObserver;
-        class DSSTBatchLSModel;
-      }
+    }
+    namespace orbits {
+      class Orbit;
     }
   }
 }
@@ -60,19 +60,19 @@ namespace org {
         class DSSTPropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_437f7fba6637ef09,
-            mid_init$_05e35caa779a7b0e,
-            mid_addForceModel_d24de896ffe1d07a,
-            mid_buildLeastSquaresModel_a6159c38c462f3f0,
-            mid_buildPropagator_4135970edd4a8374,
-            mid_copy_0eaaaa36958ff434,
-            mid_getAllForceModels_e62d3bb06d56d7e3,
-            mid_getIntegratorBuilder_a870bf0f84eaaecb,
-            mid_getMass_b74f83833fdad017,
-            mid_getPropagationType_c479da51fc09a224,
-            mid_getStateType_c479da51fc09a224,
-            mid_resetOrbit_98cc5c663640f0ba,
-            mid_setMass_8ba9fe7a847cecad,
+            mid_init$_c70b92190ed3f8da,
+            mid_init$_04fe4b9d76071505,
+            mid_addForceModel_a0575630e19e1e5c,
+            mid_buildLeastSquaresModel_8a8975ded39f633f,
+            mid_buildPropagator_4fd5c210f0282321,
+            mid_copy_1fab1d2de2d29bc8,
+            mid_getAllForceModels_d751c1a57012b438,
+            mid_getIntegratorBuilder_97efb8d7c46d45d7,
+            mid_getMass_9981f74b2d109da6,
+            mid_getPropagationType_fa97d40fdfd0f5fb,
+            mid_getStateType_fa97d40fdfd0f5fb,
+            mid_resetOrbit_2e357aa1306bd910,
+            mid_setMass_1ad26e8c8c0cd65b,
             max_mid
           };
 

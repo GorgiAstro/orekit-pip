@@ -5,25 +5,25 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class ParameterDriversList;
-    }
     namespace estimation {
+      namespace measurements {
+        class ObservedMeasurement;
+      }
       namespace leastsquares {
         class AbstractBatchLSModel;
         class ModelObserver;
       }
-      namespace measurements {
-        class ObservedMeasurement;
-      }
+    }
+    namespace time {
+      class AbsoluteDate;
+    }
+    namespace utils {
+      class ParameterDriversList;
     }
     namespace orbits {
-      class Orbit;
       class PositionAngleType;
+      class Orbit;
       class OrbitType;
-    }
-    namespace frames {
-      class Frame;
     }
     namespace propagation {
       class Propagator;
@@ -31,8 +31,8 @@ namespace org {
         class PropagatorBuilder;
       }
     }
-    namespace time {
-      class AbsoluteDate;
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -55,23 +55,23 @@ namespace org {
         class PythonPropagatorBuilder : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_buildLeastSquaresModel_1a4dd1f247347a8f,
-            mid_buildPropagator_708cc138373fff03,
-            mid_copy_563e3d88178dadb8,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_getFrame_2c51111cc6894ba1,
-            mid_getInitialOrbitDate_c325492395d89b24,
-            mid_getMu_b74f83833fdad017,
-            mid_getOrbitType_c7d4737d7afca612,
-            mid_getOrbitalParametersDrivers_cfb822366e8ab425,
-            mid_getPositionAngleType_c25055891f180348,
-            mid_getPropagationParametersDrivers_cfb822366e8ab425,
-            mid_getSelectedNormalizedParameters_25e1757a36c4dde2,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
-            mid_resetOrbit_69b47a274eed440d,
+            mid_init$_ff7cb6c242604316,
+            mid_buildLeastSquaresModel_434804ad6c6cc8a8,
+            mid_buildPropagator_dbf963913bad78cb,
+            mid_copy_3ae868590960a3fb,
+            mid_finalize_ff7cb6c242604316,
+            mid_getFrame_cb151471db4570f0,
+            mid_getInitialOrbitDate_80e11148db499dda,
+            mid_getMu_9981f74b2d109da6,
+            mid_getOrbitType_495f818d3570b7f5,
+            mid_getOrbitalParametersDrivers_7c5a416c83e442be,
+            mid_getPositionAngleType_a6db4e6edefda4be,
+            mid_getPropagationParametersDrivers_7c5a416c83e442be,
+            mid_getSelectedNormalizedParameters_be783177b060994b,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
+            mid_resetOrbit_17534ef58ef3aaef,
             max_mid
           };
 

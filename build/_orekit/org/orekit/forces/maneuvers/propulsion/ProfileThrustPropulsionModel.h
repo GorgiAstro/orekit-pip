@@ -3,23 +3,31 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
     }
-    class Field;
-    class CalculusFieldElement;
+    class List;
   }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
+namespace org {
   namespace orekit {
     namespace utils {
-      class TimeSpanMap;
       class ParameterDriver;
+      class TimeSpanMap;
+    }
+    namespace propagation {
+      class SpacecraftState;
+      namespace events {
+        class FieldEventDetector;
+        class EventDetector;
+      }
+      class FieldSpacecraftState;
     }
     namespace forces {
       namespace maneuvers {
@@ -30,26 +38,18 @@ namespace org {
         class Control3DVectorCostType;
       }
     }
-    namespace propagation {
-      namespace events {
-        class FieldEventDetector;
-        class EventDetector;
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
       }
-      class SpacecraftState;
-      class FieldSpacecraftState;
     }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-    namespace stream {
-      class Stream;
-    }
-  }
-  namespace lang {
-    class Class;
-    class String;
+    class CalculusFieldElement;
+    class Field;
   }
 }
 template<class T> class JArray;
@@ -63,18 +63,18 @@ namespace org {
           class ProfileThrustPropulsionModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_b86ecb38dfd5497e,
-              mid_getControl3DVectorCostType_2eba60c257188b83,
-              mid_getEventDetectors_14e21bf777ff0ccf,
-              mid_getFieldEventDetectors_283ad33581c047a0,
-              mid_getFlowRate_a17ea857ce74d258,
-              mid_getFlowRate_f867476668f8eb00,
-              mid_getFlowRate_8e86371c61460f23,
-              mid_getName_1c1fa1e935d6cdcf,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_getThrustVector_9019a5b32b11453a,
-              mid_getThrustVector_0ce449c67b5ffd9c,
-              mid_getThrustVector_20bded0292328743,
+              mid_init$_d00ea30a932a71de,
+              mid_getControl3DVectorCostType_fc9abda16ef946e0,
+              mid_getEventDetectors_11e4ca8182c1933d,
+              mid_getFieldEventDetectors_d3db121d9deb0312,
+              mid_getFlowRate_b443ba1cc794b916,
+              mid_getFlowRate_4222abdadde032f5,
+              mid_getFlowRate_6c8e6cd5d59063ae,
+              mid_getName_d2c8eb4129821f0e,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_getThrustVector_38283c57554889c0,
+              mid_getThrustVector_9816b8f76e94356a,
+              mid_getThrustVector_5e147f44c28a35c9,
               max_mid
             };
 
@@ -95,8 +95,8 @@ namespace org {
             ::java::util::stream::Stream getEventDetectors() const;
             ::java::util::stream::Stream getFieldEventDetectors(const ::org::hipparchus::Field &) const;
             jdouble getFlowRate(const ::org::orekit::propagation::SpacecraftState &) const;
-            ::org::hipparchus::CalculusFieldElement getFlowRate(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
             jdouble getFlowRate(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
+            ::org::hipparchus::CalculusFieldElement getFlowRate(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
             ::java::lang::String getName() const;
             ::java::util::List getParametersDrivers() const;
             ::org::hipparchus::geometry::euclidean::threed::Vector3D getThrustVector(const ::org::orekit::propagation::SpacecraftState &) const;

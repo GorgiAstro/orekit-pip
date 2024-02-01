@@ -20,18 +20,18 @@ namespace org {
         class AttitudeEphemerisFile$AttitudeEphemerisSegment;
       }
     }
-    namespace utils {
-      class TimeStampedAngularCoordinates;
-      class AngularDerivativesFilter;
-    }
     namespace attitudes {
       class BoundedAttitudeProvider;
     }
-    namespace frames {
-      class Frame;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace utils {
+      class AngularDerivativesFilter;
+      class TimeStampedAngularCoordinates;
+    }
+    namespace frames {
+      class Frame;
     }
   }
 }
@@ -57,15 +57,15 @@ namespace org {
               class AemSegment : public ::org::orekit::files::ccsds::section::Segment {
                public:
                 enum {
-                  mid_init$_ebd060a22a6a845e,
-                  mid_getAngularCoordinates_e62d3bb06d56d7e3,
-                  mid_getAttitudeProvider_fcce29ba1cf2a05e,
-                  mid_getAvailableDerivatives_33d67d456ec94a0c,
-                  mid_getInterpolationMethod_1c1fa1e935d6cdcf,
-                  mid_getInterpolationSamples_55546ef6a647f39b,
-                  mid_getReferenceFrame_2c51111cc6894ba1,
-                  mid_getStart_c325492395d89b24,
-                  mid_getStop_c325492395d89b24,
+                  mid_init$_93672d3934b0f497,
+                  mid_getAngularCoordinates_d751c1a57012b438,
+                  mid_getAttitudeProvider_228bb29d53a1472e,
+                  mid_getAvailableDerivatives_410860c8cd87dc25,
+                  mid_getInterpolationMethod_d2c8eb4129821f0e,
+                  mid_getInterpolationSamples_d6ab429752e7c267,
+                  mid_getReferenceFrame_cb151471db4570f0,
+                  mid_getStart_80e11148db499dda,
+                  mid_getStop_80e11148db499dda,
                   max_mid
                 };
 

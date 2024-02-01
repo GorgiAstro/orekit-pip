@@ -31,8 +31,8 @@ namespace org {
           class PhaseCentersOffsetComputer : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_c749d199d359fa63,
-              mid_offset_7c843018b92f0884,
+              mid_init$_4f6a2e827b6dec38,
+              mid_offset_0fe15e9c1fe4d257,
               max_mid
             };
 

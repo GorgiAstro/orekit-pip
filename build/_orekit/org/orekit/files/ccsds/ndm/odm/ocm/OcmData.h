@@ -9,15 +9,15 @@ namespace org {
       namespace ccsds {
         namespace ndm {
           namespace odm {
-            class UserDefined;
             namespace ocm {
               class Perturbations;
-              class OrbitCovarianceHistory;
               class OrbitPhysicalProperties;
               class OrbitManeuverHistory;
               class OrbitDetermination;
+              class OrbitCovarianceHistory;
               class TrajectoryStateHistory;
             }
+            class UserDefined;
           }
         }
         namespace section {
@@ -48,15 +48,15 @@ namespace org {
               class OcmData : public ::java::lang::Object {
                public:
                 enum {
-                  mid_init$_212b49b143e3a5f2,
-                  mid_getCovarianceBlocks_e62d3bb06d56d7e3,
-                  mid_getManeuverBlocks_e62d3bb06d56d7e3,
-                  mid_getOrbitDeterminationBlock_0d61eb8b4530c63e,
-                  mid_getPerturbationsBlock_94e33f1e620c7eca,
-                  mid_getPhysicBlock_78a098c62113a866,
-                  mid_getTrajectoryBlocks_e62d3bb06d56d7e3,
-                  mid_getUserDefinedBlock_757fcfae3141e23d,
-                  mid_validate_8ba9fe7a847cecad,
+                  mid_init$_848c9d9cb3987024,
+                  mid_getCovarianceBlocks_d751c1a57012b438,
+                  mid_getManeuverBlocks_d751c1a57012b438,
+                  mid_getOrbitDeterminationBlock_c1813a8ece841355,
+                  mid_getPerturbationsBlock_32d1943f819a5774,
+                  mid_getPhysicBlock_b46da399f97e484d,
+                  mid_getTrajectoryBlocks_d751c1a57012b438,
+                  mid_getUserDefinedBlock_b8dba07746e1b089,
+                  mid_validate_1ad26e8c8c0cd65b,
                   max_mid
                 };
 

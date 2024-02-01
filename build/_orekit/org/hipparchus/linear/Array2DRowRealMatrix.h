@@ -5,15 +5,15 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class NullArgumentException;
-      class MathIllegalArgumentException;
-    }
     namespace linear {
-      class Array2DRowRealMatrix;
       class RealMatrixChangingVisitor;
+      class Array2DRowRealMatrix;
       class RealMatrixPreservingVisitor;
       class RealMatrix;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+      class NullArgumentException;
     }
   }
 }
@@ -34,45 +34,45 @@ namespace org {
       class Array2DRowRealMatrix : public ::org::hipparchus::linear::AbstractRealMatrix {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_init$_ab69da052b88f50c,
-          mid_init$_07adb42ffaa97d31,
-          mid_init$_30d41d58c8b5e4dc,
-          mid_init$_3313c75e3e16c428,
-          mid_add_f7e2a664bf09ba0b,
-          mid_addToEntry_94fe8d9ffeb50676,
-          mid_copy_f77d745f2128c391,
-          mid_createMatrix_28a444e31666746c,
-          mid_getColumnDimension_55546ef6a647f39b,
-          mid_getData_3b7b373db8e7887f,
-          mid_getDataRef_3b7b373db8e7887f,
-          mid_getEntry_cad98089d00f8a5b,
-          mid_getRow_bb2a44a76ad252f7,
-          mid_getRowDimension_55546ef6a647f39b,
-          mid_getSubMatrix_f6333def4d085867,
-          mid_kroneckerProduct_be124f4006dc9f69,
-          mid_multiply_f7e2a664bf09ba0b,
-          mid_multiplyEntry_94fe8d9ffeb50676,
-          mid_multiplyTransposed_aebe28c801f89be8,
-          mid_multiplyTransposed_be124f4006dc9f69,
-          mid_operate_14dee4cb8cc3e959,
-          mid_preMultiply_14dee4cb8cc3e959,
-          mid_setEntry_94fe8d9ffeb50676,
-          mid_setRow_75061e5f5bbace93,
-          mid_setSubMatrix_f12104c26dcf5b23,
-          mid_stack_f77d745f2128c391,
-          mid_subtract_f7e2a664bf09ba0b,
-          mid_transposeMultiply_aebe28c801f89be8,
-          mid_transposeMultiply_be124f4006dc9f69,
-          mid_unstackSquare_f77d745f2128c391,
-          mid_walkInColumnOrder_e9eacc024b91638e,
-          mid_walkInColumnOrder_8c777cbbebb3f320,
-          mid_walkInColumnOrder_7a8f404d3cc13545,
-          mid_walkInColumnOrder_0efcec2037689a79,
-          mid_walkInRowOrder_e9eacc024b91638e,
-          mid_walkInRowOrder_8c777cbbebb3f320,
-          mid_walkInRowOrder_7a8f404d3cc13545,
-          mid_walkInRowOrder_0efcec2037689a79,
+          mid_init$_ff7cb6c242604316,
+          mid_init$_a71c45509eaf92d1,
+          mid_init$_11ecdbb5af7ed67d,
+          mid_init$_1abb553ff9db34ff,
+          mid_init$_b5d23e6c0858e8ed,
+          mid_add_afbfc3ddbfe58d51,
+          mid_addToEntry_e98d7b3e971b6087,
+          mid_copy_b2eebabce70526d8,
+          mid_createMatrix_afc0d8087db42fe7,
+          mid_getColumnDimension_d6ab429752e7c267,
+          mid_getData_eda3f19b8225f78f,
+          mid_getDataRef_eda3f19b8225f78f,
+          mid_getEntry_6d920aab27f0a3d2,
+          mid_getRow_81add9fc9d78d5b9,
+          mid_getRowDimension_d6ab429752e7c267,
+          mid_getSubMatrix_a064070b1670e8d8,
+          mid_kroneckerProduct_5a8a8185eb309db7,
+          mid_multiply_afbfc3ddbfe58d51,
+          mid_multiplyEntry_e98d7b3e971b6087,
+          mid_multiplyTransposed_5b6d1d9d23ef6c5e,
+          mid_multiplyTransposed_5a8a8185eb309db7,
+          mid_operate_51f624c89851da7e,
+          mid_preMultiply_51f624c89851da7e,
+          mid_setEntry_e98d7b3e971b6087,
+          mid_setRow_9d367e34fba0a5ea,
+          mid_setSubMatrix_5cc0a3799fec1dc7,
+          mid_stack_b2eebabce70526d8,
+          mid_subtract_afbfc3ddbfe58d51,
+          mid_transposeMultiply_5b6d1d9d23ef6c5e,
+          mid_transposeMultiply_5a8a8185eb309db7,
+          mid_unstackSquare_b2eebabce70526d8,
+          mid_walkInColumnOrder_a7758d3537e559f7,
+          mid_walkInColumnOrder_5a884deb680e092c,
+          mid_walkInColumnOrder_0c89eacb5543486a,
+          mid_walkInColumnOrder_be1420f911d13599,
+          mid_walkInRowOrder_a7758d3537e559f7,
+          mid_walkInRowOrder_5a884deb680e092c,
+          mid_walkInRowOrder_0c89eacb5543486a,
+          mid_walkInRowOrder_be1420f911d13599,
           max_mid
         };
 

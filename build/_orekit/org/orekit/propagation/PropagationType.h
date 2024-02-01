@@ -3,17 +3,17 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
       class PropagationType;
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,8 +25,8 @@ namespace org {
       class PropagationType : public ::java::lang::Enum {
        public:
         enum {
-          mid_valueOf_c82481982cc2f4b7,
-          mid_values_387f389f53924998,
+          mid_valueOf_e6e6e9936b2bdda7,
+          mid_values_78f4b0c27f45eaeb,
           max_mid
         };
 

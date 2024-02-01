@@ -7,17 +7,17 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace ndm {
+          namespace tdm {
+            class ObservationsBlock;
+            class TdmDataKey;
+          }
+        }
         namespace utils {
           namespace lexical {
             class ParseToken;
           }
           class ContextBinding;
-        }
-        namespace ndm {
-          namespace tdm {
-            class TdmDataKey;
-            class ObservationsBlock;
-          }
         }
       }
     }
@@ -41,9 +41,9 @@ namespace org {
             class TdmDataKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_1696be5353f5ec5d,
-                mid_valueOf_801e99a0474a36cb,
-                mid_values_5ebc4968bb5ef672,
+                mid_process_166b7ea7d4bdabf0,
+                mid_valueOf_797d27a9cca79d9e,
+                mid_values_2990334373b59381,
                 max_mid
               };
 

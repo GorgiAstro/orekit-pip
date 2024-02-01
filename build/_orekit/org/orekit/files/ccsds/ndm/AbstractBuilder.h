@@ -5,12 +5,6 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class IERSConventions;
-    }
-    namespace data {
-      class DataContext;
-    }
     namespace files {
       namespace ccsds {
         namespace ndm {
@@ -20,6 +14,12 @@ namespace org {
           }
         }
       }
+    }
+    namespace data {
+      class DataContext;
+    }
+    namespace utils {
+      class IERSConventions;
     }
     namespace time {
       class AbsoluteDate;
@@ -42,19 +42,19 @@ namespace org {
           class AbstractBuilder : public ::java::lang::Object {
            public:
             enum {
-              mid_getConventions_53aaf70620a914af,
-              mid_getDataContext_687c2d3d1010744e,
-              mid_getEquatorialRadius_b74f83833fdad017,
-              mid_getFlattening_b74f83833fdad017,
-              mid_getMissionReferenceDate_c325492395d89b24,
-              mid_getRangeUnitsConverter_ce12ce9d5e127af0,
-              mid_withConventions_e66e90f092f54749,
-              mid_withDataContext_2b737343ef414e9f,
-              mid_withEquatorialRadius_27ee8f6686f6a70c,
-              mid_withFlattening_27ee8f6686f6a70c,
-              mid_withMissionReferenceDate_1338a9afeffd1e7f,
-              mid_withRangeUnitsConverter_c953e87b26d66be0,
-              mid_create_c9fe7425468bb64c,
+              mid_getConventions_635853a14837ea6f,
+              mid_getDataContext_66ee964ea58dd871,
+              mid_getEquatorialRadius_9981f74b2d109da6,
+              mid_getFlattening_9981f74b2d109da6,
+              mid_getMissionReferenceDate_80e11148db499dda,
+              mid_getRangeUnitsConverter_9038361d1e667151,
+              mid_withConventions_c01141c865e648ee,
+              mid_withDataContext_9febe7f536541907,
+              mid_withEquatorialRadius_6656676ab2dcf86b,
+              mid_withFlattening_6656676ab2dcf86b,
+              mid_withMissionReferenceDate_ad81fb5fa8682be2,
+              mid_withRangeUnitsConverter_993de5b681e1d19d,
+              mid_create_8db1476e15353061,
               max_mid
             };
 

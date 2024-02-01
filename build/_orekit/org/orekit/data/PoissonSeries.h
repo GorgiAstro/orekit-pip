@@ -6,11 +6,11 @@
 namespace org {
   namespace orekit {
     namespace data {
-      class PoissonSeries;
-      class FieldBodiesElements;
-      class BodiesElements;
-      class SeriesTerm;
       class PolynomialNutation;
+      class FieldBodiesElements;
+      class SeriesTerm;
+      class PoissonSeries;
+      class BodiesElements;
       class PoissonSeries$CompiledSeries;
     }
   }
@@ -36,12 +36,12 @@ namespace org {
       class PoissonSeries : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_0498c5665860e9c3,
-          mid_compile_b83e06b5aa355fd4,
-          mid_getNonPolynomialSize_55546ef6a647f39b,
-          mid_getPolynomial_58d21158a385d9ae,
-          mid_value_e5a6deebdf7be070,
-          mid_value_6d9bdfdb86170f1b,
+          mid_init$_e7a891d3e9be8376,
+          mid_compile_0bffb48394191881,
+          mid_getNonPolynomialSize_d6ab429752e7c267,
+          mid_getPolynomial_ac81f10a3d10c55a,
+          mid_value_7212d8ed403494a1,
+          mid_value_3cea1ba38c4e1540,
           max_mid
         };
 

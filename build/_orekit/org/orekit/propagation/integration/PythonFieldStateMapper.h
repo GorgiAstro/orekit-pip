@@ -11,13 +11,13 @@ namespace org {
     namespace time {
       class FieldAbsoluteDate;
     }
+    namespace orbits {
+      class PositionAngleType;
+      class OrbitType;
+    }
     namespace propagation {
       class PropagationType;
       class FieldSpacecraftState;
-    }
-    namespace orbits {
-      class OrbitType;
-      class PositionAngleType;
     }
     namespace frames {
       class Frame;
@@ -43,13 +43,13 @@ namespace org {
         class PythonFieldStateMapper : public ::org::orekit::propagation::integration::FieldStateMapper {
          public:
           enum {
-            mid_init$_b5494f95aec0e2a7,
-            mid_finalize_a1fa5dae97ea5ed2,
-            mid_mapArrayToState_1b9bfe1085235c3b,
-            mid_mapStateToArray_81a15f6754980fa1,
-            mid_pythonDecRef_a1fa5dae97ea5ed2,
-            mid_pythonExtension_6c0ce7e438e5ded4,
-            mid_pythonExtension_3d7dd2314a0dd456,
+            mid_init$_36e0022c13f8aa26,
+            mid_finalize_ff7cb6c242604316,
+            mid_mapArrayToState_0dd5c63fffcaab3c,
+            mid_mapStateToArray_0924dbbee225355c,
+            mid_pythonDecRef_ff7cb6c242604316,
+            mid_pythonExtension_42c72b98e3c2e08a,
+            mid_pythonExtension_f5bbab7e97879358,
             max_mid
           };
 

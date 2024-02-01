@@ -20,8 +20,8 @@ namespace org {
           class GnssData : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_fdec0c33477ce5f0,
-              mid_toString_1c1fa1e935d6cdcf,
+              mid_init$_20d21be51afdcd58,
+              mid_toString_d2c8eb4129821f0e,
               max_mid
             };
 

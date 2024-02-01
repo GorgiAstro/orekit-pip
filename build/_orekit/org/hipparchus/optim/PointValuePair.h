@@ -21,10 +21,10 @@ namespace org {
       class PointValuePair : public ::org::hipparchus::util::Pair {
        public:
         enum {
-          mid_init$_334f245ec9cee46b,
-          mid_init$_112347971cfc93d9,
-          mid_getPoint_25e1757a36c4dde2,
-          mid_getPointRef_25e1757a36c4dde2,
+          mid_init$_19a01fdb4baa56b0,
+          mid_init$_e3635e93e84c57e0,
+          mid_getPoint_be783177b060994b,
+          mid_getPointRef_be783177b060994b,
           max_mid
         };
 

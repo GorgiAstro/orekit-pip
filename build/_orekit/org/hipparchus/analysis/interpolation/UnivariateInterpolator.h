@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace analysis {
-      class UnivariateFunction;
-    }
     namespace exception {
       class MathIllegalArgumentException;
+    }
+    namespace analysis {
+      class UnivariateFunction;
     }
   }
 }
@@ -28,7 +28,7 @@ namespace org {
         class UnivariateInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_interpolate_d166503635bf6802,
+            mid_interpolate_06c20aa5e0626867,
             max_mid
           };
 

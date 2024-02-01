@@ -5,19 +5,19 @@
 
 namespace org {
   namespace hipparchus {
-    namespace util {
-      class Incrementor;
-    }
     namespace optim {
       class ConvergenceChecker;
       namespace nonlinear {
         namespace vector {
           namespace leastsquares {
-            class LeastSquaresProblem$Evaluation;
             class LeastSquaresProblem;
+            class LeastSquaresProblem$Evaluation;
           }
         }
       }
+    }
+    namespace util {
+      class Incrementor;
     }
     namespace linear {
       class RealVector;
@@ -41,14 +41,14 @@ namespace org {
             class LeastSquaresAdapter : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_d28f702b40eb4b04,
-                mid_evaluate_44eae3a43792b738,
-                mid_getConvergenceChecker_cae0efb5080a73b8,
-                mid_getEvaluationCounter_3c86b06a86576583,
-                mid_getIterationCounter_3c86b06a86576583,
-                mid_getObservationSize_55546ef6a647f39b,
-                mid_getParameterSize_55546ef6a647f39b,
-                mid_getStart_3a10cc75bd070d84,
+                mid_init$_677b000fe7e9460b,
+                mid_evaluate_854ba28c9e2137e8,
+                mid_getConvergenceChecker_ecb318336ebe4cc7,
+                mid_getEvaluationCounter_286bd168b7e14166,
+                mid_getIterationCounter_286bd168b7e14166,
+                mid_getObservationSize_d6ab429752e7c267,
+                mid_getParameterSize_d6ab429752e7c267,
+                mid_getStart_92d7e8d8d3f1dfcf,
                 max_mid
               };
 

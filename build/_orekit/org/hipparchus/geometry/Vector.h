@@ -5,16 +5,16 @@
 
 namespace org {
   namespace hipparchus {
-    namespace geometry {
-      class Space;
-      class Vector;
-    }
     namespace exception {
-      class MathIllegalArgumentException;
       class MathRuntimeException;
+      class MathIllegalArgumentException;
     }
     namespace util {
       class Blendable;
+    }
+    namespace geometry {
+      class Vector;
+      class Space;
     }
   }
 }
@@ -36,25 +36,25 @@ namespace org {
       class Vector : public ::org::hipparchus::geometry::Point {
        public:
         enum {
-          mid_add_3f686c47147ab48a,
-          mid_add_56102f789d856c67,
-          mid_blendArithmeticallyWith_3b0c7c9516ccca41,
-          mid_distance1_2f915fa9762130df,
-          mid_distanceInf_2f915fa9762130df,
-          mid_distanceSq_2f915fa9762130df,
-          mid_dotProduct_2f915fa9762130df,
-          mid_getNorm_b74f83833fdad017,
-          mid_getNorm1_b74f83833fdad017,
-          mid_getNormInf_b74f83833fdad017,
-          mid_getNormSq_b74f83833fdad017,
-          mid_getZero_5567482e203105d0,
-          mid_isInfinite_9ab94ac1dc23b105,
-          mid_negate_5567482e203105d0,
-          mid_normalize_5567482e203105d0,
-          mid_scalarMultiply_69250424ea4f6edf,
-          mid_subtract_3f686c47147ab48a,
-          mid_subtract_56102f789d856c67,
-          mid_toString_a9120cb5e83d0986,
+          mid_add_915b156072ff5abe,
+          mid_add_af8073295450304e,
+          mid_blendArithmeticallyWith_b75e0be2b07534de,
+          mid_distance1_54eca2a6b3ac81a2,
+          mid_distanceInf_54eca2a6b3ac81a2,
+          mid_distanceSq_54eca2a6b3ac81a2,
+          mid_dotProduct_54eca2a6b3ac81a2,
+          mid_getNorm_9981f74b2d109da6,
+          mid_getNorm1_9981f74b2d109da6,
+          mid_getNormInf_9981f74b2d109da6,
+          mid_getNormSq_9981f74b2d109da6,
+          mid_getZero_98aa02e65b0cf19e,
+          mid_isInfinite_eee3de00fe971136,
+          mid_negate_98aa02e65b0cf19e,
+          mid_normalize_98aa02e65b0cf19e,
+          mid_scalarMultiply_5d9eb024afba2a13,
+          mid_subtract_915b156072ff5abe,
+          mid_subtract_af8073295450304e,
+          mid_toString_aeac32100fe35ffe,
           max_mid
         };
 

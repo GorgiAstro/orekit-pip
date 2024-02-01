@@ -41,10 +41,10 @@ namespace org {
           class AbstractSingleFrequencyCombination : public ::java::lang::Object {
            public:
             enum {
-              mid_combine_12b3dc80befaeb6c,
-              mid_combine_74c648c2fd092da1,
-              mid_getName_1c1fa1e935d6cdcf,
-              mid_getCombinedValue_99e3200dafc19573,
+              mid_combine_34f94a0e1855db7e,
+              mid_combine_221f3e8aea4f942e,
+              mid_getName_d2c8eb4129821f0e,
+              mid_getCombinedValue_82f92590f4247da1,
               max_mid
             };
 

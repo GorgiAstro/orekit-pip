@@ -5,10 +5,13 @@
 
 namespace org {
   namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
+    namespace data {
+      class DataContext;
+    }
     namespace propagation {
-      namespace numerical {
-        class GLONASSNumericalPropagator;
-      }
       namespace analytical {
         namespace gnss {
           namespace data {
@@ -16,12 +19,9 @@ namespace org {
           }
         }
       }
-    }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-    namespace data {
-      class DataContext;
+      namespace numerical {
+        class GLONASSNumericalPropagator;
+      }
     }
     namespace frames {
       class Frame;
@@ -45,26 +45,26 @@ namespace org {
             class GLONASSNavigationMessage : public ::org::orekit::propagation::analytical::gnss::data::AbstractEphemerisMessage {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_getFrequencyNumber_55546ef6a647f39b,
-                mid_getGammaN_b74f83833fdad017,
-                mid_getGroupDelayDifference_b74f83833fdad017,
-                mid_getHealthFlags_55546ef6a647f39b,
-                mid_getPropagator_225bbb183dcbf70d,
-                mid_getPropagator_542c04c0314b4776,
-                mid_getPropagator_2a89d49045963791,
-                mid_getStatusFlags_55546ef6a647f39b,
-                mid_getTN_b74f83833fdad017,
-                mid_getTime_b74f83833fdad017,
-                mid_getURA_b74f83833fdad017,
-                mid_setFrequencyNumber_8ba9fe7a847cecad,
-                mid_setGammaN_8ba9fe7a847cecad,
-                mid_setGroupDelayDifference_8ba9fe7a847cecad,
-                mid_setHealthFlags_8ba9fe7a847cecad,
-                mid_setStatusFlags_8ba9fe7a847cecad,
-                mid_setTauN_8ba9fe7a847cecad,
-                mid_setTime_8ba9fe7a847cecad,
-                mid_setURA_8ba9fe7a847cecad,
+                mid_init$_ff7cb6c242604316,
+                mid_getFrequencyNumber_d6ab429752e7c267,
+                mid_getGammaN_9981f74b2d109da6,
+                mid_getGroupDelayDifference_9981f74b2d109da6,
+                mid_getHealthFlags_d6ab429752e7c267,
+                mid_getPropagator_4f5533f6ec0d19aa,
+                mid_getPropagator_14cd6f8fde919df8,
+                mid_getPropagator_15a10a4b40e0f3b4,
+                mid_getStatusFlags_d6ab429752e7c267,
+                mid_getTN_9981f74b2d109da6,
+                mid_getTime_9981f74b2d109da6,
+                mid_getURA_9981f74b2d109da6,
+                mid_setFrequencyNumber_1ad26e8c8c0cd65b,
+                mid_setGammaN_1ad26e8c8c0cd65b,
+                mid_setGroupDelayDifference_1ad26e8c8c0cd65b,
+                mid_setHealthFlags_1ad26e8c8c0cd65b,
+                mid_setStatusFlags_1ad26e8c8c0cd65b,
+                mid_setTauN_1ad26e8c8c0cd65b,
+                mid_setTime_1ad26e8c8c0cd65b,
+                mid_setURA_1ad26e8c8c0cd65b,
                 max_mid
               };
 

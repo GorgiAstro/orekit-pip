@@ -6,9 +6,9 @@
 namespace org {
   namespace hipparchus {
     namespace exception {
-      class NullArgumentException;
       class MathRuntimeException;
       class MathIllegalArgumentException;
+      class NullArgumentException;
     }
     class FieldElement;
   }
@@ -28,10 +28,10 @@ namespace org {
         class FieldHermiteInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_addSamplePoint_6d1221f65c086b79,
-            mid_derivatives_2a6f6a5cd7898ad5,
-            mid_value_72605d4cec9f064c,
+            mid_init$_ff7cb6c242604316,
+            mid_addSamplePoint_1f979b4691836ff5,
+            mid_derivatives_0199092f8b525482,
+            mid_value_6f69085479c1d880,
             max_mid
           };
 

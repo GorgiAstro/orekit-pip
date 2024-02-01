@@ -4,6 +4,11 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace exception {
+      class MathRuntimeException;
+    }
+  }
   namespace orekit {
     namespace propagation {
       namespace events {
@@ -17,11 +22,6 @@ namespace org {
     }
     namespace time {
       class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    namespace exception {
-      class MathRuntimeException;
     }
   }
 }
@@ -40,14 +40,14 @@ namespace org {
         class EventState : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_e13564f833403504,
-            mid_doEvent_ea036e102af9abe9,
-            mid_evaluateStep_33229803b1a9d740,
-            mid_getEventDate_c325492395d89b24,
-            mid_getEventDetector_9ada55f07f5a223c,
-            mid_init_2d7f9a496c7e9781,
-            mid_reinitializeBegin_13c351c10f00bcd7,
-            mid_tryAdvance_1a1fd848268a091f,
+            mid_init$_d5d8be0538a03d97,
+            mid_doEvent_92392b21662535dc,
+            mid_evaluateStep_cf0615f6b6c30b8a,
+            mid_getEventDate_80e11148db499dda,
+            mid_getEventDetector_ebd847a60689999d,
+            mid_init_14deaae988292d42,
+            mid_reinitializeBegin_9db9d9fe85cac7f9,
+            mid_tryAdvance_22e96c41589acd28,
             max_mid
           };
 

@@ -8,14 +8,18 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
     class CalculusFieldElement;
   }
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
     namespace models {
       namespace earth {
         namespace atmosphere {
@@ -23,18 +27,14 @@ namespace org {
         }
       }
     }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
-    namespace utils {
-      class PVCoordinatesProvider;
-    }
     namespace bodies {
       class OneAxisEllipsoid;
     }
     namespace frames {
       class Frame;
+    }
+    namespace utils {
+      class PVCoordinatesProvider;
     }
   }
 }
@@ -54,18 +54,18 @@ namespace org {
           class HarrisPriester : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_d5c8b1824fbf91f0,
-              mid_init$_230a9059691aacfa,
-              mid_init$_d475a351bb1fadbf,
-              mid_init$_c2d4d65daa179eba,
-              mid_getDensity_b71939b8275fb620,
-              mid_getDensity_4d0eb4d30dbd9ad9,
-              mid_getDensity_58866e32a1c9318b,
-              mid_getDensity_e9a4fc2340b58984,
-              mid_getFrame_2c51111cc6894ba1,
-              mid_getMaxAlt_b74f83833fdad017,
-              mid_getMinAlt_b74f83833fdad017,
-              mid_getTabDensity_3b7b373db8e7887f,
+              mid_init$_c1551a10d56610aa,
+              mid_init$_f1008dbab89482e1,
+              mid_init$_9978cd126181ea09,
+              mid_init$_8b6484f97e0ed072,
+              mid_getDensity_7c8d4944669ef839,
+              mid_getDensity_855cbb355cce7dd8,
+              mid_getDensity_0c5821935d445848,
+              mid_getDensity_65e73ef68b3713d0,
+              mid_getFrame_cb151471db4570f0,
+              mid_getMaxAlt_9981f74b2d109da6,
+              mid_getMinAlt_9981f74b2d109da6,
+              mid_getTabDensity_eda3f19b8225f78f,
               max_mid
             };
 
@@ -87,8 +87,8 @@ namespace org {
 
             ::org::hipparchus::CalculusFieldElement getDensity(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &) const;
             jdouble getDensity(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &) const;
-            jdouble getDensity(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &) const;
             ::org::hipparchus::CalculusFieldElement getDensity(const ::org::orekit::time::FieldAbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &) const;
+            jdouble getDensity(const ::org::orekit::time::AbsoluteDate &, const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &) const;
             ::org::orekit::frames::Frame getFrame() const;
             jdouble getMaxAlt() const;
             jdouble getMinAlt() const;

@@ -26,10 +26,10 @@ namespace org {
       class OpenIntToFieldHashMap$Iterator : public ::java::lang::Object {
        public:
         enum {
-          mid_advance_a1fa5dae97ea5ed2,
-          mid_hasNext_9ab94ac1dc23b105,
-          mid_key_55546ef6a647f39b,
-          mid_value_2ff8de927fda4153,
+          mid_advance_ff7cb6c242604316,
+          mid_hasNext_eee3de00fe971136,
+          mid_key_d6ab429752e7c267,
+          mid_value_f6328613456309a1,
           max_mid
         };
 

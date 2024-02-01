@@ -8,10 +8,6 @@ namespace org {
     namespace data {
       class DataContext;
     }
-    namespace bodies {
-      class CelestialBodies;
-      class CelestialBody;
-    }
     namespace files {
       namespace ccsds {
         namespace definitions {
@@ -19,6 +15,10 @@ namespace org {
           class CenterName;
         }
       }
+    }
+    namespace bodies {
+      class CelestialBodies;
+      class CelestialBody;
     }
   }
 }
@@ -39,12 +39,12 @@ namespace org {
           class BodyFacade : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_1437c06a6f40cf9b,
-              mid_create_4bbf95743698337f,
-              mid_create_9d1a0e179e09f078,
-              mid_create_33547d7be3dbbee8,
-              mid_getBody_5df52e80cbb5eb85,
-              mid_getName_1c1fa1e935d6cdcf,
+              mid_init$_64c480fce8d50750,
+              mid_create_992f0af2f17e9fc3,
+              mid_create_1ffe9108b77134ed,
+              mid_create_f4e150b0b64b3a10,
+              mid_getBody_a1474f5cfab89b5e,
+              mid_getName_d2c8eb4129821f0e,
               max_mid
             };
 

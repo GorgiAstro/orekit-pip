@@ -4,11 +4,11 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace lang {
-    class Class;
-  }
   namespace io {
     class SerializablePermission;
+  }
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;

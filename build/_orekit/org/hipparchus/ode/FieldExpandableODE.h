@@ -6,16 +6,16 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
-      class FieldODEState;
+      class FieldOrdinaryDifferentialEquation;
       class FieldEquationsMapper;
       class FieldSecondaryODE;
-      class FieldOrdinaryDifferentialEquation;
+      class FieldODEState;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
     }
     class CalculusFieldElement;
-    namespace exception {
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
-    }
   }
 }
 namespace java {
@@ -32,12 +32,12 @@ namespace org {
       class FieldExpandableODE : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_ff09ebc92660a2da,
-          mid_addSecondaryEquations_8a112e6c6fd08e8d,
-          mid_computeDerivatives_94164e01c2f25701,
-          mid_getMapper_e3ed330d4a98f3fc,
-          mid_getPrimary_97b7f622ceff2f83,
-          mid_init_c09b0b0bdb27b138,
+          mid_init$_c09c2e5c5515d015,
+          mid_addSecondaryEquations_9be0f88c04e08445,
+          mid_computeDerivatives_31586897e81be81c,
+          mid_getMapper_505b2cb84189ee60,
+          mid_getPrimary_e4af3d5fc3ebdfd4,
+          mid_init_d7702289c8dcf483,
           max_mid
         };
 

@@ -14,8 +14,14 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace files {
       namespace ccsds {
+        namespace definitions {
+          class BodyFacade;
+        }
         namespace ndm {
           namespace odm {
             namespace ocm {
@@ -23,16 +29,10 @@ namespace org {
             }
           }
         }
-        namespace definitions {
-          class BodyFacade;
-        }
       }
     }
     namespace bodies {
       class CelestialBodies;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -49,67 +49,67 @@ namespace org {
               class Perturbations : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_5579464231259e1b,
-                  mid_getAlbedoGridSize_55546ef6a647f39b,
-                  mid_getAlbedoModel_1c1fa1e935d6cdcf,
-                  mid_getAtmosphericModel_1c1fa1e935d6cdcf,
-                  mid_getCentralBodyRotation_b74f83833fdad017,
-                  mid_getEquatorialRadius_b74f83833fdad017,
-                  mid_getFixedF10P7_b74f83833fdad017,
-                  mid_getFixedF10P7Mean_b74f83833fdad017,
-                  mid_getFixedGeomagneticAp_b74f83833fdad017,
-                  mid_getFixedGeomagneticDst_b74f83833fdad017,
-                  mid_getFixedGeomagneticKp_b74f83833fdad017,
-                  mid_getFixedM10P7_b74f83833fdad017,
-                  mid_getFixedM10P7Mean_b74f83833fdad017,
-                  mid_getFixedS10P7_b74f83833fdad017,
-                  mid_getFixedS10P7Mean_b74f83833fdad017,
-                  mid_getFixedY10P7_b74f83833fdad017,
-                  mid_getFixedY10P7Mean_b74f83833fdad017,
-                  mid_getGm_b74f83833fdad017,
-                  mid_getGravityDegree_55546ef6a647f39b,
-                  mid_getGravityModel_1c1fa1e935d6cdcf,
-                  mid_getGravityOrder_55546ef6a647f39b,
-                  mid_getInterpMethodSW_1c1fa1e935d6cdcf,
-                  mid_getNBodyPerturbations_e62d3bb06d56d7e3,
-                  mid_getOblateFlattening_b74f83833fdad017,
-                  mid_getOceanTidesModel_1c1fa1e935d6cdcf,
-                  mid_getReductionTheory_1c1fa1e935d6cdcf,
-                  mid_getShadowBodies_e62d3bb06d56d7e3,
-                  mid_getShadowModel_e58e74e83bbfd14a,
-                  mid_getSolidTidesModel_1c1fa1e935d6cdcf,
-                  mid_getSpaceWeatherEpoch_c325492395d89b24,
-                  mid_getSpaceWeatherSource_1c1fa1e935d6cdcf,
-                  mid_getSrpModel_1c1fa1e935d6cdcf,
-                  mid_setAlbedoGridSize_44ed599e93e8a30c,
-                  mid_setAlbedoModel_734b91ac30d5f9b4,
-                  mid_setAtmosphericModel_734b91ac30d5f9b4,
-                  mid_setCentralBodyRotation_8ba9fe7a847cecad,
-                  mid_setEquatorialRadius_8ba9fe7a847cecad,
-                  mid_setFixedF10P7_8ba9fe7a847cecad,
-                  mid_setFixedF10P7Mean_8ba9fe7a847cecad,
-                  mid_setFixedGeomagneticAp_8ba9fe7a847cecad,
-                  mid_setFixedGeomagneticDst_8ba9fe7a847cecad,
-                  mid_setFixedGeomagneticKp_8ba9fe7a847cecad,
-                  mid_setFixedM10P7_8ba9fe7a847cecad,
-                  mid_setFixedM10P7Mean_8ba9fe7a847cecad,
-                  mid_setFixedS10P7_8ba9fe7a847cecad,
-                  mid_setFixedS10P7Mean_8ba9fe7a847cecad,
-                  mid_setFixedY10P7_8ba9fe7a847cecad,
-                  mid_setFixedY10P7Mean_8ba9fe7a847cecad,
-                  mid_setGm_8ba9fe7a847cecad,
-                  mid_setGravityModel_eb74d6dc93e0751e,
-                  mid_setInterpMethodSW_734b91ac30d5f9b4,
-                  mid_setNBodyPerturbations_0e7c3032c7c93ed3,
-                  mid_setOblateFlattening_8ba9fe7a847cecad,
-                  mid_setOceanTidesModel_734b91ac30d5f9b4,
-                  mid_setReductionTheory_734b91ac30d5f9b4,
-                  mid_setShadowBodies_0e7c3032c7c93ed3,
-                  mid_setShadowModel_ccf2e19d6cc0caa6,
-                  mid_setSolidTidesModel_734b91ac30d5f9b4,
-                  mid_setSpaceWeatherEpoch_02135a6ef25adb4b,
-                  mid_setSpaceWeatherSource_734b91ac30d5f9b4,
-                  mid_setSrpModel_734b91ac30d5f9b4,
+                  mid_init$_793ac08908193b1e,
+                  mid_getAlbedoGridSize_d6ab429752e7c267,
+                  mid_getAlbedoModel_d2c8eb4129821f0e,
+                  mid_getAtmosphericModel_d2c8eb4129821f0e,
+                  mid_getCentralBodyRotation_9981f74b2d109da6,
+                  mid_getEquatorialRadius_9981f74b2d109da6,
+                  mid_getFixedF10P7_9981f74b2d109da6,
+                  mid_getFixedF10P7Mean_9981f74b2d109da6,
+                  mid_getFixedGeomagneticAp_9981f74b2d109da6,
+                  mid_getFixedGeomagneticDst_9981f74b2d109da6,
+                  mid_getFixedGeomagneticKp_9981f74b2d109da6,
+                  mid_getFixedM10P7_9981f74b2d109da6,
+                  mid_getFixedM10P7Mean_9981f74b2d109da6,
+                  mid_getFixedS10P7_9981f74b2d109da6,
+                  mid_getFixedS10P7Mean_9981f74b2d109da6,
+                  mid_getFixedY10P7_9981f74b2d109da6,
+                  mid_getFixedY10P7Mean_9981f74b2d109da6,
+                  mid_getGm_9981f74b2d109da6,
+                  mid_getGravityDegree_d6ab429752e7c267,
+                  mid_getGravityModel_d2c8eb4129821f0e,
+                  mid_getGravityOrder_d6ab429752e7c267,
+                  mid_getInterpMethodSW_d2c8eb4129821f0e,
+                  mid_getNBodyPerturbations_d751c1a57012b438,
+                  mid_getOblateFlattening_9981f74b2d109da6,
+                  mid_getOceanTidesModel_d2c8eb4129821f0e,
+                  mid_getReductionTheory_d2c8eb4129821f0e,
+                  mid_getShadowBodies_d751c1a57012b438,
+                  mid_getShadowModel_384f8b83ce262c6d,
+                  mid_getSolidTidesModel_d2c8eb4129821f0e,
+                  mid_getSpaceWeatherEpoch_80e11148db499dda,
+                  mid_getSpaceWeatherSource_d2c8eb4129821f0e,
+                  mid_getSrpModel_d2c8eb4129821f0e,
+                  mid_setAlbedoGridSize_8fd427ab23829bf5,
+                  mid_setAlbedoModel_105e1eadb709d9ac,
+                  mid_setAtmosphericModel_105e1eadb709d9ac,
+                  mid_setCentralBodyRotation_1ad26e8c8c0cd65b,
+                  mid_setEquatorialRadius_1ad26e8c8c0cd65b,
+                  mid_setFixedF10P7_1ad26e8c8c0cd65b,
+                  mid_setFixedF10P7Mean_1ad26e8c8c0cd65b,
+                  mid_setFixedGeomagneticAp_1ad26e8c8c0cd65b,
+                  mid_setFixedGeomagneticDst_1ad26e8c8c0cd65b,
+                  mid_setFixedGeomagneticKp_1ad26e8c8c0cd65b,
+                  mid_setFixedM10P7_1ad26e8c8c0cd65b,
+                  mid_setFixedM10P7Mean_1ad26e8c8c0cd65b,
+                  mid_setFixedS10P7_1ad26e8c8c0cd65b,
+                  mid_setFixedS10P7Mean_1ad26e8c8c0cd65b,
+                  mid_setFixedY10P7_1ad26e8c8c0cd65b,
+                  mid_setFixedY10P7Mean_1ad26e8c8c0cd65b,
+                  mid_setGm_1ad26e8c8c0cd65b,
+                  mid_setGravityModel_c9a77c84756b106b,
+                  mid_setInterpMethodSW_105e1eadb709d9ac,
+                  mid_setNBodyPerturbations_aa335fea495d60e0,
+                  mid_setOblateFlattening_1ad26e8c8c0cd65b,
+                  mid_setOceanTidesModel_105e1eadb709d9ac,
+                  mid_setReductionTheory_105e1eadb709d9ac,
+                  mid_setShadowBodies_aa335fea495d60e0,
+                  mid_setShadowModel_96bc3dfff38fb961,
+                  mid_setSolidTidesModel_105e1eadb709d9ac,
+                  mid_setSpaceWeatherEpoch_8497861b879c83f7,
+                  mid_setSpaceWeatherSource_105e1eadb709d9ac,
+                  mid_setSrpModel_105e1eadb709d9ac,
                   max_mid
                 };
 

@@ -3,23 +3,6 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace data {
-      class FieldBodiesElements;
-      class BodiesElements;
-    }
-    namespace utils {
-      class IERSConventions;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class TimeScales;
-      class AbsoluteDate;
-      class TimeScale;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
@@ -33,6 +16,23 @@ namespace java {
     class String;
   }
 }
+namespace org {
+  namespace orekit {
+    namespace data {
+      class FieldBodiesElements;
+      class BodiesElements;
+    }
+    namespace utils {
+      class IERSConventions;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+      class TimeScales;
+      class TimeScale;
+    }
+  }
+}
 template<class T> class JArray;
 
 namespace org {
@@ -42,12 +42,12 @@ namespace org {
       class FundamentalNutationArguments : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_4dca6754391e0716,
-          mid_init$_e3a60f0443eea66f,
-          mid_init$_eef6cdf2d94d9097,
-          mid_init$_9852e659e38b28b8,
-          mid_evaluateAll_8263d887c1bcc144,
-          mid_evaluateAll_277b5594ce9ed429,
+          mid_init$_59387804c188e4fb,
+          mid_init$_cd2232c631ab6063,
+          mid_init$_1759522db6aad277,
+          mid_init$_edca7e198ed24012,
+          mid_evaluateAll_99717f1e804d9d39,
+          mid_evaluateAll_1eb2b41141d58bbf,
           max_mid
         };
 

@@ -3,6 +3,25 @@
 
 #include "org/hipparchus/optim/nonlinear/scalar/MultivariateOptimizer.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace optim {
+      class PointValuePair;
+      class ConvergenceChecker;
+      class OptimizationData;
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+      class MathIllegalStateException;
+    }
+    namespace random {
+      class RandomGenerator;
+    }
+    namespace linear {
+      class RealMatrix;
+    }
+  }
+}
 namespace java {
   namespace util {
     class List;
@@ -10,25 +29,6 @@ namespace java {
   namespace lang {
     class Double;
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace optim {
-      class ConvergenceChecker;
-      class OptimizationData;
-      class PointValuePair;
-    }
-    namespace random {
-      class RandomGenerator;
-    }
-    namespace exception {
-      class MathIllegalStateException;
-      class MathIllegalArgumentException;
-    }
-    namespace linear {
-      class RealMatrix;
-    }
   }
 }
 template<class T> class JArray;
@@ -43,14 +43,14 @@ namespace org {
             class CMAESOptimizer : public ::org::hipparchus::optim::nonlinear::scalar::MultivariateOptimizer {
              public:
               enum {
-                mid_init$_830448b61f1b293c,
-                mid_getStatisticsDHistory_e62d3bb06d56d7e3,
-                mid_getStatisticsFitnessHistory_e62d3bb06d56d7e3,
-                mid_getStatisticsMeanHistory_e62d3bb06d56d7e3,
-                mid_getStatisticsSigmaHistory_e62d3bb06d56d7e3,
-                mid_optimize_9d04816d74472b44,
-                mid_parseOptimizationData_14193ddbce7a2cc0,
-                mid_doOptimize_35ff88cac3217ca3,
+                mid_init$_419ba16a032a8d2f,
+                mid_getStatisticsDHistory_d751c1a57012b438,
+                mid_getStatisticsFitnessHistory_d751c1a57012b438,
+                mid_getStatisticsMeanHistory_d751c1a57012b438,
+                mid_getStatisticsSigmaHistory_d751c1a57012b438,
+                mid_optimize_1912ae5ec9cd8a6c,
+                mid_parseOptimizationData_df324e640da2eeec,
+                mid_doOptimize_a812a1ba2cf9f7b4,
                 max_mid
               };
 

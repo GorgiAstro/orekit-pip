@@ -8,14 +8,17 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
     class CalculusFieldElement;
   }
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace forces {
       namespace maneuvers {
         namespace propulsion {
@@ -25,11 +28,8 @@ namespace org {
       }
     }
     namespace propagation {
-      class SpacecraftState;
       class FieldSpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
+      class SpacecraftState;
     }
   }
 }
@@ -50,32 +50,32 @@ namespace org {
           class AbstractConstantThrustPropulsionModel : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_c0d617667838be49,
-              mid_init$_5c295347eb1c7d1a,
-              mid_getControl3DVectorCostType_2eba60c257188b83,
-              mid_getDirection_8b724f8b4fdad1a2,
-              mid_getDirection_082e6346b274f880,
-              mid_getFlowRate_b74f83833fdad017,
-              mid_getFlowRate_b060e4326765ccf1,
-              mid_getFlowRate_ba5ea64a789ad864,
-              mid_getFlowRate_a17ea857ce74d258,
-              mid_getFlowRate_fd347811007a6ba3,
-              mid_getFlowRate_8e86371c61460f23,
-              mid_getFlowRate_f867476668f8eb00,
-              mid_getIsp_b74f83833fdad017,
-              mid_getIsp_fd347811007a6ba3,
-              mid_getName_1c1fa1e935d6cdcf,
-              mid_getThrustMagnitude_b74f83833fdad017,
-              mid_getThrustMagnitude_fd347811007a6ba3,
-              mid_getThrustVector_8b724f8b4fdad1a2,
-              mid_getThrustVector_5dc321c3ba065f30,
-              mid_getThrustVector_b7e5bd35daed8b40,
-              mid_getThrustVector_9019a5b32b11453a,
-              mid_getThrustVector_082e6346b274f880,
-              mid_getThrustVector_0ce449c67b5ffd9c,
-              mid_getThrustVector_20bded0292328743,
-              mid_getInitialThrustVector_8b724f8b4fdad1a2,
-              mid_getInitialFlowRate_b74f83833fdad017,
+              mid_init$_ddbb1762bed80b38,
+              mid_init$_33b1676e2cf06e6c,
+              mid_getControl3DVectorCostType_fc9abda16ef946e0,
+              mid_getDirection_032312bdeb3f2f93,
+              mid_getDirection_8b37cafaaf55a3a5,
+              mid_getFlowRate_9981f74b2d109da6,
+              mid_getFlowRate_a40ce4fdf6559ac0,
+              mid_getFlowRate_c04968ee695d037c,
+              mid_getFlowRate_b443ba1cc794b916,
+              mid_getFlowRate_209f08246d708042,
+              mid_getFlowRate_4222abdadde032f5,
+              mid_getFlowRate_6c8e6cd5d59063ae,
+              mid_getIsp_9981f74b2d109da6,
+              mid_getIsp_209f08246d708042,
+              mid_getName_d2c8eb4129821f0e,
+              mid_getThrustMagnitude_9981f74b2d109da6,
+              mid_getThrustMagnitude_209f08246d708042,
+              mid_getThrustVector_032312bdeb3f2f93,
+              mid_getThrustVector_44a47ea31a9889e8,
+              mid_getThrustVector_5e5894038af17774,
+              mid_getThrustVector_38283c57554889c0,
+              mid_getThrustVector_8b37cafaaf55a3a5,
+              mid_getThrustVector_9816b8f76e94356a,
+              mid_getThrustVector_5e147f44c28a35c9,
+              mid_getInitialFlowRate_9981f74b2d109da6,
+              mid_getInitialThrustVector_032312bdeb3f2f93,
               max_mid
             };
 

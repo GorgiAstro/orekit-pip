@@ -4,25 +4,25 @@
 #include "org/orekit/propagation/AbstractStateCovarianceInterpolator.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace analysis {
-      namespace polynomials {
-        class SmoothStepFactory$SmoothStepFunction;
-      }
-    }
-  }
   namespace orekit {
+    namespace time {
+      class TimeInterpolator;
+    }
     namespace frames {
       class LOFType;
       class Frame;
     }
     namespace orbits {
-      class Orbit;
       class PositionAngleType;
+      class Orbit;
       class OrbitType;
     }
-    namespace time {
-      class TimeInterpolator;
+  }
+  namespace hipparchus {
+    namespace analysis {
+      namespace polynomials {
+        class SmoothStepFactory$SmoothStepFunction;
+      }
     }
   }
 }
@@ -40,9 +40,9 @@ namespace org {
       class StateCovarianceBlender : public ::org::orekit::propagation::AbstractStateCovarianceInterpolator {
        public:
         enum {
-          mid_init$_0c39569b67ad4297,
-          mid_init$_804bce5809bbc06f,
-          mid_computeInterpolatedCovarianceInOrbitFrame_6e94f93e19d6364d,
+          mid_init$_09140af3e4389da0,
+          mid_init$_2ffdce98ec11eef3,
+          mid_computeInterpolatedCovarianceInOrbitFrame_e7868f37b0ca6b84,
           max_mid
         };
 

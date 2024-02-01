@@ -5,8 +5,8 @@
 
 namespace java {
   namespace io {
-    class ObjectInputFilter$Status;
     class ObjectInputFilter$FilterInfo;
+    class ObjectInputFilter$Status;
   }
   namespace lang {
     class Class;
@@ -20,7 +20,7 @@ namespace java {
     class ObjectInputFilter : public ::java::lang::Object {
      public:
       enum {
-        mid_checkInput_f4ee27329d8366de,
+        mid_checkInput_a9ed483445078249,
         max_mid
       };
 

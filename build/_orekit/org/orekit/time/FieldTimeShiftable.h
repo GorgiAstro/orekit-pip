@@ -27,7 +27,7 @@ namespace org {
       class FieldTimeShiftable : public ::org::orekit::time::TimeShiftable {
        public:
         enum {
-          mid_shiftedBy_7996cf2c358d897a,
+          mid_shiftedBy_af95a6985c82d852,
           max_mid
         };
 

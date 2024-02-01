@@ -30,10 +30,10 @@ namespace org {
         class LinearLineDatation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_574dcea0b820e53f,
-            mid_getDate_f359a0110559347a,
-            mid_getLine_fd347811007a6ba3,
-            mid_getRate_04fd0666b613d2ab,
+            mid_init$_d1740697fab3a0ee,
+            mid_getDate_d2854c25a21df51f,
+            mid_getLine_209f08246d708042,
+            mid_getRate_bf28ed64d6e8576b,
             max_mid
           };
 

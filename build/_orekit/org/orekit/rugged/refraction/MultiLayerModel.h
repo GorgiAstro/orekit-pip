@@ -3,7 +3,29 @@
 
 #include "org/orekit/rugged/refraction/AtmosphericRefraction.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
+  namespace orekit {
+    namespace rugged {
+      namespace utils {
+        class ExtendedEllipsoid;
+        class NormalizedGeodeticPoint;
+      }
+      namespace refraction {
+        class ConstantRefractionLayer;
+      }
+      namespace intersection {
+        class IntersectionAlgorithm;
+      }
+    }
+  }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
@@ -12,28 +34,6 @@ namespace org {
         }
       }
     }
-  }
-  namespace orekit {
-    namespace rugged {
-      namespace utils {
-        class ExtendedEllipsoid;
-        class NormalizedGeodeticPoint;
-      }
-      namespace intersection {
-        class IntersectionAlgorithm;
-      }
-      namespace refraction {
-        class ConstantRefractionLayer;
-      }
-    }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -46,9 +46,9 @@ namespace org {
         class MultiLayerModel : public ::org::orekit::rugged::refraction::AtmosphericRefraction {
          public:
           enum {
-            mid_init$_035235491296adca,
-            mid_init$_129da8e177ba9d38,
-            mid_applyCorrection_88676b739a4ea0ca,
+            mid_init$_669bd2fe21c4893e,
+            mid_init$_c732f1a5333887fb,
+            mid_applyCorrection_1ebaacadb4fd5fdc,
             max_mid
           };
 

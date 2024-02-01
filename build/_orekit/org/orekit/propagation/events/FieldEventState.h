@@ -4,24 +4,24 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
+  namespace hipparchus {
+    namespace exception {
+      class MathRuntimeException;
     }
+  }
+  namespace orekit {
     namespace propagation {
       namespace events {
         class FieldEventDetector;
         class FieldEventState$EventOccurrence;
       }
-      class FieldSpacecraftState;
       namespace sampling {
         class FieldOrekitStepInterpolator;
       }
+      class FieldSpacecraftState;
     }
-  }
-  namespace hipparchus {
-    namespace exception {
-      class MathRuntimeException;
+    namespace time {
+      class FieldAbsoluteDate;
     }
   }
 }
@@ -40,15 +40,15 @@ namespace org {
         class FieldEventState : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_ca1d91eb6a3ce219,
-            mid_doEvent_a0a44322b5800790,
-            mid_evaluateStep_ed8f8b343c93190f,
-            mid_getEventDate_fa23a4301b9c83e7,
-            mid_getEventDetector_e78af9d734a5fbe1,
-            mid_getPendingEvent_9ab94ac1dc23b105,
-            mid_init_96d019f392abf918,
-            mid_reinitializeBegin_fa82adff12d70536,
-            mid_tryAdvance_a2d04bc21b332743,
+            mid_init$_bb8991c4a46cf56d,
+            mid_doEvent_51a1afdc630db44c,
+            mid_evaluateStep_321a11228d45c3a6,
+            mid_getEventDate_1fea28374011eef5,
+            mid_getEventDetector_3146cd1129cf853c,
+            mid_getPendingEvent_eee3de00fe971136,
+            mid_init_357211ab77703f3f,
+            mid_reinitializeBegin_33c76379cdb8499a,
+            mid_tryAdvance_af3e718ba412502f,
             max_mid
           };
 

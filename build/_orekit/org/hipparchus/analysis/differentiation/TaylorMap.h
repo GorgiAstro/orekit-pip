@@ -5,14 +5,14 @@
 
 namespace org {
   namespace hipparchus {
+    namespace linear {
+      class MatrixDecomposer;
+    }
     namespace analysis {
       namespace differentiation {
         class DerivativeStructure;
         class TaylorMap;
       }
-    }
-    namespace linear {
-      class MatrixDecomposer;
     }
   }
 }
@@ -31,15 +31,15 @@ namespace org {
         class TaylorMap : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_9d69924e252c5b9a,
-            mid_init$_a0df4b8e4ed3805e,
-            mid_compose_6646fcff2910e26b,
-            mid_getFunction_7d1614ef7f412b0c,
-            mid_getNbFunctions_55546ef6a647f39b,
-            mid_getNbParameters_55546ef6a647f39b,
-            mid_getPoint_25e1757a36c4dde2,
-            mid_invert_1573c268f373a63b,
-            mid_value_14dee4cb8cc3e959,
+            mid_init$_8befb2fa54d4eadc,
+            mid_init$_48ca1125d4856a74,
+            mid_compose_163150f2addcb85a,
+            mid_getFunction_d2b8014a1c7d22f6,
+            mid_getNbFunctions_d6ab429752e7c267,
+            mid_getNbParameters_d6ab429752e7c267,
+            mid_getPoint_be783177b060994b,
+            mid_invert_26364ce0a724a9ce,
+            mid_value_51f624c89851da7e,
             max_mid
           };
 

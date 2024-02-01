@@ -7,6 +7,9 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace definitions {
+          class FrameFacade;
+        }
         namespace ndm {
           namespace odm {
             namespace ocm {
@@ -15,18 +18,15 @@ namespace org {
             }
           }
         }
-        namespace definitions {
-          class FrameFacade;
-        }
       }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace utils {
       namespace units {
         class Unit;
       }
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -52,34 +52,34 @@ namespace org {
               class OrbitCovarianceHistoryMetadata : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_02135a6ef25adb4b,
-                  mid_getCovBasis_1c1fa1e935d6cdcf,
-                  mid_getCovBasisID_1c1fa1e935d6cdcf,
-                  mid_getCovConfidence_b74f83833fdad017,
-                  mid_getCovFrameEpoch_c325492395d89b24,
-                  mid_getCovID_1c1fa1e935d6cdcf,
-                  mid_getCovNextID_1c1fa1e935d6cdcf,
-                  mid_getCovOrdering_3965a9392133c403,
-                  mid_getCovPrevID_1c1fa1e935d6cdcf,
-                  mid_getCovReferenceFrame_69d8be1b6b0a1a94,
-                  mid_getCovScaleMax_b74f83833fdad017,
-                  mid_getCovScaleMin_b74f83833fdad017,
-                  mid_getCovType_4eb559a63ad8d46d,
-                  mid_getCovUnits_e62d3bb06d56d7e3,
-                  mid_setCovBasis_734b91ac30d5f9b4,
-                  mid_setCovBasisID_734b91ac30d5f9b4,
-                  mid_setCovConfidence_8ba9fe7a847cecad,
-                  mid_setCovFrameEpoch_02135a6ef25adb4b,
-                  mid_setCovID_734b91ac30d5f9b4,
-                  mid_setCovNextID_734b91ac30d5f9b4,
-                  mid_setCovOrdering_50c4ba031b2387f4,
-                  mid_setCovPrevID_734b91ac30d5f9b4,
-                  mid_setCovReferenceFrame_4755133c5c4c59be,
-                  mid_setCovScaleMax_8ba9fe7a847cecad,
-                  mid_setCovScaleMin_8ba9fe7a847cecad,
-                  mid_setCovType_c891909ddae6c021,
-                  mid_setCovUnits_0e7c3032c7c93ed3,
-                  mid_validate_8ba9fe7a847cecad,
+                  mid_init$_8497861b879c83f7,
+                  mid_getCovBasis_d2c8eb4129821f0e,
+                  mid_getCovBasisID_d2c8eb4129821f0e,
+                  mid_getCovConfidence_9981f74b2d109da6,
+                  mid_getCovFrameEpoch_80e11148db499dda,
+                  mid_getCovID_d2c8eb4129821f0e,
+                  mid_getCovNextID_d2c8eb4129821f0e,
+                  mid_getCovOrdering_08d7eff08cd4715e,
+                  mid_getCovPrevID_d2c8eb4129821f0e,
+                  mid_getCovReferenceFrame_0fc1562b68204151,
+                  mid_getCovScaleMax_9981f74b2d109da6,
+                  mid_getCovScaleMin_9981f74b2d109da6,
+                  mid_getCovType_53d3e424bd18099f,
+                  mid_getCovUnits_d751c1a57012b438,
+                  mid_setCovBasis_105e1eadb709d9ac,
+                  mid_setCovBasisID_105e1eadb709d9ac,
+                  mid_setCovConfidence_1ad26e8c8c0cd65b,
+                  mid_setCovFrameEpoch_8497861b879c83f7,
+                  mid_setCovID_105e1eadb709d9ac,
+                  mid_setCovNextID_105e1eadb709d9ac,
+                  mid_setCovOrdering_e084f07c2339d9a4,
+                  mid_setCovPrevID_105e1eadb709d9ac,
+                  mid_setCovReferenceFrame_2c8b859a72c0094e,
+                  mid_setCovScaleMax_1ad26e8c8c0cd65b,
+                  mid_setCovScaleMin_1ad26e8c8c0cd65b,
+                  mid_setCovType_60e103afec7f4bee,
+                  mid_setCovUnits_aa335fea495d60e0,
+                  mid_validate_1ad26e8c8c0cd65b,
                   max_mid
                 };
 

@@ -31,9 +31,9 @@ namespace org {
           class SignSemantic : public ::java::lang::Enum {
            public:
             enum {
-              mid_measurementIsFeasible_716249baa52d209e,
-              mid_valueOf_4fc43fd18b980bd4,
-              mid_values_55196758e1f22b2c,
+              mid_measurementIsFeasible_7bc657d327f0f830,
+              mid_valueOf_30a9972c501fd004,
+              mid_values_adee68db45309fb9,
               max_mid
             };
 

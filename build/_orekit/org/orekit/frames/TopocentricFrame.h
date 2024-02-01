@@ -5,35 +5,35 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class FieldPVCoordinates;
-      class FieldTrackingCoordinates;
-      class TimeStampedPVCoordinates;
-      class PVCoordinatesProvider;
-      class PVCoordinates;
-      class TrackingCoordinates;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
-    }
     namespace bodies {
+      class BodyShape;
       class FieldGeodeticPoint;
       class GeodeticPoint;
-      class BodyShape;
+    }
+    namespace utils {
+      class FieldTrackingCoordinates;
+      class FieldPVCoordinates;
+      class TrackingCoordinates;
+      class PVCoordinates;
+      class TimeStampedPVCoordinates;
+      class PVCoordinatesProvider;
+    }
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
     }
   }
   namespace hipparchus {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
     }
-    class Field;
     class CalculusFieldElement;
+    class Field;
   }
 }
 namespace java {
@@ -51,31 +51,31 @@ namespace org {
       class TopocentricFrame : public ::org::orekit::frames::Frame {
        public:
         enum {
-          mid_init$_018f438eb74dd0e8,
-          mid_computeLimitVisibilityPoint_df31fb81cb65757b,
-          mid_getAzimuth_2342fcde92b13419,
-          mid_getAzimuth_f039e0e7c3af3187,
-          mid_getCartesianPoint_8b724f8b4fdad1a2,
-          mid_getEast_8b724f8b4fdad1a2,
-          mid_getElevation_2342fcde92b13419,
-          mid_getElevation_f039e0e7c3af3187,
-          mid_getNadir_8b724f8b4fdad1a2,
-          mid_getNorth_8b724f8b4fdad1a2,
-          mid_getPVCoordinates_e5d15ef236cd9ffe,
-          mid_getParentShape_95d324082d4f411b,
-          mid_getPoint_963915d358b1e63a,
-          mid_getPoint_93fb10f989dbc484,
-          mid_getPosition_42ef2ff6aede2782,
-          mid_getRange_f039e0e7c3af3187,
-          mid_getRange_2342fcde92b13419,
-          mid_getRangeRate_dd88e7bf2f4356ab,
-          mid_getRangeRate_eeb1fd384390b5cb,
-          mid_getSouth_8b724f8b4fdad1a2,
-          mid_getTrackingCoordinates_ff66135290f6515b,
-          mid_getTrackingCoordinates_55136a7ee658aa9b,
-          mid_getWest_8b724f8b4fdad1a2,
-          mid_getZenith_8b724f8b4fdad1a2,
-          mid_pointAtDistance_df31fb81cb65757b,
+          mid_init$_13cf7cb6a56f5a80,
+          mid_computeLimitVisibilityPoint_b5f28aaa3cf2ecb4,
+          mid_getAzimuth_6de8bf4681bff197,
+          mid_getAzimuth_755a202772a3b64e,
+          mid_getCartesianPoint_032312bdeb3f2f93,
+          mid_getEast_032312bdeb3f2f93,
+          mid_getElevation_755a202772a3b64e,
+          mid_getElevation_6de8bf4681bff197,
+          mid_getNadir_032312bdeb3f2f93,
+          mid_getNorth_032312bdeb3f2f93,
+          mid_getPVCoordinates_6236a35378ed47a5,
+          mid_getParentShape_6f2d25f6f71d01ca,
+          mid_getPoint_bdca252cae79438c,
+          mid_getPoint_d09f9a5f23288a12,
+          mid_getPosition_abe01c75f7e82353,
+          mid_getRange_755a202772a3b64e,
+          mid_getRange_6de8bf4681bff197,
+          mid_getRangeRate_ecaa5202c9765db9,
+          mid_getRangeRate_ca0e04919483eecd,
+          mid_getSouth_032312bdeb3f2f93,
+          mid_getTrackingCoordinates_3c1e226d9659d04e,
+          mid_getTrackingCoordinates_e722131265d68a84,
+          mid_getWest_032312bdeb3f2f93,
+          mid_getZenith_032312bdeb3f2f93,
+          mid_pointAtDistance_b5f28aaa3cf2ecb4,
           max_mid
         };
 
@@ -93,8 +93,8 @@ namespace org {
         TopocentricFrame(const ::org::orekit::bodies::BodyShape &, const ::org::orekit::bodies::GeodeticPoint &, const ::java::lang::String &);
 
         ::org::orekit::bodies::GeodeticPoint computeLimitVisibilityPoint(jdouble, jdouble, jdouble) const;
-        ::org::hipparchus::CalculusFieldElement getAzimuth(const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::FieldAbsoluteDate &) const;
         jdouble getAzimuth(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::AbsoluteDate &) const;
+        ::org::hipparchus::CalculusFieldElement getAzimuth(const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::FieldAbsoluteDate &) const;
         ::org::hipparchus::geometry::euclidean::threed::Vector3D getCartesianPoint() const;
         ::org::hipparchus::geometry::euclidean::threed::Vector3D getEast() const;
         ::org::hipparchus::CalculusFieldElement getElevation(const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::FieldAbsoluteDate &) const;
@@ -106,10 +106,10 @@ namespace org {
         ::org::orekit::bodies::GeodeticPoint getPoint() const;
         ::org::orekit::bodies::FieldGeodeticPoint getPoint(const ::org::hipparchus::Field &) const;
         ::org::hipparchus::geometry::euclidean::threed::Vector3D getPosition(const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &) const;
-        jdouble getRange(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::AbsoluteDate &) const;
         ::org::hipparchus::CalculusFieldElement getRange(const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::FieldAbsoluteDate &) const;
-        jdouble getRangeRate(const ::org::orekit::utils::PVCoordinates &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::AbsoluteDate &) const;
+        jdouble getRange(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::AbsoluteDate &) const;
         ::org::hipparchus::CalculusFieldElement getRangeRate(const ::org::orekit::utils::FieldPVCoordinates &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::FieldAbsoluteDate &) const;
+        jdouble getRangeRate(const ::org::orekit::utils::PVCoordinates &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::AbsoluteDate &) const;
         ::org::hipparchus::geometry::euclidean::threed::Vector3D getSouth() const;
         ::org::orekit::utils::TrackingCoordinates getTrackingCoordinates(const ::org::hipparchus::geometry::euclidean::threed::Vector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::AbsoluteDate &) const;
         ::org::orekit::utils::FieldTrackingCoordinates getTrackingCoordinates(const ::org::hipparchus::geometry::euclidean::threed::FieldVector3D &, const ::org::orekit::frames::Frame &, const ::org::orekit::time::FieldAbsoluteDate &) const;

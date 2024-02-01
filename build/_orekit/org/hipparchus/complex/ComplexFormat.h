@@ -4,11 +4,6 @@
 #include "java/lang/Object.h"
 
 namespace java {
-  namespace text {
-    class FieldPosition;
-    class ParsePosition;
-    class NumberFormat;
-  }
   namespace util {
     class Locale;
   }
@@ -17,6 +12,11 @@ namespace java {
     class Double;
     class Class;
     class String;
+  }
+  namespace text {
+    class FieldPosition;
+    class ParsePosition;
+    class NumberFormat;
   }
 }
 namespace org {
@@ -27,8 +27,8 @@ namespace org {
       class MathIllegalStateException;
     }
     namespace complex {
-      class ComplexFormat;
       class Complex;
+      class ComplexFormat;
     }
   }
 }
@@ -41,25 +41,25 @@ namespace org {
       class ComplexFormat : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_init$_b7f3d50b51ef7518,
-          mid_init$_734b91ac30d5f9b4,
-          mid_init$_a87510accfde9c74,
-          mid_init$_1b1de848c187f338,
-          mid_init$_b1394edf81bf8325,
-          mid_format_3351787dda287cdf,
-          mid_format_19646432b3806a2a,
-          mid_format_f87b9603d4d067a9,
-          mid_format_b972afa1d89f0ad4,
-          mid_getAvailableLocales_8d2cd0b971cc7b85,
-          mid_getComplexFormat_fd55193634edb023,
-          mid_getComplexFormat_640ebfa8879b8bf2,
-          mid_getComplexFormat_d54474d4837bd5a1,
-          mid_getImaginaryCharacter_1c1fa1e935d6cdcf,
-          mid_getImaginaryFormat_87ffffc449cd25a5,
-          mid_getRealFormat_87ffffc449cd25a5,
-          mid_parse_02e1897cad01bc88,
-          mid_parse_7140aaf11af966f0,
+          mid_init$_ff7cb6c242604316,
+          mid_init$_327b6d3ae10b544b,
+          mid_init$_105e1eadb709d9ac,
+          mid_init$_2f8f1e4936e49b8d,
+          mid_init$_3e3719c2dd2cb337,
+          mid_init$_14e55261fa5caed4,
+          mid_format_ecf83385512fcb3c,
+          mid_format_4371f518eaf97f6b,
+          mid_format_ab659826fc95e83a,
+          mid_format_8a939fb9d04314c2,
+          mid_getAvailableLocales_faf2576acf90261b,
+          mid_getComplexFormat_43dfc142a69b2802,
+          mid_getComplexFormat_907dfcdf4894960e,
+          mid_getComplexFormat_65292ca77486d902,
+          mid_getImaginaryCharacter_d2c8eb4129821f0e,
+          mid_getImaginaryFormat_525709eb5c5b5ea6,
+          mid_getRealFormat_525709eb5c5b5ea6,
+          mid_parse_ba393eca33525b34,
+          mid_parse_a925c73b2303ca11,
           max_mid
         };
 

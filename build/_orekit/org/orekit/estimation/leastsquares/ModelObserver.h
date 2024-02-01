@@ -18,8 +18,8 @@ namespace org {
     }
     namespace estimation {
       namespace measurements {
-        class ObservedMeasurement;
         class EstimatedMeasurement;
+        class ObservedMeasurement;
       }
     }
   }
@@ -34,7 +34,7 @@ namespace org {
         class ModelObserver : public ::java::lang::Object {
          public:
           enum {
-            mid_modelCalled_cc0ac39e38c56725,
+            mid_modelCalled_2163b5d3b4cfd2eb,
             max_mid
           };
 

@@ -5,13 +5,13 @@
 
 namespace org {
   namespace hipparchus {
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
     namespace stat {
       namespace descriptive {
         class UnivariateStatistic;
       }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
     }
   }
 }
@@ -30,13 +30,13 @@ namespace org {
         class AbstractUnivariateStatistic : public ::java::lang::Object {
          public:
           enum {
-            mid_copy_04f2e677f90ab735,
-            mid_evaluate_b74f83833fdad017,
-            mid_evaluate_1567a80062adb31b,
-            mid_getData_25e1757a36c4dde2,
-            mid_setData_ab69da052b88f50c,
-            mid_setData_4484ad1f15b73c7a,
-            mid_getDataRef_25e1757a36c4dde2,
+            mid_copy_fe1447429c89969b,
+            mid_evaluate_9981f74b2d109da6,
+            mid_evaluate_620ea098e5f0da00,
+            mid_getData_be783177b060994b,
+            mid_setData_a71c45509eaf92d1,
+            mid_setData_40b495c766d36227,
+            mid_getDataRef_be783177b060994b,
             max_mid
           };
 

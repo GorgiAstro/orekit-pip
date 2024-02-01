@@ -28,10 +28,10 @@ namespace org {
         class CRDHeader$RangeType : public ::java::lang::Enum {
          public:
           enum {
-            mid_getIndicator_55546ef6a647f39b,
-            mid_getRangeType_94090b97b11a7e8d,
-            mid_valueOf_e43c0ff1ffdcab1b,
-            mid_values_816f771cae762eb3,
+            mid_getIndicator_d6ab429752e7c267,
+            mid_getRangeType_f41d5e18b00f518f,
+            mid_valueOf_3de67b63f6eec261,
+            mid_values_f9318a4b540badf0,
             max_mid
           };
 

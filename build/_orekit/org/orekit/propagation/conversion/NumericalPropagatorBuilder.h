@@ -5,6 +5,9 @@
 
 namespace org {
   namespace orekit {
+    namespace attitudes {
+      class AttitudeProvider;
+    }
     namespace propagation {
       namespace conversion {
         class NumericalPropagatorBuilder;
@@ -15,15 +18,6 @@ namespace org {
         class NumericalPropagator;
       }
     }
-    namespace attitudes {
-      class AttitudeProvider;
-    }
-    namespace utils {
-      class ParameterDriversList;
-    }
-    namespace forces {
-      class ForceModel;
-    }
     namespace estimation {
       namespace leastsquares {
         class BatchLSModel;
@@ -33,9 +27,15 @@ namespace org {
         class ObservedMeasurement;
       }
     }
+    namespace utils {
+      class ParameterDriversList;
+    }
     namespace orbits {
-      class Orbit;
       class PositionAngleType;
+      class Orbit;
+    }
+    namespace forces {
+      class ForceModel;
     }
   }
 }
@@ -58,16 +58,16 @@ namespace org {
         class NumericalPropagatorBuilder : public ::org::orekit::propagation::conversion::AbstractPropagatorBuilder {
          public:
           enum {
-            mid_init$_99c6cf1555665a56,
-            mid_init$_b869d69da460d35b,
-            mid_addForceModel_43775e92e64180fc,
-            mid_buildLeastSquaresModel_353bfba6366969bc,
-            mid_buildPropagator_57f2ea8f7e2a7c1f,
-            mid_copy_12bbe9991f8a10b2,
-            mid_getAllForceModels_e62d3bb06d56d7e3,
-            mid_getIntegratorBuilder_a870bf0f84eaaecb,
-            mid_getMass_b74f83833fdad017,
-            mid_setMass_8ba9fe7a847cecad,
+            mid_init$_3c587d45992c10e4,
+            mid_init$_ab7ccb03b5385986,
+            mid_addForceModel_33ce7dbdc1ed7751,
+            mid_buildLeastSquaresModel_9cee4860e0dd98b4,
+            mid_buildPropagator_534e89621331d918,
+            mid_copy_c01a9087d19747c3,
+            mid_getAllForceModels_d751c1a57012b438,
+            mid_getIntegratorBuilder_97efb8d7c46d45d7,
+            mid_getMass_9981f74b2d109da6,
+            mid_setMass_1ad26e8c8c0cd65b,
             max_mid
           };
 

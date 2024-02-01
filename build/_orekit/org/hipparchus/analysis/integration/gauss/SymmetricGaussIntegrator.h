@@ -5,14 +5,14 @@
 
 namespace org {
   namespace hipparchus {
-    namespace util {
-      class Pair;
+    namespace exception {
+      class MathIllegalArgumentException;
     }
     namespace analysis {
       class UnivariateFunction;
     }
-    namespace exception {
-      class MathIllegalArgumentException;
+    namespace util {
+      class Pair;
     }
   }
 }
@@ -32,9 +32,9 @@ namespace org {
           class SymmetricGaussIntegrator : public ::org::hipparchus::analysis::integration::gauss::GaussIntegrator {
            public:
             enum {
-              mid_init$_24d37c4bbd61d20e,
-              mid_init$_b15baa0161a4e9c7,
-              mid_integrate_6bcb3ad6aa509267,
+              mid_init$_b0e5b4ae04bc40a1,
+              mid_init$_64100e41ba74de8f,
+              mid_integrate_f4604469c090863e,
               max_mid
             };
 

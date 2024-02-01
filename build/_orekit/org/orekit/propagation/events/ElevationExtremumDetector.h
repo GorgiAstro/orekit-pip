@@ -6,10 +6,10 @@
 namespace org {
   namespace orekit {
     namespace propagation {
-      class SpacecraftState;
       namespace events {
         class ElevationExtremumDetector;
       }
+      class SpacecraftState;
     }
     namespace frames {
       class TopocentricFrame;
@@ -31,12 +31,12 @@ namespace org {
         class ElevationExtremumDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_153388b9c226b897,
-            mid_init$_806761bd3bfad55b,
-            mid_g_a17ea857ce74d258,
-            mid_getElevation_a17ea857ce74d258,
-            mid_getTopocentricFrame_c2b113ddceb69262,
-            mid_create_a1d2b66495255404,
+            mid_init$_2c9031d766545c51,
+            mid_init$_aac1d9a67653fe60,
+            mid_g_b443ba1cc794b916,
+            mid_getElevation_b443ba1cc794b916,
+            mid_getTopocentricFrame_d0e5c3c9d5578806,
+            mid_create_3857937562fc5264,
             max_mid
           };
 

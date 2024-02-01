@@ -3,15 +3,15 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    class CalculusFieldElement;
-  }
-}
 namespace java {
   namespace lang {
     class String;
     class Class;
+  }
+}
+namespace org {
+  namespace hipparchus {
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -24,14 +24,14 @@ namespace org {
         class FieldProbabilityOfCollision : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_69100ceaa9527c48,
-            mid_init$_1771911ab5506ea2,
-            mid_init$_09e54bced4f47fa9,
-            mid_getLowerLimit_81520b552cb3fa26,
-            mid_getProbabilityOfCollisionMethodName_1c1fa1e935d6cdcf,
-            mid_getUpperLimit_81520b552cb3fa26,
-            mid_getValue_81520b552cb3fa26,
-            mid_isMaxProbability_9ab94ac1dc23b105,
+            mid_init$_df99f6c7619851b8,
+            mid_init$_40d2b87250b39e7c,
+            mid_init$_690376ceb492d4fa,
+            mid_getLowerLimit_08d37e3f77b7239d,
+            mid_getProbabilityOfCollisionMethodName_d2c8eb4129821f0e,
+            mid_getUpperLimit_08d37e3f77b7239d,
+            mid_getValue_08d37e3f77b7239d,
+            mid_isMaxProbability_eee3de00fe971136,
             max_mid
           };
 

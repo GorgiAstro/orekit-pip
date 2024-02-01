@@ -3,39 +3,33 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
+namespace java {
+  namespace util {
+    namespace stream {
+      class Stream;
     }
-    class Field;
-    class CalculusFieldElement;
+    class List;
   }
+  namespace lang {
+    class Class;
+  }
+}
+namespace org {
   namespace orekit {
     namespace utils {
-      class IERSConventions;
       class ParameterDriver;
-    }
-    namespace forces {
-      class ForceModel;
-      namespace gravity {
-        namespace potential {
-          class TideSystem;
-        }
-      }
+      class IERSConventions;
     }
     namespace propagation {
-      class FieldSpacecraftState;
       namespace events {
         class FieldEventDetector;
         class EventDetector;
       }
+      class FieldSpacecraftState;
       class SpacecraftState;
+    }
+    namespace bodies {
+      class CelestialBody;
     }
     namespace time {
       class UT1Scale;
@@ -43,20 +37,26 @@ namespace org {
     namespace frames {
       class Frame;
     }
-    namespace bodies {
-      class CelestialBody;
+    namespace forces {
+      namespace gravity {
+        namespace potential {
+          class TideSystem;
+        }
+      }
+      class ForceModel;
     }
   }
-}
-namespace java {
-  namespace util {
-    class List;
-    namespace stream {
-      class Stream;
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
     }
-  }
-  namespace lang {
-    class Class;
+    class Field;
+    class CalculusFieldElement;
   }
 }
 template<class T> class JArray;
@@ -69,14 +69,14 @@ namespace org {
         class SolidTides : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_273da68e0002e582,
-            mid_init$_ebc119cf1633fa6f,
-            mid_acceleration_0ce449c67b5ffd9c,
-            mid_acceleration_20bded0292328743,
-            mid_dependsOnPositionOnly_9ab94ac1dc23b105,
-            mid_getEventDetectors_14e21bf777ff0ccf,
-            mid_getFieldEventDetectors_283ad33581c047a0,
-            mid_getParametersDrivers_e62d3bb06d56d7e3,
+            mid_init$_9a5efe28259cffe6,
+            mid_init$_46c73e75ea7ca7a5,
+            mid_acceleration_5e147f44c28a35c9,
+            mid_acceleration_9816b8f76e94356a,
+            mid_dependsOnPositionOnly_eee3de00fe971136,
+            mid_getEventDetectors_11e4ca8182c1933d,
+            mid_getFieldEventDetectors_d3db121d9deb0312,
+            mid_getParametersDrivers_d751c1a57012b438,
             max_mid
           };
 
@@ -97,8 +97,8 @@ namespace org {
           SolidTides(const ::org::orekit::frames::Frame &, jdouble, jdouble, const ::org::orekit::forces::gravity::potential::TideSystem &, const ::org::orekit::utils::IERSConventions &, const ::org::orekit::time::UT1Scale &, const JArray< ::org::orekit::bodies::CelestialBody > &);
           SolidTides(const ::org::orekit::frames::Frame &, jdouble, jdouble, const ::org::orekit::forces::gravity::potential::TideSystem &, jboolean, jdouble, jint, const ::org::orekit::utils::IERSConventions &, const ::org::orekit::time::UT1Scale &, const JArray< ::org::orekit::bodies::CelestialBody > &);
 
-          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
+          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           jboolean dependsOnPositionOnly() const;
           ::java::util::stream::Stream getEventDetectors() const;
           ::java::util::stream::Stream getFieldEventDetectors(const ::org::hipparchus::Field &) const;

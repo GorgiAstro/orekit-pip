@@ -3,27 +3,27 @@
 
 #include "java/lang/Object.h"
 
+namespace org {
+  namespace hipparchus {
+    namespace analysis {
+      namespace interpolation {
+        class UnivariateInterpolator;
+      }
+      namespace polynomials {
+        class PolynomialFunctionNewtonForm;
+      }
+    }
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+  }
+}
 namespace java {
   namespace io {
     class Serializable;
   }
   namespace lang {
     class Class;
-  }
-}
-namespace org {
-  namespace hipparchus {
-    namespace analysis {
-      namespace polynomials {
-        class PolynomialFunctionNewtonForm;
-      }
-      namespace interpolation {
-        class UnivariateInterpolator;
-      }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
   }
 }
 template<class T> class JArray;
@@ -36,9 +36,9 @@ namespace org {
         class DividedDifferenceInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_interpolate_fcf97439b0a93692,
-            mid_computeDividedDifference_1badeb24cd1b9588,
+            mid_init$_ff7cb6c242604316,
+            mid_interpolate_efd1b0d4c5507258,
+            mid_computeDividedDifference_8238c1ebef563b00,
             max_mid
           };
 

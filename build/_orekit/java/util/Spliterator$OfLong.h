@@ -4,15 +4,15 @@
 #include "java/util/Spliterator$OfPrimitive.h"
 
 namespace java {
+  namespace lang {
+    class Long;
+    class Class;
+  }
   namespace util {
     namespace function {
       class LongConsumer;
     }
     class Spliterator$OfLong;
-  }
-  namespace lang {
-    class Class;
-    class Long;
   }
 }
 template<class T> class JArray;
@@ -23,9 +23,9 @@ namespace java {
     class Spliterator$OfLong : public ::java::util::Spliterator$OfPrimitive {
      public:
       enum {
-        mid_forEachRemaining_e8b2ec59438c8d3d,
-        mid_tryAdvance_ebaab0d50a7f2556,
-        mid_trySplit_8fe5a3c44d68fdf2,
+        mid_forEachRemaining_6eb6c26d2f8e123b,
+        mid_tryAdvance_20c85a04ebc23896,
+        mid_trySplit_a1ccd7694ec41555,
         max_mid
       };
 

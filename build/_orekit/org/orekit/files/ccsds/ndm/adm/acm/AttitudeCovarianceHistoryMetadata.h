@@ -7,15 +7,15 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
-        namespace definitions {
-          class FrameFacade;
-        }
         namespace ndm {
           namespace adm {
             namespace acm {
               class AttitudeCovarianceType;
             }
           }
+        }
+        namespace definitions {
+          class FrameFacade;
         }
       }
     }
@@ -40,20 +40,20 @@ namespace org {
               class AttitudeCovarianceHistoryMetadata : public ::org::orekit::files::ccsds::section::CommentsContainer {
                public:
                 enum {
-                  mid_init$_a1fa5dae97ea5ed2,
-                  mid_getCovBasis_1c1fa1e935d6cdcf,
-                  mid_getCovBasisID_1c1fa1e935d6cdcf,
-                  mid_getCovID_1c1fa1e935d6cdcf,
-                  mid_getCovPrevID_1c1fa1e935d6cdcf,
-                  mid_getCovReferenceFrame_69d8be1b6b0a1a94,
-                  mid_getCovType_49fb04b3e4992396,
-                  mid_setCovBasis_734b91ac30d5f9b4,
-                  mid_setCovBasisID_734b91ac30d5f9b4,
-                  mid_setCovID_734b91ac30d5f9b4,
-                  mid_setCovPrevID_734b91ac30d5f9b4,
-                  mid_setCovReferenceFrame_4755133c5c4c59be,
-                  mid_setCovType_8563e2f42c19e56b,
-                  mid_validate_8ba9fe7a847cecad,
+                  mid_init$_ff7cb6c242604316,
+                  mid_getCovBasis_d2c8eb4129821f0e,
+                  mid_getCovBasisID_d2c8eb4129821f0e,
+                  mid_getCovID_d2c8eb4129821f0e,
+                  mid_getCovPrevID_d2c8eb4129821f0e,
+                  mid_getCovReferenceFrame_0fc1562b68204151,
+                  mid_getCovType_74687e132732dee9,
+                  mid_setCovBasis_105e1eadb709d9ac,
+                  mid_setCovBasisID_105e1eadb709d9ac,
+                  mid_setCovID_105e1eadb709d9ac,
+                  mid_setCovPrevID_105e1eadb709d9ac,
+                  mid_setCovReferenceFrame_2c8b859a72c0094e,
+                  mid_setCovType_fceaef4829f7546b,
+                  mid_validate_1ad26e8c8c0cd65b,
                   max_mid
                 };
 

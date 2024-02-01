@@ -28,9 +28,9 @@ namespace org {
         class HaloXZPlaneCrossingDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_369b4c97255d5afa,
-            mid_g_a17ea857ce74d258,
-            mid_create_b260a96814d5039d,
+            mid_init$_13edac039e8cc967,
+            mid_g_b443ba1cc794b916,
+            mid_create_d9a564272bdf6ed1,
             max_mid
           };
 

@@ -5,18 +5,18 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class FieldTransform;
-      class TransformProvider;
-      class Transform;
-    }
     namespace utils {
       class IERSConventions;
     }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
       class TimeScales;
+    }
+    namespace frames {
+      class FieldTransform;
+      class Transform;
+      class TransformProvider;
     }
   }
 }
@@ -34,10 +34,10 @@ namespace org {
       class EclipticProvider : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_3541ec887ebcb3e4,
-          mid_init$_67387863597a31ab,
-          mid_getTransform_976d4bc81671ce42,
-          mid_getTransform_7a8ca6856fe3fc9e,
+          mid_init$_ac70b017ca00646a,
+          mid_init$_704fd9f6cce01267,
+          mid_getTransform_02ca17ac51b6a4b2,
+          mid_getTransform_286745ef54e0a7f6,
           max_mid
         };
 

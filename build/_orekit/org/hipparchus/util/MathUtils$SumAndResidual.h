@@ -17,8 +17,8 @@ namespace org {
       class MathUtils$SumAndResidual : public ::java::lang::Object {
        public:
         enum {
-          mid_getResidual_b74f83833fdad017,
-          mid_getSum_b74f83833fdad017,
+          mid_getResidual_9981f74b2d109da6,
+          mid_getSum_9981f74b2d109da6,
           max_mid
         };
 

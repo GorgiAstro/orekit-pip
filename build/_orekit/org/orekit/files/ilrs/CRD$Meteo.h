@@ -34,9 +34,9 @@ namespace org {
         class CRD$Meteo : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_fdbe1a9b1da328d7,
-            mid_getData_e62d3bb06d56d7e3,
-            mid_getMeteo_11b3f892af329032,
+            mid_init$_a422fab7ffe774b8,
+            mid_getData_d751c1a57012b438,
+            mid_getMeteo_2bb7a0ceebe4cc7e,
             max_mid
           };
 

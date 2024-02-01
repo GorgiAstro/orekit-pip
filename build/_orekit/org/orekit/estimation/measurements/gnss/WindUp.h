@@ -30,8 +30,8 @@ namespace org {
           class WindUp : public ::org::orekit::estimation::measurements::gnss::AbstractWindUp {
            public:
             enum {
-              mid_emitterToInert_3b9f748b89094cc6,
-              mid_receiverToInert_3b9f748b89094cc6,
+              mid_emitterToInert_f462106a6ca97aca,
+              mid_receiverToInert_f462106a6ca97aca,
               max_mid
             };
 

@@ -3,16 +3,16 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -24,25 +24,25 @@ namespace org {
       class SecularAndHarmonic : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_75061e5f5bbace93,
-          mid_addPoint_3dd4638451e09a7f,
-          mid_addWeightedPoint_574dcea0b820e53f,
-          mid_approximateAsPolynomialOnly_5574de1f3d416bc4,
-          mid_fit_a1fa5dae97ea5ed2,
-          mid_getFittedParameters_25e1757a36c4dde2,
-          mid_getHarmonicAmplitude_b74f83833fdad017,
-          mid_getPulsations_25e1757a36c4dde2,
-          mid_getReferenceDate_c325492395d89b24,
-          mid_getSecularDegree_55546ef6a647f39b,
-          mid_meanDerivative_dd92b03c798e45ba,
-          mid_meanSecondDerivative_dd92b03c798e45ba,
-          mid_meanValue_dd92b03c798e45ba,
-          mid_osculatingDerivative_fd347811007a6ba3,
-          mid_osculatingSecondDerivative_fd347811007a6ba3,
-          mid_osculatingValue_fd347811007a6ba3,
-          mid_resetFitting_9bdf5cd7dd060d54,
-          mid_setConvergenceRMS_8ba9fe7a847cecad,
-          mid_setMaxIter_44ed599e93e8a30c,
+          mid_init$_9d367e34fba0a5ea,
+          mid_addPoint_6ed2c1cd7b0b1c75,
+          mid_addWeightedPoint_d1740697fab3a0ee,
+          mid_approximateAsPolynomialOnly_e4bfc9f116bdd840,
+          mid_fit_ff7cb6c242604316,
+          mid_getFittedParameters_be783177b060994b,
+          mid_getHarmonicAmplitude_9981f74b2d109da6,
+          mid_getPulsations_be783177b060994b,
+          mid_getReferenceDate_80e11148db499dda,
+          mid_getSecularDegree_d6ab429752e7c267,
+          mid_meanDerivative_a3f9cea77181e4c8,
+          mid_meanSecondDerivative_a3f9cea77181e4c8,
+          mid_meanValue_a3f9cea77181e4c8,
+          mid_osculatingDerivative_209f08246d708042,
+          mid_osculatingSecondDerivative_209f08246d708042,
+          mid_osculatingValue_209f08246d708042,
+          mid_resetFitting_03daf63e1af251cd,
+          mid_setConvergenceRMS_1ad26e8c8c0cd65b,
+          mid_setMaxIter_8fd427ab23829bf5,
           max_mid
         };
 

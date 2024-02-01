@@ -5,11 +5,11 @@
 
 namespace org {
   namespace orekit {
-    namespace frames {
-      class Transform;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace frames {
+      class Transform;
     }
   }
 }
@@ -29,9 +29,9 @@ namespace org {
       class UpdatableFrame : public ::org::orekit::frames::Frame {
        public:
         enum {
-          mid_init$_c6446c6a66066a58,
-          mid_init$_9ce69abbd2d1e9a2,
-          mid_updateTransform_4bab67e94de5451c,
+          mid_init$_2c9eb35eb4351d75,
+          mid_init$_4f060f3eeb795497,
+          mid_updateTransform_112222c650e15b7d,
           max_mid
         };
 

@@ -3,6 +3,11 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace propagation {
@@ -14,11 +19,6 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -33,8 +33,8 @@ namespace org {
             class MaxGapInterpolationGrid : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_8ba9fe7a847cecad,
-                mid_getGridPoints_eaf2da2173f3569e,
+                mid_init$_1ad26e8c8c0cd65b,
+                mid_getGridPoints_4c8160a53aa8811b,
                 max_mid
               };
 

@@ -14,15 +14,15 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace time {
+      class FieldTimeStamped;
+      class FieldAbsoluteDate;
+    }
     namespace propagation {
       namespace events {
         class FieldDateDetector;
       }
       class FieldSpacecraftState;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class FieldTimeStamped;
     }
   }
   namespace hipparchus {
@@ -40,13 +40,13 @@ namespace org {
         class FieldDateDetector : public ::org::orekit::propagation::events::FieldAbstractDetector {
          public:
           enum {
-            mid_init$_2db260886c47962b,
-            mid_addEventDate_382e93bb0508f0e4,
-            mid_g_2203631097e94c79,
-            mid_getDate_fa23a4301b9c83e7,
-            mid_getDates_e62d3bb06d56d7e3,
-            mid_withMinGap_dd92e8644626e7e1,
-            mid_create_ac22377e890bc84d,
+            mid_init$_b88ac7839b633105,
+            mid_addEventDate_421e631f14d32a8c,
+            mid_g_ac6fccc69d1b2d9e,
+            mid_getDate_1fea28374011eef5,
+            mid_getDates_d751c1a57012b438,
+            mid_withMinGap_7fe4870c72836f1c,
+            mid_create_b840c2e201ca014e,
             max_mid
           };
 

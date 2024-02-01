@@ -5,19 +5,19 @@
 
 namespace org {
   namespace orekit {
-    namespace forces {
-      namespace gravity {
-        namespace potential {
-          class UnnormalizedSphericalHarmonicsProvider;
-        }
-      }
-    }
     namespace propagation {
       namespace semianalytical {
         namespace dsst {
           namespace utilities {
             class FieldAuxiliaryElements;
           }
+        }
+      }
+    }
+    namespace forces {
+      namespace gravity {
+        namespace potential {
+          class UnnormalizedSphericalHarmonicsProvider;
         }
       }
     }
@@ -43,12 +43,12 @@ namespace org {
             class FieldDSSTJ2SquaredClosedFormContext : public ::org::orekit::propagation::semianalytical::dsst::forces::FieldForceModelContext {
              public:
               enum {
-                mid_init$_3951bdd3b9659811,
-                mid_getA4_81520b552cb3fa26,
-                mid_getAlpha4_b74f83833fdad017,
-                mid_getC_81520b552cb3fa26,
-                mid_getEta_81520b552cb3fa26,
-                mid_getS2_81520b552cb3fa26,
+                mid_init$_46b7e8885744644e,
+                mid_getA4_08d37e3f77b7239d,
+                mid_getAlpha4_9981f74b2d109da6,
+                mid_getC_08d37e3f77b7239d,
+                mid_getEta_08d37e3f77b7239d,
+                mid_getS2_08d37e3f77b7239d,
                 max_mid
               };
 

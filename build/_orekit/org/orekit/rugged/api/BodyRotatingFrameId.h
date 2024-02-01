@@ -3,6 +3,12 @@
 
 #include "java/lang/Enum.h"
 
+namespace java {
+  namespace lang {
+    class String;
+    class Class;
+  }
+}
 namespace org {
   namespace orekit {
     namespace rugged {
@@ -10,12 +16,6 @@ namespace org {
         class BodyRotatingFrameId;
       }
     }
-  }
-}
-namespace java {
-  namespace lang {
-    class String;
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -28,8 +28,8 @@ namespace org {
         class BodyRotatingFrameId : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_4a0a548887cdd6d7,
-            mid_values_8270a8bfbfd5793f,
+            mid_valueOf_825d3d907e6d7304,
+            mid_values_18c872a780fcfa14,
             max_mid
           };
 

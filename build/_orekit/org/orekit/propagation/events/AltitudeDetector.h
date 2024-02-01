@@ -9,10 +9,10 @@ namespace org {
       class BodyShape;
     }
     namespace propagation {
+      class SpacecraftState;
       namespace events {
         class AltitudeDetector;
       }
-      class SpacecraftState;
     }
   }
 }
@@ -31,13 +31,13 @@ namespace org {
         class AltitudeDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_32e5db5e4ad291ee,
-            mid_init$_a739cce113527776,
-            mid_init$_451aa2fac482ca7b,
-            mid_g_a17ea857ce74d258,
-            mid_getAltitude_b74f83833fdad017,
-            mid_getBodyShape_95d324082d4f411b,
-            mid_create_0e173868746d06e5,
+            mid_init$_2247a31cd26b38fe,
+            mid_init$_1fa3531d15a85c84,
+            mid_init$_86ba5ff452ee7e6f,
+            mid_g_b443ba1cc794b916,
+            mid_getAltitude_9981f74b2d109da6,
+            mid_getBodyShape_6f2d25f6f71d01ca,
+            mid_create_b295424f86f6d84b,
             max_mid
           };
 

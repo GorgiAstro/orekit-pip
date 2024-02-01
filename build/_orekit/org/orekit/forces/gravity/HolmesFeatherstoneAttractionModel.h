@@ -4,42 +4,42 @@
 #include "java/lang/Object.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-    class CalculusFieldElement;
-  }
   namespace orekit {
-    namespace forces {
-      class ForceModel;
-      namespace gravity {
-        namespace potential {
-          class NormalizedSphericalHarmonicsProvider;
-          class TideSystemProvider;
-          class TideSystem;
-        }
-      }
+    namespace utils {
+      class ParameterDriver;
     }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
+    namespace forces {
+      namespace gravity {
+        namespace potential {
+          class TideSystemProvider;
+          class TideSystem;
+          class NormalizedSphericalHarmonicsProvider;
+        }
+      }
+      class ForceModel;
     }
     namespace frames {
       class Frame;
-    }
-    namespace utils {
-      class ParameterDriver;
     }
     namespace propagation {
       class FieldSpacecraftState;
       class SpacecraftState;
     }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -60,18 +60,18 @@ namespace org {
         class HolmesFeatherstoneAttractionModel : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_bb1db3646718fb67,
-            mid_acceleration_0ce449c67b5ffd9c,
-            mid_acceleration_20bded0292328743,
-            mid_dependsOnPositionOnly_9ab94ac1dc23b105,
-            mid_getMu_b74f83833fdad017,
-            mid_getMu_fd347811007a6ba3,
-            mid_getParametersDrivers_e62d3bb06d56d7e3,
-            mid_getTideSystem_b2b14af197a8eaf6,
-            mid_gradient_35fa29941c7f6542,
-            mid_gradient_8b9044e5f4efdb74,
-            mid_nonCentralPart_f361b0df99f3dc75,
-            mid_value_f361b0df99f3dc75,
+            mid_init$_5d920aa6f3a7a368,
+            mid_acceleration_5e147f44c28a35c9,
+            mid_acceleration_9816b8f76e94356a,
+            mid_dependsOnPositionOnly_eee3de00fe971136,
+            mid_getMu_9981f74b2d109da6,
+            mid_getMu_209f08246d708042,
+            mid_getParametersDrivers_d751c1a57012b438,
+            mid_getTideSystem_1e0f912623cd4841,
+            mid_gradient_e8d042e044715b4f,
+            mid_gradient_84cf09340692b7fd,
+            mid_nonCentralPart_07ed88f88bd9659c,
+            mid_value_07ed88f88bd9659c,
             max_mid
           };
 
@@ -88,8 +88,8 @@ namespace org {
 
           HolmesFeatherstoneAttractionModel(const ::org::orekit::frames::Frame &, const ::org::orekit::forces::gravity::potential::NormalizedSphericalHarmonicsProvider &);
 
-          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           ::org::hipparchus::geometry::euclidean::threed::Vector3D acceleration(const ::org::orekit::propagation::SpacecraftState &, const JArray< jdouble > &) const;
+          ::org::hipparchus::geometry::euclidean::threed::FieldVector3D acceleration(const ::org::orekit::propagation::FieldSpacecraftState &, const JArray< ::org::hipparchus::CalculusFieldElement > &) const;
           jboolean dependsOnPositionOnly() const;
           jdouble getMu() const;
           jdouble getMu(const ::org::orekit::time::AbsoluteDate &) const;

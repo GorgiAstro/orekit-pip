@@ -8,12 +8,12 @@ namespace java {
     class Map;
     class Set;
   }
-  namespace text {
-    class AttributedCharacterIterator$Attribute;
-  }
   namespace lang {
     class Class;
     class Object;
+  }
+  namespace text {
+    class AttributedCharacterIterator$Attribute;
   }
 }
 template<class T> class JArray;
@@ -24,15 +24,15 @@ namespace java {
     class AttributedCharacterIterator : public ::java::text::CharacterIterator {
      public:
       enum {
-        mid_getAllAttributeKeys_7e8f11dd23d1142c,
-        mid_getAttribute_35104434eb6bd0ee,
-        mid_getAttributes_810bed48fafb0b9a,
-        mid_getRunLimit_55546ef6a647f39b,
-        mid_getRunLimit_b0eeda8f546a1c45,
-        mid_getRunLimit_9dfa3140bb9ea2c1,
-        mid_getRunStart_55546ef6a647f39b,
-        mid_getRunStart_b0eeda8f546a1c45,
-        mid_getRunStart_9dfa3140bb9ea2c1,
+        mid_getAllAttributeKeys_6b191a9b12c1004b,
+        mid_getAttribute_009dc5eb5b86cd32,
+        mid_getAttributes_dbcb8bbac6b35e0d,
+        mid_getRunLimit_d6ab429752e7c267,
+        mid_getRunLimit_cab5680f9fdd97c7,
+        mid_getRunLimit_0835576b5c91f7a0,
+        mid_getRunStart_d6ab429752e7c267,
+        mid_getRunStart_cab5680f9fdd97c7,
+        mid_getRunStart_0835576b5c91f7a0,
         max_mid
       };
 

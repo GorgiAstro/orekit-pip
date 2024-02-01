@@ -32,10 +32,10 @@ namespace org {
         class LazyLoadedGeoMagneticFields : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_71b020e53c8af149,
-            mid_getField_63411221dee4d2d9,
-            mid_getIGRF_0b71ae56f8fa5718,
-            mid_getWMM_0b71ae56f8fa5718,
+            mid_init$_f44b5b919beca6bf,
+            mid_getField_7ee697680d30d1e8,
+            mid_getIGRF_5fbf1330f033ba72,
+            mid_getWMM_5fbf1330f033ba72,
             max_mid
           };
 

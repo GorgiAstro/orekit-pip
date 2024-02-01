@@ -20,11 +20,11 @@ namespace org {
       class FilesListCrawler : public ::org::orekit::data::AbstractListCrawler {
        public:
         enum {
-          mid_init$_cd2197c08d81ba59,
-          mid_getStream_f6aba5de8de98a58,
-          mid_getZipJarCrawler_f6d498f8a7299dab,
-          mid_getBaseName_a0a574defabe3b6d,
-          mid_getCompleteName_a0a574defabe3b6d,
+          mid_init$_02ea6287cefc0bf8,
+          mid_getCompleteName_adaf6e6136190c2e,
+          mid_getBaseName_adaf6e6136190c2e,
+          mid_getZipJarCrawler_cb069b2521665fac,
+          mid_getStream_5cd7df6ab73a6f35,
           max_mid
         };
 

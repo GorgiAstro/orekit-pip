@@ -4,21 +4,21 @@
 #include "java/text/NumberFormat.h"
 
 namespace java {
-  namespace text {
-    class FieldPosition;
-    class ParsePosition;
-    class AttributedCharacterIterator;
-    class DecimalFormatSymbols;
-  }
   namespace lang {
-    class Number;
     class StringBuffer;
+    class Number;
     class Class;
     class Object;
     class String;
   }
   namespace util {
     class Currency;
+  }
+  namespace text {
+    class FieldPosition;
+    class DecimalFormatSymbols;
+    class ParsePosition;
+    class AttributedCharacterIterator;
   }
 }
 template<class T> class JArray;
@@ -29,50 +29,50 @@ namespace java {
     class DecimalFormat : public ::java::text::NumberFormat {
      public:
       enum {
-        mid_init$_a1fa5dae97ea5ed2,
-        mid_init$_734b91ac30d5f9b4,
-        mid_init$_5abfc95260fd6c6b,
-        mid_applyLocalizedPattern_734b91ac30d5f9b4,
-        mid_applyPattern_734b91ac30d5f9b4,
-        mid_clone_541690f9ee81d3ad,
-        mid_equals_460c5e2d9d51c6cc,
-        mid_format_cdee9bc08b68d2f3,
-        mid_format_b972afa1d89f0ad4,
-        mid_format_1d561f51d282798c,
-        mid_formatToCharacterIterator_1e9e330ed3e6edfe,
-        mid_getCurrency_5c4bce1ad9114b42,
-        mid_getDecimalFormatSymbols_36ca27640d647410,
-        mid_getGroupingSize_55546ef6a647f39b,
-        mid_getMaximumFractionDigits_55546ef6a647f39b,
-        mid_getMaximumIntegerDigits_55546ef6a647f39b,
-        mid_getMinimumFractionDigits_55546ef6a647f39b,
-        mid_getMinimumIntegerDigits_55546ef6a647f39b,
-        mid_getMultiplier_55546ef6a647f39b,
-        mid_getNegativePrefix_1c1fa1e935d6cdcf,
-        mid_getNegativeSuffix_1c1fa1e935d6cdcf,
-        mid_getPositivePrefix_1c1fa1e935d6cdcf,
-        mid_getPositiveSuffix_1c1fa1e935d6cdcf,
-        mid_hashCode_55546ef6a647f39b,
-        mid_isDecimalSeparatorAlwaysShown_9ab94ac1dc23b105,
-        mid_isParseBigDecimal_9ab94ac1dc23b105,
-        mid_parse_a972e28e38f8fd3f,
-        mid_setCurrency_4943c1e384d46623,
-        mid_setDecimalFormatSymbols_e702ad65752cd8ec,
-        mid_setDecimalSeparatorAlwaysShown_fcb96c98de6fad04,
-        mid_setGroupingSize_44ed599e93e8a30c,
-        mid_setGroupingUsed_fcb96c98de6fad04,
-        mid_setMaximumFractionDigits_44ed599e93e8a30c,
-        mid_setMaximumIntegerDigits_44ed599e93e8a30c,
-        mid_setMinimumFractionDigits_44ed599e93e8a30c,
-        mid_setMinimumIntegerDigits_44ed599e93e8a30c,
-        mid_setMultiplier_44ed599e93e8a30c,
-        mid_setNegativePrefix_734b91ac30d5f9b4,
-        mid_setNegativeSuffix_734b91ac30d5f9b4,
-        mid_setParseBigDecimal_fcb96c98de6fad04,
-        mid_setPositivePrefix_734b91ac30d5f9b4,
-        mid_setPositiveSuffix_734b91ac30d5f9b4,
-        mid_toLocalizedPattern_1c1fa1e935d6cdcf,
-        mid_toPattern_1c1fa1e935d6cdcf,
+        mid_init$_ff7cb6c242604316,
+        mid_init$_105e1eadb709d9ac,
+        mid_init$_e76ec57dc8f2afd6,
+        mid_applyLocalizedPattern_105e1eadb709d9ac,
+        mid_applyPattern_105e1eadb709d9ac,
+        mid_clone_704a5bee58538972,
+        mid_equals_72faff9b05f5ed5e,
+        mid_format_bd8d8164e076ccaa,
+        mid_format_8a939fb9d04314c2,
+        mid_format_1f446f5fe940e316,
+        mid_formatToCharacterIterator_22f522baf2fb71d1,
+        mid_getCurrency_e857dd6f37c7fee3,
+        mid_getDecimalFormatSymbols_ca13629df12de0a9,
+        mid_getGroupingSize_d6ab429752e7c267,
+        mid_getMaximumFractionDigits_d6ab429752e7c267,
+        mid_getMaximumIntegerDigits_d6ab429752e7c267,
+        mid_getMinimumFractionDigits_d6ab429752e7c267,
+        mid_getMinimumIntegerDigits_d6ab429752e7c267,
+        mid_getMultiplier_d6ab429752e7c267,
+        mid_getNegativePrefix_d2c8eb4129821f0e,
+        mid_getNegativeSuffix_d2c8eb4129821f0e,
+        mid_getPositivePrefix_d2c8eb4129821f0e,
+        mid_getPositiveSuffix_d2c8eb4129821f0e,
+        mid_hashCode_d6ab429752e7c267,
+        mid_isDecimalSeparatorAlwaysShown_eee3de00fe971136,
+        mid_isParseBigDecimal_eee3de00fe971136,
+        mid_parse_5a7ce414e545ae55,
+        mid_setCurrency_db8d865c2c65c553,
+        mid_setDecimalFormatSymbols_89625d521723cb37,
+        mid_setDecimalSeparatorAlwaysShown_b35db77cae58639e,
+        mid_setGroupingSize_8fd427ab23829bf5,
+        mid_setGroupingUsed_b35db77cae58639e,
+        mid_setMaximumFractionDigits_8fd427ab23829bf5,
+        mid_setMaximumIntegerDigits_8fd427ab23829bf5,
+        mid_setMinimumFractionDigits_8fd427ab23829bf5,
+        mid_setMinimumIntegerDigits_8fd427ab23829bf5,
+        mid_setMultiplier_8fd427ab23829bf5,
+        mid_setNegativePrefix_105e1eadb709d9ac,
+        mid_setNegativeSuffix_105e1eadb709d9ac,
+        mid_setParseBigDecimal_b35db77cae58639e,
+        mid_setPositivePrefix_105e1eadb709d9ac,
+        mid_setPositiveSuffix_105e1eadb709d9ac,
+        mid_toLocalizedPattern_d2c8eb4129821f0e,
+        mid_toPattern_d2c8eb4129821f0e,
         max_mid
       };
 

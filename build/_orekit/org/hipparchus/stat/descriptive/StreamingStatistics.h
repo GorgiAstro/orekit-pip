@@ -22,14 +22,14 @@ namespace java {
   namespace io {
     class Serializable;
   }
+  namespace lang {
+    class Class;
+    class String;
+  }
   namespace util {
     namespace function {
       class DoubleConsumer;
     }
-  }
-  namespace lang {
-    class Class;
-    class String;
   }
 }
 template<class T> class JArray;
@@ -42,33 +42,33 @@ namespace org {
         class StreamingStatistics : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_init$_6f61eb577a811a32,
-            mid_accept_8ba9fe7a847cecad,
-            mid_addValue_8ba9fe7a847cecad,
-            mid_aggregate_3cc4cef4f5479457,
-            mid_builder_51916748f28e7e70,
-            mid_clear_a1fa5dae97ea5ed2,
-            mid_copy_32dcaf3e8c6a3a28,
-            mid_equals_460c5e2d9d51c6cc,
-            mid_getGeometricMean_b74f83833fdad017,
-            mid_getMax_b74f83833fdad017,
-            mid_getMean_b74f83833fdad017,
-            mid_getMedian_b74f83833fdad017,
-            mid_getMin_b74f83833fdad017,
-            mid_getN_6c0ce7e438e5ded4,
-            mid_getPercentile_04fd0666b613d2ab,
-            mid_getPopulationVariance_b74f83833fdad017,
-            mid_getQuadraticMean_b74f83833fdad017,
-            mid_getSecondMoment_b74f83833fdad017,
-            mid_getStandardDeviation_b74f83833fdad017,
-            mid_getSum_b74f83833fdad017,
-            mid_getSumOfLogs_b74f83833fdad017,
-            mid_getSumOfSquares_b74f83833fdad017,
-            mid_getSummary_ce50f3086162cae8,
-            mid_getVariance_b74f83833fdad017,
-            mid_hashCode_55546ef6a647f39b,
-            mid_toString_1c1fa1e935d6cdcf,
+            mid_init$_ff7cb6c242604316,
+            mid_init$_b5a4975c915c365a,
+            mid_accept_1ad26e8c8c0cd65b,
+            mid_addValue_1ad26e8c8c0cd65b,
+            mid_aggregate_d741cbfd11938b9c,
+            mid_builder_4d17d1686c1caddb,
+            mid_clear_ff7cb6c242604316,
+            mid_copy_e8391c24b9a78230,
+            mid_equals_72faff9b05f5ed5e,
+            mid_getGeometricMean_9981f74b2d109da6,
+            mid_getMax_9981f74b2d109da6,
+            mid_getMean_9981f74b2d109da6,
+            mid_getMedian_9981f74b2d109da6,
+            mid_getMin_9981f74b2d109da6,
+            mid_getN_42c72b98e3c2e08a,
+            mid_getPercentile_bf28ed64d6e8576b,
+            mid_getPopulationVariance_9981f74b2d109da6,
+            mid_getQuadraticMean_9981f74b2d109da6,
+            mid_getSecondMoment_9981f74b2d109da6,
+            mid_getStandardDeviation_9981f74b2d109da6,
+            mid_getSum_9981f74b2d109da6,
+            mid_getSumOfLogs_9981f74b2d109da6,
+            mid_getSumOfSquares_9981f74b2d109da6,
+            mid_getSummary_ce882cfbdfe8020d,
+            mid_getVariance_9981f74b2d109da6,
+            mid_hashCode_d6ab429752e7c267,
+            mid_toString_d2c8eb4129821f0e,
             max_mid
           };
 

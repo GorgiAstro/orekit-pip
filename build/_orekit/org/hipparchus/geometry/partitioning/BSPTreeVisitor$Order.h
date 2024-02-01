@@ -28,8 +28,8 @@ namespace org {
         class BSPTreeVisitor$Order : public ::java::lang::Enum {
          public:
           enum {
-            mid_valueOf_7454b166b2cebb8c,
-            mid_values_8cb82798402ba620,
+            mid_valueOf_31b3b217d61e5164,
+            mid_values_919ca06965817550,
             max_mid
           };
 

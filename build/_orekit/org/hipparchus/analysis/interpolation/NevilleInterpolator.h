@@ -6,11 +6,11 @@
 namespace org {
   namespace hipparchus {
     namespace analysis {
-      namespace polynomials {
-        class PolynomialFunctionLagrangeForm;
-      }
       namespace interpolation {
         class UnivariateInterpolator;
+      }
+      namespace polynomials {
+        class PolynomialFunctionLagrangeForm;
       }
     }
     namespace exception {
@@ -36,8 +36,8 @@ namespace org {
         class NevilleInterpolator : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_interpolate_239fa6a8b11bdf62,
+            mid_init$_ff7cb6c242604316,
+            mid_interpolate_7784d9983c5d3f27,
             max_mid
           };
 

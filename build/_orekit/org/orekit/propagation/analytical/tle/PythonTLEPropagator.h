@@ -8,15 +8,15 @@ namespace org {
     namespace attitudes {
       class AttitudeProvider;
     }
+    namespace frames {
+      class Frame;
+    }
     namespace propagation {
       namespace analytical {
         namespace tle {
           class TLE;
         }
       }
-    }
-    namespace frames {
-      class Frame;
     }
   }
 }
@@ -37,14 +37,14 @@ namespace org {
           class PythonTLEPropagator : public ::org::orekit::propagation::analytical::tle::TLEPropagator {
            public:
             enum {
-              mid_init$_7a5e69c032c7e921,
-              mid_init$_3b79aaf1b59208bb,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
-              mid_sxpInitialize_a1fa5dae97ea5ed2,
-              mid_sxpPropagate_8ba9fe7a847cecad,
+              mid_init$_40bdc63bf602b2a8,
+              mid_init$_877f7a4f81da784a,
+              mid_finalize_ff7cb6c242604316,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
+              mid_sxpInitialize_ff7cb6c242604316,
+              mid_sxpPropagate_1ad26e8c8c0cd65b,
               max_mid
             };
 

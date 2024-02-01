@@ -6,10 +6,10 @@
 namespace org {
   namespace hipparchus {
     namespace ode {
+      class ODEState;
       namespace events {
         class Action;
       }
-      class ODEState;
     }
   }
 }
@@ -28,10 +28,10 @@ namespace org {
         class EventOccurrence : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_d9f392e1370649a7,
-            mid_getAction_0afc8c14772bbac8,
-            mid_getNewState_43e9575787db93d2,
-            mid_getStopTime_b74f83833fdad017,
+            mid_init$_c3874a706f1894a3,
+            mid_getAction_e01ac4830bcfb38f,
+            mid_getNewState_1af6e9f0600af276,
+            mid_getStopTime_9981f74b2d109da6,
             max_mid
           };
 

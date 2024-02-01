@@ -7,11 +7,11 @@ namespace org {
   namespace hipparchus {
     namespace stat {
       namespace descriptive {
-        class WeightedEvaluation;
         class AggregatableStatistic;
         namespace summary {
           class Product;
         }
+        class WeightedEvaluation;
       }
     }
     namespace exception {
@@ -38,15 +38,15 @@ namespace org {
           class Product : public ::org::hipparchus::stat::descriptive::AbstractStorelessUnivariateStatistic {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_aggregate_3a18f2033845eaa9,
-              mid_clear_a1fa5dae97ea5ed2,
-              mid_copy_3380530ccfff2f18,
-              mid_evaluate_1567a80062adb31b,
-              mid_evaluate_0f0d79795aa485ac,
-              mid_getN_6c0ce7e438e5ded4,
-              mid_getResult_b74f83833fdad017,
-              mid_increment_8ba9fe7a847cecad,
+              mid_init$_ff7cb6c242604316,
+              mid_aggregate_5c140d935a8b95b8,
+              mid_clear_ff7cb6c242604316,
+              mid_copy_a41f80898a65a28d,
+              mid_evaluate_620ea098e5f0da00,
+              mid_evaluate_0b039b932db219bf,
+              mid_getN_42c72b98e3c2e08a,
+              mid_getResult_9981f74b2d109da6,
+              mid_increment_1ad26e8c8c0cd65b,
               max_mid
             };
 

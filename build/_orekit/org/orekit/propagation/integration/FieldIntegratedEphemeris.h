@@ -14,22 +14,22 @@ namespace java {
 }
 namespace org {
   namespace orekit {
-    namespace time {
-      class FieldAbsoluteDate;
-    }
     namespace propagation {
-      class PropagationType;
+      class FieldAdditionalStateProvider;
       namespace integration {
         class FieldStateMapper;
       }
-      class FieldAdditionalStateProvider;
-      class FieldSpacecraftState;
       class FieldBoundedPropagator;
+      class PropagationType;
+      class FieldSpacecraftState;
+    }
+    namespace time {
+      class FieldAbsoluteDate;
     }
     namespace utils {
       class FieldArrayDictionary;
-      class ParameterDriver;
       class TimeStampedFieldPVCoordinates;
+      class ParameterDriver;
     }
     namespace frames {
       class Frame;
@@ -52,19 +52,19 @@ namespace org {
         class FieldIntegratedEphemeris : public ::org::orekit::propagation::analytical::FieldAbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_5a0fc6c09d7cf9a1,
-            mid_getFrame_2c51111cc6894ba1,
-            mid_getInitialState_fba6d56f8dbc98d0,
-            mid_getMaxDate_fa23a4301b9c83e7,
-            mid_getMinDate_fa23a4301b9c83e7,
-            mid_getPVCoordinates_294c5c99690f2356,
-            mid_getParametersDrivers_e62d3bb06d56d7e3,
-            mid_resetInitialState_54d9efbf99822980,
-            mid_getMass_140b8964300ddedf,
-            mid_updateAdditionalStates_370b1acde6244b7e,
-            mid_basicPropagate_70fecd201ca47d3b,
-            mid_resetIntermediateState_871885b409df9d57,
-            mid_propagateOrbit_f34a7a94e111b112,
+            mid_init$_07450e81a75653f5,
+            mid_getFrame_cb151471db4570f0,
+            mid_getInitialState_a74be2e38786f3b6,
+            mid_getMaxDate_1fea28374011eef5,
+            mid_getMinDate_1fea28374011eef5,
+            mid_getPVCoordinates_1b1a4229447f7bf7,
+            mid_getParametersDrivers_d751c1a57012b438,
+            mid_resetInitialState_8062511934471166,
+            mid_getMass_cf010978f3c5a913,
+            mid_updateAdditionalStates_59bc90ab93a43079,
+            mid_propagateOrbit_78985b34baac5c8e,
+            mid_basicPropagate_fb689a9c0f30b938,
+            mid_resetIntermediateState_e90aea08a7a0ab5e,
             max_mid
           };
 

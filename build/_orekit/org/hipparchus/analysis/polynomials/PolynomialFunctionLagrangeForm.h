@@ -5,11 +5,11 @@
 
 namespace org {
   namespace hipparchus {
-    namespace analysis {
-      class UnivariateFunction;
-    }
     namespace exception {
       class MathIllegalArgumentException;
+    }
+    namespace analysis {
+      class UnivariateFunction;
     }
   }
 }
@@ -28,15 +28,15 @@ namespace org {
         class PolynomialFunctionLagrangeForm : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_b15baa0161a4e9c7,
-            mid_degree_55546ef6a647f39b,
-            mid_evaluate_5427cadc72cd59f7,
-            mid_getCoefficients_25e1757a36c4dde2,
-            mid_getInterpolatingPoints_25e1757a36c4dde2,
-            mid_getInterpolatingValues_25e1757a36c4dde2,
-            mid_value_04fd0666b613d2ab,
-            mid_verifyInterpolationArray_393011d94d739a17,
-            mid_computeCoefficients_a1fa5dae97ea5ed2,
+            mid_init$_64100e41ba74de8f,
+            mid_degree_d6ab429752e7c267,
+            mid_evaluate_65d620e9532c2371,
+            mid_getCoefficients_be783177b060994b,
+            mid_getInterpolatingPoints_be783177b060994b,
+            mid_getInterpolatingValues_be783177b060994b,
+            mid_value_bf28ed64d6e8576b,
+            mid_verifyInterpolationArray_a57658a844146040,
+            mid_computeCoefficients_ff7cb6c242604316,
             max_mid
           };
 

@@ -10,16 +10,16 @@ namespace org {
       class StateCovariance;
     }
     namespace orbits {
-      class Orbit;
       class FieldOrbit;
+      class Orbit;
     }
   }
   namespace hipparchus {
-    class Field;
     namespace linear {
-      class RealMatrix;
       class FieldMatrix;
+      class RealMatrix;
     }
+    class Field;
   }
 }
 namespace java {
@@ -36,9 +36,9 @@ namespace org {
       class Fieldifier : public ::java::lang::Object {
        public:
         enum {
-          mid_fieldify_9b0122682636b413,
-          mid_fieldify_1115a57aafd01f21,
-          mid_fieldify_e3682f5ba20b6fed,
+          mid_fieldify_4e961aad065174c6,
+          mid_fieldify_47ca2dd868ceb718,
+          mid_fieldify_6e7e6d87786f19a2,
           max_mid
         };
 

@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeStamped;
-      class AbsoluteDate;
-      class TimeShiftable;
-    }
     namespace utils {
       class AngularCoordinates;
       class TimeStampedAngularCoordinates;
+    }
+    namespace time {
+      class TimeStamped;
+      class TimeShiftable;
+      class AbsoluteDate;
     }
     namespace frames {
       class Frame;
@@ -25,8 +25,8 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class Rotation;
+          class Vector3D;
         }
       }
     }
@@ -49,17 +49,17 @@ namespace org {
       class Attitude : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_9cc28a23ed35929f,
-          mid_init$_2c8188d8ce9c0bed,
-          mid_init$_0dc338dda588c0d5,
-          mid_getDate_c325492395d89b24,
-          mid_getOrientation_9825c51fb1940671,
-          mid_getReferenceFrame_2c51111cc6894ba1,
-          mid_getRotation_ff298a39b3cae5da,
-          mid_getRotationAcceleration_8b724f8b4fdad1a2,
-          mid_getSpin_8b724f8b4fdad1a2,
-          mid_shiftedBy_4d06035acf6ca0aa,
-          mid_withReferenceFrame_682a0bac5d9d92db,
+          mid_init$_3afccda4601b8f6c,
+          mid_init$_015c89765fe30b90,
+          mid_init$_aa1099d6021eb7ff,
+          mid_getDate_80e11148db499dda,
+          mid_getOrientation_f61c26acc5bceebd,
+          mid_getReferenceFrame_cb151471db4570f0,
+          mid_getRotation_4d68cff5f6e4403a,
+          mid_getRotationAcceleration_032312bdeb3f2f93,
+          mid_getSpin_032312bdeb3f2f93,
+          mid_shiftedBy_c569d6a6dc30b75c,
+          mid_withReferenceFrame_bfb6cce037814112,
           max_mid
         };
 

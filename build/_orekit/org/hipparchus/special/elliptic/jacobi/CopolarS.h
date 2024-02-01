@@ -19,9 +19,9 @@ namespace org {
           class CopolarS : public ::java::lang::Object {
            public:
             enum {
-              mid_cs_b74f83833fdad017,
-              mid_ds_b74f83833fdad017,
-              mid_ns_b74f83833fdad017,
+              mid_cs_9981f74b2d109da6,
+              mid_ds_9981f74b2d109da6,
+              mid_ns_9981f74b2d109da6,
               max_mid
             };
 

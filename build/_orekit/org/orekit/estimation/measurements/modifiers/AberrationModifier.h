@@ -5,14 +5,20 @@
 
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataContext;
+    }
     namespace estimation {
       namespace measurements {
-        class AngularRaDec;
-        class EstimationModifier;
         class EstimatedMeasurementBase;
-        class EstimatedMeasurement;
+        class AngularRaDec;
         class GroundStation;
+        class EstimationModifier;
+        class EstimatedMeasurement;
       }
+    }
+    namespace time {
+      class AbsoluteDate;
     }
     namespace frames {
       class FieldTransform;
@@ -20,9 +26,6 @@ namespace org {
     }
     namespace utils {
       class ParameterDriver;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -52,14 +55,19 @@ namespace org {
           class AberrationModifier : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_fieldNaturalToProper_3d83526a19e21371,
-              mid_fieldProperToNatural_3d83526a19e21371,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_modify_f784f7724d44a90a,
-              mid_modifyWithoutDerivatives_308087fabc1d7f66,
-              mid_naturalToProper_901c3791391f487f,
-              mid_properToNatural_901c3791391f487f,
+              mid_init$_ff7cb6c242604316,
+              mid_init$_e28302a82adb77ed,
+              mid_fieldNaturalToProper_db60b87585b707cf,
+              mid_fieldNaturalToProper_243bb54e25d47339,
+              mid_fieldProperToNatural_db60b87585b707cf,
+              mid_fieldProperToNatural_243bb54e25d47339,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_modify_0f0ae9411e47b72e,
+              mid_modifyWithoutDerivatives_ecce216dce506020,
+              mid_naturalToProper_817775721aeb0d8f,
+              mid_naturalToProper_0c85e773c8161eac,
+              mid_properToNatural_817775721aeb0d8f,
+              mid_properToNatural_0c85e773c8161eac,
               max_mid
             };
 
@@ -75,14 +83,19 @@ namespace org {
             AberrationModifier(const AberrationModifier& obj) : ::java::lang::Object(obj) {}
 
             AberrationModifier();
+            AberrationModifier(const ::org::orekit::data::DataContext &);
 
             static JArray< ::org::hipparchus::analysis::differentiation::Gradient > fieldNaturalToProper(const JArray< ::org::hipparchus::analysis::differentiation::Gradient > &, const ::org::orekit::frames::FieldTransform &, const ::org::orekit::frames::Frame &);
+            static JArray< ::org::hipparchus::analysis::differentiation::Gradient > fieldNaturalToProper(const JArray< ::org::hipparchus::analysis::differentiation::Gradient > &, const ::org::orekit::frames::FieldTransform &, const ::org::orekit::frames::Frame &, const ::org::orekit::data::DataContext &);
             static JArray< ::org::hipparchus::analysis::differentiation::Gradient > fieldProperToNatural(const JArray< ::org::hipparchus::analysis::differentiation::Gradient > &, const ::org::orekit::frames::FieldTransform &, const ::org::orekit::frames::Frame &);
+            static JArray< ::org::hipparchus::analysis::differentiation::Gradient > fieldProperToNatural(const JArray< ::org::hipparchus::analysis::differentiation::Gradient > &, const ::org::orekit::frames::FieldTransform &, const ::org::orekit::frames::Frame &, const ::org::orekit::data::DataContext &);
             ::java::util::List getParametersDrivers() const;
             void modify(const ::org::orekit::estimation::measurements::EstimatedMeasurement &) const;
             void modifyWithoutDerivatives(const ::org::orekit::estimation::measurements::EstimatedMeasurementBase &) const;
             static JArray< jdouble > naturalToProper(const JArray< jdouble > &, const ::org::orekit::estimation::measurements::GroundStation &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &);
+            static JArray< jdouble > naturalToProper(const JArray< jdouble > &, const ::org::orekit::estimation::measurements::GroundStation &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &, const ::org::orekit::data::DataContext &);
             static JArray< jdouble > properToNatural(const JArray< jdouble > &, const ::org::orekit::estimation::measurements::GroundStation &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &);
+            static JArray< jdouble > properToNatural(const JArray< jdouble > &, const ::org::orekit::estimation::measurements::GroundStation &, const ::org::orekit::time::AbsoluteDate &, const ::org::orekit::frames::Frame &, const ::org::orekit::data::DataContext &);
           };
         }
       }

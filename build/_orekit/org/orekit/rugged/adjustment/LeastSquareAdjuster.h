@@ -39,9 +39,9 @@ namespace org {
         class LeastSquareAdjuster : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_init$_c5aa51c2423b63eb,
-            mid_optimize_b4aa3e5bf3a16dc8,
+            mid_init$_ff7cb6c242604316,
+            mid_init$_3baa1ef9d5c66967,
+            mid_optimize_45e9e6e9254f21c4,
             max_mid
           };
 

@@ -29,12 +29,12 @@ namespace org {
         class SubHyperplane : public ::java::lang::Object {
          public:
           enum {
-            mid_copySelf_0417f9f9ce6ee466,
-            mid_getHyperplane_40a20a6ecfa9e745,
-            mid_getSize_b74f83833fdad017,
-            mid_isEmpty_9ab94ac1dc23b105,
-            mid_reunite_263a5980faef7dc3,
-            mid_split_30674c36ae2fcf9f,
+            mid_copySelf_24c5633e830ec593,
+            mid_getHyperplane_e081ba7b06e71434,
+            mid_getSize_9981f74b2d109da6,
+            mid_isEmpty_eee3de00fe971136,
+            mid_reunite_f2a90cc714d34154,
+            mid_split_b587049e19682418,
             max_mid
           };
 

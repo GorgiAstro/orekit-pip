@@ -3,6 +3,14 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+  }
+}
 namespace org {
   namespace hipparchus {
     namespace geometry {
@@ -10,14 +18,6 @@ namespace org {
         class EnclosingBall;
       }
     }
-  }
-}
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
   }
 }
 template<class T> class JArray;
@@ -30,7 +30,7 @@ namespace org {
         class SupportBallGenerator : public ::java::lang::Object {
          public:
           enum {
-            mid_ballOnSupport_1093dd6e31c1164f,
+            mid_ballOnSupport_6deb4972134b40de,
             max_mid
           };
 

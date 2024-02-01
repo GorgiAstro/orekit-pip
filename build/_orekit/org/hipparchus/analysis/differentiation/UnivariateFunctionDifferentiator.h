@@ -6,10 +6,10 @@
 namespace org {
   namespace hipparchus {
     namespace analysis {
+      class UnivariateFunction;
       namespace differentiation {
         class UnivariateDifferentiableFunction;
       }
-      class UnivariateFunction;
     }
   }
 }
@@ -28,7 +28,7 @@ namespace org {
         class UnivariateFunctionDifferentiator : public ::java::lang::Object {
          public:
           enum {
-            mid_differentiate_220981d5dd65e2eb,
+            mid_differentiate_734852731d7ffcb1,
             max_mid
           };
 

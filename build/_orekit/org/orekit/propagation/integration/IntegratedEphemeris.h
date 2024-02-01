@@ -17,15 +17,15 @@ namespace org {
     namespace attitudes {
       class AttitudeProvider;
     }
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace utils {
-      class TimeStampedPVCoordinates;
       class DoubleArrayDictionary;
+      class TimeStampedPVCoordinates;
     }
     namespace frames {
       class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
   namespace hipparchus {
@@ -53,19 +53,19 @@ namespace org {
         class IntegratedEphemeris : public ::org::orekit::propagation::analytical::AbstractAnalyticalPropagator {
          public:
           enum {
-            mid_init$_7645711d5bf14241,
-            mid_getFrame_2c51111cc6894ba1,
-            mid_getInitialState_9d155cc8314c99cf,
-            mid_getMaxDate_c325492395d89b24,
-            mid_getMinDate_c325492395d89b24,
-            mid_getPVCoordinates_e5d15ef236cd9ffe,
-            mid_resetInitialState_280c3390961e0a50,
-            mid_setAttitudeProvider_8e4d3ea100bc0095,
-            mid_getMass_fd347811007a6ba3,
-            mid_updateAdditionalStates_c3c52b1257139045,
-            mid_basicPropagate_4f0008999861ca31,
-            mid_resetIntermediateState_1c47c97cdbc7e206,
-            mid_propagateOrbit_5df6dcb5c4123339,
+            mid_init$_81c57bba41e79152,
+            mid_getFrame_cb151471db4570f0,
+            mid_getInitialState_8fbfa58855031235,
+            mid_getMaxDate_80e11148db499dda,
+            mid_getMinDate_80e11148db499dda,
+            mid_getPVCoordinates_6236a35378ed47a5,
+            mid_resetInitialState_72b846eb87f3af9a,
+            mid_setAttitudeProvider_fddd0a7d9f33bafa,
+            mid_getMass_209f08246d708042,
+            mid_updateAdditionalStates_ed3fe207e6fde26f,
+            mid_propagateOrbit_776cca2e85dfe61d,
+            mid_basicPropagate_1e982279849c3b65,
+            mid_resetIntermediateState_b69b5541e48d21c0,
             max_mid
           };
 

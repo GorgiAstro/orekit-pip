@@ -6,21 +6,21 @@
 namespace java {
   namespace util {
     class Iterator;
-    class NavigableSet;
     class ListIterator;
     class Set;
     class ArrayList;
+    class NavigableSet;
     class Map;
     class SortedMap;
     class Deque;
     class Queue;
     class Comparator;
     class NavigableMap;
+    class SortedSet;
     class List;
     class Collection;
-    class Enumeration;
     class Random;
-    class SortedSet;
+    class Enumeration;
   }
   namespace lang {
     class Class;
@@ -36,72 +36,72 @@ namespace java {
     class Collections : public ::java::lang::Object {
      public:
       enum {
-        mid_addAll_a00c98d8217baf6d,
-        mid_asLifoQueue_9f73f2d28b5d6b70,
-        mid_binarySearch_7cbd1ddfa4438102,
-        mid_binarySearch_b88a52639c6e55a7,
-        mid_checkedCollection_7a74f599673b5e5b,
-        mid_checkedList_0a4333ca7f44e222,
-        mid_checkedMap_45876c77b8b61f21,
-        mid_checkedNavigableMap_a6b7432b3e115a6e,
-        mid_checkedNavigableSet_42bf6d85aa6acb2b,
-        mid_checkedQueue_761439f2de0a40d9,
-        mid_checkedSet_bc3ebe89eb9c5695,
-        mid_checkedSortedMap_42af903c48fb5f24,
-        mid_checkedSortedSet_39eef03772a2d24c,
-        mid_copy_29c3e061cbeaa98b,
-        mid_disjoint_f95ed0d112bf7475,
-        mid_emptyEnumeration_57aeac8743844cd2,
-        mid_emptyIterator_fc7780bc5d5b73b0,
-        mid_emptyList_e62d3bb06d56d7e3,
-        mid_emptyListIterator_d6d68fe3f5974930,
-        mid_emptyMap_810bed48fafb0b9a,
-        mid_emptyNavigableMap_8dd7b68149ce41ea,
-        mid_emptyNavigableSet_ea2f3a2f5483365c,
-        mid_emptySet_7e8f11dd23d1142c,
-        mid_emptySortedMap_8b7b83029e197aec,
-        mid_emptySortedSet_7961e54fd3a47d94,
-        mid_enumeration_f9ddb40f1905ce57,
-        mid_fill_86290401b1892989,
-        mid_frequency_254ef0cfa4cf35cc,
-        mid_indexOfSubList_6fc0c7562beacd8b,
-        mid_lastIndexOfSubList_6fc0c7562beacd8b,
-        mid_list_a7cb9df2eba93e37,
-        mid_max_878a15ed6ec12a43,
-        mid_max_911e494f16ce93be,
-        mid_min_878a15ed6ec12a43,
-        mid_min_911e494f16ce93be,
-        mid_nCopies_71a580e6260f357e,
-        mid_newSetFromMap_32344ba4e91ff7ed,
-        mid_replaceAll_4db7d8e46f6ab12a,
-        mid_reverse_0e7c3032c7c93ed3,
-        mid_reverseOrder_127b1bec8b0c3ae1,
-        mid_reverseOrder_09cb371d3e63c195,
-        mid_rotate_33800eba82168d94,
-        mid_shuffle_0e7c3032c7c93ed3,
-        mid_shuffle_b2644b8c08dd7f76,
-        mid_singleton_4cf7e79da59e06aa,
-        mid_singletonList_fc892452fc84d714,
-        mid_singletonMap_dc0b43c0c4f53fdb,
-        mid_sort_0e7c3032c7c93ed3,
-        mid_sort_dcc1592c40bba7c7,
-        mid_swap_fe3805aaf1ddc2d7,
-        mid_synchronizedCollection_394fcc3577736ad2,
-        mid_synchronizedList_d1fc3c05f458e1a3,
-        mid_synchronizedMap_1219d2729927aa1d,
-        mid_synchronizedNavigableMap_c9765687fb3f7b89,
-        mid_synchronizedNavigableSet_f4bd145e522e4927,
-        mid_synchronizedSet_ff856b24bc408e63,
-        mid_synchronizedSortedMap_fe0c1860900c418e,
-        mid_synchronizedSortedSet_9b7819f10cf58e34,
-        mid_unmodifiableCollection_394fcc3577736ad2,
-        mid_unmodifiableList_d1fc3c05f458e1a3,
-        mid_unmodifiableMap_1219d2729927aa1d,
-        mid_unmodifiableNavigableMap_c9765687fb3f7b89,
-        mid_unmodifiableNavigableSet_f4bd145e522e4927,
-        mid_unmodifiableSet_ff856b24bc408e63,
-        mid_unmodifiableSortedMap_fe0c1860900c418e,
-        mid_unmodifiableSortedSet_9b7819f10cf58e34,
+        mid_addAll_399f3f3a9110259a,
+        mid_asLifoQueue_a72112e8416981e2,
+        mid_binarySearch_3ae2f81ebe76a5f8,
+        mid_binarySearch_7d264bc14938cc7a,
+        mid_checkedCollection_c4154f9faa06baf0,
+        mid_checkedList_b7cd7f823eba48e8,
+        mid_checkedMap_21e267a28dbbf561,
+        mid_checkedNavigableMap_d56a1eb052efc678,
+        mid_checkedNavigableSet_5d758ca38a44f667,
+        mid_checkedQueue_7715709c65feb490,
+        mid_checkedSet_9836c546c52be1f0,
+        mid_checkedSortedMap_811ef709a1e68ae7,
+        mid_checkedSortedSet_f4ea00e721d9b00b,
+        mid_copy_a7e27987d82c9ab2,
+        mid_disjoint_6c2df74e01149722,
+        mid_emptyEnumeration_21566f230cac5c4a,
+        mid_emptyIterator_4f613ccd2f803b4b,
+        mid_emptyList_d751c1a57012b438,
+        mid_emptyListIterator_7bb80a6d83d87d72,
+        mid_emptyMap_dbcb8bbac6b35e0d,
+        mid_emptyNavigableMap_93ffcad6c2bfa505,
+        mid_emptyNavigableSet_915193d823a938b2,
+        mid_emptySet_6b191a9b12c1004b,
+        mid_emptySortedMap_329ce98de7adb29e,
+        mid_emptySortedSet_815c7115fae241c1,
+        mid_enumeration_c56d5c65b1ea0602,
+        mid_fill_22b91be4bc7b6a0b,
+        mid_frequency_341dc2d39eeb04d4,
+        mid_indexOfSubList_a106cf709741c619,
+        mid_lastIndexOfSubList_a106cf709741c619,
+        mid_list_385576d86d02e1ea,
+        mid_max_c34cfb85a6292bba,
+        mid_max_63479742b6e84884,
+        mid_min_c34cfb85a6292bba,
+        mid_min_63479742b6e84884,
+        mid_nCopies_123b467128195f8a,
+        mid_newSetFromMap_89fe72a6310d0d4c,
+        mid_replaceAll_bfe21376ce92f87b,
+        mid_reverse_aa335fea495d60e0,
+        mid_reverseOrder_44d5f0105a5559b7,
+        mid_reverseOrder_855f0cb3fda1e69f,
+        mid_rotate_26a46e5a5c0ee345,
+        mid_shuffle_aa335fea495d60e0,
+        mid_shuffle_d847501f0c28f181,
+        mid_singleton_dd7b1a28b924e386,
+        mid_singletonList_b82a310c35799ced,
+        mid_singletonMap_77f04c24e79d294d,
+        mid_sort_aa335fea495d60e0,
+        mid_sort_04cb538d1d0e79fb,
+        mid_swap_211b68baa6e80058,
+        mid_synchronizedCollection_ca6e223ef3eef34f,
+        mid_synchronizedList_a27502c31bd75a45,
+        mid_synchronizedMap_f2600be6f3b6923e,
+        mid_synchronizedNavigableMap_e89404ea35b31159,
+        mid_synchronizedNavigableSet_acbf53b6d3caa164,
+        mid_synchronizedSet_63f413923fe84378,
+        mid_synchronizedSortedMap_3288916427f76e27,
+        mid_synchronizedSortedSet_f4e5e60d3fd515d6,
+        mid_unmodifiableCollection_ca6e223ef3eef34f,
+        mid_unmodifiableList_a27502c31bd75a45,
+        mid_unmodifiableMap_f2600be6f3b6923e,
+        mid_unmodifiableNavigableMap_e89404ea35b31159,
+        mid_unmodifiableNavigableSet_acbf53b6d3caa164,
+        mid_unmodifiableSet_63f413923fe84378,
+        mid_unmodifiableSortedMap_3288916427f76e27,
+        mid_unmodifiableSortedSet_f4e5e60d3fd515d6,
         max_mid
       };
 

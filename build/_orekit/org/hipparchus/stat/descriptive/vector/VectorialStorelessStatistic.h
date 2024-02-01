@@ -32,14 +32,14 @@ namespace org {
           class VectorialStorelessStatistic : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_f5608c45922443b4,
-              mid_clear_a1fa5dae97ea5ed2,
-              mid_equals_460c5e2d9d51c6cc,
-              mid_getDimension_55546ef6a647f39b,
-              mid_getN_6c0ce7e438e5ded4,
-              mid_getResult_25e1757a36c4dde2,
-              mid_hashCode_55546ef6a647f39b,
-              mid_increment_ab69da052b88f50c,
+              mid_init$_510336e14635cde1,
+              mid_clear_ff7cb6c242604316,
+              mid_equals_72faff9b05f5ed5e,
+              mid_getDimension_d6ab429752e7c267,
+              mid_getN_42c72b98e3c2e08a,
+              mid_getResult_be783177b060994b,
+              mid_hashCode_d6ab429752e7c267,
+              mid_increment_a71c45509eaf92d1,
               max_mid
             };
 

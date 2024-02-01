@@ -16,8 +16,8 @@ namespace org {
         namespace ndm {
           namespace adm {
             namespace acm {
-              class AttitudePhysicalProperties;
               class AttitudePhysicalPropertiesKey;
+              class AttitudePhysicalProperties;
             }
           }
         }
@@ -44,9 +44,9 @@ namespace org {
               class AttitudePhysicalPropertiesKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_4e16a4054ae03944,
-                  mid_valueOf_f38b14ffdef5cb46,
-                  mid_values_1cca4be7de8a1754,
+                  mid_process_86908b8c89fe54c2,
+                  mid_valueOf_226e59004d2697c3,
+                  mid_values_46423dbb6f61d53a,
                   max_mid
                 };
 

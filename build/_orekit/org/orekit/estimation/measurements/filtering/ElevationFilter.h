@@ -7,11 +7,11 @@ namespace org {
   namespace orekit {
     namespace estimation {
       namespace measurements {
-        class ObservedMeasurement;
         class GroundStation;
         namespace filtering {
           class MeasurementFilter;
         }
+        class ObservedMeasurement;
       }
     }
     namespace propagation {
@@ -35,8 +35,8 @@ namespace org {
           class ElevationFilter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_32ec6e08b820ba55,
-              mid_filter_5714f5cbb8239657,
+              mid_init$_04dd8bdfee16a269,
+              mid_filter_2b2e233a7bb98272,
               max_mid
             };
 

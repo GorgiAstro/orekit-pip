@@ -31,12 +31,12 @@ namespace org {
         class LatitudeCrossingDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_d11e39be76d848c0,
-            mid_init$_2b115367b64f9286,
-            mid_g_a17ea857ce74d258,
-            mid_getBody_dd5c4288aa5a3dd8,
-            mid_getLatitude_b74f83833fdad017,
-            mid_create_fbbfc48b3792c004,
+            mid_init$_4a8b2a0e42b8245c,
+            mid_init$_50506f2259cf207f,
+            mid_g_b443ba1cc794b916,
+            mid_getBody_dc8275c31111ad9c,
+            mid_getLatitude_9981f74b2d109da6,
+            mid_create_b5bed3b1eb7b893f,
             max_mid
           };
 

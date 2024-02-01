@@ -3,17 +3,17 @@
 
 #include "java/lang/Object.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
       class TimeScale;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -27,9 +27,9 @@ namespace org {
           class CR3BPConstants : public ::java::lang::Object {
            public:
             enum {
-              mid_getEarthMoonBarycenterSemiMajorAxis_dffb854ad9e23e35,
-              mid_getJupiterSemiMajorAxis_dffb854ad9e23e35,
-              mid_getMoonSemiMajorAxis_b74f83833fdad017,
+              mid_getEarthMoonBarycenterSemiMajorAxis_5168f1ade9606d8a,
+              mid_getJupiterSemiMajorAxis_5168f1ade9606d8a,
+              mid_getMoonSemiMajorAxis_9981f74b2d109da6,
               max_mid
             };
 

@@ -8,11 +8,11 @@ namespace org {
     namespace orbits {
       class RichardsonExpansion;
     }
-    namespace bodies {
-      class CR3BPSystem;
-    }
     namespace utils {
       class PVCoordinates;
+    }
+    namespace bodies {
+      class CR3BPSystem;
     }
   }
 }
@@ -30,9 +30,9 @@ namespace org {
       class LyapunovOrbit : public ::org::orekit::orbits::LibrationOrbit {
        public:
         enum {
-          mid_init$_9881ba0e7257cda5,
-          mid_init$_61210a58b1c5967a,
-          mid_applyCorrectionOnPV_57264af3b06f967f,
+          mid_init$_82a9a5ef43dffc29,
+          mid_init$_2ace0c1a76c4c810,
+          mid_applyCorrectionOnPV_6705c201ee6823b5,
           max_mid
         };
 

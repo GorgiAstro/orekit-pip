@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
-    namespace utils {
-      class ExtendedPVCoordinatesProvider;
+    namespace time {
+      class AbsoluteDate;
     }
     namespace frames {
       class Frame;
     }
-    namespace time {
-      class AbsoluteDate;
+    namespace utils {
+      class ExtendedPVCoordinatesProvider;
     }
   }
 }
@@ -31,10 +31,10 @@ namespace org {
         class GPSBlockIIA : public ::org::orekit::gnss::attitude::AbstractGNSSAttitudeProvider {
          public:
           enum {
-            mid_init$_6b8ff91f4322d951,
-            mid_getDefaultYawRate_2afcbc21f4e57ab2,
-            mid_correctedYaw_0e415c4bbe3bedab,
-            mid_correctedYaw_4231606446b6d08a,
+            mid_init$_6747e305f69aea0f,
+            mid_getDefaultYawRate_ce4c02d583456bc9,
+            mid_correctedYaw_7e83c4f910737b79,
+            mid_correctedYaw_3bb932fc0c863341,
             max_mid
           };
 

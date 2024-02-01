@@ -8,16 +8,16 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
           class FieldLine;
+          class Vector3D;
         }
       }
     }
-    class CalculusFieldElement;
     namespace exception {
       class MathIllegalArgumentException;
     }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -36,24 +36,24 @@ namespace org {
           class FieldLine : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_fc292051dd180810,
-              mid_closestPoint_530a74c0248a60b8,
-              mid_contains_f7871dc9552d25d0,
-              mid_contains_82d995e738c9e027,
-              mid_distance_69aa7759254493eb,
-              mid_distance_f475fa22e4944acc,
-              mid_distance_40bcacaf1f5c8f3e,
-              mid_getAbscissa_f475fa22e4944acc,
-              mid_getAbscissa_40bcacaf1f5c8f3e,
-              mid_getDirection_ff5ac73a7b43eddd,
-              mid_getOrigin_ff5ac73a7b43eddd,
-              mid_getTolerance_b74f83833fdad017,
-              mid_intersection_530a74c0248a60b8,
-              mid_isSimilarTo_03c53b554cf7b8cc,
-              mid_pointAt_c6e22cf5a7df5c99,
-              mid_pointAt_0e25f993119a02fa,
-              mid_reset_e67380c15d7bb85a,
-              mid_revert_8b601b81eef3c976,
+              mid_init$_61231ec3563f33c2,
+              mid_closestPoint_982f3c7e14164ce8,
+              mid_contains_f6d8940437db3446,
+              mid_contains_decdc24b3aebe77a,
+              mid_distance_638d706d80819744,
+              mid_distance_aa19eca086a185fe,
+              mid_distance_1cfc77d18e0355ee,
+              mid_getAbscissa_aa19eca086a185fe,
+              mid_getAbscissa_1cfc77d18e0355ee,
+              mid_getDirection_d1b42a6748e907f9,
+              mid_getOrigin_d1b42a6748e907f9,
+              mid_getTolerance_9981f74b2d109da6,
+              mid_intersection_982f3c7e14164ce8,
+              mid_isSimilarTo_35c55ea9632578f1,
+              mid_pointAt_9fc2ffdb71a4cfdb,
+              mid_pointAt_c2b058e1eb7a8988,
+              mid_reset_45d220651e48f081,
+              mid_revert_d5b9b48b2c4cd04f,
               max_mid
             };
 

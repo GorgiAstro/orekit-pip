@@ -16,18 +16,18 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+    }
     namespace utils {
-      class TimeStampedPVCoordinates;
-      class TimeStampedAngularCoordinates;
-      class AngularDerivativesFilter;
       class CartesianDerivativesFilter;
+      class TimeStampedPVCoordinates;
+      class AngularDerivativesFilter;
+      class TimeStampedAngularCoordinates;
     }
     namespace frames {
       class Transform;
       class Frame;
-    }
-    namespace time {
-      class AbsoluteDate;
     }
   }
 }
@@ -41,18 +41,18 @@ namespace org {
         class SpacecraftToObservedBody : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_0f674d7dd1f18c6f,
-            mid_init$_a57c926a167fd3b3,
-            mid_getBodyFrame_2c51111cc6894ba1,
-            mid_getBodyToInertial_976d4bc81671ce42,
-            mid_getInertialFrame_2c51111cc6894ba1,
-            mid_getInertialToBody_976d4bc81671ce42,
-            mid_getMaxDate_c325492395d89b24,
-            mid_getMinDate_c325492395d89b24,
-            mid_getOvershootTolerance_b74f83833fdad017,
-            mid_getScToInertial_976d4bc81671ce42,
-            mid_getTStep_b74f83833fdad017,
-            mid_isInRange_a35647bda2901f54,
+            mid_init$_8c483649802d4fb5,
+            mid_init$_95fe784c2996af0d,
+            mid_getBodyFrame_cb151471db4570f0,
+            mid_getBodyToInertial_02ca17ac51b6a4b2,
+            mid_getInertialFrame_cb151471db4570f0,
+            mid_getInertialToBody_02ca17ac51b6a4b2,
+            mid_getMaxDate_80e11148db499dda,
+            mid_getMinDate_80e11148db499dda,
+            mid_getOvershootTolerance_9981f74b2d109da6,
+            mid_getScToInertial_02ca17ac51b6a4b2,
+            mid_getTStep_9981f74b2d109da6,
+            mid_isInRange_b16e79ba1b2830a1,
             max_mid
           };
 

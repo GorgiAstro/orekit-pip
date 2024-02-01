@@ -21,17 +21,17 @@ namespace org {
       class ZipJarCrawler$Archive$EntryStream : public ::java::io::InputStream {
        public:
         enum {
-          mid_available_55546ef6a647f39b,
-          mid_close_a1fa5dae97ea5ed2,
-          mid_getName_1c1fa1e935d6cdcf,
-          mid_isDirectory_9ab94ac1dc23b105,
-          mid_mark_44ed599e93e8a30c,
-          mid_markSupported_9ab94ac1dc23b105,
-          mid_read_55546ef6a647f39b,
-          mid_read_53324f422c2c7f64,
-          mid_read_296dd75c373e2c1d,
-          mid_reset_a1fa5dae97ea5ed2,
-          mid_skip_9db63109f74a74fc,
+          mid_available_d6ab429752e7c267,
+          mid_close_ff7cb6c242604316,
+          mid_getName_d2c8eb4129821f0e,
+          mid_isDirectory_eee3de00fe971136,
+          mid_mark_8fd427ab23829bf5,
+          mid_markSupported_eee3de00fe971136,
+          mid_read_d6ab429752e7c267,
+          mid_read_89e14f411787412a,
+          mid_read_1351cbafe5a435a7,
+          mid_reset_ff7cb6c242604316,
+          mid_skip_1eaf6eb0a3f3163f,
           max_mid
         };
 

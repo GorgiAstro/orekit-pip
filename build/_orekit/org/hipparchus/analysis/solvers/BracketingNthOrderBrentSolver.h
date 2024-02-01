@@ -7,15 +7,15 @@ namespace org {
   namespace hipparchus {
     namespace analysis {
       namespace solvers {
-        class BracketedUnivariateSolver;
-        class BracketedUnivariateSolver$Interval;
         class AllowedSolution;
+        class BracketedUnivariateSolver$Interval;
+        class BracketedUnivariateSolver;
       }
       class UnivariateFunction;
     }
     namespace exception {
-      class MathIllegalStateException;
       class MathIllegalArgumentException;
+      class MathIllegalStateException;
     }
   }
 }
@@ -34,16 +34,16 @@ namespace org {
         class BracketingNthOrderBrentSolver : public ::org::hipparchus::analysis::solvers::AbstractUnivariateSolver {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_init$_1af1b4c263b48b0c,
-            mid_init$_2aa803b9073e6a76,
-            mid_init$_96a2cf58188ee8a5,
-            mid_getMaximalOrder_55546ef6a647f39b,
-            mid_solve_95e80d55b360a35f,
-            mid_solve_adfe53463c8924a7,
-            mid_solveInterval_56a10f62288dcd3e,
-            mid_doSolve_b74f83833fdad017,
-            mid_doSolveInterval_e5c64c32be09ef5b,
+            mid_init$_ff7cb6c242604316,
+            mid_init$_0fd8efd9eecb8663,
+            mid_init$_905e65280a4e6722,
+            mid_init$_2894b57d568d7362,
+            mid_getMaximalOrder_d6ab429752e7c267,
+            mid_solve_264b7d79e28fc408,
+            mid_solve_56efbacf041dc493,
+            mid_solveInterval_1290cd17e7801197,
+            mid_doSolve_9981f74b2d109da6,
+            mid_doSolveInterval_fb0079f6db85289e,
             max_mid
           };
 

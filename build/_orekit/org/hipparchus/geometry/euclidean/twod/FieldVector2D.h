@@ -5,6 +5,10 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathRuntimeException;
+      class MathIllegalArgumentException;
+    }
     namespace geometry {
       namespace euclidean {
         namespace twod {
@@ -12,10 +16,6 @@ namespace org {
           class FieldVector2D;
         }
       }
-    }
-    namespace exception {
-      class MathIllegalArgumentException;
-      class MathRuntimeException;
     }
     class Field;
     class CalculusFieldElement;
@@ -41,87 +41,87 @@ namespace org {
           class FieldVector2D : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_8b0f7facc8a6a46e,
-              mid_init$_e092330a3cb18383,
-              mid_init$_8cd1d38fb24395b1,
-              mid_init$_06b31aba3d9cf9b6,
-              mid_init$_9d0e66f5351834a8,
-              mid_init$_e337ae7145f7989c,
-              mid_init$_11fbfd88fc245e05,
-              mid_init$_b0a421f7dbeaed0f,
-              mid_init$_9037b64010093e7a,
-              mid_init$_b48a0e1d40bd38d0,
-              mid_init$_df12b4a2f331dd1c,
-              mid_init$_3f6696ed5fcdb619,
-              mid_init$_75474ee55105ddaf,
-              mid_init$_368e18fe3cf4d9c7,
-              mid_init$_380aba02f510ab2c,
-              mid_add_352489997a01ac70,
-              mid_add_31710f0c4eb8aef4,
-              mid_add_d32f883885561b31,
-              mid_add_4b66fb4f5e817fcb,
-              mid_add_7d38e0441e838830,
-              mid_add_b55179abf30de838,
-              mid_angle_e99932ffda9acd7f,
-              mid_angle_438cf30c67841384,
-              mid_angle_4687371cee9ba77e,
-              mid_crossProduct_e99932ffda9acd7f,
-              mid_crossProduct_0f13ba5caeaa83d4,
-              mid_distance_b4f5e0115d69a846,
-              mid_distance_14d7a7c35a3db44a,
-              mid_distance_e99932ffda9acd7f,
-              mid_distance_438cf30c67841384,
-              mid_distance_4687371cee9ba77e,
-              mid_distance1_b4f5e0115d69a846,
-              mid_distance1_14d7a7c35a3db44a,
-              mid_distance1_e99932ffda9acd7f,
-              mid_distance1_438cf30c67841384,
-              mid_distance1_4687371cee9ba77e,
-              mid_distanceInf_b4f5e0115d69a846,
-              mid_distanceInf_14d7a7c35a3db44a,
-              mid_distanceInf_e99932ffda9acd7f,
-              mid_distanceInf_4687371cee9ba77e,
-              mid_distanceInf_438cf30c67841384,
-              mid_distanceSq_b4f5e0115d69a846,
-              mid_distanceSq_14d7a7c35a3db44a,
-              mid_distanceSq_e99932ffda9acd7f,
-              mid_distanceSq_438cf30c67841384,
-              mid_distanceSq_4687371cee9ba77e,
-              mid_dotProduct_b4f5e0115d69a846,
-              mid_dotProduct_14d7a7c35a3db44a,
-              mid_equals_460c5e2d9d51c6cc,
-              mid_getMinusI_94a569d6057bef26,
-              mid_getMinusJ_94a569d6057bef26,
-              mid_getNaN_94a569d6057bef26,
-              mid_getNegativeInfinity_94a569d6057bef26,
-              mid_getNorm_81520b552cb3fa26,
-              mid_getNorm1_81520b552cb3fa26,
-              mid_getNormInf_81520b552cb3fa26,
-              mid_getNormSq_81520b552cb3fa26,
-              mid_getPlusI_94a569d6057bef26,
-              mid_getPlusJ_94a569d6057bef26,
-              mid_getPositiveInfinity_94a569d6057bef26,
-              mid_getX_81520b552cb3fa26,
-              mid_getY_81520b552cb3fa26,
-              mid_getZero_94a569d6057bef26,
-              mid_hashCode_55546ef6a647f39b,
-              mid_isInfinite_9ab94ac1dc23b105,
-              mid_isNaN_9ab94ac1dc23b105,
-              mid_negate_6cf625db6271ad65,
-              mid_normalize_6cf625db6271ad65,
-              mid_orientation_67cdb0b92c146205,
-              mid_scalarMultiply_d397b0a1d0379da7,
-              mid_scalarMultiply_f3d6fa340bb755f8,
-              mid_subtract_352489997a01ac70,
-              mid_subtract_31710f0c4eb8aef4,
-              mid_subtract_d32f883885561b31,
-              mid_subtract_4b66fb4f5e817fcb,
-              mid_subtract_7d38e0441e838830,
-              mid_subtract_b55179abf30de838,
-              mid_toArray_883be608cfc68c26,
-              mid_toString_1c1fa1e935d6cdcf,
-              mid_toString_a9120cb5e83d0986,
-              mid_toVector2D_9cb1572c1d4936cf,
+              mid_init$_77e61a645c496adc,
+              mid_init$_9de897098cc4fc51,
+              mid_init$_03cc98c26e4bc2f3,
+              mid_init$_a414bd4abe1a01ac,
+              mid_init$_209fcdd831417cb9,
+              mid_init$_bab44dcbad09a0fe,
+              mid_init$_6d69d39ede98961c,
+              mid_init$_57792df6518b6cbb,
+              mid_init$_6a174b750b8ff4dd,
+              mid_init$_c9375daef59d217d,
+              mid_init$_614c0bea0d23deb7,
+              mid_init$_3094ca3420387466,
+              mid_init$_de342bcdedd80e86,
+              mid_init$_8910ab47d3946516,
+              mid_init$_e68043fb008b727a,
+              mid_add_7942696c79200ea4,
+              mid_add_e9f831185f725939,
+              mid_add_ce2a08ee78bdea1c,
+              mid_add_1de84f30ff815e36,
+              mid_add_c3406f0e361e3c5e,
+              mid_add_a352159691fd6884,
+              mid_angle_88210a0f92666f78,
+              mid_angle_1e522e275c6cd552,
+              mid_angle_a873d18c5b331b2a,
+              mid_crossProduct_88210a0f92666f78,
+              mid_crossProduct_8285f2af445596a9,
+              mid_distance_5463010749bace4d,
+              mid_distance_155ae89e89847f4f,
+              mid_distance_88210a0f92666f78,
+              mid_distance_1e522e275c6cd552,
+              mid_distance_a873d18c5b331b2a,
+              mid_distance1_5463010749bace4d,
+              mid_distance1_155ae89e89847f4f,
+              mid_distance1_88210a0f92666f78,
+              mid_distance1_a873d18c5b331b2a,
+              mid_distance1_1e522e275c6cd552,
+              mid_distanceInf_5463010749bace4d,
+              mid_distanceInf_155ae89e89847f4f,
+              mid_distanceInf_88210a0f92666f78,
+              mid_distanceInf_1e522e275c6cd552,
+              mid_distanceInf_a873d18c5b331b2a,
+              mid_distanceSq_5463010749bace4d,
+              mid_distanceSq_155ae89e89847f4f,
+              mid_distanceSq_88210a0f92666f78,
+              mid_distanceSq_a873d18c5b331b2a,
+              mid_distanceSq_1e522e275c6cd552,
+              mid_dotProduct_5463010749bace4d,
+              mid_dotProduct_155ae89e89847f4f,
+              mid_equals_72faff9b05f5ed5e,
+              mid_getMinusI_3989eebec94e3b0f,
+              mid_getMinusJ_3989eebec94e3b0f,
+              mid_getNaN_3989eebec94e3b0f,
+              mid_getNegativeInfinity_3989eebec94e3b0f,
+              mid_getNorm_08d37e3f77b7239d,
+              mid_getNorm1_08d37e3f77b7239d,
+              mid_getNormInf_08d37e3f77b7239d,
+              mid_getNormSq_08d37e3f77b7239d,
+              mid_getPlusI_3989eebec94e3b0f,
+              mid_getPlusJ_3989eebec94e3b0f,
+              mid_getPositiveInfinity_3989eebec94e3b0f,
+              mid_getX_08d37e3f77b7239d,
+              mid_getY_08d37e3f77b7239d,
+              mid_getZero_3989eebec94e3b0f,
+              mid_hashCode_d6ab429752e7c267,
+              mid_isInfinite_eee3de00fe971136,
+              mid_isNaN_eee3de00fe971136,
+              mid_negate_da02c7b325187877,
+              mid_normalize_da02c7b325187877,
+              mid_orientation_6189d195f58c2f32,
+              mid_scalarMultiply_a95623cddc5b1016,
+              mid_scalarMultiply_a693c897c7425550,
+              mid_subtract_7942696c79200ea4,
+              mid_subtract_e9f831185f725939,
+              mid_subtract_ce2a08ee78bdea1c,
+              mid_subtract_c3406f0e361e3c5e,
+              mid_subtract_1de84f30ff815e36,
+              mid_subtract_a352159691fd6884,
+              mid_toArray_94ed2e0620f8833d,
+              mid_toString_d2c8eb4129821f0e,
+              mid_toString_aeac32100fe35ffe,
+              mid_toVector2D_0490d0574aafb07c,
               max_mid
             };
 
@@ -171,18 +171,18 @@ namespace org {
             ::org::hipparchus::CalculusFieldElement distance1(const FieldVector2D &) const;
             ::org::hipparchus::CalculusFieldElement distance1(const ::org::hipparchus::geometry::euclidean::twod::Vector2D &) const;
             static ::org::hipparchus::CalculusFieldElement distance1(const FieldVector2D &, const FieldVector2D &);
-            static ::org::hipparchus::CalculusFieldElement distance1(const ::org::hipparchus::geometry::euclidean::twod::Vector2D &, const FieldVector2D &);
             static ::org::hipparchus::CalculusFieldElement distance1(const FieldVector2D &, const ::org::hipparchus::geometry::euclidean::twod::Vector2D &);
+            static ::org::hipparchus::CalculusFieldElement distance1(const ::org::hipparchus::geometry::euclidean::twod::Vector2D &, const FieldVector2D &);
             ::org::hipparchus::CalculusFieldElement distanceInf(const FieldVector2D &) const;
             ::org::hipparchus::CalculusFieldElement distanceInf(const ::org::hipparchus::geometry::euclidean::twod::Vector2D &) const;
             static ::org::hipparchus::CalculusFieldElement distanceInf(const FieldVector2D &, const FieldVector2D &);
-            static ::org::hipparchus::CalculusFieldElement distanceInf(const FieldVector2D &, const ::org::hipparchus::geometry::euclidean::twod::Vector2D &);
             static ::org::hipparchus::CalculusFieldElement distanceInf(const ::org::hipparchus::geometry::euclidean::twod::Vector2D &, const FieldVector2D &);
+            static ::org::hipparchus::CalculusFieldElement distanceInf(const FieldVector2D &, const ::org::hipparchus::geometry::euclidean::twod::Vector2D &);
             ::org::hipparchus::CalculusFieldElement distanceSq(const FieldVector2D &) const;
             ::org::hipparchus::CalculusFieldElement distanceSq(const ::org::hipparchus::geometry::euclidean::twod::Vector2D &) const;
             static ::org::hipparchus::CalculusFieldElement distanceSq(const FieldVector2D &, const FieldVector2D &);
-            static ::org::hipparchus::CalculusFieldElement distanceSq(const ::org::hipparchus::geometry::euclidean::twod::Vector2D &, const FieldVector2D &);
             static ::org::hipparchus::CalculusFieldElement distanceSq(const FieldVector2D &, const ::org::hipparchus::geometry::euclidean::twod::Vector2D &);
+            static ::org::hipparchus::CalculusFieldElement distanceSq(const ::org::hipparchus::geometry::euclidean::twod::Vector2D &, const FieldVector2D &);
             ::org::hipparchus::CalculusFieldElement dotProduct(const FieldVector2D &) const;
             ::org::hipparchus::CalculusFieldElement dotProduct(const ::org::hipparchus::geometry::euclidean::twod::Vector2D &) const;
             jboolean equals(const ::java::lang::Object &) const;
@@ -211,8 +211,8 @@ namespace org {
             FieldVector2D subtract(const FieldVector2D &) const;
             FieldVector2D subtract(const ::org::hipparchus::geometry::euclidean::twod::Vector2D &) const;
             FieldVector2D subtract(jdouble, const FieldVector2D &) const;
-            FieldVector2D subtract(jdouble, const ::org::hipparchus::geometry::euclidean::twod::Vector2D &) const;
             FieldVector2D subtract(const ::org::hipparchus::CalculusFieldElement &, const FieldVector2D &) const;
+            FieldVector2D subtract(jdouble, const ::org::hipparchus::geometry::euclidean::twod::Vector2D &) const;
             FieldVector2D subtract(const ::org::hipparchus::CalculusFieldElement &, const ::org::hipparchus::geometry::euclidean::twod::Vector2D &) const;
             JArray< ::org::hipparchus::CalculusFieldElement > toArray() const;
             ::java::lang::String toString() const;

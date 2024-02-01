@@ -19,7 +19,7 @@ namespace org {
           class Section : public ::java::lang::Object {
            public:
             enum {
-              mid_validate_8ba9fe7a847cecad,
+              mid_validate_1ad26e8c8c0cd65b,
               max_mid
             };
 

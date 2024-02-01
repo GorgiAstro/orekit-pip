@@ -6,10 +6,10 @@
 namespace java {
   namespace util {
     class Iterator;
-    class List;
     namespace stream {
       class Stream;
     }
+    class List;
   }
   namespace lang {
     class Class;
@@ -32,18 +32,18 @@ namespace org {
       class CombinatoricsUtils : public ::java::lang::Object {
        public:
         enum {
-          mid_bellNumber_f4947a88f79e0725,
-          mid_binomialCoefficient_86fb9ef85bc94662,
-          mid_binomialCoefficientDouble_cad98089d00f8a5b,
-          mid_binomialCoefficientLog_cad98089d00f8a5b,
-          mid_checkBinomial_3313c75e3e16c428,
-          mid_combinationsIterator_39d5da9b3f886b53,
-          mid_factorial_f4947a88f79e0725,
-          mid_factorialDouble_2afcbc21f4e57ab2,
-          mid_factorialLog_2afcbc21f4e57ab2,
-          mid_partitions_b6d6fcabc14abaa4,
-          mid_permutations_b6d6fcabc14abaa4,
-          mid_stirlingS2_86fb9ef85bc94662,
+          mid_bellNumber_3453f750066710ab,
+          mid_binomialCoefficient_038d815c660e2779,
+          mid_binomialCoefficientDouble_6d920aab27f0a3d2,
+          mid_binomialCoefficientLog_6d920aab27f0a3d2,
+          mid_checkBinomial_b5d23e6c0858e8ed,
+          mid_combinationsIterator_952e72b43add17d6,
+          mid_factorial_3453f750066710ab,
+          mid_factorialDouble_ce4c02d583456bc9,
+          mid_factorialLog_ce4c02d583456bc9,
+          mid_partitions_951f9571abe096f0,
+          mid_permutations_951f9571abe096f0,
+          mid_stirlingS2_038d815c660e2779,
           max_mid
         };
 

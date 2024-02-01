@@ -19,16 +19,16 @@ namespace org {
     namespace utils {
       class IERSConventions;
     }
-    namespace frames {
-      class EOPHistory;
-      class EopHistoryLoader;
+    namespace time {
+      class TimeScale;
+      class TimeScales;
     }
     namespace data {
       class DataProvidersManager;
     }
-    namespace time {
-      class TimeScales;
-      class TimeScale;
+    namespace frames {
+      class EOPHistory;
+      class EopHistoryLoader;
     }
   }
 }
@@ -41,15 +41,15 @@ namespace org {
       class LazyLoadedEop : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_71b020e53c8af149,
-          mid_addDefaultEOP1980HistoryLoaders_6b707ef41041f12b,
-          mid_addDefaultEOP2000HistoryLoaders_6b707ef41041f12b,
-          mid_addEOPHistoryLoader_f075adbabba5d6bc,
-          mid_clearEOPHistoryLoaders_a1fa5dae97ea5ed2,
-          mid_getDataProvidersManager_58cee34d9bd73f33,
-          mid_getEOPHistory_8c7e98e10e57372e,
-          mid_setEOPContinuityThreshold_8ba9fe7a847cecad,
-          mid_setInterpolationDegree_44ed599e93e8a30c,
+          mid_init$_f44b5b919beca6bf,
+          mid_addDefaultEOP1980HistoryLoaders_cf2d09f334430f03,
+          mid_addDefaultEOP2000HistoryLoaders_cf2d09f334430f03,
+          mid_addEOPHistoryLoader_de5bd84d562632cf,
+          mid_clearEOPHistoryLoaders_ff7cb6c242604316,
+          mid_getDataProvidersManager_f0a5ee63a7def5aa,
+          mid_getEOPHistory_0876d7ae4f9b6882,
+          mid_setEOPContinuityThreshold_1ad26e8c8c0cd65b,
+          mid_setInterpolationDegree_8fd427ab23829bf5,
           max_mid
         };
 

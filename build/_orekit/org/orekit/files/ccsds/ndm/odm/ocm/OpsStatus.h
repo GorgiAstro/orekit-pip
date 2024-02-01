@@ -37,9 +37,9 @@ namespace org {
               class OpsStatus : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_toString_1c1fa1e935d6cdcf,
-                  mid_valueOf_2dc733d6c14f00e7,
-                  mid_values_7a219b506f8b5e5e,
+                  mid_toString_d2c8eb4129821f0e,
+                  mid_valueOf_e54e3e39cbb31e72,
+                  mid_values_36dffa7e7cb47adb,
                   max_mid
                 };
 

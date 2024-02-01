@@ -7,13 +7,13 @@ namespace org {
   namespace orekit {
     namespace files {
       namespace ccsds {
+        namespace definitions {
+          class TimeConverter;
+        }
         namespace ndm {
           namespace odm {
             class StateVector;
           }
-        }
-        namespace definitions {
-          class TimeConverter;
         }
       }
     }
@@ -37,8 +37,8 @@ namespace org {
             class StateVectorWriter : public ::org::orekit::files::ccsds::section::AbstractWriter {
              public:
               enum {
-                mid_init$_55530e2c0ebc5829,
-                mid_writeContent_fb222e851cd27682,
+                mid_init$_0c832d24faad04e3,
+                mid_writeContent_05c6d36d73082fa6,
                 max_mid
               };
 

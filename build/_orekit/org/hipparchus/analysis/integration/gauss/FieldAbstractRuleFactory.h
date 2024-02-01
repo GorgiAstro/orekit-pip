@@ -5,11 +5,13 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathIllegalArgumentException;
+    }
+    class Field;
     namespace util {
       class Pair;
     }
-    class Field;
-    class CalculusFieldElement;
     namespace analysis {
       namespace integration {
         namespace gauss {
@@ -17,9 +19,7 @@ namespace org {
         }
       }
     }
-    namespace exception {
-      class MathIllegalArgumentException;
-    }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -38,12 +38,12 @@ namespace org {
           class FieldAbstractRuleFactory : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_02ab84aa7626616d,
-              mid_getField_04d1f63e17d5c5d4,
-              mid_getRule_acde278e36767299,
-              mid_computeRule_acde278e36767299,
-              mid_findRoots_40599f7dd66087b8,
-              mid_enforceSymmetry_8b0f7facc8a6a46e,
+              mid_init$_a44abdd035f01345,
+              mid_getField_577649682b9910c1,
+              mid_getRule_c07c8b9364272960,
+              mid_computeRule_c07c8b9364272960,
+              mid_findRoots_607be8730ac51032,
+              mid_enforceSymmetry_77e61a645c496adc,
               max_mid
             };
 

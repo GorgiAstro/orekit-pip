@@ -5,16 +5,16 @@
 
 namespace org {
   namespace orekit {
-    namespace time {
-      class TimeStamped;
-      class TimeStampedDouble;
-      class AbsoluteDate;
-      class TimeInterpolator;
-    }
     namespace utils {
       class AbsolutePVCoordinates;
-      class AngularDerivativesFilter;
       class CartesianDerivativesFilter;
+      class AngularDerivativesFilter;
+    }
+    namespace time {
+      class TimeStamped;
+      class TimeInterpolator;
+      class AbsoluteDate;
+      class TimeStampedDouble;
     }
     namespace orbits {
       class Orbit;
@@ -49,24 +49,24 @@ namespace org {
       class SpacecraftStateInterpolator : public ::org::orekit::time::AbstractTimeInterpolator {
        public:
         enum {
-          mid_init$_237ae1c2ddd68062,
-          mid_init$_92e0516c51076c2f,
-          mid_init$_9fa6786ed88e4116,
-          mid_init$_9188826e4203adb2,
-          mid_init$_4e698ca934323ab9,
-          mid_init$_47a06a543038ccdd,
-          mid_checkSampleAndInterpolatorConsistency_175e0bdab326549a,
-          mid_checkStatesDefinitionsConsistency_0e7c3032c7c93ed3,
-          mid_getAbsPVAInterpolator_9fe5189c8c3b230d,
-          mid_getAdditionalStateInterpolator_9fe5189c8c3b230d,
-          mid_getAttitudeInterpolator_9fe5189c8c3b230d,
-          mid_getMassInterpolator_9fe5189c8c3b230d,
-          mid_getNbInterpolationPoints_55546ef6a647f39b,
-          mid_getOrbitInterpolator_9fe5189c8c3b230d,
-          mid_getOutputFrame_2c51111cc6894ba1,
-          mid_getSubInterpolators_e62d3bb06d56d7e3,
-          mid_interpolate_96a2305a7aa752cc,
-          mid_interpolate_5f913ee7dc803ec0,
+          mid_init$_9725b246c9e25f68,
+          mid_init$_b744963488fb11c5,
+          mid_init$_b764253cc264c047,
+          mid_init$_1567a5431e11bb91,
+          mid_init$_0aad11dd3e2442fe,
+          mid_init$_282bf014460f9257,
+          mid_init$_f652be66d2f5064d,
+          mid_checkSampleAndInterpolatorConsistency_e03750a959d556e9,
+          mid_checkStatesDefinitionsConsistency_aa335fea495d60e0,
+          mid_getAbsPVAInterpolator_aa56605e3771f379,
+          mid_getAdditionalStateInterpolator_aa56605e3771f379,
+          mid_getAttitudeInterpolator_aa56605e3771f379,
+          mid_getMassInterpolator_aa56605e3771f379,
+          mid_getOrbitInterpolator_aa56605e3771f379,
+          mid_getOutputFrame_cb151471db4570f0,
+          mid_getSubInterpolators_d751c1a57012b438,
+          mid_interpolate_be02af4cea5d51b2,
+          mid_interpolate_f2e8566a577b7b64,
           max_mid
         };
 
@@ -87,6 +87,7 @@ namespace org {
         SpacecraftStateInterpolator(jint, jdouble, const ::org::orekit::frames::Frame &, const ::org::orekit::frames::Frame &);
         SpacecraftStateInterpolator(jint, jdouble, const ::org::orekit::frames::Frame &, const ::org::orekit::frames::Frame &, const ::org::orekit::utils::CartesianDerivativesFilter &, const ::org::orekit::utils::AngularDerivativesFilter &);
         SpacecraftStateInterpolator(const ::org::orekit::frames::Frame &, const ::org::orekit::time::TimeInterpolator &, const ::org::orekit::time::TimeInterpolator &, const ::org::orekit::time::TimeInterpolator &, const ::org::orekit::time::TimeInterpolator &, const ::org::orekit::time::TimeInterpolator &);
+        SpacecraftStateInterpolator(jint, jdouble, const ::org::orekit::frames::Frame &, const ::org::orekit::time::TimeInterpolator &, const ::org::orekit::time::TimeInterpolator &, const ::org::orekit::time::TimeInterpolator &, const ::org::orekit::time::TimeInterpolator &, const ::org::orekit::time::TimeInterpolator &);
 
         static void checkSampleAndInterpolatorConsistency(const ::java::util::List &, jboolean, jboolean);
         static void checkStatesDefinitionsConsistency(const ::java::util::List &);
@@ -94,7 +95,6 @@ namespace org {
         ::java::util::Optional getAdditionalStateInterpolator() const;
         ::java::util::Optional getAttitudeInterpolator() const;
         ::java::util::Optional getMassInterpolator() const;
-        jint getNbInterpolationPoints() const;
         ::java::util::Optional getOrbitInterpolator() const;
         ::org::orekit::frames::Frame getOutputFrame() const;
         ::java::util::List getSubInterpolators() const;

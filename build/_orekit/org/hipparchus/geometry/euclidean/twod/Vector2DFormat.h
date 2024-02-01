@@ -4,11 +4,6 @@
 #include "org/hipparchus/geometry/VectorFormat.h"
 
 namespace java {
-  namespace text {
-    class FieldPosition;
-    class ParsePosition;
-    class NumberFormat;
-  }
   namespace util {
     class Locale;
   }
@@ -17,18 +12,23 @@ namespace java {
     class Class;
     class String;
   }
+  namespace text {
+    class FieldPosition;
+    class NumberFormat;
+    class ParsePosition;
+  }
 }
 namespace org {
   namespace hipparchus {
     namespace geometry {
+      class Vector;
       namespace euclidean {
         namespace twod {
           class Vector2D;
-          class Vector2DFormat;
           class Euclidean2D;
+          class Vector2DFormat;
         }
       }
-      class Vector;
     }
     namespace exception {
       class MathIllegalStateException;
@@ -46,15 +46,15 @@ namespace org {
           class Vector2DFormat : public ::org::hipparchus::geometry::VectorFormat {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_init$_b7f3d50b51ef7518,
-              mid_init$_ee9345b4af8c40df,
-              mid_init$_d047b7641facca84,
-              mid_format_4b712c2465e37e54,
-              mid_getVector2DFormat_53d6f65ab25b62f6,
-              mid_getVector2DFormat_f748524f52c2d863,
-              mid_parse_eceeaafaeb29e1fb,
-              mid_parse_94ca86ca2bd5c76d,
+              mid_init$_ff7cb6c242604316,
+              mid_init$_327b6d3ae10b544b,
+              mid_init$_56b987237c71cdbb,
+              mid_init$_21a024496acf58f0,
+              mid_format_dbd94d7f7c5c0aa8,
+              mid_getVector2DFormat_059363d576d41933,
+              mid_getVector2DFormat_b650ca28b8d669cc,
+              mid_parse_8b7f998a5e2e454a,
+              mid_parse_1801d7b769af6728,
               max_mid
             };
 

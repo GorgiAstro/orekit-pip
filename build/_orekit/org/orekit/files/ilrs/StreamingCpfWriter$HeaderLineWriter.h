@@ -3,19 +3,6 @@
 
 #include "java/lang/Enum.h"
 
-namespace org {
-  namespace orekit {
-    namespace files {
-      namespace ilrs {
-        class CPFHeader;
-        class StreamingCpfWriter$HeaderLineWriter;
-      }
-    }
-    namespace time {
-      class TimeScale;
-    }
-  }
-}
 namespace java {
   namespace io {
     class IOException;
@@ -24,6 +11,19 @@ namespace java {
     class Appendable;
     class Class;
     class String;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace files {
+      namespace ilrs {
+        class StreamingCpfWriter$HeaderLineWriter;
+        class CPFHeader;
+      }
+    }
+    namespace time {
+      class TimeScale;
+    }
   }
 }
 template<class T> class JArray;
@@ -36,10 +36,10 @@ namespace org {
         class StreamingCpfWriter$HeaderLineWriter : public ::java::lang::Enum {
          public:
           enum {
-            mid_getIdentifier_1c1fa1e935d6cdcf,
-            mid_valueOf_b5389b625872772a,
-            mid_values_afe2856f4377f9d1,
-            mid_write_1a2e19922e339da8,
+            mid_getIdentifier_d2c8eb4129821f0e,
+            mid_valueOf_c16aa7d478e1e3a3,
+            mid_values_6d7eb59bb2fe7c85,
+            mid_write_52244c0882f76251,
             max_mid
           };
 

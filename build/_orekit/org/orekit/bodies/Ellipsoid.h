@@ -5,16 +5,16 @@
 
 namespace org {
   namespace hipparchus {
+    namespace exception {
+      class MathRuntimeException;
+    }
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
+          class Vector3D;
         }
       }
-    }
-    namespace exception {
-      class MathRuntimeException;
     }
   }
   namespace orekit {
@@ -44,17 +44,17 @@ namespace org {
       class Ellipsoid : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_736cb871345d6087,
-          mid_getA_b74f83833fdad017,
-          mid_getB_b74f83833fdad017,
-          mid_getC_b74f83833fdad017,
-          mid_getFrame_2c51111cc6894ba1,
-          mid_getPlaneSection_fc24a7c1bc5c2624,
-          mid_getPlaneSection_af7d57647b7c1409,
-          mid_isInside_f7871dc9552d25d0,
-          mid_isInside_82d995e738c9e027,
-          mid_pointOnLimb_f9c086f1066c613d,
-          mid_pointOnLimb_301a09f2b4c627de,
+          mid_init$_a7d182119e533a5f,
+          mid_getA_9981f74b2d109da6,
+          mid_getB_9981f74b2d109da6,
+          mid_getC_9981f74b2d109da6,
+          mid_getFrame_cb151471db4570f0,
+          mid_getPlaneSection_3f2e5878904410f7,
+          mid_getPlaneSection_3f5fc96ca95b9a07,
+          mid_isInside_f6d8940437db3446,
+          mid_isInside_decdc24b3aebe77a,
+          mid_pointOnLimb_1b84772486fb83f9,
+          mid_pointOnLimb_ff0107f3aab86815,
           max_mid
         };
 

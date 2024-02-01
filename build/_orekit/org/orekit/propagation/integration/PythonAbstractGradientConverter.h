@@ -5,17 +5,17 @@
 
 namespace org {
   namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class FieldVector3D;
-          class FieldRotation;
-        }
-      }
-    }
     namespace analysis {
       namespace differentiation {
         class Gradient;
+      }
+    }
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldRotation;
+          class FieldVector3D;
+        }
       }
     }
   }
@@ -35,11 +35,11 @@ namespace org {
         class PythonAbstractGradientConverter : public ::org::orekit::propagation::integration::AbstractGradientConverter {
          public:
           enum {
-            mid_init$_44ed599e93e8a30c,
-            mid_extend_40f2f08546258c9b,
-            mid_extend_3facea1cbc778867,
-            mid_extend_9b74b13fc2b0b45d,
-            mid_getFreeStateParameters_55546ef6a647f39b,
+            mid_init$_8fd427ab23829bf5,
+            mid_extend_4e682d3d3cf0cde9,
+            mid_extend_ace76047bba91127,
+            mid_extend_b792b7e3fa72c7c6,
+            mid_getFreeStateParameters_d6ab429752e7c267,
             max_mid
           };
 

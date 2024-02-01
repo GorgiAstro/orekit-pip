@@ -5,14 +5,14 @@
 
 namespace org {
   namespace orekit {
+    namespace bodies {
+      class BodyShape;
+      class OneAxisEllipsoid;
+    }
     namespace geometry {
       namespace fov {
         class FieldOfView;
       }
-    }
-    namespace bodies {
-      class OneAxisEllipsoid;
-      class BodyShape;
     }
     namespace propagation {
       namespace events {
@@ -46,12 +46,12 @@ namespace org {
         class FootprintOverlapDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_fe9b3eeb49751d68,
-            mid_g_a17ea857ce74d258,
-            mid_getBody_95d324082d4f411b,
-            mid_getFOV_f16dd2df58a56a14,
-            mid_getZone_bf39bb9c5825f40e,
-            mid_create_257a941781dd43fc,
+            mid_init$_8e55a16f0253c2cf,
+            mid_g_b443ba1cc794b916,
+            mid_getBody_6f2d25f6f71d01ca,
+            mid_getFOV_6fdfc08762f52cd9,
+            mid_getZone_17b2f5c9c3ed683f,
+            mid_create_62127083ddf4e895,
             max_mid
           };
 

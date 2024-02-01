@@ -37,16 +37,16 @@ namespace org {
               class Rtcm1044Data : public ::org::orekit::gnss::metric::messages::rtcm::ephemeris::RtcmEphemerisData {
                public:
                 enum {
-                  mid_init$_a1fa5dae97ea5ed2,
-                  mid_getQzssCodeOnL2_55546ef6a647f39b,
-                  mid_getQzssFitInterval_55546ef6a647f39b,
-                  mid_getQzssNavigationMessage_a5fec3268c180e7d,
-                  mid_getQzssNavigationMessage_b9fd83189482f0bf,
-                  mid_getQzssToc_b74f83833fdad017,
-                  mid_setQzssCodeOnL2_44ed599e93e8a30c,
-                  mid_setQzssFitInterval_44ed599e93e8a30c,
-                  mid_setQzssNavigationMessage_a62013e28777a8da,
-                  mid_setQzssToc_8ba9fe7a847cecad,
+                  mid_init$_ff7cb6c242604316,
+                  mid_getQzssCodeOnL2_d6ab429752e7c267,
+                  mid_getQzssFitInterval_d6ab429752e7c267,
+                  mid_getQzssNavigationMessage_815b18da959df03f,
+                  mid_getQzssNavigationMessage_26a7529e5c4522ab,
+                  mid_getQzssToc_9981f74b2d109da6,
+                  mid_setQzssCodeOnL2_8fd427ab23829bf5,
+                  mid_setQzssFitInterval_8fd427ab23829bf5,
+                  mid_setQzssNavigationMessage_6f75ae7b1b0acd17,
+                  mid_setQzssToc_1ad26e8c8c0cd65b,
                   max_mid
                 };
 

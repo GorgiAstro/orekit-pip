@@ -9,8 +9,8 @@ namespace org {
       namespace metric {
         namespace ntrip {
           class CasterRecord;
-          class DataStreamRecord;
           class NetworkRecord;
+          class DataStreamRecord;
         }
       }
     }
@@ -36,10 +36,10 @@ namespace org {
           class SourceTable : public ::java::lang::Object {
            public:
             enum {
-              mid_getCasters_e62d3bb06d56d7e3,
-              mid_getDataStreams_e62d3bb06d56d7e3,
-              mid_getNetworks_e62d3bb06d56d7e3,
-              mid_getNtripFlags_1c1fa1e935d6cdcf,
+              mid_getCasters_d751c1a57012b438,
+              mid_getDataStreams_d751c1a57012b438,
+              mid_getNetworks_d751c1a57012b438,
+              mid_getNtripFlags_d2c8eb4129821f0e,
               max_mid
             };
 

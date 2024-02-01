@@ -36,15 +36,15 @@ namespace org {
         class SpearmansCorrelation : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_init$_84bd15e0995d0c79,
-            mid_init$_189a9187f1b87acf,
-            mid_init$_7d9c97be304480a2,
-            mid_computeCorrelationMatrix_2d1b7d41dfd6b278,
-            mid_computeCorrelationMatrix_be124f4006dc9f69,
-            mid_correlation_3207f9c2ae7271d9,
-            mid_getCorrelationMatrix_f77d745f2128c391,
-            mid_getRankCorrelation_1a1aafc4780288e5,
+            mid_init$_ff7cb6c242604316,
+            mid_init$_f5364c9a9d9cbd53,
+            mid_init$_7c82bee8641041b5,
+            mid_init$_fa062ba757b6dac9,
+            mid_computeCorrelationMatrix_a50478fa84afaa43,
+            mid_computeCorrelationMatrix_5a8a8185eb309db7,
+            mid_correlation_b01af8a77d4df96f,
+            mid_getCorrelationMatrix_b2eebabce70526d8,
+            mid_getRankCorrelation_448a70db688c59e3,
             max_mid
           };
 

@@ -3,17 +3,11 @@
 
 #include "org/orekit/files/ccsds/section/Metadata.h"
 
-namespace java {
-  namespace util {
-    class List;
-  }
-  namespace lang {
-    class Class;
-    class String;
-  }
-}
 namespace org {
   namespace orekit {
+    namespace data {
+      class DataContext;
+    }
     namespace files {
       namespace ccsds {
         namespace definitions {
@@ -22,26 +16,32 @@ namespace org {
           class YesNoUnknown;
         }
         namespace ndm {
+          namespace cdm {
+            class CovarianceMethod;
+            class CdmRelativeMetadata;
+            class AltCovarianceType;
+            class Maneuvrable;
+          }
           namespace odm {
             namespace ocm {
               class ObjectType;
             }
           }
-          namespace cdm {
-            class Maneuvrable;
-            class CdmRelativeMetadata;
-            class CovarianceMethod;
-            class AltCovarianceType;
-          }
         }
       }
-    }
-    namespace data {
-      class DataContext;
     }
     namespace frames {
       class Frame;
     }
+  }
+}
+namespace java {
+  namespace util {
+    class List;
+  }
+  namespace lang {
+    class Class;
+    class String;
   }
 }
 template<class T> class JArray;
@@ -56,68 +56,68 @@ namespace org {
             class CdmMetadata : public ::org::orekit::files::ccsds::section::Metadata {
              public:
               enum {
-                mid_init$_a1fa5dae97ea5ed2,
-                mid_init$_fe20320dccf187ae,
-                mid_getAdmMsgLink_1c1fa1e935d6cdcf,
-                mid_getAltCovRefFrame_69d8be1b6b0a1a94,
-                mid_getAltCovType_682297c68d07d8a9,
-                mid_getAtmosphericModel_1c1fa1e935d6cdcf,
-                mid_getCatalogName_1c1fa1e935d6cdcf,
-                mid_getCovarianceMethod_0bfe0c4f8975f75a,
-                mid_getCovarianceSource_1c1fa1e935d6cdcf,
-                mid_getEarthTides_a9bf24a9cea73059,
-                mid_getEphemName_1c1fa1e935d6cdcf,
-                mid_getFrame_2c51111cc6894ba1,
-                mid_getGravityDegree_55546ef6a647f39b,
-                mid_getGravityModel_1c1fa1e935d6cdcf,
-                mid_getGravityOrder_55546ef6a647f39b,
-                mid_getInternationalDes_1c1fa1e935d6cdcf,
-                mid_getIntrackThrust_a9bf24a9cea73059,
-                mid_getManeuverable_20c5f0334d3cf8a5,
-                mid_getNBodyPerturbations_e62d3bb06d56d7e3,
-                mid_getObject_1c1fa1e935d6cdcf,
-                mid_getObjectDesignator_1c1fa1e935d6cdcf,
-                mid_getObjectName_1c1fa1e935d6cdcf,
-                mid_getObjectType_d6ea2275c46038b6,
-                mid_getObsBeforeNextMessage_a9bf24a9cea73059,
-                mid_getOdmMsgLink_1c1fa1e935d6cdcf,
-                mid_getOperatorContactPosition_1c1fa1e935d6cdcf,
-                mid_getOperatorEmail_1c1fa1e935d6cdcf,
-                mid_getOperatorOrganization_1c1fa1e935d6cdcf,
-                mid_getOperatorPhone_1c1fa1e935d6cdcf,
-                mid_getOrbitCenter_52253a5b5c02abfe,
-                mid_getRefFrame_69d8be1b6b0a1a94,
-                mid_getRelativeMetadata_9e18211f4c2756fe,
-                mid_getSolarRadiationPressure_a9bf24a9cea73059,
-                mid_setAdmMsgLink_734b91ac30d5f9b4,
-                mid_setAltCovRefFrame_4755133c5c4c59be,
-                mid_setAltCovType_f113bebf9c716349,
-                mid_setAtmosphericModel_734b91ac30d5f9b4,
-                mid_setCatalogName_734b91ac30d5f9b4,
-                mid_setCovarianceMethod_1287f4079504959f,
-                mid_setCovarianceSource_734b91ac30d5f9b4,
-                mid_setEarthTides_ef863e9b4614f11c,
-                mid_setEphemName_734b91ac30d5f9b4,
-                mid_setGravityModel_eb74d6dc93e0751e,
-                mid_setInternationalDes_734b91ac30d5f9b4,
-                mid_setIntrackThrust_ef863e9b4614f11c,
-                mid_setManeuverable_8b2809315e926f23,
-                mid_setNBodyPerturbations_0e7c3032c7c93ed3,
-                mid_setObject_734b91ac30d5f9b4,
-                mid_setObjectDesignator_734b91ac30d5f9b4,
-                mid_setObjectName_734b91ac30d5f9b4,
-                mid_setObjectType_05187042fbba2328,
-                mid_setObsBeforeNextMessage_ef863e9b4614f11c,
-                mid_setOdmMsgLink_734b91ac30d5f9b4,
-                mid_setOperatorContactPosition_734b91ac30d5f9b4,
-                mid_setOperatorEmail_734b91ac30d5f9b4,
-                mid_setOperatorOrganization_734b91ac30d5f9b4,
-                mid_setOperatorPhone_734b91ac30d5f9b4,
-                mid_setOrbitCenter_564458ee450fa323,
-                mid_setRefFrame_4755133c5c4c59be,
-                mid_setRelativeMetadata_0046627b89ca2469,
-                mid_setSolarRadiationPressure_ef863e9b4614f11c,
-                mid_validate_8ba9fe7a847cecad,
+                mid_init$_ff7cb6c242604316,
+                mid_init$_e28302a82adb77ed,
+                mid_getAdmMsgLink_d2c8eb4129821f0e,
+                mid_getAltCovRefFrame_0fc1562b68204151,
+                mid_getAltCovType_f2d35325ca2cf482,
+                mid_getAtmosphericModel_d2c8eb4129821f0e,
+                mid_getCatalogName_d2c8eb4129821f0e,
+                mid_getCovarianceMethod_aaad2a33cc8f1d7e,
+                mid_getCovarianceSource_d2c8eb4129821f0e,
+                mid_getEarthTides_112bc53c99d2ffea,
+                mid_getEphemName_d2c8eb4129821f0e,
+                mid_getFrame_cb151471db4570f0,
+                mid_getGravityDegree_d6ab429752e7c267,
+                mid_getGravityModel_d2c8eb4129821f0e,
+                mid_getGravityOrder_d6ab429752e7c267,
+                mid_getInternationalDes_d2c8eb4129821f0e,
+                mid_getIntrackThrust_112bc53c99d2ffea,
+                mid_getManeuverable_8f0cf64664312b19,
+                mid_getNBodyPerturbations_d751c1a57012b438,
+                mid_getObject_d2c8eb4129821f0e,
+                mid_getObjectDesignator_d2c8eb4129821f0e,
+                mid_getObjectName_d2c8eb4129821f0e,
+                mid_getObjectType_4afc147acbd215f9,
+                mid_getObsBeforeNextMessage_112bc53c99d2ffea,
+                mid_getOdmMsgLink_d2c8eb4129821f0e,
+                mid_getOperatorContactPosition_d2c8eb4129821f0e,
+                mid_getOperatorEmail_d2c8eb4129821f0e,
+                mid_getOperatorOrganization_d2c8eb4129821f0e,
+                mid_getOperatorPhone_d2c8eb4129821f0e,
+                mid_getOrbitCenter_540df4afb4ddb1b4,
+                mid_getRefFrame_0fc1562b68204151,
+                mid_getRelativeMetadata_e3058383361edffc,
+                mid_getSolarRadiationPressure_112bc53c99d2ffea,
+                mid_setAdmMsgLink_105e1eadb709d9ac,
+                mid_setAltCovRefFrame_2c8b859a72c0094e,
+                mid_setAltCovType_d0bc94278778c073,
+                mid_setAtmosphericModel_105e1eadb709d9ac,
+                mid_setCatalogName_105e1eadb709d9ac,
+                mid_setCovarianceMethod_7d2908a1da032851,
+                mid_setCovarianceSource_105e1eadb709d9ac,
+                mid_setEarthTides_24522ad136c36bb9,
+                mid_setEphemName_105e1eadb709d9ac,
+                mid_setGravityModel_c9a77c84756b106b,
+                mid_setInternationalDes_105e1eadb709d9ac,
+                mid_setIntrackThrust_24522ad136c36bb9,
+                mid_setManeuverable_62776a7b9220fcf1,
+                mid_setNBodyPerturbations_aa335fea495d60e0,
+                mid_setObject_105e1eadb709d9ac,
+                mid_setObjectDesignator_105e1eadb709d9ac,
+                mid_setObjectName_105e1eadb709d9ac,
+                mid_setObjectType_f747a3e328e2d2f7,
+                mid_setObsBeforeNextMessage_24522ad136c36bb9,
+                mid_setOdmMsgLink_105e1eadb709d9ac,
+                mid_setOperatorContactPosition_105e1eadb709d9ac,
+                mid_setOperatorEmail_105e1eadb709d9ac,
+                mid_setOperatorOrganization_105e1eadb709d9ac,
+                mid_setOperatorPhone_105e1eadb709d9ac,
+                mid_setOrbitCenter_9fc8078d81282211,
+                mid_setRefFrame_2c8b859a72c0094e,
+                mid_setRelativeMetadata_f459c57c0107f668,
+                mid_setSolarRadiationPressure_24522ad136c36bb9,
+                mid_validate_1ad26e8c8c0cd65b,
                 max_mid
               };
 

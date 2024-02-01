@@ -14,6 +14,10 @@ namespace java {
 }
 namespace org {
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+      class TimeScale;
+    }
     namespace utils {
       class TimeStampedPVCoordinates;
     }
@@ -25,10 +29,6 @@ namespace org {
     }
     namespace propagation {
       class SpacecraftState;
-    }
-    namespace time {
-      class AbsoluteDate;
-      class TimeScale;
     }
     namespace bodies {
       class CelestialBody;
@@ -45,16 +45,16 @@ namespace org {
         class OrekitEphemerisFile$OrekitSatelliteEphemeris : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_734b91ac30d5f9b4,
-            mid_addNewSegment_1b2d5f6f1140772a,
-            mid_addNewSegment_ceb877471350c2b6,
-            mid_addNewSegment_392b89799e5fafbf,
-            mid_addNewSegment_233dbeb496e98923,
-            mid_getId_1c1fa1e935d6cdcf,
-            mid_getMu_b74f83833fdad017,
-            mid_getSegments_e62d3bb06d56d7e3,
-            mid_getStart_c325492395d89b24,
-            mid_getStop_c325492395d89b24,
+            mid_init$_105e1eadb709d9ac,
+            mid_addNewSegment_05767f11ee536b3d,
+            mid_addNewSegment_6feb93c9e34b86f0,
+            mid_addNewSegment_8e7fae6b83dd8266,
+            mid_addNewSegment_caf0414bb350d8f3,
+            mid_getId_d2c8eb4129821f0e,
+            mid_getMu_9981f74b2d109da6,
+            mid_getSegments_d751c1a57012b438,
+            mid_getStart_80e11148db499dda,
+            mid_getStop_80e11148db499dda,
             max_mid
           };
 

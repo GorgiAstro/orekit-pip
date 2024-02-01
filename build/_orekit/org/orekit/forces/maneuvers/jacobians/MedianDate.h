@@ -28,10 +28,10 @@ namespace org {
           class MedianDate : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_ee9345b4af8c40df,
-              mid_getAdditionalState_f227e5f48720b798,
-              mid_getName_1c1fa1e935d6cdcf,
-              mid_yields_97df9017614a1945,
+              mid_init$_56b987237c71cdbb,
+              mid_getAdditionalState_e8a4ac02afc72623,
+              mid_getName_d2c8eb4129821f0e,
+              mid_yields_34f098c1d43e614c,
               max_mid
             };
 

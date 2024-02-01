@@ -25,13 +25,13 @@ namespace org {
         class AbstractDragForceModel : public ::java::lang::Object {
          public:
           enum {
-            mid_dependsOnPositionOnly_9ab94ac1dc23b105,
-            mid_isVariable_cb8809386317d9d1,
-            mid_isVariable_e694c750b6d47f11,
-            mid_isDSStateDerivative_e6d9e841ca2e035c,
-            mid_isGradientStateDerivative_e6d9e841ca2e035c,
-            mid_getDSDensityWrtStateUsingFiniteDifferences_f0f464f712250667,
-            mid_getGradientDensityWrtStateUsingFiniteDifferences_ef723df1fde38524,
+            mid_dependsOnPositionOnly_eee3de00fe971136,
+            mid_isGradientStateDerivative_712e981f67f3ccbe,
+            mid_getGradientDensityWrtStateUsingFiniteDifferences_04cf191a644c6381,
+            mid_isDSStateDerivative_712e981f67f3ccbe,
+            mid_getDSDensityWrtStateUsingFiniteDifferences_14fad3513bd593d0,
+            mid_isVariable_52d7e0e51b0b9ccd,
+            mid_isVariable_0739c38386fc7c92,
             max_mid
           };
 

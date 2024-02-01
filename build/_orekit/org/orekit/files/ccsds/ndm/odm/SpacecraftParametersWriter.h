@@ -34,8 +34,8 @@ namespace org {
             class SpacecraftParametersWriter : public ::org::orekit::files::ccsds::section::AbstractWriter {
              public:
               enum {
-                mid_init$_0009325064542aa1,
-                mid_writeContent_fb222e851cd27682,
+                mid_init$_2c6e50f502c17198,
+                mid_writeContent_05c6d36d73082fa6,
                 max_mid
               };
 

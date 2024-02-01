@@ -17,7 +17,7 @@ namespace org {
       class TrivariateFunction : public ::java::lang::Object {
        public:
         enum {
-          mid_value_f804f816b79164cb,
+          mid_value_db06d8c3fc3d9670,
           max_mid
         };
 

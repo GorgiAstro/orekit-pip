@@ -41,14 +41,14 @@ namespace org {
           class AbstractCycleSlipDetector : public ::java::lang::Object {
            public:
             enum {
-              mid_detect_d1fc3c05f458e1a3,
-              mid_cycleSlipDataSet_6ac7265223ac326f,
-              mid_getResults_e62d3bb06d56d7e3,
-              mid_getStuffReference_e62d3bb06d56d7e3,
-              mid_getMaxTimeBeetween2Measurement_b74f83833fdad017,
-              mid_getMinMeasurementNumber_55546ef6a647f39b,
-              mid_manageData_e95b94a72b1c921a,
-              mid_setName_c8f78fa2214ae788,
+              mid_detect_a27502c31bd75a45,
+              mid_manageData_d75e9b743ecf20cb,
+              mid_getMinMeasurementNumber_d6ab429752e7c267,
+              mid_getMaxTimeBeetween2Measurement_9981f74b2d109da6,
+              mid_getResults_d751c1a57012b438,
+              mid_getStuffReference_d751c1a57012b438,
+              mid_cycleSlipDataSet_417cb06bfd27f642,
+              mid_setName_69ce224351e794e7,
               max_mid
             };
 

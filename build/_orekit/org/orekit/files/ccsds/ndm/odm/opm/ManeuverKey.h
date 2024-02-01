@@ -10,8 +10,8 @@ namespace org {
         namespace ndm {
           namespace odm {
             namespace opm {
-              class ManeuverKey;
               class Maneuver;
+              class ManeuverKey;
             }
           }
         }
@@ -44,9 +44,9 @@ namespace org {
               class ManeuverKey : public ::java::lang::Enum {
                public:
                 enum {
-                  mid_process_56ca7e53593c39f0,
-                  mid_valueOf_90a3654f18978779,
-                  mid_values_343d29f5db3ecaf3,
+                  mid_process_1092ec6fe7bc6f07,
+                  mid_valueOf_57c8f01e6bb99fa5,
+                  mid_values_3361ab8286d6f42e,
                   max_mid
                 };
 

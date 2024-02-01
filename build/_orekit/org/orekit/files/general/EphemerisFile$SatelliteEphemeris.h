@@ -8,11 +8,11 @@ namespace org {
     namespace attitudes {
       class AttitudeProvider;
     }
-    namespace propagation {
-      class BoundedPropagator;
-    }
     namespace time {
       class AbsoluteDate;
+    }
+    namespace propagation {
+      class BoundedPropagator;
     }
   }
 }
@@ -35,13 +35,13 @@ namespace org {
         class EphemerisFile$SatelliteEphemeris : public ::java::lang::Object {
          public:
           enum {
-            mid_getId_1c1fa1e935d6cdcf,
-            mid_getMu_b74f83833fdad017,
-            mid_getPropagator_2d80cda3dc1f1422,
-            mid_getPropagator_9e515362e8de0afe,
-            mid_getSegments_e62d3bb06d56d7e3,
-            mid_getStart_c325492395d89b24,
-            mid_getStop_c325492395d89b24,
+            mid_getId_d2c8eb4129821f0e,
+            mid_getMu_9981f74b2d109da6,
+            mid_getPropagator_6c7bb9da59d24b03,
+            mid_getPropagator_b59efa08d1230cd1,
+            mid_getSegments_d751c1a57012b438,
+            mid_getStart_80e11148db499dda,
+            mid_getStop_80e11148db499dda,
             max_mid
           };
 

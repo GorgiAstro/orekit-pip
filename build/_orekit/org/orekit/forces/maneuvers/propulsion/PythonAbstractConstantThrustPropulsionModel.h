@@ -4,29 +4,29 @@
 #include "org/orekit/forces/maneuvers/propulsion/AbstractConstantThrustPropulsionModel.h"
 
 namespace org {
-  namespace hipparchus {
-    namespace geometry {
-      namespace euclidean {
-        namespace threed {
-          class Vector3D;
-          class FieldVector3D;
-        }
-      }
-    }
-    class CalculusFieldElement;
-  }
   namespace orekit {
-    namespace forces {
-      namespace maneuvers {
-        class Control3DVectorCostType;
-      }
-    }
     namespace utils {
       class ParameterDriver;
     }
     namespace time {
       class AbsoluteDate;
     }
+    namespace forces {
+      namespace maneuvers {
+        class Control3DVectorCostType;
+      }
+    }
+  }
+  namespace hipparchus {
+    namespace geometry {
+      namespace euclidean {
+        namespace threed {
+          class FieldVector3D;
+          class Vector3D;
+        }
+      }
+    }
+    class CalculusFieldElement;
   }
 }
 namespace java {
@@ -50,20 +50,20 @@ namespace org {
           class PythonAbstractConstantThrustPropulsionModel : public ::org::orekit::forces::maneuvers::propulsion::AbstractConstantThrustPropulsionModel {
            public:
             enum {
-              mid_init$_5c295347eb1c7d1a,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_getFlowRate_b74f83833fdad017,
-              mid_getFlowRate_b060e4326765ccf1,
-              mid_getFlowRate_ba5ea64a789ad864,
-              mid_getFlowRate_fd347811007a6ba3,
-              mid_getParametersDrivers_e62d3bb06d56d7e3,
-              mid_getThrustVector_8b724f8b4fdad1a2,
-              mid_getThrustVector_5dc321c3ba065f30,
-              mid_getThrustVector_b7e5bd35daed8b40,
-              mid_getThrustVector_082e6346b274f880,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
+              mid_init$_33b1676e2cf06e6c,
+              mid_finalize_ff7cb6c242604316,
+              mid_getFlowRate_9981f74b2d109da6,
+              mid_getFlowRate_a40ce4fdf6559ac0,
+              mid_getFlowRate_c04968ee695d037c,
+              mid_getFlowRate_209f08246d708042,
+              mid_getParametersDrivers_d751c1a57012b438,
+              mid_getThrustVector_032312bdeb3f2f93,
+              mid_getThrustVector_44a47ea31a9889e8,
+              mid_getThrustVector_5e5894038af17774,
+              mid_getThrustVector_8b37cafaaf55a3a5,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
               max_mid
             };
 

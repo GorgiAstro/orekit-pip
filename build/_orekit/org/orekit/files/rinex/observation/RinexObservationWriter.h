@@ -7,27 +7,27 @@ namespace java {
   namespace util {
     class List;
   }
+  namespace io {
+    class IOException;
+  }
   namespace lang {
     class AutoCloseable;
     class Appendable;
     class Class;
     class String;
   }
-  namespace io {
-    class IOException;
-  }
 }
 namespace org {
   namespace orekit {
     namespace files {
       namespace rinex {
-        namespace section {
-          class RinexComment;
-        }
         namespace observation {
           class RinexObservation;
           class RinexObservationHeader;
           class ObservationDataSet;
+        }
+        namespace section {
+          class RinexComment;
         }
       }
     }
@@ -44,14 +44,14 @@ namespace org {
           class RinexObservationWriter : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_6c867c4eb16d43be,
-              mid_close_a1fa5dae97ea5ed2,
-              mid_prepareComments_0e7c3032c7c93ed3,
-              mid_writeCompleteFile_3e40490b82a3a9b3,
-              mid_writeHeader_3d7d1c3eb6e2d8e5,
-              mid_writeObservationDataSet_e95b94a72b1c921a,
-              mid_writePendingRinex2Observations_a1fa5dae97ea5ed2,
-              mid_writePendingRinex34Observations_a1fa5dae97ea5ed2,
+              mid_init$_8340f43d6268953f,
+              mid_close_ff7cb6c242604316,
+              mid_prepareComments_aa335fea495d60e0,
+              mid_writeCompleteFile_2e16d500654da8ad,
+              mid_writeHeader_f11a530af626ae4b,
+              mid_writeObservationDataSet_d75e9b743ecf20cb,
+              mid_writePendingRinex2Observations_ff7cb6c242604316,
+              mid_writePendingRinex34Observations_ff7cb6c242604316,
               max_mid
             };
 

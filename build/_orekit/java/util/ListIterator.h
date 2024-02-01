@@ -17,15 +17,15 @@ namespace java {
     class ListIterator : public ::java::util::Iterator {
      public:
       enum {
-        mid_add_55f3c894852c27a3,
-        mid_hasNext_9ab94ac1dc23b105,
-        mid_hasPrevious_9ab94ac1dc23b105,
-        mid_next_541690f9ee81d3ad,
-        mid_nextIndex_55546ef6a647f39b,
-        mid_previous_541690f9ee81d3ad,
-        mid_previousIndex_55546ef6a647f39b,
-        mid_remove_a1fa5dae97ea5ed2,
-        mid_set_55f3c894852c27a3,
+        mid_add_83ee235bb1e64e94,
+        mid_hasNext_eee3de00fe971136,
+        mid_hasPrevious_eee3de00fe971136,
+        mid_next_704a5bee58538972,
+        mid_nextIndex_d6ab429752e7c267,
+        mid_previous_704a5bee58538972,
+        mid_previousIndex_d6ab429752e7c267,
+        mid_remove_ff7cb6c242604316,
+        mid_set_83ee235bb1e64e94,
         max_mid
       };
 

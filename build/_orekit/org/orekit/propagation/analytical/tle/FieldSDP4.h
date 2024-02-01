@@ -19,12 +19,12 @@ namespace org {
           class FieldSDP4 : public ::org::orekit::propagation::analytical::tle::FieldTLEPropagator {
            public:
             enum {
-              mid_thetaG_231f48b4568f5a7b,
-              mid_sxpInitialize_8b0f7facc8a6a46e,
-              mid_sxpPropagate_1d66803ed368a800,
-              mid_luniSolarTermsComputation_a1fa5dae97ea5ed2,
-              mid_deepSecularEffects_f2b4bfa0af1007e8,
-              mid_deepPeriodicEffects_f2b4bfa0af1007e8,
+              mid_sxpInitialize_77e61a645c496adc,
+              mid_sxpPropagate_8556964e7b03aae6,
+              mid_luniSolarTermsComputation_ff7cb6c242604316,
+              mid_deepSecularEffects_f63ca9e3185c722e,
+              mid_deepPeriodicEffects_f63ca9e3185c722e,
+              mid_thetaG_e35a60f6e1a86860,
               max_mid
             };
 

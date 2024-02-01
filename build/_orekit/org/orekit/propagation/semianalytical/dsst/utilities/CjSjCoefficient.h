@@ -20,13 +20,13 @@ namespace org {
             class CjSjCoefficient : public ::java::lang::Object {
              public:
               enum {
-                mid_init$_369b4c97255d5afa,
-                mid_getCj_2afcbc21f4e57ab2,
-                mid_getDcjDh_2afcbc21f4e57ab2,
-                mid_getDcjDk_2afcbc21f4e57ab2,
-                mid_getDsjDh_2afcbc21f4e57ab2,
-                mid_getDsjDk_2afcbc21f4e57ab2,
-                mid_getSj_2afcbc21f4e57ab2,
+                mid_init$_13edac039e8cc967,
+                mid_getCj_ce4c02d583456bc9,
+                mid_getDcjDh_ce4c02d583456bc9,
+                mid_getDcjDk_ce4c02d583456bc9,
+                mid_getDsjDh_ce4c02d583456bc9,
+                mid_getDsjDk_ce4c02d583456bc9,
+                mid_getSj_ce4c02d583456bc9,
                 max_mid
               };
 

@@ -41,9 +41,9 @@ namespace org {
             class StateVectorKey : public ::java::lang::Enum {
              public:
               enum {
-                mid_process_142a0c3d1387d79d,
-                mid_valueOf_f2ce2861e28b037b,
-                mid_values_9a55a0fa0ba93c65,
+                mid_process_3abecaf66215955c,
+                mid_valueOf_4bea02e7a2b89286,
+                mid_values_2c310c9210f4f824,
                 max_mid
               };
 

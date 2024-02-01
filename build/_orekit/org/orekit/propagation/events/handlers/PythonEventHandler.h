@@ -4,6 +4,13 @@
 #include "java/lang/Object.h"
 
 namespace org {
+  namespace hipparchus {
+    namespace ode {
+      namespace events {
+        class Action;
+      }
+    }
+  }
   namespace orekit {
     namespace propagation {
       namespace events {
@@ -16,13 +23,6 @@ namespace org {
     }
     namespace time {
       class AbsoluteDate;
-    }
-  }
-  namespace hipparchus {
-    namespace ode {
-      namespace events {
-        class Action;
-      }
     }
   }
 }
@@ -43,14 +43,14 @@ namespace org {
           class PythonEventHandler : public ::java::lang::Object {
            public:
             enum {
-              mid_init$_a1fa5dae97ea5ed2,
-              mid_eventOccurred_ae9b0131fefe6c67,
-              mid_finalize_a1fa5dae97ea5ed2,
-              mid_init_0ac7022abb4b9f0c,
-              mid_pythonDecRef_a1fa5dae97ea5ed2,
-              mid_pythonExtension_6c0ce7e438e5ded4,
-              mid_pythonExtension_3d7dd2314a0dd456,
-              mid_resetState_ec159c1171338d74,
+              mid_init$_ff7cb6c242604316,
+              mid_eventOccurred_66898681536e4202,
+              mid_finalize_ff7cb6c242604316,
+              mid_init_381d97cc333bc994,
+              mid_pythonDecRef_ff7cb6c242604316,
+              mid_pythonExtension_42c72b98e3c2e08a,
+              mid_pythonExtension_f5bbab7e97879358,
+              mid_resetState_556ad75a8c47fba2,
               max_mid
             };
 

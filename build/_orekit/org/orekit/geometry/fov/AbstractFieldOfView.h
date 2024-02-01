@@ -27,7 +27,7 @@ namespace org {
         class AbstractFieldOfView : public ::java::lang::Object {
          public:
           enum {
-            mid_getMargin_b74f83833fdad017,
+            mid_getMargin_9981f74b2d109da6,
             max_mid
           };
 

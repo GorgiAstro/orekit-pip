@@ -8,22 +8,22 @@ namespace org {
     namespace geometry {
       namespace euclidean {
         namespace threed {
-          class Vector3D;
           class FieldVector3D;
-          class FieldLine;
           class Line;
+          class FieldLine;
+          class Vector3D;
         }
       }
     }
   }
   namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
     namespace bodies {
       class FieldGeodeticPoint;
       class GeodeticPoint;
-    }
-    namespace time {
-      class FieldAbsoluteDate;
-      class AbsoluteDate;
     }
     namespace utils {
       class TimeStampedPVCoordinates;
@@ -47,15 +47,15 @@ namespace org {
       class BodyShape : public ::java::io::Serializable {
        public:
         enum {
-          mid_getBodyFrame_2c51111cc6894ba1,
-          mid_getIntersectionPoint_66b39d6d84447197,
-          mid_getIntersectionPoint_f1db6d4c78519d48,
-          mid_projectToGround_3cbe213b2c291f18,
-          mid_projectToGround_feded476b8bdfcfc,
-          mid_transform_6aa36b82e3b80b58,
-          mid_transform_a840d9913a98925f,
-          mid_transform_93de77ed9854e321,
-          mid_transform_f67fa82bac3192f0,
+          mid_getBodyFrame_cb151471db4570f0,
+          mid_getIntersectionPoint_ade5649cae5a4672,
+          mid_getIntersectionPoint_9f0bcc9c00772903,
+          mid_projectToGround_28dd2a6cc35491d2,
+          mid_projectToGround_26b1db430bbeb49e,
+          mid_transform_f974aaaf2e73b405,
+          mid_transform_0bfc32b1890053a9,
+          mid_transform_82a0f6c52928ba20,
+          mid_transform_52f3336802c12846,
           max_mid
         };
 

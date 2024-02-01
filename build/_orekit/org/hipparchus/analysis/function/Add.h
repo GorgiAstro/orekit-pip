@@ -25,8 +25,8 @@ namespace org {
         class Add : public ::java::lang::Object {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_value_99e3200dafc19573,
+            mid_init$_ff7cb6c242604316,
+            mid_value_82f92590f4247da1,
             max_mid
           };
 

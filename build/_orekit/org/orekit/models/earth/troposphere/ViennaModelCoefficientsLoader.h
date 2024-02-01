@@ -3,12 +3,21 @@
 
 #include "org/orekit/data/AbstractSelfFeedingLoader.h"
 
+namespace java {
+  namespace io {
+    class IOException;
+    class InputStream;
+  }
+  namespace text {
+    class ParseException;
+  }
+  namespace lang {
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
-    namespace data {
-      class DataLoader;
-      class DataProvidersManager;
-    }
     namespace time {
       class DateTimeComponents;
     }
@@ -19,19 +28,10 @@ namespace org {
         }
       }
     }
-  }
-}
-namespace java {
-  namespace io {
-    class InputStream;
-    class IOException;
-  }
-  namespace text {
-    class ParseException;
-  }
-  namespace lang {
-    class Class;
-    class String;
+    namespace data {
+      class DataLoader;
+      class DataProvidersManager;
+    }
   }
 }
 template<class T> class JArray;
@@ -45,16 +45,16 @@ namespace org {
           class ViennaModelCoefficientsLoader : public ::org::orekit::data::AbstractSelfFeedingLoader {
            public:
             enum {
-              mid_init$_94a432a96b6f2908,
-              mid_init$_10c8955a59d23838,
-              mid_init$_293ce9451bede7f1,
-              mid_getA_25e1757a36c4dde2,
-              mid_getSupportedNames_1c1fa1e935d6cdcf,
-              mid_getZenithDelay_25e1757a36c4dde2,
-              mid_loadData_360461e719fb564c,
-              mid_loadViennaCoefficients_a1fa5dae97ea5ed2,
-              mid_loadViennaCoefficients_0ae14a6b384129f2,
-              mid_stillAcceptsData_9ab94ac1dc23b105,
+              mid_init$_78b7236f6301a45c,
+              mid_init$_546546d83e2025a2,
+              mid_init$_eae678247058e615,
+              mid_getA_be783177b060994b,
+              mid_getSupportedNames_d2c8eb4129821f0e,
+              mid_getZenithDelay_be783177b060994b,
+              mid_loadData_bec0f846e5ec73da,
+              mid_loadViennaCoefficients_ff7cb6c242604316,
+              mid_loadViennaCoefficients_d3c621492f146ad9,
+              mid_stillAcceptsData_eee3de00fe971136,
               max_mid
             };
 

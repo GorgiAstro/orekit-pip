@@ -22,11 +22,11 @@ namespace org {
       class FieldODEStateAndDerivative : public ::org::hipparchus::ode::FieldODEState {
        public:
         enum {
-          mid_init$_f7a6bdb7cce5e7f1,
-          mid_init$_115eb671ed23c3e1,
-          mid_getCompleteDerivative_883be608cfc68c26,
-          mid_getPrimaryDerivative_883be608cfc68c26,
-          mid_getSecondaryDerivative_d171b140dbb0db9f,
+          mid_init$_6ccff14226b7983c,
+          mid_init$_6e76e864bfe7f2f8,
+          mid_getCompleteDerivative_94ed2e0620f8833d,
+          mid_getPrimaryDerivative_94ed2e0620f8833d,
+          mid_getSecondaryDerivative_15c819004b045aca,
           max_mid
         };
 

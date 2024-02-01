@@ -3,15 +3,22 @@
 
 #include "java/lang/Object.h"
 
+namespace java {
+  namespace lang {
+    class Throwable;
+    class Class;
+    class String;
+  }
+}
 namespace org {
   namespace orekit {
-    namespace utils {
-      class FieldPVCoordinates;
-      class PVCoordinates;
-    }
     namespace time {
-      class FieldAbsoluteDate;
       class AbsoluteDate;
+      class FieldAbsoluteDate;
+    }
+    namespace utils {
+      class PVCoordinates;
+      class FieldPVCoordinates;
     }
     namespace frames {
       class LOF;
@@ -29,13 +36,6 @@ namespace org {
     class Field;
   }
 }
-namespace java {
-  namespace lang {
-    class Throwable;
-    class Class;
-    class String;
-  }
-}
 template<class T> class JArray;
 
 namespace org {
@@ -45,14 +45,14 @@ namespace org {
       class PythonLOF : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_finalize_a1fa5dae97ea5ed2,
-          mid_getName_1c1fa1e935d6cdcf,
-          mid_pythonDecRef_a1fa5dae97ea5ed2,
-          mid_pythonExtension_6c0ce7e438e5ded4,
-          mid_pythonExtension_3d7dd2314a0dd456,
-          mid_rotationFromInertial_9c03210e4a66b8b3,
-          mid_rotationFromInertial_8f928c19e9edde2b,
+          mid_init$_ff7cb6c242604316,
+          mid_finalize_ff7cb6c242604316,
+          mid_getName_d2c8eb4129821f0e,
+          mid_pythonDecRef_ff7cb6c242604316,
+          mid_pythonExtension_42c72b98e3c2e08a,
+          mid_pythonExtension_f5bbab7e97879358,
+          mid_rotationFromInertial_7972874aa60c5cbb,
+          mid_rotationFromInertial_24d473279eeb35d9,
           max_mid
         };
 

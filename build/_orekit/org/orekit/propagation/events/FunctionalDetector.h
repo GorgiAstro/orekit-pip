@@ -6,10 +6,10 @@
 namespace org {
   namespace orekit {
     namespace propagation {
-      class SpacecraftState;
       namespace events {
         class FunctionalDetector;
       }
+      class SpacecraftState;
     }
   }
 }
@@ -28,9 +28,9 @@ namespace org {
         class FunctionalDetector : public ::org::orekit::propagation::events::AbstractDetector {
          public:
           enum {
-            mid_init$_a1fa5dae97ea5ed2,
-            mid_g_a17ea857ce74d258,
-            mid_create_c9b2ed319954c7f8,
+            mid_init$_ff7cb6c242604316,
+            mid_g_b443ba1cc794b916,
+            mid_create_cfab95c3a2ebb9cb,
             max_mid
           };
 

@@ -4,11 +4,6 @@
 #include "org/hipparchus/fraction/AbstractFormat.h"
 
 namespace java {
-  namespace text {
-    class FieldPosition;
-    class ParsePosition;
-    class NumberFormat;
-  }
   namespace util {
     class Locale;
   }
@@ -17,6 +12,11 @@ namespace java {
     class Class;
     class Object;
     class String;
+  }
+  namespace text {
+    class FieldPosition;
+    class ParsePosition;
+    class NumberFormat;
   }
 }
 namespace org {
@@ -39,20 +39,20 @@ namespace org {
       class BigFractionFormat : public ::org::hipparchus::fraction::AbstractFormat {
        public:
         enum {
-          mid_init$_a1fa5dae97ea5ed2,
-          mid_init$_b7f3d50b51ef7518,
-          mid_init$_a87510accfde9c74,
-          mid_format_face461ae8942182,
-          mid_format_b972afa1d89f0ad4,
-          mid_formatBigFraction_f2a5a6219e7b12b7,
-          mid_getAvailableLocales_8d2cd0b971cc7b85,
-          mid_getImproperInstance_8c1c73722be22f6f,
-          mid_getImproperInstance_988fa2a63a10ed31,
-          mid_getProperInstance_8c1c73722be22f6f,
-          mid_getProperInstance_988fa2a63a10ed31,
-          mid_parse_77110530074039ea,
-          mid_parse_9c54536a71758022,
-          mid_parseNextBigInteger_01d91a5ef6747752,
+          mid_init$_ff7cb6c242604316,
+          mid_init$_327b6d3ae10b544b,
+          mid_init$_2f8f1e4936e49b8d,
+          mid_format_d93e7788c0c83732,
+          mid_format_8a939fb9d04314c2,
+          mid_formatBigFraction_7041aea86c845f7b,
+          mid_getAvailableLocales_faf2576acf90261b,
+          mid_getImproperInstance_3ce867ff5032d8af,
+          mid_getImproperInstance_f4b80370cda6e548,
+          mid_getProperInstance_3ce867ff5032d8af,
+          mid_getProperInstance_f4b80370cda6e548,
+          mid_parse_44acc1eaf9e750d5,
+          mid_parse_b5e88466531b881c,
+          mid_parseNextBigInteger_faab13a6e78082c7,
           max_mid
         };
 

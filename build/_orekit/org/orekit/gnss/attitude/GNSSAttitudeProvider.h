@@ -3,16 +3,16 @@
 
 #include "org/orekit/attitudes/AttitudeProvider.h"
 
-namespace java {
-  namespace lang {
-    class Class;
-  }
-}
 namespace org {
   namespace orekit {
     namespace time {
       class AbsoluteDate;
     }
+  }
+}
+namespace java {
+  namespace lang {
+    class Class;
   }
 }
 template<class T> class JArray;
@@ -25,8 +25,8 @@ namespace org {
         class GNSSAttitudeProvider : public ::org::orekit::attitudes::AttitudeProvider {
          public:
           enum {
-            mid_validityEnd_c325492395d89b24,
-            mid_validityStart_c325492395d89b24,
+            mid_validityEnd_80e11148db499dda,
+            mid_validityStart_80e11148db499dda,
             max_mid
           };
 

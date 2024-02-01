@@ -3,21 +3,21 @@
 
 #include "java/lang/Object.h"
 
-namespace org {
-  namespace orekit {
-    namespace time {
-      class DatesSelector;
-      class AbsoluteDate;
-      class TimeScale;
-    }
-  }
-}
 namespace java {
   namespace util {
     class List;
   }
   namespace lang {
     class Class;
+  }
+}
+namespace org {
+  namespace orekit {
+    namespace time {
+      class AbsoluteDate;
+      class DatesSelector;
+      class TimeScale;
+    }
   }
 }
 template<class T> class JArray;
@@ -29,8 +29,8 @@ namespace org {
       class FixedStepSelector : public ::java::lang::Object {
        public:
         enum {
-          mid_init$_6e3d05f890ae5dd6,
-          mid_selectDates_50850a0bb1306a34,
+          mid_init$_4086a36ed4ec6069,
+          mid_selectDates_0499dac7e83b853d,
           max_mid
         };
 
