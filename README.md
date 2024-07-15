@@ -1,6 +1,8 @@
 # orekit-pip
 
-This is an attempt at providing the [Orekit Python Wrapper](https://gitlab.orekit.org/orekit-labs/python-wrapper/-/wikis/home) on PyPi.
+This was an attempt at providing the [Orekit Python Wrapper](https://gitlab.orekit.org/orekit-labs/python-wrapper/-/wikis/home) on PyPi.
+
+<span style="font-family:Papyrus; font-size:20em;">**IMPORTANT NOTE: THIS REPOSITORY IS ARCHIVED, OREKIT PYTHON IS NOW AVAILABLE ON PYPI THANKS TO THE NEW JPYPE WRAPPER: https://pypi.org/project/orekit-jpype/**</span>
 
 ## Requirements
 
